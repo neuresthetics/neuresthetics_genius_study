@@ -16,7 +16,7 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Item | Status |
 |---|---|
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
-| People coded (of core) | 12 / 441 (draft, unreviewed) |
+| People coded (of core) | 13 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
 | Decisions settled | 21 / 21 |
 | Audits | 3 blind lens runs on one 115-claim packet (commit eff4700); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
