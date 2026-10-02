@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 6
+  record_version: 7
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "All five LIO axes and mid_basin scored from the sources already cited (no new sources): A 0, B 3 (his physics), D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7. Five statements added from Gladstone (S10) and Cantor (S8), checked word for word. Timing fields for LIO-type views filled; changes_over_life changed from an empty list to UNKNOWN. Primary system still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Primary system coded CHRIST at 0.7 (consistent private letters) from his own writings and the sources already cited; CLTHEI and CLASS_THEISM rejected with reasons. secondary_system UNKNOWN (no second system). B_cause and mid_basin rechecked under decision P6 (B on his account of nature): unchanged, B 3 and mid_basin true at 0.7. No new sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: 1821 membership reworded from both sources (sought membership within days of the wedding, Russell; formal profession of faith a month after it, Gladstone p. 91). D_authority 1 -> 2 at 0.7 (two domains, each with its own authority, as for Maxwell and Newton). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known now names the domain scored (salvation and church membership) and points to open item P7. Score and certainty unchanged (1 at 0.5). Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -189,7 +190,7 @@ worldview:
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S8, locator: "opening paragraph; 'Primitive Christianity'"}, {source: S3, locator: "final paragraph"}, {source: S10, locator: "p. 58"}]
-      how_known: "Coder's reading of the church's practice and his own words; no source addresses the axis directly, so 0.5."
+      how_known: "Coder's reading of the church's practice and his own words; no source addresses the axis directly, so 0.5. Scored on the scope of salvation and church membership. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone it would be about 3 (no petition or intervention in nature in his own words). Already below the 0.7 cap."
       rationale: "Leans to in-group. He belonged to 'a very small & despised sect of christians' (S3) whose members 'separated themselves from the established churches and from other Christian denominations' (S8), and he speaks of the promises by which 'His people' share the divine nature (S10, p. 58). Salvation was open to anyone through Christ (S9), and in science he treated researchers as 'a band of brothers' (S8), so not 0."
   mid_basin:
     value: true

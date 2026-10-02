@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (the 'Reformation' passage is a named plausible alternative, B = 2); mid_basin certainty 1.0 -> 0.7 (result still true); 'UNKNOWN' wording for a B = 2 result corrected to TODO; 'Church of England' replaced by 'Protestant', as the cited sources say, in nominal_affiliations (certainty 1.0 -> 0.7) and family_religion. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23): E_scope certainty 1.0 -> 0.7. E is scored on natural philosophy only, while other records score it on salvation scope; the domain is open item P7 (PROPOSED). Score unchanged (3). Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -185,9 +186,9 @@ worldview:
     E_scope:
       value: 3
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S8, locator: "p. 384"}, {source: S6, locator: "pp. 403–404"}, {source: S5, locator: "p. 389"}]
-      how_known: "Published texts (Principia Rules, Opticks Query 31, General Scholium); written profession, so 1.0."
+      how_known: "Published texts (Principia Rules, Opticks Query 31, General Scholium), so written profession. Scored on natural philosophy only. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the scope of salvation his private manuscripts (S10, S11) would give about 2–3. The score depends on that choice, so certainty is capped at 0.7 under the Contested readings rule (CODING_GUIDE §3). Lowered from 1.0 after the lens audit, run 2 (2026-10-02)."
       rationale: "Near the LIO pole for nature: the same causes for 'respiration in a man and in a beast', for stones 'in Europe and in America' and for 'our culinary fire and of the sun' (S8); the light of the fixed stars is 'of the same nature with the light of the Sun' (S5). One stated, limited exception: God could 'vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe' (S6), offered as a possibility, not a finding. His private theology has a judgement and a kingdom for the best of those raised (S10), but that is scored on C, not as an exemption from natural rules."
   mid_basin:
     value: true
@@ -604,7 +605,7 @@ His science runs on law. The same effects get the same causes [S8, p. 384]. But 
 
 His private manuscripts show a scriptural, anti-Trinitarian Christianity: one God the Father and one mediator, Christ; prayer to the Father in the name of Christ; and a final judgement of all people [S9; S10]. MacTutor dates his Arian view to about 1672 [S12].
 
-Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 and E_scope 3 at 1.0; B_cause 3 (natural philosophy), C_ledger 0 and D_authority 2 at 0.7. mid_basin is true at 0.7 under P4.
+Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 at 1.0; B_cause 3 (natural philosophy), C_ledger 0, D_authority 2 and E_scope 3 (natural philosophy; domain open, P7) at 0.7. mid_basin is true at 0.7 under P4.
 
 ## Heritage (context only)
 

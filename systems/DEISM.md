@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from seven SEP entries and the Britannica article. v7.1 scores and note unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix: 'providence' is not in the Britannica text; the intervention field, the B_cause rationale and the data quality flag now quote Britannica on prophetic revelation and cite Clarke's taxonomy (SEP Clarke §4.5) for providential action. No score changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
 identity:
   id: DEISM
   v7_1_number: 31
@@ -57,7 +58,7 @@ lio_axes:
   B_cause: {value: 3, rationale: "God made the world to run by its laws and typically does not interfere; miracles are rejected. Not 4, because Britannica says very few deists held the stark non-interference view and that one could believe in prophetic revelation and remain a deist; Clarke also describes deists who accept providential action in the world (S3, §4.5).", certainty: 0.7, cites: [{source: S2, locator: "§2.3"}, {source: S1, locator: "'Nature and scope'"}, {source: S5, locator: "§3.1"}, {source: S3, locator: "§4.5"}], how_known: "0–4 scale (P1). The stark modern form (God only set the initial conditions) would be 4."}
   C_ledger: {value: 2, rationale: "Split: Herbert-line deists kept rewards and punishments in the next world, earned by virtue and repentance (toward 1); others denied a future state (toward 3–4). No ritual or priestly ledger in any form.", certainty: 0.5, cites: [{source: S1, locator: "'The English Deists'"}, {source: S3, locator: "§4.5"}], how_known: "0–4 scale (P1). 0.5 because deists disagreed."}
   D_authority: {value: 3, rationale: "Revelation and church teaching rejected in favor of reason. Not 4: much of the reasoning is a priori or from innate ideas (Herbert) rather than observation, and moderate deists kept revelation as a natural occurrence.", certainty: 0.7, cites: [{source: S1, locator: "introduction; 'The English Deists'"}, {source: S2, locator: "§2.3"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
-  E_scope: {value: 3, rationale: "Natural religion is universal: the same truths are inborn in or open to every person, and positive religions are corruptions or partial versions of it (Lessing's three rings: the monotheisms equally true). Some deists still kept a special place for Christianity.", certainty: 0.7, cites: [{source: S1, locator: "'The English Deists'; page 'Deists in other countries'"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
+  E_scope: {value: 3, rationale: "Natural religion is universal: the same truths are inborn in or open to every person, and positive religions are corruptions or partial versions of it (Lessing's three rings: the monotheisms equally true). Some deists still kept a special place for Christianity.", certainty: 0.7, cites: [{source: S1, locator: "'The English Deists'; page 'Deists in other countries'"}], how_known: "0–4 scale (P1). Coder's reading, 0.7. Scored on access to religious truth (natural religion open to all); the domain is open (OPEN_DECISIONS P7, PROPOSED), and on the world's order alone it would need a rescore, likely still 3. Already at the 0.7 cap."}
 epistemology: {value: "Natural light of reason; innate common notions (Herbert); a priori or empirical arguments for God, mostly from design, drawing on Newton's lawful world; biblical criticism against literal revelation.", certainty: 1.0, cites: [{source: S1, locator: "'The English Deists'"}, {source: S2, locator: "§2.3"}], how_known: "Britannica and SEP."}
 ethics: {value: "A pious and virtuous life as the best worship; opposition to fanaticism, enthusiasm and cruel images of God; Jesus as a moral teacher ('The ten commandments and the sermon on the mount contain my religion', John Adams).", certainty: 1.0, cites: [{source: S1, locator: "'The English Deists'; page 'Deists in other countries'"}, {source: S2, locator: "§2.3"}], how_known: "Britannica and SEP."}
 practice:

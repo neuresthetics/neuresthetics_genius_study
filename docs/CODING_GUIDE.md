@@ -155,6 +155,7 @@ Rules:
 - Every score needs `basis` and `certainty` (same scale as worldview codes), at least one cite, and a `rationale` that names the pole features present.
 - If the evidence does not reach 0.5, use `BELOW_THRESHOLD`.
 - Put quotations that bear on an axis in `worldview.statements` and tag them with `axes`.
+- **E_scope domain (open item P7, PROPOSED).** Until P7 is decided, say in the E `how_known` which domain the score covers: the world's order (the same rules for stars, insects and humans, with no exceptions for a favoured group in what happens), the scope of salvation, or both. If the score would differ on another domain, certainty is at most 0.7 (Contested readings, §3), and `how_known` points to P7.
 
 **Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". The test (decision P4, 2026-10-01) uses the LIO axes only:
 

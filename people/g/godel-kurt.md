@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: primary_system CLASS_THEISM at 0.5 -> BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI named as candidates in a note (no scholar places him in a theist code; the simple or immutable God test is not shown). mid_basin unchanged (true at 0.7; it uses only A and B). Lutheran baptism (nominal_affiliations) 0.5 -> 0.7, one reliable source; the same Todorov fact in family_religion, religious_heritage_by_birth and baptism_or_initiation also 0.5 -> 0.7. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -168,7 +169,7 @@ worldview:
       cites: [{source: S7, locator: "Sect. 3, note 14 (letter of October 1961; notebook 'Fehler in der Bibel')"}, {source: S1, locator: "§3.1 ('My Philosophical Viewpoint')"}, {source: S6, locator: "letters of 23 July 1961 and 8 May 1958"}]
       how_known: "Private letters and notebooks, consistent with each other, so 0.7."
       rationale: "Leans to reason. The theological world view may be grasped 'purely rationally (without the support of faith' (S7). There is 'a scientific (exact) philosophy and theology' (S1). He kept a notebook on errors in the Bible (S7) and had 'very little trust in the love of truth of papal nuncii' (S6, 1958). The stated limited exception: he treats the Bible's prophecy of the end of the world as something science confirms, so scripture keeps a place as a witness that reason can check (S6, 1961). So 3."
-    E_scope: {value: TODO, note: "Little in the sources read. His view that religions are mostly bad but religion is not (item 14 of 'My Philosophical Viewpoint') and his remarks on Islam are known only through Wang's books and Engelen's paper on the Max Phil notebooks, which were not read (Wang not online; Engelen's HAL copy blocked by a bot check). His 1952 letter says every human has the same psychic capacities to some degree (S6), which points toward the same rules for everyone but is not about religion. Score after reading Wang 1996 (p. 316) or the Collected Works."}
+    E_scope: {value: TODO, note: "Little in the sources read. His view that religions are mostly bad but religion is not (item 14 of 'My Philosophical Viewpoint') and his remarks on Islam are known only through Wang's books and Engelen's paper on the Max Phil notebooks, which were not read (Wang not online; Engelen's HAL copy blocked by a bot check). His 1952 letter says every human has the same psychic capacities to some degree (S6), which points toward the same rules for everyone but is not about religion. Score after reading Wang 1996 (p. 316) or the Collected Works. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED); score once it is decided."}
   mid_basin:
     value: true
     certainty: 0.7

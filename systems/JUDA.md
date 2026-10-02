@@ -2,15 +2,16 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools, adherents and coding guidance filled from three SEP entries, the multi-author Britannica article and a Pew Research Center report. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
 identity:
   id: JUDA
   v7_1_number: 70
@@ -57,7 +58,7 @@ lio_axes:
   B_cause: {value: 1, rationale: "God is continually active in nature and history and intervenes in the end-time; but rabbinic and philosophical traditions read miracles cautiously (Maimonides' naturalism). Range 0–3.", certainty: 0.5, cites: [{source: S1, locator: "page 'Basic beliefs and doctrines'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
   C_ledger: {value: 1, rationale: "Reward and punishment are part of the covenant and of Maimonides' principles; the afterlife is disputed and modern movements lack consensus.", certainty: 0.5, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
   D_authority: {value: 1, rationale: "Revelation and the interpretive tradition first; non-literal reading and a strong philosophical line (Maimonides, Cohen, Kaplan) give reason more room than in scripture-literal traditions. Matches the v7.1 note's 'reliance on revelation'.", certainty: 0.5, cites: [{source: S2, locator: "§2.5"}, {source: S3, locator: "§2"}], how_known: "0–4 scale (P1). 0.5 for the spread; Reform and Reconstructionist forms sit near 2."}
-  E_scope: {value: 1, rationale: "The covenant is particular: God 'has chosen the people of Israel in love'. Yet God is 'the teacher of all humanity', and Israel's response is seen as significant for all.", certainty: 0.5, cites: [{source: S1, locator: "page 'Basic beliefs and doctrines'"}], how_known: "0–4 scale (P1). Coder's reading, 0.5."}
+  E_scope: {value: 1, rationale: "The covenant is particular: God 'has chosen the people of Israel in love'. Yet God is 'the teacher of all humanity', and Israel's response is seen as significant for all.", certainty: 0.5, cites: [{source: S1, locator: "page 'Basic beliefs and doctrines'"}], how_known: "0–4 scale (P1). Coder's reading, 0.5. Scored on the covenant (a chosen people); the domain is open (OPEN_DECISIONS P7, PROPOSED), and on the world's order alone it would need a rescore. Already below the 0.7 cap."}
 epistemology: {value: "Study and interpretation of texts (Torah, Talmud) as the central religious activity; rabbinic non-literal reading; philosophical theology (Maimonides: logic cannot settle creation versus eternity); mystical knowledge in Kabbalah, which seeks contact with the divine independently of sense perception and intellect.", certainty: 1.0, cites: [{source: S2, locator: "§2.5"}, {source: S3, locator: "§5"}, {source: S1, locator: "page 'Jewish mysticism'"}], how_known: "SEP and Britannica."}
 ethics: {value: "Torah as 'a program of human action'; commandments govern relations with God, other people and the natural world (limits on human dominion); a covenant with obligations grounded in God's acts in history.", certainty: 1.0, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity's place in the universe', 'Israel: the Jewish people'"}], how_known: "Britannica."}
 practice:

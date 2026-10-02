@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin changed from UNKNOWN to TODO with a note: the evidence is in, but P4 does not say whether B is scored on his theology or his account of nature (new open item P6). key_early_reading changed from an empty list to UNKNOWN, as the coding guide asks."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P6 decided by Jason (2026-10-02): B_cause is scored on the account of nature. B_cause changed from 2 to 3 at 1.0, with the theology-wide reading (2) kept in the rationale; added the I q. 105 a. 5 statement. mid_basin changed from TODO to true at 1.0. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (miracles in ST I q. 105 a. 6–8 are part of his account of nature; the theology-wide 2 is a named alternative); mid_basin certainty 1.0 -> 0.7, with a note that the result turns on decision P6. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23 pattern): E_scope certainty 1.0 -> 0.7, because the score depends on which domain E is scored on (open item P7, PROPOSED). Score unchanged (2). Not reviewed."}
 
 identity:
   id: aquinas-thomas
@@ -172,9 +173,9 @@ worldview:
     E_scope:
       value: 2
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S4, locator: "I-II q. 94 a. 4; I q. 22 a. 2; I q. 23 a. 3"}]
-      how_known: "Summa theologiae; written profession, so 1.0."
+      how_known: "Summa theologiae, so written profession. Scored on both the natural order and the scope of salvation; the salvation side pulls it to 2. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone it would be about 3 (as CLASS_THEISM), on salvation alone about 1. The score depends on that choice, so certainty is capped at 0.7 under the Contested readings rule (CODING_GUIDE §3). Lowered from 1.0 after the lens audit, run 2 (2026-10-02)."
       rationale: "Mixed. Same rules for all: all things, even individual ones, are under one providence (I q. 22 a. 2), and the general principles of natural law are 'the same for all' (I-II q. 94 a. 4). But salvation runs by grace that God gives to some and not to others: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). That is a reserved in-group within an otherwise common order, so 2."
   mid_basin:
     value: true
@@ -413,7 +414,7 @@ sources:
 
 # Thomas Aquinas
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A, C, D, E at 1.0 and B at 0.7; mid_basin true at 0.7, a result that turns on decision P6 (B_cause scored on his account of nature).
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A, C, D at 1.0, and B and E at 0.7; mid_basin true at 0.7, a result that turns on decision P6 (B_cause scored on his account of nature).
 
 ## Summary
 
@@ -440,7 +441,7 @@ The family held a modest feudal domain and served Emperor Frederick II. His fath
 
 Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But Created things have "their proper operation" [S4, I q. 105 a. 5]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
 
-Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1, E 2 at 1.0 from written profession. B 3 at 0.7: it is scored on his account of nature (decision P6), and on his whole theology it would be 2, so certainty is capped. mid_basin true at 0.7; the result turns on P6.
+Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1 at 1.0 from written profession. E 2 at 0.7: it mixes the natural order and the scope of salvation, and the domain is open (P7). B 3 at 0.7: it is scored on his account of nature (decision P6), and on his whole theology it would be 2, so certainty is capped. mid_basin true at 0.7; the result turns on P6.
 
 ## Heritage (context only)
 

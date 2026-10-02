@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from six SEP entries and two Britannica articles. v7.1 scores and note unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Coding guidance wording: B_cause is scored on the person's account of nature (decision P6). No scores changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause quote attributed to William Adams (1767), as quoted in SEP Miracles §1.1; E_scope certainty 0.7 -> 0.5 and the Clarke miracle-definition quote dropped (no source addresses scope directly). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
 identity:
   id: CLTHEI
   v7_1_number: 72
@@ -60,7 +61,7 @@ lio_axes:
   B_cause: {value: 1, rationale: "Leans interventionist: miracles, answered petition and special divine action are central, but they are exceptions against a regular course of nature that the position also affirms: as William Adams (1767) put it, as quoted in SEP Miracles (S4, §1.1), 'There must be an ordinary regular course of nature, before there can be any thing extraordinary'.", certainty: 0.7, cites: [{source: S6, locator: "§3.1"}, {source: S3, locator: "§1"}, {source: S4, locator: "§1.1"}], how_known: "0–4 scale (P1). 1 rather than 0 because creationists say God acts 'occasionally'; popular piety may sit at 0."}
   C_ledger: {value: 1, rationale: "Leans interventionist: the popular form treats heaven and hell as deserved reward and punishment; theologians nuance this, and the code does not require it.", certainty: 0.5, cites: [{source: S7, locator: "introduction"}], how_known: "0–4 scale (P1). 0.5: one source, on Christian thought only."}
   D_authority: {value: 1, rationale: "Leans interventionist: revelation, sacred authority, religious experience and miracles as evidence for doctrine; some defenders also argue from evidence (Intelligent Design claims to infer design).", certainty: 0.5, cites: [{source: S2, locator: "'Theism and religious experience'"}, {source: S4, locator: "§1.3"}, {source: S6, locator: "§3.1"}], how_known: "0–4 scale (P1). 0.5 because the forms differ."}
-  E_scope: {value: 1, rationale: "Leans interventionist: God acts for particular people in answer to their prayers (S3, §1); the laws of nature still hold for everything else.", certainty: 0.5, cites: [{source: S3, locator: "§1"}], how_known: "0–4 scale (P1). Coder's reading: no source addresses scope directly, so 0.5, as for CLASS_THEISM. The Clarke quote on miracles attesting a particular person's authority was dropped after the lens audit (2026-10-02): it is a definition of a miracle, not evidence about in-group exceptions."}
+  E_scope: {value: 1, rationale: "Leans interventionist: God acts for particular people in answer to their prayers (S3, §1); the laws of nature still hold for everything else.", certainty: 0.5, cites: [{source: S3, locator: "§1"}], how_known: "0–4 scale (P1). Coder's reading: no source addresses scope directly, so 0.5, as for CLASS_THEISM. Scored on this-world divine action for particular people; the domain is open (OPEN_DECISIONS P7, PROPOSED). Already below the 0.7 cap. The Clarke quote on miracles attesting a particular person's authority was dropped after the lens audit (2026-10-02): it is a definition of a miracle, not evidence about in-group exceptions."}
 epistemology: {value: "God is known by revelation and authority, by religious experience, and by evidence such as miracles or design. Analogy (from Aquinas) is also used, but Britannica notes it leaves faith 'very thin and remote, far from the warm fellowship' that personal theism wants.", certainty: 1.0, cites: [{source: S2, locator: "The problem of particular knowledge of God"}, {source: S4, locator: "§1.3; §4"}], how_known: "Britannica and SEP."}
 ethics: {value: TODO, note: "The code has no ethics of its own; it inherits the host religion's. Not researched for the code as such."}
 practice:

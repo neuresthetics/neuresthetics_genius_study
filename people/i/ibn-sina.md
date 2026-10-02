@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Consistency pass after the lens audit (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the rationale names 4 as plausible on SEP's reading; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known notes that the score (3 at 0.5) is the same under every option of open item P7. No score change. Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -178,7 +179,7 @@ worldview:
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S2, locator: "§4"}, {source: S6, locator: "IX ch. 9, p. 643; X ch. 1, p. 651"}, {source: S10, locator: "Avicenna section"}]
-      how_known: "Coder's reading of SEP's account and the translated text; neither addresses the axis directly, so 0.5."
+      how_known: "Coder's reading of SEP's account and the translated text; neither addresses the axis directly, so 0.5. Scored on both the natural order and access to knowledge and bliss; the score is 3 under every option of open item P7 (OPEN_DECISIONS), so it does not depend on the domain."
       rationale: "Leans to same rules for all. One graded order runs from the intellects through the spheres to matter, plants, animals and humans (S6, p. 651); all humans have the means to reach knowledge and bliss but must work for it, with no free gift for the idle (S2, §4). The limited exception is the prophet, a rare soul whose matter suits a perfection that few human mixtures can receive (S6, X ch. 3 opening, via S10). Gutas reads the prophet as a natural extreme of the intellect (S2); Horten reads him as raised above nature (S10). That disagreement is why this is 0.5."
   mid_basin:
     value: true

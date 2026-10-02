@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: C_ledger certainty 0.7 -> 0.5 (prayers have no judgement or reward language). Consistency pass (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the coder notes name B = 4 as plausible; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -179,7 +180,7 @@ worldview:
       cites: [{source: S5, locator: "p. 394"}, {source: S6, locator: "pp. 404–405"}, {source: S4, locator: "p. 178"}]
       how_known: "Two private letters and a draft reply (1852, 1875, 1876) that agree; so 0.7."
       rationale: "Holds both, in different domains. In science, observation and hypothesis rule, and he refuses to fix scripture to scientific theories (S5) or to give harmonising efforts a society's stamp (S6). In faith, scripture is the authority, and he regards Christianity as the one belief that can be examined without limit (S4). Neither ranks over the other in the texts read. Private letters and a draft that agree, so 0.7."
-    E_scope: {value: TODO, note: "Evidence so far: the same physical laws for distant stars and earth (S8, p. 376) and for human beings, whose will acts at singular points within law (S9). Nothing read on whether believers have an exemption (salvation for an in-group). Read Theerman 1986 (Am. J. Phys. 54: 312–317) and the 1884 edition of the Life before scoring."}
+    E_scope: {value: TODO, note: "Evidence so far: the same physical laws for distant stars and earth (S8, p. 376) and for human beings, whose will acts at singular points within law (S9). Nothing read on whether believers have an exemption (salvation for an in-group). Read Theerman 1986 (Am. J. Phys. 54: 312–317) and the 1884 edition of the Life before scoring. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone the evidence above points to about 3; on salvation scope it stays TODO until the readings above are done."}
   mid_basin:
     value: true
     certainty: 0.7

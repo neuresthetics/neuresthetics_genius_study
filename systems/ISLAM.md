@@ -2,15 +2,16 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools, adherents and coding guidance filled from six SEP entries, the multi-author Britannica article and a Pew Research Center report. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
 identity:
   id: ISLAM
   v7_1_number: 69
@@ -52,7 +53,7 @@ lio_axes:
   B_cause: {value: 1, rationale: "Nature has fixed, God-given patterns with no gaps, but the dominant Ashʿarite theology makes God the immediate cause of every change (occasionalism) and defends miracles; falsafa holds causal necessity. Spread from 0 to 3.", certainty: 0.5, cites: [{source: S1, locator: "page 'Doctrines of the Qurʾān'"}, {source: S3, locator: "§1.2; §3.3"}], how_known: "0–4 scale (P1). 0.5 because the schools are far apart; where occasionalism counts on this axis is itself a judgement call."}
   C_ledger: {value: 0, rationale: "Every person is judged by their deeds and rewarded or punished in a bodily and spiritual afterlife; mercy and intercession qualify it but do not remove the ledger.", certainty: 0.7, cites: [{source: S1, locator: "page 'Eschatology'"}], how_known: "0–4 scale (P1). 0.7: stated directly, but falsafa and some Sufis read it differently."}
   D_authority: {value: 1, rationale: "Revelation and prophetic tradition first; rational theology (kalām) and philosophy work within it. Ashʿarites deny that reason alone finds good and evil (toward 0); Muʿtazilites and Averroes give reason more room (toward 2). Matches the v7.1 note's 'reliance on revelation'.", certainty: 0.5, cites: [{source: S1, locator: "pages 'Sunnism', 'Shiism'"}, {source: S2, locator: "§2.2"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
-  E_scope: {value: 1, rationale: "God's will governs all creation, but revelation, prophecy and community are particular: Muslims are the best community, and Jews and Christians had a special status as people of the Book. Judgment is for every individual.", certainty: 0.5, cites: [{source: S1, locator: "introduction; page 'Eschatology'"}], how_known: "0–4 scale (P1). Coder's reading, so 0.5."}
+  E_scope: {value: 1, rationale: "God's will governs all creation, but revelation, prophecy and community are particular: Muslims are the best community, and Jews and Christians had a special status as people of the Book. Judgment is for every individual.", certainty: 0.5, cites: [{source: S1, locator: "introduction; page 'Eschatology'"}], how_known: "0–4 scale (P1). Coder's reading, so 0.5. Scored on revelation, prophecy and community; the domain is open (OPEN_DECISIONS P7, PROPOSED), and on the world's order alone it would need a rescore. Already below the 0.7 cap."}
 epistemology: {value: "Revealed knowledge (Qurʾān, ḥadīth) alongside the human knowledge of the ancients, which al-Kindī began to reconcile through rational and metaphorical exegesis. Kalām argues rationally inside revealed premises; falsafa follows Greek demonstration; mystics claim a higher knowledge in experience; Shiʿism holds that sure knowledge comes only through the infallible imam.", certainty: 1.0, cites: [{source: S1, locator: "pages 'Islamic philosophy', 'Shiism', 'Critiques of Aristotle in Islamic theology'"}, {source: S5, locator: "introduction"}], how_known: "Britannica and SEP."}
 ethics: {value: "Submission to the divine will; moral struggle against pride and narrowness; social service to the needy as part of religion; equality of believers before God, with distinction only by piety and good acts.", certainty: 1.0, cites: [{source: S1, locator: "pages 'Doctrines of the Qurʾān', 'Eschatology' (sections 'Social service')"}], how_known: "Britannica."}
 practice:

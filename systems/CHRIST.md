@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools, adherents and coding guidance filled from SEP entries, the multi-author Britannica article and a Pew Research Center report. v7.1 scores and note unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Coding guidance wording: B_cause is scored on the person's account of nature, not their work or creed (decision P6). No scores changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
 identity:
   id: CHRIST
   v7_1_number: 68
@@ -54,7 +55,7 @@ lio_axes:
   B_cause: {value: 1, rationale: "Miracles, the resurrection and answered prayer are confessed, but against a created order that Christians also treat as lawful and intelligible ('Book of Nature'). Range: popular piety and creationism near 0, Thomist and non-interventionist models near 2.", certainty: 0.5, cites: [{source: S1, locator: "page 'God as Creator, Sustainer, and Judge'"}, {source: S2, locator: "§2.1; §3.1"}], how_known: "0–4 scale (P1). 0.5 because the schools spread across 0–2."}
   C_ledger: {value: 1, rationale: "Personal judgment with heaven, hell and (for Catholics) purgatory, so there is a personal ledger; but grace, not merit, decides salvation in most theology, and universalists deny a final division.", certainty: 0.5, cites: [{source: S1, locator: "page 'Concepts of life after death'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5: Augustinian, Arminian and universalist theologies disagree."}
   D_authority: {value: 1, rationale: "Revelation first: scripture, creeds and church teaching, with reason as a partner in the Thomist line and experience and science added in Wesleyan and integration approaches. Fideists and fundamentalists sit at 0. Matches the v7.1 note's 'reliance on supernatural revelation'.", certainty: 0.5, cites: [{source: S1, locator: "page 'Faith and reason'"}, {source: S2, locator: "§2.1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
-  E_scope: {value: 1, rationale: "Salvation is offered to all but runs through Christ and, for many, the church; God acts for particular people in answer to prayer and in particular events (incarnation, resurrection). Universalists and Arminians widen it; the Augustinian elect narrows it.", certainty: 0.5, cites: [{source: S3, locator: "§1"}, {source: S1, locator: "page 'Concepts of life after death'"}], how_known: "0–4 scale (P1). Coder's reading; schools disagree."}
+  E_scope: {value: 1, rationale: "Salvation is offered to all but runs through Christ and, for many, the church; God acts for particular people in answer to prayer and in particular events (incarnation, resurrection). Universalists and Arminians widen it; the Augustinian elect narrows it.", certainty: 0.5, cites: [{source: S3, locator: "§1"}, {source: S1, locator: "page 'Concepts of life after death'"}], how_known: "0–4 scale (P1). Coder's reading; schools disagree. Scored mainly on the scope of salvation, plus particular divine acts; the domain is open (OPEN_DECISIONS P7, PROPOSED), and on the world's order alone it would need a rescore. Already below the 0.7 cap."}
 epistemology: {value: "Faith as assent to revealed truths on God's authority (Aquinas), supported but not replaced by reason; natural theology (design and cosmological arguments) and arguments from religious experience and miracles; voluntarist defences (Pascal's wager, James) and Kierkegaard's leap of faith; in science and religion, critical realism is the dominant outlook.", certainty: 1.0, cites: [{source: S1, locator: "pages 'Faith and reason', 'Christian philosophy as natural theology', 'Arguments from religious experience and miracles'"}, {source: S2, locator: "§2.1"}], how_known: "Britannica and SEP."}
 ethics: {value: TODO, note: "Not researched in this run. The v7.1 note calls it a framework for 'salvation and ethics'; the content (love commands, natural law, Reformation ethics) would need its own sources."}
 practice:
