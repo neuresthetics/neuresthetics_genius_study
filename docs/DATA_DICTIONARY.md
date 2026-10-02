@@ -67,7 +67,7 @@ One row per raw name string per model, plus keep-separate and flag rows.
 | `model` | Which list it came from (blank for curated rows that are not tied to one list). |
 | `variant_key` | The formatting key (METHOD §2.2). |
 | `canonical` | The person it maps to, or `(EXCLUDED)`. |
-| `rule` | How it was mapped. `identical`: same as the canonical name. `format`: differs only in formatting. `curated alias` or `curated alias (target side)`: a merge row in `curated_aliases.csv`. `curated: keep separate`. `curated: flag`. `exclude`. |
+| `rule` | How it was mapped. `identical`: same as the canonical name. `format`: differs only in formatting (same formatting key as the canonical name). `name_correction`: a curated `display_fix` that changes the name itself, not just its formatting (the corrected name has a different key); the note is the curated row's reason and the confidence is the curated row's. `curated alias` or `curated alias (target side)`: a merge row in `curated_aliases.csv`. `curated: keep separate`. `curated: flag`. `exclude`. |
 | `confidence` | `high`, `medium`, `low` or `confirmed` (from the curated row; formatting merges are `high`). |
 | `merged` | `yes` if the variant was folded into another string's person, `n/a` for the canonical string itself, `no` for keep-separate, flag and exclude rows. |
 | `note` | Reason. |
@@ -82,7 +82,7 @@ One row per merge event or review item.
 | `variant` | The string merged in. For exclusions, all strings joined with ` \| `. |
 | `models` | Models involved. |
 | `action` | `merged`, `same-model duplicate counted once`, `excluded`, or `NOT merged - review suggested`. |
-| `rule` | `format`, `curated alias`, `curated alias (target side)`, `distinct-model count`, `exclude`, `similar spelling`, `token subset`. |
+| `rule` | `format`, `name_correction`, `curated alias`, `curated alias (target side)`, `distinct-model count`, `exclude`, `similar spelling`, `token subset`. |
 | `confidence` | `high`/`medium`/`low`/`confirmed`, or `similarity 0.xx` for scan pairs. |
 | `note` | Reason. |
 

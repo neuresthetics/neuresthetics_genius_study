@@ -206,7 +206,7 @@ def main():
         elif d == "flag":
             flags[vk] = c["reason"]
         elif d == "display_fix":
-            display_fix[vk] = (c["target"].strip(), c["reason"])
+            display_fix[vk] = (c["target"].strip(), c["reason"], c["confidence"].strip())
     for vk, tk, c in separate_rows:
         if vk in keys and tk in keys and uf.find(vk) == uf.find(tk):
             sys.exit(f"'separate' pair ended up merged: {c}")
@@ -252,6 +252,7 @@ def main():
 
     # ---------------------------------------------------------- build people
     people, excluded = [], []
+    name_corrections = set()
     alias_rows, log_rows = [], []
     curated_pairs = {}
     for c in curated_merge_rows:
@@ -361,6 +362,10 @@ def main():
                 rule = "curated alias (target side)"
                 conf = "confirmed" if via and all(cc["confidence"] == "confirmed" for cc in via) else "high"
                 note = "target of curated merge: " + "; ".join(sorted({cc["variant"] for cc in via})) if via else "linked by curated merge"
+            if dfix and rule == "format" and vk != name_key(canonical):
+                # the display fix changes more than formatting (the corrected name has a different key)
+                rule = "name_correction"; conf = dfix[0][2]; note = dfix[0][1]
+                name_corrections.add((v, canonical))
             if split_compound(v)[1]:
                 note = (note + "; " if note else "") + f"compound entry split on ' - ' (other part: '{split_compound(v)[1]}')"
             for m in sorted(variant_models[v]):
@@ -433,7 +438,7 @@ def main():
                             confidence=f"similarity {r}", note="automatic scan; left as two people"))
 
     # ---------------------------------------------------------- diff
-    write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, keys, uf, sim_flags, warnings, t7)
+    write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, keys, uf, sim_flags, warnings, t7, name_corrections)
     print(f"people={len(people)} excluded={len(excluded)} raw_rows={len(raw)} keys={len(keys)}")
     for w_ in warnings: print("WARN", w_)
 
@@ -464,7 +469,7 @@ def reproduce_v6_aggregate():
     return uniq, merges
 
 
-def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, keys, uf, sim_flags, warnings, t7):
+def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, keys, uf, sim_flags, warnings, t7, name_corrections=()):
     L = []
     P = L.append
     n = len(people)
@@ -650,6 +655,9 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
     nmerge = collections.Counter()
     P("- Format merges (automatic): spacing, hyphens used as spaces, Gemini's 'Last-First' repeats, accents, initials, word order (Jr./Sr. are kept, so father and son stay separate). "
       "Each is listed in `alias_map.csv` (rule `format`).")
+    if name_corrections:
+        P("- Display fixes that change the name itself, not just its formatting (rule `name_correction` in `alias_map.csv`, with the curated reason as the note): "
+          + ", ".join(f"{v} → {c}" for v, c in sorted(name_corrections, key=lambda x: (deaccent(x[1]).lower(), x[0]))) + ".")
     P("- Curated alias merges (hand list in `curated_aliases.csv`, all logged in `merge_log.csv`): Avicenna/Ibn Sina, Averroes/Ibn Rushd, "
       "Alhazen/Ibn al-Haytham, Al-Khwarizmi/Muhammad ibn Musa al-Khwarizmi, Al-Biruni, Al-Farabi/Farabi, Al-Razi/Razi, Laozi/Lao Tzu, Li Bai/Li Po, "
       "Buddha/Siddhartha Gautama, Rembrandt, Michelangelo, Leibniz, Hegel, Oppenheimer, E.O. Wilson, Spinoza (Benedict/Baruch), Anscombe, Kahn (Bob/Robert), "

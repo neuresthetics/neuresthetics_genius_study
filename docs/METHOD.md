@@ -55,7 +55,7 @@ The rebuild does no fuzzy merging. Every merge beyond formatting is a row in `da
 | `separate` | 26 | keys that look alike but are different people (George Washington / George Washington Carver, Zeno of Elea / Zeno of Citium, W.H. / W.L. Bragg, ...) |
 | `exclude` | 4 | not a person, or a collective (Wright Brothers, plus Orville and Wilbur Wright listed individually; Anderson localization) |
 | `flag` | 0 | kept as listed, but a human should look (none left) |
-| `display_fix` | 27 | the display spelling is corrected; identity is unchanged (includes GPT's "Brian-Maynard-Smith" → John Maynard Smith) |
+| `display_fix` | 27 | the display spelling is corrected; identity is unchanged (includes GPT's "Brian-Maynard-Smith" → John Maynard Smith). In `alias_map.csv`, a fix that only changes formatting (same key) keeps rule `format`; a fix that changes the name itself gets rule `name_correction`, with the curated reason as the note (6 of 27) |
 
 `confidence` is `high`, `medium` or `low` for the agent's judgment, or `confirmed` when Jason has approved the row. A confirmed row names the date and the OPEN_DECISIONS item in its reason (R2–R5, 2026-10-01).
 

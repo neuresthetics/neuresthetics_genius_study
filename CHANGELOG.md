@@ -61,6 +61,7 @@ Decisions that need sign-off are listed in `docs/OPEN_DECISIONS.md`: the LIO 0�
   - R5: the three similarity pairs are `separate` rows marked `confirmed`, so the scan no longer lists them;
   - S2: PANT `display_label` is the full V6 label, `label_status` approved.
   - Roster: 1,382 → 1,380 people; F = 2: 185 → 183; F = 5, 3–4 and 1 unchanged (82, 149, 966). `rebuild_roster.py` now reads `status_overrides.csv` and its diff text follows the inputs.
+- **2026-10-01, alias_map labels** (approved by Jason): display fixes that change the name itself, not just its formatting, now get rule `name_correction` in `alias_map.csv` and `merge_log.csv`, with the curated row's reason and confidence. Before, all of them read `format` / "differs only in spacing…". 6 of the 27 display-fix rows are name corrections (Brian-Maynard-Smith → John Maynard Smith, Lee-Smolins → Lee Smolin, Albert Hofman → Albert Hofmann, Gabriel Marcell → Gabriel Marcel, Gabriel Mistral → Gabriela Mistral, Tenzin Gyatso-Dalai Lama → Tenzin Gyatso (14th Dalai Lama)); 21 stay `format`. Labels only: people, counts and ids are unchanged.
 
 ## v7.1 (2026-09-14 data freeze)
 

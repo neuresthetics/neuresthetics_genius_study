@@ -21,7 +21,7 @@ Alan Turing,Alan-Turing,GPT,merged,format,high,differs only in spacing/hyphens/a
 Alan Turing,Turing-Alan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Albert Einstein,Albert-Einstein,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Albert Einstein,Einstein-Albert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Albert Hofmann,Albert Hofman,Grok,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Albert Hofmann,Albert Hofman,Grok,merged,name_correction,high,spelling (no merge involved)
 Albert Sabin,Sabin-Albert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Aldous Huxley,Aldous-Huxley,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Alexander Fleming,Fleming-Alexander,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -222,10 +222,10 @@ Fyodor Dostoevsky,Fyodor-Dostoevsky,GPT,merged,format,high,differs only in spaci
 Gabriel García Márquez,Gabriel Garcia Marquez,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Gabriel García Márquez,Gabriel-Garcia-Marquez,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Gabriel García Márquez,García Márquez-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Gabriel Marcel,Gabriel Marcell,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Gabriel Marcel,Marcell-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Gabriela Mistral,Gabriel Mistral,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Gabriela Mistral,Mistral-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel Marcel,Gabriel Marcell,Gemini,merged,name_correction,high,spelling (no merge involved)
+Gabriel Marcel,Marcell-Gabriel,Gemini,merged,name_correction,high,spelling (no merge involved)
+Gabriela Mistral,Gabriel Mistral,Gemini,merged,name_correction,high,spelling (no merge involved)
+Gabriela Mistral,Mistral-Gabriel,Gemini,merged,name_correction,high,spelling (no merge involved)
 Galileo Galilei,Galilei-Galileo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Galileo Galilei,Galileo-Galilei,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Genghis Khan,Genghis-Khan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -361,7 +361,7 @@ John Locke,Locke-John,Gemini,merged,format,high,differs only in spacing/hyphens/
 John Marshall,John-Marshall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Maynard Keynes,John-Maynard-Keynes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Maynard Keynes,Keynes-John Maynard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-John Maynard Smith,Brian-Maynard-Smith,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Maynard Smith,Brian-Maynard-Smith,GPT,merged,name_correction,confirmed,GPT-only name; 'Brian' is a model error for John Maynard Smith (1920-2004; GPT field evolutionary-biology matches); no notable Brian Maynard Smith found; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R3)
 John McCarthy,John-McCarthy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Milton,John-Milton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Nash,John-Nash,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -397,7 +397,7 @@ Langston Hughes,Hughes-Langston,Gemini,merged,format,high,differs only in spacin
 Langston Hughes,Langston-Hughes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Laozi,Lao Tzu,Gemini,merged,curated alias (target side),high,target of curated merge: Laozi
 Larry Page,Larry-Page,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Lee Smolin,Lee-Smolins,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lee Smolin,Lee-Smolins,GPT,merged,name_correction,high,spelling (no merge involved)
 Leo Tolstoy,Leo-Tolstoy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Leo Tolstoy,Tolstoy-Leo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Leon Battista Alberti,Alberti-Leon Battista,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -616,8 +616,8 @@ Subrahmanyan Chandrasekhar,Subrahmanyan-Chandrasekhar,GPT,merged,format,high,dif
 Sun Tzu,Sun-Tzu,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 T.S. Eliot,Eliot-T-S,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 T.S. Eliot,T-S Eliot,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Tenzin Gyatso (14th Dalai Lama),Gyatso-Tenzin-Dalai Lama,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Tenzin Gyatso (14th Dalai Lama),Tenzin Gyatso-Dalai Lama,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tenzin Gyatso (14th Dalai Lama),Gyatso-Tenzin-Dalai Lama,Gemini,merged,name_correction,high,name plus title in one string
+Tenzin Gyatso (14th Dalai Lama),Tenzin Gyatso-Dalai Lama,Gemini,merged,name_correction,high,name plus title in one string
 Terence Tao,Tao-Terence,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Terence Tao,Terence-Tao,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 The Notorious B.I.G.,The-Notorious-BIG,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
