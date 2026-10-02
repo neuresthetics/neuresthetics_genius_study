@@ -89,6 +89,10 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
 
 - **2026-10-01, CLASS_THEISM** (record version 3): filled from 11 SEP entries. LIO A 1 (0.7), B 3 (0.7), C 2 (0.5), D 2 (0.7), E 3 (0.5). Flags: the v7.1 note lists Aristotle (ARIST by the founders rule; no creation ex nihilo) and Leibniz (unchecked).
 
+### People
+
+- **2026-10-02, James Clerk Maxwell** (`people/m/maxwell-james-clerk.md`, draft — unreviewed): new person record from his letters, essays and 1873 "Molecules" lecture (via Campbell and Garnett 1882 and the 1890 Scientific Papers), Britannica, MacTutor and Hutchinson. Primary system CHRIST (0.7). A_locus 0 and B_cause 3 (physics) at 1.0, so `mid_basin` is true under P4; C_ledger 1 and D_authority 2 at 0.7; E_scope TODO. Quotes checked word for word against the fetched texts.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

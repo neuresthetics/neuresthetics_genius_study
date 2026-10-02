@@ -11,6 +11,7 @@ Files are added one person per run (`docs/RUNBOOK.md`). Not every roster person 
 | file | status |
 |---|---|
 | [`f/faraday-michael.md`](f/faraday-michael.md) | worked example, unreviewed |
+| [`m/maxwell-james-clerk.md`](m/maxwell-james-clerk.md) | draft, unreviewed |
 
 Validate:
 
