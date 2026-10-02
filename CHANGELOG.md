@@ -49,6 +49,7 @@ The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`
 - **Reference data:** `data/reference/regions.csv`, the country-to-region table for `region_of_birth` (UN M49, decision P3).
 - **Docs:** METHOD, DATA_DICTIONARY (field tables generated from the schemas), CODING_GUIDE (v7.1 coding rules verbatim), RUNBOOK, OPEN_DECISIONS.
 - **Reports:** `reports/coverage.md` from `scripts/coverage_report.py`.
+- **Figures (2026-10-02):** four descriptive charts in `figures/` from `scripts/make_figures.py`, which needs matplotlib (`scripts/requirements-figures.txt`). They are embedded in the README. The charts show list overlap for the 1,380 roster people, the 441 core people by field bucket (region is coded for only the six person records), the six draft people on B_cause against A_locus, and the nine sourced systems on the LIO axes. Each carries the footer 'descriptive only, no results'.
 
 ### Decisions
 

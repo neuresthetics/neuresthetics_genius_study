@@ -26,9 +26,10 @@ See [CHANGELOG.md](CHANGELOG.md) for details.
 | `systems/` | One Markdown file per belief system (77), named by the v7.1 code. |
 | `schema/` | JSON Schemas for person and system records. |
 | `templates/` | Blank person and system records to copy. |
-| `scripts/` | Roster rebuild, id assignment, validators, coverage report, data dictionary generator. |
+| `scripts/` | Roster rebuild, id assignment, validators, coverage report, data dictionary generator, figures. |
 | `docs/` | Method, data dictionary, coding guide, runbook, open decisions. |
 | `reports/` | Generated reports (coverage). |
+| `figures/` | Descriptive charts made by `scripts/make_figures.py` (no results). |
 | `versions/` | Per-version notes and the v7.1 → v8 roster diff. |
 | `papers/` | v8 papers, once written. |
 
@@ -43,6 +44,8 @@ python3 scripts/assign_ids.py --check       # person ids are up to date
 python scripts/validate_people.py           # person records
 python scripts/validate_systems.py          # belief-system records
 python scripts/coverage_report.py           # writes reports/coverage.md
+pip install -r scripts/requirements-figures.txt
+python scripts/make_figures.py              # writes figures/*.png
 ```
 
 ## Docs
@@ -53,6 +56,26 @@ python scripts/coverage_report.py           # writes reports/coverage.md
 - [Runbook](docs/RUNBOOK.md): step by step for one person (or system) per run.
 - [Open decisions](docs/OPEN_DECISIONS.md): choices that need sign-off and what was decided (none open as of 2026-10-01).
 - [Coverage](reports/coverage.md): what exists so far.
+
+## Figures (v8.0-alpha, descriptive only)
+
+These charts describe what is in the repo so far. They are not results, and no frequency, rate or ranking conclusion should be drawn from them. The roster comes from five LLM-generated lists, and the person chart shows only the six draft (unreviewed) records. Regenerate them with `python scripts/make_figures.py`.
+
+![Roster people by number of model lists, and each list's raw row count](figures/roster_list_overlap.png)
+
+*How many of the five LLM-generated lists name each of the 1,380 roster people (966 are on only one list), and each list's raw rows against the roster people it names.*
+
+![Core roster by study region and field bucket](figures/core_by_region_field.png)
+
+*Composition of the 441 core candidates by field bucket. Region of birth is coded per person record, so only the six coded people appear in the region panel. This describes the candidate roster, not a finding.*
+
+![The six draft person records on B_cause against A_locus](figures/people_cause_locus.png)
+
+*The six draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. All six are B_cause 3, and six hand-picked people are not a sample.*
+
+![The nine sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)
+
+*The nine sourced belief-system drafts on the five v8 LIO axes, showing each score with its certainty. These are unreviewed coder drafts, not the v7.1 rubric, and the other 68 systems are stubs.*
 
 ## History
 

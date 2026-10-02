@@ -1,0 +1,2 @@
+# make_figures.py also needs matplotlib (and numpy, which it pulls in):
+matplotlib>=3.7
