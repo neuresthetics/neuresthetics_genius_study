@@ -41,8 +41,8 @@
           "description": "Fixed: tells the validator which schema applies."
         },
         "schema_version": {
-          "const": "1.0",
-          "description": "Version of the schema this file was written against. Bump in the schema and in every file together."
+          "const": "1.1",
+          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes."
         },
         "record_version": {
           "type": "integer",
@@ -58,7 +58,7 @@
             "reviewed",
             "needs revision"
           ],
-          "description": "Where the file is in review. Only a human reviewer may set 'reviewed'. 'example — unreviewed' marks the worked examples."
+          "description": "Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples."
         },
         "collected_by": {
           "type": "string",
@@ -275,11 +275,11 @@
         },
         "era_bucket": {
           "$ref": "#/$defs/era",
-          "description": "Bucket of first_lasting_contribution_year (PROPOSED buckets)."
+          "description": "Bucket of first_lasting_contribution_year (decision P2). A year on an edge goes to the later bucket (1950 is '1950 on'). Birth year stays in basics.birth.date, so a birth-year version can be computed for a sensitivity check."
         },
         "region_of_birth": {
           "$ref": "#/$defs/region",
-          "description": "Macro-region of the birth place (PROPOSED list, based on UN M49 regions, applied to modern borders)."
+          "description": "Macro-region of the birth place, on modern borders, from data/reference/regions.csv (decision P3: UN M49 sub-regions; MENA = Northern Africa + Western Asia + Iran)."
         },
         "region_of_work": {
           "$ref": "#/$defs/region",
@@ -570,7 +570,7 @@
             "D_authority",
             "E_scope"
           ],
-          "description": "Position on the five LIO axes (PROPOSED 0-4 scale). Each score needs basis, certainty, cites and a rationale."
+          "description": "Position on the five LIO axes (0-4 scale, decision P1). Each score needs basis, certainty, cites and a rationale."
         },
         "mid_basin": {
           "type": "object",
@@ -621,7 +621,7 @@
               "$ref": "#/$defs/claimRules"
             }
           ],
-          "description": "True if the person is a first-rank theist whose working physics or method ran on lawful order (v7.1 'mid-basin theist'). Operational definition is an open decision."
+          "description": "v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored for the domain of the person's work, both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise UNKNOWN or BELOW_THRESHOLD. Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored."
         },
         "statements": {
           "type": "array",
@@ -1177,7 +1177,7 @@
       "type": "integer",
       "minimum": 0,
       "maximum": 4,
-      "description": "PROPOSED 0-4 scale (docs/OPEN_DECISIONS.md): 0 interventionist pole, 2 mixed, 4 LIO pole."
+      "description": "0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately."
     },
     "source": {
       "type": "object",
@@ -1700,7 +1700,7 @@
           "$ref": "#/$defs/claimRules"
         }
       ],
-      "description": "PROPOSED buckets on the year of the first lasting contribution (docs/OPEN_DECISIONS.md)"
+      "description": "Buckets on the year of the first lasting contribution (decision P2, 2026-10-01). Each bucket includes its lower edge: 1600 is '1600 to 1749', 1950 is '1950 on'."
     },
     "region": {
       "type": "object",
@@ -1762,7 +1762,7 @@
           "$ref": "#/$defs/claimRules"
         }
       ],
-      "description": "PROPOSED macro-regions (docs/OPEN_DECISIONS.md)"
+      "description": "Macro-regions on modern borders (decision P3, 2026-10-01). Country-to-region table: data/reference/regions.csv."
     },
     "item": {
       "type": "object",

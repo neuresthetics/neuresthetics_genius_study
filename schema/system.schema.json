@@ -45,8 +45,8 @@
           "description": "Fixed: tells the validator which schema applies."
         },
         "schema_version": {
-          "const": "1.0",
-          "description": "Version of the schema this file was written against. Bump in the schema and in every file together."
+          "const": "1.1",
+          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1, P5, S3, S4 and S5; no field or enum changes."
         },
         "record_version": {
           "type": "integer",
@@ -62,7 +62,7 @@
             "reviewed",
             "needs revision"
           ],
-          "description": "Where the file is in review. Only a human reviewer may set 'reviewed'. 'example — unreviewed' marks the worked examples."
+          "description": "Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples."
         },
         "collected_by": {
           "type": "string",
@@ -106,7 +106,7 @@
         "id": {
           "type": "string",
           "pattern": "^[A-Z0-9_]+$",
-          "description": "The v7.1 abbreviation code (e.g. PANT, CLASS_THEISM). Must equal the file name. One of the 77; adding a code needs a schema bump."
+          "description": "The v7.1 abbreviation code (e.g. PANT, CLASS_THEISM). Must equal the file name. One of the 77. The list is closed for v8 (decision S4): proposed new codes are collected in a list (code, why, example people, and for a split the people it would move) and added in one batch with one schema bump and Jason's approval."
         },
         "v7_1_number": {
           "type": "integer",
@@ -976,7 +976,7 @@
         "D_authority",
         "E_scope"
       ],
-      "description": "Position on the five LIO axes (PROPOSED 0-4 scale), for the system's official or scholarly form. Variants that differ are described in schools_and_variants."
+      "description": "Position on the five LIO axes (0-4 scale, decision P1), for the system's official or scholarly form. Variants that differ are described in schools_and_variants."
     },
     "epistemology": {
       "$ref": "#/$defs/text",
@@ -1029,7 +1029,7 @@
       "items": {
         "$ref": "#/$defs/variant"
       },
-      "description": "Internal schools and forms, e.g. scholastic vs popular (the way CLASS_THEISM and CLTHEI are split). Say which LIO axes move."
+      "description": "Internal schools and forms, e.g. a scholarly and a popular form inside one tradition. Say which LIO axes move."
     },
     "adherents": {
       "type": "object",
@@ -1219,7 +1219,7 @@
         "V",
         "X"
       ],
-      "description": "Slot for revised scores. Each axis needs a score and rationale. Not started until Jason opens it."
+      "description": "Slot for revised scores (decision S3, 2026-10-01). Not started until the first coding pool is done and Jason opens it. Then: a cite for each axis score, two scorers score a sample independently and report agreement before the rest are scored, and Jason approves the final numbers. Revised scores sit beside v7_1_rubric and never overwrite it."
     },
     "coding_guidance": {
       "type": "object",
@@ -1421,7 +1421,7 @@
       "type": "integer",
       "minimum": 0,
       "maximum": 4,
-      "description": "PROPOSED 0-4 scale (docs/OPEN_DECISIONS.md): 0 interventionist pole, 2 mixed, 4 LIO pole."
+      "description": "0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately."
     },
     "source": {
       "type": "object",
@@ -1837,7 +1837,7 @@
             "contrast case",
             "overlaps"
           ],
-          "description": "Read as: '<code> is <relation> this system'. E.g. in CLTHEI.md, {code: CLASS_THEISM, relation: 'scholastic form of'} means CLASS_THEISM is the scholastic form of CLTHEI's tradition."
+          "description": "Read as: '<code> is <relation> this system'. E.g. in PANT.md, {code: STOIC, relation: 'parent tradition'} means Stoicism is a parent tradition of PANT. CLTHEI and CLASS_THEISM are 'neighbor (easily confused)' to each other (decision S5)."
         },
         "note": {
           "type": "string",

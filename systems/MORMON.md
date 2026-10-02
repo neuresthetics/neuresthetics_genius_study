@@ -1,7 +1,7 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
+  schema_version: "1.1"
   record_version: 1
   review_status: stub
   collected_by: scripts/make_system_stubs.py

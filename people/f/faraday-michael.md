@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.0"
-  record_version: 2
+  schema_version: "1.1"
+  record_version: 3
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example created to show the record structure. Only well-sourced fields filled; everything else TODO. Not reviewed."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "1844 exclusion: reason, length and restoration added from Cantor 2020 (S8), Brooke 1991 (S9) and Gladstone 1872/1873 (S10, S11); second eldership after 1860 added. Exact readmission date still a gap."}
+    - {date: 2026-10-01, by: "Grok Bot", summary: "Schema 1.1. Era and region notes now cite the decided buckets (P2) and the region table (P3). mid_basin note: the P4 test exists; value stays TODO until A_locus and B_cause are scored."}
 
 identity:
   id: faraday-michael
@@ -55,8 +56,8 @@ basics:
       cites: [{source: S1, locator: "opening sentence; Later life"}, {source: S2, locator: "Biography: 'a Grace and Favour House at Hampton Court where he died'"}]
       how_known: "Two independent summaries agree."
   first_lasting_contribution_year: {value: 1821, certainty: 1.0, cites: [{source: S1, locator: "Early life (electromagnetic rotation, 'the first electric motor')"}, {source: S2, locator: "Biography: 'electro-magnetic rotations (1821)'"}], how_known: "Both list the 1821 electromagnetic rotations as his first major discovery in electricity."}
-  era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Derived from first_lasting_contribution_year (1821) under the proposed era buckets."}
-  region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in England; England is Northern Europe under the proposed (UN M49-based) region list."}
+  era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Derived from first_lasting_contribution_year (1821) under the era buckets (decision P2)."}
+  region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in England; the United Kingdom is Northern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S2, locator: "Ri positions"}], how_known: "His whole working life was at the Royal Institution in London."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "Biography: 'the son of a Sandemanian blacksmith'"}, {source: S1, locator: "throughout ('he', 'his')"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "All his published books and paper collections are in English."}
@@ -149,7 +150,7 @@ worldview:
     C_ledger: {value: TODO, note: "Evidence to weigh: his hope of a future life and 'the rest' (S4); his exhortations as elder (S5 p. 2) and Bible markings (S5 p. 4)."}
     D_authority: {value: TODO, note: "Evidence to weigh: S5 p. 2 says he held revelation 'through the Bible or through experiment' and rejected natural theology."}
     E_scope: {value: TODO}
-  mid_basin: {value: TODO, note: "The v7.1 coding rules name Faraday among the 'mid-basin theists coded first'. That is the study's starting designation, not a coded result, so it is not entered as a value here."}
+  mid_basin: {value: TODO, note: "The v7.1 coding rules name Faraday among the 'mid-basin theists coded first'. That is the study's starting designation, not a coded result. The test now exists (decision P4, METHOD §1.1: A_locus <= 1 and B_cause in his work >= 3, both at certainty >= 0.7). The value stays TODO until A_locus and B_cause are scored."}
   statements:
     - text: "There is no philosophy in my religion[.] I am of a very small & despised sect of christians known, if known at all, as Sandemanians and our hope is founded on the faith that is in Christ. But though the natural works of God can never by any possibility come in contradiction with the higher things that belong to our future existence, and must with every thing concerning Him ever glorify him still I do not think it at all necessary to tie the study of the natural sciences & religion together and in my intercourse with my fellow creatures that which is religious & that which is philosophical have ever been two distinct things[.]"
       cites: [{source: S3, locator: "final paragraph (from Faraday's own copy, IEE MS SC 3, per the edition's note 4)"}]
@@ -221,7 +222,7 @@ review:
     - "Gladstone changed his account of the 1844 exclusion between editions: the Queen story is in the 1872 first edition (S11, p. 35) and gone from the 1873 second edition (S10, p. 36). Later writers who repeat the Queen story are following the first edition."
   open_questions:
     - "Primary code: CHRIST, CLTHEI, or something else? Needs a reviewed coding pass (docs/CODING_GUIDE.md)."
-    - "Does the v7.1 'mid-basin theist' label hold once his written views on providence, prayer and miracle are checked?"
+    - "Does the v7.1 'mid-basin theist' label hold under the P4 test once A_locus and B_cause (for his science) are scored from his written views on providence, prayer and miracle?"
     - "Early reading (Watts, The Improvement of the Mind; Marcet, Conversations on Chemistry) is widely reported; confirm in Cantor 1991 or James 2010."
     - "Exact dates of the 1844 exclusion and readmission. Not in any source read. A search-engine summary of a WikiTree membership page gives 31 March and 5 May 1844, but WikiTree is user-edited and the page could not be opened (bot check), so the dates are not used. Cantor 1989 (S6) or Cantor 1991 (reviewed in S9) should settle it."
     - "What the 1844 discipline dispute was about. Cantor 1989 (S6) is the source; not read (paywalled)."
@@ -385,7 +386,7 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 ## Open questions
 
 - Primary code: CHRIST, CLTHEI, or something else? (See `candidate_codes_considered`.)
-- Does the "mid-basin theist" starting label survive a reading of his views on providence, prayer and miracle?
+- Does the "mid-basin theist" starting label survive the P4 test (METHOD §1.1)? That needs A_locus and B_cause scored from his views on providence, prayer and miracle, with B scored for his science.
 - Was a knighthood ever offered? Sources disagree [S1, Later life; S2; S5, p. 4].
 - Confirm his early reading (Watts, Marcet) in a full biography.
 - Exact dates of the 1844 exclusion and readmission, and what the discipline dispute was about. Needs Cantor 1989 [S6] or Cantor 1991.
@@ -394,3 +395,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 
 - 2026-10-01: Read Britannica (S1: main, Theory of electrochemistry, Later life), the Royal Institution biography (S2), two letters in Epsilon (S3, S4), Russell's Faraday Paper 13 (S5), and the bibliographic record of Cantor 1989 (S6). Did not use Wikipedia as a citation. Its leads (Watts, Marcet, second eldership, FRS 1824, farad unit) are recorded as TODO or open questions. No worldview code, axis score or mid-basin value entered.
 - 2026-10-01 (second pass): Closed most of the 1844 gap. Read Cantor's 2020 Christian History article (S8), Brooke's 1991 LRB review of Cantor's book (S9), and the first and second editions of Gladstone's biography (S11, S10; archive.org scans, plus the Gutenberg text of the 3rd edition). Cantor 1989 (S6) and Cantor 1991 are paywalled or lending-only and were not read. Every quoted phrase was checked word for word against the source text. Exact readmission date still not found.
+- 2026-10-01 (third pass): No new research. Updated for the decisions of 2026-10-01: schema 1.1, era and region notes (P2, P3), and the mid-basin note now points to the P4 test. `mid_basin` stays TODO until the axes are scored.

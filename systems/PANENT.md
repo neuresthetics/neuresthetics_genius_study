@@ -1,8 +1,8 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
-  record_version: 1
+  schema_version: "1.1"
+  record_version: 2
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-01
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
+    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Coding guidance and neighbors from the PANT boundary rules (OPEN_DECISIONS S6)."}
 identity:
   id: PANENT
   v7_1_number: 30
@@ -21,7 +22,10 @@ classification:
   kind: {value: TODO}
   family: {value: TODO}
   parent_traditions: {value: TODO}
-  related_codes: []
+  related_codes:
+    - {code: PANT, relation: "neighbor (easily confused)", note: "God identified with Nature, with nothing beyond it (S6)"}
+    - {code: HINDU, relation: "neighbor (easily confused)", note: "Advaita Vedanta defaults to HINDU (S6)"}
+    - {code: JUDA, relation: "neighbor (easily confused)", note: "Kabbalah defaults to JUDA (S6)"}
 origins:
   founding_era: {value: TODO}
   founding_region: {value: TODO}
@@ -75,9 +79,12 @@ revised_rubric:
   V: {score: TODO, rationale: ""}
   X: {score: TODO, rationale: ""}
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
-  neighbors: []
+  use_when: "v8 rule (decision S6, 2026-10-01): the person's own writing keeps a divine reality that includes the world but also exceeds it. v7.1's label names 'some Kabbalah/Advaita forms'; use PANENT for those only when the person's writing says this."
+  do_not_use_when: "Advaita Vedanta or Kabbalah by membership alone: code the host tradition (HINDU, JUDA) as primary. God identified with Nature as a whole, with nothing beyond it: PANT, if the two-part test is passed."
+  neighbors:
+    - {code: PANT, relation: "neighbor (easily confused)"}
+    - {code: HINDU, relation: "neighbor (easily confused)"}
+    - {code: JUDA, relation: "neighbor (easily confused)"}
 review:
   data_quality_flags:
     - "v7.1 table 4 label is truncated; v7_1_label is taken from the section 7 scoring note."

@@ -1,6 +1,6 @@
 # Method
 
-How the v8 database is built: where the names come from, how they are counted and merged, how people get ids and files, and what stays outside the data. For field definitions see [DATA_DICTIONARY.md](DATA_DICTIONARY.md). For how to code a person or a system see [CODING_GUIDE.md](CODING_GUIDE.md). For the step-by-step research run see [RUNBOOK.md](RUNBOOK.md). Choices that still need Jason's sign-off are in [OPEN_DECISIONS.md](OPEN_DECISIONS.md).
+How the v8 database is built: where the names come from, how they are counted and merged, how people get ids and files, and what stays outside the data. For field definitions see [DATA_DICTIONARY.md](DATA_DICTIONARY.md). For how to code a person or a system see [CODING_GUIDE.md](CODING_GUIDE.md). For the step-by-step research run see [RUNBOOK.md](RUNBOOK.md). Decisions Jason has made, and any that are still open, are in [OPEN_DECISIONS.md](OPEN_DECISIONS.md). All 19 items there were decided on 2026-10-01.
 
 ## 1. What the study is measuring
 
@@ -10,6 +10,16 @@ The study has two lanes, carried over from v7.1:
 - **Lane B** is a belief model, labelled so it can fail. It says that early exposure to the "circle" (Deus sive Natura: entity applied to Nature, Nature rendered in entity) together with geometric form (definition → consequence, no reserved clause) reduces split-model load. Lane B fields in a person record are inputs to that model. They are not findings.
 
 "Genius" here means lasting original impact on stated achievement criteria. It is not an IQ score. Collectives are out (teams, "the Wright Brothers"), and so are transient fame and mastery without originality.
+
+### 1.1 Scales and test for coding people (decided 2026-10-01)
+
+- **LIO axes (P1).** Each of the five axes (A locus, B cause, C ledger, D authority, E scope) is scored 0–4: 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is a separate field. v7.1 defined the poles but no scale.
+- **Era (P2).** `era_bucket` is keyed on the year of the first lasting contribution, not on birth year: before -500, -500 to 499, 500 to 1399, 1400 to 1599, 1600 to 1749, 1750 to 1849, 1850 to 1949, 1950 on. Each bucket includes its lower edge, so 1950 is `1950 on`. The v7.1 first-pool window (physical science 1600–1950) is the union of 1600 to 1749, 1750 to 1849 and 1850 to 1949, plus 1950 itself, which is in the later bucket. Birth year stays in every record, so a birth-year version can be computed as a sensitivity check.
+- **Regions (P3).** 13 macro-regions on modern borders, from UN M49 sub-regions. The country table is [`data/reference/regions.csv`](../data/reference/regions.csv). MENA is M49 Northern Africa plus Western Asia plus Iran, which is the one exception to M49. Afghanistan stays in South Asia. The historical polity goes in `place.polity_then`.
+- **Mid-basin (P4).** v7.1 names "mid-basin theists" and a first pool (Faraday, Maxwell, Newton, Aquinas, Ibn Sina, Gödel) but gives no membership test. v8's test uses the axis scores only. `mid_basin` is true when A_locus ≤ 1 (God is a transcendent person, not the world) and B_cause ≥ 3 (law and regularity, no special cases), with B scored for the domain of the person's work and both at certainty ≥ 0.7. It is false when A_locus ≥ 3, or A_locus ≤ 1 with B_cause ≤ 1. Otherwise it is UNKNOWN or BELOW_THRESHOLD. "First-rank" is applied separately, as F ≥ 3. v7.1's "certainty ≥ 0.6" means ≥ 0.7 on a scale of 1.0 / 0.7 / 0.5.
+  - **Stated consequence: deists pass.** A deist God is a transcendent person (A low) who does not intervene (B high), so DEISM people will usually test `true`. This follows from the test as decided. There is no exclusion for them: under the test they count as mid-basin theists.
+  - The test comes from the v7.1 passages that describe these theists: "Faraday and Maxwell are devout and lawful", "Classical theism can sit mid-to-high on lawfulness without identity of God and world", and "lawful form early, even if the word God stayed". Every use of the term is quoted under P4 in OPEN_DECISIONS.
+- **Review (P5).** Only a named human reviewer sets `review_status: reviewed`, with `reviewed_by` and `reviewed_on`. Agents set `draft — unreviewed` or `example — unreviewed` only, and the validators require the reviewer fields.
 
 ## 2. The roster
 
@@ -206,10 +216,17 @@ Other facts use 1.0 established, 0.7 probable, 0.5 contested. Below 0.5, the val
 The v7.1 data book scored 77 belief systems on a five-axis coherence rubric (L, P, E, V, X, each 0–10). v8 gives each system its own record in `systems/<CODE>.md`, where the code is the v7.1 abbreviation. Each record carries:
 
 - the v7.1 scores unchanged, labelled "authorial v7.1 scores" and checked against the data book;
-- a slot for revised scores with a rationale per axis;
+- a slot for revised scores with a rationale per axis (see §5.1);
 - metaphysics, LIO-axis positions, schools and variants, stance on science, coding guidance and sources.
 
 `scripts/make_system_stubs.py` made the 77 stubs from the data book section 6 score table (`tables[4]`) and the section 7 scoring notes. PANT is the worked example. Adherent numbers are context only and **never** a denominator for genius rates. This follows the v7.1 rule "No G/P_2025: no present-day religion stock as a denominator."
+
+### 5.1 Rubric and code-list policy (decided 2026-10-01)
+
+- **Revised scoring (S3).** The v7.1 scores stay frozen as the baseline. Revised scoring stays `not started` until the first coding pool is done. When Jason opens it: every axis score needs a cite; two scorers score a sample of systems independently and report their agreement before the rest are scored; Jason approves the final numbers. Revised scores sit beside the v7.1 scores and never overwrite them, so v7.1 results stay reproducible.
+- **The 77 codes are closed for v8 (S4).** Proposed new codes, including splits of an existing code, go in a list with the code, the reason, example people and, for a split, the people it would move. They are added in one batch, with one schema version bump and Jason's approval. A fixed list keeps v7.1 and v8 counts comparable.
+- **Labels and relations (S1, S2, S5).** CLTHEI shows as "Interventionist personal theism" and PANT as "Pantheism (Spinozistic/naturalistic 'God = Universe')"; `v7_1_label` stays verbatim. CLTHEI and CLASS_THEISM are linked as `neighbor (easily confused)`, which is all the v7.1 rule says about them.
+- **PANT boundaries (S6).** The two-part PANT test, the Advaita/Kabbalah default and the Stoic rule are in [CODING_GUIDE.md](CODING_GUIDE.md#5-choosing-a-worldview-code) and in the `coding_guidance` of PANT, ATHE, PANENT and STOIC.
 
 ## 6. What stays out
 

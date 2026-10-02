@@ -107,9 +107,8 @@ Display label status:
 
 | label status | files |
 |---|---|
-| approved | 1 |
+| approved | 2 |
 | as in v7.1 | 75 |
-| proposed — pending Jason's OK | 1 |
 
 ### Claim fill rates, all system files, by section
 

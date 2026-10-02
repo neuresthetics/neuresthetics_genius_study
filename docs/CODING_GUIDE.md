@@ -1,6 +1,6 @@
 # Coding guide
 
-How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Everything marked PROPOSED waits on Jason ([OPEN_DECISIONS.md](OPEN_DECISIONS.md)). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
+How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
@@ -109,10 +109,16 @@ Certainty is about the claim, not the source. A signed encyclopedia can support 
 
 Hard cases:
 
-- **PANT vs ATHE.** PANT needs the circle: the person identifies God and Nature (Deus sive Natura), with entity in Nature and Nature in entity. Naturalism that drops the entity-term is ATHE, explicit suspension is AGNOS, and a public humanist-movement identity is SECHUM. Reverent language about nature is not enough for PANT. ("Not atheism-plus-poetry. Not every nature-mystic.")
+- **PANT vs ATHE** (two-part test, decision S6, 2026-10-01). PANT needs the circle: the person identifies God and Nature (Deus sive Natura), with entity in Nature and Nature in entity. ("Not atheism-plus-poetry. Not every nature-mystic.") Code PANT only if the person's own writing
+  1. identifies God or the divine with Nature as a whole, as a claim about what exists, not as a figure of speech, **and**
+  2. gives the whole at least one mark beyond feeling: unity as one substance or order, necessity or eternity, something mind-like, or value (SEP "Pantheism", §5, §10, §12, §13).
+
+  Reverent language that meets neither part is ATHE (positive naturalism), or SECHUM if the person's public identity is the humanist movement. Explicit suspension is AGNOS. Einstein-style "Spinoza's God" statements pass part 1 and still need part 2; "nature is awe-inspiring" alone fails both.
+- **Advaita Vedanta and some Kabbalah** (decision S6). By default code the host tradition (HINDU, JUDA) as primary ("Primary = dominant working metaphysics"). Use PANENT when the person's writing keeps a divine reality that includes the world but exceeds it, which is how v7.1 labels these forms. Use PANT only if the person passes the two-part test above. Belonging to the tradition is never enough for PANT.
+- **Stoics** (decision S6). Code STOIC for ancient Stoics and for anyone whose avowed school is Stoicism (founders rule and "Primary = dominant working metaphysics"). The Stoic God is argued to be personal and providential, one "to whom we might approach in prayer" (SEP "Pantheism", citing Baltzly 2003), which is not the PANT circle. Use PANT for a later thinker who takes the Stoic or Spinozist identity of God and Nature without the providential, prayer-hearing deity, and who passes the two-part test.
 - **CLASS_THEISM vs CLTHEI vs CHRIST/ISLAM/JUDA.**
   - CLASS_THEISM is the Aristotelian-Thomistic-Falsafa God: simple, immutable, known through reason.
-  - CLTHEI (proposed display label "Interventionist personal theism") is the popular interventionist personal God who answers petition and works miracles.
+  - CLTHEI (display label "Interventionist personal theism", approved S1) is the popular interventionist personal God who answers petition and works miracles. The two codes are neighbors that are easily confused (S5), not two forms of one tradition.
   - CHRIST/ISLAM/JUDA are for when the person's working worldview is the religion as practised and confessed, and neither theism split fits better.
   - Write down why the others were rejected.
 - **Nominal vs working.** Many 19th-century scientists are "CHRIST-nominal / AGNOS-working" (v7.1). Code the working worldview, and record the nominal one in `nominal_affiliations`.
@@ -131,7 +137,7 @@ Axis poles from the v7.1 data book, section 4 "LIO axes (person-level)", verbati
 | D Authority | Revelation outranks observation | Observation and reason outrank revelation |
 | E Scope | Hidden exceptions for an in-group | Same rules for stars, insects, humans |
 
-**Scale: PROPOSED 0–4** (pending Jason's OK):
+**Scale: 0–4** (decision P1, 2026-10-01). Certainty is recorded separately from the score:
 
 | score | meaning |
 |---|---|
@@ -148,7 +154,18 @@ Rules:
 - If the evidence does not reach 0.5, use `BELOW_THRESHOLD`.
 - Put quotations that bear on an axis in `worldview.statements` and tag them with `axes`.
 
-**Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". There is no operational definition yet, so leave `mid_basin` as `TODO` until Jason approves one ([OPEN_DECISIONS.md](OPEN_DECISIONS.md)). Being in the first pool is not evidence of mid-basin status.
+**Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". The test (decision P4, 2026-10-01) uses the LIO axes only:
+
+- `true` when `A_locus` ≤ 1 (God is a transcendent person, not the world) **and** `B_cause` ≥ 3 (law and regularity, no special cases), with B scored for the domain of the person's work, both at certainty ≥ 0.7;
+- `false` when `A_locus` ≥ 3, or `A_locus` ≤ 1 with `B_cause` ≤ 1;
+- otherwise `UNKNOWN` (axis scores missing or below 0.7) or `BELOW_THRESHOLD`.
+
+Notes:
+- Score `B_cause` for the person's working science or method, and say so in its `rationale`. Someone may accept scriptural miracles and still allow no exemptions in their own field.
+- "First-rank" is not part of the test. Apply F ≥ 3 alongside it.
+- The scale has only 1.0 / 0.7 / 0.5, so v7.1's "certainty ≥ 0.6" means ≥ 0.7.
+- Deists (DEISM) usually pass. This is a stated consequence of the test, not an exception (see METHOD §1.1).
+- Leave `mid_basin` as `TODO` until both axes are scored. Being in the first pool is not evidence of mid-basin status.
 
 ## 7. Quotations
 
@@ -170,7 +187,7 @@ Rules:
 **Basics.**
 - Dates follow the conventions in [DATA_DICTIONARY.md](DATA_DICTIONARY.md#1-conventions). When sources disagree, give the best-supported value, put the others in `alternatives`, and set certainty 0.5 if the dispute is real.
 - `first_lasting_contribution_year` is the year of the earliest item in `contribution.lasting_original_contributions`.
-- `era_bucket` (PROPOSED buckets) follows from that year:
+- `era_bucket` (decision P2) follows from that year. A year on an edge goes to the later bucket: 1600 is `1600 to 1749`, 1950 is `1950 on`. Birth year stays in `basics.birth.date`, so a birth-year version can be computed for a sensitivity check:
 
   | bucket | years |
   |---|---|
@@ -183,7 +200,7 @@ Rules:
   | 1850 to 1949 | |
   | 1950 on | |
 
-- `region_of_birth` / `region_of_work` (PROPOSED list, based on UN M49, applied to modern borders): Northern Europe, Western Europe, Southern Europe, Eastern Europe, Middle East and North Africa, Sub-Saharan Africa, Central Asia, South Asia, East Asia, Southeast Asia, North America, Latin America and Caribbean, Oceania. Use the place's modern location and record the historical polity in `place.polity_then`.
+- `region_of_birth` / `region_of_work` (decision P3): Northern Europe, Western Europe, Southern Europe, Eastern Europe, Middle East and North Africa, Sub-Saharan Africa, Central Asia, South Asia, East Asia, Southeast Asia, North America, Latin America and Caribbean, Oceania. Find the place's modern country and look it up in [`data/reference/regions.csv`](../data/reference/regions.csv) (UN M49 sub-regions; MENA = Northern Africa + Western Asia + Iran; Afghanistan stays South Asia). Record the historical polity in `place.polity_then`.
 - `sex_as_recorded` is descriptive, for baseline matching only.
 
 **Contribution.**
@@ -227,7 +244,7 @@ Each of the 77 v7.1 belief systems has a file `systems/<CODE>.md`. It serves two
 1. It is the reference coders use to decide whether a person gets the code (`coding_guidance`).
 2. It is a sourced description of the system's metaphysics and its position on the LIO axes. Revised rubric scores can later be argued from it.
 
-The 77 codes (display labels; two are proposed relabels):
+The 77 codes (display labels; two differ from v7.1, both approved: CLTHEI by S1, PANT by S2):
 
 | # | code | display label | v7.1 total |
 |---|---|---|---|
@@ -236,7 +253,7 @@ The 77 codes (display labels; two are proposed relabels):
 | 3 | [`BRGHTS`](../systems/BRGHTS.md) | Brights (The Brights Movement) | 49 |
 | 4 | [`EMPIR`](../systems/EMPIR.md) | Empiricism | 49 |
 | 5 | [`ETHCUL`](../systems/ETHCUL.md) | Ethical Culture (Ethical Humanism) | 49 |
-| 6 | [`PANT`](../systems/PANT.md) | Pantheism (Spinozistic/naturalistic) | 49 |
+| 6 | [`PANT`](../systems/PANT.md) | Pantheism (Spinozistic/naturalistic 'God = Universe') | 49 |
 | 7 | [`RATN`](../systems/RATN.md) | Rationalism | 49 |
 | 8 | [`SECHUM`](../systems/SECHUM.md) | Secular Humanism | 49 |
 | 9 | [`SUNASM`](../systems/SUNASM.md) | Sunday Assembly | 49 |
@@ -312,9 +329,10 @@ The 77 codes (display labels; two are proposed relabels):
 ## 11. Rules for system records
 
 - **v7.1 scores are frozen.** `v7_1_rubric` (L, P, E, V, X, total, scoring note) is copied from the data book and labelled "authorial v7.1 scores". The validator checks it character for character. Don't fix typos or totals there. Raise problems in `review.data_quality_flags`.
-- **Revised scores** go in `revised_rubric`, each axis with a rationale and cites. Its `status` stays `not started` until Jason opens the revision.
+- **Revised scores** go in `revised_rubric` (decision S3). Its `status` stays `not started` until the first coding pool is done and Jason opens the revision. Then each axis score needs a rationale and a cite, two scorers score a sample independently and report agreement before the rest are scored, and Jason approves the final numbers. Revised scores sit beside the v7.1 scores and never overwrite them.
+- **The code list is closed** for v8 (decision S4). Propose a new code, or a split of an existing one, in a list with the code, why, example people and (for a split) the people it would move. New codes are added in one batch with one schema bump and Jason's approval.
 - **Labels.** `identity.v7_1_label` is verbatim from v7.1. `display_label` is what v8 tables show. A change needs `label_status: proposed — pending Jason's OK` and an entry in OPEN_DECISIONS.
-- **Describe the official or scholarly form.** Metaphysics and LIO axes describe the system as its authoritative texts or leading scholars present it. Popular forms, regional forms and schools go in `schools_and_variants`, each with `form` and `lio_difference`. If the popular form differs enough to have its own code (CLASS_THEISM vs CLTHEI), link the two in `related_codes`.
+- **Describe the official or scholarly form.** Metaphysics and LIO axes describe the system as its authoritative texts or leading scholars present it. Popular forms, regional forms and schools go in `schools_and_variants`, each with `form` and `lio_difference`. If the popular form differs enough to have its own code (CLASS_THEISM vs CLTHEI), link the two in `related_codes` as `neighbor (easily confused)` (S5).
 - **Stance labels.** Each metaphysics item has a sentence `value` and a short `stance` from a fixed list. Use `varies by school` when there is no single answer, and explain in `value`:
 
   | item | allowed stances |
@@ -330,7 +348,7 @@ The 77 codes (display labels; two are proposed relabels):
   | reserved_exemptions | none · some · central · varies by school |
   | teleology_in_nature | none · immanent ends · designer's purposes · varies by school |
 
-- **LIO axes** use the same PROPOSED 0–4 scale as people, scored for the official or scholarly form, with a `rationale`. System records have no `basis` field. Use certainty 1.0 for positions the sources state directly, 0.7 for a coder's reading of what they say, and 0.5 where scholars disagree.
+- **LIO axes** use the same 0–4 scale as people (P1), scored for the official or scholarly form, with a `rationale`. System records have no `basis` field. Use certainty 1.0 for positions the sources state directly, 0.7 for a coder's reading of what they say, and 0.5 where scholars disagree.
 - **Adherents** are context only. Give year and scope, and cite a demographic source. Never use them as a denominator.
 - **Science stance**: historical (in the periods the roster covers) and current (official bodies or leading scholars). Cite both, and keep them separate.
 - **Coding guidance**: `use_when` quotes the v7.1 rule verbatim where one names the code, then adds detail. `do_not_use_when` names the usual mistakes and the code to use instead. `neighbors` lists codes that are easily confused with this one.

@@ -1,8 +1,8 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
-  record_version: 1
+  schema_version: "1.1"
+  record_version: 2
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-01
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
+    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "CLTHEI relation changed to 'neighbor (easily confused)' (OPEN_DECISIONS S5)."}
 identity:
   id: CLASS_THEISM
   v7_1_number: 27
@@ -22,7 +23,7 @@ classification:
   family: {value: TODO}
   parent_traditions: {value: TODO}
   related_codes:
-    - {code: CLTHEI, relation: "popular form of", note: "v7.1 coding rule: CLASS_THEISM is not CLTHEI"}
+    - {code: CLTHEI, relation: "neighbor (easily confused)", note: "v7.1 coding rule: CLASS_THEISM is not CLTHEI"}
     - {code: CHRIST, relation: "neighbor (easily confused)"}
     - {code: ISLAM, relation: "neighbor (easily confused)"}
     - {code: JUDA, relation: "neighbor (easily confused)"}
@@ -83,7 +84,7 @@ coding_guidance:
   use_when: "v7.1 coding rule (Split theisms): CLASS_THEISM (Aristotelian-Thomistic-Falsafa) is not CLTHEI (popular interventionist personal God) and not generic CHRIST/ISLAM/JUDA."
   do_not_use_when: "TODO"
   neighbors:
-    - {code: CLTHEI, relation: "popular form of"}
+    - {code: CLTHEI, relation: "neighbor (easily confused)"}
     - {code: CHRIST, relation: "neighbor (easily confused)"}
     - {code: ISLAM, relation: "neighbor (easily confused)"}
     - {code: JUDA, relation: "neighbor (easily confused)"}

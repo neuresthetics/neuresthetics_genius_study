@@ -9,9 +9,9 @@
 # Competing sources:               fill value with the best-supported one, certainty 0.5, and list the rest under alternatives.
 record:
   record_type: person
-  schema_version: "1.0"
+  schema_version: "1.1"
   record_version: 1
-  review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision
+  review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision; only a named human sets reviewed (P5)
   collected_by: TODO                      # person or agent that ran the collection
   model_used: TODO                        # e.g. "Claude Opus 4.x" or "none (human)"
   collected_on: 2026-01-01
@@ -43,8 +43,8 @@ basics:
     date: {value: TODO}
     place: {value: TODO}
   first_lasting_contribution_year: {value: TODO}
-  era_bucket: {value: TODO}               # PROPOSED buckets, see docs/OPEN_DECISIONS.md
-  region_of_birth: {value: TODO}          # PROPOSED regions, see docs/OPEN_DECISIONS.md
+  era_bucket: {value: TODO}               # from first_lasting_contribution_year (P2); an edge year goes to the later bucket (1950 -> "1950 on")
+  region_of_birth: {value: TODO}          # modern borders; look up the country in data/reference/regions.csv (P3)
   region_of_work: {value: TODO}
   sex_as_recorded: {value: TODO}          # as the sources record it; do not infer
   languages_of_work: {value: TODO}        # list
@@ -80,13 +80,13 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
   primary_system: {value: TODO}           # a code in systems/; needs basis + certainty that match
   secondary_system: {value: TODO}         # only if they published in two systems; else value: UNKNOWN with how_known
   candidate_codes_considered: []          # - {code: CLTHEI, reason: "..."}
-  lio_axes:                               # PROPOSED 0–4 scale (0 interventionist pole ... 4 LIO pole)
+  lio_axes:                               # 0–4 scale (P1): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole
     A_locus: {value: TODO}
     B_cause: {value: TODO}
     C_ledger: {value: TODO}
     D_authority: {value: TODO}
     E_scope: {value: TODO}
-  mid_basin: {value: TODO}                # true / false + rationale
+  mid_basin: {value: TODO}                # P4 test: true if A_locus <= 1 and B_cause (in the work) >= 3, both certainty >= 0.7; see METHOD
   statements: []                          # verbatim quotes only; - {text: "...", cites: [...], date: "1844-10-24", kind: "private letter", verified_against: "primary transcription", verified_on: 2026-01-01}
   changes_over_life: []
   coder_notes: ""

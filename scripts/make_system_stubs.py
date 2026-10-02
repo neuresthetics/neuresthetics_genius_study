@@ -22,14 +22,31 @@ OUT = os.path.join(REPO, "systems")
 TODAY = "2026-10-01"
 NOTE_RE = re.compile(r"^(?P<code>[A-Z0-9_]+) \((?P<tot>\d+)/50\) — (?P<rest>.*)$", re.S)
 
-# Display labels that differ from v7.1. Each is a proposal listed in docs/OPEN_DECISIONS.md.
-PROPOSED_LABELS = {
+# Display labels that differ from v7.1, both approved on 2026-10-01 (docs/OPEN_DECISIONS.md S1, S2).
+DISPLAY_LABELS = {
     "CLTHEI": "Interventionist personal theism",
-    "PANT": "Pantheism (Spinozistic/naturalistic)",
+    "PANT": "Pantheism (Spinozistic/naturalistic 'God = Universe')",
 }
 LABEL_NOTES = {
-    "CLTHEI": "v7.1 used 'Classical Theism' for both CLASS_THEISM and CLTHEI. The proposed label keeps the code and separates the names.",
-    "PANT": "The v7.1 label is cut off mid-word in both the data book table and the Word file; the proposed label trims it at the last whole phrase.",
+    "CLTHEI": "v7.1 used 'Classical Theism' for both CLASS_THEISM and CLTHEI. The display label keeps the code and separates the names (approved 2026-10-01, OPEN_DECISIONS S1).",
+    "PANT": "The v7.1 label is cut off mid-word in both the data book table and the Word file. The display label is the full original from V6_(history)/V6/beliefCoherence.json (approved 2026-10-01, OPEN_DECISIONS S2).",
+}
+# Coding guidance added by decisions (docs/OPEN_DECISIONS.md S6). Appended to use_when; replaces the do_not_use_when TODO.
+DECISION_GUIDANCE = {
+    "ATHE": ("v8 rule (decision S6, 2026-10-01): reverent language about nature that fails the two-part PANT test is ATHE (or SECHUM if the public identity is the humanist movement). See systems/PANT.md and docs/CODING_GUIDE.md section 5.",
+             "The person's own writing identifies God or the divine with Nature as a whole and gives the whole a mark beyond feeling (unity, necessity or eternity, something mind-like, or value): PANT. Explicit suspension: AGNOS. Public identity is the humanist movement: SECHUM."),
+    "STOIC": ("v8 rule (decision S6, 2026-10-01): ancient Stoics, and anyone whose avowed school is Stoicism (founders rule; 'Primary = dominant working metaphysics'). SEP 'Pantheism' (Mander, rev. 2023) treats Stoic physicalism as an ancient form of pantheism, but the Stoic God is argued to be personal and providential, one 'to whom we might approach in prayer', which is not the PANT circle.",
+              "A later thinker who takes the Stoic or Spinozist identity of God and Nature without the providential, prayer-hearing deity, and who passes the two-part PANT test: PANT."),
+    "PANENT": ("v8 rule (decision S6, 2026-10-01): the person's own writing keeps a divine reality that includes the world but also exceeds it. v7.1's label names 'some Kabbalah/Advaita forms'; use PANENT for those only when the person's writing says this.",
+               "Advaita Vedanta or Kabbalah by membership alone: code the host tradition (HINDU, JUDA) as primary. God identified with Nature as a whole, with nothing beyond it: PANT, if the two-part test is passed."),
+}
+# Stubs changed by a decision get record_version 2 and a second change_log entry.
+DECISION_LOG = {
+    "CLTHEI": "Display label approved (OPEN_DECISIONS S1); CLASS_THEISM relation changed to 'neighbor (easily confused)' (S5).",
+    "CLASS_THEISM": "CLTHEI relation changed to 'neighbor (easily confused)' (OPEN_DECISIONS S5).",
+    "ATHE": "Coding guidance from the PANT boundary rules (OPEN_DECISIONS S6).",
+    "STOIC": "Coding guidance and PANT neighbor from the PANT boundary rules (OPEN_DECISIONS S6).",
+    "PANENT": "Coding guidance and neighbors from the PANT boundary rules (OPEN_DECISIONS S6).",
 }
 
 # Coding rules from data book section 5 (tables[3]) that name a code. Quoted verbatim.
@@ -54,15 +71,19 @@ NEIGHBORS = {
              ("PANT", "neighbor (easily confused)", "shares the no-exemption stance; differs on the entity-term")],
     "AGNOS": [("ATHE", "neighbor (easily confused)", None), ("SECHUM", "neighbor (easily confused)", None)],
     "SECHUM": [("ATHE", "neighbor (easily confused)", None), ("AGNOS", "neighbor (easily confused)", None)],
-    "CLASS_THEISM": [("CLTHEI", "popular form of", "v7.1 coding rule: CLASS_THEISM is not CLTHEI"),
+    "CLASS_THEISM": [("CLTHEI", "neighbor (easily confused)", "v7.1 coding rule: CLASS_THEISM is not CLTHEI"),
                      ("CHRIST", "neighbor (easily confused)", None), ("ISLAM", "neighbor (easily confused)", None),
                      ("JUDA", "neighbor (easily confused)", None), ("ARIST", "parent tradition", None)],
-    "CLTHEI": [("CLASS_THEISM", "scholastic form of", "v7.1 coding rule: CLTHEI is not CLASS_THEISM"),
+    "CLTHEI": [("CLASS_THEISM", "neighbor (easily confused)", "v7.1 coding rule: CLTHEI is not CLASS_THEISM"),
                ("CHRIST", "neighbor (easily confused)", None), ("ISLAM", "neighbor (easily confused)", None),
                ("JUDA", "neighbor (easily confused)", None)],
     "CHRIST": [("CLASS_THEISM", "neighbor (easily confused)", None), ("CLTHEI", "neighbor (easily confused)", None)],
     "ISLAM": [("CLASS_THEISM", "neighbor (easily confused)", None), ("CLTHEI", "neighbor (easily confused)", None)],
     "JUDA": [("CLASS_THEISM", "neighbor (easily confused)", None), ("CLTHEI", "neighbor (easily confused)", None)],
+    "STOIC": [("PANT", "neighbor (easily confused)", "SEP: Stoic physicalism is an ancient form of pantheism; the providential Stoic God is not the PANT circle (S6)")],
+    "PANENT": [("PANT", "neighbor (easily confused)", "God identified with Nature, with nothing beyond it (S6)"),
+               ("HINDU", "neighbor (easily confused)", "Advaita Vedanta defaults to HINDU (S6)"),
+               ("JUDA", "neighbor (easily confused)", "Kabbalah defaults to JUDA (S6)")],
 }
 
 
@@ -105,22 +126,25 @@ def stub(row, note, rules):
     code = row["Abbr"]
     tot, rest, para = note
     label, scoring = split_label(code, rest, row["System"])
-    disp = PROPOSED_LABELS.get(code, label)
-    status = "proposed — pending Jason's OK" if code in PROPOSED_LABELS else "as in v7.1"
+    disp = DISPLAY_LABELS.get(code, label)
+    status = "approved" if code in DISPLAY_LABELS else "as in v7.1"
     use_when, dont = "TODO", "TODO"
     if code in RULES:
         r1, r2 = RULES[code]
         use_when = f"v7.1 coding rule ({r1}): {rules[r1]}" + (f" Also ({r2}): {rules[r2]}" if r2 else "")
     if code == "BUDDH":
         dont = "TODO"
+    if code in DECISION_GUIDANCE:
+        extra, dont = DECISION_GUIDANCE[code]
+        use_when = extra if use_when == "TODO" else f"{use_when} {extra}"
     neigh = NEIGHBORS.get(code, [])
     L = []
     P = L.append
     P("---")
     P("record:")
     P("  record_type: system")
-    P('  schema_version: "1.0"')
-    P("  record_version: 1")
+    P('  schema_version: "1.1"')
+    P(f"  record_version: {2 if code in DECISION_LOG else 1}")
     P("  review_status: stub")
     P("  collected_by: scripts/make_system_stubs.py")
     P("  model_used: none (ported from the v7.1 data book)")
@@ -128,6 +152,8 @@ def stub(row, note, rules):
     P(f"  last_updated: {TODAY}")
     P("  change_log:")
     P(f"    - {{date: {TODAY}, by: scripts/make_system_stubs.py, summary: \"Stub created from v7.1 data book table 4 and section 7.\"}}")
+    if code in DECISION_LOG:
+        P(f"    - {{date: {TODAY}, by: scripts/make_system_stubs.py, summary: {q(DECISION_LOG[code])}}}")
     P("identity:")
     P(f"  id: {code}")
     P(f"  v7_1_number: {int(row['#'])}")

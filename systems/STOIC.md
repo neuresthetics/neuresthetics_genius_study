@@ -1,8 +1,8 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
-  record_version: 1
+  schema_version: "1.1"
+  record_version: 2
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-01
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
+    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Coding guidance and PANT neighbor from the PANT boundary rules (OPEN_DECISIONS S6)."}
 identity:
   id: STOIC
   v7_1_number: 21
@@ -21,7 +22,8 @@ classification:
   kind: {value: TODO}
   family: {value: TODO}
   parent_traditions: {value: TODO}
-  related_codes: []
+  related_codes:
+    - {code: PANT, relation: "neighbor (easily confused)", note: "SEP: Stoic physicalism is an ancient form of pantheism; the providential Stoic God is not the PANT circle (S6)"}
 origins:
   founding_era: {value: TODO}
   founding_region: {value: TODO}
@@ -75,9 +77,10 @@ revised_rubric:
   V: {score: TODO, rationale: ""}
   X: {score: TODO, rationale: ""}
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
-  neighbors: []
+  use_when: "v8 rule (decision S6, 2026-10-01): ancient Stoics, and anyone whose avowed school is Stoicism (founders rule; 'Primary = dominant working metaphysics'). SEP 'Pantheism' (Mander, rev. 2023) treats Stoic physicalism as an ancient form of pantheism, but the Stoic God is argued to be personal and providential, one 'to whom we might approach in prayer', which is not the PANT circle."
+  do_not_use_when: "A later thinker who takes the Stoic or Spinozist identity of God and Nature without the providential, prayer-hearing deity, and who passes the two-part PANT test: PANT."
+  neighbors:
+    - {code: PANT, relation: "neighbor (easily confused)"}
 review:
   data_quality_flags: []
   open_questions: []

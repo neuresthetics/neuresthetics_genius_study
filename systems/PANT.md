@@ -1,8 +1,8 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
-  record_version: 3
+  schema_version: "1.1"
+  record_version: 4
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example: sourced fields filled from SEP entries; LIO axes scored on the proposed 0–4 scale; revised rubric left for Jason. Not reviewed."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Display label set to the full original V6 label, approved by Jason 2026-10-01 (OPEN_DECISIONS S2). Source: V6_(history)/V6/beliefCoherence.json, PANT entry, field belief_system (v7 repo). v7_1_label unchanged."}
+    - {date: 2026-10-01, by: "Grok Bot", summary: "Schema 1.1. LIO scale approved (P1); the five scores were rechecked and are valid on it. Coding guidance adds the PANT boundary rules (S6); the two open questions they settle are removed."}
 identity:
   id: PANT
   v7_1_number: 6
@@ -57,11 +58,11 @@ metaphysics:
   teleology_in_nature: {value: "None. God or Nature acts for no ends; final causes are a human fiction.", stance: none, certainty: 1.0, cites: [{source: S2, locator: "§2.1"}], how_known: "SEP exposition of Ethics I, Appendix."}
   necessity_and_freedom: {value: "Everything follows from God's nature with necessity, on the model of theorems following from axioms. Critics have long objected that this rules out free will.", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}, {source: S1, locator: "§4 (3)"}], how_known: "SEP entries."}
 lio_axes:
-  A_locus: {value: 4, rationale: "LIO pole: God is identical with Nature, not a person outside it.", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}], how_known: "Scored on the PROPOSED 0–4 scale from the sourced metaphysics above."}
-  B_cause: {value: 4, rationale: "LIO pole: no miracles, no petition, no departures from law.", certainty: 1.0, cites: [{source: S2, locator: "§2.1; §3.1"}], how_known: "Proposed scale."}
-  C_ledger: {value: 4, rationale: "LIO pole: no personal reward and punishment by God. Scored on the Spinozistic form; the afterlife question is contested (see metaphysics/afterlife).", certainty: 0.7, cites: [{source: S2, locator: "§2.1"}], how_known: "Proposed scale; certainty follows the moral_ledger reading."}
-  D_authority: {value: 4, rationale: "LIO pole: prophecy gives no privileged knowledge of nature; reason decides.", certainty: 1.0, cites: [{source: S2, locator: "§3.1"}], how_known: "Proposed scale."}
-  E_scope: {value: 4, rationale: "LIO pole: the same laws for everything, human emotions included ('as if it were a Question of lines, planes, and bodies').", certainty: 1.0, cites: [{source: S2, locator: "§2.4"}], how_known: "Proposed scale."}
+  A_locus: {value: 4, rationale: "LIO pole: God is identical with Nature, not a person outside it.", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}], how_known: "Scored on the 0–4 scale (decision P1) from the sourced metaphysics above."}
+  B_cause: {value: 4, rationale: "LIO pole: no miracles, no petition, no departures from law.", certainty: 1.0, cites: [{source: S2, locator: "§2.1; §3.1"}], how_known: "0–4 scale (P1)."}
+  C_ledger: {value: 4, rationale: "LIO pole: no personal reward and punishment by God. Scored on the Spinozistic form; the afterlife question is contested (see metaphysics/afterlife).", certainty: 0.7, cites: [{source: S2, locator: "§2.1"}], how_known: "0–4 scale (P1); certainty follows the moral_ledger reading."}
+  D_authority: {value: 4, rationale: "LIO pole: prophecy gives no privileged knowledge of nature; reason decides.", certainty: 1.0, cites: [{source: S2, locator: "§3.1"}], how_known: "0–4 scale (P1)."}
+  E_scope: {value: 4, rationale: "LIO pole: the same laws for everything, human emotions included ('as if it were a Question of lines, planes, and bodies').", certainty: 1.0, cites: [{source: S2, locator: "§2.4"}], how_known: "0–4 scale (P1)."}
 epistemology: {value: "Knowledge is of adequate ideas, which grasp the necessity of things 'under a species of eternity'. The Ethics is set out in geometrical order: definitions, axioms, propositions, demonstrations.", certainty: 1.0, cites: [{source: S2, locator: "§2.3 Knowledge"}, {source: S1, locator: "Bibliography (full title of the Ethics); §4 (3)"}], how_known: "SEP entries."}
 ethics: {value: "A wider concern in place of selfishness. For Spinoza the highest human happiness is the intellectual love of God.", certainty: 1.0, cites: [{source: S1, locator: "§16; §17"}], how_known: "SEP."}
 practice:
@@ -97,20 +98,19 @@ revised_rubric:
   V: {score: TODO, rationale: ""}
   X: {score: TODO, rationale: ""}
 coding_guidance:
-  use_when: "v7.1 coding rule (Pantheism): Use PANT only for the circle: Deus sive Natura, entity-in-Nature and Nature-in-entity. Not atheism-plus-poetry. Not every nature-mystic."
-  do_not_use_when: "Naturalism that drops the entity-term (code ATHE, or AGNOS for explicit suspension). God includes the world but also exceeds it (PANENT). Nature-feeling without a stated metaphysics (leave blank, or BELOW_THRESHOLD). Heritage or childhood upbringing alone (never a code)."
+  use_when: "v7.1 coding rule (Pantheism): Use PANT only for the circle: Deus sive Natura, entity-in-Nature and Nature-in-entity. Not atheism-plus-poetry. Not every nature-mystic. v8 two-part test (decision S6, 2026-10-01): the person's own writing (1) identifies God or the divine with Nature as a whole, as a claim about what exists and not a figure of speech, and (2) gives the whole at least one mark beyond feeling: unity as one substance or order, necessity or eternity, something mind-like, or value (S1 §5, §10, §12, §13). Both parts are needed."
+  do_not_use_when: "Naturalism that drops the entity-term, or reverent language that fails the two-part test (code ATHE; SECHUM if the public identity is the humanist movement; AGNOS for explicit suspension). God includes the world but also exceeds it (PANENT). Advaita Vedanta or Kabbalah by membership alone (code the host tradition, HINDU or JUDA; PANENT if the writing keeps a God beyond the world). Ancient Stoics and avowed Stoics (STOIC: the Stoic God is providential and can be prayed to). Nature-feeling without a stated metaphysics (leave blank, or BELOW_THRESHOLD). Heritage or childhood upbringing alone (never a code)."
   neighbors:
     - {code: ATHE, relation: "neighbor (easily confused)"}
     - {code: PANENT, relation: "neighbor (easily confused)"}
     - {code: PANDEI, relation: "neighbor (easily confused)"}
     - {code: PANPSY, relation: "neighbor (easily confused)"}
+    - {code: STOIC, relation: "neighbor (easily confused)"}
 review:
   data_quality_flags:
     - "The v7.1 label is cut off mid-word in both the data book table and the Word file. The display label is the full original from V6_(history)/V6/beliefCoherence.json (PANT entry, belief_system), approved 2026-10-01 (OPEN_DECISIONS S2). v7_1_label is kept verbatim, truncated."
-    - "v7.1's PANENT label includes 'some Kabbalah/Advaita forms', while SEP lists Advaita Vedanta and some Kabbalah as pantheist. Coders need a rule for which code applies."
+    - "v7.1's PANENT label includes 'some Kabbalah/Advaita forms', while SEP lists Advaita Vedanta and some Kabbalah as pantheist. Settled by decision S6: host tradition by default, PANENT for a God beyond the world, PANT only if the two-part test is passed."
   open_questions:
-    - "Does the modern scientific/naturalistic variant count as PANT (the circle) or as ATHE with reverent language? The v7.1 rule says 'not atheism-plus-poetry'; a test is needed."
-    - "Should Stoic pantheism be coded STOIC or PANT for people who held it?"
     - "S2 (§2.1) discusses whether identifying God with Nature makes Spinoza a pantheist or an atheist. The PANT/ATHE boundary for Spinoza himself is a scholarly dispute, not just a coding issue."
 sources:
   - id: S1
@@ -137,7 +137,7 @@ sources:
 
 # Pantheism (Spinozistic/naturalistic 'God = Universe') (PANT)
 
-> Status: example — unreviewed. This file shows the system-record structure. Sourced fields are filled from two Stanford Encyclopedia of Philosophy entries. The LIO axes use the proposed 0–4 scale. The revised rubric, adherents and community form are TODO. The display label is the full V6 label, approved 2026-10-01.
+> Status: example — unreviewed. This file shows the system-record structure. Sourced fields are filled from two Stanford Encyclopedia of Philosophy entries. The LIO axes use the 0–4 scale (P1). The revised rubric, adherents and community form are TODO. The display label is the full V6 label, approved 2026-10-01.
 
 ## Summary
 
@@ -149,7 +149,7 @@ For Spinoza, God is "the universal, immanent and sustaining cause of all that ex
 
 ## Position on the LIO axes
 
-Scored on the PROPOSED 0–4 scale (see `docs/OPEN_DECISIONS.md`). All five axes are at the LIO pole (4) for the Spinozistic form: identity of God and Nature (A), no miracles or petition (B), no judging God (C, certainty 0.7), reason over prophecy (D), and the same laws for everything, human emotions included (E) [S2, §2.1, §2.4, §3.1]. The variants below would score differently. They are TODO.
+Scored on the 0–4 scale (decision P1). All five axes are at the LIO pole (4) for the Spinozistic form: identity of God and Nature (A), no miracles or petition (B), no judging God (C, certainty 0.7), reason over prophecy (D), and the same laws for everything, human emotions included (E) [S2, §2.1, §2.4, §3.1]. The variants below would score differently. They are TODO.
 
 ## Schools and variants
 
@@ -161,7 +161,7 @@ Spinoza explains everything, miracles and prophecy included, through natural cau
 
 ## Coding guidance
 
-Use PANT only when a person's adult working worldview identifies God and Nature in the Spinozistic sense, not merely reverent naturalism. Code reverent naturalism ATHE, explicit suspension AGNOS, and "God beyond the world too" PANENT. Never code from heritage. See `docs/CODING_GUIDE.md`.
+Use PANT only when a person's adult working worldview identifies God and Nature in the Spinozistic sense, not merely reverent naturalism. The two-part test (decision S6) makes this checkable: the person's own writing must (1) identify God or the divine with Nature as a whole, as a claim about what exists, and (2) give the whole a mark beyond feeling, such as unity, necessity, something mind-like or value [S1, §5, §10, §12, §13]. Code reverent naturalism that fails the test ATHE (or SECHUM), explicit suspension AGNOS, and "God beyond the world too" PANENT. Advaita Vedanta and Kabbalah default to the host tradition (HINDU, JUDA). Ancient and avowed Stoics are STOIC. Never code from heritage. See `docs/CODING_GUIDE.md` §5.
 
 ## v7.1 scoring note
 
@@ -171,11 +171,11 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Draw the line between modern naturalistic pantheism and ATHE (the circle versus exemption-refusal alone).
-- Advaita and Kabbalah: PANT or PANENT?
+- Whether Spinoza himself is better read as a pantheist or an atheist is a scholarly dispute [S2, §2.1]. The study codes his system as PANT.
 
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-01: filled from SEP "Pantheism" (Mander, rev. 2023) and SEP "Baruch Spinoza" (Nadler, rev. 2023). Did not consult primary texts directly. Spinoza quotations are as given in S2. Adherent numbers and organised community are left TODO.
 - 2026-10-01: display label set to the full original label found in V6 (`V6_(history)/V6/beliefCoherence.json`, PANT entry, `belief_system`, in the v7 repo). Approved by Jason 2026-10-01 (OPEN_DECISIONS S2). `v7_1_label` unchanged.
+- 2026-10-01: decisions P1 and S6 applied. Rechecked the five LIO scores on the approved 0–4 scale (all 4, each rationale names the LIO pole, so they stand). Added the two-part PANT test and the Advaita/Kabbalah and Stoic rules to the coding guidance.

@@ -1,8 +1,8 @@
 ---
 record:
   record_type: system
-  schema_version: "1.0"
-  record_version: 1
+  schema_version: "1.1"
+  record_version: 2
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-01
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
+    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Coding guidance from the PANT boundary rules (OPEN_DECISIONS S6)."}
 identity:
   id: ATHE
   v7_1_number: 1
@@ -78,8 +79,8 @@ revised_rubric:
   V: {score: TODO, rationale: ""}
   X: {score: TODO, rationale: ""}
 coding_guidance:
-  use_when: "v7.1 coding rule (Atheism vs Agnosticism): ATHE = positive naturalism. AGNOS = explicit suspension. SECHUM if the public identity is humanist movement rather than metaphysics."
-  do_not_use_when: "TODO"
+  use_when: "v7.1 coding rule (Atheism vs Agnosticism): ATHE = positive naturalism. AGNOS = explicit suspension. SECHUM if the public identity is humanist movement rather than metaphysics. v8 rule (decision S6, 2026-10-01): reverent language about nature that fails the two-part PANT test is ATHE (or SECHUM if the public identity is the humanist movement). See systems/PANT.md and docs/CODING_GUIDE.md section 5."
+  do_not_use_when: "The person's own writing identifies God or the divine with Nature as a whole and gives the whole a mark beyond feeling (unity, necessity or eternity, something mind-like, or value): PANT. Explicit suspension: AGNOS. Public identity is the humanist movement: SECHUM."
   neighbors:
     - {code: AGNOS, relation: "neighbor (easily confused)"}
     - {code: SECHUM, relation: "neighbor (easily confused)"}

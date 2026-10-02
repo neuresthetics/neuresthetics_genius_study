@@ -1,0 +1,248 @@
+m49_code,iso3,country_or_area,m49_region,m49_subregion,study_region,rule
+398,KAZ,Kazakhstan,Asia,Central Asia,Central Asia,M49 sub-region
+417,KGZ,Kyrgyzstan,Asia,Central Asia,Central Asia,M49 sub-region
+762,TJK,Tajikistan,Asia,Central Asia,Central Asia,M49 sub-region
+795,TKM,Turkmenistan,Asia,Central Asia,Central Asia,M49 sub-region
+860,UZB,Uzbekistan,Asia,Central Asia,Central Asia,M49 sub-region
+156,CHN,China,Asia,Eastern Asia,East Asia,M49 sub-region
+344,HKG,"China, Hong Kong Special Administrative Region",Asia,Eastern Asia,East Asia,M49 sub-region
+446,MAC,"China, Macao Special Administrative Region",Asia,Eastern Asia,East Asia,M49 sub-region
+408,PRK,Democratic People's Republic of Korea,Asia,Eastern Asia,East Asia,M49 sub-region
+392,JPN,Japan,Asia,Eastern Asia,East Asia,M49 sub-region
+496,MNG,Mongolia,Asia,Eastern Asia,East Asia,M49 sub-region
+410,KOR,Republic of Korea,Asia,Eastern Asia,East Asia,M49 sub-region
+112,BLR,Belarus,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+100,BGR,Bulgaria,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+203,CZE,Czechia,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+348,HUN,Hungary,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+616,POL,Poland,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+498,MDA,Republic of Moldova,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+642,ROU,Romania,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+643,RUS,Russian Federation,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+703,SVK,Slovakia,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+804,UKR,Ukraine,Europe,Eastern Europe,Eastern Europe,M49 sub-region
+660,AIA,Anguilla,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+028,ATG,Antigua and Barbuda,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+032,ARG,Argentina,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+533,ABW,Aruba,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+044,BHS,Bahamas,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+052,BRB,Barbados,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+084,BLZ,Belize,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+068,BOL,Bolivia (Plurinational State of),Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+535,BES,"Bonaire, Sint Eustatius and Saba",Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+074,BVT,Bouvet Island,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+076,BRA,Brazil,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+092,VGB,British Virgin Islands,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+136,CYM,Cayman Islands,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+152,CHL,Chile,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+170,COL,Colombia,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+188,CRI,Costa Rica,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+192,CUB,Cuba,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+531,CUW,Curaçao,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+212,DMA,Dominica,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+214,DOM,Dominican Republic,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+218,ECU,Ecuador,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+222,SLV,El Salvador,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+238,FLK,Falkland Islands (Malvinas),Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+254,GUF,French Guiana,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+308,GRD,Grenada,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+312,GLP,Guadeloupe,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+320,GTM,Guatemala,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+328,GUY,Guyana,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+332,HTI,Haiti,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+340,HND,Honduras,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+388,JAM,Jamaica,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+474,MTQ,Martinique,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+484,MEX,Mexico,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+500,MSR,Montserrat,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+558,NIC,Nicaragua,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+591,PAN,Panama,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+600,PRY,Paraguay,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+604,PER,Peru,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+630,PRI,Puerto Rico,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+652,BLM,Saint Barthélemy,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+659,KNA,Saint Kitts and Nevis,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+662,LCA,Saint Lucia,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+663,MAF,Saint Martin (French Part),Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+670,VCT,Saint Vincent and the Grenadines,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+534,SXM,Sint Maarten (Dutch part),Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+239,SGS,South Georgia and the South Sandwich Islands,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+740,SUR,Suriname,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+780,TTO,Trinidad and Tobago,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+796,TCA,Turks and Caicos Islands,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+850,VIR,United States Virgin Islands,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+858,URY,Uruguay,Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+862,VEN,Venezuela (Bolivarian Republic of),Americas,Latin America and the Caribbean,Latin America and Caribbean,M49 sub-region
+012,DZA,Algeria,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+051,ARM,Armenia,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+031,AZE,Azerbaijan,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+048,BHR,Bahrain,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+196,CYP,Cyprus,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+818,EGY,Egypt,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+268,GEO,Georgia,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+364,IRN,Iran (Islamic Republic of),Asia,Southern Asia,Middle East and North Africa,"exception (P3, 2026-10-01): M49 puts Iran in Southern Asia; the study puts it in MENA (the World Bank groups Iran with the Middle East and North Africa too)"
+368,IRQ,Iraq,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+376,ISR,Israel,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+400,JOR,Jordan,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+414,KWT,Kuwait,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+422,LBN,Lebanon,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+434,LBY,Libya,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+504,MAR,Morocco,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+512,OMN,Oman,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+634,QAT,Qatar,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+682,SAU,Saudi Arabia,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+275,PSE,State of Palestine,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+729,SDN,Sudan,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+760,SYR,Syrian Arab Republic,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+788,TUN,Tunisia,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+792,TUR,Türkiye,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+784,ARE,United Arab Emirates,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+732,ESH,Western Sahara,Africa,Northern Africa,Middle East and North Africa,M49 Northern Africa -> Middle East and North Africa
+887,YEM,Yemen,Asia,Western Asia,Middle East and North Africa,M49 Western Asia -> Middle East and North Africa
+060,BMU,Bermuda,Americas,Northern America,North America,M49 sub-region
+124,CAN,Canada,Americas,Northern America,North America,M49 sub-region
+304,GRL,Greenland,Americas,Northern America,North America,M49 sub-region
+666,SPM,Saint Pierre and Miquelon,Americas,Northern America,North America,M49 sub-region
+840,USA,United States of America,Americas,Northern America,North America,M49 sub-region
+208,DNK,Denmark,Europe,Northern Europe,Northern Europe,M49 sub-region
+233,EST,Estonia,Europe,Northern Europe,Northern Europe,M49 sub-region
+234,FRO,Faroe Islands,Europe,Northern Europe,Northern Europe,M49 sub-region
+246,FIN,Finland,Europe,Northern Europe,Northern Europe,M49 sub-region
+831,GGY,Guernsey,Europe,Northern Europe,Northern Europe,M49 sub-region
+352,ISL,Iceland,Europe,Northern Europe,Northern Europe,M49 sub-region
+372,IRL,Ireland,Europe,Northern Europe,Northern Europe,M49 sub-region
+833,IMN,Isle of Man,Europe,Northern Europe,Northern Europe,M49 sub-region
+832,JEY,Jersey,Europe,Northern Europe,Northern Europe,M49 sub-region
+428,LVA,Latvia,Europe,Northern Europe,Northern Europe,M49 sub-region
+440,LTU,Lithuania,Europe,Northern Europe,Northern Europe,M49 sub-region
+578,NOR,Norway,Europe,Northern Europe,Northern Europe,M49 sub-region
+744,SJM,Svalbard and Jan Mayen Islands,Europe,Northern Europe,Northern Europe,M49 sub-region
+752,SWE,Sweden,Europe,Northern Europe,Northern Europe,M49 sub-region
+826,GBR,United Kingdom of Great Britain and Northern Ireland,Europe,Northern Europe,Northern Europe,M49 sub-region
+248,ALA,Åland Islands,Europe,Northern Europe,Northern Europe,M49 sub-region
+016,ASM,American Samoa,Oceania,Polynesia,Oceania,M49 sub-region
+036,AUS,Australia,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+162,CXR,Christmas Island,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+166,CCK,Cocos (Keeling) Islands,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+184,COK,Cook Islands,Oceania,Polynesia,Oceania,M49 sub-region
+242,FJI,Fiji,Oceania,Melanesia,Oceania,M49 sub-region
+258,PYF,French Polynesia,Oceania,Polynesia,Oceania,M49 sub-region
+316,GUM,Guam,Oceania,Micronesia,Oceania,M49 sub-region
+334,HMD,Heard Island and McDonald Islands,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+296,KIR,Kiribati,Oceania,Micronesia,Oceania,M49 sub-region
+584,MHL,Marshall Islands,Oceania,Micronesia,Oceania,M49 sub-region
+583,FSM,Micronesia (Federated States of),Oceania,Micronesia,Oceania,M49 sub-region
+520,NRU,Naoero,Oceania,Micronesia,Oceania,M49 sub-region
+540,NCL,New Caledonia,Oceania,Melanesia,Oceania,M49 sub-region
+554,NZL,New Zealand,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+570,NIU,Niue,Oceania,Polynesia,Oceania,M49 sub-region
+574,NFK,Norfolk Island,Oceania,Australia and New Zealand,Oceania,M49 sub-region
+580,MNP,Northern Mariana Islands,Oceania,Micronesia,Oceania,M49 sub-region
+585,PLW,Palau,Oceania,Micronesia,Oceania,M49 sub-region
+598,PNG,Papua New Guinea,Oceania,Melanesia,Oceania,M49 sub-region
+612,PCN,Pitcairn,Oceania,Polynesia,Oceania,M49 sub-region
+882,WSM,Samoa,Oceania,Polynesia,Oceania,M49 sub-region
+090,SLB,Solomon Islands,Oceania,Melanesia,Oceania,M49 sub-region
+772,TKL,Tokelau,Oceania,Polynesia,Oceania,M49 sub-region
+776,TON,Tonga,Oceania,Polynesia,Oceania,M49 sub-region
+798,TUV,Tuvalu,Oceania,Polynesia,Oceania,M49 sub-region
+581,UMI,United States Minor Outlying Islands,Oceania,Micronesia,Oceania,M49 sub-region
+548,VUT,Vanuatu,Oceania,Melanesia,Oceania,M49 sub-region
+876,WLF,Wallis and Futuna Islands,Oceania,Polynesia,Oceania,M49 sub-region
+004,AFG,Afghanistan,Asia,Southern Asia,South Asia,"M49 sub-region (P3, 2026-10-01: Afghanistan stays in South Asia as in M49; no exception)"
+050,BGD,Bangladesh,Asia,Southern Asia,South Asia,M49 sub-region
+064,BTN,Bhutan,Asia,Southern Asia,South Asia,M49 sub-region
+356,IND,India,Asia,Southern Asia,South Asia,M49 sub-region
+462,MDV,Maldives,Asia,Southern Asia,South Asia,M49 sub-region
+524,NPL,Nepal,Asia,Southern Asia,South Asia,M49 sub-region
+586,PAK,Pakistan,Asia,Southern Asia,South Asia,M49 sub-region
+144,LKA,Sri Lanka,Asia,Southern Asia,South Asia,M49 sub-region
+096,BRN,Brunei Darussalam,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+116,KHM,Cambodia,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+360,IDN,Indonesia,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+418,LAO,Lao People's Democratic Republic,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+458,MYS,Malaysia,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+104,MMR,Myanmar,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+608,PHL,Philippines,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+702,SGP,Singapore,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+764,THA,Thailand,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+626,TLS,Timor-Leste,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+704,VNM,Viet Nam,Asia,South-eastern Asia,Southeast Asia,M49 sub-region
+008,ALB,Albania,Europe,Southern Europe,Southern Europe,M49 sub-region
+020,AND,Andorra,Europe,Southern Europe,Southern Europe,M49 sub-region
+070,BIH,Bosnia and Herzegovina,Europe,Southern Europe,Southern Europe,M49 sub-region
+191,HRV,Croatia,Europe,Southern Europe,Southern Europe,M49 sub-region
+292,GIB,Gibraltar,Europe,Southern Europe,Southern Europe,M49 sub-region
+300,GRC,Greece,Europe,Southern Europe,Southern Europe,M49 sub-region
+336,VAT,Holy See,Europe,Southern Europe,Southern Europe,M49 sub-region
+380,ITA,Italy,Europe,Southern Europe,Southern Europe,M49 sub-region
+470,MLT,Malta,Europe,Southern Europe,Southern Europe,M49 sub-region
+499,MNE,Montenegro,Europe,Southern Europe,Southern Europe,M49 sub-region
+807,MKD,North Macedonia,Europe,Southern Europe,Southern Europe,M49 sub-region
+620,PRT,Portugal,Europe,Southern Europe,Southern Europe,M49 sub-region
+674,SMR,San Marino,Europe,Southern Europe,Southern Europe,M49 sub-region
+688,SRB,Serbia,Europe,Southern Europe,Southern Europe,M49 sub-region
+705,SVN,Slovenia,Europe,Southern Europe,Southern Europe,M49 sub-region
+724,ESP,Spain,Europe,Southern Europe,Southern Europe,M49 sub-region
+024,AGO,Angola,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+204,BEN,Benin,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+072,BWA,Botswana,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+086,IOT,British Indian Ocean Territory,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+854,BFA,Burkina Faso,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+108,BDI,Burundi,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+132,CPV,Cabo Verde,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+120,CMR,Cameroon,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+140,CAF,Central African Republic,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+148,TCD,Chad,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+174,COM,Comoros,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+178,COG,Congo,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+384,CIV,Côte d’Ivoire,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+180,COD,Democratic Republic of the Congo,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+262,DJI,Djibouti,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+226,GNQ,Equatorial Guinea,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+232,ERI,Eritrea,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+748,SWZ,Eswatini,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+231,ETH,Ethiopia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+260,ATF,French Southern Territories,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+266,GAB,Gabon,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+270,GMB,Gambia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+288,GHA,Ghana,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+324,GIN,Guinea,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+624,GNB,Guinea-Bissau,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+404,KEN,Kenya,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+426,LSO,Lesotho,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+430,LBR,Liberia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+450,MDG,Madagascar,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+454,MWI,Malawi,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+466,MLI,Mali,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+478,MRT,Mauritania,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+480,MUS,Mauritius,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+175,MYT,Mayotte,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+508,MOZ,Mozambique,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+516,NAM,Namibia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+562,NER,Niger,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+566,NGA,Nigeria,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+646,RWA,Rwanda,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+638,REU,Réunion,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+654,SHN,Saint Helena,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+678,STP,Sao Tome and Principe,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+686,SEN,Senegal,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+690,SYC,Seychelles,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+694,SLE,Sierra Leone,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+706,SOM,Somalia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+710,ZAF,South Africa,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+728,SSD,South Sudan,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+768,TGO,Togo,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+800,UGA,Uganda,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+834,TZA,United Republic of Tanzania,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+894,ZMB,Zambia,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+716,ZWE,Zimbabwe,Africa,Sub-Saharan Africa,Sub-Saharan Africa,M49 sub-region
+040,AUT,Austria,Europe,Western Europe,Western Europe,M49 sub-region
+056,BEL,Belgium,Europe,Western Europe,Western Europe,M49 sub-region
+250,FRA,France,Europe,Western Europe,Western Europe,M49 sub-region
+276,DEU,Germany,Europe,Western Europe,Western Europe,M49 sub-region
+438,LIE,Liechtenstein,Europe,Western Europe,Western Europe,M49 sub-region
+442,LUX,Luxembourg,Europe,Western Europe,Western Europe,M49 sub-region
+492,MCO,Monaco,Europe,Western Europe,Western Europe,M49 sub-region
+528,NLD,Netherlands (Kingdom of the),Europe,Western Europe,Western Europe,M49 sub-region
+756,CHE,Switzerland,Europe,Western Europe,Western Europe,M49 sub-region

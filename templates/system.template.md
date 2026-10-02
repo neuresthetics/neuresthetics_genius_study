@@ -5,9 +5,9 @@
 # Claim form is the same as person files: {value, certainty, cites: [{source, locator}], how_known}; TODO / UNKNOWN / BELOW_THRESHOLD.
 record:
   record_type: system
-  schema_version: "1.0"
+  schema_version: "1.1"
   record_version: 1
-  review_status: "draft — unreviewed"
+  review_status: "draft — unreviewed"     # only a named human sets reviewed (P5)
   collected_by: TODO
   model_used: TODO
   collected_on: 2026-01-01
@@ -43,7 +43,7 @@ metaphysics:                              # each: value = the position in 1–3 
   reserved_exemptions: {value: TODO, stance: TODO}
   teleology_in_nature: {value: TODO, stance: TODO}
   necessity_and_freedom: {value: TODO}
-lio_axes:                                 # PROPOSED 0–4 per axis, with rationale; score the official or scholarly form
+lio_axes:                                 # 0–4 per axis (P1), with rationale; score the official or scholarly form
   A_locus: {value: TODO}
   B_cause: {value: TODO}
   C_ledger: {value: TODO}
@@ -72,7 +72,7 @@ v7_1_rubric:                              # copied by make_system_stubs.py; vali
   scoring_note: "verbatim from data book section 7"
   source: "v7.1 data book, section 6 table (tables[4]) row N and section 7 scoring notes"
 revised_rubric:
-  status: "not started"                   # not started | draft | reviewed
+  status: "not started"                   # not started | draft | reviewed; stays not started until the first pool is done (S3)
   L: {score: TODO, rationale: ""}
   P: {score: TODO, rationale: ""}
   E: {score: TODO, rationale: ""}

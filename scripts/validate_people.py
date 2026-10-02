@@ -12,6 +12,8 @@ Checks
   5. Every citation (front matter and [S#] in the body) points at a listed source; unused sources are warned.
   6. Collaborator roster_ids exist in person_ids.csv.
   7. The body has every required section heading.
+  8. data/reference/regions.csv (P3 country-to-region table) uses exactly the schema's region values, with no
+     duplicate countries.
 
 Usage
   python3 scripts/validate_people.py                     # all person files
@@ -89,6 +91,26 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
     return errors, warnings, data
 
 
+def check_regions(schema):
+    """data/reference/regions.csv must use exactly the schema's region values (decision P3)."""
+    errors = []
+    enum = None
+    for alt in schema.schema["$defs"]["region"]["properties"]["value"]["anyOf"]:
+        if "enum" in alt:
+            enum = set(alt["enum"])
+    rows = read_csv(os.path.join(REPO, "data", "reference", "regions.csv"))
+    used = {r["study_region"] for r in rows}
+    for r in rows:
+        if r["study_region"] not in enum:
+            errors.append(f"regions.csv: {r['country_or_area']!r} has study_region {r['study_region']!r}, not a schema region")
+    for v in sorted(enum - used):
+        errors.append(f"regions.csv: schema region {v!r} has no country")
+    names = [r["iso3"] for r in rows]
+    for n in sorted({n for n in names if names.count(n) > 1}):
+        errors.append(f"regions.csv: duplicate iso3 {n}")
+    return errors, len(rows)
+
+
 def main():
     ap = argparse.ArgumentParser(description="Validate person files")
     ap.add_argument("files", nargs="*")
@@ -106,6 +128,11 @@ def main():
     if not targets:
         print("no person files found"); return 0
     n_bad = 0
+    rerr, nreg = check_regions(schema)
+    print(("PASS" if not rerr else "FAIL") + f" data/reference/regions.csv  {nreg} countries")
+    for e in rerr:
+        print(f"  ERROR {e}")
+    n_bad += bool(rerr)
     for f, tmpl in targets:
         errors, warnings, data = check_person(f, schema, ids, roster, codes, is_template=tmpl)
         if a.strict:

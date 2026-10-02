@@ -29,7 +29,8 @@ Contents:
   - `UNKNOWN`: researched and not findable. Say what was checked.
   - `BELOW_THRESHOLD`: evidence below 0.5, so the value is withheld. Describe the evidence.
 - **Source ids** (`S1`, `S2`, ...) are local to each file.
-- **PROPOSED** in a description marks a scale or list awaiting Jason's sign-off ([OPEN_DECISIONS.md](OPEN_DECISIONS.md)).
+- **Decision tags** such as P1 or S3 in a description point to the decided item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md). No scale or list is still marked PROPOSED.
+- **Reference tables:** `data/reference/regions.csv` maps each country or area (UN M49) to a study region (decision P3). See `data/reference/README.md`.
 
 ## 2. Roster files
 
@@ -168,9 +169,9 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `person` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | fixed: `1.0` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. |
+| `record.schema_version` | fixed: `1.1` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
-| `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a human reviewer may set 'reviewed'. 'example — unreviewed' marks the worked examples. |
+| `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
 | `record.model_used` | string | yes | model and version used, or 'none (human)' |
 | `record.collected_on` | string | yes | Date (YYYY-MM-DD) the first research run started. |
@@ -218,8 +219,8 @@ Dates, places, era and region: the descriptive frame for era- and region-matched
 | `basics.death.date` | claim; value string; extra keys: `approx`, `calendar` | yes | Death date. |
 | `basics.death.place` | claim; value string; extra keys: `modern_name`, `polity_then` | yes | Death place. |
 | `basics.first_lasting_contribution_year` | claim; value integer; extra keys: `approx` | yes | Year of the earliest contribution listed in contribution.lasting_original_contributions. Drives era_bucket. |
-| `basics.era_bucket` | claim; value one of: `before -500`, `-500 to 499`, `500 to 1399`, `1400 to 1599`, `1600 to 1749`, `1750 to 1849`, `1850 to 1949`, `1950 on` | yes | Bucket of first_lasting_contribution_year (PROPOSED buckets). |
-| `basics.region_of_birth` | claim; value one of: `Northern Europe`, `Western Europe`, `Southern Europe`, `Eastern Europe`, `Middle East and North Africa`, `Sub-Saharan Africa`, `Central Asia`, `South Asia`, `East Asia`, `Southeast Asia`, `North America`, `Latin America and Caribbean`, `Oceania` | yes | Macro-region of the birth place (PROPOSED list, based on UN M49 regions, applied to modern borders). |
+| `basics.era_bucket` | claim; value one of: `before -500`, `-500 to 499`, `500 to 1399`, `1400 to 1599`, `1600 to 1749`, `1750 to 1849`, `1850 to 1949`, `1950 on` | yes | Bucket of first_lasting_contribution_year (decision P2). A year on an edge goes to the later bucket (1950 is '1950 on'). Birth year stays in basics.birth.date, so a birth-year version can be computed for a sensitivity check. |
+| `basics.region_of_birth` | claim; value one of: `Northern Europe`, `Western Europe`, `Southern Europe`, `Eastern Europe`, `Middle East and North Africa`, `Sub-Saharan Africa`, `Central Asia`, `South Asia`, `East Asia`, `Southeast Asia`, `North America`, `Latin America and Caribbean`, `Oceania` | yes | Macro-region of the birth place, on modern borders, from data/reference/regions.csv (decision P3: UN M49 sub-regions; MENA = Northern Africa + Western Asia + Iran). |
 | `basics.region_of_work` | claim; value one of: `Northern Europe`, `Western Europe`, `Southern Europe`, `Eastern Europe`, `Middle East and North Africa`, `Sub-Saharan Africa`, `Central Asia`, `South Asia`, `East Asia`, `Southeast Asia`, `North America`, `Latin America and Caribbean`, `Oceania` | yes | Macro-region where the major work was done. If split, pick where the main contribution was made and explain in note. |
 | `basics.sex_as_recorded` | claim; value string | yes | Sex as recorded in the sources. Descriptive, for baseline matching only. |
 | `basics.languages_of_work` | claim; value list | yes | Languages the person published or worked in. |
@@ -273,13 +274,13 @@ The adult working worldview: the unit of coding. Not childhood religion, not her
 | `worldview.primary_system` | claim; value string; extra keys: `basis`, `rationale` | yes | Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty must match basis. |
 | `worldview.secondary_system` | claim; value string; extra keys: `basis`, `rationale` | yes | Only if the person published in two systems. Otherwise leave TODO, or UNKNOWN with how_known 'no second system'. |
 | `worldview.candidate_codes_considered` | list of `candidateCode` | yes | Codes the coder weighed, with the reason for and against each. Fill this even when the code is still TODO. |
-| `worldview.lio_axes` | object | yes | Position on the five LIO axes (PROPOSED 0-4 scale). Each score needs basis, certainty, cites and a rationale. |
+| `worldview.lio_axes` | object | yes | Position on the five LIO axes (0-4 scale, decision P1). Each score needs basis, certainty, cites and a rationale. |
 | `worldview.lio_axes.A_locus` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | A Locus: transcendent person outside the world (0) ... immanent in or identical with the world (4). |
 | `worldview.lio_axes.B_cause` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | B Cause: miracle, petition, reserved exemption (0) ... law, regularity, no special cases (4). |
 | `worldview.lio_axes.C_ledger` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | C Ledger: reward and punishment of persons (0) ... impersonal consequence, or none (4). |
 | `worldview.lio_axes.D_authority` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | D Authority: revelation outranks observation (0) ... observation and reason outrank revelation (4). |
 | `worldview.lio_axes.E_scope` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4). |
-| `worldview.mid_basin` | claim; value boolean; extra keys: `rationale` | yes | True if the person is a first-rank theist whose working physics or method ran on lawful order (v7.1 'mid-basin theist'). Operational definition is an open decision. |
+| `worldview.mid_basin` | claim; value boolean; extra keys: `rationale` | yes | v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored for the domain of the person's work, both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise UNKNOWN or BELOW_THRESHOLD. Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored. |
 | `worldview.statements` | list of `quote` | yes | Verbatim quotations that bear on the worldview, each with citation, context, kind, axes touched, and how it was verified. |
 | `worldview.changes_over_life` | list of claims (claim; value string; extra keys: `year`, `age`) | yes | Documented shifts in worldview, with year or age. |
 | `worldview.coder_notes` | string |  | Free text: reasoning, doubts, what would change the coding. |
@@ -380,7 +381,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
 | `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5. |
-| `lioScore` | | integer | | PROPOSED 0-4 scale (docs/OPEN_DECISIONS.md): 0 interventionist pole, 2 mixed, 4 LIO pole. |
+| `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |
 | | `type` | one of: `primary`, `secondary`, `tertiary` | yes | primary = by the subject or contemporary record; secondary = scholarship; tertiary = encyclopedias and reference pages. |
@@ -416,9 +417,9 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `modern_name` | string |  | Modern name and country. |
 | | `polity_then` | string |  | State or polity at the time. |
-| `era` | | claim | | PROPOSED buckets on the year of the first lasting contribution (docs/OPEN_DECISIONS.md) |
+| `era` | | claim | | Buckets on the year of the first lasting contribution (decision P2, 2026-10-01). Each bucket includes its lower edge: 1600 is '1600 to 1749', 1950 is '1950 on'. |
 | | `value` | one of: `before -500`, `-500 to 499`, `500 to 1399`, `1400 to 1599`, `1600 to 1749`, `1750 to 1849`, `1850 to 1949`, `1950 on` | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| `region` | | claim | | PROPOSED macro-regions (docs/OPEN_DECISIONS.md) |
+| `region` | | claim | | Macro-regions on modern borders (decision P3, 2026-10-01). Country-to-region table: data/reference/regions.csv. |
 | | `value` | one of: `Northern Europe`, `Western Europe`, `Southern Europe`, `Eastern Europe`, `Middle East and North Africa`, `Sub-Saharan Africa`, `Central Asia`, `South Asia`, `East Asia`, `Southeast Asia`, `North America`, `Latin America and Caribbean`, `Oceania` | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | `item` | | claim | | generic dated fact; value is the statement |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
@@ -502,7 +503,7 @@ Front-matter sections:
 | `classification` | kind, family, parent traditions, related codes with relation type |
 | `origins` | founding era and region, founders or key figures, key texts |
 | `metaphysics` | ten stance claims (God–nature relation, personal deity, intervention, miracles, petition, afterlife, moral ledger, authority, reserved exemptions, teleology), plus necessity and freedom |
-| `lio_axes` | five axis positions with rationale (PROPOSED 0–4 scale) |
+| `lio_axes` | five axis positions with rationale (0–4 scale, decision P1) |
 | `epistemology`, `ethics` | one claim each |
 | `practice` | ritual and practice, community form |
 | `science` | historical and current stance on natural science |
@@ -527,9 +528,9 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `system` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | fixed: `1.0` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. |
+| `record.schema_version` | fixed: `1.1` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1, P5, S3, S4 and S5; no field or enum changes. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
-| `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a human reviewer may set 'reviewed'. 'example — unreviewed' marks the worked examples. |
+| `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
 | `record.model_used` | string | yes | model and version used, or 'none (human)' |
 | `record.collected_on` | string | yes | Date (YYYY-MM-DD) the first research run started. |
@@ -545,7 +546,7 @@ Code, v7.1 label, display label and aliases.
 | field | type / allowed values | required | meaning |
 |---|---|---|---|
 | `identity` | object | yes |  |
-| `identity.id` | string | yes | The v7.1 abbreviation code (e.g. PANT, CLASS_THEISM). Must equal the file name. One of the 77; adding a code needs a schema bump. |
+| `identity.id` | string | yes | The v7.1 abbreviation code (e.g. PANT, CLASS_THEISM). Must equal the file name. One of the 77. The list is closed for v8 (decision S4): proposed new codes are collected in a list (code, why, example people, and for a split the people it would move) and added in one batch with one schema bump and Jason's approval. |
 | `identity.v7_1_number` | integer | yes | Row number (#) in the v7.1 data book rubric table. |
 | `identity.v7_1_label` | string | yes | System name exactly as in the data book section 7 scoring note, or the section 6 score table (tables[4]) if the note has none. Never edited. |
 | `identity.display_label` | string | yes | label used in v8 tables |
@@ -597,7 +598,7 @@ Core metaphysics. Each item: value (one to three sentences) plus a short stance 
 
 #### `lio_axes`
 
-Position on the five LIO axes (PROPOSED 0-4 scale), for the system's official or scholarly form. Variants that differ are described in schools_and_variants.
+Position on the five LIO axes (0-4 scale, decision P1), for the system's official or scholarly form. Variants that differ are described in schools_and_variants.
 
 | field | type / allowed values | required | meaning |
 |---|---|---|---|
@@ -646,7 +647,7 @@ Stance on natural science, historically and now.
 
 #### `schools_and_variants`
 
-Internal schools and forms, e.g. scholastic vs popular (the way CLASS_THEISM and CLTHEI are split). Say which LIO axes move.
+Internal schools and forms, e.g. a scholarly and a popular form inside one tradition. Say which LIO axes move.
 
 | field | type / allowed values | required | meaning |
 |---|---|---|---|
@@ -681,7 +682,7 @@ copied from the v7.1 data book; the validator checks it against data/sources/v7_
 
 #### `revised_rubric`
 
-Slot for revised scores. Each axis needs a score and rationale. Not started until Jason opens it.
+Slot for revised scores (decision S3, 2026-10-01). Not started until the first coding pool is done and Jason opens it. Then: a cite for each axis score, two scorers score a sample independently and report agreement before the rest are scored, and Jason approves the final numbers. Revised scores sit beside v7_1_rubric and never overwrite it.
 
 | field | type / allowed values | required | meaning |
 |---|---|---|---|
@@ -758,7 +759,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
 | `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5. |
-| `lioScore` | | integer | | PROPOSED 0-4 scale (docs/OPEN_DECISIONS.md): 0 interventionist pole, 2 mixed, 4 LIO pole. |
+| `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |
 | | `type` | one of: `primary`, `secondary`, `tertiary` | yes | primary = by the subject or contemporary record; secondary = scholarship; tertiary = encyclopedias and reference pages. |
@@ -800,7 +801,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `cites` | list of `citation` |  | Citations: source id plus locator. |
 | `relatedCode` | | object | |  |
 | | `code` | string | yes | A code among the 77. |
-| | `relation` | one of: `parent tradition`, `offshoot`, `scholastic form of`, `popular form of`, `neighbor (easily confused)`, `contrast case`, `overlaps` | yes | Read as: '<code> is <relation> this system'. E.g. in CLTHEI.md, {code: CLASS_THEISM, relation: 'scholastic form of'} means CLASS_THEISM is the scholastic form of CLTHEI's tradition. |
+| | `relation` | one of: `parent tradition`, `offshoot`, `scholastic form of`, `popular form of`, `neighbor (easily confused)`, `contrast case`, `overlaps` | yes | Read as: '<code> is <relation> this system'. E.g. in PANT.md, {code: STOIC, relation: 'parent tradition'} means Stoicism is a parent tradition of PANT. CLTHEI and CLASS_THEISM are 'neighbor (easily confused)' to each other (decision S5). |
 | | `note` | string |  | Optional remark. |
 
 <!-- END GENERATED: system -->

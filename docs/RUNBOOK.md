@@ -245,7 +245,7 @@ git commit -m "Extend <CODE> system record: <what>"
 
 - A new field or enum value needs a change in both `schema/*.schema.json` and the template, plus a `schema_version` bump in every file and a CHANGELOG entry.
 - Then run `python3 scripts/make_data_dictionary.py` and all the validators.
-- A new belief system (beyond the 77) needs a schema bump and Jason's approval (see OPEN_DECISIONS).
+- A new belief system (beyond the 77) is not added during v8 (decision S4). Add it to the list of proposed codes with the reason and example people; new codes go in together, in one batch with one schema bump and Jason's approval.
 
 ## 10. Troubleshooting
 
