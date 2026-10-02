@@ -113,9 +113,12 @@ def common_checks(data, body, required_sections):
     for p, c in claims(data):
         basis = c.get("basis")
         if basis and claim_state(c) == "FILLED":
+            # The basis sets a ceiling (CODING_GUIDE §3): certainty may sit below it (contested readings,
+            # indirect evidence) but never above it, and must be one of the three levels.
             want = BASIS_CERTAINTY[basis] if basis in BASIS_CERTAINTY else None
-            if want is not None and c.get("certainty") != want:
-                errors.append(f"{'/'.join(p)}: basis {basis} requires certainty {want}, got {c.get('certainty')}")
+            cert = c.get("certainty")
+            if want is not None and (cert not in (1.0, 0.7, 0.5) or cert > want):
+                errors.append(f"{'/'.join(p)}: basis {basis} allows certainty at most {want} (1.0 / 0.7 / 0.5), got {cert}")
         if claim_state(c) == "FILLED" and c.get("certainty") is not None and not c.get("cites"):
             errors.append(f"{'/'.join(p)}: filled claim without citations")
     headings = re.findall(r"^## (.+?)\s*$", body, flags=re.M)

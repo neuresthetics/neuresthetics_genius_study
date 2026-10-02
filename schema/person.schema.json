@@ -525,7 +525,7 @@
         },
         "primary_system": {
           "$ref": "#/$defs/systemCode",
-          "description": "Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty must match basis."
+          "description": "Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty may not exceed the basis ceiling, and is at most 0.7 if the record names a plausible alternative code (CODING_GUIDE §3)."
         },
         "secondary_system": {
           "$ref": "#/$defs/systemCode",
@@ -1171,7 +1171,7 @@
         "consistent_private_letters",
         "scholarly_reconstruction"
       ],
-      "description": "Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5."
+      "description": "Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it."
     },
     "lioScore": {
       "type": "integer",
@@ -2298,7 +2298,7 @@
           "$ref": "#/$defs/claimRules"
         }
       ],
-      "description": "code from systems/ (the 77 abbr codes). Validator checks the code exists and basis matches certainty."
+      "description": "code from systems/ (the 77 abbr codes). Validator checks the code exists and certainty does not exceed the basis ceiling."
     },
     "axis": {
       "type": "object",
@@ -2342,7 +2342,7 @@
         },
         "basis": {
           "$ref": "#/$defs/basis",
-          "description": "Evidence basis; must agree with certainty."
+          "description": "Evidence basis; certainty may not exceed its ceiling."
         },
         "rationale": {
           "type": "string",

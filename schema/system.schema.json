@@ -1415,7 +1415,7 @@
         "consistent_private_letters",
         "scholarly_reconstruction"
       ],
-      "description": "Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5."
+      "description": "Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it."
     },
     "lioScore": {
       "type": "integer",

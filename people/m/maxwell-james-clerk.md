@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: C_ledger certainty 0.7 -> 0.5 (prayers have no judgement or reward language). Consistency pass (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the coder notes name B = 4 as plausible; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -160,17 +161,17 @@ worldview:
     B_cause:
       value: 3
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S8, locator: "p. 376"}, {source: S9, locator: "pp. 443–444"}]
-      how_known: "Public lecture text (1873) for the law and the stated limit; the Eranus essay agrees. Written profession, so 1.0."
+      how_known: "Public lecture text (1873) for the law and the stated limit; the Eranus essay agrees. Written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the coder notes say the creation limit could be read as the edge of science, scoring 4. Lowered from 1.0 in the consistency pass after the lens audit (2026-10-02)."
       rationale: "Scored for his physics. Laws hold without exception everywhere: a hydrogen molecule in Sirius or Arcturus 'executes its vibrations in precisely the same time' (S8). One stated, limited exception: the existence and identical properties of molecules cannot be ascribed to 'any of the causes which we call natural', so science stops at their creation (S8, p. 376). In his 1873 Eranus essay, free will acts at 'singular points' inside physical law, not as an exemption from it (S9). Outside his science his prayers include petition (S7); that is not scored here."
     C_ledger:
       value: 1
       basis: consistent_private_letters
-      certainty: 0.7
+      certainty: 0.5
       cites: [{source: S7, locator: "p. 347"}, {source: S4, locator: "p. 179"}]
-      how_known: "Two prayers and a letter, all private, that agree; so 0.7."
-      rationale: "Leans to personal reward and punishment: two prayers among his papers ask for 'the remission of our sins' and that 'the wicked be no more', and the 1852 letter names God 'the Author of Salvation'. Private writings that agree, so 0.7. No text read on punishment after death, so not scored 0."
+      how_known: "Two prayers and a letter, all private, that agree. They speak to the axis only indirectly: liturgical, psalm-like phrasing, with no judgement or reward after death. So 0.5, the coder's inference (lens audit, 2026-10-02; CODING_GUIDE §3)."
+      rationale: "Leans to personal reward and punishment: two prayers among his papers ask for 'the remission of our sins' and that 'the wicked be no more', and the 1852 letter names God 'the Author of Salvation'. Private writings that agree, but the reading is an inference from liturgical phrasing, so 0.5. No text read on punishment after death, so not scored 0."
     D_authority:
       value: 2
       basis: consistent_private_letters
@@ -181,10 +182,10 @@ worldview:
     E_scope: {value: TODO, note: "Evidence so far: the same physical laws for distant stars and earth (S8, p. 376) and for human beings, whose will acts at singular points within law (S9). Nothing read on whether believers have an exemption (salvation for an in-group). Read Theerman 1986 (Am. J. Phys. 54: 312–317) and the 1884 edition of the Life before scoring."}
   mid_basin:
     value: true
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S8, locator: "pp. 376–377"}]
-    how_known: "Applied the P4 test to the axis scores above: A_locus = 0 at 1.0 and B_cause = 3 at 1.0, so true. Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his physics, so the result is unchanged."
-    rationale: "P4 test (METHOD §1.1): A_locus = 0 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his physics at certainty 1.0. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately)."
+    how_known: "Applied the P4 test to the axis scores above: A_locus = 0 at 1.0 and B_cause = 3 at 0.7, so true. Certainty 0.7: mid_basin is no surer than the less certain of A and B (CODING_GUIDE §3). B = 4, the named alternative, also gives true. Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his physics, so the result is unchanged."
+    rationale: "P4 test (METHOD §1.1): A_locus = 0 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his physics at certainty 0.7. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately)."
   statements:
     - text: "Nothing is to be holy ground consecrated to Stationary Faith, whether positive or negative."
       cites: [{source: S4, locator: "p. 178"}]
@@ -504,7 +505,7 @@ His own letters show a Bible-centred Christian faith from his student years. In 
 
 On science and faith he kept two things apart. He would not let scripture be tied to a scientific hypothesis, since hypotheses change faster than interpretations [S5, p. 394]. He declined to join the Victoria Institute, saying that each man's attempts to harmonise science with Christianity matter only to himself, and only for a time [S6, pp. 404–405]. In public, though, he drew a theistic conclusion from physics: molecules are identical everywhere, so they have "the essential character of a manufactured article" and must have been created [S8, p. 376].
 
-Coding: CHRIST at 0.7. A_locus 0 and B_cause 3 (for his physics), both at 1.0 from the 1873 lecture, so mid_basin is true under P4. C_ledger 1 and D_authority 2 at 0.7. E_scope is TODO.
+Coding: CHRIST at 0.7. A_locus 0 at 1.0 and B_cause 3 (for his physics) at 0.7, from the 1873 lecture, so mid_basin is true at 0.7 under P4. D_authority 2 at 0.7; C_ledger 1 at 0.5. E_scope is TODO.
 
 ## Heritage (context only)
 

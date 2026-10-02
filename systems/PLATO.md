@@ -2,15 +2,16 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from seven SEP entries, IEP and the multi-author Britannica article. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: D_authority 2 at 0.5 -> 3 at 0.7 (the axis is observation and reason against revelation; distrust of the senses is not revelation; IEP §5.e and Britannica's Neoplatonism page cited for inspiration). Locator added for the 'Split theisms' coding rule. Not reviewed."}
 identity:
   id: PLATO
   v7_1_number: 36
@@ -51,7 +52,7 @@ lio_axes:
   A_locus: {value: 2, rationale: "Mid-basin: an intelligible reality and a good Craftsman (or Intellect) apart from the sensible world, with a world-soul inside it; SEP lists Plato among panentheistic models; the Neoplatonic One is beyond personhood.", certainty: 0.5, cites: [{source: S4, locator: "§1; §7"}, {source: S7, locator: "§2.2"}, {source: S5, locator: "introduction"}], how_known: "Scored on the 0–4 scale (P1). 0.5: readings differ (literal Craftsman toward 1, Neoplatonic One toward 2–3)."}
   B_cause: {value: 3, rationale: "The cosmos is ordered by Intellect working with Necessity, which even the Craftsman cannot change; no miracles in Plato. Not 4: explanation is teleological, and later Neoplatonists used theurgy.", certainty: 0.7, cites: [{source: S4, locator: "§1; §7"}, {source: S1, locator: "page 'The later Neoplatonists'"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
   C_ledger: {value: 2, rationale: "Myths of judgment and reincarnation give a moral ledger across lives, but it is presented in myth and the early dialogues are agnostic; no personal judge who can be swayed is required.", certainty: 0.5, cites: [{source: S3, locator: "§5.e; §6.c"}], how_known: "0–4 scale (P1). 0.5 for the interpretive dispute."}
-  D_authority: {value: 2, rationale: "No revelation in Plato, and reason is the authority; but it is a priori reason that distrusts the senses, and strong Platonism rests on a kind of experience as much as argument. Later Neoplatonism and Christian Platonism added revealed or ritual sources.", certainty: 0.5, cites: [{source: S2, locator: "§1"}, {source: S1, locator: "page 'Evaluation of Platonism'"}], how_known: "0–4 scale (P1). 0.5 because how to place a priori reason on this axis is itself a judgement call."}
+  D_authority: {value: 3, rationale: "Leans LIO. This axis sets observation and reason against revelation, and in Plato reason decides; there is no revelation (S2, §1). Distrust of the senses is a split inside reason and observation, not an appeal to revelation. Divine inspiration is ranked below knowledge: poets and rhapsodes work 'not from knowledge or expertise, but from some kind of divine inspiration' (S3, §5.e). The limited exception is later: the Chaldean Oracles 'were taken as inspired authorities by the later Neoplatonists' (S1, page 'Neoplatonism: its nature and history'), and Christian Platonism added revealed sources. 2 is the named alternative if those later forms are weighted.", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S3, locator: "§5.e"}, {source: S1, locator: "pages 'Neoplatonism: its nature and history'; 'Evaluation of Platonism'"}], how_known: "0–4 scale (P1). Changed from 2 at 0.5 after the lens audit (2026-10-02): a priori reason is still reason, not revelation. Coder's reading with a named alternative, so 0.7 (CODING_GUIDE §3)."}
   E_scope: {value: 3, rationale: "The forms and the order of the cosmos hold universally, with no in-group exemptions in Plato; later theurgy and the gods' help are partial exceptions.", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S1, locator: "page 'The later Neoplatonists'"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
 epistemology: {value: "Knowledge is of forms, reached by reason and dialectic; recollection (learning as drawing on what the soul already knows); the senses give only defective images. Mathematical method is the model.", certainty: 1.0, cites: [{source: S2, locator: "§1"}, {source: S3, locator: "§6.c"}], how_known: "SEP and IEP."}
 ethics: {value: "An intense concern for the quality of human life, 'always ethical, often religious, and sometimes political', grounded in unchanging forms that give value and meaning; the Good as the highest form.", certainty: 1.0, cites: [{source: S1, locator: "introduction"}, {source: S4, locator: "§7"}], how_known: "Britannica and SEP."}
@@ -99,7 +100,7 @@ coding_guidance:
 review:
   data_quality_flags:
     - "The v7.1 note credits Platonism's 'theory of ideal forms' and docks it for 'modest empirical alignment'. Consistent with the sources: SEP says the world that appears to our senses is in some way defective, and Britannica says strong Platonism has rested on a kind of faith from experience. But the Timaeus also offers a mathematical physics (S4), which the note does not mention. Not a contradiction; reported only. v7.1 text left unchanged."
-    - "The v7.1 coding rule names CLASS_THEISM as Aristotelian-Thomistic-Falsafa; Christian and Islamic Platonists (Augustine, Pseudo-Dionysius, Avicenna's Neoplatonic elements) sit between PLATO, the host religion and CLASS_THEISM. Code from the person's writing."
+    - "The v7.1 coding rule (v7.1 data book coding-rules table, tables[3], row 'Split theisms'; not the PLATO scoring note) names CLASS_THEISM as Aristotelian-Thomistic-Falsafa; Christian and Islamic Platonists (Augustine, Pseudo-Dionysius, Avicenna's Neoplatonic elements) sit between PLATO, the host religion and CLASS_THEISM. Code from the person's writing."
   open_questions:
     - "Gödel (first pool): his mathematical platonism is the contemporary abstract-objects view (S8), which alone does not give PLATO. His person file should check whether his own writing goes further (an intelligible reality as the origin of existence and values) before choosing PLATO over a theist code."
     - "Adherents: not applicable (TODO)."
@@ -133,7 +134,7 @@ Scored on the 0–4 scale (P1):
 - A locus 2 (0.5): an intelligible reality and Craftsman apart from the world, plus a world-soul; read by some as panentheism [S4; S7, §2.2].
 - B cause 3 (0.7): Intellect and Necessity; no miracles [S4, §1].
 - C ledger 2 (0.5): myths of judgment and rebirth [S3].
-- D authority 2 (0.5): reason without revelation, but a priori and distrustful of the senses [S2, §1; S1].
+- D authority 3 (0.7): reason decides and there is no revelation; divine inspiration ranks below knowledge; later Neoplatonists took the Chaldean Oracles as inspired [S2, §1; S3, §5.e; S1].
 - E scope 3 (0.7): universal forms and order [S2, §1].
 
 ## Schools and variants
@@ -157,7 +158,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 ## Open questions
 
 - Gödel's mathematical platonism and this code (see review).
-- How to place a priori reason on D_authority.
+- D_authority: whether the later Neoplatonist use of inspired oracles should pull the code toward 2.
 
 ## Research log
 

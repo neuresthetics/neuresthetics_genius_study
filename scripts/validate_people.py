@@ -8,7 +8,7 @@ Checks
   2. The id is in data/roster/person_ids.csv as active, and the file sits at the path listed there.
   3. identity.roster matches the person's row in data/roster/roster.csv exactly.
   4. Worldview codes (primary, secondary, candidates) exist in systems/; filled worldview codes and LIO axis
-     scores carry a basis, and the basis agrees with certainty (1.0 / 0.7 / 0.5).
+     scores carry a basis, and certainty does not exceed the basis ceiling (1.0 / 0.7 / 0.5; CODING_GUIDE §3).
   5. Every citation (front matter and [S#] in the body) points at a listed source; unused sources are warned.
   6. Collaborator roster_ids exist in person_ids.csv.
   7. The body has every required section heading.

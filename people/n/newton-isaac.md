@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (the 'Reformation' passage is a named plausible alternative, B = 2); mid_basin certainty 1.0 -> 0.7 (result still true); 'UNKNOWN' wording for a B = 2 result corrected to TODO; 'Church of England' replaced by 'Protestant', as the cited sources say, in nominal_affiliations (certainty 1.0 -> 0.7) and family_religion. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -100,7 +101,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Calculus, the laws of motion, universal gravitation and the analysis of white light are still standard; named laws; reference works call the Principia one of the most important works in the history of science.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Lane A definition (lasting original impact on documented criteria) applied to the contributions listed above."}
 
 childhood:
-  family_religion: {value: "Protestant (Church of England). SEP says he was born into a Puritan family; his stepfather Barnabas Smith was the minister of the church at North Witham.", certainty: 0.7, cites: [{source: S3, locator: "§1.1 ('born into a Puritan family')"}, {source: S2, locator: "Biography (Smith 'the minister of the church at North Witham')"}, {source: S1, locator: "Formative influences ('the well-to-do minister Barnabas Smith')"}], how_known: "Only one source (SEP) names the family's religious leaning; the stepfather's office is in two."}
+  family_religion: {value: "Protestant. SEP says he was born into a Puritan family; his stepfather Barnabas Smith was the minister of the church at North Witham.", certainty: 0.7, cites: [{source: S3, locator: "§1.1 ('born into a Puritan family')"}, {source: S2, locator: "Biography (Smith 'the minister of the church at North Witham')"}, {source: S1, locator: "Formative influences ('the well-to-do minister Barnabas Smith')"}], how_known: "Only one source (SEP) names the family's religious leaning; the stepfather's office is in two."}
   family_religious_practice: {value: TODO, note: "No account of the household's worship was found in the sources read. Westfall's Never at Rest or the Newton Project biography may have it."}
   parents_and_household:
     - {value: "Father, Isaac Newton, a yeoman farmer who owned property and animals but could not sign his name; he died in October 1642, before his son was born", name: "Isaac Newton (senior)", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences"}], how_known: "Two sources agree that he died before the birth (they differ on two or three months; see data_quality_flags)."}
@@ -131,7 +132,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1665–1727", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Final years"}], how_known: "From the plague years to his death. His creative science was mostly done by 1693 (S1); theology continued to the end."}
   nominal_affiliations:
-    - {value: "Church of England. He was a Fellow of Trinity College, helped lead Cambridge's resistance to James II's attempt to Catholicize it, and sat for the university in the Convention Parliament (1689)", years: "1661–1727", certainty: 1.0, cites: [{source: S1, locator: "Warden of the mint ('a fervent if unorthodox Protestant')"}, {source: S2, locator: "Biography (Convention Parliament, 15 January 1689)"}], how_known: "Two sources."}
+    - {value: "Protestant ('a fervent if unorthodox Protestant'). He was a Fellow of Trinity College, helped lead Cambridge's resistance to James II's attempt to Catholicize it, and sat for the university in the Convention Parliament (1689)", years: "1661–1727", certainty: 0.7, cites: [{source: S1, locator: "Warden of the mint ('a fervent if unorthodox Protestant')"}, {source: S2, locator: "Biography (Convention Parliament, 15 January 1689)"}], how_known: "Britannica gives the label 'Protestant'; MacTutor confirms the Convention Parliament. Neither names the Church of England, so the label is 'Protestant' (lens audit, 2026-10-02). One source for the label, so 0.7. His London parish priest was Samuel Clarke (next entry, S4)."}
     - {value: "In London, Samuel Clarke was his parish priest", certainty: 0.7, cites: [{source: S4, locator: "§7 (Leibniz–Clarke correspondence)"}], how_known: "One source."}
   self_described_science_religion_relation:
     value: "Natural philosophy reasons from phenomena up to a first cause that is not mechanical, and talking about God from the appearances of things belongs to natural philosophy. He wrote the Principia partly to support belief in a Deity. Natural philosophy, if perfected, would also widen moral philosophy by showing our duty to the first cause."
@@ -163,10 +164,10 @@ worldview:
     B_cause:
       value: 3
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S8, locator: "pp. 384–385"}, {source: S6, locator: "pp. 402–404"}, {source: S5, locator: "pp. 388, 392"}]
-      how_known: "Published texts (Principia Rules, General Scholium, Opticks Query 31). Written profession, so 1.0."
-      rationale: "Scored for his natural philosophy. Law and induction rule: the same effects get the same causes, and qualities found in all bodies within reach of experiment are taken as universal (S8); gravity acts according to the laws he has explained (S5). He states limited exceptions. (1) The origin: the system 'could only proceed from the counsel and dominion of an intelligent and powerful being', and it is 'unphilosophical' to derive the world from chaos 'by the mere Laws of Nature' (S5, S6; also the letters to Bentley, S7). (2) Upkeep: small irregularities 'will be apt to increase, till this System wants a Reformation', and God can 'form and reform the Parts of the Universe' (S6). Once formed, the world 'may continue by those Laws for many Ages' (S6). These are stated and limited, so 3. A reviewer who reads the reformation as ongoing intervention inside his physics could score 2, which would make mid_basin UNKNOWN under P4. Outside his science his private articles direct petition to God (S9); that is not scored here."
+      how_known: "Published texts (Principia Rules, General Scholium, Opticks Query 31), so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the Opticks 'Reformation' passage has God repairing the system from time to time inside his physics, which could score 2. Lowered from 1.0 after the lens audit (2026-10-02)."
+      rationale: "Scored for his natural philosophy. Law and induction rule: the same effects get the same causes, and qualities found in all bodies within reach of experiment are taken as universal (S8); gravity acts according to the laws he has explained (S5). He states limited exceptions. (1) The origin: the system 'could only proceed from the counsel and dominion of an intelligent and powerful being', and it is 'unphilosophical' to derive the world from chaos 'by the mere Laws of Nature' (S5, S6; also the letters to Bentley, S7). (2) Upkeep: small irregularities 'will be apt to increase, till this System wants a Reformation', and God can 'form and reform the Parts of the Universe' (S6). Once formed, the world 'may continue by those Laws for many Ages' (S6). These are stated and limited, so 3. A reviewer who reads the reformation as ongoing intervention inside his physics could score 2, which would leave mid_basin TODO under P4 (the test has no branch for A = 1 with B = 2). Outside his science his private articles direct petition to God (S9); that is not scored here."
     C_ledger:
       value: 0
       basis: consistent_private_letters
@@ -190,10 +191,10 @@ worldview:
       rationale: "Near the LIO pole for nature: the same causes for 'respiration in a man and in a beast', for stones 'in Europe and in America' and for 'our culinary fire and of the sun' (S8); the light of the fixed stars is 'of the same nature with the light of the Sun' (S5). One stated, limited exception: God could 'vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe' (S6), offered as a possibility, not a finding. His private theology has a judgement and a kingdom for the best of those raised (S10), but that is scored on C, not as an exemption from natural rules."
   mid_basin:
     value: true
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S5, locator: "pp. 388–389"}, {source: S6, locator: "pp. 402–403"}, {source: S8, locator: "pp. 384–385"}]
-    how_known: "Applied the P4 test to the axis scores above: A_locus = 1 at 1.0 and B_cause = 3 at 1.0, so true. Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his natural philosophy, so the result is unchanged. The 'Reformation' passage stays a stated, limited exception inside that account (see the B_cause rationale)."
-    rationale: "P4 test (METHOD §1.1): A_locus = 1 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his natural philosophy at certainty 1.0. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately). The B score is the weak point: if a reviewer scores B = 2 for the 'Reformation' passage, the test gives UNKNOWN, not false."
+    how_known: "Applied the P4 test to the axis scores above: A_locus = 1 at 1.0 and B_cause = 3 at 0.7, so true. Certainty 0.7: mid_basin is no surer than the less certain of A and B (CODING_GUIDE §3; lens audit, 2026-10-02). Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his natural philosophy, so the result is unchanged. The 'Reformation' passage stays a stated, limited exception inside that account (see the B_cause rationale)."
+    rationale: "P4 test (METHOD §1.1): A_locus = 1 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his natural philosophy at certainty 0.7. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately). The B score is the weak point: if a reviewer scores B = 2 for the 'Reformation' passage, the test has no branch, so mid_basin would be TODO, not false."
   statements:
     - text: "This most beautiful System of the Sun, Planets and Comets, could only proceed from the counsel and dominion of an intelligent and powerful being."
       cites: [{source: S5, locator: "p. 388"}]
@@ -376,7 +377,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 29, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
-  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2. A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work."
+  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -603,7 +604,7 @@ His science runs on law. The same effects get the same causes [S8, p. 384]. But 
 
 His private manuscripts show a scriptural, anti-Trinitarian Christianity: one God the Father and one mediator, Christ; prayer to the Father in the name of Christ; and a final judgement of all people [S9; S10]. MacTutor dates his Arian view to about 1672 [S12].
 
-Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1, B_cause 3 (natural philosophy) and E_scope 3 at 1.0; C_ledger 0 and D_authority 2 at 0.7. mid_basin is true under P4.
+Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 and E_scope 3 at 1.0; B_cause 3 (natural philosophy), C_ledger 0 and D_authority 2 at 0.7. mid_basin is true at 0.7 under P4.
 
 ## Heritage (context only)
 

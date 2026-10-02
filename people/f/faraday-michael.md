@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Schema 1.1. Era and region notes now cite the decided buckets (P2) and the region table (P3). mid_basin note: the P4 test exists; value stays TODO until A_locus and B_cause are scored."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "All five LIO axes and mid_basin scored from the sources already cited (no new sources): A 0, B 3 (his physics), D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7. Five statements added from Gladstone (S10) and Cantor (S8), checked word for word. Timing fields for LIO-type views filled; changes_over_life changed from an empty list to UNKNOWN. Primary system still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Primary system coded CHRIST at 0.7 (consistent private letters) from his own writings and the sources already cited; CLTHEI and CLASS_THEISM rejected with reasons. secondary_system UNKNOWN (no second system). B_cause and mid_basin rechecked under decision P6 (B on his account of nature): unchanged, B 3 and mid_basin true at 0.7. No new sources. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: 1821 membership reworded from both sources (sought membership within days of the wedding, Russell; formal profession of faith a month after it, Gladstone p. 91). D_authority 1 -> 2 at 0.7 (two domains, each with its own authority, as for Maxwell and Newton). Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -125,7 +126,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1813–1865", certainty: 1.0, cites: [{source: S2, locator: "Ri positions"}, {source: S5, locator: "p. 4: stepped down as Superintendent in 1865"}], how_known: "From his appointment at the Royal Institution in 1813 to his last posts in 1865."}
   nominal_affiliations:
-    - {value: "Joined the Sandemanian church by confession of faith within days of his marriage (12 June 1821)", year: 1821, role: member, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One historian's account."}
+    - {value: "Joined the Sandemanian church in 1821: he sought membership within days of his marriage (12 June 1821) and made his formal profession of faith about a month after it", year: 1821, role: member, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}, {source: S10, locator: "p. 91"}, {source: S8, locator: "section 'Primitive Christianity'"}], how_known: "Russell: 'Within days of the wedding Faraday sought membership of the Sandemanian church' (S5, p. 2). Gladstone, who knew him: 'he did not make any formal profession of his faith till a month after his marriage' (S10, p. 91). Cantor confirms the confession of faith in 1821 (S8). The sources agree on the year; the exact day of the profession is not given, so 0.7."}
     - {value: "Deacon", year: 1832, role: deacon, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One source."}
     - {value: "Elder; he preached ('exhortations') at Sandemanian meetings", year: 1840, role: elder, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One source."}
     - {value: "Excluded from the London Sandemanian church in 1844, which also ended his first term as elder", year: 1844, role: elder, certainty: 1.0, cites: [{source: S10, locator: "p. 36"}, {source: S8, locator: "section 'Primitive Christianity', para. 3"}, {source: S6, locator: "article title"}], how_known: "Gladstone, who knew him, says the first eldership ('between 1840 and 1844') 'came to a close through his separation both from his office and from the Church itself'. Cantor (S6 title, S8) agrees. Independent sources, no dispute, so 1.0."}
@@ -145,7 +146,7 @@ worldview:
     basis: consistent_private_letters
     certainty: 0.7
     cites: [{source: S3, locator: "final paragraph"}, {source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 37, 58, 99–100"}, {source: S5, locator: "pp. 1–2"}, {source: S9, locator: "para. on natural theology"}]
-    how_known: "His Christian belief is in his own words in private letters (S3, 1844; S4, 1861; the Comte de Paris letter through Gladstone, S10, p. 58), consistent with his public 1854 lecture as quoted by Gladstone (S10, pp. 99–100) and with his confession of faith and offices (S5, p. 2). The published lecture was read only as a secondary quotation, which cannot support 1.0, so 0.7."
+    how_known: "His Christian belief is in his own words in private letters (S3, 1844; S4, 1861; the Comte de Paris letter through Gladstone, S10, p. 58), consistent with his public 1854 lecture as quoted by Gladstone (S10, pp. 99–100) and with his profession of faith in 1821 and his offices (S10, p. 91; S5, p. 2). The published lecture was read only as a secondary quotation, which cannot support 1.0, so 0.7."
     rationale: "CHRIST fits 'the religion as practised and confessed' (CODING_GUIDE): his hope is 'founded on the faith that is in Christ' (S3), peace is 'alone in the gift of God', whose 'unspeakable gift in his beloved son' grounds hope (S4), and the truths of the future life are 'received through simple belief of the testimony given' (S10, pp. 99–100). Neither theism split fits better. Not CLASS_THEISM: 'There is no philosophy in my religion' (S3), and he rejected natural theology as 'superfluous and misguided' (S9); no argued simple, immutable God appears. Not CLTHEI: the writing read shows submission, not petition ('perfect trust and submission to God's will', S10, p. 37), and no expected acts of God against the course of nature; in nature God 'governs his material works by definite laws' (S8). CLTHEI's own guidance sends such a case to the host religion. Membership and eldership alone would not code him (CODING_GUIDE); his own writings do. The Sandemanian form is recorded in nominal_affiliations, not as a code."
     alternatives:
       - {value: CLTHEI, cites: [{source: S5, locator: "pp. 1–2"}], note: "Closest alternative. Russell calls the church evangelical and strongly Calvinist, and quotes J. M. Thomas that he accepted 'the literal truth of the Bible' (S5, p. 2), miracles included. Preferred only if his own writing showed petition answered by God or God acting in particular events beyond nature's course; none was found."}
@@ -177,12 +178,12 @@ worldview:
       how_known: "Coder's reading of his letters and of Brooke's account of Sandemanian teaching. His own words speak of hope and gift, not judgement, so 0.5."
       rationale: "Leans interventionist. The future life is a personal gift and promise of God, not a natural consequence: 'the ground of no doubtful hope' is God's gift in his Son (S4), and he looks to 'the great and precious promises whereby His people are made partakers of the Divine nature' (S10, p. 58). Sandemanian salvation was 'freely available through Christ’s ransom', with 'the imitation of Christ and obedience to his commands' required in return (S9), and the church disciplined its members, as it did him in 1844 (S8). Not 0, because no punishment language appears in his own words read here."
     D_authority:
-      value: 1
+      value: 2
       basis: consistent_private_letters
       certainty: 0.7
       cites: [{source: S10, locator: "pp. 99–100 ('Observations on Mental Education')"}, {source: S3, locator: "final paragraph"}, {source: S9, locator: "para. on natural theology"}, {source: S5, locator: "p. 2"}]
       how_known: "His own public lecture through Gladstone's quotation, his private letter to Lovelace (scholarly transcription) and two historians, consistent with each other, so 0.7."
-      rationale: "Leans to revelation. Two domains, each with its own authority. For God and the future life, revelation alone: that truth 'cannot be brought to his knowledge by any exertion of his mental powers' and is 'received through simple belief of the testimony given' (S10, pp. 99–100); he refuses to apply his methods 'to the very highest' (S10, p. 100), and knowledge of God came from 'the plain teaching of Scripture', with natural theology 'superfluous and misguided' (S9). For nature, observation and experiment rule, and 'that which is religious & that which is philosophical have ever been two distinct things' (S3); matters like the age of the earth and the Flood are 'studiously avoided' (S5, p. 2). Revelation has the last word on the highest things, so 1, not 2; not 0 because in his science scripture is never used as evidence."
+      rationale: "Mixed, by domain, as the scale defines 2. Two domains, each with its own authority. For God and the future life, revelation alone: that truth 'cannot be brought to his knowledge by any exertion of his mental powers' and is 'received through simple belief of the testimony given' (S10, pp. 99–100); he refuses to apply his methods 'to the very highest' (S10, p. 100), and knowledge of God came from 'the plain teaching of Scripture', with natural theology 'superfluous and misguided' (S9). For nature, observation and experiment rule, and 'that which is religious & that which is philosophical have ever been two distinct things' (S3); matters like the age of the earth and the Flood are 'studiously avoided' (S5, p. 2). Scripture is never used as evidence in his science, and revelation is not set over observation inside nature, so this is the same two-domain pattern as Maxwell and Newton (both 2). Changed from 1 after the lens audit (2026-10-02). Plausible alternative: 1, if his refusal to apply reason to the highest things is read as revelation outranking reason; so certainty stays at most 0.7 (CODING_GUIDE §3)."
     E_scope:
       value: 1
       basis: scholarly_reconstruction
@@ -252,7 +253,7 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Quoted by Gladstone."
-  changes_over_life: [{value: UNKNOWN, how_known: "No change of worldview is reported in S1–S11. He attended the Sandemanian chapel as a child and joined by confession of faith in 1821 (S5, p. 2); the brief exclusion of 1844 was over church discipline, not belief (S8)."}]
+  changes_over_life: [{value: UNKNOWN, how_known: "No change of worldview is reported in S1–S11. He attended the Sandemanian chapel as a child and made his profession of faith in 1821, about a month after his marriage (S10, p. 91; S5, p. 2); the brief exclusion of 1844 was over church discipline, not belief (S8)."}]
   coder_notes: "Example record. Axes, mid_basin and the primary system (CHRIST at 0.7) coded on 2026-10-02 from the sources already cited. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5. B is scored on his account of nature (decision P6); his acceptance of the literal truth of the Bible would pull a whole-religion score lower. The primary code's weak point is CHRIST versus CLTHEI: no petition or intervention language was found in his own words, but only a few letters were read."
 
 heritage:
@@ -421,7 +422,7 @@ sources:
 
 # Michael Faraday
 
-> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 1 at 0.7; C 1, E 1 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
+> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 2 at 0.7; C 1, E 1 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
 
 ## Summary
 
@@ -452,11 +453,11 @@ From age 14 he was apprenticed to a bookbinder. He read what came in for binding
 
 ## Adult working worldview
 
-He joined the Sandemanian church by confession of faith in 1821, within days of his marriage to Sarah Barnard. He became a deacon in 1832 and an elder in 1840 [S5, p. 2]. In 1844 he was excluded from the church, which also ended his eldership [S10, p. 36; S6]. Cantor says this lasted "a few weeks in the spring of 1844" and was "owing to an internal dispute over church discipline" [S8]. The older story, that he was put out for being the Queen's guest on a Sunday, comes from the first edition of Gladstone's biography [S11, p. 35]. Gladstone dropped it in the second edition, which says the reason "is unknown except to the parties immediately concerned" [S10, p. 36]. He was restored to membership [S8; S10, p. 36], became an elder again after 1860 [S10, p. 36], and resigned his eldership in 1864 [S5, p. 4].
+He married Sarah Barnard on 12 June 1821 and sought membership of the Sandemanian church within days [S5, p. 2]. Gladstone says "he did not make any formal profession of his faith till a month after his marriage" [S10, p. 91]. He became a deacon in 1832 and an elder in 1840 [S5, p. 2]. In 1844 he was excluded from the church, which also ended his eldership [S10, p. 36; S6]. Cantor says this lasted "a few weeks in the spring of 1844" and was "owing to an internal dispute over church discipline" [S8]. The older story, that he was put out for being the Queen's guest on a Sunday, comes from the first edition of Gladstone's biography [S11, p. 35]. Gladstone dropped it in the second edition, which says the reason "is unknown except to the parties immediately concerned" [S10, p. 36]. He was restored to membership [S8; S10, p. 36], became an elder again after 1860 [S10, p. 36], and resigned his eldership in 1864 [S5, p. 4].
 
 In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces, and that a private memorandum on atoms and fields invokes God [S5, pp. 2–3]. In his science he looked for laws: Cantor quotes his belief that "the Creator governs his material works by definite laws resulting from the forces impressed on matter" [S8]. He held that force is conserved because creating or destroying it is "only within the power of Him" [S8]. For the future life he relied on revelation alone: its truth "is received through simple belief of the testimony given" [S10, pp. 99–100].
 
-Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 37; S8]. A 0, B 3 (his account of nature, P6) and D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7.
+Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 37; S8]. A 0, B 3 (his account of nature, P6) and D 2 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
@@ -464,7 +465,7 @@ English, from a Sandemanian family with a long history of dissent from the Churc
 
 ## Timing
 
-His first lasting contribution came in 1821, at about age 29 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2]. Throughout his major work (1821 to about 1855) he was a practising Sandemanian [S5, p. 2; S1, Later life]. The dated statements on the axes (1844, 1854, 1857) fall during the major work [S3; S10; S8].
+His first lasting contribution came in 1821, at about age 29 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2; S10, p. 91]. Throughout his major work (1821 to about 1855) he was a practising Sandemanian [S5, p. 2; S1, Later life]. The dated statements on the axes (1844, 1854, 1857) fall during the major work [S3; S10; S8].
 
 ## Lane B notes (labeled belief model)
 

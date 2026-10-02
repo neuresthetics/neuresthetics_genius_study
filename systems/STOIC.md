@@ -2,16 +2,17 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Coding guidance and PANT neighbor from the PANT boundary rules (OPEN_DECISIONS S6)."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from five SEP entries, IEP and the Britannica article. S6 guidance and PANT neighbor kept. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix: E_scope 4 -> 3 at 0.7. The world is made for gods and humans and animals are outside the moral community (SEP Pantheism §15; SEP Stoicism §5.2), the same feature that holds CLASS_THEISM at 3. Not reviewed."}
 identity:
   id: STOIC
   v7_1_number: 21
@@ -55,7 +56,7 @@ lio_axes:
   B_cause: {value: 4, rationale: "Strict causal determinism: every event follows from a chain of causes and fate is inviolable; even divination works within the laws of physics.", certainty: 0.7, cites: [{source: S1, locator: "§2.8"}, {source: S2, locator: "2.b"}], how_known: "0–4 scale (P1). Not 1.0 because the inviolable order is also called providence and the will of Zeus."}
   C_ledger: {value: 3, rationale: "Virtue is its own good and sufficient for happiness; no judge rewards or punishes in the sources read. Not 4 because the afterlife evidence is thin and Seneca allowed a better afterlife.", certainty: 0.5, cites: [{source: S1, locator: "§4.3"}, {source: S5, locator: "§3.3"}], how_known: "0–4 scale (P1). 0.5 for the thin afterlife evidence."}
   D_authority: {value: 3, rationale: "Knowledge from cognitive impressions and reason; no revelation. Not 4 because natural study was subordinate to living well and divination was accepted as a science.", certainty: 0.7, cites: [{source: S1, locator: "§3.7"}, {source: S2, locator: "2.b"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
-  E_scope: {value: 4, rationale: "One causal order for everything, with no exemptions; all human beings together with Zeus are citizens of one universal city (cosmopolis).", certainty: 0.7, cites: [{source: S1, locator: "§2.8; §4.5"}], how_known: "0–4 scale (P1). Coder's reading, 0.7."}
+  E_scope: {value: 3, rationale: "Leans LIO: one causal order for everything, with no exemptions, and all human beings together with Zeus are citizens of one universal city (cosmopolis) (S1, §2.8; §4.5). The limited exception is a ranking of beings: Cicero's 'all things were made for either Gods or men' (S4, §15), and animals stand outside the moral community (Augustine followed the Stoics rather than the Platonists 'on the question of animals’ membership in the moral community', S1, §5.2). The same feature (the rest of creation ordered for the sake of rational beings) holds CLASS_THEISM at 3. 4 is the named alternative if only the causal order is counted.", certainty: 0.7, cites: [{source: S1, locator: "§2.8; §4.5; §5.2"}, {source: S4, locator: "§15"}], how_known: "0–4 scale (P1). Changed from 4 after the lens audit (2026-10-02) for consistency with CLASS_THEISM. Coder's reading with a named alternative, so 0.7 (CODING_GUIDE §3)."}
 epistemology: {value: "Empiricist foundation: cognitive (kataleptic) impressions, assent and cognition; logic as an instrument; physics, logic and ethics form one interlocking system.", certainty: 1.0, cites: [{source: S1, locator: "introduction; §1.2; §3.7"}, {source: S3, locator: "page 'Ancient Stoicism'"}], how_known: "SEP and Britannica."}
 ethics: {value: "The end is 'living in agreement with nature' (Cleanthes); virtue is the only good and sufficient for happiness; externals are indifferents; passions are to be removed (apatheia); cosmopolitanism.", certainty: 1.0, cites: [{source: S1, locator: "§4.1; §4.3; §4.5; §4.7"}, {source: S2, locator: "3; 4"}], how_known: "SEP and IEP."}
 practice:
@@ -134,7 +135,7 @@ Scored on the 0–4 scale (P1):
 - B cause 4 (0.7): strict causal determinism [S1, §2.8].
 - C ledger 3 (0.5): virtue is the only good; thin evidence on the afterlife [S1, §4.3; S5, §3.3].
 - D authority 3 (0.7): cognitive impressions and reason; divination counted as science [S1, §3.7; S2, 2.b].
-- E scope 4 (0.7): one causal order and one cosmopolis for all [S1, §2.8; §4.5].
+- E scope 3 (0.7): one causal order and one cosmopolis for all, but the world is made for gods and humans and animals are outside the moral community [S1, §2.8; §4.5; §5.2; S4, §15].
 
 ## Schools and variants
 

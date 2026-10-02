@@ -69,7 +69,7 @@ Glossary (v7.1 data book, section 3 "Dictionary", verbatim):
 
 Every filled claim carries one of three certainty values. Anything below 0.5 is withheld.
 
-**Worldview claims.** This covers `worldview.primary_system`, `secondary_system`, the LIO axes, and statements used as evidence. It uses the v7.1 scale, with a `basis` that must agree:
+**Worldview claims.** This covers `worldview.primary_system`, `secondary_system`, the LIO axes, and statements used as evidence. It uses the v7.1 scale. The `basis` records the evidence type and sets the highest certainty allowed:
 
 | certainty | `basis` | meaning |
 |---|---|---|
@@ -79,6 +79,8 @@ Every filled claim carries one of three certainty values. Anything below 0.5 is 
 | <0.5 | value = `BELOW_THRESHOLD` | Leave the value blank. The person drops out of the ideology × rate table. |
 
 A single private letter is not "consistent private letters". Use 0.5 if a scholar backs the reading. Otherwise use `BELOW_THRESHOLD`.
+
+**Contested readings** (lens audit, 2026-10-02). If the record itself names a plausible alternative score or code (in a rationale, how_known, candidate list or coder note), certainty is at most 0.7, whatever the source type. Name the alternative in the rationale. Certainty may also sit below the basis ceiling when the evidence speaks to the axis only indirectly; say why in `how_known`. Certainty never goes above the ceiling. This applies to person and system LIO axes and to `primary_system`. `mid_basin` certainty is at most the lower of the A_locus and B_cause certainties. Apply the scale the same way across files: the same pattern of evidence gets the same score (for example, two domains each with its own authority is D 2 for every person).
 
 **Other facts** (dates, places, schooling, contributions):
 

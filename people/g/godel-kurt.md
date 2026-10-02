@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: primary_system CLASS_THEISM at 0.5 -> BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI named as candidates in a note (no scholar places him in a theist code; the simple or immutable God test is not shown). mid_basin unchanged (true at 0.7; it uses only A and B). Lutheran baptism (nominal_affiliations) 0.5 -> 0.7, one reliable source; the same Todorov fact in family_religion, religious_heritage_by_birth and baptism_or_initiation also 0.5 -> 0.7. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -91,7 +92,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "The completeness and incompleteness theorems and the consistency proofs in set theory are lasting original results that changed mathematical logic.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Gödel's theorems"}], how_known: "Lane A definition applied to the contributions above."}
 
 childhood:
-  family_religion: {value: "Lutheran, his mother's church; the surrounding state and town were Catholic", certainty: 0.5, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One secondary source (Todorov, drawing on Dawson's biography)."}
+  family_religion: {value: "Lutheran, his mother's church; the surrounding state and town were Catholic", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One reliable, undisputed source (Todorov, drawing on Dawson's biography), so 0.7."}
   family_religious_practice: {value: TODO, note: "No account of worship at home in the sources read. His 1950 letter says only that his school religion classes were poor (S6). Dawson's biography (1997, ch. 1) is the likely source; it is only on archive.org's restricted lending, so it was not read."}
   parents_and_household:
     - {value: "Father Rudolf August Gödel, from a Viennese family, managing director and part owner of a major textile firm in Brno; died 1929", role: father, certainty: 1.0, cites: [{source: S3, locator: "Biography"}, {source: S1, locator: "§1 ('a businessman')"}], how_known: "Two sources."}
@@ -119,24 +120,23 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1929–1978", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "From his dissertation to his death."}
   nominal_affiliations:
-    - {value: "Baptized in a Lutheran congregation; no church membership is reported for his adult life in the sources read", years: "from birth", role: "baptized member", certainty: 0.5, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One secondary source for the baptism. The Grandjean questionnaire's answer on religion (Collected Works IV) was not read directly."}
+    - {value: "Baptized in a Lutheran congregation; no church membership is reported for his adult life in the sources read", years: "from birth", role: "baptized member", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1 ('baptised in a Lutheran congregation')"}], how_known: "One reliable, undisputed source for the baptism (Todorov), so 0.7 (raised from 0.5 after the lens audit). The Grandjean questionnaire's answer on religion (Collected Works IV) was not read directly."}
   self_described_science_religion_relation:
     value: "Science and theology are not in conflict. He wrote to his mother that it may already be possible, by reason alone and without faith, to see that the 'theological world view' (that the world and everything in it has a good meaning) fits all known facts, and that the idea that everything has a meaning matches the principle that everything has a cause, on which science rests. He held that there is a scientific, exact philosophy and theology, which is also fruitful for science. Science, he wrote, shows the greatest regularity and order in everything, and order is a form of rationality."
     certainty: 0.7
     cites: [{source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}, {source: S1, locator: "§3.1 ('My Philosophical Viewpoint', c. 1960)"}, {source: S6, locator: "letter of 23 July 1961"}]
     how_known: "His private letters (one in IAS-approved translation, one through a secondary quotation) and a private list quoted by SEP. Consistent private writing, so 0.7. Quotations are in statements."
   primary_system:
-    value: CLASS_THEISM
-    basis: scholarly_reconstruction
-    certainty: 0.5
+    value: BELOW_THRESHOLD
     cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}, {source: S7, locator: "Sect. 3, note 14"}, {source: S1, locator: "§3.1"}, {source: S8, locator: "§9"}]
-    how_known: "His theism is stated in private writing (0.7). The choice of this code among the theist codes is the coder's reconstruction from 'following Leibniz' and his rational theology, so 0.5."
-    rationale: "In the unsent Grandjean questionnaire (sent to him in 1974) he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)' (S5). The v7.1 scoring note for CLASS_THEISM lists Leibniz. The code's use_when asks for (1) an argument to God by reason, (2) a simple or immutable God and (3) nature as an order of causes. (1) is met: the ontological proof (1970, S8) and his letter saying the theological world view can be grasped 'purely rationally' (S7). (3) is met: everything has a cause, and science shows order in everything (S6, S7). (2) is not shown in the sources read. Mathematical platonism is recorded (S1, S2), but the PLATO guidance says that alone does not settle the worldview, and his own writing names Leibniz's theism rather than Plato's forms as its origin."
+    how_known: "His theism is stated in private writing (the Grandjean answer, S5; letters, S6, S7). No scholar read places him in a particular theist code, and one of the CLASS_THEISM tests (a simple or immutable God) is not shown in the sources read, so the choice of code is below 0.5. Changed from CLASS_THEISM at 0.5 after the lens audit (2026-10-02); the CODING_GUIDE (§3) uses 0.5 only when a scholar backs the reading."
+    note: "Candidates: CLASS_THEISM (he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)', S5; argument to God by reason and nature as an order of causes are met; a simple or immutable God is not shown) and CLTHEI (a personal afterlife, S6, but no petition, miracles or special divine action in what was read). Reading Wang 1987 and 1996 and the Collected Works IV letters could settle it."
+    rationale: "In the unsent Grandjean questionnaire (sent to him in 1974) he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)' (S5). The v7.1 scoring note for CLASS_THEISM lists Leibniz. The code's use_when asks for (1) an argument to God by reason, (2) a simple or immutable God and (3) nature as an order of causes. (1) is met: the ontological proof (1970, S8) and his letter saying the theological world view can be grasped 'purely rationally' (S7). (3) is met: everything has a cause, and science shows order in everything (S6, S7). (2) is not shown in the sources read. Mathematical platonism is recorded (S1, S2), but the PLATO guidance says that alone does not settle the worldview, and his own writing names Leibniz's theism rather than Plato's forms as its origin. No scholar in S1–S8 names his theism as classical theism, so the code is withheld (BELOW_THRESHOLD) with CLASS_THEISM and CLTHEI as candidates."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S8. His mathematical platonism (S1 opening paragraph; S2 Turn to philosophy) is recorded under self_described_science_religion_relation and coder_notes, not as a code, following the PLATO guidance."}
   candidate_codes_considered:
-    - {code: CLASS_THEISM, reason: "Chosen at 0.5. Leibnizian theism reached by reason; an ontological proof; the world as an order of causes and meaning. Criterion (2), a simple and immutable God, is not shown in the sources read.", cites: [{source: S5, locator: "Vol. IV section"}, {source: S8, locator: "§9"}, {source: S7, locator: "Sect. 3, note 14"}]}
+    - {code: CLASS_THEISM, reason: "Leading candidate, not coded (BELOW_THRESHOLD): no scholar read places him here. Leibnizian theism reached by reason; an ontological proof; the world as an order of causes and meaning. Criterion (2), a simple and immutable God, is not shown in the sources read.", cites: [{source: S5, locator: "Vol. IV section"}, {source: S8, locator: "§9"}, {source: S7, locator: "Sect. 3, note 14"}]}
     - {code: PLATO, reason: "Rejected. He defended mathematical Platonism and held that 'objective reality is beautiful, good, and perfect' (S1, §3.1, from Wang's notes of conversations). But he names Leibniz, not Plato, as his model and calls his belief theistic (S5). The PLATO guidance says mathematical platonism alone does not settle the worldview, and its review note asks whether his writing makes an intelligible reality the origin of existence and values; what was read makes God that origin.", cites: [{source: S1, locator: "§3; §3.1"}, {source: S5, locator: "Vol. IV section"}]}
-    - {code: CLTHEI, reason: "Close second. He expected a personal afterlife (S6, 23 July 1961). But nothing read shows petition, miracles or special divine action; he looks to order and reason. Would become first if Wang's books or the Collected Works show a God who acts in particular events, or rule out a simple, immutable God.", cites: [{source: S6, locator: "letter of 23 July 1961"}]}
+    - {code: CLTHEI, reason: "Second candidate, not coded. He expected a personal afterlife (S6, 23 July 1961). But nothing read shows petition, miracles or special divine action; he looks to order and reason. Would become the code if Wang's books or the Collected Works show a God who acts in particular events, or rule out a simple, immutable God.", cites: [{source: S6, locator: "letter of 23 July 1961"}]}
     - {code: CHRIST, reason: "Rejected. Baptized Lutheran (S7), but no adult church life is reported, he kept a notebook on 'Fehler in der Bibel' (errors in the Bible) and distrusted papal nuncios (S6, 8 May 1958). Baptism alone is never a code.", cites: [{source: S7, locator: "Sect. 3, note 14"}, {source: S6, locator: "letter of 8 May 1958"}]}
     - {code: PANT, reason: "Rejected by his own words: 'theistic not pantheistic', Leibniz 'rather than Spinoza' (S5).", cites: [{source: S5, locator: "Vol. IV section"}]}
   lio_axes:
@@ -258,13 +258,13 @@ worldview:
   changes_over_life:
     - {value: "By his own later account he held mathematical realism from 1925; Feferman says this is hard to square with other evidence", year: "1925", certainty: 0.5, cites: [{source: S5, locator: "Vol. IV section"}], how_known: "Questionnaire answer, through Feferman."}
     - {value: "Turned to philosophy almost entirely from about 1943; intensive study of Leibniz, by his own report, 1943–1946; his theist statements read here all date from 1950 on", year: "1943–1946", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letters 1950–1961"}], how_known: "SEP and the dated letters. Whether his theism began then or only became visible then is not known from the sources read."}
-  coder_notes: "All worldview evidence is private: letters to his mother, an unsent questionnaire, notebooks and an unpublished proof. Nothing he published states a religious view, so no axis reaches 1.0. Two key lines (the Grandjean answer and the October 1961 letter) are secondary quotations; the 1961 July letter and others are in an IAS-approved translation. Mathematical platonism is well attested (S1, S2) and is recorded here rather than coded, following the PLATO guidance. Britannica says he 'subscribed to Platonism, theism, and mind-body dualism' (S2). The coding choice between CLASS_THEISM and CLTHEI is the weak point; reading Wang 1996 and the Collected Works IV letters would settle it."
+  coder_notes: "All worldview evidence is private: letters to his mother, an unsent questionnaire, notebooks and an unpublished proof. Nothing he published states a religious view, so no axis reaches 1.0. Two key lines (the Grandjean answer and the October 1961 letter) are secondary quotations; the 1961 July letter and others are in an IAS-approved translation. Mathematical platonism is well attested (S1, S2) and is recorded here rather than coded, following the PLATO guidance. Britannica says he 'subscribed to Platonism, theism, and mind-body dualism' (S2). No scholar read places him in CLASS_THEISM or CLTHEI, so primary_system is BELOW_THRESHOLD with both as candidates (lens audit, 2026-10-02); reading Wang 1996 and the Collected Works IV letters could settle it. mid_basin does not depend on the code: it uses only A and B."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German-speaking Austrian of Moravia; father's family from Vienna, mother from the Rhineland", certainty: 1.0, cites: [{source: S2, locator: "Early life and career ('a German-speaking Austrian')"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: "Lutheran (Protestant), his mother's church, in a mainly Catholic setting", certainty: 0.5, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One secondary source."}
-  baptism_or_initiation: {value: "Baptized in a Lutheran congregation", certainty: 0.5, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One secondary source; no date given."}
+  religious_heritage_by_birth: {value: "Lutheran (Protestant), his mother's church, in a mainly Catholic setting", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One reliable, undisputed source (Todorov), so 0.7."}
+  baptism_or_initiation: {value: "Baptized in a Lutheran congregation", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1"}], how_known: "One reliable, undisputed source (Todorov), so 0.7; no date given."}
   childhood_catechism: {value: "Religion was a school subject; he did very well in it at the Gymnasium, but later wrote that his religion classes were poor", certainty: 0.7, cites: [{source: S1, locator: "§1 ('excelling especially in mathematics, languages and religion')"}, {source: S6, locator: "letter of 27 February 1950"}], how_known: "SEP and his own letter: 'with the kind we had, that would certainly not have been possible'."}
 
 timing:
@@ -416,7 +416,7 @@ sources:
 
 # Kurt Gödel
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 0.5 (theist, following Leibniz). A, B, D scored at 0.7, C at 0.5, E TODO. mid_basin true under the P4 test.
+> Status: draft — unreviewed. Worldview BELOW_THRESHOLD (theist, following Leibniz; CLASS_THEISM and CLTHEI are candidates, no scholar places him in either). A, B, D scored at 0.7, C at 0.5, E TODO. mid_basin true under the P4 test.
 
 ## Summary
 
@@ -441,7 +441,7 @@ His father ran a textile firm; his mother was from the Rhineland and well educat
 
 He called his belief "theistic not pantheistic (following Leibniz rather than Spinoza)" [S5]. He wrote that science shows "the greatest regularity and order reign in everything" [S6, 1961], that the theological world view may be grasped by reason without faith [S7], and that there is an exact philosophy and theology [S1]. He argued for an afterlife as the completion of human possibilities [S6]. He wrote an ontological proof of God (1970) [S8]. His mathematical platonism is recorded but not coded as PLATO.
 
-Coding: CLASS_THEISM at 0.5 (CLTHEI close second). A 1, B 3, D 3 at 0.7; C 3 at 0.5; E TODO. mid_basin true at 0.7.
+Coding: BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI as candidates; no scholar read places him in either. A 1, B 3, D 3 at 0.7; C 3 at 0.5; E TODO. mid_basin true at 0.7; it uses only A and B, so it does not change.
 
 ## Heritage (context only)
 

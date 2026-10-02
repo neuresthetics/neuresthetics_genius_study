@@ -2,17 +2,18 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example: sourced fields filled from SEP entries; LIO axes scored on the proposed 0–4 scale; revised rubric left for Jason. Not reviewed."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Display label set to the full original V6 label, approved by Jason 2026-10-01 (OPEN_DECISIONS S2). Source: V6_(history)/V6/beliefCoherence.json, PANT entry, field belief_system (v7 repo). v7_1_label unchanged."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Schema 1.1. LIO scale approved (P1); the five scores were rechecked and are valid on it. Coding guidance adds the PANT boundary rules (S6); the two open questions they settle are removed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix: SEP says Advaita Vedanta and some Kabbalah are 'marked by pantheistic ideas and feelings', not that they are pantheist; wording softened in the data quality flag, schools_and_variants and the body. No score changed. Not reviewed."}
 identity:
   id: PANT
   v7_1_number: 6
@@ -76,7 +77,7 @@ schools_and_variants:
   - {name: "Stoic physicalist pantheism", code: STOIC, form: "scholastic or philosophical", how_it_differs: "Only bodies exist; the divine is the active pneuma or logos. It has been argued that the Stoics believed in a personal deity and prayed.", lio_difference: "If the Stoic deity was personal, A and B may sit below the pole. TODO.", certainty: 0.7, cites: [{source: S1, locator: "§6 (1); §12"}]}
   - {name: "Scientific or naturalistic pantheism (modern)", form: modern, how_it_differs: "Drops infinity, necessity and other classical divine attributes; nothing beyond empirical science; sometimes no intrinsic value in nature.", lio_difference: "Close to ATHE on exemptions. Whether the entity-term (the circle) survives is the coding question.", certainty: 1.0, cites: [{source: S1, locator: "§6 (1); §10; §13"}]}
   - {name: "Absolute Idealist pantheism (Fichte, Schelling, Hegel, British Idealists)", code: IDEAL, form: "scholastic or philosophical", how_it_differs: "One spiritual reality; the physical world is its partial manifestation; often teleological, with God fully realised at the end of history.", lio_difference: "Teleology moves away from the LIO pole on B/C. TODO.", certainty: 1.0, cites: [{source: S1, locator: "§4 (4); §6 (2)"}]}
-  - {name: "Pantheist strands in religious traditions (Advaita Vedanta, some Kabbalah, Sufi mysticism, Celtic spirituality)", form: mystical, how_it_differs: "Pantheist ideas inside a wider religion, e.g. Ibn 'Arabi's unity of being.", lio_difference: "Depends on the host tradition. v7.1's PANENT label also names 'some Kabbalah/Advaita forms', so coders must decide which code a given person fits.", certainty: 1.0, cites: [{source: S1, locator: "§1; §4 (2)"}]}
+  - {name: "Pantheistic ideas in religious traditions (Advaita Vedanta, some Kabbalah, Sufi mysticism, Celtic spirituality)", form: mystical, how_it_differs: "Traditions SEP calls 'marked by pantheistic ideas and feelings', not pantheist as a whole; pantheistic ideas inside a wider religion, e.g. Ibn 'Arabi's unity of being.", lio_difference: "Depends on the host tradition. v7.1's PANENT label also names 'some Kabbalah/Advaita forms', so coders must decide which code a given person fits.", certainty: 1.0, cites: [{source: S1, locator: "§1; §4 (2)"}]}
 adherents:
   use: "context only — never a genius-rate denominator"
   estimate: {value: TODO, note: "Pantheism is not a standard census category; any figure would come from self-identification surveys."}
@@ -109,7 +110,7 @@ coding_guidance:
 review:
   data_quality_flags:
     - "The v7.1 label is cut off mid-word in both the data book table and the Word file. The display label is the full original from V6_(history)/V6/beliefCoherence.json (PANT entry, belief_system), approved 2026-10-01 (OPEN_DECISIONS S2). v7_1_label is kept verbatim, truncated."
-    - "v7.1's PANENT label includes 'some Kabbalah/Advaita forms', while SEP lists Advaita Vedanta and some Kabbalah as pantheist. Settled by decision S6: host tradition by default, PANENT for a God beyond the world, PANT only if the two-part test is passed."
+    - "v7.1's PANENT label includes 'some Kabbalah/Advaita forms', while SEP says traditions such as Advaita Vedanta and some varieties of Kabbalistic Judaism are 'marked by pantheistic ideas and feelings' (S1, §1); it does not call them pantheist as a whole. Settled by decision S6: host tradition by default, PANENT for a God beyond the world, PANT only if the two-part test is passed."
   open_questions:
     - "S2 (§2.1) discusses whether identifying God with Nature makes Spinoza a pantheist or an atheist. The PANT/ATHE boundary for Spinoza himself is a scholarly dispute, not just a coding issue."
 sources:
@@ -153,7 +154,7 @@ Scored on the 0–4 scale (decision P1). All five axes are at the LIO pole (4) f
 
 ## Schools and variants
 
-Spinozistic substance monism (the study's core form); Stoic physicalist pantheism; modern scientific or naturalistic pantheism; Absolute Idealist pantheism; and pantheist strands inside religious traditions such as Advaita Vedanta, some Kabbalah and Sufism [S1, §1, §4, §6]. These are listed in `schools_and_variants` with how each moves on the axes.
+Spinozistic substance monism (the study's core form); Stoic physicalist pantheism; modern scientific or naturalistic pantheism; Absolute Idealist pantheism; and pantheistic ideas and feelings inside religious traditions such as Advaita Vedanta, some Kabbalah and Sufism, which SEP does not call pantheist as a whole [S1, §1, §4, §6]. These are listed in `schools_and_variants` with how each moves on the axes.
 
 ## Science
 

@@ -271,7 +271,7 @@ The adult working worldview: the unit of coding. Not childhood religion, not her
 | `worldview.working_years` | claim; value string | yes | Years of the adult working life the coding refers to (e.g. 1820-1860). |
 | `worldview.nominal_affiliations` | list of claims (claim; value string; extra keys: `year`, `years`, `age`, `kind`, `role`, `name`) | yes | Memberships and affiliations (church, synagogue, society), with years and offices. Membership is not ideology. |
 | `worldview.self_described_science_religion_relation` | claim; value string | yes | How the person said science and religion relate, in their own words where possible. |
-| `worldview.primary_system` | claim; value string; extra keys: `basis`, `rationale` | yes | Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty must match basis. |
+| `worldview.primary_system` | claim; value string; extra keys: `basis`, `rationale` | yes | Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty may not exceed the basis ceiling, and is at most 0.7 if the record names a plausible alternative code (CODING_GUIDE §3). |
 | `worldview.secondary_system` | claim; value string; extra keys: `basis`, `rationale` | yes | Only if the person published in two systems. Otherwise leave TODO, or UNKNOWN with how_known 'no second system'. |
 | `worldview.candidate_codes_considered` | list of `candidateCode` | yes | Codes the coder weighed, with the reason for and against each. Fill this even when the code is still TODO. |
 | `worldview.lio_axes` | object | yes | Position on the five LIO axes (0-4 scale, decision P1). Each score needs basis, certainty, cites and a rationale. |
@@ -380,7 +380,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | any | yes | The competing value. |
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
-| `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5. |
+| `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
 | `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |
@@ -455,13 +455,13 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `year` | integer or string |  | Year of the event. |
 | | `age` | integer or string |  | Age at the event. |
-| `systemCode` | | claim | | code from systems/ (the 77 abbr codes). Validator checks the code exists and basis matches certainty. |
+| `systemCode` | | claim | | code from systems/ (the 77 abbr codes). Validator checks the code exists and certainty does not exceed the basis ceiling. |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `basis` | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` |  | written_profession (1.0), consistent_private_letters (0.7), or scholarly_reconstruction (0.5). |
 | | `rationale` | string |  | Why this code, in terms of coding_guidance. |
 | `axis` | | claim | |  |
 | | `value` | integer 0–4 | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `basis` | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` |  | Evidence basis; must agree with certainty. |
+| | `basis` | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` |  | Evidence basis; certainty may not exceed its ceiling. |
 | | `rationale` | string |  | why this score, in terms of the axis poles |
 | `quote` | | object | |  |
 | | `text` | string | yes | verbatim, with original spelling; mark cuts with [...] |
@@ -758,7 +758,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | any | yes | The competing value. |
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
-| `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5. |
+| `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
 | `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |

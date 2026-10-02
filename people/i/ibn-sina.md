@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Consistency pass after the lens audit (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the rationale names 4 as plausible on SEP's reading; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -154,9 +155,9 @@ worldview:
     B_cause:
       value: 3
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, pp. 656–657; X ch. 2, p. 664"}, {source: S8, locator: "§1 (natures and the kalam critique)"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation; written profession, so 1.0."
+      how_known: "Metaphysics of The Cure, in a scholarly translation, so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the rationale notes that SEP's reading would point to 4. Lowered from 1.0 in the consistency pass after the lens audit (2026-10-02)."
       rationale: "Leans to law. The causes of the heavens cannot act for our sake (S6, p. 617). Providence is God knowing the order of the good, from which things flow in a fixed order (p. 618). Everything comes to be through other causes, and answered prayer is explained inside that order, not by God changing course (pp. 656–657). The stated exception: a prophet must be marked out by things other people do not see, so he must work miracles (p. 664). Al-Ghazali's attack on causal necessity was aimed at this kind of view (S8). So 3. SEP describes religious and 'paranormal' phenomena as functions of the rational soul (S2, §4), which would point to 4; the record keeps 3 because he states the miracles as an exception."
     C_ledger:
       value: 3
@@ -181,9 +182,9 @@ worldview:
       rationale: "Leans to same rules for all. One graded order runs from the intellects through the spheres to matter, plants, animals and humans (S6, p. 651); all humans have the means to reach knowledge and bliss but must work for it, with no free gift for the idle (S2, §4). The limited exception is the prophet, a rare soul whose matter suits a perfection that few human mixtures can receive (S6, X ch. 3 opening, via S10). Gutas reads the prophet as a natural extreme of the intellect (S2); Horten reads him as raised above nature (S10). That disagreement is why this is 0.5."
   mid_basin:
     value: true
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, p. 657; X ch. 2, p. 664"}, {source: S3, locator: "§4"}]
-    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 1.0 and B_cause = 3 (≥ 3) at 1.0, B scored for the domain of his work (philosophy, natural science and medicine). Both certainties are at least 0.7, so true. Rechecked under decision P6 (2026-10-02): his account of nature is the same fixed order of causes, with prophetic miracles as the stated exception, so B stays 3 and the result is unchanged. F = 5, so first-rank is met."
+    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 1.0 and B_cause = 3 (≥ 3) at 0.7, B scored for the domain of his work (philosophy, natural science and medicine). Both certainties are at least 0.7, so true. Certainty 0.7: mid_basin is no surer than the less certain of A and B (CODING_GUIDE §3); B = 4, the named alternative, also gives true. Rechecked under decision P6 (2026-10-02): his account of nature is the same fixed order of causes, with prophetic miracles as the stated exception, so B stays 3 and the result is unchanged. F = 5, so first-rank is met."
   statements:
     - text: "noch auch außerhalb oder innerhalb der Welt sich befindet, noch irgend ein Ding darstellt, das beschaffen ist, wie die irdischen Dinge"
       cites: [{source: S6, locator: "X. Abhandlung, 2. Kapitel, p. 664"}]
@@ -466,7 +467,7 @@ He learned the Qurʾān by about 10 [S1; S5]. His own account says his father an
 
 God is the Necessary Existent, not in the world or outside it, and not like any earthly thing [S3, §4; S6, p. 664]. Providence is the order of the good that flows from God's thinking [S6, p. 618]. Everything comes to be through other causes [S6, p. 657]. A prophet must work miracles [S6, p. 664]. Bliss after death follows the soul's state of knowledge; bodily resurrection is accepted on the religious law [S6, pp. 633, 643]. The prophet teaches the many in parables [S6, p. 665]. Al-Ghazali judged three of his teachings to be unbelief [S9, §3].
 
-Coding: CLASS_THEISM at 1.0. A 1, B 3, C 3, D 3 at 1.0; E 3 at 0.5. mid_basin true.
+Coding: CLASS_THEISM at 1.0. A 1, C 3, D 3 at 1.0; B 3 at 0.7; E 3 at 0.5. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
