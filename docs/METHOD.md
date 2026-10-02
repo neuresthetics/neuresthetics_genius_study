@@ -52,14 +52,16 @@ The rebuild does no fuzzy merging. Every merge beyond formatting is a row in `da
 | decision | count | meaning |
 |---|---|---|
 | `merge` | 32 | two keys are the same person (Avicenna → Ibn Sina, Buddha → Siddhartha Gautama, Benedict de Spinoza → Baruch Spinoza, ...) |
-| `separate` | 24 | keys that look alike but are different people (George Washington / George Washington Carver, Zeno of Elea / Zeno of Citium, W.H. / W.L. Bragg, ...) |
-| `exclude` | 2 | not a person or a collective (Wright Brothers; Anderson localization) |
-| `flag` | 1 | kept as listed, but a human should look (Brian Maynard Smith, probably John Maynard Smith) |
-| `display_fix` | 26 | the display spelling is corrected; identity is unchanged |
+| `separate` | 26 | keys that look alike but are different people (George Washington / George Washington Carver, Zeno of Elea / Zeno of Citium, W.H. / W.L. Bragg, ...) |
+| `exclude` | 4 | not a person, or a collective (Wright Brothers, plus Orville and Wilbur Wright listed individually; Anderson localization) |
+| `flag` | 0 | kept as listed, but a human should look (none left) |
+| `display_fix` | 27 | the display spelling is corrected; identity is unchanged (includes GPT's "Brian-Maynard-Smith" → John Maynard Smith) |
 
-After the 32 curated merges there are 1,384 keys. With the 2 exclusions, that leaves **1,382 people**.
+`confidence` is `high`, `medium` or `low` for the agent's judgment, or `confirmed` when Jason has approved the row. A confirmed row names the date and the OPEN_DECISIONS item in its reason (R2–R5, 2026-10-01).
 
-The script also runs a similarity scan (string ratio ≥ 0.86, or one name's tokens being a subset of the other's). Pairs it finds are **not** merged. They are written to `merge_log.csv` with action `NOT merged - review suggested` for a human check. Three pairs are listed in v8.
+After the 32 curated merges there are 1,384 keys. With the 4 excluded keys, that leaves **1,380 people**.
+
+The script also runs a similarity scan (string ratio ≥ 0.86, or one name's tokens being a subset of the other's). Pairs it finds are **not** merged. They are written to `merge_log.csv` with action `NOT merged - review suggested` for a human check. The first v8 scan found three pairs (Ken / E.P. Thompson, Edward Said / Edward Sapir, Marc / Maurice Bloch). All three were confirmed as different people (decision R5) and are now `separate` rows, so the scan lists none.
 
 ### 2.4 Frequency F
 
@@ -70,7 +72,7 @@ F is the number of **distinct models** that list the person, from 1 to 5. A mode
 | 5 | 82 | high (5) |
 | 4 | 55 | core (3–4) |
 | 3 | 94 | core (3–4) |
-| 2 | 185 | extended (2) |
+| 2 | 183 | extended (2) |
 | 1 | 966 | single-source (1) |
 
 The v7.1 coding rules set the primary analysis cut at F ≥ 3, with sensitivity runs at F ≥ 4 and F ≥ 2. F = 1 people stay on the roster but out of the primary table.
@@ -91,17 +93,16 @@ The display name comes from three sources, in this order of preference:
 
 ### 2.7 Status
 
-v7.1 tagged people `core`, `provisional` (definition fit arguable) or `review` (paradigm-shift bar arguable). These tags are carried over by matching v7.1 names and their listed aliases to v8 keys. No status is invented:
+v7.1 tagged people `core`, `provisional` (definition fit arguable) or `review` (paradigm-shift bar arguable). These tags are carried over by matching v7.1 names and their listed aliases to v8 keys. A status set by a recorded decision goes in `data/roster/status_overrides.csv` and wins over the carry-over. No other status is invented:
 
 | status | count |
 |---|---|
-| core | 431 |
+| core | 432 (431 from v7.1, plus Georgia O'Keeffe, whose v7.1 status was blank; decision R1, 2026-10-01) |
 | provisional | 33 |
 | review | 17 |
-| needs status (blank in v7) | 1 (Georgia O'Keeffe) |
-| new — needs status | 900 |
+| new — needs status | 898 |
 
-Statuses for the 900 new names are an open decision.
+Statuses for the 898 new names are an open decision (R6).
 
 ### 2.8 Why the v7 frequencies were wrong
 
@@ -149,7 +150,7 @@ Every roster name gets a stable id in `data/roster/person_ids.csv`, made by `scr
 
 Person files live at `people/<shard>/<id>.md`, where the shard is the first character of the id. Two reasons:
 
-1. The GitHub web interface shows at most 1,000 entries when listing a directory. A single `people/` folder with 1,382 files would hide some of them in the browser.
+1. The GitHub web interface shows at most 1,000 entries when listing a directory. A single `people/` folder with 1,380 files would hide some of them in the browser.
 2. A first-letter shard can be worked out from the id alone, and it never changes, because the id never changes. No lookup table is needed to find a file. The largest shard is `s`, with 126 ids.
 
 ## 4. Record format

@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Nothing here has been decided. Where the repo needs *some* value to work, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" at the bottom were signed off by Jason. Everything else is open. Where the repo needs *some* value to work, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,15 +8,15 @@ Choices that need Jason's sign-off. Nothing here has been decided. Where the rep
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-These are recommendations only. Every item below is still open, and nothing has been moved to "Decided". No data that depends on an open item has been changed. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+These are recommendations only, except where the table says decided. No data that depends on an open item has been changed. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Needs Jason |
 |---|---|---|---|
-| R1 | O'Keeffe: core | high | yes |
-| R2 | Wrights: exclude both, as v7.1 did | medium-high | yes |
-| R3 | "Brian Maynard Smith": display fix to John Maynard Smith | high | yes |
-| R4 | Confirm all four merges | high | yes |
-| R5 | Confirm the three pairs are different people | high | yes |
+| R1 | O'Keeffe: core | high | decided 2026-10-01 |
+| R2 | Wrights: exclude both, as v7.1 did | medium-high | decided 2026-10-01 |
+| R3 | "Brian Maynard Smith": display fix to John Maynard Smith | high | decided 2026-10-01 |
+| R4 | Confirm all four merges | high | decided 2026-10-01 |
+| R5 | Confirm the three pairs are different people | high | decided 2026-10-01 |
 | R6 | Approve the F ≥ 3 plan; all 9 core (Vint Cerf is the judgment call) | high (count), medium (Cerf) | yes |
 | R7 | Accept the keyword rules plus six small rule fixes; v7 mapping not on disk | medium-high | yes |
 | R8 | Approve the id freeze rule as written | high | yes |
@@ -26,93 +26,21 @@ These are recommendations only. Every item below is still open, and nothing has 
 | P4 | Axis test: A_locus ≤ 1 and B_cause (in the work) ≥ 3, both at certainty ≥ 0.7 | medium | yes |
 | P5 | Approve: only a named human sets "reviewed" | high | yes |
 | S1 | Approve "Interventionist personal theism" | medium-high | yes |
-| S2 | Use the full original label, found in V6: "Pantheism (Spinozistic/naturalistic 'God = Universe')" | high | yes |
+| S2 | Use the full original label, found in V6: "Pantheism (Spinozistic/naturalistic 'God = Universe')" | high | decided 2026-10-01 |
 | S3 | Freeze v7.1 scores as baseline; open revised scoring after the first pool, with cites per axis and two scorers | medium | yes |
 | S4 | Keep the 77 codes closed for v8; batch any new codes into one schema bump | medium-high | yes |
 | S5 | Change both to "neighbor (easily confused)" | medium | yes |
 | S6 | Two-part PANT test; host tradition or PANENT for Advaita/Kabbalah; STOIC for Stoics | medium | yes |
 
-**Ready to approve in one go** (factual, backed by sources or v7.1 records): R1, R2, R3, R4, R5, S2. Each needs only a small input change (`curated_aliases.csv`, a status input for R1, or `display_label` for S2) and a rebuild, as listed under each item.
+**Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. They are now under "Decided" at the bottom, with what changed.
 
-The rest are judgment calls. R8 and P5 are low-risk policy approvals. R6, R7, P1–P4, S1 and S3–S6 need Jason's view.
+The other 13 are still open. They are judgment calls. R8 and P5 are low-risk policy approvals. R6, R7, P1–P4, S1 and S3–S6 need Jason's view.
 
 ## Roster
 
-### R1. Georgia O'Keeffe's status
-v7.1 left her status blank. Its headline count says 432 core, but only 431 rows are tagged core, which suggests she was meant to be core. v8 marks her `needs status (blank in v7)` and assumes nothing.
-**Options:** core / provisional / review.
-
-**Recommendation (v8 agent, 2026-10-01):** **core.** Confidence: high.
-
-- The v7.1 headline is "Status: core / provisional / review" = "432 / 33 / 17" (data book, Headline counts; in `data/sources/v7_1/neuresthetics_v7_combined.json`). 432 + 33 + 17 = 482, the whole roster. The roster table itself has 431 core, 33 provisional, 17 review and one blank, which is O'Keeffe (rank 57: `["57", "Georgia O'Keeffe", "art", "4", "core (3–4)", "", "Georgia O-Keeffe (4)"]`). The headline only adds up if she is core. Note that "core (3–4)" in that row is the frequency band, not the status.
-- No v7 or V6 list gives her any other status. The definition-pass notes table that follows the roster (19 review notes, 2 exclusions, merges) does not name her. The Word data book has the same blank. In V6 she appears in the raw lists, the aggregate (`V6_(history)/V6/GeniiLists/geniiAggregateSortFreq.csv`, F 4), `geniiTotalByAlpha.csv` and the name list in the V6 paper. None of these has a status column.
-- A likely cause: she is the only name in the v7 roster with an apostrophe. No raw list uses an apostrophe ("O-Keeffe", "OKeeffe"), because the generation prompt said names must contain no `'` (`V6_(history)/V6/geniusDefinition.json`, csv_compilation_guidelines). The data book says statuses "from the definition pass" were joined onto the master list. A blank on the one name whose spelling changed at display time looks like a failed join. This is an inference, not a record.
-- v7.1's status rules don't point anywhere else. She is not a contemporary (1887–1986, https://www.britannica.com/biography/Georgia-OKeeffe), and there is no "paradigm-shift bar is arguable" note.
-- v8: F 4 (DeepSeek, Gemini, GPT, Grok; Claude does not list her), rank 99, so she is in the F ≥ 3 primary analysis. Raw strings: "Georgia O-Keeffe" (DeepSeek, Gemini, Grok), "Georgia-OKeeffe" (GPT), "O-Keeffe-Georgia" (Gemini, second listing).
-- If approved: add a status input to `rebuild_roster.py` (for example a small `status_overrides.csv`), since statuses are currently only carried from v7. Not done here.
-
-### R2. Wilbur and Orville Wright
-v7.1 excluded "Wright Brothers" as a collective. In the raw lists, Claude names them as two individuals under a "Wright Brothers - " prefix, and Gemini also lists them individually. v8 keeps them as two people with status `new — needs status`.
-**Options:** keep both as individuals; exclude both as a collective; keep one record for joint credit (not supported by the schema).
-
-**Recommendation (v8 agent, 2026-10-01):** **exclude both, as v7.1 did.** Confidence: medium-high.
-
-- v7.1 rule: "Excluded: mastery without originality, transient fame, collectives, non-persons" (two-lane paper, Genius). The data book's notes table has `["exclude", "Wright Brothers", "invention", "Collective/team — excluded by operational definition"]`.
-- The prompt the five models were given names this exact case: "Groups or collaborative entities: Achievements attributed to collectives rather than individual contributions (e.g., bands or teams like the Beatles or the Wright Brothers)" (`V6_(history)/V6/geniusDefinition.json`, exclusion_criteria).
-- How the raw lists name them: DeepSeek "Wright Brothers"; GPT "Wright-Brothers"; Claude "Wright Brothers - Wilbur Wright" and "Wright Brothers - Orville Wright"; Gemini "Orville Wright", "Wilbur Wright", "Wright-Orville", "Wright-Wilbur"; Grok does not list them. So 4 of 5 models listed them, and 3 of those 4 framed them as "the Wright Brothers".
-- The airplane is credited to the pair, and nothing on the lists separates one brother's contribution from the other's. That is the case the rule was written for. Pairs with separable work (Marie and Pierre Curie) are a different case and are already listed individually.
-- Effect: none on the primary analysis today. Both are F 2. If the collective rows were credited to each brother, each would be F 4 and would enter the F ≥ 3 analysis, so the choice matters if the rule changes later.
-- If approved: add `Orville Wright` and `Wilbur Wright` as `exclude` rows in `curated_aliases.csv` (replacing the `separate` row), rebuild, and retire the ids `wright-orville` and `wright-wilbur` (no person files, so not frozen).
-
-### R3. "Brian Maynard Smith"
-Listed by GPT only. Probably means John Maynard Smith, the evolutionary biologist. Kept as listed and flagged.
-**Options:** treat as John Maynard Smith (add a `display_fix` or merge if he appears elsewhere); exclude as a model error; keep as is.
-
-**Recommendation (v8 agent, 2026-10-01):** **treat as John Maynard Smith with a `display_fix`.** Confidence: high that this is who GPT meant; medium on whether to correct a model's error rather than exclude it.
-
-- John Maynard Smith (1920–2004), British evolutionary biologist, evolutionarily stable strategies (https://www.nature.com/articles/429258a; https://www.kyotoprize.org/en/laureates/john_maynard_smith/).
-- He is on none of the five raw lists. "Maynard" appears only as "John Maynard Keynes" (Claude, DeepSeek, GPT, Gemini) and as GPT's "Brian-Maynard-Smith" (field `evolutionary-biology`). So a merge has no target. Only a display fix is possible.
-- A web search found no notable "Brian Maynard Smith". The only hits were private individuals in company registers and a lost-contact notice.
-- GPT's field matches John Maynard Smith exactly, and the curated file already corrects model misspellings with `display_fix` (for example "Gabriel Mistral" → "Gabriela Mistral", "Albert Hofman" → "Albert Hofmann").
-- Effect: F stays 1 (GPT only), so this doesn't touch the primary analysis. The raw string stays in `alias_map.csv`.
-- If approved: change the `flag` row for `Brian-Maynard-Smith` in `curated_aliases.csv` to `display_fix` → `John Maynard Smith`, with the reason "GPT wrote 'Brian'; field matches John Maynard Smith; no Brian Maynard Smith found". Then rebuild and re-run `assign_ids.py`. The unused id `smith-brian-maynard` would be retired. "Maynard Smith" is a compound family name, so the new id needs an `id_overrides.csv` row (`maynard-smith-john`). No person file exists, so under R8 the id isn't frozen.
-
-### R4. Merges to confirm
-These are in `curated_aliases.csv` with confidence `high`. Each one decides that two names are one person, so they should get a human look:
-- Bob Kahn → Robert Kahn
-- Elizabeth Anscombe → G.E.M. Anscombe
-- Benedict de Spinoza → Baruch Spinoza
-- Buddha → Siddhartha Gautama
-
-**Recommendation (v8 agent, 2026-10-01):** **confirm all four merges.** Confidence: high.
-
-| merge | how the raw lists name them | effect on F | source |
-|---|---|---|---|
-| Bob Kahn → Robert Kahn | Claude "Robert Kahn"; DeepSeek "Bob Kahn" (both computer science) | 1 + 1 → 2 | Britannica, "Robert Kahn": "one of the principal architects, with Vinton Cerf, of the Internet", 2004 Turing Award for TCP/IP (https://www.britannica.com/biography/Robert-Elliot-Kahn). ACM lists him as "Robert E Kahn" (https://amturing.acm.org/award_winners/kahn_4598637.cfm). |
-| Elizabeth Anscombe / G.E.M. Anscombe | DeepSeek only, listed twice: "Elizabeth Anscombe" and "G.E.M. Anscombe" | stays 1 (same-model duplicate removed) | SEP, "Gertrude Elizabeth Margaret Anscombe", which calls her "G. E. M. Anscombe" (https://plato.stanford.edu/entries/anscombe/). |
-| Benedict de Spinoza → Baruch Spinoza | Claude, DeepSeek, Gemini, GPT, Grok all "Baruch Spinoza" (with hyphen and order variants); DeepSeek also "Benedict de Spinoza" | stays 5 (same-model duplicate removed) | SEP: "Bento (in Hebrew, Baruch; in Latin, Benedictus) Spinoza" (https://plato.stanford.edu/entries/spinoza/). Britannica titles him "Benedict de Spinoza" (https://www.britannica.com/biography/Benedict-de-Spinoza). |
-| Buddha → Siddhartha Gautama | Claude "Buddha"; Gemini "Siddhartha Gautama-Buddha"; DeepSeek and Grok "Siddhartha Gautama" | 3 → 4 (adds Claude) | Britannica, "Buddha": clan name Gautama, personal name Siddhartha (https://www.britannica.com/biography/Buddha-founder-of-Buddhism). |
-
-- Only two of the four change a count: Kahn (1 → 2) and Buddha (3 → 4). Buddha is in the F ≥ 3 analysis either way.
-- One small thing: the merge keeps "Elizabeth Anscombe" as the display name (v8 canonical-name rule 3), while the curated row lists "G.E.M. Anscombe" as the target. Both name the same person. If Jason prefers the form most of the literature uses, add a `display_fix` to "G.E.M. Anscombe". This is cosmetic.
-- No data change is needed if approved. Mark the four rows as confirmed (for example in the `reason` column).
-
-### R5. Similarity pairs left separate
-The automatic scan flagged these pairs. They are left as different people, which looks right, but a human should confirm:
-- Ken Thompson / E.P. Thompson
-- Edward Said / Edward Sapir
-- Marc Bloch / Maurice Bloch
-
-**Recommendation (v8 agent, 2026-10-01):** **confirm: all three pairs are different people.** Confidence: high.
-
-- Ken Thompson (born 1943): American computer scientist, co-creator of Unix, 1983 Turing Award (https://www.britannica.com/biography/Kenneth-Lane-Thompson). E. P. Thompson (1924–1993): British social historian, *The Making of the English Working Class* (1963) (https://www.britannica.com/biography/E-P-Thompson).
-- Edward Said (1935–2003): Palestinian American literary critic (https://www.britannica.com/biography/Edward-Said). Edward Sapir (1884–1939): American linguist and anthropologist (https://www.britannica.com/biography/Edward-Sapir).
-- Marc Bloch (1886–1944): French medieval historian, killed by the Germans in 1944 (https://www.britannica.com/biography/Marc-Bloch). Maurice Bloch (born 1939): British anthropologist, LSE emeritus (https://www.lse.ac.uk/people/maurice-bloch).
-- No data change needed. They are already `separate` in effect (never merged).
-
-### R6. Statuses for the 900 new names
-v8 adds 900 people with status `new — needs status`.
-**Proposal:** assign a status now only to the new names with F ≥ 3, because only they enter the primary analysis. There are 9: Georg Wilhelm Friedrich Hegel (F 4), Duns Scotus, Edward O. Wilson, John Nash, Jorge Luis Borges, Laozi, Ludwig Mies van der Rohe, Paul Cézanne and Vint Cerf (F 3). The other 891 (F 1–2) would stay `new — needs status` until sensitivity analyses need them.
+### R6. Statuses for the 898 new names
+v8 adds 898 people with status `new — needs status` (900 before R2 excluded the two Wrights on 2026-10-01).
+**Proposal:** assign a status now only to the new names with F ≥ 3, because only they enter the primary analysis. There are 9: Georg Wilhelm Friedrich Hegel (F 4), Duns Scotus, Edward O. Wilson, John Nash, Jorge Luis Borges, Laozi, Ludwig Mies van der Rohe, Paul Cézanne and Vint Cerf (F 3). The other 889 (F 1–2) would stay `new — needs status` until sensitivity analyses need them.
 
 **Recommendation (v8 agent, 2026-10-01):** **approve the plan (status only for the F ≥ 3 new names): 9 core, with Vint Cerf the one judgment call.** Confidence: high on the count, high on 8 statuses, medium on Cerf.
 
@@ -251,12 +179,6 @@ The v7.1 label is "Classical Theism (personal, interventionist Creator God)". It
 
 **Recommendation (v8 agent, 2026-10-01):** **approve "Interventionist personal theism" as the display label.** Confidence: medium-high. The full original label is confirmed in V6: "Classical Theism (personal, interventionist Creator God)" (`V6_(history)/V6/beliefCoherence.json`, CLTHEI entry). The rubric scores there match the v7.1 data book for all 77 systems, so it is the same source table. The v7.1 rule itself separates the two codes ("CLASS_THEISM … is not CLTHEI (popular interventionist personal God)"), and the proposed label uses the rule's own words. The code and `v7_1_label` stay unchanged.
 
-### S2. PANT display label
-The v7.1 label is cut off mid-word in both the data book table and the Word file: "Pantheism (Spinozistic/naturalistic 'God = Univers…".
-**Proposed display label:** "Pantheism (Spinozistic/naturalistic)", trimmed at the last whole phrase. If the full original label exists elsewhere, use it instead.
-
-**Recommendation (v8 agent, 2026-10-01):** **use the full original label: "Pantheism (Spinozistic/naturalistic 'God = Universe')".** Confidence: high. It's in `V6_(history)/V6/beliefCoherence.json` (PANT entry, `belief_system`) and in the V6 paper's table (`V6: The Impact of Ideology on Intelligence….md`, line 390). This is the source of the v7.1 table. All 77 systems' L/P/E/V/X scores in the V6 JSON match the v7.1 data book exactly, and every truncated v7.1 label is a prefix of its V6 label. The truncation ("Univers…") happened in v7.1. The Word data book and the combined JSON are both truncated, and nothing in the v7 repo has the full text. The same V6 file also gives the full form of the other labels that v7.1 cut off (ATHE, CLASS_THEISM, PANENT, KEMET, ABORIG, MORMON, CLTHEI), if those are ever needed. If approved: set PANT's `display_label` to the full label and `label_status` to approved, and note the V6 source. Not changed here.
-
 ### S3. Expanding the rubric
 The data book defines L, P, E, V and X (see DATA_DICTIONARY §4). `revised_rubric` exists in every file with status `not started`.
 **Decide:** whether and when to open revised scoring, who scores, and whether revised scores need cites per axis (the schema allows it).
@@ -287,4 +209,98 @@ Schema 1.0 allows only the 77 v7.1 codes. The validator rejects others. Adding a
 
 ## Decided
 
-(none yet)
+### R1. Georgia O'Keeffe's status
+**Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
+
+The original question and the recommendation are kept below for the record.
+v7.1 left her status blank. Its headline count says 432 core, but only 431 rows are tagged core, which suggests she was meant to be core. v8 marks her `needs status (blank in v7)` and assumes nothing.
+**Options:** core / provisional / review.
+
+**Recommendation (v8 agent, 2026-10-01):** **core.** Confidence: high.
+
+- The v7.1 headline is "Status: core / provisional / review" = "432 / 33 / 17" (data book, Headline counts; in `data/sources/v7_1/neuresthetics_v7_combined.json`). 432 + 33 + 17 = 482, the whole roster. The roster table itself has 431 core, 33 provisional, 17 review and one blank, which is O'Keeffe (rank 57: `["57", "Georgia O'Keeffe", "art", "4", "core (3–4)", "", "Georgia O-Keeffe (4)"]`). The headline only adds up if she is core. Note that "core (3–4)" in that row is the frequency band, not the status.
+- No v7 or V6 list gives her any other status. The definition-pass notes table that follows the roster (19 review notes, 2 exclusions, merges) does not name her. The Word data book has the same blank. In V6 she appears in the raw lists, the aggregate (`V6_(history)/V6/GeniiLists/geniiAggregateSortFreq.csv`, F 4), `geniiTotalByAlpha.csv` and the name list in the V6 paper. None of these has a status column.
+- A likely cause: she is the only name in the v7 roster with an apostrophe. No raw list uses an apostrophe ("O-Keeffe", "OKeeffe"), because the generation prompt said names must contain no `'` (`V6_(history)/V6/geniusDefinition.json`, csv_compilation_guidelines). The data book says statuses "from the definition pass" were joined onto the master list. A blank on the one name whose spelling changed at display time looks like a failed join. This is an inference, not a record.
+- v7.1's status rules don't point anywhere else. She is not a contemporary (1887–1986, https://www.britannica.com/biography/Georgia-OKeeffe), and there is no "paradigm-shift bar is arguable" note.
+- v8: F 4 (DeepSeek, Gemini, GPT, Grok; Claude does not list her), rank 99, so she is in the F ≥ 3 primary analysis. Raw strings: "Georgia O-Keeffe" (DeepSeek, Gemini, Grok), "Georgia-OKeeffe" (GPT), "O-Keeffe-Georgia" (Gemini, second listing).
+- If approved: add a status input to `rebuild_roster.py` (for example a small `status_overrides.csv`), since statuses are currently only carried from v7. Not done here.
+
+### R2. Wilbur and Orville Wright
+**Decided 2026-10-01 by Jason (approved as recommended):** Orville and Wilbur Wright are excluded as part of the collective, as in v7.1. Two `exclude` rows in `curated_aliases.csv` (the old `separate` row is removed); the rebuild lists them under exclusions in `merge_log.csv` and the v7→v8 diff. Ids `wright-orville` and `wright-wilbur` are retired.
+
+The original question and the recommendation are kept below for the record.
+v7.1 excluded "Wright Brothers" as a collective. In the raw lists, Claude names them as two individuals under a "Wright Brothers - " prefix, and Gemini also lists them individually. v8 keeps them as two people with status `new — needs status`.
+**Options:** keep both as individuals; exclude both as a collective; keep one record for joint credit (not supported by the schema).
+
+**Recommendation (v8 agent, 2026-10-01):** **exclude both, as v7.1 did.** Confidence: medium-high.
+
+- v7.1 rule: "Excluded: mastery without originality, transient fame, collectives, non-persons" (two-lane paper, Genius). The data book's notes table has `["exclude", "Wright Brothers", "invention", "Collective/team — excluded by operational definition"]`.
+- The prompt the five models were given names this exact case: "Groups or collaborative entities: Achievements attributed to collectives rather than individual contributions (e.g., bands or teams like the Beatles or the Wright Brothers)" (`V6_(history)/V6/geniusDefinition.json`, exclusion_criteria).
+- How the raw lists name them: DeepSeek "Wright Brothers"; GPT "Wright-Brothers"; Claude "Wright Brothers - Wilbur Wright" and "Wright Brothers - Orville Wright"; Gemini "Orville Wright", "Wilbur Wright", "Wright-Orville", "Wright-Wilbur"; Grok does not list them. So 4 of 5 models listed them, and 3 of those 4 framed them as "the Wright Brothers".
+- The airplane is credited to the pair, and nothing on the lists separates one brother's contribution from the other's. That is the case the rule was written for. Pairs with separable work (Marie and Pierre Curie) are a different case and are already listed individually.
+- Effect: none on the primary analysis today. Both are F 2. If the collective rows were credited to each brother, each would be F 4 and would enter the F ≥ 3 analysis, so the choice matters if the rule changes later.
+- If approved: add `Orville Wright` and `Wilbur Wright` as `exclude` rows in `curated_aliases.csv` (replacing the `separate` row), rebuild, and retire the ids `wright-orville` and `wright-wilbur` (no person files, so not frozen).
+
+### R3. "Brian Maynard Smith"
+**Decided 2026-10-01 by Jason (approved as recommended):** GPT's "Brian-Maynard-Smith" displays as John Maynard Smith. The `flag` row became a `display_fix` row; the raw string stays in `alias_map.csv` and `aliases_merged`. Id `smith-brian-maynard` is retired and `maynard-smith-john` added through `id_overrides.csv`.
+
+The original question and the recommendation are kept below for the record.
+Listed by GPT only. Probably means John Maynard Smith, the evolutionary biologist. Kept as listed and flagged.
+**Options:** treat as John Maynard Smith (add a `display_fix` or merge if he appears elsewhere); exclude as a model error; keep as is.
+
+**Recommendation (v8 agent, 2026-10-01):** **treat as John Maynard Smith with a `display_fix`.** Confidence: high that this is who GPT meant; medium on whether to correct a model's error rather than exclude it.
+
+- John Maynard Smith (1920–2004), British evolutionary biologist, evolutionarily stable strategies (https://www.nature.com/articles/429258a; https://www.kyotoprize.org/en/laureates/john_maynard_smith/).
+- He is on none of the five raw lists. "Maynard" appears only as "John Maynard Keynes" (Claude, DeepSeek, GPT, Gemini) and as GPT's "Brian-Maynard-Smith" (field `evolutionary-biology`). So a merge has no target. Only a display fix is possible.
+- A web search found no notable "Brian Maynard Smith". The only hits were private individuals in company registers and a lost-contact notice.
+- GPT's field matches John Maynard Smith exactly, and the curated file already corrects model misspellings with `display_fix` (for example "Gabriel Mistral" → "Gabriela Mistral", "Albert Hofman" → "Albert Hofmann").
+- Effect: F stays 1 (GPT only), so this doesn't touch the primary analysis. The raw string stays in `alias_map.csv`.
+- If approved: change the `flag` row for `Brian-Maynard-Smith` in `curated_aliases.csv` to `display_fix` → `John Maynard Smith`, with the reason "GPT wrote 'Brian'; field matches John Maynard Smith; no Brian Maynard Smith found". Then rebuild and re-run `assign_ids.py`. The unused id `smith-brian-maynard` would be retired. "Maynard Smith" is a compound family name, so the new id needs an `id_overrides.csv` row (`maynard-smith-john`). No person file exists, so under R8 the id isn't frozen.
+
+### R4. Merges to confirm
+**Decided 2026-10-01 by Jason (approved as recommended):** The four merges are confirmed. Their rows in `curated_aliases.csv` now have confidence `confirmed`, and the reason names the date and R4.
+
+The original question and the recommendation are kept below for the record.
+These are in `curated_aliases.csv` with confidence `high`. Each one decides that two names are one person, so they should get a human look:
+- Bob Kahn → Robert Kahn
+- Elizabeth Anscombe → G.E.M. Anscombe
+- Benedict de Spinoza → Baruch Spinoza
+- Buddha → Siddhartha Gautama
+
+**Recommendation (v8 agent, 2026-10-01):** **confirm all four merges.** Confidence: high.
+
+| merge | how the raw lists name them | effect on F | source |
+|---|---|---|---|
+| Bob Kahn → Robert Kahn | Claude "Robert Kahn"; DeepSeek "Bob Kahn" (both computer science) | 1 + 1 → 2 | Britannica, "Robert Kahn": "one of the principal architects, with Vinton Cerf, of the Internet", 2004 Turing Award for TCP/IP (https://www.britannica.com/biography/Robert-Elliot-Kahn). ACM lists him as "Robert E Kahn" (https://amturing.acm.org/award_winners/kahn_4598637.cfm). |
+| Elizabeth Anscombe / G.E.M. Anscombe | DeepSeek only, listed twice: "Elizabeth Anscombe" and "G.E.M. Anscombe" | stays 1 (same-model duplicate removed) | SEP, "Gertrude Elizabeth Margaret Anscombe", which calls her "G. E. M. Anscombe" (https://plato.stanford.edu/entries/anscombe/). |
+| Benedict de Spinoza → Baruch Spinoza | Claude, DeepSeek, Gemini, GPT, Grok all "Baruch Spinoza" (with hyphen and order variants); DeepSeek also "Benedict de Spinoza" | stays 5 (same-model duplicate removed) | SEP: "Bento (in Hebrew, Baruch; in Latin, Benedictus) Spinoza" (https://plato.stanford.edu/entries/spinoza/). Britannica titles him "Benedict de Spinoza" (https://www.britannica.com/biography/Benedict-de-Spinoza). |
+| Buddha → Siddhartha Gautama | Claude "Buddha"; Gemini "Siddhartha Gautama-Buddha"; DeepSeek and Grok "Siddhartha Gautama" | 3 → 4 (adds Claude) | Britannica, "Buddha": clan name Gautama, personal name Siddhartha (https://www.britannica.com/biography/Buddha-founder-of-Buddhism). |
+
+- Only two of the four change a count: Kahn (1 → 2) and Buddha (3 → 4). Buddha is in the F ≥ 3 analysis either way.
+- One small thing: the merge keeps "Elizabeth Anscombe" as the display name (v8 canonical-name rule 3), while the curated row lists "G.E.M. Anscombe" as the target. Both name the same person. If Jason prefers the form most of the literature uses, add a `display_fix` to "G.E.M. Anscombe". This is cosmetic.
+- No data change is needed if approved. Mark the four rows as confirmed (for example in the `reason` column).
+
+### R5. Similarity pairs left separate
+**Decided 2026-10-01 by Jason (approved as recommended):** The three pairs are different people. Each is a `separate` row with confidence `confirmed`, so the similarity scan no longer lists them.
+
+The original question and the recommendation are kept below for the record.
+The automatic scan flagged these pairs. They are left as different people, which looks right, but a human should confirm:
+- Ken Thompson / E.P. Thompson
+- Edward Said / Edward Sapir
+- Marc Bloch / Maurice Bloch
+
+**Recommendation (v8 agent, 2026-10-01):** **confirm: all three pairs are different people.** Confidence: high.
+
+- Ken Thompson (born 1943): American computer scientist, co-creator of Unix, 1983 Turing Award (https://www.britannica.com/biography/Kenneth-Lane-Thompson). E. P. Thompson (1924–1993): British social historian, *The Making of the English Working Class* (1963) (https://www.britannica.com/biography/E-P-Thompson).
+- Edward Said (1935–2003): Palestinian American literary critic (https://www.britannica.com/biography/Edward-Said). Edward Sapir (1884–1939): American linguist and anthropologist (https://www.britannica.com/biography/Edward-Sapir).
+- Marc Bloch (1886–1944): French medieval historian, killed by the Germans in 1944 (https://www.britannica.com/biography/Marc-Bloch). Maurice Bloch (born 1939): British anthropologist, LSE emeritus (https://www.lse.ac.uk/people/maurice-bloch).
+- No data change needed. They are already `separate` in effect (never merged).
+
+### S2. PANT display label
+**Decided 2026-10-01 by Jason (approved as recommended):** PANT `display_label` is "Pantheism (Spinozistic/naturalistic 'God = Universe')", `label_status` `approved`, source `V6_(history)/V6/beliefCoherence.json` (v7 repo). `v7_1_label` is unchanged.
+
+The original question and the recommendation are kept below for the record.
+The v7.1 label is cut off mid-word in both the data book table and the Word file: "Pantheism (Spinozistic/naturalistic 'God = Univers…".
+**Proposed display label:** "Pantheism (Spinozistic/naturalistic)", trimmed at the last whole phrase. If the full original label exists elsewhere, use it instead.
+
+**Recommendation (v8 agent, 2026-10-01):** **use the full original label: "Pantheism (Spinozistic/naturalistic 'God = Universe')".** Confidence: high. It's in `V6_(history)/V6/beliefCoherence.json` (PANT entry, `belief_system`) and in the V6 paper's table (`V6: The Impact of Ideology on Intelligence….md`, line 390). This is the source of the v7.1 table. All 77 systems' L/P/E/V/X scores in the V6 JSON match the v7.1 data book exactly, and every truncated v7.1 label is a prefix of its V6 label. The truncation ("Univers…") happened in v7.1. The Word data book and the combined JSON are both truncated, and nothing in the v7 repo has the full text. The same V6 file also gives the full form of the other labels that v7.1 cut off (ATHE, CLASS_THEISM, PANENT, KEMET, ABORIG, MORMON, CLTHEI), if those are ever needed. If approved: set PANT's `display_label` to the full label and `label_status` to approved, and note the V6 source. Not changed here.

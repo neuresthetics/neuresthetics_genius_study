@@ -8,7 +8,7 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 
 v8 starts by fixing the data in v7.1:
 
-- The genius roster is rebuilt from the five original model lists, which v7.1 didn't fully use. It now has 1,382 people, up from 482.
+- The genius roster is rebuilt from the five original model lists, which v7.1 didn't fully use. It now has 1,380 people, up from 482.
 - Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
 - Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
 - The two belief systems that were both labeled "Classical Theism" get separate display names (proposed, pending sign-off).

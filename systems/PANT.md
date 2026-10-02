@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.0"
-  record_version: 2
+  record_version: 3
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -11,12 +11,13 @@ record:
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example: sourced fields filled from SEP entries; LIO axes scored on the proposed 0–4 scale; revised rubric left for Jason. Not reviewed."}
+    - {date: 2026-10-01, by: "Grok Bot", summary: "Display label set to the full original V6 label, approved by Jason 2026-10-01 (OPEN_DECISIONS S2). Source: V6_(history)/V6/beliefCoherence.json, PANT entry, field belief_system (v7 repo). v7_1_label unchanged."}
 identity:
   id: PANT
   v7_1_number: 6
   v7_1_label: "Pantheism (Spinozistic/naturalistic 'God = Univers…"
-  display_label: "Pantheism (Spinozistic/naturalistic)"
-  label_status: "proposed — pending Jason's OK"
+  display_label: "Pantheism (Spinozistic/naturalistic 'God = Universe')"
+  label_status: "approved"
   aliases: ["Deus sive Natura", "Spinozism (core form)"]
 classification:
   kind: {value: "family of positions", certainty: 1.0, cites: [{source: S1, locator: "introduction"}], how_known: "SEP: pantheism 'should not be thought of as a single codifiable position' but as 'a diverse family of distinct doctrines'. The study's code covers the Spinozistic core of that family (see coding_guidance)."}
@@ -105,10 +106,9 @@ coding_guidance:
     - {code: PANPSY, relation: "neighbor (easily confused)"}
 review:
   data_quality_flags:
-    - "The v7.1 label is cut off mid-word in both the data book table and the Word file; the proposed label trims it at the last whole phrase."
+    - "The v7.1 label is cut off mid-word in both the data book table and the Word file. The display label is the full original from V6_(history)/V6/beliefCoherence.json (PANT entry, belief_system), approved 2026-10-01 (OPEN_DECISIONS S2). v7_1_label is kept verbatim, truncated."
     - "v7.1's PANENT label includes 'some Kabbalah/Advaita forms', while SEP lists Advaita Vedanta and some Kabbalah as pantheist. Coders need a rule for which code applies."
   open_questions:
-    - "Approve the proposed display label 'Pantheism (Spinozistic/naturalistic)'."
     - "Does the modern scientific/naturalistic variant count as PANT (the circle) or as ATHE with reverent language? The v7.1 rule says 'not atheism-plus-poetry'; a test is needed."
     - "Should Stoic pantheism be coded STOIC or PANT for people who held it?"
     - "S2 (§2.1) discusses whether identifying God with Nature makes Spinoza a pantheist or an atheist. The PANT/ATHE boundary for Spinoza himself is a scholarly dispute, not just a coding issue."
@@ -135,9 +135,9 @@ sources:
     used_for: [origins, metaphysics, lio_axes, epistemology, science, schools_and_variants]
 ---
 
-# Pantheism (Spinozistic/naturalistic) (PANT)
+# Pantheism (Spinozistic/naturalistic 'God = Universe') (PANT)
 
-> Status: example — unreviewed. This file shows the system-record structure. Sourced fields are filled from two Stanford Encyclopedia of Philosophy entries. The LIO axes use the proposed 0–4 scale. The revised rubric, adherents and community form are TODO. The display label is a proposal.
+> Status: example — unreviewed. This file shows the system-record structure. Sourced fields are filled from two Stanford Encyclopedia of Philosophy entries. The LIO axes use the proposed 0–4 scale. The revised rubric, adherents and community form are TODO. The display label is the full V6 label, approved 2026-10-01.
 
 ## Summary
 
@@ -171,7 +171,6 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Approve the proposed display label.
 - Draw the line between modern naturalistic pantheism and ATHE (the circle versus exemption-refusal alone).
 - Advaita and Kabbalah: PANT or PANENT?
 
@@ -179,3 +178,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-01: filled from SEP "Pantheism" (Mander, rev. 2023) and SEP "Baruch Spinoza" (Nadler, rev. 2023). Did not consult primary texts directly. Spinoza quotations are as given in S2. Adherent numbers and organised community are left TODO.
+- 2026-10-01: display label set to the full original label found in V6 (`V6_(history)/V6/beliefCoherence.json`, PANT entry, `belief_system`, in the v7 repo). Approved by Jason 2026-10-01 (OPEN_DECISIONS S2). `v7_1_label` unchanged.

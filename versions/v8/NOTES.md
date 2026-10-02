@@ -4,7 +4,7 @@ v8 is in progress. This file tracks what v8 consists of and what is still to do.
 
 ## Done
 
-- **Roster rebuilt** from the five raw model lists: 1,382 people, F = number of distinct models.
+- **Roster rebuilt** from the five raw model lists: 1,380 people, F = number of distinct models.
   - Script: `scripts/rebuild_roster.py`. `--check` reproduces the files byte for byte.
   - Diff against v7.1: [`roster_diff_v7_to_v8.md`](roster_diff_v7_to_v8.md).
 - **Person ids** for every roster name (`data/roster/person_ids.csv`), with sharded file paths.
@@ -15,7 +15,7 @@ v8 is in progress. This file tracks what v8 consists of and what is still to do.
 
 ## Next
 
-1. Decisions in OPEN_DECISIONS, especially the LIO scale (P1), mid-basin definition (P4), statuses for new names (R6) and labels (S1, S2).
+1. Decisions in OPEN_DECISIONS, especially the LIO scale (P1), mid-basin definition (P4), statuses for new names (R6) and the CLTHEI label (S1). R1–R5 and S2 were decided on 2026-10-01.
 2. First pool records, one per run: Maxwell, Newton, Aquinas, Ibn Sina, Gödel.
 3. Human review of the Faraday and PANT examples.
 4. Systems most needed for the first pool: CLASS_THEISM, CLTHEI, CHRIST, ISLAM, JUDA, ATHE, AGNOS.

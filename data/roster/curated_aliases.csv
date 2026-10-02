@@ -10,7 +10,7 @@ Razi,Al-Razi,merge,high,'al-' prefix dropped
 Moses Maimonides,Maimonides,merge,high,given name added
 Laozi,Lao Tzu,merge,high,pinyin vs Wade-Giles romanization
 Li Po,Li Bai,merge,high,Wade-Giles vs pinyin romanization
-Buddha,Siddhartha Gautama,merge,high,title vs personal name of the same founder
+Buddha,Siddhartha Gautama,merge,confirmed,title vs personal name of the same founder; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Siddhartha Gautama-Buddha,Siddhartha Gautama,merge,high,name plus title in one string
 Michelangelo Buonarroti,Michelangelo,merge,high,surname added
 Rembrandt van Rijn,Rembrandt,merge,high,surname added
@@ -22,10 +22,10 @@ Henrietta Leavitt,Henrietta Swan Leavitt,merge,high,middle name dropped
 Robert Oppenheimer,J. Robert Oppenheimer,merge,high,initial dropped
 G-W-F Hegel,Georg Wilhelm Friedrich Hegel,merge,high,initials vs full given names
 E.O. Wilson,Edward O- Wilson,merge,high,initials vs given name (both biology; distinct from J. Tuzo Wilson)
-Benedict de Spinoza,Baruch Spinoza,merge,high,Latin vs Hebrew given name of the same philosopher
-Elizabeth Anscombe,G.E.M. Anscombe,merge,high,initials vs given name (same model lists both)
+Benedict de Spinoza,Baruch Spinoza,merge,confirmed,Latin vs Hebrew given name of the same philosopher; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
+Elizabeth Anscombe,G.E.M. Anscombe,merge,confirmed,initials vs given name (same model lists both); human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Ben-Gurion,David-Ben-Gurion,merge,high,given name dropped (same model lists both)
-Bob Kahn,Robert Kahn,merge,high,nickname vs given name (both computer science; internet co-inventor)
+Bob Kahn,Robert Kahn,merge,confirmed,nickname vs given name (both computer science; internet co-inventor); human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Mies van der Rohe,Ludwig Mies van der Rohe,merge,high,given name dropped
 John Duns Scotus,Duns Scotus,merge,high,given name added
 Lady Murasaki Shikibu,Murasaki Shikibu,merge,high,honorific added
@@ -33,6 +33,8 @@ Sofia Kovalevskaya,Sofya Kovalevskaya,merge,high,transliteration variant
 Andrey Kolmogorov,Andrei Kolmogorov,merge,high,transliteration variant
 Wright Brothers,,exclude,high,collective/team - excluded by operational definition (same as v7)
 Anderson localization,,exclude,high,not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
+Orville Wright,,exclude,confirmed,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+Wilbur Wright,,exclude,confirmed,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 George Washington Carver,George Washington,separate,high,different people (name-subset trap)
 Muhammad,Muhammad ibn Musa al-Khwarizmi,separate,high,different people (Gemini 'Muhammad' is the prophet)
 Mansa Musa,Muhammad ibn Musa al-Khwarizmi,separate,high,different people
@@ -43,7 +45,6 @@ Mary Leakey,Louis Leakey,separate,high,spouses - different people
 William Herschel,Caroline Herschel,separate,high,siblings - different people
 Alan Hodgkin,Dorothy Hodgkin,separate,high,different people
 William Henry Bragg,William Lawrence Bragg,separate,high,father and son - different people
-Orville Wright,Wilbur Wright,separate,medium,individual brothers kept as two persons; the collective 'Wright Brothers' entry is excluded - status decision needed
 Francis Bacon,Roger Bacon,separate,high,different people
 Edward O- Wilson,J- Tuzo Wilson,separate,high,different people
 Aldous Huxley,Andrew Huxley,separate,high,different people
@@ -55,7 +56,10 @@ Andre Weil,Simone Weil,separate,high,siblings - different people
 André Weil,Andrew Wiles,separate,high,different mathematicians (similar spelling)
 Paul Erdős,Paul Edwards,separate,high,different people (similar spelling)
 Torsten Wiesel,Elie Wiesel,separate,high,different people
-Brian-Maynard-Smith,,flag,low,listed by GPT only; probably meant John Maynard Smith (evolutionary biologist) - kept as listed; human should confirm
+Ken Thompson,E.P. Thompson,separate,confirmed,different people (Unix co-creator b. 1943 / social historian 1924-1993); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
+Edward Said,Edward Sapir,separate,confirmed,different people (literary critic 1935-2003 / linguist 1884-1939); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
+Marc Bloch,Maurice Bloch,separate,confirmed,different people (medieval historian 1886-1944 / anthropologist b. 1939); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
+Brian-Maynard-Smith,John Maynard Smith,display_fix,confirmed,GPT-only name; 'Brian' is a model error for John Maynard Smith (1920-2004; GPT field evolutionary-biology matches); no notable Brian Maynard Smith found; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R3)
 Lee-Smolins,Lee Smolin,display_fix,high,spelling (no merge involved)
 Albert Hofman,Albert Hofmann,display_fix,high,spelling (no merge involved)
 Gabriel Marcell,Gabriel Marcel,display_fix,high,spelling (no merge involved)

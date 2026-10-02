@@ -1,7 +1,13 @@
 variant,model,variant_key,canonical,rule,confidence,merged,note
 Anderson localization,DeepSeek,anderson localization,(EXCLUDED),exclude,high,no,not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
+Orville Wright,Gemini,orville wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+Wilbur Wright,Gemini,wilbur wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 Wright Brothers,DeepSeek,brothers wright,(EXCLUDED),exclude,high,no,collective/team - excluded by operational definition (same as v7)
+Wright Brothers - Orville Wright,Claude,orville wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+Wright Brothers - Wilbur Wright,Claude,wilbur wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 Wright-Brothers,GPT,brothers wright,(EXCLUDED),exclude,high,no,collective/team - excluded by operational definition (same as v7)
+Wright-Orville,Gemini,orville wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+Wright-Wilbur,Gemini,wilbur wright,(EXCLUDED),exclude,high,no,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 A.R. Radcliffe-Brown,DeepSeek,ar brown radcliffe,A.R. Radcliffe-Brown,identical,high,n/a,
 Aaron Ciechanover,DeepSeek,aaron ciechanover,Aaron Ciechanover,identical,high,n/a,
 Abdus Salam,DeepSeek,abdus salam,Abdus Salam,identical,high,n/a,
@@ -270,7 +276,7 @@ Baruch Spinoza,DeepSeek,baruch spinoza,Baruch Spinoza,identical,high,yes,
 Baruch Spinoza,Gemini,baruch spinoza,Baruch Spinoza,identical,high,yes,
 Baruch Spinoza,Grok,baruch spinoza,Baruch Spinoza,identical,high,yes,
 Baruch-Spinoza,GPT,baruch spinoza,Baruch Spinoza,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
-Benedict de Spinoza,DeepSeek,benedict de spinoza,Baruch Spinoza,curated alias,high,yes,Latin vs Hebrew given name of the same philosopher
+Benedict de Spinoza,DeepSeek,benedict de spinoza,Baruch Spinoza,curated alias,confirmed,yes,Latin vs Hebrew given name of the same philosopher; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Spinoza-Baruch,Gemini,baruch spinoza,Baruch Spinoza,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Baruj Benacerraf,DeepSeek,baruj benacerraf,Baruj Benacerraf,identical,high,n/a,
 Bas van Fraassen,DeepSeek,bas fraassen van,Bas van Fraassen,identical,high,n/a,
@@ -328,7 +334,6 @@ Brahmagupta,DeepSeek,brahmagupta,Brahmagupta,identical,high,n/a,
 Brahmagupta,Grok,brahmagupta,Brahmagupta,identical,high,n/a,
 Brian-Greene,GPT,brian greene,Brian Greene,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Brian Josephson,DeepSeek,brian josephson,Brian Josephson,identical,high,n/a,
-Brian-Maynard-Smith,GPT,brian maynard smith,Brian Maynard Smith,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Bronislaw Malinowski,DeepSeek,bronislaw malinowski,Bronisław Malinowski,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Bronisław Malinowski,Claude,bronislaw malinowski,Bronisław Malinowski,identical,high,yes,
 Bruce Beutler,DeepSeek,beutler bruce,Bruce Beutler,identical,high,n/a,
@@ -638,7 +643,7 @@ Elinor Ostrom,Gemini,elinor ostrom,Elinor Ostrom,identical,high,yes,
 Elinor-Ostrom,GPT,elinor ostrom,Elinor Ostrom,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Ostrom-Elinor,Gemini,elinor ostrom,Elinor Ostrom,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Elizabeth Anscombe,DeepSeek,anscombe elizabeth,Elizabeth Anscombe,identical,high,yes,
-G.E.M. Anscombe,DeepSeek,anscombe gem,Elizabeth Anscombe,curated alias (target side),high,yes,target of curated merge: Elizabeth Anscombe
+G.E.M. Anscombe,DeepSeek,anscombe gem,Elizabeth Anscombe,curated alias (target side),confirmed,yes,target of curated merge: Elizabeth Anscombe
 Elizabeth Blackburn,DeepSeek,blackburn elizabeth,Elizabeth Blackburn,identical,high,n/a,
 Elizabeth Blackburn,Grok,blackburn elizabeth,Elizabeth Blackburn,identical,high,n/a,
 Elizabeth-Blackwell,GPT,blackwell elizabeth,Elizabeth Blackwell,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
@@ -1342,6 +1347,7 @@ John Maynard Keynes,DeepSeek,john keynes maynard,John Maynard Keynes,identical,h
 John Maynard Keynes,Gemini,john keynes maynard,John Maynard Keynes,identical,high,yes,
 John-Maynard-Keynes,GPT,john keynes maynard,John Maynard Keynes,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Keynes-John Maynard,Gemini,john keynes maynard,John Maynard Keynes,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
+Brian-Maynard-Smith,GPT,brian maynard smith,John Maynard Smith,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 John McCarthy,Claude,john mccarthy,John McCarthy,identical,high,yes,
 John McCarthy,DeepSeek,john mccarthy,John McCarthy,identical,high,yes,
 John-McCarthy,GPT,john mccarthy,John McCarthy,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
@@ -1851,9 +1857,6 @@ Onora O-Neill,DeepSeek,oneill onora,Onora O'Neill,format,high,yes,differs only i
 Orson Welles,Gemini,orson welles,Orson Welles,identical,high,yes,
 Orson-Welles,GPT,orson welles,Orson Welles,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Welles-Orson,Gemini,orson welles,Orson Welles,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
-Orville Wright,Gemini,orville wright,Orville Wright,identical,high,yes,
-Wright Brothers - Orville Wright,Claude,orville wright,Orville Wright,format,high,yes,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
-Wright-Orville,Gemini,orville wright,Orville Wright,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Oswald Spengler,DeepSeek,oswald spengler,Oswald Spengler,identical,high,n/a,
 Otto Hahn,DeepSeek,hahn otto,Otto Hahn,identical,high,n/a,
 Otto Loewi,DeepSeek,loewi otto,Otto Loewi,identical,high,n/a,
@@ -2059,7 +2062,7 @@ Robert-Goddard,GPT,goddard robert,Robert Goddard,format,high,yes,differs only in
 Robert Grosseteste,Grok,grosseteste robert,Robert Grosseteste,identical,high,n/a,
 Robert H. Grubbs,DeepSeek,grubbs h robert,Robert H. Grubbs,identical,high,n/a,
 Robert Hooke,DeepSeek,hooke robert,Robert Hooke,identical,high,n/a,
-Bob Kahn,DeepSeek,bob kahn,Robert Kahn,curated alias,high,yes,nickname vs given name (both computer science; internet co-inventor)
+Bob Kahn,DeepSeek,bob kahn,Robert Kahn,curated alias,confirmed,yes,nickname vs given name (both computer science; internet co-inventor); human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Robert Kahn,Claude,kahn robert,Robert Kahn,identical,high,yes,
 Koch-Robert,Gemini,koch robert,Robert Koch,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Robert Koch,Claude,koch robert,Robert Koch,identical,high,yes,
@@ -2183,7 +2186,7 @@ Shinichi Mochizuki,Grok,mochizuki shinichi,Shinichi Mochizuki,identical,high,n/a
 Shinzo-Abe,GPT,abe shinzo,Shinzo Abe,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Ebadi-Shirin,Gemini,ebadi shirin,Shirin Ebadi,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Shirin Ebadi,Gemini,ebadi shirin,Shirin Ebadi,identical,high,yes,
-Buddha,Claude,buddha,Siddhartha Gautama,curated alias,high,yes,title vs personal name of the same founder
+Buddha,Claude,buddha,Siddhartha Gautama,curated alias,confirmed,yes,title vs personal name of the same founder; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Siddhartha Gautama,DeepSeek,gautama siddhartha,Siddhartha Gautama,identical,high,yes,
 Siddhartha Gautama,Grok,gautama siddhartha,Siddhartha Gautama,identical,high,yes,
 Siddhartha Gautama-Buddha,Gemini,buddha gautama siddhartha,Siddhartha Gautama,curated alias,high,yes,name plus title in one string
@@ -2458,9 +2461,6 @@ Whitfield-Diffie,GPT,diffie whitfield,Whitfield Diffie,format,high,yes,differs o
 Whitney-Houston,GPT,houston whitney,Whitney Houston,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Whitney-Wolfe-Herd,GPT,herd whitney wolfe,Whitney Wolfe Herd,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Wiebe Bijker,DeepSeek,bijker wiebe,Wiebe Bijker,identical,high,n/a,
-Wilbur Wright,Gemini,wilbur wright,Wilbur Wright,identical,high,yes,
-Wright Brothers - Wilbur Wright,Claude,wilbur wright,Wilbur Wright,format,high,yes,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
-Wright-Wilbur,Gemini,wilbur wright,Wilbur Wright,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Penfield-Wilder,Gemini,penfield wilder,Wilder Penfield,format,high,yes,differs only in spacing/hyphens/accents/word order/initials
 Wilder Penfield,Gemini,penfield wilder,Wilder Penfield,identical,high,yes,
 Wilfrid Sellars,DeepSeek,sellars wilfrid,Wilfrid Sellars,identical,high,n/a,
@@ -2562,7 +2562,6 @@ Mary Leakey,,leakey mary,(kept separate from) Louis Leakey,curated: keep separat
 William Herschel,,herschel william,(kept separate from) Caroline Herschel,curated: keep separate,high,no,siblings - different people
 Alan Hodgkin,,alan hodgkin,(kept separate from) Dorothy Hodgkin,curated: keep separate,high,no,different people
 William Henry Bragg,,bragg henry william,(kept separate from) William Lawrence Bragg,curated: keep separate,high,no,father and son - different people
-Orville Wright,,orville wright,(kept separate from) Wilbur Wright,curated: keep separate,medium,no,individual brothers kept as two persons; the collective 'Wright Brothers' entry is excluded - status decision needed
 Francis Bacon,,bacon francis,(kept separate from) Roger Bacon,curated: keep separate,high,no,different people
 Edward O- Wilson,,edward o wilson,(kept separate from) J- Tuzo Wilson,curated: keep separate,high,no,different people
 Aldous Huxley,,aldous huxley,(kept separate from) Andrew Huxley,curated: keep separate,high,no,different people
@@ -2574,6 +2573,8 @@ Andre Weil,,andre weil,(kept separate from) Simone Weil,curated: keep separate,h
 André Weil,,andre weil,(kept separate from) Andrew Wiles,curated: keep separate,high,no,different mathematicians (similar spelling)
 Paul Erdős,,erdos paul,(kept separate from) Paul Edwards,curated: keep separate,high,no,different people (similar spelling)
 Torsten Wiesel,,torsten wiesel,(kept separate from) Elie Wiesel,curated: keep separate,high,no,different people
+Ken Thompson,,ken thompson,(kept separate from) E.P. Thompson,curated: keep separate,confirmed,no,different people (Unix co-creator b. 1943 / social historian 1924-1993); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
+Edward Said,,edward said,(kept separate from) Edward Sapir,curated: keep separate,confirmed,no,different people (literary critic 1935-2003 / linguist 1884-1939); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
+Marc Bloch,,bloch marc,(kept separate from) Maurice Bloch,curated: keep separate,confirmed,no,different people (medieval historian 1886-1944 / anthropologist b. 1939); similarity-scan pair human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R5)
 Arthur Schlesinger Jr.,,arthur jr schlesinger,(kept separate from) Arthur Schlesinger Sr.,curated: keep separate,high,no,father and son - different people (v6 fuzzy step had merged them)
 Oliver Wendell Holmes Jr.,,holmes jr oliver wendell,(kept separate from) Oliver Wendell Holmes Sr.,curated: keep separate,high,no,father and son - different people
-Brian-Maynard-Smith,,brian maynard smith,(flag - not merged),curated: flag,low,no,listed by GPT only; probably meant John Maynard Smith (evolutionary biologist) - kept as listed; human should confirm

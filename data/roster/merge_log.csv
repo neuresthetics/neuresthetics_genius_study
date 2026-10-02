@@ -1,4 +1,6 @@
 canonical,variant,models,action,rule,confidence,note
+(EXCLUDED),Wilbur Wright | Wright Brothers - Wilbur Wright | Wright-Wilbur,Claude;Gemini,excluded,exclude,high,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+(EXCLUDED),Orville Wright | Wright Brothers - Orville Wright | Wright-Orville,Claude;Gemini,excluded,exclude,high,collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 (EXCLUDED),Wright Brothers | Wright-Brothers,DeepSeek;GPT,excluded,exclude,high,collective/team - excluded by operational definition (same as v7)
 (EXCLUDED),Anderson localization,DeepSeek,excluded,exclude,high,not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
 Abraham Lincoln,Abraham-Lincoln,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -62,7 +64,7 @@ B.F. Skinner,B-F-Skinner,GPT,merged,format,high,differs only in spacing/hyphens/
 Barbara McClintock,Barbara-McClintock,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Barbara McClintock,McClintock-Barbara,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Baruch Spinoza,Baruch-Spinoza,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Baruch Spinoza,Benedict de Spinoza,DeepSeek,merged,curated alias,high,Latin vs Hebrew given name of the same philosopher
+Baruch Spinoza,Benedict de Spinoza,DeepSeek,merged,curated alias,confirmed,Latin vs Hebrew given name of the same philosopher; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Baruch Spinoza,Spinoza-Baruch,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 bell hooks,bell-hooks,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Ben Jonson,Ben-Jonson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -80,7 +82,6 @@ Blaise Pascal,Blaise-Pascal,GPT,merged,format,high,differs only in spacing/hyphe
 Blaise Pascal,Pascal-Blaise,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Bob Dylan,Bob-Dylan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Brian Greene,Brian-Greene,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Brian Maynard Smith,Brian-Maynard-Smith,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Bronisław Malinowski,Bronislaw Malinowski,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Buckminster Fuller,Fuller-Buckminster,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Buzz Aldrin,Buzz-Aldrin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -172,7 +173,7 @@ Elias James Corey,Corey-Elias James,Gemini,merged,format,high,differs only in sp
 Elie Wiesel,Wiesel-Elie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Elinor Ostrom,Elinor-Ostrom,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Elinor Ostrom,Ostrom-Elinor,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Elizabeth Anscombe,G.E.M. Anscombe,DeepSeek,merged,curated alias (target side),high,target of curated merge: Elizabeth Anscombe
+Elizabeth Anscombe,G.E.M. Anscombe,DeepSeek,merged,curated alias (target side),confirmed,target of curated merge: Elizabeth Anscombe
 Elizabeth Blackwell,Elizabeth-Blackwell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Ella Fitzgerald,Ella-Fitzgerald,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Elon Musk,Elon-Musk,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -360,6 +361,7 @@ John Locke,Locke-John,Gemini,merged,format,high,differs only in spacing/hyphens/
 John Marshall,John-Marshall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Maynard Keynes,John-Maynard-Keynes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Maynard Keynes,Keynes-John Maynard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Maynard Smith,Brian-Maynard-Smith,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John McCarthy,John-McCarthy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Milton,John-Milton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 John Nash,John-Nash,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -509,8 +511,6 @@ Omar Khayyam,Omar-Khayyam,GPT,merged,format,high,differs only in spacing/hyphens
 Onora O'Neill,Onora O-Neill,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Orson Welles,Orson-Welles,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Orson Welles,Welles-Orson,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Orville Wright,Wright Brothers - Orville Wright,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
-Orville Wright,Wright-Orville,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Pablo Neruda,Neruda-Pablo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Pablo Picasso,Pablo-Picasso,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Pablo Picasso,Picasso-Pablo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -554,7 +554,7 @@ Robert Frost,Frost-Robert,Gemini,merged,format,high,differs only in spacing/hyph
 Robert Frost,Robert-Frost,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Robert Goddard,Goddard-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Robert Goddard,Robert-Goddard,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Robert Kahn,Bob Kahn,DeepSeek,merged,curated alias,high,nickname vs given name (both computer science; internet co-inventor)
+Robert Kahn,Bob Kahn,DeepSeek,merged,curated alias,confirmed,nickname vs given name (both computer science; internet co-inventor); human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Robert Koch,Koch-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Robert Noyce,Robert-Noyce,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Roger Penrose,Penrose-Roger,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -587,7 +587,7 @@ Shafi Goldwasser,Shafi-Goldwasser,GPT,merged,format,high,differs only in spacing
 Shing-Tung Yau,Yau-Shing-Tung,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Shinzo Abe,Shinzo-Abe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Shirin Ebadi,Ebadi-Shirin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Siddhartha Gautama,Buddha,Claude,merged,curated alias,high,title vs personal name of the same founder
+Siddhartha Gautama,Buddha,Claude,merged,curated alias,confirmed,title vs personal name of the same founder; human-confirmed by Jason Burns 2026-10-01 (OPEN_DECISIONS R4)
 Siddhartha Gautama,Siddhartha Gautama-Buddha,Gemini,merged,curated alias,high,name plus title in one string
 Sigmund Freud,Freud-Sigmund,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Sigmund Freud,Sigmund-Freud,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -671,8 +671,6 @@ Wernher von Braun,Wernher-von-Braun,GPT,merged,format,high,differs only in spaci
 Whitfield Diffie,Whitfield-Diffie,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Whitney Houston,Whitney-Houston,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Whitney Wolfe Herd,Whitney-Wolfe-Herd,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
-Wilbur Wright,Wright Brothers - Wilbur Wright,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
-Wilbur Wright,Wright-Wilbur,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Wilder Penfield,Penfield-Wilder,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Wilhelm Wundt,Wilhelm-Wundt,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
 Willard Libby,Libby-Willard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
@@ -1021,7 +1019,6 @@ Octavio Paz,Octavio Paz | Octavio Paz | Paz-Octavio | Paz-Octavio,Gemini,same-mo
 Olga Ladyzhenskaya,Olga Ladyzhenskaya | Ladyzhenskaya-Olga,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Omar Khayyam,Omar Khayyam | Khayyam-Omar,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Orson Welles,Orson Welles | Welles-Orson,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
-Orville Wright,Orville Wright | Wright-Orville,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Pablo Neruda,Pablo Neruda | Neruda-Pablo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Pablo Picasso,Pablo Picasso | Picasso-Pablo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Pamela Long,Pamela Long | Pamela Long,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
@@ -1133,7 +1130,6 @@ Wassily Kandinsky,Wassily Kandinsky | Kandinsky-Wassily,Gemini,same-model duplic
 Werner Heisenberg,Werner Heisenberg | Heisenberg-Werner,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Wernher von Braun,Wernher von Braun | Von Braun-Wernher,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Wiebe Bijker,Wiebe Bijker | Wiebe Bijker,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
-Wilbur Wright,Wilbur Wright | Wright-Wilbur,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Wilder Penfield,Wilder Penfield | Penfield-Wilder,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Willard Libby,Willard Libby | Libby-Willard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 William Harvey,William Harvey | William Harvey,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
@@ -1147,6 +1143,3 @@ Wu Cheng'en,Wu Cheng'en | Cheng'en-Wu,Gemini,same-model duplicate counted once,d
 Yuri Manin,Yuri Manin | Manin-Yuri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Zheng He,Zheng He | He-Zheng,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
 Zora Neale Hurston,Zora Neale Hurston | Hurston-Zora Neale,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
-Ken Thompson,E.P. Thompson,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people
-Edward Said,Edward Sapir,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people
-Marc Bloch,Maurice Bloch,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people

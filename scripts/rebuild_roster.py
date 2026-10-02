@@ -10,6 +10,7 @@ Inputs (read-only):
            documents.data_book.content.tables[6] (v7.1 roster), [7] (merges/exclusions/review flags)
   data/sources/v7_1/geniiAggregateSortFreq.csv   (the v7 500-row aggregate; used only to confirm the v7 error causes)
   data/roster/curated_aliases.csv   (hand decisions: merge / separate / exclude / flag / display_fix)
+  data/roster/status_overrides.csv  (status set by a recorded decision; wins over the v7 carry-over)
 
 Outputs:
   data/roster/roster.csv, data/roster/alias_map.csv, data/roster/merge_log.csv   (or --out DIR)
@@ -27,7 +28,8 @@ Method
   4. Field = most common normalized field string across models (one vote per model);
      ties -> the candidate whose components appear in the most models' field strings, then model order
      Claude, Grok, GPT, Gemini, DeepSeek.
-  5. v7 status/exclusions carried over by matching v7 names (and their listed aliases) to keys.
+  5. v7 status/exclusions carried over by matching v7 names (and their listed aliases) to keys,
+     unless status_overrides.csv sets the status by a recorded decision.
 
 Run:    python3 scripts/rebuild_roster.py              # rewrite the committed outputs
         python3 scripts/rebuild_roster.py --check      # rebuild into a temp dir and compare byte-for-byte
@@ -42,6 +44,7 @@ V7_JSON = os.path.join(V7_DIR, "neuresthetics_v7_combined.json")
 V7_AGG = os.path.join(V7_DIR, "geniiAggregateSortFreq.csv")
 ROSTER_DIR = os.path.join(REPO, "data", "roster")
 CURATED = os.path.join(ROSTER_DIR, "curated_aliases.csv")
+STATUS_OVERRIDES = os.path.join(ROSTER_DIR, "status_overrides.csv")
 OUT_DIR = ROSTER_DIR                                   # roster.csv, alias_map.csv, merge_log.csv
 DIFF_DIR = os.path.join(REPO, "versions", "v8")        # roster_diff_v7_to_v8.md
 OUTPUT_FILES = ["roster.csv", "alias_map.csv", "merge_log.csv"]
@@ -207,6 +210,13 @@ def main():
     for vk, tk, c in separate_rows:
         if vk in keys and tk in keys and uf.find(vk) == uf.find(tk):
             sys.exit(f"'separate' pair ended up merged: {c}")
+    status_override = {}
+    if os.path.exists(STATUS_OVERRIDES):
+        for s in csv.DictReader(open(STATUS_OVERRIDES, encoding="utf-8")):
+            sk = name_key(s["name"])
+            if sk not in keys:
+                sys.exit(f"status override refers to a name not in the raw lists: {s}")
+            status_override[sk] = s
 
     # ---------------------------------------------------------- group
     groups = collections.defaultdict(list)
@@ -310,7 +320,12 @@ def main():
             notes.append("v7 had this person on " + str(len(v7m)) + " rows: " + " | ".join(f"{x['Name']} (F={x['F']})" for x in v7m))
 
         # status
-        if v7m:
+        sov = [status_override[k] for k in gkeys if k in status_override]
+        if sov:
+            s = sov[0]
+            status = s["status"].strip()
+            notes.append(f"status set by decision {s['decision']} ({s['decided_on']}): {s['reason']}")
+        elif v7m:
             stats = [x["Status"] for x in v7m]
             st = next((s for s in stats if s), "")
             if st:
@@ -343,7 +358,8 @@ def main():
                 # key reached via another curated row (e.g. a format variant of a curated alias)
                 via = [c for k2, c in curated_pairs.items() if uf.find(k2) == gid and name_key(c["target"]) == vk]
                 c = next((cc for k2, cc in curated_pairs.items() if k2 == vk), None)
-                rule = "curated alias (target side)"; conf = "high"
+                rule = "curated alias (target side)"
+                conf = "confirmed" if via and all(cc["confidence"] == "confirmed" for cc in via) else "high"
                 note = "target of curated merge: " + "; ".join(sorted({cc["variant"] for cc in via})) if via else "linked by curated merge"
             if split_compound(v)[1]:
                 note = (note + "; " if note else "") + f"compound entry split on ' - ' (other part: '{split_compound(v)[1]}')"
@@ -599,7 +615,7 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
         P(f"- {' / '.join(e['variants'])} ({', '.join(e['models'])}): {e['reason']}")
     P("- v7 table 7 exclusions were Wright Brothers and Anderson localization; both are excluded again. "
       "Claude lists Wilbur and Orville Wright as two individuals (under a 'Wright Brothers - ' prefix); Gemini also lists them individually. "
-      "They are kept as individual people with status `new — needs status`; whether individual credit is appropriate is a human call.")
+      "Those individual entries are excluded too, as part of the collective (decision R2, 2026-10-01, rows in `curated_aliases.csv`).")
     P("- No other collectives or non-person entries were found in the raw lists (checked for 'brothers', 'and', '&', team/group/school/effect/theory etc.).\n")
 
     P("## Status carry-over\n")
@@ -608,9 +624,12 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
     P("|---|---|")
     for s, c in sc.most_common(): P(f"| {s} | {c} |")
     P("")
-    P("- Georgia O'Keeffe: blank status in v7. Marked `needs status (blank in v7)`. The v7 headline says 432 core but only 431 rows are tagged core, "
-      "which suggests she was meant to be core; this was not assumed.")
-    P("- No statuses were invented. Review reasons from v7 table 7 are copied into `v7_review_note`.\n")
+    sov_people = [p for p in people if p["notes"].find("status set by decision") >= 0]
+    for p in sov_people:
+        P(f"- {p['canonical_name']}: status `{p['status']}` from `status_overrides.csv` (v7 status: {p['v7_status'] or 'blank'}).")
+    if any(p["status"] == "needs status (blank in v7)" for p in people):
+        P("- Some v7 statuses are blank. They are marked `needs status (blank in v7)` and nothing is assumed.")
+    P("- No other statuses were set. v7 statuses are carried over as they are. Review reasons from v7 table 7 are copied into `v7_review_note`.\n")
 
     P("## Field buckets\n")
     P("Buckets are assigned by keyword rules in the script (first field component that matches). v7's own bucket table (table 8) used a hand mapping that "
@@ -637,10 +656,18 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
       "Mies van der Rohe, Duns Scotus, Murasaki Shikibu, Kovalevskaya, Kolmogorov, Ben-Gurion, Noether, Hodgkin, Herschel (Caroline), Leavitt, Maimonides.")
     P("- Kept separate on purpose (name overlap, different people): George Washington / George Washington Carver, Muhammad (prophet) / al-Khwarizmi, "
       "Zeno of Elea / Zeno of Citium, the Curies and Joliot-Curies, the Leakeys, William / Caroline Herschel, Alan / Dorothy Hodgkin, W.H. / W.L. Bragg, "
-      "Francis / Roger Bacon, Wilbur / Orville Wright, and others in `alias_map.csv`.")
-    P("- Flagged, not merged: 'Brian Maynard Smith' (GPT only) is probably John Maynard Smith; kept as listed.")
-    P(f"- Automatic similarity scan left {len(sim_flags)} pairs as separate people but listed them in `merge_log.csv` "
-      "(action `NOT merged - review suggested`) for a human check.")
+      "Francis / Roger Bacon, Ken / E.P. Thompson, Edward Said / Edward Sapir, Marc / Maurice Bloch, and others in `alias_map.csv`.")
+    flagged = [c for c in csv.DictReader(open(CURATED, encoding="utf-8")) if c["decision"] == "flag"]
+    for c in flagged:
+        P(f"- Flagged, not merged: '{c['variant']}': {c['reason']}")
+    if any(p["canonical_name"] == "John Maynard Smith" for p in people):
+        P("- Display fix by decision R3 (2026-10-01): GPT's 'Brian-Maynard-Smith' is shown as John Maynard Smith; the raw string stays in `alias_map.csv`.")
+    if sim_flags:
+        P(f"- Automatic similarity scan left {len(sim_flags)} pairs as separate people but listed them in `merge_log.csv` "
+          "(action `NOT merged - review suggested`) for a human check.")
+    else:
+        P("- Automatic similarity scan: no unreviewed pairs. Pairs a human has confirmed as different people are `separate` rows "
+          "in `curated_aliases.csv` and are not listed again.")
     if warnings:
         P("- Script warnings: " + "; ".join(warnings))
     P("")

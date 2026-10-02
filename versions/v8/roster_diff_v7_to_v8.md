@@ -5,10 +5,10 @@ Built by `scripts/rebuild_roster.py` from the five raw model lists in `data/sour
 ## Summary
 
 - Raw input: 2746 rows across five lists (Claude 374, DeepSeek 997, Gemini 669, GPT 376, Grok 330).
-- 1715 distinct raw name strings after lowercasing/de-accenting; 1416 distinct names after automatic formatting normalization (hyphens, 'Last-First' order, accents, initials); 1384 after 32 curated alias merges; 2 non-person/collective entries excluded.
-- **v8 roster: 1382 unique people** (v7.1: 482).
+- 1715 distinct raw name strings after lowercasing/de-accenting; 1416 distinct names after automatic formatting normalization (hyphens, 'Last-First' order, accents, initials); 1384 after 32 curated alias merges; 4 non-person/collective entries excluded.
+- **v8 roster: 1380 unique people** (v7.1: 482).
 - F is now the number of distinct models (1–5) that list the person. Maximum observed F = 5; no value above 5.
-- Matched to a v7 row: 482 people. New (not in v7): 900. v7 rows not kept as their own row: 0 (0 merged into another v7 person, 0 excluded, 0 unmatched).
+- Matched to a v7 row: 482 people. New (not in v7): 898. v7 rows not kept as their own row: 0 (0 merged into another v7 person, 0 excluded, 0 unmatched).
 - Of the 482 matched people, F went up for 159, down for 104, unchanged for 219.
 
 ## Why v7 frequencies were wrong (checked by re-running the v6 script logic)
@@ -32,18 +32,18 @@ A re-run of `aggregateGeniiListsByFreq.py`'s logic reproduces the v7 500-row agg
 | 5 | 82 | 24 |
 | 4 | 55 | 72 |
 | 3 | 94 | 84 |
-| 2 | 185 | 221 |
+| 2 | 183 | 221 |
 | 1 | 966 | 74 |
-| total | 1382 | 482 |
+| total | 1380 | 482 |
 
 | Band | v8 | v7.1 |
 |---|---|---|
 | high (≥5; in v8 exactly 5) | 82 | 31 |
 | core (3–4) | 149 | 156 |
-| extended (2) | 185 | 221 |
+| extended (2) | 183 | 221 |
 | single-source (1) | 966 | 74 |
 
-People listed by each model (after merging): Claude 362, DeepSeek 854, Gemini 338, GPT 371, Grok 323.
+People listed by each model (after merging): Claude 360, DeepSeek 854, Gemini 336, GPT 371, Grok 323.
 
 ## Top of the v8 roster (F = 5)
 
@@ -239,7 +239,7 @@ Ada Lovelace (mathematics), Adam Smith (economics), Al-Farabi (philosophy), Al-K
 
 ## People added (not in v7.1)
 
-900 new people: F=4: 1, F=3: 8, F=2: 76, F=1: 815. All have status `new — needs status`. Many are Claude-only names (Claude was never aggregated) or names cut by the 500-row truncation.
+898 new people: F=4: 1, F=3: 8, F=2: 74, F=1: 815. All have status `new — needs status`. Many are Claude-only names (Claude was never aggregated) or names cut by the 500-row truncation.
 
 New people with F ≥ 3:
 
@@ -253,7 +253,7 @@ New people with F ≥ 3:
 - Paul Cézanne — art — F=3 (Claude;Gemini;GPT)
 - Vint Cerf — computer science — F=3 (Claude;DeepSeek;GPT)
 
-New people with F = 2 (count by field bucket): mathematics 12, physics 10, arts 9, philosophy 8, invention / engineering 8, social science 6, computer science / AI 5, polymath 4, literature 4, politics / law / military 2, earth science 2, music 2, astronomy 1, psychology / neuroscience 1, linguistics 1, medicine 1.
+New people with F = 2 (count by field bucket): mathematics 12, physics 10, arts 9, philosophy 8, social science 6, invention / engineering 6, computer science / AI 5, polymath 4, literature 4, politics / law / military 2, earth science 2, music 2, astronomy 1, psychology / neuroscience 1, linguistics 1, medicine 1.
 New people with F = 1 (count by field bucket): physics 89, philosophy 86, social science 76, medicine 72, history 68, chemistry 62, mathematics 39, literature 39, arts 39, music 37, invention / engineering 37, biology / life science 35, politics / law / military 35, psychology / neuroscience 35, computer science / AI 26, astronomy 13, polymath 8, linguistics 8, exploration 5, earth science 4, other 2.
 
 ## People dropped / v7 rows that do not carry over as their own row
@@ -262,23 +262,24 @@ None. Every v7.1 roster person is found in the raw lists and kept.
 
 ## Exclusions applied
 
+- Wilbur Wright / Wright Brothers - Wilbur Wright / Wright-Wilbur (Claude, Gemini): collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
+- Orville Wright / Wright Brothers - Orville Wright / Wright-Orville (Claude, Gemini): collective - one of the Wright Brothers (joint credit); excluded with 'Wright Brothers' by the operational definition as in v7.1; decided by Jason Burns 2026-10-01 (OPEN_DECISIONS R2)
 - Wright Brothers / Wright-Brothers (DeepSeek, GPT): collective/team - excluded by operational definition (same as v7)
 - Anderson localization (DeepSeek): not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
-- v7 table 7 exclusions were Wright Brothers and Anderson localization; both are excluded again. Claude lists Wilbur and Orville Wright as two individuals (under a 'Wright Brothers - ' prefix); Gemini also lists them individually. They are kept as individual people with status `new — needs status`; whether individual credit is appropriate is a human call.
+- v7 table 7 exclusions were Wright Brothers and Anderson localization; both are excluded again. Claude lists Wilbur and Orville Wright as two individuals (under a 'Wright Brothers - ' prefix); Gemini also lists them individually. Those individual entries are excluded too, as part of the collective (decision R2, 2026-10-01, rows in `curated_aliases.csv`).
 - No other collectives or non-person entries were found in the raw lists (checked for 'brothers', 'and', '&', team/group/school/effect/theory etc.).
 
 ## Status carry-over
 
 | Status | v8 count |
 |---|---|
-| new — needs status | 900 |
-| core | 431 |
+| new — needs status | 898 |
+| core | 432 |
 | provisional | 33 |
 | review | 17 |
-| needs status (blank in v7) | 1 |
 
-- Georgia O'Keeffe: blank status in v7. Marked `needs status (blank in v7)`. The v7 headline says 432 core but only 431 rows are tagged core, which suggests she was meant to be core; this was not assumed.
-- No statuses were invented. Review reasons from v7 table 7 are copied into `v7_review_note`.
+- Georgia O'Keeffe: status `core` from `status_overrides.csv` (v7 status: blank).
+- No other statuses were set. v7 statuses are carried over as they are. Review reasons from v7 table 7 are copied into `v7_review_note`.
 
 ## Field buckets
 
@@ -295,7 +296,7 @@ Buckets are assigned by keyword rules in the script (first field component that 
 | chemistry | 84 | 6.1% | 21 | +63 |
 | literature | 82 | 5.9% | 39 | +43 |
 | arts | 75 | 5.4% | 25 | +50 |
-| invention / engineering | 65 | 4.7% | 19 | +46 |
+| invention / engineering | 63 | 4.6% | 19 | +44 |
 | music | 56 | 4.1% | 17 | +39 |
 | psychology / neuroscience | 55 | 4.0% | 19 | +36 |
 | biology / life science | 53 | 3.8% | 18 | +35 |
@@ -314,9 +315,9 @@ Among F ≥ 3 (the primary analysis cut in the coding rules): philosophy 41, mat
 
 - Format merges (automatic): spacing, hyphens used as spaces, Gemini's 'Last-First' repeats, accents, initials, word order (Jr./Sr. are kept, so father and son stay separate). Each is listed in `alias_map.csv` (rule `format`).
 - Curated alias merges (hand list in `curated_aliases.csv`, all logged in `merge_log.csv`): Avicenna/Ibn Sina, Averroes/Ibn Rushd, Alhazen/Ibn al-Haytham, Al-Khwarizmi/Muhammad ibn Musa al-Khwarizmi, Al-Biruni, Al-Farabi/Farabi, Al-Razi/Razi, Laozi/Lao Tzu, Li Bai/Li Po, Buddha/Siddhartha Gautama, Rembrandt, Michelangelo, Leibniz, Hegel, Oppenheimer, E.O. Wilson, Spinoza (Benedict/Baruch), Anscombe, Kahn (Bob/Robert), Mies van der Rohe, Duns Scotus, Murasaki Shikibu, Kovalevskaya, Kolmogorov, Ben-Gurion, Noether, Hodgkin, Herschel (Caroline), Leavitt, Maimonides.
-- Kept separate on purpose (name overlap, different people): George Washington / George Washington Carver, Muhammad (prophet) / al-Khwarizmi, Zeno of Elea / Zeno of Citium, the Curies and Joliot-Curies, the Leakeys, William / Caroline Herschel, Alan / Dorothy Hodgkin, W.H. / W.L. Bragg, Francis / Roger Bacon, Wilbur / Orville Wright, and others in `alias_map.csv`.
-- Flagged, not merged: 'Brian Maynard Smith' (GPT only) is probably John Maynard Smith; kept as listed.
-- Automatic similarity scan left 3 pairs as separate people but listed them in `merge_log.csv` (action `NOT merged - review suggested`) for a human check.
+- Kept separate on purpose (name overlap, different people): George Washington / George Washington Carver, Muhammad (prophet) / al-Khwarizmi, Zeno of Elea / Zeno of Citium, the Curies and Joliot-Curies, the Leakeys, William / Caroline Herschel, Alan / Dorothy Hodgkin, W.H. / W.L. Bragg, Francis / Roger Bacon, Ken / E.P. Thompson, Edward Said / Edward Sapir, Marc / Maurice Bloch, and others in `alias_map.csv`.
+- Display fix by decision R3 (2026-10-01): GPT's 'Brian-Maynard-Smith' is shown as John Maynard Smith; the raw string stays in `alias_map.csv`.
+- Automatic similarity scan: no unreviewed pairs. Pairs a human has confirmed as different people are `separate` rows in `curated_aliases.csv` and are not listed again.
 
 ## Files
 

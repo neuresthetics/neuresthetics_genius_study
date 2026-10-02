@@ -3,7 +3,7 @@
 One file per person: `people/<shard>/<id>.md`.
 
 - **id**: from `data/roster/person_ids.csv`. ASCII, lowercase, family name first (`newton-isaac`). Frozen once the file exists.
-- **shard**: the first character of the id. Two reasons: the GitHub web view lists at most 1,000 entries per folder, and the roster has 1,382 people. The shard can always be worked out from the id.
+- **shard**: the first character of the id. Two reasons: the GitHub web view lists at most 1,000 entries per folder, and the roster has 1,380 people. The shard can always be worked out from the id.
 - **format**: Markdown with YAML front matter, following `schema/person.schema.json`. Start from `templates/person.template.md`.
 
 Files are added one person per run (`docs/RUNBOOK.md`). Not every roster person has a file yet. `reports/coverage.md` shows which do.

@@ -35,7 +35,7 @@ Contents:
 
 ### 2.1 `data/roster/roster.csv`
 
-One row per person (1,382 rows). Written by `scripts/rebuild_roster.py`. Never edit by hand.
+One row per person (1,380 rows). Written by `scripts/rebuild_roster.py`. Never edit by hand.
 
 | column | type | meaning |
 |---|---|---|
@@ -47,7 +47,7 @@ One row per person (1,382 rows). Written by `scripts/rebuild_roster.py`. Never e
 | `band` | text | `high (5)`, `core (3–4)`, `extended (2)`, `single-source (1)`. |
 | `models` | list (`;`) | Which models list the person, in fixed order Claude;DeepSeek;Gemini;GPT;Grok. |
 | `Claude`, `DeepSeek`, `Gemini`, `GPT`, `Grok` | 0/1 | 1 if that model lists the person. They sum to F. |
-| `status` | text | `core`, `provisional`, `review` (carried from v7.1), `needs status (blank in v7)`, or `new — needs status`. |
+| `status` | text | `core`, `provisional`, `review` (carried from v7.1, or set in `status_overrides.csv` by a recorded decision), `needs status (blank in v7)` (none left in v8), or `new — needs status`. |
 | `v7_name` | text | Name on the v7.1 roster, blank if new. |
 | `v7_F` | integer | v7.1 frequency (could exceed 5 because of the v7 counting errors). Blank if new. |
 | `v7_status` | text | v7.1 status, blank if new or blank in v7. |
@@ -68,7 +68,7 @@ One row per raw name string per model, plus keep-separate and flag rows.
 | `variant_key` | The formatting key (METHOD §2.2). |
 | `canonical` | The person it maps to, or `(EXCLUDED)`. |
 | `rule` | How it was mapped. `identical`: same as the canonical name. `format`: differs only in formatting. `curated alias` or `curated alias (target side)`: a merge row in `curated_aliases.csv`. `curated: keep separate`. `curated: flag`. `exclude`. |
-| `confidence` | `high`, `medium` or `low` (from the curated row; formatting merges are `high`). |
+| `confidence` | `high`, `medium`, `low` or `confirmed` (from the curated row; formatting merges are `high`). |
 | `merged` | `yes` if the variant was folded into another string's person, `n/a` for the canonical string itself, `no` for keep-separate, flag and exclude rows. |
 | `note` | Reason. |
 
@@ -83,7 +83,7 @@ One row per merge event or review item.
 | `models` | Models involved. |
 | `action` | `merged`, `same-model duplicate counted once`, `excluded`, or `NOT merged - review suggested`. |
 | `rule` | `format`, `curated alias`, `curated alias (target side)`, `distinct-model count`, `exclude`, `similar spelling`, `token subset`. |
-| `confidence` | `high`/`medium`/`low`, or `similarity 0.xx` for scan pairs. |
+| `confidence` | `high`/`medium`/`low`/`confirmed`, or `similarity 0.xx` for scan pairs. |
 | `note` | Reason. |
 
 ### 2.4 `data/roster/curated_aliases.csv` (hand-maintained input)
@@ -93,7 +93,7 @@ One row per merge event or review item.
 | `variant` | A raw name (any formatting; it is keyed the same way as the lists). |
 | `target` | The canonical person for `merge`, the other person for `separate`, the corrected display name for `display_fix`. Blank for `exclude`/`flag`. |
 | `decision` | `merge`, `separate`, `exclude`, `flag`, `display_fix`. |
-| `confidence` | `high`, `medium`, `low`. |
+| `confidence` | `high`, `medium`, `low`, or `confirmed` (approved by Jason; the reason names the date and OPEN_DECISIONS item). |
 | `reason` | Why. Required. |
 
 ### 2.5 `data/roster/person_ids.csv`
@@ -119,7 +119,19 @@ Written by `scripts/assign_ids.py`. Append-only.
 | `id` | Id to use instead of the slug rule. |
 | `reason` | Why the rule would be wrong (e.g. `family name written first`). |
 
-### 2.7 `data/sources/`
+### 2.7 `data/roster/status_overrides.csv` (hand-maintained input)
+
+Statuses set by a recorded decision. `rebuild_roster.py` applies them in place of the v7.1 carry-over and writes the decision into the person's `notes`. A name that isn't in the raw lists stops the rebuild.
+
+| column | meaning |
+|---|---|
+| `name` | A roster name (any formatting; keyed the same way as the lists). |
+| `status` | The status to set (`core`, `provisional`, `review`). |
+| `decision` | OPEN_DECISIONS item id (e.g. `R1`). |
+| `decided_on` | Date of the decision (YYYY-MM-DD). |
+| `reason` | Why. Required. |
+
+### 2.8 `data/sources/`
 
 Raw inputs, read-only, with checksums. See `data/sources/README.md`.
 
