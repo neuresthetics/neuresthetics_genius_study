@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -172,7 +173,7 @@ worldview:
     value: true
     certainty: 0.7
     cites: [{source: S5, locator: "Vol. IV section"}, {source: S6, locator: "letter of 23 July 1961"}, {source: S7, locator: "Sect. 3, note 14"}]
-    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7. Both certainties are at least 0.7, so true. B is the same whether scored on his account of nature or on his work in logic and relativity, so open item P6 does not change the result. Certainty 0.7, not higher, because both axes rest on private writing and one secondary quotation. F = 5, so first-rank is met."
+    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7. Both certainties are at least 0.7, so true. B is the same whether scored on his account of nature or on his work in logic and relativity, so decision P6 (2026-10-02) does not change the result. Certainty 0.7, not higher, because both axes rest on private writing and one secondary quotation. F = 5, so first-rank is met."
   statements:
     - text: "theistic not pantheistic (following Leibniz rather than Spinoza)"
       cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}]

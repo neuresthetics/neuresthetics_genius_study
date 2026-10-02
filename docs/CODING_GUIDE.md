@@ -156,12 +156,15 @@ Rules:
 
 **Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". The test (decision P4, 2026-10-01) uses the LIO axes only:
 
-- `true` when `A_locus` ≤ 1 (God is a transcendent person, not the world) **and** `B_cause` ≥ 3 (law and regularity, no special cases), with B scored for the domain of the person's work, both at certainty ≥ 0.7;
+- `true` when `A_locus` ≤ 1 (God is a transcendent person, not the world) **and** `B_cause` ≥ 3 (law and regularity, no special cases), with B scored on the person's account of nature (decision P6, 2026-10-02), both at certainty ≥ 0.7;
 - `false` when `A_locus` ≥ 3, or `A_locus` ≤ 1 with `B_cause` ≤ 1;
-- otherwise `UNKNOWN` (axis scores missing or below 0.7) or `BELOW_THRESHOLD`.
+- otherwise:
+  - `TODO`, with a note, if a needed axis is still `TODO`, or if both axes are scored at ≥ 0.7 but fall between the branches (A_locus = 2, or A_locus ≤ 1 with B_cause = 2); the note says the test has no branch for the case;
+  - `UNKNOWN` only if a needed axis is itself `UNKNOWN` (researched, no reliable source gives it), keeping the meaning of §4;
+  - `BELOW_THRESHOLD` if a needed axis is `BELOW_THRESHOLD` or scored only at 0.5, under the test's 0.7 bar; the note says which.
 
 Notes:
-- Score `B_cause` for the person's working science or method, and say so in its `rationale`. Someone may accept scriptural miracles and still allow no exemptions in their own field.
+- Score `B_cause` on the person's account of nature (P6), and say so in its `rationale`. For a scientist that is their working science. For a theologian or philosopher it is their account of the natural order: miracles and grace count against B only where they reach into it. If a theology-wide reading would differ, give it in the rationale. Someone may accept scriptural miracles and still allow no exemptions in nature.
 - "First-rank" is not part of the test. Apply F ≥ 3 alongside it.
 - The scale has only 1.0 / 0.7 / 0.5, so v7.1's "certainty ≥ 0.6" means ≥ 0.7.
 - Deists (DEISM) usually pass. This is a stated consequence of the test, not an exception (see METHOD §1.1).

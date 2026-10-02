@@ -621,7 +621,7 @@
               "$ref": "#/$defs/claimRules"
             }
           ],
-          "description": "v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored for the domain of the person's work, both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise UNKNOWN or BELOW_THRESHOLD. Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored."
+          "description": "v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored on the person's account of nature (decision P6, 2026-10-02), both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise TODO (a needed axis is TODO, or both are scored at >= 0.7 but fall between the branches: A_locus = 2, or A_locus <= 1 with B_cause = 2), UNKNOWN (only if a needed axis is UNKNOWN) or BELOW_THRESHOLD (a needed axis is BELOW_THRESHOLD or scored only at 0.5). Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored."
         },
         "statements": {
           "type": "array",

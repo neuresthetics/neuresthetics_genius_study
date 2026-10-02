@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -182,7 +183,7 @@ worldview:
     value: true
     certainty: 1.0
     cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, p. 657; X ch. 2, p. 664"}, {source: S3, locator: "§4"}]
-    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 1.0 and B_cause = 3 (≥ 3) at 1.0, B scored for the domain of his work (philosophy, natural science and medicine). Both certainties are at least 0.7, so true. F = 5, so first-rank is met."
+    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 1.0 and B_cause = 3 (≥ 3) at 1.0, B scored for the domain of his work (philosophy, natural science and medicine). Both certainties are at least 0.7, so true. Rechecked under decision P6 (2026-10-02): his account of nature is the same fixed order of causes, with prophetic miracles as the stated exception, so B stays 3 and the result is unchanged. F = 5, so first-rank is met."
   statements:
     - text: "noch auch außerhalb oder innerhalb der Welt sich befindet, noch irgend ein Ding darstellt, das beschaffen ist, wie die irdischen Dinge"
       cites: [{source: S6, locator: "X. Abhandlung, 2. Kapitel, p. 664"}]

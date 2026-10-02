@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -182,7 +183,7 @@ worldview:
     value: true
     certainty: 1.0
     cites: [{source: S8, locator: "pp. 376–377"}]
-    how_known: "Applied the P4 test to the axis scores above."
+    how_known: "Applied the P4 test to the axis scores above: A_locus = 0 at 1.0 and B_cause = 3 at 1.0, so true. Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his physics, so the result is unchanged."
     rationale: "P4 test (METHOD §1.1): A_locus = 0 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his physics at certainty 1.0. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately)."
   statements:
     - text: "Nothing is to be holy ground consecrated to Stationary Faith, whether positive or negative."

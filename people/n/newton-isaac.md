@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -191,7 +192,7 @@ worldview:
     value: true
     certainty: 1.0
     cites: [{source: S5, locator: "pp. 388–389"}, {source: S6, locator: "pp. 402–403"}, {source: S8, locator: "pp. 384–385"}]
-    how_known: "Applied the P4 test to the axis scores above."
+    how_known: "Applied the P4 test to the axis scores above: A_locus = 1 at 1.0 and B_cause = 3 at 1.0, so true. Rechecked under decision P6 (2026-10-02): B is scored on his account of nature, which is his natural philosophy, so the result is unchanged. The 'Reformation' passage stays a stated, limited exception inside that account (see the B_cause rationale)."
     rationale: "P4 test (METHOD §1.1): A_locus = 1 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his natural philosophy at certainty 1.0. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately). The B score is the weak point: if a reviewer scores B = 2 for the 'Reformation' passage, the test gives UNKNOWN, not false."
   statements:
     - text: "This most beautiful System of the Sun, Planets and Comets, could only proceed from the counsel and dominion of an intelligent and powerful being."

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-01, by: "Grok Bot", summary: "1844 exclusion: reason, length and restoration added from Cantor 2020 (S8), Brooke 1991 (S9) and Gladstone 1872/1873 (S10, S11); second eldership after 1860 added. Exact readmission date still a gap."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Schema 1.1. Era and region notes now cite the decided buckets (P2) and the region table (P3). mid_basin note: the P4 test exists; value stays TODO until A_locus and B_cause are scored."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "All five LIO axes and mid_basin scored from the sources already cited (no new sources): A 0, B 3 (his physics), D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7. Five statements added from Gladstone (S10) and Cantor (S8), checked word for word. Timing fields for LIO-type views filled; changes_over_life changed from an empty list to UNKNOWN. Primary system still TODO. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Primary system coded CHRIST at 0.7 (consistent private letters) from his own writings and the sources already cited; CLTHEI and CLASS_THEISM rejected with reasons. secondary_system UNKNOWN (no second system). B_cause and mid_basin rechecked under decision P6 (B on his account of nature): unchanged, B 3 and mid_basin true at 0.7. No new sources. Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -139,12 +140,20 @@ worldview:
     how_known: "His own words in a private letter (see statements). How far the separation went in his scientific thinking is disputed by historians."
     alternatives:
       - {value: "Convergent reading: his science and faith interacted (vocation, unity of forces, point-centre atoms and fields).", cites: [{source: S5, locator: "pp. 2–3"}], note: "Russell's argument against taking the 'two distinct things' sentence as the whole story."}
-  primary_system: {value: TODO, note: "Not coded in this example. Coding needs a reviewed pass under docs/CODING_GUIDE.md. See candidate_codes_considered."}
-  secondary_system: {value: TODO}
+  primary_system:
+    value: CHRIST
+    basis: consistent_private_letters
+    certainty: 0.7
+    cites: [{source: S3, locator: "final paragraph"}, {source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 37, 58, 99–100"}, {source: S5, locator: "pp. 1–2"}, {source: S9, locator: "para. on natural theology"}]
+    how_known: "His Christian belief is in his own words in private letters (S3, 1844; S4, 1861; the Comte de Paris letter through Gladstone, S10, p. 58), consistent with his public 1854 lecture as quoted by Gladstone (S10, pp. 99–100) and with his confession of faith and offices (S5, p. 2). The published lecture was read only as a secondary quotation, which cannot support 1.0, so 0.7."
+    rationale: "CHRIST fits 'the religion as practised and confessed' (CODING_GUIDE): his hope is 'founded on the faith that is in Christ' (S3), peace is 'alone in the gift of God', whose 'unspeakable gift in his beloved son' grounds hope (S4), and the truths of the future life are 'received through simple belief of the testimony given' (S10, pp. 99–100). Neither theism split fits better. Not CLASS_THEISM: 'There is no philosophy in my religion' (S3), and he rejected natural theology as 'superfluous and misguided' (S9); no argued simple, immutable God appears. Not CLTHEI: the writing read shows submission, not petition ('perfect trust and submission to God's will', S10, p. 37), and no expected acts of God against the course of nature; in nature God 'governs his material works by definite laws' (S8). CLTHEI's own guidance sends such a case to the host religion. Membership and eldership alone would not code him (CODING_GUIDE); his own writings do. The Sandemanian form is recorded in nominal_affiliations, not as a code."
+    alternatives:
+      - {value: CLTHEI, cites: [{source: S5, locator: "pp. 1–2"}], note: "Closest alternative. Russell calls the church evangelical and strongly Calvinist, and quotes J. M. Thomas that he accepted 'the literal truth of the Bible' (S5, p. 2), miracles included. Preferred only if his own writing showed petition answered by God or God acting in particular events beyond nature's course; none was found."}
+  secondary_system: {value: UNKNOWN, how_known: "No second system; he published in no other system, and he kept religion and natural philosophy as 'two distinct things' (S3) rather than as two systems."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Practising member and elder of a Christian church; hope 'founded on the faith that is in Christ' (S3).", cites: [{source: S3, locator: "final paragraph"}, {source: S5, locator: "p. 2"}]}
-    - {code: CLTHEI, reason: "Russell describes the church as evangelical and strongly Calvinist, appealing to biblical authority (p. 1), and quotes J. M. Thomas that Faraday accepted the literal truth of the Bible (p. 2). Check whether his written views include petition, providence or miracle.", cites: [{source: S5, locator: "pp. 1–2"}]}
-    - {code: CLASS_THEISM, reason: "Listed only to rule in or out. Nothing consulted shows an Aristotelian-Thomistic or falsafa framework; Russell reads 'no philosophy in my religion' as denying that natural knowledge could lead to God.", cites: [{source: S5, locator: "p. 2, 'Natural theology'"}]}
+    - {code: CHRIST, reason: "Chosen at 0.7. His own letters profess Christian faith: hope 'founded on the faith that is in Christ' (S3), God's 'unspeakable gift in his beloved son' (S4), and revealed truth 'received through simple belief of the testimony given' (S10, pp. 99–100). Neither theism split fits better.", cites: [{source: S3, locator: "final paragraph"}, {source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 99–100"}, {source: S5, locator: "p. 2"}]}
+    - {code: CLTHEI, reason: "Russell describes the church as evangelical and strongly Calvinist, appealing to biblical authority (p. 1), and quotes J. M. Thomas that Faraday accepted the literal truth of the Bible (p. 2). Rejected: his own writing read shows trust and submission (S10, p. 37), not petition that changes events, and in nature God works by 'definite laws' (S8). CLTHEI's guidance sends a person who accepts scriptural miracles but allows no exceptions in nature to the host religion.", cites: [{source: S5, locator: "pp. 1–2"}, {source: S10, locator: "p. 37"}, {source: S8, locator: "section 'Electric discoveries'"}]}
+    - {code: CLASS_THEISM, reason: "Rejected. Nothing consulted shows an Aristotelian-Thomistic or falsafa framework; Russell reads 'no philosophy in my religion' as denying that natural knowledge could lead to God.", cites: [{source: S5, locator: "p. 2, 'Natural theology'"}]}
   lio_axes:
     A_locus:
       value: 0
@@ -159,7 +168,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S8, locator: "section 'Electric discoveries'"}, {source: S9, locator: "paras. on laws of nature and forces"}, {source: S10, locator: "pp. 103, 118"}, {source: S5, locator: "pp. 2–3"}]
       how_known: "His own words through two historians' quotations (S8, S9) and a contemporary biographer (S10), consistent with each other. No direct primary text on the axis was read, so 0.7, not 1.0."
-      rationale: "Scored for his physics, as P4 asks. Leans to law. 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8). The beauty of electricity is that it is 'under law' (S9). He spoke of 'the unchangeability of the laws of nature' (S10, p. 103), and as a lecturer did not 'look beyond the natural laws he was describing' (S10, p. 118). He explained table-turning by 'a quasi involuntary muscular action', not a spirit (S8). The stated limited exception: creating or destroying force is 'only within the power of Him', which is why force is conserved (S8, 1857 discourse). So 3, the same as Maxwell's limit at the creation of molecules. If his whole religion were scored, B would be lower: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles. That is the question in open item P6; for Faraday the domain of work is clearly natural science."
+      rationale: "Scored for his physics, as P4 asks. Leans to law. 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8). The beauty of electricity is that it is 'under law' (S9). He spoke of 'the unchangeability of the laws of nature' (S10, p. 103), and as a lecturer did not 'look beyond the natural laws he was describing' (S10, p. 118). He explained table-turning by 'a quasi involuntary muscular action', not a spirit (S8). The stated limited exception: creating or destroying force is 'only within the power of Him', which is why force is conserved (S8, 1857 discourse). So 3, the same as Maxwell's limit at the creation of molecules. Under decision P6 (2026-10-02) B is scored on his account of nature, which for Faraday is his physics, so the score is unchanged. Theology-wide reading: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles, which would score lower."
     C_ledger:
       value: 1
       basis: scholarly_reconstruction
@@ -185,7 +194,7 @@ worldview:
     value: true
     certainty: 0.7
     cites: [{source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 58, 103"}, {source: S8, locator: "section 'Electric discoveries'"}]
-    how_known: "P4 test applied to the scores above: A_locus = 0 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7, B scored for the domain of his work (physics and chemistry). Both certainties are at least 0.7, so true. F = 5, so first-rank is met. This confirms the v7.1 starting label under the study's own test. Certainty 0.7 because the key B evidence is his words quoted by historians, not a primary text read here."
+    how_known: "P4 test applied to the scores above: A_locus = 0 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7, B scored on his account of nature, his physics and chemistry (P4 as amended by P6, 2026-10-02; the result is the same under the old wording). Both certainties are at least 0.7, so true. F = 5, so first-rank is met. This confirms the v7.1 starting label under the study's own test. Certainty 0.7 because the key B evidence is his words quoted by historians, not a primary text read here."
   statements:
     - text: "There is no philosophy in my religion[.] I am of a very small & despised sect of christians known, if known at all, as Sandemanians and our hope is founded on the faith that is in Christ. But though the natural works of God can never by any possibility come in contradiction with the higher things that belong to our future existence, and must with every thing concerning Him ever glorify him still I do not think it at all necessary to tie the study of the natural sciences & religion together and in my intercourse with my fellow creatures that which is religious & that which is philosophical have ever been two distinct things[.]"
       cites: [{source: S3, locator: "final paragraph (from Faraday's own copy, IEE MS SC 3, per the edition's note 4)"}]
@@ -244,7 +253,7 @@ worldview:
       verified_on: 2026-10-02
       note: "Quoted by Gladstone."
   changes_over_life: [{value: UNKNOWN, how_known: "No change of worldview is reported in S1–S11. He attended the Sandemanian chapel as a child and joined by confession of faith in 1821 (S5, p. 2); the brief exclusion of 1844 was over church discipline, not belief (S8)."}]
-  coder_notes: "Example record. Axes and mid_basin scored on 2026-10-02 from the sources already cited; the primary system is still TODO. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5. B is scored for his physics; his acceptance of the literal truth of the Bible would pull a whole-religion score lower (open item P6)."
+  coder_notes: "Example record. Axes, mid_basin and the primary system (CHRIST at 0.7) coded on 2026-10-02 from the sources already cited. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5. B is scored on his account of nature (decision P6); his acceptance of the literal truth of the Bible would pull a whole-religion score lower. The primary code's weak point is CHRIST versus CLTHEI: no petition or intervention language was found in his own words, but only a few letters were read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -412,7 +421,7 @@ sources:
 
 # Michael Faraday
 
-> Status: example — unreviewed. This file shows the record structure. LIO axes scored (A 0, B 3, D 1 at 0.7; C 1, E 1 at 0.5) and mid_basin true under the P4 test. No primary system code yet.
+> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 1 at 0.7; C 1, E 1 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
 
 ## Summary
 
@@ -447,7 +456,7 @@ He joined the Sandemanian church by confession of faith in 1821, within days of 
 
 In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces, and that a private memorandum on atoms and fields invokes God [S5, pp. 2–3]. In his science he looked for laws: Cantor quotes his belief that "the Creator governs his material works by definite laws resulting from the forces impressed on matter" [S8]. He held that force is conserved because creating or destroying it is "only within the power of Him" [S8]. For the future life he relied on revelation alone: its truth "is received through simple belief of the testimony given" [S10, pp. 99–100].
 
-Scoring (2026-10-02): A 0, B 3 (his physics) and D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7 under P4. The primary system code is still TODO.
+Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 37; S8]. A 0, B 3 (his account of nature, P6) and D 1 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
@@ -463,7 +472,7 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 
 ## Open questions
 
-- Primary code: CHRIST, CLTHEI, or something else? (See `candidate_codes_considered`.)
+- Primary code CHRIST versus CLTHEI: read more of his letters and prayers for petition or expected divine action in events. Would raise or overturn the 0.7.
 - B_cause 3 or 4: is the creation-of-force limit an exception or the edge of science? mid_basin is true either way.
 - Read a primary text for B (e.g. the 1857 conservation-of-force discourse) to raise its certainty.
 - Was a knighthood ever offered? Sources disagree [S1, Later life; S2; S5, p. 4].
@@ -476,3 +485,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 - 2026-10-01 (second pass): Closed most of the 1844 gap. Read Cantor's 2020 Christian History article (S8), Brooke's 1991 LRB review of Cantor's book (S9), and the first and second editions of Gladstone's biography (S11, S10; archive.org scans, plus the Gutenberg text of the 3rd edition). Cantor 1989 (S6) and Cantor 1991 are paywalled or lending-only and were not read. Every quoted phrase was checked word for word against the source text. Exact readmission date still not found.
 - 2026-10-01 (third pass): No new research. Updated for the decisions of 2026-10-01: schema 1.1, era and region notes (P2, P3), and the mid-basin note now points to the P4 test. `mid_basin` stays TODO until the axes are scored.
 - 2026-10-02 (fourth pass): Scored A–E and mid_basin from the sources already cited, re-reading S3, S4, S5, S8, S9 and S10 (Gutenberg 3rd edition and the archive.org 2nd-edition OCR). No new sources. Every new quotation was checked word for word with verify_quotes.py. Primary system left TODO.
+- 2026-10-02 (fifth pass): Decision P6 approved. Coded the primary system CHRIST at 0.7 from the sources already cited (S3, S4, S5, S8, S9, S10); no new sources. Rechecked B and mid_basin under P6: unchanged.

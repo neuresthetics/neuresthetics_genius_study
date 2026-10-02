@@ -2,15 +2,16 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools, adherents and coding guidance filled from SEP entries, the multi-author Britannica article and a Pew Research Center report. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Coding guidance wording: B_cause is scored on the person's account of nature, not their work or creed (decision P6). No scores changed."}
 identity:
   id: CHRIST
   v7_1_number: 68
@@ -91,7 +92,7 @@ revised_rubric:
   X: {score: TODO, rationale: ""}
 coding_guidance:
   use_when: "v7.1 coding rule (Split theisms): CLASS_THEISM (Aristotelian-Thomistic-Falsafa) is not CLTHEI (popular interventionist personal God) and not generic CHRIST/ISLAM/JUDA. Also (Scientists with church membership): Church tax / baptism ≠ ideology. Need writings. Faraday and Maxwell pass; many 19th-c names will be CHRIST-nominal / AGNOS-working. v8 note: use CHRIST when the person's own writing shows Christian belief (Christ, scripture, creeds, church) but not a more specific philosophical position. Record the branch (Catholic, Orthodox, Protestant confession, sect) in the person file; the code covers all of them."
-  do_not_use_when: "Membership, baptism, church tax or upbringing only: no code from that (CODING_GUIDE; v7.1 rule). The writing works out the classical simple God of Aquinas: CLASS_THEISM. The writing stresses a God who intervenes and answers petition beyond what the creeds say: consider CLTHEI. God made the world and does not intervene, and revelation is rejected: DEISM. Mainly Neoplatonic metaphysics with little that is specifically Christian: consider PLATO. Score B_cause for the person's work, not their creed (CODING_GUIDE §6)."
+  do_not_use_when: "Membership, baptism, church tax or upbringing only: no code from that (CODING_GUIDE; v7.1 rule). The writing works out the classical simple God of Aquinas: CLASS_THEISM. The writing stresses a God who intervenes and answers petition beyond what the creeds say: consider CLTHEI. God made the world and does not intervene, and revelation is rejected: DEISM. Mainly Neoplatonic metaphysics with little that is specifically Christian: consider PLATO. Score B_cause on the person's account of nature, not their creed (CODING_GUIDE §6; decision P6)."
   neighbors:
     - {code: CLASS_THEISM, relation: "neighbor (easily confused)"}
     - {code: CLTHEI, relation: "neighbor (easily confused)"}
@@ -145,7 +146,7 @@ SEP uses the two books metaphor as its starting point: God revealed Godself thro
 
 ## Coding guidance
 
-Membership, baptism or church tax is not ideology: the person needs writings (v7.1 rule). Use CHRIST when the person's own writing shows Christian belief but not a narrower position. If they work out Aquinas's simple God, use CLASS_THEISM. If they stress intervention and answered petition beyond the creeds, consider CLTHEI. If they reject revelation and keep a non-intervening creator, use DEISM. Score B_cause for the person's work, not their creed (CODING_GUIDE §6). Record the branch in the person file.
+Membership, baptism or church tax is not ideology: the person needs writings (v7.1 rule). Use CHRIST when the person's own writing shows Christian belief but not a narrower position. If they work out Aquinas's simple God, use CLASS_THEISM. If they stress intervention and answered petition beyond the creeds, consider CLTHEI. If they reject revelation and keep a non-intervening creator, use DEISM. Score B_cause on the person's account of nature, not their creed (CODING_GUIDE §6; decision P6). Record the branch in the person file.
 
 ## v7.1 scoring note
 

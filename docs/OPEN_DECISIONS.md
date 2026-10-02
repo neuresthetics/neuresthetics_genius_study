@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 one item is open (P6). When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 no items are open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-All 19 recommendations below were decided on 2026-10-01. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6, added later, was decided on 2026-10-02. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -23,7 +23,7 @@ All 19 recommendations below were decided on 2026-10-01. Evidence files are in `
 | P1 | Approve the 0–4 scale | medium-high | decided 2026-10-01 |
 | P2 | Approve; key on first lasting contribution, keep birth year too | medium-high | decided 2026-10-01 |
 | P3 | Approve, with a country-to-region table (settle MENA, Iran, Afghanistan) | medium | decided 2026-10-01 |
-| P4 | Axis test: A_locus ≤ 1 and B_cause (in the work) ≥ 3, both at certainty ≥ 0.7 | medium | decided 2026-10-01 |
+| P4 | Axis test: A_locus ≤ 1 and B_cause (in the work) ≥ 3, both at certainty ≥ 0.7 | medium | decided 2026-10-01; B amended by P6 |
 | P5 | Approve: only a named human sets "reviewed" | high | decided 2026-10-01 |
 | S1 | Approve "Interventionist personal theism" | medium-high | decided 2026-10-01 |
 | S2 | Use the full original label, found in V6: "Pantheism (Spinozistic/naturalistic 'God = Universe')" | high | decided 2026-10-01 |
@@ -31,34 +31,17 @@ All 19 recommendations below were decided on 2026-10-01. Evidence files are in `
 | S4 | Keep the 77 codes closed for v8; batch any new codes into one schema bump | medium-high | decided 2026-10-01 |
 | S5 | Change both to "neighbor (easily confused)" | medium | decided 2026-10-01 |
 | S6 | Two-part PANT test; host tradition or PANENT for Advaita/Kabbalah; STOIC for Stoics | medium | decided 2026-10-01 |
+| P6 | P4: score B_cause on the person's account of nature; TODO (not UNKNOWN) when the test has no branch | medium | decided 2026-10-02 (added by the people run) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-### P6. P4: is B_cause scored on the person's account of nature?
-**Status: open (added 2026-10-02 by the overnight people run). Nothing downstream treats it as settled.**
-
-P4 says B_cause is "scored for the domain of the person's work" (METHOD §1.1). For a natural scientist that domain is nature. For a theologian it is unclear: is the domain the person's account of the natural order, or their whole theology, miracles and grace included? The P4 recommendation note says "B should be scored for whatever their work was", which points to the whole theology, but the v7.1 passages it rests on ("devout and lawful", "Classical theism can sit mid-to-high on lawfulness") are about lawful nature.
-
-The case that raised it is Thomas Aquinas (`people/a/aquinas-thomas.md`):
-
-- Scored on his whole theology, B_cause = 2 at 1.0. He holds an order of secondary causes, and petition does not change God, but God "can do something outside this order created by Him, when He chooses" (ST I q. 105 a. 6), and the miracles are evidence for the faith. A = 1, so P4 gives neither true nor false.
-- Scored on his account of nature only, B_cause = 3. That is the score the CLASS_THEISM system record gives Thomism, and with A = 1 the test gives true.
-
-A second, smaller gap: P4's "otherwise UNKNOWN or BELOW_THRESHOLD" also catches B = 2 at high certainty. The recommendation note meant UNKNOWN for scores that are "missing or below 0.7". In the coding guide UNKNOWN means "researched, not in any reliable source", which does not fit a case where the evidence is in and the test has no branch for it. Until this is decided, the Aquinas record has `mid_basin: TODO` with a note.
-
-**Options:**
-1. Score B on the person's account of the natural order, for everyone. Theological miracles count against B only when they reach into the person's account of nature.
-2. Score B on the whole of the person's work, as now. Then decide what a B = 2 result is: false, a new "mixed" outcome, or TODO/UNKNOWN.
-3. Keep one B score, but add a `B_cause_in_nature` field in a later schema version (the P4 note already floated a `B_cause_in_work` field) and run the test on that field.
-
-**Proposal (people run, 2026-10-02, PROPOSED only):** option 1, with the theology-wide reading kept in the B rationale. The v7.1 texts that define the group are about lawful nature. Under option 1, Aquinas would be B 3 and mid_basin true; Ibn Sina is unchanged (B 3 either way). Confidence: medium. Also settle the label for "evidence complete, test has no branch" (suggest TODO with a note, not UNKNOWN).
-
+No items are open.
 
 ## Decided
 
-All 19 items, in id order.
+All 20 items, in id order (P6 is placed after P5).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -262,7 +245,7 @@ The list is based on UN M49, applied to modern borders. It has 13 regions:
 **Recommendation (v8 agent, 2026-10-01):** **approve, with a published country-to-region table so coders don't guess.** Confidence: medium. UN M49 is the standard reproducible scheme, and modern borders avoid arguments over historical polities (the record already has `polity_then` for that). Two points to fix in the table: (1) M49 has no "Middle East and North Africa" region; it splits Northern Africa (Africa) from Western Asia (Asia). The proposed list merges them, which is common practice but should be listed country by country. (2) M49 puts Iran and Afghanistan in Southern Asia. So Persian-born figures, and Rumi (born at Balkh), would be "South Asia" unless the table moves Iran and Afghanistan to MENA or Central Asia. Decide that once, in the table.
 
 ### P4. Mid-basin: operational definition
-**Decided 2026-10-01 by Jason (approved as recommended):** `mid_basin` is true when A_locus ≤ 1 and B_cause ≥ 3 (B scored for the domain of the work), both at certainty ≥ 0.7; false when A_locus ≥ 3, or A_locus ≤ 1 with B_cause ≤ 1; otherwise UNKNOWN or BELOW_THRESHOLD. Deists pass the test; this is recorded in METHOD §1.1 as a stated consequence, with no exclusion.
+**Decided 2026-10-01 by Jason (approved as recommended); B wording amended by P6 on 2026-10-02:** `mid_basin` is true when A_locus ≤ 1 and B_cause ≥ 3 (B scored for the domain of the work; since P6, on the person's account of nature), both at certainty ≥ 0.7; false when A_locus ≥ 3, or A_locus ≤ 1 with B_cause ≤ 1; otherwise UNKNOWN or BELOW_THRESHOLD (P6 split this branch: TODO with a note when the test has no branch, UNKNOWN only for an UNKNOWN axis, BELOW_THRESHOLD for an axis below 0.7). Deists pass the test; this is recorded in METHOD §1.1 as a stated consequence, with no exclusion.
 
 The original question and the recommendation are kept below for the record.
 The v7.1 papers use "mid-basin theists" and name the first pool (Faraday, Maxwell, Newton, Aquinas, Ibn Sina, Gödel) as a stress test, but give no test for membership. `worldview.mid_basin` stays `TODO` everywhere until there is one. That includes Faraday, even though v7.1 treats him as one.
@@ -301,6 +284,27 @@ The original question and the recommendation are kept below for the record.
 **Proposal:** only a named human reviewer. Agents stop at `draft — unreviewed`.
 
 **Recommendation (v8 agent, 2026-10-01):** **approve.** Confidence: high. This is the standard two-person rule for research data: the producer doesn't sign off its own work. It also keeps the provenance trail honest, because `reviewed` then always names a person. Suggest recording the reviewer's name and date in the existing `review` fields, and letting agents set `draft — unreviewed` and `example — unreviewed` only.
+
+### P6. P4: is B_cause scored on the person's account of nature?
+**Decided 2026-10-02 (12:36 AM PT) by Jason (approved as proposed):** for the P4 test, B_cause is scored on the person's account of nature; theology-wide readings go in the B rationale. When both axes are scored at ≥ 0.7 but the test has no branch (A_locus = 2, or A_locus ≤ 1 with B_cause = 2), `mid_basin` is `TODO` with a note; `UNKNOWN` is used only when a needed axis is itself `UNKNOWN`, and `BELOW_THRESHOLD` when a needed axis is `BELOW_THRESHOLD` or only at 0.5. Updated: METHOD §1.1, CODING_GUIDE §6, the `mid_basin` schema description, the person template comment, `systems/CHRIST.md` coding guidance, and the Aquinas record (B 3, `mid_basin` true).
+
+The original question and the proposal are kept below for the record.
+
+P4 says B_cause is "scored for the domain of the person's work" (METHOD §1.1). For a natural scientist that domain is nature. For a theologian it is unclear: is the domain the person's account of the natural order, or their whole theology, miracles and grace included? The P4 recommendation note says "B should be scored for whatever their work was", which points to the whole theology, but the v7.1 passages it rests on ("devout and lawful", "Classical theism can sit mid-to-high on lawfulness") are about lawful nature.
+
+The case that raised it is Thomas Aquinas (`people/a/aquinas-thomas.md`):
+
+- Scored on his whole theology, B_cause = 2 at 1.0. He holds an order of secondary causes, and petition does not change God, but God "can do something outside this order created by Him, when He chooses" (ST I q. 105 a. 6), and the miracles are evidence for the faith. A = 1, so P4 gives neither true nor false.
+- Scored on his account of nature only, B_cause = 3. That is the score the CLASS_THEISM system record gives Thomism, and with A = 1 the test gives true.
+
+A second, smaller gap: P4's "otherwise UNKNOWN or BELOW_THRESHOLD" also catches B = 2 at high certainty. The recommendation note meant UNKNOWN for scores that are "missing or below 0.7". In the coding guide UNKNOWN means "researched, not in any reliable source", which does not fit a case where the evidence is in and the test has no branch for it. Until this was decided, the Aquinas record had `mid_basin: TODO` with a note.
+
+**Options:**
+1. Score B on the person's account of the natural order, for everyone. Theological miracles count against B only when they reach into the person's account of nature.
+2. Score B on the whole of the person's work, as now. Then decide what a B = 2 result is: false, a new "mixed" outcome, or TODO/UNKNOWN.
+3. Keep one B score, but add a `B_cause_in_nature` field in a later schema version (the P4 note already floated a `B_cause_in_work` field) and run the test on that field.
+
+**Proposal (people run, 2026-10-02, PROPOSED only):** option 1, with the theology-wide reading kept in the B rationale. The v7.1 texts that define the group are about lawful nature. Under option 1, Aquinas would be B 3 and mid_basin true; Ibn Sina is unchanged (B 3 either way). Confidence: medium. Also settle the label for "evidence complete, test has no branch" (suggest TODO with a note, not UNKNOWN).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

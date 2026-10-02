@@ -86,7 +86,7 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
     C_ledger: {value: TODO}
     D_authority: {value: TODO}
     E_scope: {value: TODO}
-  mid_basin: {value: TODO}                # P4 test: true if A_locus <= 1 and B_cause (in the work) >= 3, both certainty >= 0.7; see METHOD
+  mid_basin: {value: TODO}                # P4/P6 test: true if A_locus <= 1 and B_cause (account of nature) >= 3, both certainty >= 0.7; see METHOD
   statements: []                          # verbatim quotes only; - {text: "...", cites: [...], date: "1844-10-24", kind: "private letter", verified_against: "primary transcription", verified_on: 2026-01-01}
   changes_over_life: []
   coder_notes: ""

@@ -2,16 +2,17 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Display label approved (OPEN_DECISIONS S1); CLASS_THEISM relation changed to 'neighbor (easily confused)' (S5)."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from six SEP entries and two Britannica articles. v7.1 scores and note unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Coding guidance wording: B_cause is scored on the person's account of nature (decision P6). No scores changed."}
 identity:
   id: CLTHEI
   v7_1_number: 72
@@ -94,7 +95,7 @@ revised_rubric:
   X: {score: TODO, rationale: ""}
 coding_guidance:
   use_when: "v7.1 coding rule (Split theisms): CLASS_THEISM (Aristotelian-Thomistic-Falsafa) is not CLTHEI (popular interventionist personal God) and not generic CHRIST/ISLAM/JUDA. v8 coding guide: CLTHEI is the popular interventionist personal God who answers petition and works miracles. Use it when the person's own writing (1) treats God as a person who responds to requests or to events, and (2) expects God to act in particular events, against or beyond the regular course of nature (S3 §1; S6 §3.1). Interventionist creationism and open theism fall here."
-  do_not_use_when: "God is simple and immutable and prayer does not change God (Aquinas, Avicenna, Maimonides): CLASS_THEISM. The working view is the confessed religion and the writing does not show an interventionist God more than its creeds do: CHRIST, ISLAM or JUDA. God made the world and its laws and then does not intervene: DEISM. Accepts scriptural miracles but allows no exceptions in their own science: still score B_cause for the work (CODING_GUIDE §6), and consider the host religion or CLASS_THEISM before CLTHEI. Church membership or upbringing alone: never a code."
+  do_not_use_when: "God is simple and immutable and prayer does not change God (Aquinas, Avicenna, Maimonides): CLASS_THEISM. The working view is the confessed religion and the writing does not show an interventionist God more than its creeds do: CHRIST, ISLAM or JUDA. God made the world and its laws and then does not intervene: DEISM. Accepts scriptural miracles but allows no exceptions in their account of nature: still score B_cause on their account of nature (CODING_GUIDE §6; decision P6), and consider the host religion or CLASS_THEISM before CLTHEI. Church membership or upbringing alone: never a code."
   neighbors:
     - {code: CLASS_THEISM, relation: "neighbor (easily confused)"}
     - {code: CHRIST, relation: "neighbor (easily confused)"}
@@ -153,7 +154,7 @@ SEP says the law-based physics of the seventeenth and eighteenth centuries "seem
 
 ## Coding guidance
 
-Use CLTHEI when the person's own writing treats God as a person who responds to requests or events and acts in particular events beyond the regular course of nature [S3, §1; S6, §3.1]. Use CLASS_THEISM for a simple, immutable God whom prayer does not change, DEISM for a God who does not intervene, and CHRIST, ISLAM or JUDA for the confessed religion when the writing shows nothing more specific. Score B_cause for the person's work: someone can accept scriptural miracles and allow no exceptions in their science (CODING_GUIDE §6).
+Use CLTHEI when the person's own writing treats God as a person who responds to requests or events and acts in particular events beyond the regular course of nature [S3, §1; S6, §3.1]. Use CLASS_THEISM for a simple, immutable God whom prayer does not change, DEISM for a God who does not intervene, and CHRIST, ISLAM or JUDA for the confessed religion when the writing shows nothing more specific. Score B_cause on the person's account of nature: someone can accept scriptural miracles and allow no exceptions in nature (CODING_GUIDE §6; decision P6).
 
 ## v7.1 scoring note
 

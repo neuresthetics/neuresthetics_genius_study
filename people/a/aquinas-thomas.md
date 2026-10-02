@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from the Summa theologiae (English Dominican translation) and three reference sources. mid_basin UNKNOWN: B_cause scored 2, which the P4 test does not cover. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin changed from UNKNOWN to TODO with a note: the evidence is in, but P4 does not say whether B is scored on his theology or his account of nature (new open item P6). key_early_reading changed from an empty list to UNKNOWN, as the coding guide asks."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P6 decided by Jason (2026-10-02): B_cause is scored on the account of nature. B_cause changed from 2 to 3 at 1.0, with the theology-wide reading (2) kept in the rationale; added the I q. 105 a. 5 statement. mid_basin changed from TODO to true at 1.0. Not reviewed."}
 
 identity:
   id: aquinas-thomas
@@ -147,12 +148,12 @@ worldview:
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Leans to the transcendent-person pole. God is the first efficient cause, not the world-soul and not the form or matter of anything (I q. 3 a. 8), and has intellect and will. But he is in all things, 'as an agent is present to that upon which it works' (I q. 8 a. 1), and his personhood is spoken of by analogy. So 1, not 0. This matches the CLASS_THEISM system record (A 1)."
     B_cause:
-      value: 2
+      value: 3
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S4, locator: "I q. 22 a. 3; q. 105 a. 6–7; II-II q. 83 a. 2"}, {source: S1, locator: "Years at the papal Curia"}, {source: S3, locator: "§2 (SCG I.6 on miracles)"}]
+      cites: [{source: S4, locator: "I q. 22 a. 3; q. 105 a. 5–7; II-II q. 83 a. 2"}, {source: S1, locator: "Years at the papal Curia"}, {source: S3, locator: "§2 (SCG I.6 on miracles)"}]
       how_known: "Summa theologiae; written profession, so 1.0."
-      rationale: "Scored for the domain of his work, which is theology as well as philosophy. Both poles are present. Law side: God governs lower things through higher ones so that 'the dignity of causality is imparted even to creatures' (I q. 22 a. 3); petition does not change God, since we pray for what God has already disposed to give through our prayers (II-II q. 83 a. 2); Britannica says he held that nature 'has necessary laws' and avoided 'a naive recourse to the miraculous' (S1). Exception side: God 'can do something outside this order created by Him, when He chooses' (I q. 105 a. 6); miracles are real (I q. 105 a. 7), and he treats the biblical miracles as historically reliable evidence for the faith (S3). In his theology the miracles are not a small stated exception but a working part of the case for the faith, so 2. A reviewer who scores only his account of nature would give 3, as the CLASS_THEISM system record does for Thomism."
+      rationale: "Scored on his account of nature, as decision P6 asks. Leans LIO with a stated, limited exception. Nature runs by created causes with real powers of their own: he rejects the view that 'it is not fire that gives heat, but God in the fire', and holds that 'God works in things in such a manner that things have their proper operation' (I q. 105 a. 5). God governs lower things through higher ones so that 'the dignity of causality is imparted even to creatures' (I q. 22 a. 3), and petition does not change God (II-II q. 83 a. 2). Britannica says he held that nature 'has necessary laws' and avoided 'a naive recourse to the miraculous' (S1). The exception is the miracle: God 'can do something outside this order created by Him, when He chooses' (I q. 105 a. 6), and such works are miracles (a. 7). So 3, the score the CLASS_THEISM system record gives Thomism. Theology-wide reading (recorded as P6 asks): in his theology the biblical miracles are a working part of the case for the faith (S3, SCG I.6), which would score 2; that was this record's score before P6."
     C_ledger:
       value: 1
       basis: written_profession
@@ -175,8 +176,10 @@ worldview:
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Mixed. Same rules for all: all things, even individual ones, are under one providence (I q. 22 a. 2), and the general principles of natural law are 'the same for all' (I-II q. 94 a. 4). But salvation runs by grace that God gives to some and not to others: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). That is a reserved in-group within an otherwise common order, so 2."
   mid_basin:
-    value: TODO
-    note: "Not a gap in the evidence: the P4 test does not settle this case (open item P6 in docs/OPEN_DECISIONS.md). A_locus = 1 at 1.0. B_cause, scored on his whole theology as P4's 'domain of the person's work' reads for a theologian, is 2 at 1.0, and P4 has no true or false branch for B = 2. Scored on his account of the natural order only, B would be 3 (as the CLASS_THEISM system record scores Thomism), and the test would give true. F = 4, so first-rank is met. Set the value once P6 is decided."
+    value: true
+    certainty: 1.0
+    cites: [{source: S4, locator: "I q. 3 a. 8; q. 8 a. 1; q. 22 a. 3; q. 105 a. 5–7"}]
+    how_known: "P4 test as amended by P6 (2026-10-02): A_locus = 1 at 1.0 and B_cause = 3 at 1.0, B scored on his account of nature. Both at certainty >= 0.7, so true. F = 4, so first-rank is met. On his whole theology B would be 2, and the test would have no branch (see the B_cause rationale)."
   statements:
     - text: "Therefore some intelligent being exists by whom all natural things are directed to their end; and this being we call God."
       cites: [{source: S4, locator: "I q. 2 a. 3 (fifth way)"}]
@@ -203,6 +206,13 @@ worldview:
     - text: "He governs things inferior by superior, not on account of any defect in His power, but by reason of the abundance of His goodness; so that the dignity of causality is imparted even to creatures."
       cites: [{source: S4, locator: "I q. 22 a. 3"}]
       context: "Whether God has immediate providence over everything."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-02
+    - text: "We must therefore understand that God works in things in such a manner that things have their proper operation."
+      cites: [{source: S4, locator: "I q. 105 a. 5"}]
+      context: "Whether God works in every agent. Just before, he rejects the view that 'it is not fire that gives heat, but God in the fire'."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
@@ -288,7 +298,7 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "Stopped writing, leaving the Summa theologiae unfinished, after a powerful religious experience while writing on the sacraments", year: 1273, age: "c. 48", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Two sources agree. It ends his writing; it is not a change of system."}
-  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B = 2 and D = 1, where the CLASS_THEISM system record has B 3 and D 2 for the code as a whole. B = 2 leaves mid_basin TODO, because P4 does not say whether B is scored on his theology or on his account of nature; this is open item P6. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
+  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B and D. B is 3 on his account of nature (decision P6, 2026-10-02), matching the CLASS_THEISM system record; on his whole theology it would be 2. D = 1, where the system record has 2 for the code as a whole. mid_basin is true under the P4 test as amended by P6. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -348,7 +358,6 @@ review:
     - "Section numbers for S2 and S3 are the coder's reading of the fetched page headings."
   open_questions:
     - "Read the Summa contra gentiles III (providence, miracles) and the Sentences commentary to date his views earlier and to check B_cause."
-    - "Open item P6 (docs/OPEN_DECISIONS.md): score B_cause on his whole theology (2; P4 has no branch) or on his account of nature (3; mid_basin true)?"
     - "Torrell's biography for household practice, baptism and childhood instruction."
 
 sources:
@@ -403,7 +412,7 @@ sources:
 
 # Thomas Aquinas
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored at 1.0; mid_basin TODO because P4 does not settle B_cause for a theologian (open item P6).
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored at 1.0; mid_basin true at 1.0 (B_cause scored on his account of nature, decision P6).
 
 ## Summary
 
@@ -428,9 +437,9 @@ The family held a modest feudal domain and served Emperor Frederick II. His fath
 
 ## Adult working worldview
 
-Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
+Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But Created things have "their proper operation" [S4, I q. 105 a. 5]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
 
-Coding: CLASS_THEISM at 1.0. A 1, B 2, C 1, D 1, E 2, all at 1.0 from written profession. mid_basin TODO until open item P6 is decided (see Open questions).
+Coding: CLASS_THEISM at 1.0. A 1, B 3, C 1, D 1, E 2, all at 1.0 from written profession. B is scored on his account of nature (decision P6); on his whole theology it would be 2. mid_basin true at 1.0.
 
 ## Heritage (context only)
 
@@ -446,7 +455,6 @@ Everything in this section is Lane B: labeled belief, not a finding. The form is
 
 ## Open questions
 
-- Open item P6: is B_cause scored on his theology (2, no P4 branch) or on his account of nature (3, mid_basin true)?
 - Read the Summa contra gentiles III and the Sentences commentary for earlier dates and a check on B.
 - Torrell's biography for household practice, baptism and early instruction.
 
