@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Stuewer, first page), MacTutor and the Nobel biography. Worldview from the German text of 'Religion und Naturwissenschaft' (1937 lecture; copy of the 1938 second edition), the English Where Is Science Going? (1933, Murphy) and Heilbron (1986) as quoted on the web. Coded DEISM at 0.5 (PANT and CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7), E 3 (0.7); C BELOW_THRESHOLD. mid_basin TODO: the P4 test has no branch for A_locus = 2. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Pages: 'heiligste Symbol' is copy p. 5 and 'wesensgleich' copy p. 12. Framing: 'regiert er die Welt' is a question he poses and the 'almighty hand / Gläubige und Ungläubige' passage is the religious person's answer; A and E rationales no longer treat them as his own views. Glosses that are Gaynor's wording are marked 'cross-checked with Gaynor'. Heilbron: 'deism' unconfirmed in the book; Wikipedia's p. 198 is the 2000 Harvard printing; S6 citation fixed and the label no longer used as support. New S9 (Gladigow 1986) confirms the 1947 letter in German (citing Herneck 1952) and reports a 1945 letter (Bertholet 1948) that seems to show a more personal God; added as counter-evidence on A and on DEISM vs CHRIST (no certainty change: A stays 2 at 0.7 with alternative 1 strengthened; DEISM already at 0.5). Finding #127: DEISM rationale rewritten for 'einzig und allein Sache des Glaubens' and the non-rational direct link with God. Finding #132: E_scope 3 → 4 (0.7). Finding #135: nominal affiliation role 'member' → 'other' (membership unsourced). Two statements added (p. 6 faith-alone sentence; p. 11 world order). mid_basin unchanged (TODO, A = 2). primary_system unchanged (DEISM 0.5). Not reviewed."}
 
 identity:
   id: planck-max
@@ -85,32 +86,32 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1879–1947", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 2, 9"}], how_known: "Doctorate to death; he lectured on religion and science into old age."}
   nominal_affiliations:
-    - {value: "Protestant church tradition; Heilbron's account shows him denying a rumoured conversion to Catholicism in 1947", years: "1858–1947", role: member, certainty: 0.5, cites: [{source: S1, locator: "early life paragraph"}, {source: S6, locator: "Heilbron quotation"}], how_known: "Membership itself (Lutheran, and the commonly reported church-elder role) was not found in the sources read; family tradition and the 1947 denial only, so 0.5."}
+    - {value: "Protestant church tradition of his family; in 1947 he denied a rumoured conversion to Catholicism", years: "1858–1947", role: other, certainty: 0.5, cites: [{source: S1, locator: "early life paragraph"}, {source: S9, locator: "p. 327; nn. 47–48"}, {source: S6, locator: "Heilbron quotation"}], how_known: "Family tradition (S1: 'devotion to church and state') and the 1947 denial only. Church membership or office is unsourced: neither membership (Lutheran) nor the commonly reported church-elder role was found in the sources read, so the role is 'other', not 'member' (lens audit, batch 2, finding #135)."}
   self_described_science_religion_relation:
     value: "Religion and natural science 'mutually supplement and condition each other'; both need belief in God, for religion at the start and for science at the end of all thought; science is for knowing, religion for acting. Belief in nature-miracles must retreat before science."
     certainty: 1.0
     cites: [{source: S4, locator: "copy pp. 2, 11–13"}, {source: S7, locator: "1937 lecture transcription"}, {source: S5, locator: "pp. 159, 168"}]
-    how_known: "His own public lecture (1937) and book (1933 English edition)."
+    how_known: "His own public lecture (1937) and book (1933 English edition). 'mutually supplement and condition each other' is the coder's gloss of 'sie ergänzen und bedingen einander' (copy p. 12), cross-checked with Gaynor (S7), whose wording it is."
   primary_system:
     value: DEISM
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S4, locator: "copy pp. 2, 6, 11–12"}, {source: S6, locator: "Heilbron quotation"}]
-    how_known: "His 1937 lecture affirms a God reached by reason through the lawful 'world order' and says belief in nature-miracles must vanish; creeds and symbols are of human origin. Heilbron calls this 'Planck's deism' and reports a 1947 reply denying belief 'in a personal God, let alone a Christian God'. Heilbron was read only through a web quotation (S6), and two codes are named, so 0.5, below the 0.7 cap. DEISM is a sourced system file (draft)."
-    rationale: "English phrases from S4 are the coder's glosses. DEISM's test: own writing affirms a God known by reason from order and rejects miracles and the absolute authority of church teaching. Planck meets the first two directly (S4, pp. 2, 11–12) and the third in part (symbols are human, never absolute, S4 p. 6). Alternatives: PANT, because the lecture 'identifies' the world order of natural science with the God of religion and calls the deity 'wesensgleich' (consubstantial) with the power acting by natural law (part 1 of the PANT test is close but the lecture also has God 'ruling over Nature', so not clearly met); CHRIST, because he stayed in the Protestant church, valued religious symbols and cited 'the teachings of Jesus' (blog, not used). DEISM's own do-not-use note (God identified with the universe) is why certainty is held at 0.5."
+    cites: [{source: S4, locator: "copy pp. 2, 5, 6, 11–12"}, {source: S9, locator: "p. 327; n. 48"}, {source: S6, locator: "Heilbron quotation"}]
+    how_known: "His 1937 lecture says belief in nature-miracles must retreat before science (copy p. 2) and that even the holiest symbol is of human origin (copy p. 5); religion and science agree that a rational world order independent of humans exists, and the scientist approaches 'Gott und seiner Weltordnung' by inductive research (copy pp. 11–12). His 1947 letter denies belief 'in a personal God, let alone a Christian God' (Heilbron via S6; the German in Gladigow, S9, citing Herneck 1952). 0.5, below the 0.7 cap: two codes are named; Heilbron's 'deism' is unconfirmed in the book and is not used as support; and a 1945 letter (Bertholet 1948, known only through S9, n. 48) seems to show a more personal God. DEISM is a sourced system file (draft)."
+    rationale: "English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). DEISM use_when: own writing affirms a creator known by reason and rejects revelation, miracles and church authority as sources of religious knowledge. Met: belief in nature-miracles must retreat (copy p. 2); symbols and rite are indispensable but 'auch das heiligste Symbol menschlichen Ursprungs ist' (copy p. 5); the world order that science reaches is to be identified with God (copy p. 11). Only partly met, 'known by reason': whether God rules the world independently of belief 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären' and is 'einzig und allein Sache des Glaubens' (copy p. 6), and for action he relies on 'die bestimmte und klare Weisung … aus der unmittelbaren Verbindung mit Gott' (copy p. 12), a non-rational link, where DEISM has reason and nature only. So DEISM fits his rejection of miracle and doctrine, not a reasoned proof of God. Heilbron's 'Planck's deism' (S6) is unconfirmed in the book and is loose: it describes a religion that 'omitted all reference to established religions', and DEISM's do-not-use note warns against coding from a label. Alternatives: PANT (the identification sentence and 'wesensgleich', copy pp. 11–12; part 1 of the PANT test not clearly met, since the same lecture speaks of 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11); CHRIST (Protestant tradition; valued religious symbols; the 1945 letter reported by Bertholet seems to show a more personal God, S9 n. 48; against it, the 1947 denial of a personal and a Christian God, now confirmed in German, S9). Held at 0.5."
   secondary_system: {value: UNKNOWN, how_known: "No second system settled; PANT and CHRIST are named alternatives."}
   candidate_codes_considered:
-    - {code: DEISM, reason: "Chosen at 0.5: a God reached by reason through the world order, no miracles, creeds of human origin; Heilbron's label.", cites: [{source: S4, locator: "copy pp. 2, 11–12"}, {source: S6, locator: "Heilbron quotation"}]}
-    - {code: PANT, reason: "Named alternative: the world order of science and the God of religion are to be identified. Not chosen: the same lecture keeps God 'ruling over Nature' and holding the world 'in his almighty hand'. PANT is a sourced system file.", cites: [{source: S4, locator: "copy pp. 11–12"}]}
-    - {code: CHRIST, reason: "Named alternative: Protestant family and church tradition. Not chosen: he denied a personal and a Christian God (S6) and expected belief in miracles to vanish. CHRIST is a sourced system file.", cites: [{source: S1, locator: "early life paragraph"}, {source: S6, locator: "Heilbron quotation"}]}
+    - {code: DEISM, reason: "Chosen at 0.5: miracles rejected, symbols and creeds of human origin, God identified with the world order; but God's independent rule is a matter of faith alone for him, and action rests on a direct link with God. Heilbron's label is unconfirmed in the book and not used as support.", cites: [{source: S4, locator: "copy pp. 2, 5, 6, 11–12"}, {source: S6, locator: "Heilbron quotation"}]}
+    - {code: PANT, reason: "Named alternative: the world order of science and the God of religion are to be identified. Not chosen: the same lecture speaks of the omnipotent Reason that rules over Nature (his own voice). PANT is a sourced system file.", cites: [{source: S4, locator: "copy pp. 11–12"}]}
+    - {code: CHRIST, reason: "Named alternative: Protestant family and church tradition; a 1945 letter quoted by Bertholet (1948) seems to show a more personal God (S9, n. 48; not read). Not chosen: in 1947 he denied a personal and a Christian God (S6; German in S9) and expected belief in miracles to vanish. CHRIST is a sourced system file.", cites: [{source: S1, locator: "early life paragraph"}, {source: S9, locator: "p. 327; n. 48"}, {source: S6, locator: "Heilbron quotation"}]}
   lio_axes:
     A_locus:
       value: 2
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "copy pp. 6, 11–12"}, {source: S6, locator: "Heilbron quotation"}]
-      how_known: "His own lecture holds both sides. Contested, so 0.7."
-      rationale: "English phrases from S4 are the coder's glosses. Mixed. Toward the LIO pole: God is to be identified with 'the world order of natural science' and is consubstantial with the power acting by natural law (copy p. 11); he did not believe in a personal God (S6). Toward the other pole: God 'rules the world' independently of belief and holds it 'in his almighty hand' (copy p. 6), and the 'omnipotent Reason' rules 'over Nature' (copy p. 11). Alternatives: 3 if the identification sentence is taken as his settled view; 1 on Heilbron's deist reading."
+      cites: [{source: S4, locator: "copy pp. 6, 11–12"}, {source: S9, locator: "p. 327; n. 48"}, {source: S6, locator: "Heilbron quotation"}]
+      how_known: "His own lecture holds both sides; contested, so 0.7. The 1945 counter-evidence is known only through Gladigow's note, so it strengthens a named alternative rather than moving the score."
+      rationale: "English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). Mixed. Toward the LIO pole, in his own voice: the world order of natural science and the God of religion are to be identified (copy p. 11), and the deity is 'wesensgleich' (Gaynor: 'consubstancial') with the power acting by natural law (copy p. 12); in 1947 he did not believe 'in a personal God' (S6; S9). Toward the other pole, also his own voice: 'the omnipotent Reason which rules over Nature' (Gaynor's wording for 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11), and religion and science agree that 'eine von den Menschen unabhängige vernünftige Weltordnung existiert' (copy p. 11). Reported views, not scored as his own: whether God 'rules the world' independently of belief is a question he poses and says only faith can answer, and God holding 'believers and unbelievers' 'in his almighty hand' is the religious person's answer (copy p. 6). Counter-evidence: a 1945 letter quoted by Bertholet (Physikalische Blätter 4, 1948, p. 162) seems to show a more personal conception of God (S9, n. 48: 'eine persönlichere Gottesvorstellung zu vertreten scheint'; not read). Alternatives: 3 if the identification sentence is his settled view; 1 on the 1945 letter."
     B_cause:
       value: 4
       basis: written_profession
@@ -123,16 +124,16 @@ worldview:
       value: 2
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "copy pp. 6, 12"}, {source: S7, locator: "1937 lecture transcription ('Natural science wants man to learn, religion wants him to act')"}]
+      cites: [{source: S4, locator: "copy pp. 5, 6, 12"}, {source: S7, locator: "1937 lecture transcription ('Natural science wants man to learn, religion wants him to act')"}]
       how_known: "Coder's reading of his lecture; 0.7."
-      rationale: "English phrases from S4 are the coder's glosses. Two domains, each with its own authority, so D 2 (the guide's same-pattern rule). For knowledge, only sense data and measurement count, and belief in miracles must yield to science. For action and ethics, the guide is 'the definite and clear direction' gained from 'the direct link with God' (copy p. 12), a non-rational authority. He also says even 'the holiest symbol is of human origin' (copy p. 6). Alternative 3 if the direct link with God is read as conscience rather than revelation."
+      rationale: "English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). Two domains, each with its own authority, so D 2 (the guide's same-pattern rule, as for Einstein and Galileo). For knowledge, only sense data and measurement count, and belief in miracles must yield to science. For action and ethics, the guide is 'die bestimmte und klare Weisung' gained 'aus der unmittelbaren Verbindung mit Gott' (Gaynor: 'definite and clear instruction', 'a direct inner link to God'; copy p. 12), a non-rational authority; and whether God rules the world independently of belief is 'einzig und allein Sache des Glaubens' (copy p. 6). He also says even 'the holiest symbol is of human origin' (copy p. 5). Alternative 3 if the direct link with God is read as conscience rather than revelation."
     E_scope:
-      value: 3
+      value: 4
       basis: written_profession
       certainty: 0.7
       cites: [{source: S4, locator: "copy pp. 6, 11"}, {source: S7, locator: "1937 lecture transcription"}]
-      how_known: "Coder's reading of his lecture; one named alternative, so 0.7."
-      rationale: "English phrases from S4 are the coder's glosses. Scored on the world's order (P7). The rational world order is one 'to which Nature and humanity are subject' (copy p. 11), and God holds 'believers and unbelievers' alike in his hand (copy p. 6): the same rules for all. The stated limited exception: the truly religious 'feel secure under the protection of the Almighty against all dangers of life' (copy p. 6), a protection kept for believers. Alternative 4, if that protection is a felt security and not favour in events."
+      how_known: "His own lecture; one named alternative, so 0.7."
+      rationale: "English phrases from S4 are the coder's glosses. Scored on the world's order (P7). In his own voice the rational world order is one 'der Natur und Menschheit unterworfen sind' (to which Nature and humanity are subject, copy p. 11): the same rules for all, and nothing he asserts keeps favour in events for a group. The passage on believers is reported, not his own claim: the religious person's answer has God hold 'Gläubige und Ungläubige' alike in his hand, and the truly religious 'feel secure under the protection of the Almighty against all dangers of life' (copy p. 6). That is a felt security ('sich … gesichert fühlen') inside his account of what religion asks its adherents to accept, not favour in events, which is all P7 counts. So 4 (lens audit, batch 2, finding #132; was 3). Named alternative 3, if that protection is read as a promise of favour in events."
   mid_basin: {value: TODO, how_known: "A_locus = 2 at 0.7 and B_cause = 4 at 0.7. Both axes are scored at 0.7 but A falls between the branches: the P4 test has no branch for A_locus = 2 (CODING_GUIDE §6).", note: "A deist code would usually pass (METHOD §1.1); here the A score is 2 because his God is not personal and is identified with the world order. Needs a decision, not more evidence."}
   statements:
     - text: "Schritt für Schritt muß der Glaube an Naturwunder vor der stetig und sicher voranschreitenden Wissenschaft zurückweichen"
@@ -154,7 +155,7 @@ worldview:
     - text: "in das Walten der über die Natur regierenden allmächtigen Vernunft"
       cites: [{source: S4, locator: "copy p. 11"}]
       date: "1937-05"
-      context: "'into the workings of the omnipotent Reason that rules over Nature' (coder's gloss): the transcendent-leaning phrase."
+      context: "'into the workings of the omnipotent Reason that rules over Nature' (coder's gloss, cross-checked with Gaynor's 'the omnipotent Reason which rules over Nature'): the transcendent-leaning phrase, in his own voice at the end of section III."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "primary transcription"
@@ -162,7 +163,7 @@ worldview:
     - text: "daß er von Ewigkeit her die ganze Welt, Gläubige und Ungläubige, in seiner allmächtigen Hand hält"
       cites: [{source: S4, locator: "copy p. 6"}]
       date: "1937-05"
-      context: "The religious person's answer, which he goes on to reconcile with science: God holds the whole world, believers and unbelievers, in his almighty hand from eternity."
+      context: "Reported view, not his own assertion: 'Der religiöse Mensch beantwortet die Frage dahin, …' God holds the whole world, believers and unbelievers, in his almighty hand from eternity. It answers the question he has just posed (does God rule the world independently of belief?), which he says only faith can answer; he sums it up as what religion asks its adherents to accept ('deren Anerkennung die Religion von ihren Anhängern fordert') and then compares it with science."
       axes: [A_locus, E_scope]
       kind: "written profession (public)"
       verified_against: "primary transcription"
@@ -170,7 +171,24 @@ worldview:
     - text: "sondern nur die bestimmte und klare Weisung, die wir aus der unmittelbaren Verbindung mit Gott gewinnen"
       cites: [{source: S4, locator: "copy p. 12"}]
       date: "1937-05"
-      context: "On action: long reflection cannot guide decisions, 'only the definite and clear direction that we gain from the direct link with God' (coder's gloss)."
+      context: "On action: long reflection cannot guide decisions, 'only the definite and clear direction that we gain from the direct link with God' (coder's gloss, cross-checked with Gaynor: 'definite and clear instruction', 'a direct inner link to God')."
+      axes: [D_authority]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-02
+    - text: "Vielmehr ist die Beantwortung dieser Frage einzig und allein Sache des Glaubens, des religiösen Glaubens."
+      cites: [{source: S4, locator: "copy p. 6"}]
+      date: "1937-05"
+      context: "The question is whether God lives only in believers' souls or rules the world independently of belief; the sentence before says it 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären'. 'Rather, answering this question is solely a matter of faith, of religious faith' (coder's gloss)."
+      axes: [A_locus, D_authority]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-02
+    - text: "Sie stellt also eine vernünftige Weltordnung dar, der Natur und Menschheit unterworfen sind [...]"
+      cites: [{source: S4, locator: "copy p. 11"}]
+      date: "1937-05"
+      context: "On the lawfulness that holds in the whole of nature: 'It thus represents a rational world order to which Nature and humanity are subject' (coder's gloss); the sentence goes on that its real nature stays unknowable to us."
+      axes: [E_scope]
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "primary transcription"
@@ -194,13 +212,21 @@ worldview:
     - text: "He had always been deeply religious, Planck said, but he did not believe \"in a personal God, let alone a Christian God."
       cites: [{source: S6, locator: "Heilbron quotation"}]
       date: "1947"
-      context: "Heilbron's report of Planck's reply to an engineer who asked about a rumoured conversion to Catholicism; read only as quoted on a blog (Wikipedia gives Heilbron p. 198)."
+      context: "Heilbron's report of Planck's reply to an engineer who asked about a rumoured conversion to Catholicism; read only as quoted on a blog. Wikipedia's p. 198 refers to the 2000 Harvard printing, not checked in either edition. The German is confirmed independently by Gladigow (S9), next statement."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-02
+    - text: "Obwohl von Jugend an tief religiös gestimmt, glaube ich nicht an einen persönlichen Gott, geschweige denn an einen christlichen Gott."
+      cites: [{source: S9, locator: "p. 327; nn. 47–48 (p. 335)"}]
+      date: "1947"
+      context: "Letter of 1947 answering the Neue Zeitung's false report that he had converted to Catholicism (S9, n. 47). Gladigow cites F. Herneck, 'Ein Brief Max Plancks über sein Verhältnis zum Gottesglauben', Forschungen und Fortschritte 32 (1952), 364–366 (not read)."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "DEISM, PANT and CHRIST are sourced system files. The 1937 lecture is quoted from the German (a web copy of the 1938 second edition; 'copy p.' is the copy's own page numbering, not checked against the printed edition). English glosses are the coder's, cross-checked against an incomplete blog transcription of Gaynor's translation (S7). Heilbron (S6) was not read directly. The 1913 letter on 'the teachings of Jesus' quoted on the S7 blog (via Heilbron p. 67) was not used."
+  coder_notes: "DEISM, PANT and CHRIST are sourced system files. The 1937 lecture is quoted from the German (a web copy of the 1938 second edition; 'copy p.' is the copy's own page numbering, not checked against the printed edition). English glosses are the coder's, cross-checked against an incomplete blog transcription of Gaynor's translation (S7). Heilbron (S6) was not read directly. The 1913 letter on 'the teachings of Jesus' quoted on the S7 blog (via Heilbron p. 67) was not used. Gladigow (S9) gives the German of the 1947 letter and reports (n. 48) a 1945 letter, quoted by Bertholet (Physikalische Blätter 4, 1948, p. 162), that seems to show a more personal God; Bertholet and Herneck were not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -245,11 +271,13 @@ review:
     - "Britannica places Kiel in 'Schleswig'; Kiel was in Holstein."
     - "Retirement from Berlin: 1926 (Nobel biography) vs 1927 (MacTutor). First marriage: 1885 (Nobel) vs 31 March 1887 (MacTutor)."
     - "MacTutor says 'In 1945 his other son was executed' after describing Erwin's execution; its own text has Karl killed in 1916, so this reads as an error in MacTutor."
-    - "Heilbron (1986) read only through a blog quotation; the page (198) is from Wikipedia's citation."
+    - "Heilbron read only through a blog quotation and Wikipedia's quotation; 'Planck's deism' is not confirmed in the book. Wikipedia's p. 198 refers to the 2000 Harvard University Press printing (Google Books d5zKH2Bx2AwC), not the 1986 University of California Press edition."
+    - "Gladigow (S9, n. 45) puts the identification sentence on p. 29 of the 1938 edition (= Vorträge und Erinnerungen p. 331); the web copy (S4) has it on its own p. 11."
     - "The German lecture text is a web copy of the 1938 edition; page numbers are the copy's."
   open_questions:
     - "Read Heilbron, The Dilemmas of an Upright Man (1986), pp. 182–198, and Scientific Autobiography and Other Papers (1949) for the 1947 letter and his church role."
     - "Settle how mid_basin treats A_locus = 2 (no P4 branch)."
+    - "Read Bertholet, 'Erinnerungen an Max Planck', Physikalische Blätter 4 (1948), p. 162, for the 1945 letter, and Herneck 1952 and 1960; also 'Max Planck – ein Gegner des Christentums?', Berichte zur Wissenschaftsgeschichte (2012), doi:10.1002/bewi.201201176."
 
 sources:
   - id: S1
@@ -305,10 +333,10 @@ sources:
     kind: other
     author: "J. L. Heilbron (as quoted on the Space Theology blog)"
     year: 1986
-    citation: "Heilbron, J. L. The Dilemmas of an Upright Man: Max Planck as Spokesman for German Science. Berkeley: University of California Press, 1986 (p. 198 per Wikipedia's citation). Quoted in \"John .L. Heilbron about Max Planck and God,\" Space Theology (blog), 13 February 2012. http://spacetheology.blogspot.com/2012/02/max-planck-about-god.html."
+    citation: "Heilbron, J. L. The Dilemmas of an Upright Man: Max Planck as Spokesman for German Science. Berkeley: University of California Press, 1986. Wikipedia's p. 198 refers to the reissue, The Dilemmas of an Upright Man: Max Planck and the Fortunes of German Science (Cambridge, MA: Harvard University Press, 2000; Google Books d5zKH2Bx2AwC); neither edition was checked. Quoted in \"John .L. Heilbron about Max Planck and God,\" Space Theology (blog), 13 February 2012. http://spacetheology.blogspot.com/2012/02/max-planck-about-god.html."
     url: "http://spacetheology.blogspot.com/2012/02/max-planck-about-god.html"
     accessed: 2026-10-02
-    reliability_note: "Scholarly biography read only through a blog's quotation (with typos such as 'Plankc's'); the same passage appears in Wikipedia's citation of Heilbron. Treat as a secondary quotation."
+    reliability_note: "Scholarly biography read only through a blog's quotation (with typos such as 'Plankc's'); the same passage appears in Wikipedia's citation of Heilbron (2000 printing). Treat as a secondary quotation. The 'deism' wording is not confirmed in the book, and Heilbron uses the word loosely (a religion that 'omitted all reference to established religions'), so it is not used to support the code. The 1947 denial is confirmed independently in German by S9."
     used_for: [worldview, review]
   - id: S7
     type: secondary
@@ -329,6 +357,16 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S9
+    type: secondary
+    kind: "book chapter"
+    author: "Burkhard Gladigow"
+    year: 1986
+    citation: "Gladigow, Burkhard. \"'Wir gläubigen Physiker': Zur Religionsgeschichte physikalischer Entwicklungen im 20. Jahrhundert.\" In Der Untergang von Religionen, edited by Hartmut Zinser, 321–336. Berlin, 1986. Repository PDF, Universität Tübingen. https://doi.org/10.15496/publikation-63319."
+    url: "https://publikationen.uni-tuebingen.de/xmlui/bitstream/handle/10900/121955/Gladigow_059.pdf"
+    accessed: 2026-10-02
+    reliability_note: "Peer scholarship by a historian of religion (Tübingen), read as the repository scan of the printed chapter; page numbers are the chapter's (321–336), endnotes on pp. 331–336. Quotes the 1947 letter in German from Herneck 1952 and reports Bertholet's 1945 letter in note 48; neither was read."
+    used_for: [worldview]
 ---
 
 # Max Planck
@@ -337,7 +375,7 @@ sources:
 
 ## Summary
 
-Max Planck (1858–1947), German theoretical physicist, found the radiation law and the quantum of action in 1900 and won the 1918 Nobel Prize in Physics [S1, opening paragraph; S3, paragraph 4]. In his 1937 lecture "Religion und Naturwissenschaft" he identified "die Weltordnung der Naturwissenschaft und den Gott der Religion" and said belief in nature-miracles must retreat before science [S4, copy pp. 2, 11]. Heilbron calls this deism [S6]. Coded DEISM at 0.5 (PANT and CHRIST named). A 2, B 4, D 2, E 3 (all 0.7); C below threshold; mid_basin TODO (no P4 branch for A = 2).
+Max Planck (1858–1947), German theoretical physicist, found the radiation law and the quantum of action in 1900 and won the 1918 Nobel Prize in Physics [S1, opening paragraph; S3, paragraph 4]. In his 1937 lecture "Religion und Naturwissenschaft" he identified "die Weltordnung der Naturwissenschaft und den Gott der Religion" and said belief in nature-miracles must retreat before science [S4, copy pp. 2, 11]. In 1947 he wrote that he did not believe "an einen persönlichen Gott, geschweige denn an einen christlichen Gott" [S9, p. 327]. Coded DEISM at 0.5 (PANT and CHRIST named; Heilbron's "deism" label [S6] is not confirmed in the book and is not used as support). A 2, B 4, D 2, E 4 (all 0.7); C below threshold; mid_basin TODO (no P4 branch for A = 2).
 
 ## Life and work
 
@@ -353,7 +391,7 @@ His family had a "long family tradition of devotion to church and state" [S1, ea
 
 ## Adult working worldview
 
-He wrote that "chance and miracle in the absolute sense are fundamentally excluded from science" [S5, p. 159] and that religion must not oppose "the sequence of cause and effect in all external phenomena" [S5, p. 168]. In 1937 God stands "für die eine am Anfang, für die andere am Ende alles Denkens" [S4, copy p. 12]. Heilbron reports that he did not believe "in a personal God, let alone a Christian God" [S6]. Scores: A 2, B 4, D 2, E 3 (0.7 each); C below threshold.
+He wrote that "chance and miracle in the absolute sense are fundamentally excluded from science" [S5, p. 159] and that religion must not oppose "the sequence of cause and effect in all external phenomena" [S5, p. 168]. In 1937 God stands "für die eine am Anfang, für die andere am Ende alles Denkens" [S4, copy p. 12]. Heilbron reports that he did not believe "in a personal God, let alone a Christian God" [S6]; Gladigow gives the German of the 1947 letter and notes a 1945 letter that seems to show a more personal God [S9, p. 327, n. 48]. Scores: A 2, B 4, D 2, E 4 (0.7 each); C below threshold.
 
 ## Heritage (context only)
 
@@ -370,6 +408,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form unclea
 ## Open questions
 
 - Heilbron (1986) and Scientific Autobiography and Other Papers (1949), for the 1947 letter and church membership.
+- Bertholet (1948) for the 1945 letter, and Herneck (1952, 1960).
 - mid_basin for A_locus = 2 needs a decision.
 
 ## Research log
