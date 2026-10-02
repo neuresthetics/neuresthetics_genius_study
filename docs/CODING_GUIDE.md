@@ -1,6 +1,6 @@
 # Coding guide
 
-How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
+How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and 2026-10-02 and are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
@@ -155,7 +155,13 @@ Rules:
 - Every score needs `basis` and `certainty` (same scale as worldview codes), at least one cite, and a `rationale` that names the pole features present.
 - If the evidence does not reach 0.5, use `BELOW_THRESHOLD`.
 - Put quotations that bear on an axis in `worldview.statements` and tag them with `axes`.
-- **E_scope domain (open item P7, PROPOSED).** Until P7 is decided, say in the E `how_known` which domain the score covers: the world's order (the same rules for stars, insects and humans, with no exceptions for a favoured group in what happens), the scope of salvation, or both. If the score would differ on another domain, certainty is at most 0.7 (Contested readings, §3), and `how_known` points to P7.
+- **E_scope is scored on the world's order** (decision P7, 2026-10-02). E asks two things about this world:
+  1. Do the same rules govern every kind of being and event, from stars to insects to humans?
+  2. Does the person's account of what happens keep hidden exceptions for an in-group: fortune, protection, healing, answered petition or miracles for the favoured, or favour in nature or providence?
+
+  Salvation, election, the afterlife, reward and punishment, and the scope of the moral community are **not** scored on E. They belong on `C_ledger`, so the same feature is not counted twice. This matches P6, where B is scored on the person's account of nature. Say in the E rationale that it is scored on the world's order. If the record has a salvation or moral-community reading, note in one clause that it is scored on C.
+  - *Counts on E:* a God who sends rain, victory or healing to his own people and not to others, or who changes events in answer to believers' petitions, lowers E (CLTHEI is 1). Newton's "to the same natural effects we must, as far as possible, assign the same causes", for "respiration in a man and in a beast" and "the light of our culinary fire and of the sun", is evidence for the LIO pole (4).
+  - *Goes to C, not E:* "God does reprobate some" (Aquinas, ST I q. 23 a. 3), salvation needing revealed truths, a chosen people's covenant obligations, membership of "a very small & despised sect" (Faraday), or animals standing outside the moral community (the Stoics). Score these on C or record them in the C rationale. They do not lower E.
 
 **Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". The test (decision P4, 2026-10-01) uses the LIO axes only:
 

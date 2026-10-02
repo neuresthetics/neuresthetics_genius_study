@@ -2,15 +2,16 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
   collected_on: 2026-10-01
-  last_updated: 2026-10-01
+  last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Coding guidance and neighbors from the PANT boundary rules (OPEN_DECISIONS S6)."}
+    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
 identity:
   id: PANENT
   v7_1_number: 30
@@ -48,7 +49,7 @@ lio_axes:
   B_cause: {value: TODO}
   C_ledger: {value: TODO}
   D_authority: {value: TODO}
-  E_scope: {value: TODO}
+  E_scope: {value: TODO, note: "Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule."}
 epistemology: {value: TODO}
 ethics: {value: TODO}
 practice:
@@ -133,3 +134,4 @@ None yet.
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
+- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).

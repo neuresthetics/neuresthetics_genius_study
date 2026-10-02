@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools, adherents and coding guidance filled from three SEP entries, the multi-author Britannica article and a Pew Research Center report. v7.1 scores and note unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided (option 1): E_scope rescored on the world's order. Value and certainty unchanged (1 at 0.5); the basis is now God's particular acts in nature and history (revelation, the choice of Israel), not the covenant as a moral community. The covenant noted under C_ledger (C score unchanged). Not reviewed."}
 identity:
   id: JUDA
   v7_1_number: 70
@@ -56,9 +57,9 @@ metaphysics:
 lio_axes:
   A_locus: {value: 0, rationale: "One transcendent, personal creator who acts in history and is addressed as thou. Maimonides' negative theology, Kabbalah and Reconstructionist naturalism move away from the pole.", certainty: 0.7, cites: [{source: S1, locator: "introduction; page 'Basic beliefs and doctrines'"}, {source: S3, locator: "§4"}, {source: S2, locator: "§2.5"}], how_known: "Scored on the 0–4 scale (P1). 0.7 for the philosophical, mystical and naturalist wings."}
   B_cause: {value: 1, rationale: "God is continually active in nature and history and intervenes in the end-time; but rabbinic and philosophical traditions read miracles cautiously (Maimonides' naturalism). Range 0–3.", certainty: 0.5, cites: [{source: S1, locator: "page 'Basic beliefs and doctrines'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
-  C_ledger: {value: 1, rationale: "Reward and punishment are part of the covenant and of Maimonides' principles; the afterlife is disputed and modern movements lack consensus.", certainty: 0.5, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
+  C_ledger: {value: 1, rationale: "Reward and punishment are part of the covenant and of Maimonides' principles; the afterlife is disputed and modern movements lack consensus. Under decision P7 the covenant as a moral community is scored here, not on E: God 'has chosen the people of Israel in love', yet is 'the teacher of all humanity' (S1, page 'Basic beliefs and doctrines').", certainty: 0.5, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity'"}, {source: S3, locator: "§1"}], how_known: "0–4 scale (P1). 0.5 for the spread."}
   D_authority: {value: 1, rationale: "Revelation and the interpretive tradition first; non-literal reading and a strong philosophical line (Maimonides, Cohen, Kaplan) give reason more room than in scripture-literal traditions. Matches the v7.1 note's 'reliance on revelation'.", certainty: 0.5, cites: [{source: S2, locator: "§2.5"}, {source: S3, locator: "§2"}], how_known: "0–4 scale (P1). 0.5 for the spread; Reform and Reconstructionist forms sit near 2."}
-  E_scope: {value: 1, rationale: "The covenant is particular: God 'has chosen the people of Israel in love'. Yet God is 'the teacher of all humanity', and Israel's response is seen as significant for all.", certainty: 0.5, cites: [{source: S1, locator: "page 'Basic beliefs and doctrines'"}], how_known: "0–4 scale (P1). Coder's reading, 0.5. Scored on the covenant (a chosen people); the domain is open (OPEN_DECISIONS P7, PROPOSED), and on the world's order alone it would need a rescore. Already below the 0.7 cap."}
+  E_scope: {value: 1, rationale: "Scored on the world's order (decision P7). Leans exception. God 'remains actively present in nature' and acts in history (S1), and some acts are particular: revelation to Moses and the prophets, the choice of Israel and the giving of the Torah (reserved exemptions, S1). The tradition knows the miraculous (S1), and petition is the coder's reading of SEP's grouping (S4). Range 0–3: Maimonides' naturalism, which made him 'suspicious of miracles' (S3, §1), and non-literal rabbinic reading (S2, §2.5) lean toward 3. The covenant as a chosen people with a message for all is a question of moral community, scored on C, not here.", certainty: 0.5, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity'; introduction"}, {source: S3, locator: "§1"}, {source: S2, locator: "§2.5"}, {source: S4, locator: "introduction"}], how_known: "0–4 scale (P1). Coder's reading, 0.5. Rescored on the world's order after decision P7 (2026-10-02); the value is unchanged from the earlier score, which rested on the covenant (1 at 0.5)."}
 epistemology: {value: "Study and interpretation of texts (Torah, Talmud) as the central religious activity; rabbinic non-literal reading; philosophical theology (Maimonides: logic cannot settle creation versus eternity); mystical knowledge in Kabbalah, which seeks contact with the divine independently of sense perception and intellect.", certainty: 1.0, cites: [{source: S2, locator: "§2.5"}, {source: S3, locator: "§5"}, {source: S1, locator: "page 'Jewish mysticism'"}], how_known: "SEP and Britannica."}
 ethics: {value: "Torah as 'a program of human action'; commandments govern relations with God, other people and the natural world (limits on human dominion); a covenant with obligations grounded in God's acts in history.", certainty: 1.0, cites: [{source: S1, locator: "pages 'Basic beliefs and doctrines', 'Humanity's place in the universe', 'Israel: the Jewish people'"}], how_known: "Britannica."}
 practice:
@@ -137,7 +138,7 @@ Scored on the 0–4 scale (P1), for the code as v7.1 defines it (the religion as
 - B cause 1 (0.5): continual divine activity; cautious about miracles in the philosophical line [S1; S3, §1].
 - C ledger 1 (0.5): covenant reward and punishment; afterlife disputed [S1; S3].
 - D authority 1 (0.5): revelation and interpretation; non-literal reading [S2, §2.5].
-- E scope 1 (0.5): a chosen people with a message for all [S1].
+- E scope 1 (0.5): on the world's order (P7), God acts in nature and history, with particular acts such as revelation and the choice of Israel [S1]; Maimonides leans toward 3 [S3, §1]. The covenant as a moral community is scored on C.
 
 ## Schools and variants
 

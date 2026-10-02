@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: primary_system CLASS_THEISM at 0.5 -> BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI named as candidates in a note (no scholar places him in a theist code; the simple or immutable God test is not shown). mid_basin unchanged (true at 0.7; it uses only A and B). Lutheran baptism (nominal_affiliations) 0.5 -> 0.7, one reliable source; the same Todorov fact in family_religion, religious_heritage_by_birth and baptism_or_initiation also 0.5 -> 0.7. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the letters already cited (order 'in everything', S6 1961; everything has a cause, S7; the same psychic capacities in every human, S6 1952). No petition, miracle or favour for a group appears in what was read, but the letters are few, so 0.5 with a gap note. Religions versus religion (Wang) is a community question, which P7 sends to C. No new sources. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -169,7 +170,13 @@ worldview:
       cites: [{source: S7, locator: "Sect. 3, note 14 (letter of October 1961; notebook 'Fehler in der Bibel')"}, {source: S1, locator: "§3.1 ('My Philosophical Viewpoint')"}, {source: S6, locator: "letters of 23 July 1961 and 8 May 1958"}]
       how_known: "Private letters and notebooks, consistent with each other, so 0.7."
       rationale: "Leans to reason. The theological world view may be grasped 'purely rationally (without the support of faith' (S7). There is 'a scientific (exact) philosophy and theology' (S1). He kept a notebook on errors in the Bible (S7) and had 'very little trust in the love of truth of papal nuncii' (S6, 1958). The stated limited exception: he treats the Bible's prophecy of the end of the world as something science confirms, so scripture keeps a place as a witness that reason can check (S6, 1961). So 3."
-    E_scope: {value: TODO, note: "Little in the sources read. His view that religions are mostly bad but religion is not (item 14 of 'My Philosophical Viewpoint') and his remarks on Islam are known only through Wang's books and Engelen's paper on the Max Phil notebooks, which were not read (Wang not online; Engelen's HAL copy blocked by a bot check). His 1952 letter says every human has the same psychic capacities to some degree (S6), which points toward the same rules for everyone but is not about religion. Score after reading Wang 1996 (p. 316) or the Collected Works. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED); score once it is decided."}
+    E_scope:
+      value: 3
+      basis: scholarly_reconstruction
+      certainty: 0.5
+      cites: [{source: S6, locator: "letters of 23 July 1961 and 20 September 1952"}, {source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}]
+      how_known: "Coder's reading of a few private letters that do not address favour for a group in events directly, so 0.5. Scored under decision P7 (2026-10-02); it was TODO before. Gap: Wang 1987 and 1996 and the Collected Works IV letters were not read and could raise or revise it."
+      rationale: "Scored on the world's order (decision P7). Leans LIO. One order for everything: 'the greatest regularity and order reign in everything' (S6, 1961), and the principle 'that everything has a cause' is the one 'on which the whole science rests' (S7). Humans are included: he treats even reported telepathy as a capacity that 'each human possesses [...] but in most only to a very minor degree' (S6, 1952), a natural human capacity, not a gift to a group. No petition, miracle or favour for a group appears in the letters read. Not 4: the letters are a small selection, and the one stated break in the world's course is the end of the world 'prophesied in the last book of the Bible', which science 'leaves room for' (S6, 1961). That event is for the whole world, not a group, so 4 is the named alternative. His view that religions are mostly bad but religion is not (Wang, not read) concerns religious communities, which P7 scores on C, not here."
   mid_basin:
     value: true
     certainty: 0.7
@@ -195,7 +202,7 @@ worldview:
     - text: "For it is certainly not chaotic and arbitrary, but rather, as science shows, the greatest regularity and order reign in everything. Order is but a form of rationality."
       cites: [{source: S6, locator: "letter to his mother, 23 July 1961"}]
       context: "Same letter, his reason for thinking the world is rationally set up."
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: "private letter"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -251,11 +258,11 @@ worldview:
     - text: "each human possesses these capacities but in most only to a very minor degree"
       cites: [{source: S6, locator: "letter to his mother, 20 September 1952"}]
       context: "On his test of Adele's knack for guessing numbers and on university studies of 'occult visitations'."
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: "private letter"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-      note: "Reese/Budiansky translation. Shows him treating even the paranormal as a natural capacity open to measurement."
+      note: "Reese/Budiansky translation. Shows him treating even the paranormal as a natural capacity open to measurement. Also bears on E: the capacity is in every human."
   changes_over_life:
     - {value: "By his own later account he held mathematical realism from 1925; Feferman says this is hard to square with other evidence", year: "1925", certainty: 0.5, cites: [{source: S5, locator: "Vol. IV section"}], how_known: "Questionnaire answer, through Feferman."}
     - {value: "Turned to philosophy almost entirely from about 1943; intensive study of Leibniz, by his own report, 1943–1946; his theist statements read here all date from 1950 on", year: "1943–1946", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letters 1950–1961"}], how_known: "SEP and the dated letters. Whether his theism began then or only became visible then is not known from the sources read."}
@@ -321,7 +328,7 @@ review:
     - "His questionnaire claim to have held mathematical realism since 1925 is, Feferman says, 'difficult to square with other evidence'."
   open_questions:
     - "Read the Grandjean questionnaire and the letters to his mother in Collected Works IV (2003) directly, to raise A and B above secondary quotation."
-    - "Read Wang's Reflections on Kurt Gödel (1987) and A Logical Journey (1996) on whether his God is personal, and on religions versus religion (item 14), to score E and to settle CLASS_THEISM vs CLTHEI."
+    - "Read Wang's Reflections on Kurt Gödel (1987) and A Logical Journey (1996) on whether his God is personal, to check E_scope (3 at 0.5; any favour for a group in events?) and to settle CLASS_THEISM vs CLTHEI. Religions versus religion (item 14) is a community question and goes to C under P7."
     - "Read Dawson's Logical Dilemmas (1997) for household religion in Brno."
     - "Read Engelen's paper on the Max Phil notebooks (HAL copy blocked by a bot check)."
     - "Check whether his theism appears in anything written before 1943."
@@ -417,7 +424,7 @@ sources:
 
 # Kurt Gödel
 
-> Status: draft — unreviewed. Worldview BELOW_THRESHOLD (theist, following Leibniz; CLASS_THEISM and CLTHEI are candidates, no scholar places him in either). A, B, D scored at 0.7, C at 0.5, E TODO. mid_basin true under the P4 test.
+> Status: draft — unreviewed. Worldview BELOW_THRESHOLD (theist, following Leibniz; CLASS_THEISM and CLTHEI are candidates, no scholar places him in either). A, B, D scored at 0.7; C and E at 0.5. mid_basin true under the P4 test.
 
 ## Summary
 
@@ -442,7 +449,7 @@ His father ran a textile firm; his mother was from the Rhineland and well educat
 
 He called his belief "theistic not pantheistic (following Leibniz rather than Spinoza)" [S5]. He wrote that science shows "the greatest regularity and order reign in everything" [S6, 1961], that the theological world view may be grasped by reason without faith [S7], and that there is an exact philosophy and theology [S1]. He argued for an afterlife as the completion of human possibilities [S6]. He wrote an ontological proof of God (1970) [S8]. His mathematical platonism is recorded but not coded as PLATO.
 
-Coding: BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI as candidates; no scholar read places him in either. A 1, B 3, D 3 at 0.7; C 3 at 0.5; E TODO. mid_basin true at 0.7; it uses only A and B, so it does not change.
+Coding: BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI as candidates; no scholar read places him in either. A 1, B 3, D 3 at 0.7; C 3 and E 3 at 0.5. E is scored on the world's order (decision P7): "the greatest regularity and order reign in everything" [S6, 1961]. mid_basin true at 0.7; it uses only A and B, so it does not change.
 
 ## Heritage (context only)
 
@@ -459,10 +466,11 @@ Everything in this section is Lane B: labeled belief, not a finding. The form (p
 ## Open questions
 
 - Read the Grandjean questionnaire and the mother letters in Collected Works IV.
-- Read Wang 1987 and 1996 to score E and settle CLASS_THEISM vs CLTHEI.
+- Read Wang 1987 and 1996 to check E (3 at 0.5) and settle CLASS_THEISM vs CLTHEI.
 - Read Dawson 1997 on household religion.
 - Read Engelen on the Max Phil notebooks.
 
 ## Research log
 
 - 2026-10-02: Read SEP (Kennedy, S1), Britannica (Balaguer, S2), MacTutor (S3), the IAS page (S4), Feferman's synopsis of the Collected Works (S5), the IAS-approved translations of his letters to his mother and brother (S6), Todorov's 2007 portrait (S7) and SEP Ontological Arguments §9 (S8). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Not read: Collected Works IV (print), Wang 1987 and 1996, Dawson 1997 (restricted lending only), Engelen's Max Phil paper (HAL bot check).
+- 2026-10-02 (P7): E_scope scored on the world's order (3 at 0.5) from the letters already cited (S6, S7); no new sources or quotations.

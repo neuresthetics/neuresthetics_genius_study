@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (the 'Reformation' passage is a named plausible alternative, B = 2); mid_basin certainty 1.0 -> 0.7 (result still true); 'UNKNOWN' wording for a B = 2 result corrected to TODO; 'Church of England' replaced by 'Protestant', as the cited sources say, in nominal_affiliations (certainty 1.0 -> 0.7) and family_religion. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23): E_scope certainty 1.0 -> 0.7. E is scored on natural philosophy only, while other records score it on salvation scope; the domain is open item P7 (PROPOSED). Score unchanged (3). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3 at 0.7. The interim P7 cap is gone, but certainty stays 0.7 under CODING_GUIDE §3, because the new rule makes a named alternative (2): his private articles petition the Father for 'blessings of this life' (S9, article 8). Rationale and statement tags updated; P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -187,9 +188,9 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S8, locator: "p. 384"}, {source: S6, locator: "pp. 403–404"}, {source: S5, locator: "p. 389"}]
-      how_known: "Published texts (Principia Rules, Opticks Query 31, General Scholium), so written profession. Scored on natural philosophy only. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the scope of salvation his private manuscripts (S10, S11) would give about 2–3. The score depends on that choice, so certainty is capped at 0.7 under the Contested readings rule (CODING_GUIDE §3). Lowered from 1.0 after the lens audit, run 2 (2026-10-02)."
-      rationale: "Near the LIO pole for nature: the same causes for 'respiration in a man and in a beast', for stones 'in Europe and in America' and for 'our culinary fire and of the sun' (S8); the light of the fixed stars is 'of the same nature with the light of the Sun' (S5). One stated, limited exception: God could 'vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe' (S6), offered as a possibility, not a finding. His private theology has a judgement and a kingdom for the best of those raised (S10), but that is scored on C, not as an exemption from natural rules."
+      cites: [{source: S8, locator: "p. 384"}, {source: S5, locator: "p. 389"}, {source: S6, locator: "pp. 403–404"}, {source: S9, locator: "f. 1r, article 8"}]
+      how_known: "Published texts (Principia Rules, General Scholium, Opticks Query 31), so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 2, from a private manuscript (CODING_GUIDE §3; see the rationale). Rechecked under decision P7 (2026-10-02). The score was already on the world's order and is unchanged; the interim P7 cap no longer applies."
+      rationale: "Scored on the world's order (decision P7). Near the LIO pole. The same rules hold for every kind of thing: 'to the same natural effects we must, as far as possible, assign the same causes', for 'respiration in a man and in a beast', for stones 'in Europe and in America' and for 'our culinary fire and of the sun' (S8, Rule II). Qualities found in all bodies within reach of experiment are 'the universal qualities of all bodies whatsoever' (S8, Rule III). The light of the fixed stars is 'of the same nature with the light of the Sun' (S5). One stated, limited exception: God could 'vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe' (S6), offered as a possibility, not a finding. So 3. Named alternative 2: his private 'Twelve articles' thank the Father for 'other blessings of this life' and say that whatever we 'desire that he would do for us we ask of him' (S9, article 8). That is petition for this-world favour, which P7 counts against E if it is answered. The text does not say that petition changes events in nature, and it is private, so 3 is kept. His judgement and reward of all the dead (S10, S11) are scored on C, not here."
   mid_basin:
     value: true
     certainty: 0.7
@@ -357,11 +358,11 @@ worldview:
     - text: "We are to return thanks to the father alone for creating us & giving us food & raiment & other blessings of this life & whatsover we are to thank him for or desire that he would do for us we ask of him immediately in the name of Christ"
       cites: [{source: S9, locator: "f. 1r, article 8"}]
       context: "Same manuscript. Article 7 says prayers are 'most prevalent when directed to the father in the name of the son'."
-      axes: [B_cause, C_ledger]
+      axes: [B_cause, C_ledger, E_scope]
       kind: "notebook or diary"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-      note: "Petitionary prayer, outside his science; bears on the CHRIST/CLTHEI choice, not on B for his work."
+      note: "Petitionary prayer, outside his science; bears on the CHRIST/CLTHEI choice, not on B for his work. Under P7 it bears on E: it is the basis of the named alternative E = 2."
     - text: "will at length raise all men from the dead to be judged by him & rewarded according to their deeds"
       cites: [{source: S10, locator: "MS p. 36"}]
       context: "'Irenicum, or Ecclesiastical Polyty tending to Peace' (Keynes MS 3), on the duty, after Christ's resurrection, to believe in God's government of the world; 'him' is Jesus Christ."
@@ -378,7 +379,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 29, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
-  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work."
+  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -605,7 +606,7 @@ His science runs on law. The same effects get the same causes [S8, p. 384]. But 
 
 His private manuscripts show a scriptural, anti-Trinitarian Christianity: one God the Father and one mediator, Christ; prayer to the Father in the name of Christ; and a final judgement of all people [S9; S10]. MacTutor dates his Arian view to about 1672 [S12].
 
-Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 at 1.0; B_cause 3 (natural philosophy), C_ledger 0, D_authority 2 and E_scope 3 (natural philosophy; domain open, P7) at 0.7. mid_basin is true at 0.7 under P4.
+Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 at 1.0; B_cause 3 (natural philosophy), C_ledger 0, D_authority 2 and E_scope 3 at 0.7. E is scored on the world's order (decision P7): the same causes for man and beast, Europe and America [S8, p. 384]. The petition in his private articles is the named alternative (2) [S9]. mid_basin is true at 0.7 under P4.
 
 ## Heritage (context only)
 
@@ -630,3 +631,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Newton show
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main page and four subpages), MacTutor (S2 and the Arian page S12), SEP "Isaac Newton" (S3) and "Newton's Philosophy" (S4). Read the General Scholium (S5) and two Bentley letters (S7) in Newton Project transcriptions, Query 31 of the Opticks (S6, Gutenberg), the Rules of Reasoning (S8, archive.org OCR), and three private theological manuscripts (S9–S11, Newton Project). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Westfall's Never at Rest, the Oxford DNB and the Newton Project's own biography were not read. Baptism, household practice and key early reading left TODO.
+- 2026-10-02 (P7): E_scope rechecked on the world's order from the texts already cited (S5, S6, S8, S9); no new sources or quotations. The score stays 3 at 0.7.

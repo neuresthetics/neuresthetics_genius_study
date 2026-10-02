@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 7
+  record_version: 8
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Primary system coded CHRIST at 0.7 (consistent private letters) from his own writings and the sources already cited; CLTHEI and CLASS_THEISM rejected with reasons. secondary_system UNKNOWN (no second system). B_cause and mid_basin rechecked under decision P6 (B on his account of nature): unchanged, B 3 and mid_basin true at 0.7. No new sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: 1821 membership reworded from both sources (sought membership within days of the wedding, Russell; formal profession of faith a month after it, Gladstone p. 91). D_authority 1 -> 2 at 0.7 (two domains, each with its own authority, as for Maxwell and Newton). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known now names the domain scored (salvation and church membership) and points to open item P7. Score and certainty unchanged (1 at 0.5). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 1 -> 3 at 0.5, from his account of nature (God's 'definite laws' for all matter; no favour in events in his own words; biblical miracles accepted). The sect and salvation reading moved to the C_ledger rationale (C unchanged). Statement axis tags updated. P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -177,7 +178,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S4, locator: "first paragraph"}, {source: S10, locator: "p. 58"}, {source: S9, locator: "para. on Sandeman's doctrine"}]
       how_known: "Coder's reading of his letters and of Brooke's account of Sandemanian teaching. His own words speak of hope and gift, not judgement, so 0.5."
-      rationale: "Leans interventionist. The future life is a personal gift and promise of God, not a natural consequence: 'the ground of no doubtful hope' is God's gift in his Son (S4), and he looks to 'the great and precious promises whereby His people are made partakers of the Divine nature' (S10, p. 58). Sandemanian salvation was 'freely available through Christ’s ransom', with 'the imitation of Christ and obedience to his commands' required in return (S9), and the church disciplined its members, as it did him in 1844 (S8). Not 0, because no punishment language appears in his own words read here."
+      rationale: "Leans interventionist. The future life is a personal gift and promise of God, not a natural consequence: 'the ground of no doubtful hope' is God's gift in his Son (S4), and he looks to 'the great and precious promises whereby His people are made partakers of the Divine nature' (S10, p. 58). Sandemanian salvation was 'freely available through Christ’s ransom', with 'the imitation of Christ and obedience to his commands' required in return (S9), and the church disciplined its members, as it did him in 1844 (S8). Not 0, because no punishment language appears in his own words read here. Under decision P7 (2026-10-02), the scope of salvation and church membership is recorded here, not on E: he belonged to 'a very small & despised sect of christians' (S3), whose members kept apart from other denominations (S8). This fits a score of 1 and does not change it."
     D_authority:
       value: 2
       basis: consistent_private_letters
@@ -186,12 +187,12 @@ worldview:
       how_known: "His own public lecture through Gladstone's quotation, his private letter to Lovelace (scholarly transcription) and two historians, consistent with each other, so 0.7."
       rationale: "Mixed, by domain, as the scale defines 2. Two domains, each with its own authority. For God and the future life, revelation alone: that truth 'cannot be brought to his knowledge by any exertion of his mental powers' and is 'received through simple belief of the testimony given' (S10, pp. 99–100); he refuses to apply his methods 'to the very highest' (S10, p. 100), and knowledge of God came from 'the plain teaching of Scripture', with natural theology 'superfluous and misguided' (S9). For nature, observation and experiment rule, and 'that which is religious & that which is philosophical have ever been two distinct things' (S3); matters like the age of the earth and the Flood are 'studiously avoided' (S5, p. 2). Scripture is never used as evidence in his science, and revelation is not set over observation inside nature, so this is the same two-domain pattern as Maxwell and Newton (both 2). Changed from 1 after the lens audit (2026-10-02). Plausible alternative: 1, if his refusal to apply reason to the highest things is read as revelation outranking reason; so certainty stays at most 0.7 (CODING_GUIDE §3)."
     E_scope:
-      value: 1
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S8, locator: "opening paragraph; 'Primitive Christianity'"}, {source: S3, locator: "final paragraph"}, {source: S10, locator: "p. 58"}]
-      how_known: "Coder's reading of the church's practice and his own words; no source addresses the axis directly, so 0.5. Scored on the scope of salvation and church membership. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone it would be about 3 (no petition or intervention in nature in his own words). Already below the 0.7 cap."
-      rationale: "Leans to in-group. He belonged to 'a very small & despised sect of christians' (S3) whose members 'separated themselves from the established churches and from other Christian denominations' (S8), and he speaks of the promises by which 'His people' share the divine nature (S10, p. 58). Salvation was open to anyone through Christ (S9), and in science he treated researchers as 'a band of brothers' (S8), so not 0."
+      cites: [{source: S8, locator: "section 'Electric discoveries'"}, {source: S10, locator: "pp. 37, 103"}, {source: S5, locator: "p. 2"}]
+      how_known: "Coder's reading of his words as quoted by two historians and a contemporary biographer (S8, S10) and of Russell's account (S5). No source addresses the axis directly, so 0.5. Rescored under decision P7 (2026-10-02): before P7 this was 1, scored on the scope of salvation and church membership."
+      rationale: "Scored on the world's order (decision P7). Leans LIO. One set of laws for all matter: 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8), and he spoke of 'the unchangeability of the laws of nature' (S10, p. 103). Claimed spirit action among people (table-turning) he put down to 'a quasi involuntary muscular action' (S8), so human events fall under the same rules. No petition for favour and no special acts of God for believers appear in his own words read: his prayers expressed 'perfect trust and submission to God's will' (S10, p. 37). The limited exception: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles, some of them done for God's people, though none enters his account of nature. So 3. A reviewer who sets the biblical miracles aside could score 4. The sect ('a very small & despised sect', S3) and the promises to 'His people' (S10, p. 58) used to give 1 here. Under P7 they belong to C (see C_ledger)."
   mid_basin:
     value: true
     certainty: 0.7
@@ -217,7 +218,7 @@ worldview:
     - text: "the Creator governs his material works by definite laws resulting from the forces impressed on matter"
       cites: [{source: S8, locator: "section 'Electric discoveries', para. 2"}]
       context: "Cantor quotes this as Faraday's belief behind his search for the laws linking electricity, magnetism and chemical action. Cantor gives no date or source for the words."
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: other
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
@@ -241,7 +242,7 @@ worldview:
     - text: "I bow before Him who is Lord of all, and hope to be kept waiting patiently for His time and mode of releasing me according to His Divine Word, and the great and precious promises whereby His people are made partakers of the Divine nature."
       cites: [{source: S10, locator: "p. 58"}]
       context: "Letter to the Comte de Paris in his last years, when 'the dark shadow was creeping over him'."
-      axes: [A_locus, C_ledger, E_scope]
+      axes: [A_locus, C_ledger]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
@@ -249,13 +250,13 @@ worldview:
     - text: "when we speak of such things as the conservation of force, the permanency of matter, and the unchangeability of the laws of nature"
       cites: [{source: S10, locator: "p. 103"}]
       context: "On the poor grasp of science among people educated only in literature. Gladstone places it in his section on Faraday's evidence to the Public Schools Commission (18 November 1862) but does not say which text the words come from."
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: other
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Quoted by Gladstone."
   changes_over_life: [{value: UNKNOWN, how_known: "No change of worldview is reported in S1–S11. He attended the Sandemanian chapel as a child and made his profession of faith in 1821, about a month after his marriage (S10, p. 91; S5, p. 2); the brief exclusion of 1844 was over church discipline, not belief (S8)."}]
-  coder_notes: "Example record. Axes, mid_basin and the primary system (CHRIST at 0.7) coded on 2026-10-02 from the sources already cited. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5. B is scored on his account of nature (decision P6); his acceptance of the literal truth of the Bible would pull a whole-religion score lower. The primary code's weak point is CHRIST versus CLTHEI: no petition or intervention language was found in his own words, but only a few letters were read."
+  coder_notes: "Example record. Axes, mid_basin and the primary system (CHRIST at 0.7) coded on 2026-10-02 from the sources already cited. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5; E is scored on the world's order (decision P7), and the sect and salvation reading is on C. B is scored on his account of nature (decision P6); his acceptance of the literal truth of the Bible would pull a whole-religion score lower. The primary code's weak point is CHRIST versus CLTHEI: no petition or intervention language was found in his own words, but only a few letters were read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -423,7 +424,7 @@ sources:
 
 # Michael Faraday
 
-> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 2 at 0.7; C 1, E 1 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
+> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 2 at 0.7; C 1, E 3 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
 
 ## Summary
 
@@ -458,7 +459,7 @@ He married Sarah Barnard on 12 June 1821 and sought membership of the Sandemania
 
 In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces, and that a private memorandum on atoms and fields invokes God [S5, pp. 2–3]. In his science he looked for laws: Cantor quotes his belief that "the Creator governs his material works by definite laws resulting from the forces impressed on matter" [S8]. He held that force is conserved because creating or destroying it is "only within the power of Him" [S8]. For the future life he relied on revelation alone: its truth "is received through simple belief of the testimony given" [S10, pp. 99–100].
 
-Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 37; S8]. A 0, B 3 (his account of nature, P6) and D 2 at 0.7; C 1 and E 1 at 0.5. mid_basin true at 0.7.
+Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 37; S8]. A 0, B 3 (his account of nature, P6) and D 2 at 0.7; C 1 and E 3 at 0.5. E is scored on the world's order (decision P7): God governs matter "by definite laws" [S8], and no favour in events appears in his own words. The sect and salvation reading is on C. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
@@ -488,3 +489,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 - 2026-10-01 (third pass): No new research. Updated for the decisions of 2026-10-01: schema 1.1, era and region notes (P2, P3), and the mid-basin note now points to the P4 test. `mid_basin` stays TODO until the axes are scored.
 - 2026-10-02 (fourth pass): Scored A–E and mid_basin from the sources already cited, re-reading S3, S4, S5, S8, S9 and S10 (Gutenberg 3rd edition and the archive.org 2nd-edition OCR). No new sources. Every new quotation was checked word for word with verify_quotes.py. Primary system left TODO.
 - 2026-10-02 (fifth pass): Decision P6 approved. Coded the primary system CHRIST at 0.7 from the sources already cited (S3, S4, S5, S8, S9, S10); no new sources. Rechecked B and mid_basin under P6: unchanged.
+- 2026-10-02 (sixth pass): Decision P7 approved. Rescored E_scope on the world's order from the sources and quotations already in the record (S3, S5, S8, S10); no new sources or quotations. The sect and salvation reading moved to the C_ledger rationale.

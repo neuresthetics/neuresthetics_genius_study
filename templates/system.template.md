@@ -48,7 +48,7 @@ lio_axes:                                 # 0–4 per axis (P1), with rationale;
   B_cause: {value: TODO}
   C_ledger: {value: TODO}
   D_authority: {value: TODO}
-  E_scope: {value: TODO}
+  E_scope: {value: TODO}                  # the world's order (P7): same rules for all kinds; no in-group exceptions in events. Salvation and moral community go on C
 epistemology: {value: TODO}
 ethics: {value: TODO}
 practice:

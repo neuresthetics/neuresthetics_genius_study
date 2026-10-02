@@ -966,7 +966,7 @@
         },
         "E_scope": {
           "$ref": "#/$defs/axis",
-          "description": "E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4)."
+          "description": "E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4). Scored on the world's order: the same rules for every kind of being and event, and no hidden in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral-community scope are scored on C_ledger, not here (decision P7, 2026-10-02)."
         }
       },
       "required": [

@@ -20,6 +20,16 @@ from lib.records import REPO, read_record
 V7_JSON = os.path.join(REPO, "data", "sources", "v7_1", "neuresthetics_v7_combined.json")
 OUT = os.path.join(REPO, "systems")
 TODAY = "2026-10-01"
+# Decision P7 (2026-10-02): every stub carries a note on how E_scope is to be scored.
+P7_DATE = "2026-10-02"
+P7_LOG = ("Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order "
+          "(same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation "
+          "and moral community go on C_ledger.")
+P7_E_NOTE = ("Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules "
+             "for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, "
+             "answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go "
+             "on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 "
+             "scoring note below may mix domains, so recheck it against this rule.")
 NOTE_RE = re.compile(r"^(?P<code>[A-Z0-9_]+) \((?P<tot>\d+)/50\) — (?P<rest>.*)$", re.S)
 
 # Display labels that differ from v7.1, both approved on 2026-10-01 (docs/OPEN_DECISIONS.md S1, S2).
@@ -144,16 +154,17 @@ def stub(row, note, rules):
     P("record:")
     P("  record_type: system")
     P('  schema_version: "1.1"')
-    P(f"  record_version: {2 if code in DECISION_LOG else 1}")
+    P(f"  record_version: {(2 if code in DECISION_LOG else 1) + 1}")  # +1 for the P7 note
     P("  review_status: stub")
     P("  collected_by: scripts/make_system_stubs.py")
     P("  model_used: none (ported from the v7.1 data book)")
     P(f"  collected_on: {TODAY}")
-    P(f"  last_updated: {TODAY}")
+    P(f"  last_updated: {P7_DATE}")
     P("  change_log:")
     P(f"    - {{date: {TODAY}, by: scripts/make_system_stubs.py, summary: \"Stub created from v7.1 data book table 4 and section 7.\"}}")
     if code in DECISION_LOG:
         P(f"    - {{date: {TODAY}, by: scripts/make_system_stubs.py, summary: {q(DECISION_LOG[code])}}}")
+    P(f"    - {{date: {P7_DATE}, by: scripts/make_system_stubs.py, summary: {q(P7_LOG)}}}")
     P("identity:")
     P(f"  id: {code}")
     P(f"  v7_1_number: {int(row['#'])}")
@@ -180,8 +191,9 @@ def stub(row, note, rules):
         P(f"  {k}: {{value: TODO, stance: TODO}}")
     P(f"  necessity_and_freedom: {TODO_TEXT}")
     P("lio_axes:")
-    for k in ("A_locus", "B_cause", "C_ledger", "D_authority", "E_scope"):
+    for k in ("A_locus", "B_cause", "C_ledger", "D_authority"):
         P(f"  {k}: {TODO_TEXT}")
+    P(f"  E_scope: {{value: TODO, note: {q(P7_E_NOTE)}}}")
     P(f"epistemology: {TODO_TEXT}")
     P(f"ethics: {TODO_TEXT}")
     P("practice:")
@@ -251,6 +263,7 @@ def stub(row, note, rules):
     P("## Research log")
     P("")
     P(f"- {TODAY}: stub created by `scripts/make_system_stubs.py`.")
+    P(f"- {P7_DATE}: E_scope note added for decision P7 (score E on the world's order when the stub is filled).")
     return "\n".join(L) + "\n"
 
 

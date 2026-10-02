@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 one item is open (P7, PROPOSED). When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 no item is open (P7 was decided on 2026-10-02). When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6, added later, was decided on 2026-10-02. P7 is open. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -32,98 +32,18 @@ The 19 recommendations below were decided on 2026-10-01; P6, added later, was de
 | S5 | Change both to "neighbor (easily confused)" | medium | decided 2026-10-01 |
 | S6 | Two-part PANT test; host tradition or PANENT for Advaita/Kabbalah; STOIC for Stoics | medium | decided 2026-10-01 |
 | P6 | P4: score B_cause on the person's account of nature; TODO (not UNKNOWN) when the test has no branch | medium | decided 2026-10-02 (added by the people run) |
-| P7 | E_scope domain: score on the world's order (this-world events); salvation and election go to C | medium | **open, PROPOSED** (raised 2026-10-02 by the lens audit, run 2) |
+| P7 | E_scope domain: score on the world's order (this-world events); salvation and election go to C | medium | decided 2026-10-02, option 1 (added by the lens audit, run 2) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-### P7. Which domain is E_scope scored on?
-**PROPOSED, open (raised 2026-10-02 by the independent audit, lens, run 2, claim #23). Not decided.** Until it is decided, every E_scope score whose value depends on the domain is held at certainty ≤ 0.7 under the Contested readings rule (CODING_GUIDE §3), and its how_known points here.
-
-**The question.** E_scope is the fifth LIO axis. The records do not score it on the same domain:
-
-- Newton's E is scored on natural philosophy only (the same causes for man and beast, Europe and America, kitchen fire and sun). His judgement theology is scored on C.
-- Faraday's E is scored on the scope of salvation and church membership (a "very small & despised sect").
-- Aquinas's E is scored on both, and the salvation side (reprobation; revealed truths needed for salvation) pulls it to 2.
-
-So the axis is not comparable across records.
-
-**What v7.1 says.** Verbatim, from the data book, section 4 "LIO axes (person-level)", table row "E Scope" (`data/sources/v7_1/neuresthetics_v7_combined.json`, `documents.data_book.content.tables[2]`):
-
-| Axis | Interventionist pole | LIO pole |
-|---|---|---|
-| E Scope | Hidden exceptions for an in-group | Same rules for stars, insects, humans |
-
-That is the only definition. The two papers do not name the axis, but they use the same idea:
-
-- The two-lane paper, "Lawful immanent order": "High LIO: regular, non-intervening cosmos, no personal moral ledger, observation outranks revelation, no reserved exemptions."
-- The neurology sister paper (V7.1-N), on the interventionist prior: "some observations are allowed to stand outside the lawful generative model. Weather, illness, victory, and in-group fortune can be attributed to an agent who is not bound by the rest of the model. That is high precision on exemptions."
-
-v8 adds only the 0–4 scale (P1): 0 at the interventionist pole, 1 leans interventionist, 2 mixed or both poles in different domains, 3 leans LIO with a stated, limited exception, and 4 at the LIO pole. The schema and `docs/DATA_DICTIONARY.md` describe `E_scope` as "E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4)." None of these texts says whether salvation is in scope.
-
-**How E is scored now** (record, score, certainty, domain):
-
-| Record | E | certainty | domain scored |
-|---|---|---|---|
-| Newton | 3 | 1.0 → 0.7 (interim) | natural philosophy only; judgement theology put on C |
-| Aquinas | 2 | 1.0 → 0.7 (interim) | both: one providence and natural law for all (LIO side), plus reprobation and salvation by revealed truth (in-group side) |
-| Faraday | 1 | 0.5 | salvation and church membership (sect); science noted only as "not 0" |
-| Ibn Sina | 3 | 0.5 | both: one graded order of nature, and knowledge and bliss open to all who work for them; prophet as the limited exception |
-| Maxwell | TODO | | note covers both: the same laws for stars, earth and human will; nothing read on believers' exemption |
-| Gödel | TODO | | note: religions vs religion, and "same psychic capacities" for every human |
-| PANT | 4 | 1.0 | the natural order, human emotions included (no salvation concept) |
-| CLASS_THEISM | 3 | 0.5 | both: one natural order; souls, creation ordered for rational beings, and salvation needing revealed truths as the limits |
-| CLTHEI | 1 | 0.5 | this-world divine action for particular people (answered prayer) |
-| CHRIST | 1 | 0.5 | salvation through Christ and the church, plus particular acts (prayer, incarnation) |
-| ISLAM | 1 | 0.5 | revelation, prophecy and community (best community; people of the Book) |
-| JUDA | 1 | 0.5 | covenant: the chosen people |
-| DEISM | 3 | 0.7 | access to religious truth: natural religion open to all |
-| STOIC | 3 | 0.7 | both: one causal order, and a moral community limited to gods and humans |
-| PLATO | 3 | 0.7 | the order of forms and cosmos, with theurgy and the gods' help as partial exceptions |
-
-**Options:**
-
-1. **The world's order, this-world events only.** E asks two things:
-   - Do the same rules govern every kind of thing, humans included ("stars, insects, humans")?
-   - Does the person's account of what happens reserve exceptions for an in-group: fortune, protection, healing, answered petition or miracles for the favoured?
-
-   Salvation, election and afterlife are scored on C (reward and punishment of persons), and the E rationale notes them. This parallels P6 for B.
-2. **Salvation and moral community only.** E asks whether salvation, divine favour and moral standing are the same for all, or reserved for an in-group (the elect, a church, a chosen people). The natural order is left to B.
-3. **Both, in one score.** Score the natural order and salvation together. If they differ, the score is 2 ("both poles in different domains"), or the more in-group of the two. This is what the Aquinas record does now.
-4. **Split the axis** in a later schema version: `E_scope_nature` (option 1) and `E_scope_salvation` (option 2). The test and the tables use whichever is named.
-
-**Effect on each person** (the scores under options 1–3 are the coder's estimates from evidence already in the records; each needs a rescore):
-
-| Person | now | option 1 (world order) | option 2 (salvation) | option 3 (both) |
-|---|---|---|---|---|
-| Newton | 3 | 3, unchanged; can return to 1.0 (published texts) | about 2–3, at most 0.7: all are raised and "rewarded according to their deeds", and gentiles are judged by the law in their hearts, but redemption is through Christ, and this rests on private manuscripts | about 2, at most 0.7 |
-| Aquinas | 2 | about 3: one providence over all things and one natural law, with miracles and immaterial souls as the limited exceptions (as CLASS_THEISM) | about 1: "God does reprobate some", and salvation needs revealed truths | 2, unchanged |
-| Faraday | 1 | about 3, at 0.5: no petition or intervention in nature in his own words, and the same laws for all matter; no source addresses the axis directly | 1, unchanged | about 2 |
-| Ibn Sina | 3 | 3 | 3 | 3 (unchanged under every option) |
-| Maxwell | TODO | scorable now, about 3 (the same laws for stars and earth; human will acts at singular points within law) | stays TODO until Theerman 1986 and the 1884 Life are read | TODO |
-| Gödel | TODO | TODO; the 1952 "same psychic capacities" letter points high | TODO until Wang 1996 is read | TODO |
-
-No option changes a `mid_basin` result, since the P4 test uses only A_locus and B_cause. Under option 1, the systems scored on salvation or covenant scope would need a rescore: CHRIST, ISLAM, JUDA and the salvation part of CLASS_THEISM. CLTHEI would stay 1 (answered prayer is a this-world in-group exception), and STOIC might move to 4 (its named alternative). Under option 2, PANT, PLATO and the natural-order parts of CLASS_THEISM and STOIC would need a salvation reading that the sources barely give.
-
-**Recommendation (people run, 2026-10-02, PROPOSED only): option 1.** Confidence: medium.
-
-- The v7.1 LIO pole names kinds of beings under one set of rules ("stars, insects, humans"), which is the natural order.
-- The papers place the interventionist pole in this-world events. "In-group fortune" is "attributed to an agent who is not bound by the rest of the model", and LIO means "no reserved exemptions" in a "regular, non-intervening cosmos".
-- Reward and punishment of persons is already axis C, so scoring election and salvation on E would count the same feature twice.
-- Option 1 matches P6 (B scored on the person's account of nature), so the five axes stay about the working model of the world.
-
-The cost: "hidden exceptions for an in-group" can fairly be read to include election, and option 1 then scores Aquinas 3 and Faraday about 3, where a salvation reading gives 1. If Jason wants salvation scope tracked, option 4 keeps both without mixing them.
-
-**If adopted:**
-- Update CODING_GUIDE §6, the `E_scope` schema descriptions (then regenerate DATA_DICTIONARY) and METHOD.
-- Rescore E for Aquinas and Faraday. Score Maxwell. Restore Newton's E certainty if nothing else caps it.
-- Recheck E in the nine sourced system files.
+None. P7 was decided on 2026-10-02 and is listed under "Decided".
 
 
 ## Decided
 
-All 20 items, in id order (P6 is placed after P5).
+All 21 items, in id order (P6 and P7 are placed after P5).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -387,6 +307,109 @@ A second, smaller gap: P4's "otherwise UNKNOWN or BELOW_THRESHOLD" also catches 
 3. Keep one B score, but add a `B_cause_in_nature` field in a later schema version (the P4 note already floated a `B_cause_in_work` field) and run the test on that field.
 
 **Proposal (people run, 2026-10-02, PROPOSED only):** option 1, with the theology-wide reading kept in the B rationale. The v7.1 texts that define the group are about lawful nature. Under option 1, Aquinas would be B 3 and mid_basin true; Ibn Sina is unchanged (B 3 either way). Confidence: medium. Also settle the label for "evidence complete, test has no branch" (suggest TODO with a note, not UNKNOWN).
+
+### P7. Which domain is E_scope scored on?
+**Decided 2026-10-02 (1:52 AM PT) by Jason (option 1):** E_scope is scored on the world's order: which beings and events, from stars to insects to humans, fall under one set of rules, and whether the person's account of this-world events keeps hidden exceptions for an in-group (for example in-group fortune, or favour in nature or providence). Salvation, reward and punishment, and the scope of the moral community are not scored on E. They belong to C_ledger. This avoids counting reward and punishment twice and matches P6 (B_cause scored on the account of nature). The v7.1 poles are unchanged: 0 "Hidden exceptions for an in-group", 4 "Same rules for stars, insects, humans". Closes lens audit run 2 finding #23 (raised 2026-10-02 by the independent audit, lens, run 2).
+
+Updated: CODING_GUIDE §6 (the interim rule replaced by the final rule, with examples), METHOD §1.1, the `E_scope` descriptions in both schemas (DATA_DICTIONARY regenerated), the person and system templates, and the stub generator (every stub's E_scope now carries a note). E_scope rescored from the sources already in each record:
+
+| Record | before | after | note |
+|---|---|---|---|
+| Aquinas | 2 (0.7) | 3 (0.7) | universal providence over individual creatures (ST I q. 22 a. 2); miracles the limited exception; 2 is the named alternative (providence over the just, I q. 22 a. 2 ad 4) |
+| Faraday | 1 (0.5) | 3 (0.5) | God's "definite laws" for all matter; no favour in events in his own words; biblical miracles accepted |
+| Newton | 3 (0.7) | 3 (0.7) | unchanged; capped by a named alternative (2: petition for "blessings of this life" in a private manuscript) |
+| Ibn Sina | 3 (0.5) | 3 (0.7) | the heavens do not act "for our sake" (his own text); the prophet the limited exception; 4 the named alternative |
+| Maxwell | TODO | 3 (0.5) | the same laws in Sirius and on earth, human will within law; no text on favour in events |
+| Gödel | TODO | 3 (0.5) | "order reign in everything"; the same psychic capacities in every human; letters few |
+| CHRIST, ISLAM, JUDA | 1 (0.5) | 1 (0.5) | same value, rescored on this-world acts for particular people (miracles, answered petition, acts in Israel's history); salvation, election and community moved to C |
+| CLTHEI | 1 (0.5) | 1 (0.5) | unchanged; already scored on answered petition |
+| CLASS_THEISM | 3 (0.5) | 3 (0.5) | same value; salvation dropped from the rationale; miracles and immaterial souls the limits |
+| DEISM | 3 (0.7) | 3 (0.7) | same value, rescored on non-intervention instead of universal natural religion |
+| STOIC | 3 (0.7) | 4 (0.7) | the moral-community limit moves to C, leaving one inviolable causal order; 3 the named alternative |
+| PLATO, PANT | 3, 4 | unchanged | already scored on the world's order; not edited |
+
+No `mid_basin` result changed (the P4 test uses only A_locus and B_cause). The 0.7 interim caps are gone; where a certainty is still 0.7, it is because of a named alternative under the new rule (CODING_GUIDE §3).
+
+The original question and the recommendation are kept below for the record.
+
+**The question.** E_scope is the fifth LIO axis. The records do not score it on the same domain:
+
+- Newton's E is scored on natural philosophy only (the same causes for man and beast, Europe and America, kitchen fire and sun). His judgement theology is scored on C.
+- Faraday's E is scored on the scope of salvation and church membership (a "very small & despised sect").
+- Aquinas's E is scored on both, and the salvation side (reprobation; revealed truths needed for salvation) pulls it to 2.
+
+So the axis is not comparable across records.
+
+**What v7.1 says.** Verbatim, from the data book, section 4 "LIO axes (person-level)", table row "E Scope" (`data/sources/v7_1/neuresthetics_v7_combined.json`, `documents.data_book.content.tables[2]`):
+
+| Axis | Interventionist pole | LIO pole |
+|---|---|---|
+| E Scope | Hidden exceptions for an in-group | Same rules for stars, insects, humans |
+
+That is the only definition. The two papers do not name the axis, but they use the same idea:
+
+- The two-lane paper, "Lawful immanent order": "High LIO: regular, non-intervening cosmos, no personal moral ledger, observation outranks revelation, no reserved exemptions."
+- The neurology sister paper (V7.1-N), on the interventionist prior: "some observations are allowed to stand outside the lawful generative model. Weather, illness, victory, and in-group fortune can be attributed to an agent who is not bound by the rest of the model. That is high precision on exemptions."
+
+v8 adds only the 0–4 scale (P1): 0 at the interventionist pole, 1 leans interventionist, 2 mixed or both poles in different domains, 3 leans LIO with a stated, limited exception, and 4 at the LIO pole. The schema and `docs/DATA_DICTIONARY.md` describe `E_scope` as "E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4)." None of these texts says whether salvation is in scope.
+
+**How E is scored now** (record, score, certainty, domain):
+
+| Record | E | certainty | domain scored |
+|---|---|---|---|
+| Newton | 3 | 1.0 → 0.7 (interim) | natural philosophy only; judgement theology put on C |
+| Aquinas | 2 | 1.0 → 0.7 (interim) | both: one providence and natural law for all (LIO side), plus reprobation and salvation by revealed truth (in-group side) |
+| Faraday | 1 | 0.5 | salvation and church membership (sect); science noted only as "not 0" |
+| Ibn Sina | 3 | 0.5 | both: one graded order of nature, and knowledge and bliss open to all who work for them; prophet as the limited exception |
+| Maxwell | TODO | | note covers both: the same laws for stars, earth and human will; nothing read on believers' exemption |
+| Gödel | TODO | | note: religions vs religion, and "same psychic capacities" for every human |
+| PANT | 4 | 1.0 | the natural order, human emotions included (no salvation concept) |
+| CLASS_THEISM | 3 | 0.5 | both: one natural order; souls, creation ordered for rational beings, and salvation needing revealed truths as the limits |
+| CLTHEI | 1 | 0.5 | this-world divine action for particular people (answered prayer) |
+| CHRIST | 1 | 0.5 | salvation through Christ and the church, plus particular acts (prayer, incarnation) |
+| ISLAM | 1 | 0.5 | revelation, prophecy and community (best community; people of the Book) |
+| JUDA | 1 | 0.5 | covenant: the chosen people |
+| DEISM | 3 | 0.7 | access to religious truth: natural religion open to all |
+| STOIC | 3 | 0.7 | both: one causal order, and a moral community limited to gods and humans |
+| PLATO | 3 | 0.7 | the order of forms and cosmos, with theurgy and the gods' help as partial exceptions |
+
+**Options:**
+
+1. **The world's order, this-world events only.** E asks two things:
+   - Do the same rules govern every kind of thing, humans included ("stars, insects, humans")?
+   - Does the person's account of what happens reserve exceptions for an in-group: fortune, protection, healing, answered petition or miracles for the favoured?
+
+   Salvation, election and afterlife are scored on C (reward and punishment of persons), and the E rationale notes them. This parallels P6 for B.
+2. **Salvation and moral community only.** E asks whether salvation, divine favour and moral standing are the same for all, or reserved for an in-group (the elect, a church, a chosen people). The natural order is left to B.
+3. **Both, in one score.** Score the natural order and salvation together. If they differ, the score is 2 ("both poles in different domains"), or the more in-group of the two. This is what the Aquinas record does now.
+4. **Split the axis** in a later schema version: `E_scope_nature` (option 1) and `E_scope_salvation` (option 2). The test and the tables use whichever is named.
+
+**Effect on each person** (the scores under options 1–3 are the coder's estimates from evidence already in the records; each needs a rescore):
+
+| Person | now | option 1 (world order) | option 2 (salvation) | option 3 (both) |
+|---|---|---|---|---|
+| Newton | 3 | 3, unchanged; can return to 1.0 (published texts) | about 2–3, at most 0.7: all are raised and "rewarded according to their deeds", and gentiles are judged by the law in their hearts, but redemption is through Christ, and this rests on private manuscripts | about 2, at most 0.7 |
+| Aquinas | 2 | about 3: one providence over all things and one natural law, with miracles and immaterial souls as the limited exceptions (as CLASS_THEISM) | about 1: "God does reprobate some", and salvation needs revealed truths | 2, unchanged |
+| Faraday | 1 | about 3, at 0.5: no petition or intervention in nature in his own words, and the same laws for all matter; no source addresses the axis directly | 1, unchanged | about 2 |
+| Ibn Sina | 3 | 3 | 3 | 3 (unchanged under every option) |
+| Maxwell | TODO | scorable now, about 3 (the same laws for stars and earth; human will acts at singular points within law) | stays TODO until Theerman 1986 and the 1884 Life are read | TODO |
+| Gödel | TODO | TODO; the 1952 "same psychic capacities" letter points high | TODO until Wang 1996 is read | TODO |
+
+No option changes a `mid_basin` result, since the P4 test uses only A_locus and B_cause. Under option 1, the systems scored on salvation or covenant scope would need a rescore: CHRIST, ISLAM, JUDA and the salvation part of CLASS_THEISM. CLTHEI would stay 1 (answered prayer is a this-world in-group exception), and STOIC might move to 4 (its named alternative). Under option 2, PANT, PLATO and the natural-order parts of CLASS_THEISM and STOIC would need a salvation reading that the sources barely give.
+
+**Recommendation (people run, 2026-10-02, PROPOSED only): option 1.** Confidence: medium.
+
+- The v7.1 LIO pole names kinds of beings under one set of rules ("stars, insects, humans"), which is the natural order.
+- The papers place the interventionist pole in this-world events. "In-group fortune" is "attributed to an agent who is not bound by the rest of the model", and LIO means "no reserved exemptions" in a "regular, non-intervening cosmos".
+- Reward and punishment of persons is already axis C, so scoring election and salvation on E would count the same feature twice.
+- Option 1 matches P6 (B scored on the person's account of nature), so the five axes stay about the working model of the world.
+
+The cost: "hidden exceptions for an in-group" can fairly be read to include election, and option 1 then scores Aquinas 3 and Faraday about 3, where a salvation reading gives 1. If Jason wants salvation scope tracked, option 4 keeps both without mixing them.
+
+**If adopted:**
+- Update CODING_GUIDE §6, the `E_scope` schema descriptions (then regenerate DATA_DICTIONARY) and METHOD.
+- Rescore E for Aquinas and Faraday. Score Maxwell. Restore Newton's E certainty if nothing else caps it.
+- Recheck E in the nine sourced system files.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

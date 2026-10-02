@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: C_ledger certainty 0.7 -> 0.5 (prayers have no judgement or reward language). Consistency pass (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the coder notes name B = 4 as plausible; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the sources already cited (S8 the same molecular laws in Sirius and on earth; S9 human will acting within law; S7 prayers that ask for understanding, not favour in events). No text read addresses favour in events directly, so 0.5, with a gap note. No new sources. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -180,7 +181,13 @@ worldview:
       cites: [{source: S5, locator: "p. 394"}, {source: S6, locator: "pp. 404–405"}, {source: S4, locator: "p. 178"}]
       how_known: "Two private letters and a draft reply (1852, 1875, 1876) that agree; so 0.7."
       rationale: "Holds both, in different domains. In science, observation and hypothesis rule, and he refuses to fix scripture to scientific theories (S5) or to give harmonising efforts a society's stamp (S6). In faith, scripture is the authority, and he regards Christianity as the one belief that can be examined without limit (S4). Neither ranks over the other in the texts read. Private letters and a draft that agree, so 0.7."
-    E_scope: {value: TODO, note: "Evidence so far: the same physical laws for distant stars and earth (S8, p. 376) and for human beings, whose will acts at singular points within law (S9). Nothing read on whether believers have an exemption (salvation for an in-group). Read Theerman 1986 (Am. J. Phys. 54: 312–317) and the 1884 edition of the Life before scoring. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone the evidence above points to about 3; on salvation scope it stays TODO until the readings above are done."}
+    E_scope:
+      value: 3
+      basis: scholarly_reconstruction
+      certainty: 0.5
+      cites: [{source: S8, locator: "pp. 376–377"}, {source: S9, locator: "p. 443"}, {source: S7, locator: "p. 347"}]
+      how_known: "Coder's reading of his public lecture (S8), an essay for a private club (S9) and private prayers (S7). They show one order for stars, earth and humans, but none addresses favour for a group in events directly, so 0.5. Scored under decision P7 (2026-10-02); it was TODO before. Gap: Theerman 1986 and the 1884 edition of the Life, on providence and prayer, were not read and could raise or lower this."
+      rationale: "Scored on the world's order (decision P7). Leans LIO. The same laws hold for stars and earth: a hydrogen molecule 'whether in Sirius or in Arcturus, executes its vibrations in precisely the same time' (S8, p. 376), and molecules 'continue this day as they were created' (S8, p. 377). Humans are inside the same order. 'Every existence above a certain rank has its singular points', where small influences such as the will can produce large results (S9, p. 443). That is a ranking of beings within physical law, not an exemption from it, and it is why the score is 3 rather than 4. His private prayers petition God to 'teach us to study the works of Thy hands' and to 'strengthen our reason' (S7). They ask for understanding and service, not for favour in events. No text read says God favours believers in what happens. The creation of molecules (S8) is a limit on B, not a favour to a group. Named alternative 4, if the singular points are read as plain physics. The 'knowledge of salvation' in the same prayer (S7) is scored on C, not here."
   mid_basin:
     value: true
     certainty: 0.7
@@ -274,7 +281,7 @@ worldview:
     - text: "Almighty God, who hast created man in Thine own image, and made him a living soul that he might seek after Thee and have dominion over Thy creatures, teach us to study the works of Thy hands that we may subdue the earth to our use, and strengthen our reason for Thy service; and so to receive Thy blessed Word, that we may believe on Him whom Thou hast sent to give us the knowledge of salvation and the remission of our sins."
       cites: [{source: S7, locator: "p. 347"}]
       context: "One of two undated prayer fragments 'found amongst his papers', printed by Campbell."
-      axes: [C_ledger, A_locus]
+      axes: [C_ledger, A_locus, E_scope]
       kind: "notebook or diary"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
@@ -289,7 +296,7 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "A deepening of religious conviction after an illness in 1853 while staying with the Rev. C. B. Tayler's family in Suffolk; he later said it gave him a new perception of the love of God", year: 1853, age: 22, certainty: 0.7, cites: [{source: S3, locator: "pp. 169–170"}, {source: S11, locator: "section 3"}], how_known: "Campbell's account, repeated by Hutchinson from it, so one line of evidence."}
-  coder_notes: "Code and four axes rest on his own words. The two weakest points: (1) CHRIST is 0.7 because the specifically Christian statements are private; (2) B = 3 rather than 4 because of the stated limit at the creation of molecules. A reviewer who reads that limit as the edge of science rather than an exception could score B = 4; mid_basin is true either way. E_scope is open."
+  coder_notes: "Code and four axes rest on his own words. The two weakest points: (1) CHRIST is 0.7 because the specifically Christian statements are private; (2) B = 3 rather than 4 because of the stated limit at the creation of molecules. A reviewer who reads that limit as the edge of science rather than an exception could score B = 4; mid_basin is true either way. E_scope is 3 at 0.5 on the world's order (decision P7); no text read addresses favour for a group in events directly."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -345,7 +352,7 @@ review:
     - "The Baptist-chapel letter to C. B. Tayler is quoted by S11 but was not found in the 1882 edition of the Life (S3); it may be in the 1884 edition."
     - "S8 quotations come from OCR of the 1890 Scientific Papers; some nearby sentences have OCR errors and were not quoted."
   open_questions:
-    - "Score E_scope: does he anywhere give believers or humans an exemption? Read Theerman 1986 (Am. J. Phys. 54: 312–317) and Stanley, Huxley's Church and Maxwell's Demon (2015)."
+    - "E_scope (3 at 0.5, decision P7): does he anywhere expect God to favour believers in events (providence, answered petition)? Read Theerman 1986 (Am. J. Phys. 54: 312–317), the 1884 edition of the Life and Stanley, Huxley's Church and Maxwell's Demon (2015) to raise or revise it."
     - "Find and read the Tayler letter on the London Baptist chapel (1884 edition of the Life) and quote it from the primary text."
     - "When did he become an elder at Parton? S3 gives no start year."
     - "Baptism: no record found in S3; check parish records or Harman's Scientific Letters and Papers."
@@ -471,7 +478,7 @@ sources:
 
 # James Clerk Maxwell
 
-> Status: draft — unreviewed. Worldview coded CHRIST at 0.7; four LIO axes scored; mid_basin true under the P4 test. E_scope and a few facts are TODO.
+> Status: draft — unreviewed. Worldview coded CHRIST at 0.7; all five LIO axes scored (E_scope at 0.5); mid_basin true under the P4 test. A few facts are TODO.
 
 ## Summary
 
@@ -506,7 +513,7 @@ His own letters show a Bible-centred Christian faith from his student years. In 
 
 On science and faith he kept two things apart. He would not let scripture be tied to a scientific hypothesis, since hypotheses change faster than interpretations [S5, p. 394]. He declined to join the Victoria Institute, saying that each man's attempts to harmonise science with Christianity matter only to himself, and only for a time [S6, pp. 404–405]. In public, though, he drew a theistic conclusion from physics: molecules are identical everywhere, so they have "the essential character of a manufactured article" and must have been created [S8, p. 376].
 
-Coding: CHRIST at 0.7. A_locus 0 at 1.0 and B_cause 3 (for his physics) at 0.7, from the 1873 lecture, so mid_basin is true at 0.7 under P4. D_authority 2 at 0.7; C_ledger 1 at 0.5. E_scope is TODO.
+Coding: CHRIST at 0.7. A_locus 0 at 1.0 and B_cause 3 (for his physics) at 0.7, from the 1873 lecture, so mid_basin is true at 0.7 under P4. D_authority 2 at 0.7; C_ledger 1 at 0.5. E_scope 3 at 0.5, scored on the world's order (decision P7): the same molecular laws in Sirius and on earth [S8, p. 376], and human will acting within law [S9, p. 443]. No text read addresses favour for a group in events.
 
 ## Heritage (context only)
 
@@ -522,7 +529,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Maxwell sho
 
 ## Open questions
 
-- E_scope: read Theerman 1986 and Stanley 2015 for any in-group exemption.
+- E_scope (3 at 0.5): read Theerman 1986, the 1884 Life and Stanley 2015 for any expectation of favour for believers in events.
 - Find the Tayler letter on the London Baptist chapel in the 1884 edition and quote it from the source.
 - Start year of his eldership at Parton; baptism record.
 - Any text on providence, answered prayer or miracle in nature (bears on CLTHEI).
@@ -530,3 +537,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Maxwell sho
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main, Later life, Researcher's Note), MacTutor (S2), and the Gutenberg text of Campbell and Garnett 1882 (S3), including the letters, essays and prayers printed there (S4–S7, S9, S10). Read the 1873 "Molecules" lecture in the OCR of the 1890 Scientific Papers (S8) and Hutchinson's seminar paper (S11). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Theerman 1986, the Oxford DNB and Harman's edition of the Scientific Letters and Papers were not read (paywalled or not online). E_scope and baptism left TODO.
+- 2026-10-02 (P7): E_scope scored on the world's order (3 at 0.5) from the texts already cited (S7, S8, S9); no new sources or quotations.

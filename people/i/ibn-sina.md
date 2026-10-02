@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Consistency pass after the lens audit (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the rationale names 4 as plausible on SEP's reading; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known notes that the score (3 at 0.5) is the same under every option of open item P7. No score change. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3. Basis scholarly_reconstruction 0.5 -> written_profession 0.7, because on the world's order his own text speaks to the axis (the heavens do not act 'for our sake', S6, p. 617); capped at 0.7 by the named alternative 4 (CODING_GUIDE §3), as for B. Access to knowledge and bliss moved to the C_ledger rationale (C unchanged). Statement tags updated; P7 note removed. No new sources. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -166,7 +167,7 @@ worldview:
       certainty: 1.0
       cites: [{source: S6, locator: "IX ch. 9, pp. 633–643; X ch. 2, pp. 664–665"}, {source: S2, locator: "§4; §5"}]
       how_known: "Metaphysics of The Cure, in a scholarly translation; written profession, so 1.0."
-      rationale: "Leans to consequence. The soul's bliss after death follows from its own state: the more it contemplates, the more it is disposed to bliss (S6, p. 643), and real happiness is the perfection of the rational soul through knowledge (S2, §4). The stated exception: bodily reward and punishment at the resurrection, which he accepts on the authority of the religious law (S6, p. 633). The prophet's teaching that God rewards obedience and punishes disobedience is framed as instruction for the many in parables (S6, pp. 664–665). So 3."
+      rationale: "Leans to consequence. The soul's bliss after death follows from its own state: the more it contemplates, the more it is disposed to bliss (S6, p. 643), and real happiness is the perfection of the rational soul through knowledge (S2, §4). The stated exception: bodily reward and punishment at the resurrection, which he accepts on the authority of the religious law (S6, p. 633). The prophet's teaching that God rewards obedience and punishes disobedience is framed as instruction for the many in parables (S6, pp. 664–665). So 3. Under decision P7 (2026-10-02), access to bliss (open to all who work for it, with no free gift for the idle, S2, §4) is recorded here, not on E. It fits a score of 3 and does not change it."
     D_authority:
       value: 3
       basis: written_profession
@@ -176,11 +177,11 @@ worldview:
       rationale: "Leans to reason. Demonstration decides; even the prophet knows by middle terms, since beliefs taken on authority about things known through their causes 'possess no intellectual certainty' (S2, §4). Religion gives the many images and parables, and those fit for philosophy are invited to find the truth by demonstration (S6, pp. 665–666). The stated exception: truths about the afterlife of the body, which cannot be proved and which he accepts on revelation (S6, p. 633). So 3."
     E_scope:
       value: 3
-      basis: scholarly_reconstruction
-      certainty: 0.5
-      cites: [{source: S2, locator: "§4"}, {source: S6, locator: "IX ch. 9, p. 643; X ch. 1, p. 651"}, {source: S10, locator: "Avicenna section"}]
-      how_known: "Coder's reading of SEP's account and the translated text; neither addresses the axis directly, so 0.5. Scored on both the natural order and access to knowledge and bliss; the score is 3 under every option of open item P7 (OPEN_DECISIONS), so it does not depend on the domain."
-      rationale: "Leans to same rules for all. One graded order runs from the intellects through the spheres to matter, plants, animals and humans (S6, p. 651); all humans have the means to reach knowledge and bliss but must work for it, with no free gift for the idle (S2, §4). The limited exception is the prophet, a rare soul whose matter suits a perfection that few human mixtures can receive (S6, X ch. 3 opening, via S10). Gutas reads the prophet as a natural extreme of the intellect (S2); Horten reads him as raised above nature (S10). That disagreement is why this is 0.5."
+      basis: written_profession
+      certainty: 0.7
+      cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, pp. 651, 657; X ch. 2, p. 664"}, {source: S10, locator: "Avicenna section"}, {source: S2, locator: "§4"}]
+      how_known: "Metaphysics of The Cure, in a scholarly translation, so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 4 (CODING_GUIDE §3), the same cap as B. Rescored under decision P7 (2026-10-02): before P7 this was 3 at 0.5, scored on the natural order and on access to knowledge and bliss, and called indirect. On the world's order his own text speaks to the axis, so the basis is now written profession."
+      rationale: "Scored on the world's order (decision P7). Leans LIO with a stated, limited exception. One graded order runs from the intellects through the spheres to matter, plants, animals and humans (S6, p. 651). Providence is God knowing the order of the good, from which things flow 'in einer bestimmten Ordnung' (in a fixed order; S6, p. 618). The causes of the heavens 'nicht etwa unseretwegen ihre Wirkungen ausüben können' (cannot exert their effects for our sake; S6, p. 617), so nothing that happens is arranged for a favoured group. Answered prayer is explained inside the order of intermediate causes (S6, p. 657). The limited exception is the prophet, who must work miracles so that people see in him what they do not otherwise see (S6, p. 664). He is a rare soul whose matter suits a perfection that few human mixtures can receive (S6, X ch. 3 opening, via S10). So 3. Named alternative 4: Gutas reads prophecy and 'paranormal' phenomena as natural functions of the rational soul (S2, §4), while Horten reads the prophet as raised above nature (S10). Bliss open to all who work for it (S2, §4; S6, p. 643) used to be part of this score. Under P7 it is scored on C (see C_ledger)."
   mid_basin:
     value: true
     certainty: 0.7
@@ -198,7 +199,7 @@ worldview:
     - text: "daß die Ursachen der himmlischen Welt nicht etwa unseretwegen ihre Wirkungen ausüben können"
       cites: [{source: S6, locator: "IX. Abhandlung, 8. Kapitel, p. 617"}]
       context: "Opening of the chapter on providence and evil (Cairo numbering IX.6, as SEP cites it). ('that the causes of the heavenly world cannot exert their effects for our sake')"
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -214,7 +215,7 @@ worldview:
     - text: "Bei ihm entsteht das Werden alles dessen, was entsteht; jedoch entsteht dasselbe durch Vermittlung anderer Ursachen."
       cites: [{source: S6, locator: "X. Abhandlung, 1. Kapitel, p. 657"}]
       context: "Chapter on inspiration, answered prayer, heavenly punishment, prophecy and astrology. Answered prayers and successful sacrifices are then said to be explained by these relations. ('From him comes the becoming of all that comes to be; yet it comes to be through the mediation of other causes.')"
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -246,7 +247,7 @@ worldview:
     - text: "So oft der Betreffende (in diesem Leben) in seiner Betrachtung intensiver denkt, vermehrt sich auch die Disposition für seine Glückseligkeit."
       cites: [{source: S6, locator: "IX. Abhandlung, ch. on the afterlife, p. 643"}]
       context: "On what the soul's bliss consists in. The words in parentheses are Horten's. ('The more intensely a person thinks in contemplation (in this life), the more his disposition for bliss grows.')"
-      axes: [C_ledger, E_scope]
+      axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -468,7 +469,7 @@ He learned the Qurʾān by about 10 [S1; S5]. His own account says his father an
 
 God is the Necessary Existent, not in the world or outside it, and not like any earthly thing [S3, §4; S6, p. 664]. Providence is the order of the good that flows from God's thinking [S6, p. 618]. Everything comes to be through other causes [S6, p. 657]. A prophet must work miracles [S6, p. 664]. Bliss after death follows the soul's state of knowledge; bodily resurrection is accepted on the religious law [S6, pp. 633, 643]. The prophet teaches the many in parables [S6, p. 665]. Al-Ghazali judged three of his teachings to be unbelief [S9, §3].
 
-Coding: CLASS_THEISM at 1.0. A 1, C 3, D 3 at 1.0; B 3 at 0.7; E 3 at 0.5. mid_basin true at 0.7.
+Coding: CLASS_THEISM at 1.0. A 1, C 3, D 3 at 1.0; B 3 at 0.7; E 3 at 0.7, scored on the world's order (decision P7): the heavens do not act "for our sake" [S6, p. 617], and the prophet is the limited exception [S6, p. 664]. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
@@ -492,3 +493,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The form (d
 ## Research log
 
 - 2026-10-02: Read Britannica (S1), SEP entries by Gutas (S2), Lizzini (S3), McGinnis (S8) and Griffel (S9), IEP (S4) and MacTutor (S5). Read the providence, prayer, afterlife and prophecy chapters of the Metaphysics of The Cure in Horten's 1907 German translation (S6), and the Autobiography in Arberry's 1951 translation through a poor OCR scan (S7, paraphrased only). Horten 1913 (S10) for an older reading. Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Marmura's and Gohlman's translations were not read.
+- 2026-10-02 (P7): E_scope rechecked on the world's order from the texts already cited (S2, S6, S10); no new sources or quotations. The score stays 3; the basis moves to written profession at 0.7.

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P6 decided by Jason (2026-10-02): B_cause is scored on the account of nature. B_cause changed from 2 to 3 at 1.0, with the theology-wide reading (2) kept in the rationale; added the I q. 105 a. 5 statement. mid_basin changed from TODO to true at 1.0. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (miracles in ST I q. 105 a. 6–8 are part of his account of nature; the theology-wide 2 is a named alternative); mid_basin certainty 1.0 -> 0.7, with a note that the result turns on decision P6. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23 pattern): E_scope certainty 1.0 -> 0.7, because the score depends on which domain E is scored on (open item P7, PROPOSED). Score unchanged (2). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 2 -> 3 at 0.7 (universal providence over individual creatures, I q. 22 a. 2; miracles the limited exception; named alternative 2 from I q. 22 a. 2 ad 4). Reprobation and salvation by revealed truth moved to the C_ledger rationale (C unchanged). Two statements added from I q. 22 a. 2 (same source, page already read), checked word for word. P7 interim note removed. mid_basin unchanged. Not reviewed."}
 
 identity:
   id: aquinas-thomas
@@ -160,9 +161,9 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S4, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3"}]
+      cites: [{source: S4, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}]
       how_known: "Summa theologiae; written profession, so 1.0."
-      rationale: "Leans to personal reward and punishment: sins that destroy charity 'incur a debt of eternal punishment' (I-II q. 87 a. 3), and work done in grace merits eternal life 'condignly' (I-II q. 114 a. 3). The account is limited by its form: punishment follows because sin disturbs an order and 'the effect remains so long as the cause remains' (q. 87 a. 3), which is close to consequence. So 1, not 0."
+      rationale: "Leans to personal reward and punishment: sins that destroy charity 'incur a debt of eternal punishment' (I-II q. 87 a. 3), and work done in grace merits eternal life 'condignly' (I-II q. 114 a. 3). The account is limited by its form: punishment follows because sin disturbs an order and 'the effect remains so long as the cause remains' (q. 87 a. 3), which is close to consequence. So 1, not 0. Under decision P7 (2026-10-02), the scope of salvation is recorded here, not on E: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). Both fit a score of 1 and do not change it."
     D_authority:
       value: 1
       basis: written_profession
@@ -171,12 +172,12 @@ worldview:
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Revelation outranks reason, with a large domain left to reason. Natural reason proves that God exists and much of what God is (S2), and 'grace does not destroy nature but perfects it' (I q. 1 a. 8). But some truths needed for salvation exceed reason and come only by revelation (I q. 1 a. 1), and 'Whatsoever is found in other sciences contrary to any truth of this science must be condemned as false' (I q. 1 a. 6). When they conflict revelation wins, so 1. The CLASS_THEISM system record scores the code 2; for Aquinas himself the stated ranking points to 1."
     E_scope:
-      value: 2
+      value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "I-II q. 94 a. 4; I q. 22 a. 2; I q. 23 a. 3"}]
-      how_known: "Summa theologiae, so written profession. Scored on both the natural order and the scope of salvation; the salvation side pulls it to 2. Which domain E is scored on is open (OPEN_DECISIONS P7, PROPOSED): on the world's order alone it would be about 3 (as CLASS_THEISM), on salvation alone about 1. The score depends on that choice, so certainty is capped at 0.7 under the Contested readings rule (CODING_GUIDE §3). Lowered from 1.0 after the lens audit, run 2 (2026-10-02)."
-      rationale: "Mixed. Same rules for all: all things, even individual ones, are under one providence (I q. 22 a. 2), and the general principles of natural law are 'the same for all' (I-II q. 94 a. 4). But salvation runs by grace that God gives to some and not to others: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). That is a reserved in-group within an otherwise common order, so 2."
+      cites: [{source: S4, locator: "I q. 22 a. 2 and ad 4, ad 5; q. 105 a. 5–7; II-II q. 83 a. 2"}]
+      how_known: "Summa theologiae, so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 2 (CODING_GUIDE §3; see the rationale). Rescored under decision P7 (2026-10-02): before P7 this was 2, scored on the natural order and the scope of salvation together."
+      rationale: "Scored on the world's order (decision P7). Leans LIO with a stated, limited exception. One providence covers every kind of thing: 'all things are subject to divine providence, not only in general, but even in their own individual selves' (I q. 22 a. 2), and individual irrational creatures do not 'escape the care of divine providence' (ad 5). Created causes keep 'their proper operation' (I q. 105 a. 5), and prayer does not change God's disposition (II-II q. 83 a. 2). The limited exception is the miracle: God 'can do something outside this order created by Him, when He chooses' (I q. 105 a. 6–7). So 3, the score CLASS_THEISM gives the code. Named alternative 2: providence covers the just 'in a certain more excellent way than over the wicked', since God 'prevents anything happening which would impede their final salvation' (I q. 22 a. 2 ad 4). That is a favour in this-world providence for a group, though it is aimed at salvation. Reprobation ('God does reprobate some', I q. 23 a. 3) and salvation needing revealed truths (I q. 1 a. 1) used to pull this score to 2. Under P7 they are scored on C (see C_ledger)."
   mid_basin:
     value: true
     certainty: 0.7
@@ -212,6 +213,21 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
+    - text: "We must say, however, that all things are subject to divine providence, not only in general, but even in their own individual selves."
+      cites: [{source: S4, locator: "I q. 22 a. 2"}]
+      context: "Whether everything is subject to the providence of God. Just before, he rejects the views that corruptible things fall under providence only as species, and that humans are excepted from the generality of corruptible things (which he attributes to Rabbi Moses)."
+      axes: [E_scope]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-02
+    - text: "God, however, extends His providence over the just in a certain more excellent way than over the wicked; inasmuch as He prevents anything happening which would impede their final salvation."
+      cites: [{source: S4, locator: "I q. 22 a. 2 ad 4"}]
+      context: "Same article, reply to the objection that God leaves humans to their own counsel. Ad 5 adds that 'individual irrational creatures' do not 'escape the care of divine providence'."
+      axes: [E_scope, C_ledger]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-02
+      note: "Basis of the named alternative E = 2."
     - text: "We must therefore understand that God works in things in such a manner that things have their proper operation."
       cites: [{source: S4, locator: "I q. 105 a. 5"}]
       context: "Whether God works in every agent. Just before, he rejects the view that 'it is not fire that gives heat, but God in the fire'."
@@ -222,7 +238,7 @@ worldview:
     - text: "Wherefore God can do something outside this order created by Him, when He chooses, for instance by producing the effects of secondary causes without them, or by producing certain effects to which secondary causes do not extend."
       cites: [{source: S4, locator: "I q. 105 a. 6"}]
       context: "Whether God can do anything outside the established order of nature. Just before, he says God cannot act against the order that depends on the first cause, only outside the order of secondary causes."
-      axes: [B_cause]
+      axes: [B_cause, E_scope]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -243,7 +259,7 @@ worldview:
     - text: "It was necessary for man's salvation that there should be a knowledge revealed by God besides philosophical science built up by human reason."
       cites: [{source: S4, locator: "I q. 1 a. 1"}]
       context: "Opening article of the Summa theologiae."
-      axes: [D_authority, E_scope]
+      axes: [D_authority, C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -278,7 +294,7 @@ worldview:
     - text: "God does reprobate some."
       cites: [{source: S4, locator: "I q. 23 a. 3"}]
       context: "Whether God reprobates any man. Reprobation is God permitting some to fall away from eternal life, as part of providence."
-      axes: [E_scope, C_ledger]
+      axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
@@ -300,7 +316,7 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "Stopped writing, leaving the Summa theologiae unfinished, after a powerful religious experience while writing on the sacraments", year: 1273, age: "c. 48", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Two sources agree. It ends his writing; it is not a change of system."}
-  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B and D. B is 3 on his account of nature (decision P6, 2026-10-02), matching the CLASS_THEISM system record; on his whole theology it would be 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). D = 1, where the system record has 2 for the code as a whole (between Thomism and falsafa); that 2 is not a reading of Aquinas, whose stated ranking (I q. 1 a. 6) is explicit, so D stays at 1.0. mid_basin is true under the P4 test as amended by P6. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
+  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B, D and E. B is 3 on his account of nature (decision P6, 2026-10-02), matching the CLASS_THEISM system record; on his whole theology it would be 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). D = 1, where the system record has 2 for the code as a whole (between Thomism and falsafa); that 2 is not a reading of Aquinas, whose stated ranking (I q. 1 a. 6) is explicit, so D stays at 1.0. mid_basin is true under the P4 test as amended by P6. E = 3 on the world's order (decision P7); the salvation reading that gave 2 is now on C, and the ad 4 favour to the just keeps E at 0.7. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -414,7 +430,7 @@ sources:
 
 # Thomas Aquinas
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A, C, D at 1.0, and B and E at 0.7; mid_basin true at 0.7, a result that turns on decision P6 (B_cause scored on his account of nature).
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A 1, C 1, D 1 at 1.0, and B 3 and E 3 at 0.7; mid_basin true at 0.7, a result that turns on decision P6 (B_cause scored on his account of nature).
 
 ## Summary
 
@@ -441,7 +457,7 @@ The family held a modest feudal domain and served Emperor Frederick II. His fath
 
 Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But Created things have "their proper operation" [S4, I q. 105 a. 5]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
 
-Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1 at 1.0 from written profession. E 2 at 0.7: it mixes the natural order and the scope of salvation, and the domain is open (P7). B 3 at 0.7: it is scored on his account of nature (decision P6), and on his whole theology it would be 2, so certainty is capped. mid_basin true at 0.7; the result turns on P6.
+Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1 at 1.0 from written profession. E 3 at 0.7: scored on the world's order (decision P7). All things, individual creatures included, are under one providence, with the miracle as the limited exception [S4, I q. 22 a. 2; q. 105 a. 6]. The named alternative is 2, because providence favours the just [S4, I q. 22 a. 2 ad 4]. Reprobation is scored on C. B 3 at 0.7: it is scored on his account of nature (decision P6), and on his whole theology it would be 2, so certainty is capped. mid_basin true at 0.7; the result turns on P6.
 
 ## Heritage (context only)
 
@@ -463,3 +479,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The form is
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main page and three subpages), SEP "Thomas Aquinas" (S2) and IEP "Thomas Aquinas" (S3). Read thirteen questions of the Summa theologiae in the New Advent transcription of the 1920 English Dominican translation (S4). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Torrell, the Leonine edition and the Latin text were not read.
+- 2026-10-02 (P7): E_scope rescored on the world's order. Re-fetched I q. 22 (New Advent, S4) and checked the two new I q. 22 a. 2 quotations word for word against the page text. No new sources.
