@@ -11,7 +11,8 @@ v8 starts by fixing the data in v7.1:
 - The genius roster is rebuilt from the five original model lists, which v7.1 didn't fully use. It now has 1,380 people, up from 482.
 - Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
 - Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
-- The two belief systems that were both labeled "Classical Theism" get separate display names (proposed, pending sign-off).
+- The two belief systems that were both labeled "Classical Theism" get separate display names (approved).
+- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 19 open decisions were made on 2026-10-01, but no person has been coded with them yet.
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 
@@ -50,7 +51,7 @@ python scripts/coverage_report.py           # writes reports/coverage.md
 - [Data dictionary](docs/DATA_DICTIONARY.md): every file, column and field.
 - [Coding guide](docs/CODING_GUIDE.md): the v7.1 coding rules, certainty, worldview codes, LIO axes, and system records.
 - [Runbook](docs/RUNBOOK.md): step by step for one person (or system) per run.
-- [Open decisions](docs/OPEN_DECISIONS.md): choices waiting on sign-off.
+- [Open decisions](docs/OPEN_DECISIONS.md): choices that need sign-off and what was decided (none open as of 2026-10-01).
 - [Coverage](reports/coverage.md): what exists so far.
 
 ## History

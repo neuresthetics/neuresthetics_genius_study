@@ -13,13 +13,14 @@ The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`
   - 32 curated merges, plus 26 keep-separate rows, 27 display fixes and no flags (`data/roster/curated_aliases.csv`);
   - 4 excluded keys (Wright Brothers as a collective, plus Orville and Wilbur Wright listed individually; Anderson localization);
   - no fuzzy merging.
-- **Statuses:** v7.1 statuses are carried over (core 431, provisional 33, review 17). Georgia O'Keeffe, blank in v7.1, is core by decision R1 (`data/roster/status_overrides.csv`), so core is 432. The 898 new names have `new — needs status`. None were invented.
+- **Statuses:** v7.1 statuses are carried over (core 431, provisional 33, review 17). Georgia O'Keeffe, blank in v7.1, is core by decision R1 (`data/roster/status_overrides.csv`), so core is 432. The 9 new names with F ≥ 3 are core by decision R6 (same file), so core is 441. The other 889 new names have `new — needs status`. None were invented. Totals: core 441, provisional 33, review 17, new — needs status 889.
 - **Why v7 frequencies were wrong** (confirmed by reproducing the v7 aggregate 500/500):
   1. Claude's list was never read.
   2. Rows were counted, not models.
   3. Hyphens and accents were deleted rather than normalized.
   4. The aggregate was truncated at 500 rows, which dropped Hegel, Cantor, Boltzmann, Babbage, Rawls, Dijkstra and John Nash, among others.
   5. A 0.9 fuzzy merge joined Arthur Schlesinger Sr. and Jr. (and Kolmogorov spellings, which are now merged explicitly).
+- **Field buckets:** keyword rules in `rebuild_roster.py` (21 buckets), with six fixes from decision R7. 31 rows changed bucket (`reports/r7_bucket_changes.csv`). To compare with v7.1, v8's "politics / law / military" maps to v7.1's "social science / politics".
 - **Changes against v7.1:** see `versions/v8/roster_diff_v7_to_v8.md`.
 
 ### New layout and databases
@@ -44,13 +45,14 @@ The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`
   - Each carries the v7.1 rubric scores and scoring note verbatim, labelled "authorial v7.1 scores" and checked against the data book.
   - Each has a slot for revised scores and fields for metaphysics, LIO axes, schools and variants, science, practice, adherents (context only), coding guidance and sources.
   - 76 are stubs. PANT is a cited worked example (unreviewed).
-- **Labels:** CLTHEI → "Interventionist personal theism" (proposed, pending sign-off). PANT uses the full V6 label (approved 2026-10-01, S2).
+- **Labels:** CLTHEI → "Interventionist personal theism" (approved 2026-10-01, S1). PANT uses the full V6 label (approved 2026-10-01, S2).
+- **Reference data:** `data/reference/regions.csv`, the country-to-region table for `region_of_birth` (UN M49, decision P3).
 - **Docs:** METHOD, DATA_DICTIONARY (field tables generated from the schemas), CODING_GUIDE (v7.1 coding rules verbatim), RUNBOOK, OPEN_DECISIONS.
 - **Reports:** `reports/coverage.md` from `scripts/coverage_report.py`.
 
-### Open
+### Decisions
 
-Decisions that need sign-off are listed in `docs/OPEN_DECISIONS.md`: the LIO 0–4 scale, era buckets, regions, the mid-basin definition, statuses for new names, field buckets, the CLTHEI label and more.
+All 19 items in `docs/OPEN_DECISIONS.md` were decided by Jason on 2026-10-01. None is open. The entries below are in order.
 
 - **2026-10-01:** each of the 19 open items in `docs/OPEN_DECISIONS.md` now has an agent recommendation with evidence, plus a summary table at the top. All items stay open, and no roster or system data was changed. The full PANT label ("Pantheism (Spinozistic/naturalistic 'God = Universe')") was found in the V6 history (`beliefCoherence.json`). Field-bucket evidence for R7 is in `reports/r7_bucket_spotcheck.csv` and `reports/r7_field_string_review.csv`. Faraday's 1844 exclusion is updated (record version 2): the reason (a church-discipline dispute) and the few-week duration come from Cantor 2020 and Brooke 1991, and the restoration is confirmed in Gladstone 1873. The exact readmission date is still open.
 - **2026-10-01, decisions R1–R5 and S2** (approved by Jason, applied through the pipeline inputs and a rebuild):
@@ -62,6 +64,24 @@ Decisions that need sign-off are listed in `docs/OPEN_DECISIONS.md`: the LIO 0�
   - S2: PANT `display_label` is the full V6 label, `label_status` approved.
   - Roster: 1,382 → 1,380 people; F = 2: 185 → 183; F = 5, 3–4 and 1 unchanged (82, 149, 966). `rebuild_roster.py` now reads `status_overrides.csv` and its diff text follows the inputs.
 - **2026-10-01, alias_map labels** (approved by Jason): display fixes that change the name itself, not just its formatting, now get rule `name_correction` in `alias_map.csv` and `merge_log.csv`, with the curated row's reason and confidence. Before, all of them read `format` / "differs only in spacing…". 6 of the 27 display-fix rows are name corrections (Brian-Maynard-Smith → John Maynard Smith, Lee-Smolins → Lee Smolin, Albert Hofman → Albert Hofmann, Gabriel Marcell → Gabriel Marcel, Gabriel Mistral → Gabriela Mistral, Tenzin Gyatso-Dalai Lama → Tenzin Gyatso (14th Dalai Lama)); 21 stay `format`. Labels only: people, counts and ids are unchanged.
+
+- **2026-10-01, the remaining 13 decisions** (decided by Jason at 10:55 PM PT; applied through the pipeline inputs, the schemas and the docs, then rebuilt):
+  - R6: the 9 new names with F ≥ 3 are core, Vint Cerf included (`status_overrides.csv`). Core 432 → 441; new — needs status 898 → 889.
+  - R7: the keyword rules stay, with six fixes: science studies with philosophy → philosophy; explor/astronaut wins over space; political thought and social thought → politics / law / military; David Harvey → social science; Jan Swammerdam → biology. 31 rows changed `field_bucket`, 4 of them F ≥ 3 (Mandela, Machiavelli, Gandhi, King). List: `reports/r7_bucket_changes.csv`.
+  - R8: the id freeze rule is approved as written; retired ids stay in `person_ids.csv` (METHOD §3.2).
+  - P1: the LIO 0–4 scale is approved. The PANT scores (all 4) were rechecked and stand.
+  - P2: era buckets approved, keyed on first lasting contribution. An edge year goes to the later bucket (1950 is in "1950 on"). Birth year stays in the record.
+  - P3: regions approved, with the new table `data/reference/regions.csv` (247 countries and areas from UN M49). MENA = Northern Africa + Western Asia + Iran; Afghanistan stays South Asia. `validate_people.py` now checks that the table's regions match the schema list exactly and that no country appears twice.
+  - P4: the mid-basin test is A_locus ≤ 1 and B_cause ≥ 3 (B for the domain of the work), both at certainty ≥ 0.7. Deists pass; METHOD §1.1 states this as a consequence, with no exclusion. Faraday's `mid_basin` stays TODO until his axes are scored.
+  - P5: only a named human sets `reviewed`.
+  - S1: the CLTHEI label is approved.
+  - S3: the v7.1 rubric scores are a frozen baseline; revised scoring opens after the first pool, with cites per axis and two scorers (METHOD §5.1, system schema).
+  - S4: the 77 codes are closed for v8; new codes go in one batch with one schema bump (METHOD §5.1, system schema, RUNBOOK).
+  - S5: CLTHEI and CLASS_THEISM relate as "neighbor (easily confused)".
+  - S6: PANT boundary rules (two-part test; Advaita and Kabbalah default to the host tradition; Stoics are STOIC) in the coding guidance of PANT, ATHE, STOIC and PANENT, and in CODING_GUIDE §5.
+  - **Schema versions:** `person.schema.json` and `system.schema.json` go from 1.0 to 1.1. Only descriptions changed (P1–P5, S3–S5); no field, type or enum changed. Both templates, `make_system_stubs.py`, the 76 stubs, PANT (record version 4) and Faraday (record version 3) are at 1.1. The stubs changed by S1, S5 and S6 (CLTHEI, CLASS_THEISM, ATHE, STOIC, PANENT) are at record version 2.
+  - PROPOSED is gone from the schemas, templates, DATA_DICTIONARY, CODING_GUIDE and METHOD. `label_status` still allows `proposed — pending Jason's OK` for future label changes.
+  - No person id changed.
 
 ## v7.1 (2026-09-14 data freeze)
 
