@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from SEP (Miller, after Machamer), Britannica (Van Helden) and MacTutor. Worldview from the Letter to the Grand Duchess Christina (1615) in Drake's translation, read in two copies (Fordham excerpt; a course selection with the Joshua section). Coded CHRIST (Catholic) at 0.7. A 1 (0.7), B 3 (0.7), C 1 (0.5), D 2 (0.7), E 3 (0.7). mid_basin true. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Findings #69 (and #55, #57, #60): the 'inexorable and immutable' sentence is in the Fordham paragraph beginning 'This being granted…', not 'With regard to this argument…'; locators fixed in the statement, B_cause and E_scope (S5 p. 4 was already right). S4 is no longer described as Drake's translation: its translator and provenance are unknown and its wording differs from S5 in places (finding #70 note). Finding #62: self_described_science_religion_relation certainty 1.0 → 0.7 (secondary quotations cannot by themselves support 1.0, §7). Axis scores, primary_system and mid_basin unchanged. Not reviewed."}
 
 identity:
   id: galilei-galileo
@@ -88,9 +89,9 @@ worldview:
     - {value: "Catholic; his daughters became nuns at the convent of St Matthew, Arcetri", role: member, certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
   self_described_science_religion_relation:
     value: "Scripture and nature both come from God and cannot truly conflict; Scripture teaches salvation, 'how one goes to heaven, not how heaven goes'; sense experience and demonstrations decide physical questions, and Scripture is then read in their light."
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S4, locator: "paragraphs 'With regard to this argument…' to 'But I do not feel obliged…'"}, {source: S5, locator: "pp. 4–6"}]
-    how_known: "His own Letter to the Grand Duchess Christina, written to circulate."
+    how_known: "His own Letter to the Grand Duchess Christina, written to circulate, but read only in English translation in two web copies, so every quotation is a secondary quotation and cannot by itself support 1.0 (§7). 0.7, as for Schrödinger's comparable relation."
   primary_system:
     value: CHRIST
     basis: written_profession
@@ -114,7 +115,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "paragraph 'With regard to this argument…'"}, {source: S5, locator: "pp. 4, 10"}]
+      cites: [{source: S4, locator: "paragraph 'This being granted…'"}, {source: S5, locator: "pp. 4, 10"}]
       how_known: "His circulated letter; one work, so 0.7."
       rationale: "Scored on his account of nature (P6). Leans to law: 'Nature, on the other hand, is inexorable and immutable; she never transgresses the laws imposed upon her'. The stated limited exception: the miracle of Joshua is real; 'when God willed that at Joshua's command the whole system of the world should rest', 'day was miraculously prolonged', and he works out how it fits the Copernican system."
     C_ledger:
@@ -135,7 +136,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "paragraph 'With regard to this argument…'"}, {source: S5, locator: "p. 10"}, {source: S1, locator: "§3.2"}]
+      cites: [{source: S4, locator: "paragraph 'This being granted…'"}, {source: S5, locator: "p. 10"}, {source: S1, locator: "§3.2"}]
       how_known: "His circulated letter and SEP on his celestial physics; one work, so 0.7."
       rationale: "Scored on the world's order (P7). Leans LIO: one immutable Nature, and his astronomy treats heavens and earth by the same mathematics. The stated limited exception: he accepts the Joshua miracle, a lengthened day granted 'at Joshua's command' during Israel's battle, a favour in events for a people. Salvation is scored on C, not here."
   mid_basin:
@@ -145,14 +146,14 @@ worldview:
     how_known: "P4 test: A_locus = 1 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7, so true. Certainty is the lower of the two. F = 5."
   statements:
     - text: "But Nature, on the other hand, is inexorable and immutable; she never transgresses the laws imposed upon her, or cares a whit whether her abstruse reasons and methods of operation are understandable to men."
-      cites: [{source: S4, locator: "paragraph 'With regard to this argument…'"}, {source: S5, locator: "p. 4"}]
+      cites: [{source: S4, locator: "paragraph 'This being granted…'"}, {source: S5, locator: "p. 4"}]
       date: "1615"
-      context: "Letter to the Grand Duchess Christina, Drake translation."
+      context: "Letter to the Grand Duchess Christina, in English translation; S4 and S5 (Drake) agree on this sentence (S5's line break splits 'in exorable')."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
-      note: "English translation (Drake 1957) read in two web copies; the Italian original was not checked."
+      note: "English translation read in two web copies (S5 is Drake 1957; S4's translator is not named); the Italian original was not checked."
     - text: "But I do not feel obliged to believe that the same God who has endowed us with senses, reason and intellect has intended us to forego their use and by some other means to give us knowledge which we can attain by them."
       cites: [{source: S4, locator: "paragraph 'But I do not feel obliged…'"}]
       date: "1615"
@@ -200,7 +201,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Abjured Copernicanism under sentence of the Inquisition (22 June 1633); coerced, not used as evidence of belief", year: "1633", certainty: 1.0, cites: [{source: S1, locator: "§5"}], how_known: "SEP."}
-  coder_notes: "CHRIST is a sourced system file. All statements are English translation (Drake 1957) in web copies, so 'secondary quotation'. The Letter to Castelli and the Dialogue were not read."
+  coder_notes: "CHRIST is a sourced system file. All statements are English translations in web copies, so 'secondary quotation': S5 is Drake's 1957 translation; S4 (Fordham) names no translator and its wording is close to Drake's but not identical. The Letter to Castelli and the Dialogue were not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -243,7 +244,7 @@ review:
   data_quality_flags:
     - "Death date: SEP flags 'problems with the date' (Machamer 1998b), unread."
     - "Novitiate: MacTutor says he became a novice; SEP is unsure."
-    - "S4 does not name its translator (its note says the copyright status is uncertain); its wording matches Drake 1957, as S5 credits."
+    - "S4 does not name its translator: its note says the text 'was sent to me by a now misplaced correspondent, so its copyright status is uncertain'. Its wording is close to Drake 1957 (S5) but differs in places (e.g. 'the same God … has intended us to forego' vs S5 'that that same God … has intended to forgo'), so it is not treated as Drake's translation (lens audit, batch 2)."
   open_questions:
     - "Read the Letter to Castelli and the full Letter to Christina (Drake pp. 173–216) to check the Joshua passage against the book's pages."
     - "Read Heilbron, Galileo (2010), for his private piety (letters to Maria Celeste)."
@@ -285,7 +286,7 @@ sources:
     citation: "Galilei, Galileo. Letter to the Grand Duchess Christina of Tuscany, 1615 (excerpt, English translation). Internet Modern History Sourcebook, Fordham University."
     url: "https://sourcebooks.fordham.edu/mod/galileo-tuscany.asp"
     accessed: 2026-10-02
-    reliability_note: "Excerpt; translator not named (wording matches Drake 1957). No page numbers, so paragraphs are located by their opening words."
+    reliability_note: "Excerpt; translator and provenance unknown ('sent to me by a now misplaced correspondent'). Wording close to Drake 1957 (S5) but not identical, so not cited as Drake. No page numbers, so paragraphs are located by their opening words."
     used_for: [worldview, timing, lane_b]
   - id: S5
     type: primary
