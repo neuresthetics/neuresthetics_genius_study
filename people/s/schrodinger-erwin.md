@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Bernstein), MacTutor and the Nobel biography. Worldview from the epilogue of What is Life? (1944) and Mind and Matter (1958), read in two web transcriptions of the Cambridge edition, plus Britannica on My View of the World. Coded HINDU at 0.5 (stub system; PANT, IDEAL and PANENT named). A 4 (0.7), B 4 (1.0), C 4 (0.5), D 3 (0.5), E 4 (0.7). mid_basin false. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #47: MacTutor's 'Although he was a Catholic' is about the adult in 1933, so family_religion and religious_heritage_by_birth are now TODO (were 'Catholic, per MacTutor' at 0.5); the adult nominal affiliation keeps the MacTutor statement at 0.7 (one reliable source, no dispute). Finding #45: region_of_work certainty 1.0 → 0.7, value unchanged (Western Europe, where wave mechanics was done); the 1935 cat paper (Oxford) and What is Life? (Dublin) were Northern Europe, now an alternative. region_of_birth stays 1.0 (Vienna, documented). Leading cut marked with [...] in one statement. Worldview scores unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): B_cause certainty 1.0 → 0.7. It rests on the rapeutation.com copy of the What is Life? epilogue (S4), and no authoritative edition was reachable to check the wording. mid_basin recomputed: value false (P4 test, A = 4) and certainty 0.7 = min(A 0.7, B 0.7), both unchanged; how_known updated."}
 
 identity:
   id: schrodinger-erwin
@@ -115,9 +116,9 @@ worldview:
     B_cause:
       value: 4
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S4, locator: "Epilogue, p. 86"}]
-      how_known: "Published book, his own words, explicit."
+      how_known: "Published book, his own words, explicit. Certainty 0.7 under CODING_GUIDE §7: the epilogue was read only in an unofficial web copy (rapeutation.com, S4), and no authoritative edition could be reached to check the wording (the only unrestricted Internet Archive copies are re-uploaded PDFs, not library scans)."
       rationale: "Scored on his account of nature (P6). At the law pole: 'My body functions as a pure mechanism according to the Laws of Nature'; bodily events are 'if not strictly deterministic at any rate statistico-deterministic', and 'quantum indeterminacy plays no biologically relevant role in them'. Even the self's agency controls the atoms 'according to the Laws of Nature'. No exception."
     C_ledger:
       value: 4
@@ -144,7 +145,7 @@ worldview:
     value: false
     certainty: 0.7
     cites: [{source: S4, locator: "Epilogue, p. 87"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (1.0)."
+    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (0.7)."
   statements:
     - text: "My body functions as a pure mechanism according to the Laws of Nature."
       cites: [{source: S4, locator: "Epilogue 'On Determinism and Free Will', p. 86"}]

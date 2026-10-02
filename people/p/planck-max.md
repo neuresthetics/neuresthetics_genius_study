@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Stuewer, first page), MacTutor and the Nobel biography. Worldview from the German text of 'Religion und Naturwissenschaft' (1937 lecture; copy of the 1938 second edition), the English Where Is Science Going? (1933, Murphy) and Heilbron (1986) as quoted on the web. Coded DEISM at 0.5 (PANT and CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7), E 3 (0.7); C BELOW_THRESHOLD. mid_basin TODO: the P4 test has no branch for A_locus = 2. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Pages: 'heiligste Symbol' is copy p. 5 and 'wesensgleich' copy p. 12. Framing: 'regiert er die Welt' is a question he poses and the 'almighty hand / Gläubige und Ungläubige' passage is the religious person's answer; A and E rationales no longer treat them as his own views. Glosses that are Gaynor's wording are marked 'cross-checked with Gaynor'. Heilbron: 'deism' unconfirmed in the book; Wikipedia's p. 198 is the 2000 Harvard printing; S6 citation fixed and the label no longer used as support. New S9 (Gladigow 1986) confirms the 1947 letter in German (citing Herneck 1952) and reports a 1945 letter (Bertholet 1948) that seems to show a more personal God; added as counter-evidence on A and on DEISM vs CHRIST (no certainty change: A stays 2 at 0.7 with alternative 1 strengthened; DEISM already at 0.5). Finding #127: DEISM rationale rewritten for 'einzig und allein Sache des Glaubens' and the non-rational direct link with God. Finding #132: E_scope 3 → 4 (0.7). Finding #135: nominal affiliation role 'member' → 'other' (membership unsourced). Two statements added (p. 6 faith-alone sentence; p. 11 world order). mid_basin unchanged (TODO, A = 2). primary_system unchanged (DEISM 0.5). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. Its main claims rest on the 1937 lecture, read only in a typed web copy (S4) and a blog (S7), and no authoritative edition was reachable to check the wording. No mid_basin change (A and B were already 0.7)."}
 
 identity:
   id: planck-max
@@ -89,9 +90,9 @@ worldview:
     - {value: "Protestant church tradition of his family; in 1947 he denied a rumoured conversion to Catholicism", years: "1858–1947", role: other, certainty: 0.5, cites: [{source: S1, locator: "early life paragraph"}, {source: S9, locator: "p. 327; nn. 47–48"}, {source: S6, locator: "Heilbron quotation"}], how_known: "Family tradition (S1: 'devotion to church and state') and the 1947 denial only. Church membership or office is unsourced: neither membership (Lutheran) nor the commonly reported church-elder role was found in the sources read, so the role is 'other', not 'member' (lens audit, batch 2, finding #135)."}
   self_described_science_religion_relation:
     value: "Religion and natural science 'mutually supplement and condition each other'; both need belief in God, for religion at the start and for science at the end of all thought; science is for knowing, religion for acting. Belief in nature-miracles must retreat before science."
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S4, locator: "copy pp. 2, 11–13"}, {source: S7, locator: "1937 lecture transcription"}, {source: S5, locator: "pp. 159, 168"}]
-    how_known: "His own public lecture (1937) and book (1933 English edition). 'mutually supplement and condition each other' is the coder's gloss of 'sie ergänzen und bedingen einander' (copy p. 12), cross-checked with Gaynor (S7), whose wording it is."
+    how_known: "His own public lecture (1937) and book (1933 English edition). 'mutually supplement and condition each other' is the coder's gloss of 'sie ergänzen und bedingen einander' (copy p. 12), cross-checked with Gaynor (S7), whose wording it is. Certainty 0.7 under CODING_GUIDE §7: the 1937 lecture, which carries the main claims, was read only in unofficial web copies (S4, a typed copy on a private site; S7, a blog). No authoritative edition could be reached to check the wording; the Internet Archive has no library scan of the 1938 Barth edition or of Vorträge und Erinnerungen (1949). S5 (a library scan) supports only the 1933 statements on chance, miracle and causality, not the 1937 wording."
   primary_system:
     value: DEISM
     basis: written_profession

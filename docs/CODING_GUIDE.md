@@ -188,7 +188,7 @@ Notes:
   - `kind` (public written profession, private letter, notebook, reported speech);
   - `verified_against` (primary transcription, primary facsimile, scholarly edition, secondary quotation);
   - `verified_on`.
-- Prefer a primary transcription or scholarly edition. A quote known only from a secondary source is marked `secondary quotation` and cannot by itself support certainty 1.0.
+- Prefer a primary transcription or scholarly edition. A quote known only from a secondary source is marked `secondary quotation` and cannot by itself support certainty 1.0. A field that rests on an unofficial web copy of a published primary text (any axis or field, including the self-described relation) is capped at 0.7, unless its wording has been checked against an authoritative edition (a publisher's text, a scholarly edition, a library or archive scan, or the official site of the estate or institution) and that edition is cited.
 - Reported speech (someone else's memory of what the person said) is never a written profession.
 - Never paraphrase inside quotation marks.
 

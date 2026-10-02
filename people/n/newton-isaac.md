@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (the 'Reformation' passage is a named plausible alternative, B = 2); mid_basin certainty 1.0 -> 0.7 (result still true); 'UNKNOWN' wording for a B = 2 result corrected to TODO; 'Church of England' replaced by 'Protestant', as the cited sources say, in nominal_affiliations (certainty 1.0 -> 0.7) and family_religion. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23): E_scope certainty 1.0 -> 0.7. E is scored on natural philosophy only, while other records score it on salvation scope; the domain is open item P7 (PROPOSED). Score unchanged (3). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3 at 0.7. The interim P7 cap is gone, but certainty stays 0.7 under CODING_GUIDE §3, because the new rule makes a named alternative (2): his private articles petition the Father for 'blessings of this life' (S9, article 8). Rationale and statement tags updated; P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S6 (Project Gutenberg Opticks, 4th ed. 1730) is an unofficial copy. Checked it against S14, the University of California library scan of the 1730 edition (Internet Archive), with a second scan (Oxford copy) to resolve OCR noise. The five Query 31 quotations and the Query 28 passage agree word for word. Added S14 cites with the printed 1730 pages to the four certainty-1.0 fields that cite S6 (languages_of_work, major_works Opticks, self-described relation, A_locus) and to the five quotations, whose verified_against goes from primary transcription to primary facsimile. All stay at 1.0. Noted that S6's page markers run about 24 pages above the 1730 pagination. No value, certainty or mid_basin change."}
 
 identity:
   id: newton-isaac
@@ -73,7 +74,7 @@ basics:
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in Lincolnshire, England; the United Kingdom is Northern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "Career; Warden of the mint"}, {source: S2, locator: "Biography"}], how_known: "All his posts were in Cambridge and London."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "throughout ('he', 'his', 'only son')"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [Latin, English], certainty: 1.0, cites: [{source: S1, locator: "opening sentence (Philosophiae Naturalis Principia Mathematica, 1687); Final years (Latin and English editions of the Opticks)"}, {source: S6, locator: "title page"}], how_known: "The Principia was in Latin; the Opticks and his theological manuscripts were in English."}
+  languages_of_work: {value: [Latin, English], certainty: 1.0, cites: [{source: S1, locator: "opening sentence (Philosophiae Naturalis Principia Mathematica, 1687); Final years (Latin and English editions of the Opticks)"}, {source: S6, locator: "title page"}, {source: S14, locator: "title page"}], how_known: "The Principia was in Latin; the Opticks and his theological manuscripts were in English."}
   occupations:
     value: ["Lucasian professor of mathematics", "natural philosopher", "mathematician", "Warden and Master of the Royal Mint", "President of the Royal Society", "Member of Parliament (Convention Parliament)", "theologian and biblical scholar (mostly unpublished)"]
     certainty: 1.0
@@ -93,7 +94,7 @@ contribution:
     - {value: "Newton's laws of motion and the Newton–Raphson method carry his name", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Other pages about Isaac Newton (Newton-Raphson method)"}], how_known: "Named in both sources."}
   major_works:
     - {value: "Philosophiae Naturalis Principia Mathematica (2nd ed. 1713 with the General Scholium; 3rd ed. 1726)", year: 1687, kind: book, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Final years"}, {source: S4, locator: "General Scholium 'added to the second edition of the text in 1713'"}], how_known: "Two sources."}
-    - {value: "Opticks (Latin edition 1706; English editions 1717–18 and later, with the expanded Queries)", year: 1704, kind: book, certainty: 1.0, cites: [{source: S1, locator: "Final years"}, {source: S6, locator: "title page (4th edition, 1730)"}], how_known: "Encyclopedia and the text itself."}
+    - {value: "Opticks (Latin edition 1706; English editions 1717–18 and later, with the expanded Queries)", year: 1704, kind: book, certainty: 1.0, cites: [{source: S1, locator: "Final years"}, {source: S6, locator: "title page (4th edition, 1730)"}, {source: S14, locator: "title page (fourth edition, corrected, 1730)"}], how_known: "Encyclopedia and the text itself."}
     - {value: "Theological and chronological works on the prophecies of Daniel and St John and on ancient chronology, published after his death", year: "later years; posthumous", kind: other, certainty: 1.0, cites: [{source: S1, locator: "Interest in religion and theology"}], how_known: "Encyclopedia."}
   honours:
     - {value: "Fellow of the Royal Society", year: 1672, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Career (election after the telescope)"}], how_known: "Two sources."}
@@ -139,7 +140,7 @@ worldview:
   self_described_science_religion_relation:
     value: "Natural philosophy reasons from phenomena up to a first cause that is not mechanical, and talking about God from the appearances of things belongs to natural philosophy. He wrote the Principia partly to support belief in a Deity. Natural philosophy, if perfected, would also widen moral philosophy by showing our duty to the first cause."
     certainty: 1.0
-    cites: [{source: S5, locator: "p. 392"}, {source: S6, locator: "pp. 369, 405"}, {source: S7, locator: "letter of 10 Dec. 1692, f. 4r"}]
+    cites: [{source: S5, locator: "p. 392"}, {source: S6, locator: "pp. 369, 405"}, {source: S14, locator: "pp. 344, 381"}, {source: S7, locator: "letter of 10 Dec. 1692, f. 4r"}]
     how_known: "His own words in the General Scholium and Opticks (public) and a letter to Bentley (private) that agree. Paraphrase; quotations are in statements."
   primary_system:
     value: CHRIST
@@ -160,7 +161,7 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S5, locator: "pp. 389–390"}, {source: S6, locator: "p. 403"}, {source: S4, locator: "§3"}]
+      cites: [{source: S5, locator: "pp. 389–390"}, {source: S6, locator: "p. 403"}, {source: S14, locator: "p. 379"}, {source: S4, locator: "§3"}]
       how_known: "Published texts (General Scholium 1713, Opticks Query 31); written profession, so 1.0."
       rationale: "Leans to the transcendent-person pole. God governs 'not as the soul of the world, but as Lord over all', and the world is not 'the Body of God' (S5, S6): a person who rules his creatures. But some immanence features are present: God is omnipresent 'not virtually only, but also substantially', and moves bodies 'within his boundless uniform Sensorium' (S5, S6). SEP notes he held that even the divine being has spatial location (S4). So 1, not 0."
     B_cause:
@@ -273,45 +274,45 @@ worldview:
       verified_on: 2026-10-02
       note: "Rule III is usually dated to the second edition (1713); that date was not confirmed in the sources read, so no date is given."
     - text: "it's unphilosophical to seek for any other Origin of the World, or to pretend that it might arise out of a Chaos by the mere Laws of Nature; though being once form'd, it may continue by those Laws for many Ages."
-      cites: [{source: S6, locator: "p. 402, Query 31"}]
+      cites: [{source: S6, locator: "p. 402, Query 31"}, {source: S14, locator: "p. 378"}]
       date: "1717"
       context: "Opticks, Query 31 (Queries expanded in the 1706 Latin and 1717–18 English editions; text of the 4th edition, 1730)."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
       note: "Project Gutenberg transcription of the 1730 edition. The date is the English edition's; the sentence may first appear in the 1706 Latin Queries."
     - text: "some inconsiderable Irregularities excepted, which may have risen from the mutual Actions of Comets and Planets upon one another, and which will be apt to increase, till this System wants a Reformation."
-      cites: [{source: S6, locator: "p. 402, Query 31"}]
+      cites: [{source: S6, locator: "p. 402, Query 31"}, {source: S14, locator: "p. 378"}]
       date: "1717"
       context: "Same passage: the planets' common direction of motion is the effect of choice."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "a powerful ever-living Agent, who being in all Places, is more able by his Will to move the Bodies within his boundless uniform Sensorium, and thereby to form and reform the Parts of the Universe, than we are by our Will to move the Parts of our own Bodies. And yet we are not to consider the World as the Body of God, or the several Parts thereof, as the Parts of God."
-      cites: [{source: S6, locator: "p. 403, Query 31"}]
+      cites: [{source: S6, locator: "p. 403, Query 31"}, {source: S14, locator: "p. 379"}]
       date: "1717"
       context: "Same Query, on the design of animal bodies and the instinct of insects."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "God is able to create Particles of Matter of several Sizes and Figures, and in several Proportions to Space, and perhaps of different Densities and Forces, and thereby to vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe. At least, I see nothing of Contradiction in all this."
-      cites: [{source: S6, locator: "pp. 403–404, Query 31"}]
+      cites: [{source: S6, locator: "pp. 403–404, Query 31"}, {source: S14, locator: "pp. 379–380"}]
       date: "1717"
       context: "Same Query; introduced by 'it may be also allow'd that'."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "For so far as we can know by natural Philosophy what is the first Cause, what Power he has over us, and what Benefits we receive from him, so far our Duty towards him, as well as that towards one another, will appear to us by the Light of Nature."
-      cites: [{source: S6, locator: "p. 405, end of Query 31"}]
+      cites: [{source: S6, locator: "p. 405, end of Query 31"}, {source: S14, locator: "p. 381"}]
       date: "1717"
       context: "Closing paragraph of the Opticks."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "When I wrote my treatise about our Systeme I had an eye upon such Principles as might work with considering men for the beleife of a Deity & nothing can rejoyce me more then to find it usefull for that purpose"
       cites: [{source: S7, locator: "letter of 10 Dec. 1692, f. 4r"}]
@@ -504,7 +505,7 @@ sources:
     citation: "Newton, Isaac. Opticks: or, a Treatise of the Reflections, Refractions, Inflections and Colours of Light. 4th ed., corrected. London, 1730. Project Gutenberg eBook 33504, https://www.gutenberg.org/ebooks/33504. Query 31 near the end of Book III."
     url: "https://www.gutenberg.org/ebooks/33504"
     accessed: 2026-10-02
-    reliability_note: "Public text; the Queries were expanded in the Latin (1706) and English (1717–18) editions in his lifetime (S1). Page numbers from the transcription's [Pg] markers."
+    reliability_note: "Public text; the Queries were expanded in the Latin (1706) and English (1717–18) editions in his lifetime (S1). Page numbers from the transcription's [Pg] markers, which do not match the 1730 printing (see S14). Project Gutenberg is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. Its wording was checked against the library scan S14, so every field that cites S6 at 1.0 also cites S14 with the 1730 page."
     used_for: [basics, contribution, worldview, lane_b]
   - id: S7
     type: primary
@@ -569,6 +570,16 @@ sources:
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
     used_for: [review]
+  - id: S14
+    type: primary
+    kind: "published work by the subject"
+    author: "Isaac Newton"
+    year: 1730
+    citation: "Newton, Isaac. Opticks: or, a Treatise of the Reflections, Refractions, Inflections and Colours of Light. The Fourth Edition, corrected. London: Printed for William Innys, 1730. University of California Libraries copy, Internet Archive scan, https://archive.org/details/opticksortreatis1730newt."
+    url: "https://archive.org/details/opticksortreatis1730newt"
+    accessed: 2026-10-02
+    reliability_note: "Library scan of the edition that S6 transcribes. Used to check S6 wherever a quotation or a certainty-1.0 field rests on it. The five Query 31 quotations and the Query 28 passage on the 'very first Cause' agree word for word, apart from long-s and other OCR noise; a second scan (Oxford copy, https://archive.org/details/opticksoratreat00newtgoog) has its OCR noise in different places, and the two together leave no word in doubt. Page numbers are the printed 1730 ones: Query 28 is on p. 344 and the cited Query 31 passages on pp. 378–381. S6's [Pg] markers are about 24 pages higher, so they do not follow the 1730 pagination."
+    used_for: [basics, contribution, worldview]
 ---
 
 # Isaac Newton

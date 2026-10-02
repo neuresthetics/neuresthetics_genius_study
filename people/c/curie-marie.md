@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (first page), the Nobel biography and the AIP exhibit (Pasachoff). Worldview from her own Pierre Curie with Autobiographical Notes (1923, Kellogg translation, Project Gutenberg) and two 1887 letters quoted in Eve Curie's Madame Curie (1937, Sheean translation, archive.org OCR). Raised Catholic; faith lost after her mother's death; civil wedding. primary_system AGNOS at 0.5 (stub system; ATHE named). B 4 (0.7), D 4 (0.5); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #108: primary_system AGNOS (0.5) → BELOW_THRESHOLD, candidates AGNOS and ATHE; the AGNOS choice rested on the absence of a denial of God, and AIP p. 57 ('liberal freethinkers like Marie and her friends') fits either code. Finding #112: D_authority 4 (0.5) → BELOW_THRESHOLD (scored from absence; same as Fermi). Finding #126: the p. 77 'nothingness' line is about obscurity, not death; C_ledger tag and the reliance in primary_system and C removed. Finding #120: 1898 locator AIP p. 36, not p. 22. Eve Curie page numbers confirmed against the scans; the 'one page either way' caveat is removed and the archive.org image-index offset is noted. mid_basin unchanged (BELOW_THRESHOLD). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S3 (Project Gutenberg text of Pierre Curie, 1923) is an unofficial copy. Checked it against S7, the Phillips Academy library scan of the 1923 Macmillan edition (Internet Archive). Every quotation and every S3 fact used by the eleven certainty-1.0 fields that cite S3 was found word for word: native_name, birth date, family_religion, father, household_circumstances, early_science_exposure, childhood_mentors, notable_events, nominal_affiliations, ethnic_or_communal_heritage, religious_heritage_by_birth. Added S7 cites with printed page numbers to those fields and to the two S3 quotations; the two quotations' verified_against goes from primary transcription to primary facsimile. All stay at 1.0. No value, certainty or mid_basin change."}
 
 identity:
   id: curie-marie
@@ -25,7 +26,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Marie Skłodowska Curie (née Maria Skłodowska)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph and 'Early life'"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources agree."}
-  native_name: {value: "Maria Skłodowska (Polish)", certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}, {source: S3, locator: "Autobiographical Notes, ch. I ('my name is Marie Sklodowska')"}], how_known: "Two sources; she used 'Marie' from 1891 in Paris (S1)."}
+  native_name: {value: "Maria Skłodowska (Polish)", certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}, {source: S3, locator: "Autobiographical Notes, ch. I ('my name is Marie Sklodowska')"}, {source: S7, locator: "p. 155; p. 73 n. 1"}], how_known: "Two sources; she used 'Marie' from 1891 in Paris (S1)."}
   aliases:
     - {name: "Curie-Marie", kind: "roster alias"}
     - {name: "Marie-Curie", kind: "roster alias"}
@@ -33,7 +34,7 @@ identity:
 
 basics:
   birth:
-    date: {value: "1867-11-07", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "paragraph 1"}, {source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Three sources agree."}
+    date: {value: "1867-11-07", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "paragraph 1"}, {source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 157"}], how_known: "Three sources agree."}
     place: {value: "Warsaw", modern_name: "Warsaw, Poland", polity_then: "Congress Kingdom of Poland, Russian Empire", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources agree."}
   death:
     date: {value: "1934-07-04", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "final paragraph"}], how_known: "Two sources agree."}
@@ -64,12 +65,12 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Discovered two elements and founded the study of radioactivity.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "ch. IV, footnote 6; Autobiographical Notes, ch. I"}, {source: S4, locator: "p. 51"}], how_known: "Her own statement ('my parents were both Catholics') and her daughter's biography."}
+  family_religion: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "ch. IV, footnote 6; Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 73 n. 1; p. 157"}, {source: S4, locator: "p. 51"}], how_known: "Her own statement ('my parents were both Catholics') and her daughter's biography."}
   family_religious_practice: {value: "Mother devout ('an ardent piety'); father 'a lukewarm Catholic, a freethinker without acknowledging it'", certainty: 0.7, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S4, locator: "p. 51"}], how_known: "The mother's piety is in her own words (S3); the father's description is Eve Curie's (S4), so 0.7."}
   parents_and_household:
-    - {value: "Father, Władysław Skłodowski, teacher of physics and mathematics at a Warsaw lycée", name: "Władysław Skłodowski", role: father, certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S4, locator: "p. 3 ('Vladislav Sklodovski, professor of physics')"}, {source: S1, locator: "'Early life'"}], how_known: "Three sources; S4 spells the name 'Vladislav Sklodovski'."}
+    - {value: "Father, Władysław Skłodowski, teacher of physics and mathematics at a Warsaw lycée", name: "Władysław Skłodowski", role: father, certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 156"}, {source: S4, locator: "p. 3 ('Vladislav Sklodovski, professor of physics')"}, {source: S1, locator: "'Early life'"}], how_known: "Three sources; S4 spells the name 'Vladislav Sklodovski'."}
     - {value: "Mother, director of a Warsaw girls' school; died of tuberculosis when Marie was about ten (S3 says nine)", name: "Bronisława Skłodowska", role: mother, certainty: 0.7, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S5, locator: "pp. 3, 5"}], how_known: "S3 says she was 'only nine years old'; S5 says ten (May 1878). Mother's given name from S5; not quote-checked."}
-  household_circumstances: {value: "Five children; the eldest daughter Zosia died at fourteen and the mother soon after; the father lost his savings", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S1, locator: "'Early life'"}], how_known: "Two sources."}
+  household_circumstances: {value: "Five children; the eldest daughter Zosia died at fourteen and the mother soon after; the father lost his savings", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 157"}, {source: S1, locator: "'Early life'"}], how_known: "Two sources."}
   schooling:
     - {value: "Warsaw schools, including Mlle Sikorska's private school; gold medal at the Russian lycée at 16", stage: "grammar or secondary school", certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}, {source: S4, locator: "p. 16"}], how_known: "Two sources."}
     - {value: "Clandestine Polish 'free university'", stage: other, certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
@@ -77,19 +78,19 @@ childhood:
   early_mathematics: {value: "other", note: "'I learned easily mathematics and physics, as far as these sciences were taken in consideration in the school' (S3)", certainty: 0.7, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Her own account; level not stated."}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure:
-    - {value: "Her father taught physics and 'enjoyed any explanation he could give us about Nature and her ways'", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Her own account."}
+    - {value: "Her father taught physics and 'enjoyed any explanation he could give us about Nature and her ways'", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 161"}], how_known: "Her own account."}
   key_early_reading: []
   childhood_mentors:
-    - {value: "Her father", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Her own account."}
+    - {value: "Her father", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 161"}], how_known: "Her own account."}
   languages_in_childhood: {value: [Polish, Russian], certainty: 0.7, cites: [{source: S1, locator: "'Early life' (Russian lycée)"}, {source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Polish home; Russian-language schooling under Russian rule."}
   notable_events:
-    - {value: "Deaths of her eldest sister and then her mother; 'the first great sorrow of my life'", year: "1876–1878", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S5, locator: "p. 5"}], how_known: "Her own account; S5 dates the mother's death May 1878."}
+    - {value: "Deaths of her eldest sister and then her mother; 'the first great sorrow of my life'", year: "1876–1878", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 157"}, {source: S5, locator: "p. 5"}], how_known: "Her own account; S5 dates the mother's death May 1878."}
 
 worldview:
   unit: "adult working worldview"
   working_years: {value: "1894–1934", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 1–7"}], how_known: "From laboratory work in Paris to her death."}
   nominal_affiliations:
-    - {value: "Raised Catholic; no practice in adult life; civil wedding (1895)", years: "1867–1934", role: "former member", certainty: 1.0, cites: [{source: S3, locator: "ch. IV (marriage)"}, {source: S4, locator: "p. 137"}, {source: S5, locator: "p. 18"}], how_known: "Her own statement that she 'did not practice any' religion, and two other sources on the civil ceremony."}
+    - {value: "Raised Catholic; no practice in adult life; civil wedding (1895)", years: "1867–1934", role: "former member", certainty: 1.0, cites: [{source: S3, locator: "ch. IV (marriage)"}, {source: S7, locator: "p. 80"}, {source: S4, locator: "p. 137"}, {source: S5, locator: "p. 18"}], how_known: "Her own statement that she 'did not practice any' religion, and two other sources on the civil ceremony."}
   self_described_science_religion_relation:
     value: "None stated as such. As a young woman she wrote that the consolation of 'God willed it' 'is not for everybody' and that she could not share believers' faith, while respecting sincere faith; her published account of radioactive decay calls its causes 'a mystery to us'."
     certainty: 0.5
@@ -120,20 +121,20 @@ worldview:
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
   statements:
     - text: "a civil ceremony, for Pierre Curie professed no religion, and I myself did not practice any."
-      cites: [{source: S3, locator: "ch. IV, 'Marriage and Organization of Family Life'"}]
+      cites: [{source: S3, locator: "ch. IV, 'Marriage and Organization of Family Life'"}, {source: S7, locator: "p. 80"}]
       date: "1923"
       context: "Her account of the July 1895 wedding, in her published life of Pierre Curie (English translation by Charlotte Kellogg)."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "The exponential law has a profound philosophic bearing; it indicates that the transformation is produced according to the laws of probability. The causes that determine the transformation are a mystery to us"
-      cites: [{source: S3, locator: "ch. VI"}]
+      cites: [{source: S3, locator: "ch. VI"}, {source: S7, locator: "p. 123"}]
       date: "1923"
       context: "On radioactive decay; she goes on: 'no exterior action has shown itself effective in influencing the transformation'."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "If one could only say, with Christian resignation, “God willed it and his will be done!” half of the terrible bitterness would be gone. Alas, that consolation is not for everybody."
       cites: [{source: S4, locator: "p. 76"}]
@@ -165,8 +166,8 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "Polish, from small landed gentry families", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Her own account."}
-  religious_heritage_by_birth: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "ch. IV, footnote 6"}], how_known: "Her own statement."}
+  ethnic_or_communal_heritage: {value: "Polish, from small landed gentry families", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "pp. 155–156"}], how_known: "Her own account."}
+  religious_heritage_by_birth: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "ch. IV, footnote 6"}, {source: S7, locator: "p. 73 n. 1"}], how_known: "Her own statement."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated in S1–S5."}
   childhood_catechism: {value: "Catholic prayers taught at school (in Russian, under Russian rule)", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Eve Curie's narrative only."}
 
@@ -237,7 +238,7 @@ sources:
     citation: "Curie, Marie. Pierre Curie, with Autobiographical Notes. Translated by Charlotte and Vernon Kellogg. New York: Macmillan, 1923. Project Gutenberg eBook #69617. https://www.gutenberg.org/ebooks/69617."
     url: "https://www.gutenberg.org/cache/epub/69617/pg69617.txt"
     accessed: 2026-10-02
-    reliability_note: "Her own book in its 1923 English edition; the Gutenberg text has no page numbers, so locators are chapters (the Autobiographical Notes have their own chapters I–IV)."
+    reliability_note: "Her own book in its 1923 English edition; the Gutenberg text has no page numbers, so locators are chapters (the Autobiographical Notes have their own chapters I–IV). Project Gutenberg is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. Its wording was checked against the library scan S7, so every field that cites S3 at 1.0 also cites S7 with a page."
     used_for: [identity, basics, childhood, worldview, heritage, timing, lane_b]
   - id: S4
     type: secondary
@@ -268,6 +269,16 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Marie Curie"
+    year: 1923
+    citation: "Curie, Marie. Pierre Curie. Translated by Charlotte and Vernon Kellogg, with an introduction by Mrs. William Brown Meloney and Autobiographical Notes by Marie Curie. New York: The Macmillan Company, 1923. Phillips Academy, Oliver Wendell Holmes Library copy, Internet Archive scan, https://archive.org/details/pierrecurie0000curi."
+    url: "https://archive.org/details/pierrecurie0000curi"
+    accessed: 2026-10-02
+    reliability_note: "Library scan of the 1923 Macmillan edition that S3 transcribes. Used to check S3: every quotation and every S3 fact used by a certainty-1.0 field was found word for word in the scan's OCR text. Page numbers are the printed ones. S3's 'ch. IV, footnote 6' is p. 73 n. 1 here; the Autobiographical Notes are pp. 155 ff."
+    used_for: [identity, basics, childhood, worldview, heritage]
 ---
 
 # Marie Curie

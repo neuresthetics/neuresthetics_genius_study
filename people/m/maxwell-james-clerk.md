@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: C_ledger certainty 0.7 -> 0.5 (prayers have no judgement or reward language). Consistency pass (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the coder notes name B = 4 as plausible; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the sources already cited (S8 the same molecular laws in Sirius and on earth; S9 human will acting within law; S7 prayers that ask for understanding, not favour in events). No text read addresses favour in events directly, so 0.5, with a gap note. No new sources. mid_basin unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: the letters, essays and prayers S4–S7 and S9 were read in the Gutenberg text of Campbell and Garnett 1882 (S3), an unofficial copy. Checked them against S13, the University of Toronto library scan of the 1882 edition (Internet Archive). All seven quotations match word for word except one Gutenberg error: the 1876 letter to Ellicott (p. 394) reads 'founded on a most conjectural scientific hypothesis', not 'almost' (checked on the page image); quotation corrected. The two prayers (S7) are in a footnote on p. 323, not p. 347; locator corrected everywhere. Added S13 cites to the three certainty-1.0 fields that rest on these texts (A_locus, Lewis Campbell and C. J. Ellicott collaborator entries) and to the seven quotations. All stay at 1.0. No value, certainty or mid_basin change."}
 
 identity:
   id: maxwell-james-clerk
@@ -142,22 +143,22 @@ worldview:
     value: CHRIST
     basis: consistent_private_letters
     certainty: 0.7
-    cites: [{source: S4, locator: "pp. 178–180"}, {source: S6, locator: "pp. 404–405"}, {source: S7, locator: "p. 347"}, {source: S3, locator: "p. 371"}]
+    cites: [{source: S4, locator: "pp. 178–180"}, {source: S6, locator: "pp. 404–405"}, {source: S7, locator: "p. 323 n. 1"}, {source: S3, locator: "p. 371"}]
     how_known: "His Christian belief is in his own words across private documents from 1852 to the 1870s (letters, a draft reply, prayers among his papers). His only public statement read (S8) is theistic but not specifically Christian, so 1.0 is not reached."
     rationale: "CHRIST fits 'the religion as practised and confessed': a Bible-centred Presbyterian elder who calls Christianity 'the only scheme or form of belief' that keeps nothing off-limits to inquiry (S4). Neither theism split fits better: no Aristotelian-Thomistic framework (not CLASS_THEISM), and no claims of intervention or miracle in nature were found (not CLTHEI). The v7.1 rule 'Faraday and Maxwell pass' (church members whose writings show the belief) is met here by his writings, not by his eldership."
   secondary_system: {value: UNKNOWN, how_known: "No second system; he published in no other system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Chosen. Elder of the kirk; Bible-centred faith in letters and prayers; 'no God but the Author of Salvation' (S4).", cites: [{source: S4, locator: "p. 179"}, {source: S3, locator: "p. 371"}]}
-    - {code: CLTHEI, reason: "Rejected for now. His prayers ask God to teach and bless (petition), but nothing read claims God intervenes in physical events, and his science treats molecules as unchanged since creation. Would need texts on providence or miracle.", cites: [{source: S7, locator: "p. 347"}, {source: S8, locator: "pp. 376–377"}]}
+    - {code: CLTHEI, reason: "Rejected for now. His prayers ask God to teach and bless (petition), but nothing read claims God intervenes in physical events, and his science treats molecules as unchanged since creation. Would need texts on providence or miracle.", cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S8, locator: "pp. 376–377"}]}
     - {code: CLASS_THEISM, reason: "Rejected. No Aristotelian-Thomistic or falsafa framework found. His design argument from molecules rests on Herschel, not on scholastic metaphysics.", cites: [{source: S5, locator: "p. 393"}]}
-    - {code: DEISM, reason: "Rejected. He prays to a personal God who is 'mindful of us', and his faith is centred on Christ.", cites: [{source: S7, locator: "p. 347"}]}
+    - {code: DEISM, reason: "Rejected. He prays to a personal God who is 'mindful of us', and his faith is centred on Christ.", cites: [{source: S7, locator: "p. 323 n. 1"}]}
     - {code: PANT, reason: "Rejected. He lists the 'Pantheist' among those who keep forbidden ground, and contrasts the pantheist's God of Nature with the God of the Bible.", cites: [{source: S4, locator: "p. 179"}]}
   lio_axes:
     A_locus:
       value: 0
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S8, locator: "pp. 376–377"}, {source: S4, locator: "p. 179"}]
+      cites: [{source: S8, locator: "pp. 376–377"}, {source: S4, locator: "p. 179"}, {source: S13, locator: "p. 179"}]
       how_known: "Public lecture text (1873), consistent with his 1852 letter; written profession, so 1.0."
       rationale: "Transcendent person outside the world. In a public lecture (1873) he argues that molecules cannot be eternal and self-existent and 'must have been created', and closes on 'Him who in the beginning created, not only the heaven and the earth, but the materials of which heaven and earth consist'. The creator is distinct from what he made. In 1852 he rejects the pantheist's God of Nature. No immanence or world-soul language was found in the texts read."
     B_cause:
@@ -171,7 +172,7 @@ worldview:
       value: 1
       basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S7, locator: "p. 347"}, {source: S4, locator: "p. 179"}]
+      cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S4, locator: "p. 179"}]
       how_known: "Two prayers and a letter, all private, that agree. They speak to the axis only indirectly: liturgical, psalm-like phrasing, with no judgement or reward after death. So 0.5, the coder's inference (lens audit, 2026-10-02; CODING_GUIDE §3)."
       rationale: "Leans to personal reward and punishment: two prayers among his papers ask for 'the remission of our sins' and that 'the wicked be no more', and the 1852 letter names God 'the Author of Salvation'. Private writings that agree, but the reading is an inference from liturgical phrasing, so 0.5. No text read on punishment after death, so not scored 0."
     D_authority:
@@ -185,7 +186,7 @@ worldview:
       value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S8, locator: "pp. 376–377"}, {source: S9, locator: "p. 443"}, {source: S7, locator: "p. 347"}]
+      cites: [{source: S8, locator: "pp. 376–377"}, {source: S9, locator: "p. 443"}, {source: S7, locator: "p. 323 n. 1"}]
       how_known: "Coder's reading of his public lecture (S8), an essay for a private club (S9) and private prayers (S7). They show one order for stars, earth and humans, but none addresses favour for a group in events directly, so 0.5. Scored under decision P7 (2026-10-02); it was TODO before. Gap: Theerman 1986 and the 1884 edition of the Life, on providence and prayer, were not read and could raise or lower this."
       rationale: "Scored on the world's order (decision P7). Leans LIO. The same laws hold for stars and earth: a hydrogen molecule 'whether in Sirius or in Arcturus, executes its vibrations in precisely the same time' (S8, p. 376), and molecules 'continue this day as they were created' (S8, p. 377). Humans are inside the same order. 'Every existence above a certain rank has its singular points', where small influences such as the will can produce large results (S9, p. 443). That is a ranking of beings within physical law, not an exemption from it, and it is why the score is 3 rather than 4. His private prayers petition God to 'teach us to study the works of Thy hands' and to 'strengthen our reason' (S7). They ask for understanding and service, not for favour in events. No text read says God favours believers in what happens. The creation of molecules (S8) is a limit on B, not a favour to a group. Named alternative 4, if the singular points are read as plain physics. The 'knowledge of salvation' in the same prayer (S7) is scored on C, not here."
   mid_basin:
@@ -196,7 +197,7 @@ worldview:
     rationale: "P4 test (METHOD §1.1): A_locus = 0 (≤ 1) at certainty 1.0, and B_cause = 3 (≥ 3) scored for his physics at certainty 0.7. Both at ≥ 0.7, so true. F = 5, so 'first-rank' is also met (applied separately)."
   statements:
     - text: "Nothing is to be holy ground consecrated to Stationary Faith, whether positive or negative."
-      cites: [{source: S4, locator: "p. 178"}]
+      cites: [{source: S4, locator: "p. 178"}, {source: S13, locator: "p. 178"}]
       date: "1852-03-07"
       context: "Letter from Cambridge to his school friend Lewis Campbell, describing his 'great plan' of letting nothing be left unexamined."
       axes: [D_authority]
@@ -205,7 +206,7 @@ worldview:
       verified_on: 2026-10-02
       note: "Transcription as printed in the 1882 Life (Gutenberg text of the 1882 edition)."
     - text: "Christianity—that is, the religion of the Bible—is the only scheme or form of belief which disavows any possessions on such a tenure. Here alone all is free. You may fly to the ends of the world and find no God but the Author of Salvation. You may search the Scriptures and not find a text to stop you in your explorations."
-      cites: [{source: S4, locator: "p. 179"}]
+      cites: [{source: S4, locator: "p. 179"}, {source: S13, locator: "p. 179"}]
       date: "1852-03-07"
       context: "Same letter. 'Such a tenure' refers to ground kept 'Tabooed' from inquiry, which he says the Scoffer, the Pantheist and others hold."
       axes: [D_authority, A_locus, C_ledger]
@@ -246,7 +247,7 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "Every existence above a certain rank has its singular points: the higher the rank, the more of them. At these points, influences whose physical magnitude is too small to be taken account of by a finite being, may produce results of the greatest importance."
-      cites: [{source: S9, locator: "p. 443"}]
+      cites: [{source: S9, locator: "p. 443"}, {source: S13, locator: "p. 443"}]
       date: "1873-02-11"
       context: "Essay read to the Eranus club in Cambridge on whether physical science favours determinism over free will."
       axes: [B_cause, E_scope]
@@ -255,15 +256,15 @@ worldview:
       verified_on: 2026-10-02
       note: "A paper written for a private discussion club of senior colleagues; printed entire in the 1882 Life."
     - text: "What I thought of was not so much that uniformity of result which is due to uniformity in the process of formation, as a uniformity intended and accomplished by the same wisdom and power of which uniformity, accuracy, symmetry, consistency, and continuity of plan are as important attributes as the contrivance of the special utility of each individual thing."
-      cites: [{source: S5, locator: "p. 393"}]
+      cites: [{source: S5, locator: "p. 393"}, {source: S13, locator: "p. 393"}]
       date: "1876-11"
       context: "Reply by return of post to C. J. Ellicott, Bishop of Gloucester and Bristol, who had asked where the phrase 'manufactured articles' came from."
       axes: [A_locus, B_cause]
       kind: "private letter"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "But I should be very sorry if an interpretation founded on almost conjectural scientific hypothesis were to get fastened to the text in Genesis, even if by so doing it got rid of the old statement of the commentators which has long ceased to be intelligible. The rate of change of scientific hypothesis is naturally much more rapid than that of Biblical interpretations, so that if an interpretation is founded on such an hypothesis, it may help to keep the hypothesis above ground long after it ought to be buried and forgotten."
-      cites: [{source: S5, locator: "p. 394"}]
+    - text: "But I should be very sorry if an interpretation founded on a most conjectural scientific hypothesis were to get fastened to the text in Genesis, even if by so doing it got rid of the old statement of the commentators which has long ceased to be intelligible. The rate of change of scientific hypothesis is naturally much more rapid than that of Biblical interpretations, so that if an interpretation is founded on such an hypothesis, it may help to keep the hypothesis above ground long after it ought to be buried and forgotten."
+      cites: [{source: S5, locator: "p. 394"}, {source: S13, locator: "p. 394"}]
       date: "1876-11"
       context: "Same letter, answering the bishop's question whether light created before the sun (Genesis 1) could be squared with science."
       axes: [D_authority]
@@ -271,7 +272,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "I think men of science as well as other men need to learn from Christ, and I think Christians whose minds are scientific are bound to study science that their view of the glory of God may be as extensive as their being is capable of. But I think that the results which each man arrives at in his attempts to harmonise his science with his Christianity ought not to be regarded as having any significance except to the man himself, and to him only for a time, and should not receive the stamp of a society."
-      cites: [{source: S6, locator: "pp. 404–405"}]
+      cites: [{source: S6, locator: "pp. 404–405"}, {source: S13, locator: "pp. 404–405"}]
       date: "1875"
       context: "Rough draft of his reply declining an invitation (March 1875) to join the Victoria Institute, a society for relating science and Christian faith. The draft breaks off; S3 prints 'all that has been found'."
       axes: [D_authority]
@@ -279,7 +280,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "Almighty God, who hast created man in Thine own image, and made him a living soul that he might seek after Thee and have dominion over Thy creatures, teach us to study the works of Thy hands that we may subdue the earth to our use, and strengthen our reason for Thy service; and so to receive Thy blessed Word, that we may believe on Him whom Thou hast sent to give us the knowledge of salvation and the remission of our sins."
-      cites: [{source: S7, locator: "p. 347"}]
+      cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S13, locator: "p. 323 n. 1"}]
       context: "One of two undated prayer fragments 'found amongst his papers', printed by Campbell."
       axes: [C_ledger, A_locus, E_scope]
       kind: "notebook or diary"
@@ -333,12 +334,12 @@ institutions:
 collaborators:
   - {value: "Michael Faraday", roster_id: faraday-michael, relation: "influenced by", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}, {source: S3, locator: "p. 517"}], how_known: "His field theory set out to put Faraday's lines of force into mathematical form."}
   - {value: "Peter Guthrie Tait", relation: other, note: "schoolfellow at the Edinburgh Academy and lifelong friend", years: "1841–1879", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
-  - {value: "Lewis Campbell", relation: correspondent, note: "school friend, main correspondent, and first biographer (S3)", years: "1841–1879", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S4, locator: "whole letter"}], how_known: "Primary letters and an encyclopedia."}
+  - {value: "Lewis Campbell", relation: correspondent, note: "school friend, main correspondent, and first biographer (S3)", years: "1841–1879", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S4, locator: "whole letter"}, {source: S13, locator: "pp. 178–180"}], how_known: "Primary letters and an encyclopedia."}
   - {value: "William Hopkins", relation: teacher, years: "1850–1854", note: "Cambridge mathematics coach", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Encyclopedia."}
   - {value: "Ludwig Boltzmann", roster_id: boltzmann-ludwig, relation: other, note: "co-founder of the kinetic theory of gases; the velocity law carries both names", certainty: 0.7, cites: [{source: S3, locator: "p. 561"}, {source: S1, locator: "Later life"}], how_known: "Named together in both sources; no direct collaboration documented."}
   - {value: "Albert Einstein", roster_id: einstein-albert, relation: influenced, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Encyclopedia, citing Einstein's 1931 assessment."}
   - {value: "Max Planck", roster_id: planck-max, relation: influenced, certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "S1 links Planck's quantum hypothesis to the radiation law derived from Maxwell's theory. One source."}
-  - {value: "C. J. Ellicott, Bishop of Gloucester and Bristol", relation: correspondent, years: "1876", certainty: 1.0, cites: [{source: S5, locator: "whole exchange"}], how_known: "Primary letters."}
+  - {value: "C. J. Ellicott, Bishop of Gloucester and Bristol", relation: correspondent, years: "1876", certainty: 1.0, cites: [{source: S5, locator: "whole exchange"}, {source: S13, locator: "pp. 392–395"}], how_known: "Primary letters."}
   - {value: "John Ambrose Fleming, Richard Tetley Glazebrook, John Henry Poynting, Arthur Schuster, William D. Niven", relation: "student or assistant", years: "1871–1879", certainty: 0.7, cites: [{source: S1, locator: "Later life"}], how_known: "Listed as his students at the Cavendish by one source."}
 
 review:
@@ -387,7 +388,7 @@ sources:
     citation: "Campbell, Lewis, and William Garnett. The Life of James Clerk Maxwell, with a Selection from His Correspondence and Occasional Writings and a Sketch of His Contributions to Science. London: Macmillan, 1882. Project Gutenberg eBook 79044 (2026), https://www.gutenberg.org/ebooks/79044, transcribed from the Internet Archive scan https://archive.org/details/lifeofjamesclerk00camprich."
     url: "https://www.gutenberg.org/ebooks/79044"
     accessed: 2026-10-02
-    reliability_note: "Biography by his school friend Campbell (Part I) and his Cavendish demonstrator Garnett (Part II), published three years after his death; prints letters and essays in full. Page numbers are the 1882 edition's, from the page markers in the Gutenberg text. Friendly to its subject; treat interpretation as the authors'."
+    reliability_note: "Biography by his school friend Campbell (Part I) and his Cavendish demonstrator Garnett (Part II), published three years after his death; prints letters and essays in full. Page numbers are the 1882 edition's, from the page markers in the Gutenberg text. Project Gutenberg is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. The quoted texts were checked against the library scan S13, so fields that rest on S4–S7 or S9 at 1.0 also cite S13. Gutenberg moves footnotes to the end of the chapter, so its page markers do not give a footnote's printed page. Friendly to its subject; treat interpretation as the authors'."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S4
     type: primary
@@ -423,7 +424,7 @@ sources:
     type: primary
     kind: "diary or notebook"
     author: "James Clerk Maxwell"
-    citation: "Maxwell, James Clerk. Two undated prayers 'found amongst his papers'. Printed in Campbell and Garnett 1882 (S3), p. 347."
+    citation: "Maxwell, James Clerk. Two undated prayers 'found amongst his papers'. Printed in Campbell and Garnett 1882 (S3), p. 323, footnote 1."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
     reliability_note: "Private papers; undated; printed by his biographers without a date or occasion."
@@ -474,6 +475,16 @@ sources:
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
     used_for: [review]
+  - id: S13
+    type: secondary
+    kind: "scholarly book"
+    author: "Lewis Campbell and William Garnett"
+    year: 1882
+    citation: "Campbell, Lewis, and William Garnett. The Life of James Clerk Maxwell, with a Selection from His Correspondence and Occasional Writings and a Sketch of His Contributions to Science. London: Macmillan, 1882. University of Toronto (Gerstein) library copy, Internet Archive scan, https://archive.org/details/lifeofjamesclerk00campuoft."
+    url: "https://archive.org/details/lifeofjamesclerk00campuoft"
+    accessed: 2026-10-02
+    reliability_note: "Library scan of the 1882 edition that S3 transcribes; a different copy from the one Gutenberg used. Used to check the wording of the letters, essays and prayers printed there (S4–S7, S9) wherever a quotation or a certainty-1.0 field rests on them. All seven quotations were found word for word in the scan's OCR text, except one word checked on the page image (p. 394: the print reads 'a most conjectural', where S3 has 'almost'). The prayers are in a footnote on p. 323; S3's p. 347 was the page where Gutenberg placed the chapter's footnotes."
+    used_for: [worldview, collaborators]
 ---
 
 # James Clerk Maxwell

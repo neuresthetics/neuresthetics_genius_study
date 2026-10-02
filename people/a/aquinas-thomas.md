@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: B_cause certainty 1.0 -> 0.7 (miracles in ST I q. 105 a. 6–8 are part of his account of nature; the theology-wide 2 is a named alternative); mid_basin certainty 1.0 -> 0.7, with a note that the result turns on decision P6. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23 pattern): E_scope certainty 1.0 -> 0.7, because the score depends on which domain E is scored on (open item P7, PROPOSED). Score unchanged (2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 2 -> 3 at 0.7 (universal providence over individual creatures, I q. 22 a. 2; miracles the limited exception; named alternative 2 from I q. 22 a. 2 ad 4). Reprobation and salvation by revealed truth moved to the C_ledger rationale (C unchanged). Two statements added from I q. 22 a. 2 (same source, page already read), checked word for word. P7 interim note removed. mid_basin unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S4 (New Advent) is an unofficial copy of the English Dominican translation. Checked its wording against two publisher's printings in Internet Archive scans: S6 (Benziger 1947, vol. 1: First Part and First Part of the Second Part) and S7 (Burns Oates 1922, II-II QQ. 80-100). All 17 S4 quotations and every S4 passage cited by a certainty-1.0 field (languages_of_work, self-described relation, primary_system, A, C, D, Maimonides collaborator entry) were found word for word. Added S6 or S7 cites next to S4 on those fields and quotations, so they stay at 1.0. Five quotations take the printed punctuation, checked on the page images (one comma or semicolon each: I q. 1 a. 1, a. 6 ad 2, a. 8 ad 2; I q. 8 a. 1; II-II q. 83 a. 2). No value, certainty or mid_basin change."}
 
 identity:
   id: aquinas-thomas
@@ -66,7 +67,7 @@ basics:
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in what is now Italy; Italy is Southern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "He taught in Paris (1252–1259, 1268–1272) and Cologne (1248–1252) and in Italy (1259–1268, 1272–1273). His two Paris regencies and the Summa contra gentiles years split between France and Italy; Western Europe is chosen because his university career centred on Paris. Southern Europe is a close alternative, so 0.7."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [Latin], certainty: 1.0, cites: [{source: S4, locator: "edition note (Fathers of the English Dominican Province, 2nd rev. ed., 1920, translated from the Latin)"}, {source: S1, locator: "Years at the papal Curia (works and literary forms)"}], how_known: "He wrote in Latin, the language of the universities."}
+  languages_of_work: {value: [Latin], certainty: 1.0, cites: [{source: S4, locator: "edition note (Fathers of the English Dominican Province, 2nd rev. ed., 1920, translated from the Latin)"}, {source: S6, locator: "title page (literally translated by Fathers of the English Dominican Province)"}, {source: S1, locator: "Years at the papal Curia (works and literary forms)"}], how_known: "He wrote in Latin, the language of the universities."}
   occupations:
     value: ["Dominican friar and priest", "master (professor) of theology", "papal theological adviser", "commentator on Aristotle and the Bible"]
     certainty: 1.0
@@ -126,13 +127,13 @@ worldview:
   self_described_science_religion_relation:
     value: "Philosophy built up by human reason is real knowledge, but salvation also needs truths revealed by God, some of which exceed reason. Revealed theology judges the other sciences: anything in them contrary to its truths is false. Reason serves faith, because grace does not destroy nature but perfects it."
     certainty: 1.0
-    cites: [{source: S4, locator: "I q. 1 a. 1; a. 6 ad 2; a. 8 ad 2"}]
+    cites: [{source: S4, locator: "I q. 1 a. 1; a. 6 ad 2; a. 8 ad 2"}, {source: S6, locator: "I q. 1 a. 1; a. 6 ad 2; a. 8 ad 2"}]
     how_known: "His own words in the Summa theologiae, a work written for teaching. Paraphrase; quotations are in statements."
   primary_system:
     value: CLASS_THEISM
     basis: written_profession
     certainty: 1.0
-    cites: [{source: S4, locator: "I q. 2 a. 3; q. 3 a. 8; q. 8 a. 1; q. 9 a. 1"}, {source: S2, locator: "§2"}, {source: S1, locator: "opening paragraph"}]
+    cites: [{source: S4, locator: "I q. 2 a. 3; q. 3 a. 8; q. 8 a. 1; q. 9 a. 1"}, {source: S6, locator: "I q. 2 a. 3; q. 3 a. 8; q. 8 a. 1; q. 9 a. 1"}, {source: S2, locator: "§2"}, {source: S1, locator: "opening paragraph"}]
     how_known: "His own published teaching works; written profession, so 1.0."
     rationale: "The coding guide defines CLASS_THEISM as the 'Aristotelian-Thomistic-Falsafa God: simple, immutable, known through reason'. Aquinas argues to God by reason (the five ways), and proves God 'entirely simple' and 'completely unchangeable' (S2, citing ST I q. 3 a. 7 and q. 9 a. 1). He is a founder of the tradition the code names, and the founders rule applies. The CLASS_THEISM system record lists Thomism as its reference form."
   secondary_system: {value: UNKNOWN, how_known: "No second system; his theology and philosophy are one system."}
@@ -147,7 +148,7 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S4, locator: "I q. 3 a. 8; q. 8 a. 1"}, {source: S2, locator: "§2"}]
+      cites: [{source: S4, locator: "I q. 3 a. 8; q. 8 a. 1"}, {source: S6, locator: "I q. 3 a. 8; q. 8 a. 1"}, {source: S2, locator: "§2"}]
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Leans to the transcendent-person pole. God is the first efficient cause, not the world-soul and not the form or matter of anything (I q. 3 a. 8), and has intellect and will. But he is in all things, 'as an agent is present to that upon which it works' (I q. 8 a. 1), and his personhood is spoken of by analogy. So 1, not 0. This matches the CLASS_THEISM system record (A 1)."
     B_cause:
@@ -161,16 +162,16 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S4, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}]
+      cites: [{source: S4, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}, {source: S6, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}]
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Leans to personal reward and punishment: sins that destroy charity 'incur a debt of eternal punishment' (I-II q. 87 a. 3), and work done in grace merits eternal life 'condignly' (I-II q. 114 a. 3). The account is limited by its form: punishment follows because sin disturbs an order and 'the effect remains so long as the cause remains' (q. 87 a. 3), which is close to consequence. So 1, not 0. Under decision P7 (2026-10-02), the scope of salvation is recorded here, not on E: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). Both fit a score of 1 and do not change it."
     D_authority:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S4, locator: "I q. 1 a. 1, 6, 8"}, {source: S2, locator: "§2"}, {source: S1, locator: "Years at the papal Curia"}]
+      cites: [{source: S4, locator: "I q. 1 a. 1, 6, 8"}, {source: S6, locator: "I q. 1 a. 1, 6, 8"}, {source: S2, locator: "§2"}, {source: S1, locator: "Years at the papal Curia"}]
       how_known: "Summa theologiae; written profession, so 1.0."
-      rationale: "Revelation outranks reason, with a large domain left to reason. Natural reason proves that God exists and much of what God is (S2), and 'grace does not destroy nature but perfects it' (I q. 1 a. 8). But some truths needed for salvation exceed reason and come only by revelation (I q. 1 a. 1), and 'Whatsoever is found in other sciences contrary to any truth of this science must be condemned as false' (I q. 1 a. 6). When they conflict revelation wins, so 1. The CLASS_THEISM system record scores the code 2; for Aquinas himself the stated ranking points to 1."
+      rationale: "Revelation outranks reason, with a large domain left to reason. Natural reason proves that God exists and much of what God is (S2), and 'grace does not destroy nature, but perfects it' (I q. 1 a. 8). But some truths needed for salvation exceed reason and come only by revelation (I q. 1 a. 1), and 'Whatsoever is found in other sciences contrary to any truth of this science, must be condemned as false' (I q. 1 a. 6). When they conflict revelation wins, so 1. The CLASS_THEISM system record scores the code 2; for Aquinas himself the stated ranking points to 1."
     E_scope:
       value: 3
       basis: written_profession
@@ -185,7 +186,7 @@ worldview:
     how_known: "P4 test as amended by P6 (2026-10-02): A_locus = 1 at 1.0 and B_cause = 3 at 0.7, B scored on his account of nature. Both at certainty >= 0.7, so true. The result turns on decision P6: before P6, B was scored on his whole theology (2), and the test had no branch (TODO). Certainty 0.7: mid_basin is no surer than the less certain of A and B (CODING_GUIDE §3; lens audit, 2026-10-02). F = 4, so first-rank is met. On his whole theology B would be 2, and the test would have no branch (see the B_cause rationale)."
   statements:
     - text: "Therefore some intelligent being exists by whom all natural things are directed to their end; and this being we call God."
-      cites: [{source: S4, locator: "I q. 2 a. 3 (fifth way)"}]
+      cites: [{source: S4, locator: "I q. 2 a. 3 (fifth way)"}, {source: S6, locator: "I q. 2 a. 3 (fifth way)"}]
       context: "Summa theologiae, First Part (written c. 1265–1268 per S3), the fifth of the five ways."
       axes: [A_locus, D_authority]
       kind: "written profession (public)"
@@ -193,35 +194,35 @@ worldview:
       verified_on: 2026-10-02
       note: "English Dominican translation (2nd rev. ed., 1920) as transcribed by New Advent. Translated wording."
     - text: "Some have affirmed that God is the world-soul [...] Now all these contain manifest untruth; since it is not possible for God to enter into the composition of anything, either as a formal or a material principle."
-      cites: [{source: S4, locator: "I q. 3 a. 8"}]
+      cites: [{source: S4, locator: "I q. 3 a. 8"}, {source: S6, locator: "I q. 3 a. 8"}]
       context: "Whether God enters into the composition of other things. The omitted words list two further errors (God as the formal principle of all things; God as primary matter)."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-    - text: "God is in all things; not, indeed, as part of their essence, nor as an accident, but as an agent is present to that upon which it works."
-      cites: [{source: S4, locator: "I q. 8 a. 1"}]
+    - text: "God is in all things; not, indeed, as part of their essence, nor as an accident; but as an agent is present to that upon which it works."
+      cites: [{source: S4, locator: "I q. 8 a. 1"}, {source: S6, locator: "I q. 8 a. 1"}]
       context: "Whether God is in all things."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "He governs things inferior by superior, not on account of any defect in His power, but by reason of the abundance of His goodness; so that the dignity of causality is imparted even to creatures."
-      cites: [{source: S4, locator: "I q. 22 a. 3"}]
+      cites: [{source: S4, locator: "I q. 22 a. 3"}, {source: S6, locator: "I q. 22 a. 3"}]
       context: "Whether God has immediate providence over everything."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "We must say, however, that all things are subject to divine providence, not only in general, but even in their own individual selves."
-      cites: [{source: S4, locator: "I q. 22 a. 2"}]
+      cites: [{source: S4, locator: "I q. 22 a. 2"}, {source: S6, locator: "I q. 22 a. 2"}]
       context: "Whether everything is subject to the providence of God. Just before, he rejects the views that corruptible things fall under providence only as species, and that humans are excepted from the generality of corruptible things (which he attributes to Rabbi Moses)."
       axes: [E_scope]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "God, however, extends His providence over the just in a certain more excellent way than over the wicked; inasmuch as He prevents anything happening which would impede their final salvation."
-      cites: [{source: S4, locator: "I q. 22 a. 2 ad 4"}]
+      cites: [{source: S4, locator: "I q. 22 a. 2 ad 4"}, {source: S6, locator: "I q. 22 a. 2 ad 4"}]
       context: "Same article, reply to the objection that God leaves humans to their own counsel. Ad 5 adds that 'individual irrational creatures' do not 'escape the care of divine providence'."
       axes: [E_scope, C_ledger]
       kind: "written profession (public)"
@@ -229,77 +230,77 @@ worldview:
       verified_on: 2026-10-02
       note: "Basis of the named alternative E = 2."
     - text: "We must therefore understand that God works in things in such a manner that things have their proper operation."
-      cites: [{source: S4, locator: "I q. 105 a. 5"}]
+      cites: [{source: S4, locator: "I q. 105 a. 5"}, {source: S6, locator: "I q. 105 a. 5"}]
       context: "Whether God works in every agent. Just before, he rejects the view that 'it is not fire that gives heat, but God in the fire'."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "Wherefore God can do something outside this order created by Him, when He chooses, for instance by producing the effects of secondary causes without them, or by producing certain effects to which secondary causes do not extend."
-      cites: [{source: S4, locator: "I q. 105 a. 6"}]
+      cites: [{source: S4, locator: "I q. 105 a. 6"}, {source: S6, locator: "I q. 105 a. 6"}]
       context: "Whether God can do anything outside the established order of nature. Just before, he says God cannot act against the order that depends on the first cause, only outside the order of secondary causes."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "Wherefore those things which God does outside those causes which we know, are called miracles."
-      cites: [{source: S4, locator: "I q. 105 a. 7"}]
+      cites: [{source: S4, locator: "I q. 105 a. 7"}, {source: S6, locator: "I q. 105 a. 7"}]
       context: "Whether whatever God does outside the natural order is miraculous."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-    - text: "For we pray not that we may change the Divine disposition, but that we may impetrate that which God has disposed to be fulfilled by our prayers"
-      cites: [{source: S4, locator: "II-II q. 83 a. 2"}]
+    - text: "For we pray, not that we may change the Divine disposition, but that we may impetrate that which God has disposed to be fulfilled by our prayers"
+      cites: [{source: S4, locator: "II-II q. 83 a. 2"}, {source: S7, locator: "II-II q. 83 a. 2, p. 34"}]
       context: "Second Part of the Second Part (c. 1271–1272 per S3), on whether it is becoming to pray."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-    - text: "It was necessary for man's salvation that there should be a knowledge revealed by God besides philosophical science built up by human reason."
-      cites: [{source: S4, locator: "I q. 1 a. 1"}]
+    - text: "It was necessary for man's salvation that there should be a knowledge revealed by God, besides philosophical science built up by human reason."
+      cites: [{source: S4, locator: "I q. 1 a. 1"}, {source: S6, locator: "I q. 1 a. 1"}]
       context: "Opening article of the Summa theologiae."
       axes: [D_authority, C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-    - text: "Whatsoever is found in other sciences contrary to any truth of this science must be condemned as false"
-      cites: [{source: S4, locator: "I q. 1 a. 6 ad 2"}]
+    - text: "Whatsoever is found in other sciences contrary to any truth of this science, must be condemned as false"
+      cites: [{source: S4, locator: "I q. 1 a. 6 ad 2"}, {source: S6, locator: "I q. 1 a. 6 ad 2"}]
       context: "On whether sacred doctrine is wisdom; 'this science' is revealed theology."
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
-    - text: "Since therefore grace does not destroy nature but perfects it, natural reason should minister to faith as the natural bent of the will ministers to charity."
-      cites: [{source: S4, locator: "I q. 1 a. 8 ad 2"}]
+    - text: "Since therefore grace does not destroy nature, but perfects it, natural reason should minister to faith as the natural bent of the will ministers to charity."
+      cites: [{source: S4, locator: "I q. 1 a. 8 ad 2"}, {source: S6, locator: "I q. 1 a. 8 ad 2"}]
       context: "On whether sacred doctrine is a matter of argument."
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "Therefore whatever sins turn man away from God, so as to destroy charity, considered in themselves, incur a debt of eternal punishment."
-      cites: [{source: S4, locator: "I-II q. 87 a. 3"}]
+      cites: [{source: S4, locator: "I-II q. 87 a. 3"}, {source: S6, locator: "I-II q. 87 a. 3"}]
       context: "First Part of the Second Part (1271 per S3). The argument opens: 'sin incurs a debt of punishment through disturbing an order. But the effect remains so long as the cause remains.'"
       axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "it is meritorious of life everlasting condignly"
-      cites: [{source: S4, locator: "I-II q. 114 a. 3"}]
+      cites: [{source: S4, locator: "I-II q. 114 a. 3"}, {source: S6, locator: "I-II q. 114 a. 3"}]
       context: "On whether a man in grace can merit eternal life condignly; 'it' is a meritorious work as it proceeds from the grace of the Holy Ghost."
       axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "God does reprobate some."
-      cites: [{source: S4, locator: "I q. 23 a. 3"}]
+      cites: [{source: S4, locator: "I q. 23 a. 3"}, {source: S6, locator: "I q. 23 a. 3"}]
       context: "Whether God reprobates any man. Reprobation is God permitting some to fall away from eternal life, as part of providence."
       axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "as regards the general principles whether of speculative or of practical reason, truth or rectitude is the same for all, and is equally known by all."
-      cites: [{source: S4, locator: "I-II q. 94 a. 4"}]
+      cites: [{source: S4, locator: "I-II q. 94 a. 4"}, {source: S6, locator: "I-II q. 94 a. 4"}]
       context: "Whether the natural law is the same in all men."
       axes: [E_scope]
       kind: "written profession (public)"
@@ -358,7 +359,7 @@ collaborators:
   - {value: "Ibn Rushd (Averroes)", roster_id: ibn-rushd, relation: "rival or critic", note: "Thomas opposed the reading of Averroes taken up at Paris, including a single intellect for all humans", certainty: 1.0, cites: [{source: S2, locator: "§6"}, {source: S1, locator: "Years at the papal Curia"}], how_known: "Two sources."}
   - {value: "Siger of Brabant", relation: "rival or critic", note: "leader of the Paris Averroists from 1266", years: "1266–1272", certainty: 0.7, cites: [{source: S1, locator: "Years at the papal Curia"}], how_known: "One source read for the dispute."}
   - {value: "Bonaventure", relation: "rival or critic", note: "Franciscan colleague at Paris; in 1273 criticized philosophy as distinct from theology and 'the notion of a physical nature that has determined laws'", years: "1273", certainty: 1.0, cites: [{source: S1, locator: "Last years at Naples"}, {source: S3, locator: "§5"}], how_known: "Two sources (S3 on angels and spiritual matter)."}
-  - {value: "Moses Maimonides", roster_id: maimonides, relation: other, note: "cited as 'Rabbi Moses' on providence (I q. 22 a. 2); Thomas disagrees with his view of names for God", certainty: 1.0, cites: [{source: S4, locator: "I q. 22 a. 2"}, {source: S3, locator: "§6"}], how_known: "His own text and one reference source."}
+  - {value: "Moses Maimonides", roster_id: maimonides, relation: other, note: "cited as 'Rabbi Moses' on providence (I q. 22 a. 2); Thomas disagrees with his view of names for God", certainty: 1.0, cites: [{source: S4, locator: "I q. 22 a. 2"}, {source: S6, locator: "I q. 22 a. 2"}, {source: S3, locator: "§6"}], how_known: "His own text and one reference source."}
   - {value: "Reginald of Piperno", relation: "student or assistant", note: "his confessor and assistant, who urged him to keep writing after December 1273", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}], how_known: "One source."}
 
 review:
@@ -415,8 +416,28 @@ sources:
     citation: "Thomas Aquinas. Summa Theologiae (Summa Theologica). Trans. Fathers of the English Dominican Province, 2nd and revised ed., 1920. Online edition by Kevin Knight, New Advent, https://www.newadvent.org/summa/. Pages read: I q. 1, 2, 3, 8, 9, 22, 23, 105, 115; I-II q. 87, 94, 114; II-II q. 83."
     url: "https://www.newadvent.org/summa/"
     accessed: 2026-10-02
-    reliability_note: "His own teaching work, in a standard English translation. Written c. 1265–1273 in Latin. Quotations are the translators' English."
+    reliability_note: "His own teaching work, in a standard English translation. Written c. 1265–1273 in Latin. Quotations are the translators' English. New Advent is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. Its wording was checked against the publisher's printings S6 and S7, so every field that cites S4 at 1.0 also cites S6 or S7."
     used_for: [basics, contribution, worldview, timing, lane_b, collaborators]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Thomas Aquinas"
+    year: 1947
+    citation: "Thomas Aquinas. Summa Theologica. First Complete American Edition in Three Volumes. Literally translated by Fathers of the English Dominican Province. Vol. 1: First Part, QQ. 1-119, and First Part of the Second Part, QQ. 1-114. New York: Benziger Brothers, 1947 (approbation of the English version 1920). Internet Archive scan, https://archive.org/details/summatheologica0001stth."
+    url: "https://archive.org/details/summatheologica0001stth"
+    accessed: 2026-10-02
+    reliability_note: "Publisher's printing of the translation that S4 reproduces, scanned by the Internet Archive. Used to check S4's wording: every First Part and First Part of the Second Part passage that is quoted, or that a certainty-1.0 field cites, was found word for word in the scan's OCR text. Punctuation was checked on the page images for I q. 1 a. 1, a. 6 ad 2, a. 8 ad 2 and q. 8 a. 1 (pp. 1, 4, 6, 34). The quotations follow the printed punctuation."
+    used_for: [basics, worldview, collaborators]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Thomas Aquinas"
+    year: 1922
+    citation: "Thomas Aquinas. The 'Summa Theologica' of St. Thomas Aquinas. Part II (Second Part), QQ. LXXX-C. Literally translated by Fathers of the English Dominican Province. London: Burns Oates & Washbourne, 1922. Dominican College (San Rafael) library copy, Internet Archive scan, https://archive.org/details/summatheologicao0000stth."
+    url: "https://archive.org/details/summatheologicao0000stth"
+    accessed: 2026-10-02
+    reliability_note: "Publisher's edition of the translation that S4 reproduces, in a library scan. Used to check the II-II q. 83 a. 2 quotation, which is on p. 34 (checked on the page image)."
+    used_for: [worldview]
   - id: S5
     type: secondary
     kind: database
