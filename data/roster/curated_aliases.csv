@@ -1,0 +1,86 @@
+variant,target,decision,confidence,reason
+Avicenna,Ibn Sina,merge,high,Latinized name of Ibn Sina (Claude also lists 'Ibn Sina - Avicenna')
+Averroes,Ibn Rushd,merge,high,Latinized name of Ibn Rushd (Claude also lists 'Ibn Rushd - Averroes')
+Alhazen,Ibn al-Haytham,merge,high,Latinized name of Ibn al-Haytham
+Alhazen Ibn al-Haytham,Ibn al-Haytham,merge,high,both names written in one string
+Al-Khwarizmi,Muhammad ibn Musa al-Khwarizmi,merge,high,short nisba form of the same mathematician
+Abu Rayhan al-Biruni,Al-Biruni,merge,high,full name vs nisba form
+Farabi,Al-Farabi,merge,high,'al-' prefix dropped
+Razi,Al-Razi,merge,high,'al-' prefix dropped
+Moses Maimonides,Maimonides,merge,high,given name added
+Laozi,Lao Tzu,merge,high,pinyin vs Wade-Giles romanization
+Li Po,Li Bai,merge,high,Wade-Giles vs pinyin romanization
+Buddha,Siddhartha Gautama,merge,high,title vs personal name of the same founder
+Siddhartha Gautama-Buddha,Siddhartha Gautama,merge,high,name plus title in one string
+Michelangelo Buonarroti,Michelangelo,merge,high,surname added
+Rembrandt van Rijn,Rembrandt,merge,high,surname added
+Gottfried Leibniz,Gottfried Wilhelm Leibniz,merge,high,middle name dropped
+Emmy Amalie Noether,Emmy Noether,merge,high,middle name added
+Dorothy Crowfoot Hodgkin,Dorothy Hodgkin,merge,high,maiden name added
+Caroline Lucretia Herschel,Caroline Herschel,merge,high,middle name added
+Henrietta Leavitt,Henrietta Swan Leavitt,merge,high,middle name dropped
+Robert Oppenheimer,J. Robert Oppenheimer,merge,high,initial dropped
+G-W-F Hegel,Georg Wilhelm Friedrich Hegel,merge,high,initials vs full given names
+E.O. Wilson,Edward O- Wilson,merge,high,initials vs given name (both biology; distinct from J. Tuzo Wilson)
+Benedict de Spinoza,Baruch Spinoza,merge,high,Latin vs Hebrew given name of the same philosopher
+Elizabeth Anscombe,G.E.M. Anscombe,merge,high,initials vs given name (same model lists both)
+Ben-Gurion,David-Ben-Gurion,merge,high,given name dropped (same model lists both)
+Bob Kahn,Robert Kahn,merge,high,nickname vs given name (both computer science; internet co-inventor)
+Mies van der Rohe,Ludwig Mies van der Rohe,merge,high,given name dropped
+John Duns Scotus,Duns Scotus,merge,high,given name added
+Lady Murasaki Shikibu,Murasaki Shikibu,merge,high,honorific added
+Sofia Kovalevskaya,Sofya Kovalevskaya,merge,high,transliteration variant
+Andrey Kolmogorov,Andrei Kolmogorov,merge,high,transliteration variant
+Wright Brothers,,exclude,high,collective/team - excluded by operational definition (same as v7)
+Anderson localization,,exclude,high,not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
+George Washington Carver,George Washington,separate,high,different people (name-subset trap)
+Muhammad,Muhammad ibn Musa al-Khwarizmi,separate,high,different people (Gemini 'Muhammad' is the prophet)
+Mansa Musa,Muhammad ibn Musa al-Khwarizmi,separate,high,different people
+Zeno of Elea,Zeno of Citium,separate,high,different philosophers
+Frederic Joliot-Curie,Irene Joliot-Curie,separate,high,spouses - different people
+Marie Curie,Pierre Curie,separate,high,spouses - different people
+Mary Leakey,Louis Leakey,separate,high,spouses - different people
+William Herschel,Caroline Herschel,separate,high,siblings - different people
+Alan Hodgkin,Dorothy Hodgkin,separate,high,different people
+William Henry Bragg,William Lawrence Bragg,separate,high,father and son - different people
+Orville Wright,Wilbur Wright,separate,medium,individual brothers kept as two persons; the collective 'Wright Brothers' entry is excluded - status decision needed
+Francis Bacon,Roger Bacon,separate,high,different people
+Edward O- Wilson,J- Tuzo Wilson,separate,high,different people
+Aldous Huxley,Andrew Huxley,separate,high,different people
+Felix Mendelssohn,Moses Mendelssohn,separate,high,different people
+Anna Freud,Sigmund Freud,separate,high,different people
+May-Britt Moser,Edvard Moser,separate,high,spouses - different people
+Patricia Churchland,Paul Churchland,separate,high,spouses - different people
+Andre Weil,Simone Weil,separate,high,siblings - different people
+André Weil,Andrew Wiles,separate,high,different mathematicians (similar spelling)
+Paul Erdős,Paul Edwards,separate,high,different people (similar spelling)
+Torsten Wiesel,Elie Wiesel,separate,high,different people
+Brian-Maynard-Smith,,flag,low,listed by GPT only; probably meant John Maynard Smith (evolutionary biologist) - kept as listed; human should confirm
+Lee-Smolins,Lee Smolin,display_fix,high,spelling (no merge involved)
+Albert Hofman,Albert Hofmann,display_fix,high,spelling (no merge involved)
+Gabriel Marcell,Gabriel Marcel,display_fix,high,spelling (no merge involved)
+Gabriel Mistral,Gabriela Mistral,display_fix,high,spelling (no merge involved)
+Sana-i,Sana'i,display_fix,medium,hyphen stands in for apostrophe (v7 name 'Sana-i')
+W-V-O Quine,W.V.O. Quine,display_fix,high,hyphens stand in for periods (v7 name 'W-V-O Quine')
+Farid ud-Din Attar,Farid ud-Din Attar,display_fix,high,natural order (v7 name 'Attar-Farid ud-Din')
+Edward O- Wilson,Edward O. Wilson,display_fix,high,hyphen stands in for period
+J- Tuzo Wilson,J. Tuzo Wilson,display_fix,high,hyphen stands in for period
+T-S Eliot,T.S. Eliot,display_fix,high,hyphens stand in for periods
+W-B Yeats,W.B. Yeats,display_fix,high,hyphens stand in for periods
+W-H Auden,W.H. Auden,display_fix,high,hyphens stand in for periods
+e-e cummings,E.E. Cummings,display_fix,high,hyphens stand in for periods
+John O-Keefe,John O'Keefe,display_fix,high,hyphen stands in for apostrophe
+Tenzin Gyatso-Dalai Lama,Tenzin Gyatso (14th Dalai Lama),display_fix,high,name plus title in one string
+Arthur Schlesinger Jr.,Arthur Schlesinger Sr.,separate,high,father and son - different people (v6 fuzzy step had merged them)
+David-Ben-Gurion,David Ben-Gurion,display_fix,high,GPT-only name; hyphens used as spaces
+C-S-Lewis,C.S. Lewis,display_fix,high,GPT-only name; hyphens stand in for periods
+Fei-Fei-Li,Fei-Fei Li,display_fix,high,GPT-only name; hyphens used as spaces
+Jean-Luc-Godard,Jean-Luc Godard,display_fix,high,GPT-only name; hyphens used as spaces
+Lin-Manuel-Miranda,Lin-Manuel Miranda,display_fix,high,GPT-only name; hyphens used as spaces
+Sandra-Day-OConnor,Sandra Day O'Connor,display_fix,high,GPT-only name; apostrophe dropped
+The-Notorious-BIG,The Notorious B.I.G.,display_fix,high,GPT-only name; stage name of Christopher Wallace (a person)
+W-E-B-Du-Bois,W.E.B. Du Bois,display_fix,high,GPT-only name; hyphens stand in for periods
+Beyonce,Beyoncé,display_fix,high,GPT-only name; accent restored
+Oliver Wendell Holmes Jr.,Oliver Wendell Holmes Sr.,separate,high,father and son - different people
+Oliver-Wendell-Holmes-Jr,Oliver Wendell Holmes Jr.,display_fix,high,GPT-only name; hyphens used as spaces
+Onora O-Neill,Onora O'Neill,display_fix,high,hyphen stands in for apostrophe

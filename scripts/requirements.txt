@@ -1,0 +1,4 @@
+# rebuild_roster.py and assign_ids.py use only the standard library.
+# The validators and the coverage report need these:
+PyYAML>=6.0
+jsonschema>=4.18

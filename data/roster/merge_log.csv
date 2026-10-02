@@ -1,0 +1,1152 @@
+canonical,variant,models,action,rule,confidence,note
+(EXCLUDED),Wright Brothers | Wright-Brothers,DeepSeek;GPT,excluded,exclude,high,collective/team - excluded by operational definition (same as v7)
+(EXCLUDED),Anderson localization,DeepSeek,excluded,exclude,high,not a person (physics phenomenon) - same as v7; physicist Philip Anderson is listed separately
+Abraham Lincoln,Abraham-Lincoln,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Abraham Maslow,Abraham-Maslow,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ada Lovelace,Ada-Lovelace,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ada Yonath,Yonath-Ada,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Adam Smith,Adam-Smith,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Adam Smith,Smith-Adam,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Adi Shamir,Adi-Shamir,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Akira Kurosawa,Akira-Kurosawa,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Akira Kurosawa,Kurosawa-Akira,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Al-Biruni,Abu Rayhan al-Biruni,Claude,merged,curated alias,high,full name vs nisba form
+Al-Farabi,Farabi,GPT,merged,curated alias,high,'al-' prefix dropped
+Al-Khwarizmi,Muhammad ibn Musa al-Khwarizmi,Claude;Grok,merged,curated alias (target side),high,target of curated merge: Al-Khwarizmi
+Al-Razi,Razi,DeepSeek,merged,curated alias,high,'al-' prefix dropped
+Alan Baker,Alan-Baker,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alan Turing,Alan-Turing,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alan Turing,Turing-Alan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Albert Einstein,Albert-Einstein,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Albert Einstein,Einstein-Albert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Albert Hofmann,Albert Hofman,Grok,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Albert Sabin,Sabin-Albert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Aldous Huxley,Aldous-Huxley,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Fleming,Fleming-Alexander,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Graham Bell,Alexander-Graham-Bell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Graham Bell,Bell-Alexander Graham,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Grothendieck,Alexander-Grothendieck,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Grothendieck,Grothendieck-Alexander,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander Hamilton,Alexander-Hamilton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander the Great,Alexander-the-Great,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alexander von Humboldt,Humboldt-Alexander von,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alfred Adler,Alfred-Adler,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alfred Hitchcock,Alfred-Hitchcock,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alfred Hitchcock,Hitchcock-Alfred,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alfred North Whitehead,Whitehead-Alfred North,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Alfred Wegener,Wegener-Alfred,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Amartya Sen,Amartya-Sen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Amos Tversky,Amos-Tversky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrea Palladio,Palladio-Andrea,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andreas Vesalius,Vesalius-Andreas,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrei Kolmogorov,Andrey Kolmogorov,Grok,merged,curated alias,high,transliteration variant
+Andrei Kolmogorov,Kolmogorov-Andrei,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrei Sakharov,Sakharov-Andrei,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrei Tarkovsky,Andrei-Tarkovsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrew Ng,Andrew-Ng,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andrew Wiles,Andrew-Wiles,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Andy Warhol,Andy-Warhol,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Angela Merkel,Angela-Merkel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Annie Jump Cannon,Annie-Jump-Cannon,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Antoine Lavoisier,Lavoisier-Antoine,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Antonin Scalia,Antonin-Scalia,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Aretha Franklin,Aretha-Franklin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Arnold Schoenberg,Schoenberg-Arnold,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Arthur Schopenhauer,Arthur-Schopenhauer,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Arthur Schopenhauer,Schopenhauer-Arthur,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Augustus Caesar,Augustus-Caesar,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Aung San Suu Kyi,Aung-San-Suu-Kyi,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Aung San Suu Kyi,Suu Kyi-Aung San,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ayn Rand,Rand-Ayn,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+B.F. Skinner,B-F-Skinner,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Barbara McClintock,Barbara-McClintock,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Barbara McClintock,McClintock-Barbara,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Baruch Spinoza,Baruch-Spinoza,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Baruch Spinoza,Benedict de Spinoza,DeepSeek,merged,curated alias,high,Latin vs Hebrew given name of the same philosopher
+Baruch Spinoza,Spinoza-Baruch,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+bell hooks,bell-hooks,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ben Jonson,Ben-Jonson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Benjamin Cardozo,Benjamin-Cardozo,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Benjamin Franklin,Franklin-Benjamin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bernhard Riemann,Bernhard-Riemann,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bernhard Riemann,Riemann-Bernhard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bertrand Russell,Bertrand-Russell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bertrand Russell,Russell-Bertrand,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Beyoncé,Beyonce,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bill Gates,Bill-Gates,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bill Gates,Gates-Bill,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Birute Galdikas,Birute-Galdikas,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Blaise Pascal,Blaise-Pascal,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Blaise Pascal,Pascal-Blaise,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bob Dylan,Bob-Dylan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Brian Greene,Brian-Greene,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Brian Maynard Smith,Brian-Maynard-Smith,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Bronisław Malinowski,Bronislaw Malinowski,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Buckminster Fuller,Fuller-Buckminster,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Buzz Aldrin,Buzz-Aldrin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+C.S. Lewis,C-S-Lewis,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Cao Xueqin,Xueqin-Cao,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Friedrich Gauss,Carl-Friedrich-Gauss,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Friedrich Gauss,Gauss-Carl Friedrich,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Jung,Carl-Jung,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Jung,Jung-Carl,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Linnaeus,Linnaeus-Carl,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Rogers,Carl-Rogers,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl Sagan,Carl-Sagan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carl von Clausewitz,Carl-von-Clausewitz,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Carlo Rovelli,Carlo-Rovelli,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Caroline Herschel,Caroline Lucretia Herschel,Grok,merged,curated alias,high,middle name added
+Caroline Herschel,Caroline-Herschel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Cecilia Payne-Gaposchkin,Cecilia-Payne-Gaposchkin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Cesar Chavez,Cesar-Chavez,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charles Babbage,Charles-Babbage,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charles Darwin,Charles-Darwin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charles Darwin,Darwin-Charles,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charles Lyell,Lyell-Charles,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charles Sherrington,Sherrington-Charles,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Charlie Chaplin,Chaplin-Charlie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Chien-Shiung Wu,Chien-Shiung-Wu,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Chien-Shiung Wu,Wu-Chien-Shiung,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Chinua Achebe,Achebe-Chinua,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Chinua Achebe,Chinua-Achebe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Christiaan Huygens,Huygens-Christiaan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Christopher Marlowe,Christopher-Marlowe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Christopher Nolan,Christopher-Nolan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Clara Barton,Clara-Barton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Clarice Lispector,Lispector-Clarice,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Debussy,Claude-Debussy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Debussy,Debussy-Claude,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Levi-Strauss,Claude Lévi-Strauss,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Levi-Strauss,Claude-Levi-Strauss,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Monet,Claude-Monet,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Monet,Monet-Claude,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Shannon,Claude-Shannon,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Claude Shannon,Shannon-Claude,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Clayton Christensen,Clayton-Christensen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Constantine the Great,Constantine-the-Great,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Cornel West,Cornel-West,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Cyrus McCormick,McCormick-Cyrus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Czesław Miłosz,Miłosz-Czesław,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Daniel Kahneman,Daniel-Kahneman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dante Alighieri,Dante-Alighieri,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Ben-Gurion,Ben-Gurion,GPT,merged,curated alias,high,given name dropped (same model lists both)
+David Ben-Gurion,David-Ben-Gurion,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Bowie,David-Bowie,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Hilbert,David-Hilbert,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Hilbert,Hilbert-David,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Hume,David-Hume,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Hume,Hume-David,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+David Lynch,David-Lynch,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Demis Hassabis,Demis-Hassabis,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dennis Ritchie,Dennis-Ritchie,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Derek Walcott,Walcott-Derek,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Desmond Tutu,Desmond-Tutu,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Desmond Tutu,Tutu-Desmond,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dian Fossey,Dian-Fossey,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dmitri Mendeleev,Mendeleev-Dmitri,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Donald Knuth,Donald-Knuth,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Donald Knuth,Knuth-Donald,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dorothy Hodgkin,Dorothy Crowfoot Hodgkin,DeepSeek;Grok,merged,curated alias,high,maiden name added
+Dorothy Hodgkin,Hodgkin-Dorothy,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Dorothy Vaughan,Dorothy-Vaughan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Du Fu,Fu-Du,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Duke Ellington,Duke-Ellington,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Duns Scotus,John Duns Scotus,DeepSeek,merged,curated alias,high,given name added
+Dwight Eisenhower,Dwight-Eisenhower,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+E. E. Evans-Pritchard,E.E. Evans-Pritchard,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+E.E. Cummings,Cummings-e-e,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+E.E. Cummings,e-e cummings,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edith Stein,Stein-Edith,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edmund Husserl,Husserl-Edmund,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edsger Dijkstra,Edsger-Dijkstra,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edward O. Wilson,E-O-Wilson,GPT,merged,curated alias,high,initials vs given name (both biology; distinct from J. Tuzo Wilson)
+Edward O. Wilson,E.O. Wilson,Claude,merged,curated alias,high,initials vs given name (both biology; distinct from J. Tuzo Wilson)
+Edward O. Wilson,Edward O- Wilson,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edward O. Wilson,Wilson-Edward O-,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edward Witten,Edward-Witten,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edward Witten,Witten-Edward,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Edwin Hubble,Hubble-Edwin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Eli Whitney,Whitney-Eli,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elias Howe,Howe-Elias,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elias James Corey,Corey-Elias James,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elie Wiesel,Wiesel-Elie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elinor Ostrom,Elinor-Ostrom,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elinor Ostrom,Ostrom-Elinor,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elizabeth Anscombe,G.E.M. Anscombe,DeepSeek,merged,curated alias (target side),high,target of curated merge: Elizabeth Anscombe
+Elizabeth Blackwell,Elizabeth-Blackwell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ella Fitzgerald,Ella-Fitzgerald,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Elon Musk,Elon-Musk,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Emile Durkheim,Emile-Durkheim,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Emily Dickinson,Dickinson-Emily,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Emily Dickinson,Emily-Dickinson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Emmy Noether,Emmy Amalie Noether,Claude,merged,curated alias,high,middle name added
+Emmy Noether,Emmy-Noether,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Emmy Noether,Noether-Emmy,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Enrico Caruso,Enrico-Caruso,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Enrico Fermi,Enrico-Fermi,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Enrico Fermi,Fermi-Enrico,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Eric Kandel,Kandel-Eric,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ernest Shackleton,Ernest-Shackleton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Erwin Schrödinger,Erwin-Schrödinger,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Erwin Schrödinger,Schrödinger-Erwin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Évariste Galois,Galois-Évariste,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ezra Pound,Pound-Ezra,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Farid ud-Din Attar,Attar-Farid ud-Din,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Federico Fellini,Federico-Fellini,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Fei-Fei Li,Fei-Fei-Li,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ferdinand de Saussure,Ferdinand-de-Saussure,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ferdinand Magellan,Ferdinand-Magellan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Filippo Brunelleschi,Brunelleschi-Filippo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Florence Nightingale,Florence-Nightingale,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Francis Bacon,Bacon-Francis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Francis Bacon,Francis-Bacon,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Francis Crick,Crick-Francis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Francis Ford Coppola,Francis-Ford-Coppola,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+François Jacob,Jacob-François,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Frank Lloyd Wright,Wright-Frank Lloyd,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Frank Whittle,Whittle-Frank,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Frank Wilczek,Frank-Wilczek,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Franklin Delano Roosevelt,Franklin-Delano-Roosevelt,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Franz Kafka,Franz-Kafka,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Franz Kafka,Kafka-Franz,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Freddie Mercury,Freddie-Mercury,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Freeman Dyson,Freeman-Dyson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Frida Kahlo,Frida-Kahlo,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Frida Kahlo,Kahlo-Frida,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Friedrich Nietzsche,Friedrich-Nietzsche,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Friedrich Nietzsche,Nietzsche-Friedrich,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Fritz Haber,Haber-Fritz,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Fyodor Dostoevsky,Dostoevsky-Fyodor,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Fyodor Dostoevsky,Fyodor-Dostoevsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel García Márquez,Gabriel Garcia Marquez,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel García Márquez,Gabriel-Garcia-Marquez,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel García Márquez,García Márquez-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel Marcel,Gabriel Marcell,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriel Marcel,Marcell-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriela Mistral,Gabriel Mistral,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gabriela Mistral,Mistral-Gabriel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Galileo Galilei,Galilei-Galileo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Galileo Galilei,Galileo-Galilei,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Genghis Khan,Genghis-Khan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Geoffrey Chaucer,Chaucer-Geoffrey,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Geoffrey Hinton,Geoffrey-Hinton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Georg Wilhelm Friedrich Hegel,G-W-F Hegel,Gemini,merged,curated alias,high,initials vs full given names
+Georg Wilhelm Friedrich Hegel,Georg-Wilhelm-Friedrich-Hegel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Georg Wilhelm Friedrich Hegel,Hegel-G-W-F,Gemini,merged,curated alias,high,initials vs full given names
+George Balanchine,Balanchine-George,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Boole,Boole-George,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Lucas,George-Lucas,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Orwell,George-Orwell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Pólya,Pólya-George,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Washington,George-Washington,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+George Washington Carver,Carver-George Washington,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Georgia O'Keeffe,Georgia O-Keeffe,DeepSeek;Gemini;Grok,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Georgia O'Keeffe,Georgia-OKeeffe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Georgia O'Keeffe,O-Keeffe-Georgia,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gertrude Elion,Gertrude-Elion,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Giovanni Boccaccio,Boccaccio-Giovanni,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Giovanni Boccaccio,Giovanni-Boccaccio,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Giuseppe Verdi,Giuseppe-Verdi,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gloria Steinem,Gloria-Steinem,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Golda Meir,Golda-Meir,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gordon Moore,Gordon-Moore,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gottfried Wilhelm Leibniz,Gottfried Leibniz,DeepSeek,merged,curated alias,high,middle name dropped
+Gottfried Wilhelm Leibniz,Gottfried-Wilhelm-Leibniz,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gottfried Wilhelm Leibniz,Leibniz-Gottfried Wilhelm,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gottlieb Daimler,Gottlieb-Daimler,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Grace Hopper,Grace-Hopper,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Grace Hopper,Hopper-Grace,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Gregor Mendel,Mendel-Gregor,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Grigori Perelman,Grigori-Perelman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Guglielmo Marconi,Marconi-Guglielmo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hannah Arendt,Arendt-Hannah,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hannah Arendt,Hannah-Arendt,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hannibal Barca,Hannibal-Barca,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hans Bethe,Bethe-Hans,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hans Bethe,Hans-Bethe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hans Eysenck,Hans-Eysenck,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Harriet Tubman,Tubman-Harriet,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Harry Markowitz,Harry-Markowitz,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Haruki Murakami,Haruki-Murakami,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hayao Miyazaki,Hayao-Miyazaki,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hedy Lamarr,Hedy-Lamarr,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hedy Lamarr,Lamarr-Hedy,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Helen Keller,Keller-Helen,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henri Matisse,Henri-Matisse,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henri Matisse,Matisse-Henri,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henri Poincaré,Henri-Poincare,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henri Poincaré,Poincaré-Henri,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henrietta Swan Leavitt,Henrietta-Leavitt,GPT,merged,curated alias,high,middle name dropped
+Henrietta Swan Leavitt,Leavitt-Henrietta Swan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henry David Thoreau,Thoreau-Henry David,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Henry Ford,Henry-Ford,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Herbert Simon,Herbert-Simon,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hieronymus Bosch,Bosch-Hieronymus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Hilary Putnam,Putnam-Hilary,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Homi Bhabha,Homi-Bhabha,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn al-Haytham (Alhazen),Alhazen,DeepSeek;Grok,merged,curated alias,high,Latinized name of Ibn al-Haytham
+Ibn al-Haytham (Alhazen),Alhazen - Ibn al-Haytham,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Alhazen')
+Ibn al-Haytham (Alhazen),Alhazen Ibn al-Haytham,Grok,merged,curated alias,high,both names written in one string
+Ibn al-Haytham (Alhazen),Ibn al-Haytham,Claude;DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn Battuta,Battuta-Ibn,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn Battuta,Ibn-Battuta,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn Rushd (Averroes),Averroes,Claude;DeepSeek;Gemini;Grok,merged,curated alias,high,Latinized name of Ibn Rushd (Claude also lists 'Ibn Rushd - Averroes')
+Ibn Rushd (Averroes),Ibn Rushd,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn Rushd (Averroes),Ibn Rushd - Averroes,Claude,merged,curated alias,high,Latinized name of Ibn Rushd (Claude also lists 'Ibn Rushd - Averroes'); compound entry split on ' - ' (other part: 'Ibn Rushd')
+Ibn Sina (Avicenna),Avicenna,Claude;DeepSeek;GPT;Gemini;Grok,merged,curated alias,high,Latinized name of Ibn Sina (Claude also lists 'Ibn Sina - Avicenna')
+Ibn Sina (Avicenna),Ibn Sina,DeepSeek;Gemini;Grok,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ibn Sina (Avicenna),Ibn Sina - Avicenna,Claude,merged,curated alias,high,Latinized name of Ibn Sina (Claude also lists 'Ibn Sina - Avicenna'); compound entry split on ' - ' (other part: 'Ibn Sina')
+Ibn Sina (Avicenna),Sina-Ibn,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Igor Stravinsky,Igor-Stravinsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Igor Stravinsky,Stravinsky-Igor,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ilya Sutskever,Ilya-Sutskever,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Immanuel Kant,Immanuel-Kant,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Immanuel Kant,Kant-Immanuel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Imre Lakatos,Lakatos-Imre,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ingmar Bergman,Ingmar-Bergman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Isaac Newton,Isaac-Newton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Isaac Newton,Newton-Isaac,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Isabella Bird,Bird-Isabella,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Isadora Duncan,Duncan-Isadora,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Isambard Kingdom Brunel,Isambard-Kingdom-Brunel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ivan Pavlov,Pavlov-Ivan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J. Robert Oppenheimer,J-Robert-Oppenheimer,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J. Robert Oppenheimer,Oppenheimer-J-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J. Robert Oppenheimer,Robert Oppenheimer,Grok,merged,curated alias,high,initial dropped
+J. Tuzo Wilson,J- Tuzo Wilson,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J. Tuzo Wilson,Wilson-J- Tuzo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J.M.W. Turner,J-M-W Turner,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J.M.W. Turner,Turner-J-M-W,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+J.R.R. Tolkien,J-R-R-Tolkien,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jackson Pollock,Jackson-Pollock,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jacques Derrida,Derrida-Jacques,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jacques Monod,Monod-Jacques,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Baldwin,Baldwin-James,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Cameron,James-Cameron,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Clerk Maxwell,James-Clerk-Maxwell,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Clerk Maxwell,Maxwell-James Clerk,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Cook,James-Cook,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Hutton,Hutton-James,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Joyce,James-Joyce,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Madison,James-Madison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+James Watson,Watson-James,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jan van Eyck,Van Eyck-Jan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jane Austen,Austen-Jane,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jane Austen,Jane-Austen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jane Goodall,Goodall-Jane,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jane Goodall,Jane-Goodall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jane Marcet,Jane-Marcet,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jean Piaget,Jean-Piaget,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jean-Jacques Rousseau,Jean-Jacques-Rousseau,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jean-Jacques Rousseau,Rousseau-Jean-Jacques,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jean-Luc Godard,Jean-Luc-Godard,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jeff Bezos,Jeff-Bezos,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jimi Hendrix,Jimi-Hendrix,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jocelyn Bell Burnell,Burnell-Jocelyn Bell,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johann Sebastian Bach,Bach-Johann Sebastian,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johann Sebastian Bach,Johann-Sebastian-Bach,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johann Wolfgang von Goethe,Goethe-Johann Wolfgang von,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johannes Gutenberg,Gutenberg-Johannes,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johannes Gutenberg,Johannes-Gutenberg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johannes Kepler,Johannes-Kepler,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Johannes Kepler,Kepler-Johannes,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Cage,John-Cage,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Collison,John-Collison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Coltrane,John-Coltrane,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Dewey,Dewey-John,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Horton Conway,John-Horton-Conway,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Locke,John-Locke,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Locke,Locke-John,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Marshall,John-Marshall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Maynard Keynes,John-Maynard-Keynes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Maynard Keynes,Keynes-John Maynard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John McCarthy,John-McCarthy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Milton,John-Milton,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John Nash,John-Nash,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John O'Keefe,John O-Keefe,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John von Neumann,John-von-Neumann,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+John von Neumann,Von Neumann-John,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jonas Salk,Salk-Jonas,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jorge Amado,Amado-Jorge,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jorge Luis Borges,Borges-Jorge Luis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Jorge Luis Borges,Jorge-Luis-Borges,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Joseph Schumpeter,Joseph-Schumpeter,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Joseph-Louis Lagrange,Lagrange-Joseph-Louis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Judith Butler,Butler-Judith,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Judith Butler,Judith-Butler,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Julius Caesar,Julius-Caesar,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kahlil Gibran,Gibran-Kahlil,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kanye West,Kanye-West,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Karl Benz,Benz-Karl,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Karl Benz,Karl-Benz,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Karl Marx,Karl-Marx,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Karl Marx,Marx-Karl,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Karl Popper,Popper-Karl,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Katherine Johnson,Katherine-Johnson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ken Thompson,Ken-Thompson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kendrick Lamar,Kendrick-Lamar,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kenneth Arrow,Kenneth-Arrow,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Konrad Lorenz,Konrad-Lorenz,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Konstantin Tsiolkovsky,Tsiolkovsky-Konstantin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kublai Khan,Kublai-Khan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kurt Gödel,Gödel-Kurt,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Kurt Gödel,Kurt-Gödel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Langston Hughes,Hughes-Langston,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Langston Hughes,Langston-Hughes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Laozi,Lao Tzu,Gemini,merged,curated alias (target side),high,target of curated merge: Laozi
+Larry Page,Larry-Page,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lee Smolin,Lee-Smolins,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leo Tolstoy,Leo-Tolstoy,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leo Tolstoy,Tolstoy-Leo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leon Battista Alberti,Alberti-Leon Battista,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Léon Walras,Walras-Léon,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leonard Adleman,Leonard-Adleman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leonardo da Vinci,Da Vinci-Leonardo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leonardo da Vinci,Leonardo-da-Vinci,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leonhard Euler,Euler-Leonhard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Leonid Kantorovich,Leonid-Kantorovich,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lev Vygotsky,Lev-Vygotsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Li Bai,Li Po,Gemini,merged,curated alias,high,Wade-Giles vs pinyin romanization
+Li Bai,Po-Li,Gemini,merged,curated alias,high,Wade-Giles vs pinyin romanization
+Lin-Manuel Miranda,Lin-Manuel-Miranda,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Linus Pauling,Pauling-Linus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Linus Torvalds,Linus-Torvalds,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Linus Torvalds,Torvalds-Linus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lisa Randall,Lisa-Randall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lise Meitner,Lise-Meitner,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lise Meitner,Meitner-Lise,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Louis Brandeis,Louis-Brandeis,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Louis Leakey,Leakey-Louis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Louis Pasteur,Pasteur-Louis,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Lu Xun,Xun-Lu,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Luciano Pavarotti,Luciano-Pavarotti,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ludwig Mies van der Rohe,Mies van der Rohe,DeepSeek,merged,curated alias,high,given name dropped
+Ludwig Mies van der Rohe,Mies van der Rohe-Ludwig,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ludwig van Beethoven,Beethoven-Ludwig van,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ludwig van Beethoven,Ludwig-van-Beethoven,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ludwig Wittgenstein,Ludwig-Wittgenstein,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ludwig Wittgenstein,Wittgenstein-Ludwig,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mae Jemison,Mae-Jemison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mahatma Gandhi,Gandhi-Mahatma,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maimonides,Moses Maimonides,DeepSeek,merged,curated alias,high,given name added
+Malcolm X,Malcolm-X,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mansa Musa,Mansa-Musa,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marcel Proust,Marcel-Proust,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marcel Proust,Proust-Marcel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marco Polo,Marco-Polo,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marco Polo,Polo-Marco,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Margaret Sanger,Margaret-Sanger,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Margaret Thatcher,Margaret-Thatcher,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maria Callas,Maria-Callas,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maria Gaetana Agnesi,Agnesi-Maria Gaetana,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maria Montessori,Montessori-Maria,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marie Curie,Curie-Marie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marie Curie,Marie-Curie,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marie Tharp,Tharp-Marie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mark Zuckerberg,Mark-Zuckerberg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martha Graham,Graham-Martha,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marthinus Beijerinck,Beijerinck-Marthinus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martin Heidegger,Heidegger-Martin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martin Hellman,Martin-Hellman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martin Luther King Jr.,King Jr-Martin Luther,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martin Luther King Jr.,Martin Luther King Jr-,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Martin Luther King Jr.,Martin-Luther-King-Jr,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Marvin Minsky,Marvin-Minsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Cartwright,Cartwright-Mary,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Jackson,Mary-Jackson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Leakey,Leakey-Mary,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Shelley,Mary-Shelley,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Shelley,Shelley-Mary,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Mary Somerville,Mary-Somerville,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maryam Mirzakhani,Maryam-Mirzakhani,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maurice Ravel,Maurice-Ravel,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Max Delbrück,Delbrück-Max,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Max Planck,Max-Planck,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Max Planck,Planck-Max,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Max Tegmark,Max-Tegmark,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Max Weber,Max-Weber,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Maya Angelou,Maya-Angelou,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michael Faraday,Faraday-Michael,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michael Faraday,Michael-Faraday,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michael Jackson,Michael-Jackson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michel de Montaigne,Michel-de-Montaigne,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michel Foucault,Foucault-Michel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Michelangelo,Michelangelo Buonarroti,Claude,merged,curated alias,high,surname added
+Michio Kaku,Michio-Kaku,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Miguel de Cervantes,Cervantes-Miguel de,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Miles Davis,Miles-Davis,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Milton Friedman,Friedman-Milton,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Milton Friedman,Milton-Friedman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Murasaki Shikibu,Lady Murasaki Shikibu,Gemini,merged,curated alias,high,honorific added
+Murasaki Shikibu,Shikibu-Lady Murasaki,Gemini,merged,curated alias,high,honorific added
+Murray Gell-Mann,Gell-Mann-Murray,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Naguib Mahfouz,Mahfouz-Naguib,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Neil Armstrong,Neil-Armstrong,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Neil deGrasse Tyson,Neil-deGrasse-Tyson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nelson Mandela,Mandela-Nelson,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nelson Mandela,Nelson-Mandela,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Niccolò Machiavelli,Machiavelli-Niccolò,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Niccolò Machiavelli,Niccolo Machiavelli,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Niccolò Machiavelli,Niccolo-Machiavelli,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nick Bostrom,Nick-Bostrom,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nicolaus Copernicus,Copernicus-Nicolaus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Niels Bohr,Bohr-Niels,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Niels Bohr,Niels-Bohr,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nikola Tesla,Nikola-Tesla,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nikola Tesla,Tesla-Nikola,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nikolaas Tinbergen,Nikolaas-Tinbergen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nikolaus Otto,Nikolaus-Otto,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nikolaus Otto,Otto-Nikolaus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nina Simone,Nina-Simone,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Nizami Ganjavi,Ganjavi-Nizami,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Noam Chomsky,Chomsky-Noam,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Noam Chomsky,Noam-Chomsky,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Octavio Paz,Paz-Octavio,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Olga Ladyzhenskaya,Ladyzhenskaya-Olga,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Oliver Wendell Holmes Jr.,Oliver-Wendell-Holmes-Jr,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Omar Khayyam,Khayyam-Omar,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Omar Khayyam,Omar-Khayyam,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Onora O'Neill,Onora O-Neill,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Orson Welles,Orson-Welles,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Orson Welles,Welles-Orson,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Orville Wright,Wright Brothers - Orville Wright,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
+Orville Wright,Wright-Orville,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Pablo Neruda,Neruda-Pablo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Pablo Picasso,Pablo-Picasso,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Pablo Picasso,Picasso-Pablo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Patrick Collison,Patrick-Collison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Allen,Paul-Allen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Cézanne,Cézanne-Paul,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Cézanne,Paul-Cezanne,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Dirac,Dirac-Paul,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Dirac,Paul-Dirac,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Samuelson,Paul-Samuelson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paul Samuelson,Samuelson-Paul,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Paulo Freire,Freire-Paulo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Peter Drucker,Peter-Drucker,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Peter Jackson,Peter-Jackson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Philip Glass,Philip-Glass,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Philo Farnsworth,Philo-Farnsworth,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Pierre Bourdieu,Pierre-Bourdieu,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Pierre de Fermat,Fermat-Pierre de,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Quentin Tarantino,Quentin-Tarantino,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rabindranath Tagore,Tagore-Rabindranath,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rachel Carson,Carson-Rachel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ralph Waldo Emerson,Emerson-Ralph Waldo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ray Kurzweil,Ray-Kurzweil,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Reed Hastings,Reed-Hastings,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rembrandt,Rembrandt van Rijn,Claude;DeepSeek,merged,curated alias,high,surname added
+René Descartes,Descartes-René,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+René Descartes,Rene Descartes,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+René Descartes,René-Descartes,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Dawkins,Dawkins-Richard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Dawkins,Richard-Dawkins,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Feynman,Feynman-Richard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Feynman,Richard-Feynman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Stallman,Richard-Stallman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Richard Wagner,Richard-Wagner,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ridley Scott,Ridley-Scott,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rita Levi-Montalcini,Rita-Levi-Montalcini,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Roald Amundsen,Roald-Amundsen,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Aumann,Robert-Aumann,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Burns Woodward,Woodward-Robert Burns,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Frost,Frost-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Frost,Robert-Frost,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Goddard,Goddard-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Goddard,Robert-Goddard,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Kahn,Bob Kahn,DeepSeek,merged,curated alias,high,nickname vs given name (both computer science; internet co-inventor)
+Robert Koch,Koch-Robert,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Robert Noyce,Robert-Noyce,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Roger Penrose,Penrose-Roger,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Roger Penrose,Roger-Penrose,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ron Rivest,Ron-Rivest,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rosalind Franklin,Franklin-Rosalind,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rosalind Franklin,Rosalind-Franklin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rudolf Clausius,Clausius-Rudolf,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Rudolf Diesel,Diesel-Rudolf,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ruth Bader Ginsburg,Ruth-Bader-Ginsburg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sadi Carnot,Carnot-Sadi,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sally Ride,Sally-Ride,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Salvador Dalí,Dalí-Salvador,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Salvador Dalí,Salvador Dali,DeepSeek,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Salvador Dalí,Salvador-Dali,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sam Cooke,Sam-Cooke,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Samuel Morse,Morse-Samuel,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Samuel Morse,Samuel-Morse,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sana'i,Sana-i,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sandra Day O'Connor,Sandra-Day-OConnor,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sandro Botticelli,Botticelli-Sandro,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Santiago Ramón y Cajal,Ramón y Cajal-Santiago,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Saul Kripke,Kripke-Saul,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Seamus Heaney,Heaney-Seamus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sean Carroll,Sean-Carroll,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sergei Eisenstein,Eisenstein-Sergei,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sergei Winogradsky,Winogradsky-Sergei,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sergey Brin,Sergey-Brin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Shafi Goldwasser,Shafi-Goldwasser,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Shing-Tung Yau,Yau-Shing-Tung,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Shinzo Abe,Shinzo-Abe,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Shirin Ebadi,Ebadi-Shirin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Siddhartha Gautama,Buddha,Claude,merged,curated alias,high,title vs personal name of the same founder
+Siddhartha Gautama,Siddhartha Gautama-Buddha,Gemini,merged,curated alias,high,name plus title in one string
+Sigmund Freud,Freud-Sigmund,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sigmund Freud,Sigmund-Freud,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Silvio Micali,Silvio-Micali,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Simone de Beauvoir,De Beauvoir-Simone,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Simone de Beauvoir,Simone-de-Beauvoir,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sofya Kovalevskaya,Sofia Kovalevskaya,Grok,merged,curated alias,high,transliteration variant
+Sonia Sotomayor,Sonia-Sotomayor,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sophie Germain,Germain-Sophie,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Søren Kierkegaard,Kierkegaard-Søren,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Srinivasa Ramanujan,Ramanujan-Srinivasa,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Srinivasa Ramanujan,Srinivasa-Ramanujan,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stanley Kubrick,Stanley-Kubrick,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Breyer,Stephen-Breyer,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Hawking,Hawking-Stephen,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Hawking,Stephen-Hawking,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Jay Gould,Gould-Stephen Jay,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Smale,Stephen-Smale,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Stephen Sondheim,Stephen-Sondheim,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Steve Jobs,Jobs-Steve,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Steve Jobs,Steve-Jobs,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Steven Spielberg,Steven-Spielberg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Steven Weinberg,Steven-Weinberg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Subrahmanyan Chandrasekhar,Chandrasekhar-Subrahmanyan,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Subrahmanyan Chandrasekhar,Subrahmanyan-Chandrasekhar,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Sun Tzu,Sun-Tzu,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+T.S. Eliot,Eliot-T-S,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+T.S. Eliot,T-S Eliot,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tenzin Gyatso (14th Dalai Lama),Gyatso-Tenzin-Dalai Lama,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tenzin Gyatso (14th Dalai Lama),Tenzin Gyatso-Dalai Lama,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Terence Tao,Tao-Terence,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Terence Tao,Terence-Tao,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+The Notorious B.I.G.,The-Notorious-BIG,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Theodore Roosevelt,Theodore-Roosevelt,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Theodore von Kármán,Von Kármán-Theodore,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Theodosius Dobzhansky,Dobzhansky-Theodosius,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas Aquinas,Thomas-Aquinas,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas Edison,Edison-Thomas,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas Edison,Thomas-Edison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas Jefferson,Thomas-Jefferson,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas Kuhn,Kuhn-Thomas,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thomas More,More-Thomas,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Thurgood Marshall,Thurgood-Marshall,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tim Berners-Lee,Berners-Lee-Tim,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tim Berners-Lee,Tim-Berners-Lee,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Toni Morrison,Morrison-Toni,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Toni Morrison,Toni-Morrison,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Travis Kalanick,Travis-Kalanick,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tu Youyou,Tu-Youyou,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tu Youyou,Youyou Tu,Grok,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Tupac Shakur,Tupac-Shakur,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vaclav Havel,Havel-Vaclav,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Valentina Tereshkova,Valentina-Tereshkova,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vannevar Bush,Bush-Vannevar,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vaslav Nijinsky,Nijinsky-Vaslav,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vera Rubin,Rubin-Vera,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vesto Slipher,Slipher-Vesto,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vilfredo Pareto,Pareto-Vilfredo,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vilfredo Pareto,Vilfredo-Pareto,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vincent van Gogh,Van Gogh-Vincent,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vincent van Gogh,Vincent-van-Gogh,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vint Cerf,Vint-Cerf,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Virginia Woolf,Virginia-Woolf,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Virginia Woolf,Woolf-Virginia,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Vladimir Putin,Vladimir-Putin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.B. Yeats,W-B Yeats,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.B. Yeats,Yeats-W-B,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.E.B. Du Bois,W-E-B-Du-Bois,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.H. Auden,Auden-W-H,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.H. Auden,W-H Auden,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.V.O. Quine,Quine-W-V-O,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+W.V.O. Quine,W-V-O Quine,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Walt Whitman,Walt-Whitman,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Walt Whitman,Whitman-Walt,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Walter Alvarez,Alvarez-Walter,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wassily Kandinsky,Kandinsky-Wassily,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Werner Heisenberg,Heisenberg-Werner,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Werner Heisenberg,Werner-Heisenberg,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wernher von Braun,Von Braun-Wernher,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wernher von Braun,Wernher-von-Braun,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Whitfield Diffie,Whitfield-Diffie,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Whitney Houston,Whitney-Houston,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Whitney Wolfe Herd,Whitney-Wolfe-Herd,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wilbur Wright,Wright Brothers - Wilbur Wright,Claude,merged,format,high,differs only in spacing/hyphens/accents/word order/initials; compound entry split on ' - ' (other part: 'Wright Brothers')
+Wilbur Wright,Wright-Wilbur,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wilder Penfield,Penfield-Wilder,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wilhelm Wundt,Wilhelm-Wundt,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Willard Libby,Libby-Willard,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+William Harvey,Harvey-William,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+William Shakespeare,Shakespeare-William,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+William Shakespeare,William-Shakespeare,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+William Thomson Lord Kelvin,Thomson-William-Lord Kelvin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+William Thomson Lord Kelvin,William Thomson-Lord Kelvin,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Winston Churchill,Winston-Churchill,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wisława Szymborska,Szymborska-Wisława,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wole Soyinka,Soyinka-Wole,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wolfgang Amadeus Mozart,Mozart-Wolfgang Amadeus,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wolfgang Amadeus Mozart,Wolfgang-Amadeus-Mozart,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Wu Cheng'en,Cheng'en-Wu,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Xi Jinping,Xi-Jinping,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Yann LeCun,Yann-LeCun,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Yoshua Bengio,Yoshua-Bengio,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Yuri Gagarin,Yuri-Gagarin,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Yuri Manin,Manin-Yuri,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Zheng He,He-Zheng,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Zheng He,Zheng-He,GPT,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Zora Neale Hurston,Hurston-Zora Neale,Gemini,merged,format,high,differs only in spacing/hyphens/accents/word order/initials
+Ada Yonath,Ada Yonath | Yonath-Ada,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Adam Smith,Adam Smith | Smith-Adam,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Akira Kurosawa,Akira Kurosawa | Kurosawa-Akira,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Akira Yoshino,Akira Yoshino | Akira Yoshino,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Al-Biruni,Al-Biruni | Abu Rayhan al-Biruni,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Al-Farabi,Al-Farabi | Al-Farabi,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Al-Ghazali,Al-Ghazali | Al-Ghazali,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Al-Khwarizmi,Al-Khwarizmi | Al-Khwarizmi,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Al-Khwarizmi,Al-Khwarizmi | Muhammad ibn Musa al-Khwarizmi,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Al-Razi,Al-Razi | Razi,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Alan Turing,Alan Turing | Turing-Alan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Albert Einstein,Albert Einstein | Albert Einstein,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Albert Einstein,Albert Einstein | Einstein-Albert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Albert Sabin,Albert Sabin | Sabin-Albert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alexander Fleming,Alexander Fleming | Fleming-Alexander,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alexander Graham Bell,Alexander Graham Bell | Bell-Alexander Graham,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alexander Grothendieck,Alexander Grothendieck | Grothendieck-Alexander,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alexander Koyre,Alexander Koyre | Alexander Koyre,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Alexander von Humboldt,Humboldt-Alexander von | Alexander von Humboldt,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alfred Hitchcock,Alfred Hitchcock | Hitchcock-Alfred,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alfred North Whitehead,Alfred North Whitehead | Alfred North Whitehead,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Alfred North Whitehead,Alfred North Whitehead | Whitehead-Alfred North,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Alfred Wegener,Alfred Wegener | Wegener-Alfred,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Andrea Palladio,Andrea Palladio | Palladio-Andrea,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Andreas Vesalius,Andreas Vesalius | Vesalius-Andreas,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Andrei Kolmogorov,Andrei Kolmogorov | Kolmogorov-Andrei,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Andrei Sakharov,Andrei Sakharov | Sakharov-Andrei,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Anthony Giddens,Anthony Giddens | Anthony Giddens | Anthony Giddens,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Antoine Lavoisier,Antoine Lavoisier | Lavoisier-Antoine,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Archimedes,Archimedes | Archimedes,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Aristotle,Aristotle | Aristotle,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Arnold Schoenberg,Arnold Schoenberg | Schoenberg-Arnold,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Arthur Schopenhauer,Arthur Schopenhauer | Schopenhauer-Arthur,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Aung San Suu Kyi,Aung San Suu Kyi | Suu Kyi-Aung San,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ayn Rand,Ayn Rand | Rand-Ayn,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+B.F. Skinner,B.F. Skinner | B.F. Skinner,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Barbara McClintock,Barbara McClintock | McClintock-Barbara,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Baruch Spinoza,Baruch Spinoza | Baruch Spinoza,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Baruch Spinoza,Baruch Spinoza | Benedict de Spinoza,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Baruch Spinoza,Baruch Spinoza | Spinoza-Baruch,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Basho,Basho | Basho,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Benjamin Franklin,Benjamin Franklin | Franklin-Benjamin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Bernhard Riemann,Bernhard Riemann | Riemann-Bernhard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Bertrand Russell,Bertrand Russell | Russell-Bertrand,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Bill Gates,Bill Gates | Gates-Bill,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Blaise Pascal,Blaise Pascal | Blaise Pascal | Pascal-Blaise | Pascal-Blaise,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 4 times
+Bruno Latour,Bruno Latour | Bruno Latour | Bruno Latour,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Buckminster Fuller,Buckminster Fuller | Fuller-Buckminster,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Byung-Chul Han,Byung-Chul Han | Byung-Chul Han,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Cao Xueqin,Cao Xueqin | Xueqin-Cao,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Carl Friedrich Gauss,Carl Friedrich Gauss | Gauss-Carl Friedrich,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Carl Jung,Carl Jung | Carl Jung,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Carl Jung,Carl Jung | Jung-Carl,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Carl Linnaeus,Linnaeus-Carl | Linnaeus-Carl,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Caroline Herschel,Caroline Herschel | Caroline Lucretia Herschel,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Charaka,Charaka | Charaka,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Charles Darwin,Charles Darwin | Darwin-Charles,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Charles Lyell,Charles Lyell | Lyell-Charles,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Charles Sherrington,Charles Sherrington | Sherrington-Charles,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Charles Taylor,Charles Taylor | Charles Taylor,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Charles Tilly,Charles Tilly | Charles Tilly | Charles Tilly,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Charlie Chaplin,Charlie Chaplin | Chaplin-Charlie,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Chien-Shiung Wu,Chien-Shiung Wu | Wu-Chien-Shiung,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Chien-Shiung Wu,Chien-Shiung Wu | Chien-Shiung Wu,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Chinua Achebe,Chinua Achebe | Achebe-Chinua,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Christiaan Huygens,Christiaan Huygens | Huygens-Christiaan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Clarice Lispector,Clarice Lispector | Lispector-Clarice,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Claude Debussy,Claude Debussy | Debussy-Claude,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Claude Monet,Claude Monet | Monet-Claude,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Claude Shannon,Claude Shannon | Shannon-Claude,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Clifford Geertz,Clifford Geertz | Clifford Geertz,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Confucius,Confucius | Confucius,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Cyrus McCormick,Cyrus McCormick | McCormick-Cyrus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Czesław Miłosz,Czesław Miłosz | Miłosz-Czesław,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Dante Alighieri,Dante Alighieri | Dante Alighieri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+David Ben-Gurion,Ben-Gurion | David-Ben-Gurion,GPT,same-model duplicate counted once,distinct-model count,high,GPT lists this person 2 times
+David Hilbert,David Hilbert | David Hilbert,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+David Hilbert,David Hilbert | Hilbert-David,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+David Hume,David Hume | David Hume,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+David Hume,David Hume | Hume-David,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+David Lindberg,David Lindberg | David Lindberg,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+David Noble,David Noble | David Noble,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Derek Parfit,Derek Parfit | Derek Parfit,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Derek Walcott,Derek Walcott | Walcott-Derek,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Desmond Tutu,Desmond Tutu | Tutu-Desmond,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Dmitri Mendeleev,Dmitri Mendeleev | Dmitri Mendeleev,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Dmitri Mendeleev,Dmitri Mendeleev | Mendeleev-Dmitri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Donald Knuth,Donald Knuth | Knuth-Donald,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Donald MacKenzie,Donald MacKenzie | Donald MacKenzie,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Donatello,Donatello | Donatello,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Donna Haraway,Donna Haraway | Donna Haraway | Donna Haraway | Donna Haraway | Donna Haraway,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 5 times
+Dorothy Hodgkin,Dorothy Hodgkin | Dorothy Crowfoot Hodgkin,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Dorothy Hodgkin,Dorothy Hodgkin | Hodgkin-Dorothy,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Dorothy Hodgkin,Dorothy Hodgkin | Dorothy Crowfoot Hodgkin,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Du Fu,Du Fu | Fu-Du,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+E. E. Evans-Pritchard,E.E. Evans-Pritchard | E. E. Evans-Pritchard,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+E.E. Cummings,e-e cummings | Cummings-e-e,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Edith Stein,Edith Stein | Stein-Edith,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Edmund Husserl,Edmund Husserl | Husserl-Edmund,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Edmund Leach,Edmund Leach | Edmund Leach,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Edward Gibbon,Edward Gibbon | Edward Gibbon,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Edward Grant,Edward Grant | Edward Grant,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Edward Jenner,Edward Jenner | Edward Jenner,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Edward O. Wilson,Edward O- Wilson | Wilson-Edward O-,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Edward Witten,Edward Witten | Witten-Edward,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Edwin Hubble,Edwin Hubble | Hubble-Edwin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+El Greco,El Greco | El Greco,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Eli Whitney,Eli Whitney | Whitney-Eli,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Elias Howe,Elias Howe | Howe-Elias,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Elias James Corey,Elias James Corey | Corey-Elias James,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Elie Wiesel,Elie Wiesel | Wiesel-Elie,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Elinor Ostrom,Elinor Ostrom | Ostrom-Elinor,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Elizabeth Anscombe,Elizabeth Anscombe | G.E.M. Anscombe,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Elon Musk,Elon-Musk | Elon-Musk,GPT,same-model duplicate counted once,distinct-model count,high,GPT lists this person 2 times
+Emily Dickinson,Emily Dickinson | Dickinson-Emily,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Emmanuel Le Roy Ladurie,Emmanuel Le Roy Ladurie | Emmanuel Le Roy Ladurie,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Emmanuelle Charpentier,Emmanuelle Charpentier | Emmanuelle Charpentier,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Emmy Noether,Emmy Noether | Emmy Amalie Noether,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Emmy Noether,Emmy Noether | Noether-Emmy,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Enrico Fermi,Enrico Fermi | Fermi-Enrico,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Eric Kandel,Eric Kandel | Kandel-Eric,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Erwin Schrödinger,Erwin Schrödinger | Schrödinger-Erwin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Euclid,Euclid | Euclid,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Évariste Galois,Évariste Galois | Galois-Évariste,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Evelyn Fox Keller,Evelyn Fox Keller | Evelyn Fox Keller,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Ezra Pound,Ezra Pound | Pound-Ezra,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Farid ud-Din Attar,Farid ud-Din Attar | Attar-Farid ud-Din,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ferdinand de Saussure,Ferdinand de Saussure | Ferdinand de Saussure,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Fernand Braudel,Fernand Braudel | Fernand Braudel | Fernand Braudel,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Filippo Brunelleschi,Filippo Brunelleschi | Brunelleschi-Filippo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Frances Arnold,Frances Arnold | Frances Arnold,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Francis Bacon,Francis Bacon | Francis Bacon | Bacon-Francis | Bacon-Francis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 4 times
+Francis Crick,Francis Crick | Crick-Francis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+François Jacob,François Jacob | Jacob-François,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Frank Lloyd Wright,Frank Lloyd Wright | Wright-Frank Lloyd,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Frank Whittle,Frank Whittle | Whittle-Frank,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Franz Kafka,Franz Kafka | Kafka-Franz,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Fredrik Barth,Fredrik Barth | Fredrik Barth,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Frida Kahlo,Frida Kahlo | Kahlo-Frida,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Friedrich Nietzsche,Friedrich Nietzsche | Nietzsche-Friedrich,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Fritz Haber,Fritz Haber | Haber-Fritz,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Fyodor Dostoevsky,Fyodor Dostoevsky | Dostoevsky-Fyodor,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Gabriel García Márquez,Gabriel García Márquez | García Márquez-Gabriel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Gabriel Marcel,Gabriel Marcell | Marcell-Gabriel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Gabriela Mistral,Gabriel Mistral | Mistral-Gabriel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Galen,Galen | Galen,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Galileo Galilei,Galileo Galilei | Galilei-Galileo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Geoffrey Chaucer,Geoffrey Chaucer | Chaucer-Geoffrey,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Georg Wilhelm Friedrich Hegel,G-W-F Hegel | Hegel-G-W-F,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+George Balanchine,George Balanchine | Balanchine-George,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+George Boole,George Boole | Boole-George,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+George Pólya,George Pólya | Pólya-George,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+George Washington Carver,George Washington Carver | Carver-George Washington,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Georges Duby,Georges Duby | Georges Duby,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Georgia O'Keeffe,Georgia O-Keeffe | O-Keeffe-Georgia,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Giovanni Boccaccio,Giovanni Boccaccio | Boccaccio-Giovanni,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Gottfried Wilhelm Leibniz,Gottfried Wilhelm Leibniz | Leibniz-Gottfried Wilhelm,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Grace Hopper,Grace Hopper | Hopper-Grace,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Gregor Mendel,Gregor Mendel | Mendel-Gregor,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Guglielmo Marconi,Guglielmo Marconi | Marconi-Guglielmo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hafez,Hafez | Hafez,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hannah Arendt,Hannah Arendt | Hannah Arendt | Arendt-Hannah | Arendt-Hannah,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 4 times
+Hans Bethe,Hans Bethe | Bethe-Hans,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Harriet Tubman,Harriet Tubman | Tubman-Harriet,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hedy Lamarr,Hedy Lamarr | Lamarr-Hedy,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Helen Keller,Helen Keller | Keller-Helen,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Helen Longino,Helen Longino | Helen Longino,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Henri Matisse,Henri Matisse | Matisse-Henri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Henri Poincaré,Henri Poincaré | Poincaré-Henri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Henrietta Swan Leavitt,Henrietta Swan Leavitt | Leavitt-Henrietta Swan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Henry David Thoreau,Henry David Thoreau | Thoreau-Henry David,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hieronymus Bosch,Hieronymus Bosch | Bosch-Hieronymus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hilary Putnam,Hilary Putnam | Putnam-Hilary,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hippocrates,Hippocrates | Hippocrates,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Homer,Homer | Homer,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Hua Tuo,Hua Tuo | Hua Tuo,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Ibn al-Haytham (Alhazen),Ibn al-Haytham | Alhazen - Ibn al-Haytham,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Ibn al-Haytham (Alhazen),Alhazen | Ibn al-Haytham,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Ibn al-Haytham (Alhazen),Alhazen | Alhazen Ibn al-Haytham,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Ibn Battuta,Ibn Battuta | Battuta-Ibn,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ibn Khaldun,Ibn Khaldun | Ibn Khaldun,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ibn Rushd (Averroes),Averroes | Ibn Rushd - Averroes,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Ibn Rushd (Averroes),Averroes | Ibn Rushd | Averroes | Averroes | Ibn Rushd | Averroes,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 6 times
+Ibn Sina (Avicenna),Avicenna | Ibn Sina - Avicenna,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Ibn Sina (Avicenna),Ibn Sina | Avicenna | Ibn Sina,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Ibn Sina (Avicenna),Avicenna | Ibn Sina | Avicenna | Sina-Ibn,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 4 times
+Ibn Sina (Avicenna),Avicenna | Ibn Sina,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Igor Stravinsky,Igor Stravinsky | Stravinsky-Igor,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Immanuel Kant,Immanuel Kant | Kant-Immanuel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Immanuel Wallerstein,Immanuel Wallerstein | Immanuel Wallerstein | Immanuel Wallerstein,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Imre Lakatos,Imre Lakatos | Imre Lakatos | Imre Lakatos,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Imre Lakatos,Imre Lakatos | Lakatos-Imre,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Isaac Newton,Isaac Newton | Newton-Isaac,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Isabella Bird,Isabella Bird | Bird-Isabella,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Isadora Duncan,Isadora Duncan | Duncan-Isadora,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ivan Pavlov,Ivan Pavlov | Pavlov-Ivan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+J. Robert Oppenheimer,Oppenheimer-J-Robert | Oppenheimer-J-Robert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+J. Tuzo Wilson,J- Tuzo Wilson | Wilson-J- Tuzo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+J.M.W. Turner,J-M-W Turner | Turner-J-M-W,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jacob Burckhardt,Jacob Burckhardt | Jacob Burckhardt,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Jacques Derrida,Jacques Derrida | Derrida-Jacques,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jacques Le Goff,Jacques Le Goff | Jacques Le Goff,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Jacques Monod,Jacques Monod | Monod-Jacques,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+James Baldwin,James Baldwin | Baldwin-James,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+James Clerk Maxwell,James Clerk Maxwell | James Clerk Maxwell,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+James Clerk Maxwell,James Clerk Maxwell | Maxwell-James Clerk,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+James Coleman,James Coleman | James Coleman,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+James Hutton,James Hutton | Hutton-James,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+James Watson,James Watson | Watson-James,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jami,Jami | Jami,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jan van Eyck,Jan van Eyck | Van Eyck-Jan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jane Austen,Jane Austen | Austen-Jane,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jane Goodall,Jane Goodall | Goodall-Jane,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jean Piaget,Jean Piaget | Jean Piaget,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Jean-Jacques Rousseau,Jean-Jacques Rousseau | Rousseau-Jean-Jacques,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jennifer Doudna,Jennifer Doudna | Jennifer Doudna,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Jocelyn Bell Burnell,Jocelyn Bell Burnell | Burnell-Jocelyn Bell,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Johann Sebastian Bach,Johann Sebastian Bach | Bach-Johann Sebastian,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Johann Wolfgang von Goethe,Goethe-Johann Wolfgang von | Goethe-Johann Wolfgang von,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Johannes Gutenberg,Gutenberg-Johannes | Gutenberg-Johannes,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Johannes Kepler,Johannes Kepler | Johannes Kepler,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Johannes Kepler,Johannes Kepler | Kepler-Johannes,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+John B. Goodenough,John B. Goodenough | John B. Goodenough,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+John Bardeen,John Bardeen | John Bardeen,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+John Dewey,John Dewey | Dewey-John,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+John Dupré,John Dupré | John Dupré,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+John Hedley Brooke,John Hedley Brooke | John Hedley Brooke,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+John Locke,John Locke | Locke-John,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+John Maynard Keynes,John Maynard Keynes | Keynes-John Maynard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+John McCarthy,John McCarthy | John McCarthy,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+John von Neumann,John von Neumann | Von Neumann-John,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jonas Salk,Jonas Salk | Salk-Jonas,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jorge Amado,Jorge Amado | Amado-Jorge,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jorge Luis Borges,Jorge Luis Borges | Borges-Jorge Luis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Joseph Lister,Joseph Lister | Joseph Lister,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Joseph-Louis Lagrange,Joseph-Louis Lagrange | Lagrange-Joseph-Louis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Judith Butler,Judith Butler | Butler-Judith,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Jurgen Habermas,Jurgen Habermas | Jurgen Habermas | Jurgen Habermas | Jurgen Habermas,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 4 times
+Kahlil Gibran,Kahlil Gibran | Gibran-Kahlil,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Kalidasa,Kalidasa | Kalidasa,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Karen Barad,Karen Barad | Karen Barad | Karen Barad,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Karl Benz,Karl Benz | Benz-Karl,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Karl Marx,Karl Marx | Karl Marx,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Karl Marx,Karl Marx | Karl Marx,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Karl Marx,Karl Marx | Marx-Karl,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Karl Popper,Karl Popper | Karl Popper,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Karl Popper,Karl Popper | Popper-Karl,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Katharine Park,Katharine Park | Katharine Park,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Konstantin Tsiolkovsky,Konstantin Tsiolkovsky | Tsiolkovsky-Konstantin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Kurt Gödel,Kurt Gödel | Gödel-Kurt,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Langston Hughes,Langston Hughes | Hughes-Langston,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Lawrence Kohlberg,Lawrence Kohlberg | Lawrence Kohlberg,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Le Corbusier,Le Corbusier | Le Corbusier,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Leo Tolstoy,Leo Tolstoy | Tolstoy-Leo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Leon Battista Alberti,Leon Battista Alberti | Alberti-Leon Battista,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Léon Walras,Léon Walras | Walras-Léon,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Leonardo da Vinci,Leonardo da Vinci | Leonardo da Vinci | Da Vinci-Leonardo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 3 times
+Leonhard Euler,Leonhard Euler | Euler-Leonhard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Leopold von Ranke,Leopold von Ranke | Leopold von Ranke,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Li Bai,Li Po | Po-Li,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Linus Pauling,Linus Pauling | Linus Pauling,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Linus Pauling,Linus Pauling | Pauling-Linus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Linus Torvalds,Linus Torvalds | Torvalds-Linus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Lise Meitner,Lise Meitner | Lise Meitner,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Lise Meitner,Lise Meitner | Meitner-Lise,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Londa Schiebinger,Londa Schiebinger | Londa Schiebinger,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Lorraine Daston,Lorraine Daston | Lorraine Daston,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Louis Leakey,Louis Leakey | Leakey-Louis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Louis Pasteur,Louis Pasteur | Pasteur-Louis,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Lu Xun,Lu Xun | Xun-Lu,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Lucien Febvre,Lucien Febvre | Lucien Febvre,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Ludwig Mies van der Rohe,Ludwig Mies van der Rohe | Mies van der Rohe-Ludwig,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ludwig van Beethoven,Ludwig van Beethoven | Beethoven-Ludwig van,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ludwig Wittgenstein,Ludwig Wittgenstein | Wittgenstein-Ludwig,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+M. Stanley Whittingham,M. Stanley Whittingham | M. Stanley Whittingham,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Mahatma Gandhi,Mahatma Gandhi | Gandhi-Mahatma,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Maimonides,Maimonides | Maimonides | Moses Maimonides,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Maimonides,Maimonides | Maimonides,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Manuel Castells,Manuel Castells | Manuel Castells,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Marc Bloch,Marc Bloch | Marc Bloch,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Marcel Proust,Marcel Proust | Proust-Marcel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Marco Polo,Marco Polo | Polo-Marco,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Margaret Rossiter,Margaret Rossiter | Margaret Rossiter,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Maria Gaetana Agnesi,Maria Gaetana Agnesi | Agnesi-Maria Gaetana,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Maria Montessori,Maria Montessori | Montessori-Maria,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Marie Curie,Marie Curie | Curie-Marie,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Marie Tharp,Marie Tharp | Tharp-Marie,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Mario Biagioli,Mario Biagioli | Mario Biagioli,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Martha Graham,Martha Graham | Graham-Martha,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Martha Nussbaum,Martha Nussbaum | Martha Nussbaum,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Marthinus Beijerinck,Marthinus Beijerinck | Beijerinck-Marthinus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Martin Heidegger,Martin Heidegger | Heidegger-Martin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Martin Luther King Jr.,Martin Luther King Jr- | King Jr-Martin Luther,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Marvin Minsky,Marvin Minsky | Marvin Minsky,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Mary Cartwright,Mary Cartwright | Cartwright-Mary,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Mary Douglas,Mary Douglas | Mary Douglas | Mary Douglas,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Mary Leakey,Mary Leakey | Leakey-Mary,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Mary Shelley,Mary Shelley | Shelley-Mary,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Max Delbrück,Max Delbrück | Delbrück-Max,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Max Planck,Max Planck | Planck-Max,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Michael Faraday,Michael Faraday | Faraday-Michael,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Michael Polanyi,Michael Polanyi | Michael Polanyi | Michael Polanyi,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Michel Foucault,Michel Foucault | Michel Foucault | Michel Foucault | Michel Foucault,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 4 times
+Michel Foucault,Michel Foucault | Foucault-Michel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Michelangelo,Michelangelo | Michelangelo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Miguel de Cervantes,Miguel de Cervantes | Cervantes-Miguel de,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Milton Friedman,Milton Friedman | Friedman-Milton,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Murasaki Shikibu,Lady Murasaki Shikibu | Shikibu-Lady Murasaki,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Murray Gell-Mann,Gell-Mann-Murray | Gell-Mann-Murray,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Naguib Mahfouz,Naguib Mahfouz | Mahfouz-Naguib,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Nancy Cartwright,Nancy Cartwright | Nancy Cartwright,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Nelson Mandela,Nelson Mandela | Mandela-Nelson,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Nelson Mandela,Nelson-Mandela | Nelson-Mandela,GPT,same-model duplicate counted once,distinct-model count,high,GPT lists this person 2 times
+Niccolò Machiavelli,Niccolò Machiavelli | Machiavelli-Niccolò,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Nicolaus Copernicus,Copernicus-Nicolaus | Copernicus-Nicolaus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Niels Bohr,Niels Bohr | Bohr-Niels,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Niklas Luhmann,Niklas Luhmann | Niklas Luhmann,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Nikola Tesla,Nikola Tesla | Tesla-Nikola,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Nikolaus Otto,Nikolaus Otto | Otto-Nikolaus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Nizami Ganjavi,Nizami Ganjavi | Ganjavi-Nizami,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Noam Chomsky,Noam Chomsky | Noam Chomsky,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Noam Chomsky,Noam Chomsky | Chomsky-Noam,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Octavio Paz,Octavio Paz | Octavio Paz | Paz-Octavio | Paz-Octavio,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 4 times
+Olga Ladyzhenskaya,Olga Ladyzhenskaya | Ladyzhenskaya-Olga,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Omar Khayyam,Omar Khayyam | Khayyam-Omar,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Orson Welles,Orson Welles | Welles-Orson,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Orville Wright,Orville Wright | Wright-Orville,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Pablo Neruda,Pablo Neruda | Neruda-Pablo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Pablo Picasso,Pablo Picasso | Picasso-Pablo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Pamela Long,Pamela Long | Pamela Long,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Paul Cézanne,Paul Cézanne | Cézanne-Paul,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Paul Dirac,Paul Dirac | Dirac-Paul,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Paul Edwards,Paul Edwards | Paul Edwards,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Paul Feyerabend,Paul Feyerabend | Paul Feyerabend | Paul Feyerabend | Paul Feyerabend,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 4 times
+Paul Samuelson,Paul Samuelson | Samuelson-Paul,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Paulo Freire,Paulo Freire | Freire-Paulo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Peter Debye,Peter Debye | Peter Debye,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Peter Galison,Peter Galison | Peter Galison,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Peter Singer,Peter Singer | Peter Singer,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Philip Kitcher,Philip Kitcher | Philip Kitcher,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Pierre Bourdieu,Pierre Bourdieu | Pierre Bourdieu | Pierre Bourdieu | Pierre Bourdieu,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 4 times
+Pierre de Fermat,Pierre de Fermat | Fermat-Pierre de,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Pierre Duhem,Pierre Duhem | Pierre Duhem,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Plato,Plato | Plato,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+R.G. Collingwood,R.G. Collingwood | R.G. Collingwood,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Rabindranath Tagore,Rabindranath Tagore | Tagore-Rabindranath,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Rachel Carson,Rachel Carson | Carson-Rachel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ralph Waldo Emerson,Ralph Waldo Emerson | Emerson-Ralph Waldo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Randall Collins,Randall Collins | Randall Collins,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Raphael,Raphael | Raphael,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Rembrandt,Rembrandt | Rembrandt,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+René Descartes,René Descartes | Descartes-René,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Richard Dawkins,Richard Dawkins | Dawkins-Richard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Richard Feynman,Richard Feynman | Richard Feynman,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Richard Feynman,Richard Feynman | Feynman-Richard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Robert Burns Woodward,Robert Burns Woodward | Woodward-Robert Burns,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Robert Frost,Robert Frost | Frost-Robert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Robert Goddard,Robert Goddard | Goddard-Robert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Robert Koch,Robert Koch | Koch-Robert,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Robert Merton,Robert Merton | Robert Merton,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Robert Putnam,Robert Putnam | Robert Putnam,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Roger Penrose,Roger Penrose | Penrose-Roger,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ronald Numbers,Ronald Numbers | Ronald Numbers,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Rosalind Franklin,Rosalind Franklin | Rosalind Franklin,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Rosalind Franklin,Rosalind Franklin | Rosalind Franklin,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Rosalind Franklin,Rosalind Franklin | Franklin-Rosalind,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Rudolf Clausius,Rudolf Clausius | Clausius-Rudolf,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Rudolf Diesel,Rudolf Diesel | Diesel-Rudolf,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sadi Carnot,Sadi Carnot | Carnot-Sadi,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Salvador Dalí,Salvador Dalí | Dalí-Salvador,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Samuel Morse,Samuel Morse | Morse-Samuel,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sana'i,Sana-i | Sana-i,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sandra Harding,Sandra Harding | Sandra Harding,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Sandro Botticelli,Sandro Botticelli | Botticelli-Sandro,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Santiago Ramón y Cajal,Santiago Ramón y Cajal | Ramón y Cajal-Santiago,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Saul Kripke,Saul Kripke | Kripke-Saul,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Seamus Heaney,Seamus Heaney | Heaney-Seamus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sergei Eisenstein,Sergei Eisenstein | Eisenstein-Sergei,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sergei Winogradsky,Sergei Winogradsky | Winogradsky-Sergei,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Seymour Martin Lipset,Seymour Martin Lipset | Seymour Martin Lipset,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Shing-Tung Yau,Shing-Tung Yau | Yau-Shing-Tung,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Shirin Ebadi,Shirin Ebadi | Ebadi-Shirin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sigmund Freud,Sigmund Freud | Sigmund Freud,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Sigmund Freud,Sigmund Freud | Freud-Sigmund,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Simon Schaffer,Simon Schaffer | Simon Schaffer | Simon Schaffer,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Simone de Beauvoir,Simone de Beauvoir | Simone de Beauvoir,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Simone de Beauvoir,Simone de Beauvoir | De Beauvoir-Simone,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Slavoj Zizek,Slavoj Zizek | Slavoj Zizek,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Socrates,Socrates | Socrates,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sophie Germain,Sophie Germain | Germain-Sophie,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Søren Kierkegaard,Søren Kierkegaard | Kierkegaard-Søren,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Srinivasa Ramanujan,Srinivasa Ramanujan | Srinivasa Ramanujan,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Srinivasa Ramanujan,Srinivasa Ramanujan | Ramanujan-Srinivasa,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Stephen Hawking,Stephen Hawking | Hawking-Stephen,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Stephen Jay Gould,Stephen Jay Gould | Gould-Stephen Jay,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Steve Jobs,Steve Jobs | Jobs-Steve,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Steven Shapin,Steven Shapin | Steven Shapin | Steven Shapin,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Subrahmanyan Chandrasekhar,Subrahmanyan Chandrasekhar | Subrahmanyan Chandrasekhar,Claude,same-model duplicate counted once,distinct-model count,high,Claude lists this person 2 times
+Subrahmanyan Chandrasekhar,Subrahmanyan Chandrasekhar | Chandrasekhar-Subrahmanyan,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sun Tzu,Sun Tzu | Sun Tzu,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Sushruta,Sushruta | Sushruta,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+T.S. Eliot,T-S Eliot | Eliot-T-S,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Tenzin Gyatso (14th Dalai Lama),Tenzin Gyatso-Dalai Lama | Gyatso-Tenzin-Dalai Lama,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Terence Tao,Terence Tao | Tao-Terence,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Theda Skocpol,Theda Skocpol | Theda Skocpol | Theda Skocpol,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Theodore von Kármán,Theodore von Kármán | Von Kármán-Theodore,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Theodosius Dobzhansky,Theodosius Dobzhansky | Dobzhansky-Theodosius,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Thomas Edison,Thomas Edison | Edison-Thomas,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Thomas Hughes,Thomas Hughes | Thomas Hughes,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Thomas Kuhn,Thomas Kuhn | Thomas Kuhn | Thomas Kuhn | Thomas Kuhn,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 4 times
+Thomas Kuhn,Thomas Kuhn | Kuhn-Thomas,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Thomas More,Thomas More | More-Thomas,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Thomas Nagel,Thomas Nagel | Thomas Nagel,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Tim Berners-Lee,Tim Berners-Lee | Berners-Lee-Tim,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Tim Berners-Lee,Tim-Berners-Lee | Tim-Berners-Lee,GPT,same-model duplicate counted once,distinct-model count,high,GPT lists this person 2 times
+Tiruvalluvar,Tiruvalluvar | Tiruvalluvar,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Toni Morrison,Toni Morrison | Morrison-Toni,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Trevor Pinch,Trevor Pinch | Trevor Pinch,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Tu Youyou,Tu Youyou | Youyou Tu,Grok,same-model duplicate counted once,distinct-model count,high,Grok lists this person 2 times
+Vaclav Havel,Vaclav Havel | Havel-Vaclav,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Vannevar Bush,Vannevar Bush | Bush-Vannevar,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Vaslav Nijinsky,Vaslav Nijinsky | Nijinsky-Vaslav,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Vera Rubin,Vera Rubin | Rubin-Vera,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Vesto Slipher,Vesto Slipher | Slipher-Vesto,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Victor Turner,Victor Turner | Victor Turner | Victor Turner,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 3 times
+Vilfredo Pareto,Vilfredo Pareto | Pareto-Vilfredo,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Vincent van Gogh,Vincent van Gogh | Van Gogh-Vincent,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Virgil,Virgil | Virgil,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Virginia Woolf,Virginia Woolf | Woolf-Virginia,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+W.B. Yeats,W-B Yeats | Yeats-W-B,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+W.H. Auden,W-H Auden | Auden-W-H,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+W.V.O. Quine,W-V-O Quine | Quine-W-V-O,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Walt Whitman,Walt Whitman | Whitman-Walt,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Walter Alvarez,Walter Alvarez | Alvarez-Walter,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wassily Kandinsky,Wassily Kandinsky | Kandinsky-Wassily,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Werner Heisenberg,Werner Heisenberg | Heisenberg-Werner,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wernher von Braun,Wernher von Braun | Von Braun-Wernher,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wiebe Bijker,Wiebe Bijker | Wiebe Bijker,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+Wilbur Wright,Wilbur Wright | Wright-Wilbur,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wilder Penfield,Wilder Penfield | Penfield-Wilder,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Willard Libby,Willard Libby | Libby-Willard,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+William Harvey,William Harvey | William Harvey,DeepSeek,same-model duplicate counted once,distinct-model count,high,DeepSeek lists this person 2 times
+William Harvey,William Harvey | Harvey-William,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+William Shakespeare,William Shakespeare | Shakespeare-William,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+William Thomson Lord Kelvin,William Thomson-Lord Kelvin | Thomson-William-Lord Kelvin,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wisława Szymborska,Wisława Szymborska | Szymborska-Wisława,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wole Soyinka,Wole Soyinka | Soyinka-Wole,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wolfgang Amadeus Mozart,Wolfgang Amadeus Mozart | Mozart-Wolfgang Amadeus,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Wu Cheng'en,Wu Cheng'en | Cheng'en-Wu,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Yuri Manin,Yuri Manin | Manin-Yuri,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Zheng He,Zheng He | He-Zheng,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Zora Neale Hurston,Zora Neale Hurston | Hurston-Zora Neale,Gemini,same-model duplicate counted once,distinct-model count,high,Gemini lists this person 2 times
+Ken Thompson,E.P. Thompson,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people
+Edward Said,Edward Sapir,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people
+Marc Bloch,Maurice Bloch,,NOT merged - review suggested,similar spelling,similarity 0.87,automatic scan; left as two people
