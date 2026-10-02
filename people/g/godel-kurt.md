@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: primary_system CLASS_THEISM at 0.5 -> BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI named as candidates in a note (no scholar places him in a theist code; the simple or immutable God test is not shown). mid_basin unchanged (true at 0.7; it uses only A and B). Lutheran baptism (nominal_affiliations) 0.5 -> 0.7, one reliable source; the same Todorov fact in family_religion, religious_heritage_by_birth and baptism_or_initiation also 0.5 -> 0.7. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the letters already cited (order 'in everything', S6 1961; everything has a cause, S7; the same psychic capacities in every human, S6 1952). No petition, miracle or favour for a group appears in what was read, but the letters are few, so 0.5 with a gap note. Religions versus religion (Wang) is a community question, which P7 sends to C. No new sources. mid_basin unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit run 3 (#47): the Todorov quotation (S7, note 14) now keeps the source's closing parenthesis, '(without the support of faith ...) to apprehend', in the statement and in the D_authority rationale; checked against the arXiv text. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -169,7 +170,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S7, locator: "Sect. 3, note 14 (letter of October 1961; notebook 'Fehler in der Bibel')"}, {source: S1, locator: "§3.1 ('My Philosophical Viewpoint')"}, {source: S6, locator: "letters of 23 July 1961 and 8 May 1958"}]
       how_known: "Private letters and notebooks, consistent with each other, so 0.7."
-      rationale: "Leans to reason. The theological world view may be grasped 'purely rationally (without the support of faith' (S7). There is 'a scientific (exact) philosophy and theology' (S1). He kept a notebook on errors in the Bible (S7) and had 'very little trust in the love of truth of papal nuncii' (S6, 1958). The stated limited exception: he treats the Bible's prophecy of the end of the world as something science confirms, so scripture keeps a place as a witness that reason can check (S6, 1961). So 3."
+      rationale: "Leans to reason. The theological world view may be grasped 'purely rationally (without the support of faith ...)' (S7). There is 'a scientific (exact) philosophy and theology' (S1). He kept a notebook on errors in the Bible (S7) and had 'very little trust in the love of truth of papal nuncii' (S6, 1958). The stated limited exception: he treats the Bible's prophecy of the end of the world as something science confirms, so scripture keeps a place as a witness that reason can check (S6, 1961). So 3."
     E_scope:
       value: 3
       basis: scholarly_reconstruction
@@ -215,7 +216,7 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
       note: "Reese/Budiansky translation."
-    - text: "already today it may be possible purely rationally (without the support of faith [...] to apprehend that the theological world view is thoroughly compatible with all known facts"
+    - text: "already today it may be possible purely rationally (without the support of faith ...) to apprehend that the theological world view is thoroughly compatible with all known facts"
       cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}]
       context: "Letter on the theological world view, which he defines in the same letter as 'the idea that the world and everything in it has a good and indubitable meaning'."
       axes: [D_authority]
