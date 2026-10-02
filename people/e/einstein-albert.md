@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Kaku) and MacTutor. Worldview from the 1929 cable to Rabbi Goldstein (JTA print), the 1930 essay 'Religion and Science' and the 1939/1941 'Science and Religion' (Ideas and Opinions transcription), and SEP 'Pantheism' §12. Coded PANT at 0.7 (AGNOS and ATHE named). A 4 (0.7), B 4 (1.0), C 4 (0.7), D 3 (0.7), E 4 (1.0). mid_basin false. Lane B and minor fields partly TODO. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145): D_authority 3 → 2 (both runs, finding #5): the 1939 address puts the highest ends under revelation and tradition and the 1941 paper limits science to what is, which is two domains under two authorities (§3 same pattern, as Planck and Galileo); named alternative 3. B_cause and E_scope certainty 1.0 → 0.7: the key sentences are in the third person, the reason C was already 0.7 (pattern check). Trailing and leading cuts marked with [...] (findings #16, #18; same fix to two more statements). Two statements added (1939 revelation sentence; 1941 'science can only ascertain what is'). mid_basin unchanged (false at 0.7). Not reviewed."}
 
 identity:
   id: einstein-albert
@@ -127,9 +128,9 @@ worldview:
     B_cause:
       value: 4
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S3, locator: "'Religion and Science' (1930); 'Science and Religion' part II (1941)"}, {source: S1, locator: "Top Questions ('He does not play dice', letter to Born, December 1926)"}]
-      how_known: "Two published essays eleven years apart, consistent with the 1926 letter to Born. The essays speak of 'the man who is thoroughly convinced' and 'for him' (the scientist), a figure Einstein plainly endorses."
+      how_known: "Two published essays eleven years apart, consistent with the 1926 letter to Born. Below the 1.0 ceiling for the same reason as C: the key sentences are put in the third person ('the man who is thoroughly convinced', 'for him'), which speaks for his own view only indirectly (§3 same pattern, lens audit batch 2)."
       rationale: "Scored on his account of nature (P6). At the law pole: such a man 'cannot for a moment entertain the idea of a being who interferes in the course of events' (S3, 1930); 'neither the rule of human nor the rule of divine will exists as an independent cause of natural events' (S3, 1941); 'there is no room left by the side of this ordered regularity for causes of a different nature' (S3, 1941). No exception is stated."
     C_ledger:
       value: 4
@@ -139,24 +140,24 @@ worldview:
       how_known: "Published essay and cable. Below the 1.0 ceiling because the key sentence is put in the third person (the man of cosmic religious feeling), which speaks for his view only indirectly."
       rationale: "At the impersonal pole: 'A God who rewards and punishes is inconceivable to him for the simple reason that a man's actions are determined by necessity, external and internal' (S3, 1930); not 'a God who concerns Himself with fates and actions of human beings' (S4). No afterlife judgement in what was read."
     D_authority:
-      value: 3
+      value: 2
       basis: written_profession
       certainty: 0.7
       cites: [{source: S3, locator: "'Science and Religion' parts I (1939) and II (1941)"}]
-      how_known: "Published essays; capped at 0.7 because a 2 is named below."
-      rationale: "Leans to reason. No revelation outranks observation: religion that claims 'the absolute truthfulness of all statements recorded in the Bible' intrudes on science, and the personal God is the 'main source' of conflict (S3, 1941). The stated limited exception: goals and values do not come from science, which 'can teach us nothing else beyond how facts are related to, and conditioned by, each other'; 'The highest principles for our aspirations and judgments are given to us in the Jewish-Christian religious tradition' (S3, 1939). Named alternative 2 (two domains, each with its own authority). Not coded 2, because the tradition he defers to is a source of values, not a revelation about facts."
+      how_known: "Published essays; capped at 0.7 because a 3 is named below. Same pattern of evidence as Planck and Galileo (two domains, each with its own authority), so the same score (§3)."
+      rationale: "Mixed, two domains under two authorities. For facts, observation and reason rule: 'science can only ascertain what is, but not what should be' (S3, 1941), and religion that claims 'the absolute truthfulness of all statements recorded in the Bible' intrudes on science (S3, 1941). For the highest ends, another authority: they 'come into being not through demonstration but through revelation, through the medium of powerful personalities', and 'The highest principles for our aspirations and judgments are given to us in the Jewish-Christian religious tradition' (S3, 1939); science 'can teach us nothing else beyond how facts are related to, and conditioned by, each other' (S3, 1939). Named alternative 3: revelation here governs values only and never outranks observation about facts."
     E_scope:
       value: 4
       basis: written_profession
-      certainty: 1.0
+      certainty: 0.7
       cites: [{source: S3, locator: "'Religion and Science' (1930); 'Science and Religion' part II (1941)"}]
-      how_known: "Two published essays."
+      how_known: "Two published essays. Below the 1.0 ceiling because the key sentences are in the third person ('the man who is thoroughly convinced', 'for him'), the same reason C and B are at 0.7 (§3 same pattern)."
       rationale: "Scored on the world's order (P7). One order for all: 'the universal operation of the law of causation' (S3, 1930) covers humans too, since 'a man's actions are determined by necessity' like an inanimate object's motions (S3, 1930), and 'neither the rule of human nor the rule of divine will' is an independent cause (S3, 1941). No favour for a group in events."
   mid_basin:
     value: false
     certainty: 0.7
     cites: [{source: S4, locator: "cable text"}, {source: S3, locator: "1930; 1941"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (1.0)."
+    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (0.7)."
   statements:
     - text: "Ich glaube an Spinozas Gott der sich in gesetzlicher Harmonie des Seienden offenbart, nicht an Gott der Sich mit Schicksalen und Handlungen der Menschen abgibt."
       note: "English as printed in S4: I believe in Spinoza's God who reveals Himself in the orderly harmony of what exists, not in a God who concerns Himself with fates and actions of human beings."
@@ -167,7 +168,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
-    - text: "The man who is thoroughly convinced of the universal operation of the law of causation cannot for a moment entertain the idea of a being who interferes in the course of events"
+    - text: "The man who is thoroughly convinced of the universal operation of the law of causation cannot for a moment entertain the idea of a being who interferes in the course of events [...]"
       cites: [{source: S3, locator: "'Religion and Science' (1930), Ideas and Opinions pp. 36–40"}]
       date: "1930-11-09"
       context: "New York Times Magazine essay, reprinted in Ideas and Opinions."
@@ -175,14 +176,14 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "A God who rewards and punishes is inconceivable to him for the simple reason that a man's actions are determined by necessity, external and internal"
+    - text: "A God who rewards and punishes is inconceivable to him for the simple reason that a man's actions are determined by necessity, external and internal [...]"
       cites: [{source: S3, locator: "'Religion and Science' (1930)"}]
       date: "1930-11-09"
       axes: [C_ledger, E_scope]
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "What a deep conviction of the rationality of the universe"
+    - text: "What a deep conviction of the rationality of the universe [...]"
       cites: [{source: S3, locator: "'Religion and Science' (1930)"}]
       date: "1930-11-09"
       context: "On Kepler and Newton."
@@ -205,7 +206,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "teachers of religion must have the stature to give up the doctrine of a personal God"
+    - text: "[...] teachers of religion must have the stature to give up the doctrine of a personal God [...]"
       cites: [{source: S3, locator: "'Science and Religion' part II (1941)"}]
       date: "1941"
       axes: [A_locus]
@@ -216,6 +217,21 @@ worldview:
       cites: [{source: S3, locator: "'Science and Religion' part I (1939 address)"}]
       date: "1939-05-19"
       context: "Address at Princeton Theological Seminary."
+      axes: [D_authority]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-02
+    - text: "They come into being not through demonstration but through revelation, through the medium of powerful personalities."
+      cites: [{source: S3, locator: "'Science and Religion' part I (1939 address)"}]
+      date: "1939-05-19"
+      context: "On the 'fundamental ends' of conduct, which 'cannot be stated and justified merely by reason'; the next sentences name the Jewish-Christian tradition."
+      axes: [D_authority]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-02
+    - text: "For science can only ascertain what is, but not what should be, and outside of its domain value judgments of all kinds remain necessary."
+      cites: [{source: S3, locator: "'Science and Religion' part II (1941)"}]
+      date: "1941"
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "primary transcription"
@@ -347,7 +363,7 @@ His parents were secular, middle-class Jews [S1, Childhood and education]; he ha
 
 ## Adult working worldview
 
-In 1929 he cabled: "I believe in Spinoza's God who reveals Himself in the orderly harmony of what exists, not in a God who concerns Himself with fates and actions of human beings" [S4, cable text]. The 1930 essay says the man convinced of universal causation "cannot for a moment entertain the idea of a being who interferes in the course of events", and that "A God who rewards and punishes is inconceivable to him" [S3, 1930]. In 1941 he asked teachers of religion to "give up the doctrine of a personal God" and wrote that "science without religion is lame, religion without science is blind" [S3, 1941]. SEP's pantheism entry calls him a pantheist [S5, §12]. Scores: A 4 (0.7), B 4 (1.0), C 4 (0.7), D 3 (0.7), E 4 (1.0); mid_basin false.
+In 1929 he cabled: "I believe in Spinoza's God who reveals Himself in the orderly harmony of what exists, not in a God who concerns Himself with fates and actions of human beings" [S4, cable text]. The 1930 essay says the man convinced of universal causation "cannot for a moment entertain the idea of a being who interferes in the course of events", and that "A God who rewards and punishes is inconceivable to him" [S3, 1930]. In 1941 he asked teachers of religion to "give up the doctrine of a personal God" and wrote that "science without religion is lame, religion without science is blind" [S3, 1941]. SEP's pantheism entry calls him a pantheist [S5, §12]. Scores: A 4 (0.7), B 4 (0.7), C 4 (0.7), D 2 (0.7), E 4 (0.7); mid_basin false.
 
 ## Heritage (context only)
 
