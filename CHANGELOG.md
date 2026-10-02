@@ -96,6 +96,7 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
 ### People
 
 - **2026-10-02, James Clerk Maxwell** (`people/m/maxwell-james-clerk.md`, draft — unreviewed): new person record from his letters, essays and 1873 "Molecules" lecture (via Campbell and Garnett 1882 and the 1890 Scientific Papers), Britannica, MacTutor and Hutchinson. Primary system CHRIST (0.7). A_locus 0 and B_cause 3 (physics) at 1.0, so `mid_basin` is true under P4; C_ledger 1 and D_authority 2 at 0.7; E_scope TODO. Quotes checked word for word against the fetched texts.
+- **2026-10-02, Isaac Newton** (`people/n/newton-isaac.md`, draft — unreviewed): new person record from the General Scholium, Opticks Query 31, the Principia's Rules of Reasoning, two letters to Bentley and three private theological manuscripts (Newton Project), plus Britannica, MacTutor and two SEP entries. Primary system CHRIST (0.7), CLTHEI a close second. A_locus 1, B_cause 3 (natural philosophy) and E_scope 3 at 1.0, so `mid_basin` is true under P4; C_ledger 0 and D_authority 2 at 0.7. Quotes checked word for word against the fetched texts.
 
 ## v7.1 (2026-09-14 data freeze)
 
