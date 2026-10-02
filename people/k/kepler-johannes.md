@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Westman), MacTutor (J. V. Field) and SEP (Di Liscia). Worldview from SEP and MacTutor (scholars' readings) and one letter quoted by the Bodleian's Cultures of Knowledge project. No primary text of Kepler's was read. CHRIST (Lutheran, excommunicated 1612) at 0.5; PLATO named. A 1, B 4, D 3, E 4, all at 0.5; C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A at 0.5). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #78: B_cause 4 → 3 at 0.5; MacTutor quotes him on the 1604 nova allowing a 'special creation' only after trying 'everything else' (De stella nova ch. 22), a stated limited exception; statement added. Finding #81: E_scope 4 (0.5) → BELOW_THRESHOLD, the same thin evidence as Fermi, Meitner and Curie (§3 same pattern). Finding #83: self_described_science_religion_relation 0.7 → 0.5 (single-letter rule, §3). mid_basin unchanged (BELOW_THRESHOLD; A 1 and B 3 both at 0.5). primary_system unchanged (CHRIST 0.5). Not reviewed."}
 
 identity:
   id: kepler-johannes
@@ -87,9 +88,9 @@ worldview:
     - {value: "Lutheran; excommunicated in 1612 and never reinstated, over the Eucharist", years: "to 1612", role: member, certainty: 0.7, cites: [{source: S2, locator: "University education"}], how_known: "MacTutor (one source)."}
   self_described_science_religion_relation:
     value: "Astronomy as a way to celebrate God: he had wanted to be a theologian, and wrote in 1595 that through his work God is celebrated in astronomy."
-    certainty: 0.7
+    certainty: 0.5
     cites: [{source: S4, locator: "paragraph 1"}, {source: S3, locator: "§2"}]
-    how_known: "One letter, through an English translation quoted by the Bodleian project; SEP's reading agrees ('astronomy represents for Kepler, if done philosophically, the best path to God')."
+    how_known: "One letter, through an English translation quoted by the Bodleian project. A single private letter is not 'consistent private letters'; with a scholar's backing it is 0.5 (§3), as for Meitner and Curie. SEP's reading agrees ('astronomy represents for Kepler, if done philosophically, the best path to God')."
   primary_system:
     value: CHRIST
     basis: scholarly_reconstruction
@@ -110,12 +111,12 @@ worldview:
       how_known: "Scholars' readings, no primary text read, so 0.5."
       rationale: "Leans to the transcendent pole: 'God the Creator, who accomplished His work according to the model of the five regular polyhedra' (S3) and made the universe by 'a mathematical plan' (S2); God is not the world. Not 0: the sphere is read as an image of the Trinity (S3), so the world mirrors God closely. Alternative 2 is possible on that image-reading; not chosen."
     B_cause:
-      value: 4
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S2, locator: "Kepler's opinions; University education"}, {source: S1, locator: "opening"}]
-      how_known: "Scholars' readings of his working science (P6). No statement on miracles was read, so 0.5."
-      rationale: "Scored on his account of nature (P6). At the law pole as far as the sources go: one mathematical plan, laws of planetary motion, forces from the Sun acting on the planets (S2), and an astrology restricted in 'the domain in which its predictions could be considered reliable' (S1), treated as natural influence. No miracle or exemption appears. Named alternative 3: as a Lutheran he may have accepted scriptural miracles; the sources read do not say."
+      cites: [{source: S2, locator: "Kepler's opinions; University education; Observational error (New Star of 1604)"}, {source: S1, locator: "opening"}]
+      how_known: "Scholars' readings of his working science (P6), plus one short phrase of his on the 1604 nova quoted in translation by MacTutor, so 0.5."
+      rationale: "Scored on his account of nature (P6). Leans to the law pole: one mathematical plan, laws of planetary motion, forces from the Sun acting on the planets (S2), and an astrology restricted in 'the domain in which its predictions could be considered reliable' (S1), treated as natural influence. The stated limited exception: on the new star of 1604 he rejected numerous explanations and allowed that it 'could just be a special creation', 'but before we come to [that] I think we should try everything else' (S2, quoting De stella nova, 1606, ch. 22). A special creation in nature is kept as a last resort, so 3. Named alternative 4, since he puts natural explanation first and does not assert the special creation."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, reward or afterlife in S1–S5.", note: "Gap: his letters on the Eucharist dispute and his theological writings were not read."}
     D_authority:
       value: 3
@@ -124,14 +125,8 @@ worldview:
       cites: [{source: S3, locator: "§2"}, {source: S2, locator: "Kepler's opinions"}]
       how_known: "Scholars' readings, so 0.5."
       rationale: "Leans to reason: 'Kepler does indeed repeatedly thank God for granting him insights, but the insights are presented as rational' (S2). The stated limited exception: God manifests himself 'not only in the words of the Scriptures but also in the wonderful arrangement of the universe' (S3), so Scripture keeps a place beside nature. Alternative 2 (two domains) is possible if his Astronomia nova introduction on Scripture is read; not read."
-    E_scope:
-      value: 4
-      basis: scholarly_reconstruction
-      certainty: 0.5
-      cites: [{source: S2, locator: "Kepler's opinions"}, {source: S3, locator: "§2"}]
-      how_known: "Scholars' readings, so 0.5."
-      rationale: "Scored on the world's order (P7). One plan for the whole universe, which humans 'made in the image of God' can understand (S2). No favour or exception for a group in events appears in the sources. Alternative 3 if his writing on providence shows one; not read."
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus = 1 and B_cause = 4 would pass, but both are only at 0.5, under the P4 test's 0.7 bar."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Scholars describe one geometric plan for the whole universe, which humans 'made in the image of God' can understand (S2, Kepler's opinions; S3, §2), but nothing read addresses favour or exceptions for a group in events, and his writing on providence was not read.", note: "Same treatment as Fermi, Meitner and Curie: not scored from the working science or the cosmology alone, because P7's second question (in-group exceptions) needs a statement (§3 same pattern, lens audit batch 2). Was 4 at 0.5."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus = 1 and B_cause = 3 would pass, but both are only at 0.5, under the P4 test's 0.7 bar."}
   statements:
     - text: "'I wanted to become a theologian', he explained in 1595 to Michael Maestlin, the Tübingen professor of mathematics who had first introduced him to Copernicanism, 'and for a long time I was restless. Now however, behold how God is being celebrated in astronomy.'"
       cites: [{source: S4, locator: "paragraph 1"}]
@@ -142,6 +137,14 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "The quotation includes the Bodleian writer's framing words; Kepler's words are the two quoted pieces."
+    - text: "but before we come to [that] I think we should try everything else"
+      cites: [{source: S2, locator: "Observational error (New Star of 1604)"}]
+      date: "1606"
+      context: "De stella nova (Prague, 1606), ch. 22 (KGW 1, p. 257, line 23, as cited by MacTutor), on the new star of 1604. MacTutor's lead-in: 'remarking at one point that of course this star could just be a special creation'. English translation in S2; bracket as printed there."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-02
   changes_over_life:
     - {value: "Gave up ordination for a mathematics post in Graz, perhaps because of doubts about his orthodoxy", year: "1594", certainty: 0.5, cites: [{source: S2, locator: "University education ('These may explain')"}], how_known: "MacTutor offers it as a likely explanation."}
   coder_notes: "CHRIST and PLATO are sourced system files. No Kepler text was read directly; KGW Digital (searchable PDFs, linked from EMLO) would let the 1595 letter and the Astronomia nova introduction be checked in the original."
@@ -271,7 +274,7 @@ His father was a mercenary and his mother an innkeeper's daughter; he trained fo
 
 ## Adult working worldview
 
-He wrote in 1595 that he had wanted to be a theologian and now "God is being celebrated in astronomy" [S4, paragraph 1]. SEP: God the Creator built the world on the five regular solids, and the Trinity maps onto the sphere [S3, §2]. Excommunicated in 1612 over the Eucharist [S2, University education]. Scores: A 1, B 4, D 3, E 4 (all 0.5); C below threshold; mid_basin below threshold.
+He wrote in 1595 that he had wanted to be a theologian and now "God is being celebrated in astronomy" [S4, paragraph 1]. SEP: God the Creator built the world on the five regular solids, and the Trinity maps onto the sphere [S3, §2]. Excommunicated in 1612 over the Eucharist [S2, University education]. Scores: A 1, B 3, D 3 (all 0.5); C and E below threshold; mid_basin below threshold. On the 1604 nova he allowed a "special creation" only after trying "everything else" [S2, Observational error].
 
 ## Heritage (context only)
 
