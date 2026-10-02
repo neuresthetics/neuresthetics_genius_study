@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (first page), the Nobel biography and the AIP exhibit (Pasachoff). Worldview from her own Pierre Curie with Autobiographical Notes (1923, Kellogg translation, Project Gutenberg) and two 1887 letters quoted in Eve Curie's Madame Curie (1937, Sheean translation, archive.org OCR). Raised Catholic; faith lost after her mother's death; civil wedding. primary_system AGNOS at 0.5 (stub system; ATHE named). B 4 (0.7), D 4 (0.5); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #108: primary_system AGNOS (0.5) → BELOW_THRESHOLD, candidates AGNOS and ATHE; the AGNOS choice rested on the absence of a denial of God, and AIP p. 57 ('liberal freethinkers like Marie and her friends') fits either code. Finding #112: D_authority 4 (0.5) → BELOW_THRESHOLD (scored from absence; same as Fermi). Finding #126: the p. 77 'nothingness' line is about obscurity, not death; C_ledger tag and the reliance in primary_system and C removed. Finding #120: 1898 locator AIP p. 36, not p. 22. Eve Curie page numbers confirmed against the scans; the 'one page either way' caveat is removed and the archive.org image-index offset is noted. mid_basin unchanged (BELOW_THRESHOLD). Not reviewed."}
 
 identity:
   id: curie-marie
@@ -37,7 +38,7 @@ basics:
   death:
     date: {value: "1934-07-04", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "final paragraph"}], how_known: "Two sources agree."}
     place: {value: "near Sallanches, Savoy", modern_name: "Sallanches area, Haute-Savoie, France", polity_then: "France", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "final paragraph ('in Savoy')"}], how_known: "Britannica says near Sallanches; the Nobel biography says only Savoy. The sanatorium was not named in the sources read."}
-  first_lasting_contribution_year: {value: 1898, certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris, Pierre Curie, and first Nobel Prize'"}, {source: S5, locator: "p. 22"}], how_known: "Polonium (summer 1898) and radium (late 1898)."}
+  first_lasting_contribution_year: {value: 1898, certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris, Pierre Curie, and first Nobel Prize'"}, {source: S5, locator: "p. 36"}], how_known: "Polonium (summer 1898) and radium (late 1898)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph ('Warsaw, Congress Kingdom of Poland')"}], how_known: "Poland is Eastern Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 1–2"}], how_known: "All the lasting work was done in Paris (France, Western Europe)."}
@@ -92,19 +93,17 @@ worldview:
   self_described_science_religion_relation:
     value: "None stated as such. As a young woman she wrote that the consolation of 'God willed it' 'is not for everybody' and that she could not share believers' faith, while respecting sincere faith; her published account of radioactive decay calls its causes 'a mystery to us'."
     certainty: 0.5
-    cites: [{source: S4, locator: "pp. 76–77"}, {source: S3, locator: "ch. VI"}]
-    how_known: "Two 1887 letters in translation, quoted by her daughter, plus her 1923 book; none addresses science and religion directly."
+    cites: [{source: S4, locator: "p. 76"}, {source: S3, locator: "ch. VI"}]
+    how_known: "One 1887 letter in translation, quoted by her daughter, plus her 1923 book; none addresses science and religion directly."
   primary_system:
-    value: AGNOS
-    basis: scholarly_reconstruction
-    certainty: 0.5
-    cites: [{source: S4, locator: "pp. 29, 51, 76–77"}, {source: S5, locator: "p. 18"}, {source: S3, locator: "ch. IV (marriage)"}]
-    how_known: "Two biographers (her daughter, S4; Pasachoff, S5) say her faith was lost after her mother's death. Her own letters say she cannot share believers' faith and keeps 'a sort of hope' of not disappearing 'into nothingness'; her own book says she did not practise any religion. She never calls herself agnostic in anything read, so this is a reconstruction (0.5). AGNOS is a stub system file (flag)."
-    rationale: "Coded to agnosticism: loss of belief without a denial of God. She neither affirms nor denies a deity in anything read; she says faith has become 'incomprehensible' for her and keeps an undefined hope against annihilation. Alternative: ATHE (no God-term in her adult writing; Pierre and her circle were freethinkers). Not chosen, because nothing read denies God and the 1887 'hope' keeps the question open. ATHE is a stub system file (flag)."
+    value: BELOW_THRESHOLD
+    cites: [{source: S4, locator: "pp. 29, 51, 76"}, {source: S5, locator: "pp. 18, 57"}, {source: S3, locator: "ch. IV (marriage)"}]
+    how_known: "Direct evidence shows loss of faith and no practice, but not which non-theist position she held. Her own words: she 'did not practice any' religion (S3, 1923) and in 1887 could not understand or share believers' faith (S4, p. 76). Two biographers say her faith was lost after her mother's death (S4, pp. 29, 51; S5, p. 18), and S5 groups her with the 'liberal freethinkers like Marie and her friends' against conservative Catholics (S5, p. 57). AGNOS needs 'explicit suspension' and ATHE 'positive naturalism' (v7.1 rule in both system files); nothing read gives either, and the earlier AGNOS choice rested on the absence of a denial of God. So no code reaches 0.5."
+    note: "Was AGNOS at 0.5 (lens audit, batch 2, finding #108; treated like Fermi). Candidates: AGNOS or ATHE. 'Freethinker' (S5, p. 57) fits either. Needs her French correspondence, the 1906–07 mourning journal, or a biographer's report of her own words (Goldsmith 2005; Reid)."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S5."}
   candidate_codes_considered:
-    - {code: AGNOS, reason: "Chosen at 0.5. AGNOS is a stub system file (flag).", cites: [{source: S4, locator: "pp. 51, 76"}]}
-    - {code: ATHE, reason: "Named alternative: freethinking household and no God-term in adult writing. Not chosen: no denial found. ATHE is a stub system file (flag).", cites: [{source: S4, locator: "p. 137"}]}
+    - {code: AGNOS, reason: "Candidate, not coded (BELOW_THRESHOLD): no explicit suspension of judgement in anything read; the earlier choice rested on the absence of a denial of God. AGNOS is a stub system file (flag).", cites: [{source: S4, locator: "pp. 51, 76"}]}
+    - {code: ATHE, reason: "Candidate, not coded (BELOW_THRESHOLD): a freethinker by S5's description ('liberal freethinkers like Marie and her friends') and no God-term in her adult writing read, but no positive statement of naturalism. ATHE is a stub system file (flag).", cites: [{source: S5, locator: "p. 57"}, {source: S4, locator: "p. 137"}]}
     - {code: CHRIST, reason: "Rejected for the adult unit: Catholic upbringing only; she 'did not practice any' religion. Heritage and upbringing are never a code.", cites: [{source: S3, locator: "ch. IV (marriage)"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was found; she speaks only of others' faith.", note: "Gap: her French correspondence and 1906–07 mourning journal (published in Polish and French) were not read."}
@@ -115,14 +114,8 @@ worldview:
       cites: [{source: S3, locator: "ch. VI (exponential law)"}, {source: S4, locator: "p. 76 (letter of 1887-04-04)"}]
       how_known: "Her published 1923 account of nature (P6), read in the 1923 English translation; supported by a single private letter. Below the 1.0 ceiling because neither passage speaks to miracle directly."
       rationale: "Scored on her account of nature (P6). She describes radioactive transformation as following 'the laws of probability', with causes 'a mystery to us' and no outside action shown to affect it: lawful, with an open question, not an exemption. In 1887 she wrote that she could not take the consolation of 'God willed it' for a stillbirth. No miracle, providence or petition appears in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "One private letter (1887) keeps 'a sort of hope' of not disappearing 'into nothingness'; nothing on judgement or moral reckoning. A single letter without a scholar's reading is below threshold (§3).", note: "Gap: her mourning journal after Pierre's death (1906)."}
-    D_authority:
-      value: 4
-      basis: scholarly_reconstruction
-      certainty: 0.5
-      cites: [{source: S4, locator: "pp. 51, 76"}, {source: S3, locator: "Autobiographical Notes, ch. III"}]
-      how_known: "Her daughter's reconstruction (faith 'evaporated'; she remained a practising Christian only 'by tradition and convention') plus one 1887 letter. No statement on scripture or church authority, so 0.5."
-      rationale: "Leans fully to reason and evidence: received religious explanation became 'incomprehensible' to her and she gives no place to scripture, church or revelation in anything read; her life is framed around 'the service of scientific research'. Her respect for others' sincere faith is tolerance, not a second authority. Score 4."
+    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or moral reckoning in what was read. The 1887 line about not disappearing 'into nothingness' (S4, p. 77) is about sinking into obscurity as a governess, not about death, so it is not evidence for C (lens audit, batch 2, finding #126).", note: "Gap: her mourning journal after Pierre's death (1906)."}
+    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation, scripture or church authority in anything read. The earlier score (4 at 0.5) came from that absence; 'for us it has become incomprehensible' (S4, p. 76) is about believers' faith and the religious conservatism around her, not about which authority decides; her daughter's 'by tradition and convention' (S4, p. 51) is about practice.", note: "Was 4 at 0.5 (lens audit, batch 2, finding #112). Same treatment as Fermi: D asks about revelation versus observation, which needs a statement."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Meitner)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
   statements:
@@ -161,14 +154,14 @@ worldview:
     - text: "I, even I, keep a sort of hope that I shall not disappear completely into nothingness."
       cites: [{source: S4, locator: "p. 77"}]
       date: "1887-05-20"
-      context: "Letter to her brother Joseph."
-      axes: [C_ledger]
+      context: "Letter to her brother Joseph, on her work as a governess, her fear of 'getting terribly stupid' and her wish to be 'of some use'; it follows 'petty annoyances with the babas'."
+      note: "About sinking into obscurity, not survival after death, so no axis is tagged (lens audit, batch 2, finding #126)."
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Lost her childhood Catholic faith after the deaths of her sister and mother; kept outward practice 'by tradition and convention' for some years", year: "c. 1878–1885", certainty: 0.7, cites: [{source: S4, locator: "pp. 29, 51"}, {source: S5, locator: "p. 18"}], how_known: "Two biographers; dates approximate."}
-  coder_notes: "AGNOS and ATHE are stub system files (flag). The 1887 letters are Sheean's English translation of Polish letters, quoted by Eve Curie; page numbers come from archive.org OCR running heads. Pierre Curie (1923) is read in the Kellogg translation on Project Gutenberg; the book gives no page numbers there, so locators are chapters."
+  coder_notes: "AGNOS and ATHE are stub system files (flag). The 1887 letters are Sheean's English translation of Polish letters, quoted by Eve Curie; page numbers are the printed pages, confirmed against the page scans (lens audit, batch 2). Pierre Curie (1923) is read in the Kellogg translation on Project Gutenberg; the book gives no page numbers there, so locators are chapters."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -254,7 +247,7 @@ sources:
     citation: "Curie, Eve. Madame Curie: A Biography. Translated by Vincent Sheean. Garden City, NY: Doubleday, Doran, 1937 (1938 printing). Internet Archive OCR text. https://archive.org/details/madamecuriebiogr00evec_0."
     url: "https://archive.org/stream/madamecuriebiogr00evec_0/madamecuriebiogr00evec_0_djvu.txt"
     accessed: 2026-10-02
-    reliability_note: "Biography by her daughter, quoting family letters in translation. Read as OCR text; page numbers taken from the running heads, so one page either way is possible."
+    reliability_note: "Biography by her daughter, quoting family letters in translation. Read as OCR text; page numbers are the printed pages from the running heads, confirmed against the page scans. archive.org's /page/nN image index is not the printed page: n48 = p. 29, n72 = p. 51, n97 = p. 76, n98 = p. 77, n162 = p. 137 (one lower than the hOCR leaf number)."
     used_for: [identity, childhood, worldview, heritage, timing, lane_b]
   - id: S5
     type: secondary
@@ -283,7 +276,7 @@ sources:
 
 ## Summary
 
-Marie Curie (1867–1934), Polish-born French physicist and chemist, discovered polonium and radium with Pierre Curie in 1898 and won Nobel Prizes in physics (1903) and chemistry (1911) [S1, opening paragraph; S2, paragraph 6]. Raised Catholic, she lost her faith after her mother's death and "did not practice any" religion as an adult [S3, ch. IV; S5, p. 18]. Coded AGNOS at 0.5 (stub system; ATHE named); B 4 (0.7), D 4 (0.5); A, C, E below threshold; mid_basin below threshold.
+Marie Curie (1867–1934), Polish-born French physicist and chemist, discovered polonium and radium with Pierre Curie in 1898 and won Nobel Prizes in physics (1903) and chemistry (1911) [S1, opening paragraph; S2, paragraph 6]. Raised Catholic, she lost her faith after her mother's death and "did not practice any" religion as an adult [S3, ch. IV; S5, p. 18]. Her system is below threshold (AGNOS or ATHE; a "liberal freethinker" in S5, p. 57); B 4 (0.7); A, C, D, E below threshold; mid_basin below threshold.
 
 ## Life and work
 
@@ -299,7 +292,7 @@ Her mother "had an ardent piety (my parents were both Catholics), but she was ne
 
 ## Adult working worldview
 
-Her daughter writes that "her faith had been shaken by Mme Sklodovska's death; little by little it had now evaporated" [S4, p. 51]. In 1887 she wrote that the consolation of "God willed it" "is not for everybody" and that she could not share believers' faith [S4, p. 76], yet kept "a sort of hope that I shall not disappear completely into nothingness" [S4, p. 77]. She married in a civil ceremony [S3, ch. IV]. In 1923 she described radioactive decay as following "the laws of probability", with causes "a mystery to us" [S3, ch. VI]. Scores: B 4 (0.7), D 4 (0.5); A, C, E below threshold.
+Her daughter writes that "her faith had been shaken by Mme Sklodovska's death; little by little it had now evaporated" [S4, p. 51]. In 1887 she wrote that the consolation of "God willed it" "is not for everybody" and that she could not share believers' faith [S4, p. 76]. AIP's exhibit places her among the "liberal freethinkers" of French politics [S5, p. 57]. She married in a civil ceremony [S3, ch. IV]. In 1923 she described radioactive decay as following "the laws of probability", with causes "a mystery to us" [S3, ch. VI]. Scores: B 4 (0.7); A, C, D, E below threshold.
 
 ## Heritage (context only)
 
