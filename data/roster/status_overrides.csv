@@ -1,2 +1,11 @@
 name,status,decision,decided_on,reason
 Georgia O'Keeffe,core,R1,2026-10-01,"v7.1 status blank; v7.1 headline 432 core only adds up with her as core; decided by Jason Burns (OPEN_DECISIONS R1)"
+Georg Wilhelm Friedrich Hegel,core,R6,2026-10-01,"new F>=3 name; canonical philosopher, no arguable note under the v7.1 status rules; decided by Jason Burns (OPEN_DECISIONS R6)"
+Duns Scotus,core,R6,2026-10-01,"new F>=3 name; canonical scholastic (c. 1266-1308); decided by Jason Burns (OPEN_DECISIONS R6)"
+Edward O. Wilson,core,R6,2026-10-01,"new F>=3 name; main work (Sociobiology, 1975) is over 50 years old; decided by Jason Burns (OPEN_DECISIONS R6)"
+John Nash,core,R6,2026-10-01,"new F>=3 name; game-theory work from 1950; decided by Jason Burns (OPEN_DECISIONS R6)"
+Jorge Luis Borges,core,R6,2026-10-01,"new F>=3 name; Ficciones (1944); decided by Jason Burns (OPEN_DECISIONS R6)"
+Laozi,core,R6,2026-10-01,"new F>=3 name; historicity is debated (Britannica: 'remains an obscure figure'), but v7.1 kept Homer, Pythagoras and Sun Tzu as core; decided by Jason Burns (OPEN_DECISIONS R6)"
+Ludwig Mies van der Rohe,core,R6,2026-10-01,"new F>=3 name (1886-1969); decided by Jason Burns (OPEN_DECISIONS R6)"
+Paul Cézanne,core,R6,2026-10-01,"new F>=3 name (1839-1906); decided by Jason Burns (OPEN_DECISIONS R6)"
+Vint Cerf,core,R6,2026-10-01,"new F>=3 name; living, but TCP/IP (1973-74) is over 50 years old and v7.1 kept Berners-Lee as core; shared credit with Robert Kahn, both named individuals; decided by Jason Burns (OPEN_DECISIONS R6)"

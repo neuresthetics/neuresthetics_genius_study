@@ -21,25 +21,25 @@ Person files: **1** of **1380** roster entries (0.1%).
 |---|---|---|---|
 | arts | 75 | 0 | 0.0% |
 | astronomy | 27 | 0 | 0.0% |
-| biology / life science | 53 | 0 | 0.0% |
+| biology / life science | 54 | 0 | 0.0% |
 | chemistry | 84 | 0 | 0.0% |
 | computer science / AI | 48 | 0 | 0.0% |
-| earth science | 9 | 0 | 0.0% |
-| exploration | 8 | 0 | 0.0% |
-| history | 111 | 0 | 0.0% |
-| invention / engineering | 63 | 0 | 0.0% |
+| earth science | 8 | 0 | 0.0% |
+| exploration | 13 | 0 | 0.0% |
+| history | 99 | 0 | 0.0% |
+| invention / engineering | 58 | 0 | 0.0% |
 | linguistics | 12 | 0 | 0.0% |
 | literature | 82 | 0 | 0.0% |
 | mathematics | 91 | 0 | 0.0% |
 | medicine | 97 | 0 | 0.0% |
 | music | 56 | 0 | 0.0% |
 | other | 2 | 0 | 0.0% |
-| philosophy | 174 | 0 | 0.0% |
-| physics | 134 | 1 | 0.7% |
-| politics / law / military | 48 | 0 | 0.0% |
+| philosophy | 186 | 0 | 0.0% |
+| physics | 133 | 1 | 0.8% |
+| politics / law / military | 60 | 0 | 0.0% |
 | polymath | 21 | 0 | 0.0% |
 | psychology / neuroscience | 55 | 0 | 0.0% |
-| social science | 130 | 0 | 0.0% |
+| social science | 119 | 0 | 0.0% |
 
 ### Review status of person files
 

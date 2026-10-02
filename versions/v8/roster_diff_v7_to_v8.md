@@ -239,22 +239,22 @@ Ada Lovelace (mathematics), Adam Smith (economics), Al-Farabi (philosophy), Al-K
 
 ## People added (not in v7.1)
 
-898 new people: F=4: 1, F=3: 8, F=2: 74, F=1: 815. All have status `new — needs status`. Many are Claude-only names (Claude was never aggregated) or names cut by the 500-row truncation.
+898 new people: F=4: 1, F=3: 8, F=2: 74, F=1: 815. Status: new — needs status 889, core 9. Statuses other than `new — needs status` come from `status_overrides.csv`. Many are Claude-only names (Claude was never aggregated) or names cut by the 500-row truncation.
 
 New people with F ≥ 3:
 
-- Georg Wilhelm Friedrich Hegel — philosophy — F=4 (Claude;Gemini;GPT;Grok)
-- Duns Scotus — philosophy — F=3 (Claude;DeepSeek;Grok)
-- Edward O. Wilson — biology — F=3 (Claude;Gemini;GPT)
-- John Nash — mathematics — F=3 (Claude;GPT;Grok)
-- Jorge Luis Borges — literature — F=3 (Claude;Gemini;GPT)
-- Laozi — philosophy — F=3 (Claude;DeepSeek;Gemini)
-- Ludwig Mies van der Rohe — architecture — F=3 (Claude;DeepSeek;Gemini)
-- Paul Cézanne — art — F=3 (Claude;Gemini;GPT)
-- Vint Cerf — computer science — F=3 (Claude;DeepSeek;GPT)
+- Georg Wilhelm Friedrich Hegel — philosophy — F=4 (Claude;Gemini;GPT;Grok) — status core
+- Duns Scotus — philosophy — F=3 (Claude;DeepSeek;Grok) — status core
+- Edward O. Wilson — biology — F=3 (Claude;Gemini;GPT) — status core
+- John Nash — mathematics — F=3 (Claude;GPT;Grok) — status core
+- Jorge Luis Borges — literature — F=3 (Claude;Gemini;GPT) — status core
+- Laozi — philosophy — F=3 (Claude;DeepSeek;Gemini) — status core
+- Ludwig Mies van der Rohe — architecture — F=3 (Claude;DeepSeek;Gemini) — status core
+- Paul Cézanne — art — F=3 (Claude;Gemini;GPT) — status core
+- Vint Cerf — computer science — F=3 (Claude;DeepSeek;GPT) — status core
 
 New people with F = 2 (count by field bucket): mathematics 12, physics 10, arts 9, philosophy 8, social science 6, invention / engineering 6, computer science / AI 5, polymath 4, literature 4, politics / law / military 2, earth science 2, music 2, astronomy 1, psychology / neuroscience 1, linguistics 1, medicine 1.
-New people with F = 1 (count by field bucket): physics 89, philosophy 86, social science 76, medicine 72, history 68, chemistry 62, mathematics 39, literature 39, arts 39, music 37, invention / engineering 37, biology / life science 35, politics / law / military 35, psychology / neuroscience 35, computer science / AI 26, astronomy 13, polymath 8, linguistics 8, exploration 5, earth science 4, other 2.
+New people with F = 1 (count by field bucket): philosophy 93, physics 88, social science 73, medicine 72, chemistry 62, history 61, mathematics 39, politics / law / military 39, literature 39, arts 39, music 37, biology / life science 36, psychology / neuroscience 35, invention / engineering 32, computer science / AI 26, astronomy 13, exploration 10, polymath 8, linguistics 8, earth science 3, other 2.
 
 ## People dropped / v7 rows that do not carry over as their own row
 
@@ -273,43 +273,52 @@ None. Every v7.1 roster person is found in the raw lists and kept.
 
 | Status | v8 count |
 |---|---|
-| new — needs status | 898 |
-| core | 432 |
+| new — needs status | 889 |
+| core | 441 |
 | provisional | 33 |
 | review | 17 |
 
+- Georg Wilhelm Friedrich Hegel: status `core` from `status_overrides.csv` (v7 status: blank).
 - Georgia O'Keeffe: status `core` from `status_overrides.csv` (v7 status: blank).
+- Duns Scotus: status `core` from `status_overrides.csv` (v7 status: blank).
+- Edward O. Wilson: status `core` from `status_overrides.csv` (v7 status: blank).
+- John Nash: status `core` from `status_overrides.csv` (v7 status: blank).
+- Jorge Luis Borges: status `core` from `status_overrides.csv` (v7 status: blank).
+- Laozi: status `core` from `status_overrides.csv` (v7 status: blank).
+- Ludwig Mies van der Rohe: status `core` from `status_overrides.csv` (v7 status: blank).
+- Paul Cézanne: status `core` from `status_overrides.csv` (v7 status: blank).
+- Vint Cerf: status `core` from `status_overrides.csv` (v7 status: blank).
 - No other statuses were set. v7 statuses are carried over as they are. Review reasons from v7 table 7 are copied into `v7_review_note`.
 
 ## Field buckets
 
-Buckets are assigned by keyword rules in the script (first field component that matches). v7's own bucket table (table 8) used a hand mapping that is not in the repo, so the v7 column below is the v7 roster re-bucketed with the same rules, for a like-for-like comparison.
+Buckets are assigned by keyword rules in the script (first field component that matches), after six fixes decided on 2026-10-01 (R7: `BUCKET_FIXES` and `PERSON_BUCKETS`; changed rows are listed in `reports/r7_bucket_changes.csv`). v7's own bucket table (table 8) used a hand mapping that is not in the repo, so the v7 column below is the v7 roster re-bucketed with the same rules, for a like-for-like comparison. To compare with v7.1's published table, read v8's `politics / law / military` against v7.1's `social science / politics`.
 
 | Bucket | v8 N | v8 share | v7.1 N (same rules) | change |
 |---|---|---|---|---|
-| philosophy | 174 | 12.6% | 75 | +99 |
-| physics | 134 | 9.7% | 33 | +101 |
-| social science | 130 | 9.4% | 49 | +81 |
-| history | 111 | 8.0% | 47 | +64 |
+| philosophy | 186 | 13.5% | 82 | +104 |
+| physics | 133 | 9.6% | 33 | +100 |
+| social science | 119 | 8.6% | 42 | +77 |
+| history | 99 | 7.2% | 40 | +59 |
 | medicine | 97 | 7.0% | 25 | +72 |
 | mathematics | 91 | 6.6% | 38 | +53 |
 | chemistry | 84 | 6.1% | 21 | +63 |
 | literature | 82 | 5.9% | 39 | +43 |
 | arts | 75 | 5.4% | 25 | +50 |
-| invention / engineering | 63 | 4.6% | 19 | +44 |
+| politics / law / military | 60 | 4.3% | 19 | +41 |
+| invention / engineering | 58 | 4.2% | 19 | +39 |
 | music | 56 | 4.1% | 17 | +39 |
 | psychology / neuroscience | 55 | 4.0% | 19 | +36 |
-| biology / life science | 53 | 3.8% | 18 | +35 |
+| biology / life science | 54 | 3.9% | 18 | +36 |
 | computer science / AI | 48 | 3.5% | 15 | +33 |
-| politics / law / military | 48 | 3.5% | 12 | +36 |
 | astronomy | 27 | 2.0% | 14 | +13 |
 | polymath | 21 | 1.5% | 8 | +13 |
+| exploration | 13 | 0.9% | 3 | +10 |
 | linguistics | 12 | 0.9% | 3 | +9 |
-| earth science | 9 | 0.7% | 2 | +7 |
-| exploration | 8 | 0.6% | 3 | +5 |
+| earth science | 8 | 0.6% | 2 | +6 |
 | other | 2 | 0.1% | 0 | +2 |
 
-Among F ≥ 3 (the primary analysis cut in the coding rules): philosophy 41, mathematics 34, literature 21, physics 19, arts 18, music 12, invention / engineering 11, computer science / AI 11, social science 10, biology / life science 10, medicine 9, astronomy 8, chemistry 8, polymath 7, psychology / neuroscience 7, linguistics 2, exploration 2, politics / law / military 1.
+Among F ≥ 3 (the primary analysis cut in the coding rules): philosophy 41, mathematics 34, literature 21, physics 19, arts 18, music 12, invention / engineering 11, computer science / AI 11, biology / life science 10, medicine 9, astronomy 8, chemistry 8, polymath 7, psychology / neuroscience 7, social science 6, politics / law / military 5, linguistics 2, exploration 2.
 
 ## Merges and review items
 

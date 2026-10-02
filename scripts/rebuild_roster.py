@@ -132,8 +132,28 @@ BUCKETS = [  # (bucket, regex on a single field component); first component that
 ]
 
 
-def field_bucket(field):
-    for comp in re.split(r'[-/]', norm_field(field)):
+# R7 fixes (decided 2026-10-01, docs/OPEN_DECISIONS.md). Checked on the whole normalized field before the
+# component rules; every regex in the list must match. Evidence: reports/r7_field_string_review.csv.
+BUCKET_FIXES = [
+    ("philosophy", [r"(^|-)science studies($|-)", r"(^|-)philosoph"]),        # 1. philosophers of science (Hempel, Nagel ...)
+    ("exploration", [r"(^|-)space($|-)", r"explor|astronaut"]),              # 2. astronauts: explor/astronaut beats "space"
+    ("politics / law / military", [r"(^|-)political thought($|-)"]),         # 3. rulers and statesmen (Ashoka, Mandela ...)
+    ("politics / law / military", [r"(^|-)social thought($|-)"]),            # 4. activists (King, Tubman ...)
+    ("social science", [r"^geography-sociology$"]),                          # 5. one-off string (David Harvey)
+]
+PERSON_BUCKETS = {                                                           # 6. one-off by person
+    "Jan Swammerdam": "biology / life science",   # "microscopy": Swammerdam was a biologist; Hooke stays physics
+}
+
+
+def field_bucket(field, name=None):
+    if name in PERSON_BUCKETS:
+        return PERSON_BUCKETS[name]
+    nf = norm_field(field)
+    for b, rxs in BUCKET_FIXES:
+        if all(re.search(rx, nf) for rx in rxs):
+            return b
+    for comp in re.split(r'[-/]', nf):
         comp = comp.strip()
         for b, rx in BUCKETS:
             if re.search(rx, comp):
@@ -380,7 +400,7 @@ def main():
                                  rule="distinct-model count", confidence="high", note=f"{m} lists this person {len(names)} times"))
 
         people.append(dict(
-            canonical_name=canonical, field=field, field_bucket=field_bucket(field), F=F, band=band(F),
+            canonical_name=canonical, field=field, field_bucket=field_bucket(field, canonical), F=F, band=band(F),
             models=";".join(models), **{m: int(m in models) for m in MODELS},
             per_model_field=" | ".join(f"{m}: {per_model_field[m]}" for m in models),
             status=status, v7_name=" | ".join(x["Name"] for x in v7m), v7_F=" | ".join(x["F"] for x in v7m),
@@ -589,11 +609,12 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
     P("## People added (not in v7.1)\n")
     addF = collections.Counter(p["F"] for p in added)
     P(f"{len(added)} new people: " + ", ".join(f"F={f}: {addF[f]}" for f in sorted(addF, reverse=True)) + ". "
-      "All have status `new — needs status`. Many are Claude-only names (Claude was never aggregated) "
+      + "Status: " + ", ".join(f"{s} {c}" for s, c in collections.Counter(p["status"] for p in added).most_common()) + ". "
+      "Statuses other than `new — needs status` come from `status_overrides.csv`. Many are Claude-only names (Claude was never aggregated) "
       "or names cut by the 500-row truncation.\n")
     P("New people with F ≥ 3:\n")
     for p in sorted([p for p in added if p["F"] >= 3], key=lambda p: (-p["F"], p["canonical_name"])):
-        P(f"- {p['canonical_name']} — {p['field']} — F={p['F']} ({p['models']})")
+        P(f"- {p['canonical_name']} — {p['field']} — F={p['F']} ({p['models']}) — status {p['status']}")
     P("")
     P("New people with F = 2 (count by field bucket): " +
       ", ".join(f"{b} {c}" for b, c in collections.Counter(p['field_bucket'] for p in added if p['F'] == 2).most_common()) + ".")
@@ -637,10 +658,12 @@ def write_diff(people, excluded, v7rows, v7_unmatched, gid_to_v7, groups, raw, k
     P("- No other statuses were set. v7 statuses are carried over as they are. Review reasons from v7 table 7 are copied into `v7_review_note`.\n")
 
     P("## Field buckets\n")
-    P("Buckets are assigned by keyword rules in the script (first field component that matches). v7's own bucket table (table 8) used a hand mapping that "
-      "is not in the repo, so the v7 column below is the v7 roster re-bucketed with the same rules, for a like-for-like comparison.\n")
+    P("Buckets are assigned by keyword rules in the script (first field component that matches), after six fixes decided on 2026-10-01 "
+      "(R7: `BUCKET_FIXES` and `PERSON_BUCKETS`; changed rows are listed in `reports/r7_bucket_changes.csv`). v7's own bucket table (table 8) used a hand mapping that "
+      "is not in the repo, so the v7 column below is the v7 roster re-bucketed with the same rules, for a like-for-like comparison. "
+      "To compare with v7.1's published table, read v8's `politics / law / military` against v7.1's `social science / politics`.\n")
     v8b = collections.Counter(p["field_bucket"] for p in people)
-    v7b = collections.Counter(field_bucket(r["Field"]) for r in v7rows)
+    v7b = collections.Counter(field_bucket(r["Field"], r["Name"]) for r in v7rows)
     P("| Bucket | v8 N | v8 share | v7.1 N (same rules) | change |")
     P("|---|---|---|---|---|")
     for b, c in v8b.most_common():

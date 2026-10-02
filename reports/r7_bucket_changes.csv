@@ -1,0 +1,32 @@
+rank,canonical_name,field,F,old_bucket,new_bucket,fix
+504,Bas van Fraassen,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+540,Carl Hempel,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+661,Ernest Nagel,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+713,Gaston Bachelard,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+733,Georges Canguilhem,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+785,Helen Longino,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+812,Ian Hacking,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+886,John Dupré,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+1061,Nancy Cartwright,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+1126,Philip Kitcher,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+1218,Sandra Harding,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+1349,Wilfrid Sellars,science studies-philosophy,1,history,philosophy,1 science studies + philosophy
+531,Buzz Aldrin,space-exploration,1,invention / engineering,exploration,2 explor/astronaut over space
+1066,Neil Armstrong,space-exploration,1,invention / engineering,exploration,2 explor/astronaut over space
+1213,Sally Ride,space-exploration,1,invention / engineering,exploration,2 explor/astronaut over space
+1323,Valentina Tereshkova,space-exploration,1,invention / engineering,exploration,2 explor/astronaut over space
+1371,Yuri Gagarin,space-exploration,1,invention / engineering,exploration,2 explor/astronaut over space
+121,Nelson Mandela,political thought,4,social science,politics / law / military,3 political thought
+122,Niccolò Machiavelli,political thought,4,social science,politics / law / military,3 political thought
+202,Mahatma Gandhi,political thought,3,social science,politics / law / military,3 political thought
+397,Thomas Jefferson,political thought,2,social science,politics / law / military,3 political thought
+490,Ashoka,political thought,1,social science,politics / law / military,3 political thought
+491,Ashurbanipal,political thought,1,social science,politics / law / military,3 political thought
+573,Cyrus the Great,political thought,1,social science,politics / law / military,3 political thought
+767,Hammurabi,political thought,1,social science,politics / law / military,3 political thought
+1145,Qin Shi Huang,political thought,1,social science,politics / law / military,3 political thought
+116,Martin Luther King Jr.,social thought,4,social science,politics / law / military,4 social thought
+359,Mother Teresa,social thought-ethics,2,social science,politics / law / military,4 social thought
+774,Harriet Tubman,social thought-activism,1,social science,politics / law / military,4 social thought
+584,David Harvey,geography-sociology,1,earth science,social science,5 geography-sociology
+852,Jan Swammerdam,microscopy,1,physics,biology / life science,6 person override (microscopy)

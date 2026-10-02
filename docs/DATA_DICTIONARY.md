@@ -42,7 +42,7 @@ One row per person (1,380 rows). Written by `scripts/rebuild_roster.py`. Never e
 | `rank` | integer | Row order: sorted by F (high to low), then by de-accented name. **Not** a quality ranking. |
 | `canonical_name` | text | Display name (see METHOD §2.6). The join key to `person_ids.csv`. |
 | `field` | text | Most common normalized field string across models, one vote per model (METHOD §2.5). |
-| `field_bucket` | text | One of 21 buckets from the keyword rules in the script. |
+| `field_bucket` | text | One of 21 buckets from the keyword rules in the script, after the six R7 fixes (METHOD §2.5). |
 | `F` | integer 1–5 | Number of distinct models listing the person. |
 | `band` | text | `high (5)`, `core (3–4)`, `extended (2)`, `single-source (1)`. |
 | `models` | list (`;`) | Which models list the person, in fixed order Claude;DeepSeek;Gemini;GPT;Grok. |

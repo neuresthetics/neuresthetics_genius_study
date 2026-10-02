@@ -81,7 +81,18 @@ The v7.1 coding rules set the primary analysis cut at F ≥ 3, with sensitivity 
 
 `field` is the most common normalized field string across models, with one vote per model. Ties go to the candidate whose components appear in the most models' field strings, then to model order Claude, Grok, GPT, Gemini, DeepSeek. Ties are noted in `notes`.
 
-`field_bucket` comes from keyword rules in the script (the `BUCKETS` table), applied to the first field component that matches. There are 21 buckets. v7's own bucket mapping is not in the repo, so the v7→v8 diff re-buckets the v7 roster with the same rules for a like-for-like comparison.
+`field_bucket` comes from keyword rules in the script (the `BUCKETS` table), applied to the first field component that matches. There are 21 buckets. Six fixes run first (decision R7, 2026-10-01; `BUCKET_FIXES` and `PERSON_BUCKETS` in the script):
+
+1. "science studies" paired with philosophy → philosophy (philosophers of science such as Hempel and Nagel; "philosophy of science" already went there);
+2. "space" with "explor…" or "astronaut" → exploration (the five astronauts);
+3. "political thought" → politics / law / military (rulers and statesmen, which "politics" already sent there);
+4. "social thought" → politics / law / military (King, Tubman, Mother Teresa);
+5. "geography-sociology" → social science (David Harvey);
+6. Jan Swammerdam → biology / life science (his field string "microscopy" also covers Robert Hooke, who stays in physics).
+
+They moved 31 people (`reports/r7_bucket_changes.csv`). Four have F ≥ 3: Mandela, Machiavelli, Gandhi and King, all from social science to politics / law / military. The evidence for the fixes is in `reports/r7_bucket_spotcheck.csv` and `reports/r7_field_string_review.csv`. Strings marked "arguable" there (for example "science studies-sociology", "paleoanthropology") were left as the rules put them.
+
+To compare with v7.1's published bucket table, read v8's `politics / law / military` against v7.1's `social science / politics`. v7's own bucket mapping is not in the repo, so the v7→v8 diff re-buckets the v7 roster with the same rules for a like-for-like comparison.
 
 ### 2.6 Canonical name
 
@@ -93,16 +104,16 @@ The display name comes from three sources, in this order of preference:
 
 ### 2.7 Status
 
-v7.1 tagged people `core`, `provisional` (definition fit arguable) or `review` (paradigm-shift bar arguable). These tags are carried over by matching v7.1 names and their listed aliases to v8 keys. A status set by a recorded decision goes in `data/roster/status_overrides.csv` and wins over the carry-over. No other status is invented:
+v7.1 tagged people `core`, `provisional` ("Contemporaries may be provisional", two-lane paper) or `review` ("Review = paradigm-shift bar is arguable", data book). These tags are carried over by matching v7.1 names and their listed aliases to v8 keys. A status set by a recorded decision goes in `data/roster/status_overrides.csv` and wins over the carry-over. No other status is invented:
 
 | status | count |
 |---|---|
-| core | 432 (431 from v7.1, plus Georgia O'Keeffe, whose v7.1 status was blank; decision R1, 2026-10-01) |
+| core | 441 (431 from v7.1; Georgia O'Keeffe, whose v7.1 status was blank, decision R1; and the 9 new F ≥ 3 names, decision R6) |
 | provisional | 33 |
 | review | 17 |
-| new — needs status | 898 |
+| new — needs status | 889 |
 
-Statuses for the 898 new names are an open decision (R6).
+Decision R6 (2026-10-01): only the new names with F ≥ 3 get a status now, because only they enter the primary analysis. All 9 are core: Hegel, Duns Scotus, Edward O. Wilson, John Nash, Jorge Luis Borges, Laozi, Ludwig Mies van der Rohe, Paul Cézanne and Vint Cerf. The 889 new names with F 1–2 stay `new — needs status` until a sensitivity analysis needs them. A name that later reaches F ≥ 3 gets a status the same way, through `status_overrides.csv`.
 
 ### 2.8 Why the v7 frequencies were wrong
 
@@ -123,7 +134,7 @@ python3 scripts/rebuild_roster.py --check    # rebuild in a temp dir; byte-compa
 python3 scripts/rebuild_roster.py            # rewrite the committed outputs (after changing curated_aliases.csv or the script)
 ```
 
-`roster.csv`, `alias_map.csv` and `merge_log.csv` are never edited by hand. To change the roster, edit `curated_aliases.csv` (or the script) and rebuild. The run takes about 30 seconds because the similarity scan compares every pair.
+`roster.csv`, `alias_map.csv` and `merge_log.csv` are never edited by hand. To change the roster, edit `curated_aliases.csv`, `status_overrides.csv` (or the script) and rebuild. The run takes about 30 seconds because the similarity scan compares every pair.
 
 ## 3. Person ids, files and sharding
 
@@ -135,7 +146,7 @@ Every roster name gets a stable id in `data/roster/person_ids.csv`, made by `scr
 - Mononyms stay as they are: `aristotle`, `hypatia`.
 - Written order is kept for "X of Y", "X the Great", Ibn/Al-/Abu names and Italian da/di names: `augustine-of-hippo`, `ibn-sina`, `leonardo-da-vinci`.
 - Particles (van, von, de, du, der, den, la, le, ten, ter, y, del, della, dos, das) stay attached to the family name, so `ramon-y-cajal-santiago`.
-- Exceptions that the rule would get wrong are listed in `data/roster/id_overrides.csv` (29 rows), each with a reason. They cover: family name written first (Sun Tzu, Zhang Heng, Li Bai and other Chinese names); court and art names in conventional order (Murasaki Shikibu, Katsushika Hokusai); compound or double family names (`mies-van-der-rohe-ludwig`, `garcia-marquez-gabriel`); a title in the roster name (`thomson-william-kelvin`, `byron-lord`); a religious name (`tenzin-gyatso`).
+- Exceptions that the rule would get wrong are listed in `data/roster/id_overrides.csv` (30 rows), each with a reason. They cover: family name written first (Sun Tzu, Zhang Heng, Li Bai and other Chinese names); court and art names in conventional order (Murasaki Shikibu, Katsushika Hokusai); compound or double family names (`mies-van-der-rohe-ludwig`, `garcia-marquez-gabriel`); a title in the roster name (`thomson-william-kelvin`, `byron-lord`); a religious name (`tenzin-gyatso`); a compound family name added by decision R3 (`maynard-smith-john`).
 - A clash gets `-2`, `-3` and is reported so that someone can add an override instead.
 
 **The ids are heuristic.** They were made by rule plus a reviewed list of overrides, not by checking each name against an authority file. Before a person file exists, a wrong id can be fixed by adding an override and rerunning.
@@ -143,7 +154,8 @@ Every roster name gets a stable id in `data/roster/person_ids.csv`, made by `scr
 ### 3.2 Id freeze policy
 
 - An id is **frozen** once a person file exists for it, or once v8 is published, whichever comes first. After that it is never renamed or reused, even if the spelling turns out to be wrong. Fix the display name instead.
-- `assign_ids.py` only appends. A name that leaves the roster keeps its row with status `retired`. If a roster name is renamed, add the old→new pair to `id_overrides.csv` with the old id, so the id follows the person.
+- This policy was approved as written (decision R8, 2026-10-01).
+- `assign_ids.py` only appends. A name that leaves the roster keeps its row with status `retired`, so old links still resolve, and a retired id is never reused. Three ids are retired so far: `wright-orville`, `wright-wilbur` (R2) and `smith-brian-maynard` (R3). If a roster name is renamed, add the old→new pair to `id_overrides.csv` with the old id, so the id follows the person.
 - `python3 scripts/assign_ids.py --check` fails if `person_ids.csv` is out of date with `roster.csv`.
 
 ### 3.3 Sharding
