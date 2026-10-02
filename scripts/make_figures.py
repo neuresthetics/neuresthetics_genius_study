@@ -21,6 +21,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
+from matplotlib.transforms import Bbox  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib.records import REPO, read_record, read_csv, person_files  # noqa: E402
@@ -156,17 +157,26 @@ def fig_people_cause_locus(out):
     zone = Rectangle((0, 0), 1, 1, color="#55A868", alpha=0.25, lw=0)
     ax.legend([zone], ["mid-basin zone: A_locus ≤ 1 and B_cause ≥ 3\n(P4 also needs certainty ≥ 0.7 on both axes)"],
               loc="upper left", fontsize=9, frameon=False)
-    groups = collections.defaultdict(list)
-    for p in sorted(pts):
-        groups[(p[1], p[2])].append(p)
-    for (bx, ay), ps in groups.items():
+    # Labels run to the right of their point, so a label can collide with anything in
+    # the same A_locus row: its own cell or a cell to its right. Every point in a row
+    # gets its own vertical slot. After layout, each label is checked against every
+    # other label and every other marker; a label that still touches one is moved to
+    # the left of its point. If anything still overlaps, the script stops.
+    rows = collections.defaultdict(list)
+    for p in sorted(pts, key=lambda p: (p[2], p[1], p[0])):
+        rows[p[2]].append(p)
+    items = []  # (text, x, y, marker size in points^2)
+    for ay, ps in rows.items():
         n = len(ps)
+        step = min(0.17, 0.85 / n)
         for i, (name, b, a, ca, cb, mb) in enumerate(ps):
-            dy = (i - (n - 1) / 2) * 0.17
+            y = ay + (i - (n - 1) / 2) * step
             c = min(ca, cb)
-            ax.scatter(bx - 0.08, ay + dy, s=60 + 260 * c, color="#4C72B0", alpha=0.35 + 0.6 * c,
+            size = 60 + 260 * c
+            ax.scatter(b - 0.08, y, s=size, color="#4C72B0", alpha=0.35 + 0.6 * c,
                        edgecolor="black", lw=0.6, zorder=3)
-            ax.text(bx + 0.05, ay + dy, f"{name}  (A {ca}, B {cb})", va="center", fontsize=9, zorder=4)
+            t = ax.text(b + 0.05, y, f"{name}  (A {ca}, B {cb})", va="center", fontsize=9, zorder=4)
+            items.append((t, b, y, size))
     ax.set_xlim(-0.5, 4.5)
     ax.set_ylim(-0.5, 4.5)
     ax.set_xticks(range(5), ["0\ninterventionist", "1", "2", "3", "4\nLIO pole"])
@@ -175,10 +185,32 @@ def fig_people_cause_locus(out):
     ax.set_ylabel("A_locus (0–4)")
     ax.grid(alpha=0.25)
     ax.set_title(f"The {len(pts)} draft person records: B_cause vs A_locus\n"
-                 "points in the same cell are spread vertically; size and opacity = lower of the two certainties",
+                 "points in the same A_locus row are spread vertically; size and opacity = lower of the two certainties",
                  fontsize=11)
     footer(fig, "Source: people/**/*.md, worldview.lio_axes. Unreviewed drafts; not a sample.")
     fig.tight_layout(rect=(0, 0.06, 1, 1))
+    fig.canvas.draw()
+    r = fig.canvas.get_renderer()
+
+    def marker_box(b, y, size):
+        cx, cy = ax.transData.transform((b - 0.08, y))
+        half = (size ** 0.5) / 2 * fig.dpi / 72
+        return Bbox.from_extents(cx - half, cy - half, cx + half, cy + half)
+
+    def clashes(k):
+        bb = items[k][0].get_window_extent(r)
+        for j, (t2, b2, y2, s2) in enumerate(items):
+            if j != k and (bb.overlaps(t2.get_window_extent(r)) or bb.overlaps(marker_box(b2, y2, s2))):
+                return True
+        return False
+
+    for k, (t, b, y, size) in enumerate(items):
+        if clashes(k):
+            t.set_position((b - 0.22, y))
+            t.set_ha("right")
+    bad = [items[k][0].get_text() for k in range(len(items)) if clashes(k)]
+    if bad:
+        raise SystemExit(f"people_cause_locus: labels still overlap: {bad}")
     save(fig, out, "people_cause_locus.png")
 
 
