@@ -1,0 +1,2353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/neuresthetics/neuresthetics_genius_study/schema/person.schema.json",
+  "title": "Neuresthetics Genius Study person record (YAML front matter of people/<shard>/<id>.md)",
+  "description": "Field meanings: docs/DATA_DICTIONARY.md. Coding rules: docs/CODING_GUIDE.md. Workflow: docs/RUNBOOK.md.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record",
+    "identity",
+    "basics",
+    "contribution",
+    "childhood",
+    "worldview",
+    "heritage",
+    "timing",
+    "lane_b",
+    "institutions",
+    "collaborators",
+    "review",
+    "sources"
+  ],
+  "properties": {
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_type",
+        "schema_version",
+        "record_version",
+        "review_status",
+        "collected_by",
+        "model_used",
+        "collected_on",
+        "last_updated",
+        "change_log"
+      ],
+      "properties": {
+        "record_type": {
+          "const": "person"
+        },
+        "schema_version": {
+          "const": "1.0"
+        },
+        "record_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "review_status": {
+          "enum": [
+            "stub",
+            "example — unreviewed",
+            "draft — unreviewed",
+            "in review",
+            "reviewed",
+            "needs revision"
+          ]
+        },
+        "collected_by": {
+          "type": "string",
+          "description": "who ran the collection (person or agent)"
+        },
+        "model_used": {
+          "type": "string",
+          "description": "model and version used, or 'none (human)'"
+        },
+        "collected_on": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "last_updated": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "reviewed_by": {
+          "type": "string"
+        },
+        "reviewed_on": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "change_log": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/changeLogEntry"
+          }
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "display_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roster": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "canonical_name": {
+              "type": "string"
+            },
+            "rank": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "F": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "models": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "Claude",
+                  "DeepSeek",
+                  "Gemini",
+                  "GPT",
+                  "Grok"
+                ]
+              },
+              "minItems": 1,
+              "maxItems": 5,
+              "uniqueItems": true
+            },
+            "band": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "field": {
+              "type": "string"
+            },
+            "field_bucket": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "canonical_name",
+            "rank",
+            "F",
+            "models",
+            "band",
+            "status",
+            "field",
+            "field_bucket"
+          ],
+          "description": "copy of this person's roster.csv row; the validator checks every value matches"
+        },
+        "full_name": {
+          "$ref": "#/$defs/text"
+        },
+        "native_name": {
+          "$ref": "#/$defs/text"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "roster alias",
+                  "birth name",
+                  "latinized",
+                  "transliteration",
+                  "title or honorific",
+                  "pen or art name",
+                  "religious name",
+                  "other"
+                ]
+              },
+              "cites": {
+                "$ref": "#/$defs/cites"
+              }
+            },
+            "required": [
+              "name",
+              "kind"
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "display_name",
+        "roster",
+        "full_name",
+        "native_name",
+        "aliases"
+      ]
+    },
+    "basics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "birth": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "date": {
+              "$ref": "#/$defs/date"
+            },
+            "place": {
+              "$ref": "#/$defs/place"
+            }
+          },
+          "required": [
+            "date",
+            "place"
+          ]
+        },
+        "death": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "date": {
+              "$ref": "#/$defs/date"
+            },
+            "place": {
+              "$ref": "#/$defs/place"
+            }
+          },
+          "required": [
+            "date",
+            "place"
+          ]
+        },
+        "first_lasting_contribution_year": {
+          "$ref": "#/$defs/year"
+        },
+        "era_bucket": {
+          "$ref": "#/$defs/era"
+        },
+        "region_of_birth": {
+          "$ref": "#/$defs/region"
+        },
+        "region_of_work": {
+          "$ref": "#/$defs/region"
+        },
+        "sex_as_recorded": {
+          "$ref": "#/$defs/text"
+        },
+        "languages_of_work": {
+          "$ref": "#/$defs/list"
+        },
+        "occupations": {
+          "$ref": "#/$defs/list"
+        }
+      },
+      "required": [
+        "birth",
+        "death",
+        "first_lasting_contribution_year",
+        "era_bucket",
+        "region_of_birth",
+        "region_of_work",
+        "sex_as_recorded",
+        "languages_of_work",
+        "occupations"
+      ]
+    },
+    "contribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fields": {
+          "$ref": "#/$defs/list"
+        },
+        "lasting_original_contributions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/contribution"
+          }
+        },
+        "evidence_of_impact": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/impact"
+          }
+        },
+        "major_works": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/work"
+          }
+        },
+        "honours": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "definition_fit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "enum": [
+                    "clearly meets",
+                    "arguable",
+                    "does not meet"
+                  ]
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ],
+          "description": "Lane A: lasting original impact on documented criteria (not mastery without originality, transient fame, collectives)."
+        }
+      },
+      "required": [
+        "fields",
+        "lasting_original_contributions",
+        "evidence_of_impact",
+        "major_works",
+        "honours",
+        "definition_fit"
+      ]
+    },
+    "childhood": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "family_religion": {
+          "$ref": "#/$defs/text"
+        },
+        "family_religious_practice": {
+          "$ref": "#/$defs/text"
+        },
+        "parents_and_household": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "household_circumstances": {
+          "$ref": "#/$defs/text"
+        },
+        "schooling": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/schooling"
+          }
+        },
+        "early_mathematics": {
+          "$ref": "#/$defs/mathExposure"
+        },
+        "early_geometric_style_reasoning": {
+          "$ref": "#/$defs/text"
+        },
+        "early_science_exposure": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        },
+        "key_early_reading": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "childhood_mentors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "languages_in_childhood": {
+          "$ref": "#/$defs/list"
+        },
+        "notable_events": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        }
+      },
+      "required": [
+        "family_religion",
+        "family_religious_practice",
+        "parents_and_household",
+        "household_circumstances",
+        "schooling",
+        "early_mathematics",
+        "early_geometric_style_reasoning",
+        "early_science_exposure",
+        "key_early_reading",
+        "childhood_mentors",
+        "languages_in_childhood",
+        "notable_events"
+      ]
+    },
+    "worldview": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "unit": {
+          "const": "adult working worldview"
+        },
+        "working_years": {
+          "$ref": "#/$defs/text"
+        },
+        "nominal_affiliations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "self_described_science_religion_relation": {
+          "$ref": "#/$defs/text"
+        },
+        "primary_system": {
+          "$ref": "#/$defs/systemCode"
+        },
+        "secondary_system": {
+          "$ref": "#/$defs/systemCode"
+        },
+        "candidate_codes_considered": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/candidateCode"
+          }
+        },
+        "lio_axes": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "A_locus": {
+              "$ref": "#/$defs/axis"
+            },
+            "B_cause": {
+              "$ref": "#/$defs/axis"
+            },
+            "C_ledger": {
+              "$ref": "#/$defs/axis"
+            },
+            "D_authority": {
+              "$ref": "#/$defs/axis"
+            },
+            "E_scope": {
+              "$ref": "#/$defs/axis"
+            }
+          },
+          "required": [
+            "A_locus",
+            "B_cause",
+            "C_ledger",
+            "D_authority",
+            "E_scope"
+          ]
+        },
+        "mid_basin": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ]
+        },
+        "statements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quote"
+          }
+        },
+        "changes_over_life": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/event"
+          }
+        },
+        "coder_notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "unit",
+        "working_years",
+        "nominal_affiliations",
+        "self_described_science_religion_relation",
+        "primary_system",
+        "secondary_system",
+        "candidate_codes_considered",
+        "lio_axes",
+        "mid_basin",
+        "statements",
+        "changes_over_life"
+      ]
+    },
+    "heritage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "use": {
+          "const": "context only — never an outcome and never a worldview code"
+        },
+        "ethnic_or_communal_heritage": {
+          "$ref": "#/$defs/text"
+        },
+        "religious_heritage_by_birth": {
+          "$ref": "#/$defs/text"
+        },
+        "baptism_or_initiation": {
+          "$ref": "#/$defs/text"
+        },
+        "childhood_catechism": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "use",
+        "ethnic_or_communal_heritage",
+        "religious_heritage_by_birth",
+        "baptism_or_initiation",
+        "childhood_catechism"
+      ]
+    },
+    "timing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lane": {
+          "const": "A — descriptive facts; Lane B's H1 timing test reads them"
+        },
+        "major_work_period": {
+          "$ref": "#/$defs/text"
+        },
+        "age_at_first_lasting_contribution": {
+          "$ref": "#/$defs/int"
+        },
+        "first_evidence_of_lio_type_views": {
+          "$ref": "#/$defs/event"
+        },
+        "lio_views_relative_to_major_work": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "enum": [
+                    "held from childhood",
+                    "before major work",
+                    "during major work",
+                    "after major work",
+                    "no LIO-type views found",
+                    "unclear"
+                  ]
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ]
+        },
+        "worldview_during_major_work": {
+          "$ref": "#/$defs/text"
+        }
+      },
+      "required": [
+        "lane",
+        "major_work_period",
+        "age_at_first_lasting_contribution",
+        "first_evidence_of_lio_type_views",
+        "lio_views_relative_to_major_work",
+        "worldview_during_major_work"
+      ]
+    },
+    "lane_b": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "const": "Lane B — labeled belief model, not a finding"
+        },
+        "geometric_form_present": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "enum": [
+                    "yes",
+                    "partly",
+                    "no",
+                    "unclear"
+                  ]
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ],
+          "description": "did the person practise definition-to-consequence form without a reserved clause"
+        },
+        "form_acquired": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "enum": [
+                    "childhood or adolescence",
+                    "adulthood, before major work",
+                    "through the profession",
+                    "unclear"
+                  ]
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ]
+        },
+        "circle_present": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "certainty": {
+              "$ref": "#/$defs/certainty"
+            },
+            "cites": {
+              "$ref": "#/$defs/cites"
+            },
+            "how_known": {
+              "type": "string",
+              "description": "one or two sentences: what kind of evidence, and why this certainty"
+            },
+            "note": {
+              "type": "string"
+            },
+            "alternatives": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/alternative"
+              },
+              "description": "competing values from other sources, each cited"
+            },
+            "value": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/sentinel"
+                },
+                {
+                  "enum": [
+                    "yes",
+                    "partly",
+                    "no",
+                    "unclear"
+                  ]
+                }
+              ]
+            },
+            "rationale": {
+              "type": "string"
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "#/$defs/claimRules"
+            }
+          ],
+          "description": "the PANT circle (entity in Nature, Nature in entity), as distinct from form alone"
+        },
+        "reading": {
+          "type": "string",
+          "description": "what this case means for H1, stated as belief"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "label",
+        "geometric_form_present",
+        "form_acquired",
+        "circle_present"
+      ]
+    },
+    "institutions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/institution"
+      }
+    },
+    "collaborators": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/collaborator"
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "roster_status_reason": {
+          "$ref": "#/$defs/text"
+        },
+        "controversies": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/item"
+          }
+        },
+        "data_quality_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "open_questions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "roster_status_reason",
+        "controversies",
+        "data_quality_flags",
+        "open_questions"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "sentinel": {
+      "enum": [
+        "TODO",
+        "UNKNOWN",
+        "BELOW_THRESHOLD"
+      ],
+      "description": "TODO = not researched yet. UNKNOWN = researched, no reliable source gives it (say what was checked in how_known). BELOW_THRESHOLD = some evidence, but under certainty 0.5, so the value is withheld (describe the evidence in note)."
+    },
+    "certainty": {
+      "enum": [
+        1.0,
+        0.7,
+        0.5
+      ],
+      "description": "See docs/CODING_GUIDE.md. Worldview claims: 1.0 written profession, 0.7 consistent private letters, 0.5 scholarly reconstruction. Other facts: 1.0 established, 0.7 probable, 0.5 contested. Below 0.5: withhold the value (BELOW_THRESHOLD)."
+    },
+    "isoDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source",
+        "locator"
+      ],
+      "properties": {
+        "source": {
+          "type": "string",
+          "pattern": "^S[0-9]+$",
+          "description": "id of an entry in the sources list"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1,
+          "description": "page, folio, section, letter number, paragraph, or URL anchor"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "cites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/citation"
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "cites"
+      ],
+      "properties": {
+        "value": {},
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "claimRules": {
+      "description": "A filled value needs certainty, at least one citation and a how_known note. UNKNOWN / BELOW_THRESHOLD need how_known. TODO needs nothing.",
+      "if": {
+        "required": [
+          "value"
+        ],
+        "properties": {
+          "value": {
+            "const": "TODO"
+          }
+        }
+      },
+      "then": {},
+      "else": {
+        "if": {
+          "required": [
+            "value"
+          ],
+          "properties": {
+            "value": {
+              "enum": [
+                "UNKNOWN",
+                "BELOW_THRESHOLD"
+              ]
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "how_known"
+          ],
+          "properties": {
+            "how_known": {
+              "minLength": 1
+            }
+          }
+        },
+        "else": {
+          "required": [
+            "certainty",
+            "cites",
+            "how_known"
+          ],
+          "properties": {
+            "cites": {
+              "minItems": 1
+            },
+            "how_known": {
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "basis": {
+      "enum": [
+        "written_profession",
+        "consistent_private_letters",
+        "scholarly_reconstruction"
+      ],
+      "description": "Evidence basis for a worldview claim. Must agree with certainty: 1.0 / 0.7 / 0.5."
+    },
+    "lioScore": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4,
+      "description": "PROPOSED 0-4 scale (docs/OPEN_DECISIONS.md): 0 interventionist pole, 2 mixed, 4 LIO pole."
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "kind",
+        "citation"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^S[0-9]+$"
+        },
+        "type": {
+          "enum": [
+            "primary",
+            "secondary",
+            "tertiary"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "letter",
+            "diary or notebook",
+            "published work by the subject",
+            "archive record",
+            "scholarly edition",
+            "scholarly book",
+            "journal article",
+            "book chapter",
+            "encyclopedia",
+            "institutional page",
+            "database",
+            "other"
+          ]
+        },
+        "citation": {
+          "type": "string",
+          "minLength": 10,
+          "description": "full citation, Chicago author-date or notes style"
+        },
+        "author": {
+          "type": "string"
+        },
+        "year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "url": {
+          "type": "string"
+        },
+        "archive_url": {
+          "type": "string"
+        },
+        "accessed": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "reliability_note": {
+          "type": "string"
+        },
+        "used_for": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "changeLogEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "by",
+        "summary"
+      ],
+      "properties": {
+        "date": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "by": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "int": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "bool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "boolean"
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "list": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "minItems": 1
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "date": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$"
+            }
+          ]
+        },
+        "approx": {
+          "type": "boolean"
+        },
+        "calendar": {
+          "enum": [
+            "gregorian",
+            "julian",
+            "other"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "YYYY, YYYY-MM or YYYY-MM-DD; negative year = BCE (astronomical numbering is NOT used: -384 means 384 BCE)"
+    },
+    "year": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "approx": {
+          "type": "boolean"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "negative = BCE"
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "modern_name": {
+          "type": "string"
+        },
+        "polity_then": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "era": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "enum": [
+                "before -500",
+                "-500 to 499",
+                "500 to 1399",
+                "1400 to 1599",
+                "1600 to 1749",
+                "1750 to 1849",
+                "1850 to 1949",
+                "1950 on"
+              ]
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "PROPOSED buckets on the year of the first lasting contribution (docs/OPEN_DECISIONS.md)"
+    },
+    "region": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "enum": [
+                "Northern Europe",
+                "Western Europe",
+                "Southern Europe",
+                "Eastern Europe",
+                "Middle East and North Africa",
+                "Sub-Saharan Africa",
+                "Central Asia",
+                "South Asia",
+                "East Asia",
+                "Southeast Asia",
+                "North America",
+                "Latin America and Caribbean",
+                "Oceania"
+              ]
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "PROPOSED macro-regions (docs/OPEN_DECISIONS.md)"
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "years": {
+          "type": "string"
+        },
+        "age": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "kind": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "generic dated fact; value is the statement"
+    },
+    "contribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "discovery",
+            "theory",
+            "law or principle",
+            "invention",
+            "method",
+            "work",
+            "body of work",
+            "concept or term",
+            "institution",
+            "other"
+          ]
+        },
+        "lasting": {
+          "type": "string",
+          "description": "what still uses or rests on it"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "impact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "kind": {
+          "enum": [
+            "named after them",
+            "standard textbook canon",
+            "assessment by a later major figure",
+            "honours in lifetime",
+            "institutional or technological lineage",
+            "scholarly consensus",
+            "other"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "work": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "book",
+            "paper or paper series",
+            "lecture series",
+            "artwork",
+            "composition",
+            "device",
+            "notebook",
+            "other"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "schooling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "stage": {
+          "enum": [
+            "home",
+            "dame or charity school",
+            "religious school",
+            "grammar or secondary school",
+            "apprenticeship",
+            "tutor",
+            "university",
+            "self-directed",
+            "other"
+          ]
+        },
+        "institution": {
+          "type": "string"
+        },
+        "years": {
+          "type": "string"
+        },
+        "ages": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "mathExposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "enum": [
+                "none known",
+                "arithmetic only",
+                "basic algebra",
+                "geometry (Euclid-style proof)",
+                "advanced mathematics",
+                "other"
+              ]
+            }
+          ]
+        },
+        "ages": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "year": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        },
+        "age": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "systemCode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "pattern": "^[A-Z0-9_]+$"
+            }
+          ]
+        },
+        "basis": {
+          "$ref": "#/$defs/basis"
+        },
+        "rationale": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ],
+      "description": "code from systems/ (the 77 abbr codes). Validator checks the code exists and basis matches certainty."
+    },
+    "axis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "$ref": "#/$defs/lioScore"
+            }
+          ]
+        },
+        "basis": {
+          "$ref": "#/$defs/basis"
+        },
+        "rationale": {
+          "type": "string",
+          "description": "why this score, in terms of the axis poles"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "quote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "cites",
+        "verified_against",
+        "verified_on"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "verbatim, with original spelling; mark cuts with [...]"
+        },
+        "cites": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "date": {
+          "type": "string",
+          "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$"
+        },
+        "context": {
+          "type": "string",
+          "description": "addressee / occasion / what the passage is answering"
+        },
+        "axes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "A_locus",
+              "B_cause",
+              "C_ledger",
+              "D_authority",
+              "E_scope"
+            ]
+          }
+        },
+        "kind": {
+          "enum": [
+            "written profession (public)",
+            "private letter",
+            "notebook or diary",
+            "reported speech",
+            "other"
+          ]
+        },
+        "verified_against": {
+          "enum": [
+            "primary transcription",
+            "primary facsimile",
+            "scholarly edition",
+            "secondary quotation"
+          ]
+        },
+        "verified_on": {
+          "$ref": "#/$defs/isoDate"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "institution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "role": {
+          "type": "string"
+        },
+        "years": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "employer",
+            "patron or funder",
+            "academy or learned society",
+            "religious body",
+            "university",
+            "government or state body",
+            "commercial",
+            "other"
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "collaborator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "certainty": {
+          "$ref": "#/$defs/certainty"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        },
+        "how_known": {
+          "type": "string",
+          "description": "one or two sentences: what kind of evidence, and why this certainty"
+        },
+        "note": {
+          "type": "string"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "description": "competing values from other sources, each cited"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/sentinel"
+            },
+            {
+              "type": "string",
+              "minLength": 1
+            }
+          ]
+        },
+        "roster_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "relation": {
+          "enum": [
+            "teacher",
+            "mentor or employer",
+            "collaborator",
+            "student or assistant",
+            "rival or critic",
+            "correspondent",
+            "influenced by",
+            "influenced",
+            "family",
+            "other"
+          ]
+        },
+        "years": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/$defs/claimRules"
+        }
+      ]
+    },
+    "candidateCode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "code",
+        "reason"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "pattern": "^[A-Z0-9_]+$"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "cites": {
+          "$ref": "#/$defs/cites"
+        }
+      }
+    }
+  }
+}
