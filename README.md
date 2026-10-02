@@ -19,10 +19,12 @@ See [CHANGELOG.md](CHANGELOG.md) for details as they land.
 
 Past versions stay in their own repos so their history doesn't change.
 
+> **Content warning: everything before V7.** V5 and V6 use methods that are now retired, including V6's ranking of religions by dividing counts of historical geniuses by 2025 religious population figures. Their results are not findings, and they compare specific faiths in ways the current study no longer does. They're kept only so the path to the current method stays visible.
+
 | Version | Where | Notes |
 | :--- | :--- | :--- |
-| V5 | [V5 PDF](https://github.com/neuresthetics/neuresthetics_v7/blob/main/V6_(history)/V5/Genius%20Data%20Analysis%20V5%20(as%20dev%20history%20only).pdf) | Dev history only. |
-| V6 | [NEUR-V6-DATA](https://github.com/neuresthetics/NEUR-V6-DATA) | Older rate-table approach, retired as a finding. |
+| V5 | [V5 PDF](https://github.com/neuresthetics/neuresthetics_v7/blob/main/V6_(history)/V5/Genius%20Data%20Analysis%20V5%20(as%20dev%20history%20only).pdf) | Content warning. Dev history only. |
+| V6 | [NEUR-V6-DATA](https://github.com/neuresthetics/NEUR-V6-DATA) | Content warning. Retired rate-table approach. |
 | V7 / V7.1 | [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7) | Two-lane paper, neurology sister paper, data book, combined JSON. |
 
 ## Site
