@@ -12,6 +12,7 @@ Files are added one person per run (`docs/RUNBOOK.md`). Not every roster person 
 |---|---|
 | [`a/aquinas-thomas.md`](a/aquinas-thomas.md) | draft, unreviewed |
 | [`f/faraday-michael.md`](f/faraday-michael.md) | worked example, unreviewed |
+| [`i/ibn-sina.md`](i/ibn-sina.md) | draft, unreviewed |
 | [`m/maxwell-james-clerk.md`](m/maxwell-james-clerk.md) | draft, unreviewed |
 | [`n/newton-isaac.md`](n/newton-isaac.md) | draft, unreviewed |
 
