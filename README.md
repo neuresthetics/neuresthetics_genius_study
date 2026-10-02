@@ -8,12 +8,50 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 
 v8 starts by fixing the data in v7.1:
 
-- The genius roster gets rebuilt from the five original model lists, which v7.1 didn't fully use.
-- Frequency becomes the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
-- The two belief systems that were both labeled "Classical Theism" get separate names.
-- Status counts and the file inventory get corrected to match what's actually in the repo.
+- The genius roster is rebuilt from the five original model lists, which v7.1 didn't fully use. It now has 1,382 people, up from 482.
+- Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
+- Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
+- The two belief systems that were both labeled "Classical Theism" get separate display names (proposed, pending sign-off).
 
-See [CHANGELOG.md](CHANGELOG.md) for details as they land.
+See [CHANGELOG.md](CHANGELOG.md) for details.
+
+## Repo layout
+
+| Path | What's there |
+| :--- | :--- |
+| `data/sources/` | Raw inputs, read-only, with checksums: the five model lists and the v7.1 combined JSON. |
+| `data/roster/` | The v8 roster (`roster.csv`), alias map, merge log, hand-curated merges, and person ids. |
+| `people/` | One Markdown file per person, `people/<first letter>/<id>.md`. |
+| `systems/` | One Markdown file per belief system (77), named by the v7.1 code. |
+| `schema/` | JSON Schemas for person and system records. |
+| `templates/` | Blank person and system records to copy. |
+| `scripts/` | Roster rebuild, id assignment, validators, coverage report, data dictionary generator. |
+| `docs/` | Method, data dictionary, coding guide, runbook, open decisions. |
+| `reports/` | Generated reports (coverage). |
+| `versions/` | Per-version notes and the v7.1 → v8 roster diff. |
+| `papers/` | v8 papers, once written. |
+
+## How the database grows
+
+One person per run. Each run picks the next person, researches them from primary and scholarly sources, fills their record (leaving `TODO` where nothing is sourced yet), validates it, and commits. Belief-system records are extended the same way. Michael Faraday (`people/f/faraday-michael.md`) and Pantheism (`systems/PANT.md`) are the worked examples.
+
+```bash
+pip install -r scripts/requirements.txt
+python3 scripts/rebuild_roster.py --check   # roster reproduces from the raw lists
+python3 scripts/assign_ids.py --check       # person ids are up to date
+python scripts/validate_people.py           # person records
+python scripts/validate_systems.py          # belief-system records
+python scripts/coverage_report.py           # writes reports/coverage.md
+```
+
+## Docs
+
+- [Method](docs/METHOD.md): how the roster, ids and records are built, and why.
+- [Data dictionary](docs/DATA_DICTIONARY.md): every file, column and field.
+- [Coding guide](docs/CODING_GUIDE.md): the v7.1 coding rules, certainty, worldview codes, LIO axes, and system records.
+- [Runbook](docs/RUNBOOK.md): step by step for one person (or system) per run.
+- [Open decisions](docs/OPEN_DECISIONS.md): choices waiting on sign-off.
+- [Coverage](reports/coverage.md): what exists so far.
 
 ## History
 
