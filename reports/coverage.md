@@ -99,9 +99,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 69 |
+| stub | 68 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 7 |
+| draft — unreviewed | 8 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -117,16 +117,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 24 | 207 | 0 | 0 | 10.4% |
-| origins | 267 | 60 | 207 | 0 | 0 | 22.5% |
-| metaphysics | 847 | 88 | 759 | 0 | 0 | 10.4% |
-| lio_axes | 385 | 40 | 345 | 0 | 0 | 10.4% |
-| epistemology | 77 | 8 | 69 | 0 | 0 | 10.4% |
-| ethics | 77 | 6 | 71 | 0 | 0 | 7.8% |
-| practice | 154 | 15 | 139 | 0 | 0 | 9.7% |
-| science | 154 | 16 | 138 | 0 | 0 | 10.4% |
+| classification | 231 | 27 | 204 | 0 | 0 | 11.7% |
+| origins | 269 | 65 | 204 | 0 | 0 | 24.2% |
+| metaphysics | 847 | 99 | 748 | 0 | 0 | 11.7% |
+| lio_axes | 385 | 45 | 340 | 0 | 0 | 11.7% |
+| epistemology | 77 | 9 | 68 | 0 | 0 | 11.7% |
+| ethics | 77 | 7 | 70 | 0 | 0 | 9.1% |
+| practice | 154 | 17 | 137 | 0 | 0 | 11.0% |
+| science | 154 | 18 | 136 | 0 | 0 | 11.7% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2269 | 260 | 2009 | 0 | 0 | 11.5% |
+| **all** | 2271 | 290 | 1981 | 0 | 0 | 12.8% |
 
 ### Systems that are past stub stage
 
@@ -139,4 +139,5 @@ Display label status:
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
+| PLATO | Platonism | draft — unreviewed | 30/31 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
