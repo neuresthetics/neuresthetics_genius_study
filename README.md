@@ -2,7 +2,9 @@
 
 A study of where remembered genius sits on a scale of lawful, non-intervening order, plus a labeled belief model of how learning that order early might pay off. All versions live here. The version number is a detail, not the name.
 
-**Current version:** v8 (in progress). Until v8 is published, the latest complete release is [v7.1](https://github.com/neuresthetics/neuresthetics_v7).
+**Current version:** v8 (in progress). The [v8.0-alpha prerelease](https://github.com/neuresthetics/neuresthetics_genius_study/releases/tag/v8.0-alpha) has the scaffolding and draft records, but no results. Until v8 is published, the latest complete release is [v7.1](https://github.com/neuresthetics/neuresthetics_v7).
+
+**Study page:** [neuresthetics.github.io/study](https://neuresthetics.github.io/study/)
 
 ## Progress status
 
@@ -14,7 +16,7 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Item | Status |
 |---|---|
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
-| People coded (of core) | 7 / 441 (draft, unreviewed) |
+| People coded (of core) | 8 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
 | Decisions settled | 21 / 21 |
 | Audits | 3 blind lens runs on one 115-claim packet (commit eff4700); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
