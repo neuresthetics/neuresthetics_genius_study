@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
 
 identity:
   id: newton-isaac
@@ -114,7 +115,7 @@ childhood:
   early_geometric_style_reasoning: {value: "None documented before 18. He first read Euclid's Elements (Barrow's edition) in autumn 1663, at 20, after failing to follow the mathematics in an astrology book; he then read the whole book.", certainty: 0.7, cites: [{source: S2, locator: "Biography (de Moivre's account)"}], how_known: "MacTutor reports de Moivre's account. One line of evidence."}
   early_science_exposure:
     - {value: "Built model machines such as clocks and windmills at Grantham", age: "c. 12–18", certainty: 0.5, cites: [{source: S1, locator: "Formative influences ('anecdotes')"}, {source: S2, locator: "Biography"}], how_known: "Both sources call these anecdotes; S2 warns they may have been made up later."}
-  key_early_reading: []  # none documented: S2 says 'We know nothing about what Isaac learnt in preparation for university'; see open_questions
+  key_early_reading: [{value: UNKNOWN, how_known: "None documented in S1–S3. MacTutor (S2) says 'We know nothing about what Isaac learnt in preparation for university'. See open_questions."}]
   childhood_mentors:
     - {value: "His uncle William Ayscough (Cambridge MA), who persuaded his mother to send him back to school and to the university", name: "William Ayscough", role: uncle, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1 ('Hannah's brother')"}], how_known: "Two sources."}
     - {value: "Stokes, headmaster at Grantham, with whom he lodged in 1660–61", name: "Stokes (headmaster)", years: "1660–1661", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1"}], how_known: "Two sources."}

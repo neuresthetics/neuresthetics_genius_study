@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-01 nothing is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 one item is open (P6). When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -36,7 +36,24 @@ All 19 recommendations below were decided on 2026-10-01. Evidence files are in `
 
 ## Open
 
-None.
+### P6. P4: is B_cause scored on the person's account of nature?
+**Status: open (added 2026-10-02 by the overnight people run). Nothing downstream treats it as settled.**
+
+P4 says B_cause is "scored for the domain of the person's work" (METHOD §1.1). For a natural scientist that domain is nature. For a theologian it is unclear: is the domain the person's account of the natural order, or their whole theology, miracles and grace included? The P4 recommendation note says "B should be scored for whatever their work was", which points to the whole theology, but the v7.1 passages it rests on ("devout and lawful", "Classical theism can sit mid-to-high on lawfulness") are about lawful nature.
+
+The case that raised it is Thomas Aquinas (`people/a/aquinas-thomas.md`):
+
+- Scored on his whole theology, B_cause = 2 at 1.0. He holds an order of secondary causes, and petition does not change God, but God "can do something outside this order created by Him, when He chooses" (ST I q. 105 a. 6), and the miracles are evidence for the faith. A = 1, so P4 gives neither true nor false.
+- Scored on his account of nature only, B_cause = 3. That is the score the CLASS_THEISM system record gives Thomism, and with A = 1 the test gives true.
+
+A second, smaller gap: P4's "otherwise UNKNOWN or BELOW_THRESHOLD" also catches B = 2 at high certainty. The recommendation note meant UNKNOWN for scores that are "missing or below 0.7". In the coding guide UNKNOWN means "researched, not in any reliable source", which does not fit a case where the evidence is in and the test has no branch for it. Until this is decided, the Aquinas record has `mid_basin: TODO` with a note.
+
+**Options:**
+1. Score B on the person's account of the natural order, for everyone. Theological miracles count against B only when they reach into the person's account of nature.
+2. Score B on the whole of the person's work, as now. Then decide what a B = 2 result is: false, a new "mixed" outcome, or TODO/UNKNOWN.
+3. Keep one B score, but add a `B_cause_in_nature` field in a later schema version (the P4 note already floated a `B_cause_in_work` field) and run the test on that field.
+
+**Proposal (people run, 2026-10-02, PROPOSED only):** option 1, with the theology-wide reading kept in the B rationale. The v7.1 texts that define the group are about lawful nature. Under option 1, Aquinas would be B 3 and mid_basin true; Ibn Sina is unchanged (B 3 either way). Confidence: medium. Also settle the label for "evidence complete, test has no branch" (suggest TODO with a note, not UNKNOWN).
 
 
 ## Decided

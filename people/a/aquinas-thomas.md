@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from the Summa theologiae (English Dominican translation) and three reference sources. mid_basin UNKNOWN: B_cause scored 2, which the P4 test does not cover. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin changed from UNKNOWN to TODO with a note: the evidence is in, but P4 does not say whether B is scored on his theology or his account of nature (new open item P6). key_early_reading changed from an empty list to UNKNOWN, as the coding guide asks."}
 
 identity:
   id: aquinas-thomas
@@ -105,7 +106,7 @@ childhood:
   early_geometric_style_reasoning: {value: "Aristotelian logic (the 'old' and 'new' logic of the Organon) as part of the arts course at Naples from about age 14; no specific record of his own logic study was found.", certainty: 0.5, cites: [{source: S3, locator: "§1.a"}], how_known: "IEP describes the logic then taught and says he read Aristotle at Naples. Reconstruction, 0.5. Facts only; the Lane B reading is in lane_b."}
   early_science_exposure:
     - {value: "Met the scientific and philosophical works newly translated from Greek and Arabic at the University of Naples", year: "1239–1244", age: "c. 14–19", certainty: 1.0, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}], how_known: "Two sources."}
-  key_early_reading: []  # Aristotle at Naples is recorded under schooling; no other early reading documented
+  key_early_reading: [{value: UNKNOWN, how_known: "No named early book in S1–S3. Aristotle at Naples is recorded under schooling."}]
   childhood_mentors:
     - {value: "Peter of Ireland, who may have introduced him to Aristotle at Naples", name: "Peter of Ireland", years: "1239–1244", certainty: 0.5, cites: [{source: S3, locator: "§1.a ('perhaps introduced to him by Peter of Ireland')"}], how_known: "One source, hedged."}
   languages_in_childhood: {value: [Italian vernacular, Latin], certainty: 0.5, cites: [{source: S3, locator: "§1.a (education at Monte Cassino)"}], how_known: "Latin from his monastic schooling; the local vernacular is assumed, not stated. Reconstruction."}
@@ -174,8 +175,8 @@ worldview:
       how_known: "Summa theologiae; written profession, so 1.0."
       rationale: "Mixed. Same rules for all: all things, even individual ones, are under one providence (I q. 22 a. 2), and the general principles of natural law are 'the same for all' (I-II q. 94 a. 4). But salvation runs by grace that God gives to some and not to others: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). That is a reserved in-group within an otherwise common order, so 2."
   mid_basin:
-    value: UNKNOWN
-    how_known: "Applied the P4 test to the axis scores above. A_locus = 1 (≤ 1) at 1.0, but B_cause = 2 at 1.0. P4 gives true only for B ≥ 3 and false only for B ≤ 1 (with A ≤ 1). B = 2 at high certainty is not covered by either branch, and P4's 'otherwise' wording names only missing or low-certainty scores. UNKNOWN is entered as the nearest allowed value; this is a gap in the test, not missing evidence. If a reviewer scores B = 3 (nature only, as the CLASS_THEISM system record does), the result is true. F = 4, so 'first-rank' is met."
+    value: TODO
+    note: "Not a gap in the evidence: the P4 test does not settle this case (open item P6 in docs/OPEN_DECISIONS.md). A_locus = 1 at 1.0. B_cause, scored on his whole theology as P4's 'domain of the person's work' reads for a theologian, is 2 at 1.0, and P4 has no true or false branch for B = 2. Scored on his account of the natural order only, B would be 3 (as the CLASS_THEISM system record scores Thomism), and the test would give true. F = 4, so first-rank is met. Set the value once P6 is decided."
   statements:
     - text: "Therefore some intelligent being exists by whom all natural things are directed to their end; and this being we call God."
       cites: [{source: S4, locator: "I q. 2 a. 3 (fifth way)"}]
@@ -287,7 +288,7 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "Stopped writing, leaving the Summa theologiae unfinished, after a powerful religious experience while writing on the sacraments", year: 1273, age: "c. 48", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Two sources agree. It ends his writing; it is not a change of system."}
-  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B = 2 and D = 1, where the CLASS_THEISM system record has B 3 and D 2 for the code as a whole. B = 2 leaves mid_basin UNKNOWN, because P4 does not say what to do with B = 2 at high certainty; this should go back to the decision log. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
+  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B = 2 and D = 1, where the CLASS_THEISM system record has B 3 and D 2 for the code as a whole. B = 2 leaves mid_basin TODO, because P4 does not say whether B is scored on his theology or on his account of nature; this is open item P6. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -347,7 +348,7 @@ review:
     - "Section numbers for S2 and S3 are the coder's reading of the fetched page headings."
   open_questions:
     - "Read the Summa contra gentiles III (providence, miracles) and the Sentences commentary to date his views earlier and to check B_cause."
-    - "P4 does not cover B_cause = 2 at high certainty. Decide whether such a case is UNKNOWN, false, or should be scored on nature only (B 3), which would make mid_basin true."
+    - "Open item P6 (docs/OPEN_DECISIONS.md): score B_cause on his whole theology (2; P4 has no branch) or on his account of nature (3; mid_basin true)?"
     - "Torrell's biography for household practice, baptism and childhood instruction."
 
 sources:
@@ -402,7 +403,7 @@ sources:
 
 # Thomas Aquinas
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored at 1.0; mid_basin UNKNOWN because B_cause = 2, which the P4 test does not cover.
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored at 1.0; mid_basin TODO because P4 does not settle B_cause for a theologian (open item P6).
 
 ## Summary
 
@@ -429,7 +430,7 @@ The family held a modest feudal domain and served Emperor Frederick II. His fath
 
 Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
 
-Coding: CLASS_THEISM at 1.0. A 1, B 2, C 1, D 1, E 2, all at 1.0 from written profession. mid_basin UNKNOWN (see Open questions).
+Coding: CLASS_THEISM at 1.0. A 1, B 2, C 1, D 1, E 2, all at 1.0 from written profession. mid_basin TODO until open item P6 is decided (see Open questions).
 
 ## Heritage (context only)
 
@@ -445,7 +446,7 @@ Everything in this section is Lane B: labeled belief, not a finding. The form is
 
 ## Open questions
 
-- P4 has no branch for B_cause = 2 at high certainty. If B is scored for nature only (3), mid_basin is true.
+- Open item P6: is B_cause scored on his theology (2, no P4 branch) or on his account of nature (3, mid_basin true)?
 - Read the Summa contra gentiles III and the Sentences commentary for earlier dates and a check on B.
 - Torrell's biography for household practice, baptism and early instruction.
 
