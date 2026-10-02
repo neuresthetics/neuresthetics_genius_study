@@ -24,7 +24,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Michael Faraday", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "Biography"}], how_known: "Both sources use this name; no other given names reported."}
-  native_name: {value: UNKNOWN, how_known: "Not applicable: English was his language and the roster name is already the native form."}
+  native_name: {value: "Michael Faraday", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
   aliases:
     - {name: "Faraday-Michael", kind: "roster alias"}
     - {name: "Michael-Faraday", kind: "roster alias"}
@@ -155,7 +155,7 @@ worldview:
       kind: "private letter"
       verified_against: "primary transcription"
       verified_on: 2026-10-01
-    - text: "Such peace is alone in the gift of God; and as it is he who gives it, why should we be afraid? His unspeakable gift in his beloved son is the ground of no doubtful hope;- and there is the rest for those who like you & me are drawing near the latter end of our terms here below.-"
+    - text: "I am, I hope, very thankful that in the withdrawal of the powers & things of this life,- the good hope is left with me, which makes the contemplation of death a comfort - not a fear. Such peace is alone in the gift of God; and as it is he who gives it, why should we be afraid? His unspeakable gift in his beloved son is the ground of no doubtful hope;- and there is the rest for those who like you & me are drawing near the latter end of our terms here below.-"
       cites: [{source: S4, locator: "first paragraph"}]
       date: "1861-09-19"
       context: "Letter to his friend and fellow physicist Auguste De La Rive, three days before his 70th birthday."
