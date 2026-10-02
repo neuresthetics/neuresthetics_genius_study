@@ -88,6 +88,7 @@ All 19 items in `docs/OPEN_DECISIONS.md` were decided by Jason on 2026-10-01. No
 Sourced drafts of the systems the first-pool people are most likely to be coded under. v7.1 scores and notes unchanged; LIO axes on the 0–4 scale (P1); every quotation checked word for word against the fetched source page. All `draft — unreviewed`.
 
 - **2026-10-01, CLASS_THEISM** (record version 3): filled from 11 SEP entries. LIO A 1 (0.7), B 3 (0.7), C 2 (0.5), D 2 (0.7), E 3 (0.5). Flags: the v7.1 note lists Aristotle (ARIST by the founders rule; no creation ex nihilo) and Leibniz (unchecked).
+- **2026-10-01, CLTHEI** (record version 3): filled from 6 SEP entries and Britannica "Theism" and "Deism". LIO A 0 (1.0), B 1 (0.7), C 1 (0.5), D 1 (0.5), E 1 (0.7). Flag: the v7.1 note blames the problem of evil, which SEP treats as a problem for traditional theism as a whole, CLASS_THEISM included.
 
 ### People
 

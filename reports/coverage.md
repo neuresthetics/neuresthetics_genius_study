@@ -97,9 +97,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 75 |
+| stub | 74 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 1 |
+| draft — unreviewed | 2 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -115,20 +115,21 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 6 | 225 | 0 | 0 | 2.6% |
-| origins | 240 | 15 | 225 | 0 | 0 | 6.2% |
-| metaphysics | 847 | 22 | 825 | 0 | 0 | 2.6% |
-| lio_axes | 385 | 10 | 375 | 0 | 0 | 2.6% |
-| epistemology | 77 | 2 | 75 | 0 | 0 | 2.6% |
+| classification | 231 | 9 | 222 | 0 | 0 | 3.9% |
+| origins | 243 | 21 | 222 | 0 | 0 | 8.6% |
+| metaphysics | 847 | 33 | 814 | 0 | 0 | 3.9% |
+| lio_axes | 385 | 15 | 370 | 0 | 0 | 3.9% |
+| epistemology | 77 | 3 | 74 | 0 | 0 | 3.9% |
 | ethics | 77 | 2 | 75 | 0 | 0 | 2.6% |
-| practice | 154 | 3 | 151 | 0 | 0 | 1.9% |
-| science | 154 | 4 | 150 | 0 | 0 | 2.6% |
+| practice | 154 | 5 | 149 | 0 | 0 | 3.2% |
+| science | 154 | 6 | 148 | 0 | 0 | 3.9% |
 | adherents | 77 | 0 | 77 | 0 | 0 | 0.0% |
-| **all** | 2242 | 64 | 2178 | 0 | 0 | 2.9% |
+| **all** | 2245 | 94 | 2151 | 0 | 0 | 4.2% |
 
 ### Systems that are past stub stage
 
 | code | display label | review status | claims filled | revised rubric |
 |---|---|---|---|---|
 | CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
+| CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
