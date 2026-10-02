@@ -96,9 +96,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 76 |
+| stub | 75 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 0 |
+| draft — unreviewed | 1 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -114,19 +114,20 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 3 | 228 | 0 | 0 | 1.3% |
-| origins | 235 | 7 | 228 | 0 | 0 | 3.0% |
-| metaphysics | 847 | 11 | 836 | 0 | 0 | 1.3% |
-| lio_axes | 385 | 5 | 380 | 0 | 0 | 1.3% |
-| epistemology | 77 | 1 | 76 | 0 | 0 | 1.3% |
-| ethics | 77 | 1 | 76 | 0 | 0 | 1.3% |
-| practice | 154 | 1 | 153 | 0 | 0 | 0.6% |
-| science | 154 | 2 | 152 | 0 | 0 | 1.3% |
+| classification | 231 | 6 | 225 | 0 | 0 | 2.6% |
+| origins | 240 | 15 | 225 | 0 | 0 | 6.2% |
+| metaphysics | 847 | 22 | 825 | 0 | 0 | 2.6% |
+| lio_axes | 385 | 10 | 375 | 0 | 0 | 2.6% |
+| epistemology | 77 | 2 | 75 | 0 | 0 | 2.6% |
+| ethics | 77 | 2 | 75 | 0 | 0 | 2.6% |
+| practice | 154 | 3 | 151 | 0 | 0 | 1.9% |
+| science | 154 | 4 | 150 | 0 | 0 | 2.6% |
 | adherents | 77 | 0 | 77 | 0 | 0 | 0.0% |
-| **all** | 2237 | 31 | 2206 | 0 | 0 | 1.4% |
+| **all** | 2242 | 64 | 2178 | 0 | 0 | 2.9% |
 
 ### Systems that are past stub stage
 
 | code | display label | review status | claims filled | revised rubric |
 |---|---|---|---|---|
+| CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
