@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.0"
-  record_version: 1
+  record_version: 2
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-01
   change_log:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example created to show the record structure. Only well-sourced fields filled; everything else TODO. Not reviewed."}
+    - {date: 2026-10-01, by: "Grok Bot", summary: "1844 exclusion: reason, length and restoration added from Cantor 2020 (S8), Brooke 1991 (S9) and Gladstone 1872/1873 (S10, S11); second eldership after 1860 added. Exact readmission date still a gap."}
 
 identity:
   id: faraday-michael
@@ -124,7 +125,10 @@ worldview:
     - {value: "Joined the Sandemanian church by confession of faith within days of his marriage (12 June 1821)", year: 1821, role: member, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One historian's account."}
     - {value: "Deacon", year: 1832, role: deacon, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One source."}
     - {value: "Elder; he preached ('exhortations') at Sandemanian meetings", year: 1840, role: elder, certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One source."}
-    - {value: "Excluded from the Sandemanians in 1844", year: 1844, certainty: 0.7, cites: [{source: S6, locator: "article title"}], how_known: "Stated in the title of a history-of-science journal article. The article body (reasons, and the readmission) was not read."}
+    - {value: "Excluded from the London Sandemanian church in 1844, which also ended his first term as elder", year: 1844, role: elder, certainty: 1.0, cites: [{source: S10, locator: "p. 36"}, {source: S8, locator: "section 'Primitive Christianity', para. 3"}, {source: S6, locator: "article title"}], how_known: "Gladstone, who knew him, says the first eldership ('between 1840 and 1844') 'came to a close through his separation both from his office and from the Church itself'. Cantor (S6 title, S8) agrees. Independent sources, no dispute, so 1.0."}
+    - {value: "Restored to membership after a few weeks, in the spring of 1844", year: 1844, certainty: 0.7, cites: [{source: S8, locator: "section 'Primitive Christianity', para. 3"}, {source: S10, locator: "p. 36"}], how_known: "Cantor gives the length and season: 'for a few weeks in the spring of 1844'. Gladstone confirms the restoration ('was after a while restored to the rights of membership') but gives no date. The timing rests on one historian, so 0.7. The exact day of readmission is not in any source read (see open_questions)."}
+    - {value: "Reason for the 1844 exclusion: an internal dispute over church discipline", year: 1844, certainty: 0.7, cites: [{source: S8, locator: "section 'Primitive Christianity', para. 3"}, {source: S9, locator: "para. 7"}], how_known: "Cantor writes that they excluded him 'owing to an internal dispute over church discipline' (S8). Brooke's review of Cantor's 1991 book (S9) reports that the Queen story 'is called into question by Cantor’s evidence'. S9 depends on Cantor, so this is one line of evidence: 0.7. The BJHS article itself (S6) was not read, so what the dispute was about is not recorded here.", alternatives: [{value: "He missed a Sunday love feast because he was the Queen's guest, and defended obeying her", cites: [{source: S11, locator: "p. 35"}], note: "Gladstone's first edition (1872) gives this as what the reason 'is said to have been': 'it appeared not only that he had been the guest of the Queen, but that he was ready to justify his own conduct in obeying her commands'. His second edition drops it and says the reason 'is unknown except to the parties immediately concerned' (S10, p. 36). Not preferred."}]}
+    - {value: "Elder again after 1860", year: "after 1860", role: elder, certainty: 0.7, cites: [{source: S10, locator: "p. 36"}], how_known: "Gladstone gives his periods of eldership as 'between 1840 and 1844, or after 1860', and says he was restored 'eventually to the office of elder'. One contemporary source; no exact start date."}
     - {value: "Resigned his eldership", year: 1864, certainty: 0.7, cites: [{source: S5, locator: "p. 4"}], how_known: "One source."}
   self_described_science_religion_relation:
     value: "In conversation and correspondence he kept religion and natural philosophy apart ('two distinct things'), while holding that the works of God cannot contradict the higher things of faith."
@@ -194,7 +198,7 @@ institutions:
   - {value: "Royal Military Academy, Woolwich", role: "Professor of Chemistry", years: "1830–1851", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
   - {value: "The Admiralty", role: "Scientific Adviser", years: "from 1829", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
   - {value: "Trinity House (lighthouse authority)", role: "Scientific Adviser", years: "1836–1865", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S5, locator: "p. 3"}], how_known: "Two sources agree."}
-  - {value: "Sandemanian church, London (Paul's Alley meeting house)", role: "member, deacon, elder", years: "1821–1867, with an exclusion in 1844", kind: "religious body", certainty: 0.7, cites: [{source: S5, locator: "pp. 1–2, 4"}], how_known: "One historian's account."}
+  - {value: "Sandemanian church, London (Paul's Alley meeting house)", role: "member, deacon, elder", years: "1821–1867, with an exclusion of a few weeks in spring 1844", kind: "religious body", certainty: 0.7, cites: [{source: S5, locator: "pp. 1–2, 4"}, {source: S8, locator: "section 'Primitive Christianity', para. 3"}], how_known: "Russell for the span of membership; Cantor for the length of the 1844 exclusion. One historian each."}
   - {value: "The Crown (Queen Victoria): Civil List pension (1836) and a Grace and Favour house at Hampton Court (1858)", kind: "patron or funder", years: "1836–1867", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
 
 collaborators:
@@ -213,12 +217,14 @@ review:
   data_quality_flags:
     - "Start at the Royal Institution: S1 says he 'joined Davy in 1812'; S2 and S5 give 1813. 1813 is used (two sources)."
     - "Birth date: S5's gravestone transcription gives 21 September 1791; S1 and Faraday's own letter (S4) give 22 September."
-    - "A second term as elder (often given as 1860–1864) is reported elsewhere but not confirmed in the sources consulted."
+    - "Second term as elder: Gladstone gives 'after 1860' (S10, p. 36). The often-cited start year 1860 is not confirmed to the year, and the 1864 resignation is from S5 only."
+    - "Gladstone changed his account of the 1844 exclusion between editions: the Queen story is in the 1872 first edition (S11, p. 35) and gone from the 1873 second edition (S10, p. 36). Later writers who repeat the Queen story are following the first edition."
   open_questions:
     - "Primary code: CHRIST, CLTHEI, or something else? Needs a reviewed coding pass (docs/CODING_GUIDE.md)."
     - "Does the v7.1 'mid-basin theist' label hold once his written views on providence, prayer and miracle are checked?"
     - "Early reading (Watts, The Improvement of the Mind; Marcet, Conversations on Chemistry) is widely reported; confirm in Cantor 1991 or James 2010."
-    - "Read Cantor 1989 (S6) for why he was excluded in 1844 and when he was readmitted."
+    - "Exact dates of the 1844 exclusion and readmission. Not in any source read. A search-engine summary of a WikiTree membership page gives 31 March and 5 May 1844, but WikiTree is user-edited and the page could not be opened (bot check), so the dates are not used. Cantor 1989 (S6) or Cantor 1991 (reviewed in S9) should settle it."
+    - "What the 1844 discipline dispute was about. Cantor 1989 (S6) is the source; not read (paywalled)."
 
 sources:
   - id: S1
@@ -277,7 +283,7 @@ sources:
     citation: "Cantor, Geoffrey. \"Why Was Faraday Excluded from the Sandemanians in 1844?\" The British Journal for the History of Science 22, no. 4 (1989): 433–37. https://doi.org/10.1017/S0007087400026388."
     url: "https://doi.org/10.1017/S0007087400026388"
     accessed: 2026-10-01
-    reliability_note: "Peer-reviewed. Only the title and bibliographic record were consulted (paywalled); used only for the fact of the 1844 exclusion."
+    reliability_note: "Peer-reviewed. Only the title and bibliographic record were consulted (paywalled); used only for the fact of the 1844 exclusion. Its findings are summarised by the same author in S8."
     used_for: [worldview]
   - id: S7
     type: tertiary
@@ -285,6 +291,46 @@ sources:
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
     used_for: [review]
+  - id: S8
+    type: secondary
+    kind: other
+    author: "Geoffrey Cantor"
+    year: 2020
+    citation: "Cantor, Geoffrey. \"Drinking from a Fount on Sunday.\" Christian History, no. 134 (2020): How the Church Fostered Science and Technology. https://christianhistoryinstitute.org/magazine/article/drinking-from-a-fount-on-sundays."
+    url: "https://christianhistoryinstitute.org/magazine/article/drinking-from-a-fount-on-sundays"
+    accessed: 2026-10-01
+    reliability_note: "Short magazine article, no footnotes, by the author of S6 and of the book-length study Michael Faraday: Sandemanian and Scientist (1991). Read as his own summary of his research."
+    used_for: [worldview, institutions]
+  - id: S9
+    type: secondary
+    kind: other
+    author: "John Hedley Brooke"
+    year: 1991
+    citation: "Brooke, John Hedley. \"Among the Sandemanians.\" Review of Michael Faraday: Sandemanian and Scientist, by Geoffrey Cantor. London Review of Books 13, no. 14 (25 July 1991). https://www.lrb.co.uk/the-paper/v13/n14/john-hedley-brooke/among-the-sandemanians."
+    url: "https://www.lrb.co.uk/the-paper/v13/n14/john-hedley-brooke/among-the-sandemanians"
+    accessed: 2026-10-01
+    reliability_note: "Book review by a historian of science and religion. Reports Cantor's findings, so it is not independent of S8."
+    used_for: [worldview]
+  - id: S10
+    type: secondary
+    kind: other
+    author: "J. H. Gladstone"
+    year: 1873
+    citation: "Gladstone, J. H. Michael Faraday. 2nd ed. London: Macmillan, 1873. Scan: https://archive.org/details/michaelfaraday03gladgoog. Same wording in the 3rd ed. (1874), Project Gutenberg eBook 47396, https://www.gutenberg.org/ebooks/47396."
+    url: "https://archive.org/details/michaelfaraday03gladgoog"
+    accessed: 2026-10-01
+    reliability_note: "Biography by a chemist who knew Faraday; the preface calls it 'my own reminiscences of the great philosopher'. Published within six years of his death. The preface to the second edition does not mention the changed passage. Quotes checked against the proofread Gutenberg text of the 3rd edition and the OCR of the 2nd-edition scan, which agree."
+    used_for: [worldview, review]
+  - id: S11
+    type: secondary
+    kind: other
+    author: "J. H. Gladstone"
+    year: 1872
+    citation: "Gladstone, J. H. Michael Faraday. London: Macmillan, 1872 (first edition). Scan: https://archive.org/details/michaelfaraday02gladgoog."
+    url: "https://archive.org/details/michaelfaraday02gladgoog"
+    accessed: 2026-10-01
+    reliability_note: "First edition of S10. Used only to record the Queen story that the second edition withdrew. Quote checked against the OCR text of the scan; the 1872 New York (Harper) printing, pp. 52–53, has the same passage."
+    used_for: [worldview, review]
 ---
 
 # Michael Faraday
@@ -320,7 +366,7 @@ From age 14 he was apprenticed to a bookbinder. He read what came in for binding
 
 ## Adult working worldview
 
-He joined the Sandemanian church by confession of faith in 1821, within days of his marriage to Sarah Barnard. He became a deacon in 1832 and an elder in 1840 [S5, p. 2]. He was excluded in 1844 [S6], and he resigned his eldership in 1864 [S5, p. 4].
+He joined the Sandemanian church by confession of faith in 1821, within days of his marriage to Sarah Barnard. He became a deacon in 1832 and an elder in 1840 [S5, p. 2]. In 1844 he was excluded from the church, which also ended his eldership [S10, p. 36; S6]. Cantor says this lasted "a few weeks in the spring of 1844" and was "owing to an internal dispute over church discipline" [S8]. The older story, that he was put out for being the Queen's guest on a Sunday, comes from the first edition of Gladstone's biography [S11, p. 35]. Gladstone dropped it in the second edition, which says the reason "is unknown except to the parties immediately concerned" [S10, p. 36]. He was restored to membership [S8; S10, p. 36], became an elder again after 1860 [S10, p. 36], and resigned his eldership in 1864 [S5, p. 4].
 
 In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces, and that a private memorandum on atoms and fields invokes God [S5, pp. 2–3]. Whether that counts as a lawful-order worldview, and which system code applies, has not been coded here.
 
@@ -342,7 +388,9 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 - Does the "mid-basin theist" starting label survive a reading of his views on providence, prayer and miracle?
 - Was a knighthood ever offered? Sources disagree [S1, Later life; S2; S5, p. 4].
 - Confirm his early reading (Watts, Marcet) in a full biography.
+- Exact dates of the 1844 exclusion and readmission, and what the discipline dispute was about. Needs Cantor 1989 [S6] or Cantor 1991.
 
 ## Research log
 
 - 2026-10-01: Read Britannica (S1: main, Theory of electrochemistry, Later life), the Royal Institution biography (S2), two letters in Epsilon (S3, S4), Russell's Faraday Paper 13 (S5), and the bibliographic record of Cantor 1989 (S6). Did not use Wikipedia as a citation. Its leads (Watts, Marcet, second eldership, FRS 1824, farad unit) are recorded as TODO or open questions. No worldview code, axis score or mid-basin value entered.
+- 2026-10-01 (second pass): Closed most of the 1844 gap. Read Cantor's 2020 Christian History article (S8), Brooke's 1991 LRB review of Cantor's book (S9), and the first and second editions of Gladstone's biography (S11, S10; archive.org scans, plus the Gutenberg text of the 3rd edition). Cantor 1989 (S6) and Cantor 1991 are paywalled or lending-only and were not read. Every quoted phrase was checked word for word against the source text. Exact readmission date still not found.

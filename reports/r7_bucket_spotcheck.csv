@@ -1,0 +1,31 @@
+sample_no,rank,canonical_name,field,field_bucket,per_model_field,verdict,better_bucket,note
+1,487,Arthur Samuel,artificial intelligence,computer science / AI,DeepSeek: artificial intelligence,ok,,
+2,657,Enrico Caruso,music,music,GPT: music,ok,,
+3,737,Georges Charpak,physics,physics,DeepSeek: physics,ok,,
+4,1084,Oswald Spengler,history,history,DeepSeek: history,ok,,
+5,1185,Robert Ledley,medicine,medicine,DeepSeek: medicine,ok,,Biomedical computing and the whole-body CT scanner; medicine fits.
+6,1295,Thomas A. Steitz,chemistry,chemistry,DeepSeek: chemistry,ok,,
+7,803,Hermann Weyl,mathematics,mathematics,Claude: mathematics,ok,,
+8,255,Benjamin Franklin,polymath,polymath,Gemini: polymath-invention | Grok: polymath,ok,,Gemini and Grok both say polymath.
+9,1228,Sergei Eisenstein,film-directing,arts,Gemini: film-directing,ok,,Film; arts fits.
+10,308,Giuseppe Verdi,music,music,GPT: music | Grok: music,ok,,
+11,386,Ruth Benedict,anthropology,social science,Claude: anthropology | DeepSeek: anthropology,ok,,Anthropology; social science fits.
+12,160,Donatello,art,arts,Gemini: sculpture | GPT: art | Grok: art,ok,,Sculpture; arts fits.
+13,280,Eli Whitney,invention,invention / engineering,Gemini: invention-cotton gin | Grok: invention,ok,,
+14,77,Tim Berners-Lee,computer science,computer science / AI,Claude: computer science | DeepSeek: computer science | Gemini: computer science-www | GPT: computer-science | Grok: computer science,ok,,
+15,383,Robert Kahn,computer science,computer science / AI,Claude: computer science | DeepSeek: computer science,ok,,
+16,948,Konrad Lorenz,ethology,biology / life science,GPT: ethology,ok,,Ethology; biology fits.
+17,777,Harriet Tubman,social thought-activism,social science,Gemini: social thought-activism,wrong,politics / law / military,"Field ""social thought-activism"": the first component matches ""social"" (social science) before ""activis"". Other activists (Malcolm X, Desmond Tutu) land in politics / law / military."
+18,438,Alasdair MacIntyre,philosophy-ethics,philosophy,DeepSeek: philosophy-ethics,ok,,
+19,698,Freddie Mercury,music,music,GPT: music,ok,,
+20,393,Sofya Kovalevskaya,mathematics,mathematics,Claude: mathematics | Grok: mathematics,ok,,
+21,1157,Randall Collins,sociology,social science,DeepSeek: sociology,ok,,
+22,549,Cassius Dio,history,history,DeepSeek: history,ok,,
+23,521,Bernard Williams,philosophy-ethics,philosophy,DeepSeek: philosophy-ethics,ok,,
+24,801,Hermann Staudinger,chemistry,chemistry,DeepSeek: chemistry,ok,,
+25,417,A.R. Radcliffe-Brown,anthropology,social science,DeepSeek: anthropology,ok,,Anthropology; social science fits.
+26,641,Elie Metchnikoff,medicine,medicine,DeepSeek: medicine,ok,,"Immunology pioneer, Nobel in physiology or medicine; medicine fits (biology also defensible)."
+27,53,Ludwig van Beethoven,music,music,Claude: music | DeepSeek: music | Gemini: music | GPT: music | Grok: music,ok,,
+28,474,Apollonius of Perga,mathematics,mathematics,Grok: mathematics,ok,,
+29,1125,Phidias,art,arts,Grok: art,ok,,
+30,509,Béla Bartók,music,music,Claude: music,ok,,

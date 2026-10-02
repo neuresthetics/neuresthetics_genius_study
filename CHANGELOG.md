@@ -52,6 +52,8 @@ The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`
 
 Decisions that need sign-off are listed in `docs/OPEN_DECISIONS.md`: the LIO 0–4 scale, era buckets, regions, the mid-basin definition, statuses for new names, the Wright brothers, O'Keeffe, merge confirmations and labels.
 
+- **2026-10-01:** each of the 19 open items in `docs/OPEN_DECISIONS.md` now has an agent recommendation with evidence, plus a summary table at the top. All items stay open, and no roster or system data was changed. The full PANT label ("Pantheism (Spinozistic/naturalistic 'God = Universe')") was found in the V6 history (`beliefCoherence.json`). Field-bucket evidence for R7 is in `reports/r7_bucket_spotcheck.csv` and `reports/r7_field_string_review.csv`. Faraday's 1844 exclusion is updated (record version 2): the reason (a church-discipline dispute) and the few-week duration come from Cantor 2020 and Brooke 1991, and the restoration is confirmed in Gladstone 1873. The exact readmission date is still open.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).
