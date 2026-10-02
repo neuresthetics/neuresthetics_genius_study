@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica, the Jewish Women's Archive encyclopedia (Rife) and a 2024 Society of Catholic Scientists article (Moritz), which quotes her letters through Schweighofer (2013) and Sime (1997). Baptized Protestant (Lutheran) in 1908; no own statement of Christian doctrine found. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 and D 3 at 0.5; A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
 
 identity:
   id: meitner-lise
@@ -81,21 +82,21 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1906–1960", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 2–4"}], how_known: "Doctorate to retirement."}
   nominal_affiliations:
-    - {value: "Baptized Protestant (Evangelical/Lutheran) in 1908; member of St.-Annenkirche, Berlin-Dahlem, and later of the Lutheran congregation of Engelbrektskyrkan, Stockholm", years: "1908–1968", role: member, certainty: 0.7, cites: [{source: S2, locator: "paragraph 3 (baptism)"}, {source: S3, locator: "Sweden section"}], how_known: "Baptism in two sources; congregations from S3 only. S3 spells the church 'Engelbrechtskyrkan'."}
+    - {value: "Baptized Protestant (Evangelical/Lutheran) in 1908; member of St.-Annenkirche, Berlin-Dahlem, and later of the Lutheran congregation of Engelbrektskyrkan, Stockholm", years: "1908–1968", role: member, certainty: 0.7, cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S3, locator: "Sweden section"}], how_known: "Baptism in two sources; congregations from S3 only. S3 spells the church 'Engelbrechtskyrkan'."}
   self_described_science_religion_relation:
-    value: "Awe at life and at the natural order is 'also a part of being religious'; science teaches 'truth and objectivity' and the 'deep joy and awe that the natural order of things brings to the true scientist' (1953 lecture)."
+    value: "Awe at life and at the natural order is 'also a part of being religious'; science teaches 'truth and objectivity' and the 'deep awe and joy that the natural order of things brings to the true scientist' (1953 lecture)."
     certainty: 0.5
-    cites: [{source: S3, locator: "Sweden section, notes 20, 31"}]
-    how_known: "A 1955 letter and a 1953 lecture, both in English translation quoted by a non-peer-reviewed article (through Schweighofer 2013 and Sime 1997), so 0.5."
+    cites: [{source: S3, locator: "Sweden section, notes 20, 31"}, {source: S5, locator: "1953 UNESCO lecture entry"}]
+    how_known: "A 1955 letter and a 1953 lecture, both in English translation: the letter quoted by a non-peer-reviewed article (through Schweighofer 2013), the lecture in Sime's translation (1996, p. 375) as reproduced by S5 and S3, so 0.5."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S3, locator: "Sweden section"}, {source: S2, locator: "paragraph 3"}]
+    cites: [{source: S3, locator: "Sweden section"}, {source: S2, locator: "paragraph 7"}]
     how_known: "Church membership is recorded, but membership is not ideology. The only words of hers read speak of awe and respect for life as religious, without doctrine; S3 says she 'always felt uncomfortable when confronted with dogmatic concepts'. Nothing reaches a code at 0.5."
     note: "Candidate: CHRIST (Lutheran member; S3 reports that 'some bible verses accompanied her throughout her life', and a friend called her 'thoroughly Lutheran'). Needs her own words on Christ, scripture or creed (Schweighofer 2013; Sime 1997)."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S3."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Leading candidate, not coded: baptism and membership only, plus a friend's description. CHRIST is a sourced system file.", cites: [{source: S3, locator: "Sweden section"}]}
-    - {code: JUDA, reason: "Rejected: she formally left the Jewish community in 1908. Heritage is never a code.", cites: [{source: S2, locator: "paragraph 3"}]}
+    - {code: JUDA, reason: "Rejected: she formally left the Jewish community in 1908. Heritage is never a code.", cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement about God read.", note: "Gap: Sime 1997; Schweighofer 2013."}
     B_cause:
@@ -106,13 +107,7 @@ worldview:
       how_known: "Coder's reading of her working science (P6), with one translated lecture passage on 'the natural order of things', so 0.5."
       rationale: "Scored on her account of nature (P6). Her working physics (radioactive decay, beta spectra, fission from E = mc² and nuclear forces) admits no special cases, and her 1953 lecture speaks of 'the natural order of things'. Her phrase 'the miracle of life' (1942 letter) is wonder, not an exemption from law. No miracle or petition appears."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement or afterlife read."}
-    D_authority:
-      value: 3
-      basis: scholarly_reconstruction
-      certainty: 0.5
-      cites: [{source: S3, locator: "Sweden section; notes 20, 31"}]
-      how_known: "A non-peer-reviewed author's reading plus translated passages, so 0.5."
-      rationale: "Leans to reason: science teaches people to 'reach selflessly for truth and objectivity' and 'to accept reality'; she was uncomfortable with dogma (S3). The stated limited exception: Bible verses stayed with her for life (S3), so scripture has a personal, not factual, place. Alternative 4 if the Bible verses carry no authority; not settled."
+    D_authority: {value: BELOW_THRESHOLD, how_known: "Her own words read (1953 lecture, 1955 letter) praise science's 'truth and objectivity' and call awe at life religious, but say nothing about revelation, scripture or church authority. The only evidence on the revelation side is S3's paraphrase that she 'acknowledged that some bible verses accompanied her throughout her life', and S3's own reading that she 'always felt uncomfortable when confronted with dogmatic concepts'. Axes are scored from the person's own words (§6), so below 0.5.", note: "Was 3 at 0.5 (lens audit, batch 2, finding #95). Same treatment as Fermi and Curie. Gap: Sime 1996; Schweighofer 2013, for her own words on the Bible."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Her physics is universal, but nothing read addresses favour for a group in events.", note: "Same treatment as Fermi: not scored from working science alone."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
   statements:
@@ -124,7 +119,7 @@ worldview:
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
-    - text: "If respect for the miracle of life were deeper, world history would look very different!"
+    - text: "If respect for the miracle of life were deeper, [...] world history would look very different!"
       cites: [{source: S3, locator: "Sweden section, note 21"}]
       date: "1942-06-02"
       context: "Letter to Max von Laue, on Albert Schweitzer's reverence for life. S3 prints it as 'If respect for the miracle of life were deeper,' she exclaimed, 'world history would look very different!'"
@@ -132,23 +127,24 @@ worldview:
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
-    - text: "Science makes people reach selflessly for truth and objectivity; it teaches people to accept reality, with wonder and admiration, not to mention the deep joy and awe that the natural order of things brings to the true scientist."
-      cites: [{source: S3, locator: "closing paragraph, note 31"}]
+    - text: "Science makes people reach selflessly for truth and objectivity; it teaches people to accept reality, with wonder and admiration, not to mention the deep awe and joy that the natural order of things brings to the true scientist."
+      cites: [{source: S5, locator: "1953 UNESCO lecture entry"}, {source: S3, locator: "closing paragraph, note 31"}]
       date: "1953-03-30"
-      context: "Lecture to the Austrian UNESCO Commission; S3 cites Sime's translation (1997, p. 375)."
+      context: "Lecture to the Austrian UNESCO Commission, printed in Atomenergie und Frieden (1953), pp. 23–24. English as translated by Sime, Lise Meitner: A Life in Physics (University of California Press, 1996), p. 375, seen only as reproduced on todayinsci.com (S5), not in the book."
+      note: "S3 transposes the words to 'deep joy and awe' and dates Sime's book 1997; the wording here follows S5's reproduction of Sime."
       axes: [B_cause, D_authority]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life:
-    - {value: "Left the Jewish community and was baptized Protestant", year: "1908", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
+    - {value: "Left the Jewish community and was baptized Protestant", year: "1908", certainty: 1.0, cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
   coder_notes: "The English quotations are S3's renderings of German letters via Schweighofer; S3 is a Catholic scientists' society article by a biochemist, not peer reviewed. CHRIST is a sourced system file. Washington Post's online excerpt of Sime's chapter 1 (on the 1908 baptisms) did not download."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Assimilated Viennese Jewish family", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "JWA."}
-  religious_heritage_by_birth: {value: "Jewish (registered with the Vienna Jewish community)", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
-  baptism_or_initiation: {value: "Baptized Protestant (Evangelical) in Vienna, 1908, aged about 30", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
+  religious_heritage_by_birth: {value: "Jewish (registered with the Vienna Jewish community)", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 3, 7"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
+  baptism_or_initiation: {value: "Baptized Protestant (Evangelical) in Vienna, 1908, aged about 30", certainty: 1.0, cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not given in S1–S3."}
 
 timing:
@@ -204,7 +200,7 @@ sources:
     citation: "Rife, Patricia. \"Lise Meitner.\" Shalvi/Hyman Encyclopedia of Jewish Women, Jewish Women's Archive. https://jwa.org/encyclopedia/article/meitner-lise."
     url: "https://jwa.org/encyclopedia/article/meitner-lise"
     accessed: 2026-10-02
-    reliability_note: "Signed encyclopedia article by a Meitner biographer. Paragraphs counted from the start of the article text."
+    reliability_note: "Signed encyclopedia article by a Meitner biographer. Paragraphs counted from the start of the article text, with the 'In Brief' summary as paragraph 1 (so the baptism, 'In 1908 on a visit to Vienna…', is paragraph 7, the sixth paragraph after In Brief)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, lane_b, institutions, collaborators]
   - id: S3
     type: secondary
@@ -225,6 +221,15 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S5
+    type: tertiary
+    kind: other
+    author: "Ian Ellis (Today in Science History)"
+    citation: "\"Lise Meitner Quotes.\" Today in Science History (todayinsci.com). Quotation from the 1953 Austrian UNESCO Commission lecture, citing Atomenergie und Frieden (1953), pp. 23–24, trans. Ruth Lewin Sime, Lise Meitner: A Life in Physics (Berkeley: University of California Press, 1996), p. 375. https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm."
+    url: "https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm"
+    accessed: 2026-10-02
+    reliability_note: "Quotation site that gives full references; used only to check the wording of Sime's translation, which was not read in the book."
+    used_for: [worldview]
 ---
 
 # Lise Meitner
@@ -233,7 +238,7 @@ sources:
 
 ## Summary
 
-Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraph 3]. Her recorded words speak of awe at life and the natural order but not of doctrine, so her system is below threshold; B 4 and D 3 at 0.5.
+Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraphs 3, 7]. Her recorded words speak of awe at life and the natural order but not of doctrine, so her system is below threshold; B 4 at 0.5, the other axes below threshold.
 
 ## Life and work
 
@@ -249,11 +254,11 @@ Her parents "were assimilated Viennese Jews, who did not practice Judaism" [S2, 
 
 ## Adult working worldview
 
-A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she said science brings "the deep joy and awe that the natural order of things brings to the true scientist" [S3, note 31]. Scores: B 4 (0.5), D 3 (0.5); A, C, E below threshold; mid_basin below threshold.
+A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she spoke of "the deep awe and joy that the natural order of things brings to the true scientist" [S5; S3, note 31]. Scores: B 4 (0.5); A, C, D, E below threshold; mid_basin below threshold.
 
 ## Heritage (context only)
 
-Assimilated Viennese Jewish family; baptized Protestant at about 30 [S2, paragraph 3]. Context only.
+Assimilated Viennese Jewish family; baptized Protestant at about 30 [S2, paragraphs 3, 7]. Context only.
 
 ## Timing
 
