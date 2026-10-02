@@ -61,22 +61,22 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | identity | 28 | 28 | 0 | 0 | 0 | 100.0% |
 | basics | 154 | 154 | 0 | 0 | 0 | 100.0% |
 | contribution | 185 | 184 | 0 | 1 | 0 | 99.5% |
-| childhood | 215 | 198 | 14 | 3 | 0 | 92.1% |
-| worldview | 176 | 139 | 1 | 17 | 19 | 79.0% |
-| heritage | 56 | 37 | 13 | 6 | 0 | 66.1% |
+| childhood | 215 | 197 | 15 | 3 | 0 | 91.6% |
+| worldview | 176 | 135 | 1 | 17 | 23 | 76.7% |
+| heritage | 56 | 36 | 14 | 6 | 0 | 64.3% |
 | timing | 70 | 63 | 6 | 1 | 0 | 90.0% |
 | lane_b | 42 | 39 | 3 | 0 | 0 | 92.9% |
 | institutions | 56 | 56 | 0 | 0 | 0 | 100.0% |
 | collaborators | 89 | 89 | 0 | 0 | 0 | 100.0% |
 | review | 24 | 24 | 0 | 0 | 0 | 100.0% |
-| **all** | 1095 | 1011 | 37 | 28 | 19 | 92.3% |
+| **all** | 1095 | 1005 | 39 | 28 | 23 | 91.8% |
 
 ### Worldview coding status
 
 | id | primary system | review status |
 |---|---|---|
 | aquinas-thomas | CLASS_THEISM | draft — unreviewed |
-| curie-marie | AGNOS | draft — unreviewed |
+| curie-marie | BELOW_THRESHOLD | draft — unreviewed |
 | einstein-albert | PANT | draft — unreviewed |
 | faraday-michael | CHRIST | example — unreviewed |
 | fermi-enrico | BELOW_THRESHOLD | draft — unreviewed |
