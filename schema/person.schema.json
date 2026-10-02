@@ -37,14 +37,17 @@
       ],
       "properties": {
         "record_type": {
-          "const": "person"
+          "const": "person",
+          "description": "Fixed: tells the validator which schema applies."
         },
         "schema_version": {
-          "const": "1.0"
+          "const": "1.0",
+          "description": "Version of the schema this file was written against. Bump in the schema and in every file together."
         },
         "record_version": {
           "type": "integer",
-          "minimum": 1
+          "minimum": 1,
+          "description": "Integer, starts at 1. Add 1 every time the file's content changes in a commit."
         },
         "review_status": {
           "enum": [
@@ -54,7 +57,8 @@
             "in review",
             "reviewed",
             "needs revision"
-          ]
+          ],
+          "description": "Where the file is in review. Only a human reviewer may set 'reviewed'. 'example — unreviewed' marks the worked examples."
         },
         "collected_by": {
           "type": "string",
@@ -65,25 +69,31 @@
           "description": "model and version used, or 'none (human)'"
         },
         "collected_on": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "Date (YYYY-MM-DD) the first research run started."
         },
         "last_updated": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "Date of the latest content change. Must match the newest change_log entry."
         },
         "reviewed_by": {
-          "type": "string"
+          "type": "string",
+          "description": "Name of the human reviewer. Required when review_status is 'reviewed'."
         },
         "reviewed_on": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "Date of the review. Required when review_status is 'reviewed'."
         },
         "change_log": {
           "type": "array",
           "minItems": 1,
           "items": {
             "$ref": "#/$defs/changeLogEntry"
-          }
+          },
+          "description": "One entry per content change, oldest first: date, who, and a one-line summary."
         }
-      }
+      },
+      "description": "Bookkeeping for this file: version, review state, who collected it, change history."
     },
     "identity": {
       "type": "object",
@@ -91,27 +101,32 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Person id from data/roster/person_ids.csv (lowercase ascii, family name first). Must equal the file name. Frozen once the file exists."
         },
         "display_name": {
           "type": "string",
-          "minLength": 1
+          "minLength": 1,
+          "description": "Name used in tables and prose. Usually the roster canonical_name."
         },
         "roster": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "canonical_name": {
-              "type": "string"
+              "type": "string",
+              "description": "roster.csv canonical_name."
             },
             "rank": {
               "type": "integer",
-              "minimum": 1
+              "minimum": 1,
+              "description": "roster.csv rank (row order in the roster; not a quality ranking)."
             },
             "F": {
               "type": "integer",
               "minimum": 1,
-              "maximum": 5
+              "maximum": 5,
+              "description": "roster.csv F: how many of the five model lists named this person (1-5)."
             },
             "models": {
               "type": "array",
@@ -126,19 +141,24 @@
               },
               "minItems": 1,
               "maxItems": 5,
-              "uniqueItems": true
+              "uniqueItems": true,
+              "description": "roster.csv models: which of the five lists named the person."
             },
             "band": {
-              "type": "string"
+              "type": "string",
+              "description": "roster.csv band: frequency band derived from F."
             },
             "status": {
-              "type": "string"
+              "type": "string",
+              "description": "roster.csv status: core / provisional / review / new — needs status / needs status (blank in v7)."
             },
             "field": {
-              "type": "string"
+              "type": "string",
+              "description": "roster.csv field (majority field across the model lists)."
             },
             "field_bucket": {
-              "type": "string"
+              "type": "string",
+              "description": "roster.csv field_bucket (field grouped into ~20 buckets)."
             }
           },
           "required": [
@@ -154,10 +174,12 @@
           "description": "copy of this person's roster.csv row; the validator checks every value matches"
         },
         "full_name": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Full name as given in a reliable source, with titles removed."
         },
         "native_name": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Name in the person's own language and script, if different from display_name."
         },
         "aliases": {
           "type": "array",
@@ -166,7 +188,8 @@
             "additionalProperties": false,
             "properties": {
               "name": {
-                "type": "string"
+                "type": "string",
+                "description": "The alternative name, spelled as in the source."
               },
               "kind": {
                 "enum": [
@@ -178,17 +201,20 @@
                   "pen or art name",
                   "religious name",
                   "other"
-                ]
+                ],
+                "description": "What kind of alternative name this is."
               },
               "cites": {
-                "$ref": "#/$defs/cites"
+                "$ref": "#/$defs/cites",
+                "description": "Optional citation for the alias. Roster aliases need none."
               }
             },
             "required": [
               "name",
               "kind"
             ]
-          }
+          },
+          "description": "Other names: roster aliases, birth names, Latinized forms, transliterations, titles."
         }
       },
       "required": [
@@ -198,7 +224,8 @@
         "full_name",
         "native_name",
         "aliases"
-      ]
+      ],
+      "description": "Who this record is about and how they appear in the roster."
     },
     "basics": {
       "type": "object",
@@ -209,53 +236,66 @@
           "additionalProperties": false,
           "properties": {
             "date": {
-              "$ref": "#/$defs/date"
+              "$ref": "#/$defs/date",
+              "description": "Birth date. Record the calendar if the source gives an Old Style date."
             },
             "place": {
-              "$ref": "#/$defs/place"
+              "$ref": "#/$defs/place",
+              "description": "Birth place as named at the time, with modern_name and polity_then where useful."
             }
           },
           "required": [
             "date",
             "place"
-          ]
+          ],
+          "description": "Birth date and place."
         },
         "death": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "date": {
-              "$ref": "#/$defs/date"
+              "$ref": "#/$defs/date",
+              "description": "Death date."
             },
             "place": {
-              "$ref": "#/$defs/place"
+              "$ref": "#/$defs/place",
+              "description": "Death place."
             }
           },
           "required": [
             "date",
             "place"
-          ]
+          ],
+          "description": "Death date and place. For a living person use UNKNOWN with how_known 'living as of <date>'."
         },
         "first_lasting_contribution_year": {
-          "$ref": "#/$defs/year"
+          "$ref": "#/$defs/year",
+          "description": "Year of the earliest contribution listed in contribution.lasting_original_contributions. Drives era_bucket."
         },
         "era_bucket": {
-          "$ref": "#/$defs/era"
+          "$ref": "#/$defs/era",
+          "description": "Bucket of first_lasting_contribution_year (PROPOSED buckets)."
         },
         "region_of_birth": {
-          "$ref": "#/$defs/region"
+          "$ref": "#/$defs/region",
+          "description": "Macro-region of the birth place (PROPOSED list, based on UN M49 regions, applied to modern borders)."
         },
         "region_of_work": {
-          "$ref": "#/$defs/region"
+          "$ref": "#/$defs/region",
+          "description": "Macro-region where the major work was done. If split, pick where the main contribution was made and explain in note."
         },
         "sex_as_recorded": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Sex as recorded in the sources. Descriptive, for baseline matching only."
         },
         "languages_of_work": {
-          "$ref": "#/$defs/list"
+          "$ref": "#/$defs/list",
+          "description": "Languages the person published or worked in."
         },
         "occupations": {
-          "$ref": "#/$defs/list"
+          "$ref": "#/$defs/list",
+          "description": "Occupations held, in the words of the sources (e.g. bookbinder's apprentice, chemical assistant, professor)."
         }
       },
       "required": [
@@ -268,38 +308,44 @@
         "sex_as_recorded",
         "languages_of_work",
         "occupations"
-      ]
+      ],
+      "description": "Dates, places, era and region: the descriptive frame for era- and region-matched baselines."
     },
     "contribution": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "fields": {
-          "$ref": "#/$defs/list"
+          "$ref": "#/$defs/list",
+          "description": "Fields of work, in the sources' terms."
         },
         "lasting_original_contributions": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/contribution"
-          }
+          },
+          "description": "Each original contribution that is still used or built on, with year, kind, and what rests on it now."
         },
         "evidence_of_impact": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/impact"
-          }
+          },
+          "description": "Evidence that the impact is lasting: named laws or units, textbook canon, assessments by later major figures, honours."
         },
         "major_works": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/work"
-          }
+          },
+          "description": "Main published works, lecture series, artworks or devices, with year."
         },
         "honours": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Honours, prizes, fellowships, offices; note any declined."
         },
         "definition_fit": {
           "type": "object",
@@ -312,14 +358,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -340,7 +388,8 @@
                     "does not meet"
                   ]
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -361,65 +410,78 @@
         "major_works",
         "honours",
         "definition_fit"
-      ]
+      ],
+      "description": "What the person did that earns a place on the roster (Lane A definition: lasting original impact)."
     },
     "childhood": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "family_religion": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Religion of the household the person grew up in (denomination, congregation)."
         },
         "family_religious_practice": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "How the family practised: attendance, observance, offices held."
         },
         "parents_and_household": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Parents, siblings and household members, with occupations."
         },
         "household_circumstances": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Economic and social situation of the household."
         },
         "schooling": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/schooling"
-          }
+          },
+          "description": "Each stage of formal or informal education, with stage, institution, years and ages."
         },
         "early_mathematics": {
-          "$ref": "#/$defs/mathExposure"
+          "$ref": "#/$defs/mathExposure",
+          "description": "Highest level of mathematics met before about age 18, with ages and description."
         },
         "early_geometric_style_reasoning": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Any documented early exposure to definition-to-consequence reasoning (Euclid, formal logic, proof). Facts only; Lane B interpretation goes in lane_b."
         },
         "early_science_exposure": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/event"
-          }
+          },
+          "description": "Lectures, books, experiments or apprenticeships with scientific content before independent work."
         },
         "key_early_reading": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Books the sources say mattered in childhood or adolescence."
         },
         "childhood_mentors": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Adults outside the family who taught or encouraged the person."
         },
         "languages_in_childhood": {
-          "$ref": "#/$defs/list"
+          "$ref": "#/$defs/list",
+          "description": "Languages spoken or learned in childhood."
         },
         "notable_events": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/event"
-          }
+          },
+          "description": "Other events in childhood the sources treat as formative."
         }
       },
       "required": [
@@ -435,57 +497,70 @@
         "childhood_mentors",
         "languages_in_childhood",
         "notable_events"
-      ]
+      ],
+      "description": "Childhood and education up to the start of independent work. Lane A facts; Lane B's H1 test reads them."
     },
     "worldview": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "unit": {
-          "const": "adult working worldview"
+          "const": "adult working worldview",
+          "description": "Fixed reminder of the unit of coding."
         },
         "working_years": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Years of the adult working life the coding refers to (e.g. 1820-1860)."
         },
         "nominal_affiliations": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Memberships and affiliations (church, synagogue, society), with years and offices. Membership is not ideology."
         },
         "self_described_science_religion_relation": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "How the person said science and religion relate, in their own words where possible."
         },
         "primary_system": {
-          "$ref": "#/$defs/systemCode"
+          "$ref": "#/$defs/systemCode",
+          "description": "Dominant working metaphysics, as one of the 77 system codes. Needs basis; certainty must match basis."
         },
         "secondary_system": {
-          "$ref": "#/$defs/systemCode"
+          "$ref": "#/$defs/systemCode",
+          "description": "Only if the person published in two systems. Otherwise leave TODO, or UNKNOWN with how_known 'no second system'."
         },
         "candidate_codes_considered": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/candidateCode"
-          }
+          },
+          "description": "Codes the coder weighed, with the reason for and against each. Fill this even when the code is still TODO."
         },
         "lio_axes": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "A_locus": {
-              "$ref": "#/$defs/axis"
+              "$ref": "#/$defs/axis",
+              "description": "A Locus: transcendent person outside the world (0) ... immanent in or identical with the world (4)."
             },
             "B_cause": {
-              "$ref": "#/$defs/axis"
+              "$ref": "#/$defs/axis",
+              "description": "B Cause: miracle, petition, reserved exemption (0) ... law, regularity, no special cases (4)."
             },
             "C_ledger": {
-              "$ref": "#/$defs/axis"
+              "$ref": "#/$defs/axis",
+              "description": "C Ledger: reward and punishment of persons (0) ... impersonal consequence, or none (4)."
             },
             "D_authority": {
-              "$ref": "#/$defs/axis"
+              "$ref": "#/$defs/axis",
+              "description": "D Authority: revelation outranks observation (0) ... observation and reason outrank revelation (4)."
             },
             "E_scope": {
-              "$ref": "#/$defs/axis"
+              "$ref": "#/$defs/axis",
+              "description": "E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4)."
             }
           },
           "required": [
@@ -494,7 +569,8 @@
             "C_ledger",
             "D_authority",
             "E_scope"
-          ]
+          ],
+          "description": "Position on the five LIO axes (PROPOSED 0-4 scale). Each score needs basis, certainty, cites and a rationale."
         },
         "mid_basin": {
           "type": "object",
@@ -507,14 +583,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -531,7 +609,8 @@
                 {
                   "type": "boolean"
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -541,22 +620,26 @@
             {
               "$ref": "#/$defs/claimRules"
             }
-          ]
+          ],
+          "description": "True if the person is a first-rank theist whose working physics or method ran on lawful order (v7.1 'mid-basin theist'). Operational definition is an open decision."
         },
         "statements": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/quote"
-          }
+          },
+          "description": "Verbatim quotations that bear on the worldview, each with citation, context, kind, axes touched, and how it was verified."
         },
         "changes_over_life": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/event"
-          }
+          },
+          "description": "Documented shifts in worldview, with year or age."
         },
         "coder_notes": {
-          "type": "string"
+          "type": "string",
+          "description": "Free text: reasoning, doubts, what would change the coding."
         }
       },
       "required": [
@@ -571,26 +654,32 @@
         "mid_basin",
         "statements",
         "changes_over_life"
-      ]
+      ],
+      "description": "The adult working worldview: the unit of coding. Not childhood religion, not heritage."
     },
     "heritage": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "use": {
-          "const": "context only — never an outcome and never a worldview code"
+          "const": "context only — never an outcome and never a worldview code",
+          "description": "Fixed reminder: heritage is context only."
         },
         "ethnic_or_communal_heritage": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Ethnic or communal background as the sources describe it."
         },
         "religious_heritage_by_birth": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Religion of birth family (may differ from the household practice in childhood)."
         },
         "baptism_or_initiation": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Baptism, circumcision, bar mitzvah or other rite, with date if known."
         },
         "childhood_catechism": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Religious instruction received as a child."
         }
       },
       "required": [
@@ -599,23 +688,28 @@
         "religious_heritage_by_birth",
         "baptism_or_initiation",
         "childhood_catechism"
-      ]
+      ],
+      "description": "Ethnic, communal and religious heritage by birth. Context only: never an outcome and never a worldview code."
     },
     "timing": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "lane": {
-          "const": "A — descriptive facts; Lane B's H1 timing test reads them"
+          "const": "A — descriptive facts; Lane B's H1 timing test reads them",
+          "description": "Fixed reminder of which lane these fields belong to."
         },
         "major_work_period": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Years of the main contribution (e.g. 1831-1855)."
         },
         "age_at_first_lasting_contribution": {
-          "$ref": "#/$defs/int"
+          "$ref": "#/$defs/int",
+          "description": "Age in the year of first_lasting_contribution_year."
         },
         "first_evidence_of_lio_type_views": {
-          "$ref": "#/$defs/event"
+          "$ref": "#/$defs/event",
+          "description": "Earliest dated evidence of lawful-order views (law without exemption), with year and age."
         },
         "lio_views_relative_to_major_work": {
           "type": "object",
@@ -628,14 +722,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -659,7 +755,8 @@
                     "unclear"
                   ]
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -669,10 +766,12 @@
             {
               "$ref": "#/$defs/claimRules"
             }
-          ]
+          ],
+          "description": "Whether LIO-type views are documented before, during or after the major work."
         },
         "worldview_during_major_work": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Worldview as documented during the major work period, in one to three sentences."
         }
       },
       "required": [
@@ -682,14 +781,16 @@
         "first_evidence_of_lio_type_views",
         "lio_views_relative_to_major_work",
         "worldview_during_major_work"
-      ]
+      ],
+      "description": "When things happened relative to each other. Lane A facts; Lane B's H1 timing test reads them."
     },
     "lane_b": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "label": {
-          "const": "Lane B — labeled belief model, not a finding"
+          "const": "Lane B — labeled belief model, not a finding",
+          "description": "Fixed reminder that Lane B is a belief model."
         },
         "geometric_form_present": {
           "type": "object",
@@ -702,14 +803,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -731,7 +834,8 @@
                     "unclear"
                   ]
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -755,14 +859,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -784,7 +890,8 @@
                     "unclear"
                   ]
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -794,7 +901,8 @@
             {
               "$ref": "#/$defs/claimRules"
             }
-          ]
+          ],
+          "description": "When the geometric form was acquired."
         },
         "circle_present": {
           "type": "object",
@@ -807,14 +915,16 @@
               "$ref": "#/$defs/certainty"
             },
             "cites": {
-              "$ref": "#/$defs/cites"
+              "$ref": "#/$defs/cites",
+              "description": "Citations: source id plus locator."
             },
             "how_known": {
               "type": "string",
               "description": "one or two sentences: what kind of evidence, and why this certainty"
             },
             "note": {
-              "type": "string"
+              "type": "string",
+              "description": "Free remark."
             },
             "alternatives": {
               "type": "array",
@@ -836,7 +946,8 @@
                     "unclear"
                   ]
                 }
-              ]
+              ],
+              "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
             },
             "rationale": {
               "type": "string"
@@ -854,7 +965,8 @@
           "description": "what this case means for H1, stated as belief"
         },
         "notes": {
-          "type": "string"
+          "type": "string",
+          "description": "Free text."
         }
       },
       "required": [
@@ -862,44 +974,51 @@
         "geometric_form_present",
         "form_acquired",
         "circle_present"
-      ]
+      ],
+      "description": "Lane B: the labeled belief model. Values here are inputs to a model that can fail, not findings."
     },
     "institutions": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/institution"
-      }
+      },
+      "description": "Employers, societies, patrons, religious bodies and universities, with role, years and kind."
     },
     "collaborators": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/collaborator"
-      }
+      },
+      "description": "Teachers, mentors, collaborators, students, rivals and correspondents. roster_id links to another roster person and is checked."
     },
     "review": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "roster_status_reason": {
-          "$ref": "#/$defs/text"
+          "$ref": "#/$defs/text",
+          "description": "Why the roster status (core / provisional / review) fits or does not fit this person, with evidence."
         },
         "controversies": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/item"
-          }
+          },
+          "description": "Disputed claims about the person (priority disputes, contested biography), each cited."
         },
         "data_quality_flags": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Plain statements of conflicts between sources, doubtful dates, or anything a reader should distrust."
         },
         "open_questions": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Questions this run could not settle, phrased so the next run can act on them."
         }
       },
       "required": [
@@ -907,13 +1026,15 @@
         "controversies",
         "data_quality_flags",
         "open_questions"
-      ]
+      ],
+      "description": "Data quality notes and open questions for the reviewer."
     },
     "sources": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/source"
-      }
+      },
+      "description": "Every source cited in this file. Ids are S1, S2, ... and are local to the file. Every source must be cited somewhere, and every citation must point here."
     }
   },
   "$defs": {
@@ -935,7 +1056,8 @@
     },
     "isoDate": {
       "type": "string",
-      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "description": "YYYY-MM-DD."
     },
     "citation": {
       "type": "object",
@@ -956,7 +1078,8 @@
           "description": "page, folio, section, letter number, paragraph, or URL anchor"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Optional remark (e.g. 'quoting the 1844 letter')."
         }
       }
     },
@@ -974,14 +1097,19 @@
         "cites"
       ],
       "properties": {
-        "value": {},
+        "value": {
+          "description": "The competing value."
+        },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citation for the competing value."
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Why it differs, or why it was not preferred."
         }
-      }
+      },
+      "description": "A competing value from another source, with its citation."
     },
     "claimRules": {
       "description": "A filled value needs certainty, at least one citation and a how_known note. UNKNOWN / BELOW_THRESHOLD need how_known. TODO needs nothing.",
@@ -1063,14 +1191,16 @@
       "properties": {
         "id": {
           "type": "string",
-          "pattern": "^S[0-9]+$"
+          "pattern": "^S[0-9]+$",
+          "description": "S1, S2, ... local to the file."
         },
         "type": {
           "enum": [
             "primary",
             "secondary",
             "tertiary"
-          ]
+          ],
+          "description": "primary = by the subject or contemporary record; secondary = scholarship; tertiary = encyclopedias and reference pages."
         },
         "kind": {
           "enum": [
@@ -1086,7 +1216,8 @@
             "institutional page",
             "database",
             "other"
-          ]
+          ],
+          "description": "Form of the source."
         },
         "citation": {
           "type": "string",
@@ -1094,31 +1225,38 @@
           "description": "full citation, Chicago author-date or notes style"
         },
         "author": {
-          "type": "string"
+          "type": "string",
+          "description": "Author(s), family name first for the first author."
         },
         "year": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Year of publication or of the document."
         },
         "url": {
-          "type": "string"
+          "type": "string",
+          "description": "Stable URL if online."
         },
         "archive_url": {
-          "type": "string"
+          "type": "string",
+          "description": "Archived copy (e.g. Wayback Machine) if available."
         },
         "accessed": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "Date the online source was read."
         },
         "reliability_note": {
-          "type": "string"
+          "type": "string",
+          "description": "Why this source is trusted, and any limits (e.g. 'title only consulted')."
         },
         "used_for": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "Which sections rely on this source."
         }
       }
     },
@@ -1132,13 +1270,16 @@
       ],
       "properties": {
         "date": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "YYYY-MM-DD."
         },
         "by": {
-          "type": "string"
+          "type": "string",
+          "description": "Who made the change (person, agent, or script)."
         },
         "summary": {
-          "type": "string"
+          "type": "string",
+          "description": "One line."
         }
       }
     },
@@ -1153,14 +1294,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1178,7 +1321,8 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1198,14 +1342,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1222,7 +1368,8 @@
             {
               "type": "integer"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1242,14 +1389,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1266,7 +1415,8 @@
             {
               "type": "boolean"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1286,14 +1436,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1314,7 +1466,8 @@
               },
               "minItems": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1334,14 +1487,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1359,17 +1514,20 @@
               "type": "string",
               "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "approx": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "True if the source says 'about' or 'c.'."
         },
         "calendar": {
           "enum": [
             "gregorian",
             "julian",
             "other"
-          ]
+          ],
+          "description": "Calendar of the source date if not Gregorian."
         }
       },
       "allOf": [
@@ -1390,14 +1548,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1414,10 +1574,12 @@
             {
               "type": "integer"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "approx": {
-          "type": "boolean"
+          "type": "boolean",
+          "description": "True if approximate."
         }
       },
       "allOf": [
@@ -1438,14 +1600,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1463,13 +1627,16 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "modern_name": {
-          "type": "string"
+          "type": "string",
+          "description": "Modern name and country."
         },
         "polity_then": {
-          "type": "string"
+          "type": "string",
+          "description": "State or polity at the time."
         }
       },
       "allOf": [
@@ -1489,14 +1656,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1522,7 +1691,8 @@
                 "1950 on"
               ]
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1543,14 +1713,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1581,7 +1753,8 @@
                 "Oceania"
               ]
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         }
       },
       "allOf": [
@@ -1602,14 +1775,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1627,31 +1802,38 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "year": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Year, if the fact is dated."
         },
         "years": {
-          "type": "string"
+          "type": "string",
+          "description": "Range of years."
         },
         "age": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Age at the time."
         },
         "kind": {
-          "type": "string"
+          "type": "string",
+          "description": "Free label."
         },
         "role": {
-          "type": "string"
+          "type": "string",
+          "description": "Role (for people)."
         },
         "name": {
-          "type": "string"
+          "type": "string",
+          "description": "Name (for people or books)."
         }
       },
       "allOf": [
@@ -1672,14 +1854,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1697,13 +1881,15 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "year": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Year (or range) of the contribution."
         },
         "kind": {
           "enum": [
@@ -1717,7 +1903,8 @@
             "concept or term",
             "institution",
             "other"
-          ]
+          ],
+          "description": "Kind of contribution."
         },
         "lasting": {
           "type": "string",
@@ -1741,14 +1928,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1766,7 +1955,8 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "kind": {
           "enum": [
@@ -1777,7 +1967,8 @@
             "institutional or technological lineage",
             "scholarly consensus",
             "other"
-          ]
+          ],
+          "description": "Kind of impact evidence."
         }
       },
       "allOf": [
@@ -1797,14 +1988,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1822,13 +2015,15 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "year": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Year of publication or completion."
         },
         "kind": {
           "enum": [
@@ -1840,7 +2035,8 @@
             "device",
             "notebook",
             "other"
-          ]
+          ],
+          "description": "Kind of work."
         }
       },
       "allOf": [
@@ -1860,14 +2056,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1885,7 +2083,8 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "stage": {
           "enum": [
@@ -1898,16 +2097,20 @@
             "university",
             "self-directed",
             "other"
-          ]
+          ],
+          "description": "Stage of education."
         },
         "institution": {
-          "type": "string"
+          "type": "string",
+          "description": "Name of the school, master or university."
         },
         "years": {
-          "type": "string"
+          "type": "string",
+          "description": "Years attended."
         },
         "ages": {
-          "type": "string"
+          "type": "string",
+          "description": "Ages attended."
         }
       },
       "allOf": [
@@ -1927,14 +2130,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -1958,13 +2163,16 @@
                 "other"
               ]
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "ages": {
-          "type": "string"
+          "type": "string",
+          "description": "Ages."
         },
         "description": {
-          "type": "string"
+          "type": "string",
+          "description": "What was studied and how."
         }
       },
       "allOf": [
@@ -1984,14 +2192,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -2009,19 +2219,22 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "year": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Year of the event."
         },
         "age": {
           "type": [
             "integer",
             "string"
-          ]
+          ],
+          "description": "Age at the event."
         }
       },
       "allOf": [
@@ -2041,14 +2254,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -2066,13 +2281,16 @@
               "type": "string",
               "pattern": "^[A-Z0-9_]+$"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "basis": {
-          "$ref": "#/$defs/basis"
+          "$ref": "#/$defs/basis",
+          "description": "written_profession (1.0), consistent_private_letters (0.7), or scholarly_reconstruction (0.5)."
         },
         "rationale": {
-          "type": "string"
+          "type": "string",
+          "description": "Why this code, in terms of coding_guidance."
         }
       },
       "allOf": [
@@ -2093,14 +2311,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -2117,10 +2337,12 @@
             {
               "$ref": "#/$defs/lioScore"
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "basis": {
-          "$ref": "#/$defs/basis"
+          "$ref": "#/$defs/basis",
+          "description": "Evidence basis; must agree with certainty."
         },
         "rationale": {
           "type": "string",
@@ -2153,11 +2375,13 @@
           "minItems": 1,
           "items": {
             "$ref": "#/$defs/citation"
-          }
+          },
+          "description": "Citations: source id plus locator."
         },
         "date": {
           "type": "string",
-          "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$"
+          "pattern": "^-?\\d{1,4}(-\\d{2}(-\\d{2})?)?$",
+          "description": "Date of the passage (letter date, publication year)."
         },
         "context": {
           "type": "string",
@@ -2193,10 +2417,12 @@
           ]
         },
         "verified_on": {
-          "$ref": "#/$defs/isoDate"
+          "$ref": "#/$defs/isoDate",
+          "description": "Date the quotation was checked against the source."
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         }
       }
     },
@@ -2211,14 +2437,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -2236,13 +2464,16 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "role": {
-          "type": "string"
+          "type": "string",
+          "description": "Role held."
         },
         "years": {
-          "type": "string"
+          "type": "string",
+          "description": "Years."
         },
         "kind": {
           "enum": [
@@ -2254,7 +2485,8 @@
             "government or state body",
             "commercial",
             "other"
-          ]
+          ],
+          "description": "Kind of institution."
         }
       },
       "allOf": [
@@ -2274,14 +2506,16 @@
           "$ref": "#/$defs/certainty"
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations: source id plus locator."
         },
         "how_known": {
           "type": "string",
           "description": "one or two sentences: what kind of evidence, and why this certainty"
         },
         "note": {
-          "type": "string"
+          "type": "string",
+          "description": "Free remark."
         },
         "alternatives": {
           "type": "array",
@@ -2299,11 +2533,13 @@
               "type": "string",
               "minLength": 1
             }
-          ]
+          ],
+          "description": "The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD)."
         },
         "roster_id": {
           "type": "string",
-          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "Person id if this person is on the roster (checked against person_ids.csv)."
         },
         "relation": {
           "enum": [
@@ -2317,10 +2553,12 @@
             "influenced",
             "family",
             "other"
-          ]
+          ],
+          "description": "Relation to the subject."
         },
         "years": {
-          "type": "string"
+          "type": "string",
+          "description": "Years of the relationship."
         }
       },
       "allOf": [
@@ -2339,13 +2577,16 @@
       "properties": {
         "code": {
           "type": "string",
-          "pattern": "^[A-Z0-9_]+$"
+          "pattern": "^[A-Z0-9_]+$",
+          "description": "A system code from systems/."
         },
         "reason": {
-          "type": "string"
+          "type": "string",
+          "description": "Why it is a candidate, and what argues against it."
         },
         "cites": {
-          "$ref": "#/$defs/cites"
+          "$ref": "#/$defs/cites",
+          "description": "Citations behind the reason."
         }
       }
     }

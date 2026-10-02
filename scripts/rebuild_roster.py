@@ -20,7 +20,7 @@ Method
      split "X - Y" compound entries (keep Y; X recorded as alias / collective prefix),
      drop parentheticals, join apostrophe-surname prefixes (O'Keeffe, O-Keeffe -> okeeffe),
      lowercase, turn every non-letter (hyphen, period, apostrophe) into a space, join runs of
-     single-letter initials (B. F. -> bf), drop Jr/Sr/II/III, sort tokens.
+     single-letter initials (B. F. -> bf), keep Jr/Sr (father and son stay apart), sort tokens.
      Sorting tokens makes "Pascal-Blaise", "Blaise Pascal" and "Blaise-Pascal" the same key.
   2. Curated merges from curated_aliases.csv (union-find over keys). Nothing else is fuzzy-merged.
   3. F = number of DISTINCT models listing the person (a model listing someone twice counts once).
