@@ -812,4 +812,5 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 |---|---|---|
 | `reports/coverage.md` | `scripts/coverage_report.py` | Person-file coverage by band and bucket, review statuses, fill rates, first-pool checklist, system coverage. |
 | `versions/v8/roster_diff_v7_to_v8.md` | `scripts/rebuild_roster.py` | What changed between the v7.1 and v8 rosters and why. |
+| `README.md` (progress table only) | `scripts/progress_status.py` | The status table between the `BEGIN/END GENERATED: progress` markers: roster counts, people coded, systems sourced, decisions settled, latest tag. The Audits and Next steps rows are manual constants in the script. `--check` reports whether the table is up to date. |
 | `figures/*.png` | `scripts/make_figures.py` | Four descriptive charts: list overlap, core roster by region and field bucket, the coded people on B_cause and A_locus, and the sourced systems on the LIO axes. These are not results. |

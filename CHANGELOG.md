@@ -50,6 +50,7 @@ The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`
 - **Docs:** METHOD, DATA_DICTIONARY (field tables generated from the schemas), CODING_GUIDE (v7.1 coding rules verbatim), RUNBOOK, OPEN_DECISIONS.
 - **Reports:** `reports/coverage.md` from `scripts/coverage_report.py`.
 - **Figures (2026-10-02):** four descriptive charts in `figures/` from `scripts/make_figures.py`, which needs matplotlib (`scripts/requirements-figures.txt`). They are embedded in the README. The charts show list overlap for the 1,380 roster people, the 441 core people by field bucket (region is coded for only the six person records), the six draft people on B_cause against A_locus, and the nine sourced systems on the LIO axes. Each carries the footer 'descriptive only, no results'.
+- **Progress status (2026-10-02):** the README figures section became a "Progress status" section near the top. It has a no-results line, a status table and the four figures. `scripts/progress_status.py` generates the table from the roster, the records, OPEN_DECISIONS and git tags, and `--check` reports whether it is up to date. The Audits and Next steps rows are manual constants. Two stale README lines were also fixed: the old "19 decisions, no person coded" wording and the "none open as of 2026-10-01" date.
 
 ### Decisions
 
