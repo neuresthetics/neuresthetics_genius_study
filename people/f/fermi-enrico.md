@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
 
 identity:
   id: fermi-enrico
@@ -39,7 +40,7 @@ basics:
   first_lasting_contribution_year: {value: 1926, certainty: 1.0, cites: [{source: S3, locator: "paragraph 3"}, {source: S1, locator: "Fermi-Dirac statistics"}], how_known: "Fermi statistics (Fermi–Dirac statistics), 1926; two sources."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S3, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Italy is Southern Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–5"}], how_known: "Fermi statistics, beta-decay theory and slow neutrons (1926–1934) were done in Florence and Rome. The first controlled chain reaction (1942) was in Chicago. Two regions, so 0.7.", alternatives: [{value: "North America", cites: [{source: S3, locator: "paragraphs 6–8"}], note: "Columbia 1939–1942; Chicago 1942–1954."}]}
+  region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5 (Florence in paragraph 2)"}], how_known: "Fermi statistics, beta-decay theory and slow neutrons (1926–1934) were done in Florence and Rome. The first controlled chain reaction (1942) was in Chicago. Two regions, so 0.7.", alternatives: [{value: "North America", cites: [{source: S3, locator: "paragraphs 6–8"}], note: "Columbia 1939–1942; Chicago 1942–1954."}]}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "first paragraph ('the son of')"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Italian, English], certainty: 1.0, cites: [{source: S2, locator: "Biography (Italian titles of 1921–1935 papers; English papers in Proc. Roy. Soc.)"}], how_known: "MacTutor lists papers in both languages."}
   occupations: {value: [physicist, "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S3, locator: "paragraphs 4–8"}], how_known: "Sources agree."}
