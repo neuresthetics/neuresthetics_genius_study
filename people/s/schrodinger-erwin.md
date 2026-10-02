@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Bernstein), MacTutor and the Nobel biography. Worldview from the epilogue of What is Life? (1944) and Mind and Matter (1958), read in two web transcriptions of the Cambridge edition, plus Britannica on My View of the World. Coded HINDU at 0.5 (stub system; PANT, IDEAL and PANENT named). A 4 (0.7), B 4 (1.0), C 4 (0.5), D 3 (0.5), E 4 (0.7). mid_basin false. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #47: MacTutor's 'Although he was a Catholic' is about the adult in 1933, so family_religion and religious_heritage_by_birth are now TODO (were 'Catholic, per MacTutor' at 0.5); the adult nominal affiliation keeps the MacTutor statement at 0.7 (one reliable source, no dispute). Finding #45: region_of_work certainty 1.0 → 0.7, value unchanged (Western Europe, where wave mechanics was done); the 1935 cat paper (Oxford) and What is Life? (Dublin) were Northern Europe, now an alternative. region_of_birth stays 1.0 (Vienna, documented). Leading cut marked with [...] in one statement. Worldview scores unchanged. Not reviewed."}
 
 identity:
   id: schrodinger-erwin
@@ -40,7 +41,7 @@ basics:
   first_lasting_contribution_year: {value: 1926, certainty: 1.0, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "The wave equation, first half of 1926; two sources."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S3, locator: "paragraph 5"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Vienna, Austria')"}], how_known: "Austria is Western Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Wave mechanics was done in Zürich (Switzerland, Western Europe). What is Life? was written in Dublin (Ireland, Northern Europe in regions.csv), but the lasting physics is Zürich."}
+  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Main contribution (wave mechanics, 1926) was made in Zürich (Switzerland, Western Europe), so that is the value (DATA_DICTIONARY: if split, pick where the main contribution was made). Two other contributions listed in this record were made in Northern Europe: the cat paper (1935) while he was at Oxford (1933–36) and What is Life? (1944) in Dublin. Two regions, so 0.7, as for Einstein, Fermi and Meitner.", alternatives: [{value: "Northern Europe", cites: [{source: S2, locator: "Biography (Oxford, November 1933; Dublin from autumn 1939)"}], note: "Oxford (UK) and Dublin (Ireland) are Northern Europe in data/reference/regions.csv."}]}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "first paragraph ('the only child')"}], how_known: "As the sources record it."}
   languages_of_work: {value: [German, English], certainty: 1.0, cites: [{source: S1, locator: "later life paragraph"}, {source: S2, locator: "Biography"}], how_known: "German papers; English books from Dublin; English learned in childhood."}
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 5–7"}], how_known: "Nobel biography."}
@@ -62,7 +63,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of wave mechanics.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: "Catholic, per MacTutor", certainty: 0.5, cites: [{source: S2, locator: "Biography (1933: 'Although he was a Catholic')"}], how_known: "One source, and it refers to the adult. Other accounts (not read) give a Catholic father and a Lutheran mother; see data_quality_flags.", alternatives: [{value: "Lutheran (mother's church)", cites: [{source: S2, locator: "Biography"}], note: "Not stated in S2; the alternative is commonly reported and needs the Autobiographical Sketches or Moore's biography to check. Listed so the 0.5 is honest."}]}
+  family_religion: {value: TODO, note: "Not settled from the sources read. MacTutor's 'Although he was a Catholic' (S2, Biography) is about the adult in 1933, not his family. A Catholic father and a Lutheran mother are commonly reported but were not found in S1–S5; needs the Autobiographical Sketches in full or Moore's biography."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father, Rudolf Schrödinger, ran a small linoleum factory and studied botany and Italian painting", name: "Rudolf Schrödinger", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraphs 1–2"}], how_known: "Two sources."}
@@ -84,7 +85,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1910–1961", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Doctorate to death."}
   nominal_affiliations:
-    - {value: "Catholic, per MacTutor; no church practice reported", role: other, certainty: 0.5, cites: [{source: S2, locator: "Biography"}], how_known: "One source; contested (see childhood.family_religion)."}
+    - {value: "Catholic as an adult, per MacTutor ('Although he was a Catholic', 1933); no church practice reported", role: other, certainty: 0.7, cites: [{source: S2, locator: "Biography (1933)"}], how_known: "One reliable source on the adult, so 0.7. It says nothing about his family's church (see childhood.family_religion)."}
   self_described_science_religion_relation:
     value: "His metaphysics of one mind is 'religion, not a science -- a religion, however, not opposed to science, but supported by what disinterested scientific research has brought to the fore' (Mind and Matter, 1958). In What is Life? he presents the conclusion that 'I' control the atoms 'according to the Laws of Nature' as the closest a biologist can get to proving God and immortality."
     certainty: 0.7
@@ -153,7 +154,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
       note: "Unofficial web transcription of the Cambridge edition; page from the edition's pagination as cited in S5."
-    - text: "am the person, if any, who controls the 'motion of the atoms' according to the Laws of Nature."
+    - text: "[...] am the person, if any, who controls the 'motion of the atoms' according to the Laws of Nature."
       cites: [{source: S4, locator: "Epilogue, p. 86–87"}]
       date: "1944"
       context: "The subject is 'I – I in the widest meaning of the word, that is to say, every conscious mind that has ever said or felt 'I''."
@@ -205,7 +206,7 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Viennese; father's family Bavarian in origin, mother half English", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: "Catholic, per MacTutor (contested; see childhood)", certainty: 0.5, cites: [{source: S2, locator: "Biography"}], how_known: "One source, contested."}
+  religious_heritage_by_birth: {value: TODO, note: "MacTutor's 'a Catholic' (1933) describes the adult, not his birth family; see childhood.family_religion."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: TODO}
 
@@ -238,7 +239,7 @@ review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 24"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Family religion: MacTutor calls him 'a Catholic' (1933 context); a Lutheran upbringing is also commonly reported. Not settled from the sources read."
+    - "Family religion: MacTutor's 'Although he was a Catholic' is about the adult in 1933, not his family (lens audit, batch 2). A Catholic father and Lutheran mother are commonly reported but not found in the sources read, so family_religion and religious_heritage_by_birth are TODO."
     - "Age at the wave equation: Britannica says 39; birth date and 'first half of 1926' give 38."
     - "S4 and S5 are unofficial transcriptions; S4 has OCR errors (e.g. 'upheld in', a garbled line in the maya passage). Only clean passages are quoted."
   open_questions:
@@ -322,7 +323,7 @@ The Schrödinger equation (1926), the cat thought experiment (1935) and What is 
 
 ## Childhood and education
 
-Only child of Rudolf Schrödinger and Emily Bauer; English and German were spoken at home [S2, Biography]. He loved mathematics, physics and "the strict logic of the ancient grammars" [S2, Biography]. MacTutor calls him a Catholic; his upbringing's church is not settled [S2, Biography].
+Only child of Rudolf Schrödinger and Emily Bauer; English and German were spoken at home [S2, Biography]. He loved mathematics, physics and "the strict logic of the ancient grammars" [S2, Biography]. MacTutor calls the adult a Catholic (1933); his family's church is not settled from the sources read [S2, Biography].
 
 ## Adult working worldview
 
