@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #1: primary_system how_known no longer quotes S7 (AIP no-quotation notice); it now paraphrases Margrethe Bohr and says the 'did not think of himself as anything' answer was to Kuhn's question whether he thought of himself as a Jew, not a question about religion; the 'not true' wording is Heilbron's (S4, p. 24). #5: D_authority 4 at 0.5 kept; the 'warn people that it was not true' item is now labelled Margrethe Bohr's 1963 account as reported by Heilbron (S4, p. 24, n. 30), not Bohr's words; p. 34 (truth in literature and science) dropped as D support and its statement untagged from D. D already at the 0.5 floor, so no certainty change; nothing downstream changes (mid_basin BELOW_THRESHOLD, A not scored). Not reviewed."}
 
 identity:
   id: bohr-niels
@@ -101,11 +102,11 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S4, locator: "pp. 20, 24"}, {source: S7, locator: "Session I (religion)"}]
-    how_known: "Positive evidence of rejection of religion, but not of which non-theist position. Heilbron: he realised 'Christian theology was nonsense' and later wanted to write a book on religion 'to warn people that it was not true' (pp. 20, 24). Margrethe Bohr (1963) said he thought religion not true and that he 'didn't think of himself as anything'. ATHE needs positive naturalism and AGNOS explicit suspension (v7.1); the sources reject Christianity and religion in general but give no statement on God's existence or on naturalism as such."
+    how_known: "Positive evidence of rejection of religion, but not of which non-theist position. Heilbron: he realised 'Christian theology was nonsense' (p. 20), and, citing Margrethe Bohr's 1963 interview (n. 30), that for a time he wanted to write a book on religion 'to warn people that it was not true' (p. 24). In that interview (S7, paraphrased because AIP restricts quotation) his widow said that he regretted the role religion played and held throughout the years she knew him that people should not build their lives on what is untrue; asked by Kuhn whether he thought of himself as a Jew, she said he did not, nor as anything else, which is about Jewish identity, not a religious self-description. ATHE needs positive naturalism and AGNOS explicit suspension (v7.1); the sources reject Christianity and religion in general but give no statement on God's existence or on naturalism as such."
     note: "Candidates: ATHE (leading) or AGNOS. Aaserud & Heilbron, Love, Literature and the Quantum Atom (2013), pp. 73–80 and 110, reportedly describe 'well-fortified atheism'; not read (seen only via a secondary summary), so not used. Same treatment as Curie (lens audit, batch 2, finding #108)."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S7."}
   candidate_codes_considered:
-    - {code: ATHE, reason: "Leading candidate, not coded (BELOW_THRESHOLD): theology judged 'nonsense' and religion 'not true' (S4, pp. 20, 24), but no statement of positive naturalism read. ATHE is a stub system file (flag).", cites: [{source: S4, locator: "pp. 20, 24"}]}
+    - {code: ATHE, reason: "Leading candidate, not coded (BELOW_THRESHOLD): theology judged 'nonsense' (S4, p. 20) and religion 'not true' (Heilbron's wording, S4, p. 24, reporting Margrethe Bohr's 1963 account), but no statement of positive naturalism read. ATHE is a stub system file (flag).", cites: [{source: S4, locator: "pp. 20, 24"}]}
     - {code: AGNOS, reason: "Candidate, not coded: his stress on what human beings cannot understand (S4, p. 32) could suggest suspension, but it is about knowledge in general, and he called religion untrue rather than unknowable. AGNOS is a stub system file (flag).", cites: [{source: S4, locator: "p. 32"}]}
     - {code: CHRIST, reason: "Rejected: christening and nominal Lutheran upbringing only; he left the church in 1912 on his own convictions. Church membership is never a code.", cites: [{source: S4, locator: "p. 20"}, {source: S5, locator: "1912"}]}
     - {code: JUDA, reason: "Rejected: Jewish maternal heritage only; the family did not attend synagogue and he did not think of himself as a Jew (S7). Heritage is never a code.", cites: [{source: S7, locator: "Session I (Jewish background)"}]}
@@ -129,9 +130,9 @@ worldview:
       value: 4
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S4, locator: "pp. 20, 24, 34"}]
-      how_known: "Heilbron's reconstruction, with two letter phrases quoted by him (secondary quotation)."
-      rationale: "Observation and reason outrank revelation. He reached his rejection of theology by his own reasoning, and took his father's smile to show 'that I too could think' (S4, p. 20); he wanted to warn people that religion 'was not true' (S4, p. 24); and he held 'that everything that is of any value is true' (S4, p. 34). No authority above reason is acknowledged."
+      cites: [{source: S4, locator: "pp. 20, 24 (n. 30)"}]
+      how_known: "Heilbron's reconstruction (scholarly_reconstruction, 0.5): one letter phrase of Bohr's quoted by him (secondary quotation, p. 20) and one item of reported speech, Margrethe Bohr's 1963 account as Heilbron gives it (p. 24, n. 30). Lens audit batch 3 (#5): p. 34 dropped as support, since it is about truth in literature and science, not about which authority decides. 0.5 is already the lowest scored level."
+      rationale: "Observation and reason outrank revelation. On Heilbron's account he reached his rejection of theology by his own reasoning, and he took his father's smile to show 'that I too could think' (S4, p. 20, his letter of 1911). By his widow's 1963 account, as Heilbron reports it, he wanted for a time to write a book on religion to warn people 'that it was not true' (S4, p. 24, n. 30; reported speech, not his words). No authority above reason is acknowledged in anything read."
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie). The rejection of salvation is scored on C."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied (B_cause is also only at 0.5)."}
   statements:
@@ -154,7 +155,7 @@ worldview:
       cites: [{source: S4, locator: "p. 34"}]
       date: "1912-01-15"
       context: "Letter to Margrethe Nørlund on truth in literature and science, as quoted by Heilbron in English translation."
-      axes: [D_authority]
+      note: "Not tagged to D_authority since the lens audit (batch 3, #5): the passage is about truth in literature and science, not about which authority decides."
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
@@ -304,7 +305,7 @@ His father was an atheist who "exposed his son to the state religion so that he 
 
 ## Adult working worldview
 
-To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. For a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24]; his widow said he still spoke of such a book in his last autumn [S7, Session I]. In 1912 he wrote that he could "almost call it my religion, that I think that everything that is of any value is true" [S4, p. 34]. Scores: B 4, C 4, D 4 (all 0.5); A, E below threshold.
+To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. Heilbron, citing Margrethe Bohr's 1963 interview, writes that for a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24, n. 30]; in that interview his widow said he still spoke of such a book in his last autumn [S7, Session I]. In 1912 he wrote that he could "almost call it my religion, that I think that everything that is of any value is true" [S4, p. 34]. Scores: B 4, C 4, D 4 (all 0.5); A, E below threshold.
 
 ## Heritage (context only)
 
