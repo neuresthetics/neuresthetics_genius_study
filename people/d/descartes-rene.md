@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'René Descartes' (Hatfield) and Britannica (Watson, first page); physics from SEP 'Descartes' Physics' (Slowik). Worldview from the Discourse (Veitch), the Principles (Veitch's selections) and the Meditations (Molyneux 1680), all read in Project Gutenberg texts, so capped at 0.7 (CODING_GUIDE §7). DRAFT SCORES for v8's review: primary_system CLASS_THEISM 0.5; A 1, B 3, D 1, E 3 at 0.7; C 1 at 0.5; mid_basin true (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #94: native_name 'René Descartes' (French), 'Renatus Cartesius' dropped. #123: early_mathematics 'other' (curriculum only; no source says advanced). #132: primary_system rationale now quotes the CLASS_THEISM tests and cites Principles I.14–15 (idea of God) and Discourse IV for the attributes; value unchanged. #138: conservation passage is Principles II.42 (SEP physics §4 prints 'Pr II 62'; §6 has II 42). #141: the named alternative score is now in the E rationale; rational soul quoted from Discourse V. #156: first_evidence wording now the 1629 'foundation of physics' letter (AT 1:144); 'all the principles of my physics' is a later letter about the Meditations (AT 3:233). #157, #161, #168: locators and coder note corrected. S5 note lists the parts in the selection. Not reviewed."}
 
 identity:
   id: descartes-rene
@@ -24,7 +25,7 @@ identity:
     field: philosophy
     field_bucket: philosophy
   full_name: {value: "René Descartes", certainty: 1.0, cites: [{source: S1, locator: "§1.1"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
-  native_name: {value: "René Descartes (French); Renatus Cartesius (Latin)", certainty: 0.7, cites: [{source: S1, locator: "§1.1 (signed 'du Perron')"}], how_known: "French form from both sources; the Latin form is the usual one on his Latin title pages, not stated in a source read (flag)."}
+  native_name: {value: "René Descartes", certainty: 1.0, cites: [{source: S1, locator: "§1.1 (signed 'du Perron')"}, {source: S2, locator: "opening"}], how_known: "French form, as both sources give it. A Latin form of the name is not given in any source read, so none is recorded (lens audit #94: 'Renatus Cartesius' and the title-page claim had no source and were removed)."}
   aliases:
     - {name: "Descartes-René", kind: "roster alias"}
     - {name: "Rene Descartes", kind: "roster alias"}
@@ -73,7 +74,7 @@ childhood:
   schooling:
     - {value: "Jesuit College of La Flèche: grammar school, then three years of Aristotelian philosophy, with mathematics in the final three years", stage: "religious school", years: "1606/1607–1614/1615", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}, {source: S2, locator: "'Early life and education' (1606)"}], how_known: "Two sources; SEP gives 1606 or 1607, Britannica 1606."}
     - {value: "University of Poitiers, law degree", stage: university, years: "1614–1616", certainty: 1.0, cites: [{source: S1, locator: "§1.1"}, {source: S2, locator: "'Early life and education'"}], how_known: "Two sources."}
-  early_mathematics: {value: "advanced mathematics", note: "Mathematics in the last three years at La Flèche (SEP); the level reached is not stated.", certainty: 0.5, cites: [{source: S1, locator: "§1.1"}], how_known: "SEP describes the curriculum, not his attainment; coder's reading."}
+  early_mathematics: {value: "other", note: "Mathematics in the final three years at La Flèche: 'The Jesuits also included mathematics in the final three years' (SEP); the level he reached is not stated.", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}], how_known: "SEP only; it describes the curriculum, not his attainment, so the value is 'other' with the curriculum as description (as in the Bohr record), not a level (lens audit #123)."}
   early_geometric_style_reasoning: {value: "Jesuit curriculum in logic and mathematics; he later wrote that he was 'especially delighted with the mathematics, on account of the certitude and evidence of their reasonings'", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}, {source: S4, locator: "Part I"}], how_known: "SEP on the curriculum; his own later account (Discourse, Part I) of his school years."}
   early_science_exposure:
     - {value: "Galileo's discovery of the moons of Jupiter celebrated at La Flèche", year: "1610", age: 14, certainty: 0.7, cites: [{source: S1, locator: "§1.1"}], how_known: "SEP."}
@@ -98,9 +99,9 @@ worldview:
     value: CLASS_THEISM
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S6, locator: "Meditation III"}, {source: S5, locator: "Part I, §14; §76"}, {source: S1, locator: "§1.5"}]
+    cites: [{source: S6, locator: "Meditation III"}, {source: S5, locator: "Part I, §§14–15; §76"}, {source: S4, locator: "Part IV; Part V"}, {source: S1, locator: "§1.5"}]
     how_known: "His own published works. Below the 0.7 that the text alone would allow, because the fit to the code is partial (see rationale) and two alternatives are named."
-    rationale: "DRAFT, judgment call. Meets the three CLASS_THEISM use_when tests in his own words: (1) argues to God by reason (Meditation III; the idea of an 'all-perfect Being' with 'a true and immutable nature', Principles I.14); (2) God immutable (same); (3) nature an order of laws that God established and sustains by his 'concurrence' (Discourse V). But the code's label is Aristotelian-Thomistic-Falsafa and Descartes rejected scholastic Aristotelianism (S2, opening), so the fit is to the rational God, not the tradition; hence 0.5. Named alternatives: CHRIST (Catholic, and he submits to revelation, Principles I.76) and DEISM (Hatfield: his metaphysical God is 'nondenominational, tending toward the deistic', S1 §1.5). DEISM is ruled out by its own do_not_use_when (he accepts revelation). RATN (stub) is the epistemological label Britannica uses ('Descartes’s metaphysics is rationalist'), but it names a method, not a God-world metaphysics."
+    rationale: "DRAFT, judgment call. The CLASS_THEISM use_when tests, as written, are only partly met in his own words. (1) 'argues to God from the world by reason (first cause, necessary existent, prime mover)': partly. He argues to God by reason, but from the idea of God rather than from the world: the idea of an 'all-perfect Being' (Principles I.14) does not represent 'a chimera, but a true and immutable nature' (Principles I.15; Meditation III). (2) 'holds God simple, immutable or impassible': met; God is 'infinite, eternal, immutable, omniscient, all-powerful' (Discourse IV). (3) 'treats nature as an order of secondary causes': partly; nature is an order of laws that God established and sustains by his 'concurrence' (Discourse V). But the code's label is Aristotelian-Thomistic-Falsafa and Descartes rejected scholastic Aristotelianism (S2, opening), so the fit is to the rational God, not the tradition; hence 0.5. Named alternatives: CHRIST (Catholic, and he submits to revelation, Principles I.76) and DEISM (Hatfield: his metaphysical God is 'nondenominational, tending toward the deistic', S1 §1.5). DEISM is ruled out by its own do_not_use_when (he accepts revelation). RATN (stub) is the epistemological label Britannica uses ('Descartes’s metaphysics is rationalist'), but it names a method, not a God-world metaphysics."
   secondary_system: {value: UNKNOWN, how_known: "No second system: he kept faith doctrines (the Trinity) apart from his claims about God from reason (S1 §1.5) but did not publish a second system."}
   candidate_codes_considered:
     - {code: CLASS_THEISM, reason: "Coded (DRAFT, 0.5): God known by reason, immutable, sustaining a lawful nature. Partial fit: not Aristotelian. CLASS_THEISM is a sourced draft system file.", cites: [{source: S6, locator: "Meditation III"}, {source: S4, locator: "Part V"}]}
@@ -119,9 +120,9 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "Part V"}, {source: S3, locator: "§4 (Pr II 37, II 62)"}, {source: S1, locator: "§1.5"}]
+      cites: [{source: S4, locator: "Part V"}, {source: S3, locator: "§4 (Pr II 37; the conservation passage, labelled 'Pr II 62' there); §6 (same passage, labelled 'Pr II 42')"}, {source: S1, locator: "§1.5"}]
       how_known: "His own published text (unofficial copy, §7) and SEP; a named alternative (4)."
-      rationale: "DRAFT. Scored on his account of nature (P6). Leans LIO: God established 'certain laws' in nature that 'are accurately observed in all that exists or takes place in the world' (Discourse V), and maintains the world 'by the same action and with the same laws with which He created it' (Pr II 62, quoted in S3 §4). The stated, limited exception is the created human mind, which acts freely and is 'master of his own actions' (Principles I.37), outside mechanical necessity; and he does not deny miracles. Named alternative: 4, since Hatfield writes that 'If Descartes were fully consistent [...] there would be no miracles in his world' (S1 §1.5)."
+      rationale: "DRAFT. Scored on his account of nature (P6). Leans LIO: God established 'certain laws' in nature that 'are accurately observed in all that exists or takes place in the world' (Discourse V), and maintains the world 'by the same action and with the same laws with which He created it' (Principles II.42, quoted in S3 §4, which mislabels it 'Pr II 62'; S3 §6 gives Pr II 42). The stated, limited exception is the created human mind, which acts freely and is 'master of his own actions' (Principles I.37), outside mechanical necessity; and he does not deny miracles. Named alternative: 4, since Hatfield writes that 'If Descartes were fully consistent [...] there would be no miracles in his world' (S1 §1.5)."
     C_ledger:
       value: 1
       basis: written_profession
@@ -142,7 +143,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S5, locator: "Part II, §22–23; Part III, §3"}, {source: S4, locator: "Part V"}]
       how_known: "His own published texts (unofficial copies, §7); a named alternative (4)."
-      rationale: "DRAFT. Scored on the world's order (P7). Leans LIO: 'the earth and heavens are made of the same matter' and 'There is therefore but one kind of matter in the whole universe' (Principles II.22–23); animal and human bodies are machines 'made by the hands of God' (Discourse V); and the supposition that all things were made for us 'would be plainly ridiculous and inept in physical reasoning' (Principles III.3). The stated, limited exception is the human rational soul, which alone among earthly beings is not a mechanism (S1 §2; Discourse V). No favour for a group in events in anything read. His hope of heaven is a C matter (P7)."
+      rationale: "DRAFT. Scored on the world's order (P7). Leans LIO: 'the earth and heavens are made of the same matter' and 'There is therefore but one kind of matter in the whole universe' (Principles II.22–23); animal and human bodies are machines 'made by the hands of God' (Discourse V); and the supposition that all things were made for us 'would be plainly ridiculous and inept in physical reasoning' (Principles III.3). The stated, limited exception is the human rational soul, which 'could by no means be educed from the power of matter' but 'must be expressly created' (Discourse V). No favour for a group in events in anything read. His hope of heaven is a C matter (P7). Named alternative: 4, if the rational soul is not counted as an exception to the world's order, since it concerns the human mind and grants no group any exception in events."
   mid_basin: {value: true, certainty: 0.7, cites: [{source: S6, locator: "Meditation III"}, {source: S4, locator: "Part V"}], how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7, so true. Certainty is the lower of the two (0.7). DRAFT: both axes are named-alternative cases, and B scored 4 or A scored 0 would not change the result."}
   statements:
     - text: "I revered our theology, and aspired as much as any one to reach heaven: but being given assuredly to understand that the way is not less open to the most ignorant than to the most learned, and that the revealed truths which lead to heaven are above our comprehension, I did not presume to subject them to the impotency of my reason"
@@ -210,7 +211,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "DRAFT SCORES for v8's review. All own-word evidence was read in Project Gutenberg copies (Veitch's Discourse and Principles selections; Molyneux's 1680 Meditations), unofficial web copies, so no worldview field exceeds 0.7 (§7). Veitch's Principles is a selection: Part II stops at §25, so II.36–37 (laws from God's immutability) were read only as quoted in SEP 'Descartes' Physics' (S3). No page numbers. RATN is a stub system file (flag). The Rosicrucian and dream material (S1 §1.2; S2) is biography, not his metaphysics, and is not scored."
+  coder_notes: "DRAFT SCORES for v8's review. All own-word evidence was read in Project Gutenberg copies (Veitch's Discourse and Principles selections; Molyneux's 1680 Meditations), unofficial web copies, so no worldview field exceeds 0.7 (§7). Veitch's Principles is a selection: Part II stops at §25, so II.37 (the first law) and II.42 (conservation) were read only as quoted in SEP 'Descartes' Physics' (S3). II.36 (God's immutability as the cause of motion) was not read; S3 does not quote it (lens audit #168). No page numbers. RATN is a stub system file (flag). The Rosicrucian and dream material (S1 §1.2; S2) is biography, not his metaphysics, and is not scored."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -223,15 +224,15 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1619–1649", certainty: 0.7, cites: [{source: S1, locator: "§1.2–1.5"}], how_known: "From the 1619 dreams and early mathematics to the Passions."}
   age_at_first_lasting_contribution: {value: 41, certainty: 0.7, cites: [{source: S1, locator: "§1.1; §1.3"}], how_known: "Born 1596; Geometry published 1637. If the 1619 discovery is used, 23."}
-  first_evidence_of_lio_type_views: {value: "Metaphysics of God and soul said to contain 'all the principles of my physics' (letter to Mersenne), after the 'metaphysical turn' on first coming to the Netherlands", year: 1629, age: 33, certainty: 0.5, cites: [{source: S1, locator: "§1.3"}], how_known: "SEP dates a little metaphysical treatise to his first year in the Netherlands; the text is lost or survives only as the later Meditations."}
-  lio_views_relative_to_major_work: {value: "during major work", rationale: "The lawful physics and the God that grounds it are first stated in the Discourse (1637), in the middle of the major-work period.", certainty: 0.5, cites: [{source: S4, locator: "Part V"}, {source: S1, locator: "§1.3"}], how_known: "Dates of what was read."}
+  first_evidence_of_lio_type_views: {value: "The 'metaphysical turn' of his first months in the Netherlands: through his investigations into God and the self he was able 'to discover the foundation of physics' (SEP §1.3, citing AT 1:144). His later remark to Mersenne that the metaphysics of the Meditations contained 'all the principles of my physics' (AT 3:233) is about the Meditations, not 1629 (lens audit #156)", year: 1629, age: 33, certainty: 0.5, cites: [{source: S1, locator: "§1.3"}], how_known: "SEP dates a little metaphysical treatise to his first year in the Netherlands; the text is lost or survives only as the later Meditations."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "The lawful physics and the God that grounds it were first published in the Discourse (1637), in the middle of the major-work period; they were already in the suppressed World, begun after 1629, whose laws of motion are 'formulated and sustained by God' (S1 §1.3).", certainty: 0.5, cites: [{source: S4, locator: "Part V"}, {source: S1, locator: "§1.3"}], how_known: "Dates of what was read."}
   worldview_during_major_work: {value: "CLASS_THEISM throughout (draft code)", certainty: 0.5, cites: [{source: S4, locator: "Parts I, V"}, {source: S5, locator: "Part I"}], how_known: "Discourse (1637) and Principles (1644) agree."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "yes", rationale: "He resolved 'to accept as true nothing that did not appear to me more clear and certain than the demonstrations of the geometers' (Discourse V), and his four rules of method are 'a direct application of mathematical procedures' (Britannica).", certainty: 0.7, cites: [{source: S4, locator: "Part V, opening"}, {source: S2, locator: "'Early life and education' (four rules)"}], how_known: "His own text in an unofficial copy, and Britannica."}
   form_acquired: {value: "childhood or adolescence", certainty: 0.5, cites: [{source: S1, locator: "§1.1"}, {source: S4, locator: "Part I"}], how_known: "Mathematics at La Flèche, which he says delighted him by 'the certitude and evidence of their reasonings'; the method itself dates from 1619–1628."}
-  circle_present: {value: "no", rationale: "God is an infinite thinking substance distinct from extended matter (Meditation III; S1 §2), not identified with Nature.", certainty: 0.7, cites: [{source: S6, locator: "Meditation III"}, {source: S1, locator: "§2"}], how_known: "His own text and SEP."}
+  circle_present: {value: "no", rationale: "God is an infinite substance distinct from extended matter (Meditation III); of three substances, 'The first and primary substance is God' (S1 §3.3). Not identified with Nature.", certainty: 0.7, cites: [{source: S6, locator: "Meditation III"}, {source: S1, locator: "§3.3"}], how_known: "His own text and SEP."}
   reading: "As belief, not finding: form present (geometrical demonstration as the standard), circle absent (a transcendent creator). A lawful-nature theist with early mathematical form: the pattern H1 says can occur, but it does not test the circle."
   notes: ""
 
@@ -284,7 +285,7 @@ sources:
     citation: "Slowik, Edward. \"Descartes' Physics.\" Stanford Encyclopedia of Philosophy (substantive revision 20 Oct 2025). https://plato.stanford.edu/entries/descartes-physics/."
     url: "https://plato.stanford.edu/entries/descartes-physics/"
     accessed: 2026-10-02
-    reliability_note: "Scholarly reference work; opening and §4 read. Its quotations of Principles II.37 and II.62 are secondary quotations."
+    reliability_note: "Scholarly reference work; opening, §4 and the conservation passage in §6 read. Its quotations of Principles II.37 and II.42 are secondary quotations. §4 labels the II.42 passage 'Pr II 62'; §6 labels it 'Pr II 42', which is the correct article (lens audit #138)."
     used_for: [contribution, worldview]
   - id: S4
     type: primary
@@ -304,7 +305,7 @@ sources:
     citation: "Descartes, René. Selections from the Principles of Philosophy. Translated by John Veitch. Project Gutenberg eBook 4391, https://www.gutenberg.org/ebooks/4391."
     url: "https://www.gutenberg.org/ebooks/4391"
     accessed: 2026-10-02
-    reliability_note: "Unofficial web copy (§7 cap 0.7) of a selection (Part II only to §25). Cited by Part and article number."
+    reliability_note: "Unofficial web copy (§7 cap 0.7) of a selection: Part I, Part II §§1–25, Part III §§1–3 and Part IV from §188. Cited by Part and article number."
     used_for: [worldview, timing, contribution]
   - id: S6
     type: primary
@@ -371,3 +372,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Geometric f
 ## Research log
 
 - 2026-10-02: Read SEP "René Descartes" (Hatfield, §§1–2), SEP "Descartes' Physics" (Slowik, opening and §4), Britannica (Watson, first page). Read the Discourse (Gutenberg 59), Veitch's Principles selections (Gutenberg 4391) and Molyneux's Meditations (Gutenberg 70091) and copied the quotations from those files. No Adam–Tannery or CSM text opened. Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Read SEP "René Descartes" §3.3 and SEP "Descartes' Physics" §6, and re-read Principles I.14–15 and Discourse IV–V (Gutenberg) for items #94–#168.
