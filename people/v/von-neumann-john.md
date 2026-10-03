@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor. Religion from a colleague's recollection, Seeger, 'Von Neumann, Jewish Catholic' (PSCF 40, 1988): nominal Catholic after his first marriage and Catholic instruction in his last illness. No statement of his own on religion was read, and no recorded interview of him on religion was found (the P8 interview route is unavailable). primary_system BELOW_THRESHOLD. B 4 (0.5) from working science; A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). #352: full_name now follows MacTutor ('born János von Neumann'); the earlier 'born János Neumann' is kept only as a marked inference from the 1913 title. Not reviewed."}
 
 identity:
   id: von-neumann-john
@@ -23,7 +24,7 @@ identity:
     status: core
     field: mathematics
     field_bucket: mathematics
-  full_name: {value: "John von Neumann (born János Neumann)", certainty: 0.7, cites: [{source: S1, locator: "Biography, paragraphs 1–2"}], how_known: "MacTutor: born János von Neumann; the 'von' came from his father's 1913 title."}
+  full_name: {value: "John von Neumann (born János von Neumann)", certainty: 0.7, cites: [{source: S1, locator: "Biography, paragraphs 1–2 ('John von Neumann was born János von Neumann')"}], how_known: "MacTutor's wording, reopened 2026-10-02. MacTutor also says his father bought the title in 1913, ten years after the birth, so his name at birth was probably János Neumann; that is the coder's inference, not stated in the source."}
   native_name: {value: "Neumann János (Hungarian)", certainty: 0.5, cites: [{source: S1, locator: "Biography, paragraph 1"}], how_known: "MacTutor gives János; the Hungarian name order is the coder's rendering."}
   aliases:
     - {name: "John-von-Neumann", kind: "roster alias"}
