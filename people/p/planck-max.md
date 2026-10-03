@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Pages: 'heiligste Symbol' is copy p. 5 and 'wesensgleich' copy p. 12. Framing: 'regiert er die Welt' is a question he poses and the 'almighty hand / Gläubige und Ungläubige' passage is the religious person's answer; A and E rationales no longer treat them as his own views. Glosses that are Gaynor's wording are marked 'cross-checked with Gaynor'. Heilbron: 'deism' unconfirmed in the book; Wikipedia's p. 198 is the 2000 Harvard printing; S6 citation fixed and the label no longer used as support. New S9 (Gladigow 1986) confirms the 1947 letter in German (citing Herneck 1952) and reports a 1945 letter (Bertholet 1948) that seems to show a more personal God; added as counter-evidence on A and on DEISM vs CHRIST (no certainty change: A stays 2 at 0.7 with alternative 1 strengthened; DEISM already at 0.5). Finding #127: DEISM rationale rewritten for 'einzig und allein Sache des Glaubens' and the non-rational direct link with God. Finding #132: E_scope 3 → 4 (0.7). Finding #135: nominal affiliation role 'member' → 'other' (membership unsourced). Two statements added (p. 6 faith-alone sentence; p. 11 world order). mid_basin unchanged (TODO, A = 2). primary_system unchanged (DEISM 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. Its main claims rest on the 1937 lecture, read only in a typed web copy (S4) and a blog (S7), and no authoritative edition was reachable to check the wording. No mid_basin change (A and B were already 0.7)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1900 → 1879, the start year of the earliest listed contribution (work on entropy and the second law, 1879–1897); age 42 → 21; era unchanged. If that item is judged not lasting it should be removed and the year returns to 1900 (noted in how_known). Not reviewed."}
 
 identity:
   id: planck-max
@@ -39,7 +40,7 @@ basics:
   death:
     date: {value: "1947-10-04", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "final paragraph"}], how_known: "Two sources agree."}
     place: {value: "Göttingen", modern_name: "Göttingen, Germany", polity_then: "British occupation zone of Germany", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "final paragraph"}], how_known: "Two sources agree on the town; the occupation zone is the coder's label."}
-  first_lasting_contribution_year: {value: 1900, certainty: 0.7, cites: [{source: S1, locator: "'What were Max Planck's contributions?'; blackbody paragraphs"}, {source: S3, locator: "paragraph 4"}], how_known: "The quantum of action and the radiation law (October–December 1900). His earlier thermodynamics papers from 1879 (S3, paragraph 3) could count, so 0.7; both years fall in the same era."}
+  first_lasting_contribution_year: {value: 1879, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}, {source: S2, locator: "doctorate and habilitation paragraphs"}], how_known: "Start year of the earliest listed contribution, the work on entropy and the second law (1879–1897, beginning with his 1879 doctoral thesis), under decisions P12 and P13. 0.7 because that item's lasting status is the coder's reading (Thermodynamik, 1897, a standard text); if it is judged not lasting it should be removed from the list, and the year returns to 1900, the quantum of action and radiation law (October–December 1900; S1, blackbody paragraphs; S3, paragraph 4). Both years fall in the same era. Was 1900 until the batch 4 lens audit."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "blackbody paragraphs"}], how_known: "Either candidate year falls in 1850 to 1949 (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Kiel, Schleswig [Germany]')"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "university paragraph"}, {source: S3, locator: "paragraph 2"}], how_known: "Munich, Kiel and Berlin (Germany)."}
@@ -240,7 +241,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1879–1906", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5"}], how_known: "Thermodynamics papers to the radiation book."}
-  age_at_first_lasting_contribution: {value: 42, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; blackbody paragraphs"}], how_known: "Born April 1858; the quantum paper of December 1900. 21 if the 1879 thesis is counted."}
+  age_at_first_lasting_contribution: {value: 42, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; blackbody paragraphs"}], how_known: "Born 23 April 1858; doctorate and first thermodynamics work in 1879 (month not given here), so 21 for most of the year. 42 if the year is the quantum paper of December 1900. Was 42 until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: "Where Is Science Going? (German original 1932): chance and miracle excluded from science", year: 1932, certainty: 0.5, cites: [{source: S5, locator: "p. 159"}], how_known: "Earliest text read; the 1933 English edition. Britannica quotes an earlier autobiographical statement that the laws of reasoning match the laws of nature (date not given)."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The texts read are from 1932–1947, after the quantum work; earlier views not read.", certainty: 0.5, cites: [{source: S5, locator: "p. 159"}, {source: S4, locator: "copy p. 2"}], how_known: "Dates of the texts read."}
   worldview_during_major_work: {value: TODO}
@@ -401,7 +402,7 @@ Protestant academic family [S1; S2]. Context only.
 
 ## Timing
 
-First lasting contribution 1900, at 42 [S1]. The worldview texts read are from 1932–1947.
+First lasting contribution 1879, the start of his work on entropy and the second law, at 21 [S2; S3]; the quantum of action followed in 1900, at 42 [S1]. The worldview texts read are from 1932–1947.
 
 ## Lane B notes (labeled belief model)
 
