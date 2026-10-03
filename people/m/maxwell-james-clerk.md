@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.1"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the sources already cited (S8 the same molecular laws in Sirius and on earth; S9 human will acting within law; S7 prayers that ask for understanding, not favour in events). No text read addresses favour in events directly, so 0.5, with a gap note. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: the letters, essays and prayers S4–S7 and S9 were read in the Gutenberg text of Campbell and Garnett 1882 (S3), an unofficial copy. Checked them against S13, the University of Toronto library scan of the 1882 edition (Internet Archive). All seven quotations match word for word except one Gutenberg error: the 1876 letter to Ellicott (p. 394) reads 'founded on a most conjectural scientific hypothesis', not 'almost' (checked on the page image); quotation corrected. The two prayers (S7) are in a footnote on p. 323, not p. 347; locator corrected everywhere. Added S13 cites to the three certainty-1.0 fields that rest on these texts (A_locus, Lewis Campbell and C. J. Ellicott collaborator entries) and to the seven quotations. All stay at 1.0. No value, certainty or mid_basin change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "S13 scan verification follow-up: the seven quotations checked against the University of Toronto library scan are now marked verified_against primary facsimile; the four S8 lecture quotations and the S3 reported speech remain unchanged. S13 citations were already present. No quotation text or score changed. Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -202,7 +203,7 @@ worldview:
       context: "Letter from Cambridge to his school friend Lewis Campbell, describing his 'great plan' of letting nothing be left unexamined."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
       note: "Transcription as printed in the 1882 Life (Gutenberg text of the 1882 edition)."
     - text: "Christianity—that is, the religion of the Bible—is the only scheme or form of belief which disavows any possessions on such a tenure. Here alone all is free. You may fly to the ends of the world and find no God but the Author of Salvation. You may search the Scriptures and not find a text to stop you in your explorations."
@@ -211,7 +212,7 @@ worldview:
       context: "Same letter. 'Such a tenure' refers to ground kept 'Tabooed' from inquiry, which he says the Scoffer, the Pantheist and others hold."
       axes: [D_authority, A_locus, C_ledger]
       kind: "private letter"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "the exact equality of each molecule to all others of the same kind gives it, as Sir John Herschel has well said, the essential character of a manufactured article, and precludes the idea of its being eternal and self-existent."
       cites: [{source: S8, locator: "p. 376"}]
@@ -252,7 +253,7 @@ worldview:
       context: "Essay read to the Eranus club in Cambridge on whether physical science favours determinism over free will."
       axes: [B_cause, E_scope]
       kind: "other"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
       note: "A paper written for a private discussion club of senior colleagues; printed entire in the 1882 Life."
     - text: "What I thought of was not so much that uniformity of result which is due to uniformity in the process of formation, as a uniformity intended and accomplished by the same wisdom and power of which uniformity, accuracy, symmetry, consistency, and continuity of plan are as important attributes as the contrivance of the special utility of each individual thing."
@@ -261,7 +262,7 @@ worldview:
       context: "Reply by return of post to C. J. Ellicott, Bishop of Gloucester and Bristol, who had asked where the phrase 'manufactured articles' came from."
       axes: [A_locus, B_cause]
       kind: "private letter"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "But I should be very sorry if an interpretation founded on a most conjectural scientific hypothesis were to get fastened to the text in Genesis, even if by so doing it got rid of the old statement of the commentators which has long ceased to be intelligible. The rate of change of scientific hypothesis is naturally much more rapid than that of Biblical interpretations, so that if an interpretation is founded on such an hypothesis, it may help to keep the hypothesis above ground long after it ought to be buried and forgotten."
       cites: [{source: S5, locator: "p. 394"}, {source: S13, locator: "p. 394"}]
@@ -269,7 +270,7 @@ worldview:
       context: "Same letter, answering the bishop's question whether light created before the sun (Genesis 1) could be squared with science."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "I think men of science as well as other men need to learn from Christ, and I think Christians whose minds are scientific are bound to study science that their view of the glory of God may be as extensive as their being is capable of. But I think that the results which each man arrives at in his attempts to harmonise his science with his Christianity ought not to be regarded as having any significance except to the man himself, and to him only for a time, and should not receive the stamp of a society."
       cites: [{source: S6, locator: "pp. 404–405"}, {source: S13, locator: "pp. 404–405"}]
@@ -277,14 +278,14 @@ worldview:
       context: "Rough draft of his reply declining an invitation (March 1875) to join the Victoria Institute, a society for relating science and Christian faith. The draft breaks off; S3 prints 'all that has been found'."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "Almighty God, who hast created man in Thine own image, and made him a living soul that he might seek after Thee and have dominion over Thy creatures, teach us to study the works of Thy hands that we may subdue the earth to our use, and strengthen our reason for Thy service; and so to receive Thy blessed Word, that we may believe on Him whom Thou hast sent to give us the knowledge of salvation and the remission of our sins."
       cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S13, locator: "p. 323 n. 1"}]
       context: "One of two undated prayer fragments 'found amongst his papers', printed by Campbell."
       axes: [C_ledger, A_locus, E_scope]
       kind: "notebook or diary"
-      verified_against: "primary transcription"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "I have looked into most philosophical systems, and I have seen that none will work without a God."
       cites: [{source: S3, locator: "p. 426"}]
