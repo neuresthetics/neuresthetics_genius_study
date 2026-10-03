@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145): D_authority 3 → 2 (both runs, finding #5): the 1939 address puts the highest ends under revelation and tradition and the 1941 paper limits science to what is, which is two domains under two authorities (§3 same pattern, as Planck and Galileo); named alternative 3. B_cause and E_scope certainty 1.0 → 0.7: the key sentences are in the third person, the reason C was already 0.7 (pattern check). Trailing and leading cuts marked with [...] (findings #16, #18; same fix to two more statements). Two statements added (1939 revelation sentence; 1941 'science can only ascertain what is'). mid_basin unchanged (false at 0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. It rests on the sacred-texts.com copy of the 1930 and 1941 essays (S3), and no authoritative edition was reachable to check the wording. No mid_basin change (it depends on A and B only)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
 
 identity:
   id: einstein-albert
@@ -159,7 +160,7 @@ worldview:
     value: false
     certainty: 0.7
     cites: [{source: S4, locator: "cable text"}, {source: S3, locator: "1930; 1941"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (0.7)."
+    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is A's (0.7): the A ≥ 3 branch reads A only (decision P10)."
   statements:
     - text: "Ich glaube an Spinozas Gott der sich in gesetzlicher Harmonie des Seienden offenbart, nicht an Gott der Sich mit Schicksalen und Handlungen der Menschen abgibt."
       note: "English as printed in S4: I believe in Spinoza's God who reveals Himself in the orderly harmony of what exists, not in a God who concerns Himself with fates and actions of human beings."
