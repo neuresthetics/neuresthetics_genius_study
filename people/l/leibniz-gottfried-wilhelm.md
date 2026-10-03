@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Gottfried Wilhelm Leibniz' (Look) and Britannica (Belaval, first page); physics from SEP 'Leibniz's Philosophy of Physics' (McDonough). Worldview from the Theodicy (Huggard, Gutenberg) and the Monadology (Latta, Wikisource), both capped at 0.7 (§7), and Leibniz's First Paper to Clarke, read in page images of the 1717 first edition. DRAFT SCORES for v8's review: primary_system CLASS_THEISM 0.7; A 1, B 3, C 2, D 3, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #287: German removed from languages_of_work (no German work in the sources read). #348: Mainz service 1667–1673 (Britannica: Boyneburg died Dec 1672, the Elector Feb 1673; he stayed in Paris until 1676). #291: how_known now says the 'ancestor' wording is in lasting. Britannica byline now Belaval and Look. #282 (with #341, #372) left: first-lasting year awaits v8 (P13 now in CODING_GUIDE §8). Not reviewed."}
 
 identity:
   id: leibniz-gottfried-wilhelm
@@ -43,14 +44,14 @@ basics:
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "§1 (Mainz, Paris, Hanover)"}], how_known: "Mainz, Paris (1672–1676) and Hanover."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [Latin, French, German], certainty: 0.7, cites: [{source: S1, locator: "§1; §1.1 (Latin and French titles)"}, {source: S6, locator: "First Paper (French original)"}], how_known: "Latin and French works in the sources; German is the coder's knowledge and not shown in the sources read (flag)."}
+  languages_of_work: {value: [Latin, French], certainty: 0.7, cites: [{source: S1, locator: "§1; §1.1 (Latin and French titles)"}, {source: S6, locator: "First Paper (French original)"}], how_known: "Latin and French works in the sources. German was removed: no source read shows works by him in German (lens audit #287); add it back only with a source."}
   occupations: {value: [philosopher, mathematician, "political adviser", librarian, historian, "court councillor"], certainty: 1.0, cites: [{source: S3, locator: "opening"}, {source: S1, locator: "§1"}], how_known: "Britannica: 'German philosopher, mathematician, and political adviser'; SEP: librarian, historian and Privy Councillor at Hanover."}
 
 contribution:
   fields: {value: [mathematics, metaphysics, logic, "natural philosophy", theology, law], certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Differential and integral calculus, invented independently of Newton; first to publish", year: "1675", kind: method, lasting: "standard mathematics and notation", certainty: 1.0, cites: [{source: S3, locator: "opening; 'Early life and education'"}, {source: S1, locator: "§1"}], how_known: "Two sources."}
-    - {value: "Dynamics: vis viva (mv²) as the measure of force, against the Cartesian quantity of motion (Brief Demonstration, 1686)", year: "1686", kind: concept or term, lasting: "ancestor of the conservation of kinetic energy", certainty: 0.7, cites: [{source: S2, locator: "§3.1"}], how_known: "SEP physics; the 'ancestor' gloss is the coder's (flag)."}
+    - {value: "Dynamics: vis viva (mv²) as the measure of force, against the Cartesian quantity of motion (Brief Demonstration, 1686)", year: "1686", kind: concept or term, lasting: "ancestor of the conservation of kinetic energy", certainty: 0.7, cites: [{source: S2, locator: "§3.1"}], how_known: "SEP physics; the 'ancestor' wording in lasting is the coder's (flag)."}
     - {value: "Plan for a universal characteristic and logical calculus (De arte combinatoria)", year: "1666", kind: concept or term, lasting: "ancestor of symbolic logic and computing", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and education'"}], how_known: "Two sources; Britannica calls it 'the theoretical ancestor of some modern computers'."}
     - {value: "Calculating machine performing the four arithmetic operations", year: "1673", kind: invention, lasting: "mechanical calculation", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and education'"}], how_known: "Two sources."}
     - {value: "Monadology, pre-established harmony and the principle of sufficient reason", year: "1686–1714", kind: theory, lasting: "a main system of early modern rationalism", certainty: 1.0, cites: [{source: S1, locator: "§§3–5"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
@@ -240,7 +241,7 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Court of the Elector of Mainz", role: "legal and political adviser; diplomat to Paris", years: "1667–1676", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and education'"}], how_known: "Two sources; end year is when his employer's death forced a new post (S1)."}
+  - {value: "Court of the Elector of Mainz", role: "legal and political adviser; diplomat to Paris", years: "1667–1673", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and education'"}], how_known: "Start: SEP (Boineburg secured the post in 1667). End: Britannica says he was 'left without protectors by the deaths of Freiherr von Boyneburg in December 1672 and of the prince elector in February 1673'; SEP says only that his employer died while he was in Paris. He stayed in Paris, looking for another post, until 1676, when he went to Hanover (S1 §1). Lens audit #348: was 1667–1676."}
   - {value: "Court of Hanover (House of Brunswick)", role: "librarian, historian, Privy Councillor", years: "1676–1716", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
 collaborators:
   - {value: "Christiaan Huygens", roster_id: huygens-christiaan, relation: "mentor or employer", note: "tutored him in philosophy, physics and mathematics in Paris", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
@@ -288,8 +289,8 @@ sources:
   - id: S3
     type: tertiary
     kind: encyclopedia
-    author: "Yvon Belaval"
-    citation: "Belaval, Yvon. \"Gottfried Wilhelm Leibniz.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz."
+    author: "Yvon Belaval and Brandon C. Look"
+    citation: "Belaval, Yvon, and Brandon C. Look. \"Gottfried Wilhelm Leibniz.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz."
     url: "https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
@@ -378,3 +379,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 ## Research log
 
 - 2026-10-02: Read SEP "Gottfried Wilhelm Leibniz" (Look, §§1, 4.5, 7.1), SEP "Leibniz's Philosophy of Physics" (McDonough, §3), Britannica (Belaval, first page), the Theodicy (Gutenberg 17147, Preface and Preliminary Dissertation), the Monadology (Latta, Wikisource), and the 1717 Clarke edition (IA b30520022, page images of pp. 5–7). Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Re-read Britannica "Early life and education" for the end of the Mainz service (#348).
