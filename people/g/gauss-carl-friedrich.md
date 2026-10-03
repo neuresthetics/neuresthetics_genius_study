@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Gray, first page). Worldview from Sartorius von Waltershausen, Gauss zum Gedächtniss (1856), a friend's memoir with reported sayings, read on the Internet Archive scan (pp. 16, 97, 98, 101, 102, 103 checked on the page images; pp. 99–100 in the OCR text only). No writing by Gauss on religion was read. primary_system BELOW_THRESHOLD. A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #156: full_name now cites MacTutor's heading for the order used, with Britannica's 'Johann Friedrich Carl Gauss' as a cited alternative (both reopened); certainty unchanged pending v8's ruling on name-order disputes. #205: the 1795 age note corrected (Sartorius p. 16 puts the least-squares discovery at Göttingen, reached 11 October 1795, so 18). #216: 'Fragen.«' copied as printed (page image). Left for v8 as a method question: #162 (first lasting year 1796 vs the listed least-squares item 1795–1801). Not reviewed."}
 
 identity:
   id: gauss-carl-friedrich
@@ -23,7 +24,7 @@ identity:
     status: core
     field: mathematics
     field_bucket: mathematics
-  full_name: {value: "Johann Carl Friedrich Gauss", certainty: 0.7, cites: [{source: S3, locator: "Quick Facts ('Original name: Johann Friedrich Carl Gauss')"}], how_known: "Britannica gives the original name as Johann Friedrich Carl Gauss; the usual form is Carl Friedrich Gauss (S2)."}
+  full_name: {value: "Johann Carl Friedrich Gauss", certainty: 0.7, cites: [{source: S2, locator: "heading ('Johann Carl Friedrich Gauss')"}], alternatives: [{value: "Johann Friedrich Carl Gauss", cites: [{source: S3, locator: "Quick Facts ('Original name: Johann Friedrich Carl Gauss'); 'Also known as' line"}], note: "Britannica's order of the given names."}], how_known: "MacTutor's heading gives this order; Britannica gives Johann Friedrich Carl Gauss (alternative). Both reopened 2026-10-02. The usual form is Carl Friedrich Gauss. Certainty left at 0.7 pending v8's ruling on name-order disagreements."}
   native_name: {value: "Carl Friedrich Gauß (German)", certainty: 0.7, cites: [{source: S2, locator: "heading"}], how_known: "German name; the ß spelling is the usual German form (coder's note)."}
   aliases:
     - {name: "Carl-Friedrich-Gauss", kind: "roster alias"}
@@ -127,10 +128,10 @@ worldview:
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Dirac)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus = 1 but only at 0.5, and B_cause is only 0.5; the P4 test needs both at 0.7 or more."}
   statements:
-    - text: "»Es gibt Fragen,« sagte er ein Mal, »auf deren Beantwortung ich einen unendlich viel höhern Werth legen würde als auf die mathematischen z. B. über Ethik, über unser Verhältniss zu Gott, über unsere Bestimmung und über unsere Zukunft; allein ihre Lösung liegt ganz unerreichbar über uns und ganz ausserhalb des Gebietes der Wissenschaft.«"
+    - text: "»Es gibt Fragen.« sagte er ein Mal, »auf deren Beantwortung ich einen unendlich viel höhern Werth legen würde als auf die mathematischen z. B. über Ethik, über unser Verhältniss zu Gott, über unsere Bestimmung und über unsere Zukunft; allein ihre Lösung liegt ganz unerreichbar über uns und ganz ausserhalb des Gebietes der Wissenschaft.«"
       cites: [{source: S1, locator: "p. 97"}]
       date: "1856"
-      context: "Sartorius reporting a remark of Gauss; date is the memoir's publication, the remark is undated."
+      context: "Sartorius reporting a remark of Gauss; date is the memoir's publication, the remark is undated. The print has a full stop after 'Fragen' (checked on the page image; possibly a damaged comma), copied as printed."
       axes: [D_authority]
       kind: "reported speech"
       verified_against: "primary facsimile"
@@ -180,7 +181,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1795–1840", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From least squares and the 17-gon to the magnetism work with Weber (coder's span)."}
-  age_at_first_lasting_contribution: {value: 18, certainty: 0.5, cites: [{source: S1, locator: "p. 16"}], how_known: "Born 30 April 1777; 17-gon on 30 March 1796, so 18. Other dates give 15 (1792) or 18 (1795)."}
+  age_at_first_lasting_contribution: {value: 18, certainty: 0.5, cites: [{source: S1, locator: "p. 16"}], how_known: "Born 30 April 1777; 17-gon on 30 March 1796, so 18. Other dates give 15 (1792) or 18 (1795: Sartorius places the least-squares discovery 'hier', at Göttingen, which Gauss reached on 11 October 1795, after his 18th birthday; S1, p. 16, checked on the page image)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "The memoir gives no dates for his views."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No dated statement.", certainty: 0.5, cites: [{source: S1, locator: "pp. 97–103"}], how_known: "Undated memoir."}
   worldview_during_major_work: {value: TODO}
