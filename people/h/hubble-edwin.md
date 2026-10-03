@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
 
 identity:
   id: hubble-edwin
@@ -35,7 +36,7 @@ basics:
   death:
     date: {value: "1953-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "San Marino, California", modern_name: "San Marino, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1923, certainty: 1.0, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars in the Andromeda Nebula'"}], how_known: "Cepheids in the Andromeda Nebula, which settled that spirals are galaxies outside the Milky Way."}
+  first_lasting_contribution_year: {value: 1923, certainty: 1.0, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars in the Andromeda Nebula'"}], how_known: "Cepheids in the Andromeda Nebula, which settled that spirals are galaxies outside the Milky Way: the earliest listed contribution, dated 1923–1924, taken at its start year (decisions P12, P13). The galaxy classification is dated only '1920s' in S1, so it does not set the year (P12); a source dating it before 1923 would move the year."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "Mount Wilson paragraphs"}], how_known: "Mount Wilson Observatory, California, from 1919."}
@@ -91,7 +92,7 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S2, locator: "pp. 38–39"}, {source: S3, locator: "pp. 14–29"}]
     how_known: "His lectures place religion with values and say nothing about God, so no code can be read from them. The Baptist upbringing (S3) is childhood religion and is never a code."
-    note: "Candidate: AGNOS (stub system file, flagged). Christianson's chapter on his adult religion (p. 183 in the 1995 edition) was not in the preview; reading it could settle the code."
+    note: "Candidate: AGNOS (stub system file, flagged). Christianson's account of his adult religion is not in the publisher's preview, which covers pp. 13–29; the 'p. 183' locator given here before was never seen and is withdrawn (lens audit, batch 4, #12). Reading the later chapters could settle the code."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "Leading candidate, not coded (BELOW_THRESHOLD): his lectures treat religious premises as private convictions outside knowledge, which fits suspension, but he states no view on God in what was read. AGNOS is a stub system file (flag).", cites: [{source: S2, locator: "pp. 38–39"}]}
@@ -186,7 +187,7 @@ review:
     - "S3 read in the publisher's preview only (pp. 1–36)."
     - "Birth and death facts from one source (Britannica); the NAS memoir by Mayall (1970) was seen only in a partial web copy and is not cited."
   open_questions:
-    - "Read Christianson, Edwin Hubble: Mariner of the Nebulae (1995), the passage on his adult religion (around p. 183), for a first-hand statement on God."
+    - "Read Christianson, Edwin Hubble: Mariner of the Nebulae (1995), the passage on his adult religion in the chapters after the preview (pp. 13–29; no page verified), for a first-hand statement on God."
     - "Check S2 against a library copy (Huntington Library, 1954) to lift the §7 cap."
 
 sources:
