@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Britannica Editors, first page); Weyl's funeral address (English translation on MacTutor) read for her character. No statement by Noether on religion, God or nature was found in what was read. primary_system BELOW_THRESHOLD; all five axes BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All codings are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). S3: the translator is now credited (Ian Beaumont, in Peter Roquette's article 'Emmy Noether and Hermann Weyl', per the MacTutor page); the earlier note said the page named none. Not reviewed."}
 
 identity:
   id: noether-emmy
@@ -180,7 +181,7 @@ sources:
     citation: "Weyl, Hermann. Address at the funeral of Emmy Noether, 1935. English translation on MacTutor History of Mathematics. https://mathshistory.st-andrews.ac.uk/Extras/Weyl_Noether/."
     url: "https://mathshistory.st-andrews.ac.uk/Extras/Weyl_Noether/"
     accessed: 2026-10-02
-    reliability_note: "Translation of a funeral speech (the translator is not named on the page). Weyl's words, not Noether's; used for her character and work only."
+    reliability_note: "Speech given on 18 April 1935. MacTutor follows the English translation by Ian Beaumont printed in Peter Roquette's article 'Emmy Noether and Hermann Weyl' (page reopened 2026-10-02). Weyl's words, not Noether's; used for her character and work only."
     used_for: [worldview, lane_b, collaborators]
   - id: S4
     type: secondary
