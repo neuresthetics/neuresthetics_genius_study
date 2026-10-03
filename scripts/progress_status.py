@@ -34,10 +34,10 @@ AUDITS = ("9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700),
           "124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, "
           "run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see "
           "[reports/audit_2026-10-02.md](reports/audit_2026-10-02.md). Stage 3: 4 blind runs on the first 12 records (stage 3-a: "
-          "561 claims at 59a8371; stage 3-b: 420 claims at 3db6511); their method rulings are decisions P14–P28")
+          "561 claims at 59a8371; stage 3-b: 420 claims at 3db6511); their method rulings are decisions P14–P28; one blind run on the stage 3-b rulings (93 claims at 6155174: 88 hold, 4 weaken, 1 fail, fixed at 4c10399) gave P29")
 NEXT_STEPS = ("Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, "
-              "Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts; their coders still apply the stage 3 lens fixes "
-              "and rulings P14–P28 (the other 31 records already follow them, schema 1.3); source the stubs on the S7 backlog "
+              "Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts; the stage 3-b six follow P14–P28 and still "
+              "apply P29; the stage 3-a six still apply P14–P29 (the other 31 records follow P14–P28, schema 1.3); source the stubs on the S7 backlog "
               "(ATHE, AGNOS, KANT, SCEPT, RATN, EMPIR, IDEAL); the revised rubric has not started")
 
 

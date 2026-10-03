@@ -60,16 +60,16 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 |---|---|---|---|---|---|---|
 | identity | 86 | 85 | 0 | 1 | 0 | 98.8% |
 | basics | 473 | 473 | 0 | 0 | 0 | 100.0% |
-| contribution | 501 | 500 | 0 | 1 | 0 | 99.8% |
+| contribution | 502 | 501 | 0 | 1 | 0 | 99.8% |
 | childhood | 598 | 517 | 74 | 7 | 0 | 86.5% |
-| worldview | 496 | 304 | 4 | 90 | 98 | 61.3% |
+| worldview | 496 | 303 | 3 | 99 | 91 | 61.1% |
 | heritage | 172 | 96 | 69 | 7 | 0 | 55.8% |
 | timing | 215 | 176 | 25 | 14 | 0 | 81.9% |
 | lane_b | 129 | 126 | 3 | 0 | 0 | 97.7% |
 | institutions | 144 | 144 | 0 | 0 | 0 | 100.0% |
 | collaborators | 204 | 204 | 0 | 0 | 0 | 100.0% |
 | review | 67 | 67 | 0 | 0 | 0 | 100.0% |
-| **all** | 3085 | 2692 | 175 | 120 | 98 | 87.3% |
+| **all** | 3086 | 2692 | 174 | 129 | 91 | 87.2% |
 
 ### Worldview coding status
 
@@ -81,7 +81,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | chandrasekhar-subrahmanyan | ATHE (interview) | draft — unreviewed |
 | clausius-rudolf | UNKNOWN | draft — unreviewed |
 | curie-marie | BELOW_THRESHOLD | draft — unreviewed |
-| darwin-charles | BELOW_THRESHOLD | draft — unreviewed |
+| darwin-charles | DEISM | draft — unreviewed |
 | descartes-rene | CLASS_THEISM | draft — unreviewed |
 | dirac-paul | BELOW_THRESHOLD | draft — unreviewed |
 | einstein-albert | PANT | draft — unreviewed |
@@ -107,7 +107,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | meitner-lise | BELOW_THRESHOLD | draft — unreviewed |
 | mendeleev-dmitri | BELOW_THRESHOLD | draft — unreviewed |
 | newton-isaac | CHRIST | draft — unreviewed |
-| noether-emmy | BELOW_THRESHOLD | draft — unreviewed |
+| noether-emmy | UNKNOWN | draft — unreviewed |
 | oppenheimer-j-robert | BELOW_THRESHOLD | draft — unreviewed |
 | pascal-blaise | CHRIST | draft — unreviewed |
 | pasteur-louis | BELOW_THRESHOLD | draft — unreviewed |
@@ -116,7 +116,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | riemann-bernhard | BELOW_THRESHOLD | draft — unreviewed |
 | schrodinger-erwin | HINDU | draft — unreviewed |
 | spinoza-baruch | PANT | draft — unreviewed |
-| turing-alan | BELOW_THRESHOLD | draft — unreviewed |
+| turing-alan | ATHE | draft — unreviewed |
 | von-neumann-john | BELOW_THRESHOLD | draft — unreviewed |
 
 "(interview)" after a primary system: the code rests on interview evidence (decision P8).

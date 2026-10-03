@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P28, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P29, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. P14–P28 came out of the two stage 3 lens audits (stage 3-a and 3-b, 2026-10-02) and were decided the same day as v8's picks, with the parent agent's rulings. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. P14–P28 came out of the two stage 3 lens audits (stage 3-a and 3-b, 2026-10-02) and were decided the same day as v8's picks, with the parent agent's rulings. P29 came out of the lens run on the stage 3-b rulings and was decided the same day as v8's pick. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -54,6 +54,7 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P26 | Sources: Spinoza's Ethics standard is Kisner (0.7 until checked; "Kisner check pending"); TTP by chapter and Bruder section (Gutenberg only with a label and a TODO); Britannica's AI "Top Questions" boxes cannot be cited; secondary-reached quotes must be checked against the primary text | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 13) |
 | P27 | Coding: DEISM requires rejecting revelation as a source of truth; anchor sentences for "LIO-type view", D 2 and the B 2/B 3 line | medium | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 14) |
 | P28 | Kinds: letter written for circulation is "published letter" (counts as published work); unpublished finished treatise and the Pensées are "unpublished manuscript" | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 15) |
+| P29 | Stage 3-b follow-ups: §1 governs secondary_system; hedged self-reports stay at 0.5; a later disavowal caps the disowned wording at 0.5; contributions dated by first publication; one period per record (first to last listed lasting contribution); "scientist" = a listed lasting contribution in natural science, same for B and E; derived sources are not independent | medium | DECIDED (v8's pick) 2026-10-02 (from the v8.b rulings audit) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
@@ -65,7 +66,7 @@ None. P8–P28 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 ## Decided
 
-All 43 items, in id order (P6–P28 are placed after P5, S7 after S6).
+All 44 items, in id order (P6–P29 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -636,6 +637,21 @@ Applied in the schema (1.3), DATA_DICTIONARY and CODING_GUIDE §7. None of the 3
 - **Roster links:** cites of the roster that point to `blob/main` will be pinned to a commit SHA in a later sweep. No change now.
 - **Era bucket:** era_bucket follows the first lasting year, as §8 and P2 say (Darwin's era is not keyed to 1859).
 
+
+### P29. Stage 3-b follow-up rulings
+**DECIDED (v8's pick, 2026-10-02), from lens's blind run on the v8.b rulings packet (6155174):**
+- **secondary_system:** CODING_GUIDE §1 governs. A secondary system needs published work in two systems; otherwise it is UNKNOWN, and any evidence stays in the notes.
+- **Hedged self-reports:** a self-report hedged in its own words ("as far as I can remember") stays at 0.5 and does not reach P20's 0.7 cap. The same evidence gets the same certainty on every field it supports (primary_system and A together).
+- **Later disavowal:** when the person later disowns their own public wording (Darwin to Hooker, 1863: "truckled to public opinion"), that wording supports at most 0.5. The disavowal itself is cited.
+- **Dating a contribution:** a contribution is dated by its first publication. A dated public reading counts as publication only if it is documented. Darwin's coral-reef theory: 1839 Journal (p. 557), and this is the listed item. Era unchanged.
+- **One period per record (P20):** the period runs from the first to the last listed lasting contribution. Every axis and primary_system use that span. Statements from outside it count only as retrospective self-reports (0.7 cap, or 0.5 if hedged) or go in changes_over_life.
+- **Who is a scientist (P16, P19, P24):** anyone with a listed lasting contribution in natural or physical science, applied the same way to B and E. Working science can then support B and E at 0.5 as inference_from_work. A pure mathematician with no such contribution needs a statement about nature. Gauss (astronomy, geodesy, magnetism) and von Neumann (quantum mechanics) are scientists; Noether is not.
+- **P15:** no exception lets a single source give 1.0.
+- **Source independence:** a source that draws on another (MacTutor's Riemann biography on Dedekind's Lebenslauf) is not independent of it, so the pair gives 0.7.
+- **Two sources naming different people** (Fekete and Fejér as tutors) are not a P25 conflict. Each name gets its own entry at 0.7.
+- **Antinomy layouts:** a Thesis column is not the person's own view unless the text endorses it. It is discounted the same way on every axis.
+- **Childhood religious schooling** is evidence for the family and heritage fields only. It is off-point for the person's own axes A–E.
+- **Answers first given only inside records**, now recorded here: Riemann's A at 0.5 on the antinomy layout (consistent with the antinomy rule above); fields resting only on Dedekind's Lebenslauf at 0.7 (it is a friend's memoir, not a primary document); Noether's E UNKNOWN (no statement and no listed natural-science contribution).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
