@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
 
 identity:
   id: pauling-linus
@@ -146,7 +147,7 @@ worldview:
     value: false
     certainty: 0.7
     cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech, paragraph on humanism"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3) at 0.7, so false. Certainty is at most the lower of A (0.7) and B (0.7), so 0.7."
+    how_known: "P4 test: A_locus = 4 (≥ 3) at 0.7, so false. Certainty is A's (0.7): the A ≥ 3 branch reads A only (decision P10)."
   statements:
     - text: "I believe that there is great value in the philosophy of humanism -- that the chief end of human life is to work for the happiness of man upon this earth (and we might soon have to add the moon and then Venus and other planets)."
       cites: [{source: S3, locator: "speech, paragraph on humanism"}]
