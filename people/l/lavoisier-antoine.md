@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #64 (both runs): the King letter's date is Grimaux p. 53 n. 1, not n. 2; n. 2 (lay patron of the chapel of his château of Fréchines, chaplain named by deed of 7 Aug 1781 and paid 290 livres a year) added as a nominal affiliation and in the CHRIST candidate, cited to p. 53 n. 2. #51: single-letter rule cited as CODING_GUIDE §3 (secondary quotation §7). #61: first_lasting_contribution_year 1774 → 1772 (0.5): 1774 is Priestley's visit; his own combustion experiments date from 1772 (sealed note of 1 Nov 1772, Grimaux p. 103 and n. 1), with the Easter 1775 memoir (p. 108) as the alternative; age 31 → 29; era bucket unchanged. #65: trailing cut of the 1791 quotation marked [...]. No worldview score changed. Not reviewed."}
 
 identity:
   id: lavoisier-antoine
@@ -36,8 +37,8 @@ basics:
   death:
     date: {value: "1794-05-08", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; opening"}, {source: S2, locator: "'Chemical Revolution and Political Revolution' (spring 1794)"}], how_known: "Britannica gives the day; SHI agrees on spring 1794."}
     place: {value: "Paris (guillotined)", modern_name: "Paris, France", polity_then: "French First Republic", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; Top Questions"}], how_known: "Britannica; the execution is in every source."}
-  first_lasting_contribution_year: {value: 1774, certainty: 0.5, cites: [{source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Coder's choice: his reinterpretation of Priestley's 1774 experiment as the release of a distinct gas (later 'oxygen'). SHI gives the 1774 visit but not the date of Lavoisier's own interpretation; Britannica's pages on 1772–1777 were not read."}
-  era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Any candidate first-contribution year (1772–1789) falls in this bucket (P2)."}
+  first_lasting_contribution_year: {value: 1772, certainty: 0.5, cites: [{source: S3, locator: "p. 103 and n. 1"}, {source: S2, locator: "'The Oxygen Revolution'; bibliography (Guerlac 1961)"}], how_known: "Year of his first combustion experiments, the start of the oxygen theory (the earliest item in lasting_original_contributions): in 1772 he found that phosphorus and sulphur gain weight on burning, and deposited a sealed note with the Académie on 1 November 1772 (Grimaux, p. 103 and n. 1, which prints the note); SHI's bibliography lists Guerlac's book on 'His First Experiments on Combustion in 1772'. 1774 (the earlier value) is the year of Priestley's Paris visit (SHI), not of Lavoisier's own work. The Easter 1775 memoir on the new air (Grimaux, p. 108) is the alternative; which step counts as the first lasting contribution is the coder's choice, so 0.5.", alternatives: [{value: 1775, cites: [{source: S3, locator: "p. 108 ('la séance publique de Pâques 1775')"}], note: "Memoir to the Académie distinguishing the new air from common and fixed air and attributing to it the weight gain of calcined metals."}]}
+  era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S3, locator: "pp. 103, 108"}], how_known: "Any candidate first-contribution year (1772–1789) falls in this bucket (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "France is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}], how_known: "Paris throughout."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
@@ -87,15 +88,16 @@ worldview:
   working_years: {value: "1764–1794", certainty: 0.7, cites: [{source: S3, locator: "p. 4"}, {source: S1, locator: "opening"}], how_known: "From the end of his law studies to his death."}
   nominal_affiliations:
     - {value: "Catholic by baptism (Saint-Merry, Paris, 1743)", years: "1743–", role: "member by baptism", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Grimaux, from the birth record printed in his appendix."}
+    - {value: "Lay patron (patron laïc) of the chapel of his château of Fréchines; as such he named a chaplain, the abbé Bellavoine, by deed of 7 August 1781 and paid him 290 livres a year", years: "1781–", role: "other", certainty: 0.7, cites: [{source: S3, locator: "p. 53 n. 2"}], how_known: "Grimaux's note, citing the deed; one source. Patronage of a chapel that came with the estate is a practice and an office, not a statement of belief, so it does not lift primary_system (CODING_GUIDE §1, church membership)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Lavoisier on how science and religion relate was found in the sources read."}
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S3, locator: "p. 53"}, {source: S5, locator: "pp. 363–364"}]
-    how_known: "The only direct evidence is one private letter (to Edward King, 20 Aug 1788) praising King's defence of revelation, known only as quoted by Grimaux, against which stands his 1791 manuscript treating sixteen centuries of clerical education as lost to reason. One letter in a secondary quotation cannot carry a system (single-letter rule; CODING_GUIDE §7), and the two items pull in different directions."
+    how_known: "The only direct evidence is one private letter (to Edward King, 20 Aug 1788) praising King's defence of revelation, known only as quoted by Grimaux, against which stands his 1791 manuscript treating sixteen centuries of clerical education as lost to reason. One letter in a secondary quotation cannot carry a system (single-letter rule, CODING_GUIDE §3; secondary quotation, §7), and the two items pull in different directions. His lay patronage of the Fréchines chapel from 1781 (S3, p. 53 n. 2) is practice, not belief."
     note: "Candidate: CHRIST (draft system file). Would need the King letter in the Correspondance (Fric/Beretta edition) plus independent evidence of belief."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence beyond the two items above."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): Catholic baptism and upbringing (never a code by themselves) and one polite letter calling the defence of revelation 'une belle cause'. Grimaux's 'il en avait gardé les croyances' is the biographer's claim, and the 1795 Almanach story of a prison reconciliation is hearsay about him, not his statement. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 2, 53"}]}
+    - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): Catholic baptism and upbringing and his lay patronage of the Fréchines chapel, with a chaplain he named and paid from 1781 (p. 53 n. 2) (never a code by themselves), and one polite letter calling the defence of revelation 'une belle cause'. Grimaux's 'il en avait gardé les croyances' is the biographer's claim, and the 1795 Almanach story of a prison reconciliation is hearsay about him, not his statement. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 2, 53"}]}
     - {code: DEISM, reason: "Considered: an Enlightenment reformer hostile to clerical control of learning (S5). Not coded: nothing read states a creator who does not intervene or rejects revelation; anticlericalism is not deism.", cites: [{source: S5, locator: "pp. 363–364"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God; the King letter praises a defence of revelation but says nothing about where or what God is."}
@@ -120,14 +122,14 @@ worldview:
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
     - text: "C'est une belle cause que vous entreprenés de deffendre que celle de la révélation et de l'authenticité des Saintes Écritures, et ce qui est remarquable, c'est que vous employés dans ce moment pour les deffendre précisément les mêmes armes qu'on a employées bien des fois pour les attaquer."
-      cites: [{source: S3, locator: "p. 53 and n. 2 ('Lettre du 20 août 1788')"}]
+      cites: [{source: S3, locator: "p. 53 and n. 1 ('Lettre du 20 août 1788')"}]
       date: "1788-08-20"
-      context: "Acknowledging a book of controversy sent by Edward King, an English writer and Fellow of the Royal Society. Known only as quoted by Grimaux (checked on the page image)."
+      context: "Acknowledging a book of controversy sent by Edward King, an English writer and Fellow of the Royal Society. Known only as quoted by Grimaux (checked on the page image). Grimaux's note 1 gives the date; his note 2, called at the end of the quotation, is about the Fréchines chapel patronage (see nominal_affiliations)."
       axes: [D_authority]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
-    - text: "C'est ainsi que, d'abord par un effet du hasard, et depuis par une marche très habilement combinée, tout ce qui pouvait tendre à détruire les erreurs et les préjugés s'est trouvé réuni dans les mains de ceux qui avaient intérêt de les propager. Cette époque, composée de seize siècles presque entièrement perdus pour la raison et la philosophie, [...] sera à jamais remarquable dans l'histoire de l'humanité"
+    - text: "C'est ainsi que, d'abord par un effet du hasard, et depuis par une marche très habilement combinée, tout ce qui pouvait tendre à détruire les erreurs et les préjugés s'est trouvé réuni dans les mains de ceux qui avaient intérêt de les propager. Cette époque, composée de seize siècles presque entièrement perdus pour la raison et la philosophie, [...] sera à jamais remarquable dans l'histoire de l'humanité [...]"
       cites: [{source: S5, locator: "p. 364"}]
       date: "1791"
       context: "Opening of his unpublished 'Réflexions sur le plan d'instruction publique' for Talleyrand (autumn 1791), as printed by Guillaume from the manuscript (checked on the page image). Guillaume's note reads 'remarquable' as a slip for 'mémorable'."
@@ -148,7 +150,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1772–1789", certainty: 0.7, cites: [{source: S2, locator: "'The Oxygen Revolution'; 'The New Chemistry'"}, {source: S4, locator: "title page"}], how_known: "From the combustion work to the Traité; start year is the coder's estimate."}
-  age_at_first_lasting_contribution: {value: 31, certainty: 0.5, cites: [{source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Computed from the coder's 1774 choice."}
+  age_at_first_lasting_contribution: {value: 29, certainty: 0.5, cites: [{source: S3, locator: "pp. 2, 103 n. 1"}], how_known: "Born 26 August 1743; the sealed note is dated 1 November 1772. Computed from the coder's 1772 choice (31 for the 1775 alternative)."}
   first_evidence_of_lio_type_views: {value: "Traité élémentaire de chimie (conservation of matter in art and nature)", year: 1789, certainty: 1.0, cites: [{source: S4, locator: "pp. 140–141"}], how_known: "Earliest dated statement read bearing on an axis."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The only scored axis (B) comes from the culmination of the major work itself.", certainty: 0.5, cites: [{source: S4, locator: "pp. 140–141"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
@@ -182,7 +184,7 @@ review:
     - {value: "Whether he remained a believing Catholic: Grimaux (writing with the pious Chazelles family's papers) says yes; Guillaume (1907) published the anticlerical manuscript Grimaux had not printed in full", certainty: 0.7, cites: [{source: S3, locator: "p. 53"}, {source: S5, locator: "pp. 358–359, 363–364"}], how_known: "The two printed sources."}
   data_quality_flags:
     - "The King letter is known here only through Grimaux's quotation (S3), a biographer dependent on the descendants' goodwill; it is a single private letter (single-letter rule) and a secondary quotation (§7)."
-    - "first_lasting_contribution_year 1774 is the coder's choice at 0.5; Britannica's later sections (combustion work from 1772) were not read."
+    - "first_lasting_contribution_year 1772 (combustion experiments, sealed note of 1 Nov 1772; Grimaux p. 103) is the coder's choice at 0.5, with 1775 (Easter memoir) as the alternative; was 1774, Priestley's visit, until the lens audit batch 3 (#61). Britannica's later sections were not read."
     - "Co-authors of the 1787 Nomenclature and the 1793 end of the Académie are from general knowledge, flagged."
     - "Britannica read as its first page only."
   open_questions:
@@ -279,7 +281,7 @@ French Catholic legal bourgeoisie [S3, pp. 1–2]. Context only.
 
 ## Timing
 
-First lasting contribution about 1774 (coder's choice, 0.5) [S2]. The worldview evidence read dates from 1788–1791.
+First lasting contribution 1772, his first combustion experiments and the sealed note of 1 November 1772 (coder's choice, 0.5; the Easter 1775 memoir is the alternative) [S3, pp. 103, 108]. The worldview evidence read dates from 1788–1791.
 
 ## Lane B notes (labeled belief model)
 
