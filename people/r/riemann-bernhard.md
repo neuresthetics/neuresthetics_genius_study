@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Dedekind's 'Bernhard Riemann's Lebenslauf'. Worldview from Riemann's own unpublished philosophical fragments and Dedekind's Lebenslauf, both in the Gesammelte mathematische Werke (2nd ed., 1892; University of Toronto scan on the Internet Archive; pp. 518, 519, 521, 541, 557 and 558 checked on the page images). primary_system BELOW_THRESHOLD (CHRIST and CLTHEI candidates). A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #232: languages_of_work German → German, Latin, Italian (Werke contents XXII, XVI, XXIII and preface). #263: PANPSY reason rewritten: he argues the Erdseele in his own voice (pp. 511–512, 517) but frames it as a hypothesis of exact science (p. 517); still not coded. #260: secondary_system how_known points to that candidate (value unchanged). #259 note: cites CHRIST's use_when instead of a loose batch 3 precedent. pp. 507, 511 and 517 checked on the page images. Left for v8 as a method question: #265 (basis label for B_cause). Not reviewed."}
 
 identity:
   id: riemann-bernhard
@@ -41,7 +42,7 @@ basics:
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S2, locator: "Quick Info"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Göttingen (and Berlin as a student); Italy only for his health."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [German], certainty: 1.0, cites: [{source: S1, locator: "whole volume"}], how_known: "His works are in German."}
+  languages_of_work: {value: [German, Latin, Italian], certainty: 1.0, cites: [{source: S1, locator: "Inhalt: XXII 'Commentatio mathematica' for the Paris Academy (1861), p. 391; XVI 'Estratto di una lettera scritta in lingua Italiana' to Betti (21 January 1864), p. 298; XXIII 'Sullo svolgimento del quoziente di due serie ipergeometriche' (1863), p. 424"}, {source: S1, locator: "Vorrede zur ersten Auflage, p. iv (Latin) and p. v (Italian) ('in lateinischer Sprache geschriebene Beantwortung'; 'in italienischer Sprache geschriebene Anfang')"}], how_known: "German is his main language; the Werke also print a Latin prize essay (1861) and two Italian pieces (1863, 1864). Table of contents and preface reopened 2026-10-02."}
   occupations: {value: ["mathematician", "university professor"], certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
 
 contribution:
@@ -94,12 +95,12 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S1, locator: "pp. 557–558 (Lebenslauf)"}, {source: S1, locator: "pp. 518–519 (fragment)"}]
     how_known: "Dedekind, his friend and editor, writes that the piety planted in his father's house stayed with him all his life and that he served his God faithfully, 'wenn auch nicht in derselben Form'; daily self-examination before God was, 'nach seinem eigenen Ausspruche', the main thing in religion for him; he died while his wife prayed the Lord's Prayer with him (pp. 557–558). But his own writing read speaks only of God, not of Christ, scripture, creed or church (CHRIST use_when), and the God of his fragment, who steers 'Herzen und Geschicke der Menschen' (p. 519), points rather to CLTHEI (CHRIST do_not_use_when). A Lutheran upbringing alone gives no code."
-    note: "Draft judgment (one line): BELOW_THRESHOLD because no own writing shows specifically Christian belief, as the batch 3 audit required for Gödel and Heisenberg. Leading candidate CHRIST (Dedekind's testimony); CLTHEI second (the fragment). Riemann's letters to his family would decide it."
-  secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
+    note: "Draft judgment (one line): BELOW_THRESHOLD because no own writing shows specifically Christian belief, which CHRIST's use_when asks for (systems/CHRIST.md: 'use CHRIST when the person's own writing shows Christian belief (Christ, scripture, creeds, church)'). Leading candidate CHRIST (Dedekind's testimony); CLTHEI second (the fragment). Riemann's letters to his family would decide it."
+  secondary_system: {value: UNKNOWN, how_known: "No second system coded. The one further candidate is his Erdseele hypothesis (S1, pp. 511–512, 517), discussed under PANPSY in candidate_codes_considered; whether that makes this UNKNOWN or BELOW_THRESHOLD awaits v8's ruling."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Leading candidate, not coded: Dedekind's testimony of lifelong piety and the Lord's Prayer at his death (S1, pp. 557–558), but no writing of his own read names Christ, scripture or creed, and Dedekind says his service of God was not in the same form as his father's. CHRIST is a draft system file.", cites: [{source: S1, locator: "pp. 557–558"}]}
     - {code: CLTHEI, reason: "Considered: a time-acting God, 'Lenker der Herzen und Geschicke der Menschen', in place of a timeless providence (S1, p. 519); not coded because the fragment is an antinomy table (the Thesis column may not be his settled view). CLTHEI is a draft system file.", cites: [{source: S1, locator: "pp. 518–519"}]}
-    - {code: PANPSY, reason: "Considered and rejected: the fragments discuss Fechner's 'Erdseele' and the souls of dead creatures as elements of the earth's soul-life (S1, p. 518), but in a form that reports Fechner ('sollen'), not as his own view. PANPSY is a stub system file (flag).", cites: [{source: S1, locator: "p. 518"}]}
+    - {code: PANPSY, reason: "Considered, not coded. In his own voice he argues that, on his principles of explanation, 'müssen wir annehmen, dass diese Geistesmassen in eine grössere compacte Geistesmasse, die Erdseele, eintreten' (S1, p. 511), and that the purposiveness of organisms must be sought 'in einem einheitlichen Denkprocesse in der Erde' (p. 517); only the sentence after his Fechner quotation uses 'sollen' (p. 518). But he frames it as a hypothesis: 'Vom Standpunkt der exacten Naturwissenschaft [...] ist also die Annahme einer Erdseele eine Hypothese zur Erklärung des Daseins und der geschichtlichen Entwicklung der organischen Welt' (p. 517), in unpublished fragments, so it is not shown to be his working worldview. PANPSY is also a stub system file (flag).", cites: [{source: S1, locator: "pp. 511–512"}, {source: S1, locator: "p. 517"}, {source: S1, locator: "p. 518"}]}
   lio_axes:
     A_locus:
       value: 1
