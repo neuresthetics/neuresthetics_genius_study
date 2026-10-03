@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P10, S7). P8 was first a v8's pick and was signed off by Jason on 2026-10-02 with one addition (interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit and is a v8's pick (2026-10-02), pending Jason's sign-off. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -35,7 +35,7 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P7 | E_scope domain: score on the world's order (this-world events); salvation and election go to C | medium | decided 2026-10-02, option 1 (added by the lens audit, run 2) |
 | P8 | Recorded interviews: the person's own first-person words, basis recorded_interview, ceiling 0.7; paraphrase-only cannot score alone; interview-based fields flagged "(interview)" | medium-high | DECIDED by Jason 2026-10-02: keep, flag interview-based fields (added by the people run, batch 3) |
 | P9 | Batch 3 record calls: keep Heisenberg's §7 cap; Pasteur era literal from 1848; Pasteur died at Marnes-la-Coquette (alt. Saint-Cloud); Herschel unchanged | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
-| P10 | mid_basin certainty is capped only by the axes its branch uses (false via A ≥ 3: A only) | medium-high | DECIDED (v8's pick, 2026-10-02), pending Jason's sign-off (added by the lens audit, batch 3) |
+| P10 | mid_basin certainty is capped only by the axes its branch uses (false via A ≥ 3: A only) | medium-high | DECIDED by Jason 2026-10-02 (first v8's pick; added by the lens audit, batch 3) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
@@ -435,7 +435,7 @@ The question as raised (batch 3 report, 2026-10-02): the three basis types (writ
 4. **Caroline Herschel:** left as coded (CHRIST at 0.5 from brief devotional phrases in three letters); the lens audit will test it.
 
 ### P10. Which axes cap mid_basin certainty
-**DECIDED (v8's pick, 2026-10-02), pending Jason's sign-off:** the CODING_GUIDE §3 cap on `mid_basin` certainty counts only the axes the branch actually uses. `false` via A_locus ≥ 3 uses A_locus only, so its certainty is at most A_locus's. `false` via A_locus ≤ 1 with B_cause ≤ 1 uses both, and so does `true`: at most the lower of the two. `TODO`, `UNKNOWN` and `BELOW_THRESHOLD` carry no certainty and follow their own inputs (§6). Applied in CODING_GUIDE §3 and §6, and in the mid_basin notes of Einstein, Schrödinger and Pauling (no value change). The validator does not check this cap, so no code changed.
+**DECIDED by Jason 2026-10-02 (first proposed as v8's pick):** the CODING_GUIDE §3 cap on `mid_basin` certainty counts only the axes the branch actually uses. `false` via A_locus ≥ 3 uses A_locus only, so its certainty is at most A_locus's. `false` via A_locus ≤ 1 with B_cause ≤ 1 uses both, and so does `true`: at most the lower of the two. `TODO`, `UNKNOWN` and `BELOW_THRESHOLD` carry no certainty and follow their own inputs (§6). Applied in CODING_GUIDE §3 and §6, and in the mid_basin notes of Einstein, Schrödinger and Pauling (no value change). The validator does not check this cap, so no code changed.
 
 No current value changes. Einstein, Schrödinger and Pauling (false via A 4) are at 0.7, which is both A's certainty and the lower of the two; every `true` is at the lower of A and B (0.7). The only case it would have changed, Chandrasekhar (false at 0.5, capped by B), is now BELOW_THRESHOLD after the same audit.
 
