@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica and MacTutor; her own words from Memoir and Correspondence of Caroline Herschel (John Murray, 1876), page images checked for pp. 17–18, 235–236, 275, 347 and 351. Primary CHRIST at 0.5 (consistent_private_letters, below the ceiling because the evidence is brief devotional phrases: a Nunc dimittis citation, thanksgiving and prayer to 'the Almighty', 'as long as God pleases'); A 0 at 0.5; B, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3, #121 (run 1): 'later buried in the garrison church' overstated p. 347. Only the funeral service ('the holy words spoken over it') was held in the garrison church; she asked to be laid beside her father and mother (p. 347), and her epitaph says her father lies 'hierneben begraben' (p. 351). family_religion, the CHRIST rationale and the body now say so. The christening and confirmation in the garrison church are now attributed to the editor (p. 347); her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. No score changed. Not reviewed."}
 
 identity:
   id: herschel-caroline
@@ -66,7 +67,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Independent discoveries (comets, nebulae) and major catalogues; her largest work reduced her brother's observations.", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "1822 paragraph"}], how_known: "Coder's reading of the two sources."}
 
 childhood:
-  family_religion: {value: "Christian; she was christened, confirmed and later buried in the garrison church of Hanover (confession not named in the sources read)", certainty: 1.0, cites: [{source: S3, locator: "pp. 17–18, 347"}], how_known: "Her recollections (pp. 17–18) and the editor's account of the funeral (p. 347), checked on the page images."}
+  family_religion: {value: "Christian; christened and confirmed in the garrison church of Hanover, where her funeral service was also held; she was buried beside her parents (confession not named in the sources read)", certainty: 1.0, cites: [{source: S3, locator: "pp. 17–18, 347, 351"}], how_known: "The editor's account (p. 347) says the funeral words were spoken in the garrison church in which she had been christened and confirmed, and that she asked to be laid beside her father and mother; the epitaph says her father lies 'hierneben begraben' (p. 351). Her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. Checked on the page images."}
   family_religious_practice: {value: "Church attendance and confirmation instruction as a girl", certainty: 1.0, cites: [{source: S3, locator: "pp. 16–17"}], how_known: "Her own recollection: 'my constant attendance at church and school' (p. 17); her mother released her from housework for the 'necessary preparation for her daughter's confirmation' (p. 16)."}
   parents_and_household:
     - {value: "Father, Isaac Herschel, oboist and later bandmaster in the Hanoverian Foot Guards, with interests in music, philosophy and astronomy", name: "Isaac Herschel", role: father, certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "MacTutor."}
@@ -98,7 +99,7 @@ worldview:
     certainty: 0.5
     cites: [{source: S3, locator: "pp. 235, 236, 275"}]
     how_known: "Three private letters in her own words (two of 3 March 1829, one of 23 April 1835), checked on the page images of the 1876 edition. Below the 0.7 ceiling because each is a brief devotional phrase of the kind common in letters of the time, not a statement of belief, and the edition is a family selection with marked cuts."
-    rationale: "CHRIST guidance: use when the person's own writing shows Christian belief (Christ, scripture, creeds, church). She quotes Simeon's canticle from scripture to express her joy ('See St. Luke, cap. ii., v. 29', p. 236), puts letters by 'under thanksgiving to the Almighty, with a prayer for future protection' (p. 275), and signs off 'as long as God pleases I shall remain' (p. 235). Upbringing and burial in the garrison church (pp. 17–18, 347) do not code her by themselves."
+    rationale: "CHRIST guidance: use when the person's own writing shows Christian belief (Christ, scripture, creeds, church). She quotes Simeon's canticle from scripture to express her joy ('See St. Luke, cap. ii., v. 29', p. 236), puts letters by 'under thanksgiving to the Almighty, with a prayer for future protection' (p. 275), and signs off 'as long as God pleases I shall remain' (p. 235). Her upbringing, and a funeral service in the garrison church where she had been christened and confirmed (pp. 17–18, 347), do not code her by themselves."
     alternatives:
       - {value: CLTHEI, cites: [{source: S3, locator: "p. 275"}], note: "A prayer for future protection is petition; preferred only if her writing showed God acting in particular events beyond nature's course. None found."}
   secondary_system: {value: UNKNOWN, how_known: "No second system in the sources read."}
@@ -152,7 +153,7 @@ heritage:
   ethnic_or_communal_heritage: {value: "Hanoverian German; a musicians' family", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
   religious_heritage_by_birth: {value: "Christian (Hanover garrison church congregation)", certainty: 1.0, cites: [{source: S3, locator: "p. 347"}], how_known: "Editor's account, checked on the page image."}
   baptism_or_initiation: {value: "Christened in the garrison church, Hanover", certainty: 1.0, cites: [{source: S3, locator: "p. 347"}], how_known: "Editor's account, checked on the page image."}
-  childhood_catechism: {value: "Confirmation instruction, then confirmation and first communion in 1764", certainty: 1.0, cites: [{source: S3, locator: "pp. 16–18"}], how_known: "Her recollection and the editor's narrative."}
+  childhood_catechism: {value: "Confirmation instruction, then confirmation and first communion in 1764 (in the garrison church, per the editor)", certainty: 1.0, cites: [{source: S3, locator: "pp. 16–18, 347"}], how_known: "Her recollection (pp. 17–18, which do not name the church) and the editor's narrative (pp. 16, 347)."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -250,7 +251,7 @@ Comets, the Flamsteed index and the nebula catalogue; a royal pension from 1787 
 
 ## Childhood and education
 
-Christened and confirmed in the Hanover garrison church [S3, pp. 17–18, 347]; household drudgery; William taught her English and mathematics in Bath [S2].
+Christened and confirmed in the Hanover garrison church, according to the editor [S3, p. 347]; she recalls the confirmation herself [S3, p. 17]; household drudgery; William taught her English and mathematics in Bath [S2]. Her funeral service was held in the same church, and she was buried beside her parents [S3, pp. 347, 351].
 
 ## Adult working worldview
 
@@ -258,7 +259,7 @@ Brief devotional phrases in her letters [S3, pp. 235–236, 275]; no statement o
 
 ## Heritage (context only)
 
-Hanoverian musicians' family; christened and confirmed in the garrison church [S3]. Context only.
+Hanoverian musicians' family; christened and confirmed in the garrison church [S3, p. 347]. Context only.
 
 ## Timing
 
