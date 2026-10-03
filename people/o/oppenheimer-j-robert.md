@@ -91,7 +91,6 @@ worldview:
   candidate_codes_considered:
     - {code: ETHCUL, reason: "Leading candidate, not coded (BELOW_THRESHOLD): schooled at the Ethical Culture School (S2); his adult adherence to Ethical Culture is not shown in what was read. Stub system file (flag).", cites: [{source: S2, locator: "education paragraph"}]}
     - {code: HINDU, reason: "Rejected: he studied Eastern philosophy at Harvard (S1) and in a 1965 interview (interview) recalled 'the line from the Hindu scripture, the Bhagavad-Gita' at the Trinity test (S4); a literary recollection, not a profession of Hindu belief. Stub system file (flag).", cites: [{source: S1, locator: "'Early life and education'"}, {source: S4, locator: "clip transcript (interview)"}]}
-    - {code: SCIENT, reason: "Considered: the farewell speech's 'belief in the value of science' and 'faith in this' (S3). Not coded: a professional ethic of knowledge is not a metaphysics. Stub system file (flag).", cites: [{source: S3, locator: "speech, 'organic necessity' and closing paragraphs"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
     B_cause:
@@ -123,7 +122,7 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "ETHCUL, HINDU and SCIENT are stub system files (flag). Interview-based content (marked '(interview)'): only the 1965 NBC clip (S4), a published broadcast, used in one statement and in the HINDU rejection; it scores no axis or code. His AIP oral-history interviews carry AIP quotation limits and were not used or quoted. S3 is the Atomic Heritage Foundation's excerpt of the farewell speech and S4 the Atomic Archive's transcript of the film clip; both are unofficial web copies (§7), marked secondary quotation. A copy of Smith and Weiner, Letters and Recollections, seen on the Internet Archive has unclear provenance and was not used. changes_over_life is empty after research."
+  coder_notes: "ETHCUL and HINDU are stub system files (flag). The farewell speech's 'belief in the value of science' is a professional ethic of knowledge, not a metaphysics; no code fits it (SCIENT is Scientology, not scientism). Interview-based content (marked '(interview)'): only the 1965 NBC clip (S4), a published broadcast, used in one statement and in the HINDU rejection; it scores no axis or code. His AIP oral-history interviews carry AIP quotation limits and were not used or quoted. S3 is the Atomic Heritage Foundation's excerpt of the farewell speech and S4 the Atomic Archive's transcript of the film clip; both are unofficial web copies (§7), marked secondary quotation. A copy of Smith and Weiner, Letters and Recollections, seen on the Internet Archive has unclear provenance and was not used. changes_over_life is empty after research."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
