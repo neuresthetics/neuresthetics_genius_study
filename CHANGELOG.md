@@ -94,6 +94,11 @@ The first 19 items in `docs/OPEN_DECISIONS.md` were decided by Jason on 2026-10-
 - **2026-10-02, decision P8 signed off by Jason: keep, flag interview-based fields** (commit `6f37cd6`): the rule and the 0.7 ceiling stay. Every field with basis `recorded_interview` starts its how_known with "(interview)", and the validator enforces this (`scripts/lib/records.py`: `is_interview` and a new error). Fields resting mainly on an interview under another basis carry the same flag. The flag shows in record summaries, in the person chart's point labels and legend (`scripts/make_figures.py`; the chart is wider), in the primary-system table of `reports/coverage.md` (`scripts/coverage_report.py`) and in the README chart caption. Updated: OPEN_DECISIONS P8 (status "DECIDED by Jason 2026-10-02: keep, flag interview-based fields"), CODING_GUIDE §7, METHOD §4.2 and RUNBOOK. No schema change.
 - **2026-10-02, decision P10: which axes cap mid_basin certainty** (first v8's pick; signed off by Jason 2026-10-02; from lens batch 3 #25; commit `6f37cd6`): the CODING_GUIDE §3 cap counts only the axes the branch uses. `false` via A_locus ≥ 3 reads A only; `true`, and `false` via A ≤ 1 with B ≤ 1, read both. CODING_GUIDE §3 and §6 updated; the validator does not check the cap. No current value changes. Einstein and Schrödinger (record version 5) and Pauling (batch 4; record version 2) get reworded mid_basin notes.
 - **2026-10-02, decision S7: system backlog** (v8's pick; commit `8917c74`): `systems/README.md` gains a "Sourcing backlog" section (ATHE, AGNOS and IDEAL first; not sourced yet) and a "Systems to consider" list under S4, starting with French spiritualism (Pasteur). No new system file.
+- **2026-10-02, decisions P11–P13** (v8's picks on Jason's delegation of method details, from the batch 4 lens audit; commit `df75909`). `docs/OPEN_DECISIONS.md` has the entries and recheck tables. CODING_GUIDE §7 and §8, the `first_lasting_contribution_year` description in `person.schema.json` (description only, no version change), the person template and DATA_DICTIONARY are updated:
+  - **P11, TCP transcriptions:** Text Creation Partnership transcriptions (EEBO-, ECCO- and Evans-TCP) are authoritative copies under §7. They are scholarly keyed transcriptions of a named printed edition, tied to its page images, so the 0.7 web-copy cap does not apply. Cite the TCP id and the original edition. This closes batch 4's open decision (3). Applied to Boyle.
+  - **P12, ranges:** when a contribution spans a range, first_lasting_contribution_year uses its start year. A decade or "by YEAR" is not guessed and does not set the year until a source dates it.
+  - **P13, listed contributions:** first_lasting_contribution_year is the earliest year among the record's listed lasting contributions. Unlisted early work (a PhD, say) can set it only if it is added to the list with a source and is itself lasting.
+  - Rechecked across all 31 records. Values change for Boyle, Galileo, Hodgkin (P12) and Pauling, Libby, Caroline Herschel, Planck (P13); see Audits.
 ### Audits
 
 - **2026-10-02, batch 2 lens audit** (report commit `603274f`): two blind runs on the 147-claim packet at `e648145`; fixes were applied in commits `026e214` through `61e560e`.
@@ -109,6 +114,38 @@ The first 19 items in `docs/OPEN_DECISIONS.md` were decided by Jason on 2026-10-
   - **Mendeleev** (3): trailing cut marked (#81).
   - **Pasteur** (3): B_cause 4 at 0.7 → 0.5 (#84). Death place unchanged at 0.5: the uncited phrases are removed, and a cited line is added (new S7, Île-de-France heritage inventory: part of the estate's park was joined to the Saint-Cloud national domain in 1895).
   - **Caroline Herschel** (3): only the funeral service was in the garrison church, and she was buried beside her parents (pp. 347, 351) (#121).
+- **2026-10-02, batch 4 lens audit** (`reports/audit_2026-10-02.md`, "Batch 4"; report commit `3bcd59c`). Two blind runs on the 165-claim packet at `b21655b`. Run 1: 155 holds, 10 weaken. Run 2: 160 holds, 5 weaken. 0 wrong. Agreement 156/165 (κ 0.37, AC1 0.94). Fixes were applied in commits `671912a` through `e1f1f07`, one per record, after the rules commit `df75909` (P11–P13). Each record below has record_version +1 and a change_log line, and all are still `draft — unreviewed`:
+  - **Hubble** (2): the unverified Christianson "p. 183" locator is withdrawn (#12); P12/P13 recheck, 1923 unchanged.
+  - **Boyle** (2):
+    - P11 closes the TCP question;
+    - first lasting contribution 1660 → 1659 and age 33 → 32 (P12);
+    - comma restored in the "divers times, (and perhaps oftner" quotation (#22);
+    - Church of England 1.0 → 0.7, since only Britannica names the church (#34).
+  - **Feynman** (2):
+    - birth place "New York City (Manhattan; …)" → "New York City" at 1.0, with the borough noted as contested (0.5): Far Rockaway, Queens, per Britannica and MacTutor's Quick Info, and Manhattan, implied by MacTutor's Biography, as the alternative (#59);
+    - MacTutor locators renumbered;
+    - the 1939 MIT thesis is now a listed contribution, so 1939 rests on a listed item (P13; #63).
+  - **Pauling** (3):
+    - every 1963 letter locator corrected to paragraphs 2–4 (#93, #94; claims 71, 73–75, 78, 80–84, 90);
+    - AHA membership years "–1963" → "by 1963" (#82);
+    - new S6 (JACS 1931, "The Nature of the Chemical Bond");
+    - first lasting contribution 1925 (0.5) → 1931 (0.7) and age 24 → 30 (P12, P13; #89).
+  - **Oppenheimer** (2):
+    - the "1965 interview" is now "recorded c. 1964, broadcast 5 January 1965" (NBC's The Decision to Drop the Bomb);
+    - new S6 (Paley Center catalogue record) and S7 (Wikiquote);
+    - statement date "1965" → "1965-01-05";
+    - the words still follow the audio, with no "he" before "takes on" (#164, #165).
+  - **Leavitt** (2): the wrong "P9" citation is replaced by CODING_GUIDE §1/§7 (#109); the variable-star item is now dated "by 1921" (P12), with 1912 unchanged.
+  - **Clausius** (2): CHRIST listed as considered, not coded (#124); birth and death 0.7 → 1.0, citing MacTutor (#131–132).
+  - **Libby** (2): first lasting contribution 1947 → 1941 (the gaseous-diffusion barrier, 1941–45) and age 38 → 32 (P12, P13; #148).
+  - **Hodgkin** (2):
+    - the wrong "P9" citation is replaced by CODING_GUIDE §1/§7, and CHRIST is listed as considered (#150);
+    - death place Shipston-on-Stour (0.7) → Ilmington (at home, Crab Mill; Dodson p. 188) at 0.5, with Shipston-on-Stour as the alternative (#158);
+    - first lasting contribution 1945 → 1942 and age 35 → 32 (P12).
+  - **Galileo** (4): first lasting contribution 1610 → 1609 and age 46 → 45 (P12).
+  - **Caroline Herschel** (4): first lasting contribution 1786 → 1783 (the listed nebulae) and age 36 → 33 (P13).
+  - **Planck** (5): first lasting contribution 1900 → 1879 (the listed 1879–1897 thermodynamics work) and age 42 → 21 (P13). If that item is judged not lasting, it should be removed, and the year returns to 1900.
+  - No primary_system, axis, mid_basin or era value changed. Figures regenerated (no change), and `reports/coverage.md` regenerated. The README progress table (28/28 decisions; audits; next steps) and the README decisions line are updated.
 
 ### System records (drafts)
 
@@ -156,7 +193,7 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - **Willard Libby** (`5d57849`, `people/l/libby-willard.md`): included by owner decision, borderline on the stage-2 date window. primary_system BELOW_THRESHOLD (no candidate). B 4 at 0.5 (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD.
   - **Dorothy Hodgkin** (`0fd35d2`, `people/h/hodgkin-dorothy.md`): included by owner decision, borderline on the stage-2 date window. primary_system BELOW_THRESHOLD (no candidate; Perutz's memorial remark that she was "more Christian in word and deed than many believers" is another person's view and scores nothing). B 4 at 0.5 (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD.
   - **Interviews (P8, and Jason's 2026-10-02 flag rule):** the only interview used is Oppenheimer's recorded remark in the NBC documentary The Decision to Drop the Bomb (1965), a published broadcast. It supports one statement and the HINDU rejection, scores nothing, and every field resting on it is marked "(interview)" in its human-readable note. No AIP oral history is quoted or used to score anything (relevant to Feynman, Oppenheimer and Pauling): AIP transcripts that carry a no-quotation notice cannot score an axis or code on their own (P8; lens batch 3 audit).
-  - **Open decisions raised:** (1) SECHUM or ATHE for a self-described Humanist who also says "I do not believe in God" (Pauling; coded SECHUM under the v7.1 rule). (2) May a colleague's obituary paraphrase of church attachment support a nominal_affiliation at 0.7 while scoring nothing (Leavitt)? (3) Do Text Creation Partnership keyboarded transcriptions count as authoritative copies under §7 (Boyle; treated as authoritative)? (4) Should a Marxist or communist humanism system be proposed (Hodgkin's politics, Dodson 2002, pp. 213–215)?
+  - **Open decisions raised:** (1) SECHUM or ATHE for a self-described Humanist who also says "I do not believe in God" (Pauling; coded SECHUM under the v7.1 rule). (2) May a colleague's obituary paraphrase of church attachment support a nominal_affiliation at 0.7 while scoring nothing (Leavitt)? (3) Do Text Creation Partnership keyboarded transcriptions count as authoritative copies under §7 (Boyle; treated as authoritative)? (Closed by decision P11, 2026-10-02: yes.) (4) Should a Marxist or communist humanism system be proposed (Hodgkin's politics, Dodson 2002, pp. 213–215)?
 - **2026-10-02, James Clerk Maxwell** (`people/m/maxwell-james-clerk.md`, draft — unreviewed): new person record from his letters, essays and 1873 "Molecules" lecture (via Campbell and Garnett 1882 and the 1890 Scientific Papers), Britannica, MacTutor and Hutchinson. Primary system CHRIST (0.7). A_locus 0 and B_cause 3 (physics) at 1.0, so `mid_basin` is true under P4; C_ledger 1 and D_authority 2 at 0.7; E_scope TODO. Quotes checked word for word against the fetched texts.
 - **2026-10-02, Isaac Newton** (`people/n/newton-isaac.md`, draft — unreviewed): new person record from the General Scholium, Opticks Query 31, the Principia's Rules of Reasoning, two letters to Bentley and three private theological manuscripts (Newton Project), plus Britannica, MacTutor and two SEP entries. Primary system CHRIST (0.7), CLTHEI a close second. A_locus 1, B_cause 3 (natural philosophy) and E_scope 3 at 1.0, so `mid_basin` is true under P4; C_ledger 0 and D_authority 2 at 0.7. Quotes checked word for word against the fetched texts.
 - **2026-10-02, Thomas Aquinas** (`people/a/aquinas-thomas.md`, draft — unreviewed): new person record from thirteen questions of the Summa theologiae (1920 English Dominican translation, New Advent), Britannica (Chenu), SEP (Pasnau) and IEP (Brown). Primary system CLASS_THEISM (1.0). A_locus 1, B_cause 2, C_ledger 1, D_authority 1, E_scope 2, all at 1.0 from written profession. `mid_basin` UNKNOWN: P4 has no branch for B_cause = 2 at high certainty (flagged as an open question). Quotes checked word for word against the fetched texts.

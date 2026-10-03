@@ -18,10 +18,10 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
 | People coded (of core) | 31 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
-| Decisions settled | 25 / 25 |
-| Audits | 7 blind lens runs on three batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145) and 2 on a 124-claim packet (d9903b7/43cecc4; run 1 116 hold / 8 weaken, run 2 112 hold / 12 weaken, 0 wrong; agreement 114/124, κ 0.46; fixes applied at 6f37cd6); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
+| Decisions settled | 28 / 28 |
+| Audits | 9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a 124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | People batch 4 (the last of the 1600–1950 physical-science pool, RUNBOOK §1 step 2) is coded and awaiting its lens audit; stage 3 (everyone else with F ≥ 3) has started; source the ATHE, AGNOS and IDEAL system stubs first; the revised rubric has not started |
+| Next steps | People batch 4 (the last of the 1600–1950 physical-science pool, RUNBOOK §1 step 2) has been lens-audited and fixed, so the pool is complete; stage 3 (everyone else with F ≥ 3) is next and has started; source the ATHE, AGNOS and IDEAL system stubs first; the revised rubric has not started |
 
 <!-- END GENERATED: progress -->
 
@@ -55,7 +55,7 @@ v8 starts by fixing the data in v7.1:
 - Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
 - Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
 - The two belief systems that were both labeled "Classical Theism" get separate display names (approved).
-- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 25 decisions are settled: 19 on 2026-10-01, and P6–P10 and S7 on 2026-10-02. P9, P10 and S7 are v8's picks on method details Jason delegated; P10 still awaits his sign-off ([open decisions](docs/OPEN_DECISIONS.md)).
+- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 28 decisions are settled: 19 on 2026-10-01, and P6–P13 and S7 on 2026-10-02. P9, P11, P12, P13 and S7 are v8's picks on method details Jason delegated; P8 and P10 began as v8's picks and Jason has signed them off ([open decisions](docs/OPEN_DECISIONS.md)).
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 
