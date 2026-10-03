@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from Britannica (Popkin, first page) and SEP 'Baruch Spinoza' (Nadler). Worldview from the Ethics and the Theological-Political Treatise in Elwes's translation, read in the Project Gutenberg texts (unofficial web copies, so every field resting on them is capped at 0.7 under CODING_GUIDE §7). The Cambridge edition (ed. Kisner) was not opened. DRAFT SCORES for v8's review: primary_system PANT 0.7; A 4, B 4, C 4, D 3, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #12: Dutch removed from languages_of_work (only the posthumous Dutch edition). #13: lens grinding now cited to SEP 'Spinoza's Physical Theory' §6.2 (new S8) as well as Britannica; how_known no longer says 'two sources' for both occupations; 1.0 left pending v8 (single-source / mixed sourcing). #16, #81: Ethics title cited for the geometric form; SEP §2.1 named. #22, #58: how_known says the detail is Britannica-only; 1.0 left pending v8. #27: SEP 17 vs Britannica 18–19 noted and flagged; 1.0 left pending v8 (conflict rule). #64, #91: timing of the immanent God now rests on SEP §1 (Short Treatise at Rijnsburg; Ethics under way by 1663) and §2.1, not §1 alone. #80: S8 added. TTP locators labelled as Gutenberg sentence numbers; Kisner wording marked TODO. Not reviewed."}
 
 identity:
   id: spinoza-baruch
@@ -43,14 +44,14 @@ basics:
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Netherlands is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S2, locator: "§1"}], how_known: "Amsterdam, Rijnsburg, Voorburg and The Hague."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "§1"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [Latin, Dutch], certainty: 0.7, cites: [{source: S2, locator: "§2.1 ('Latin (but not the original Dutch) edition of the Ethics')"}], how_known: "The Ethics was published in Latin and in a Dutch version (SEP); which language he wrote other works in was not checked."}
-  occupations: {value: [philosopher, "lens grinder", merchant], certainty: 1.0, cites: [{source: S1, locator: "Top Questions; 'Early life and career'"}, {source: S2, locator: "§1, paragraph 1 (family importing business)"}], how_known: "Two sources: family business, then lens grinding while writing philosophy."}
+  languages_of_work: {value: [Latin], certainty: 0.7, cites: [{source: S2, locator: "§2.1 ('Latin (but not the original Dutch) edition of the Ethics')"}], how_known: "SEP gives the Ethics in Latin. Its Dutch version was published by his friends after his death (SEP §2.1), so it is no evidence that he worked in Dutch, and Dutch is not listed. Whether he wrote anything in Dutch (letters, for example) was not checked in a source read (lens audit #12)."}
+  occupations: {value: [philosopher, "lens grinder", merchant], certainty: 1.0, cites: [{source: S1, locator: "'Early life and career' (business); Top Questions (lens grinding; a box Britannica labels as AI-generated)"}, {source: S2, locator: "§1, paragraph 1 (family importing business)"}, {source: S8, locator: "§6.2 ('a lens grinder and man of letters')"}], how_known: "Merchant: two sources (SEP §1, the family's importing business; Britannica's signed text, a tropical-fruit business with his brother at 18 or 19). Lens grinder: one signed source, SEP 'Spinoza's Physical Theory' §6.2, plus Britannica's Top Questions box, which Britannica labels as created using AI; neither SEP 'Baruch Spinoza' nor the signed Britannica first page mentions it (lens audit #13). Certainty left at 1.0 pending v8's ruling on single-source details in a two-source field and on citing the AI box."}
 
 contribution:
   fields: {value: [metaphysics, ethics, "political philosophy", "biblical criticism"], certainty: 1.0, cites: [{source: S2, locator: "opening; §§2–3"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Theological-Political Treatise: historical and critical reading of Scripture, the separation of philosophy from theology, and a case for toleration and freedom of thought", year: "1670", kind: work, lasting: "founding text of modern biblical criticism and of the liberal argument for free philosophizing", certainty: 0.7, cites: [{source: S2, locator: "§3, §3.1, §3.2"}], how_known: "SEP; 'lasting' wording is the coder's summary of SEP's account."}
-    - {value: "Ethics: a monist metaphysics of one substance, God or Nature, with a naturalistic psychology and ethics set out in geometrical order", year: "1677", kind: work, lasting: "canonical text of early modern rationalism and of pantheism", certainty: 1.0, cites: [{source: S2, locator: "§2, §2.1"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
+    - {value: "Ethics: a monist metaphysics of one substance, God or Nature, with a naturalistic psychology and ethics set out in geometrical order", year: "1677", kind: work, lasting: "canonical text of early modern rationalism and of pantheism", certainty: 1.0, cites: [{source: S2, locator: "§2, §2.1"}, {source: S1, locator: "opening"}, {source: S3, locator: "title ('Ethica Ordine Geometrico Demonstrata')"}], how_known: "The metaphysics, psychology and ethics: SEP and Britannica. Geometrical order: SEP §2.1 describes the form (definitions, then axioms, from which 'every subsequent proposition can be demonstrated using only what precedes it') without the words 'geometrical order'; that phrase translates 'Ordine Geometrico' in the S3 title (lens audit #16)."}
   evidence_of_impact:
     - {value: "Called 'one of the most important philosophers—and certainly the most radical—of the early modern period' and 'among the most relevant today'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "SEP, one scholarly reference work."}
   major_works:
@@ -61,14 +62,14 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Lasting original system in metaphysics, ethics and political thought.", certainty: 1.0, cites: [{source: S2, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: "Jewish (Amsterdam's Portuguese-Jewish community; the parents had been forcibly converted in Portugal and practised Judaism in secret before escaping)", certainty: 1.0, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}, {source: S2, locator: "§1, paragraph 1"}], how_known: "Two sources."}
+  family_religion: {value: "Jewish (Amsterdam's Portuguese-Jewish community; the parents had been forcibly converted in Portugal and practised Judaism in secret before escaping)", certainty: 1.0, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}, {source: S2, locator: "§1, paragraph 1"}], how_known: "The Portuguese-Jewish community: two sources. The forced conversion, secret practice and escape from Portugal: Britannica's signed text only (lens audit #22). Certainty left at 1.0 pending v8's ruling on single-source details in a two-source field."}
   family_religious_practice: {value: "Practising: the father served as one of the directors of the city's synagogue", certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}], how_known: "Britannica."}
   parents_and_household:
     - {value: "Father, Michael, an important merchant and a director of the Amsterdam synagogue (died 1654)", name: "Michael Spinoza", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1; 'Excommunication' paragraph"}], how_known: "Britannica."}
     - {value: "Mother, Hannah, died in 1638, shortly before his sixth birthday", name: "Hannah Spinoza", role: mother, certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}], how_known: "Britannica."}
   household_circumstances: {value: "Middle son of a prominent family of moderate means in the Portuguese-Jewish community", certainty: 0.7, cites: [{source: S2, locator: "§1, paragraph 1"}], how_known: "SEP."}
   schooling:
-    - {value: "Talmud Torah school of the Amsterdam congregation; did not reach the upper levels (advanced Talmud); studies cut short at seventeen for the family business", stage: "religious school", years: "–c. 1649", ages: "to 17", certainty: 1.0, cites: [{source: S2, locator: "§1, paragraph 1"}, {source: S1, locator: "'Early life and career', paragraph 3"}], how_known: "Two sources."}
+    - {value: "Talmud Torah school of the Amsterdam congregation; did not reach the upper levels (advanced Talmud); studies cut short at seventeen for the family business", stage: "religious school", years: "–c. 1649", ages: "to 17", certainty: 1.0, cites: [{source: S2, locator: "§1, paragraph 1"}, {source: S1, locator: "'Early life and career', paragraph 3"}], how_known: "The Talmud Torah school: two sources. That he 'never made it into the upper levels of the curriculum' and stopped 'At the age of seventeen' to help run the family's importing business: SEP only. Britannica says that 'When he was 18 or 19 years old, Spinoza and his brother went into business selling tropical fruit', which may be a later step rather than the same event, but the ages differ (flagged in review; lens audit #27). Certainty left at 1.0 pending v8's ruling on single-source details and on whether such a difference forces 0.7."}
   early_mathematics: {value: TODO, note: "Not in the sources read."}
   early_geometric_style_reasoning: {value: TODO, note: "Not in the sources read; his geometrical method is documented only for the adult Ethics."}
   early_science_exposure: []
@@ -87,7 +88,7 @@ worldview:
   self_described_science_religion_relation:
     value: "Philosophy and theology each have their own domain: 'The sphere of reason is, as we have said, truth and wisdom; the sphere of theology, is piety and obedience' (TTP ch. 15). Knowledge of nature and of God comes from reason, not from prophecy or miracles: 'we cannot gain knowledge of the existence and providence of God by means of miracles, but [...] we can far better infer them from the fixed and immutable order of nature' (TTP ch. 6)."
     certainty: 0.7
-    cites: [{source: S5, locator: "TTP ch. 15, sentences (52)–(53)"}, {source: S4, locator: "TTP ch. 6, sentence (40)"}]
+    cites: [{source: S5, locator: "TTP ch. 15, Gutenberg sentences (52)–(53)"}, {source: S4, locator: "TTP ch. 6, Gutenberg sentence (40)"}]
     how_known: "His own published treatise, read in an unofficial web copy of Elwes's translation; capped at 0.7 (CODING_GUIDE §7)."
   primary_system:
     value: PANT
@@ -114,7 +115,7 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "E1P29; E1 Appendix"}, {source: S4, locator: "TTP ch. 6, sentences (17), (19)"}]
+      cites: [{source: S3, locator: "E1P29; E1 Appendix"}, {source: S4, locator: "TTP ch. 6, Gutenberg sentences (17), (19)"}]
       how_known: "His own published texts in unofficial web copies; capped at 0.7 (§7)."
       rationale: "DRAFT. Scored on his account of nature (P6); at the LIO pole. 'Nothing in the universe is contingent' (E1P29); an event against nature's universal laws would mean 'that God acted against His own nature - an evident absurdity' (TTP ch. 6, (17)); appeal to God's will for an event is 'the sanctuary of ignorance' (E1 Appendix). No miracle, petition or exemption anywhere in nature."
     C_ledger:
@@ -128,14 +129,14 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S5, locator: "TTP ch. 15, sentences (52)–(55), (64), (94)"}, {source: S2, locator: "§3.1"}]
+      cites: [{source: S5, locator: "TTP ch. 15, Gutenberg sentences (52)–(55), (64), (94)"}, {source: S2, locator: "§3.1"}]
       how_known: "His own published treatise in an unofficial web copy; capped at 0.7 (§7) and a named alternative."
       rationale: "DRAFT. Leans LIO with one stated, limited exception. Prophecy 'does not provide privileged knowledge of natural or spiritual phenomena' (SEP §3.1), and theology 'has neither the will nor the power to oppose reason' and 'leaves reason to determine their precise truth' (TTP ch. 15, (55)). The exception: the one dogma that 'simple obedience is the path of salvation' cannot be reached 'by the natural light of reason', so 'revelation was necessary' (ch. 15, (64), (94)). Named alternative: 2, since he says theology and reason each have 'her own domain' (ch. 15, (52)), which under the same-pattern rule can read as two domains each with its own authority; not taken because revelation never outranks reason on any question of truth."
     E_scope:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "E1 Appendix; E3 Preface"}, {source: S6, locator: "TTP ch. 3, sentences (10), (13)–(14)"}]
+      cites: [{source: S3, locator: "E1 Appendix; E3 Preface"}, {source: S6, locator: "TTP ch. 3, Gutenberg sentences (10), (13)–(14)"}]
       how_known: "His own published texts in unofficial web copies; capped at 0.7 (§7)."
       rationale: "DRAFT. Scored on the world's order (P7); at the LIO pole. Human actions are to be treated 'as though I were concerned with lines, planes, and solids' (E3 Preface); the belief 'that everything which is created is created for their sake' is the root error he attacks (E1 Appendix); 'the help of God' means 'the fixed and unchangeable order of nature' (TTP ch. 3, (13)), and 'the Hebrews did not surpass other nations in knowledge, or in piety' (ch. 3, (10)). No favour for any group in events. Election and salvation readings are not scored here (P7); his denial of a personal reward is on C."
   mid_basin: {value: false, certainty: 0.7, cites: [{source: S3, locator: "E1P15; E4 Preface"}], how_known: "P4 test: A_locus is 4 (at 0.7), so A ≥ 3 gives false. Certainty is capped by A_locus alone, the only axis this branch reads (decision P10): 0.7."}
@@ -205,7 +206,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "Hence, any event happening in nature which contravened nature's universal laws, would necessarily also contravene the Divine decree, nature, and understanding; or if anyone asserted that God acts in contravention to the laws of nature, he, ipso facto, would be compelled to assert that God acted against His own nature - an evident absurdity."
-      cites: [{source: S4, locator: "TTP ch. 6, sentence (17)"}]
+      cites: [{source: S4, locator: "TTP ch. 6, Gutenberg sentence (17)"}]
       date: "1670"
       context: "Theological-Political Treatise, chapter 6, 'Of Miracles'. Sentence numbers are the Gutenberg volunteer's."
       axes: [B_cause]
@@ -213,7 +214,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "We may conclude, then, that we cannot gain knowledge of the existence and providence of God by means of miracles, but that we can far better infer them from the fixed and immutable order of nature."
-      cites: [{source: S4, locator: "TTP ch. 6, sentence (40)"}]
+      cites: [{source: S4, locator: "TTP ch. 6, Gutenberg sentence (40)"}]
       date: "1670"
       context: "Same chapter, on what miracles can teach."
       axes: [B_cause, D_authority]
@@ -221,7 +222,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "By the help of God, I mean the fixed and unchangeable order of nature or the chain of natural events"
-      cites: [{source: S6, locator: "TTP ch. 3, sentence (13)"}]
+      cites: [{source: S6, locator: "TTP ch. 3, Gutenberg sentence (13)"}]
       date: "1670"
       context: "Chapter 3, 'Of the Vocation of the Hebrews', defining divine help and fortune before discussing election."
       axes: [E_scope]
@@ -229,7 +230,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "The sphere of reason is, as we have said, truth and wisdom; the sphere of theology, is piety and obedience."
-      cites: [{source: S5, locator: "TTP ch. 15, sentence (53)"}]
+      cites: [{source: S5, locator: "TTP ch. 15, Gutenberg sentence (53)"}]
       date: "1670"
       context: "Chapter 15, 'Theology is shown not to be subservient to Reason, nor Reason to Theology'."
       axes: [D_authority]
@@ -237,7 +238,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "For as we cannot perceive by the natural light of reason that simple obedience is the path of salvation [Endnote 25], and are taught by revelation only that it is so by the special grace of God, which our reason cannot attain, it follows that the Bible has brought a very great consolation to mankind."
-      cites: [{source: S5, locator: "TTP ch. 15, sentence (94)"}]
+      cites: [{source: S5, locator: "TTP ch. 15, Gutenberg sentence (94)"}]
       date: "1670"
       context: "End of chapter 15: the one dogma he says only revelation teaches. '[Endnote 25]' is the Gutenberg text's marker."
       axes: [D_authority]
@@ -246,11 +247,11 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Left Judaism: excommunicated from the Amsterdam congregation in 1656; SEP judges that his faith and religious commitment were 'by this point, gone'", year: "1656", certainty: 0.7, cites: [{source: S2, locator: "§1, paragraphs 2–3"}], how_known: "SEP's reading; the herem itself is documented."}
-  coder_notes: "DRAFT SCORES for v8's review. All worldview fields rest on Project Gutenberg texts of Elwes's 1883 translation (S3–S6), unofficial web copies, so nothing worldview-related exceeds 0.7 (CODING_GUIDE §7). The Cambridge Texts edition (ed. Kisner), which v8 asked for, was not opened in this run; locators are by part and proposition (E1P15 etc.) and, for the TTP, by chapter and the Gutenberg volunteer's sentence numbers, which are not in any printed edition. No page numbers are given. Copy error noted: the Gutenberg TTP ch. 6, sentence (19), reads 'a fixed and mutable order', which is probably a dropped 'im-'; that sentence is not quoted. ATHE and DETERM are stub system files (flag). The 1650s report that he held that God exists, but only 'philosophically' (Britannica, an Augustinian friar's account) is reported speech and not used."
+  coder_notes: "DRAFT SCORES for v8's review. All worldview fields rest on Project Gutenberg texts of Elwes's 1883 translation (S3–S6), unofficial web copies, so nothing worldview-related exceeds 0.7 (CODING_GUIDE §7). The Cambridge Texts edition (ed. Kisner), which v8 asked for, was not opened in this run; locators are by part and proposition (E1P15 etc.) and, for the TTP, by chapter and the Gutenberg volunteer's sentence numbers, which are not in any printed edition. No page numbers are given. Copy error noted: the Gutenberg TTP ch. 6, Gutenberg sentence (19), reads 'a fixed and mutable order', which is probably a dropped 'im-'; that sentence is not quoted. ATHE and DETERM are stub system files (flag). The 1650s report that he held that God exists, but only 'philosophically' (Britannica, an Augustinian friar's account) is reported speech and not used."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "Portuguese-Jewish (Sephardic) community of Amsterdam; parents were Marranos (forcibly converted, secretly practising Jews) who escaped from Portugal", certainty: 1.0, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}, {source: S2, locator: "§1, paragraph 1"}], how_known: "Two sources."}
+  ethnic_or_communal_heritage: {value: "Portuguese-Jewish (Sephardic) community of Amsterdam; parents were Marranos (forcibly converted, secretly practising Jews) who escaped from Portugal", certainty: 1.0, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}, {source: S2, locator: "§1, paragraph 1"}], how_known: "The Portuguese-Jewish community: two sources. The Marrano history (forced conversion, escape from Portugal): Britannica's signed text only (lens audit #58). Certainty left at 1.0 pending v8's ruling on single-source details in a two-source field."}
   religious_heritage_by_birth: {value: "Jewish", certainty: 1.0, cites: [{source: S1, locator: "'Early life and career'"}, {source: S2, locator: "§1"}], how_known: "Two sources."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: "Talmud Torah school of the congregation", certainty: 1.0, cites: [{source: S2, locator: "§1, paragraph 1"}, {source: S1, locator: "'Early life and career', paragraph 3"}], how_known: "Two sources."}
@@ -260,12 +261,12 @@ timing:
   major_work_period: {value: "1661–1677", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "From the Rijnsburg writings (correspondence begins 1661) to the posthumous works."}
   age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "opening (birth 1632)"}, {source: S2, locator: "§1 (TTP 1670)"}], how_known: "Born November 1632; TTP 1670. Follows the coder's choice of year."}
   first_evidence_of_lio_type_views: {value: "Herem of 1656, which SEP links to the ideas of his later treatises (denial of a transcendent, providential God)", year: 1656, age: 23, certainty: 0.5, cites: [{source: S2, locator: "§1, paragraph 2"}], how_known: "SEP calls this 'an educated guess'; the content of the 'abominable heresies' is not recorded. His own first dated texts on the question are the 1660s writings."}
-  lio_views_relative_to_major_work: {value: "before major work", rationale: "Whatever the herem was for, the immanent God of the Short Treatise and the Ethics is present in the Rijnsburg writings of the early 1660s (S2, §1), before the TTP (1670) and the Ethics (1677).", certainty: 0.5, cites: [{source: S2, locator: "§1"}], how_known: "SEP dating of the works; the Short Treatise was not read."}
+  lio_views_relative_to_major_work: {value: "before major work", rationale: "SEP dates the Short Treatise, 'an initial but aborted effort to lay out his metaphysical, epistemological and moral views', to his Rijnsburg years (from 1661), and says he was working on the Ethics by 1663 (S2, §1); the Ethics' natura naturans uses 'the same terms he used in the Short Treatise' (S2, §2.1). So his metaphysics of God was under way in the early 1660s, before the TTP (1670) and the Ethics (1677). SEP does not itself say the immanent God is present in those writings, and the Short Treatise was not read (lens audit #64).", certainty: 0.5, cites: [{source: S2, locator: "§1; §2.1"}], how_known: "SEP dating of the works and its note on shared terms; the Short Treatise was not read."}
   worldview_during_major_work: {value: "PANT throughout (draft code)", certainty: 0.5, cites: [{source: S3, locator: "E1P15"}, {source: S4, locator: "TTP ch. 6"}], how_known: "The TTP and the Ethics, written in the major-work period, agree."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
-  geometric_form_present: {value: "yes", rationale: "The Ethics is set out in geometrical order (its title in S3: 'Ethica Ordine Geometrico Demonstrata'): definitions, axioms, propositions, demonstrations, with every proposition demonstrated from what precedes it (S2, §2.1; S3, title and Part I).", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}, {source: S3, locator: "title; Part I definitions and axioms"}], how_known: "The text's own form."}
+  geometric_form_present: {value: "yes", rationale: "The Ethics is set out in geometrical order (its title in S3: 'Ethica Ordine Geometrico Demonstrata'): definitions, then axioms, from which 'the first proposition necessarily follows, and every subsequent proposition can be demonstrated using only what precedes it' (S2, §2.1, describing the form; S3, title and Part I).", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}, {source: S3, locator: "title; Part I definitions and axioms"}], how_known: "The form is described in SEP §2.1, a scholarly source, so the field does not rest on the Gutenberg copy alone (lens audit #66, one run: left at 1.0). The phrase 'geometrical order' translates 'Ordine Geometrico' in the S3 title."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "§1"}], how_known: "No source read says where he learned geometrical method; his Descartes exposition (1663) is also in geometrical form (not read)."}
   circle_present: {value: "yes", rationale: "God or Nature (E4 Preface), all things in God (E1P15), and human beings treated by the same method as lines and planes (E3 Preface): the entity applied to Nature and Nature rendered in the entity.", certainty: 0.7, cites: [{source: S3, locator: "E1P15; E3 Preface; E4 Preface"}], how_known: "His own text in an unofficial web copy; Nadler's ATHE-type reading is the named alternative."}
   reading: "As belief, not finding: form present (geometrical order), circle present (Deus sive Natura). Spinoza is the case the circle is named after, so the record cannot test H1; it only confirms the definition."
@@ -283,8 +284,10 @@ review:
     - "Immortality: SEP says his treatises deny the immortality of the soul (§1); Britannica says he 'did not directly discuss the issue' and that his disbelief in individual immortality is clear only by implication. E5P23 ('something which is eternal') is the text both readings argue over."
     - "Worldview text read only in Project Gutenberg copies (unofficial); the Gutenberg TTP has at least one copy error (ch. 6, (19), 'fixed and mutable order')."
     - "Britannica read as its first page only."
+    - "Leaving school: SEP says his studies were cut short 'At the age of seventeen' to help run the family's importing business; Britannica says he and his brother went into the fruit business 'When he was 18 or 19 years old' (lens audit #27)."
+    - "Lens grinding is not in SEP 'Baruch Spinoza' or the signed Britannica first page; it is cited to SEP 'Spinoza's Physical Theory' §6.2 (S8) and Britannica's AI-generated Top Questions box (lens audit #13, #80)."
   open_questions:
-    - "Check the quoted Ethics and TTP passages against the Cambridge edition (Kisner) or a library scan of Elwes 1883 (Bohn's Chief Works) to lift the §7 cap on A, B, E; give printed page numbers."
+    - "TODO: the Kisner (Cambridge) wording of the Ethics was not opened. Check the quoted Ethics and TTP passages against the Cambridge edition (Kisner) or a library scan of Elwes 1883 (Bohn's Chief Works) to lift the §7 cap on A, B, E; give printed page numbers."
     - "Read the Short Treatise and Letter 73 (to Oldenburg) for the date of his immanent God."
 
 sources:
@@ -325,7 +328,7 @@ sources:
     citation: "Spinoza, Benedict de. A Theologico-Political Treatise, Part 2 (chapters VI–X). Translated by R. H. M. Elwes (1883). Project Gutenberg eBook 990, https://www.gutenberg.org/ebooks/990."
     url: "https://www.gutenberg.org/ebooks/990"
     accessed: 2026-10-02
-    reliability_note: "Unofficial web copy (§7 cap 0.7). Sentence numbers in parentheses were 'added by volunteer' (the file's own note) and are not in printed editions. Contains at least one copy error (ch. 6, (19))."
+    reliability_note: "Unofficial web copy (§7 cap 0.7). Sentence numbers in parentheses were 'added by volunteer' (the file's own note) and are not in printed editions; locators give them as 'Gutenberg sentence (n)'. Two sentences in ch. 6 are numbered (40); the one quoted is the second. Contains at least one copy error (ch. 6, (19))."
     used_for: [worldview, timing]
   - id: S5
     type: primary
@@ -356,6 +359,16 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S8
+    type: secondary
+    kind: encyclopedia
+    author: "Richard Manning"
+    year: 2021
+    citation: "Manning, Richard. \"Spinoza's Physical Theory.\" Stanford Encyclopedia of Philosophy (substantive revision 24 Apr 2021). https://plato.stanford.edu/entries/spinoza-physics/."
+    url: "https://plato.stanford.edu/entries/spinoza-physics/"
+    accessed: 2026-10-02
+    reliability_note: "Scholarly reference work; read for §6.2 (Experimentation) only, as a signed source for his lens grinding (lens audit #13). Cited by section."
+    used_for: [basics, review]
 ---
 
 # Baruch Spinoza
@@ -368,11 +381,11 @@ Bento (Baruch, Benedictus) Spinoza (1632–1677), Dutch philosopher of the Amste
 
 ## Life and work
 
-Born in Amsterdam to a merchant family; studies cut short at seventeen for the family business; excommunicated by the congregation in July 1656 [S2, §1; S1]. He lived at Rijnsburg, Voorburg and The Hague, grinding lenses, published his exposition of Descartes in 1663 and the Treatise anonymously in 1670, and died in The Hague in 1677 [S1; S2, §1].
+Born in Amsterdam to a merchant family; studies cut short at seventeen for the family business; excommunicated by the congregation in July 1656 [S2, §1; S1]. He lived at Rijnsburg, Voorburg and The Hague, grinding lenses, published his exposition of Descartes in 1663 and the Treatise anonymously in 1670, and died in The Hague in 1677 [S1; S2, §1; S8, §6.2 for lens grinding].
 
 ## Contribution and impact
 
-A monist metaphysics with a naturalistic psychology and ethics, set out in geometrical order [S2, §2], and a historical-critical reading of Scripture with an argument for freedom of thought [S2, §3].
+A monist metaphysics with a naturalistic psychology and ethics, set out in geometrical order [S2, §2.1; S3, title], and a historical-critical reading of Scripture with an argument for freedom of thought [S2, §3].
 
 ## Childhood and education
 
@@ -388,7 +401,7 @@ Portuguese-Jewish (Sephardic) Amsterdam [S1; S2]. Context only.
 
 ## Timing
 
-First lasting contribution taken as the Treatise of 1670, at 37 [S2, §1]. The immanent God appears in the writings of the early 1660s [S2, §1]; the content of the 1656 heresies is not recorded.
+First lasting contribution taken as the Treatise of 1670, at 37 [S2, §1]. His metaphysics of God was under way in the early 1660s: SEP dates the Short Treatise to Rijnsburg and says the Ethics uses its terms for natura naturans [S2, §1; §2.1]; the Short Treatise was not read, and the content of the 1656 heresies is not recorded.
 
 ## Lane B notes (labeled belief model)
 
@@ -402,3 +415,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Geometric f
 ## Research log
 
 - 2026-10-02: Read SEP "Baruch Spinoza" (Nadler, whole entry) and Britannica (Popkin, first page). Read the Ethics (Gutenberg 3800) and the Theological-Political Treatise (Gutenberg 989, 990, 991) and copied quotations from those files. The Cambridge edition (Kisner) was not opened; no page numbers are given. Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Read SEP "Spinoza's Physical Theory" (Manning, §6.2) for the lens grinding, and re-read SEP "Baruch Spinoza" §§1, 2.1 and the Britannica first page for items #12–#91. The Kisner (Cambridge) wording of the Ethics is still not opened (TODO).
