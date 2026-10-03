@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica, MacTutor, his Nobel autobiography (Les Prix Nobel 1983) and Parker's NAS Biographical Memoir (1997). Worldview from his own words in the AIP interview of 6 October 1987 (Krisciunas): 'he knew I was an atheist'. primary_system ATHE at 0.5 (one oral self-description; no basis type fits a recorded interview, so capped by analogy with the single-letter rule; flagged). A 4 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (both runs, #19, #20, #25). S5 carries AIP's no-quotation notice, so under P8's last sentence only a paraphrase can be published and the interview cannot score an axis or code on its own; the record's earlier reading (quoting verbatim avoids the limit) was circular. Treated like Bohr's S7: S5 is now paraphrased throughout and its two verbatim statements were removed. primary_system ATHE 0.7 → 0.5 and A_locus 4 0.7 → 0.5, both basis recorded_interview → scholarly_reconstruction (as before P8); self-described relation 0.7 → 0.5; B_cause unchanged (4 at 0.5). mid_basin false (0.5) → BELOW_THRESHOLD (A and B both only at 0.5). Stale Wali note reworded. Not reviewed. Interview-based fields (primary_system, A_locus, the self-described relation, lio_views_relative_to_major_work, worldview_during_major_work, circle_present) now start their how_known with '(interview)' (P8 as signed off by Jason, 2026-10-02)."}
 
 identity:
   id: chandrasekhar-subrahmanyan
@@ -99,67 +100,45 @@ worldview:
   working_years: {value: "1929–1995", certainty: 1.0, cites: [{source: S4, locator: "first paper (1929) to death"}, {source: S3, locator: "the seven periods"}], how_known: "From his first paper to his death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
-    value: "None stated as such in what was read. In 1987 he called himself an atheist in passing, and described 'the simple is the seal of the true' as a description of the fundamental truths of science, citing the 'exact replica in nature' of the Kerr solution."
-    certainty: 0.7
-    cites: [{source: S5, locator: "Struve's religion; 'simple is the seal of the true' passage"}]
-    how_known: "His own first-person words in one recorded interview (S5), quoted in two short sentences. Under decision P8 a recorded interview counts as his own words with a 0.7 ceiling; it is not a written text, so not 1.0. Rechecked 2026-10-02 (was 0.5)."
+    value: "None stated as such in what was read. In a 1987 interview (paraphrased here) he called himself an atheist in passing, and described the maxim that the simple is the seal of the true as a description of the fundamental truths of science, giving the Kerr solution, where a search for abstract beauty is matched exactly in nature, as his example."
+    certainty: 0.5
+    cites: [{source: S5, locator: "answer on whether Otto Struve was religious; answer on 'the simple is the seal of the true'"}]
+    how_known: "(interview) His own words in one recorded interview (S5). AIP's notice restricts quotation, so S5 is paraphrased (same treatment as Bohr's S7). One paraphrase-only interview, so 0.5 (lens audit batch 3: back from 0.7 to the pre-P8 value)."
   primary_system:
     value: ATHE
-    basis: recorded_interview
-    certainty: 0.7
-    cites: [{source: S5, locator: "answer on whether Struve was religious"}, {source: S4, locator: "opening sentence"}]
-    how_known: "His own first-person self-description in a tape-recorded AIP interview: 'he knew I was an atheist' (S5, 1987), quoted verbatim. Under decision P8 (2026-10-02) a recorded interview in the person's own words has basis recorded_interview with a 0.7 ceiling, one interview is enough, and a first-person remark made in passing gets no further cap; so 0.7 (was scholarly_reconstruction 0.5 before P8). Parker's 'free-thinking' family (S4) is consistent with it."
+    basis: scholarly_reconstruction
+    certainty: 0.5
+    cites: [{source: S5, locator: "answer on whether Otto Struve was religious"}, {source: S4, locator: "opening sentence"}]
+    how_known: "(interview) His own self-description in a tape-recorded AIP interview (S5, 6 October 1987): asked whether Otto Struve was religious, he said in passing that Struve knew he was an atheist and never raised the subject with him (paraphrased; AIP's notice restricts quotation). Under decision P8 a paraphrase-only interview cannot score a code on its own, so basis recorded_interview (0.7) does not apply (lens audit batch 3, #19). Kept at the 0.5 floor with basis scholarly_reconstruction, as before P8, by v8's pick on the lens fix (2026-10-02); Parker's 'free-thinking' family (S4) is consistent with it. A strict reading of P8 would withhold the code (BELOW_THRESHOLD) until a second, quotable document is read."
     rationale: "ATHE (positive naturalism: no gods) fits a self-described atheist, and the code does not rest on the absence of belief. AGNOS is not a live alternative: he called himself an atheist, not undecided. The certainty is limited by the evidence type, not by a rival code."
-    note: "Wali, Chandra (1991), p. 304, reportedly quotes him: 'I am not religious in any sense; in fact, I consider myself an atheist'. Seen only via a secondary summary (lending-only scan), so not used. Reading it, or Wali (ed.), S. Chandrasekhar: The Man Behind the Legend (1997), would give more documents and could raise this to 0.7."
+    note: "Wali, Chandra (1991), p. 304, reportedly quotes him: 'I am not religious in any sense; in fact, I consider myself an atheist'. Seen only via a secondary summary (lending-only scan), so not used. Reading it, or Wali (ed.), S. Chandrasekhar: The Man Behind the Legend (1997), would give a quotable document other than S5; the code would then rest on that document, with S5 in support (P8), and could be reconsidered at 0.7."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S5."}
   candidate_codes_considered:
-    - {code: ATHE, reason: "Coded at 0.5: his own self-description as an atheist (S5). ATHE is a stub system file (flag).", cites: [{source: S5, locator: "answer on whether Struve was religious"}]}
+    - {code: ATHE, reason: "Coded at 0.5: his own self-description as an atheist in a paraphrase-only interview (S5). ATHE is a stub system file (flag).", cites: [{source: S5, locator: "answer on whether Struve was religious"}]}
     - {code: AGNOS, reason: "Rejected: he described himself as an atheist, not as suspending judgement. AGNOS is a stub system file (flag).", cites: [{source: S5, locator: "answer on whether Struve was religious"}]}
     - {code: HINDU, reason: "Rejected: Hindu Brahmin heritage only; no adult practice or belief recorded. Heritage is never a code.", cites: [{source: S4, locator: "opening sentence"}]}
   lio_axes:
     A_locus:
       value: 4
-      basis: recorded_interview
-      certainty: 0.7
+      basis: scholarly_reconstruction
+      certainty: 0.5
       cites: [{source: S5, locator: "answer on whether Struve was religious"}]
-      how_known: "Read from his first-person self-description as an atheist in one recorded interview: basis recorded_interview, ceiling 0.7 (decision P8; was 0.5). The named alternative below would also cap it at 0.7 (CODING_GUIDE §3)."
+      how_known: "(interview) Read from his self-description as an atheist in one paraphrase-only interview (S5). P8 does not let such an interview score an axis on its own, so not recorded_interview (lens audit batch 3, #20); kept at 0.5, the same level as primary_system, as before P8. The coder's step from a passing 'atheist' label to the LIO pole is itself indirect, which also points to 0.5; the named alternative below would cap it at 0.7 in any case (CODING_GUIDE §3)."
       rationale: "No transcendent person: he denied any god, so the interventionist pole is absent and whatever order there is lies in the world (LIO pole). Alternative named: the axis may be read as not applying to someone who denies the divine altogether, which would make it BELOW_THRESHOLD as for Fermi, Curie and Bohr, who made no such denial in what was read."
     B_cause:
       value: 4
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S4, locator: "Copenhagen paragraph"}, {source: S5, locator: "'simple is the seal of the true' passage"}]
-      how_known: "Scored on his working science (P6), mainly from Parker's account (scholarly reconstruction, 0.5). The interview remark (S5) is his own words under P8, but it speaks to beauty and truth, not to law against exception, so it supports the score only indirectly and does not lift it; rechecked 2026-10-02, unchanged."
-      rationale: "Scored on his account of nature (P6). His work develops 'the implications of the basic physical laws of nature' (Parker, S4) with no special cases: a white dwarf above the limit must collapse whatever the expectations, against Eddington's insistence that 'stars do not behave in that way' (S4). In 1987 he said the Kerr solution showed that 'the search for the beautiful in the abstract should have an exact replica in nature' (S5). No miracle, petition or exemption appears."
+      how_known: "Scored on his working science (P6), mainly from Parker's account (scholarly reconstruction, 0.5). The interview remark (S5) is paraphrase-only and speaks to beauty and truth, not to law against exception, so it only supports the score (P8). Unchanged by the batch 3 audit."
+      rationale: "Scored on his account of nature (P6). His work develops 'the implications of the basic physical laws of nature' (Parker, S4) with no special cases: a white dwarf above the limit must collapse whatever the expectations, against Eddington's insistence that 'stars do not behave in that way' (S4). In 1987 he gave the Kerr solution as an example of a search for abstract beauty matched exactly in nature (S5, paraphrased). No miracle, petition or exemption appears."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife, karma or moral reckoning in S1–S5. His atheism rules out a divine judge, but not every ledger (for example karma), so C is not inferred from it.", note: "Gap: Wali (1991, 1997)."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation or scripture in S1–S5.", note: "A widely quoted remark that he could not accept the Bhagavad Gita as divine because it 'was written by man' comes through secondary web pages citing Wali (1997); not read, so not used."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
-  mid_basin:
-    value: false
-    certainty: 0.5
-    cites: [{source: S5, locator: "answer on whether Struve was religious"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3) at 0.7, so false; the false branch for A ≥ 3 needs only A. Certainty is at most the lower of A (0.7) and B (0.5) (CODING_GUIDE §3), so 0.5. Was BELOW_THRESHOLD before decision P8 raised A to 0.7."
-  statements:
-    - text: "Of course, he knew I was an atheist, and he never brought up the subject with me."
-      cites: [{source: S5, locator: "answer on whether Otto Struve was religious"}]
-      date: "1987-10-06"
-      context: "AIP interview by Kevin Krisciunas; asked whether Otto Struve was religious, he answers about Struve and himself."
-      axes: [A_locus]
-      kind: "recorded interview"
-      note: "Tape-recorded interview, transcribed by AIP; his own speech, not someone's memory of it, but not a written profession (decision P8: ceiling 0.7)."
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
-    - text: "the fact that the search for the beautiful in the abstract should have an exact replica in nature is an example of how “the simple is the seal of the true.”"
-      cites: [{source: S5, locator: "answer on 'the simple is the seal of the true'"}]
-      date: "1987-10-06"
-      context: "Same interview; on his Ryerson lecture (1975) and the Kerr solution of general relativity. He adds: 'It is a description of the fundamental truths of science.'"
-      axes: [B_cause]
-      kind: "recorded interview"
-      note: "Interview transcript (see above)."
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus (4) and B_cause (4) are both only at 0.5, under the test's 0.7 bar (CODING_GUIDE §6). If A reached 0.7 from a quotable document, the test would give false (A ≥ 3), with certainty set by A alone (decision P10).", note: "Was false at 0.5 from P8 (2026-10-02) until the lens audit batch 3 fix the same day."}
+  statements: []
   changes_over_life: []
-  coder_notes: "ATHE, AGNOS and HINDU are stub system files (flag). Basis: decision P8 (2026-10-02) added basis recorded_interview (ceiling 0.7) for the person's own words in a recorded interview; primary_system, A_locus and the self-described relation now use it. The AIP transcript carries a notice restricting quotation, so only two short sentences are quoted; because they are quoted verbatim (not paraphrase only), P8's paraphrase limit does not apply. nominal_affiliations and changes_over_life are empty after research: no adult membership or practice, and no dated change of belief, is recorded in S1–S5."
+  coder_notes: "ATHE, AGNOS and HINDU are stub system files (flag). Basis: decision P8 (2026-10-02) added basis recorded_interview (ceiling 0.7) for the person's own words in a recorded interview, but its last sentence says an interview that may only be paraphrased (an AIP no-quotation notice) cannot score an axis or code on its own. S5 carries that notice (header of the transcript: no quotation, reproduction or redistribution, in whole or in part, without AIP's written permission), and no permission is recorded, so S5 is treated as paraphrase-only, as Bohr's S7 is (lens audit batch 3, #19–#20). The two verbatim statements it once supplied (his remark on Struve and himself, and the 'simple is the seal of the true' answer) were removed; both can be read at the S5 locators. statements is empty after research: no quotable written or published statement of his on religion was read. nominal_affiliations and changes_over_life are empty after research: no adult membership or practice, and no dated change of belief, is recorded in S1–S5."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -173,14 +152,14 @@ timing:
   major_work_period: {value: "1930–1983", certainty: 1.0, cites: [{source: S3, locator: "the seven periods"}], how_known: "His own periods, from white dwarfs to black holes."}
   age_at_first_lasting_contribution: {value: 19, certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Born October 1910; the limit was worked out on the voyage of July–August 1930."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "The only dated statement is from 1987 (S5); no earlier evidence read."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The atheist self-description is late (1987) and undated as to origin.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "Dates."}
-  worldview_during_major_work: {value: "Struve 'knew I was an atheist' during their Yerkes years (1937–1950), on his own later account", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "One retrospective remark (1987) about 1937–1950; the remark is his own words (P8), but dating his view to those years rests on hindsight, so 0.5."}
+  lio_views_relative_to_major_work: {value: "unclear", rationale: "The atheist self-description is late (1987) and undated as to origin.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) Dates."}
+  worldview_during_major_work: {value: "On his own later account, Struve knew during their Yerkes years (1937–1950) that he was an atheist", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) One retrospective remark (1987) about 1937–1950, paraphrased (AIP restricts quotation); dating his view to those years rests on hindsight, so 0.5."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "yes", certainty: 0.5, cites: [{source: S3, locator: "paragraph 7"}], how_known: "Coder's reading of his own description of his method: after study he presents his view 'ab initio, in a coherent account with order, form, and structure' (S3)."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S4, locator: "Madras paragraph"}], how_known: "Early attraction to algebra and geometry (S4); nothing on how the method was formed."}
-  circle_present: {value: "no", rationale: "A self-described atheist; no God-Nature identity in anything read.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "One self-description."}
+  circle_present: {value: "no", rationale: "A self-described atheist; no God-Nature identity in anything read.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) One self-description."}
   reading: "As belief, not finding: form present, no circle. The record does not test H1."
   notes: ""
 
@@ -203,7 +182,7 @@ review:
   data_quality_flags:
     - "Birth date: 19 October 1910 in his autobiography, Britannica and MacTutor; 13 October in the NAS memoir heading."
     - "School start: his autobiography says home education until twelve and Hindu High School 1922–25; Parker says regular school from 1921."
-    - "Resolved by decision P8 (2026-10-02): basis recorded_interview (ceiling 0.7) now covers his own recorded interview words; primary_system and A_locus raised 0.5 → 0.7, mid_basin BELOW_THRESHOLD → false (0.5)."
+    - "Decision P8 (2026-10-02) first raised primary_system and A_locus to 0.7 (recorded_interview) and gave mid_basin false (0.5); the lens audit (batch 3, #19, #20, #25) showed that S5's AIP no-quotation notice brings it under P8's paraphrase limit, so both are back at 0.5 (scholarly_reconstruction) and mid_basin is BELOW_THRESHOLD. AIP's written permission, or a second quotable document (Wali 1991, 1997), would reopen this."
     - "S5 was read through the Wayback Machine copy of the AIP page (the live page redirects to a repository that refused the fetch); its wording was checked on that rendering, not saved locally."
   open_questions:
     - "Read Wali, Chandra (1991), p. 304, and Wali (ed.), S. Chandrasekhar: The Man Behind the Legend (1997), for the atheist statements and the Bhagavad Gita remarks."
@@ -256,7 +235,7 @@ sources:
     citation: "Interview with Dr. S. Chandrasekhar by Kevin Krisciunas, University of Chicago, 6 October 1987. Niels Bohr Library & Archives, American Institute of Physics. Archived copy of the AIP page: https://web.archive.org/web/20150202064758/http://www.aip.org/history/ohilist/4552.html."
     url: "https://web.archive.org/web/20150202064758/http://www.aip.org/history/ohilist/4552.html"
     accessed: 2026-10-02
-    reliability_note: "Official AIP transcript of a tape-recorded interview (as archived in 2015); mostly about Otto Struve. His own speech, not a written text. AIP restricts quotation without permission. Located by topic."
+    reliability_note: "Official AIP transcript of a tape-recorded interview (as archived in 2015); mostly about Otto Struve. His own speech, not a written text. AIP restricts quotation without written permission, so the record paraphrases it and, under P8, it scores nothing on its own (same treatment as Bohr's S7). Located by topic."
     used_for: [basics, childhood, worldview, timing, lane_b, collaborators]
   - id: S6
     type: secondary
@@ -275,7 +254,7 @@ sources:
 
 ## Summary
 
-Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in 1987 that Otto Struve "knew I was an atheist" [S5]. ATHE at 0.7 (his own words in a recorded interview, decision P8); A 4 at 0.7, B 4 at 0.5; C, D, E below threshold; mid_basin false at 0.5 (A ≥ 3).
+Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in a 1987 interview, in passing, that Otto Struve knew he was an atheist [S5, paraphrased]. ATHE at 0.5 (interview; one paraphrase-only interview, decision P8); A 4 at 0.5 (interview) and B 4 at 0.5; C, D, E below threshold; mid_basin below threshold.
 
 ## Life and work
 
@@ -291,7 +270,7 @@ His parents taught him at home until he was about twelve [S3, paragraph 2]. Alge
 
 ## Adult working worldview
 
-The only statement of his own read is from a 1987 AIP interview: asked whether Struve was religious, he said "he knew I was an atheist, and he never brought up the subject with me" [S5]. In the same interview he called "the simple is the seal of the true" a description of the fundamental truths of science [S5]. Scores: A 4 (0.7, recorded interview), B 4 (0.5, mainly Parker's reconstruction); C, D, E below threshold.
+The only statement of his own read is from a 1987 AIP interview, which AIP's notice lets the record paraphrase but not quote: asked whether Struve was religious, he said that Struve knew he was an atheist and never raised the subject with him [S5]. In the same interview he called the maxim that the simple is the seal of the true a description of the fundamental truths of science [S5]. Under decision P8 a paraphrase-only interview cannot score an axis or code on its own, so the code and A stay at 0.5. Scores: A 4 (0.5, interview), B 4 (0.5, mainly Parker's reconstruction); C, D, E below threshold.
 
 ## Heritage (context only)
 
