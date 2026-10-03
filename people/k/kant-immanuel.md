@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #379: 'lived his entire life' now cited to Britannica 'Background and early years' and SEP religion §2.1.1, not SEP §1. #405: early_mathematics 'other' (curriculum only; no source says advanced). #415: wording only; he declines to contest revelation and miracles (AA VI 155; VI 88 n.) rather than accepting them; value unchanged. #390: stray 'ancestor gloss' wording fixed. #420: heading §3.3.1.2 rechecked in the live entry; kept. Bylines: SEP religion now Pasternack and Fugate; Britannica now Bird and Duignan. #416, #456 left (stub-system rule awaits v8). Not reviewed."}
 
 identity:
   id: kant-immanuel
@@ -35,7 +36,7 @@ basics:
     place: {value: "Königsberg, East Prussia", modern_name: "Kaliningrad, Russia", polity_then: "Kingdom of Prussia", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources agree."}
   death:
     date: {value: "1804-02-12", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources agree."}
-    place: {value: "Königsberg", modern_name: "Kaliningrad, Russia", polity_then: "Kingdom of Prussia", certainty: 1.0, cites: [{source: S3, locator: "opening"}], how_known: "Britannica; SEP says he never left the region (§1)."}
+    place: {value: "Königsberg", modern_name: "Kaliningrad, Russia", polity_then: "Kingdom of Prussia", certainty: 1.0, cites: [{source: S3, locator: "opening; 'Background and early years'"}, {source: S2, locator: "§2.1.1"}], how_known: "Britannica gives the death place and says 'Kant lived in the remote province where he was born for his entire life' ('Background and early years'); SEP 'Kant's Philosophy of Religion' says he 'lived his entire life in the city of Königsberg' (S2 §2.1.1). SEP 'Immanuel Kant' §1 does not say so; it has him spend six years as a private tutor 'outside Königsberg' (lens audit #379)."}
   first_lasting_contribution_year: {value: 1755, certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "Universal Natural History and Theory of the Heavens (1755), with what became the nebular hypothesis. The coder's choice; his first book (Living Forces, 1746/1747) was not lasting. The Critique of Pure Reason (1781) gives the same era bucket."}
   era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Königsberg is now Kaliningrad, Russia (S1); Russia is Eastern Europe in data/reference/regions.csv (P3: modern country; the historical polity is in place.polity_then). Flagged because it puts a Prussian in Eastern Europe."}
@@ -49,7 +50,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Transcendental idealism and the critical philosophy (the understanding as source of the general laws of nature; knowledge limited to appearances)", year: "1781", kind: theory, lasting: "foundation of later Kantianism and idealism", certainty: 1.0, cites: [{source: S1, locator: "opening; §§2–3"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
     - {value: "The categorical imperative and the autonomy of the will", year: "1785–1788", kind: "law or principle", lasting: "central in moral philosophy", certainty: 1.0, cites: [{source: S1, locator: "§5"}], how_known: "SEP."}
-    - {value: "Nebular hypothesis of the formation of the solar system", year: "1755", kind: theory, lasting: "ancestor of modern accounts of planet formation", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP; the 'ancestor' gloss is the coder's (flag)."}
+    - {value: "Nebular hypothesis of the formation of the solar system", year: "1755", kind: theory, lasting: "ancestor of modern accounts of planet formation", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP; the 'ancestor' wording in lasting is the coder's (flag)."}
   evidence_of_impact:
     - {value: "Arguably one of the greatest philosophers of all time; his work greatly influenced all subsequent philosophy", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -71,7 +72,7 @@ childhood:
   schooling:
     - {value: "Collegium Fridericianum, a Pietist Latin school (gymnasium) directed by Franz Albert Schultz, the family's pastor", stage: "religious school", years: "1732–1740", certainty: 0.7, cites: [{source: S1, locator: "§1 (ages eight through fifteen)"}, {source: S3, locator: "'Background and early years' (from age eight, eight and a half years; directed by his pastor)"}, {source: S2, locator: "§2.1.1 (directed by Schultz)"}], how_known: "Three sources; the length differs (ages 8–15 vs eight and a half years); years are the coder's arithmetic. That Schultz was the pastor Britannica mentions is the coder's link of S2 and S3 (flag)."}
     - {value: "University of Königsberg (the Albertina): philosophy, mathematics and physics; enrolled as a theological student per Britannica", stage: university, years: "1740–c. 1746", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; the end year is approximate (father's death in 1746 forced him to withdraw, S3)."}
-  early_mathematics: {value: "advanced mathematics", note: "First-year philosophy at the Albertina included mathematics and physics; Britannica says he was 'principally attracted to mathematics and physics'.", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; this is at university (age 16+), not childhood."}
+  early_mathematics: {value: "other", note: "Mathematics and physics in first-year philosophy at the Albertina, from 1740 (age 16): philosophy 'encompassed mathematics and physics' (SEP), and he was 'principally attracted to mathematics and physics' (Britannica). The level he reached is not stated.", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; neither gives a level, so the value is 'other' with a description, as in the Bohr record, not 'advanced mathematics' (lens audit #405). This is at university (age 16+), inside the before-18 window."}
   early_geometric_style_reasoning: {value: "Latin classics at school; Wolffian rationalist philosophy and Newton at university (Knutzen)", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
   early_science_exposure:
     - {value: "Introduced to Newton's work by Martin Knutzen at the Albertina", year: "1740s", age: "16–22", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
@@ -97,7 +98,7 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S5, locator: "AA V 124–125"}, {source: S6, locator: "AA VI 153–155"}, {source: S2, locator: "§3.2; §3.6"}]
     how_known: "His own position is a moral faith: God and immortality as postulates of practical reason, religion as 'das Erkenntniß aller unserer Pflichten als göttlicher Gebote' (AA VI 153), miracles and petition kept out of the maxims of reason. The code that fits is KANT (Kantianism), and KANT is a stub system file, so under the stub rule it cannot be coded."
-    note: "Candidate: KANT (stub). Founders rule conflict: he is the founder of the system the code names, so a reviewer may want KANT at 1.0 once the file is filled (see report method question). Also considered: CLASS_THEISM (no: he rejects the theoretical proofs of God, S2 §3.1.2), DEISM (no: his own 'Deism' means the useless God of transcendental theology, S2 §3.2, and DEISM's do_not_use_when names acceptance of revelation; Kant does not contest revelation, AA VI 155), CHRIST (Pasternack's 'successful Christian apologist' reading, S2 §3.6.1; not coded, because he subordinates church faith to pure rational faith, AA VI 153). Backlog: fill KANT."
+    note: "Candidate: KANT (stub). Founders rule conflict: he is the founder of the system the code names, so a reviewer may want KANT at 1.0 once the file is filled (see report method question). Also considered: CLASS_THEISM (no: he rejects the theoretical proofs of God, S2 §3.1.2), DEISM (no: his own 'Deism' means the useless God of transcendental theology, S2 §3.2. DEISM's do_not_use_when names a person who 'accepts revelation and miracles'; Kant does not accept them either: he declines to contest revelation, AA VI 155, and he does not take belief in miracles into the maxims of reason, 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten', AA VI 88 n. So that clause fits only in part, and the rejection rests on S2 §3.2; lens audit #415), CHRIST (Pasternack's 'successful Christian apologist' reading, S2 §3.6.1; not coded, because he subordinates church faith to pure rational faith, AA VI 153). Backlog: fill KANT."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
     - {code: KANT, reason: "Best fit; not coded because KANT is a stub system file (BELOW_THRESHOLD by rule).", cites: [{source: S5, locator: "AA V 124–125"}, {source: S6, locator: "AA VI 153"}]}
@@ -285,18 +286,18 @@ sources:
   - id: S2
     type: secondary
     kind: encyclopedia
-    author: "Lawrence Pasternack"
+    author: "Lawrence Pasternack and Courtney Fugate"
     year: 2025
-    citation: "Pasternack, Lawrence. \"Kant's Philosophy of Religion.\" Stanford Encyclopedia of Philosophy (substantive revision 13 Oct 2025). https://plato.stanford.edu/entries/kant-religion/."
+    citation: "Pasternack, Lawrence, and Courtney Fugate. \"Kant's Philosophy of Religion.\" Stanford Encyclopedia of Philosophy (substantive revision 13 Oct 2025). https://plato.stanford.edu/entries/kant-religion/."
     url: "https://plato.stanford.edu/entries/kant-religion/"
     accessed: 2026-10-02
-    reliability_note: "Scholarly reference work; §1, §2.1.1, §3.2, §3.3.1, §3.6 read. Cited by section."
+    reliability_note: "Scholarly reference work; §1, §2.1.1, §3.2, §3.3.1 (with §3.3.1.2, 'Only as a mere symbol'), §3.5.1, §3.6 read (revision of 13 Oct 2025; the §3.3.1.2 heading was rechecked in the live entry on 2026-10-02). Cited by section."
     used_for: [contribution, worldview, review]
   - id: S3
     type: tertiary
     kind: encyclopedia
-    author: "Otto Allen Bird"
-    citation: "Bird, Otto Allen. \"Immanuel Kant.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Immanuel-Kant."
+    author: "Otto Allen Bird and Brian Duignan"
+    citation: "Bird, Otto Allen, and Brian Duignan. \"Immanuel Kant.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Immanuel-Kant."
     url: "https://www.britannica.com/biography/Immanuel-Kant"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
@@ -385,3 +386,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Circle abse
 ## Research log
 
 - 2026-10-02: Read SEP "Immanuel Kant" (Rohlf), SEP "Kant's Philosophy of Religion" (Pasternack), Britannica (Bird, first page), and the Bonner Kant-Korpus pages AA III 19, 166; V 124–125; VI 84–89, 153–155, 194–196. Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Re-fetched the live SEP "Kant's Philosophy of Religion" (rev. 13 Oct 2025) to check §3.3.1.2, and re-read Britannica "Background and early years" and Religion AA VI 88 n. and VI 155.
