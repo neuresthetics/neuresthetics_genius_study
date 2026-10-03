@@ -226,7 +226,7 @@ review:
     - "Borderline on the stage-2 date window: main work 1946–49; included by owner decision (2026-10-02)."
     - "Britannica read as its main page only."
   open_questions:
-    - "Read his AIP oral history and a printed edition of his letters (for the 1967 Sunday-school letter) for first-person statements on religion in a checkable source."
+    - "Find a printed edition of his letters (for the 1967 Sunday-school letter) or a published interview for first-person statements on religion. His AIP oral history carries a no-quotation notice, so under P8 it cannot score an axis or code on its own and must not be quoted without permission (interview)."
 
 sources:
   - id: S1
@@ -316,7 +316,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
-- AIP oral history; the 1967 letter in a printed edition.
+- The 1967 letter in a printed edition; a published interview. (The AIP oral history (interview) forbids quotation without permission, so it cannot score on its own.)
 
 ## Research log
 
