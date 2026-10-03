@@ -1,6 +1,6 @@
 # Coding guide
 
-How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and 2026-10-02, or decided as v8's picks on 2026-10-02 where Jason delegated the method detail (P9, P11–P28, S7), and are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
+How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and 2026-10-02, or decided as v8's picks on 2026-10-02 where Jason delegated the method detail (P9, P11–P30, S7), and are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
@@ -28,12 +28,12 @@ From the v7.1 data book, section 5 "Coding rules" (`tables[3]` in the combined J
 
 How the rules map onto fields:
 
-- **Unit of coding** → `worldview.*` describes the adult working years (`worldview.working_years`). Childhood religion goes in `childhood.family_religion`, and ethnic or communal background goes in `heritage.*`. Neither may decide a worldview code.
+- **Unit of coding** → `worldview.*` describes the adult working years (`worldview.working_years`). The working years run from the first to the last listed lasting contribution (P29), dated as in §8, and never end after the person's death (P30). `timing.major_work_period` is the same span. Childhood religion goes in `childhood.family_religion`, and ethnic or communal background goes in `heritage.*`. Neither may decide a worldview code.
 - **Heritage column** → `heritage.*`, with the fixed reminder "context only — never an outcome and never a worldview code". Einstein would be coded PANT, with Jewish heritage recorded in `heritage`, not in `worldview`.
 - **Split theisms** → choose among `CLASS_THEISM`, `CLTHEI`, and `CHRIST`/`ISLAM`/`JUDA` explicitly, and list the ones you rejected in `worldview.candidate_codes_considered` with reasons.
 - **Pantheism** → `PANT` only for the circle (see §5).
 - **Certainty** → `certainty` together with `basis` on every worldview code and LIO axis score (see §3).
-- **Multiple systems** → `primary_system` is the dominant working metaphysics. `secondary_system` is used only if the person published in two systems. Otherwise it stays `TODO`, or `UNKNOWN` with how_known "no second system".
+- **Multiple systems** → `primary_system` is the dominant working metaphysics. `secondary_system` is used only if the person published in two systems. Otherwise it is `UNKNOWN` with how_known "no second system" (P29; `TODO` only before research), and any evidence for a second system stays in the notes.
 - **Founders** → code the system they founded.
 - **Church membership** → membership goes in `worldview.nominal_affiliations`. It is never enough on its own for a code. You need the person's writings.
 - **Do not code yet / below 0.5** → `BELOW_THRESHOLD`. The person stays on the roster.
@@ -84,19 +84,31 @@ A single private letter is not "consistent private letters". Use 0.5 if a schola
 
 **Contested readings** (lens audit, 2026-10-02). If the record itself names a plausible alternative score or code (in a rationale, how_known, candidate list or coder note), certainty is at most 0.7, whatever the source type. Name the alternative in the rationale. Certainty may also sit below the basis ceiling when the evidence speaks to the axis only indirectly; say why in `how_known`. Certainty never goes above the ceiling. This applies to person and system LIO axes and to `primary_system`. `mid_basin` certainty is at most the lower certainty of the axes its branch uses (decision P10): `false` via A_locus ≥ 3 uses A_locus only; `true`, and `false` via A_locus ≤ 1 with B_cause ≤ 1, use both. Apply the scale the same way across files: the same pattern of evidence gets the same score (for example, two domains each with its own authority is D 2 for every person).
 
+Rules for worldview evidence (decisions P29 and P30, v8's picks, 2026-10-02):
+
+- **Same evidence, same certainty** (P29) applies only when the same passage bears on the same point (P30). Each axis is still scored on its own (§6), so atheism alone does not settle A: Turing's ATHE at 0.5 with A `BELOW_THRESHOLD` is consistent.
+- **mid_basin with alternatives** (P30). The P10 cap uses the certainty that the tested condition holds. If the axis value and every named alternative meet the condition (B 3 with alternative B 4, both B ≥ 3), use the certainty of the evidence for the condition itself (for Darwin, his published lawfulness, never disowned), not the certainty of the exact value.
+- **Hedged self-reports** (P29). A self-report hedged in its own words ("as far as I can remember") stays at 0.5 and does not reach the 0.7 cap for retrospective self-reports (§5).
+- **Later disavowal** (P29). Public wording the person later disowned supports at most 0.5. Cite the disavowal.
+- **Tense in retrospective narrative** (P30). Present tense describes the time of writing, and past tense describes the past. Read a sentence the same way on every axis: if a sentence is time-of-writing for B, it is for C too.
+- **Antinomy layouts** (P29). A Thesis column is not the person's own view unless the text endorses it. Discount it the same way on every axis.
+
 **Other facts** (dates, places, schooling, contributions):
 
 | certainty | meaning | typical evidence |
 |---|---|---|
 | 1.0 | established | Two independent reliable sources that agree, with no known dispute, or a primary document (a birth, baptism or death record, or the person's own text) (decision P15). |
 | 0.7 | probable | One reliable source, or sources that agree but depend on each other, or sources that differ only on name order or name form (P15). |
-| 0.5 | contested, or inferred | Reliable sources disagree: put the competitors in `alternatives`, each with its own cite, and name the alternative (P25). Or the value is inferred from the person's work or conduct with no direct statement, and `how_known` says so and from what (P24). |
+| 0.5 | contested, or inferred | Reliable sources disagree (a real dispute, below): put the competitors in `alternatives`, each with its own cite, and name the alternative (P25). Or the value is inferred from the person's work or conduct with no direct statement, and `how_known` says so and from what (P24). |
 
 Rules for the table (decisions P15, P24, P25, v8's picks, 2026-10-02):
 
 - One reliable source gives at most 0.7, however well known the fact. A primary document read as printed in a secondary work (a parish register entry in a biography's appendix) counts as primary; `how_known` says "primary document printed in S#".
 - When a 1.0 value rests on two sources but a detail in it rests on one, put the detail in its own note at 0.7, or cap the whole field at 0.7.
+- **A real dispute** (P30) is when reliable sources give different values for the same event and both can't be true. That gives 0.5, with the alternative named. If the values may refer to different events (two sources naming different tutors), it is not a dispute: record each as its own entry at its own certainty (0.7 for one source each; P29).
+- A source that draws on another (MacTutor's Riemann biography on Dedekind's Lebenslauf) is not independent of it, so the pair gives 0.7 (P29). A friend's memoir is not a primary document.
 - Derived fields take the lowest certainty of their inputs: `era_bucket` from `first_lasting_contribution_year` (unless every candidate year falls in the same bucket), `timing.age_at_first_lasting_contribution` from the birth date and that year, `region_of_birth` from the birth place.
+- **Ages** (P30). Every age field is event year − birth year, with no month adjustment. `python3 scripts/recompute_ages.py --check` lists any age that differs.
 - The validator warns on a non-worldview 1.0 that cites one non-primary source.
 
 Certainty is about the claim, not the source. A primary letter can support only 0.7 for a worldview, because it is private.
@@ -137,7 +149,7 @@ Hard cases:
   - Write down why the others were rejected.
 - **DEISM needs the rejection of revelation** (decision P27). DEISM's use_when asks for a creator known by reason and the rejection of revelation, miracles and church authority as sources of religious knowledge. Someone who does not reject revelation as a source of truth (who accepts it, or declines to contest it) is not DEISM, however rational their theology.
 - **Nominal vs working.** Many 19th-century scientists are "CHRIST-nominal / AGNOS-working" (v7.1). Code the working worldview, and record the nominal one in `nominal_affiliations`.
-- **Changes over life.** Code the worldview of the working years, and list documented shifts in `worldview.changes_over_life`. If the major work falls in a different phase from later life, say so in `timing.worldview_during_major_work`. `primary_system` and the LIO axes describe the same period: the worldview during the major work, that is, the working years (decision P20). Later shifts go in `worldview.changes_over_life`, not in the code or the scores. A retrospective self-report about an earlier period (an autobiography or late letter describing what the person believed decades before) is capped at 0.7 for that period.
+- **Changes over life.** Code the worldview of the working years, and list documented shifts in `worldview.changes_over_life`. If the major work falls in a different phase from later life, say so in `timing.worldview_during_major_work`. `primary_system` and the LIO axes describe the same period: the worldview during the major work, that is, the working years (decision P20). Later shifts go in `worldview.changes_over_life`, not in the code or the scores. A retrospective self-report about an earlier period (an autobiography or late letter describing what the person believed decades before) is capped at 0.7 for that period, or 0.5 if hedged (P29). There is one period per record (P29): the working years, from the first to the last listed lasting contribution, never past death (P30). `primary_system` and every axis use that span. Statements from outside it count only as retrospective self-reports or go in `changes_over_life`.
 - **Founders.** Code the founded system, even where later scholastic versions diverge.
 
 ## 6. The LIO axes
@@ -164,14 +176,15 @@ Axis poles from the v7.1 data book, section 4 "LIO axes (person-level)", verbati
 
 Rules:
 
-- Score each axis separately from the person's own words. A code does not set the axes: two CHRIST people can differ on B.
+- Score each axis separately from the person's own words. A code does not set the axes: two CHRIST people can differ on B. The same-evidence rule (§3) does not change this: one passage gets one certainty only on the same point (P30).
 - Every score needs `basis` and `certainty` (same scale as worldview codes), at least one cite, and a `rationale` that names the pole features present.
 - If the evidence does not reach 0.5, use `BELOW_THRESHOLD`. If the sources read say nothing on the axis, use `UNKNOWN` (P19, §4).
-- **Working science and the axes** (P19). A scientist's working science bears on E's first question (the same laws everywhere), so E with no statement stays `BELOW_THRESHOLD`: "not scored from working science alone". It does not bear on D (revelation against observation), so D with no statement is `UNKNOWN`.
+- **Who is a scientist** (P30, replacing P29's list of names). Anyone with a listed lasting contribution that is a theory or result about physical or natural systems. Noether's theorem (symmetries and conservation laws in physics) qualifies, so Noether is a scientist, as Gauss and von Neumann are. Apply it the same way to B and E (P29).
+- **Working science and the axes** (P19). A scientist's working science bears on E's first question (the same laws everywhere), so E with no statement stays `BELOW_THRESHOLD`: "not scored from working science alone". It does not bear on D (revelation against observation), so D with no statement is `UNKNOWN`. P29 and P30 do not change this: for a scientist, working science supports B at 0.5 (`inference_from_work`, P24), but on E it still answers only the first question.
 - **A_locus when belief changed** (P20). Score A, like `primary_system` and the other axes, for the worldview during the major work (the working years; §5, Changes over life), and record the change in notes and `changes_over_life`. A retrospective self-report about an earlier period is capped at 0.7. An agnostic with no stated locus view gets A `BELOW_THRESHOLD`; an explicit denial of a personal, intervening God is scored.
 - **Anchor sentences** (v8's picks, decision P27). The scale says 2 is "mixed, or the person holds both in different domains" and 3 is "leans LIO: the LIO pole with a stated, limited exception". §3 adds that "two domains each with its own authority is D 2 for every person". Where that left the line unclear:
   - **D 2** means two domains, each with its own authority. Observation and reason decide questions of fact about nature. Revelation, faith or religious tradition has the final say in another domain (doctrine, the divine, or the ends of action and ethics). Neither may overrule the other. If religion's say shrinks to one stated dogma or point, that is a stated, limited exception: D 3. If religion keeps no say in any domain of its own, D is 4.
-  - **B 3** means a stated general lawfulness of nature with one stated, limited exception (for example, accepted miracles as rare past events, or a creation act).
+  - **B 3** means a stated general lawfulness of nature with one stated, limited exception (for example, accepted miracles as rare past events, or a creation act). The exception may be a free will not bound by natural law, whether it is placed in nature or outside it (P30): Descartes' free mind and Kant's noumenal freedom both give B 3 as the value, not as an alternative.
   - **B 2** means lawfulness with exceptions that are not limited (miracles or special providence as a live, recurring part of how events go), or lawfulness that covers only part of nature.
 - Put quotations that bear on an axis in `worldview.statements` and tag them with `axes`.
 - **E_scope is scored on the world's order** (decision P7, 2026-10-02). E asks two things about this world:
@@ -192,10 +205,11 @@ Rules:
   - otherwise `BELOW_THRESHOLD` if a needed axis is `BELOW_THRESHOLD` or scored only at 0.5, under the test's 0.7 bar; the note says which.
 
 Notes:
-- Score `B_cause` on the person's account of nature (P6), and say so in its `rationale`. B needs a statement about nature or the physical world (decision P16). For a scientist that is their working science (at 0.5, basis `inference_from_work`, when there is no statement). For a mathematician, pure-mathematics Platonism or a view on mathematical truth alone gives `BELOW_THRESHOLD`; physics-facing work is scored only with an explicit remark on nature. For a theologian or philosopher it is their account of the natural order: miracles and grace count against B only where they reach into it. If a theology-wide reading would differ, give it in the rationale. Someone may accept scriptural miracles and still allow no exemptions in nature.
+- Score `B_cause` on the person's account of nature (P6), and say so in its `rationale`. B needs a statement about nature or the physical world (decision P16). For a scientist (P30, above) that is their working science (at 0.5, basis `inference_from_work`, when there is no statement; P24). A mathematician with no listed lasting contribution about physical or natural systems needs a statement about nature: pure-mathematics Platonism or a view on mathematical truth alone gives `BELOW_THRESHOLD`, and other physics-facing work counts only with an explicit remark on nature. For a theologian or philosopher it is their account of the natural order: miracles and grace count against B only where they reach into it. If a theology-wide reading would differ, give it in the rationale. Someone may accept scriptural miracles and still allow no exemptions in nature.
 - "First-rank" is not part of the test. Apply F ≥ 3 alongside it.
 - The scale has only 1.0 / 0.7 / 0.5, so v7.1's "certainty ≥ 0.6" means ≥ 0.7.
 - Deists (DEISM) usually pass. This is a stated consequence of the test, not an exception (see METHOD §1.1).
+- When a named alternative is on the same side of the test as the value, the cap uses the certainty of the condition, not of the exact value (P30; §3).
 - Leave `mid_basin` as `TODO` until both axes are scored. Being in the first pool is not evidence of mid-basin status.
 
 ## 7. Quotations
@@ -211,7 +225,7 @@ Notes:
 - **Text Creation Partnership transcriptions** (decision P11, v8's pick, 2026-10-02). EEBO-TCP, ECCO-TCP and Evans-TCP texts are scholarly keyed transcriptions of a named printed edition, tied to its page images, so they count as authoritative copies under the rule above and the 0.7 cap does not apply. Mark quotes read in them `primary transcription`. Cite the TCP id (for example TCP A28982) together with the original edition (printer, place, year), use the printed page numbers the TCP records, keep its spelling, and do not quote across a gap the TCP marks.
 - Reported speech (someone else's memory of what the person said) is never a written profession.
 - **Kinds of text** (decisions P18, P28, schema 1.3). The kind does not change the basis table (§3).
-  - `published letter`: a letter written for circulation or printed by the author (Leibniz to Clarke). It counts like a published work (`written_profession`).
+  - `published letter`: a letter printed in the person's lifetime, or written for circulation, as shown by the person's own statement or by copies circulated in their lifetime (Leibniz to Clarke; P28, P30). It counts like a published work (`written_profession`).
   - `autobiography`: a life the person wrote. One the person published counts as `written_profession`; an unpublished one takes the private ceiling.
   - `unpublished manuscript`: a finished or draft text the person did not publish (Newton's Keynes manuscripts, the Monadology, the Pensées, which are notes, not letters). Private ceiling.
   - `document in own hand`: a form, questionnaire, prayer or note in the person's hand that is neither a letter nor a manuscript work. Private ceiling.
@@ -224,9 +238,9 @@ Notes:
 - **Source rules** (decision P26, v8's picks, 2026-10-02):
   - A quote reached through SEP or any other secondary source must be checked against the primary text before it is cited as the person's words. Until then it is marked `secondary quotation`, its note says "primary check pending", and it cannot support 1.0.
   - Britannica's AI-generated "Top Questions" boxes cannot be cited. Cite the signed article body instead, or another source.
-  - Spinoza's Ethics: the project standard is the Cambridge edition edited by Matthew J. Kisner. A field that rests on another translation or a web copy stays capped at 0.7 under the web-copy rule above until it has been checked against Kisner. Its how_known (or note) says "Kisner check pending" until then, and the note is removed when the check is done.
+  - Spinoza's Ethics: the project standard is the Cambridge edition edited by Matthew J. Kisner. A field that rests on another translation or a web copy stays capped at 0.7 under the web-copy rule above until it has been checked against Kisner. Its how_known (or note) says "Kisner check pending" until then, and the note is removed when the check is done. The cap covers quotations and locators from the Ethics, not bibliographic facts confirmed in the Latin original: SEP plus the Latin Gutenberg title page can give 1.0 (P30).
   - Spinoza's Theological-Political Treatise (TTP): locators give the chapter and the standard (Bruder) section numbers, for example "TTP ch. 15, §§ 5–6 (Bruder)". This is preferred to the sentence numbers of a Gutenberg copy.
-  - Gutenberg locators may be used only with a "Gutenberg" label (for example "Gutenberg ch. 6 (40)") and a TODO in the note to map them to a printed edition (for the TTP, Bruder sections are preferred).
+  - Gutenberg locators may be used only with a "Gutenberg" label (for example "Gutenberg ch. 6 (40)") and a TODO in the note to map them to a printed edition (for the TTP, Bruder sections are preferred). Every field that cites a Gutenberg locator carries its own TODO, so a sweep can find each one (P30).
   - When a secondary source mislabels a primary locator (SEP's "Pr II 62" for Principles II.42), cite the primary locator and note the error.
   - Long s (ſ) is normalised to "s" silently, with one coder_notes line saying so.
 - **Recorded interviews** (decision P8, 2026-10-02). A recorded or transcribed interview in the person's own words counts as their own words, with basis `recorded_interview` and a ceiling of 0.7; quote it with kind `recorded interview`. One interview is enough: the single-letter rule does not apply, and a remark made in passing gets no further cap as long as it is in the first person. The usual caps still apply on top (a named alternative, §3; indirect evidence). What other people say in an interview about the person (a widow, a colleague) is reported speech, not the person's words. If only a paraphrase can be published (for example under an AIP no-quotation notice), the interview cannot score an axis or code on its own; it may support a score that already rests on other evidence.
@@ -238,10 +252,13 @@ Notes:
 **Identity.** `identity.roster` is a copy of the roster row, and the validator checks it. If the roster looks wrong, raise it in `review.data_quality_flags` and fix it through `curated_aliases.csv`, not in the person file.
 
 **Basics.**
-- Dates follow the conventions in [DATA_DICTIONARY.md](DATA_DICTIONARY.md#1-conventions). When sources disagree, give the best-supported value, put the others in `alternatives`, and set certainty 0.5 if the dispute is real.
+- Dates follow the conventions in [DATA_DICTIONARY.md](DATA_DICTIONARY.md#1-conventions). When sources disagree, give the best-supported value, put the others in `alternatives`, and set certainty 0.5 if the dispute is real (the test is in §3, P30).
 - `first_lasting_contribution_year` (decisions P13 and P23, v8's picks, 2026-10-02): P13 is the rule, and no coder-chosen "defining work" is allowed. The year is the year of the earliest listed item in `contribution.lasting_original_contributions` that is itself a lasting contribution. Don't prune the list to move the year. An item can be removed only if it isn't lasting, and the record states the reason. Early work that is not listed (a doctoral thesis, early papers) can set the year only if it is added to the list with a source and is itself lasting (see **Contribution** below).
 - The list need not be complete, but it must include the earliest lasting contribution that the sources read name (decision P17).
 - When an item is dated as a range, use the range's **start** year (decision P12, v8's pick, 2026-10-02): penicillin "1942–1945" gives 1942. If the sources do not date the start (a decade such as "1920s", or a cumulative "by 1921"), do not guess: write the item's `year` as the sources give it; the item sets the first-lasting year only once a source dates its start, and the how_known says the year might be earlier. Recompute `era_bucket` and `timing.age_at_first_lasting_contribution` whenever the year changes.
+- **Dating a contribution** (P30, replacing P29's "first publication"). Use the year of the person's earliest documented public statement of the result: in print (the full work, a printed abstract, or a printed notice that states the result, such as Gauss's 17-gon notice of 1796), a documented public lecture or reading, or a formal submission. Darwin's coral-reef theory is 1837 (read to the Geological Society on 31 May 1837).
+  - Classified work kept out of print by secrecy (von Neumann's implosion work, Turing at Bletchley) is dated by its documented work years. This is the only exception; other unpublished work is dated by the rule above.
+  - Posthumous publication: date the item by its last documented act in life (a submission, a lecture, a dated manuscript), or by the death year if there is none. Riemann's 1854 Habilitation lecture is 1854.
 - `era_bucket` (decision P2) follows from that year. A year on an edge goes to the later bucket: 1600 is `1600 to 1749`, 1950 is `1950 on`. Birth year stays in `basics.birth.date`, so a birth-year version can be computed for a sensitivity check:
 
   | bucket | years |
@@ -265,12 +282,15 @@ Notes:
 
 **Childhood.**
 - Record facts only. `early_mathematics` is the highest level reached before about 18.
+- Childhood religious schooling is evidence for the family and heritage fields only. It is off-point for the person's own axes A–E (P29).
 - `early_geometric_style_reasoning` records documented exposure to definition-to-consequence reasoning (Euclid, formal logic, proof). It does not record whether this "worked". That is Lane B.
 
 **Timing.**
+- `timing.major_work_period` and `worldview.working_years` give the same span: the first to the last listed lasting contribution (P29), never past death (P30). When the end is a range or a bound, use the latest year the sources allow: the end of a range (1927–1933 gives 1933), or one year inside an exclusive bound ("before 1831" gives 1830). Note the bound (P30).
 - `lio_views_relative_to_major_work` is one of: `held from childhood`, `before major work`, `during major work`, `after major work`, `no LIO-type views found`, `unclear`.
 - Base it on dated evidence (`first_evidence_of_lio_type_views` with year and age).
 - An **LIO-type view** (anchor, v8's pick, P27) is a dated statement of the person's own that is scored, or used as evidence for a score, at 3 or 4 on any LIO axis. A score inferred from working science with no statement is not an LIO-type view, so `first_evidence_of_lio_type_views` stays `UNKNOWN` for it.
+- Before setting the year of `first_evidence_of_lio_type_views`, check the person's earliest major works up to the first quote found (P30). A quote found in a secondary source counts once its locator is checked against the primary. If the earlier works weren't read, cap the year's certainty at 0.5 and add the note "earlier works not read".
 
 **Lane B.**
 - `geometric_form_present` and `circle_present` are `yes` / `partly` / `no` / `unclear`. `form_acquired` is `childhood or adolescence` / `adulthood, before major work` / `through the profession` / `unclear`.
@@ -284,6 +304,7 @@ Notes:
 **Review.**
 - `data_quality_flags` lists every source conflict you found, even small ones.
 - `open_questions` lists what the next run should do.
+- **Ruling questions** (P30). Send a question to v8 only if the answer could change the record's `primary_system`, A, B or `mid_basin` value (not just a certainty) or the 8 passes. Decide everything else yourself: take the more conservative option (the lower certainty, or `UNKNOWN` over a guess), log it in `worldview.coder_notes` as "coder's call", and list it in the handoff. Lens reports such items as notes, not ruling questions. Each batch gets one blind lens run on the changed claims, and a second only if the first finds a FAIL.
 
 ## 9. Writing style
 

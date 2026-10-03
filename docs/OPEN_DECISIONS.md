@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P29, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P30, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. P14–P28 came out of the two stage 3 lens audits (stage 3-a and 3-b, 2026-10-02) and were decided the same day as v8's picks, with the parent agent's rulings. P29 came out of the lens run on the stage 3-b rulings and was decided the same day as v8's pick. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. P14–P28 came out of the two stage 3 lens audits (stage 3-a and 3-b, 2026-10-02) and were decided the same day as v8's picks, with the parent agent's rulings. P29 came out of the lens run on the stage 3-b rulings and was decided the same day as v8's pick. P30 came out of lens's runs on the two rulings packets (v8.a and v8.b's P29) and was decided the same day as v8's pick; it also corrects one P29 date and replaces P29's list of scientists. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -54,19 +54,20 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P26 | Sources: Spinoza's Ethics standard is Kisner (0.7 until checked; "Kisner check pending"); TTP by chapter and Bruder section (Gutenberg only with a label and a TODO); Britannica's AI "Top Questions" boxes cannot be cited; secondary-reached quotes must be checked against the primary text | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 13) |
 | P27 | Coding: DEISM requires rejecting revelation as a source of truth; anchor sentences for "LIO-type view", D 2 and the B 2/B 3 line | medium | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 14) |
 | P28 | Kinds: letter written for circulation is "published letter" (counts as published work); unpublished finished treatise and the Pensées are "unpublished manuscript" | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 15) |
-| P29 | Stage 3-b follow-ups: §1 governs secondary_system; hedged self-reports stay at 0.5; a later disavowal caps the disowned wording at 0.5; contributions dated by first publication; one period per record (first to last listed lasting contribution); "scientist" = a listed lasting contribution in natural science, same for B and E; derived sources are not independent | medium | DECIDED (v8's pick) 2026-10-02 (from the v8.b rulings audit) |
+| P29 | Stage 3-b follow-ups: §1 governs secondary_system; hedged self-reports stay at 0.5; a later disavowal caps the disowned wording at 0.5; contributions dated by first publication (replaced by P30's dating rule); one period per record (first to last listed lasting contribution); "scientist" = a listed lasting contribution in natural science, same for B and E (test refined by P30); derived sources are not independent | medium | DECIDED (v8's pick) 2026-10-02 (from the v8.b rulings audit) |
+| P30 | Stage 3 rulings round 3: corrects P29's coral-reef date to 1837; contributions dated by the earliest documented public statement (classified and posthumous work, period ends); age = event year − birth year; real-dispute test; first LIO-type view checks the earliest works; tense rule; same-evidence rule only for the same point; mid_basin cap with alternatives; scientist = a lasting theory or result about physical or natural systems (Noether is one); Kisner cap scope; published letter; B 3's free-will exception; one Gutenberg TODO per field; ruling questions only for primary_system, A, B, mid_basin or the passes | medium-high | DECIDED (v8's pick) 2026-10-02 (from lens's runs on the v8.a and v8.b rulings packets) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P28 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8–P30 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 44 items, in id order (P6–P29 are placed after P5, S7 after S6).
+All 45 items, in id order (P6–P30 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -643,15 +644,42 @@ Applied in the schema (1.3), DATA_DICTIONARY and CODING_GUIDE §7. None of the 3
 - **secondary_system:** CODING_GUIDE §1 governs. A secondary system needs published work in two systems; otherwise it is UNKNOWN, and any evidence stays in the notes.
 - **Hedged self-reports:** a self-report hedged in its own words ("as far as I can remember") stays at 0.5 and does not reach P20's 0.7 cap. The same evidence gets the same certainty on every field it supports (primary_system and A together).
 - **Later disavowal:** when the person later disowns their own public wording (Darwin to Hooker, 1863: "truckled to public opinion"), that wording supports at most 0.5. The disavowal itself is cited.
-- **Dating a contribution:** a contribution is dated by its first publication. A dated public reading counts as publication only if it is documented. Darwin's coral-reef theory: 1839 Journal (p. 557), and this is the listed item. Era unchanged.
+- **Dating a contribution:** a contribution is dated by its first publication. A dated public reading counts as publication only if it is documented. Darwin's coral-reef theory: 1837, read to the Geological Society on 31 May 1837 with abstracts printed that year, and this is the listed item. Era unchanged. (Corrected in P30: this bullet first gave 1839, from the Journal, p. 557. P30 rule 1 now replaces the "first publication" rule.)
 - **One period per record (P20):** the period runs from the first to the last listed lasting contribution. Every axis and primary_system use that span. Statements from outside it count only as retrospective self-reports (0.7 cap, or 0.5 if hedged) or go in changes_over_life.
-- **Who is a scientist (P16, P19, P24):** anyone with a listed lasting contribution in natural or physical science, applied the same way to B and E. Working science can then support B and E at 0.5 as inference_from_work. A pure mathematician with no such contribution needs a statement about nature. Gauss (astronomy, geodesy, magnetism) and von Neumann (quantum mechanics) are scientists; Noether is not.
+- **Who is a scientist (P16, P19, P24):** anyone with a listed lasting contribution in natural or physical science, applied the same way to B and E. Working science can then support B and E at 0.5 as inference_from_work. A pure mathematician with no such contribution needs a statement about nature. Who counts is now set by P30 rule 11 (a listed lasting contribution that is a theory or result about physical or natural systems), which replaces the names first given here.
 - **P15:** no exception lets a single source give 1.0.
 - **Source independence:** a source that draws on another (MacTutor's Riemann biography on Dedekind's Lebenslauf) is not independent of it, so the pair gives 0.7.
 - **Two sources naming different people** (Fekete and Fejér as tutors) are not a P25 conflict. Each name gets its own entry at 0.7.
 - **Antinomy layouts:** a Thesis column is not the person's own view unless the text endorses it. It is discounted the same way on every axis.
 - **Childhood religious schooling** is evidence for the family and heritage fields only. It is off-point for the person's own axes A–E.
-- **Answers first given only inside records**, now recorded here: Riemann's A at 0.5 on the antinomy layout (consistent with the antinomy rule above); fields resting only on Dedekind's Lebenslauf at 0.7 (it is a friend's memoir, not a primary document); Noether's E UNKNOWN (no statement and no listed natural-science contribution).
+- **Answers first given only inside records**, now recorded here: Riemann's A at 0.5 on the antinomy layout (consistent with the antinomy rule above); fields resting only on Dedekind's Lebenslauf at 0.7 (it is a friend's memoir, not a primary document); Noether's E UNKNOWN (no statement and no listed natural-science contribution; superseded by P30 rule 11, under which Noether is a scientist and her B and E follow P24).
+
+### P30. Stage 3 rulings round 3
+**DECIDED (v8's pick, 2026-10-02)**, from lens's runs on the v8.a rulings packet (34a73c4) and the v8.b P29 packet (e930597). Applied in CODING_GUIDE §3, §5–8, DATA_DICTIONARY §1 and METHOD. Rule 5 was applied by script to the 31 records outside stage 3 (27 age values in 16 records; every change is in `reports/p30_age_changes.csv`). The 12 stage 3 records are for their coders.
+
+**Correction to P29.** Darwin's coral-reef theory dates to 1837. It was read to the Geological Society on 31 May 1837, and abstracts were printed in Proc. Geol. Soc. 2: 552–554 and in the Athenaeum (17 June 1837) (Coral Reefs, p. 4 footnote). First lasting year 1837, age 28, era 1750–1849 (unchanged). P29's "first publication" rule is replaced by rule 1 below.
+
+Dating and periods:
+- **1. Dating a contribution.** Use the year of the person's earliest documented public statement of the result. That can be in print (the full work, a printed abstract, or a printed notice that states the result, such as Gauss's 17-gon notice of 1 June 1796 in the Intelligenzblatt), a documented public lecture or reading, or a formal submission. So Gauss's year is 1796, if the 17-gon is a listed lasting contribution.
+- **2. Classified work** kept out of print by secrecy (von Neumann's implosion work, Turing at Bletchley) is dated by its documented work years. This is the only exception. Other unpublished work is dated by rule 1.
+- **3. Posthumous publication.** Date the item by its last documented act in life (a submission, a lecture, a dated manuscript). If there is none, use the death year. A period never ends after death (CODING_GUIDE §1, Unit of coding). Riemann's 1854 Habilitation lecture is dated 1854.
+- **4. Period end with a bound or a range.** Use the latest year the sources allow: the end of a range (Noether, 1927–1933, gives 1933), or one year inside an exclusive bound ("before 1831" gives 1830). Note the bound.
+- **5. Age convention.** Age = event year − birth year, with no month adjustment. This applies to every age field in every record. `scripts/recompute_ages.py` recomputes them.
+
+Evidence:
+- **6. A real dispute (P25 and CODING_GUIDE §8).** A dispute is real when reliable sources give different values for the same event and both can't be true. That gives 0.5, with the alternative named. If the values may refer to different events, it is not a dispute: record each as its own entry at its own certainty, as with the tutors in P29. Spinoza #5 and Pascal #67 are to be fixed under this test.
+- **7. First LIO-type view (P27).** Before setting the year, the coder checks the person's earliest major works up to the first quote found. A quote found in a secondary source counts once its locator is checked against the primary. If the earlier works weren't read, the year's certainty is capped at 0.5, with the note "earlier works not read". This covers Kant (check 1755 and 1781) and Descartes (check SEP's 1629 quote).
+- **8. Tense in retrospective narrative.** Present tense describes the time of writing, and past tense describes the past. A sentence is read the same way on every axis: if Darwin p. 87 is time-of-writing for B, it is for C too.
+- **9. Same evidence, same certainty** (P29) applies only when the same passage bears on the same point. Each axis is still scored separately (CODING_GUIDE §6). Atheism alone doesn't settle A, so Turing's ATHE at 0.5 with A `BELOW_THRESHOLD` is consistent.
+- **10. mid_basin with alternatives.** The cap uses the certainty that the tested condition holds. If the value and every named alternative meet the condition (B 3 and alternative B 4 both meet B ≥ 3), use the certainty of the evidence for the condition itself (for Darwin, his published lawfulness, never disowned), not the certainty of the exact value.
+- **11. Who is a scientist** (replaces P29's names). A scientist is anyone with a listed lasting contribution that is a theory or result about physical or natural systems. Noether's theorem (symmetries and conservation laws in physics) qualifies, so Noether is a scientist, and her B and E follow P24, as von Neumann's and Gauss's do.
+- **12. Kisner cap (P26)** applies to quotations and locators from the Ethics, not to bibliographic facts confirmed in the Latin original. SEP plus the Latin Gutenberg title page can give 1.0 (Spinoza #17).
+- **13. Published letter (P28, general).** A letter counts as published work if it was printed in the person's lifetime, or if it was written for circulation, as shown by the person's own statement or by copies circulated in their lifetime.
+- **14. B 3's one exception (P27)** includes a free will not bound by natural law, whether it is placed in nature or outside it. Descartes' free mind and Kant's noumenal freedom both count, so Kant is B 3 as the value, not as an alternative.
+- **15. Gutenberg TODO (P26).** Every field that cites a Gutenberg locator carries its own TODO, so a sweep can find each one.
+
+Process:
+- **16. Ruling questions.** A question goes to v8 only if the answer could change a record's `primary_system`, A, B or `mid_basin` value (not just a certainty) or the 8 passes. Coders decide everything else themselves: they take the more conservative option (the lower certainty, or UNKNOWN over a guess), log it in `coder_notes` as "coder's call", and list it in the handoff. Lens reports such items as notes, not ruling questions. Each batch gets one blind lens run on the changed claims, plus a second run only if the first finds a FAIL.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

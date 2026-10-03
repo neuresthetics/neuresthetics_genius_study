@@ -162,6 +162,7 @@ Fill each required `##` section in plain prose, with inline cites `[S3, letter 1
 ```bash
 python scripts/validate_people.py people/m/maxwell-james-clerk.md
 python scripts/validate_people.py --strict people/m/maxwell-james-clerk.md   # warnings become errors
+python scripts/recompute_ages.py --check people/m/maxwell-james-clerk.md    # ages = event year − birth year (P30)
 ```
 
 The validator checks:

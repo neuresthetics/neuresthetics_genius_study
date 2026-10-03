@@ -14,6 +14,9 @@ Contents:
 
 - **Encoding:** UTF-8 everywhere. CSVs have a header row, comma separators, and RFC 4180 quoting.
 - **Dates:** ISO 8601, `YYYY-MM-DD`. Partial dates are `YYYY` or `YYYY-MM`. Negative years are BCE: `-384` means 384 BCE, and astronomical year numbering (where 1 BCE = year 0) is *not* used. Old Style dates keep the source date and set `calendar: julian`.
+- **Ages** (decision P30): every age field (`timing.age_at_first_lasting_contribution`, and `age` or `ages` on items, events and schooling) is event year − birth year, with no month adjustment. `scripts/recompute_ages.py --check` reports any that differ; it takes the birth year from `basics.birth.date` as recorded.
+- **Contribution years** (P30, replacing P29's "first publication"): a lasting contribution is dated by the person's earliest documented public statement of the result (in print, including a printed abstract or notice; a documented public lecture or reading; or a formal submission). Classified work is dated by its documented work years. Posthumous work is dated by the last documented act in life, or the death year. See CODING_GUIDE §8.
+- **Periods** (P29, P30): `worldview.working_years` and `timing.major_work_period` are one span, from the first to the last listed lasting contribution, never past death. A range end gives its last year; an exclusive bound gives one year inside it ("before 1831" gives 1830), with the bound noted.
 - **Lists inside CSV cells** use `; ` (semicolon and space). `per_model_field` uses ` | ` between models.
 - **Claim:** a field in a record that holds a researched fact. Its keys are:
   - `value`: the fact, or a sentinel;
@@ -156,6 +159,13 @@ Front-matter sections, in file order:
 | `institutions`, `collaborators` | employers, societies, teachers, collaborators (roster links checked) | A |
 | `review` | status reason, controversies, data-quality flags, open questions | — |
 | `sources` | every source cited, with type, kind, full citation, URL, access date, reliability note | — |
+
+Decisions P29 and P30 (2026-10-02) add rules that the generated descriptions below state only in part. Where they differ, CODING_GUIDE and these notes apply:
+
+- **certainty 0.5 for a source conflict** needs a real dispute: reliable sources give different values for the same event and both can't be true. Values that may refer to different events are separate entries, each at its own certainty (P30; CODING_GUIDE §3).
+- **`worldview.mid_basin`**: when the axis value and every named alternative meet the tested condition (B 3 and alternative B 4, both B ≥ 3), the certainty used is that of the evidence for the condition, not of the exact value (P30).
+- **statement `kind` `published letter`**: a letter printed in the person's lifetime, or written for circulation, as shown by the person's own statement or by copies circulated in their lifetime (P28 as generalised by P30). The schema description below still says "printed by the author".
+- **`worldview.coder_notes`**: a question that could not change `primary_system`, A, B, `mid_basin` or the passes is the coder's own conservative call, logged here as "coder's call" (P30; CODING_GUIDE §8, Review).
 
 ### 3.1 Person fields (generated)
 
@@ -812,6 +822,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | file | written by | content |
 |---|---|---|
 | `reports/coverage.md` | `scripts/coverage_report.py` | Person-file coverage by band and bucket, review statuses, fill rates, first-pool checklist, system coverage. |
+| `reports/p30_age_changes.csv` | `scripts/recompute_ages.py --write --csv` | Every age value changed by the P30 age sweep (2026-10-02): person, field, old, new. |
 | `versions/v8/roster_diff_v7_to_v8.md` | `scripts/rebuild_roster.py` | What changed between the v7.1 and v8 rosters and why. |
 | `README.md` (progress table only) | `scripts/progress_status.py` | The status table between the `BEGIN/END GENERATED: progress` markers: roster counts, people coded, systems sourced, decisions settled, latest tag. The Audits and Next steps rows are manual constants in the script. `--check` reports whether the table is up to date. |
 | `figures/*.png` | `scripts/make_figures.py` | Four descriptive charts: list overlap, core roster by region and field bucket, the coded people on B_cause and A_locus, and the sourced systems on the LIO axes. These are not results. |
