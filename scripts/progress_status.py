@@ -28,7 +28,7 @@ BEGIN, END = "<!-- BEGIN GENERATED: progress -->", "<!-- END GENERATED: progress
 # MANUAL rows. No file in the repo records these as data, so they are kept here by hand.
 AUDITS = ("7 blind lens runs on three batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145) and 2 on a "
           "124-claim packet (d9903b7/43cecc4; run 1 116 hold / 8 weaken, run 2 112 hold / 12 weaken, 0 wrong; agreement 114/124, "
-          "κ 0.46; fixes applied at 472e3a2); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md)")
+          "κ 0.46; fixes applied at 6f37cd6); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md)")
 NEXT_STEPS = ("People batch 4 is in progress; finish the 1600–1950 physical-science pool (RUNBOOK §1 step 2), then everyone else "
               "with F ≥ 3; fill the system stubs; the revised rubric has not started")
 
