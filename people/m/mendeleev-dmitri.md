@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (run 2, #81; run 1 noted the same): the p. 426 Afterword quotation stops mid-sentence (it continues ', получится неустойчивая и слащавая шаткость'), so the trailing cut is now marked [...]. No score changed. Not reviewed."}
 
 identity:
   id: mendeleev-dmitri
@@ -135,7 +136,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
-    - text: "Хочется-то мнѣ выразить завѣтнѣйшую мысль о нераздѣльности и сочетанности такихъ отдѣльныхъ граней познанія, каковы: вещество, сила и духъ; инстинктъ, разумъ и воля; свобода, трудъ и долгъ. Послѣдній должно признать по отношенію къ семьѣ, родинѣ и человѣчеству, а высшее сознаніе всего этого выраженнымъ въ религіи, искусствѣ и наукѣ. Выкиньте одно изъ каждой троицы — будетъ лишь анализъ безъ полнаго синтеза"
+    - text: "Хочется-то мнѣ выразить завѣтнѣйшую мысль о нераздѣльности и сочетанности такихъ отдѣльныхъ граней познанія, каковы: вещество, сила и духъ; инстинктъ, разумъ и воля; свобода, трудъ и долгъ. Послѣдній должно признать по отношенію къ семьѣ, родинѣ и человѣчеству, а высшее сознаніе всего этого выраженнымъ въ религіи, искусствѣ и наукѣ. Выкиньте одно изъ каждой троицы — будетъ лишь анализъ безъ полнаго синтеза [...]"
       cites: [{source: S3, locator: "p. 426"}]
       date: "1905"
       context: "Afterword, written after the last chapter dated 27 September 1905, explaining why he did not print his short chapter on his personal worldview. The three triads are set as separate lines in the original. Coder's gloss: I want to express my most cherished thought on the inseparability of matter, force and spirit; instinct, reason and will; freedom, labour and duty, the last owed to family, homeland and humanity, and the highest consciousness of all this expressed in religion, art and science. Throw one out of each triad and there will be only analysis without full synthesis."
