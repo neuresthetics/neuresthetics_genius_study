@@ -271,7 +271,7 @@
         },
         "first_lasting_contribution_year": {
           "$ref": "#/$defs/year",
-          "description": "Year of the earliest contribution listed in contribution.lasting_original_contributions. Drives era_bucket."
+          "description": "Year of the earliest contribution listed in contribution.lasting_original_contributions; a contribution dated as a range counts from its start year (decisions P12, P13). Drives era_bucket."
         },
         "era_bucket": {
           "$ref": "#/$defs/era",

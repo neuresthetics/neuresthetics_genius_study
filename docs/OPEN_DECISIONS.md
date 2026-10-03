@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -36,18 +36,21 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P8 | Recorded interviews: the person's own first-person words, basis recorded_interview, ceiling 0.7; paraphrase-only cannot score alone; interview-based fields flagged "(interview)" | medium-high | DECIDED by Jason 2026-10-02: keep, flag interview-based fields (added by the people run, batch 3) |
 | P9 | Batch 3 record calls: keep Heisenberg's §7 cap; Pasteur era literal from 1848; Pasteur died at Marnes-la-Coquette (alt. Saint-Cloud); Herschel unchanged | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 | P10 | mid_basin certainty is capped only by the axes its branch uses (false via A ≥ 3: A only) | medium-high | DECIDED by Jason 2026-10-02 (first v8's pick; added by the lens audit, batch 3) |
+| P11 | Text Creation Partnership (EEBO-, ECCO-, Evans-TCP) transcriptions are authoritative copies under CODING_GUIDE §7; cite the TCP id and the original edition | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
+| P12 | A contribution dated as a range sets first_lasting_contribution_year by its start year | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
+| P13 | first_lasting_contribution_year is the earliest year among the listed lasting contributions; unlisted early work counts only once it is listed, with a source, as itself lasting | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8, P9, P10 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8–P13 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 25 items, in id order (P6–P10 are placed after P5, S7 after S6).
+All 28 items, in id order (P6–P13 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -440,6 +443,45 @@ The question as raised (batch 3 report, 2026-10-02): the three basis types (writ
 No current value changes. Einstein, Schrödinger and Pauling (false via A 4) are at 0.7, which is both A's certainty and the lower of the two; every `true` is at the lower of A and B (0.7). The only case it would have changed, Chandrasekhar (false at 0.5, capped by B), is now BELOW_THRESHOLD after the same audit.
 
 The question as raised (lens audit, batch 3, #25, 2026-10-02): §3 said "mid_basin certainty is at most the lower of the A_locus and B_cause certainties", but the false branch for A ≥ 3 does not use B at all. Chandrasekhar's false at 0.5 was therefore held down by an axis the test never read. Both runs agreed the value followed from the rule as written; one run noted the rule itself was the problem.
+
+### P11. Text Creation Partnership transcriptions under §7
+**DECIDED (v8's pick, 2026-10-02), from the batch 4 lens audit:** Text Creation Partnership transcriptions (EEBO-TCP, ECCO-TCP, Evans-TCP) count as authoritative copies under CODING_GUIDE §7, so the 0.7 cap on unofficial web copies does not apply to fields read in them. They are scholarly keyed transcriptions of a named printed edition, made by a library partnership (Michigan, Oxford and others) and tied to the page images of that edition, with printed page numbers recorded. Cite the TCP id and the original edition (printer, place and year), and quote with the TCP's spelling; gaps the TCP marks are not quoted. Applied in CODING_GUIDE §7 and the Boyle record (record version 2: the coder notes and the self-described relation cite this decision; no value changes, because Boyle's fields were already treated this way).
+
+The question as raised: the batch 4 coding run (CHANGELOG, batch 4, open decision 3) treated the TCP texts of Boyle's Free Enquiry (A28982) and Christian Virtuoso (A28945) as authoritative and asked whether that was right. Lens batch 4 run 2 noted the open question at #33 and treated TCP as adequate; run 1 checked every Boyle quotation against the TCP XML and found them verbatim (one dropped comma, #22).
+
+### P12. A contribution dated as a range
+**DECIDED (v8's pick, 2026-10-02), from the batch 4 lens audit:** when a listed contribution spans a date range, `first_lasting_contribution_year` uses the range's start year. A start that the sources do not date (a decade such as "1920s", or a cumulative "by 1921") is not guessed: the item's `year` is written as the sources give it, the item sets the first-lasting year only once a source dates its start, and the how_known says that the true year might be earlier. Age and era are recomputed from the result. Applied in CODING_GUIDE §8, the schema description of the field (DATA_DICTIONARY regenerated) and the person template.
+
+The question as raised (lens batch 4 run 1, note on #161): Hodgkin's record used the completion year of a range (penicillin, 1942–1945 → 1945), while Hubble's used the start year (1923–1924 → 1923); §8 did not say which.
+
+Rechecked in all 31 person records (with P13):
+
+| Record | before | after | why |
+|---|---|---|---|
+| Hodgkin | 1945, age 35 | 1942, age 32 | penicillin structure, research begun 1942 (Nobel biography, paragraph 7) |
+| Boyle | 1660, age 33 | 1659, age 32 | air pump completed and used in 1659 (Britannica) |
+| Galileo | 1610, age 46 | 1609, age 45 | telescopic discoveries, 1609–1610 |
+| Hubble | 1923 | unchanged | already the start of 1923–1924; galaxy classification ("1920s") has no dated start in the source read |
+| Leavitt | 1912 | unchanged | the variable-star item's year "1900s–1921" was the coder's guess; the sources give only her total by her death, so it is now "by 1921" and does not set the year (flagged) |
+| Chandrasekhar, Dirac, Lavoisier, Ibn Sina and others | | unchanged | already the start year, or undated items that cannot be earlier on the sources read |
+
+### P13. Which contributions can set the first-lasting year
+**DECIDED (v8's pick, 2026-10-02), from the batch 4 lens audit:** `first_lasting_contribution_year` is the earliest year among the contributions listed in `contribution.lasting_original_contributions` (CODING_GUIDE §8, restated). Early work that is not listed (a doctoral thesis, early papers) can set it only if it is added to the list with a source and is itself a lasting contribution under §8 (still used or built on, with `lasting` saying what rests on it). A listed item sets the year whether or not the coder sees it as the main work; if it is not lasting, remove it from the list instead. Applied in CODING_GUIDE §8.
+
+The question as raised (lens batch 4 run 1, #63, #89, #148): Feynman's 1939 and Pauling's 1925 matched no listed item, and Libby's 1947 was not the earliest listed item (the gaseous-diffusion barrier, 1941–1945).
+
+Rechecked in all 31 person records (with P12):
+
+| Record | before | after | why |
+|---|---|---|---|
+| Feynman | 1939, age 21 | 1939, age 21 | the MIT thesis is now listed: Britannica calls it "an original and enduring approach to calculating forces in molecules" |
+| Pauling | 1925, age 24 (0.5) | 1931, age 30 (0.7) | no source read calls the PhD crystal-structure papers lasting, so they are not listed; the earliest listed item, the chemical bond, starts with his first "Nature of the Chemical Bond" paper (JACS, April 1931; new source) |
+| Libby | 1947, age 38 | 1941, age 32 | the earliest listed item is the gaseous-diffusion barrier, Manhattan Project 1941–45 (Britannica), lasting per his widow's memorial |
+| Caroline Herschel | 1786, age 36 | 1783, age 33 | the listed three nebulae of 1783 (Britannica) |
+| Planck | 1900, age 42 | 1879, age 21 | the listed work on entropy and the second law (1879–1897), beginning with his 1879 doctorate; if that item is judged not lasting it should be removed, and the year returns to 1900 |
+| The other 26 | | unchanged by P13 | already the earliest listed year (Hodgkin, Boyle and Galileo changed under P12, above) |
+
+No era bucket changes: every new year is in the same bucket as before.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

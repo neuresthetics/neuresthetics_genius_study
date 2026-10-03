@@ -42,7 +42,7 @@ basics:
   death:
     date: {value: TODO}
     place: {value: TODO}
-  first_lasting_contribution_year: {value: TODO}
+  first_lasting_contribution_year: {value: TODO}   # earliest year among contribution.lasting_original_contributions; a range counts from its start year (P12, P13)
   era_bucket: {value: TODO}               # from first_lasting_contribution_year (P2); an edge year goes to the later bucket (1950 -> "1950 on")
   region_of_birth: {value: TODO}          # modern borders; look up the country in data/reference/regions.csv (P3)
   region_of_work: {value: TODO}
