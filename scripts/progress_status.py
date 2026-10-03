@@ -26,9 +26,9 @@ README = os.path.join(REPO, "README.md")
 BEGIN, END = "<!-- BEGIN GENERATED: progress -->", "<!-- END GENERATED: progress -->"
 
 # MANUAL rows. No file in the repo records these as data, so they are kept here by hand.
-AUDITS = ("3 blind lens runs on one 115-claim packet (commit eff4700); see "
+AUDITS = ("5 blind lens runs on two batches: 3 on a 115-claim packet (eff4700) and 2 on a 147-claim packet (e648145); see "
           "[reports/audit_2026-10-02.md](reports/audit_2026-10-02.md)")
-NEXT_STEPS = "Code more core people; fill the system stubs; the revised rubric has not started"
+NEXT_STEPS = "Finish the 1600–1950 physical-science pool (RUNBOOK §1 step 2), then everyone else with F ≥ 3; fill the system stubs; the revised rubric has not started"
 
 
 def latest_tag():
