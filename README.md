@@ -41,7 +41,7 @@ These charts describe what is in the repo so far; they are not results. The rost
 
 ![The coded draft person records on B_cause against A_locus](figures/people_cause_locus.png)
 
-*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. All are B_cause 3, and these hand-picked people are not a sample.*
+*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. Only records with both axes scored are plotted (13 of the 22 coded people); every plotted person is B_cause 3 or 4, and these hand-picked people are not a sample.*
 
 ![The nine sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)
 
