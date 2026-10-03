@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (main work 1945–69; Jason, 2026-10-02). Basics from Britannica (Ferry), the Nobel biography and Dodson's Royal Society memoir (2002). No writing of hers on religion was found; the memoir reports Quaker-type values from her mother and Margery Fry and quotes Max Perutz's memorial address ('more Christian in word and deed than many believers I have known'), which is another person's view. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #150 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 and §7. #150 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (§5.3). #158 (run 1): death place 'Shipston-on-Stour, Warwickshire' (0.7) → 'Ilmington, Warwickshire (at home, Crab Mill)' (0.5), per Dodson's memoir p. 188, with Britannica's Shipston-on-Stour as the alternative (sources disagree, as for Pasteur). Decision P12: first_lasting_contribution_year 1945 → 1942 (start of the listed 1942–1945 penicillin item; Nobel biography), age 35 → 32; era unchanged. Not reviewed."}
 
 identity:
   id: hodgkin-dorothy
@@ -36,9 +37,9 @@ basics:
     place: {value: "Cairo", modern_name: "Cairo, Egypt", polity_then: "Khedivate of Egypt (under British occupation)", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources agree; polity is the coder's description."}
   death:
     date: {value: "1994-07-29", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "p. 179, heading"}], how_known: "Two sources agree."}
-    place: {value: "Shipston-on-Stour, Warwickshire", modern_name: "Shipston-on-Stour, England, UK", polity_then: "United Kingdom", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1945, certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1 ('By 1945 she had succeeded')"}], how_known: "Three-dimensional structure of penicillin. Her earlier X-ray work on sterols and pepsin with Bernal (1930s) may count; the year is a judgement."}
-  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}], how_known: "From first_lasting_contribution_year (P2); her vitamin B12 and insulin structures fall in 1950 on."}
+    place: {value: "Ilmington, Warwickshire (at home, Crab Mill)", modern_name: "Ilmington, Warwickshire, England, UK", polity_then: "United Kingdom", certainty: 0.5, cites: [{source: S3, locator: "p. 188 ('Crab Mill, his parents' house in the village of Ilmington'; 'Dorothy spent her time at Crab Mill [...] After a fall, she died at home with her family on 29 July 1994')"}], how_known: "Dodson's Royal Society memoir, the fuller source, puts her death at home at Crab Mill in Ilmington; Britannica gives Shipston-on-Stour and does not say why. Reliable sources disagree, so 0.5 (CODING_GUIDE §3, §8), as for Pasteur. Was 'Shipston-on-Stour, Warwickshire' at 0.7 until the batch 4 lens audit (#158).", alternatives: [{value: "Shipston-on-Stour, Warwickshire", cites: [{source: S1, locator: "opening"}], note: "Britannica's form. That it names the nearby market town rather than the village is the coder's inference, not a sourced fact."}]}
+  first_lasting_contribution_year: {value: 1942, certainty: 0.7, cites: [{source: S2, locator: "paragraph 7 ('researches on penicillin began in 1942')"}, {source: S1, locator: "'Scientific achievements', paragraph 1 ('By 1945 she had succeeded')"}], how_known: "Start year of the earliest listed contribution, the penicillin structure (1942–1945), under decision P12. Her 1930s X-ray work on sterols and pepsin with Bernal is not a listed contribution, so it does not set the year (P13). Was 1945 (the year the structure was solved) until the batch 4 lens audit."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}], how_known: "From first_lasting_contribution_year 1942 (P2); her vitamin B12 and insulin structures fall in 1950 on."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Egypt is Middle East and North Africa in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage'"}, {source: S2, locator: "paragraph 6"}], how_known: "Oxford, 1934–1977."}
   sex_as_recorded: {value: "female", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
@@ -94,10 +95,11 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S3, locator: "pp. 184, 193, 213"}]
-    how_known: "No writing of hers on religion was read. Dodson reports values (Quaker-type values from her mother and Margery Fry, p. 184; 'belief in social justice and her uncompromising hatred of militarism', p. 213), and quotes Max Perutz's memorial address: 'Dorothy was more Christian in word and deed than many believers I have known' (p. 193). Perutz's remark implies she was not a believer, but it is another person's description and cannot score a code (decision P9: paraphrase alone cannot score)."
+    how_known: "No writing of hers on religion was read. Dodson reports values (Quaker-type values from her mother and Margery Fry, p. 184; 'belief in social justice and her uncompromising hatred of militarism', p. 213), and quotes Max Perutz's memorial address: 'Dorothy was more Christian in word and deed than many believers I have known' (p. 193). Perutz's remark implies she was not a believer, but it is another person's description, not her words, so it cannot score a code (CODING_GUIDE §1, §7)."
     note: "No candidate is supported by her own words. Would need Ferry's biography (Dorothy Hodgkin: A Life, 1998) and her papers (Bodleian Library)."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
-  candidate_codes_considered: []
+  candidate_codes_considered:
+    - {code: CHRIST, reason: "Considered, not coded: the Quaker values from her mother and Margery Fry (p. 184) and Perutz's 'more Christian in word and deed than many believers' (p. 193) are other people's descriptions, not her words (CODING_GUIDE §1, §7); Quakers would fall under CHRIST, and no statement of hers on religion was read.", cites: [{source: S3, locator: "pp. 184, 193"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
     B_cause:
@@ -125,7 +127,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1942–1969", certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements'"}, {source: S2, locator: "paragraph 7"}], how_known: "Penicillin research to insulin."}
-  age_at_first_lasting_contribution: {value: 35, certainty: 0.7, cites: [{source: S1, locator: "opening; 'By 1945'"}], how_known: "Born May 1910; penicillin structure by 1945."}
+  age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 7"}], how_known: "Born 12 May 1910; penicillin research began in 1942 (month not given), so 32 (31 before 12 May). Was 35 (from 1945) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement of hers found."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement of hers found.", certainty: 0.5, cites: [{source: S3, locator: "p. 193"}], how_known: "Nothing to date."}
   worldview_during_major_work: {value: TODO}
@@ -230,7 +232,7 @@ English [S1]. Context only.
 
 ## Timing
 
-First lasting contribution 1945, at 35 [S1].
+First lasting contribution 1942, the start of the penicillin structure work (solved by 1945), at 32 [S1; S2].
 
 ## Lane B notes (labeled belief model)
 
