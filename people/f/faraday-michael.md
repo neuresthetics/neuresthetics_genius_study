@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 13
+  record_version: 14
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -22,6 +22,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1821–c. 1855 → 1821–1850; worldview.working_years 1813–1865 → 1821–1850, equal to the span (P30 addendum f); 5 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 5 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. lio_views_relative_to_major_work during → after major work: the first dated LIO-type statement (1854) is after the corrected span 1821–1850. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -275,7 +276,7 @@ timing:
   major_work_period: {value: "1821–1850", certainty: 0.7, cites: [{source: S1, locator: "Early life (1821); Later life ('By 1850 Faraday had evolved a radically new view of space and force')"}], how_known: "From electromagnetic rotation (1821) to the field conception ('by 1850', an inclusive bound, so 1850; P30 #4), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1821–c. 1855, which ended when S1 says his mind began to fail, not at a listed contribution."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening sentence; Early life"}], how_known: "1821 minus 1791. The month of the rotation experiment was not checked, so it may be 30. P30 (rule 5): 1821 − 1791 = 30, with no month adjustment; was 29 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "In 'Observations on Mental Education' he separates the things of this life, open to reason and judgement, from the future life, known only by revelation; his public talk of fixed laws of nature and the conservation of force dates from the same decade.", year: 1854, certainty: 0.5, cites: [{source: S10, locator: "pp. 99–100, 103"}, {source: S8, locator: "section 'Electric discoveries' (1857 discourse)"}], how_known: "Earliest dated statement on the axes in the sources read. His laws of electrolysis (early 1830s) and the undated 'definite laws' remark (S8) suggest earlier views, but no earlier dated statement was read, so 0.5."}
-  lio_views_relative_to_major_work: {value: "during major work", rationale: "The dated statements (1844 letter on keeping religion and philosophy apart; 1854 lecture; 1857 discourse) fall inside the major work period (1821–c. 1855). Cantor ties the search for God-given laws to the work itself (S8). Span check 2026-10-02: against the new 1821–1850 span only the 1844 letter is inside; the 1854 lecture and 1857 discourse are after it, so the label would become 'after major work'. Left for a ruling (pass record).", certainty: 0.5, cites: [{source: S3, locator: "final paragraph"}, {source: S10, locator: "pp. 99–100"}, {source: S8, locator: "section 'Electric discoveries'"}], how_known: "Dated statements; the earlier decades are not covered by any statement read."}
+  lio_views_relative_to_major_work: {value: "after major work", rationale: "The earliest dated statement on the axes (first_evidence_of_lio_type_views) is the 1854 lecture, after the 1821–1850 span; the 1857 discourse is later still. The 1844 letter on keeping religion and philosophy apart is inside the span but is not dated as an LIO-type view in this record. Before the span check (2026-10-02) the label was 'during major work', against a span of 1821–c. 1855. Cantor ties the search for God-given laws to the work itself (S8). Label corrected 2026-10-02 to follow the corrected span (no ruling needed).", certainty: 0.5, cites: [{source: S3, locator: "final paragraph"}, {source: S10, locator: "pp. 99–100"}, {source: S8, locator: "section 'Electric discoveries'"}], how_known: "Dated statements; the earlier decades are not covered by any statement read."}
   worldview_during_major_work: {value: "A practising Sandemanian throughout: member from 1821, deacon 1832, elder 1840.", certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One historian's account; matches his 1844 and 1861 letters."}
 
 lane_b:
@@ -480,7 +481,6 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.7), A_locus (0 at 0.7), B_cause (3 at 0.7), D_authority (2 at 0.7), mid_basin (true at 0.7 (pass)) rest on evidence outside the new span 1821–1850. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Primary code CHRIST versus CLTHEI: read more of his letters and prayers for petition or expected divine action in events. Would raise or overturn the 0.7.
 - B_cause 3 or 4: is the creation-of-force limit an exception or the edge of science? mid_basin is true either way.
 - Read a primary text for B (e.g. the 1857 conservation-of-force discourse) to raise its certainty.

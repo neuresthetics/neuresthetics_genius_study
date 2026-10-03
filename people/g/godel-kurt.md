@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 9
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; B needs a statement about nature (P16); quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1929–1949 → 1929–1958; worldview.working_years 1929–1978 → 1929–1958, equal to the span (P30 addendum f); 6 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 6 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. lio_views_relative_to_major_work after → during major work: the first dated LIO-type statement (1950) is inside the corrected span 1929–1958. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -284,7 +285,7 @@ timing:
   major_work_period: {value: "1929–1958", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "From the completeness theorem (1929) to the Dialectica interpretation (1958), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1929–1949, which stopped at the rotating universes although the 1958 item was listed."}
   age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S1, locator: "§3 ('at the age of twenty-three he opened his doctoral thesis')"}], how_known: "SEP; matches 1929 and a birth in April 1906."}
   first_evidence_of_lio_type_views: {value: "Letter to his mother arguing that no one can know there is no other world, because we do not know why this world exists or why it is as it is", year: 1950, certainty: 0.5, cites: [{source: S6, locator: "letter of 27 February 1950"}, {source: S5, locator: "Vol. IV section"}], how_known: "Earliest dated religious statement in the sources read. Earlier letters exist but were not read, so 0.5."}
-  lio_views_relative_to_major_work: {value: "after major work", rationale: "The theist and lawful-order statements read date from 1950 on (the questionnaire from 1974 or later). His mathematical realism is said (by him, late) to date from 1925, but that is not an LIO view. Span check 2026-10-02: against the new 1929–1958 span the 1950, 1952 and 1958 letters are inside, so the label would become 'during major work'. Left for a ruling (pass record).", certainty: 0.5, cites: [{source: S6, locator: "letters 1950–1961"}, {source: S5, locator: "Vol. IV section"}], how_known: "Dated private writing; earlier writing not read."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "The theist and lawful-order statements read date from 1950 on (the questionnaire from 1974 or later). His mathematical realism is said (by him, late) to date from 1925, but that is not an LIO view. Span check 2026-10-02: against the corrected 1929–1958 span the first dated statement (1950) and the 1952 and 1958 letters are inside, so the label is 'during major work' (was 'after major work', against the old 1929–1949 span; corrected without a ruling).", certainty: 0.5, cites: [{source: S6, locator: "letters 1950–1961"}, {source: S5, locator: "Vol. IV section"}], how_known: "Dated private writing; earlier writing not read."}
   worldview_during_major_work: {value: "Mathematical realism, by his own later account; he attended the Vienna Circle but was 'not himself a logical positivist'. No religious statement from 1929–1949 was found in the sources read. (Span check 2026-10-02: the span is now 1929–1958, so the letters of 1950, 1952 and 1958 fall inside it.)", certainty: 0.5, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letter of 15 August 1946"}], how_known: "SEP and his 1946 letter: he was 'in some regard even in direct opposition to the predominant views there'."}
 
 lane_b:
@@ -469,7 +470,6 @@ Everything in this section is Lane B: labeled belief, not a finding. The form (p
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): A_locus (1 at 0.7), B_cause (3 at 0.7), C_ledger (3 at 0.5), D_authority (3 at 0.7), E_scope (3 at 0.5), mid_basin (true at 0.7 (pass)) rest on evidence outside the new span 1929–1958. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Read the Grandjean questionnaire and the mother letters in Collected Works IV.
 - Read Wang 1987 and 1996 to check E (3 at 0.5) and settle CLASS_THEISM vs CLTHEI.
 - Read Dawson 1997 on household religion.

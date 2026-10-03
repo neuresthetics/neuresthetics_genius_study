@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 11
+  record_version: 12
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -20,6 +20,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1665–1693 → 1665–1704; worldview.working_years 1665–1727 → 1665–1704, equal to the span (P30 addendum f); lasting item added: Opticks (1704); 6 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the out-of-span evidence flagged by the span check counts at its normal certainty, since no change of view is documented after the span. P31's in-span rule applies instead: the Arian turn (about 1672) is inside 1665–1704; the phase count depends on item dating, and the values are left unchanged pending a ruling. One-line P31 delta added to coder_notes; Open questions pointer line rewritten. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -385,7 +386,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 30, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
-  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2)."
+  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2). P31 delta (2026-10-02): as the items are dated now, the phase before the Arian turn (about 1672) has 3 listed items (calculus 1665, white light 1665–66, telescope by 1671) and the later phase 2 (Principia 1687, Opticks 1704), so the earlier phase would govern and the later evidence (all of A–E, 1687 on) could count only as retrospective or go in changes_over_life: A–E and mid_basin would become BELOW_THRESHOLD and CHRIST would fall to 0.5 or BELOW_THRESHOLD, unless the turn on the Trinity is judged not to bear on these fields; dated by P30 #1 (white light 1672, calculus first printed 1704) the later phase governs and nothing changes. Left for a ruling."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -638,7 +639,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Newton show
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.7), A_locus (1 at 1.0), C_ledger (0 at 0.7), D_authority (2 at 0.7), E_scope (3 at 0.7), mid_basin (true at 0.7 (pass)) rest on evidence outside the new span 1665–1704. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
+- P31 in-span change (2026-10-02): the Arian turn of about 1672 (changes_over_life, S12, S4, S1) falls inside the span 1665–1704, and all the axis evidence is from 1687 on. Which phase governs depends on how the listed items are dated; see coder_notes. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Earlier dated lawful-order statements (Quaestiones 1664, De gravitatione).
 - Household religious practice and baptism record.
 - Closer dates for the theological manuscripts.

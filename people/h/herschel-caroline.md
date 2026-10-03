@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1786 → 1783 (the listed three nebulae of 1783, the earliest listed contribution; the old alternative is now the value), age 36 → 33; era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1786–1828 → 1783–1828; worldview.working_years 1772–1848 → 1783–1828, equal to the span (P30 addendum f); 2 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 2 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: herschel-caroline
@@ -274,7 +275,6 @@ Everything in this section is Lane B: labeled belief, not a finding. No geometri
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.5), A_locus (0 at 0.5) rest on evidence outside the new span 1783–1828. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Hoskin's editions and biographies; the epitaph manuscript.
 
 ## Research log

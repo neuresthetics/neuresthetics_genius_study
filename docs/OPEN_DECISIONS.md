@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P30, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -56,18 +56,19 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P28 | Kinds: letter written for circulation is "published letter" (counts as published work); unpublished finished treatise and the Pensées are "unpublished manuscript" | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 15) |
 | P29 | Stage 3-b follow-ups: §1 governs secondary_system; hedged self-reports stay at 0.5; a later disavowal caps the disowned wording at 0.5; contributions dated by first publication (replaced by P30's dating rule); one period per record (first to last listed lasting contribution); "scientist" = a listed lasting contribution in natural science, same for B and E (test refined by P30); derived sources are not independent | medium | DECIDED (v8's pick) 2026-10-02 (from the v8.b rulings audit) |
 | P30 | Stage 3 rulings round 3: corrects P29's coral-reef date to 1837; contributions dated by the earliest documented public statement (classified and posthumous work, period ends); age = event year − birth year; real-dispute test; first LIO-type view checks the earliest works; tense rule; same-evidence rule only for the same point; mid_basin cap with alternatives; scientist = a lasting theory or result about physical or natural systems (Noether is one); Kisner cap scope; published letter; B 3's free-will exception; one Gutenberg TODO per field; ruling questions only for primary_system, A, B, mid_basin or the passes; addendum (11:20 PM PT): E follows P19 for scientists, the latest lasting work must be listed, undated items by composition date, range ends, posthumous items, major_work_period is the one span | medium-high | DECIDED (v8's pick) 2026-10-02 (from lens's runs on the v8.a and v8.b rulings packets) |
+| P31 | Continuity rule: the span dates the worldview being coded; evidence from any adult year counts at its normal certainty unless changes_over_life documents a change of view between the span and the evidence (then retrospective cap or changes_over_life); a change inside the span: code the phase with the most listed lasting contributions (tie to the later), the other phase in changes_over_life plus a coder_notes delta; childhood evidence stays off-point; replaces P29's out-of-span clause and P30 addendum e's posthumous restriction | medium-high | DECIDED (v8's pick) 2026-10-02 (from the P30 span-alignment audit) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P30 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 45 items, in id order (P6–P30 are placed after P5, S7 after S6).
+All 46 items, in id order (P6–P31 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -645,7 +646,7 @@ Applied in the schema (1.3), DATA_DICTIONARY and CODING_GUIDE §7. None of the 3
 - **Hedged self-reports:** a self-report hedged in its own words ("as far as I can remember") stays at 0.5 and does not reach P20's 0.7 cap. The same evidence gets the same certainty on every field it supports (primary_system and A together).
 - **Later disavowal:** when the person later disowns their own public wording (Darwin to Hooker, 1863: "truckled to public opinion"), that wording supports at most 0.5. The disavowal itself is cited.
 - **Dating a contribution:** a contribution is dated by its first publication. A dated public reading counts as publication only if it is documented. Darwin's coral-reef theory: 1837, read to the Geological Society on 31 May 1837 with abstracts printed that year, and this is the listed item. Era unchanged. (Corrected in P30: this bullet first gave 1839, from the Journal, p. 557. P30 rule 1 now replaces the "first publication" rule.)
-- **One period per record (P20):** the period runs from the first to the last listed lasting contribution. Every axis and primary_system use that span. Statements from outside it count only as retrospective self-reports (0.7 cap, or 0.5 if hedged) or go in changes_over_life.
+- **One period per record (P20):** the period runs from the first to the last listed lasting contribution. Every axis and primary_system use that span. ~~Statements from outside it count only as retrospective self-reports (0.7 cap, or 0.5 if hedged) or go in changes_over_life.~~ (Superseded by P31, 2026-10-02: evidence from any adult year counts unless a change of view is documented.)
 - **Who is a scientist (P16, P19, P24):** anyone with a listed lasting contribution in natural or physical science, applied the same way to B and E. Working science can then support B and E at 0.5 as inference_from_work. A pure mathematician with no such contribution needs a statement about nature. Who counts is now set by P30 rule 11 (a listed lasting contribution that is a theory or result about physical or natural systems), which replaces the names first given here.
 - **P15:** no exception lets a single source give 1.0.
 - **Source independence:** a source that draws on another (MacTutor's Riemann biography on Dedekind's Lebenslauf) is not independent of it, so the pair gives 0.7.
@@ -686,9 +687,18 @@ Process:
 - **b. The latest lasting work must be listed.** The contribution list must include the latest lasting work the sources name, as P17 requires for the earliest. A published letter (rule 13) can be such a work. So the period end can't leave out a major late public work just because it wasn't listed. The Leibniz–Clarke correspondence (1715–16) is the case that raised this.
 - **c. No documented public statement in life.** An item with no public statement in life (rule 1) is dated by its documented composition date, and the note says so. The death cap (rule 3) still applies.
 - **d. Ranges.** A range gives its start year for the period start (P12) and its end year for the period end (rule 4). Kant's period ends in 1788.
-- **e. Posthumous items.** The period never runs past death. A late private writing published after death counts only if its composition is dated within the period. So Pascal's period ends in 1662 at the latest, and Hume's in 1776 at the latest.
+- **e. Posthumous items.** The period never runs past death. ~~A late private writing published after death counts only if its composition is dated within the period.~~ (Superseded by P31, 2026-10-02: as evidence, such a writing counts like any other adult evidence. The death cap stays.) So Pascal's period ends in 1662 at the latest, and Hume's in 1776 at the latest.
 - **f. One span, two fields.** `timing.major_work_period` is the authoritative span. `worldview.working_years` must equal it, and "working years" in the docs means that span. `validate_people.py` now warns when the two differ: 38 of the 43 records warn (29 of the 31 outside stage 3, 9 of the 12 stage 3 records). This round fixes none of them. (Follow-up, 2026-10-02: the 29 outside stage 3 are aligned; spans checked and evidence dates audited in `reports/p30_span_alignment.csv`.)
 - **g. Schema descriptions.** "published letter" now says printed in the person's lifetime or written for circulation (rule 13), and the mid_basin description includes the alternatives rule (rule 10). DATA_DICTIONARY was regenerated. No enum changed.
+
+### P31. Continuity rule
+**DECIDED (v8's pick, 2026-10-02, 11:50 PM PT)**, from the P30 span-alignment audit (7a52a3f, `reports/p30_span_alignment.csv`). That audit found that P29's out-of-span clause would set aside most worldview evidence, because most people state their worldview late in life. Applied in CODING_GUIDE §1 and §5, DATA_DICTIONARY §1 and METHOD. Re-check of the audit's 55 flagged values: 49 resolved, 6 still open (Newton, in-span change); every row is marked in the CSV. The 12 stage 3 records are for their coders.
+- **Span.** The span (`timing.major_work_period`, which `worldview.working_years` equals) dates the worldview being coded.
+- **Evidence from outside the span.** Evidence from any year of the person's adult life counts for the span at its normal certainty, unless the record documents a change of view between the span and the evidence. A documented change means a sourced entry in `worldview.changes_over_life`.
+- **After a documented change**, the evidence counts only as a retrospective self-report (0.7 cap, or 0.5 if hedged), or it goes in `changes_over_life`.
+- **A change inside the span.** When a documented change of view falls inside the span, `primary_system` and the axes follow the phase that covers the most listed lasting contributions; a tie goes to the later phase. The other phase goes in `changes_over_life`, plus a one-line `coder_notes` delta saying what would change. Example: Kant is coded KANT from the critical works, with CLASS_THEISM noted as the earlier-phase alternative.
+- **Childhood evidence** stays off-point for the person's own axes (P29, childhood religious schooling bullet).
+- **Replaces** P29's clause "statements from outside the span count only as retrospective self-reports or go in changes_over_life" and P30 addendum e's restriction on posthumous private writings. The death cap on the span stays, and so do the other span rules: the dating rules (P30 #1–4, addendum c and d), the latest lasting work (addendum b) and the working_years equality (addendum f).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

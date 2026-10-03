@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #93/#94 (run 1) and the same error in claims 71, 73–75, 78, 80–84 and 90: every S4 'letter, paragraph 1' locator replaced with the right paragraph of the four-paragraph letter (2 heritage, Sunday schools and the break; 3 'I do not believe in God'; 4 Humanist and Unitarian); S4 reliability note corrected. #82 (run 2 note): AHA membership years '–1963' → 'by 1963' (the letter shows membership then, not an end date). #89 / decisions P12, P13: new source S6 (the 1931 JACS paper 'The Nature of the Chemical Bond', bibliographic record via Crossref); chemical-bond item dated '1930s' → '1931–1939'; first_lasting_contribution_year 1925 (0.5) → 1931 (0.7), age 24 (0.5) → 30 (0.7); the unlisted PhD crystal papers no longer set the year. Era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1927–1954 → 1931–1951; worldview.working_years 1922–1994 → 1931–1951, equal to the span (P30 addendum f); 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 7 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: pauling-linus
@@ -332,7 +333,6 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): primary_system (SECHUM 0.7), A_locus (4 at 0.7), B_cause (4 at 0.7), C_ledger (4 at 0.7), D_authority (4 at 0.7), E_scope (4 at 0.7), mid_basin (false at 0.7) rest on evidence outside the new span 1931–1951. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - The printed speech in The Humanist; SECHUM or ATHE.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1905–1915 → 1905–1925; worldview.working_years 1905–1955 → 1905–1925, equal to the span (P30 addendum f); lasting item added: Bose–Einstein statistics for atoms and the prediction of Bose–Einstein condensation (1924–1925); source S7 added; 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 7 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: einstein-albert
@@ -394,7 +395,6 @@ Everything in this section is Lane B: labeled belief, not a finding. Deductive f
 
 ## Open questions
 
-- Span check (2026-10-02, P29/P30): primary_system (PANT 0.7), A_locus (4 at 0.7), B_cause (4 at 0.7), C_ledger (4 at 0.7), D_authority (2 at 0.7), E_scope (4 at 0.7), mid_basin (false at 0.7) rest on evidence outside the new span 1905–1925. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Read Jammer, Einstein and Religion, to test AGNOS against PANT.
 - Check for religious statements before 1925, the end of the span.
 
