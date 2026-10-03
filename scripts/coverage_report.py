@@ -12,7 +12,7 @@ It has no timestamp, which keeps the file stable when nothing has changed.
 import argparse, collections, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import REPO, read_record, read_csv, person_files, system_files, fill_counts, claims, claim_state  # noqa: E402
+from lib.records import REPO, read_record, read_csv, person_files, system_files, fill_counts, claims, claim_state, is_interview  # noqa: E402
 
 FIRST_POOL = ["faraday-michael", "maxwell-james-clerk", "newton-isaac", "aquinas-thomas", "ibn-sina", "godel-kurt"]
 BAND_ORDER = ["high (5)", "core (3–4)", "extended (2)", "single-source (1)"]
@@ -104,9 +104,11 @@ def build():
     wv_rows = []
     for pid, d in sorted(people.items()):
         wv = d.get("worldview") or {}
-        prim = (wv.get("primary_system") or {}).get("value", "(missing)")
+        ps = wv.get("primary_system") or {}
+        prim = str(ps.get("value", "(missing)")) + (" (interview)" if is_interview(ps) else "")
         wv_rows.append([pid, prim, (d.get("record") or {}).get("review_status", "")])
     L += (table(["id", "primary system", "review status"], wv_rows) if wv_rows else ["(none)"]) + [""]
+    L += ["\"(interview)\" after a primary system: the code rests on interview evidence (decision P8).", ""]
 
     L += ["### First pool checklist", "",
           "The v7.1 coding rules name a first pool of people to code before anyone else.", ""]

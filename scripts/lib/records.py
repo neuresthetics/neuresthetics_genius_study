@@ -71,6 +71,17 @@ def claims(data):
             yield p, d
 
 
+INTERVIEW_FLAG = "(interview)"
+
+
+def is_interview(c):
+    """True for a claim that rests on interview evidence (decision P8, as signed off by Jason on
+    2026-10-02): basis recorded_interview, or a how_known that starts with the '(interview)' flag."""
+    if not isinstance(c, dict):
+        return False
+    return c.get("basis") == "recorded_interview" or str(c.get("how_known") or "").startswith(INTERVIEW_FLAG)
+
+
 def claim_state(c):
     v = c.get("value")
     return v if isinstance(v, str) and v in SENTINELS else "FILLED"
@@ -120,6 +131,9 @@ def common_checks(data, body, required_sections):
             cert = c.get("certainty")
             if want is not None and (cert not in (1.0, 0.7, 0.5) or cert > want):
                 errors.append(f"{'/'.join(p)}: basis {basis} allows certainty at most {want} (1.0 / 0.7 / 0.5), got {cert}")
+        if basis == "recorded_interview" and not str(c.get("how_known") or "").startswith(INTERVIEW_FLAG):
+            # P8 (Jason, 2026-10-02): interview-based fields carry a visible flag.
+            errors.append(f"{'/'.join(p)}: basis recorded_interview needs how_known to start with '{INTERVIEW_FLAG}' (P8)")
         if claim_state(c) == "FILLED" and c.get("certainty") is not None and not c.get("cites"):
             errors.append(f"{'/'.join(p)}: filled claim without citations")
     headings = re.findall(r"^## (.+?)\s*$", body, flags=re.M)

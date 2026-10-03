@@ -24,7 +24,7 @@ from matplotlib.patches import Rectangle  # noqa: E402
 from matplotlib.transforms import Bbox  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import REPO, read_record, read_csv, person_files  # noqa: E402
+from lib.records import REPO, read_record, read_csv, person_files, is_interview  # noqa: E402
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -150,12 +150,17 @@ def fig_people_cause_locus(out):
         a, b = lio["A_locus"], lio["B_cause"]
         if not (isinstance(a.get("value"), int) and isinstance(b.get("value"), int)):
             continue
-        pts.append((d["identity"]["display_name"], b["value"], a["value"], a.get("certainty"), b.get("certainty"),
-                    value(d["worldview"]["mid_basin"])))
-    fig, ax = plt.subplots(figsize=(9, 7.5))
+        pts.append((d["identity"]["display_name"], b["value"], a["value"],
+                    f"{a.get('certainty')}{' (interview)' if is_interview(a) else ''}",
+                    f"{b.get('certainty')}{' (interview)' if is_interview(b) else ''}",
+                    value(d["worldview"]["mid_basin"]), min(a.get("certainty"), b.get("certainty"))))
+    fig, ax = plt.subplots(figsize=(10.5, 7.5))
     ax.add_patch(Rectangle((2.5, -0.5), 2, 2, color="#55A868", alpha=0.13, lw=0))
     zone = Rectangle((0, 0), 1, 1, color="#55A868", alpha=0.25, lw=0)
-    ax.legend([zone], ["mid-basin zone: A_locus ≤ 1 and B_cause ≥ 3\n(P4 also needs certainty ≥ 0.7 on both axes)"],
+    # Decision P8 (Jason, 2026-10-02): interview-based scores are flagged in the labels.
+    flag = Rectangle((0, 0), 1, 1, fill=False, lw=0)
+    ax.legend([zone, flag], ["mid-basin zone: A_locus ≤ 1 and B_cause ≥ 3\n(P4 also needs certainty ≥ 0.7 on both axes)",
+                             "(interview) after a certainty: that axis rests on\ninterview evidence (decision P8)"],
               loc="upper left", fontsize=9, frameon=False)
     # Labels run to the right of their point, so a label can collide with anything in
     # the same A_locus row: its own cell or a cell to its right. Every point in a row
@@ -169,9 +174,8 @@ def fig_people_cause_locus(out):
     for ay, ps in rows.items():
         n = len(ps)
         step = min(0.17, 0.85 / n)
-        for i, (name, b, a, ca, cb, mb) in enumerate(ps):
+        for i, (name, b, a, ca, cb, mb, c) in enumerate(ps):
             y = ay + (i - (n - 1) / 2) * step
-            c = min(ca, cb)
             size = 60 + 260 * c
             ax.scatter(b - 0.08, y, s=size, color="#4C72B0", alpha=0.35 + 0.6 * c,
                        edgecolor="black", lw=0.6, zorder=3)

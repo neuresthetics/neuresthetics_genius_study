@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P8, P9, S7). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P10, S7). P8 was first a v8's pick and was signed off by Jason on 2026-10-02 with one addition (interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT). Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit and is a v8's pick (2026-10-02), pending Jason's sign-off. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -33,20 +33,21 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | S6 | Two-part PANT test; host tradition or PANENT for Advaita/Kabbalah; STOIC for Stoics | medium | decided 2026-10-01 |
 | P6 | P4: score B_cause on the person's account of nature; TODO (not UNKNOWN) when the test has no branch | medium | decided 2026-10-02 (added by the people run) |
 | P7 | E_scope domain: score on the world's order (this-world events); salvation and election go to C | medium | decided 2026-10-02, option 1 (added by the lens audit, run 2) |
-| P8 | Recorded interviews: the person's own first-person words, basis recorded_interview, ceiling 0.7; paraphrase-only cannot score alone | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
+| P8 | Recorded interviews: the person's own first-person words, basis recorded_interview, ceiling 0.7; paraphrase-only cannot score alone; interview-based fields flagged "(interview)" | medium-high | DECIDED by Jason 2026-10-02: keep, flag interview-based fields (added by the people run, batch 3) |
 | P9 | Batch 3 record calls: keep Heisenberg's §7 cap; Pasteur era literal from 1848; Pasteur died at Marnes-la-Coquette (alt. Saint-Cloud); Herschel unchanged | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
+| P10 | mid_basin certainty is capped only by the axes its branch uses (false via A ≥ 3: A only) | medium-high | DECIDED (v8's pick, 2026-10-02), pending Jason's sign-off (added by the lens audit, batch 3) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8, P9 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8, P9, P10 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 24 items, in id order (P6–P9 are placed after P5, S7 after S6).
+All 25 items, in id order (P6–P10 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -415,11 +416,14 @@ The cost: "hidden exceptions for an in-group" can fairly be read to include elec
 - Recheck E in the nine sourced system files.
 
 ### P8. Recorded interviews as evidence
-**DECIDED (v8's pick, 2026-10-02):** a recorded or transcribed interview in the person's own words counts as their own words, with a 0.7 ceiling. A remark made in passing during an interview gets no extra cap beyond that, as long as it is in the first person. If only a paraphrase can be published (for example because of an AIP no-quotation notice), the interview cannot score an axis on its own; it may support an axis already scored from other evidence. Applied as: new basis `recorded_interview` (ceiling 0.7) and new statement kind `recorded interview` in `person.schema.json`, which goes to schema 1.2 (every person file and the template bumped; `system.schema.json` unchanged, since system records have no basis field); the validator ceiling table (`scripts/lib/records.py`); CODING_GUIDE §3 and §7; METHOD §4.2; RUNBOOK; DATA_DICTIONARY regenerated. Other people's words in an interview (a widow, a colleague) stay reported speech.
+**DECIDED by Jason 2026-10-02: keep, flag interview-based fields.** (First decided as v8's pick earlier the same day; Jason kept the rule and the 0.7 ceiling, and added the flag.) **Flag:** every field with basis `recorded_interview` starts its `how_known` with "(interview)", and the validator enforces this. A field whose main evidence is an interview under another basis (for example a paraphrase-only interview, held at 0.5) carries the same flag. The flag also shows wherever scores are listed: the record's Summary and score lines, the person chart's point labels ("A 0.5 interview") and legend (`scripts/make_figures.py`), and the primary-system table in `reports/coverage.md` ("(interview)" after the code). Applied in CODING_GUIDE §7, `scripts/lib/records.py` (`is_interview`, validator check), `make_figures.py`, `coverage_report.py`, the README chart caption and RUNBOOK. After the batch 3 lens audit no field uses basis `recorded_interview`; Chandrasekhar's interview-based fields (scholarly_reconstruction, 0.5) carry the flag.
 
-Rechecked under the rule:
+The rule as first decided (v8's pick): a recorded or transcribed interview in the person's own words counts as their own words, with a 0.7 ceiling. A remark made in passing during an interview gets no extra cap beyond that, as long as it is in the first person. If only a paraphrase can be published (for example because of an AIP no-quotation notice), the interview cannot score an axis on its own; it may support an axis already scored from other evidence. Applied as: new basis `recorded_interview` (ceiling 0.7) and new statement kind `recorded interview` in `person.schema.json`, which goes to schema 1.2 (every person file and the template bumped; `system.schema.json` unchanged, since system records have no basis field); the validator ceiling table (`scripts/lib/records.py`); CODING_GUIDE §3 and §7; METHOD §4.2; RUNBOOK; DATA_DICTIONARY regenerated. Other people's words in an interview (a widow, a colleague) stay reported speech.
+
+Rechecked under the rule (superseded for Chandrasekhar by the batch 3 lens audit, below):
 - Chandrasekhar (record version 2): primary_system ATHE 0.5 → 0.7 (basis scholarly_reconstruction → recorded_interview); A_locus 4 at 0.5 → 0.7; self-described relation 0.5 → 0.7; B_cause 4 stays 0.5 (it rests on Parker; the interview remark speaks to it only indirectly); mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B under CODING_GUIDE §3). His two quotes are verbatim, so the paraphrase limit does not apply.
 - Bohr (record version 2): no change. The AIP interview is Margrethe Bohr's reported speech and is paraphrased; it supports C_ledger, which rests on Heilbron, and scores nothing on its own.
+- Lens audit, batch 3 (2026-10-02, #19, #20, #25): Chandrasekhar's S5 carries AIP's no-quotation notice, so under this rule's last sentence it can only be paraphrased and cannot score on its own. Record version 3 reverts primary_system ATHE, A_locus 4 and the self-described relation to 0.5 (basis scholarly_reconstruction), removes the two verbatim quotations, and sets mid_basin false (0.5) → BELOW_THRESHOLD. A strict reading (paraphrase-only cannot score at all) would make ATHE and A BELOW_THRESHOLD; 0.5 keeps the pre-P8 value and is v8's pick.
 
 The question as raised (batch 3 report, 2026-10-02): the three basis types (written profession, consistent private letters, scholarly reconstruction) had no place for a subject's own tape-recorded speech. Chandrasekhar's "he knew I was an atheist" (AIP, 1987) had been coded scholarly_reconstruction at 0.5 by analogy with the single-letter rule, and AIP no-quotation notices meant some interviews could only be paraphrased.
 
@@ -427,8 +431,15 @@ The question as raised (batch 3 report, 2026-10-02): the three basis types (writ
 **DECIDED (v8's pick, 2026-10-02):**
 1. **Heisenberg:** keep the CODING_GUIDE §7 cap of 0.7 on fields read from the Internet Archive copy of the JSTOR PDF of "Scientific Truth and Religious Truth" (CrossCurrents, 1975). The copy's provenance cannot be confirmed from the copy itself. Reading the article directly on JSTOR would lift the cap. Record notes updated (record version 3); no score changed.
 2. **Pasteur's era:** apply P2 literally to the recorded first lasting contribution (1848), so `1750 to 1849`, and note that he is on the boundary. Membership in the 1600–1950 pool is not affected. Value unchanged; how_known rewritten.
-3. **Pasteur's death place:** Marnes-la-Coquette (the Villeneuve-l'Étang estate), with Saint-Cloud, the form most sources give, as the alternative; both cited. New source: the EPHE prosopographical notice (Dupressoir), "Villeneuve-l'Etang (act. Marnes-la-Coquette)". Certainty 0.7 → 0.5, because reliable sources name different communes (CODING_GUIDE §3, other facts).
+3. **Pasteur's death place:** Marnes-la-Coquette (the Villeneuve-l'Étang estate), with Saint-Cloud (Britannica) as the alternative; both cited. (Batch 3 lens audit: the uncited "the form most sources give" was dropped. The Île-de-France heritage inventory, dossier IA00051396, records that part of the estate's park was incorporated into the national domain of Saint-Cloud in 1895, the likely reason for Britannica's form; EPHE lists the ENS portrait among its sources, so it is not independent of it.) New source: the EPHE prosopographical notice (Dupressoir), "Villeneuve-l'Etang (act. Marnes-la-Coquette)". Certainty 0.7 → 0.5, because reliable sources name different communes (CODING_GUIDE §3, other facts).
 4. **Caroline Herschel:** left as coded (CHRIST at 0.5 from brief devotional phrases in three letters); the lens audit will test it.
+
+### P10. Which axes cap mid_basin certainty
+**DECIDED (v8's pick, 2026-10-02), pending Jason's sign-off:** the CODING_GUIDE §3 cap on `mid_basin` certainty counts only the axes the branch actually uses. `false` via A_locus ≥ 3 uses A_locus only, so its certainty is at most A_locus's. `false` via A_locus ≤ 1 with B_cause ≤ 1 uses both, and so does `true`: at most the lower of the two. `TODO`, `UNKNOWN` and `BELOW_THRESHOLD` carry no certainty and follow their own inputs (§6). Applied in CODING_GUIDE §3 and §6. The validator does not check this cap, so no code changed.
+
+No current value changes. Einstein and Schrödinger (false via A 4) are at 0.7, which is both A's certainty and the lower of the two; every `true` is at the lower of A and B (0.7). The only case it would have changed, Chandrasekhar (false at 0.5, capped by B), is now BELOW_THRESHOLD after the same audit.
+
+The question as raised (lens audit, batch 3, #25, 2026-10-02): §3 said "mid_basin certainty is at most the lower of the A_locus and B_cause certainties", but the false branch for A ≥ 3 does not use B at all. Chandrasekhar's false at 0.5 was therefore held down by an axis the test never read. Both runs agreed the value followed from the rule as written; one run noted the rule itself was the problem.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

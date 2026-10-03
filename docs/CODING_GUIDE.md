@@ -81,7 +81,7 @@ Every filled claim carries one of three certainty values. Anything below 0.5 is 
 
 A single private letter is not "consistent private letters". Use 0.5 if a scholar backs the reading. Otherwise use `BELOW_THRESHOLD`.
 
-**Contested readings** (lens audit, 2026-10-02). If the record itself names a plausible alternative score or code (in a rationale, how_known, candidate list or coder note), certainty is at most 0.7, whatever the source type. Name the alternative in the rationale. Certainty may also sit below the basis ceiling when the evidence speaks to the axis only indirectly; say why in `how_known`. Certainty never goes above the ceiling. This applies to person and system LIO axes and to `primary_system`. `mid_basin` certainty is at most the lower of the A_locus and B_cause certainties. Apply the scale the same way across files: the same pattern of evidence gets the same score (for example, two domains each with its own authority is D 2 for every person).
+**Contested readings** (lens audit, 2026-10-02). If the record itself names a plausible alternative score or code (in a rationale, how_known, candidate list or coder note), certainty is at most 0.7, whatever the source type. Name the alternative in the rationale. Certainty may also sit below the basis ceiling when the evidence speaks to the axis only indirectly; say why in `how_known`. Certainty never goes above the ceiling. This applies to person and system LIO axes and to `primary_system`. `mid_basin` certainty is at most the lower certainty of the axes its branch uses (decision P10): `false` via A_locus ≥ 3 uses A_locus only; `true`, and `false` via A_locus ≤ 1 with B_cause ≤ 1, use both. Apply the scale the same way across files: the same pattern of evidence gets the same score (for example, two domains each with its own authority is D 2 for every person).
 
 **Other facts** (dates, places, schooling, contributions):
 
@@ -167,7 +167,7 @@ Rules:
 **Mid-basin** (`worldview.mid_basin`, true/false). The v7.1 papers use "mid-basin theists" for first-rank theists whose work runs on lawful order. They name Faraday, Maxwell, Newton, Aquinas, Ibn Sina and Gödel as the first pool, "coded first as a stress test". The test (decision P4, 2026-10-01) uses the LIO axes only:
 
 - `true` when `A_locus` ≤ 1 (God is a transcendent person, not the world) **and** `B_cause` ≥ 3 (law and regularity, no special cases), with B scored on the person's account of nature (decision P6, 2026-10-02), both at certainty ≥ 0.7;
-- `false` when `A_locus` ≥ 3, or `A_locus` ≤ 1 with `B_cause` ≤ 1;
+- `false` when `A_locus` ≥ 3, or `A_locus` ≤ 1 with `B_cause` ≤ 1; the A ≥ 3 branch reads A only, so B's certainty does not cap it (P10, §3);
 - otherwise:
   - `TODO`, with a note, if a needed axis is still `TODO`, or if both axes are scored at ≥ 0.7 but fall between the branches (A_locus = 2, or A_locus ≤ 1 with B_cause = 2); the note says the test has no branch for the case;
   - `UNKNOWN` only if a needed axis is itself `UNKNOWN` (researched, no reliable source gives it), keeping the meaning of §4;
@@ -192,6 +192,7 @@ Notes:
 - Prefer a primary transcription or scholarly edition. A quote known only from a secondary source is marked `secondary quotation` and cannot by itself support certainty 1.0. A field that rests on an unofficial web copy of a published primary text (any axis or field, including the self-described relation) is capped at 0.7, unless its wording has been checked against an authoritative edition (a publisher's text, a scholarly edition, a library or archive scan, or the official site of the estate or institution) and that edition is cited.
 - Reported speech (someone else's memory of what the person said) is never a written profession.
 - **Recorded interviews** (decision P8, 2026-10-02). A recorded or transcribed interview in the person's own words counts as their own words, with basis `recorded_interview` and a ceiling of 0.7; quote it with kind `recorded interview`. One interview is enough: the single-letter rule does not apply, and a remark made in passing gets no further cap as long as it is in the first person. The usual caps still apply on top (a named alternative, §3; indirect evidence). What other people say in an interview about the person (a widow, a colleague) is reported speech, not the person's words. If only a paraphrase can be published (for example under an AIP no-quotation notice), the interview cannot score an axis or code on its own; it may support a score that already rests on other evidence.
+- **Interview flag** (P8, signed off by Jason, 2026-10-02). Every field with basis `recorded_interview` starts its `how_known` with "(interview)"; the validator rejects one that does not. Use the same flag on a field whose main evidence is an interview under another basis (for example a paraphrase-only interview at 0.5). Wherever the record lists scores (Summary, score lines in the body), write "interview" next to that score, for example "A 4 at 0.5 (interview)". The person chart and `reports/coverage.md` show the flag automatically.
 - Never paraphrase inside quotation marks.
 
 ## 8. Other sections

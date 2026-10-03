@@ -255,6 +255,7 @@ git commit -m "Extend <CODE> system record: <what>"
 | `file is at ... but person_ids.csv says ...` | Move the file to the listed path. |
 | `filled claim without citations` | Add a cite, or set the value back to `TODO`. |
 | `a filled worldview claim needs basis` | Add `basis` (written_profession / consistent_private_letters / recorded_interview / scholarly_reconstruction). |
+| `basis recorded_interview needs how_known to start with '(interview)'` | Start the field's `how_known` with "(interview)" (P8 flag, CODING_GUIDE §7). |
 | `basis ... allows certainty at most ..., got ...` | Ceilings: `written_profession` 1.0, `consistent_private_letters` 0.7, `recorded_interview` 0.7, `scholarly_reconstruction` 0.5. |
 | `front matter cites S9, which is not in sources` / `body cites [S9] ...` | Add the source, or fix the id. |
 | `source S4 is listed but never cited` (warning) | Cite it or remove it. `--strict` turns this into an error. |
