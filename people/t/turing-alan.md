@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Copeland, first page). Worldview from 'Computing Machinery and Intelligence' (Mind, 1950), read on the offprint scan in the Turing Digital Archive (King's College Cambridge, AMT/B/19; pp. 443, 444 and 453 checked on the page images), and from the 1932 manuscript 'Nature of Spirit' (AMT/C/29, facsimile), with Hodges' SEP entry and Scrapbook page for context. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 (0.7), D 4 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #122: primary_system unchanged (BELOW_THRESHOLD); its reason now rests on the evidence (CODING_GUIDE §3, §4) and no longer cites an unwritten rule; the stub-system question awaits v8's ruling. Not reviewed."}
 
 identity:
   id: turing-alan
@@ -95,8 +96,8 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S1, locator: "pp. 443–444"}, {source: S5, locator: "§ on the 1950 paper ('always committed to materialist explanation')"}]
-    how_known: "He rejects theological arguments (S1) and Hodges calls him 'always committed to materialist explanation' (S5), but nothing read states his own position on God. Best fit ATHE is a stub system file, so not coded in any case (batch rule)."
-    note: "Draft judgment (one line): BELOW_THRESHOLD because no self-description on God was read and the best fit is a stub; backlog note raised."
+    how_known: "He rejects theological arguments (S1) and Hodges calls him 'always committed to materialist explanation' (S5), but nothing read states his own position on God, so the evidence for any code is below 0.5 (CODING_GUIDE §3 and §4). The best fit, ATHE, is also a stub system file; v8's stage 3 batch B instructions said a stub best fit stays BELOW_THRESHOLD, but no written methods section says so, and this value does not depend on it (awaiting v8's ruling on stub systems)."
+    note: "Draft judgment (one line): BELOW_THRESHOLD because no self-description on God was read; the best fit is also a stub (backlog note raised)."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
     - {code: ATHE, reason: "Leading candidate, not coded: materialist explanation (S5) and the rejection of theological arguments (S1), but no first-person denial of God read. ATHE is a stub system file (flag).", cites: [{source: S1, locator: "pp. 443–444"}, {source: S5, locator: "§ on the 1950 paper"}]}
