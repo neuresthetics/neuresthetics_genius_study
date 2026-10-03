@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (radiocarbon dating 1947–49; Jason, 2026-10-02). Basics from Britannica (Kauffman), the Nobel biography and Leona Marshall Libby's GSA memorial. No writing of his on religion was found. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #148 (run 1) / decisions P12, P13: first_lasting_contribution_year 1947 → 1941, the start year of the earliest listed contribution (the gaseous-diffusion barrier, Manhattan Project 1941–1945; Britannica, and S3 p. 1 for its lasting use); age 38 → 32; era unchanged. The how_known no longer says the 1930s work is lasting per S3 (S3 does not say so); that work is not listed and does not set the year. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: libby-willard
@@ -25,7 +26,7 @@ identity:
     field: chemistry
     field_bucket: chemistry
   full_name: {value: "Willard Frank Libby", certainty: 1.0, cites: [{source: S1, locator: "heading"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
-  native_name: {value: "Willard Frank Libby (English)", certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "English name."}
+  native_name: {value: "Willard Frank Libby (English)", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "English name."}
   aliases:
     - {name: "Libby-Willard", kind: "roster alias"}
     - {name: "Bill Libby", kind: other}
@@ -40,9 +41,9 @@ basics:
   first_lasting_contribution_year: {value: 1941, certainty: 0.7, cites: [{source: S1, locator: "tritium paragraph, first sentence ('While associated with the Manhattan Project (1941–45), Libby helped develop a method for separating uranium isotopes by gaseous diffusion')"}, {source: S3, locator: "p. 1"}], how_known: "Start year of the earliest listed contribution, the gaseous-diffusion barrier (1941–1945), under decisions P12 and P13; S3 says the barrier was used for enrichment 'for more than 30 years'. 0.7 because the start year is the Manhattan Project's span, not a dated result, and the lasting judgement rests on his widow's memorial. His 1930s Geiger-counter and radioisotope work is not a listed contribution (no source read calls it lasting), so it does not set the year. Was 1947 (the first radiocarbon date) until the batch 4 lens audit."}
   era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "tritium paragraph, first sentence; radiocarbon paragraphs"}], how_known: "From first_lasting_contribution_year 1941 (P2); the radiocarbon work (1947) is in the same bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Berkeley, Columbia, Chicago, Washington, UCLA."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S3, locator: "selected bibliography"}], how_known: "Papers and books in English."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Berkeley, Columbia, Chicago, Washington, UCLA."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "selected bibliography"}], how_known: "Papers and books in English."}
   occupations: {value: ["physical chemist", "university professor", "Atomic Energy Commissioner"], certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–5"}, {source: S1, locator: "paragraph 3"}], how_known: "Two sources."}
 
 contribution:
@@ -54,12 +55,12 @@ contribution:
   evidence_of_impact:
     - {value: "Nominator: 'Seldom has a single discovery in chemistry had such an impact on the thinking in so many fields of human endeavour'", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "end of radiocarbon section"}], how_known: "Britannica quoting an unnamed nominator."}
   major_works:
-    - {value: "Radiocarbon Dating", year: 1952, kind: book, certainty: 1.0, cites: [{source: S2, locator: "paragraph 8"}], how_known: "Nobel biography (second edition 1955)."}
+    - {value: "Radiocarbon Dating", year: 1952, kind: book, certainty: 0.7, cites: [{source: S2, locator: "paragraph 8"}], how_known: "Nobel biography (second edition 1955)."}
   honours:
     - {value: "Nobel Prize in Chemistry", year: 1960, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 7"}], how_known: "Two sources."}
     - {value: "Willard Gibbs Medal (American Chemical Society)", year: 1958, certainty: 0.7, cites: [{source: S2, locator: "paragraph 7"}], how_known: "Nobel biography."}
     - {value: "Albert Einstein Medal Award", year: 1959, certainty: 0.7, cites: [{source: S2, locator: "paragraph 7"}], how_known: "Nobel biography."}
-  definition_fit: {value: "clearly meets", rationale: "Invented radiocarbon dating.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Invented radiocarbon dating.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: TODO, note: "Not stated in the sources read."}
@@ -69,14 +70,14 @@ childhood:
     - {value: "Mother, Eva May Rivers", name: "Eva May Libby (née Rivers)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
   household_circumstances: {value: "Farming family", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
   schooling:
-    - {value: "Grammar and high schools near Sebastopol, California", stage: "grammar or secondary school", years: "1913–1926", certainty: 1.0, cites: [{source: S2, locator: "paragraph 2"}], how_known: "Nobel biography."}
+    - {value: "Grammar and high schools near Sebastopol, California", stage: "grammar or secondary school", years: "1913–1926", certainty: 0.7, cites: [{source: S2, locator: "paragraph 2"}], how_known: "Nobel biography."}
     - {value: "University of California, Berkeley: BSc 1931, PhD 1933", stage: university, years: "1927–1933", certainty: 1.0, cites: [{source: S2, locator: "paragraph 2"}, {source: S1, locator: "paragraph 2"}], how_known: "Two sources."}
   early_mathematics: {value: TODO}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "paragraphs 1–2"}], how_known: "American farm family."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "paragraphs 1–2"}], how_known: "American farm family."}
   notable_events: []
 
 worldview:
@@ -85,25 +86,25 @@ worldview:
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by him on science and religion was found."}
   primary_system:
-    value: BELOW_THRESHOLD
+    value: UNKNOWN
     cites: [{source: S1, locator: "fallout-shelter paragraph"}, {source: S3, locator: "p. 3"}]
     how_known: "No writing or reported speech of his on religion was read. Britannica's only mention of God is Leo Szilard's joke about Libby's burned fallout shelter, which is Szilard's line, not Libby's view. His widow writes that he 'believed that education is our only hope and that science is basic to human success' (S3), which is her summary and says nothing on God."
     note: "No candidate is supported by evidence. Would need his papers (UCLA Library Special Collections) or an oral history that permits quotation."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
   candidate_codes_considered: []
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
+    A_locus: {value: UNKNOWN, how_known: "No statement placing or denying God was read."}
     B_cause:
       value: 4
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "radiocarbon paragraphs"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi and Dirac). No statement of his own about miracles read, so 0.5."
       rationale: "Scored on his account of nature (P6). Radiocarbon dating rests on carbon-14 decaying 'at a constant rate' after death and on production that 'varied little with latitude', checked against tree rings and dated artefacts (S1): uniform physical law with no special cases. No miracle, petition or exemption in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation in the sources read."}
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
+  mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19)."}
   statements: []
   changes_over_life: []
   coder_notes: "No writing of his on religion was found, so statements is empty. S3 is a memorial by his second wife, Leona Marshall Libby; its summaries of his beliefs are hers. No interview used. The Shroud of Turin dating in S1 was done by others with his method and says nothing about his views."
@@ -138,15 +139,15 @@ institutions:
   - {value: "U.S. Atomic Energy Commission", role: "commissioner", years: "1954–1959", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 3–4"}, {source: S1, locator: "paragraph 3 (1955–59)"}], how_known: "Two sources; start year differs (Nobel biography: appointed 1 October 1954)."}
   - {value: "University of California, Los Angeles", role: "professor of chemistry; director of the Institute of Geophysics and Planetary Physics from 1962", years: "1959–1980", kind: university, certainty: 1.0, cites: [{source: S2, locator: "paragraph 4"}, {source: S1, locator: "paragraph 3"}], how_known: "Two sources."}
 collaborators:
-  - {value: "Harold Urey", roster_id: urey-harold, relation: collaborator, note: "Columbia war research, 1941–45", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
+  - {value: "Harold Urey", roster_id: urey-harold, relation: collaborator, note: "Columbia war research, 1941–45", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
   - {value: "Edward Teller", roster_id: teller-edward, relation: collaborator, note: "fellow advocate of nuclear testing in the late 1950s", certainty: 0.7, cites: [{source: S1, locator: "fallout-shelter paragraph"}], how_known: "Britannica."}
-  - {value: "Linus Pauling", roster_id: pauling-linus, relation: "rival or critic", note: "opposed Pauling's petition for a nuclear test ban", certainty: 1.0, cites: [{source: S1, locator: "fallout-shelter paragraph"}], how_known: "Britannica."}
+  - {value: "Linus Pauling", roster_id: pauling-linus, relation: "rival or critic", note: "opposed Pauling's petition for a nuclear test ban", certainty: 0.7, cites: [{source: S1, locator: "fallout-shelter paragraph"}], how_known: "Britannica."}
   - {value: "Leona Woods Marshall", relation: family, note: "second wife (married 1966); author of S3", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S3, locator: "byline"}], how_known: "Two sources."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3: DeepSeek, Gemini, Grok). Included in the fourth batch by owner decision, borderline on the stage-2 date window (1600–1950).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 224"}], how_known: "Study roster; batch inclusion by Jason, 2026-10-02."}
   controversies:
-    - {value: "Advocate of nuclear weapons testing; publicized fallout shelter at his house", certainty: 1.0, cites: [{source: S1, locator: "fallout-shelter paragraph"}], how_known: "Britannica."}
+    - {value: "Advocate of nuclear weapons testing; publicized fallout shelter at his house", certainty: 0.7, cites: [{source: S1, locator: "fallout-shelter paragraph"}], how_known: "Britannica."}
   data_quality_flags:
     - "Borderline on the stage-2 date window: radiocarbon dating 1947–49; included by owner decision (2026-10-02)."
     - "No worldview source of any kind."
@@ -200,7 +201,7 @@ sources:
 
 ## Summary
 
-Willard Libby (1908–1980), American chemist, invented radiocarbon dating (first date March 1947) and won the 1960 Nobel Prize in Chemistry [S1; S2]. No writing of his on religion was found. primary_system BELOW_THRESHOLD. B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold. Included in this batch by owner decision, borderline on the stage-2 date window.
+Willard Libby (1908–1980), American chemist, invented radiocarbon dating (first date March 1947) and won the 1960 Nobel Prize in Chemistry [S1; S2]. No writing of his on religion was found. primary_system UNKNOWN. B 4 at 0.5 from the working science; A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN. Included in this batch by owner decision, borderline on the stage-2 date window.
 
 ## Life and work
 

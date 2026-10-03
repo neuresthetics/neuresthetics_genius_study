@@ -1,0 +1,720 @@
+record,path,field,before,after,reason
+aquinas-thomas,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,collaborators/9,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,review/roster_status_reason,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+bohr-niels,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+bohr-niels,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,basics/first_lasting_contribution_year,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/lasting_original_contributions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/lasting_original_contributions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,childhood/childhood_mentors/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,childhood/notable_events/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+boyle-robert,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+chandrasekhar-subrahmanyan,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+chandrasekhar-subrahmanyan,childhood/key_early_reading/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+chandrasekhar-subrahmanyan,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+chandrasekhar-subrahmanyan,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+chandrasekhar-subrahmanyan,timing/age_at_first_lasting_contribution,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+clausius-rudolf,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+clausius-rudolf,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,childhood/schooling/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+curie-marie,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+dirac-paul,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,contribution/evidence_of_impact/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,childhood/parents_and_household/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,childhood/early_science_exposure/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,childhood/key_early_reading/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,childhood/childhood_mentors/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,heritage/religious_heritage_by_birth,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+einstein-albert,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/fields,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/evidence_of_impact/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/evidence_of_impact/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/major_works/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/honours/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,institutions/5,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+faraday-michael,review/roster_status_reason,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,basics/death/place,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,childhood/household_circumstances,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,childhood/early_mathematics,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,childhood/notable_events/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+fermi-enrico,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/lasting_original_contributions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/lasting_original_contributions/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/evidence_of_impact/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,childhood/parents_and_household/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+feynman-richard,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+galilei-galileo,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,basics/occupations,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,childhood/parents_and_household/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,childhood/household_circumstances,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,childhood/schooling/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,childhood/early_geometric_style_reasoning,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,worldview/changes_over_life/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,heritage/religious_heritage_by_birth,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,institutions/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,review/controversies/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+galilei-galileo,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+godel-kurt,identity/full_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+godel-kurt,collaborators/8,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+heisenberg-werner,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+herschel-caroline,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+herschel-caroline,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+herschel-caroline,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+hodgkin-dorothy,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,contribution/lasting_original_contributions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,contribution/honours/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,institutions/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hodgkin-dorothy,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,basics/first_lasting_contribution_year,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,basics/occupations,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,contribution/fields,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,contribution/lasting_original_contributions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,childhood/schooling/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,childhood/schooling/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,childhood/schooling/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,childhood/notable_events/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+hubble-edwin,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+hubble-edwin,basics/region_of_birth,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+ibn-sina,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+ibn-sina,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+ibn-sina,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+ibn-sina,contribution/evidence_of_impact/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+ibn-sina,review/controversies/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,contribution/lasting_original_contributions/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,childhood/parents_and_household/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,review/controversies/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+kepler-johannes,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+lavoisier-antoine,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,basics/death/place,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,contribution/lasting_original_contributions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+lavoisier-antoine,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+leavitt-henrietta-swan,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,childhood/schooling/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+libby-willard,review/controversies/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,basics/first_lasting_contribution_year,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,contribution/honours/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,collaborators/5,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,review/roster_status_reason,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+maxwell-james-clerk,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+maxwell-james-clerk,timing/age_at_first_lasting_contribution,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+meitner-lise,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,basics/occupations,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,childhood/parents_and_household/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,childhood/household_circumstances,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,childhood/schooling/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+meitner-lise,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+mendeleev-dmitri,basics/birth/date,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,review/controversies/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+mendeleev-dmitri,timing/age_at_first_lasting_contribution,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+newton-isaac,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+newton-isaac,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+newton-isaac,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+newton-isaac,contribution/major_works/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+newton-isaac,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+newton-isaac,review/roster_status_reason,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,contribution/lasting_original_contributions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,institutions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,institutions/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+oppenheimer-j-robert,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+oppenheimer-j-robert,basics/region_of_birth,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+pasteur-louis,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,contribution/lasting_original_contributions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,childhood/parents_and_household/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,institutions/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pasteur-louis,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,basics/region_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,childhood/early_science_exposure/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,childhood/key_early_reading/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+pauling-linus,collaborators/4,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,basics/languages_of_work,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,contribution/evidence_of_impact/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,contribution/major_works/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,contribution/honours/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,childhood/early_science_exposure/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,childhood/childhood_mentors/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,heritage/ethnic_or_communal_heritage,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,institutions/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,institutions/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,collaborators/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,collaborators/2,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,collaborators/3,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+planck-max,basics/era_bucket,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+planck-max,basics/region_of_birth,certainty,1.0,0.7,P15/P25 derived field: lowest certainty of its inputs
+schrodinger-erwin,identity/native_name,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,basics/death/place,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,basics/sex_as_recorded,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,basics/occupations,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,contribution/lasting_original_contributions/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,contribution/evidence_of_impact/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,contribution/major_works/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,contribution/honours/0,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,contribution/definition_fit,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,childhood/languages_in_childhood,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,worldview/working_years,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,timing/major_work_period,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+schrodinger-erwin,collaborators/1,certainty,1.0,0.7,P15: one reliable source caps at 0.7
+aquinas-thomas,contribution/evidence_of_impact/1,value,"""Thomism, the school named after him, from the 15th century (Capreolus) to the present; adopted as the official philosophy of the Church in 1917""","""Thomism, the school named after him, from the 15th century to the present""",P26/P25: 'adopted as the official philosophy of the Church in 1917' was only in Britannica's Top Questions box; Capreolus is SEP only (moved to how_known)
+aquinas-thomas,contribution/evidence_of_impact/1,cites,"[{source: S1, locator: ""Introduction & Top Questions""}, {source: S2, locator: ""§9""}]","[{source: S1, locator: ""Introduction""}, {source: S2, locator: ""§9""}]",P26
+aquinas-thomas,contribution/evidence_of_impact/1,how_known,"""Two sources.""","""Two sources: Britannica names Thomism; SEP traces it from John Capreolus (early 15th century) to the 20th century.""",P26
+aquinas-thomas,childhood/schooling/0,stage,"""religious school""","""elementary school""",P21
+aquinas-thomas,childhood/schooling/0,run_by,,"""religious body""",P21
+aquinas-thomas,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+aquinas-thomas,record,record_version,8,9,record_version +1
+aquinas-thomas,record,last_updated,2026-10-02,2026-10-02,
+aquinas-thomas,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+bohr-niels,timing/major_work_period,how_known,"""From the atomic model to the fission work; the end date is the coder's choice.""","""From the atomic model (1913) to the fission work (1939), as the two sources date them.""",P23: no 'coder's choice' wording
+bohr-niels,institutions/1,kind,employer,"""research institute""",P21
+bohr-niels,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+bohr-niels,record,record_version,3,4,record_version +1
+bohr-niels,record,last_updated,2026-10-02,2026-10-02,
+bohr-niels,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+boyle-robert,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+boyle-robert,record,record_version,2,3,record_version +1
+boyle-robert,record,last_updated,2026-10-02,2026-10-02,
+boyle-robert,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+chandrasekhar-subrahmanyan,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+chandrasekhar-subrahmanyan,body,,"C, D, E below threshold","C and E below threshold, D UNKNOWN",P19
+chandrasekhar-subrahmanyan,body,,"C, D, E below threshold","C and E below threshold, D UNKNOWN",P19
+chandrasekhar-subrahmanyan,identity/full_name,certainty,1.0,0.7,P15: name-form disagreement between sources (Nobel: Subramanyan)
+chandrasekhar-subrahmanyan,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+chandrasekhar-subrahmanyan,record,record_version,3,4,record_version +1
+chandrasekhar-subrahmanyan,record,last_updated,2026-10-02,2026-10-02,
+chandrasekhar-subrahmanyan,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+clausius-rudolf,worldview/primary_system,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,worldview/lio_axes/A_locus,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses favour for a group in events.""","""Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+clausius-rudolf,worldview/mid_basin,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,worldview/mid_basin,how_known,"""A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar.""","""A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19).""","P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+clausius-rudolf,body,,"primary_system BELOW_THRESHOLD. B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold.","primary_system UNKNOWN. B 4 at 0.5 from the working science; A, C, D UNKNOWN (nothing in the sources read); E below threshold; mid_basin UNKNOWN.",P19
+clausius-rudolf,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,"P24: inference from working science, no direct statement"
+clausius-rudolf,childhood/schooling/0,stage,"""religious school""","""elementary school""",P21
+clausius-rudolf,childhood/schooling/0,run_by,,"""private""",P21: his father's private school
+clausius-rudolf,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+clausius-rudolf,record,record_version,2,3,record_version +1
+clausius-rudolf,record,last_updated,2026-10-02,2026-10-02,
+clausius-rudolf,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+curie-marie,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+curie-marie,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+curie-marie,body,,"A, C, D, E below threshold; mid_basin below threshold.","A and E below threshold, C and D UNKNOWN; mid_basin below threshold.",P19
+curie-marie,body,,"A, C, D, E below threshold.",A and E below threshold; C and D UNKNOWN.,P19
+curie-marie,institutions/2,kind,employer,"""research institute""",P21
+curie-marie,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+curie-marie,record,record_version,4,5,record_version +1
+curie-marie,record,last_updated,2026-10-02,2026-10-02,
+curie-marie,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+dirac-paul,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+dirac-paul,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+dirac-paul,worldview/lio_axes/A_locus,note,,"""Stays BELOW_THRESHOLD (P19): the only evidence is reported speech by others, Heisenberg's later reconstruction of the 1927 Solvay conversation and Pauli's quip, which bears on the point but cannot score it.""",P19 note
+dirac-paul,body,,"A, C, D, E below threshold; mid_basin below threshold.","A and E below threshold, C and D UNKNOWN; mid_basin below threshold.",P19
+dirac-paul,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+dirac-paul,childhood/schooling/0,stage,"""dame or charity school""","""elementary school""",P21
+dirac-paul,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+dirac-paul,record,record_version,2,3,record_version +1
+dirac-paul,record,last_updated,2026-10-02,2026-10-02,
+dirac-paul,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+einstein-albert,worldview/lio_axes/B_cause,cites,"[{source: S3, locator: ""'Religion and Science' (1930); 'Science and Religion' part II (1941)""}, {source: S1, locator: ""Top Questions ('He does not play dice', letter to Born, December 1926)""}]","[{source: S3, locator: ""'Religion and Science' (1930); 'Science and Religion' part II (1941)""}]",P26: Top Questions box not citable
+einstein-albert,worldview/lio_axes/B_cause,how_known,"""Two published essays eleven years apart, consistent with the 1926 letter to Born. Below the 1.0 ceiling for the same reason as C: the key sentences are put in the third person ('the man who is thoroughly convinced', 'for him'), which speaks for his own view only indirectly (§3 same pattern, lens audit batch 2).""","""Two published essays eleven years apart. Below the 1.0 ceiling for the same reason as C: the key sentences are put in the third person ('the man who is thoroughly convinced', 'for him'), which speaks for his own view only indirectly (§3 same pattern, lens audit batch 2).""",P26
+einstein-albert,timing/first_evidence_of_lio_type_views,value,"""Letter to Born: 'He does not play dice'""","""Cable to Rabbi Goldstein: 'I believe in Spinoza's God'""",P26: the 1926 Born letter was cited only to the Top Questions box; next dated statement in the sources read
+einstein-albert,timing/first_evidence_of_lio_type_views,year,1926,1929,P26
+einstein-albert,timing/first_evidence_of_lio_type_views,cites,"[{source: S1, locator: ""Top Questions""}]","[{source: S4, locator: ""cable text""}]",P26
+einstein-albert,timing/first_evidence_of_lio_type_views,how_known,"""Earliest dated statement in the sources read; Britannica's childhood account (science books contradicting religion at 12) is earlier but not an LIO view as such.""","""Earliest dated statement in the citable sources read. The December 1926 letter to Born ('He does not play dice') is known here only from Britannica's AI-generated Top Questions box, which is not cited (P26). Britannica's childhood account (science books contradicting religion at 12) is earlier but not an LIO view as such.""",P26
+einstein-albert,timing/lio_views_relative_to_major_work,rationale,"""The dated statements read (1926, 1929, 1930, 1941) are after the major work. Whether he held them during 1905–1915 is not shown in S1–S5.""","""The dated statements read (1929, 1930, 1941) are after the major work. Whether he held them during 1905–1915 is not shown in S1–S5.""",P26
+einstein-albert,timing/lio_views_relative_to_major_work,cites,"[{source: S1, locator: ""Top Questions""}, {source: S4, locator: ""cable text""}]","[{source: S4, locator: ""cable text""}, {source: S3, locator: ""1930; 1941""}]",P26
+einstein-albert,collaborators,[2],"- {value: ""Max Born"", relation: correspondent, note: ""the 1926 'dice' letter"", certainty: 0.7, cites: [{source: S1, loca",(removed),P26: Max Born as correspondent rested only on Britannica's Top Questions box
+einstein-albert,body,,"The religious statements read date from 1926 on [S1, Top Questions; S4, cable text];","The religious statements read date from 1929 on [S4, cable text; S3];",P26
+einstein-albert,institutions/1,kind,employer,"""research institute""",P21
+einstein-albert,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+einstein-albert,record,record_version,5,6,record_version +1
+einstein-albert,record,last_updated,2026-10-02,2026-10-02,
+einstein-albert,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+faraday-michael,institutions/0,kind,employer,"""research institute""","P21: the Royal Institution, a research and lecture body"
+faraday-michael,childhood/schooling/0,stage,"""religious school""","""elementary school""",P21
+faraday-michael,childhood/schooling/0,run_by,,"""religious body""",P21: a church school
+faraday-michael,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+faraday-michael,record,record_version,10,11,record_version +1
+faraday-michael,record,last_updated,2026-10-02,2026-10-02,
+faraday-michael,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+fermi-enrico,worldview/primary_system,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,worldview/lio_axes/A_locus,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,worldview/mid_basin,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,worldview/mid_basin,how_known,"""A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar.""","""A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19).""","P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+fermi-enrico,text,,"Leading candidate, not coded (BELOW_THRESHOLD): the agnostic description","Leading candidate, not coded (UNKNOWN: nothing in the sources read): the agnosti",P19
+fermi-enrico,body,,so his worldview is below threshold;,"so his system and the A, C and D axes are UNKNOWN;",P19
+fermi-enrico,body,,"primary_system BELOW_THRESHOLD (AGNOS candidate, stub).","primary_system UNKNOWN (AGNOS candidate, stub).",P19
+fermi-enrico,body,,"A, C, D, E below threshold; mid_basin below threshold.","A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.",P19
+fermi-enrico,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+fermi-enrico,childhood/schooling/0,stage,"""other""","""elementary school""",P21
+fermi-enrico,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+fermi-enrico,record,record_version,3,4,record_version +1
+fermi-enrico,record,last_updated,2026-10-02,2026-10-02,
+fermi-enrico,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+feynman-richard,worldview/lio_axes/A_locus,how_known,"""He leaves God's existence uncertain and places no God anywhere; nothing scores the locus.""","""He leaves God's existence uncertain and places no God anywhere; nothing scores the locus. The 'stage for God' theory 'seems to be inadequate' (p. 22) is a hedged rejection, not an explicit denial of a personal intervening God, so A stays BELOW_THRESHOLD (P20).""",P20
+feynman-richard,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+feynman-richard,record,record_version,2,3,record_version +1
+feynman-richard,record,last_updated,2026-10-02,2026-10-02,
+feynman-richard,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; A_locus note (P20). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+galilei-galileo,childhood/schooling/1,stage,"""religious school""","""grammar or secondary school""",P21
+galilei-galileo,childhood/schooling/1,run_by,,"""religious body""",P21: Camaldolese monks
+galilei-galileo,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+galilei-galileo,record,record_version,4,5,record_version +1
+galilei-galileo,record,last_updated,2026-10-02,2026-10-02,
+galilei-galileo,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+godel-kurt,worldview/lio_axes/B_cause,rationale,"""Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961). Everything having a meaning is 'precisely analogous to the principle that everything has a cause on which the whole science rests' (S7, October 1961). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. His work (logic, set theory, relativity) has no exceptions at all, so scoring on his account of nature or on his work gives the same result.""","""Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961). Everything having a meaning is 'precisely analogous to the principle that everything has a cause on which the whole science rests' (S7, October 1961). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. The score rests on his statements about the world. Logic and set theory are pure mathematics and do not score B (P16); his rotating-universe solutions in relativity are lawful throughout and agree with 3 or 4.""",P16
+godel-kurt,worldview/statements/0,kind,other,"""document in own hand""",P18: his own answers on the Grandjean questionnaire
+godel-kurt,worldview/statements/7,kind,"""notebook or diary""","""unpublished manuscript""",P18: the c. 1960 list
+godel-kurt,institutions/2,kind,employer,"""research institute""",P21
+godel-kurt,childhood/schooling/0,stage,other,"""elementary school""",P21
+godel-kurt,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+godel-kurt,record,record_version,7,8,record_version +1
+godel-kurt,record,last_updated,2026-10-02,2026-10-02,
+godel-kurt,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; B needs a statement about nature (P16); quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+heisenberg-werner,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+heisenberg-werner,body,,"C, E below threshold","C UNKNOWN, E below threshold",P19
+heisenberg-werner,body,,"C, E below threshold","C UNKNOWN, E below threshold",P19
+heisenberg-werner,institutions/2,kind,employer,"""research institute""",P21
+heisenberg-werner,institutions/4,kind,employer,"""research institute""",P21
+heisenberg-werner,childhood/schooling/0,stage,"""dame or charity school""","""elementary school""",P21
+heisenberg-werner,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+heisenberg-werner,record,record_version,4,5,record_version +1
+heisenberg-werner,record,last_updated,2026-10-02,2026-10-02,
+heisenberg-werner,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+herschel-caroline,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+herschel-caroline,record,record_version,4,5,record_version +1
+herschel-caroline,record,last_updated,2026-10-02,2026-10-02,
+herschel-caroline,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+hodgkin-dorothy,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+hodgkin-dorothy,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+hodgkin-dorothy,worldview/lio_axes/A_locus,note,,"""Stays BELOW_THRESHOLD (P19): Perutz's remark that she was 'more Christian in word and deed than many believers' (S3, p. 193) is another person's description, which bears on the point but cannot score it.""",P19 note
+hodgkin-dorothy,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses favour for a group in events.""","""Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+hodgkin-dorothy,body,,"A, C, D, E below threshold; mid_basin below threshold.","A and E below threshold, C and D UNKNOWN; mid_basin below threshold.",P19
+hodgkin-dorothy,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+hodgkin-dorothy,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+hodgkin-dorothy,record,record_version,2,3,record_version +1
+hodgkin-dorothy,record,last_updated,2026-10-02,2026-10-02,
+hodgkin-dorothy,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+hubble-edwin,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+hubble-edwin,worldview/lio_axes/A_locus,note,,"""Stays BELOW_THRESHOLD (P19/P20): his lectures treat religious premises as private convictions outside knowledge, which bears on the point, but he neither places nor explicitly denies a personal God in what was read.""",P20 note
+hubble-edwin,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses whether any group is favoured in events.""","""Scored on the world's order (P7). Nothing read addresses whether any group is favoured in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+hubble-edwin,body,,"A, C, E below threshold; mid_basin below threshold.","A and E below threshold, C UNKNOWN; mid_basin below threshold.",P19
+hubble-edwin,worldview/statements/0,verified_against,"""primary facsimile""","""scholarly edition""","P21: posthumous collection (Huntington Library, 1954), an edited text"
+hubble-edwin,worldview/statements/1,verified_against,"""primary facsimile""","""scholarly edition""","P21: posthumous collection (Huntington Library, 1954), an edited text"
+hubble-edwin,worldview/statements/2,verified_against,"""primary facsimile""","""scholarly edition""","P21: posthumous collection (Huntington Library, 1954), an edited text"
+hubble-edwin,institutions/2,kind,employer,"""research institute""",P21: Mount Wilson Observatory (Carnegie Institution)
+hubble-edwin,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+hubble-edwin,record,record_version,2,3,record_version +1
+hubble-edwin,record,last_updated,2026-10-02,2026-10-02,
+hubble-edwin,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+ibn-sina,worldview/changes_over_life/0,value,UNKNOWN,BELOW_THRESHOLD,"P19: IEP notes a debate (evidence bears, too weak), so BELOW_THRESHOLD"
+ibn-sina,worldview/changes_over_life/0,note,,"""Evidence bears on the point but is too weak to code a change (P19).""",P19
+ibn-sina,basics/occupations,cites,"[{source: S1, locator: ""Top Questions; Life and education""}, {source: S2, locator: ""§1.1""}, {source: S4, locator: ""§1""}, {source: S5, locator: ""Biography""}]","[{source: S1, locator: ""Life and education""}, {source: S2, locator: ""§1.1""}, {source: S4, locator: ""§1""}, {source: S5, locator: ""Biography""}]",P26: Top Questions box not citable
+ibn-sina,contribution/evidence_of_impact/2,cites,"[{source: S1, locator: ""Top Questions""}, {source: S4, locator: ""§3""}]","[{source: S4, locator: ""§3""}]",P26
+ibn-sina,contribution/evidence_of_impact/2,certainty,1.0,0.7,P26/P15: one source left
+ibn-sina,contribution/evidence_of_impact/2,how_known,"""Two sources.""","""IEP.""",P26
+ibn-sina,worldview/nominal_affiliations/0,cites,"[{source: S1, locator: ""Top Questions ('Avicenna's religion was Islam')""}, {source: S4, locator: ""§1""}, {source: S5, locator: ""Biography""}]","[{source: S4, locator: ""§1""}, {source: S5, locator: ""Biography""}]",P26
+ibn-sina,worldview/nominal_affiliations/0,how_known,"""Three sources. Britannica's Top Questions box is a summary feature; the IEP and MacTutor facts carry the claim.""","""Two sources (IEP, MacTutor).""",P26
+ibn-sina,collaborators/6,cites,"[{source: S4, locator: ""opening paragraph; §3""}, {source: S1, locator: ""Top Questions""}]","[{source: S4, locator: ""opening paragraph; §3""}]",P26
+ibn-sina,collaborators/6,certainty,1.0,0.7,P26/P15: one source left
+ibn-sina,collaborators/6,how_known,"""Two sources.""","""IEP.""",P26
+ibn-sina,text,,"""Britannica's 'Top Questions' box (S1) may be AI-generated; it is used only alon","""Britannica's 'Top Questions' box (S1) is AI-generated and is not cited (decisio",P26
+ibn-sina,text,,"""Signed article by a historian of medicine; fact-checked by Britannica editors. ","""Signed article by a historian of medicine; fact-checked by Britannica editors. ",P26
+ibn-sina,childhood/schooling/0,stage,"""religious school""","""elementary school""",P21: school stage split
+ibn-sina,childhood/schooling/0,run_by,,"""religious body""",P21
+ibn-sina,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+ibn-sina,record,record_version,6,7,record_version +1
+ibn-sina,record,last_updated,2026-10-02,2026-10-02,
+ibn-sina,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+kepler-johannes,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+kepler-johannes,body,,C and E below threshold,"C UNKNOWN, E below threshold",P19
+kepler-johannes,basics/first_lasting_contribution_year,how_known,"""The 1604 optics gave 'a new and correct account of how vision occurs' (S1). If the planetary laws are taken as the first lasting contribution, the year is 1609, so 0.7.""","""The earliest listed lasting item (lasting_original_contributions/0): the 1604 optics gave 'a new and correct account of how vision occurs' (S1). Rule P13/P23: the year is that of the earliest listed item that is itself lasting. Kept at 0.7 until it is checked whether S1–S2 call the Mysterium cosmographicum (1596, a major work, not listed as lasting) a lasting contribution (P17).""",P23: no coder-chosen alternative
+kepler-johannes,basics/first_lasting_contribution_year,alternatives,", alternatives: [{value: 1609, cites: [{source: S2, locator: ""opening paragraph""}], note: ""First two laws, Astronomia nova.""}]",(removed),P23: an alternative that rests on choosing a different defining work is not allowed
+kepler-johannes,childhood/schooling/1,stage,"""religious school""","""grammar or secondary school""",P21
+kepler-johannes,childhood/schooling/1,run_by,,"""religious body""",P21: Lutheran seminary
+kepler-johannes,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+kepler-johannes,record,record_version,3,4,record_version +1
+kepler-johannes,record,last_updated,2026-10-02,2026-10-02,
+kepler-johannes,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+lavoisier-antoine,basics/death/place,cites,"[{source: S1, locator: ""Quick Facts; Top Questions""}]","[{source: S1, locator: ""Quick Facts""}]",P26
+lavoisier-antoine,basics/death/place,certainty,0.7,0.7,P15/P26: one source
+lavoisier-antoine,basics/death/place,how_known,"""Britannica; the execution is in every source.""","""Britannica.""",P26
+lavoisier-antoine,basics/languages_of_work,cites,"[{source: S1, locator: ""Top Questions ('he did not know that language')""}, {source: S4, locator: ""title page""}]","[{source: S4, locator: ""title page""}]",P26
+lavoisier-antoine,basics/languages_of_work,how_known,"""He wrote in French and did not read English; his wife translated English works for him.""","""His own Traité is in French (primary). That he did not read English was only in the Top Questions box and is not used (P26).""",P26
+lavoisier-antoine,contribution/evidence_of_impact/0,cites,"[{source: S1, locator: ""Top Questions""}, {source: S2, locator: ""opening""}]","[{source: S2, locator: ""opening""}]",P26
+lavoisier-antoine,contribution/evidence_of_impact/0,certainty,1.0,0.7,P26/P15
+lavoisier-antoine,contribution/evidence_of_impact/0,how_known,"""Two sources.""","""SHI.""",P26
+lavoisier-antoine,institutions/1,cites,"[{source: S2, locator: ""'Early Career'""}, {source: S1, locator: ""Top Questions""}]","[{source: S2, locator: ""'Early Career'""}]",P26
+lavoisier-antoine,institutions/1,certainty,1.0,0.7,P26/P15
+lavoisier-antoine,institutions/1,how_known,"""Two sources.""","""SHI.""",P26
+lavoisier-antoine,collaborators/0,cites,"[{source: S1, locator: ""Top Questions""}, {source: S2, locator: ""opening""}]","[{source: S2, locator: ""opening""}]",P26
+lavoisier-antoine,collaborators/0,certainty,1.0,0.7,P26/P15
+lavoisier-antoine,collaborators/0,how_known,"""Two sources.""","""SHI.""",P26
+lavoisier-antoine,review/controversies/0,value,"""Execution in the Terror as a former tax farmer; the 'La République n'a pas besoin de savants' remark is legendary""","""Execution in the Terror with other financiers; the 'La République n'a pas besoin de savants' remark is legendary""","P26: ""as a former tax farmer"" was in the Top Questions box; the article body says executed with other financiers"
+lavoisier-antoine,review/controversies/0,cites,"[{source: S1, locator: ""Top Questions""}, {source: S5, locator: ""p. 360""}]","[{source: S1, locator: ""opening""}, {source: S5, locator: ""p. 360""}]",P26
+lavoisier-antoine,text,,"""first_lasting_contribution_year 1772 (combustion experiments, sealed note of 1 ","""first_lasting_contribution_year 1772 is the source-dated start of the earliest ",P23: no coder-chosen defining work
+lavoisier-antoine,basics/first_lasting_contribution_year,how_known,"""Year of his first combustion experiments, the start of the oxygen theory (the earliest item in lasting_original_contributions): in 1772 he found that phosphorus and sulphur gain weight on burning, and deposited a sealed note with the Académie on 1 November 1772 (Grimaux, p. 103 and n. 1, which prints the note); SHI's bibliography lists Guerlac's book on 'His First Experiments on Combustion in 1772'. 1774 (the earlier value) is the year of Priestley's Paris visit (SHI), not of Lavoisier's own work. The Easter 1775 memoir on the new air (Grimaux, p. 108) is the alternative; which step counts as the first lasting contribution is the coder's choice, so 0.5.""","""Year of his first combustion experiments, the start of the oxygen theory (the earliest item in lasting_original_contributions): in 1772 he found that phosphorus and sulphur gain weight on burning, and deposited a sealed note with the Académie on 1 November 1772 (Grimaux, p. 103 and n. 1, which prints the note); SHI's bibliography lists Guerlac's book on 'His First Experiments on Combustion in 1772'. 1774 (the earlier value) is the year of Priestley's Paris visit (SHI), not of Lavoisier's own work. The listed item's year is a range (1770s–1780s); the sources read do not settle whether it starts with the 1772 note or with the Easter 1775 memoir on the new air (Grimaux, p. 108), so 0.5 with 1775 named (P23, P25).""",P23
+lavoisier-antoine,body,,"(coder's choice, 0.5; the Easter 1775 memoir is the alternative)","(the source-dated start of the earliest listed lasting item; 0.5, since the sources read leave open whether it starts here or with the Easter 1775 memoir)",P23
+lavoisier-antoine,worldview/statements/2,kind,"""other""","""unpublished manuscript""",P18
+lavoisier-antoine,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+lavoisier-antoine,record,record_version,3,4,record_version +1
+lavoisier-antoine,record,last_updated,2026-10-02,2026-10-02,
+lavoisier-antoine,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); first lasting year per P13/P23, no coder's-choice wording; Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+leavitt-henrietta-swan,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+leavitt-henrietta-swan,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+leavitt-henrietta-swan,worldview/lio_axes/A_locus,note,,"""Stays BELOW_THRESHOLD (P19): her colleague Solon Bailey's memorial sketch of her church attachment is another person's report, which bears on the point but cannot score it.""",P19 note
+leavitt-henrietta-swan,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses favour for a group in events.""","""Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+leavitt-henrietta-swan,body,,"A, C, D, E below threshold; mid_basin below threshold.","A and E below threshold, C and D UNKNOWN; mid_basin below threshold.",P19
+leavitt-henrietta-swan,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+leavitt-henrietta-swan,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+leavitt-henrietta-swan,record,record_version,2,3,record_version +1
+leavitt-henrietta-swan,record,last_updated,2026-10-02,2026-10-02,
+leavitt-henrietta-swan,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+libby-willard,worldview/primary_system,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,worldview/lio_axes/A_locus,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses favour for a group in events.""","""Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+libby-willard,worldview/mid_basin,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,worldview/mid_basin,how_known,"""A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar.""","""A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19).""","P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+libby-willard,body,,"primary_system BELOW_THRESHOLD. B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold.","primary_system UNKNOWN. B 4 at 0.5 from the working science; A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.",P19
+libby-willard,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+libby-willard,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+libby-willard,record,record_version,2,3,record_version +1
+libby-willard,record,last_updated,2026-10-02,2026-10-02,
+libby-willard,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+maxwell-james-clerk,worldview/statements/6,kind,"""other""","""unpublished manuscript""","P18: essay read to the Eranus club, printed only after his death"
+maxwell-james-clerk,worldview/statements/10,kind,"""notebook or diary""","""document in own hand""",P18: prayer fragment found among his papers
+maxwell-james-clerk,worldview/statements/0,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/1,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/6,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/7,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/8,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/9,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,worldview/statements/10,verified_against,"""primary facsimile""","""scholarly edition""","P21: read as printed in Campbell & Garnett (1882), an edited Life"
+maxwell-james-clerk,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+maxwell-james-clerk,record,record_version,8,9,record_version +1
+maxwell-james-clerk,record,last_updated,2026-10-02,2026-10-02,
+maxwell-james-clerk,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+meitner-lise,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+meitner-lise,body,,"B 4 at 0.5, the other axes below threshold.","B 4 at 0.5; C UNKNOWN, the other axes below threshold.",P19
+meitner-lise,body,,"A, C, D, E below threshold; mid_basin","A, D, E below threshold, C UNKNOWN; mid_basin",P19
+meitner-lise,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+meitner-lise,institutions/0,kind,employer,"""research institute""",P21
+meitner-lise,institutions/1,kind,employer,"""research institute""",P21
+meitner-lise,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+meitner-lise,record,record_version,3,4,record_version +1
+meitner-lise,record,last_updated,2026-10-02,2026-10-02,
+meitner-lise,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+mendeleev-dmitri,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+mendeleev-dmitri,body,,"A, C, D, E below threshold","A, D, E below threshold, C UNKNOWN",P19
+mendeleev-dmitri,body,,"A, C, D, E below threshold","A, D, E below threshold, C UNKNOWN",P19
+mendeleev-dmitri,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+mendeleev-dmitri,record,record_version,3,4,record_version +1
+mendeleev-dmitri,record,last_updated,2026-10-02,2026-10-02,
+mendeleev-dmitri,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+newton-isaac,worldview/statements/17,kind,"""other""","""unpublished manuscript""","P18: a draft rebuttal, never published by him"
+newton-isaac,worldview/statements/18,kind,"""notebook or diary""","""unpublished manuscript""","P18: Keynes MSS, finished private treatises and articles, not a diary"
+newton-isaac,worldview/statements/19,kind,"""notebook or diary""","""unpublished manuscript""","P18: Keynes MSS, finished private treatises and articles, not a diary"
+newton-isaac,worldview/statements/20,kind,"""notebook or diary""","""unpublished manuscript""","P18: Keynes MSS, finished private treatises and articles, not a diary"
+newton-isaac,worldview/statements/21,kind,"""notebook or diary""","""unpublished manuscript""","P18: Keynes MSS, finished private treatises and articles, not a diary"
+newton-isaac,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+newton-isaac,record,record_version,8,9,record_version +1
+newton-isaac,record,last_updated,2026-10-02,2026-10-02,
+newton-isaac,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+oppenheimer-j-robert,worldview/lio_axes/A_locus,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+oppenheimer-j-robert,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+oppenheimer-j-robert,worldview/lio_axes/D_authority,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+oppenheimer-j-robert,worldview/lio_axes/E_scope,how_known,"""Scored on the world's order (P7). Nothing read addresses favour for a group in events.""","""Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19).""",P19 E clause
+oppenheimer-j-robert,worldview/mid_basin,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+oppenheimer-j-robert,worldview/mid_basin,how_known,"""A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar.""","""A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19).""","P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+oppenheimer-j-robert,body,,"A, C, D, E below threshold; mid_basin below threshold.","A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.",P19
+oppenheimer-j-robert,worldview/lio_axes/B_cause,basis,scholarly_reconstruction,inference_from_work,P24
+oppenheimer-j-robert,institutions/3,kind,employer,"""research institute""",P21
+oppenheimer-j-robert,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+oppenheimer-j-robert,record,record_version,2,3,record_version +1
+oppenheimer-j-robert,record,last_updated,2026-10-02,2026-10-02,
+oppenheimer-j-robert,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+pasteur-louis,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+pasteur-louis,body,,"A, C, E below threshold","A and E below threshold, C UNKNOWN",P19
+pasteur-louis,body,,"A, C, E below threshold","A and E below threshold, C UNKNOWN",P19
+pasteur-louis,childhood/parents_and_household/0,cites,"[{source: S1, locator: ""'Early education'; Top Questions""}]","[{source: S1, locator: ""'Early education'""}]",P26: Top Questions box not citable
+pasteur-louis,childhood/parents_and_household/0,how_known,"""Britannica (two passages).""","""Britannica.""",P26
+pasteur-louis,childhood/household_circumstances,value,"""Relatively poor family of a tanner, one of four children; the family moved from Dole to Arbois""","""Tanner's family; the family moved from Dole to Arbois""","P26: ""relatively poor"" and ""one of four children"" were only in the Top Questions box"
+pasteur-louis,childhood/household_circumstances,cites,"[{source: S1, locator: ""Top Questions; 'Early education'""}]","[{source: S1, locator: ""'Early education'; opening""}]",P26
+pasteur-louis,heritage/ethnic_or_communal_heritage,cites,"[{source: S1, locator: ""'Early education'; Top Questions""}]","[{source: S1, locator: ""'Early education'""}]",P26
+pasteur-louis,institutions/6,kind,"""academy or learned society""","""research institute""",P21
+pasteur-louis,childhood/schooling/0,stage,"""dame or charity school""","""elementary school""",P21: school stage split
+pasteur-louis,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+pasteur-louis,record,record_version,3,4,record_version +1
+pasteur-louis,record,last_updated,2026-10-02,2026-10-02,
+pasteur-louis,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+pauling-linus,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+pauling-linus,record,record_version,3,4,record_version +1
+pauling-linus,record,last_updated,2026-10-02,2026-10-02,
+pauling-linus,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+planck-max,worldview/lio_axes/C_ledger,value,BELOW_THRESHOLD,UNKNOWN,"P19: the sources read say nothing on the point, so UNKNOWN (not BELOW_THRESHOLD)"
+planck-max,body,,C below threshold,C UNKNOWN,P19
+planck-max,body,,C below threshold,C UNKNOWN,P19
+planck-max,worldview/primary_system,rationale,"""English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). DEISM use_when: own writing affirms a creator known by reason and rejects revelation, miracles and church authority as sources of religious knowledge. Met: belief in nature-miracles must retreat (copy p. 2); symbols and rite are indispensable but 'auch das heiligste Symbol menschlichen Ursprungs ist' (copy p. 5); the world order that science reaches is to be identified with God (copy p. 11). Only partly met, 'known by reason': whether God rules the world independently of belief 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären' and is 'einzig und allein Sache des Glaubens' (copy p. 6), and for action he relies on 'die bestimmte und klare Weisung … aus der unmittelbaren Verbindung mit Gott' (copy p. 12), a non-rational link, where DEISM has reason and nature only. So DEISM fits his rejection of miracle and doctrine, not a reasoned proof of God. Heilbron's 'Planck's deism' (S6) is unconfirmed in the book and is loose: it describes a religion that 'omitted all reference to established religions', and DEISM's do-not-use note warns against coding from a label. Alternatives: PANT (the identification sentence and 'wesensgleich', copy pp. 11–12; part 1 of the PANT test not clearly met, since the same lecture speaks of 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11); CHRIST (Protestant tradition; valued religious symbols; the 1945 letter reported by Bertholet seems to show a more personal God, S9 n. 48; against it, the 1947 denial of a personal and a Christian God, now confirmed in German, S9). Held at 0.5.""","""English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). DEISM use_when: own writing affirms a creator known by reason and rejects revelation, miracles and church authority as sources of religious knowledge. Met: belief in nature-miracles must retreat (copy p. 2); symbols and rite are indispensable but 'auch das heiligste Symbol menschlichen Ursprungs ist' (copy p. 5); the world order that science reaches is to be identified with God (copy p. 11). Only partly met, 'known by reason': whether God rules the world independently of belief 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären' and is 'einzig und allein Sache des Glaubens' (copy p. 6), and for action he relies on 'die bestimmte und klare Weisung … aus der unmittelbaren Verbindung mit Gott' (copy p. 12), a non-rational link, where DEISM has reason and nature only. So DEISM fits his rejection of miracle and doctrine, not a reasoned proof of God. Heilbron's 'Planck's deism' (S6) is unconfirmed in the book and is loose: it describes a religion that 'omitted all reference to established religions', and DEISM's do-not-use note warns against coding from a label. Alternatives: PANT (the identification sentence and 'wesensgleich', copy pp. 11–12; part 1 of the PANT test not clearly met, since the same lecture speaks of 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11); CHRIST (Protestant tradition; valued religious symbols; the 1945 letter reported by Bertholet seems to show a more personal God, S9 n. 48; against it, the 1947 denial of a personal and a Christian God, now confirmed in German, S9). Held at 0.5. P27 test (DEISM needs rejection of revelation as a source of truth): met for doctrine and miracle, since even the holiest symbol is of human origin (copy p. 5) and belief in nature-miracles must retreat (copy p. 2); his 'Weisung' from a direct link with God (copy p. 12) concerns action, not truth claims. If that link is read as revelation, DEISM fails and PANT is next; one reason the code stays at 0.5.""",P27 check
+planck-max,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+planck-max,record,record_version,5,6,record_version +1
+planck-max,record,last_updated,2026-10-02,2026-10-02,
+planck-max,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; DEISM revelation test recorded (P27). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+schrodinger-erwin,institutions/2,kind,employer,"""research institute""",P21
+schrodinger-erwin,record,schema_version,"""1.2""","""1.3""","schema 1.3 (P18, P21, P24, P28)"
+schrodinger-erwin,record,record_version,5,6,record_version +1
+schrodinger-erwin,record,last_updated,2026-10-02,2026-10-02,
+schrodinger-erwin,record/change_log,+,,"Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. one reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed.",change log
+lavoisier-antoine,worldview/nominal_affiliations/0,how_known,"""Grimaux, from the birth record printed in his appendix.""","""Primary document printed in S3: the birth and baptism record in Grimaux's appendix.""",P15: a primary document printed in a source is not a single-source cap; how_known says so
+lavoisier-antoine,heritage/religious_heritage_by_birth,how_known,"""Baptism record.""","""Primary document printed in S3: the baptism record in Grimaux's appendix.""",P15: a primary document printed in a source is not a single-source cap; how_known says so
+lavoisier-antoine,heritage/baptism_or_initiation,how_known,"""Grimaux, from the parish record (appendix).""","""Primary document printed in S3: the parish record in Grimaux's appendix.""",P15: a primary document printed in a source is not a single-source cap; how_known says so
+boyle-robert,line 129,rationale,"rationale: ""Reward and punishment of persons: God has given man 'an explicite and poſitive Law, enforc'd by Threatning ſ","rationale: ""Reward and punishment of persons: God has given man 'an explicite and positive Law, enforc'd by Threatning s",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,line 136,rationale,"rationale: ""Mixed. Reason keeps the judging role: the understanding is to 'Examine, whether the Teſtimony be indeed Divi","rationale: ""Mixed. Reason keeps the judging role: the understanding is to 'Examine, whether the Testimony be indeed Divi",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,line 182,text,"- text: ""an explicite and poſitive Law, enforc'd by Threatning ſevere Penalties to the Stubborn Tranſgreſſors; and Promi","- text: ""an explicite and positive Law, enforc'd by Threatning severe Penalties to the Stubborn Transgressors; and Promi",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,line 185,context,"context: ""Christian Virtuoso: what God has 'vouchſafed to Man' beyond natural religion; the passage continues that provi","context: ""Christian Virtuoso: what God has 'vouchsafed to Man' beyond natural religion; the passage continues that provi",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,line 190,text,"- text: ""For here alſo the Underſtanding is to Examine, whether the Teſtimony be indeed Divine; and, whether a Divine Te","- text: ""For here also the Understanding is to Examine, whether the Testimony be indeed Divine; and, whether a Divine Te",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,line 200,coder_notes,"coder_notes: ""S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (r","coder_notes: ""S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (r",Long s normalised to s (stage 3-a handoff ruling; CODING_GUIDE §7)
+boyle-robert,coder_notes,coder_notes,(no long-s sentence),"+ ""Long s (ſ) in the TCP quotations is normalised to s ...""",CODING_GUIDE §7 long-s rule

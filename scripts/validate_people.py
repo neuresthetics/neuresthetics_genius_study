@@ -14,6 +14,10 @@ Checks
   7. The body has every required section heading.
   8. data/reference/regions.csv (P3 country-to-region table) uses exactly the schema's region values, with no
      duplicate countries.
+  9. Schema version gating (schema 1.3, decisions P18, P21, P24, P28): a 1.2 file may not use 1.3-only values,
+     and a 1.3 file may not use the retired school stages 'religious school' / 'dame or charity school'.
+ 10. Warning (decision P15): a non-worldview fact at certainty 1.0 that cites only one source and no primary
+     source. Derived fields (era_bucket, age_at_first_lasting_contribution, region_of_birth) are exempt.
 
 Usage
   python3 scripts/validate_people.py                     # all person files
@@ -26,7 +30,7 @@ import argparse, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib.records import (REPO, read_record, load_schema, schema_errors, common_checks, read_csv, system_codes,
-                         person_files, fill_counts, walk)
+                         person_files, fill_counts, walk, claims)
 
 REQUIRED_SECTIONS = ["Summary", "Contribution and impact", "Childhood and education", "Adult working worldview",
                      "Heritage (context only)", "Timing", "Lane B notes (labeled belief model)", "Open questions",
@@ -80,7 +84,7 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
     for where, c in worldview_claims:
         v = c.get("value")
         if v is not None and not (isinstance(v, str) and v in {"TODO", "UNKNOWN", "BELOW_THRESHOLD"}) and not c.get("basis"):
-            errors.append(f"{where}: a filled worldview claim needs basis (written_profession / consistent_private_letters / scholarly_reconstruction)")
+            errors.append(f"{where}: a filled worldview claim needs basis (written_profession / consistent_private_letters / recorded_interview / scholarly_reconstruction / inference_from_work)")
     for i, c in enumerate(wv.get("candidate_codes_considered") or []):
         if c.get("code") not in codes:
             errors.append(f"worldview/candidate_codes_considered/{i}: code {c.get('code')!r} is not a file in systems/")
@@ -88,7 +92,56 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
         rid = d.get("roster_id")
         if rid and rid not in ids:
             errors.append(f"collaborators/{'/'.join(p)}: roster_id {rid!r} is not in person_ids.csv")
+    e3, w3 = version_checks(data)
+    errors += e3; warnings += w3
     return errors, warnings, data
+
+
+V13_QUOTE_KINDS = {"autobiography", "unpublished manuscript", "document in own hand", "published letter"}
+V13_INSTITUTION_KINDS = {"research institute"}
+V13_STAGES = {"elementary school"}
+RETIRED_STAGES = {"religious school", "dame or charity school"}
+DERIVED_FIELDS = {("basics", "era_bucket"), ("timing", "age_at_first_lasting_contribution"), ("basics", "region_of_birth")}
+
+
+def version_checks(data):
+    """Schema 1.3 gating (decisions P18, P21, P24, P28) and the P15 single-source warning."""
+    errors, warnings = [], []
+    ver = str((data.get("record") or {}).get("schema_version"))
+    wv = data.get("worldview") or {}
+    used13 = []
+    for i, st in enumerate(wv.get("statements") or []):
+        if isinstance(st, dict) and st.get("kind") in V13_QUOTE_KINDS:
+            used13.append(f"worldview/statements/{i}/kind {st['kind']!r}")
+    for i, inst in enumerate(data.get("institutions") or []):
+        if isinstance(inst, dict) and inst.get("kind") in V13_INSTITUTION_KINDS:
+            used13.append(f"institutions/{i}/kind {inst['kind']!r}")
+    for i, sc in enumerate((data.get("childhood") or {}).get("schooling") or []):
+        if not isinstance(sc, dict):
+            continue
+        if sc.get("stage") in V13_STAGES:
+            used13.append(f"childhood/schooling/{i}/stage {sc['stage']!r}")
+        if "run_by" in sc:
+            used13.append(f"childhood/schooling/{i}/run_by")
+        if ver == "1.3" and sc.get("stage") in RETIRED_STAGES:
+            errors.append(f"childhood/schooling/{i}/stage: {sc['stage']!r} is retired in schema 1.3; give the level "
+                          "(e.g. 'elementary school') and put who ran it in run_by (P21)")
+    for p, c in claims(data):
+        if c.get("basis") == "inference_from_work":
+            used13.append(f"{'/'.join(p)}/basis inference_from_work")
+    if ver == "1.2":
+        for u in used13:
+            errors.append(f"{u} needs schema_version 1.3")
+    sources = {s.get("id"): s for s in data.get("sources") or [] if isinstance(s, dict)}
+    for p, c in claims(data):
+        if c.get("certainty") != 1.0 or c.get("basis") or tuple(p[:2]) in DERIVED_FIELDS or p[0] == "worldview" and len(p) > 1 and p[1] in ("lio_axes", "primary_system", "secondary_system", "mid_basin"):
+            continue
+        ids = {x.get("source") for x in c.get("cites") or [] if isinstance(x, dict)}
+        if "primary document printed in" in str(c.get("how_known") or "").lower():
+            continue  # a register entry or similar read as printed in a secondary work (CODING_GUIDE §3, P15)
+        if len(ids) < 2 and not any((sources.get(i) or {}).get("type") == "primary" for i in ids):
+            warnings.append(f"{'/'.join(p)}: certainty 1.0 on one non-primary source; one reliable source caps a fact at 0.7 (P15)")
+    return errors, warnings
 
 
 def check_regions(schema):

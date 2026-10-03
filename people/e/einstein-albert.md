@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 5
+  schema_version: "1.3"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. It rests on the sacred-texts.com copy of the 1930 and 1941 essays (S3), and no authoritative edition was reachable to check the wording. No mid_basin change (it depends on A and B only)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: einstein-albert
@@ -28,7 +29,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Albert Einstein", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "heading"}], how_known: "Two sources agree."}
-  native_name: {value: "Albert Einstein (German)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Same spelling in German; born in Ulm, Württemberg."}
+  native_name: {value: "Albert Einstein (German)", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Same spelling in German; born in Ulm, Württemberg."}
   aliases:
     - {name: "Albert-Einstein", kind: "roster alias"}
     - {name: "Einstein-Albert", kind: "roster alias"}
@@ -56,7 +57,7 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "From first_lasting_contribution_year (decision P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Ulm, Württemberg (now Baden-Württemberg), Germany')"}], how_known: "Germany is Western Europe in data/reference/regions.csv (decision P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "The 1905 papers were written at the Bern patent office and general relativity (1915) in Berlin (Switzerland and Germany are Western Europe in regions.csv). From 1933 he worked in Princeton (North America). Two regions, so 0.7.", alternatives: [{value: "North America", cites: [{source: S1, locator: "Quick Facts"}], note: "Institute for Advanced Study, Princeton, 1933–1955."}]}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "As the sources record it."}
   languages_of_work: {value: [German, English], certainty: 0.7, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "headnotes"}], how_known: "The physics papers are in German; the later essays appear in English (S3 headnotes give US publication)."}
   occupations: {value: [physicist, "patent examiner", "university professor"], certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "opening paragraph"}], how_known: "Two sources."}
 
@@ -67,19 +68,19 @@ contribution:
     - {value: "Special theory of relativity and mass–energy equivalence", year: "1905", kind: theory, lasting: "standard physics", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
     - {value: "General theory of relativity", year: "1915", kind: theory, lasting: "MacTutor: 'still regarded as the most satisfactory model of the large-scale universe that we have'", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Summary; Biography"}], how_known: "Two sources."}
   evidence_of_impact:
-    - {value: "Nobel Prize for Physics 1921; Copley Medal 1925", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
-    - {value: "MacTutor: 'Einstein contributed more than any other scientist to the modern vision of physical reality.'", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S2, locator: "Summary"}], how_known: "MacTutor."}
+    - {value: "Nobel Prize for Physics 1921; Copley Medal 1925", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
+    - {value: "MacTutor: 'Einstein contributed more than any other scientist to the modern vision of physical reality.'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "Summary"}], how_known: "MacTutor."}
   major_works: []
   honours:
-    - {value: "Nobel Prize for Physics", year: 1921, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
-  definition_fit: {value: "clearly meets", rationale: "Several lasting original theories, each standard physics.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
+    - {value: "Nobel Prize for Physics", year: 1921, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Several lasting original theories, each standard physics.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Jewish; his parents were secular", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education ('Einstein's parents were secular, middle-class Jews')"}, {source: S2, locator: "Biography (taught Judaism at home)"}], how_known: "Two sources."}
   family_religious_practice: {value: "Secular household, but he was given Jewish religious instruction at home and later at the Gymnasium", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}, {source: S2, locator: "Biography"}], how_known: "Two sources, each giving one half."}
   parents_and_household:
-    - {value: "Father, Hermann Einstein, a featherbed salesman who later ran an electrochemical factory", name: "Hermann Einstein", role: father, certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica; undisputed."}
-    - {value: "Mother, Pauline Koch, ran the household", name: "Pauline Einstein (née Koch)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica; undisputed."}
+    - {value: "Father, Hermann Einstein, a featherbed salesman who later ran an electrochemical factory", name: "Hermann Einstein", role: father, certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica; undisputed."}
+    - {value: "Mother, Pauline Koch, ran the household", name: "Pauline Einstein (née Koch)", role: mother, certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica; undisputed."}
   household_circumstances: {value: "Middle-class; his father's business failures disrupted his schooling (1894 move of the family to Milan)", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   schooling:
     - {value: "School in Munich from about 1886", stage: "grammar or secondary school", years: "c. 1886–1888", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor; the elementary school is not named in the sources read."}
@@ -89,18 +90,18 @@ childhood:
   early_mathematics: {value: "geometry (Euclid-style proof)", note: "At 12 he devoured a geometry book he called his 'sacred little geometry book'; calculus from about 1891 (age 12)", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   early_geometric_style_reasoning: {value: "Euclidean geometry book at 12, then higher mathematics with Max Talmud", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
   early_science_exposure:
-    - {value: "Compass at age five; Bernstein's popular science books via Max Talmud; light-beam thought experiment at 16", age: 5, certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
+    - {value: "Compass at age five; Bernstein's popular science books via Max Talmud; light-beam thought experiment at 16", age: 5, certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
   key_early_reading:
-    - {value: "Aaron Bernstein, Naturwissenschaftliche Volksbücher", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
+    - {value: "Aaron Bernstein, Naturwissenschaftliche Volksbücher", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
   childhood_mentors:
-    - {value: "Max Talmud (Talmey), medical student and informal tutor", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
+    - {value: "Max Talmud (Talmey), medical student and informal tutor", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
   languages_in_childhood: {value: [German], certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Born and schooled in Germany."}
   notable_events:
     - {value: "Became 'deeply religious at age 12', composing songs in praise of God; this changed after he read science books", age: 12, certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica (one source)."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1905–1955", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "From the 1905 papers to his death."}
+  working_years: {value: "1905–1955", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From the 1905 papers to his death."}
   nominal_affiliations:
     - {value: "Jewish by descent; no synagogue membership is reported in the sources read", role: "other", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "One source."}
   self_described_science_religion_relation:
@@ -132,8 +133,8 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "'Religion and Science' (1930); 'Science and Religion' part II (1941)"}, {source: S1, locator: "Top Questions ('He does not play dice', letter to Born, December 1926)"}]
-      how_known: "Two published essays eleven years apart, consistent with the 1926 letter to Born. Below the 1.0 ceiling for the same reason as C: the key sentences are put in the third person ('the man who is thoroughly convinced', 'for him'), which speaks for his own view only indirectly (§3 same pattern, lens audit batch 2)."
+      cites: [{source: S3, locator: "'Religion and Science' (1930); 'Science and Religion' part II (1941)"}]
+      how_known: "Two published essays eleven years apart. Below the 1.0 ceiling for the same reason as C: the key sentences are put in the third person ('the man who is thoroughly convinced', 'for him'), which speaks for his own view only indirectly (§3 same pattern, lens audit batch 2)."
       rationale: "Scored on his account of nature (P6). At the law pole: such a man 'cannot for a moment entertain the idea of a being who interferes in the course of events' (S3, 1930); 'neither the rule of human nor the rule of divine will exists as an independent cause of natural events' (S3, 1941); 'there is no room left by the side of this ordered regularity for causes of a different nature' (S3, 1941). No exception is stated."
     C_ledger:
       value: 4
@@ -245,17 +246,17 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "German Jewish", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: "Jewish (secular parents)", certainty: 1.0, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
+  ethnic_or_communal_heritage: {value: "German Jewish", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
+  religious_heritage_by_birth: {value: "Jewish (secular parents)", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "Britannica."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: "Jewish religious instruction at home, then at the Luitpold Gymnasium", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1905–1915", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Special relativity to general relativity."}
+  major_work_period: {value: "1905–1915", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Special relativity to general relativity."}
   age_at_first_lasting_contribution: {value: 26, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Biography"}], how_known: "Born March 1879; the 1905 papers."}
-  first_evidence_of_lio_type_views: {value: "Letter to Born: 'He does not play dice'", year: 1926, certainty: 0.7, cites: [{source: S1, locator: "Top Questions"}], how_known: "Earliest dated statement in the sources read; Britannica's childhood account (science books contradicting religion at 12) is earlier but not an LIO view as such."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The dated statements read (1926, 1929, 1930, 1941) are after the major work. Whether he held them during 1905–1915 is not shown in S1–S5.", certainty: 0.5, cites: [{source: S1, locator: "Top Questions"}, {source: S4, locator: "cable text"}], how_known: "Coder's reading of dates."}
+  first_evidence_of_lio_type_views: {value: "Cable to Rabbi Goldstein: 'I believe in Spinoza's God'", year: 1929, certainty: 0.7, cites: [{source: S4, locator: "cable text"}], how_known: "Earliest dated statement in the citable sources read. The December 1926 letter to Born ('He does not play dice') is known here only from Britannica's AI-generated Top Questions box, which is not cited (P26). Britannica's childhood account (science books contradicting religion at 12) is earlier but not an LIO view as such."}
+  lio_views_relative_to_major_work: {value: "unclear", rationale: "The dated statements read (1929, 1930, 1941) are after the major work. Whether he held them during 1905–1915 is not shown in S1–S5.", certainty: 0.5, cites: [{source: S4, locator: "cable text"}, {source: S3, locator: "1930; 1941"}], how_known: "Coder's reading of dates."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -267,12 +268,11 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Swiss Patent Office, Bern", role: "technical expert", years: "1902–1909", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor; Britannica agrees."}
-  - {value: "Institute for Advanced Study, Princeton", role: "professor", years: "1933–1955", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "Biography (offer of a post at Princeton after the 1932 visit)"}, {source: S1, locator: "Quick Facts"}], how_known: "MacTutor gives a post at Princeton from 1933 and death there (S1). The Institute is not named in the text read, so 0.7 (gap)."}
+  - {value: "Swiss Patent Office, Bern", role: "technical expert", years: "1902–1909", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor; Britannica agrees."}
+  - {value: "Institute for Advanced Study, Princeton", role: "professor", years: "1933–1955", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "Biography (offer of a post at Princeton after the 1932 visit)"}, {source: S1, locator: "Quick Facts"}], how_known: "MacTutor gives a post at Princeton from 1933 and death there (S1). The Institute is not named in the text read, so 0.7 (gap)."}
 collaborators:
   - {value: "Marcel Grossmann", relation: collaborator, note: "fellow student at Zürich; helped with the mathematics of general relativity", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
-  - {value: "Max Planck", roster_id: planck-max, relation: "influenced by", note: "Einstein's 1905 light-quantum paper used Planck's quantum hypothesis", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
-  - {value: "Max Born", relation: correspondent, note: "the 1926 'dice' letter", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}], how_known: "Britannica."}
+  - {value: "Max Planck", roster_id: planck-max, relation: "influenced by", note: "Einstein's 1905 light-quantum paper used Planck's quantum hypothesis", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 5) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 6"}], how_known: "Study roster."}
@@ -374,7 +374,7 @@ German Jewish, secular parents [S1, Childhood and education]. Context only.
 
 ## Timing
 
-First lasting contribution 1905, at 26 [S2, Biography]. The religious statements read date from 1926 on [S1, Top Questions; S4, cable text]; timing relative to the major work is unclear.
+First lasting contribution 1905, at 26 [S2, Biography]. The religious statements read date from 1929 on [S4, cable text; S3]; timing relative to the major work is unclear.
 
 ## Lane B notes (labeled belief model)
 

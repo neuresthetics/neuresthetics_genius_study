@@ -9,7 +9,7 @@
 # Competing sources:               fill value with the best-supported one, certainty 0.5, and list the rest under alternatives.
 record:
   record_type: person
-  schema_version: "1.2"
+  schema_version: "1.3"
   record_version: 1
   review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision; only a named human sets reviewed (P5)
   collected_by: TODO                      # person or agent that ran the collection
@@ -63,7 +63,7 @@ childhood:                                # birth to about 17; give ages where k
   family_religious_practice: {value: TODO}
   parents_and_household: []               # - {value: "Father, James, a blacksmith", name: "James Faraday", role: father, ...}
   household_circumstances: {value: TODO}
-  schooling: []                           # - {value: "...", stage: "dame or charity school", years: "...", ages: "...", ...}
+  schooling: []                           # - {value: "...", stage: "elementary school", run_by: "religious body", years: "...", ages: "...", ...}  stage is the level; run_by (optional) says who ran it (P21)
   early_mathematics: {value: TODO}        # none known | arithmetic only | basic algebra | geometry (Euclid-style proof) | advanced mathematics | other
   early_geometric_style_reasoning: {value: TODO}   # definition-to-consequence practice before ~17 (Euclid, logic, disputation, catechism as proof ...)
   early_science_exposure: []              # - {value: "...", year: 1810, age: 19, ...}
@@ -77,7 +77,7 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
   working_years: {value: TODO}            # e.g. "1812–1862"
   nominal_affiliations: []                # church / community membership, offices held. Membership is not ideology.
   self_described_science_religion_relation: {value: TODO}
-  primary_system: {value: TODO}           # a code in systems/; needs basis + certainty within its ceiling (written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7, scholarly_reconstruction 0.5)
+  primary_system: {value: TODO}           # a code in systems/; needs basis + certainty within its ceiling (written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7, scholarly_reconstruction 0.5, inference_from_work 0.5)
   secondary_system: {value: TODO}         # only if they published in two systems; else value: UNKNOWN with how_known
   candidate_codes_considered: []          # - {code: CLTHEI, reason: "..."}
   lio_axes:                               # 0–4 scale (P1): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole
@@ -87,7 +87,7 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
     D_authority: {value: TODO}
     E_scope: {value: TODO}                # the world's order (P7): same rules for all kinds; no in-group exceptions in events. Salvation and moral community go on C
   mid_basin: {value: TODO}                # P4/P6 test: true if A_locus <= 1 and B_cause (account of nature) >= 3, both certainty >= 0.7; see METHOD
-  statements: []                          # verbatim quotes only; - {text: "...", cites: [...], date: "1844-10-24", kind: "private letter", verified_against: "primary transcription", verified_on: 2026-01-01}
+  statements: []                          # verbatim quotes only; - {text: "...", cites: [...], date: "1844-10-24", kind: "private letter", verified_against: "primary transcription", verified_on: 2026-01-01}  kinds and verified_against: CODING_GUIDE §7
   changes_over_life: []
   coder_notes: ""
 
@@ -114,7 +114,7 @@ lane_b:
   reading: ""
   notes: ""
 
-institutions: []                          # - {value: "Royal Institution", role: "...", years: "...", kind: employer, ...}
+institutions: []                          # - {value: "Royal Institution", role: "...", years: "...", kind: "research institute", ...}
 collaborators: []                         # - {value: "Humphry Davy", roster_id: davy-humphry, relation: "mentor or employer", ...}
 
 review:

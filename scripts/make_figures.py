@@ -21,10 +21,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
-from matplotlib.transforms import Bbox  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import REPO, read_record, read_csv, person_files, is_interview  # noqa: E402
+from lib.records import REPO, read_record, read_csv, person_files, is_interview, people_axis_points  # noqa: E402
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -143,44 +142,40 @@ def fig_core_composition(out):
 
 # 3 ------------------------------------------------------------------------
 def fig_people_cause_locus(out):
-    pts = []
-    for f in person_files():
-        d, _ = read_record(f)
-        lio = d["worldview"]["lio_axes"]
-        a, b = lio["A_locus"], lio["B_cause"]
-        if not (isinstance(a.get("value"), int) and isinstance(b.get("value"), int)):
-            continue
-        pts.append((d["identity"]["display_name"], b["value"], a["value"],
-                    f"{a.get('certainty')}{' (interview)' if is_interview(a) else ''}",
-                    f"{b.get('certainty')}{' (interview)' if is_interview(b) else ''}",
-                    value(d["worldview"]["mid_basin"]), min(a.get("certainty"), b.get("certainty"))))
-    fig, ax = plt.subplots(figsize=(10.5, 7.5))
+    """Markers sit on a small grid inside their (B, A) cell, so they never overlap, and carry a number.
+    Names and scores go in a key panel beside the plot (several columns if needed), so there are no
+    labels on the plot that could collide. The layout cannot fail for any number of people."""
+    pts, _ = people_axis_points()
+    pts = sorted(pts, key=lambda p: (-p["A"], p["B"], p["name"]))
+    cells = collections.defaultdict(list)
+    for k, p in enumerate(pts, 1):
+        p["k"] = k
+        cells[(p["B"], p["A"])].append(p)
+    n_rows_key = 12
+    ncols = max(1, -(-len(pts) // n_rows_key))
+    W = 9.5 + 4.4 * ncols
+    fig = plt.figure(figsize=(W, 8.0))
+    left = 1.75 / W
+    axw = 6.6 / W
+    ax = fig.add_axes((left, 0.15, axw, 0.70))
+    kx0 = left + axw + 0.25 / W
     ax.add_patch(Rectangle((2.5, -0.5), 2, 2, color="#55A868", alpha=0.13, lw=0))
     zone = Rectangle((0, 0), 1, 1, color="#55A868", alpha=0.25, lw=0)
-    # Decision P8 (Jason, 2026-10-02): interview-based scores are flagged in the labels.
-    flag = Rectangle((0, 0), 1, 1, fill=False, lw=0)
-    ax.legend([zone, flag], ["mid-basin zone: A_locus ≤ 1 and B_cause ≥ 3\n(P4 also needs certainty ≥ 0.7 on both axes)",
-                             "(interview) after a certainty: that axis rests on\ninterview evidence (decision P8)"],
+    ax.legend([zone], ["mid-basin zone: A_locus ≤ 1 and B_cause ≥ 3\n(P4 also needs certainty ≥ 0.7 on both axes)"],
               loc="upper left", fontsize=9, frameon=False)
-    # Labels run to the right of their point, so a label can collide with anything in
-    # the same A_locus row: its own cell or a cell to its right. Every point in a row
-    # gets its own vertical slot. After layout, each label is checked against every
-    # other label and every other marker; a label that still touches one is moved to
-    # the left of its point. If anything still overlaps, the script stops.
-    rows = collections.defaultdict(list)
-    for p in sorted(pts, key=lambda p: (p[2], p[1], p[0])):
-        rows[p[2]].append(p)
-    items = []  # (text, x, y, marker size in points^2)
-    for ay, ps in rows.items():
-        n = len(ps)
-        step = min(0.17, 0.85 / n)
-        for i, (name, b, a, ca, cb, mb, c) in enumerate(ps):
-            y = ay + (i - (n - 1) / 2) * step
-            size = 60 + 260 * c
-            ax.scatter(b - 0.08, y, s=size, color="#4C72B0", alpha=0.35 + 0.6 * c,
-                       edgecolor="black", lw=0.6, zorder=3)
-            t = ax.text(b + 0.05, y, f"{name}  (A {ca}, B {cb})", va="center", fontsize=9, zorder=4)
-            items.append((t, b, y, size))
+    for (b, a), ps in cells.items():
+        cols = max(1, int(-(-len(ps) ** 0.5 // 1)))
+        rws = -(-len(ps) // cols)
+        sp = min(0.2, 0.8 / max(cols, rws))
+        size = min(150, (sp * 0.85 * 6.6 / 5 * 72) ** 2)  # marker diameter stays below the grid spacing
+        for i, p in enumerate(ps):
+            r, c = divmod(i, cols)
+            x = b + (c - (cols - 1) / 2) * sp
+            y = a - (r - (rws - 1) / 2) * sp
+            cert = min(p["cA"], p["cB"])
+            ax.scatter(x, y, s=size, color="#4C72B0", alpha=0.35 + 0.6 * cert, edgecolor="black", lw=0.6, zorder=3)
+            ax.text(x, y, str(p["k"]), ha="center", va="center", fontsize=6.5, color="white" if cert >= 0.7 else "black",
+                    zorder=4, fontweight="bold")
     ax.set_xlim(-0.5, 4.5)
     ax.set_ylim(-0.5, 4.5)
     ax.set_xticks(range(5), ["0\ninterventionist", "1", "2", "3", "4\nLIO pole"])
@@ -188,33 +183,38 @@ def fig_people_cause_locus(out):
     ax.set_xlabel("B_cause (0–4)")
     ax.set_ylabel("A_locus (0–4)")
     ax.grid(alpha=0.25)
-    ax.set_title(f"The {len(pts)} draft person records: B_cause vs A_locus\n"
-                 "points in the same A_locus row are spread vertically; size and opacity = lower of the two certainties",
-                 fontsize=11)
-    footer(fig, "Source: people/**/*.md, worldview.lio_axes. Unreviewed drafts; not a sample.")
-    fig.tight_layout(rect=(0, 0.06, 1, 1))
+    fig.suptitle(f"The {len(pts)} draft person records with both axes scored: B_cause vs A_locus\n"
+                 "markers in one cell are laid out on a grid; opacity = lower of the two certainties; numbers refer to the key",
+                 fontsize=11, x=0.5, y=0.97)
+
+    def tag(c, i):
+        return f"{c}{' (interview)' if i else ''}"
+
+    def mb(v):
+        return str(v).lower() if isinstance(v, bool) else str(v)
+
+    fig.text(kx0, 0.87, "Key: number, name; A score @ certainty, B score @ certainty, mid_basin", fontsize=8.5,
+             fontweight="bold", va="bottom")
+    colw = (1 - kx0 - 0.01) / ncols
+    texts = []
+    for idx, p in enumerate(pts):
+        col, row = divmod(idx, n_rows_key)
+        y0 = 0.85 - row * 0.058
+        texts.append(fig.text(kx0 + col * colw, y0, f"{p['k']:>2}. {p['name']}", fontsize=8, va="top"))
+        texts.append(fig.text(kx0 + col * colw + 0.012, y0 - 0.024,
+                              f"A {p['A']} @ {tag(p['cA'], p['iA'])}, B {p['B']} @ {tag(p['cB'], p['iB'])}, mid_basin {mb(p['mid_basin'])}",
+                              fontsize=7.5, va="top", color="#333333"))
+    fig.text(kx0, 0.075, "\"(interview)\" after a certainty: that axis rests on interview evidence (decision P8).",
+             fontsize=7.5, va="bottom", color="#333333")
+    # Shrink the key font until every line fits its column; never fails, only gets smaller.
     fig.canvas.draw()
     r = fig.canvas.get_renderer()
-
-    def marker_box(b, y, size):
-        cx, cy = ax.transData.transform((b - 0.08, y))
-        half = (size ** 0.5) / 2 * fig.dpi / 72
-        return Bbox.from_extents(cx - half, cy - half, cx + half, cy + half)
-
-    def clashes(k):
-        bb = items[k][0].get_window_extent(r)
-        for j, (t2, b2, y2, s2) in enumerate(items):
-            if j != k and (bb.overlaps(t2.get_window_extent(r)) or bb.overlaps(marker_box(b2, y2, s2))):
-                return True
-        return False
-
-    for k, (t, b, y, size) in enumerate(items):
-        if clashes(k):
-            t.set_position((b - 0.22, y))
-            t.set_ha("right")
-    bad = [items[k][0].get_text() for k in range(len(items)) if clashes(k)]
-    if bad:
-        raise SystemExit(f"people_cause_locus: labels still overlap: {bad}")
+    limit = colw * fig.bbox.width - 6
+    while max(t.get_window_extent(r).width for t in texts) > limit and texts[0].get_fontsize() > 4:
+        for t in texts:
+            t.set_fontsize(t.get_fontsize() - 0.5)
+        fig.canvas.draw()
+    footer(fig, "Source: people/**/*.md, worldview.lio_axes and mid_basin. Unreviewed drafts; not a sample.")
     save(fig, out, "people_cause_locus.png")
 
 

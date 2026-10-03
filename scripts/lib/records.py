@@ -6,7 +6,8 @@ from jsonschema import Draft202012Validator
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SENTINELS = {"TODO", "UNKNOWN", "BELOW_THRESHOLD"}
-BASIS_CERTAINTY = {"written_profession": 1.0, "consistent_private_letters": 0.7, "recorded_interview": 0.7, "scholarly_reconstruction": 0.5}
+BASIS_CERTAINTY = {"written_profession": 1.0, "consistent_private_letters": 0.7, "recorded_interview": 0.7, "scholarly_reconstruction": 0.5,
+                   "inference_from_work": 0.5}  # inference_from_work: decision P24, schema 1.3
 CITE_IN_BODY = re.compile(r"\[(S\d+(?:[^\]]*)?)\]")
 SOURCE_ID = re.compile(r"\bS\d+\b")
 
@@ -181,3 +182,40 @@ def person_files():
 def system_files():
     d = os.path.join(REPO, "systems")
     return sorted(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".md") and f != "README.md")
+
+
+def people_axis_points():
+    """The person records that have both A_locus and B_cause scored (integers), for the person chart and its
+    README caption. Returns (points, n_files). Each point is a dict with name, A, B, their certainties and
+    interview flags, and mid_basin. Shared by scripts/make_figures.py and scripts/progress_status.py."""
+    pts, n = [], 0
+    for f in person_files():
+        d, _ = read_record(f)
+        n += 1
+        lio = d["worldview"]["lio_axes"]
+        a, b = lio["A_locus"], lio["B_cause"]
+        if not (isinstance(a.get("value"), int) and isinstance(b.get("value"), int)):
+            continue
+        mb = d["worldview"].get("mid_basin") or {}
+        pts.append({"name": d["identity"]["display_name"], "A": a["value"], "B": b["value"],
+                    "cA": a.get("certainty"), "cB": b.get("certainty"),
+                    "iA": is_interview(a), "iB": is_interview(b),
+                    "mid_basin": mb.get("value") if isinstance(mb, dict) else mb})
+    return pts, n
+
+
+def people_chart_caption():
+    """README caption for figures/people_cause_locus.png, computed from the records."""
+    pts, n = people_axis_points()
+    bs = sorted({p["B"] for p in pts})
+    if not bs:
+        brange = "no person has both axes scored"
+    elif len(bs) == 1:
+        brange = f"every plotted person is B_cause {bs[0]}"
+    else:
+        brange = ("every plotted person is B_cause " + ", ".join(map(str, bs[:-1])) + f" or {bs[-1]}")
+    return (f"*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. "
+            f"Only records with both axes scored are plotted ({len(pts)} of the {n} coded people); {brange}, and "
+            "these hand-picked people are not a sample. Each marker carries a number; the key gives the name, both "
+            "scores with their certainties, and mid_basin. \"(interview)\" after a certainty means that score rests on "
+            "interview evidence (decision P8).*")

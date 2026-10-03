@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (major work 1946–49; Jason, 2026-10-02). Basics from Britannica (Gleick), MacTutor and the Nobel biography. Worldview from his own talk 'The Relation of Science and Religion' (Caltech YMCA Lunch Forum, 2 May 1956), printed in Engineering and Science 19:9 (June 1956), pp. 20–23, read on Caltech's own site and checked on the page images. primary_system AGNOS at 0.7 (stub; ATHE named). B 4, D 2, E 4, all at 0.7; A, C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #59 (both runs): birth place 'New York City (Manhattan; ...)' at 1.0 → 'New York City' at 1.0; the borough is noted as contested (0.5), Far Rockaway, Queens, per Britannica and MacTutor's Quick Info, with Manhattan (implied by MacTutor's Biography, paragraph 2) as the alternative. MacTutor Biography locators renumbered to the page's visible paragraphs (paragraph 1 is the parents, 2 the Manhattan apartment, 3 the move to Far Rockaway). #63 / decision P13: the 1939 MIT thesis ('an original and enduring approach to calculating forces in molecules', Britannica) is now a listed contribution (0.7), so first_lasting_contribution_year 1939 (0.7) and age 21 rest on a listed item; values unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; A_locus note (P20). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: feynman-richard
@@ -25,7 +26,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Richard Phillips Feynman", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('In full')"}, {source: S3, locator: "paragraph 1 ('Richard P. Feynman')"}], how_known: "Britannica gives the full name; the Nobel biography and the 1956 byline give 'Richard P.'."}
-  native_name: {value: "Richard Feynman (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "Richard Feynman (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "Feynman-Richard", kind: "roster alias"}
     - {name: "Richard-Feynman", kind: "roster alias"}
@@ -39,40 +40,40 @@ basics:
     date: {value: "1988-02-15", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "closing note"}], how_known: "Two sources agree."}
     place: {value: "Los Angeles, California", modern_name: "Los Angeles, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   first_lasting_contribution_year: {value: 1939, certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('his undergraduate thesis (1939) proposed an original and enduring approach')"}], how_known: "The MIT undergraduate thesis on forces in molecules, listed as a contribution because Britannica calls it 'original and enduring'; it is the earliest listed contribution (decision P13). His main work (QED) is 1946–49."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2); the QED work (by 1948) is in the same bucket."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2); the QED work (by 1948) is in the same bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Princeton, Los Alamos, Cornell, Caltech."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Princeton, Los Alamos, Cornell, Caltech."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S4, locator: "p. 20"}, {source: S1, locator: "lectures paragraph"}], how_known: "American physicist; papers, lectures and books in English."}
   occupations: {value: ["theoretical physicist", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
 
 contribution:
   fields: {value: ["quantum electrodynamics", "theoretical physics", "particle physics"], certainty: 1.0, cites: [{source: S1, locator: "paragraphs 2 and 'Five particular achievements'"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
   lasting_original_contributions:
-    - {value: "Reconstruction of quantum electrodynamics, removing the meaningless results of the older theory", year: "1946–1949", kind: theory, lasting: "Nobel Prize 1965 (shared with Schwinger and Tomonaga)", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2; 'Five particular achievements' ('By 1948 Feynman completed this reconstruction')"}], how_known: "Britannica (start year is the coder's reading of 'At war's end ... returned to studying the fundamental issues of quantum electrodynamics')."}
-    - {value: "Feynman diagrams", year: "1948–1949", kind: method, lasting: "permeated theoretical physics", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2; 'Second, he introduced simple diagrams'"}], how_known: "Britannica."}
+    - {value: "Reconstruction of quantum electrodynamics, removing the meaningless results of the older theory", year: "1946–1949", kind: theory, lasting: "Nobel Prize 1965 (shared with Schwinger and Tomonaga)", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2; 'Five particular achievements' ('By 1948 Feynman completed this reconstruction')"}], how_known: "Britannica (start year is the coder's reading of 'At war's end ... returned to studying the fundamental issues of quantum electrodynamics')."}
+    - {value: "Feynman diagrams", year: "1948–1949", kind: method, lasting: "permeated theoretical physics", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2; 'Second, he introduced simple diagrams'"}], how_known: "Britannica."}
     - {value: "Approach to calculating forces in molecules (MIT undergraduate thesis)", year: "1939", kind: method, lasting: "Britannica: 'an original and enduring approach to calculating forces in molecules'", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('his undergraduate thesis (1939) proposed an original and enduring approach to calculating forces in molecules')"}], how_known: "One source calls it lasting; added in the batch 4 lens audit so that first_lasting_contribution_year rests on a listed contribution (P13)."}
     - {value: "Path-integral (least-action, sum-over-paths) approach to quantum mechanics, with Wheeler at Princeton", year: "1942", kind: method, lasting: "standard formulation", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica; year is the doctorate year."}
-    - {value: "Quantum-mechanical explanation of superfluidity; V–A theory of the weak force with Gell-Mann; parton model", year: "1950s–1968", kind: theory, lasting: "standard physics", certainty: 1.0, cites: [{source: S1, locator: "paragraph after 'Five particular achievements'"}], how_known: "Britannica."}
+    - {value: "Quantum-mechanical explanation of superfluidity; V–A theory of the weak force with Gell-Mann; parton model", year: "1950s–1968", kind: theory, lasting: "standard physics", certainty: 0.7, cites: [{source: S1, locator: "paragraph after 'Five particular achievements'"}], how_known: "Britannica."}
   evidence_of_impact:
     - {value: "Britannica calls him 'the most brilliant, influential, and iconoclastic figure in his field in the post-World War II era'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "One signed article."}
-    - {value: "The Feynman Lectures on Physics became a classic textbook", kind: "standard textbook canon", certainty: 1.0, cites: [{source: S1, locator: "lectures paragraph"}], how_known: "Britannica."}
+    - {value: "The Feynman Lectures on Physics became a classic textbook", kind: "standard textbook canon", certainty: 0.7, cites: [{source: S1, locator: "lectures paragraph"}], how_known: "Britannica."}
   major_works:
-    - {value: "The Feynman Lectures on Physics, 3 vols.", year: 1963, kind: book, certainty: 1.0, cites: [{source: S1, locator: "lectures paragraph (1963–65)"}], how_known: "Britannica."}
-    - {value: "Quantum Electrodynamics", year: 1961, kind: book, certainty: 1.0, cites: [{source: S1, locator: "lectures paragraph"}], how_known: "Britannica."}
+    - {value: "The Feynman Lectures on Physics, 3 vols.", year: 1963, kind: book, certainty: 0.7, cites: [{source: S1, locator: "lectures paragraph (1963–65)"}], how_known: "Britannica."}
+    - {value: "Quantum Electrodynamics", year: 1961, kind: book, certainty: 0.7, cites: [{source: S1, locator: "lectures paragraph"}], how_known: "Britannica."}
   honours:
-    - {value: "Nobel Prize in Physics (shared with Schwinger and Tomonaga)", year: 1965, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
+    - {value: "Nobel Prize in Physics (shared with Schwinger and Tomonaga)", year: 1965, certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
     - {value: "Albert Einstein Award", year: 1954, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}], how_known: "Nobel biography."}
     - {value: "Lawrence Award", year: 1962, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}], how_known: "Nobel biography."}
     - {value: "Foreign Member of the Royal Society", year: 1965, certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
-  definition_fit: {value: "clearly meets", rationale: "Remade quantum electrodynamics; Feynman diagrams.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Remade quantum electrodynamics; Feynman diagrams.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: "Jewish (both parents from Jewish families)", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}, {source: S1, locator: "paragraph 3 ('descendant of Russian and Polish Jews')"}], how_known: "Two sources give the Jewish family background; the household's practice is not described."}
   family_religious_practice: {value: TODO, note: "Not described in the sources read. The often-quoted 1967 letter about leaving Sunday school was seen only on a blog and is not used."}
   parents_and_household:
-    - {value: "Father, Melville Feynman, born into a Jewish family in Minsk, came to the US at five; a businessman fascinated by science who wanted his son to be a scientist", name: "Melville Feynman", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraphs 1–2"}], how_known: "MacTutor, drawing on Gleick."}
-    - {value: "Mother, Lucille Phillips, born in the US into a Jewish family of Polish immigrants; trained as a primary school teacher", name: "Lucille Feynman (née Phillips)", role: mother, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
+    - {value: "Father, Melville Feynman, born into a Jewish family in Minsk, came to the US at five; a businessman fascinated by science who wanted his son to be a scientist", name: "Melville Feynman", role: father, certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 1–2"}], how_known: "MacTutor, drawing on Gleick."}
+    - {value: "Mother, Lucille Phillips, born in the US into a Jewish family of Polish immigrants; trained as a primary school teacher", name: "Lucille Feynman (née Phillips)", role: mother, certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
   household_circumstances: {value: "A brother died at four weeks when Richard was five; sister Joan born when he was nine; settled in Far Rockaway at ten", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor."}
   schooling:
     - {value: "Far Rockaway High School; won the New York University Math Championship in his final year", stage: "grammar or secondary school", years: "–1935", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 4–5"}], how_known: "MacTutor; end year is the coder's reading (MIT from 1935, BSc 1939)."}
@@ -86,12 +87,12 @@ childhood:
     - {value: "Encyclopaedia Britannica", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 4"}], how_known: "MacTutor."}
   childhood_mentors:
     - {value: "His father, Melville Feynman", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 2"}], how_known: "MacTutor."}
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "American-born."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "American-born."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1939–1988", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "MIT thesis to death."}
+  working_years: {value: "1939–1988", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "MIT thesis to death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Conflict over metaphysics, none over ethics: science cannot disprove God, but its habit of doubt turns 'Is there a God?' into 'How sure is it that there is a God?', and there is 'definitely a conflict [...] over the metaphysical aspects of religion'; moral questions are 'outside of the scientific realm'; Western civilization stands on two heritages, the scientific spirit of uncertainty and Christian ethics."
@@ -111,7 +112,7 @@ worldview:
     - {code: ATHE, reason: "Named alternative: the conventional God's world-as-stage seems 'inadequate', and he counts atheists among his colleagues; but he does not deny God in this text. Stub system file (flag).", cites: [{source: S4, locator: "pp. 21–22"}]}
     - {code: JUDA, reason: "Rejected: Jewish family background is heritage, never a code; no adult Jewish belief or practice in the sources read.", cites: [{source: S2, locator: "Biography, paragraph 1"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "He leaves God's existence uncertain and places no God anywhere; nothing scores the locus."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "He leaves God's existence uncertain and places no God anywhere; nothing scores the locus. The 'stage for God' theory 'seems to be inadequate' (p. 22) is a hedged rejection, not an explicit denial of a personal intervening God, so A stays BELOW_THRESHOLD (P20)."}
     B_cause:
       value: 4
       basis: written_profession
@@ -211,15 +212,15 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Manhattan Project (Princeton, then Los Alamos)", role: "group leader in the theoretical division", years: "1941–1945", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "World War II paragraph"}], how_known: "Britannica."}
+  - {value: "Manhattan Project (Princeton, then Los Alamos)", role: "group leader in the theoretical division", years: "1941–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "World War II paragraph"}], how_known: "Britannica."}
   - {value: "Cornell University", role: "professor of theoretical physics", years: "1945–1950", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "'At war's end'"}], how_known: "Two sources."}
   - {value: "California Institute of Technology", role: "professor of theoretical physics; Richard Chace Tolman Professor", years: "1950–1988", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "'In 1950 he became professor'"}], how_known: "Two sources."}
 collaborators:
-  - {value: "John Archibald Wheeler", relation: teacher, note: "doctoral adviser at Princeton; least-action approach", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
-  - {value: "Hans Bethe", roster_id: bethe-hans, relation: "mentor or employer", note: "head of the Los Alamos theoretical division; yield formula", certainty: 1.0, cites: [{source: S1, locator: "World War II paragraph"}], how_known: "Britannica."}
-  - {value: "Murray Gell-Mann", roster_id: gell-mann-murray, relation: collaborator, note: "theory of the weak force (1958)", certainty: 1.0, cites: [{source: S1, locator: "paragraph after 'Five particular achievements'"}], how_known: "Britannica."}
-  - {value: "Julian Schwinger", roster_id: schwinger-julian, relation: other, note: "shared the 1965 Nobel Prize (independent equivalent theory)", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
-  - {value: "Sin-Itiro Tomonaga", roster_id: tomonaga-sin-itiro, relation: other, note: "shared the 1965 Nobel Prize", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
+  - {value: "John Archibald Wheeler", relation: teacher, note: "doctoral adviser at Princeton; least-action approach", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
+  - {value: "Hans Bethe", roster_id: bethe-hans, relation: "mentor or employer", note: "head of the Los Alamos theoretical division; yield formula", certainty: 0.7, cites: [{source: S1, locator: "World War II paragraph"}], how_known: "Britannica."}
+  - {value: "Murray Gell-Mann", roster_id: gell-mann-murray, relation: collaborator, note: "theory of the weak force (1958)", certainty: 0.7, cites: [{source: S1, locator: "paragraph after 'Five particular achievements'"}], how_known: "Britannica."}
+  - {value: "Julian Schwinger", roster_id: schwinger-julian, relation: other, note: "shared the 1965 Nobel Prize (independent equivalent theory)", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
+  - {value: "Sin-Itiro Tomonaga", roster_id: tomonaga-sin-itiro, relation: other, note: "shared the 1965 Nobel Prize", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 5, all five models). Included in the fourth batch by owner decision, borderline on the stage-2 date window (1600–1950).", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 69"}], how_known: "Study roster; batch inclusion by Jason, 2026-10-02."}

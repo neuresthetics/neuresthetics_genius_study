@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica, MacTutor, his Nobel autobiography (Les Prix Nobel 1983) and Parker's NAS Biographical Memoir (1997). Worldview from his own words in the AIP interview of 6 October 1987 (Krisciunas): 'he knew I was an atheist'. primary_system ATHE at 0.5 (one oral self-description; no basis type fits a recorded interview, so capped by analogy with the single-letter rule; flagged). A 4 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (both runs, #19, #20, #25). S5 carries AIP's no-quotation notice, so under P8's last sentence only a paraphrase can be published and the interview cannot score an axis or code on its own; the record's earlier reading (quoting verbatim avoids the limit) was circular. Treated like Bohr's S7: S5 is now paraphrased throughout and its two verbatim statements were removed. primary_system ATHE 0.7 → 0.5 and A_locus 4 0.7 → 0.5, both basis recorded_interview → scholarly_reconstruction (as before P8); self-described relation 0.7 → 0.5; B_cause unchanged (4 at 0.5). mid_basin false (0.5) → BELOW_THRESHOLD (A and B both only at 0.5). Stale Wali note reworded. Not reviewed. Interview-based fields (primary_system, A_locus, the self-described relation, lio_views_relative_to_major_work, worldview_during_major_work, circle_present) now start their how_known with '(interview)' (P8 as signed off by Jason, 2026-10-02)."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: chandrasekhar-subrahmanyan
@@ -25,7 +26,7 @@ identity:
     status: core
     field: physics
     field_bucket: physics
-  full_name: {value: "Subrahmanyan Chandrasekhar", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "header"}], how_known: "Two sources; the Nobel page spells it 'Subramanyan'."}
+  full_name: {value: "Subrahmanyan Chandrasekhar", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "header"}], how_known: "Two sources; the Nobel page spells it 'Subramanyan'."}
   native_name: {value: UNKNOWN, how_known: "The Tamil-script form is not given in S1–S5."}
   aliases:
     - {name: "Chandrasekhar-Subrahmanyan", kind: "roster alias"}
@@ -41,7 +42,7 @@ basics:
     date: {value: "1995-08-21", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "header"}, {source: S3, locator: "note at end"}], how_known: "Three sources agree."}
     place: {value: "Chicago", modern_name: "Chicago, Illinois, United States", polity_then: "United States", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "final paragraphs"}], how_known: "Two sources agree."}
   first_lasting_contribution_year: {value: 1930, certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('on his voyage to England in 1930')"}, {source: S4, locator: "shipboard paragraph"}, {source: S3, locator: "Nobel-cited papers (1931)"}], how_known: "The white-dwarf mass limit was worked out on the 1930 voyage; the first papers appeared in 1931."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2)."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "South Asia", certainty: 1.0, cites: [{source: S1, locator: "opening ('Lahore, India [now in Pakistan]')"}], how_known: "Pakistan (and India) are South Asia in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S3, locator: "paragraph 5"}, {source: S4, locator: "Chicago paragraphs"}], how_known: "Chicago from 1937 to his death; the mass limit itself (1930–35) was done in Madras, on the voyage and at Cambridge (Northern Europe)."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1 ('the first son')"}], how_known: "His own account."}
@@ -68,7 +69,7 @@ contribution:
     - {value: "Gold Medal of the Royal Astronomical Society", year: 1953, certainty: 1.0, cites: [{source: S1, locator: "paragraph 5"}, {source: S4, locator: "honours paragraph"}], how_known: "Two sources."}
     - {value: "Nobel Prize in Physics", year: 1983, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Nobel paragraph"}], how_known: "Two sources."}
     - {value: "Copley Medal of the Royal Society", year: 1984, certainty: 1.0, cites: [{source: S1, locator: "paragraph 5"}, {source: S2, locator: "Copley paragraph"}], how_known: "Two sources."}
-  definition_fit: {value: "clearly meets", rationale: "Founded the theory of white-dwarf collapse and led several branches of theoretical astrophysics.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Founded the theory of white-dwarf collapse and led several branches of theoretical astrophysics.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Hindu by birth (Tamil Brahmin), in a family Parker calls 'free-thinking'", certainty: 0.7, cites: [{source: S4, locator: "opening sentence"}, {source: S2, locator: "Biography, paragraph 1 ('a Brahman family')"}], how_known: "Parker's description; MacTutor gives the Brahmin family. Religious practice at home was not described in what was read."}
@@ -87,11 +88,11 @@ childhood:
   early_science_exposure:
     - {value: "Read Sommerfeld's Atomic Structure and Spectral Lines on his own; met Sommerfeld (1928) and Heisenberg (1929) when they lectured at Presidency College", certainty: 1.0, cites: [{source: S4, locator: "Sommerfeld and Heisenberg paragraphs"}, {source: S5, locator: "on Heisenberg and others"}], how_known: "Parker; these are college years (17–19)."}
   key_early_reading:
-    - {value: "Sommerfeld, Atomic Structure and Spectral Lines", certainty: 1.0, cites: [{source: S4, locator: "Sommerfeld paragraph"}], how_known: "Parker."}
+    - {value: "Sommerfeld, Atomic Structure and Spectral Lines", certainty: 0.7, cites: [{source: S4, locator: "Sommerfeld paragraph"}], how_known: "Parker."}
   childhood_mentors:
     - {value: "His parents, who taught him at home", certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}, {source: S4, locator: "education paragraph"}], how_known: "Two sources."}
     - {value: "His uncle C. V. Raman, as a role model", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
-  languages_in_childhood: {value: [Tamil, English], certainty: 1.0, cites: [{source: S4, locator: "opening paragraphs"}], how_known: "Parker: a 'Tamil-speaking' family; his mother taught Tamil and English."}
+  languages_in_childhood: {value: [Tamil, English], certainty: 0.7, cites: [{source: S4, locator: "opening paragraphs"}], how_known: "Parker: a 'Tamil-speaking' family; his mother taught Tamil and English."}
   notable_events:
     - {value: "Family moved from Lahore to Madras", year: "1918", certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}, {source: S4, locator: "Madras paragraph"}], how_known: "Two sources."}
 
@@ -133,7 +134,7 @@ worldview:
       how_known: "Scored on his working science (P6), mainly from Parker's account (scholarly reconstruction, 0.5). The interview remark (S5) is paraphrase-only and speaks to beauty and truth, not to law against exception, so it only supports the score (P8). Unchanged by the batch 3 audit."
       rationale: "Scored on his account of nature (P6). His work develops 'the implications of the basic physical laws of nature' (Parker, S4) with no special cases: a white dwarf above the limit must collapse whatever the expectations, against Eddington's insistence that 'stars do not behave in that way' (S4). In 1987 he gave the Kerr solution as an example of a search for abstract beauty matched exactly in nature (S5, paraphrased). No miracle, petition or exemption appears."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife, karma or moral reckoning in S1–S5. His atheism rules out a divine judge, but not every ledger (for example karma), so C is not inferred from it.", note: "Gap: Wali (1991, 1997)."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation or scripture in S1–S5.", note: "A widely quoted remark that he could not accept the Bhagavad Gita as divine because it 'was written by man' comes through secondary web pages citing Wali (1997); not read, so not used."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation or scripture in S1–S5.", note: "A widely quoted remark that he could not accept the Bhagavad Gita as divine because it 'was written by man' comes through secondary web pages citing Wali (1997); not read, so not used."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus (4) and B_cause (4) are both only at 0.5, under the test's 0.7 bar (CODING_GUIDE §6). If A reached 0.7 from a quotable document, the test would give false (A ≥ 3), with certainty set by A alone (decision P10).", note: "Was false at 0.5 from P8 (2026-10-02) until the lens audit batch 3 fix the same day."}
   statements: []
@@ -150,7 +151,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1930–1983", certainty: 1.0, cites: [{source: S3, locator: "the seven periods"}], how_known: "His own periods, from white dwarfs to black holes."}
-  age_at_first_lasting_contribution: {value: 19, certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Born October 1910; the limit was worked out on the voyage of July–August 1930."}
+  age_at_first_lasting_contribution: {value: 19, certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Born October 1910; the limit was worked out on the voyage of July–August 1930."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "The only dated statement is from 1987 (S5); no earlier evidence read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The atheist self-description is late (1987) and undated as to origin.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) Dates."}
   worldview_during_major_work: {value: "On his own later account, Struve knew during their Yerkes years (1937–1950) that he was an atheist", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) One retrospective remark (1987) about 1937–1950, paraphrased (AIP restricts quotation); dating his view to those years rests on hindsight, so 0.5."}
@@ -254,7 +255,7 @@ sources:
 
 ## Summary
 
-Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in a 1987 interview, in passing, that Otto Struve knew he was an atheist [S5, paraphrased]. ATHE at 0.5 (interview; one paraphrase-only interview, decision P8); A 4 at 0.5 (interview) and B 4 at 0.5; C, D, E below threshold; mid_basin below threshold.
+Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in a 1987 interview, in passing, that Otto Struve knew he was an atheist [S5, paraphrased]. ATHE at 0.5 (interview; one paraphrase-only interview, decision P8); A 4 at 0.5 (interview) and B 4 at 0.5; C and E below threshold, D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -270,7 +271,7 @@ His parents taught him at home until he was about twelve [S3, paragraph 2]. Alge
 
 ## Adult working worldview
 
-The only statement of his own read is from a 1987 AIP interview, which AIP's notice lets the record paraphrase but not quote: asked whether Struve was religious, he said that Struve knew he was an atheist and never raised the subject with him [S5]. In the same interview he called the maxim that the simple is the seal of the true a description of the fundamental truths of science [S5]. Under decision P8 a paraphrase-only interview cannot score an axis or code on its own, so the code and A stay at 0.5. Scores: A 4 (0.5, interview), B 4 (0.5, mainly Parker's reconstruction); C, D, E below threshold.
+The only statement of his own read is from a 1987 AIP interview, which AIP's notice lets the record paraphrase but not quote: asked whether Struve was religious, he said that Struve knew he was an atheist and never raised the subject with him [S5]. In the same interview he called the maxim that the simple is the seal of the true a description of the fundamental truths of science [S5]. Under decision P8 a paraphrase-only interview cannot score an axis or code on its own, so the code and A stay at 0.5. Scores: A 4 (0.5, interview), B 4 (0.5, mainly Parker's reconstruction); C and E below threshold, D UNKNOWN.
 
 ## Heritage (context only)
 

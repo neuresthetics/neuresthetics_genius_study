@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 8
+  schema_version: "1.3"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3 at 0.7. The interim P7 cap is gone, but certainty stays 0.7 under CODING_GUIDE §3, because the new rule makes a named alternative (2): his private articles petition the Father for 'blessings of this life' (S9, article 8). Rationale and statement tags updated; P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S6 (Project Gutenberg Opticks, 4th ed. 1730) is an unofficial copy. Checked it against S14, the University of California library scan of the 1730 edition (Internet Archive), with a second scan (Oxford copy) to resolve OCR noise. The five Query 31 quotations and the Query 28 passage agree word for word. Added S14 cites with the printed 1730 pages to the four certainty-1.0 fields that cite S6 (languages_of_work, major_works Opticks, self-described relation, A_locus) and to the five quotations, whose verified_against goes from primary transcription to primary facsimile. All stay at 1.0. Noted that S6's page markers run about 24 pages above the 1730 pagination. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -31,7 +32,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Sir Isaac Newton", certainty: 1.0, cites: [{source: S1, locator: "opening sentence; Leader of English science (knighted 1705)"}, {source: S2, locator: "Biography"}], how_known: "Both sources use this name; 'Sir' from his knighthood in 1705."}
-  native_name: {value: "Isaac Newton", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
+  native_name: {value: "Isaac Newton", certainty: 0.7, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
   aliases:
     - {name: "Isaac-Newton", kind: "roster alias"}
     - {name: "Newton-Isaac", kind: "roster alias"}
@@ -74,7 +75,7 @@ basics:
   era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Derived from first_lasting_contribution_year (1665) under the era buckets (decision P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in Lincolnshire, England; the United Kingdom is Northern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "Career; Warden of the mint"}, {source: S2, locator: "Biography"}], how_known: "All his posts were in Cambridge and London."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "throughout ('he', 'his', 'only son')"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "throughout ('he', 'his', 'only son')"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Latin, English], certainty: 1.0, cites: [{source: S1, locator: "opening sentence (Philosophiae Naturalis Principia Mathematica, 1687); Final years (Latin and English editions of the Opticks)"}, {source: S6, locator: "title page"}, {source: S14, locator: "title page"}], how_known: "The Principia was in Latin; the Opticks and his theological manuscripts were in English."}
   occupations:
     value: ["Lucasian professor of mathematics", "natural philosopher", "mathematician", "Warden and Master of the Royal Mint", "President of the Royal Society", "Member of Parliament (Convention Parliament)", "theologian and biblical scholar (mostly unpublished)"]
@@ -90,13 +91,13 @@ contribution:
     - {value: "The reflecting telescope", year: "by 1671", kind: invention, lasting: "reflecting telescopes", certainty: 1.0, cites: [{source: S1, locator: "Career ('he constructed the first ever built'; the Royal Society heard of it in 1671)"}, {source: S2, locator: "Biography (elected FRS in 1672 after donating one)"}], how_known: "Two sources agree. The build year itself is not given in the sources read."}
     - {value: "The three laws of motion and the law of universal gravitation (Principia)", year: 1687, kind: "law or principle", lasting: "the basic principles of classical mechanics", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree."}
   evidence_of_impact:
-    - {value: "Britannica calls his three laws of motion 'the basic principles of modern physics' and the Principia one of the most important single works in the history of modern science", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Signed reference article."}
+    - {value: "Britannica calls his three laws of motion 'the basic principles of modern physics' and the Principia one of the most important single works in the history of modern science", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Signed reference article."}
     - {value: "Young British scientists took him as their model, and within a generation the salaried science chairs in England were held by Newtonians", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "International prominence"}], how_known: "One source."}
     - {value: "Newton's laws of motion and the Newton–Raphson method carry his name", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Other pages about Isaac Newton (Newton-Raphson method)"}], how_known: "Named in both sources."}
   major_works:
     - {value: "Philosophiae Naturalis Principia Mathematica (2nd ed. 1713 with the General Scholium; 3rd ed. 1726)", year: 1687, kind: book, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Final years"}, {source: S4, locator: "General Scholium 'added to the second edition of the text in 1713'"}], how_known: "Two sources."}
     - {value: "Opticks (Latin edition 1706; English editions 1717–18 and later, with the expanded Queries)", year: 1704, kind: book, certainty: 1.0, cites: [{source: S1, locator: "Final years"}, {source: S6, locator: "title page (4th edition, 1730)"}, {source: S14, locator: "title page (fourth edition, corrected, 1730)"}], how_known: "Encyclopedia and the text itself."}
-    - {value: "Theological and chronological works on the prophecies of Daniel and St John and on ancient chronology, published after his death", year: "later years; posthumous", kind: other, certainty: 1.0, cites: [{source: S1, locator: "Interest in religion and theology"}], how_known: "Encyclopedia."}
+    - {value: "Theological and chronological works on the prophecies of Daniel and St John and on ancient chronology, published after his death", year: "later years; posthumous", kind: other, certainty: 0.7, cites: [{source: S1, locator: "Interest in religion and theology"}], how_known: "Encyclopedia."}
   honours:
     - {value: "Fellow of the Royal Society", year: 1672, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Career (election after the telescope)"}], how_known: "Two sources."}
     - {value: "One of eight foreign associates of the French Académie des Sciences", year: 1699, certainty: 0.7, cites: [{source: S1, locator: "Leader of English science ('Four years earlier' than 1703)"}], how_known: "One source; year computed from its wording."}
@@ -345,7 +346,7 @@ worldview:
       cites: [{source: S4, locator: "§7, quoting Newton 2004: 117"}]
       context: "Draft rebuttal of Leibniz's charge that the Principia makes gravity a 'perpetual miracle'; published only after Newton's death. Undated in the source read."
       axes: [B_cause]
-      kind: "other"
+      kind: "unpublished manuscript"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Quoted in SEP from Janiak's edition of Newton's Philosophical Writings (2004). The draft itself was not read."
@@ -353,7 +354,7 @@ worldview:
       cites: [{source: S9, locator: "f. 1r, article 1"}]
       context: "'Twelve articles on religion', a one-page private manuscript (Keynes MS 8). The Newton Project dates it post-1710."
       axes: [A_locus]
-      kind: "notebook or diary"
+      kind: "unpublished manuscript"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
       note: "Normalized transcription, checked against the original by the Newton Project editors."
@@ -361,7 +362,7 @@ worldview:
       cites: [{source: S9, locator: "f. 1r, article 8"}]
       context: "Same manuscript. Article 7 says prayers are 'most prevalent when directed to the father in the name of the son'."
       axes: [B_cause, C_ledger, E_scope]
-      kind: "notebook or diary"
+      kind: "unpublished manuscript"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
       note: "Petitionary prayer, outside his science; bears on the CHRIST/CLTHEI choice, not on B for his work. Under P7 it bears on E: it is the basis of the named alternative E = 2."
@@ -369,14 +370,14 @@ worldview:
       cites: [{source: S10, locator: "MS p. 36"}]
       context: "'Irenicum, or Ecclesiastical Polyty tending to Peace' (Keynes MS 3), on the duty, after Christ's resurrection, to believe in God's government of the world; 'him' is Jesus Christ."
       axes: [C_ledger]
-      kind: "notebook or diary"
+      kind: "unpublished manuscript"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "Atheism is so senseless & odious to mankind that it never had many professors."
       cites: [{source: S11, locator: "f. 1r"}]
       context: "'A short Schem of the true Religion' (Keynes MS 7), section 'Of Atheism'. It goes on to argue from the matched left and right sides of animal bodies."
       axes: [D_authority, A_locus]
-      kind: "notebook or diary"
+      kind: "unpublished manuscript"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life:
@@ -415,7 +416,7 @@ institutions:
 
 collaborators:
   - {value: "Isaac Barrow", relation: "mentor or employer", note: "Lucasian professor who passed Newton's De Analysi to Collins and recommended him as his successor in 1669", certainty: 1.0, cites: [{source: S1, locator: "Career"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
-  - {value: "Edmond Halley", roster_id: halley-edmund, relation: collaborator, note: "asked the 1684 question on orbits and persuaded Newton to write the Principia", years: "1684–1687", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
+  - {value: "Edmond Halley", roster_id: halley-edmund, relation: collaborator, note: "asked the 1684 question on orbits and persuaded Newton to write the Principia", years: "1684–1687", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
   - {value: "Robert Hooke", roster_id: hooke-robert, relation: "rival or critic", note: "disputes over light (from 1672) and over priority", certainty: 1.0, cites: [{source: S1, locator: "Controversy; The Principia"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   - {value: "Gottfried Wilhelm Leibniz", roster_id: leibniz-gottfried-wilhelm, relation: "rival or critic", note: "priority dispute over the calculus; criticism of gravity as a 'perpetual miracle'", certainty: 1.0, cites: [{source: S1, locator: "International prominence"}, {source: S4, locator: "§7"}], how_known: "Two sources."}
   - {value: "Christiaan Huygens", roster_id: huygens-christiaan, relation: "rival or critic", note: "objected to his 1672 paper on light", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "One source."}
@@ -428,7 +429,7 @@ collaborators:
   - {value: "Robert Boyle", roster_id: boyle-robert, relation: "influenced by", note: "the foundation for Newton's chemistry", certainty: 1.0, cites: [{source: S1, locator: "Influence of the Scientific Revolution"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
 
 review:
-  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 (v7) to 5 (v8 roster).", certainty: 1.0, cites: [{source: S13, locator: "roster.csv, rank 42"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 (v7) to 5 (v8 roster).", certainty: 0.7, cites: [{source: S13, locator: "roster.csv, rank 42"}], how_known: "Study roster."}
   controversies:
     - {value: "Calculus priority dispute with Leibniz; Newton, as President of the Royal Society, appointed the committee and wrote its report", certainty: 1.0, cites: [{source: S1, locator: "International prominence"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   data_quality_flags:

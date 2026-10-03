@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: hubble-edwin
@@ -25,7 +26,7 @@ identity:
     field: astronomy
     field_bucket: astronomy
   full_name: {value: "Edwin Powell Hubble", certainty: 1.0, cites: [{source: S1, locator: "'Also known as: Edwin Powell Hubble'"}, {source: S3, locator: "p. 13 ('Edwin Powell, who arrived by kerosene lamp')"}], how_known: "Two sources."}
-  native_name: {value: "Edwin Hubble (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "Edwin Hubble (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "Hubble-Edwin", kind: "roster alias"}
 
@@ -36,27 +37,27 @@ basics:
   death:
     date: {value: "1953-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "San Marino, California", modern_name: "San Marino, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1923, certainty: 1.0, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars in the Andromeda Nebula'"}], how_known: "Cepheids in the Andromeda Nebula, which settled that spirals are galaxies outside the Milky Way: the earliest listed contribution, dated 1923–1924, taken at its start year (decisions P12, P13). The galaxy classification is dated only '1920s' in S1, so it does not set the year (P12); a source dating it before 1923 would move the year."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
-  region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "Mount Wilson paragraphs"}], how_known: "Mount Wilson Observatory, California, from 1919."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the source records it."}
+  first_lasting_contribution_year: {value: 1923, certainty: 0.7, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars in the Andromeda Nebula'"}], how_known: "Cepheids in the Andromeda Nebula, which settled that spirals are galaxies outside the Milky Way: the earliest listed contribution, dated 1923–1924, taken at its start year (decisions P12, P13). The galaxy classification is dated only '1920s' in S1, so it does not set the year (P12); a source dating it before 1923 would move the year."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
+  region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "Mount Wilson paragraphs"}], how_known: "Mount Wilson Observatory, California, from 1919."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the source records it."}
   languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "title page"}, {source: S1, locator: "1936 paragraph"}], how_known: "His books and lectures are in English."}
-  occupations: {value: ["astronomer", "observatory staff astronomer"], certainty: 1.0, cites: [{source: S1, locator: "opening; Mount Wilson paragraphs"}], how_known: "Britannica."}
+  occupations: {value: ["astronomer", "observatory staff astronomer"], certainty: 0.7, cites: [{source: S1, locator: "opening; Mount Wilson paragraphs"}], how_known: "Britannica."}
 
 contribution:
-  fields: {value: ["extragalactic astronomy", "observational cosmology"], certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  fields: {value: ["extragalactic astronomy", "observational cosmology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Distance to the Andromeda Nebula from its Cepheid variables, showing that spiral nebulae are galaxies beyond the Milky Way", year: "1923–1924", kind: discovery, lasting: "convinced most astronomers that the universe contains many galaxies", certainty: 1.0, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars' paragraph; summary box ('In 1923-24')"}], how_known: "Britannica article and its summary."}
-    - {value: "Linear redshift–distance relation for galaxies (Hubble's law), with Milton Humason", year: "1929–1931", kind: "law or principle", lasting: "read as the expansion of the universe; the Hubble constant", certainty: 1.0, cites: [{source: S1, locator: "'In 1929 Hubble published his first paper on the relationship between redshift and distance'; summary box"}], how_known: "Britannica. Hubble himself resisted reading the redshifts definitely as velocities (S1)."}
+    - {value: "Distance to the Andromeda Nebula from its Cepheid variables, showing that spiral nebulae are galaxies beyond the Milky Way", year: "1923–1924", kind: discovery, lasting: "convinced most astronomers that the universe contains many galaxies", certainty: 0.7, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars' paragraph; summary box ('In 1923-24')"}], how_known: "Britannica article and its summary."}
+    - {value: "Linear redshift–distance relation for galaxies (Hubble's law), with Milton Humason", year: "1929–1931", kind: "law or principle", lasting: "read as the expansion of the universe; the Hubble constant", certainty: 0.7, cites: [{source: S1, locator: "'In 1929 Hubble published his first paper on the relationship between redshift and distance'; summary box"}], how_known: "Britannica. Hubble himself resisted reading the redshifts definitely as velocities (S1)."}
     - {value: "Morphological classification of galaxies (spirals, ellipticals, irregulars)", year: "1920s", kind: method, lasting: "standard classification scheme", certainty: 0.7, cites: [{source: S1, locator: "summary box ('He also classified galaxies by their morphology')"}], how_known: "Britannica summary; year not given there."}
   evidence_of_impact:
     - {value: "Britannica calls him 'the leading observational cosmologist of the 20th century' and 'the central figure in the establishment of extragalactic astronomy'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph after the 1936 book"}], how_known: "One signed encyclopedia article."}
   major_works:
-    - {value: "The Realm of the Nebulae", year: 1936, kind: book, certainty: 1.0, cites: [{source: S1, locator: "'the year he published his important book The Realm of the Nebulae'"}], how_known: "Britannica."}
+    - {value: "The Realm of the Nebulae", year: 1936, kind: book, certainty: 0.7, cites: [{source: S1, locator: "'the year he published his important book The Realm of the Nebulae'"}], how_known: "Britannica."}
     - {value: "The Nature of Science and Other Lectures (posthumous)", year: 1954, kind: book, certainty: 1.0, cites: [{source: S2, locator: "title page and contents"}], how_known: "The book itself."}
   honours: []
-  definition_fit: {value: "clearly meets", rationale: "Established extragalactic astronomy and the redshift–distance law.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Established extragalactic astronomy and the redshift–distance law.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: "Baptist (both parents; the family joined First Baptist Church, Wheaton, in 1901)", certainty: 0.7, cites: [{source: S3, locator: "pp. 14, 15, 23"}], how_known: "Christianson's biography (one scholarly source)."}
@@ -66,21 +67,21 @@ childhood:
     - {value: "Mother, Virginia Lee James, a homemaker who ran the household during John's absences", name: "Virginia Lee Hubble (née James)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S3, locator: "p. 15"}], how_known: "Two sources."}
   household_circumstances: {value: "One of eight children", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
   schooling:
-    - {value: "University of Chicago (graduated 1910); a year as Robert Millikan's student laboratory assistant", stage: university, years: "1906–1910", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
-    - {value: "University of Oxford as a Rhodes Scholar; B.A. in jurisprudence, taken at his father's insistence", stage: university, years: "1910–1913", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
-    - {value: "University of Chicago graduate study in astronomy at Yerkes Observatory under Edwin Frost; dissertation 'Photographic Investigations of Faint Nebulae' (1917)", stage: university, years: "1914–1917", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 4–5"}], how_known: "Britannica."}
+    - {value: "University of Chicago (graduated 1910); a year as Robert Millikan's student laboratory assistant", stage: university, years: "1906–1910", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
+    - {value: "University of Oxford as a Rhodes Scholar; B.A. in jurisprudence, taken at his father's insistence", stage: university, years: "1910–1913", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
+    - {value: "University of Chicago graduate study in astronomy at Yerkes Observatory under Edwin Frost; dissertation 'Photographic Investigations of Faint Nebulae' (1917)", stage: university, years: "1914–1917", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 4–5"}], how_known: "Britannica."}
   early_mathematics: {value: TODO, note: "Not stated in the sources read."}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "American family."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "American family."}
   notable_events:
-    - {value: "Father's death, after which 'the way was open for him to pursue a scientific career'", year: "1913", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
+    - {value: "Father's death, after which 'the way was open for him to pursue a scientific career'", year: "1913", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1914–1953", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 4 to end"}], how_known: "Graduate study at Yerkes to death."}
+  working_years: {value: "1914–1953", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 4 to end"}], how_known: "Graduate study at Yerkes to death."}
   nominal_affiliations:
     - {value: "Raised Baptist (First Baptist Church, Wheaton, from 1901; sang in its choir)", years: "1901–", role: "member by upbringing", certainty: 0.7, cites: [{source: S3, locator: "pp. 23, 26"}], how_known: "Christianson; adult membership or practice not checked in the pages read."}
   self_described_science_religion_relation:
@@ -98,7 +99,7 @@ worldview:
     - {code: AGNOS, reason: "Leading candidate, not coded (BELOW_THRESHOLD): his lectures treat religious premises as private convictions outside knowledge, which fits suspension, but he states no view on God in what was read. AGNOS is a stub system file (flag).", cites: [{source: S2, locator: "pp. 38–39"}]}
     - {code: CHRIST, reason: "Considered: Baptist upbringing and church choir (S3). Rejected for the adult working years: membership and upbringing are never a code, and nothing read shows adult Christian belief.", cites: [{source: S3, locator: "pp. 14, 23, 26"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God.", note: "Stays BELOW_THRESHOLD (P19/P20): his lectures treat religious premises as private convictions outside knowledge, which bears on the point, but he neither places nor explicitly denies a personal God in what was read."}
     B_cause:
       value: 4
       basis: written_profession
@@ -106,7 +107,7 @@ worldview:
       cites: [{source: S2, locator: "p. 10 ('The Nature of Science', 1948)"}, {source: S1, locator: "1923 and 1929 paragraphs"}]
       how_known: "His own lecture, capped at 0.7 under §7 (unofficial scan)."
       rationale: "Scored on his account of nature (P6). Laws are general statements of invariable association, and 'invariable' is the working assumption that an association seen in many cases will hold in the next one (p. 10); his own work extended measured regularities (the Cepheid period–luminosity relation, the redshift–distance relation) to the galaxies (S1). No miracle, petition or exemption appears in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
     D_authority:
       value: 2
       basis: written_profession
@@ -114,7 +115,7 @@ worldview:
       cites: [{source: S2, locator: "pp. 38–39"}]
       how_known: "His own address, capped at 0.7 under §7; a named alternative, so 0.7 in any case."
       rationale: "Two domains, each with its own authority, so D 2 (same-pattern rule, as for Einstein, Planck and Heisenberg). Knowledge comes from observation and experiment in 'the public domain'; the premises of values come 'from authority, or from revelation, or from the inner conscience' and are tested by personal experience in 'the private domain' (pp. 38–39). Named alternative: 3, if revelation is read as reduced to private conviction that never governs questions of fact."
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses whether any group is favoured in events."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses whether any group is favoured in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD (the P4 test needs A at certainty ≥ 0.7)."}
   statements:
     - text: "The term “invariable” represents an assumption. If an association is observed to hold in many cases of a particular kind, it is assumed that the same association will be found in the next case that will be observed in the future."
@@ -123,7 +124,7 @@ worldview:
       context: "'The Nature of Science', one of his Hitchcock Lectures at the University of California (1948), printed in S2; on what a law of nature is."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "The premises are in the nature of religious convictions. They are derived from authority, or from revelation, or from the inner conscience. Their validity is tested not by impersonal experiment, but by personal experience."
       cites: [{source: S2, locator: "p. 38"}]
@@ -131,7 +132,7 @@ worldview:
       context: "'Experiment and Experience', his Commencement Address at the California Institute of Technology (1938), printed in S2; on the premises of judgements of good and evil."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "The universe in which we live has two aspects. On the one hand is the realm of science, the public domain of positive knowledge. On the other hand is the world of values, the private domain of personal wisdom. Knowledge comes from observation and experiment; wisdom comes from personal experience."
       cites: [{source: S2, locator: "p. 39"}]
@@ -139,7 +140,7 @@ worldview:
       context: "Same address; the next page."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Baptist upbringing (family church, choir) to an adult view that sets religious premises in a private world of values; no dated change or statement on God was read", year: "1901–1938", certainty: 0.5, cites: [{source: S3, locator: "pp. 23, 26"}, {source: S2, locator: "pp. 38–39"}], how_known: "Coder's comparison of two sources; no dated break is documented in what was read."}
@@ -154,7 +155,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1923–1936", certainty: 1.0, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "Andromeda Cepheids to The Realm of the Nebulae; little original research after 1936 (S1)."}
+  major_work_period: {value: "1923–1936", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "Andromeda Cepheids to The Realm of the Nebulae; little original research after 1936 (S1)."}
   age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening; 1923 paragraph"}], how_known: "Born November 1889; Andromeda Cepheids 1923 (month not given in S1)."}
   first_evidence_of_lio_type_views: {value: "Caltech commencement address on science and values", year: 1938, certainty: 0.7, cites: [{source: S2, locator: "pp. 36–39"}], how_known: "Earliest dated statement read; capped by §7."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The statements read are from 1938 and 1948, after the 1923–1936 work; earlier views not read.", certainty: 0.5, cites: [{source: S2, locator: "pp. 3, 36"}], how_known: "Dates of the lectures."}
@@ -169,15 +170,15 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Yerkes Observatory (University of Chicago)", role: "graduate student", years: "1914–1917", kind: university, certainty: 1.0, cites: [{source: S1, locator: "paragraph 4"}], how_known: "Britannica."}
-  - {value: "U.S. Army", role: "officer in France (rose to major)", years: "1917–1919", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "paragraph 5"}], how_known: "Britannica."}
-  - {value: "Mount Wilson Observatory", role: "staff astronomer", years: "1919–1953", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "paragraphs 5–6 and last paragraph"}], how_known: "Britannica (start year from the end of the war)."}
+  - {value: "Yerkes Observatory (University of Chicago)", role: "graduate student", years: "1914–1917", kind: university, certainty: 0.7, cites: [{source: S1, locator: "paragraph 4"}], how_known: "Britannica."}
+  - {value: "U.S. Army", role: "officer in France (rose to major)", years: "1917–1919", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "paragraph 5"}], how_known: "Britannica."}
+  - {value: "Mount Wilson Observatory", role: "staff astronomer", years: "1919–1953", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 5–6 and last paragraph"}], how_known: "Britannica (start year from the end of the war)."}
   - {value: "Aberdeen Proving Ground, Maryland", role: "administrative post in World War II", years: "1942–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "last paragraph"}], how_known: "Britannica gives 'during World War II' only; years are the U.S. war years."}
 collaborators:
-  - {value: "Milton Humason", relation: collaborator, note: "measured the galaxy spectra for the redshift–distance relation", certainty: 1.0, cites: [{source: S1, locator: "redshift paragraph"}], how_known: "Britannica."}
-  - {value: "Richard C. Tolman", relation: collaborator, note: "galaxy counts and cosmological models in the mid-1930s", certainty: 1.0, cites: [{source: S1, locator: "Tolman sentence"}], how_known: "Britannica."}
-  - {value: "Henrietta Swan Leavitt", roster_id: leavitt-henrietta-swan, relation: "influenced by", note: "used her Cepheid period–luminosity relation for the Andromeda distance", certainty: 1.0, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "Britannica (Hubble article names the period–luminosity relationship)."}
-  - {value: "George Ellery Hale", relation: "mentor or employer", note: "hired him for Mount Wilson and held the post open during the war", certainty: 1.0, cites: [{source: S1, locator: "paragraph 5"}], how_known: "Britannica."}
+  - {value: "Milton Humason", relation: collaborator, note: "measured the galaxy spectra for the redshift–distance relation", certainty: 0.7, cites: [{source: S1, locator: "redshift paragraph"}], how_known: "Britannica."}
+  - {value: "Richard C. Tolman", relation: collaborator, note: "galaxy counts and cosmological models in the mid-1930s", certainty: 0.7, cites: [{source: S1, locator: "Tolman sentence"}], how_known: "Britannica."}
+  - {value: "Henrietta Swan Leavitt", roster_id: leavitt-henrietta-swan, relation: "influenced by", note: "used her Cepheid period–luminosity relation for the Andromeda distance", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "Britannica (Hubble article names the period–luminosity relationship)."}
+  - {value: "George Ellery Hale", relation: "mentor or employer", note: "hired him for Mount Wilson and held the post open during the war", certainty: 0.7, cites: [{source: S1, locator: "paragraph 5"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3: Claude, DeepSeek, Gemini).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 164"}], how_known: "Study roster."}
@@ -237,7 +238,7 @@ sources:
 
 ## Summary
 
-Edwin Hubble (1889–1953), American astronomer, showed from Cepheid variables that the Andromeda Nebula is a galaxy far outside the Milky Way and found the linear redshift–distance relation for galaxies [S1]. Raised in a Baptist family [S3, pp. 14–15, 23], as an adult he set the public realm of science beside a private world of values whose premises are "in the nature of religious convictions" [S2, pp. 38–39]. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 and D 2, both at 0.7 (capped: unofficial scan); A, C, E below threshold; mid_basin below threshold.
+Edwin Hubble (1889–1953), American astronomer, showed from Cepheid variables that the Andromeda Nebula is a galaxy far outside the Milky Way and found the linear redshift–distance relation for galaxies [S1]. Raised in a Baptist family [S3, pp. 14–15, 23], as an adult he set the public realm of science beside a private world of values whose premises are "in the nature of religious convictions" [S2, pp. 38–39]. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 and D 2, both at 0.7 (capped: unofficial scan); A and E below threshold, C UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 

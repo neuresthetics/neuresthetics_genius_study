@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 10
+  schema_version: "1.3"
+  record_version: 11
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 1 -> 3 at 0.5, from his account of nature (God's 'definite laws' for all matter; no favour in events in his own words; biblical miracles accepted). The sect and salvation reading moved to the C_ledger rationale (C unchanged). Statement axis tags updated. P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit runs 2–3: (#2) the 'perfect trust and submission' quotation is on Gladstone 2nd ed. p. 36, not p. 37; every S10 p. 37 locator corrected (checked against the archive.org scan). (#10) self_described_science_religion_relation rested on one private letter, which CODING_GUIDE §3 says is not 'consistent private letters'. The 1854 public discourse already in the record (S10, pp. 99–100) says the same thing, so it is now cited, the value says 'a private letter and a public lecture' instead of 'conversation and correspondence', and 0.7 stands. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: faraday-michael
@@ -33,7 +34,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Michael Faraday", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "Biography"}], how_known: "Both sources use this name; no other given names reported."}
-  native_name: {value: "Michael Faraday", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
+  native_name: {value: "Michael Faraday", certainty: 0.7, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
   aliases:
     - {name: "Faraday-Michael", kind: "roster alias"}
     - {name: "Michael-Faraday", kind: "roster alias"}
@@ -65,9 +66,9 @@ basics:
   first_lasting_contribution_year: {value: 1821, certainty: 1.0, cites: [{source: S1, locator: "Early life (electromagnetic rotation, 'the first electric motor')"}, {source: S2, locator: "Biography: 'electro–magnetic rotations (1821)'"}], how_known: "Both list the 1821 electromagnetic rotations as his first major discovery in electricity."}
   era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Derived from first_lasting_contribution_year (1821) under the era buckets (decision P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in England; the United Kingdom is Northern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
-  region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S2, locator: "Ri positions"}], how_known: "His whole working life was at the Royal Institution in London."}
+  region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S2, locator: "Ri positions"}], how_known: "His whole working life was at the Royal Institution in London."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "Biography: 'the son of a Sandemanian blacksmith'"}, {source: S1, locator: "throughout ('he', 'his')"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "All his published books and paper collections are in English."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "Publications"}], how_known: "All his published books and paper collections are in English."}
   occupations:
     value: ["bookbinder (apprentice)", "chemist", "physicist", "public lecturer", "scientific adviser"]
     certainty: 1.0
@@ -75,7 +76,7 @@ basics:
     how_known: "From the Royal Institution's own list of his posts and the encyclopedia summary."
 
 contribution:
-  fields: {value: [chemistry, physics, electromagnetism, electrochemistry], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Encyclopedia summary."}
+  fields: {value: [chemistry, physics, electromagnetism, electrochemistry], certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Encyclopedia summary."}
   lasting_original_contributions:
     - {value: "Electromagnetic rotation: the first electric motor", year: 1821, kind: invention, lasting: "the principle of the electric motor", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography"}], how_known: "Two summaries agree."}
     - {value: "Isolated and described benzene", year: 1825, kind: discovery, certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography"}], how_known: "Two summaries agree."}
@@ -86,19 +87,19 @@ contribution:
     - {value: "Field conception of electric and magnetic force: space as a medium carrying the strains of force", year: "by 1850", kind: theory, lasting: "Maxwell built his field equations on it", certainty: 1.0, cites: [{source: S1, locator: "Later life"}, {source: S2, locator: "Biography: 'thereafter formulating the field theory of electro-magnetism'"}], how_known: "Two summaries agree."}
   evidence_of_impact:
     - {value: "Maxwell took the basic ideas for his mathematical field theory from Faraday, and said so", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "Later life"}], how_known: "Reported by the encyclopedia article; Maxwell's own words not checked here."}
-    - {value: "Effects and laws carry his name: Faraday effect, Faraday's law of induction, Faraday's laws of electrolysis", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts: Subjects of study"}], how_known: "Listed by the encyclopedia."}
-    - {value: "Founded the Royal Institution's Friday Evening Discourses and Christmas Lectures in the mid-1820s", kind: "institutional or technological lineage", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "The institution's own record."}
+    - {value: "Effects and laws carry his name: Faraday effect, Faraday's law of induction, Faraday's laws of electrolysis", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts: Subjects of study"}], how_known: "Listed by the encyclopedia."}
+    - {value: "Founded the Royal Institution's Friday Evening Discourses and Christmas Lectures in the mid-1820s", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "The institution's own record."}
   major_works:
-    - {value: "Chemical Manipulation, Being Instructions to Students in Chemistry", year: 1827, kind: book, certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography; his only book."}
-    - {value: "Experimental Researches in Electricity, vols I–III", year: "1837, 1844, 1855", kind: "paper or paper series", certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
-    - {value: "Experimental Researches in Chemistry and Physics", year: 1859, kind: "paper or paper series", certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
-    - {value: "A Course of Six Lectures on the Chemical History of a Candle (ed. W. Crookes)", year: 1861, kind: "lecture series", certainty: 1.0, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
+    - {value: "Chemical Manipulation, Being Instructions to Students in Chemistry", year: 1827, kind: book, certainty: 0.7, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography; his only book."}
+    - {value: "Experimental Researches in Electricity, vols I–III", year: "1837, 1844, 1855", kind: "paper or paper series", certainty: 0.7, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
+    - {value: "Experimental Researches in Chemistry and Physics", year: 1859, kind: "paper or paper series", certainty: 0.7, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
+    - {value: "A Course of Six Lectures on the Chemical History of a Candle (ed. W. Crookes)", year: 1861, kind: "lecture series", certainty: 0.7, cites: [{source: S2, locator: "Publications"}], how_known: "Institution's bibliography."}
   honours:
-    - {value: "Copley Medal", year: "1832, 1838", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts: Awards and honors"}], how_known: "Encyclopedia fact box."}
-    - {value: "Civil List pension", year: 1836, certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
+    - {value: "Copley Medal", year: "1832, 1838", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts: Awards and honors"}], how_known: "Encyclopedia fact box."}
+    - {value: "Civil List pension", year: 1836, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
     - {value: "Twice offered the Presidency of the Royal Society; declined both times", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S5, locator: "p. 4"}], how_known: "Two sources agree."}
     - {value: "Use of a Grace and Favour house at Hampton Court from the Queen", year: 1858, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Later life"}], how_known: "Two sources agree; S2 gives the year."}
-  definition_fit: {value: "clearly meets", rationale: "Several discoveries still in use (induction, electrolysis laws, field concept), named effects, and Maxwell's acknowledged debt.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Lane A definition (lasting original impact on documented criteria) applied to the contributions listed above."}
+  definition_fit: {value: "clearly meets", rationale: "Several discoveries still in use (induction, electrolysis laws, field concept), named effects, and Maxwell's acknowledged debt.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Lane A definition (lasting original impact on documented criteria) applied to the contributions listed above."}
 
 childhood:
   family_religion: {value: "Sandemanian (Glasite) Christian. The family had belonged to this small dissenting sect since his grandfather's generation.", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography: 'son of a Sandemanian blacksmith'"}, {source: S5, locator: "p. 1, 'The roots of Faraday's beliefs'"}], how_known: "Three sources agree on a Sandemanian family; S5 traces it to his grandfather Robert Faraday."}
@@ -109,7 +110,7 @@ childhood:
     - {value: "One of four children; the third child", role: sibling position, certainty: 0.7, cites: [{source: S1, locator: "Early life: 'one of four children'"}, {source: S5, locator: "p. 1: 'their third child'"}], how_known: "S1 gives four children; only S5 gives birth order."}
   household_circumstances: {value: "Poor: the father was often ill and unable to work steadily, and the children were often short of food.", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S5, locator: "p. 1: 'early years of penury'"}], how_known: "Two sources agree."}
   schooling:
-    - {value: "Only the rudiments: reading, writing and ciphering, learned in a church Sunday school", stage: "religious school", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One encyclopedia source gives the content; S5 p. 1 confirms 'limited schooling' without detail."}
+    - {value: "Only the rudiments: reading, writing and ciphering, learned in a church Sunday school", stage: "elementary school", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One encyclopedia source gives the content; S5 p. 1 confirms 'limited schooling' without detail.", run_by: "religious body"}
     - {value: "Apprenticed to the bookbinder and bookseller George Riebau", stage: apprenticeship, institution: "George Riebau, bookbinder", years: "1805–1812", ages: "14–21", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Early life: 'at the age of 14'"}], how_known: "Two sources agree."}
     - {value: "Educated himself during the apprenticeship by reading books brought in for rebinding", stage: self-directed, years: "1805–1812", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S5, locator: "p. 1: 'attempts at self-education'"}], how_known: "Two sources agree."}
   early_mathematics: {value: "arithmetic only", description: "'ciphering' at Sunday school; no consulted source reports geometry or algebra teaching in childhood", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Inferred from the only description of his schooling. Later limits on his mathematics are reported elsewhere but not checked here."}
@@ -262,7 +263,7 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "English", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Encyclopedia."}
+  ethnic_or_communal_heritage: {value: "English", certainty: 0.7, cites: [{source: S1, locator: "opening sentence"}], how_known: "Encyclopedia."}
   religious_heritage_by_birth: {value: "Sandemanian family, from at least his grandfather Robert Faraday; part of a long family tradition of religious dissent from the Church of England", certainty: 0.7, cites: [{source: S5, locator: "p. 1"}], how_known: "One historian's account of the family."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: TODO}
@@ -284,24 +285,24 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Royal Institution of Great Britain", role: "Laboratory Assistant (1813, 1815–1826); Director of the Laboratory (1825–1867); Fullerian Professor of Chemistry (1833–1867); Superintendent of the House (1852–1867)", years: "1813–1867", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "Ri positions"}], how_known: "The institution's own record."}
-  - {value: "Royal Military Academy, Woolwich", role: "Professor of Chemistry", years: "1830–1851", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
-  - {value: "The Admiralty", role: "Scientific Adviser", years: "from 1829", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
+  - {value: "Royal Institution of Great Britain", role: "Laboratory Assistant (1813, 1815–1826); Director of the Laboratory (1825–1867); Fullerian Professor of Chemistry (1833–1867); Superintendent of the House (1852–1867)", years: "1813–1867", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "Ri positions"}], how_known: "The institution's own record."}
+  - {value: "Royal Military Academy, Woolwich", role: "Professor of Chemistry", years: "1830–1851", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
+  - {value: "The Admiralty", role: "Scientific Adviser", years: "from 1829", kind: "government or state body", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
   - {value: "Trinity House (lighthouse authority)", role: "Scientific Adviser", years: "1836–1865", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S5, locator: "p. 3"}], how_known: "Two sources agree."}
   - {value: "Sandemanian church, London (Paul's Alley meeting house)", role: "member, deacon, elder", years: "1821–1867, with an exclusion of a few weeks in spring 1844", kind: "religious body", certainty: 0.7, cites: [{source: S5, locator: "pp. 1–2, 4"}, {source: S8, locator: "section 'Primitive Christianity', para. 3"}], how_known: "Russell for the span of membership; Cantor for the length of the 1844 exclusion. One historian each."}
-  - {value: "The Crown (Queen Victoria): Civil List pension (1836) and a Grace and Favour house at Hampton Court (1858)", kind: "patron or funder", years: "1836–1867", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
+  - {value: "The Crown (Queen Victoria): Civil List pension (1836) and a Grace and Favour house at Hampton Court (1858)", kind: "patron or funder", years: "1836–1867", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}
 
 collaborators:
-  - {value: "Humphry Davy", roster_id: davy-humphry, relation: "mentor or employer", years: "1812–1820", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Encyclopedia; S1 calls 1812–1820 his 'second apprenticeship, under Davy'."}
+  - {value: "Humphry Davy", roster_id: davy-humphry, relation: "mentor or employer", years: "1812–1820", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Encyclopedia; S1 calls 1812–1820 his 'second apprenticeship, under Davy'."}
   - {value: "Charles Wheatstone", relation: collaborator, years: "1831", note: "worked together on the theory of sound", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
   - {value: "William Thomson (later Lord Kelvin)", roster_id: thomson-william-kelvin, relation: correspondent, years: "1845", note: "suggested the magnetic-field experiment that led to the magneto-optical effect", certainty: 0.7, cites: [{source: S1, locator: "Later life"}], how_known: "One source."}
-  - {value: "James Clerk Maxwell", roster_id: maxwell-james-clerk, relation: influenced, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Encyclopedia."}
+  - {value: "James Clerk Maxwell", roster_id: maxwell-james-clerk, relation: influenced, certainty: 0.7, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Encyclopedia."}
   - {value: "John Tyndall", relation: other, note: "Royal Institution colleague and contemporary biographer", certainty: 0.7, cites: [{source: S5, locator: "pp. 2, 4"}], how_known: "One source."}
   - {value: "Ada Lovelace", roster_id: lovelace-ada, relation: correspondent, years: "1844", certainty: 1.0, cites: [{source: S3, locator: "whole letter"}], how_known: "Primary letter."}
   - {value: "Auguste De La Rive", relation: correspondent, years: "to 1861", certainty: 1.0, cites: [{source: S4, locator: "whole letter"}], how_known: "Primary letter."}
 
 review:
-  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 to 5 when the Claude list was counted.", certainty: 1.0, cites: [{source: S7, locator: "roster.csv, rank 58"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 to 5 when the Claude list was counted.", certainty: 0.7, cites: [{source: S7, locator: "roster.csv, rank 58"}], how_known: "Study roster."}
   controversies:
     - {value: "Whether he was ever offered a knighthood", certainty: 0.5, cites: [{source: S1, locator: "Later life"}, {source: S2, locator: "Biography"}, {source: S5, locator: "p. 4"}], how_known: "S1 and S5 say he declined one; S2 (summarising the Oxford DNB) says he said publicly he would not accept one but no evidence has been found that one was offered."}
   data_quality_flags:

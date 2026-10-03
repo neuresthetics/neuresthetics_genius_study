@@ -11,16 +11,22 @@ One file per belief system: `systems/<CODE>.md`, where the code is the v7.1 abbr
 
 ## Sourcing backlog
 
-Stubs to source next, in this order (decision S7, 2026-10-02). These three are the candidate codes the people records most often cannot use because the file is still a stub:
+Stubs to source next, in this order (decision S7, 2026-10-02; extended by P22, 2026-10-02). A stub can still be coded: under P14 a person is coded at the certainty the evidence supports, the record flags the stub, and the stub goes on this list. These are the candidate codes the people records most often need while the file is still a stub:
 
-1. [`ATHE.md`](ATHE.md), Atheism: candidate or code for Bohr, Chandrasekhar and Dirac; named alternative for Feynman and Pauling (batch 4).
-2. [`AGNOS.md`](AGNOS.md), Agnosticism: named alternative for Bohr and Dirac; code for Feynman and candidate for Hubble (batch 4).
-3. [`IDEAL.md`](IDEAL.md), Idealism: candidate for Pasteur.
+1. [`ATHE.md`](ATHE.md), Atheism: candidate or code for Bohr, Chandrasekhar and Dirac; named alternative for Feynman and Pauling (batch 4); leading candidate for Turing, candidate for Hume, named alternative for Spinoza (stage 3).
+2. [`AGNOS.md`](AGNOS.md), Agnosticism: named alternative for Bohr and Dirac; code for Feynman and candidate for Hubble and Fermi (batch 4); best fit for Darwin, leading candidate for Hume, considered for Turing and von Neumann (stage 3).
+3. [`KANT.md`](KANT.md), Kantianism: best fit for Kant (stage 3 record leads with it; founders rule).
+4. [`SCEPT.md`](SCEPT.md), Scepticism: candidate for Hume (his own 'mitigated' scepticism; stage 3).
+5. [`RATN.md`](RATN.md), Rationalism: considered for Descartes and Leibniz (stage 3). Has a one-line use_when against CLASS_THEISM (v8's pick, P22); the rest is unsourced.
+6. [`EMPIR.md`](EMPIR.md), Empiricism: considered for Hume (stage 3).
+7. [`IDEAL.md`](IDEAL.md), Idealism: candidate for Pasteur.
 
-After these, the other stubs, in the order the people records need them. Batch 4 (2026-10-02) also needs:
+After these, the other stubs, in the order the people records need them:
 
 - [`SECHUM.md`](SECHUM.md), Secular humanism: code for Pauling.
 - [`ETHCUL.md`](ETHCUL.md), Ethical Culture: candidate for Oppenheimer.
+- [`PANPSY.md`](PANPSY.md), Panpsychism: considered for Riemann (stage 3).
+- [`DETERM.md`](DETERM.md), Determinism: considered for Spinoza (stage 3).
 - [`HINDU.md`](HINDU.md): rejected for Oppenheimer (so it matters less).
 
 Extending a record: `docs/RUNBOOK.md` §8.

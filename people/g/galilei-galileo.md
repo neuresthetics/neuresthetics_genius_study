@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 4
+  schema_version: "1.3"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Findings #69 (and #55, #57, #60): the 'inexorable and immutable' sentence is in the Fordham paragraph beginning 'This being granted…', not 'With regard to this argument…'; locators fixed in the statement, B_cause and E_scope (S5 p. 4 was already right). S4 is no longer described as Drake's translation: its translator and provenance are unknown and its wording differs from S5 in places (finding #70 note). Finding #62: self_described_science_religion_relation certainty 1.0 → 0.7 (secondary quotations cannot by themselves support 1.0, §7). Axis scores, primary_system and mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P12 recheck: first_lasting_contribution_year 1610 → 1609 (start year of the listed 1609–1610 telescopic discoveries), age 46 → 45; the 1604 alternative is kept (P13 note added). Era unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: galilei-galileo
@@ -27,7 +28,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Galileo Galilei", certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S2, locator: "heading"}], how_known: "Sources agree."}
-  native_name: {value: "Galileo Galilei (Italian)", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts"}], how_known: "Same in Italian."}
+  native_name: {value: "Galileo Galilei (Italian)", certainty: 0.7, cites: [{source: S2, locator: "Quick Facts"}], how_known: "Same in Italian."}
   aliases:
     - {name: "Galilei-Galileo", kind: "roster alias"}
     - {name: "Galileo-Galilei", kind: "roster alias"}
@@ -41,42 +42,42 @@ basics:
     date: {value: "1642-01-08", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "§2 ('but for problems with the date, see Machamer 1998b')"}, {source: S2, locator: "Quick Facts"}], how_known: "Two sources give 8 January 1642; SEP notes problems with the date, so 0.7."}
     place: {value: "Arcetri, near Florence", modern_name: "Arcetri, Florence, Italy", polity_then: "Grand Duchy of Tuscany", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts"}, {source: S1, locator: "§2 (house arrest at his villa in Arcetri)"}], how_known: "Two sources."}
   first_lasting_contribution_year: {value: 1609, certainty: 0.7, cites: [{source: S1, locator: "§2 (telescope and discoveries, 1609; Sidereus nuncius, March 1610)"}, {source: S2, locator: "opening summary"}], how_known: "Start year of the earliest listed contribution, the telescopic discoveries (1609–1610), under decision P12; they were published in Sidereus nuncius (March 1610). Was 1610 until the batch 4 lens audit. SEP says the mechanics worked out earlier in Padua is his 'primary lasting contribution', but it was published only in 1638, so 0.7.", alternatives: [{value: 1604, cites: [{source: S1, locator: "§2; §3.1"}], note: "Mechanics worked out in Padua (from 1592), published 1638; the year of the law of fall is approximate. Under decision P13 the listed mechanics item is dated 1638, so 1604 stays an alternative (age 40)."}]}
-  era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Both candidate years fall in 1600 to 1749 (P2)."}
+  era_bucket: {value: "1600 to 1749", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Both candidate years fall in 1600 to 1749 (P2)."}
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts ('Pisa [Italy]')"}], how_known: "Italy is Southern Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Pisa, Padua, Florence and Arcetri."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [Italian, Latin], certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Sidereus nuncius in Latin; the Dialogue and Two New Sciences in Italian."}
-  occupations: {value: [mathematician, "natural philosopher", astronomer, "university lecturer", "court mathematician and philosopher"], certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Pisa, Padua, Florence and Arcetri."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [Italian, Latin], certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Sidereus nuncius in Latin; the Dialogue and Two New Sciences in Italian."}
+  occupations: {value: [mathematician, "natural philosopher", astronomer, "university lecturer", "court mathematician and philosopher"], certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
 
 contribution:
   fields: {value: [mechanics, astronomy, "natural philosophy", "instrument making"], certainty: 1.0, cites: [{source: S1, locator: "§3"}, {source: S2, locator: "opening summary"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Telescopic discoveries (moons of Jupiter and others) and an improved telescope", year: "1609–1610", kind: discovery, lasting: "Britannica: they 'revolutionized astronomy'", certainty: 1.0, cites: [{source: S1, locator: "§2; §3.2"}, {source: S2, locator: "opening summary"}], how_known: "Two sources."}
-    - {value: "New science of motion: the law of fall and projectile motion (Two New Sciences)", year: "1638", kind: theory, lasting: "SEP: 'his primary lasting contribution to physical science'", certainty: 1.0, cites: [{source: S1, locator: "§2; §3.3"}], how_known: "SEP."}
+    - {value: "New science of motion: the law of fall and projectile motion (Two New Sciences)", year: "1638", kind: theory, lasting: "SEP: 'his primary lasting contribution to physical science'", certainty: 0.7, cites: [{source: S1, locator: "§2; §3.3"}], how_known: "SEP."}
     - {value: "Mathematical natural philosophy: the book of nature written in the language of mathematics", year: "1623", kind: method, lasting: "Britannica: changed natural philosophy 'from a verbal, qualitative account to a mathematical one'", certainty: 1.0, cites: [{source: S1, locator: "§2; §4.1"}, {source: S2, locator: "opening summary"}], how_known: "Two sources."}
   evidence_of_impact:
-    - {value: "Kepler 'lauded the work' (Sidereus nuncius) and the Collegio Romano confirmed its results", kind: "assessment by a later major figure", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Kepler 'lauded the work' (Sidereus nuncius) and the Collegio Romano confirmed its results", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
   major_works:
-    - {value: "Sidereus nuncius", year: 1610, kind: book, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-    - {value: "Dialogue Concerning the Two Chief World Systems", year: 1632, kind: book, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-    - {value: "Discourses and Mathematical Demonstrations Concerning Two New Sciences", year: 1638, kind: book, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Sidereus nuncius", year: 1610, kind: book, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Dialogue Concerning the Two Chief World Systems", year: 1632, kind: book, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Discourses and Mathematical Demonstrations Concerning Two New Sciences", year: 1638, kind: book, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
   honours:
-    - {value: "Member of the Accademia dei Lincei", year: 1611, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  definition_fit: {value: "clearly meets", rationale: "Founding work in mechanics and telescopic astronomy.", certainty: 1.0, cites: [{source: S1, locator: "§2; §3"}], how_known: "Sources agree."}
+    - {value: "Member of the Accademia dei Lincei", year: 1611, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  definition_fit: {value: "clearly meets", rationale: "Founding work in mechanics and telescopic astronomy.", certainty: 0.7, cites: [{source: S1, locator: "§2; §3"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Catholic", certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography (Vallombrosa)"}], how_known: "Catholic Tuscany; schooled by Camaldolese monks. Not disputed."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father, Vincenzo Galilei, of noble heritage, a court musician, composer and music theorist of modest means", name: "Vincenzo Galilei", role: father, certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
-    - {value: "Mother, Giulia Ammannati, from Pisan cloth merchants", name: "Giulia Ammannati", role: mother, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  household_circumstances: {value: "Modest means; the family moved to Florence in 1572", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Mother, Giulia Ammannati, from Pisan cloth merchants", name: "Giulia Ammannati", role: mother, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  household_circumstances: {value: "Modest means; the family moved to Florence in 1572", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
   schooling:
-    - {value: "Private tutoring", stage: tutor, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-    - {value: "Camaldolese monastery at Vallombrosa, then a Camaldolese school in Florence", stage: "religious school", certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
+    - {value: "Private tutoring", stage: tutor, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+    - {value: "Camaldolese monastery at Vallombrosa, then a Camaldolese school in Florence", stage: "grammar or secondary school", certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources.", run_by: "religious body"}
     - {value: "University of Pisa, medicine (not completed); Euclid with Ostilio Ricci", stage: university, years: "1580–1585", certainty: 0.7, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography (Ricci's Euclid course 1582–83)"}], how_known: "Two sources; the leaving year is not given in the text read."}
   early_mathematics: {value: TODO, note: "Euclid's Elements came in 1582–83, at 18–19, just past the childhood window (S3)."}
-  early_geometric_style_reasoning: {value: "Euclid's Elements with Ricci at 18–19, after the childhood window", certainty: 1.0, cites: [{source: S3, locator: "Biography"}], how_known: "MacTutor."}
+  early_geometric_style_reasoning: {value: "Euclid's Elements with Ricci at 18–19, after the childhood window", certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "MacTutor."}
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors: []
@@ -86,7 +87,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1589–1642", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Lecturer at Pisa (1589) to death."}
+  working_years: {value: "1589–1642", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Lecturer at Pisa (1589) to death."}
   nominal_affiliations:
     - {value: "Catholic; his daughters became nuns at the convent of St Matthew, Arcetri", role: member, certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
   self_described_science_religion_relation:
@@ -202,13 +203,13 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life:
-    - {value: "Abjured Copernicanism under sentence of the Inquisition (22 June 1633); coerced, not used as evidence of belief", year: "1633", certainty: 1.0, cites: [{source: S1, locator: "§5"}], how_known: "SEP."}
+    - {value: "Abjured Copernicanism under sentence of the Inquisition (22 June 1633); coerced, not used as evidence of belief", year: "1633", certainty: 0.7, cites: [{source: S1, locator: "§5"}], how_known: "SEP."}
   coder_notes: "CHRIST is a sourced system file. All statements are English translations in web copies, so 'secondary quotation': S5 is Drake's 1957 translation; S4 (Fordham) names no translator and its wording is close to Drake's but not identical. The Letter to Castelli and the Dialogue were not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "Tuscan; father of noble heritage", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  religious_heritage_by_birth: {value: "Catholic", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Undisputed."}
+  ethnic_or_communal_heritage: {value: "Tuscan; father of noble heritage", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  religious_heritage_by_birth: {value: "Catholic", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Undisputed."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: "Monastic schooling with the Camaldolese at Vallombrosa and Florence", certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
 
@@ -229,20 +230,20 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "University of Pisa", role: "lecturer in mathematics", years: "1589–1592", kind: university, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  - {value: "University of Padua", role: "chair of mathematics", years: "1592–1610", kind: university, certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  - {value: "Medici court, Florence", role: "Chief Mathematician and Philosopher to the Grand Duke", years: "1610–1642", kind: "patron or funder", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  - {value: "Accademia dei Lincei", role: member, years: "1611–1642", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "University of Pisa", role: "lecturer in mathematics", years: "1589–1592", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "University of Padua", role: "chair of mathematics", years: "1592–1610", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "Medici court, Florence", role: "Chief Mathematician and Philosopher to the Grand Duke", years: "1610–1642", kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "Accademia dei Lincei", role: member, years: "1611–1642", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
 collaborators:
   - {value: "Ostilio Ricci", relation: teacher, certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
-  - {value: "Benedetto Castelli", relation: "student or assistant", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  - {value: "Johannes Kepler", roster_id: kepler-johannes, relation: correspondent, note: "praised Sidereus nuncius", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
-  - {value: "Robert Bellarmine", relation: "rival or critic", note: "the 1616 admonition", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "Benedetto Castelli", relation: "student or assistant", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "Johannes Kepler", roster_id: kepler-johannes, relation: correspondent, note: "praised Sidereus nuncius", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
+  - {value: "Robert Bellarmine", relation: "rival or critic", note: "the 1616 admonition", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 31"}], how_known: "Study roster."}
   controversies:
-    - {value: "Convicted of 'vehement suspicion of heresy' in 1633 and kept under house arrest", certainty: 1.0, cites: [{source: S1, locator: "§2; §5"}], how_known: "SEP."}
+    - {value: "Convicted of 'vehement suspicion of heresy' in 1633 and kept under house arrest", certainty: 0.7, cites: [{source: S1, locator: "§2; §5"}], how_known: "SEP."}
   data_quality_flags:
     - "Death date: SEP flags 'problems with the date' (Machamer 1998b), unread."
     - "Novitiate: MacTutor says he became a novice; SEP is unsure."

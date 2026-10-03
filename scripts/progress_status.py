@@ -7,7 +7,10 @@ Usage:
     python scripts/progress_status.py --check    # exit 1 if the README table is out of date
 
 The table sits between the markers <!-- BEGIN GENERATED: progress --> and
-<!-- END GENERATED: progress --> in README.md. Everything outside the markers is hand-written.
+<!-- END GENERATED: progress --> in README.md. The caption of the person chart sits between
+<!-- BEGIN GENERATED: people_chart_caption --> and <!-- END GENERATED: people_chart_caption -->;
+it is computed by lib.records.people_chart_caption() from the same records the chart plots.
+Everything outside the markers is hand-written.
 
 Where each row comes from:
     roster counts      data/roster/roster.csv (status column)
@@ -20,19 +23,22 @@ Where each row comes from:
 import argparse, collections, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import REPO, read_record, read_csv, person_files, system_files  # noqa: E402
+from lib.records import REPO, read_record, read_csv, person_files, system_files, people_chart_caption  # noqa: E402
 
 README = os.path.join(REPO, "README.md")
 BEGIN, END = "<!-- BEGIN GENERATED: progress -->", "<!-- END GENERATED: progress -->"
+CAP_BEGIN, CAP_END = "<!-- BEGIN GENERATED: people_chart_caption -->", "<!-- END GENERATED: people_chart_caption -->"
 
 # MANUAL rows. No file in the repo records these as data, so they are kept here by hand.
 AUDITS = ("9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a "
           "124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, "
           "run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see "
-          "[reports/audit_2026-10-02.md](reports/audit_2026-10-02.md)")
+          "[reports/audit_2026-10-02.md](reports/audit_2026-10-02.md). Stage 3: 4 blind runs on the first 12 records (stage 3-a: "
+          "561 claims at 59a8371; stage 3-b: 420 claims at 3db6511); their method rulings are decisions P14–P28")
 NEXT_STEPS = ("Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, "
-              "Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts whose lens audit fixes are not yet applied; "
-              "source the ATHE, AGNOS and IDEAL system stubs; the revised rubric has not started")
+              "Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts; their coders still apply the stage 3 lens fixes "
+              "and rulings P14–P28 (the other 31 records already follow them, schema 1.3); source the stubs on the S7 backlog "
+              "(ATHE, AGNOS, KANT, SCEPT, RATN, EMPIR, IDEAL); the revised rubric has not started")
 
 
 def latest_tag():
@@ -100,9 +106,13 @@ def main():
         sys.exit(f"README.md has no {BEGIN} ... {END} block")
     i, j = text.index(BEGIN), text.index(END) + len(END)
     updated = text[:i] + new + text[j:]
+    if CAP_BEGIN not in updated or CAP_END not in updated:
+        sys.exit(f"README.md has no {CAP_BEGIN} ... {CAP_END} block")
+    i, j = updated.index(CAP_BEGIN), updated.index(CAP_END) + len(CAP_END)
+    updated = updated[:i] + CAP_BEGIN + "\n" + people_chart_caption() + "\n" + CAP_END + updated[j:]
     if a.check:
         if updated != text:
-            print("README.md progress table is out of date; run scripts/progress_status.py")
+            print("README.md progress table or person-chart caption is out of date; run scripts/progress_status.py")
             sys.exit(1)
         print("README.md progress table up to date")
         return

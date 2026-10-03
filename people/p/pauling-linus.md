@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #93/#94 (run 1) and the same error in claims 71, 73–75, 78, 80–84 and 90: every S4 'letter, paragraph 1' locator replaced with the right paragraph of the four-paragraph letter (2 heritage, Sunday schools and the break; 3 'I do not believe in God'; 4 Humanist and Unitarian); S4 reliability note corrected. #82 (run 2 note): AHA membership years '–1963' → 'by 1963' (the letter shows membership then, not an end date). #89 / decisions P12, P13: new source S6 (the 1931 JACS paper 'The Nature of the Chemical Bond', bibliographic record via Crossref); chemical-bond item dated '1930s' → '1931–1939'; first_lasting_contribution_year 1925 (0.5) → 1931 (0.7), age 24 (0.5) → 30 (0.7); the unlisted PhD crystal papers no longer set the year. Era unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: pauling-linus
@@ -26,7 +27,7 @@ identity:
     field: chemistry
     field_bucket: chemistry
   full_name: {value: "Linus Carl Pauling", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
-  native_name: {value: "Linus Pauling (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "Linus Pauling (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "Pauling-Linus", kind: "roster alias"}
 
@@ -40,29 +41,29 @@ basics:
   first_lasting_contribution_year: {value: 1931, certainty: 0.7, cites: [{source: S6, locator: "title and date (April 1931)"}, {source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}], how_known: "Start year of the earliest listed contribution, the chemical-bond theory (1931–1939), under decisions P12 and P13. The 1922–1925 crystal-structure papers of his PhD are not listed, because no source read calls them lasting, so they do not set the year; the Nobel biography's 1922 (S2, paragraph 3) is when he began general work on the bond, not this theory. 0.7: dating the theory from the 1931 paper is the coder's reading. Was 1925 (0.5) until the batch 4 lens audit."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year 1931 (P2); any candidate year (1922–1931) is in this bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Caltech, 1922 on."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "paragraph 5"}], how_known: "His books are in English."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Caltech, 1922 on."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "paragraph 5"}], how_known: "His books are in English."}
   occupations: {value: ["chemist", "university professor", "peace activist"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraphs 4–5"}], how_known: "Two sources."}
 
 contribution:
   fields: {value: ["structural chemistry", "quantum chemistry", "molecular biology"], certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Nature of the chemical bond: valence-bond theory with resonance and hybrid bonds; electronegativity scale", year: "1931–1939", kind: theory, lasting: "Nobel Prize in Chemistry 1954", certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}, {source: S2, locator: "paragraphs 3, 6"}, {source: S6, locator: "title and date"}], how_known: "Two sources for the work; the years run from his 1931 paper 'The Nature of the Chemical Bond' (S6) to the 1939 book of the same name (S1). Was dated '1930s' until the batch 4 lens audit."}
-    - {value: "Sickle-cell anemia as the first 'molecular disease'", year: "1949", kind: discovery, lasting: "founding case of molecular medicine", certainty: 1.0, cites: [{source: S1, locator: "sickle-cell paragraph"}], how_known: "Britannica."}
+    - {value: "Sickle-cell anemia as the first 'molecular disease'", year: "1949", kind: discovery, lasting: "founding case of molecular medicine", certainty: 0.7, cites: [{source: S1, locator: "sickle-cell paragraph"}], how_known: "Britannica."}
     - {value: "Alpha helix of proteins", year: "1948–1951", kind: discovery, lasting: "standard protein structure", certainty: 0.7, cites: [{source: S1, locator: "Oxford 1948 paragraph"}], how_known: "Britannica gives the 1948 discovery; publication year not on the page read."}
   evidence_of_impact:
-    - {value: "Only person to have won two unshared Nobel Prizes", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Only person to have won two unshared Nobel Prizes", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
     - {value: "The Nature of the Chemical Bond, and the Structure of Molecules and Crystals", year: 1939, kind: book, certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures', paragraph 2"}, {source: S2, locator: "paragraph 5"}], how_known: "Two sources."}
     - {value: "General Chemistry", year: 1947, kind: book, certainty: 0.7, cites: [{source: S2, locator: "paragraph 5"}], how_known: "Nobel biography."}
     - {value: "No More War!", year: 1958, kind: book, certainty: 0.7, cites: [{source: S2, locator: "paragraph 5"}], how_known: "Nobel biography."}
   honours:
-    - {value: "Nobel Prize in Chemistry", year: 1954, certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Nobel Prize in Chemistry", year: 1954, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     - {value: "Nobel Peace Prize (for 1962)", year: 1962, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 4 ('In 1963, he was awarded the Nobel Peace Prize')"}], how_known: "Two sources: the prize for 1962 was awarded in 1963."}
     - {value: "Humanist of the Year (American Humanist Association)", year: 1961, certainty: 1.0, cites: [{source: S2, locator: "paragraph 5"}, {source: S3, locator: "itinerary entry"}], how_known: "Two sources."}
     - {value: "Rationalist of the Year", year: 1960, certainty: 0.7, cites: [{source: S2, locator: "paragraph 5"}], how_known: "Nobel biography."}
-  definition_fit: {value: "clearly meets", rationale: "Founder of modern structural chemistry; two unshared Nobel Prizes.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Founder of modern structural chemistry; two unshared Nobel Prizes.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: "Protestant: paternal grandparents Lutheran; he believed he was baptized in the Congregational Church", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter (one source; 'I believe that I was baptized')."}
@@ -78,16 +79,16 @@ childhood:
   early_mathematics: {value: TODO, note: "PhD minors in physics and mathematics (S2); earlier mathematics not stated."}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure:
-    - {value: "From 1919, papers by Irving Langmuir on the Lewis electron-pair bond", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
+    - {value: "From 1919, papers by Irving Langmuir on the Lewis electron-pair bond", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
   key_early_reading:
-    - {value: "Irving Langmuir's papers on the shared electron pair", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
+    - {value: "Irving Langmuir's papers on the shared electron pair", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
   childhood_mentors: []
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Born in Oregon."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Born in Oregon."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1922–1994", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Caltech graduate work to death."}
+  working_years: {value: "1922–1994", certainty: 0.7, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Caltech graduate work to death."}
   nominal_affiliations:
     - {value: "American Humanist Association (member)", years: "by 1963", role: "member", certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 4"}, {source: S3, locator: "speech heading and itinerary"}], how_known: "His own letter shows him a member in January 1963 (it gives no start or end date); his 1961 speech to the AHA, where he received its Humanist of the Year award."}
     - {value: "First Unitarian Church of Los Angeles ('accepts atheists as members'; joined 'to help with' its support of morality and ethics)", years: "1962–", role: "member", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 4"}], how_known: "His own letter (one source)."}
@@ -188,7 +189,7 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "German (father's side) and English-Scottish (mother's side) American", certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
+  ethnic_or_communal_heritage: {value: "German (father's side) and English-Scottish (mother's side) American", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
   religious_heritage_by_birth: {value: "Protestant (Lutheran grandparents; probable Congregational baptism)", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter."}
   baptism_or_initiation: {value: "Probably baptized in the Congregational Church ('I believe that I was baptized')", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own uncertain recollection."}
   childhood_catechism: {value: "Various Sunday schools", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter."}
@@ -216,8 +217,8 @@ collaborators:
   - {value: "Roscoe G. Dickinson", relation: teacher, note: "taught him X-ray crystal-structure determination", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "Arnold Sommerfeld", relation: "mentor or employer", note: "most of his 1926–27 Guggenheim year in Munich", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 4"}], how_known: "Two sources."}
   - {value: "Niels Bohr", roster_id: bohr-niels, relation: "mentor or employer", note: "worked with him in Europe in 1926–27", certainty: 0.7, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Nobel biography."}
-  - {value: "Robert Corey", relation: collaborator, note: "DNA triple-helix proposal (1953) and protein structures", certainty: 1.0, cites: [{source: S1, locator: "1948 paragraph"}], how_known: "Britannica."}
-  - {value: "J. Robert Oppenheimer", roster_id: oppenheimer-j-robert, relation: other, note: "asked him to head the Manhattan Project's chemistry section; he declined for illness", certainty: 1.0, cites: [{source: S1, locator: "World War II sentence"}], how_known: "Britannica."}
+  - {value: "Robert Corey", relation: collaborator, note: "DNA triple-helix proposal (1953) and protein structures", certainty: 0.7, cites: [{source: S1, locator: "1948 paragraph"}], how_known: "Britannica."}
+  - {value: "J. Robert Oppenheimer", roster_id: oppenheimer-j-robert, relation: other, note: "asked him to head the Manhattan Project's chemistry section; he declined for illness", certainty: 0.7, cites: [{source: S1, locator: "World War II sentence"}], how_known: "Britannica."}
   - {value: "Ava Helen Miller", relation: family, note: "wife (married 1923)", certainty: 1.0, cites: [{source: S2, locator: "paragraph 7"}, {source: S1, locator: "'Early life and education'"}], how_known: "Two sources."}
 
 review:

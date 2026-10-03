@@ -169,7 +169,7 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `person` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | fixed: `1.2` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. |
+| `record.schema_version` | one of: `1.2`, `1.3` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 file. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
 | `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
@@ -251,7 +251,7 @@ Childhood and education up to the start of independent work. Lane A facts; Lane 
 | `childhood.family_religious_practice` | claim; value string | yes | How the family practised: attendance, observance, offices held. |
 | `childhood.parents_and_household` | list of claims (claim; value string; extra keys: `year`, `years`, `age`, `kind`, `role`, `name`) | yes | Parents, siblings and household members, with occupations. |
 | `childhood.household_circumstances` | claim; value string | yes | Economic and social situation of the household. |
-| `childhood.schooling` | list of claims (claim; value string; extra keys: `stage`, `institution`, `years`, `ages`) | yes | Each stage of formal or informal education, with stage, institution, years and ages. |
+| `childhood.schooling` | list of claims (claim; value string; extra keys: `stage`, `run_by`, `institution`, `years`, `ages`) | yes | Each stage of formal or informal education, with stage, institution, years and ages. |
 | `childhood.early_mathematics` | claim; value one of: `none known`, `arithmetic only`, `basic algebra`, `geometry (Euclid-style proof)`, `advanced mathematics`, `other`; extra keys: `ages`, `description` | yes | Highest level of mathematics met before about age 18, with ages and description. |
 | `childhood.early_geometric_style_reasoning` | claim; value string | yes | Any documented early exposure to definition-to-consequence reasoning (Euclid, formal logic, proof). Facts only; Lane B interpretation goes in lane_b. |
 | `childhood.early_science_exposure` | list of claims (claim; value string; extra keys: `year`, `age`) | yes | Lectures, books, experiments or apprenticeships with scientific content before independent work. |
@@ -280,7 +280,7 @@ The adult working worldview: the unit of coding. Not childhood religion, not her
 | `worldview.lio_axes.C_ledger` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | C Ledger: reward and punishment of persons (0) ... impersonal consequence, or none (4). |
 | `worldview.lio_axes.D_authority` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | D Authority: revelation outranks observation (0) ... observation and reason outrank revelation (4). |
 | `worldview.lio_axes.E_scope` | claim; value integer 0–4; extra keys: `basis`, `rationale` | yes | E Scope: hidden exceptions for an in-group (0) ... same rules for stars, insects, humans (4). Scored on the world's order: the same rules for every kind of being and event, and no hidden in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral-community scope are scored on C_ledger, not here (decision P7, 2026-10-02). |
-| `worldview.mid_basin` | claim; value boolean; extra keys: `rationale` | yes | v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored on the person's account of nature (decision P6, 2026-10-02), both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise TODO (a needed axis is TODO, or both are scored at >= 0.7 but fall between the branches: A_locus = 2, or A_locus <= 1 with B_cause = 2), UNKNOWN (only if a needed axis is UNKNOWN) or BELOW_THRESHOLD (a needed axis is BELOW_THRESHOLD or scored only at 0.5). Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored. |
+| `worldview.mid_basin` | claim; value boolean; extra keys: `rationale` | yes | v7.1 'mid-basin theist', by the test of decision P4 (2026-10-01): true when lio_axes A_locus <= 1 and B_cause >= 3, B scored on the person's account of nature (decision P6, 2026-10-02; B needs a statement about nature or the physical world, P16), both at certainty >= 0.7; false when A_locus >= 3, or A_locus <= 1 with B_cause <= 1; otherwise TODO (a needed axis is TODO, or both are scored at >= 0.7 but fall between the branches: A_locus = 2, or A_locus <= 1 with B_cause = 2), UNKNOWN (if any needed axis is UNKNOWN; takes precedence, P19) or else BELOW_THRESHOLD (a needed axis is BELOW_THRESHOLD or scored only at 0.5). Deists usually pass (see METHOD). 'First-rank' is F >= 3, applied separately. TODO until the axes are scored. |
 | `worldview.statements` | list of `quote` | yes | Verbatim quotations that bear on the worldview, each with citation, context, kind, axes touched, and how it was verified. |
 | `worldview.changes_over_life` | list of claims (claim; value string; extra keys: `year`, `age`) | yes | Documented shifts in worldview, with year or age. |
 | `worldview.coder_notes` | string |  | Free text: reasoning, doubts, what would change the coding. |
@@ -369,7 +369,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | type | field | type / allowed values | required | meaning |
 |---|---|---|---|---|
 | `sentinel` | | one of: `TODO`, `UNKNOWN`, `BELOW_THRESHOLD` | | TODO = not researched yet. UNKNOWN = researched, no reliable source gives it (say what was checked in how_known). BELOW_THRESHOLD = some evidence, but under certainty 0.5, so the value is withheld (describe the evidence in note). |
-| `certainty` | | one of: `1.0`, `0.7`, `0.5` | | See docs/CODING_GUIDE.md. Worldview claims: 1.0 written profession, 0.7 consistent private letters, 0.5 scholarly reconstruction. Other facts: 1.0 established, 0.7 probable, 0.5 contested. Below 0.5: withhold the value (BELOW_THRESHOLD). |
+| `certainty` | | one of: `1.0`, `0.7`, `0.5` | | See docs/CODING_GUIDE.md §3. Worldview claims: 1.0 written profession, 0.7 consistent private letters or a recorded interview, 0.5 scholarly reconstruction or inference from work. Other facts: 1.0 needs two independent reliable sources or a primary document (decision P15); 0.7 one reliable source, or sources differing on name order or form; 0.5 contested (reliable sources disagree, alternative named; P25), or inferred from the person's work or conduct with no direct statement (P24). Below 0.5: withhold the value (BELOW_THRESHOLD). |
 | `isoDate` | | string | | YYYY-MM-DD. |
 | `citation` | | object | |  |
 | | `source` | string | yes | id of an entry in the sources list |
@@ -380,7 +380,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | any | yes | The competing value. |
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
-| `basis` | | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7 (the person's own first-person words in a recorded or transcribed interview, decision P8), scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
+| `basis` | | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction`, `inference_from_work` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7 (the person's own first-person words in a recorded or transcribed interview, decision P8), scholarly_reconstruction 0.5, inference_from_work 0.5 (inferred from the person's work or conduct with no direct statement, decision P24, schema 1.3). Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
 | `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |
@@ -443,7 +443,8 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `kind` | one of: `book`, `paper or paper series`, `lecture series`, `artwork`, `composition`, `device`, `notebook`, `other` |  | Kind of work. |
 | `schooling` | | claim | |  |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `stage` | one of: `home`, `dame or charity school`, `religious school`, `grammar or secondary school`, `apprenticeship`, `tutor`, `university`, `self-directed`, `other` |  | Stage of education. |
+| | `stage` | one of: `home`, `elementary school`, `dame or charity school`, `religious school`, `grammar or secondary school`, `apprenticeship`, `tutor`, `university`, `self-directed`, `other` |  | Level of education (decision P21). Who ran the school goes in run_by. 'dame or charity school' and 'religious school' mixed level with who ran it; they are valid only in schema 1.2 files. |
+| | `run_by` | one of: `religious body`, `state or municipal`, `private`, `charity`, `family`, `other` |  | Who ran the school (decision P21, schema 1.3). Optional. |
 | | `institution` | string |  | Name of the school, master or university. |
 | | `years` | string |  | Years attended. |
 | | `ages` | string |  | Ages attended. |
@@ -457,11 +458,11 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `age` | integer or string |  | Age at the event. |
 | `systemCode` | | claim | | code from systems/ (the 77 abbr codes). Validator checks the code exists and certainty does not exceed the basis ceiling. |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` |  | written_profession (1.0), consistent_private_letters (0.7), recorded_interview (0.7), or scholarly_reconstruction (0.5). |
+| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction`, `inference_from_work` |  | written_profession (1.0), consistent_private_letters (0.7), recorded_interview (0.7), scholarly_reconstruction (0.5), or inference_from_work (0.5). |
 | | `rationale` | string |  | Why this code, in terms of coding_guidance. |
 | `axis` | | claim | |  |
 | | `value` | integer 0–4 | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` |  | Evidence basis; certainty may not exceed its ceiling. |
+| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction`, `inference_from_work` |  | Evidence basis; certainty may not exceed its ceiling. |
 | | `rationale` | string |  | why this score, in terms of the axis poles |
 | `quote` | | object | |  |
 | | `text` | string | yes | verbatim, with original spelling; mark cuts with [...] |
@@ -469,15 +470,15 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `date` | string |  | Date of the passage (letter date, publication year). |
 | | `context` | string |  | addressee / occasion / what the passage is answering |
 | | `axes` | list of one of: `A_locus`, `B_cause`, `C_ledger`, `D_authority`, `E_scope` |  |  |
-| | `kind` | one of: `written profession (public)`, `private letter`, `notebook or diary`, `recorded interview`, `reported speech`, `other` |  |  |
-| | `verified_against` | one of: `primary transcription`, `primary facsimile`, `scholarly edition`, `secondary quotation` | yes |  |
+| | `kind` | one of: `written profession (public)`, `published letter`, `autobiography`, `private letter`, `notebook or diary`, `unpublished manuscript`, `document in own hand`, `recorded interview`, `reported speech`, `other` |  | What kind of text the quotation comes from (CODING_GUIDE §7; decisions P18, P28). The kind does not change the basis table. 'published letter': a letter written for circulation or printed by the author (Leibniz to Clarke); counts like a published work (written_profession). 'autobiography': a life the person wrote; one the person published counts as written_profession, an unpublished one takes the private ceiling. 'unpublished manuscript': a finished or draft text the person did not publish (Newton's Keynes MSS, the Monadology, the Pensées notes); private ceiling (consistent_private_letters 0.7, more than one document needed). 'document in own hand': a form, questionnaire, prayer or note in the person's hand that is neither a letter nor a manuscript work; private ceiling. 'reported speech': a contemporary's account or summary of what the person said; cannot score an axis on its own (§1). |
+| | `verified_against` | one of: `primary transcription`, `primary facsimile`, `scholarly edition`, `secondary quotation` | yes | What the quotation was checked against (decision P21). primary facsimile: page images of the document itself (manuscript, letter, or a printing of the work as issued), with no editor in between. primary transcription: a keyed transcription of the original (TCP, Newton Project, Darwin Online). scholarly edition: a text an editor prepared (collected works such as Riemann's Werke, edited letters, a Life-and-letters, a posthumous collection), even when read as a library scan. secondary quotation: quoted in a secondary or tertiary source (SEP, a biography); must be checked against the primary text before it is cited as the person's words (P26). |
 | | `verified_on` | string | yes | Date the quotation was checked against the source. |
 | | `note` | string |  | Free remark. |
 | `institution` | | claim | |  |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `role` | string |  | Role held. |
 | | `years` | string |  | Years. |
-| | `kind` | one of: `employer`, `patron or funder`, `academy or learned society`, `religious body`, `university`, `government or state body`, `commercial`, `other` |  | Kind of institution. |
+| | `kind` | one of: `employer`, `patron or funder`, `academy or learned society`, `research institute`, `religious body`, `university`, `government or state body`, `commercial`, `other` |  | Kind of institution. 'research institute' (decision P21): a body that exists mainly for research, outside a university's teaching (IAS Princeton, Kaiser Wilhelm and Max Planck institutes, Dublin IAS, Institut Pasteur, the Royal Institution). |
 | `collaborator` | | claim | |  |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `roster_id` | string |  | Person id if this person is on the roster (checked against person_ids.csv). |

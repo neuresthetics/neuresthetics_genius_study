@@ -112,10 +112,12 @@ birth:
 
 - `locator` must let a reader find the passage: page, section heading, letter number, paragraph, folio, or URL anchor.
 - `how_known` is one or two sentences: the kind of evidence, and why this certainty.
-- Conflicting sources: give the best-supported value, add an `alternatives` entry for each competitor with its own cite, and lower certainty to 0.5 if the dispute is real. Add a line to `review.data_quality_flags`.
-- Not found after searching: write `value: UNKNOWN` and a `how_known` listing what you checked.
+- Conflicting sources: give the best-supported value, add an `alternatives` entry for each competitor with its own cite, and lower certainty to 0.5 if the dispute is real (P25). Add a line to `review.data_quality_flags`. A detail that only one of two sources gives goes in its own note at 0.7, or the field is capped at 0.7.
+- One reliable source gives at most 0.7 (P15). 1.0 needs two independent reliable sources or a primary document.
+- Do not cite Britannica's AI-generated "Top Questions" boxes; check a quote found in SEP or another secondary source against the primary text before citing it as the person's words (P26).
+- Not found after searching, or only off-point items found: write `value: UNKNOWN` and a `how_known` listing what you checked (P19).
 - Not researched in this run: leave `value: TODO`.
-- Evidence too weak (below 0.5): write `value: BELOW_THRESHOLD`, with the evidence described in `note`.
+- Evidence that bears on the point but is too weak (below 0.5: reported speech, a single letter, a paraphrase, an implication): write `value: BELOW_THRESHOLD`, with the evidence described in `note` (P19).
 
 ### 4.2 Sources
 
@@ -146,12 +148,13 @@ Fill each required `##` section in plain prose, with inline cites `[S3, letter 1
 
 | situation | what to write |
 |---|---|
-| sources agree, primary or well-established | certainty 1.0 |
-| one good source, or dependent sources | 0.7 |
-| reliable sources disagree | 0.5 + `alternatives` + data-quality flag |
+| two independent reliable sources agree, or a primary document | certainty 1.0 (P15) |
+| one good source, dependent sources, or a name-order or name-form disagreement | 0.7 |
+| reliable sources disagree | 0.5 + `alternatives` (alternative named) + data-quality flag (P25) |
+| inferred from the person's work or conduct, no direct statement | 0.5; worldview basis `inference_from_work` (P24) |
 | worldview from public writing / letters or recorded interview / scholar's reconstruction | 1.0 / 0.7 / 0.5 with matching `basis` |
-| some evidence but weaker than 0.5 | `BELOW_THRESHOLD` + `note` |
-| searched, nothing reliable | `UNKNOWN` + `how_known` listing what was checked |
+| some evidence that bears on the point but is weaker than 0.5 | `BELOW_THRESHOLD` + `note` (P19) |
+| searched, the sources say nothing on the point | `UNKNOWN` + `how_known` listing what was checked (P19) |
 | not looked at yet | `TODO` |
 
 ## 5. Validate

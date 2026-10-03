@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3. #84 (run 2): B_cause 4 at 0.7 (written_profession) → 4 at 0.5 (scholarly_reconstruction): his own words on nature (pp. 3–4) support the named alternative 3, and the 4 rests on a passage about method (p. 4) and Britannica's account of his working science, the evidence Bohr, Chandrasekhar and Dirac score at 0.5 (§3 same pattern); 3 stays named. mid_basin unchanged (BELOW_THRESHOLD, A not scored). Death place (both runs: holds at 0.5): the uncited phrases 'the form most sources use' and 'the estate adjoins the Saint-Cloud park' were removed; a cited line now gives the Saint-Cloud link (new S7, Inventaire général du patrimoine culturel, Île-de-France: part of the Villeneuve-l'Étang park was incorporated into the national domain of Saint-Cloud in 1895); S6 (EPHE) noted as not independent of S2 (it lists the ENS portrait among its sources). Value and certainty unchanged (v8's pick, P9). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: pasteur-louis
@@ -40,37 +41,37 @@ basics:
   first_lasting_contribution_year: {value: 1848, certainty: 0.5, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Molecular asymmetry, which Britannica places 'soon after graduating' (doctorate 1847, Dijon post 1848) without a year; 1848 is the coder's dating."}
   era_bucket: {value: "1750 to 1849", certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "P2 applied literally to the recorded first_lasting_contribution_year (1848), as decision P9 (2026-10-02) directs; the certainty follows the year's 0.5. He is on the boundary: a first lasting contribution dated 1850 or later (for example the 1857 germ theory of fermentation) would give 1850 to 1949. Membership in the 1600–1950 pool is not affected either way."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "France is Western Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "'Research career'"}], how_known: "Strasbourg, Lille and Paris."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "'Research career'"}], how_known: "Strasbourg, Lille and Paris."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [French], certainty: 1.0, cites: [{source: S3, locator: "title page"}], how_known: "His works and speeches are in French."}
   occupations: {value: [chemist, microbiologist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Research career'"}, {source: S2, locator: "paragraphs 1–3"}], how_known: "Two sources."}
 
 contribution:
   fields: {value: [chemistry, microbiology, immunology], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Vaccine development'"}, {source: S2, locator: "paragraphs 2–5"}], how_known: "Two sources."}
   lasting_original_contributions:
-    - {value: "Molecular asymmetry (optical isomerism of tartrates), the foundation of stereochemistry", year: "c. 1848", kind: discovery, lasting: "foundation of stereochemistry", certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Britannica; year is the coder's dating."}
+    - {value: "Molecular asymmetry (optical isomerism of tartrates), the foundation of stereochemistry", year: "c. 1848", kind: discovery, lasting: "foundation of stereochemistry", certainty: 0.7, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Britannica; year is the coder's dating."}
     - {value: "Germ theory of fermentation; aerobic and anaerobic life", year: "1857–1861", kind: theory, lasting: "basis of microbiology", certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraphs 4–5"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
     - {value: "Experimental refutation of spontaneous generation (swan-neck flasks)", year: "1859–1864", kind: discovery, lasting: "grounded sterile technique and bacteriology", certainty: 1.0, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 1"}, {source: S3, locator: "pp. 3–4"}], how_known: "Britannica and his own account."}
     - {value: "Pasteurization", year: "1863–1865", kind: invention, lasting: "in universal use", certainty: 1.0, cites: [{source: S1, locator: "'Research career'"}, {source: S2, locator: "pasteurization paragraph (1865 patent)"}], how_known: "Two sources."}
     - {value: "Attenuated vaccines (chicken cholera, anthrax, rabies) and the general principle of vaccination", year: "1879–1885", kind: method, lasting: "foundation of immunology", certainty: 1.0, cites: [{source: S1, locator: "'Vaccine development'"}, {source: S2, locator: "vaccination paragraph"}], how_known: "Two sources."}
   evidence_of_impact:
-    - {value: "Some 30 institutes and many hospitals, schools and streets bear his name", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Some 30 institutes and many hospitals, schools and streets bear his name", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
     - {value: "Discours de réception à l'Académie française (eulogy of Littré)", year: 1882, kind: "other", certainty: 1.0, cites: [{source: S3, locator: "title page"}], how_known: "Library scan of the 1882 printing."}
   honours:
-    - {value: "Elected to the Académie des sciences", year: 1862, certainty: 1.0, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 2"}], how_known: "Britannica."}
+    - {value: "Elected to the Académie des sciences", year: 1862, certainty: 0.7, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 2"}], how_known: "Britannica."}
     - {value: "Elected to the Académie française (seat of Littré)", year: 1882, certainty: 1.0, cites: [{source: S1, locator: "'Vaccine development'"}, {source: S4, locator: "page heading"}], how_known: "Two sources."}
     - {value: "Legion of Honour", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica (no year given)."}
-  definition_fit: {value: "clearly meets", rationale: "Founder of medical microbiology.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Founder of medical microbiology.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: TODO, note: "Catholic by general report; not stated in the sources read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
-    - {value: "Father, Jean-Joseph Pasteur, tanner and decorated sergeant major of the Napoleonic Wars", name: "Jean-Joseph Pasteur", role: father, certainty: 1.0, cites: [{source: S1, locator: "'Early education'; Top Questions"}], how_known: "Britannica (two passages)."}
-  household_circumstances: {value: "Relatively poor family of a tanner, one of four children; the family moved from Dole to Arbois", certainty: 0.7, cites: [{source: S1, locator: "Top Questions; 'Early education'"}], how_known: "Britannica."}
+    - {value: "Father, Jean-Joseph Pasteur, tanner and decorated sergeant major of the Napoleonic Wars", name: "Jean-Joseph Pasteur", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica."}
+  household_circumstances: {value: "Tanner's family; the family moved from Dole to Arbois", certainty: 0.7, cites: [{source: S1, locator: "'Early education'; opening"}], how_known: "Britannica."}
   schooling:
-    - {value: "Primary school, Arbois", stage: "dame or charity school", years: TODO, certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica; nearest stage."}
+    - {value: "Primary school, Arbois", stage: "elementary school", years: TODO, certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica; nearest stage."}
     - {value: "Collège royal (lycée), Besançon: bachelier ès lettres 1840; bachelier ès sciences 1842 (Besançon per Britannica, Dijon per ENS)", stage: "grammar or secondary school", years: "–1842", certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources, which differ on where the science degree was taken."}
     - {value: "École normale supérieure, Paris (entered 1843; licence 1845; doctorate 1847), assistant to Dumas", stage: university, years: "1843–1847", certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 1"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
   early_mathematics: {value: TODO}
@@ -78,13 +79,13 @@ childhood:
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [French], certainty: 1.0, cites: [{source: S1, locator: "'Early education'"}], how_known: "Jura family."}
+  languages_in_childhood: {value: [French], certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Jura family."}
   notable_events:
     - {value: "Pastels and portraits of his parents and friends made at 15, later kept at the Pasteur Institute museum", year: "c. 1838", certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1847–1895", certainty: 1.0, cites: [{source: S1, locator: "'Research career'; 'Vaccine development'"}], how_known: "From his doctorate to his death."}
+  working_years: {value: "1847–1895", certainty: 0.7, cites: [{source: S1, locator: "'Research career'; 'Vaccine development'"}], how_known: "From his doctorate to his death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Two orders kept apart: experimental science 'jamais [...] ne fait intervenir la considération de l'essence des choses, de l'origine du monde et de ses destinées' and has nothing to learn from metaphysics; but the questions of God and the soul seem to him 'd'essence éternelle', and the notion of the infinite, which imposes itself and is incomprehensible, puts 'le surnaturel [...] au fond de tous les cœurs'."
@@ -110,7 +111,7 @@ worldview:
       cites: [{source: S3, locator: "pp. 3–4, 20"}, {source: S1, locator: "'Spontaneous generation'"}]
       how_known: "Britannica's account of his working science (P6), with his speech in support. His own words about nature (pp. 3–4) support the named alternative 3, and the p. 4 passage that supports 4 is about method (how to know), not how nature works, so the speech speaks to the score only indirectly. Scored at 0.5 with basis scholarly_reconstruction, as B from working science is for Bohr, Chandrasekhar and Dirac (§3 same pattern; lens audit batch 3, #84; was written_profession 0.7)."
       rationale: "Scored on his account of nature (P6). His science ran on strict experimental control: the method 'qui a pour guide et pour contrôle incessant l'observation et l'expérience, dégagées [...] de tout préjugé métaphysique' (p. 4), with no spontaneous generation and a specific organism for each fermentation and disease (S1). No miracle, petition or exemption in his account of nature. Named alternative: 3, since he says that by showing that life 'ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière' he served 'la doctrine spiritualiste' (pp. 3–4), which may hold life apart from the forces governing matter; the claim is hedged ('jusqu'à ce jour') and names no exception to law."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing read on judgement, afterlife or reward and punishment; the soul's 'hautes préoccupations' (p. 20) are named but not described."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or reward and punishment; the soul's 'hautes préoccupations' (p. 20) are named but not described."}
     D_authority:
       value: 2
       basis: written_profession
@@ -174,14 +175,14 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "French (Jura artisan family)", certainty: 1.0, cites: [{source: S1, locator: "'Early education'; Top Questions"}], how_known: "Britannica."}
+  ethnic_or_communal_heritage: {value: "French (Jura artisan family)", certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica."}
   religious_heritage_by_birth: {value: TODO, note: "Catholic by general report; not in a source read."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: TODO}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1848–1885", certainty: 1.0, cites: [{source: S1, locator: "'Research career' to 'Vaccine development'"}], how_known: "Molecular asymmetry to the rabies vaccine."}
+  major_work_period: {value: "1848–1885", certainty: 0.7, cites: [{source: S1, locator: "'Research career' to 'Vaccine development'"}], how_known: "Molecular asymmetry to the rabies vaccine."}
   age_at_first_lasting_contribution: {value: 25, certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "Computed from the coder's 1848."}
   first_evidence_of_lio_type_views: {value: "Académie française reception speech", year: 1882, certainty: 1.0, cites: [{source: S3, locator: "pp. 3–4, 20"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The speech (1882) comes late in the major work; nothing earlier was read.", certainty: 0.5, cites: [{source: S3, locator: "p. 3"}], how_known: "Dates of what was read."}
@@ -200,11 +201,11 @@ institutions:
   - {value: "University of Lille", role: "professor of chemistry and dean of the science faculty", years: "1854–1857", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 3"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "École normale supérieure", role: "administrator and director of scientific studies; laboratory of physiological chemistry", years: "1857–1867", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 4"}, {source: S2, locator: "paragraphs 2–3"}], how_known: "Two sources."}
   - {value: "Sorbonne", role: "professor of chemistry", years: "1867–", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 3"}], how_known: "Britannica."}
-  - {value: "Académie des sciences", role: member, years: "1862–1895", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 2"}], how_known: "Britannica."}
+  - {value: "Académie des sciences", role: member, years: "1862–1895", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "'Spontaneous generation', paragraph 2"}], how_known: "Britannica."}
   - {value: "Académie française", role: member, years: "1881–1895", kind: "academy or learned society", certainty: 0.7, cites: [{source: S4, locator: "page heading"}, {source: S1, locator: "'Vaccine development'"}], how_known: "Received 1882; election year 1881 is general knowledge (flag)."}
-  - {value: "Institut Pasteur, Paris", role: "founder and director", years: "1888–1895", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "'Vaccine development' (inaugurated 14 Nov 1888)"}], how_known: "Britannica gives the inauguration; his directorship is general knowledge (flag)."}
+  - {value: "Institut Pasteur, Paris", role: "founder and director", years: "1888–1895", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "'Vaccine development' (inaugurated 14 Nov 1888)"}], how_known: "Britannica gives the inauguration; his directorship is general knowledge (flag)."}
 collaborators:
-  - {value: "Jean-Baptiste Dumas", relation: teacher, note: "lecturer at the ENS; Pasteur was his assistant; later urged the silkworm work", certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 1; 'Spontaneous generation', paragraph 2"}], how_known: "Britannica (two passages)."}
+  - {value: "Jean-Baptiste Dumas", relation: teacher, note: "lecturer at the ENS; Pasteur was his assistant; later urged the silkworm work", certainty: 0.7, cites: [{source: S1, locator: "'Research career', paragraph 1; 'Spontaneous generation', paragraph 2"}], how_known: "Britannica (two passages)."}
   - {value: "Robert Koch", roster_id: koch-robert, relation: "rival or critic", note: "independent proof of the anthrax bacillus", certainty: 0.7, cites: [{source: S1, locator: "'Vaccine development', paragraph 3"}], how_known: "Britannica describes parallel work; the rivalry is general knowledge (flag)."}
   - {value: "Émile Littré", relation: other, note: "predecessor in his Académie française seat; the reception speech is his eulogy and a critique of his positivism", certainty: 1.0, cites: [{source: S3, locator: "pp. 4–26"}], how_known: "The speech."}
   - {value: "Ernest Renan", relation: other, note: "replied to his reception speech", certainty: 1.0, cites: [{source: S3, locator: "title page"}], how_known: "The 1882 printing includes Renan's reply."}
@@ -295,7 +296,7 @@ sources:
 
 ## Summary
 
-Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 4 (0.5), D 2 (0.7); A, C, E below threshold; mid_basin below threshold.
+Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 4 (0.5), D 2 (0.7); A and E below threshold, C UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -311,7 +312,7 @@ Son of a tanner who had been a decorated sergeant major; an average pupil gifted
 
 ## Adult working worldview
 
-By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 4 (0.5), D 2 (0.7); A, C, E below threshold.
+By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 4 (0.5), D 2 (0.7); A and E below threshold, C UNKNOWN.
 
 ## Heritage (context only)
 

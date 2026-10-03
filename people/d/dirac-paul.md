@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Kojevnikov, first page), MacTutor and the Nobel biography. No writing by Dirac on religion could be checked: the 1963 Scientific American article is access-restricted on the Internet Archive, the FSU Library scan of his 1976 Lindau lecture notes sits behind a bot challenge, and the 1927 Solvay remarks survive only in Heisenberg's later reconstruction (another person's report). primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: dirac-paul
@@ -25,7 +26,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Paul Adrien Maurice Dirac", certainty: 1.0, cites: [{source: S2, locator: "heading"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
-  native_name: {value: "Paul Adrien Maurice Dirac (English)", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "English name."}
+  native_name: {value: "Paul Adrien Maurice Dirac (English)", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "English name."}
   aliases:
     - {name: "Dirac-Paul", kind: "roster alias"}
     - {name: "Paul-Dirac", kind: "roster alias"}
@@ -42,8 +43,8 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "UK is Northern Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraph 1"}], how_known: "Cambridge 1923–1969; Florida (North America) from 1969."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Papers in the Proceedings of the Royal Society."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Papers in the Proceedings of the Royal Society."}
   occupations: {value: ["theoretical physicist", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
 
 contribution:
@@ -64,7 +65,7 @@ contribution:
     - {value: "Copley Medal", year: 1952, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor; Nobel page names the medal without a year."}
     - {value: "Pontifical Academy of Sciences (member)", year: 1961, certainty: 0.5, cites: [{source: S3, locator: "paragraph 4 (1961)"}, {source: S2, locator: "honours paragraph (1958)"}], how_known: "Sources disagree (1961 vs 1958)."}
     - {value: "Order of Merit", year: 1973, certainty: 0.7, cites: [{source: S2, locator: "honours paragraph"}], how_known: "MacTutor."}
-  definition_fit: {value: "clearly meets", rationale: "A founder of quantum mechanics and QED.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "A founder of quantum mechanics and QED.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: TODO, note: "Not stated in the sources read."}
@@ -74,7 +75,7 @@ childhood:
     - {value: "Mother, Florence Hannah Holten, from Cornwall, working in a Bristol library when she met Charles", name: "Florence Dirac (née Holten)", role: mother, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources (English mother)."}
   household_circumstances: {value: "Strict, unhappy home (oppressive paternal discipline); French only at the father's table; an older brother (Reginald, who later took his own life) and a younger sister", certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraphs 2, 7"}, {source: S1, locator: "childhood paragraph"}], how_known: "Two sources."}
   schooling:
-    - {value: "Bishop Primary School (as MacTutor names it), Bristol", stage: "dame or charity school", years: "–1914", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor; nearest stage."}
+    - {value: "Bishop Primary School (as MacTutor names it), Bristol", stage: "elementary school", years: "–1914", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor; nearest stage."}
     - {value: "Merchant Venturers' Technical College secondary school, Bristol", stage: "grammar or secondary school", years: "1914–1918", certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 3"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
     - {value: "University of Bristol: electrical engineering (BSc 1921), then mathematics (first class, 1923)", stage: university, years: "1918–1923", certainty: 1.0, cites: [{source: S1, locator: "education paragraph"}, {source: S2, locator: "Biography, paragraphs 4–5"}], how_known: "Two sources."}
     - {value: "St John's College, Cambridge, research student under Ralph Fowler (PhD 1926)", stage: university, years: "1923–1926", certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 6"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
@@ -84,13 +85,13 @@ childhood:
     - {value: "Early access to the school's science laboratories during World War I", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor."}
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [English, French], certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 2"}], how_known: "French at his father's table."}
+  languages_in_childhood: {value: [English, French], certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 2"}], how_known: "French at his father's table."}
   notable_events:
     - {value: "Elder brother Reginald took his own life while Paul was a research student", year: "1925", certainty: 0.7, cites: [{source: S2, locator: "Biography (research-student paragraph)"}], how_known: "MacTutor; year from the period described."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1923–1984", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "From research student to death."}
+  working_years: {value: "1923–1984", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From research student to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Dirac on science and religion could be read in a checkable source (see coder_notes)."}
   primary_system:
@@ -103,16 +104,16 @@ worldview:
     - {code: ATHE, reason: "Leading candidate, not coded (BELOW_THRESHOLD): rests on Heisenberg's reconstruction of the 1927 Solvay conversation and on Pauli's quip, both reports by others. ATHE is a stub system file (flag)."}
     - {code: AGNOS, reason: "Considered: his later writing is reported to treat God as an open hypothesis; not read. AGNOS is a stub system file (flag)."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read.", note: "Stays BELOW_THRESHOLD (P19): the only evidence is reported speech by others, Heisenberg's later reconstruction of the 1927 Solvay conversation and Pauli's quip, which bears on the point but cannot score it."}
     B_cause:
       value: 4
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "QED and 1928 paragraphs"}, {source: S2, locator: "Biography"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi). No statement of his own about miracles read, so 0.5."
       rationale: "Scored on his account of nature (P6). He accepted that the fundamental laws of microscopic particles are probabilistic ('nature makes a choice', S1) and trusted mathematical formalism to find new laws, predicting the positron from his equation (S1): statistical and mathematical law throughout, with no miracle, petition or exemption in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on reward, punishment or afterlife in the sources read."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation in the sources read.", note: "His view that a true theory must be mathematically beautiful (S1) concerns method within physics, not revelation versus observation."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on reward, punishment or afterlife in the sources read."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "His view that a true theory must be mathematically beautiful (S1) concerns method within physics, not revelation versus observation."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
   statements: []
@@ -150,7 +151,7 @@ collaborators:
   - {value: "Werner Heisenberg", roster_id: heisenberg-werner, relation: "influenced by", note: "the 1925 paper Dirac reworked; travelled together to Japan in 1929", certainty: 1.0, cites: [{source: S1, locator: "'In August 1925 Dirac received through Fowler proofs'"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
   - {value: "Niels Bohr", roster_id: bohr-niels, relation: "mentor or employer", note: "worked with Bohr in Copenhagen after his 1926 PhD", certainty: 0.7, cites: [{source: S2, locator: "Biography (after the doctorate)"}], how_known: "MacTutor."}
   - {value: "Erwin Schrödinger", roster_id: schrodinger-erwin, relation: other, note: "shared the 1933 Nobel Prize", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography (1933)"}], how_known: "Two sources."}
-  - {value: "Eugene Wigner", relation: family, note: "brother-in-law: Dirac married Wigner's sister Margit in 1937", certainty: 1.0, cites: [{source: S2, locator: "Biography (1934–35)"}], how_known: "MacTutor."}
+  - {value: "Eugene Wigner", relation: family, note: "brother-in-law: Dirac married Wigner's sister Margit in 1937", certainty: 0.7, cites: [{source: S2, locator: "Biography (1934–35)"}], how_known: "MacTutor."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, GPT).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 124"}], how_known: "Study roster."}
@@ -209,7 +210,7 @@ sources:
 
 ## Summary
 
-Paul Adrien Maurice Dirac (1902–1984), English theoretical physicist, gave quantum mechanics its general mathematical form, wrote the relativistic equation of the electron and predicted antimatter; he shared the 1933 Nobel Prize with Schrödinger [S1; S3]. No statement of his on religion could be checked; the famous anti-religious remarks of 1927 are Heisenberg's later reconstruction. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold.
+Paul Adrien Maurice Dirac (1902–1984), English theoretical physicist, gave quantum mechanics its general mathematical form, wrote the relativistic equation of the electron and predicted antimatter; he shared the 1933 Nobel Prize with Schrödinger [S1; S3]. No statement of his on religion could be checked; the famous anti-religious remarks of 1927 are Heisenberg's later reconstruction. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from the working science; A and E below threshold, C and D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 

@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 8
+  schema_version: "1.3"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: the letters, essays and prayers S4–S7 and S9 were read in the Gutenberg text of Campbell and Garnett 1882 (S3), an unofficial copy. Checked them against S13, the University of Toronto library scan of the 1882 edition (Internet Archive). All seven quotations match word for word except one Gutenberg error: the 1876 letter to Ellicott (p. 394) reads 'founded on a most conjectural scientific hypothesis', not 'almost' (checked on the page image); quotation corrected. The two prayers (S7) are in a footnote on p. 323, not p. 347; locator corrected everywhere. Added S13 cites to the three certainty-1.0 fields that rest on these texts (A_locus, Lewis Campbell and C. J. Ellicott collaborator entries) and to the seven quotations. All stay at 1.0. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "S13 scan verification follow-up: the seven quotations checked against the University of Toronto library scan are now marked verified_against primary facsimile; the four S8 lecture quotations and the S3 reported speech remain unchanged. S13 citations were already present. No quotation text or score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: maxwell-james-clerk
@@ -31,7 +32,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "James Clerk Maxwell", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}, {source: S3, locator: "p. 2"}], how_known: "Both sources use this name. S1 explains that 'Maxwell' was added to the family name Clerk by his father."}
-  native_name: {value: "James Clerk Maxwell", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
+  native_name: {value: "James Clerk Maxwell", certainty: 0.7, cites: [{source: S1, locator: "opening sentence"}], how_known: "English was his language, so the native form is the roster name."}
   aliases:
     - {name: "James-Clerk-Maxwell", kind: "roster alias"}
     - {name: "Maxwell-James Clerk", kind: "roster alias"}
@@ -61,8 +62,8 @@ basics:
       certainty: 1.0
       cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "Quick Info"}]
       how_known: "Two sources agree. S1 says he was buried at Parton, Scotland."
-  first_lasting_contribution_year: {value: 1855, certainty: 1.0, cites: [{source: S3, locator: "p. 517 (Garnett's sketch): 'On Faraday's Lines of Force' read 10 December 1855 and 11 February 1856"}, {source: S3, locator: "p. 221, letter to his father, 3 December 1855"}], how_known: "Year the first part of 'On Faraday's Lines of Force' was read. It is the start of the field work that led to his equations (S1, Later life). His 1846 paper on ovals (age 14) is earlier but is not listed as lasting."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S3, locator: "p. 517"}], how_known: "Derived from first_lasting_contribution_year (1855) under the era buckets (decision P2)."}
+  first_lasting_contribution_year: {value: 1855, certainty: 0.7, cites: [{source: S3, locator: "p. 517 (Garnett's sketch): 'On Faraday's Lines of Force' read 10 December 1855 and 11 February 1856"}, {source: S3, locator: "p. 221, letter to his father, 3 December 1855"}], how_known: "Year the first part of 'On Faraday's Lines of Force' was read. It is the start of the field work that led to his equations (S1, Later life). His 1846 paper on ovals (age 14) is earlier but is not listed as lasting."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S3, locator: "p. 517"}], how_known: "Derived from first_lasting_contribution_year (1855) under the era buckets (decision P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in Edinburgh; the United Kingdom is Northern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "Early life; Later life"}, {source: S2, locator: "Biography"}], how_known: "All his posts were in Aberdeen, London and Cambridge, plus his estate at Glenlair (all United Kingdom)."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "throughout ('he', 'his')"}, {source: S3, locator: "p. 2 ('his parents')"}], how_known: "As the sources record it."}
@@ -87,16 +88,16 @@ contribution:
     - {value: "Maxwell's equations, the Maxwell–Boltzmann distribution, the Maxwell relations and Maxwell's demon carry his name", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "Later life"}, {source: S2, locator: "Biography"}], how_known: "Named in both sources."}
     - {value: "First Cavendish Professor; designed and set up the Cavendish Laboratory (opened 16 June 1874)", kind: "institutional or technological lineage", certainty: 1.0, cites: [{source: S1, locator: "Later life"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree; S2 gives the opening date."}
   major_works:
-    - {value: "On Faraday's Lines of Force", year: "1855–1856", kind: "paper or paper series", certainty: 1.0, cites: [{source: S3, locator: "p. 517"}], how_known: "Read before the Cambridge Philosophical Society."}
-    - {value: "A Dynamical Theory of the Electro-magnetic Field", year: 1864, kind: "paper or paper series", certainty: 1.0, cites: [{source: S3, locator: "p. 550"}], how_known: "Read before the Royal Society, 8 December 1864."}
+    - {value: "On Faraday's Lines of Force", year: "1855–1856", kind: "paper or paper series", certainty: 0.7, cites: [{source: S3, locator: "p. 517"}], how_known: "Read before the Cambridge Philosophical Society."}
+    - {value: "A Dynamical Theory of the Electro-magnetic Field", year: 1864, kind: "paper or paper series", certainty: 0.7, cites: [{source: S3, locator: "p. 550"}], how_known: "Read before the Royal Society, 8 December 1864."}
     - {value: "A Treatise on Electricity and Magnetism", year: 1873, kind: book, certainty: 1.0, cites: [{source: S1, locator: "Later life"}, {source: S3, locator: "p. 498"}], how_known: "Two sources."}
     - {value: "Molecules (lecture to the British Association at Bradford)", year: 1873, kind: other, certainty: 1.0, cites: [{source: S8, locator: "p. 361 and the edition's source note (From Nature, vol. VIII; the OCR reads 'Till.')"}], how_known: "The lecture text itself."}
   honours:
     - {value: "Second Wrangler, and equal Smith's Prizeman with E. J. Routh, Cambridge", year: 1854, certainty: 1.0, cites: [{source: S3, locator: "p. 176"}, {source: S2, locator: "Biography (Tait: 'bracketed equal with the Senior Wrangler')"}], how_known: "Two sources agree that the Smith's Prize was shared.", alternatives: [{value: "first Smith's prizeman", cites: [{source: S1, locator: "Early life"}], note: "Britannica's wording; it does not mention the tie."}]}
     - {value: "Adams Prize (Cambridge), for the essay on Saturn's rings", year: 1857, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Later life ('prizewinning essay')"}], how_known: "Two sources."}
-    - {value: "Rumford Medal of the Royal Society, for the colour researches", year: 1860, certainty: 1.0, cites: [{source: S3, locator: "pp. 431, 482"}], how_known: "Stated twice in the biography; S3 p. 431 calls it the first of a long list of honours."}
+    - {value: "Rumford Medal of the Royal Society, for the colour researches", year: 1860, certainty: 0.7, cites: [{source: S3, locator: "pp. 431, 482"}], how_known: "Stated twice in the biography; S3 p. 431 calls it the first of a long list of honours."}
     - {value: "Fellow of the Royal Society of Edinburgh (1856) and of the Royal Society (1861); Bakerian lecturer (1866)", year: "1856–1866", certainty: 1.0, cites: [{source: S2, locator: "Honours"}, {source: S1, locator: "Early life (Royal Society 1861)"}], how_known: "S2's honours list; S1 confirms 1861."}
-  definition_fit: {value: "clearly meets", rationale: "Field equations, kinetic theory and colour work still in use, named laws, and assessments by Einstein and others.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Lane A definition (lasting original impact on documented criteria) applied to the contributions listed above."}
+  definition_fit: {value: "clearly meets", rationale: "Field equations, kinetic theory and colour work still in use, named laws, and assessments by Einstein and others.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph; Later life"}], how_known: "Lane A definition (lasting original impact on documented criteria) applied to the contributions listed above."}
 
 childhood:
   family_religion: {value: "Scottish Presbyterian (Church of Scotland) through his father, who was an elder of the parish kirk at Parton; his mother was an Episcopalian.", certainty: 1.0, cites: [{source: S3, locator: "p. 26 (father an elder at Parton); p. 12 (mother 'a good and pious (not bigoted) Episcopalian'); p. 196"}, {source: S11, locator: "section 3 (Presbyterianism of his father's tradition, Anglicanism of his mother)"}], how_known: "The 1882 biography by his friend Campbell, matched by Hutchinson's later summary."}
@@ -204,7 +205,7 @@ worldview:
       context: "Letter from Cambridge to his school friend Lewis Campbell, describing his 'great plan' of letting nothing be left unexamined."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
       note: "Transcription as printed in the 1882 Life (Gutenberg text of the 1882 edition)."
     - text: "Christianity—that is, the religion of the Bible—is the only scheme or form of belief which disavows any possessions on such a tenure. Here alone all is free. You may fly to the ends of the world and find no God but the Author of Salvation. You may search the Scriptures and not find a text to stop you in your explorations."
@@ -213,7 +214,7 @@ worldview:
       context: "Same letter. 'Such a tenure' refers to ground kept 'Tabooed' from inquiry, which he says the Scoffer, the Pantheist and others hold."
       axes: [D_authority, A_locus, C_ledger]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "the exact equality of each molecule to all others of the same kind gives it, as Sir John Herschel has well said, the essential character of a manufactured article, and precludes the idea of its being eternal and self-existent."
       cites: [{source: S8, locator: "p. 376"}]
@@ -253,8 +254,8 @@ worldview:
       date: "1873-02-11"
       context: "Essay read to the Eranus club in Cambridge on whether physical science favours determinism over free will."
       axes: [B_cause, E_scope]
-      kind: "other"
-      verified_against: "primary facsimile"
+      kind: "unpublished manuscript"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
       note: "A paper written for a private discussion club of senior colleagues; printed entire in the 1882 Life."
     - text: "What I thought of was not so much that uniformity of result which is due to uniformity in the process of formation, as a uniformity intended and accomplished by the same wisdom and power of which uniformity, accuracy, symmetry, consistency, and continuity of plan are as important attributes as the contrivance of the special utility of each individual thing."
@@ -263,7 +264,7 @@ worldview:
       context: "Reply by return of post to C. J. Ellicott, Bishop of Gloucester and Bristol, who had asked where the phrase 'manufactured articles' came from."
       axes: [A_locus, B_cause]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "But I should be very sorry if an interpretation founded on a most conjectural scientific hypothesis were to get fastened to the text in Genesis, even if by so doing it got rid of the old statement of the commentators which has long ceased to be intelligible. The rate of change of scientific hypothesis is naturally much more rapid than that of Biblical interpretations, so that if an interpretation is founded on such an hypothesis, it may help to keep the hypothesis above ground long after it ought to be buried and forgotten."
       cites: [{source: S5, locator: "p. 394"}, {source: S13, locator: "p. 394"}]
@@ -271,7 +272,7 @@ worldview:
       context: "Same letter, answering the bishop's question whether light created before the sun (Genesis 1) could be squared with science."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "I think men of science as well as other men need to learn from Christ, and I think Christians whose minds are scientific are bound to study science that their view of the glory of God may be as extensive as their being is capable of. But I think that the results which each man arrives at in his attempts to harmonise his science with his Christianity ought not to be regarded as having any significance except to the man himself, and to him only for a time, and should not receive the stamp of a society."
       cites: [{source: S6, locator: "pp. 404–405"}, {source: S13, locator: "pp. 404–405"}]
@@ -279,14 +280,14 @@ worldview:
       context: "Rough draft of his reply declining an invitation (March 1875) to join the Victoria Institute, a society for relating science and Christian faith. The draft breaks off; S3 prints 'all that has been found'."
       axes: [D_authority]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "Almighty God, who hast created man in Thine own image, and made him a living soul that he might seek after Thee and have dominion over Thy creatures, teach us to study the works of Thy hands that we may subdue the earth to our use, and strengthen our reason for Thy service; and so to receive Thy blessed Word, that we may believe on Him whom Thou hast sent to give us the knowledge of salvation and the remission of our sins."
       cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S13, locator: "p. 323 n. 1"}]
       context: "One of two undated prayer fragments 'found amongst his papers', printed by Campbell."
       axes: [C_ledger, A_locus, E_scope]
-      kind: "notebook or diary"
-      verified_against: "primary facsimile"
+      kind: "document in own hand"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-02
     - text: "I have looked into most philosophical systems, and I have seen that none will work without a God."
       cites: [{source: S3, locator: "p. 426"}]
@@ -311,7 +312,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1855–1879", certainty: 1.0, cites: [{source: S3, locator: "p. 517"}, {source: S1, locator: "Later life"}], how_known: "From the Lines of Force paper to his death; the Treatise appeared in 1873."}
-  age_at_first_lasting_contribution: {value: 24, certainty: 1.0, cites: [{source: S3, locator: "pp. 2, 517"}], how_known: "Born 13 June 1831; first part of the Lines of Force paper read 10 December 1855."}
+  age_at_first_lasting_contribution: {value: 24, certainty: 0.7, cites: [{source: S3, locator: "pp. 2, 517"}], how_known: "Born 13 June 1831; first part of the Lines of Force paper read 10 December 1855."}
   first_evidence_of_lio_type_views: {value: "In a February 1856 essay he wrote that interference with the laws of thought by organic laws or physical disturbances is 'no doubt' regulated by the laws of the brain: law without exemption, even for thought.", year: 1856, age: 24, certainty: 0.7, cites: [{source: S10, locator: "p. 240"}], how_known: "His own essay. Earliest dated statement of this kind found in a keyword search of the 1882 Life; earlier letters were not read in full, so an earlier statement may exist."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The earliest dated lawful-order statement found (February 1856) falls two months after the first Lines of Force reading (December 1855). The geometric training is earlier (see childhood), but that is form, not a stated view.", certainty: 0.7, cites: [{source: S10, locator: "p. 240"}, {source: S3, locator: "p. 517"}], how_known: "Dated documents; search not exhaustive."}
   worldview_during_major_work: {value: "A practising Presbyterian and elder who believed molecules were created and that science stops at their origin (1873), while keeping science and scripture interpretation apart (1875–76).", certainty: 0.7, cites: [{source: S8, locator: "pp. 376–377"}, {source: S5, locator: "p. 394"}, {source: S3, locator: "p. 371"}], how_known: "His own public lecture and private letters, plus one biographer for the eldership."}
@@ -337,15 +338,15 @@ collaborators:
   - {value: "Michael Faraday", roster_id: faraday-michael, relation: "influenced by", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}, {source: S3, locator: "p. 517"}], how_known: "His field theory set out to put Faraday's lines of force into mathematical form."}
   - {value: "Peter Guthrie Tait", relation: other, note: "schoolfellow at the Edinburgh Academy and lifelong friend", years: "1841–1879", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   - {value: "Lewis Campbell", relation: correspondent, note: "school friend, main correspondent, and first biographer (S3)", years: "1841–1879", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S4, locator: "whole letter"}, {source: S13, locator: "pp. 178–180"}], how_known: "Primary letters and an encyclopedia."}
-  - {value: "William Hopkins", relation: teacher, years: "1850–1854", note: "Cambridge mathematics coach", certainty: 1.0, cites: [{source: S1, locator: "Early life"}], how_known: "Encyclopedia."}
+  - {value: "William Hopkins", relation: teacher, years: "1850–1854", note: "Cambridge mathematics coach", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Encyclopedia."}
   - {value: "Ludwig Boltzmann", roster_id: boltzmann-ludwig, relation: other, note: "co-founder of the kinetic theory of gases; the velocity law carries both names", certainty: 0.7, cites: [{source: S3, locator: "p. 561"}, {source: S1, locator: "Later life"}], how_known: "Named together in both sources; no direct collaboration documented."}
-  - {value: "Albert Einstein", roster_id: einstein-albert, relation: influenced, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Encyclopedia, citing Einstein's 1931 assessment."}
+  - {value: "Albert Einstein", roster_id: einstein-albert, relation: influenced, certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Encyclopedia, citing Einstein's 1931 assessment."}
   - {value: "Max Planck", roster_id: planck-max, relation: influenced, certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "S1 links Planck's quantum hypothesis to the radiation law derived from Maxwell's theory. One source."}
   - {value: "C. J. Ellicott, Bishop of Gloucester and Bristol", relation: correspondent, years: "1876", certainty: 1.0, cites: [{source: S5, locator: "whole exchange"}, {source: S13, locator: "pp. 392–395"}], how_known: "Primary letters."}
   - {value: "John Ambrose Fleming, Richard Tetley Glazebrook, John Henry Poynting, Arthur Schuster, William D. Niven", relation: "student or assistant", years: "1871–1879", certainty: 0.7, cites: [{source: S1, locator: "Later life"}], how_known: "Listed as his students at the Cavendish by one source."}
 
 review:
-  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 to 5 when the Claude list was counted.", certainty: 1.0, cites: [{source: S12, locator: "roster.csv, rank 43"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v7.1 (no v7 review note) and carried into v8 unchanged; F rose from 4 to 5 when the Claude list was counted.", certainty: 0.7, cites: [{source: S12, locator: "roster.csv, rank 43"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
     - "Birth date: older reference works (Britannica 11th ed., DNB 1921) give 13 November 1831; 13 June is correct per S1's researcher's note and S2, S3."

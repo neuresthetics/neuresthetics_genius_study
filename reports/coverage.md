@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 473 | 473 | 0 | 0 | 0 | 100.0% |
 | contribution | 501 | 500 | 0 | 1 | 0 | 99.8% |
 | childhood | 598 | 517 | 74 | 7 | 0 | 86.5% |
-| worldview | 496 | 304 | 4 | 56 | 132 | 61.3% |
+| worldview | 496 | 304 | 4 | 90 | 98 | 61.3% |
 | heritage | 172 | 96 | 69 | 7 | 0 | 55.8% |
 | timing | 215 | 176 | 25 | 14 | 0 | 81.9% |
 | lane_b | 129 | 126 | 3 | 0 | 0 | 97.7% |
 | institutions | 144 | 144 | 0 | 0 | 0 | 100.0% |
-| collaborators | 205 | 205 | 0 | 0 | 0 | 100.0% |
+| collaborators | 204 | 204 | 0 | 0 | 0 | 100.0% |
 | review | 67 | 67 | 0 | 0 | 0 | 100.0% |
-| **all** | 3086 | 2693 | 175 | 86 | 132 | 87.3% |
+| **all** | 3085 | 2692 | 175 | 120 | 98 | 87.3% |
 
 ### Worldview coding status
 
@@ -79,14 +79,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | bohr-niels | BELOW_THRESHOLD | draft — unreviewed |
 | boyle-robert | CHRIST | draft — unreviewed |
 | chandrasekhar-subrahmanyan | ATHE (interview) | draft — unreviewed |
-| clausius-rudolf | BELOW_THRESHOLD | draft — unreviewed |
+| clausius-rudolf | UNKNOWN | draft — unreviewed |
 | curie-marie | BELOW_THRESHOLD | draft — unreviewed |
 | darwin-charles | BELOW_THRESHOLD | draft — unreviewed |
 | descartes-rene | CLASS_THEISM | draft — unreviewed |
 | dirac-paul | BELOW_THRESHOLD | draft — unreviewed |
 | einstein-albert | PANT | draft — unreviewed |
 | faraday-michael | CHRIST | example — unreviewed |
-| fermi-enrico | BELOW_THRESHOLD | draft — unreviewed |
+| fermi-enrico | UNKNOWN | draft — unreviewed |
 | feynman-richard | AGNOS | draft — unreviewed |
 | galilei-galileo | CHRIST | draft — unreviewed |
 | gauss-carl-friedrich | BELOW_THRESHOLD | draft — unreviewed |
@@ -102,7 +102,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | lavoisier-antoine | BELOW_THRESHOLD | draft — unreviewed |
 | leavitt-henrietta-swan | BELOW_THRESHOLD | draft — unreviewed |
 | leibniz-gottfried-wilhelm | CLASS_THEISM | draft — unreviewed |
-| libby-willard | BELOW_THRESHOLD | draft — unreviewed |
+| libby-willard | UNKNOWN | draft — unreviewed |
 | maxwell-james-clerk | CHRIST | draft — unreviewed |
 | meitner-lise | BELOW_THRESHOLD | draft — unreviewed |
 | mendeleev-dmitri | BELOW_THRESHOLD | draft — unreviewed |

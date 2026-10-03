@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 4
+  schema_version: "1.3"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3, #121 (run 1): 'later buried in the garrison church' overstated p. 347. Only the funeral service ('the holy words spoken over it') was held in the garrison church; she asked to be laid beside her father and mother (p. 347), and her epitaph says her father lies 'hierneben begraben' (p. 351). family_religion, the CHRIST rationale and the body now say so. The christening and confirmation in the garrison church are now attributed to the editor (p. 347); her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. No score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1786 → 1783 (the listed three nebulae of 1783, the earliest listed contribution; the old alternative is now the value), age 36 → 33; era unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: herschel-caroline
@@ -41,10 +42,10 @@ basics:
     date: {value: "1848-01-09", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "p. 351 (epitaph)"}], how_known: "Two sources agree."}
     place: {value: "Hanover", modern_name: "Hannover, Lower Saxony, Germany", polity_then: "Kingdom of Hanover", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "p. 347"}], how_known: "Two sources agree."}
   first_lasting_contribution_year: {value: 1783, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "The three nebulae she detected by telescope in 1783 (Britannica), the earliest listed contribution (decision P13); 0.7 because only one source calls them out. Her first comet followed on 1 August 1786 (S1; S2, 1786 paragraph). Was 1786, with 1783 as the alternative, until the batch 4 lens audit."}
-  era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "From first_lasting_contribution_year 1783 (P2); the first comet (1786) gives the same bucket."}
+  era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "From first_lasting_contribution_year 1783 (P2); the first comet (1786) gives the same bucket."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–4"}, {source: S2, locator: "Bath to Slough paragraphs"}], how_known: "Comets and the Flamsteed index were done in England (UK, Northern Europe), 1772–1822; the nebula catalogue was finished in Hanover (Western Europe) after 1822. Two regions, so 0.7.", alternatives: [{value: "Western Europe", cites: [{source: S2, locator: "1822 paragraph"}], note: "Hanover, 1822–1848."}]}
-  sex_as_recorded: {value: "female", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English, German], certainty: 0.7, cites: [{source: S3, locator: "pp. 235–236, 275 (letters in English)"}, {source: S2, locator: "Bath paragraph (William taught her English)"}], how_known: "Letters printed in English; German was her first language."}
   occupations: {value: ["astronomer", "singer", "assistant to William Herschel"], certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–3"}, {source: S2, locator: "Bath paragraphs"}], how_known: "Two sources."}
 
@@ -91,7 +92,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1772–1848", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 2–4"}], how_known: "From Bath to her death."}
+  working_years: {value: "1772–1848", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–4"}], how_known: "From Bath to her death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Searched the 1876 Memoir's full text (God, Providence, church, prayer, Creator, soul, heaven); no statement relating astronomy and religion was found. 'Minding the heavens' is her phrase for observing."}
   primary_system:

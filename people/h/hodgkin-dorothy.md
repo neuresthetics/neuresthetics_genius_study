@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (main work 1945–69; Jason, 2026-10-02). Basics from Britannica (Ferry), the Nobel biography and Dodson's Royal Society memoir (2002). No writing of hers on religion was found; the memoir reports Quaker-type values from her mother and Margery Fry and quotes Max Perutz's memorial address ('more Christian in word and deed than many believers I have known'), which is another person's view. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #150 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 and §7. #150 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (§5.3). #158 (run 1): death place 'Shipston-on-Stour, Warwickshire' (0.7) → 'Ilmington, Warwickshire (at home, Crab Mill)' (0.5), per Dodson's memoir p. 188, with Britannica's Shipston-on-Stour as the alternative (sources disagree, as for Pasteur). Decision P12: first_lasting_contribution_year 1945 → 1942 (start of the listed 1942–1945 penicillin item; Nobel biography), age 35 → 32; era unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: hodgkin-dorothy
@@ -25,7 +26,7 @@ identity:
     field: chemistry
     field_bucket: chemistry
   full_name: {value: "Dorothy Mary Crowfoot Hodgkin (née Crowfoot)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('In full'; 'Née')"}, {source: S3, locator: "p. 179, heading"}], how_known: "Two sources."}
-  native_name: {value: "Dorothy Crowfoot Hodgkin (English)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "English name."}
+  native_name: {value: "Dorothy Crowfoot Hodgkin (English)", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "English name."}
   aliases:
     - {name: "Dorothy Crowfoot Hodgkin", kind: "roster alias"}
     - {name: "Hodgkin-Dorothy", kind: "roster alias"}
@@ -42,8 +43,8 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}], how_known: "From first_lasting_contribution_year 1942 (P2); her vitamin B12 and insulin structures fall in 1950 on."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Egypt is Middle East and North Africa in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage'"}, {source: S2, locator: "paragraph 6"}], how_known: "Oxford, 1934–1977."}
-  sex_as_recorded: {value: "female", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S3, locator: "bibliography"}], how_known: "Papers in English."}
+  sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "bibliography"}], how_known: "Papers in English."}
   occupations: {value: ["chemist", "X-ray crystallographer", "university teacher"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
 
 contribution:
@@ -51,17 +52,17 @@ contribution:
   lasting_original_contributions:
     - {value: "Three-dimensional structure of penicillin", year: "1942–1945", kind: discovery, lasting: "largest molecule then solved by X-rays; settled a dispute among organic chemists", certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}, {source: S2, locator: "paragraph 7 (research from 1942)"}], how_known: "Two sources."}
     - {value: "Structure of vitamin B12, with extensive use of computers", year: "1948–1950s", kind: discovery, lasting: "Nobel Prize 1964", certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 2"}, {source: S2, locator: "paragraph 7 (research from 1948)"}], how_known: "Two sources."}
-    - {value: "Structure of insulin, 34 years after her first X-ray photograph of it", year: "1969", kind: discovery, lasting: "protein structure of medical importance", certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 3"}], how_known: "Britannica."}
+    - {value: "Structure of insulin, 34 years after her first X-ray photograph of it", year: "1969", kind: discovery, lasting: "protein structure of medical importance", certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 3"}], how_known: "Britannica."}
   evidence_of_impact:
     - {value: "Her structural studies 'set standards for a field that was very much in development'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "last paragraph"}], how_known: "Britannica (her biographer)."}
   major_works: []
   honours:
     - {value: "Fellow of the Royal Society", year: 1947, certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}, {source: S2, locator: "paragraph 8"}], how_known: "Two sources."}
     - {value: "Wolfson Research Professor of the Royal Society (first holder)", year: 1960, certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 2"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
-    - {value: "Nobel Prize in Chemistry", year: 1964, certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Nobel Prize in Chemistry", year: 1964, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     - {value: "Order of Merit", year: 1965, certainty: 0.7, cites: [{source: S1, locator: "'Scientific achievements', paragraph 2"}], how_known: "Britannica."}
     - {value: "Copley Medal", year: 1976, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
-  definition_fit: {value: "clearly meets", rationale: "Solved penicillin, vitamin B12 and insulin by X-ray crystallography.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Solved penicillin, vitamin B12 and insulin by X-ray crystallography.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: TODO, note: "Not stated in the sources read. S3 (p. 184) says Margery Fry's ideas 'coincided with those of Dorothy's mother, and these Quaker values too had a long-lasting influence'; that describes values, not a family religion."}
@@ -83,13 +84,13 @@ childhood:
   childhood_mentors:
     - {value: "Dr A. F. Joseph, government chemist in Khartoum, a friend of her father", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "p. 182"}], how_known: "Two sources."}
     - {value: "Her mother, Molly Crowfoot", certainty: 0.7, cites: [{source: S1, locator: "'Education and marriage'"}], how_known: "Britannica ('it was their mother who especially encouraged Dorothy')."}
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S3, locator: "p. 182"}], how_known: "English family."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "p. 182"}], how_known: "English family."}
   notable_events:
     - {value: "Visit to her parents in the Sudan, first direct experience of foreign peoples and of colonial poverty", year: "1922", certainty: 0.7, cites: [{source: S3, locator: "p. 182"}], how_known: "Dodson (the Nobel biography gives 1923)."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1932–1994", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage' to 'Social activism'"}], how_known: "Doctoral research to death."}
+  working_years: {value: "1932–1994", certainty: 0.7, cites: [{source: S1, locator: "'Education and marriage' to 'Social activism'"}], how_known: "Doctoral research to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by her on science and religion was found in the sources read."}
   primary_system:
@@ -101,17 +102,17 @@ worldview:
   candidate_codes_considered:
     - {code: CHRIST, reason: "Considered, not coded: the Quaker values from her mother and Margery Fry (p. 184) and Perutz's 'more Christian in word and deed than many believers' (p. 193) are other people's descriptions, not her words (CODING_GUIDE §1, §7); Quakers would fall under CHRIST, and no statement of hers on religion was read.", cites: [{source: S3, locator: "pp. 184, 193"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read.", note: "Stays BELOW_THRESHOLD (P19): Perutz's remark that she was 'more Christian in word and deed than many believers' (S3, p. 193) is another person's description, which bears on the point but cannot score it."}
     B_cause:
       value: 4
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "'Scientific achievements'"}]
       how_known: "Coder's reading of her working science, as P6 directs (same treatment as Fermi and Dirac). No statement of hers about miracles read, so 0.5."
       rationale: "Scored on her account of nature (P6). Her work found the arrangement of atoms in molecules from X-ray diffraction and computation, and the structure of insulin once 'the techniques of X-ray diffraction and high-speed computing were sufficiently advanced' (S1): lawful physical method throughout. No miracle, petition or exemption in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation in the sources read."}
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
   statements: []
   changes_over_life: []
@@ -142,15 +143,15 @@ lane_b:
 
 institutions:
   - {value: "Somerville College, Oxford", role: "research fellow, then Official Fellow and Tutor in Natural Science", years: "1934–1977", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage', paragraph 2"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
-  - {value: "University of Oxford (Chemical Crystallography)", role: "lecturer and demonstrator (1946), Reader in X-ray Crystallography (1956)", years: "1946–1977", kind: university, certainty: 1.0, cites: [{source: S2, locator: "paragraph 6"}], how_known: "Nobel biography."}
-  - {value: "Pugwash Conferences on Science and World Affairs", role: president, years: "1975–1988", kind: other, certainty: 1.0, cites: [{source: S1, locator: "'Social activism'"}], how_known: "Britannica."}
-  - {value: "University of Bristol", role: chancellor, years: "1970–1988", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Social activism'"}], how_known: "Britannica."}
+  - {value: "University of Oxford (Chemical Crystallography)", role: "lecturer and demonstrator (1946), Reader in X-ray Crystallography (1956)", years: "1946–1977", kind: university, certainty: 0.7, cites: [{source: S2, locator: "paragraph 6"}], how_known: "Nobel biography."}
+  - {value: "Pugwash Conferences on Science and World Affairs", role: president, years: "1975–1988", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Social activism'"}], how_known: "Britannica."}
+  - {value: "University of Bristol", role: chancellor, years: "1970–1988", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Social activism'"}], how_known: "Britannica."}
 collaborators:
   - {value: "J. D. Bernal", relation: teacher, note: "doctoral supervisor at Cambridge and 'a lifelong influence'; she was receptive to his pro-Soviet views and belief in the social function of science", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage', paragraph 2"}, {source: S2, locator: "paragraph 5"}], how_known: "Two sources."}
-  - {value: "H. M. Powell", relation: teacher, note: "her first research supervisor at Oxford", certainty: 1.0, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Nobel biography."}
-  - {value: "Max Perutz", relation: collaborator, note: "she supported his haemoglobin work; he gave the address at her memorial service", certainty: 1.0, cites: [{source: S3, locator: "p. 193"}], how_known: "Dodson."}
-  - {value: "Margaret Thatcher", roster_id: thatcher-margaret, relation: "student or assistant", note: "one of her students in the late 1940s", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage', paragraph 2"}], how_known: "Britannica."}
-  - {value: "Thomas Hodgkin", relation: family, note: "husband (married 1937), left-wing historian, later of West Africa", certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage', paragraph 3"}], how_known: "Britannica."}
+  - {value: "H. M. Powell", relation: teacher, note: "her first research supervisor at Oxford", certainty: 0.7, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Nobel biography."}
+  - {value: "Max Perutz", relation: collaborator, note: "she supported his haemoglobin work; he gave the address at her memorial service", certainty: 0.7, cites: [{source: S3, locator: "p. 193"}], how_known: "Dodson."}
+  - {value: "Margaret Thatcher", roster_id: thatcher-margaret, relation: "student or assistant", note: "one of her students in the late 1940s", certainty: 0.7, cites: [{source: S1, locator: "'Education and marriage', paragraph 2"}], how_known: "Britannica."}
+  - {value: "Thomas Hodgkin", relation: family, note: "husband (married 1937), left-wing historian, later of West Africa", certainty: 0.7, cites: [{source: S1, locator: "'Education and marriage', paragraph 3"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, Grok). Included in the fourth batch by owner decision, borderline on the stage-2 date window (1600–1950).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 94"}], how_known: "Study roster; batch inclusion by Jason, 2026-10-02."}
@@ -208,7 +209,7 @@ sources:
 
 ## Summary
 
-Dorothy Crowfoot Hodgkin (1910–1994), English chemist, solved the structures of penicillin (1945), vitamin B12 and insulin (1969) by X-ray crystallography and won the 1964 Nobel Prize in Chemistry [S1]. No writing of hers on religion was found; her memoir records Quaker-type values from her mother and Perutz's remark that she was "more Christian in word and deed than many believers" [S3, pp. 184, 193], which is another person's view. primary_system BELOW_THRESHOLD. B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold. Included in this batch by owner decision, borderline on the stage-2 date window.
+Dorothy Crowfoot Hodgkin (1910–1994), English chemist, solved the structures of penicillin (1945), vitamin B12 and insulin (1969) by X-ray crystallography and won the 1964 Nobel Prize in Chemistry [S1]. No writing of hers on religion was found; her memoir records Quaker-type values from her mother and Perutz's remark that she was "more Christian in word and deed than many believers" [S3, pp. 184, 193], which is another person's view. primary_system BELOW_THRESHOLD. B 4 at 0.5 from the working science; A and E below threshold, C and D UNKNOWN; mid_basin below threshold. Included in this batch by owner decision, borderline on the stage-2 date window.
 
 ## Life and work
 

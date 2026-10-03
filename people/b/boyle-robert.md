@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P11: TCP transcriptions are authoritative copies under CODING_GUIDE §7, so the open question on S3/S4 is closed (coder notes, the self-described relation's how_known and both reliability notes cite P11; no value change). Decision P12: first_lasting_contribution_year 1660 → 1659 (start of the listed 1659–1660 air-pump item; Britannica), age 33 → 32; era unchanged. Small fixes on claims that hold: #22 comma restored in 'divers times, (and perhaps oftner' (TCP A28982, p. 160); #34 Church of England affiliation 1.0 → 0.7 (only Britannica names the church). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: boyle-robert
@@ -25,7 +26,7 @@ identity:
     field: chemistry
     field_bucket: chemistry
   full_name: {value: "Robert Boyle", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 Life"}], how_known: "Two sources."}
-  native_name: {value: "Robert Boyle (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "Robert Boyle (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases: []
 
 basics:
@@ -35,31 +36,31 @@ basics:
   death:
     date: {value: "1691-12-31", calendar: julian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica; calendar style as for the birth date."}
     place: {value: "London", modern_name: "London, England, UK", polity_then: "Kingdom of England", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1659, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1 ('In 1659 he and Robert Hooke [...] completed the construction of their famous air pump and used it to study pneumatics')"}], how_known: "The air-pump experiments with Hooke, the earliest listed contribution (1659–1660), taken at the start year (decisions P12, P13): Britannica dates the completed pump and its use to 1659; the results appeared in New Experiments Physico-Mechanicall (1660). Was 1660 (the publication year) until the batch 4 lens audit."}
-  era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "From first_lasting_contribution_year (P2)."}
+  first_lasting_contribution_year: {value: 1659, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1 ('In 1659 he and Robert Hooke [...] completed the construction of their famous air pump and used it to study pneumatics')"}], how_known: "The air-pump experiments with Hooke, the earliest listed contribution (1659–1660), taken at the start year (decisions P12, P13): Britannica dates the completed pump and its use to 1659; the results appeared in New Experiments Physico-Mechanicall (1660). Was 1660 (the publication year) until the batch 4 lens audit."}
+  era_bucket: {value: "1600 to 1749", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Ireland is Northern Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career'; 'Mature years in London'"}], how_known: "Oxford and London."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career'; 'Mature years in London'"}], how_known: "Oxford and London."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English, Latin], certainty: 0.7, cites: [{source: S3, locator: "title page"}, {source: S2, locator: "§1 Life"}], how_known: "His books were written in English (S3, S4); Latin editions and his French (S2) noted; Latin as a working language is the coder's reading of the period, not checked title by title."}
   occupations: {value: ["natural philosopher", "chemist", "theological writer"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 Life"}], how_known: "Two sources."}
 
 contribution:
   fields: {value: ["chemistry", "pneumatics", "experimental philosophy", "natural theology"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
-    - {value: "Air-pump experiments with Robert Hooke on air pressure and the vacuum (air's role in combustion, respiration and sound)", year: "1659–1660", kind: discovery, lasting: "founding work of experimental pneumatics", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
-    - {value: "Boyle's law: pressure and volume of a gas vary inversely", year: "1662", kind: "law or principle", lasting: "standard physics and chemistry", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
-    - {value: "The Sceptical Chymist: critique of Aristotelian and Paracelsian elements and of chemical analysis; corpuscular chemistry", year: "1661", kind: work, lasting: "earned him the name 'father of chemistry'", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
+    - {value: "Air-pump experiments with Robert Hooke on air pressure and the vacuum (air's role in combustion, respiration and sound)", year: "1659–1660", kind: discovery, lasting: "founding work of experimental pneumatics", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
+    - {value: "Boyle's law: pressure and volume of a gas vary inversely", year: "1662", kind: "law or principle", lasting: "standard physics and chemistry", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
+    - {value: "The Sceptical Chymist: critique of Aristotelian and Paracelsian elements and of chemical analysis; corpuscular chemistry", year: "1661", kind: work, lasting: "earned him the name 'father of chemistry'", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
   evidence_of_impact:
     - {value: "Called 'the leading natural philosopher in England before Newton' and 'the father of experimental philosophy'", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S2, locator: "§1 Life and opening"}, {source: S1, locator: "'Scientific career', paragraph 2 ('father of chemistry')"}], how_known: "Two sources."}
   major_works:
-    - {value: "New Experiments Physico-Mechanicall, Touching the Spring of the Air and Its Effects", year: 1660, kind: book, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
-    - {value: "The Sceptical Chymist", year: 1661, kind: book, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
-    - {value: "The Origine of Formes and Qualities", year: 1666, kind: book, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
+    - {value: "New Experiments Physico-Mechanicall, Touching the Spring of the Air and Its Effects", year: 1660, kind: book, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
+    - {value: "The Sceptical Chymist", year: 1661, kind: book, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
+    - {value: "The Origine of Formes and Qualities", year: 1666, kind: book, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
     - {value: "A Free Enquiry into the Vulgarly Receiv'd Notion of Nature", year: 1686, kind: book, certainty: 1.0, cites: [{source: S3, locator: "title page"}], how_known: "The book itself."}
     - {value: "The Christian Virtuoso", year: 1690, kind: book, certainty: 1.0, cites: [{source: S4, locator: "title page"}, {source: S1, locator: "'Theological activities'"}], how_known: "Two sources."}
   honours:
-    - {value: "Founding member of the Royal Society of London", year: 1660, certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica ('In 1660 he helped found the Royal Society')."}
-  definition_fit: {value: "clearly meets", rationale: "Founder of experimental pneumatics and of modern chemistry's corpuscular programme; Boyle's law.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Founding member of the Royal Society of London", year: 1660, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica ('In 1660 he helped found the Royal Society')."}
+  definition_fit: {value: "clearly meets", rationale: "Founder of experimental pneumatics and of modern chemistry's corpuscular programme; Boyle's law.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: TODO, note: "The family's Protestant (Church of Ireland) practice is not stated in the sources read."}
@@ -76,14 +77,14 @@ childhood:
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors:
-    - {value: "Isaac Marcombes, tutor on the grand tour and in Geneva", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
+    - {value: "Isaac Marcombes, tutor on the grand tour and in Geneva", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   languages_in_childhood: {value: [English, French], certainty: 0.7, cites: [{source: S2, locator: "§1 Life ('mastered the French language')"}], how_known: "SEP; French learned in Geneva in his teens."}
   notable_events:
-    - {value: "Christian conversion experience in Geneva during the grand tour", year: "1639–1644", certainty: 1.0, cites: [{source: S2, locator: "§1 Life"}], how_known: "SEP; year range from the Geneva stay (S1)."}
+    - {value: "Christian conversion experience in Geneva during the grand tour", year: "1639–1644", certainty: 0.7, cites: [{source: S2, locator: "§1 Life"}], how_known: "SEP; year range from the Geneva stay (S1)."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1644–1691", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education' to 'Mature years in London'"}], how_known: "Return to England and Stalbridge to death."}
+  working_years: {value: "1644–1691", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education' to 'Mature years in London'"}], how_known: "Return to England and Stalbridge to death."}
   nominal_affiliations:
     - {value: "Church of England ('a devout and pious Anglican')", years: "–1691", role: "member", certainty: 0.7, cites: [{source: S1, locator: "'Theological activities'"}, {source: S2, locator: "§1 Life ('Christian Virtuoso because of his piety')"}], how_known: "One source names the church: Britannica ('a devout and pious Anglican'; he declined a bishopric). SEP confirms his Christian piety but does not name the Church of England, so 0.7 (CODING_GUIDE §3, other facts)."}
   self_described_science_religion_relation:
@@ -125,14 +126,14 @@ worldview:
       certainty: 0.7
       cites: [{source: S4, locator: "pp. 41–42"}]
       how_known: "His own book, but the passage states the content of revealed law rather than arguing it, so 0.7 (indirect)."
-      rationale: "Reward and punishment of persons: God has given man 'an explicite and poſitive Law, enforc'd by Threatning ſevere Penalties to the Stubborn Tranſgreſſors; and Promiſing, to the ſincere Obeyers, Rewards' (pp. 41–42)."
+      rationale: "Reward and punishment of persons: God has given man 'an explicite and positive Law, enforc'd by Threatning severe Penalties to the Stubborn Transgressors; and Promising, to the sincere Obeyers, Rewards' (pp. 41–42)."
     D_authority:
       value: 2
       basis: written_profession
       certainty: 0.7
       cites: [{source: S4, locator: "pp. 117–118"}, {source: S2, locator: "§4.8"}]
       how_known: "His own book; a named alternative, so 0.7."
-      rationale: "Mixed. Reason keeps the judging role: the understanding is to 'Examine, whether the Teſtimony be indeed Divine', and reason takes help 'from Experience, whether Natural, or Supernatural' (p. 118); in nature, experiment rules (S1). But once a testimony is judged divine it 'ought to be [...] Believ'd, in what it clearly Teaches' (p. 118), including truths above reason such as the resurrection (S2, §4.8). Two domains, each with its own authority, so D 2 (same-pattern rule). Named alternative: 1, if the duty to believe a divine testimony above reason is read as revelation outranking observation."
+      rationale: "Mixed. Reason keeps the judging role: the understanding is to 'Examine, whether the Testimony be indeed Divine', and reason takes help 'from Experience, whether Natural, or Supernatural' (p. 118); in nature, experiment rules (S1). But once a testimony is judged divine it 'ought to be [...] Believ'd, in what it clearly Teaches' (p. 118), including truths above reason such as the resurrection (S2, §4.8). Two domains, each with its own authority, so D 2 (same-pattern rule). Named alternative: 1, if the duty to believe a divine testimony above reason is read as revelation outranking observation."
     E_scope:
       value: 3
       basis: written_profession
@@ -178,15 +179,15 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "an explicite and poſitive Law, enforc'd by Threatning ſevere Penalties to the Stubborn Tranſgreſſors; and Promiſing, to the ſincere Obeyers, Rewards ſuitable to his own Greatneſs and Goodneſs"
+    - text: "an explicite and positive Law, enforc'd by Threatning severe Penalties to the Stubborn Transgressors; and Promising, to the sincere Obeyers, Rewards suitable to his own Greatness and Goodness"
       cites: [{source: S4, locator: "p. 42"}]
       date: "1690"
-      context: "Christian Virtuoso: what God has 'vouchſafed to Man' beyond natural religion; the passage continues that providence in bodies may be 'a Bridge' to revealed religion."
+      context: "Christian Virtuoso: what God has 'vouchsafed to Man' beyond natural religion; the passage continues that providence in bodies may be 'a Bridge' to revealed religion."
       axes: [C_ledger]
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "For here alſo the Underſtanding is to Examine, whether the Teſtimony be indeed Divine; and, whether a Divine Teſtimony ought to be (as It will eaſily perceive it ſhould) Believ'd, in what it clearly Teaches"
+    - text: "For here also the Understanding is to Examine, whether the Testimony be indeed Divine; and, whether a Divine Testimony ought to be (as It will easily perceive it should) Believ'd, in what it clearly Teaches"
       cites: [{source: S4, locator: "pp. 117–118"}]
       date: "1690"
       context: "Christian Virtuoso: the use of reason applied to supernatural revelation."
@@ -196,7 +197,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Christian conversion experience in Geneva in his teens; devotional writing first, then mature works on reason, nature and revelation", year: "1639–1690", certainty: 1.0, cites: [{source: S2, locator: "§1 Life"}, {source: S1, locator: "'Theological activities'"}], how_known: "Two sources."}
-  coder_notes: "S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). Under decision P11 (2026-10-02) TCP transcriptions are authoritative copies under CODING_GUIDE §7 (scholarly keyed transcriptions of the named 1686 and 1690 editions, tied to their page images), so they are marked primary transcription and the 0.7 web-copy cap does not apply; the question the batch 4 coding run left open is settled; the long s (ſ) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft."
+  coder_notes: "S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). Under decision P11 (2026-10-02) TCP transcriptions are authoritative copies under CODING_GUIDE §7 (scholarly keyed transcriptions of the named 1686 and 1690 editions, tied to their page images), so they are marked primary transcription and the 0.7 web-copy cap does not apply; the question the batch 4 coding run left open is settled; the long s (s) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft. Long s (ſ) in the TCP quotations is normalised to s (CODING_GUIDE §7); otherwise TCP spelling is kept."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -207,7 +208,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1659–1668", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career' ('Much of Boyle's best-known work dates from this period')"}], how_known: "The Oxford years."}
+  major_work_period: {value: "1659–1668", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career' ('Much of Boyle's best-known work dates from this period')"}], how_known: "The Oxford years."}
   age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Scientific career', paragraph 1"}], how_known: "Born 25 January 1627; air pump completed and used in 1659 (month not given), so 32 for all but the first weeks of the year."}
   first_evidence_of_lio_type_views: {value: "Free Enquiry: laws of motion upheld by God's ordinary concourse", year: 1686, certainty: 1.0, cites: [{source: S3, locator: "pp. 8, 10"}], how_known: "Earliest dated statement read; his earlier theological writings were not read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The texts read (1686, 1690) are after the Oxford work; when they were drafted was not checked.", certainty: 0.5, cites: [{source: S3, locator: "title page (1685/6)"}, {source: S4, locator: "title page (1690)"}], how_known: "Dates of the texts read."}
@@ -222,14 +223,14 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Hartlib Circle", role: "member and correspondent", years: "1647–c.1655", kind: other, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
-  - {value: "University of Oxford (Experimental Philosophy Club)", role: "resident natural philosopher; the club met at times in his lodgings", years: "c.1656–1668", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
-  - {value: "Royal Society of London", role: "founding member; declined the presidency (1680)", years: "1660–1691", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "opening; 'Mature years in London'"}], how_known: "Britannica."}
+  - {value: "Hartlib Circle", role: "member and correspondent", years: "1647–c.1655", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
+  - {value: "University of Oxford (Experimental Philosophy Club)", role: "resident natural philosopher; the club met at times in his lodgings", years: "c.1656–1668", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
+  - {value: "Royal Society of London", role: "founding member; declined the presidency (1680)", years: "1660–1691", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Mature years in London'"}], how_known: "Britannica."}
 collaborators:
-  - {value: "Robert Hooke", roster_id: hooke-robert, relation: "student or assistant", note: "built the air pump with him (1659); later curator of experiments of the Royal Society", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
-  - {value: "George Starkey", relation: collaborator, note: "chemist of the Hartlib Circle who heightened his interest in experimental chemistry", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
+  - {value: "Robert Hooke", roster_id: hooke-robert, relation: "student or assistant", note: "built the air pump with him (1659); later curator of experiments of the Royal Society", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
+  - {value: "George Starkey", relation: collaborator, note: "chemist of the Hartlib Circle who heightened his interest in experimental chemistry", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   - {value: "John Locke", roster_id: locke-john, relation: collaborator, note: "fellow member of the Oxford group", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica names Locke among the Oxford natural philosophers he was associated with."}
-  - {value: "Katherine Jones, Viscountess Ranelagh", relation: family, note: "his sister; he lived and worked in her London house from 1668", certainty: 1.0, cites: [{source: S1, locator: "'Mature years in London'"}], how_known: "Britannica."}
+  - {value: "Katherine Jones, Viscountess Ranelagh", relation: family, note: "his sister; he lived and worked in her London house from 1668", certainty: 0.7, cites: [{source: S1, locator: "'Mature years in London'"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3: Claude, DeepSeek, Grok).", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 214"}], how_known: "Study roster."}

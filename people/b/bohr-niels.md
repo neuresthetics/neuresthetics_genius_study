@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #1: primary_system how_known no longer quotes S7 (AIP no-quotation notice); it now paraphrases Margrethe Bohr and says the 'did not think of himself as anything' answer was to Kuhn's question whether he thought of himself as a Jew, not a question about religion; the 'not true' wording is Heilbron's (S4, p. 24). #5: D_authority 4 at 0.5 kept; the 'warn people that it was not true' item is now labelled Margrethe Bohr's 1963 account as reported by Heilbron (S4, p. 24, n. 30), not Bohr's words; p. 34 (truth in literature and science) dropped as D support and its statement untagged from D. D already at the 0.5 floor, so no certainty change; nothing downstream changes (mid_basin BELOW_THRESHOLD, A not scored). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: bohr-niels
@@ -26,7 +27,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Niels Henrik David Bohr", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "opening"}], how_known: "Nobel biography; Britannica agrees."}
-  native_name: {value: "Niels Henrik David Bohr (Danish)", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Danish name; same spelling."}
+  native_name: {value: "Niels Henrik David Bohr (Danish)", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Danish name; same spelling."}
   aliases:
     - {name: "Bohr-Niels", kind: "roster alias"}
     - {name: "Niels-Bohr", kind: "roster alias"}
@@ -41,8 +42,8 @@ basics:
   first_lasting_contribution_year: {value: 1913, certainty: 1.0, cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}, {source: S2, locator: "1913 papers"}], how_known: "The 1913 trilogy on atomic constitution (Philosophical Magazine)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Denmark is Northern Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 4–6"}], how_known: "Copenhagen, with formative stays in Cambridge and Manchester (both Northern Europe)."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
+  region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 4–6"}], how_known: "Copenhagen, with formative stays in Cambridge and Manchester (both Northern Europe)."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Danish, English, German], certainty: 0.7, cites: [{source: S3, locator: "paragraph 9 (English books)"}, {source: S2, locator: "1913 papers in the Philosophical Magazine"}], how_known: "English publications are documented; Danish was his language at home and at the institute. German is the usual language of the 1920s physics community but was not checked here."}
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 6, 12"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
 
@@ -58,13 +59,13 @@ contribution:
     - {value: "Element 72 (hafnium, after Copenhagen) found at his institute as his theory predicted", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "'Nobel Prize' section"}], how_known: "Britannica."}
   major_works:
     - {value: "On the Constitution of Atoms and Molecules (three papers, Philosophical Magazine)", year: 1913, kind: "paper or paper series", certainty: 1.0, cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}, {source: S2, locator: "1913 papers"}], how_known: "Two sources."}
-    - {value: "Atomic Theory and the Description of Nature", year: 1934, kind: book, certainty: 1.0, cites: [{source: S3, locator: "paragraph 9"}], how_known: "Nobel biography."}
-    - {value: "Atomic Physics and Human Knowledge (essays 1933–1957)", year: 1958, kind: book, certainty: 1.0, cites: [{source: S3, locator: "paragraph 8"}], how_known: "Nobel biography."}
+    - {value: "Atomic Theory and the Description of Nature", year: 1934, kind: book, certainty: 0.7, cites: [{source: S3, locator: "paragraph 9"}], how_known: "Nobel biography."}
+    - {value: "Atomic Physics and Human Knowledge (essays 1933–1957)", year: 1958, kind: book, certainty: 0.7, cites: [{source: S3, locator: "paragraph 8"}], how_known: "Nobel biography."}
   honours:
     - {value: "Gold medal of the Royal Danish Academy of Sciences (prize essay on surface tension of water jets)", year: 1906, certainty: 0.7, cites: [{source: S2, locator: "first paper"}, {source: S3, locator: "paragraph 3"}], how_known: "MacTutor dates the medal 1906; the Nobel biography gives the publication (1908) but no award year."}
     - {value: "Nobel Prize in Physics", year: 1922, certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}, {source: S2, locator: "Nobel paragraph"}], how_known: "Two sources."}
     - {value: "First U.S. Atoms for Peace Award", year: 1957, certainty: 0.7, cites: [{source: S2, locator: "final paragraphs"}], how_known: "MacTutor."}
-  definition_fit: {value: "clearly meets", rationale: "Founded the quantum theory of the atom and led its interpretation.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Founded the quantum theory of the atom and led its interpretation.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Lutheran state church by upbringing in a non-religious home: father an atheist; mother from a Jewish family, not religious", certainty: 0.7, cites: [{source: S4, locator: "p. 20"}, {source: S7, locator: "Session I (religious training)"}, {source: S2, locator: "'christened in the Christian Church'"}], how_known: "Heilbron (from Aaserud & Heilbron) and Margrethe Bohr's 1963 recollection agree that neither parent was religious; the father's atheism is Heilbron's word. Not 1.0 because both depend on family sources."}
@@ -91,7 +92,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1906–1962", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 3–12"}], how_known: "From the prize essay to his death."}
+  working_years: {value: "1906–1962", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–12"}], how_known: "From the prize essay to his death."}
   nominal_affiliations:
     - {value: "Christened in the Lutheran Church of Denmark; formally resigned from it in April 1912 so that his wedding could not be religious; civil wedding 1 August 1912", years: "c. 1898–1912", role: "former member", certainty: 1.0, cites: [{source: S4, locator: "p. 20"}, {source: S5, locator: "1912, 'Apr 16'"}, {source: S2, locator: "'christened in the Christian Church'"}], how_known: "Heilbron (both Niels and Margrethe 'formally resigned from the Danish State Church') and the Halvorson chronology (16 April 1912) agree. Margrethe Bohr recalled that the children were christened at about 13 or 14 (S7); Heilbron says only that their mother agreed to it."}
   self_described_science_religion_relation:
@@ -173,7 +174,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1913–1939", certainty: 0.7, cites: [{source: S2, locator: "1913 papers; 'other major contributions'"}, {source: S3, locator: "paragraphs 5–8"}], how_known: "From the atomic model to the fission work; the end date is the coder's choice."}
+  major_work_period: {value: "1913–1939", certainty: 0.7, cites: [{source: S2, locator: "1913 papers; 'other major contributions'"}, {source: S3, locator: "paragraphs 5–8"}], how_known: "From the atomic model (1913) to the fission work (1939), as the two sources date them."}
   age_at_first_lasting_contribution: {value: 27, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Bohr model of the atom' paragraph"}], how_known: "Born October 1885; the trilogy appeared in 1913."}
   first_evidence_of_lio_type_views: {value: "Rejection of Christian theology, including the concept of a saved soul", year: "c. 1899–1900", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Heilbron's reconstruction; a loss of faith, not an LIO statement as such."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "The rejection of theology (adolescence) and the 1911–12 letters predate the 1913 atom.", certainty: 0.5, cites: [{source: S4, locator: "pp. 20, 34"}], how_known: "Dates."}
@@ -189,7 +190,7 @@ lane_b:
 
 institutions:
   - {value: "University of Copenhagen", role: "lecturer (1913–1914); professor of theoretical physics (1916–)", years: "1913–1962", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}, {source: S1, locator: "'Bohr's Institute for Theoretical Physics'"}], how_known: "Two sources."}
-  - {value: "Institute for Theoretical Physics, Copenhagen", role: director, years: "1921–1962", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "opening in 1921"}, {source: S3, locator: "paragraph 6"}], how_known: "Start date 1920 (Nobel) or 1921 (MacTutor, Britannica)."}
+  - {value: "Institute for Theoretical Physics, Copenhagen", role: director, years: "1921–1962", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "opening in 1921"}, {source: S3, locator: "paragraph 6"}], how_known: "Start date 1920 (Nobel) or 1921 (MacTutor, Britannica)."}
   - {value: "Victoria University of Manchester", role: "research with Rutherford (1912); lecturer (1914–1916)", years: "1912–1916", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraphs 5–6"}, {source: S2, locator: "Manchester paragraphs"}], how_known: "Two sources."}
   - {value: "Royal Danish Academy of Sciences and Letters", role: "member from 1917; later president", years: "1917–1962", kind: "academy or learned society", certainty: 0.7, cites: [{source: S2, locator: "1917"}, {source: S3, locator: "paragraph 11"}], how_known: "Membership in MacTutor; presidency in the Nobel biography (years not given)."}
   - {value: "British and American atomic bomb projects (including Los Alamos)", role: consultant, years: "1943–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S3, locator: "paragraph 10"}, {source: S2, locator: "1943 paragraph"}], how_known: "Two sources, in outline."}

@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P28, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT); Jason then signed off P8, adding the interview flag. P10 came out of the batch 3 lens audit, was a v8's pick, and was signed off by Jason on 2026-10-02 (8:23 PM PT). P11, P12 and P13 came out of the batch 4 lens audit and were decided the same day as v8's picks. P14–P28 came out of the two stage 3 lens audits (stage 3-a and 3-b, 2026-10-02) and were decided the same day as v8's picks, with the parent agent's rulings. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -39,18 +39,33 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P11 | Text Creation Partnership (EEBO-, ECCO-, Evans-TCP) transcriptions are authoritative copies under CODING_GUIDE §7; cite the TCP id and the original edition | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
 | P12 | A contribution dated as a range sets first_lasting_contribution_year by its start year | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
 | P13 | first_lasting_contribution_year is the earliest year among the listed lasting contributions; unlisted early work counts only once it is listed, with a source, as itself lasting | medium-high | DECIDED (v8's pick) 2026-10-02 (added by the lens audit, batch 4) |
+| P14 | Stub systems: no "stub, so don't code" rule; code at the evidence's certainty, flag the stub, add it to the S7 backlog | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 1) |
+| P15 | Fact certainty: one reliable source gives at most 0.7; 1.0 needs two independent reliable sources or a primary document; name-order or name-form disagreement gives 0.7 | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 2) |
+| P16 | B_cause needs a statement about nature or the physical world; pure-mathematics Platonism alone gives BELOW_THRESHOLD | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 3) |
+| P17 | First lasting year: P12 and P13 stand; the list must include the earliest lasting contribution the sources read name | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 4) |
+| P18 | Quote kinds: add autobiography, unpublished manuscript, document in own hand; reported speech cannot score alone; kind does not change the basis table | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 5) |
+| P19 | Sentinels: UNKNOWN = sources say nothing on the point; BELOW_THRESHOLD = some weak or indirect evidence; precedence rules for mid_basin and E/D | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 6) |
+| P20 | A_locus when belief changed: primary_system and the axes describe the worldview during the major work (the working years), later shifts go in changes_over_life, a retrospective self-report about an earlier period is capped at 0.7; agnostic with no locus view is BELOW_THRESHOLD; an explicit denial is scored | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 7) |
+| P21 | Kind lists: institution kind research institute; schooling stage is the level (adds elementary school) plus optional run_by; scholarly edition vs primary facsimile defined | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 8) |
+| P22 | Stage 3-a stub cases: ruling 1 covers them; SCEPT, KANT, RATN, EMPIR and every stub a stage 3 record leads with go on the S7 backlog; "from the world" means a posteriori arguments; RATN gets a one-line use_when | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 9) |
+| P23 | First lasting year: no coder-chosen defining work; the earliest listed item that is itself lasting sets the year; no pruning to move the year | high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 10) |
+| P24 | Certainty 0.5 also covers inference from the person's work or conduct with no direct statement, with the basis recorded as an inference (inference_from_work) | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 11) |
+| P25 | Source conflicts: reliable sources that disagree give 0.5 with the alternative named; a one-source detail inside a two-source 1.0 value goes in its own note at 0.7, or the field is capped at 0.7 | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 12) |
+| P26 | Sources: Spinoza's Ethics standard is Kisner (0.7 until checked; "Kisner check pending"); TTP by chapter and Bruder section (Gutenberg only with a label and a TODO); Britannica's AI "Top Questions" boxes cannot be cited; secondary-reached quotes must be checked against the primary text | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 13) |
+| P27 | Coding: DEISM requires rejecting revelation as a source of truth; anchor sentences for "LIO-type view", D 2 and the B 2/B 3 line | medium | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 14) |
+| P28 | Kinds: letter written for circulation is "published letter" (counts as published work); unpublished finished treatise and the Pensées are "unpublished manuscript" | medium-high | DECIDED (v8's pick) 2026-10-02 (stage 3 lens audit, ruling 15) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P13 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8–P28 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 28 items, in id order (P6–P13 are placed after P5, S7 after S6).
+All 43 items, in id order (P6–P28 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -482,6 +497,145 @@ Rechecked in all 31 person records (with P12):
 | The other 26 | | unchanged by P13 | already the earliest listed year (Hodgkin, Boyle and Galileo changed under P12, above) |
 
 No era bucket changes: every new year is in the same bucket as before.
+
+### P14. Coding a person whose best-fit system is a stub
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 1):** there is no rule that a stub system file blocks a code. Code the person at the certainty the evidence supports (§4 and §3, as the Feynman, Pauling and Chandrasekhar records already do), flag that the system file is a stub, and put the system on the S7 sourcing backlog (`systems/README.md`). A record that withheld a code only because the file is a stub ("batch rule", "not coded because X is a stub") should be recoded. Applied in CODING_GUIDE §5 and the S7 backlog. None of the 31 batch 1–4 records withheld a code for this reason alone. The stage 3 records that did (Darwin AGNOS, Kant KANT, Hume) are for their own coders.
+
+### P15. How many sources a fact needs
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 2):** the §3 table rules. One reliable source gives at most 0.7. 1.0 needs two independent reliable sources, or a primary document (a birth, baptism or death record, or the person's own text). A primary document read as printed in a secondary work counts as primary; the how_known says "primary document printed in S#". When sources disagree on name order or name form, the field gets 0.7. Derived fields (era_bucket, age_at_first_lasting_contribution, region_of_birth) take the lowest certainty of their inputs. The one exception is an era bucket where every candidate year falls in the same bucket. Removed: the CODING_GUIDE §3 sentence "A signed encyclopedia can support 1.0 for a birth date that nobody disputes", and RUNBOOK §4.4's "sources agree, primary or well-established → 1.0". The validator now warns on a non-worldview 1.0 that rests on one non-primary source.
+
+Applied to the 31 batch 1–4 records: 377 claims went from 1.0 to 0.7 for resting on one source, and 18 derived fields went from 1.0 to 0.7. Chandrasekhar's full_name went to 0.7 for a name-form disagreement (Nobel: "Subramanyan"). Details are in `reports/stage3_rulings_changes.csv`. Kept at 1.0: Lavoisier's baptism, religious heritage and nominal affiliation, which come from the parish record printed by Grimaux.
+
+### P16. B_cause for mathematicians
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 3):** B_cause needs a statement about nature or the physical world. Pure-mathematics Platonism, or a view on mathematical truth alone, gives `BELOW_THRESHOLD` (evidence that bears on the axis only indirectly, P19). A mathematician's physics-facing work is scored only with an explicit remark of theirs on nature. P6's wording ("the person's account of nature; for a scientist, their working science") is made consistent in CODING_GUIDE §6, METHOD §1.1 and the mid_basin schema description. Among the 31, only Gödel's record needed a change: his B 3 already rests on statements about the world, and its rationale now says that logic and set theory do not score B.
+
+### P17. Completeness of the contribution list
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 4):** P12 and P13 stand. The list of lasting contributions need not be complete, but it must include the earliest lasting contribution that the sources read name. For example, Darwin's Journal (1839) or Coral Reefs (1842) belongs on the list if the sources call it lasting. Applied in CODING_GUIDE §8. Among the 31, Kepler's Mysterium cosmographicum (1596) is a listed major work that is not on the lasting list. Whether S1 and S2 call it lasting is open, so Kepler's first-lasting year stays at 0.7 (P23).
+
+### P18. Kinds of quoted text
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 5):**
+- New statement kinds `autobiography`, `unpublished manuscript` and `document in own hand` (schema 1.3). All count as the person's own words.
+- A contemporary's summary of what the person said (Sartorius on Gauss) is `reported speech`. Under §1 it cannot score an axis on its own.
+- The kind does not change the basis table. An unpublished or private document takes the private ceiling: consistent_private_letters, 0.7, and more than one document is needed. An autobiography the person published counts as written_profession.
+
+Applied in the schema (with a validator version check), DATA_DICTIONARY and CODING_GUIDE §7. Relabelled:
+- Newton statements 17–21 (a draft rebuttal and Keynes MSS 3, 7, 8) → unpublished manuscript;
+- Lavoisier #2 (the 1791 Réflexions) → unpublished manuscript;
+- Maxwell #6 (the Eranus essay) → unpublished manuscript, and #10 (the prayer fragment) → document in own hand;
+- Gödel #0 (the Grandjean questionnaire) → document in own hand, and #7 (the c. 1960 list) → unpublished manuscript.
+
+Faraday's two `other` quotes stay `other`, since their origin is not known. No basis or score changed.
+
+### P19. UNKNOWN or BELOW_THRESHOLD
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 6):**
+- `UNKNOWN`: the sources read were searched and say nothing on the point. Items that were checked and found off-point count as nothing.
+- `BELOW_THRESHOLD`: some evidence bears on the point but is too weak or indirect. Examples are reported speech, a single letter, a paraphrase, an implication, an ambiguous text, or working science that covers only part of the axis.
+
+Precedence:
+1. `mid_basin` is `UNKNOWN` if any needed axis is `UNKNOWN`. Otherwise it is `BELOW_THRESHOLD` when an axis is `BELOW_THRESHOLD` or only at 0.5.
+2. A scientist's working science bears on E's first question (the same laws everywhere), so E without a statement stays `BELOW_THRESHOLD`. It does not bear on D (revelation against observation), so D without a statement is `UNKNOWN`.
+
+Applied in CODING_GUIDE §4 and §6. Records changed, with each body summary updated to match:
+
+| Record | → UNKNOWN | stays BELOW_THRESHOLD (why) |
+|---|---|---|
+| Clausius | primary_system, A, C, D, mid_basin | E (working science) |
+| Curie | C, D | A, E |
+| Dirac | C, D | A (Heisenberg's reported Solvay remarks, Pauli's quip) |
+| Fermi | primary_system, A, C, D, mid_basin | E |
+| Heisenberg | C | E |
+| Hodgkin | C, D | A (Perutz's remark), E |
+| Hubble | C | A (P20), E |
+| Kepler | C | E |
+| Leavitt | C, D | A (Bailey's sketch), E |
+| Libby | primary_system, A, C, D, mid_basin | E |
+| Meitner | C | A, D, E |
+| Mendeleev | C | A, D (the ambiguous triad), E |
+| Oppenheimer | A, C, D, mid_basin | primary_system (Ethical Culture schooling), E |
+| Pasteur | C | A, E |
+| Planck | C | — |
+| Chandrasekhar | D (the Gita remark was not read) | C, E |
+
+Ibn Sina's changes_over_life went from UNKNOWN to BELOW_THRESHOLD, because the IEP notes a debate.
+
+### P20. A_locus when belief changed
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 7, with the parent's 9:37 PM PT correction):** `primary_system` and the LIO axes both describe the same period: the worldview during the major work, that is, the working years (CODING_GUIDE §5, Changes over life). Score A_locus for that period, and record the change of belief in notes and `worldview.changes_over_life`, where later shifts go. A retrospective self-report about an earlier period is capped at 0.7. An agnostic with no stated locus view gets A `BELOW_THRESHOLD`. An explicit denial of a personal, intervening God is scored. Applied in CODING_GUIDE §6. Feynman's A stays BELOW_THRESHOLD: its how_known now says that "seems to be inadequate" (p. 22) is a hedged rejection, not an explicit denial. Hubble's A carries a note. Darwin's A = 2 is for his record's coder to check.
+
+### P21. Institution, school and edition kinds
+**DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 8):**
+- New institution kind `research institute` (IAS, the Kaiser Wilhelm and Max Planck institutes, Dublin IAS and similar).
+- Schooling `stage` is now the level, with `elementary school` added. Who ran the school goes in a new optional `run_by` field (religious body, state or municipal, private, charity, family, other). The old `religious school` and `dame or charity school` mixed the two and are valid only in schema 1.2 files.
+- `primary facsimile` means page images of the document itself (a manuscript, a letter, or a printing of the work as issued), with no editor in between.
+- `scholarly edition` means a text an editor prepared (collected works such as Riemann's Werke, edited letters, a Life-and-letters, a posthumous collection), even when read as a library scan.
+- `primary transcription` means a keyed transcription of the original (TCP, Newton Project, Darwin Online).
+
+Applied in the schema (1.3), DATA_DICTIONARY and CODING_GUIDE §7–8. Relabelled:
+- research institute: Einstein, Gödel and Oppenheimer (IAS); Heisenberg (KWI and MPI for Physics); Meitner (KWI for Chemistry, Nobel Institute); Schrödinger (Dublin IAS); Bohr (Institute for Theoretical Physics); Curie (Radium Institute); Pasteur (Institut Pasteur); Faraday (Royal Institution); Hubble (Mount Wilson Observatory).
+- schooling: Aquinas, Clausius, Dirac, Faraday, Fermi, Gödel, Heisenberg, Ibn Sina and Pasteur → elementary school, and Galileo and Kepler → grammar or secondary school, each with run_by where the source says who ran the school.
+- verified_against: Maxwell statements 0, 1 and 6–10 (printed in Campbell and Garnett 1882) and Hubble's three statements (the posthumous 1954 collection) → scholarly edition.
+
+### P22. Stage 3-a stub cases (Hume, Kant, Descartes, Leibniz)
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 9):**
+- P14 covers these cases.
+- SCEPT, KANT, RATN and EMPIR go on the S7 backlog, together with every stub a stage 3 record leads with (ATHE, AGNOS, PANPSY, DETERM).
+- "Argues to God from the world" in the CLASS_THEISM use_when means an a posteriori argument (cosmological or design). Ontological and idea-based arguments do not count. Code to what the system file definitions say.
+- RATN was a stub with use_when TODO, so the CLASS_THEISM/RATN line was ambiguous. The RATN stub now carries one line, marked as v8's pick and kept in `scripts/make_system_stubs.py` so a regeneration keeps it:
+
+> use RATN when the person's own writing makes reason working from innate ideas or first principles the main route to God and the world, and argues to God from the idea of God or from reason alone (ontological or idea-based arguments); a person whose main argument for God runs from the world, a posteriori (first cause, contingency, design), to the simple, immutable God of the Aristotelian-Thomistic-Falsafa line is CLASS_THEISM.
+
+Applied in CODING_GUIDE §5, `systems/RATN.md` (record version 3) and `systems/README.md`. None of the 31 batch 1–4 records changed.
+
+### P23. No coder-chosen first lasting year
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 10):** P13 is the rule. No coder-chosen "defining work" is allowed. The year is that of the earliest listed item that is itself a lasting contribution. The list is not pruned to move the year. An item may be removed only if it is not lasting, and the reason is stated. Applied in CODING_GUIDE §8, which now says exactly this.
+
+"Coder's choice" wording was removed from the 31 records:
+- Lavoisier: 1772 is the source-dated start of the earliest listed lasting item. It stays at 0.5 because the sources read leave open whether that item starts in 1772 or with the 1775 memoir, which is named as the alternative.
+- Kepler: 1604 (the listed optics) stands. The 1609 "if the planetary laws are taken" alternative is removed. It stays at 0.7 pending the Mysterium check (P17).
+- Bohr: major_work_period's "end date is the coder's choice" now cites the sources' dates.
+
+### P24. What certainty 0.5 means
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 11):** existing practice uses 0.5 for inference from a person's work or conduct with no direct statement (for example B 4 at 0.5 from working science). §3 now says that 0.5 means contested, or inferred from the person's work or conduct with no direct statement. The basis is recorded as an inference: a new basis `inference_from_work` with a 0.5 ceiling (schema 1.3). For other facts, the how_known says it is an inference and from what. No record is recoded to UNKNOWN for this. The B_cause basis went from scholarly_reconstruction to inference_from_work for Clausius, Dirac, Fermi, Hodgkin, Leavitt, Libby, Meitner and Oppenheimer ("coder's reading of the working science"). Scores and certainties are unchanged.
+
+### P25. Source conflicts
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 12):** when reliable sources disagree, the value gets 0.5 and the alternative is named in `alternatives`, as the Pasteur and Hodgkin records already do. When a 1.0 value rests on two sources but contains a detail backed by only one, the detail goes in its own note at 0.7, or the whole field is capped at 0.7. Applied in CODING_GUIDE §3. In the 31 records this came up where Top Questions cites were removed (P26). Aquinas's "official philosophy of the Church in 1917" detail was dropped, and Capreolus moved to the how_known.
+
+### P26. Sources and locators
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 13), all in CODING_GUIDE §7:**
+- **Spinoza's Ethics.** The project standard is the Cambridge edition edited by Matthew J. Kisner (Cambridge Texts in the History of Philosophy). A field that quotes another translation stays capped at 0.7 until it has been checked against Kisner. Its how_known or note says "Kisner check pending".
+- **TTP locators** give the chapter and the standard (Bruder) section numbers (preferred). Gutenberg sentence numbers may be used only with a "Gutenberg" label and a TODO to map them to a printed edition (handoff line below).
+- **Britannica's AI-generated "Top Questions" boxes** cannot be cited.
+- **A quote reached through SEP or any other secondary source** must be checked against the primary text before it is cited as the person's words. Until then it stays `secondary quotation`, with a note saying the primary check is pending, and it cannot support 1.0 (§7).
+
+Applied to the 31 records. Top Questions cites were removed from Aquinas, Einstein, Ibn Sina, Lavoisier and Pasteur, and values left without support were lowered or reworded. For Einstein, the 1926 Born letter rested only on the box: first_evidence_of_lio_type_views is now the 1929 cable (S4), and the Max Born collaborator entry was removed. Spinoza (Kisner, TTP) is a stage 3 record and is for its own coder.
+
+### P27. DEISM and three anchor sentences
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 14):**
+- DEISM requires rejecting revelation as a source of truth. Someone who does not reject it (who accepts it, or declines to contest it) is not DEISM. Applied in CODING_GUIDE §5 and `systems/DEISM.md` do_not_use_when (record version 6). Planck is the only DEISM code among the 31. His rationale now records the test: it is met for doctrine and miracle, and his "Weisung" from a direct link with God concerns action, not truth claims. The code stays at 0.5.
+- Anchor sentences, each v8's pick, added to CODING_GUIDE §6 and §8. The existing definitions are quoted there first.
+  - **LIO-type view:** a dated statement of the person's own that is scored, or used as evidence for a score, at 3 or 4 on any LIO axis.
+  - **D 2:** two domains, each with its own authority. Observation and reason decide questions of fact about nature. Revelation, faith or religious tradition has the final say in another domain (doctrine, the divine, or the ends of action and ethics). Neither may overrule the other. If religion's say shrinks to one stated dogma, that is D 3. v8 chose this over the lens audit's alternative ("two domains each with authority over truth claims") because it keeps the existing D 2 scores. Under the alternative, the ethics-domain D 2s (Einstein, Feynman, Heisenberg, Hubble, Planck) would become D 3.
+  - **B 3:** a stated general lawfulness of nature, with one stated, limited exception (for example, accepted miracles as rare past events, or a creation act).
+  - **B 2:** lawfulness with exceptions that are not limited (miracles or special providence as a live, recurring part of how events go), or lawfulness that covers only part of nature.
+
+No score among the 31 changed under the anchors. Every D 2 there (Boyle, Einstein, Faraday, Feynman, Galileo, Heisenberg, Hubble, Maxwell, Newton, Pasteur, Planck) gives religion a domain of its own.
+
+### P28. Published letters, finished manuscripts, notes
+**DECIDED (v8's pick, 2026-10-02, from the second stage 3 lens audit; ruling 15):**
+- A letter written for circulation (Leibniz to Clarke) is the new kind `published letter`, and it counts like a published work (written_profession).
+- An unpublished finished treatise (the Monadology) is `unpublished manuscript`.
+- The Pensées are `unpublished manuscript` (notes), not letters.
+
+Applied in the schema (1.3), DATA_DICTIONARY and CODING_GUIDE §7. None of the 31 records has such a text. The Leibniz and Pascal stage 3 records are for their coders.
+
+### Further stage 3-a handoff questions, covered by the rulings above (2026-10-02, v8's picks, no new numbers)
+- **DEISM and revelation:** DEISM means "rejects revelation", so someone who simply doesn't reject it isn't DEISM (P27). This covers Kant (who declines to contest revelation) and Descartes (who accepts it).
+- **Long s (ſ):** normalise it to "s" silently in quotations, and add one coder_notes line saying so. This is the one exception to §7's verbatim rule.
+- **Kant's region:** regions use present-day borders (P3), so Königsberg is Kaliningrad, Russia (Eastern Europe), with the polity then in `place.polity_then`.
+- **Secondary sources that mislabel a primary locator** (SEP gives "Pr II 62" for Principles II.42, and "EU 11.12" for E 10.12): cite the primary locator and note the error in the field's note or data_quality_flags (P26).
+- **Gutenberg locators:** they may be used only with a "Gutenberg" label (for example "Gutenberg ch. 6 (40)") and a TODO in the note to map them to a printed edition. For the TTP, Bruder sections are preferred (P26).
+- **Roster links:** cites of the roster that point to `blob/main` will be pinned to a commit SHA in a later sweep. No change now.
+- **Era bucket:** era_bucket follows the first lasting year, as §8 and P2 say (Darwin's era is not keyed to 1859).
+
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

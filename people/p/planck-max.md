@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 5
+  schema_version: "1.3"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. Its main claims rest on the 1937 lecture, read only in a typed web copy (S4) and a blog (S7), and no authoritative edition was reachable to check the wording. No mid_basin change (A and B were already 0.7)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1900 → 1879, the start year of the earliest listed contribution (work on entropy and the second law, 1879–1897); age 42 → 21; era unchanged. If that item is judged not lasting it should be removed and the year returns to 1900 (noted in how_known). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; DEISM revelation test recorded (P27). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: planck-max
@@ -28,7 +29,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Max Karl Ernst Ludwig Planck", certainty: 1.0, cites: [{source: S1, locator: "early life paragraph"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources agree."}
-  native_name: {value: "Max Planck (German)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Same spelling."}
+  native_name: {value: "Max Planck (German)", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Same spelling."}
   aliases:
     - {name: "Max-Planck", kind: "roster alias"}
     - {name: "Planck-Max", kind: "roster alias"}
@@ -41,11 +42,11 @@ basics:
     date: {value: "1947-10-04", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "final paragraph"}], how_known: "Two sources agree."}
     place: {value: "Göttingen", modern_name: "Göttingen, Germany", polity_then: "British occupation zone of Germany", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "final paragraph"}], how_known: "Two sources agree on the town; the occupation zone is the coder's label."}
   first_lasting_contribution_year: {value: 1879, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}, {source: S2, locator: "doctorate and habilitation paragraphs"}], how_known: "Start year of the earliest listed contribution, the work on entropy and the second law (1879–1897, beginning with his 1879 doctoral thesis), under decisions P12 and P13. 0.7 because that item's lasting status is the coder's reading (Thermodynamik, 1897, a standard text); if it is judged not lasting it should be removed from the list, and the year returns to 1900, the quantum of action and radiation law (October–December 1900; S1, blackbody paragraphs; S3, paragraph 4). Both years fall in the same era. Was 1900 until the batch 4 lens audit."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "blackbody paragraphs"}], how_known: "Either candidate year falls in 1850 to 1949 (P2)."}
-  region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Kiel, Schleswig [Germany]')"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "blackbody paragraphs"}], how_known: "Either candidate year falls in 1850 to 1949 (P2)."}
+  region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts ('Kiel, Schleswig [Germany]')"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "university paragraph"}, {source: S3, locator: "paragraph 2"}], how_known: "Munich, Kiel and Berlin (Germany)."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [German], certainty: 1.0, cites: [{source: S3, locator: "paragraph 5 (Annalen der Physik; Thermodynamik; Theorie der Wärmestrahlung)"}], how_known: "Nobel biography."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [German], certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 (Annalen der Physik; Thermodynamik; Theorie der Wärmestrahlung)"}], how_known: "Nobel biography."}
   occupations: {value: ["theoretical physicist", "university professor", "permanent secretary of the Prussian Academy of Sciences", "president of the Kaiser Wilhelm Society"], certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}, {source: S2, locator: "Kaiser Wilhelm Gesellschaft paragraph"}], how_known: "Two sources."}
 
 contribution:
@@ -54,15 +55,15 @@ contribution:
     - {value: "Planck's radiation law and the quantum of action (Planck's constant h); energy of a resonator comes in discrete quanta hν", year: "1900", kind: theory, lasting: "foundation of quantum theory", certainty: 1.0, cites: [{source: S1, locator: "blackbody paragraphs"}, {source: S3, locator: "paragraphs 3–4"}], how_known: "Two sources."}
     - {value: "Work on entropy and the second law, thermoelectricity and dilute solutions", year: "1879–1897", kind: theory, lasting: "Thermodynamik (1897), a standard text", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3, 5"}, {source: S2, locator: "doctorate and habilitation paragraphs"}], how_known: "Nobel biography and MacTutor; how lasting is the coder's reading, 0.7."}
   evidence_of_impact:
-    - {value: "Max Planck Medal, with Planck as first recipient; the Kaiser Wilhelm Society renamed the Max Planck Society", kind: "named after them", certainty: 1.0, cites: [{source: S2, locator: "Kaiser Wilhelm Gesellschaft paragraph"}], how_known: "MacTutor."}
+    - {value: "Max Planck Medal, with Planck as first recipient; the Kaiser Wilhelm Society renamed the Max Planck Society", kind: "named after them", certainty: 0.7, cites: [{source: S2, locator: "Kaiser Wilhelm Gesellschaft paragraph"}], how_known: "MacTutor."}
     - {value: "Nobel Prize in Physics 1918", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Nobel paragraph"}], how_known: "Two sources."}
   major_works:
-    - {value: "Vorlesungen über Thermodynamik", year: 1897, kind: book, certainty: 1.0, cites: [{source: S3, locator: "paragraph 5"}], how_known: "Nobel biography."}
-    - {value: "Vorlesungen über die Theorie der Wärmestrahlung", year: 1906, kind: book, certainty: 1.0, cites: [{source: S3, locator: "paragraph 5"}], how_known: "Nobel biography."}
+    - {value: "Vorlesungen über Thermodynamik", year: 1897, kind: book, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5"}], how_known: "Nobel biography."}
+    - {value: "Vorlesungen über die Theorie der Wärmestrahlung", year: 1906, kind: book, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5"}], how_known: "Nobel biography."}
   honours:
     - {value: "Nobel Prize in Physics", year: 1918, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S3, locator: "heading"}], how_known: "Two sources."}
-    - {value: "Copley Medal of the Royal Society", year: 1928, certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}], how_known: "Nobel biography."}
-  definition_fit: {value: "clearly meets", rationale: "Originated quantum theory.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
+    - {value: "Copley Medal of the Royal Society", year: 1928, certainty: 0.7, cites: [{source: S3, locator: "paragraph 6"}], how_known: "Nobel biography."}
+  definition_fit: {value: "clearly meets", rationale: "Originated quantum theory.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Protestant (family of theologians; grandfather and great-grandfather were professors of theology at Göttingen)", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}, {source: S1, locator: "early life paragraph ('devotion to church and state')"}], how_known: "The theologian forebears and the church tradition are stated; the denomination (Lutheran) is not named in the sources read, so 0.7."}
@@ -77,17 +78,17 @@ childhood:
   early_mathematics: {value: "other", note: "Excelled in all subjects; interest in physics and mathematics from his Gymnasium teacher (S1)", certainty: 0.7, cites: [{source: S1, locator: "early life paragraph"}], how_known: "Britannica; level not stated."}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure:
-    - {value: "The law of conservation of energy, learned at the Gymnasium, was the 'first instance of an absolute in nature that impressed Planck deeply'", certainty: 1.0, cites: [{source: S1, locator: "blackbody section, first paragraph"}], how_known: "Britannica."}
+    - {value: "The law of conservation of energy, learned at the Gymnasium, was the 'first instance of an absolute in nature that impressed Planck deeply'", certainty: 0.7, cites: [{source: S1, locator: "blackbody section, first paragraph"}], how_known: "Britannica."}
   key_early_reading:
     - {value: "Rudolf Clausius's writings on thermodynamics", certainty: 1.0, cites: [{source: S1, locator: "university paragraph"}, {source: S3, locator: "paragraph 3"}], how_known: "Two sources."}
   childhood_mentors:
-    - {value: "Hermann Müller, Gymnasium teacher", certainty: 1.0, cites: [{source: S1, locator: "early life paragraph"}], how_known: "Britannica."}
-  languages_in_childhood: {value: [German], certainty: 1.0, cites: [{source: S1, locator: "early life paragraph"}], how_known: "German family and schooling."}
+    - {value: "Hermann Müller, Gymnasium teacher", certainty: 0.7, cites: [{source: S1, locator: "early life paragraph"}], how_known: "Britannica."}
+  languages_in_childhood: {value: [German], certainty: 0.7, cites: [{source: S1, locator: "early life paragraph"}], how_known: "German family and schooling."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1879–1947", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 2, 9"}], how_known: "Doctorate to death; he lectured on religion and science into old age."}
+  working_years: {value: "1879–1947", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2, 9"}], how_known: "Doctorate to death; he lectured on religion and science into old age."}
   nominal_affiliations:
     - {value: "Protestant church tradition of his family; in 1947 he denied a rumoured conversion to Catholicism", years: "1858–1947", role: other, certainty: 0.5, cites: [{source: S1, locator: "early life paragraph"}, {source: S9, locator: "p. 327; nn. 47–48"}, {source: S6, locator: "Heilbron quotation"}], how_known: "Family tradition (S1: 'devotion to church and state') and the 1947 denial only. Church membership or office is unsourced: neither membership (Lutheran) nor the commonly reported church-elder role was found in the sources read, so the role is 'other', not 'member' (lens audit, batch 2, finding #135)."}
   self_described_science_religion_relation:
@@ -101,7 +102,7 @@ worldview:
     certainty: 0.5
     cites: [{source: S4, locator: "copy pp. 2, 5, 6, 11–12"}, {source: S9, locator: "p. 327; n. 48"}, {source: S6, locator: "Heilbron quotation"}]
     how_known: "His 1937 lecture says belief in nature-miracles must retreat before science (copy p. 2) and that even the holiest symbol is of human origin (copy p. 5); religion and science agree that a rational world order independent of humans exists, and the scientist approaches 'Gott und seiner Weltordnung' by inductive research (copy pp. 11–12). His 1947 letter denies belief 'in a personal God, let alone a Christian God' (Heilbron via S6; the German in Gladigow, S9, citing Herneck 1952). 0.5, below the 0.7 cap: two codes are named; Heilbron's 'deism' is unconfirmed in the book and is not used as support; and a 1945 letter (Bertholet 1948, known only through S9, n. 48) seems to show a more personal God. DEISM is a sourced system file (draft)."
-    rationale: "English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). DEISM use_when: own writing affirms a creator known by reason and rejects revelation, miracles and church authority as sources of religious knowledge. Met: belief in nature-miracles must retreat (copy p. 2); symbols and rite are indispensable but 'auch das heiligste Symbol menschlichen Ursprungs ist' (copy p. 5); the world order that science reaches is to be identified with God (copy p. 11). Only partly met, 'known by reason': whether God rules the world independently of belief 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären' and is 'einzig und allein Sache des Glaubens' (copy p. 6), and for action he relies on 'die bestimmte und klare Weisung … aus der unmittelbaren Verbindung mit Gott' (copy p. 12), a non-rational link, where DEISM has reason and nature only. So DEISM fits his rejection of miracle and doctrine, not a reasoned proof of God. Heilbron's 'Planck's deism' (S6) is unconfirmed in the book and is loose: it describes a religion that 'omitted all reference to established religions', and DEISM's do-not-use note warns against coding from a label. Alternatives: PANT (the identification sentence and 'wesensgleich', copy pp. 11–12; part 1 of the PANT test not clearly met, since the same lecture speaks of 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11); CHRIST (Protestant tradition; valued religious symbols; the 1945 letter reported by Bertholet seems to show a more personal God, S9 n. 48; against it, the 1947 denial of a personal and a Christian God, now confirmed in German, S9). Held at 0.5."
+    rationale: "English phrases from S4 are the coder's glosses, cross-checked with Gaynor (S7). DEISM use_when: own writing affirms a creator known by reason and rejects revelation, miracles and church authority as sources of religious knowledge. Met: belief in nature-miracles must retreat (copy p. 2); symbols and rite are indispensable but 'auch das heiligste Symbol menschlichen Ursprungs ist' (copy p. 5); the world order that science reaches is to be identified with God (copy p. 11). Only partly met, 'known by reason': whether God rules the world independently of belief 'läßt sich nie und nimmer auf wissenschaftlichem Wege … aufklären' and is 'einzig und allein Sache des Glaubens' (copy p. 6), and for action he relies on 'die bestimmte und klare Weisung … aus der unmittelbaren Verbindung mit Gott' (copy p. 12), a non-rational link, where DEISM has reason and nature only. So DEISM fits his rejection of miracle and doctrine, not a reasoned proof of God. Heilbron's 'Planck's deism' (S6) is unconfirmed in the book and is loose: it describes a religion that 'omitted all reference to established religions', and DEISM's do-not-use note warns against coding from a label. Alternatives: PANT (the identification sentence and 'wesensgleich', copy pp. 11–12; part 1 of the PANT test not clearly met, since the same lecture speaks of 'der über die Natur regierenden allmächtigen Vernunft', copy p. 11); CHRIST (Protestant tradition; valued religious symbols; the 1945 letter reported by Bertholet seems to show a more personal God, S9 n. 48; against it, the 1947 denial of a personal and a Christian God, now confirmed in German, S9). Held at 0.5. P27 test (DEISM needs rejection of revelation as a source of truth): met for doctrine and miracle, since even the holiest symbol is of human origin (copy p. 5) and belief in nature-miracles must retreat (copy p. 2); his 'Weisung' from a direct link with God (copy p. 12) concerns action, not truth claims. If that link is read as revelation, DEISM fails and PANT is next; one reason the code stays at 0.5."
   secondary_system: {value: UNKNOWN, how_known: "No second system settled; PANT and CHRIST are named alternatives."}
   candidate_codes_considered:
     - {code: DEISM, reason: "Chosen at 0.5: miracles rejected, symbols and creeds of human origin, God identified with the world order; but God's independent rule is a matter of faith alone for him, and action rests on a direct link with God. Heilbron's label is unconfirmed in the book and not used as support.", cites: [{source: S4, locator: "copy pp. 2, 5, 6, 11–12"}, {source: S6, locator: "Heilbron quotation"}]}
@@ -122,7 +123,7 @@ worldview:
       cites: [{source: S5, locator: "p. 159; p. 168"}, {source: S4, locator: "copy pp. 2, 7"}]
       how_known: "Published book and public lecture state it directly; 0.7 because the free-will passage is a named alternative."
       rationale: "English phrases from S4 are the coder's glosses. Scored on his account of nature (P6), which is his working physics and his philosophy of it. 'chance and miracle in the absolute sense are fundamentally excluded from science' (1933); religion must not oppose 'the sequence of cause and effect in all external phenomena' (1933); all physical events 'without exception' reduce to mechanical or electrical processes, and belief in nature-miracles must retreat step by step (1937). No miracle or answered petition appears. Alternative: 3, if the individual ego, where 'every causal method of research is inapplicable' (1933, p. 161), is read as an exemption; he treats it as a limit of self-observation, not an uncaused event, so 4."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing read on judgement, afterlife or moral reckoning. He puts ethics outside science and gives religion the guidance of action (copy p. 12), which is not a ledger.", note: "Gap: Scientific Autobiography and Other Papers (1949) and Heilbron 1986 not read in full."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or moral reckoning. He puts ethics outside science and gives religion the guidance of action (copy p. 12), which is not a ledger.", note: "Gap: Scientific Autobiography and Other Papers (1949) and Heilbron 1986 not read in full."}
     D_authority:
       value: 2
       basis: written_profession
@@ -233,7 +234,7 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "German academic family of jurists and theologians", certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "MacTutor."}
+  ethnic_or_communal_heritage: {value: "German academic family of jurists and theologians", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "MacTutor."}
   religious_heritage_by_birth: {value: "Protestant", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}, {source: S1, locator: "early life paragraph"}], how_known: "Theologian forebears at Göttingen and family devotion to the church; denomination not named."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated in S1–S7."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not stated in S1–S7."}
@@ -255,16 +256,16 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "University of Munich", role: "Privatdozent", years: "1880–1885", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
+  - {value: "University of Munich", role: "Privatdozent", years: "1880–1885", kind: employer, certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
   - {value: "University of Kiel", role: "associate professor of theoretical physics", years: "1885–1889", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}, {source: S1, locator: "university paragraph"}], how_known: "Two sources."}
   - {value: "University of Berlin", role: "professor (successor to Kirchhoff)", years: "1889–1926", kind: employer, certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}, {source: S2, locator: "Berlin paragraph"}], how_known: "Retirement 1926 (S3) or 1 October 1927 (S2)."}
-  - {value: "Prussian Academy of Sciences", role: "member 1894; permanent secretary 1912", years: "1894–", kind: "academy or learned society", certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
+  - {value: "Prussian Academy of Sciences", role: "member 1894; permanent secretary 1912", years: "1894–", kind: "academy or learned society", certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
   - {value: "Kaiser Wilhelm Society", role: president, years: "1930–1937; 1945–1946", kind: other, certainty: 0.7, cites: [{source: S2, locator: "Kaiser Wilhelm Gesellschaft paragraph"}, {source: S3, locator: "paragraph 2"}], how_known: "MacTutor gives 1930–1937 and 1945–46; the Nobel biography gives the end year 1937 only."}
 collaborators:
-  - {value: "Gustav Kirchhoff", relation: teacher, note: "teacher in Berlin; Planck succeeded him", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 2–3"}], how_known: "Nobel biography."}
+  - {value: "Gustav Kirchhoff", relation: teacher, note: "teacher in Berlin; Planck succeeded him", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–3"}], how_known: "Nobel biography."}
   - {value: "Hermann von Helmholtz", relation: "mentor or employer", note: "teacher, later venerated mentor and colleague", certainty: 1.0, cites: [{source: S1, locator: "university paragraph"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
-  - {value: "Albert Einstein", roster_id: einstein-albert, relation: influenced, note: "light quanta (1905) built on the quantum hypothesis", certainty: 1.0, cites: [{source: S1, locator: "quantum-reception paragraph"}], how_known: "Britannica."}
-  - {value: "Ludwig Boltzmann", relation: "influenced by", note: "Planck adopted his statistical reading of the second law to derive the radiation law", certainty: 1.0, cites: [{source: S1, locator: "blackbody paragraphs"}], how_known: "Britannica."}
+  - {value: "Albert Einstein", roster_id: einstein-albert, relation: influenced, note: "light quanta (1905) built on the quantum hypothesis", certainty: 0.7, cites: [{source: S1, locator: "quantum-reception paragraph"}], how_known: "Britannica."}
+  - {value: "Ludwig Boltzmann", relation: "influenced by", note: "Planck adopted his statistical reading of the second law to derive the radiation law", certainty: 0.7, cites: [{source: S1, locator: "blackbody paragraphs"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S8, locator: "roster.csv, rank 57"}], how_known: "Study roster."}
@@ -378,7 +379,7 @@ sources:
 
 ## Summary
 
-Max Planck (1858–1947), German theoretical physicist, found the radiation law and the quantum of action in 1900 and won the 1918 Nobel Prize in Physics [S1, opening paragraph; S3, paragraph 4]. In his 1937 lecture "Religion und Naturwissenschaft" he identified "die Weltordnung der Naturwissenschaft und den Gott der Religion" and said belief in nature-miracles must retreat before science [S4, copy pp. 2, 11]. In 1947 he wrote that he did not believe "an einen persönlichen Gott, geschweige denn an einen christlichen Gott" [S9, p. 327]. Coded DEISM at 0.5 (PANT and CHRIST named; Heilbron's "deism" label [S6] is not confirmed in the book and is not used as support). A 2, B 4, D 2, E 4 (all 0.7); C below threshold; mid_basin TODO (no P4 branch for A = 2).
+Max Planck (1858–1947), German theoretical physicist, found the radiation law and the quantum of action in 1900 and won the 1918 Nobel Prize in Physics [S1, opening paragraph; S3, paragraph 4]. In his 1937 lecture "Religion und Naturwissenschaft" he identified "die Weltordnung der Naturwissenschaft und den Gott der Religion" and said belief in nature-miracles must retreat before science [S4, copy pp. 2, 11]. In 1947 he wrote that he did not believe "an einen persönlichen Gott, geschweige denn an einen christlichen Gott" [S9, p. 327]. Coded DEISM at 0.5 (PANT and CHRIST named; Heilbron's "deism" label [S6] is not confirmed in the book and is not used as support). A 2, B 4, D 2, E 4 (all 0.7); C UNKNOWN; mid_basin TODO (no P4 branch for A = 2).
 
 ## Life and work
 
@@ -394,7 +395,7 @@ His family had a "long family tradition of devotion to church and state" [S1, ea
 
 ## Adult working worldview
 
-He wrote that "chance and miracle in the absolute sense are fundamentally excluded from science" [S5, p. 159] and that religion must not oppose "the sequence of cause and effect in all external phenomena" [S5, p. 168]. In 1937 God stands "für die eine am Anfang, für die andere am Ende alles Denkens" [S4, copy p. 12]. Heilbron reports that he did not believe "in a personal God, let alone a Christian God" [S6]; Gladigow gives the German of the 1947 letter and notes a 1945 letter that seems to show a more personal God [S9, p. 327, n. 48]. Scores: A 2, B 4, D 2, E 4 (0.7 each); C below threshold.
+He wrote that "chance and miracle in the absolute sense are fundamentally excluded from science" [S5, p. 159] and that religion must not oppose "the sequence of cause and effect in all external phenomena" [S5, p. 168]. In 1937 God stands "für die eine am Anfang, für die andere am Ende alles Denkens" [S4, copy p. 12]. Heilbron reports that he did not believe "in a personal God, let alone a Christian God" [S6]; Gladigow gives the German of the 1947 letter and notes a 1945 letter that seems to show a more personal God [S9, p. 327, n. 48]. Scores: A 2, B 4, D 2, E 4 (0.7 each); C UNKNOWN.
 
 ## Heritage (context only)
 

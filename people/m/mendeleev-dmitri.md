@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (run 2, #81; run 1 noted the same): the p. 426 Afterword quotation stops mid-sentence (it continues ', получится неустойчивая и слащавая шаткость'), so the trailing cut is now marked [...]. No score changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: mendeleev-dmitri
@@ -33,7 +34,7 @@ identity:
 
 basics:
   birth:
-    date: {value: "1834-02-08", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening ('January 27 (February 8, New Style), 1834')"}], how_known: "Britannica gives both styles; Julian 27 January 1834."}
+    date: {value: "1834-02-08", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening ('January 27 (February 8, New Style), 1834')"}], how_known: "Britannica gives both styles; Julian 27 January 1834."}
     place: {value: "Tobolsk", modern_name: "Tobolsk, Tyumen Oblast, Russia", polity_then: "Russian Empire", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources agree."}
   death:
     date: {value: "1907-02-02", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening ('January 20 (February 2), 1907')"}], how_known: "Britannica only (Julian 20 January)."}
@@ -42,7 +43,7 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Russia is Eastern Europe in data/reference/regions.csv (P3), although Tobolsk is in Siberia (flag)."}
   region_of_work: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Later Lives'"}], how_known: "St. Petersburg, apart from Heidelberg 1859–61."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Russian], certainty: 1.0, cites: [{source: S1, locator: "'Formulation of the periodic law' (Osnovy khimii)"}, {source: S3, locator: "title page"}], how_known: "His books are in Russian; translations exist."}
   occupations: {value: [chemist, "university professor", "government official (weights and measures)"], certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Later Lives'"}], how_known: "Two sources."}
 
@@ -57,7 +58,7 @@ contribution:
     - {value: "Zavetnye mysli (Cherished Thoughts)", year: 1905, kind: book, certainty: 1.0, cites: [{source: S3, locator: "title page; colophon note (printing finished 19 Oct 1905)"}], how_known: "Library scan; issued in four parts 1903–1905."}
   honours:
     - {value: "Demidov Prize (for his 1861 organic chemistry textbook)", certainty: 0.7, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Britannica names the prize but not the year of award."}
-  definition_fit: {value: "clearly meets", rationale: "Discovered the periodic law.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Discovered the periodic law.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: TODO, note: "Russian Orthodox by general report; not stated in the sources read."}
@@ -75,13 +76,13 @@ childhood:
     - {value: "Freedom to roam the family glassworks, which stimulated his interest in industrial chemistry", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "SHI."}
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [Russian], certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Siberian Russian family."}
+  languages_in_childhood: {value: [Russian], certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Siberian Russian family."}
   notable_events:
     - {value: "Glassworks fire; his mother took him to St. Petersburg and died soon after", year: "1848–1850", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources."}
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1855–1907", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "From graduation to death."}
+  working_years: {value: "1855–1907", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "From graduation to death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Complementary parts of one whole: the 'highest consciousness' of everything is expressed 'въ религіи, искусствѣ и наукѣ', and dropping any member of such a triad leaves 'анализъ безъ полнаго синтеза' (analysis without full synthesis)."
@@ -107,7 +108,7 @@ worldview:
       cites: [{source: S4, locator: "pp. 376–377"}, {source: S1, locator: "'Formulation of the periodic law'"}]
       how_known: "His own published lectures (P6), checked on the library scan. Below 1.0 because the passages concern spiritualist phenomena and superstition, not miracle or providence directly."
       rationale: "Scored on his account of nature (P6). Against the spiritualists he holds that nervous physiology 'разрушитъ суевѣрія' and that people will one day speak of these matters as calmly as of eclipses and comets (p. 376); 'Наука борется съ суевѣріями, какъ свѣтъ съ потемками' (p. 377). Alleged mediumistic forces are referred to physiology or fraud, not admitted as exceptions to natural law. His working science is lawful in the strong sense: he trusted the periodic law enough to correct atomic weights and predict unknown elements (S1)."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing read on judgement, afterlife or reward and punishment. 'Долгъ' (duty) to family, homeland and humanity (S3, p. 426) is ethics, not a ledger."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or reward and punishment. 'Долгъ' (duty) to family, homeland and humanity (S3, p. 426) is ethics, not a ledger."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation or scripture in what was read. 'Суевѣріе есть увѣренность, на знаніи неоснованная' (S4, p. 377) is aimed at spiritualism, not revealed religion, and the triad of religion, art and science (S3, p. 426) does not say which decides.", note: "Not scored by the same-pattern rule: p. 426 names three expressions of one consciousness, not two domains under two authorities."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
@@ -156,8 +157,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1868–1871", certainty: 1.0, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Osnovy khimii and the periodic law."}
-  age_at_first_lasting_contribution: {value: 35, certainty: 1.0, cites: [{source: S1, locator: "opening; 'Formulation of the periodic law'"}], how_known: "Born February 1834; law announced March 1869."}
+  major_work_period: {value: "1868–1871", certainty: 0.7, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Osnovy khimii and the periodic law."}
+  age_at_first_lasting_contribution: {value: 35, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Formulation of the periodic law'"}], how_known: "Born February 1834; law announced March 1869."}
   first_evidence_of_lio_type_views: {value: "Lectures against spiritualism (lawful nature, superstition)", year: 1876, certainty: 1.0, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The earliest statement read (1876) postdates the periodic law (1869), but nothing earlier was read, so the order cannot be fixed from absence.", certainty: 0.5, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Dates of what was read only."}
   worldview_during_major_work: {value: TODO}
@@ -177,13 +178,13 @@ institutions:
   - {value: "Commission of the Russian Physical Society for the examination of mediumistic phenomena", role: member, years: "1875–1876", kind: "academy or learned society", certainty: 0.7, cites: [{source: S4, locator: "preface, p. x"}], how_known: "His preface; his membership is implied by 'мои почтенные товарищи' in the lectures (OCR), not checked on the image."}
 collaborators:
   - {value: "Robert Bunsen", relation: "mentor or employer", note: "Heidelberg; Mendeleev worked mostly in his own laboratory", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources, which differ on how closely he worked with Bunsen."}
-  - {value: "Julius Lothar Meyer", relation: "rival or critic", note: "independent periodic system; long priority dispute", certainty: 1.0, cites: [{source: S2, locator: "'Who Got There First?'"}], how_known: "SHI."}
+  - {value: "Julius Lothar Meyer", relation: "rival or critic", note: "independent periodic system; long priority dispute", certainty: 0.7, cites: [{source: S2, locator: "'Who Got There First?'"}], how_known: "SHI."}
   - {value: "Stanislao Cannizzaro", relation: "influenced by", note: "Karlsruhe 1860 paper on atomic weights", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Karlsruhe'"}], how_known: "Two sources."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, Grok).", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 92"}], how_known: "Study roster."}
   controversies:
-    - {value: "Priority dispute with Lothar Meyer over the periodic system", certainty: 1.0, cites: [{source: S2, locator: "'Who Got There First?'"}], how_known: "SHI."}
+    - {value: "Priority dispute with Lothar Meyer over the periodic system", certainty: 0.7, cites: [{source: S2, locator: "'Who Got There First?'"}], how_known: "SHI."}
   data_quality_flags:
     - "Quotations are from library scans in the pre-1918 orthography; the OCR is poor, so every quoted passage was transcribed from the page images."
     - "His religious heritage (Orthodox) and the family's clerical background are general report, not in the sources read; left TODO."
@@ -249,7 +250,7 @@ sources:
 
 ## Summary
 
-Dmitri Ivanovich Mendeleev (1834–1907), Russian chemist, discovered the periodic law in 1869 and predicted unknown elements [S1, opening]. Against the spiritualists in 1876 he wrote "Наука борется съ суевѣріями, какъ свѣтъ съ потемками" [S4, p. 377]; in 1905 he named religion, art and science together as the expression of the highest consciousness [S3, p. 426]. He calls his view "реализмъ", not materialism [S3, p. 136]. primary_system BELOW_THRESHOLD; B 4 (0.7); A, C, D, E below threshold; mid_basin below threshold.
+Dmitri Ivanovich Mendeleev (1834–1907), Russian chemist, discovered the periodic law in 1869 and predicted unknown elements [S1, opening]. Against the spiritualists in 1876 he wrote "Наука борется съ суевѣріями, какъ свѣтъ съ потемками" [S4, p. 377]; in 1905 he named religion, art and science together as the expression of the highest consciousness [S3, p. 426]. He calls his view "реализмъ", not materialism [S3, p. 136]. primary_system BELOW_THRESHOLD; B 4 (0.7); A, D, E below threshold, C UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -265,7 +266,7 @@ His father, a gymnasium teacher, went blind the year he was born; his mother ran
 
 ## Adult working worldview
 
-Nervous physiology "разрушитъ суевѣрія" [S4, p. 376]. He is a realist: the unity of spirit, force and matter will long remain an "непостижимою тайною" [S3, p. 136]. Religion, art and science together express the highest consciousness [S3, p. 426]. Scores: B 4 (0.7); A, C, D, E below threshold.
+Nervous physiology "разрушитъ суевѣрія" [S4, p. 376]. He is a realist: the unity of spirit, force and matter will long remain an "непостижимою тайною" [S3, p. 136]. Religion, art and science together express the highest consciousness [S3, p. 426]. Scores: B 4 (0.7); A, D, E below threshold, C UNKNOWN.
 
 ## Heritage (context only)
 

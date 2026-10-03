@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #64 (both runs): the King letter's date is Grimaux p. 53 n. 1, not n. 2; n. 2 (lay patron of the chapel of his château of Fréchines, chaplain named by deed of 7 Aug 1781 and paid 290 livres a year) added as a nominal affiliation and in the CHRIST candidate, cited to p. 53 n. 2. #51: single-letter rule cited as CODING_GUIDE §3 (secondary quotation §7). #61: first_lasting_contribution_year 1774 → 1772 (0.5): 1774 is Priestley's visit; his own combustion experiments date from 1772 (sealed note of 1 Nov 1772, Grimaux p. 103 and n. 1), with the Easter 1775 memoir (p. 108) as the alternative; age 31 → 29; era bucket unchanged. #65: trailing cut of the 1791 quotation marked [...]. No worldview score changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); first lasting year per P13/P23, no coder's-choice wording; Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: lavoisier-antoine
@@ -26,7 +27,7 @@ identity:
     field: chemistry
     field_bucket: chemistry
   full_name: {value: "Antoine-Laurent Lavoisier", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('In full')"}, {source: S3, locator: "pp. 1–2 (baptismal names)"}], how_known: "Two sources; Grimaux explains the names Antoine and Laurent."}
-  native_name: {value: "Antoine-Laurent Lavoisier (French)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Same spelling in French; 'de Lavoisier' also appears in letters of the period (S5, p. 362)."}
+  native_name: {value: "Antoine-Laurent Lavoisier (French)", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Same spelling in French; 'de Lavoisier' also appears in letters of the period (S5, p. 362)."}
   aliases:
     - {name: "Lavoisier-Antoine", kind: "roster alias"}
 
@@ -36,13 +37,13 @@ basics:
     place: {value: "Paris", modern_name: "Paris, France", polity_then: "Kingdom of France", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "p. 2"}], how_known: "Two sources agree."}
   death:
     date: {value: "1794-05-08", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; opening"}, {source: S2, locator: "'Chemical Revolution and Political Revolution' (spring 1794)"}], how_known: "Britannica gives the day; SHI agrees on spring 1794."}
-    place: {value: "Paris (guillotined)", modern_name: "Paris, France", polity_then: "French First Republic", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; Top Questions"}], how_known: "Britannica; the execution is in every source."}
-  first_lasting_contribution_year: {value: 1772, certainty: 0.5, cites: [{source: S3, locator: "p. 103 and n. 1"}, {source: S2, locator: "'The Oxygen Revolution'; bibliography (Guerlac 1961)"}], how_known: "Year of his first combustion experiments, the start of the oxygen theory (the earliest item in lasting_original_contributions): in 1772 he found that phosphorus and sulphur gain weight on burning, and deposited a sealed note with the Académie on 1 November 1772 (Grimaux, p. 103 and n. 1, which prints the note); SHI's bibliography lists Guerlac's book on 'His First Experiments on Combustion in 1772'. 1774 (the earlier value) is the year of Priestley's Paris visit (SHI), not of Lavoisier's own work. The Easter 1775 memoir on the new air (Grimaux, p. 108) is the alternative; which step counts as the first lasting contribution is the coder's choice, so 0.5.", alternatives: [{value: 1775, cites: [{source: S3, locator: "p. 108 ('la séance publique de Pâques 1775')"}], note: "Memoir to the Académie distinguishing the new air from common and fixed air and attributing to it the weight gain of calcined metals."}]}
+    place: {value: "Paris (guillotined)", modern_name: "Paris, France", polity_then: "French First Republic", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
+  first_lasting_contribution_year: {value: 1772, certainty: 0.5, cites: [{source: S3, locator: "p. 103 and n. 1"}, {source: S2, locator: "'The Oxygen Revolution'; bibliography (Guerlac 1961)"}], how_known: "Year of his first combustion experiments, the start of the oxygen theory (the earliest item in lasting_original_contributions): in 1772 he found that phosphorus and sulphur gain weight on burning, and deposited a sealed note with the Académie on 1 November 1772 (Grimaux, p. 103 and n. 1, which prints the note); SHI's bibliography lists Guerlac's book on 'His First Experiments on Combustion in 1772'. 1774 (the earlier value) is the year of Priestley's Paris visit (SHI), not of Lavoisier's own work. The listed item's year is a range (1770s–1780s); the sources read do not settle whether it starts with the 1772 note or with the Easter 1775 memoir on the new air (Grimaux, p. 108), so 0.5 with 1775 named (P23, P25).", alternatives: [{value: 1775, cites: [{source: S3, locator: "p. 108 ('la séance publique de Pâques 1775')"}], note: "Memoir to the Académie distinguishing the new air from common and fixed air and attributing to it the weight gain of calcined metals."}]}
   era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S3, locator: "pp. 103, 108"}], how_known: "Any candidate first-contribution year (1772–1789) falls in this bucket (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "France is Western Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}], how_known: "Paris throughout."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [French], certainty: 1.0, cites: [{source: S1, locator: "Top Questions ('he did not know that language')"}, {source: S4, locator: "title page"}], how_known: "He wrote in French and did not read English; his wife translated English works for him."}
+  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S2, locator: "'Early Career'"}], how_known: "Paris throughout."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  languages_of_work: {value: [French], certainty: 1.0, cites: [{source: S4, locator: "title page"}], how_known: "His own Traité is in French (primary). That he did not read English was only in the Top Questions box and is not used (P26)."}
   occupations: {value: [chemist, "tax farmer (Ferme générale)", "public administrator", "gunpowder administrator"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources."}
 
 contribution:
@@ -50,16 +51,16 @@ contribution:
   lasting_original_contributions:
     - {value: "Oxygen theory of combustion and respiration, overturning phlogiston", year: "1770s–1780s", kind: theory, lasting: "foundation of modern chemistry", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Two sources."}
     - {value: "Conservation of mass made a working law of chemistry", year: "1789", kind: "law or principle", lasting: "taught in France as 'Lavoisier's law'", certainty: 1.0, cites: [{source: S1, locator: "'Conservation of mass'"}, {source: S4, locator: "pp. 140–141"}], how_known: "Britannica and his own statement of the principle."}
-    - {value: "Composition of water from hydrogen and oxygen (with Laplace)", year: "1780s", kind: discovery, lasting: "standard chemistry", certainty: 1.0, cites: [{source: S2, locator: "'The New Chemistry'"}], how_known: "SHI."}
+    - {value: "Composition of water from hydrogen and oxygen (with Laplace)", year: "1780s", kind: discovery, lasting: "standard chemistry", certainty: 0.7, cites: [{source: S2, locator: "'The New Chemistry'"}], how_known: "SHI."}
     - {value: "Modern chemical nomenclature (co-author) and the operational definition of an element", year: "1787–1789", kind: method, lasting: "names still in use", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'The New Chemistry'"}], how_known: "Two sources."}
   evidence_of_impact:
-    - {value: "Called the 'father of modern chemistry'", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
+    - {value: "Called the 'father of modern chemistry'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "opening"}], how_known: "SHI."}
   major_works:
     - {value: "Traité élémentaire de chimie", year: 1789, kind: book, certainty: 1.0, cites: [{source: S4, locator: "title page"}, {source: S2, locator: "opening"}], how_known: "Read in the 1789 first edition scan."}
     - {value: "Méthode de nomenclature chimique (with Guyton de Morveau, Berthollet and Fourcroy)", year: 1787, kind: book, certainty: 0.7, cites: [{source: S3, locator: "p. 52 ('la rédaction de la Nomenclature chimique', 1787)"}], how_known: "Grimaux dates his work on it to 1787; co-authors from general knowledge, not checked in a source read (flag)."}
   honours:
     - {value: "Elected to the Académie royale des sciences", year: 1768, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources."}
-  definition_fit: {value: "clearly meets", rationale: "Led the chemical revolution.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Led the chemical revolution.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Catholic; Grimaux calls the family pious, with several priests among its members", certainty: 0.7, cites: [{source: S3, locator: "pp. 2, 53"}], how_known: "Grimaux, who wrote with the family's papers and the family's goodwill (see data_quality_flags). Baptism at Saint-Merry and a priest godfather (p. 2) are documented facts."}
@@ -79,7 +80,7 @@ childhood:
   key_early_reading: []
   childhood_mentors:
     - {value: "Jean-Étienne Guettard (mineralogy and geology)", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}, {source: S3, locator: "p. 4"}], how_known: "Two sources."}
-  languages_in_childhood: {value: [French], certainty: 1.0, cites: [{source: S3, locator: "pp. 1–4"}], how_known: "Parisian family."}
+  languages_in_childhood: {value: [French], certainty: 0.7, cites: [{source: S3, locator: "pp. 1–4"}], how_known: "Parisian family."}
   notable_events:
     - {value: "Mother's death when he was about five", year: "1748", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources."}
 
@@ -87,7 +88,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1764–1794", certainty: 0.7, cites: [{source: S3, locator: "p. 4"}, {source: S1, locator: "opening"}], how_known: "From the end of his law studies to his death."}
   nominal_affiliations:
-    - {value: "Catholic by baptism (Saint-Merry, Paris, 1743)", years: "1743–", role: "member by baptism", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Grimaux, from the birth record printed in his appendix."}
+    - {value: "Catholic by baptism (Saint-Merry, Paris, 1743)", years: "1743–", role: "member by baptism", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Primary document printed in S3: the birth and baptism record in Grimaux's appendix."}
     - {value: "Lay patron (patron laïc) of the chapel of his château of Fréchines; as such he named a chaplain, the abbé Bellavoine, by deed of 7 August 1781 and paid him 290 livres a year", years: "1781–", role: "other", certainty: 0.7, cites: [{source: S3, locator: "p. 53 n. 2"}], how_known: "Grimaux's note, citing the deed; one source. Patronage of a chapel that came with the estate is a practice and an office, not a statement of belief, so it does not lift primary_system (CODING_GUIDE §1, church membership)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Lavoisier on how science and religion relate was found in the sources read."}
   primary_system:
@@ -134,7 +135,7 @@ worldview:
       date: "1791"
       context: "Opening of his unpublished 'Réflexions sur le plan d'instruction publique' for Talleyrand (autumn 1791), as printed by Guillaume from the manuscript (checked on the page image). Guillaume's note reads 'remarquable' as a slip for 'mémorable'."
       axes: [D_authority]
-      kind: "other"
+      kind: "unpublished manuscript"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life: []
@@ -143,8 +144,8 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "French (Parisian legal bourgeoisie, family from Villers-Cotterêts)", certainty: 1.0, cites: [{source: S3, locator: "p. 1"}, {source: S1, locator: "'Early life and education'"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Baptism record."}
-  baptism_or_initiation: {value: "Baptised the day of his birth at Saint-Merry, Paris; godfather his great-uncle Laurent Waroquier, a priest", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Grimaux, from the parish record (appendix)."}
+  religious_heritage_by_birth: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Primary document printed in S3: the baptism record in Grimaux's appendix."}
+  baptism_or_initiation: {value: "Baptised the day of his birth at Saint-Merry, Paris; godfather his great-uncle Laurent Waroquier, a priest", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Primary document printed in S3: the parish record in Grimaux's appendix."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not described in the sources read."}
 
 timing:
@@ -165,13 +166,13 @@ lane_b:
 
 institutions:
   - {value: "Académie royale des sciences, Paris", role: "member (from 1768)", years: "1768–1793", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources; end year is the Academy's suppression (general knowledge, flag)."}
-  - {value: "Ferme générale", role: "tax farmer", years: "1768–1793", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}, {source: S1, locator: "Top Questions"}], how_known: "Two sources."}
+  - {value: "Ferme générale", role: "tax farmer", years: "1768–1793", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "'Early Career'"}], how_known: "SHI."}
   - {value: "Régie des poudres (royal gunpowder administration), Paris Arsenal", role: "inspector / commissioner; laboratory at the Arsenal", years: "1775–", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}, {source: S3, locator: "p. 52"}], how_known: "Two sources."}
   - {value: "Commission of Weights and Measures", role: member, years: "1790s", kind: "government or state body", certainty: 1.0, cites: [{source: S2, locator: "'Chemical Revolution and Political Revolution'"}, {source: S5, locator: "pp. 361–362, notes"}], how_known: "Two sources."}
 collaborators:
-  - {value: "Marie-Anne Paulze Lavoisier", relation: family, note: "wife (married 1771); collaborator, illustrator and translator", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
-  - {value: "Pierre-Simon Laplace", roster_id: laplace-pierre-simon, relation: collaborator, note: "composition of water", certainty: 1.0, cites: [{source: S2, locator: "'The New Chemistry'"}], how_known: "SHI."}
-  - {value: "Joseph Priestley", roster_id: priestley-joseph, relation: "rival or critic", note: "1774 Paris visit; Lavoisier reinterpreted his 'dephlogisticated air'", certainty: 1.0, cites: [{source: S2, locator: "'The Oxygen Revolution'"}], how_known: "SHI."}
+  - {value: "Marie-Anne Paulze Lavoisier", relation: family, note: "wife (married 1771); collaborator, illustrator and translator", certainty: 0.7, cites: [{source: S2, locator: "opening"}], how_known: "SHI."}
+  - {value: "Pierre-Simon Laplace", roster_id: laplace-pierre-simon, relation: collaborator, note: "composition of water", certainty: 0.7, cites: [{source: S2, locator: "'The New Chemistry'"}], how_known: "SHI."}
+  - {value: "Joseph Priestley", roster_id: priestley-joseph, relation: "rival or critic", note: "1774 Paris visit; Lavoisier reinterpreted his 'dephlogisticated air'", certainty: 0.7, cites: [{source: S2, locator: "'The Oxygen Revolution'"}], how_known: "SHI."}
   - {value: "Jean-Étienne Guettard", relation: teacher, note: "geology and mineralogy; field travels", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}, {source: S3, locator: "p. 4"}], how_known: "Two sources."}
   - {value: "Guillaume-François Rouelle", relation: teacher, note: "chemistry lectures at the Jardin du Roi", certainty: 1.0, cites: [{source: S2, locator: "'Early Career'"}, {source: S3, locator: "pp. 4–5"}], how_known: "Two sources."}
   - {value: "Claude-Louis Berthollet", relation: collaborator, note: "potassium chlorate powder (1788)", certainty: 0.7, cites: [{source: S3, locator: "p. 53"}], how_known: "Grimaux."}
@@ -180,11 +181,11 @@ collaborators:
 review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, Grok).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 84"}], how_known: "Study roster."}
   controversies:
-    - {value: "Execution in the Terror as a former tax farmer; the 'La République n'a pas besoin de savants' remark is legendary", certainty: 0.7, cites: [{source: S1, locator: "Top Questions"}, {source: S5, locator: "p. 360"}], how_known: "Britannica on the execution; Guillaume on the legend."}
+    - {value: "Execution in the Terror with other financiers; the 'La République n'a pas besoin de savants' remark is legendary", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "p. 360"}], how_known: "Britannica on the execution; Guillaume on the legend."}
     - {value: "Whether he remained a believing Catholic: Grimaux (writing with the pious Chazelles family's papers) says yes; Guillaume (1907) published the anticlerical manuscript Grimaux had not printed in full", certainty: 0.7, cites: [{source: S3, locator: "p. 53"}, {source: S5, locator: "pp. 358–359, 363–364"}], how_known: "The two printed sources."}
   data_quality_flags:
     - "The King letter is known here only through Grimaux's quotation (S3), a biographer dependent on the descendants' goodwill; it is a single private letter (single-letter rule) and a secondary quotation (§7)."
-    - "first_lasting_contribution_year 1772 (combustion experiments, sealed note of 1 Nov 1772; Grimaux p. 103) is the coder's choice at 0.5, with 1775 (Easter memoir) as the alternative; was 1774, Priestley's visit, until the lens audit batch 3 (#61). Britannica's later sections were not read."
+    - "first_lasting_contribution_year 1772 is the source-dated start of the earliest listed lasting item, the oxygen theory (combustion experiments, sealed note of 1 Nov 1772; Grimaux p. 103). 0.5 because the sources read do not settle whether the item starts in 1772 or with the Easter 1775 memoir (named alternative); was 1774, Priestley's visit, until the lens audit batch 3 (#61). Britannica's later sections were not read."
     - "Co-authors of the 1787 Nomenclature and the 1793 end of the Académie are from general knowledge, flagged."
     - "Britannica read as its first page only."
   open_questions:
@@ -281,7 +282,7 @@ French Catholic legal bourgeoisie [S3, pp. 1–2]. Context only.
 
 ## Timing
 
-First lasting contribution 1772, his first combustion experiments and the sealed note of 1 November 1772 (coder's choice, 0.5; the Easter 1775 memoir is the alternative) [S3, pp. 103, 108]. The worldview evidence read dates from 1788–1791.
+First lasting contribution 1772, his first combustion experiments and the sealed note of 1 November 1772 (the source-dated start of the earliest listed lasting item; 0.5, since the sources read leave open whether it starts here or with the Easter 1775 memoir) [S3, pp. 103, 108]. The worldview evidence read dates from 1788–1791.
 
 ## Lane B notes (labeled belief model)
 

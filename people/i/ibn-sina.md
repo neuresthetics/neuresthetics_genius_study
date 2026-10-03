@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 6
+  schema_version: "1.3"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known notes that the score (3 at 0.5) is the same under every option of open item P7. No score change. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3. Basis scholarly_reconstruction 0.5 -> written_profession 0.7, because on the world's order his own text speaks to the axis (the heavens do not act 'for our sake', S6, p. 617); capped at 0.7 by the named alternative 4 (CODING_GUIDE §3), as for B. Access to knowledge and bliss moved to the C_ledger rationale (C unchanged). Statement tags updated; P7 note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -29,7 +30,7 @@ identity:
     field: polymath
     field_bucket: polymath
   full_name: {value: "Abū ʿAlī al-Ḥusayn ibn ʿAbd Allāh ibn Sīnā", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('In full')"}, {source: S2, locator: "opening paragraph"}, {source: S4, locator: "opening paragraph"}], how_known: "Three sources agree, with small differences of transliteration."}
-  native_name: {value: "Ibn Sīnā (Arabic)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Arabic')"}], how_known: "Britannica gives the Arabic form; 'Avicenna' is the Latin form (S4)."}
+  native_name: {value: "Ibn Sīnā (Arabic)", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts ('Arabic')"}], how_known: "Britannica gives the Arabic form; 'Avicenna' is the Latin form (S4)."}
   aliases:
     - {name: "Avicenna", kind: latinized}
     - {name: "Ibn Sina", kind: "roster alias"}
@@ -68,12 +69,12 @@ basics:
   era_bucket: {value: "500 to 1399", certainty: 1.0, cites: [{source: S4, locator: "§2"}], how_known: "From first_lasting_contribution_year under the era buckets (decision P2). Any date in his career gives the same bucket."}
   region_of_birth: {value: "Central Asia", certainty: 1.0, cites: [{source: S5, locator: "Quick Info ('now Uzbekistan')"}, {source: S1, locator: "Quick Facts ('now in Uzbekistan')"}], how_known: "Uzbekistan is Central Asia in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "He worked in Bukhara and Gurganj (Central Asia) until about 1012, then in Jurjan, Rayy, Hamadan and Isfahan. The Cure and the Canon were written in Hamadan and Isfahan, in Iran, which the study places in MENA (regions.csv, exception P3). Central Asia is an alternative for the early years, so 0.7."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Arabic, Persian], certainty: 1.0, cites: [{source: S4, locator: "§1; §2 (the Persian Book of Knowledge)"}, {source: S2, locator: "§1.2"}], how_known: "Most works in Arabic; at least one summa in Persian."}
   occupations:
     value: [physician, philosopher, "court official and vizier", "political counsellor"]
     certainty: 1.0
-    cites: [{source: S1, locator: "Top Questions; Life and education"}, {source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}, {source: S5, locator: "Biography"}]
+    cites: [{source: S1, locator: "Life and education"}, {source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}, {source: S5, locator: "Biography"}]
     how_known: "Four sources agree."
 
 contribution:
@@ -84,9 +85,9 @@ contribution:
     - {value: "The distinction between necessary and possible existence, with God as the Necessary Existent and the existence of the world from it", kind: theory, lasting: "foundation for later Islamic philosophy and theology and for Latin metaphysics (S4)", certainty: 1.0, cites: [{source: S3, locator: "§3; §4.1–4.2"}, {source: S4, locator: "opening paragraph; §5"}], how_known: "Two reference sources."}
     - {value: "The 'flying man' argument for the soul's awareness of itself", kind: "concept or term", lasting: "compared to Descartes' cogito (S4)", certainty: 0.7, cites: [{source: S4, locator: "§7"}], how_known: "One source."}
   evidence_of_impact:
-    - {value: "Called 'The Preeminent Master' (al-shaykh al-raʾīs) in the Islamic world; SEP ranks his influence on intellectual history in the West (of India) second only to Aristotle", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph"}], how_known: "SEP (Gutas)."}
-    - {value: "al-Ghazali and al-Shahrastani attacked him as the main representative of philosophy in Islam; his metaphysics became the foundation for later Islamic philosophical theology", kind: "assessment by a later major figure", certainty: 1.0, cites: [{source: S4, locator: "opening paragraph; §9"}], how_known: "IEP."}
-    - {value: "Latin translations guided the 13th-century reception of Aristotle, notably in Albertus Magnus and Thomas Aquinas", kind: "institutional or technological lineage", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}, {source: S4, locator: "§3"}], how_known: "Two sources."}
+    - {value: "Called 'The Preeminent Master' (al-shaykh al-raʾīs) in the Islamic world; SEP ranks his influence on intellectual history in the West (of India) second only to Aristotle", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "SEP (Gutas)."}
+    - {value: "al-Ghazali and al-Shahrastani attacked him as the main representative of philosophy in Islam; his metaphysics became the foundation for later Islamic philosophical theology", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S4, locator: "opening paragraph; §9"}], how_known: "IEP."}
+    - {value: "Latin translations guided the 13th-century reception of Aristotle, notably in Albertus Magnus and Thomas Aquinas", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S4, locator: "§3"}], how_known: "IEP."}
   major_works:
     - {value: "Compendium on the Soul (Maqāla fī l-nafs), his first work", year: "c. 998", kind: book, certainty: 0.5, cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§2"}], how_known: "Written shortly after age 18 (S2); the year depends on the birth year."}
     - {value: "The Cure (al-Shifāʾ)", year: "1016–1027", kind: book, certainty: 1.0, cites: [{source: S4, locator: "§2"}, {source: S2, locator: "§1.1"}], how_known: "Two sources."}
@@ -105,7 +106,7 @@ childhood:
     - {value: "One younger brother, born after him at Afshana", role: sibling, certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 9"}], how_known: "His own account only."}
   household_circumstances: {value: "Family of a provincial state official in the Samanid administration; his father's house in Bukhara was a meeting place for learned men", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S5, locator: "Biography"}], how_known: "SEP on the father's post; MacTutor on the house as a meeting place."}
   schooling:
-    - {value: "Teachers of the Qurʾān and of letters at Bukhara; the Qurʾān mastered by about age 10", stage: "religious school", institution: "teachers at Bukhara", years: "to c. 990", ages: "to c. 10", certainty: 1.0, cites: [{source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Three sources."}
+    - {value: "Teachers of the Qurʾān and of letters at Bukhara; the Qurʾān mastered by about age 10", stage: "elementary school", institution: "teachers at Bukhara", years: "to c. 990", ages: "to c. 10", certainty: 1.0, cites: [{source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Three sources.", run_by: "religious body"}
     - {value: "Hanafi jurisprudence (fiqh) with Ismaʿil the Ascetic (Ismaʿil Zahid)", stage: tutor, institution: "Bukhara", ages: "c. 10–16", certainty: 0.7, cites: [{source: S4, locator: "§1"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Two sources; ages approximate."}
     - {value: "Logic (Porphyry's Isagoge), the first figures of Euclid and the start of the Almagest with Abu ʿAbd Allah al-Natili, a philosopher who stayed in his father's house", stage: tutor, institution: "family house, Bukhara", ages: "c. 10–14", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–10"}, {source: S1, locator: "Life and education"}], how_known: "His own account (paraphrased) and Britannica on al-Natili teaching logic. Ages approximate."}
     - {value: "Studied the rest of logic, natural science, mathematics, metaphysics and medicine on his own, and says he had mastered the sciences by 18", stage: "self-directed", years: "to c. 998", ages: "c. 14–18", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S7, locator: "Autobiography, pp. 10–11"}, {source: S1, locator: "Life and education"}], how_known: "Three sources. Gutas reads the Autobiography as making a philosophical point about self-study, so the account is shaped (S2, S4)."}
@@ -127,7 +128,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "c. 998–1037", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}], how_known: "From his first work at about 18 to his death. Start date depends on the birth year."}
   nominal_affiliations:
-    - {value: "Muslim; trained in Hanafi jurisprudence and served as a jurist at Gurganj", years: "lifelong", role: "believer; jurist", certainty: 1.0, cites: [{source: S1, locator: "Top Questions ('Avicenna's religion was Islam')"}, {source: S4, locator: "§1"}, {source: S5, locator: "Biography"}], how_known: "Three sources. Britannica's Top Questions box is a summary feature; the IEP and MacTutor facts carry the claim."}
+    - {value: "Muslim; trained in Hanafi jurisprudence and served as a jurist at Gurganj", years: "lifelong", role: "believer; jurist", certainty: 1.0, cites: [{source: S4, locator: "§1"}, {source: S5, locator: "Biography"}], how_known: "Two sources (IEP, MacTutor)."}
   self_described_science_religion_relation:
     value: "Philosophy is demonstrative science, and the prophet is a human of the highest intellect who knows the truths by their middle terms, not on authority. The prophet gives the many the law and teaches them about God and the afterlife in images and parables they can grasp; those fit for philosophy are invited to work out the truth by demonstration. The soul's bliss and misery after death can be proved; bodily resurrection cannot, and he accepts it on the authority of the religious law and the Prophet."
     certainty: 1.0
@@ -270,7 +271,7 @@ worldview:
       verified_on: 2026-10-02
       note: "Known here only through SEP's quotation of Gutas's English translation. Supports D only together with the Horten passages."
   changes_over_life:
-    - {value: UNKNOWN, how_known: "No change of system is reported in S2–S5. IEP notes debate over a later 'Eastern' philosophy and mystical leanings in some late works (S4, §8); not treated as a change of system here."}
+    - {value: BELOW_THRESHOLD, how_known: "No change of system is reported in S2–S5. IEP notes debate over a later 'Eastern' philosophy and mystical leanings in some late works (S4, §8); not treated as a change of system here.", note: "Evidence bears on the point but is too weak to code a change (P19)."}
   coder_notes: "Code and axes rest mainly on Horten's 1907 German translation of the Metaphysics of The Cure, which is public domain but loose in places and adds words in parentheses; Marmura's English translation (2005) was not read. Horten's notes (not his translation) and Gutas disagree on whether prophecy is natural or supernatural; the record uses the text, not Horten's notes. Al-Ghazali says Ibn Sina taught that souls never return to bodies (S9), while the Metaphysics of The Cure accepts bodily resurrection on religious authority (S6, p. 633). Both are recorded; C and D were scored from The Cure."
 
 heritage:
@@ -309,13 +310,13 @@ collaborators:
   - {value: "al-Farabi", roster_id: al-farabi, relation: "influenced by", note: "his short book on the aims of Aristotle's Metaphysics; his early works were written under al-Farabi's influence", certainty: 1.0, cites: [{source: S4, locator: "§1; §2"}, {source: S1, locator: "opening paragraph"}], how_known: "Two sources."}
   - {value: "Aristotle", roster_id: aristotle, relation: "influenced by", note: "the curriculum he reworked; called 'The First Teacher'", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph; §5"}, {source: S3, locator: "§1"}], how_known: "Two sources."}
   - {value: "al-Ghazali", roster_id: al-ghazali, relation: "rival or critic", note: "posthumous critic; judged three of his teachings unbelief", certainty: 1.0, cites: [{source: S9, locator: "§3"}, {source: S4, locator: "opening paragraph"}], how_known: "Two sources."}
-  - {value: "Thomas Aquinas", roster_id: aquinas-thomas, relation: influenced, note: "Latin metaphysics; internal senses", certainty: 1.0, cites: [{source: S4, locator: "opening paragraph; §3"}, {source: S1, locator: "Top Questions"}], how_known: "Two sources."}
+  - {value: "Thomas Aquinas", roster_id: aquinas-thomas, relation: influenced, note: "Latin metaphysics; internal senses", certainty: 0.7, cites: [{source: S4, locator: "opening paragraph; §3"}], how_known: "IEP."}
   - {value: "Moses Maimonides", roster_id: maimonides, relation: influenced, note: "accepted most of his ideas in the Guide of the Perplexed", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "One source."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 9) and v8; F fell to 5 because the v8 roster counts five models.", certainty: 0.7, cites: [{source: S11, locator: "roster.csv, rank 39"}], how_known: "Study roster (F_change_vs_v7 = -4). The reason for the drop is the coder's reading of the column."}
   controversies:
-    - {value: "Al-Ghazali's Incoherence judged three of his teachings (world without a beginning in time; God's knowledge only of universals; no return of souls to bodies) to be unbelief, and declared those who teach them publicly apostates", certainty: 1.0, cites: [{source: S9, locator: "§3"}], how_known: "SEP (Griffel)."}
+    - {value: "Al-Ghazali's Incoherence judged three of his teachings (world without a beginning in time; God's knowledge only of universals; no return of souls to bodies) to be unbelief, and declared those who teach them publicly apostates", certainty: 0.7, cites: [{source: S9, locator: "§3"}], how_known: "SEP (Griffel)."}
   data_quality_flags:
     - "Birth year: Britannica, IEP, MacTutor and SEP Natural Philosophy give 980; SEP's main entry (Gutas) gives about 970, 'perhaps as early as 964'."
     - "Birthplace: SEP, IEP and the Autobiography say Afshana; MacTutor says Kharmaithen, which was his father's district."
@@ -326,7 +327,7 @@ review:
     - "Prophecy: Gutas (S2) says the divine 'flow' of knowledge 'has nothing mystical about it'; Horten (S10) reads the prophet's soul as supernatural."
     - "S6 chapter numbers are Horten's; they differ from the Cairo edition used by SEP (Horten IX ch. 8 = Cairo IX.6). The afterlife chapter is headed 'Zehntes Kapitel' in the text but listed as '9. Kapitel' in Horten's contents."
     - "S7 (Arberry) was read in a poor OCR scan; all S7 material is paraphrased and page numbers are approximate."
-    - "Britannica's 'Top Questions' box (S1) may be AI-generated; it is used only alongside other sources."
+    - "Britannica's 'Top Questions' box (S1) is AI-generated and is not cited (decision P26)."
   open_questions:
     - "Read Marmura's English translation of the Metaphysics of The Cure (2005) to check the Horten passages and get Cairo chapter numbers."
     - "Read Gohlman's edition of the Autobiography (1974) for exact quotations on his schooling and religion."
@@ -341,7 +342,7 @@ sources:
     citation: "Flannery, Michael. \"Avicenna.\" Encyclopaedia Britannica. Last updated September 11, 2026. https://www.britannica.com/biography/Avicenna."
     url: "https://www.britannica.com/biography/Avicenna"
     accessed: 2026-10-02
-    reliability_note: "Signed article by a historian of medicine; fact-checked by Britannica editors. Its Top Questions box may be AI-generated and is not relied on alone."
+    reliability_note: "Signed article by a historian of medicine; fact-checked by Britannica editors. Its AI-generated Top Questions box is not cited (P26)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, institutions, collaborators]
   - id: S2
     type: tertiary

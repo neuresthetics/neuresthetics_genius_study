@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 4
+  schema_version: "1.3"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Self-described relation lowered from 1.0 to 0.7 under the CODING_GUIDE §7 unofficial-web-copy cap (S4 read from a user upload of the JSTOR PDF, not JSTOR itself)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "record_version corrected to 3 (the 1f3c4bf fix did not raise it). Decision P9: the §7 cap (0.7) on fields resting on the JSTOR-PDF copy is kept, since its provenance cannot be confirmed from the copy; reading the article on JSTOR would lift it. Notes only; no score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #33 (run 1; verified on the CrossCurrents text): primary_system PLATO (0.7) → BELOW_THRESHOLD, with PLATO (leading) and CHRIST as candidates. PLATO's use_when needs the intelligible reality to be the ultimate origin of both existence and values; the lecture makes the realm behind phenomena the ground of ethics and trust (p. 467), not of existence, and pairs Plato with the Bible (p. 467) while speaking from inside the Christian 'linguistic area' (p. 471). PLATO's do_not_use_when sends Platonism inside Christianity to the host religion unless the Platonism clearly dominates, which the record does not show; CHRIST's use_when (specifically Christian belief) is not met either. No axis changed; mid_basin unchanged (TODO, A = 2). #41 (run 2): nominal affiliation reworded; MacTutor gives the parents' affiliation, not his own. #44 (run 2): Nobel biography locators recounted from 'Werner Heisenberg was born': the 1925 / Nobel sentence is paragraph 10 (was 7), Berlin paragraph 6 (was 5), the Max Planck Institute paragraphs 7 and 9 (were 6, 8). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: heisenberg-werner
@@ -27,7 +28,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Werner Karl Heisenberg", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica's heading; the middle name is not in S2 or S3."}
-  native_name: {value: "Werner Heisenberg (German)", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Same spelling in German."}
+  native_name: {value: "Werner Heisenberg (German)", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Same spelling in German."}
   aliases:
     - {name: "Heisenberg-Werner", kind: "roster alias"}
     - {name: "Werner-Heisenberg", kind: "roster alias"}
@@ -42,8 +43,8 @@ basics:
   first_lasting_contribution_year: {value: 1925, certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}, {source: S3, locator: "paragraph 10"}], how_known: "The July 1925 paper founding matrix mechanics."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 2–6"}], how_known: "Göttingen, Leipzig, Berlin and Munich, with stays in Copenhagen (Northern Europe)."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
+  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–6"}], how_known: "Göttingen, Leipzig, Berlin and Munich, with stays in Copenhagen (Northern Europe)."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "As the sources record it."}
   languages_of_work: {value: [German], certainty: 0.7, cites: [{source: S1, locator: "German paper titles"}], how_known: "His main papers are in German; English versions of his books exist."}
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 3–6"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
 
@@ -57,13 +58,13 @@ contribution:
   evidence_of_impact:
     - {value: "Nobel Prize in Physics for 1932 for the creation of quantum mechanics", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 10"}], how_known: "Two sources."}
   major_works:
-    - {value: "Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen", year: 1925, kind: "paper or paper series", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}], how_known: "Britannica gives the title and date."}
-    - {value: "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik", year: 1927, kind: "paper or paper series", certainty: 1.0, cites: [{source: S1, locator: "'Uncertainty principle'"}], how_known: "Britannica (which misprints 'anschulichen')."}
+    - {value: "Über quantentheoretische Umdeutung kinematischer und mechanischer Beziehungen", year: 1925, kind: "paper or paper series", certainty: 0.7, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}], how_known: "Britannica gives the title and date."}
+    - {value: "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik", year: 1927, kind: "paper or paper series", certainty: 0.7, cites: [{source: S1, locator: "'Uncertainty principle'"}], how_known: "Britannica (which misprints 'anschulichen')."}
     - {value: "Die physikalischen Prinzipien der Quantentheorie (The Physical Principles of the Quantum Theory)", year: 1930, kind: book, certainty: 0.7, cites: [{source: S2, locator: "1928 paragraph"}], how_known: "MacTutor dates it 1928; the English edition is 1930. Year uncertain."}
   honours:
     - {value: "Nobel Prize in Physics (for 1932)", year: 1932, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 10"}], how_known: "Two sources."}
     - {value: "Romano Guardini Prize of the Catholic Academy in Bavaria", year: 1973, certainty: 1.0, cites: [{source: S4, locator: "p. 463 (editor's note)"}], how_known: "The published lecture's editorial note."}
-  definition_fit: {value: "clearly meets", rationale: "Founded quantum mechanics.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Founded quantum mechanics.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Evangelical Lutheran (mother converted from Catholicism at marriage); the parents were religious only by convention", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor, drawing on Cassidy's biography (its reference [3])."}
@@ -73,7 +74,7 @@ childhood:
     - {value: "Mother, Anna Wecklein, daughter of the headmaster of the Maximilians-Gymnasium, Munich", name: "Anna Heisenberg (née Wecklein)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "'Education'"}, {source: S2, locator: "Biography, paragraph 1"}], how_known: "Two sources."}
   household_circumstances: {value: "Academic family; an older brother, Erwin; moved from Würzburg to Munich in 1910", certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraphs 1, 4"}, {source: S1, locator: "'Education'"}], how_known: "Two sources."}
   schooling:
-    - {value: "Primary school, Würzburg; Elisabethenschule, Munich", stage: "dame or charity school", years: "1906–1911", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 4"}], how_known: "MacTutor; 'primary school' mapped to the nearest stage."}
+    - {value: "Primary school, Würzburg; Elisabethenschule, Munich", stage: "elementary school", years: "1906–1911", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 4"}], how_known: "MacTutor; 'primary school' mapped to the nearest stage."}
     - {value: "Maximilians-Gymnasium, Munich (Abitur 1920)", stage: "grammar or secondary school", years: "1911–1920", certainty: 1.0, cites: [{source: S1, locator: "'Education'"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
     - {value: "University of Munich under Sommerfeld (doctorate 1923, on turbulence), with study under Born at Göttingen", stage: university, years: "1920–1923", certainty: 1.0, cites: [{source: S1, locator: "'Education'"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
   early_mathematics: {value: "advanced mathematics", note: "Tutored a university student in calculus in 1917 and read Kronecker on number theory as a schoolboy.", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 5–6"}], how_known: "MacTutor only."}
@@ -85,7 +86,7 @@ childhood:
     - {value: "Romano Guardini's writings, read 'as a young person'", certainty: 1.0, cites: [{source: S4, locator: "p. 463"}], how_known: "His own statement."}
   childhood_mentors:
     - {value: "His father, whose influence on his interest in mathematics the Nobel biography notes", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Nobel biography ('probably due to his influence')."}
-  languages_in_childhood: {value: [German], certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "German home and schools."}
+  languages_in_childhood: {value: [German], certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "German home and schools."}
   notable_events:
     - {value: "Took part, at 17, in the suppression of the Bavarian Soviet Republic, which he later called 'a kind of adventure'", year: "1919", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 8"}], how_known: "MacTutor, quoting him."}
 
@@ -125,7 +126,7 @@ worldview:
       cites: [{source: S4, locator: "p. 465"}, {source: S1, locator: "'Uncertainty principle'"}]
       how_known: "His own lecture and Britannica's account of his physics; a named alternative, so 0.7."
       rationale: "Scored on his account of nature (P6), his working physics. Laws and repeatable experiment rule: 'The repeatable nature of experiments finally always permits a consensus on the true behaviour of nature' (p. 465), and modern science 'has brought to light laws of wide scope' (p. 472). His uncertainty principle made 'absolute causal determinism' impossible and atomic theory probabilistic (S1), which is statistical law, not miracle or exemption. Named alternative: 3, if the 'limits' of causal description 'through experience with atoms' (p. 465) are read as a standing exception."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "He makes religion 'the basis of ethics' (p. 467) but says nothing in what was read about judgement, afterlife, or reward and punishment of persons.", note: "Gap: Der Teil und das Ganze (1969), chs. 7 and 17, and Physics and Philosophy (1958); lending-only scans."}
+    C_ledger: {value: UNKNOWN, how_known: "He makes religion 'the basis of ethics' (p. 467) but says nothing in what was read about judgement, afterlife, or reward and punishment of persons.", note: "Gap: Der Teil und das Ganze (1969), chs. 7 and 17, and Physics and Philosophy (1958); lending-only scans."}
     D_authority:
       value: 2
       basis: written_profession
@@ -205,9 +206,9 @@ lane_b:
 institutions:
   - {value: "University of Copenhagen (Bohr's institute)", role: "Rockefeller fellow (1924–25); lecturer (1926–27)", years: "1924–1927", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraphs 3–4"}, {source: S2, locator: "1924–1926 paragraphs"}], how_known: "Two sources."}
   - {value: "University of Leipzig", role: "professor of theoretical physics", years: "1927–1941", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 4"}, {source: S2, locator: "1927 paragraph"}], how_known: "Two sources."}
-  - {value: "Kaiser Wilhelm Institute for Physics, Berlin", role: director, years: "1941–1945", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}, {source: S2, locator: "1941"}], how_known: "Two sources."}
+  - {value: "Kaiser Wilhelm Institute for Physics, Berlin", role: director, years: "1941–1945", kind: "research institute", certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}, {source: S2, locator: "1941"}], how_known: "Two sources."}
   - {value: "German nuclear research programme (Uranverein)", role: "leading scientist", years: "1939–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S2, locator: "Second World War paragraph"}, {source: S1, locator: "opening ('Considerable controversy')"}], how_known: "MacTutor says he headed it; Britannica notes the controversy."}
-  - {value: "Max Planck Institute for Physics (Göttingen, then Munich)", role: director, years: "1946–1970", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "paragraphs 7, 9"}, {source: S2, locator: "post-war paragraph"}], how_known: "Two sources."}
+  - {value: "Max Planck Institute for Physics (Göttingen, then Munich)", role: director, years: "1946–1970", kind: "research institute", certainty: 1.0, cites: [{source: S3, locator: "paragraphs 7, 9"}, {source: S2, locator: "post-war paragraph"}], how_known: "Two sources."}
 collaborators:
   - {value: "Arnold Sommerfeld", relation: teacher, note: "doctoral supervisor in Munich", certainty: 1.0, cites: [{source: S1, locator: "'Education'"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "Max Born", roster_id: born-max, relation: collaborator, note: "Göttingen; matrix mechanics with Jordan", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}, {source: S2, locator: "1925 paragraph"}], how_known: "Two sources."}
@@ -283,7 +284,7 @@ sources:
 
 ## Summary
 
-Werner Heisenberg (1901–1976), German physicist, founded matrix mechanics in 1925, stated the uncertainty principle in 1927 and won the Nobel Prize in Physics for 1932 [S1, opening]. In his 1973 Guardini Prize lecture he held that scientific and religious truth are two languages for one order, grounding ethics in "tht realm behind" the visible world "which Plato referred to as the realm of ideas, and which the Bible speaks of in the words “God is a spirit.”" [S4, pp. 463, 467]. System below threshold (PLATO leading, CHRIST named); A 2, B 4, D 2 (all 0.7); C, E below threshold; mid_basin TODO (A = 2).
+Werner Heisenberg (1901–1976), German physicist, founded matrix mechanics in 1925, stated the uncertainty principle in 1927 and won the Nobel Prize in Physics for 1932 [S1, opening]. In his 1973 Guardini Prize lecture he held that scientific and religious truth are two languages for one order, grounding ethics in "tht realm behind" the visible world "which Plato referred to as the realm of ideas, and which the Bible speaks of in the words “God is a spirit.”" [S4, pp. 463, 467]. System below threshold (PLATO leading, CHRIST named); A 2, B 4, D 2 (all 0.7); C UNKNOWN, E below threshold; mid_basin TODO (A = 2).
 
 ## Life and work
 
@@ -299,7 +300,7 @@ His parents (an Evangelical Lutheran father and a mother who had converted from 
 
 ## Adult working worldview
 
-"I am convinced of the unassailability of scientific truth in its own sphere", but he could never "doubt the truth of what they are pointing to" [S4, p. 463]. The God of the early scientists "is a God of order, and we do not know whether he is identical with the one to whom we turn in need" [S4, pp. 464–465]. Religion is a poetic language, "in principle as replaceable as any other language" [S4, p. 471], and science and religion must each keep to its sphere [S4, p. 472]. System below threshold: PLATO's use_when needs the realm of ideas as the origin of existence as well as values, and Platonism inside a Christian frame goes to the host religion unless it clearly dominates [S4, pp. 467, 471]. Scores: A 2, B 4, D 2 (0.7); C, E below threshold.
+"I am convinced of the unassailability of scientific truth in its own sphere", but he could never "doubt the truth of what they are pointing to" [S4, p. 463]. The God of the early scientists "is a God of order, and we do not know whether he is identical with the one to whom we turn in need" [S4, pp. 464–465]. Religion is a poetic language, "in principle as replaceable as any other language" [S4, p. 471], and science and religion must each keep to its sphere [S4, p. 472]. System below threshold: PLATO's use_when needs the realm of ideas as the origin of existence as well as values, and Platonism inside a Christian frame goes to the host religion unless it clearly dominates [S4, pp. 467, 471]. Scores: A 2, B 4, D 2 (0.7); C UNKNOWN, E below threshold.
 
 ## Heritage (context only)
 

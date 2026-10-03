@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 8
+  schema_version: "1.3"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 2 -> 3 at 0.7 (universal providence over individual creatures, I q. 22 a. 2; miracles the limited exception; named alternative 2 from I q. 22 a. 2 ad 4). Reprobation and salvation by revealed truth moved to the C_ledger rationale (C unchanged). Two statements added from I q. 22 a. 2 (same source, page already read), checked word for word. P7 interim note removed. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S4 (New Advent) is an unofficial copy of the English Dominican translation. Checked its wording against two publisher's printings in Internet Archive scans: S6 (Benziger 1947, vol. 1: First Part and First Part of the Second Part) and S7 (Burns Oates 1922, II-II QQ. 80-100). All 17 S4 quotations and every S4 passage cited by a certainty-1.0 field (languages_of_work, self-described relation, primary_system, A, C, D, Maimonides collaborator entry) were found word for word. Added S6 or S7 cites next to S4 on those fields and quotations, so they stay at 1.0. Five quotations take the printed punctuation, checked on the page images (one comma or semicolon each: I q. 1 a. 1, a. 6 ad 2, a. 8 ad 2; I q. 8 a. 1; II-II q. 83 a. 2). No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: aquinas-thomas
@@ -64,10 +65,10 @@ basics:
       cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "§1.1"}]
       how_known: "Two sources agree; he fell ill on his way to the Second Council of Lyon (S1, S3)."
   first_lasting_contribution_year: {value: 1252, approx: true, certainty: 0.7, cites: [{source: S3, locator: "References: Thomas' Works (De ente et essentia, 1252–1253)"}, {source: S2, locator: "§1.2; §4 (essence and existence)"}], how_known: "Year On Being and Essence was begun, per IEP's work list. Its account of essence and existence is listed as a lasting contribution below. Dated only to a range, so 0.7."}
-  era_bucket: {value: "500 to 1399", certainty: 1.0, cites: [{source: S3, locator: "References: Thomas' Works"}], how_known: "Derived from first_lasting_contribution_year (1252) under the era buckets (decision P2). Any date in his career gives the same bucket."}
+  era_bucket: {value: "500 to 1399", certainty: 0.7, cites: [{source: S3, locator: "References: Thomas' Works"}], how_known: "Derived from first_lasting_contribution_year (1252) under the era buckets (decision P2). Any date in his career gives the same bucket."}
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in what is now Italy; Italy is Southern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "He taught in Paris (1252–1259, 1268–1272) and Cologne (1248–1252) and in Italy (1259–1268, 1272–1273). His two Paris regencies and the Summa contra gentiles years split between France and Italy; Western Europe is chosen because his university career centred on Paris. Southern Europe is a close alternative, so 0.7."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Latin], certainty: 1.0, cites: [{source: S4, locator: "edition note (Fathers of the English Dominican Province, 2nd rev. ed., 1920, translated from the Latin)"}, {source: S6, locator: "title page (literally translated by Fathers of the English Dominican Province)"}, {source: S1, locator: "Years at the papal Curia (works and literary forms)"}], how_known: "He wrote in Latin, the language of the universities."}
   occupations:
     value: ["Dominican friar and priest", "master (professor) of theology", "papal theological adviser", "commentator on Aristotle and the Bible"]
@@ -84,7 +85,7 @@ contribution:
     - {value: "A theory of natural law grounding moral law in human nature and reason", year: "1271", kind: theory, lasting: "natural law theory in ethics and law", certainty: 0.7, cites: [{source: S2, locator: "§8.2"}, {source: S4, locator: "I-II q. 94"}], how_known: "SEP section and the text itself; the year is the IEP date for the Prima Secundae, where the treatise sits."}
   evidence_of_impact:
     - {value: "Recognized by the Roman Catholic Church as its foremost Western philosopher and theologian (S1); named a Doctor of the Church in 1567; Leo XIII's encyclical Aeterni Patris (1879) held him up as a model for Christian philosophy (S3, S2)", kind: "institutional or technological lineage", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Legacy"}, {source: S3, locator: "§1.a"}, {source: S2, locator: "§9"}], how_known: "Three sources."}
-    - {value: "Thomism, the school named after him, from the 15th century (Capreolus) to the present; adopted as the official philosophy of the Church in 1917", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "Introduction & Top Questions"}, {source: S2, locator: "§9"}], how_known: "Two sources."}
+    - {value: "Thomism, the school named after him, from the 15th century to the present", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "Introduction"}, {source: S2, locator: "§9"}], how_known: "Two sources: Britannica names Thomism; SEP traces it from John Capreolus (early 15th century) to the 20th century."}
     - {value: "Almost everything he wrote survives, more than eight million words, edited and translated into many languages", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "§1.2"}], how_known: "One source."}
   major_works:
     - {value: "Commentary on the Sentences of Peter Lombard", year: "1252–1256", kind: book, certainty: 1.0, cites: [{source: S3, locator: "References"}, {source: S2, locator: "§1.1"}], how_known: "Two sources."}
@@ -101,11 +102,11 @@ childhood:
   family_religion: {value: "Latin (Roman) Catholic. His family gave him as a boy to the Benedictine abbey of Monte Cassino as an oblate, hoping he would one day become its abbot.", certainty: 1.0, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Three sources agree on the oblation and the family's hopes. 'Catholic' is implied by the oblation rather than stated."}
   family_religious_practice: {value: TODO, note: "No account of the household's worship in the sources read. Torrell's biography (S2's main reference) may have it."}
   parents_and_household:
-    - {value: "Father of Lombard origin, mother of Norman descent; the family held a modest feudal domain on the disputed border between the emperor and the pope and served Emperor Frederick II", role: parents, certainty: 1.0, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source; consistent with S2 and S3 on the family castle. The parents' names are not given in the sources read."}
+    - {value: "Father of Lombard origin, mother of Norman descent; the family held a modest feudal domain on the disputed border between the emperor and the pope and served Emperor Frederick II", role: parents, certainty: 0.7, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source; consistent with S2 and S3 on the family castle. The parents' names are not given in the sources read."}
     - {value: "Youngest of at least nine children; the youngest of four boys", role: "sibling position", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Two sources."}
   household_circumstances: {value: "A wealthy family that presided over a prominent castle at Roccasecca, held by the Aquino family for over a century", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Two sources agree."}
   schooling:
-    - {value: "Oblate at the Benedictine abbey of Monte Cassino, where he received his early education; he left in 1239 when the emperor expelled the monks", stage: "religious school", institution: "Abbey of Monte Cassino", years: "c. 1230–1239", ages: "c. 5–14", certainty: 1.0, cites: [{source: S1, locator: "Early years ('after nine years')"}, {source: S3, locator: "§1.a ('from approximately 5 to 15 years of age')"}, {source: S2, locator: "§1.1"}], how_known: "Three sources agree on the abbey; S1's nine years ending 1239 and S3's ages 5 to 15 agree roughly."}
+    - {value: "Oblate at the Benedictine abbey of Monte Cassino, where he received his early education; he left in 1239 when the emperor expelled the monks", stage: "elementary school", institution: "Abbey of Monte Cassino", years: "c. 1230–1239", ages: "c. 5–14", certainty: 1.0, cites: [{source: S1, locator: "Early years ('after nine years')"}, {source: S3, locator: "§1.a ('from approximately 5 to 15 years of age')"}, {source: S2, locator: "§1.1"}], how_known: "Three sources agree on the abbey; S1's nine years ending 1239 and S3's ages 5 to 15 agree roughly.", run_by: "religious body"}
     - {value: "University of Naples: the liberal arts and philosophy, including newly translated works of Aristotle, perhaps introduced by Peter of Ireland", stage: university, institution: "University of Naples", years: "1239–1244", ages: "c. 14–19", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S1, locator: "Early years"}], how_known: "Two sources agree on Naples and Aristotle; S3 hedges on Peter of Ireland."}
     - {value: "Dominican studies at Paris (1245–1248) and Cologne (1248–1252) under Albert the Great; then bachelor of the Sentences at Paris (1252–1256)", stage: university, institution: "Dominican studium, Paris; Cologne", years: "1245–1256", ages: "c. 20–31", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}, {source: S1, locator: "Studies in Paris"}], how_known: "Three sources agree."}
   early_mathematics: {value: "other", ages: "c. 14–19", description: "IEP says theology training at a 13th-century university began with the seven liberal arts, including the quadrivium (arithmetic, geometry, music, astronomy), and places this at Naples from 1239. No record of what mathematics he actually studied was found.", certainty: 0.5, cites: [{source: S3, locator: "§1.a"}], how_known: "A scholarly account of the usual curriculum, not of his own record: scholarly reconstruction, 0.5."}
@@ -322,7 +323,7 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "Southern Italian minor nobility; father of Lombard origin, mother of Norman heritage", certainty: 1.0, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source."}
+  ethnic_or_communal_heritage: {value: "Southern Italian minor nobility; father of Lombard origin, mother of Norman heritage", certainty: 0.7, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source."}
   religious_heritage_by_birth: {value: "Latin (Roman) Catholic", certainty: 0.7, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}], how_known: "Implied by his oblation at Monte Cassino; not stated in those words."}
   baptism_or_initiation: {value: TODO, note: "No baptism record in the sources read. Oblation at Monte Cassino (c. 1230) is recorded under childhood.schooling."}
   childhood_catechism: {value: TODO, note: "Not described in the sources read; Torrell's Saint Thomas Aquinas, vol. 1, ch. 1 is the place to look."}
@@ -361,10 +362,10 @@ collaborators:
   - {value: "Siger of Brabant", relation: "rival or critic", note: "leader of the Paris Averroists from 1266", years: "1266–1272", certainty: 0.7, cites: [{source: S1, locator: "Years at the papal Curia"}], how_known: "One source read for the dispute."}
   - {value: "Bonaventure", relation: "rival or critic", note: "Franciscan colleague at Paris; in 1273 criticized philosophy as distinct from theology and 'the notion of a physical nature that has determined laws'", years: "1273", certainty: 1.0, cites: [{source: S1, locator: "Last years at Naples"}, {source: S3, locator: "§5"}], how_known: "Two sources (S3 on angels and spiritual matter)."}
   - {value: "Moses Maimonides", roster_id: maimonides, relation: other, note: "cited as 'Rabbi Moses' on providence (I q. 22 a. 2); Thomas disagrees with his view of names for God", certainty: 1.0, cites: [{source: S4, locator: "I q. 22 a. 2"}, {source: S6, locator: "I q. 22 a. 2"}, {source: S3, locator: "§6"}], how_known: "His own text and one reference source."}
-  - {value: "Reginald of Piperno", relation: "student or assistant", note: "his confessor and assistant, who urged him to keep writing after December 1273", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}], how_known: "One source."}
+  - {value: "Reginald of Piperno", relation: "student or assistant", note: "his confessor and assistant, who urged him to keep writing after December 1273", certainty: 0.7, cites: [{source: S3, locator: "§1.a"}], how_known: "One source."}
 
 review:
-  roster_status_reason: {value: "Core in v7.1 and carried into v8; F = 4 (named by Claude, DeepSeek, GPT and Grok).", certainty: 1.0, cites: [{source: S5, locator: "roster.csv, rank 135"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v7.1 and carried into v8; F = 4 (named by Claude, DeepSeek, GPT and Grok).", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 135"}], how_known: "Study roster."}
   controversies:
     - {value: "Some of his views were controversial in his lifetime and after: some of the 219 propositions condemned at Paris in 1277 touched his teaching", certainty: 1.0, cites: [{source: S1, locator: "Last years at Naples"}, {source: S2, locator: "§9"}], how_known: "Two sources."}
   data_quality_flags:

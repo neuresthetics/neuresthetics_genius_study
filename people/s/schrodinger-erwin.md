@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 5
+  schema_version: "1.3"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): B_cause certainty 1.0 → 0.7. It rests on the rapeutation.com copy of the What is Life? epilogue (S4), and no authoritative edition was reachable to check the wording. mid_basin recomputed: value false (P4 test, A = 4) and certainty 0.7 = min(A 0.7, B 0.7), both unchanged; how_known updated."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: schrodinger-erwin
@@ -28,7 +29,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "Erwin Rudolf Josef Alexander Schrödinger", certainty: 0.7, cites: [{source: S2, locator: "heading"}], how_known: "MacTutor gives the full name; Britannica gives Erwin Schrödinger."}
-  native_name: {value: "Erwin Schrödinger (German)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Austrian; same spelling."}
+  native_name: {value: "Erwin Schrödinger (German)", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Austrian; same spelling."}
   aliases:
     - {name: "Erwin-Schrödinger", kind: "roster alias"}
     - {name: "Schrödinger-Erwin", kind: "roster alias"}
@@ -40,30 +41,30 @@ basics:
     place: {value: "Vienna", modern_name: "Vienna, Austria", polity_then: "Austria-Hungary", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "first paragraph"}], how_known: "Two sources agree."}
   death:
     date: {value: "1961-01-04", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "last paragraph"}], how_known: "Two sources agree."}
-    place: {value: "Vienna", modern_name: "Vienna, Austria", polity_then: "Austria", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica; the Nobel biography says he returned to Vienna after retiring."}
+    place: {value: "Vienna", modern_name: "Vienna, Austria", polity_then: "Austria", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica; the Nobel biography says he returned to Vienna after retiring."}
   first_lasting_contribution_year: {value: 1926, certainty: 1.0, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "The wave equation, first half of 1926; two sources."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S3, locator: "paragraph 5"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Vienna, Austria')"}], how_known: "Austria is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Main contribution (wave mechanics, 1926) was made in Zürich (Switzerland, Western Europe), so that is the value (DATA_DICTIONARY: if split, pick where the main contribution was made). Two other contributions listed in this record were made in Northern Europe: the cat paper (1935) while he was at Oxford (1933–36) and What is Life? (1944) in Dublin. Two regions, so 0.7, as for Einstein, Fermi and Meitner.", alternatives: [{value: "Northern Europe", cites: [{source: S2, locator: "Biography (Oxford, November 1933; Dublin from autumn 1939)"}], note: "Oxford (UK) and Dublin (Ireland) are Northern Europe in data/reference/regions.csv."}]}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S3, locator: "first paragraph ('the only child')"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S3, locator: "first paragraph ('the only child')"}], how_known: "As the sources record it."}
   languages_of_work: {value: [German, English], certainty: 1.0, cites: [{source: S1, locator: "later life paragraph"}, {source: S2, locator: "Biography"}], how_known: "German papers; English books from Dublin; English learned in childhood."}
-  occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 5–7"}], how_known: "Nobel biography."}
+  occupations: {value: [physicist, "university professor", "institute director"], certainty: 0.7, cites: [{source: S3, locator: "paragraphs 5–7"}], how_known: "Nobel biography."}
 
 contribution:
   fields: {value: ["theoretical physics", "quantum mechanics", "statistical mechanics", "colour theory", "theoretical biology", "philosophy"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; later life"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Wave mechanics and the Schrödinger equation", year: "1926", kind: theory, lasting: "the basic equation of non-relativistic quantum mechanics (S1); Nobel Prize 1933, shared with Dirac", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
-    - {value: "Schrödinger's cat thought experiment", year: "1935", kind: "concept or term", lasting: "standard illustration of the measurement problem", certainty: 1.0, cites: [{source: S1, locator: "cat paragraph"}], how_known: "Britannica."}
+    - {value: "Schrödinger's cat thought experiment", year: "1935", kind: "concept or term", lasting: "standard illustration of the measurement problem", certainty: 0.7, cites: [{source: S1, locator: "cat paragraph"}], how_known: "Britannica."}
     - {value: "What is Life? (physics applied to living matter and heredity)", year: "1944", kind: work, lasting: "its influence on biology is often stated but is not given in S1–S3 (gap)", certainty: 0.5, cites: [{source: S3, locator: "paragraph 8"}, {source: S1, locator: "later life"}], how_known: "Both sources name the book; neither states its lasting influence, so 0.5."}
   evidence_of_impact:
     - {value: "Nobel Prize for Physics 1933", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
-    - {value: "The Schrödinger equation", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
+    - {value: "The Schrödinger equation", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
   major_works:
     - {value: "What is Life?", year: 1944, kind: book, certainty: 1.0, cites: [{source: S1, locator: "later life"}, {source: S3, locator: "paragraph 8"}], how_known: "Two sources."}
-    - {value: "Meine Weltansicht (My View of the World)", year: 1961, kind: book, certainty: 1.0, cites: [{source: S1, locator: "later life"}], how_known: "Britannica."}
+    - {value: "Meine Weltansicht (My View of the World)", year: 1961, kind: book, certainty: 0.7, cites: [{source: S1, locator: "later life"}], how_known: "Britannica."}
   honours:
-    - {value: "Nobel Prize for Physics (shared with P. A. M. Dirac)", year: 1933, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
-  definition_fit: {value: "clearly meets", rationale: "Founder of wave mechanics.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
+    - {value: "Nobel Prize for Physics (shared with P. A. M. Dirac)", year: 1933, certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "Founder of wave mechanics.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: TODO, note: "Not settled from the sources read. MacTutor's 'Although he was a Catholic' (S2, Biography) is about the adult in 1933, not his family. A Catholic father and a Lutheran mother are commonly reported but were not found in S1–S5; needs the Autobiographical Sketches in full or Moore's biography."}
@@ -81,12 +82,12 @@ childhood:
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [German, English], certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
+  languages_in_childhood: {value: [German, English], certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1910–1961", certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "Doctorate to death."}
+  working_years: {value: "1910–1961", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Doctorate to death."}
   nominal_affiliations:
     - {value: "Catholic as an adult, per MacTutor ('Although he was a Catholic', 1933); no church practice reported", role: other, certainty: 0.7, cites: [{source: S2, locator: "Biography (1933)"}], how_known: "One reliable source on the adult, so 0.7. It says nothing about his family's church (see childhood.family_religion)."}
   self_described_science_religion_relation:
@@ -215,7 +216,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1926", certainty: 1.0, cites: [{source: S1, locator: "Zürich paragraph ('a six-month period in 1926')"}], how_known: "Britannica."}
+  major_work_period: {value: "1926", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph ('a six-month period in 1926')"}], how_known: "Britannica."}
   age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 ('during the first half of 1926')"}], how_known: "Born August 1887; the wave equation in the first half of 1926, so 38. Britannica says 'at the age of 39' (flag)."}
   first_evidence_of_lio_type_views: {value: "What is Life? epilogue: the body as a mechanism under the Laws of Nature, and ATHMAN = BRAHMAN", year: 1944, certainty: 0.7, cites: [{source: S4, locator: "Epilogue, pp. 86–87"}], how_known: "Earliest verified statement in the sources read. An earlier date (the first essay of My View of the World is often dated 1925) was not checked; see open questions."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "Verified statements are from 1944 and 1958, after the 1926 work. If an earlier essay (often dated 1925, not checked) holds the same view, the answer would be 'before major work'.", certainty: 0.5, cites: [{source: S4, locator: "Epilogue"}, {source: S1, locator: "later life"}], how_known: "Coder's reading of dates."}
@@ -232,10 +233,10 @@ lane_b:
 institutions:
   - {value: "University of Zürich", role: "professor", years: "1921–1927", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
   - {value: "University of Berlin", role: "professor (Planck's successor)", years: "1927–1933", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Berlin paragraph"}, {source: S3, locator: "paragraph 7"}], how_known: "Two sources."}
-  - {value: "Dublin Institute for Advanced Studies", role: "director, School for Theoretical Physics", years: "1940–1955", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "Berlin paragraph"}, {source: S3, locator: "paragraph 7"}], how_known: "Two sources."}
+  - {value: "Dublin Institute for Advanced Studies", role: "director, School for Theoretical Physics", years: "1940–1955", kind: "research institute", certainty: 1.0, cites: [{source: S1, locator: "Berlin paragraph"}, {source: S3, locator: "paragraph 7"}], how_known: "Two sources."}
 collaborators:
   - {value: "Fritz Hasenöhrl", relation: teacher, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraph 4"}], how_known: "Two sources."}
-  - {value: "Max Planck", roster_id: planck-max, relation: other, note: "succeeded him in Berlin", certainty: 1.0, cites: [{source: S1, locator: "Berlin paragraph"}], how_known: "Britannica."}
+  - {value: "Max Planck", roster_id: planck-max, relation: other, note: "succeeded him in Berlin", certainty: 0.7, cites: [{source: S1, locator: "Berlin paragraph"}], how_known: "Britannica."}
   - {value: "Arthur Schopenhauer", relation: "influenced by", note: "named in the epilogue as a Western voice for the one-self view", certainty: 0.7, cites: [{source: S4, locator: "Epilogue, p. 88"}], how_known: "His own mention."}
 
 review:

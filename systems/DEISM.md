@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight systems run for Jason)"
   model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix: 'providence' is not in the Britannica text; the intervention field, the B_cause rationale and the data quality flag now quote Britannica on prophetic revelation and cite Clarke's taxonomy (SEP Clarke §4.5) for providential action. No score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided (option 1): E_scope rescored on the world's order. Value and certainty unchanged (3 at 0.7); the basis is now non-intervention, no miracles and no petition, with providential action as the limit, not universal natural religion. Natural religion open to all noted under C_ledger (C score unchanged). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P27 (stage 3 lens audit): do_not_use_when now says explicitly that someone who does not reject revelation as a source of truth (accepts it or declines to contest it) is not DEISM. No score changed."}
 identity:
   id: DEISM
   v7_1_number: 31
@@ -97,7 +98,7 @@ revised_rubric:
   X: {score: TODO, rationale: ""}
 coding_guidance:
   use_when: "The person's own writing affirms a creator known by reason (usually from design or order) and rejects revelation, miracles and church authority as sources of religious knowledge (S1 introduction; S2 §2.3). Under the v8 test deists usually pass: the deist God is a transcendent person (A low) who does not intervene (B high), so DEISM people are mid-basin theists, not an exclusion (METHOD §1.1; CODING_GUIDE)."
-  do_not_use_when: "The person accepts revelation and miracles but is mainly working out natural theology (Newton, Clarke, Locke were not deists per S2 §2.3; Britannica calls the 18th-century deist Newton a transmutation contrary to his writings): CHRIST or CLASS_THEISM. God is identified with the universe: PANDEI or PANT. The line with atheism is blurred (French philosophes): check ATHE. The label deist was often applied by opponents (S1), so do not code from a hostile label."
+  do_not_use_when: "The person does not reject revelation as a source of truth (accepts it, or declines to contest it): not DEISM (decision P27, 2026-10-02). The person accepts revelation and miracles but is mainly working out natural theology (Newton, Clarke, Locke were not deists per S2 §2.3; Britannica calls the 18th-century deist Newton a transmutation contrary to his writings): CHRIST or CLASS_THEISM. God is identified with the universe: PANDEI or PANT. The line with atheism is blurred (French philosophes): check ATHE. The label deist was often applied by opponents (S1), so do not code from a hostile label."
   neighbors:
     - {code: CLTHEI, relation: "contrast case"}
     - {code: CLASS_THEISM, relation: "neighbor (easily confused)"}
@@ -173,3 +174,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-01 (overnight run): read Britannica "Deism" (D. A. Pailin; two pages) and SEP "Enlightenment", "Samuel Clarke", "God and Other Ultimates", "Religion and Science", "Thomas Paine", "Thomas Jefferson" and "Anthony Collins". SEP has no general Deism entry and IEP's deism page returned 404. AI-generated question boxes on Britannica pages were not used. All quotations were checked word for word against the fetched page text with a script.
+- 2026-10-02: decision P27: do_not_use_when states the revelation test explicitly.

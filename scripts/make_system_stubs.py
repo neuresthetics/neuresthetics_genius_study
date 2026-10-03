@@ -96,6 +96,21 @@ NEIGHBORS = {
                ("JUDA", "neighbor (easily confused)", "Kabbalah defaults to JUDA (S6)")],
 }
 
+# Late changes by decision, dated after the P7 note (docs/OPEN_DECISIONS.md P22, 2026-10-02). Each entry sets
+# use_when (and optionally do_not_use_when) and adds one change_log entry and one record_version step.
+LATE_DATE = "2026-10-02"
+LATE_GUIDANCE = {
+    "RATN": ("v8's pick (decision P22, 2026-10-02; one-line clarification against CLASS_THEISM, the rest of the stub "
+             "is not yet sourced): use RATN when the person's own writing makes reason working from innate ideas or "
+             "first principles the main route to God and the world, and argues to God from the idea of God or from "
+             "reason alone (ontological or idea-based arguments); a person whose main argument for God runs from the "
+             "world, a posteriori (first cause, contingency, design), to the simple, immutable God of the "
+             "Aristotelian-Thomistic-Falsafa line is CLASS_THEISM.", None),
+}
+LATE_LOG = {
+    "RATN": "Decision P22 (stage 3 lens audit): one-line use_when against CLASS_THEISM, marked as v8's pick.",
+}
+
 
 def q(s):
     """YAML double-quoted scalar."""
@@ -147,6 +162,11 @@ def stub(row, note, rules):
     if code in DECISION_GUIDANCE:
         extra, dont = DECISION_GUIDANCE[code]
         use_when = extra if use_when == "TODO" else f"{use_when} {extra}"
+    if code in LATE_GUIDANCE:
+        extra, late_dont = LATE_GUIDANCE[code]
+        use_when = extra if use_when == "TODO" else f"{use_when} {extra}"
+        if late_dont:
+            dont = late_dont
     neigh = NEIGHBORS.get(code, [])
     L = []
     P = L.append
@@ -154,7 +174,7 @@ def stub(row, note, rules):
     P("record:")
     P("  record_type: system")
     P('  schema_version: "1.1"')
-    P(f"  record_version: {(2 if code in DECISION_LOG else 1) + 1}")  # +1 for the P7 note
+    P(f"  record_version: {(2 if code in DECISION_LOG else 1) + 1 + (1 if code in LATE_LOG else 0)}")  # +1 for the P7 note, +1 for a late decision
     P("  review_status: stub")
     P("  collected_by: scripts/make_system_stubs.py")
     P("  model_used: none (ported from the v7.1 data book)")
@@ -165,6 +185,8 @@ def stub(row, note, rules):
     if code in DECISION_LOG:
         P(f"    - {{date: {TODAY}, by: scripts/make_system_stubs.py, summary: {q(DECISION_LOG[code])}}}")
     P(f"    - {{date: {P7_DATE}, by: scripts/make_system_stubs.py, summary: {q(P7_LOG)}}}")
+    if code in LATE_LOG:
+        P(f"    - {{date: {LATE_DATE}, by: scripts/make_system_stubs.py, summary: {q(LATE_LOG[code])}}}")
     P("identity:")
     P(f"  id: {code}")
     P(f"  v7_1_number: {int(row['#'])}")
@@ -264,6 +286,8 @@ def stub(row, note, rules):
     P("")
     P(f"- {TODAY}: stub created by `scripts/make_system_stubs.py`.")
     P(f"- {P7_DATE}: E_scope note added for decision P7 (score E on the world's order when the stub is filled).")
+    if code in LATE_LOG:
+        P(f"- {LATE_DATE}: {LATE_LOG[code]}")
     return "\n".join(L) + "\n"
 
 

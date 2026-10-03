@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 7
+  schema_version: "1.3"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the letters already cited (order 'in everything', S6 1961; everything has a cause, S7; the same psychic capacities in every human, S6 1952). No petition, miracle or favour for a group appears in what was read, but the letters are few, so 0.5 with a gap note. Religions versus religion (Wang) is a community question, which P7 sends to C. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit run 3 (#47): the Todorov quotation (S7, note 14) now keeps the source's closing parenthesis, '(without the support of faith ...) to apprehend', in the statement and in the D_authority rationale; checked against the arXiv text. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; B needs a statement about nature (P16); quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: godel-kurt
@@ -29,8 +30,8 @@ identity:
     status: core
     field: mathematics
     field_bucket: mathematics
-  full_name: {value: "Kurt Friedrich Gödel", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "SEP gives the full name; Britannica and MacTutor give Kurt Gödel."}
-  native_name: {value: "Kurt Gödel (German)", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts ('also spelled: Goedel')"}], how_known: "German was his native language (S7). Britannica gives the spelling Goedel."}
+  full_name: {value: "Kurt Friedrich Gödel", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "SEP gives the full name; Britannica and MacTutor give Kurt Gödel."}
+  native_name: {value: "Kurt Gödel (German)", certainty: 0.7, cites: [{source: S2, locator: "Quick Facts ('also spelled: Goedel')"}], how_known: "German was his native language (S7). Britannica gives the spelling Goedel."}
   aliases:
     - {name: "Gödel-Kurt", kind: "roster alias"}
     - {name: "Kurt-Gödel", kind: "roster alias"}
@@ -60,7 +61,7 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "From first_lasting_contribution_year under the era buckets (decision P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "§1 ('now Brno in the Czech Republic')"}], how_known: "Czechia is Eastern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "Biography"}], how_known: "The completeness and incompleteness theorems (1929–1931) and the consistency of the axiom of choice and the continuum hypothesis (1935–1937) were done at the University of Vienna (Austria is Western Europe in regions.csv). From 1940 he worked at the Institute for Advanced Study in Princeton (North America), where the rotating-universe solutions and all the philosophical work were done. Two regions, so 0.7.", alternatives: [{value: "North America", cites: [{source: S1, locator: "§1"}, {source: S4, locator: "Visits"}], note: "Princeton, 1940–1978; also visits in 1933–34, 1935 and 1938."}]}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "As the sources record it."}
   languages_of_work: {value: [German, English], certainty: 1.0, cites: [{source: S1, locator: "§1; bibliography"}, {source: S3, locator: "Biography"}], how_known: "The 1929–1931 papers are in German; the Princeton papers and lectures in English. His notebooks are in Gabelsberger German shorthand (S7)."}
   occupations:
     value: [mathematician, logician, philosopher, "university lecturer (Privatdozent)", "research professor"]
@@ -77,7 +78,7 @@ contribution:
     - {value: "Rotating-universe solutions of Einstein's field equations, allowing closed time-like paths", year: "1949", kind: discovery, lasting: "a standard example in general relativity (S7)", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S7, locator: "Sect. 2"}], how_known: "SEP dates the paper; Todorov describes the result."}
     - {value: "Dialectica interpretation of intuitionistic arithmetic", year: "1958", kind: method, lasting: "named after the journal; used in proof theory (S1)", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "One source."}
   evidence_of_impact:
-    - {value: "SEP: one of the principal founders of the modern, metamathematical era in mathematical logic", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "SEP (Kennedy)."}
+    - {value: "SEP: one of the principal founders of the modern, metamathematical era in mathematical logic", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "SEP (Kennedy)."}
     - {value: "IAS calls him the foremost mathematical logician of the twentieth century", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S4, locator: "description"}], how_known: "Institutional page of his own institute."}
     - {value: "Einstein Award (1951) and National Medal of Science (1974)", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S3, locator: "Biography"}, {source: S4, locator: "Honors"}], how_known: "Two sources."}
   major_works:
@@ -104,7 +105,7 @@ childhood:
     - {value: "One older brother, Rudolf (1902–1994), who studied medicine in Vienna and became a radiologist", role: sibling, certainty: 1.0, cites: [{source: S3, locator: "Biography"}, {source: S7, locator: "Sect. 1"}], how_known: "Two sources; dates from Todorov."}
   household_circumstances: {value: "Well-off family of a textile-firm director in Brno; after the father's death in 1929 the mother bought a large flat in Vienna, where both sons lived with her", certainty: 1.0, cites: [{source: S1, locator: "§1 ('The family was well off')"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
   schooling:
-    - {value: "Primary school, Brno", stage: other, institution: "primary school, Brno", years: "c. 1912–1916", ages: "c. 6–10", certainty: 0.5, cites: [{source: S1, locator: "§1 ('an exemplary student at primary school')"}], how_known: "SEP names the stage; the years and ages are the coder's estimate."}
+    - {value: "Primary school, Brno", stage: "elementary school", institution: "primary school, Brno", years: "c. 1912–1916", ages: "c. 6–10", certainty: 0.5, cites: [{source: S1, locator: "§1 ('an exemplary student at primary school')"}], how_known: "SEP names the stage; the years and ages are the coder's estimate."}
     - {value: "German-language Realgymnasium in Brno; top marks in Latin, excelled in languages and religion (or theology); by the final years he had mastered university mathematics", stage: "grammar or secondary school", institution: "Realgymnasium, Brno", years: "c. 1916–1924", ages: "c. 10–18", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "Biography (brother Rudolf's account)"}, {source: S7, locator: "Sect. 1"}], how_known: "Three sources. SEP and Todorov give 1924 for leaving; MacTutor gives 1923 (see flags)."}
     - {value: "University of Vienna: began in physics, turned to mathematics after Furtwängler's lectures; learned logic from Hahn and Carnap; Dr. phil. in mathematics under Hahn", stage: university, institution: "University of Vienna", years: "1924–1929", ages: "18–23", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "Biography"}, {source: S7, locator: "Sect. 1"}], how_known: "Three sources. Start year 1923 in MacTutor; degree year 1930 on the IAS page (see flags)."}
   early_mathematics: {value: "advanced mathematics", ages: "c. 16–18", description: "His brother Rudolf said that he 'had mastered university mathematics by his final Gymnasium years'. Todorov, citing Dawson, says his only mark below the top one at school was in mathematics.", certainty: 0.7, cites: [{source: S3, locator: "Biography"}, {source: S7, locator: "Sect. 1"}], how_known: "His brother's account through MacTutor; Todorov's detail points the other way on marks (see flags)."}
@@ -122,7 +123,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1929–1978", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "From his dissertation to his death."}
+  working_years: {value: "1929–1978", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "From his dissertation to his death."}
   nominal_affiliations:
     - {value: "Baptized in a Lutheran congregation; no church membership is reported for his adult life in the sources read", years: "from birth", role: "baptized member", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1 ('baptised in a Lutheran congregation')"}], how_known: "One reliable, undisputed source for the baptism (Todorov), so 0.7 (raised from 0.5 after the lens audit). The Grandjean questionnaire's answer on religion (Collected Works IV) was not read directly."}
   self_described_science_religion_relation:
@@ -157,7 +158,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S6, locator: "letters of 23 July 1961 and 20 September 1952"}, {source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}, {source: S1, locator: "§3.1"}]
       how_known: "Several private letters over ten years, consistent with each other and with the private list quoted by SEP, so 0.7."
-      rationale: "Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961). Everything having a meaning is 'precisely analogous to the principle that everything has a cause on which the whole science rests' (S7, October 1961). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. His work (logic, set theory, relativity) has no exceptions at all, so scoring on his account of nature or on his work gives the same result."
+      rationale: "Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961). Everything having a meaning is 'precisely analogous to the principle that everything has a cause on which the whole science rests' (S7, October 1961). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. The score rests on his statements about the world. Logic and set theory are pure mathematics and do not score B (P16); his rotating-universe solutions in relativity are lawful throughout and agree with 3 or 4."
     C_ledger:
       value: 3
       basis: scholarly_reconstruction
@@ -189,7 +190,7 @@ worldview:
       cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}]
       context: "Answer on religion in the questionnaire the sociologist Burke D. Grandjean sent him in 1974; he filled it in but never returned it. Feferman, editor of the Collected Works, quotes it in indirect form ('he said that his view was …')."
       axes: [A_locus]
-      kind: other
+      kind: "document in own hand"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Collected Works IV prints the questionnaire; not read directly. Wording elsewhere differs slightly."
@@ -245,7 +246,7 @@ worldview:
       cites: [{source: S1, locator: "§3.1 (item of 'My Philosophical Viewpoint', c. 1960)"}]
       context: "One of fourteen points in a list he wrote about 1960, transcribed by Cheryl Dawson and published in Wang 1996, p. 316 (S1)."
       axes: [D_authority]
-      kind: "notebook or diary"
+      kind: "unpublished manuscript"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "SEP's wording; other transcriptions put 'and theology' in braces as a later addition."
@@ -279,7 +280,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1929–1949", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "From the completeness theorem to the rotating-universe solutions."}
+  major_work_period: {value: "1929–1949", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "From the completeness theorem to the rotating-universe solutions."}
   age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S1, locator: "§3 ('at the age of twenty-three he opened his doctoral thesis')"}], how_known: "SEP; matches 1929 and a birth in April 1906."}
   first_evidence_of_lio_type_views: {value: "Letter to his mother arguing that no one can know there is no other world, because we do not know why this world exists or why it is as it is", year: 1950, certainty: 0.5, cites: [{source: S6, locator: "letter of 27 February 1950"}, {source: S5, locator: "Vol. IV section"}], how_known: "Earliest dated religious statement in the sources read. Earlier letters exist but were not read, so 0.5."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The theist and lawful-order statements read date from 1950 on (the questionnaire from 1974 or later). His mathematical realism is said (by him, late) to date from 1925, but that is not an LIO view.", certainty: 0.5, cites: [{source: S6, locator: "letters 1950–1961"}, {source: S5, locator: "Vol. IV section"}], how_known: "Dated private writing; earlier writing not read."}
@@ -296,7 +297,7 @@ lane_b:
 institutions:
   - {value: "University of Vienna", role: "student; Privatdozent", years: "1924–1939", kind: university, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "Biography"}], how_known: "Two sources. The Privatdozentur (1933) was cancelled under the Nazi regime (S1)."}
   - {value: "Vienna Circle (Schlick's group)", role: "attended meetings", years: "c. 1926–1936", kind: other, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letter of 15 August 1946"}], how_known: "SEP and his own letter; years approximate."}
-  - {value: "Institute for Advanced Study, Princeton", role: "visiting member (1933–34, 1935, 1938); member 1940–1953; professor 1953–1976; emeritus", years: "1933–1978", kind: employer, certainty: 1.0, cites: [{source: S4, locator: "Visits"}, {source: S1, locator: "§1"}, {source: S3, locator: "Biography"}], how_known: "IAS page, with SEP and MacTutor (see flags on the permanent-member date)."}
+  - {value: "Institute for Advanced Study, Princeton", role: "visiting member (1933–34, 1935, 1938); member 1940–1953; professor 1953–1976; emeritus", years: "1933–1978", kind: "research institute", certainty: 1.0, cites: [{source: S4, locator: "Visits"}, {source: S1, locator: "§1"}, {source: S3, locator: "Biography"}], how_known: "IAS page, with SEP and MacTutor (see flags on the permanent-member date)."}
   - {value: "University of Notre Dame", role: "visiting lecturer (spring term)", years: "1939", kind: university, certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "MacTutor only."}
 
 collaborators:
@@ -308,7 +309,7 @@ collaborators:
   - {value: "John von Neumann", roster_id: von-neumann-john, relation: other, note: "friend at Princeton", certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "One source."}
   - {value: "Oskar Morgenstern", relation: other, note: "friend at Princeton; diarist of his later years", certainty: 0.7, cites: [{source: S3, locator: "Biography"}, {source: S7, locator: "Sect. 3"}], how_known: "Two sources."}
   - {value: "Gottfried Wilhelm Leibniz", roster_id: leibniz-gottfried-wilhelm, relation: "influenced by", note: "his principal philosophical model; studied intensively 1943–1946", certainty: 1.0, cites: [{source: S1, locator: "§1; §3"}, {source: S5, locator: "Vol. IV section"}], how_known: "Two sources."}
-  - {value: "Edmund Husserl", roster_id: husserl-edmund, relation: "influenced by", note: "phenomenology as a method for exact philosophy", certainty: 1.0, cites: [{source: S1, locator: "§3"}], how_known: "SEP."}
+  - {value: "Edmund Husserl", roster_id: husserl-edmund, relation: "influenced by", note: "phenomenology as a method for exact philosophy", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "SEP."}
   - {value: "Immanuel Kant", roster_id: kant-immanuel, relation: "influenced by", note: "relativity and Kant's idea of time (1949 paper)", certainty: 0.7, cites: [{source: S1, locator: "§3"}, {source: S6, locator: "letter of 7 November 1947"}], how_known: "Two sources."}
   - {value: "Ernst Zermelo", relation: "rival or critic", note: "met at Bad Elster in 1931; felt he had already reached Gödel's result", certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "MacTutor, quoting Taussky-Todd."}
   - {value: "Paul Cohen", relation: influenced, note: "built on Gödel's set-theory work to prove independence in 1963", certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "MacTutor."}

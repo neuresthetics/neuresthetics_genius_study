@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: "1.1"
-  record_version: 2
+  record_version: 3
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
     - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
+    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P22 (stage 3 lens audit): one-line use_when against CLASS_THEISM, marked as v8's pick."}
 identity:
   id: RATN
   v7_1_number: 7
@@ -76,7 +77,7 @@ revised_rubric:
   V: {score: TODO, rationale: ""}
   X: {score: TODO, rationale: ""}
 coding_guidance:
-  use_when: "TODO"
+  use_when: "v8's pick (decision P22, 2026-10-02; one-line clarification against CLASS_THEISM, the rest of the stub is not yet sourced): use RATN when the person's own writing makes reason working from innate ideas or first principles the main route to God and the world, and argues to God from the idea of God or from reason alone (ontological or idea-based arguments); a person whose main argument for God runs from the world, a posteriori (first cause, contingency, design), to the simple, immutable God of the Aristotelian-Thomistic-Falsafa line is CLASS_THEISM."
   do_not_use_when: "TODO"
   neighbors: []
 review:
@@ -127,3 +128,4 @@ None yet.
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
+- 2026-10-02: Decision P22 (stage 3 lens audit): one-line use_when against CLASS_THEISM, marked as v8's pick.

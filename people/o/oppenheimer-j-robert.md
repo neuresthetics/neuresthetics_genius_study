@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Rouzé) and the Institute for Advanced Study's page. Worldview: no statement of his on God or religion was read in a checkable source. His Los Alamos farewell speech (2 November 1945, Atomic Heritage Foundation excerpts) states a faith in the value of science; his 1965 televised interview (interview) recalls the Bhagavad Gita line at Trinity. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub; HINDU rejected). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. His AIP oral-history interviews carry quotation limits and were not used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #164/#165 (run 2): '1965 interview' reworded as an interview recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965; new sources S6 (Paley Center catalogue record T79:0489: NBC, 5 January 1965, producer Fred Freed) and S7 (Wikiquote, a second pointer to the programme); statement date '1965' → '1965-01-05' with the recording date given as unknown (c. 1964); S4 citation, HINDU candidate reason, coder notes and body updated. The words of #165 stay as they are: they follow the audio, with no 'he' before 'takes on' (Wikiquote's 'he' is noted). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: oppenheimer-j-robert
@@ -25,7 +26,7 @@ identity:
     field: physics
     field_bucket: physics
   full_name: {value: "J. Robert Oppenheimer", certainty: 1.0, cites: [{source: S1, locator: "heading"}, {source: S2, locator: "heading"}], how_known: "Two sources; the expansion of 'J.' is not given in the sources read."}
-  native_name: {value: "J. Robert Oppenheimer (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "J. Robert Oppenheimer (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "J-Robert-Oppenheimer", kind: "roster alias"}
     - {name: "Oppenheimer-J-Robert", kind: "roster alias"}
@@ -39,10 +40,10 @@ basics:
     date: {value: "1967-02-18", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "closing paragraphs"}], how_known: "Two sources agree."}
     place: {value: "Princeton, New Jersey", modern_name: "Princeton, New Jersey, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   first_lasting_contribution_year: {value: 1927, certainty: 0.7, cites: [{source: S2, locator: "Göttingen paragraph ('worked with Born on the structure of molecules')"}], how_known: "IAS page: the Born–Oppenheimer work of 1927, the year of his doctorate."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "Göttingen paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
-  region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'; Manhattan Project section"}], how_known: "Berkeley, Caltech, Los Alamos, Princeton."}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S2, locator: "Göttingen paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
+  region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'; Manhattan Project section"}], how_known: "Berkeley, Caltech, Los Alamos, Princeton."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S3, locator: "speech"}, {source: S2, locator: "Reith Lectures"}], how_known: "Speeches and lectures in English."}
   occupations: {value: ["theoretical physicist", "science administrator", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 
@@ -51,11 +52,11 @@ contribution:
   lasting_original_contributions:
     - {value: "Born–Oppenheimer treatment of molecular structure, with Max Born", year: "1927", kind: method, lasting: "standard approximation in molecular physics", certainty: 0.7, cites: [{source: S2, locator: "Göttingen paragraph"}], how_known: "IAS page."}
     - {value: "Work on neutron stars and black holes", year: "1930s", kind: theory, lasting: "described as 'groundbreaking' by Britannica", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education', paragraph 3"}], how_known: "Britannica; years not given on the page."}
-    - {value: "Direction of the Los Alamos Laboratory, which built the first atomic bombs (Trinity test, 16 July 1945)", year: "1943–1945", kind: institution, lasting: "nuclear weapons and the national-laboratory model", certainty: 1.0, cites: [{source: S1, locator: "opening; Manhattan Project section"}], how_known: "Britannica."}
+    - {value: "Direction of the Los Alamos Laboratory, which built the first atomic bombs (Trinity test, 16 July 1945)", year: "1943–1945", kind: institution, lasting: "nuclear weapons and the national-laboratory model", certainty: 0.7, cites: [{source: S1, locator: "opening; Manhattan Project section"}], how_known: "Britannica."}
   evidence_of_impact:
     - {value: "Trained 'a whole generation of U.S. physicists'", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education', paragraph 3"}], how_known: "Britannica."}
   major_works:
-    - {value: "Science and the Common Understanding (BBC Reith Lectures)", year: 1953, kind: "lecture series", certainty: 1.0, cites: [{source: S2, locator: "Reith Lectures sentence"}], how_known: "IAS page."}
+    - {value: "Science and the Common Understanding (BBC Reith Lectures)", year: 1953, kind: "lecture series", certainty: 0.7, cites: [{source: S2, locator: "Reith Lectures sentence"}], how_known: "IAS page."}
   honours:
     - {value: "Enrico Fermi Award of the Atomic Energy Commission", year: 1963, certainty: 1.0, cites: [{source: S1, locator: "'Oppenheimer's legacy'"}, {source: S2, locator: "closing paragraphs"}], how_known: "Two sources."}
   definition_fit: {value: "arguable", rationale: "A leading theorist (Born–Oppenheimer, neutron stars and black holes) and teacher; his fame rests mostly on directing Los Alamos, an administrative role.", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life and education'"}], how_known: "Coder's judgement from Britannica."}
@@ -64,7 +65,7 @@ childhood:
   family_religion: {value: TODO, note: "Not stated in the sources read. He attended the Ethical Culture School (S2), whose religious or non-religious character for the family is not described there."}
   family_religious_practice: {value: TODO}
   parents_and_household:
-    - {value: "Father, a German immigrant who made his fortune importing textiles in New York; died 1937, leaving Robert a fortune", role: father, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'; Manhattan Project section, paragraph 1"}], how_known: "Britannica (his name is not given on the page read)."}
+    - {value: "Father, a German immigrant who made his fortune importing textiles in New York; died 1937, leaving Robert a fortune", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'; Manhattan Project section, paragraph 1"}], how_known: "Britannica (his name is not given on the page read)."}
   household_circumstances: {value: "Wealthy New York family", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   schooling:
     - {value: "Ethical Culture School of New York (graduated top of his class, 1921)", stage: "grammar or secondary school", years: "–1921", certainty: 0.7, cites: [{source: S2, locator: "education paragraph"}], how_known: "IAS page."}
@@ -80,7 +81,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1925–1967", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education' to 'Oppenheimer's legacy'"}], how_known: "Research from 1925 to death."}
+  working_years: {value: "1925–1967", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education' to 'Oppenheimer's legacy'"}], how_known: "Research from 1925 to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by him on science and religion was read in a checkable source. The 1945 farewell speech speaks of 'our faith' in the value of science (S3), which is about the worth of knowledge, not about religion."}
   primary_system:
@@ -93,18 +94,18 @@ worldview:
     - {code: ETHCUL, reason: "Leading candidate, not coded (BELOW_THRESHOLD): schooled at the Ethical Culture School (S2); his adult adherence to Ethical Culture is not shown in what was read. Stub system file (flag).", cites: [{source: S2, locator: "education paragraph"}]}
     - {code: HINDU, reason: "Rejected: he studied Eastern philosophy at Harvard (S1) and in a television interview (interview; recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965, S6) recalled 'the line from the Hindu scripture, the Bhagavad-Gita' at the Trinity test (S4); a literary recollection, not a profession of Hindu belief. Stub system file (flag).", cites: [{source: S1, locator: "'Early life and education'"}, {source: S4, locator: "clip transcript (interview)"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
+    A_locus: {value: UNKNOWN, how_known: "No statement placing or denying God was read."}
     B_cause:
       value: 4
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "'Early life and education', paragraph 3"}, {source: S3, locator: "speech, 'organic necessity' paragraph"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi and Dirac). No statement of his own about miracles read, so 0.5."
       rationale: "Scored on his account of nature (P6). His physics (energy processes of subatomic particles, neutron stars and black holes, S1) is lawful quantum and relativistic theory, and he describes the scientist's belief 'that it is good to find out how the world works' (S3). No miracle, petition or exemption in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation in the sources read.", note: "The farewell speech's 'faith' in science (S3) is about the value of knowledge, not observation against revelation."}
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "The farewell speech's 'faith' in science (S3) is about the value of knowledge, not observation against revelation."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
+  mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19)."}
   statements:
     - text: "If you are a scientist you believe that it is good to find out how the world works; that it is good to find out what the realities are; that it is good to turn over to mankind at large the greatest possible power to control the world and to deal with it according to its lights and its values."
       cites: [{source: S3, locator: "speech, 'organic necessity' paragraph"}]
@@ -150,9 +151,9 @@ lane_b:
 
 institutions:
   - {value: "University of California, Berkeley, and California Institute of Technology", role: "professor of physics", years: "1929–1943", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education', paragraph 2"}], how_known: "Britannica; years are the coder's reading (after 1927 visits to Leiden and Zürich; to Los Alamos 1943)."}
-  - {value: "Los Alamos Laboratory (Manhattan Project)", role: director, years: "1943–1945", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "opening; Manhattan Project section"}], how_known: "Britannica."}
-  - {value: "General Advisory Committee of the Atomic Energy Commission", role: chairman, years: "1947–1952", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "Manhattan Project section, last paragraph"}], how_known: "Britannica."}
-  - {value: "Institute for Advanced Study, Princeton", role: director, years: "1947–1966", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
+  - {value: "Los Alamos Laboratory (Manhattan Project)", role: director, years: "1943–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "opening; Manhattan Project section"}], how_known: "Britannica."}
+  - {value: "General Advisory Committee of the Atomic Energy Commission", role: chairman, years: "1947–1952", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "Manhattan Project section, last paragraph"}], how_known: "Britannica."}
+  - {value: "Institute for Advanced Study, Princeton", role: director, years: "1947–1966", kind: "research institute", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 collaborators:
   - {value: "Max Born", roster_id: born-max, relation: teacher, note: "doctoral work at Göttingen; Born–Oppenheimer (1927)", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education', paragraph 2"}, {source: S2, locator: "Göttingen paragraph"}], how_known: "Two sources."}
   - {value: "Niels Bohr", roster_id: bohr-niels, relation: "influenced by", note: "met and studied with him in Göttingen", certainty: 0.7, cites: [{source: S2, locator: "Göttingen paragraph"}, {source: S1, locator: "'Early life and education', paragraph 2"}], how_known: "Two sources (Britannica: 'met')."}
@@ -244,7 +245,7 @@ sources:
 
 ## Summary
 
-J. Robert Oppenheimer (1904–1967), American theoretical physicist, worked with Born on molecular structure, did early work on neutron stars and black holes, directed Los Alamos (1943–45) and then the Institute for Advanced Study (1947–66) [S1; S2]. No statement of his on God or religion was read in a checkable source. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub). B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold.
+J. Robert Oppenheimer (1904–1967), American theoretical physicist, worked with Born on molecular structure, did early work on neutron stars and black holes, directed Los Alamos (1943–45) and then the Institute for Advanced Study (1947–66) [S1; S2]. No statement of his on God or religion was read in a checkable source. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub). B 4 at 0.5 from the working science; A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
 
 ## Life and work
 

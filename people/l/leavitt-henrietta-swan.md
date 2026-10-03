@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and Solon I. Bailey's obituary (Popular Astronomy 30, 1922, pp. 197–199), read in the NASA ADS page scan. No writing of hers on religion was found; Bailey, a colleague, describes her as 'deeply conscientious and sincere in her attachment to her religion and church' and names her father as the Rev. George Roswell Leavitt. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #109 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 (church attachment is never a code on its own) and §7 (another person's description is not her words). Decision P12 recheck: the variable-star item '1900s–1921' → 'by 1921' (sources give totals only), so it does not set the year; first_lasting_contribution_year stays 1912, with a flag that a dated source could move it earlier. No coded value changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: leavitt-henrietta-swan
@@ -25,7 +26,7 @@ identity:
     field: astronomy
     field_bucket: astronomy
   full_name: {value: "Henrietta Swan Leavitt", certainty: 1.0, cites: [{source: S1, locator: "heading"}, {source: S2, locator: "p. 197, title"}], how_known: "Two sources."}
-  native_name: {value: "Henrietta Swan Leavitt (English)", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
+  native_name: {value: "Henrietta Swan Leavitt (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "Henrietta-Leavitt", kind: "roster alias"}
     - {name: "Leavitt-Henrietta Swan", kind: "roster alias"}
@@ -40,9 +41,9 @@ basics:
   first_lasting_contribution_year: {value: 1912, certainty: 1.0, cites: [{source: S1, locator: "'Leavitt's outstanding achievement was her discovery in 1912'"}, {source: S2, locator: "p. 198 ('the important law was derived')"}], how_known: "Period–luminosity relation for Cepheid variables, the earliest dated listed contribution (decisions P12, P13). The variable-star discoveries ('by 1921') have no dated start in the sources read; a source dating her first discoveries before 1912 would move the year earlier."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
-  region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Harvard College Observatory."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Harvard College Observatory."}
   sex_as_recorded: {value: "female", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "p. 197"}], how_known: "As the sources record it."}
-  languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "p. 198 (Harvard Annals and Circulars)"}], how_known: "Published in the Harvard Observatory's English series."}
+  languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "p. 198 (Harvard Annals and Circulars)"}], how_known: "Published in the Harvard Observatory's English series."}
   occupations: {value: ["astronomer", "head of photographic stellar photometry, Harvard College Observatory"], certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–2"}, {source: S2, locator: "p. 197"}], how_known: "Two sources."}
 
 contribution:
@@ -52,11 +53,11 @@ contribution:
     - {value: "North Polar Sequence and standard photographic magnitudes, adopted for the Astrographic Map of the Sky", year: "1912–1917", kind: method, lasting: "in general use until photoelectric photometry", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 3–4"}, {source: S2, locator: "pp. 197–198"}], how_known: "Two sources."}
     - {value: "Discovery of about 2,400 variable stars and 4 novae", year: "by 1921", kind: discovery, lasting: "more than half of the variables known by 1930", certainty: 1.0, cites: [{source: S1, locator: "paragraph 4"}, {source: S2, locator: "p. 198"}], how_known: "Two sources give the totals by her death; neither dates her first discoveries, so the item has no start year and does not set first_lasting_contribution_year (decision P12). Was dated '1900s–1921' until the batch 4 lens audit."}
   evidence_of_impact:
-    - {value: "Hubble used her relation in 1924 for the first distance to a galaxy beyond the Milky Way (Andromeda)", kind: "assessment by a later major figure", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
+    - {value: "Hubble used her relation in 1924 for the first distance to a galaxy beyond the Milky Way (Andromeda)", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
   major_works:
     - {value: "The North Polar Sequence (Annals of the Harvard College Observatory 71, no. 3)", year: 1917, kind: "paper or paper series", certainty: 0.7, cites: [{source: S2, locator: "pp. 197–198"}, {source: S1, locator: "paragraph 3 ('published in 1912 and 1917')"}], how_known: "Bailey gives Annals 71, No. 3; year from Britannica."}
   honours: []
-  definition_fit: {value: "clearly meets", rationale: "The period–luminosity relation made the cosmic distance scale possible.", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
+  definition_fit: {value: "clearly meets", rationale: "The period–luminosity relation made the cosmic distance scale possible.", certainty: 0.7, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
 
 childhood:
   family_religion: {value: "Protestant minister's family (father the Rev. George Roswell Leavitt); Puritan ancestry", certainty: 0.7, cites: [{source: S2, locator: "p. 197"}], how_known: "Bailey's obituary; the denomination is not named there."}
@@ -73,12 +74,12 @@ childhood:
     - {value: "Interest in astronomy aroused in her senior year at college", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Britannica."}
   key_early_reading: []
   childhood_mentors: []
-  languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "p. 197"}], how_known: "New England family."}
+  languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "p. 197"}], how_known: "New England family."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1895–1921", certainty: 1.0, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Volunteer at the Harvard Observatory to death."}
+  working_years: {value: "1895–1921", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Volunteer at the Harvard Observatory to death."}
   nominal_affiliations:
     - {value: "Church member (denomination not named): 'deeply conscientious and sincere in her attachment to her religion and church'", years: "–1921", role: "member", certainty: 0.7, cites: [{source: S2, locator: "p. 197"}], how_known: "A colleague's obituary (one source)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No writing of hers on science and religion was found."}
@@ -91,17 +92,17 @@ worldview:
   candidate_codes_considered:
     - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): minister's daughter, sincere church attachment as reported by Bailey; no statement of her own read.", cites: [{source: S2, locator: "p. 197"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read.", note: "Stays BELOW_THRESHOLD (P19): her colleague Solon Bailey's memorial sketch of her church attachment is another person's report, which bears on the point but cannot score it."}
     B_cause:
       value: 4
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "Cepheid paragraph"}, {source: S2, locator: "p. 198"}]
       how_known: "Coder's reading of her working science, as P6 directs (same treatment as Fermi and Dirac). No statement of hers about miracles read, so 0.5."
       rationale: "Scored on her account of nature (P6). Her work found that a Cepheid's period 'is highly regular and is determined by the actual luminosity of the star' (S1), a law derived from measured cases (S2, p. 198) that others then applied to stars everywhere. No miracle, petition or exemption in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation in the sources read."}
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
   statements: []
   changes_over_life: []
@@ -136,7 +137,7 @@ collaborators:
   - {value: "Edward C. Pickering", relation: "mentor or employer", note: "observatory director; she was 'closely associated' with him for the rest of her life", certainty: 1.0, cites: [{source: S2, locator: "p. 197"}, {source: S1, locator: "paragraph 1"}], how_known: "Two sources."}
   - {value: "Annie Jump Cannon", roster_id: cannon-annie-jump, relation: collaborator, note: "fellow staff member on the brightness project", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Britannica."}
   - {value: "Williamina Fleming", relation: collaborator, note: "older colleague on the same project", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Britannica."}
-  - {value: "Edwin Hubble", roster_id: hubble-edwin, relation: influenced, note: "used her relation for the Andromeda distance (1924)", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
+  - {value: "Edwin Hubble", roster_id: hubble-edwin, relation: influenced, note: "used her relation for the Andromeda distance (1924)", certainty: 0.7, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3: DeepSeek, Gemini, GPT).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 179"}], how_known: "Study roster."}
@@ -184,7 +185,7 @@ sources:
 
 ## Summary
 
-Henrietta Swan Leavitt (1868–1921), American astronomer at the Harvard College Observatory, discovered the period–luminosity relation of Cepheid variables (1912) and set standard photographic magnitudes [S1; S2]. No writing of hers on religion was found; her colleague Solon Bailey wrote that she was "deeply conscientious and sincere in her attachment to her religion and church" [S2, p. 197]. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 at 0.5 from the working science; A, C, D, E below threshold; mid_basin below threshold.
+Henrietta Swan Leavitt (1868–1921), American astronomer at the Harvard College Observatory, discovered the period–luminosity relation of Cepheid variables (1912) and set standard photographic magnitudes [S1; S2]. No writing of hers on religion was found; her colleague Solon Bailey wrote that she was "deeply conscientious and sincere in her attachment to her religion and church" [S2, p. 197]. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 at 0.5 from the working science; A and E below threshold, C and D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 

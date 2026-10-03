@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 4
+  schema_version: "1.3"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #108: primary_system AGNOS (0.5) → BELOW_THRESHOLD, candidates AGNOS and ATHE; the AGNOS choice rested on the absence of a denial of God, and AIP p. 57 ('liberal freethinkers like Marie and her friends') fits either code. Finding #112: D_authority 4 (0.5) → BELOW_THRESHOLD (scored from absence; same as Fermi). Finding #126: the p. 77 'nothingness' line is about obscurity, not death; C_ledger tag and the reliance in primary_system and C removed. Finding #120: 1898 locator AIP p. 36, not p. 22. Eve Curie page numbers confirmed against the scans; the 'one page either way' caveat is removed and the archive.org image-index offset is noted. mid_basin unchanged (BELOW_THRESHOLD). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S3 (Project Gutenberg text of Pierre Curie, 1923) is an unofficial copy. Checked it against S7, the Phillips Academy library scan of the 1923 Macmillan edition (Internet Archive). Every quotation and every S3 fact used by the eleven certainty-1.0 fields that cite S3 was found word for word: native_name, birth date, family_religion, father, household_circumstances, early_science_exposure, childhood_mentors, notable_events, nominal_affiliations, ethnic_or_communal_heritage, religious_heritage_by_birth. Added S7 cites with printed page numbers to those fields and to the two S3 quotations; the two quotations' verified_against goes from primary transcription to primary facsimile. All stay at 1.0. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: curie-marie
@@ -44,7 +45,7 @@ basics:
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph ('Warsaw, Congress Kingdom of Poland')"}], how_known: "Poland is Eastern Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 1–2"}], how_known: "All the lasting work was done in Paris (France, Western Europe)."}
-  sex_as_recorded: {value: "female", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "As the sources record it."}
   languages_of_work: {value: [French, Polish], certainty: 0.7, cites: [{source: S2, locator: "paragraph 5 (French titles of her books)"}, {source: S1, locator: "'Early life'"}], how_known: "She published in French; Polish was her first language. Her own Autobiographical Notes appeared in English (S3), possibly through a translator."}
   occupations: {value: [physicist, chemist, "university professor", "laboratory director"], certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}, {source: S1, locator: "opening paragraph"}], how_known: "Two sources."}
 
@@ -55,15 +56,15 @@ contribution:
     - {value: "Showed that radioactivity is an atomic property (thorium also radioactive; activity of pitchblende above that of its uranium) and named it 'radioactivity'", year: "1898", kind: discovery, lasting: "the concept and the term", certainty: 0.7, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "Britannica; the atomic-property framing is in S5 but was not quote-checked here."}
     - {value: "Isolation of radium and methods for separating it from residues", year: "1902–1910", kind: method, lasting: "1911 Nobel Prize in Chemistry; medical radium supply", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "Two sources."}
   evidence_of_impact:
-    - {value: "First woman to win a Nobel Prize and only woman to win in two different fields", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
+    - {value: "First woman to win a Nobel Prize and only woman to win in two different fields", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Britannica."}
   major_works:
     - {value: "Recherches sur les substances radioactives (doctoral thesis)", year: 1903, kind: book, certainty: 0.7, cites: [{source: S2, locator: "paragraph 5 (dated 1904)"}, {source: S1, locator: "'Move to Paris' (doctorate June 1903)"}], how_known: "S2 gives 1904 for the published book; S1 gives the June 1903 doctorate."}
-    - {value: "Traité de radioactivité", year: 1910, kind: book, certainty: 1.0, cites: [{source: S2, locator: "paragraph 5"}], how_known: "Nobel biography."}
+    - {value: "Traité de radioactivité", year: 1910, kind: book, certainty: 0.7, cites: [{source: S2, locator: "paragraph 5"}], how_known: "Nobel biography."}
   honours:
     - {value: "Nobel Prize in Physics (shared with Pierre Curie and Henri Becquerel)", year: 1903, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
     - {value: "Davy Medal of the Royal Society (with Pierre Curie)", year: 1903, certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
     - {value: "Nobel Prize in Chemistry", year: 1911, certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
-  definition_fit: {value: "clearly meets", rationale: "Discovered two elements and founded the study of radioactivity.", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "Discovered two elements and founded the study of radioactivity.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Catholic", certainty: 1.0, cites: [{source: S3, locator: "ch. IV, footnote 6; Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 73 n. 1; p. 157"}, {source: S4, locator: "p. 51"}], how_known: "Her own statement ('my parents were both Catholics') and her daughter's biography."}
@@ -74,7 +75,7 @@ childhood:
   household_circumstances: {value: "Five children; the eldest daughter Zosia died at fourteen and the mother soon after; the father lost his savings", certainty: 1.0, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}, {source: S7, locator: "p. 157"}, {source: S1, locator: "'Early life'"}], how_known: "Two sources."}
   schooling:
     - {value: "Warsaw schools, including Mlle Sikorska's private school; gold medal at the Russian lycée at 16", stage: "grammar or secondary school", certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}, {source: S4, locator: "p. 16"}], how_known: "Two sources."}
-    - {value: "Clandestine Polish 'free university'", stage: other, certainty: 1.0, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
+    - {value: "Clandestine Polish 'free university'", stage: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
     - {value: "Sorbonne: licence in physical sciences (1893, first) and mathematical sciences (1894, second)", stage: university, years: "1891–1894", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
   early_mathematics: {value: "other", note: "'I learned easily mathematics and physics, as far as these sciences were taken in consideration in the school' (S3)", certainty: 0.7, cites: [{source: S3, locator: "Autobiographical Notes, ch. I"}], how_known: "Her own account; level not stated."}
   early_geometric_style_reasoning: {value: TODO}
@@ -116,8 +117,8 @@ worldview:
       cites: [{source: S3, locator: "ch. VI (exponential law)"}, {source: S4, locator: "p. 76 (letter of 1887-04-04)"}]
       how_known: "Her published 1923 account of nature (P6), read in the 1923 English translation; supported by a single private letter. Below the 1.0 ceiling because neither passage speaks to miracle directly."
       rationale: "Scored on her account of nature (P6). She describes radioactive transformation as following 'the laws of probability', with causes 'a mystery to us' and no outside action shown to affect it: lawful, with an open question, not an exemption. In 1887 she wrote that she could not take the consolation of 'God willed it' for a stillbirth. No miracle, providence or petition appears in anything read."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife or moral reckoning in what was read. The 1887 line about not disappearing 'into nothingness' (S4, p. 77) is about sinking into obscurity as a governess, not about death, so it is not evidence for C (lens audit, batch 2, finding #126).", note: "Gap: her mourning journal after Pierre's death (1906)."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation, scripture or church authority in anything read. The earlier score (4 at 0.5) came from that absence; 'for us it has become incomprehensible' (S4, p. 76) is about believers' faith and the religious conservatism around her, not about which authority decides; her daughter's 'by tradition and convention' (S4, p. 51) is about practice.", note: "Was 4 at 0.5 (lens audit, batch 2, finding #112). Same treatment as Fermi: D asks about revelation versus observation, which needs a statement."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or moral reckoning in what was read. The 1887 line about not disappearing 'into nothingness' (S4, p. 77) is about sinking into obscurity as a governess, not about death, so it is not evidence for C (lens audit, batch 2, finding #126).", note: "Gap: her mourning journal after Pierre's death (1906)."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation, scripture or church authority in anything read. The earlier score (4 at 0.5) came from that absence; 'for us it has become incomprehensible' (S4, p. 76) is about believers' faith and the religious conservatism around her, not about which authority decides; her daughter's 'by tradition and convention' (S4, p. 51) is about practice.", note: "Was 4 at 0.5 (lens audit, batch 2, finding #112). Same treatment as Fermi: D asks about revelation versus observation, which needs a statement."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Meitner)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
   statements:
@@ -189,15 +190,15 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "École Normale Supérieure for girls, Sèvres", role: "lecturer in physics", years: "1900–", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris' (last paragraph)"}], how_known: "Britannica."}
-  - {value: "Faculty of Sciences, University of Paris (Sorbonne)", role: "professor of general physics (first woman in the post)", years: "1906–1934", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
-  - {value: "Radium Institute, University of Paris (Curie Laboratory)", role: director, years: "1914–1934", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
+  - {value: "École Normale Supérieure for girls, Sèvres", role: "lecturer in physics", years: "1900–", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Move to Paris' (last paragraph)"}], how_known: "Britannica."}
+  - {value: "Faculty of Sciences, University of Paris (Sorbonne)", role: "professor of general physics (first woman in the post)", years: "1906–1934", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
+  - {value: "Radium Institute, University of Paris (Curie Laboratory)", role: director, years: "1914–1934", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
 collaborators:
   - {value: "Pierre Curie", roster_id: curie-pierre, relation: family, note: "husband and co-discoverer of polonium and radium", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 1–2"}], how_known: "Two sources."}
   - {value: "Henri Becquerel", roster_id: becquerel-henri, relation: "influenced by", note: "his 1896 discovery started her thesis; shared the 1903 prize", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "Two sources."}
-  - {value: "André-Louis Debierne", relation: collaborator, note: "helped obtain metallic radium", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "Britannica."}
-  - {value: "Irène Joliot-Curie", roster_id: joliot-curie-irene, relation: family, note: "daughter; assisted her with wartime radiology", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
-  - {value: "Gabriel Lippmann", relation: teacher, note: "lecturer at the Sorbonne; she worked in his laboratory", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "Britannica."}
+  - {value: "André-Louis Debierne", relation: collaborator, note: "helped obtain metallic radium", certainty: 0.7, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "Britannica."}
+  - {value: "Irène Joliot-Curie", roster_id: joliot-curie-irene, relation: family, note: "daughter; assisted her with wartime radiology", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Nobel biography."}
+  - {value: "Gabriel Lippmann", relation: teacher, note: "lecturer at the Sorbonne; she worked in his laboratory", certainty: 0.7, cites: [{source: S1, locator: "'Move to Paris'"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 56"}], how_known: "Study roster."}
@@ -288,7 +289,7 @@ sources:
 
 ## Summary
 
-Marie Curie (1867–1934), Polish-born French physicist and chemist, discovered polonium and radium with Pierre Curie in 1898 and won Nobel Prizes in physics (1903) and chemistry (1911) [S1, opening paragraph; S2, paragraph 6]. Raised Catholic, she lost her faith after her mother's death and "did not practice any" religion as an adult [S3, ch. IV; S5, p. 18]. Her system is below threshold (AGNOS or ATHE; a "liberal freethinker" in S5, p. 57); B 4 (0.7); A, C, D, E below threshold; mid_basin below threshold.
+Marie Curie (1867–1934), Polish-born French physicist and chemist, discovered polonium and radium with Pierre Curie in 1898 and won Nobel Prizes in physics (1903) and chemistry (1911) [S1, opening paragraph; S2, paragraph 6]. Raised Catholic, she lost her faith after her mother's death and "did not practice any" religion as an adult [S3, ch. IV; S5, p. 18]. Her system is below threshold (AGNOS or ATHE; a "liberal freethinker" in S5, p. 57); B 4 (0.7); A and E below threshold, C and D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -304,7 +305,7 @@ Her mother "had an ardent piety (my parents were both Catholics), but she was ne
 
 ## Adult working worldview
 
-Her daughter writes that "her faith had been shaken by Mme Sklodovska's death; little by little it had now evaporated" [S4, p. 51]. In 1887 she wrote that the consolation of "God willed it" "is not for everybody" and that she could not share believers' faith [S4, p. 76]. AIP's exhibit places her among the "liberal freethinkers" of French politics [S5, p. 57]. She married in a civil ceremony [S3, ch. IV]. In 1923 she described radioactive decay as following "the laws of probability", with causes "a mystery to us" [S3, ch. VI]. Scores: B 4 (0.7); A, C, D, E below threshold.
+Her daughter writes that "her faith had been shaken by Mme Sklodovska's death; little by little it had now evaporated" [S4, p. 51]. In 1887 she wrote that the consolation of "God willed it" "is not for everybody" and that she could not share believers' faith [S4, p. 76]. AIP's exhibit places her among the "liberal freethinkers" of French politics [S5, p. 57]. She married in a civil ceremony [S3, ch. IV]. In 1923 she described radioactive decay as following "the laws of probability", with causes "a mystery to us" [S3, ch. VI]. Scores: B 4 (0.7); A and E below threshold; C and D UNKNOWN.
 
 ## Heritage (context only)
 

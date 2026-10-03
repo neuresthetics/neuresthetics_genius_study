@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Westman), MacTutor (J. V. Field) and SEP (Di Liscia). Worldview from SEP and MacTutor (scholars' readings) and one letter quoted by the Bodleian's Cultures of Knowledge project. No primary text of Kepler's was read. CHRIST (Lutheran, excommunicated 1612) at 0.5; PLATO named. A 1, B 4, D 3, E 4, all at 0.5; C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A at 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #78: B_cause 4 → 3 at 0.5; MacTutor quotes him on the 1604 nova allowing a 'special creation' only after trying 'everything else' (De stella nova ch. 22), a stated limited exception; statement added. Finding #81: E_scope 4 (0.5) → BELOW_THRESHOLD, the same thin evidence as Fermi, Meitner and Curie (§3 same pattern). Finding #83: self_described_science_religion_relation 0.7 → 0.5 (single-letter rule, §3). mid_basin unchanged (BELOW_THRESHOLD; A 1 and B 3 both at 0.5). primary_system unchanged (CHRIST 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
 identity:
   id: kepler-johannes
@@ -26,7 +27,7 @@ identity:
     field: astronomy
     field_bucket: astronomy
   full_name: {value: "Johannes Kepler", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Quick Info"}], how_known: "Sources agree."}
-  native_name: {value: "Johannes Kepler (German)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}], how_known: "German; he wrote mostly in Latin."}
+  native_name: {value: "Johannes Kepler (German)", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "German; he wrote mostly in Latin."}
   aliases:
     - {name: "Johannes-Kepler", kind: "roster alias"}
     - {name: "Kepler-Johannes", kind: "roster alias"}
@@ -39,11 +40,11 @@ basics:
   death:
     date: {value: "1630-11-15", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Quick Info"}], how_known: "Two sources agree."}
     place: {value: "Regensburg", modern_name: "Regensburg, Germany", polity_then: "Holy Roman Empire", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Quick Info"}], how_known: "Two sources agree."}
-  first_lasting_contribution_year: {value: 1604, certainty: 0.7, cites: [{source: S2, locator: "opening paragraph (optics 1604)"}, {source: S1, locator: "opening (a new and correct account of how vision occurs)"}], how_known: "The 1604 optics gave 'a new and correct account of how vision occurs' (S1). If the planetary laws are taken as the first lasting contribution, the year is 1609, so 0.7.", alternatives: [{value: 1609, cites: [{source: S2, locator: "opening paragraph"}], note: "First two laws, Astronomia nova."}]}
-  era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Both candidate years fall in 1600 to 1749 (P2)."}
+  first_lasting_contribution_year: {value: 1604, certainty: 0.7, cites: [{source: S2, locator: "opening paragraph (optics 1604)"}, {source: S1, locator: "opening (a new and correct account of how vision occurs)"}], how_known: "The earliest listed lasting item (lasting_original_contributions/0): the 1604 optics gave 'a new and correct account of how vision occurs' (S1). Rule P13/P23: the year is that of the earliest listed item that is itself lasting. Kept at 0.7 until it is checked whether S1–S2 call the Mysterium cosmographicum (1596, a major work, not listed as lasting) a lasting contribution (P17)."}
+  era_bucket: {value: "1600 to 1749", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Both candidate years fall in 1600 to 1749 (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('Württemberg [Germany]')"}], how_known: "Germany is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S2, locator: "Biography (Prague; Imperial Mathematician after Tycho, 1601)"}, {source: S3, locator: "§1"}], how_known: "The optics (1604) and the first two laws (1609) were done in Prague (Czechia is Eastern Europe in regions.csv). The third law (Harmonices mundi, 1619) was done in Linz (Austria, Western Europe). Two regions, so 0.7.", alternatives: [{value: "Western Europe", cites: [{source: S2, locator: "Biography (Linz)"}], note: "Graz 1594–1600 and Linz from 1612 (Austria)."}]}
-  sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S2, locator: "Childhood"}], how_known: "As the sources record it."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S2, locator: "Childhood"}], how_known: "As the sources record it."}
   languages_of_work: {value: [Latin, German], certainty: 0.7, cites: [{source: S2, locator: "Biography"}, {source: S5, locator: "catalogue note (letters mostly in Latin and German)"}], how_known: "Latin works; letters in Latin and German."}
   occupations: {value: [astronomer, mathematician, "Imperial Mathematician", "teacher of mathematics", astrologer], certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1"}], how_known: "Two sources."}
 
@@ -53,26 +54,26 @@ contribution:
     - {value: "Optics: a new and correct account of how vision occurs", year: "1604", kind: theory, lasting: "Britannica calls it correct", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening paragraph"}], how_known: "Two sources."}
     - {value: "First and second laws of planetary motion (ellipse; area law)", year: "1609", kind: "law or principle", lasting: "Newton derived them from gravitation (S1)", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening paragraph"}], how_known: "Two sources."}
     - {value: "Third (harmonic) law", year: "1619", kind: "law or principle", lasting: "standard astronomy", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "The Harmony of the World"}], how_known: "Two sources."}
-    - {value: "Rudolphine Tables", year: "1627", kind: work, lasting: "their accuracy 'did much to establish the truth of heliocentric astronomy' (S2)", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph"}], how_known: "MacTutor."}
+    - {value: "Rudolphine Tables", year: "1627", kind: work, lasting: "their accuracy 'did much to establish the truth of heliocentric astronomy' (S2)", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "MacTutor."}
   evidence_of_impact:
-    - {value: "Laws named after him; Newton derived them from his law of gravity", kind: "named after them", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    - {value: "Laws named after him; Newton derived them from his law of gravity", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
     - {value: "Mysterium cosmographicum", year: 1596, kind: book, certainty: 1.0, cites: [{source: S2, locator: "first cosmological model"}, {source: S3, locator: "§1"}], how_known: "Two sources."}
-    - {value: "Astronomia nova", year: 1609, kind: book, certainty: 1.0, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
-    - {value: "Harmonices mundi", year: 1619, kind: book, certainty: 1.0, cites: [{source: S2, locator: "The Harmony of the World"}], how_known: "MacTutor."}
+    - {value: "Astronomia nova", year: 1609, kind: book, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
+    - {value: "Harmonices mundi", year: 1619, kind: book, certainty: 0.7, cites: [{source: S2, locator: "The Harmony of the World"}], how_known: "MacTutor."}
   honours: []
-  definition_fit: {value: "clearly meets", rationale: "The three laws of planetary motion.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
+  definition_fit: {value: "clearly meets", rationale: "The three laws of planetary motion.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
   family_religion: {value: "Lutheran", certainty: 1.0, cites: [{source: S2, locator: "Childhood ('a bastion of Lutheran orthodoxy')"}, {source: S5, locator: "catalogue introduction (the Lutheran Seminary of Adelberg)"}], how_known: "Two sources."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father a mercenary soldier who left when Johannes was five and is believed to have died in the Netherlands war", role: father, certainty: 0.7, cites: [{source: S2, locator: "Childhood"}], how_known: "MacTutor."}
-    - {value: "Mother, Katharina, daughter of an innkeeper; later tried for witchcraft", name: "Katharina Kepler", role: mother, certainty: 1.0, cites: [{source: S2, locator: "Childhood; Witchcraft trial"}], how_known: "MacTutor."}
+    - {value: "Mother, Katharina, daughter of an innkeeper; later tried for witchcraft", name: "Katharina Kepler", role: mother, certainty: 0.7, cites: [{source: S2, locator: "Childhood; Witchcraft trial"}], how_known: "MacTutor."}
   household_circumstances: {value: "Lived with his mother in his grandfather's inn and helped serve; moved to Leonberg in 1576", certainty: 0.7, cites: [{source: S2, locator: "Childhood"}], how_known: "MacTutor."}
   schooling:
     - {value: "Local (Latin) school, Leonberg", stage: "grammar or secondary school", certainty: 0.7, cites: [{source: S2, locator: "Childhood"}, {source: S5, locator: "catalogue introduction"}], how_known: "Two sources."}
-    - {value: "Lutheran seminary (Adelberg), intending ordination", stage: "religious school", certainty: 1.0, cites: [{source: S2, locator: "Childhood"}, {source: S5, locator: "catalogue introduction"}], how_known: "Two sources."}
+    - {value: "Lutheran seminary (Adelberg), intending ordination", stage: "grammar or secondary school", certainty: 1.0, cites: [{source: S2, locator: "Childhood"}, {source: S5, locator: "catalogue introduction"}], how_known: "Two sources.", run_by: "religious body"}
     - {value: "University of Tübingen (Stift): Magister Artium 1591, then theology", stage: university, years: "1589–1594", certainty: 1.0, cites: [{source: S3, locator: "§1"}, {source: S5, locator: "catalogue introduction (enrolled 17 September 1589)"}], how_known: "Two sources."}
   early_mathematics: {value: "arithmetic only", note: "MacTutor mentions his 'unusual competence at arithmetic' as a child at the inn; nothing more before 17 in the sources read", certainty: 0.5, cites: [{source: S2, locator: "Childhood"}], how_known: "One source, framed as the author's surmise."}
   early_geometric_style_reasoning: {value: TODO}
@@ -84,7 +85,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1594–1630", certainty: 1.0, cites: [{source: S3, locator: "§1"}], how_known: "Graz post to death."}
+  working_years: {value: "1594–1630", certainty: 0.7, cites: [{source: S3, locator: "§1"}], how_known: "Graz post to death."}
   nominal_affiliations:
     - {value: "Lutheran; excommunicated in 1612 and never reinstated, over the Eucharist", years: "to 1612", role: member, certainty: 0.7, cites: [{source: S2, locator: "University education"}], how_known: "MacTutor (one source)."}
   self_described_science_religion_relation:
@@ -118,7 +119,7 @@ worldview:
       cites: [{source: S2, locator: "Kepler's opinions; University education; Observational error (New Star of 1604)"}, {source: S1, locator: "opening"}]
       how_known: "Scholars' readings of his working science (P6), plus one short phrase of his on the 1604 nova quoted in translation by MacTutor, so 0.5."
       rationale: "Scored on his account of nature (P6). Leans to the law pole: one mathematical plan, laws of planetary motion, forces from the Sun acting on the planets (S2), and an astrology restricted in 'the domain in which its predictions could be considered reliable' (S1), treated as natural influence. The stated limited exception: on the new star of 1604 he rejected numerous explanations and allowed that it 'could just be a special creation', 'but before we come to [that] I think we should try everything else' (S2, quoting De stella nova, 1606, ch. 22). A special creation in nature is kept as a last resort, so 3. Named alternative 4, since he puts natural explanation first and does not assert the special creation."
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, reward or afterlife in S1–S5.", note: "Gap: his letters on the Eucharist dispute and his theological writings were not read."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, reward or afterlife in S1–S5.", note: "Gap: his letters on the Eucharist dispute and his theological writings were not read."}
     D_authority:
       value: 3
       basis: scholarly_reconstruction
@@ -152,14 +153,14 @@ worldview:
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "Swabian (Württemberg)", certainty: 1.0, cites: [{source: S2, locator: "Childhood"}], how_known: "MacTutor."}
+  ethnic_or_communal_heritage: {value: "Swabian (Württemberg)", certainty: 0.7, cites: [{source: S2, locator: "Childhood"}], how_known: "MacTutor."}
   religious_heritage_by_birth: {value: "Lutheran", certainty: 1.0, cites: [{source: S2, locator: "Childhood"}, {source: S5, locator: "catalogue introduction"}], how_known: "Two sources."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: "Lutheran seminary training for the ministry", certainty: 1.0, cites: [{source: S5, locator: "catalogue introduction"}, {source: S2, locator: "Childhood"}], how_known: "Two sources."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1604–1627", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Optics to the Rudolphine Tables."}
+  major_work_period: {value: "1604–1627", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Optics to the Rudolphine Tables."}
   age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Born December 1571; 1604 optics. 37 if the 1609 laws are used."}
   first_evidence_of_lio_type_views: {value: "God made the universe by a mathematical plan (Mysterium cosmographicum)", year: 1596, certainty: 0.5, cites: [{source: S3, locator: "§2"}, {source: S2, locator: "first cosmological model"}], how_known: "Scholars' readings."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "The geometric-plan cosmology of 1596 precedes the 1604 optics and 1609 laws.", certainty: 0.5, cites: [{source: S3, locator: "§2"}], how_known: "Dates."}
@@ -174,18 +175,18 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Protestant school, Graz", role: "teacher of mathematics", years: "1594–1600", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "§1"}], how_known: "SEP."}
+  - {value: "Protestant school, Graz", role: "teacher of mathematics", years: "1594–1600", kind: employer, certainty: 0.7, cites: [{source: S3, locator: "§1"}], how_known: "SEP."}
   - {value: "Imperial court, Prague", role: "assistant to Tycho, then Imperial Mathematician", years: "1600–1612", kind: "patron or funder", certainty: 1.0, cites: [{source: S3, locator: "§1"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
 collaborators:
   - {value: "Michael Maestlin", relation: teacher, note: "introduced him to Copernicus", certainty: 1.0, cites: [{source: S3, locator: "§1"}, {source: S2, locator: "University education"}], how_known: "Two sources."}
-  - {value: "Tycho Brahe", relation: "mentor or employer", certainty: 1.0, cites: [{source: S3, locator: "§1"}], how_known: "SEP."}
+  - {value: "Tycho Brahe", relation: "mentor or employer", certainty: 0.7, cites: [{source: S3, locator: "§1"}], how_known: "SEP."}
   - {value: "Galileo Galilei", roster_id: galilei-galileo, relation: correspondent, note: "coined 'satellite' in 1610 for the moons Galileo found orbiting Jupiter", certainty: 0.7, cites: [{source: S2, locator: "first cosmological model ('satellite')"}], how_known: "MacTutor."}
-  - {value: "Isaac Newton", roster_id: newton-isaac, relation: influenced, note: "derived Kepler's laws from gravitation", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  - {value: "Isaac Newton", roster_id: newton-isaac, relation: influenced, note: "derived Kepler's laws from gravitation", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 45"}], how_known: "Study roster."}
   controversies:
-    - {value: "His mother was tried for witchcraft; he defended her", certainty: 1.0, cites: [{source: S2, locator: "Witchcraft trial"}], how_known: "MacTutor."}
+    - {value: "His mother was tried for witchcraft; he defended her", certainty: 0.7, cites: [{source: S2, locator: "Witchcraft trial"}], how_known: "MacTutor."}
   data_quality_flags:
     - "Calendar of the birth date not stated in the sources; tagged julian by the coder."
     - "Every worldview claim rests on scholars' readings or a secondary quotation; nothing at 0.7 or above on the axes."
@@ -275,7 +276,7 @@ His father was a mercenary and his mother an innkeeper's daughter; he trained fo
 
 ## Adult working worldview
 
-He wrote in 1595 that he had wanted to be a theologian and now "God is being celebrated in astronomy" [S4, paragraph 1]. SEP: God the Creator built the world on the five regular solids, and the Trinity maps onto the sphere [S3, §2]. Excommunicated in 1612 over the Eucharist [S2, University education]. Scores: A 1, B 3, D 3 (all 0.5); C and E below threshold; mid_basin below threshold. On the 1604 nova he allowed a "special creation" only after trying "everything else" [S2, Observational error].
+He wrote in 1595 that he had wanted to be a theologian and now "God is being celebrated in astronomy" [S4, paragraph 1]. SEP: God the Creator built the world on the five regular solids, and the Trinity maps onto the sphere [S3, §2]. Excommunicated in 1612 over the Eucharist [S2, University education]. Scores: A 1, B 3, D 3 (all 0.5); C UNKNOWN, E below threshold; mid_basin below threshold. On the 1604 nova he allowed a "special creation" only after trying "everything else" [S2, Observational error].
 
 ## Heritage (context only)
 

@@ -18,10 +18,10 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
 | People coded (of core) | 43 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
-| Decisions settled | 28 / 28 |
-| Audits | 9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a 124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
+| Decisions settled | 43 / 43 |
+| Audits | 9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a 124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md). Stage 3: 4 blind runs on the first 12 records (stage 3-a: 561 claims at 59a8371; stage 3-b: 420 claims at 3db6511); their method rulings are decisions P14–P28 |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts whose lens audit fixes are not yet applied; source the ATHE, AGNOS and IDEAL system stubs; the revised rubric has not started |
+| Next steps | Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts; their coders still apply the stage 3 lens fixes and rulings P14–P28 (the other 31 records already follow them, schema 1.3); source the stubs on the S7 backlog (ATHE, AGNOS, KANT, SCEPT, RATN, EMPIR, IDEAL); the revised rubric has not started |
 
 <!-- END GENERATED: progress -->
 
@@ -41,7 +41,9 @@ These charts describe what is in the repo so far; they are not results. The rost
 
 ![The coded draft person records on B_cause against A_locus](figures/people_cause_locus.png)
 
-*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. Only records with both axes scored are plotted (15 of the 31 coded people); every plotted person is B_cause 3 or 4, and these hand-picked people are not a sample. "(interview)" after a certainty in a label means that score rests on interview evidence (decision P8).*
+<!-- BEGIN GENERATED: people_chart_caption -->
+*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. Only records with both axes scored are plotted (24 of the 43 coded people); every plotted person is B_cause 2, 3 or 4, and these hand-picked people are not a sample. Each marker carries a number; the key gives the name, both scores with their certainties, and mid_basin. "(interview)" after a certainty means that score rests on interview evidence (decision P8).*
+<!-- END GENERATED: people_chart_caption -->
 
 ![The nine sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)
 
@@ -55,7 +57,7 @@ v8 starts by fixing the data in v7.1:
 - Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
 - Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
 - The two belief systems that were both labeled "Classical Theism" get separate display names (approved).
-- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 28 decisions are settled: 19 on 2026-10-01, and P6–P13 and S7 on 2026-10-02. P9, P11, P12, P13 and S7 are v8's picks on method details Jason delegated; P8 and P10 began as v8's picks and Jason has signed them off ([open decisions](docs/OPEN_DECISIONS.md)).
+- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 43 decisions are settled: 19 on 2026-10-01, and P6–P28 and S7 on 2026-10-02. P9, P11–P28 and S7 are v8's picks on method details Jason delegated (P14–P28 came from the two stage 3 lens audits); P8 and P10 began as v8's picks and Jason has signed them off ([open decisions](docs/OPEN_DECISIONS.md)).
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 
