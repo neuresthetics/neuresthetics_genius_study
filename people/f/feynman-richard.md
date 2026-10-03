@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (major work 1946–49; Jason, 2026-10-02). Basics from Britannica (Gleick), MacTutor and the Nobel biography. Worldview from his own talk 'The Relation of Science and Religion' (Caltech YMCA Lunch Forum, 2 May 1956), printed in Engineering and Science 19:9 (June 1956), pp. 20–23, read on Caltech's own site and checked on the page images. primary_system AGNOS at 0.7 (stub; ATHE named). B 4, D 2, E 4, all at 0.7; A, C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #59 (both runs): birth place 'New York City (Manhattan; ...)' at 1.0 → 'New York City' at 1.0; the borough is noted as contested (0.5), Far Rockaway, Queens, per Britannica and MacTutor's Quick Info, with Manhattan (implied by MacTutor's Biography, paragraph 2) as the alternative. MacTutor Biography locators renumbered to the page's visible paragraphs (paragraph 1 is the parents, 2 the Manhattan apartment, 3 the move to Far Rockaway). #63 / decision P13: the 1939 MIT thesis ('an original and enduring approach to calculating forces in molecules', Britannica) is now a listed contribution (0.7), so first_lasting_contribution_year 1939 (0.7) and age 21 rest on a listed item; values unchanged. Not reviewed."}
 
 identity:
   id: feynman-richard
@@ -33,11 +34,11 @@ identity:
 basics:
   birth:
     date: {value: "1918-05-11", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources agree."}
-    place: {value: "New York City (Manhattan; the family settled in Far Rockaway when he was ten)", modern_name: "New York, New York, USA", polity_then: "United States", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 1"}, {source: S2, locator: "Biography, paragraph 1"}], how_known: "All agree on New York City; Britannica says born in Far Rockaway, MacTutor says the family moved there when he was ten."}
+    place: {value: "New York City", modern_name: "New York, New York, USA", polity_then: "United States", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraph 1"}, {source: S2, locator: "Quick Info"}], how_known: "All three sources agree on New York City. The borough is not part of the coded value because the sources point different ways (see note). Was 'New York City (Manhattan; ...)' at 1.0 until the batch 4 lens audit (#59).", note: "Borough contested (0.5): Far Rockaway, Queens, is stated by Britannica (opening: 'Born in the Far Rockaway section of New York City') and MacTutor's Quick Info ('Far Rockaway, New York, USA'), the better-supported reading. MacTutor's Biography implies Manhattan (alternative).", alternatives: [{value: "New York City (Manhattan)", cites: [{source: S2, locator: "Biography, paragraph 2 ('moved into a Manhattan apartment and, in the following year, their first child Richard was born')"}], note: "Implied, not stated: the biography puts the parents in a Manhattan apartment the year before his birth, and (paragraph 3) says the family moved several times and settled in Far Rockaway when he was ten."}]}
   death:
     date: {value: "1988-02-15", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "closing note"}], how_known: "Two sources agree."}
     place: {value: "Los Angeles, California", modern_name: "Los Angeles, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1939, certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('his undergraduate thesis (1939) proposed an original and enduring approach')"}], how_known: "Britannica calls the MIT thesis on forces in molecules 'original and enduring'; his main work (QED) is 1946–49."}
+  first_lasting_contribution_year: {value: 1939, certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('his undergraduate thesis (1939) proposed an original and enduring approach')"}], how_known: "The MIT undergraduate thesis on forces in molecules, listed as a contribution because Britannica calls it 'original and enduring'; it is the earliest listed contribution (decision P13). His main work (QED) is 1946–49."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2); the QED work (by 1948) is in the same bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}], how_known: "Princeton, Los Alamos, Cornell, Caltech."}
@@ -50,6 +51,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Reconstruction of quantum electrodynamics, removing the meaningless results of the older theory", year: "1946–1949", kind: theory, lasting: "Nobel Prize 1965 (shared with Schwinger and Tomonaga)", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2; 'Five particular achievements' ('By 1948 Feynman completed this reconstruction')"}], how_known: "Britannica (start year is the coder's reading of 'At war's end ... returned to studying the fundamental issues of quantum electrodynamics')."}
     - {value: "Feynman diagrams", year: "1948–1949", kind: method, lasting: "permeated theoretical physics", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2; 'Second, he introduced simple diagrams'"}], how_known: "Britannica."}
+    - {value: "Approach to calculating forces in molecules (MIT undergraduate thesis)", year: "1939", kind: method, lasting: "Britannica: 'an original and enduring approach to calculating forces in molecules'", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3 ('his undergraduate thesis (1939) proposed an original and enduring approach to calculating forces in molecules')"}], how_known: "One source calls it lasting; added in the batch 4 lens audit so that first_lasting_contribution_year rests on a listed contribution (P13)."}
     - {value: "Path-integral (least-action, sum-over-paths) approach to quantum mechanics, with Wheeler at Princeton", year: "1942", kind: method, lasting: "standard formulation", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica; year is the doctorate year."}
     - {value: "Quantum-mechanical explanation of superfluidity; V–A theory of the weak force with Gell-Mann; parton model", year: "1950s–1968", kind: theory, lasting: "standard physics", certainty: 1.0, cites: [{source: S1, locator: "paragraph after 'Five particular achievements'"}], how_known: "Britannica."}
   evidence_of_impact:
@@ -69,21 +71,21 @@ childhood:
   family_religion: {value: "Jewish (both parents from Jewish families)", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}, {source: S1, locator: "paragraph 3 ('descendant of Russian and Polish Jews')"}], how_known: "Two sources give the Jewish family background; the household's practice is not described."}
   family_religious_practice: {value: TODO, note: "Not described in the sources read. The often-quoted 1967 letter about leaving Sunday school was seen only on a blog and is not used."}
   parents_and_household:
-    - {value: "Father, Melville Feynman, born into a Jewish family in Minsk, came to the US at five; a businessman fascinated by science who wanted his son to be a scientist", name: "Melville Feynman", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor, drawing on Gleick."}
+    - {value: "Father, Melville Feynman, born into a Jewish family in Minsk, came to the US at five; a businessman fascinated by science who wanted his son to be a scientist", name: "Melville Feynman", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraphs 1–2"}], how_known: "MacTutor, drawing on Gleick."}
     - {value: "Mother, Lucille Phillips, born in the US into a Jewish family of Polish immigrants; trained as a primary school teacher", name: "Lucille Feynman (née Phillips)", role: mother, certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
-  household_circumstances: {value: "A brother died at four weeks when Richard was five; sister Joan born when he was nine; settled in Far Rockaway at ten", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 2"}], how_known: "MacTutor."}
+  household_circumstances: {value: "A brother died at four weeks when Richard was five; sister Joan born when he was nine; settled in Far Rockaway at ten", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor."}
   schooling:
-    - {value: "Far Rockaway High School; won the New York University Math Championship in his final year", stage: "grammar or secondary school", years: "–1935", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 3–4"}], how_known: "MacTutor; end year is the coder's reading (MIT from 1935, BSc 1939)."}
+    - {value: "Far Rockaway High School; won the New York University Math Championship in his final year", stage: "grammar or secondary school", years: "–1935", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 4–5"}], how_known: "MacTutor; end year is the coder's reading (MIT from 1935, BSc 1939)."}
     - {value: "Massachusetts Institute of Technology (BSc 1939)", stage: university, years: "–1939", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "paragraph 3"}], how_known: "Two sources."}
     - {value: "Princeton University (PhD 1942, adviser John Archibald Wheeler)", stage: university, years: "1939–1942", certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "paragraph 3"}], how_known: "Two sources."}
-  early_mathematics: {value: "advanced mathematics", note: "Taught himself trigonometry, calculus and complex numbers before meeting them at school.", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor."}
+  early_mathematics: {value: "advanced mathematics", note: "Taught himself trigonometry, calculus and complex numbers before meeting them at school.", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 4–5"}], how_known: "MacTutor."}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure:
-    - {value: "Home laboratory: circuits, a burglar alarm, radio repair; science from the Encyclopaedia Britannica; father's encouragement", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 1–3"}], how_known: "MacTutor."}
+    - {value: "Home laboratory: circuits, a burglar alarm, radio repair; science from the Encyclopaedia Britannica; father's encouragement", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraphs 2, 4"}], how_known: "MacTutor."}
   key_early_reading:
-    - {value: "Encyclopaedia Britannica", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor."}
+    - {value: "Encyclopaedia Britannica", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 4"}], how_known: "MacTutor."}
   childhood_mentors:
-    - {value: "His father, Melville Feynman", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
+    - {value: "His father, Melville Feynman", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 2"}], how_known: "MacTutor."}
   languages_in_childhood: {value: [English], certainty: 1.0, cites: [{source: S2, locator: "Biography, paragraph 1"}], how_known: "American-born."}
   notable_events: []
 
@@ -195,7 +197,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1946–1949", certainty: 0.7, cites: [{source: S1, locator: "'At war's end'; 'By 1948 Feynman completed this reconstruction'"}], how_known: "QED reconstruction and diagrams; years are the coder's reading of Britannica."}
-  age_at_first_lasting_contribution: {value: 21, certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph 3"}], how_known: "Born May 1918; MIT thesis 1939."}
+  age_at_first_lasting_contribution: {value: 21, certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph 3"}], how_known: "Born May 1918; MIT thesis 1939 (the earliest listed contribution, P13)."}
   first_evidence_of_lio_type_views: {value: "Caltech YMCA talk on science and religion", year: 1956, certainty: 1.0, cites: [{source: S4, locator: "p. 20"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The statement read is from 1956, after the 1946–49 work; earlier views not read.", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
@@ -203,7 +205,7 @@ timing:
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "no", rationale: "He describes science as a method of trying things and seeing what happens ('Try it and see', S4, p. 23), not derivation from definitions and axioms.", certainty: 0.5, cites: [{source: S4, locator: "p. 23"}], how_known: "Coder's reading of one talk."}
-  form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "Self-taught mathematics; nothing on method."}
+  form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "Biography, paragraphs 4–5"}], how_known: "Self-taught mathematics; nothing on method."}
   circle_present: {value: "no", rationale: "He leaves God uncertain and does not identify God with Nature.", certainty: 0.5, cites: [{source: S4, locator: "pp. 20–21"}], how_known: "Coder's reading."}
   reading: "As belief, not finding: form absent, circle absent. The record does not test H1."
   notes: ""
@@ -288,7 +290,7 @@ Richard Feynman (1918–1988), American theoretical physicist, remade quantum el
 
 ## Life and work
 
-Far Rockaway; MIT (1939) and Princeton (PhD 1942); Los Alamos; Cornell (1945–50); Caltech from 1950 [S1; S2; S3].
+Born in New York City (Far Rockaway per Britannica; the borough is contested) [S1; S2]; Far Rockaway High School; MIT (1939) and Princeton (PhD 1942); Los Alamos; Cornell (1945–50); Caltech from 1950 [S1; S2; S3].
 
 ## Contribution and impact
 
