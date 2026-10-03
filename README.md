@@ -18,10 +18,10 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
 | People coded (of core) | 31 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
-| Decisions settled | 24 / 24 |
-| Audits | 5 blind lens runs on two batches: 3 on a 115-claim packet (eff4700) and 2 on a 147-claim packet (e648145); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
+| Decisions settled | 25 / 25 |
+| Audits | 7 blind lens runs on three batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145) and 2 on a 124-claim packet (d9903b7/43cecc4; run 1 116 hold / 8 weaken, run 2 112 hold / 12 weaken, 0 wrong; agreement 114/124, κ 0.46; fixes applied at 472e3a2); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | Finish the 1600–1950 physical-science pool (RUNBOOK §1 step 2), then everyone else with F ≥ 3; fill the system stubs; the revised rubric has not started |
+| Next steps | People batch 4 is in progress; finish the 1600–1950 physical-science pool (RUNBOOK §1 step 2), then everyone else with F ≥ 3; fill the system stubs; the revised rubric has not started |
 
 <!-- END GENERATED: progress -->
 
@@ -41,7 +41,7 @@ These charts describe what is in the repo so far; they are not results. The rost
 
 ![The coded draft person records on B_cause against A_locus](figures/people_cause_locus.png)
 
-*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. Only records with both axes scored are plotted (13 of the 22 coded people); every plotted person is B_cause 3 or 4, and these hand-picked people are not a sample.*
+*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. Only records with both axes scored are plotted (15 of the 31 coded people); every plotted person is B_cause 3 or 4, and these hand-picked people are not a sample. "(interview)" after a certainty in a label means that score rests on interview evidence (decision P8).*
 
 ![The nine sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)
 
@@ -55,7 +55,7 @@ v8 starts by fixing the data in v7.1:
 - Frequency (F) is now the number of distinct models that list a person (1 to 5), so alias counts no longer get added together.
 - Each person and each belief system gets its own record, with sources and a certainty grade for every fact.
 - The two belief systems that were both labeled "Classical Theism" get separate display names (approved).
-- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 21 decisions are settled (19 on 2026-10-01; P6 and P7 on 2026-10-02).
+- The scales and lists that v7.1 left open (LIO axis scale, era buckets, regions, the mid-basin test) are now set. All 25 decisions are settled: 19 on 2026-10-01, and P6–P10 and S7 on 2026-10-02. P9, P10 and S7 are v8's picks on method details Jason delegated; P10 still awaits his sign-off ([open decisions](docs/OPEN_DECISIONS.md)).
 
 See [CHANGELOG.md](CHANGELOG.md) for details.
 

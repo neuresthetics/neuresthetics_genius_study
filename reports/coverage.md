@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 341 | 341 | 0 | 0 | 0 | 100.0% |
 | contribution | 375 | 374 | 0 | 1 | 0 | 99.7% |
 | childhood | 437 | 373 | 60 | 4 | 0 | 85.4% |
-| worldview | 359 | 217 | 2 | 42 | 98 | 60.4% |
+| worldview | 360 | 216 | 2 | 42 | 100 | 60.0% |
 | heritage | 124 | 69 | 48 | 7 | 0 | 55.6% |
 | timing | 155 | 125 | 21 | 9 | 0 | 80.6% |
 | lane_b | 93 | 90 | 3 | 0 | 0 | 96.8% |
 | institutions | 120 | 120 | 0 | 0 | 0 | 100.0% |
 | collaborators | 164 | 164 | 0 | 0 | 0 | 100.0% |
 | review | 48 | 48 | 0 | 0 | 0 | 100.0% |
-| **all** | 2278 | 1982 | 134 | 64 | 98 | 87.0% |
+| **all** | 2279 | 1981 | 134 | 64 | 100 | 86.9% |
 
 ### Worldview coding status
 
@@ -78,7 +78,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | aquinas-thomas | CLASS_THEISM | draft — unreviewed |
 | bohr-niels | BELOW_THRESHOLD | draft — unreviewed |
 | boyle-robert | CHRIST | draft — unreviewed |
-| chandrasekhar-subrahmanyan | ATHE | draft — unreviewed |
+| chandrasekhar-subrahmanyan | ATHE (interview) | draft — unreviewed |
 | clausius-rudolf | BELOW_THRESHOLD | draft — unreviewed |
 | curie-marie | BELOW_THRESHOLD | draft — unreviewed |
 | dirac-paul | BELOW_THRESHOLD | draft — unreviewed |
@@ -88,7 +88,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | feynman-richard | AGNOS | draft — unreviewed |
 | galilei-galileo | CHRIST | draft — unreviewed |
 | godel-kurt | BELOW_THRESHOLD | draft — unreviewed |
-| heisenberg-werner | PLATO | draft — unreviewed |
+| heisenberg-werner | BELOW_THRESHOLD | draft — unreviewed |
 | herschel-caroline | CHRIST | draft — unreviewed |
 | hodgkin-dorothy | BELOW_THRESHOLD | draft — unreviewed |
 | hubble-edwin | BELOW_THRESHOLD | draft — unreviewed |
@@ -106,6 +106,8 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | pauling-linus | SECHUM | draft — unreviewed |
 | planck-max | DEISM | draft — unreviewed |
 | schrodinger-erwin | HINDU | draft — unreviewed |
+
+"(interview)" after a primary system: the code rests on interview evidence (decision P8).
 
 ### First pool checklist
 
