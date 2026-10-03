@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Rouzé) and the Institute for Advanced Study's page. Worldview: no statement of his on God or religion was read in a checkable source. His Los Alamos farewell speech (2 November 1945, Atomic Heritage Foundation excerpts) states a faith in the value of science; his 1965 televised interview (interview) recalls the Bhagavad Gita line at Trinity. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub; HINDU rejected). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. His AIP oral-history interviews carry quotation limits and were not used. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #164/#165 (run 2): '1965 interview' reworded as an interview recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965; new sources S6 (Paley Center catalogue record T79:0489: NBC, 5 January 1965, producer Fred Freed) and S7 (Wikiquote, a second pointer to the programme); statement date '1965' → '1965-01-05' with the recording date given as unknown (c. 1964); S4 citation, HINDU candidate reason, coder notes and body updated. The words of #165 stay as they are: they follow the audio, with no 'he' before 'takes on' (Wikiquote's 'he' is noted). Not reviewed."}
 
 identity:
   id: oppenheimer-j-robert
@@ -90,7 +91,7 @@ worldview:
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
   candidate_codes_considered:
     - {code: ETHCUL, reason: "Leading candidate, not coded (BELOW_THRESHOLD): schooled at the Ethical Culture School (S2); his adult adherence to Ethical Culture is not shown in what was read. Stub system file (flag).", cites: [{source: S2, locator: "education paragraph"}]}
-    - {code: HINDU, reason: "Rejected: he studied Eastern philosophy at Harvard (S1) and in a 1965 interview (interview) recalled 'the line from the Hindu scripture, the Bhagavad-Gita' at the Trinity test (S4); a literary recollection, not a profession of Hindu belief. Stub system file (flag).", cites: [{source: S1, locator: "'Early life and education'"}, {source: S4, locator: "clip transcript (interview)"}]}
+    - {code: HINDU, reason: "Rejected: he studied Eastern philosophy at Harvard (S1) and in a television interview (interview; recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965, S6) recalled 'the line from the Hindu scripture, the Bhagavad-Gita' at the Trinity test (S4); a literary recollection, not a profession of Hindu belief. Stub system file (flag).", cites: [{source: S1, locator: "'Early life and education'"}, {source: S4, locator: "clip transcript (interview)"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
     B_cause:
@@ -114,15 +115,15 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
     - text: "I remembered the line from the Hindu scripture, the Bhagavad-Gita. Vishnu is trying to persuade the Prince that he should do his duty and to impress him takes on his multi-armed form and says, “Now, I am become Death, the destroyer of worlds.” I suppose we all thought that one way or another."
-      cites: [{source: S4, locator: "clip transcript (interview)"}]
-      date: "1965"
-      context: "(interview) Recorded television interview for the NBC documentary The Decision to Drop the Bomb (1965), recalling the Trinity test; transcript on the Atomic Archive. Published broadcast, so quotation is permitted; scores nothing (P8: a passing recollection, not a statement of belief)."
+      cites: [{source: S4, locator: "clip transcript (interview)"}, {source: S6, locator: "catalogue record (programme and broadcast date)"}]
+      date: "1965-01-05"
+      context: "(interview) Television interview recalling the Trinity test, for the NBC White Paper The Decision to Drop the Bomb (producer Fred Freed), broadcast 5 January 1965 (S6; also S7). The date is the broadcast date; the recording date is not given in the sources read and is presumably 1964 (c. 1964), before the broadcast. Words follow the clip's audio and the Atomic Archive transcript (no 'he' before 'takes on', which S7 prints). Published broadcast, so quotation is permitted; scores nothing (P8: a passing recollection, not a statement of belief)."
       axes: []
       kind: "recorded interview"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "ETHCUL and HINDU are stub system files (flag). The farewell speech's 'belief in the value of science' is a professional ethic of knowledge, not a metaphysics; no code fits it (SCIENT is Scientology, not scientism). Interview-based content (marked '(interview)'): only the 1965 NBC clip (S4), a published broadcast, used in one statement and in the HINDU rejection; it scores no axis or code. His AIP oral-history interviews carry AIP quotation limits and were not used or quoted. S3 is the Atomic Heritage Foundation's excerpt of the farewell speech and S4 the Atomic Archive's transcript of the film clip; both are unofficial web copies (§7), marked secondary quotation. A copy of Smith and Weiner, Letters and Recollections, seen on the Internet Archive has unclear provenance and was not used. changes_over_life is empty after research."
+  coder_notes: "ETHCUL and HINDU are stub system files (flag). The farewell speech's 'belief in the value of science' is a professional ethic of knowledge, not a metaphysics; no code fits it (SCIENT is Scientology, not scientism). Interview-based content (marked '(interview)'): only the NBC clip (S4; recorded c. 1964, broadcast 5 January 1965 per the Paley Center catalogue, S6), a published broadcast, used in one statement and in the HINDU rejection; it scores no axis or code. His AIP oral-history interviews carry AIP quotation limits and were not used or quoted. S3 is the Atomic Heritage Foundation's excerpt of the farewell speech and S4 the Atomic Archive's transcript of the film clip; both are unofficial web copies (§7), marked secondary quotation. A copy of Smith and Weiner, Letters and Recollections, seen on the Internet Archive has unclear provenance and was not used. changes_over_life is empty after research."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -202,7 +203,7 @@ sources:
     kind: other
     author: "J. Robert Oppenheimer"
     year: 1965
-    citation: "Oppenheimer, J. Robert. Recorded interview in the NBC documentary The Decision to Drop the Bomb (1965). Clip and transcript: \"J. Robert Oppenheimer 'Now I am become death...'\", Atomic Archive, https://www.atomicarchive.com/media/videos/oppenheimer.html."
+    citation: "Oppenheimer, J. Robert. Interview recorded c. 1964 for the NBC White Paper The Decision to Drop the Bomb (producer Fred Freed), broadcast 5 January 1965 (programme and date: S6). Clip and transcript: \"J. Robert Oppenheimer 'Now I am become death...'\", Atomic Archive, https://www.atomicarchive.com/media/videos/oppenheimer.html."
     url: "https://www.atomicarchive.com/media/videos/oppenheimer.html"
     accessed: 2026-10-02
     reliability_note: "(interview) His own words in a published broadcast; transcript by the Atomic Archive (unofficial web copy). Used for one recollection only; scores nothing."
@@ -216,6 +217,25 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S6
+    type: secondary
+    kind: "archive record"
+    author: "Paley Center for Media"
+    year: 1965
+    citation: "Paley Center for Media, collection catalogue. \"White Paper: The Decision to Drop the Bomb {Tape 2 of 2} (TV)\", catalogue no. T79:0489. NBC, broadcast January 5, 1965, 9:00 PM; producer Fred Freed; J. Robert Oppenheimer among those credited. https://www.paleycenter.org/collection/item?item=T79%3A0489."
+    url: "https://www.paleycenter.org/collection/item?item=T79%3A0489"
+    accessed: 2026-10-02
+    reliability_note: "Broadcast archive's catalogue record. Cited for the programme, network, producer and broadcast date of the film that contains S4's clip; it gives no recording date."
+    used_for: [worldview]
+  - id: S7
+    type: tertiary
+    kind: other
+    author: "Wikiquote contributors"
+    citation: "\"Robert Oppenheimer.\" Wikiquote. https://en.wikiquote.org/wiki/Robert_Oppenheimer (Trinity quotation and its source note)."
+    url: "https://en.wikiquote.org/wiki/Robert_Oppenheimer"
+    accessed: 2026-10-02
+    reliability_note: "Open wiki. Cited only as a second pointer that the Trinity clip was 'first broadcast as part of the television documentary The Decision to Drop the Bomb (1965), produced by Fred Freed, NBC White Paper'. Not used for his words: it prints 'he takes on', and no 'he' is spoken in the clip (S4)."
+    used_for: [worldview]
 ---
 
 # J. Robert Oppenheimer
@@ -240,7 +260,7 @@ Son of a wealthy German-immigrant textile importer; Ethical Culture School; clas
 
 ## Adult working worldview
 
-Not established from checkable sources. In 1945 he spoke of the scientist's belief "that it is good to find out how the world works" [S3]. In a 1965 interview (interview) he recalled a line of the Bhagavad Gita at Trinity [S4]; that is a recollection, not a profession, and scores nothing.
+Not established from checkable sources. In 1945 he spoke of the scientist's belief "that it is good to find out how the world works" [S3]. In a television interview (interview), recorded c. 1964 and broadcast in NBC's The Decision to Drop the Bomb on 5 January 1965 [S6], he recalled a line of the Bhagavad Gita at Trinity [S4]; that is a recollection, not a profession, and scores nothing.
 
 ## Heritage (context only)
 
@@ -260,4 +280,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form unclea
 
 ## Research log
 
-- 2026-10-02: Read Britannica (Rouzé), the IAS page, the AHF excerpts of the farewell speech, the AHF 1965 Groueff interview (Manhattan Project organisation only; nothing on religion) and the Atomic Archive's 1965 NBC clip transcript. The AIP oral history was not used (quotation limits).
+- 2026-10-02: Read Britannica (Rouzé), the IAS page, the AHF excerpts of the farewell speech, the AHF 1965 Groueff interview (Manhattan Project organisation only; nothing on religion) and the Atomic Archive's transcript of the NBC clip (broadcast 5 January 1965). Batch 4 lens audit: read the Paley Center catalogue record (S6) and Wikiquote (S7) for the programme and broadcast date. The AIP oral history was not used (quotation limits).
