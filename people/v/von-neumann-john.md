@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor. Religion from a colleague's recollection, Seeger, 'Von Neumann, Jewish Catholic' (PSCF 40, 1988): nominal Catholic after his first marriage and Catholic instruction in his last illness. No statement of his own on religion was read, and no recorded interview of him on religion was found (the P8 interview route is unavailable). primary_system BELOW_THRESHOLD. B 4 (0.5) from working science; A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). #352: full_name now follows MacTutor ('born János von Neumann'); the earlier 'born János Neumann' is kept only as a marked inference from the 1913 title. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. B_cause 4 (0.5) → BELOW_THRESHOLD (no remark of his own on natural law) (P16); D_authority BELOW_THRESHOLD → UNKNOWN (the Psalms recitation is practice, off-point) and E_scope stays BELOW_THRESHOLD (working science; the draft's UNKNOWN reverted), A, C notes rewritten (P19); first_lasting_contribution_year how_known and the ordinals item year rewritten without a chosen year, alternative 1924 named (P12, P23, P25); tutor Fekete 0.7 → 0.5 with Fejér named, marriage date alternatives named (P25); Lutheran Gymnasium stage religious school → grammar or secondary school, run_by religious body (P21); major_work_period how_known cites the sources' dates (P23); Seeger's 1947 quotation marked primary check pending (P26); mid_basin note rewritten; IAS kind university → research institute (P21); single-source 1.0 fields → 0.7 (P15) (era_bucket, definition_fit, working_years); region_of_birth, region_of_work, sex keep 1.0 with a Seeger cite. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens run 1 on rulings packet 6155174, sources reopened. Tutor note reworded: MacTutor (Fekete) and Seeger (Fejér) name different tutors but do not exclude each other; certainty left at 0.5 and the P25 question flagged for v8. Not reviewed."}
 
 identity:
   id: von-neumann-john
@@ -81,7 +82,7 @@ childhood:
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors:
-    - {value: "Michael Fekete, tutor and co-author of his first paper", name: "Michael Fekete", certainty: 0.5, cites: [{source: S1, locator: "Biography (1921–22)"}], how_known: "MacTutor: 'Fekete the assistant at the University of Budapest who had been tutoring him'. Seeger names Fejér as the tutor instead; the sources disagree, so 0.5 with the alternative named (P25). Was 0.7.", alternatives: [{value: "Leopold Fejér, tutor", cites: [{source: S2, locator: "paragraph 2 ('he was tutored by Leopold Fejer of the University of Budapest')"}], note: "Seeger's tutor; Seeger spells it Fejer."}]}
+    - {value: "Michael Fekete, tutor and co-author of his first paper", name: "Michael Fekete", certainty: 0.5, cites: [{source: S1, locator: "Biography (1921–22)"}], how_known: "MacTutor: 'Fekete the assistant at the University of Budapest who had been tutoring him' (S1). Seeger: 'he was tutored by Leopold Fejer of the University of Budapest' (S2). The two name different tutors but do not strictly exclude each other: both could have tutored him. Left at 0.5 with Fejér named under P25 pending v8; if v8 reads the sources as compatible, P25 does not apply, Fekete returns to 0.7 (MacTutor alone, P15) and Fejér becomes a separate mentor at 0.7 (Seeger alone). Was 0.7.", alternatives: [{value: "Leopold Fejér, tutor", cites: [{source: S2, locator: "paragraph 2 ('he was tutored by Leopold Fejer of the University of Budapest')"}], note: "Seeger's tutor; Seeger spells it Fejer. Possibly a second tutor rather than a rival value (flagged for v8)."}]}
   languages_in_childhood: {value: [Hungarian, German, French], certainty: 0.7, cites: [{source: S1, locator: "Biography, paragraph 1"}], how_known: "MacTutor: languages from German and French governesses; Hungarian assumed from Budapest (coder)."}
   notable_events:
     - {value: "Family fled briefly to Austria during Béla Kun's Communist government", year: "1919", age: 15, certainty: 0.7, cites: [{source: S1, locator: "Biography (1919)"}], how_known: "MacTutor."}
@@ -154,7 +155,7 @@ review:
     - {value: "Whether he was agnostic or Catholic: Seeger reports both the claim of agnosticism and his Catholic death", certainty: 0.5, cites: [{source: S2, locator: "last paragraph"}], how_known: "One colleague's recollection."}
   data_quality_flags:
     - "First marriage: before the 1930 move to Princeton (MacTutor) vs the year of the IAS appointment (Seeger)."
-    - "Tutor: Fekete (MacTutor) vs Fejér (Seeger)."
+    - "Tutor: MacTutor names Fekete, Seeger names Fejér. Not strictly a conflict (both may have tutored him); coded 0.5 under P25 pending v8."
     - "No primary statement on religion; the famous wager remarks are unsourced in what was read."
     - "Britannica was not read for von Neumann."
     - "B moved from 4 (0.5, working science) to BELOW_THRESHOLD: no remark of his own on natural law (P16)."
@@ -238,3 +239,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 - 2026-10-02: Read MacTutor and Seeger (1988, via the fetch tool; direct download blocked). Searched for recorded interviews of von Neumann on religion: none found. The 'probably has to be a God' and wager quotes were seen only in secondary pages and not used.
 - 2026-10-02 (v8 method rulings): Reopened Seeger (fetch tool) for the 1947 quotation and the nature remark; MacTutor rechecked for any remark on natural law (none).
 - 2026-10-02 (stage 3 rulings P14–P28): Reopened MacTutor (Lutheran Gymnasium, Fekete, marriage, ordinals) and Seeger (paragraphs 2–3: Fejér, marriage) for the P21 and P25 checks.
+- 2026-10-02 (lens run 1): Reopened MacTutor (Fekete, 1921–22) and Seeger (paragraph 2, Fejér) for the tutor note.
