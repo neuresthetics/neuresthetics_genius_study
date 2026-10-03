@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (radiocarbon dating 1947–49; Jason, 2026-10-02). Basics from Britannica (Kauffman), the Nobel biography and Leona Marshall Libby's GSA memorial. No writing of his on religion was found. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #148 (run 1) / decisions P12, P13: first_lasting_contribution_year 1947 → 1941, the start year of the earliest listed contribution (the gaseous-diffusion barrier, Manhattan Project 1941–1945; Britannica, and S3 p. 1 for its lasting use); age 38 → 32; era unchanged. The how_known no longer says the 1930s work is lasting per S3 (S3 does not say so); that work is not listed and does not set the year. Not reviewed."}
 
 identity:
   id: libby-willard
@@ -36,8 +37,8 @@ basics:
   death:
     date: {value: "1980-09-08", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "p. 1"}], how_known: "Two sources agree."}
     place: {value: "Los Angeles, California", modern_name: "Los Angeles, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1947, certainty: 0.7, cites: [{source: S1, locator: "'On March 4, 1947, Libby and his students obtained the first age determination'"}], how_known: "First radiocarbon age (4 March 1947). Earlier work (Geiger counters, radioisotopes, 1930s; tritium 1946) is also lasting per S3, so the year is a judgement."}
-  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "radiocarbon paragraphs"}], how_known: "From first_lasting_contribution_year (P2)."}
+  first_lasting_contribution_year: {value: 1941, certainty: 0.7, cites: [{source: S1, locator: "tritium paragraph, first sentence ('While associated with the Manhattan Project (1941–45), Libby helped develop a method for separating uranium isotopes by gaseous diffusion')"}, {source: S3, locator: "p. 1"}], how_known: "Start year of the earliest listed contribution, the gaseous-diffusion barrier (1941–1945), under decisions P12 and P13; S3 says the barrier was used for enrichment 'for more than 30 years'. 0.7 because the start year is the Manhattan Project's span, not a dated result, and the lasting judgement rests on his widow's memorial. His 1930s Geiger-counter and radioisotope work is not a listed contribution (no source read calls it lasting), so it does not set the year. Was 1947 (the first radiocarbon date) until the batch 4 lens audit."}
+  era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "tritium paragraph, first sentence; radiocarbon paragraphs"}], how_known: "From first_lasting_contribution_year 1941 (P2); the radiocarbon work (1947) is in the same bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Berkeley, Columbia, Chicago, Washington, UCLA."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
@@ -117,7 +118,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1946–1952", certainty: 0.7, cites: [{source: S1, locator: "tritium and radiocarbon paragraphs"}, {source: S2, locator: "paragraphs 6, 8"}], how_known: "Tritium (1946) to Radiocarbon Dating (1952); coder's reading."}
-  age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S1, locator: "opening; 'On March 4, 1947'"}], how_known: "Born December 1908; first radiocarbon date March 1947."}
+  age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening; tritium paragraph, first sentence"}], how_known: "Born 17 December 1908; the Manhattan Project work began in 1941, so 32 (33 only from 17 December 1941). Was 38 (from March 1947) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement found."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement found.", certainty: 0.5, cites: [{source: S3, locator: "p. 3"}], how_known: "Nothing to date."}
   worldview_during_major_work: {value: TODO}
@@ -223,7 +224,7 @@ American farming family [S1; S2]. Context only.
 
 ## Timing
 
-First lasting contribution 1947, at 38 [S1].
+First lasting contribution 1941, the start of the gaseous-diffusion work for the Manhattan Project, at 32 [S1; S3]. Radiocarbon dating followed in 1947 [S1].
 
 ## Lane B notes (labeled belief model)
 
