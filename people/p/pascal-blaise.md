@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Blaise Pascal' (Clarke) and Britannica (Jerphagnon, first page). Worldview from the Pensées (Gutenberg copy of the Dutton 1958 English edition, §7 cap 0.7) and the Préface sur le Traité du vide (Brunschvicg–Boutroux 1923 edition, Wikisource transcription checked against the Internet Archive scan of pp. 131–132). DRAFT SCORES for v8's review: primary_system CHRIST 0.7; A 0, B 2, C 1, D 2, E 1, all at 0.7; mid_basin TODO (A ≤ 1 with B = 2). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #246: 'noblesse de robe' removed (not in the sources read). #236: D cites now fragments 269 and 278 only (273 was not used in the rationale). #250: value kept; the rationale now applies the written LIO definition and the open threshold is a method question for v8. Bylines: SEP now Clarke and Wood; Britannica now Jerphagnon and Orcibal. Pensées numbering note no longer says it follows Brunschvicg. Not reviewed."}
 
 identity:
   id: pascal-blaise
@@ -133,7 +134,7 @@ worldview:
       value: 2
       basis: consistent_private_letters
       certainty: 0.7
-      cites: [{source: S4, locator: "pp. 131–132"}, {source: S3, locator: "fragments 269, 273"}, {source: S1, locator: "§4"}]
+      cites: [{source: S4, locator: "pp. 131–132"}, {source: S3, locator: "fragments 269, 278"}, {source: S1, locator: "§4"}]
       how_known: "Préface checked against a scan of the 1923 edition; it is a draft published after his death, read with the Pensées (§7) and SEP; a named alternative (1)."
       rationale: "DRAFT. Two domains, each with its own authority, so D 2 (same-pattern rule). In theology authority 'a la principale force [...] parce qu’elle y est inseparable de la verité'; in subjects of sense and reasoning 'l’authorité y est inutile ; la raison seule a lieu d’en connoistre. Elles ont leurs droits separés' (Préface, pp. 131–132). Named alternative: 1, because in religion reason must submit ('Submission is the use of reason in which consists true Christianity', Pensées 269) and the heart, not reason, knows God (278)."
     E_scope:
@@ -202,11 +203,11 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Turn to Jansenist piety in 1646 (via the Deschamps brothers) and the conversion of the night of 23 November 1654 (the Memorial); after 1654 he left mathematics and the vacuum booklet aside for religious writing", year: "1646; 1654", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Two sources."}
-  coder_notes: "DRAFT SCORES for v8's review. The Pensées are posthumous notes (S1 §1: 'reliably attributed to Pascal only when he expressed similar views elsewhere'), so the basis used is consistent_private_letters (notebooks), not written_profession; see report method question. The Gutenberg Pensées uses its own (Brunschvicg-order) numbering; the numbers given are those printed in that copy, not Lafuma or Sellier numbers. The Provincial Letters were not opened; their words are SEP quotations. The Préface quotation is the only one checked against page images (Internet Archive scan of the 1923 Brunschvicg–Boutroux edition)."
+  coder_notes: "DRAFT SCORES for v8's review. The Pensées are posthumous notes (S1 §1: 'reliably attributed to Pascal only when he expressed similar views elsewhere'), so the basis used is consistent_private_letters (notebooks), not written_profession; see report method question. The Gutenberg Pensées uses its own numbering (not checked against Brunschvicg's order; lens audit run 2); the numbers given are those printed in that copy, not Lafuma or Sellier numbers. The Provincial Letters were not opened; their words are SEP quotations. The Préface quotation is the only one checked against page images (Internet Archive scan of the 1923 Brunschvicg–Boutroux edition)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "French; family of a provincial royal tax official (noblesse de robe)", certainty: 0.7, cites: [{source: S2, locator: "'Pascal’s life to the Port-Royal years'"}, {source: S1, locator: "§1"}], how_known: "Father's office from both sources; 'noblesse de robe' is the coder's label, not in the sources read (flag)."}
+  ethnic_or_communal_heritage: {value: "French; family of a provincial royal tax official", certainty: 0.7, cites: [{source: S2, locator: "'Pascal’s life to the Port-Royal years'"}, {source: S1, locator: "§1"}], how_known: "Father's office from both sources. The coder's label 'noblesse de robe' was removed: it is not in the sources read, and a value needs a cited source (lens audit #246)."}
   religious_heritage_by_birth: {value: "Roman Catholic", certainty: 1.0, cites: [{source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Britannica."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: TODO}
@@ -216,7 +217,7 @@ timing:
   major_work_period: {value: "1640–1662", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Essai (1640) to the Pensées notes at his death."}
   age_at_first_lasting_contribution: {value: 16, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Born June 1623; Essai 1640, so 16 or 17 depending on the month (not stated)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "Checked SEP §1–§4, Britannica's first page and the Pensées read: no LIO-type God-world view found; his lawful physics is paired with a transcendent, miracle-working God."}
-  lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "A 0 and E 1: a personal God acting in particular events.", certainty: 0.7, cites: [{source: S3, locator: "fragments 555, 838"}], how_known: "Coder's reading of the texts read."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "DATA_DICTIONARY defines lawful-order views as 'law without exemption'. His physics is lawful and reason alone rules in matters of sense and reasoning (S4, p. 132), but he holds that miracles continue in nature (B 2; fragments 803, 838) and that a personal God acts in particular events (A 0, E 1; fragments 555, 838), so no law-without-exemption view was found. The lens audit (#250, one run) proposed 'unclear'; the value is left pending a written threshold for 'LIO-type views' (method question).", certainty: 0.7, cites: [{source: S3, locator: "fragments 555, 803, 838"}, {source: S4, locator: "p. 132"}], how_known: "Coder's reading of the texts read, against the DATA_DICTIONARY definition."}
   worldview_during_major_work: {value: "Catholic throughout; Jansenist from 1646; intensified after 1654", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Two sources."}
 
 lane_b:
@@ -252,9 +253,9 @@ sources:
   - id: S1
     type: secondary
     kind: encyclopedia
-    author: "Desmond Clarke"
+    author: "Desmond Clarke and William Wood"
     year: 2015
-    citation: "Clarke, Desmond. \"Blaise Pascal.\" Stanford Encyclopedia of Philosophy (substantive revision 22 Jun 2015). https://plato.stanford.edu/entries/pascal/."
+    citation: "Clarke, Desmond, and William Wood. \"Blaise Pascal.\" Stanford Encyclopedia of Philosophy (substantive revision 22 Jun 2015). https://plato.stanford.edu/entries/pascal/."
     url: "https://plato.stanford.edu/entries/pascal/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; read in full. Cited by section. Its quotations of the Provincial Letters are secondary quotations (Le Guern's edition, volume and page)."
@@ -262,8 +263,8 @@ sources:
   - id: S2
     type: tertiary
     kind: encyclopedia
-    author: "Lucien Jerphagnon"
-    citation: "Jerphagnon, Lucien. \"Blaise Pascal.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Blaise-Pascal."
+    author: "Lucien Jerphagnon and Jean Orcibal"
+    citation: "Jerphagnon, Lucien, and Jean Orcibal. \"Blaise Pascal.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Blaise-Pascal."
     url: "https://www.britannica.com/biography/Blaise-Pascal"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
@@ -276,7 +277,7 @@ sources:
     citation: "Pascal, Blaise. Pascal's Pensées. Introduction by T. S. Eliot. New York: E. P. Dutton, 1958 (Dutton Paperback). Project Gutenberg eBook 18269, https://www.gutenberg.org/ebooks/18269."
     url: "https://www.gutenberg.org/ebooks/18269"
     accessed: 2026-10-02
-    reliability_note: "Unofficial web copy of an English translation (translator not named in the eBook text); capped at 0.7 under CODING_GUIDE §7. Cited by the fragment numbers printed in this copy (its notes say they follow Brunschvicg's edition); no page numbers except one taken from the translator's notes."
+    reliability_note: "Unofficial web copy of an English translation (translator not named in the eBook text); capped at 0.7 under CODING_GUIDE §7. Cited by the fragment numbers printed in this copy (the eBook says only that its notes are 'mainly based on those of M. Brunschvicg'; whether its numbering follows Brunschvicg's order was not checked); no page numbers except one taken from the translator's notes."
     used_for: [contribution, worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -343,3 +344,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 ## Research log
 
 - 2026-10-02: Read SEP "Blaise Pascal" (Clarke, full), Britannica (Jerphagnon, first page), the Pensées (Gutenberg 18269) and the Wikisource Préface (Brunschvicg–Boutroux 1923), and viewed the scan of pp. 131–132. Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Re-checked the SEP and Britannica bylines and the Gutenberg Pensées note on Brunschvicg; no new sources.
