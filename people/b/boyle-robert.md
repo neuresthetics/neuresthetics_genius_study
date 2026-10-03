@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P11: TCP transcriptions are authoritative copies under CODING_GUIDE §7, so the open question on S3/S4 is closed (coder notes, the self-described relation's how_known and both reliability notes cite P11; no value change). Decision P12: first_lasting_contribution_year 1660 → 1659 (start of the listed 1659–1660 air-pump item; Britannica), age 33 → 32; era unchanged. Small fixes on claims that hold: #22 comma restored in 'divers times, (and perhaps oftner' (TCP A28982, p. 160); #34 Church of England affiliation 1.0 → 0.7 (only Britannica names the church). Not reviewed."}
 
 identity:
   id: boyle-robert
@@ -34,7 +35,7 @@ basics:
   death:
     date: {value: "1691-12-31", calendar: julian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica; calendar style as for the birth date."}
     place: {value: "London", modern_name: "London, England, UK", polity_then: "Kingdom of England", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1660, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "New Experiments Physico-Mechanicall, Touching the Spring of the Air (1660), the air-pump work with Hooke."}
+  first_lasting_contribution_year: {value: 1659, certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1 ('In 1659 he and Robert Hooke [...] completed the construction of their famous air pump and used it to study pneumatics')"}], how_known: "The air-pump experiments with Hooke, the earliest listed contribution (1659–1660), taken at the start year (decisions P12, P13): Britannica dates the completed pump and its use to 1659; the results appeared in New Experiments Physico-Mechanicall (1660). Was 1660 (the publication year) until the batch 4 lens audit."}
   era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Ireland is Northern Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career'; 'Mature years in London'"}], how_known: "Oxford and London."}
@@ -84,19 +85,19 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1644–1691", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education' to 'Mature years in London'"}], how_known: "Return to England and Stalbridge to death."}
   nominal_affiliations:
-    - {value: "Church of England ('a devout and pious Anglican')", years: "–1691", role: "member", certainty: 1.0, cites: [{source: S1, locator: "'Theological activities'"}, {source: S2, locator: "§1 Life ('Christian Virtuoso because of his piety')"}], how_known: "Two sources; he declined a bishopric (S1)."}
+    - {value: "Church of England ('a devout and pious Anglican')", years: "–1691", role: "member", certainty: 0.7, cites: [{source: S1, locator: "'Theological activities'"}, {source: S2, locator: "§1 Life ('Christian Virtuoso because of his piety')"}], how_known: "One source names the church: Britannica ('a devout and pious Anglican'; he declined a bishopric). SEP confirms his Christian piety but does not name the Church of England, so 0.7 (CODING_GUIDE §3, other facts)."}
   self_described_science_religion_relation:
     value: "Mutually supporting: studying nature as God's handiwork is a religious duty; nature is matter moved by laws God established and upholds by his 'ordinary and general concourse'; God's providence over bodies can be 'a Bridge' from natural to revealed religion."
     certainty: 1.0
     cites: [{source: S3, locator: "pp. 8, 10–11"}, {source: S4, locator: "p. 42"}, {source: S1, locator: "'Theological activities'"}]
-    how_known: "His own published books in a scholarly transcription, agreeing with Britannica's summary."
+    how_known: "His own published books in the Text Creation Partnership transcriptions, an authoritative copy under CODING_GUIDE §7 (decision P11), agreeing with Britannica's summary."
   primary_system:
     value: CHRIST
     basis: written_profession
     certainty: 0.7
     cites: [{source: S3, locator: "pp. 15–16, 157–160"}, {source: S4, locator: "pp. 41–42, 117–118"}, {source: S1, locator: "'Theological activities'"}]
     how_known: "His own published books: Christ's and the apostles' miracles 'pleaded by Christians on the behalf of their Religion' (S3, pp. 15–16), revealed religion with its explicit law, penalties and rewards (S4, pp. 41–42), and a Divine testimony to be 'Believ'd, in what it clearly Teaches' (S4, p. 118)."
-    rationale: "CHRIST: a Christian apologist writing as a Christian (the Christian Virtuoso), with revealed religion, scripture and miracles affirmed. Named alternative: CLTHEI, since his God is a free personal Lord who can 'recede' from the laws of nature in miracles and who intervenes 'divers times (and perhaps oftner than mere Philosophers imagine)' (S3, pp. 160, 239–240). CLASS_THEISM rejected: he attacks the Aristotelian and scholastic 'Nature' (S3) and makes the laws God's free gift 'to Matter, not to Himself' (S3, p. 158), which is voluntarist, not Thomist. Capped at 0.7 for the CLTHEI alternative."
+    rationale: "CHRIST: a Christian apologist writing as a Christian (the Christian Virtuoso), with revealed religion, scripture and miracles affirmed. Named alternative: CLTHEI, since his God is a free personal Lord who can 'recede' from the laws of nature in miracles and who intervenes 'divers times, (and perhaps oftner than mere Philosophers imagine)' (S3, pp. 160, 239–240). CLASS_THEISM rejected: he attacks the Aristotelian and scholastic 'Nature' (S3) and makes the laws God's free gift 'to Matter, not to Himself' (S3, p. 158), which is voluntarist, not Thomist. Capped at 0.7 for the CLTHEI alternative."
   secondary_system: {value: UNKNOWN, how_known: "No second system: his natural philosophy is written inside his Christian theology."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Coded at 0.7: revealed Christianity, miracles of Christ and the apostles, revealed law with rewards and penalties.", cites: [{source: S3, locator: "pp. 15–16"}, {source: S4, locator: "pp. 41–42, 117–118"}]}
@@ -195,7 +196,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Christian conversion experience in Geneva in his teens; devotional writing first, then mature works on reason, nature and revelation", year: "1639–1690", certainty: 1.0, cites: [{source: S2, locator: "§1 Life"}, {source: S1, locator: "'Theological activities'"}], how_known: "Two sources."}
-  coder_notes: "S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). The TCP is a library partnership (Michigan, Oxford and others) transcribing a library scan, so it is treated as a primary transcription, not an unofficial web copy; the long s (ſ) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft."
+  coder_notes: "S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). Under decision P11 (2026-10-02) TCP transcriptions are authoritative copies under CODING_GUIDE §7 (scholarly keyed transcriptions of the named 1686 and 1690 editions, tied to their page images), so they are marked primary transcription and the 0.7 web-copy cap does not apply; the question the batch 4 coding run left open is settled; the long s (ſ) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -207,7 +208,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1659–1668", certainty: 1.0, cites: [{source: S1, locator: "'Scientific career' ('Much of Boyle's best-known work dates from this period')"}], how_known: "The Oxford years."}
-  age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Scientific career', paragraph 1"}], how_known: "Born January 1627; Spring of the Air published 1660 (month not given)."}
+  age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Scientific career', paragraph 1"}], how_known: "Born 25 January 1627; air pump completed and used in 1659 (month not given), so 32 for all but the first weeks of the year."}
   first_evidence_of_lio_type_views: {value: "Free Enquiry: laws of motion upheld by God's ordinary concourse", year: 1686, certainty: 1.0, cites: [{source: S3, locator: "pp. 8, 10"}], how_known: "Earliest dated statement read; his earlier theological writings were not read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The texts read (1686, 1690) are after the Oxford work; when they were drafted was not checked.", certainty: 0.5, cites: [{source: S3, locator: "title page (1685/6)"}, {source: S4, locator: "title page (1690)"}], how_known: "Dates of the texts read."}
   worldview_during_major_work: {value: TODO}
@@ -267,7 +268,7 @@ sources:
     citation: "Boyle, Robert. A Free Enquiry into the Vulgarly Receiv'd Notion of Nature. London: printed by H. Clark for John Taylor, 1685/6 [i.e. 1686]; published as 'by R.B., Fellow of the Royal Society'. Text Creation Partnership transcription of the EEBO page images, TCP A28982, https://raw.githubusercontent.com/textcreationpartnership/A28982/master/A28982.xml."
     url: "https://github.com/textcreationpartnership/A28982"
     accessed: 2026-10-02
-    reliability_note: "His own book in the TCP keyboarded transcription (CC0). Page numbers are the printed numbers recorded by TCP."
+    reliability_note: "His own book in the TCP keyboarded transcription (CC0), an authoritative copy under CODING_GUIDE §7 (decision P11). Page numbers are the printed numbers recorded by TCP."
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -277,7 +278,7 @@ sources:
     citation: "Boyle, Robert. The Christian Virtuoso. London: printed by Edw. Jones for John Taylor, 1690; published as 'by T.H.R.B., Fellow of the Royal Society'. Text Creation Partnership transcription of the EEBO page images, TCP A28945, https://raw.githubusercontent.com/textcreationpartnership/A28945/master/A28945.xml."
     url: "https://github.com/textcreationpartnership/A28945"
     accessed: 2026-10-02
-    reliability_note: "His own book in the TCP keyboarded transcription (CC0), with long s as printed. Page numbers are the printed numbers recorded by TCP."
+    reliability_note: "His own book in the TCP keyboarded transcription (CC0), with long s as printed; an authoritative copy under CODING_GUIDE §7 (decision P11). Page numbers are the printed numbers recorded by TCP."
     used_for: [contribution, worldview]
   - id: S5
     type: secondary
@@ -320,7 +321,7 @@ Anglo-Irish aristocracy [S1]. Context only.
 
 ## Timing
 
-First lasting contribution 1660, at about 33 [S1]. The worldview texts read are from 1686 and 1690.
+First lasting contribution 1659, the air pump completed with Hooke, at about 32 [S1]. The worldview texts read are from 1686 and 1690.
 
 ## Lane B notes (labeled belief model)
 
