@@ -16,12 +16,12 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Item | Status |
 |---|---|
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
-| People coded (of core) | 31 / 441 (draft, unreviewed) |
+| People coded (of core) | 43 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
 | Decisions settled | 28 / 28 |
 | Audits | 9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a 124-claim packet (d9903b7/43cecc4; fixes at 6f37cd6) and 2 on a 165-claim packet (b21655b; run 1 155 hold / 10 weaken, run 2 160 hold / 5 weaken, 0 wrong; agreement 156/165, κ 0.37; fixes applied at 3bcd59c); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | People batch 4 (the last of the 1600–1950 physical-science pool, RUNBOOK §1 step 2) has been lens-audited and fixed, so the pool is complete; stage 3 (everyone else with F ≥ 3) is next and has started; source the ATHE, AGNOS and IDEAL system stubs first; the revised rubric has not started |
+| Next steps | Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts whose lens audit fixes are not yet applied; source the ATHE, AGNOS and IDEAL system stubs; the revised rubric has not started |
 
 <!-- END GENERATED: progress -->
 
