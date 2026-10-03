@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Beyler, first page), MacTutor and the Nobel biography. Worldview from his own Guardini Prize lecture (Munich 1973), read in the English translation 'Scientific Truth and Religious Truth', CrossCurrents 24:4 (1975), 463–473, as a scan of the JSTOR page images. primary_system PLATO at 0.7 (CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7); C, E BELOW_THRESHOLD; mid_basin TODO (A = 2). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Self-described relation lowered from 1.0 to 0.7 under the CODING_GUIDE §7 unofficial-web-copy cap (S4 read from a user upload of the JSTOR PDF, not JSTOR itself)."}
 
 identity:
   id: heisenberg-werner
@@ -93,9 +94,9 @@ worldview:
     - {value: "Raised Evangelical Lutheran", years: "1901–", role: "member by upbringing", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "MacTutor; adult membership not checked in the sources read."}
   self_described_science_religion_relation:
     value: "Two truths in two languages: 'I am convinced of the unassailability of scientific truth in its own sphere', yet he could never dismiss religious thinking or 'doubt the truth of what they are pointing to'; religion is a poetic language of images and parables for the order behind phenomena and the basis of ethics, and the two languages must not be confused."
-    certainty: 1.0
+    certainty: 0.7
     cites: [{source: S4, locator: "pp. 463, 467, 471–472"}]
-    how_known: "His own published lecture (1973; English 1975), checked on the page images of the journal."
+    how_known: "His own published lecture (1973; English 1975), checked on the journal page images in a user-uploaded copy of the JSTOR PDF. Capped at 0.7 under CODING_GUIDE §7: the copy is unofficial and its wording was not checked on JSTOR itself (lending/subscription)."
   primary_system:
     value: PLATO
     basis: written_profession
