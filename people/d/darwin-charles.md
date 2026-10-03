@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from Britannica (Desmond, first page). Worldview from the Autobiography (Barlow ed. 1958, Darwin Online; pp. 87 and 94 checked on the page scans), three letters in the Darwin Correspondence Project (Gray 1860, Fordyce 1879, McDermott 1880), the DCP essay 'What did Darwin believe?', the Origin (1859, p. 488 checked on the scan) and the Descent (1871). primary_system BELOW_THRESHOLD (AGNOS candidate, stub). A 2 (0.7), B 4 (0.7), C 4 (0.7), D 4 (0.7), E 4 (0.7); mid_basin TODO (A = 2). All scores are drafts for v8's review. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #14, #15: geologist and geology now cite Britannica's later sections ('The London years, 1836–42'; 'The squire naturalist in Downe'), not the opening. #32: Paley taken out of early_geometric_style_reasoning (read for the B.A. of January 1831, at about 21; S1 p. 59 and footnote), and key_early_reading dated. #65: Beagle role is 'self-financed gentleman companion' to Fitzroy, not surgeon-naturalist (Britannica). #39: value unchanged; the reason now names its actual basis (v8's batch instructions, not a written rule) and says it awaits v8's ruling. #50: the mid_basin TODO now cites CODING_GUIDE §6 (P4) instead of an unwritten rule. Left for v8 as method questions: #7/#9 (whether Coral Reefs, 1842, must be listed; it would move the era) and #39 (stub systems). Not reviewed."}
 
 identity:
   id: darwin-charles
@@ -48,10 +49,10 @@ basics:
   region_of_work: {value: "Northern Europe", certainty: 1.0, cites: [{source: S8, locator: "opening; Died line"}], how_known: "Worked in England (Down House, Kent) after the Beagle voyage."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S8, locator: "opening"}], how_known: "As the sources record it."}
   languages_of_work: {value: [English], certainty: 1.0, cites: [{source: S6, locator: "title page"}], how_known: "His books are in English."}
-  occupations: {value: ["naturalist", "geologist"], certainty: 0.7, cites: [{source: S8, locator: "opening"}], how_known: "Britannica."}
+  occupations: {value: ["naturalist", "geologist"], certainty: 0.7, cites: [{source: S8, locator: "opening ('English naturalist')"}, {source: S8, locator: "'Evolution by natural selection: the London years, 1836–42' ('a gentleman geologist') and 'The squire naturalist in Downe' (books on coral reefs and South American geology 'secured his reputation as a career geologist'), section pages reopened 2026-10-02"}], how_known: "Britannica: 'naturalist' in the opening; 'geologist' in the later sections named in the second cite (the opening does not say it)."}
 
 contribution:
-  fields: {value: ["natural history", "evolutionary biology", "geology"], certainty: 0.7, cites: [{source: S8, locator: "opening"}], how_known: "Britannica."}
+  fields: {value: ["natural history", "evolutionary biology", "geology"], certainty: 0.7, cites: [{source: S8, locator: "opening"}, {source: S8, locator: "'Evolution by natural selection: the London years, 1836–42' ('a gentleman geologist') and 'The squire naturalist in Downe' (books on coral reefs and South American geology 'secured his reputation as a career geologist'), section pages reopened 2026-10-02"}], how_known: "Britannica: natural history and evolutionary studies in the opening; geology in the later sections named in the second cite."}
   lasting_original_contributions:
     - {value: "Theory of evolution by natural selection", year: "1859", kind: theory, lasting: "foundation of modern biology", certainty: 1.0, cites: [{source: S6, locator: "pp. 488–490"}, {source: S8, locator: "opening"}], how_known: "His own book and Britannica."}
     - {value: "Descent of humans from earlier, less highly organised forms", year: "1871", kind: theory, lasting: "standard biology", certainty: 1.0, cites: [{source: S7, locator: "vol. 2, p. 385"}], how_known: "His own book."}
@@ -76,11 +77,11 @@ childhood:
     - {value: "University of Edinburgh, medicine", stage: university, years: "1825–1827", certainty: 0.7, cites: [{source: S8, locator: "'Early life and education'"}], how_known: "Britannica ('his two years at Edinburgh')."}
     - {value: "Christ's College, Cambridge (intended for the church)", stage: university, years: "1828–", certainty: 0.7, cites: [{source: S8, locator: "'Early life and education'"}], how_known: "Britannica."}
   early_mathematics: {value: "geometry (Euclid-style proof)", note: "'I was taught Euclid by a private tutor, and I distinctly remember the intense satisfaction which the clear geometrical proofs gave me.'", certainty: 1.0, cites: [{source: S1, locator: "p. 43"}], how_known: "His own account."}
-  early_geometric_style_reasoning: {value: "Euclid with a tutor at school; at Cambridge, Paley's Evidences and Natural Theology, whose logic 'gave me as much delight as did Euclid'", certainty: 0.7, cites: [{source: S1, locator: "pp. 43, 59"}], how_known: "His own account; the Cambridge reading falls just after 17."}
+  early_geometric_style_reasoning: {value: "Euclid with a private tutor while at school", certainty: 0.7, cites: [{source: S1, locator: "p. 43 ('I was taught Euclid by a private tutor'); p. 59 ('Euclid, which latter gave me much pleasure, as it did whilst at school')"}], how_known: "His own account. Paley is not counted here: he read Paley's Evidences and Natural Theology for his B.A. examination in his last Cambridge year (S1, p. 59; Francis Darwin's footnote there: 'Tenth in the list of January 1831'), at about 21, not in childhood."}
   early_science_exposure:
     - {value: "Edinburgh: dissenting science and Robert Edmond Grant", year: 1825, age: 16, certainty: 0.7, cites: [{source: S8, locator: "'Early life and education'"}], how_known: "Britannica."}
   key_early_reading:
-    - {value: "Paley, Evidences of Christianity and Natural Theology (Cambridge)", certainty: 1.0, cites: [{source: S1, locator: "p. 59"}], how_known: "His own account."}
+    - {value: "Paley, Evidences of Christianity and Natural Theology (Cambridge, last year before the B.A. of January 1831, at about 21; after childhood)", certainty: 1.0, cites: [{source: S1, locator: "p. 59 and footnote"}], how_known: "His own account; the date is from Francis Darwin's footnote ('Tenth in the list of January 1831')."}
   childhood_mentors: []
   languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S8, locator: "'Early life and education'"}], how_known: "English family."}
   notable_events:
@@ -98,8 +99,8 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S1, locator: "pp. 92–94"}, {source: S2, locator: "letter text"}]
-    how_known: "Best fit is AGNOS: 'I for one must be content to remain an Agnostic' (S1, p. 94) and 'an agnostic would be the most correct description of my state of mind' (S2, 1879). AGNOS is a stub system file, so it is not coded (batch rule); on the evidence it would be AGNOS at 0.7 (consistent_private_letters)."
-    note: "Draft judgment (one line): coded BELOW_THRESHOLD only because the AGNOS file is a stub; backlog note raised."
+    how_known: "Best fit is AGNOS: 'I for one must be content to remain an Agnostic' (S1, p. 94) and 'an agnostic would be the most correct description of my state of mind' (S2, 1879). AGNOS is a stub system file. It is left uncoded because the stage 3 batch B instructions from v8 said a best fit that is a stub file stays BELOW_THRESHOLD, with a backlog note. No written methods section (CODING_GUIDE, METHOD, OPEN_DECISIONS) states that, and other records code stub systems, so this value awaits v8's ruling. On the evidence alone it would be AGNOS at 0.7 (consistent_private_letters)."
+    note: "Draft judgment (one line): BELOW_THRESHOLD only because AGNOS is a stub, following the batch instructions; awaiting v8's ruling on stub systems; backlog note raised."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "Best fit, not coded because AGNOS is a stub system file (flag): his own late self-description in private writing (S1, p. 94; S2). The DCP editors add: 'Is he then an agnostic? Yes, but not all of the time' (S5).", cites: [{source: S1, locator: "p. 94"}, {source: S2, locator: "letter text"}, {source: S5, locator: "section on the Fordyce letter"}]}
@@ -142,7 +143,7 @@ worldview:
       cites: [{source: S6, locator: "pp. 488–489"}, {source: S7, locator: "vol. 2, p. 385"}, {source: S3, locator: "letter text"}]
       how_known: "His published books for humans under the same laws as other organisms; the 'no favour in events' part comes from a private letter, and there is a named alternative, so 0.7 (not 1.0)."
       rationale: "Scored on the world's order (P7). The same laws for all kinds, humans included: 'Light will be thrown on the origin of man and his history' (S6, p. 488); 'man is descended from some less highly organised form' (S7, p. 385); and events fall on the good and the bad alike (S3). Named alternative: 3, because in 1860 he still allowed that all these laws 'may have been expressly designed by an omniscient Creator' (S3); design of the whole is not favour for a group, so it is not preferred."
-  mid_basin: {value: TODO, how_known: "A_locus = 2: the P4 test has no branch for A = 2 (false needs A ≥ 3, or A ≤ 1 with B ≤ 1), so TODO by the batch rule. If v8 takes the named alternative A = 1 at 0.7 with B 4 at 0.7, mid_basin would be true."}
+  mid_basin: {value: TODO, how_known: "A_locus = 2: the P4 test has no branch for A = 2 (false needs A ≥ 3, or A ≤ 1 with B ≤ 1), so TODO under CODING_GUIDE §6 (mid-basin test, decision P4: TODO when both axes are scored at ≥ 0.7 but A_locus = 2, a case with no branch). If v8 takes the named alternative A = 1 at 0.7 with B 4 at 0.7, mid_basin would be true."}
   statements:
     - text: "Whilst on board the Beagle I was quite orthodox"
       cites: [{source: S1, locator: "p. 85"}]
@@ -294,7 +295,7 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "HMS Beagle survey voyage", role: "naturalist", years: "1831–1836", kind: other, certainty: 0.7, cites: [{source: S8, locator: "map caption 'HMS Beagle in 1831–36'"}], how_known: "Britannica."}
+  - {value: "HMS Beagle survey voyage", role: "self-financed gentleman companion to the captain, Robert Fitzroy (not the ship's surgeon-naturalist)", years: "1831–1836", kind: other, certainty: 0.7, cites: [{source: S8, locator: "map caption 'HMS Beagle in 1831–36'"}, {source: S8, locator: "'Early life and education', the Beagle sentence ('not as a lowly surgeon-naturalist but as a self-financed gentleman companion to the 26-year-old captain')"}], how_known: "Britannica."}
 collaborators:
   - {value: "Asa Gray", relation: correspondent, note: "1860 letter on design", certainty: 1.0, cites: [{source: S3, locator: "letter text"}], how_known: "The letter."}
   - {value: "Robert Edmond Grant", relation: teacher, note: "Edinburgh", certainty: 0.7, cites: [{source: S8, locator: "'Early life and education'"}], how_known: "Britannica."}
@@ -304,11 +305,11 @@ review:
   controversies:
     - {value: "Whether his late view is agnostic or a fluctuating theism; the DCP editors answer 'Is he then an agnostic?' with 'Yes, but not all of the time'", certainty: 0.7, cites: [{source: S5, locator: "section on the Fordyce letter"}], how_known: "Project editors' essay."}
   data_quality_flags:
-    - "Britannica read as its first page only."
+    - "Britannica read as its first page, plus the section pages 'Evolution by natural selection: the London years, 1836–42' (which also carries 'The squire naturalist in Downe') and 'The Beagle voyage', reopened 2026-10-02."
     - "The Autobiography is private writing for his family (S5); it is treated as consistent_private_letters, not as a public profession."
     - "first_lasting_contribution_year sits on an era boundary (1859 public vs 1837–39 private)."
   open_questions:
-    - "Should AGNOS be drafted so that Darwin can be coded (backlog)?"
+    - "Can a stub system be coded? Awaiting v8's ruling; otherwise AGNOS needs drafting before Darwin can be coded (backlog)."
     - "Which religion passages of the Autobiography are 1876 text and which are later addenda (Barlow, p. 5; footnote p. 92)."
 
 sources:
@@ -388,7 +389,7 @@ sources:
     citation: "Desmond, Adrian J. \"Charles Darwin.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Charles-Darwin."
     url: "https://www.britannica.com/biography/Charles-Darwin"
     accessed: 2026-10-02
-    reliability_note: "Signed article; first page only. Cited by section."
+    reliability_note: "Signed article. First page read; the section pages 'Evolution by natural selection: the London years, 1836–42' (with 'The squire naturalist in Downe') and 'The Beagle voyage' reopened 2026-10-02 for the geology and Beagle claims. Cited by section."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S9
     type: secondary
@@ -419,7 +420,7 @@ Evolution by natural selection [S6, pp. 488–490] and the descent of humans fro
 
 ## Childhood and education
 
-His mother, a Wedgwood, was a Unitarian and died in 1817; the boys were christened in the Church of England [S1, pp. 22–23; S8]. He was taught Euclid by a private tutor and remembered "the intense satisfaction which the clear geometrical proofs gave me" [S1, p. 43]; at Cambridge, Paley's logic "gave me as much delight as did Euclid" [S1, p. 59].
+His mother, a Wedgwood, was a Unitarian and died in 1817; the boys were christened in the Church of England [S1, pp. 22–23; S8]. He was taught Euclid by a private tutor and remembered "the intense satisfaction which the clear geometrical proofs gave me" [S1, p. 43]. Later, reading Paley for his B.A. examination (January 1831, at about 21), he found its logic "gave me as much delight as did Euclid" [S1, p. 59].
 
 ## Adult working worldview
 
@@ -439,9 +440,10 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- AGNOS needs a sourced system file before Darwin can be coded.
+- Whether a stub system can be coded awaits v8's ruling; otherwise AGNOS needs a sourced system file before Darwin can be coded.
 - Which religion passages of the Autobiography are later addenda [S1, p. 5].
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Desmond, first page); the Autobiography on Darwin Online (pp. 87 and 94 checked on the scans); DCP letters 2814, 12041 and 12851 and the essay 'What did Darwin believe?'; the Origin (p. 488 checked on the scan) and the Descent, vol. 2.
+- 2026-10-02 (lens audit fixes): Reopened Britannica's section pages ('The London years, 1836–42', with 'The squire naturalist in Downe'; 'The Beagle voyage') and the first page's 'Early life and education'; reopened the Autobiography p. 59 with Francis Darwin's footnote.
