@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 2
+  schema_version: "1.2"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: fermi-enrico

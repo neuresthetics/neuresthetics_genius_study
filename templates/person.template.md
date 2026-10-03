@@ -9,7 +9,7 @@
 # Competing sources:               fill value with the best-supported one, certainty 0.5, and list the rest under alternatives.
 record:
   record_type: person
-  schema_version: "1.1"
+  schema_version: "1.2"
   record_version: 1
   review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision; only a named human sets reviewed (P5)
   collected_by: TODO                      # person or agent that ran the collection
@@ -77,7 +77,7 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
   working_years: {value: TODO}            # e.g. "1812–1862"
   nominal_affiliations: []                # church / community membership, offices held. Membership is not ideology.
   self_described_science_religion_relation: {value: TODO}
-  primary_system: {value: TODO}           # a code in systems/; needs basis + certainty that match
+  primary_system: {value: TODO}           # a code in systems/; needs basis + certainty within its ceiling (written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7, scholarly_reconstruction 0.5)
   secondary_system: {value: TODO}         # only if they published in two systems; else value: UNKNOWN with how_known
   candidate_codes_considered: []          # - {code: CLTHEI, reason: "..."}
   lio_axes:                               # 0–4 scale (P1): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole

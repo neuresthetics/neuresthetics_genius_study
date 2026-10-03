@@ -206,7 +206,7 @@ There are three grades. Worldview claims use the v7.1 scale:
 | grade | basis |
 |---|---|
 | 1.0 | written profession |
-| 0.7 | consistent private letters |
+| 0.7 | consistent private letters, or the person's own words in a recorded interview (P8) |
 | 0.5 | scholarly reconstruction |
 
 Other facts use 1.0 established, 0.7 probable, 0.5 contested. Below 0.5, the value is withheld. Details are in [CODING_GUIDE.md](CODING_GUIDE.md#3-certainty).

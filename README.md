@@ -18,7 +18,7 @@ A study of where remembered genius sits on a scale of lawful, non-intervening or
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
 | People coded (of core) | 22 / 441 (draft, unreviewed) |
 | Belief systems sourced | 9 / 77 (the rest are stubs) |
-| Decisions settled | 21 / 21 |
+| Decisions settled | 24 / 24 |
 | Audits | 5 blind lens runs on two batches: 3 on a 115-claim packet (eff4700) and 2 on a 147-claim packet (e648145); see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md) |
 | Latest tag | `v8.0-alpha` (prerelease) |
 | Next steps | Finish the 1600–1950 physical-science pool (RUNBOOK §1 step 2), then everyone else with F ≥ 3; fill the system stubs; the revised rubric has not started |

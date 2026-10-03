@@ -41,8 +41,8 @@
           "description": "Fixed: tells the validator which schema applies."
         },
         "schema_version": {
-          "const": "1.1",
-          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes."
+          "const": "1.2",
+          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'."
         },
         "record_version": {
           "type": "integer",
@@ -1169,9 +1169,10 @@
       "enum": [
         "written_profession",
         "consistent_private_letters",
+        "recorded_interview",
         "scholarly_reconstruction"
       ],
-      "description": "Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it."
+      "description": "Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7 (the person's own first-person words in a recorded or transcribed interview, decision P8), scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it."
     },
     "lioScore": {
       "type": "integer",
@@ -2286,7 +2287,7 @@
         },
         "basis": {
           "$ref": "#/$defs/basis",
-          "description": "written_profession (1.0), consistent_private_letters (0.7), or scholarly_reconstruction (0.5)."
+          "description": "written_profession (1.0), consistent_private_letters (0.7), recorded_interview (0.7), or scholarly_reconstruction (0.5)."
         },
         "rationale": {
           "type": "string",
@@ -2404,6 +2405,7 @@
             "written profession (public)",
             "private letter",
             "notebook or diary",
+            "recorded interview",
             "reported speech",
             "other"
           ]

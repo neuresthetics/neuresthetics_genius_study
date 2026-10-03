@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 1
+  schema_version: "1.2"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
 
 identity:
   id: bohr-niels
@@ -122,7 +123,7 @@ worldview:
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S4, locator: "p. 20"}, {source: S7, locator: "Session I (religion)"}]
-      how_known: "Heilbron's reconstruction from family letters and interviews; no statement in Bohr's own published words."
+      how_known: "Heilbron's reconstruction from family letters and interviews; no statement in Bohr's own published words. Rechecked under decision P8 (2026-10-02): the score rests on Heilbron (S4); the AIP interview (S7) is his widow's reported speech and can only be paraphrased, so it only supports the score, which P8 allows. Unchanged."
       rationale: "Impersonal consequence or none. Heilbron reports that he questioned 'not only the doctrine but also the concept' of salvation ('what could it mean to have a saved soul?') and concluded that 'Christian theology was nonsense' (S4, p. 20); Margrethe Bohr said he held religion untrue all the years she knew him (S7). No judgement, afterlife or personal reckoning is affirmed anywhere read."
     D_authority:
       value: 4
@@ -160,7 +161,7 @@ worldview:
   changes_over_life:
     - {value: "A period of taking religion seriously in early adolescence, then complete rejection of Christian theology", year: "c. 1899–1900", certainty: 0.7, cites: [{source: S4, locator: "p. 20"}, {source: S7, locator: "Session I (religious training)"}], how_known: "Two accounts agree; dates approximate."}
     - {value: "Left the Danish State Church before his civil wedding", year: "1912", certainty: 1.0, cites: [{source: S4, locator: "p. 20"}, {source: S5, locator: "1912, 'Apr 16'"}], how_known: "Two sources."}
-  coder_notes: "ATHE and AGNOS are stub system files (flag). All quotations of Bohr are from his Danish letters in the English translation used by Heilbron (from Aaserud & Heilbron 2013), so they are secondary quotations. The AIP transcript (S7) is reported speech (his widow and, in one passage, apparently Rosenfeld) and carries an AIP no-quotation notice, so it is paraphrased, not quoted at length, and it is never used as a written profession."
+  coder_notes: "ATHE and AGNOS are stub system files (flag). All quotations of Bohr are from his Danish letters in the English translation used by Heilbron (from Aaserud & Heilbron 2013), so they are secondary quotations. The AIP transcript (S7) is reported speech (his widow and, in one passage, apparently Rosenfeld) and carries an AIP no-quotation notice, so it is paraphrased, not quoted at length, and it is never used as a written profession. Rechecked under decision P8 (2026-10-02): P8's recorded_interview basis covers only the person's own first-person words, so it does not apply to S7 (other people's words about Bohr); and as a paraphrase-only source S7 scores nothing on its own. It supports C_ledger, which rests on Heilbron, and appears in primary_system (BELOW_THRESHOLD), nominal_affiliations and changes_over_life as a fact source. No score changed."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

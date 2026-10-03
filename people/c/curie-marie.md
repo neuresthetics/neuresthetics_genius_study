@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 3
+  schema_version: "1.2"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (first page), the Nobel biography and the AIP exhibit (Pasachoff). Worldview from her own Pierre Curie with Autobiographical Notes (1923, Kellogg translation, Project Gutenberg) and two 1887 letters quoted in Eve Curie's Madame Curie (1937, Sheean translation, archive.org OCR). Raised Catholic; faith lost after her mother's death; civil wedding. primary_system AGNOS at 0.5 (stub system; ATHE named). B 4 (0.7), D 4 (0.5); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #108: primary_system AGNOS (0.5) → BELOW_THRESHOLD, candidates AGNOS and ATHE; the AGNOS choice rested on the absence of a denial of God, and AIP p. 57 ('liberal freethinkers like Marie and her friends') fits either code. Finding #112: D_authority 4 (0.5) → BELOW_THRESHOLD (scored from absence; same as Fermi). Finding #126: the p. 77 'nothingness' line is about obscurity, not death; C_ledger tag and the reliance in primary_system and C removed. Finding #120: 1898 locator AIP p. 36, not p. 22. Eve Curie page numbers confirmed against the scans; the 'one page either way' caveat is removed and the archive.org image-index offset is noted. mid_basin unchanged (BELOW_THRESHOLD). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S3 (Project Gutenberg text of Pierre Curie, 1923) is an unofficial copy. Checked it against S7, the Phillips Academy library scan of the 1923 Macmillan edition (Internet Archive). Every quotation and every S3 fact used by the eleven certainty-1.0 fields that cite S3 was found word for word: native_name, birth date, family_religion, father, household_circumstances, early_science_exposure, childhood_mentors, notable_events, nominal_affiliations, ethnic_or_communal_heritage, religious_heritage_by_birth. Added S7 cites with printed page numbers to those fields and to the two S3 quotations; the two quotations' verified_against goes from primary transcription to primary facsimile. All stay at 1.0. No value, certainty or mid_basin change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: curie-marie

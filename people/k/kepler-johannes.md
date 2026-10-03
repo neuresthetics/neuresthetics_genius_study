@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 2
+  schema_version: "1.2"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Westman), MacTutor (J. V. Field) and SEP (Di Liscia). Worldview from SEP and MacTutor (scholars' readings) and one letter quoted by the Bodleian's Cultures of Knowledge project. No primary text of Kepler's was read. CHRIST (Lutheran, excommunicated 1612) at 0.5; PLATO named. A 1, B 4, D 3, E 4, all at 0.5; C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A at 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #78: B_cause 4 → 3 at 0.5; MacTutor quotes him on the 1604 nova allowing a 'special creation' only after trying 'everything else' (De stella nova ch. 22), a stated limited exception; statement added. Finding #81: E_scope 4 (0.5) → BELOW_THRESHOLD, the same thin evidence as Fermi, Meitner and Curie (§3 same pattern). Finding #83: self_described_science_religion_relation 0.7 → 0.5 (single-letter rule, §3). mid_basin unchanged (BELOW_THRESHOLD; A 1 and B 3 both at 0.5). primary_system unchanged (CHRIST 0.5). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: kepler-johannes

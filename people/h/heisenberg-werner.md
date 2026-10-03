@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 1
+  schema_version: "1.2"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Beyler, first page), MacTutor and the Nobel biography. Worldview from his own Guardini Prize lecture (Munich 1973), read in the English translation 'Scientific Truth and Religious Truth', CrossCurrents 24:4 (1975), 463–473, as a scan of the JSTOR page images. primary_system PLATO at 0.7 (CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7); C, E BELOW_THRESHOLD; mid_basin TODO (A = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Self-described relation lowered from 1.0 to 0.7 under the CODING_GUIDE §7 unofficial-web-copy cap (S4 read from a user upload of the JSTOR PDF, not JSTOR itself)."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "record_version corrected to 3 (the 1f3c4bf fix did not raise it). Decision P9: the §7 cap (0.7) on fields resting on the JSTOR-PDF copy is kept, since its provenance cannot be confirmed from the copy; reading the article on JSTOR would lift it. Notes only; no score changed. Schema 1.1 → 1.2."}
 
 identity:
   id: heisenberg-werner
@@ -96,7 +97,7 @@ worldview:
     value: "Two truths in two languages: 'I am convinced of the unassailability of scientific truth in its own sphere', yet he could never dismiss religious thinking or 'doubt the truth of what they are pointing to'; religion is a poetic language of images and parables for the order behind phenomena and the basis of ethics, and the two languages must not be confused."
     certainty: 0.7
     cites: [{source: S4, locator: "pp. 463, 467, 471–472"}]
-    how_known: "His own published lecture (1973; English 1975), checked on the journal page images in a user-uploaded copy of the JSTOR PDF. Capped at 0.7 under CODING_GUIDE §7: the copy is unofficial and its wording was not checked on JSTOR itself (lending/subscription)."
+    how_known: "His own published lecture (1973; English 1975), checked on the journal page images in a user-uploaded copy of the JSTOR PDF. Capped at 0.7 under CODING_GUIDE §7: the copy is unofficial and its wording was not checked on JSTOR itself (lending/subscription). Decision P9 (2026-10-02) keeps the cap because the copy's provenance cannot be confirmed from the copy itself; reading the article directly on JSTOR (stable/24457901) would lift it."
   primary_system:
     value: PLATO
     basis: written_profession
@@ -221,7 +222,7 @@ review:
     - {value: "His role in the German nuclear weapons programme during World War II", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Second World War paragraph"}], how_known: "Two sources."}
   data_quality_flags:
     - "S4 is an anonymous English translation of a German lecture; the German text (Universitas 1974; Schritte über Grenzen) was not compared."
-    - "S4's access copy is a user upload to the Internet Archive of the JSTOR PDF (publisher's page images). Treated as a facsimile of the publisher's text under CODING_GUIDE §7; reviewers may prefer to recheck on JSTOR (https://www.jstor.org/stable/24457901)."
+    - "S4's access copy is a user upload to the Internet Archive of the JSTOR PDF (apparently the publisher's page images). Its provenance cannot be confirmed from the copy itself, so fields resting on it are capped at 0.7 under CODING_GUIDE §7 (decision P9, 2026-10-02). Reading the article directly on JSTOR (https://www.jstor.org/stable/24457901) would lift the cap."
     - "Britannica read as its first page only."
   open_questions:
     - "Read Der Teil und das Ganze (1969), chs. 7 and 17, and Physics and Philosophy (1958), keeping his own lines apart from the reconstructed lines of Pauli, Dirac and Bohr."

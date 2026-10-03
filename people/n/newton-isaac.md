@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 7
+  schema_version: "1.2"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23): E_scope certainty 1.0 -> 0.7. E is scored on natural philosophy only, while other records score it on salvation scope; the domain is open item P7 (PROPOSED). Score unchanged (3). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3 at 0.7. The interim P7 cap is gone, but certainty stays 0.7 under CODING_GUIDE §3, because the new rule makes a named alternative (2): his private articles petition the Father for 'blessings of this life' (S9, article 8). Rationale and statement tags updated; P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S6 (Project Gutenberg Opticks, 4th ed. 1730) is an unofficial copy. Checked it against S14, the University of California library scan of the 1730 edition (Internet Archive), with a second scan (Oxford copy) to resolve OCR noise. The five Query 31 quotations and the Query 28 passage agree word for word. Added S14 cites with the printed 1730 pages to the four certainty-1.0 fields that cite S6 (languages_of_work, major_works Opticks, self-described relation, A_locus) and to the five quotations, whose verified_against goes from primary transcription to primary facsimile. All stay at 1.0. Noted that S6's page markers run about 24 pages above the 1730 pagination. No value, certainty or mid_basin change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: newton-isaac

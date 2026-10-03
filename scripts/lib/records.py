@@ -6,7 +6,7 @@ from jsonschema import Draft202012Validator
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 SENTINELS = {"TODO", "UNKNOWN", "BELOW_THRESHOLD"}
-BASIS_CERTAINTY = {"written_profession": 1.0, "consistent_private_letters": 0.7, "scholarly_reconstruction": 0.5}
+BASIS_CERTAINTY = {"written_profession": 1.0, "consistent_private_letters": 0.7, "recorded_interview": 0.7, "scholarly_reconstruction": 0.5}
 CITE_IN_BODY = re.compile(r"\[(S\d+(?:[^\]]*)?)\]")
 SOURCE_ID = re.compile(r"\bS\d+\b")
 
@@ -115,6 +115,7 @@ def common_checks(data, body, required_sections):
         if basis and claim_state(c) == "FILLED":
             # The basis sets a ceiling (CODING_GUIDE §3): certainty may sit below it (contested readings,
             # indirect evidence) but never above it, and must be one of the three levels.
+            # recorded_interview (decision P8, schema 1.2) has the same 0.7 ceiling as consistent letters.
             want = BASIS_CERTAINTY[basis] if basis in BASIS_CERTAINTY else None
             cert = c.get("certainty")
             if want is not None and (cert not in (1.0, 0.7, 0.5) or cert > want):

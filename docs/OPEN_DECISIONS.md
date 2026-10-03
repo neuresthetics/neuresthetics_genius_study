@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason. As of 2026-10-02 no item is open (P7 was decided on 2026-10-02). When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P8, P9, S7). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -8,7 +8,7 @@ Choices that need Jason's sign-off. Items under "Decided" were signed off by Jas
 
 ## Summary of recommendations (v8 agent, 2026-10-01)
 
-The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
+The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later, were decided on 2026-10-02. P8, P9 and S7 came out of the third people batch and were decided the same day as v8's picks (7:24 PM PT). Evidence files are in `reports/` (`r7_bucket_spotcheck.csv`, `r7_field_string_review.csv`).
 
 | ID | Recommendation | Confidence | Status |
 |---|---|---|---|
@@ -33,17 +33,20 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | S6 | Two-part PANT test; host tradition or PANENT for Advaita/Kabbalah; STOIC for Stoics | medium | decided 2026-10-01 |
 | P6 | P4: score B_cause on the person's account of nature; TODO (not UNKNOWN) when the test has no branch | medium | decided 2026-10-02 (added by the people run) |
 | P7 | E_scope domain: score on the world's order (this-world events); salvation and election go to C | medium | decided 2026-10-02, option 1 (added by the lens audit, run 2) |
+| P8 | Recorded interviews: the person's own first-person words, basis recorded_interview, ceiling 0.7; paraphrase-only cannot score alone | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
+| P9 | Batch 3 record calls: keep Heisenberg's §7 cap; Pasteur era literal from 1848; Pasteur died at Marnes-la-Coquette (alt. Saint-Cloud); Herschel unchanged | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
+| S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P7 was decided on 2026-10-02 and is listed under "Decided".
+None. P8, P9 and S7 were decided on 2026-10-02 and are listed under "Decided".
 
 
 ## Decided
 
-All 21 items, in id order (P6 and P7 are placed after P5).
+All 24 items, in id order (P6–P9 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -411,6 +414,22 @@ The cost: "hidden exceptions for an in-group" can fairly be read to include elec
 - Rescore E for Aquinas and Faraday. Score Maxwell. Restore Newton's E certainty if nothing else caps it.
 - Recheck E in the nine sourced system files.
 
+### P8. Recorded interviews as evidence
+**DECIDED (v8's pick, 2026-10-02):** a recorded or transcribed interview in the person's own words counts as their own words, with a 0.7 ceiling. A remark made in passing during an interview gets no extra cap beyond that, as long as it is in the first person. If only a paraphrase can be published (for example because of an AIP no-quotation notice), the interview cannot score an axis on its own; it may support an axis already scored from other evidence. Applied as: new basis `recorded_interview` (ceiling 0.7) and new statement kind `recorded interview` in `person.schema.json`, which goes to schema 1.2 (every person file and the template bumped; `system.schema.json` unchanged, since system records have no basis field); the validator ceiling table (`scripts/lib/records.py`); CODING_GUIDE §3 and §7; METHOD §4.2; RUNBOOK; DATA_DICTIONARY regenerated. Other people's words in an interview (a widow, a colleague) stay reported speech.
+
+Rechecked under the rule:
+- Chandrasekhar (record version 2): primary_system ATHE 0.5 → 0.7 (basis scholarly_reconstruction → recorded_interview); A_locus 4 at 0.5 → 0.7; self-described relation 0.5 → 0.7; B_cause 4 stays 0.5 (it rests on Parker; the interview remark speaks to it only indirectly); mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B under CODING_GUIDE §3). His two quotes are verbatim, so the paraphrase limit does not apply.
+- Bohr (record version 2): no change. The AIP interview is Margrethe Bohr's reported speech and is paraphrased; it supports C_ledger, which rests on Heilbron, and scores nothing on its own.
+
+The question as raised (batch 3 report, 2026-10-02): the three basis types (written profession, consistent private letters, scholarly reconstruction) had no place for a subject's own tape-recorded speech. Chandrasekhar's "he knew I was an atheist" (AIP, 1987) had been coded scholarly_reconstruction at 0.5 by analogy with the single-letter rule, and AIP no-quotation notices meant some interviews could only be paraphrased.
+
+### P9. Batch 3 record-level calls
+**DECIDED (v8's pick, 2026-10-02):**
+1. **Heisenberg:** keep the CODING_GUIDE §7 cap of 0.7 on fields read from the Internet Archive copy of the JSTOR PDF of "Scientific Truth and Religious Truth" (CrossCurrents, 1975). The copy's provenance cannot be confirmed from the copy itself. Reading the article directly on JSTOR would lift the cap. Record notes updated (record version 3); no score changed.
+2. **Pasteur's era:** apply P2 literally to the recorded first lasting contribution (1848), so `1750 to 1849`, and note that he is on the boundary. Membership in the 1600–1950 pool is not affected. Value unchanged; how_known rewritten.
+3. **Pasteur's death place:** Marnes-la-Coquette (the Villeneuve-l'Étang estate), with Saint-Cloud, the form most sources give, as the alternative; both cited. New source: the EPHE prosopographical notice (Dupressoir), "Villeneuve-l'Etang (act. Marnes-la-Coquette)". Certainty 0.7 → 0.5, because reliable sources name different communes (CODING_GUIDE §3, other facts).
+4. **Caroline Herschel:** left as coded (CHRIST at 0.5 from brief devotional phrases in three letters); the lens audit will test it.
+
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
 
@@ -468,3 +487,8 @@ The original question and the recommendation are kept below for the record.
 - **Scientific or naturalistic pantheism.** SEP describes it as worldviews that "make no ontological commitments beyond those sanctioned by empirical science". Its §8 explains why "atheism-plus-poetry" is a fair worry: if the only mark of divinity is feeling, then "all that distinguishes a pantheist from an atheist is feeling". SEP §§9–13 then go through the other marks that might make the whole divine: its place as the universe at large (§9), infinity, eternity or necessity (§10), ineffability (§11), being personal (§12) and value (§13). The unity of the cosmos is treated in §5. Proposed test: code PANT only if the person's own writing (1) identifies God or the divine with Nature as a whole, as a claim about what exists, not as a figure of speech, **and** (2) gives the whole at least one mark beyond feeling, such as unity as one substance or order (§5), necessity or eternity (§10), something mind-like (§12) or value (§13). Reverent language with neither of these is ATHE (positive naturalism), or SECHUM if the person's public identity is the humanist movement. Einstein-style "Spinoza's God" statements pass (1); "nature is awe-inspiring" alone does not.
 - **Advaita Vedanta and some Kabbalah.** SEP says only that these traditions are "marked by pantheistic ideas and feelings" (§1), not that they are pantheist, while v7.1's PANENT label names "some Kabbalah/Advaita forms". SEP also says the lines between immanence, pantheism and panentheism "are vague and porous". Proposed rule: by default, code the host tradition (HINDU, JUDA) as primary, under "Primary = dominant working metaphysics". Use PANENT when the person's writing keeps a divine reality that includes but exceeds the world, which is how v7.1 labels these forms. Use PANT only if they pass the two-part test above. Don't code PANT just because they belong to the tradition.
 - **Stoic pantheists.** SEP calls Stoic physicalism "an ancient form of pantheism". It also reports the argument (Baltzly 2003) that the Stoic God was personal and providential, someone "to whom we might approach in prayer". That clashes with the PANT circle on petition and the B axis. Proposed rule: code STOIC for ancient Stoics and for anyone whose avowed school is Stoicism. This follows the founders and "dominant working metaphysics" rules, and STOIC is its own code with its own score. Reserve PANT for later thinkers who take the Stoic or Spinozist identity without the providential, prayer-hearing deity.
+
+### S7. System-sourcing backlog and French spiritualism
+**DECIDED (v8's pick, 2026-10-02):** no system file for French spiritualism now (the code list stays closed under S4). It is recorded in Pasteur's record as a named candidate in the primary_system note, and listed under "Systems to consider" in `systems/README.md`, a new short section with the code idea, why and example people, as S4 asks. The ATHE, AGNOS and IDEAL stubs are the next system-sourcing job, listed first under "Sourcing backlog" in `systems/README.md`; they were not sourced in this change.
+
+The question as raised (batch 3 report, 2026-10-02): Pasteur's 1882 speech defends "la doctrine spiritualiste" (Cousin's school), which no system file covers; and ATHE, AGNOS and IDEAL, still stubs, were the candidate codes for Bohr, Chandrasekhar, Dirac and Pasteur.

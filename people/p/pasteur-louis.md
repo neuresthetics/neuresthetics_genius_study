@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 1
+  schema_version: "1.2"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
 
 identity:
   id: pasteur-louis
@@ -34,9 +35,9 @@ basics:
     place: {value: "Dole, Jura", modern_name: "Dole, Jura, France", polity_then: "Kingdom of France", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources agree."}
   death:
     date: {value: "1895-09-28", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening; 'Vaccine development'"}, {source: S2, locator: "death paragraph"}], how_known: "Two sources agree."}
-    place: {value: "Villeneuve-l'Étang estate near Paris (Marnes-la-Coquette per ENS; Saint-Cloud per Britannica)", modern_name: "Marnes-la-Coquette, Hauts-de-Seine, France", polity_then: "French Third Republic", certainty: 0.7, cites: [{source: S2, locator: "death paragraph ('Marnes-la-Coquette')"}, {source: S1, locator: "opening ('Saint-Cloud')"}], how_known: "The two sources name neighbouring communes; the estate name is the coder's reconciliation, not in either source (flag)."}
+    place: {value: "Marnes-la-Coquette (the Villeneuve-l'Étang estate)", modern_name: "Marnes-la-Coquette, Hauts-de-Seine, France", polity_then: "French Third Republic", certainty: 0.5, cites: [{source: S2, locator: "death paragraph ('Marnes-la-Coquette')"}, {source: S6, locator: "'Décès' line ('Villeneuve-l'Etang (act. Marnes-la-Coquette, France)')"}], how_known: "ENS gives Marnes-la-Coquette; the EPHE notice gives the estate, Villeneuve-l'Étang, 'act. Marnes-la-Coquette'. Britannica gives Saint-Cloud, the form most sources use (the estate adjoins the Saint-Cloud park). Reliable sources name different communes, so 0.5 with the alternative (CODING_GUIDE §3). Value chosen by decision P9 (2026-10-02).", alternatives: [{value: "Saint-Cloud", cites: [{source: S1, locator: "opening ('Saint-Cloud')"}], note: "The form most general sources give."}]}
   first_lasting_contribution_year: {value: 1848, certainty: 0.5, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Molecular asymmetry, which Britannica places 'soon after graduating' (doctorate 1847, Dijon post 1848) without a year; 1848 is the coder's dating."}
-  era_bucket: {value: "1750 to 1849", certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "From the coder's 1848 (P2). On the bucket boundary: if the first lasting contribution is dated 1849 or later, or taken as the 1857 germ theory of fermentation, the bucket is 1850 to 1949 (flag)."}
+  era_bucket: {value: "1750 to 1849", certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "P2 applied literally to the recorded first_lasting_contribution_year (1848), as decision P9 (2026-10-02) directs; the certainty follows the year's 0.5. He is on the boundary: a first lasting contribution dated 1850 or later (for example the 1857 germ theory of fermentation) would give 1850 to 1949. Membership in the 1600–1950 pool is not affected either way."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "France is Western Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "'Research career'"}], how_known: "Strasbourg, Lille and Paris."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
@@ -93,7 +94,7 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S3, locator: "pp. 3–4, 20, 23–26"}]
     how_known: "The speech defends 'la doctrine spiritualiste' and the reality of the infinite against positivism, treats the idea of God as 'une forme de l'idée de l'infini' whatever its name ('Brahma, Allah, Jéhova ou Jésus'), and counts the 'vertus de l'Évangile' as one ideal among four. It affirms the supernatural infinite but no particular doctrine of God, so no system file fits at 0.5."
-    note: "Candidates: CHRIST (draft) and IDEAL (stub). French spiritualism (Cousin's school: God, soul, freedom) has no system file (flag). Would need his letters or a scholarly study of his religion (e.g. Geison 1995) to reach 0.5."
+    note: "Candidates: CHRIST (draft) and IDEAL (stub). Named candidate without a code: French spiritualism (spiritualisme, Victor Cousin's school: God, the soul, freedom), which the 1882 speech defends by name ('la doctrine spiritualiste', S3, pp. 3–4). It has no system file; under decision S4 it cannot be coded in v8, and decision P9 (2026-10-02) lists it in systems/README.md under 'Systems to consider'. Would need his letters or a scholarly study of his religion (e.g. Geison 1995) to reach 0.5."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): 'idéal des vertus de l'Évangile' (p. 26) and his admiration for the 'fervente catholique' Mme Littré (p. 26), but the speech's God is any name for the infinite (p. 24). The Notre-Dame funeral (S1) is not his act, and Catholic upbringing is not in a source read. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 24, 26"}]}
@@ -211,8 +212,8 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, Grok); field tie across models.", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 114"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Death place differs: Saint-Cloud (Britannica) vs Marnes-la-Coquette (ENS)."
-    - "first_lasting_contribution_year 1848 is the coder's dating, on the era-bucket boundary (1849/1850)."
+    - "Death place differs: Marnes-la-Coquette (ENS; EPHE: Villeneuve-l'Étang estate) vs Saint-Cloud (Britannica and most general sources). Value Marnes-la-Coquette at 0.5 with Saint-Cloud as the alternative (decision P9)."
+    - "first_lasting_contribution_year 1848 is the coder's dating, on the era-bucket boundary (1849/1850); era applied literally from 1848 (decision P9)."
     - "The ENS page says pasteurization came from a request of 'Napoléon Bonaparte'; Britannica says Napoleon III. The ENS slip is not used."
     - "Small differences between the 1882 printing and the Académie française web text ('Jéhova'/'Jehova'; in the Faraday quotation 'joies'/'voies'); quotations follow the 1882 printing."
   open_questions:
@@ -266,6 +267,15 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S6
+    type: secondary
+    kind: database
+    author: "Thierry Dupressoir"
+    citation: "Dupressoir, Thierry. \"Louis Pasteur.\" Dictionnaire prosopographique de l'EPHE, École pratique des hautes études (updated 16 February 2021). https://prosopo.ephe.psl.eu/louis-pasteur."
+    url: "https://prosopo.ephe.psl.eu/louis-pasteur"
+    accessed: 2026-10-02
+    reliability_note: "Signed notice in an institutional prosopographical dictionary; used only for the place of death."
+    used_for: [basics]
 ---
 
 # Louis Pasteur

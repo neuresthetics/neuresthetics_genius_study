@@ -169,7 +169,7 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `person` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | fixed: `1.1` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. |
+| `record.schema_version` | fixed: `1.2` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
 | `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
@@ -380,7 +380,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | any | yes | The competing value. |
 | | `cites` | list of `citation` | yes | Citation for the competing value. |
 | | `note` | string |  | Why it differs, or why it was not preferred. |
-| `basis` | | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
+| `basis` | | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` | | Evidence basis for a worldview claim. Sets the certainty ceiling: written_profession 1.0, consistent_private_letters 0.7, recorded_interview 0.7 (the person's own first-person words in a recorded or transcribed interview, decision P8), scholarly_reconstruction 0.5. Certainty may sit below the ceiling (e.g. at most 0.7 when the record names a plausible alternative score; CODING_GUIDE §3), never above it. |
 | `lioScore` | | integer | | 0-4 ordinal scale (decision P1, 2026-10-01): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole. Certainty is recorded separately. |
 | `source` | | object | |  |
 | | `id` | string | yes | S1, S2, ... local to the file. |
@@ -457,11 +457,11 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `age` | integer or string |  | Age at the event. |
 | `systemCode` | | claim | | code from systems/ (the 77 abbr codes). Validator checks the code exists and certainty does not exceed the basis ceiling. |
 | | `value` | string | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `basis` | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` |  | written_profession (1.0), consistent_private_letters (0.7), or scholarly_reconstruction (0.5). |
+| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` |  | written_profession (1.0), consistent_private_letters (0.7), recorded_interview (0.7), or scholarly_reconstruction (0.5). |
 | | `rationale` | string |  | Why this code, in terms of coding_guidance. |
 | `axis` | | claim | |  |
 | | `value` | integer 0–4 | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
-| | `basis` | one of: `written_profession`, `consistent_private_letters`, `scholarly_reconstruction` |  | Evidence basis; certainty may not exceed its ceiling. |
+| | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction` |  | Evidence basis; certainty may not exceed its ceiling. |
 | | `rationale` | string |  | why this score, in terms of the axis poles |
 | `quote` | | object | |  |
 | | `text` | string | yes | verbatim, with original spelling; mark cuts with [...] |
@@ -469,7 +469,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `date` | string |  | Date of the passage (letter date, publication year). |
 | | `context` | string |  | addressee / occasion / what the passage is answering |
 | | `axes` | list of one of: `A_locus`, `B_cause`, `C_ledger`, `D_authority`, `E_scope` |  |  |
-| | `kind` | one of: `written profession (public)`, `private letter`, `notebook or diary`, `reported speech`, `other` |  |  |
+| | `kind` | one of: `written profession (public)`, `private letter`, `notebook or diary`, `recorded interview`, `reported speech`, `other` |  |  |
 | | `verified_against` | one of: `primary transcription`, `primary facsimile`, `scholarly edition`, `secondary quotation` | yes |  |
 | | `verified_on` | string | yes | Date the quotation was checked against the source. |
 | | `note` | string |  | Free remark. |

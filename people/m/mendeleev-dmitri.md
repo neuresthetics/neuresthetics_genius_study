@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 1
+  schema_version: "1.2"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: mendeleev-dmitri

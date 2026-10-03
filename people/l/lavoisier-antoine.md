@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 1
+  schema_version: "1.2"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: lavoisier-antoine

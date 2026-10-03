@@ -149,7 +149,7 @@ Fill each required `##` section in plain prose, with inline cites `[S3, letter 1
 | sources agree, primary or well-established | certainty 1.0 |
 | one good source, or dependent sources | 0.7 |
 | reliable sources disagree | 0.5 + `alternatives` + data-quality flag |
-| worldview from public writing / letters / scholar's reconstruction | 1.0 / 0.7 / 0.5 with matching `basis` |
+| worldview from public writing / letters or recorded interview / scholar's reconstruction | 1.0 / 0.7 / 0.5 with matching `basis` |
 | some evidence but weaker than 0.5 | `BELOW_THRESHOLD` + `note` |
 | searched, nothing reliable | `UNKNOWN` + `how_known` listing what was checked |
 | not looked at yet | `TODO` |
@@ -254,8 +254,8 @@ git commit -m "Extend <CODE> system record: <what>"
 | `identity/roster/<field>: file has ..., roster.csv has ...` | Copy the roster row again. If the roster changed, rebuild first. |
 | `file is at ... but person_ids.csv says ...` | Move the file to the listed path. |
 | `filled claim without citations` | Add a cite, or set the value back to `TODO`. |
-| `a filled worldview claim needs basis` | Add `basis` (written_profession / consistent_private_letters / scholarly_reconstruction). |
-| `basis ... requires certainty ..., got ...` | `written_profession` = 1.0, `consistent_private_letters` = 0.7, `scholarly_reconstruction` = 0.5. |
+| `a filled worldview claim needs basis` | Add `basis` (written_profession / consistent_private_letters / recorded_interview / scholarly_reconstruction). |
+| `basis ... allows certainty at most ..., got ...` | Ceilings: `written_profession` 1.0, `consistent_private_letters` 0.7, `recorded_interview` 0.7, `scholarly_reconstruction` 0.5. |
 | `front matter cites S9, which is not in sources` / `body cites [S9] ...` | Add the source, or fix the id. |
 | `source S4 is listed but never cited` (warning) | Cite it or remove it. `--strict` turns this into an error. |
 | `body is missing the section '## ...'` | Add the heading, spelled exactly as listed. |

@@ -75,6 +75,7 @@ Every filled claim carries one of three certainty values. Anything below 0.5 is 
 |---|---|---|
 | 1.0 | `written_profession` | The person stated it in writing for others: a published work, public lecture text, or formal statement of faith. |
 | 0.7 | `consistent_private_letters` | Private letters or notebooks, consistent across more than one document. |
+| 0.7 | `recorded_interview` | The person's own first-person words in a recorded or transcribed interview (decision P8; see §7). |
 | 0.5 | `scholarly_reconstruction` | A scholar's reconstruction from indirect evidence. |
 | <0.5 | value = `BELOW_THRESHOLD` | Leave the value blank. The person drops out of the ideology × rate table. |
 
@@ -185,11 +186,12 @@ Notes:
 - Each quote needs:
   - `cites` (source and locator: letter number, page, paragraph);
   - `context` (addressee, occasion, what the passage answers);
-  - `kind` (public written profession, private letter, notebook, reported speech);
+  - `kind` (public written profession, private letter, notebook, recorded interview, reported speech);
   - `verified_against` (primary transcription, primary facsimile, scholarly edition, secondary quotation);
   - `verified_on`.
 - Prefer a primary transcription or scholarly edition. A quote known only from a secondary source is marked `secondary quotation` and cannot by itself support certainty 1.0. A field that rests on an unofficial web copy of a published primary text (any axis or field, including the self-described relation) is capped at 0.7, unless its wording has been checked against an authoritative edition (a publisher's text, a scholarly edition, a library or archive scan, or the official site of the estate or institution) and that edition is cited.
 - Reported speech (someone else's memory of what the person said) is never a written profession.
+- **Recorded interviews** (decision P8, 2026-10-02). A recorded or transcribed interview in the person's own words counts as their own words, with basis `recorded_interview` and a ceiling of 0.7; quote it with kind `recorded interview`. One interview is enough: the single-letter rule does not apply, and a remark made in passing gets no further cap as long as it is in the first person. The usual caps still apply on top (a named alternative, §3; indirect evidence). What other people say in an interview about the person (a widow, a colleague) is reported speech, not the person's words. If only a paraphrase can be published (for example under an AIP no-quotation notice), the interview cannot score an axis or code on its own; it may support a score that already rests on other evidence.
 - Never paraphrase inside quotation marks.
 
 ## 8. Other sections

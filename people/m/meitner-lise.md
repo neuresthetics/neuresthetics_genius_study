@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 2
+  schema_version: "1.2"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica, the Jewish Women's Archive encyclopedia (Rife) and a 2024 Society of Catholic Scientists article (Moritz), which quotes her letters through Schweighofer (2013) and Sime (1997). Baptized Protestant (Lutheran) in 1908; no own statement of Christian doctrine found. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 and D 3 at 0.5; A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: meitner-lise

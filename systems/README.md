@@ -9,6 +9,24 @@ One file per belief system: `systems/<CODE>.md`, where the code is the v7.1 abbr
 - **Code list:** closed at 77 for v8 (decision S4). New codes are added in one batch with one schema bump.
 - **Adherent numbers** are context only. They are never a denominator for genius rates.
 
+## Sourcing backlog
+
+Stubs to source next, in this order (decision S7, 2026-10-02). These three are the candidate codes the people records most often cannot use because the file is still a stub:
+
+1. [`ATHE.md`](ATHE.md), Atheism: candidate or code for Bohr, Chandrasekhar and Dirac.
+2. [`AGNOS.md`](AGNOS.md), Agnosticism: named alternative for Bohr and Dirac.
+3. [`IDEAL.md`](IDEAL.md), Idealism: candidate for Pasteur.
+
+After these, the other stubs, in the order the people records need them. Extending a record: `docs/RUNBOOK.md` §8.
+
+## Systems to consider (proposed codes, decision S4)
+
+The code list is closed for v8, so these are not files. Each entry gives the code idea, why, and example people; they would be added in one batch with one schema bump and Jason's approval.
+
+| Proposed system | Why | Example people |
+|---|---|---|
+| French spiritualism (*spiritualisme*; Victor Cousin's school: God, the soul, freedom) | Pasteur's 1882 Académie française speech defends "la doctrine spiritualiste" by name; none of the 77 codes fits it well (CHRIST and IDEAL are only partial fits). Added by decision S7. | Louis Pasteur |
+
 To regenerate stubs, if a stub file is lost:
 
 ```bash

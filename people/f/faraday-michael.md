@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 9
+  schema_version: "1.2"
+  record_version: 10
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known now names the domain scored (salvation and church membership) and points to open item P7. Score and certainty unchanged (1 at 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 1 -> 3 at 0.5, from his account of nature (God's 'definite laws' for all matter; no favour in events in his own words; biblical miracles accepted). The sect and salvation reading moved to the C_ledger rationale (C unchanged). Statement axis tags updated. P7 interim note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit runs 2–3: (#2) the 'perfect trust and submission' quotation is on Gladstone 2nd ed. p. 36, not p. 37; every S10 p. 37 locator corrected (checked against the archive.org scan). (#10) self_described_science_religion_relation rested on one private letter, which CODING_GUIDE §3 says is not 'consistent private letters'. The 1854 public discourse already in the record (S10, pp. 99–100) says the same thing, so it is now cited, the value says 'a private letter and a public lecture' instead of 'conversation and correspondence', and 0.7 stands. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: faraday-michael

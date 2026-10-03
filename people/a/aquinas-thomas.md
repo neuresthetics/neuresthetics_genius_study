@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 7
+  schema_version: "1.2"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2 (claim #23 pattern): E_scope certainty 1.0 -> 0.7, because the score depends on which domain E is scored on (open item P7, PROPOSED). Score unchanged (2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope 2 -> 3 at 0.7 (universal providence over individual creatures, I q. 22 a. 2; miracles the limited exception; named alternative 2 from I q. 22 a. 2 ad 4). Reprobation and salvation by revealed truth moved to the C_ledger rationale (C unchanged). Two statements added from I q. 22 a. 2 (same source, page already read), checked word for word. P7 interim note removed. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S4 (New Advent) is an unofficial copy of the English Dominican translation. Checked its wording against two publisher's printings in Internet Archive scans: S6 (Benziger 1947, vol. 1: First Part and First Part of the Second Part) and S7 (Burns Oates 1922, II-II QQ. 80-100). All 17 S4 quotations and every S4 passage cited by a certainty-1.0 field (languages_of_work, self-described relation, primary_system, A, C, D, Maimonides collaborator entry) were found word for word. Added S6 or S7 cites next to S4 on those fields and quotations, so they stay at 1.0. Five quotations take the printed punctuation, checked on the page images (one comma or semicolon each: I q. 1 a. 1, a. 6 ad 2, a. 8 ad 2; I q. 8 a. 1; II-II q. 83 a. 2). No value, certainty or mid_basin change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: aquinas-thomas

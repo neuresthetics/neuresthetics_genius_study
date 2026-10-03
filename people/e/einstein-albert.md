@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 3
+  schema_version: "1.2"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Kaku) and MacTutor. Worldview from the 1929 cable to Rabbi Goldstein (JTA print), the 1930 essay 'Religion and Science' and the 1939/1941 'Science and Religion' (Ideas and Opinions transcription), and SEP 'Pantheism' §12. Coded PANT at 0.7 (AGNOS and ATHE named). A 4 (0.7), B 4 (1.0), C 4 (0.7), D 3 (0.7), E 4 (1.0). mid_basin false. Lane B and minor fields partly TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145): D_authority 3 → 2 (both runs, finding #5): the 1939 address puts the highest ends under revelation and tradition and the 1941 paper limits science to what is, which is two domains under two authorities (§3 same pattern, as Planck and Galileo); named alternative 3. B_cause and E_scope certainty 1.0 → 0.7: the key sentences are in the third person, the reason C was already 0.7 (pattern check). Trailing and leading cuts marked with [...] (findings #16, #18; same fix to two more statements). Two statements added (1939 revelation sentence; 1941 'science can only ascertain what is'). mid_basin unchanged (false at 0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): self_described_science_religion_relation certainty 1.0 → 0.7. It rests on the sacred-texts.com copy of the 1930 and 1941 essays (S3), and no authoritative edition was reachable to check the wording. No mid_basin change (it depends on A and B only)."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: einstein-albert

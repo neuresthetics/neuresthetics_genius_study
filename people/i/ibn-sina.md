@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 5
+  schema_version: "1.2"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Consistency pass after the lens audit (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the rationale names 4 as plausible on SEP's reading; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known notes that the score (3 at 0.5) is the same under every option of open item P7. No score change. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3. Basis scholarly_reconstruction 0.5 -> written_profession 0.7, because on the world's order his own text speaks to the axis (the heavens do not act 'for our sake', S6, p. 617); capped at 0.7 by the named alternative 4 (CODING_GUIDE §3), as for B. Access to knowledge and bliss moved to the C_ledger rationale (C unchanged). Statement tags updated; P7 note removed. No new sources. mid_basin unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: ibn-sina

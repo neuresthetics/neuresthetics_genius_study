@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 7
+  schema_version: "1.2"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the sources already cited (S8 the same molecular laws in Sirius and on earth; S9 human will acting within law; S7 prayers that ask for understanding, not favour in events). No text read addresses favour in events directly, so 0.5, with a gap note. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: the letters, essays and prayers S4–S7 and S9 were read in the Gutenberg text of Campbell and Garnett 1882 (S3), an unofficial copy. Checked them against S13, the University of Toronto library scan of the 1882 edition (Internet Archive). All seven quotations match word for word except one Gutenberg error: the 1876 letter to Ellicott (p. 394) reads 'founded on a most conjectural scientific hypothesis', not 'almost' (checked on the page image); quotation corrected. The two prayers (S7) are in a footnote on p. 323, not p. 347; locator corrected everywhere. Added S13 cites to the three certainty-1.0 fields that rest on these texts (A_locus, Lewis Campbell and C. J. Ellicott collaborator entries) and to the seven quotations. All stay at 1.0. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "S13 scan verification follow-up: the seven quotations checked against the University of Toronto library scan are now marked verified_against primary facsimile; the four S8 lecture quotations and the S3 reported speech remain unchanged. S13 citations were already present. No quotation text or score changed. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: maxwell-james-clerk

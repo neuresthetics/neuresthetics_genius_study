@@ -1,8 +1,8 @@
 ---
 record:
   record_type: person
-  schema_version: "1.1"
-  record_version: 6
+  schema_version: "1.2"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope note points to open item P7 (which domain E is scored on). Still TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. E_scope TODO -> 3 at 0.5, from the letters already cited (order 'in everything', S6 1961; everything has a cause, S7; the same psychic capacities in every human, S6 1952). No petition, miracle or favour for a group appears in what was read, but the letters are few, so 0.5 with a gap note. Religions versus religion (Wang) is a community question, which P7 sends to C. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit run 3 (#47): the Todorov quotation (S7, note 14) now keeps the source's closing parenthesis, '(without the support of faith ...) to apprehend', in the statement and in the D_authority rationale; checked against the arXiv text. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
 
 identity:
   id: godel-kurt
