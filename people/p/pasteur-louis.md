@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3. #84 (run 2): B_cause 4 at 0.7 (written_profession) → 4 at 0.5 (scholarly_reconstruction): his own words on nature (pp. 3–4) support the named alternative 3, and the 4 rests on a passage about method (p. 4) and Britannica's account of his working science, the evidence Bohr, Chandrasekhar and Dirac score at 0.5 (§3 same pattern); 3 stays named. mid_basin unchanged (BELOW_THRESHOLD, A not scored). Death place (both runs: holds at 0.5): the uncited phrases 'the form most sources use' and 'the estate adjoins the Saint-Cloud park' were removed; a cited line now gives the Saint-Cloud link (new S7, Inventaire général du patrimoine culturel, Île-de-France: part of the Villeneuve-l'Étang park was incorporated into the national domain of Saint-Cloud in 1895); S6 (EPHE) noted as not independent of S2 (it lists the ENS portrait among its sources). Value and certainty unchanged (v8's pick, P9). Not reviewed."}
 
 identity:
   id: pasteur-louis
@@ -35,7 +36,7 @@ basics:
     place: {value: "Dole, Jura", modern_name: "Dole, Jura, France", polity_then: "Kingdom of France", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources agree."}
   death:
     date: {value: "1895-09-28", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening; 'Vaccine development'"}, {source: S2, locator: "death paragraph"}], how_known: "Two sources agree."}
-    place: {value: "Marnes-la-Coquette (the Villeneuve-l'Étang estate)", modern_name: "Marnes-la-Coquette, Hauts-de-Seine, France", polity_then: "French Third Republic", certainty: 0.5, cites: [{source: S2, locator: "death paragraph ('Marnes-la-Coquette')"}, {source: S6, locator: "'Décès' line ('Villeneuve-l'Etang (act. Marnes-la-Coquette, France)')"}], how_known: "ENS gives Marnes-la-Coquette; the EPHE notice gives the estate, Villeneuve-l'Étang, 'act. Marnes-la-Coquette'. Britannica gives Saint-Cloud, the form most sources use (the estate adjoins the Saint-Cloud park). Reliable sources name different communes, so 0.5 with the alternative (CODING_GUIDE §3). Value chosen by decision P9 (2026-10-02).", alternatives: [{value: "Saint-Cloud", cites: [{source: S1, locator: "opening ('Saint-Cloud')"}], note: "The form most general sources give."}]}
+    place: {value: "Marnes-la-Coquette (the Villeneuve-l'Étang estate)", modern_name: "Marnes-la-Coquette, Hauts-de-Seine, France", polity_then: "French Third Republic", certainty: 0.5, cites: [{source: S2, locator: "death paragraph ('Marnes-la-Coquette')"}, {source: S6, locator: "'Décès' line ('Villeneuve-l'Etang (act. Marnes-la-Coquette, France)')"}, {source: S7, locator: "Historique ('Pasteur y mourut en 1895'; 'En 1895, le parc est partiellement intégré au domaine national de Saint-Cloud')"}], how_known: "ENS gives Marnes-la-Coquette; the EPHE notice gives the estate, Villeneuve-l'Étang, 'act. Marnes-la-Coquette', but EPHE lists the ENS portrait among its sources, so it does not independently confirm S2. Britannica gives Saint-Cloud and does not say why. The Île-de-France heritage inventory (S7) records that Pasteur died in 1895 at the Villeneuve-l'Étang farm given to him in 1884, and that in 1895 the estate's park was partly incorporated into the national domain of Saint-Cloud, so the estate borders the Saint-Cloud domain; that is the likely reason for Britannica's form (coder's inference). Reliable sources name different communes, so 0.5 with the alternative (CODING_GUIDE §3). Value chosen by decision P9 (2026-10-02).", alternatives: [{value: "Saint-Cloud", cites: [{source: S1, locator: "opening ('Saint-Cloud')"}], note: "Britannica's form; the estate's park was partly joined to the national domain of Saint-Cloud in 1895 (S7, Historique)."}]}
   first_lasting_contribution_year: {value: 1848, certainty: 0.5, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Molecular asymmetry, which Britannica places 'soon after graduating' (doctorate 1847, Dijon post 1848) without a year; 1848 is the coder's dating."}
   era_bucket: {value: "1750 to 1849", certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "P2 applied literally to the recorded first_lasting_contribution_year (1848), as decision P9 (2026-10-02) directs; the certainty follows the year's 0.5. He is on the boundary: a first lasting contribution dated 1850 or later (for example the 1857 germ theory of fermentation) would give 1850 to 1949. Membership in the 1600–1950 pool is not affected either way."}
   region_of_birth: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "France is Western Europe in data/reference/regions.csv (P3)."}
@@ -104,10 +105,10 @@ worldview:
     A_locus: {value: BELOW_THRESHOLD, how_known: "The speech speaks of the notion and idea of the infinite and of God in the human mind ('le surnaturel est au fond de tous les cœurs', 'Un Dieu intérieur' as the meaning of enthousiasme, S3, pp. 24, 26), not of where God is or whether God is a person. A mixed reading (2) is possible but would be scored from implication.", note: "Gap: letters and the Œuvres (vol. 7, Mélanges) for direct statements on God."}
     B_cause:
       value: 4
-      basis: written_profession
-      certainty: 0.7
+      basis: scholarly_reconstruction
+      certainty: 0.5
       cites: [{source: S3, locator: "pp. 3–4, 20"}, {source: S1, locator: "'Spontaneous generation'"}]
-      how_known: "His own public speech and Britannica's account of his working science (P6); a named alternative, so 0.7."
+      how_known: "Britannica's account of his working science (P6), with his speech in support. His own words about nature (pp. 3–4) support the named alternative 3, and the p. 4 passage that supports 4 is about method (how to know), not how nature works, so the speech speaks to the score only indirectly. Scored at 0.5 with basis scholarly_reconstruction, as B from working science is for Bohr, Chandrasekhar and Dirac (§3 same pattern; lens audit batch 3, #84; was written_profession 0.7)."
       rationale: "Scored on his account of nature (P6). His science ran on strict experimental control: the method 'qui a pour guide et pour contrôle incessant l'observation et l'expérience, dégagées [...] de tout préjugé métaphysique' (p. 4), with no spontaneous generation and a specific organism for each fermentation and disease (S1). No miracle, petition or exemption in his account of nature. Named alternative: 3, since he says that by showing that life 'ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière' he served 'la doctrine spiritualiste' (pp. 3–4), which may hold life apart from the forces governing matter; the claim is hedged ('jusqu'à ce jour') and names no exception to law."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing read on judgement, afterlife or reward and punishment; the soul's 'hautes préoccupations' (p. 20) are named but not described."}
     D_authority:
@@ -212,7 +213,7 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4: Claude, DeepSeek, Gemini, Grok); field tie across models.", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 114"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Death place differs: Marnes-la-Coquette (ENS; EPHE: Villeneuve-l'Étang estate) vs Saint-Cloud (Britannica and most general sources). Value Marnes-la-Coquette at 0.5 with Saint-Cloud as the alternative (decision P9)."
+    - "Death place differs: Marnes-la-Coquette (ENS; EPHE: Villeneuve-l'Étang estate) vs Saint-Cloud (Britannica, which gives no reason; S7 shows the estate's park was partly joined to the Saint-Cloud national domain in 1895). EPHE lists the ENS portrait among its sources, so S6 is not independent of S2. Value Marnes-la-Coquette at 0.5 with Saint-Cloud as the alternative (decision P9)."
     - "first_lasting_contribution_year 1848 is the coder's dating, on the era-bucket boundary (1849/1850); era applied literally from 1848 (decision P9)."
     - "The ENS page says pasteurization came from a request of 'Napoléon Bonaparte'; Britannica says Napoleon III. The ENS slip is not used."
     - "Small differences between the 1882 printing and the Académie française web text ('Jéhova'/'Jehova'; in the Faraday quotation 'joies'/'voies'); quotations follow the 1882 printing."
@@ -274,7 +275,17 @@ sources:
     citation: "Dupressoir, Thierry. \"Louis Pasteur.\" Dictionnaire prosopographique de l'EPHE, École pratique des hautes études (updated 16 February 2021). https://prosopo.ephe.psl.eu/louis-pasteur."
     url: "https://prosopo.ephe.psl.eu/louis-pasteur"
     accessed: 2026-10-02
-    reliability_note: "Signed notice in an institutional prosopographical dictionary; used only for the place of death."
+    reliability_note: "Signed notice in an institutional prosopographical dictionary; used only for the place of death. It lists the ENS portrait (S2) among its 'Sites internet référents', so it is not independent of S2."
+    used_for: [basics]
+  - id: S7
+    type: secondary
+    kind: "institutional page"
+    author: "Guillemette Andreu (Inventaire général, Région Île-de-France)"
+    year: 1988
+    citation: "Andreu, Guillemette. \"Château puis institut de recherche, dit Château de Villeneuve l'Etang, puis Institut Pasteur.\" Inventaire général du patrimoine culturel, Région Île-de-France, dossier IA00051396 (survey 1987, written 1988). https://inventaire.iledefrance.fr/dossier/IA00051396."
+    url: "https://inventaire.iledefrance.fr/dossier/IA00051396"
+    accessed: 2026-10-02
+    reliability_note: "Official regional heritage inventory record; read on the web page ('Historique'). Used only for the estate's history and its link to the Saint-Cloud national domain."
     used_for: [basics]
 ---
 
@@ -284,7 +295,7 @@ sources:
 
 ## Summary
 
-Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 4 (0.7), D 2 (0.7); A, C, E below threshold; mid_basin below threshold.
+Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 4 (0.5), D 2 (0.7); A, C, E below threshold; mid_basin below threshold.
 
 ## Life and work
 
@@ -300,7 +311,7 @@ Son of a tanner who had been a decorated sergeant major; an average pupil gifted
 
 ## Adult working worldview
 
-By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 4, D 2 (0.7); A, C, E below threshold.
+By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 4 (0.5), D 2 (0.7); A, C, E below threshold.
 
 ## Heritage (context only)
 
