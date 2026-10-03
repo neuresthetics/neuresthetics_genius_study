@@ -18,6 +18,8 @@ Checks
      and a 1.3 file may not use the retired school stages 'religious school' / 'dame or charity school'.
  10. Warning (decision P15): a non-worldview fact at certainty 1.0 that cites only one source and no primary
      source. Derived fields (era_bucket, age_at_first_lasting_contribution, region_of_birth) are exempt.
+ 11. Warning (P30 addendum, rule f): worldview.working_years must equal timing.major_work_period, the one
+     authoritative span (dashes and spaces normalised; sentinels skipped).
 
 Usage
   python3 scripts/validate_people.py                     # all person files
@@ -26,7 +28,7 @@ Usage
   python3 scripts/validate_people.py --template          # also check templates/person.template.md parses
 Exit status 0 = all files pass.
 """
-import argparse, os, sys
+import argparse, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib.records import (REPO, read_record, load_schema, schema_errors, common_checks, read_csv, system_codes,
@@ -94,7 +96,22 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
             errors.append(f"collaborators/{'/'.join(p)}: roster_id {rid!r} is not in person_ids.csv")
     e3, w3 = version_checks(data)
     errors += e3; warnings += w3
+    warnings += span_check(data)
     return errors, warnings, data
+
+
+def _span(v):
+    return re.sub(r"\s*[-–—]\s*", "–", str(v).strip()).lower()
+
+
+def span_check(data):
+    """P30 addendum (f): timing.major_work_period is the authoritative span; worldview.working_years must equal it."""
+    w = ((data.get("worldview") or {}).get("working_years") or {}).get("value")
+    m = ((data.get("timing") or {}).get("major_work_period") or {}).get("value")
+    sent = {"TODO", "UNKNOWN", "BELOW_THRESHOLD", None}
+    if w in sent or m in sent or _span(w) == _span(m):
+        return []
+    return [f"worldview/working_years {w!r} differs from timing/major_work_period {m!r}; they must be the same span (P30 addendum)"]
 
 
 V13_QUOTE_KINDS = {"autobiography", "unpublished manuscript", "document in own hand", "published letter"}
