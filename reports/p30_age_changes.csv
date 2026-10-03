@@ -1,0 +1,28 @@
+person,field,old,new
+bohr-niels,timing/age_at_first_lasting_contribution,27,28
+chandrasekhar-subrahmanyan,timing/age_at_first_lasting_contribution,19,20
+curie-marie,timing/age_at_first_lasting_contribution,30,31
+faraday-michael,timing/age_at_first_lasting_contribution,29,30
+faraday-michael,childhood/early_science_exposure/2.age,about 20–21,about 21
+fermi-enrico,timing/age_at_first_lasting_contribution,24,25
+heisenberg-werner,timing/age_at_first_lasting_contribution,23,24
+hubble-edwin,timing/age_at_first_lasting_contribution,33,34
+kepler-johannes,timing/age_at_first_lasting_contribution,32,33
+leavitt-henrietta-swan,timing/age_at_first_lasting_contribution,43,44
+libby-willard,timing/age_at_first_lasting_contribution,32,33
+maxwell-james-clerk,childhood/schooling/4.ages,19–22,19–23
+maxwell-james-clerk,childhood/early_science_exposure/0.age,10,11
+maxwell-james-clerk,childhood/early_science_exposure/1.age,14,15
+maxwell-james-clerk,timing/first_evidence_of_lio_type_views.age,24,25
+meitner-lise,timing/age_at_first_lasting_contribution,39,40
+newton-isaac,timing/age_at_first_lasting_contribution,22,23
+newton-isaac,childhood/schooling/1.ages,c. 12–18,c. 13–19
+newton-isaac,childhood/schooling/2.ages,18–22,19–23
+newton-isaac,childhood/notable_events/1.age,2–3,3–4
+newton-isaac,childhood/notable_events/2.age,10,11
+newton-isaac,childhood/notable_events/3.age,19,20
+newton-isaac,worldview/changes_over_life/0.age,29,30
+newton-isaac,timing/first_evidence_of_lio_type_views.age,44,45
+pasteur-louis,timing/age_at_first_lasting_contribution,25,26
+planck-max,timing/age_at_first_lasting_contribution,42,21
+schrodinger-erwin,timing/age_at_first_lasting_contribution,38,39

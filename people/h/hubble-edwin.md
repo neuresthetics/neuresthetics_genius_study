@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: hubble-edwin
@@ -156,7 +157,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1923–1936", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "Andromeda Cepheids to The Realm of the Nebulae; little original research after 1936 (S1)."}
-  age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening; 1923 paragraph"}], how_known: "Born November 1889; Andromeda Cepheids 1923 (month not given in S1)."}
+  age_at_first_lasting_contribution: {value: 34, certainty: 0.7, cites: [{source: S1, locator: "opening; 1923 paragraph"}], how_known: "Born November 1889; Andromeda Cepheids 1923 (month not given in S1). P30 (rule 5): 1923 − 1889 = 34, with no month adjustment; was 33 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Caltech commencement address on science and values", year: 1938, certainty: 0.7, cites: [{source: S2, locator: "pp. 36–39"}], how_known: "Earliest dated statement read; capped by §7."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The statements read are from 1938 and 1948, after the 1923–1936 work; earlier views not read.", certainty: 0.5, cites: [{source: S2, locator: "pp. 3, 36"}], how_known: "Dates of the lectures."}
   worldview_during_major_work: {value: TODO}
@@ -262,7 +263,7 @@ American Baptist family [S1; S3]. Context only.
 
 ## Timing
 
-First lasting contribution 1923, at about 33 [S1]. The worldview statements read are from 1938 and 1948.
+First lasting contribution 1923, at about 34 [S1]. The worldview statements read are from 1938 and 1948.
 
 ## Lane B notes (labeled belief model)
 

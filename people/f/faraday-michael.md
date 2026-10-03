@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 11
+  record_version: 12
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -20,6 +20,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit runs 2–3: (#2) the 'perfect trust and submission' quotation is on Gladstone 2nd ed. p. 36, not p. 37; every S10 p. 37 locator corrected (checked against the archive.org scan). (#10) self_described_science_religion_relation rested on one private letter, which CODING_GUIDE §3 says is not 'consistent private letters'. The 1854 public discourse already in the record (S10, pp. 99–100) says the same thing, so it is now cited, the value says 'a private letter and a public lecture' instead of 'conversation and correspondence', and 0.7 stands. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: faraday-michael
@@ -118,7 +119,7 @@ childhood:
   early_science_exposure:
     - {value: "Read the article on electricity in the third edition of the Encyclopaedia Britannica", year: "1805–1812", age: "14–21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
     - {value: "Built a crude electrostatic generator from old bottles and lumber, and a weak voltaic pile for electrochemistry experiments", year: "1805–1812", age: "14–21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
-    - {value: "Attended Humphry Davy's chemistry lectures at the Royal Institution, took notes, and sent Davy a bound copy with a request for work", year: 1812, age: "about 20–21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography (apprenticeship ended 1812)"}], how_known: "S1 describes the lectures as happening during the apprenticeship, which S2 dates as ending in 1812; the year is therefore inferred."}
+    - {value: "Attended Humphry Davy's chemistry lectures at the Royal Institution, took notes, and sent Davy a bound copy with a request for work", year: 1812, age: "about 21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography (apprenticeship ended 1812)"}], how_known: "S1 describes the lectures as happening during the apprenticeship, which S2 dates as ending in 1812; the year is therefore inferred."}
   key_early_reading:
     - {value: "Encyclopaedia Britannica, 3rd edition, article 'Electricity'", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
   childhood_mentors:
@@ -271,7 +272,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1821–c. 1855", certainty: 0.7, cites: [{source: S1, locator: "Early life (1821); Later life ('About 1855, Faraday's mind began to fail')"}], how_known: "Coder's summary of the dates in S1."}
-  age_at_first_lasting_contribution: {value: 29, certainty: 0.7, cites: [{source: S1, locator: "opening sentence; Early life"}], how_known: "1821 minus 1791. The month of the rotation experiment was not checked, so it may be 30."}
+  age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening sentence; Early life"}], how_known: "1821 minus 1791. The month of the rotation experiment was not checked, so it may be 30. P30 (rule 5): 1821 − 1791 = 30, with no month adjustment; was 29 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "In 'Observations on Mental Education' he separates the things of this life, open to reason and judgement, from the future life, known only by revelation; his public talk of fixed laws of nature and the conservation of force dates from the same decade.", year: 1854, certainty: 0.5, cites: [{source: S10, locator: "pp. 99–100, 103"}, {source: S8, locator: "section 'Electric discoveries' (1857 discourse)"}], how_known: "Earliest dated statement on the axes in the sources read. His laws of electrolysis (early 1830s) and the undated 'definite laws' remark (S8) suggest earlier views, but no earlier dated statement was read, so 0.5."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The dated statements (1844 letter on keeping religion and philosophy apart; 1854 lecture; 1857 discourse) fall inside the major work period (1821–c. 1855). Cantor ties the search for God-given laws to the work itself (S8).", certainty: 0.5, cites: [{source: S3, locator: "final paragraph"}, {source: S10, locator: "pp. 99–100"}, {source: S8, locator: "section 'Electric discoveries'"}], how_known: "Dated statements; the earlier decades are not covered by any statement read."}
   worldview_during_major_work: {value: "A practising Sandemanian throughout: member from 1821, deacon 1832, elder 1840.", certainty: 0.7, cites: [{source: S5, locator: "p. 2"}], how_known: "One historian's account; matches his 1844 and 1861 letters."}
@@ -470,7 +471,7 @@ English, from a Sandemanian family with a long history of dissent from the Churc
 
 ## Timing
 
-His first lasting contribution came in 1821, at about age 29 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2; S10, p. 91]. Throughout his major work (1821 to about 1855) he was a practising Sandemanian [S5, p. 2; S1, Later life]. The dated statements on the axes (1844, 1854, 1857) fall during the major work [S3; S10; S8].
+His first lasting contribution came in 1821, at about age 30 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2; S10, p. 91]. Throughout his major work (1821 to about 1855) he was a practising Sandemanian [S5, p. 2; S1, Later life]. The dated statements on the axes (1844, 1854, 1857) fall during the major work [S3; S10; S8].
 
 ## Lane B notes (labeled belief model)
 

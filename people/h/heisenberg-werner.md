@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "record_version corrected to 3 (the 1f3c4bf fix did not raise it). Decision P9: the §7 cap (0.7) on fields resting on the JSTOR-PDF copy is kept, since its provenance cannot be confirmed from the copy; reading the article on JSTOR would lift it. Notes only; no score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #33 (run 1; verified on the CrossCurrents text): primary_system PLATO (0.7) → BELOW_THRESHOLD, with PLATO (leading) and CHRIST as candidates. PLATO's use_when needs the intelligible reality to be the ultimate origin of both existence and values; the lecture makes the realm behind phenomena the ground of ethics and trust (p. 467), not of existence, and pairs Plato with the Bible (p. 467) while speaking from inside the Christian 'linguistic area' (p. 471). PLATO's do_not_use_when sends Platonism inside Christianity to the host religion unless the Platonism clearly dominates, which the record does not show; CHRIST's use_when (specifically Christian belief) is not met either. No axis changed; mid_basin unchanged (TODO, A = 2). #41 (run 2): nominal affiliation reworded; MacTutor gives the parents' affiliation, not his own. #44 (run 2): Nobel biography locators recounted from 'Werner Heisenberg was born': the 1925 / Nobel sentence is paragraph 10 (was 7), Berlin paragraph 6 (was 5), the Max Planck Institute paragraphs 7 and 9 (were 6, 8). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: heisenberg-werner
@@ -190,7 +191,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1925–1932", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'; 'Uncertainty principle'"}, {source: S2, locator: "1925–1932 paragraphs"}], how_known: "Matrix mechanics to the nuclear model."}
-  age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S3, locator: "paragraph 10 ('when he was only 23 years old')"}], how_known: "Nobel biography."}
+  age_at_first_lasting_contribution: {value: 24, certainty: 1.0, cites: [{source: S3, locator: "paragraph 10 ('when he was only 23 years old')"}], how_known: "Nobel biography. P30 (rule 5): 1925 − 1901 = 24, with no month adjustment; was 23 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Guardini Prize lecture (lawful order and two truths)", year: 1973, certainty: 1.0, cites: [{source: S4, locator: "pp. 463–472"}], how_known: "Earliest dated statement read; earlier views (Der Teil und das Ganze, 1969) not read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The statement read is from 1973, long after the major work; his memoir places such conversations in 1927 and 1952 but was not read.", certainty: 0.5, cites: [{source: S4, locator: "p. 463"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
@@ -308,7 +309,7 @@ German; Evangelical Lutheran family [S2, Biography, paragraph 3]. Context only.
 
 ## Timing
 
-First lasting contribution 1925, at 23 [S3, paragraph 10]. The worldview evidence read is from 1973 [S4].
+First lasting contribution 1925, at 24 [S3, paragraph 10]. The worldview evidence read is from 1973 [S4].
 
 ## Lane B notes (labeled belief model)
 

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1900 → 1879, the start year of the earliest listed contribution (work on entropy and the second law, 1879–1897); age 42 → 21; era unchanged. If that item is judged not lasting it should be removed and the year returns to 1900 (noted in how_known). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; DEISM revelation test recorded (P27). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: planck-max
@@ -242,7 +243,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1879–1906", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5"}], how_known: "Thermodynamics papers to the radiation book."}
-  age_at_first_lasting_contribution: {value: 42, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; blackbody paragraphs"}], how_known: "Born 23 April 1858; doctorate and first thermodynamics work in 1879 (month not given here), so 21 for most of the year. 42 if the year is the quantum paper of December 1900. Was 42 until the batch 4 lens audit."}
+  age_at_first_lasting_contribution: {value: 21, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; blackbody paragraphs"}], how_known: "Born 23 April 1858; doctorate and first thermodynamics work in 1879 (month not given here), so 21 for most of the year. 42 if the year is the quantum paper of December 1900. Was 42 until the batch 4 lens audit. P30 (rule 5): 1879 − 1858 = 21, with no month adjustment; was 42 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Where Is Science Going? (German original 1932): chance and miracle excluded from science", year: 1932, certainty: 0.5, cites: [{source: S5, locator: "p. 159"}], how_known: "Earliest text read; the 1933 English edition. Britannica quotes an earlier autobiographical statement that the laws of reasoning match the laws of nature (date not given)."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The texts read are from 1932–1947, after the quantum work; earlier views not read.", certainty: 0.5, cites: [{source: S5, locator: "p. 159"}, {source: S4, locator: "copy p. 2"}], how_known: "Dates of the texts read."}
   worldview_during_major_work: {value: TODO}

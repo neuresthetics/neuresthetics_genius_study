@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: schrodinger-erwin
@@ -217,7 +218,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1926", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph ('a six-month period in 1926')"}], how_known: "Britannica."}
-  age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 ('during the first half of 1926')"}], how_known: "Born August 1887; the wave equation in the first half of 1926, so 38. Britannica says 'at the age of 39' (flag)."}
+  age_at_first_lasting_contribution: {value: 39, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 ('during the first half of 1926')"}], how_known: "Born August 1887; the wave equation in the first half of 1926, so 38. Britannica says 'at the age of 39' (flag). P30 (rule 5): 1926 − 1887 = 39, with no month adjustment; was 38 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "What is Life? epilogue: the body as a mechanism under the Laws of Nature, and ATHMAN = BRAHMAN", year: 1944, certainty: 0.7, cites: [{source: S4, locator: "Epilogue, pp. 86–87"}], how_known: "Earliest verified statement in the sources read. An earlier date (the first essay of My View of the World is often dated 1925) was not checked; see open questions."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "Verified statements are from 1944 and 1958, after the 1926 work. If an earlier essay (often dated 1925, not checked) holds the same view, the answer would be 'before major work'.", certainty: 0.5, cites: [{source: S4, locator: "Epilogue"}, {source: S1, locator: "later life"}], how_known: "Coder's reading of dates."}
   worldview_during_major_work: {value: TODO}
@@ -339,7 +340,7 @@ Viennese, half-English mother [S2, Biography]. Context only.
 
 ## Timing
 
-First lasting contribution 1926, at 38 [S3, paragraph 5]. Verified worldview statements are from 1944 and 1958.
+First lasting contribution 1926, at 39 [S3, paragraph 5]. Verified worldview statements are from 1944 and 1958.
 
 ## Lane B notes (labeled belief model)
 

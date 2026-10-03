@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 9
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S6 (Project Gutenberg Opticks, 4th ed. 1730) is an unofficial copy. Checked it against S14, the University of California library scan of the 1730 edition (Internet Archive), with a second scan (Oxford copy) to resolve OCR noise. The five Query 31 quotations and the Query 28 passage agree word for word. Added S14 cites with the printed 1730 pages to the four certainty-1.0 fields that cite S6 (languages_of_work, major_works Opticks, self-described relation, A_locus) and to the five quotations, whose verified_against goes from primary transcription to primary facsimile. All stay at 1.0. Noted that S6's page markers run about 24 pages above the 1730 pagination. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: newton-isaac
@@ -116,8 +117,8 @@ childhood:
   household_circumstances: {value: "Landed yeoman family; his mother became 'a lady of reasonable wealth and property' after her second marriage. He was the only son of the first marriage.", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences ('her now considerable property')"}], how_known: "Two sources agree."}
   schooling:
     - {value: "Learned to read and write from his grandmother and mother", stage: home, certainty: 0.7, cites: [{source: S3, locator: "§1.1"}], how_known: "One source."}
-    - {value: "Free Grammar School, Grantham, lodging with the Clark family; taken out about 1659 to run the farm, then sent back in 1660 to prepare for the university, lodging with the headmaster, Stokes", stage: "grammar or secondary school", institution: "Free Grammar School, Grantham", years: "c. 1655–1661 (interrupted c. 1659–1660)", ages: "c. 12–18", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1 (boarding school from 1655; farm 1659)"}, {source: S1, locator: "Formative influences"}], how_known: "Three sources agree on the school and the interruption. Start year from S3; S2 says 'shortly after' 1653."}
-    - {value: "Trinity College, Cambridge: entered as a sizar on 5 June 1661; scholar 1664; BA April 1665", stage: university, institution: "Trinity College, Cambridge", years: "1661–1665", ages: "18–22", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences (matriculated June 1661)"}], how_known: "Two sources agree."}
+    - {value: "Free Grammar School, Grantham, lodging with the Clark family; taken out about 1659 to run the farm, then sent back in 1660 to prepare for the university, lodging with the headmaster, Stokes", stage: "grammar or secondary school", institution: "Free Grammar School, Grantham", years: "c. 1655–1661 (interrupted c. 1659–1660)", ages: "c. 13–19", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1 (boarding school from 1655; farm 1659)"}, {source: S1, locator: "Formative influences"}], how_known: "Three sources agree on the school and the interruption. Start year from S3; S2 says 'shortly after' 1653."}
+    - {value: "Trinity College, Cambridge: entered as a sizar on 5 June 1661; scholar 1664; BA April 1665", stage: university, institution: "Trinity College, Cambridge", years: "1661–1665", ages: "19–23", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences (matriculated June 1661)"}], how_known: "Two sources agree."}
   early_mathematics: {value: "arithmetic only", ages: "to 18", description: "At Grantham he 'probably received no more than a smattering of arithmetic' (S1). MacTutor: 'There is no evidence that he learnt any mathematics' before university, and he did not read Euclid before 1663 (S2).", certainty: 0.7, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree that there is little or no evidence of school mathematics; both hedge ('probably'), so 0.7."}
   early_geometric_style_reasoning: {value: "None documented before 18. He first read Euclid's Elements (Barrow's edition) in autumn 1663, at 20, after failing to follow the mathematics in an astrology book; he then read the whole book.", certainty: 0.7, cites: [{source: S2, locator: "Biography (de Moivre's account)"}], how_known: "MacTutor reports de Moivre's account. One line of evidence."}
   early_science_exposure:
@@ -129,9 +130,9 @@ childhood:
   languages_in_childhood: {value: [English, Latin], certainty: 0.7, cites: [{source: S1, locator: "Formative influences ('a firm command of Latin')"}], how_known: "English as his first language; Latin learned at Grantham. One source for the Latin."}
   notable_events:
     - {value: "Father died before his birth", year: 1642, age: 0, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
-    - {value: "Mother remarried and left him with his grandmother", year: "1645 or 1646", age: "2–3", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences"}, {source: S3, locator: "§1.1"}], how_known: "Three sources agree on the event; the year differs by source."}
-    - {value: "Death of his stepfather; mother returned to Woolsthorpe with three young children", year: 1653, age: 10, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}, {source: S3, locator: "§1.1"}], how_known: "Three sources."}
-    - {value: "Wrote a list of his sins in shorthand at 19, including threatening to burn his mother and stepfather 'and the house over them', and setting his heart on learning more than on God", year: 1662, age: 19, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}], how_known: "Both sources quote the list."}
+    - {value: "Mother remarried and left him with his grandmother", year: "1645 or 1646", age: "3–4", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences"}, {source: S3, locator: "§1.1"}], how_known: "Three sources agree on the event; the year differs by source."}
+    - {value: "Death of his stepfather; mother returned to Woolsthorpe with three young children", year: 1653, age: 11, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}, {source: S3, locator: "§1.1"}], how_known: "Three sources."}
+    - {value: "Wrote a list of his sins in shorthand at 19, including threatening to burn his mother and stepfather 'and the house over them', and setting his heart on learning more than on God", year: 1662, age: 20, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}], how_known: "Both sources quote the list."}
 
 worldview:
   unit: "adult working worldview"
@@ -381,7 +382,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life:
-    - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 29, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
+    - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 30, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
   coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2)."
 
 heritage:
@@ -394,8 +395,8 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1665–1693", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Warden of the mint ('the move to London was the effective conclusion of his creative activity')"}], how_known: "From the plague years to his breakdown of 1693 and move to London; later editions (1704–1726) revised and extended earlier work."}
-  age_at_first_lasting_contribution: {value: 22, certainty: 1.0, cites: [{source: S2, locator: "Quick Info; Biography"}], how_known: "Born 4 January 1643 (Gregorian); the plague-years work began in 1665."}
-  first_evidence_of_lio_type_views: {value: "The Principia (1687) treats gravitation as universal, and its rules assign the same causes to the same effects on earth and in the heavens.", year: 1687, age: 44, certainty: 0.7, cites: [{source: S8, locator: "pp. 384–385"}, {source: S1, locator: "opening paragraph"}], how_known: "Earliest dated public statement found. His student notebook (Quaestiones, 1664) and De gravitatione were not read, so an earlier statement may exist."}
+  age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S2, locator: "Quick Info; Biography"}], how_known: "Born 4 January 1643 (Gregorian); the plague-years work began in 1665. P30 (rule 5): 1665 − 1642 = 23, with no month adjustment; was 22 until the P30 age sweep (2026-10-02)."}
+  first_evidence_of_lio_type_views: {value: "The Principia (1687) treats gravitation as universal, and its rules assign the same causes to the same effects on earth and in the heavens.", year: 1687, age: 45, certainty: 0.7, cites: [{source: S8, locator: "pp. 384–385"}, {source: S1, locator: "opening paragraph"}], how_known: "Earliest dated public statement found. His student notebook (Quaestiones, 1664) and De gravitatione were not read, so an earlier statement may exist."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The earliest dated lawful-order statement found is in the Principia itself (1687). The theistic framing in print (General Scholium 1713, Opticks Queries 1717) comes after the major work; the Bentley letters (1692–93) fall at its end.", certainty: 0.7, cites: [{source: S8, locator: "p. 384"}, {source: S7, locator: "letters of 1692–93"}, {source: S5, locator: "p. 388"}], how_known: "Dated documents; search not exhaustive."}
   worldview_during_major_work: {value: "An anti-Trinitarian Protestant from about 1672 (privately), who in 1692 said he wrote the Principia with an eye to belief in a Deity. The fullest statements of his theism (1713, 1717) and his private creeds (after 1710) are later than the major work.", certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S7, locator: "letter of 10 Dec. 1692"}, {source: S5, locator: "p. 388"}], how_known: "Dated documents; the creeds are dated only as after 1710."}
 
@@ -627,7 +628,7 @@ English, from Lincolnshire yeoman farmers and the Ayscough family [S2; S1]. Heri
 
 ## Timing
 
-His first lasting work began in 1665, at 22 [S2]. The earliest dated lawful-order statement found is in the Principia (1687) [S8]. His theism is stated most fully after the major work (1713, 1717), and his private creeds are post-1710 [S5; S6; S9].
+His first lasting work began in 1665, at 23 [S2]. The earliest dated lawful-order statement found is in the Principia (1687) [S8]. His theism is stated most fully after the major work (1713, 1717), and his private creeds are post-1710 [S5; S6; S9].
 
 ## Lane B notes (labeled belief model)
 

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: fermi-enrico
@@ -126,7 +127,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1926–1942", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–7"}], how_known: "From Fermi statistics to the chain reaction."}
-  age_at_first_lasting_contribution: {value: 24, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}], how_known: "Born September 1901; the 1926 statistics paper. 24 or 25 depending on the month of the paper, which S3 does not give."}
+  age_at_first_lasting_contribution: {value: 25, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}], how_known: "Born September 1901; the 1926 statistics paper. 24 or 25 depending on the month of the paper, which S3 does not give. P30 (rule 5): 1926 − 1901 = 25, with no month adjustment; was 24 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement in S1–S3."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement found.", certainty: 0.5, cites: [{source: S2, locator: "Biography"}], how_known: "Absence in the sources read."}
   worldview_during_major_work: {value: TODO}
@@ -227,7 +228,7 @@ Italian, Catholic family background [S2, Biography]. Context only.
 
 ## Timing
 
-First lasting contribution 1926, at about 24 [S3, paragraph 3]. No worldview statement to time.
+First lasting contribution 1926, at about 25 [S3, paragraph 3]. No worldview statement to time.
 
 ## Lane B notes (labeled belief model)
 

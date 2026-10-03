@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #78: B_cause 4 → 3 at 0.5; MacTutor quotes him on the 1604 nova allowing a 'special creation' only after trying 'everything else' (De stella nova ch. 22), a stated limited exception; statement added. Finding #81: E_scope 4 (0.5) → BELOW_THRESHOLD, the same thin evidence as Fermi, Meitner and Curie (§3 same pattern). Finding #83: self_described_science_religion_relation 0.7 → 0.5 (single-letter rule, §3). mid_basin unchanged (BELOW_THRESHOLD; A 1 and B 3 both at 0.5). primary_system unchanged (CHRIST 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: kepler-johannes
@@ -161,7 +162,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1604–1627", certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Optics to the Rudolphine Tables."}
-  age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Born December 1571; 1604 optics. 37 if the 1609 laws are used."}
+  age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Born December 1571; 1604 optics. 37 if the 1609 laws are used. P30 (rule 5): 1604 − 1571 = 33, with no month adjustment; was 32 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "God made the universe by a mathematical plan (Mysterium cosmographicum)", year: 1596, certainty: 0.5, cites: [{source: S3, locator: "§2"}, {source: S2, locator: "first cosmological model"}], how_known: "Scholars' readings."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "The geometric-plan cosmology of 1596 precedes the 1604 optics and 1609 laws.", certainty: 0.5, cites: [{source: S3, locator: "§2"}], how_known: "Dates."}
   worldview_during_major_work: {value: "Lutheran Christian natural philosophy with a Neoplatonic geometric cosmology", certainty: 0.5, cites: [{source: S2, locator: "Kepler's opinions"}, {source: S3, locator: "§2"}], how_known: "Scholars' readings."}
@@ -284,7 +285,7 @@ Swabian Lutheran [S2, Childhood]. Context only.
 
 ## Timing
 
-First lasting contribution 1604, at 32 [S1, Quick Facts]. The God-made geometric plan of 1596 comes before it [S3, §2].
+First lasting contribution 1604, at 33 [S1, Quick Facts]. The God-made geometric plan of 1596 comes before it [S3, §2].
 
 ## Lane B notes (labeled belief model)
 

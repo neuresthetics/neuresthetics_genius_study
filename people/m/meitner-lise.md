@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: meitner-lise
@@ -152,7 +153,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1918–1939", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–3"}], how_known: "Protactinium to fission."}
-  age_at_first_lasting_contribution: {value: 39, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "note 6"}], how_known: "Born November 1878; the 1918 protactinium paper."}
+  age_at_first_lasting_contribution: {value: 40, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}, {source: S3, locator: "note 6"}], how_known: "Born November 1878; the 1918 protactinium paper. P30 (rule 5): 1918 − 1878 = 40, with no month adjustment; was 39 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Letter on reverence for the 'miracle of life'", year: 1942, certainty: 0.5, cites: [{source: S3, locator: "note 21"}], how_known: "Earliest dated statement read; weak as an LIO view."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "Statements read are 1942–1955, after the major work, and are not clearly LIO-type.", certainty: 0.5, cites: [{source: S3, locator: "notes 20, 21, 31"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
@@ -264,7 +265,7 @@ Assimilated Viennese Jewish family; baptized Protestant at about 30 [S2, paragra
 
 ## Timing
 
-First lasting contribution 1918, at 39 [S1; S3, note 6]. Statements read are from 1942–1955.
+First lasting contribution 1918, at 40 [S1; S3, note 6]. Statements read are from 1942–1955.
 
 ## Lane B notes (labeled belief model)
 

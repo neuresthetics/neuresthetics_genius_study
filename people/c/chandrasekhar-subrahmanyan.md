@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (both runs, #19, #20, #25). S5 carries AIP's no-quotation notice, so under P8's last sentence only a paraphrase can be published and the interview cannot score an axis or code on its own; the record's earlier reading (quoting verbatim avoids the limit) was circular. Treated like Bohr's S7: S5 is now paraphrased throughout and its two verbatim statements were removed. primary_system ATHE 0.7 → 0.5 and A_locus 4 0.7 → 0.5, both basis recorded_interview → scholarly_reconstruction (as before P8); self-described relation 0.7 → 0.5; B_cause unchanged (4 at 0.5). mid_basin false (0.5) → BELOW_THRESHOLD (A and B both only at 0.5). Stale Wali note reworded. Not reviewed. Interview-based fields (primary_system, A_locus, the self-described relation, lio_views_relative_to_major_work, worldview_during_major_work, circle_present) now start their how_known with '(interview)' (P8 as signed off by Jason, 2026-10-02)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: chandrasekhar-subrahmanyan
@@ -151,7 +152,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1930–1983", certainty: 1.0, cites: [{source: S3, locator: "the seven periods"}], how_known: "His own periods, from white dwarfs to black holes."}
-  age_at_first_lasting_contribution: {value: 19, certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Born October 1910; the limit was worked out on the voyage of July–August 1930."}
+  age_at_first_lasting_contribution: {value: 20, certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Born October 1910; the limit was worked out on the voyage of July–August 1930. P30 (rule 5): 1930 − 1910 = 20, with no month adjustment; was 19 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "The only dated statement is from 1987 (S5); no earlier evidence read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The atheist self-description is late (1987) and undated as to origin.", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) Dates."}
   worldview_during_major_work: {value: "On his own later account, Struve knew during their Yerkes years (1937–1950) that he was an atheist", certainty: 0.5, cites: [{source: S5, locator: "answer on whether Struve was religious"}], how_known: "(interview) One retrospective remark (1987) about 1937–1950, paraphrased (AIP restricts quotation); dating his view to those years rests on hindsight, so 0.5."}
@@ -279,7 +280,7 @@ Tamil Brahmin, Hindu by birth [S4, opening sentence]. Context only.
 
 ## Timing
 
-First lasting contribution 1930, at 19 [S1, paragraph 3; S4]. The dated evidence of his atheism is late (1987) [S5].
+First lasting contribution 1930, at 20 [S1, paragraph 3; S4]. The dated evidence of his atheism is late (1987) [S5].
 
 ## Lane B notes (labeled belief model)
 

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies: S3 (Project Gutenberg text of Pierre Curie, 1923) is an unofficial copy. Checked it against S7, the Phillips Academy library scan of the 1923 Macmillan edition (Internet Archive). Every quotation and every S3 fact used by the eleven certainty-1.0 fields that cite S3 was found word for word: native_name, birth date, family_religion, father, household_circumstances, early_science_exposure, childhood_mentors, notable_events, nominal_affiliations, ethnic_or_communal_heritage, religious_heritage_by_birth. Added S7 cites with printed page numbers to those fields and to the two S3 quotations; the two quotations' verified_against goes from primary transcription to primary facsimile. All stay at 1.0. No value, certainty or mid_basin change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: curie-marie
@@ -176,7 +177,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1898–1911", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "Polonium and radium to the second Nobel Prize."}
-  age_at_first_lasting_contribution: {value: 30, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Move to Paris'"}], how_known: "Born November 1867; polonium in summer 1898."}
+  age_at_first_lasting_contribution: {value: 31, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Move to Paris'"}], how_known: "Born November 1867; polonium in summer 1898. P30 (rule 5): 1898 − 1867 = 31, with no month adjustment; was 30 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Letter declining the consolation of 'God willed it'", year: 1887, certainty: 0.5, cites: [{source: S4, locator: "p. 76"}], how_known: "Earliest dated statement read; a lapse of faith, not an LIO view as such."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "Her loss of faith (1887 letters) predates the 1898 work; the lawful account of decay is in the 1923 book.", certainty: 0.5, cites: [{source: S4, locator: "pp. 76–77"}, {source: S3, locator: "ch. VI"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
@@ -313,7 +314,7 @@ Polish Catholic gentry family [S3, Autobiographical Notes, ch. I]. Context only.
 
 ## Timing
 
-First lasting contribution 1898, at 30 [S1]. Her loss of faith predates the major work [S4, pp. 51, 76].
+First lasting contribution 1898, at 31 [S1]. Her loss of faith predates the major work [S4, pp. 51, 76].
 
 ## Lane B notes (labeled belief model)
 

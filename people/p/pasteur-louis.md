@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3. #84 (run 2): B_cause 4 at 0.7 (written_profession) → 4 at 0.5 (scholarly_reconstruction): his own words on nature (pp. 3–4) support the named alternative 3, and the 4 rests on a passage about method (p. 4) and Britannica's account of his working science, the evidence Bohr, Chandrasekhar and Dirac score at 0.5 (§3 same pattern); 3 stays named. mid_basin unchanged (BELOW_THRESHOLD, A not scored). Death place (both runs: holds at 0.5): the uncited phrases 'the form most sources use' and 'the estate adjoins the Saint-Cloud park' were removed; a cited line now gives the Saint-Cloud link (new S7, Inventaire général du patrimoine culturel, Île-de-France: part of the Villeneuve-l'Étang park was incorporated into the national domain of Saint-Cloud in 1895); S6 (EPHE) noted as not independent of S2 (it lists the ENS portrait among its sources). Value and certainty unchanged (v8's pick, P9). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: pasteur-louis
@@ -183,7 +184,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1848–1885", certainty: 0.7, cites: [{source: S1, locator: "'Research career' to 'Vaccine development'"}], how_known: "Molecular asymmetry to the rabies vaccine."}
-  age_at_first_lasting_contribution: {value: 25, certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "Computed from the coder's 1848."}
+  age_at_first_lasting_contribution: {value: 26, certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "Computed from the coder's 1848. P30 (rule 5): 1848 − 1822 = 26, with no month adjustment; was 25 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Académie française reception speech", year: 1882, certainty: 1.0, cites: [{source: S3, locator: "pp. 3–4, 20"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The speech (1882) comes late in the major work; nothing earlier was read.", certainty: 0.5, cites: [{source: S3, locator: "p. 3"}], how_known: "Dates of what was read."}
   worldview_during_major_work: {value: TODO}

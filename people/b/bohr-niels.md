@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #1: primary_system how_known no longer quotes S7 (AIP no-quotation notice); it now paraphrases Margrethe Bohr and says the 'did not think of himself as anything' answer was to Kuhn's question whether he thought of himself as a Jew, not a question about religion; the 'not true' wording is Heilbron's (S4, p. 24). #5: D_authority 4 at 0.5 kept; the 'warn people that it was not true' item is now labelled Margrethe Bohr's 1963 account as reported by Heilbron (S4, p. 24, n. 30), not Bohr's words; p. 34 (truth in literature and science) dropped as D support and its statement untagged from D. D already at the 0.5 floor, so no certainty change; nothing downstream changes (mid_basin BELOW_THRESHOLD, A not scored). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: bohr-niels
@@ -175,7 +176,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1913–1939", certainty: 0.7, cites: [{source: S2, locator: "1913 papers; 'other major contributions'"}, {source: S3, locator: "paragraphs 5–8"}], how_known: "From the atomic model (1913) to the fission work (1939), as the two sources date them."}
-  age_at_first_lasting_contribution: {value: 27, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Bohr model of the atom' paragraph"}], how_known: "Born October 1885; the trilogy appeared in 1913."}
+  age_at_first_lasting_contribution: {value: 28, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Bohr model of the atom' paragraph"}], how_known: "Born October 1885; the trilogy appeared in 1913. P30 (rule 5): 1913 − 1885 = 28, with no month adjustment; was 27 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Rejection of Christian theology, including the concept of a saved soul", year: "c. 1899–1900", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Heilbron's reconstruction; a loss of faith, not an LIO statement as such."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "The rejection of theology (adolescence) and the 1911–12 letters predate the 1913 atom.", certainty: 0.5, cites: [{source: S4, locator: "pp. 20, 34"}], how_known: "Dates."}
   worldview_during_major_work: {value: "Outside the church from April 1912, on his own convictions; religion judged untrue throughout", certainty: 0.7, cites: [{source: S4, locator: "pp. 20, 24"}, {source: S5, locator: "1912"}, {source: S7, locator: "Session I (religion)"}], how_known: "Three sources agree."}
@@ -314,7 +315,7 @@ Danish, with a Jewish maternal family; christened Lutheran [S2, paragraph 1; S4,
 
 ## Timing
 
-First lasting contribution 1913, at 27 [S1]. His rejection of theology predates the major work [S4, p. 20].
+First lasting contribution 1913, at 28 [S1]. His rejection of theology predates the major work [S4, p. 20].
 
 ## Lane B notes (labeled belief model)
 
