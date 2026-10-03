@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #47: MacTutor's 'Although he was a Catholic' is about the adult in 1933, so family_religion and religious_heritage_by_birth are now TODO (were 'Catholic, per MacTutor' at 0.5); the adult nominal affiliation keeps the MacTutor statement at 0.7 (one reliable source, no dispute). Finding #45: region_of_work certainty 1.0 → 0.7, value unchanged (Western Europe, where wave mechanics was done); the 1935 cat paper (Oxford) and What is Life? (Dublin) were Northern Europe, now an alternative. region_of_birth stays 1.0 (Vienna, documented). Leading cut marked with [...] in one statement. Worldview scores unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): B_cause certainty 1.0 → 0.7. It rests on the rapeutation.com copy of the What is Life? epilogue (S4), and no authoritative edition was reachable to check the wording. mid_basin recomputed: value false (P4 test, A = 4) and certainty 0.7 = min(A 0.7, B 0.7), both unchanged; how_known updated."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
 
 identity:
   id: schrodinger-erwin
@@ -146,7 +147,7 @@ worldview:
     value: false
     certainty: 0.7
     cites: [{source: S4, locator: "Epilogue, p. 87"}]
-    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is the lower of A (0.7) and B (0.7)."
+    how_known: "P4 test: A_locus = 4 (≥ 3), so false. Certainty is A's (0.7): the A ≥ 3 branch reads A only (decision P10)."
   statements:
     - text: "My body functions as a pure mechanism according to the Laws of Nature."
       cites: [{source: S4, locator: "Epilogue 'On Determinism and Free Will', p. 86"}]
