@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #93/#94 (run 1) and the same error in claims 71, 73–75, 78, 80–84 and 90: every S4 'letter, paragraph 1' locator replaced with the right paragraph of the four-paragraph letter (2 heritage, Sunday schools and the break; 3 'I do not believe in God'; 4 Humanist and Unitarian); S4 reliability note corrected. #82 (run 2 note): AHA membership years '–1963' → 'by 1963' (the letter shows membership then, not an end date). #89 / decisions P12, P13: new source S6 (the 1931 JACS paper 'The Nature of the Chemical Bond', bibliographic record via Crossref); chemical-bond item dated '1930s' → '1931–1939'; first_lasting_contribution_year 1925 (0.5) → 1931 (0.7), age 24 (0.5) → 30 (0.7); the unlisted PhD crystal papers no longer set the year. Era unchanged. Not reviewed."}
 
 identity:
   id: pauling-linus
@@ -36,8 +37,8 @@ basics:
   death:
     date: {value: "1994-08-19", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "closing note"}], how_known: "Two sources agree."}
     place: {value: "Big Sur, California", modern_name: "Big Sur, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1925, certainty: 0.5, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 3"}], how_known: "His X-ray crystal-structure papers, begun with Dickinson in 1922, formed his 1925 PhD; which early paper first lasted is the coder's judgement."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year (P2); any candidate year (1922–1931) is in this bucket."}
+  first_lasting_contribution_year: {value: 1931, certainty: 0.7, cites: [{source: S6, locator: "title and date (April 1931)"}, {source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}], how_known: "Start year of the earliest listed contribution, the chemical-bond theory (1931–1939), under decisions P12 and P13. The 1922–1925 crystal-structure papers of his PhD are not listed, because no source read calls them lasting, so they do not set the year; the Nobel biography's 1922 (S2, paragraph 3) is when he began general work on the bond, not this theory. 0.7: dating the theory from the 1931 paper is the coder's reading. Was 1925 (0.5) until the batch 4 lens audit."}
+  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}], how_known: "From first_lasting_contribution_year 1931 (P2); any candidate year (1922–1931) is in this bucket."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S2, locator: "paragraph 4"}], how_known: "Caltech, 1922 on."}
   sex_as_recorded: {value: "male", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "As the sources record it."}
@@ -47,7 +48,7 @@ basics:
 contribution:
   fields: {value: ["structural chemistry", "quantum chemistry", "molecular biology"], certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
   lasting_original_contributions:
-    - {value: "Nature of the chemical bond: valence-bond theory with resonance and hybrid bonds; electronegativity scale", year: "1930s", kind: theory, lasting: "Nobel Prize in Chemistry 1954", certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}, {source: S2, locator: "paragraphs 3, 6"}], how_known: "Two sources."}
+    - {value: "Nature of the chemical bond: valence-bond theory with resonance and hybrid bonds; electronegativity scale", year: "1931–1939", kind: theory, lasting: "Nobel Prize in Chemistry 1954", certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}, {source: S2, locator: "paragraphs 3, 6"}, {source: S6, locator: "title and date"}], how_known: "Two sources for the work; the years run from his 1931 paper 'The Nature of the Chemical Bond' (S6) to the 1939 book of the same name (S1). Was dated '1930s' until the batch 4 lens audit."}
     - {value: "Sickle-cell anemia as the first 'molecular disease'", year: "1949", kind: discovery, lasting: "founding case of molecular medicine", certainty: 1.0, cites: [{source: S1, locator: "sickle-cell paragraph"}], how_known: "Britannica."}
     - {value: "Alpha helix of proteins", year: "1948–1951", kind: discovery, lasting: "standard protein structure", certainty: 0.7, cites: [{source: S1, locator: "Oxford 1948 paragraph"}], how_known: "Britannica gives the 1948 discovery; publication year not on the page read."}
   evidence_of_impact:
@@ -64,8 +65,8 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of modern structural chemistry; two unshared Nobel Prizes.", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
-  family_religion: {value: "Protestant: paternal grandparents Lutheran; he believed he was baptized in the Congregational Church", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter (one source; 'I believe that I was baptized')."}
-  family_religious_practice: {value: "He attended various Sunday schools as a boy", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter."}
+  family_religion: {value: "Protestant: paternal grandparents Lutheran; he believed he was baptized in the Congregational Church", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter (one source; 'I believe that I was baptized')."}
+  family_religious_practice: {value: "He attended various Sunday schools as a boy", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter."}
   parents_and_household:
     - {value: "Father, Herman Henry William Pauling, a druggist born in Missouri, of German descent", name: "Herman Pauling", role: father, certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}, {source: S1, locator: "'Early life and education'"}], how_known: "Two sources."}
     - {value: "Mother, Lucy Isabelle Darling, born in Oregon of English-Scottish ancestry, a pharmacist's daughter", name: "Lucy Isabelle Pauling (née Darling)", role: mother, certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}, {source: S1, locator: "'Early life and education'"}], how_known: "Two sources."}
@@ -88,31 +89,31 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1922–1994", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Caltech graduate work to death."}
   nominal_affiliations:
-    - {value: "American Humanist Association (member)", years: "–1963", role: "member", certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech heading and itinerary"}], how_known: "His own letter; his 1961 speech to the AHA, where he received its Humanist of the Year award."}
-    - {value: "First Unitarian Church of Los Angeles ('accepts atheists as members'; joined 'to help with' its support of morality and ethics)", years: "1962–", role: "member", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter (one source)."}
+    - {value: "American Humanist Association (member)", years: "by 1963", role: "member", certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 4"}, {source: S3, locator: "speech heading and itinerary"}], how_known: "His own letter shows him a member in January 1963 (it gives no start or end date); his 1961 speech to the AHA, where he received its Humanist of the Year award."}
+    - {value: "First Unitarian Church of Los Angeles ('accepts atheists as members'; joined 'to help with' its support of morality and ethics)", years: "1962–", role: "member", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 4"}], how_known: "His own letter (one source)."}
   self_described_science_religion_relation:
     value: "Humanism as 'a rational philosophy' that rejects 'the mysticism and supernaturalism of the revealed religions', life after death, and a god who interferes 'with the ordered regularity of events as determined by natural laws'; he broke away from church affiliation when he 'began to think for myself and to become skeptical about dogmatic statements'."
     certainty: 0.7
-    cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 1"}]
+    cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 2"}]
     how_known: "His own speech and letter; 0.7 because the speech states what humanism 'as I understand it' holds, which he endorses but phrases through the movement."
   primary_system:
     value: SECHUM
     basis: written_profession
     certainty: 0.7
-    cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 1"}]
+    cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 4"}]
     how_known: "His own words: 'I believe that there is great value in the philosophy of humanism' (S3); 'I am a Humanist—a member of the American Humanist Association' (S4); speech given to the AHA on receiving its Humanist of the Year award."
     rationale: "SECHUM: v7.1's rule sends a person to SECHUM 'if the public identity is humanist movement rather than metaphysics' (CODING_GUIDE §1). His public identity is the humanist movement (AHA member, Humanist of the Year, 'Humanism and Peace'). Named alternative: ATHE, since he also writes 'I do not believe in God' (S4) and his humanism rejects the supernatural outright (S3), which is positive naturalism. SECHUM and ATHE are stub system files (flag)."
   secondary_system: {value: UNKNOWN, how_known: "No second system; Unitarian membership is an affiliation, not a second published system."}
   candidate_codes_considered:
-    - {code: SECHUM, reason: "Coded at 0.7: self-described Humanist, AHA member and award winner; speech on humanism. Stub system file (flag).", cites: [{source: S3, locator: "speech"}, {source: S4, locator: "letter"}]}
-    - {code: ATHE, reason: "Named alternative: 'I do not believe in God'; rejection of the supernatural. Stub system file (flag).", cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech, paragraph on humanism"}]}
-    - {code: CHRIST, reason: "Rejected: childhood Sunday schools and a probable Congregational baptism are upbringing; he 'broke away from church affiliation', and he states the Unitarian church he joined is 'not Christian'.", cites: [{source: S4, locator: "letter, paragraph 1"}]}
+    - {code: SECHUM, reason: "Coded at 0.7: self-described Humanist, AHA member and award winner; speech on humanism. Stub system file (flag).", cites: [{source: S3, locator: "speech"}, {source: S4, locator: "letter, paragraphs 3–4"}]}
+    - {code: ATHE, reason: "Named alternative: 'I do not believe in God'; rejection of the supernatural. Stub system file (flag).", cites: [{source: S4, locator: "letter, paragraph 3"}, {source: S3, locator: "speech, paragraph on humanism"}]}
+    - {code: CHRIST, reason: "Rejected: childhood Sunday schools and a probable Congregational baptism are upbringing; he 'broke away from church affiliation', and he states the Unitarian church he joined is 'not Christian'.", cites: [{source: S4, locator: "letter, paragraphs 2, 4"}]}
   lio_axes:
     A_locus:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech, paragraph on humanism"}]
+      cites: [{source: S4, locator: "letter, paragraph 3"}, {source: S3, locator: "speech, paragraph on humanism"}]
       how_known: "His own letter and speech; the denial of God is in a letter signed for him by his secretary (S4), so 0.7."
       rationale: "No God beyond the world, so at the LIO pole as for other atheist and humanist records (Chandrasekhar): 'I do not believe in God' (S4); humanism rejects 'a belief in an omniscient, omnipotent, and omnipresent god who watches over and cares for human beings' (S3)."
     B_cause:
@@ -133,7 +134,7 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 1"}]
+      cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 2"}]
       how_known: "His own speech and letter; 0.7."
       rationale: "Observation and reason outrank revelation: humanism 'is a rational philosophy' that 'rejects the mysticism and supernaturalism of the revealed religions' (S3); he left the church when he became 'skeptical about dogmatic statements' (S4)."
     E_scope:
@@ -146,7 +147,7 @@ worldview:
   mid_basin:
     value: false
     certainty: 0.7
-    cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech, paragraph on humanism"}]
+    cites: [{source: S4, locator: "letter, paragraph 3"}, {source: S3, locator: "speech, paragraph on humanism"}]
     how_known: "P4 test: A_locus = 4 (≥ 3) at 0.7, so false. Certainty is A's (0.7): the A ≥ 3 branch reads A only (decision P10)."
   statements:
     - text: "I believe that there is great value in the philosophy of humanism -- that the chief end of human life is to work for the happiness of man upon this earth (and we might soon have to add the moon and then Venus and other planets)."
@@ -166,7 +167,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "My paternal grandparents were Lutherans. I believe that I was baptized in the Congregational Church—I attended various Sunday schools when X was a boy, but I broke away from church affiliation when I began to think for myself and to become skeptical about dogmatic statements. I do not believe in God."
-      cites: [{source: S4, locator: "letter, paragraph 1"}]
+      cites: [{source: S4, locator: "letter, paragraphs 2–3"}]
       date: "1963-01-23"
       context: "Letter to Mrs. Eubert J. Daniel (Duke University Medical Center), answering her inquiry (her letter of 18 January 1963); signed for him by his secretary Linda Hopkins. 'X' is as in the archive's transcription."
       axes: [A_locus, D_authority]
@@ -174,7 +175,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "I am a Humanist—a member of the American Humanist Association."
-      cites: [{source: S4, locator: "letter, paragraph 1"}]
+      cites: [{source: S4, locator: "letter, paragraph 4"}]
       date: "1963-01-23"
       context: "Same letter; he encloses 'Humanism and Peace' as 'a statement of my beliefs'."
       axes: []
@@ -182,35 +183,35 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life:
-    - {value: "Sunday schools as a boy; broke away from church affiliation as he became skeptical of dogma; humanist by 1961; joined the First Unitarian Church of Los Angeles in summer 1962", year: "1910s–1962", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}, {source: S3, locator: "speech"}], how_known: "His own letter; the date of the break is not given."}
+    - {value: "Sunday schools as a boy; broke away from church affiliation as he became skeptical of dogma; humanist by 1961; joined the First Unitarian Church of Los Angeles in summer 1962", year: "1910s–1962", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraphs 2, 4"}, {source: S3, locator: "speech"}], how_known: "His own letter; the date of the break is not given."}
   coder_notes: "SECHUM and ATHE are stub system files (flag). S3 and S4 are read in Oregon State University Special Collections' own transcriptions of documents in the Ava Helen and Linus Pauling Papers (the archive that holds them), so they are treated as authoritative copies under §7, not unofficial web copies; the printed version of the speech (The Humanist, 1961) was not compared. S4 is signed for him by his secretary Linda Hopkins ('Linus Pauling:lh'), so it is his letter in his name but possibly not typed or signed by him; fields resting mainly on it are at 0.7. The essay 'Why I am a Unitarian' on the Pauling Blog is by Ava Helen Pauling and is not used. No interview is used in this record."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German (father's side) and English-Scottish (mother's side) American", certainty: 1.0, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}
-  religious_heritage_by_birth: {value: "Protestant (Lutheran grandparents; probable Congregational baptism)", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter."}
-  baptism_or_initiation: {value: "Probably baptized in the Congregational Church ('I believe that I was baptized')", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own uncertain recollection."}
-  childhood_catechism: {value: "Various Sunday schools", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter."}
+  religious_heritage_by_birth: {value: "Protestant (Lutheran grandparents; probable Congregational baptism)", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter."}
+  baptism_or_initiation: {value: "Probably baptized in the Congregational Church ('I believe that I was baptized')", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own uncertain recollection."}
+  childhood_catechism: {value: "Various Sunday schools", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "His own letter."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1927–1954", certainty: 0.7, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraphs 3–4"}], how_known: "Return to Caltech to the chemistry Nobel; coder's reading."}
-  age_at_first_lasting_contribution: {value: 24, certainty: 0.5, cites: [{source: S1, locator: "opening; 'Early life and education'"}], how_known: "Born February 1901; PhD papers 1925; same caveat as the year."}
+  age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "date (April 1931)"}], how_known: "Born 28 February 1901; the 1931 paper appeared in April 1931, so 30. Was 24 (from the 1925 PhD) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: "'Humanism and Peace' speech", year: 1961, certainty: 1.0, cites: [{source: S3, locator: "speech heading"}], how_known: "Earliest dated statement read (Rationalist of the Year 1960 suggests earlier views, not read)."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The statements read are from 1961 and 1963, after the main work; the letter says he broke with the church when he began to think for himself, without a date.", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "Dates of the sources."}
+  lio_views_relative_to_major_work: {value: "unclear", rationale: "The statements read are from 1961 and 1963, after the main work; the letter says he broke with the church when he began to think for himself, without a date.", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "Dates of the sources."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "partly", rationale: "He reasoned from structural rules (atomic radii, bond strengths, electronegativity) to molecular structures, and built the alpha helix by folding a paper model (S1); rule-based but empirical, not a definitional method.", certainty: 0.5, cites: [{source: S1, locator: "'Elucidation of molecular structures'; 1948 paragraph"}], how_known: "Coder's reading."}
   form_acquired: {value: "through the profession", certainty: 0.5, cites: [{source: S2, locator: "paragraph 3"}], how_known: "Crystal-structure work from 1922 with Dickinson; coder's reading."}
-  circle_present: {value: "no", rationale: "He denies God; nothing identifies God with Nature.", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 1"}], how_known: "His own letter."}
+  circle_present: {value: "no", rationale: "He denies God; nothing identifies God with Nature.", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 3"}], how_known: "His own letter."}
   reading: "As belief, not finding: form partly present (structural rules), circle absent. The record does not test H1."
   notes: ""
 
 institutions:
   - {value: "California Institute of Technology", role: "professor; chairman of the Division of Chemistry and Chemical Engineering and director of the Gates and Crellin laboratories (1936–1958)", years: "1922–1963", kind: university, certainty: 0.7, cites: [{source: S2, locator: "paragraph 4"}, {source: S1, locator: "'Elucidation of molecular structures'"}], how_known: "Two sources; the end year is not on the pages read."}
-  - {value: "American Humanist Association", role: "member; Humanist of the Year 1961", years: "1961–", kind: other, certainty: 1.0, cites: [{source: S4, locator: "letter"}, {source: S2, locator: "paragraph 5"}], how_known: "Two sources."}
+  - {value: "American Humanist Association", role: "member; Humanist of the Year 1961", years: "1961–", kind: other, certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 4"}, {source: S2, locator: "paragraph 5"}], how_known: "Two sources."}
 collaborators:
   - {value: "Roscoe G. Dickinson", relation: teacher, note: "taught him X-ray crystal-structure determination", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "Arnold Sommerfeld", relation: "mentor or employer", note: "most of his 1926–27 Guggenheim year in Munich", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 4"}], how_known: "Two sources."}
@@ -268,7 +269,7 @@ sources:
     citation: "Pauling, Linus, to Mrs. Eubert J. Daniel, 23 January 1963 (signed by Linda Hopkins). Ava Helen and Linus Pauling Papers, Correspondence D, #99.4; transcription in Linus Pauling Day-by-Day, Oregon State University Special Collections, https://scarc.library.oregonstate.edu/coll/pauling/calendar/1963/01/23.html."
     url: "https://scarc.library.oregonstate.edu/coll/pauling/calendar/1963/01/23.html"
     accessed: 2026-10-02
-    reliability_note: "His letter, transcribed by the archive that holds it; one page, one main paragraph."
+    reliability_note: "His letter, transcribed by the archive that holds it; one page. Paragraph locators count the four body paragraphs from 'I was happy to receive your letter' (1) to the Humanist and Unitarian paragraph (4); the closing 'With best wishes' line is not counted."
     used_for: [childhood, worldview, heritage, timing, lane_b, institutions]
   - id: S5
     type: secondary
@@ -279,6 +280,16 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Linus Pauling"
+    year: 1931
+    citation: "Pauling, Linus. \"The Nature of the Chemical Bond. Application of Results Obtained from the Quantum Mechanics and from a Theory of Paramagnetic Susceptibility to the Structure of Molecules.\" Journal of the American Chemical Society 53, no. 4 (April 1931): 1367–1400. https://doi.org/10.1021/ja01355a027."
+    url: "https://doi.org/10.1021/ja01355a027"
+    accessed: 2026-10-02
+    reliability_note: "Bibliographic record checked through the Crossref DOI record; the paper's text was not read. Cited only for its title and date, which date the start of the chemical-bond theory."
+    used_for: [contribution, timing]
 ---
 
 # Linus Pauling
@@ -311,7 +322,7 @@ German and English-Scottish American [S2]. Context only.
 
 ## Timing
 
-First lasting contribution about 1925 [S1; S2]. The worldview statements read are from 1961 and 1963.
+First lasting contribution 1931, the chemical-bond paper, at 30 [S1; S6]. The worldview statements read are from 1961 and 1963.
 
 ## Lane B notes (labeled belief model)
 
