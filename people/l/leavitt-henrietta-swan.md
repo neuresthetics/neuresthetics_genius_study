@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and Solon I. Bailey's obituary (Popular Astronomy 30, 1922, pp. 197–199), read in the NASA ADS page scan. No writing of hers on religion was found; Bailey, a colleague, describes her as 'deeply conscientious and sincere in her attachment to her religion and church' and names her father as the Rev. George Roswell Leavitt. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #109 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 (church attachment is never a code on its own) and §7 (another person's description is not her words). Decision P12 recheck: the variable-star item '1900s–1921' → 'by 1921' (sources give totals only), so it does not set the year; first_lasting_contribution_year stays 1912, with a flag that a dated source could move it earlier. No coded value changed. Not reviewed."}
 
 identity:
   id: leavitt-henrietta-swan
@@ -36,7 +37,7 @@ basics:
   death:
     date: {value: "1921-12-12", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "p. 197"}], how_known: "Two sources agree."}
     place: {value: "Cambridge, Massachusetts", modern_name: "Cambridge, Massachusetts, USA", polity_then: "United States", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "p. 197"}], how_known: "Two sources agree."}
-  first_lasting_contribution_year: {value: 1912, certainty: 1.0, cites: [{source: S1, locator: "'Leavitt's outstanding achievement was her discovery in 1912'"}, {source: S2, locator: "p. 198 ('the important law was derived')"}], how_known: "Period–luminosity relation for Cepheid variables."}
+  first_lasting_contribution_year: {value: 1912, certainty: 1.0, cites: [{source: S1, locator: "'Leavitt's outstanding achievement was her discovery in 1912'"}, {source: S2, locator: "p. 198 ('the important law was derived')"}], how_known: "Period–luminosity relation for Cepheid variables, the earliest dated listed contribution (decisions P12, P13). The variable-star discoveries ('by 1921') have no dated start in the sources read; a source dating her first discoveries before 1912 would move the year earlier."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
   region_of_work: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Harvard College Observatory."}
@@ -49,7 +50,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Period–luminosity relation of Cepheid variables (from 25 variables in the Magellanic Clouds)", year: "1912", kind: "law or principle", lasting: "the basis of Cepheid distances, used by Hubble, Shapley and others", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}, {source: S2, locator: "p. 198"}], how_known: "Two sources."}
     - {value: "North Polar Sequence and standard photographic magnitudes, adopted for the Astrographic Map of the Sky", year: "1912–1917", kind: method, lasting: "in general use until photoelectric photometry", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 3–4"}, {source: S2, locator: "pp. 197–198"}], how_known: "Two sources."}
-    - {value: "Discovery of about 2,400 variable stars and 4 novae", year: "1900s–1921", kind: discovery, lasting: "more than half of the variables known by 1930", certainty: 1.0, cites: [{source: S1, locator: "paragraph 4"}, {source: S2, locator: "p. 198"}], how_known: "Two sources."}
+    - {value: "Discovery of about 2,400 variable stars and 4 novae", year: "by 1921", kind: discovery, lasting: "more than half of the variables known by 1930", certainty: 1.0, cites: [{source: S1, locator: "paragraph 4"}, {source: S2, locator: "p. 198"}], how_known: "Two sources give the totals by her death; neither dates her first discoveries, so the item has no start year and does not set first_lasting_contribution_year (decision P12). Was dated '1900s–1921' until the batch 4 lens audit."}
   evidence_of_impact:
     - {value: "Hubble used her relation in 1924 for the first distance to a galaxy beyond the Milky Way (Andromeda)", kind: "assessment by a later major figure", certainty: 1.0, cites: [{source: S1, locator: "Cepheid paragraph"}], how_known: "Britannica."}
   major_works:
@@ -84,7 +85,7 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S2, locator: "p. 197"}]
-    how_known: "Only a colleague's character sketch: she 'inherited in a somewhat chastened form the stern virtues of her puritan ancestors' and was sincere in her attachment to 'her religion and church'. That is another person's description, not her words, and church attachment is never a code on its own (CODING_GUIDE §1; decision P9: paraphrase alone cannot score)."
+    how_known: "Only a colleague's character sketch: she 'inherited in a somewhat chastened form the stern virtues of her puritan ancestors' and was sincere in her attachment to 'her religion and church'. That is another person's description, not her words, and church attachment is never a code on its own (CODING_GUIDE §1), and another person's description is not her words (CODING_GUIDE §7)."
     note: "Candidate: CHRIST. Would need her letters (Harvard University Archives, Harvard College Observatory records) or a biography that quotes her."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
   candidate_codes_considered:
