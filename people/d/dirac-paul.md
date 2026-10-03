@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Kojevnikov, first page), MacTutor and the Nobel biography. No writing by Dirac on religion could be checked: the 1963 Scientific American article is access-restricted on the Internet Archive, the FSU Library scan of his 1976 Lindau lecture notes sits behind a bot challenge, and the 1927 Solvay remarks survive only in Heisenberg's later reconstruction (another person's report). primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1925–1933 → 1925–1934; worldview.working_years 1923–1984 → 1925–1934, equal to the span (P30 addendum f); lasting item added: Vacuum polarization (1934); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: dirac-paul
@@ -55,6 +56,7 @@ contribution:
     - {value: "Relativistic wave equation for the electron (Dirac equation)", year: "1928", kind: theory, lasting: "standard physics; Nobel Prize 1933", certainty: 1.0, cites: [{source: S1, locator: "'In 1928 Dirac published'"}, {source: S3, locator: "paragraphs 2–3"}], how_known: "Two sources."}
     - {value: "Prediction of antimatter (the positron)", year: "1930–1931", kind: discovery, lasting: "confirmed 1932; antiparticles a universal property of matter", certainty: 1.0, cites: [{source: S1, locator: "'In 1928 Dirac published', paragraphs 2–3"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
     - {value: "Fermi–Dirac statistics", year: "1926", kind: "law or principle", lasting: "standard physics", certainty: 0.7, cites: [{source: S1, locator: "paragraph after 'Physics and Natural Law'"}], how_known: "Britannica."}
+    - {value: "Vacuum polarization", year: 1934, kind: "concept or term", lasting: "used in the renormalized quantum electrodynamics built after the Second World War", certainty: 0.7, cites: [{source: S1, locator: "paragraph on quantum electrodynamics in the 1930s ('These concepts, and also Dirac’s idea of vacuum polarization (1934), helped a new generation of theorists after World War II invent ways of subtracting infinities')"}], how_known: "One encyclopedia article, so 0.7. Added 2026-10-02 under the P30 addendum (the latest lasting work must be listed). Not added: the 1933 Lagrangian paper (S1; S2), which falls inside the span, and the 1938 classical electron theory (S2, 'famous paper'), which no source read calls lasting."}
   evidence_of_impact:
     - {value: "Nobel Prize in Physics 1933 (shared with Schrödinger)", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography (1933)"}], how_known: "Two sources."}
   major_works:
@@ -91,7 +93,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1923–1984", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From research student to death."}
+  working_years: {value: "1925–1934", certainty: 1.0, cites: [{source: S1, locator: "opening to 1928 paragraphs; paragraph on quantum electrodynamics in the 1930s (vacuum polarization, 1934)"}, {source: S2, locator: "Biography"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1923–1984: From research student to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Dirac on science and religion could be read in a checkable source (see coder_notes)."}
   primary_system:
@@ -129,7 +131,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1925–1933", certainty: 1.0, cites: [{source: S1, locator: "opening to 1928 paragraphs"}, {source: S2, locator: "Biography"}], how_known: "Quantum mechanics to the Lagrangian paper and the Nobel Prize."}
+  major_work_period: {value: "1925–1934", certainty: 1.0, cites: [{source: S1, locator: "opening to 1928 paragraphs; paragraph on quantum electrodynamics in the 1930s (vacuum polarization, 1934)"}, {source: S2, locator: "Biography"}], how_known: "From quantum mechanics (1925–1926) to vacuum polarization (1934), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1925–1933. S1 names his 1934 vacuum polarization among the ideas that later made the predictions of quantum electrodynamics finite, so it was added as the latest lasting item."}
   age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S3, locator: "paragraphs 1–2"}], how_known: "Born August 1902; work of late 1925."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No checkable worldview statement found."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No checkable worldview statement found.", certainty: 0.5, cites: [{source: S2, locator: "Biography"}], how_known: "Nothing to date."}

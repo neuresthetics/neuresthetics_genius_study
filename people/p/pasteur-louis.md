@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3. #84 (run 2): B_cause 4 at 0.7 (written_profession) → 4 at 0.5 (scholarly_reconstruction): his own words on nature (pp. 3–4) support the named alternative 3, and the 4 rests on a passage about method (p. 4) and Britannica's account of his working science, the evidence Bohr, Chandrasekhar and Dirac score at 0.5 (§3 same pattern); 3 stays named. mid_basin unchanged (BELOW_THRESHOLD, A not scored). Death place (both runs: holds at 0.5): the uncited phrases 'the form most sources use' and 'the estate adjoins the Saint-Cloud park' were removed; a cited line now gives the Saint-Cloud link (new S7, Inventaire général du patrimoine culturel, Île-de-France: part of the Villeneuve-l'Étang park was incorporated into the national domain of Saint-Cloud in 1895); S6 (EPHE) noted as not independent of S2 (it lists the ENS portrait among its sources). Value and certainty unchanged (v8's pick, P9). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1848–1885 unchanged; worldview.working_years 1847–1895 → 1848–1885, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: pasteur-louis
@@ -86,7 +87,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1847–1895", certainty: 0.7, cites: [{source: S1, locator: "'Research career'; 'Vaccine development'"}], how_known: "From his doctorate to his death."}
+  working_years: {value: "1848–1885", certainty: 0.7, cites: [{source: S1, locator: "'Research career' to 'Vaccine development'"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1847–1895: From his doctorate to his death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Two orders kept apart: experimental science 'jamais [...] ne fait intervenir la considération de l'essence des choses, de l'origine du monde et de ses destinées' and has nothing to learn from metaphysics; but the questions of God and the soul seem to him 'd'essence éternelle', and the notion of the infinite, which imposes itself and is incomprehensible, puts 'le surnaturel [...] au fond de tous les cœurs'."

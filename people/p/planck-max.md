@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1900 → 1879, the start year of the earliest listed contribution (work on entropy and the second law, 1879–1897); age 42 → 21; era unchanged. If that item is judged not lasting it should be removed and the year returns to 1900 (noted in how_known). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; DEISM revelation test recorded (P27). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1879–1906 → 1879–1900; worldview.working_years 1879–1947 → 1879–1900, equal to the span (P30 addendum f); 6 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: planck-max
@@ -89,7 +90,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1879–1947", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2, 9"}], how_known: "Doctorate to death; he lectured on religion and science into old age."}
+  working_years: {value: "1879–1900", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1879–1947: Doctorate to death; he lectured on religion and science into old age."}
   nominal_affiliations:
     - {value: "Protestant church tradition of his family; in 1947 he denied a rumoured conversion to Catholicism", years: "1858–1947", role: other, certainty: 0.5, cites: [{source: S1, locator: "early life paragraph"}, {source: S9, locator: "p. 327; nn. 47–48"}, {source: S6, locator: "Heilbron quotation"}], how_known: "Family tradition (S1: 'devotion to church and state') and the 1947 denial only. Church membership or office is unsourced: neither membership (Lutheran) nor the commonly reported church-elder role was found in the sources read, so the role is 'other', not 'member' (lens audit, batch 2, finding #135)."}
   self_described_science_religion_relation:
@@ -242,7 +243,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1879–1906", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5"}], how_known: "Thermodynamics papers to the radiation book."}
+  major_work_period: {value: "1879–1900", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 2–5"}], how_known: "From the entropy work (1879–1897; a range gives its start year, P12) to the radiation law and the quantum of action (1900), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1879–1906, which ended with the 1906 radiation book; S3 says that book summarizes the work, and it is not a listed contribution."}
   age_at_first_lasting_contribution: {value: 21, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; blackbody paragraphs"}], how_known: "Born 23 April 1858; doctorate and first thermodynamics work in 1879 (month not given here), so 21 for most of the year. 42 if the year is the quantum paper of December 1900. Was 42 until the batch 4 lens audit. P30 (rule 5): 1879 − 1858 = 21, with no month adjustment; was 42 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Where Is Science Going? (German original 1932): chance and miracle excluded from science", year: 1932, certainty: 0.5, cites: [{source: S5, locator: "p. 159"}], how_known: "Earliest text read; the 1933 English edition. Britannica quotes an earlier autobiographical statement that the laws of reasoning match the laws of nature (date not given)."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The texts read are from 1932–1947, after the quantum work; earlier views not read.", certainty: 0.5, cites: [{source: S5, locator: "p. 159"}, {source: S4, locator: "copy p. 2"}], how_known: "Dates of the texts read."}
@@ -412,6 +413,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form unclea
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (DEISM 0.5), A_locus (2 at 0.7), B_cause (4 at 0.7), D_authority (2 at 0.7), E_scope (4 at 0.7), mid_basin (TODO) rest on evidence outside the new span 1879–1900. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Heilbron (1986) and Scientific Autobiography and Other Papers (1949), for the 1947 letter and church membership.
 - Bertholet (1948) for the 1945 letter, and Herneck (1952, 1960).
 - mid_basin for A_locus = 2 needs a decision.

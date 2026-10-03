@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1918–1939 unchanged; worldview.working_years 1906–1960 → 1918–1939, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: meitner-lise
@@ -83,7 +84,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1906–1960", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–4"}], how_known: "Doctorate to retirement."}
+  working_years: {value: "1918–1939", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–3"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1906–1960: Doctorate to retirement."}
   nominal_affiliations:
     - {value: "Baptized Protestant (Evangelical/Lutheran) in 1908; member of St.-Annenkirche, Berlin-Dahlem, and later of the Lutheran congregation of Engelbrektskyrkan, Stockholm", years: "1908–1968", role: member, certainty: 0.7, cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S3, locator: "Sweden section"}], how_known: "Baptism in two sources; congregations from S3 only. S3 spells the church 'Engelbrechtskyrkan'."}
   self_described_science_religion_relation:

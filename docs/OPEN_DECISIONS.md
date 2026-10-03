@@ -687,7 +687,7 @@ Process:
 - **c. No documented public statement in life.** An item with no public statement in life (rule 1) is dated by its documented composition date, and the note says so. The death cap (rule 3) still applies.
 - **d. Ranges.** A range gives its start year for the period start (P12) and its end year for the period end (rule 4). Kant's period ends in 1788.
 - **e. Posthumous items.** The period never runs past death. A late private writing published after death counts only if its composition is dated within the period. So Pascal's period ends in 1662 at the latest, and Hume's in 1776 at the latest.
-- **f. One span, two fields.** `timing.major_work_period` is the authoritative span. `worldview.working_years` must equal it, and "working years" in the docs means that span. `validate_people.py` now warns when the two differ: 38 of the 43 records warn (29 of the 31 outside stage 3, 9 of the 12 stage 3 records). This round fixes none of them.
+- **f. One span, two fields.** `timing.major_work_period` is the authoritative span. `worldview.working_years` must equal it, and "working years" in the docs means that span. `validate_people.py` now warns when the two differ: 38 of the 43 records warn (29 of the 31 outside stage 3, 9 of the 12 stage 3 records). This round fixes none of them. (Follow-up, 2026-10-02: the 29 outside stage 3 are aligned; spans checked and evidence dates audited in `reports/p30_span_alignment.csv`.)
 - **g. Schema descriptions.** "published letter" now says printed in the person's lifetime or written for circulation (rule 13), and the mid_basin description includes the alternatives rule (rule 10). DATA_DICTIONARY was regenerated. No enum changed.
 
 ### S1. CLTHEI display label

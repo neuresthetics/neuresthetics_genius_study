@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #109 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 (church attachment is never a code on its own) and §7 (another person's description is not her words). Decision P12 recheck: the variable-star item '1900s–1921' → 'by 1921' (sources give totals only), so it does not set the year; first_lasting_contribution_year stays 1912, with a flag that a dated source could move it earlier. No coded value changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1907–1921 → 1912–1921; worldview.working_years 1895–1921 → 1912–1921, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: leavitt-henrietta-swan
@@ -80,7 +81,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1895–1921", certainty: 0.7, cites: [{source: S1, locator: "paragraph 1"}], how_known: "Volunteer at the Harvard Observatory to death."}
+  working_years: {value: "1912–1921", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–5"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1895–1921: Volunteer at the Harvard Observatory to death."}
   nominal_affiliations:
     - {value: "Church member (denomination not named): 'deeply conscientious and sincere in her attachment to her religion and church'", years: "–1921", role: "member", certainty: 0.7, cites: [{source: S2, locator: "p. 197"}], how_known: "A colleague's obituary (one source)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No writing of hers on science and religion was found."}
@@ -118,7 +119,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1907–1921", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–5"}], how_known: "Pickering's photographic magnitude plan (1907) to her death; coder's reading."}
+  major_work_period: {value: "1912–1921", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–5"}], how_known: "From the period–luminosity relation (1912) to the variable-star count ('by 1921', an inclusive bound, so 1921), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1907–1921, which started with Pickering's 1907 plan, not a listed contribution."}
   age_at_first_lasting_contribution: {value: 44, certainty: 0.7, cites: [{source: S1, locator: "opening; Cepheid paragraph"}], how_known: "Born July 1868; discovery 1912 (age 43 or 44 depending on the month). P30 (rule 5): 1912 − 1868 = 44, with no month adjustment; was 43 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement of hers found."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement of hers found.", certainty: 0.5, cites: [{source: S2, locator: "p. 197"}], how_known: "Nothing to date."}

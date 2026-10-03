@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3, #121 (run 1): 'later buried in the garrison church' overstated p. 347. Only the funeral service ('the holy words spoken over it') was held in the garrison church; she asked to be laid beside her father and mother (p. 347), and her epitaph says her father lies 'hierneben begraben' (p. 351). family_religion, the CHRIST rationale and the body now say so. The christening and confirmation in the garrison church are now attributed to the editor (p. 347); her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. No score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P13 recheck: first_lasting_contribution_year 1786 → 1783 (the listed three nebulae of 1783, the earliest listed contribution; the old alternative is now the value), age 36 → 33; era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1786–1828 → 1783–1828; worldview.working_years 1772–1848 → 1783–1828, equal to the span (P30 addendum f); 2 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: herschel-caroline
@@ -92,7 +93,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1772–1848", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–4"}], how_known: "From Bath to her death."}
+  working_years: {value: "1783–1828", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–4"}, {source: S2, locator: "1786–1828 paragraphs"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1772–1848: From Bath to her death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Searched the 1876 Memoir's full text (God, Providence, church, prayer, Creator, soul, heaven); no statement relating astronomy and religion was found. 'Minding the heavens' is her phrase for observing."}
   primary_system:
@@ -159,7 +160,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1786–1828", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–4"}, {source: S2, locator: "1786–1828 paragraphs"}], how_known: "From the first comet to the nebula catalogue."}
+  major_work_period: {value: "1783–1828", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–4"}, {source: S2, locator: "1786–1828 paragraphs"}], how_known: "From the three nebulae of 1783 to the nebula catalogue (1822–1828), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1786–1828, which started with the first comet rather than the earliest listed item."}
   age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Born 16 March 1750; three nebulae in 1783 (month not given), so 33 for most of the year. Was 36 (first comet, August 1786) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type statement found in the Memoir's full text."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No LIO-type statement found; not scored from absence.", certainty: 0.5, cites: [{source: S3, locator: "full text searched"}], how_known: "Nothing to date."}
@@ -273,6 +274,7 @@ Everything in this section is Lane B: labeled belief, not a finding. No geometri
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.5), A_locus (0 at 0.5) rest on evidence outside the new span 1783–1828. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Hoskin's editions and biographies; the epitaph manuscript.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 10
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1665–1693 → 1665–1704; worldview.working_years 1665–1727 → 1665–1704, equal to the span (P30 addendum f); lasting item added: Opticks (1704); 6 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: newton-isaac
@@ -91,6 +92,7 @@ contribution:
     - {value: "Composition of white light: sunlight is a mixture of rays with different refrangibility and colour (prism experiments)", year: "1665–1666; published 1672", kind: discovery, lasting: "foundation of physical optics", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Career (experiments of 1665 and 1666)"}, {source: S2, locator: "Biography (1672 paper in the Philosophical Transactions)"}], how_known: "Two sources agree."}
     - {value: "The reflecting telescope", year: "by 1671", kind: invention, lasting: "reflecting telescopes", certainty: 1.0, cites: [{source: S1, locator: "Career ('he constructed the first ever built'; the Royal Society heard of it in 1671)"}, {source: S2, locator: "Biography (elected FRS in 1672 after donating one)"}], how_known: "Two sources agree. The build year itself is not given in the sources read."}
     - {value: "The three laws of motion and the law of universal gravitation (Principia)", year: 1687, kind: "law or principle", lasting: "the basic principles of classical mechanics", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree."}
+    - {value: "Opticks: the experiments on light and colours in book form, with the first printed account of his calculus in two appended papers", year: 1704, kind: "work", lasting: "the experimental theory of light and colours; the calculus in print", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Notable Works: 'Opticks'); International prominence ('he did not really publish it until he appended two papers to the Opticks in 1704'); Final years ('the first edition of the Opticks in 1704')"}], how_known: "One encyclopedia article, read on three of its pages, so 0.7. S1 adds that the book 'merely published work done 30 years before'. Added 2026-10-02 under the P30 addendum (the latest lasting work must be listed)."}
   evidence_of_impact:
     - {value: "Britannica calls his three laws of motion 'the basic principles of modern physics' and the Principia one of the most important single works in the history of modern science", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Signed reference article."}
     - {value: "Young British scientists took him as their model, and within a generation the salaried science chairs in England were held by Newtonians", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "International prominence"}], how_known: "One source."}
@@ -136,7 +138,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1665–1727", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Final years"}], how_known: "From the plague years to his death. His creative science was mostly done by 1693 (S1); theology continued to the end."}
+  working_years: {value: "1665–1704", certainty: 1.0, cites: [{source: S2, locator: "Biography (plague years)"}, {source: S1, locator: "International prominence; Final years ('the first edition of the Opticks in 1704')"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1665–1727: From the plague years to his death. His creative science was mostly done by 1693 (S1); theology continued to the end."}
   nominal_affiliations:
     - {value: "Protestant ('a fervent if unorthodox Protestant'). He was a Fellow of Trinity College, helped lead Cambridge's resistance to James II's attempt to Catholicize it, and sat for the university in the Convention Parliament (1689)", years: "1661–1727", certainty: 0.7, cites: [{source: S1, locator: "Warden of the mint ('a fervent if unorthodox Protestant')"}, {source: S2, locator: "Biography (Convention Parliament, 15 January 1689)"}], how_known: "Britannica gives the label 'Protestant'; MacTutor confirms the Convention Parliament. Neither names the Church of England, so the label is 'Protestant' (lens audit, 2026-10-02). One source for the label, so 0.7. His London parish priest was Samuel Clarke (next entry, S4)."}
     - {value: "In London, Samuel Clarke was his parish priest", certainty: 0.7, cites: [{source: S4, locator: "§7 (Leibniz–Clarke correspondence)"}], how_known: "One source."}
@@ -394,10 +396,10 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1665–1693", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Warden of the mint ('the move to London was the effective conclusion of his creative activity')"}], how_known: "From the plague years to his breakdown of 1693 and move to London; later editions (1704–1726) revised and extended earlier work."}
+  major_work_period: {value: "1665–1704", certainty: 1.0, cites: [{source: S2, locator: "Biography (plague years)"}, {source: S1, locator: "International prominence; Final years ('the first edition of the Opticks in 1704')"}], how_known: "From the plague-years calculus (1665) to the Opticks (1704), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1665–1693, which ended at his breakdown and move to London. The Opticks (1704) was in major_works but not on the list. S1 names it among his notable works and says the calculus first appeared in print in its two appended papers, so it was added and the span ends there. Later editions (1706, 1713, 1717–18, 1726) revise earlier work and are not separate items."}
   age_at_first_lasting_contribution: {value: 23, certainty: 1.0, cites: [{source: S2, locator: "Quick Info; Biography"}], how_known: "Born 4 January 1643 (Gregorian); the plague-years work began in 1665. P30 (rule 5): 1665 − 1642 = 23, with no month adjustment; was 22 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "The Principia (1687) treats gravitation as universal, and its rules assign the same causes to the same effects on earth and in the heavens.", year: 1687, age: 45, certainty: 0.7, cites: [{source: S8, locator: "pp. 384–385"}, {source: S1, locator: "opening paragraph"}], how_known: "Earliest dated public statement found. His student notebook (Quaestiones, 1664) and De gravitatione were not read, so an earlier statement may exist."}
-  lio_views_relative_to_major_work: {value: "during major work", rationale: "The earliest dated lawful-order statement found is in the Principia itself (1687). The theistic framing in print (General Scholium 1713, Opticks Queries 1717) comes after the major work; the Bentley letters (1692–93) fall at its end.", certainty: 0.7, cites: [{source: S8, locator: "p. 384"}, {source: S7, locator: "letters of 1692–93"}, {source: S5, locator: "p. 388"}], how_known: "Dated documents; search not exhaustive."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "The earliest dated lawful-order statement found is in the Principia itself (1687). The theistic framing in print (General Scholium 1713, Opticks Queries 1717) comes after the major work; the Bentley letters (1692–93) fall at its end. Span check 2026-10-02: against the new 1665–1704 span the Bentley letters are inside and the 1713 and 1717 texts are still after it; the label is unchanged.", certainty: 0.7, cites: [{source: S8, locator: "p. 384"}, {source: S7, locator: "letters of 1692–93"}, {source: S5, locator: "p. 388"}], how_known: "Dated documents; search not exhaustive."}
   worldview_during_major_work: {value: "An anti-Trinitarian Protestant from about 1672 (privately), who in 1692 said he wrote the Principia with an eye to belief in a Deity. The fullest statements of his theism (1713, 1717) and his private creeds (after 1710) are later than the major work.", certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S7, locator: "letter of 10 Dec. 1692"}, {source: S5, locator: "p. 388"}], how_known: "Dated documents; the creeds are dated only as after 1710."}
 
 lane_b:
@@ -636,6 +638,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Newton show
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.7), A_locus (1 at 1.0), C_ledger (0 at 0.7), D_authority (2 at 0.7), E_scope (3 at 0.7), mid_basin (true at 0.7 (pass)) rest on evidence outside the new span 1665–1704. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Earlier dated lawful-order statements (Quaestiones 1664, De gravitatione).
 - Household religious practice and baptism record.
 - Closer dates for the theological manuscripts.

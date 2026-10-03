@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (both runs, #19, #20, #25). S5 carries AIP's no-quotation notice, so under P8's last sentence only a paraphrase can be published and the interview cannot score an axis or code on its own; the record's earlier reading (quoting verbatim avoids the limit) was circular. Treated like Bohr's S7: S5 is now paraphrased throughout and its two verbatim statements were removed. primary_system ATHE 0.7 → 0.5 and A_locus 4 0.7 → 0.5, both basis recorded_interview → scholarly_reconstruction (as before P8); self-described relation 0.7 → 0.5; B_cause unchanged (4 at 0.5). mid_basin false (0.5) → BELOW_THRESHOLD (A and B both only at 0.5). Stale Wali note reworded. Not reviewed. Interview-based fields (primary_system, A_locus, the self-described relation, lio_views_relative_to_major_work, worldview_during_major_work, circle_present) now start their how_known with '(interview)' (P8 as signed off by Jason, 2026-10-02)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1930–1983 unchanged; worldview.working_years 1929–1995 → 1930–1983, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: chandrasekhar-subrahmanyan
@@ -99,7 +100,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1929–1995", certainty: 1.0, cites: [{source: S4, locator: "first paper (1929) to death"}, {source: S3, locator: "the seven periods"}], how_known: "From his first paper to his death."}
+  working_years: {value: "1930–1983", certainty: 1.0, cites: [{source: S3, locator: "the seven periods"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1929–1995: From his first paper to his death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "None stated as such in what was read. In a 1987 interview (paraphrased here) he called himself an atheist in passing, and described the maxim that the simple is the seal of the true as a description of the fundamental truths of science, giving the Kerr solution, where a search for abstract beauty is matched exactly in nature, as his example."

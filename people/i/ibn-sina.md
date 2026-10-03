@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided by Jason (2026-10-02, option 1): E_scope is scored on the world's order. Rechecked: E_scope stays 3. Basis scholarly_reconstruction 0.5 -> written_profession 0.7, because on the world's order his own text speaks to the axis (the heavens do not act 'for our sake', S6, p. 617); capped at 0.7 by the named alternative 4 (CODING_GUIDE §3), as for B. Access to knowledge and bliss moved to the C_ledger rationale (C unchanged). Statement tags updated; P7 note removed. No new sources. mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period c. 1012–1037 → 1016–1027; worldview.working_years c. 998–1037 → 1016–1027, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: ibn-sina
@@ -126,7 +127,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "c. 998–1037", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}], how_known: "From his first work at about 18 to his death. Start date depends on the birth year."}
+  working_years: {value: "1016–1027", certainty: 0.7, cites: [{source: S4, locator: "§1; §2"}, {source: S5, locator: "Biography"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was c. 998–1037: From his first work at about 18 to his death. Start date depends on the birth year."}
   nominal_affiliations:
     - {value: "Muslim; trained in Hanafi jurisprudence and served as a jurist at Gurganj", years: "lifelong", role: "believer; jurist", certainty: 1.0, cites: [{source: S4, locator: "§1"}, {source: S5, locator: "Biography"}], how_known: "Two sources (IEP, MacTutor)."}
   self_described_science_religion_relation:
@@ -283,7 +284,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "c. 1012–1037", certainty: 0.7, cites: [{source: S4, locator: "§1; §2"}, {source: S5, locator: "Biography"}], how_known: "From Jurjan and Hamadan, where the Canon and The Cure were begun, to his death. Start approximate."}
+  major_work_period: {value: "1016–1027", certainty: 0.7, cites: [{source: S4, locator: "§1; §2"}, {source: S5, locator: "Biography"}], how_known: "The Cure (1016–1027), the earliest and latest dated listed lasting contribution (P29; P12 for the start, P30 #4 for the end). Span check 2026-10-02 (P29, P30 and its addendum): was c. 1012–1037, which ran to his death. The Canon, the necessary/possible distinction and the flying man are listed without years; the last two are set out in The Cure. Dating the Canon by its composition (addendum c) is left open."}
   age_at_first_lasting_contribution: {value: 36, certainty: 0.5, cites: [{source: S4, locator: "§2"}, {source: S1, locator: "Quick Facts"}], how_known: "The Cure begun 1016 and birth about 980. The birth year is disputed (S2: about 970), so the age could be 46."}
   first_evidence_of_lio_type_views: {value: "The Metaphysics of The Cure states providence as the fixed order of the good, with everything coming to be through intermediate causes.", year: 1027, certainty: 0.5, cites: [{source: S6, locator: "IX ch. 8; X ch. 1"}, {source: S4, locator: "§2 (completed by 1027)"}], how_known: "Latest date for The Cure's completion; the passages may be earlier. Earlier works (Compendium on the Soul, Philosophy for ʿArudi) were not read, so 0.5."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The lawful-order statements read are in The Cure, his main work.", certainty: 0.7, cites: [{source: S6, locator: "IX ch. 8"}], how_known: "Dated work; earlier works not read."}

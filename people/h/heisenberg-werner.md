@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #33 (run 1; verified on the CrossCurrents text): primary_system PLATO (0.7) → BELOW_THRESHOLD, with PLATO (leading) and CHRIST as candidates. PLATO's use_when needs the intelligible reality to be the ultimate origin of both existence and values; the lecture makes the realm behind phenomena the ground of ethics and trust (p. 467), not of existence, and pairs Plato with the Bible (p. 467) while speaking from inside the Christian 'linguistic area' (p. 471). PLATO's do_not_use_when sends Platonism inside Christianity to the host religion unless the Platonism clearly dominates, which the record does not show; CHRIST's use_when (specifically Christian belief) is not met either. No axis changed; mid_basin unchanged (TODO, A = 2). #41 (run 2): nominal affiliation reworded; MacTutor gives the parents' affiliation, not his own. #44 (run 2): Nobel biography locators recounted from 'Werner Heisenberg was born': the 1925 / Nobel sentence is paragraph 10 (was 7), Berlin paragraph 6 (was 5), the Max Planck Institute paragraphs 7 and 9 (were 6, 8). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1925–1932 unchanged; worldview.working_years 1922–1976 → 1925–1932, equal to the span (P30 addendum f); 4 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: heisenberg-werner
@@ -93,7 +94,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1922–1976", certainty: 1.0, cites: [{source: S1, locator: "'Education'"}, {source: S3, locator: "paragraphs 2–6"}], how_known: "From his first research to his death."}
+  working_years: {value: "1925–1932", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'; 'Uncertainty principle'"}, {source: S2, locator: "1925–1932 paragraphs"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1922–1976: From his first research to his death."}
   nominal_affiliations:
     - {value: "Born to an Evangelical Lutheran family (father Lutheran; mother converted from Catholicism at marriage); his own baptism and membership are not stated", years: "1901–", role: "member by upbringing", certainty: 0.7, cites: [{source: S2, locator: "Biography, paragraph 3"}], how_known: "Inferred from the parents' affiliation: MacTutor says the father 'was an Evangelical Lutheran' and the mother had converted, and that the parents 'brought up their children to follow Christian ethics'. MacTutor says nothing of Werner's own baptism or membership; adult membership not checked in the sources read (lens audit batch 3, #41)."}
   self_described_science_religion_relation:
@@ -317,6 +318,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): A_locus (2 at 0.7), B_cause (4 at 0.7), D_authority (2 at 0.7), mid_basin (TODO) rest on evidence outside the new span 1925–1932. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Der Teil und das Ganze (1969) and Physics and Philosophy (1958); his adult church membership.
 
 ## Research log

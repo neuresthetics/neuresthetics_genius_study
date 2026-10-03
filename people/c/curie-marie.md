@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1898–1911 → 1898–1910; worldview.working_years 1894–1934 → 1898–1910, equal to the span (P30 addendum f); 1 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: curie-marie
@@ -91,7 +92,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1894–1934", certainty: 1.0, cites: [{source: S1, locator: "'Move to Paris'"}, {source: S2, locator: "paragraphs 1–7"}], how_known: "From laboratory work in Paris to her death."}
+  working_years: {value: "1898–1910", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1894–1934: From laboratory work in Paris to her death."}
   nominal_affiliations:
     - {value: "Raised Catholic; no practice in adult life; civil wedding (1895)", years: "1867–1934", role: "former member", certainty: 1.0, cites: [{source: S3, locator: "ch. IV (marriage)"}, {source: S7, locator: "p. 80"}, {source: S4, locator: "p. 137"}, {source: S5, locator: "p. 18"}], how_known: "Her own statement that she 'did not practice any' religion, and two other sources on the civil ceremony."}
   self_described_science_religion_relation:
@@ -176,7 +177,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1898–1911", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "Polonium and radium to the second Nobel Prize."}
+  major_work_period: {value: "1898–1910", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "paragraphs 2, 6"}], how_known: "From polonium and radium (1898) to the isolation of radium (1902–1910; a range gives its end year, P30 #4). Span check 2026-10-02 (P29, P30 and its addendum): was 1898–1911, which ended at the second Nobel Prize, not a listed contribution."}
   age_at_first_lasting_contribution: {value: 31, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; 'Move to Paris'"}], how_known: "Born November 1867; polonium in summer 1898. P30 (rule 5): 1898 − 1867 = 31, with no month adjustment; was 30 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Letter declining the consolation of 'God willed it'", year: 1887, certainty: 0.5, cites: [{source: S4, locator: "p. 76"}], how_known: "Earliest dated statement read; a lapse of faith, not an LIO view as such."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "Her loss of faith (1887 letters) predates the 1898 work; the lawful account of decay is in the 1923 book.", certainty: 0.5, cites: [{source: S4, locator: "pp. 76–77"}, {source: S3, locator: "ch. VI"}], how_known: "Dates."}
@@ -322,6 +323,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form unclea
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): B_cause (4 at 0.7) rest on evidence outside the new span 1898–1910. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Her 1906–07 mourning journal and French or Polish letters; Goldsmith (2005) and Reid for any self-description as agnostic.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P11: TCP transcriptions are authoritative copies under CODING_GUIDE §7, so the open question on S3/S4 is closed (coder notes, the self-described relation's how_known and both reliability notes cite P11; no value change). Decision P12: first_lasting_contribution_year 1660 → 1659 (start of the listed 1659–1660 air-pump item; Britannica), age 33 → 32; era unchanged. Small fixes on claims that hold: #22 comma restored in 'divers times, (and perhaps oftner' (TCP A28982, p. 160); #34 Church of England affiliation 1.0 → 0.7 (only Britannica names the church). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1659–1668 → 1659–1666; worldview.working_years 1644–1691 → 1659–1666, equal to the span (P30 addendum f); lasting item added: The Origine of Formes and Qualities (1666); 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: boyle-robert
@@ -50,6 +51,7 @@ contribution:
     - {value: "Air-pump experiments with Robert Hooke on air pressure and the vacuum (air's role in combustion, respiration and sound)", year: "1659–1660", kind: discovery, lasting: "founding work of experimental pneumatics", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
     - {value: "Boyle's law: pressure and volume of a gas vary inversely", year: "1662", kind: "law or principle", lasting: "standard physics and chemistry", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}
     - {value: "The Sceptical Chymist: critique of Aristotelian and Paracelsian elements and of chemical analysis; corpuscular chemistry", year: "1661", kind: work, lasting: "earned him the name 'father of chemistry'", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 2"}], how_known: "Britannica."}
+    - {value: "The Origine of Formes and Qualities: chemical experiments used to support the corpuscular (mechanical) hypothesis of matter", year: 1666, kind: "work", lasting: "the corpuscular, mechanical account of matter that later chemistry built on", certainty: 0.7, cites: [{source: S1, locator: "paragraph on the mechanical philosophy ('Among his most influential writings were The Sceptical Chymist (1661) [...] and the Origine of Formes and Qualities (1666), which used chemical phenomena to support the corpuscularian hypothesis')"}], how_known: "One encyclopedia article names it among his most influential writings, so 0.7. Added 2026-10-02 under the P30 addendum (the latest lasting work must be listed)."}
   evidence_of_impact:
     - {value: "Called 'the leading natural philosopher in England before Newton' and 'the father of experimental philosophy'", kind: "scholarly consensus", certainty: 1.0, cites: [{source: S2, locator: "§1 Life and opening"}, {source: S1, locator: "'Scientific career', paragraph 2 ('father of chemistry')"}], how_known: "Two sources."}
   major_works:
@@ -84,7 +86,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1644–1691", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education' to 'Mature years in London'"}], how_known: "Return to England and Stalbridge to death."}
+  working_years: {value: "1659–1666", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career' (air pump, 1659); paragraph on the mechanical philosophy (Origine of Formes and Qualities, 1666)"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1644–1691: Return to England and Stalbridge to death."}
   nominal_affiliations:
     - {value: "Church of England ('a devout and pious Anglican')", years: "–1691", role: "member", certainty: 0.7, cites: [{source: S1, locator: "'Theological activities'"}, {source: S2, locator: "§1 Life ('Christian Virtuoso because of his piety')"}], how_known: "One source names the church: Britannica ('a devout and pious Anglican'; he declined a bishopric). SEP confirms his Christian piety but does not name the Church of England, so 0.7 (CODING_GUIDE §3, other facts)."}
   self_described_science_religion_relation:
@@ -208,7 +210,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1659–1668", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career' ('Much of Boyle's best-known work dates from this period')"}], how_known: "The Oxford years."}
+  major_work_period: {value: "1659–1666", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career' (air pump, 1659); paragraph on the mechanical philosophy (Origine of Formes and Qualities, 1666)"}], how_known: "From the air pump (1659–1660) to The Origine of Formes and Qualities (1666), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1659–1668 ('the Oxford years'). The list ended in 1662, and S1 names the Origine of Formes (1666) among his most influential writings, so it was added and the span ends there."}
   age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Scientific career', paragraph 1"}], how_known: "Born 25 January 1627; air pump completed and used in 1659 (month not given), so 32 for all but the first weeks of the year."}
   first_evidence_of_lio_type_views: {value: "Free Enquiry: laws of motion upheld by God's ordinary concourse", year: 1686, certainty: 1.0, cites: [{source: S3, locator: "pp. 8, 10"}], how_known: "Earliest dated statement read; his earlier theological writings were not read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The texts read (1686, 1690) are after the Oxford work; when they were drafted was not checked.", certainty: 0.5, cites: [{source: S3, locator: "title page (1685/6)"}, {source: S4, locator: "title page (1690)"}], how_known: "Dates of the texts read."}
@@ -330,6 +332,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (CHRIST 0.7), A_locus (0 at 0.7), B_cause (3 at 0.7), C_ledger (0 at 0.7), D_authority (2 at 0.7), E_scope (3 at 0.7), mid_basin (true at 0.7 (pass)) rest on evidence outside the new span 1659–1666. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - The Hunter and Davis edition; the Account of Philaretus.
 
 ## Research log

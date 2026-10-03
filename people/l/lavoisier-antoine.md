@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #64 (both runs): the King letter's date is Grimaux p. 53 n. 1, not n. 2; n. 2 (lay patron of the chapel of his château of Fréchines, chaplain named by deed of 7 Aug 1781 and paid 290 livres a year) added as a nominal affiliation and in the CHRIST candidate, cited to p. 53 n. 2. #51: single-letter rule cited as CODING_GUIDE §3 (secondary quotation §7). #61: first_lasting_contribution_year 1774 → 1772 (0.5): 1774 is Priestley's visit; his own combustion experiments date from 1772 (sealed note of 1 Nov 1772, Grimaux p. 103 and n. 1), with the Easter 1775 memoir (p. 108) as the alternative; age 31 → 29; era bucket unchanged. #65: trailing cut of the 1791 quotation marked [...]. No worldview score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); first lasting year per P13/P23, no coder's-choice wording; Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1772–1789 unchanged; worldview.working_years 1764–1794 → 1772–1789, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: lavoisier-antoine
@@ -86,7 +87,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1764–1794", certainty: 0.7, cites: [{source: S3, locator: "p. 4"}, {source: S1, locator: "opening"}], how_known: "From the end of his law studies to his death."}
+  working_years: {value: "1772–1789", certainty: 0.7, cites: [{source: S2, locator: "'The Oxygen Revolution'; 'The New Chemistry'"}, {source: S4, locator: "title page"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1764–1794: From the end of his law studies to his death."}
   nominal_affiliations:
     - {value: "Catholic by baptism (Saint-Merry, Paris, 1743)", years: "1743–", role: "member by baptism", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}], how_known: "Primary document printed in S3: the birth and baptism record in Grimaux's appendix."}
     - {value: "Lay patron (patron laïc) of the chapel of his château of Fréchines; as such he named a chaplain, the abbé Bellavoine, by deed of 7 August 1781 and paid him 290 livres a year", years: "1781–", role: "other", certainty: 0.7, cites: [{source: S3, locator: "p. 53 n. 2"}], how_known: "Grimaux's note, citing the deed; one source. Patronage of a chapel that came with the estate is a practice and an office, not a statement of belief, so it does not lift primary_system (CODING_GUIDE §1, church membership)."}

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -14,6 +14,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P12 recheck: first_lasting_contribution_year 1610 → 1609 (start year of the listed 1609–1610 telescopic discoveries), age 46 → 45; the 1604 alternative is kept (P13 note added). Era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1604–1638 → 1609–1638; worldview.working_years 1589–1642 → 1609–1638, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: galilei-galileo
@@ -87,7 +88,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1589–1642", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Lecturer at Pisa (1589) to death."}
+  working_years: {value: "1609–1638", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1589–1642: Lecturer at Pisa (1589) to death."}
   nominal_affiliations:
     - {value: "Catholic; his daughters became nuns at the convent of St Matthew, Arcetri", role: member, certainty: 1.0, cites: [{source: S1, locator: "§2"}, {source: S3, locator: "Biography"}], how_known: "Two sources."}
   self_described_science_religion_relation:
@@ -215,7 +216,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1604–1638", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "From the Padua mechanics to Two New Sciences; start year approximate."}
+  major_work_period: {value: "1609–1638", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "From the telescopic discoveries (1609–1610; a range gives its start year, P12) to Two New Sciences (1638), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1604–1638, which started with the Padua mechanics, not a listed contribution."}
   age_at_first_lasting_contribution: {value: 45, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Born 15 February 1564; telescopic work from 1609, so 45. 40 if the 1604 mechanics is used. Was 46 (Sidereus nuncius, 1610) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: "Letter to Castelli, then Letter to Christina: Nature immutable under laws", year: 1615, certainty: 0.7, cites: [{source: S1, locator: "§2"}, {source: S4, locator: "letter"}], how_known: "The 1613–14 Letter to Castelli was not read; the 1615 letter is the earliest read."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "1615 falls between Sidereus nuncius and the Dialogue.", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Dates."}

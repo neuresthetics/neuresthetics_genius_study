@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1923–1936 unchanged; worldview.working_years 1914–1953 → 1923–1936, equal to the span (P30 addendum f); lasting item added: The Realm of the Nebulae (1936); 2 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: hubble-edwin
@@ -52,6 +53,7 @@ contribution:
     - {value: "Distance to the Andromeda Nebula from its Cepheid variables, showing that spiral nebulae are galaxies beyond the Milky Way", year: "1923–1924", kind: discovery, lasting: "convinced most astronomers that the universe contains many galaxies", certainty: 0.7, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars' paragraph; summary box ('In 1923-24')"}], how_known: "Britannica article and its summary."}
     - {value: "Linear redshift–distance relation for galaxies (Hubble's law), with Milton Humason", year: "1929–1931", kind: "law or principle", lasting: "read as the expansion of the universe; the Hubble constant", certainty: 0.7, cites: [{source: S1, locator: "'In 1929 Hubble published his first paper on the relationship between redshift and distance'; summary box"}], how_known: "Britannica. Hubble himself resisted reading the redshifts definitely as velocities (S1)."}
     - {value: "Morphological classification of galaxies (spirals, ellipticals, irregulars)", year: "1920s", kind: method, lasting: "standard classification scheme", certainty: 0.7, cites: [{source: S1, locator: "summary box ('He also classified galaxies by their morphology')"}], how_known: "Britannica summary; year not given there."}
+    - {value: "The Realm of the Nebulae: his account of the methods of extragalactic astronomy", year: 1936, kind: "work", lasting: "methods and techniques extragalactic astronomers followed for decades", certainty: 0.7, cites: [{source: S1, locator: "paragraph on 1936 ('his important book The Realm of the Nebulae'; 'By then he had certainly done much to lay down the methods and techniques that extragalactic astronomers would follow')"}], how_known: "One encyclopedia article, so 0.7. Added 2026-10-02 under the P30 addendum (the latest lasting work must be listed)."}
   evidence_of_impact:
     - {value: "Britannica calls him 'the leading observational cosmologist of the 20th century' and 'the central figure in the establishment of extragalactic astronomy'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph after the 1936 book"}], how_known: "One signed encyclopedia article."}
   major_works:
@@ -82,7 +84,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1914–1953", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 4 to end"}], how_known: "Graduate study at Yerkes to death."}
+  working_years: {value: "1923–1936", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1914–1953: Graduate study at Yerkes to death."}
   nominal_affiliations:
     - {value: "Raised Baptist (First Baptist Church, Wheaton, from 1901; sang in its choir)", years: "1901–", role: "member by upbringing", certainty: 0.7, cites: [{source: S3, locator: "pp. 23, 26"}], how_known: "Christianson; adult membership or practice not checked in the pages read."}
   self_described_science_religion_relation:
@@ -156,7 +158,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1923–1936", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "Andromeda Cepheids to The Realm of the Nebulae; little original research after 1936 (S1)."}
+  major_work_period: {value: "1923–1936", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph to 1936 book"}], how_known: "From the Andromeda Cepheids (1923–1924) to The Realm of the Nebulae (1936), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): span unchanged. The 1936 book was not on the list, which ended in 1931; S1 calls it 'his important book' and says that by then he had laid down methods extragalactic astronomers followed for decades, so it was added."}
   age_at_first_lasting_contribution: {value: 34, certainty: 0.7, cites: [{source: S1, locator: "opening; 1923 paragraph"}], how_known: "Born November 1889; Andromeda Cepheids 1923 (month not given in S1). P30 (rule 5): 1923 − 1889 = 34, with no month adjustment; was 33 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "Caltech commencement address on science and values", year: 1938, certainty: 0.7, cites: [{source: S2, locator: "pp. 36–39"}], how_known: "Earliest dated statement read; capped by §7."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The statements read are from 1938 and 1948, after the 1923–1936 work; earlier views not read.", certainty: 0.5, cites: [{source: S2, locator: "pp. 3, 36"}], how_known: "Dates of the lectures."}
@@ -271,6 +273,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): B_cause (4 at 0.7), D_authority (2 at 0.7) rest on evidence outside the new span 1923–1936. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Christianson's chapter on his adult religion; a library copy of S2.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (major work 1946–49; Jason, 2026-10-02). Basics from Britannica (Gleick), MacTutor and the Nobel biography. Worldview from his own talk 'The Relation of Science and Religion' (Caltech YMCA Lunch Forum, 2 May 1956), printed in Engineering and Science 19:9 (June 1956), pp. 20–23, read on Caltech's own site and checked on the page images. primary_system AGNOS at 0.7 (stub; ATHE named). B 4, D 2, E 4, all at 0.7; A, C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #59 (both runs): birth place 'New York City (Manhattan; ...)' at 1.0 → 'New York City' at 1.0; the borough is noted as contested (0.5), Far Rockaway, Queens, per Britannica and MacTutor's Quick Info, with Manhattan (implied by MacTutor's Biography, paragraph 2) as the alternative. MacTutor Biography locators renumbered to the page's visible paragraphs (paragraph 1 is the parents, 2 the Manhattan apartment, 3 the move to Far Rockaway). #63 / decision P13: the 1939 MIT thesis ('an original and enduring approach to calculating forces in molecules', Britannica) is now a listed contribution (0.7), so first_lasting_contribution_year 1939 (0.7) and age 21 rest on a listed item; values unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; A_locus note (P20). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1946–1949 → 1939–1968; worldview.working_years 1939–1988 → 1939–1968, equal to the span (P30 addendum f); lio_views_relative_to_major_work set to 'during major work'; evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: feynman-richard
@@ -92,7 +93,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1939–1988", certainty: 0.7, cites: [{source: S3, locator: "paragraph 1"}], how_known: "MIT thesis to death."}
+  working_years: {value: "1939–1968", certainty: 0.7, cites: [{source: S1, locator: "'At war's end'; 'By 1948 Feynman completed this reconstruction'"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1939–1988: MIT thesis to death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Conflict over metaphysics, none over ethics: science cannot disprove God, but its habit of doubt turns 'Is there a God?' into 'How sure is it that there is a God?', and there is 'definitely a conflict [...] over the metaphysical aspects of religion'; moral questions are 'outside of the scientific realm'; Western civilization stands on two heritages, the scientific spirit of uncertainty and Christian ethics."
@@ -197,10 +198,10 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1946–1949", certainty: 0.7, cites: [{source: S1, locator: "'At war's end'; 'By 1948 Feynman completed this reconstruction'"}], how_known: "QED reconstruction and diagrams; years are the coder's reading of Britannica."}
+  major_work_period: {value: "1939–1968", certainty: 0.7, cites: [{source: S1, locator: "'At war's end'; 'By 1948 Feynman completed this reconstruction'"}], how_known: "From the 1939 MIT thesis on forces in molecules to the parton model (listed as 1950s–1968, so 1968; P30 #4), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1946–1949, the QED years only."}
   age_at_first_lasting_contribution: {value: 21, certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph 3"}], how_known: "Born May 1918; MIT thesis 1939 (the earliest listed contribution, P13)."}
   first_evidence_of_lio_type_views: {value: "Caltech YMCA talk on science and religion", year: 1956, certainty: 1.0, cites: [{source: S4, locator: "p. 20"}], how_known: "Earliest dated statement read."}
-  lio_views_relative_to_major_work: {value: "after major work", rationale: "The statement read is from 1956, after the 1946–49 work; earlier views not read.", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Dates."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "The statement read is from 1956, inside the 1939–1968 span (span check 2026-10-02; it was 'after major work' against the old 1946–1949 span); earlier views not read.", certainty: 0.5, cites: [{source: S4, locator: "p. 20"}], how_known: "Dates."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:

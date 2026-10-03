@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1926 → 1926–1944; worldview.working_years 1910–1961 → 1926–1944, equal to the span (P30 addendum f); lio_views_relative_to_major_work set to 'during major work'; 1 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: schrodinger-erwin
@@ -88,7 +89,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1910–1961", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Doctorate to death."}
+  working_years: {value: "1926–1944", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph (1926); opening paragraph and later life (What is Life?, 1944)"}, {source: S3, locator: "paragraph 5"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1910–1961: Doctorate to death."}
   nominal_affiliations:
     - {value: "Catholic as an adult, per MacTutor ('Although he was a Catholic', 1933); no church practice reported", role: other, certainty: 0.7, cites: [{source: S2, locator: "Biography (1933)"}], how_known: "One reliable source on the adult, so 0.7. It says nothing about his family's church (see childhood.family_religion)."}
   self_described_science_religion_relation:
@@ -217,10 +218,10 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1926", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph ('a six-month period in 1926')"}], how_known: "Britannica."}
+  major_work_period: {value: "1926–1944", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph (1926); opening paragraph and later life (What is Life?, 1944)"}, {source: S3, locator: "paragraph 5"}], how_known: "From wave mechanics (1926) to What is Life? (1944), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was '1926', Britannica's six months of 1926 only."}
   age_at_first_lasting_contribution: {value: 39, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 ('during the first half of 1926')"}], how_known: "Born August 1887; the wave equation in the first half of 1926, so 38. Britannica says 'at the age of 39' (flag). P30 (rule 5): 1926 − 1887 = 39, with no month adjustment; was 38 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "What is Life? epilogue: the body as a mechanism under the Laws of Nature, and ATHMAN = BRAHMAN", year: 1944, certainty: 0.7, cites: [{source: S4, locator: "Epilogue, pp. 86–87"}], how_known: "Earliest verified statement in the sources read. An earlier date (the first essay of My View of the World is often dated 1925) was not checked; see open questions."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "Verified statements are from 1944 and 1958, after the 1926 work. If an earlier essay (often dated 1925, not checked) holds the same view, the answer would be 'before major work'.", certainty: 0.5, cites: [{source: S4, locator: "Epilogue"}, {source: S1, locator: "later life"}], how_known: "Coder's reading of dates."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "Verified statements are from 1944 (the What is Life? epilogue, the last listed item) and 1958; 1944 is inside the 1926–1944 span (span check 2026-10-02; it was 'unclear' against the old span of 1926 only). If an earlier essay (often dated 1925, not checked) holds the same view, the answer would be 'before major work'.", certainty: 0.5, cites: [{source: S4, locator: "Epilogue"}, {source: S1, locator: "later life"}], how_known: "Coder's reading of dates."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -348,6 +349,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Partial ded
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): D_authority (3 at 0.5) rest on evidence outside the new span 1926–1944. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - My View of the World and the Autobiographical Sketches; the HINDU system file.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (run 2, #81; run 1 noted the same): the p. 426 Afterword quotation stops mid-sentence (it continues ', получится неустойчивая и слащавая шаткость'), so the trailing cut is now marked [...]. No score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1868–1871 → 1869–1871; worldview.working_years 1855–1907 → 1869–1871, equal to the span (P30 addendum f); 1 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: mendeleev-dmitri
@@ -82,7 +83,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1855–1907", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "From graduation to death."}
+  working_years: {value: "1869–1871", certainty: 0.7, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1855–1907: From graduation to death."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Complementary parts of one whole: the 'highest consciousness' of everything is expressed 'въ религіи, искусствѣ и наукѣ', and dropping any member of such a triad leaves 'анализъ безъ полнаго синтеза' (analysis without full synthesis)."
@@ -157,7 +158,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1868–1871", certainty: 0.7, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Osnovy khimii and the periodic law."}
+  major_work_period: {value: "1869–1871", certainty: 0.7, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "The periodic law and table (1869–1871), the only listed lasting contribution (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1868–1871, which started with work on the Osnovy khimii textbook."}
   age_at_first_lasting_contribution: {value: 35, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Formulation of the periodic law'"}], how_known: "Born February 1834; law announced March 1869."}
   first_evidence_of_lio_type_views: {value: "Lectures against spiritualism (lawful nature, superstition)", year: 1876, certainty: 1.0, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The earliest statement read (1876) postdates the periodic law (1869), but nothing earlier was read, so the order cannot be fixed from absence.", certainty: 0.5, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Dates of what was read only."}
@@ -282,6 +283,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): B_cause (4 at 0.7) rest on evidence outside the new span 1869–1871. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Family memoirs and Gordin (2004); the withheld worldview chapter.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1905–1915 → 1905–1925; worldview.working_years 1905–1955 → 1905–1925, equal to the span (P30 addendum f); lasting item added: Bose–Einstein statistics for atoms and the prediction of Bose–Einstein condensation (1924–1925); source S7 added; 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: einstein-albert
@@ -67,6 +68,7 @@ contribution:
     - {value: "Light quanta and the explanation of the photoelectric effect", year: "1905", kind: theory, lasting: "Nobel Prize for Physics 1921 (S1)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
     - {value: "Special theory of relativity and mass–energy equivalence", year: "1905", kind: theory, lasting: "standard physics", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
     - {value: "General theory of relativity", year: "1915", kind: theory, lasting: "MacTutor: 'still regarded as the most satisfactory model of the large-scale universe that we have'", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Summary; Biography"}], how_known: "Two sources."}
+    - {value: "Bose–Einstein statistics for atoms and the prediction of Bose–Einstein condensation", year: "1924–1925", kind: "theory", lasting: "Bose–Einstein condensates, first made in 1995 (Nobel Prize 2001)", certainty: 0.7, cites: [{source: S1, locator: "Legacy ('In 1995 a Nobel Prize was awarded to the discoverers of Bose-Einstein condensates')"}, {source: S7, locator: "press release ('In 1924 [...] Bose [...] sent his results to Einstein who extended the theory'; 'Seventy years were to pass')"}], how_known: "Britannica names it among his results that later won Nobel Prizes (its year for that prize is loose: the condensate was made in 1995 and the prize came in 2001, S7). The years are the Nobel Foundation's: Bose's 1924 work, then Einstein's extension, seventy years before 1995. Two sources, but the dates rest on one, so 0.7. Added 2026-10-02 under the P30 addendum (the latest lasting work must be listed)."}
   evidence_of_impact:
     - {value: "Nobel Prize for Physics 1921; Copley Medal 1925", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
     - {value: "MacTutor: 'Einstein contributed more than any other scientist to the modern vision of physical reality.'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "Summary"}], how_known: "MacTutor."}
@@ -101,7 +103,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1905–1955", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From the 1905 papers to his death."}
+  working_years: {value: "1905–1925", certainty: 0.7, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Legacy (Bose-Einstein condensates)"}, {source: S7, locator: "press release"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1905–1955: From the 1905 papers to his death."}
   nominal_affiliations:
     - {value: "Jewish by descent; no synagogue membership is reported in the sources read", role: "other", certainty: 0.7, cites: [{source: S1, locator: "Childhood and education"}], how_known: "One source."}
   self_described_science_religion_relation:
@@ -253,10 +255,10 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1905–1915", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Special relativity to general relativity."}
+  major_work_period: {value: "1905–1925", certainty: 0.7, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Legacy (Bose-Einstein condensates)"}, {source: S7, locator: "press release"}], how_known: "From light quanta and special relativity (1905) to Bose–Einstein statistics and condensation (1924–1925; range end, P30 #4), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1905–1915. S1 (Legacy) names Bose–Einstein condensates among his results that later won Nobel Prizes, so the item was added, dated by the Nobel Foundation's account (S7). Open: S1 also names the 1935 EPR argument, which would end the span in 1935 if listed."}
   age_at_first_lasting_contribution: {value: 26, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Biography"}], how_known: "Born March 1879; the 1905 papers."}
   first_evidence_of_lio_type_views: {value: "Cable to Rabbi Goldstein: 'I believe in Spinoza's God'", year: 1929, certainty: 0.7, cites: [{source: S4, locator: "cable text"}], how_known: "Earliest dated statement in the citable sources read. The December 1926 letter to Born ('He does not play dice') is known here only from Britannica's AI-generated Top Questions box, which is not cited (P26). Britannica's childhood account (science books contradicting religion at 12) is earlier but not an LIO view as such."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The dated statements read (1929, 1930, 1941) are after the major work. Whether he held them during 1905–1915 is not shown in S1–S5.", certainty: 0.5, cites: [{source: S4, locator: "cable text"}, {source: S3, locator: "1930; 1941"}], how_known: "Coder's reading of dates."}
+  lio_views_relative_to_major_work: {value: "unclear", rationale: "The dated statements read (1929, 1930, 1941) are after the major work. Whether he held them during the 1905–1925 span is not shown in S1–S7.", certainty: 0.5, cites: [{source: S4, locator: "cable text"}, {source: S3, locator: "1930; 1941"}], how_known: "Coder's reading of dates."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -280,10 +282,10 @@ review:
   data_quality_flags:
     - "S4 prints the 1929 cable in German and English; the original cablegram was not seen. S4 does not give the cable's own date; S4 spells the rabbi 'Hebert G. Goldstein' (usually Herbert S. Goldstein)."
     - "S3 is a web transcription of Ideas and Opinions; page locators are the book's page ranges given in S3's headnotes."
-    - "Britannica (S1) was read as the first page only; later sections (Princeton years, IAS) were not read."
+    - "Britannica (S1) was read as the first page only, plus the Legacy and 'Nazi backlash and coming to America' pages for the span check (2026-10-02); the other later sections were not read."
   open_questions:
     - "Read Jammer, Einstein and Religion (1999), for the 'agnostic' self-descriptions and the full record of his statements, to test AGNOS against PANT."
-    - "Check whether any LIO-type religious statement predates 1915 (lio_views_relative_to_major_work is unclear)."
+    - "Check whether any LIO-type religious statement predates 1925, the end of the span (lio_views_relative_to_major_work is unclear)."
 
 sources:
   - id: S1
@@ -293,7 +295,7 @@ sources:
     citation: "Kaku, Michio. \"Albert Einstein.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Albert-Einstein."
     url: "https://www.britannica.com/biography/Albert-Einstein"
     accessed: 2026-10-02
-    reliability_note: "Signed encyclopedia article; first page read."
+    reliability_note: "Signed encyclopedia article; first page read, plus the Legacy and 'Nazi backlash and coming to America' pages (2026-10-02, span check: Bose–Einstein condensates and EPR)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -342,6 +344,16 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S7
+    type: tertiary
+    kind: "institutional page"
+    author: "Royal Swedish Academy of Sciences"
+    year: 2001
+    citation: "Royal Swedish Academy of Sciences. \"The Nobel Prize in Physics 2001.\" Press release, 9 October 2001. NobelPrize.org. https://www.nobelprize.org/prizes/physics/2001/press-release/."
+    url: "https://www.nobelprize.org/prizes/physics/2001/press-release/"
+    accessed: 2026-10-02
+    reliability_note: "The prize-awarding body's own press release; used only to date the Bose–Einstein item."
+    used_for: [contribution]
 ---
 
 # Albert Einstein
@@ -382,8 +394,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Deductive f
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (PANT 0.7), A_locus (4 at 0.7), B_cause (4 at 0.7), C_ledger (4 at 0.7), D_authority (2 at 0.7), E_scope (4 at 0.7), mid_basin (false at 0.7) rest on evidence outside the new span 1905–1925. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - Read Jammer, Einstein and Religion, to test AGNOS against PANT.
-- Check for religious statements before 1915.
+- Check for religious statements before 1925, the end of the span.
 
 ## Research log
 

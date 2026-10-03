@@ -60,7 +60,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 |---|---|---|---|---|---|---|
 | identity | 86 | 85 | 0 | 1 | 0 | 98.8% |
 | basics | 473 | 473 | 0 | 0 | 0 | 100.0% |
-| contribution | 502 | 501 | 0 | 1 | 0 | 99.8% |
+| contribution | 507 | 506 | 0 | 1 | 0 | 99.8% |
 | childhood | 598 | 517 | 74 | 7 | 0 | 86.5% |
 | worldview | 496 | 303 | 3 | 99 | 91 | 61.1% |
 | heritage | 172 | 96 | 69 | 7 | 0 | 55.8% |
@@ -69,7 +69,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | institutions | 144 | 144 | 0 | 0 | 0 | 100.0% |
 | collaborators | 204 | 204 | 0 | 0 | 0 | 100.0% |
 | review | 67 | 67 | 0 | 0 | 0 | 100.0% |
-| **all** | 3086 | 2692 | 174 | 129 | 91 | 87.2% |
+| **all** | 3091 | 2697 | 174 | 129 | 91 | 87.3% |
 
 ### Worldview coding status
 

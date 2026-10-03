@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #93/#94 (run 1) and the same error in claims 71, 73–75, 78, 80–84 and 90: every S4 'letter, paragraph 1' locator replaced with the right paragraph of the four-paragraph letter (2 heritage, Sunday schools and the break; 3 'I do not believe in God'; 4 Humanist and Unitarian); S4 reliability note corrected. #82 (run 2 note): AHA membership years '–1963' → 'by 1963' (the letter shows membership then, not an end date). #89 / decisions P12, P13: new source S6 (the 1931 JACS paper 'The Nature of the Chemical Bond', bibliographic record via Crossref); chemical-bond item dated '1930s' → '1931–1939'; first_lasting_contribution_year 1925 (0.5) → 1931 (0.7), age 24 (0.5) → 30 (0.7); the unlisted PhD crystal papers no longer set the year. Era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1927–1954 → 1931–1951; worldview.working_years 1922–1994 → 1931–1951, equal to the span (P30 addendum f); 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: pauling-linus
@@ -88,7 +89,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1922–1994", certainty: 0.7, cites: [{source: S2, locator: "paragraphs 2–4"}], how_known: "Caltech graduate work to death."}
+  working_years: {value: "1931–1951", certainty: 0.7, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraphs 3–4"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1922–1994: Caltech graduate work to death."}
   nominal_affiliations:
     - {value: "American Humanist Association (member)", years: "by 1963", role: "member", certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 4"}, {source: S3, locator: "speech heading and itinerary"}], how_known: "His own letter shows him a member in January 1963 (it gives no start or end date); his 1961 speech to the AHA, where he received its Humanist of the Year award."}
     - {value: "First Unitarian Church of Los Angeles ('accepts atheists as members'; joined 'to help with' its support of morality and ethics)", years: "1962–", role: "member", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraph 4"}], how_known: "His own letter (one source)."}
@@ -196,7 +197,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1927–1954", certainty: 0.7, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraphs 3–4"}], how_known: "Return to Caltech to the chemistry Nobel; coder's reading."}
+  major_work_period: {value: "1931–1951", certainty: 0.7, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraphs 3–4"}], how_known: "From the 1931 chemical-bond paper (1931–1939; a range gives its start year, P12) to the alpha helix (1948–1951, so 1951; P30 #4), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1927–1954 (his return to Caltech to the chemistry Nobel Prize), neither a listed contribution."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "date (April 1931)"}], how_known: "Born 28 February 1901; the 1931 paper appeared in April 1931, so 30. Was 24 (from the 1925 PhD) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: "'Humanism and Peace' speech", year: 1961, certainty: 1.0, cites: [{source: S3, locator: "speech heading"}], how_known: "Earliest dated statement read (Rationalist of the Year 1960 suggests earlier views, not read)."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The statements read are from 1961 and 1963, after the main work; the letter says he broke with the church when he began to think for himself, without a date.", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "Dates of the sources."}
@@ -331,6 +332,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
+- Span check (2026-10-02, P29/P30): primary_system (SECHUM 0.7), A_locus (4 at 0.7), B_cause (4 at 0.7), C_ledger (4 at 0.7), D_authority (4 at 0.7), E_scope (4 at 0.7), mid_basin (false at 0.7) rest on evidence outside the new span 1931–1951. Values left unchanged pending a ruling; details in reports/p30_span_alignment.csv.
 - The printed speech in The Humanist; SECHUM or ATHE.
 
 ## Research log

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and MacTutor. No writing of his on religion was found; his father was a pastor and school principal (MacTutor). primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #124 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (upbringing by a minister father is never a code, §1; CODING_GUIDE §5.3), and the primary_system note updated. #131–132 (minor): birth date and place and death date and place 0.7 → 1.0, now citing MacTutor's Quick Info as well as Britannica (two independent sources agree). No worldview value changed. Decisions P12/P13 recheck: first_lasting_contribution_year 1850 unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1850–1865 unchanged; worldview.working_years 1844–1888 → 1850–1865, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: clausius-rudolf
@@ -82,7 +83,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1844–1888", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Degree to death."}
+  working_years: {value: "1850–1865", certainty: 0.7, cites: [{source: S1, locator: "paragraphs 2–3"}, {source: S2, locator: "Biography"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1844–1888: Degree to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by him on science and religion was found in the sources read."}
   primary_system:

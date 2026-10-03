@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #148 (run 1) / decisions P12, P13: first_lasting_contribution_year 1947 → 1941, the start year of the earliest listed contribution (the gaseous-diffusion barrier, Manhattan Project 1941–1945; Britannica, and S3 p. 1 for its lasting use); age 38 → 32; era unchanged. The how_known no longer says the 1930s work is lasting per S3 (S3 does not say so); that work is not listed and does not set the year. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1946–1952 → 1941–1947; worldview.working_years 1931–1980 → 1941–1947, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
 identity:
   id: libby-willard
@@ -83,7 +84,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1931–1980", certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–4"}, {source: S3, locator: "p. 1"}], how_known: "Berkeley to death."}
+  working_years: {value: "1941–1947", certainty: 0.7, cites: [{source: S1, locator: "tritium and radiocarbon paragraphs"}, {source: S2, locator: "paragraphs 6, 8"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1931–1980: Berkeley to death."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by him on science and religion was found."}
   primary_system:
@@ -119,7 +120,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1946–1952", certainty: 0.7, cites: [{source: S1, locator: "tritium and radiocarbon paragraphs"}, {source: S2, locator: "paragraphs 6, 8"}], how_known: "Tritium (1946) to Radiocarbon Dating (1952); coder's reading."}
+  major_work_period: {value: "1941–1947", certainty: 0.7, cites: [{source: S1, locator: "tritium and radiocarbon paragraphs"}, {source: S2, locator: "paragraphs 6, 8"}], how_known: "From the gaseous-diffusion barrier (1941–1945; classified work, dated by its work years, P30 #2) to radiocarbon dating (1947), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1946–1952. The 1952 book Radiocarbon Dating sets out the 1947 method and is not a separate listed contribution."}
   age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening; tritium paragraph, first sentence"}], how_known: "Born 17 December 1908; the Manhattan Project work began in 1941, so 32 (33 only from 17 December 1941). Was 38 (from March 1947) until the batch 4 lens audit. P30 (rule 5): 1941 − 1908 = 33, with no month adjustment; was 32 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement found."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement found.", certainty: 0.5, cites: [{source: S3, locator: "p. 3"}], how_known: "Nothing to date."}
