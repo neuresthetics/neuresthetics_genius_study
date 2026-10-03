@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and MacTutor. No writing of his on religion was found; his father was a pastor and school principal (MacTutor). primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #124 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (upbringing by a minister father is never a code, §1; CODING_GUIDE §5.3), and the primary_system note updated. #131–132 (minor): birth date and place and death date and place 0.7 → 1.0, now citing MacTutor's Quick Info as well as Britannica (two independent sources agree). No worldview value changed. Decisions P12/P13 recheck: first_lasting_contribution_year 1850 unchanged. Not reviewed."}
 
 identity:
   id: clausius-rudolf
@@ -30,11 +31,11 @@ identity:
 
 basics:
   birth:
-    date: {value: "1822-01-02", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-    place: {value: "Köslin, Prussia", modern_name: "Koszalin, Poland", polity_then: "Kingdom of Prussia", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "1822-01-02", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Quick Info"}], how_known: "Two independent sources agree (Britannica and MacTutor)."}
+    place: {value: "Köslin, Prussia", modern_name: "Koszalin, Poland", polity_then: "Kingdom of Prussia", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Quick Info ('Koslin, Prussia (now Koszalin, Poland)')"}], how_known: "Two independent sources agree (Britannica and MacTutor)."}
   death:
-    date: {value: "1888-08-24", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-    place: {value: "Bonn", modern_name: "Bonn, Germany", polity_then: "German Empire", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "1888-08-24", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Quick Info"}], how_known: "Two independent sources agree (Britannica and MacTutor)."}
+    place: {value: "Bonn", modern_name: "Bonn, Germany", polity_then: "German Empire", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Quick Info"}], how_known: "Two independent sources agree (Britannica and MacTutor)."}
   first_lasting_contribution_year: {value: 1850, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "Biography (1850 paper)"}], how_known: "Über die bewegende Kraft der Wärme, read to the Berlin Academy and published in Annalen der Physik in 1850; the second law."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening ('Köslin, Prussia [Poland]')"}], how_known: "Modern Poland is Eastern Europe in data/reference/regions.csv (P3); then Prussia."}
@@ -87,9 +88,10 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S2, locator: "Biography"}]
     how_known: "No writing or reported speech of his on religion was read. A pastor father is upbringing, never a code."
-    note: "No candidate is supported by evidence; CHRIST is the default guess from upbringing only and is not listed as a candidate. Would need his German biographies (e.g. the Neue Deutsche Biographie entry) or his rectorial address at Bonn."
+    note: "No candidate is supported by evidence; CHRIST is the default guess from upbringing only; it is listed in candidate_codes_considered as considered, not coded. Would need his German biographies (e.g. the Neue Deutsche Biographie entry) or his rectorial address at Bonn."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
-  candidate_codes_considered: []
+  candidate_codes_considered:
+    - {code: CHRIST, reason: "Considered, not coded: no statement of his on religion was read; being brought up by a father who was a minister and pastor of the school he attended (MacTutor) is upbringing, never a code (CODING_GUIDE §1).", cites: [{source: S2, locator: "Biography, paragraph 1"}]}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read."}
     B_cause:
