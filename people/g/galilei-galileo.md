@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from SEP (Miller, after Machamer), Britannica (Van Helden) and MacTutor. Worldview from the Letter to the Grand Duchess Christina (1615) in Drake's translation, read in two copies (Fordham excerpt; a course selection with the Joshua section). Coded CHRIST (Catholic) at 0.7. A 1 (0.7), B 3 (0.7), C 1 (0.5), D 2 (0.7), E 3 (0.7). mid_basin true. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Findings #69 (and #55, #57, #60): the 'inexorable and immutable' sentence is in the Fordham paragraph beginning 'This being granted…', not 'With regard to this argument…'; locators fixed in the statement, B_cause and E_scope (S5 p. 4 was already right). S4 is no longer described as Drake's translation: its translator and provenance are unknown and its wording differs from S5 in places (finding #70 note). Finding #62: self_described_science_religion_relation certainty 1.0 → 0.7 (secondary quotations cannot by themselves support 1.0, §7). Axis scores, primary_system and mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P12 recheck: first_lasting_contribution_year 1610 → 1609 (start year of the listed 1609–1610 telescopic discoveries), age 46 → 45; the 1604 alternative is kept (P13 note added). Era unchanged. Not reviewed."}
 
 identity:
   id: galilei-galileo
@@ -39,7 +40,7 @@ basics:
   death:
     date: {value: "1642-01-08", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "§2 ('but for problems with the date, see Machamer 1998b')"}, {source: S2, locator: "Quick Facts"}], how_known: "Two sources give 8 January 1642; SEP notes problems with the date, so 0.7."}
     place: {value: "Arcetri, near Florence", modern_name: "Arcetri, Florence, Italy", polity_then: "Grand Duchy of Tuscany", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts"}, {source: S1, locator: "§2 (house arrest at his villa in Arcetri)"}], how_known: "Two sources."}
-  first_lasting_contribution_year: {value: 1610, certainty: 0.7, cites: [{source: S1, locator: "§2 (Sidereus nuncius, March 1610)"}, {source: S2, locator: "opening summary"}], how_known: "The telescopic discoveries published in Sidereus nuncius (1610) are his first published lasting contribution. SEP says the mechanics worked out earlier in Padua is his 'primary lasting contribution', but it was published only in 1638, so 0.7.", alternatives: [{value: 1604, cites: [{source: S1, locator: "§2; §3.1"}], note: "Mechanics worked out in Padua (from 1592), published 1638; the year of the law of fall is approximate."}]}
+  first_lasting_contribution_year: {value: 1609, certainty: 0.7, cites: [{source: S1, locator: "§2 (telescope and discoveries, 1609; Sidereus nuncius, March 1610)"}, {source: S2, locator: "opening summary"}], how_known: "Start year of the earliest listed contribution, the telescopic discoveries (1609–1610), under decision P12; they were published in Sidereus nuncius (March 1610). Was 1610 until the batch 4 lens audit. SEP says the mechanics worked out earlier in Padua is his 'primary lasting contribution', but it was published only in 1638, so 0.7.", alternatives: [{value: 1604, cites: [{source: S1, locator: "§2; §3.1"}], note: "Mechanics worked out in Padua (from 1592), published 1638; the year of the law of fall is approximate. Under decision P13 the listed mechanics item is dated 1638, so 1604 stays an alternative (age 40)."}]}
   era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Both candidate years fall in 1600 to 1749 (P2)."}
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S2, locator: "Quick Facts ('Pisa [Italy]')"}], how_known: "Italy is Southern Europe in data/reference/regions.csv (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "§2"}], how_known: "Pisa, Padua, Florence and Arcetri."}
@@ -214,7 +215,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1604–1638", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "From the Padua mechanics to Two New Sciences; start year approximate."}
-  age_at_first_lasting_contribution: {value: 46, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Sidereus nuncius, March 1610; born February 1564. 40 if the 1604 mechanics is used."}
+  age_at_first_lasting_contribution: {value: 45, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Born 15 February 1564; telescopic work from 1609, so 45. 40 if the 1604 mechanics is used. Was 46 (Sidereus nuncius, 1610) until the batch 4 lens audit."}
   first_evidence_of_lio_type_views: {value: "Letter to Castelli, then Letter to Christina: Nature immutable under laws", year: 1615, certainty: 0.7, cites: [{source: S1, locator: "§2"}, {source: S4, locator: "letter"}], how_known: "The 1613–14 Letter to Castelli was not read; the 1615 letter is the earliest read."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "1615 falls between Sidereus nuncius and the Dialogue.", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Dates."}
   worldview_during_major_work: {value: "Catholic, defending Copernicanism as compatible with Scripture", certainty: 0.7, cites: [{source: S4, locator: "letter"}, {source: S1, locator: "§2"}], how_known: "His letter and SEP."}
@@ -340,7 +341,7 @@ Tuscan Catholic [S1, §2]. Context only.
 
 ## Timing
 
-First lasting contribution 1610, at 46 [S1, §2]. The 1615 letter falls during the major work.
+First lasting contribution 1609, the telescopic discoveries (published 1610), at 45 [S1, §2]. The 1615 letter falls during the major work.
 
 ## Lane B notes (labeled belief model)
 
