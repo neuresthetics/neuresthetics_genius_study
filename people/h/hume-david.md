@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-02
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'David Hume' (Qu), Britannica (Cranston, first page) and My Own Life; religion from SEP 'Hume on Religion' (Russell). Worldview quotations from the edited texts at Hume Texts Online (Millican and Merivale): Enquiry §§9–12, Dialogues Part 12, Natural History §15. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (candidates AGNOS, SCEPT, ATHE, EMPIR are stubs; DEISM rejected); A 3 and C 4 at 0.5; B 4, D 4, E 4 at 0.7; mid_basin BELOW_THRESHOLD (A only 0.5). Not reviewed."}
+    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #512: SCEPT locator is E 12.24–25 (SBN 161–2), not E 12.34. #539: Advocates Library 1752–1757; end year from Britannica 'Adam Ferguson' (new S9), not inferred as 1763. #518, #527: the Enquiry 11 conclusion is the friend in his own person after the Epicurus speech (E 11.9–23). #524: 'most scholars' wording replaced by SEP §10. #545: Britannica's 1744 noted beside SEP's 1745 and flagged; 1.0 left pending v8 (conflict rule). Bylines: SEP Hume now Qu and Radcliffe; SEP religion now Russell and Kraal; Britannica now Cranston and Jessop. #510 left (stub-system rule awaits v8). Not reviewed."}
 
 identity:
   id: hume-david
@@ -102,7 +103,7 @@ worldview:
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "Leading candidate for the 'soft sceptic' reading (S2 §10) and his 'suspence of judgment' (N 15.13). Not coded: stub system file.", cites: [{source: S2, locator: "§10"}, {source: S6, locator: "N 15.13"}]}
-    - {code: SCEPT, reason: "Candidate: his own 'mitigated' scepticism (E 12) and the sceptic reading. Not coded: stub system file.", cites: [{source: S4, locator: "E 12.34"}, {source: S2, locator: "§10"}]}
+    - {code: SCEPT, reason: "Candidate: his own 'mitigated scepticism' (E 12.24–25) and the sceptic reading. Not coded: stub system file.", cites: [{source: S4, locator: "E 12.24–25 (SBN 161–2)"}, {source: S2, locator: "§10"}]}
     - {code: ATHE, reason: "Candidate: many contemporaries regarded him as an atheist (S2 §10; S1 §1, the 1745 Edinburgh chair); Russell says the label 'atheism' is 'potentially misleading' (S2 §11). Not coded: stub system file.", cites: [{source: S2, locator: "§§10–11"}]}
     - {code: EMPIR, reason: "Considered: Britannica names his 'philosophical empiricism and skepticism'. Not coded: stub, and an epistemology rather than a God-world view.", cites: [{source: S3, locator: "opening"}]}
     - {code: DEISM, reason: "Considered (thin theism or 'attenuated deism', Gaskin 1988 and Kraal 2023 per S2 §10) and rejected: DEISM needs a creator affirmed by reason; Hume's texts allow at most a 'remote analogy' in Philo's voice (D 12.33).", cites: [{source: S2, locator: "§10"}, {source: S5, locator: "D 12.33"}]}
@@ -127,7 +128,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S2, locator: "§7"}, {source: S4, locator: "E 11.27"}]
       how_known: "SEP reconstruction plus a passage in the voice of the Enquiry's sceptical friend; indirect, so 0.5."
-      rationale: "DRAFT. At the 'none' pole: he rejects the metaphysical arguments for the immortality of the soul (S2 §7); in Enquiry 11 the speaker for Epicurus concludes that from the religious hypothesis there is 'no reward or punishment expected or dreaded, beyond what is already known by practice and observation' (E 11.27). Both indirect: the second is not in Hume's narrating voice. Named alternative: 3."
+      rationale: "DRAFT. At the 'none' pole: he rejects the metaphysical arguments for the immortality of the soul (S2 §7); in Enquiry 11 the sceptical friend, speaking in his own person after his speech for Epicurus (E 11.9–23), concludes that from the religious hypothesis there is 'no reward or punishment expected or dreaded, beyond what is already known by practice and observation' (E 11.27). Both indirect: the second is not in Hume's narrating voice. Named alternative: 3."
     D_authority:
       value: 4
       basis: written_profession
@@ -141,7 +142,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S4, locator: "E 9.1, 9.5–9.6; 10.12; 11.20–27"}]
       how_known: "His own published words in an edited text; 0.7 because the denial of a particular providence (E 11) is in another speaker's voice."
-      rationale: "DRAFT. Scored on the world's order (P7). At the LIO pole: the same principle of experimental reasoning operates 'in all the higher, as well as lower classes of sensitive beings' (E 9.5) and is one 'which we possess in common with beasts' (E 9.6); anatomical findings for one animal are extended to all (E 9.1); and from the order of nature no 'particular reward of the good, and punishment of the bad, beyond the ordinary course of events' can be inferred (E 11.20–27, the friend's voice). No in-group exception in events. The afterlife is a C matter (P7)."
+      rationale: "DRAFT. Scored on the world's order (P7). At the LIO pole: the same principle of experimental reasoning operates 'in all the higher, as well as lower classes of sensitive beings' (E 9.5) and is one 'which we possess in common with beasts' (E 9.6); anatomical findings for one animal are extended to all (E 9.1); and from the order of nature no 'particular reward of the good, and punishment of the bad, beyond the ordinary course of events' can be inferred (E 11.20, the friend speaking for Epicurus; restated in his own person at E 11.27). No in-group exception in events. The afterlife is a C matter (P7)."
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is scored only at 0.5, under the P4 test's 0.7 bar (B_cause 4 is at 0.7).", note: "If A were raised to ≥ 3 at 0.7 the result would be false; if A were 2 (thin theism) it would be TODO (no branch)."}
   statements:
     - text: "A wise man, therefore, proportions his belief to the evidence."
@@ -171,7 +172,7 @@ worldview:
     - text: "Our most holy religion is founded on Faith, not on reason; and it is a sure method of exposing it to put it to such a trial as it is, by no means, fitted to endure."
       cites: [{source: S4, locator: "E 10.40 (SBN 129–30)"}]
       date: "1748"
-      context: "Same section, close; italics in the edition not reproduced. Read by most scholars as ironic (the fideist reading is the named alternative on D)."
+      context: "Same section, close; italics in the edition not reproduced. SEP warns against reading his 'professions of orthodoxy as entirely sincere' (S2 §10); the face-value fideist reading is the named alternative on D."
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
@@ -195,7 +196,7 @@ worldview:
     - text: "No new fact can ever be inferred from the religious hypothesis; no event foreseen or foretold; no reward or punishment expected or dreaded, beyond what is already known by practice and observation."
       cites: [{source: S4, locator: "E 11.27 (SBN 145–7)"}]
       date: "1748"
-      context: "Enquiry, Section 11: spoken by the friend 'who loves sceptical paradoxes' in the person of Epicurus, not in Hume's narrating voice (E 11.1)."
+      context: "Enquiry, Section 11: spoken by the friend 'who loves sceptical paradoxes' (E 11.1), in his own person after his speech for Epicurus (E 11.9–23), not in Hume's narrating voice."
       axes: [C_ledger, E_scope]
       kind: "other"
       verified_against: "scholarly edition"
@@ -243,7 +244,7 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "Advocates Library, Edinburgh (Faculty of Advocates)", role: librarian, years: "1752–1763", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP: began 1752, followed by the embassy post in 1763; end year inferred (flag)."}
+  - {value: "Advocates Library, Edinburgh (Faculty of Advocates)", role: librarian, years: "1752–1757", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S7, locator: "MOL 11"}, {source: S9, locator: "opening"}], how_known: "Start: SEP and My Own Life ('In 1752, the Faculty of Advocates chose me their librarian'). End: Britannica's 'Adam Ferguson' says that in 1757 Ferguson succeeded 'his friend David Hume as keeper of the Advocates’ Library'. The earlier end year 1763 was the coder's inference from SEP and was wrong (lens audit #539)."}
   - {value: "British embassy in Paris", role: "private secretary to the British Ambassador", years: "1763–1766", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP; end year from his return in 1766."}
 collaborators:
   - {value: "Jean-Jacques Rousseau", roster_id: rousseau-jean-jacques, relation: other, note: "Hume hosted him in 1766; the relationship 'turned remarkably sour'", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
@@ -253,12 +254,13 @@ collaborators:
 review:
   roster_status_reason: {value: "Core in v8 (F 5: all five models).", certainty: 0.7, cites: [{source: S8, locator: "roster.csv, rank 21"}], how_known: "Study roster."}
   controversies:
-    - {value: "His application for the Edinburgh Chair of Ethics and Pneumatical Philosophy (1745) was publicly opposed; his reputation as an atheist and sceptic dated from the Treatise. He failed again in 1751 for the Chair of Logic at Glasgow", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
+    - {value: "His application for the Edinburgh Chair of Ethics and Pneumatical Philosophy (1745) was publicly opposed; his reputation as an atheist and sceptic dated from the Treatise. He failed again in 1751 for the Chair of Logic at Glasgow", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and works'"}], how_known: "SEP. Britannica dates his candidacy for 'the chair of moral philosophy at Edinburgh' to 1744, with objectors alleging 'heresy and even atheism' (flagged; lens audit #545). Certainty left at 1.0 pending v8's ruling on whether such a date difference forces 0.7."}
   data_quality_flags:
     - "Age at Edinburgh University: eleven to fifteen (SEP) vs about 12 to 14 or 15 (Britannica)."
     - "Treatise publication: end of 1738 (My Own Life) vs 1739 (SEP)."
     - "Move to France: SEP says La Flèche in 1734; My Own Life says Rheims first, then chiefly La Flèche."
     - "Britannica read as its first page only. The Treatise and the essay 'Of the Immortality of the Soul' were not read."
+    - "Edinburgh chair: Britannica dates his candidacy to 1744; SEP dates the opposed application to 1745 (lens audit #545)."
   open_questions:
     - "Fill AGNOS, SCEPT and ATHE; then recode primary_system."
     - "Read 'Of the Immortality of the Soul' to put C on his own words."
@@ -267,9 +269,9 @@ sources:
   - id: S1
     type: secondary
     kind: encyclopedia
-    author: "Hsueh M. Qu"
+    author: "Hsueh Qu and Elizabeth S. Radcliffe"
     year: 2026
-    citation: "Qu, Hsueh M. \"David Hume.\" Stanford Encyclopedia of Philosophy (first published 16 Jun 2026). https://plato.stanford.edu/entries/hume/."
+    citation: "Qu, Hsueh, and Elizabeth S. Radcliffe. \"David Hume.\" Stanford Encyclopedia of Philosophy (first published 16 Jun 2026). https://plato.stanford.edu/entries/hume/."
     url: "https://plato.stanford.edu/entries/hume/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; §1 and §5 read. Cited by section."
@@ -277,9 +279,9 @@ sources:
   - id: S2
     type: secondary
     kind: encyclopedia
-    author: "Paul Russell"
+    author: "Paul Russell and Anders Kraal"
     year: 2024
-    citation: "Russell, Paul. \"Hume on Religion.\" Stanford Encyclopedia of Philosophy (substantive revision 15 Nov 2024). https://plato.stanford.edu/entries/hume-religion/."
+    citation: "Russell, Paul, and Anders Kraal. \"Hume on Religion.\" Stanford Encyclopedia of Philosophy (substantive revision 15 Nov 2024). https://plato.stanford.edu/entries/hume-religion/."
     url: "https://plato.stanford.edu/entries/hume-religion/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; §§4, 6, 7, 10, 11 read. Cited by section."
@@ -287,8 +289,8 @@ sources:
   - id: S3
     type: tertiary
     kind: encyclopedia
-    author: "Maurice Cranston"
-    citation: "Cranston, Maurice. \"David Hume.\" Encyclopaedia Britannica. https://www.britannica.com/biography/David-Hume."
+    author: "Maurice Cranston and Thomas Edmund Jessop"
+    citation: "Cranston, Maurice, and Thomas Edmund Jessop. \"David Hume.\" Encyclopaedia Britannica. https://www.britannica.com/biography/David-Hume."
     url: "https://www.britannica.com/biography/David-Hume"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
@@ -342,6 +344,15 @@ sources:
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S9
+    type: tertiary
+    kind: encyclopedia
+    author: "Britannica Editors"
+    citation: "Britannica Editors. \"Adam Ferguson.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Adam-Ferguson."
+    url: "https://www.britannica.com/biography/Adam-Ferguson"
+    accessed: 2026-10-02
+    reliability_note: "Short article written by Britannica Editors (main text, not an AI box); used only for the year Ferguson succeeded Hume as keeper of the Advocates' Library (lens audit #539)."
+    used_for: [institutions]
 ---
 
 # David Hume
@@ -354,7 +365,7 @@ David Hume (1711–1776), Scottish philosopher, historian and essayist, gave the
 
 ## Life and work
 
-Edinburgh University in his early teens; the Treatise written in France (1734–1737); Essays, Enquiries and the History of England; Advocates Library from 1752; Paris embassy 1763–1766; Dialogues published after his death [S1, §1; S7].
+Edinburgh University in his early teens; the Treatise written in France (1734–1737); Essays, Enquiries and the History of England; Advocates Library 1752–1757 [S9]; Paris embassy 1763–1766; Dialogues published after his death [S1, §1; S7].
 
 ## Contribution and impact
 
@@ -387,3 +398,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No geometri
 ## Research log
 
 - 2026-10-02: Read SEP "David Hume" (Qu, §1, §5), SEP "Hume on Religion" (Russell, §§4, 6, 7, 10, 11), Britannica (Cranston, first page) and, at Hume Texts Online, Enquiry §§9–12, Dialogues Parts 2 and 12, Natural History §15 and My Own Life 1–6. Wikipedia not used.
+- 2026-10-02 (lens audit fixes): Read Britannica "Adam Ferguson" (Britannica Editors) for the 1757 succession, Enquiry E 11.24–25 and E 12.24–25 (Hume Texts Online), and the Britannica 1744 candidacy sentence ("Early life and works").
