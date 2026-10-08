@@ -24,7 +24,7 @@ from matplotlib.patches import Rectangle  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from lib.records import (REPO, read_record, read_csv, person_files, is_interview, people_axis_points,  # noqa: E402
-                         in_focus, region_counts)
+                         in_focus, focus_counts)
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -149,7 +149,7 @@ def fig_people_cause_locus(out):
     pts, _ = people_axis_points()
     # Study-focus people (top right) come first in the numbering and the key.
     pts = sorted(pts, key=lambda p: (not in_focus(p), -p["A"], p["B"], p["name"]))
-    rc = region_counts(pts)
+    ff, fn = focus_counts(pts)
     cells = collections.defaultdict(list)
     for k, p in enumerate(pts, 1):
         p["k"] = k
@@ -162,21 +162,15 @@ def fig_people_cause_locus(out):
     axw = 6.6 / W
     ax = fig.add_axes((left, 0.15, axw, 0.70))
     kx0 = left + axw + 0.25 / W
-    FOCUS, BOX = "#DD8452", "#55A868"
+    FOCUS = "#DD8452"
     # Primary region: the study focus, the LIO pole on both axes.
     ax.add_patch(Rectangle((2.5, 2.5), 2, 2, facecolor=FOCUS, alpha=0.20, lw=0, zorder=0))
     ax.add_patch(Rectangle((2.5, 2.5), 2, 2, fill=False, edgecolor=FOCUS, lw=2.2, zorder=1))
-    # Secondary region: the P4 mid-basin membership test, outline only.
-    ax.add_patch(Rectangle((2.5, -0.5), 2, 2, fill=False, edgecolor=BOX, lw=1.2, ls="--", zorder=1))
     focus_h = Rectangle((0, 0), 1, 1, facecolor=FOCUS, alpha=0.35, edgecolor=FOCUS, lw=2)
-    box_h = Rectangle((0, 0), 1, 1, fill=False, edgecolor=BOX, lw=1.2, ls="--")
-    (ff, fn), (mf, mn) = rc["focus"], rc["mid_basin"]
-    leg = ax.legend([focus_h, box_h],
-                    [f"Study focus: LIO pole on both axes (A ≥ 3, B ≥ 3)\n{ff} at certainty ≥ 0.7 on both axes ({fn} plotted)",
-                     f"P4 mid-basin test (A ≤ 1, B ≥ 3), secondary\n{mf} at certainty ≥ 0.7 on both axes ({mn} plotted)"],
+    leg = ax.legend([focus_h],
+                    [f"Study focus: LIO pole on both axes (A ≥ 3, B ≥ 3)\n{ff} at certainty ≥ 0.7 on both axes ({fn} plotted)"],
                     loc="upper left", fontsize=8.5, frameon=True, framealpha=0.9, edgecolor="#CCCCCC")
     leg.get_texts()[0].set_fontweight("bold")
-    leg.get_texts()[1].set_color("#555555")
     for (b, a), ps in cells.items():
         cols = max(1, int(-(-len(ps) ** 0.5 // 1)))
         rws = -(-len(ps) // cols)
@@ -208,10 +202,7 @@ def fig_people_cause_locus(out):
     def tag(c, i):
         return f"{c}{' (interview)' if i else ''}"
 
-    def mb(v):
-        return str(v).lower() if isinstance(v, bool) else str(v)
-
-    fig.text(kx0, 0.87, "Key (study focus first, in bold): number, name; A score @ certainty, B score @ certainty, mid_basin", fontsize=8.5,
+    fig.text(kx0, 0.87, "Key (study focus first, in bold): number, name; A score @ certainty, B score @ certainty", fontsize=8.5,
              fontweight="bold", va="bottom")
     colw = (1 - kx0 - 0.01) / ncols
     texts = []
@@ -221,7 +212,7 @@ def fig_people_cause_locus(out):
         texts.append(fig.text(kx0 + col * colw, y0, f"{p['k']:>2}. {p['name']}", fontsize=8, va="top",
                               fontweight="bold" if in_focus(p) else "normal"))
         texts.append(fig.text(kx0 + col * colw + 0.012, y0 - 0.024,
-                              f"A {p['A']} @ {tag(p['cA'], p['iA'])}, B {p['B']} @ {tag(p['cB'], p['iB'])}, mid_basin {mb(p['mid_basin'])}",
+                              f"A {p['A']} @ {tag(p['cA'], p['iA'])}, B {p['B']} @ {tag(p['cB'], p['iB'])}",
                               fontsize=7.5, va="top", color="#333333"))
     fig.text(kx0, 0.075, "\"(interview)\" after a certainty: that axis rests on interview evidence (decision P8).",
              fontsize=7.5, va="bottom", color="#333333")
@@ -233,7 +224,7 @@ def fig_people_cause_locus(out):
         for t in texts:
             t.set_fontsize(t.get_fontsize() - 0.5)
         fig.canvas.draw()
-    footer(fig, "Source: people/**/*.md, worldview.lio_axes and mid_basin. Unreviewed hand-picked drafts; not a sample, "
+    footer(fig, "Source: people/**/*.md, worldview.lio_axes. Unreviewed hand-picked drafts; not a sample, "
                 "no base rate, so no over- or under-representation claim.")
     save(fig, out, "people_cause_locus.png")
 
