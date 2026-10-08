@@ -204,6 +204,35 @@ def people_axis_points():
     return pts, n
 
 
+# The two regions drawn on the person chart. The top right is the study focus; the P4 box is the
+# mid-basin membership test, shown as a secondary region. Both are counted the same way.
+CHART_CERT = 0.7  # both axes at certainty >= 0.7, the same bar P4 uses
+
+
+def in_focus(p):
+    """Study focus: the LIO pole on both axes (A_locus >= 3 and B_cause >= 3)."""
+    return p["A"] >= 3 and p["B"] >= 3
+
+
+def in_mid_basin_box(p):
+    """P4 mid-basin test cell (A_locus <= 1 and B_cause >= 3)."""
+    return p["A"] <= 1 and p["B"] >= 3
+
+
+def firm(p):
+    """Both axes at certainty >= 0.7."""
+    return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
+
+
+def region_counts(pts):
+    """(firm, plotted) counts for each chart region: firm = both axes at certainty >= 0.7."""
+    out = {}
+    for key, test in (("focus", in_focus), ("mid_basin", in_mid_basin_box)):
+        ps = [p for p in pts if test(p)]
+        out[key] = (sum(1 for p in ps if firm(p)), len(ps))
+    return out
+
+
 def people_chart_caption():
     """README caption for figures/people_cause_locus.png, computed from the records."""
     pts, n = people_axis_points()
@@ -214,8 +243,15 @@ def people_chart_caption():
         brange = f"every plotted person is B_cause {bs[0]}"
     else:
         brange = ("every plotted person is B_cause " + ", ".join(map(str, bs[:-1])) + f" or {bs[-1]}")
-    return (f"*The coded draft person records on B_cause (x) and A_locus (y), with the mid-basin zone shaded. "
-            f"Only records with both axes scored are plotted ({len(pts)} of the {n} coded people); {brange}, and "
-            "these hand-picked people are not a sample. Each marker carries a number; the key gives the name, both "
-            "scores with their certainties, and mid_basin. \"(interview)\" after a certainty means that score rests on "
-            "interview evidence (decision P8).*")
+    rc = region_counts(pts)
+    (ff, fn), (mf, mn) = rc["focus"], rc["mid_basin"]
+    return (f"*The coded draft person records on B_cause (x) and A_locus (y). The shaded top-right region is the "
+            f"study focus: the LIO pole on both axes (A_locus ≥ 3 and B_cause ≥ 3). {ff} people are in it at certainty "
+            f"≥ 0.7 on both axes ({fn} plotted there). The outlined box at bottom right is the P4 mid-basin test "
+            f"(A_locus ≤ 1 and B_cause ≥ 3), the membership test for `mid_basin`, not the focus. {mf} people are in it "
+            f"at certainty ≥ 0.7 on both axes ({mn} plotted there). Only records with both axes scored are plotted "
+            f"({len(pts)} of the {n} coded people); {brange}. These are unreviewed, hand-picked drafts, not a sample, "
+            "and there is no base rate, so no over- or under-representation claim can be made from them. Each marker "
+            "carries a number, and lighter markers are below 0.7 on at least one axis; the key lists the study-focus "
+            "people first and gives the name, both scores with their certainties, and mid_basin. \"(interview)\" after "
+            "a certainty means that score rests on interview evidence (decision P8).*")
