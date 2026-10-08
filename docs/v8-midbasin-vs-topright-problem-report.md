@@ -1,5 +1,7 @@
 # Problem report: mid-basin shading vs the stated goal
 
+**Update 2026-10-08: addressed in [`51b8db1`](https://github.com/neuresthetics/neuresthetics_genius_study/commit/51b8db1). The chart now shades the top right (A ≥ 3, B ≥ 3) as the study focus and outlines the P4 box as secondary; both are counted the same way (focus 4 at ≥ 0.7, 6 plotted; box 11 at ≥ 0.7, 14 plotted). Einstein was not moved.**
+
 Date: 2026-10-03
 Repo: neuresthetics/neuresthetics_genius_study
 Scope: figure `figures/people_cause_locus.png`, decision P4, Lane B
