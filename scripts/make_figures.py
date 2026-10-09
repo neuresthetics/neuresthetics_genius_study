@@ -144,7 +144,7 @@ def fig_core_composition(out):
 
 # 3 ------------------------------------------------------------------------
 def fig_people_cause_locus(out):
-    """Surnames sit next to their dots on a 5x5 grid. Only the top-right study focus is shaded.
+    """Surnames sit next to their dots on a 5x5 grid. No region is shaded or labeled (Jason, 2026-10-08).
     Full 0-4 range on both axes. People come from people_axis_points(), not a hardcoded list."""
     short_names = {"Galileo Galilei": "Galileo", "Ibn Sina (Avicenna)": "Ibn Sina"}
     # Plain words for the 0-4 scale (CODING_GUIDE §6: 0 pole, 1 leans, 2 mixed, 3 leans other pole with a stated exception, 4 pole)
@@ -152,7 +152,7 @@ def fig_people_cause_locus(out):
                 "Mostly the order\nof nature", "The order of nature\nitself (or no\nseparate God)"]
     x_labels = ["Miracles /\nintervention", "Mostly\nintervention", "Mixed",
                 "Lawful, with a stated\nexception", "Lawful, no\nexceptions"]
-    focus, dot = "#DD8452", "#3B6AA0"
+    dot = "#3B6AA0"
 
     def short(name):
         return short_names.get(name, name.split()[-1])
@@ -166,14 +166,6 @@ def fig_people_cause_locus(out):
     ax = fig.add_axes((0.15, 0.13, 0.82, 0.72))
     ax.set_xlim(-0.5, 4.5)
     ax.set_ylim(-0.5, 4.5)
-
-    # The one highlighted region: top right.
-    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, facecolor=focus, alpha=0.16, lw=0, zorder=0))
-    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, fill=False, edgecolor=focus, lw=2.5, zorder=1))
-    # The label goes in the emptiest cell of the box (top left first), so it never covers a name.
-    lb, la = min([(3, 4), (3, 3), (4, 3), (4, 4)], key=lambda c: len(cells.get(c, [])))
-    ax.text(lb - 0.44, la + 0.44, "The focus:\nGod as nature's order,\nnature fully lawful", ha="left", va="top",
-            fontsize=13, fontweight="bold", color="#A0522D", zorder=5)
 
     # Cells: a small grid of dots, surname to the right of each dot.
     for (b, a), ps in cells.items():
@@ -206,7 +198,7 @@ def fig_people_cause_locus(out):
     ax.set_xlabel("How do things happen?", fontsize=15, labelpad=12)
     ax.set_ylabel("Where is God?", fontsize=15, labelpad=12)
 
-    fig.text(0.5, 0.955, "Who sees God as the order of nature, and nature as fully lawful?",
+    fig.text(0.5, 0.955, "Where coded people fall: where God is vs. how things happen",
              ha="center", fontsize=20, fontweight="bold")
     fig.text(0.5, 0.925, f"Draft scores for the {len(pts)} hand-picked people with both axes scored; not a sample, not a result."
              + (f"\n{len(not_scorable)} more coded people are not scorable yet (an axis is UNKNOWN or below threshold) "

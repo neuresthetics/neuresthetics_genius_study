@@ -62,18 +62,19 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P34 | Denominators: people who can't be scored for an analysis are excluded from its denominator and reported separately as not scorable | high | DECIDED (Jason) 2026-10-08 |
 | P35 | B from working science only: a scientist's B inferred only from their work (the coder's inference or a scholar's reconstruction), with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4 | medium-high | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R1) |
 | P36 | A scholar's reconstruction of the person's free will or contingency triggers the B 3 anchor (P30 #14) like the person's own statement, capped at 0.5 | medium | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R2) |
+| P37 | The README and person chart mark no focus region | high | DECIDED (Jason) 2026-10-08 |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, and P32–P36 on 2026-10-08; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, and P32–P37 on 2026-10-08; all are listed under "Decided".
 
 
 ## Decided
 
-All 48 items, in id order (P6–P33 are placed after P5, S7 after S6).
+All 52 items, in id order (P6–P37 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -721,10 +722,10 @@ Process:
 ### P34. Denominators: unscorable people are left out
 **DECIDED (Jason, 2026-10-08): people who can't be scored for an analysis are excluded from its denominator and reported separately as not scorable.**
 - **What counts as not scorable.** For the person chart: A_locus or B_cause is not a 0–4 score (`TODO`, `UNKNOWN` or `BELOW_THRESHOLD`). For any other test or share: a field the test needs is not scored. Such a person is not inside the analysis at all, so they are not counted as outside the focus box, or as failing the test.
-- **Focus count.** The focus box (A_locus ≥ 3 and B_cause ≥ 3) is counted only among people at certainty ≥ 0.7 on both axes, and the base is stated as those people. People plotted in the box at lower certainty are named as a separate number, not counted.
+- **Focus count (superseded by P37: no focus box is drawn or counted now).** The focus box (A_locus ≥ 3 and B_cause ≥ 3) is counted only among people at certainty ≥ 0.7 on both axes, and the base is stated as those people. People plotted in the box at lower certainty are named as a separate number, not counted.
 - **Reporting.** The not-scorable people are given as a plain count, with which axis is missing, so they are visible and not hidden.
 - **Not an analysis.** Coding progress against the roster (e.g. people coded of core) and claim fill rates in reports/coverage.md are coverage figures, so they keep the full roster or claim count as the base.
-- **Where it is applied.** `people_axis_points`, `focus_counts` and `people_chart_caption` in `scripts/lib/records.py`, used by `scripts/make_figures.py` and `scripts/progress_status.py`.
+- **Where it is applied.** `people_axis_points` and `people_chart_caption` (`focus_counts` was removed under P37) in `scripts/lib/records.py`, used by `scripts/make_figures.py` and `scripts/progress_status.py`.
 
 ### P35. B from working science only
 **DECIDED (v8's pick, 2026-10-08)**, from ruling question R1 of the blind lens audit of stage 3 batch C (commit dd91009, run 1). R1 there is the audit's own label, not decision R1 above.
@@ -738,6 +739,11 @@ Process:
 - **Rule.** A scholar's reconstruction of the person's view of free will or contingency (a will not bound by natural law) triggers the B 3 anchor (P30 #14, CODING_GUIDE §6) the same way as the person's own statement does for Descartes and Kant, capped at 0.5 (the scholarly_reconstruction ceiling).
 - **Why.** The B 3 anchor is about what the view contains. When the only evidence for the view is a scholar's account, that lowers the certainty, not the value.
 - **Applied to:** al-Farabi, B_cause 4 → 3 at 0.5 with alternative 4 (Germann, SEP §3.1: 'While everything else executes its function by nature, human beings, equipped with reason and free will, must choose to do so'). No other record has a reconstructed free-will passage behind a B 4.
+
+### P37. No focus region on the README or person chart
+**DECIDED (Jason, 2026-10-08): the README and person chart mark no focus region; a favored region is a projected interpretation and premature until the roster is coded as a sample with era base rates.**
+- **Applied.** The shaded top-right box, its label and the focus count are removed from `figures/people_cause_locus.png` (`scripts/make_figures.py`) and its caption (`people_chart_caption` in `scripts/lib/records.py`); the README's Focus paragraph is removed. The chart shows where coded people fall and nothing more.
+- **Unchanged.** The method rules, including P4 (mid-basin test), stand.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

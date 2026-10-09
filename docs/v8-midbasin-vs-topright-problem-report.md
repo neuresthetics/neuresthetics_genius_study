@@ -1,6 +1,6 @@
 # Problem report: mid-basin shading vs the stated goal
 
-**Update 2026-10-08: addressed in [`51b8db1`](https://github.com/neuresthetics/neuresthetics_genius_study/commit/51b8db1). The chart now shades the top right (A ≥ 3, B ≥ 3) as the study focus and outlines the P4 box as secondary; both are counted the same way (focus 4 at ≥ 0.7, 6 plotted; box 11 at ≥ 0.7, 14 plotted). Einstein was not moved.**
+**Update 2026-10-08: addressed in [`51b8db1`](https://github.com/neuresthetics/neuresthetics_genius_study/commit/51b8db1). The chart now shades the top right (A ≥ 3, B ≥ 3) as the study focus and outlines the P4 box as secondary; both are counted the same way (focus 4 at ≥ 0.7, 6 plotted; box 11 at ≥ 0.7, 14 plotted). Einstein was not moved. Later the same day the top-right focus box was removed too (P37): the chart now marks no region.**
 
 Date: 2026-10-03
 Repo: neuresthetics/neuresthetics_genius_study

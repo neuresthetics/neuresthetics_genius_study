@@ -225,27 +225,12 @@ def not_scorable_summary(out):
     return ", ".join(parts)
 
 
-# The region drawn on the person chart: the study focus, the LIO pole on both axes.
-CHART_CERT = 0.7  # both axes at certainty >= 0.7
-
-
-def in_focus(p):
-    """Study focus: the LIO pole on both axes (A_locus >= 3 and B_cause >= 3)."""
-    return p["A"] >= 3 and p["B"] >= 3
+CHART_CERT = 0.7  # a dot is drawn solid when both axes are at certainty >= 0.7
 
 
 def firm(p):
     """Both axes at certainty >= 0.7."""
     return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
-
-
-def focus_counts(pts):
-    """(in_box, base, faded_in_box). The base is the plotted people at certainty >= 0.7 on both axes; in_box
-    is those of them in the study-focus region. faded_in_box are plotted in the region below 0.7 on at least
-    one axis; they are outside the base and not counted."""
-    base = [p for p in pts if firm(p)]
-    return (sum(1 for p in base if in_focus(p)), len(base),
-            sum(1 for p in pts if in_focus(p) and not firm(p)))
 
 
 def people_chart_caption():
@@ -259,22 +244,17 @@ def people_chart_caption():
         brange = f"every plotted person is B_cause {bs[0]}"
     else:
         brange = ("every plotted person is B_cause " + ", ".join(map(str, bs[:-1])) + f" or {bs[-1]}")
-    fi, fb, ff = focus_counts(pts)
     # Left two columns are B_cause 0 and 1. Mention them only when the plotted records leave them empty.
     left = ""
     if pts and all(p["B"] >= 2 for p in pts):
         left = (" Nobody plotted scores in the left two columns "
                 "(miracles or intervention, or mostly intervention).")
-    faded = (f" {ff} more {'is' if ff == 1 else 'are'} plotted in the box at lower certainty and "
-             f"{'is' if ff == 1 else 'are'} not counted.") if ff else ""
     ns = (f" **Not scorable yet:** {len(out)} coded {'person lacks' if len(out) == 1 else 'people lack'} a score on "
           f"at least one axis ({not_scorable_summary(out)}; the value is UNKNOWN or BELOW_THRESHOLD). They are not "
-          f"plotted and are left out of every count here, not counted as outside the box.") if out else ""
+          f"plotted and are left out of every count here.") if out else ""
     return (f"*Draft person scores: where God is (up the chart) against how things happen (across the chart). "
-            f"The shaded top-right box is the only region marked: the study focus, God as the order of nature "
-            f"and nature as lawful (A_locus ≥ 3 and B_cause ≥ 3). Plotted: the {len(pts)} coded people with both "
-            f"axes scored; {brange}.{left} Focus count: {fi} of the {fb} people scored at certainty ≥ 0.7 on both "
-            f"axes are in the box (the base is those {fb}).{faded}{ns} These are unreviewed, hand-picked drafts, "
-            f"not a sample, and there is no base rate, so no over- or under-representation claim can be made "
-            f"from them. Each surname sits next to its dot. A faded dot is a less certain score "
+            f"No region is marked. Plotted: the {len(pts)} coded people with both axes scored; {brange}.{left}{ns} "
+            f"These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the "
+            f"chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. "
+            f"A faded dot is a less certain score "
             f"(below 0.7 on at least one axis).*")
