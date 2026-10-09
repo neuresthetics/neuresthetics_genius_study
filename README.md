@@ -41,10 +41,10 @@ These charts describe what is in the repo so far; they are not results. The rost
 
 *Composition of the 441 core candidates by field bucket. Region of birth is coded per person record, so only coded people appear in the region panel. This describes the candidate roster, not a finding.*
 
-![The coded draft person records on B_cause against A_locus, with the study-focus region at the top right](figures/people_cause_locus.png)
+![Draft person scores: where God is against how things happen, with only the top-right study focus shaded](figures/people_cause_locus.png)
 
 <!-- BEGIN GENERATED: people_chart_caption -->
-*The coded draft person records on B_cause (x) and A_locus (y). The shaded top-right region is the study focus: the LIO pole on both axes (A_locus ≥ 3 and B_cause ≥ 3). 4 people are in it at certainty ≥ 0.7 on both axes (6 plotted there). Only records with both axes scored are plotted (23 of the 43 coded people); every plotted person is B_cause 2, 3 or 4. These are unreviewed, hand-picked drafts, not a sample, and there is no base rate, so no over- or under-representation claim can be made from them. Each marker carries a number, and lighter markers are below 0.7 on at least one axis; the key lists the study-focus people first and gives the name and both scores with their certainties. "(interview)" after a certainty means that score rests on interview evidence (decision P8).*
+*Draft person scores: where God is (up the chart) against how things happen (across the chart). The shaded top-right box is the only region marked: the study focus, God as the order of nature and nature as lawful (A_locus ≥ 3 and B_cause ≥ 3). 4 people are in it at certainty ≥ 0.7 on both axes (6 plotted there). Only records with both axes scored are plotted (23 of the 43 coded people); every plotted person is B_cause 2, 3 or 4. Nobody coded so far scores in the left two columns (miracles or intervention, or mostly intervention). These are unreviewed, hand-picked drafts, not a sample, and there is no base rate, so no over- or under-representation claim can be made from them. Each surname sits next to its dot. A faded dot is a less certain score (below 0.7 on at least one axis).*
 <!-- END GENERATED: people_chart_caption -->
 
 ![The nine sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)

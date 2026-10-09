@@ -23,8 +23,9 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import Rectangle  # noqa: E402
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import (REPO, read_record, read_csv, person_files, is_interview, people_axis_points,  # noqa: E402
-                         in_focus, focus_counts)
+from matplotlib.lines import Line2D  # noqa: E402
+import math  # noqa: E402
+from lib.records import (REPO, read_record, read_csv, person_files, people_axis_points)  # noqa: E402
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -143,89 +144,77 @@ def fig_core_composition(out):
 
 # 3 ------------------------------------------------------------------------
 def fig_people_cause_locus(out):
-    """Markers sit on a small grid inside their (B, A) cell, so they never overlap, and carry a number.
-    Names and scores go in a key panel beside the plot (several columns if needed), so there are no
-    labels on the plot that could collide. The layout cannot fail for any number of people."""
+    """Surnames sit next to their dots on a 5x5 grid. Only the top-right study focus is shaded.
+    Full 0-4 range on both axes. People come from people_axis_points(), not a hardcoded list."""
+    short_names = {"Galileo Galilei": "Galileo", "Ibn Sina (Avicenna)": "Ibn Sina"}
+    # Plain words for the 0-4 scale (CODING_GUIDE §6: 0 pole, 1 leans, 2 mixed, 3 leans other pole with a stated exception, 4 pole)
+    y_labels = ["A person outside\nthe world", "Mostly a person\noutside the world", "Mixed",
+                "Mostly the order\nof nature", "The order of nature\nitself (or no\nseparate God)"]
+    x_labels = ["Miracles /\nintervention", "Mostly\nintervention", "Mixed",
+                "Lawful, with a stated\nexception", "Lawful, no\nexceptions"]
+    focus, dot = "#DD8452", "#3B6AA0"
+
+    def short(name):
+        return short_names.get(name, name.split()[-1])
+
     pts, _ = people_axis_points()
-    # Study-focus people (top right) come first in the numbering and the key.
-    pts = sorted(pts, key=lambda p: (not in_focus(p), -p["A"], p["B"], p["name"]))
-    ff, fn = focus_counts(pts)
     cells = collections.defaultdict(list)
-    for k, p in enumerate(pts, 1):
-        p["k"] = k
+    for p in pts:
         cells[(p["B"], p["A"])].append(p)
-    n_rows_key = 12
-    ncols = max(1, -(-len(pts) // n_rows_key))
-    W = 9.5 + 4.4 * ncols
-    fig = plt.figure(figsize=(W, 8.0))
-    left = 1.75 / W
-    axw = 6.6 / W
-    ax = fig.add_axes((left, 0.15, axw, 0.70))
-    kx0 = left + axw + 0.25 / W
-    FOCUS = "#DD8452"
-    # Primary region: the study focus, the LIO pole on both axes.
-    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, facecolor=FOCUS, alpha=0.20, lw=0, zorder=0))
-    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, fill=False, edgecolor=FOCUS, lw=2.2, zorder=1))
-    focus_h = Rectangle((0, 0), 1, 1, facecolor=FOCUS, alpha=0.35, edgecolor=FOCUS, lw=2)
-    leg = ax.legend([focus_h],
-                    [f"Study focus: LIO pole on both axes (A ≥ 3, B ≥ 3)\n{ff} at certainty ≥ 0.7 on both axes ({fn} plotted)"],
-                    loc="upper left", fontsize=8.5, frameon=True, framealpha=0.9, edgecolor="#CCCCCC")
-    leg.get_texts()[0].set_fontweight("bold")
-    for (b, a), ps in cells.items():
-        cols = max(1, int(-(-len(ps) ** 0.5 // 1)))
-        rws = -(-len(ps) // cols)
-        sp = min(0.2, 0.8 / max(cols, rws))
-        size = min(150, (sp * 0.85 * 6.6 / 5 * 72) ** 2)  # marker diameter stays below the grid spacing
-        for i, p in enumerate(ps):
-            r, c = divmod(i, cols)
-            x = b + (c - (cols - 1) / 2) * sp
-            y = a - (r - (rws - 1) / 2) * sp
-            cert = min(p["cA"], p["cB"])
-            # Opacity follows the lower certainty, with a clear step at the 0.7 bar the regions are counted at.
-            alpha = 0.3 if cert < 0.7 else 0.75 + 0.25 * (cert - 0.7) / 0.3
-            ax.scatter(x, y, s=size, color="#4C72B0", alpha=alpha, edgecolor="black" if cert >= 0.7 else "#777777",
-                       lw=0.6, zorder=3)
-            ax.text(x, y, str(p["k"]), ha="center", va="center", fontsize=6.5, color="white" if cert >= 0.7 else "black",
-                    zorder=4, fontweight="bold")
+
+    fig = plt.figure(figsize=(16, 11))
+    ax = fig.add_axes((0.15, 0.13, 0.82, 0.72))
     ax.set_xlim(-0.5, 4.5)
     ax.set_ylim(-0.5, 4.5)
-    ax.set_xticks(range(5), ["0\ninterventionist", "1", "2", "3", "4\nLIO pole"])
-    ax.set_yticks(range(5), ["0 interventionist", "1", "2", "3", "4 LIO pole"])
-    ax.set_xlabel("B_cause (0–4)")
-    ax.set_ylabel("A_locus (0–4)")
-    ax.grid(alpha=0.25)
-    fig.suptitle(f"Study focus: who sits at the LIO pole on both axes (top right)\n"
-                 f"the {len(pts)} draft person records with both axes scored, B_cause vs A_locus; "
-                 "opacity = lower of the two certainties; numbers refer to the key",
-                 fontsize=11, x=0.5, y=0.97)
 
-    def tag(c, i):
-        return f"{c}{' (interview)' if i else ''}"
+    # The one highlighted region: top right.
+    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, facecolor=focus, alpha=0.16, lw=0, zorder=0))
+    ax.add_patch(Rectangle((2.5, 2.5), 2, 2, fill=False, edgecolor=focus, lw=2.5, zorder=1))
+    ax.text(2.56, 4.44, "The focus:\nGod as nature's order,\nnature fully lawful", ha="left", va="top",
+            fontsize=13, fontweight="bold", color="#A0522D", zorder=5)
 
-    fig.text(kx0, 0.87, "Key (study focus first, in bold): number, name; A score @ certainty, B score @ certainty", fontsize=8.5,
-             fontweight="bold", va="bottom")
-    colw = (1 - kx0 - 0.01) / ncols
-    texts = []
-    for idx, p in enumerate(pts):
-        col, row = divmod(idx, n_rows_key)
-        y0 = 0.85 - row * 0.058
-        texts.append(fig.text(kx0 + col * colw, y0, f"{p['k']:>2}. {p['name']}", fontsize=8, va="top",
-                              fontweight="bold" if in_focus(p) else "normal"))
-        texts.append(fig.text(kx0 + col * colw + 0.012, y0 - 0.024,
-                              f"A {p['A']} @ {tag(p['cA'], p['iA'])}, B {p['B']} @ {tag(p['cB'], p['iB'])}",
-                              fontsize=7.5, va="top", color="#333333"))
-    fig.text(kx0, 0.075, "\"(interview)\" after a certainty: that axis rests on interview evidence (decision P8).",
-             fontsize=7.5, va="bottom", color="#333333")
-    # Shrink the key font until every line fits its column; never fails, only gets smaller.
-    fig.canvas.draw()
-    r = fig.canvas.get_renderer()
-    limit = colw * fig.bbox.width - 6
-    while max(t.get_window_extent(r).width for t in texts) > limit and texts[0].get_fontsize() > 4:
-        for t in texts:
-            t.set_fontsize(t.get_fontsize() - 0.5)
-        fig.canvas.draw()
-    footer(fig, "Source: people/**/*.md, worldview.lio_axes. Unreviewed hand-picked drafts; not a sample, "
-                "no base rate, so no over- or under-representation claim.")
+    # Cells: a small grid of dots, surname to the right of each dot.
+    for (b, a), ps in cells.items():
+        ps = sorted(ps, key=lambda p: short(p["name"]))
+        n = len(ps)
+        ncols = 1 if n <= 5 else 2  # one column fits long surnames; two only for crowded cells
+        nrows = math.ceil(n / ncols)
+        colw = 0.9 / ncols
+        rowh = min(0.24, 0.8 / max(nrows, 1))
+        for i, p in enumerate(ps):
+            c, r = divmod(i, nrows)  # fill down each column first
+            x = b - 0.42 + c * colw
+            y = a + (nrows - 1) / 2 * rowh - r * rowh
+            cert = min(p["cA"], p["cB"])
+            faded = cert < 0.7
+            ax.scatter(x, y, s=120, color=dot, alpha=0.28 if faded else 0.95,
+                       edgecolor="#999999" if faded else "black", lw=0.8, zorder=3)
+            ax.text(x + 0.05, y, short(p["name"]), ha="left", va="center", fontsize=12,
+                    color="#777777" if faded else "#111111", zorder=4)
+
+    ax.set_xticks(range(5), x_labels, fontsize=11.5)
+    ax.set_yticks(range(5), y_labels, fontsize=11.5)
+    ax.tick_params(which="both", length=0, pad=8)
+    ax.set_xticks([k + 0.5 for k in range(4)], minor=True)
+    ax.set_yticks([k + 0.5 for k in range(4)], minor=True)
+    ax.grid(which="minor", color="#DDDDDD", lw=1)
+    ax.grid(which="major", visible=False)
+    for s in ax.spines.values():
+        s.set_color("#BBBBBB")
+    ax.set_xlabel("How do things happen?", fontsize=15, labelpad=12)
+    ax.set_ylabel("Where is God?", fontsize=15, labelpad=12)
+
+    fig.text(0.5, 0.955, "Who sees God as the order of nature, and nature as fully lawful?",
+             ha="center", fontsize=20, fontweight="bold")
+    fig.text(0.5, 0.915, f"Draft scores for {len(pts)} hand-picked people; not a sample, not a result.",
+             ha="center", fontsize=13.5, color="#444444")
+    leg = [Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="black", alpha=0.95),
+           Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="#999999", alpha=0.28)]
+    ax.legend(leg, ["score as drafted", "faded = less certain score"], loc="upper left", fontsize=11,
+              frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
+    fig.text(0.01, 0.012, "Source: draft person records in neuresthetics/neuresthetics_genius_study (people/), "
+             "unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
+             ha="left", va="bottom", fontsize=8.5, color="#888888")
     save(fig, out, "people_cause_locus.png")
 
 

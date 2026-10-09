@@ -235,11 +235,16 @@ def people_chart_caption():
     else:
         brange = ("every plotted person is B_cause " + ", ".join(map(str, bs[:-1])) + f" or {bs[-1]}")
     ff, fn = focus_counts(pts)
-    return (f"*The coded draft person records on B_cause (x) and A_locus (y). The shaded top-right region is the "
-            f"study focus: the LIO pole on both axes (A_locus ≥ 3 and B_cause ≥ 3). {ff} people are in it at certainty "
+    # Left two columns are B_cause 0 and 1. Mention them only when the plotted records leave them empty.
+    left = ""
+    if pts and all(p["B"] >= 2 for p in pts):
+        left = (" Nobody coded so far scores in the left two columns "
+                "(miracles or intervention, or mostly intervention).")
+    return (f"*Draft person scores: where God is (up the chart) against how things happen (across the chart). "
+            f"The shaded top-right box is the only region marked: the study focus, God as the order of nature "
+            f"and nature as lawful (A_locus ≥ 3 and B_cause ≥ 3). {ff} people are in it at certainty "
             f"≥ 0.7 on both axes ({fn} plotted there). Only records with both axes scored are plotted "
-            f"({len(pts)} of the {n} coded people); {brange}. These are unreviewed, hand-picked drafts, not a sample, "
-            "and there is no base rate, so no over- or under-representation claim can be made from them. Each marker "
-            "carries a number, and lighter markers are below 0.7 on at least one axis; the key lists the study-focus "
-            "people first and gives the name and both scores with their certainties. \"(interview)\" after "
-            "a certainty means that score rests on interview evidence (decision P8).*")
+            f"({len(pts)} of the {n} coded people); {brange}.{left} These are unreviewed, hand-picked drafts, "
+            f"not a sample, and there is no base rate, so no over- or under-representation claim can be made "
+            f"from them. Each surname sits next to its dot. A faded dot is a less certain score "
+            f"(below 0.7 on at least one axis).*")
