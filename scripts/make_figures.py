@@ -157,7 +157,7 @@ def fig_people_cause_locus(out):
     def short(name):
         return short_names.get(name, name.split()[-1])
 
-    pts, _ = people_axis_points()
+    pts, not_scorable = people_axis_points()
     cells = collections.defaultdict(list)
     for p in pts:
         cells[(p["B"], p["A"])].append(p)
@@ -206,8 +206,10 @@ def fig_people_cause_locus(out):
 
     fig.text(0.5, 0.955, "Who sees God as the order of nature, and nature as fully lawful?",
              ha="center", fontsize=20, fontweight="bold")
-    fig.text(0.5, 0.915, f"Draft scores for {len(pts)} hand-picked people; not a sample, not a result.",
-             ha="center", fontsize=13.5, color="#444444")
+    fig.text(0.5, 0.925, f"Draft scores for the {len(pts)} hand-picked people with both axes scored; not a sample, not a result."
+             + (f"\n{len(not_scorable)} more coded people are not scorable yet (an axis is UNKNOWN or below threshold) "
+                "and are not shown or counted." if not_scorable else ""),
+             ha="center", va="top", fontsize=13.5, color="#444444")
     leg = [Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="black", alpha=0.95),
            Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="#999999", alpha=0.28)]
     ax.legend(leg, ["score as drafted", "faded = less certain score"], loc="upper left", fontsize=11,

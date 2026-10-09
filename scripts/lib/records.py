@@ -1,5 +1,5 @@
 """Shared helpers for person and system records: front-matter parsing, schema checks, claim walking."""
-import csv, json, os, re
+import collections, csv, json, os, re
 
 import yaml
 from jsonschema import Draft202012Validator
@@ -185,23 +185,44 @@ def system_files():
 
 
 def people_axis_points():
-    """The person records that have both A_locus and B_cause scored (integers), for the person chart and its
-    README caption. Returns (points, n_files). Each point is a dict with name, A, B, their certainties and
-    interview flags, and mid_basin. Shared by scripts/make_figures.py and scripts/progress_status.py."""
-    pts, n = [], 0
+    """Split the person records for the person chart and its README caption.
+
+    Returns (points, not_scorable). points are the records with both A_locus and B_cause scored (integers);
+    they are the plotted base. not_scorable are the other records, each a dict with name and reason; they are
+    left out of every denominator and reported separately (DECIDED (Jason, 2026-10-08), OPEN_DECISIONS P34).
+    Each point is a dict with name, A, B, their certainties and interview flags, and mid_basin.
+    Shared by scripts/make_figures.py and scripts/progress_status.py."""
+    pts, out = [], []
     for f in person_files():
         d, _ = read_record(f)
-        n += 1
         lio = d["worldview"]["lio_axes"]
         a, b = lio["A_locus"], lio["B_cause"]
-        if not (isinstance(a.get("value"), int) and isinstance(b.get("value"), int)):
+        okA, okB = isinstance(a.get("value"), int), isinstance(b.get("value"), int)
+        if not (okA and okB):
+            reason = "both axes" if not (okA or okB) else ("A_locus" if not okA else "B_cause")
+            out.append({"name": d["identity"]["display_name"], "reason": reason,
+                        "A": a.get("value"), "B": b.get("value")})
             continue
         mb = d["worldview"].get("mid_basin") or {}
         pts.append({"name": d["identity"]["display_name"], "A": a["value"], "B": b["value"],
                     "cA": a.get("certainty"), "cB": b.get("certainty"),
                     "iA": is_interview(a), "iB": is_interview(b),
                     "mid_basin": mb.get("value") if isinstance(mb, dict) else mb})
-    return pts, n
+    return pts, out
+
+
+def not_scorable_summary(out):
+    """Plain-words breakdown of the people left out of the chart base, e.g.
+    '17 with no A_locus score, 3 with no B_cause score, 3 with neither'."""
+    c = collections.Counter(p["reason"] for p in out)
+    parts = []
+    if c["A_locus"]:
+        parts.append(f"{c['A_locus']} with no A_locus score")
+    if c["B_cause"]:
+        parts.append(f"{c['B_cause']} with no B_cause score")
+    if c["both axes"]:
+        parts.append(f"{c['both axes']} with neither")
+    return ", ".join(parts)
 
 
 # The region drawn on the person chart: the study focus, the LIO pole on both axes.
@@ -219,14 +240,18 @@ def firm(p):
 
 
 def focus_counts(pts):
-    """(firm, plotted) for the study-focus region: firm = both axes at certainty >= 0.7."""
-    ps = [p for p in pts if in_focus(p)]
-    return sum(1 for p in ps if firm(p)), len(ps)
+    """(in_box, base, faded_in_box). The base is the plotted people at certainty >= 0.7 on both axes; in_box
+    is those of them in the study-focus region. faded_in_box are plotted in the region below 0.7 on at least
+    one axis; they are outside the base and not counted."""
+    base = [p for p in pts if firm(p)]
+    return (sum(1 for p in base if in_focus(p)), len(base),
+            sum(1 for p in pts if in_focus(p) and not firm(p)))
 
 
 def people_chart_caption():
-    """README caption for figures/people_cause_locus.png, computed from the records."""
-    pts, n = people_axis_points()
+    """README caption for figures/people_cause_locus.png, computed from the records. Every count uses only the
+    people scorable for it; the rest are reported as not scorable yet (OPEN_DECISIONS P34)."""
+    pts, out = people_axis_points()
     bs = sorted({p["B"] for p in pts})
     if not bs:
         brange = "no person has both axes scored"
@@ -234,17 +259,22 @@ def people_chart_caption():
         brange = f"every plotted person is B_cause {bs[0]}"
     else:
         brange = ("every plotted person is B_cause " + ", ".join(map(str, bs[:-1])) + f" or {bs[-1]}")
-    ff, fn = focus_counts(pts)
+    fi, fb, ff = focus_counts(pts)
     # Left two columns are B_cause 0 and 1. Mention them only when the plotted records leave them empty.
     left = ""
     if pts and all(p["B"] >= 2 for p in pts):
-        left = (" Nobody coded so far scores in the left two columns "
+        left = (" Nobody plotted scores in the left two columns "
                 "(miracles or intervention, or mostly intervention).")
+    faded = (f" {ff} more {'is' if ff == 1 else 'are'} plotted in the box at lower certainty and "
+             f"{'is' if ff == 1 else 'are'} not counted.") if ff else ""
+    ns = (f" **Not scorable yet:** {len(out)} coded {'person lacks' if len(out) == 1 else 'people lack'} a score on "
+          f"at least one axis ({not_scorable_summary(out)}; the value is UNKNOWN or BELOW_THRESHOLD). They are not "
+          f"plotted and are left out of every count here, not counted as outside the box.") if out else ""
     return (f"*Draft person scores: where God is (up the chart) against how things happen (across the chart). "
             f"The shaded top-right box is the only region marked: the study focus, God as the order of nature "
-            f"and nature as lawful (A_locus ≥ 3 and B_cause ≥ 3). {ff} people are in it at certainty "
-            f"≥ 0.7 on both axes ({fn} plotted there). Only records with both axes scored are plotted "
-            f"({len(pts)} of the {n} coded people); {brange}.{left} These are unreviewed, hand-picked drafts, "
+            f"and nature as lawful (A_locus ≥ 3 and B_cause ≥ 3). Plotted: the {len(pts)} coded people with both "
+            f"axes scored; {brange}.{left} Focus count: {fi} of the {fb} people scored at certainty ≥ 0.7 on both "
+            f"axes are in the box (the base is those {fb}).{faded}{ns} These are unreviewed, hand-picked drafts, "
             f"not a sample, and there is no base rate, so no over- or under-representation claim can be made "
             f"from them. Each surname sits next to its dot. A faded dot is a less certain score "
             f"(below 0.7 on at least one axis).*")

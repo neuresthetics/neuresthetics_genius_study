@@ -21,7 +21,7 @@ From the v7.1 data book, section 5 "Coding rules" (`tables[3]` in the combined J
 | Multiple systems | Primary = dominant working metaphysics. Secondary only if they published in two systems. |
 | Founders | Code the system they founded (Buddha → BUDDH) even if later scholastic versions diverge. |
 | Scientists with church membership | Church tax / baptism ≠ ideology. Need writings. Faraday and Maxwell pass; many 19th-c names will be CHRIST-nominal / AGNOS-working. |
-| Do not code yet | Anyone with certainty <0.5 stays in the roster but drops out of the ideology×rate table. |
+| Do not code yet | Anyone with certainty <0.5 stays in the roster but drops out of the ideology×rate table, and out of the denominator of any analysis that needs that field; it is reported as not scorable (P34). |
 | Frequency cut | Primary LIO composition on frequency ≥ 3; sensitivity on ≥ 4 and ≥ 2. Frequency 1 stays on roster, out of primary table. |
 | First pool | Physical science 1600–1950; mid-basin theists coded first (Faraday, Maxwell, Newton, Aquinas, Ibn Sina, Gödel). |
 | No G/P_2025 | No present-day religion stock as a denominator. |
@@ -78,7 +78,7 @@ Every filled claim carries one of three certainty values. Anything below 0.5 is 
 | 0.7 | `recorded_interview` | The person's own first-person words in a recorded or transcribed interview (decision P8; see §7). |
 | 0.5 | `scholarly_reconstruction` | A scholar's reconstruction from indirect evidence. |
 | 0.5 | `inference_from_work` | Inferred from the person's work or conduct, with no direct statement (decision P24): for example B 4 from a scientist's working science. Say in `how_known` what it is inferred from. |
-| <0.5 | value = `BELOW_THRESHOLD` | Leave the value blank. The person drops out of the ideology × rate table. |
+| <0.5 | value = `BELOW_THRESHOLD` | Leave the value blank. The person drops out of the ideology × rate table and of the denominator of any analysis that needs the field (reported as not scorable, P34). |
 
 A single private letter is not "consistent private letters". Use 0.5 if a scholar backs the reading. Otherwise use `BELOW_THRESHOLD`. The kind of text does not change this table (decision P18): an unpublished or private document (a manuscript, notebook, prayer or form in the person's hand) takes the private ceiling, 0.7 with more than one document; a published letter or an autobiography the person published counts as `written_profession` (§7).
 

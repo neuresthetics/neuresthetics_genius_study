@@ -59,13 +59,14 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P31 | Continuity rule: the span dates the worldview being coded; evidence from any adult year counts at its normal certainty unless changes_over_life documents a change of view between the span and the evidence (then retrospective cap or changes_over_life); a change inside the span: code the phase with the most listed lasting contributions (tie to the later), the other phase in changes_over_life plus a coder_notes delta; childhood evidence stays off-point; replaces P29's out-of-span clause and P30 addendum e's posthumous restriction; a change splits the span only if it bears on primary_system or A–E (Newton ruling), phases counted with P30 #1 dates | medium-high | DECIDED (v8's pick) 2026-10-02 (from the P30 span-alignment audit) |
 | P32 | Work order after the first 12 stage 3 records: finish the stage 2 leftovers (physical science 1600–1950, F ≥ 3), then everyone else with F ≥ 3 by F descending, then roster rank; no hand-picking | medium-high | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C) |
 | P33 | Inventors and the scientist test (P30): a device or invention is not a theory or result about physical or natural systems; an inventor is a scientist only if a listed lasting contribution is a theory or result, otherwise B needs a statement about nature (P16) | medium | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C, Bell) |
+| P34 | Denominators: people who can't be scored for an analysis are excluded from its denominator and reported separately as not scorable | high | DECIDED (Jason) 2026-10-08 |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, and P32–P33 on 2026-10-08; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, and P32–P34 on 2026-10-08; all are listed under "Decided".
 
 
 ## Decided
@@ -714,6 +715,14 @@ Process:
 - **Rule.** A device or invention is not a theory or result about physical or natural systems. An inventor counts as a scientist only if a listed lasting contribution is itself a theory or result. Otherwise B needs a statement of the person's own about nature (P16), as for any non-scientist.
 - **Why.** Building a working device shows the builder relied on regularities, but it does not state a view of nature's order, and nearly everyone relies on regularities. Counting devices would let B be scored from almost any practical work.
 - **Applied to:** Bell (telephone, photophone, graphophone): not a scientist; no statement about nature was found, so B is UNKNOWN. Lovelace (Notes on the Analytical Engine) is treated the same way. Effect: B for inventors is scored less often.
+
+### P34. Denominators: unscorable people are left out
+**DECIDED (Jason, 2026-10-08): people who can't be scored for an analysis are excluded from its denominator and reported separately as not scorable.**
+- **What counts as not scorable.** For the person chart: A_locus or B_cause is not a 0–4 score (`TODO`, `UNKNOWN` or `BELOW_THRESHOLD`). For any other test or share: a field the test needs is not scored. Such a person is not inside the analysis at all, so they are not counted as outside the focus box, or as failing the test.
+- **Focus count.** The focus box (A_locus ≥ 3 and B_cause ≥ 3) is counted only among people at certainty ≥ 0.7 on both axes, and the base is stated as those people. People plotted in the box at lower certainty are named as a separate number, not counted.
+- **Reporting.** The not-scorable people are given as a plain count, with which axis is missing, so they are visible and not hidden.
+- **Not an analysis.** Coding progress against the roster (e.g. people coded of core) and claim fill rates in reports/coverage.md are coverage figures, so they keep the full roster or claim count as the base.
+- **Where it is applied.** `people_axis_points`, `focus_counts` and `people_chart_caption` in `scripts/lib/records.py`, used by `scripts/make_figures.py` and `scripts/progress_status.py`.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
