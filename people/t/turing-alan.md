@@ -2,16 +2,17 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Copeland, first page). Worldview from 'Computing Machinery and Intelligence' (Mind, 1950), read on the offprint scan in the Turing Digital Archive (King's College Cambridge, AMT/B/19; pp. 443, 444 and 453 checked on the page images), and from the 1932 manuscript 'Nature of Spirit' (AMT/C/29, facsimile), with Hodges' SEP entry and Scrapbook page for context. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 (0.7), D 4 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #122: primary_system unchanged (BELOW_THRESHOLD); its reason now rests on the evidence (CODING_GUIDE §3, §4) and no longer cites an unwritten rule; the stub-system question awaits v8's ruling. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. primary_system BELOW_THRESHOLD → ATHE 0.5, scholarly_reconstruction, on Hodges (new sources S8, S9) (P14); Mind p. 443 statement axes [A_locus, E_scope] → [A_locus, C_ledger] (P7); C and E notes rewritten (still BELOW_THRESHOLD), A note gives the evidence (P19); Nature of Spirit kind notebook or diary → unpublished manuscript (P18); single-source 1.0 fields → 0.7 (P15) (native_name, first_lasting_contribution_year, era_bucket, imitation game item, major_works/0, schooling/2, working_years, major_work_period, age_at_first_lasting_contribution, King's and Princeton, Church and Newman); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite; Hazlehurst stage grammar or secondary school → elementary school (P21); Morcom quotation marked primary check pending (P26); first_evidence_of_lio_type_views checked against the LIO-type view anchor (P27), unchanged. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: turing-alan
@@ -83,7 +84,7 @@ childhood:
   childhood_mentors: []
   languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}], how_known: "English family."}
   notable_events:
-    - {value: "Close friendship with Christopher Morcom (1928), who died in February 1930; Turing 'felt that this was something beyond what science could explain' (MacTutor)", year: "1930", age: 17, certainty: 0.7, cites: [{source: S3, locator: "Biography, Morcom paragraph"}], how_known: "MacTutor, which quotes Turing: 'It is not difficult to explain these things away - but, I wonder!' (secondary quotation; primary check pending, P26). Not used for any score."}
+    - {value: "Close friendship with Christopher Morcom (1928), who died in February 1930; Turing 'felt that this was something beyond what science could explain' (MacTutor)", year: "1930", age: 18, certainty: 0.7, cites: [{source: S3, locator: "Biography, Morcom paragraph"}], how_known: "MacTutor, which quotes Turing: 'It is not difficult to explain these things away - but, I wonder!' (secondary quotation; primary check pending, P26). Not used for any score."}
 
 worldview:
   unit: "adult working worldview"
@@ -188,7 +189,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1936–1952", certainty: 0.7, cites: [{source: S3, locator: "Biography"}], how_known: "On Computable Numbers to morphogenesis. MacTutor alone, so 0.7 under the single-source rule (P15)."}
-  age_at_first_lasting_contribution: {value: 23, certainty: 0.7, cites: [{source: S3, locator: "Quick Info; Biography (April 1936)"}], how_known: "Born June 1912; paper completed April 1936. MacTutor alone for the month, so 0.7 under the single-source rule (P15)."}
+  age_at_first_lasting_contribution: {value: 24, certainty: 0.7, cites: [{source: S3, locator: "Quick Info; Biography (April 1936)"}], how_known: "Born June 1912; paper completed April 1936. MacTutor alone for the month, so 0.7 under the single-source rule (P15). P30 (rule 5): 1936 − 1912 = 24, with no month adjustment; was 23 until the P30 age sweep (2026-10-08)."}
   first_evidence_of_lio_type_views: {value: "1950 (rejection of theological arguments in print); Hodges dates the 'heresy' remarks to the late 1940s", certainty: 0.5, cites: [{source: S1, locator: "pp. 443–444"}, {source: S5, locator: "§ on mechanising mind"}], how_known: "Earliest dated text read is 1950; Hodges' dating is secondary. The 1950 statements are scored at 3 or 4 (B_cause 3, D_authority 4), so they meet the LIO-type view anchor (P27)."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The 1950 paper falls inside 1936–1952; nothing read dates the views earlier, and the 1932 manuscript points the other way.", certainty: 0.5, cites: [{source: S1, locator: "p. 443"}, {source: S2, locator: "sheet 4"}], how_known: "Dated texts only."}
   worldview_during_major_work: {value: "Materialist and, on Hodges' reading, atheistic; rejection of theological arguments in 1950", certainty: 0.5, cites: [{source: S5, locator: "§ on the 1950 paper"}, {source: S8, locator: "§ on the computer after the war"}, {source: S1, locator: "p. 443"}], how_known: "Secondary characterisation plus one paper."}
@@ -340,7 +341,7 @@ English family; father in the Indian Civil Service [S3]. Context only.
 
 ## Timing
 
-First lasting contribution 1936, at 23 [S3].
+First lasting contribution 1936, at 24 [S3].
 
 ## Lane B notes (labeled belief model)
 

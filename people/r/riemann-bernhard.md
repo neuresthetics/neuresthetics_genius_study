@@ -2,17 +2,18 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Dedekind's 'Bernhard Riemann's Lebenslauf'. Worldview from Riemann's own unpublished philosophical fragments and Dedekind's Lebenslauf, both in the Gesammelte mathematische Werke (2nd ed., 1892; University of Toronto scan on the Internet Archive; pp. 518, 519, 521, 541, 557 and 558 checked on the page images). primary_system BELOW_THRESHOLD (CHRIST and CLTHEI candidates). A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #232: languages_of_work German → German, Latin, Italian (Werke contents XXII, XVI, XXIII and preface). #263: PANPSY reason rewritten: he argues the Erdseele in his own voice (pp. 511–512, 517) but frames it as a hypothesis of exact science (p. 517); still not coded. #260: secondary_system how_known points to that candidate (value unchanged). #259 note: cites CHRIST's use_when instead of a loose batch 3 precedent. pp. 507, 511 and 517 checked on the page images. Left for v8 as a method question: #265 (basis label for B_cause). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. B_cause 4 certainty 0.5 → 0.7 (two unpublished fragments of his own, scholarly edition; private ceiling) (P18); fragment statements kind notebook or diary → unpublished manuscript (P18, P28; the draft had document in own hand, which CODING_GUIDE §7 keeps for forms, prayers and notes that are not manuscript works); Lebenslauf statement checked against 'scholarly edition' (was primary facsimile) (P21); A stays 1 at 0.5 (v8's answer, 2026-10-02); secondary UNKNOWN → BELOW_THRESHOLD (Erdseele), PANPSY stays a candidate (P14); D BELOW_THRESHOLD → UNKNOWN, C and E notes rewritten (P19); first_evidence_of_lio_type_views stays UNKNOWN, the fragments being undated (P27); mid_basin note rewritten; single-source 1.0 fields → 0.7 (P15) (region_of_work, occupations, definition_fit, working_years, Gauss; Lebenslauf-only family_religious_practice, languages_in_childhood, baptism_or_initiation); region_of_birth, sex, childhood_mentors/0 keep 1.0 with a second cite. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens run 1 on rulings packet 6155174, sources reopened. B_cause 4 certainty 0.7 → 0.5: the p. 519 antinomy Thesis is now discounted for B as it is for A, and p. 521 alone is one document (CODING_GUIDE §3, P18); secondary_system BELOW_THRESHOLD → UNKNOWN (§1: only if he published in two systems), the Erdseele fragments kept as a note and PANPSY as a candidate. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: riemann-bernhard
@@ -82,7 +83,7 @@ childhood:
     - {value: "His father, his first teacher", name: "Friedrich Bernhard Riemann", certainty: 1.0, cites: [{source: S1, locator: "p. 541"}, {source: S2, locator: "Biography, paragraph 1"}], how_known: "Two sources (Dedekind and MacTutor)."}
   languages_in_childhood: {value: [German], certainty: 0.7, cites: [{source: S1, locator: "p. 541"}], how_known: "German family. Dedekind's Lebenslauf alone; a friend's memoir printed in the scholarly edition, treated as one reliable source, not a primary document, so 0.7 under the single-source rule (P15) (flag: v8 may count it as primary)."}
   notable_events:
-    - {value: "Confirmed by his father, then left home for school", year: "1840", age: 13, certainty: 0.7, cites: [{source: S1, locator: "p. 541"}], how_known: "Dedekind gives the age (thirteen and a half); the year follows from his birth date."}
+    - {value: "Confirmed by his father, then left home for school", year: "1840", age: 14, certainty: 0.7, cites: [{source: S1, locator: "p. 541"}], how_known: "Dedekind gives the age (thirteen and a half); the year follows from his birth date."}
 
 worldview:
   unit: "adult working worldview"

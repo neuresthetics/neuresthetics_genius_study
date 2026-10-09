@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'David Hume' (Qu), Britannica (Cranston, first page) and My Own Life; religion from SEP 'Hume on Religion' (Russell). Worldview quotations from the edited texts at Hume Texts Online (Millican and Merivale): Enquiry §§9–12, Dialogues Part 12, Natural History §15. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (candidates AGNOS, SCEPT, ATHE, EMPIR are stubs; DEISM rejected); A 3 and C 4 at 0.5; B 4, D 4, E 4 at 0.7; mid_basin BELOW_THRESHOLD (A only 0.5). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #512: SCEPT locator is E 12.24–25 (SBN 161–2), not E 12.34. #539: Advocates Library 1752–1757; end year from Britannica 'Adam Ferguson' (new S9), not inferred as 1763. #518, #527: the Enquiry 11 conclusion is the friend in his own person after the Epicurus speech (E 11.9–23). #524: 'most scholars' wording replaced by SEP §10. #545: Britannica's 1744 noted beside SEP's 1745 and flagged; 1.0 left pending v8 (conflict rule). Bylines: SEP Hume now Qu and Radcliffe; SEP religion now Russell and Kraal; Britannica now Cranston and Jessop. #510 left (stub-system rule awaits v8). Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: hume-david
@@ -230,7 +231,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1734–1776", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Treatise written from 1734; revisions until his death."}
-  age_at_first_lasting_contribution: {value: 27, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S7, locator: "MOL 5"}], how_known: "Born April/May 1711; Treatise published end of 1738 (his account) or 1739 (SEP): 27 either way."}
+  age_at_first_lasting_contribution: {value: 28, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S7, locator: "MOL 5"}], how_known: "Born April/May 1711; Treatise published end of 1738 (his account) or 1739 (SEP): 27 either way. P30 (rule 5): 1739 − 1711 = 28, with no month adjustment; was 27 until the P30 age sweep (2026-10-08)."}
   first_evidence_of_lio_type_views: {value: "Lawful nature and the critique of miracle reports in the Enquiry", year: 1748, age: 37, certainty: 0.5, cites: [{source: S4, locator: "E 10"}], how_known: "Earliest text read; the Treatise (1739–1740) was not read, so earlier evidence is likely (flag)."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The Enquiry (1748) falls in the middle of the major-work period; the Treatise was not read.", certainty: 0.5, cites: [{source: S4, locator: "E 10"}], how_known: "Dates of what was read."}
   worldview_during_major_work: {value: "Sceptical or irreligious throughout (no coded system: the candidates are stubs)", certainty: 0.5, cites: [{source: S2, locator: "§§10–11"}], how_known: "SEP reconstruction."}

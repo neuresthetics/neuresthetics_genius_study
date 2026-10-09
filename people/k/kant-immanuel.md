@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #379: 'lived his entire life' now cited to Britannica 'Background and early years' and SEP religion §2.1.1, not SEP §1. #405: early_mathematics 'other' (curriculum only; no source says advanced). #415: wording only; he declines to contest revelation and miracles (AA VI 155; VI 88 n.) rather than accepting them; value unchanged. #390: stray 'ancestor gloss' wording fixed. #420: heading §3.3.1.2 rechecked in the live entry; kept. Bylines: SEP religion now Pasternack and Fugate; Britannica now Bird and Duignan. #416, #456 left (stub-system rule awaits v8). Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: kant-immanuel
@@ -82,7 +83,7 @@ childhood:
     - {value: "The family's pastor, who made his schooling possible and directed the school", certainty: 0.7, cites: [{source: S3, locator: "'Background and early years'"}], how_known: "Britannica (unnamed there); SEP S2 §2.1.1 names Franz Albert Schultz as the school's director."}
   languages_in_childhood: {value: [German, Latin], certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "German-speaking Königsberg; Latin school."}
   notable_events:
-    - {value: "Reacted strongly against the 'forced soul-searching' of his Pietist schooling", year: "1732–1740", age: "8–15", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP, after Kuehn."}
+    - {value: "Reacted strongly against the 'forced soul-searching' of his Pietist schooling", year: "1732–1740", age: "8–16", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP, after Kuehn."}
 
 worldview:
   unit: "adult working worldview"

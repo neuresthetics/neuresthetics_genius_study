@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from Britannica (Popkin, first page) and SEP 'Baruch Spinoza' (Nadler). Worldview from the Ethics and the Theological-Political Treatise in Elwes's translation, read in the Project Gutenberg texts (unofficial web copies, so every field resting on them is capped at 0.7 under CODING_GUIDE §7). The Cambridge edition (ed. Kisner) was not opened. DRAFT SCORES for v8's review: primary_system PANT 0.7; A 4, B 4, C 4, D 3, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #12: Dutch removed from languages_of_work (only the posthumous Dutch edition). #13: lens grinding now cited to SEP 'Spinoza's Physical Theory' §6.2 (new S8) as well as Britannica; how_known no longer says 'two sources' for both occupations; 1.0 left pending v8 (single-source / mixed sourcing). #16, #81: Ethics title cited for the geometric form; SEP §2.1 named. #22, #58: how_known says the detail is Britannica-only; 1.0 left pending v8. #27: SEP 17 vs Britannica 18–19 noted and flagged; 1.0 left pending v8 (conflict rule). #64, #91: timing of the immanent God now rests on SEP §1 (Short Treatise at Rijnsburg; Ethics under way by 1663) and §2.1, not §1 alone. #80: S8 added. TTP locators labelled as Gutenberg sentence numbers; Kisner wording marked TODO. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: spinoza-baruch
@@ -78,7 +79,7 @@ childhood:
   childhood_mentors: []
   languages_in_childhood: {value: TODO, note: "Portuguese and Hebrew are likely but not stated in the sources read."}
   notable_events:
-    - {value: "Mother's death", year: "1638", age: 5, certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}], how_known: "Britannica."}
+    - {value: "Mother's death", year: "1638", age: 6, certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}], how_known: "Britannica."}
 
 worldview:
   unit: "adult working worldview"
@@ -259,8 +260,8 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1661–1677", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "From the Rijnsburg writings (correspondence begins 1661) to the posthumous works."}
-  age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "opening (birth 1632)"}, {source: S2, locator: "§1 (TTP 1670)"}], how_known: "Born November 1632; TTP 1670. Follows the coder's choice of year."}
-  first_evidence_of_lio_type_views: {value: "Herem of 1656, which SEP links to the ideas of his later treatises (denial of a transcendent, providential God)", year: 1656, age: 23, certainty: 0.5, cites: [{source: S2, locator: "§1, paragraph 2"}], how_known: "SEP calls this 'an educated guess'; the content of the 'abominable heresies' is not recorded. His own first dated texts on the question are the 1660s writings."}
+  age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S1, locator: "opening (birth 1632)"}, {source: S2, locator: "§1 (TTP 1670)"}], how_known: "Born November 1632; TTP 1670. Follows the coder's choice of year. P30 (rule 5): 1670 − 1632 = 38, with no month adjustment; was 37 until the P30 age sweep (2026-10-08)."}
+  first_evidence_of_lio_type_views: {value: "Herem of 1656, which SEP links to the ideas of his later treatises (denial of a transcendent, providential God)", year: 1656, age: 24, certainty: 0.5, cites: [{source: S2, locator: "§1, paragraph 2"}], how_known: "SEP calls this 'an educated guess'; the content of the 'abominable heresies' is not recorded. His own first dated texts on the question are the 1660s writings."}
   lio_views_relative_to_major_work: {value: "before major work", rationale: "SEP dates the Short Treatise, 'an initial but aborted effort to lay out his metaphysical, epistemological and moral views', to his Rijnsburg years (from 1661), and says he was working on the Ethics by 1663 (S2, §1); the Ethics' natura naturans uses 'the same terms he used in the Short Treatise' (S2, §2.1). So his metaphysics of God was under way in the early 1660s, before the TTP (1670) and the Ethics (1677). SEP does not itself say the immanent God is present in those writings, and the Short Treatise was not read (lens audit #64).", certainty: 0.5, cites: [{source: S2, locator: "§1; §2.1"}], how_known: "SEP dating of the works and its note on shared terms; the Short Treatise was not read."}
   worldview_during_major_work: {value: "PANT throughout (draft code)", certainty: 0.5, cites: [{source: S3, locator: "E1P15"}, {source: S4, locator: "TTP ch. 6"}], how_known: "The TTP and the Ethics, written in the major-work period, agree."}
 
@@ -401,7 +402,7 @@ Portuguese-Jewish (Sephardic) Amsterdam [S1; S2]. Context only.
 
 ## Timing
 
-First lasting contribution taken as the Treatise of 1670, at 37 [S2, §1]. His metaphysics of God was under way in the early 1660s: SEP dates the Short Treatise to Rijnsburg and says the Ethics uses its terms for natura naturans [S2, §1; §2.1]; the Short Treatise was not read, and the content of the 1656 heresies is not recorded.
+First lasting contribution taken as the Treatise of 1670, at 38 [S2, §1]. His metaphysics of God was under way in the early 1660s: SEP dates the Short Treatise to Rijnsburg and says the Ethics uses its terms for natura naturans [S2, §1; §2.1]; the Short Treatise was not read, and the content of the 1656 heresies is not recorded.
 
 ## Lane B notes (labeled belief model)
 

@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Blaise Pascal' (Clarke) and Britannica (Jerphagnon, first page). Worldview from the Pensées (Gutenberg copy of the Dutton 1958 English edition, §7 cap 0.7) and the Préface sur le Traité du vide (Brunschvicg–Boutroux 1923 edition, Wikisource transcription checked against the Internet Archive scan of pp. 131–132). DRAFT SCORES for v8's review: primary_system CHRIST 0.7; A 0, B 2, C 1, D 2, E 1, all at 0.7; mid_basin TODO (A ≤ 1 with B = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #246: 'noblesse de robe' removed (not in the sources read). #236: D cites now fragments 269 and 278 only (273 was not used in the rationale). #250: value kept; the rationale now applies the written LIO definition and the open threshold is a method question for v8. Bylines: SEP now Clarke and Wood; Britannica now Jerphagnon and Orcibal. Pensées numbering note no longer says it follows Brunschvicg. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
 identity:
   id: pascal-blaise
@@ -215,7 +216,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1640–1662", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Essai (1640) to the Pensées notes at his death."}
-  age_at_first_lasting_contribution: {value: 16, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Born June 1623; Essai 1640, so 16 or 17 depending on the month (not stated)."}
+  age_at_first_lasting_contribution: {value: 17, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Born June 1623; Essai 1640, so 16 or 17 depending on the month (not stated). P30 (rule 5): 1640 − 1623 = 17, with no month adjustment; was 16 until the P30 age sweep (2026-10-08)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "Checked SEP §1–§4, Britannica's first page and the Pensées read: no LIO-type God-world view found; his lawful physics is paired with a transcendent, miracle-working God."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "DATA_DICTIONARY defines lawful-order views as 'law without exemption'. His physics is lawful and reason alone rules in matters of sense and reasoning (S4, p. 132), but he holds that miracles continue in nature (B 2; fragments 803, 838) and that a personal God acts in particular events (A 0, E 1; fragments 555, 838), so no law-without-exemption view was found. The lens audit (#250, one run) proposed 'unclear'; the value is left pending a written threshold for 'LIO-type views' (method question).", certainty: 0.7, cites: [{source: S3, locator: "fragments 555, 803, 838"}, {source: S4, locator: "p. 132"}], how_known: "Coder's reading of the texts read, against the DATA_DICTIONARY definition."}
   worldview_during_major_work: {value: "Catholic throughout; Jansenist from 1646; intensified after 1654", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Two sources."}
@@ -330,7 +331,7 @@ French Catholic family of a royal tax official [S1; S2]. Context only.
 
 ## Timing
 
-First lasting contribution taken as the Essai of 1640, at 16 [S1; S2]. No LIO-type views found.
+First lasting contribution taken as the Essai of 1640, at 17 [S1; S2]. No LIO-type views found.
 
 ## Lane B notes (labeled belief model)
 
