@@ -38,7 +38,7 @@ AUDITS = ("9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700),
 NEXT_STEPS = ("Stage 3 (everyone else with F ≥ 3) has started: the first 12 records (Spinoza, Descartes, Pascal, Leibniz, Kant, "
               "Hume, Darwin, Gauss, Riemann, Turing, Noether, von Neumann) are drafts that still need to apply P29 and P30 (the stage 3-b six "
               "follow P14–P28 on main; the stage 3-a six also still need P14–P28); the other 31 records follow P14–P28 (schema 1.3) and "
-              "P30's age rule, and their worldview.working_years now equals timing.major_work_period (P30 addendum); under P31 (continuity rule) all 55 values the span audit flagged stand; the strict-period alternative is in reports/period_rule_sensitivity.md; source the stubs on the S7 backlog "
+              "P30's age rule, and their worldview.working_years now equals timing.major_work_period (P30 addendum); under P31 (continuity rule) all 55 values the span audit flagged stand; the strict-period alternative is in reports/period_rule_sensitivity.md; batch C (Wu, Lovelace, Smith, al-Farabi, al-Khwarizmi, Bell) is drafted in P32 order, next Archimedes, Aristotle, McClintock, Russell; batch C needs a blind lens run; source the stubs on the S7 backlog "
               "(ATHE, AGNOS, KANT, SCEPT, RATN, EMPIR, IDEAL); the revised rubric has not started")
 
 

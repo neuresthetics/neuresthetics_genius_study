@@ -37,6 +37,8 @@ Order of work (from the v7.1 rules, "First pool" and "Frequency cut"):
 3. Everyone else with F ≥ 3 (the primary analysis cut).
 4. F = 2, then F = 1. These are for sensitivity analysis and stay out of the primary table.
 
+Inside a pool, and once a pool is used up (P32, v8's pick, 2026-10-08): first any uncoded person left in an earlier pool, then by F descending, then roster rank ascending. No hand-picking.
+
 `reports/coverage.md` shows which first-pool people have files. Find the person's id:
 
 ```bash

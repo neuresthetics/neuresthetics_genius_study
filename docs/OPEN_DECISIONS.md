@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -57,18 +57,20 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P29 | Stage 3-b follow-ups: §1 governs secondary_system; hedged self-reports stay at 0.5; a later disavowal caps the disowned wording at 0.5; contributions dated by first publication (replaced by P30's dating rule); one period per record (first to last listed lasting contribution); "scientist" = a listed lasting contribution in natural science, same for B and E (test refined by P30); derived sources are not independent | medium | DECIDED (v8's pick) 2026-10-02 (from the v8.b rulings audit) |
 | P30 | Stage 3 rulings round 3: corrects P29's coral-reef date to 1837; contributions dated by the earliest documented public statement (classified and posthumous work, period ends); age = event year − birth year; real-dispute test; first LIO-type view checks the earliest works; tense rule; same-evidence rule only for the same point; mid_basin cap with alternatives; scientist = a lasting theory or result about physical or natural systems (Noether is one); Kisner cap scope; published letter; B 3's free-will exception; one Gutenberg TODO per field; ruling questions only for primary_system, A, B, mid_basin or the passes; addendum (11:20 PM PT): E follows P19 for scientists, the latest lasting work must be listed, undated items by composition date, range ends, posthumous items, major_work_period is the one span | medium-high | DECIDED (v8's pick) 2026-10-02 (from lens's runs on the v8.a and v8.b rulings packets) |
 | P31 | Continuity rule: the span dates the worldview being coded; evidence from any adult year counts at its normal certainty unless changes_over_life documents a change of view between the span and the evidence (then retrospective cap or changes_over_life); a change inside the span: code the phase with the most listed lasting contributions (tie to the later), the other phase in changes_over_life plus a coder_notes delta; childhood evidence stays off-point; replaces P29's out-of-span clause and P30 addendum e's posthumous restriction; a change splits the span only if it bears on primary_system or A–E (Newton ruling), phases counted with P30 #1 dates | medium-high | DECIDED (v8's pick) 2026-10-02 (from the P30 span-alignment audit) |
+| P32 | Work order after the first 12 stage 3 records: finish the stage 2 leftovers (physical science 1600–1950, F ≥ 3), then everyone else with F ≥ 3 by F descending, then roster rank; no hand-picking | medium-high | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C) |
+| P33 | Inventors and the scientist test (P30): a device or invention is not a theory or result about physical or natural systems; an inventor is a scientist only if a listed lasting contribution is a theory or result, otherwise B needs a statement about nature (P16) | medium | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C, Bell) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02 and are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, and P32–P33 on 2026-10-08; all are listed under "Decided".
 
 
 ## Decided
 
-All 46 items, in id order (P6–P31 are placed after P5, S7 after S6).
+All 48 items, in id order (P6–P33 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -700,6 +702,18 @@ Process:
 - **Which changes split the span** (Newton ruling, v8's pick, 2026-10-02). A change of view splits the span into phases only if it bears on a coded field: `primary_system` or A–E. A change in a doctrine that none of those fields depends on is logged in `changes_over_life` and does not split the span. Newton's antitrinitarianism (about 1672) leaves CHRIST and every axis unchanged, so his span is not split and his values stand. When phases are counted, the items are dated by the P30 #1 dating rules.
 - **Childhood evidence** stays off-point for the person's own axes (P29, childhood religious schooling bullet).
 - **Replaces** P29's clause "statements from outside the span count only as retrospective self-reports or go in changes_over_life" and P30 addendum e's restriction on posthumous private writings. The death cap on the span stays, and so do the other span rules: the dating rules (P30 #1–4, addendum c and d), the latest lasting work (addendum b) and the working_years equality (addendum f).
+
+### P32. Work order after the first 12 stage 3 records
+**DECIDED (v8's pick, 2026-10-08)**, while choosing stage 3 batch C. RUNBOOK gives the pools (first pool, then physical science 1600–1950 with F ≥ 3, then everyone else with F ≥ 3, then F = 2 and 1) but not the order inside a pool or when a pool counts as finished.
+- **Order.** First any uncoded person left in an earlier pool (Chien-Shiung Wu was the last physical-science person with F ≥ 3 whose first lasting contribution falls in 1600–1950). Then everyone else with F ≥ 3, by F descending, then roster rank ascending.
+- **Why.** The order is mechanical, so no coder picks who is coded next. That matters for the representation question: a chart of hand-picked people has no base rate.
+- **Batch C** (2026-10-08): Wu, Lovelace, Smith, al-Farabi, al-Khwarizmi, Bell. Next in order: Archimedes, Aristotle, McClintock, Russell.
+
+### P33. Inventors and the scientist test
+**DECIDED (v8's pick, 2026-10-08)**, while coding Alexander Graham Bell. P30 makes a scientist anyone with a listed lasting contribution that is "a theory or result about physical or natural systems". It does not say whether a device counts.
+- **Rule.** A device or invention is not a theory or result about physical or natural systems. An inventor counts as a scientist only if a listed lasting contribution is itself a theory or result. Otherwise B needs a statement of the person's own about nature (P16), as for any non-scientist.
+- **Why.** Building a working device shows the builder relied on regularities, but it does not state a view of nature's order, and nearly everyone relies on regularities. Counting devices would let B be scored from almost any practical work.
+- **Applied to:** Bell (telephone, photophone, graphophone): not a scientist; no statement about nature was found, so B is UNKNOWN. Lovelace (Notes on the Analytical Engine) is treated the same way. Effect: B for inventors is scored less often.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
