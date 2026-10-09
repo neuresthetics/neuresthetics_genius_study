@@ -7,7 +7,7 @@ record:
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1848–1885 unchanged; worldview.working_years 1847–1895 → 1848–1885, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on his working science (Britannica's account); his own speech leans to 3 anyway. No other value changes; mid_basin unchanged."}
 
 identity:
   id: pasteur-louis
@@ -107,12 +108,12 @@ worldview:
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "The speech speaks of the notion and idea of the infinite and of God in the human mind ('le surnaturel est au fond de tous les cœurs', 'Un Dieu intérieur' as the meaning of enthousiasme, S3, pp. 24, 26), not of where God is or whether God is a person. A mixed reading (2) is possible but would be scored from implication.", note: "Gap: letters and the Œuvres (vol. 7, Mélanges) for direct statements on God."}
     B_cause:
-      value: 4
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S3, locator: "pp. 3–4, 20"}, {source: S1, locator: "'Spontaneous generation'"}]
-      how_known: "Britannica's account of his working science (P6), with his speech in support. His own words about nature (pp. 3–4) support the named alternative 3, and the p. 4 passage that supports 4 is about method (how to know), not how nature works, so the speech speaks to the score only indirectly. Scored at 0.5 with basis scholarly_reconstruction, as B from working science is for Bohr, Chandrasekhar and Dirac (§3 same pattern; lens audit batch 3, #84; was written_profession 0.7)."
-      rationale: "Scored on his account of nature (P6). His science ran on strict experimental control: the method 'qui a pour guide et pour contrôle incessant l'observation et l'expérience, dégagées [...] de tout préjugé métaphysique' (p. 4), with no spontaneous generation and a specific organism for each fermentation and disease (S1). No miracle, petition or exemption in his account of nature. Named alternative: 3, since he says that by showing that life 'ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière' he served 'la doctrine spiritualiste' (pp. 3–4), which may hold life apart from the forces governing matter; the claim is hedged ('jusqu'à ce jour') and names no exception to law."
+      how_known: "Britannica's account of his working science (P6), with his speech in support. His own words about nature (pp. 3–4) lean to 3, and the p. 4 passage that supports 4 is about method (how to know), not how nature works, so the speech speaks to the score only indirectly. Scored at 0.5 with basis scholarly_reconstruction, as B from working science is for Bohr, Chandrasekhar and Dirac (§3 same pattern; lens audit batch 3, #84; was written_profession 0.7)."
+      rationale: "Scored on his account of nature (P6). His science ran on strict experimental control: the method 'qui a pour guide et pour contrôle incessant l'observation et l'expérience, dégagées [...] de tout préjugé métaphysique' (p. 4), with no spontaneous generation and a specific organism for each fermentation and disease (S1). No miracle, petition or exemption in his account of nature. Scored 3 under P35, not on his speech: B rests on his working science. His own words lean the same way: he says that by showing that life 'ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière' he served 'la doctrine spiritualiste' (pp. 3–4), which may hold life apart from the forces governing matter; the claim is hedged ('jusqu'à ce jour') and names no exception to law. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or reward and punishment; the soul's 'hautes préoccupations' (p. 20) are named but not described."}
     D_authority:
       value: 2
@@ -298,7 +299,7 @@ sources:
 
 ## Summary
 
-Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 4 (0.5), D 2 (0.7); A and E below threshold, C UNKNOWN; mid_basin below threshold.
+Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 3 (0.5, alternative 4, P35), D 2 (0.7); A and E below threshold, C UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -314,7 +315,7 @@ Son of a tanner who had been a decorated sergeant major; an average pupil gifted
 
 ## Adult working worldview
 
-By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 4 (0.5), D 2 (0.7); A and E below threshold, C UNKNOWN.
+By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 3 (0.5, alternative 4, P35), D 2 (0.7); A and E below threshold, C UNKNOWN.
 
 ## Heritage (context only)
 

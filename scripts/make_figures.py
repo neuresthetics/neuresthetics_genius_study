@@ -170,7 +170,9 @@ def fig_people_cause_locus(out):
     # The one highlighted region: top right.
     ax.add_patch(Rectangle((2.5, 2.5), 2, 2, facecolor=focus, alpha=0.16, lw=0, zorder=0))
     ax.add_patch(Rectangle((2.5, 2.5), 2, 2, fill=False, edgecolor=focus, lw=2.5, zorder=1))
-    ax.text(2.56, 4.44, "The focus:\nGod as nature's order,\nnature fully lawful", ha="left", va="top",
+    # The label goes in the emptiest cell of the box (top left first), so it never covers a name.
+    lb, la = min([(3, 4), (3, 3), (4, 3), (4, 4)], key=lambda c: len(cells.get(c, [])))
+    ax.text(lb - 0.44, la + 0.44, "The focus:\nGod as nature's order,\nnature fully lawful", ha="left", va="top",
             fontsize=13, fontweight="bold", color="#A0522D", zorder=5)
 
     # Cells: a small grid of dots, surname to the right of each dot.

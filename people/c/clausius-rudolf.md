@@ -7,12 +7,13 @@ record:
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and MacTutor. No writing of his on religion was found; his father was a pastor and school principal (MacTutor). primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #124 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (upbringing by a minister father is never a code, §1; CODING_GUIDE §5.3), and the primary_system note updated. #131–132 (minor): birth date and place and death date and place 0.7 → 1.0, now citing MacTutor's Quick Info as well as Britannica (two independent sources agree). No worldview value changed. Decisions P12/P13 recheck: first_lasting_contribution_year 1850 unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1850–1865 unchanged; worldview.working_years 1844–1888 → 1850–1865, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: clausius-rudolf
@@ -97,12 +98,12 @@ worldview:
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "No statement placing or denying God was read."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "paragraphs 2–3"}, {source: S2, locator: "Biography (1850 paper)"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi and Dirac). No statement of his own about miracles read, so 0.5."
-      rationale: "Scored on his account of nature (P6). His second law ('Heat cannot of itself pass from a colder to a hotter body', S1) and the mechanical theory of heat are general laws with no special cases; no miracle, petition or exemption in anything read."
+      rationale: "Scored on his account of nature (P6). His second law ('Heat cannot of itself pass from a colder to a hotter body', S1) and the mechanical theory of heat are general laws with no special cases; no miracle, petition or exemption in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward in the sources read."}
     D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
@@ -188,7 +189,7 @@ sources:
 
 ## Summary
 
-Rudolf Clausius (1822–1888), German mathematical physicist, stated the second law of thermodynamics (1850) and developed the concept of entropy [S1; S2]. No writing of his on religion was found; his father was a pastor and school principal [S2]. primary_system UNKNOWN. B 4 at 0.5 from the working science; A, C, D UNKNOWN (nothing in the sources read); E below threshold; mid_basin UNKNOWN.
+Rudolf Clausius (1822–1888), German mathematical physicist, stated the second law of thermodynamics (1850) and developed the concept of entropy [S1; S2]. No writing of his on religion was found; his father was a pastor and school principal [S2]. primary_system UNKNOWN. B 3 at 0.5 from the working science (alternative 4, P35); A, C, D UNKNOWN (nothing in the sources read); E below threshold; mid_basin UNKNOWN.
 
 ## Life and work
 

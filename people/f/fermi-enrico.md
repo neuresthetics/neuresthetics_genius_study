@@ -7,7 +7,7 @@ record:
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1926–1942 unchanged; worldview.working_years 1921–1954 → 1926–1942, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: fermi-enrico
@@ -104,12 +105,12 @@ worldview:
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "No statement about God or the divine in the sources read.", note: "Gap: Laura Fermi 1954; Segrè 1970."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S3, locator: "paragraphs 3–7"}, {source: S2, locator: "Biography"}]
       how_known: "Coder's reading of his working science, as P6 directs for a scientist. No statement of his own about miracles or exceptions, so 0.5."
-      rationale: "Scored on his account of nature (P6), which for a scientist is the working science. Statistical laws for fermions, beta decay, neutron reactions and the chain reaction all treat nature as governed by law with no special cases. No miracle, petition or exemption appears anywhere in the sources read."
+      rationale: "Scored on his account of nature (P6), which for a scientist is the working science. Statistical laws for fermions, beta decay, neutron reactions and the chain reaction all treat nature as governed by law with no special cases. No miracle, petition or exemption appears anywhere in the sources read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on reward, punishment or afterlife in the sources read."}
     D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "His practice is wholly empirical, but D asks about revelation versus observation, which needs a statement."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). His physics applies the same laws everywhere, but whether his account of events keeps any exception for a group is not addressed in any source read, so below 0.5.", note: "Not scored from the working science alone, unlike B, because P7 asks a second question (in-group exceptions) that needs a statement."}
@@ -205,7 +206,7 @@ sources:
 
 ## Summary
 
-Enrico Fermi (1901–1954), Italian-born physicist, developed Fermi statistics (1926), the theory of beta decay and neutron-induced radioactivity (1934), and directed the first controlled chain reaction (1942) [S1, opening paragraph; S3, paragraphs 3–7]. Nobel Prize 1938 [S2, Biography]. No statement of his on religion was found in accessible sources, so his system and the A, C and D axes are UNKNOWN; B_cause is 4 at 0.5 from his working science.
+Enrico Fermi (1901–1954), Italian-born physicist, developed Fermi statistics (1926), the theory of beta decay and neutron-induced radioactivity (1934), and directed the first controlled chain reaction (1942) [S1, opening paragraph; S3, paragraphs 3–7]. Nobel Prize 1938 [S2, Biography]. No statement of his on religion was found in accessible sources, so his system and the A, C and D axes are UNKNOWN; B_cause is 3 at 0.5 from his working science (alternative 4, P35).
 
 ## Life and work
 
@@ -221,7 +222,7 @@ His household was not religious, which upset his father's devout Catholic relati
 
 ## Adult working worldview
 
-No writing or reported speech on religion was found in the sources read [S1; S2; S3]. The common report that he was agnostic traces to Laura Fermi's 1954 memoir, which could not be read. primary_system UNKNOWN (AGNOS candidate, stub). B 4 at 0.5 from the working science; A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
+No writing or reported speech on religion was found in the sources read [S1; S2; S3]. The common report that he was agnostic traces to Laura Fermi's 1954 memoir, which could not be read. primary_system UNKNOWN (AGNOS candidate, stub). B 3 at 0.5 from the working science (alternative 4, P35); A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
 
 ## Heritage (context only)
 

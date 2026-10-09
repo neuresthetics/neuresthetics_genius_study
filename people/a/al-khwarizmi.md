@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from the Author's Preface of the Algebra in Rosen's 1831 translation (archive.org scan, pp. 1–4), with Rosen's own doubt about the preface noted. Works dated only 'after 813', so first-lasting year, span and age UNKNOWN (P12). primary_system ISLAM 0.7 (written_profession; alternative BELOW_THRESHOLD as a conventional formula); A_locus 0 (0.7); C_ledger 1 (0.5); B BELOW_THRESHOLD (coder's call); D BELOW_THRESHOLD; E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #11 A_locus 0 certainty 0.7 → 0.5 (the p. 4 line follows Q 9:129). #12 C_ledger 1 at 0.5 re-anchored on pp. 3–4 (mercy through others' prayers), with p. 1 marked contested (Notes, pp. 175–176); p. 3–4 statement added. Statements: verified_against 'primary facsimile' → 'scholarly edition'; copyist's frame and the 1342 manuscript date added to the p. 1 context. mid_basin unchanged (BELOW_THRESHOLD)."}
 
 identity:
   id: al-khwarizmi
@@ -115,38 +116,46 @@ worldview:
     A_locus:
       value: 0
       basis: written_profession
-      certainty: 0.7
+      certainty: 0.5
       cites: [{source: S3, locator: "Author's Preface, pp. 1–2, 4"}]
-      how_known: "His own published preface; a named alternative, so 0.7."
+      how_known: "His own preface, but the p. 4 line is the stock Qur'anic closing of Q 9:129 ('in Him I put my trust, and He is the Lord of the mighty Throne'), so the formula, not his own account of locus, carries the score (§6: a code does not set the axes); held at 0.5 (lens audit of batch C, #11; coder's call, certainty only)."
       rationale: "Draft judgment (one line): God is the transcendent Lord who sends prophets and grants mercy: 'My confidence rests with God, in this as in every thing, and in Him I put my trust. He is the Lord of the Sublime Throne' (p. 4). Named alternative: 1, since a short devotional formula need not express a full doctrine of transcendence."
     B_cause: {value: BELOW_THRESHOLD, note: "He counts as a scientist under P30 (the zij is a listed lasting result on the motions of sun, moon and planets), so B could come from working science at 0.5. But MacTutor lists 'astrological tables' among the zij's topics and a political history 'containing horoscopes', so his working science covers only part of what B scores (P19). Draft judgment (one line): coder's call, not scored; the alternative is B 3 at 0.5 from working science.", how_known: "BELOW_THRESHOLD under P19 (coder's call, CODING_GUIDE §8)."}
     C_ledger:
       value: 1
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "Author's Preface, p. 1; Notes, p. 175"}]
-      how_known: "His own preface, but Rosen says he is 'very doubtful whether I have correctly understood the author's meaning in several passages of his preface' (Notes, p. 175), naming exactly these lines, so 0.5."
-      rationale: "Draft judgment (one line): God's bounty goes 'towards those who deserve it by their virtuous acts', which God has 'prescribed to his adoring creatures'; by them we 'render ourselves worthy of the continuance (of his mercy)' (p. 1), and the author hopes the learned will obtain for him 'through their prayers the excellence of the Divine mercy' (p. 4): reward granted by God, and intercession. Named alternative: 0."
+      cites: [{source: S3, locator: "Author's Preface, pp. 3–4"}, {source: S3, locator: "Author's Preface, p. 1 (contested); Notes, pp. 175–176"}]
+      how_known: "Re-anchored on p. 4 (lens audit of batch C, #12): the hope that the learned will obtain for him 'through their prayers the excellence of the Divine mercy' (pp. 3–4), which Rosen's Notes do not single out. The p. 1 line on 'those who deserve it by their virtuous acts' is contested: Rosen is 'very doubtful' of his reading there (Notes, p. 175) and prints Shakespear's rendering, in which the praiseworthy deeds are God's and no one's merit is named, as 'evidently easier than that adopted by myself' (p. 176). One formulaic line, so 0.5."
+      rationale: "Draft judgment (one line): divine mercy is granted to a person, and others' prayers can obtain it for him (pp. 3–4): a personal dispensation of mercy with intercession, the ledger's interventionist features, limited to mercy rather than judgment, so 1 (coder's call: p. 4 carries C at 0.5). Named alternatives: 0; BELOW_THRESHOLD if the p. 4 line is read as a dedicatory formula only."
     D_authority: {value: BELOW_THRESHOLD, note: "The preface affirms prophecy ('He sent Mohammed ... with the mission of a prophet ... when the true way of life was sought for in vain', p. 1) but says nothing on revelation against reason or observation. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
     E_scope: {value: UNKNOWN, how_known: "Nothing in the preface or the sources read on the world's order (P7, P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "B_cause is BELOW_THRESHOLD, so the P4 test cannot be applied (§6, P19). A_locus 0 alone would not meet it."}
   statements:
     - text: "Praised be God for his bounty towards those who deserve it by their virtuous acts: in performing which, as by him prescribed to his adoring creatures, we express our thanks, and render ourselves worthy of the continuance (of his mercy), and preserve ourselves from change: acknowledging his might, bending before his power, and revering his greatness ! He sent Mohammed (on whom may the blessing of God repose !) with the mission of a prophet, long after any messenger from above had appeared, when justice had fallen into neglect, and when the true way of life was sought for in vain."
       cites: [{source: S3, locator: "Author's Preface, p. 1"}]
-      context: "Opening of the Algebra, dedicated to the caliph al-Ma'mun. Rosen doubts his reading of these lines (Notes, p. 175) and prints Shakespear's alternative rendering there."
+      context: "Opening of the Algebra, dedicated to the caliph al-Ma'mun. The page opens with the copyist's frame ('In the Name of God, gracious and merciful! This work was written by Mohammed ben Musa, of Khowarezm. He commences it thus:'); Rosen's text is the single manuscript Bodleian Hunt. 214, transcribed A.H. 743 / A.D. 1342 (p. xiii). Rosen doubts his reading of lines 2–5 (the bounty and virtuous-acts clause; Notes, pp. 175–176) and prints Shakespear's alternative rendering there; the lines on Mohammed are not among those he doubts."
       axes: [A_locus, C_ledger, D_authority]
       kind: "written profession (public)"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-08
-      note: "Facsimile of Rosen's printed translation (1831), not of the Arabic; translator's doubt noted."
+      note: "Rosen's edited translation (1831), read on the archive.org scan, not the Arabic; translator's doubt noted. C_ledger rests on pp. 3–4, not on this passage (contested)."
     - text: "My confidence rests with God, in this as in every thing, and in Him I put my trust. He is the Lord of the Sublime Throne. May His blessing descend upon all the prophets and heavenly messengers !"
       cites: [{source: S3, locator: "Author's Preface, p. 4"}]
       context: "Close of the preface."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-08
-      note: "Rosen's translation."
+      note: "Rosen's translation. The wording follows the stock closing of Q 9:129."
+    - text: "relying on the goodness of my intention therein, and hoping that the learned will reward it, by obtaining (for me) through their prayers the excellence of the Divine mercy: in requital of which, may the choicest blessings and the abundant bounty of God be theirs !"
+      cites: [{source: S3, locator: "Author's Preface, pp. 3–4"}]
+      context: "End of the dedication, just before the closing line of the preface; the page turns inside 'good-ness'."
+      axes: [C_ledger]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-08
+      note: "Rosen's translation (1831), checked on the archive.org OCR text; not singled out in the Notes."
   changes_over_life: []
   coder_notes: "All worldview evidence is one formulaic preface in an 1831 English translation from a manuscript that Rosen says lacks most diacritical points; he is 'very doubtful' about several passages (Notes, p. 175). Coder's calls (CODING_GUIDE §8): B_cause BELOW_THRESHOLD although he counts as a scientist under P30, because his astronomy includes astrological tables and horoscopes (S1), so the working science covers only part of the axis; the conservative option is taken. Lawful-nature evidence for a mathematician is not taken from the Algebra itself (its subject is calculation, not the physical world). No LIO-type views found."
 
@@ -240,7 +249,7 @@ sources:
 
 ## Summary
 
-Al-Khwarizmi (c. 780–c. 850), scholar at the House of Wisdom in Baghdad under al-Ma'mun, wrote the first systematic algebra, a treatise that carried Hindu-Arabic numerals to Europe, and astronomical tables [S1; S2]. The only worldview text is the pious preface of the Algebra [S3, pp. 1–4]. Draft: ISLAM 0.7; A 0 (0.7); C 1 (0.5); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD.
+Al-Khwarizmi (c. 780–c. 850), scholar at the House of Wisdom in Baghdad under al-Ma'mun, wrote the first systematic algebra, a treatise that carried Hindu-Arabic numerals to Europe, and astronomical tables [S1; S2]. The only worldview text is the pious preface of the Algebra [S3, pp. 1–4]. Draft: ISLAM 0.7; A 0 (0.5); C 1 (0.5); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD.
 
 ## Life and work
 

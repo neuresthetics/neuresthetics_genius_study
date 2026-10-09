@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from SEP 'al-Farabi' (Druart 2024) and Britannica (editors); worldview from SEP 'al-Farabi's Philosophy of Society and Religion' (Germann 2021), a scholarly reconstruction; his own words only as SEP quotes them (secondary quotation, primary check pending). Works undated, so first-lasting year, span and age UNKNOWN (P12). primary_system CLASS_THEISM 0.5 (Straussian reading named); A 1, B 4, C 4, D 4, E 4, all 0.5 (scholarly_reconstruction); mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #7 B_cause 4 → 3 at 0.5, alternative 4, citing Germann §3.1 (free will set against acting by nature) under the B 3 anchor and P36 (ruling R2, v8's pick). mid_basin unchanged (BELOW_THRESHOLD)."}
 
 identity:
   id: al-farabi
@@ -139,12 +140,12 @@ worldview:
       how_known: "Scholarly reconstruction, so at most 0.5."
       rationale: "Draft judgment (one line): the first cause is above and prior to the cosmos, which proceeds from it by emanation through intermediate principles ('intelligence, soul, and matter', S2 §4.1); God is not in nature but its source. Named alternative: 2, since emanation makes the cosmos a continuous outflow of the first cause rather than a separate creation."
     B_cause:
-      value: 4
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S2, locator: "§2.1; §3.1; §4.1"}]
       how_known: "Scholarly reconstruction of his account of nature (P16), so at most 0.5."
-      rationale: "Draft judgment (one line): Germann: human beings, like every sublunary being, 'are subject to the natural laws determining corporeal substances' (§2.1); each part of the cosmos has a function that keeps it 'running smoothly, without interruptions and disturbances' (§3.1); 'the things constituting reality, their behavior, and the underlying natural laws' are effects of principles 'ultimately all founded in a single, first cause' (§4.1). No miracle or intervention appears in the reconstruction. Named alternative: 3, since the active intellect's influence on the human intellect (§2.1) is a non-bodily cause, though a regular one."
+      rationale: "Draft judgment (one line): Germann: human beings, like every sublunary being, 'are subject to the natural laws determining corporeal substances' (§2.1); 'the things constituting reality, their behavior, and the underlying natural laws' are effects of principles 'ultimately all founded in a single, first cause' (§4.1). One stated, limited exception: 'While everything else executes its function by nature, human beings, equipped with reason and free will, must choose to do so' (§3.1), a free will set against acting by nature, which gives B 3 as the value (CODING_GUIDE §6, P30 #14; lens audit of batch C, #7). Under P36 a scholar's reconstruction of free will triggers this rule as the person's own statement would, capped at 0.5. Named alternative: 4, if the reconstruction's free will is read as itself natural."
     C_ledger:
       value: 4
       basis: scholarly_reconstruction
@@ -166,7 +167,7 @@ worldview:
       cites: [{source: S2, locator: "§2.1; §4.1"}]
       how_known: "Scholarly reconstruction, so at most 0.5."
       rationale: "Scored on the world's order (P7). Germann: 'there is one objective reality and, epistemologically, one objectively true account of it' (§4.1), and humans are subject to natural laws 'just like every other inhabitant of the sublunary world' (§2.1). One order for all; no favoured community in this-world events. Named alternative: 3, since the supralunary realm has its own (also regular) order."
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 1 and B_cause 4 are both scored only at 0.5 (scholarly_reconstruction), so the P4 test is not met (§6, P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 1 and B_cause 3 are both scored only at 0.5 (scholarly_reconstruction), so the P4 test is not met (§6, P19)."}
   statements:
     - text: "Religion is opinions and actions, determined and restricted with stipulations and prescribed for a community by their first ruler, who seeks to obtain through their practicing it a specific purpose with respect to them or by means of them. …. If the first ruler is excellent and his rulership truly excellent, then in what he prescribes he seeks only to obtain, for himself and for everyone under his rulership, the ultimate happiness that is truly happiness; and that religion will be the excellent religion."
       cites: [{source: S2, locator: "§4.1 (quoting Book of Religion 1: 93, 'slightly modified')"}]
@@ -269,7 +270,7 @@ sources:
 
 ## Summary
 
-Al-Farabi (c. 870/878–950/951), 'the second master' after Aristotle, worked in Baghdad and Syria on logic, political philosophy and music [S1; S3]. On the majority scholarly reading he held a single first cause from which the cosmos proceeds by emanation, a nature governed by natural laws, a purely intellectual afterlife, and philosophy above religion [S1, §6; S2]. Draft: CLASS_THEISM 0.5; A 1, B 4, C 4, D 4, E 4, all 0.5 (scholarly reconstruction); mid_basin BELOW_THRESHOLD.
+Al-Farabi (c. 870/878–950/951), 'the second master' after Aristotle, worked in Baghdad and Syria on logic, political philosophy and music [S1; S3]. On the majority scholarly reading he held a single first cause from which the cosmos proceeds by emanation, a nature governed by natural laws, a purely intellectual afterlife, and philosophy above religion [S1, §6; S2]. Draft: CLASS_THEISM 0.5; A 1, B 3, C 4, D 4, E 4, all 0.5 (scholarly reconstruction); mid_basin BELOW_THRESHOLD.
 
 ## Life and work
 

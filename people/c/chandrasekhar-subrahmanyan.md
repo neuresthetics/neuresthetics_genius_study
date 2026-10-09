@@ -7,7 +7,7 @@ record:
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica, MacTutor, his Nobel autobiography (Les Prix Nobel 1983) and Parker's NAS Biographical Memoir (1997). Worldview from his own words in the AIP interview of 6 October 1987 (Krisciunas): 'he knew I was an atheist'. primary_system ATHE at 0.5 (one oral self-description; no basis type fits a recorded interview, so capped by analogy with the single-letter rule; flagged). A 4 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1930–1983 unchanged; worldview.working_years 1929–1995 → 1930–1983, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: chandrasekhar-subrahmanyan
@@ -129,16 +130,16 @@ worldview:
       how_known: "(interview) Read from his self-description as an atheist in one paraphrase-only interview (S5). P8 does not let such an interview score an axis on its own, so not recorded_interview (lens audit batch 3, #20); kept at 0.5, the same level as primary_system, as before P8. The coder's step from a passing 'atheist' label to the LIO pole is itself indirect, which also points to 0.5; the named alternative below would cap it at 0.7 in any case (CODING_GUIDE §3)."
       rationale: "No transcendent person: he denied any god, so the interventionist pole is absent and whatever order there is lies in the world (LIO pole). Alternative named: the axis may be read as not applying to someone who denies the divine altogether, which would make it BELOW_THRESHOLD as for Fermi, Curie and Bohr, who made no such denial in what was read."
     B_cause:
-      value: 4
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S4, locator: "Copenhagen paragraph"}, {source: S5, locator: "'simple is the seal of the true' passage"}]
       how_known: "Scored on his working science (P6), mainly from Parker's account (scholarly reconstruction, 0.5). The interview remark (S5) is paraphrase-only and speaks to beauty and truth, not to law against exception, so it only supports the score (P8). Unchanged by the batch 3 audit."
-      rationale: "Scored on his account of nature (P6). His work develops 'the implications of the basic physical laws of nature' (Parker, S4) with no special cases: a white dwarf above the limit must collapse whatever the expectations, against Eddington's insistence that 'stars do not behave in that way' (S4). In 1987 he gave the Kerr solution as an example of a search for abstract beauty matched exactly in nature (S5, paraphrased). No miracle, petition or exemption appears."
+      rationale: "Scored on his account of nature (P6). His work develops 'the implications of the basic physical laws of nature' (Parker, S4) with no special cases: a white dwarf above the limit must collapse whatever the expectations, against Eddington's insistence that 'stars do not behave in that way' (S4). In 1987 he gave the Kerr solution as an example of a search for abstract beauty matched exactly in nature (S5, paraphrased). No miracle, petition or exemption appears. The 1987 interview remark is paraphrase-only and speaks to beauty, not to law against exception, so B rests on his working science as Parker reconstructs it and P35 applies. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing on judgement, afterlife, karma or moral reckoning in S1–S5. His atheism rules out a divine judge, but not every ledger (for example karma), so C is not inferred from it.", note: "Gap: Wali (1991, 1997)."}
     D_authority: {value: UNKNOWN, how_known: "No statement on revelation or scripture in S1–S5.", note: "A widely quoted remark that he could not accept the Bhagavad Gita as divine because it 'was written by man' comes through secondary web pages citing Wali (1997); not read, so not used."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus (4) and B_cause (4) are both only at 0.5, under the test's 0.7 bar (CODING_GUIDE §6). If A reached 0.7 from a quotable document, the test would give false (A ≥ 3), with certainty set by A alone (decision P10).", note: "Was false at 0.5 from P8 (2026-10-02) until the lens audit batch 3 fix the same day."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus (4) and B_cause (3) are both only at 0.5, under the test's 0.7 bar (CODING_GUIDE §6). If A reached 0.7 from a quotable document, the test would give false (A ≥ 3), with certainty set by A alone (decision P10).", note: "Was false at 0.5 from P8 (2026-10-02) until the lens audit batch 3 fix the same day."}
   statements: []
   changes_over_life: []
   coder_notes: "ATHE, AGNOS and HINDU are stub system files (flag). Basis: decision P8 (2026-10-02) added basis recorded_interview (ceiling 0.7) for the person's own words in a recorded interview, but its last sentence says an interview that may only be paraphrased (an AIP no-quotation notice) cannot score an axis or code on its own. S5 carries that notice (header of the transcript: no quotation, reproduction or redistribution, in whole or in part, without AIP's written permission), and no permission is recorded, so S5 is treated as paraphrase-only, as Bohr's S7 is (lens audit batch 3, #19–#20). The two verbatim statements it once supplied (his remark on Struve and himself, and the 'simple is the seal of the true' answer) were removed; both can be read at the S5 locators. statements is empty after research: no quotable written or published statement of his on religion was read. nominal_affiliations and changes_over_life are empty after research: no adult membership or practice, and no dated change of belief, is recorded in S1–S5."
@@ -257,7 +258,7 @@ sources:
 
 ## Summary
 
-Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in a 1987 interview, in passing, that Otto Struve knew he was an atheist [S5, paraphrased]. ATHE at 0.5 (interview; one paraphrase-only interview, decision P8); A 4 at 0.5 (interview) and B 4 at 0.5; C and E below threshold, D UNKNOWN; mid_basin below threshold.
+Subrahmanyan Chandrasekhar (1910–1995), Indian-born American astrophysicist, found the mass limit for white dwarfs on his 1930 voyage to England and won the 1983 Nobel Prize in Physics [S1, opening; paragraph 3]. Born into a "free-thinking, Tamil-speaking Brahmin family" [S4, opening sentence], he said in a 1987 interview, in passing, that Otto Struve knew he was an atheist [S5, paraphrased]. ATHE at 0.5 (interview; one paraphrase-only interview, decision P8); A 4 at 0.5 (interview) and B 3 at 0.5 (alternative 4, P35); C and E below threshold, D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -273,7 +274,7 @@ His parents taught him at home until he was about twelve [S3, paragraph 2]. Alge
 
 ## Adult working worldview
 
-The only statement of his own read is from a 1987 AIP interview, which AIP's notice lets the record paraphrase but not quote: asked whether Struve was religious, he said that Struve knew he was an atheist and never raised the subject with him [S5]. In the same interview he called the maxim that the simple is the seal of the true a description of the fundamental truths of science [S5]. Under decision P8 a paraphrase-only interview cannot score an axis or code on its own, so the code and A stay at 0.5. Scores: A 4 (0.5, interview), B 4 (0.5, mainly Parker's reconstruction); C and E below threshold, D UNKNOWN.
+The only statement of his own read is from a 1987 AIP interview, which AIP's notice lets the record paraphrase but not quote: asked whether Struve was religious, he said that Struve knew he was an atheist and never raised the subject with him [S5]. In the same interview he called the maxim that the simple is the seal of the true a description of the fundamental truths of science [S5]. Under decision P8 a paraphrase-only interview cannot score an axis or code on its own, so the code and A stay at 0.5. Scores: A 4 (0.5, interview), B 3 (0.5, mainly Parker's reconstruction; alternative 4, P35); C and E below threshold, D UNKNOWN.
 
 ## Heritage (context only)
 

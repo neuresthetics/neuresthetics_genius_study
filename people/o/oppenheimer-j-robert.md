@@ -7,12 +7,13 @@ record:
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Rouzé) and the Institute for Advanced Study's page. Worldview: no statement of his on God or religion was read in a checkable source. His Los Alamos farewell speech (2 November 1945, Atomic Heritage Foundation excerpts) states a faith in the value of science; his 1965 televised interview (interview) recalls the Bhagavad Gita line at Trinity. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub; HINDU rejected). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. His AIP oral-history interviews carry quotation limits and were not used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #164/#165 (run 2): '1965 interview' reworded as an interview recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965; new sources S6 (Paley Center catalogue record T79:0489: NBC, 5 January 1965, producer Fred Freed) and S7 (Wikiquote, a second pointer to the programme); statement date '1965' → '1965-01-05' with the recording date given as unknown (c. 1964); S4 citation, HINDU candidate reason, coder notes and body updated. The words of #165 stay as they are: they follow the audio, with no 'he' before 'takes on' (Wikiquote's 'he' is noted). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1927–1945 unchanged; worldview.working_years 1925–1967 → 1927–1945, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: oppenheimer-j-robert
@@ -97,12 +98,12 @@ worldview:
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "No statement placing or denying God was read."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "'Early life and education', paragraph 3"}, {source: S3, locator: "speech, 'organic necessity' paragraph"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi and Dirac). No statement of his own about miracles read, so 0.5."
-      rationale: "Scored on his account of nature (P6). His physics (energy processes of subatomic particles, neutron stars and black holes, S1) is lawful quantum and relativistic theory, and he describes the scientist's belief 'that it is good to find out how the world works' (S3). No miracle, petition or exemption in anything read."
+      rationale: "Scored on his account of nature (P6). His physics (energy processes of subatomic particles, neutron stars and black holes, S1) is lawful quantum and relativistic theory, and he describes the scientist's belief 'that it is good to find out how the world works' (S3). No miracle, petition or exemption in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
     D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "The farewell speech's 'faith' in science (S3) is about the value of knowledge, not observation against revelation."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
@@ -246,7 +247,7 @@ sources:
 
 ## Summary
 
-J. Robert Oppenheimer (1904–1967), American theoretical physicist, worked with Born on molecular structure, did early work on neutron stars and black holes, directed Los Alamos (1943–45) and then the Institute for Advanced Study (1947–66) [S1; S2]. No statement of his on God or religion was read in a checkable source. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub). B 4 at 0.5 from the working science; A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
+J. Robert Oppenheimer (1904–1967), American theoretical physicist, worked with Born on molecular structure, did early work on neutron stars and black holes, directed Los Alamos (1943–45) and then the Institute for Advanced Study (1947–66) [S1; S2]. No statement of his on God or religion was read in a checkable source. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub). B 3 at 0.5 from the working science (alternative 4, P35); A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
 
 ## Life and work
 

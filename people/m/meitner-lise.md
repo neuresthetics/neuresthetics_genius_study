@@ -7,7 +7,7 @@ record:
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica, the Jewish Women's Archive encyclopedia (Rife) and a 2024 Society of Catholic Scientists article (Moritz), which quotes her letters through Schweighofer (2013) and Sime (1997). Baptized Protestant (Lutheran) in 1908; no own statement of Christian doctrine found. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 and D 3 at 0.5; A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1918–1939 unchanged; worldview.working_years 1906–1960 → 1918–1939, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: meitner-lise
@@ -104,12 +105,12 @@ worldview:
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement about God read.", note: "Gap: Sime 1997; Schweighofer 2013."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "paragraphs 2–3"}, {source: S3, locator: "note 31 (1953 lecture)"}]
       how_known: "Coder's reading of her working science (P6), with one translated lecture passage on 'the natural order of things', so 0.5."
-      rationale: "Scored on her account of nature (P6). Her working physics (radioactive decay, beta spectra, fission from E = mc² and nuclear forces) admits no special cases, and her 1953 lecture speaks of 'the natural order of things'. Her phrase 'the miracle of life' (1942 letter) is wonder, not an exemption from law. No miracle or petition appears."
+      rationale: "Scored on her account of nature (P6). Her working physics (radioactive decay, beta spectra, fission from E = mc² and nuclear forces) admits no special cases, and her 1953 lecture speaks of 'the natural order of things'. Her phrase 'the miracle of life' (1942 letter) is wonder, not an exemption from law. No miracle or petition appears. Coder's call (CODING_GUIDE §8): her phrase 'the natural order of things' (1953) speaks of order but says nothing on exceptions, so B still rests on her working science and P35 applies. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement or afterlife read."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Her own words read (1953 lecture, 1955 letter) praise science's 'truth and objectivity' and call awe at life religious, but say nothing about revelation, scripture or church authority. The only evidence on the revelation side is S3's paraphrase that she 'acknowledged that some bible verses accompanied her throughout her life', and S3's own reading that she 'always felt uncomfortable when confronted with dogmatic concepts'. Axes are scored from the person's own words (§6), so below 0.5.", note: "Was 3 at 0.5 (lens audit, batch 2, finding #95). Same treatment as Fermi and Curie. Gap: Sime 1996; Schweighofer 2013, for her own words on the Bible."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Her physics is universal, but nothing read addresses favour for a group in events.", note: "Same treatment as Fermi: not scored from working science alone."}
@@ -242,7 +243,7 @@ sources:
 
 ## Summary
 
-Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraphs 3, 7]. Her recorded words speak of awe at life and the natural order but not of doctrine, so her system is below threshold; B 4 at 0.5; C UNKNOWN, the other axes below threshold.
+Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraphs 3, 7]. Her recorded words speak of awe at life and the natural order but not of doctrine, so her system is below threshold; B 3 at 0.5 (alternative 4, P35); C UNKNOWN, the other axes below threshold.
 
 ## Life and work
 
@@ -258,7 +259,7 @@ Her parents "were assimilated Viennese Jews, who did not practice Judaism" [S2, 
 
 ## Adult working worldview
 
-A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she spoke of "the deep awe and joy that the natural order of things brings to the true scientist" [S5; S3, note 31]. Scores: B 4 (0.5); A, D, E below threshold, C UNKNOWN; mid_basin below threshold.
+A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she spoke of "the deep awe and joy that the natural order of things brings to the true scientist" [S5; S3, note 31]. Scores: B 3 (0.5, alternative 4, P35); A, D, E below threshold, C UNKNOWN; mid_basin below threshold.
 
 ## Heritage (context only)
 

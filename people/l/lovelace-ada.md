@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from her letter to Faraday of 16 October 1844 (Epsilon transcription of IEE MS SC 2) and her letter to Andrew Crosse of about 16 November 1844 (MacTutor transcription, secondary quotation). Not a scientist under P30/P33 (the Notes describe a machine). primary_system CHRIST 0.5 (consistent_private_letters, held below the ceiling; alternative BELOW_THRESHOLD, eclectic); A_locus 1 (0.5); B_cause 4 (0.5); C UNKNOWN; D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #3 A_locus 1 → 0 at 0.5, alternative 1 (coder's call: the 'ONE' and 'naturally related and interconnected' wording is about the unity of the works, not a limiting feature of God's transcendence). Quote hygiene: stray transcription spaces removed; S3 locators corrected to paragraphs 5 and 6 (were 'paragraph 2'). The 'secondary quotation' reason for CHRIST at 0.5 dropped; the hedge alone holds it at 0.5 (P29). mid_basin unchanged (BELOW_THRESHOLD)."}
 
 identity:
   id: lovelace-ada
@@ -90,7 +91,7 @@ worldview:
     basis: consistent_private_letters
     certainty: 0.5
     cites: [{source: S3, locator: "letter text ('I am myself a Unitarian Christian; as far as regards some of their views of Christ that is')"}, {source: S4, locator: "letter text ('a biblical and scriptural truth too')"}]
-    how_known: "Her own profession in a private letter: 'I am myself a Unitarian Christian; as far as regards some of their views of Christ that is. But in truth, I cannot be said to be anything but myself' (S3). The second letter (S4) appeals to 'a biblical and scriptural truth' but is a secondary quotation (P26). Held at 0.5, below the 0.7 ceiling: one of the two documents is a secondary quotation, and she qualifies the label herself."
+    how_known: "Her own profession in a private letter: 'I am myself a Unitarian Christian; as far as regards some of their views of Christ that is. But in truth, I cannot be said to be anything but myself' (S3). The second letter (S4) appeals to 'a biblical and scriptural truth' but is a secondary quotation (P26). Held at 0.5, below the 0.7 ceiling, because she qualifies the label herself (a hedged self-report, P29)."
     rationale: "Draft judgment (one line): CHRIST at 0.5 on her own Unitarian self-description; the named alternative is BELOW_THRESHOLD as an eclectic ('Swedenborgian in feelings', 'slightly Roman Catholic', 'my alliance with the older Rosecrucians', S3) whom no single code fits."
   secondary_system: {value: UNKNOWN, how_known: "No second system; she published only the Notes, which contain no worldview."}
   candidate_codes_considered:
@@ -99,12 +100,12 @@ worldview:
     - {code: PANT, reason: "Considered for 'all the works and the feelings He has called into existence are ONE' (S4). Rejected: God 'has called into existence' and 'has chosen to create' the works (S3, S4), so God is not identified with nature.", cites: [{source: S4, locator: "letter text"}, {source: S3, locator: "letter text"}]}
   lio_axes:
     A_locus:
-      value: 1
+      value: 0
       basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S3, locator: "letter text"}, {source: S4, locator: "letter text"}]
-      how_known: "Two private letters, one a secondary quotation, so 0.5."
-      rationale: "Draft judgment (one line): God is the creator, distinct from the creation, who 'has chosen to create moral beings fitted to hold relations with each other, & with Him' (S3) and 'has called into existence' all the works (S4). The works are 'God's works as manifested on this earth' (S3). Named alternative: 2, since she stresses that all is 'ONE' and 'naturally related and interconnected' (S4), which could read as God working within nature."
+      cites: [{source: S3, locator: "letter text, paragraph 5"}, {source: S4, locator: "letter text"}]
+      how_known: "Two private letters of 1844; held at 0.5 because the reading of 0 against 1 is the coder's (lens audit of batch C, #3)."
+      rationale: "Draft judgment (one line): God is the creator, distinct from the creation, who 'has chosen to create moral beings fitted to hold relations with each other, & with Him' (S3) and 'has called into existence' all the works (S4): a personal creator outside his works, the Maxwell and Boyle pattern, so 0. Coder's call on the audit's question: her 'ONE' passage says that God is one and that the works He 'has called into existence are ONE', and 'all and everything is naturally related and interconnected' (S4); both describe the unity of the created works with each other, not God's presence in them, so neither names a limiting feature (as Newton's substantial omnipresence does) that would justify 1. Named alternative: 1, if the 'ONE' passage is read as joining God and his works."
     B_cause:
       value: 4
       basis: consistent_private_letters
@@ -115,25 +116,25 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "Nothing in the letters read on judgement, reward or an afterlife (P19)."}
     D_authority: {value: BELOW_THRESHOLD, note: "She calls the oneness of God's works 'a biblical and scriptural truth too' (S4) but treats science as the reading of God's works; nothing says which wins in a conflict. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). 'All and everything is naturally related and interconnected' (S4) and her being 'one particular case of the general formula' of God's moral beings (S3) point towards a universal order, but both are in one letter each and one is secondary. Draft judgment (one line): too indirect to score; the alternative is E 4 at 0.5.", how_known: "BELOW_THRESHOLD under P19."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is 1 and B_cause is 4, but both only at 0.5, so the P4 test is not met at the required 0.7 (§6, P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is 0 and B_cause is 4, but both only at 0.5, so the P4 test is not met at the required 0.7 (§6, P19)."}
   statements:
-    - text: "You will be kind enough to think of me simply as one of God's children . The mere accidents of my being an inhabitant of this particular planet, of this particular corner of it England, & of my wearing the female form , (with a human coronet to boot stuck at the apex), these constitute only one particular case of the general formula in which God has chosen to create moral beings fitted to hold relations with each other, & with Him ."
-      cites: [{source: S3, locator: "letter text, paragraph 2"}]
+    - text: "You will be kind enough to think of me simply as one of God's children. The mere accidents of my being an inhabitant of this particular planet, of this particular corner of it England, & of my wearing the female form, (with a human coronet to boot stuck at the apex), these constitute only one particular case of the general formula in which God has chosen to create moral beings fitted to hold relations with each other, & with Him."
+      cites: [{source: S3, locator: "letter text, paragraph 5"}]
       date: "1844-10-16"
       context: "Opening of her request to study Faraday's Researches with him."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "primary transcription"
       verified_on: 2026-10-08
-    - text: "I hope to die the High-Priestess of God's works as manifested on this earth, & to earn a right to bequeath to my posterity the following motto, \" Dei Naturaeque Interpres \"."
-      cites: [{source: S3, locator: "letter text, paragraph 2"}]
+    - text: "I hope to die the High-Priestess of God's works as manifested on this earth, & to earn a right to bequeath to my posterity the following motto, \"Dei Naturaeque Interpres\"."
+      cites: [{source: S3, locator: "letter text, paragraph 6"}]
       date: "1844-10-16"
       context: "The editors translate the motto as 'Interpreter of God and Nature' (note 2)."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "primary transcription"
       verified_on: 2026-10-08
-    - text: "I expect to bring the actions of the nervous & vital system within the domain of mathematical science, & possibly to discover some great vital law of molecular action , similar for the universe of life , to gravitation for the sidereal universe."
+    - text: "I expect to bring the actions of the nervous & vital system within the domain of mathematical science, & possibly to discover some great vital law of molecular action, similar for the universe of life, to gravitation for the sidereal universe."
       cites: [{source: S3, locator: "letter text, 'great scientific object' paragraph"}]
       date: "1844-10-16"
       context: "Her plan to study the nervous system and 'the more occult influences of nature' (the editors note: mesmerism)."
@@ -141,7 +142,7 @@ worldview:
       kind: "private letter"
       verified_against: "primary transcription"
       verified_on: 2026-10-08
-    - text: "I am myself a Unitarian Christian; as far as regards some of their views of Christ that is. But in truth, I cannot be said to be anything but myself . In some points I am Swedenborgian in feelings. Again in others I am slightly Roman Catholic; & I have also my alliance with the older Rosecrucians ."
+    - text: "I am myself a Unitarian Christian; as far as regards some of their views of Christ that is. But in truth, I cannot be said to be anything but myself. In some points I am Swedenborgian in feelings. Again in others I am slightly Roman Catholic; & I have also my alliance with the older Rosecrucians."
       cites: [{source: S3, locator: "letter text, closing paragraph"}]
       date: "1844-10-16"
       context: "After asking Faraday to what sect of Christians he belongs."
@@ -168,7 +169,7 @@ worldview:
       verified_on: 2026-10-08
       note: "Primary check pending (P26)."
   changes_over_life: []
-  coder_notes: "Not a scientist under P30/P33: her lasting contribution describes a machine and its programming, not a theory or result about physical or natural systems, so B needs her own statement about nature (P16), which the 1844 letters supply. Coder's call (CODING_GUIDE §8): primary_system CHRIST held at 0.5, below the 0.7 ceiling for consistent private letters, because she qualifies the label herself and the second letter is a secondary quotation. 'Rosecrucians' is her spelling as transcribed. Both letters are from autumn 1844, a year after the Notes; nothing earlier was read. Her 'occult influences of nature' refers to mesmerism (editor's note 3 in S3), not to a break in natural law."
+  coder_notes: "Not a scientist under P30/P33: her lasting contribution describes a machine and its programming, not a theory or result about physical or natural systems, so B needs her own statement about nature (P16), which the 1844 letters supply. Coder's call (CODING_GUIDE §8): primary_system CHRIST held at 0.5, below the 0.7 ceiling for consistent private letters, because she qualifies the label herself (P29 hedged self-report). 'Rosecrucians' is her spelling as transcribed. Both letters are from autumn 1844, a year after the Notes; nothing earlier was read. Her 'occult influences of nature' refers to mesmerism (editor's note 3 in S3), not to a break in natural law."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -267,7 +268,7 @@ sources:
 
 ## Summary
 
-Ada Lovelace (1815–1852), daughter of Lord Byron, published in 1843 her Notes on Menabrea's memoir on Babbage's Analytical Engine, describing how it could be programmed [S1; S2]. In private letters of 1844 she called herself 'a Unitarian Christian' with Swedenborgian, Catholic and Rosicrucian leanings [S3] and wrote that 'Religion to me is science, and science is religion' [S4]. Draft: CHRIST 0.5; A 1 (0.5); B 4 (0.5); mid_basin BELOW_THRESHOLD.
+Ada Lovelace (1815–1852), daughter of Lord Byron, published in 1843 her Notes on Menabrea's memoir on Babbage's Analytical Engine, describing how it could be programmed [S1; S2]. In private letters of 1844 she called herself 'a Unitarian Christian' with Swedenborgian, Catholic and Rosicrucian leanings [S3] and wrote that 'Religion to me is science, and science is religion' [S4]. Draft: CHRIST 0.5; A 0 (0.5); B 4 (0.5); mid_basin BELOW_THRESHOLD.
 
 ## Life and work
 

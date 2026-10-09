@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C; the last uncoded person in the physical-science 1600–1950 pool with F ≥ 3, taken first under P32). Basics from Britannica (editors), the Linda Hall Library and Yu Shi's 2025 paper; dates of the three listed experiments from the APS journal records. No statement by Wu on religion, God or nature was found. primary_system UNKNOWN; B_cause 4 at 0.5 from working science (P24); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: wu-chien-shiung
@@ -101,12 +102,12 @@ worldview:
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Nothing of hers on God or the divine in the sources read (P19)."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S5, locator: "APS record (parity test)"}, {source: S3, locator: "§2 (precision test of a theoretical prediction)"}, {source: S2, locator: "parity paragraphs"}]
       how_known: "Coder's reading of her working science, as P24 and P30 direct for a scientist (same treatment as Fermi and Libby). No statement of her own about miracles or exceptions was read, so 0.5."
-      rationale: "Scored on her account of nature (P6), which for a scientist is the working science. Her experiments test whether nature follows stated laws without exception: QED's polarization prediction (S3) and parity symmetry, which she found violated in the weak interaction (S2, S5). Finding that a symmetry fails is a finding about which law holds, not an exception to lawfulness. No miracle, petition or exemption appears in anything read."
+      rationale: "Scored on her account of nature (P6), which for a scientist is the working science. Her experiments test whether nature follows stated laws without exception: QED's polarization prediction (S3) and parity symmetry, which she found violated in the weak interaction (S2, S5). Finding that a symmetry fails is a finding about which law holds, not an exception to lawfulness. No miracle, petition or exemption appears in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing of hers on judgement, reward or afterlife in the sources read (P19)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation or scripture. Working science does not bear on D (P19), so UNKNOWN."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). Her working science assumes the same laws for every nucleus, which bears on E's first question, but E is not scored from working science alone (P19, P30 addendum).", how_known: "BELOW_THRESHOLD under P19: not scored from working science alone."}
@@ -236,7 +237,7 @@ sources:
 
 ## Summary
 
-Chien-Shiung Wu (1912–1997), Chinese-born American experimental physicist, gave the first experimental proof that parity is not conserved in the weak interaction (1957) [S1; S5]. Earlier, with Irving Shaknov, she measured the polarization correlation of annihilation photons (submitted 1949), later read as the first controlled entangled state [S3; S4], and in 1963 she confirmed the conserved vector current theory [S1; S6]. No statement of hers on religion, God or nature was found. Draft: primary_system UNKNOWN; B_cause 4 at 0.5 from working science; A UNKNOWN; mid_basin UNKNOWN.
+Chien-Shiung Wu (1912–1997), Chinese-born American experimental physicist, gave the first experimental proof that parity is not conserved in the weak interaction (1957) [S1; S5]. Earlier, with Irving Shaknov, she measured the polarization correlation of annihilation photons (submitted 1949), later read as the first controlled entangled state [S3; S4], and in 1963 she confirmed the conserved vector current theory [S1; S6]. No statement of hers on religion, God or nature was found. Draft: primary_system UNKNOWN; B_cause 3 at 0.5 from working science (alternative 4, P35); A UNKNOWN; mid_basin UNKNOWN.
 
 ## Life and work
 

@@ -7,7 +7,7 @@ record:
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); first lasting year per P13/P23, no coder's-choice wording. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1913–1939 unchanged; worldview.working_years 1906–1962 → 1913–1939, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on Heilbron's reconstruction of his working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: bohr-niels
@@ -116,12 +117,12 @@ worldview:
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was found; the evidence is about Christian theology and religion, not about a divine locus.", note: "Gap: Aaserud & Heilbron (2013) and Bohr's essays (Atomic Physics and Human Knowledge) were not read (lending-only scans)."}
     B_cause:
-      value: 4
+      value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}, {source: S4, locator: "pp. 30, 49"}]
       how_known: "Scored on his working science (P6), as reconstructed by Heilbron; his own essays on causality were not read, so 0.5."
-      rationale: "Scored on his account of nature (P6). His atom runs on stated rules (stationary states fixed by the quantum of action; radiation only in jumps between them), and on Heilbron's account he placed radioactivity where particles originate 'spontaneously, by chance' (S4, p. 49). No miracle, petition or reserved exemption appears. Alternative named: 3, if the quantum jump that 'not even a Newton could follow' (S4, p. 49) is read as a standing exception to causal description; it is read here as a limit of description inside a law-governed theory, not an exemption from law."
+      rationale: "Scored on his account of nature (P6). His atom runs on stated rules (stationary states fixed by the quantum of action; radiation only in jumps between them), and on Heilbron's account he placed radioactivity where particles originate 'spontaneously, by chance' (S4, p. 49). No miracle, petition or reserved exemption appears; the quantum jump that 'not even a Newton could follow' (S4, p. 49) is read as a limit of description inside a law-governed theory, not an exemption from law. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger:
       value: 4
       basis: scholarly_reconstruction
@@ -292,7 +293,7 @@ sources:
 
 ## Summary
 
-Niels Bohr (1885–1962), Danish physicist, built the quantum model of the atom in 1913, proposed complementarity in 1927 and won the 1922 Nobel Prize in Physics [S1, opening; S2, Como 1927 paragraph; S3, paragraph 6]. Christened Lutheran in a non-religious home, he rejected Christian theology in adolescence and left the Danish State Church in 1912 [S4, p. 20; S5, 1912]. System below threshold (ATHE leading, AGNOS named); B 4, C 4, D 4, all at 0.5; A and E below threshold; mid_basin below threshold.
+Niels Bohr (1885–1962), Danish physicist, built the quantum model of the atom in 1913, proposed complementarity in 1927 and won the 1922 Nobel Prize in Physics [S1, opening; S2, Como 1927 paragraph; S3, paragraph 6]. Christened Lutheran in a non-religious home, he rejected Christian theology in adolescence and left the Danish State Church in 1912 [S4, p. 20; S5, 1912]. System below threshold (ATHE leading, AGNOS named); B 3 (alternative 4, P35), C 4, D 4, all at 0.5; A and E below threshold; mid_basin below threshold.
 
 ## Life and work
 
@@ -308,7 +309,7 @@ His father was an atheist who "exposed his son to the state religion so that he 
 
 ## Adult working worldview
 
-To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. Heilbron, citing Margrethe Bohr's 1963 interview, writes that for a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24, n. 30]; in that interview his widow said he still spoke of such a book in his last autumn [S7, Session I]. In 1912 he wrote that he could "almost call it my religion, that I think that everything that is of any value is true" [S4, p. 34]. Scores: B 4, C 4, D 4 (all 0.5); A, E below threshold.
+To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. Heilbron, citing Margrethe Bohr's 1963 interview, writes that for a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24, n. 30]; in that interview his widow said he still spoke of such a book in his last autumn [S7, Session I]. In 1912 he wrote that he could "almost call it my religion, that I think that everything that is of any value is true" [S4, p. 34]. Scores: B 3 (alternative 4, P35), C 4, D 4 (all 0.5); A, E below threshold.
 
 ## Heritage (context only)
 

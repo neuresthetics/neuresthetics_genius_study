@@ -60,13 +60,15 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P32 | Work order after the first 12 stage 3 records: finish the stage 2 leftovers (physical science 1600–1950, F ≥ 3), then everyone else with F ≥ 3 by F descending, then roster rank; no hand-picking | medium-high | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C) |
 | P33 | Inventors and the scientist test (P30): a device or invention is not a theory or result about physical or natural systems; an inventor is a scientist only if a listed lasting contribution is a theory or result, otherwise B needs a statement about nature (P16) | medium | DECIDED (v8's pick) 2026-10-08 (stage 3 batch C, Bell) |
 | P34 | Denominators: people who can't be scored for an analysis are excluded from its denominator and reported separately as not scorable | high | DECIDED (Jason) 2026-10-08 |
+| P35 | B from working science only: a scientist's B inferred only from their work (the coder's inference or a scholar's reconstruction), with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4 | medium-high | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R1) |
+| P36 | A scholar's reconstruction of the person's free will or contingency triggers the B 3 anchor (P30 #14) like the person's own statement, capped at 0.5 | medium | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R2) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, and P32–P34 on 2026-10-08; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, and P32–P36 on 2026-10-08; all are listed under "Decided".
 
 
 ## Decided
@@ -723,6 +725,19 @@ Process:
 - **Reporting.** The not-scorable people are given as a plain count, with which axis is missing, so they are visible and not hidden.
 - **Not an analysis.** Coding progress against the roster (e.g. people coded of core) and claim fill rates in reports/coverage.md are coverage figures, so they keep the full roster or claim count as the base.
 - **Where it is applied.** `people_axis_points`, `focus_counts` and `people_chart_caption` in `scripts/lib/records.py`, used by `scripts/make_figures.py` and `scripts/progress_status.py`.
+
+### P35. B from working science only
+**DECIDED (v8's pick, 2026-10-08)**, from ruling question R1 of the blind lens audit of stage 3 batch C (commit dd91009, run 1). R1 there is the audit's own label, not decision R1 above.
+- **Rule.** B inferred only from a scientist's work, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4. This covers `inference_from_work` and a scholar's reconstruction of the working science (`scholarly_reconstruction`). It changes P24's example ("B 4 from a scientist's working science").
+- **Why.** Working science cannot separate B 4 from B 3. Faraday, Maxwell and Newton did the same law-testing science and are B 3 from their own statements. A flat 4 would credit a person with "no exceptions" that they never stated.
+- **Effect on mid_basin.** None: the test is B ≥ 3, and these values are at 0.5, under its 0.7 bar.
+- **Applied to (B_cause 4 → 3 at 0.5, alternative 4):** Bohr, Chandrasekhar, Clausius, Dirac, Fermi, Hodgkin, Leavitt, Libby, Meitner, Oppenheimer, Pasteur and Wu. Meitner's 1953 phrase 'the natural order of things' says nothing on exceptions, so her B still rests on her work (coder's call). Curie, Hubble, Mendeleev and others scored from their own statements are unchanged.
+
+### P36. A scholar's reconstruction of free will triggers B 3
+**DECIDED (v8's pick, 2026-10-08)**, from ruling question R2 of the same audit.
+- **Rule.** A scholar's reconstruction of the person's view of free will or contingency (a will not bound by natural law) triggers the B 3 anchor (P30 #14, CODING_GUIDE §6) the same way as the person's own statement does for Descartes and Kant, capped at 0.5 (the scholarly_reconstruction ceiling).
+- **Why.** The B 3 anchor is about what the view contains. When the only evidence for the view is a scholar's account, that lowers the certainty, not the value.
+- **Applied to:** al-Farabi, B_cause 4 → 3 at 0.5 with alternative 4 (Germann, SEP §3.1: 'While everything else executes its function by nature, human beings, equipped with reason and free will, must choose to do so'). No other record has a reconstructed free-will passage behind a B 4.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

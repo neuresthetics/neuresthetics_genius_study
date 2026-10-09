@@ -7,12 +7,13 @@ record:
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-08
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Kojevnikov, first page), MacTutor and the Nobel biography. No writing by Dirac on religion could be checked: the 1963 Scientific American article is access-restricted on the Internet Archive, the FSU Library scan of his 1976 Lindau lecture notes sits behind a bot challenge, and the 1927 Solvay remarks survive only in Heisenberg's later reconstruction (another person's report). primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1925–1933 → 1925–1934; worldview.working_years 1923–1984 → 1925–1934, equal to the span (P30 addendum f); lasting item added: Vacuum polarization (1934); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
 identity:
   id: dirac-paul
@@ -108,12 +109,12 @@ worldview:
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was read.", note: "Stays BELOW_THRESHOLD (P19): the only evidence is reported speech by others, Heisenberg's later reconstruction of the 1927 Solvay conversation and Pauli's quip, which bears on the point but cannot score it."}
     B_cause:
-      value: 4
+      value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "QED and 1928 paragraphs"}, {source: S2, locator: "Biography"}]
       how_known: "Coder's reading of his working science, as P6 directs (same treatment as Fermi). No statement of his own about miracles read, so 0.5."
-      rationale: "Scored on his account of nature (P6). He accepted that the fundamental laws of microscopic particles are probabilistic ('nature makes a choice', S1) and trusted mathematical formalism to find new laws, predicting the positron from his equation (S1): statistical and mathematical law throughout, with no miracle, petition or exemption in anything read."
+      rationale: "Scored on his account of nature (P6). He accepted that the fundamental laws of microscopic particles are probabilistic ('nature makes a choice', S1) and trusted mathematical formalism to find new laws, predicting the positron from his equation (S1): statistical and mathematical law throughout, with no miracle, petition or exemption in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on reward, punishment or afterlife in the sources read."}
     D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "His view that a true theory must be mathematically beautiful (S1) concerns method within physics, not revelation versus observation."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
@@ -212,7 +213,7 @@ sources:
 
 ## Summary
 
-Paul Adrien Maurice Dirac (1902–1984), English theoretical physicist, gave quantum mechanics its general mathematical form, wrote the relativistic equation of the electron and predicted antimatter; he shared the 1933 Nobel Prize with Schrödinger [S1; S3]. No statement of his on religion could be checked; the famous anti-religious remarks of 1927 are Heisenberg's later reconstruction. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from the working science; A and E below threshold, C and D UNKNOWN; mid_basin below threshold.
+Paul Adrien Maurice Dirac (1902–1984), English theoretical physicist, gave quantum mechanics its general mathematical form, wrote the relativistic equation of the electron and predicted antimatter; he shared the 1933 Nobel Prize with Schrödinger [S1; S3]. No statement of his on religion could be checked; the famous anti-religious remarks of 1927 are Heisenberg's later reconstruction. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 at 0.5 from the working science (alternative 4, P35); A and E below threshold, C and D UNKNOWN; mid_basin below threshold.
 
 ## Life and work
 
@@ -228,7 +229,7 @@ A strict, unhappy home in which only French was spoken at his father's table [S2
 
 ## Adult working worldview
 
-Not established from checkable sources. His working physics is lawful and probabilistic [S1], which gives B 4 at 0.5 only.
+Not established from checkable sources. His working physics is lawful and probabilistic [S1], which gives B 3 at 0.5 only, with 4 as the alternative (P35).
 
 ## Heritage (context only)
 
