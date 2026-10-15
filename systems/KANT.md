@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S4): filled from SEP "Immanuel Kant" (Rohlf) and "Kant’s Philosophy of Religion" (Pasternack and Fugate). A 1 (0.5), B 3 (0.5), C BELOW_THRESHOLD (alt 1), D 3 (0.5), E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S4 audit (WEAKEN #2): A_locus 1 (0.5) → 0 (0.5), alternative 1; miracle quote labelled ''SEP, reporting AK 6:52''; note that the architect limit is on theoretical proof only. Stance kept.'
 identity:
   id: KANT
   v7_1_number: 22
@@ -85,6 +88,7 @@ metaphysics:
     - source: S1
       locator: §3.4–3.5
     how_known: SEP.
+    note: The 'architect of the world' limit applies to the theoretical proof only (Kant rejects the step from a 'Wise Author of Nature' to an infinite creator); the practical postulate is of a moral author of the world (S4 audit RQ2).
   deity_personal:
     value: TODO
     stance: TODO
@@ -92,7 +96,7 @@ metaphysics:
     value: TODO
     stance: TODO
   miracles:
-    value: Reason 'does not contest the possibility or actuality' of miracles (and grace, mysteries) 'it just cannot incorporate them into its maxims of thought or action' (AK 6:52).
+    value: 'SEP, reporting AK 6:52: reason ''does not contest the possibility or actuality'' of miracles (and grace, mysteries); ''it just cannot incorporate them into its maxims of thought or action''.'
     stance: not addressed
     certainty: 1.0
     cites:
@@ -126,15 +130,21 @@ metaphysics:
     value: TODO
 lio_axes:
   A_locus:
-    value: 1
-    rationale: God postulated by practical reason as moral author; transcendent, personal standing is the coder's reading.
+    value: 0
+    rationale: God postulated by practical reason as a transcendent, personal moral author of the world; the study scores that pattern A 0 (as Locke, Bacon, Boyle).
     certainty: 0.5
     cites:
     - source: S1
       locator: §3.5.1
     - source: S2
       locator: introduction
-    how_known: '0.5: SEP describes the postulate, not God''s personhood in detail (alternative 0).'
+    how_known: '0.5: God here is a practical postulate, not knowledge, and personhood is the coder''s reading. Alternative 1. Changed from 1 (0.5) after the S4 audit.'
+    alternatives:
+    - value: 1
+      note: Thinly personal moral author.
+      cites:
+      - source: S1
+        locator: §3.5.1
   B_cause:
     value: 3
     rationale: 'Miracles are not contested but cannot enter the maxims of thought or action: nature is treated as lawful.'
@@ -142,7 +152,7 @@ lio_axes:
     cites:
     - source: S1
       locator: Religion, part 1
-    how_known: '0.5: inferred from AK 6:52 as reported.'
+    how_known: '0.5: inferred from SEP, reporting AK 6:52.'
   C_ledger:
     value: BELOW_THRESHOLD
     how_known: The postulates of God and immortality are rooted in the highest good (S1 §3.4–3.5); SEP excerpts read do not state the proportion of happiness to virtue.
@@ -257,7 +267,7 @@ Transcendental idealism [S2]; God and immortality as postulates of practical rea
 
 ## Position on the LIO axes
 
-- A 1 (0.5), B 3 (0.5), D 3 (0.5).
+- A 0 (0.5, alt 1), B 3 (0.5), D 3 (0.5).
 - C BELOW_THRESHOLD (alt 1).
 - E UNKNOWN.
 
@@ -290,3 +300,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S4): read the listed sources; quotations checked word for word against the fetched page text with a script. Axes under P44.
+- 2026-10-15 (S4 audit fixes, run 1: 11 HOLD, 1 WEAKEN): A 0 (0.5, alt 1); miracle quote labelled SEP, reporting AK 6:52; architect-limit note.
