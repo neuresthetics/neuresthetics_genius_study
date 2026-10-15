@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33) and 2026-10-15 (P38, P39). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -63,18 +63,20 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P35 | B from working science only: a scientist's B inferred only from their work (the coder's inference or a scholar's reconstruction), with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4 | medium-high | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R1) |
 | P36 | A scholar's reconstruction of the person's free will or contingency triggers the B 3 anchor (P30 #14) like the person's own statement, capped at 0.5 | medium | DECIDED (v8's pick) 2026-10-08 (lens audit of batch C, ruling R2) |
 | P37 | The README and person chart mark no focus region | high | DECIDED (Jason) 2026-10-08 |
+| P38 | Stated disbelief with an agnostic label: a person's own published 'I do not believe in God', together with a self-description as agnostic, scores A_locus 4 at most 0.5 (alternative BELOW_THRESHOLD as explicit suspension); explicit suspension with no stated disbelief stays BELOW_THRESHOLD | medium | DECIDED (v8's pick) 2026-10-15 (stage 3 batch D, Russell) |
+| P39 | Undated works: when no listed lasting contribution can be dated (ancient treatises with no known chronology), first_lasting_contribution_year, major_work_period, working_years and age stay UNKNOWN; era_bucket is still filled when every year of the person's adult life falls in one bucket, at the certainty of the life dates | medium-high | DECIDED (v8's pick) 2026-10-15 (stage 3 batch D, Archimedes, Aristotle) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, and P32–P37 on 2026-10-08; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, and P38–P39 on 2026-10-15; all are listed under "Decided".
 
 
 ## Decided
 
-All 52 items, in id order (P6–P37 are placed after P5, S7 after S6).
+All 54 items, in id order (P6–P39 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -744,6 +746,17 @@ Process:
 **DECIDED (Jason, 2026-10-08): the README and person chart mark no focus region; a favored region is a projected interpretation and premature until the roster is coded as a sample with era base rates.**
 - **Applied.** The shaded top-right box, its label and the focus count are removed from `figures/people_cause_locus.png` (`scripts/make_figures.py`) and its caption (`people_chart_caption` in `scripts/lib/records.py`); the README's Focus paragraph is removed. The chart shows where coded people fall and nothing more.
 - **Unchanged.** The method rules, including P4 (mid-basin test), stand.
+
+### P38. Stated disbelief with an agnostic label (A_locus)
+**DECIDED (v8's pick, 2026-10-15, stage 3 batch D):** a person's own published statement of disbelief in God ("I do not believe in God"), made alongside a self-description as agnostic, scores A_locus 4 ("no separate God") at certainty at most 0.5, with BELOW_THRESHOLD (explicit suspension, §6, P20) named as the alternative. Explicit suspension with no stated disbelief stays BELOW_THRESHOLD, as before (Bell). An explicit denial of a personal, intervening God is scored as before.
+- **Why.** §6 scores "an explicit denial" and leaves "an agnostic with no stated locus view" at BELOW_THRESHOLD, but says nothing about a stated non-belief from someone who also calls himself agnostic. Non-belief is more than suspension, so it is scored; the 0.5 cap reflects that it is not a stated locus view and that the person declines to deny God outright.
+- **Applied.** Russell: A 4 at 0.5 ("why I do not believe in God and in immortality", 1927; "As a philosopher [...] I ought to describe myself as an Agnostic", 1947). It moves him onto the person chart, faded.
+- **Result-changing.** Under the alternative, Russell would be not scorable on the chart.
+
+### P39. Undated works
+**DECIDED (v8's pick, 2026-10-15, stage 3 batch D):** when none of the listed lasting contributions can be dated (ancient treatises with no known chronology), `first_lasting_contribution_year`, `timing.major_work_period`, `worldview.working_years` and `timing.age_at_first_lasting_contribution` are UNKNOWN with a how_known saying so. `era_bucket` is still filled when every year of the person's adult life falls in one bucket (the derived-field rule in CODING_GUIDE §3), at the certainty of the life dates. The death cap (P30) bounds the span. Evidence dates for quotations from undated works use the death year with a note.
+- **Why.** P30 dates items by their earliest public statement or composition date; for Archimedes and Aristotle neither exists, and guessing a year would invent data. The era bucket does not depend on the exact year for them.
+- **Applied.** Archimedes and Aristotle (era '-500 to 499' at 0.7).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
