@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-15
   last_updated: 2026-10-15
   change_log:
-    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 66). Basics from Britannica (Britannica Editors, unsigned; body through the Perugia years) and the School of Athens date from Britannica's Plato article (Meinwald). No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 66). Basics from Britannica (Britannica Editors, unsigned; body through the Perugia years) and the School of Athens date from Britannica's Plato article (Meinwald). No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19)."}
 
 identity:
   id: raphael
@@ -84,7 +85,7 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B UNKNOWN."}
+  mid_basin: {value: UNKNOWN, how_known: "A is UNKNOWN; UNKNOWN takes precedence (P19)."}
   statements: []
   changes_over_life: []
   coder_notes: "Coder's call; few writings of his survive in the sources read. Religious commissions are not avowed belief."

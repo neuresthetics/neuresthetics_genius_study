@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-15
   last_updated: 2026-10-15
   change_log:
-    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 63). Basics from Britannica (Britannica Editors, unsigned). Scientist under P30 (algebra, astronomy). The quatrains are not scored: Britannica says some scholars doubt he wrote poetry and that the verses appeared under his name only two centuries after his death (P42). primary_system UNKNOWN; A UNKNOWN; B 3 at 0.5 (alt 4) from working science only (P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 63). Basics from Britannica (Britannica Editors, unsigned). Scientist under P30 (algebra, astronomy). The quatrains are not scored: Britannica says some scholars doubt he wrote poetry and that the verses appeared under his name only two centuries after his death (P42). primary_system UNKNOWN; A UNKNOWN; B 3 at 0.5 (alt 4) from working science only (P35); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19). Note added: a single quatrain needs a specific scholarly attribution; his treatise on existence is the lead for A."}
 
 identity:
   id: khayyam-omar
@@ -89,10 +90,10 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A is UNKNOWN."}
+  mid_basin: {value: UNKNOWN, how_known: "A is UNKNOWN; UNKNOWN takes precedence (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Coder's call. P42: Britannica reports doubt that he wrote poetry, that contemporaries took no notice of his verse, and that quatrains appeared under his name only two centuries later; FitzGerald's version is 'extremely free'. So no quatrain is scored. His philosophical treatises were not read."
+  coder_notes: "A single quatrain could be scored only with a scholarly attribution of that specific quatrain to him (P42); the quatrains as a body are barred. His treatise on existence is the lead for A. Coder's call. P42: Britannica reports doubt that he wrote poetry, that contemporaries took no notice of his verse, and that quatrains appeared under his name only two centuries later; FitzGerald's version is 'extremely free'. So no quatrain is scored. His philosophical treatises were not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -127,6 +128,7 @@ review:
   controversies: []
   data_quality_flags: []
   open_questions:
+    - "Read his treatise on existence (lead for A); look for a scholarly attribution of any single quatrain (P42)."
     - "Read his philosophical treatises (e.g., on existence) for statements of his own."
 
 sources:

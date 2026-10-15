@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 65). Basics from Britannica (Meinwald). Worldview from the Timaeus and Laws X (Jowett, Gutenberg #1572 and #1750; web copies), attributed to Plato himself by SEP 'Plato's Timaeus' (Zeyl and Sattler), so they count under P42; spoken by characters (Timaeus, the Athenian Stranger), so 0.5. Not a scientist (Britannica: 'not a research mathematician'). primary_system PLATO 0.5; A 1 at 0.5 (alt 0); B 3 at 0.5 (alt 4); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). Laws X dropped from the B rationale and cites: no source read attributes its theology to Plato (P42). SEP's opening sentence ('In the Timaeus Plato presents...') cited explicitly as the P42 attribution for the Timaeus. B stays 3 (0.5, alternative 4)."}
 
 identity:
   id: plato
@@ -92,16 +93,16 @@ worldview:
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S2, locator: "Timaeus, the creator passage (within SEP's 29d7–47e2) and the closing sentence"}, {source: S3, locator: "§1 and the questions on the Craftsman"}]
-      how_known: "Dialogue speech attributed to Plato by SEP (P42); Jowett web copy; 0.5."
+      how_known: "Dialogue speech attributed to Plato by SEP's opening sentence ('In the Timaeus Plato presents...', P42); Jowett web copy; 0.5."
       rationale: "A maker ('the father and maker of all') who orders the world, which itself becomes 'a living creature truly endowed with soul and intelligence by the providence of God' and finally 'the sensible God who is the image of the intellectual' (Timaeus): a world that is itself divine, made by a maker. Named alternative: 0 (SEP notes the question whether the Craftsman is 'an entity that is ontologically distinct from both the model and its copy')."
     B_cause:
       value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S2, locator: "Timaeus, opening of the Necessity section (SEP: from 47d3)"}, {source: S3, locator: "account of Necessity"}, {source: S4, locator: "Book X"}]
-      how_known: "Dialogue speech attributed to Plato (SEP, P42); web copies; 0.5."
-      rationale: "'The creation is mixed, being made up of necessity and mind. Mind, the ruling power, persuaded necessity' (Timaeus); per SEP, the properties fixed by Necessity are such that 'it is not open to the Craftsman to change or eliminate' them. That leans toward 4, but the account is called merely likely, and in Laws X the Athenian argues that 'the Gods care about the small as well as about the great', with no stated exceptionless order (P41 logic). Named alternative: 4."
-    C_ledger: {value: UNKNOWN, how_known: "Laws X argues against the view that gods can be appeased by gifts; not read closely enough to score."}
+      cites: [{source: S2, locator: "Timaeus, opening of the Necessity section (SEP: from 47d3)"}, {source: S3, locator: "account of Necessity"}]
+      how_known: "Dialogue speech attributed to Plato by SEP's opening sentence ('In the Timaeus Plato presents an elaborately wrought account of the formation of the universe'), which satisfies P42; web copy; 0.5 as character speech."
+      rationale: "'The creation is mixed, being made up of necessity and mind. Mind, the ruling power, persuaded necessity' (Timaeus); per SEP, the properties fixed by Necessity are such that 'it is not open to the Craftsman to change or eliminate' them. That leans toward 4, but the account is called merely likely, and no exceptionless order is stated (P40). Named alternative: 4. Laws X is not used: no source read attributes its theology to Plato (P42)."
+    C_ledger: {value: UNKNOWN, how_known: "Laws X argues against the view that gods can be appeased by gifts, but no source read attributes the Laws X theology to Plato (P42); not scored."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 1 and B 3 would satisfy A ≤ 1 and B ≥ 3, but both are at 0.5, below the 0.7 bar (§6, P19)."}
@@ -204,7 +205,7 @@ sources:
     citation: "Plato. Laws. Trans. Benjamin Jowett. Project Gutenberg eBook #1750."
     url: "https://www.gutenberg.org/ebooks/1750"
     accessed: 2026-10-15
-    reliability_note: "Translation in an unofficial web copy; dialogue text of Book X, not the introduction; §7 cap 0.7."
+    reliability_note: "Translation in an unofficial web copy; Book X read but not used for any score (no attribution source, P42)."
     used_for: [worldview]
   - id: S5
     type: secondary
@@ -260,3 +261,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Circle pres
 ## Research log
 
 - 2026-10-15: Read Britannica (Meinwald), SEP 'Plato's Timaeus', Timaeus and Laws X (Gutenberg #1572, #1750).
+- 2026-10-15: Batch J audit fixes: Laws X dropped from B; SEP's opening sentence cited for P42.
