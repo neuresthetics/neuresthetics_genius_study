@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 61). Basics from Britannica (Hunt). Worldview from My Inventions (Electrical Experimenter, 1919), ch. VI, Wikisource transcription (web copy, 0.7 cap). Scientist/engineer under P30. primary_system BELOW_THRESHOLD (candidates DETERM, AGNOS); A BELOW_THRESHOLD (only 'faith in a supreme power of some kind' as a general human trait); B 4 at 0.5 (alt 3): 'We are automata entirely controlled by the forces of the medium' and no foundation for spiritual phenomena (near P40; RQ2 batch I); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of bbb26f8, run 1). B rationale and C_ledger note reworded: the automata line is his mechanical explanation of the cosmic law, not a counter-sign. B stays 4 (0.5, alternative 3)."}
 
 identity:
   id: tesla-nikola
@@ -95,8 +96,8 @@ worldview:
       certainty: 0.5
       cites: [{source: S2, locator: "ch. VI"}]
       how_known: "Published autobiography, web copy; 0.5; alternative named."
-      rationale: "Strict mechanism stated: 'We are automata entirely controlled by the forces of the medium'; no foundation for spiritual phenomena. Near P40 (stated strict necessity), but it is said of living beings, and the same chapter reports a 'cosmic' pain after which wrongdoers 'invariably' came to grief, a non-mechanical-sounding regularity he calls a discovery. So 0.5, alternative 3 (P35 working-science default). RQ2 (batch I)."
-    C_ledger: {value: UNKNOWN, how_known: "The 'cosmic' law that wrongdoers 'came to grief' resembles a ledger but no agent is named; not scored."}
+      rationale: "Strict mechanism stated: 'We are automata entirely controlled by the forces of the medium'; no foundation for spiritual phenomena. The same chapter reports a 'cosmic' pain after which wrongdoers 'invariably' came to grief; he accounts for it with the automata line, so it is his mechanical explanation of that law, not a counter-sign. Near P40, but the necessity is stated for living beings, not for all of nature, so 0.5; alternative 3 (P35 working-science default)."
+    C_ledger: {value: UNKNOWN, how_known: "The 'cosmic' law that wrongdoers 'came to grief' looks like a ledger, but he explains it mechanically (the automata line), with no agent and no moral reckoning; not scored."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A is BELOW_THRESHOLD."}
@@ -126,7 +127,7 @@ worldview:
       verified_on: 2026-10-15
       note: "As above."
   changes_over_life: []
-  coder_notes: "Coder's call; one chapter of the autobiography. RQ2 (batch I)."
+  coder_notes: "Coder's call; one chapter of the autobiography. B 4 kept by the batch I audit (RQ2)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -162,7 +163,7 @@ review:
   controversies: []
   data_quality_flags: []
   open_questions:
-    - "Read 'The Problem of Increasing Human Energy' (1900) for any God statement; check the Electrical Experimenter scan; RQ2 batch I."
+    - "Read 'The Problem of Increasing Human Energy' (1900) for any God statement; check the Electrical Experimenter scan; "
 
 sources:
   - id: S1
@@ -201,7 +202,7 @@ sources:
 
 ## Summary
 
-Nikola Tesla (1856–1943), Serbian American inventor [S1]. Draft: primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 at 0.5 (RQ2); mid_basin BELOW_THRESHOLD. Not plotted.
+Nikola Tesla (1856–1943), Serbian American inventor [S1]. Draft: primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 at 0.5; mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 
@@ -233,7 +234,6 @@ Everything in this section is Lane B: labeled belief, not a finding. No circle [
 
 ## Open questions
 
-- RQ2.
 
 ## Research log
 

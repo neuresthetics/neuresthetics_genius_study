@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 54). Basics from Britannica (Monk), signed body only. Worldview from the Tractatus Logico-Philosophicus (1921; Ogden translation, 1922), read in the Gutenberg #5740 PDF (web copy, 0.7 cap). Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, AGNOS); A 0 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (6.37 and 6.371–6.372 deny natural necessity and that laws of nature explain, which fits no B anchor; RQ1 batch I); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of bbb26f8, run 1). B_cause BELOW_THRESHOLD -> 3 (0.5, alternative BELOW_THRESHOLD) under P41, the laws-only-describe view as for Russell; now plotted (faded) at A 0 / B 3, mid_basin BELOW_THRESHOLD. S2 cited as the Gutenberg #5740 PDF; the plain-text file returns 404."}
 
 identity:
   id: wittgenstein-ludwig
@@ -94,12 +95,16 @@ worldview:
       how_known: "Published book, web copy; aphoristic, so 0.5; alternative named."
       rationale: "'God does not reveal himself in the world' (6.432) and 'The sense of the world must lie outside the world' (6.41): what is higher is outside the world. Named alternative: BELOW_THRESHOLD, since 6.432 may be a remark about what can be said rather than a claim about where God is."
     B_cause:
-      value: BELOW_THRESHOLD
-      how_known: "6.37: 'A necessity for one thing to happen because another has happened does not exist. There is only logical necessity.' 6.371–6.372: the 'illusion' that laws of nature explain phenomena; people 'stop short at natural laws as at something unassailable, as did the ancients at God and Fate'. This denies causal necessity in nature but neither affirms exceptionless law (B 4) nor accepts intervention (B ≤ 3). No anchor fits. RQ1 (batch I)."
+      value: 3
+      basis: written_profession
+      certainty: 0.5
+      cites: [{source: S2, locator: "6.37, 6.371, 6.372"}]
+      how_known: "Published book, web copy; aphoristic, so 0.5; alternative named."
+      rationale: "P41 (as for Russell): laws of nature only describe and do not explain or necessitate. 6.37: 'There is only logical necessity'; 6.371: the 'illusion' that laws of nature are explanations. No exceptionless order is stated (P40), so not 4; no intervention is accepted. B 3. Named alternative: BELOW_THRESHOLD, since the remark is about logic and explanation rather than about how nature runs."
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "B is BELOW_THRESHOLD."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 and B 3: no mid-basin reading at this certainty."}
   statements:
     - text: "How the world is, is completely indifferent for what is higher. God does not reveal himself in the world."
       cites: [{source: S2, locator: "6.432"}]
@@ -127,7 +132,7 @@ worldview:
       note: "As above."
   changes_over_life:
     - {value: "Religious conversion on the Eastern front, inspired in part by Tolstoy's The Gospel in Brief", year: 1914, certainty: 0.5, cites: [{source: S1, locator: "war paragraph"}], how_known: "Britannica gives the war years (1914–18), not the year of the conversion; 1914 is the start of the war (0.5)."}
-  coder_notes: "Coder's call; the Tractatus only. Notebooks 1914–16 and the 'Lecture on Ethics' not read. RQ1 (batch I): B for a denial of causal necessity."
+  coder_notes: "Coder's call; the Tractatus only. Notebooks 1914–16 and the 'Lecture on Ethics' not read. B 3 under P41 (batch I audit ruling on RQ1)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -140,7 +145,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1921–1953", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "First to last listed lasting contribution (P29, P30); 1953 is posthumous publication."}
   age_at_first_lasting_contribution: {value: 32, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1921 − 1889 = 32 (P30)."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "B is BELOW_THRESHOLD."}
+  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "A 0 and B 3: no LIO-type view found."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "6.37–6.372"}], how_known: "Denies natural necessity."}
   worldview_during_major_work: {value: BELOW_THRESHOLD, how_known: "As primary_system."}
 
@@ -202,7 +207,7 @@ sources:
 
 ## Summary
 
-Ludwig Wittgenstein (1889–1951), Austrian-born British philosopher [S1]. Draft: primary_system BELOW_THRESHOLD; A 0 at 0.5; B BELOW_THRESHOLD (RQ1); mid_basin BELOW_THRESHOLD. Not plotted.
+Ludwig Wittgenstein (1889–1951), Austrian-born British philosopher [S1]. Draft: primary_system BELOW_THRESHOLD; A 0 at 0.5; B 3 at 0.5 (P41); mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 
@@ -234,8 +239,9 @@ Everything in this section is Lane B: labeled belief, not a finding. No circle [
 
 ## Open questions
 
-- Notebooks 1914–16; RQ1.
+- Notebooks 1914–16.
 
 ## Research log
 
 - 2026-10-15: Read Britannica (Monk) and Tractatus 6.37–6.522 (Gutenberg #5740 PDF).
+- 2026-10-15: Batch I audit fixes: B 3 under P41; source cited as the #5740 PDF (the plain-text file returns 404).
