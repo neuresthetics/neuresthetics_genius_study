@@ -2,6 +2,16 @@
 
 ## v8 (in progress)
 
+### Systems batch S9 (2026-10-15, unreviewed)
+
+- **RODNOV** (thin: one sentence in Britannica "Modern Paganism", plus the publisher summary of Aitamurto & Simpson, *Slavic Native Faith*, Cambridge Elements 2026, P45): A BELOW_THRESHOLD; rest UNKNOWN.
+- **WICCA** (Britannica "Wicca", Doyle White): A BELOW_THRESHOLD; B 1 at 0.5 (alt 2); C, D, E UNKNOWN.
+- **ABORIG** (Britannica "The Dreaming", editors): A 3 at 0.5 (alt 2); D 1 at 0.5; B, C, E UNKNOWN.
+- **BON** (thin: Britannica "Bon", one paragraph): A 3 at 0.5 (alt 2); B 1 at 0.5; C, D, E UNKNOWN.
+- **NATAM** (Britannica "Native American Religions", Jocks): A, B, D BELOW_THRESHOLD; C, E UNKNOWN.
+- **SANTER** (Britannica "Santería", Murphy): B 1 (alt 0), D 1, E 1 (alt 0), all 0.5; A, C UNKNOWN.
+- Britannica read in Wayback copies (P44(e)). v7.1 scores and notes unchanged. No person record changes.
+
 ### S7 audit fixes (2026-10-15; S7 audit 13 hold, 3 weaken)
 
 - **OPEN_DECISIONS** P44 row: (d) moved after (c); (e) added.
