@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 46 |
+| stub | 40 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 30 |
+| draft — unreviewed | 36 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 57 | 172 | 2 | 0 | 24.7% |
-| origins | 283 | 119 | 162 | 2 | 0 | 42.0% |
-| metaphysics | 847 | 140 | 707 | 0 | 0 | 16.5% |
-| lio_axes | 385 | 72 | 230 | 65 | 18 | 18.7% |
+| classification | 231 | 63 | 166 | 2 | 0 | 27.3% |
+| origins | 284 | 129 | 153 | 2 | 0 | 45.4% |
+| metaphysics | 847 | 149 | 698 | 0 | 0 | 17.6% |
+| lio_axes | 385 | 76 | 200 | 86 | 23 | 19.7% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
-| ethics | 77 | 13 | 63 | 1 | 0 | 16.9% |
+| ethics | 77 | 14 | 62 | 1 | 0 | 18.2% |
 | practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2285 | 456 | 1741 | 70 | 18 | 20.0% |
+| **all** | 2286 | 486 | 1686 | 91 | 23 | 21.3% |
 
 ### Systems that are past stub stage
 
@@ -231,16 +231,22 @@ Display label status:
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
 | CYNIC | Cynicism | draft — unreviewed | 6/29 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
+| DETERM | Determinism | draft — unreviewed | 7/29 | not started |
 | EFFALT | Effective Altruism | draft — unreviewed | 8/32 | not started |
 | EMPIR | Empiricism | draft — unreviewed | 5/29 | not started |
 | EPICUR | Epicureanism | draft — unreviewed | 13/29 | not started |
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
+| HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
+| IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
+| LVSAT | LaVeyan Satanism (Church of Satan) | draft — unreviewed | 8/30 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
 | OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
+| PANENT | Panentheism (Process Theology, some Kabbalah/Advaita forms) | draft — unreviewed | 6/29 | not started |
+| PANPSY | Panpsychism (consciousness inherent in matter) | draft — unreviewed | 2/29 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
 | PHENOM | Phenomenology | draft — unreviewed | 4/29 | not started |
 | PLATO | Platonism | draft — unreviewed | 30/31 | not started |

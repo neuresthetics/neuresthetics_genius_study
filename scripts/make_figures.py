@@ -35,7 +35,8 @@ SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM",
                    "ATHE", "AGNOS", "BRGHTS", "EMPIR", "ETHCUL", "RATN",
                    "SECHUM", "SUNASM", "PRAG", "ARIST", "EFFALT", "TRNSHM",
                    "ABSURD", "CYNIC", "EPICUR", "EXIST", "NIHIL", "OBJCT",
-                   "SCEPT", "KANT", "PHENOM", "UTIL"]
+                   "SCEPT", "KANT", "PHENOM", "UTIL",
+                   "DETERM", "LVSAT", "PANENT", "HEDON", "PANPSY", "IDEAL"]
 AXES = ["A_locus", "B_cause", "C_ledger", "D_authority", "E_scope"]
 DPI = 170
 
@@ -241,7 +242,7 @@ def fig_systems_axes(out):
         certs.append(crow)
         labs.append(lrow)
     m = np.array(vals, dtype=float)
-    fig, ax = plt.subplots(figsize=(9, 17))
+    fig, ax = plt.subplots(figsize=(9, 20))
     cmap = plt.get_cmap("RdYlBu").copy()
     cmap.set_bad("#DDDDDD")
     im = ax.imshow(np.ma.masked_invalid(m), cmap=cmap, vmin=0, vmax=4, aspect="auto")
