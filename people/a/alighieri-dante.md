@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 20). Basics from Britannica (Quinones). Worldview from Monarchia III.xvi in Prue Shaw's edition and English translation (Dante Online, Società Dantesca Italiana). The Commedia's speakers, including the pilgrim, are characters and are not used. Not a scientist. CHRIST 0.7; A 0 (0.7); B 3 (0.5); D 2 (0.7); mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fix (fallacy_catalog audit of 2332880, run 1): B_cause 3 (0.5) -> BELOW_THRESHOLD (alternative 4); Mon. III.xvi.12-13 is political and God acts through the order of the heavens, so no stated exception. mid_basin stays BELOW_THRESHOLD. Drops off the person chart."}
 
 identity:
   id: alighieri-dante
@@ -97,12 +98,10 @@ worldview:
       rationale: "God is 'the prince of the universe', who 'alone chooses' the emperor and is 'ruler over all things spiritual and temporal': a transcendent person outside the world. Alternative 1 (the simple God of III.xvi.15), so 0.7."
       how_known: "Critical edition; alternative named."
     B_cause:
-      value: 3
-      basis: written_profession
-      certainty: 0.5
+      value: BELOW_THRESHOLD
       cites: [{source: S2, locator: "Mon. III.xvi.12–13"}]
-      rationale: "Account of nature (P6): 'the disposition of this world is a result of the disposition inherent in the circling of the heavens', which God 'preordained [...] to bind all things in due order' — a general lawful order. Limited exception: God 'alone chooses' the emperor. Alternative 2 (the direct choice read as a live, recurring intervention in history). The passage speaks of nature only in passing, so 0.5."
-      how_known: "Indirect; alternative named; coder's call."
+      how_known: "Coder's call (conservative option, P30 #16), after the fallacy_catalog audit of 2332880. The only passage read touches nature in passing, in a political argument."
+      note: "'The disposition of this world is a result of the disposition inherent in the circling of the heavens', which God 'preordained [...] making provision through it to bind all things in due order' states a general order. 'God alone chooses' the emperor works through that order and concerns politics, not nature, so it is not a stated exception; no miracle or exception is stated in the text read. Named alternative 4 (lawful order with no stated exception). Keep 3 only if a stated miracle is found."
     C_ledger: {value: UNKNOWN, how_known: "Not treated in the chapter read; the Commedia's afterlife is a poem's fiction and is not used."}
     D_authority:
       value: 2
@@ -112,7 +111,7 @@ worldview:
       rationale: "Two domains each with its own authority (P27 anchor): philosophy and the Emperor for 'temporal happiness', revelation and the Pontiff for 'eternal life'. Indirect on observation as such, so 0.7."
       how_known: "Critical edition; indirect."
     E_scope: {value: UNKNOWN, how_known: "Scored on the world's order (P7); nothing read."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 0 at 0.7, but B_cause 3 only at 0.5, under the 0.7 bar (P4, §6)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 0 at 0.7, but B_cause is BELOW_THRESHOLD (P4, §6)."}
   statements:
     - text: "Now these two kinds of happiness must be reached by different means, as representing different ends. For we attain the first through the teachings of philosophy, provided that we follow them putting into practice the moral and intellectual virtues; whereas we attain the second through spiritual teachings which transcend human reason, provided that we follow them putting into practice the theological virtues, i.e. faith, hope and charity."
       cites: [{source: S2, locator: "Mon. III.xvi.8"}]
@@ -153,7 +152,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1293–1321", certainty: 0.5, cites: [{source: S1, locator: "dates"}], how_known: "Vita nuova (c. 1293) to the Commedia (range end 1321, his death year) (P29, P30)."}
   age_at_first_lasting_contribution: {value: 28, certainty: 0.5, cites: [{source: S1, locator: "dates"}], how_known: "1293 − 1265 = 28 (P30); circa year, so 0.5."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "B 3 is at 0.5 from an undated passage; no dated LIO-type statement found."}
+  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "B is BELOW_THRESHOLD and the passage is undated; no dated LIO-type statement found."}
   lio_views_relative_to_major_work: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "Mon. III.xvi"}], how_known: "Monarchia undated."}
   worldview_during_major_work: {value: "CHRIST", certainty: 0.7, cites: [{source: S2, locator: "Mon. III.xvi"}], how_known: "As coded."}
 
@@ -212,7 +211,7 @@ sources:
 
 ## Summary
 
-Dante (1265–1321), Florentine poet of La vita nuova (c. 1293) and the Commedia (c. 1308–21) [S1]. In Monarchia he sets two ends, reached by philosophy and by revelation [S2, III.xvi.8]. Draft: CHRIST 0.7; A 0 at 0.7; B 3 at 0.5; D 2 at 0.7; mid_basin BELOW_THRESHOLD.
+Dante (1265–1321), Florentine poet of La vita nuova (c. 1293) and the Commedia (c. 1308–21) [S1]. In Monarchia he sets two ends, reached by philosophy and by revelation [S2, III.xvi.8]. Draft: CHRIST 0.7; A 0 at 0.7; B BELOW_THRESHOLD (alternative 4); D 2 at 0.7; mid_basin BELOW_THRESHOLD.
 
 ## Life and work
 

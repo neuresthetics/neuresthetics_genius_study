@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 26). Basics from Britannica (Urbach et al.). Worldview from The Advancement of Learning (1605), Morley's 1893 Cassell edition as transcribed by Project Gutenberg (#5500), and 'Of Atheism' (Essays, Gutenberg #575). Not a scientist (P30, P33). CHRIST 0.7; A 0 (0.7); B 3 (0.7); D 2 (0.7); mid_basin true (0.7). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): Gutenberg statements relabelled verified_against 'secondary quotation' (web copies); certainties already at the 0.7 web-copy cap, so no change and mid_basin true (0.7) stands. II.XXV.(3) confirmed as D_authority evidence only (it was not cited under B_cause)."}
 
 identity:
   id: bacon-francis
@@ -125,7 +126,7 @@ worldview:
       date: "1605"
       context: "Answering divines who say knowledge of second causes weakens dependence on God."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [B_cause]
       note: "Morley's edited text (Cassell 1893) via Gutenberg #5500; modernised spelling; web copy, 0.7 cap."
@@ -134,7 +135,7 @@ worldview:
       date: "1605"
       context: "Close of his answer to the divines."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [D_authority]
     - text: "The bounds of this knowledge are, that it sufficeth to convince atheism, but not to inform religion; and therefore there was never miracle wrought by God to convert an atheist, because the light of nature might have led him to confess a God; but miracles have been wrought to convert idolaters and the superstitious, because no light of nature extendeth to declare the will and true worship of God.  For as all works do show forth the power and skill of the workman, and not his image, so it is of the works of God, which do show the omnipotency and wisdom of the Maker, but not His image."
@@ -142,7 +143,7 @@ worldview:
       date: "1605"
       context: "On natural theology (divine philosophy)."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [A_locus, B_cause]
     - text: "Wherefore we conclude that sacred theology (which in our idiom we call divinity) is grounded only upon the word and oracle of God, and not upon the light of nature"
@@ -150,7 +151,7 @@ worldview:
       date: "1605"
       context: "On revealed theology."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [D_authority]
     - text: "I HAD rather believe all the fables in the Legend, and the Talmud, and the Alcoran, than that this universal frame is without a mind. And therefore, God never wrought miracle, to convince atheism, because his ordinary works convince it."

@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 29). Basics from Britannica (Morson) and the chronology in Mayne's 1914 translation of his letters. Worldview: the March 1854 letter to N. D. Fonvisin (Mayne, Letter XXII, pp. 70–71, archive.org scan). Characters (Zosima, Ivan, Shatov) not used. CHRIST 0.5; A BELOW_THRESHOLD; B UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): primary_system basis scholarly_reconstruction -> consistent_private_letters (his own letter; single letter, so 0.5 kept); locators standardised to Letter 22, begins p. 69, quote pp. 70-71."}
 
 identity:
   id: dostoevsky-fyodor
@@ -81,14 +82,14 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1846–1880", certainty: 0.7, cites: [{source: S2, locator: "chronological table"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: "'I am a child of this age, a child of unfaith and scepticism'; yet 'If anyone could prove to me that Christ is outside the truth, and if the truth really did exclude Christ, I should prefer to stay with Christ and not with truth.' (1854)", certainty: 0.5, cites: [{source: S2, locator: "Letter XXII, pp. 70–71"}], how_known: "One private letter, in translation (single-letter rule: 0.5 with a scholar's backing; Britannica's 'lifelong attachment to religion' supports it)."}
+  self_described_science_religion_relation: {value: "'I am a child of this age, a child of unfaith and scepticism'; yet 'If anyone could prove to me that Christ is outside the truth, and if the truth really did exclude Christ, I should prefer to stay with Christ and not with truth.' (1854)", certainty: 0.5, cites: [{source: S2, locator: "Letter 22 to N. D. Fonvisin, beginning of March 1854 (begins p. 69), quote pp. 70–71"}], how_known: "One private letter, in translation (single-letter rule: 0.5 with a scholar's backing; Britannica's 'lifelong attachment to religion' supports it)."}
   primary_system:
     value: CHRIST
-    basis: scholarly_reconstruction
+    basis: consistent_private_letters
     certainty: 0.5
-    cites: [{source: S1, locator: "'Background and early life' ('Dostoyevsky's lifelong attachment to religion')"}, {source: S2, locator: "Letter XXII, p. 71"}]
+    cites: [{source: S1, locator: "'Background and early life' ('Dostoyevsky's lifelong attachment to religion')"}, {source: S2, locator: "Letter 22 (begins p. 69), p. 71"}]
     rationale: "A credo centred on Christ ('nothing lovelier, deeper [...] than the Saviour') in one private letter, plus Morson's account of a lifelong religious attachment. Published nonfiction (Diary of a Writer) not read, so 0.5."
-    how_known: "Single letter plus a scholar (§3)."
+    how_known: "His own private letter (basis consistent_private_letters), but only one letter, so 0.5 with a scholar backing the reading (§3)."
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Chosen at 0.5."}
@@ -102,7 +103,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "B_cause is UNKNOWN, which takes precedence (P19)."}
   statements:
     - text: "I want to say to you, about myself, that I am a child of this age, a child of unfaith and scepticism, and probably (indeed I know it) shall remain so to the end of my life."
-      cites: [{source: S2, locator: "Letter XXII, pp. 70–71"}]
+      cites: [{source: S2, locator: "Letter 22 to N. D. Fonvisin, beginning of March 1854 (begins p. 69), quote pp. 70–71"}]
       date: "1854-03"
       context: "Letter from Omsk to N. D. Fonvisin, beginning of March 1854, after release from the prison camp."
       kind: "private letter"
@@ -110,7 +111,7 @@ worldview:
       verified_on: 2026-10-15
       note: "Mayne translation (1914), archive.org scan lettersoffyodorm00dostuoft, OCR checked; Wikiquote's 'Letter XXI, p. 71' is wrong: it is Letter XXII."
     - text: "If anyone could prove to me that Christ is outside the truth, and if the truth really did exclude Christ, I should prefer to stay with Christ and not with truth."
-      cites: [{source: S2, locator: "Letter XXII, p. 71"}]
+      cites: [{source: S2, locator: "Letter 22 (begins p. 69), p. 71"}]
       date: "1854-03"
       context: "Same letter, after his 'creed'."
       kind: "private letter"
@@ -133,14 +134,14 @@ timing:
   major_work_period: {value: "1846–1880", certainty: 0.7, cites: [{source: S2, locator: "chronological table"}], how_known: "Poor Folk (1846) to Karamazov (range end 1880) (P29, P30 #4)."}
   age_at_first_lasting_contribution: {value: 25, certainty: 0.7, cites: [{source: S1, locator: "At a Glance"}, {source: S2, locator: "chronological table, 1846"}], how_known: "1846 − 1821 = 25 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No statement scored at 3 or 4."}
-  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "Letter XXII"}], how_known: "Only one letter read."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "Letter 22 (pp. 69–71)"}], how_known: "Only one letter read."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "unclear", rationale: "Engineering academy; nothing read on proof training.", certainty: 0.5, cites: [{source: S1, locator: "'Background and early life'"}], how_known: "Coder's reading."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "'Background and early life'"}], how_known: "Nothing read."}
-  circle_present: {value: "no", rationale: "Christ preferred even over truth.", certainty: 0.5, cites: [{source: S2, locator: "Letter XXII, p. 71"}], how_known: "Coder's reading."}
+  circle_present: {value: "no", rationale: "Christ preferred even over truth.", certainty: 0.5, cites: [{source: S2, locator: "Letter 22 (begins p. 69), p. 71"}], how_known: "Coder's reading."}
   reading: "As belief, not finding: no circle."
   notes: ""
 

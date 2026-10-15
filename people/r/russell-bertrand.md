@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 13). Basics from SEP (Irvine 2024). Worldview from 'Why I Am Not a Christian' (lecture 6 March 1927; Bertrand Russell Society web copy) and 'Am I an Atheist or an Agnostic?' (1947; web copy). Not a scientist (P30): logic and philosophy. primary_system AGNOS (0.5, alternative ATHE); A_locus 4 (0.5, P38); B_cause 4 (0.5, alternative 3); C 4 (0.7); D 4 (0.5); E TODO; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 4 -> 3 (0.5, alternative 4) under P41. D_authority source titled ('Has Religion Made Useful Contributions to Civilization?', 1930, as quoted in SEP from A1957, p. 23). S3 redated 1947 -> 1949: first printed in The Literary Guide and Rationalist Review 64(7), July 1949, pp. 115-16 (Collected Papers vol. 11, no. 5); no change to age or period fields (earliest evidence is still 1927)."}
 
 identity:
   id: russell-bertrand
@@ -78,7 +79,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1903–1913", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: "'As a philosopher [...] I ought to describe myself as an Agnostic', but to 'the ordinary man in the street' an Atheist (1947)", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–4"}], how_known: "His own published essay, read in an unofficial web copy (0.7 cap)."}
+  self_described_science_religion_relation: {value: "'As a philosopher [...] I ought to describe myself as an Agnostic', but to 'the ordinary man in the street' an Atheist (1949)", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–4"}], how_known: "His own published essay, read in an unofficial web copy (0.7 cap)."}
   primary_system:
     value: AGNOS
     basis: written_profession
@@ -98,14 +99,14 @@ worldview:
       certainty: 0.5
       cites: [{source: S2, locator: "opening section ('why I do not believe in God and in immortality')"}, {source: S3, locator: "paragraph 6"}]
       how_known: "His own published lecture and essay (web copies). P38 (v8's pick, 2026-10-15): stated disbelief in God scores A 4 at most 0.5 when the person also calls himself agnostic."
-      rationale: "At the LIO pole on the reading 'no separate God': he does 'not believe in God' (1927) and holds God's existence not 'sufficiently probable to be worth serious consideration' (1947). This is a stated non-belief, not a locus view, and he declines to deny God outright ('I cannot prove that either the Christian God or the Homeric gods do not exist'), so 0.5 under P38. Alternative: BELOW_THRESHOLD as explicit suspension (§6, P20)."
+      rationale: "At the LIO pole on the reading 'no separate God': he does 'not believe in God' (1927) and holds God's existence not 'sufficiently probable to be worth serious consideration' (1949). This is a stated non-belief, not a locus view, and he declines to deny God outright ('I cannot prove that either the Christian God or the Homeric gods do not exist'), so 0.5 under P38. Alternative: BELOW_THRESHOLD as explicit suspension (§6, P20)."
     B_cause:
-      value: 4
+      value: 3
       basis: written_profession
       certainty: 0.5
       cites: [{source: S2, locator: "section 'The Natural-Law Argument'"}]
-      how_known: "His own published lecture, read in a web copy (0.7 cap); named alternative, and he calls part of it 'the momentary state of science that may change tomorrow', so 0.5."
-      rationale: "Scored on his account of nature (P6, P16; not a scientist under P30). Natural laws 'are a description of how things do in fact behave', with no lawgiver and no exception or intervention named. Named alternative 3: he says atoms are 'much less subject to law than people thought' and laws are 'statistical averages of just the sort that would emerge from chance', which could be read as lawfulness covering only part of nature; but chance is not a divine exemption, so 4 is kept."
+      how_known: "His own published lecture ('Why I Am Not a Christian', 1927), read in a web copy (0.7 cap); P41 (v8's pick, 2026-10-15) caps a lawgiver denial without a stated no-exception claim at B 3, and he calls part of his account 'the momentary state of science that may change tomorrow', so 0.5."
+      rationale: "Scored on his account of nature (P6, P16; not a scientist under P30). Natural laws 'are a description of how things do in fact behave', which denies a lawgiver but does not state that nature is exceptionless; the same passage says atoms are 'much less subject to law than people thought' and laws are 'statistical averages of just the sort that would emerge from chance'. Under P41 (extending P35), B 4 needs a stated no-exception claim, so 3. Named alternative 4: no exception or intervention is named, and chance is not a divine exemption."
     C_ledger:
       value: 4
       basis: written_profession
@@ -117,8 +118,8 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S1, locator: "§6 (quoting A1957, p. 23: 'there is no reason to suppose any religion true')"}]
-      how_known: "Quoted in SEP; primary check pending, so 0.5 (§7, P26)."
+      cites: [{source: S1, locator: "§6 (quoting A1957, p. 23: 'there is no reason to suppose any religion true'; essay 'Has Religion Made Useful Contributions to Civilization?', 1930, attribution probable)"}]
+      how_known: "Quoted in SEP from 'Has Religion Made Useful Contributions to Civilization?' (1930; reprinted in Why I Am Not a Christian, 1957 = A1957, p. 23; attribution of the page to that essay is probable, not checked); primary check pending, so 0.5 (§7, P26)."
       rationale: "Observation and reason outrank revelation, which keeps no domain: 'The intellectual objection is that there is no reason to suppose any religion true' (via SEP)."
     E_scope: {value: TODO}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 4 is scored only at 0.5, under the 0.7 bar for the A ≥ 3 branch (P10).", note: "If A reached 0.7 the result would be false."}
@@ -143,15 +144,15 @@ worldview:
       note: "Same web copy."
     - text: "As a philosopher, if I were speaking to a purely philosophic audience I should say that I ought to describe myself as an Agnostic, because I do not think that there is a conclusive argument by which one prove that there is not a God."
       cites: [{source: S3, locator: "paragraph 3"}]
-      date: "1947"
+      date: "1949"
       context: "Essay 'Am I an Atheist or an Agnostic? A Plea for Tolerance in the Face of New Dogmas'."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Web copy (dhspriory.org); wording as printed there, including 'by which one prove'. First print venue not verified."
+      note: "Web copy (dhspriory.org); wording as printed there, including 'by which one prove'. First printed in The Literary Guide and Rationalist Review 64(7), July 1949, pp. 115-16, as an untitled report of his speech (Collected Papers vol. 11, no. 5)."
   changes_over_life: []
-  coder_notes: "Evidence dates from 1927 and 1947, after the 1903–1913 span; no change of view between them is documented in the sources read (SEP §1 notes he failed to get a Liberal nomination in 1910 'because of his atheism'), so it counts for the span at its normal certainty (P31). Coder's call: primary_system lowered to 0.5 because of his own wavering between the labels. Not a scientist (P30): his lasting contributions are in logic and philosophy, so B rests on his own statement (P16). E left TODO."
+  coder_notes: "Evidence dates from 1927 and 1949, after the 1903–1913 span; no change of view between them is documented in the sources read (SEP §1 notes he failed to get a Liberal nomination in 1910 'because of his atheism'), so it counts for the span at its normal certainty (P31). Coder's call: primary_system lowered to 0.5 because of his own wavering between the labels. Not a scientist (P30): his lasting contributions are in logic and philosophy, so B rests on his own statement (P16). E left TODO."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -164,7 +165,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1903–1913", certainty: 0.7, cites: [{source: S1, locator: "§2; bibliography"}], how_known: "Principles (1903) to Principia vol. 3 (1913) (P29, P30)."}
   age_at_first_lasting_contribution: {value: 31, certainty: 0.7, cites: [{source: S1, locator: "§1; §2"}], how_known: "1903 − 1872 = 31 (P30)."}
-  first_evidence_of_lio_type_views: {value: "'natural laws are a description of how things do in fact behave' (B 4) and 'I do not believe in God' (A 4)", year: 1927, age: 55, certainty: 0.5, cites: [{source: S2, locator: "opening; 'The Natural-Law Argument'"}], how_known: "Earliest dated statement read that is scored at 3 or 4. Earlier works (A Free Man's Worship, 1903) were not read: 'earlier works not read'."}
+  first_evidence_of_lio_type_views: {value: "'natural laws are a description of how things do in fact behave' (B 3) and 'I do not believe in God' (A 4)", year: 1927, age: 55, certainty: 0.5, cites: [{source: S2, locator: "opening; 'The Natural-Law Argument'"}], how_known: "Earliest dated statement read that is scored at 3 or 4. Earlier works (A Free Man's Worship, 1903) were not read: 'earlier works not read'."}
   lio_views_relative_to_major_work: {value: "after major work", rationale: "The earliest statement read (1927) is after the 1913 end; SEP's 1910 note suggests earlier views, so this may move.", certainty: 0.5, cites: [{source: S2, locator: "date"}, {source: S1, locator: "§1 (1910)"}], how_known: "Dated texts read."}
   worldview_during_major_work: {value: TODO}
 
@@ -218,11 +219,11 @@ sources:
     type: primary
     kind: "published work by the subject"
     author: "Bertrand Russell"
-    year: 1947
-    citation: "Russell, Bertrand. \"Am I an Atheist or an Agnostic? A Plea for Tolerance in the Face of New Dogmas\" (1947). Web copy: https://dhspriory.org/kenny/PhilTexts/Russell/AtheistOrAgnostic.htm."
+    year: 1949
+    citation: "Russell, Bertrand. \"Am I an Atheist or an Agnostic? A Plea for Tolerance in the Face of New Dogmas\" (1949). Web copy: https://dhspriory.org/kenny/PhilTexts/Russell/AtheistOrAgnostic.htm."
     url: "https://dhspriory.org/kenny/PhilTexts/Russell/AtheistOrAgnostic.htm"
     accessed: 2026-10-15
-    reliability_note: "Unofficial web copy (taken from Positive Atheism); first print venue not verified. 0.7 cap."
+    reliability_note: "Unofficial web copy (taken from Positive Atheism). First printed July 1949 in The Literary Guide and Rationalist Review 64(7): 115-16 (Collected Papers vol. 11, no. 5; Routledge 2024 headnote). 0.7 cap."
     used_for: [worldview]
   - id: S4
     type: secondary
@@ -241,7 +242,7 @@ sources:
 
 ## Summary
 
-Bertrand Russell (1872–1970), British philosopher and logician, found the paradox named after him, wrote Principia Mathematica with Whitehead and gave the theory of descriptions [S1]. In 1927 he said he did 'not believe in God and in immortality' [S2]; in 1947 he called himself an agnostic to philosophers and an atheist to the public [S3]. Draft: primary_system AGNOS (0.5, alternative ATHE); A 4 (0.5, P38); B 4 (0.5, alternative 3); mid_basin BELOW_THRESHOLD.
+Bertrand Russell (1872–1970), British philosopher and logician, found the paradox named after him, wrote Principia Mathematica with Whitehead and gave the theory of descriptions [S1]. In 1927 he said he did 'not believe in God and in immortality' [S2]; in 1949 he called himself an agnostic to philosophers and an atheist to the public [S3]. Draft: primary_system AGNOS (0.5, alternative ATHE); A 4 (0.5, P38); B 3 (0.5, alternative 4; P41); mid_basin BELOW_THRESHOLD.
 
 ## Life and work
 

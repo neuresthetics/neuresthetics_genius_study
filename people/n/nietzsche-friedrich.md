@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 28). Basics from Britannica (Magnus). Worldview from The Joyful Wisdom (trans. Thomas Common, Levy ed., 1910; Gutenberg #52881) §§108, 109, 343 and Ecce Homo (trans. Anthony M. Ludovici, Levy ed., 1911; Gutenberg #52190). The madman of §125 and Zarathustra are characters and are not used. ATHE 0.7; A 4 (0.7); B 4 (0.7, P40); C 4 (0.5); D 4 (0.7); mid_basin false (0.7). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): B_cause 4 (0.7) kept; rationale ties P40 to the explicit exclusion of exceptions ('no one who transgresses') and chance; added the 'it also knows no law' statement. Gutenberg statements relabelled verified_against 'secondary quotation' (web copies); certainties already at the 0.7 web-copy cap, unchanged."}
 
 identity:
   id: nietzsche-friedrich
@@ -108,7 +109,7 @@ worldview:
       basis: written_profession
       certainty: 0.7
       cites: [{source: S2, locator: "§109"}]
-      rationale: "Account of nature (P6): 'There are only necessities: there is no one who commands, no one who obeys, no one who transgresses'; no design and so no chance. Necessity with no exceptions and no commander is the LIO pole. He rejects the word 'law' as anthropomorphic and says the world is 'chaos' only 'in the sense of the absence of order, structure, form, beauty, wisdom', 'not by the absence of necessity'. Named alternative: BELOW_THRESHOLD, if 'it also knows no law' is read as rejecting the lawful pole (P40). Contested, so 0.7."
+      rationale: "Account of nature (P6): 'There are only necessities: there is no one who commands, no one who obeys, no one who transgresses'; no design and so no chance. The statement explicitly rules out exceptions ('no one who transgresses') and chance ('no chance'), which is what P40 requires; necessity with no exceptions and no commander is the LIO pole. He rejects the word 'law' only in the sense of a lawgiver's command ('it also knows no law. Let us be on our guard against saying that there are laws in nature') and rejects purposive or aesthetic order and says the world is 'chaos' only 'in the sense of the absence of order, structure, form, beauty, wisdom', 'not by the absence of necessity'. Named alternative: BELOW_THRESHOLD, if 'it also knows no law' is read as rejecting the lawful pole (P40). Contested, so 0.7."
       how_known: "Gutenberg web copy, 0.7 cap; alternative named (P40, v8's pick)."
     C_ledger:
       value: 4
@@ -132,7 +133,7 @@ worldview:
       date: "1882"
       context: "Aphorism 'New Struggles', author's own voice."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [A_locus]
       note: "Common translation, Levy edition 1910, via Gutenberg #52881. Gutenberg TODO: check against Kaufmann/KSA."
@@ -141,15 +142,24 @@ worldview:
       date: "1882"
       context: "Aphorism 'Let us be on our Guard', against anthropomorphising nature."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [B_cause]
+    - text: "Neither has it any self-preservative instinct, nor instinct at all; it also knows no law. Let us be on our guard against saying that there are laws in nature."
+      cites: [{source: S2, locator: "§109"}]
+      date: "1882"
+      context: "Same aphorism, immediately before 'There are only necessities'. 'Law' rejected as a command with a lawgiver (P40 alternative reading)."
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-15
+      axes: [B_cause]
+      note: "Common translation, Levy edition 1910, via Gutenberg #52881 (re-read 2026-10-15)."
     - text: "The general character of the world, on the other hand, is to all eternity chaos; not by the absence of necessity, but in the sense of the absence of order, structure, form, beauty, wisdom, and whatever else our æsthetic humanities are called."
       cites: [{source: S2, locator: "§109"}]
       date: "1882"
       context: "Same aphorism."
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [B_cause]
     - text: "I am quite unacquainted with atheism as a result, and still less as an event in my life: in me it is inborn, instinctive."
@@ -157,7 +167,7 @@ worldview:
       date: "1888"
       context: "Ecce Homo, written 1888 for publication, published 1908."
       kind: "unpublished manuscript"
-      verified_against: "scholarly edition"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-15
       axes: [A_locus, D_authority]
       note: "Ludovici translation, Levy edition 1911, via Gutenberg #52190. Supports A alongside the published §108 and §343."

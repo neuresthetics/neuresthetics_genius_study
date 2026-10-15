@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 9). Basics from SEP (Shields 2020). Worldview from Metaphysics XII (Ross trans.), Physics II (Hardie and Gaye trans.) and Nicomachean Ethics III (Ross trans.), read in the MIT Internet Classics Archive web copies. primary_system ARIST (0.7, founder rule); A_locus 1 (0.7, alternative 2); B_cause 3 (0.7, alternative 4); mid_basin true (0.7). C, D, E TODO. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 3 kept (0.7, alternative 4) but reframed: free will placed in nature (§6 B 3 anchor), not an exception to lawful cause; added EN 1113b17-19, Met. Θ.2 1046b4-7, Θ.5 1048a5-11 and the compatibilist alternative EN 1114a13-21; chance noted as incidental cause. Bekker numbers verified, approximate caveats removed. mid_basin true (0.7) unchanged."}
 
 identity:
   id: aristotle
@@ -81,7 +82,7 @@ worldview:
   self_described_science_religion_relation:
     value: "Inherited myth that the heavenly bodies are gods and 'the divine encloses the whole of nature' is kept as 'an inspired utterance'; the anthropomorphic rest was 'added later in mythical form with a view to the persuasion of the multitude'"
     certainty: 0.7
-    cites: [{source: S2, locator: "Met. XII (Λ) ch. 8 (Ross part 8, closing paragraph; Bekker c. 1074a38–b14)"}]
+    cites: [{source: S2, locator: "Met. XII (Λ) ch. 8 (Ross part 8, closing paragraph; Bekker 1074a38–b14)"}]
     how_known: "His own text in Ross's translation, read in an unofficial web copy, so capped at 0.7 (§7)."
   primary_system:
     value: ARIST
@@ -100,16 +101,16 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7 (Ross part 7; Bekker c. 1072b26–1073a5); ch. 10 (Ross part 10, opening; Bekker c. 1075a11–15)"}]
+      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7 (Ross part 7; Bekker 1072b26–1073a5); ch. 10 (Ross part 10, opening; Bekker 1075a11–15)"}]
       how_known: "His text in an unofficial web copy of Ross (0.7 cap); a named alternative also caps it at 0.7."
       rationale: "Leans to the interventionist pole with limits. The first mover is 'a living being, eternal, most good' and 'a substance which is eternal and unmovable and separate from sensible things' (Λ.7): a living, thinking god outside the world. The limits: it moves things only 'as being loved', it is 'impassive and unalterable', and its thinking 'is a thinking on thinking' (Λ.7, Λ.9), so it does not act on or attend to the world as a person would. Same pattern and score as Aquinas and Ibn Sina (A 1). Named alternative 2: Λ.10 says the universe holds the good 'both' as 'something separate' and 'as the order of the parts', though 'more in the latter' sense of the leader."
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "Phys. II ch. 8 (Hardie and Gaye trans., Bekker c. 199b24–26)"}, {source: S4, locator: "EN III ch. 5 (Ross trans., Bekker c. 1113b6–8)"}]
+      cites: [{source: S3, locator: "Phys. II ch. 8 (Hardie and Gaye trans., Bekker 199b24–26)"}, {source: S4, locator: "EN III ch. 5 (Ross trans., Bekker 1113b6–8, 1113b17–19; alternative reading 1114a13–21)"}, {source: S2, locator: "Met. IX (Θ) ch. 2, Bekker 1046b4–7; ch. 5, Bekker 1048a5–11"}]
       how_known: "His texts in unofficial web copies (0.7 cap); a named alternative also caps it at 0.7."
-      rationale: "Scored on his account of nature (P6). Nature is regular: 'In natural products the sequence is invariable, if there is no impediment', and what happens 'always or for the most part' is not by chance (Phys. II.8). No miracle, petition or divine exemption appears: the first mover acts only as final cause. The stated, limited exception is human choice: 'virtue also is in our own power, and so too vice. For where it is in our power to act it is also in our power not to act' (EN III.5), which gives B 3 under the free-will anchor (P30 #14, §6). Named alternative 4: whether 'in our power' is free will outside natural causation is disputed; on a compatibilist reading the impediment clause is the only qualifier and nothing is exempt."
+      rationale: "Scored on his account of nature (P6). Nature is regular: 'In natural products the sequence is invariable, if there is no impediment', and what happens 'always or for the most part' is not by chance (Phys. II.8). No miracle, petition or divine exemption appears: the first mover acts only as final cause. Chance in 'always or for the most part' is an incidental cause (Phys. II.5), not an exemption from nature's order. B 3 comes from free will placed in nature (CODING_GUIDE §6 B 3 anchor, P30 #14), not from an exception to lawful cause: 'virtue also is in our own power, and so too vice. For where it is in our power to act it is also in our power not to act' (EN III.5, 1113b6–8), with the agent as the 'originator and begetter' of his actions (1113b17–19); rational powers, unlike natural ones, are 'of contraries' (Met. Θ.2 1046b4–7; Θ.5 1048a5–11). On his own framing this is a different kind of principle from nature, not a suspension of it. Named alternative 4: on a compatibilist reading (EN III.5, 1114a13–21: character, once formed, makes action necessary in its turn), the impediment clause is the only qualifier and nothing is exempt. Framing corrected after the fallacy_catalog audit of 3f4817e."
     C_ledger: {value: TODO}
     D_authority: {value: TODO}
     E_scope: {value: TODO}
@@ -120,43 +121,52 @@ worldview:
     how_known: "P4/P6: A_locus 1 (0.7) and B_cause 3 (0.7) meet A ≤ 1 and B ≥ 3 at ≥ 0.7. B's alternative 4 is on the same side; A's alternative 2 is not, so the cap is A's 0.7 (P10, P30)."
   statements:
     - text: "It is clear then from what has been said that there is a substance which is eternal and unmovable and separate from sensible things."
-      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7, Ross part 7, last paragraph (Bekker c. 1073a3–5)"}]
+      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7, Ross part 7, last paragraph (Bekker 1073a3–5)"}]
       date: "-322"
       context: "Conclusion of the argument for the first unmoved mover."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Ross translation read on the MIT Internet Classics Archive (unofficial web copy; Bekker numbers are not printed there and are the coder's approximate mapping, check pending). Date is the death cap; the treatise is undated."
+      note: "Ross translation read on the MIT Internet Classics Archive (unofficial web copy; Bekker numbers are not printed there and were added by the coder, verified by the fallacy_catalog audit of 3f4817e). Date is the death cap; the treatise is undated."
     - text: "We say therefore that God is a living being, eternal, most good, so that life and duration continuous and eternal belong to God; for this is God."
-      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7, Ross part 7 (Bekker c. 1072b28–30)"}]
+      cites: [{source: S2, locator: "Met. XII (Λ) ch. 7, Ross part 7 (Bekker 1072b28–30)"}]
       date: "-322"
       context: "Same chapter: the first mover's life is thought."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Same web copy and Bekker caveat."
+      note: "Same web copy; Bekker numbers verified."
     - text: "In natural products the sequence is invariable, if there is no impediment."
-      cites: [{source: S3, locator: "Phys. II ch. 8 (Hardie and Gaye; Bekker c. 199b25–26)"}]
+      cites: [{source: S3, locator: "Phys. II ch. 8 (Hardie and Gaye; Bekker 199b25–26)"}]
       date: "-322"
       context: "Argument that nature acts for an end; what happens always or for the most part is not by chance."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Hardie and Gaye translation on the MIT Internet Classics Archive; Bekker check pending."
+      note: "Hardie and Gaye translation on the MIT Internet Classics Archive; Bekker numbers verified."
     - text: "Therefore virtue also is in our own power, and so too vice. For where it is in our power to act it is also in our power not to act, and vice versa"
-      cites: [{source: S4, locator: "EN III ch. 5 (Ross; Bekker c. 1113b6–8)"}]
+      cites: [{source: S4, locator: "EN III ch. 5 (Ross; Bekker 1113b6–8)"}]
       date: "-322"
       context: "Voluntary action and responsibility."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Ross translation on the MIT Internet Classics Archive; Bekker check pending."
+      note: "Ross translation on the MIT Internet Classics Archive; Bekker numbers verified."
+    - text: "originator and begetter"
+      cites: [{source: S4, locator: "EN III ch. 5 (Ross; Bekker 1113b17–19)"}]
+      date: "-322"
+      context: "The agent as origin of his own actions: free will placed in nature (B 3 anchor), not an exception to it."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-15
+      note: "Phrase quoted in the fallacy_catalog audit of 3f4817e at this locator (Ross translation)."
   changes_over_life: []
-  coder_notes: "Translations named: Ross (Metaphysics, Nicomachean Ethics) and Hardie and Gaye (Physics), all read on the MIT Internet Classics Archive, which prints no Bekker numbers; Bekker locators are the coder's approximate mapping and must be checked against the Oxford Revised Translation (Barnes 1984) or the Bekker text. The quotes are marked 'secondary quotation' because the archive is an unofficial web copy, not an edition; that caps every worldview field at 0.7 (§7). Basis written_profession: SEP §2 calls the surviving works lecture notes and in-house compilations for auditors; they are written for others, but if read as unpublished the private ceiling (0.7) gives the same certainty. Coder's call: C, D and E left TODO (not researched in this run)."
+  coder_notes: "Translations named: Ross (Metaphysics, Nicomachean Ethics) and Hardie and Gaye (Physics), all read on the MIT Internet Classics Archive, which prints no Bekker numbers; Bekker locators were added by the coder and verified by the fallacy_catalog audit of 3f4817e. The quotes are marked 'secondary quotation' because the archive is an unofficial web copy, not an edition; that caps every worldview field at 0.7 (§7). Basis written_profession: SEP §2 calls the surviving works lecture notes and in-house compilations for auditors; they are written for others, but if read as unpublished the private ceiling (0.7) gives the same certainty. Coder's call: C, D and E left TODO (not researched in this run)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -193,9 +203,8 @@ review:
   controversies: []
   data_quality_flags:
     - "Britannica blocked (Cloudflare, 2026-10-15); basics from SEP alone, so 0.7."
-    - "Bekker locators are approximate (web copy prints none)."
   open_questions:
-    - "Check all quotations and Bekker numbers against Barnes (ed.), The Complete Works of Aristotle (1984)."
+    - "Check all quotations against Barnes (ed.), The Complete Works of Aristotle (1984)."
     - "Score C, D and E (providence, afterlife of nous in De Anima III.5, status of myth)."
     - "Scholarly reading of 'up to us' (Meyer, Bobzien) to settle B 3 vs the alternative 4."
 
@@ -270,7 +279,7 @@ Father Nicomachus; the Academy [S1].
 
 ## Adult working worldview
 
-A separate first mover that moves as an object of love [S2, Λ.7]; nature regular 'if there is no impediment' [S3, II.8]; human choice 'in our own power' [S4, III.5].
+A separate first mover that moves as an object of love [S2, Λ.7]; nature regular 'if there is no impediment' [S3, II.8]; human choice 'in our own power', free will placed in nature [S4, III.5].
 
 ## Heritage (context only)
 
