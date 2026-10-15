@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 50 |
+| stub | 46 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 26 |
+| draft — unreviewed | 30 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 52 | 177 | 2 | 0 | 22.5% |
-| origins | 281 | 111 | 168 | 2 | 0 | 39.5% |
-| metaphysics | 847 | 134 | 713 | 0 | 0 | 15.8% |
-| lio_axes | 385 | 69 | 250 | 52 | 14 | 17.9% |
-| epistemology | 77 | 12 | 65 | 0 | 0 | 15.6% |
-| ethics | 77 | 12 | 64 | 1 | 0 | 15.6% |
+| classification | 231 | 57 | 172 | 2 | 0 | 24.7% |
+| origins | 283 | 119 | 162 | 2 | 0 | 42.0% |
+| metaphysics | 847 | 140 | 707 | 0 | 0 | 16.5% |
+| lio_axes | 385 | 72 | 230 | 66 | 17 | 18.7% |
+| epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
+| ethics | 77 | 13 | 63 | 1 | 0 | 16.9% |
 | practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2283 | 432 | 1780 | 57 | 14 | 18.9% |
+| **all** | 2285 | 456 | 1741 | 71 | 17 | 20.0% |
 
 ### Systems that are past stub stage
 
@@ -238,13 +238,17 @@ Display label status:
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
+| KANT | Kantianism | draft — unreviewed | 12/31 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
 | OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
+| PHENOM | Phenomenology | draft — unreviewed | 4/29 | not started |
 | PLATO | Platonism | draft — unreviewed | 30/31 | not started |
 | PRAG | Pragmatism | draft — unreviewed | 5/29 | not started |
 | RATN | Rationalism | draft — unreviewed | 5/29 | not started |
+| SCEPT | Scepticism (Skepticism) | draft — unreviewed | 4/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
+| UTIL | Utilitarianism | draft — unreviewed | 4/29 | not started |
