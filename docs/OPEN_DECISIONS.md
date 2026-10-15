@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33) and 2026-10-15 (P38, P39, P40, P41). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33) and 2026-10-15 (P38, P39, P40, P41, P42). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-15 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -67,18 +67,19 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P39 | Undated works: when no listed lasting contribution can be dated (ancient treatises with no known chronology), first_lasting_contribution_year, major_work_period, working_years and age stay UNKNOWN; era_bucket is still filled when every year of the person's adult life falls in one bucket, at the certainty of the life dates | medium-high | DECIDED (v8's pick) 2026-10-15 (stage 3 batch D, Archimedes, Aristotle) |
 | P40 | Necessity without "laws": a stated strict necessity that explicitly rules out exceptions or chance (not every use of the word 'necessity') scores B_cause 4 even when the word 'law' is rejected; at most 0.7, alternative BELOW_THRESHOLD | medium | DECIDED (v8's pick) 2026-10-15 (stage 3 batch E, Nietzsche) |
 | P41 | Lawgiver denial without a no-exception claim: P35's rule (never B 4 without a stated no-exception) extends to non-scientists whose statement denies a lawgiver but does not claim exceptionless law; B 3 at 0.5, alternative 4 | medium | DECIDED (v8's pick) 2026-10-15 (audit of stage 3 batch D, RQ1, Russell) |
+| P42 | Texts of unknown or disputed authorship: a text handed down under a person's name (a corpus, an oral epic) is the person's own words only if a source read attributes that specific text to them; otherwise it is context only and scores nothing. A later writer's summary of the person's doctrine (doxography) is reported speech | medium-high | DECIDED (v8's pick) 2026-10-15 (stage 3 batch F, Hippocrates, Homer) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, and P38–P41 on 2026-10-15; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, and P38–P42 on 2026-10-15; all are listed under "Decided".
 
 
 ## Decided
 
-All 56 items, in id order (P6–P41 are placed after P5, S7 after S6).
+All 57 items, in id order (P6–P42 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -774,6 +775,13 @@ Process:
 - **Why.** Denying a lawgiver is a claim about where laws come from, not about whether nature admits exceptions. As with P35, a flat 4 would credit a "no exceptions" view the person never stated.
 - **Effect on mid_basin.** None: B values under this rule are at 0.5, under the test's 0.7 bar, and A decides the A ≥ 3 branch.
 - **Applied to:** Russell, B_cause 4 → 3 at 0.5, alternative 4 ('natural laws are a description of how things do in fact behave', Why I Am Not a Christian, 1927; the same passage says atoms are 'much less subject to law than people thought'). Every other B 4 record was checked: the non-scientists (Hume, Kant, Nietzsche, Spinoza) state no exceptions, no miracles or no chance; Lovelace and Riemann do not deny a lawgiver. No other record changes.
+
+### P42. Texts of unknown or disputed authorship
+**DECIDED (v8's pick, 2026-10-15, stage 3 batch F).**
+- **Rule.** A text handed down under a person's name (a corpus such as the Hippocratic writings, an oral epic) counts as the person's own words only if a source read attributes that specific text to them. Otherwise it is context only: it may be quoted in `statements` with a note, but it scores no code or axis, and it does not make the person a scientist. A later writer's summary of the person's doctrine (doxography, such as Meno's report of Hippocrates' disease theory) is reported speech under CODING_GUIDE §7 and cannot score alone. Events and characters' words in a narrative are not the author's view (as for any fiction).
+- **Why.** The coding unit is the person's own avowed or reconstructable worldview (v7.1 rule 1). When authorship is unknown, a corpus's views belong to its unknown authors.
+- **Applied.** Hippocrates: On the Sacred Disease (natural cause of epilepsy) is context only, and B_cause is BELOW_THRESHOLD (theory known only from Meno's report). Homer: nothing in the Iliad or Odyssey is coded as the poet's view; all axes UNKNOWN.
+- **Result-changing.** No: both have A_locus UNKNOWN, so neither would be plotted under any reading of B.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
