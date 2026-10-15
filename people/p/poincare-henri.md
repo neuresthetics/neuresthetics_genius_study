@@ -101,7 +101,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, which takes precedence (§6, P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Coder's call: his essay on chance (Science and Method) and the 1909 remarks on religion were not read in a citable text, so no statement is used. His conventionalism about geometry and laws is not a claim about exceptions in nature and does not move B."
+  coder_notes: "Coder's call: his essay on chance (Science and Method) and the 1909 remarks on religion were not read in a citable text, so no statement is used. His conventionalism about geometry and laws is not a claim about exceptions in nature and does not move B. His essay 'Chance' (Le hasard, in Science and Method, 1908) could later supply a statement in his own words under P40 (fallacy_catalog audit of 64605bd); the score is unchanged until it is read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

@@ -79,7 +79,7 @@ worldview:
   self_described_science_religion_relation: {value: BELOW_THRESHOLD, how_known: "Only the 1951 private letter to Jaspers, known here through a Spanish quotation (S3).", note: "Single private letter; secondary quotation; translation of a translation."}
   primary_system:
     value: BELOW_THRESHOLD
-    how_known: "One private letter to Jaspers (4 March 1951), read only as quoted in Spanish by Araos (S3): a 'trust' in God, 'distinct from faith', and traditional religion, 'Jewish or Christian', no longer interests her. A single private letter is below 0.5 unless a scholar backs a reading (§3); Araos backs 'creía en Dios', but that names no system."
+    how_known: "One private letter to Jaspers (4 March 1951), to be cited from the Arendt–Jaspers Briefwechsel (Piper 1985) or Kimber's English (Harcourt 1992) (S5), letter of 4 March 1951; the text was read here only as quoted in Spanish by Araos (S3, secondary pointer) and in a German excerpt (S6): a 'trust' in God, 'distinct from faith', and traditional religion, 'Jewish or Christian', no longer interests her. A single private letter is below 0.5 unless a scholar backs a reading (§3); Araos backs 'creía en Dios', but that names no system."
     note: "The letter supports belief in God of some kind but excludes JUDA and CHRIST as practised, and says nothing on revelation, creation or intervention. No code fits without a guess. Coder's call: BELOW_THRESHOLD."
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
@@ -96,14 +96,23 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "B_cause is UNKNOWN, which takes precedence (§6, P19)."}
   statements:
     - text: "Abro mi camino en la vida con una especie de confianza (¿infantil? Porque es incuestionada) en Dios"
-      cites: [{source: S3, locator: "opening paragraph and note 1"}]
+      cites: [{source: S5, locator: "letter of 4 March 1951"}, {source: S3, locator: "opening paragraph and note 1 (secondary pointer)"}]
       date: "1951-03-04"
       context: "Letter to Karl Jaspers, answering his question whether Yahweh had not vanished too far from view, after he received The Origins of Totalitarianism."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Spanish rendering by Araos, read through a search-index excerpt. Primary check pending against Hannah Arendt/Karl Jaspers, Correspondence 1926–1969, ed. Lotte Köhler and Hans Saner, trans. Robert and Rita Kimber (New York: Harcourt Brace Jovanovich, 1992), letter of 4 March 1951 (not read), or Briefwechsel 1926–1969 (Piper)."
+      note: "Spanish rendering by Araos, read through a search-index excerpt. Primary check pending against Hannah Arendt/Karl Jaspers, Correspondence 1926–1969, ed. Lotte Köhler and Hans Saner, trans. Robert and Rita Kimber (New York: Harcourt Brace Jovanovich, 1992), letter of 4 March 1951 (not read), or Briefwechsel 1926–1969 (Piper). Primary cite is now S5 (letter of 4 March 1951; page numbers not verified). The 'trust in God' clause is confirmed only from a full Spanish copy matching Araos; the German excerpt seen (S6) starts after it (fallacy_catalog audit of 64605bd)."
+    - text: "Alle überlieferte Religion, jüdische oder christliche, sagt mir als solche gar nichts mehr"
+      cites: [{source: S5, locator: "letter of 4 March 1951"}, {source: S6, locator: "German quotation of the letter"}]
+      date: "1951-03-04"
+      context: "Same letter to Jaspers. Supporting context: all traditional religion, Jewish or Christian, means nothing to her any more as such."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-15
+      note: "German original as quoted on diemorgengab.at (TzN, June 2021), reported by fallacy_catalog's audit; not checked against the printed Briefwechsel, page not verified. Supporting context only; scores nothing."
   changes_over_life: []
   coder_notes: "Coder's call: the code stays BELOW_THRESHOLD because the only statement is one private letter, read in a Spanish secondary quotation, and it names no system. A 1965 Denktagebuch entry ('since I was seven I have always thought about God, but never reflected on God', via S3) and a published 1950 essay on religion and intellectuals (via a magazine column) were seen only in secondary excerpts and not used."
 
@@ -185,6 +194,22 @@ sources:
     accessed: 2026-10-15
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: scholarly edition
+    author: "Hannah Arendt and Karl Jaspers"
+    citation: "Arendt, Hannah, and Karl Jaspers. Briefwechsel 1926–1969. Ed. Lotte Köhler and Hans Saner. Munich: Piper, 1985. English: Correspondence 1926–1969, trans. Robert and Rita Kimber. New York: Harcourt Brace Jovanovich, 1992. Letter of 4 March 1951."
+    accessed: 2026-10-15
+    reliability_note: "Not read directly; cited by letter date only (page numbers not verified). Wording known through S3 (Spanish) and S6 (German excerpt)."
+    used_for: [worldview]
+  - id: S6
+    type: secondary
+    kind: other
+    author: "diemorgengab.at"
+    citation: "diemorgengab.at, TzN (Juni 2021), quoting Arendt's letter to Jaspers of 4 March 1951 in German."
+    accessed: 2026-10-15
+    reliability_note: "Reported by fallacy_catalog's audit of 64605bd; not opened by the coder; the excerpt starts after the 'trust in God' clause."
+    used_for: [worldview]
 ---
 
 # Hannah Arendt
@@ -193,7 +218,7 @@ sources:
 
 ## Summary
 
-Hannah Arendt (1906–1975), German-born American political philosopher, author of The Origins of Totalitarianism, The Human Condition and Eichmann in Jerusalem [S1, S2]. The only worldview evidence found is one private letter to Jaspers (1951), read in Spanish quotation [S3]. Draft: primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN.
+Hannah Arendt (1906–1975), German-born American political philosopher, author of The Origins of Totalitarianism, The Human Condition and Eichmann in Jerusalem [S1, S2]. The only worldview evidence found is one private letter to Jaspers (1951), in her letter to Jaspers of 4 March 1951 [S5], read in Spanish quotation [S3] and a German excerpt [S6]. Draft: primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN.
 
 ## Life and work
 
@@ -209,7 +234,7 @@ German-Jewish family; Hannover and Königsberg; doctorate on Augustine [S1, S2].
 
 ## Adult working worldview
 
-To Jaspers in 1951 she wrote of a 'trust' in God distinct from faith, and said traditional religion, Jewish or Christian, no longer interested her [S3]. One private letter, read only in secondary quotation, names no system and no locus, so nothing is scored.
+To Jaspers in 1951 she wrote of a 'trust' in God distinct from faith, and said traditional religion, Jewish or Christian, no longer interested her [S5, S3]: 'Alle überlieferte Religion, jüdische oder christliche, sagt mir als solche gar nichts mehr' [S6]. One private letter, read only in secondary quotation, names no system and no locus, so nothing is scored.
 
 ## Heritage (context only)
 
@@ -230,3 +255,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Unclear [S1
 ## Research log
 
 - 2026-10-15: Read SEP and Britannica; web search found the 1951 Jaspers letter via Araos (Spanish). The Araos page and PDF did not load directly; excerpts only.
+- 2026-10-15: fallacy_catalog audit of 64605bd (HOLD): primary cite moved to the Briefwechsel / Kimber (S5, by date); German line added from S6; Araos kept as secondary pointer. Code stays BELOW_THRESHOLD.

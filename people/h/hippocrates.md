@@ -86,7 +86,7 @@ worldview:
     E_scope: {value: UNKNOWN, how_known: "Nothing in his own words (P7)."}
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, which takes precedence (§6, P19)."}
   statements:
-    - text: "it appears to me to be nowise more divine nor more sacred than other diseases, but has a natural cause from the originates like other affections"
+    - text: "it appears to me to be nowise more divine nor more sacred than other diseases, but has a natural cause from which it originates like other affections"
       cites: [{source: S2, locator: "opening sentence"}]
       date: "-400"
       context: "Opening of On the Sacred Disease (Hippocratic Corpus), on epilepsy. Author unknown; not attributed to Hippocrates (S1). Context only; not used to score."
@@ -94,7 +94,7 @@ worldview:
       kind: "other"
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
-      note: "Francis Adams translation, Internet Classics Archive web copy, wording as printed there (including 'from the originates'). Check against Adams, The Genuine Works of Hippocrates (London: Sydenham Society, 1849), or W. H. S. Jones, Loeb vol. 2 (1923), pending. No section numbers in the web copy. Date '-400' is the archive's nominal 'Written 400 B.C.E', not a documented date."
+      note: "Francis Adams translation, Internet Classics Archive web copy, wording corrected to Adams's 'from which it originates' (the web copy prints 'from the originates', a transcription slip; fallacy_catalog audit of 64605bd). Check against Adams, The Genuine Works of Hippocrates (London: Sydenham Society, 1849), or W. H. S. Jones, Loeb vol. 2 (1923), pending. No section numbers in the web copy. Date '-400' is the archive's nominal 'Written 400 B.C.E', not a documented date."
     - text: "And these things are divine, so that there is no necessity for making a distinction, and holding this disease to be more divine than the others, but all are divine, and all human."
       cites: [{source: S2, locator: "closing section (on causes: cold, the sun, the winds)"}]
       date: "-400"
