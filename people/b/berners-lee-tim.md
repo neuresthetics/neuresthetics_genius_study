@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 77). Basics from Britannica (Michael Aaron Dennis); Top Questions not cited. Worldview from his own essay 'The World Wide Web and the \"Web of Life\"' (1998, w3.org). Not a scientist under P30 (computer science). primary_system BELOW_THRESHOLD (Unitarian Universalist, no study code); A BELOW_THRESHOLD; B UNKNOWN (P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change: primary_system stays BELOW_THRESHOLD (no UU code, not mapped to SECHUM); UU recorded under nominal_affiliations."}
 
 identity:
   id: berners-lee-tim
@@ -82,7 +83,7 @@ worldview:
     basis: written_profession
     certainty: 0.5
     cites: [{source: S2, locator: "'Where I'm coming from'; 'Tolerance'"}]
-    rationale: "A Unitarian Universalist from after the working years; the study has no UU system code, and the essay states no view of God ('those who believe in some sort of a God different from theirs (if they use the term)'). Candidates SECHUM and CHRIST (liberal, 'Christian philosophy but without the dogma')."
+    rationale: "A Unitarian Universalist from after the working years; the study has no UU system code, and the essay states no view of God ('those who believe in some sort of a God different from theirs (if they use the term)'). Candidates SECHUM and CHRIST (liberal, 'Christian philosophy but without the dogma'). Kept BELOW_THRESHOLD after the batch L audit; UU is recorded under nominal_affiliations."
     how_known: "His own essay (1998), after the working years (1989–91)."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:

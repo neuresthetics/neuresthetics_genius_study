@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 74). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited). Worldview from Brief Answers to the Big Questions (2018, posthumous), quoted by Euronews and Big Think (secondary quotations; book not read). Scientist under P30. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alt BELOW_THRESHOLD); B 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change to scores. Noted Euronews' report that colleagues and family finished the book; The Grand Design (2010) and the 2014 El Mundo interview listed as unverified leads."}
 
 identity:
   id: hawking-stephen
@@ -125,7 +126,7 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-15
   changes_over_life: []
-  coder_notes: "Coder's call. The book was completed by his family and publishers from his archive of essays and interviews (S3), so a passage may predate 2018; dated 2018 here. A Brief History of Time (1988) and The Grand Design (2010) not read; they are the leads for the working years."
+  coder_notes: "Coder's call. The book was completed by his family and publishers from his archive of essays and interviews (S3), and Euronews says colleagues and family finished it (S2), so a passage may predate 2018; dated 2018 here. Unverified leads: The Grand Design (2010; reported as 'not necessary to invoke God') and his 2014 El Mundo interview (reported self-description as an atheist). A Brief History of Time (1988) and The Grand Design (2010) not read; they are the leads for the working years."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -161,6 +162,7 @@ review:
   data_quality_flags: []
   open_questions:
     - "Read Brief Answers ch. 'Is there a God?' directly, and A Brief History of Time (1988) for the working years."
+    - "Unverified leads: The Grand Design (2010) and the 2014 El Mundo interview."
 
 sources:
   - id: S1
@@ -179,7 +181,7 @@ sources:
     citation: "Euronews. \"'There is no God and no afterlife' Hawking concludes in final book.\" 16 October 2018. https://www.euronews.com/2018/10/16/there-is-no-god-and-no-afterlife-hawking-concludes-in-final-book."
     url: "https://www.euronews.com/2018/10/16/there-is-no-god-and-no-afterlife-hawking-concludes-in-final-book"
     accessed: 2026-10-15
-    reliability_note: "News report quoting the book; page did not load, wording seen in search result text only, agrees with S3."
+    reliability_note: "News report quoting the book; says it was finished by colleagues and family from his archives; page did not load here, wording seen in search result text only, agrees with S3."
     used_for: [worldview, timing, lane_b]
   - id: S3
     type: secondary

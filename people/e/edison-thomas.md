@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 76). Basics from Britannica (Robert E. Conot), signed body through the Newark years; Top Questions not cited. Worldview from Edward Marshall's interview, 'No Immortality of the Soul', New York Times, 2 October 1910 (transcript on sundaymagazine.org; NYT archive abstract; Edison Papers bibliography). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 (0.5, alt 3; interview, partly the interviewer's paraphrase); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). B_cause 4 -> BELOW_THRESHOLD: the strict wording is Marshall's paraphrase (reported speech cannot score alone, §7) and he is an inventor (P33). If the full NYT p. 15 text gives a line in his own voice, B becomes 3 (0.5, alternative 4) under P41. Timing fields updated."}
 
 identity:
   id: edison-thomas
@@ -90,13 +91,7 @@ worldview:
     - {code: AGNOS, reason: "'I don't know' on what becomes of the will."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) No statement placing or denying God in what was read; the denial of immortality does not place God (P20)."}
-    B_cause:
-      value: 4
-      basis: recorded_interview
-      certainty: 0.5
-      cites: [{source: S2, locator: "transcript (opening)"}, {source: S4, locator: "p. 15 (abstract)"}]
-      how_known: "(interview) The no-exception claim is the interviewer's paraphrase (reported speech); his own words add 'nature's methods are not loose' (NYT p. 15, OCR abstract); 0.5, alternative named."
-      rationale: "He had come to the conclusion 'that there is no \"supernatural\" ... that all there is ... can or will, soon or late, be explained along material lines' (Marshall's paraphrase): a stated order with no exception (P40). Named alternative: 3 (P41), since the strict wording is the interviewer's, not his."
+    B_cause: {value: BELOW_THRESHOLD, how_known: "(interview) The no-exception wording ('no \"supernatural\" ... explained along material lines') is Marshall's paraphrase, and reported speech cannot score alone (§7); he is an inventor, not a scientist (P33), so B needs a statement in his own words. 'Nature's methods are not loose' comes only from an OCR snippet of NYT p. 15 and is not in the transcript read.", note: "If the full NYT p. 15 text gives a line in his own voice, B becomes 3 at 0.5, alternative 4, under P41."}
     C_ledger: {value: UNKNOWN, how_known: "(interview) He denies reward in heaven ('Shall I, if I am good and earn reward, go to heaven when I die? No -- no'), which bears on C; not scored at this reading (coder's call)."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
@@ -132,8 +127,8 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1874", certainty: 0.5, cites: [{source: S1, locator: "Newark paragraph"}], how_known: "Only one dated listed contribution in the body read (P29, P30); TODO: date the phonograph and lamp from the signed body."}
   age_at_first_lasting_contribution: {value: 27, certainty: 0.5, cites: [{source: S1, locator: "opening; Newark paragraph"}], how_known: "1874 − 1847 = 27 (P30)."}
-  first_evidence_of_lio_type_views: {value: "1910, age 63: no 'supernatural'; all 'explained along material lines' (interviewer's paraphrase)", year: 1910, age: 63, certainty: 0.5, cites: [{source: S2, locator: "transcript"}], how_known: "(interview) Earlier interviews (e.g. with Lathrop, S3) not read: 'earlier works not read' (P30 #7)."}
-  lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S2, locator: "transcript"}], how_known: "1910, after the dated 1874; the period is incompletely dated."}
+  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No axis scored at 3 or 4 (P27 anchor)."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "transcript"}], how_known: "B is BELOW_THRESHOLD; nothing scored."}
   worldview_during_major_work: {value: BELOW_THRESHOLD, how_known: "As primary_system."}
 
 lane_b:
@@ -210,7 +205,7 @@ sources:
 
 ## Summary
 
-Thomas Edison (1847–1931), American inventor [S1]. Draft: primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 at 0.5 (alt 3); mid_basin BELOW_THRESHOLD. Not plotted.
+Thomas Edison (1847–1931), American inventor [S1]. Draft: primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 
