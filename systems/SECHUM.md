@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from the Council for Secular Humanism page (primary self-definition). A, B, C, D 4; E 4 at 0.5. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S2 audit note: Humanist Manifesto II cited as quoted on the Council page.'
 identity:
   id: SECHUM
   v7_1_number: 8
@@ -67,7 +70,7 @@ origins:
     cites:
     - source: S1
       locator: A consequentialist ethical system
-    how_known: Quoted on the page.
+    how_known: Quoted on the Council for Secular Humanism page ('No god will save us … we must save ourselves'); the Manifesto itself was not read.
   - value: A Secular Humanist Declaration
     certainty: 0.7
     cites:
@@ -146,7 +149,7 @@ lio_axes:
     cites:
     - source: S1
       locator: A consequentialist ethical system
-    how_known: Own statement; ledger language is the coder's, 0.7.
+    how_known: The Council page states it, quoting Humanist Manifesto II (1973) ('No god will save us'); stated by the system, so 0.7 under P44(c).
   D_authority:
     value: 4
     rationale: The scientific method; knowledge gained without appeal to the natural world is unreliable.
@@ -162,7 +165,7 @@ lio_axes:
     cites:
     - source: S1
       locator: A naturalistic philosophy
-    how_known: Fixed by the naturalist stance but not stated; 0.5.
+    how_known: 'Implied by the naturalist stance, not stated: 0.5 under P44(c).'
 epistemology:
   value: TODO
 ethics:
@@ -280,3 +283,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
+- 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): Manifesto II cited as a quotation on the Council page; C and E cite P44(c).

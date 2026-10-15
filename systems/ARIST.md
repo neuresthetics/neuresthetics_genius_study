@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from SEP "Aristotle", "Aristotle''s Natural Philosophy" and "Aristotle''s Ethics". A 1 at 0.5; B BELOW_THRESHOLD (alt 3); C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S2 audit (WEAKEN #4b): god_nature_relation stance → ''separate first cause, not creator (eternal world)'' (new schema value, ruled 2026-10-15). No score change.'
 identity:
   id: ARIST
   v7_1_number: 11
@@ -88,7 +91,7 @@ origins:
 metaphysics:
   god_nature_relation:
     value: '''the unmoved mover of the universe, a supra-physical entity, without which the physical domain could not remain in existence''; ''the first and final cause of all motion''.'
-    stance: creator distinct from creation
+    stance: separate first cause, not creator (eternal world)
     certainty: 1.0
     cites:
     - source: S2
@@ -96,7 +99,7 @@ metaphysics:
     - source: S1
       locator: §3
     how_known: SEP.
-    note: '''creator distinct from creation'' is the nearest schema stance; SEP gives an eternal universe, not creation.'
+    note: 'New stance value added for this case (S2 audit RQ1, ruled 2026-10-15): SEP gives an eternal universe whose motion depends on a separate unmoved mover, not a created world.'
   deity_personal:
     value: TODO
     stance: TODO
@@ -289,3 +292,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
+- 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): stance set to the new value; no score change.

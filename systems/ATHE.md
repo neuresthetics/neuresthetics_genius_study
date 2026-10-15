@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S1 audit: A cites P44(a); open question closed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'P44(c): C and E cite the naturalism rule (implied, 0.5). No score change.'
 identity:
   id: ATHE
   v7_1_number: 1
@@ -163,7 +166,7 @@ lio_axes:
     cites:
     - source: S1
       locator: '''Atheism as rejection of religious beliefs'''
-    how_known: 0–4 scale (P1). Inferred from the denial, not stated in the sources, so 0.5.
+    how_known: 'Implied by the naturalist stance, not stated: 4 at 0.5 under P44(c).'
   D_authority:
     value: 4
     rationale: 'Observation outranks revelation: ''The empirical method, and the empirical method alone ... affords a reliable method for establishing what is in fact the case''; claimed ''spiritual facts'' or ''transcendent facts'' ''have not been shown''.'
@@ -179,7 +182,7 @@ lio_axes:
     cites:
     - source: S3
       locator: §1.2
-    how_known: 0–4 scale (P1). Inferred from causal closure, so 0.5.
+    how_known: 'Implied by the naturalist stance, not stated: 4 at 0.5 under P44(c).'
 epistemology:
   value: 'Evidence and the burden of proof: the theist ''needs to present the evidence''; the atheist should be ''a thorough and consistent fallibilist''.'
   certainty: 1.0
@@ -361,3 +364,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): A under P44(a); note that a person coded ATHE keeps B from their own evidence (checked: Chandrasekhar, Hawking, Marx, Nietzsche, Turing all do).
+- 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): C and E cite P44(c); values unchanged.

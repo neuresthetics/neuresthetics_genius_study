@@ -423,7 +423,7 @@ The 77 codes (display labels; two differ from v7.1, both approved: CLTHEI by S1,
 
   | item | allowed stances |
   |---|---|
-  | god_nature_relation | identity · God in Nature and beyond it · creator distinct from creation · many gods within nature · no God · not addressed · varies by school |
+  | god_nature_relation | identity · God in Nature and beyond it · creator distinct from creation · separate first cause, not creator (eternal world) · many gods within nature · no God · not addressed · varies by school |
   | deity_personal | personal · impersonal · both / disputed · no deity · not addressed · varies by school |
   | intervention | none · rare · regular · not addressed · varies by school |
   | miracles | denied · reinterpreted as natural · affirmed · not addressed · varies by school |
@@ -436,6 +436,8 @@ The 77 codes (display labels; two differ from v7.1, both approved: CLTHEI by S1,
 
 - **LIO axes** use the same 0–4 scale as people (P1), scored for the official or scholarly form, with a `rationale`. System records have no `basis` field. Use certainty 1.0 for positions the sources state directly, 0.7 for a coder's reading of what they say, and 0.5 where scholars disagree.
 - **When to score a system axis** (P44, v8's pick, 2026-10-15). (a) A system with no God or spiritual being gets A_locus 4 (extends P38). (b) Give a value only where the system's stance itself fixes it; use `UNKNOWN` where the sources read are silent and `BELOW_THRESHOLD`, with the alternative named, where members or schools differ.
+- **Naturalism fixes C and E** (P44(c), v8's pick, 2026-10-15). In a system whose stance is that nature is all there is, C_ledger and E_scope are 4: certainty 0.5 when only implied, 0.7 when the system states it in words. A direct statement in the sources on the axis itself is scored as usual.
+- **Stance 'separate first cause, not creator (eternal world)'** (ruled 2026-10-15, S2 audit RQ1): for a supra-physical first cause of an eternal world that does not create it (Aristotle's unmoved mover).
 - **Adherents** are context only. Give year and scope, and cite a demographic source. Never use them as a denominator.
 - **Science stance**: historical (in the periods the roster covers) and current (official bodies or leading scholars). Cite both, and keep them separate.
 - **Coding guidance**: `use_when` quotes the v7.1 rule verbatim where one names the code, then adds detail. `do_not_use_when` names the usual mistakes and the code to use instead. `neighbors` lists codes that are easily confused with this one.

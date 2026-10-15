@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from the Sunday Assembly "Learn About Us" page. A BELOW_THRESHOLD (inclusive of all beliefs); others UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S2 audit note: the motto quoted as its three headings.'
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -124,7 +127,7 @@ ethics:
   value: TODO
 practice:
   ritual_and_practice:
-    value: Congregations where 'people sing songs, hear inspiring talks, and create community'; motto 'Live Better, Help Often, Wonder More'.
+    value: 'Congregations where ''people sing songs, hear inspiring talks, and create community''. The motto has three headed items: ''Live Better'', ''Help Often'', ''Wonder More''.'
     certainty: 1.0
     cites:
     - source: S1
@@ -240,3 +243,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
+- 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): motto quoted as three headings.
