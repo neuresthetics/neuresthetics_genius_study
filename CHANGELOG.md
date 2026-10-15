@@ -2,6 +2,16 @@
 
 ## v8 (in progress)
 
+### Systems batch S6 (2026-10-15, unreviewed)
+
+- **PANDEI** (P45 lower tier: Lane, *Zygon* 2021, peer-reviewed): A 4, B 4, D 4 at 0.5; C, E UNKNOWN.
+- **PANEND** (P45 lower tier, one passage in Lane 2021): A 2 at 0.5; B BELOW_THRESHOLD (alt 3); rest UNKNOWN.
+- **BUDDH** (SEP "Buddha"): A BELOW_THRESHOLD (alt 4); B BELOW_THRESHOLD; C 3 at 0.5 (alt 4); D, E UNKNOWN.
+- **JAIN** (IEP "Jain Philosophy"; Britannica "Jainism"): A 3 at 0.5 (alt 4); C 3 at 0.5 (alt 4); E 4 at 0.5; B, D UNKNOWN.
+- **SOLIP** (IEP "Solipsism and the Problem of Other Minds"): all axes UNKNOWN.
+- **BAHAI** stays a stub: the Britannica article timed out on every fetch, so no quotation could be checked.
+- v7.1 scores and notes unchanged. No person record changes.
+
 ### Roster
 
 The roster is rebuilt from the five raw model lists (`scripts/rebuild_roster.py`; `--check` reproduces it byte for byte).

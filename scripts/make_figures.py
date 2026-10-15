@@ -36,6 +36,7 @@ SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM",
                    "SECHUM", "SUNASM", "PRAG", "ARIST", "EFFALT", "TRNSHM",
                    "ABSURD", "CYNIC", "EPICUR", "EXIST", "NIHIL", "OBJCT",
                    "SCEPT", "KANT", "PHENOM", "UTIL",
+                   "PANDEI", "PANEND", "BUDDH", "JAIN", "SOLIP",
                    "DETERM", "LVSAT", "PANENT", "HEDON", "PANPSY", "IDEAL"]
 AXES = ["A_locus", "B_cause", "C_ledger", "D_authority", "E_scope"]
 DPI = 170

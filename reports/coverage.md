@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 40 |
+| stub | 35 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 36 |
+| draft — unreviewed | 41 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 63 | 166 | 2 | 0 | 27.3% |
-| origins | 284 | 129 | 153 | 2 | 0 | 45.4% |
-| metaphysics | 847 | 149 | 698 | 0 | 0 | 17.6% |
-| lio_axes | 385 | 76 | 200 | 86 | 23 | 19.7% |
+| classification | 231 | 67 | 162 | 2 | 0 | 29.0% |
+| origins | 284 | 135 | 147 | 2 | 0 | 47.5% |
+| metaphysics | 847 | 156 | 691 | 0 | 0 | 18.4% |
+| lio_axes | 385 | 84 | 175 | 100 | 26 | 21.8% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 14 | 62 | 1 | 0 | 18.2% |
 | practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2286 | 486 | 1686 | 91 | 23 | 21.3% |
+| **all** | 2286 | 511 | 1644 | 105 | 26 | 22.4% |
 
 ### Systems that are past stub stage
 
@@ -226,6 +226,7 @@ Display label status:
 | ARIST | Aristotelianism | draft — unreviewed | 11/32 | not started |
 | ATHE | Atheism (naturalistic/materialistic – no gods + philosophical naturalism) | draft — unreviewed | 16/29 | not started |
 | BRGHTS | Brights (The Brights Movement) | draft — unreviewed | 9/29 | not started |
+| BUDDH | Buddhism | draft — unreviewed | 6/29 | not started |
 | CHRIST | Christianity | draft — unreviewed | 32/33 | not started |
 | CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
@@ -240,11 +241,14 @@ Display label status:
 | HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
 | IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
+| JAIN | Jainism | draft — unreviewed | 8/29 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
 | LVSAT | LaVeyan Satanism (Church of Satan) | draft — unreviewed | 8/30 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
 | OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
+| PANDEI | Pandeism | draft — unreviewed | 7/29 | not started |
+| PANEND | Panendeism | draft — unreviewed | 2/29 | not started |
 | PANENT | Panentheism (Process Theology, some Kabbalah/Advaita forms) | draft — unreviewed | 6/29 | not started |
 | PANPSY | Panpsychism (consciousness inherent in matter) | draft — unreviewed | 2/29 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
@@ -254,6 +258,7 @@ Display label status:
 | RATN | Rationalism | draft — unreviewed | 5/29 | not started |
 | SCEPT | Scepticism (Skepticism) | draft — unreviewed | 4/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
+| SOLIP | Solipsism | draft — unreviewed | 2/29 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
