@@ -148,6 +148,7 @@ review:
   controversies: []
   data_quality_flags: []
   open_questions:
+    - "Leads from fallacy_catalog's audit of 5ff29b4, not added as sources because their full bibliographic details were not verified: a Van Wijnen (2017) facsimile of the 2 Chronicles page, shown on the Bach studies site (reading 'Musiq[ue]'), and Renate Steiger's essay on 'Gnadengegenwart'."
     - "Read the Calov annotations in Leaver (ed.), J. S. Bach and Scripture (Concordia, 1985) or Bach-Dokumente; check a second biography (Wolff) for basics."
 
 sources:

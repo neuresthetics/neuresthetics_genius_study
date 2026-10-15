@@ -225,6 +225,10 @@ def not_scorable_summary(out):
     return ", ".join(parts)
 
 
+# People whose plotted axes rest on interview books of disputed wording (OPEN_DECISIONS P43). Ordinary recorded
+# interviews (P8) are not listed here.
+P43_PEOPLE = {"Igor Stravinsky"}
+
 CHART_CERT = 0.7  # a dot is drawn solid when both axes are at certainty >= 0.7
 
 
@@ -252,8 +256,17 @@ def people_chart_caption():
     ns = (f" **Not scorable yet:** {len(out)} coded {'person lacks' if len(out) == 1 else 'people lack'} a score on "
           f"at least one axis ({not_scorable_summary(out)}; the value is UNKNOWN or BELOW_THRESHOLD). They are not "
           f"plotted and are left out of every count here.") if out else ""
+    iv = [x for x in pts if x["name"] in P43_PEOPLE]
+    nleft = sum(1 for x in pts if x["B"] < 3)
+    ivn = ""
+    if iv:
+        names = ", ".join(f"{x['name']} (A {x['A']}, B {x['B']})" for x in iv)
+        ivn = (f" **Interview voice (P43):** {names} {'rests' if len(iv) == 1 else 'rest'} on interview statements of disputed wording "
+               f"(for Stravinsky, the Craft books), capped at 0.5 and drawn faded"
+               + (f"; {nleft} plotted {'person scores' if nleft == 1 else 'people score'} left of B 3 "
+                  f"({', '.join(x['name'].split()[-1] for x in pts if x['B'] < 3)})" if nleft else "") + ".")
     return (f"*Draft person scores: where God is (up the chart) against how things happen (across the chart). "
-            f"No region is marked. Plotted: the {len(pts)} coded people with both axes scored; {brange}.{left}{ns} "
+            f"No region is marked. Plotted: the {len(pts)} coded people with both axes scored; {brange}.{left}{ivn}{ns} "
             f"These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the "
             f"chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. "
             f"A faded dot is a less certain score "

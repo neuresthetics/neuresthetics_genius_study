@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-15
   last_updated: 2026-10-15
   change_log:
-    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 40). Basics from Britannica (White). Worldview from Per Dahl (Danish Musicology Online 2016), who quotes Conversations with Igor Stravinsky (with Robert Craft, 1959): belief in 'a personal God, a personal Devil and the miracles of the Church'. Britannica calls the Craft books 'factually unreliable', so every worldview field is capped at 0.5. primary_system CHRIST (Russian Orthodox) 0.5; A 0 at 0.5 (alt 1); B 2 at 0.5 (alt 3); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted. Ruling question raised (RQ1 batch G). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 40). Basics from Britannica (White). Worldview from Per Dahl (Danish Musicology Online 2016), who quotes Conversations with Igor Stravinsky (with Robert Craft, 1959): belief in 'a personal God, a personal Devil and the miracles of the Church'. Britannica calls the Craft books 'factually unreliable', so every worldview field is capped at 0.5. primary_system CHRIST (Russian Orthodox) 0.5; A 0 at 0.5 (alt 1); B 2 at 0.5 (alt 3); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted. Ruling question raised (RQ1 batch G), since ruled as P43. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "fallacy_catalog blind audit of 5ff29b4: all claims HOLD. RQ1 ruled by Jason as P43 (interview cap 0.5; plotted faded). CLTHEI added as a named alternative code. No value changes."}
 
 identity:
   id: stravinsky-igor
@@ -91,7 +92,7 @@ worldview:
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Chosen: Orthodox communion from 1926; personal God and Church miracles."}
-    - {code: CLTHEI, reason: "Alternative: belief in Church miracles is interventionist; not chosen as primary because the profession is confessional (Orthodox)."}
+    - {code: CLTHEI, reason: "Named alternative (fallacy_catalog audit of 5ff29b4): a personal God with live Church miracles fits interventionist personal theism; not chosen as primary because the profession is confessional (Orthodox). Not result-changing: A and B decide the plot."}
   lio_axes:
     A_locus:
       value: 0
@@ -131,7 +132,7 @@ worldview:
       note: "Dahl's quotation; primary check pending."
   changes_over_life:
     - {value: "Return to the Russian Orthodox Church", year: 1926, certainty: 0.7, cites: [{source: S1, locator: "'Life and career'"}, {source: S2, locator: "p. 61"}], how_known: "Two sources. The scored axes describe the worldview from 1926; the Firebird-to-Rite years (1910–1913) are before it, and nothing is read on them."}
-  coder_notes: "Coder's call: the only first-person evidence is from the Craft books, read in Dahl's quotation, so everything is at 0.5. A reported Venetian prayer-healing (1925) and a 1936 'I happen to be a believer' line were seen only in search excerpts and are not used. RQ1 (batch G): should a Craft-book statement score at all, and is 'the miracles of the Church' B 2 or B 3? This is the first plotted person left of B 3."
+  coder_notes: "Coder's call: the only first-person evidence is from the Craft books, read in Dahl's quotation, so everything is at 0.5. A reported Venetian prayer-healing (1925) and a 1936 'I happen to be a believer' line were seen only in search excerpts and are not used. RQ1 (batch G) was ruled by Jason as P43 (2026-10-15): Craft-book statements score, flagged as interview, capped at 0.5, and go no higher without a document in his own hand; B 2 (alternative 3) is kept. He is plotted faded; with Pascal he is one of two people plotted left of B 3, and the only one resting on a disputed interview voice."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -169,7 +170,7 @@ review:
     - {value: "Reliability of the Craft books as his own words", certainty: 0.7, cites: [{source: S1, locator: "'Life and career' ('factually unreliable')"}], how_known: "Britannica; Dahl also notes Taruskin and Walsh revisit the Craft portrayal (S2, p. 61)."}
   data_quality_flags: []
   open_questions:
-    - "Check Conversations (1959), p. 104, for the exact wording; read Walsh or Taruskin on his religion; RQ1 batch G."
+    - "Check Conversations (1959), p. 104, for the exact wording; read Walsh or Taruskin on his religion; P43 cap."
 
 sources:
   - id: S1
@@ -240,7 +241,7 @@ Everything in this section is Lane B: labeled belief, not a finding. No LIO circ
 
 ## Open questions
 
-- Conversations p. 104; Walsh; Taruskin.
+- Conversations p. 104; Walsh; Taruskin. A document in his own hand would be needed to raise any score above 0.5 (P43).
 
 ## Research log
 

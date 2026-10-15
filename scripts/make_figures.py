@@ -25,7 +25,7 @@ from matplotlib.patches import Rectangle  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from matplotlib.lines import Line2D  # noqa: E402
 import math  # noqa: E402
-from lib.records import (REPO, read_record, read_csv, person_files, people_axis_points)  # noqa: E402
+from lib.records import (REPO, read_record, read_csv, person_files, people_axis_points, P43_PEOPLE)  # noqa: E402
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -183,7 +183,8 @@ def fig_people_cause_locus(out):
             faded = cert < 0.7
             ax.scatter(x, y, s=120, color=dot, alpha=0.28 if faded else 0.95,
                        edgecolor="#999999" if faded else "black", lw=0.8, zorder=3)
-            ax.text(x + 0.05, y, short(p["name"]), ha="left", va="center", fontsize=12,
+            label = short(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")
+            ax.text(x + 0.05, y, label, ha="left", va="center", fontsize=12,
                     color="#777777" if faded else "#111111", zorder=4)
 
     ax.set_xticks(range(5), x_labels, fontsize=11.5)
@@ -206,7 +207,11 @@ def fig_people_cause_locus(out):
              ha="center", va="top", fontsize=13.5, color="#444444")
     leg = [Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="black", alpha=0.95),
            Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="#999999", alpha=0.28)]
-    ax.legend(leg, ["score as drafted", "faded = less certain score"], loc="upper left", fontsize=11,
+    names = ["score as drafted", "faded = less certain score"]
+    if any(p["name"] in P43_PEOPLE for p in pts):
+        leg.append(Line2D([0], [0], ls="", marker=""))
+        names.append("* = disputed interview wording\n   (Craft books), capped at 0.5 (P43)")
+    ax.legend(leg, names, loc="upper left", fontsize=11,
               frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
     fig.text(0.01, 0.012, "Source: draft person records in neuresthetics/neuresthetics_genius_study (people/), "
              "unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
