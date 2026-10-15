@@ -2,6 +2,13 @@
 
 ## v8 (in progress)
 
+### S6 audit fixes (2026-10-15; S6 audit 14 hold, 1 weaken)
+
+- **JAIN**: Britannica credited to G. Ralph Strohl, Paul Dundas and Britannica Editors (both names are on the byline).
+- **PANDEI, PANEND**: 0.5 cap and advocate flag kept; reliability notes confirm only Lane's general claims are scored.
+- **PANEND** B how_known: Lane infers the intervention power jointly for panentheism and panendeism; the deist half suggests it goes unused.
+- **P44(d)** (karma rule) added to OPEN_DECISIONS and CODING_GUIDE §11: an impersonal moral ledger is C 3 @0.5, alt 4. BUDDH, JAIN and CAODAI cite it; HINDU will when sourced. No values change.
+
 ### Systems batch S7 (2026-10-15, unreviewed)
 
 - **BAHAI** (Britannica "Bahāʾī Faith", editors, revised by Charles Preston; article body only): A 0 at 0.5 (alt 1); D 1 at 0.5 (alt 2); B, C, E UNKNOWN.

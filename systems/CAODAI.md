@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from Britannica "Cao Dai" (editors). A 1 (0.5, alt 0); B 1 (0.5); C 3 (0.5, alt 4); D 1 (0.5); E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S6 audit fix: C cites P44(d).'
 identity:
   id: CAODAI
   v7_1_number: 41
@@ -133,7 +136,7 @@ lio_axes:
     cites: &id002
     - source: S1
       locator: introduction
-    how_known: Impersonal karma ledger, so C 3 @0.5, alternative 4, as BUDDH and JAIN.
+    how_known: 'Karma rule (P44(d)): an impersonal moral ledger is C 3 @0.5, alternative 4. Karma and rebirth from Buddhism.'
     alternatives:
     - value: 4
       note: Named alternative.
@@ -260,3 +263,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
+- 2026-10-15 (S6 audit fix): C_ledger cites P44(d).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S6): filled from IEP "Jain Philosophy" (Webb) and Britannica "Jainism" (Dundas). A 3 (0.5, alt 4); C 3 (0.5, alt 4); E 4 (0.5); B, D UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S6 audit fix: C cites P44(d); Britannica byline credited to Strohl, Dundas and Britannica Editors.'
 identity:
   id: JAIN
   v7_1_number: 37
@@ -124,7 +127,7 @@ lio_axes:
     cites: &id002
     - source: S1
       locator: metaphysics
-    how_known: Impersonal ledger; alternative 4.
+    how_known: 'Karma rule (P44(d)): an impersonal moral ledger is C 3 @0.5, alternative 4. Karma: impersonal, but still a moral ledger.'
     alternatives:
     - value: 4
       note: Named alternative.
@@ -206,11 +209,11 @@ sources:
 - id: S2
   type: tertiary
   kind: encyclopedia
-  author: Paul Dundas; Britannica Editors
-  citation: Dundas, Paul, and Britannica Editors. "Jainism." Encyclopaedia Britannica, updated 15 September 2026. https://www.britannica.com/topic/Jainism.
+  author: G. Ralph Strohl; Paul Dundas; Britannica Editors
+  citation: Strohl, G. Ralph, Paul Dundas, and Britannica Editors. "Jainism." Encyclopaedia Britannica, updated 15 September 2026. https://www.britannica.com/topic/Jainism.
   url: https://www.britannica.com/topic/Jainism
   accessed: '2026-10-15'
-  reliability_note: Signed article; first page read. AI Top Questions ignored.
+  reliability_note: Signed article; first page read. AI Top Questions ignored. Byline lists Strohl and Dundas (checked in the Wayback copy, S6 audit fix).
 ---
 
 # Jainism (JAIN)
@@ -257,3 +260,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
+- 2026-10-15 (S6 audit fix): C_ledger cites P44(d). Britannica byline corrected.

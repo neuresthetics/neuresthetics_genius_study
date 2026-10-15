@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S6, P45 lower tier): filled from one passage in Lane, Zygon 2021. A 2 (0.5); B BELOW_THRESHOLD; rest UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S6 audit fix: B how_known reworded (joint inference; deist half suggests unused); scope note on Lane.'
 identity:
   id: PANEND
   v7_1_number: 26
@@ -90,7 +93,7 @@ lio_axes:
     how_known: P45 cap 0.5; one passage.
   B_cause:
     value: BELOW_THRESHOLD
-    how_known: '''God therefore retains power to intervene in the world “from outside”'' (S1): a power, with no statement on its use.'
+    how_known: 'Lane infers the power to intervene jointly for panentheism and panendeism: ''God therefore retains power to intervene in the world “from outside”'' (S1). The deist half of panendeism suggests the power goes unused, so no value is fixed. P45 lower tier.'
     note: 'P45 lower tier. Alternative: 3 (the deist element).'
     alternatives:
     - value: 3
@@ -172,7 +175,7 @@ sources:
   citation: 'Lane, William C. "Living God Pandeism: Evidential Support." Zygon: Journal of Religion and Science (first published 4 June 2021). https://doi.org/10.1111/zygo.12704.'
   url: https://onlinelibrary.wiley.com/doi/10.1111/zygo.12704
   accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier: peer-reviewed journal article (an anonymous reviewer is thanked) by an independent researcher who advocates pandeism; claims capped at 0.5. No encyclopedia entry exists (SEP, IEP none; Britannica pandeism page has no text).'
+  reliability_note: 'P45 lower tier: peer-reviewed journal article (an anonymous reviewer is thanked) by an independent researcher who advocates pandeism; claims capped at 0.5. No encyclopedia entry exists (SEP, IEP none; Britannica pandeism page has no text). Only Lane’s general definitional claims are scored, not his own living-God-pandeism arguments (S6 audit fix).'
 ---
 
 # Panendeism (PANEND)
@@ -221,3 +224,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
+- 2026-10-15 (S6 audit fix): B how_known; Lane scope note.

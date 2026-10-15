@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S6, P45 lower tier): filled from Lane, Zygon 2021 (peer-reviewed). A 4, B 4, D 4 at 0.5 (P45 cap); C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S6 audit fix: confirmed only Lane’s general claims are scored; 0.5 cap and advocate flag kept.'
 identity:
   id: PANDEI
   v7_1_number: 25
@@ -206,7 +209,7 @@ sources:
   citation: 'Lane, William C. "Living God Pandeism: Evidential Support." Zygon: Journal of Religion and Science (first published 4 June 2021). https://doi.org/10.1111/zygo.12704.'
   url: https://onlinelibrary.wiley.com/doi/10.1111/zygo.12704
   accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier: peer-reviewed journal article (an anonymous reviewer is thanked) by an independent researcher who advocates pandeism; claims capped at 0.5. No encyclopedia entry exists (SEP, IEP none; Britannica pandeism page has no text).'
+  reliability_note: 'P45 lower tier: peer-reviewed journal article (an anonymous reviewer is thanked) by an independent researcher who advocates pandeism; claims capped at 0.5. No encyclopedia entry exists (SEP, IEP none; Britannica pandeism page has no text). Only Lane’s general claims about pandeism are scored (A: definition; B: no Humean miracles; D: alliance with science); his living-God-pandeism (LGP) arguments are not (S6 audit fix).'
 ---
 
 # Pandeism (PANDEI)
@@ -254,3 +257,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
+- 2026-10-15 (S6 audit fix): scope note on Lane.
