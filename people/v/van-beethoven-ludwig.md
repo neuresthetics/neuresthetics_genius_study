@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 53). Basics from Britannica (Budden), signed body only (work years given only in the Top Questions box are not used). Worldview from letters in Nohl's collection, Lady Wallace's translation, Gutenberg #13065 (web copy, 0.7 cap): Heiligenstadt document 1802, letter to Zmeskall 1813. Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, CLTHEI, DEISM); A 0 at 0.7 (alt 1); B BELOW_THRESHOLD (Providence statements are about his life, not nature, P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. No datable lasting contribution in the signed body read (P39). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold; note on timing): signed Britannica sections re-checked; no dated lasting work is citable, so the timing fields stay UNKNOWN. No value changes."}
 
 identity:
   id: van-beethoven-ludwig
@@ -176,7 +177,7 @@ sources:
     citation: "Budden, Julian Medforth. \"Ludwig van Beethoven.\" Encyclopaedia Britannica, updated 12 October 2026. https://www.britannica.com/biography/Ludwig-van-Beethoven."
     url: "https://www.britannica.com/biography/Ludwig-van-Beethoven"
     accessed: 2026-10-15
-    reliability_note: "Signed article body (opening and 'The early years'); the Top Questions box is not used."
+    reliability_note: "Signed article body (opening and 'The early years'); the Top Questions box is not used. Britannica lists several contributors; the byline shown was Julian Medforth Budden in one fetch and Raymond L. Knapp in another on 2026-10-15. Re-checked after the batch H audit: the signed sections the page returns end with 'The early years' and date no lasting work, so the timing fields stay UNKNOWN (P39). Lead, not cited: the Britannica Kids Scholars edition dates the Op. 1 piano trios (published 1795)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: primary

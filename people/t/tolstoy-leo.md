@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 50). Basics from Britannica (Morson). Worldview from The Kingdom of God Is Within You (preface dated 1893), Garnett translation, Gutenberg #4602 (web copy, 0.7 cap). Not a scientist (P30). primary_system CHRIST 0.5 (alt DEISM); A 2 at 0.7 (alt 3); B 3 at 0.5 (alt 4) under P41 by analogy (rejects miracles without stating exceptionless law); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Ruling question RQ1 batch H. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): B 3 at 0.5 (alt 4) now cites the P41 extension for miracle rejection instead of an analogy. No value changes."}
 
 identity:
   id: tolstoy-leo
@@ -104,8 +105,8 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S2, locator: "Gutenberg ch. III (miracles as later additions)"}]
-      how_known: "Published book in a web copy; 0.5 under P41 by analogy."
-      rationale: "Scored on his account of nature (P6, P16): miracles are not part of the true doctrine; 'the more the understanding of Christ's teaching was obscured, the more the miraculous was introduced into it'. He rejects miracles but states no exceptionless order of nature, so, as for a lawgiver denial without a no-exception claim (P41), B 3 at 0.5 with 4 as the named alternative. RQ1 (batch H): does P41 cover a rejection of miracles?"
+      how_known: "Published book in a web copy; 0.5 under P41 (miracle-rejection extension)."
+      rationale: "Scored on his account of nature (P6, P16): miracles are not part of the true doctrine; 'the more the understanding of Christ's teaching was obscured, the more the miraculous was introduced into it'. He rejects miracles but states no exceptionless order of nature, so B 3 at 0.5 with 4 as the named alternative under P41 (extension of 2026-10-15: P41 also covers non-scientists who reject miracles or intervention without stating an exceptionless order)."
     C_ledger: {value: UNKNOWN, how_known: "Not read with this in view; the doctrine's lack of 'threats of punishment' (ch. III) is about the teaching's method, not reward and punishment by God."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read that sets revelation against observation."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
@@ -130,7 +131,7 @@ worldview:
       verified_on: 2026-10-15
       note: "Gutenberg #4602; TODO: printed-edition mapping."
   changes_over_life: []
-  coder_notes: "Coder's call: one late religious book read; his A Confession and What I Believe were not read. The scored worldview is that of the 1893 book; whether it held during the novels (1852–1877) is not established from the sources read, which is why working_years is at 0.5. RQ1 (batch H): P41 for a miracle rejection."
+  coder_notes: "Coder's call: one late religious book read; his A Confession and What I Believe were not read. The scored worldview is that of the 1893 book; whether it held during the novels (1852–1877) is not established from the sources read, which is why working_years is at 0.5. RQ1 (batch H) was ruled by the P41 extension; codes unchanged."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -163,7 +164,7 @@ review:
   controversies: []
   data_quality_flags: []
   open_questions:
-    - "Read A Confession and What I Believe; map the Kingdom of God quotes to the Jubilee edition; RQ1 batch H."
+    - "Read A Confession and What I Believe; map the Kingdom of God quotes to the Jubilee edition."
 
 sources:
   - id: S1
@@ -202,7 +203,7 @@ sources:
 
 ## Summary
 
-Leo Tolstoy (1828–1910), Russian novelist and religious teacher: War and Peace, Anna Karenina [S1]. Draft: primary_system CHRIST 0.5; A 2 at 0.7; B 3 at 0.5 (RQ1); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded).
+Leo Tolstoy (1828–1910), Russian novelist and religious teacher: War and Peace, Anna Karenina [S1]. Draft: primary_system CHRIST 0.5; A 2 at 0.7; B 3 at 0.5 (P41); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 
@@ -234,7 +235,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Unclear [S2
 
 ## Open questions
 
-- A Confession; What I Believe; RQ1.
+- A Confession; What I Believe.
 
 ## Research log
 

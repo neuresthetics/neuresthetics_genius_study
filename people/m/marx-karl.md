@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-15
   last_updated: 2026-10-15
   change_log:
-    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 48). Basics from Britannica (Feuer) and SEP (Wolff and Leopold). Worldview from the Introduction to A Contribution to the Critique of Hegel's Philosophy of Right (1844), read in the marxists.org English web copy (0.7 cap). Not a scientist under P30. primary_system ATHE 0.7; A 4 at 0.7 (alt BELOW_THRESHOLD); B UNKNOWN (no statement on the order of nature read, P16); C, D, E UNKNOWN; mid_basin false at 0.7 (A ≥ 3 branch). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 48). Basics from Britannica (McLellan) and SEP (Wolff and Leopold). Worldview from the Introduction to A Contribution to the Critique of Hegel's Philosophy of Right (1844), read in the marxists.org English web copy (0.7 cap). Not a scientist under P30. primary_system ATHE 0.7; A 4 at 0.7 (alt BELOW_THRESHOLD); B UNKNOWN (no statement on the order of nature read, P16); C, D, E UNKNOWN; mid_basin false at 0.7 (A ≥ 3 branch). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: weaken #6): S1 author corrected to David T. McLellan, the byline on the live page when re-checked. No value changes."}
 
 identity:
   id: marx-karl
@@ -163,11 +164,11 @@ sources:
   - id: S1
     type: secondary
     kind: encyclopedia
-    author: "Lewis S. Feuer"
-    citation: "Feuer, Lewis S. \"Karl Marx.\" Encyclopaedia Britannica, updated 4 September 2026. https://www.britannica.com/biography/Karl-Marx."
+    author: "David T. McLellan"
+    citation: "McLellan, David T. \"Karl Marx.\" Encyclopaedia Britannica, updated 4 September 2026. https://www.britannica.com/biography/Karl-Marx."
     url: "https://www.britannica.com/biography/Karl-Marx"
     accessed: 2026-10-15
-    reliability_note: "Signed article body (opening and 'Early years'); the Top Questions box is not used."
+    reliability_note: "Signed article body (opening and 'Early years'); the Top Questions box is not used. Britannica lists several contributors; the byline shown was Lewis S. Feuer in one fetch on 2026-10-15 and David T. McLellan in the auditor's and a later fetch the same day, so the record uses McLellan."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: secondary
@@ -242,4 +243,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No circle [
 
 ## Research log
 
-- 2026-10-15: Read Britannica (Feuer, opening and 'Early years'), SEP contents, and the marxists.org Introduction.
+- 2026-10-15: Read Britannica (McLellan, opening and 'Early years'), SEP contents, and the marxists.org Introduction.

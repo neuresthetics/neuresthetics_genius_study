@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 51). Basics from Britannica (Heydenreich). Worldview from the notebooks (Richter's English edition, 1888, Gutenberg #5000; private manuscript in a web-copy translation, 0.7 cap). Scientist under P30 (anatomy, mechanics; S1). primary_system BELOW_THRESHOLD (candidates CHRIST, DEISM); A 0 at 0.5 (alt 1); B 3 at 0.5 (alt 4) — No. 1134 says no force fails of its necessary results, but No. 1132 prays to a Lord who 'canst shorten or prolong the lives of men' (RQ2 batch H); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): RQ2 resolved, B stays 3 at 0.5 (alternative 4); reasoning recorded in coder_notes. No value changes."}
 
 identity:
   id: leonardo-da-vinci
@@ -101,7 +102,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S2, locator: "Nos. 1134, 1135, 1208"}]
       how_known: "Private notebooks, web copy, 0.5."
-      rationale: "Nature runs by necessity: God 'hast not permitted that any force should fail of the order or quality of its necessary results' (No. 1134); 'Necessity is ... the eternal curb and law of nature' (No. 1135); 'false miracles' are a trade in delusion (No. 1208). No. 1134 is close to a stated exceptionless necessity (P40, B 4), but No. 1132 credits the Lord with power to 'shorten or prolong the lives of men', a possible exception, and No. 1208 condemns false miracles without denying true ones. Also B 3 at 0.5 by P35 for a scientist. Named alternative: 4. RQ2 (batch H)."
+      rationale: "Nature runs by necessity: God 'hast not permitted that any force should fail of the order or quality of its necessary results' (No. 1134); 'Necessity is ... the eternal curb and law of nature' (No. 1135); 'false miracles' are a trade in delusion (No. 1208). No. 1134 is close to a stated exceptionless necessity (P40, B 4), but No. 1132 credits the Lord with power to 'shorten or prolong the lives of men', a possible exception, and No. 1208 condemns false miracles without denying true ones. Also B 3 at 0.5 by P35 for a scientist. Named alternative: 4. Kept after the batch H audit (RQ2); see coder_notes."
     C_ledger: {value: UNKNOWN, how_known: "'Thou, O God, dost sell us all good things at the price of labour' (No. 1133) is about effort, not reward by God for conduct; not scored."}
     D_authority: {value: UNKNOWN, how_known: "Britannica says he 'scorned speculative book knowledge' in favour of experience (S1), but nothing read sets revelation against observation."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
@@ -136,7 +137,7 @@ worldview:
       verified_on: 2026-10-15
       note: "As above."
   changes_over_life: []
-  coder_notes: "Coder's call. Richter introduces these notes as showing 'a broad spirit of naturalism' (S2, editor's note) — an editor's reading, not scored. RQ2 (batch H): does No. 1134 meet P40 despite No. 1132?"
+  coder_notes: "Coder's call. Richter introduces these notes as showing 'a broad spirit of naturalism' (S2, editor's note) — an editor's reading, not scored. Batch H audit RQ2 (2026-10-15): B stays 3 at 0.5, alternative 4. Reasons: No. 1134 is addressed to God as guarantor ('Thou hast not permitted') and says forces do not fail, short of the explicit no-exception, no-chance statement P40 requires; No. 1132 credits God with a live power to 'shorten or prolong the lives of men'; No. 1208 condemns false miracles only; and P35 caps inference from a scientist's work at B 3 at 0.5. B 4 would need No. 1132 read as conventional piety, which the sources read do not support."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -175,7 +176,7 @@ review:
     - {value: "Religious beliefs debated", certainty: 0.7, cites: [{source: S1, locator: "'Legacy'"}], how_known: "Britannica."}
   data_quality_flags: []
   open_questions:
-    - "Find manuscript sigla and dates for Nos. 1132–1135; RQ2 batch H."
+    - "Find manuscript sigla and dates for Nos. 1132–1135."
 
 sources:
   - id: S1
@@ -213,7 +214,7 @@ sources:
 
 ## Summary
 
-Leonardo da Vinci (1452–1519), Italian painter, engineer and anatomist [S1]. Draft: primary_system BELOW_THRESHOLD; A 0 at 0.5; B 3 at 0.5 (RQ2); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded).
+Leonardo da Vinci (1452–1519), Italian painter, engineer and anatomist [S1]. Draft: primary_system BELOW_THRESHOLD; A 0 at 0.5; B 3 at 0.5; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 
@@ -245,7 +246,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Unclear [S2
 
 ## Open questions
 
-- Manuscript dates; RQ2.
+- Manuscript dates.
 
 ## Research log
 
