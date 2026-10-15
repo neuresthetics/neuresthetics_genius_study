@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 70). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited) and NIH/NLM Profiles in Science. Worldview from her 1940 letter to her father, quoted by NLM and in Brenda Maddox's New Humanist article (2007), both secondary quotations of a private letter. Scientist under P30 (coal micro-structure, DNA, virus structure). primary_system AGNOS (0.5, alt ATHE); A 4 (0.5, alt 3); B 3 (0.5, alt 4) from working science (P35); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2d75649, run 1). The 'faith is essential' wording is cited to Maddox (S3) only, with a note on NLM's shorter variant; added her line 'faith in this world is perfectly possible without faith in another world' (S3). A stays 4 (0.5, alternative 3)."}
 
 identity:
   id: franklin-rosalind
@@ -75,7 +76,7 @@ worldview:
   working_years: {value: "1945–1953", certainty: 0.5, cites: [{source: S2, locator: "text"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Joined the Jewish Society at Cambridge 'to please her grandfather, but disliked it'", years: "1938", role: "nominal member", certainty: 0.5, cites: [{source: S3, locator: "family paragraph"}], how_known: "Maddox (0.5)."}
-  self_described_science_religion_relation: {value: "'Science and everyday life cannot and should not be separated. Science, for me, gives a partial explanation of life' (letter to her father, 1940).", certainty: 0.5, cites: [{source: S2, locator: "epigraph"}, {source: S3, locator: "letter quotation"}], how_known: "Private letter, secondary quotation in two sources; one letter, so 0.5."}
+  self_described_science_religion_relation: {value: "'Science and everyday life cannot and should not be separated. Science, for me, gives a partial explanation of life' (letter to her father, 1940).", certainty: 0.5, cites: [{source: S3, locator: "letter quotation"}, {source: S2, locator: "epigraph (shorter variant)"}], how_known: "Private letter, secondary quotation; wording from Maddox (S3), NLM prints it with an ellipsis; one letter, so 0.5."}
   primary_system:
     value: AGNOS
     basis: consistent_private_letters
@@ -95,7 +96,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S3, locator: "letter quotation"}]
       how_known: "One private letter, secondary quotation; dated 1940, before the working years (P20), so 0.5; alternative named."
-      rationale: "An explicit denial of a personal, interested God is scored (§ A_locus, P20): 'I see no reason to believe that a creator of protoplasm or primeval matter, if such there be, has any reason to be interested in our insignificant race'. Named alternative: 3, since a remote creator is left open."
+      rationale: "An explicit denial of a personal, interested God is scored (§ A_locus, P20): 'I see no reason to believe that a creator of protoplasm or primeval matter, if such there be, has any reason to be interested in our insignificant race'. Her positive view is this-world only: 'faith in this world is perfectly possible without faith in another world'. Named alternative: 3, since a remote creator is left open."
     B_cause:
       value: 3
       basis: inference_from_work
@@ -109,9 +110,18 @@ worldview:
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 4 is scored only at 0.5, under the 0.7 bar for the A ≥ 3 branch (P10).", note: "If A reached 0.7 the result would be false."}
   statements:
     - text: "I agree that faith is essential to success in life (success of any sort) but I do not accept your definition of faith, i.e. belief in life after death."
-      cites: [{source: S2, locator: "epigraph"}, {source: S3, locator: "letter quotation"}]
+      cites: [{source: S3, locator: "letter quotation"}]
       date: "1940"
       context: "Letter to her father Ellis Franklin, summer 1940, at Cambridge (S3)."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-15
+      note: "Wording as in Maddox (S3). NLM's epigraph (S2) prints a shorter variant: 'I agree that faith is essential to success in life, but I do not accept your definition of faith, i.e., belief in life after death.'"
+    - text: "Anyone able to believe in all that religion implies obviously must have such faith, but I maintain that faith in this world is perfectly possible without faith in another world"
+      cites: [{source: S3, locator: "letter quotation"}]
+      date: "1940"
+      context: "Same letter, next sentences."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"

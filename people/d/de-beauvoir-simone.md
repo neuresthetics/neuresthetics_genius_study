@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-15
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 72). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited) and SEP (Bergoffen and Burke, rev. 2023). Worldview from The Ethics of Ambiguity (1947; Frechtman translation 1948, marxists.org web copy), Part I. Not a scientist (P30). primary_system EXIST (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B UNKNOWN (P16); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2d75649, run 1). mid_basin how_known explains BELOW_THRESHOLD: the A ≥ 3 branch reads A only (P10). SEP's 'at age fourteen' line cited explicitly for A 4. EXIST kept (0.5, alternative ATHE), with a note that the EXIST system file does not separate atheist from theist existentialism."}
 
 identity:
   id: de-beauvoir-simone
@@ -84,6 +85,7 @@ worldview:
     cites: [{source: S2, locator: "opening; §5"}, {source: S1, locator: "opening"}]
     rationale: "SEP: she 'identifies herself as an existentialist'; Britannica: one of the philosopher-writers of existentialism. Named alternative: ATHE, since SEP calls The Ethics of Ambiguity 'a secularism that rejects the ideas of God and Humanity'."
     how_known: "Reconstruction in SEP and Britannica (0.5 cap)."
+    note: "systems/EXIST.md does not separate atheist from theist existentialism; her EXIST is the atheist kind (A 4), so ATHE stays the named alternative."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: EXIST, reason: "Self-identified existentialist (S2)."}
@@ -93,14 +95,14 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "Part I"}, {source: S2, locator: "§1"}]
-      how_known: "Published treatise, web copy of the translation; SEP reports the rejection of God at fourteen; alternative named, so 0.5."
+      cites: [{source: S3, locator: "Part I"}, {source: S2, locator: "§1 ('at age fourteen Beauvoir rejected the existence of God')"}]
+      how_known: "Published treatise, web copy of the translation, supported by SEP §1: 'Although initially devout in her faith, at age fourteen Beauvoir rejected the existence of God'; alternative named, so 0.5."
       rationale: "At the LIO pole on the reading 'no God': 'far from God's absence authorizing all license, the contrary is the case'; man bears responsibility for 'a world which is not the work of a strange power'. Named alternative: BELOW_THRESHOLD, since the key line is phrased as a conditional ('if God does not exist')."
     B_cause: {value: UNKNOWN, how_known: "Not a scientist; no statement on nature read (P16)."}
     C_ledger: {value: UNKNOWN, how_known: "'A God can pardon, efface, and compensate. But if God does not exist, man's faults are inexpiable' bears on C, but it is conditional and about human responsibility; not scored (coder's call)."}
     D_authority: {value: UNKNOWN, how_known: "'the genuine man will not agree to recognize any foreign absolute' may bear on D; not scored at this reading."}
     E_scope: {value: UNKNOWN, how_known: "Not read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 4 is scored only at 0.5, under the 0.7 bar for the A ≥ 3 branch, which reads A only (P10); B UNKNOWN is not needed for that branch.", note: "If A reached 0.7 the result would be false."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "BELOW_THRESHOLD, not UNKNOWN: the A ≥ 3 branch reads A only (P10), so B UNKNOWN is not a needed axis, and A 4 is scored only at 0.5, under the 0.7 bar. P19's UNKNOWN precedence would apply only on A's named alternative (BELOW_THRESHOLD), where B becomes needed.", note: "If A reached 0.7 the result would be false."}
   statements:
     - text: "However, far from God’s absence authorizing all license, the contrary is the case, because man is abandoned on the earth, because his acts are definitive, absolute engagements."
       cites: [{source: S3, locator: "Part I"}]
