@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S3): filled from SEP "Epicurus" (Konstan). A 3 (0.5, alt 4), B 3 (0.5), C 4 (0.7), D 4 (0.7), E 4 (0.5). v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S3 audit (WEAKEN #3b): the swerve is Epicurus'' doctrine (known chiefly through Lucretius and Cicero); B alternative 4 named; A reasoning noted. Values unchanged.'
 identity:
   id: EPICUR
   v7_1_number: 16
@@ -119,15 +122,27 @@ lio_axes:
     cites:
     - source: S1
       locator: introduction; §4
-    how_known: Fixed as within nature by the stance; whether 3 or 4 is the coder's call, so 0.5 (alternative 4).
+    how_known: 0.5, alternative 4. The gods exist as material beings inside the cosmos, so P44(a) (no God gives 4) does not apply; divine beings located within nature fit 3. Their indifference bears on C and E (both 4), not on locus (S3 audit RQ1).
+    alternatives:
+    - value: 4
+      note: If material gods within nature are read as the immanent pole.
+      cites:
+      - source: S1
+        locator: introduction
   B_cause:
     value: 3
-    rationale: No divine intervention; a naturalistic account of nature, but Lucretius invoked a random swerve of atoms, so not exceptionless law.
+    rationale: No divine intervention and a naturalistic account of nature, but the swerve, Epicurus' doctrine of uncaused atomic deviation (attested chiefly in later sources, including Lucretius and Cicero), is chance within nature, so not exceptionless law (P40).
     certainty: 0.5
     cites:
     - source: S1
       locator: introduction; §3
-    how_known: '0.5: the swerve is Lucretius''s, and its reading as exception is the coder''s.'
+    how_known: '0.5: the swerve is Epicurus'' doctrine, known chiefly through Lucretius and Cicero (S1); its reading as a bar to B 4 is the coder''s (P40: 4 only where exceptions and chance are both ruled out). Alternative 4.'
+    alternatives:
+    - value: 4
+      note: If the swerve is read as natural indeterminacy compatible with B 4.
+      cites:
+      - source: S1
+        locator: §3
   C_ledger:
     value: 4
     rationale: No afterlife punishment and gods indifferent to human behaviour.
@@ -210,7 +225,6 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - A 3 versus 4 for material, indifferent gods (ruling question).
   - Adherents are TODO.
 sources:
 - id: S1
@@ -247,7 +261,7 @@ TODO
 
 ## Science
 
-Atomism; Lucretius's swerve [S1, §3].
+Atomism; Epicurus' swerve, known chiefly through Lucretius and Cicero [S1, §3].
 
 ## Coding guidance
 
@@ -261,7 +275,6 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- A 3 versus 4.
 - Adherents are TODO.
 
 ## Research log
@@ -269,3 +282,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S3): read the listed sources; quotations checked word for word against the fetched page text with a script. Axes under P44.
+- 2026-10-15 (S3 audit fixes, run 1: 10 HOLD, 1 WEAKEN): swerve attributed to Epicurus (via Lucretius and Cicero); B alt 4 named; A reasoning noted.

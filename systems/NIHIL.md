@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S3): filled from IEP "Nihilism" (Pratt). A BELOW_THRESHOLD (alt 4); others UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S3 audit RQ3: D_authority UNKNOWN → BELOW_THRESHOLD under P44(b).'
 identity:
   id: NIHIL
   v7_1_number: 18
@@ -113,8 +116,9 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
-    how_known: Nihilism holds 'that nothing can be known' (S1), so neither revelation nor observation is an authority; the axis is not fixed.
+    value: BELOW_THRESHOLD
+    how_known: The source addresses knowledge ('nothing can be known'), so it is not silent; IEP separates epistemological, moral, existential and cosmic nihilism, which differ here, so members differ (P44b).
+    note: Changed from UNKNOWN after the S3 audit (coder's conservative call).
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -171,7 +175,6 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - D for a stance that denies knowledge (UNKNOWN used).
   - Adherents are TODO.
 sources:
 - id: S1
@@ -199,7 +202,8 @@ Nothing believed; cosmic purposelessness [S1].
 ## Position on the LIO axes
 
 - A BELOW_THRESHOLD (alt 4).
-- B to E UNKNOWN.
+- D BELOW_THRESHOLD (kinds of nihilism differ).
+- B, C, E UNKNOWN.
 
 ## Schools and variants
 
@@ -221,7 +225,6 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- D for a stance that denies knowledge.
 - Adherents are TODO.
 
 ## Research log
@@ -229,3 +232,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S3): read the listed sources; quotations checked word for word against the fetched page text with a script. Axes under P44.
+- 2026-10-15 (S3 audit fixes, run 1: 10 HOLD, 1 WEAKEN): D to BELOW_THRESHOLD under P44(b).
