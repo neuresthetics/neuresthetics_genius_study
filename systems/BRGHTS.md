@@ -1,105 +1,235 @@
 ---
 record:
   record_type: system
-  schema_version: "1.1"
-  record_version: 2
-  review_status: stub
-  collected_by: scripts/make_system_stubs.py
-  model_used: none (ported from the v7.1 data book)
+  schema_version: '1.1'
+  record_version: 3
+  review_status: draft — unreviewed
+  collected_by: Grok Bot (systems batch S1 for Jason)
+  model_used: Grok Bot executor agent; direct reads of the cited pages
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: '2026-10-15'
   change_log:
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
-    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
+  - date: 2026-10-01
+    by: scripts/make_system_stubs.py
+    summary: Stub created from v7.1 data book table 4 and section 7.
+  - date: 2026-10-02
+    by: scripts/make_system_stubs.py
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'Draft (systems batch S1): filled from the movement''s own site (the-brights.net home and Vision pages; primary for self-definition). No encyclopedia entry found. Founders and dates TODO. v7.1 scores and note unchanged. Not reviewed.'
 identity:
   id: BRGHTS
   v7_1_number: 3
-  v7_1_label: "Brights (The Brights Movement)"
-  display_label: "Brights (The Brights Movement)"
-  label_status: "as in v7.1"
+  v7_1_label: Brights (The Brights Movement)
+  display_label: Brights (The Brights Movement)
+  label_status: as in v7.1
   aliases: []
 classification:
-  kind: {value: TODO}
-  family: {value: TODO}
-  parent_traditions: {value: TODO}
+  kind:
+    value: ethical or civic movement
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: Vision
+    how_known: The site describes a civic constituency of people with naturalistic worldviews; coder's classification, 0.7.
+  family:
+    value: Naturalism (civic)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: home
+    how_known: '''All of us have a naturalistic worldview, free of supernatural or mystical elements.'''
+  parent_traditions:
+    value: TODO
   related_codes: []
 origins:
-  founding_era: {value: TODO}
-  founding_region: {value: TODO}
-  founders_or_key_figures: {value: TODO}
+  founding_era:
+    value: TODO
+  founding_region:
+    value: TODO
+  founders_or_key_figures:
+    value: TODO
   key_texts: []
 metaphysics:
-  god_nature_relation: {value: TODO, stance: TODO}
-  deity_personal: {value: TODO, stance: TODO}
-  intervention: {value: TODO, stance: TODO}
-  miracles: {value: TODO, stance: TODO}
-  petition_and_prayer: {value: TODO, stance: TODO}
-  afterlife: {value: TODO, stance: TODO}
-  moral_ledger: {value: TODO, stance: TODO}
-  authority: {value: TODO, stance: TODO}
-  reserved_exemptions: {value: TODO, stance: TODO}
-  teleology_in_nature: {value: TODO, stance: TODO}
-  necessity_and_freedom: {value: TODO}
+  god_nature_relation:
+    value: 'Naturalistic: a bright is ''a person whose worldview is naturalistic (no supernatural and mystical elements)''.'
+    stance: no God
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: home
+    how_known: The movement's own definition.
+  deity_personal:
+    value: TODO
+    stance: TODO
+  intervention:
+    value: 'None: worldviews ''free of the supernatural deities, forces, and entities''.'
+    stance: none
+    certainty: 1.0
+    cites:
+    - source: S2
+      locator: Vision
+    how_known: Own site.
+  miracles:
+    value: TODO
+    stance: TODO
+  petition_and_prayer:
+    value: TODO
+    stance: TODO
+  afterlife:
+    value: TODO
+    stance: TODO
+  moral_ledger:
+    value: TODO
+    stance: TODO
+  authority:
+    value: TODO
+    stance: TODO
+  reserved_exemptions:
+    value: TODO
+    stance: TODO
+  teleology_in_nature:
+    value: TODO
+    stance: TODO
+  necessity_and_freedom:
+    value: TODO
 lio_axes:
-  A_locus: {value: TODO}
-  B_cause: {value: TODO}
-  C_ledger: {value: TODO}
-  D_authority: {value: TODO}
-  E_scope: {value: TODO, note: "Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule."}
-epistemology: {value: TODO}
-ethics: {value: TODO}
+  A_locus:
+    value: 4
+    rationale: No supernatural deities; naturalistic worldview.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: home
+    - source: S2
+      locator: Vision
+    how_known: 0–4 scale (P1). Own definition; A for a system with no God-term follows ATHE (ruling question), so 0.7.
+  B_cause:
+    value: 4
+    rationale: No supernatural forces or entities, so no miracle or exception.
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: Vision
+    how_known: '0–4 scale (P1). 0.7: the site states the worldview, not a doctrine of law.'
+  C_ledger:
+    value: 4
+    rationale: No supernatural agent to keep a moral ledger.
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: Vision
+    how_known: Inferred, 0.5.
+  D_authority:
+    value: 4
+    rationale: Naturalistic explanations; principles held 'as values, not dogma'.
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: home
+    - source: S2
+      locator: Vision
+    how_known: Inferred from the self-definition; revelation not mentioned. 0.5.
+  E_scope:
+    value: 4
+    rationale: 'On the world''s order (P7): no supernatural forces to favour a group.'
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: Vision
+    how_known: Inferred, 0.5.
+epistemology:
+  value: TODO
+ethics:
+  value: TODO
 practice:
-  ritual_and_practice: {value: TODO}
-  community_form: {value: TODO}
+  ritual_and_practice:
+    value: TODO
+  community_form:
+    value: TODO
 science:
-  historical_stance: {value: TODO}
-  current_stance: {value: TODO}
+  historical_stance:
+    value: TODO
+  current_stance:
+    value: TODO
 schools_and_variants: []
 adherents:
-  use: "context only — never a genius-rate denominator"
-  estimate: {value: TODO}
+  use: context only — never a genius-rate denominator
+  estimate:
+    value: TODO
 v7_1_rubric:
-  label: "authorial v7.1 scores"
+  label: authorial v7.1 scores
   L: 10
   P: 10
   E: 10
   V: 10
   X: 9
   total: 49
-  scoring_note: "The Brights Movement scores highly for its evidence-based naturalism and civic focus, serving as a practical extension of atheism with strong coherence."
-  source: "v7.1 data book, section 6 table (tables[4]) row 3 and section 7 scoring notes"
+  scoring_note: The Brights Movement scores highly for its evidence-based naturalism and civic focus, serving as a practical extension of atheism with strong coherence.
+  source: v7.1 data book, section 6 table (tables[4]) row 3 and section 7 scoring notes
 revised_rubric:
-  status: "not started"
-  L: {score: TODO, rationale: ""}
-  P: {score: TODO, rationale: ""}
-  E: {score: TODO, rationale: ""}
-  V: {score: TODO, rationale: ""}
-  X: {score: TODO, rationale: ""}
+  status: not started
+  L:
+    score: TODO
+    rationale: ''
+  P:
+    score: TODO
+    rationale: ''
+  E:
+    score: TODO
+    rationale: ''
+  V:
+    score: TODO
+    rationale: ''
+  X:
+    score: TODO
+    rationale: ''
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
+  use_when: The person publicly identifies as a Bright (the self-applied label); otherwise use ATHE or SECHUM on their stated views.
+  do_not_use_when: 'Do not infer BRGHTS from naturalism alone: it is a self-chosen civic label (S1).'
   neighbors: []
 review:
-  data_quality_flags: []
-  open_questions: []
-sources: []
+  data_quality_flags:
+  - Only the movement's own pages were read; no independent encyclopedia entry was found. Founders, founding date and membership are TODO.
+  open_questions:
+  - Founding (an independent source is needed).
+  - Adherents are TODO.
+sources:
+- id: S1
+  type: primary
+  kind: institutional page
+  author: The Brights' Net
+  citation: The Brights' Net. "Who are The Brights?" https://www.the-brights.net/.
+  url: https://www.the-brights.net/
+  accessed: '2026-10-15'
+  reliability_note: The movement's own site (primary for its self-definition); no date on the page.
+- id: S2
+  type: primary
+  kind: institutional page
+  author: The Brights' Net
+  citation: The Brights' Net. "The Vision." https://www.the-brights.net/vision/.
+  url: https://www.the-brights.net/vision/
+  accessed: '2026-10-15'
+  reliability_note: The movement's own site; no date on the page.
 ---
 
 # Brights (The Brights Movement) (BRGHTS)
 
-> Stub. Only the v7.1 scores and scoring note are filled in, copied from the data book. Everything else is TODO. See `docs/RUNBOOK.md` (systems) for how to fill it in.
+> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1). The v7.1 scores and note are unchanged.
 
 ## Summary
 
-TODO
+The Brights describe themselves as people who 'have a naturalistic worldview, free of supernatural or mystical elements' [S1, home]. A 'bright' (n.) is 'a person whose worldview is naturalistic (no supernatural and mystical elements)' [S1]. Founders and date are TODO (no independent source read).
 
 ## Core metaphysics
 
-TODO
+Worldviews 'free of the supernatural deities, forces, and entities' [S2, Vision].
 
 ## Position on the LIO axes
 
-TODO
+- A 4 (0.7), B 4 (0.7): no supernatural entities or forces [S1; S2].
+- C, D, E 4 (0.5): inferred from the self-definition [S2].
 
 ## Schools and variants
 
@@ -111,7 +241,7 @@ TODO
 
 ## Coding guidance
 
-TODO
+Use only for a self-described Bright; otherwise ATHE or SECHUM.
 
 ## v7.1 scoring note
 
@@ -121,9 +251,11 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-None yet.
+- Founders, date and an independent source.
+- Adherents are TODO.
 
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
+- 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.

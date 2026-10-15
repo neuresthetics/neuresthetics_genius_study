@@ -31,7 +31,8 @@ FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
 LIST_FILES = {"Claude": "geniiClaude.csv", "DeepSeek": "geniiDeepSeek.csv", "Gemini": "geniiGemini.csv",
               "GPT": "geniiGPT.csv", "Grok": "geniiGrok.csv"}
-SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM", "STOIC", "PLATO", "PANT"]
+SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM", "STOIC", "PLATO", "PANT",
+                   "ATHE", "AGNOS", "BRGHTS", "EMPIR", "ETHCUL", "RATN"]
 AXES = ["A_locus", "B_cause", "C_ledger", "D_authority", "E_scope"]
 DPI = 170
 
@@ -222,20 +223,22 @@ def fig_people_cause_locus(out):
 # 4 ------------------------------------------------------------------------
 def fig_systems_axes(out):
     import numpy as np
-    labels, vals, certs = [], [], []
+    labels, vals, certs, labs = [], [], [], []
     for code in SOURCED_SYSTEMS:
         d, _ = read_record(os.path.join(REPO, "systems", f"{code}.md"))
         labels.append(code)
-        row, crow = [], []
+        row, crow, lrow = [], [], []
         for k in AXES:
             node = d["lio_axes"].get(k) or {}
             v = node.get("value")
             row.append(v if isinstance(v, int) else np.nan)
+            lrow.append({"BELOW_THRESHOLD": "BELOW\nTHRESH."}.get(v, str(v)))
             crow.append(node.get("certainty"))
         vals.append(row)
         certs.append(crow)
+        labs.append(lrow)
     m = np.array(vals, dtype=float)
-    fig, ax = plt.subplots(figsize=(9, 7.2))
+    fig, ax = plt.subplots(figsize=(9, 9.5))
     cmap = plt.get_cmap("RdYlBu").copy()
     cmap.set_bad("#DDDDDD")
     im = ax.imshow(np.ma.masked_invalid(m), cmap=cmap, vmin=0, vmax=4, aspect="auto")
@@ -243,7 +246,7 @@ def fig_systems_axes(out):
         for j in range(m.shape[1]):
             if np.isnan(m[i, j]):
                 ax.add_patch(Rectangle((j - 0.5, i - 0.5), 1, 1, fill=False, hatch="///", edgecolor="#888888", lw=0))
-                ax.text(j, i, "TODO", ha="center", va="center", fontsize=9)
+                ax.text(j, i, labs[i][j], ha="center", va="center", fontsize=7)
             else:
                 ax.text(j, i, f"{int(m[i, j])}\n({certs[i][j]})", ha="center", va="center", fontsize=10,
                         color="white" if m[i, j] in (0, 4) else "black")
@@ -255,10 +258,10 @@ def fig_systems_axes(out):
     ax.tick_params(which="minor", length=0)
     cb = fig.colorbar(im, ax=ax, ticks=range(5), fraction=0.04)
     cb.ax.set_yticklabels(["0 interventionist", "1", "2", "3", "4 LIO pole"])
-    ax.set_title("The 9 sourced belief-system drafts on the v8 LIO axes\n"
-                 "cell = score (certainty); grey hatched = TODO", fontsize=11)
+    ax.set_title(f"The {len(labels)} sourced belief-system drafts on the v8 LIO axes\n"
+                 "cell = score (certainty); grey hatched = no score (TODO, UNKNOWN or BELOW_THRESHOLD)", fontsize=11)
     footer(fig, "Source: systems/*.md, lio_axes (v8 coder drafts, unreviewed; not the v7.1 rubric). "
-             "The other 68 systems are stubs.")
+             f"The other {sum(1 for f in os.listdir(os.path.join(REPO, 'systems')) if f.endswith('.md') and f != 'README.md') - len(labels)} systems are stubs.")
     fig.tight_layout(rect=(0, 0.06, 1, 1))
     save(fig, out, "systems_axes.png")
 

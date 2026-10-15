@@ -1,109 +1,218 @@
 ---
 record:
   record_type: system
-  schema_version: "1.1"
-  record_version: 2
-  review_status: stub
-  collected_by: scripts/make_system_stubs.py
-  model_used: none (ported from the v7.1 data book)
+  schema_version: '1.1'
+  record_version: 3
+  review_status: draft — unreviewed
+  collected_by: Grok Bot (systems batch S1 for Jason)
+  model_used: Grok Bot executor agent; direct reads of the cited pages
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: '2026-10-15'
   change_log:
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
-    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
+  - date: 2026-10-01
+    by: scripts/make_system_stubs.py
+    summary: Stub created from v7.1 data book table 4 and section 7.
+  - date: 2026-10-02
+    by: scripts/make_system_stubs.py
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'Draft (systems batch S1): filled from SEP "Rationalism vs. Empiricism" (Markie and Folescu). An epistemology: D 3 at 0.5; A, C and E UNKNOWN; B BELOW_THRESHOLD. v7.1 scores and note unchanged. Not reviewed.'
 identity:
   id: EMPIR
   v7_1_number: 4
-  v7_1_label: "Empiricism"
-  display_label: "Empiricism"
-  label_status: "as in v7.1"
+  v7_1_label: Empiricism
+  display_label: Empiricism
+  label_status: as in v7.1
   aliases: []
 classification:
-  kind: {value: TODO}
-  family: {value: TODO}
-  parent_traditions: {value: TODO}
+  kind:
+    value: epistemic stance
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: 'SEP: a thesis about the sources of knowledge, relative to a subject area.'
+  family:
+    value: Epistemology (empiricism versus rationalism)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP.
+  parent_traditions:
+    value: TODO
   related_codes: []
 origins:
-  founding_era: {value: TODO}
-  founding_region: {value: TODO}
-  founders_or_key_figures: {value: TODO}
+  founding_era:
+    value: TODO
+  founding_region:
+    value: TODO
+  founders_or_key_figures:
+    value:
+    - John Locke
+    - George Berkeley
+    - David Hume
+    - Thomas Reid
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1, §3
+    how_known: SEP lists 'Locke, Hume, and Reid, the British Empiricists' and warns the classification 'should only be adopted with great caution'. 0.7.
   key_texts: []
 metaphysics:
-  god_nature_relation: {value: TODO, stance: TODO}
-  deity_personal: {value: TODO, stance: TODO}
-  intervention: {value: TODO, stance: TODO}
-  miracles: {value: TODO, stance: TODO}
-  petition_and_prayer: {value: TODO, stance: TODO}
-  afterlife: {value: TODO, stance: TODO}
-  moral_ledger: {value: TODO, stance: TODO}
-  authority: {value: TODO, stance: TODO}
-  reserved_exemptions: {value: TODO, stance: TODO}
-  teleology_in_nature: {value: TODO, stance: TODO}
-  necessity_and_freedom: {value: TODO}
+  god_nature_relation:
+    value: Not addressed by the thesis; individual empiricists differ.
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP defines the thesis without theology.
+  deity_personal:
+    value: TODO
+    stance: TODO
+  intervention:
+    value: TODO
+    stance: TODO
+  miracles:
+    value: TODO
+    stance: TODO
+  petition_and_prayer:
+    value: TODO
+    stance: TODO
+  afterlife:
+    value: TODO
+    stance: TODO
+  moral_ledger:
+    value: TODO
+    stance: TODO
+  authority:
+    value: 'Experience: ''We have no source of knowledge in S or for the concepts we use in S other than experience.'''
+    stance: observation and reason
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP, Empiricism Thesis.
+  reserved_exemptions:
+    value: TODO
+    stance: TODO
+  teleology_in_nature:
+    value: TODO
+    stance: TODO
+  necessity_and_freedom:
+    value: TODO
 lio_axes:
-  A_locus: {value: TODO}
-  B_cause: {value: TODO}
-  C_ledger: {value: TODO}
-  D_authority: {value: TODO}
-  E_scope: {value: TODO, note: "Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule."}
-epistemology: {value: TODO}
-ethics: {value: TODO}
+  A_locus:
+    value: UNKNOWN
+    how_known: The Empiricism Thesis is about knowledge; SEP gives no locus view for empiricism as such.
+  B_cause:
+    value: BELOW_THRESHOLD
+    how_known: SEP reports Hume on causation (known by habit, not reason), which bears on knowledge of laws but not on whether exceptions occur.
+    note: 'Evidence: S1 §1 on Hume''s causation.'
+  C_ledger:
+    value: UNKNOWN
+    how_known: Not addressed.
+  D_authority:
+    value: 3
+    rationale: 'Experience is the only source of knowledge in the subject areas the empiricist covers; revelation is given no role there. 3 not 4: the thesis is relative to a subject area, and Locke put reason ''on equal footing with experience'' for some truths.'
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: §1
+    how_known: 0–4 scale (P1). SEP does not discuss revelation; inferred, 0.5.
+  E_scope:
+    value: UNKNOWN
+    how_known: Not addressed.
+epistemology:
+  value: TODO
+ethics:
+  value: TODO
 practice:
-  ritual_and_practice: {value: TODO}
-  community_form: {value: TODO}
+  ritual_and_practice:
+    value: TODO
+  community_form:
+    value: TODO
 science:
-  historical_stance: {value: TODO}
-  current_stance: {value: TODO}
+  historical_stance:
+    value: TODO
+  current_stance:
+    value: TODO
 schools_and_variants: []
 adherents:
-  use: "context only — never a genius-rate denominator"
-  estimate: {value: TODO}
+  use: context only — never a genius-rate denominator
+  estimate:
+    value: TODO
 v7_1_rubric:
-  label: "authorial v7.1 scores"
+  label: authorial v7.1 scores
   L: 10
   P: 10
   E: 10
   V: 10
   X: 9
   total: 49
-  scoring_note: "Empiricism is foundational to science, scoring high for its evidence-driven approach, with minor deduction for induction limitations."
-  source: "v7.1 data book, section 6 table (tables[4]) row 4 and section 7 scoring notes"
+  scoring_note: Empiricism is foundational to science, scoring high for its evidence-driven approach, with minor deduction for induction limitations.
+  source: v7.1 data book, section 6 table (tables[4]) row 4 and section 7 scoring notes
 revised_rubric:
-  status: "not started"
-  L: {score: TODO, rationale: ""}
-  P: {score: TODO, rationale: ""}
-  E: {score: TODO, rationale: ""}
-  V: {score: TODO, rationale: ""}
-  X: {score: TODO, rationale: ""}
+  status: not started
+  L:
+    score: TODO
+    rationale: ''
+  P:
+    score: TODO
+    rationale: ''
+  E:
+    score: TODO
+    rationale: ''
+  V:
+    score: TODO
+    rationale: ''
+  X:
+    score: TODO
+    rationale: ''
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
+  use_when: The person's own writing makes experience the only source of knowledge (the Empiricism Thesis) and that is their main stated worldview.
+  do_not_use_when: 'Do not use for scientists by default: empiricism is an epistemology and sets no God-view (S1). Score axes from the person''s own statements.'
   neighbors: []
 review:
   data_quality_flags: []
-  open_questions: []
-sources: []
+  open_questions:
+  - How to score A and B for an epistemology with no stated theology (ruling question).
+  - Adherents are TODO.
+sources:
+- id: S1
+  type: tertiary
+  kind: encyclopedia
+  author: Peter Markie; M. Folescu
+  year: 2021
+  citation: Markie, Peter, and M. Folescu. "Rationalism vs. Empiricism." Stanford Encyclopedia of Philosophy. First published August 19, 2004; substantive revision September 2, 2021. https://plato.stanford.edu/entries/rationalism-empiricism/.
+  url: https://plato.stanford.edu/entries/rationalism-empiricism/
+  accessed: '2026-10-15'
+  reliability_note: Peer-reviewed reference entry.
 ---
 
 # Empiricism (EMPIR)
 
-> Stub. Only the v7.1 scores and scoring note are filled in, copied from the data book. Everything else is TODO. See `docs/RUNBOOK.md` (systems) for how to fill it in.
+> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1). The v7.1 scores and note are unchanged.
 
 ## Summary
 
-TODO
+Empiricism holds that 'We have no source of knowledge in S or for the concepts we use in S other than experience' [S1, §1]. SEP warns that the Locke–Hume–Reid camp versus Descartes–Spinoza–Leibniz 'should only be adopted with great caution' [S1].
 
 ## Core metaphysics
 
-TODO
+None as such: a thesis about knowledge [S1].
 
 ## Position on the LIO axes
 
-TODO
+- D 3 (0.5): experience the only source in the covered areas [S1, §1].
+- B BELOW_THRESHOLD: Hume on causation [S1].
+- A, C, E UNKNOWN.
 
 ## Schools and variants
 
-TODO
+Subject-relative forms: an empiricist about some subjects may be a rationalist about others [S1, §1].
 
 ## Science
 
@@ -111,7 +220,7 @@ TODO
 
 ## Coding guidance
 
-TODO
+Use only when the person's main stated worldview is the Empiricism Thesis; never as a default for scientists.
 
 ## v7.1 scoring note
 
@@ -121,9 +230,11 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-None yet.
+- A and B for a pure epistemology (ruling question).
+- Adherents are TODO.
 
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
+- 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
