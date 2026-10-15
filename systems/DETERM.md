@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S5): filled from SEP "Causal Determinism" (Hoefer). A BELOW_THRESHOLD; B 4 (0.7); E 4 (0.5); C, D UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S5 audit follow-up: E_scope note citing P44(b). No value change.'
 identity:
   id: DETERM
   v7_1_number: 28
@@ -128,6 +131,7 @@ lio_axes:
     - source: S1
       locator: introduction
     how_known: 'Implied by the stance, not stated: 0.5.'
+    note: 'P44(b): the stance itself fixes E (every event under the same laws, so no exception for any group); hence a score, not UNKNOWN.'
 epistemology:
   value: TODO
 ethics:
@@ -239,3 +243,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S5): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions (AI-generated) not used. Axes under P44.
+- 2026-10-15 (S5 audit follow-up): E_scope note added (P44(b)).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S2 audit note: the motto quoted as its three headings.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S5 audit follow-up: sources flagged P45 lower tier. No value or certainty change.'
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -195,7 +198,7 @@ sources:
   citation: Sunday Assembly. "Learn About Us." https://www.sundayassembly.org/about.
   url: https://www.sundayassembly.org/about
   accessed: '2026-10-15'
-  reliability_note: The movement's own page; undated. No encyclopedia entry read.
+  reliability_note: 'The movement''s own page; undated. No encyclopedia entry read. P45 lower tier (S5 audit follow-up): movement’s own published statement; claims capped at 0.5.'
 ---
 
 # Sunday Assembly (SUNASM)
@@ -244,3 +247,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
 - 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): motto quoted as three headings.
+- 2026-10-15 (S5 audit follow-up): reliability_note flagged P45 lower tier.

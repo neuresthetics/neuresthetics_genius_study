@@ -2,6 +2,13 @@
 
 ## v8 (in progress)
 
+### S5 audit follow-ups (2026-10-15; S5 audit 13/13 HOLD)
+
+- **Kant** (person): primary_system BELOW_THRESHOLD -> KANT @0.7 under the founders rule, replacing the stub reason. No axis changes. Moves Kant from uncoded to KANT on primary_system only.
+- **LVSAT**: unchanged; The Satanic Bible noted as an unverified P45 lead.
+- **DETERM**: E 4 note citing P44(b).
+- **BRGHTS**: A and B certainty 0.7 -> 0.5 under P45 (values stay 4); reliability_note flagged "P45 lower tier". **SUNASM**: flag only.
+
 ### Systems batch S6 (2026-10-15, unreviewed)
 
 - **PANDEI** (P45 lower tier: Lane, *Zygon* 2021, peer-reviewed): A 4, B 4, D 4 at 0.5; C, E UNKNOWN.

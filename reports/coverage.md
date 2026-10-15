@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 1001 | 975 | 0 | 26 | 0 | 97.4% |
 | contribution | 816 | 815 | 0 | 1 | 0 | 99.9% |
 | childhood | 1030 | 720 | 265 | 44 | 1 | 69.9% |
-| worldview | 991 | 455 | 7 | 377 | 152 | 45.9% |
+| worldview | 991 | 456 | 7 | 377 | 151 | 46.0% |
 | heritage | 364 | 159 | 171 | 33 | 1 | 43.7% |
 | timing | 455 | 325 | 32 | 94 | 4 | 71.4% |
 | lane_b | 273 | 270 | 3 | 0 | 0 | 98.9% |
 | institutions | 195 | 195 | 0 | 0 | 0 | 100.0% |
 | collaborators | 278 | 278 | 0 | 0 | 0 | 100.0% |
 | review | 130 | 130 | 0 | 0 | 0 | 100.0% |
-| **all** | 5715 | 4463 | 486 | 608 | 158 | 78.1% |
+| **all** | 5715 | 4464 | 486 | 608 | 157 | 78.1% |
 
 ### Worldview coding status
 
@@ -121,7 +121,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | hypatia | BELOW_THRESHOLD | draft — unreviewed |
 | ibn-sina | CLASS_THEISM | draft — unreviewed |
 | kahlo-frida | UNKNOWN | draft — unreviewed |
-| kant-immanuel | BELOW_THRESHOLD | draft — unreviewed |
+| kant-immanuel | KANT | draft — unreviewed |
 | kepler-johannes | CHRIST | draft — unreviewed |
 | khayyam-omar | UNKNOWN | draft — unreviewed |
 | lavoisier-antoine | BELOW_THRESHOLD | draft — unreviewed |

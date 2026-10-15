@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(c): C and E cite the naturalism rule (implied, 0.5). No score change.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S5 audit follow-up: A and B capped at 0.5 under P45 (values stay 4); sources flagged P45 lower tier.'
 identity:
   id: BRGHTS
   v7_1_number: 3
@@ -105,21 +108,21 @@ lio_axes:
   A_locus:
     value: 4
     rationale: No supernatural deities; naturalistic worldview.
-    certainty: 0.7
+    certainty: 0.5
     cites:
     - source: S1
       locator: home
     - source: S2
       locator: Vision
-    how_known: 0–4 scale (P1). Own definition; A 4 for a no-God system under P44(a), 0.7.
+    how_known: 0–4 scale (P1). Own definition; A 4 for a no-God system under P44(a), 0.7. Capped at 0.5 under P45 (was 0.7; value unchanged).
   B_cause:
     value: 4
     rationale: No supernatural forces or entities, so no miracle or exception.
-    certainty: 0.7
+    certainty: 0.5
     cites:
     - source: S2
       locator: Vision
-    how_known: '0–4 scale (P1). 0.7: the site states the worldview, not a doctrine of law.'
+    how_known: '0–4 scale (P1). 0.7: the site states the worldview, not a doctrine of law. Capped at 0.5 under P45 (was 0.7; value unchanged).'
   C_ledger:
     value: 4
     rationale: No supernatural agent to keep a moral ledger.
@@ -210,7 +213,7 @@ sources:
   citation: The Brights' Net. "Who are The Brights?" https://www.the-brights.net/.
   url: https://www.the-brights.net/
   accessed: '2026-10-15'
-  reliability_note: The movement's own site (primary for its self-definition); no date on the page.
+  reliability_note: 'The movement''s own site (primary for its self-definition); no date on the page. P45 lower tier (S5 audit follow-up): movement’s own published statement; claims capped at 0.5.'
 - id: S2
   type: primary
   kind: institutional page
@@ -218,7 +221,7 @@ sources:
   citation: The Brights' Net. "The Vision." https://www.the-brights.net/vision/.
   url: https://www.the-brights.net/vision/
   accessed: '2026-10-15'
-  reliability_note: The movement's own site; no date on the page.
+  reliability_note: 'The movement''s own site; no date on the page. P45 lower tier (S5 audit follow-up): movement’s own published statement; claims capped at 0.5.'
 ---
 
 # Brights (The Brights Movement) (BRGHTS)
@@ -268,3 +271,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): Geisert & Futrell (2003) noted as the lead for founding details; A under P44(a).
 - 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): C and E cite P44(c); values unchanged.
+- 2026-10-15 (S5 audit follow-up): A, B certainty 0.7 -> 0.5 (P45 cap); reliability_note flagged.

@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -12,6 +12,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #379: 'lived his entire life' now cited to Britannica 'Background and early years' and SEP religion §2.1.1, not SEP §1. #405: early_mathematics 'other' (curriculum only; no source says advanced). #415: wording only; he declines to contest revelation and miracles (AA VI 155; VI 88 n.) rather than accepting them; value unchanged. #390: stray 'ancestor gloss' wording fixed. #420: heading §3.3.1.2 rechecked in the live entry; kept. Bylines: SEP religion now Pasternack and Fugate; Britannica now Bird and Duignan. #416, #456 left (stub-system rule awaits v8). Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-15, by: "Grok Bot", summary: "S5 audit follow-up: primary_system BELOW_THRESHOLD -> KANT @0.7 under the founders rule, replacing the stub reason. No axis changes. Not reviewed."}
 
 identity:
   id: kant-immanuel
@@ -96,13 +97,16 @@ worldview:
     cites: [{source: S4, locator: "AA III 19"}, {source: S5, locator: "AA V 125"}, {source: S6, locator: "AA VI 87–88"}]
     how_known: "His own published works in the Akademie-Ausgabe text; 0.7 because SEP (S2 §3.3.1) names competing readings of what kind of assent this is."
   primary_system:
-    value: BELOW_THRESHOLD
+    value: KANT
+    basis: written_profession
+    certainty: 0.7
     cites: [{source: S5, locator: "AA V 124–125"}, {source: S6, locator: "AA VI 153–155"}, {source: S2, locator: "§3.2; §3.6"}]
-    how_known: "His own position is a moral faith: God and immortality as postulates of practical reason, religion as 'das Erkenntniß aller unserer Pflichten als göttlicher Gebote' (AA VI 153), miracles and petition kept out of the maxims of reason. The code that fits is KANT (Kantianism), and KANT is a stub system file, so under the stub rule it cannot be coded."
-    note: "Candidate: KANT (stub). Founders rule conflict: he is the founder of the system the code names, so a reviewer may want KANT at 1.0 once the file is filled (see report method question). Also considered: CLASS_THEISM (no: he rejects the theoretical proofs of God, S2 §3.1.2), DEISM (no: his own 'Deism' means the useless God of transcendental theology, S2 §3.2. DEISM's do_not_use_when names a person who 'accepts revelation and miracles'; Kant does not accept them either: he declines to contest revelation, AA VI 155, and he does not take belief in miracles into the maxims of reason, 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten', AA VI 88 n. So that clause fits only in part, and the rejection rests on S2 §3.2; lens audit #415), CHRIST (Pasternack's 'successful Christian apologist' reading, S2 §3.6.1; not coded, because he subordinates church faith to pure rational faith, AA VI 153). Backlog: fill KANT."
+    how_known: "Founders rule (§1): he founded Kantianism, the system the code names. His own position is a moral faith: God and immortality as postulates of practical reason, religion as 'das Erkenntniß aller unserer Pflichten als göttlicher Gebote' (AA VI 153), miracles and petition kept out of the maxims of reason. Capped at 0.7 under the founders rule; KANT is now a sourced draft (systems batch S4)."
+    rationale: "Founders are coded with the system they founded (S5 audit follow-up, 2026-10-15). Replaces the earlier stub-rule BELOW_THRESHOLD."
+    note: "Also considered: CLASS_THEISM (no: he rejects the theoretical proofs of God, S2 §3.1.2), DEISM (no: his own 'Deism' means the useless God of transcendental theology, S2 §3.2; he declines to contest revelation, AA VI 155, and keeps belief in miracles out of the maxims of reason, AA VI 88 n.; lens audit #415), CHRIST (Pasternack's 'successful Christian apologist' reading, S2 §3.6.1; not coded, because he subordinates church faith to pure rational faith, AA VI 153)."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
-    - {code: KANT, reason: "Best fit; not coded because KANT is a stub system file (BELOW_THRESHOLD by rule).", cites: [{source: S5, locator: "AA V 124–125"}, {source: S6, locator: "AA VI 153"}]}
+    - {code: KANT, reason: "Coded as primary (founders rule, 0.7).", cites: [{source: S5, locator: "AA V 124–125"}, {source: S6, locator: "AA VI 153"}]}
     - {code: CHRIST, reason: "Considered: Lutheran Pietist upbringing; extensive treatment of Christian doctrines; one reading makes him a Christian apologist (S2 §3.6.1). Not coded: church faith is a vehicle that the true church should be able to do without in time ('den Kirchenglauben [...] mit der Zeit entbehren zu können', AA VI 153). CHRIST is a draft system file.", cites: [{source: S2, locator: "§3.6"}, {source: S6, locator: "AA VI 153"}]}
     - {code: DEISM, reason: "Considered and rejected: in Kant's own terms the deist's God is 'useless' and he favours 'Theism' (S2 §3.2); he does not contest revelation (AA VI 155).", cites: [{source: S2, locator: "§3.2"}, {source: S6, locator: "AA VI 155"}]}
     - {code: CLASS_THEISM, reason: "Rejected: he denies that God can be proved by theoretical reason (S2 §3.1.2; S1 §2.2).", cites: [{source: S2, locator: "§3.1.2"}]}
@@ -226,7 +230,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Pre-critical natural theology (his own argument for God's existence in The Only Possible Argument, 1763) gave way in the critical period to the denial of theoretical proofs and a moral faith", year: "1763; 1781", certainty: 0.7, cites: [{source: S2, locator: "§2.2.1; §2.2.3; §3.1.2"}], how_known: "SEP Pasternack."}
-  coder_notes: "DRAFT SCORES for v8's review. All own-word quotations were read in the Bonner Kant-Korpus (korpora.org), the electronic text of the Akademie-Ausgabe, and are cited by AA volume and page; the §7 cap for unofficial copies does not apply, but every axis names an alternative, so all sit at 0.7. German quoted as printed in AA (e.g. 'Erkenntniß', 'nothwendig'). The Gutenberg English texts (Abbott, Meiklejohn) were downloaded but not used for quotations. KANT is a stub: primary_system is BELOW_THRESHOLD by the stub rule (report backlog). Region coded by modern country (Russia), which puts a Prussian in Eastern Europe (flag)."
+  coder_notes: "DRAFT SCORES for v8's review. All own-word quotations were read in the Bonner Kant-Korpus (korpora.org), the electronic text of the Akademie-Ausgabe, and are cited by AA volume and page; the §7 cap for unofficial copies does not apply, but every axis names an alternative, so all sit at 0.7. German quoted as printed in AA (e.g. 'Erkenntniß', 'nothwendig'). The Gutenberg English texts (Abbott, Meiklejohn) were downloaded but not used for quotations. primary_system is KANT @0.7 under the founders rule (S5 audit follow-up, 2026-10-15; formerly BELOW_THRESHOLD by the stub rule). Region coded by modern country (Russia), which puts a Prussian in Eastern Europe (flag)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -241,7 +245,7 @@ timing:
   age_at_first_lasting_contribution: {value: 31, certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "Born April 1724; Universal Natural History 1755."}
   first_evidence_of_lio_type_views: {value: "Lawful mechanical formation of the solar system (nebular hypothesis) in Universal Natural History", year: 1755, age: 31, certainty: 0.5, cites: [{source: S1, locator: "§1"}], how_known: "SEP names the hypothesis; reading it as an LIO-type view of nature is the coder's, and the book itself was not read."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "Lawful nature from 1755; the full exclusion of miracles from the maxims of reason in 1793.", certainty: 0.5, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "AA VI 87–88"}], how_known: "Dates of what was read."}
-  worldview_during_major_work: {value: "Moral faith of the critical period (no coded system: KANT is a stub)", certainty: 0.7, cites: [{source: S5, locator: "AA V 125"}, {source: S6, locator: "AA VI 153"}], how_known: "His own texts of 1788 and 1793."}
+  worldview_during_major_work: {value: "Moral faith of the critical period (coded KANT, founders rule)", certainty: 0.7, cites: [{source: S5, locator: "AA V 125"}, {source: S6, locator: "AA VI 153"}], how_known: "His own texts of 1788 and 1793."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
