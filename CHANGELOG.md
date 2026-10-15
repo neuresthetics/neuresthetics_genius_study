@@ -2,6 +2,16 @@
 
 ## v8 (in progress)
 
+### Systems batch S7 (2026-10-15, unreviewed)
+
+- **BAHAI** (Britannica "Bahāʾī Faith", editors, revised by Charles Preston; article body only): A 0 at 0.5 (alt 1); D 1 at 0.5 (alt 2); B, C, E UNKNOWN.
+- **ANIM** (Britannica "Animism", Park): A BELOW_THRESHOLD (alt 3); B 1 at 0.5 (alt 0); C, D, E UNKNOWN.
+- **CAODAI** (Britannica "Cao Dai", editors): A 1 (alt 0), B 1, D 1 at 0.5; C 3 at 0.5 (alt 4, karma); E UNKNOWN.
+- **CHNFOLK** (Goossaert, "Chinese Religion: Popular Religion", *Encyclopedia of Religion*, 2nd ed., 2005): A 3; B 1 (alt 0); C 1; D 1 (alt 2); E 1 (alt 0); all 0.5.
+- **HYLO** (Britannica "Hylozoism", editors): A, B BELOW_THRESHOLD (members differ); C, D, E UNKNOWN.
+- **CONFUC** (SEP "Confucius", Csikszentmihalyi): A BELOW_THRESHOLD (alt 2); B 3; C 3 (alt 4); D 2 (alt 1); all 0.5; E UNKNOWN.
+- Britannica pages read in full Wayback Machine copies where the live site timed out. v7.1 scores and notes unchanged. No person record changes.
+
 ### S5 audit follow-ups (2026-10-15; S5 audit 13/13 HOLD)
 
 - **Kant** (person): primary_system BELOW_THRESHOLD -> KANT @0.7 under the founders rule, replacing the stub reason. No axis changes. Moves Kant from uncoded to KANT on primary_system only.

@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 35 |
+| stub | 29 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 41 |
+| draft — unreviewed | 47 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 67 | 162 | 2 | 0 | 29.0% |
-| origins | 284 | 135 | 147 | 2 | 0 | 47.5% |
-| metaphysics | 847 | 156 | 691 | 0 | 0 | 18.4% |
-| lio_axes | 385 | 84 | 175 | 100 | 26 | 21.8% |
+| classification | 231 | 73 | 156 | 2 | 0 | 31.6% |
+| origins | 285 | 146 | 137 | 2 | 0 | 51.2% |
+| metaphysics | 847 | 165 | 682 | 0 | 0 | 19.5% |
+| lio_axes | 385 | 99 | 145 | 111 | 30 | 25.7% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 14 | 62 | 1 | 0 | 18.2% |
-| practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
+| practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2286 | 511 | 1644 | 105 | 26 | 22.4% |
+| **all** | 2287 | 553 | 1588 | 116 | 30 | 24.2% |
 
 ### Systems that are past stub stage
 
@@ -223,13 +223,18 @@ Display label status:
 |---|---|---|---|---|
 | ABSURD | Absurdism | draft — unreviewed | 6/31 | not started |
 | AGNOS | Agnosticism | draft — unreviewed | 11/31 | not started |
+| ANIM | Animism | draft — unreviewed | 4/29 | not started |
 | ARIST | Aristotelianism | draft — unreviewed | 11/32 | not started |
 | ATHE | Atheism (naturalistic/materialistic – no gods + philosophical naturalism) | draft — unreviewed | 16/29 | not started |
+| BAHAI | Bahá’í Faith | draft — unreviewed | 9/29 | not started |
 | BRGHTS | Brights (The Brights Movement) | draft — unreviewed | 9/29 | not started |
 | BUDDH | Buddhism | draft — unreviewed | 6/29 | not started |
+| CAODAI | Caodaism | draft — unreviewed | 10/29 | not started |
+| CHNFOLK | Chinese Folk Religion (Shenism) | draft — unreviewed | 8/29 | not started |
 | CHRIST | Christianity | draft — unreviewed | 32/33 | not started |
 | CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
+| CONFUC | Philosophical Confucianism | draft — unreviewed | 8/30 | not started |
 | CYNIC | Cynicism | draft — unreviewed | 6/29 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
 | DETERM | Determinism | draft — unreviewed | 7/29 | not started |
@@ -239,6 +244,7 @@ Display label status:
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
 | HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
+| HYLO | Hylozoism | draft — unreviewed | 3/29 | not started |
 | IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JAIN | Jainism | draft — unreviewed | 8/29 | not started |
