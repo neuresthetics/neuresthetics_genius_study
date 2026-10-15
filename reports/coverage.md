@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 29 |
+| stub | 23 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 47 |
+| draft — unreviewed | 53 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 73 | 156 | 2 | 0 | 31.6% |
-| origins | 285 | 146 | 137 | 2 | 0 | 51.2% |
-| metaphysics | 847 | 165 | 682 | 0 | 0 | 19.5% |
-| lio_axes | 385 | 99 | 145 | 111 | 30 | 25.7% |
+| classification | 231 | 79 | 150 | 2 | 0 | 34.2% |
+| origins | 285 | 152 | 131 | 2 | 0 | 53.3% |
+| metaphysics | 847 | 168 | 679 | 0 | 0 | 19.8% |
+| lio_axes | 385 | 101 | 115 | 131 | 38 | 26.2% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 14 | 62 | 1 | 0 | 18.2% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 553 | 1588 | 116 | 30 | 24.2% |
+| **all** | 2287 | 570 | 1543 | 136 | 38 | 24.9% |
 
 ### Systems that are past stub stage
 
@@ -243,13 +243,17 @@ Display label status:
 | EPICUR | Epicureanism | draft — unreviewed | 13/29 | not started |
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
+| HEATH | Heathenry (Ásatrú/Norse-Germanic Paganism) | draft — unreviewed | 3/29 | not started |
 | HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
+| HELLEN | Hellenismos (Greek Reconstructionist Paganism) | draft — unreviewed | 1/29 | not started |
+| HINDU | Hinduism (Sanatana Dharma) | draft — unreviewed | 5/29 | not started |
 | HYLO | Hylozoism | draft — unreviewed | 3/29 | not started |
 | IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JAIN | Jainism | draft — unreviewed | 8/29 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
+| KEMET | Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) | draft — unreviewed | 1/29 | not started |
 | LVSAT | LaVeyan Satanism (Church of Satan) | draft — unreviewed | 8/30 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
 | OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
@@ -264,8 +268,10 @@ Display label status:
 | RATN | Rationalism | draft — unreviewed | 5/29 | not started |
 | SCEPT | Scepticism (Skepticism) | draft — unreviewed | 4/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
+| SHINTO | Shinto | draft — unreviewed | 5/29 | not started |
 | SOLIP | Solipsism | draft — unreviewed | 2/29 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
+| TAO | Taoism (Daoism) | draft — unreviewed | 2/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
 | UTIL | Utilitarianism | draft — unreviewed | 4/29 | not started |

@@ -2,6 +2,15 @@
 
 ## v8 (in progress)
 
+### Systems batch S8 (2026-10-15, unreviewed)
+
+- **SHINTO** (Britannica "Shintō", Hirai): A 3 at 0.5 (alt 2); B, C, D, E UNKNOWN.
+- **TAO** (SEP "Daoism", Hansen; IEP "Daoist Philosophy", Littlejohn): A (alt 3), B, D BELOW_THRESHOLD (naturalist classical vs religious Daoism); C, E UNKNOWN.
+- **HINDU** (Britannica "Hinduism", Narayanan; IEP "Hindu Philosophy", Ranganathan): A BELOW_THRESHOLD; C 3 at 0.5 (alt 4, P44(d)); D BELOW_THRESHOLD (alt 1); B, E UNKNOWN.
+- **HEATH** (Britannica "Heathenry", Doyle White): A BELOW_THRESHOLD (alt 3); rest UNKNOWN.
+- **HELLEN, KEMET** (thin: one sentence in Britannica "Modern Paganism", Doyle White): A BELOW_THRESHOLD; rest UNKNOWN; flagged for a better source.
+- v7.1 scores and notes unchanged. No person record changes.
+
 ### S6 audit fixes (2026-10-15; S6 audit 14 hold, 1 weaken)
 
 - **JAIN**: Britannica credited to G. Ralph Strohl, Paul Dundas and Britannica Editors (both names are on the byline).
