@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): filled from the movement''s own site (the-brights.net home and Vision pages; primary for self-definition). No encyclopedia entry found. Founders and dates TODO. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S1 audit: Geisert & Futrell 2003 noted as the lead for founding details; A cites P44(a).'
 identity:
   id: BRGHTS
   v7_1_number: 3
@@ -46,6 +49,7 @@ classification:
 origins:
   founding_era:
     value: TODO
+    how_known: 'Lead not yet read: Geisert & Futrell (2003), for founders and founding date.'
   founding_region:
     value: TODO
   founders_or_key_figures:
@@ -104,7 +108,7 @@ lio_axes:
       locator: home
     - source: S2
       locator: Vision
-    how_known: 0–4 scale (P1). Own definition; A for a system with no God-term follows ATHE (ruling question), so 0.7.
+    how_known: 0–4 scale (P1). Own definition; A 4 for a no-God system under P44(a), 0.7.
   B_cause:
     value: 4
     rationale: No supernatural forces or entities, so no miracle or exception.
@@ -193,7 +197,7 @@ review:
   data_quality_flags:
   - Only the movement's own pages were read; no independent encyclopedia entry was found. Founders, founding date and membership are TODO.
   open_questions:
-  - Founding (an independent source is needed).
+  - 'Founding: lead is Geisert & Futrell (2003), not yet read.'
   - Adherents are TODO.
 sources:
 - id: S1
@@ -251,7 +255,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Founders, date and an independent source.
+- Founders, date and an independent source: lead is Geisert & Futrell (2003).
 - Adherents are TODO.
 
 ## Research log
@@ -259,3 +263,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): Geisert & Futrell (2003) noted as the lead for founding details; A under P44(a).

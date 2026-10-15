@@ -1,6 +1,6 @@
 # Coding guide
 
-How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and 2026-10-02, or decided as v8's picks on 2026-10-02 where Jason delegated the method detail (P9, P11–P31, S7), or on 2026-10-08 (P32, P33) and 2026-10-15 (P38–P42); P43 was decided by Jason on 2026-10-15; all are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
+How to fill person and system records consistently. Part 1 covers people, Part 2 belief systems. The v7.1 coding rules are quoted verbatim. Rules that v8 added were decided by Jason on 2026-10-01 and 2026-10-02, or decided as v8's picks on 2026-10-02 where Jason delegated the method detail (P9, P11–P31, S7), or on 2026-10-08 (P32, P33) and 2026-10-15 (P38–P42); P43 was decided by Jason on 2026-10-15, and P44 as v8's pick on 2026-10-15; all are tagged with their item in [OPEN_DECISIONS.md](OPEN_DECISIONS.md) (P1, P4, S6 and so on). Field definitions are in [DATA_DICTIONARY.md](DATA_DICTIONARY.md), and the research procedure is in [RUNBOOK.md](RUNBOOK.md).
 
 ---
 
@@ -435,6 +435,7 @@ The 77 codes (display labels; two differ from v7.1, both approved: CLTHEI by S1,
   | teleology_in_nature | none · immanent ends · designer's purposes · varies by school |
 
 - **LIO axes** use the same 0–4 scale as people (P1), scored for the official or scholarly form, with a `rationale`. System records have no `basis` field. Use certainty 1.0 for positions the sources state directly, 0.7 for a coder's reading of what they say, and 0.5 where scholars disagree.
+- **When to score a system axis** (P44, v8's pick, 2026-10-15). (a) A system with no God or spiritual being gets A_locus 4 (extends P38). (b) Give a value only where the system's stance itself fixes it; use `UNKNOWN` where the sources read are silent and `BELOW_THRESHOLD`, with the alternative named, where members or schools differ.
 - **Adherents** are context only. Give year and scope, and cite a demographic source. Never use them as a denominator.
 - **Science stance**: historical (in the periods the roster covers) and current (official bodies or leading scholars). Cite both, and keep them separate.
 - **Coding guidance**: `use_when` quotes the v7.1 rule verbatim where one names the code, then adds detail. `do_not_use_when` names the usual mistakes and the code to use instead. `neighbors` lists codes that are easily confused with this one.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): filled from SEP "Rationalism vs. Empiricism" (Markie and Folescu). An epistemology: D 3 at 0.5; A, C and E UNKNOWN; B BELOW_THRESHOLD. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S1 audit (WEAKEN): D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3, under P44(b).'
 identity:
   id: EMPIR
   v7_1_number: 4
@@ -115,13 +118,15 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed.
   D_authority:
-    value: 3
-    rationale: 'Experience is the only source of knowledge in the subject areas the empiricist covers; revelation is given no role there. 3 not 4: the thesis is relative to a subject area, and Locke put reason ''on equal footing with experience'' for some truths.'
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: §1
-    how_known: 0–4 scale (P1). SEP does not discuss revelation; inferred, 0.5.
+    value: BELOW_THRESHOLD
+    how_known: 'P44(b): the Empiricism Thesis is relative to subject area and Locke put reason ''on equal footing with experience'', so members differ; the sources read do not mention revelation.'
+    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from 3 (0.5) after the S1 audit.'
+    alternatives:
+    - value: 3
+      note: Coder's first reading in batch S1.
+      cites:
+      - source: S1
+        locator: §1
   E_scope:
     value: UNKNOWN
     how_known: Not addressed.
@@ -206,7 +211,7 @@ None as such: a thesis about knowledge [S1].
 
 ## Position on the LIO axes
 
-- D 3 (0.5): experience the only source in the covered areas [S1, §1].
+- D BELOW_THRESHOLD (alt 3): experience the only source in the covered areas, but members differ [S1, §1].
 - B BELOW_THRESHOLD: Hume on causation [S1].
 - A, C, E UNKNOWN.
 
@@ -238,3 +243,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).

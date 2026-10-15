@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): classification, origins, metaphysics, LIO axes (0–4, P1), epistemology, science, schools and coding guidance filled from Britannica (Nielsen, "Atheism") and SEP ("Atheism and Agnosticism", "Naturalism"). v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S1 audit: A cites P44(a); open question closed.'
 identity:
   id: ATHE
   v7_1_number: 1
@@ -144,7 +147,7 @@ lio_axes:
       locator: opening
     - source: S2
       locator: §1
-    how_known: '0–4 scale (P1). Coder''s reading, 0.7: the axis is defined for a God-term, and atheism has none.'
+    how_known: 0–4 scale (P1). A 4 for a system with no God, under P44(a) (extends P38). 0.7.
   B_cause:
     value: 4
     rationale: 'Philosophical naturalism (in the v7.1 label): reality contains nothing supernatural, and all physical effects have fully physical causes, so no miracle, petition or exemption.'
@@ -210,7 +213,7 @@ science:
 schools_and_variants:
 - name: Local and global atheism (Diller)
   form: scholastic or philosophical
-  how_it_differs: 'Local atheism denies one sort of God; global atheism holds that there are no Gods of any sort.'
+  how_it_differs: Local atheism denies one sort of God; global atheism holds that there are no Gods of any sort.
   lio_difference: A at 4 only for global atheism; a local atheist may hold another God-concept.
   certainty: 1.0
   cites:
@@ -279,7 +282,7 @@ review:
   - The v7.1 label joins atheism to philosophical naturalism; SEP (S2, §1) treats atheism as the denial of God, with naturalism a separate positive theory some writers identify with it. B, C and E are scored on the label's naturalistic form.
   open_questions:
   - Adherents are TODO.
-  - The axis scale is defined for a God-term; A 4 for "no God" follows P38 for persons. Confirm for systems (ruling question).
+  - Bare atheism (without naturalism) would leave B BELOW_THRESHOLD; a person coded ATHE keeps B from their own evidence.
 sources:
 - id: S1
   type: tertiary
@@ -349,7 +352,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- The A score for a system with no God-term (ruling question).
+- A 4 ruled under P44(a).
 - Adherents are TODO.
 
 ## Research log
@@ -357,3 +360,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): A under P44(a); note that a person coded ATHE keeps B from their own evidence (checked: Chandrasekhar, Hawking, Marx, Nietzsche, Turing all do).

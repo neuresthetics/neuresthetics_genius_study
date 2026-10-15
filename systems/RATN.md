@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): filled from SEP "Rationalism vs. Empiricism". D 3 at 0.5; A BELOW_THRESHOLD; B, C and E UNKNOWN. The P22 use_when line is kept. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S1 audit (WEAKEN): D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3, under P44(b).'
 identity:
   id: RATN
   v7_1_number: 7
@@ -117,13 +120,15 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in S1.
   D_authority:
-    value: 3
-    rationale: 'Intuition and deduction yield knowledge independently of experience, including of God; revelation is given no role. 3 not 4: the theses are relative to a subject area.'
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: §1
-    how_known: 0–4 scale (P1). SEP does not discuss revelation; inferred, 0.5.
+    value: BELOW_THRESHOLD
+    how_known: 'P44(b): the theses are relative to subject area, and SEP does not discuss revelation, so members differ; the sources read do not mention revelation.'
+    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from 3 (0.5) after the S1 audit.'
+    alternatives:
+    - value: 3
+      note: Coder's first reading in batch S1.
+      cites:
+      - source: S1
+        locator: §1
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in S1.
@@ -208,7 +213,7 @@ Varies: the named rationalists differ on God [S1].
 
 ## Position on the LIO axes
 
-- D 3 (0.5): reason independent of experience [S1, §1].
+- D BELOW_THRESHOLD (alt 3): reason independent of experience, but members differ [S1, §1].
 - A BELOW_THRESHOLD: God often known a priori; locus varies.
 - B, C, E UNKNOWN.
 
@@ -240,3 +245,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).

@@ -69,18 +69,19 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P41 | Lawgiver denial without a no-exception claim: P35's rule (never B 4 without a stated no-exception) extends to non-scientists whose statement denies a lawgiver but does not claim exceptionless law; B 3 at 0.5, alternative 4; also covers non-scientists who reject miracles or intervention without stating an exceptionless order (extension, batch H audit) | medium | DECIDED (v8's pick) 2026-10-15 (audit of stage 3 batch D, RQ1, Russell) |
 | P42 | Texts of unknown or disputed authorship: a text handed down under a person's name (a corpus, an oral epic) is the person's own words only if a source read attributes that specific text to them; otherwise it is context only and scores nothing. Scholarly agreement on who wrote a text counts as 'a source attributes' it. A later writer's summary of the person's doctrine (doxography) is reported speech | medium-high | DECIDED (v8's pick) 2026-10-15 (stage 3 batch F, Hippocrates, Homer) |
 | P43 | Interview books of disputed wording (Craft books): first-person statements from interview books of disputed wording (Stravinsky's books with Robert Craft) score, with basis `recorded_interview`, flagged '(interview)', capped at 0.5; they go no higher without a document in the person's own hand that confirms them | medium | decided 2026-10-15 by Jason (RQ1, stage 3 batch G, Stravinsky) |
+| P44 | System records: (a) a system with no God gets A_locus 4 (extends P38); (b) score a system axis only where the stance itself fixes a value; UNKNOWN where the source is silent, BELOW_THRESHOLD where members differ | medium | decided 2026-10-15, v8's pick (S1 systems audit, run 1 recommendations) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, P38–P42 on 2026-10-15 and P43 (Jason) on 2026-10-15; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, P38–P42 on 2026-10-15 P43 (Jason) and P44 (v8's pick) on 2026-10-15; all are listed under "Decided".
 
 
 ## Decided
 
-All 58 items, in id order (P6–P43 are placed after P5, S7 after S6).
+All 59 items, in id order (P6–P44 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -791,6 +792,13 @@ Process:
 - **Chart.** A person whose plotted axes rest on such statements is drawn faded (certainty below 0.7), marked with an asterisk, and named in the chart caption as resting on a disputed interview voice.
 - **Applied to:** Stravinsky: A_locus 0 at 0.5 (alternative 1), B_cause 2 at 0.5 (alternative 3), from "a personal God, a personal Devil and the miracles of the Church" (Conversations, 1959, quoted by Dahl 2016, p. 64). B 2 is kept: the Church's miracles are not stated to be rare or past, and no lawful general order is stated (P35, P41).
 - **Result-changing.** Yes: Stravinsky is plotted (faded) at A 0, B 2, beside Pascal, the other person plotted left of B 3.
+
+### P44. System records: no-God systems and when to score an axis
+**Decided 2026-10-15, v8's pick (from the blind audit of systems batch S1, `/workspace/genius_study_audit/gs_8a3ba87_S1/run1/`, conservative options).**
+- **Rule (a).** A system that denies any God or spiritual being has no locus outside nature and gets A_locus 4, by the same logic as P38 for persons.
+- **Rule (b).** In a system file, score an axis only where the stance itself fixes a value. Use `UNKNOWN` where the sources read are silent, and `BELOW_THRESHOLD` (with the alternative named) where members or schools differ.
+- **Applied to:** ATHE and BRGHTS A 4 (a); SECHUM A 4 (a); EMPIR and RATN D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3 (b); batch S2 filled under (b).
+- **Result-changing.** No for people: a person's axes come from their own evidence, never from the code. The systems chart changes (EMPIR and RATN D become unscored).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

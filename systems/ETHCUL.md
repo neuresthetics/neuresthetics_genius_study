@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): filled from Britannica "Ethical Culture". D 3 at 0.5; A, B, C and E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S1 audit: Britannica credited as Britannica Editors (unsigned); leads for A noted.'
 identity:
   id: ETHCUL
   v7_1_number: 5
@@ -116,7 +119,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: UNKNOWN
-    how_known: Britannica gives no God-view for the movement.
+    how_known: 'Britannica gives no God-view for the movement. Leads not yet read: Felix Adler, Creed and Deed (1877), and the American Ethical Union''s statements.'
   B_cause:
     value: UNKNOWN
     how_known: Not addressed.
@@ -192,7 +195,7 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - A God-view for the movement needs a source beyond Britannica (AEU and NYSEC pages could not be read).
+  - 'A God-view: leads are Adler''s Creed and Deed (1877) and AEU statements (not yet read).'
   - Adherents are TODO.
 sources:
 - id: S1
@@ -202,7 +205,7 @@ sources:
   citation: Britannica Editors. "Ethical Culture." Encyclopaedia Britannica. https://www.britannica.com/topic/Ethical-Culture.
   url: https://www.britannica.com/topic/Ethical-Culture
   accessed: '2026-10-15'
-  reliability_note: Unsigned short article; read in full.
+  reliability_note: Unsigned article credited to Britannica Editors; read in full.
 ---
 
 # Ethical Culture (Ethical Humanism) (ETHCUL)
@@ -242,7 +245,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- A God-view source.
+- A God-view source: leads are Adler's Creed and Deed (1877) and AEU statements.
 - Adherents are TODO.
 
 ## Research log
@@ -250,3 +253,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): source credit (Britannica Editors, unsigned); leads for A: Adler's Creed and Deed (1877), AEU statements.

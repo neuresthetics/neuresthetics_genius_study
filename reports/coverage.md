@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 46 | 183 | 2 | 0 | 19.9% |
 | origins | 279 | 97 | 180 | 2 | 0 | 34.8% |
 | metaphysics | 847 | 123 | 724 | 0 | 0 | 14.5% |
-| lio_axes | 385 | 65 | 280 | 32 | 8 | 16.9% |
+| lio_axes | 385 | 63 | 280 | 32 | 10 | 16.4% |
 | epistemology | 77 | 12 | 65 | 0 | 0 | 15.6% |
 | ethics | 77 | 10 | 66 | 1 | 0 | 13.0% |
 | practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2281 | 395 | 1841 | 37 | 8 | 17.3% |
+| **all** | 2281 | 393 | 1841 | 37 | 10 | 17.2% |
 
 ### Systems that are past stub stage
 
@@ -230,14 +230,14 @@ Display label status:
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
 | EFFALT | Effective Altruism | draft — unreviewed | 8/32 | not started |
-| EMPIR | Empiricism | draft — unreviewed | 6/29 | not started |
+| EMPIR | Empiricism | draft — unreviewed | 5/29 | not started |
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
 | PLATO | Platonism | draft — unreviewed | 30/31 | not started |
 | PRAG | Pragmatism | draft — unreviewed | 5/29 | not started |
-| RATN | Rationalism | draft — unreviewed | 6/29 | not started |
+| RATN | Rationalism | draft — unreviewed | 5/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
