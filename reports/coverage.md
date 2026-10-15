@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 56 |
+| stub | 50 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 20 |
+| draft — unreviewed | 26 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,21 +206,22 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 46 | 183 | 2 | 0 | 19.9% |
-| origins | 279 | 97 | 180 | 2 | 0 | 34.8% |
-| metaphysics | 847 | 123 | 724 | 0 | 0 | 14.5% |
-| lio_axes | 385 | 63 | 280 | 32 | 10 | 16.4% |
+| classification | 231 | 52 | 177 | 2 | 0 | 22.5% |
+| origins | 281 | 111 | 168 | 2 | 0 | 39.5% |
+| metaphysics | 847 | 134 | 713 | 0 | 0 | 15.8% |
+| lio_axes | 385 | 69 | 250 | 52 | 14 | 17.9% |
 | epistemology | 77 | 12 | 65 | 0 | 0 | 15.6% |
-| ethics | 77 | 10 | 66 | 1 | 0 | 13.0% |
+| ethics | 77 | 12 | 64 | 1 | 0 | 15.6% |
 | practice | 154 | 19 | 135 | 0 | 0 | 12.3% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2281 | 393 | 1841 | 37 | 10 | 17.2% |
+| **all** | 2283 | 432 | 1780 | 57 | 14 | 18.9% |
 
 ### Systems that are past stub stage
 
 | code | display label | review status | claims filled | revised rubric |
 |---|---|---|---|---|
+| ABSURD | Absurdism | draft — unreviewed | 6/31 | not started |
 | AGNOS | Agnosticism | draft — unreviewed | 11/31 | not started |
 | ARIST | Aristotelianism | draft — unreviewed | 11/32 | not started |
 | ATHE | Atheism (naturalistic/materialistic – no gods + philosophical naturalism) | draft — unreviewed | 16/29 | not started |
@@ -228,12 +229,17 @@ Display label status:
 | CHRIST | Christianity | draft — unreviewed | 32/33 | not started |
 | CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
+| CYNIC | Cynicism | draft — unreviewed | 6/29 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
 | EFFALT | Effective Altruism | draft — unreviewed | 8/32 | not started |
 | EMPIR | Empiricism | draft — unreviewed | 5/29 | not started |
+| EPICUR | Epicureanism | draft — unreviewed | 13/29 | not started |
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
+| EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
+| NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
+| OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
 | PANT | Pantheism (Spinozistic/naturalistic 'God = Universe') | example — unreviewed | 31/33 | not started |
 | PLATO | Platonism | draft — unreviewed | 30/31 | not started |
 | PRAG | Pragmatism | draft — unreviewed | 5/29 | not started |
