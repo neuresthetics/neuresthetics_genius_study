@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from SEP "Confucius" (Csikszentmihalyi). A BELOW_THRESHOLD (alt 2); B 3 (0.5); C 3 (0.5, alt 4); D 2 (0.5, alt 1); E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S7 audit fix: C 3 @0.5 -> UNKNOWN (lead 4); P44(d) needs a stated karma-type law.'
 identity:
   id: CONFUC
   v7_1_number: 44
@@ -122,29 +125,21 @@ lio_axes:
       locator: §5
     how_known: '0.5: the Analects only; the inherited Zhou view had supernatural intercession.'
   C_ledger:
-    value: 3
-    rationale: '''personal virtue did not always guarantee success''; ritual benefits are interior rather than ''rewards from the ancestors''.'
-    certainty: 0.5
-    cites: &id001
-    - source: S1
-      locator: §5; §3
-    how_known: '0.5: no judging person; as BUDDH and JAIN. Alternative 4.'
-    alternatives:
-    - value: 4
-      note: Named alternative.
-      cites: *id001
+    value: UNKNOWN
+    how_known: The entry states no karma-type law, so P44(d) does not apply (S7 audit). 'personal virtue did not always guarantee success' and ritual benefits beyond 'rewards from the ancestors' (S1) are a lead toward 4, not a score.
+    note: 'Lead: 4.'
   D_authority:
     value: 2
     rationale: Benevolence 'is grounded in tradition'; Confucius sought to preserve the Zhou ritual system.
     certainty: 0.5
-    cites: &id002
+    cites: &id001
     - source: S1
       locator: §4
     how_known: '0.5: tradition and sages, not revelation. Alternative 1.'
     alternatives:
     - value: 1
       note: Named alternative.
-      cites: *id002
+      cites: *id001
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -229,8 +224,8 @@ Heaven, partly naturalized [S1].
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD (alt 2); B 3; C 3 (alt 4); D 2 (alt 1); all 0.5.
-- E UNKNOWN.
+- A BELOW_THRESHOLD (alt 2); B 3 (0.5); D 2 (0.5, alt 1).
+- C UNKNOWN (lead 4), E UNKNOWN.
 
 ## Schools and variants
 
@@ -260,3 +255,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
+- 2026-10-15 (S7 audit fix): C UNKNOWN.

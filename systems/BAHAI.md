@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from the Britannica article body ("Bahāʾī Faith", editors, revised by Charles Preston). A 0 (0.5, alt 1); D 1 (0.5, alt 2); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S7 audit fix: Wayback snapshot URL and timestamp cited under P44(e).'
 identity:
   id: BAHAI
   v7_1_number: 39
@@ -207,10 +210,10 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Britannica Editors
-  citation: The Editors of Encyclopaedia Britannica. "Bahāʾī Faith." Encyclopaedia Britannica (most recently revised and updated by Charles Preston). https://www.britannica.com/topic/Bahai-Faith.
+  citation: 'The Editors of Encyclopaedia Britannica. "Bahāʾī Faith." Encyclopaedia Britannica (most recently revised and updated by Charles Preston). https://www.britannica.com/topic/Bahai-Faith. Wayback Machine snapshot 2026-10-11 10:55:53 UTC: https://web.archive.org/web/20261011105553/https://www.britannica.com/topic/Bahai-Faith.'
   url: https://www.britannica.com/topic/Bahai-Faith
   accessed: '2026-10-15'
-  reliability_note: Unsigned editors’ article; article body only (AI Top Questions ignored). Read in its Wayback Machine copy (snapshot 2026-10-11); the live page timed out.
+  reliability_note: 'Unsigned editors’ article; article body only (AI Top Questions ignored). P44(e): read in the Wayback copy (https://web.archive.org/web/20261011105553/https://www.britannica.com/topic/Bahai-Faith), counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison; byline in the copy: Britannica Editors.'
 ---
 
 # Bahá’í Faith (BAHAI)
@@ -258,3 +261,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
+- 2026-10-15 (S7 audit fix): P44(e) Wayback citation.

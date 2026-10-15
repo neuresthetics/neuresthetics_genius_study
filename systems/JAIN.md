@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S6 audit fix: C cites P44(d); Britannica byline credited to Strohl, Dundas and Britannica Editors.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S7 audit fix: rotating Britannica bylines noted (P44(e)).'
 identity:
   id: JAIN
   v7_1_number: 37
@@ -213,7 +216,7 @@ sources:
   citation: Strohl, G. Ralph, Paul Dundas, and Britannica Editors. "Jainism." Encyclopaedia Britannica, updated 15 September 2026. https://www.britannica.com/topic/Jainism.
   url: https://www.britannica.com/topic/Jainism
   accessed: '2026-10-15'
-  reliability_note: Signed article; first page read. AI Top Questions ignored. Byline lists Strohl and Dundas (checked in the Wayback copy, S6 audit fix).
+  reliability_note: 'Signed article; first page read. AI Top Questions ignored. Byline lists Strohl and Dundas (checked in the Wayback copy, S6 audit fix). Bylines rotate between snapshots: the live page read 2026-10-15 showed Dundas and Britannica Editors; the Wayback copy lists Strohl and Dundas (P44(e): both recorded).'
 ---
 
 # Jainism (JAIN)
@@ -261,3 +264,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
 - 2026-10-15 (S6 audit fix): C_ledger cites P44(d). Britannica byline corrected.
+- 2026-10-15 (S7 audit fix): byline note.

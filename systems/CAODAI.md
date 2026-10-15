@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S6 audit fix: C cites P44(d).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S7 audit fix: Wayback snapshot URL and timestamp cited under P44(e); B ceiling note.'
 identity:
   id: CAODAI
   v7_1_number: 41
@@ -128,7 +131,7 @@ lio_axes:
     cites:
     - source: S1
       locator: history
-    how_known: '0.5: one founding event; no general doctrine of intervention stated.'
+    how_known: '0.5: one founding event; no general doctrine of intervention stated. 0.5 is the ceiling: the séance is a communication, not a physical intervention (S7 audit).'
   C_ledger:
     value: 3
     rationale: Karma and rebirth taken from Buddhism.
@@ -212,10 +215,10 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Britannica Editors
-  citation: The Editors of Encyclopaedia Britannica. "Cao Dai." Encyclopaedia Britannica. https://www.britannica.com/topic/Cao-Dai.
+  citation: 'The Editors of Encyclopaedia Britannica. "Cao Dai." Encyclopaedia Britannica. https://www.britannica.com/topic/Cao-Dai. Wayback Machine snapshot 2026-05-04 19:37:58 UTC: https://web.archive.org/web/20260504193758/https://www.britannica.com/topic/Cao-Dai.'
   url: https://www.britannica.com/topic/Cao-Dai
   accessed: '2026-10-15'
-  reliability_note: Short unsigned editors’ article. Read in its Wayback Machine copy (snapshot 2026-05-04); the live page timed out.
+  reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260504193758/https://www.britannica.com/topic/Cao-Dai), counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison; byline in the copy: Britannica Editors.'
 ---
 
 # Caodaism (CAODAI)
@@ -264,3 +267,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
 - 2026-10-15 (S6 audit fix): C_ledger cites P44(d).
+- 2026-10-15 (S7 audit fix): P44(e) Wayback citation.

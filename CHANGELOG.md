@@ -2,6 +2,14 @@
 
 ## v8 (in progress)
 
+### S7 audit fixes (2026-10-15; S7 audit 13 hold, 3 weaken)
+
+- **OPEN_DECISIONS** P44 row: (d) moved after (c); (e) added.
+- **P44(e)** (Wayback rule) in OPEN_DECISIONS and CODING_GUIDE §11: a Wayback copy of a Britannica article counts as the full article, no P45 cap; cite snapshot URL and timestamp, compare with the live page when reachable, record both bylines if they differ. BAHAI, CAODAI and HYLO comply; the S8 Britannica sources (SHINTO, HINDU, HEATH, HELLEN, KEMET) brought into line in the same commit. JAIN notes its rotating bylines.
+- **P44(d)** narrowed: only where a source states a karma-type law. **CONFUC** C 3 @0.5 → UNKNOWN (lead 4).
+- **ANIM**: A quote now starts at "no ground for supposing".
+- **CAODAI**: B note that 0.5 is the ceiling (the séance is communication).
+
 ### Systems batch S8 (2026-10-15, unreviewed)
 
 - **SHINTO** (Britannica "Shintō", Hirai): A 3 at 0.5 (alt 2); B, C, D, E UNKNOWN.

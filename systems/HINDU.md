@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S8): filled from Britannica "Hinduism" (Narayanan) and IEP "Hindu Philosophy" (Ranganathan). A, D BELOW_THRESHOLD; C 3 (0.5, alt 4, P44(d)); B, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
 identity:
   id: HINDU
   v7_1_number: 47
@@ -187,10 +190,10 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Vasudha Narayanan; Britannica Editors
-  citation: Narayanan, Vasudha, and Britannica Editors. "Hinduism." Encyclopaedia Britannica. https://www.britannica.com/topic/Hinduism.
+  citation: 'Narayanan, Vasudha, and Britannica Editors. "Hinduism." Encyclopaedia Britannica. https://www.britannica.com/topic/Hinduism. Wayback Machine snapshot 2026-10-07 01:10:21 UTC: https://web.archive.org/web/20261007011021/https://www.britannica.com/topic/Hinduism.'
   url: https://www.britannica.com/topic/Hinduism
   accessed: '2026-10-15'
-  reliability_note: Signed article; introduction and "The term Hinduism" read. Read in its Wayback Machine copy (snapshot 2026-10-07); the live page timed out.
+  reliability_note: 'Signed article; introduction and "The term Hinduism" read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261007011021/https://www.britannica.com/topic/Hinduism); live page timed out on 2026-10-15, so no live comparison.'
 - id: S2
   type: tertiary
   kind: encyclopedia
@@ -247,3 +250,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
+- 2026-10-15: P44(e) Wayback citation.

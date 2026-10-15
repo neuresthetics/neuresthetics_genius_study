@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 79 | 150 | 2 | 0 | 34.2% |
 | origins | 285 | 152 | 131 | 2 | 0 | 53.3% |
 | metaphysics | 847 | 168 | 679 | 0 | 0 | 19.8% |
-| lio_axes | 385 | 101 | 115 | 131 | 38 | 26.2% |
+| lio_axes | 385 | 100 | 115 | 132 | 38 | 26.0% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 14 | 62 | 1 | 0 | 18.2% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 570 | 1543 | 136 | 38 | 24.9% |
+| **all** | 2287 | 569 | 1543 | 137 | 38 | 24.9% |
 
 ### Systems that are past stub stage
 
@@ -234,7 +234,7 @@ Display label status:
 | CHRIST | Christianity | draft — unreviewed | 32/33 | not started |
 | CLASS_THEISM | Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) | draft — unreviewed | 33/34 | not started |
 | CLTHEI | Interventionist personal theism | draft — unreviewed | 30/32 | not started |
-| CONFUC | Philosophical Confucianism | draft — unreviewed | 8/30 | not started |
+| CONFUC | Philosophical Confucianism | draft — unreviewed | 7/30 | not started |
 | CYNIC | Cynicism | draft — unreviewed | 6/29 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
 | DETERM | Determinism | draft — unreviewed | 7/29 | not started |

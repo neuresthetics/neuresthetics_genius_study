@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from Britannica "Animism" (Park). A BELOW_THRESHOLD (alt 3); B 1 (0.5, alt 0); C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S7 audit fix: A quote starts at “no ground for supposing”.'
 identity:
   id: ANIM
   v7_1_number: 40
@@ -93,7 +96,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: 'Spirits indwell nature (Tylor: ''sun and stars, trees and rivers, winds and clouds, become personal animate creatures''), but ''there is no ground for supposing that polytheistic and monotheistic ideas were excluded'' (S1).'
+    how_known: 'Spirits indwell nature (Tylor: ''sun and stars, trees and rivers, winds and clouds, become personal animate creatures''), but ''no ground for supposing that polytheistic and monotheistic ideas were excluded'' (S1).'
     note: 'Members differ (P44(b)). Alternative: 3.'
     alternatives:
     - value: 3
@@ -231,3 +234,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
+- 2026-10-15 (S7 audit fix): A quote trimmed.
