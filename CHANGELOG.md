@@ -236,6 +236,9 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
 
 - **2026-10-15, stage 3 batch D** (order P32; drafts, not reviewed; local commit, not pushed): Archimedes, Aristotle, Barbara McClintock, Bertrand Russell, Claude Debussy, Claude Monet. Aristotle is ARIST with A 1 and B 3 at 0.7, so mid_basin true; Russell is AGNOS with A 4 and B 4 at 0.5 (P38); Archimedes and McClintock get B 3 at 0.5 from working science (P35) with A UNKNOWN; Debussy (one 1911 interview, via Vallas 1933) and Monet are not scorable. Aristotle's texts and Russell's essays were read in unofficial web copies (0.7 cap; edition checks pending).
 
+- **2026-10-15, stage 3 batch E** (order P32; drafts, not reviewed; local commit, not pushed): Dante, Euclid, Francis Bacon, Frida Kahlo, Friedrich Nietzsche, Fyodor Dostoevsky. Bacon is CHRIST with A 0 and B 3 at 0.7 (Advancement of Learning, Gutenberg copy of Morley's edition), so mid_basin true; Nietzsche is ATHE with A 4 and B 4 at 0.7 (P40), mid_basin false; Dante is CHRIST with A 0 at 0.7 and B 3 at 0.5 (Monarchia III.xvi, Shaw), mid_basin BELOW_THRESHOLD; Dostoevsky (one 1854 letter), Kahlo and Euclid are not scorable. Characters' words (Commedia, Zarathustra, the madman, the Karamazovs) are not used.
+- **2026-10-15, P40** (v8's pick, stage 3 batch E): a stated strict necessity with no exceptions, no commander and no chance is B 4 even when the word 'law' is rejected; at most 0.7, alternative BELOW_THRESHOLD (Nietzsche). CODING_GUIDE §6 updated.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

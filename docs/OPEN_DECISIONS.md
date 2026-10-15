@@ -1,6 +1,6 @@
 # Open decisions
 
-Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33) and 2026-10-15 (P38, P39). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
+Choices that need Jason's sign-off. Items under "Decided" were signed off by Jason, except those marked "DECIDED (v8's pick)": method details that Jason delegated, decided for him on 2026-10-02 (P9, P11, P12, P13, P14–P31, S7) and 2026-10-08 (P32, P33) and 2026-10-15 (P38, P39, P40). P8 and P10 were first v8's picks and were signed off by Jason on 2026-10-02 (P8 with one addition: interview-based fields are flagged). As of 2026-10-02 no item is open. When a new question comes up, add it under "Open". Where the repo needs *some* value to work before a decision, it uses the stated proposal and marks it PROPOSED, and nothing downstream treats it as settled. When a decision is made:
 
 1. record it here under "Decided", with the date;
 2. update the files it touches;
@@ -65,13 +65,14 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P37 | The README and person chart mark no focus region | high | DECIDED (Jason) 2026-10-08 |
 | P38 | Stated disbelief with an agnostic label: a person's own published 'I do not believe in God', together with a self-description as agnostic, scores A_locus 4 at most 0.5 (alternative BELOW_THRESHOLD as explicit suspension); explicit suspension with no stated disbelief stays BELOW_THRESHOLD | medium | DECIDED (v8's pick) 2026-10-15 (stage 3 batch D, Russell) |
 | P39 | Undated works: when no listed lasting contribution can be dated (ancient treatises with no known chronology), first_lasting_contribution_year, major_work_period, working_years and age stay UNKNOWN; era_bucket is still filled when every year of the person's adult life falls in one bucket, at the certainty of the life dates | medium-high | DECIDED (v8's pick) 2026-10-15 (stage 3 batch D, Archimedes, Aristotle) |
+| P40 | Necessity without "laws": a stated strict necessity with no exceptions, no commander and no chance scores B_cause 4 even when the word 'law' is rejected; at most 0.7, alternative BELOW_THRESHOLD | medium | DECIDED (v8's pick) 2026-10-15 (stage 3 batch E, Nietzsche) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, and P38–P39 on 2026-10-15; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, and P38–P40 on 2026-10-15; all are listed under "Decided".
 
 
 ## Decided
@@ -714,6 +715,7 @@ Process:
 - **Order.** First any uncoded person left in an earlier pool (Chien-Shiung Wu was the last physical-science person with F ≥ 3 whose first lasting contribution falls in 1600–1950). Then everyone else with F ≥ 3, by F descending, then roster rank ascending.
 - **Why.** The order is mechanical, so no coder picks who is coded next. That matters for the representation question: a chart of hand-picked people has no base rate.
 - **Batch C** (2026-10-08): Wu, Lovelace, Smith, al-Farabi, al-Khwarizmi, Bell. Next in order: Archimedes, Aristotle, McClintock, Russell.
+- **Batch E** (2026-10-15): Dante, Euclid, Francis Bacon, Kahlo, Nietzsche, Dostoevsky (ranks 20–29 with F 5, after batch D).
 
 ### P33. Inventors and the scientist test
 **DECIDED (v8's pick, 2026-10-08)**, while coding Alexander Graham Bell. P30 makes a scientist anyone with a listed lasting contribution that is "a theory or result about physical or natural systems". It does not say whether a device counts.
@@ -757,6 +759,12 @@ Process:
 **DECIDED (v8's pick, 2026-10-15, stage 3 batch D):** when none of the listed lasting contributions can be dated (ancient treatises with no known chronology), `first_lasting_contribution_year`, `timing.major_work_period`, `worldview.working_years` and `timing.age_at_first_lasting_contribution` are UNKNOWN with a how_known saying so. `era_bucket` is still filled when every year of the person's adult life falls in one bucket (the derived-field rule in CODING_GUIDE §3), at the certainty of the life dates. The death cap (P30) bounds the span. Evidence dates for quotations from undated works use the death year with a note.
 - **Why.** P30 dates items by their earliest public statement or composition date; for Archimedes and Aristotle neither exists, and guessing a year would invent data. The era bucket does not depend on the exact year for them.
 - **Applied.** Archimedes and Aristotle (era '-500 to 499' at 0.7).
+
+### P40. Necessity without "laws" (B_cause)
+**DECIDED (v8's pick, 2026-10-15, stage 3 batch E):** a person's own published statement that nature runs by strict necessity with no exceptions, no commander and no chance scores B_cause at the LIO pole (4), even when the person rejects the word "law" as anthropomorphic. Certainty is at most 0.7, with BELOW_THRESHOLD named as the alternative (the "no law" wording read as rejecting the lawful pole).
+- **Why.** The B pole is "law, regularity, no special cases"; what it tests is the absence of exceptions and intervention, which strict necessity states. Rejecting the word "law" (no lawgiver) is not admitting exceptions.
+- **Applied.** Nietzsche: B 4 at 0.7 (The Joyful Wisdom §109, Common trans.: "There are only necessities: there is no one who commands, no one who obeys, no one who transgresses").
+- **Result-changing.** Under the alternative, Nietzsche would be not scorable on the person chart (mid_basin stays false via A 4).
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.
