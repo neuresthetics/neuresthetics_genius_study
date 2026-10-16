@@ -11,6 +11,17 @@
 
 ## v8 (in progress)
 
+### Systems batch S11 (2026-10-15, unreviewed)
+
+- **THEOS** (Britannica "Theosophy", Melton): A 2 at 0.5 (alt 3); B BELOW_THRESHOLD; D 1 at 0.5 (alt 2); C, E UNKNOWN.
+- **DRUZE** (thin: Britannica "Druze", editors; no doctrine given): all UNKNOWN, so sourced but unscored (P46(a)).
+- **MANDAE** (thin: Britannica "Mandaeanism", editors): A 1 at 0.5 (alt 0); B 1 at 0.5; C, D, E UNKNOWN.
+- **YAZID** (thin: Britannica "Yazīdī", editors): A 2 at 0.5 (alt 1); C 2 at 0.5 (alt 1); B, D, E UNKNOWN.
+- **ZORO** (Britannica "Zoroastrianism", Duchesne-Guillemin; introduction, Beliefs and mythology, and Cosmology pages): A 1 at 0.5 (alt 0); C 0 at 0.7 (alt 1); B, D, E UNKNOWN.
+- **MORMON** (Britannica "Church of Jesus Christ of Latter-day Saints", Melton; introduction and Scriptures pages): A 1, C 1, D 1, all at 0.5 (alt 0); B, E UNKNOWN.
+- **4THWAY**: P45 search logged in the record (Wellbeloved, JCR 1998, abstract only; *Gurdjieff: The Key Concepts* 2003, not read). Still a stub.
+- Britannica read in Wayback copies (P44(e)). Counts (P46): 62 / 77 sourced, 9 sourced but unscored, 6 stubs. v7.1 scores and notes unchanged. No person record changes.
+
 ### S9 audit fixes (2026-10-15; S9 audit 12 hold, 2 weaken; S8 fixes confirmed)
 
 - **RODNOV**: A BELOW_THRESHOLD → UNKNOWN. The modern-Paganism sentence is kept as a lead.

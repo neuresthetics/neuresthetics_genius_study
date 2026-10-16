@@ -1,87 +1,145 @@
 ---
 record:
   record_type: system
-  schema_version: "1.1"
-  record_version: 2
+  schema_version: '1.1'
+  record_version: 3
   review_status: stub
   collected_by: scripts/make_system_stubs.py
   model_used: none (ported from the v7.1 data book)
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: '2026-10-15'
   change_log:
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
-    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
+  - date: 2026-10-01
+    by: scripts/make_system_stubs.py
+    summary: Stub created from v7.1 data book table 4 and section 7.
+  - date: 2026-10-02
+    by: scripts/make_system_stubs.py
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S11: P45 search logged; stays a stub.'
 identity:
   id: 4THWAY
   v7_1_number: 60
-  v7_1_label: "Fourth Way (Gurdjieff's teachings)"
-  display_label: "Fourth Way (Gurdjieff's teachings)"
-  label_status: "as in v7.1"
+  v7_1_label: Fourth Way (Gurdjieff's teachings)
+  display_label: Fourth Way (Gurdjieff's teachings)
+  label_status: as in v7.1
   aliases: []
 classification:
-  kind: {value: TODO}
-  family: {value: TODO}
-  parent_traditions: {value: TODO}
+  kind:
+    value: TODO
+  family:
+    value: TODO
+  parent_traditions:
+    value: TODO
   related_codes: []
 origins:
-  founding_era: {value: TODO}
-  founding_region: {value: TODO}
-  founders_or_key_figures: {value: TODO}
+  founding_era:
+    value: TODO
+  founding_region:
+    value: TODO
+  founders_or_key_figures:
+    value: TODO
   key_texts: []
 metaphysics:
-  god_nature_relation: {value: TODO, stance: TODO}
-  deity_personal: {value: TODO, stance: TODO}
-  intervention: {value: TODO, stance: TODO}
-  miracles: {value: TODO, stance: TODO}
-  petition_and_prayer: {value: TODO, stance: TODO}
-  afterlife: {value: TODO, stance: TODO}
-  moral_ledger: {value: TODO, stance: TODO}
-  authority: {value: TODO, stance: TODO}
-  reserved_exemptions: {value: TODO, stance: TODO}
-  teleology_in_nature: {value: TODO, stance: TODO}
-  necessity_and_freedom: {value: TODO}
+  god_nature_relation:
+    value: TODO
+    stance: TODO
+  deity_personal:
+    value: TODO
+    stance: TODO
+  intervention:
+    value: TODO
+    stance: TODO
+  miracles:
+    value: TODO
+    stance: TODO
+  petition_and_prayer:
+    value: TODO
+    stance: TODO
+  afterlife:
+    value: TODO
+    stance: TODO
+  moral_ledger:
+    value: TODO
+    stance: TODO
+  authority:
+    value: TODO
+    stance: TODO
+  reserved_exemptions:
+    value: TODO
+    stance: TODO
+  teleology_in_nature:
+    value: TODO
+    stance: TODO
+  necessity_and_freedom:
+    value: TODO
 lio_axes:
-  A_locus: {value: TODO}
-  B_cause: {value: TODO}
-  C_ledger: {value: TODO}
-  D_authority: {value: TODO}
-  E_scope: {value: TODO, note: "Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule."}
-epistemology: {value: TODO}
-ethics: {value: TODO}
+  A_locus:
+    value: TODO
+  B_cause:
+    value: TODO
+  C_ledger:
+    value: TODO
+  D_authority:
+    value: TODO
+  E_scope:
+    value: TODO
+    note: 'Not scored (stub). When filled, score on the world''s order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric''s E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule.'
+epistemology:
+  value: TODO
+ethics:
+  value: TODO
 practice:
-  ritual_and_practice: {value: TODO}
-  community_form: {value: TODO}
+  ritual_and_practice:
+    value: TODO
+  community_form:
+    value: TODO
 science:
-  historical_stance: {value: TODO}
-  current_stance: {value: TODO}
+  historical_stance:
+    value: TODO
+  current_stance:
+    value: TODO
 schools_and_variants: []
 adherents:
-  use: "context only — never a genius-rate denominator"
-  estimate: {value: TODO}
+  use: context only — never a genius-rate denominator
+  estimate:
+    value: TODO
 v7_1_rubric:
-  label: "authorial v7.1 scores"
+  label: authorial v7.1 scores
   L: 7
   P: 6
   E: 4
   V: 5
   X: 3
   total: 25
-  scoring_note: "Fourth Way scores moderately due to its integrative spiritual approach and focus on self-awakening, balanced by esoteric elements that reduce empirical alignment."
-  source: "v7.1 data book, section 6 table (tables[4]) row 60 and section 7 scoring notes"
+  scoring_note: Fourth Way scores moderately due to its integrative spiritual approach and focus on self-awakening, balanced by esoteric elements that reduce empirical alignment.
+  source: v7.1 data book, section 6 table (tables[4]) row 60 and section 7 scoring notes
 revised_rubric:
-  status: "not started"
-  L: {score: TODO, rationale: ""}
-  P: {score: TODO, rationale: ""}
-  E: {score: TODO, rationale: ""}
-  V: {score: TODO, rationale: ""}
-  X: {score: TODO, rationale: ""}
+  status: not started
+  L:
+    score: TODO
+    rationale: ''
+  P:
+    score: TODO
+    rationale: ''
+  E:
+    score: TODO
+    rationale: ''
+  V:
+    score: TODO
+    rationale: ''
+  X:
+    score: TODO
+    rationale: ''
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
+  use_when: TODO
+  do_not_use_when: TODO
   neighbors: []
 review:
   data_quality_flags: []
-  open_questions: []
+  open_questions:
+  - 'P45 search (2026-10-15, S11): Britannica''s Gurdjieff biography (editors; Wayback 20260901154632) has no metaphysics. Peer-reviewed leads: Wellbeloved, ''G.I. Gurdjieff: Some references to love'', Journal of Contemporary Religion 13(3) (1998): 321–332, doi 10.1080/13537909808580839 (paywalled; only the abstract was seen, and it concerns effort versus grace in the Work); Wellbeloved, Gurdjieff: The Key Concepts (Routledge 2003; scholarly book, not read). No Aries article on Gurdjieff was found. Nothing read in full, so the record stays a stub (P45).'
 sources: []
 ---
 
@@ -127,3 +185,4 @@ None yet.
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
+- 2026-10-15 (S11): P45 search logged in open questions; record stays a stub.

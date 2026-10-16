@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 12 |
+| stub | 6 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 64 |
+| draft — unreviewed | 70 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 90 | 139 | 2 | 0 | 39.0% |
-| origins | 285 | 172 | 111 | 2 | 0 | 60.4% |
-| metaphysics | 847 | 172 | 675 | 0 | 0 | 20.3% |
-| lio_axes | 385 | 114 | 60 | 167 | 44 | 29.6% |
+| classification | 231 | 96 | 133 | 2 | 0 | 41.6% |
+| origins | 285 | 187 | 96 | 2 | 0 | 65.6% |
+| metaphysics | 847 | 174 | 673 | 0 | 0 | 20.5% |
+| lio_axes | 385 | 125 | 30 | 185 | 45 | 32.5% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 15 | 61 | 1 | 0 | 19.5% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 619 | 1452 | 172 | 44 | 27.1% |
+| **all** | 2287 | 653 | 1399 | 190 | 45 | 28.6% |
 
 ### Systems that are past stub stage
 
@@ -242,6 +242,7 @@ Display label status:
 | CYNIC | Cynicism | draft — unreviewed | 6/29 | not started |
 | DEISM | Deism | draft — unreviewed | 34/35 | not started |
 | DETERM | Determinism | draft — unreviewed | 7/29 | not started |
+| DRUZE | Druze Faith | draft — unreviewed | 4/29 | not started |
 | EFFALT | Effective Altruism | draft — unreviewed | 8/32 | not started |
 | EMPIR | Empiricism | draft — unreviewed | 5/29 | not started |
 | EPICUR | Epicureanism | draft — unreviewed | 13/29 | not started |
@@ -260,6 +261,8 @@ Display label status:
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
 | KEMET | Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) | draft — unreviewed | 4/29 | not started |
 | LVSAT | LaVeyan Satanism (Church of Satan) | draft — unreviewed | 8/30 | not started |
+| MANDAE | Mandaeism | draft — unreviewed | 4/29 | not started |
+| MORMON | Mormonism (The Church of Jesus Christ of Latter-day Saints) | draft — unreviewed | 7/29 | not started |
 | NATAM | Native American Traditions | draft — unreviewed | 1/29 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
 | OBJCT | Objectivism (Ayn Rand's philosophy) | draft — unreviewed | 6/29 | not started |
@@ -282,7 +285,10 @@ Display label status:
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
 | TAO | Taoism (Daoism) | draft — unreviewed | 2/29 | not started |
+| THEOS | Theosophy | draft — unreviewed | 6/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
 | UTIL | Utilitarianism | draft — unreviewed | 4/29 | not started |
 | VODUN | Vodun (Voodoo/West African Vodun) | draft — unreviewed | 7/29 | not started |
 | WICCA | Wicca | draft — unreviewed | 6/29 | not started |
+| YAZID | Yazidism (Yezidism) | draft — unreviewed | 7/29 | not started |
+| ZORO | Zoroastrianism (Mazdayasna) | draft — unreviewed | 6/29 | not started |
