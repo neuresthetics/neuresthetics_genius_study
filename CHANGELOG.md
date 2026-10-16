@@ -11,6 +11,15 @@
 
 ## v8 (in progress)
 
+### Systems batch S12 (2026-10-15, unreviewed)
+
+- **THSAT** (thin: Britannica "Satanism", Doyle White; a few sentences on theistic Satanists): all UNKNOWN, so sourced but unscored (P46(a)).
+- **THELEM** (Britannica "Thelema", Doyle White): A BELOW_THRESHOLD; B 1 at 0.5 (alt 2); D 1 at 0.5 (alt 2); C, E UNKNOWN.
+- **FALUNG** (Britannica "Falun Gong", Ownby): B 1 at 0.5 (alt 2); D 1 at 0.5 (alt 2); A, C, E UNKNOWN.
+- **RAEL** (P45 lower tier: Flaherty, CDAMM, Cambridge, 2021; no Britannica entry found): A 4 at 0.5 (P44(a)); D 1 at 0.5 (alt 2); B, C, E UNKNOWN.
+- **SCIENT** (Britannica "Scientology", Melton): A BELOW_THRESHOLD; rest UNKNOWN.
+- Roster pass complete. Counts (P46): 66 / 77 sourced, 10 sourced but unscored, 1 stub (4THWAY). v7.1 scores and notes unchanged. No person record changes.
+
 ### S10 audit fixes (2026-10-15; S10 audit 14 hold, 4 weaken; S9 fixes and P46 confirmed)
 
 - **VODUN**: A, B and E how_known now say "Haitian Vodou only". use_when is scoped to the source read. West African Vodun is added as a lead (ruling: single code, as with TAO).

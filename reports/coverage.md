@@ -188,9 +188,9 @@ System files: **77** (the v7.1 data book lists 77).
 
 | review status | files |
 |---|---|
-| stub | 6 |
+| stub | 1 |
 | example — unreviewed | 1 |
-| draft — unreviewed | 70 |
+| draft — unreviewed | 75 |
 | in review | 0 |
 | reviewed | 0 |
 | needs revision | 0 |
@@ -206,16 +206,16 @@ Display label status:
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| classification | 231 | 96 | 133 | 2 | 0 | 41.6% |
-| origins | 285 | 187 | 96 | 2 | 0 | 65.6% |
-| metaphysics | 847 | 174 | 673 | 0 | 0 | 20.5% |
-| lio_axes | 385 | 126 | 30 | 185 | 44 | 32.7% |
+| classification | 231 | 101 | 128 | 2 | 0 | 43.7% |
+| origins | 285 | 196 | 87 | 2 | 0 | 68.8% |
+| metaphysics | 847 | 176 | 671 | 0 | 0 | 20.8% |
+| lio_axes | 385 | 132 | 5 | 202 | 46 | 34.3% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
-| ethics | 77 | 15 | 61 | 1 | 0 | 19.5% |
+| ethics | 77 | 16 | 60 | 1 | 0 | 20.8% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 654 | 1399 | 190 | 44 | 28.6% |
+| **all** | 2287 | 677 | 1357 | 207 | 46 | 29.6% |
 
 ### Systems that are past stub stage
 
@@ -248,6 +248,7 @@ Display label status:
 | EPICUR | Epicureanism | draft — unreviewed | 13/29 | not started |
 | ETHCUL | Ethical Culture (Ethical Humanism) | draft — unreviewed | 9/29 | not started |
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
+| FALUNG | Falun Gong (Falun Dafa) | draft — unreviewed | 6/29 | not started |
 | HEATH | Heathenry (Ásatrú/Norse-Germanic Paganism) | draft — unreviewed | 3/29 | not started |
 | HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
 | HELLEN | Hellenismos (Greek Reconstructionist Paganism) | draft — unreviewed | 2/29 | not started |
@@ -274,10 +275,12 @@ Display label status:
 | PHENOM | Phenomenology | draft — unreviewed | 4/29 | not started |
 | PLATO | Platonism | draft — unreviewed | 30/31 | not started |
 | PRAG | Pragmatism | draft — unreviewed | 5/29 | not started |
+| RAEL | Raëlism (Raëlian Movement) | draft — unreviewed | 6/29 | not started |
 | RATN | Rationalism | draft — unreviewed | 5/29 | not started |
 | RODNOV | Rodnovery (Slavic Native Faith) | draft — unreviewed | 2/29 | not started |
 | SANTER | Santería (Lucumí/Regla de Ocha) | draft — unreviewed | 6/29 | not started |
 | SCEPT | Scepticism (Skepticism) | draft — unreviewed | 4/29 | not started |
+| SCIENT | Scientology | draft — unreviewed | 4/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
 | SHINTO | Shinto | draft — unreviewed | 6/29 | not started |
 | SIKH | Sikhism | draft — unreviewed | 6/29 | not started |
@@ -285,7 +288,9 @@ Display label status:
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
 | TAO | Taoism (Daoism) | draft — unreviewed | 2/29 | not started |
+| THELEM | Thelema (Crowley/Ordo Templi Orientis) | draft — unreviewed | 6/29 | not started |
 | THEOS | Theosophy | draft — unreviewed | 6/29 | not started |
+| THSAT | Theistic Satanism (Joy of Satan or similar) | draft — unreviewed | 1/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
 | UTIL | Utilitarianism | draft — unreviewed | 4/29 | not started |
 | VODUN | Vodun (Voodoo/West African Vodun) | draft — unreviewed | 7/29 | not started |

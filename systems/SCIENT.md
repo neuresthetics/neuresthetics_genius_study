@@ -1,105 +1,199 @@
 ---
 record:
   record_type: system
-  schema_version: "1.1"
-  record_version: 2
-  review_status: stub
-  collected_by: scripts/make_system_stubs.py
-  model_used: none (ported from the v7.1 data book)
+  schema_version: '1.1'
+  record_version: 3
+  review_status: draft — unreviewed
+  collected_by: Grok Bot (systems batch S9 for Jason)
+  model_used: Grok Bot executor agent; direct reads of the cited pages
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: '2026-10-15'
   change_log:
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
-    - {date: 2026-10-02, by: scripts/make_system_stubs.py, summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world's order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger."}
+  - date: 2026-10-01
+    by: scripts/make_system_stubs.py
+    summary: Stub created from v7.1 data book table 4 and section 7.
+  - date: 2026-10-02
+    by: scripts/make_system_stubs.py
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'Draft (systems batch S12): filled from Britannica "Scientology" (Melton). A BELOW_THRESHOLD; B, C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
 identity:
   id: SCIENT
   v7_1_number: 77
-  v7_1_label: "Scientology"
-  display_label: "Scientology"
-  label_status: "as in v7.1"
+  v7_1_label: Scientology
+  display_label: Scientology
+  label_status: as in v7.1
   aliases: []
 classification:
-  kind: {value: TODO}
-  family: {value: TODO}
-  parent_traditions: {value: TODO}
+  kind:
+    value: new religious movement
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: '''international movement that emerged in the 1950s in response to the thought of L. Ron Hubbard''.'
+  family:
+    value: TODO
+  parent_traditions:
+    value: TODO
   related_codes: []
 origins:
-  founding_era: {value: TODO}
-  founding_region: {value: TODO}
-  founders_or_key_figures: {value: TODO}
+  founding_era:
+    value: 1954 (Church of Scientology founded)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: Britannica.
+  founding_region:
+    value: TODO
+  founders_or_key_figures:
+    value:
+    - L. Ron Hubbard
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: Britannica.
   key_texts: []
 metaphysics:
-  god_nature_relation: {value: TODO, stance: TODO}
-  deity_personal: {value: TODO, stance: TODO}
-  intervention: {value: TODO, stance: TODO}
-  miracles: {value: TODO, stance: TODO}
-  petition_and_prayer: {value: TODO, stance: TODO}
-  afterlife: {value: TODO, stance: TODO}
-  moral_ledger: {value: TODO, stance: TODO}
-  authority: {value: TODO, stance: TODO}
-  reserved_exemptions: {value: TODO, stance: TODO}
-  teleology_in_nature: {value: TODO, stance: TODO}
-  necessity_and_freedom: {value: TODO}
+  god_nature_relation:
+    value: Thetans 'originated billions of years ago with the original Cause'; their interaction 'led to the creation of MEST (matter, energy, space, and time)'. The eighth dynamic is 'infinity or God'.
+    stance: not addressed
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: Hubbard’s early life and beliefs
+    how_known: Britannica.
+  deity_personal:
+    value: TODO
+    stance: TODO
+  intervention:
+    value: TODO
+    stance: TODO
+  miracles:
+    value: TODO
+    stance: TODO
+  petition_and_prayer:
+    value: TODO
+    stance: TODO
+  afterlife:
+    value: TODO
+    stance: TODO
+  moral_ledger:
+    value: TODO
+    stance: TODO
+  authority:
+    value: TODO
+    stance: TODO
+  reserved_exemptions:
+    value: TODO
+    stance: TODO
+  teleology_in_nature:
+    value: TODO
+    stance: TODO
+  necessity_and_freedom:
+    value: TODO
 lio_axes:
-  A_locus: {value: TODO}
-  B_cause: {value: TODO}
-  C_ledger: {value: TODO}
-  D_authority: {value: TODO}
-  E_scope: {value: TODO, note: "Not scored (stub). When filled, score on the world's order (decision P7, 2026-10-02): the same rules for every kind of being and event, and no in-group exceptions in this-world events (fortune, protection, answered petition, miracles for the favoured). Salvation, reward and punishment, and moral community go on C_ledger. The v7.1 rubric's E column (direct empirical compatibility) is a different axis; the v7.1 scoring note below may mix domains, so recheck it against this rule."}
-epistemology: {value: TODO}
-ethics: {value: TODO}
+  A_locus:
+    value: BELOW_THRESHOLD
+    how_known: Members 'are free to reach their own conclusions as to God’s nature'; 'the church does not prescribe specific teachings about God' (S1).
+    note: Members differ by design (P44(b)).
+  B_cause:
+    value: UNKNOWN
+    how_known: Not addressed in the sources read.
+  C_ledger:
+    value: UNKNOWN
+    how_known: Not addressed in the sources read.
+  D_authority:
+    value: UNKNOWN
+    how_known: Not addressed in the sources read.
+  E_scope:
+    value: UNKNOWN
+    how_known: Not addressed in the sources read.
+epistemology:
+  value: TODO
+ethics:
+  value: TODO
 practice:
-  ritual_and_practice: {value: TODO}
-  community_form: {value: TODO}
+  ritual_and_practice:
+    value: TODO
+  community_form:
+    value: TODO
 science:
-  historical_stance: {value: TODO}
-  current_stance: {value: TODO}
+  historical_stance:
+    value: TODO
+  current_stance:
+    value: TODO
 schools_and_variants: []
 adherents:
-  use: "context only — never a genius-rate denominator"
-  estimate: {value: TODO}
+  use: context only — never a genius-rate denominator
+  estimate:
+    value: TODO
 v7_1_rubric:
-  label: "authorial v7.1 scores"
+  label: authorial v7.1 scores
   L: 6
   P: 5
   E: 2
   V: 3
   X: 1
   total: 17
-  scoring_note: "Scientology scores low due to its pseudoscientific claims and reliance on founder authority over empirical evidence, despite structured self-improvement appeals."
-  source: "v7.1 data book, section 6 table (tables[4]) row 77 and section 7 scoring notes"
+  scoring_note: Scientology scores low due to its pseudoscientific claims and reliance on founder authority over empirical evidence, despite structured self-improvement appeals.
+  source: v7.1 data book, section 6 table (tables[4]) row 77 and section 7 scoring notes
 revised_rubric:
-  status: "not started"
-  L: {score: TODO, rationale: ""}
-  P: {score: TODO, rationale: ""}
-  E: {score: TODO, rationale: ""}
-  V: {score: TODO, rationale: ""}
-  X: {score: TODO, rationale: ""}
+  status: not started
+  L:
+    score: TODO
+    rationale: ''
+  P:
+    score: TODO
+    rationale: ''
+  E:
+    score: TODO
+    rationale: ''
+  V:
+    score: TODO
+    rationale: ''
+  X:
+    score: TODO
+    rationale: ''
 coding_guidance:
-  use_when: "TODO"
-  do_not_use_when: "TODO"
+  use_when: The person was a member of the Church of Scientology.
+  do_not_use_when: Dianetics readers alone are not enough.
   neighbors: []
 review:
   data_quality_flags: []
-  open_questions: []
-sources: []
+  open_questions:
+  - 'B and D: auditing and the E-meter are described but not as a stance on nature or authority.'
+  - Adherents are TODO.
+sources:
+- id: S1
+  type: tertiary
+  kind: encyclopedia
+  author: J. Gordon Melton
+  citation: 'Melton, J. Gordon. "Scientology." Encyclopaedia Britannica. https://www.britannica.com/topic/Scientology. Wayback Machine snapshot 2026-09-26 21:46:58 UTC: https://web.archive.org/web/20260926214658/https://www.britannica.com/topic/Scientology.'
+  url: https://www.britannica.com/topic/Scientology
+  accessed: '2026-10-15'
+  reliability_note: 'Signed article; beliefs section read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260926214658/https://www.britannica.com/topic/Scientology); live page not compared (live Britannica times out from the box).'
 ---
 
 # Scientology (SCIENT)
 
-> Stub. Only the v7.1 scores and scoring note are filled in, copied from the data book. Everything else is TODO. See `docs/RUNBOOK.md` (systems) for how to fill it in.
+> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-TODO
+Scientology is an 'international movement that emerged in the 1950s in response to the thought of L. Ron Hubbard' [S1].
 
 ## Core metaphysics
 
-TODO
+Thetans, MEST, eight dynamics; no prescribed teaching on God [S1].
 
 ## Position on the LIO axes
 
-TODO
+- A BELOW_THRESHOLD.
+- B, C, D, E UNKNOWN.
 
 ## Schools and variants
 
@@ -111,7 +205,7 @@ TODO
 
 ## Coding guidance
 
-TODO
+Scientologists.
 
 ## v7.1 scoring note
 
@@ -121,9 +215,11 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-None yet.
+- B and D.
+- Adherents.
 
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
+- 2026-10-15 (systems batch S12): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
