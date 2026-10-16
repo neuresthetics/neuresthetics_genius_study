@@ -279,6 +279,239 @@ def fig_systems_axes(out):
     save(fig, out, "systems_axes.png")
 
 
+# 5, 6 --------------------------------------------------------------------
+SYS_COLOR = "#C8582A"
+PEOPLE_COLOR = "#3B6AA0"
+Y_LABELS = ["A person outside\nthe world", "Mostly a person\noutside the world", "Mixed",
+            "Mostly the order\nof nature", "The order of nature\nitself (or no\nseparate God)"]
+X_LABELS = ["Miracles /\nintervention", "Mostly\nintervention", "Mixed",
+            "Lawful, with a stated\nexception", "Lawful, no\nexceptions"]
+
+
+SHORT = {"CLTHEI": "Interv. theism", "CLASS_THEISM": "Classical theism", "CONFUC": "Confucianism",
+         "NATAM": "Native American", "ABORIG": "Aboriginal traditions", "CHNFOLK": "Chinese folk",
+         "LVSAT": "LaVeyan Satanism", "THSAT": "Theistic Satanism", "ETHCUL": "Ethical Culture",
+         "SUNASM": "Sunday Assembly", "EFFALT": "Effective Altruism", "SECHUM": "Sec. humanism"}
+
+
+def sys_name(code, d):
+    if code in SHORT:
+        return SHORT[code]
+    lab = d["identity"]["display_label"].split(" (")[0].strip()
+    return lab if len(lab) <= 22 else code
+
+
+def system_axis_points():
+    """Sort the sourced systems by what is settled on B_cause (x) and A_locus (y).
+    grid: both numeric; a_only: A numeric, B not; b_only: B numeric, A not; neither: the rest (incl. sourced, unscored).
+    Stubs are left out."""
+    grid, a_only, b_only, neither, unscored, stubs = [], [], [], [], [], []
+    for f in sorted(os.listdir(os.path.join(REPO, "systems"))):
+        if not f.endswith(".md") or f == "README.md":
+            continue
+        code = f[:-3]
+        d, _ = read_record(os.path.join(REPO, "systems", f))
+        if d["record"]["review_status"] == "stub":
+            stubs.append(code)
+            continue
+        A, B = d["lio_axes"]["A_locus"], d["lio_axes"]["B_cause"]
+        a, b = A.get("value"), B.get("value")
+        it = {"code": code, "label": sys_name(code, d), "A": a, "B": b, "kind": "system"}
+        if all(value(n) == "UNKNOWN" for n in d["lio_axes"].values()):
+            unscored.append(it)
+        elif isinstance(a, int) and isinstance(b, int):
+            it["faded"] = min(A.get("certainty") or 0, B.get("certainty") or 0) < 0.7
+            grid.append(it)
+        elif isinstance(a, int):
+            it["faded"] = (A.get("certainty") or 0) < 0.7
+            a_only.append(it)
+        elif isinstance(b, int):
+            it["faded"] = (B.get("certainty") or 0) < 0.7
+            b_only.append(it)
+        else:
+            neither.append(it)
+    return grid, a_only, b_only, neither, unscored, stubs
+
+
+def _style(it):
+    sysm = it["kind"] == "system"
+    f = it.get("faded")
+    col = SYS_COLOR if sysm else PEOPLE_COLOR
+    tcol = ("#B08A7A" if sysm else "#777777") if f else ("#7A2E10" if sysm else "#111111")
+    return sysm, f, col, tcol
+
+
+def _mark(ax, x, y, it, fs):
+    sysm, f, col, tcol = _style(it)
+    ax.scatter(x, y, s=110 if sysm else 95, marker="D" if sysm else "o", color=col, alpha=0.30 if f else 0.95,
+               edgecolor="#999999" if f else "black", lw=0.8, zorder=3, clip_on=False)
+    ax.text(x + 0.045, y, it["label"], ha="left", va="center", fontsize=fs, fontweight="bold" if sysm else "normal",
+            color=tcol, zorder=4, clip_on=False)
+
+
+def _draw_cells(ax, items):
+    """Systems take full-width rows at the top of a cell; people fill one or two columns below."""
+    cells = collections.defaultdict(list)
+    for it in items:
+        cells[(it["B"], it["A"])].append(it)
+    for (b, a), its in cells.items():
+        syss = sorted([i for i in its if i["kind"] == "system"], key=lambda i: i["label"])
+        ppl = sorted([i for i in its if i["kind"] != "system"], key=lambda i: i["label"])
+        ncols = 1 if len(ppl) <= 5 - len(syss) else 2
+        prow = math.ceil(len(ppl) / ncols)
+        nrows = len(syss) + prow
+        rowh = min(0.2, 0.84 / max(nrows - 1, 1))
+        fs = 10 if nrows <= 5 else (9 if nrows <= 7 else 8)
+        top = a + (nrows - 1) / 2 * rowh
+        for i, it in enumerate(syss):
+            _mark(ax, b - 0.43, top - i * rowh, it, fs)
+        for i, it in enumerate(ppl):
+            c, r = divmod(i, prow)
+            _mark(ax, b - 0.43 + c * 0.47, top - (len(syss) + r) * rowh, it, fs)
+
+
+def _layout(fig):
+    L, R, BOT, TOP = 0.30, 0.79, 0.25, 0.86     # main grid
+    ax = fig.add_axes((L, BOT, R - L, TOP - BOT))
+    left = fig.add_axes((0.155, BOT, 0.13, TOP - BOT), sharey=ax)
+    bot = fig.add_axes((L, 0.065, R - L, 0.155), sharex=ax)
+    box = fig.add_axes((0.81, 0.065, 0.18, TOP - 0.065))
+    ax.set_xlim(-0.5, 4.5)
+    ax.set_ylim(-0.5, 4.5)
+    for a in (ax, left, bot):
+        a.tick_params(which="both", length=0, pad=6)
+        a.grid(which="major", visible=False)
+    ax.set_xticks([k + 0.5 for k in range(4)], minor=True)
+    ax.set_yticks([k + 0.5 for k in range(4)], minor=True)
+    ax.grid(which="minor", color="#DDDDDD", lw=1)
+    ax.tick_params(labelbottom=False, labelleft=False)
+    for sp in ax.spines.values():
+        sp.set_color("#BBBBBB")
+    left.set_xlim(0, 1)
+    left.set_xticks([])
+    left.set_yticks(range(5), Y_LABELS, fontsize=10.5)
+    left.set_ylabel("Where is God?", fontsize=14, labelpad=10)
+    bot.set_ylim(0, 1)
+    bot.set_yticks([])
+    bot.set_xticks(range(5), X_LABELS, fontsize=10.5)
+    bot.set_xlabel("How do things happen?", fontsize=14, labelpad=8)
+    for a, title in ((left, "how things happen:\nnot settled"), (bot, "where God is: not settled")):
+        a.set_facecolor("#F4F1EC")
+        for sp in a.spines.values():
+            sp.set_color("#999999")
+            sp.set_linestyle((0, (3, 2)))
+    left.set_title("how things happen:\nnot settled", fontsize=10.5, color="#555555", style="italic", pad=6)
+    bot.text(-0.48, 0.97, "where God is: not settled", ha="left", va="top", fontsize=10.5, color="#555555", style="italic")
+    for k in [k + 0.5 for k in range(4)]:
+        left.axhline(k, color="#DDDDDD", lw=1)
+        bot.axvline(k, color="#DDDDDD", lw=1)
+    box.set_axis_off()
+    return ax, left, bot, box
+
+
+def _draw_strips(left, bot, a_only, b_only):
+    rows = collections.defaultdict(list)
+    for it in a_only:
+        rows[it["A"]].append(it)
+    for a, its in rows.items():
+        its = sorted(its, key=lambda i: i["label"])
+        n = len(its)
+        rowh = min(0.19, 0.8 / max(n - 1, 1))
+        for i, it in enumerate(its):
+            _mark(left, 0.07, a + (n - 1) / 2 * rowh - i * rowh, it, 9.5)
+    cols = collections.defaultdict(list)
+    for it in b_only:
+        cols[it["B"]].append(it)
+    for b, its in cols.items():
+        its = sorted(its, key=lambda i: i["label"])
+        n = len(its)
+        rowh = min(0.16, 0.72 / max(n - 1, 1))
+        for i, it in enumerate(its):
+            _mark(bot, b - 0.43, 0.45 + (n - 1) / 2 * rowh - i * rowh, it, 9)
+
+
+def _draw_box(box, neither, unscored, stubs):
+    box.add_patch(Rectangle((0, 0), 1, 1, transform=box.transAxes, facecolor="#F4F1EC", edgecolor="#999999",
+                            ls=(0, (3, 2)), lw=1))
+    lines = ["neither axis settled"]
+    y = 0.975
+    box.text(0.05, y, lines[0], ha="left", va="top", fontsize=11, color="#555555", style="italic", transform=box.transAxes)
+    y -= 0.04
+    for it in sorted(neither, key=lambda i: i["label"]):
+        box.text(0.07, y, "◇ " + it["label"], ha="left", va="top", fontsize=9.5, color="#7A2E10", fontweight="bold",
+                 transform=box.transAxes)
+        y -= 0.026
+    y -= 0.015
+    box.text(0.05, y, "sourced, no axis scored", ha="left", va="top", fontsize=10, color="#555555", style="italic",
+             transform=box.transAxes)
+    y -= 0.034
+    for it in sorted(unscored, key=lambda i: i["label"]):
+        box.text(0.07, y, "◇ " + it["label"], ha="left", va="top", fontsize=9.5, color="#B08A7A", transform=box.transAxes)
+        y -= 0.026
+    if stubs:
+        y -= 0.015
+        box.text(0.05, y, f"not shown, stub: {', '.join(stubs)}", ha="left", va="top", fontsize=8.5, color="#888888",
+                 transform=box.transAxes)
+
+
+def _legend(ax, people=False):
+    leg = [Line2D([0], [0], marker="D", ls="", markersize=9, markerfacecolor=SYS_COLOR, markeredgecolor="black", alpha=0.95),
+           Line2D([0], [0], marker="D", ls="", markersize=9, markerfacecolor=SYS_COLOR, markeredgecolor="#999999", alpha=0.30)]
+    names = ["belief system", "faded = capped at 0.5"]
+    if people:
+        leg.insert(0, Line2D([0], [0], marker="o", ls="", markersize=9, markerfacecolor=PEOPLE_COLOR, markeredgecolor="black"))
+        names = ["person", "belief system", "faded = less certain (people < 0.7;\nsystems capped at 0.5)"]
+    return leg, names
+
+
+def fig_systems_cause_locus(out):
+    grid, a_only, b_only, neither, unscored, stubs = system_axis_points()
+    fig = plt.figure(figsize=(18, 12.5))
+    ax, left, bot, box = _layout(fig)
+    _draw_cells(ax, grid)
+    _draw_strips(left, bot, a_only, b_only)
+    _draw_box(box, neither, unscored, stubs)
+    n = len(grid) + len(a_only) + len(b_only) + len(neither) + len(unscored)
+    fig.text(0.5, 0.965, "Where coded belief systems fall: where God is vs. how things happen",
+             ha="center", fontsize=20, fontweight="bold")
+    fig.text(0.5, 0.932, f"All {n} sourced systems. Grid: both axes settled ({len(grid)}). Shaded strips and box: an axis not settled "
+             "(unknown, or members differ).", ha="center", va="top", fontsize=12.5, color="#444444")
+    leg, names = _legend(ax)
+    ax.legend(leg, names, loc="upper left", fontsize=10, frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
+    fig.text(0.01, 0.008, "Source: draft system records (systems/*.md), unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
+             ha="left", va="bottom", fontsize=8.5, color="#888888")
+    save(fig, out, "systems_cause_locus.png")
+
+
+def fig_people_systems_overlay(out):
+    grid, a_only, b_only, neither, unscored, stubs = system_axis_points()
+    pts, not_scorable = people_axis_points()
+    short_names = {"Galileo Galilei": "Galileo", "Ibn Sina (Avicenna)": "Ibn Sina"}
+    items = [{"B": p["B"], "A": p["A"], "kind": "person", "faded": min(p["cA"], p["cB"]) < 0.7,
+              "label": short_names.get(p["name"], p["name"].split()[-1]) + ("*" if p["name"] in P43_PEOPLE else "")}
+             for p in pts]
+    fig = plt.figure(figsize=(19, 13.5))
+    ax, left, bot, box = _layout(fig)
+    _draw_cells(ax, items + grid)
+    _draw_strips(left, bot, a_only, b_only)
+    _draw_box(box, neither, unscored, stubs)
+    fig.text(0.5, 0.965, "People and belief systems: where God is vs. how things happen",
+             ha="center", fontsize=20, fontweight="bold")
+    fig.text(0.5, 0.932, f"{len(pts)} hand-picked people (circles; not a sample) and all sourced systems (diamonds). "
+             f"Strips and box: systems with an axis not settled. {len(not_scorable)} people not yet scorable are not shown.",
+             ha="center", va="top", fontsize=12, color="#444444")
+    leg, names = _legend(ax, people=True)
+    if any(p["name"] in P43_PEOPLE for p in pts):
+        leg.append(Line2D([0], [0], ls="", marker=""))
+        names.append("* = disputed interview wording (P43)")
+    ax.legend(leg, names, loc="upper left", fontsize=10, frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
+    fig.text(0.01, 0.008, "Source: draft person and system records, unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
+             ha="left", va="bottom", fontsize=8.5, color="#888888")
+    save(fig, out, "people_systems_overlay.png")
+
+
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(REPO, "figures"))
@@ -288,6 +521,8 @@ def main():
     fig_core_composition(a.out)
     fig_people_cause_locus(a.out)
     fig_systems_axes(a.out)
+    fig_systems_cause_locus(a.out)
+    fig_people_systems_overlay(a.out)
 
 
 if __name__ == "__main__":

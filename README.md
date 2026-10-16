@@ -46,6 +46,14 @@ These charts describe what is in the repo so far; they are not results. The rost
 *Draft person scores: where God is (up the chart) against how things happen (across the chart). No region is marked. Plotted: the 39 coded people with both axes scored; every plotted person is B_cause 2, 3 or 4. Nobody plotted scores in the left two columns (miracles or intervention, or mostly intervention). **Interview voice (P43):** Igor Stravinsky (A 0, B 2) rests on interview statements of disputed wording (for Stravinsky, the Craft books), capped at 0.5 and drawn faded; 2 plotted people score left of B 3 (Pascal, Stravinsky). **Not scorable yet:** 52 coded people lack a score on at least one axis (22 with no A_locus score, 7 with no B_cause score, 23 with neither; the value is UNKNOWN or BELOW_THRESHOLD). They are not plotted and are left out of every count here. These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. A faded dot is a less certain score (below 0.7 on at least one axis).*
 <!-- END GENERATED: people_chart_caption -->
 
+![Draft belief-system scores on where God is against how things happen, with margin strips for systems where an axis is not settled](figures/systems_cause_locus.png)
+
+*Draft belief-system scores (unreviewed). The grid shows systems with both axes settled. The left strip holds systems whose "how things happen" axis is not settled, placed at their "where God is" row. The bottom strip holds systems whose "where God is" axis is not settled, placed at their "how things happen" column. The box lists systems with neither axis settled. Faded means capped at 0.5. Positions are each system's own stance, not an average of its members.*
+
+![Draft people and belief-system scores on the same grid](figures/people_systems_overlay.png)
+
+*The same chart with the hand-picked people added (circles). These are drafts, not a sample and not a result.*
+
 ![The 66 sourced belief-system drafts on the v8 LIO axes](figures/systems_axes.png)
 
 *The 66 sourced belief-system drafts (P46) on the five v8 LIO axes, showing each score with its certainty. These are unreviewed coder drafts, not the v7.1 rubric, and the other 11 systems are a stub (1, 4THWAY) or sourced but unscored (10).*

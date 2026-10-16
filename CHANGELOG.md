@@ -1,6 +1,10 @@
 # Changelog
 
 
+## 2026-10-15 — systems charts (Grok Bot)
+
+- Added figures/systems_cause_locus.png and figures/people_systems_overlay.png, made by scripts/make_figures.py and approved by Jason. Margin strips and a box show systems with an axis not settled, there are no range bars, and readable names are used. Both are in the README under the people chart.
+
 ## 2026-10-15 — T2 audit fixes; targeted pass stopped (Grok Bot)
 
 - Audit /workspace/genius_study_audit/gs_dc95c1a_T2/run1/: 7 HOLD, 1 WEAKEN; the T1 fixes are confirmed.
