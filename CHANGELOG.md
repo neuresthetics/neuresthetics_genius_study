@@ -1,6 +1,16 @@
 # Changelog
 
 
+## 2026-10-15 — T2 audit fixes; targeted pass stopped (Grok Bot)
+
+- Audit /workspace/genius_study_audit/gs_dc95c1a_T2/run1/: 7 HOLD, 1 WEAKEN; the T1 fixes are confirmed.
+- RATN: B stays BELOW_THRESHOLD, alt 3, now based on Spinoza vs Leibniz:
+  - Spinoza gives 4. SEP "Baruch Spinoza" (Nadler, 2023), added as S4: "Nor does God perform miracles, since there are no, and cannot be, departures whatsoever from the necessary course of nature."
+  - Leibniz gives 3.
+  - Malebranche is kept as background only. The mismatched quote marks around 'unfolds' are fixed.
+- The targeted A/B pass stops after T2 (Jason: work with what we have). T3–T6 are not run.
+- Counts are unchanged: 66 / 77.
+
 ## 2026-10-15 — T1 audit fixes (Grok Bot)
 
 - Audit /workspace/genius_study_audit/gs_f4b5904_T1/run1/: 7 HOLD, 1 WEAKEN.

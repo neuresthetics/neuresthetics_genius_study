@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'T2: B_cause UNKNOWN -> BELOW_THRESHOLD (alt 3), quote-backed; SEP Leibniz on Causation and Occasionalism added.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2 audit fix: B BELOW_THRESHOLD now based on Spinoza (4, SEP Spinoza added as S4) vs Leibniz (3); Malebranche background only; quote marks fixed.'
 identity:
   id: RATN
   v7_1_number: 7
@@ -121,25 +124,19 @@ lio_axes:
     note: 'Evidence: S1 §1 (Intuition/Deduction and Innate Knowledge theses).'
   B_cause:
     value: BELOW_THRESHOLD
-    how_known: Members differ on B. S1 warns that 'Descartes, Spinoza and Leibniz are mistakenly seen as applying a reason-centered epistemology to a common metaphysical agenda'. Leibniz wants a world that 'unfolds” naturally without the direct intervention of God' and rejects occasionalism as 'a perpetual miracle', while still allowing events that 'surpass all the force of creatures', such as the Creation and the Incarnation (S2, §3). Malebranche holds that 'there is only one true cause because there is only one true God' (S3, introduction).
-    note: P44(b). Leibniz alone would be B 3; Malebranche-style occasionalism would be B 0–1. Alternative 3.
-    alternatives:
-    - value: 3
-      note: Named alternative.
-      cites:
-      - source: S1
-        locator: §1
-      - source: S2
-        locator: §3
-      - source: S3
-        locator: introduction
-    cites:
+    how_known: 'Members differ on B. S1 warns that ''Descartes, Spinoza and Leibniz are mistakenly seen as applying a reason-centered epistemology to a common metaphysical agenda'' (§1). Spinoza gives 4: ''Nor does God perform miracles, since there are no, and cannot be, departures whatsoever from the necessary course of nature'' (S4, §2). Leibniz gives 3: he wants a world that ''unfolds'' naturally ''without the direct intervention of God'' and rejects occasionalism as ''a perpetual miracle'', yet allows events that ''surpass all the force of creatures'', such as the Creation and the Incarnation (S2, §3). Background only: Malebranche''s occasionalism, ''there is only one true cause because there is only one true God'' (S3).'
+    note: P44(b). Spinoza 4 vs Leibniz 3. Alternative 3.
+    cites: &id001
     - source: S1
       locator: §1
+    - source: S4
+      locator: §2
     - source: S2
       locator: §3
-    - source: S3
-      locator: introduction
+    alternatives:
+    - value: 3
+      note: Named alternative (Leibniz).
+      cites: *id001
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in S1.
@@ -239,6 +236,15 @@ sources:
   url: https://plato.stanford.edu/entries/occasionalism/
   accessed: '2026-10-15'
   reliability_note: Signed SEP entry; introduction and Leibniz comparison read. Malebranche is not named a rationalist in S1; used only as the contrasting case.
+- id: S4
+  type: tertiary
+  kind: encyclopedia
+  author: Nadler, Steven
+  year: 2023
+  citation: Nadler, Steven. "Baruch Spinoza." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/spinoza/
+  url: https://plato.stanford.edu/entries/spinoza/
+  accessed: '2026-10-15'
+  reliability_note: Signed SEP entry (2023 revision); §2 (Ethics) read.
 ---
 
 # Rationalism (RATN)
@@ -257,7 +263,7 @@ Varies: the named rationalists differ on God [S1].
 
 - D BELOW_THRESHOLD (alt 3): reason independent of experience, but members differ [S1, §1].
 - A BELOW_THRESHOLD: God often known a priori; locus varies.
-- B BELOW_THRESHOLD (alt 3): Leibniz against occasionalist perpetual miracle vs Malebranche [S1, S2, S3].
+- B BELOW_THRESHOLD (alt 3): Spinoza (no miracles, 4) vs Leibniz (3); Malebranche background [S1, S4, S2, S3].
 - C, E UNKNOWN.
 
 ## Schools and variants
@@ -291,3 +297,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).
 - 2026-10-15 (S10 audit fix): A BELOW_THRESHOLD now quote-backed.
 - 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. RATN: B fixed as BELOW_THRESHOLD from S1, SEP "Leibniz on Causation" and SEP "Occasionalism".
+- 2026-10-15 (T2 audit fixes, /workspace/genius_study_audit/gs_dc95c1a_T2/run1/): RATN B rebased on Spinoza vs Leibniz; SEP "Baruch Spinoza" (Nadler) added, quote checked word for word.
