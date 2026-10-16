@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10, thin): filled from Britannica "Anthroposophy" (editors, one paragraph). D BELOW_THRESHOLD; rest UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: D BELOW_THRESHOLD -> 1 @0.5 (alt 2).'
 identity:
   id: ANTHRO
   v7_1_number: 58
@@ -101,9 +104,17 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
   D_authority:
-    value: BELOW_THRESHOLD
-    how_known: Steiner 'postulated the existence of a spiritual world comprehensible to pure thought but fully accessible only to the faculties of knowledge latent in all humans' and sought 'a faculty for spiritual perception independent of the senses' (S1). Pure thought and supersensible perception are both named; the source does not rank them against observation.
-    note: Alternatives 1 and 2.
+    value: 1
+    rationale: Steiner sought 'a faculty for spiritual perception independent of the senses', since the spiritual world is 'fully accessible only to the faculties of knowledge latent in all humans'.
+    certainty: 0.5
+    cites: &id001
+    - source: S1
+      locator: article
+    how_known: '0.5: the founder’s stated stance; supersensible perception is placed above the senses for spiritual knowledge. Alternative 2 (pure thought also named).'
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites: *id001
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -188,7 +199,7 @@ A spiritual world open to pure thought and to latent faculties [S1].
 
 ## Position on the LIO axes
 
-- D BELOW_THRESHOLD.
+- D 1 (0.5, alt 2).
 - A, B, C, E UNKNOWN.
 
 ## Schools and variants
@@ -219,3 +230,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S10 audit fix): D BELOW_THRESHOLD -> 1 @0.5 (alt 2).

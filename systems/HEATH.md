@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: A how_known repeats the source quote.'
 identity:
   id: HEATH
   v7_1_number: 48
@@ -95,7 +98,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: Most hold the gods exist independently, some see them only as symbols (S1). Members differ (P44(b)).
+    how_known: 'Most hold the gods exist independently, some see them only as symbols (S1). Members differ (P44(b)). Quote (S1, Beliefs and practices): ''Heathens are usually polytheistic ... Most Heathens regard these divinities as having an independent existence, but some practitioners perceive them only as symbolic figures.'''
     note: 'Alternative: 3.'
     alternatives:
     - value: 3
@@ -241,3 +244,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
+- 2026-10-15 (S10 audit fix): A how_known repeats the source quote.

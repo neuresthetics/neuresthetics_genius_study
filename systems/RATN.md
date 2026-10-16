@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S1 audit (WEAKEN): D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3, under P44(b).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: A BELOW_THRESHOLD now quote-backed.'
 identity:
   id: RATN
   v7_1_number: 7
@@ -111,7 +114,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: God is a typical object of a priori knowledge for rationalists (S1 §1), and some held innate knowledge was given by God at creation, but the named rationalists differ on God (Descartes, Spinoza, Leibniz).
+    how_known: 'Rationalists differ on God (P44(b)): ''Some include metaphysical claims, such as that God exists''; on innate knowledge, ''According to others, God provided us with it at creation. Still others say it is part of our nature through natural selection'' (S1 §1).'
     note: 'Evidence: S1 §1 (Intuition/Deduction and Innate Knowledge theses).'
   B_cause:
     value: UNKNOWN
@@ -246,3 +249,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).
+- 2026-10-15 (S10 audit fix): A BELOW_THRESHOLD now quote-backed.

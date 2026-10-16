@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S5 audit follow-up: sources flagged P45 lower tier. No value or certainty change.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: A how_known repeats the source quote.'
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -110,7 +113,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: Secular but inclusive of all beliefs (S1), so members differ (P44b).
+    how_known: 'Secular but inclusive of all beliefs (S1), so members differ (P44b). Quote (S1, opening): Not addressed: secular, and ''inclusive of all—no matter what they believed''.'
     note: 'Evidence: S1 opening.'
   B_cause:
     value: UNKNOWN
@@ -248,3 +251,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
 - 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): motto quoted as three headings.
 - 2026-10-15 (S5 audit follow-up): reliability_note flagged P45 lower tier.
+- 2026-10-15 (S10 audit fix): A how_known repeats the source quote.

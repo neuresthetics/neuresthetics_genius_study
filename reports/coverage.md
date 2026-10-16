@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 96 | 133 | 2 | 0 | 41.6% |
 | origins | 285 | 187 | 96 | 2 | 0 | 65.6% |
 | metaphysics | 847 | 174 | 673 | 0 | 0 | 20.5% |
-| lio_axes | 385 | 125 | 30 | 185 | 45 | 32.5% |
+| lio_axes | 385 | 126 | 30 | 185 | 44 | 32.7% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 15 | 61 | 1 | 0 | 19.5% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 653 | 1399 | 190 | 45 | 28.6% |
+| **all** | 2287 | 654 | 1399 | 190 | 44 | 28.6% |
 
 ### Systems that are past stub stage
 
@@ -225,7 +225,7 @@ Display label status:
 | ABSURD | Absurdism | draft — unreviewed | 6/31 | not started |
 | AGNOS | Agnosticism | draft — unreviewed | 11/31 | not started |
 | ANIM | Animism | draft — unreviewed | 4/29 | not started |
-| ANTHRO | Anthroposophy | draft — unreviewed | 3/29 | not started |
+| ANTHRO | Anthroposophy | draft — unreviewed | 4/29 | not started |
 | ARIST | Aristotelianism | draft — unreviewed | 11/32 | not started |
 | ATHE | Atheism (naturalistic/materialistic – no gods + philosophical naturalism) | draft — unreviewed | 16/29 | not started |
 | BAHAI | Bahá’í Faith | draft — unreviewed | 9/29 | not started |

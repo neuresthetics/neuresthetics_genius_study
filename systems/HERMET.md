@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10, thin): filled from Britannica "Hermetic writings" (editors). A 1 (0.5, alt 2); D 1 (0.5, alt 0); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: ancient-only scope added to A and D.'
 identity:
   id: HERMET
   v7_1_number: 61
@@ -97,7 +100,7 @@ lio_axes:
     cites: &id001
     - source: S1
       locator: article
-    how_known: '0.5: the cosmos is also called a unity; alternative 2.'
+    how_known: '0.5: the cosmos is also called a unity; alternative 2. Scope: the ancient Hermetic writings only (1st–3rd century); Renaissance and modern Hermeticism not described.'
     alternatives:
     - value: 2
       note: Named alternative.
@@ -115,7 +118,7 @@ lio_axes:
     cites: &id002
     - source: S1
       locator: article
-    how_known: 0.5. Alternative 0.
+    how_known: '0.5. Alternative 0. Scope: the ancient Hermetic writings only (1st–3rd century); Renaissance and modern Hermeticism not described.'
     alternatives:
     - value: 0
       note: Named alternative.
@@ -235,3 +238,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S10 audit fix): ancient-only scope added to A and D.

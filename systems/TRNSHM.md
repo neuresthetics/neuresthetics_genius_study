@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from Britannica "Transhumanism" (Ostberg). A BELOW_THRESHOLD (materialist majority, some religious variants); others UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: A how_known repeats the source quote.'
 identity:
   id: TRNSHM
   v7_1_number: 13
@@ -103,7 +106,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: 'Members differ (P44b): materialist, atheist or agnostic for most, with New Age, Buddhist and Christian adaptations (S1).'
+    how_known: 'Members differ (P44b): materialist, atheist or agnostic for most, with New Age, Buddhist and Christian adaptations (S1). Quote (S1, Ethics and philosophy): Varies: ''characterized as a materialist and atheist or agnostic philosophy'', but ''some transhumanists have espoused theories that resemble or even adapt New Age, Buddhist, or Christian beliefs'' (e.g. Tipler''s God as a cosmic computerized intelligence).'
     note: 'Evidence: S1, Ethics and philosophy. Alternative: 4 for the materialist majority.'
   B_cause:
     value: UNKNOWN
@@ -242,3 +245,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
+- 2026-10-15 (S10 audit fix): A how_known repeats the source quote.

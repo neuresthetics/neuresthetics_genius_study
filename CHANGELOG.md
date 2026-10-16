@@ -11,6 +11,18 @@
 
 ## v8 (in progress)
 
+### S10 audit fixes (2026-10-15; S10 audit 14 hold, 4 weaken; S9 fixes and P46 confirmed)
+
+- **VODUN**: A, B and E how_known now say "Haitian Vodou only". use_when is scoped to the source read. West African Vodun is added as a lead (ruling: single code, as with TAO).
+- **ANTHRO**: D BELOW_THRESHOLD → 1 @0.5 (alt 2), from "a faculty for spiritual perception independent of the senses".
+- **4THWAY**: the P45 search is logged in the record (done in S11). Still a stub.
+- **PANPSY**: A BELOW_THRESHOLD is now quote-backed: SEP's Spinoza line, plus "Cosmopsychism is not to be confused with pantheism".
+- **RATN**: A BELOW_THRESHOLD is now quote-backed: "Some include metaphysical claims, such as that God exists"; God-given innate knowledge versus "natural selection".
+- **ABSURD, EXIST, HEATH, IDEAL, SUNASM, TRNSHM, UTIL**: the metaphysics quote is repeated in the A how_known.
+- **HERMET**: ancient-only scope added to the A and D how_known.
+- **CHANGELOG**: the S10 count is corrected to the P46 basis.
+- No value changed except ANTHRO D. Counts are unchanged: 62 / 77 sourced, 9 sourced but unscored, 6 stubs.
+
 ### Systems batch S11 (2026-10-15, unreviewed)
 
 - **THEOS** (Britannica "Theosophy", Melton): A 2 at 0.5 (alt 3); B BELOW_THRESHOLD; D 1 at 0.5 (alt 2); C, E UNKNOWN.
@@ -39,7 +51,7 @@
 - **4THWAY**: left as a stub. Britannica's Gurdjieff biography (editors) states no metaphysics, and no P45 source was read.
 - **HERMET** (thin: Britannica "Hermetic writings", editors): A 1 at 0.5 (alt 2); D 1 at 0.5 (alt 0); B, C, E UNKNOWN.
 - **SIKH** (Britannica "Sikhism", McLeod; introduction and Guru Nanak pages): A 2 at 0.5 (alt 1); D 1 at 0.5; B, C, E UNKNOWN.
-- Britannica read in Wayback copies (P44(e)). Counts: 65 / 77 sourced. v7.1 scores and notes unchanged. No person record changes.
+- Britannica read in Wayback copies (P44(e)). Counts: 65 / 77 past stub stage at the time; under P46 (added in the S9 fixes) that is 57 / 77 sourced plus 8 sourced but unscored (corrected in the S10 fixes). v7.1 scores and notes unchanged. No person record changes.
 
 ### Systems batch S9 (2026-10-15, unreviewed)
 

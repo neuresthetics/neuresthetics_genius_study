@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10): filled from Britannica "Vodou" (McAlister). A 1 (0.5, alt 2); B 1 (0.5, alt 0); E 1 (0.5); C, D UNKNOWN. Covers Haitian Vodou; West African Vodun not described separately. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S10 audit fix: A, B and E scoped to Haitian Vodou; use_when scoped; West African Vodun lead.'
 identity:
   id: VODUN
   v7_1_number: 57
@@ -102,7 +105,7 @@ lio_axes:
     cites: &id001
     - source: S1
       locator: article
-    how_known: '0.5: the everything-is-spirit principle gives alternative 2.'
+    how_known: '0.5: the everything-is-spirit principle gives alternative 2. Scope: Haitian Vodou only (S1); West African Vodun is not described.'
     alternatives:
     - value: 2
       note: Named alternative.
@@ -114,7 +117,7 @@ lio_axes:
     cites: &id002
     - source: S1
       locator: article
-    how_known: 0.5. Alternative 0.
+    how_known: '0.5. Alternative 0. Scope: Haitian Vodou only (S1); West African Vodun is not described.'
     alternatives:
     - value: 0
       note: Named alternative.
@@ -132,7 +135,7 @@ lio_axes:
     cites:
     - source: S1
       locator: article
-    how_known: '0.5: favour for those who serve.'
+    how_known: '0.5: favour for those who serve. Scope: Haitian Vodou only (S1); West African Vodun is not described.'
 epistemology:
   value: TODO
 ethics:
@@ -180,13 +183,14 @@ revised_rubric:
     score: TODO
     rationale: ''
 coding_guidance:
-  use_when: The person practised Vodou or West African Vodun.
+  use_when: The person practised Haitian Vodou (the source read). West African Vodun shares the code (single code, as with TAO) but needs its own source.
   do_not_use_when: Haitian heritage alone is not enough; Santería is SANTER.
   neighbors: []
 review:
   data_quality_flags:
   - Source covers Haitian Vodou; the Britannica "Vodun" page is an unsigned index stub, so West African Vodun has no separate source.
   open_questions:
+  - 'Lead: a signed or peer-reviewed source on West African Vodun (Fon/Ewe, Benin and Togo), to check whether these values hold for it.'
   - A source on West African Vodun.
   - Adherents are TODO.
 sources:
@@ -245,3 +249,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S10 audit fix): A, B and E scoped to Haitian Vodou; use_when scoped; West African Vodun lead.
