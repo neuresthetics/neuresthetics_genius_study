@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 2026-10-15 — T1 audit fixes (Grok Bot)
+
+- Audit /workspace/genius_study_audit/gs_f4b5904_T1/run1/: 7 HOLD, 1 WEAKEN.
+- JAIN: B stays 3 @0.5. It now cites P41 (by analogy, not P40). Alternative 4 is primary; 2 is secondary, with a note that the source never says worship of in-world gods changes nature. The karma wording is now a located quote (S1, metaphysics section).
+- HINDU: B stays UNKNOWN; the avatar doctrine is added as a lead.
+- Counts are unchanged: 66 / 77.
+
 ## 2026-10-15 — targeted A/B pass, batch T2 (Grok Bot)
 
 - Tactic change (from the T1 audit): search sources on the topic itself, such as SEP and IEP entries on causation, occasionalism or miracles, rather than general entries.

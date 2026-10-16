@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -27,6 +27,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'T1: B_cause UNKNOWN -> 3 (0.5, alt 2) from IEP "Jain Philosophy" (S1).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1 audit fix: B cites P41; alternative 4 primary, 2 secondary; karma quote located.'
 identity:
   id: JAIN
   v7_1_number: 37
@@ -125,15 +128,18 @@ lio_axes:
       cites: *id001
   B_cause:
     value: 3
-    rationale: 'Scored on the system''s account of nature: ''The universe is eternal, matter and souls being equally uncreated. The universe contains gods who may be worshipped for various reasons, but there is no being outside it exercising control over it.'' (S1). An uncreated, eternal universe with no outside controller, run by karma, leans to law. Not 4: the same sentence says gods inside the universe ''may be worshipped for various reasons'', which leaves room for petition.'
+    rationale: 'Scored on the system''s account of nature under P41 (by analogy: a controller is denied, but no exceptionless law is stated): ''The universe is eternal, matter and souls being equally uncreated. The universe contains gods who may be worshipped for various reasons, but there is no being outside it exercising control over it'' (S1). ''The gods and other superhuman beings are all just as subject to karma and rebirth as human beings are'' (S1, same section).'
     certainty: 0.5
     cites: &id002
     - source: S1
       locator: metaphysics section
-    how_known: '0.5: the source fixes the absence of external control but does not state that there are no special cases. Alternative 2 (petition to in-world gods).'
+    how_known: 'P41: B 3 at 0.5, alternative 4 (no stated no-exception claim). Secondary alternative 2: gods inside the universe may be worshipped, but the source never says that worship changes the course of nature.'
     alternatives:
+    - value: 4
+      note: 'P41 alternative: no stated exceptionless law.'
+      cites: *id002
     - value: 2
-      note: Named alternative.
+      note: 'Secondary: worship of in-world gods; the source does not say it changes nature.'
       cites: *id002
   C_ledger:
     value: 3
@@ -245,7 +251,7 @@ Eternal uncreated universe; gods within it subject to karma [S1].
 
 ## Position on the LIO axes
 
-- A 3 (0.5, alt 4), B 3 (0.5, alt 2), C 3 (0.5, alt 4), E 4 (0.5).
+- A 3 (0.5, alt 4), B 3 (0.5, alt 4; 2), C 3 (0.5, alt 4), E 4 (0.5).
 - D UNKNOWN.
 
 ## Schools and variants
@@ -278,3 +284,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (S6 audit fix): C_ledger cites P44(d). Britannica byline corrected.
 - 2026-10-15 (S7 audit fix): byline note.
 - 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. JAIN: IEP S1 gives B (quote above). Britannica Jainism (Shah, Wayback 20260921161404) read: no B statement; Cosmology section snapshot not retrievable.
+- 2026-10-15 (T1 audit fixes, /workspace/genius_study_audit/gs_f4b5904_T1/run1/): JAIN B rationale now cites P41, alternative 4 (primary) and 2 (secondary), and quotes the karma sentence with its locator.

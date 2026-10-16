@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -27,6 +27,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1 audit fix: avatar doctrine recorded as a lead for B; B stays UNKNOWN.'
 identity:
   id: HINDU
   v7_1_number: 47
@@ -190,6 +193,7 @@ review:
   - Per-school variants (Vedānta, Vaiṣṇava, Śaiva) not filled.
   - Adherents are TODO.
   - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
+  - 'Lead for B (T1 audit): the Bhagavata-purana''s doctrine of the avatars of Vishnu, and ''The Lord creates the world merely because he wills to do so'' (Britannica, Hinduism, Cosmology, Wayback 20260720163628). This bears on divine action but states no stance on exceptions in nature. B stays UNKNOWN.'
 sources:
 - id: S1
   type: tertiary
@@ -258,3 +262,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15: P44(e) Wayback citation.
 - 2026-10-15 (S8 audit fix): C BELOW_THRESHOLD.
 - 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. HINDU: Britannica Hinduism sections Cosmology (Smith et al., 20260720163628), Theology (Doniger, 20260909125556), Tantric ritual (Dimock, 20251204214305) and IEP 'Hindu Philosophy' read. Leads only: Bhagavata-purana avatar doctrine and 'The Lord creates the world merely because he wills to do so' (Britannica, Cosmology) vs. 'the cosmos as we know it is the result of the causal efficacy of Brahman' (IEP). Neither states a stance on law vs. exception in nature, so not used for BELOW_THRESHOLD. B stays UNKNOWN.
+- 2026-10-15 (T1 audit fixes, /workspace/genius_study_audit/gs_f4b5904_T1/run1/): HINDU: avatar doctrine added as a lead; B stays UNKNOWN (audit HOLD).
