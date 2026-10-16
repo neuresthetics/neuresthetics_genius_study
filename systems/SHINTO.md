@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S8 audit fix: B UNKNOWN -> 2 @0.5 (alt 1) from the full article; A how_known adds Hirata and musubi.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S9 audit fix: S1 reliability_note now points to the later pages S2–S4.'
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -228,7 +231,7 @@ sources:
   citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō." Encyclopaedia Britannica. https://www.britannica.com/topic/Shinto. Wayback Machine snapshot 2026-10-03 18:03:43 UTC: https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto.'
   url: https://www.britannica.com/topic/Shinto
   accessed: '2026-10-15'
-  reliability_note: 'Signed article (Kokugakuin emeritus professor); introduction to early history read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto); live page timed out on 2026-10-15, so no live comparison.'
+  reliability_note: 'Signed article (Kokugakuin emeritus professor); Introduction and early history read here; the later pages are S2–S4 (same article). P44(e): read in the Wayback copy (https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto); live page timed out on 2026-10-15, so no live comparison.'
 - id: S2
   type: tertiary
   kind: encyclopedia
@@ -302,3 +305,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
 - 2026-10-15 (S8 audit fix): later article pages read; B scored.
+- 2026-10-15 (S9 audit fix): S1 note mentions S2–S4.

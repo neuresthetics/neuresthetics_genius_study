@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9, thin): Britannica "Modern Paganism" (one sentence) and the abstract of Aitamurto & Simpson, Slavic Native Faith (P45). A BELOW_THRESHOLD; rest UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S9 audit fix: A BELOW_THRESHOLD -> UNKNOWN. All axes UNKNOWN: sourced, unscored (P46(a)).'
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -88,8 +91,8 @@ metaphysics:
     value: TODO
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Only modern Paganism in general is described: ''some modern Pagans may believe that the deities invoked literally exist, whereas others regard them as symbolic or archetypal images'' (S1). The movement ''is comprised of many local and national forms'' (S2).'
+    value: UNKNOWN
+    how_known: Not addressed for Rodnovery. The sources read speak only of modern Pagans in general and of 'many local and national forms' (S1, S2); that general sentence is not a stance of this movement (S9 audit).
   B_cause:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -156,6 +159,7 @@ review:
   data_quality_flags:
   - 'Thin: one sentence in a general article plus a P45 abstract; full Element not read.'
   open_questions:
+  - 'Lead for A: Britannica on modern Paganism in general says some take deities as literal and others as symbolic (S1); check in Aitamurto & Simpson whether this holds for Rodnovery.'
   - Read Aitamurto & Simpson in full.
   - Adherents are TODO.
 sources:
@@ -191,8 +195,7 @@ Not sourced in detail.
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD.
-- B, C, D, E UNKNOWN.
+- All UNKNOWN (sourced, unscored; P46(a)).
 
 ## Schools and variants
 
@@ -222,3 +225,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S9): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S9 audit fix): A UNKNOWN; record is sourced, unscored under P46(a).

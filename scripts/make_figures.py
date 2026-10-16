@@ -235,6 +235,8 @@ def fig_systems_axes(out):
     labels, vals, certs, labs = [], [], [], []
     for code in SOURCED_SYSTEMS:
         d, _ = read_record(os.path.join(REPO, "systems", f"{code}.md"))
+        if all((n or {}).get("value") == "UNKNOWN" for n in d["lio_axes"].values()):
+            continue  # P46(a): sourced, unscored; counted with the stubs
         labels.append(code)
         row, crow, lrow = [], [], []
         for k in AXES:
@@ -270,7 +272,7 @@ def fig_systems_axes(out):
     ax.set_title(f"The {len(labels)} sourced belief-system drafts on the v8 LIO axes\n"
                  "cell = score (certainty); grey hatched = no score (TODO, UNKNOWN or BELOW_THRESHOLD)", fontsize=11)
     footer(fig, "Source: systems/*.md, lio_axes (v8 coder drafts, unreviewed; not the v7.1 rubric). "
-             f"The other {sum(1 for f in os.listdir(os.path.join(REPO, 'systems')) if f.endswith('.md') and f != 'README.md') - len(labels)} systems are stubs.")
+             f"The other {sum(1 for f in os.listdir(os.path.join(REPO, 'systems')) if f.endswith('.md') and f != 'README.md') - len(labels)} systems are stubs or sourced but unscored (P46).")
     fig.tight_layout(rect=(0, 0.06, 1, 1))
     save(fig, out, "systems_axes.png")
 

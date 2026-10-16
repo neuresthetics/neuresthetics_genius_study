@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 90 | 139 | 2 | 0 | 39.0% |
 | origins | 285 | 172 | 111 | 2 | 0 | 60.4% |
 | metaphysics | 847 | 172 | 675 | 0 | 0 | 20.3% |
-| lio_axes | 385 | 116 | 60 | 164 | 45 | 30.1% |
+| lio_axes | 385 | 114 | 60 | 167 | 44 | 29.6% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 15 | 61 | 1 | 0 | 19.5% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 621 | 1452 | 169 | 45 | 27.2% |
+| **all** | 2287 | 619 | 1452 | 172 | 44 | 27.1% |
 
 ### Systems that are past stub stage
 
@@ -229,7 +229,7 @@ Display label status:
 | ARIST | Aristotelianism | draft — unreviewed | 11/32 | not started |
 | ATHE | Atheism (naturalistic/materialistic – no gods + philosophical naturalism) | draft — unreviewed | 16/29 | not started |
 | BAHAI | Bahá’í Faith | draft — unreviewed | 9/29 | not started |
-| BON | Bön (Tibetan indigenous religion) | draft — unreviewed | 4/29 | not started |
+| BON | Bön (Tibetan indigenous religion) | draft — unreviewed | 2/29 | not started |
 | BRGHTS | Brights (The Brights Movement) | draft — unreviewed | 9/29 | not started |
 | BUDDH | Buddhism | draft — unreviewed | 6/29 | not started |
 | CAODAI | Caodaism | draft — unreviewed | 10/29 | not started |

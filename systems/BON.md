@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9, thin): filled from Britannica "Bon" (editors, one paragraph). A 3 (0.5, alt 2); B 1 (0.5); C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S9 audit fix: A 3 and B 1 -> UNKNOWN for Bon as a whole; early-Bon reading kept as a lead. P45(b) search found Kværne leads; none read in full, so nothing scored. Sourced, unscored (P46(a)).'
 identity:
   id: BON
   v7_1_number: 54
@@ -86,25 +89,11 @@ metaphysics:
     value: TODO
 lio_axes:
   A_locus:
-    value: 3
-    rationale: '''a cult of the gods of the atmosphere, the earth, and subterranean regions''; kings as ''manifestations of the sky divinity''.'
-    certainty: 0.5
-    cites: &id001
-    - source: S1
-      locator: article
-    how_known: 0.5; alternative 2 (the sky divinity).
-    alternatives:
-    - value: 2
-      note: Named alternative.
-      cites: *id001
+    value: UNKNOWN
+    how_known: Not addressed for Bon as a whole. The one paragraph read describes only early, pre-Buddhist Bon, and hedged ('seem to have been'); see open questions for the early-Bon lead.
   B_cause:
-    value: 1
-    rationale: '''The original features of Bon seem to have been largely magic-related; they concerned the propitiation of demonic forces''.'
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: article
-    how_known: '0.5: early Bon; the later systematized religion is not described.'
+    value: UNKNOWN
+    how_known: Not addressed for Bon as a whole; early-Bon lead in open questions.
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -168,7 +157,8 @@ review:
   data_quality_flags:
   - 'Thin: one-paragraph editors’ article; later systematized Bon not described.'
   open_questions:
-  - A source on systematized (Yungdrung) Bon.
+  - 'Early-Bon lead (S1, hedged): "a cult of the gods of the atmosphere, the earth, and subterranean regions"; kings as "manifestations of the sky divinity" (would suggest A 3, alt 2); "The original features of Bon seem to have been largely magic-related" (would suggest B 1). Not scored: early Bon only.'
+  - 'P45(b) leads, not read in full: Kværne, "The study of Bon in the West: Past, present, and future", Senri Ethnological Reports 15 (2000), doi 10.15021/00002196, which separates pre-Buddhist religion, popular "nameless religion" and Yungdrung Bon; Kværne, The Bon Religion of Tibet (1995), intro pp. 9–10.'
   - Adherents are TODO.
 sources:
 - id: S1
@@ -195,8 +185,7 @@ Gods of sky, earth and underworld; demonic forces [S1].
 
 ## Position on the LIO axes
 
-- A 3 (0.5, alt 2); B 1 (0.5).
-- C, D, E UNKNOWN.
+- All UNKNOWN (sourced, unscored; P46(a)). Early-Bon lead in open questions.
 
 ## Schools and variants
 
@@ -226,3 +215,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S9): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S9 audit fix): A and B UNKNOWN; early-Bon lead in open questions.

@@ -5,11 +5,20 @@
 
 - SHINTO: read the later pages of the signed article (Wayback, P44(e)). B is now 2 @0.5, alt 1 (prayers for the safety of the state, thanks for kami’s protection, Motoori’s absolute faith). A how_known now notes that Hirata's creator god was "not accepted into the main current", and musubi is the stated reason for alternative 2.
 - HINDU: C changes from 3 @0.5 to BELOW_THRESHOLD, alt 3. IEP: karma is "not a sufficient criterion … likely not a necessary condition".
-- HELLEN: dropped the generic Britannica sentence and re-sourced from YSEE’s own About page under P45(a). All axes are UNKNOWN (A changes from 3 to UNKNOWN). Flagged as P45 lower tier.
+- HELLEN: dropped the generic Britannica sentence and re-sourced from YSEE’s own About page under P45(a). All axes are UNKNOWN (A changes from BELOW_THRESHOLD to UNKNOWN; corrected in the S9 fixes). Flagged as P45 lower tier.
 - KEMET: re-sourced from the kemet.org FAQ (House of Netjer) under P45(a). A changes to UNKNOWN; B is 1 @0.5 (oracular possession). Flagged as P45 lower tier.
 - Counts are unchanged: 60 / 77 systems sourced.
 
 ## v8 (in progress)
+
+### S9 audit fixes (2026-10-15; S9 audit 12 hold, 2 weaken; S8 fixes confirmed)
+
+- **RODNOV**: A BELOW_THRESHOLD → UNKNOWN. The modern-Paganism sentence is kept as a lead.
+- **BON**: A 3 @0.5 and B 1 @0.5 → UNKNOWN for Bon as a whole. The early-Bon reading is a lead in open questions. A P45(b) search found Kværne (Senri Ethnological Reports 15, 2000; Bon Religion of Tibet, 1995), not read in full, so nothing was scored.
+- **SHINTO**: the S1 reliability_note now points to the later pages S2–S4.
+- **CHANGELOG**: the S8-fixes entry said HELLEN's A went from 3; it was BELOW_THRESHOLD.
+- **P46** added to OPEN_DECISIONS and CODING_GUIDE §11. (a) A system counts as sourced only with a value or a quote-backed BELOW_THRESHOLD. Sourced, unscored: BON, CYNIC, EFFALT, HEDON, HELLEN, PHENOM, RODNOV, SOLIP. (b) Organization scope: KEMET (House of Netjer) and HELLEN (YSEE) now name the organization and note plurality; scores unchanged.
+- Headline: 57 / 77 sourced, plus 8 sourced but unscored, and 12 stubs. progress_status.py computes this; make_figures leaves out all-UNKNOWN records.
 
 ### Systems batch S10 (2026-10-15, unreviewed)
 

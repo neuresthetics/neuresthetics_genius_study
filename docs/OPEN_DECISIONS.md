@@ -71,18 +71,19 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P43 | Interview books of disputed wording (Craft books): first-person statements from interview books of disputed wording (Stravinsky's books with Robert Craft) score, with basis `recorded_interview`, flagged '(interview)', capped at 0.5; they go no higher without a document in the person's own hand that confirms them | medium | decided 2026-10-15 by Jason (RQ1, stage 3 batch G, Stravinsky) |
 | P44 | System records: (a) a system with no God gets A_locus 4 (extends P38); (b) score a system axis only where the stance itself fixes a value; UNKNOWN where the source is silent, BELOW_THRESHOLD where members differ; (c) naturalism fixes C and E at 4 (0.5 implied, 0.7 stated); (d) an impersonal (karma-type) ledger is C 3 @0.5, alt 4, only where a source states a karma-type law; (e) a Wayback copy of a Britannica article counts as the full article (no P45 cap); stance value 'separate first cause, not creator (eternal world)' added | medium | decided 2026-10-15, v8's pick (S1 and S2 systems audits) |
 | P45 | Lower source tier for system records: the movement's own published statement, or peer-reviewed scholarship defining the term, when no encyclopedia entry exists; capped at 0.5 and flagged in reliability_note; no Wikipedia or unsigned pages; keep the stub if neither exists | medium | decided 2026-10-15, v8's pick (S4 systems audit, RQ1) |
+| P46 | System records: (a) a system counts as sourced only with at least one value or a quote-backed BELOW_THRESHOLD; all-UNKNOWN records count as stubs in the headline and are reported separately as 'sourced, unscored'; (b) one organization's statement stands only for that organization: name it in how_known and reliability_note, keep the 0.5 cap, note plurality, BELOW_THRESHOLD where organizations disagree, and a peer-reviewed source on the whole movement takes precedence | medium | decided 2026-10-15, v8's pick (S9 systems audit) |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
 
 ## Open
 
-None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, P38–P42 on 2026-10-15 P43 (Jason) and P44–P45 (v8's picks) on 2026-10-15; all are listed under "Decided".
+None. P8–P31 and S7 were decided on 2026-10-02, P32–P37 on 2026-10-08, P38–P42 on 2026-10-15 P43 (Jason) and P44–P46 (v8's picks) on 2026-10-15; all are listed under "Decided".
 
 
 ## Decided
 
-All 60 items, in id order (P6–P45 are placed after P5, S7 after S6).
+All 61 items, in id order (P6–P46 are placed after P5, S7 after S6).
 
 ### R1. Georgia O'Keeffe's status
 **Decided 2026-10-01 by Jason (approved as recommended):** Georgia O'Keeffe is `core`. Set in `data/roster/status_overrides.csv`; the rebuild writes the decision into her `notes`.
@@ -811,6 +812,14 @@ Process:
 - **Precedent.** BRGHTS and SUNASM were sourced from the movements' own sites (batches S1 and S2). Their values above 0.5 predate this rule and are left to the next audit of those files.
 - **Applied to:** PANDEI and PANEND, to be tried in systems batch S6.
 - **Result-changing.** No for people.
+
+### P46. When a system counts as sourced; organization-scope statements
+**Decided 2026-10-15, v8's pick (from the blind audit of systems batch S9, `/workspace/genius_study_audit/gs_439c52b_S9/run1/`).**
+
+- **Rule (a).** A system record counts as sourced only if at least one LIO axis has a value or a quote-backed BELOW_THRESHOLD. A record whose axes are all UNKNOWN counts as a stub in the headline, and is reported separately as "sourced, unscored". Its sources and other fields stay.
+- **Rule (b).** A statement by one organization stands only for that organization. Name the organization in `how_known` and `reliability_note`, keep the P45 0.5 cap, and note when the movement is plural. Where organizations disagree, use BELOW_THRESHOLD. A peer-reviewed source on the whole movement takes precedence.
+- **Applied to:** (a) BON, CYNIC, EFFALT, HEDON, HELLEN, PHENOM, RODNOV, SOLIP (sourced, unscored, 2026-10-15); (b) KEMET (House of Netjer) and HELLEN (YSEE).
+- **Result-changing.** No for people. The headline systems count drops by 8.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

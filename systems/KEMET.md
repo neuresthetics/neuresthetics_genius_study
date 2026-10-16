@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S8 audit fix: Britannica generic sentence dropped; re-sourced from kemet.org FAQ (House of Netjer) under P45(a). A UNKNOWN; B 1 @0.5 (P45 cap). Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S9 audit: P46(b) applied (organization named; plurality noted). Scores unchanged.'
 identity:
   id: KEMET
   v7_1_number: 50
@@ -107,7 +110,7 @@ lio_axes:
     cites:
     - source: S1
       locator: FAQ
-    how_known: P45 cap 0.5. Covers Kemetic Orthodoxy, one organization within Kemetism.
+    how_known: 'P45 cap 0.5. Covers Kemetic Orthodoxy, one organization within Kemetism. P46(b): this value describes the House of Netjer (Kemetic Orthodoxy) only, not all members; no other organization read, so no disagreement found.'
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the source read.
@@ -170,6 +173,7 @@ coding_guidance:
 review:
   data_quality_flags:
   - 'P45 lower tier only: the House of Netjer’s own FAQ (Kemetic Orthodoxy, one organization; the FAQ says it is not a Neo-Pagan group). Capped at 0.5.'
+  - 'P46(b): one organization (the House of Netjer (Kemetic Orthodoxy)); Kemetism is plural: Kemetic Orthodoxy is one organization among several Kemetic groups and solitary practitioners.'
   open_questions:
   - 'Leads: Krogh & Pillifant 2004, Sociology of Religion 65(2) (abstract: Kemetic Orthodoxy "is monistic ... based on ritual authority"); Harrison 2017 chapter. Not read in full.'
   - Adherents are TODO.
@@ -181,7 +185,7 @@ sources:
   citation: The House of Netjer. "Frequently Asked Questions." Kemet.org (Kemetic Orthodoxy). https://www.kemet.org/faq.
   url: https://www.kemet.org/faq
   accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Site copyright 1993–2020; undated page.'
+  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Site copyright 1993–2020; undated page. P46(b): stands for the House of Netjer (Kemetic Orthodoxy) only. Kemetism is plural: Kemetic Orthodoxy is one organization among several Kemetic groups and solitary practitioners. A peer-reviewed source on the whole movement would take precedence.'
 ---
 
 # Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) (KEMET)
@@ -231,3 +235,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
 - 2026-10-15 (S8 audit fix): generic modern-Paganism sentence dropped; re-sourced from the movement’s own published statement under P45(a), capped at 0.5.
+- 2026-10-15: P46(b) organization-scope notes added.

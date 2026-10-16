@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S8 audit fix: Britannica generic sentence dropped; re-sourced from YSEE’s own About page under P45(a). All axes UNKNOWN (the statement fixes none). Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S9 audit: P46(b) applied (organization named; plurality noted). Scores unchanged.'
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -159,6 +162,7 @@ coding_guidance:
 review:
   data_quality_flags:
   - 'P45 lower tier only: YSEE’s own About page (one organization). It names polytheism but fixes no axis.'
+  - 'P46(b): one organization (YSEE (Supreme Council of Ethnikoi Hellenes)); Hellenic polytheism is plural: YSEE is one organization among several (and many unaffiliated practitioners).'
   open_questions:
   - 'Leads: Fotiou 2014, "We are the Indians of Greece", Crossroads (doi 10.1353/cro.2014.a783379; author PDF on ysee.gr); Fotiou 2023, Religions 14(6):754 (open access; fetch blocked). Not read.'
   - Adherents are TODO.
@@ -170,7 +174,7 @@ sources:
   citation: Supreme Council of Ethnikoi Hellenes. "About YSEE." https://www.ysee.gr/about-eng.html.
   url: https://www.ysee.gr/about-eng.html
   accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Undated page.'
+  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Undated page. P46(b): stands for YSEE (Supreme Council of Ethnikoi Hellenes) only. Hellenic polytheism is plural: YSEE is one organization among several (and many unaffiliated practitioners). A peer-reviewed source on the whole movement would take precedence.'
 ---
 
 # Hellenismos (Greek Reconstructionist Paganism) (HELLEN)
@@ -219,3 +223,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
 - 2026-10-15 (S8 audit fix): generic modern-Paganism sentence dropped; re-sourced from the movement’s own published statement under P45(a), capped at 0.5.
+- 2026-10-15: P46(b) organization-scope notes added.
