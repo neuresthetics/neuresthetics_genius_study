@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S1 audit (WEAKEN): D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3, under P44(b).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: A_locus searched, unchanged; search logged.'
 identity:
   id: EMPIR
   v7_1_number: 4
@@ -185,6 +188,7 @@ review:
   open_questions:
   - How to score A and B for an epistemology with no stated theology (ruling question).
   - Adherents are TODO.
+  - 'T2 (2026-10-15): A_locus searched in topic sources; unchanged. See research log.'
 sources:
 - id: S1
   type: tertiary
@@ -244,3 +248,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. EMPIR: SEP 'Rationalism vs. Empiricism' re-searched for God, Locke, Berkeley, Hume: the entry notes metaphysics including 'the existence of God' only for rationalists. No source on empiricists as a group and God. A stays UNKNOWN.

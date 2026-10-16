@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S1): filled from SEP ("Atheism and Agnosticism", §2) and Britannica (Nielsen, "Atheism"). A is BELOW_THRESHOLD (explicit suspension); B, C and E UNKNOWN; D 4 at 0.5. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: B_cause searched, unchanged; search logged.'
 identity:
   id: AGNOS
   v7_1_number: 2
@@ -236,6 +239,7 @@ review:
   data_quality_flags: []
   open_questions:
   - Adherents are TODO.
+  - 'T2 (2026-10-15): B_cause searched in topic sources; unchanged. See research log.'
 sources:
 - id: S1
   type: tertiary
@@ -301,3 +305,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. AGNOS: Agnosticism as defined in S1 (suspension on God) takes no stance on law vs exception in nature; SEP has no separate 'agnosticism' entry (page not found). No topic source found. B stays UNKNOWN.

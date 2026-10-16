@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 101 | 128 | 2 | 0 | 43.7% |
 | origins | 285 | 196 | 87 | 2 | 0 | 68.8% |
 | metaphysics | 847 | 176 | 671 | 0 | 0 | 20.8% |
-| lio_axes | 385 | 134 | 5 | 201 | 45 | 34.8% |
+| lio_axes | 385 | 134 | 5 | 200 | 46 | 34.8% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 16 | 60 | 1 | 0 | 20.8% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 679 | 1357 | 206 | 45 | 29.7% |
+| **all** | 2287 | 679 | 1357 | 205 | 46 | 29.7% |
 
 ### Systems that are past stub stage
 

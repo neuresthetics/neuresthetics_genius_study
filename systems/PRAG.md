@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from SEP "Pragmatism" (Legg and Hookway). A and D BELOW_THRESHOLD (pragmatists differ); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: B_cause searched, unchanged; search logged.'
 identity:
   id: PRAG
   v7_1_number: 10
@@ -181,6 +184,7 @@ review:
   data_quality_flags: []
   open_questions:
   - Adherents are TODO.
+  - 'T2 (2026-10-15): B_cause searched in topic sources; unchanged. See research log.'
 sources:
 - id: S1
   type: tertiary
@@ -237,3 +241,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read the listed sources; quotations checked against the fetched page text. Axes follow P44(b): a value only where the stance itself fixes it; UNKNOWN where the source is silent; BELOW_THRESHOLD where members differ.
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. PRAG: SEP 'Pragmatism' (Legg and Hookway, 2024) searched for naturalism, supernatural, miracle: Dewey's 'naturalism' and his view that 'removing faith in supernatural entities will not destroy religion', vs James's 'Will to Believe' faith. Neither is a statement on exceptions in nature, so not used for BELOW_THRESHOLD. Lead: SEP 'William James' on piecemeal supernaturalism (Varieties). B stays UNKNOWN.

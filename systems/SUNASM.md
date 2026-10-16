@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -27,6 +27,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S10 audit fix: A how_known repeats the source quote.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: B_cause searched, unchanged; search logged.'
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -193,6 +196,7 @@ review:
   open_questions:
   - Independent source.
   - Adherents are TODO.
+  - 'T2 (2026-10-15): B_cause searched in topic sources; unchanged. See research log.'
 sources:
 - id: S1
   type: primary
@@ -252,3 +256,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (S2 audit fixes, run 1: 9 HOLD, 1 WEAKEN): motto quoted as three headings.
 - 2026-10-15 (S5 audit follow-up): reliability_note flagged P45 lower tier.
 - 2026-10-15 (S10 audit fix): A how_known repeats the source quote.
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. SUNASM: Sunday Assembly About page re-read: 'a global secular (non-religious) movement for wonder and good'. Secular self-description does not state a view on law vs exception in nature (P46(b): one organization). B stays UNKNOWN.

@@ -1,6 +1,14 @@
 # Changelog
 
 
+## 2026-10-15 — targeted A/B pass, batch T2 (Grok Bot)
+
+- Tactic change (from the T1 audit): search sources on the topic itself, such as SEP and IEP entries on causation, occasionalism or miracles, rather than general entries.
+- RATN: B changes from UNKNOWN to BELOW_THRESHOLD, alt 3. Members differ: Leibniz rejects occasionalism as "a perpetual miracle" (SEP "Leibniz on Causation"), while Malebranche holds that "there is only one true cause because there is only one true God" (SEP "Occasionalism"). Both entries are added as sources.
+- BUDDH (A and B), AGNOS (B), EMPIR (A), SUNASM (B), PRAG (B): searched, unchanged; the searches are logged in each research log.
+- T1 five not revisited: no topic-specific source found quickly.
+- Counts are unchanged: 66 / 77 systems sourced.
+
 ## 2026-10-15 — targeted A/B pass, batch T1 (Grok Bot)
 
 - Plan (Jason's targeted pass). Scope: systems with exactly one of A_locus or B_cause UNKNOWN (29 at 7827dad; the brief said 31), plus the 5 BELOW_THRESHOLD on both A and B (BUDDH, HYLO, TAO, NATAM, CHAOSM), where a source can fix one axis. Order: major world religions first, then roster order. 34 systems, batches of 6:

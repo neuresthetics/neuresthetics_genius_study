@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -27,6 +27,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S10 audit fix: A BELOW_THRESHOLD now quote-backed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: B_cause UNKNOWN -> BELOW_THRESHOLD (alt 3), quote-backed; SEP Leibniz on Causation and Occasionalism added.'
 identity:
   id: RATN
   v7_1_number: 7
@@ -117,8 +120,26 @@ lio_axes:
     how_known: 'Rationalists differ on God (P44(b)): ''Some include metaphysical claims, such as that God exists''; on innate knowledge, ''According to others, God provided us with it at creation. Still others say it is part of our nature through natural selection'' (S1 §1).'
     note: 'Evidence: S1 §1 (Intuition/Deduction and Innate Knowledge theses).'
   B_cause:
-    value: UNKNOWN
-    how_known: Not addressed in S1.
+    value: BELOW_THRESHOLD
+    how_known: Members differ on B. S1 warns that 'Descartes, Spinoza and Leibniz are mistakenly seen as applying a reason-centered epistemology to a common metaphysical agenda'. Leibniz wants a world that 'unfolds” naturally without the direct intervention of God' and rejects occasionalism as 'a perpetual miracle', while still allowing events that 'surpass all the force of creatures', such as the Creation and the Incarnation (S2, §3). Malebranche holds that 'there is only one true cause because there is only one true God' (S3, introduction).
+    note: P44(b). Leibniz alone would be B 3; Malebranche-style occasionalism would be B 0–1. Alternative 3.
+    alternatives:
+    - value: 3
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: §1
+      - source: S2
+        locator: §3
+      - source: S3
+        locator: introduction
+    cites:
+    - source: S1
+      locator: §1
+    - source: S2
+      locator: §3
+    - source: S3
+      locator: introduction
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in S1.
@@ -200,6 +221,24 @@ sources:
   url: https://plato.stanford.edu/entries/rationalism-empiricism/
   accessed: '2026-10-15'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  author: Bobro, Marc, and Tobias Flattery
+  year: 2026
+  citation: Bobro, Marc, and Tobias Flattery. "Leibniz on Causation." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/leibniz-causation/
+  url: https://plato.stanford.edu/entries/leibniz-causation/
+  accessed: '2026-10-15'
+  reliability_note: Signed SEP entry (substantive revision 2026-09-30); §3 on occasionalism and miracles read.
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  author: Lee, Sukjae
+  year: 2019
+  citation: Lee, Sukjae. "Occasionalism." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/occasionalism/
+  url: https://plato.stanford.edu/entries/occasionalism/
+  accessed: '2026-10-15'
+  reliability_note: Signed SEP entry; introduction and Leibniz comparison read. Malebranche is not named a rationalist in S1; used only as the contrasting case.
 ---
 
 # Rationalism (RATN)
@@ -218,7 +257,8 @@ Varies: the named rationalists differ on God [S1].
 
 - D BELOW_THRESHOLD (alt 3): reason independent of experience, but members differ [S1, §1].
 - A BELOW_THRESHOLD: God often known a priori; locus varies.
-- B, C, E UNKNOWN.
+- B BELOW_THRESHOLD (alt 3): Leibniz against occasionalist perpetual miracle vs Malebranche [S1, S2, S3].
+- C, E UNKNOWN.
 
 ## Schools and variants
 
@@ -250,3 +290,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
 - 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).
 - 2026-10-15 (S10 audit fix): A BELOW_THRESHOLD now quote-backed.
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. RATN: B fixed as BELOW_THRESHOLD from S1, SEP "Leibniz on Causation" and SEP "Occasionalism".

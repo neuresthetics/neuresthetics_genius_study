@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S6 audit fix: C cites P44(d).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T2: A_locus searched, unchanged; search logged.'
 identity:
   id: BUDDH
   v7_1_number: 35
@@ -191,6 +194,7 @@ review:
   open_questions:
   - Later schools (Mahāyāna, Vajrayāna) not read.
   - Adherents are TODO.
+  - 'T2 (2026-10-15): A_locus searched in topic sources; unchanged. See research log.'
 sources:
 - id: S1
   type: tertiary
@@ -250,3 +254,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
 - 2026-10-15 (S6 audit fix): C_ledger cites P44(d).
+- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. BUDDH: SEP 'Abhidharma' (Ronkin, 2026) and SEP 'Mind in Indian Buddhist Philosophy' searched for creator, Īśvara, supernormal powers, miracles: no passage fixes A or B. IEP has no 'Pratityasamutpada' entry (page not found). Both stay BELOW_THRESHOLD. Lead: a SEP or IEP treatment of the Buddhist refutation of Īśvara.
