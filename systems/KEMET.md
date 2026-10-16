@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S8 audit fix: Britannica generic sentence dropped; re-sourced from kemet.org FAQ (House of Netjer) under P45(a). A UNKNOWN; B 1 @0.5 (P45 cap). Not reviewed.'
 identity:
   id: KEMET
   v7_1_number: 50
@@ -31,11 +34,11 @@ identity:
 classification:
   kind:
     value: religion
-    certainty: 0.7
+    certainty: 0.5
     cites:
     - source: S1
-      locator: History of modern Paganism
-    how_known: Britannica names groups that 'worshipped pre-Christian deities from areas like ... Egypt', 'sometimes calling themselves “reconstructionists”'. The name Kemetism is not in the source.
+      locator: FAQ
+    how_known: 'P45 lower tier: own statement.'
   family:
     value: TODO
   parent_traditions:
@@ -47,12 +50,23 @@ origins:
   founding_region:
     value: TODO
   founders_or_key_figures:
-    value: TODO
+    value:
+    - Rev. Tamara Siuda (Nisut Hekatawy)
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: FAQ
+    how_known: 'P45 lower tier: own statement; for Kemetic Orthodoxy only.'
   key_texts: []
 metaphysics:
   god_nature_relation:
-    value: TODO
-    stance: TODO
+    value: '''We do recognize ourselves as polytheists, as we do acknowledge the existence of, and worship, many gods.'''
+    stance: not addressed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: FAQ
+    how_known: P45 lower tier.
   deity_personal:
     value: TODO
     stance: TODO
@@ -84,20 +98,25 @@ metaphysics:
     value: TODO
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Only modern Paganism in general is described: ''some modern Pagans may believe that the deities invoked literally exist, whereas others regard them as symbolic or archetypal images'' (S1). Not fixed for this movement.'
-  B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: The FAQ affirms that many gods exist but does not place them in or beyond nature (S1).
+  B_cause:
+    value: 1
+    rationale: '''When Netjer interacts with the Kemetic Orthodox within a ritual context, it is very intimate, personal, and face-to-face, more often than not in the form of Saq, or oracular, full trance possessions''.'
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: FAQ
+    how_known: P45 cap 0.5. Covers Kemetic Orthodoxy, one organization within Kemetism.
   C_ledger:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
   D_authority:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
   E_scope:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
 epistemology:
   value: TODO
 ethics:
@@ -150,20 +169,19 @@ coding_guidance:
   neighbors: []
 review:
   data_quality_flags:
-  - v7.1 table 4 label is truncated; v7_1_label is taken from the section 7 scoring note.
-  - 'Thin: one sentence in a general article; no source on this movement itself. P45 candidates not yet searched.'
+  - 'P45 lower tier only: the House of Netjer’s own FAQ (Kemetic Orthodoxy, one organization; the FAQ says it is not a Neo-Pagan group). Capped at 0.5.'
   open_questions:
-  - A source on Kemetism itself (encyclopedia or P45).
+  - 'Leads: Krogh & Pillifant 2004, Sociology of Religion 65(2) (abstract: Kemetic Orthodoxy "is monistic ... based on ritual authority"); Harrison 2017 chapter. Not read in full.'
   - Adherents are TODO.
 sources:
 - id: S1
-  type: tertiary
-  kind: encyclopedia
-  author: Ethan Doyle White
-  citation: 'Doyle White, Ethan. "Modern Paganism." Encyclopaedia Britannica. https://www.britannica.com/topic/Neo-Paganism. Wayback Machine snapshot 2026-10-10 14:10:40 UTC: https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism.'
-  url: https://www.britannica.com/topic/Neo-Paganism
+  type: primary
+  kind: institutional page
+  author: The House of Netjer
+  citation: The House of Netjer. "Frequently Asked Questions." Kemet.org (Kemetic Orthodoxy). https://www.kemet.org/faq.
+  url: https://www.kemet.org/faq
   accessed: '2026-10-15'
-  reliability_note: 'Signed article on modern Paganism in general; names Greek and Egyptian reconstructionist groups in one sentence only. P44(e): read in the Wayback copy (https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism); live page timed out on 2026-10-15, so no live comparison.'
+  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Site copyright 1993–2020; undated page.'
 ---
 
 # Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) (KEMET)
@@ -172,16 +190,16 @@ sources:
 
 ## Summary
 
-Britannica's 'Modern Paganism' names reconstructionist groups worshipping pre-Christian deities from Egypt, emphasizing 'fidelity to historical and archaeological source material' [S1]. Nothing more specific was found.
+Kemetic Orthodoxy (House of Netjer) describes itself as polytheist: 'we do acknowledge the existence of, and worship, many gods' [S1]. P45 lower tier.
 
 ## Core metaphysics
 
-Not sourced for this movement.
+Many gods; ritual possession [S1].
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD.
-- B, C, D, E UNKNOWN.
+- B 1 (0.5, P45).
+- A, C, D, E UNKNOWN.
 
 ## Schools and variants
 
@@ -193,7 +211,7 @@ TODO
 
 ## Coding guidance
 
-Self-identified only.
+Self-identified Kemetic / Kemetic Orthodox.
 
 ## v7.1 scoring note
 
@@ -203,7 +221,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Source on the movement itself.
+- Scholarly leads not read.
 - Adherents are TODO.
 
 ## Research log
@@ -212,3 +230,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
+- 2026-10-15 (S8 audit fix): generic modern-Paganism sentence dropped; re-sourced from the movement’s own published statement under P45(a), capped at 0.5.

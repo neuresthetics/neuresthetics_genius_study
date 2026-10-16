@@ -1,5 +1,14 @@
 # Changelog
 
+
+## 2026-10-15 — S8 audit fixes (Grok Bot)
+
+- SHINTO: read the later pages of the signed article (Wayback, P44(e)). B is now 2 @0.5, alt 1 (prayers for the safety of the state, thanks for kami’s protection, Motoori’s absolute faith). A how_known now notes that Hirata's creator god was "not accepted into the main current", and musubi is the stated reason for alternative 2.
+- HINDU: C changes from 3 @0.5 to BELOW_THRESHOLD, alt 3. IEP: karma is "not a sufficient criterion … likely not a necessary condition".
+- HELLEN: dropped the generic Britannica sentence and re-sourced from YSEE’s own About page under P45(a). All axes are UNKNOWN (A changes from 3 to UNKNOWN). Flagged as P45 lower tier.
+- KEMET: re-sourced from the kemet.org FAQ (House of Netjer) under P45(a). A changes to UNKNOWN; B is 1 @0.5 (oracular possession). Flagged as P45 lower tier.
+- Counts are unchanged: 60 / 77 systems sourced.
+
 ## v8 (in progress)
 
 ### Systems batch S9 (2026-10-15, unreviewed)

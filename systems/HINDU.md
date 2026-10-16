@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S8 audit fix: C 3 @0.5 -> BELOW_THRESHOLD (alt 3).'
 identity:
   id: HINDU
   v7_1_number: 47
@@ -106,17 +109,15 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: 3
-    rationale: 'Karma: causal consequences of morally significant past choices.'
-    certainty: 0.5
-    cites: &id001
-    - source: S2
-      locator: §1.a.i
-    how_known: 'Karma rule (P44(d)): an impersonal moral ledger is C 3 @0.5, alternative 4. Theistic schools may add a divine overseer (alternative not scored).'
+    value: BELOW_THRESHOLD
+    how_known: 'IEP: ''Karma is not a sufficient criterion of Hinduism, and it likely is not a necessary condition either''; ''the doctrine of karma seems to be absent from much of the Vedas'' (S2). Members differ (P44(b)).'
+    note: 'Alternative: 3 (P44(d) for schools that state karma).'
     alternatives:
-    - value: 4
+    - value: 3
       note: Named alternative.
-      cites: *id001
+      cites:
+      - source: S2
+        locator: §1.a.i
   D_authority:
     value: BELOW_THRESHOLD
     how_known: Hindu philosophy shares 'a textual connection to certain core Hindu religious texts (the Vedas)', but Sāṅkhya 'does not explicitly attempt to align itself with the authority of the Vedas' (S2).
@@ -219,7 +220,7 @@ Varied; karma common but not unique [S2].
 ## Position on the LIO axes
 
 - A, D BELOW_THRESHOLD.
-- C 3 (0.5, alt 4; P44(d)).
+- C BELOW_THRESHOLD (alt 3).
 - B, E UNKNOWN.
 
 ## Schools and variants
@@ -251,3 +252,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
+- 2026-10-15 (S8 audit fix): C BELOW_THRESHOLD.

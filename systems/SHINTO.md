@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S8 audit fix: B UNKNOWN -> 2 @0.5 (alt 1) from the full article; A how_known adds Hirata and musubi.'
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -106,14 +109,29 @@ lio_axes:
     cites: &id001
     - source: S1
       locator: introduction; Early clan religion
-    how_known: '0.5: gods within nature fit 3 (as JAIN, CHNFOLK); kami of ideas such as creation make 2 the alternative.'
+    - source: S2
+      locator: Fukko Shintō
+    how_known: '0.5: gods within nature fit 3 (as JAIN, CHNFOLK); kami of ideas such as creation make 2 the alternative. Full read: Hirata''s creator god and other-world retribution ''were not accepted into the main current of Shintō''; Motoori''s musubi, ''the mystical power of becoming or of creation'', is the reason for alternative 2.'
     alternatives:
     - value: 2
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    value: 2
+    rationale: 'Petitionary prayer to protecting kami: ''prayers were offered for the safety of the state and people''; children visit the shrine ''to give thanks for kami’s protection''; Motoori''s ''absolute faith—according to which all problems beyond human capability were turned over to kami''.'
+    certainty: 0.5
+    cites: &id002
+    - source: S3
+      locator: Political and social roles
+    - source: S4
+      locator: rites of passage
+    - source: S2
+      locator: Fukko Shintō
+    how_known: '0.5 (S8 audit ruling): protection and answered prayer, with no doctrine of miracles stated. Alternative 1.'
+    alternatives:
+    - value: 1
+      note: Named alternative.
+      cites: *id002
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -211,6 +229,30 @@ sources:
   url: https://www.britannica.com/topic/Shinto
   accessed: '2026-10-15'
   reliability_note: 'Signed article (Kokugakuin emeritus professor); introduction to early history read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto); live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  author: Naofusa Hirai; Britannica Editors
+  citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Shintō reaction against Buddhism." Encyclopaedia Britannica. https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism. Wayback Machine snapshot 2025-11-25 14:48:08 UTC: https://web.archive.org/web/20251125144808/https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism.'
+  url: https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism
+  accessed: '2026-10-15'
+  reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback copy (https://web.archive.org/web/20251125144808/https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism); live page not compared.'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  author: Naofusa Hirai; Britannica Editors
+  citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Political and social roles." Encyclopaedia Britannica. https://www.britannica.com/topic/Shinto/Political-and-social-roles. Wayback Machine snapshot 2025-10-08 20:43:06 UTC: https://web.archive.org/web/20251008204306/https://www.britannica.com/topic/Shinto/Political-and-social-roles.'
+  url: https://www.britannica.com/topic/Shinto/Political-and-social-roles
+  accessed: '2026-10-15'
+  reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback copy (https://web.archive.org/web/20251008204306/https://www.britannica.com/topic/Shinto/Political-and-social-roles); live page not compared.'
+- id: S4
+  type: tertiary
+  kind: encyclopedia
+  author: Naofusa Hirai; Britannica Editors
+  citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Ritual practices and institutions." Encyclopaedia Britannica. https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions. Wayback Machine snapshot 2026-10-06 22:19:34 UTC: https://web.archive.org/web/20261006221934/https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions.'
+  url: https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions
+  accessed: '2026-10-15'
+  reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback copy (https://web.archive.org/web/20261006221934/https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions); live page not compared.'
 ---
 
 # Shinto (SHINTO)
@@ -227,8 +269,8 @@ Kami in nature and people [S1].
 
 ## Position on the LIO axes
 
-- A 3 (0.5, alt 2).
-- B, C, D, E UNKNOWN.
+- A 3 (0.5, alt 2); B 2 (0.5, alt 1).
+- C, D, E UNKNOWN.
 
 ## Schools and variants
 
@@ -259,3 +301,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
+- 2026-10-15 (S8 audit fix): later article pages read; B scored.

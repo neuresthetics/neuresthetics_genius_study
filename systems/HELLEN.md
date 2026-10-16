@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'P44(e) compliance (with the S7 fixes): Wayback snapshot URL and timestamp cited.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S8 audit fix: Britannica generic sentence dropped; re-sourced from YSEE’s own About page under P45(a). All axes UNKNOWN (the statement fixes none). Not reviewed.'
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -31,11 +34,11 @@ identity:
 classification:
   kind:
     value: religion
-    certainty: 0.7
+    certainty: 0.5
     cites:
     - source: S1
-      locator: History of modern Paganism
-    how_known: Britannica names groups that 'worshipped pre-Christian deities from areas like ... Greece', 'sometimes calling themselves “reconstructionists”'. The name Hellenismos is not in the source.
+      locator: About YSEE
+    how_known: YSEE works toward 'the restoration of the Ethnic, Polytheistic Hellenic Tradition, Religion and way of life'. P45 lower tier.
   family:
     value: TODO
   parent_traditions:
@@ -43,7 +46,12 @@ classification:
   related_codes: []
 origins:
   founding_era:
-    value: TODO
+    value: YSEE founded June 1997
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: About YSEE
+    how_known: 'P45 lower tier: own statement.'
   founding_region:
     value: TODO
   founders_or_key_figures:
@@ -84,20 +92,20 @@ metaphysics:
     value: TODO
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Only modern Paganism in general is described: ''some modern Pagans may believe that the deities invoked literally exist, whereas others regard them as symbolic or archetypal images'' (S1). Not fixed for this movement.'
+    value: UNKNOWN
+    how_known: Not addressed in the source read.
   B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
   C_ledger:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
   D_authority:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
   E_scope:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not addressed in the source read.
 epistemology:
   value: TODO
 ethics:
@@ -150,19 +158,19 @@ coding_guidance:
   neighbors: []
 review:
   data_quality_flags:
-  - 'Thin: one sentence in a general article; no source on this movement itself. P45 candidates not yet searched.'
+  - 'P45 lower tier only: YSEE’s own About page (one organization). It names polytheism but fixes no axis.'
   open_questions:
-  - A source on Hellenismos itself (encyclopedia or P45).
+  - 'Leads: Fotiou 2014, "We are the Indians of Greece", Crossroads (doi 10.1353/cro.2014.a783379; author PDF on ysee.gr); Fotiou 2023, Religions 14(6):754 (open access; fetch blocked). Not read.'
   - Adherents are TODO.
 sources:
 - id: S1
-  type: tertiary
-  kind: encyclopedia
-  author: Ethan Doyle White
-  citation: 'Doyle White, Ethan. "Modern Paganism." Encyclopaedia Britannica. https://www.britannica.com/topic/Neo-Paganism. Wayback Machine snapshot 2026-10-10 14:10:40 UTC: https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism.'
-  url: https://www.britannica.com/topic/Neo-Paganism
+  type: primary
+  kind: institutional page
+  author: Supreme Council of Ethnikoi Hellenes (YSEE)
+  citation: Supreme Council of Ethnikoi Hellenes. "About YSEE." https://www.ysee.gr/about-eng.html.
+  url: https://www.ysee.gr/about-eng.html
   accessed: '2026-10-15'
-  reliability_note: 'Signed article on modern Paganism in general; names Greek and Egyptian reconstructionist groups in one sentence only. P44(e): read in the Wayback copy (https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism); live page timed out on 2026-10-15, so no live comparison.'
+  reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5. Undated page.'
 ---
 
 # Hellenismos (Greek Reconstructionist Paganism) (HELLEN)
@@ -171,16 +179,15 @@ sources:
 
 ## Summary
 
-Britannica's 'Modern Paganism' names reconstructionist groups worshipping pre-Christian deities from Greece, emphasizing 'fidelity to historical and archaeological source material' [S1]. Nothing more specific was found.
+YSEE (founded 1997) works toward 'the restoration of the Ethnic, Polytheistic Hellenic Tradition, Religion and way of life in Modern Greek society' [S1]. P45 lower tier.
 
 ## Core metaphysics
 
-Not sourced for this movement.
+Polytheism named; not described [S1].
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD.
-- B, C, D, E UNKNOWN.
+- All UNKNOWN.
 
 ## Schools and variants
 
@@ -192,7 +199,7 @@ TODO
 
 ## Coding guidance
 
-Self-identified only.
+Self-identified Hellenic polytheists.
 
 ## v7.1 scoring note
 
@@ -202,7 +209,7 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Source on the movement itself.
+- Read Fotiou.
 - Adherents are TODO.
 
 ## Research log
@@ -211,3 +218,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
 - 2026-10-15: P44(e) Wayback citation.
+- 2026-10-15 (S8 audit fix): generic modern-Paganism sentence dropped; re-sourced from the movement’s own published statement under P45(a), capped at 0.5.

@@ -207,15 +207,15 @@ Display label status:
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
 | classification | 231 | 85 | 144 | 2 | 0 | 36.8% |
-| origins | 285 | 159 | 124 | 2 | 0 | 55.8% |
-| metaphysics | 847 | 170 | 677 | 0 | 0 | 20.1% |
-| lio_axes | 385 | 108 | 85 | 149 | 43 | 28.1% |
+| origins | 285 | 161 | 122 | 2 | 0 | 56.5% |
+| metaphysics | 847 | 171 | 676 | 0 | 0 | 20.2% |
+| lio_axes | 385 | 109 | 85 | 149 | 42 | 28.3% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 15 | 61 | 1 | 0 | 19.5% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 593 | 1497 | 154 | 43 | 25.9% |
+| **all** | 2287 | 597 | 1494 | 154 | 42 | 26.1% |
 
 ### Systems that are past stub stage
 
@@ -247,15 +247,15 @@ Display label status:
 | EXIST | Existentialism | draft — unreviewed | 4/29 | not started |
 | HEATH | Heathenry (Ásatrú/Norse-Germanic Paganism) | draft — unreviewed | 3/29 | not started |
 | HEDON | Hedonism | draft — unreviewed | 4/29 | not started |
-| HELLEN | Hellenismos (Greek Reconstructionist Paganism) | draft — unreviewed | 1/29 | not started |
-| HINDU | Hinduism (Sanatana Dharma) | draft — unreviewed | 5/29 | not started |
+| HELLEN | Hellenismos (Greek Reconstructionist Paganism) | draft — unreviewed | 2/29 | not started |
+| HINDU | Hinduism (Sanatana Dharma) | draft — unreviewed | 4/29 | not started |
 | HYLO | Hylozoism | draft — unreviewed | 3/29 | not started |
 | IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
 | JAIN | Jainism | draft — unreviewed | 8/29 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
-| KEMET | Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) | draft — unreviewed | 1/29 | not started |
+| KEMET | Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) | draft — unreviewed | 4/29 | not started |
 | LVSAT | LaVeyan Satanism (Church of Satan) | draft — unreviewed | 8/30 | not started |
 | NATAM | Native American Traditions | draft — unreviewed | 1/29 | not started |
 | NIHIL | Nihilism | draft — unreviewed | 4/29 | not started |
@@ -273,7 +273,7 @@ Display label status:
 | SANTER | Santería (Lucumí/Regla de Ocha) | draft — unreviewed | 6/29 | not started |
 | SCEPT | Scepticism (Skepticism) | draft — unreviewed | 4/29 | not started |
 | SECHUM | Secular Humanism | draft — unreviewed | 13/31 | not started |
-| SHINTO | Shinto | draft — unreviewed | 5/29 | not started |
+| SHINTO | Shinto | draft — unreviewed | 6/29 | not started |
 | SOLIP | Solipsism | draft — unreviewed | 2/29 | not started |
 | STOIC | Stoicism | draft — unreviewed | 32/33 | not started |
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
