@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 101 | 128 | 2 | 0 | 43.7% |
 | origins | 285 | 196 | 87 | 2 | 0 | 68.8% |
 | metaphysics | 847 | 176 | 671 | 0 | 0 | 20.8% |
-| lio_axes | 385 | 132 | 5 | 202 | 46 | 34.3% |
+| lio_axes | 385 | 133 | 5 | 202 | 45 | 34.5% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 16 | 60 | 1 | 0 | 20.8% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 677 | 1357 | 207 | 46 | 29.6% |
+| **all** | 2287 | 678 | 1357 | 207 | 45 | 29.6% |
 
 ### Systems that are past stub stage
 
@@ -289,7 +289,7 @@ Display label status:
 | SUNASM | Sunday Assembly | draft — unreviewed | 7/29 | not started |
 | TAO | Taoism (Daoism) | draft — unreviewed | 2/29 | not started |
 | THELEM | Thelema (Crowley/Ordo Templi Orientis) | draft — unreviewed | 6/29 | not started |
-| THEOS | Theosophy | draft — unreviewed | 6/29 | not started |
+| THEOS | Theosophy | draft — unreviewed | 7/29 | not started |
 | THSAT | Theistic Satanism (Joy of Satan or similar) | draft — unreviewed | 1/29 | not started |
 | TRNSHM | Transhumanism | draft — unreviewed | 4/29 | not started |
 | UTIL | Utilitarianism | draft — unreviewed | 4/29 | not started |

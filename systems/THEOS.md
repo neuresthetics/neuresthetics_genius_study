@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Theosophy" (Melton). A 2 (0.5, alt 3); B BELOW_THRESHOLD; D 1 (0.5, alt 2); C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S11 audit fix: B BELOW_THRESHOLD -> 3 @0.5 (alt 2).'
 identity:
   id: THEOS
   v7_1_number: 63
@@ -111,9 +114,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: BELOW_THRESHOLD
-    how_known: Theosophy shows 'a fascination with supernatural or other extraordinary occurrences and with the achievement of higher psychic and spiritual powers', but its Third Object is 'to investigate unexplained laws of Nature and the powers latent in human beings' (S1).
-    note: Alternatives 1 and 3.
+    value: 3
+    rationale: The 'higher psychic and spiritual powers' are studied under the Third Object, 'to investigate unexplained laws of Nature and the powers latent in human beings'; the 'fascination with supernatural or other extraordinary occurrences' is framed as unexplained law, not exemption.
+    certainty: 0.5
+    cites: &id002
+    - source: S1
+      locator: Beliefs
+    - source: S1
+      locator: History
+    how_known: '0.5: the movement’s agreed position (S11 audit); Blavatsky’s phenomena from the Masters give alternative 2.'
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites: *id002
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -121,7 +134,7 @@ lio_axes:
     value: 1
     rationale: Contact with spiritual reality 'through intuition, meditation, revelation, or some other state transcending normal human consciousness'; Blavatsky claimed 'regular contact with a brotherhood of Great Masters'.
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S1
       locator: Beliefs
     - source: S1
@@ -130,7 +143,7 @@ lio_axes:
     alternatives:
     - value: 2
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -213,7 +226,7 @@ Monism with an impersonal transcendent God; emanation [S1].
 
 ## Position on the LIO axes
 
-- A 2 (0.5, alt 3); B BELOW_THRESHOLD; D 1 (0.5, alt 2).
+- A 2 (0.5, alt 3); B 3 (0.5, alt 2); D 1 (0.5, alt 2).
 - C, E UNKNOWN.
 
 ## Schools and variants
@@ -243,3 +256,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S11): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S11 audit fix): B BELOW_THRESHOLD -> 3 @0.5 (alt 2).

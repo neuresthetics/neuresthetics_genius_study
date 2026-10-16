@@ -11,6 +11,15 @@
 
 ## v8 (in progress)
 
+### S11 audit fixes (2026-10-15; S11 audit 18 hold, 1 weaken; S10 fixes confirmed)
+
+- **THEOS**: B BELOW_THRESHOLD → 3 @0.5 (alt 2). The supernatural interest is framed as study of "unexplained laws of Nature", which is the movement's agreed position.
+- **YAZID** C 2, and **ZORO** and **MORMON** D 1, stay as ruled.
+- **Convention**: anything read only as a summary or abstract is a lead, not a source. **RODNOV**: the Aitamurto & Simpson publisher summary moves from sources to leads; S1 is now its only source. A sweep found no other summary-only sources. RODNOV was already all UNKNOWN, so counts are unchanged.
+- **DRUZE**: how_known reworded. The article does report al-Ḥākim proclaimed "a divine figure" and the self-name "unitarians". Added as an A lead; no value change.
+- **MORMON**: D rationale title corrected to "Doctrine and Covenants".
+- Counts (P46) are unchanged: 66 / 77 sourced, 10 sourced but unscored, 1 stub.
+
 ### Systems batch S12 (2026-10-15, unreviewed)
 
 - **THSAT** (thin: Britannica "Satanism", Doyle White; a few sentences on theistic Satanists): all UNKNOWN, so sourced but unscored (P46(a)).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11, thin): Britannica "Druze" (editors) gives origins and practice but no doctrine. All axes UNKNOWN: sourced, unscored (P46(a)). v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S11 audit fix: how_known reworded (al-Ḥākim’s divinity and the self-name reported); A lead added.'
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -100,19 +103,19 @@ metaphysics:
 lio_axes:
   A_locus:
     value: UNKNOWN
-    how_known: 'Not addressed: the source gives no doctrine (teachings are secret to initiates).'
+    how_known: Not fixed by the source. It reports that early Ismaʿīlī theologians proclaimed 'al-Ḥākim a divine figure' and that the Druze 'call themselves muwaḥḥidūn (“unitarians”)', but gives no stance on this axis; the teachings are secret to initiates.
   B_cause:
     value: UNKNOWN
-    how_known: 'Not addressed: the source gives no doctrine (teachings are secret to initiates).'
+    how_known: Not fixed by the source. It reports that early Ismaʿīlī theologians proclaimed 'al-Ḥākim a divine figure' and that the Druze 'call themselves muwaḥḥidūn (“unitarians”)', but gives no stance on this axis; the teachings are secret to initiates.
   C_ledger:
     value: UNKNOWN
-    how_known: 'Not addressed: the source gives no doctrine (teachings are secret to initiates).'
+    how_known: Not fixed by the source. It reports that early Ismaʿīlī theologians proclaimed 'al-Ḥākim a divine figure' and that the Druze 'call themselves muwaḥḥidūn (“unitarians”)', but gives no stance on this axis; the teachings are secret to initiates.
   D_authority:
     value: UNKNOWN
-    how_known: 'Not addressed: the source gives no doctrine (teachings are secret to initiates).'
+    how_known: Not fixed by the source. It reports that early Ismaʿīlī theologians proclaimed 'al-Ḥākim a divine figure' and that the Druze 'call themselves muwaḥḥidūn (“unitarians”)', but gives no stance on this axis; the teachings are secret to initiates.
   E_scope:
     value: UNKNOWN
-    how_known: 'Not addressed: the source gives no doctrine (teachings are secret to initiates).'
+    how_known: Not fixed by the source. It reports that early Ismaʿīlī theologians proclaimed 'al-Ḥākim a divine figure' and that the Druze 'call themselves muwaḥḥidūn (“unitarians”)', but gives no stance on this axis; the teachings are secret to initiates.
 epistemology:
   value: TODO
 ethics:
@@ -165,8 +168,9 @@ coding_guidance:
   neighbors: []
 review:
   data_quality_flags:
-  - 'Thin: no doctrine in the source; teachings are secret (''Only an elite of initiates ... have access to the secret teachings''). All axes UNKNOWN.'
+  - 'Thin: little doctrine in the source (al-Ḥākim''s divinity and the self-name ''unitarians'' only); teachings are secret. All axes UNKNOWN.'
   open_questions:
+  - 'A lead: the movement began by ''proclaiming al-Ḥākim a divine figure'' and the Druze call themselves ''unitarians'' (S1); a doctrinal source is needed to say what this implies for A.'
   - A signed or peer-reviewed source on Druze doctrine (unity of God, reincarnation).
   - 'Adherents: Britannica says more than 1,000,000 (early 21st century); cite a demographic source.'
 sources:
@@ -190,7 +194,7 @@ The Druze are a 'small Middle Eastern religious sect' who 'call themselves muwa�
 
 ## Core metaphysics
 
-Not described; teachings secret [S1].
+Al-Ḥākim proclaimed 'a divine figure'; self-name 'unitarians'; teachings secret [S1].
 
 ## Position on the LIO axes
 
@@ -224,3 +228,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S11): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S11 audit fix): how_known reworded (al-Ḥākim’s divinity and the self-name reported); A lead added.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S9 audit fix: A BELOW_THRESHOLD -> UNKNOWN. All axes UNKNOWN: sourced, unscored (P46(a)).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S11 audit fix: publisher summary moved from sources to leads (summary or abstract is a lead, not a source).'
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -35,8 +38,6 @@ classification:
     cites:
     - source: S1
       locator: History of modern Paganism
-    - source: S2
-      locator: abstract
     how_known: 'Britannica: ''a Slavic-oriented religion called Rodnovery''.'
   family:
     value: TODO
@@ -92,7 +93,7 @@ metaphysics:
 lio_axes:
   A_locus:
     value: UNKNOWN
-    how_known: Not addressed for Rodnovery. The sources read speak only of modern Pagans in general and of 'many local and national forms' (S1, S2); that general sentence is not a stance of this movement (S9 audit).
+    how_known: Not addressed for Rodnovery. The sources read speak only of modern Pagans in general (S1); that general sentence is not a stance of this movement (S9 audit).
   B_cause:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -157,8 +158,9 @@ coding_guidance:
   neighbors: []
 review:
   data_quality_flags:
-  - 'Thin: one sentence in a general article plus a P45 abstract; full Element not read.'
+  - 'Thin: one sentence in a general Britannica article (S1). The Aitamurto & Simpson Element is a lead only (summary read).'
   open_questions:
+  - 'Lead (summary only, not a source, per the S11 convention): Aitamurto, Kaarina, and Scott Simpson. Slavic Native Faith. Cambridge Elements. Cambridge: Cambridge University Press. https://doi.org/10.1017/9781009436953. The publisher summary says the movement ''is comprised of many local and national forms'' sharing ''a primary emphasis on Slavic identity''. Read the full text.'
   - 'Lead for A: Britannica on modern Paganism in general says some take deities as literal and others as symbolic (S1); check in Aitamurto & Simpson whether this holds for Rodnovery.'
   - Read Aitamurto & Simpson in full.
   - Adherents are TODO.
@@ -171,14 +173,6 @@ sources:
   url: https://www.britannica.com/topic/Neo-Paganism
   accessed: '2026-10-15'
   reliability_note: 'Signed article on modern Paganism in general; Rodnovery named in one sentence. P44(e): read in the Wayback copy (https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism); live page timed out on 2026-10-15, so no live comparison.'
-- id: S2
-  type: secondary
-  kind: scholarly book
-  author: Kaarina Aitamurto; Scott Simpson
-  citation: 'Aitamurto, Kaarina, and Scott Simpson. Slavic Native Faith. Cambridge Elements. Cambridge: Cambridge University Press. https://doi.org/10.1017/9781009436953.'
-  url: https://www.cambridge.org/core/elements/slavic-native-faith/C6AC26C0A15F84A0D7D8243B60C362F7
-  accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier (b): peer-reviewed scholarly Element defining the movement; publisher summary only read (full text not open; published online 31 March 2026). Capped at 0.5.'
 ---
 
 # Rodnovery (Slavic Native Faith) (RODNOV)
@@ -187,7 +181,7 @@ sources:
 
 ## Summary
 
-Rodnovery is a modern Pagan movement in Slavic countries [S1]; its forms 'all share a primary emphasis on Slavic identity and cherish nativeness as a sacred value' [S2].
+Rodnovery is a modern Pagan movement in Slavic countries [S1].
 
 ## Core metaphysics
 
@@ -226,3 +220,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S9): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
 - 2026-10-15 (S9 audit fix): A UNKNOWN; record is sourced, unscored under P46(a).
+- 2026-10-15 (S11 audit fix): publisher summary moved from sources to leads (summary or abstract is a lead, not a source).

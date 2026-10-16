@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Church of Jesus Christ of Latter-day Saints" (Melton), introduction and Scriptures pages. A 1 (0.5, alt 0); C 1 (0.5, alt 0); D 1 (0.5, alt 0); B, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S11 audit fix: title corrected to Doctrine and Covenants.'
 identity:
   id: MORMON
   v7_1_number: 71
@@ -126,7 +129,7 @@ lio_axes:
       cites: *id002
   D_authority:
     value: 1
-    rationale: '''belief in continuing revelation''; church presidents are ''regarded as prophets'', and their revelations are added to the Doctrines and Covenants.'
+    rationale: '''belief in continuing revelation''; church presidents are ''regarded as prophets'', and their revelations are added to the Doctrine and Covenants.'
     certainty: 0.5
     cites: &id003
     - source: S1
@@ -261,3 +264,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S11): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S11 audit fix): title corrected to Doctrine and Covenants.
