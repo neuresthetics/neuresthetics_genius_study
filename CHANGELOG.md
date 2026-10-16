@@ -11,6 +11,13 @@
 
 ## v8 (in progress)
 
+### S12 audit fixes; systems pass complete (2026-10-15; S12 audit 17 hold, 1 weaken; S11 fixes confirmed)
+
+- **P45(b) amended** (Jason's ruling) in OPEN_DECISIONS and CODING_GUIDE §11. It now reads "peer-reviewed scholarship, or a signed, editor-commissioned scholarly reference entry (still capped at 0.5 and flagged)".
+- **RAEL** stays sourced. The CDAMM citation now names the editors (Crossley and Lockhart) and describes the entry as a commissioned, edited scholarly dictionary entry, not as peer-reviewed. Values are unchanged.
+- **THSAT** stays one code (ruling).
+- **Systems pass complete.** All 77 systems were worked in batches S1–S12, and every batch was blind-audited with its fixes applied. Final counts (P46): **66 sourced, 10 sourced but unscored, 1 stub** (4THWAY, until a full text is read).
+
 ### S11 audit fixes (2026-10-15; S11 audit 18 hold, 1 weaken; S10 fixes confirmed)
 
 - **THEOS**: B BELOW_THRESHOLD → 3 @0.5 (alt 2). The supernatural interest is framed as study of "unexplained laws of Nature", which is the movement's agreed position.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S12, P45 lower tier): filled from Flaherty, "International Raëlian Movement", CDAMM (Cambridge). A 4 (0.5, P44(a)); D 1 (0.5, alt 2); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'S12 audit fix: CDAMM described as a commissioned, edited scholarly dictionary entry (amended P45(b)), not peer-reviewed. Values unchanged.'
 identity:
   id: RAEL
   v7_1_number: 76
@@ -177,7 +180,7 @@ coding_guidance:
   neighbors: []
 review:
   data_quality_flags:
-  - 'P45 lower tier only: one signed CDAMM entry. Capped at 0.5.'
+  - 'P45 lower tier only: one signed, editor-commissioned CDAMM dictionary entry (not peer-reviewed). Capped at 0.5.'
   open_questions:
   - 'Leads (not read in full): Chryssides, "Is God a Space Alien? The Cosmology of the Raëlian Church", Culture and Cosmos (doi 10.46472/cc.0104.0207); Palmer & Sentes, Cambridge Companion chapter (doi 10.1017/ccol9780521196505.012).'
   - Adherents are TODO.
@@ -186,10 +189,10 @@ sources:
   type: secondary
   kind: encyclopedia
   author: Robert Pearson Flaherty
-  citation: 'Flaherty, Robert Pearson. "International Raëlian Movement." Critical Dictionary of Apocalyptic and Millenarian Movements (CDAMM), Centre for the Critical Study of Apocalyptic and Millenarian Movements, University of Cambridge, 15 January 2021. https://doi.org/10.17863/CAM.121515. Read in Wayback snapshot 2026-03-07 18:06:21 UTC: https://web.archive.org/web/20260307180621/https://www.cdamm.org/articles/international-raelian-movement.'
+  citation: 'Flaherty, Robert Pearson. "International Raëlian Movement." In James Crossley and Alastair Lockhart (eds.), Critical Dictionary of Apocalyptic and Millenarian Movements (CDAMM), Centre for the Critical Study of Apocalyptic and Millenarian Movements, University of Cambridge, 15 January 2021. https://doi.org/10.17863/CAM.121515. Read in Wayback snapshot 2026-03-07 18:06:21 UTC: https://web.archive.org/web/20260307180621/https://www.cdamm.org/articles/international-raelian-movement.'
   url: https://www.cdamm.org/articles/international-raelian-movement
   accessed: '2026-10-15'
-  reliability_note: 'P45 lower tier (b): signed scholarly reference entry (Cambridge research centre); no Britannica, SEP or IEP entry found. Claims capped at 0.5. The page does not state its review process; flag for the auditor whether CDAMM counts as peer-reviewed.'
+  reliability_note: 'P45 lower tier (b), as amended 2026-10-15: a signed, editor-commissioned scholarly reference entry (commissioned and edited by CenSAMM, Cambridge; editors James Crossley and Alastair Lockhart). Not described as peer-reviewed. No Britannica, SEP or IEP entry found. Claims capped at 0.5.'
 ---
 
 # Raëlism (Raëlian Movement) (RAEL)
@@ -237,3 +240,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S12): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (S12 audit fix): source description corrected under amended P45(b).
