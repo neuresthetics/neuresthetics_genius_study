@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Zoroastrianism" (Duchesne-Guillemin), introduction, Beliefs and mythology, and Cosmology pages. A 1 (0.5, alt 0); C 0 (0.7, alt 1); B, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
 identity:
   id: ZORO
   v7_1_number: 67
@@ -112,7 +115,7 @@ lio_axes:
       cites: *id001
   B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
   C_ledger:
     value: 0
     rationale: The soul crosses 'the Bridge of the Requiter. It leads the good souls to paradise, but the bad ones fall into hell'; 'The soul has also to undergo a judgment; it appears before Mithra and his two companions'.
@@ -185,6 +188,7 @@ review:
   data_quality_flags: []
   open_questions:
   - Adherents are TODO.
+  - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
 sources:
 - id: S1
   type: tertiary
@@ -256,3 +260,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S11): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. ZORO: Britannica Zoroastrianism pages re-searched: Asha–Druj presented as moral dualism (truth–falsehood) and cosmic battle, not a stance on law vs. exception. Encyclopaedia Iranica 'AŠA' tried (lead, P45(b) candidate): 403 from the box, no Wayback snapshot. B stays UNKNOWN.

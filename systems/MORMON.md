@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S11 audit fix: title corrected to Doctrine and Covenants.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
 identity:
   id: MORMON
   v7_1_number: 71
@@ -114,7 +117,7 @@ lio_axes:
       cites: *id001
   B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
   C_ledger:
     value: 1
     rationale: '''people’s futures are determined by their own actions as well as by the grace of God''; afterlife kingdoms (celestial, terrestrial, ''telestial'') and ''some degree of glory'' for nearly all.'
@@ -200,6 +203,7 @@ review:
   open_questions:
   - Community of Christ differs on some revelations (S2); not split.
   - 'Adherents: Britannica says more than 16 million (early 21st century); cite a demographic source.'
+  - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
 sources:
 - id: S1
   type: tertiary
@@ -265,3 +269,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S11): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
 - 2026-10-15 (S11 audit fix): title corrected to Doctrine and Covenants.
+- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. MORMON: Britannica LDS page and Scriptures page re-searched: only 'laying on of hands for the gifts of the Holy Spirit'; no statement on miracles or natural law. B stays UNKNOWN.

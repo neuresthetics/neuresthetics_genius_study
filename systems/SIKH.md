@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -18,6 +18,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10): filled from Britannica "Sikhism" (McLeod), introduction and Guru Nanak pages. A 2 (0.5, alt 1); D 1 (0.5); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
 identity:
   id: SIKH
   v7_1_number: 62
@@ -113,7 +116,7 @@ lio_axes:
       cites: *id001
   B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -185,6 +188,7 @@ review:
   open_questions:
   - 'Karma and the moral ledger: not in the pages read.'
   - 'Adherents: Britannica says nearly 25 million (early 21st century); cite a demographic source.'
+  - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
 sources:
 - id: S1
   type: tertiary
@@ -249,3 +253,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. SIKH: Britannica Sikhism (McLeod) main, Guru Nanak and Sikh practice pages re-searched for miracle, hukam, divine order, petition: only janam-sakhi 'miracles and wonder stories' (hagiography, not doctrine) and Ardas as a set prayer. No B statement. B stays UNKNOWN.

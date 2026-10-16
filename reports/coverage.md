@@ -209,13 +209,13 @@ Display label status:
 | classification | 231 | 101 | 128 | 2 | 0 | 43.7% |
 | origins | 285 | 196 | 87 | 2 | 0 | 68.8% |
 | metaphysics | 847 | 176 | 671 | 0 | 0 | 20.8% |
-| lio_axes | 385 | 133 | 5 | 202 | 45 | 34.5% |
+| lio_axes | 385 | 134 | 5 | 201 | 45 | 34.8% |
 | epistemology | 77 | 13 | 64 | 0 | 0 | 16.9% |
 | ethics | 77 | 16 | 60 | 1 | 0 | 20.8% |
 | practice | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | science | 154 | 20 | 134 | 0 | 0 | 13.0% |
 | adherents | 77 | 3 | 74 | 0 | 0 | 3.9% |
-| **all** | 2287 | 678 | 1357 | 207 | 45 | 29.6% |
+| **all** | 2287 | 679 | 1357 | 206 | 45 | 29.7% |
 
 ### Systems that are past stub stage
 
@@ -257,7 +257,7 @@ Display label status:
 | HYLO | Hylozoism | draft — unreviewed | 3/29 | not started |
 | IDEAL | Idealism | draft — unreviewed | 3/29 | not started |
 | ISLAM | Islam | draft — unreviewed | 32/32 | not started |
-| JAIN | Jainism | draft — unreviewed | 8/29 | not started |
+| JAIN | Jainism | draft — unreviewed | 9/29 | not started |
 | JUDA | Judaism | draft — unreviewed | 36/36 | not started |
 | KANT | Kantianism | draft — unreviewed | 12/31 | not started |
 | KEMET | Kemetism (Kemetic Orthodoxy/Egyptian Reconstructionism) | draft — unreviewed | 4/29 | not started |

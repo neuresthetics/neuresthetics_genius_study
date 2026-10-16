@@ -1,6 +1,19 @@
 # Changelog
 
 
+## 2026-10-15 — targeted A/B pass, batch T1 (Grok Bot)
+
+- Plan (Jason's targeted pass). Scope: systems with exactly one of A_locus or B_cause UNKNOWN (29 at 7827dad; the brief said 31), plus the 5 BELOW_THRESHOLD on both A and B (BUDDH, HYLO, TAO, NATAM, CHAOSM), where a source can fix one axis. Order: major world religions first, then roster order. 34 systems, batches of 6:
+  - T1: HINDU, SIKH, ZORO, MORMON, BAHAI, JAIN
+  - T2: BUDDH, AGNOS, EMPIR, RATN, SUNASM, PRAG
+  - T3: TRNSHM, ABSURD, EXIST, NIHIL, OBJCT, SCEPT
+  - T4: UTIL, PANPSY, IDEAL, HYLO, TAO, HEATH
+  - T5: KEMET, ABORIG, NATAM, SANTER, CHAOSM, HERMET
+  - T6: YAZID, FALUNG, RAEL, SCIENT
+- JAIN: B changes from UNKNOWN to 3 @0.5, alt 2. IEP "Jain Philosophy": "there is no being outside it exercising control over it"; worshipped in-world gods give the alternative. JAIN now has A and B scored.
+- HINDU, SIKH, ZORO, MORMON, BAHAI: B stays UNKNOWN; the searches are logged in each research log. No source found that fixes B.
+- Counts are unchanged: 66 / 77 systems sourced.
+
 ## 2026-10-15 — S8 audit fixes (Grok Bot)
 
 - SHINTO: read the later pages of the signed article (Wayback, P44(e)). B is now 2 @0.5, alt 1 (prayers for the safety of the state, thanks for kami’s protection, Motoori’s absolute faith). A how_known now notes that Hirata's creator god was "not accepted into the main current", and musubi is the stated reason for alternative 2.

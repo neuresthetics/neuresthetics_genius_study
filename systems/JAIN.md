@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -24,6 +24,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S7 audit fix: rotating Britannica bylines noted (P44(e)).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1: B_cause UNKNOWN -> 3 (0.5, alt 2) from IEP "Jain Philosophy" (S1).'
 identity:
   id: JAIN
   v7_1_number: 37
@@ -121,20 +124,29 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    value: 3
+    rationale: 'Scored on the system''s account of nature: ''The universe is eternal, matter and souls being equally uncreated. The universe contains gods who may be worshipped for various reasons, but there is no being outside it exercising control over it.'' (S1). An uncreated, eternal universe with no outside controller, run by karma, leans to law. Not 4: the same sentence says gods inside the universe ''may be worshipped for various reasons'', which leaves room for petition.'
+    certainty: 0.5
+    cites: &id002
+    - source: S1
+      locator: metaphysics section
+    how_known: '0.5: the source fixes the absence of external control but does not state that there are no special cases. Alternative 2 (petition to in-world gods).'
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites: *id002
   C_ledger:
     value: 3
     rationale: Karma and rebirth govern gods and humans alike; no judging creator.
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S1
       locator: metaphysics
     how_known: 'Karma rule (P44(d)): an impersonal moral ledger is C 3 @0.5, alternative 4. Karma: impersonal, but still a moral ledger.'
     alternatives:
     - value: 4
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   D_authority:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -233,8 +245,8 @@ Eternal uncreated universe; gods within it subject to karma [S1].
 
 ## Position on the LIO axes
 
-- A 3 (0.5, alt 4), C 3 (0.5, alt 4), E 4 (0.5).
-- B, D UNKNOWN.
+- A 3 (0.5, alt 4), B 3 (0.5, alt 2), C 3 (0.5, alt 4), E 4 (0.5).
+- D UNKNOWN.
 
 ## Schools and variants
 
@@ -265,3 +277,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S6): read the listed sources; quotations checked word for word against the fetched page text. Britannica Top Questions (AI-generated) not used. Axes under P44; PANDEI and PANEND under P45.
 - 2026-10-15 (S6 audit fix): C_ledger cites P44(d). Britannica byline corrected.
 - 2026-10-15 (S7 audit fix): byline note.
+- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. JAIN: IEP S1 gives B (quote above). Britannica Jainism (Shah, Wayback 20260921161404) read: no B statement; Cosmology section snapshot not retrievable.

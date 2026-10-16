@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -21,6 +21,9 @@ record:
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S7 audit fix: Wayback snapshot URL and timestamp cited under P44(e).'
+  - date: '2026-10-15'
+    by: Grok Bot
+    summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
 identity:
   id: BAHAI
   v7_1_number: 39
@@ -126,7 +129,7 @@ lio_axes:
       cites: *id001
   B_cause:
     value: UNKNOWN
-    how_known: The article does not discuss miracles or intervention.
+    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
@@ -205,6 +208,7 @@ review:
   open_questions:
   - A source on reason, science and miracles in Bahāʾī teaching (B, D).
   - Adherents are TODO.
+  - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
 sources:
 - id: S1
   type: tertiary
@@ -262,3 +266,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
 - 2026-10-15 (S7 audit fix): P44(e) Wayback citation.
+- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. BAHAI: Britannica 'Bahāʾī Faith' (Wayback 20261011105553) read: byline 'Britannica Editors' (unsigned) and no passage on science, reason or miracles. No signed source found; Iranica 'Bahaism' listed as external lead. B stays UNKNOWN.
