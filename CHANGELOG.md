@@ -11,6 +11,16 @@
 
 ## v8 (in progress)
 
+### Systems batch S10 (2026-10-15, unreviewed)
+
+- **VODUN** (Britannica "Vodou", McAlister; Haitian Vodou only): A 1 at 0.5 (alt 2); B 1 at 0.5 (alt 0); E 1 at 0.5; C, D UNKNOWN.
+- **ANTHRO** (thin: Britannica "Anthroposophy", editors, one paragraph): D BELOW_THRESHOLD; rest UNKNOWN.
+- **CHAOSM** (P45 lower tier: Meletiadis, *Aries* 25(1), peer-reviewed): A, B BELOW_THRESHOLD; rest UNKNOWN.
+- **4THWAY**: left as a stub. Britannica's Gurdjieff biography (editors) states no metaphysics, and no P45 source was read.
+- **HERMET** (thin: Britannica "Hermetic writings", editors): A 1 at 0.5 (alt 2); D 1 at 0.5 (alt 0); B, C, E UNKNOWN.
+- **SIKH** (Britannica "Sikhism", McLeod; introduction and Guru Nanak pages): A 2 at 0.5 (alt 1); D 1 at 0.5; B, C, E UNKNOWN.
+- Britannica read in Wayback copies (P44(e)). Counts: 65 / 77 sourced. v7.1 scores and notes unchanged. No person record changes.
+
 ### Systems batch S9 (2026-10-15, unreviewed)
 
 - **RODNOV** (thin: one sentence in Britannica "Modern Paganism", plus the publisher summary of Aitamurto & Simpson, *Slavic Native Faith*, Cambridge Elements 2026, P45): A BELOW_THRESHOLD; rest UNKNOWN.
