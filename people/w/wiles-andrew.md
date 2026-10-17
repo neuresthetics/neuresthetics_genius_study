@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 83). Basics from Britannica (Britannica Editors, unsigned; body only) and MacTutor (O'Connor and Robertson). Worldview: the 2016 Heidelberg Laureate Forum press conference (Plus magazine transcript), where he declines the question 'Who created this landscape?' and calls mathematics 'discovered'. primary_system UNKNOWN; A UNKNOWN; B BELOW_THRESHOLD (a view on mathematical truth alone, P30); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#18): B BELOW_THRESHOLD now cites P16 (a view on mathematical truth alone), not P30; value unchanged."}
 
 identity:
   id: wiles-andrew
@@ -83,7 +84,7 @@ worldview:
     - {code: PLATO, reason: "Mathematics 'discovered' is a view on mathematical truth only, not a worldview code."}
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "(interview) The one question about a creator was declined: 'Well, mathematicians are not that philosophical. (Laughter) We're artists, we just enjoy it and we leave it' (S3). Nothing else read."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "(interview) A mathematician with no listed contribution about physical or natural systems needs a statement about nature (P30). The only statement read is on mathematical truth: 'I don't think I know a mathematician who doesn't think that it's discovered' (S3). A view on mathematical truth alone gives BELOW_THRESHOLD (P30)."}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "(interview) A mathematician with no listed contribution about physical or natural systems, so not a scientist (P30), and neither P33 nor P35 applies; B needs a statement about nature (P16). The only statement read is on mathematical truth: 'I don't think I know a mathematician who doesn't think that it's discovered' (S3). A view on mathematical truth alone gives BELOW_THRESHOLD (P16)."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
@@ -97,7 +98,7 @@ worldview:
       kind: "recorded interview"
       verified_against: "secondary quotation"
       verified_on: 2026-10-17
-      note: "On mathematical truth only (P30)."
+      note: "On mathematical truth only (P16)."
     - text: "Well, mathematicians are not that philosophical. (Laughter) We're artists, we just enjoy it and we leave it. There are philosophers and people at the more philosophical end of mathematics, there are some who do worry about that kind of thing, but we're not Bertrand Russells."
       cites: [{source: S3, locator: "answer to 'Who created this landscape?'"}]
       date: "2016-09"

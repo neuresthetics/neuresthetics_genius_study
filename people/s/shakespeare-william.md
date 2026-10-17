@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 81). Basics from Britannica (John Russell Brown, Terence Spencer and others, signed; Wayback copies; body only). No worldview statement in his own voice was read: the plays and poems are character or persona speech (P42), and the will's religious preamble was not read. All worldview fields UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): will read (Folger, PROB 1/4); by v8's ruling on RQ1 (on the auditor's advice) its formulaic preamble is lawyer drafting, not his statement (P42); 'only merits of Jesus Christ' recorded under nominal_affiliations as context. A stays UNKNOWN."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#4): primary_system how_known no longer says the will was not read; it now says the will is read (S3)."}
 
 identity:
   id: shakespeare-william
@@ -84,7 +85,7 @@ worldview:
     - {value: "Baptized at Holy Trinity Church, Stratford-upon-Avon (Church of England)", certainty: 0.5, cites: [{source: S1, locator: "'Early life in Stratford'"}], how_known: "Britannica names the parish register; 'Church of England' is the coder's reading of the parish. Context, not a code."}
     - {value: "Will (25 March 1616) commends his soul 'into the hands of God my creator, hoping and assuredly believing through the only merits of Jesus Christ my Saviour to be made partaker of life everlasting' (a Protestant formula)", certainty: 0.5, cites: [{source: S3, locator: "modernized transcription; description"}], how_known: "Context only, not his own statement: v8's ruling on RQ1 (on the auditor's advice) (batch M audit), recorded in OPEN_DECISIONS P42: a formulaic will preamble is lawyer drafting (Francis Collins is named as a creator of the document; Folger calls the preamble 'very formulaic'). 'Protestant formula' is the coder's reading of 'only merits'."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing in his own voice read."}
-  primary_system: {value: UNKNOWN, how_known: "The surviving record is 'mostly gleaned from documents of an official character' (S1). Speeches in the plays are characters' and the Sonnets' speaker is a persona, so neither is attributed to him (P42). The will (1616) was not read; its preamble is formulaic lawyer drafting and is context only (P42, v8's ruling on RQ1 (on the auditor's advice)); see nominal_affiliations."}
+  primary_system: {value: UNKNOWN, how_known: "The surviving record is 'mostly gleaned from documents of an official character' (S1). Speeches in the plays are characters' and the Sonnets' speaker is a persona, so neither is attributed to him (P42). The will (1616) is now read (S3); its preamble is formulaic lawyer drafting and is context only (P42, v8's pick on RQ1 of the batch M audit, on the auditor's advice); see nominal_affiliations."}
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Baptized in the parish church; nothing in his own voice read."}

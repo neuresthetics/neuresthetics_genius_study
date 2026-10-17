@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 86). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from his signature on Humanist Manifesto II (1973), read on the American Humanist Association page (Wayback 20261006044056), whose signers pledge 'general support' 'while not necessarily endorsing every detail'. primary_system SECHUM (0.5, alt ATHE); A 4 (0.5); B 3 (0.5, alt 4; P41 and P35); C 4 (0.5); D 4 (0.5); mid_basin BELOW_THRESHOLD (A at 0.5). Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#15, v8's ruling on RQ2): added his own working-years text, Science and Human Behavior (1953; B.F. Skinner Foundation PDF, read directly): 'we must assume that behavior is lawful and determined' (p. 6) and 'The hypothesis that man is not free is essential to the application of scientific method to the study of human behavior' (p. 447). B 3 → 4 at 0.5, alternative 3. Timing fields now date the first LIO-type evidence to 1953, during the major work."}
 
 identity:
   id: skinner-b-f
@@ -88,7 +89,7 @@ worldview:
   candidate_codes_considered:
     - {code: SECHUM, reason: "Signed a humanist manifesto."}
     - {code: ATHE, reason: "'nontheists ... nature not deity'; the manifesto's wording on God is 'insufficient evidence', not a flat denial."}
-    - {code: DETERM, reason: "Lead only: his behaviourism is often read as determinist; no statement read."}
+    - {code: DETERM, reason: "His 1953 determinism (S4) is a working assumption of method about behaviour; it bears on B, not on the system code (coder's call)."}
   lio_axes:
     A_locus:
       value: 4
@@ -98,14 +99,14 @@ worldview:
       rationale: "No God (P38): 'We find insufficient evidence for belief in the existence of a supernatural'; 'As nontheists, we begin with humans not God, nature not deity'; 'No deity will save us; we must save ourselves.' 'Insufficient evidence' is weaker than a flat denial, which is part of why this is 0.5."
       how_known: "Signed collective text with a 'not every detail' clause, so 0.5."
     B_cause:
-      value: 3
+      value: 4
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "First"}]
-      rationale: "Account of nature (P6): 'Nature may indeed be broader and deeper than we now know; any new discoveries, however, will but enlarge our knowledge of the natural', and the supernatural is 'meaningless or irrelevant'. That rejects intervention but states no exceptionless order (P40), so B 3 at 0.5, alternative 4 (P41). He is also a scientist (P30: reinforcement is a theory about the behaviour of organisms), and working science alone would give the same B 3 at 0.5, alternative 4 (P35)."
-      how_known: "Signed collective text; P41 / P35 cap."
+      cites: [{source: S4, locator: "p. 6"}, {source: S4, locator: "p. 447"}, {source: S2, locator: "First"}]
+      rationale: "v8's ruling on RQ2 of the batch N audit (on the auditor's advice): his own 1953 text says 'If we are to use the methods of science in the field of human affairs, we must assume that behavior is lawful and determined', that science cannot be applied 'to a subject matter which is assumed to move about capriciously' (p. 6), and that 'The hypothesis that man is not free is essential to the application of scientific method to the study of human behavior' (p. 447). That denies the one exception B 3 allows (a free will outside natural law), so B 4 (P40). It is framed as a working assumption of method, not a claim about all of nature, so 0.5 with alternative 3. The manifesto he signed in 1973 (S2) rejects the supernatural in nature, consistent with this."
+      how_known: "His own book, read in the B.F. Skinner Foundation PDF; dated 1953, inside the working years. Methodological framing, so 0.5."
       alternatives:
-        - {value: 4, note: "P41/P35 alternative: no stated exceptionless law.", cites: [{source: S2, locator: "First"}]}
+        - {value: 3, note: "The determinism is stated as a working hypothesis of method ('we must assume'); read as such, there is no stated exceptionless law of nature, and working science alone gives B 3 (P35).", cites: [{source: S4, locator: "p. 6"}]}
     C_ledger:
       value: 4
       basis: written_profession
@@ -123,6 +124,24 @@ worldview:
     E_scope: {value: UNKNOWN, how_known: "Nothing read on the world's order as such (P7); P44(c) applies to systems, not people."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 4 but at 0.5: the A ≥ 3 branch reads A only (P10) and needs 0.7, as for Hawking and Beauvoir."}
   statements:
+    - text: "We cannot apply the methods of science to a subject matter which is assumed to move about capriciously. Science not only describes, it predicts. [...] If we are to use the methods of science in the field of human affairs, we must assume that behavior is lawful and determined."
+      cites: [{source: S4, locator: "p. 6"}]
+      date: "1953"
+      context: "Science and Human Behavior, ch. I, 'The threat to freedom' (S4)."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-17
+      note: "Foundation PDF of the book; page number from its running head."
+    - text: "The hypothesis that man is not free is essential to the application of scientific method to the study of human behavior."
+      cites: [{source: S4, locator: "p. 447"}]
+      date: "1953"
+      context: "Science and Human Behavior, section VI, 'The problem of control' (S4)."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-17
+      note: "Foundation PDF; page number from its running head."
     - text: "We find insufficient evidence for belief in the existence of a supernatural; it is either meaningless or irrelevant to the question of survival and fulfillment of the human race. As nontheists, we begin with humans not God, nature not deity. Nature may indeed be broader and deeper than we now know; any new discoveries, however, will but enlarge our knowledge of the natural."
       cites: [{source: S2, locator: "First"}]
       date: "1973"
@@ -149,7 +168,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-17
   changes_over_life: []
-  coder_notes: "Coder's call. A manifesto signature is his public profession but not his own wording, hence 0.5 throughout. It is dated 1973, after the working years (1938–1971). Leads not read: his autobiography (Particulars of My Life, 1976) on his loss of faith, and the AHA Humanist of the Year award."
+  coder_notes: "Coder's call. A manifesto signature is his public profession but not his own wording, hence 0.5 throughout. The manifesto is dated 1973, after the working years (1938–1971); B rests on his own Science and Human Behavior (1953), inside them. Leads not read: his autobiography (Particulars of My Life, 1976) on his loss of faith, and the AHA Humanist of the Year award."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -162,9 +181,9 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1938–1971", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "First to last dated listed lasting contribution (P29, P30)."}
   age_at_first_lasting_contribution: {value: 34, certainty: 0.5, cites: [{source: S1, locator: "opening; 1938"}], how_known: "1938 − 1904 = 34 (P30)."}
-  first_evidence_of_lio_type_views: {value: "1973: signs Humanist Manifesto II", year: 1973, certainty: 0.5, cites: [{source: S2, locator: "signatories"}], how_known: "Earlier writings not read for this (P30 #7)."}
-  lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S2, locator: "signatories"}], how_known: "1973, after 1971; earlier writings not read."}
-  worldview_during_major_work: {value: UNKNOWN, how_known: "Nothing read from 1938–1971."}
+  first_evidence_of_lio_type_views: {value: "1953: behaviour 'lawful and determined'; 'man is not free' (Science and Human Behavior)", year: 1953, certainty: 0.5, cites: [{source: S4, locator: "p. 6; p. 447"}], how_known: "Earlier writings (1938, 1948) not read for this (P30 #7)."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "1953 falls inside 1938–1971.", certainty: 0.5, cites: [{source: S4, locator: "p. 6"}], how_known: "Dates of what was read."}
+  worldview_during_major_work: {value: "Determinist about behaviour as a working assumption of science (1953); nothing read on God from these years", certainty: 0.5, cites: [{source: S4, locator: "p. 6; p. 447"}], how_known: "His own book."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -187,7 +206,7 @@ review:
   controversies: []
   data_quality_flags:
     - "Britannica article is unsigned (Britannica Editors)."
-    - "Worldview rests on one collective manifesto he signed, not on his own wording."
+    - "A, C and D rest on one collective manifesto he signed, not on his own wording; B rests on his own 1953 book."
   open_questions:
     - "Read Particulars of My Life (1976) and his own essays for a first-person statement on God and nature."
 
@@ -219,6 +238,15 @@ sources:
     accessed: 2026-10-17
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S4
+    type: primary
+    kind: "published work by the subject"
+    author: "B. F. Skinner"
+    citation: "Skinner, B. F. Science and Human Behavior. New York: Macmillan, 1953. Read in the B. F. Skinner Foundation PDF (copyright 2014): https://www.bfskinner.org/wp-content/uploads/2014/02/ScienceHumanBehavior.pdf"
+    url: "https://www.bfskinner.org/wp-content/uploads/2014/02/ScienceHumanBehavior.pdf"
+    accessed: 2026-10-17
+    reliability_note: "The Foundation's PDF of the book, with the book's page numbers in the running heads; quotations checked word for word."
+    used_for: [worldview, timing]
 ---
 
 # B.F. Skinner
@@ -227,7 +255,7 @@ sources:
 
 ## Summary
 
-B.F. Skinner (1904–1990), American behaviourist psychologist [S1]. Draft: primary_system SECHUM (0.5, alt ATHE); A 4 at 0.5; B 3 at 0.5 (alt 4); C 4 at 0.5; D 4 at 0.5; mid_basin BELOW_THRESHOLD. Plotted (faded).
+B.F. Skinner (1904–1990), American behaviourist psychologist [S1]. Draft: primary_system SECHUM (0.5, alt ATHE); A 4 at 0.5; B 4 at 0.5 (alt 3); C 4 at 0.5; D 4 at 0.5; mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 
@@ -243,7 +271,7 @@ Not read.
 
 ## Adult working worldview
 
-Signed Humanist Manifesto II (1973) [S2].
+Behaviour 'lawful and determined'; 'man is not free' (1953) [S4, p. 6; p. 447]. Signed Humanist Manifesto II (1973) [S2].
 
 ## Heritage (context only)
 

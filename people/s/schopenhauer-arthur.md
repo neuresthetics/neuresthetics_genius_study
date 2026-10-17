@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 85). Basics from Britannica (Arthur Hübscher, signed; body only). Worldview from The World as Will and Idea (Haldane and Kemp translation, Gutenberg #38427 and #40868: vol. 1 §§55, 63, 68; vol. 3 ch. L) and SEP 'Arthur Schopenhauer' (Wicks, 2021). primary_system IDEAL (0.5, alt ATHE); A 4 (0.7); B 4 (0.5, alt 3: his own named exception, freedom appearing in the phenomenon in the denial of the will); C 3 (0.5, alt 4); E 3 (0.5, alt 4); mid_basin false (0.7). Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fixes (#7, #8; v8's ruling on RQ1, on the auditor's advice): B 4 → 3 at 0.5, alternative 4. His own named exception, freedom appearing directly in the phenomenon in the denial of the will (§68), is a free will not bound by natural law, so the B 3 rule (CODING_GUIDE §6, P30) gives 3 as the value, as with Kant's noumenal freedom, even though §55 says nature 'admits of no exception'. C 3 now cites the §63 transmigration passage and is labelled the coder's analogy (P44(d) is a systems rule). mid_basin unchanged (false, 0.7)."}
 
 identity:
   id: schopenhauer-arthur
@@ -103,18 +104,20 @@ worldview:
       rationale: "No God (P38): 'With the Pantheists, then, I have certainly that ἑν και παν in common, but not the παν θεος; because I do not go beyond experience' (vol. 3, ch. L), and 'the world exists, with me as with Spinoza, by its inner power and through itself' (same chapter). SEP: 'Within Schopenhauer's vision of the world as Will, there is no God to be comprehended', and his thought 'assumed an explicitly atheistic quality' from 1814 (S3)."
       how_known: "Published main work (vol. 3 of the translation = the 1844 second volume), web copy of a translation, 0.7 ceiling; SEP agrees."
     B_cause:
-      value: 4
+      value: 3
       basis: written_profession
       certainty: 0.5
       cites: [{source: S2, locator: "vol. 1, §55; §68"}]
-      rationale: "Account of nature (P6): 'The whole content of Nature, the collective sum of its phenomena, is thus throughout necessary, and the necessity of every part, of every phenomenon, of every event, can always be proved ... This admits of no exception: it follows from the unrestricted validity of the principle of sufficient reason' (§55). That is the explicit no-exception statement P40 asks for, with no lawgiver behind it. Named alternative 3: he names one exception himself, in man: the denial of the will 'by no means proceeds from suffering with the necessity of an effect from its cause, but the will remains free; for this is indeed the one point at which its freedom appears directly in the phenomenon' (§68), where freedom 'contradicts the phenomenon' yet 'may yet possibly, in his case, appear in the phenomenon also' (§55)."
-      how_known: "Published main work, web copy of a translation; 0.5 because his own stated exception (human, not divine) is a named alternative."
+      rationale: "Account of nature (P6): 'The whole content of Nature, the collective sum of its phenomena, is thus throughout necessary, and the necessity of every part, of every phenomenon, of every event, can always be proved ... This admits of no exception: it follows from the unrestricted validity of the principle of sufficient reason' (§55). That is the explicit no-exception statement P40 asks for, with no lawgiver behind it. But he names one exception himself, in man: the denial of the will 'by no means proceeds from suffering with the necessity of an effect from its cause, but the will remains free; for this is indeed the one point at which its freedom appears directly in the phenomenon' (§68), where freedom 'contradicts the phenomenon' yet 'may yet possibly, in his case, appear in the phenomenon also' (§55). A free will not bound by natural law is the B 3 case (CODING_GUIDE §6, P30), and it gives 3 as the value, not as an alternative, as with Kant's noumenal freedom: B 3 at 0.5, alternative 4 (the §55 no-exception claim). v8's ruling on RQ1 of the batch N audit, on the auditor's advice."
+      how_known: "Published main work, web copy of a translation; 0.5 because his §55 no-exception claim is a named alternative."
+      alternatives:
+        - {value: 4, note: "§55: 'This admits of no exception' (P40), if the §68 freedom is read as outside nature.", cites: [{source: S2, locator: "vol. 1, §55"}]}
     C_ledger:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "vol. 1, §63"}]
-      rationale: "An impersonal moral ledger with no judge: 'eternal justice ... rules not the state but the world ... infallible, fixed, and sure'; 'The punishment must here be so bound up with the offence that both are one'; 'the world itself is the judgment of the world'. He quotes Euripides against a Zeus who records and punishes sins. By analogy with the karma rule (P44(d)): C 3 at 0.5, alternative 4."
+      cites: [{source: S2, locator: "vol. 1, §63 (eternal justice; transmigration passage)"}]
+      rationale: "An impersonal moral ledger with no judge: 'eternal justice ... rules not the state but the world ... infallible, fixed, and sure'; 'The punishment must here be so bound up with the offence that both are one'; 'the world itself is the judgment of the world'. He quotes Euripides against a Zeus who records and punishes sins. In the same section he gives the myth of transmigration as the people's figurative form of this truth, 'sufficient as a guide for conduct': 'all sufferings which in life one inflicts upon other beings must be expiated in a subsequent life in this world, through precisely the same sufferings' (§63). An impersonal karma-type law with no judge reads as C 3 at 0.5, alternative 4; this is the coder's analogy (P44(d) is a rule for systems, not people). He presents the transmigration myth as figurative, not literal, which is another reason for 0.5."
       how_known: "Published main work, web copy; scored by analogy, so 0.5."
     D_authority: {value: UNKNOWN, how_known: "Not scored at this reading; his critique of revelation in vol. 2 (ch. XVII) is a lead."}
     E_scope:
@@ -144,6 +147,15 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-17
       note: "His own named exception; basis of the alternatives."
+    - text: "What is here referred to is the myth of the transmigration of souls. It teaches that all sufferings which in life one inflicts upon other beings must be expiated in a subsequent life in this world, through precisely the same sufferings"
+      cites: [{source: S2, locator: "vol. 1, §63"}]
+      date: "1819"
+      context: "Book IV, §63: the myth in which, he says, the truth behind eternal justice ('Tat twam asi', 'This thou art') was given to the people as a figurative substitute, 'sufficient as a guide for conduct'."
+      axes: [C_ledger]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-17
+      note: "Checked word for word against the Gutenberg text of the translation (#38427)."
     - text: "the world itself is the judgment of the world"
       cites: [{source: S2, locator: "vol. 1, §63"}]
       date: "1819"
@@ -199,7 +211,7 @@ review:
   data_quality_flags:
     - "Main work read in a web copy of a 19th-century translation; German original not compared."
   open_questions:
-    - "Does his own exception (freedom appearing in the phenomenon in the denial of the will, §§55, 68) keep B below 4 under P40? Scored 4 at 0.5 with alternative 3."
+    - "Settled (v8's ruling on RQ1 of the batch N audit, on the auditor's advice): his own exception (freedom appearing in the phenomenon in the denial of the will, §§55, 68) gives B 3 under the B 3 rule, as for Kant; scored 3 at 0.5 with alternative 4."
     - "Check the German original of §55 and ch. 50 (Löhneysen or Hübscher edition)."
 
 sources:
@@ -247,7 +259,7 @@ sources:
 
 ## Summary
 
-Arthur Schopenhauer (1788–1860), German philosopher of the will [S1]. Draft: primary_system IDEAL (0.5, alt ATHE); A 4 at 0.7; B 4 at 0.5 (alt 3); C 3 at 0.5; E 3 at 0.5; mid_basin false (0.7). Plotted (faded).
+Arthur Schopenhauer (1788–1860), German philosopher of the will [S1]. Draft: primary_system IDEAL (0.5, alt ATHE); A 4 at 0.7; B 3 at 0.5 (alt 4); C 3 at 0.5; E 3 at 0.5; mid_basin false (0.7). Plotted (faded).
 
 ## Life and work
 
