@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 87). Basics from Britannica (Michael S.M. and Frieda Fordham, signed; body only). Worldview from the 1959 BBC 'Face to Face' interview (transcript as printed in C.G. Jung Speaking, pp. 424–439, read on a blog) and his letter to The Listener of 21 January 1960 (blog transcription): secondary transcriptions, primary check pending. primary_system BELOW_THRESHOLD (CHRIST leading candidate); A BELOW_THRESHOLD (alt 3); B UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Ruling noted (v8, 2026-10-17): theories of the psyche do not count as science about physical nature for P35, so B stays UNKNOWN; open question closed."}
 
 identity:
   id: jung-carl
@@ -96,7 +97,7 @@ worldview:
     - {code: PANENT, reason: "Only the conditional image 'a God ... just as much dwelling in myself as everywhere else'; not his stated view."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) Asked 'Do you now believe in God?' he answered 'Now? [Pause.] Difficult to answer. I know. I don't need to believe. I know' (S2). His 1960 letter says this did not mean 'I do know a certain God' but 'a factor unknown in itself, which I call \"God\"', and that he will not hypostasize it; only 'if I should venture the illegitimate hypostasis of my image' would he speak 'of a God beyond good and evil, just as much dwelling in myself as everywhere else' (S3). He declines to place God, so A is not fixed. Named alternative 3 (the conditional image)."}
-    B_cause: {value: UNKNOWN, cites: [{source: S4, locator: "§5.3"}], how_known: "Nothing read on law and exception in nature. Synchronicity (with Pauli) is the lead: SEP describes synchronistic events as meaningful 'mind-matter correlations' (S4, §5.3) but gives no wording of his on exceptions. Whether his psychological theories make him a scientist under P30 is an open question; if they do and no statement is found, P35 gives B 3 at 0.5, alternative 4."}
+    B_cause: {value: UNKNOWN, cites: [{source: S4, locator: "§5.3"}], how_known: "Nothing read on law and exception in nature. Synchronicity (with Pauli) is the lead: SEP describes synchronistic events as meaningful 'mind-matter correlations' (S4, §5.3) but gives no wording of his on exceptions. Ruling (v8, 2026-10-17, batch N): theories of the psyche (types, archetypes, the collective unconscious) are not science about physical nature for P35, so no working-science default applies and B stays UNKNOWN until a statement of his own on nature is read."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read; 'Only my experience can be good or evil' (S3) is not about reward or punishment."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
@@ -170,7 +171,7 @@ review:
   data_quality_flags:
     - "Worldview sources are blog transcriptions; primary check pending."
   open_questions:
-    - "Ruling: is a psychologist whose listed contributions are theories of the psyche (types, archetypes, collective unconscious) a scientist under P30, so that P35 applies to B?"
+    - "Settled (v8, 2026-10-17): theories of the psyche do not count as science about physical nature for P35; B stays UNKNOWN."
     - "Check the interview against the film or C.G. Jung Speaking, and the letter against The Listener (21 Jan. 1960, p. 133) or C.G. Jung Letters vol. 2."
     - "Read Synchronicity (1952) for his own wording on causality and exceptions (B)."
 
@@ -260,7 +261,7 @@ Everything in this section is Lane B: labeled belief, not a finding. The circle 
 
 ## Open questions
 
-- Scientist ruling (P30); primary checks; Synchronicity for B.
+- Primary checks; Synchronicity for B (P35 does not apply: theories of the psyche are not science about physical nature).
 
 ## Research log
 
