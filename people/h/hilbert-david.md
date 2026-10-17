@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 91). Basics from Britannica (Irving Kaplansky, signed; body only) and MacTutor (O'Connor and Robertson). Worldview from his Königsberg address 'Naturerkennen und Logik' (1930; Die Naturwissenschaften, pp. 959–963), read in a web transcription. Mathematician, not counted a scientist (P30). primary_system UNKNOWN; A UNKNOWN; B 3 (0.5, alt 4) from an explicit remark on nature ('überall die Einheit der Naturgesetze'); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fix (#23): S2 relabelled an unofficial web copy (cap 0.7; verified_against 'secondary quotation'), print check pending. v8's ruling on RQ O2 (on the auditor's advice): B 3 at 0.5, alternative 4, is allowed under P16 (recorded in OPEN_DECISIONS). Values unchanged."}
 
 identity:
   id: hilbert-david
@@ -88,8 +89,8 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S2, locator: "'Parallelismus von Natur und Denken' passage"}]
-      rationale: "A mathematician needs an explicit remark on nature (P16). The 1930 address gives one: 'wir beobachten die Einheit des Stoffes in der Materie, und wir konstatieren überall die Einheit der Naturgesetze' (we observe the unity of matter, and we find everywhere the unity of the laws of nature), and nature 'comes to meet us ... as if it were ready to reveal its secrets'. A lawful nature everywhere, with no stated no-exception claim (P40) and no denial of miracles: by analogy with P35, B 3 at 0.5, alternative 4 (coder's call)."
-      how_known: "Published address read in a web transcription; translation the coder's. Dated 1930, after the working years."
+      rationale: "A mathematician needs an explicit remark on nature (P16). The 1930 address gives one: 'wir beobachten die Einheit des Stoffes in der Materie, und wir konstatieren überall die Einheit der Naturgesetze' (we observe the unity of matter, and we find everywhere the unity of the laws of nature), and nature 'comes to meet us ... as if it were ready to reveal its secrets'. A lawful nature everywhere, with no stated no-exception claim (P40) and no denial of miracles: B 3 at 0.5, alternative 4 (P16, as ruled on RQ O2: an explicit remark on nature that states a lawful order with no stated no-exception claim gives B 3 at 0.5, alternative 4; this follows P35's logic without being a P35 case)."
+      how_known: "Published address read in an unofficial web copy (cap 0.7, print check pending); translation the coder's. Dated 1930, after the working years (P20), so 0.5 either way. Allowed under P16 by v8's ruling on RQ O2 of the batch O audit (on the auditor's advice)."
       alternatives:
         - {value: 4, note: "No stated exceptionless law (P40).", cites: [{source: S2, locator: "'Parallelismus von Natur und Denken' passage"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}
@@ -103,9 +104,9 @@ worldview:
       context: "Address 'Naturerkennen und Logik' to the Society of German Scientists and Physicians, Königsberg, 1930, printed in Die Naturwissenschaften (28 November 1930), pp. 959–963 (S1 names the address)."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "secondary quotation"
       verified_on: 2026-10-17
-      note: "Unofficial web transcription giving the Naturwissenschaften citation; not checked against the print. Coder's translation in the B rationale."
+      note: "Unofficial web copy of the printed address (its header gives the Naturwissenschaften citation); web-copy cap 0.7 (CODING_GUIDE §7); print check pending. Coder's translation in the B rationale."
   changes_over_life: []
   coder_notes: "Coder's call. B 3 rests on one sentence of a 1930 address, after the working years (1897–1909). If his physics memoirs (kinetic gas theory, radiation; S1) are listed as lasting, he becomes a scientist and P35 gives the same B 3 at 0.5. Lead for A: Constance Reid's Hilbert (1970), not read."
 
@@ -145,7 +146,8 @@ review:
     - "B rests on one sentence read in a web transcription; translation the coder's."
   open_questions:
     - "Read Reid's biography for his religion (A)."
-    - "Check the address against the Naturwissenschaften print."
+    - "Print check pending: check the address against Die Naturwissenschaften (1930), pp. 959–963."
+    - "Lead: the same sentence may bear on E (the same laws everywhere); not scored."
 
 sources:
   - id: S1
@@ -164,7 +166,7 @@ sources:
     citation: "Hilbert, David. \"Naturerkennen und Logik.\" Die Naturwissenschaften (28 November 1930), pp. 959–963. Read in the transcription at https://www.rschr.de/Htm/David_Hilbert_Naturerkennen_und_Logik.htm"
     url: "https://www.rschr.de/Htm/David_Hilbert_Naturerkennen_und_Logik.htm"
     accessed: 2026-10-17
-    reliability_note: "Unofficial web transcription of the printed address; read directly."
+    reliability_note: "Unofficial web copy of the printed address, read directly; web-copy cap 0.7 (CODING_GUIDE §7); print check pending."
     used_for: [worldview, timing, lane_b]
   - id: S3
     type: secondary

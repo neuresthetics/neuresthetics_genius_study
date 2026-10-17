@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 88). Basics from Britannica (Helge Kragh, signed; body only). Worldview from the 1981 U.S. Catholic interview ('God and Carl Sagan', 1 May 1981), read on the U.S. Catholic site. Scientist (P30: planetary atmospheres, nuclear winter). primary_system AGNOS (0.5, alt SECHUM); A BELOW_THRESHOLD (agnostic, no locus view, P20); B 3 (0.5, alt 4; P35); D 4 (0.5); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit: A BELOW_THRESHOLD now also cites P38 (explicit suspension with no stated disbelief). Value unchanged."}
 
 identity:
   id: sagan-carl
@@ -90,7 +91,7 @@ worldview:
     - {code: SECHUM, reason: "Britannica's 'scientifically based belief system'; no membership read."}
     - {code: ATHE, reason: "He denies being an atheist."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) An agnostic with no stated locus view gets A BELOW_THRESHOLD (P20): 'I don't know of any compelling evidence for the old man in the sky', but 'a universe that does not exclude a traditional Western or Eastern god, but that does not require one either' (S2)."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) An agnostic with no stated locus view gets A BELOW_THRESHOLD (P20), and explicit suspension with no stated disbelief stays BELOW_THRESHOLD (P38): 'I don't know of any compelling evidence for the old man in the sky', but 'a universe that does not exclude a traditional Western or Eastern god, but that does not require one either' (S2)."}
     B_cause:
       value: 3
       basis: inference_from_work

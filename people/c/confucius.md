@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 90). Basics from Britannica (Annping Chin, signed; body only) and SEP 'Confucius' (Csikszentmihalyi, 2024). He wrote nothing that survives as his; the Analects was compiled by first- and second-generation disciples (SEP), so its sayings are reported speech (P42, §7) and cannot score alone. primary_system BELOW_THRESHOLD (CONFUC leading candidate); A BELOW_THRESHOLD (Heaven sayings, reported); B UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fix (#20): statement dated to the span 498–484 BCE in its context, noted as undated; the placeholder -492 removed and the date field left out (the schema's date field takes one year, not a span). v8's ruling on RQ O1 (on the auditor's advice): the Analects stays reported speech under P42 (recorded in OPEN_DECISIONS). Values unchanged."}
 
 identity:
   id: confucius
@@ -88,15 +89,14 @@ worldview:
   statements:
     - text: "Heaven has given me this power—this virtue. What can Huan Tui do to me!"
       cites: [{source: S1, locator: "Huan Tui and Kuang paragraph (Analects 7:23)"}]
-      date: "-492"
-      context: "Analects 7:23, on Huan Tui's plan to ambush him during his years of travel (498–484 BCE; S1). The date field is a placeholder inside that span (coder's pick); the event is undated in S1."
+      context: "Analects 7:23, on Huan Tui's plan to ambush him during his years of travel, 498–484 BCE (S1). Undated: S1 gives no year for the event, only the span of the travels, so the date field is left out (the schema's date takes a single year, not a span)."
       axes: [A_locus]
       kind: "reported speech"
       verified_against: "secondary quotation"
       verified_on: 2026-10-17
       note: "Recorded by disciples (S2); reported speech (§7, P42). Britannica calls the Analects 'the most reliable source on Confucius's life'."
   changes_over_life: []
-  coder_notes: "Coder's call. Treated like Hippocrates under P42: the doctrine is known only through a later compilation, so nothing scores. The Analects 7.21 line on not discussing prodigies and spirits is the lead for B but was not read in a cited source."
+  coder_notes: "Coder's call. Treated like Hippocrates under P42: the doctrine is known only through a later compilation, so nothing scores. v8's ruling on RQ O1 (on the auditor's advice) confirms the Analects stays reported speech under P42. The Analects 7.21 line on not discussing prodigies and spirits is the lead for B but was not read in a cited source."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -134,7 +134,7 @@ review:
   data_quality_flags:
     - "Traditional life dates; nothing in his own hand."
   open_questions:
-    - "Ruling check: is the Analects reported speech under P42 (as coded), or does scholarly agreement attribute its core sayings to him?"
+    - "Settled (v8's ruling on RQ O1 of the batch O audit, on the auditor's advice; OPEN_DECISIONS P42): the Analects, a disciples' record of his sayings, stays reported speech; P42's scholarly-agreement clause covers who wrote a text, not a record of sayings."
 
 sources:
   - id: S1

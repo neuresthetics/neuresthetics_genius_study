@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 89). Basics from Britannica (George Markowsky, signed; body only). Worldview from Anthony Liversidge's interview (Omni, August 1987), read in the version printed in Shannon's Collected Papers (IEEE Press, 1993; PDF on gwern.net). primary_system ATHE (0.7); A 4 (0.7); B 3 (0.5, alt 4; P41); mid_basin false (0.7). Plotted (faded on B). Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fixes (#8, #9): the 1987 interview is after the working years (1940–1948), so ATHE and A 4 drop to 0.5 (P20, Hawking precedent); mid_basin false → BELOW_THRESHOLD (A ≥ 3 branch needs 0.7). B cites P35 first (value unchanged). 1938 AIEE paper noted as a working-years lead. Still plotted (faded)."}
 
 identity:
   id: shannon-claude
@@ -78,10 +79,10 @@ worldview:
   primary_system:
     value: ATHE
     basis: recorded_interview
-    certainty: 0.7
+    certainty: 0.5
     cites: [{source: S2, locator: "interview, Wiener question"}]
     rationale: "'I am an atheist to begin with. I believe in evolutionary theory and that we are basically machines, but a very complex type ... A natural device. I see no God involved or anything like that.' Both halves of the ATHE label are stated: no God, and humans as natural devices."
-    how_known: "(interview) One interview, his own words, 0.7 ceiling (P8); no plausible alternative named."
+    how_known: "(interview) One interview, his own words (P8), but from 1987, well after the working years (1940–1948), so 0.5 (P20, Hawking precedent); no plausible alternative named."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: ATHE, reason: "Self-described atheist; humans 'a natural device'."}
@@ -90,23 +91,23 @@ worldview:
     A_locus:
       value: 4
       basis: recorded_interview
-      certainty: 0.7
+      certainty: 0.5
       cites: [{source: S2, locator: "interview, Wiener question"}]
       rationale: "No God (P38): 'I am an atheist to begin with ... I see no God involved or anything like that'; 'I don't happen to be a religious man'."
-      how_known: "(interview) One interview, his own words (P8)."
+      how_known: "(interview) One interview, his own words (P8); dated 1987, after the working years, so 0.5 (P20, Hawking precedent)."
     B_cause:
       value: 3
       basis: recorded_interview
       certainty: 0.5
       cites: [{source: S2, locator: "interview, Wiener question"}]
-      rationale: "Account of nature (P6): humans are 'basically machines', 'A natural device', with 'no God involved' and evolution accepted. That denies intervention in human nature but states no exceptionless order (P40), so B 3 at 0.5, alternative 4 (P41). As a scientist (P30) his working science alone would give the same (P35)."
-      how_known: "(interview) P41 cap."
+      rationale: "Account of nature (P6): humans are 'basically machines', 'A natural device', with 'no God involved' and evolution accepted. He is a scientist (P30: switching theory is a theory about physical circuits), so his working science gives B 3 at 0.5, alternative 4 (P35). His own interview words agree: they deny intervention in human nature but state no exceptionless order (P40), which gives the same B 3 at 0.5, alternative 4 (P41)."
+      how_known: "(interview) P35; P41 gives the same cap."
       alternatives:
-        - {value: 4, note: "P41/P35 alternative: no stated exceptionless law.", cites: [{source: S2, locator: "interview, Wiener question"}]}
+        - {value: 4, note: "P35/P41 alternative: no stated exceptionless law.", cites: [{source: S2, locator: "interview, Wiener question"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
-  mid_basin: {value: false, certainty: 0.7, cites: [{source: S2, locator: "interview, Wiener question"}], how_known: "(interview) A 4 at 0.7: the A ≥ 3 branch reads A only (P10)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "(interview) A 4 but at 0.5: the A ≥ 3 branch reads A only (P10) and needs 0.7, as for Hawking, Skinner and Beauvoir."}
   statements:
     - text: "That's a heavily loaded question! Let me say this. I am an atheist to begin with. I believe in evolutionary theory and that we are basically machines, but a very complex type, far more so than any machine man has made yet. So in a way that's both a Yes and a No. We are kind of an extreme case of mechanical device - by mechanical I don't mean just metals are involved, of course, gears and so on. A natural device. I see no God involved or anything like that."
       cites: [{source: S2, locator: "interview, Wiener question"}]
@@ -126,7 +127,7 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-17
   changes_over_life: []
-  coder_notes: "Coder's call. The interview (1987) is well after the working years (1940–1948), so the scores describe his later view; nothing earlier was read. Counting switching theory as a theory about physical systems (P30) is the coder's call; B is the same either way."
+  coder_notes: "Coder's call. The interview (1987) is well after the working years (1940–1948), so the scores describe his later view; nothing earlier was read. Working-years lead: the 1938 AIEE paper, 'A Symbolic Analysis of Relay and Switching Circuits', Transactions of the American Institute of Electrical Engineers 57 (1938), pp. 713–723 (listed in the Collected Papers bibliography, S2); not read for worldview, and its date may also move the first lasting contribution from 1940 to 1938. Counting switching theory as a theory about physical systems (P30) is the coder's call; B is the same either way."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -201,7 +202,7 @@ sources:
 
 ## Summary
 
-Claude Shannon (1916–2001), American mathematician and electrical engineer, founder of information theory [S1]. Draft: primary_system ATHE (0.7, interview); A 4 at 0.7 (interview); B 3 at 0.5 (alt 4; interview); mid_basin false (0.7). Plotted (faded).
+Claude Shannon (1916–2001), American mathematician and electrical engineer, founder of information theory [S1]. Draft: primary_system ATHE (0.5, interview after the working years); A 4 at 0.5 (interview); B 3 at 0.5 (alt 4; P35); mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 
