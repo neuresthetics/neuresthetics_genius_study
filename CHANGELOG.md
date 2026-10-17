@@ -453,6 +453,11 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - Van Gogh: primary_system BELOW_THRESHOLD. A 0 at 0.5, alt 1, from letter 613 (1888, 'one of his studies that turned out badly'; Van Gogh Museum / Huygens edition). B UNKNOWN. mid_basin UNKNOWN (P19).
   - Shakespeare: nothing attributable (P42: plays and Sonnets are character or persona speech). The will's preamble was not read and is a lead needing a ruling. All UNKNOWN.
   - Era buckets follow first lasting contribution (P2), with a range counted from its start year (Shakespeare 1589). No new decisions.
+- **2026-10-17, stage 3 batch N** (order P32, F 4; drafts, not reviewed; awaiting blind audit): Andrew Wiles, Arthur Schopenhauer, B.F. Skinner, Carl Jung (Antoine Lavoisier, rank 84, already has a record). Plotted (faded): Schopenhauer, Skinner; plotted rises from 39 to 41. Not plotted: Wiles, Jung; not scorable rises from 56 to 58 (P34).
+  - Schopenhauer: IDEAL 0.5, alt ATHE. A 4 at 0.7 ('not the παν θεος', WWR vol. 3 ch. L; SEP Wicks §4). B 4 at 0.5, alt 3: 'This admits of no exception' (WWR §55) meets P40, but he names his own exception, freedom appearing in the phenomenon in the denial of the will (§§55, 68). C 3 at 0.5, alt 4 (eternal justice, §63, by analogy with P44(d)). E 3 at 0.5, alt 4. mid_basin false at 0.7. Haldane–Kemp translation, Gutenberg web copy.
+  - Skinner: SECHUM 0.5, alt ATHE, from his signature on Humanist Manifesto II (1973; signers 'not necessarily endorsing every detail'). A 4, B 3 (alt 4; P41, and P35 as a scientist), C 4, D 4, all at 0.5. mid_basin BELOW_THRESHOLD (A at 0.5).
+  - Wiles: only the 2016 HLF press conference (Plus transcript): mathematics 'discovered' (B BELOW_THRESHOLD, P30) and a declined question on who created it (A UNKNOWN). mid_basin UNKNOWN.
+  - Jung: primary_system and A BELOW_THRESHOLD (alt 3) from 'I don't need to believe. I know' (BBC Face to Face, 1959) and his 1960 Listener letter (God 'a factor unknown in itself'; no hypostasis); both read in blog transcriptions, primary check pending. B UNKNOWN; ruling question on whether P30 makes him a scientist. mid_basin UNKNOWN.
 
 ## v7.1 (2026-09-14 data freeze)
 
