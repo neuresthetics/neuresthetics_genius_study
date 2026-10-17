@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 82). Basics from Britannica (Sadie, signed; body text only, Q&A boxes not cited). Worldview from letters 69 (1777), 107, 108 and 110 (1778) in Lady Wallace's translation, Gutenberg #5307. primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (Providence about events in his life, not nature, P16); C 0 (0.5, alt 1); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): A 0 and CHRIST lowered from 0.7 to 0.5 (letters predate the working years, P20; Franklin precedent). Values and mid_basin unchanged."}
 
 identity:
   id: mozart-wolfgang-amadeus
@@ -84,10 +85,10 @@ worldview:
   primary_system:
     value: CHRIST
     basis: consistent_private_letters
-    certainty: 0.7
+    certainty: 0.5
     cites: [{source: S2, locator: "Gutenberg letter 69 (Augsburg, 25 Oct. 1777); Gutenberg letter 107 (Paris, 3 July 1778)"}]
     rationale: "Practising Catholic in the letters read: he 'told over my beads, as I had vowed', and praises 'good, true, upright' Germans who live 'a good Christian life' (Gutenberg letter 107). Named alternative: none chosen; Freemasonry from late 1784 (S1) is noted, but the 1787 letter on death that Britannica ties to Masonic teaching was not read."
-    how_known: "Several private letters to his father, 1777–1778, before the working years (P20 noted: the letters predate 1784). Wallace translation (1865) of Nohl's collection via Gutenberg; web copy, 0.7 ceiling. TODO: map the Gutenberg (Wallace) letter numbers to a modern edition (Anderson or Bauer–Deutsch)."
+    how_known: "Several private letters to his father, 1777–1778, before the working years (1784–1791), so 0.5 under P20, as for Franklin (pre-working-years evidence). Wallace translation (1865) of Nohl's collection via Gutenberg; web copy, 0.7 ceiling. TODO: map the Gutenberg (Wallace) letter numbers to a modern edition (Anderson or Bauer–Deutsch)."
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Rosary, 'good Catholics', submission to 'the will of God'."}
@@ -96,9 +97,9 @@ worldview:
     A_locus:
       value: 0
       basis: consistent_private_letters
-      certainty: 0.7
+      certainty: 0.5
       cites: [{source: S2, locator: "Gutenberg letter 69 (25 Oct. 1777); Gutenberg letter 108 (9 July 1778)"}]
-      how_known: "Consistent across several private letters (0.7 ceiling; web copy). Letters of 1777–78, before the working years (P20); no later letter read. TODO: map the Gutenberg (Wallace) letter numbers to a modern edition (Anderson or Bauer–Deutsch)."
+      how_known: "Consistent across several private letters (0.7 ceiling; web copy), but all from 1777–78, before the working years (1784–1791), so 0.5 under P20, as for Franklin; no later letter read. TODO: map the Gutenberg (Wallace) letter numbers to a modern edition (Anderson or Bauer–Deutsch)."
       rationale: "A personal God apart from the world who rules over persons: 'I have always God before my eyes, I acknowledge His omnipotence, I dread His wrath; but I also know His love, His compassion and mercy towards His creatures' (1777); 'remember that God Almighty has ordained it, and how can we rebel against Him?' (1778)."
     B_cause: {value: BELOW_THRESHOLD, how_known: "The Providence statements are about events in his own life (his mother's death: 'It was the manifest will of God; her time was come', Gutenberg letter 110; his plans: 'If it be His almighty will, it must come to pass', Gutenberg letter 107), not about the order of nature (P16), as for Beethoven. No statement on nature's laws read."}
     C_ledger:

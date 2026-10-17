@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 81). Basics from Britannica (John Russell Brown, Terence Spencer and others, signed; Wayback copies; body only). No worldview statement in his own voice was read: the plays and poems are character or persona speech (P42), and the will's religious preamble was not read. All worldview fields UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): will read (Folger, PROB 1/4); by Jason's ruling on RQ1 its formulaic preamble is lawyer drafting, not his statement (P42); 'only merits of Jesus Christ' recorded under nominal_affiliations as context. A stays UNKNOWN."}
 
 identity:
   id: shakespeare-william
@@ -81,8 +82,9 @@ worldview:
   working_years: {value: "1589–1613", certainty: 0.5, cites: [{source: S1, locator: "'Chronology of Shakespeare's plays'"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Baptized at Holy Trinity Church, Stratford-upon-Avon (Church of England)", certainty: 0.5, cites: [{source: S1, locator: "'Early life in Stratford'"}], how_known: "Britannica names the parish register; 'Church of England' is the coder's reading of the parish. Context, not a code."}
+    - {value: "Will (25 March 1616) commends his soul 'into the hands of God my creator, hoping and assuredly believing through the only merits of Jesus Christ my Saviour to be made partaker of life everlasting' (a Protestant formula)", certainty: 0.5, cites: [{source: S3, locator: "modernized transcription; description"}], how_known: "Context only, not his own statement: Jason's ruling on RQ1 (batch M audit), recorded in OPEN_DECISIONS P42: a formulaic will preamble is lawyer drafting (Francis Collins is named as a creator of the document; Folger calls the preamble 'very formulaic'). 'Protestant formula' is the coder's reading of 'only merits'."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing in his own voice read."}
-  primary_system: {value: UNKNOWN, how_known: "The surviving record is 'mostly gleaned from documents of an official character' (S1). Speeches in the plays are characters' and the Sonnets' speaker is a persona, so neither is attributed to him (P42). The will (1616) was not read; its preamble is a lead only."}
+  primary_system: {value: UNKNOWN, how_known: "The surviving record is 'mostly gleaned from documents of an official character' (S1). Speeches in the plays are characters' and the Sonnets' speaker is a persona, so neither is attributed to him (P42). The will (1616) was not read; its preamble is formulaic lawyer drafting and is context only (P42, Jason's ruling on RQ1); see nominal_affiliations."}
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Baptized in the parish church; nothing in his own voice read."}
@@ -95,7 +97,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Coder's call. A will's opening commendation of the soul was usually a set form, so even when read it may not count as his own statement; that would need a ruling before scoring."
+  coder_notes: "Coder's call. The will's preamble is read (S3) and, by Jason's ruling on RQ1 (P42), is lawyer drafting, not his statement; it is recorded under nominal_affiliations as context and A stays UNKNOWN."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -132,7 +134,7 @@ review:
   data_quality_flags:
     - "No document in his own voice on religion is known to the sources read."
   open_questions:
-    - "Read the will (1616) and decide whether a formulaic preamble can count as his statement (ruling needed)."
+    - "Settled (RQ1, P42): the will's formulaic preamble is not his own statement."
 
 sources:
   - id: S1
@@ -153,6 +155,15 @@ sources:
     accessed: 2026-10-17
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S3
+    type: primary
+    kind: "archive record"
+    author: "Folger Shakespeare Library (Shakespeare Documented)"
+    citation: "\"Shakespeare's last will and testament: made 25 March 1616, proved 22 June 1616.\" Shakespeare Documented, Folger Shakespeare Library. The National Archives, Kew, PROB 1/4. doi:10.37078/110. https://shakespearedocumented.folger.edu/resource/document/william-shakespeares-last-will-and-testament-original-copy-including-three"
+    url: "https://shakespearedocumented.folger.edu/resource/document/william-shakespeares-last-will-and-testament-original-copy-including-three"
+    accessed: 2026-10-17
+    reliability_note: "Folger's description and modernized transcription of the original will, read directly; creator listed as 'Francis Collins, esq. et al.; William Shakespeare'."
+    used_for: [worldview]
 ---
 
 # William Shakespeare
@@ -193,8 +204,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Unclear.
 
 ## Open questions
 
-- The will, and a ruling on formulaic preambles.
+- Settled: the will's preamble is context only (P42).
 
 ## Research log
 
 - 2026-10-17: Read Britannica (Brown, Spencer et al.) in Wayback copies; live page and newest snapshot not available.
+- 2026-10-17 (batch M audit fixes): read the will on Shakespeare Documented (Folger; TNA PROB 1/4); preamble recorded as context under nominal_affiliations (P42, Jason's ruling on RQ1).

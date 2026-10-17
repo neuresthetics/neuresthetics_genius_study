@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 79). Basics from Britannica (Panthea Reid, signed; body only). Worldview from 'A Sketch of the Past' (memoir, 1940–41, published 1976) quoted by Ryan (2012, Glasgow PhD) and the 1928 letter to Vanessa Bell quoted by Tóibín (LRB, 2014): secondary quotations, primary check pending. primary_system ATHE (0.5, alt AGNOS); A 4 (0.7); B UNKNOWN (P16); mid_basin false (0.7, A ≥ 3 branch). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): memoir dated 1939–40 (date field 1939), MB p. 85 noted as the Pimlico page (Harcourt pp. 71–72); SECHUM named as the better alternative to AGNOS. Values unchanged."}
 
 identity:
   id: woolf-virginia
@@ -83,13 +84,13 @@ worldview:
     basis: consistent_private_letters
     certainty: 0.5
     cites: [{source: S2, locator: "Introduction, p. 1 (PDF p. 8), quoting MB 85"}, {source: S3, locator: "Woolf letter quoted"}]
-    rationale: "'certainly and emphatically there is no God' (memoir) and 'there's something obscene in a living person sitting by the fire and believing in God' (1928 letter). Named alternative: AGNOS or SECHUM; ATHE's naturalism is not stated, and the same passage holds that 'behind the cotton wool is hidden a pattern' and 'the whole world is a work of art'."
+    rationale: "'certainly and emphatically there is no God' (memoir) and 'there's something obscene in a living person sitting by the fire and believing in God' (1928 letter). Named alternative: SECHUM (the better alternative; AGNOS is weak because her own words are a denial); ATHE's naturalism is not stated, and the same passage holds that 'behind the cotton wool is hidden a pattern' and 'the whole world is a work of art'."
     how_known: "Unpublished memoir and a private letter, both secondary quotations (primary check pending); 0.5 because the naturalism half of ATHE is not stated and alternatives are named."
   secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
     - {code: ATHE, reason: "Explicit denial of God."}
-    - {code: AGNOS, reason: "Her own words are a denial, not a suspension of judgement."}
-    - {code: SECHUM, reason: "No membership or humanist statement read."}
+    - {code: SECHUM, reason: "Better alternative to ATHE: a denial of God without stated naturalism; no membership or humanist statement read."}
+    - {code: AGNOS, reason: "Weak: her own words are a denial, not a suspension of judgement."}
   lio_axes:
     A_locus:
       value: 4
@@ -97,7 +98,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S2, locator: "Introduction, p. 1 (PDF p. 8), quoting MB 85"}, {source: S3, locator: "Woolf letter quoted"}]
       how_known: "Two private documents in the working years, consistent (0.7 ceiling, §3); both secondary quotations, primary check pending, so not above 0.7 (P26)."
-      rationale: "No God (A 4 for a denial, P38): 'certainly and emphatically there is no God; we are the words; we are the music; we are the thing itself' (memoir, 1940–41), and on Eliot's conversion, 'A corpse would seem to me more credible than he is. I mean, there's something obscene in a living person sitting by the fire and believing in God' (letter, 1928)."
+      rationale: "No God (A 4 for a denial, P38): 'certainly and emphatically there is no God; we are the words; we are the music; we are the thing itself' (memoir, 1939–40), and on Eliot's conversion, 'A corpse would seem to me more credible than he is. I mean, there's something obscene in a living person sitting by the fire and believing in God' (letter, 1928)."
     B_cause: {value: UNKNOWN, how_known: "Not a scientist. The memoir's 'pattern' behind 'the cotton wool' and 'the whole world is a work of art' is not a statement on law and exception in nature (P16). Nothing read on nature's order."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward or punishment; Eliot's belief in 'immortality' is reported, not judged in her own terms."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
@@ -106,8 +107,8 @@ worldview:
   statements:
     - text: "But there is no Shakespeare, there is no Beethoven; certainly and emphatically there is no God; we are the words; we are the music; we are the thing itself."
       cites: [{source: S2, locator: "Introduction, p. 1 (PDF p. 8), quoting MB 85"}]
-      date: "1940"
-      context: "'A Sketch of the Past', the memoir she worked on during the bombing of London (S1), published in Moments of Being (1976; Ryan cites the Pimlico edition, p. 85). The sentence follows 'that behind the cotton wool is hidden a pattern ... that the whole world is a work of art'."
+      date: "1939"
+      context: "'A Sketch of the Past', memoir written 1939–40 (the date field holds the start year; the schema takes one year), published in Moments of Being (1976). MB p. 85 is the Pimlico edition that Ryan cites; the passage is at pp. 71–72 in the Harcourt editions (audit lead from UAH and a UT Austin thesis, not read here). The sentence follows 'that behind the cotton wool is hidden a pattern ... that the whole world is a work of art'."
       axes: [A_locus]
       kind: "unpublished manuscript"
       verified_against: "secondary quotation"
@@ -137,7 +138,7 @@ timing:
   major_work_period: {value: "1922–1941", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "First to last listed lasting contribution (P29, P30); start and end are the coder's picks."}
   age_at_first_lasting_contribution: {value: 40, certainty: 0.5, cites: [{source: S1, locator: "opening; 1922"}], how_known: "1922 − 1882 = 40 (P30)."}
   first_evidence_of_lio_type_views: {value: "1928: mocks belief in God in a letter on Eliot's conversion", year: 1928, certainty: 0.5, cites: [{source: S3, locator: "Woolf letter quoted"}], how_known: "Earlier letters and diaries not read (P30 #7)."}
-  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S3, locator: "Woolf letter quoted"}, {source: S2, locator: "Introduction, p. 1 (PDF p. 8)"}], how_known: "1928 and 1940–41, inside 1922–1941; earlier writings not read."}
+  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S3, locator: "Woolf letter quoted"}, {source: S2, locator: "Introduction, p. 1 (PDF p. 8)"}], how_known: "1928 and 1939–40, inside 1922–1941; earlier writings not read."}
   worldview_during_major_work: {value: "No God; a 'pattern' behind appearances in which 'we are the thing itself'", certainty: 0.5, cites: [{source: S2, locator: "Introduction, p. 1 (PDF p. 8)"}], how_known: "Secondary quotation of the memoir."}
 
 lane_b:
@@ -206,7 +207,7 @@ sources:
 
 ## Summary
 
-Virginia Woolf (1882–1941), English novelist and essayist [S1]. Draft: primary_system ATHE (0.5, alt AGNOS); A 4 at 0.7; B UNKNOWN; mid_basin false (0.7). Not plotted.
+Virginia Woolf (1882–1941), English novelist and essayist [S1]. Draft: primary_system ATHE (0.5, alt SECHUM); A 4 at 0.7; B UNKNOWN; mid_basin false (0.7). Not plotted.
 
 ## Life and work
 
@@ -222,7 +223,7 @@ Daughter of Leslie Stephen and Julia Jackson [S1].
 
 ## Adult working worldview
 
-'certainly and emphatically there is no God' (memoir, 1940–41) [S2]; the 1928 letter on Eliot [S3].
+'certainly and emphatically there is no God' (memoir, 1939–40) [S2]; the 1928 letter on Eliot [S3].
 
 ## Heritage (context only)
 

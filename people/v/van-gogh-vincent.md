@@ -2,7 +2,7 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-17
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 78). Basics from Britannica (Britannica Editors, unsigned; body only, Q&A boxes not cited). Worldview from letters 155 (1880), 613, 632 and 691 (1888) in the Van Gogh Museum / Huygens ING edition. primary_system BELOW_THRESHOLD; A 0 (0.5, alt 1); B UNKNOWN (P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): letter 632 added to A's cites; the irony in letter 613 marked plainly as the coder's reading. Value unchanged."}
 
 identity:
   id: van-gogh-vincent
@@ -94,8 +95,8 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S2, locator: "letter 613 (Arles, 26 May 1888); letter 155 (Cuesmes, June 1880)"}]
-      how_known: "Private letters in the working years and before; 0.5 because the 1888 passage is ironic and framed as 'legend', and an alternative is named."
+      cites: [{source: S2, locator: "letter 613 (Arles, 26 May 1888); letter 632; letter 155 (Cuesmes, June 1880)"}]
+      how_known: "Private letters in the working years and before; letter 632 backs letter 613 as an earnest theist statement. 0.5 because the 1888 passage is framed as 'legend' and reads as ironic, and an alternative is named. The irony is the coder's reading: the edition does not flag the letter as ironic."
       rationale: "God as the world's author, apart from it: 'we shouldn't judge the Good Lord by this world, because it's one of his studies that turned out badly' and 'the same creative hand' (1888). Named alternative: 1 ('the best way of knowing God is to love a great deal', 1880, and the stars painted from a need for religion, 1888)."
     B_cause: {value: UNKNOWN, how_known: "Not a scientist; 'This world was clearly cobbled together in haste' (613) judges the world's quality, not law or exception (P16). Nothing read on nature's order."}
     C_ledger: {value: UNKNOWN, how_known: "'the hope of seeing better than that in another life' (613) is a hope, with no judgement of persons; not scored."}
