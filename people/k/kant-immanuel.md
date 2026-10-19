@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
   last_updated: 2026-10-08
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling (2026-10-19, 'fix them'; TF7 of the batch T audit, held until now): B_cause 4 -> 3 at 0.7, alternative 4, per P30 #14 (noumenal freedom is B 3's one exception; Kant is B 3 as the value). mid_basin stays true at 0.7 (A 1, B 3, both at 0.7). Plotted point moves one column left; dot stays solid."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #379: 'lived his entire life' now cited to Britannica 'Background and early years' and SEP religion §2.1.1, not SEP §1. #405: early_mathematics 'other' (curriculum only; no source says advanced). #415: wording only; he declines to contest revelation and miracles (AA VI 155; VI 88 n.) rather than accepting them; value unchanged. #390: stray 'ancestor gloss' wording fixed. #420: heading §3.3.1.2 rechecked in the live entry; kept. Bylines: SEP religion now Pasternack and Fugate; Britannica now Bird and Duignan. #416, #456 left (stub-system rule awaits v8). Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
@@ -119,12 +120,12 @@ worldview:
       how_known: "His own published text in a scholarly edition; capped at 0.7 because SEP names competing readings (S2 §3.3.1)."
       rationale: "DRAFT. Leans to the transcendent-person pole: the postulate is 'das Dasein einer von der Natur unterschiedenen Ursache der gesammten Natur', and that cause is 'ein Wesen, das durch Verstand und Willen die Ursache (folglich der Urheber) der Natur ist, d. i. Gott' (KpV, AA V 125): distinct from nature, with understanding and will. Not 0, because God is held only as a postulate, 'subjectiv, d. i. Bedürfniß' (AA V 125), and is not known. Named alternatives: 0 (personal author and judge), and 2 or BELOW_THRESHOLD on the reading that God is held 'Only as a mere symbol' (S2 §3.3.1.2, heading)."
     B_cause:
-      value: 4
+      value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "AA III 166"}, {source: S6, locator: "AA VI 87–88"}]
-      how_known: "His own published texts in a scholarly edition; a named alternative (3)."
-      rationale: "DRAFT. Scored on his account of nature (P6). At the LIO pole: 'Alle Veränderungen geschehen nach dem Gesetze der Verknüpfung der Ursache und Wirkung' (KrV, Second Analogy, AA III 166). The natural scientist's business is to seek the causes of events 'in dieser ihren Naturgesetzen' (Religion, AA VI 87), and experiences 'sind [...] nichts anders als Naturwirkungen und sollen auch nie anders beurtheilt werden' (AA VI 88). Reason must either admit miracles daily or never, and only 'never' is compatible with reason (AA VI 88). Named alternative: 3, because he does not deny miracles: he does not take them into his maxims 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten' (AA VI 88 n.), and the free noumenal self is 'not part of nature' (S1 §5.2)."
+      cites: [{source: S4, locator: "AA III 166"}, {source: S6, locator: "AA VI 87–88"}, {source: S1, locator: "§5.2"}]
+      how_known: "His own published texts in a scholarly edition; a named alternative (4), so 0.7. Jason's ruling (2026-10-19, 'fix them'), applying P30 #14."
+      rationale: "Scored on his account of nature (P6). Lawful nature: 'Alle Veränderungen geschehen nach dem Gesetze der Verknüpfung der Ursache und Wirkung' (KrV, Second Analogy, AA III 166); the natural scientist's business is to seek the causes of events 'in dieser ihren Naturgesetzen' (Religion, AA VI 87), and experiences 'sind [...] nichts anders als Naturwirkungen und sollen auch nie anders beurtheilt werden' (AA VI 88). B 3 as the value, not 4, under P30 #14: B 3's one exception (P27) includes a free will not bound by natural law, and Kant's noumenal freedom (the free self is 'not part of nature', S1 §5.2) is the named case ('Kant is B 3 as the value, not as an alternative'). He also does not deny miracles: he does not take them into his maxims 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten' (AA VI 88 n.). Named alternative 4: reason must either admit miracles daily or never, and only 'never' is compatible with reason (AA VI 88)."
     C_ledger:
       value: 1
       basis: written_profession
@@ -146,7 +147,7 @@ worldview:
       cites: [{source: S4, locator: "AA III 166"}, {source: S6, locator: "AA VI 87–88; 194"}]
       how_known: "His own published texts in a scholarly edition; a named alternative (3)."
       rationale: "DRAFT. Scored on the world's order (P7). At the LIO pole: one law of cause and effect for all changes (AA III 166); 'In Geschäften kann man also unmöglich auf Wunder rechnen' (AA VI 87); and petition as a means of grace is 'ein abergläubischer Wahn (ein Fetischmachen)' (AA VI 194). No favour for a group in events. The ethical community and the highest good are C matters (P7). Named alternative: 3 (miracles not denied, AA VI 88 n.)."
-  mid_basin: {value: true, certainty: 0.7, cites: [{source: S5, locator: "AA V 125"}, {source: S4, locator: "AA III 166"}], how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 4 (0.7) ≥ 3, both at ≥ 0.7, so true. Certainty is the lower of the two (0.7). DRAFT: the result holds for A 0 and B 3; it would fail if A were read as 2 (the symbol-only reading)."}
+  mid_basin: {value: true, certainty: 0.7, cites: [{source: S5, locator: "AA V 125"}, {source: S4, locator: "AA III 166"}], how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7, so true (unchanged by Jason's 2026-10-19 ruling, B 4 -> 3). Certainty is the lower of the two (0.7). DRAFT: the result holds for A 0 and B 4; it would fail if A were read as 2 (the symbol-only reading)."}
   statements:
     - text: "Ich mußte also das Wissen aufheben, um zum Glauben Platz zu bekommen"
       cites: [{source: S4, locator: "AA III 19 (B XXX)"}]
@@ -354,7 +355,7 @@ sources:
 
 ## Summary
 
-Immanuel Kant (1724–1804), German philosopher of Königsberg, founded the critical philosophy [S1; S3]. He limited knowledge to appearances to make room for faith [S4, AA III 19], postulated a God distinct from nature on moral grounds [S5, AA V 125], and excluded miracles and petition from the maxims of reason [S6, AA VI 87–88, 194]. primary_system BELOW_THRESHOLD (KANT is a stub). Axes A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true at 0.7 (draft).
+Immanuel Kant (1724–1804), German philosopher of Königsberg, founded the critical philosophy [S1; S3]. He limited knowledge to appearances to make room for faith [S4, AA III 19], postulated a God distinct from nature on moral grounds [S5, AA V 125], and excluded miracles and petition from the maxims of reason [S6, AA VI 87–88, 194]. primary_system BELOW_THRESHOLD (KANT is a stub). Axes A 1, B 3 (alt 4), C 1, D 4, E 4, all at 0.7; mid_basin true at 0.7 (draft).
 
 ## Life and work
 

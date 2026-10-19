@@ -596,6 +596,10 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
 
 - **2026-10-19, chart refresh after batch Y** (the one refresh planned for this run): make_figures re-run on the batch Y audit fixes. people_cause_locus.png, people_systems_overlay.png and core_by_region_field.png changed; systems_cause_locus.png, systems_axes.png and roster_list_overlap.png are unchanged byte for byte. Checked by eye: 57 people plotted, 86 not scorable (26 no A_locus, 15 no B_cause, 45 neither); 22 systems with both axes settled. The README caption (generated) agrees; 'chart images not yet refreshed' dropped from the progress note. No data changes. King U1 and Kant B 3 still held.
 
+- **2026-10-19, Jason's rulings on the held changes** ('fix them', 2026-10-19). Plotted stays 57, not scorable 86; two points change.
+  - King (RQ U1 of the batch U audit): B_cause re-based on Strength to Love (1963, in the span), read in the King Papers first typed drafts of chapters IV ('Love in Action': 'She must do everlasting honor to her fixed, immutable laws'), XV ('The Answer to a Perplexing Question': 'we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world') and XIII ('Our God Is Able', for the B 2 alternative). B 3 at 0.7 (was 0.5) on written_profession, alternatives 4 and 2, with the 1949 essay as support. mid_basin BELOW_THRESHOLD -> true at 0.7; his dot is now solid. Recorded under P41. The 1963 printed text was not seen; the editors' notes mark no change in the quoted passages.
+  - Kant (TF7 of the batch T audit): B_cause 4 -> 3 at 0.7, alternative 4, per P30 #14; mid_basin stays true at 0.7. His dot moves one column left. Recorded under P30.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling on RQ U1 (2026-10-19, 'fix them'): B_cause re-based on Strength to Love (1963, in the span), read in the King Papers first typed drafts (new S5 'Love in Action': 'She must do everlasting honor to her fixed, immutable laws'; S6 'The Answer to a Perplexing Question': 'through some breathtaking miracle or a wave of the hand'; S7 'Our God Is Able' for the B 2 alternative): B 3 0.5 -> 0.7, basis consistent_private_letters -> written_profession (fixes KI9), alternatives 4 and 2, the 1949 essay kept as support. mid_basin BELOW_THRESHOLD -> true at 0.7; plotted dot now solid. Three statements added."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Clayborne Carson (KI2); B how_known now says the 1949 essay is one private document, scholar-backed, 0.5 (§3), with the basis label kept pending ruling U1 (KI9, on instruction); 'editors back the reading' narrowed to scriptural literalism (note). B and mid_basin unchanged; U1 (re-basing B on Strength to Love) not applied: waiting on Jason."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 116). Basics from Britannica (Clayborne Carson; author corrected in the batch U audit fixes). Worldview from two texts in the King Papers online edition (Stanford King Institute): 'Pilgrimage to Nonviolence' (Christian Century, 13 April 1960; in span) and a 1949 Crozer seminary essay (unpublished; before the span, P31). Not a scientist (P30). primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7, alt 0); B 3 (0.5, alts 4 and 2; P41, from the 1949 essay); C UNKNOWN; D 2 (0.7, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Plotted (faded). Draft, not reviewed."}
 
@@ -114,14 +115,14 @@ worldview:
         - {value: 0, note: "Personal God with feeling and will; nothing placing God in the world.", cites: [{source: S2, locator: "closing section"}]}
     B_cause:
       value: 3
-      basis: consistent_private_letters
-      certainty: 0.5
-      cites: [{source: S3, locator: "virgin-birth and resurrection paragraphs; editors' headnote"}, {source: S2, locator: "closing section"}]
-      rationale: "Scored on his account of nature (P6). A non-scientist who rejects a miracle without stating an exceptionless order: B 3 at 0.5, alternative 4 (P41, Tolstoy precedent). In 1949 he calls a virgin birth 'downright improbable and even impossible', says 'No laws were broken because they had no knowledge of the existence of law' and 'We of this scientific age will not explain the birth of Jesus in such unscientific terms', and finds the external evidence for the bodily resurrection 'wanting'. Named alternative 2: in the span (1960) 'the universe is under the control of a loving purpose' and God 'answers prayers', which could be special providence as a live part of how events go."
-      how_known: "One unpublished seminary essay (1949), his own words, before the span: it counts under P31 because the 1960 essay documents a change on the doctrine of man and on how real God felt to him ('a metaphysical category' to 'a living reality'), not on miracles. One private document, scholar-backed, so 0.5 (§3, P18): a single private document is not 'consistent private letters'; the label is kept only as the private-ceiling basis (as for Austen), pending ruling U1. The King Papers editors back the reading only on scriptural literalism ('King shows himself willing to abandon scriptural literalism', S3 headnote); they do not comment on the 'No laws were broken' line, which has no Hedley parallel in their notes. The essay 'follows the book's structure and argument closely' (Hedley's The Symbol of the Faith; S3 headnote)."
+      basis: written_profession
+      certainty: 0.7
+      cites: [{source: S5, locator: "Draft of Chapter IV, 'Love in Action', paragraph 'One can only see the greatness of this prayer by contrast'"}, {source: S6, locator: "Draft of Chapter XV, 'The Answer to a Perplexing Question', text between notes 24–25 and 27–28"}, {source: S3, locator: "virgin-birth and resurrection paragraphs; editors' headnote"}]
+      rationale: "Scored on his account of nature (P6), from Strength to Love (Harper & Row, 1963; published in the span), read in the first typed drafts printed by the King Papers, whose notes mark every significant change in the published text and mark none in these passages. Nature keeps fixed laws: 'She must do everlasting honor to her fixed, immutable laws. When these laws are violated, she has no alternative but to follow inexorably her path of uniformity. Nature does not and cannot forgive.' ('Love in Action'). God does not act on evil by miracle: 'Therefore we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world. As long as we believe this we will pray unanswerable prayers and ask God to do things that he will never do.' and 'No prodigious thunderbolt will come dashing out of the sky to blast evil away.' ('The Answer to a Perplexing Question'). B 3: a lawful nature, with God working through man and history ('The principle which opens the door for God to work through man is faith'), not by intervention. Support (P31): the 1949 seminary essay calls a virgin birth 'downright improbable and even impossible' and says 'No laws were broken because they had no knowledge of the existence of law' (S3). Named alternatives: 4 ('fixed, immutable laws ... path of uniformity'; but he states no exceptionless order for God's own action), and 2 ('a God of Power in the universe who is able to do exceedingly abundant things in nature and history', S7; 'this God both evokes and answers prayers', S2, 1960)."
+      how_known: "Jason's ruling (2026-10-19, 'fix them'; RQ U1 of the batch U audit): re-based on the in-span published sermons (written_profession), with the 1949 essay as support; two named alternatives (contested readings), so 0.7. The draft text is quoted exactly as read in the King Papers online edition; the 1963 printed text itself was not seen (the auditor found the archive.org copies restricted)."
       alternatives:
-        - {value: 4, note: "P41: rejecting a miracle cannot rule out a no-exception nature.", cites: [{source: S3, locator: "virgin-birth paragraph"}]}
-        - {value: 2, note: "Answered prayer and a 'loving purpose' controlling the universe (1960).", cites: [{source: S2, locator: "closing section"}]}
+        - {value: 4, note: "Nature's 'fixed, immutable laws' and 'path of uniformity'; rejection of miracle as God's way with evil.", cites: [{source: S5, locator: "'One can only see the greatness of this prayer by contrast' paragraph"}, {source: S3, locator: "virgin-birth paragraph"}]}
+        - {value: 2, note: "A God 'able to do exceedingly abundant things in nature and history' (1963) who 'answers prayers' (1960).", cites: [{source: S7, locator: "Draft of Chapter XIII, 'Our God Is Able', opening paragraph"}, {source: S2, locator: "closing section"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing on reward and punishment of persons in the texts read; 'salvation or doom' (S2, last paragraph) is said of a historical crisis (P19)."}
     D_authority:
       value: 2
@@ -133,7 +134,7 @@ worldview:
       alternatives:
         - {value: 3, note: "Faith limited to the spirit of the doctrines.", cites: [{source: S3, locator: "opening paragraphs"}]}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Lead only: 'this God both evokes and answers prayers' and 'resources of strength that only God could give' (S2) concern inner strength, not events changed for an in-group; nothing on the same rules for all beings."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "P4 test: A 1 at 0.7 meets A ≤ 1, but B 3 is at 0.5, under the 0.7 bar (P10); the B 2 alternative would fall between the branches."}
+  mid_basin: {value: true, certainty: 0.7, cites: [{source: S2, locator: "closing section"}, {source: S5, locator: "'Love in Action'"}, {source: S6, locator: "'The Answer to a Perplexing Question'"}], how_known: "P4 test: A 1 (0.7) ≤ 1 and B 3 (0.7) ≥ 3, both at ≥ 0.7, so true at 0.7 (Jason's ruling on RQ U1, 2026-10-19). The B 2 alternative would fall between the branches."}
   statements:
     - text: "I am convinced that the universe is under the control of a loving purpose and that in the struggle for righteousness man has cosmic companionship. Behind the harsh appearances of the world there is a benign power. To say God is personal is not to make him an object among other objects or attribute to him the finiteness and limitations of human personality; it is to take what is finest and noblest in our consciousness and firm its perfect existence in him."
       cites: [{source: S2, locator: "closing section"}]
@@ -187,10 +188,37 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
       note: "'to shallow' as in the transcription."
+    - text: "She must do everlasting honor to her fixed, immutable laws. When these laws are violated, she has no alternative but to follow inexorably her path of uniformity. Nature does not and cannot forgive."
+      cites: [{source: S5, locator: "'One can only see the greatness of this prayer by contrast' paragraph"}]
+      date: "1963"
+      context: "Strength to Love, ch. IV 'Love in Action', contrasting Jesus' prayer of forgiveness with nature, which 'is caught in the finality of its own impersonal structure'."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "First typed draft (July 1962 – March 1963) as printed by the King Papers; the editors' notes record no change to this passage in the published book (note 6 concerns the next sentence)."
+    - text: "Therefore we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world. As long as we believe this we will pray unanswerable prayers and ask God to do things that he will never do."
+      cites: [{source: S6, locator: "text between notes 27 and 28"}]
+      date: "1963"
+      context: "Strength to Love, ch. XV 'The Answer to a Perplexing Question': evil is cast out neither by God alone nor by man alone, but by both."
+      axes: [B_cause, E_scope]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "First typed draft as printed by the King Papers; no editors' note marks a change here."
+    - text: "No prodigious thunderbolt will come dashing out of the sky to blast evil away. No mighty army of angels will decend from heaven and force men to do what their wills have led them not to do."
+      cites: [{source: S6, locator: "text between notes 24 and 25"}]
+      date: "1963"
+      context: "Same chapter, on 'the fallacy of the idea that God alone will rid the earth of evil'."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "'decend' as in the transcription."
   changes_over_life:
     - {value: "Raised 'in a rather strict fundamentalistic tradition'; a 'thoroughgoing liberal' in seminary; then rejected 'mainly the liberal doctrine of man' (Niebuhr), without accepting neo-orthodoxy", certainty: 0.7, cites: [{source: S2, locator: "opening; part I"}], how_known: "His own retrospective account (1960) of 1949–1959 (P29 cap 0.7)."}
     - {value: "A personal God, once 'little more than a metaphysical category', became 'a living reality ... validated in the experiences of everyday life' during the struggle (to 1960)", certainty: 0.7, cites: [{source: S2, locator: "closing section"}], how_known: "His own account; 'I have always believed in the personality of God', so the content is unchanged."}
-  coder_notes: "Coder's call. The plotted B rests on one pre-span unpublished seminary essay (P31, P41) that follows a textbook closely; the in-span essay gives answered prayer and a 'loving purpose', named as the B 2 alternative. If the 1949 essay is ruled not to count (a documented change under P31, or a course paraphrase), B becomes BELOW_THRESHOLD and he leaves the chart. Leads: Stride Toward Freedom (1958); Strength to Love (1963); the dissertation (1955); his sermons on science and religion. Not read."
+  coder_notes: "B rests on Strength to Love (1963, in the span), read in the King Papers drafts, with the 1949 seminary essay (which follows Hedley's textbook closely) as support; Jason's ruling on RQ U1 (2026-10-19). The headnote to the drafts says some passages 'reflect the thoughts of J. Wallace Hamilton and Phillips Brooks' (batch U audit); that does not affect attribution of a book he published under his name. The in-span 1960 essay gives answered prayer and a 'loving purpose', and 'Our God Is Able' a God 'able to do exceedingly abundant things in nature and history': the B 2 alternative. Leads: Stride Toward Freedom (1958); the dissertation (1955); the 1963 printed text."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -229,10 +257,10 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 116"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "The plotted B rests on one unpublished pre-span seminary essay that follows Hedley closely (P31, P41); in-span answered prayer is the B 2 alternative."
+    - "B is read in the first typed drafts of Strength to Love (King Papers), not the 1963 printed book; the editors' notes mark no change in the quoted passages."
     - "Britannica's body text was read through 'Early years'; later sections not fetched. Question-box items are cited only for dates."
   open_questions:
-    - "Read Strength to Love (1963) and Stride Toward Freedom (1958) for in-span statements on miracles and providence."
+    - "Check the quoted Strength to Love passages against the 1963 printed text; read Stride Toward Freedom (1958)."
 
 sources:
   - id: S1
@@ -271,6 +299,33 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: "scholarly edition"
+    author: "Martin Luther King, Jr.; King Papers Project editors"
+    citation: "King, Martin Luther, Jr. \"Draft of Chapter IV, 'Love in Action'.\" July 1962 – March 1963. For Strength to Love (New York: Harper & Row, 1963). MLKP-MBU, Boston University. The Papers of Martin Luther King, Jr., vol. 6, online edition, with editors' notes."
+    url: "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-iv-love-action"
+    accessed: 2026-10-19
+    reliability_note: "First typed draft sent to the publisher; the editors footnote significant changes in the published text."
+    used_for: [worldview]
+  - id: S6
+    type: primary
+    kind: "scholarly edition"
+    author: "Martin Luther King, Jr.; King Papers Project editors"
+    citation: "King, Martin Luther, Jr. \"Draft of Chapter XV, 'The Answer to a Perplexing Question'.\" July 1962 – March 1963. For Strength to Love (New York: Harper & Row, 1963). Morehouse College Martin Luther King, Jr. Collection, Robert W. Woodruff Library, Atlanta University Center. The Papers of Martin Luther King, Jr., vol. 6, online edition, with editors' notes."
+    url: "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-xv-answer-perplexing-question"
+    accessed: 2026-10-19
+    reliability_note: "First typed draft sent to the publisher; the editors footnote significant changes in the published text."
+    used_for: [worldview]
+  - id: S7
+    type: primary
+    kind: "scholarly edition"
+    author: "Martin Luther King, Jr.; King Papers Project editors"
+    citation: "King, Martin Luther, Jr. \"Draft of Chapter XIII, 'Our God Is Able'.\" July 1962 – March 1963. For Strength to Love (New York: Harper & Row, 1963). The Papers of Martin Luther King, Jr., vol. 6, online edition, with editors' notes."
+    url: "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-xiii-our-god-able"
+    accessed: 2026-10-19
+    reliability_note: "First typed draft sent to the publisher; used only for the B 2 alternative."
+    used_for: [worldview]
 ---
 
 # Martin Luther King Jr.
@@ -279,7 +334,7 @@ sources:
 
 ## Summary
 
-Martin Luther King Jr. (1929–1968), Baptist minister who led the US civil rights movement from the mid-1950s until his death [S1]. Draft: primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7); B 3 (0.5, alts 4 and 2); D 2 (0.7); mid_basin BELOW_THRESHOLD. Plotted (faded).
+Martin Luther King Jr. (1929–1968), Baptist minister who led the US civil rights movement from the mid-1950s until his death [S1]. Draft: primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7); B 3 (0.5, alts 4 and 2); D 2 (0.7); mid_basin true (0.7). B re-based on Strength to Love (1963) by Jason's ruling on RQ U1. Plotted (solid).
 
 ## Life and work
 
@@ -295,7 +350,7 @@ Son and grandson of Baptist preachers, raised in 'a rather strict fundamentalist
 
 ## Adult working worldview
 
-'this God both evokes and answers prayers' [S2]; in 1949, 'No laws were broken because they had no knowledge of the existence of law' [S3].
+'this God both evokes and answers prayers' [S2]; nature 'must do everlasting honor to her fixed, immutable laws' [S5]; God will not 'through some breathtaking miracle or a wave of the hand, cast evil out of the world' [S6]; in 1949, 'No laws were broken because they had no knowledge of the existence of law' [S3].
 
 ## Heritage (context only)
 
@@ -311,8 +366,9 @@ Everything in this section is Lane B: labeled belief, not a finding. 'cosmic com
 
 ## Open questions
 
-- Strength to Love (1963), Stride Toward Freedom (1958).
+- The 1963 printed text of Strength to Love; Stride Toward Freedom (1958).
 
 ## Research log
 
 - 2026-10-19: Read Britannica (to 'Early years') and two King Papers documents.
+- 2026-10-19: Read the King Papers drafts of Strength to Love chapters IV, XIII and XV (Jason's ruling on RQ U1).
