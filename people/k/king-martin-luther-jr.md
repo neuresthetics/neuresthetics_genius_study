@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 116). Basics from Britannica (David L. Lewis). Worldview from two texts in the King Papers online edition (Stanford King Institute): 'Pilgrimage to Nonviolence' (Christian Century, 13 April 1960; in span) and a 1949 Crozer seminary essay (unpublished; before the span, P31). Not a scientist (P30). primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7, alt 0); B 3 (0.5, alts 4 and 2; P41, from the 1949 essay); C UNKNOWN; D 2 (0.7, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Clayborne Carson (KI2); B how_known now says the 1949 essay is one private document, scholar-backed, 0.5 (§3), with the basis label kept pending ruling U1 (KI9, on instruction); 'editors back the reading' narrowed to scriptural literalism (note). B and mid_basin unchanged; U1 (re-basing B on Strength to Love) not applied: waiting on Jason."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 116). Basics from Britannica (Clayborne Carson; author corrected in the batch U audit fixes). Worldview from two texts in the King Papers online edition (Stanford King Institute): 'Pilgrimage to Nonviolence' (Christian Century, 13 April 1960; in span) and a 1949 Crozer seminary essay (unpublished; before the span, P31). Not a scientist (P30). primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7, alt 0); B 3 (0.5, alts 4 and 2; P41, from the 1949 essay); C UNKNOWN; D 2 (0.7, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Plotted (faded). Draft, not reviewed."}
 
 identity:
   id: king-martin-luther-jr
@@ -117,7 +118,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S3, locator: "virgin-birth and resurrection paragraphs; editors' headnote"}, {source: S2, locator: "closing section"}]
       rationale: "Scored on his account of nature (P6). A non-scientist who rejects a miracle without stating an exceptionless order: B 3 at 0.5, alternative 4 (P41, Tolstoy precedent). In 1949 he calls a virgin birth 'downright improbable and even impossible', says 'No laws were broken because they had no knowledge of the existence of law' and 'We of this scientific age will not explain the birth of Jesus in such unscientific terms', and finds the external evidence for the bodily resurrection 'wanting'. Named alternative 2: in the span (1960) 'the universe is under the control of a loving purpose' and God 'answers prayers', which could be special providence as a live part of how events go."
-      how_known: "One unpublished seminary essay (1949), his own words, before the span: it counts under P31 because the 1960 essay documents a change on the doctrine of man and on how real God felt to him ('a metaphysical category' to 'a living reality'), not on miracles. A single unpublished document takes the private ceiling; the King Papers editors back the reading ('King shows himself willing to abandon scriptural literalism', S3 headnote), so 0.5 (P18). The essay 'follows the book's structure and argument closely' (Hedley's The Symbol of the Faith; S3 headnote)."
+      how_known: "One unpublished seminary essay (1949), his own words, before the span: it counts under P31 because the 1960 essay documents a change on the doctrine of man and on how real God felt to him ('a metaphysical category' to 'a living reality'), not on miracles. One private document, scholar-backed, so 0.5 (§3, P18): a single private document is not 'consistent private letters'; the label is kept only as the private-ceiling basis (as for Austen), pending ruling U1. The King Papers editors back the reading only on scriptural literalism ('King shows himself willing to abandon scriptural literalism', S3 headnote); they do not comment on the 'No laws were broken' line, which has no Hedley parallel in their notes. The essay 'follows the book's structure and argument closely' (Hedley's The Symbol of the Faith; S3 headnote)."
       alternatives:
         - {value: 4, note: "P41: rejecting a miracle cannot rule out a no-exception nature.", cites: [{source: S3, locator: "virgin-birth paragraph"}]}
         - {value: 2, note: "Answered prayer and a 'loving purpose' controlling the universe (1960).", cites: [{source: S2, locator: "closing section"}]}
@@ -237,8 +238,8 @@ sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
-    author: "David L. Lewis (Britannica)"
-    citation: "Lewis, David L. \"Martin Luther King, Jr.\" Encyclopaedia Britannica (updated 18 October 2026). https://www.britannica.com/biography/Martin-Luther-King-Jr. Read live 2026-10-19."
+    author: "Clayborne Carson (Britannica)"
+    citation: "Carson, Clayborne. \"Martin Luther King, Jr.\" Encyclopaedia Britannica (updated 18 October 2026). https://www.britannica.com/biography/Martin-Luther-King-Jr. Read live 2026-10-19."
     url: "https://www.britannica.com/biography/Martin-Luther-King-Jr"
     accessed: 2026-10-19
     reliability_note: "Signed article; fetched text ran through 'Early years'. Question boxes cited for dates only."

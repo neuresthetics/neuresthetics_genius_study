@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 118; taken in place of Louis Pasteur, already coded). Basics from Britannica (Anne J. Cruz). Worldview from his own dedication (19 April 1616) and prologue to Los trabajos de Persiles y Sigismunda (published 1617), read in the Calpe 1920 edition on Wikisource; after the span (P1 cap 0.5). Characters' words in the novels are not his (P42). Not a scientist (P30). primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B BELOW_THRESHOLD; C BELOW_THRESHOLD; D UNKNOWN; E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Edward C. Riley (CE2). Ruling U2 (v8's call on the auditor's advice): primary_system CHRIST 0.5 -> BELOW_THRESHOLD, CHRIST the named lead; the last rites recorded in nominal_affiliations as practice; the dedication formulas treated as context (P42 will-preamble addendum, by analogy). Still not plotted."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 118; taken in place of Louis Pasteur, already coded). Basics from Britannica (Edward C. Riley; author corrected in the batch U audit fixes). Worldview from his own dedication (19 April 1616) and prologue to Los trabajos de Persiles y Sigismunda (published 1617), read in the Calpe 1920 edition on Wikisource; after the span (P1 cap 0.5). Characters' words in the novels are not his (P42). Not a scientist (P30). primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B BELOW_THRESHOLD; C BELOW_THRESHOLD; D UNKNOWN; E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
 identity:
   id: de-cervantes-miguel
@@ -79,19 +80,12 @@ worldview:
   working_years: {value: "1605–1615", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Baptized Catholic; ransomed from Algiers in 1580 with the aid of the Trinitarian friars", certainty: 0.7, cites: [{source: S1, locator: "body; 'Soldier and slave'"}], how_known: "Britannica. Context, not a code."}
+    - {value: "Received extreme unction on 18 April 1616 ('Ayer me dieron la extremaunción, y hoy escribo ésta')", certainty: 0.7, cites: [{source: S2, locator: "Dedicatorias, p. 9"}], how_known: "His own dated dedication (19 April 1616). Practice at membership level, not a code (ruling U2; CHRIST do_not_use_when)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing in his own voice read on the topic."}
-  primary_system:
-    value: CHRIST
-    basis: written_profession
-    certainty: 0.5
-    cites: [{source: S2, locator: "Dedicatorias, pp. 9–10; Prólogo, p. 13"}]
-    rationale: "Christian practice and belief in his own published words: 'Ayer me dieron la extremaunción, y hoy escribo ésta' (the sacrament of the Church, dedication of 19 April 1616) and the prologue's farewell 'que yo me voy muriendo, y deseando veros presto contentos en la otra vida'. Catholic branch. Named alternative BELOW_THRESHOLD: receiving a sacrament is practice, and 'cúmplase la voluntad de los cielos' and 'guarde Dios a vuesa excelencia' are set courtesy formulas of a dedication (compare P42's will-preamble addendum), so the text may show no belief beyond convention."
-    how_known: "Dedication and prologue written for publication (Persiles, 1617), in his own voice, a few days before his death and after the working years, so 0.5 (P1). Don Quixote's characters, its narrators and the novellas' events are not his view (P42)."
-    alternatives:
-      - {value: BELOW_THRESHOLD, note: "Sacrament as practice; formulas as convention.", cites: [{source: S2, locator: "Dedicatorias, pp. 9–10"}]}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Ruling U2 (v8's call on the auditor's advice, batch U audit at 59bb9fc): a report of receiving a sacrament plus a generic hope of 'la otra vida', in a dedication and prologue written after the span, is not enough for CHRIST. 'Ayer me dieron la extremaunción, y hoy escribo ésta' (dedication, 19 April 1616) is practice at membership level (CHRIST do_not_use_when) and is recorded in nominal_affiliations; 'deseando veros presto contentos en la otra vida' (prologue) is an own-composed but generic farewell; 'cúmplase la voluntad de los cielos' and 'guarde Dios a vuesa excelencia' are set dedication formulas, context only (P42 will-preamble addendum, by analogy). CHRIST is the named lead; the in-span prologues (Don Quixote I and II, Novelas ejemplares) could restore it. Don Quixote's characters, its narrators and the novellas' events are not his view (P42)."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Chosen at 0.5 (P1 cap)."}
+    - {code: CHRIST, reason: "Named lead (ruling U2): last rites as practice and a generic afterlife hope, after the span; not enough for a code."}
     - {code: CLTHEI, reason: "Rejected: 'milagro' is a figure for an unlikely recovery, not stressed petition."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "Lead only: 'cúmplase la voluntad de los cielos' and 'guarde Dios a vuesa excelencia como puede' (S2, pp. 9–10) are courtesy formulas of a dedication and do not place God."}
@@ -136,7 +130,7 @@ worldview:
       verified_on: 2026-10-19
       note: "'A Dios' as spelled in this edition (adiós). Undated; written by April 1616."
   changes_over_life: []
-  coder_notes: "Coder's call. The only own-voice evidence read is the Persiles dedication and prologue (1616), after the span (P1). CHRIST rests on the sacrament and the hope of 'la otra vida', with BELOW_THRESHOLD as the named alternative because dedication formulas are conventional. The novels are fiction: no character's words are taken as his (P42), and no own-voice adoption was read. Leads: the prologues to Don Quixote I and II and the Novelas ejemplares; his entry into the Franciscan Third Order (not in the sources read). Not plotted."
+  coder_notes: "Coder's call. The only own-voice evidence read is the Persiles dedication and prologue (1616), after the span (P1). primary_system is BELOW_THRESHOLD under ruling U2, with CHRIST as the named lead: the sacrament is practice (nominal_affiliations), the hope of 'la otra vida' generic, and the dedication formulas conventional. The Third Order entry (1613), if sourced, would be membership only and give no code (audit note). The novels are fiction: no character's words are taken as his (P42), and no own-voice adoption was read. Leads: the prologues to Don Quixote I and II and the Novelas ejemplares; his entry into the Franciscan Third Order (not in the sources read). Not plotted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -182,8 +176,8 @@ sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
-    author: "Anne J. Cruz (Britannica)"
-    citation: "Cruz, Anne J. \"Miguel de Cervantes.\" Encyclopaedia Britannica (updated 2 October 2026). https://www.britannica.com/biography/Miguel-de-Cervantes. Read live 2026-10-19."
+    author: "Edward C. Riley (Britannica)"
+    citation: "Riley, Edward C. \"Miguel de Cervantes.\" Encyclopaedia Britannica (updated 2 October 2026). https://www.britannica.com/biography/Miguel-de-Cervantes. Read live 2026-10-19."
     url: "https://www.britannica.com/biography/Miguel-de-Cervantes"
     accessed: 2026-10-19
     reliability_note: "Signed article; fetched text ran through 'Soldier and slave'. Question boxes cited only where marked."
@@ -214,7 +208,7 @@ sources:
 
 ## Summary
 
-Miguel de Cervantes (1547–1616), Spanish novelist, playwright and poet, creator of Don Quixote [S1]. Draft: primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A, B and C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
+Miguel de Cervantes (1547–1616), Spanish novelist, playwright and poet, creator of Don Quixote [S1]. Draft: primary_system BELOW_THRESHOLD (CHRIST lead, ruling U2); A, B and C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): HE4, the later essays and lectures listed as one body-of-work contribution (1946–1964; SEP for lasting, IEP for dates), span and working_years 1927 -> 1927–1964; note, the dates of the break with Catholicism (Britannica 1916–17, IEP 9 January 1919) in changes_over_life. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 115). Basics from Britannica (Arne D. Naess), SEP (Mark Wrathall) and IEP (W. J. Korab-Karpowicz). No text of his own on God or nature read: Phänomenologie und Theologie (1927) and the 1919 letter are leads only (P26). Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN; C UNKNOWN; D BELOW_THRESHOLD; E UNKNOWN; mid_basin UNKNOWN. Single-year span 1927 (Being and Time). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -46,7 +47,8 @@ basics:
 contribution:
   fields: {value: ["philosophy", "phenomenology", "ontology"], certainty: 0.7, cites: [{source: S2, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "SEP and IEP."}
   lasting_original_contributions:
-    - {value: "Being and Time (Sein und Zeit): the question of the meaning of being pursued through a phenomenological analysis of human existence (Dasein) and its temporality", year: 1927, kind: work, lasting: "'his most important work' (S2); 'recognized as a truly epoch-making work of 20th century philosophy' and 'his most influential work' (S3)", certainty: 1.0, cites: [{source: S2, locator: "opening; §1 Life and Work"}, {source: S3, locator: "§1 Life and Works; §3"}], how_known: "SEP and IEP. The only contribution the sources read call lasting in so many words. Not a theory about natural systems, so not a scientist (P30)."}
+    - {value: "Being and Time (Sein und Zeit): the question of the meaning of being pursued through a phenomenological analysis of human existence (Dasein) and its temporality", year: 1927, kind: work, lasting: "'his most important work' (S2); 'recognized as a truly epoch-making work of 20th century philosophy' and 'his most influential work' (S3)", certainty: 1.0, cites: [{source: S2, locator: "opening; §1 Life and Work"}, {source: S3, locator: "§1 Life and Works; §3"}], how_known: "SEP and IEP. The first lasting contribution; the later essays and lectures are listed below (HE4). Not a theory about natural systems, so not a scientist (P30)."}
+    - {value: "Later essays and lectures on modernity, technology, language and the history of being (among them 'What are Poets for?' 1946, 'Letter on Humanism' 1947, 'The Question Concerning Technology' 1953, 'The Way to Language' 1959, 'Time and Being' 1962, 'The End of Philosophy and the Task of Thinking' 1964)", year: 1946, kind: "body of work", lasting: "'His magnum opus, Being and Time (1927), and his many essays and lectures, profoundly influenced subsequent movements' (S2, opening)", certainty: 0.5, cites: [{source: S2, locator: "opening"}, {source: S3, locator: "§1 Life and Works (last three decades)"}], how_known: "SEP for lasting, IEP for the dates (range 1946–1964; P12 start, P30 end of range). Listed in the batch U audit fixes (HE4, P30 addendum b). 0.5: SEP names the essays as a class, IEP lists the examples."}
   evidence_of_impact:
     - {value: "Being and Time influenced Arendt, Sartre, Beauvoir, Merleau-Ponty, Gadamer, Derrida, Foucault, Deleuze, the Frankfurt School, the Kyoto School and fields from theology to cognitive science", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S2, locator: "opening"}], how_known: "SEP."}
     - {value: "Being and Time 'generated a level of excitement that few other works of philosophy have matched'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "'Being and Time'"}], how_known: "Britannica."}
@@ -80,7 +82,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1927", certainty: 0.5, cites: [{source: S2, locator: "§1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1927–1964", certainty: 0.5, cites: [{source: S2, locator: "opening; §1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Raised Catholic; in 1915 'regarded himself as standing in the service of the Catholic world-view'", certainty: 0.7, cites: [{source: S3, locator: "§1 Life and Works"}], how_known: "IEP's report; before the span and before the 1919 break. Context, not a code."}
     - {value: "Buried in the churchyard in Messkirch", certainty: 0.7, cites: [{source: S3, locator: "§1 Life and Works, last paragraph"}], how_known: "IEP. Context only."}
@@ -100,8 +102,8 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "B_cause is UNKNOWN, which takes precedence (P19)."}
   statements: []
   changes_over_life:
-    - {value: "Catholic: in 1915 'in the service of the Catholic world-view'; announced his break with the 'system of Catholicism' on 9 January 1919, after marrying the Protestant Elfride Petri in 1917", certainty: 0.7, cites: [{source: S3, locator: "§1 Life and Works"}], how_known: "IEP; before the 1927 span."}
-  coder_notes: "Coder's call. The span is one year (Being and Time, 1927), the only contribution the sources read call lasting; SEP's 'his many essays and lectures ... profoundly influenced' (S2, opening) is the named alternative for a longer span, but names no dated item. No primary text on God or nature was reached: the Bard digital-commons copy of Phenomenology and Theology sat behind a Cloudflare check, and Internet Archive copies are access-restricted. Leads: Phänomenologie und Theologie (1927); the letter to Engelbert Krebs (9 January 1919); the Spiegel interview (1966, published 1976; after the span). Not plotted."
+    - {value: "Catholic: in 1915 'in the service of the Catholic world-view'; broke with Catholicism between 1916 and 1919 (married the Lutheran Elfride Petri in 1917)", certainty: 0.7, cites: [{source: S3, locator: "§1 Life and Works"}, {source: S1, locator: "'Background and early career'"}], how_known: "Dates differ by source: Britannica puts the 'rejection of the religion of his youth' in a spiritual crisis in 1916 (after his study of Luther and Calvin), 'completed' by the 1917 marriage; IEP gives his announced break with the 'system of Catholicism' on 9 January 1919. Before the 1927 span either way."}
+  coder_notes: "Span 1927–1964 (batch U audit fix HE4, P30 addendum b): Being and Time (1927) to the later essays and lectures, which SEP's opening names as lasting ('his many essays and lectures, profoundly influenced subsequent movements') and IEP dates 1946–1964. No scored value changes. No primary text on God or nature was reached: the Bard digital-commons copy of Phenomenology and Theology sat behind a Cloudflare check, and Internet Archive copies are access-restricted. Leads: Phänomenologie und Theologie (1927); the letter to Engelbert Krebs (9 January 1919); the Spiegel interview (1966, published 1976; after the span). Not plotted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -112,7 +114,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1927", certainty: 0.5, cites: [{source: S2, locator: "§1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "Only one dated lasting contribution (P29, P30, P39; Wiles, Rembrandt and Edison precedents). Coder's call: the later essays are named in SEP's opening but undated and unranked, so they do not extend the span."}
+  major_work_period: {value: "1927–1964", certainty: 0.5, cites: [{source: S2, locator: "opening; §1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "From Being and Time (1927) to the end of the later essays and lectures listed as one body of work (IEP's latest example, 1964; P12, P30 addendum b). Batch U audit fix (HE4)."}
   age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S1, locator: "facts box"}, {source: S3, locator: "§1 Life and Works"}], how_known: "1927 − 1889 = 38 (P30); 37 in February 1927."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type statement read."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S3, locator: "§1 Life and Works"}], how_known: "None in the sources read."}
@@ -142,7 +144,7 @@ review:
     - {value: "Nazi Party member from May 1933; rector of Freiburg 1933–34; dismissed from his chair in 1946", certainty: 1.0, cites: [{source: S2, locator: "§1 Life and Work; §3"}, {source: S3, locator: "§1 Life and Works"}], how_known: "SEP and IEP."}
   data_quality_flags:
     - "No primary text on God or nature read; every worldview field rests on encyclopedia reports."
-    - "Single-year span (1927)."
+    - "Span end rests on IEP's examples of the later essays (to 1964); later writings may extend it."
   open_questions:
     - "Read Phänomenologie und Theologie (1927) in Wegmarken (GA 9) for D and the God question."
     - "Read the 9 January 1919 letter to Engelbert Krebs."
@@ -216,7 +218,7 @@ Catholic [S2, S3].
 
 ## Timing
 
-1927, at 38 [S3].
+1927–1964, from age 38 [S2, S3].
 
 ## Lane B notes (labeled belief model)
 

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): FO5, The History of Sexuality item now the multivolume work, range 1976–1984 (vols. 2–3 in 1984, SEP); span and working_years 1975–1979 -> 1975–1984; note, SEP revision date (21 April 2026) added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 117). Basics from Britannica (James Faubion, Britannica Editors) and SEP (Gutting and Oksala); Catholic upbringing and the absence of belief from Michael C. Behrent's Commonweal interview (15 October 2026). No text of his own on God or nature read. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1975–1979 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -47,8 +48,8 @@ contribution:
   fields: {value: ["philosophy", "history of systems of thought", "social theory"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening; §1"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Discipline and Punish (Surveiller et punir): the modern prison and disciplinary power as subject formation", year: 1975, kind: work, lasting: "'The critical impact of Discipline and Punish' (S2); among 'His best-known works' (S1, question box); 'The orthodox answer' for where to start (S3)", certainty: 0.7, cites: [{source: S1, locator: "'Education and career'"}, {source: S2, locator: "§3.4 History of the Prison"}, {source: S3, locator: "answer on where newcomers should start"}], how_known: "SEP and Behrent. Not a theory about natural systems, so not a scientist (P30)."}
-    - {value: "The History of Sexuality, vol. 1: power as productive and diffuse ('microphysics of power')", year: 1976, kind: work, lasting: "'one of the most influential contemporary understandings of power' (S2); 'canonical for gay and lesbian studies and queer theory' (S1, question box)", certainty: 0.7, cites: [{source: S2, locator: "§3.5 History of Modern Sexuality"}, {source: S3, locator: "answer on the fourth volume"}], how_known: "SEP; date from Behrent ('published the first volume in 1976')."}
-    - {value: "Collège de France lectures Security, Territory, Population (1977–78) and The Birth of Biopolitics (1978–79): government and governmentality", year: 1977, kind: "body of work", lasting: "'have been especially influential' (S2)", certainty: 0.5, cites: [{source: S2, locator: "§4 Foucault after Foucault"}], how_known: "SEP. Published posthumously; dated by delivery (P30), range 1977–1979, start year (P12). Whether a posthumously published lecture course sets the span end is the coder's call; 1976 is the named alternative end."}
+    - {value: "The History of Sexuality (vol. 1, 1976: power as productive and diffuse, 'microphysics of power'; vols. 2–3, The Use of Pleasure and The Care of the Self, 1984: the ethical self in antiquity)", year: 1976, kind: work, lasting: "'one of the most influential contemporary understandings of power' (S2); 'The History of Sexuality, a multivolume history' among 'His best-known works' and 'canonical for gay and lesbian studies and queer theory' (S1, question box)", certainty: 0.7, cites: [{source: S2, locator: "§3.5 History of Modern Sexuality"}, {source: S3, locator: "answer on the fourth volume"}, {source: S1, locator: "question box (best-known works)"}], how_known: "SEP; date of vol. 1 from Behrent ('published the first volume in 1976'); vols. 2–3 from SEP ('his last two books (1984) ... The Use of Pleasure and The Care of the Self'). Range 1976–1984: start 1976 (P12), end 1984 (P30 addendum b, end of range); batch U audit fix FO5."}
+    - {value: "Collège de France lectures Security, Territory, Population (1977–78) and The Birth of Biopolitics (1978–79): government and governmentality", year: 1977, kind: "body of work", lasting: "'have been especially influential' (S2)", certainty: 0.5, cites: [{source: S2, locator: "§4 Foucault after Foucault"}], how_known: "SEP. Published posthumously; dated by delivery (P30), range 1977–1979, start year (P12). Inside the span; the end is set by The History of Sexuality (1984)."}
   evidence_of_impact:
     - {value: "'one of the most influential and controversial scholars of the post-World War II period'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     - {value: "'regularly reported to be the most cited scholar in the social sciences and humanities'", kind: other, certainty: 0.5, cites: [{source: S3, locator: "question on summarizing his thought"}], how_known: "The interviewer's words, not Behrent's; 0.5."}
@@ -81,7 +82,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1975–1979", certainty: 0.5, cites: [{source: S2, locator: "§3.4; §4"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1975–1984", certainty: 0.5, cites: [{source: S2, locator: "§3.4; §3.5; §4"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Raised nominally Catholic; altar boy; Catholic secondary school", certainty: 0.5, cites: [{source: S3, locator: "first answer"}], how_known: "Behrent. Upbringing only; no code (CHRIST do_not_use_when)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing in his own words read."}
@@ -101,7 +102,7 @@ worldview:
   statements: []
   changes_over_life:
     - {value: "Catholic upbringing and schooling; 'embraced and then abandoned communism' at the ENS", certainty: 0.5, cites: [{source: S1, locator: "'Education and career'"}, {source: S3, locator: "first answer"}], how_known: "Britannica (communism) and Behrent (upbringing); before the span."}
-  coder_notes: "Coder's call on the span. Start 1975 (Discipline and Punish: SEP 'critical impact', Behrent's 'orthodox' starting point); alternative start 1966 (The Order of Things: Britannica 'wide notice', but Behrent calls it 'basically a forgotten book'). End 1979 (The Birth of Biopolitics, delivered 1978–79, published posthumously; SEP 'especially influential'; dated by delivery, P30); alternative end 1976 (History of Sexuality vol. 1, 'most influential'). The span does not move any score: every axis is unscored. Leads: the 1952–53 Lille course 'Knowledge of Man and Transcendental Reflection' (published 2022; per S3, a philosophy of man impossible while knowledge was 'anchored in the belief in an infinite being'); interviews in Dits et écrits. Not plotted."
+  coder_notes: "Coder's call on the span. Start 1975 (Discipline and Punish: SEP 'critical impact', Behrent's 'orthodox' starting point); alternative start 1966 (The Order of Things: Britannica 'wide notice', but Behrent calls it 'basically a forgotten book'). End 1984 (the multivolume History of Sexuality, vols. 2–3 published 1984; batch U audit fix FO5, P30 addendum b); the governmentality lectures (1977–79, dated by delivery, P30) fall inside. The span does not move any score: every axis is unscored. Leads: the 1952–53 Lille course 'Knowledge of Man and Transcendental Reflection' (published 2022; per S3, a philosophy of man impossible while knowledge was 'anchored in the belief in an infinite being'); interviews in Dits et écrits. Not plotted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -112,7 +113,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1975–1979", certainty: 0.5, cites: [{source: S2, locator: "§3.4; §3.5; §4"}, {source: S3, locator: "answer on where newcomers should start"}], how_known: "From Discipline and Punish (1975) to the end of The Birth of Biopolitics lectures (1979) (P12, P30). Coder's call; alternatives 1966 for the start and 1976 for the end (coder_notes)."}
+  major_work_period: {value: "1975–1984", certainty: 0.5, cites: [{source: S2, locator: "§3.4; §3.5; §4"}, {source: S3, locator: "answer on where newcomers should start"}], how_known: "From Discipline and Punish (1975) to the last volumes of The History of Sexuality (1984) (P12, P30 addendum b; batch U audit fix FO5). Coder's call on the start; alternative 1966 (coder_notes)."}
   age_at_first_lasting_contribution: {value: 49, certainty: 0.5, cites: [{source: S1, locator: "facts box"}, {source: S2, locator: "§3.4"}], how_known: "1975 − 1926 = 49 (P30); 40 under the 1966 alternative."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type statement read."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S3, locator: "first answer"}], how_known: "None in the sources read."}
@@ -142,7 +143,7 @@ review:
     - {value: "Vilified by the right as deviant and subversive in his lifetime; some on the left later rejected his approach", certainty: 0.5, cites: [{source: S3, locator: "standfirst"}], how_known: "Commonweal's introduction."}
   data_quality_flags:
     - "No primary text on God or nature read; the religion fields rest on one scholar's interview answers."
-    - "Span is a coder's call with named alternatives."
+    - "Span start is a coder's call with a named alternative (1966)."
   open_questions:
     - "Interviews in Dits et écrits for statements on God, religion or nature."
 
@@ -160,7 +161,7 @@ sources:
     type: tertiary
     kind: encyclopedia
     author: "Gary Gutting and Johanna Oksala"
-    citation: "Gutting, Gary, and Johanna Oksala. \"Michel Foucault.\" Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/foucault/"
+    citation: "Gutting, Gary, and Johanna Oksala. \"Michel Foucault.\" Stanford Encyclopedia of Philosophy (first published 2 April 2003; substantive revision 21 April 2026). https://plato.stanford.edu/entries/foucault/"
     url: "https://plato.stanford.edu/entries/foucault/"
     accessed: 2026-10-19
     reliability_note: "Signed scholarly encyclopedia; §1, §3.4, §3.5 and §4 used."
@@ -199,7 +200,7 @@ ENS, Lille, Uppsala, Warsaw, Hamburg, Clermont-Ferrand, Tunis, the Collège de F
 
 ## Contribution and impact
 
-Discipline and Punish (1975), The History of Sexuality vol. 1 (1976), the governmentality lectures [S2].
+Discipline and Punish (1975), The History of Sexuality (1976–1984), the governmentality lectures [S2].
 
 ## Childhood and education
 
@@ -215,7 +216,7 @@ Catholic [S3].
 
 ## Timing
 
-1975–1979, from age 49 [S2].
+1975–1984, from age 49 [S2].
 
 ## Lane B notes (labeled belief model)
 

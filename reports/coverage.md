@@ -60,16 +60,16 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 |---|---|---|---|---|---|---|
 | identity | 262 | 205 | 8 | 49 | 0 | 78.2% |
 | basics | 1441 | 1407 | 0 | 34 | 0 | 97.6% |
-| contribution | 1100 | 1099 | 0 | 1 | 0 | 99.9% |
+| contribution | 1101 | 1100 | 0 | 1 | 0 | 99.9% |
 | childhood | 1426 | 972 | 404 | 49 | 1 | 68.2% |
-| worldview | 1428 | 637 | 7 | 566 | 218 | 44.6% |
+| worldview | 1429 | 637 | 7 | 566 | 219 | 44.6% |
 | heritage | 524 | 226 | 263 | 34 | 1 | 43.1% |
 | timing | 655 | 481 | 42 | 126 | 6 | 73.4% |
 | lane_b | 393 | 390 | 3 | 0 | 0 | 99.2% |
 | institutions | 295 | 295 | 0 | 0 | 0 | 100.0% |
 | collaborators | 376 | 376 | 0 | 0 | 0 | 100.0% |
 | review | 182 | 182 | 0 | 0 | 0 | 100.0% |
-| **all** | 8082 | 6270 | 727 | 859 | 226 | 77.6% |
+| **all** | 8084 | 6271 | 727 | 859 | 227 | 77.6% |
 
 ### Worldview coding status
 
@@ -98,7 +98,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | darwin-charles | DEISM | draft — unreviewed |
 | davis-miles | UNKNOWN | draft — unreviewed |
 | de-beauvoir-simone | EXIST | draft — unreviewed |
-| de-cervantes-miguel | CHRIST | draft — unreviewed |
+| de-cervantes-miguel | BELOW_THRESHOLD | draft — unreviewed |
 | debussy-claude | BELOW_THRESHOLD (interview) | draft — unreviewed |
 | derrida-jacques | BELOW_THRESHOLD | draft — unreviewed |
 | descartes-rene | CLASS_THEISM | draft — unreviewed |
