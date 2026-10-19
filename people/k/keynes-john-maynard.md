@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 111). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from 'My Early Beliefs' (read to the Memoir Club 9 September 1938; published 1949; Collected Writings vol. 10, pp. 433–450), read in an excerpt web copy with CW page numbers. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit notes for batch T (blind audit of 754bb24, run 1): S2 kind 'published work by the subject' -> other (read to a private club in 1938, published only in 1949), matching the statements' kind 'unpublished manuscript'; verified_against 'scholarly edition' -> 'primary transcription' (an unofficial excerpt web copy, not the printed volume). No value changes."}
 
 identity:
   id: keynes-john-maynard
@@ -98,16 +99,16 @@ worldview:
       context: "'My Early Beliefs', a paper read to the Memoir Club at Tilton, defending the Cambridge circle of 1902–14 against D. H. Lawrence; the 'religion' is Moore's ethics. The passage ends 'It is still my religion under the surface.'"
       axes: []
       kind: "unpublished manuscript"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Collected Writings vol. 10 text, read in an excerpt web copy (cuts marked '…' in the copy)."
+      note: "Unpublished in his lifetime (read to a private club in 1938; first published 1949), hence the kind. Read in an unofficial web copy of an anthology excerpt that keeps the Collected Writings vol. 10 page numbers, with cuts marked '…'; not checked against the printed volume, so 'primary transcription', not 'scholarly edition' (batch T audit note)."
     - text: "We used to regard the Christians as the enemy, because they appeared as the representatives of tradition, convention and hocus-pocus. In truth it was the Benthamite calculus, based on an over-valuation of the economic criterion, which was destroying the quality of the popular Ideal."
       cites: [{source: S2, locator: "p. 445"}]
       date: "1938-09-09"
       context: "Same paper."
       axes: [D_authority]
       kind: "unpublished manuscript"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
   changes_over_life: []
@@ -166,12 +167,12 @@ sources:
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators]
   - id: S2
     type: primary
-    kind: "published work by the subject"
+    kind: other
     author: "John Maynard Keynes"
     citation: "Keynes, John Maynard. 'My Early Beliefs' (read to the Memoir Club, Tilton, 9 September 1938; first published in Two Memoirs, 1949). The Collected Writings of John Maynard Keynes, vol. 10, pp. 433–450. Excerpt read at https://neilhacker.com/wp-content/uploads/2021/01/my-early-beliefs.pdf"
     url: "https://neilhacker.com/wp-content/uploads/2021/01/my-early-beliefs.pdf"
     accessed: 2026-10-19
-    reliability_note: "Unofficial web copy of an anthology excerpt (with an editor's headnote and cuts marked '…'), keeping the CW page numbers in brackets; not checked against the printed volume (0.7 cap), and after the working years (0.5)."
+    reliability_note: "Unofficial web copy of an anthology excerpt (with an editor's headnote and cuts marked '…'), keeping the CW page numbers in brackets; not checked against the printed volume (0.7 cap), and after the working years (0.5). Kind 'other', not 'published work by the subject': a paper read to a private club and published only after his death (1949), consistent with the statements' kind 'unpublished manuscript' (batch T audit note)."
     used_for: [worldview, childhood, timing, lane_b, collaborators]
   - id: S4
     type: secondary

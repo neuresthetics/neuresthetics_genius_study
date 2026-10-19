@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 106). Basics from Britannica (Brian C. Southam, signed; body only, read live). Worldview from her letters to Fanny Knight in the Brabourne edition (1884), read in the Republic of Pemberley's web transcription (unofficial web copy, 0.7 cap). Not a scientist. primary_system CHRIST (0.7, consistent private letters); A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. The three prayers attributed to her are context only (attribution not settled, P42). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: AU4 FAIL, AU5 WEAKEN; ruling S3, v8's call on the auditor's advice). The three prayers now count as her words under P42 (S3, Stovel: 'It seems clear that Jane Austen composed the prayers'), at 0.5: undated manuscripts copied by others, attributed by one scholar. A BELOW_THRESHOLD -> 0 at 0.5, alternative 1. 'Thou art every where present' now quoted from a source read (S5, a web transcription of the prayers). Henry Austen's 1818 remark added as context for CHRIST. B stays UNKNOWN (P16), so mid_basin stays UNKNOWN and she stays unplotted."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (Austen second blind run at 754bb24: prayer treatment holds; AU-P5 WEAKEN; ruling RQ-AU1, v8's call on the auditor's advice). B UNKNOWN -> BELOW_THRESHOLD, named reading 1 at 0.5 (her own petitions for physical protection are not a statement about nature under P16); mid_basin UNKNOWN -> BELOW_THRESHOLD; still not plotted. 'important but not decisive' marked as the coder's translation of S5's Italian summary; 'accepted by most editors; doubted by Todd and Bree'; the disputed hand of the inscription flagged; the A basis label explained (P18 private-document row). New statement: prayer I, fourth paragraph."}
 
 identity:
   id: austen-jane
@@ -100,14 +101,18 @@ worldview:
       certainty: 0.5
       cites: [{source: S3, locator: "parts I–II"}, {source: S5, locator: "prayers I–III"}]
       rationale: "Transcendent personal pole. The three prayers address a Father in heaven who sees, judges and pardons: 'Have we thought irreverently of Thee, have we disobeyed thy Commandments' (I), 'Pardon Oh God! whatever thou has seen amiss in us' (II), 'secure an Eternity of Happiness with each other in thy Heavenly Kingdom. Grant this most merciful Father, for the sake of our Blessed Saviour' (III). Named alternative 1: 'Thou art every where present, from Thee no secret can be hid' (I) adds omnipresence, though as the knowledge of a personal judge, not identity with the world. The 1817 letter ('I hope Heaven, in its mercy, will take her soon', letter LXXXIII) is consistent but after the working years and conventional."
-      how_known: "P42 (ruling S3, v8's call on the auditor's advice): a source read attributes these texts to her (S3: 'It seems clear that Jane Austen composed the prayers'; the Doody and Murray edition 'treats the prayers as Jane Austen's own'). Undated manuscripts, copied by others (Stovel: Cassandra's inscription, Henry's hand; Todd and Bree, as summarised in S5: James Austen and Cassandra, c. 1818–1819), attributed on the family inscription, so 0.5 (private ceiling and the attribution doubt). Le Faye places them in her later life (quoted in S3, part III), which may or may not fall in 1811–1816."
+      how_known: "P42 (ruling S3, v8's call on the auditor's advice): a source read attributes these texts to her (S3: 'It seems clear that Jane Austen composed the prayers'; the Doody and Murray edition 'treats the prayers as Jane Austen's own'). Undated manuscripts, copied by others (Stovel: Cassandra's inscription, Henry's hand; Todd and Bree, as summarised in S5: James Austen and Cassandra, c. 1818–1819), attributed on the family inscription; the attribution is accepted by most editors and doubted by Todd and Bree, so 0.5 (private ceiling and the attribution doubt). Who wrote the inscription is itself disputed: Stovel says Cassandra's hand (S3, part I); S5's summary of Todd and Bree says a hand very like Charles Austen's. Basis label: consistent_private_letters is the basis table's private-document row, which P18 assigns to an unpublished or private document such as a prayer (three prayers on two sheets, consistent); the prayers are not letters, and since the surviving copies are in other hands their kind is 'unpublished manuscript', not 'document in own hand'. Le Faye places them in her later life (quoted in S3, part III), which may or may not fall in 1811–1816."
       alternatives:
         - {value: 1, note: "'Thou art every where present' (prayer I).", cites: [{source: S5, locator: "prayer I, first paragraph"}]}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30), and no statement on nature or the physical world in the letters read (P16, P19). The 1817 hope that 'Heaven, in its mercy' will take Harriot is about a death, not an account of nature's order; checked and found off-point."}
+    B_cause:
+      value: BELOW_THRESHOLD
+      cites: [{source: S5, locator: "prayer I, fourth paragraph; prayer III, fifth to last paragraphs"}, {source: S3, locator: "part II"}]
+      how_known: "Not a scientist (P30). Ruling RQ-AU1 (v8's call on the auditor's advice, Austen second blind run at 754bb24): a person's own prayer for physical protection or healing is not a statement about nature under P16; petitionary prayer only implies a God who answers by acting, which is BELOW_THRESHOLD evidence (P19). The prayers petition for physical protection: 'guard us, and all we love, from Evil this night ... heartily do we pray for the safety of all that travel by Land or by Sea' (I); 'Bring us in safety to the beginning of another day'; 'assuage the pangs of disease'; 'avert from them all material & lasting Evil of Body or Mind' (III). Stovel calls the petitions 'the work of the common, generic believer' (S3, part II). The 1817 hope that 'Heaven, in its mercy' will take Harriot (letter LXXXIII) is about a death; checked and off-point."
+      note: "Named reading 1 at 0.5 (petition answered within a created order), not adopted under RQ-AU1; Newton's private petition was likewise only a named alternative on B (P7 table)."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Evangelicals 'from reason and feeling must be happiest and safest' (letter LXXX) may refer to salvation, but the sense is not explicit; 'if we believe the doctrine of original sin' (letter LXXXII, February 1817) is playful. Too indirect (P19)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation against observation or reason in the letters read (S2)."}
     E_scope: {value: UNKNOWN, how_known: "Nothing on the world's order in the letters read (S2)."}
-  mid_basin: {value: UNKNOWN, how_known: "P4 test: B is UNKNOWN, which takes precedence (P19); A is 0 at 0.5 (prayers, P42 ruling S3)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "P4 test: B is BELOW_THRESHOLD (RQ-AU1) and A is 0 only at 0.5 (prayers, P42 ruling S3), under the 0.7 bar (P10, P19). No needed axis is UNKNOWN."}
   statements:
     - text: "And, as to there being any objection from his goodness, from the danger of his becoming even evangelical, I cannot admit that.  I am by no means convinced that we ought not all to be evangelicals, and am at least persuaded that they who are so from reason and feeling must be happiest and safest."
       cites: [{source: S2, locator: "letter LXXX, Chawton, Friday 18 November 1814"}]
@@ -152,6 +157,14 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "S5's text; Stovel (S3, part II) quotes the 'may we by the Assistance ...' clause and the 'Grant this' sentence with the same words (capitals and '&' differ)."
+    - text: "Be Gracious to our Necessities, and guard us, and all we love, from Evil this night. May the sick and afflicted, be now, & ever thy care; and heartily do we pray for the safety of all that travel by Land or by Sea, for the comfort & protection of the Orphan & Widow, & that thy pity may be shewn upon all Captives & Prisoners."
+      cites: [{source: S5, locator: "prayer I, fourth paragraph"}]
+      context: "First prayer; petitions for the household and for others. Undated."
+      axes: [B_cause]
+      kind: "unpublished manuscript"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-19
+      note: "S5's text, checked live 2026-10-19. Petition, not a statement about nature (ruling RQ-AU1)."
     - text: "her opinions accorded strictly with those of our Established Church"
       cites: [{source: S3, locator: "part II"}]
       date: "1818"
@@ -162,7 +175,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Her brother's characterisation, not her words: supporting context for CHRIST only."
   changes_over_life: []
-  coder_notes: "Coder's call. CHRIST rests on two private letters of November 1814. The three prayers (Mills College manuscript) count as hers under P42 (ruling S3), at 0.5, and give A 0 (alternative 1). Nothing read bears on nature, so B is UNKNOWN and she is not plotted. Doubt on the attribution: Todd and Bree, as summarised in S5, call the inscription the only evidence, 'important but not decisive'. Words that the Pemberley transcription restores from outside the Brabourne text are not quoted."
+  coder_notes: "Coder's call. CHRIST rests on two private letters of November 1814. The three prayers (Mills College manuscript) count as hers under P42 (ruling S3), at 0.5, and give A 0 (alternative 1). The prayers' petitions for physical protection bear on B only as an implication, so B is BELOW_THRESHOLD with 1 named (ruling RQ-AU1) and she is not plotted. Doubt on the attribution: S5's Italian headnote, summarising Todd and Bree, calls the inscription the only evidence, 'un indizio importante ma non decisivo' ('important but not decisive' is the coder's translation of S5's summary, not Todd and Bree's words). The attribution is accepted by most editors; doubted by Todd and Bree. Words that the Pemberley transcription restores from outside the Brabourne text are not quoted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -199,6 +212,7 @@ review:
     - "Letters read in an unofficial web transcription of the Brabourne edition (1884), which cuts some passages; the transcription restores some cut words in brackets (not quoted). Not checked against Le Faye's edition."
     - "Brabourne misdates letters LXXXII–LXXXIV to 1816; the transcription notes they are of 1817."
     - "Cassandra destroyed many letters; 'Only 160 out of thousands' survive (S1)."
+    - "The hand of the prayers' inscription ('Prayers Composed by my ever dear Sister Jane') is disputed: Cassandra's (Stovel, S3 part I) or very like Charles Austen's (Todd and Bree as summarised in S5)."
   open_questions:
     - "Check the letters against Le Faye (4th ed.) and read the letters to Cassandra for religious remarks."
     - "Read Todd and Bree on the prayers' attribution and text (Later Manuscripts, pp. cxviii–cxxvi, Appendix D); the transcription read (S5) is unofficial."
@@ -257,7 +271,7 @@ sources:
 
 ## Summary
 
-Jane Austen (1775–1817), English novelist [S1]. Draft: primary_system CHRIST (0.7); A 0 (0.5, from the prayers, P42); B UNKNOWN; mid_basin UNKNOWN. Not plotted.
+Jane Austen (1775–1817), English novelist [S1]. Draft: primary_system CHRIST (0.7); A 0 (0.5, from the prayers, P42); B BELOW_THRESHOLD (RQ-AU1); mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 

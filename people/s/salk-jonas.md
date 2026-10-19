@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 112). Basics from Britannica (Britannica Editors; revised by Kara Rogers), the Science History Institute and the Salk Institute. Worldview from The John Callaway Interviews (WTTW; broadcast 30 June 1981), AAPB transcript (status 'Correct'). Scientist (P30). All worldview fields rest on one recorded interview after the working years (P1 cap 0.5). primary_system PANT (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A 4 at 0.5). Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: SA3, SA7 WEAKEN; ruling T2, v8's call on the auditor's advice). primary_system PANT -> ATHE at 0.5, alternative PANT ('God was invented because of the necessity for having a form of order' withdraws the entity-term). The killed-virus principle is listed as a discovery (Britannica: killed virus of each of the three types 'could induce antibody formation in monkeys'), so the scientist status no longer rests on an invention (P33). S4 locators now carry AAPB transcript timecodes. A 4, B 3 (0.5) unchanged; plot unchanged."}
 
 identity:
   id: salk-jonas
@@ -47,7 +48,8 @@ basics:
 contribution:
   fields: {value: ["virology", "immunology", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S2, locator: "Salk's Education and Work on Influenza"}], how_known: "Britannica and the Science History Institute."}
   lasting_original_contributions:
-    - {value: "First safe and effective (inactivated, killed-virus) polio vaccine: killed virus of each of the three types induces antibodies; human testing 1952; national field trial 1954; declared safe and effective 12 April 1955", year: 1952, kind: invention, lasting: "'developed the first safe and effective vaccine for polio' (S1); recommended again for US use in 1999 and 2009 'because it cannot accidentally cause polio' (S2)", certainty: 1.0, cites: [{source: S1, locator: "body"}, {source: S2, locator: "The 'Killed-Virus' Principle; Field Trials; Live-Virus versus Killed-Virus Controversy"}], how_known: "Britannica and the Science History Institute. Range 1952–1955: work and its proof (P12, P29). A theory about natural systems tested by experiment (antibody induction in monkeys and children), so he is a scientist (P30)."}
+    - {value: "First safe and effective (inactivated, killed-virus) polio vaccine: killed virus of each of the three types induces antibodies; human testing 1952; national field trial 1954; declared safe and effective 12 April 1955", year: 1952, kind: invention, lasting: "'developed the first safe and effective vaccine for polio' (S1); recommended again for US use in 1999 and 2009 'because it cannot accidentally cause polio' (S2)", certainty: 1.0, cites: [{source: S1, locator: "body"}, {source: S2, locator: "The 'Killed-Virus' Principle; Field Trials; Live-Virus versus Killed-Virus Controversy"}], how_known: "Britannica and the Science History Institute. Range 1952–1955: work and its proof (P12, P29). The vaccine itself is an invention, which alone would not make him a scientist (P33); the result it rests on is listed separately as a discovery."}
+    - {value: "Killed-virus principle: killed poliovirus of each of the three types, though incapable of producing the disease, induces antibody formation (shown in monkeys)", year: 1952, kind: discovery, lasting: "the basis of the first safe and effective polio vaccine (S1, S2)", certainty: 0.5, cites: [{source: S1, locator: "body, third paragraph ('He then demonstrated that killed virus of each of the three ... could induce antibody formation in monkeys')"}, {source: S2, locator: "The 'Killed-Virus' Principle"}], how_known: "Britannica and SHI. Britannica gives no year; dated with the vaccine's first human tests (1952), coder's call, inside the 1952–1955 range. A result about natural systems tested by experiment, so he is a scientist (P30, P33; batch T audit SA3)."}
   evidence_of_impact:
     - {value: "US polio cases fell from an average of more than 45,000 a year before the vaccine to 910 by 1962", kind: other, certainty: 0.7, cites: [{source: S3, locator: "1954–1955 paragraph"}], how_known: "Salk Institute page."}
     - {value: "Presidential Medal of Freedom, 1977", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "last paragraph"}], how_known: "Britannica."}
@@ -73,26 +75,26 @@ childhood:
   childhood_mentors: []
   languages_in_childhood: {value: ["English"], certainty: 0.5, cites: [{source: S3, locator: "opening"}], how_known: "Coder's reading (New York birth)."}
   notable_events:
-    - {value: "Prayed to God as a child, then 'soon realized that I had to do something about it myself'; his mother's saying 'God helps those who help themselves'", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange"}], how_known: "(interview) His recollection in 1981."}
+    - {value: "Prayed to God as a child, then 'soon realized that I had to do something about it myself'; his mother's saying 'God helps those who help themselves'", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:28:53–00:29:57)"}], how_known: "(interview) His recollection in 1981."}
 
 worldview:
   unit: "adult working worldview"
   working_years: {value: "1952–1955", certainty: 0.7, cites: [{source: S2, locator: "The 'Killed-Virus' Principle; Field Trials"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: "Religion 'serves a very important purpose'; 'my use of the term order is the same as the word God'; scientists 'perform the kinds of miracles' people pray for (1981)", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange; closing segment"}], how_known: "(interview) One recorded interview, 26 years after the working years (P1 cap 0.5)."}
+  self_described_science_religion_relation: {value: "Religion 'serves a very important purpose'; 'my use of the term order is the same as the word God'; scientists 'perform the kinds of miracles' people pray for (1981)", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:25:45–00:29:57); closing segment (AAPB 00:55:10–00:58:34)"}], how_known: "(interview) One recorded interview, 26 years after the working years (P1 cap 0.5)."}
   primary_system:
-    value: PANT
+    value: ATHE
     basis: recorded_interview
     certainty: 0.5
-    cites: [{source: S4, locator: "transcript, religion exchange; closing segment"}]
-    rationale: "(interview) Two-part test (PANT use_when). Part 1: 'some might say that my use of the term order is the same as the word God. We're both describing the same phenomenon', against 'an anthropomorphic God ... a personal God that looks after me personally'; and 'I'm very much aware of the miracle of life ... And for me, that's where God is. That's where creation exists now.' Part 2 (a mark beyond feeling, unity as one order): 'it is the existence of order that is fundamental to our existence, that we are manifestations of the existence of order.' Named alternative ATHE: 'God was invented because of the necessity for having a form of order' reads the God-term as a human construct for order, i.e. naturalism that drops the entity-term (PANT do_not_use_when)."
-    how_known: "(interview) Spoken, not written (the use_when names the person's writing); one interview after the working years, so 0.5 (P1, P20)."
+    cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:28:53); closing segment (AAPB 00:57:15–00:58:34)"}]
+    rationale: "(interview) Ruling T2 (v8's call on the auditor's advice, batch T audit at 754bb24): the PANT test's part 1 needs the identity of God and Nature as a claim about what exists, not a figure of speech. Salk gives the equation to others ('some might say that my use of the term order is the same as the word God. We're both describing the same phenomenon') and then withdraws the entity-term: 'that's why God was invented. You see God was invented because of the necessity for having a form of order.' What exists for him is order ('it is the existence of order that is fundamental to our existence, that we are manifestations of the existence of order'); 'that's where God is' (in 'the miracle of life') is reverent language that fails the two-part test, which the guide codes ATHE (ATHE use_when; S6). Named alternative PANT: God and order 'the same phenomenon', with order as one whole (part 2)."
+    how_known: "(interview) Spoken, not written (the PANT test names the person's writing); one interview after the working years, so 0.5 (P1, P20)."
     alternatives:
-      - {value: ATHE, note: "'God was invented'; order is the reality, God a name for it.", cites: [{source: S4, locator: "transcript, religion exchange"}]}
+      - {value: PANT, note: "God and order 'the same phenomenon'; 'that's where God is'.", cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:27:49); closing segment (AAPB 00:57:15–00:58:34)"}]}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: PANT, reason: "God and order 'the same phenomenon'; God 'where' life and creation are; chosen at 0.5."}
-    - {code: ATHE, reason: "'God was invented'; named alternative."}
+    - {code: ATHE, reason: "'God was invented because of the necessity for having a form of order'; chosen at 0.5 (ruling T2)."}
+    - {code: PANT, reason: "God and order 'the same phenomenon'; God 'where' life and creation are; named alternative."}
     - {code: SECHUM, reason: "Rejected: his public identity was not the humanist movement."}
     - {code: JUDA, reason: "Heritage only (S2, S3); never a code."}
   lio_axes:
@@ -100,27 +102,27 @@ worldview:
       value: 4
       basis: recorded_interview
       certainty: 0.5
-      cites: [{source: S4, locator: "transcript, religion exchange; closing segment"}]
+      cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:25:45–00:29:57); closing segment (AAPB 00:55:10–00:58:34)"}]
       rationale: "(interview) Immanent pole: God is the order of which 'we are manifestations', and 'that's where God is' — in life and man; he sets this against a God 'in the form of a person'. Named alternative BELOW_THRESHOLD: 'God was invented' may make the God-talk a figure of speech."
       how_known: "(interview) One recorded interview, his own words (P8), after the working years, so 0.5."
       alternatives:
-        - {value: BELOW_THRESHOLD, note: "God-talk as figure of speech.", cites: [{source: S4, locator: "transcript, religion exchange"}]}
+        - {value: BELOW_THRESHOLD, note: "God-talk as figure of speech.", cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:25:45–00:29:57)"}]}
     B_cause:
       value: 3
       basis: recorded_interview
       certainty: 0.5
-      cites: [{source: S4, locator: "transcript, religion exchange"}]
+      cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:25:45–00:29:57)"}]
       rationale: "(interview) A remark on lawful order with no stated no-exception claim: 'it is the existence of order that is fundamental to our existence'; he answers 'Yes' to the interviewer's 'we get up tomorrow, this table will still be here ... The sun will come up' (the interviewer's words, not his). B 3 at 0.5, alternative 4 (P16 addendum, P35). His 'miracles' performed by scientists and 'the miracle of life' are figures of speech for human achievement and wonder, not exceptions to order."
       how_known: "(interview) One remark plus working science (P35); after the working years."
       alternatives:
-        - {value: 4, note: "P16 addendum: a remark on lawful order cannot rule out a no-exception nature.", cites: [{source: S4, locator: "transcript, religion exchange"}]}
+        - {value: 4, note: "P16 addendum: a remark on lawful order cannot rule out a no-exception nature.", cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:25:45–00:29:57)"}]}
     C_ledger: {value: UNKNOWN, how_known: "(interview) Nothing on reward and punishment of persons (P19)."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "(interview) Lead only: the line 'new means are needed for inner self regulation based on naturalistic rather than on arbitrary moralistic formulations' is the interviewer reading from The Survival of the Wisest (1973), which was not read; Salk answers only 'Yes'. Reported text cannot score alone."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "(interview) 'we are manifestations of the existence of order' is a lead that humans fall under the same order, not a statement that the same rules govern human choice."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "P4 test: A 4 at 0.5, below the 0.7 threshold the branch needs (Hawking, Watson, Shannon precedents)."}
   statements:
     - text: "Now, to me, it is the existence of order that is fundamental to our existence, that we are manifestations of the existence of order."
-      cites: [{source: S4, locator: "transcript, religion exchange"}]
+      cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:27:49)"}]
       date: "1981-06-30"
       context: "Answering John Callaway's question on reverence for religion; he has just said religion 'is based upon a belief system ... in a certain way in which the world is put together'."
       axes: [B_cause, A_locus]
@@ -129,7 +131,7 @@ worldview:
       verified_on: 2026-10-19
       note: "AAPB transcript (status 'Correct'); broadcast date from the AAPB record."
     - text: "Now, some might say that my use of the term order is the same as the word God. We're both describing the same phenomenon. The difference between the idea of order and the idea of an anthropomorphic God. A God that is in the form of a person that thinks like a person and a personal God that looks after me personally and individually."
-      cites: [{source: S4, locator: "transcript, religion exchange"}]
+      cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:28:53)"}]
       date: "1981-06-30"
       context: "Same exchange, after Callaway's lines about the table and the sun."
       axes: [A_locus]
@@ -138,16 +140,16 @@ worldview:
       verified_on: 2026-10-19
       note: "Transcript line breaks joined."
     - text: "Well, that's why God was invented. You see God was invented because of the necessity for having a form of order."
-      cites: [{source: S4, locator: "transcript, religion exchange"}]
+      cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:27:49–00:28:53)"}]
       date: "1981-06-30"
       context: "Reply to Callaway's 'It's why they made a god out of you.'"
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Basis of the ATHE and BELOW_THRESHOLD alternatives."
+      note: "Basis of the ATHE value (ruling T2) and of A's BELOW_THRESHOLD alternative."
     - text: "I'm very much aware of the miracle of life and very much aware of the miracle of man. And for me, that's where that's where God is. That's where creation exists now."
-      cites: [{source: S4, locator: "transcript, closing segment"}]
+      cites: [{source: S4, locator: "transcript, closing segment (AAPB 00:57:15–00:58:34)"}]
       date: "1981-06-30"
       context: "Closing segment, on the Salk Institute's 'temple'-like architecture and scientists as 'the new priesthood'."
       axes: [A_locus]
@@ -156,8 +158,8 @@ worldview:
       verified_on: 2026-10-19
       note: "Repetition as transcribed."
   changes_over_life:
-    - {value: "Childhood prayer gave way to self-reliance ('I had to do something about it myself')", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange"}], how_known: "(interview) His recollection; undated."}
-  coder_notes: "Coder's call. Every worldview claim rests on one 1981 interview, 26 years after the working years, so all are capped at 0.5 (P1). PANT against ATHE is the main question: he accepts that his 'order' and others' 'God' describe 'the same phenomenon' and locates God in life, but also says God 'was invented'. Leads: Man Unfolding (1972), The Survival of the Wisest (1973), Anatomy of Reality (1983); not read."
+    - {value: "Childhood prayer gave way to self-reliance ('I had to do something about it myself')", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:28:53–00:29:57)"}], how_known: "(interview) His recollection; undated."}
+  coder_notes: "Coder's call. Every worldview claim rests on one 1981 interview, 26 years after the working years, so all are capped at 0.5 (P1). ATHE against PANT was the main question; ruling T2 (v8's call on the auditor's advice) settles it as ATHE at 0.5 with PANT named: he accepts that his 'order' and others' 'God' describe 'the same phenomenon' and locates God in life, but also says God 'was invented'. Leads: Man Unfolding (1972), The Survival of the Wisest (1973), Anatomy of Reality (1983); not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -170,15 +172,15 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1952–1955", certainty: 0.7, cites: [{source: S2, locator: "The 'Killed-Virus' Principle; Field Trials"}], how_known: "From the first human tests (1952) to the announced field-trial result (12 April 1955): one lasting contribution dated as a range (P12, P29, P30)."}
   age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S1, locator: "facts box"}, {source: S2, locator: "The 'Killed-Virus' Principle"}], how_known: "1952 − 1914 = 38 (P30); 37 or 38 depending on the month of the first tests."}
-  first_evidence_of_lio_type_views: {value: "1981 (interview): 'that's where God is' — A 4", year: 1981, certainty: 0.5, cites: [{source: S4, locator: "transcript"}], how_known: "(interview) The earliest source read; earlier works not read (P30 #7); the 1970s books are leads."}
-  lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S4, locator: "transcript"}], how_known: "(interview) First evidence read is 26 years after the span; no earlier evidence read."}
+  first_evidence_of_lio_type_views: {value: "1981 (interview): 'that's where God is' — A 4", year: 1981, certainty: 0.5, cites: [{source: S4, locator: "transcript, closing segment (AAPB 00:55:10–00:58:34)"}], how_known: "(interview) The earliest source read; earlier works not read (P30 #7); the 1970s books are leads."}
+  lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S4, locator: "transcript, closing segment (AAPB 00:55:10–00:58:34)"}], how_known: "(interview) First evidence read is 26 years after the span; no earlier evidence read."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "Salk's Education"}], how_known: "Not assessed."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S2, locator: "Salk's Education"}], how_known: "Not read."}
-  circle_present: {value: "unclear", rationale: "God and order 'the same phenomenon' and humans 'manifestations' of order would suggest it, but only in a late interview, with 'God was invented' against it.", certainty: 0.5, cites: [{source: S4, locator: "transcript"}], how_known: "(interview) Coder's reading."}
+  circle_present: {value: "unclear", rationale: "God and order 'the same phenomenon' and humans 'manifestations' of order would suggest it, but only in a late interview, with 'God was invented' against it.", certainty: 0.5, cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:28:53); closing segment (AAPB 00:57:15–00:58:34)"}], how_known: "(interview) Coder's reading."}
   reading: "Order as the fundamental reality, named God by others, located in life and man; human self-reliance in place of prayer."
   notes: ""
 
@@ -256,7 +258,7 @@ sources:
 
 ## Summary
 
-Jonas Salk (1914–1995), American physician and virologist who developed the first safe and effective polio vaccine [S1]. Draft (interview only): primary_system PANT (0.5, alt ATHE); A 4 (0.5); B 3 (0.5, alt 4); mid_basin BELOW_THRESHOLD. Plotted (faded).
+Jonas Salk (1914–1995), American physician and virologist who developed the first safe and effective polio vaccine [S1]. Draft (interview only): primary_system ATHE (0.5, alt PANT; ruling T2); A 4 (0.5); B 3 (0.5, alt 4); mid_basin BELOW_THRESHOLD. Plotted (faded).
 
 ## Life and work
 

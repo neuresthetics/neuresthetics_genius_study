@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 110). Basics from Britannica (Boyle; body read only to 1769, the rest cut off in the fetch) and the IEP (Jensen). Worldview from his letters to F. H. Jacobi of 9 June 1785 and 6 January 1813 and to Knebel of 6 January 1785 (Weimarer Ausgabe IV, read in Zeno.org's transcription). Scientist (P30: intermaxillary bone 1784, Metamorphose der Pflanzen 1790). primary_system PANT (0.7); A 4 (0.7, alt 2); B 3 (0.5, alt 4); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin false (0.7). Plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: GO4, GO6 WEAKEN). IEP §2 now quoted verbatim ('it was Spinoza (1632-77) from whom Goethe adopted the view ...') in primary_system and the Spinoza note; 'left its mark' (which the IEP says of his organic ontology) dropped from the Metamorphose entry, now quoting 'his theory of morphology, that of Linnaeus’ biology'. Zeno/WA page locators: no. 2040 is p. 2 and no. 6471 is p. 226 (Zeno's [n] closes page n), in the statements, primary_system, self-described relation, the A cites and the A alternative. No value changes."}
 
 identity:
   id: von-goethe-johann-wolfgang
@@ -49,7 +50,7 @@ contribution:
     - {value: "Götz von Berlichingen", year: 1773, kind: work, lasting: "Heine, Novalis and others 'all owe tremendous debts to Götz and Werther' (S2 §6)", certainty: 0.7, cites: [{source: S2, locator: "§§1, 6"}], how_known: "IEP."}
     - {value: "Die Leiden des jungen Werther", year: 1774, kind: work, lasting: "'brought Goethe nearly instant worldwide acclaim'; 'the archetype' of the Sturm und Drang (S2 §1)", certainty: 1.0, cites: [{source: S2, locator: "§1"}, {source: S1, locator: "opening ('the greatest German literary figure of the modern era')"}], how_known: "IEP; Britannica names him the greatest German literary figure of the era."}
     - {value: "Discovery of the intermaxillary bone in humans", year: 1784, kind: discovery, lasting: "named as his discovery (S2 §4)", certainty: 0.5, cites: [{source: S2, locator: "§4"}], how_known: "IEP names the discovery without calling it lasting; coder's call. With the Metamorphosis it makes him a scientist (P30)."}
-    - {value: "Die Metamorphose der Pflanzen: plant organs as modifications of one basic form (morphology)", year: 1790, kind: theory, lasting: "his theory of morphology challenged that of 'Linnaeus' biology' (S2, opening); he 'left its mark' through morphology", certainty: 0.7, cites: [{source: S2, locator: "opening; §4"}], how_known: "IEP; a theory about natural systems (P30)."}
+    - {value: "Die Metamorphose der Pflanzen: plant organs as modifications of one basic form (morphology)", year: 1790, kind: theory, lasting: "'his theory of colors challenged the reigning paradigm of Newton’s optics; and his theory of morphology, that of Linnaeus’ biology' (S2, opening)", certainty: 0.7, cites: [{source: S2, locator: "opening; §4"}], how_known: "IEP; a theory about natural systems (P30)."}
     - {value: "Faust (Part One 1808; Part Two finished 1831, published 1832)", year: 1831, kind: work, lasting: "'Europe’s greatest long poem since John Milton’s Paradise Lost' (S1)", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 ('having finally finished Faust the previous year')"}], how_known: "Britannica and IEP; dated by the end of writing (P30 posthumous rule). The latest listed lasting contribution (P30 addendum b)."}
   evidence_of_impact:
     - {value: "'considered the greatest German literary figure of the modern era'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
@@ -83,13 +84,13 @@ worldview:
   working_years: {value: "1773–1831", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Lutheran Frankfurt upbringing (coder's reading); opposed to the church wedding ceremony", certainty: 0.5, cites: [{source: S1, locator: "Early years"}], how_known: "Context only; the church-wedding remark is in Britannica's Top Questions box, which is not cited, so only the upbringing is noted (coder's reading)."}
-  self_described_science_religion_relation: {value: "'als Dichter und Künstler bin ich Polytheist, Pantheist hingegen als Naturforscher, und eins so entschieden als das andre' (to Jacobi, 6 January 1813)", certainty: 0.7, cites: [{source: S3, locator: "WA IV 23, no. 6471, pp. 225–226"}], how_known: "Private letter (web transcription of the Weimarer Ausgabe)."}
+  self_described_science_religion_relation: {value: "'als Dichter und Künstler bin ich Polytheist, Pantheist hingegen als Naturforscher, und eins so entschieden als das andre' (to Jacobi, 6 January 1813)", certainty: 0.7, cites: [{source: S3, locator: "WA IV 23, no. 6471, p. 226"}], how_known: "Private letter (web transcription of the Weimarer Ausgabe)."}
   primary_system:
     value: PANT
     basis: consistent_private_letters
     certainty: 0.7
-    cites: [{source: S3, locator: "WA IV 7, no. 2134, pp. 61–63; WA IV 23, no. 6471, pp. 225–226"}, {source: S2, locator: "§2"}]
-    rationale: "Two-part test (PANT use_when). Part 1: on Spinoza, 'Er beweist nicht das Daseyn Gottes, das Daseyn ist Gott' — being itself is God — which he praises as 'theissimum ia christianissimum', and he knows the divine 'nur in und aus den rebus singularibus' and seeks it 'in herbis et lapidibus' (1785); in 1813, 'Pantheist hingegen als Naturforscher'. Part 2: 'die höchste Realität ..., welche der Grund des ganzen Spinozismus ist, worauf alles übrige ruht, woraus alles übrige fliest' (one ground of all). The IEP: 'from Spinoza Goethe adopted the view that God is both immanent with the world and identical with it'. The 1813 letter also says he is a polytheist as a poet and that a God for his moral personality 'ist ... schon gesorgt' (context for A's alternative)."
+    cites: [{source: S3, locator: "WA IV 7, no. 2134, pp. 61–63; WA IV 23, no. 6471, p. 226"}, {source: S2, locator: "§2"}]
+    rationale: "Two-part test (PANT use_when). Part 1: on Spinoza, 'Er beweist nicht das Daseyn Gottes, das Daseyn ist Gott' — being itself is God — which he praises as 'theissimum ia christianissimum', and he knows the divine 'nur in und aus den rebus singularibus' and seeks it 'in herbis et lapidibus' (1785); in 1813, 'Pantheist hingegen als Naturforscher'. Part 2: 'die höchste Realität ..., welche der Grund des ganzen Spinozismus ist, worauf alles übrige ruht, woraus alles übrige fliest' (one ground of all). The IEP (§2): 'it was Spinoza (1632-77) from whom Goethe adopted the view that God is both immanent with the world and identical with it'. The 1813 letter also says he is a polytheist as a poet and that a God for his moral personality 'ist ... schon gesorgt' (context for A's alternative)."
     how_known: "Two consistent private letters 28 years apart, both inside the working years, plus a scholar (IEP); private ceiling 0.7."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
@@ -102,16 +103,16 @@ worldview:
       value: 4
       basis: consistent_private_letters
       certainty: 0.7
-      cites: [{source: S3, locator: "WA IV 7, no. 2134, pp. 61–62; WA IV 23, no. 6471, pp. 225–226"}, {source: S2, locator: "§2"}]
+      cites: [{source: S3, locator: "WA IV 7, no. 2134, pp. 61–62; WA IV 23, no. 6471, p. 226"}, {source: S2, locator: "§2"}]
       rationale: "Immanent pole: God identical with being ('das Daseyn ist Gott'), known only in and from singular things. Named alternative 2: in 1813 he holds different views in different domains — pantheist as natural scientist, polytheist as poet, and a God 'für meine Persönlichkeit, als sittlicher Mensch' — which matches the scale's 'holds both in different domains'."
       how_known: "Two private letters inside the working years; private ceiling and an alternative named, so 0.7."
       alternatives:
-        - {value: 2, note: "Domain split in the 1813 letter.", cites: [{source: S3, locator: "WA IV 23, no. 6471, p. 225"}]}
+        - {value: 2, note: "Domain split in the 1813 letter.", cites: [{source: S3, locator: "WA IV 23, no. 6471, p. 226"}]}
     B_cause:
       value: 3
       basis: inference_from_work
       certainty: 0.5
-      cites: [{source: S3, locator: "WA IV 7, no. 2040, p. 1"}, {source: S2, locator: "§4"}]
+      cites: [{source: S3, locator: "WA IV 7, no. 2040, p. 2"}, {source: S2, locator: "§4"}]
       rationale: "Scored on his account of nature (P6). Working science (morphology: every organ 'built according to the same basic form', S2 §4) plus a remark on lawful order with no stated no-exception claim: 'der Wahrheit und Wichtigkeit der sich ewig immer gleichen Natur' (to Knebel, 1785). B 3 at 0.5 with 4 as the named alternative (P35; P16 addendum logic)."
       how_known: "Working science and one remark in a private letter; P35 gives 0.5."
       alternatives:
@@ -140,7 +141,7 @@ worldview:
       verified_on: 2026-10-19
       note: "As above."
     - text: "Ich für mich kann, bey den mannigfaltigen Richtungen meines Wesens, nicht an einer Denkweise genug haben; als Dichter und Künstler bin ich Polytheist, Pantheist hingegen als Naturforscher, und eins so entschieden als das andre. Bedarf ich eines Gottes für meine Persönlichkeit, als sittlicher Mensch, so ist dafür auch schon gesorgt."
-      cites: [{source: S3, locator: "WA IV 23, no. 6471, pp. 225–226"}]
+      cites: [{source: S3, locator: "WA IV 23, no. 6471, p. 226"}]
       date: "1813-01-06"
       context: "Letter from Weimar to Jacobi, answering his New Year letter: 'Die Menschen werden durch Gesinnungen vereinigt, durch Meynungen getrennt.'"
       axes: [A_locus]
@@ -149,7 +150,7 @@ worldview:
       verified_on: 2026-10-19
       note: "As above. The basis of A's alternative 2."
     - text: "Bey der offenbaren Nichtigkeit sovieler andrer Dinge und der Wahrheit und Wichtigkeit der sich ewig immer gleichen Natur giebt mich's nicht wunder."
-      cites: [{source: S3, locator: "WA IV 7, no. 2040, p. 1"}]
+      cites: [{source: S3, locator: "WA IV 7, no. 2040, p. 2"}]
       date: "1785-01-06"
       context: "Letter to Carl Ludwig von Knebel, on the theologian Semler's turn to natural history."
       axes: [B_cause]
@@ -190,7 +191,7 @@ collaborators:
   - {value: "Friedrich Schiller", relation: collaborator, note: "close collaboration 1794–1805", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "IEP."}
   - {value: "Johann Gottfried Herder", relation: "influenced by", note: "met in Strasbourg, 1770; shared reading of Spinoza", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S3, locator: "WA IV 7, no. 2047"}], how_known: "IEP; his letter to Jacobi of 12 January 1785."}
   - {value: "Friedrich Heinrich Jacobi", relation: correspondent, note: "letters on Spinoza (1785, 1813)", certainty: 0.7, cites: [{source: S3, locator: "WA IV 7, no. 2134"}], how_known: "His letters."}
-  - {value: "Baruch Spinoza", roster_id: spinoza-baruch, relation: "influenced by", note: "'from Spinoza Goethe adopted the view that God is both immanent with the world and identical with it' (S2)", certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "IEP."}
+  - {value: "Baruch Spinoza", roster_id: spinoza-baruch, relation: "influenced by", note: "'it was Spinoza (1632-77) from whom Goethe adopted the view that God is both immanent with the world and identical with it' (S2 §2)", certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "IEP."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 110"}], how_known: "Study roster."}

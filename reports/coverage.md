@@ -60,16 +60,16 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 |---|---|---|---|---|---|---|
 | identity | 254 | 197 | 8 | 49 | 0 | 77.6% |
 | basics | 1397 | 1363 | 0 | 34 | 0 | 97.6% |
-| contribution | 1058 | 1057 | 0 | 1 | 0 | 99.9% |
+| contribution | 1059 | 1058 | 0 | 1 | 0 | 99.9% |
 | childhood | 1376 | 933 | 397 | 45 | 1 | 67.8% |
-| worldview | 1383 | 625 | 7 | 546 | 205 | 45.2% |
+| worldview | 1383 | 625 | 7 | 544 | 207 | 45.2% |
 | heritage | 508 | 215 | 259 | 33 | 1 | 42.3% |
 | timing | 635 | 469 | 38 | 122 | 6 | 73.9% |
 | lane_b | 381 | 378 | 3 | 0 | 0 | 99.2% |
 | institutions | 282 | 282 | 0 | 0 | 0 | 100.0% |
 | collaborators | 360 | 360 | 0 | 0 | 0 | 100.0% |
 | review | 174 | 174 | 0 | 0 | 0 | 100.0% |
-| **all** | 7808 | 6053 | 712 | 830 | 213 | 77.5% |
+| **all** | 7809 | 6054 | 712 | 828 | 215 | 77.5% |
 
 ### Worldview coding status
 
@@ -180,7 +180,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | rousseau-jean-jacques | CHRIST | draft — unreviewed |
 | russell-bertrand | AGNOS | draft — unreviewed |
 | sagan-carl | AGNOS (interview) | draft — unreviewed |
-| salk-jonas | PANT (interview) | draft — unreviewed |
+| salk-jonas | ATHE (interview) | draft — unreviewed |
 | schopenhauer-arthur | IDEAL | draft — unreviewed |
 | schrodinger-erwin | HINDU | draft — unreviewed |
 | shakespeare-william | UNKNOWN | draft — unreviewed |
