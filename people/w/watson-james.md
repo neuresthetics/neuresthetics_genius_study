@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 105). Basics from Britannica (Britannica Editors, unsigned; body only, read live) and the 1953 Nature paper's publisher page (date). Worldview from his own signed op-ed in Time, 25 March 2016 ('a lifelong atheist'; 'my God-rejecting views'; 'secular Christianity'), read directly; written profession, after the working years (1953–1965), so capped at 0.5 (P20, Shannon and Hawking precedent). Scientist (P30). primary_system ATHE (0.5); A 4 (0.5); B 3 (0.5, alt 4; P35); mid_basin BELOW_THRESHOLD. Plotted (faded), like Crick. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Op-ed locators corrected: the 'I never go to Sunday services' statement is paragraph 7, and primary_system and A cite paragraphs 2, 4 and 7 (WA4). Ruling R1 recorded (v8's call on the auditor's advice): 'lifelong' does not lift the P1 cap, so ATHE and A 4 stay at 0.5. Span 1953–1965 with 1968 as the alternative recorded as v8's call. The 2003 Scientific American interview noted as an unread lead (still post-span if confirmed). No value changed."}
 
 identity:
   id: watson-james
@@ -80,9 +81,9 @@ worldview:
     value: ATHE
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S3, locator: "paragraphs 2, 4 and 8"}]
+    cites: [{source: S3, locator: "paragraphs 2, 4 and 7"}]
     rationale: "Self-description: 'a reply that I am a lifelong atheist'; 'my God-rejecting views'; by 11 he was 'rejecting the need for an all-knowing God-like creator of our physical world'. Named alternative: SECHUM ('I don't need sermons to maintain my secular Christianity'; faith 'in the unchanging, universal aspects of human nature')."
-    how_known: "His own signed op-ed, Time, 25 March 2016, read directly. After the working years (1953–1965), so 0.5 (P20, Shannon and Hawking precedent), although 'lifelong' claims the whole life."
+    how_known: "His own signed op-ed, Time, 25 March 2016, read directly. After the working years (1953–1965), so 0.5 (P20, Shannon and Hawking precedent). 'Lifelong' does not lift the cap: ruling R1 (v8's call on the auditor's advice, 2026-10-18; OPEN_DECISIONS P20) keeps post-span evidence at 0.5 under P1, since no change of view is documented (P31) and the present-tense label describes the time of writing (P30)."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: ATHE, reason: "'I am a lifelong atheist' (2016)."}
@@ -93,7 +94,7 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "paragraphs 2, 4 and 8"}]
+      cites: [{source: S3, locator: "paragraphs 2, 4 and 7"}]
       rationale: "No God (P38): 'a lifelong atheist'; 'my God-rejecting views'; faith 'not ... in an all-powerful, life-instructions-providing God'. No agnostic label, so P38's cap does not apply; the cap is P20's."
       how_known: "Signed op-ed, his own words; 2016, after the working years, so 0.5 (P20)."
     B_cause:
@@ -129,7 +130,7 @@ worldview:
       verified_on: 2026-10-18
       note: ""
     - text: "I never go to Sunday services; I don’t need sermons to maintain my secular Christianity. Nowadays my God-rejecting views are much more broadly accepted by educated men and women than when World War II ended and my father would have seriously jeopardized his job in business if he ever publicly expressed the atheistic view he passed on to me."
-      cites: [{source: S3, locator: "paragraph 8"}]
+      cites: [{source: S3, locator: "paragraph 7"}]
       date: "2016-03-25"
       context: "Same op-ed."
       axes: [A_locus]
@@ -138,7 +139,7 @@ worldview:
       verified_on: 2026-10-18
       note: ""
   changes_over_life: []
-  coder_notes: "Coder's call. Only the 2016 op-ed was read; it is after the working years, so the codes sit at 0.5 even though it calls him a 'lifelong atheist'. Leads not read: the 2003 Scientific American interview ('I never thought there was a spiritual basis for life', seen in search results only) and the Web of Stories recordings; The Double Helix (1968) and Avoid Boring People (2007) for earlier statements."
+  coder_notes: "Coder's call. Only the 2016 op-ed was read; it is after the working years, so the codes sit at 0.5 even though it calls him a 'lifelong atheist'. Leads not read: the 2003 Scientific American interview ('I never thought there was a spiritual basis for life', seen in search results only; an unread lead, not used for any value, and if confirmed it would still be after the working years, so capped at 0.5 under P1; R audit note) and the Web of Stories recordings; The Double Helix (1968) and Avoid Boring People (2007) for earlier statements."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -149,7 +150,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1953–1965", certainty: 0.7, cites: [{source: S1, locator: "'Research'"}, {source: S2, locator: "citation metadata"}], how_known: "Double helix (1953) to Molecular Biology of the Gene (1965), first to last listed lasting contribution (P29, P30); alternative end 1968 (The Double Helix), not listed."}
+  major_work_period: {value: "1953–1965", certainty: 0.7, cites: [{source: S1, locator: "'Research'"}, {source: S2, locator: "citation metadata"}], how_known: "Double helix (1953) to Molecular Biology of the Gene (1965), first to last listed lasting contribution (P29, P30); alternative end 1968 (The Double Helix), not listed: Britannica calls it only 'an informal personal account' that 'aroused some controversy', so P30 addendum b does not force it onto the list. Span end 1965 with 1968 as the alternative is v8's call (2026-10-18; OPEN_DECISIONS P20, with R1); either end leaves the 2016 op-ed after the span."}
   age_at_first_lasting_contribution: {value: 25, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "citation metadata"}], how_known: "1953 − 1928 = 25 (P30; birthday 6 April, paper 25 April)."}
   first_evidence_of_lio_type_views: {value: "2016: 'a lifelong atheist'; rejecting a creator 'by age 11'", year: 2016, certainty: 0.5, cites: [{source: S3, locator: "paragraphs 2, 4"}], how_known: "Only the 2016 op-ed read (P30 #7); it dates the rejection to c. 1939 retrospectively."}
   lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S3, locator: "paragraph 4"}], how_known: "Date of what was read (2016), as for Shannon; by his own retrospective account the views come before (c. 1939), so 'before major work' is the named alternative."}

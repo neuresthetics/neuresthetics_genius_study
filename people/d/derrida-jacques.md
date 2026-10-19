@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 103). Basics from Britannica (Britannica Editors, unsigned; body read live). Worldview from 'Circumfession' (1991; English in Bennington and Derrida, Jacques Derrida, 1993) as quoted by Elisabeth Loevlie, Religions 4 (2013), with the 2002 exchange with John Caputo as she reports it; secondary quotations. Not a scientist (P30). primary_system and A BELOW_THRESHOLD ('I quite rightly pass for an atheist', with God 'called by other names'); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Alternative span end is now 1967, not 1974: Glas is listed under major_works, not as a lasting contribution, so it cannot set the end (P13, P30 addendum b; DE5). Specters of Marx now cites Loevlie §1 for its lasting status ('hauntology, first coined in his Spectres of Marx in 1993 [...] a fruitful critical topos'), so the item rises from 0.5 to 0.7 (one source); the span stays 1967–1993 at 0.5."}
 
 identity:
   id: derrida-jacques
@@ -48,7 +49,7 @@ contribution:
   fields: {value: ["philosophy", "literary theory"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica (critique of Western philosophy; analyses of language, writing and meaning; later work on literature)."}
   lasting_original_contributions:
     - {value: "Deconstruction and différance, set out in Writing and Difference, Of Grammatology and Speech and Phenomena", year: 1967, kind: "concept or term", lasting: "'the principal exponent of deconstruction, a term he coined'; his analyses were 'highly controversial yet immensely influential' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica; the three books dated 1967."}
-    - {value: "Specters of Marx (Spectres de Marx), on the legacy of Marxism", year: 1993, kind: work, lasting: "named among the 'notably' later works (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Life and work' (later period)"}], how_known: "Britannica; the latest work the body names with a topic of its own, listed under P30 addendum b; that it is lasting is the coder's reading of 'notably' (coder's call)."}
+    - {value: "Specters of Marx (Spectres de Marx), on the legacy of Marxism; coins 'hauntology'", year: 1993, kind: work, lasting: "named among the 'notably' later works (S1); 'Derrida's term hauntology, first coined in his Spectres of Marx in 1993 [...] The term has proven itself a fruitful critical topos' (S2, §1)", certainty: 0.7, cites: [{source: S1, locator: "'Life and work' (later period)"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "Britannica names the work; Loevlie (S2, §1) says the term it coined has proven 'a fruitful critical topos', so its lasting status rests on a source, not only on the coder's reading of 'notably' (R audit fix, DE5 note). One source for the lasting claim, so 0.7. The latest listed lasting contribution (P30 addendum b)."}
   evidence_of_impact:
     - {value: "International celebrity 'comparable only to that of Jean-Paul Sartre a generation earlier'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "'Life and work'"}], how_known: "Britannica."}
   major_works:
@@ -76,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read on science and religion."}
   primary_system: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "§2 (quoting 'Circumfession', p. 155)"}], how_known: "His published self-description is hedged: 'the constancy of God in my life is called by other names so that I quite rightly pass for an atheist' ('Circumfession', 1991, inside the working years). He says he 'passes for' an atheist while keeping 'God' under other names, and in 2002 (as Loevlie reports the exchange with Caputo) he called the bold claims 'I am a believer' and 'I am an atheist' ridiculous. No code fits clearly; candidates ATHE and AGNOS; JUDA is heritage only. Secondary quotation (P26)."}
@@ -123,7 +124,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}], how_known: "First to last listed lasting contribution (P29, P30). The end year (Specters of Marx) is the coder's call; alternative end 1974 (Glas), the last work before the body's 'later period'."}
+  major_work_period: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "First to last listed lasting contribution (P29, P30). The end year is Specters of Marx (1993), the latest listed lasting contribution (P30 addendum b; lasting per S2, §1). Named alternative end 1967: Glas (1974) is listed under major_works, not lasting_original_contributions, so it cannot set the end (P13, addendum b); without Specters the latest listed lasting item is the 1967 group (R audit fix, DE5)."}
   age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "1967 − 1930 = 37 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No axis scored at 3 or 4 (P27 anchor)."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "A BELOW_THRESHOLD; B UNKNOWN.", certainty: 0.5, cites: [{source: S2, locator: "§2"}], how_known: "Coder's reading."}

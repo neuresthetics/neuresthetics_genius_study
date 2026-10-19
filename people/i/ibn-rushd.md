@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 102). Basics from Britannica (Erwin I. J. Rosenthal, signed; body pages opening, 'Early life', 'Commentaries on Aristotle', 'Averroës’ defense of philosophy' and 'Contents and significance of works', read live). Worldview from the Faṣl al-Maqāl with its appendix in George F. Hourani's translation (1961/1976) and the Tahāfut al-Tahāfut (natural-science discussions) in Simon van den Bergh's translation (1954), both as reproduced on muslimphilosophy.com; web copies, secondary quotation, cap 0.7. Not a scientist (P30, coder's call). primary_system CLASS_THEISM (0.7, alt ISLAM); A 1 (0.7, alt 0); B 3 (0.7, alt 4); D 3 (0.5, alt 2); mid_basin true (0.7). Plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). D's second locator is now S3 'Natural Sciences, First Discussion', where the 'divine things which surpass human understanding' sentence stands (IR11); the rationale now says that sentence is about religious principles, among them the prophets' miracles. No value changed."}
 
 identity:
   id: ibn-rushd
@@ -114,8 +115,8 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "ch. 2 ('truth does not oppose truth'; allegorical interpretation; three classes of texts)"}, {source: S3, locator: "Natural Sciences, introduction"}]
-      rationale: "Leans to reason: 'whenever the conclusion of a demonstration is in conflict with the apparent meaning of Scripture, that apparent meaning admits of allegorical interpretation', and the demonstrative class alone judges such texts. The stated, limited exception: the principles of religion (acknowledgement of God, the prophetic missions, happiness and misery in the next life) are known by every method and may not be interpreted away, and miracles are 'divine things which surpass human understanding, but must be acknowledged although their causes are unknown'. So 3. Named alternative 2: Britannica reads the Sharīʿah as the one truth that binds the philosopher, with teachings 'that surpass human understanding but that must be accepted by all believers' (S1)."
+      cites: [{source: S2, locator: "ch. 2 ('truth does not oppose truth'; allegorical interpretation; three classes of texts)"}, {source: S3, locator: "Natural Sciences, First Discussion"}]
+      rationale: "Leans to reason: 'whenever the conclusion of a demonstration is in conflict with the apparent meaning of Scripture, that apparent meaning admits of allegorical interpretation', and the demonstrative class alone judges such texts. The stated, limited exception: the principles of religion (acknowledgement of God, the prophetic missions, happiness and misery in the next life) are known by every method and may not be interpreted away, and religious principles, among them the prophets' miracles ('they are the principles on which religion is based'), are 'divine things which surpass human understanding, but must be acknowledged although their causes are unknown' (Natural Sciences, First Discussion). So 3. Named alternative 2: Britannica reads the Sharīʿah as the one truth that binds the philosopher, with teachings 'that surpass human understanding but that must be accepted by all believers' (S1)."
       how_known: "Translations via web copies; contested reading, 0.5."
       alternatives:
         - {value: 2, note: "Religious law and philosophy each authoritative; the Sharīʿah binds the philosopher (S1).", cites: [{source: S1, locator: "'Contents and significance of works'"}]}
