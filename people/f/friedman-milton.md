@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): FR4, family_religion how_known the right way round (the child pushed his parents to be more observant, S3), with the tension against Hammond's 'Orthodox Jewish beliefs' noted; note, Hammond's page range 1183–1217 added to S4. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 120). Basics from Britannica (Bruce J. Caldwell; Britannica Editors) and his Nobel autobiography; religion from the 1986 Los Angeles Times profile (his own words, interview) and J. Daniel Hammond's 2021 essay (reporting Two Lucky People). Not a scientist (P30; economics, as for Keynes). primary_system AGNOS at 0.5 (interview); A BELOW_THRESHOLD (P20); B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Span 1956–1967 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -62,7 +63,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of monetarism; permanent income and natural-rate theories still used (S1).", certainty: 0.7, cites: [{source: S1, locator: "'Milton Friedman's legacy'"}], how_known: "Britannica."}
 
 childhood:
-  family_religion: {value: "Orthodox Jewish", certainty: 0.5, cites: [{source: S4, locator: "opening section"}, {source: S3, locator: "¶ on his upbringing"}], how_known: "Hammond, reporting Two Lucky People: neither Milton nor Rose 'adhered to their parents’ Orthodox Jewish beliefs' (S4); the LA Times says his parents pushed the children to be 'more observant' (S3). Scholar's report plus a journalist; 0.5."}
+  family_religion: {value: "Orthodox Jewish", certainty: 0.5, cites: [{source: S4, locator: "opening section"}, {source: S3, locator: "¶ on his upbringing"}], how_known: "Hammond, reporting Two Lucky People: neither Milton nor Rose 'adhered to their parents’ Orthodox Jewish beliefs' (S4). The LA Times has it the other way round on practice: 'His parents weren't the most religious of Jews, and Friedman recalls at a very early age pushing them to be more observant' (S3); the child pushed the parents (corrected in the batch V audit fixes, FR4). The two sources are in tension (Orthodox beliefs vs not the most religious), so 0.5."}
   family_religious_practice: {value: "Hebrew school until about 13; Bar-Mitzvahed; by his own account 'fanatically religious' as a child", certainty: 0.5, cites: [{source: S4, locator: "opening section"}], how_known: "Hammond's summary of Two Lucky People (memoir not read)."}
   parents_and_household:
     - {value: "Father: Jeno Saul Friedman, born in Carpatho-Ruthenia; a succession of mostly unsuccessful 'jobbing' ventures; died in Milton's senior year of high school", certainty: 0.7, cites: [{source: S2, locator: "¶1–2"}], how_known: "His own autobiography."}
@@ -200,10 +201,10 @@ sources:
     type: secondary
     kind: "journal article"
     author: "J. Daniel Hammond"
-    citation: "Hammond, J. Daniel. \"God and Man at the University of Chicago: Religious Commitments of Three Economists.\" Studia Gilsoniana 10, no. 5 (2021). DOI 10.26385/SG.100446. PDF: http://gilsonsociety.com/files/1107-1140-Hammond-46.pdf"
+    citation: "Hammond, J. Daniel. \"God and Man at the University of Chicago: Religious Commitments of Three Economists.\" Studia Gilsoniana 10, no. 5 (2021): 1183–1217. DOI 10.26385/SG.100446. PDF: http://gilsonsociety.com/files/1107-1140-Hammond-46.pdf"
     url: "http://gilsonsociety.com/files/1107-1140-Hammond-46.pdf"
     accessed: 2026-10-19
-    reliability_note: "Scholarly article by an economic historian (Wake Forest) summarising and quoting Two Lucky People; read in the search index extract of the PDF's opening section (page numbers not checked)."
+    reliability_note: "Scholarly article by an economic historian (Wake Forest) summarising and quoting Two Lucky People; read in the search index extract of the PDF's opening section. Page range 1183–1217 from PhilPapers (batch V audit note); the PDF's file name reads '1107-1140', not reconciled."
     used_for: [worldview, childhood, heritage]
   - id: S5
     type: secondary

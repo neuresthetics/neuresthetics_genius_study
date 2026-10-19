@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): MC4, Prince ch. 26 locator p. 99 -> p. 100 (scan p. 110); MC8, the three Discorsi statements relabelled from scholarly edition to the web-copy label (primary transcription, unscanned); ruling V2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with the Esortazione alla penitenza as a lead; note, SEP dates added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 122). Basics from Britannica (Harvey Mansfield) and SEP (Cary Nederman); own-voice passages read in Italian on Wikisource: Il Principe chs. 25–26 (1814 edition, proofread against scans) and Discorsi I.12, I.56, II.5 (Martelli text). Not a scientist (P30). primary_system BELOW_THRESHOLD (scholars divide: anti-Christian, conventional piety, Christian); A, B, D, E BELOW_THRESHOLD; C UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1513–1519 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -82,10 +83,10 @@ worldview:
   nominal_affiliations:
     - {value: "Catholic Florence; listened to Savonarola's sermons (1498)", certainty: 0.5, cites: [{source: S1, locator: "'Early life and political career'"}], how_known: "Britannica. Context only."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Scholars divide (S2 §4): many read him as 'profoundly anti-Christian, preferring the pagan civil religions'; Parel finds an 'essentially pagan' astral cosmos; others 'a man of conventional, if unenthusiastic, piety'; Grazia, Viroli and Nederman find a Christian, divinely ordered cosmos. Britannica: The Prince 'brought him a reputation as an atheist' (S1). His own texts read are mixed (statements): God 'does not want to do everything' so as not to take away free will (Prince 26), beside a debunking account of miracles 'even in false religions' (Discorsi I.12). Contested readings with no decisive own-voice profession, so below threshold; CHRIST is the named lead."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Scholars divide (S2 §4): many read him as 'profoundly anti-Christian, preferring the pagan civil religions'; Parel finds an 'essentially pagan' astral cosmos; others 'a man of conventional, if unenthusiastic, piety'; Grazia, Viroli and Nederman find a Christian, divinely ordered cosmos. Britannica: The Prince 'brought him a reputation as an atheist' (S1). His own texts read are mixed (statements): God 'does not want to do everything' so as not to take away free will (Prince 26), beside a debunking account of miracles 'even in false religions' (Discorsi I.12). Contested readings with no decisive own-voice profession, so below threshold; CHRIST is the named lead. Ruling V2 (v8's call on the auditor's advice, batch V audit): the Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147, 25% transcribed, undated) does not lift CHRIST: it was a confraternity address given on assignment ('per ubbidire a' miei maggiori'), it is undated (P39), and scholars divide on his sincerity (S2 §4). Cited as a lead only (not read in full)."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Lead: Grazia, Viroli, Nederman (S2 §4); Prince 26 on God and free will."}
+    - {code: CHRIST, reason: "Lead: Grazia, Viroli, Nederman (S2 §4); Prince 26 on God and free will; the Esortazione alla penitenza (‘ogni cosa è creata per onore e per bene dell’uomo’, per the batch V audit; ruling V2: lead only)."}
     - {code: ATHE, reason: "Rejected: a reputation (S1), no stated denial."}
     - {code: HELLEN, reason: "Rejected as a code: his preference for Roman civil religion (S2 §4) is a political judgement about religions, not a stated personal adherence."}
   lio_axes:
@@ -106,30 +107,30 @@ worldview:
       verified_on: 2026-10-19
       note: "Wikisource proofread transcription (level 4) of the 1814 'Italia' edition (Internet Archive ilprincipedinic00machgoog), printed p. 95. Written 1513, published 1532."
     - text: "Oltre a questo, qui si veggono straordinari senza esempio, condutti da Dio: il mare s’è aperto, una nube vi ha scorto il cammino, la pietra ha versato l’acqua; qui è piovuto la manna, ogni cosa è concorsa nella vostra grandezza; il rimanente dovete far voi. Dio non vuole far ogni cosa, per non ci torre il libero arbitrio, e parte di quella gloria che tocca a noi."
-      cites: [{source: S3, locator: "cap. XXVI, p. 99"}]
+      cites: [{source: S3, locator: "cap. XXVI, p. 100"}]
       date: "1513"
       context: "The Prince ch. 26, the exhortation to the Medici to free Italy; Exodus imagery applied to the present."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Same edition, printed p. 99 (scan p. 109). Rhetorical exhortation; scholars dispute how literally to read it (S2 §4)."
+      note: "Same edition, printed p. 100 (scan p. 110); printed p. 99 ends '...possa farsi capo di questa' (corrected in the batch V audit fixes, MC4). Rhetorical exhortation; scholars dispute how literally to read it (S2 §4)."
     - text: "E debbono, tutte le cose che nascano in favore di quella, come che le giudicassono false, favorirle e accrescerle; e tanto più lo debbono fare, quanto più prudenti sono, e quanto più conoscitori delle cose naturali. E perché questo modo è stato osservato dagli uomini savi, ne è nato l’opinione dei miracoli, che si celebrano nelle religioni eziandio false"
       cites: [{source: S4, locator: "Libro I, cap. 12"}]
       date: "1514"
       context: "Discorsi I.12, on keeping religion as the foundation of a republic; followed by Livy's miracle of Juno at Veii."
       axes: [B_cause, D_authority]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Wikisource text of Tutte le opere, ed. Mario Martelli (Sansoni, 1971), via LiberLiber, re-read against the book (talk page); not scan-backed, so a web copy (0.7 cap; nothing scored on it). Dated by the start of composition (1514 or 1515 to 1518 or 1519, S2)."
+      note: "Wikisource text of Tutte le opere, ed. Mario Martelli (Sansoni, 1971), via LiberLiber, re-read against the book (talk page); not scan-backed, so a web copy (0.7 cap; nothing scored on it). Labelled as an unscanned keyed transcription, the house label for a web copy (Keynes precedent; batch V audit fix MC8), not as a scholarly edition read in print. Dated by the start of composition (1514 or 1515 to 1518 or 1519, S2)."
     - text: "Donde ei si nasca io non so, ma ei si vede per gli antichi e per gli moderni esempli, che mai non venne alcuno grave accidente in una città o in una provincia, che non sia stato, o da indovini o da rivelazioni o da prodigi o da altri segni celesti, predetto."
       cites: [{source: S4, locator: "Libro I, cap. 56"}]
       date: "1514"
       context: "Discorsi I.56; examples Savonarola, the lightning on the Duomo before Lorenzo's death, Livy's voice to Caedicius. He then leaves the cause to one with 'notizia delle cose naturali e soprannaturali' and offers that the air may be 'pieno di intelligenze' which 'per naturali virtù' foresee and warn men."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Martelli text on Wikisource; web copy as above. Dated by the start of composition (1514 or 1515 to 1518 or 1519, S2)."
     - text: "perché la natura, come ne’ corpi semplici, quando e’ vi è ragunato assai materia superflua, muove per sé medesima molte volte, e fa una purgazione, la quale è salute di quel corpo; così interviene in questo corpo misto della umana generazione"
@@ -138,7 +139,7 @@ worldview:
       context: "Discorsi II.5, on why memory of antiquity is lost: causes from men (new sects and languages) and 'dal cielo' (plague, famine, flood)."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Martelli text on Wikisource; web copy as above. Dated by the start of composition (1514 or 1515 to 1518 or 1519, S2)."
   changes_over_life: []
@@ -187,7 +188,7 @@ review:
     - "Discorsi quotations are from a Wikisource text of the Martelli edition without scans (web copy)."
     - "Span end is a coder's call (1519 vs 1525)."
   open_questions:
-    - "Discorsi I.11–15, II.2; letter to Guicciardini, 17 May 1521; Esortazione alla penitenza."
+    - "Discorsi I.11–15, II.2; letter to Guicciardini, 17 May 1521; Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147; a lead under ruling V2, not read)."
 
 sources:
   - id: S1
@@ -203,10 +204,10 @@ sources:
     type: tertiary
     kind: encyclopedia
     author: "Cary Nederman"
-    citation: "Nederman, Cary. \"Niccolò Machiavelli.\" Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/machiavelli/"
+    citation: "Nederman, Cary. \"Niccolò Machiavelli.\" Stanford Encyclopedia of Philosophy. First published 13 Sep 2005; substantive revision 6 Dec 2023. https://plato.stanford.edu/entries/machiavelli/"
     url: "https://plato.stanford.edu/entries/machiavelli/"
     accessed: 2026-10-19
-    reliability_note: "Signed scholarly encyclopedia; §1, §2, §4, §6 and §9 used."
+    reliability_note: "Signed scholarly encyclopedia (first published 13 Sep 2005; substantive revision 6 Dec 2023); §1, §2, §4, §6 and §9 used."
     used_for: [basics, contribution, worldview, timing]
   - id: S3
     type: primary

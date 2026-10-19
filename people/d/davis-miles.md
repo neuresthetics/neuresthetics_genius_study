@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): DV4, Tingen's Miles Beyond ch. 1 recorded as S3, an openable secondary quotation of Miles p. 411 (book still unread); ruling V3 (v8's call on the auditor's advice): primary_system stays UNKNOWN. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 119). Basics from Britannica (Britannica Editors, 18 October 2026). No statement of his on God, religion or nature read: the autobiography Miles (1989) was not available, and the one article quoting its religion passage could not be opened. Not a scientist (P30). primary_system, A–E and mid_basin UNKNOWN. Span 1949–1970 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -85,10 +86,10 @@ worldview:
   working_years: {value: "1949–1970", certainty: 0.5, cites: [{source: S1, locator: "'Cool jazz and modal jazz'; 'Free jazz and fusion'"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: UNKNOWN, how_known: "No statement of his on God or religion read. Lead: Miles (1989), p. 411, reportedly says organized religion is not for him but that he believes 'in being spiritual' and 'in spirits' (his dead parents and fellow musicians visiting him). Known only from a search-result extract of Lauren Coyle Rosen's article in The Spiritual Muses; the page returned an error when opened, and the book was not read, so nothing is cited or scored."}
+  primary_system: {value: UNKNOWN, how_known: "No statement of his on God or religion read in his own text. Lead: Miles (1989, with Quincy Troupe), p. 411: 'But I do believe in being spiritual and do believe in spirits. I always have. I believe my mother and father come to visit me…' Known from two secondary quotations: Lauren Coyle Rosen's article in The Spiritual Muses (search extract, gives p. 411; the page returns HTTP 500) and Paul Tingen, Miles Beyond ch. 1 (S3, opens; same words, no page), which also reports 'mystery and the supernatural' from the autobiography and Jo Gelbard's 'He was not one for God'. The book itself is unread; the words are after the span (1989, P1 cap 0.5) and from an interview-built autobiography (P42, P43). Ruling V3 (v8's call on the auditor's advice, batch V audit): secondary quotations alone do not move the value, so UNKNOWN stands until p. 411 is read in the book."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: ANIM, reason: "Not assessed: the 'spirits' lead (Miles p. 411) is unread."}
+    - {code: ANIM, reason: "Not assessed: the 'spirits' lead (Miles p. 411) is known only from secondary quotations (Rosen; Tingen, S3); ruling V3."}
     - {code: AGNOS, reason: "Not assessed: no statement read."}
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Nothing read (P19)."}
@@ -152,6 +153,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Editors' article; 'at a Glance' box and body sections cited; question boxes not cited (P26)."
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review]
+  - id: S3
+    type: secondary
+    kind: "scholarly book"
+    author: "Paul Tingen"
+    citation: "Tingen, Paul. Miles Beyond: The Electric Explorations of Miles Davis, 1967–1991 (New York: Billboard Books, 2001), ch. 1. Author's web copy: https://tingen.org/miles-beyond-chapter-1/"
+    url: "https://tingen.org/miles-beyond-chapter-1/"
+    accessed: 2026-10-19
+    reliability_note: "Music journalist's book chapter on the author's site (© 2001); quotes the autobiography without page numbers (secondary quotation). Used only for the worldview lead; nothing scored on it."
+    used_for: [worldview]
   - id: S2
     type: secondary
     kind: database
@@ -201,8 +211,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- Miles (1989), pp. 148–149, 411.
+- Miles (1989), pp. 148–149, 411 (p. 411 quoted by Rosen and Tingen [S3]; book unread).
 
 ## Research log
 
 - 2026-10-19: Read Britannica; The Spiritual Muses article (Rosen) failed to open (HTTP 500 and curl).
+- 2026-10-19 (batch V audit fixes): read Tingen, Miles Beyond ch. 1 (tingen.org) for the p. 411 wording [S3].

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch V audit note (gs_982cb8e_V run 1, UF8 follow-up): S1 now cites all Britannica contributors, Arne D. Naess, Richard Wolin and Britannica Editors. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): HE4, the later essays and lectures listed as one body-of-work contribution (1946–1964; SEP for lasting, IEP for dates), span and working_years 1927 -> 1927–1964; note, the dates of the break with Catholicism (Britannica 1916–17, IEP 9 January 1919) in changes_over_life. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 115). Basics from Britannica (Arne D. Naess), SEP (Mark Wrathall) and IEP (W. J. Korab-Karpowicz). No text of his own on God or nature read: Phänomenologie und Theologie (1927) and the 1919 letter are leads only (P26). Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN; C UNKNOWN; D BELOW_THRESHOLD; E UNKNOWN; mid_basin UNKNOWN. Single-year span 1927 (Being and Time). Not plotted. Draft, not reviewed."}
 
@@ -153,11 +154,11 @@ sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
-    author: "Arne D. Naess (Britannica)"
-    citation: "Naess, Arne D. \"Martin Heidegger.\" Encyclopaedia Britannica (updated 22 September 2026). https://www.britannica.com/biography/Martin-Heidegger-German-philosopher. Read live 2026-10-19."
+    author: "Arne D. Naess, Richard Wolin and Britannica Editors"
+    citation: "Naess, Arne D., Richard Wolin and Britannica Editors. \"Martin Heidegger.\" Encyclopaedia Britannica (updated 22 September 2026). https://www.britannica.com/biography/Martin-Heidegger-German-philosopher. Read live 2026-10-19."
     url: "https://www.britannica.com/biography/Martin-Heidegger-German-philosopher"
     accessed: 2026-10-19
-    reliability_note: "Signed article; the fetched text stopped after the 'Being and Time' section; facts box and body cited, question boxes not."
+    reliability_note: "Signed article with several contributors: the main page reads 'Written by Arne D. Naess', the 'Later philosophy' subpage 'Written by Richard Wolin' with Britannica Editors (batch V audit note); the fetched text stopped after the 'Being and Time' section; facts box and body cited, question boxes not."
     used_for: [identity, basics, contribution, worldview]
   - id: S2
     type: tertiary

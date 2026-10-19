@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): ruling V1 (v8's call on the auditor's advice; RQ-AU1 does not extend to prayers for peace): MA5, B BELOW_THRESHOLD -> UNKNOWN, readings 1 and 3 kept as leads; MA6, mid_basin BELOW_THRESHOLD -> UNKNOWN. Notes: Forster's 'just an ordinary person' labelled a secondary quotation; primary_system how_known gives the P42 reason the speech counts. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 121). Basics from Britannica (Britannica Editors), the Nobel Foundation biography and facts page; religion from Dion Forster's 2014 faith biography and his own Easter address at Moria (3 April 1994, SAHO transcript). Not a scientist (P30). primary_system CHRIST at 0.5 (alt BELOW_THRESHOLD); A 1 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (readings 1 and 3 named); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1964–1994 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -96,8 +97,8 @@ worldview:
     basis: written_profession
     certainty: 0.5
     cites: [{source: S5, locator: "Easter section ('Each easter marks...'); opening"}, {source: S4, locator: "'Why the claims...'; 'African Christian humanism'"}]
-    how_known: "His own public Easter address (1994, inside the span): 'Each easter marks the rebirth of our faith. It marks the victory of our risen saviour over the torture of the cross and the grave.' Forster: 'Mr Mandela regarded himself as a member of that denomination throughout his life' (S4)."
-    rationale: "CHRIST at 0.5 with BELOW_THRESHOLD as the named alternative. For: first-person-plural confession of the resurrection in his own address; lifelong self-identification as a Methodist (S4). Against: the address was a campaign speech three weeks before the 1994 election, given on behalf of the ANC to a church audience; Forster finds him 'much more strongly influenced by a form of African humanism than Christian theology' and quotes him as 'just an ordinary person trying to make sense of the mysteries of life' (S4). Contested, so at most 0.7; occasion-bound, so 0.5."
+    how_known: "His own public Easter address (1994, inside the span). Under P42 a speech he gave in person, attributed to him by SAHO and the Nelson Mandela Foundation archive, counts as his own words; no source read names a speechwriter. 'Each easter marks the rebirth of our faith. It marks the victory of our risen saviour over the torture of the cross and the grave.' Forster: 'Mr Mandela regarded himself as a member of that denomination throughout his life' (S4)."
+    rationale: "CHRIST at 0.5 with BELOW_THRESHOLD as the named alternative. For: first-person-plural confession of the resurrection in his own address; lifelong self-identification as a Methodist (S4). Against: the address was a campaign speech three weeks before the 1994 election, given on behalf of the ANC to a church audience; Forster finds him 'much more strongly influenced by a form of African humanism than Christian theology' and quotes him as 'just an ordinary person trying to make sense of the mysteries of life' (S4; a secondary quotation: Forster quoting Cracknell and White quoting Mandela, so context only). Contested, so at most 0.7; occasion-bound, so 0.5."
     alternatives:
       - {value: BELOW_THRESHOLD, note: "Occasion-bound public piety; humanism over theology (S4).", cites: [{source: S4, locator: "'African Christian humanism'"}]}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29). Forster's 'African Christian humanism' is a scholar's label, not a code."}
@@ -115,11 +116,11 @@ worldview:
       how_known: "One public address, occasion-bound; 0.5."
       alternatives:
         - {value: BELOW_THRESHOLD, note: "Liturgical language at a campaign event.", cites: [{source: S4, locator: "'African Christian humanism'"}]}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P30); no statement on nature. The address's communal prayers ('We pray with you so that the blessings of peace may descend upon South Africa like a torrent!') are petitions, not a statement on nature (P16 addendum, RQ-AU1); named reading 1 at 0.5. Against it, the same address says 'The coming of the democratic elections to this country is not a miracle. It is the outcome of decades of consistent and unrelenting struggle', a human-causation remark about politics (named reading 3, P41-style, but not a statement about nature)."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement on nature (P16). Ruling V1 (v8's call on the auditor's advice, batch V audit at 982cb8e): the RQ-AU1 addendum covers only a person's own prayer for physical protection or healing; a public petition for peace ('We pray with you so that the blessings of peace may descend upon South Africa like a torrent!') is neither and says nothing about nature, so B is UNKNOWN. Leads kept: reading 1 (the communal petitions) and reading 3 ('The coming of the democratic elections to this country is not a miracle. It is the outcome of decades of consistent and unrelenting struggle', a human-causation remark about politics, not a statement about nature)."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing on reward and punishment of persons in his own view read (P19); 'attained immortality' is said of the Messiah."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation against observation read (P19)."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Lead only: prayers for blessings on South Africa; 'the Good News ... who chose all of humankind' is about salvation's scope (C, not E)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "P4: A 1 at 0.5 and B BELOW_THRESHOLD; no branch met."}
+  mid_basin: {value: UNKNOWN, how_known: "P4/P19: B is UNKNOWN, which takes precedence (batch V audit fix MA6, after ruling V1). A 1 at 0.5."}
   statements:
     - text: "We bow our heads in worship on this day and give thanks to the Almighty for the bounty he has bestowed upon us over the past year. We raise our voices in holy gladness to celebrate the victory of the risen Christ over the terrible forces of death."
       cites: [{source: S5, locator: "opening, after the greetings"}]
@@ -257,7 +258,7 @@ sources:
 
 ## Summary
 
-Nelson Mandela (1918–2013), anti-apartheid leader and first Black president of South Africa [S1]. Draft: primary_system CHRIST at 0.5; A 1 at 0.5; B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
+Nelson Mandela (1918–2013), anti-apartheid leader and first Black president of South Africa [S1]. Draft: primary_system CHRIST at 0.5; A 1 at 0.5; B UNKNOWN (ruling V1); mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
