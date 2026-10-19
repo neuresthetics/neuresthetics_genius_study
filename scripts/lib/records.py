@@ -237,6 +237,24 @@ def firm(p):
     return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
 
 
+SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo"}
+_SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv"}
+
+
+def short_label(name):
+    """Chart label for a person: the surname, without a parenthetical ('Ibn Rushd (Averroes)') or a trailing
+    suffix ('Martin Luther King Jr.' -> 'King'). A two-word 'Ibn X' name keeps both words ('Ibn Rushd')."""
+    if name in SHORT_LABELS:
+        return SHORT_LABELS[name]
+    base = re.sub(r"\s*\([^)]*\)", "", name).strip()
+    toks = base.replace(",", " ").split()
+    while len(toks) > 1 and toks[-1].lower() in _SUFFIXES:
+        toks.pop()
+    if len(toks) == 2 and toks[0].lower() == "ibn":
+        return " ".join(toks)
+    return toks[-1] if toks else name
+
+
 def people_chart_caption():
     """README caption for figures/people_cause_locus.png, computed from the records. Every count uses only the
     people scorable for it; the rest are reported as not scorable yet (OPEN_DECISIONS P34)."""
@@ -264,7 +282,7 @@ def people_chart_caption():
         ivn = (f" **Interview voice (P43):** {names} {'rests' if len(iv) == 1 else 'rest'} on interview statements of disputed wording "
                f"(for Stravinsky, the Craft books), capped at 0.5 and drawn faded"
                + (f"; {nleft} plotted {'person scores' if nleft == 1 else 'people score'} left of B 3 "
-                  f"({', '.join(x['name'].split()[-1] for x in pts if x['B'] < 3)})" if nleft else "") + ".")
+                  f"({', '.join(short_label(x['name']) for x in pts if x['B'] < 3)})" if nleft else "") + ".")
     return (f"*Draft person scores: where God is (up the chart) against how things happen (across the chart). "
             f"No region is marked. Plotted: the {len(pts)} coded people with both axes scored; {brange}.{left}{ivn}{ns} "
             f"These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the "

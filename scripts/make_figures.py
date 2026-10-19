@@ -25,7 +25,7 @@ from matplotlib.patches import Rectangle  # noqa: E402
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from matplotlib.lines import Line2D  # noqa: E402
 import math  # noqa: E402
-from lib.records import (REPO, read_record, read_csv, person_files, people_axis_points, P43_PEOPLE)  # noqa: E402
+from lib.records import (REPO, read_record, read_csv, person_files, people_axis_points, P43_PEOPLE, short_label)  # noqa: E402
 
 FOOTER = "Genius Study v8.0-alpha · descriptive only, no results"
 MODELS = ["Claude", "DeepSeek", "Gemini", "GPT", "Grok"]
@@ -46,6 +46,81 @@ SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM",
                    "DETERM", "LVSAT", "PANENT", "HEDON", "PANPSY", "IDEAL"]
 AXES = ["A_locus", "B_cause", "C_ledger", "D_authority", "E_scope"]
 DPI = 170
+
+
+# Label layout ---------------------------------------------------------------
+from matplotlib.font_manager import FontProperties  # noqa: E402
+from matplotlib.textpath import TextToPath  # noqa: E402
+
+_T2P = TextToPath()
+
+
+def text_width_in(label, fs, bold=False):
+    """Width of a label in inches at font size fs (points)."""
+    prop = FontProperties(size=fs, weight="bold" if bold else "normal")
+    w, _, _ = _T2P.get_text_width_height_descent(label, prop, ismath=False)
+    return w / 72.0
+
+
+def fit_cell(labels, cell_w, cell_h, fs_max, fs_min=7.5, dot_gap=0.05, head=(), max_cols=4, bold_head=True,
+             line=1.45, usable_w=0.92, usable_h=0.84, pad=0.08):
+    """Pick (ncols, fs) for one grid cell so that no label overlaps its neighbour.
+    cell_w, cell_h: the cell's size in inches. labels fill columns below `head` labels, which take full-width rows.
+    Prefers the largest font, then the fewest columns. dot_gap is the dot-to-text offset and pad the clear space
+    before the next column's marker, both in cell units."""
+    n = len(labels)
+    fs = fs_max
+    while fs >= fs_min - 1e-9:
+        rowh = fs * line / 72.0 / cell_h                    # one text line, in cell units
+        ok = []
+        for ncols in range(1, max_cols + 1):
+            if n == 0 and ncols > 1:
+                break
+            nrows = len(head) + (math.ceil(n / ncols) if n else 0)
+            if nrows * rowh > usable_h:
+                continue
+            colw = usable_w / ncols
+            wide = max((text_width_in(t, fs) / cell_w for t in labels), default=0)
+            hw = max((text_width_in(t, fs, bold_head) / cell_w for t in head), default=0)
+            if dot_gap + wide + pad <= colw and dot_gap + hw <= usable_w:
+                ok.append((ncols, nrows))
+        if ok:
+            # Largest font first; then the fewest columns that keep a cell to about six rows.
+            short = [c for c, r in ok if r <= 6]
+            return (short[0] if short else ok[0][0]), fs
+        fs -= 0.5
+    return max_cols, fs_min
+
+
+def report_overlaps(fig, name):
+    """Print any overlapping label boxes (labels against labels and against markers). Used to check the charts."""
+    fig.canvas.draw()
+    r = fig.canvas.get_renderer()
+    boxes = []
+    for ax in fig.axes:
+        for t in ax.texts:
+            if t.get_text().strip():
+                boxes.append(("text", t.get_text(), t.get_window_extent(r)))
+        for c in ax.collections:
+            sizes = c.get_sizes()
+            for k, (x, y) in enumerate(c.get_offsets()):
+                px, py = c.get_offset_transform().transform((x, y))
+                area = sizes[k % len(sizes)] if len(sizes) else 36
+                rad = math.sqrt(area) / 2 * fig.dpi / 72.0
+                from matplotlib.transforms import Bbox
+                boxes.append(("dot", "", Bbox([[px - rad, py - rad], [px + rad, py + rad]])))
+    hits = []
+    for i in range(len(boxes)):
+        for j in range(i + 1, len(boxes)):
+            a, b = boxes[i], boxes[j]
+            if a[0] == "dot" and b[0] == "dot":
+                continue
+            if a[2].overlaps(b[2]):
+                ov = min(a[2].x1, b[2].x1) - max(a[2].x0, b[2].x0), min(a[2].y1, b[2].y1) - max(a[2].y0, b[2].y0)
+                if ov[0] > 1 and ov[1] > 1:
+                    hits.append((a[1] or "<dot>", b[1] or "<dot>"))
+    print(f"{name}: {len(hits)} label overlaps" + (": " + "; ".join(f"{x} / {y}" for x, y in hits[:20]) if hits else ""))
+    return hits
 
 
 def footer(fig, source):
@@ -158,7 +233,6 @@ def fig_core_composition(out):
 def fig_people_cause_locus(out):
     """Surnames sit next to their dots on a 5x5 grid. No region is shaded or labeled (Jason, 2026-10-08).
     Full 0-4 range on both axes. People come from people_axis_points(), not a hardcoded list."""
-    short_names = {"Galileo Galilei": "Galileo", "Ibn Sina (Avicenna)": "Ibn Sina"}
     # Plain words for the 0-4 scale (CODING_GUIDE §6: 0 pole, 1 leans, 2 mixed, 3 leans other pole with a stated exception, 4 pole)
     y_labels = ["A person outside\nthe world", "Mostly a person\noutside the world", "Mixed",
                 "Mostly the order\nof nature", "The order of nature\nitself (or no\nseparate God)"]
@@ -166,37 +240,41 @@ def fig_people_cause_locus(out):
                 "Lawful, with a stated\nexception", "Lawful, no\nexceptions"]
     dot = "#3B6AA0"
 
-    def short(name):
-        return short_names.get(name, name.split()[-1])
+    def label(p):
+        return short_label(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")
 
     pts, not_scorable = people_axis_points()
     cells = collections.defaultdict(list)
     for p in pts:
         cells[(p["B"], p["A"])].append(p)
 
-    fig = plt.figure(figsize=(16, 11))
-    ax = fig.add_axes((0.15, 0.13, 0.82, 0.72))
+    W, H = 18, 13
+    AX = (0.14, 0.12, 0.84, 0.74)
+    fig = plt.figure(figsize=(W, H))
+    ax = fig.add_axes(AX)
     ax.set_xlim(-0.5, 4.5)
     ax.set_ylim(-0.5, 4.5)
+    cell_w, cell_h = W * AX[2] / 5, H * AX[3] / 5
 
-    # Cells: a small grid of dots, surname to the right of each dot.
+    # Cells: a small grid of dots, surname to the right of each dot. Columns and font size are fitted per cell
+    # (fit_cell) so that no label runs into the next column or row.
     for (b, a), ps in cells.items():
-        ps = sorted(ps, key=lambda p: short(p["name"]))
+        ps = sorted(ps, key=label)
+        labs = [label(p) for p in ps]
         n = len(ps)
-        ncols = 1 if n <= 5 else 2  # one column fits long surnames; two only for crowded cells
+        ncols, fs = fit_cell(labs, cell_w, cell_h, fs_max=12, dot_gap=0.05, max_cols=3)
         nrows = math.ceil(n / ncols)
-        colw = 0.9 / ncols
-        rowh = min(0.24, 0.8 / max(nrows, 1))
+        colw = 0.92 / ncols
+        rowh = min(0.24, 0.8 / max(nrows - 1, 1))
         for i, p in enumerate(ps):
             c, r = divmod(i, nrows)  # fill down each column first
-            x = b - 0.42 + c * colw
+            x = b - 0.44 + c * colw
             y = a + (nrows - 1) / 2 * rowh - r * rowh
             cert = min(p["cA"], p["cB"])
             faded = cert < 0.7
             ax.scatter(x, y, s=120, color=dot, alpha=0.28 if faded else 0.95,
                        edgecolor="#999999" if faded else "black", lw=0.8, zorder=3)
-            label = short(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")
-            ax.text(x + 0.05, y, label, ha="left", va="center", fontsize=12,
+            ax.text(x + 0.05, y, labs[i], ha="left", va="center", fontsize=fs,
                     color="#777777" if faded else "#111111", zorder=4)
 
     ax.set_xticks(range(5), x_labels, fontsize=11.5)
@@ -228,6 +306,7 @@ def fig_people_cause_locus(out):
     fig.text(0.01, 0.012, "Source: draft person records in neuresthetics/neuresthetics_genius_study (people/), "
              "unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
              ha="left", va="bottom", fontsize=8.5, color="#888888")
+    report_overlaps(fig, "people_cause_locus.png")
     save(fig, out, "people_cause_locus.png")
 
 
@@ -343,31 +422,39 @@ def _style(it):
 
 def _mark(ax, x, y, it, fs):
     sysm, f, col, tcol = _style(it)
-    ax.scatter(x, y, s=110 if sysm else 95, marker="D" if sysm else "o", color=col, alpha=0.30 if f else 0.95,
+    # Shrink markers with the font in crowded cells so that stacked diamonds and dots do not touch.
+    size = min(110 if sysm else 95, (fs * (0.95 if sysm else 1.1)) ** 2)
+    ax.scatter(x, y, s=size, marker="D" if sysm else "o", color=col, alpha=0.30 if f else 0.95,
                edgecolor="#999999" if f else "black", lw=0.8, zorder=3, clip_on=False)
     ax.text(x + 0.045, y, it["label"], ha="left", va="center", fontsize=fs, fontweight="bold" if sysm else "normal",
             color=tcol, zorder=4, clip_on=False)
 
 
 def _draw_cells(ax, items):
-    """Systems take full-width rows at the top of a cell; people fill one or two columns below."""
+    """Systems take full-width rows at the top of a cell; people fill columns below. Columns and font size are
+    fitted per cell (fit_cell) from the axes' size so that labels do not overlap."""
+    fig = ax.figure
+    bb = ax.get_position()
+    cell_w = fig.get_figwidth() * bb.width / 5
+    cell_h = fig.get_figheight() * bb.height / 5
     cells = collections.defaultdict(list)
     for it in items:
         cells[(it["B"], it["A"])].append(it)
     for (b, a), its in cells.items():
         syss = sorted([i for i in its if i["kind"] == "system"], key=lambda i: i["label"])
         ppl = sorted([i for i in its if i["kind"] != "system"], key=lambda i: i["label"])
-        ncols = 1 if len(ppl) <= 5 - len(syss) else 2
-        prow = math.ceil(len(ppl) / ncols)
+        ncols, fs = fit_cell([i["label"] for i in ppl], cell_w, cell_h, fs_max=10, fs_min=7,
+                             dot_gap=0.045, head=[i["label"] for i in syss], max_cols=3, line=1.4)
+        prow = math.ceil(len(ppl) / ncols) if ppl else 0
         nrows = len(syss) + prow
-        rowh = min(0.2, 0.84 / max(nrows - 1, 1))
-        fs = 10 if nrows <= 5 else (9 if nrows <= 7 else 8)
+        rowh = min(0.2, 0.8 / max(nrows - 1, 1))
         top = a + (nrows - 1) / 2 * rowh
+        colw = 0.92 / ncols
         for i, it in enumerate(syss):
-            _mark(ax, b - 0.43, top - i * rowh, it, fs)
+            _mark(ax, b - 0.44, top - i * rowh, it, fs)
         for i, it in enumerate(ppl):
             c, r = divmod(i, prow)
-            _mark(ax, b - 0.43 + c * 0.47, top - (len(syss) + r) * rowh, it, fs)
+            _mark(ax, b - 0.44 + c * colw, top - (len(syss) + r) * rowh, it, fs)
 
 
 def _layout(fig):
@@ -480,17 +567,17 @@ def fig_systems_cause_locus(out):
     ax.legend(leg, names, loc="upper left", fontsize=10, frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
     fig.text(0.01, 0.008, "Source: draft system records (systems/*.md), unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
              ha="left", va="bottom", fontsize=8.5, color="#888888")
+    report_overlaps(fig, "systems_cause_locus.png")
     save(fig, out, "systems_cause_locus.png")
 
 
 def fig_people_systems_overlay(out):
     grid, a_only, b_only, neither, unscored, stubs = system_axis_points()
     pts, not_scorable = people_axis_points()
-    short_names = {"Galileo Galilei": "Galileo", "Ibn Sina (Avicenna)": "Ibn Sina"}
     items = [{"B": p["B"], "A": p["A"], "kind": "person", "faded": min(p["cA"], p["cB"]) < 0.7,
-              "label": short_names.get(p["name"], p["name"].split()[-1]) + ("*" if p["name"] in P43_PEOPLE else "")}
+              "label": short_label(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")}
              for p in pts]
-    fig = plt.figure(figsize=(19, 13.5))
+    fig = plt.figure(figsize=(22, 15.5))
     ax, left, bot, box = _layout(fig)
     _draw_cells(ax, items + grid)
     _draw_strips(left, bot, a_only, b_only)
@@ -507,6 +594,7 @@ def fig_people_systems_overlay(out):
     ax.legend(leg, names, loc="upper left", fontsize=10, frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
     fig.text(0.01, 0.008, "Source: draft person and system records, unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
              ha="left", va="bottom", fontsize=8.5, color="#888888")
+    report_overlaps(fig, "people_systems_overlay.png")
     save(fig, out, "people_systems_overlay.png")
 
 
