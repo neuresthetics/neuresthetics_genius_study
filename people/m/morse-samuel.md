@@ -1,0 +1,300 @@
+---
+record:
+  record_type: person
+  schema_version: "1.3"
+  record_version: 1
+  review_status: "draft — unreviewed"
+  collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
+  model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
+  collected_on: 2026-10-19
+  last_updated: 2026-10-19
+  change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 128). Basics from Britannica (Carleton Mabee; Britannica Editors). Worldview from his own letters in Samuel F. B. Morse: His Letters and Journals (ed. Edward Lind Morse, 1914; Project Gutenberg) and his pamphlet Foreign Conspiracy (1835; archive.org scan). Not a scientist (P33: inventions). primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (named reading 1, RQ-AU1 analogy; RQ-X1); C, D UNKNOWN; E 1 (0.5, alt BELOW_THRESHOLD); mid_basin BELOW_THRESHOLD. Span 1832–1838 (0.7). Not plotted. Draft, not reviewed."}
+
+identity:
+  id: morse-samuel
+  display_name: "Samuel Morse"
+  roster:
+    canonical_name: "Samuel Morse"
+    rank: 128
+    F: 4
+    models: [Claude, Gemini, GPT, Grok]
+    band: "core (3–4)"
+    status: core
+    field: invention
+    field_bucket: "invention / engineering"
+  full_name: {value: "Samuel Finley Breese Morse", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts ('In full')"}], how_known: "Britannica."}
+  native_name: {value: "Samuel Finley Breese Morse", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "English."}
+  aliases:
+    - {name: "Morse-Samuel", kind: "roster alias"}
+    - {name: "Samuel-Morse", kind: "roster alias"}
+    - {name: "Samuel F. B. Morse", kind: "other"}
+
+basics:
+  birth:
+    date: {value: "1791-04-27", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Born)"}], how_known: "Britannica (single source, P15)."}
+    place: {value: "Charlestown, Massachusetts", modern_name: "Charlestown, Boston, Massachusetts, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Born)"}], how_known: "Britannica."}
+  death:
+    date: {value: "1872-04-02", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Died)"}], how_known: "Britannica."}
+    place: {value: "New York, New York", modern_name: "New York City, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Died)"}], how_known: "Britannica."}
+  first_lasting_contribution_year: {value: 1832, certainty: 0.7, cites: [{source: S1, locator: "opening ('developed an electric telegraph (1832–35)')"}], how_known: "The electric telegraph, dated as a range 1832–35, so its start year (P12). Alternative 1835 ('He probably made his first working model by 1835'); 1832 is the year he 'conceived the idea' on the voyage home."}
+  era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1832 (P2); 1835 gives the same bucket."}
+  region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "United States (P3)."}
+  region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraphs (New York, Morristown, Washington–Baltimore)"}], how_known: "Britannica; art study in England 1811 and Europe to 1832."}
+  sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
+  languages_of_work: {value: ["English"], certainty: 0.7, cites: [{source: S2, locator: "letters"}], how_known: "Coder's reading."}
+  occupations: {value: ["painter", "inventor", "teacher of art, University of the City of New York", "first president of the National Academy of Design (1826–1845)"], certainty: 0.7, cites: [{source: S1, locator: "opening; leadership and telegraph paragraphs"}], how_known: "Britannica."}
+
+contribution:
+  fields: {value: ["telegraphy", "painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  lasting_original_contributions:
+    - {value: "An electric telegraph (recording electromagnetic telegraph; first US line, Washington–Baltimore, 1844)", year: 1832, kind: invention, lasting: "'Even during Morse's own lifetime, the world was much changed by the telegraph'; his 1837 instrument is preserved by the Smithsonian (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraphs; legacy paragraph"}], how_known: "Britannica dates the development 1832–35 (P12 start year). An invention, not a theory or result, so not a scientist (P33)."}
+    - {value: "Morse Code (with Alfred Vail)", year: 1838, kind: "concept or term", lasting: "'the system of dots and dashes that became known throughout the world as the Morse Code' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Top Questions; telegraph paragraph ('By 1838')"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b)."}
+    - {value: "Portraits (Lafayette, William Cullen Bryant and others)", kind: "body of work", lasting: "'some of the finest portraits ever done by an American artist'; 'his reputation as an artist has grown' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Top Questions; legacy paragraph"}], how_known: "Britannica; undated there, so it sets no span (P39)."}
+  evidence_of_impact:
+    - {value: "Telegraph lines 'over continents and under oceans'; wealth and fame in his lifetime", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "patent and legacy paragraphs"}], how_known: "Britannica."}
+    - {value: "1854 US Supreme Court decision upholding his patent rights", kind: other, certainty: 0.7, cites: [{source: S1, locator: "controversy paragraph"}], how_known: "Britannica."}
+  major_works: []
+  honours: []
+  definition_fit: {value: "clearly meets", rationale: "Telegraph and Morse Code changed communication worldwide (S1).", certainty: 0.7, cites: [{source: S1, locator: "legacy paragraph"}], how_known: "Coder's reading."}
+
+childhood:
+  family_religion: {value: "Congregationalist (father a Congregational clergyman)", certainty: 0.7, cites: [{source: S1, locator: "opening ('Congregational clergyman Jedidiah Morse')"}], how_known: "Britannica."}
+  family_religious_practice: {value: "'austere parents'", certainty: 0.5, cites: [{source: S1, locator: "Top Questions; opening"}], how_known: "Britannica's word; practice not described."}
+  parents_and_household:
+    - {value: "Father: Jedidiah Morse, geographer and Congregational clergyman", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  household_circumstances: {value: "Clerical, orthodox household; parents distressed by his painting", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  schooling:
+    - {value: "Phillips Academy, Andover, Massachusetts", stage: "grammar or secondary school", run_by: private, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica; 'an unsteady and eccentric student'."}
+    - {value: "Yale College, New Haven (graduated 1810)", stage: university, run_by: other, years: "to 1810", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica; lectures on electricity aroused his interest."}
+  early_mathematics: {value: UNKNOWN, how_known: "Not stated."}
+  early_geometric_style_reasoning: {value: UNKNOWN, how_known: "Not stated."}
+  early_science_exposure:
+    - {value: "Yale lectures on electricity", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  key_early_reading: []
+  childhood_mentors: []
+  languages_in_childhood: {value: ["English"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
+  notable_events: []
+
+worldview:
+  unit: "adult working worldview"
+  working_years: {value: "1832–1838", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraph"}], how_known: "Equals timing.major_work_period."}
+  nominal_affiliations:
+    - {value: "Protestant, by his own public identification ('we, Protestant republicans of the United States', 1835)", certainty: 0.7, cites: [{source: S3, locator: "p. 30"}], how_known: "His own published pamphlet (pseudonym Brutus; authorship stated in his letter of 20 May 1835, S2 vol. II ch. XXII)."}
+  self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement on science and religion as such read; the 1868 banquet speech ascribes the telegraph's origin to God (statements) but does not state a relation."}
+  primary_system:
+    value: CHRIST
+    basis: consistent_private_letters
+    certainty: 0.7
+    cites: [{source: S2, locator: "vol. II ch. XXIV (letters of 8 November 1837 and 15 March 1838)"}, {source: S3, locator: "p. 30"}, {source: S2, locator: "vol. II chs. XXX–XXXI (letters of 31 May and 23 June 1844)"}]
+    rationale: "Inside the span, two private letters pray to a provident God ('through a kind Providence', 1837; 'let us pay to Him who shows it to us the homage of grateful and obedient hearts, with most earnest prayers for grace', 1838), and his published pamphlet calls himself one of the 'Protestant republicans' (1835). After the span the faith is explicit and Christian ('Pray for me then ... that I may have a heart to praise the great Deliverer', 1844; 'Not unto us ... but to God be all the glory', public speech, 1868). Consistent private letters, so 0.7 (§3); Britannica records his religious controversies 'with Unitarians and Roman Catholics' and gifts to seminaries and Bible societies (S1)."
+    how_known: "Own letters (edited 1914) and pamphlet."
+  secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
+  candidate_codes_considered:
+    - {code: CHRIST, reason: "Chosen: Protestant (Congregational) faith in letters and pamphlet."}
+    - {code: CLTHEI, reason: "Not used: no systematic theology read; CHRIST fits the stated Christian faith."}
+  lio_axes:
+    A_locus:
+      value: 0
+      basis: consistent_private_letters
+      certainty: 0.7
+      cites: [{source: S2, locator: "vol. II ch. XXIV (8 November 1837; 15 March 1838)"}, {source: S2, locator: "vol. II ch. XXXI (23 June 1844)"}]
+      rationale: "Transcendent person: a God addressed in prayer who shows and grants ('Him who shows it to us', 1838; 'a kind Providence', 1837); after the span, 'his salvation did come in answer to prayer' and 'The ways of God are mysterious' (1844). Two in-span private letters, so 0.7."
+      how_known: "Own letters."
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P33: inventions), so B needs a statement of his about nature (P16). Closest: after the span he reads a physical accident (a fall that wounded his leg) as providential: 'The ways of God are mysterious, and I find prayer answered in a way not at all anticipated. This accident, as we are apt to call it, I can plainly see is calculated to effect many salutary objects' (23 June 1844). A God who answers prayer through events is BELOW_THRESHOLD evidence by analogy with the petitionary-prayer addendum (P16, RQ-AU1), with B 1 at 0.5 as the named reading (after the span, P1 cap 0.5 in any case). RQ-X1: does a stated answered prayer through a physical event go beyond RQ-AU1?"}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward or punishment of persons (P19)."}
+    D_authority: {value: UNKNOWN, how_known: "Nothing read on revelation against observation; 'Science and Art are not opposed' (1868) is about art (P19)."}
+    E_scope:
+      value: 1
+      basis: consistent_private_letters
+      certainty: 0.5
+      cites: [{source: S2, locator: "vol. II ch. XXIV (8 November 1837)"}, {source: S2, locator: "vol. II ch. XXX (31 May 1844)"}]
+      rationale: "Scored on the world's order (P7): favour in providence for himself. 'Through a kind Providence, I have been thrown among most attentive, and kind, and skilful friends' (1837, in span); 'It is his work, and He alone could have carried me thus far through all my trials and enabled me to triumph over the obstacles, physical and moral' and 'none but He who has all hearts in his hands ... could so have brought light out of darkness' (1844, after span). Leans to the pole, limited to his own affairs. Named alternative BELOW_THRESHOLD: 'a kind Providence' may be a set phrase (as for the formulas in ruling U2)."
+      how_known: "Own letters; the strongest wording is after the span."
+      alternatives:
+        - {value: BELOW_THRESHOLD, note: "Providence formulas as conventional phrasing.", cites: [{source: S2, locator: "vol. II ch. XXIV"}]}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 at 0.7 but B BELOW_THRESHOLD; no branch of the P4 test is met (P19)."}
+  statements:
+    - text: "But, through a kind Providence, I have been thrown among most attentive, and kind, and skilful friends, who have treated me more like one of their own children than like a stranger."
+      cites: [{source: S2, locator: "vol. II ch. XXIV, letter to Sidney Morse, Morristown, 8 November 1837"}]
+      date: "1837-11-08"
+      context: "On an illness while building the telegraph machinery at the Vails' in Morristown."
+      axes: [A_locus, E_scope]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "Letters and Journals, ed. Edward Lind Morse (1914), Project Gutenberg #11018; web copy without page images (0.7 cap)."
+    - text: "I see nothing now but an unclouded prospect, for which let us pay to Him who shows it to us the homage of grateful and obedient hearts, with most earnest prayers for grace to use prosperity aright."
+      cites: [{source: S2, locator: "vol. II ch. XXIV, letter to Alfred Vail, 15 March 1838"}]
+      date: "1838-03-15"
+      context: "While a congressional appropriation for the telegraph still seemed possible."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "As above."
+    - text: "Is it likely that we, Protestant republicans of the United States, have won the kind regards of the Austrian government, which has been the persevering foe of the Reformation and its republican fruits since the days of Luther?"
+      cites: [{source: S3, locator: "p. 30"}]
+      date: "1835"
+      context: "Foreign Conspiracy, on Austria's support for Catholic missions in the United States."
+      axes: []
+      kind: "written profession (public)"
+      verified_against: "primary facsimile"
+      verified_on: 2026-10-19
+      note: "1835 Leavitt, Lord edition, archive.org scan, read through its OCR text (page image not viewed; OCR line breaks and hyphens removed); published under the pseudonym Brutus. Membership-level identification only; scores no axis."
+    - text: "It is his work, and He alone could have carried me thus far through all my trials and enabled me to triumph over the obstacles, physical and moral, which opposed me."
+      cites: [{source: S2, locator: "vol. II ch. XXX, letter to Sidney Morse, 31 May 1844"}]
+      date: "1844-05-31"
+      context: "A week after the first public message on the Washington–Baltimore line ('What hath God wrought!', chosen by Annie Ellsworth)."
+      axes: [A_locus, E_scope]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "After the span (P1 cap 0.5)."
+    - text: "The ways of God are mysterious, and I find prayer answered in a way not at all anticipated. This accident, as we are apt to call it, I can plainly see is calculated to effect many salutary objects."
+      cites: [{source: S2, locator: "vol. II ch. XXXI, letter to Sidney Morse, 23 June 1844"}]
+      date: "1844-06-23"
+      context: "On a leg wound from a fall that kept him in bed; the letter adds that 'his salvation did come in answer to prayer'."
+      axes: [B_cause]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "After the span (P1 cap 0.5)."
+    - text: "If not a sparrow falls to the ground without a definite purpose in the plans of infinite wisdom, can the creation of an instrumentality so vitally affecting the interests of the whole human race have an origin less humble than the Father of every good and perfect gift?"
+      cites: [{source: S2, locator: "vol. II ch. XXXIX, speech at the banquet at Delmonico's, New York, 30 December 1868"}]
+      date: "1868-12-30"
+      context: "Closing words of his public speech at the banquet in his honour presided over by Chief Justice Chase."
+      axes: [A_locus, E_scope]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-19
+      note: "Speech text as printed by his son (1914). After the span (P1 cap 0.5)."
+  changes_over_life: []
+  coder_notes: "Coder's call on the span: 1832 (telegraph, Britannica's range 1832–35, P12 start year) to 1838 (Morse Code). Alternative start 1835 (first working model); 1844 (first line) is the completion of the telegraph, not a separate listed item. Not a scientist (P33). The two in-span letters carry the code and A; the strongest wording (answered prayer, providence in his trials) is from 1844 and later. The Rankin recollection (S2 vol. II ch. XXIII) has Morse say God created nature's forces 'as expressions of good-will to man'; reported speech (§7), a lead only. Editor's phrases ('his belief that he was but a chosen vessel') are not his words. RQ-X1 on B."
+
+heritage:
+  use: "context only — never an outcome and never a worldview code"
+  ethnic_or_communal_heritage: {value: "New England Protestant (Congregational clergy family)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+  religious_heritage_by_birth: {value: "Congregationalism", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica (father's church)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated."}
+  childhood_catechism: {value: UNKNOWN, how_known: "Not stated."}
+
+timing:
+  lane: "A — descriptive facts; Lane B's H1 timing test reads them"
+  major_work_period: {value: "1832–1838", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraph"}], how_known: "From the telegraph (1832–35, start year, P12) to the Morse Code (1838) (P30). Coder's call; alternatives in coder_notes."}
+  age_at_first_lasting_contribution: {value: 41, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}], how_known: "1832 − 1791 = 41 (P30); 44 under the 1835 alternative."}
+  first_evidence_of_lio_type_views: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "letters read"}], how_known: "No axis scored at 3 or 4."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "letters read"}], how_known: "As above."}
+  worldview_during_major_work: {value: "CHRIST: prayer to a provident God (1837, 1838)", certainty: 0.7, cites: [{source: S2, locator: "vol. II ch. XXIV"}], how_known: "In-span letters."}
+
+lane_b:
+  label: "Lane B — labeled belief model, not a finding"
+  geometric_form_present: {value: "unclear", rationale: "Not assessed.", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Not assessed."}
+  form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Not assessed."}
+  circle_present: {value: "unclear", rationale: "Not assessed.", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Coder's reading."}
+  reading: "Inventor as instrument of providence."
+  notes: ""
+
+institutions:
+  - {value: "National Academy of Design", role: "founder and first president", years: "1826–1845", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "leadership paragraph"}], how_known: "Britannica."}
+  - {value: "University of the City of New York (later New York University)", role: "teacher of art", years: UNKNOWN, kind: university, certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}], how_known: "Britannica; years not given."}
+  - {value: "Vassar College", role: "founder and trustee", years: UNKNOWN, kind: university, certainty: 0.7, cites: [{source: S1, locator: "old age paragraph"}], how_known: "Britannica."}
+collaborators:
+  - {value: "Alfred Vail", relation: collaborator, note: "co-developer of the code; partner in telegraph rights", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}], how_known: "Britannica."}
+  - {value: "Leonard Gale", relation: collaborator, note: "chemist; introduced Joseph Henry's work; partner", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}], how_known: "Britannica."}
+  - {value: "Joseph Henry", relation: other, note: "his electromagnets made long-distance signalling possible", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}], how_known: "Britannica."}
+  - {value: "Washington Allston", relation: teacher, note: "painting, England, from 1811", certainty: 0.7, cites: [{source: S1, locator: "early career paragraph"}], how_known: "Britannica."}
+  - {value: "Jedidiah Morse", relation: family, note: "father", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+
+review:
+  roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 128"}], how_known: "Study roster."}
+  controversies:
+    - {value: "Ran on anti-immigrant and anti-Roman Catholic tickets for mayor of New York (1836, 1841); wrote against a 'Popery' conspiracy", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}, {source: S3, locator: "title page"}], how_known: "Britannica and his pamphlet."}
+    - {value: "Controversies 'in politics with the Irish and abolitionists' and priority disputes over the telegraph", certainty: 0.7, cites: [{source: S1, locator: "controversy paragraph"}], how_known: "Britannica."}
+  data_quality_flags:
+    - "Letters read in his son's 1914 edition on Project Gutenberg (no page images)."
+  open_questions:
+    - "RQ-X1: Morse's B (answered prayer through a physical accident, 1844)."
+
+sources:
+  - id: S1
+    type: tertiary
+    kind: encyclopedia
+    author: "Carleton Mabee; Britannica Editors"
+    citation: "Mabee, Carleton, and Britannica Editors. \"Samuel F.B. Morse.\" Encyclopaedia Britannica (updated 10 October 2026). https://www.britannica.com/biography/Samuel-F-B-Morse. Read live 2026-10-19."
+    url: "https://www.britannica.com/biography/Samuel-F-B-Morse"
+    accessed: 2026-10-19
+    reliability_note: "Signed article by his biographer; Quick Facts and body cited; Top Questions used only where the body agrees."
+    used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators, review]
+  - id: S2
+    type: primary
+    kind: "scholarly edition"
+    author: "Samuel F. B. Morse; ed. Edward Lind Morse"
+    citation: "Morse, Edward Lind, ed. Samuel F. B. Morse: His Letters and Journals. 2 vols. 1914 (vol. II 'Published November 1914'). Project Gutenberg eBooks #11017 (vol. I) and #11018 (vol. II). https://www.gutenberg.org/ebooks/11018"
+    url: "https://www.gutenberg.org/ebooks/11018"
+    accessed: 2026-10-19
+    reliability_note: "Edited letters with the editor's narrative; only Morse's own letters and speeches are quoted as his words. Gutenberg text without page images (web copy, 0.7 cap); cited by volume, chapter and letter date. Publisher not shown in the Gutenberg text."
+    used_for: [worldview, timing]
+  - id: S3
+    type: primary
+    kind: "published work by the subject"
+    author: "Samuel F. B. Morse (as 'Brutus')"
+    citation: "[Morse, Samuel F. B.] Foreign Conspiracy against the Liberties of the United States: The Numbers of Brutus. New York: Leavitt, Lord & Co., 1835. Internet Archive foreignconspiracy00morsrich (UC Berkeley copy). https://archive.org/details/foreignconspiracy00morsrich"
+    url: "https://archive.org/details/foreignconspiracy00morsrich"
+    accessed: 2026-10-19
+    reliability_note: "Library scan of the 1835 edition; read through the OCR text with printed page headers. Authorship: his letter of 20 May 1835 speaks of 'the charge I have made' (S2 vol. II ch. XXII)."
+    used_for: [worldview, review]
+  - id: S4
+    type: secondary
+    kind: database
+    author: "Neuresthetics Genius Study"
+    citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
+    url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
+    accessed: 2026-10-19
+    reliability_note: "Study's own roster."
+    used_for: [identity, review]
+---
+
+# Samuel Morse
+
+> Status: draft — unreviewed. Cite every factual sentence with a source id from the front matter, like `[S1, p. 12]`.
+
+## Summary
+
+Samuel F. B. Morse (1791–1872), American painter and inventor of an electric telegraph and, with Alfred Vail, the Morse Code [S1]. Draft: primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
+
+## Life and work
+
+Painter trained under Allston; president of the National Academy of Design; telegraph from 1832; first line 1844 [S1].
+
+## Contribution and impact
+
+Electric telegraph (1832–35), Morse Code (1838), portraits [S1].
+
+## Childhood and education
+
+Son of the Congregational clergyman Jedidiah Morse; Phillips Academy and Yale [S1].
+
+## Adult working worldview
+
+Prayer to a provident God in his letters [S2]; a self-identified Protestant [S3].
+
+## Heritage (context only)
+
+Congregational [S1].
+
+## Timing
+
+1832–1838, from age 41 [S1].
+
+## Lane B notes (labeled belief model)
+
+Everything in this section is Lane B: labeled belief, not a finding. Not assessed [S1].
+
+## Open questions
+
+- RQ-X1.
+
+## Research log
+
+- 2026-10-19: Read Britannica (Mabee), the Letters and Journals (Gutenberg) and Foreign Conspiracy (archive.org).
