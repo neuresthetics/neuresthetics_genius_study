@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK17): the iPhone's lasting wording restored to the article body's 'into the telecommunications business'; the added product list dropped. No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (JO12) definition_fit and the iPhone's lasting note now cite Britannica's article body ('a charismatic pioneer of the personal computer era'; 'near-messianic belief in the computer revolution'), not the 'Why is Steve Jobs significant?' question box (P26). Ruling Y1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 132; roster status provisional). Basics from Britannica (Steven Levy, updated 29 Sep 2026). Own voice read in the prepared text of the 2005 Stanford commencement address (in the span). His words on God reach us only as the Washington Post's quotations of Isaacson's 2011 biography (secondary quotation, after the span): 'I'm about fifty-fifty on believing in God'. Not a scientist (P33). Span 1977–2007 at 0.7 (Apple II to iPhone). primary_system BELOW_THRESHOLD (AGNOS lead, BUDDH lead; RQ-Y1); A BELOW_THRESHOLD; B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
@@ -51,7 +52,7 @@ contribution:
     - {value: "Apple II personal computer (with Steve Wozniak)", year: 1977, kind: invention, lasting: "'becoming synonymous with the boom in personal computers' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'"}], how_known: "Britannica; Wozniak designed it, Jobs pushed the design and case and found financing (S1)."}
     - {value: "Macintosh, with its graphical user interface", year: 1984, kind: invention, lasting: "'the model for all subsequent computer interfaces' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Insanely great'"}], how_known: "Britannica: Jobs headed the project and introduced it in January 1984."}
     - {value: "iPod and the iTunes ecosystem", year: 2001, kind: invention, lasting: "'quickly became the market leader' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica."}
-    - {value: "iPhone", year: 2007, kind: invention, lasting: "took Apple 'into the telecommunications business' (S1); the Apple II, Macintosh, iPod and iPhone are the dated products in 'Reinventing Apple' and earlier sections (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b); the iPad (2010) appears only in a photo caption, so it is not listed."}
+    - {value: "iPhone", year: 2007, kind: invention, lasting: "took Apple 'into the telecommunications business' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b); the iPad (2010) appears only in a photo caption, so it is not listed."}
   evidence_of_impact:
     - {value: "Presidential Medal of Freedom (2022, posthumous)", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "'Health issues'"}], how_known: "Britannica; after his death."}
     - {value: "The Mac interface became 'the model for all subsequent computer interfaces'", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "'Insanely great'"}], how_known: "Britannica."}

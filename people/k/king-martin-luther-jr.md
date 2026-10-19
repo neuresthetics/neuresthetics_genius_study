@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes (gs_ca27fcf_KK run 1): (KK4) 'every significant change' replaced by 'the notes mark no change here'; the Strength to Love quotes labelled draft wording, with printed variants where known from secondary quotations (ch. IV 'She must honor everlastingly ...', unconfirmed; ch. XV 'to expect God to do everything', unmarked in the notes). (KK11) Summary now B 3 at 0.7. (Note) the P27 exception named: ch. XV 'He has made us persons with freedom, free to choose the good and therefore free to choose what is not good' (P30 #14). Ruling RQ-KK1 (v8's call on the auditor's advice, consistent with Jason's approval): 0.7 stands for the draft reading, to be revisited only if the print differs in substance. No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling on RQ U1 (2026-10-19, 'fix them'): B_cause re-based on Strength to Love (1963, in the span), read in the King Papers first typed drafts (new S5 'Love in Action': 'She must do everlasting honor to her fixed, immutable laws'; S6 'The Answer to a Perplexing Question': 'through some breathtaking miracle or a wave of the hand'; S7 'Our God Is Able' for the B 2 alternative): B 3 0.5 -> 0.7, basis consistent_private_letters -> written_profession (fixes KI9), alternatives 4 and 2, the 1949 essay kept as support. mid_basin BELOW_THRESHOLD -> true at 0.7; plotted dot now solid. Three statements added."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Clayborne Carson (KI2); B how_known now says the 1949 essay is one private document, scholar-backed, 0.5 (§3), with the basis label kept pending ruling U1 (KI9, on instruction); 'editors back the reading' narrowed to scriptural literalism (note). B and mid_basin unchanged; U1 (re-basing B on Strength to Love) not applied: waiting on Jason."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 116). Basics from Britannica (Clayborne Carson; author corrected in the batch U audit fixes). Worldview from two texts in the King Papers online edition (Stanford King Institute): 'Pilgrimage to Nonviolence' (Christian Century, 13 April 1960; in span) and a 1949 Crozer seminary essay (unpublished; before the span, P31). Not a scientist (P30). primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7, alt 0); B 3 (0.5, alts 4 and 2; P41, from the 1949 essay); C UNKNOWN; D 2 (0.7, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Plotted (faded). Draft, not reviewed."}
@@ -118,8 +119,8 @@ worldview:
       basis: written_profession
       certainty: 0.7
       cites: [{source: S5, locator: "Draft of Chapter IV, 'Love in Action', paragraph 'One can only see the greatness of this prayer by contrast'"}, {source: S6, locator: "Draft of Chapter XV, 'The Answer to a Perplexing Question', text between notes 24–25 and 27–28"}, {source: S3, locator: "virgin-birth and resurrection paragraphs; editors' headnote"}]
-      rationale: "Scored on his account of nature (P6), from Strength to Love (Harper & Row, 1963; published in the span), read in the first typed drafts printed by the King Papers, whose notes mark every significant change in the published text and mark none in these passages. Nature keeps fixed laws: 'She must do everlasting honor to her fixed, immutable laws. When these laws are violated, she has no alternative but to follow inexorably her path of uniformity. Nature does not and cannot forgive.' ('Love in Action'). God does not act on evil by miracle: 'Therefore we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world. As long as we believe this we will pray unanswerable prayers and ask God to do things that he will never do.' and 'No prodigious thunderbolt will come dashing out of the sky to blast evil away.' ('The Answer to a Perplexing Question'). B 3: a lawful nature, with God working through man and history ('The principle which opens the door for God to work through man is faith'), not by intervention. Support (P31): the 1949 seminary essay calls a virgin birth 'downright improbable and even impossible' and says 'No laws were broken because they had no knowledge of the existence of law' (S3). Named alternatives: 4 ('fixed, immutable laws ... path of uniformity'; but he states no exceptionless order for God's own action), and 2 ('a God of Power in the universe who is able to do exceedingly abundant things in nature and history', S7; 'this God both evokes and answers prayers', S2, 1960)."
-      how_known: "Jason's ruling (2026-10-19, 'fix them'; RQ U1 of the batch U audit): re-based on the in-span published sermons (written_profession), with the 1949 essay as support; two named alternatives (contested readings), so 0.7. The draft text is quoted exactly as read in the King Papers online edition; the 1963 printed text itself was not seen (the auditor found the archive.org copies restricted)."
+      rationale: "Scored on his account of nature (P6), from Strength to Love (Harper & Row, 1963; published in the span), read in the first typed drafts printed by the King Papers, whose notes mark changes in the published text in detail; the notes mark no change here (they are not a full collation: at least one nearby change is unmarked, batch Y audit KK4). The quotes are draft wording. Nature keeps fixed laws: 'She must do everlasting honor to her fixed, immutable laws. When these laws are violated, she has no alternative but to follow inexorably her path of uniformity. Nature does not and cannot forgive.' ('Love in Action'). God does not act on evil by miracle: 'Therefore we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world. As long as we believe this we will pray unanswerable prayers and ask God to do things that he will never do.' and 'No prodigious thunderbolt will come dashing out of the sky to blast evil away.' ('The Answer to a Perplexing Question'). B 3: a lawful nature, with God working through man and history ('The principle which opens the door for God to work through man is faith'), not by intervention. The one exception (P27; free will under P30 #14) is named in the same chapter: 'He has made us persons with freedom, free to choose the good and therefore free to choose what is not good.' (S6, text before note 27, draft wording). Support (P31): the 1949 seminary essay calls a virgin birth 'downright improbable and even impossible' and says 'No laws were broken because they had no knowledge of the existence of law' (S3). Named alternatives: 4 ('fixed, immutable laws ... path of uniformity'; but he states no exceptionless order for God's own action), and 2 ('a God of Power in the universe who is able to do exceedingly abundant things in nature and history', S7; 'this God both evokes and answers prayers', S2, 1960)."
+      how_known: "Jason's ruling (2026-10-19, 'fix them'; RQ U1 of the batch U audit): re-based on the in-span published sermons (written_profession), with the 1949 essay as support; two named alternatives (contested readings), so 0.7. The draft text is quoted exactly as read in the King Papers online edition; the 1963 printed text itself was not seen (the auditor found the archive.org copies restricted). Ruling RQ-KK1 (v8's call on the auditor's advice, consistent with Jason's approval): 0.7 stands for the draft reading, to be revisited only if the print differs in substance. Secondary quotations of the print confirm the miracle sentence word for word and the fixed-laws sentence in substance."
       alternatives:
         - {value: 4, note: "Nature's 'fixed, immutable laws' and 'path of uniformity'; rejection of miracle as God's way with evil.", cites: [{source: S5, locator: "'One can only see the greatness of this prayer by contrast' paragraph"}, {source: S3, locator: "virgin-birth paragraph"}]}
         - {value: 2, note: "A God 'able to do exceedingly abundant things in nature and history' (1963) who 'answers prayers' (1960).", cites: [{source: S7, locator: "Draft of Chapter XIII, 'Our God Is Able', opening paragraph"}, {source: S2, locator: "closing section"}]}
@@ -196,7 +197,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
-      note: "First typed draft (July 1962 – March 1963) as printed by the King Papers; the editors' notes record no change to this passage in the published book (note 6 concerns the next sentence)."
+      note: "Draft wording: the first typed draft (July 1962 – March 1963) as printed by the King Papers; the notes mark no change here (note 6 concerns the next sentence). Printed variant, unconfirmed: 'She must honor everlastingly her fixed, immutable laws, and when these laws are violated she has no alternative except to follow inexorably her path of uniformity' (as paraphrased in the Valdosta Daily Times, 22 Jan 2020, a secondary quotation)."
     - text: "Therefore we must never feel that God will, through some breathtaking miracle or a wave of the hand, cast evil out of the world. As long as we believe this we will pray unanswerable prayers and ask God to do things that he will never do."
       cites: [{source: S6, locator: "text between notes 27 and 28"}]
       date: "1963"
@@ -205,7 +206,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
-      note: "First typed draft as printed by the King Papers; no editors' note marks a change here."
+      note: "Draft wording, as printed by the King Papers; the notes mark no change here. The printed text is quoted word for word in secondary sources (e.g. Glover, 'Give And It Will Be Given To You', revjaystuartglover.com). Two sentences later the print reads 'to expect God to do everything while we do nothing' where the draft has 'to trust God with the expectation that he will do everything while we do nothing', a change the notes do not mark (batch Y audit KK4; secondary quotation)."
     - text: "No prodigious thunderbolt will come dashing out of the sky to blast evil away. No mighty army of angels will decend from heaven and force men to do what their wills have led them not to do."
       cites: [{source: S6, locator: "text between notes 24 and 25"}]
       date: "1963"
@@ -214,7 +215,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
-      note: "'decend' as in the transcription."
+      note: "Draft wording; 'decend' as in the transcription. The notes mark no change here (note 25 concerns only the later phrase 'stands ever ready to give exceedingly abundant things')."
   changes_over_life:
     - {value: "Raised 'in a rather strict fundamentalistic tradition'; a 'thoroughgoing liberal' in seminary; then rejected 'mainly the liberal doctrine of man' (Niebuhr), without accepting neo-orthodoxy", certainty: 0.7, cites: [{source: S2, locator: "opening; part I"}], how_known: "His own retrospective account (1960) of 1949–1959 (P29 cap 0.7)."}
     - {value: "A personal God, once 'little more than a metaphysical category', became 'a living reality ... validated in the experiences of everyday life' during the struggle (to 1960)", certainty: 0.7, cites: [{source: S2, locator: "closing section"}], how_known: "His own account; 'I have always believed in the personality of God', so the content is unchanged."}
@@ -260,7 +261,7 @@ review:
     - "B is read in the first typed drafts of Strength to Love (King Papers), not the 1963 printed book; the editors' notes mark no change in the quoted passages."
     - "Britannica's body text was read through 'Early years'; later sections not fetched. Question-box items are cited only for dates."
   open_questions:
-    - "Check the quoted Strength to Love passages against the 1963 printed text; read Stride Toward Freedom (1958)."
+    - "Check the quoted Strength to Love passages against the 1963 printed text or the 2010 Fortress reprint (RQ-KK1: revisit 0.7 only if the print differs in substance); read Stride Toward Freedom (1958)."
 
 sources:
   - id: S1
@@ -306,7 +307,7 @@ sources:
     citation: "King, Martin Luther, Jr. \"Draft of Chapter IV, 'Love in Action'.\" July 1962 – March 1963. For Strength to Love (New York: Harper & Row, 1963). MLKP-MBU, Boston University. The Papers of Martin Luther King, Jr., vol. 6, online edition, with editors' notes."
     url: "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-iv-love-action"
     accessed: 2026-10-19
-    reliability_note: "First typed draft sent to the publisher; the editors footnote significant changes in the published text."
+    reliability_note: "First typed draft sent to the publisher (draft wording); the editors' notes mark changes in the published text in detail but not exhaustively."
     used_for: [worldview]
   - id: S6
     type: primary
@@ -315,7 +316,7 @@ sources:
     citation: "King, Martin Luther, Jr. \"Draft of Chapter XV, 'The Answer to a Perplexing Question'.\" July 1962 – March 1963. For Strength to Love (New York: Harper & Row, 1963). Morehouse College Martin Luther King, Jr. Collection, Robert W. Woodruff Library, Atlanta University Center. The Papers of Martin Luther King, Jr., vol. 6, online edition, with editors' notes."
     url: "https://kinginstitute.stanford.edu/king-papers/documents/draft-chapter-xv-answer-perplexing-question"
     accessed: 2026-10-19
-    reliability_note: "First typed draft sent to the publisher; the editors footnote significant changes in the published text."
+    reliability_note: "First typed draft sent to the publisher (draft wording); the editors' notes mark changes in the published text in detail but not exhaustively."
     used_for: [worldview]
   - id: S7
     type: primary
@@ -334,7 +335,7 @@ sources:
 
 ## Summary
 
-Martin Luther King Jr. (1929–1968), Baptist minister who led the US civil rights movement from the mid-1950s until his death [S1]. Draft: primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7); B 3 (0.5, alts 4 and 2); D 2 (0.7); mid_basin true (0.7). B re-based on Strength to Love (1963) by Jason's ruling on RQ U1. Plotted (solid).
+Martin Luther King Jr. (1929–1968), Baptist minister who led the US civil rights movement from the mid-1950s until his death [S1]. Draft: primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7); B 3 (0.7, alts 4 and 2); D 2 (0.7); mid_basin true (0.7). B re-based on Strength to Love (1963) by Jason's ruling on RQ U1. Plotted (solid).
 
 ## Life and work
 

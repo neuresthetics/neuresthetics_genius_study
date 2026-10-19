@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
   last_updated: 2026-10-08
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK12): B 3 now also cites his own text on freedom, KrV A533/B561 (AA III 363: 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht'). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling (2026-10-19, 'fix them'; TF7 of the batch T audit, held until now): B_cause 4 -> 3 at 0.7, alternative 4, per P30 #14 (noumenal freedom is B 3's one exception; Kant is B 3 as the value). mid_basin stays true at 0.7 (A 1, B 3, both at 0.7). Plotted point moves one column left; dot stays solid."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #379: 'lived his entire life' now cited to Britannica 'Background and early years' and SEP religion §2.1.1, not SEP §1. #405: early_mathematics 'other' (curriculum only; no source says advanced). #415: wording only; he declines to contest revelation and miracles (AA VI 155; VI 88 n.) rather than accepting them; value unchanged. #390: stray 'ancestor gloss' wording fixed. #420: heading §3.3.1.2 rechecked in the live entry; kept. Bylines: SEP religion now Pasternack and Fugate; Britannica now Bird and Duignan. #416, #456 left (stub-system rule awaits v8). Not reviewed."}
@@ -123,9 +124,9 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "AA III 166"}, {source: S6, locator: "AA VI 87–88"}, {source: S1, locator: "§5.2"}]
+      cites: [{source: S4, locator: "AA III 166"}, {source: S4, locator: "AA III 363 (A533/B561)"}, {source: S6, locator: "AA VI 87–88"}, {source: S1, locator: "§5.2"}]
       how_known: "His own published texts in a scholarly edition; a named alternative (4), so 0.7. Jason's ruling (2026-10-19, 'fix them'), applying P30 #14."
-      rationale: "Scored on his account of nature (P6). Lawful nature: 'Alle Veränderungen geschehen nach dem Gesetze der Verknüpfung der Ursache und Wirkung' (KrV, Second Analogy, AA III 166); the natural scientist's business is to seek the causes of events 'in dieser ihren Naturgesetzen' (Religion, AA VI 87), and experiences 'sind [...] nichts anders als Naturwirkungen und sollen auch nie anders beurtheilt werden' (AA VI 88). B 3 as the value, not 4, under P30 #14: B 3's one exception (P27) includes a free will not bound by natural law, and Kant's noumenal freedom (the free self is 'not part of nature', S1 §5.2) is the named case ('Kant is B 3 as the value, not as an alternative'). He also does not deny miracles: he does not take them into his maxims 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten' (AA VI 88 n.). Named alternative 4: reason must either admit miracles daily or never, and only 'never' is compatible with reason (AA VI 88)."
+      rationale: "Scored on his account of nature (P6). Lawful nature: 'Alle Veränderungen geschehen nach dem Gesetze der Verknüpfung der Ursache und Wirkung' (KrV, Second Analogy, AA III 166); the natural scientist's business is to seek the causes of events 'in dieser ihren Naturgesetzen' (Religion, AA VI 87), and experiences 'sind [...] nichts anders als Naturwirkungen und sollen auch nie anders beurtheilt werden' (AA VI 88). B 3 as the value, not 4, under P30 #14: B 3's one exception (P27) includes a free will not bound by natural law, and Kant's noumenal freedom is the named case: in his own words freedom in the cosmological sense is 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht' (KrV A533/B561, AA III 363); SEP: the free self is 'not part of nature' (S1 §5.2) ('Kant is B 3 as the value, not as an alternative'). He also does not deny miracles: he does not take them into his maxims 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten' (AA VI 88 n.). Named alternative 4: reason must either admit miracles daily or never, and only 'never' is compatible with reason (AA VI 88)."
     C_ledger:
       value: 1
       basis: written_profession
