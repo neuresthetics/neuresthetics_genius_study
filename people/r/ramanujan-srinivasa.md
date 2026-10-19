@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (RA2) the partition formula dated by its first printed notice, the Comptes rendus note of 2 January 1917 (new S5; P30 #1, the Gauss example): first lasting year 1918 -> 1917, span 1918–1920 -> 1917–1920 (still 0.5), age 31 -> 30 (P30 rule 5, event year − birth year; the audit's 29 is the age in completed years). Ruling X4 (v8's call on the auditor's advice): kept as coded (recorded under P42). No scored worldview value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 131). Basics from Britannica (Britannica Editors) and MacTutor (O'Connor and Robertson). Worldview only from others' reports: G. H. Hardy's Ramanujan (1940), lecture I, which quotes the Seshu Aiyar and Ramachandra Rao memoir and gives his own conflicting memory; Britannica's quotation from Kanigel. All reported speech (§7), so nothing scores. Not a scientist (P30: pure mathematics). primary_system BELOW_THRESHOLD (HINDU and AGNOS leads; RQ-X4); A, B BELOW_THRESHOLD; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1918–1920 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -36,7 +37,7 @@ basics:
   death:
     date: {value: "1920-04-26", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "Quick Info"}], how_known: "Both sources."}
     place: {value: "Kumbakonam", modern_name: "Kumbakonam, Tamil Nadu, India", polity_then: "British India (Madras Presidency)", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "Quick Info"}], how_known: "Both sources."}
-  first_lasting_contribution_year: {value: 1918, certainty: 0.5, cites: [{source: S2, locator: "partition paragraph ('Perhaps his most famous work was on the number p(n)... In a joint paper with Hardy, Ramanujan gave an asymptotic formula')"}, {source: S1, locator: "opening; 'Further advances'"}], how_known: "The Hardy–Ramanujan asymptotic formula for p(n); MacTutor gives no year, so 1918 is the coder's date for the joint paper (Proc. London Math. Soc., 1918), so 0.5. Earlier work (the 1911 Bernoulli paper, MacTutor: 'he gained recognition') is not called lasting; Ramanujan summation is undated in the sources (P39)."}
+  first_lasting_contribution_year: {value: 1917, certainty: 0.5, cites: [{source: S5, locator: "séance du 2 janvier 1917, pp. 35–38"}, {source: S2, locator: "partition paragraph ('Perhaps his most famous work was on the number p(n)... In a joint paper with Hardy, Ramanujan gave an asymptotic formula')"}, {source: S1, locator: "opening; 'Further advances'"}], how_known: "The Hardy–Ramanujan asymptotic formula for p(n), first stated in print in their Comptes rendus note of 2 January 1917 (S5), which the Proc. London Math. Soc. paper of 1918 footnotes; dated by that printed notice under P30 #1 (the Gauss example; batch X audit, RA2). Neither MacTutor nor Britannica gives a year, so 0.5. Earlier work (the 1911 Bernoulli paper, MacTutor: 'he gained recognition') is not called lasting; Ramanujan summation is undated in the sources (P39)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Quick Info"}], how_known: "His whole adult life (1905–1920) falls in this bucket (P2, P39)."}
   region_of_birth: {value: "South Asia", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "Quick Info"}], how_known: "India (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 0.5, cites: [{source: S2, locator: "Cambridge paragraphs"}, {source: S1, locator: "'The Hardy–Ramanujan collaboration'"}], how_known: "The lasting work was done at Cambridge, 1914–1919 (coder's call); earlier and last-year work in India (South Asia)."}
@@ -47,7 +48,7 @@ basics:
 contribution:
   fields: {value: ["number theory", "infinite series", "continued fractions", "elliptic functions"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Summary"}], how_known: "Both sources."}
   lasting_original_contributions:
-    - {value: "Asymptotic formula for the partition function p(n) (with G. H. Hardy), and properties of p(n)", year: 1918, kind: "law or principle", lasting: "'Perhaps his most famous work was on the number p(n)'; the formula 'was later proved by Rademacher' (S2); 'pioneering discoveries of the properties of the partition function' (S1)", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "Top Questions; 'Further advances'"}], how_known: "Both sources; the year is the coder's (joint paper of 1918), not given in either. Pure mathematics, so not a scientist (P30)."}
+    - {value: "Asymptotic formula for the partition function p(n) (with G. H. Hardy), and properties of p(n)", year: 1917, kind: "law or principle", lasting: "'Perhaps his most famous work was on the number p(n)'; the formula 'was later proved by Rademacher' (S2); 'pioneering discoveries of the properties of the partition function' (S1)", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "Top Questions; 'Further advances'"}, {source: S5, locator: "séance du 2 janvier 1917, pp. 35–38"}], how_known: "Both sources; the year is from the first printed notice, the Comptes rendus note of 2 January 1917 (S5; P30 #1; batch X audit, RA2), not given in either. Pure mathematics, so not a scientist (P30)."}
     - {value: "Mock theta (mock modular) functions, described in his last letter to Hardy", year: 1920, kind: discovery, lasting: "theory confirmed in 2012 by researchers led by Ken Ono (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Health struggles, legacy, and posthumous discoveries'"}], how_known: "Britannica. Latest dated item, so it ends the span (P30 addendum b)."}
     - {value: "Notebooks and the 'lost notebook' of unpublished results", kind: "body of work", lasting: "results 'that mathematicians continued to verify long after his death' (S1); G. N. Watson published nearly 30 papers inspired by them (S2)", certainty: 0.7, cites: [{source: S1, locator: "legacy paragraph"}, {source: S2, locator: "closing paragraph"}], how_known: "Both sources; undated as a body, so it sets no span (P39)."}
   evidence_of_impact:
@@ -86,7 +87,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1918–1920", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "legacy paragraph"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1917–1920", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "legacy paragraph"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Orthodox high-caste Hindu observance: 'always adhered ... to all the observances of his caste'; strict vegetarian", certainty: 0.7, cites: [{source: S3, locator: "lecture I, p. 4"}, {source: S2, locator: "Cambridge paragraph ('an orthodox Brahmin')"}], how_known: "Hardy and MacTutor; practice at membership level, not a profession."}
   self_described_science_religion_relation: {value: BELOW_THRESHOLD, how_known: "Only reported: 'An equation for me has no meaning unless it expresses a thought of God', quoted by Britannica from Kanigel's 1991 biography (S1), whose own source was not read (§7)."}
@@ -130,7 +131,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Undated; a lead only."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: 1918 (Hardy–Ramanujan asymptotic formula, MacTutor's 'most famous work'; year the coder's) to 1920 (mock theta functions, Britannica). Both sources leave earlier items undated or not called lasting. Not a scientist (P30): partitions, series and modular forms are pure mathematics; Ono's black-hole remark (S1) is about later uses. His own letters (Berndt and Rankin 1995) and Kanigel's biography were not read; all religious evidence is reported, and Hardy and the Indian memoirists disagree (RQ-X4)."
+  coder_notes: "Coder's call on the span: 1917 (Hardy–Ramanujan asymptotic formula, MacTutor's 'most famous work'; dated by the Comptes rendus note of 2 January 1917, P30 #1, batch X audit RA2; the full paper is Proc. LMS 1918) to 1920 (mock theta functions, Britannica). Both sources leave earlier items undated or not called lasting. Not a scientist (P30): partitions, series and modular forms are pure mathematics; Ono's black-hole remark (S1) is about later uses. His own letters (Berndt and Rankin 1995) and Kanigel's biography were not read; all religious evidence is reported, and Hardy and the Indian memoirists disagree (RQ-X4; ruling X4 keeps the record as coded)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -141,8 +142,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1918–1920", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "legacy paragraph"}], how_known: "From the partition formula (1918, coder's date) to the mock theta functions (1920) (P12, P30)."}
-  age_at_first_lasting_contribution: {value: 31, certainty: 0.5, cites: [{source: S1, locator: "Quick Facts"}], how_known: "1918 − 1887 = 31 (P30)."}
+  major_work_period: {value: "1917–1920", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S5, locator: "séance du 2 janvier 1917, pp. 35–38"}, {source: S1, locator: "legacy paragraph"}], how_known: "From the partition formula (1917, Comptes rendus note; P30 #1) to the mock theta functions (1920) (P12, P30)."}
+  age_at_first_lasting_contribution: {value: 30, certainty: 0.5, cites: [{source: S1, locator: "Quick Facts"}, {source: S5, locator: "séance du 2 janvier 1917, pp. 35–38"}], how_known: "1917 − 1887 = 30 (P30 rule 5: event year − birth year, no month adjustment). The batch X audit's '29' is his age in completed years on 2 January 1917 (born 22 December 1887); P30 gives 30."}
   first_evidence_of_lio_type_views: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S3, locator: "lecture I, pp. 4–5"}], how_known: "Nothing scored."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S3, locator: "lecture I, pp. 4–5"}], how_known: "As above."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "Only reported, conflicting accounts."}
@@ -171,9 +172,9 @@ review:
     - {value: "Hardy and the Indian memoirists disagree on his religious beliefs", certainty: 0.7, cites: [{source: S3, locator: "lecture I, pp. 4–5"}], how_known: "Hardy."}
   data_quality_flags:
     - "All worldview evidence is reported speech; Hardy read in a noisy OCR."
-    - "The 1918 date of the partition formula is the coder's; neither source dates it."
+    - "The partition formula is dated 1917 from the Comptes rendus note (S5); neither biography dates it."
   open_questions:
-    - "RQ-X4: HINDU or AGNOS lead; read his own letters (Berndt and Rankin) and Kanigel."
+    - "Ruling X4: kept as coded (HINDU and AGNOS leads). Open lead: his own letters (Berndt and Rankin) and Kanigel."
 
 sources:
   - id: S1
@@ -212,6 +213,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: "journal article"
+    author: "G. H. Hardy and S. Ramanujan"
+    citation: "Hardy, G. H., and S. Ramanujan. \"Une formule asymptotique pour le nombre des partitions de n.\" Comptes rendus hebdomadaires des séances de l'Académie des sciences 164 (séance du 2 janvier 1917): 35–38. Read on French Wikisource (tome 164, djvu p. 35) and in the Ramanujan Papers web edition (ram31)."
+    url: "https://fr.wikisource.org/wiki/Page:Comptes_rendus_hebdomadaires_des_s%C3%A9ances_de_l%E2%80%99Acad%C3%A9mie_des_sciences,_tome_164,_1917.djvu/35"
+    accessed: 2026-10-19
+    reliability_note: "The printed note itself (web transcription); used only to date the partition formula (batch X audit, RA2)."
+    used_for: [basics, contribution, timing]
 ---
 
 # Srinivasa Ramanujan
@@ -244,7 +254,7 @@ Brahmin [S1].
 
 ## Timing
 
-1918–1920, from age 31 [S1, S2].
+1917–1920, from age 30 [S1, S2, S5].
 
 ## Lane B notes (labeled belief model)
 
@@ -252,7 +262,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-X4.
+- RQ-X4, settled by ruling X4 (kept as coded).
 
 ## Research log
 

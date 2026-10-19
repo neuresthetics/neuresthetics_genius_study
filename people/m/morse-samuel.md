@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (MO2) the telegraph dated by its first public statement, the patent caveat sent on 3 October 1837 (S2 vol. II chs. XXIII–XXIV; P30 #1): first lasting year 1832 -> 1837, span 1832–1838 -> 1837–1838, age 41 -> 46; era unchanged; the 1835 pamphlet now falls just before the span. (MO5) CLTHEI rejected under its use_when (2) (no in-span text expects God to act against or beyond nature's course); CLASS_THEISM listed as rejected. Ruling X1 (v8's call on the auditor's advice): B stays BELOW_THRESHOLD, named reading 1; only an answer claimed against or beyond nature's course bears on B (recorded under P16). CHRIST, A 0, E 1 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 128). Basics from Britannica (Carleton Mabee; Britannica Editors). Worldview from his own letters in Samuel F. B. Morse: His Letters and Journals (ed. Edward Lind Morse, 1914; Project Gutenberg) and his pamphlet Foreign Conspiracy (1835; archive.org scan). Not a scientist (P33: inventions). primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (named reading 1, RQ-AU1 analogy; RQ-X1); C, D UNKNOWN; E 1 (0.5, alt BELOW_THRESHOLD); mid_basin BELOW_THRESHOLD. Span 1832–1838 (0.7). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -37,8 +38,8 @@ basics:
   death:
     date: {value: "1872-04-02", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Died)"}], how_known: "Britannica."}
     place: {value: "New York, New York", modern_name: "New York City, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts (Died)"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1832, certainty: 0.7, cites: [{source: S1, locator: "opening ('developed an electric telegraph (1832–35)')"}], how_known: "The electric telegraph, dated as a range 1832–35, so its start year (P12). Alternative 1835 ('He probably made his first working model by 1835'); 1832 is the year he 'conceived the idea' on the voyage home."}
-  era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1832 (P2); 1835 gives the same bucket."}
+  first_lasting_contribution_year: {value: 1837, certainty: 0.7, cites: [{source: S2, locator: "vol. II ch. XXIII (caveat 'of October 3, 1837'); ch. XXIV (sent to Washington on October 3; receipt acknowledged October 6)"}, {source: S1, locator: "opening ('developed an electric telegraph (1832–35)')"}], how_known: "The electric telegraph, dated by its earliest documented public statement under P30 #1: the caveat sent to the Patent Office on 3 October 1837 (S2). 1832 (the idea conceived on the voyage home) and 1835 (first working model) were private (Britannica's range 1832–35); batch X audit, MO2."}
+  era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1837 (P2); 1832 and 1835 give the same bucket."}
   region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "United States (P3)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraphs (New York, Morristown, Washington–Baltimore)"}], how_known: "Britannica; art study in England 1811 and Europe to 1832."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -48,7 +49,7 @@ basics:
 contribution:
   fields: {value: ["telegraphy", "painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "An electric telegraph (recording electromagnetic telegraph; first US line, Washington–Baltimore, 1844)", year: 1832, kind: invention, lasting: "'Even during Morse's own lifetime, the world was much changed by the telegraph'; his 1837 instrument is preserved by the Smithsonian (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraphs; legacy paragraph"}], how_known: "Britannica dates the development 1832–35 (P12 start year). An invention, not a theory or result, so not a scientist (P33)."}
+    - {value: "An electric telegraph (recording electromagnetic telegraph; first US line, Washington–Baltimore, 1844)", year: 1837, kind: invention, lasting: "'Even during Morse's own lifetime, the world was much changed by the telegraph'; his 1837 instrument is preserved by the Smithsonian (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraphs; legacy paragraph"}], how_known: "Britannica dates the development 1832–35; dated by the patent caveat of 3 October 1837, its first public statement (P30 #1; S2 vol. II chs. XXIII–XXIV; batch X audit, MO2). An invention, not a theory or result, so not a scientist (P33)."}
     - {value: "Morse Code (with Alfred Vail)", year: 1838, kind: "concept or term", lasting: "'the system of dots and dashes that became known throughout the world as the Morse Code' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Top Questions; telegraph paragraph ('By 1838')"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b)."}
     - {value: "Portraits (Lafayette, William Cullen Bryant and others)", kind: "body of work", lasting: "'some of the finest portraits ever done by an American artist'; 'his reputation as an artist has grown' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Top Questions; legacy paragraph"}], how_known: "Britannica; undated there, so it sets no span (P39)."}
   evidence_of_impact:
@@ -78,7 +79,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1832–1838", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraph"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1837–1838", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraph"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Protestant, by his own public identification ('we, Protestant republicans of the United States', 1835)", certainty: 0.7, cites: [{source: S3, locator: "p. 30"}], how_known: "His own published pamphlet (pseudonym Brutus; authorship stated in his letter of 20 May 1835, S2 vol. II ch. XXII)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement on science and religion as such read; the 1868 banquet speech ascribes the telegraph's origin to God (statements) but does not state a relation."}
@@ -87,12 +88,13 @@ worldview:
     basis: consistent_private_letters
     certainty: 0.7
     cites: [{source: S2, locator: "vol. II ch. XXIV (letters of 8 November 1837 and 15 March 1838)"}, {source: S3, locator: "p. 30"}, {source: S2, locator: "vol. II chs. XXX–XXXI (letters of 31 May and 23 June 1844)"}]
-    rationale: "Inside the span, two private letters pray to a provident God ('through a kind Providence', 1837; 'let us pay to Him who shows it to us the homage of grateful and obedient hearts, with most earnest prayers for grace', 1838), and his published pamphlet calls himself one of the 'Protestant republicans' (1835). After the span the faith is explicit and Christian ('Pray for me then ... that I may have a heart to praise the great Deliverer', 1844; 'Not unto us ... but to God be all the glory', public speech, 1868). Consistent private letters, so 0.7 (§3); Britannica records his religious controversies 'with Unitarians and Roman Catholics' and gifts to seminaries and Bible societies (S1)."
+    rationale: "Inside the span, two private letters pray to a provident God ('through a kind Providence', 1837; 'let us pay to Him who shows it to us the homage of grateful and obedient hearts, with most earnest prayers for grace', 1838); just before it, his published pamphlet calls himself one of the 'Protestant republicans' (1835). After the span the faith is explicit and Christian ('Pray for me then ... that I may have a heart to praise the great Deliverer', 1844; 'Not unto us ... but to God be all the glory', public speech, 1868). Consistent private letters, so 0.7 (§3); Britannica records his religious controversies 'with Unitarians and Roman Catholics' and gifts to seminaries and Bible societies (S1)."
     how_known: "Own letters (edited 1914) and pamphlet."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Chosen: Protestant (Congregational) faith in letters and pamphlet."}
-    - {code: CLTHEI, reason: "Not used: no systematic theology read; CHRIST fits the stated Christian faith."}
+    - {code: CLTHEI, reason: "Rejected under its use_when (2): no in-span text expects God to act against or beyond the regular course of nature; the in-span letters speak of providence through friends and events (batch X audit, MO5)."}
+    - {code: CLASS_THEISM, reason: "Rejected: no systematic theology read; CHRIST fits the stated Christian faith (batch X audit, MO5)."}
   lio_axes:
     A_locus:
       value: 0
@@ -101,7 +103,7 @@ worldview:
       cites: [{source: S2, locator: "vol. II ch. XXIV (8 November 1837; 15 March 1838)"}, {source: S2, locator: "vol. II ch. XXXI (23 June 1844)"}]
       rationale: "Transcendent person: a God addressed in prayer who shows and grants ('Him who shows it to us', 1838; 'a kind Providence', 1837); after the span, 'his salvation did come in answer to prayer' and 'The ways of God are mysterious' (1844). Two in-span private letters, so 0.7."
       how_known: "Own letters."
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P33: inventions), so B needs a statement of his about nature (P16). Closest: after the span he reads a physical accident (a fall that wounded his leg) as providential: 'The ways of God are mysterious, and I find prayer answered in a way not at all anticipated. This accident, as we are apt to call it, I can plainly see is calculated to effect many salutary objects' (23 June 1844). A God who answers prayer through events is BELOW_THRESHOLD evidence by analogy with the petitionary-prayer addendum (P16, RQ-AU1), with B 1 at 0.5 as the named reading (after the span, P1 cap 0.5 in any case). RQ-X1: does a stated answered prayer through a physical event go beyond RQ-AU1?"}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P33: inventions), so B needs a statement of his about nature (P16). Closest: after the span he reads a physical accident (a fall that wounded his leg) as providential: 'The ways of God are mysterious, and I find prayer answered in a way not at all anticipated. This accident, as we are apt to call it, I can plainly see is calculated to effect many salutary objects' (23 June 1844). A God who answers prayer through events is BELOW_THRESHOLD evidence by analogy with the petitionary-prayer addendum (P16, RQ-AU1), with B 1 at 0.5 as the named reading (after the span, P1 cap 0.5 in any case). Ruling X1 (v8's call on the auditor's advice): stays BELOW_THRESHOLD, named reading 1 (2 a further reading). It is one private letter, after the span, and the answer comes through an 'accident, as we are apt to call it', providence working through ordinary events, not an exception to nature's course; a reported answer to one's own prayer through ordinary events is E evidence, not B; only an answer claimed against or beyond nature's course bears on B."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward or punishment of persons (P19)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read on revelation against observation; 'Science and Art are not opposed' (1868) is about art (P19)."}
     E_scope:
@@ -170,7 +172,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Speech text as printed by his son (1914). After the span (P1 cap 0.5)."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: 1832 (telegraph, Britannica's range 1832–35, P12 start year) to 1838 (Morse Code). Alternative start 1835 (first working model); 1844 (first line) is the completion of the telegraph, not a separate listed item. Not a scientist (P33). The two in-span letters carry the code and A; the strongest wording (answered prayer, providence in his trials) is from 1844 and later. The Rankin recollection (S2 vol. II ch. XXIII) has Morse say God created nature's forces 'as expressions of good-will to man'; reported speech (§7), a lead only. Editor's phrases ('his belief that he was but a chosen vessel') are not his words. RQ-X1 on B."
+  coder_notes: "Span: 1837 (telegraph, the patent caveat of 3 October 1837, its first public statement under P30 #1; batch X audit, MO2) to 1838 (Morse Code). Earlier private stages: 1832 (idea) and 1835 (first working model), Britannica's range 1832–35; 1844 (first line) is the completion of the telegraph, not a separate listed item. Not a scientist (P33). The two in-span letters carry the code and A; the strongest wording (answered prayer, providence in his trials) is from 1844 and later. The Rankin recollection (S2 vol. II ch. XXIII) has Morse say God created nature's forces 'as expressions of good-will to man'; reported speech (§7), a lead only. Editor's phrases ('his belief that he was but a chosen vessel') are not his words. Ruling X1 keeps B BELOW_THRESHOLD."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -181,8 +183,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1832–1838", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraph"}], how_known: "From the telegraph (1832–35, start year, P12) to the Morse Code (1838) (P30). Coder's call; alternatives in coder_notes."}
-  age_at_first_lasting_contribution: {value: 41, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}], how_known: "1832 − 1791 = 41 (P30); 44 under the 1835 alternative."}
+  major_work_period: {value: "1837–1838", certainty: 0.7, cites: [{source: S2, locator: "vol. II chs. XXIII–XXIV (caveat, 3 October 1837)"}, {source: S1, locator: "opening; telegraph paragraph"}], how_known: "From the telegraph (patent caveat, 3 October 1837; P30 #1) to the Morse Code (1838) (P30). Earlier private stages in coder_notes."}
+  age_at_first_lasting_contribution: {value: 46, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}, {source: S2, locator: "vol. II ch. XXIII"}], how_known: "1837 − 1791 = 46 (P30)."}
   first_evidence_of_lio_type_views: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "letters read"}], how_known: "No axis scored at 3 or 4."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S2, locator: "letters read"}], how_known: "As above."}
   worldview_during_major_work: {value: "CHRIST: prayer to a provident God (1837, 1838)", certainty: 0.7, cites: [{source: S2, locator: "vol. II ch. XXIV"}], how_known: "In-span letters."}
@@ -265,7 +267,7 @@ Samuel F. B. Morse (1791–1872), American painter and inventor of an electric t
 
 ## Life and work
 
-Painter trained under Allston; president of the National Academy of Design; telegraph from 1832; first line 1844 [S1].
+Painter trained under Allston; president of the National Academy of Design; telegraph conceived 1832, patent caveat 1837; first line 1844 [S1; S2].
 
 ## Contribution and impact
 
@@ -285,7 +287,7 @@ Congregational [S1].
 
 ## Timing
 
-1832–1838, from age 41 [S1].
+1837–1838, from age 46 [S1; S2].
 
 ## Lane B notes (labeled belief model)
 

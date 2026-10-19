@@ -579,6 +579,14 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - Batch W notes tidied (no score change): Copernicus (the brackets in 'Opt[imi]. Max[imi].' are the Wikisource editor's; why the I.10 'Trimegistus visibilem Deum' line is not used); Wagner (inner quotation marks in the ATHE reason).
   - Chart images restored, not regenerated, as instructed for this run (the progress note had planned a refresh after batch Y). King U1 and Kant B 3 still held for Jason.
 
+- **2026-10-19, audit fixes for batch X** (blind audit of a1ff932, run 1, /workspace/genius_study_audit/gs_a1ff932_X/run1/: 52 claims, 45 hold, 7 weaken, 0 fail; the W fixes confirmed, Pythagoras's era excepted). Committed on top of batch Y. No plotted value changes: plotted stays 57, not scorable 86.
+  - Morse (MO2): the telegraph dated by the patent caveat of 3 October 1837 (P30 #1; Letters and Journals vol. II chs. XXIII–XXIV): span 1837–1838, age 46; era unchanged. (MO5) CLTHEI rejected under its use_when (2); CLASS_THEISM listed as rejected; CHRIST stands. Ruling X1 (v8's call on the auditor's advice): B stays BELOW_THRESHOLD, alt 1; only an answer claimed against or beyond nature's course bears on B (recorded under P16).
+  - Siddhartha Gautama (GA6): SEP §1 lines (karma's 'causal laws', 'pleasant fruit', gods reborn) relocated and labelled as the Upaniṣadic and śramaṇa milieu; the karma readings rest on the §4 line. Ruling X2: stays BELOW_THRESHOLD, BUDDH the lead (recorded under P42).
+  - Freud (FR12): seven statements relabelled primary transcription. (FR13) S4 imprint corrected from the title page (Horace Liveright and the Institute of Psycho-Analysis, 1928). (Note) 1900 named as the alternative start. Ruling X3: not a scientist (recorded under P35).
+  - Ramanujan (RA2): the partition formula dated by the Comptes rendus note of 2 January 1917 (new S5): span 1917–1920 at 0.5, age 30 under P30 rule 5 (the audit's 29 is his age in completed years; recompute_ages.py --check requires 30). Ruling X4: kept as coded (recorded under P42).
+  - Pythagoras (XW3): era_bucket UNKNOWN under a strict P39 (his adult life crosses the -500 edge); the batch W PY4 entry is superseded (noted under P39).
+  - Not applied, on instruction: RQ U1 (King) and TF7 (Kant B 3) still wait on Jason. Chart images not regenerated.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (FR12) the seven statements relabelled scholarly edition -> primary transcription (Gutenberg web copies of the Brill, Robson-Scott and Riviere translations; not the Strachey Standard Edition); 0.7 cap unchanged. (FR13) S4 imprint corrected from the title page: Horace Liveright and the Institute of Psycho-Analysis, 1928 (International Psycho-Analytical Library No. 15; printed by R. & R. Clark, Edinburgh), not the Gutenberg header's 'Edinburgh: Horace Liverwright'. (Note) 1900 named as the alternative start (title page; IEP). Ruling X3 (v8's call on the auditor's advice): not a scientist for B (recorded under P35). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 130). Basics from Britannica (Martin Evan Jay; Britannica Editors) and IEP (Stephen P. Thornton). Worldview from his own published works in authorized English translations (Project Gutenberg web copies, 0.7 cap): The Psychopathology of Everyday Life (Brill, 1914) and Totem and Taboo (Brill) inside the span; The Future of an Illusion (Robson-Scott, 1928) and Civilization and Its Discontents (Riviere, 1930) after it (P1 cap 0.5). Not a scientist for B (psychoanalysis an interpretive theory of the psyche, P35 addendum, Jung precedent; RQ-X3). primary_system ATHE (0.7); A 4 (0.7, alt BELOW_THRESHOLD); B 3 (0.5, alt 4; P41 extension); C 4 (0.5); D 4 (0.5); E 4 (0.5, alt 3); mid_basin false (A ≥ 3, P10). Span 1899–1923 (0.7). Plotted (faded). Draft, not reviewed."}
 
 identity:
@@ -36,7 +37,7 @@ basics:
   death:
     date: {value: "1939-09-23", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life (year only)"}], how_known: "Britannica gives the day; IEP agrees on 1939."}
     place: {value: "London", modern_name: "London, England, United Kingdom", polity_then: "United Kingdom", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life ('exiled in England')"}], how_known: "Both sources."}
-  first_lasting_contribution_year: {value: 1899, certainty: 0.7, cites: [{source: S1, locator: "Top Questions ('The Interpretation of Dreams (1899/1900)')"}, {source: S2, locator: "§1 Life ('In 1900 ... generally regarded as his greatest work')"}], how_known: "The Interpretation of Dreams, published late 1899 with 1900 on the title page; Britannica writes 1899/1900, IEP 1900 (P30 dating rule: first publication). Alternative 1895 (Studies on Hysteria with Breuer, IEP: the technique's 'classical expression'), not listed because it is joint and its cathartic method was later given up (S2 §1)."}
+  first_lasting_contribution_year: {value: 1899, certainty: 0.7, cites: [{source: S1, locator: "Top Questions ('The Interpretation of Dreams (1899/1900)')"}, {source: S2, locator: "§1 Life ('In 1900 ... generally regarded as his greatest work')"}], how_known: "The Interpretation of Dreams, published late 1899 with 1900 on the title page; Britannica writes 1899/1900, IEP 1900 (P30 dating rule: first publication). Alternative start 1900 (the title-page year, and IEP's date; age 44). Alternative 1895 (Studies on Hysteria with Breuer, IEP: the technique's 'classical expression'), not listed because it is joint and its cathartic method was later given up (S2 §1)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}, {source: S2, locator: "§1 Life"}], how_known: "1899 (P2); 1895 or 1900 give the same bucket."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('now Příbor, Czech Republic')"}], how_known: "Czechia is Eastern Europe (P3; Gödel precedent)."}
   region_of_work: {value: "Western Europe", certainty: 1.0, cites: [{source: S1, locator: "'Early life and training' (Vienna until 1938)"}, {source: S2, locator: "§1 Life"}], how_known: "Vienna (P3; Mozart precedent)."}
@@ -115,7 +116,7 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S3, locator: "ch. XII, p. 278; superstition section (index: p. 306)"}]
-      rationale: "Scored on his account of nature (P6); not a scientist for B (P35 addendum: interpretive theory of the psyche, Jung precedent; RQ-X3). He holds that 'determinism reaches farther than we suppose' and treats the supernatural as projection ('psychology projected into the outer world'), rejecting omens; but he states no exceptionless order, and says he believes 'in outer (real) chance', meaning coincidence. Rejecting intervention without a stated exceptionless order is B 3 at 0.5, alternative 4 (P41 extension, Tolstoy precedent)."
+      rationale: "Scored on his account of nature (P6); not a scientist for B (P35 addendum: interpretive theory of the psyche, Jung precedent; ruling X3). He holds that 'determinism reaches farther than we suppose' and treats the supernatural as projection ('psychology projected into the outer world'), rejecting omens; but he states no exceptionless order, and says he believes 'in outer (real) chance', meaning coincidence. Rejecting intervention without a stated exceptionless order is B 3 at 0.5, alternative 4 (P41 extension, Tolstoy precedent)."
       how_known: "One in-span book (translation, web copy)."
       alternatives:
         - {value: 4, note: "P41 extension; 'determinism reaches farther than we suppose'.", cites: [{source: S3, locator: "ch. XII, p. 278"}]}
@@ -152,7 +153,7 @@ worldview:
       context: "The Psychopathology of Everyday Life, ch. XII 'Determinism, Chance, and Superstitious Beliefs'."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Brill's authorized translation (Macmillan, 1914), Project Gutenberg #67332; web copy without scans (0.7 cap). German first edition 1901 (S2); dated by the edition read; in the span either way."
     - text: "I do not believe that an occurrence in which my mental life takes no part can teach me anything hidden concerning the future shaping of reality; but I do believe that an unintentional manifestation of my own mental activity surely contains something concealed which belongs only to my mental life--that is, I believe in outer (real) chance, but not in inner (psychic) accidents."
@@ -161,7 +162,7 @@ worldview:
       context: "Same chapter, how he differs from a superstitious person."
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
     - text: "As a matter of fact, I believe that a large portion of the mythological conception of the world which reaches far into the most modern religions is nothing but psychology projected into the outer world."
@@ -170,7 +171,7 @@ worldview:
       context: "Same section; he goes on to 'explain in this way the myths of paradise and the fall of man, of God, of good and evil, of immortality, and the like--that is, to transform metaphysics into meta-psychology'. Italics of the printed text not kept."
       axes: [A_locus, D_authority]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
     - text: "However, psychoanalytic investigation of the individual teaches with especial emphasis that god is in every case modelled after the father and that our personal relation to god is dependent upon our relation to our physical, fluctuating and changing with him, and that god at bottom is nothing but an exalted father."
@@ -179,7 +180,7 @@ worldview:
       context: "Totem and Taboo, on how the idea of god enters the totem sacrifice; the passage adds 'quite aside from all the other origins and meanings of god upon which psychoanalysis can throw no light'."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Brill's authorized translation (Kegan Paul, London), Project Gutenberg #41214 from Google scans; web copy (0.7 cap). Dated by the German book (S1: 1913)."
     - text: "Of the reality value of most of them we cannot judge; just as they cannot be proved, neither can they be refuted. We still know too little to approach them critically. The riddles of the universe only reveal themselves slowly to our enquiry, to many questions science can as yet give no answer; but scientific work is our only way to the knowledge of external reality. Again, it is merely illusion to expect anything from intuition or trance"
@@ -188,7 +189,7 @@ worldview:
       context: "The Future of an Illusion, after calling religious doctrines illusions, some comparable 'to delusions'."
       axes: [A_locus, D_authority]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Robson-Scott's translation (1928), Project Gutenberg #76774; web copy. After the span (P1 cap 0.5); dated by the German book."
     - text: "We say to ourselves: it would indeed be very nice if there were a God, who was both creator of the world and a benevolent providence, if there were a moral world order and a future life, but at the same time it is very odd that this is all just as we should wish it ourselves."
@@ -197,7 +198,7 @@ worldview:
       context: "Same chapter, on what the psychological origin of religious ideas implies."
       axes: [A_locus, C_ledger]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
     - text: "The whole thing is so patently infantile, so incongruous with reality, that to one whose attitude to humanity is friendly it is painful to think that the great majority of mortals will never be able to rise above this view of life. It is even more humiliating to discover what a large number of those alive to-day, who must see that this religion is not tenable, yet try to defend it inch by inch"
@@ -206,11 +207,11 @@ worldview:
       context: "Civilization and Its Discontents, on 'what the ordinary man understands by his religion': a 'solicitous Providence' in the form of 'a greatly exalted father' who can 'be softened by their prayers'."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "scholarly edition"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Riviere's translation (1930), Project Gutenberg #78221; web copy. After the span (P1 cap 0.5)."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: 1899 (The Interpretation of Dreams; Britannica 1899/1900, IEP 1900) to 1923 (The Ego and the Id, IEP's 'famous tripartite model'). Alternative start 1895 (Studies on Hysteria, joint with Breuer); alternative end 1930 if Civilization and Its Discontents is counted lasting (Britannica lists it among his writings without calling it lasting); either way the values stand. Not a scientist for B: IEP reports the critics' case that the theory is not falsifiable and calls it a 'theoretical model' (§5, §7a), so it falls under the P35 addendum's interpretive theories (Jung), though Freud called it a science (RQ-X3). Everything is read in English translations on Project Gutenberg (web copies, 0.7 cap); German originals not read. Lead: the 1918 letter to Pfister ('a completely godless Jew'), not read. Plotted (faded)."
+  coder_notes: "Coder's call on the span: 1899 (The Interpretation of Dreams; Britannica 1899/1900, IEP 1900) to 1923 (The Ego and the Id, IEP's 'famous tripartite model'). Alternative start 1895 (Studies on Hysteria, joint with Breuer); alternative end 1930 if Civilization and Its Discontents is counted lasting (Britannica lists it among his writings without calling it lasting); either way the values stand. Not a scientist for B: IEP reports the critics' case that the theory is not falsifiable and calls it a 'theoretical model' (§5, §7a), so it falls under the P35 addendum's interpretive theories (Jung), though Freud called it a science (ruling X3, v8's call on the auditor's advice: Freud is not a scientist; not result-changing, as a scientist he would also get B 3 at 0.5, alt 4). Alternative start 1900 (title page; IEP). Everything is read in English translations on Project Gutenberg (web copies, 0.7 cap); German originals not read. Lead: the 1918 letter to Pfister ('a completely godless Jew'), not read. Plotted (faded)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -256,7 +257,7 @@ review:
     - "All of his texts read in English translations on Project Gutenberg (web copies, 0.7 cap)."
     - "The Psychopathology is dated 1901 (IEP) or 1904 (Britannica); read in the 1914 translation of a later edition."
   open_questions:
-    - "RQ-X3: is psychoanalysis a theory of natural systems for P30/P35 (Freud a scientist), or interpretive like Jung's?"
+    - "Settled by ruling X3: not a scientist for B (interpretive, like Jung)."
     - "Read the German originals and the 1918 Pfister letter."
 
 sources:
@@ -291,10 +292,10 @@ sources:
     type: primary
     kind: "published work by the subject"
     author: "Sigmund Freud; trans. W. D. Robson-Scott"
-    citation: "Freud, Sigmund. The Future of an Illusion. Trans. W. D. Robson-Scott. 1928 (Gutenberg header: 'Edinburgh: Horace Liverwright and the institute of psycho-analysis, 1928'). Project Gutenberg eBook #76774. https://www.gutenberg.org/ebooks/76774"
+    citation: "Freud, Sigmund. The Future of an Illusion. Trans. W. D. Robson-Scott. The International Psycho-Analytical Library, No. 15. Horace Liveright and the Institute of Psycho-Analysis, 1928 (title page: MCMXXVIII; printed by R. & R. Clark, Edinburgh). Project Gutenberg eBook #76774. https://www.gutenberg.org/ebooks/76774"
     url: "https://www.gutenberg.org/ebooks/76774"
     accessed: 2026-10-19
-    reliability_note: "Translation read by Strachey (translator's note); Gutenberg transcription (web copy). Imprint as the Gutenberg header gives it (not checked against the book). Cited by chapter."
+    reliability_note: "Translation read by Strachey (translator's note); Gutenberg transcription (web copy). Imprint from the transcribed title page (the Gutenberg header's 'Edinburgh: Horace Liverwright' is wrong; batch X audit, FR13). Not the Strachey Standard Edition. Cited by chapter."
     used_for: [worldview, contribution]
   - id: S5
     type: primary
@@ -363,7 +364,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-X3: Freud and the P35 addendum.
+- RQ-X3, settled by ruling X3 (not a scientist).
 
 ## Research log
 

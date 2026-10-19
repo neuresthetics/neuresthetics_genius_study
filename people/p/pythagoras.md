@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (XW3) era_bucket 'before -500' (0.5) -> UNKNOWN: under a strict P39 his adult life (ca. 570–490 BCE) crosses the -500 edge, and P39 has no candidate-year clause (corrects the batch W PY4 advice; Gautama treated alike). Not plotted either way."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (PY4) era_bucket 'before -500' 0.7 -> 0.5, how_known based on the candidate years (Croton, ca. 530–510 BCE) under P39, at the certainty of the life dates. (Note) 'forged' wording corrected: SEP says books were forged in his name; the Golden Verses circulated in his name and were later compiled; the Sacred Discourse attribution rests on a misreading. SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 125). All facts from SEP (Carl Huffman). Pythagoras wrote nothing; everything about his views is later report (doxography), which is reported speech and cannot score alone (P42, CODING_GUIDE §7). Not a scientist (P30): SEP doubts he did mathematics or rational cosmology. primary_system BELOW_THRESHOLD; A, B, C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin BELOW_THRESHOLD. First lasting contribution and span UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
 
@@ -36,7 +37,7 @@ basics:
     date: {value: "-490", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 490'); §3"}], how_known: "SEP: 'around 490 BCE'."}
     place: {value: "Metapontum", modern_name: "Metaponto, Basilicata, Italy", polity_then: "Metapontum (Greek city in southern Italy)", certainty: 0.5, cites: [{source: S1, locator: "§3"}], how_known: "SEP: 'There are a variety of stories about his death', the most reliable putting it at Metapontum; 0.5."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "He wrote nothing and his teaching is undated (P39)."}
-  era_bucket: {value: "before -500", certainty: 0.5, cites: [{source: S1, locator: "§3"}], how_known: "First-lasting year UNKNOWN (P39). The candidate years for his lasting teaching, his activity at Croton from ca. 530 BCE until the violence against his followers there ca. 510 BCE (S1 §3), all fall before -500, so the bucket is filled at the certainty of the life dates (0.5; P39, as in the Archimedes and Hippocrates records). His adult life (born ca. 570, died ca. 490) crosses the edge, so the bucket rests on the Croton years only (batch W audit, PY4)."}
+  era_bucket: {value: UNKNOWN, how_known: "First-lasting year UNKNOWN (P39). P39 fills era only when every year of the adult life falls in one bucket; his adult life (born ca. 570, died ca. 490 BCE; S1) crosses the -500 edge, so the bucket is UNKNOWN (batch X audit, XW3, correcting the batch W PY4 advice; the Gautama record treats the same case alike). The Croton years (ca. 530–510 BCE, S1 §3) would all fall in 'before -500', but P39 has no candidate-year clause."}
   region_of_birth: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "Samos, Greece (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening; §3"}], how_known: "Croton in southern Italy, where 'most of his philosophical activity occurred' (S1)."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "As recorded."}
