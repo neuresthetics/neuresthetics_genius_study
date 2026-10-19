@@ -7,10 +7,11 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 103). Basics from Britannica (Britannica Editors, unsigned; body read live). Worldview from 'Circumfession' (1991; English in Bennington and Derrida, Jacques Derrida, 1993) as quoted by Elisabeth Loevlie, Religions 4 (2013), with the 2002 exchange with John Caputo as she reports it; secondary quotations. Not a scientist (P30). primary_system and A BELOW_THRESHOLD ('I quite rightly pass for an atheist', with God 'called by other names'); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Alternative span end is now 1967, not 1974: Glas is listed under major_works, not as a lasting contribution, so it cannot set the end (P13, P30 addendum b; DE5). Specters of Marx now cites Loevlie §1 for its lasting status ('hauntology, first coined in his Spectres of Marx in 1993 [...] a fruitful critical topos'), so the item rises from 0.5 to 0.7 (one source); the span stays 1967–1993 at 0.5."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note for batch S (blind audit of c5d448a, run 1): major_work_period now states why the span stays at 0.5 although both end items are at 0.7. No value changes."}
 
 identity:
   id: derrida-jacques
@@ -124,7 +125,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "First to last listed lasting contribution (P29, P30). The end year is Specters of Marx (1993), the latest listed lasting contribution (P30 addendum b; lasting per S2, §1). Named alternative end 1967: Glas (1974) is listed under major_works, not lasting_original_contributions, so it cannot set the end (P13, addendum b); without Specters the latest listed lasting item is the 1967 group (R audit fix, DE5)."}
+  major_work_period: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "First to last listed lasting contribution (P29, P30). The end year is Specters of Marx (1993), the latest listed lasting contribution (P30 addendum b; lasting per S2, §1). Named alternative end 1967: Glas (1974) is listed under major_works, not lasting_original_contributions, so it cannot set the end (P13, addendum b); without Specters the latest listed lasting item is the 1967 group (R audit fix, DE5). Why 0.5 although both end items are at 0.7 (coder's call, kept; S audit note): the end year rests on one source's lasting claim for Specters (Loevlie §1; Britannica names it among later works without lasting language), and the named alternative end (1967) would shrink the span from 26 years to one; a named alternative caps the span at 0.7 (contested readings, §3), and the size of the swing keeps it at 0.5."}
   age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "1967 − 1930 = 37 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No axis scored at 3 or 4 (P27 anchor)."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "A BELOW_THRESHOLD; B UNKNOWN.", certainty: 0.5, cites: [{source: S2, locator: "§2"}], how_known: "Coder's reading."}

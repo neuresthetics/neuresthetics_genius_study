@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 106). Basics from Britannica (Brian C. Southam, signed; body only, read live). Worldview from her letters to Fanny Knight in the Brabourne edition (1884), read in the Republic of Pemberley's web transcription (unofficial web copy, 0.7 cap). Not a scientist. primary_system CHRIST (0.7, consistent private letters); A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. The three prayers attributed to her are context only (attribution not settled, P42). Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: AU4 FAIL, AU5 WEAKEN; ruling S3, v8's call on the auditor's advice). The three prayers now count as her words under P42 (S3, Stovel: 'It seems clear that Jane Austen composed the prayers'), at 0.5: undated manuscripts copied by others, attributed by one scholar. A BELOW_THRESHOLD -> 0 at 0.5, alternative 1. 'Thou art every where present' now quoted from a source read (S5, a web transcription of the prayers). Henry Austen's 1818 remark added as context for CHRIST. B stays UNKNOWN (P16), so mid_basin stays UNKNOWN and she stays unplotted."}
 
 identity:
   id: austen-jane
@@ -87,17 +88,26 @@ worldview:
     cites: [{source: S2, locator: "letters LXXX (18 November 1814) and LXXXI (30 November 1814)"}]
     rationale: "CHRIST's v8 note: Christian belief (Christ, scripture, creeds, church) shown in her own writing, with no more specific philosophical position. Two private letters to her niece, twelve days apart and consistent: she is 'by no means convinced that we ought not all to be evangelicals', the suitor's 'acting more strictly up to the precepts of the New Testament' is no objection, and 'I cannot suppose we differ in our ideas of the Christian religion'. No other code was considered plausible: CLTHEI needs a God who intervenes beyond the creeds, which the letters do not show."
     how_known: "Two consistent private letters (0.7 ceiling), inside the working years; read in an unofficial web copy of the Brabourne edition, which is also capped at 0.7."
+    note: "Supporting context (not a basis): her brother Henry, introducing her as the author of her novels in 1818, wrote that 'her opinions accorded strictly with those of our Established Church' (quoted by Stovel, S3, part II). The prayers (S3, S5), now counted as hers under P42 at 0.5, are Prayer Book Christianity in form and content (S3, part II)."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Letters of November 1814 (S2)."}
-    - {code: CLTHEI, reason: "Rejected: no petition or intervention beyond ordinary Christian piety in the letters read; the Evening Prayer's petitions for travellers are in a text whose attribution is not settled (P42)."}
+    - {code: CLTHEI, reason: "Rejected: no petition or intervention beyond ordinary Christian piety. The prayers (counted as hers at 0.5 under P42) ask God to guard the household and travellers and to care for the sick, but in the form of the Book of Common Prayer's collects (S3, part II): creedal intercession, not a God who intervenes beyond the creeds."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "letter LXXXIII"}, {source: S3, locator: "opening; manuscript paragraph"}], how_known: "The only locus-bearing line read is 'I hope Heaven, in its mercy, will take her soon' (letter LXXXIII, 13 March 1817, of her dying niece Harriot): one private letter, conventional wording, after the working years (P20). The Evening Prayer ('Thou art every where present') is context only: Todd and Bree's Cambridge edition prints the prayers in an appendix and the attribution rests on the inscription 'Prayers Composed by my ever dear Sister Jane' (S3) (P42; lead).", note: "Lead: the prayers, if the attribution were accepted, would place a personal, everywhere-present God who hears petition (A 0 or 1)."}
+    A_locus:
+      value: 0
+      basis: consistent_private_letters
+      certainty: 0.5
+      cites: [{source: S3, locator: "parts I–II"}, {source: S5, locator: "prayers I–III"}]
+      rationale: "Transcendent personal pole. The three prayers address a Father in heaven who sees, judges and pardons: 'Have we thought irreverently of Thee, have we disobeyed thy Commandments' (I), 'Pardon Oh God! whatever thou has seen amiss in us' (II), 'secure an Eternity of Happiness with each other in thy Heavenly Kingdom. Grant this most merciful Father, for the sake of our Blessed Saviour' (III). Named alternative 1: 'Thou art every where present, from Thee no secret can be hid' (I) adds omnipresence, though as the knowledge of a personal judge, not identity with the world. The 1817 letter ('I hope Heaven, in its mercy, will take her soon', letter LXXXIII) is consistent but after the working years and conventional."
+      how_known: "P42 (ruling S3, v8's call on the auditor's advice): a source read attributes these texts to her (S3: 'It seems clear that Jane Austen composed the prayers'; the Doody and Murray edition 'treats the prayers as Jane Austen's own'). Undated manuscripts, copied by others (Stovel: Cassandra's inscription, Henry's hand; Todd and Bree, as summarised in S5: James Austen and Cassandra, c. 1818–1819), attributed on the family inscription, so 0.5 (private ceiling and the attribution doubt). Le Faye places them in her later life (quoted in S3, part III), which may or may not fall in 1811–1816."
+      alternatives:
+        - {value: 1, note: "'Thou art every where present' (prayer I).", cites: [{source: S5, locator: "prayer I, first paragraph"}]}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30), and no statement on nature or the physical world in the letters read (P16, P19). The 1817 hope that 'Heaven, in its mercy' will take Harriot is about a death, not an account of nature's order; checked and found off-point."}
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Evangelicals 'from reason and feeling must be happiest and safest' (letter LXXX) may refer to salvation, but the sense is not explicit; 'if we believe the doctrine of original sin' (letter LXXXII, February 1817) is playful. Too indirect (P19)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation against observation or reason in the letters read (S2)."}
     E_scope: {value: UNKNOWN, how_known: "Nothing on the world's order in the letters read (S2)."}
-  mid_basin: {value: UNKNOWN, how_known: "P4 test: B is UNKNOWN, which takes precedence (P19); A is BELOW_THRESHOLD."}
+  mid_basin: {value: UNKNOWN, how_known: "P4 test: B is UNKNOWN, which takes precedence (P19); A is 0 at 0.5 (prayers, P42 ruling S3)."}
   statements:
     - text: "And, as to there being any objection from his goodness, from the danger of his becoming even evangelical, I cannot admit that.  I am by no means convinced that we ought not all to be evangelicals, and am at least persuaded that they who are so from reason and feeling must be happiest and safest."
       cites: [{source: S2, locator: "letter LXXX, Chawton, Friday 18 November 1814"}]
@@ -126,8 +136,33 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-18
       note: "As above."
+    - text: "Give us grace, Almighty Father, so to pray, as to deserve to be heard, to address thee with our Hearts, as with our Lips. Thou art every where present, from Thee no secret can be hid; may the knowledge of this, teach us to fix our Thoughts on Thee, with Reverence & Devotion that we pray not in vain."
+      cites: [{source: S5, locator: "prayer I, first paragraph"}]
+      context: "Opening of the first prayer ('Evening Prayer'), a household evening prayer; undated (S3, part III). The manuscript sheet carries the inscription 'Prayers Composed by my ever dear Sister Jane' (S3, part I)."
+      axes: [A_locus]
+      kind: "unpublished manuscript"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-19
+      note: "Unofficial web transcription of the Mills College manuscript (S5); this paragraph is not in Stovel's excerpts. Where Stovel quotes prayer I (from 'Look with Mercy'), S5 agrees except for small variants ('Resolution' for 'resolutions', '&' for 'and')."
+    - text: "More particularly do we pray for the safety and welfare of our own family & friends wheresoever dispersed, beseeching Thee to avert from them all material & lasting Evil of Body or Mind; & may we by the assistance of thy Holy Spirit so conduct ourselves on Earth as to secure an Eternity of Happiness with each other in thy Heavenly Kingdom. Grant this most merciful Father, for the sake of our Blessed Saviour in whose Holy Name & Words we further address thee."
+      cites: [{source: S5, locator: "prayer III, last paragraph"}, {source: S3, locator: "part II"}]
+      context: "Close of the third prayer, before the Lord's Prayer; undated."
+      axes: [A_locus]
+      kind: "unpublished manuscript"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-19
+      note: "S5's text; Stovel (S3, part II) quotes the 'may we by the Assistance ...' clause and the 'Grant this' sentence with the same words (capitals and '&' differ)."
+    - text: "her opinions accorded strictly with those of our Established Church"
+      cites: [{source: S3, locator: "part II"}]
+      date: "1818"
+      context: "Henry Austen's words in introducing her as the author of her novels (the 1818 Biographical Notice), quoted by Stovel."
+      axes: []
+      kind: "reported speech"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-19
+      note: "Her brother's characterisation, not her words: supporting context for CHRIST only."
   changes_over_life: []
-  coder_notes: "Coder's call. CHRIST rests on two private letters of November 1814; nothing read bears on nature, so B is UNKNOWN and she is not plotted. The Evening Prayer and two other prayers (Mills College manuscript) are a lead only: the attribution rests on the inscription 'Prayers Composed by my ever dear Sister Jane' (JASNA, Stovel), and the Cambridge Later Manuscripts edition prints them as Appendix D. Words that the Pemberley transcription restores from outside the Brabourne text are not quoted."
+  coder_notes: "Coder's call. CHRIST rests on two private letters of November 1814. The three prayers (Mills College manuscript) count as hers under P42 (ruling S3), at 0.5, and give A 0 (alternative 1). Nothing read bears on nature, so B is UNKNOWN and she is not plotted. Doubt on the attribution: Todd and Bree, as summarised in S5, call the inscription the only evidence, 'important but not decisive'. Words that the Pemberley transcription restores from outside the Brabourne text are not quoted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -166,7 +201,7 @@ review:
     - "Cassandra destroyed many letters; 'Only 160 out of thousands' survive (S1)."
   open_questions:
     - "Check the letters against Le Faye (4th ed.) and read the letters to Cassandra for religious remarks."
-    - "Read Todd and Bree on the prayers' attribution (Later Manuscripts, pp. cxviii–cxxvi)."
+    - "Read Todd and Bree on the prayers' attribution and text (Later Manuscripts, pp. cxviii–cxxvi, Appendix D); the transcription read (S5) is unofficial."
 
 sources:
   - id: S1
@@ -194,7 +229,16 @@ sources:
     citation: "Stovel, Bruce. \"'A Nation Improving in Religion': Jane Austen's Prayers and Their Place in Her Life and Art.\" Persuasions 16 (1994): 185–196. https://jasna.org/persuasions/printed/number16/stovel.htm"
     url: "https://jasna.org/persuasions/printed/number16/stovel.htm"
     accessed: 2026-10-18
-    reliability_note: "Read the opening and the manuscript description only; lead for the prayers."
+    reliability_note: "Read in full on 2026-10-19 (parts I–IV). Persuasions is JASNA's journal; the article attributes the prayers to her and quotes them from the manuscripts; it also quotes Henry Austen (1818) and Le Faye on the dating."
+    used_for: [worldview]
+  - id: S5
+    type: primary
+    kind: other
+    author: "Jane Austen (attributed); web transcription by jausten.it"
+    citation: "Austen, Jane (attributed). Prayers I–III (Mills College, Heller Rare Book Room manuscript). Web transcription with Italian translation and notes: \"Jane Austen - Preghiere\", jausten.it, http://www.jausten.it/jaaopreghiere.html"
+    url: "http://www.jausten.it/jaaopreghiere.html"
+    accessed: 2026-10-19
+    reliability_note: "Unofficial web transcription (0.7 cap); its headnote summarises Todd and Bree, Later Manuscripts (Cambridge, 2008), pp. cxviii–cxxvi, on the hands and the dating of the copies. Agrees with Stovel's excerpts apart from small variants."
     used_for: [worldview]
   - id: S4
     type: secondary
@@ -213,7 +257,7 @@ sources:
 
 ## Summary
 
-Jane Austen (1775–1817), English novelist [S1]. Draft: primary_system CHRIST (0.7); A BELOW_THRESHOLD; B UNKNOWN; mid_basin UNKNOWN. Not plotted.
+Jane Austen (1775–1817), English novelist [S1]. Draft: primary_system CHRIST (0.7); A 0 (0.5, from the prayers, P42); B UNKNOWN; mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -250,3 +294,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Off the axe
 ## Research log
 
 - 2026-10-18: Read Britannica (live) and the Brabourne letters to Fanny Knight (Pemberley transcription). Prayers known from search extracts only.
+- 2026-10-19: Read Stovel (S3) in full and the jausten.it transcription of the three prayers (S5); prayers scored under P42 (ruling S3).

@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 108). Basics from Britannica (Britannica Editors, unsigned; body only, read live). Worldview from his published lecture Immanentisme et foi religieuse (Geneva, Libr. H. Robert, 1930; given at Rolle on 16 June 1929), read in full in the University of Geneva's online Piaget edition. Scientist (P30, P35 addendum: testable claims about children's cognition). primary_system IDEAL (0.5; alternatives KANT, CHRIST); A 4 (0.7, alt 3); B 3 (0.7, alt 4; P27 free-mind anchor); C BELOW_THRESHOLD; D 4 (0.7); E 4 (0.7); mid_basin false (0.7). Plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit notes for batch S (blind audit of c5d448a, run 1). first_evidence_of_lio_type_views dated 1929 (the lecture given at Rolle on 16 June 1929; printed 1930). primary_system now also cites part I, where 'le Dieu immanent est un Dieu-valeur' stands (the definitions part). No value changes."}
 
 identity:
   id: piaget-jean
@@ -81,7 +82,7 @@ worldview:
     value: IDEAL
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S2, locator: "parts II–III"}]
+    cites: [{source: S2, locator: "part I ('un Dieu-valeur'); parts II–III"}]
     rationale: "Critical idealism: 'La pensée qui pose l’être est, en effet, antérieure à l’être'; 'la valeur étant condition de la pensée et la pensée condition de l’être'; God is 'immanent à la pensée', 'un Dieu-valeur', identified 'avec la pensée dans ce qu’elle a de normatif par rapport au moi'. IDEAL's use_when ('reality is mental or thought-like') fits only partly: he calls his position 'exactement intermédiaire entre le réalisme et l’idéalisme' and IDEAL is a stub. Named alternatives: KANT (critical philosophy, but not the moral postulates; KANT's use_when needs both) and CHRIST (he takes Jesus as 'la conscience religieuse la plus pure qui ait jamais existé' and calls immanentism a 'doctrine de vie' within Protestant faith)."
     how_known: "His published lecture, read in the University of Geneva's online edition; contested between three codes, so 0.5 (coder's call)."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
@@ -198,7 +199,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1923–1948", certainty: 0.7, cites: [{source: S1, locator: "major works paragraph"}], how_known: "Le Langage et la pensée (1923) to La Naissance de l'intelligence (1948), first to last listed lasting contribution (P29, P30). Coder's call: later works (genetic epistemology; the Centre founded 1955) not listed."}
   age_at_first_lasting_contribution: {value: 27, certainty: 0.7, cites: [{source: S1, locator: "opening; major works paragraph"}], how_known: "1923 − 1896 = 27 (P30)."}
-  first_evidence_of_lio_type_views: {value: "1930: no causality in nature beside natural causality; God immanent to thought", year: 1930, certainty: 0.5, cites: [{source: S2, locator: "parts II–III"}], how_known: "Earlier works not read (the 1928 lecture is a lead)."}
+  first_evidence_of_lio_type_views: {value: "1929: no causality in nature beside natural causality; God immanent to thought (lecture at Rolle, 16 June 1929; printed 1930)", year: 1929, certainty: 0.5, cites: [{source: S2, locator: "title page; parts I–III"}], how_known: "Dated by the public lecture, not the 1930 printing. Earlier works not read (the 1928 lecture is a lead)."}
   lio_views_relative_to_major_work: {value: "during major work", certainty: 0.7, cites: [{source: S2, locator: "editors' foreword"}], how_known: "Lecture of 1929, published 1930, inside 1923–1948."}
   worldview_during_major_work: {value: "Religious immanentism within critical idealism: God as the norms of thought, no supernatural causality", certainty: 0.7, cites: [{source: S2, locator: "parts II–III"}], how_known: "His 1930 lecture."}
 

@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 109). Basics from Britannica (Maurice Cranston, signed; opening and 'Formative years', read live) and SEP (Christopher Bertram, 'Life'). Worldview from his own published French texts in the Geneva Collection complète (1782), read in Wikisource's page-linked transcription: the Profession de foi du vicaire savoyard (Émile IV, 1762), the Lettre à Christophe de Beaumont (dated 18 November 1762) and the third Lettre écrite de la montagne (1764). primary_system CHRIST (0.5; alternatives DEISM, which P27 blocks, and CLASS_THEISM); A 1 (0.7, alt 0); B 3 (0.7, alt 4; P27 free-will anchor); D 3 (0.5, alt 4); mid_basin true (0.7). Plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: RO6 WEAKEN; rulings S1 and S2, v8's calls on the auditor's advice). Scoring the Vicar's speech now cites P42 and its v8 addendum (ruling S2: a character's words count as the author's view when a text in the author's own voice adopts them, at that text's certainty), with the own-voice texts and the counter-evidence: Émile t. 5, p. 112 ('non comme une regle'); Beaumont t. 6, pp. 36 and 52; Lettres écrites de la montagne II, t. 6, p. 171 ('mes articles fondamentaux') and III, pp. 182–183 with its note. Ruling S1: P27's 'declines to contest it' covers the Vicar's suspension, so CHRIST stays (ruling question closed). The 1764 cap cites P1 (under P20). Rameau dispute dated 1752. No value changes."}
 
 identity:
   id: rousseau-jean-jacques
@@ -83,18 +84,18 @@ worldview:
   working_years: {value: "1750–1762", certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}, {source: S2, locator: "§1"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Genevan Reformed church (readmitted 1754, regaining his citizenship)", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP; context only."}
-  self_described_science_religion_relation: {value: "God is known from motion and its laws: 'la matiere mue selon de certaines loix me montre une intelligence' (1762); miracles, as exceptions to laws, can never be known to be miracles, since that would need knowledge of all the laws of nature (1764)", certainty: 0.7, cites: [{source: S3, locator: "t. 5, p. 29"}, {source: S5, locator: "t. 6, pp. 192–195"}], how_known: "His published texts in a web transcription of the 1782 edition (cap 0.7); the 1764 letter is after the working years (P20)."}
+  self_described_science_religion_relation: {value: "God is known from motion and its laws: 'la matiere mue selon de certaines loix me montre une intelligence' (1762); miracles, as exceptions to laws, can never be known to be miracles, since that would need knowledge of all the laws of nature (1764)", certainty: 0.7, cites: [{source: S3, locator: "t. 5, p. 29"}, {source: S5, locator: "t. 6, pp. 192–195"}], how_known: "His published texts in a web transcription of the 1782 edition (cap 0.7); the 1764 letter is after the working years (P1, under P20)."}
   primary_system:
     value: CHRIST
     basis: written_profession
     certainty: 0.5
     cites: [{source: S4, locator: "t. 6, p. 52"}, {source: S3, locator: "t. 5, pp. 97–100"}]
     rationale: "Self-description in his reply to the Archbishop of Paris (dated 18 November 1762): 'je suis Chrétien, & sincérement Chrétien, selon la doctrine de l’Evangile ... non comme un disciple des Prêtres, mais comme un disciple de Jésus-Christ', with the Profession de foi named as his own best writing. The creed is a natural religion: God known from motion and order, conscience, the Gospel's 'majesté' admired, but revelation neither admitted nor rejected. Named alternatives: DEISM (creator known by reason; miracles and church authority rejected as sources), which P27 blocks because the Profession says of revelation 'je ne l’admets ni ne la rejette' (DEISM's do_not_use_when: 'declines to contest it'); and CLASS_THEISM (an a posteriori argument from motion to a first will, P22), rejected because God is not held simple or immutable in what was read."
-    how_known: "Published works in a web transcription of the 1782 Geneva edition (cap 0.7); contested between three codes, and the self-label is a defence against censure, so 0.5 (coder's call). Ruling question raised (see review)."
+    how_known: "Published works in a web transcription of the 1782 Geneva edition (cap 0.7); contested between three codes, and the self-label is a defence against censure, so 0.5 (coder's call). Ruling S1 (v8's call on the auditor's advice): P27's 'declines to contest it' covers the Vicar's 'je ne l’admets ni ne la rejette', so DEISM stays blocked. In his own voice he goes further: 'Je me déclare Chrétien'; 'il n’est pas vrai que je rejette les autres preuves' of revelation; his persecutors count for nothing 'que je l’admette sur les preuves qui me convainquent'; and a note says the Vicar's scepticism 'ne prouve en aucune façon le mien' (S5, Lettre III, t. 6, pp. 182–183; after the working years, P1)."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Self-label 'sincérement Chrétien, selon la doctrine de l’Evangile' (1762)."}
-    - {code: DEISM, reason: "Natural religion from motion and order; miracles not proofs; 'Que d’hommes entre Dieu & moi !' (S3, t. 5, p. 76). Blocked by P27: he neither admits nor rejects revelation (S3, t. 5, p. 97)."}
+    - {code: DEISM, reason: "Natural religion from motion and order; miracles not proofs; 'Que d’hommes entre Dieu & moi !' (S3, t. 5, p. 76). Blocked by P27 (ruling S1): he neither admits nor rejects revelation (S3, t. 5, p. 97), and in his own voice admits it on the proofs that convince him (S5, Lettre III, t. 6, p. 183)."}
     - {code: CLASS_THEISM, reason: "First-cause argument from motion to a will (S3, t. 5, pp. 25–26); rejected: no simple, immutable God stated."}
   lio_axes:
     A_locus:
@@ -103,7 +104,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S3, locator: "t. 5, pp. 33–34"}, {source: S4, locator: "t. 6, p. 52"}]
       rationale: "Transcendent person, limited: God is 'Cet Être qui veut et qui peut, cet Être actif par lui-même', with 'intelligence', 'puissance', 'volonté' and 'bonté'; he 'existe par lui-même' and 'mon existence est subordonnée à la sienne'. The limit: God is perceived 'par-tout dans ses œuvres, je le sens en moi', and his nature 'm’échappe'; no petition or particular intervention is described. Named alternative 0 (a willing, intelligent creator outside the world), on the same side of the mid_basin test."
-      how_known: "The Profession, owned as his own creed in the 1762 letter (S4, t. 6, p. 52: 'je la tiendrai toujours pour l’Ecrit le meilleur & le plus utile'); web transcription, cap 0.7."
+      how_known: "P42: the Vicar's words are a character's, so they count as Rousseau's only because texts in his own voice adopt them, at the certainty of the adopting text (P42 addendum, v8's call, ruling S2). Inside the working years, the 1762 letter owns the Profession (S4, t. 6, p. 52: 'je la tiendrai toujours pour l’Ecrit le meilleur & le plus utile'); after them, Lettres écrites de la montagne II names its first part, which carries A and B, as his own: 'toute la premiere partie de celle du Vicaire est affirmative ... Voilà, Messieurs, mes articles fondamentaux' (S5, t. 6, p. 171; P1). Counter-evidence weighed: the narrator's 'J’ai transcrit cet écrit, non comme une regle des sentimens qu’on doit suivre en matiere de religion, mais comme un exemple de la maniere dont on peut raisonner avec son Éleve' (S3, t. 5, p. 112) concerns teaching method, not belief; and he keeps the voices apart ('c’est moi-même, & non le Vicaire', S4, t. 6, p. 36, of a passage in the body of the book). Web transcription, cap 0.7."
       alternatives:
         - {value: 0, note: "A willing, intelligent creator distinct from the world.", cites: [{source: S3, locator: "t. 5, pp. 33–34"}]}
     B_cause:
@@ -112,7 +113,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S3, locator: "t. 5, pp. 25–29; p. 41"}, {source: S5, locator: "t. 6, pp. 192–195"}]
       rationale: "Scored on his account of nature (P6). Lawful nature: matter moves 'selon de certaines loix', and 'L’expérience & l’observation nous ont fait connoître les loix du mouvement'; the stated exception is a free will not bound by mechanism: 'L’homme est donc libre dans ses actions, &, comme tel animé d’une substance immatérielle ; c’est mon troisieme article de foi' (P27 anchor: a free will gives B 3 as the value, as for Descartes and Kant). Miracles are not admitted as part of how events go: in 1764 he defines one as 'une exception réelle & visible à ses Loix', grants that God can work them, says the highest ideas of divine wisdom 'seroient pour la négative', and that no one can know a fact to be a miracle ('Ils seroient mille, que je ne les en croirois pas'). Named alternative 4: no miracle is accepted, and the free will may be read as outside nature."
-      how_known: "The 1762 Profession (inside the working years, owned in the 1762 letter) carries the score; the 1764 letter is after the working years and counts at 0.5 for its own point (P20). Web transcription, cap 0.7."
+      how_known: "The 1762 Profession (inside the working years, owned in the 1762 letter) carries the score; the 1764 letter is after the working years and counts at 0.5 for its own point (P1, under P20). The Vicar's words count as his under P42 and its addendum (ruling S2), as set out under A_locus. Web transcription, cap 0.7."
       alternatives:
         - {value: 4, note: "No miracle admitted; strict lawfulness with the will placed outside nature.", cites: [{source: S5, locator: "t. 6, p. 193"}]}
     C_ledger: {value: UNKNOWN, how_known: "The Profession's pages on the soul's survival and Providence's justice (t. 5, pp. 42–50) were not coded (coder's call; lead)."}
@@ -122,7 +123,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S3, locator: "t. 5, pp. 76; 97–100"}]
       rationale: "Reason and conscience lead: 'Que d’hommes entre Dieu & moi !'; he rejects 'l’obligation de la reconnoître' (revelation) as incompatible with God's justice, and 'quant aux dogmes qui n’influent ni sur les actions, ni sur la morale ... je ne m’en mets nullement en peine'. Religion keeps one limited say: the Gospel is to be respected 'en silence' where it can be neither rejected nor understood. Named alternative 4: no domain where revelation decides."
-      how_known: "The Profession, owned in the 1762 letter; contested reading, 0.5."
+      how_known: "The Profession, owned in the 1762 letter (P42 addendum, ruling S2); contested reading, 0.5."
       alternatives:
         - {value: 4, note: "Revelation keeps no deciding say.", cites: [{source: S3, locator: "t. 5, p. 97"}]}
     E_scope: {value: UNKNOWN, how_known: "Not coded from what was read (P7)."}
@@ -185,15 +186,33 @@ worldview:
     - text: "Un miracle est, dans un fait particulier, un acte immédiat de la puissance divine, un changement sensible dans l’ordre de la nature, une exception réelle & visible à ses Loix."
       cites: [{source: S5, locator: "t. 6, p. 192 (Lettre III)"}]
       date: "1764"
-      context: "Lettres écrites de la montagne, third letter, answering the Genevan condemnation; he grants 'quel homme a jamais nié que Dieu pût faire des miracles ?', says the highest ideas of divine wisdom 'seroient pour la négative', and of witnesses 'Ils seroient mille, que je ne les en croirois pas' (p. 193). After the working years (P20)."
+      context: "Lettres écrites de la montagne, third letter, answering the Genevan condemnation; he grants 'quel homme a jamais nié que Dieu pût faire des miracles ?', says the highest ideas of divine wisdom 'seroient pour la négative', and of witnesses 'Ils seroient mille, que je ne les en croirois pas' (p. 193). After the working years (P1, under P20)."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-18
       note: "As above."
+    - text: "Presque toute la profession de foi de la Julie est affirmative ; toute la premiere partie de celle du Vicaire est affirmative, la moitié de la seconde partie est encore affirmative ; une partie du chapitre de la Religion civile est affirmative ; la Lettre à M. l’Archevêque de Paris est affirmative. Voilà, Messieurs, mes articles fondamentaux : voyons les vôtres."
+      cites: [{source: S5, locator: "t. 6, p. 171 (Lettre II)"}]
+      date: "1764"
+      context: "Lettres écrites de la montagne, second letter, answering the Genevan ministers' charge that he left the fundamentals of his Christianity unstated. After the working years (P1, under P20)."
+      axes: [A_locus, B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-19
+      note: "Own-voice adoption of the Profession's first part (P42 addendum, ruling S2)."
+    - text: "J’Ai transcrit cet écrit, non comme une regle des sentimens qu’on doit suivre en matiere de religion, mais comme un exemple de la maniere dont on peut raisonner avec son Éleve, pour ne point s’écarter de la méthode que j’ai tâché d’établir."
+      cites: [{source: S3, locator: "t. 5, p. 112"}]
+      date: "1762"
+      context: "Émile IV, the narrator's words straight after the Profession's 'Amen'."
+      axes: []
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-19
+      note: "Counter-evidence to the adoption, weighed under P42: it concerns teaching method, not belief (ruling S2)."
   changes_over_life:
     - {value: "Converted to Roman Catholicism in Turin (April 1728); readmitted to the Genevan Reformed church in 1754, regaining his citizenship", year: 1754, certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP. The 1754 return precedes four of the five listed works; the affiliation change does not bear on the axes read (coder's call)."}
-  coder_notes: "Coder's call. The Profession is the Vicar's speech, but Rousseau owns it in his own voice in the letter to Beaumont (dated 18 November 1762, inside the working years), so it is scored as his written profession. Span ends with Émile and The Social Contract (1762); the Confessions (finished in later life, published 1782–89) would extend it to about 1770 without changing a value, and the 1764 Lettres would then fall inside it. Ruling question: DEISM is blocked only by the Profession's 'je ne l’admets ni ne la rejette'; if P27's 'declines to contest it' is not meant for a stated suspension of judgement, DEISM would replace CHRIST (no axis changes). Leads: the Lettre à Voltaire sur la Providence (1756); the Rêveries, third walk."
+  coder_notes: "Coder's call. The Profession is the Vicar's speech (P42), but Rousseau owns it in his own voice in the letter to Beaumont (dated 18 November 1762, inside the working years) and names its first part as 'mes articles fondamentaux' in 1764 (LEM II, t. 6, p. 171), so it is scored as his written profession under the P42 addendum (ruling S2, v8's call). Span ends with Émile and The Social Contract (1762); the Confessions (finished in later life, published 1782–89) would extend it to about 1770 without changing a value, and the 1764 Lettres would then fall inside it. Ruling S1 (v8's call): P27's 'declines to contest it' covers the Vicar's 'je ne l’admets ni ne la rejette', so CHRIST stays. Leads: the Lettre à Voltaire sur la Providence (1756); the Rêveries, third walk."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -224,7 +243,7 @@ institutions:
 collaborators:
   - {value: "Françoise-Louise de la Tour, baronne de Warens", relation: "mentor or employer", note: "benefactor; furthered his education; he became her steward", certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}, {source: S2, locator: "§1"}], how_known: "Britannica and SEP."}
   - {value: "Denis Diderot", relation: collaborator, note: "the Encyclopédie circle", certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}], how_known: "Britannica."}
-  - {value: "Jean-Philippe Rameau", relation: "rival or critic", note: "melody against harmony (1752–53)", certainty: 0.7, cites: [{source: S1, locator: "'Controversy with Rameau'"}], how_known: "Britannica."}
+  - {value: "Jean-Philippe Rameau", relation: "rival or critic", note: "melody against harmony (1752)", certainty: 0.7, cites: [{source: S1, locator: "'Controversy with Rameau'"}], how_known: "Britannica."}
   - {value: "David Hume", roster_id: hume-david, relation: other, note: "invited him to England (1766); Rousseau came to think Hume plotted against him", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP."}
 
 review:
@@ -236,7 +255,6 @@ review:
     - "Mother's death: Britannica 'in childbirth', SEP 'nine days after his birth'."
     - "Primary texts read in Wikisource's transcription of the 1782 Collection complète (page images linked); treated as a web copy (cap 0.7); page numbers are the printed ones."
   open_questions:
-    - "Ruling question R-S1 (P30): does P27's 'declines to contest it' cover the Vicar's stated suspension of judgement on revelation? If not, DEISM replaces CHRIST."
     - "Code C from the Profession's pages on the soul and Providence (t. 5, pp. 42–50)."
 
 sources:
@@ -280,10 +298,10 @@ sources:
     type: primary
     kind: "published work by the subject"
     author: "Jean-Jacques Rousseau"
-    citation: "Rousseau, J.-J. Lettres écrites de la montagne (1764), Lettre III, in Collection complète des œuvres de J. J. Rousseau, t. 6 (Genève, 1782), pp. 179–216. Wikisource transcription: https://fr.wikisource.org/wiki/Lettres_écrites_de_la_montagne/Texte_entier"
+    citation: "Rousseau, J.-J. Lettres écrites de la montagne (1764), Lettre II (p. 171) and Lettre III (pp. 179–216), in Collection complète des œuvres de J. J. Rousseau, t. 6 (Genève, 1782). Wikisource transcription: https://fr.wikisource.org/wiki/Lettres_écrites_de_la_montagne/Texte_entier"
     url: "https://fr.wikisource.org/wiki/Lettres_%C3%A9crites_de_la_montagne/Texte_entier"
     accessed: 2026-10-18
-    reliability_note: "As S3. After the working years (P20)."
+    reliability_note: "As S3. After the working years (P1 cap 0.5, under P20)."
     used_for: [worldview]
   - id: S6
     type: secondary

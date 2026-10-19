@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-19
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 107). Basics from Britannica (Britannica Editors, unsigned; body only, read live) and Nature's page for her 1964 paper. Worldview from two interviews in her own words, both after the working years (1964–1986): On Being with Krista Tippett (recorded 2020; producer's transcript) and The Guardian (Stephen Moss, 13 January 2010). Scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, DEISM blocked by P27, PANENT, AGNOS); A 2 (0.5, interview; alt BELOW_THRESHOLD); B 3 (0.5, P35; alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD (P19); mid_basin BELOW_THRESHOLD. Plotted (faded) at A2/B3; A 2 sits between the branches of the mid-basin test. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: GO5 WEAKEN; note). The 'just chance' line is marked as reported: it is what 'all of these great brains have said' (after Francis Collins), not her own argument. A 1 named as a second alternative. No value changes."}
 
 identity:
   id: goodall-jane
@@ -87,7 +88,7 @@ worldview:
   secondary_system: {value: UNKNOWN, how_known: "No system coded."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "'I suppose so; I was raised as a Christian' (S3); rejected: upbringing and a hedged label give no code."}
-    - {code: DEISM, reason: "An intelligence behind the universe, argued from 'no way that what's happened is just chance' (S2); blocked: revelation is not rejected (P27)."}
+    - {code: DEISM, reason: "An intelligence behind the universe, which she introduces by reporting what 'all of these great brains have said', that 'there is no way that what's happened is just chance' (S2; reported, after Francis Collins, not her own argument); blocked: revelation is not rejected (P27)."}
     - {code: PANENT, reason: "Spiritual connection felt in the natural world (S2); rejected: no statement that the divine includes and exceeds the world."}
     - {code: AGNOS, reason: "'I haven't the faintest idea' what it is (S2); rejected: she is 'absolutely sure that there is something'."}
   lio_axes:
@@ -96,16 +97,17 @@ worldview:
       basis: recorded_interview
       certainty: 0.5
       cites: [{source: S2, locator: "closing exchange"}]
-      rationale: "Mixed: an intelligence 'behind the universe' (beyond it, toward the transcendent pole) that is 'probably what it is', not who (not clearly a person, toward the LIO pole), and a 'spiritual connection to the natural world' felt in the forest. The features of both poles are present and neither is stated as limited, so 2. Named alternative BELOW_THRESHOLD: she has not 'the faintest idea' what it is."
+      rationale: "Mixed: an intelligence 'behind the universe' (beyond it, toward the transcendent pole) that is 'probably what it is', not who (not clearly a person, toward the LIO pole), and a 'spiritual connection to the natural world' felt in the forest. The features of both poles are present and neither is stated as limited, so 2. Named alternatives: BELOW_THRESHOLD (she has not 'the faintest idea' what it is) and 1 ('behind the universe' read as a transcendent locus)."
       how_known: "(interview) One recorded interview, her own words (P8), from 2020, after the working years (1964–1986), so 0.5 (P20 ruling P1, Shannon and Watson precedent)."
       alternatives:
         - {value: BELOW_THRESHOLD, note: "'I haven't the faintest idea'.", cites: [{source: S2, locator: "closing exchange"}]}
+        - {value: 1, note: "'behind the universe' read as a transcendent locus; mid_basin stays BELOW_THRESHOLD at 0.5.", cites: [{source: S2, locator: "closing exchange"}]}
     B_cause:
       value: 3
       basis: inference_from_work
       certainty: 0.5
       cites: [{source: S4, locator: "article page"}, {source: S1, locator: "findings paragraph"}]
-      rationale: "Scored on her account of nature (P6). She is a scientist (P30), so B comes from her working science: lawful field observation of animal behaviour, B 3 with 4 as the named alternative, never 4 (P35). Her remark that 'there is no way that what's happened is just chance' (S2, 2020) names an intelligence behind the universe but states no exception within nature, so it does not move B."
+      rationale: "Scored on her account of nature (P6). She is a scientist (P30), so B comes from her working science: lawful field observation of animal behaviour, B 3 with 4 as the named alternative, never 4 (P35). The line 'there is no way that what's happened is just chance' (S2, 2020) is reported speech: she gives it as what 'all of these great brains have said' (philosophers of science, physicists, Francis Collins), not as her own argument; in any case it states no exception within nature, so it does not move B."
       how_known: "Inferred from her working science (P24, P35)."
       alternatives:
         - {value: 4, note: "P35 alternative.", cites: [{source: S4, locator: "article page"}]}
@@ -117,7 +119,7 @@ worldview:
     - text: "What that intelligence behind the universe is — what it is, who it is; probably what it is — I haven’t the faintest idea, but I’m absolutely sure that there is something. And seeking for that something is part of being human."
       cites: [{source: S2, locator: "closing exchange"}]
       date: "2020"
-      context: "On Being with Krista Tippett, recorded over Zoom from Bournemouth in 2020 (original air date 6 August 2020); her closing answer on what it means to be human, after 'there is no way that what’s happened is just chance'."
+      context: "On Being with Krista Tippett, recorded over Zoom from Bournemouth in 2020 (original air date 6 August 2020); her closing answer on what it means to be human, straight after she reports that 'all of these great brains have said there is no way that what’s happened is just chance' (reported, after Francis Collins; not her own argument)."
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "primary transcription"
