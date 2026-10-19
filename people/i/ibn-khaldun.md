@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 101). Basics from Britannica (Charles Issawi, signed; body pages opening, 'The Muqaddimah' and 'Later years', read live). Worldview from the Muqaddimah in Franz Rosenthal's translation (1958/1967) as reproduced on muslimphilosophy.com (Ch. I, sixth prefatory discussion; Ch. VI, §14), with Rosenthal's 'Textual History' for dates; web copies, secondary quotation. Not a scientist (P30, coder's call). primary_system ISLAM (Ashʿarite kalām; 0.7); A 0 (0.7); B 2 (0.5, alt 1); D 1 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Plotted (faded), left of B 3. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1). First lasting year 1377 at 0.5, alternative 1382, now cites P30 #1 and the CODING_GUIDE undated-start clause instead of P30 addendum c (I7). D rationale softened: the Lawgiver's ban concerns the regress of causes towards God, not natural inquiry as such. Note added that the Muqaddimah was revised to about 1404 (possible later period end). Britannica body sections 'The Muqaddimah' and 'Journey to Egypt' re-fetched and the locators confirmed (1375 retreat, four years; first draft; best single source on Muslim North Africa; Tunis; 1382; Al-Azhar and the Qamḥiyyah college). Values unchanged."}
 
 identity:
   id: ibn-khaldun
@@ -34,7 +35,7 @@ basics:
   death:
     date: {value: "1406-03-17", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body."}
     place: {value: "Cairo", modern_name: "Cairo, Egypt", polity_then: "Mamluk sultanate", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Rescue by Timur'"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1377, certainty: 0.5, cites: [{source: S3, locator: "§3 Gradual growth of the text"}, {source: S1, locator: "'The Muqaddimah' (1375 retreat, four years)"}], how_known: "Ibn Khaldun dates the first draft of the Muqaddimah to five months ending in the middle of 779 [November 1377] (Rosenthal, citing 3:480). That is a documented composition date (P30 addendum c); the first documented public act is the presentation of the History to the Hafsid ruler in Tunis, before 1382, undated in what was read. 0.5, with 1382 the named alternative."}
+  first_lasting_contribution_year: {value: 1377, certainty: 0.5, cites: [{source: S3, locator: "§3 Gradual growth of the text"}, {source: S1, locator: "'The Muqaddimah' (1375 retreat, four years)"}], how_known: "Ibn Khaldun dates the first draft of the Muqaddimah to five months ending in the middle of 779 [November 1377] (Rosenthal, citing 3:480). The first documented public act is the presentation of the History (with the Muqaddimah) to the Hafsid ruler in Tunis (P30 #1), but it is undated in what was read, only bounded by his departure in 1382; under the undated-start clause of CODING_GUIDE §8 ('do not guess') that start is not given a year. Coder's call: the author's own composition date, 1377, at 0.5, with 1382 (the bound of the presentation) as the named alternative. P30 addendum c does not apply, because a public act in life exists. The Muqaddimah was revised to about 1404 (S3)."}
   era_bucket: {value: "500 to 1399", certainty: 0.7, cites: [{source: S3, locator: "§3"}], how_known: "First lasting year 1377 (P2); the alternative 1382 is in the same bucket."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Tunisia (P3)."}
   region_of_work: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "'Background and early life'; 'The Muqaddimah'; 'Journey to Egypt'"}], how_known: "Tunis, Fez, Bejaïa, Tlemcen, Qalʿat ibn Salāmah (Algeria), Cairo; also Granada (Southern Europe) for a time."}
@@ -110,7 +111,7 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S2, locator: "Ch. VI §14"}]
-      rationale: "Revelation outranks reason beyond the intellect's level ('those who give the intellect preference over (traditional) information in such matters are wrong'), and the Lawgiver's command reaches into inquiry about nature itself: 'we were forbidden by the Lawgiver (Muhammad) to study causes'. The intellect keeps its own field ('a correct scale ... completely certain'). Named alternative 2: two domains, each with its own authority."
+      rationale: "Revelation outranks reason beyond the intellect's level ('those who give the intellect preference over (traditional) information in such matters are wrong'), and the Lawgiver's command bounds speculation on the chain of causes as it ascends towards God: 'we were forbidden by the Lawgiver (Muhammad) to study causes' (in context, the regress of causes and their hidden influence, not natural inquiry as such). The intellect keeps its own field ('a correct scale ... completely certain'). Named alternative 2: two domains, each with its own authority."
       how_known: "Rosenthal translation via a web copy; 0.5."
       alternatives:
         - {value: 2, note: "Intellect certain in its field; revelation in the divine.", cites: [{source: S2, locator: "Ch. VI §14"}]}
@@ -185,7 +186,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1377–1382", certainty: 0.5, cites: [{source: S3, locator: "§3"}, {source: S1, locator: "'Journey to Egypt'"}], how_known: "Muqaddimah draft (1377) to the History finished in Tunis before he left in 1382 (P30 #4); 0.5."}
+  major_work_period: {value: "1377–1382", certainty: 0.5, cites: [{source: S3, locator: "§3"}, {source: S1, locator: "'Journey to Egypt'"}], how_known: "Muqaddimah draft (1377) to the History finished in Tunis before he left in 1382 (P30 #4); 0.5. The Muqaddimah was revised until about 1404 (S3), so the period end could arguably run to 1404 if the revisions count as lasting work (note only, P30 addendum b)."}
   age_at_first_lasting_contribution: {value: 45, certainty: 0.5, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "§3"}], how_known: "1377 − 1332 = 45 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No axis scored at 3 or 4 (P27 anchor)."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "A 0, B 2, D 1.", certainty: 0.5, cites: [{source: S2, locator: "Ch. VI §14"}], how_known: "Coder's reading."}

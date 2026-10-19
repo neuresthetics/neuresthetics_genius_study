@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 98). Basics from Britannica (T. Malcolm Knox, signed; body through 'Early life', read live) and SEP 'Hegel' (Paul Redding, revision of 19 September 2025). Worldview from the Encyclopaedia (3rd ed. 1830) in Wallace's translations (Philosophy of Mind §§564–565, §573 Remark; Logic §16 Remark), Project Gutenberg web copies; the Lectures on the History of Philosophy (Michelet's compiled edition, Haldane trans.) as context. Not a scientist (P30). primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 (0.5, alt 2); B BELOW_THRESHOLD (alt 3); D 3 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1: 43 hold, 4 weaken, 1 fail). D quote now 'a cognition of the necessity' (H8); SEP locators §3 and §3.1.2 for the Science of Logic (H9). Notes: A gains a BELOW_THRESHOLD alternative for SEP's §2.3 non-metaphysical reading; the Michelet miracle passage cites the P42 addendum (reported speech); 'Göschel' flagged as the coder's identification of Wallace's 'C. F. G—l'. Jason's ruling (2026-10-18, RQ Q1): B BELOW_THRESHOLD → 2 at 0.5, alternative 3, from Encyclopaedia (1830) §248 with its Remark and §250, read in zeno.org's web copy of Werke vol. 9 (new S7, cap 0.7). Now plotted, faded, at A3/B2; mid_basin stays BELOW_THRESHOLD."}
 
 identity:
   id: hegel-georg-wilhelm-friedrich
@@ -47,7 +48,7 @@ contribution:
   fields: {value: ["metaphysics", "logic", "philosophy of history", "political philosophy", "philosophy of religion"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§§2–3"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Phenomenology of Spirit", year: 1807, kind: work, lasting: "his 'first major work' (S2)", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S4, locator: "Bibliographical Notice"}], how_known: "SEP and Wallace agree on 1807."}
-    - {value: "Science of Logic (three books)", year: "1812–1816", kind: work, lasting: "one of 'Hegel's two major stand-alone books' (S2)", certainty: 0.7, cites: [{source: S2, locator: "§2; §5 ('appeared in 1812, 1813, and 1816')"}], how_known: "SEP."}
+    - {value: "Science of Logic (three books)", year: "1812–1816", kind: work, lasting: "one of 'Hegel's two major stand-alone books' (S2)", certainty: 0.7, cites: [{source: S2, locator: "§3 ('two major stand-alone books'); §3.1.2 ('appeared in 1812, 1813, and 1816')"}], how_known: "SEP."}
     - {value: "Encyclopaedia of the Philosophical Sciences", year: 1817, kind: work, lasting: "'the only complete, matured, and authentic statement of Hegel's philosophical system' (S4)", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S4, locator: "Bibliographical Notice"}], how_known: "SEP; later editions 1827 and 1830 (S3, Preface)."}
     - {value: "Elements of the Philosophy of Right", year: 1821, kind: work, lasting: "'his major work in political philosophy' (S2)", certainty: 0.5, cites: [{source: S2, locator: "§1"}, {source: S4, locator: "Bibliographical Notice"}], how_known: "SEP gives 1821; Wallace's notice gives 1820 (the book appeared before its title-page year). A P25 conflict, so 0.5 with 1820 the named alternative."}
     - {value: "Dialectical system of absolute idealism", kind: "body of work", lasting: "'the last of the great philosophical system builders of modern times' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica; undated."}
@@ -99,35 +100,37 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S3, locator: "§§564–565, §573 Remark"}, {source: S2, locator: "§2.2"}]
-      rationale: "Leans to the immanent pole: 'God is God only so far as he knows himself: his self-knowledge is, further, his self-consciousness in man' (§564, adopting Göschel's propositions); God is 'the essential and actual spirit of nature and spirit' (§565). The stated limit: God is not identical with the world; he mocks the charge that his philosophy holds 'each and every secular thing is God' (§573 Remark). Named alternative 2: the revealed, triune God of §§564–571 can be read as a personal God beyond the world (mixed). SEP: on the traditional reading 'the mind of God becomes actual only via its particularization in the minds of \"his\" finite material creatures'; post-Kantian readers deny the metaphysics."
+      rationale: "Leans to the immanent pole: 'God is God only so far as he knows himself: his self-knowledge is, further, his self-consciousness in man' (§564, adopting the propositions of the Aphorisms by 'C. F. G—l', whom the coder identifies as Göschel; Wallace prints only the abbreviation); God is 'the essential and actual spirit of nature and spirit' (§565). The stated limit: God is not identical with the world; he mocks the charge that his philosophy holds 'each and every secular thing is God' (§573 Remark). Named alternative 2: the revealed, triune God of §§564–571 can be read as a personal God beyond the world (mixed). SEP: on the traditional reading 'the mind of God becomes actual only via its particularization in the minds of \"his\" finite material creatures'; post-Kantian readers deny the metaphysics."
       how_known: "Encyclopaedia (1830) in Wallace's translation, web copy; contested reading, 0.5."
       alternatives:
         - {value: 2, note: "Revealed triune God as a person beyond the world (§§564–571).", cites: [{source: S3, locator: "§§564–565"}]}
+        - {value: BELOW_THRESHOLD, note: "SEP §2.3, the post-Kantian non-metaphysical reading: Hegel's 'God' is not a claim about a being at all, so the text bears on A only indirectly (P19).", cites: [{source: S2, locator: "§2.3"}]}
     B_cause:
-      value: BELOW_THRESHOLD
+      value: 2
       basis: written_profession
-      cites: [{source: S4, locator: "§16 Remark"}, {source: S5, locator: "Introduction, B.2"}]
-      how_known: "Not a scientist (P30); his account of nature (P16) bears on the axis only indirectly. The Encyclopaedia says 'the Idea of Nature, when parcelled out in detail, is dissipated into contingencies' whose kinds 'are not determined by reason, but by sport and adventitious incidents' (Logic §16 Remark): contingency in the detail of nature, which is neither a lawful order with no exceptions nor intervention. The compiled lectures say 'Christ reproved the Pharisees for wishing to see miracles' and 'if the miracle be the suspension of natural laws, Spirit itself is the real miracle in the operations of nature', which reinterprets miracle without denying it, and is a compiled lecture text. No stated lawful order and no rejection of miracles in his own published text read, so neither P41 nor the P16 addendum applies (P19)."
-      note: "Named alternative 3 at 0.5 (P41 extension) if the lecture's reinterpretation of miracle is read as a rejection in his own words."
+      certainty: 0.5
+      cites: [{source: S7, locator: "§248 and Remark; §250"}, {source: S4, locator: "§16 Remark"}]
+      rationale: "Account of nature in his own published text (P16): nature 'zeigt daher in ihrem Dasein keine Freiheit, sondern Notwendigkeit und Zufälligkeit' (§248: shows in its existence no freedom, but necessity and contingency); against those who praise nature for staying 'bei aller Zufälligkeit ihrer Existenzen ewigen Gesetzen getreu' he sets spirit's Willkür above 'das gesetzmäßige Wandeln der Gestirne' (§248 Remark); and the 'gleichgültigen Zufälligkeit und unbestimmbaren Regellosigkeit' of nature's forms is granted its place: 'Die Zufälligkeit und Bestimmbarkeit von außen hat in der Sphäre der Natur ihr Recht', 'die Ohnmacht der Natur' (§250). Conceptual necessity governs nature's stages, but contingency and indeterminable irregularity hold of the concrete detail: lawfulness covering only part of nature (P27 B 2 anchor). The Logic §16 Remark agrees ('the Idea of Nature, when parcelled out in detail, is dissipated into contingencies'). Named alternative 3: if that contingency is read as nature's shortfall from the concept rather than a gap in its order, with spirit's Willkür as the one free-will exception (P30 #14), B is 3. Jason's ruling (2026-10-18, RQ Q1 of the batch Q audit, on the auditor's recommendation)."
+      how_known: "Encyclopaedia, 3rd ed. (1830), main text and Remarks only (no Zusätze), read in zeno.org's web copy of Werke vol. 9 (cap 0.7, P26); 1830 is after the span (1807–1821), and the reading of §250 is contested, so 0.5 (P20). The miracle passage in the Lectures on the History of Philosophy is compiled by Michelet from manuscripts and students' notes, so it is reported speech under the P42 addendum (disciples' records) and stays context only."
       alternatives:
-        - {value: 3, note: "Miracle reinterpreted as spirit (compiled lectures), P41 extension.", cites: [{source: S5, locator: "Introduction, B.2"}]}
+        - {value: 3, note: "Contingency read as nature's impotence to realise the concept, not an exception; Willkür as the one free-will exception (P30 #14).", cites: [{source: S7, locator: "§248 Remark; §250"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing scored at this reading."}
     D_authority:
       value: 3
       basis: written_profession
       certainty: 0.5
       cites: [{source: S3, locator: "§573 and Remark"}]
-      rationale: "Speculative reason outranks revelation's form but keeps its content: philosophy is 'the cognition of the necessity in the content of the absolute picture-idea' and of 'the objective and external revelation presupposed by representation', its 'liberation from the one-sidedness of the forms'; 'the content of religion and philosophy is the same'. Revelation keeps one stated point, its content, which philosophy recognises and 'does not disparage'. Named alternative 2: 'religion is the truth for all men', read as a domain of its own. Coder's reading."
+      rationale: "Speculative reason outranks revelation's form but keeps its content: philosophy is 'a cognition of the necessity in the content of the absolute picture-idea' and of 'the objective and external revelation presupposed by representation', its 'liberation from the one-sidedness of the forms'; 'the content of religion and philosophy is the same'. Revelation keeps one stated point, its content, which philosophy recognises and 'does not disparage'. Named alternative 2: 'religion is the truth for all men', read as a domain of its own. Coder's reading."
       how_known: "Encyclopaedia (1830), Wallace's translation via a web copy; 0.5."
       alternatives:
         - {value: 2, note: "Religion as 'the truth for all men' in its own form.", cites: [{source: S3, locator: "§573 Remark"}]}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 3 is at 0.5, under the 0.7 the A ≥ 3 branch needs (P10), and B is BELOW_THRESHOLD (P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 3 is at 0.5, under the 0.7 the A ≥ 3 branch needs (P10); B 2 at 0.5 does not settle it either (P19)."}
   statements:
     - text: "God is God only so far as he knows himself: his self-knowledge is, further, his self-consciousness in man, and man’s knowledge of God, which proceeds to man’s self-knowledge in God."
       cites: [{source: S3, locator: "§564 Remark (Gutenberg)"}]
       date: "1830"
-      context: "Encyclopaedia, 3rd ed. (1830), Philosophy of Mind §564 Remark, adopting propositions from Göschel's Aphorismen (1829); Wallace's translation."
+      context: "Encyclopaedia, 3rd ed. (1830), Philosophy of Mind §564 Remark, adopting propositions from the Aphorisms on Knowing and Not-knowing by 'C. F. G—l' (Berlin, 1829), whom the coder identifies as Karl Friedrich Göschel (Wallace gives only the abbreviation); Wallace's translation."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
@@ -151,6 +154,33 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
       note: "Web copy; German check pending."
+    - text: "Die Natur zeigt daher in ihrem Dasein keine Freiheit, sondern Notwendigkeit und Zufälligkeit."
+      cites: [{source: S7, locator: "§248"}]
+      date: "1830"
+      context: "Encyclopaedia (1830), Philosophy of Nature, Introduction, 'Begriff der Natur', §248 (nature shows in its existence no freedom, but necessity and contingency). Coder's translation."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-18
+      note: "zeno.org web copy of Werke vol. 9; checked word for word against the page."
+    - text: "Die Natur bleibe, gibt man ferner als ihren Vorzug an, bei aller Zufälligkeit ihrer Existenzen ewigen Gesetzen getreu; aber doch wohl auch das Reich des Selbstbewußtseins! [...] Wenn aber die geistige Zufälligkeit, die Willkür, bis zum Bösen fortgeht, so ist dies selbst noch ein unendlich Höheres als das gesetzmäßige Wandeln der Gestirne oder als die Unschuld der Pflanze; denn was sich so verirrt, ist noch Geist."
+      cites: [{source: S7, locator: "§248 Remark"}]
+      date: "1830"
+      context: "§248 Remark: against praising nature for staying true to eternal laws amid all the contingency of its existences; spirit's free choice, even in evil, ranks above the lawful motion of the stars. The cut drops one sentence on Providence guiding human affairs. Coder's translation."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-18
+      note: "zeno.org web copy; checked word for word."
+    - text: "Der Widerspruch der Idee, indem sie als Natur sich selbst äußerlich ist, ist näher der Widerspruch einerseits der durch den Begriff gezeugten Notwendigkeit ihrer Gebilde und deren in der organischen Totalität vernünftigen Bestimmung, – andererseits deren gleichgültigen Zufälligkeit und unbestimmbaren Regellosigkeit. Die Zufälligkeit und Bestimmbarkeit von außen hat in der Sphäre der Natur ihr Recht."
+      cites: [{source: S7, locator: "§250"}]
+      date: "1830"
+      context: "§250: the contradiction between the necessity of nature's forms, generated by the concept, and their indifferent contingency and indeterminable irregularity; contingency and determinability from outside have their right in the sphere of nature. Later in §250: 'Es ist die Ohnmacht der Natur, die Begriffsbestimmungen nur abstrakt zu erhalten und die Ausführung des Besonderen äußerer Bestimmbarkeit auszusetzen.' Coder's translation."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-18
+      note: "zeno.org web copy; checked word for word."
     - text: "Christ reproved the Pharisees for wishing to see miracles; the Spirit alone comprehends Spirit, the miracle is only a presentiment of that Spirit; and if the miracle be the suspension of natural laws, Spirit itself is the real miracle in the operations of nature."
       cites: [{source: S5, locator: "Introduction, B.2 (Gutenberg vol. 1)"}]
       context: "Lectures on the History of Philosophy, Introduction, as compiled by Michelet (2nd ed. 1840) from Hegel's manuscripts and students' notes from courses of 1805–1830; Haldane's translation. No single year, so the date is left out."
@@ -158,10 +188,10 @@ worldview:
       kind: "other"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
-      note: "Compiled lecture text; whether this sentence is Hegel's own wording is not known (P42 caution); context only."
+      note: "Compiled lecture text (Michelet, from manuscripts and students' notes): reported speech under the P42 addendum on disciples' records; context only."
   changes_over_life:
     - {value: "Early Kantian reading of Christianity as rational morality (Bern, 1790s), later freed from Kant's influence (Frankfurt)", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Britannica; before the span, does not split it (P31)."}
-  coder_notes: "Coder's call. B left BELOW_THRESHOLD rather than 3: the only miracle passage is in a compiled lecture text, and his own published remark is about contingency, not exceptions. The Encyclopaedia cites quote the 1830 text; earlier editions (1817) not checked (P30 #7), so first_evidence is capped at 0.5. Britannica's Top Questions and Quick Facts not cited (P26)."
+  coder_notes: "B 2 at 0.5, alternative 3, is Jason's ruling (2026-10-18, RQ Q1 of the batch Q audit) from Encyclopaedia (1830) §248 with its Remark and §250; it replaces the draft's BELOW_THRESHOLD. The miracle passage stays context (compiled lecture text, P42 addendum). The Encyclopaedia cites quote the 1830 text; earlier editions (1817) not checked (P30 #7), so first_evidence is capped at 0.5. Britannica's Top Questions and Quick Facts not cited (P26)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -253,6 +283,15 @@ sources:
     accessed: 2026-10-18
     reliability_note: "Posthumous edition compiled from Hegel's manuscripts and students' notes (translator's preface); wording not certainly Hegel's. Context only."
     used_for: [worldview]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "G. W. F. Hegel"
+    citation: "Hegel, G. W. F. Enzyklopädie der philosophischen Wissenschaften im Grundrisse (1830), Zweiter Teil: Die Naturphilosophie, Einleitung, 'Begriff der Natur' (§§247–251). Werke vol. 9, web copy at zeno.org. http://www.zeno.org/Philosophie/M/Hegel,+Georg+Wilhelm+Friedrich/Enzyklop%C3%A4die+der+philosophischen+Wissenschaften+im+Grundrisse/Zweiter+Teil%3A+Die+Naturphilosophie/Einleitung/Begriff+der+Natur"
+    url: "http://www.zeno.org/Philosophie/M/Hegel,+Georg+Wilhelm+Friedrich/Enzyklop%C3%A4die+der+philosophischen+Wissenschaften+im+Grundrisse/Zweiter+Teil%3A+Die+Naturphilosophie/Einleitung/Begriff+der+Natur"
+    accessed: 2026-10-18
+    reliability_note: "Web copy of the Werke text (main paragraphs and Remarks; no Zusätze quoted); cap 0.7; print check pending."
+    used_for: [worldview]
   - id: S6
     type: secondary
     kind: database
@@ -270,7 +309,7 @@ sources:
 
 ## Summary
 
-Georg Wilhelm Friedrich Hegel (1770–1831), German absolute idealist [S1; S2]. Draft: primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 at 0.5 (alt 2); B BELOW_THRESHOLD (alt 3); D 3 at 0.5 (alt 2); mid_basin BELOW_THRESHOLD. Not plotted.
+Georg Wilhelm Friedrich Hegel (1770–1831), German absolute idealist [S1; S2]. Draft: primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 at 0.5 (alt 2); B 2 at 0.5 (alt 3; Jason's ruling); D 3 at 0.5 (alt 2); mid_basin BELOW_THRESHOLD. Plotted, faded, at A3/B2.
 
 ## Life and work
 

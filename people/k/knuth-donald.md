@@ -11,6 +11,7 @@ record:
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 93). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from his lecture 'All Questions Answered' (Munich, 5 October 2001), printed in Notices of the AMS 49(3), March 2002, pp. 318–324, read in the AMS PDF; book descriptions on his Stanford pages are leads. Not a scientist (P30). primary_system CHRIST (0.5); A 0 (0.5, alt 1; after the working years, P20); B UNKNOWN (no statement on nature, P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). S2 page range corrected to pp. 318–324 (K5) and the text credited as edited by Allyn Jackson; Stanford years 1968– at 0.7 from S2's editor's introduction (K7). TeX dated 1978 (the Gibbs Lecture 'Mathematical Typography', S2 introduction) and the later TAOCP volumes dated from his TAOCP page (S5: Volume 4A 2011, Volume 4B 2023 imprint, Volume 4 Fascicle 7 2025); the series stays one contribution dated by its start (P12), so the span is 1968–1978 and the 2001 lecture stays after it. Ruling P1 (v8's pick on the auditor's advice): post-span evidence is capped at 0.5 (P20), not excluded. The TeX 'revolutionized' quote and the Stanford fact attributed to the editor's introduction; MIT lectures dated fall 1999 (book 2001). Values unchanged; not plotted."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fix K1 (FAIL; gs_0b3023d_Q run 1). P12 sets only the start year; P30 addendum d sets the end from the range's end. TAOCP item 1968–2023 (end at the last full volume, Volume 4B, Jason's call; the 2025 fascicle noted); major_work_period = working_years = 1968–2023. The 2001 lecture now falls during the span, so the P20 cap (ruling P1) lifts: A 0 at 0.7 (P8 interview ceiling); lio_views 'during major work'. primary_system CHRIST stays 0.5 (Christian is the coder's inference; coder's call). Not plotted (B UNKNOWN)."}
 
 identity:
   id: knuth-donald
@@ -48,7 +49,7 @@ basics:
 contribution:
   fields: {value: ["analysis of algorithms", "computer programming", "digital typesetting"], certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Coder's summary of Britannica's opening."}
   lasting_original_contributions:
-    - {value: "The Art of Computer Programming (multivolume)", year: 1968, kind: work, lasting: "'authoritative multivolume series' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; Addison-Wesley paragraph"}, {source: S5, locator: "volume list"}], how_known: "Britannica gives '1968– '; still in progress, so the dated start sets the year (P12). Later volumes, from his TAOCP page (S5): Volume 4A (2011), Volume 4B (Addison-Wesley, 2023 imprint; the page also speaks of 4B 'in 2022'), Volume 4 Fascicle 7 (2025, the start of 4C); Volume 5 in preparation. Coder's call: the series is one listed contribution dated by its start, so the volumes do not extend the period (alternative: counted separately, the period would run to 2023 and the 2001 lecture would fall inside it; A would then be 0.7 under P8; nothing replots, because B is UNKNOWN)."}
+    - {value: "The Art of Computer Programming (multivolume)", year: "1968–2023", kind: work, lasting: "'authoritative multivolume series' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; Addison-Wesley paragraph"}, {source: S5, locator: "volume list"}], how_known: "Britannica gives '1968– '; still in progress, so the dated start sets the year (P12). Later volumes, from his TAOCP page (S5): Volume 4A (2011), Volume 4B (Addison-Wesley, 2023 imprint; the page also speaks of 4B 'in 2022'), Volume 4 Fascicle 7 (2025, the start of 4C); Volume 5 in preparation. The start (1968) sets the first lasting year (P12); the end sets the period end (P30 addendum d: 'For the period end, a range gives its end year'). End 2023, the last full volume (Jason's call, Q audit K1); the 2025 fascicle (Volume 4 Fascicle 7, the start of 4C) is noted but not counted as a full volume."}
     - {value: "TeX (text-formatting language)", year: 1978, kind: invention, lasting: "named in Britannica's opening as one of the two things he is known for (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "p. 318 (editor's introduction)"}], how_known: "Britannica names TeX but does not date it. Dated 1978 by the AMS Gibbs Lecture 'Mathematical Typography', his earliest public presentation of it in the sources read (S2 editor's introduction: 'In 1978 he presented the AMS Gibbs Lecture entitled “Mathematical Typography”'; P30 #1); 0.5 because the year is of the lecture, not of TeX's first release. The Notices editor's introduction (Allyn Jackson, not Knuth) calls TeX and METAFONT languages that 'have revolutionized the preparation and distribution of technical documents' (S2)."}
   evidence_of_impact:
     - {value: "A.M. Turing Award (1974), National Medal of Science (1979), Kyoto Prize (1996)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "awards paragraph"}], how_known: "Britannica."}
@@ -73,7 +74,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1968–1978", certainty: 0.5, cites: [{source: S1, locator: "Addison-Wesley paragraph"}, {source: S2, locator: "p. 318 (editor's introduction)"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1968–2023", certainty: 0.5, cites: [{source: S1, locator: "Addison-Wesley paragraph"}, {source: S2, locator: "p. 318 (editor's introduction)"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, cites: [{source: S3, locator: "book description"}], how_known: "Not stated in what was read; his MIT lectures on faith and science (Things a Computer Scientist Rarely Talks About, 2001) are a lead (S3, publisher's description only)."}
   primary_system:
@@ -82,7 +83,7 @@ worldview:
     certainty: 0.5
     cites: [{source: S2, locator: "p. 323 (God and secrecy answer); p. 322 (3:16 answer)"}]
     rationale: "'I’m a religious person, and I think that God knows all my secrets' (p. 323), with a book of Bible study, 3:16 Bible Texts Illuminated, described in the same lecture. 'Christian' is the coder's inference: no denomination is named in what was read."
-    how_known: "(interview) Published transcript of a public lecture with questions (P8); dated 2001, after the working years (1968–1978), so 0.5 (P20, Hawking precedent; ruling P1, v8's pick on the auditor's advice: capped, not excluded)."
+    how_known: "(interview) Published transcript of a public lecture with questions (P8); dated 2001, during the working years (1968–2023), so the P20 cap no longer applies. Kept at 0.5 because 'Christian' is the coder's inference from Bible study, with no denomination or self-label read (coder's call; conservative option, P30 #16)."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Bible study and a God who 'knows all my secrets'; denomination not read."}
@@ -90,10 +91,10 @@ worldview:
     A_locus:
       value: 0
       basis: recorded_interview
-      certainty: 0.5
+      certainty: 0.7
       cites: [{source: S2, locator: "p. 323"}]
       rationale: "A God who 'knows all my secrets', so that 'whatever I’m thinking is public knowledge in some way': a personal, knowing God distinct from the self. Named alternative 1: nothing is said about intervention in the world."
-      how_known: "(interview) One published lecture answer, 2001, after the working years (1968–1978), so 0.5 (P20; ruling P1, v8's pick on the auditor's advice: capped at 0.5, not excluded)."
+      how_known: "(interview) One published lecture answer, 2001, during the working years (1968–2023), so the P20 cap (ruling P1) lifts and the interview ceiling applies: 0.7 (P8)."
       alternatives:
         - {value: 1, note: "Personal God with no stated intervention.", cites: [{source: S2, locator: "p. 323"}]}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30: algorithms and typesetting are not theories about physical or natural systems), so B needs a statement of his own about nature (P16); none read. His remark that 'human beings are based on a discrete code' (S2, p. 322) is about research problems, not law and exception."}
@@ -121,7 +122,7 @@ worldview:
       verified_on: 2026-10-18
       note: "Not scored; recorded as context for D."
   changes_over_life: []
-  coder_notes: "Coder's call. Dated lasting contributions: TAOCP (1968, still in progress; later volumes 2011–2025 counted within the series, P12) and TeX (1978, Gibbs Lecture), so the span is 1968–1978 and the 2001 lecture is after it (P20; ruling P1: capped, not excluded). His own description of the 3:16 project as 'a turning point in his own life' (S3, publisher's blurb on his site, third person) hints at a change of view around 1990; not read in his own words. Leads: Things a Computer Scientist Rarely Talks About (six public lectures at MIT, fall 1999; book 2001, S3); 3:16 Bible Texts Illuminated (1990)."
+  coder_notes: "Coder's call. Dated lasting contributions: TAOCP (1968–2023: Volume 1 in 1968, Volume 4B in 2023; Fascicle 7 in 2025 noted) and TeX (1978, Gibbs Lecture), so the span is 1968–2023 (P30 addendum d; end at the last full volume, Jason's call) and the 2001 lecture falls during it, so the P20 cap of ruling P1 no longer applies and A is 0.7 (P8). His own description of the 3:16 project as 'a turning point in his own life' (S3, publisher's blurb on his site, third person) hints at a change of view around 1990; not read in his own words. Leads: Things a Computer Scientist Rarely Talks About (six public lectures at MIT, fall 1999; book 2001, S3); 3:16 Bible Texts Illuminated (1990)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -132,10 +133,10 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1968–1978", certainty: 0.5, cites: [{source: S1, locator: "Addison-Wesley paragraph"}, {source: S2, locator: "p. 318 (editor's introduction)"}], how_known: "TAOCP vol. 1 (1968) to TeX (1978, Gibbs Lecture) (P30, P30 addendum b). The later TAOCP volumes (S5) are part of the series item dated by its start (P12); coder's call, alternative 1968–2023."}
+  major_work_period: {value: "1968–2023", certainty: 0.5, cites: [{source: S1, locator: "Addison-Wesley paragraph"}, {source: S5, locator: "volume list"}], how_known: "TAOCP Volume 1 (1968) to Volume 4B (2023 imprint), the last full volume (P30 addenda b and d; end year Jason's call on the Q audit, K1). Volume 4 Fascicle 7 (2025) noted as a possible later end. TeX (1978) falls inside."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening; 1968"}], how_known: "1968 − 1938 = 30 (P30)."}
   first_evidence_of_lio_type_views: {value: "2001: 'God knows all my secrets'", year: 2001, certainty: 0.5, cites: [{source: S2, locator: "p. 323"}], how_known: "Earlier writings (3:16, 1990) not read (P30 #7)."}
-  lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S2, locator: "p. 323"}], how_known: "2001, after 1968; earlier writings not read."}
+  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S2, locator: "p. 323"}], how_known: "2001, during 1968–2023; earlier writings not read."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "Nothing read from 1968."}
 
 lane_b:
@@ -157,7 +158,7 @@ review:
   controversies: []
   data_quality_flags:
     - "Britannica article is unsigned (Britannica Editors) and short; read live (Wayback rate-limited)."
-    - "Worldview rests on one lecture answer, after the working years (capped at 0.5, ruling P1)."
+    - "Worldview rests on one lecture answer (2001, during the working years)."
   open_questions:
     - "Read Things a Computer Scientist Rarely Talks About (2001) for statements on God and nature (A, B, D) and on when his view formed."
 
@@ -215,7 +216,7 @@ sources:
 
 ## Summary
 
-Donald Knuth (born 1938), American mathematician and computer scientist [S1]. Draft: primary_system CHRIST (0.5); A 0 at 0.5 (alt 1); B UNKNOWN; mid_basin UNKNOWN. Not plotted.
+Donald Knuth (born 1938), American mathematician and computer scientist [S1]. Draft: primary_system CHRIST (0.5); A 0 at 0.7 (alt 1); B UNKNOWN; mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -223,7 +224,7 @@ Case, Caltech (Ph.D. 1963; faculty 1963–68) [S1]; Stanford from 1968 [S2, p. 3
 
 ## Contribution and impact
 
-The Art of Computer Programming (1968– ; Volume 4A 2011, 4B 2023) [S1; S5] and TeX (Gibbs Lecture 1978) [S1; S2, p. 318].
+The Art of Computer Programming (1968–2023: Volume 4A 2011, 4B 2023; Fascicle 7 2025) [S1; S5] and TeX (Gibbs Lecture 1978) [S1; S2, p. 318].
 
 ## Childhood and education
 

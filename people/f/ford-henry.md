@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-18
   last_updated: 2026-10-18
   change_log:
-    - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 100). Basics from Britannica (Carol W. Gelderman, signed; body through the 1914 wage, read live). Worldview from two interviews: William L. Stidger's syndicated interview (Universal Service, printed 4 February 1923; OCR page image text on historyworm.com) and the San Francisco Examiner interview of 26 August 1928 as quoted by The Henry Ford (museum blog). Inventor, not a scientist (P33). primary_system BELOW_THRESHOLD (candidates CHRIST, reincarnation belief); A 1 (0.5, alt 0); B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 100). Basics from Britannica (Carol W. Gelderman, signed; body through the 1914 wage, read live). Worldview from two interviews: William L. Stidger's syndicated interview (Universal Service, printed 4 February 1923; OCR page image text on historyworm.com) and the San Francisco Examiner interview of 26 August 1928 as quoted by The Henry Ford (museum blog). Inventor, not a scientist (P33). primary_system BELOW_THRESHOLD (candidates CHRIST, THEOS); A 1 (0.5, alt 0); B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit notes (gs_0b3023d_Q run 1). Masthead reasoning added: most likely Hearst's Washington Herald (Universal Service was Hearst's wire; 'Washington Radio Herald' items on the page; the Times-Herald dates from 1939); the running head's '1928' is a slip (4 February 1923 was a Sunday). Creation entry's 'reincarnation belief' aligned to the candidate code THEOS. Values unchanged."}
 
 identity:
   id: ford-henry
@@ -106,7 +107,7 @@ worldview:
     - text: "I believe in God and in Jesus Christ. I was brought up in the church."
       cites: [{source: S2, locator: "column 1"}]
       date: "1923-02-04"
-      context: "William L. Stidger (pastor, St. Mark's Methodist Church, Detroit), 'Ford affirms faith in God', written for Universal Service, datelined Detroit 3 February 1923; page dated 4 February 1923 (historyworm labels it the Washington Post; the OCR running head on the same page reads 'WASHINGTON TIMES-HERALD … SUNDAY, FEBRUARY 4, 1928', the year an OCR or print slip)."
+      context: "William L. Stidger (pastor, St. Mark's Methodist Church, Detroit), 'Ford affirms faith in God', written for Universal Service, datelined Detroit 3 February 1923; page dated 4 February 1923 (historyworm labels it the Washington Post; the OCR running head on the same page reads 'WASHINGTON TIMES-HERALD … SUNDAY, FEBRUARY 4, 1928'). The '1928' is a slip: 4 February 1923 was a Sunday and 4 February 1928 a Saturday. The masthead is most likely Hearst's Washington Herald: the Times-Herald did not exist until the 1939 merger, the page carries 'Washington Radio Herald' items, and Universal Service was Hearst's wire service. Facsimile check open."
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "secondary quotation"
@@ -166,7 +167,7 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 100"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "The 1923 interview is read only as OCR text; newspaper title and running-head year are uncertain."
+    - "The 1923 interview is read only as OCR text; the newspaper is most likely Hearst's Washington Herald (not the Post, as historyworm labels it), and the running head's '1928' is a slip for 1923; facsimile check open."
     - "The 1928 interview is quoted by a museum blog, not read in facsimile."
     - "Only the first part of Britannica's article (through 1914) was returned."
   open_questions:
