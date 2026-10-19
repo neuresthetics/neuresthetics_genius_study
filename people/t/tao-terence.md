@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (TA7) Solving mathematical problems dated 1992, its first edition (written 1990; MacTutor). Ruling Y3 (v8's call on the auditor's advice): not a scientist; B stays UNKNOWN (recorded under P30). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 134; roster status provisional). Basics from Britannica (Jeremy John Gray, 18 Oct 2026) and MacTutor (O'Connor and Robertson, December 2023). The Green–Tao theorem dated by its arXiv submission (8 April 2004; Annals of Mathematics 2008). No statement on religion or nature found in a reliable source; web pages offering 'quotes' on his faith are unsourced and not used. Not a scientist (pure mathematics; RQ-Y3). Span 2004 at 0.5. primary_system and all axes UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -55,7 +56,7 @@ contribution:
     - {value: "Fields Medal (2006)", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Summary; honours"}], how_known: "Both sources."}
     - {value: "Fellow of the Royal Society (2007); Crafoord Prize (2012); Breakthrough Prize in Mathematics (2014)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S2, locator: "honours paragraph"}], how_known: "MacTutor."}
   major_works:
-    - {value: "Solving mathematical problems: A personal perspective", year: 1990, kind: book, certainty: 0.7, cites: [{source: S2, locator: "1989–1990 paragraph"}], how_known: "MacTutor: written at 15."}
+    - {value: "Solving mathematical problems: A personal perspective", year: 1992, kind: book, certainty: 0.7, cites: [{source: S2, locator: "1989–1990 paragraph ('The first edition was published in 1992')"}], how_known: "MacTutor: written in 1990, at 15; first edition 1992 (batch Y audit, TA7)."}
   honours:
     - {value: "Salem Prize", year: 2000, certainty: 1.0, cites: [{source: S1, locator: "last paragraph"}, {source: S2, locator: "honours paragraph"}], how_known: "Both sources."}
     - {value: "Fields Medal", year: 2006, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "honours paragraph"}], how_known: "Both sources."}
@@ -91,14 +92,14 @@ worldview:
   candidate_codes_considered: []
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Nothing found (P19)."}
-    B_cause: {value: UNKNOWN, how_known: "Coder's call: not a scientist (pure mathematics; RQ-Y3), and no statement on nature found (P16, P19). If his PDE work counts as a result about a physical system (P30), B would be 3 at 0.5 from working science (P24, P35)."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist (pure mathematics; ruling Y3: existence and well-posedness theorems are mathematical results about equations physics uses, the Hilbert case), and no statement on nature found (P16, P19). If his PDE work counts as a result about a physical system (P30), B would be 3 at 0.5 from working science (P24, P35)."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing found (P19)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing found (P19)."}
     E_scope: {value: UNKNOWN, how_known: "Nothing found (P7, P19)."}
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Coder's call on the span: only the Green–Tao theorem is both called lasting and datable from the sources read (arXiv 2004); the NLS and Kakeya work is undated, and later results (Collatz progress 2019, the 2022 tiling counterexample with Greenfeld, S2) are recent and not called lasting. Not a scientist (RQ-Y3). Leads for worldview: his blog and long-form interviews (MacTutor's references list several); none read."
+  coder_notes: "Coder's call on the span: only the Green–Tao theorem is both called lasting and datable from the sources read (arXiv 2004); the NLS and Kakeya work is undated, and later results (Collatz progress 2019, the 2022 tiling counterexample with Greenfeld, S2) are recent and not called lasting. Not a scientist (ruling Y3). Leads for worldview: his blog and long-form interviews (MacTutor's references list several); none read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -136,7 +137,7 @@ review:
     - "No worldview evidence in reliable sources; search results with 'quotes' are unsourced and not used."
     - "Contribution year taken from arXiv, not from S1 or S2."
   open_questions:
-    - "RQ-Y3: is Tao a scientist under P30 (NLS and wave equations used in physics)?"
+    - "Settled by ruling Y3: not a scientist."
     - "Read his blog and long-form interviews for statements on religion or nature."
 
 sources:
@@ -216,7 +217,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-Y3.
+- RQ-Y3, settled by ruling Y3 (not a scientist).
 
 ## Research log
 

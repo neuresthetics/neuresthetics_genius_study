@@ -587,6 +587,13 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - Pythagoras (XW3): era_bucket UNKNOWN under a strict P39 (his adult life crosses the -500 edge); the batch W PY4 entry is superseded (noted under P39).
   - Not applied, on instruction: RQ U1 (King) and TF7 (Kant B 3) still wait on Jason. Chart images not regenerated.
 
+- **2026-10-19, audit fixes for batch Y** (blind audit of 7b46f24, run 1, /workspace/genius_study_audit/gs_7b46f24_Y/run1/: 67 claims, 64 hold, 3 weaken, 0 fail; the X fixes and W tidy-ups confirmed; Ramanujan's age 30 confirmed under P30 rule 5). No plotted value changes: plotted stays 57, not scorable 86.
+  - Sun Tzu (ST7): era_bucket UNKNOWN under a strict P39 (life dates UNKNOWN; the Wu service, 512–506 B.C. in the Shiji passage Giles quotes, falls before -500); noted under P39.
+  - Jobs (JO12): definition_fit and the iPhone note cite Britannica's article body, not the question box (P26). Ruling Y1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD (recorded under P43, beside V3).
+  - Tao (TA7): Solving mathematical problems dated 1992, its first edition (written 1990). Ruling Y3: not a scientist (recorded under P30).
+  - Morrison: ruling Y2: primary_system stays BELOW_THRESHOLD, CHRIST the lead (recorded under P43).
+  - Not applied, on instruction: RQ U1 (King) and TF7 (Kant B 3) still wait on Jason.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

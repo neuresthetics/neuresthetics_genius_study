@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (JO12) definition_fit and the iPhone's lasting note now cite Britannica's article body ('a charismatic pioneer of the personal computer era'; 'near-messianic belief in the computer revolution'), not the 'Why is Steve Jobs significant?' question box (P26). Ruling Y1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 132; roster status provisional). Basics from Britannica (Steven Levy, updated 29 Sep 2026). Own voice read in the prepared text of the 2005 Stanford commencement address (in the span). His words on God reach us only as the Washington Post's quotations of Isaacson's 2011 biography (secondary quotation, after the span): 'I'm about fifty-fifty on believing in God'. Not a scientist (P33). Span 1977–2007 at 0.7 (Apple II to iPhone). primary_system BELOW_THRESHOLD (AGNOS lead, BUDDH lead; RQ-Y1); A BELOW_THRESHOLD; B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -50,13 +51,13 @@ contribution:
     - {value: "Apple II personal computer (with Steve Wozniak)", year: 1977, kind: invention, lasting: "'becoming synonymous with the boom in personal computers' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'"}], how_known: "Britannica; Wozniak designed it, Jobs pushed the design and case and found financing (S1)."}
     - {value: "Macintosh, with its graphical user interface", year: 1984, kind: invention, lasting: "'the model for all subsequent computer interfaces' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Insanely great'"}], how_known: "Britannica: Jobs headed the project and introduced it in January 1984."}
     - {value: "iPod and the iTunes ecosystem", year: 2001, kind: invention, lasting: "'quickly became the market leader' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica."}
-    - {value: "iPhone", year: 2007, kind: invention, lasting: "took Apple 'into the telecommunications business' (S1); 'revolutionary products' (S1 summary)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b); the iPad (2010) appears only in a photo caption, so it is not listed."}
+    - {value: "iPhone", year: 2007, kind: invention, lasting: "took Apple 'into the telecommunications business' (S1); the Apple II, Macintosh, iPod and iPhone are the dated products in 'Reinventing Apple' and earlier sections (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Reinventing Apple'"}], how_known: "Britannica. Latest dated lasting item, so it ends the span (P30 addendum b); the iPad (2010) appears only in a photo caption, so it is not listed."}
   evidence_of_impact:
     - {value: "Presidential Medal of Freedom (2022, posthumous)", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "'Health issues'"}], how_known: "Britannica; after his death."}
     - {value: "The Mac interface became 'the model for all subsequent computer interfaces'", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "'Insanely great'"}], how_known: "Britannica."}
   major_works: []
   honours: []
-  definition_fit: {value: "arguable", rationale: "Britannica calls him 'widely considered a visionary and a genius'; the roster flags 'attribution vs. team' (S4).", certainty: 0.5, cites: [{source: S1, locator: "summary"}, {source: S4, locator: "roster.csv, rank 132"}], how_known: "Coder's reading."}
+  definition_fit: {value: "arguable", rationale: "Britannica's body calls him 'a charismatic pioneer of the personal computer era' and notes his 'near-messianic belief in the computer revolution'; the roster flags 'attribution vs. team' (S4).", certainty: 0.5, cites: [{source: S1, locator: "introduction; 'Founding of Apple'"}, {source: S4, locator: "roster.csv, rank 132"}], how_known: "Coder's reading."}
 
 childhood:
   family_religion: {value: UNKNOWN, how_known: "Not stated in the sources read."}
@@ -82,7 +83,7 @@ worldview:
   working_years: {value: "1977–2007", certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'; 'Reinventing Apple'"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read on science and religion."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Leads only. AGNOS: 'I'm about fifty-fifty on believing in God' and 'different religions are different doors to the same house. Sometimes I think the house exists, and sometimes I don't. It's the great mystery' (S3), an explicit suspension in his own words, but known only as the Washington Post's quotations of Isaacson's 2011 biography (secondary quotation, §7) and said late in life, after the span (P1). BUDDH: years studying Zen (S3) and the India pilgrimage (S1); study and practice alone are not BUDDH (do_not_use_when), and he states no adherence. His 2005 address (in the span) names no system: 'You have to trust in something: your gut, destiny, life, karma, whatever' (S2). RQ-Y1."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Leads only. AGNOS: 'I'm about fifty-fifty on believing in God' and 'different religions are different doors to the same house. Sometimes I think the house exists, and sometimes I don't. It's the great mystery' (S3), an explicit suspension in his own words, but known only as the Washington Post's quotations of Isaacson's 2011 biography (secondary quotation, §7) and said late in life, after the span (P1). BUDDH: years studying Zen (S3) and the India pilgrimage (S1); study and practice alone are not BUDDH (do_not_use_when), and he states no adherence. His 2005 address (in the span) names no system: 'You have to trust in something: your gut, destiny, life, karma, whatever' (S2). Ruling Y1 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. The words are read only as the Washington Post's quotation of Isaacson (secondary quotation, P26; V3) and fall after the span (P1). Path to AGNOS at 0.5 (interview), BELOW_THRESHOLD alternative: read the passages in the biography itself, the interviewer's own first publication of his words (P8)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "Lead: 'fifty-fifty on believing in God' (S3, secondary quotation, after the span)."}
@@ -123,7 +124,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Secondary quotation of the biography (book not read); interview year not given (the Post: he talked to Isaacson 'as he was close to death'), so dated by publication. After the span (P1)."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: Apple II (1977) to iPhone (2007), the dated items Britannica's body calls lasting; the iPad appears only in a caption. Not a scientist (P33). His religious words are all reported through the Isaacson biography; reading the book (and the 1985 Playboy interview) is the open lead. RQ-Y1: if the biography's quoted interview words count as recorded_interview (0.7 ceiling, P1 cap 0.5), primary_system would be AGNOS at 0.5; A stays BELOW_THRESHOLD either way (explicit suspension, §6)."
+  coder_notes: "Coder's call on the span: Apple II (1977) to iPhone (2007), the dated items Britannica's body calls lasting; the iPad appears only in a caption. Not a scientist (P33). His religious words are all reported through the Isaacson biography; reading the book (and the 1985 Playboy interview) is the open lead. Ruling Y1 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. The words are read only as the Washington Post's quotation of Isaacson (secondary quotation, P26; V3) and fall after the span (P1). Path to AGNOS at 0.5 (interview), BELOW_THRESHOLD alternative: read the passages in the biography itself, the interviewer's own first publication of his words (P8). A stays BELOW_THRESHOLD either way (explicit suspension, §6)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -163,7 +164,7 @@ review:
   data_quality_flags:
     - "All words on God are secondary quotations of the 2011 biography."
   open_questions:
-    - "RQ-Y1: AGNOS at 0.5 from the biography's quoted interview words, or BELOW_THRESHOLD."
+    - "Ruling Y1: BELOW_THRESHOLD. Open lead: read the Isaacson biography itself (P8) and the 1985 Playboy interview."
     - "Read Isaacson's Steve Jobs (2011) and the 1985 Playboy interview."
 
 sources:
@@ -174,7 +175,7 @@ sources:
     citation: "Levy, Steven. \"Steve Jobs.\" Encyclopaedia Britannica (updated 29 Sep 2026). https://www.britannica.com/money/Steve-Jobs. Read live 2026-10-19."
     url: "https://www.britannica.com/money/Steve-Jobs"
     accessed: 2026-10-19
-    reliability_note: "Signed article, fact-checked by the Editors; most recently revised by the Editors. Body cited; question boxes not cited, except the summary line noted."
+    reliability_note: "Signed article, fact-checked by the Editors; most recently revised by the Editors. Body cited; question boxes not cited (P26)."
     used_for: [identity, basics, contribution, childhood, worldview, timing, institutions, collaborators, review]
   - id: S2
     type: primary
@@ -211,7 +212,7 @@ sources:
 
 ## Summary
 
-Steve Jobs (1955–2011), cofounder of Apple [S1]. Draft: primary_system BELOW_THRESHOLD (AGNOS and BUDDH leads, RQ-Y1); A and D BELOW_THRESHOLD; B, C, E UNKNOWN; mid_basin UNKNOWN. Not plotted.
+Steve Jobs (1955–2011), cofounder of Apple [S1]. Draft: primary_system BELOW_THRESHOLD (AGNOS and BUDDH leads, ruling Y1); A and D BELOW_THRESHOLD; B, C, E UNKNOWN; mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -243,7 +244,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-Y1.
+- RQ-Y1, settled by ruling Y1 (BELOW_THRESHOLD).
 
 ## Research log
 

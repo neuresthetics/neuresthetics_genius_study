@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Ruling Y2 (v8's call on the auditor's advice, batch Y audit gs_7b46f24_Y run 1): primary_system stays BELOW_THRESHOLD, CHRIST the lead (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 136; Thomas Aquinas, rank 135, already coded). Basics from Britannica (Britannica Editors, 12 Oct 2026). Own voice read in the NPR Fresh Air transcript (20 April 2015, after the span): raised in her mother's AME church, Catholic from 12, 'took it seriously for years and years and years', now 'Not a structured one'. Other statements only as Nick Ripatrazone's secondary quotations (Lit Hub, 2020). Not a scientist. Span 1970–1987 at 0.7 (The Bluest Eye to Beloved). primary_system BELOW_THRESHOLD (CHRIST lead; RQ-Y2); A, B, D BELOW_THRESHOLD with readings named; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -91,7 +92,7 @@ worldview:
   nominal_affiliations:
     - {value: "Roman Catholic from 1943 (baptism); by 2015 'Not a structured' religion, though 'easily seduced' back to church by Pope Francis", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "Bible question"}], how_known: "Britannica and her own words (2015). Membership, not a code."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read on science and religion."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Lead CHRIST (Catholic). Her own words read are a 2015 retrospective (recorded interview, after the span, P1 cap 0.5): content at first with Catholicism's 'aesthetics' until 'I grew up a little older and began to take it seriously and then - took it seriously for years and years and years' (S2). That reports seriousness, undated, but states no Christian belief (Christ, scripture, creed) of her own; CHRIST needs belief in her own writing, not membership (do_not_use_when; ruling U2 for Cervantes, by analogy). Her self-labels ('Now, you know, I'm a Catholic', 2004; 'disaffected Catholic', 2003) are known only through Ripatrazone's secondary quotations (S3). RQ-Y2."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Lead CHRIST (Catholic). Her own words read are a 2015 retrospective (recorded interview, after the span, P1 cap 0.5): content at first with Catholicism's 'aesthetics' until 'I grew up a little older and began to take it seriously and then - took it seriously for years and years and years' (S2). That reports seriousness, undated, but states no Christian belief (Christ, scripture, creed) of her own; CHRIST needs belief in her own writing, not membership (do_not_use_when; ruling U2 for Cervantes, by analogy). Her self-labels ('Now, you know, I'm a Catholic', 2004; 'disaffected Catholic', 2003) are known only through Ripatrazone's secondary quotations (S3). Ruling Y2 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. Path to CHRIST at 0.5: a first-person self-label read in the primary (the 2004 Nation Institute recording or transcript, or the likely 2007 source of the 'intellectual experience' and Vatican II lines)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Lead: Catholic from 12, 'took it seriously for years' (S2); self-labels in secondary quotation (S3)."}
@@ -132,7 +133,7 @@ worldview:
       note: "Ripatrazone's quotation; the recording not heard. After the span (P1)."
   changes_over_life:
     - {value: "From content with Catholicism's aesthetics, to taking it 'seriously for years and years and years', to 'Not a structured' religion by 2015", certainty: 0.5, cites: [{source: S2, locator: "Bible question"}], how_known: "Her own retrospective; the years of each stage are not given."}
-  coder_notes: "Coder's call on the span: The Bluest Eye (1970) to Beloved (1987), the items Britannica's body calls lasting; Jazz and Playing in the Dark (1992) are listed as major works, and taking 1992 as the end would not change any score. Characters' words and events in the novels are not her view (P42). RQ-Y2: whether her 2015 own-words retrospective of serious Catholic practice, with the 2004 self-label, gives CHRIST at 0.5."
+  coder_notes: "Coder's call on the span: The Bluest Eye (1970) to Beloved (1987), the items Britannica's body calls lasting; Jazz and Playing in the Dark (1992) are listed as major works, and taking 1992 as the end would not change any score. Characters' words and events in the novels are not her view (P42). Ruling Y2 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. Path to CHRIST at 0.5: a first-person self-label read in the primary (the 2004 Nation Institute recording or transcript, or the likely 2007 source of the 'intellectual experience' and Vatican II lines)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -170,7 +171,7 @@ review:
   data_quality_flags:
     - "Her only own words read on religion are from 2015, after the span; other statements are secondary quotations."
   open_questions:
-    - "RQ-Y2: CHRIST at 0.5 from the 2015 retrospective and the 2004 self-label, or BELOW_THRESHOLD."
+    - "Ruling Y2: BELOW_THRESHOLD. Open lead: the 2004 Nation Institute recording and the 2007 interview in the primary."
     - "Read the Nobel lecture (1993), the Paris Review interview (1993) and The Source of Self-Regard (2019)."
 
 sources:
@@ -218,7 +219,7 @@ sources:
 
 ## Summary
 
-Toni Morrison (1931–2019), American novelist, Nobel Prize 1993 [S1]. Draft: primary_system BELOW_THRESHOLD (CHRIST lead, RQ-Y2); A, B, D BELOW_THRESHOLD; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted.
+Toni Morrison (1931–2019), American novelist, Nobel Prize 1993 [S1]. Draft: primary_system BELOW_THRESHOLD (CHRIST lead, ruling Y2); A, B, D BELOW_THRESHOLD; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 
@@ -250,7 +251,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-Y2.
+- RQ-Y2, settled by ruling Y2 (BELOW_THRESHOLD).
 
 ## Research log
 

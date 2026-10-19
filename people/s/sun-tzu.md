@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (ST7) era_bucket '-500 to 499' (0.5) -> UNKNOWN under a strict P39 (life dates UNKNOWN; the Wu service, 512–506 B.C. in the Shiji passage Giles quotes, falls before -500; the Warring States date belongs to the text). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 133). Basics from Britannica (Britannica Editors, 14 Sep 2026): the 'reputed author' of The Art of War, which is 'more likely to have been written early in the Warring States period'. Lorge (Cambridge, 2022) holds that many hands wrote it under the name of a 'fictional Master Sun'. No source read attributes the text to him, so it is context only (P42): it scores no code or axis. Giles's 1910 translation read for leads (ch. XI §26 against omens; ch. XIII §5 foreknowledge not from spirits). primary_system, A, C, E UNKNOWN; B, D BELOW_THRESHOLD as leads; mid_basin UNKNOWN. Life dates and span UNKNOWN (P39); era '-500 to 499' at 0.5. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -37,7 +38,7 @@ basics:
     date: {value: UNKNOWN, how_known: "Not given."}
     place: {value: UNKNOWN, how_known: "Not given."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "The Art of War is undated; Britannica places its writing more likely early in the Warring States period (475–221 BCE) (P39)."}
-  era_bucket: {value: "-500 to 499", certainty: 0.5, cites: [{source: S1, locator: "opening ('flourished 5th century bce')"}], how_known: "No dated lasting work (P39). Britannica's 'flourished 5th century bce' and the Warring States dating of the text both fall in '-500 to 499'; filled at the certainty of the life dates (0.5). If he served Wu before 500 BCE (the end of the Spring and Autumn period is 476 BCE in S1), the bucket could be 'before -500'."}
+  era_bucket: {value: UNKNOWN, how_known: "No dated lasting work (P39). P39 fills era only when every year of the adult life falls in one bucket, at the certainty of the life dates; his life dates are UNKNOWN, Britannica places his service in Wu 'near the end of the Spring and Autumn period (770–476 bce)', and Giles's introduction (S2, quoting the Shiji) has the general Sun Wu advising Ho Lu on the Ch'u campaign of 512 B.C. and the entry into Ying in 506 B.C., before -500, while Britannica's 'flourished 5th century bce' falls after it. The Warring States date belongs to the unattributed text (P42), not his life. So UNKNOWN (batch Y audit, ST7; Pythagoras, Confucius and Gautama alike)."}
   region_of_birth: {value: "East Asia", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "China (P3); Britannica gives no birthplace."}
   region_of_work: {value: "East Asia", certainty: 0.7, cites: [{source: S1, locator: "opening ('served the state of Wu')"}], how_known: "Britannica."}
   sex_as_recorded: {value: "male", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "As recorded; the figure may be fictional (S3)."}
