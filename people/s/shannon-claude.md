@@ -7,10 +7,11 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-17
+  last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 89). Basics from Britannica (George Markowsky, signed; body only). Worldview from Anthony Liversidge's interview (Omni, August 1987), read in the version printed in Shannon's Collected Papers (IEEE Press, 1993; PDF on gwern.net). primary_system ATHE (0.7); A 4 (0.7); B 3 (0.5, alt 4; P41); mid_basin false (0.7). Plotted (faded on B). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fixes (#8, #9): the 1987 interview is after the working years (1940–1948), so ATHE and A 4 drop to 0.5 (P20, Hawking precedent); mid_basin false → BELOW_THRESHOLD (A ≥ 3 branch needs 0.7). B cites P35 first (value unchanged). 1938 AIEE paper noted as a working-years lead. Still plotted (faded)."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Carry-over from the batch P audit (gs_08be43b_P run 1, note 9): B_cause basis corrected from recorded_interview to inference_from_work, since B 3 rests on his working science (P35) and the interview only agrees. Values unchanged."}
 
 identity:
   id: shannon-claude
@@ -97,11 +98,11 @@ worldview:
       how_known: "(interview) One interview, his own words (P8); dated 1987, after the working years, so 0.5 (P20, Hawking precedent)."
     B_cause:
       value: 3
-      basis: recorded_interview
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S2, locator: "interview, Wiener question"}]
       rationale: "Account of nature (P6): humans are 'basically machines', 'A natural device', with 'no God involved' and evolution accepted. He is a scientist (P30: switching theory is a theory about physical circuits), so his working science gives B 3 at 0.5, alternative 4 (P35). His own interview words agree: they deny intervention in human nature but state no exceptionless order (P40), which gives the same B 3 at 0.5, alternative 4 (P41)."
-      how_known: "(interview) P35; P41 gives the same cap."
+      how_known: "Inference from his working science (P35), so the basis is inference_from_work, as for Crick and Franklin; the 1987 interview words (P8, P41) only agree with it and give the same cap."
       alternatives:
         - {value: 4, note: "P35/P41 alternative: no stated exceptionless law.", cites: [{source: S2, locator: "interview, Wiener question"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}

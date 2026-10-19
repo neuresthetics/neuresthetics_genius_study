@@ -578,8 +578,12 @@ Applied in CODING_GUIDE §4 and §6. Records changed, with each body summary upd
 
 Ibn Sina's changes_over_life went from UNKNOWN to BELOW_THRESHOLD, because the IEP notes a debate.
 
+- **Applied (v8's pick on the auditor's advice, 2026-10-18, P3 of the batch P audit at 08be43b):** Kafka's A and B stay BELOW_THRESHOLD. The Zürau aphorisms bear on the axes only indirectly: no. 50 describes what belief in a personal God expresses without asserting or denying God, no. '70. 71' never identifies the indestructible with God, and no. 54 concerns the status of the sensible world, not law and exception. Unlike van Gogh (0.5), no premise is asserted in his own voice. Re-open A (alternative 3 at 0.5) only if the diaries equate God with the indestructible in his own words.
+
 ### P20. A_locus when belief changed
 **DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 7, with the parent's 9:37 PM PT correction):** `primary_system` and the LIO axes both describe the same period: the worldview during the major work, that is, the working years (CODING_GUIDE §5, Changes over life). Score A_locus for that period, and record the change of belief in notes and `worldview.changes_over_life`, where later shifts go. A retrospective self-report about an earlier period is capped at 0.7. An agnostic with no stated locus view gets A `BELOW_THRESHOLD`. An explicit denial of a personal, intervening God is scored. Applied in CODING_GUIDE §6. Feynman's A stays BELOW_THRESHOLD: its how_known now says that "seems to be inadequate" (p. 22) is a hedged rejection, not an explicit denial. Hubble's A carries a note. Darwin's A = 2 is for his record's coder to check.
+
+- **Applied (v8's pick on the auditor's advice, 2026-10-18, P1 of the batch P audit at 08be43b):** evidence from after the working years is capped at 0.5, not excluded. Knuth's 2001 lecture keeps primary_system CHRIST and A 0 at 0.5 (as for Hawking and Shannon); his span is now 1968–1978 (TAOCP to TeX), with the later TAOCP volumes counted inside the series (P12).
 
 ### P21. Institution, school and edition kinds
 **DECIDED (v8's pick, 2026-10-02, from the stage 3 lens audit; ruling 8):**
@@ -775,6 +779,7 @@ Process:
 - **Applied.** Nietzsche: B 4 at 0.7 (The Joyful Wisdom §109, Common trans.: "There are only necessities: there is no one who commands, no one who obeys, no one who transgresses").
 - **Result-changing.** Under the alternative, Nietzsche would be not scorable on the person chart (mid_basin stays false via A 4).
 - **Scope narrowed (2026-10-15, fallacy_catalog audit of 2332880).** P40 applies only to a statement that explicitly rules out exceptions or chance, as §109 does ('no one who transgresses'; 'no chance'). It does not apply to every use of the word 'necessity'. What §109 rejects is 'law' as a lawgiver's command ('it also knows no law') and purposive or aesthetic order, not necessity ('not by the absence of necessity').
+- **Applied (v8's pick on the auditor's advice, 2026-10-18, P2 of the batch P audit at 08be43b):** Galen keeps B 3 at 0.5, alternative 4. 'Certain things are impossible by nature' is limited in scope and is not an explicit no-exception claim, so P40's B 4 does not apply; his own reported experience of Asclepius' interventions is a limited exception in his own name (as in Schopenhauer RQ1).
 
 ### P41. Lawgiver denial without a no-exception claim (B_cause)
 **DECIDED (v8's pick, 2026-10-15)**, from ruling question RQ1 of the blind audit of stage 3 batch D (commit 3f4817e, run 1).

@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 95). Basics from Britannica (Britannica Editors, unsigned; body only) and the two Nature papers' publisher pages (dates). Worldview from his own letters as quoted in Mark Goldie, Storm over a Chapel (Churchill College, 2024) and Chris Beckett, Medical History 48 (2004): to Churchill, 12 October 1961 ('atheists and agnostics such as myself'), to Cockcroft, n.d. [1961] (a university furthering 'superstitions' is 'shameful'), and of 14 December 1965 ('I am an atheist'); secondary quotations, primary check pending. Scientist (P30). primary_system ATHE (0.5); A 4 (0.5, alt BELOW_THRESHOLD, P38); B 3 (0.5, alt 4; P35); D 4 (0.5); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). Cockcroft letter quoted in full as Goldie prints it, restoring the sentences 'this point of view' refers to (C4). Context added: the 1961 Churchill letter's 'atheists and agnostics such as myself' sits inside his satirical 'Hetairae fund' offer (note 1); the 1965 sentence is credited to Beckett in full, with Goldie quoting only from 'I am an atheist' (note 3); P38 noted as applied by analogy to private letters (note 2). Values unchanged."}
 
 identity:
   id: crick-francis
@@ -78,8 +79,8 @@ worldview:
     basis: consistent_private_letters
     certainty: 0.5
     cites: [{source: S4, locator: "pp. 4–5; p. 12"}, {source: S5, locator: "text at note 18"}]
-    rationale: "Self-description: 'atheists and agnostics such as myself' (12 October 1961) and 'I am an atheist' (14 December 1965); in 1961 he reports that many scientists 'believe that nowadays Christianity is a firm superstition' and adds that 'It seems to me shameful that a great university should be used for the furtherance of superstitions' (letter to Cockcroft). Named alternatives: AGNOS (the 1961 phrase pairs the two labels) and SECHUM."
-    how_known: "Private letters quoted in secondary works (S4, S5); primary check pending. The 1961 letters fall inside the working years; the 1965 letter is four years after. 0.5 for the mixed 1961 label (P38) and the secondary quotation (P26)."
+    rationale: "Self-description: 'atheists and agnostics such as myself' (12 October 1961, inside his satirical ten-guinea 'Hetairae fund' offer to Churchill) and 'I am an atheist' (14 December 1965); in 1961 he reports that many scientists 'believe that nowadays Christianity is a firm superstition' and adds that 'It seems to me shameful that a great university should be used for the furtherance of superstitions' (letter to Cockcroft). Named alternatives: AGNOS (the 1961 phrase pairs the two labels) and SECHUM."
+    how_known: "Private letters quoted in secondary works (S4, S5); primary check pending. The 1961 letters fall inside the working years; the 1965 letter is four years after. 0.5 for the mixed 1961 label (P38, which speaks of published statements, applied by analogy to these private letters) and the secondary quotation (P26)."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: ATHE, reason: "'I am an atheist' (1965)."}
@@ -118,24 +119,24 @@ worldview:
     - text: "Moreover it would be open (conscience permitting) not merely to members of the Church of England, but also to Catholics, Non-Conformists, Jews, Muslims, Hindus, Zen Buddhists and even to atheists and agnostics such as myself."
       cites: [{source: S4, locator: "pp. 4–5"}]
       date: "1961-10-12"
-      context: "Letter to Winston Churchill resigning his Churchill College fellowship over the proposed chapel; Churchill Papers 2/571, as quoted by Goldie (S4)."
+      context: "Letter to Winston Churchill, 12 October 1961, after Churchill's reply to his resignation over the proposed chapel; the sentence sits inside a satirical offer: Crick encloses 'a cheque for ten guineas to open the Churchill College Hetairae fund' (a college brothel, by parody of Churchill's 'amenity which many … may enjoy, and none need enter it unless they wish'). Churchill Papers 2/571, as quoted by Goldie (S4, pp. 4–5). The self-label 'atheists and agnostics such as myself' is his own even inside the satire."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
       note: "Primary check pending; Goldie notes a photograph of the letter in Pagnamenta (2008), p. 263."
-    - text: "I am sure there are many people in Cambridge, especially scientists, who believe that nowadays Christianity is a firm superstition, and who feel that this will become increasingly obvious to most educated people in the future. [...] I cannot agree with this point of view. It seems to me shameful that a great university should be used for the furtherance of superstitions and although Christianity is no longer virulent, it is surely not yet harmless."
+    - text: "I am sure there are many people in Cambridge, especially scientists, who believe that nowadays Christianity is a firm superstition, and who feel that this will become increasingly obvious to most educated people in the future. Apparently this does not prevent unbelievers from accepting college fellowships. Indeed some of them go so far as to have their children christened, which seems to me ridiculous. One can only conclude that they regard Christianity as a completely harmless set of beliefs and that they tolerate it as one might humour a somewhat eccentric aunt. I cannot agree with this point of view. It seems to me shameful that a great university should be used for the furtherance of superstitions and although Christianity is no longer virulent, it is surely not yet harmless."
       cites: [{source: S4, locator: "p. 12"}]
       context: "Letter to John Cockcroft, Master of Churchill College, undated (1961), explaining his resignation; Crick Papers, quoted by Goldie from Olby (2009), pp. 318–19 (S4)."
       axes: [A_locus, D_authority]
       kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
-      note: "Undated in S4; the resignation is 1961. Primary check pending."
+      note: "Undated in S4; the resignation is 1961. Quoted in full as Goldie prints it (the earlier '[...]' cut the sentences that 'this point of view' refers to: unbelievers who treat Christianity as 'a completely harmless set of beliefs'; audit C4). Primary check pending."
     - text: "You may not know that I am an atheist and a few years ago resigned my Fellowship at Churchill College because they threatened to build a College Chapel."
       cites: [{source: S5, locator: "text at note 18 (PP/CRI/E/1/14/5)"}]
       date: "1965-12-14"
-      context: "Letter on the venue for his John Danz Lectures (Seattle, 1966; published as Of Molecules and Men), Wellcome Library, Crick Papers PP/CRI/E/1/14/5, as quoted by Beckett (S5); Goldie (S4, p. 5) quotes the same words."
+      context: "Letter on the venue for his John Danz Lectures (Seattle, 1966; published as Of Molecules and Men), Wellcome Library, Crick Papers PP/CRI/E/1/14/5, as quoted by Beckett (S5); Goldie (S4, p. 5) quotes it only from 'I am an atheist' onwards; the full sentence is from Beckett, whose quotation continues: 'I myself have not the slightest objection to lecturing in the Presbyterian Church, but I think the Church Authorities might conceivably not be too keen that their building should be used for what they might regard as anti-Christian propaganda.'"
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"

@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 96). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from the Zürau aphorisms (notebooks of 1917–18), published by Max Brod and H. J. Schoeps as 'Betrachtungen über Sünde, Leid, Hoffnung und den wahren Weg' in Beim Bau der Chinesischen Mauer (Berlin: Kiepenheuer, 1931), read in the proofread Wikisource transcription. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD (alt 3); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). Page cites corrected from each Wikisource page's own source: no. 50 on p. 234 (KA4), no. 54 on p. 235 (KA5), and the aphorism printed as '70. 71' on pp. 238–239 (KA6, also in the A_locus cites). Ruling P3 (v8's pick on the auditor's advice): A and B stay BELOW_THRESHOLD. Values unchanged; not plotted."}
 
 identity:
   id: kafka-franz
@@ -87,7 +88,7 @@ worldview:
     - {code: JUDA, reason: "Heritage; 'marked interest and sympathy for a socialized Zionism' (S1), which is political, not doctrinal."}
     - {code: EXIST, reason: "Lead only; no statement read."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "nos. 50, 71"}], how_known: "Private aphorism, figurative: 'Der Mensch kann nicht leben ohne ein dauerndes Vertrauen zu etwas Unzerstörbarem in sich ... Eine der Ausdrucksmöglichkeiten dieses Verborgenbleibens ist der Glaube an einen persönlichen Gott' (no. 50; a person cannot live without lasting trust in something indestructible in himself ... one way this stays hidden is belief in a personal God), and 'Das Unzerstörbare ist eines; jeder einzelne Mensch ist es und gleichzeitig ist es allen gemeinsam' (no. 71; the indestructible is one; each person is it and it is common to all). That places what is ultimate within persons and treats a personal God as one expression of it, which leans to A 3, but no view on God's existence or locus is stated outright. Named alternative: 3. Translation the coder's."}
+    A_locus: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "no. 50 (p. 234); no. 70. 71 (pp. 238–239)"}], how_known: "Private aphorism, figurative: 'Der Mensch kann nicht leben ohne ein dauerndes Vertrauen zu etwas Unzerstörbarem in sich ... Eine der Ausdrucksmöglichkeiten dieses Verborgenbleibens ist der Glaube an einen persönlichen Gott' (no. 50; a person cannot live without lasting trust in something indestructible in himself ... one way this stays hidden is belief in a personal God), and 'Das Unzerstörbare ist eines; jeder einzelne Mensch ist es und gleichzeitig ist es allen gemeinsam' (no. '70. 71'; the indestructible is one; each person is it and it is common to all). That places what is ultimate within persons and treats a personal God as one expression of it, which leans to A 3, but no view on God's existence or locus is stated outright. Named alternative: 3. Translation the coder's. Ruling P3 (v8's pick on the auditor's advice): stays BELOW_THRESHOLD, not 0.5 as for van Gogh, whose premise (God as author) was asserted in his own voice; no. 50 describes what belief in a personal God expresses without asserting or denying God, and no. '70. 71' never identifies the indestructible with God (that identification is only in Britannica's paraphrase, a lead). Re-open (alt 3 at 0.5) only if the diaries equate God with the indestructible in his own words."}
     B_cause: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "no. 54"}], how_known: "Not a scientist (P30). The one remark on nature read, 'Es gibt nichts anderes als eine geistige Welt; was wir sinnliche Welt nennen, ist das Böse in der geistigen' (no. 54; there is nothing but a spiritual world; what we call the sensory world is the evil in the spiritual one), is about the status of the sensible world, not its law or exceptions, so it bears on B only indirectly (P16, P19)."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read; no. 40 ('Nur unser Zeitbegriff läßt uns das Jüngste Gericht so nennen, eigentlich ist es ein Standrecht', S2) is a lead."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
@@ -95,7 +96,7 @@ worldview:
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B are both BELOW_THRESHOLD (P19)."}
   statements:
     - text: "Der Mensch kann nicht leben ohne ein dauerndes Vertrauen zu etwas Unzerstörbarem in sich, wobei sowohl das Unzerstörbare als auch das Vertrauen ihm dauernd verborgen bleiben können. Eine der Ausdrucksmöglichkeiten dieses Verborgenbleibens ist der Glaube an einen persönlichen Gott."
-      cites: [{source: S2, locator: "no. 50 (p. 235)"}]
+      cites: [{source: S2, locator: "no. 50 (p. 234)"}]
       context: "Zürau notebooks, 1917–18 (inside the working years); published posthumously in 1931 (S2). Undated within that span, so no single year is given."
       axes: [A_locus]
       kind: "notebook or diary"
@@ -103,7 +104,7 @@ worldview:
       verified_on: 2026-10-18
       note: "Wikisource transcription of the 1931 edition, proofread twice against page scans; web copy, cap 0.7. Page from the Wikisource page markers."
     - text: "Es gibt nichts anderes als eine geistige Welt; was wir sinnliche Welt nennen, ist das Böse in der geistigen, und was wir böse nennen, ist nur eine Notwendigkeit eines Augenblicks unserer ewigen Entwicklung."
-      cites: [{source: S2, locator: "no. 54 (p. 238)"}]
+      cites: [{source: S2, locator: "no. 54 (p. 235)"}]
       context: "Same notebooks."
       axes: [B_cause]
       kind: "notebook or diary"
@@ -111,7 +112,7 @@ worldview:
       verified_on: 2026-10-18
       note: "As above."
     - text: "Das Unzerstörbare ist eines; jeder einzelne Mensch ist es und gleichzeitig ist es allen gemeinsam, daher die beispiellos untrennbare Verbindung der Menschen."
-      cites: [{source: S2, locator: "no. 71 (p. 239)"}]
+      cites: [{source: S2, locator: "no. 70. 71 (pp. 238–239)"}]
       context: "Same notebooks."
       axes: [A_locus]
       kind: "notebook or diary"
@@ -140,7 +141,7 @@ lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "no", rationale: "Not a geometric style.", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Coder's reading."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Not read."}
-  circle_present: {value: "unclear", rationale: "The indestructible within persons; figurative.", certainty: 0.5, cites: [{source: S2, locator: "nos. 50, 71"}], how_known: "Coder's reading."}
+  circle_present: {value: "unclear", rationale: "The indestructible within persons; figurative.", certainty: 0.5, cites: [{source: S2, locator: "no. 50; no. 70. 71"}], how_known: "Coder's reading."}
   reading: "An indestructible core in each person; the personal God as one of its expressions."
   notes: ""
 
@@ -211,7 +212,7 @@ Prosperous Jewish family; Altstädter Staatsgymnasium; adolescent atheism [S1].
 
 ## Adult working worldview
 
-Zürau aphorisms on the indestructible and a personal God [S2, nos. 50, 54, 71].
+Zürau aphorisms on the indestructible and a personal God [S2, nos. 50 (p. 234), 54 (p. 235), 70. 71 (pp. 238–239)].
 
 ## Heritage (context only)
 

@@ -10,6 +10,7 @@ record:
   last_updated: 2026-10-18
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 97). Basics from Britannica (Vivian Nutton, signed; body only) and SEP 'Galen' (P. N. Singer, 2021). Worldview from De usu partium XI.14 (written 169–176), in R. Walzer's translation (Galen on Jews and Christians, 1949) as reproduced on Roger Pearse's page, with his remarks on the 'undemonstrated laws' of the followers of Moses and Christ; secondary quotations, primary check pending. Scientist (P30). primary_system PLATO (0.5, alt HELLEN); A 1 (0.5, alt 2); B 3 (0.5, alt 4); D 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
+    - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit notes applied (gs_08be43b_P run 1: 39 hold, 6 weaken; no Galen weakens). Britannica byline now 'Vivian Nutton and Britannica Editors' (note 6); Pearse's inserted '( καὶ )' restored in the De usu partium XI.14 quotation (note 7). Ruling P2 (v8's pick on the auditor's advice): B stays 3 at 0.5, alternative 4. Values unchanged."}
 
 identity:
   id: galen
@@ -106,7 +107,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S3, locator: "Reference 2"}, {source: S2, locator: "§9"}]
       rationale: "Account of nature (P6): 'we say that certain things are impossible by nature and that God does not even attempt such things at all but that he chooses the best out of the possibilities of becoming'; 'even if He should just will numberless times, they would never come into being in this manner'. A lawful nature that binds even God, but limited to 'certain things', not a stated no-exception claim (P40); and SEP reports that he claims 'personal experience of interventions by individual gods ... within human affairs, most notably by Asclepius', a stated, limited exception. So B 3 at 0.5, alternative 4. As a scientist (P30), working science alone would give the same (P35)."
-      how_known: "Translation via a web copy, secondary quotation; the Asclepius exception rests on SEP's report, so 0.5."
+      how_known: "Translation via a web copy, secondary quotation; the Asclepius exception rests on SEP's report (Pietrobelli 2013 and Singer 2019a not read), so 0.5. Ruling P2 (v8's pick on the auditor's advice): keep B 3 at 0.5, alternative 4; P40 does not apply, because 'certain things' is limited in scope and is not an explicit no-exception claim, and the Asclepius interventions are an exception in his own name (as in Schopenhauer RQ1)."
       alternatives:
         - {value: 4, note: "If the Asclepius episodes are read as within nature, nothing excepts nature's limits.", cites: [{source: S3, locator: "Reference 2"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}
@@ -122,7 +123,7 @@ worldview:
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 1 and B 3 would meet A ≤ 1 and B ≥ 3, but both are at 0.5, below the 0.7 bar (§6, P19), as for Plato."}
   statements:
-    - text: "It is precisely this point in which our own opinion and that of Plato and of the other Greeks who follow the right method in natural science differs from the position taken up by Moses. For the latter it seems enough to say that God simply willed the arrangement of matter and it was presently arranged in due order; for he believes everything to be possible with God, even should He wish to make a bull or a horse out of ashes. We however do not hold this; we say that certain things are impossible by nature and that God does not even attempt such things at all but that he chooses the best out of the possibilities of becoming."
+    - text: "It is precisely ( καὶ ) this point in which our own opinion and that of Plato and of the other Greeks who follow the right method in natural science differs from the position taken up by Moses. For the latter it seems enough to say that God simply willed the arrangement of matter and it was presently arranged in due order; for he believes everything to be possible with God, even should He wish to make a bull or a horse out of ashes. We however do not hold this; we say that certain things are impossible by nature and that God does not even attempt such things at all but that he chooses the best out of the possibilities of becoming."
       cites: [{source: S3, locator: "Reference 2 (De usu partium XI.14)"}]
       context: "De usu partium XI.14, on the eyelashes; written 169–176 per De libris propriis (S3; SEP also puts the writing-up of his major works in 169–76). No single year, so the date field is left out."
       axes: [A_locus, B_cause]
@@ -193,8 +194,8 @@ sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
-    author: "Vivian Nutton"
-    citation: "Nutton, Vivian. \"Galen.\" Encyclopaedia Britannica (revised 1 September 2026). https://www.britannica.com/biography/Galen. Read live 2026-10-18 (the Wayback Machine was rate-limiting)."
+    author: "Vivian Nutton and Britannica Editors"
+    citation: "Nutton, Vivian, and Britannica Editors. \"Galen.\" Encyclopaedia Britannica (revised 1 September 2026). https://www.britannica.com/biography/Galen. Read live 2026-10-18 (the Wayback Machine was rate-limiting)."
     url: "https://www.britannica.com/biography/Galen"
     accessed: 2026-10-18
     reliability_note: "Signed article. Body only; the AI-generated Top Questions and Quick Facts are not cited."
