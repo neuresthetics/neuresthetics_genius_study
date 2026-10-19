@@ -594,6 +594,8 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - Morrison: ruling Y2: primary_system stays BELOW_THRESHOLD, CHRIST the lead (recorded under P43).
   - Not applied, on instruction: RQ U1 (King) and TF7 (Kant B 3) still wait on Jason.
 
+- **2026-10-19, chart refresh after batch Y** (the one refresh planned for this run): make_figures re-run on the batch Y audit fixes. people_cause_locus.png, people_systems_overlay.png and core_by_region_field.png changed; systems_cause_locus.png, systems_axes.png and roster_list_overlap.png are unchanged byte for byte. Checked by eye: 57 people plotted, 86 not scorable (26 no A_locus, 15 no B_cause, 45 neither); 22 systems with both axes settled. The README caption (generated) agrees; 'chart images not yet refreshed' dropped from the progress note. No data changes. King U1 and Kant B 3 still held.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).
