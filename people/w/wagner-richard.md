@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note tidied (no score change): inner quotation marks in the ATHE candidate reason ('the ever louder \"Atheism\" of our day'; the Jewish \"Creator of heaven and earth\") now match the source."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (WA4) statement 2 locator pp. 215–216 -> p. 215. (WA6) the three statements relabelled scholarly edition -> primary transcription, the house label for a web copy (MC8, Keynes precedent). (WA8) B 3 at 0.5 re-grounded on the P27 anchor and P30 #14 (the reversal of the will as 'an abrogation of the laws of Nature', p. 215; Schopenhauer precedent); the P41 extension dropped; alternative 4 kept with a note. Ruling W2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, IDEAL added as a lead. (Notes) S1 credits Cooke and Britannica Editors, typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 126). Basics from Britannica (Deryck V. Cooke). Own voice read in English in Ellis's translation of Religion and Art (1880; Prose Works vol. 6, 1897; Wagner Library web edition). Not a scientist (P30). primary_system BELOW_THRESHOLD (Schopenhauerian world-denial read into Christianity and Buddhism; no listed code fits; leads CHRIST, BUDDH); A BELOW_THRESHOLD; B 3 (0.5, alt 4; P41 extension); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1843–1882 (0.7). Not plotted. Draft, not reviewed."}
 
@@ -94,7 +95,7 @@ worldview:
     - {code: CHRIST, reason: "Lead: 'the suffering god upon the cross ... still fills us with ecstatic throes'; but the Creator is rejected and doctrine read as 'mythic allegories'."}
     - {code: BUDDH, reason: "Lead: renunciation and 'the unity of all things living'; no stated adherence."}
     - {code: IDEAL, reason: "Lead: the laws of Nature 'founded on our own power of perception, and bound inextricably with the functions of our brain' (p. 215), the idealism coded IDEAL in Schopenhauer's record; one conditional sentence is not enough for the code (ruling W2)."}
-    - {code: ATHE, reason: "Rejected: he speaks of 'the truth ineffably divine' and calls Christ divine; he names the 'Atheism of our day' as the Church's ruin, not his view."}
+    - {code: ATHE, reason: "Rejected: he speaks of 'the truth ineffably divine' and calls Christ divine; he blames 'the ever louder \"Atheism\" of our day' on the Church's tracing of Christ back to the Jewish \"Creator of heaven and earth\" (p. 217); it is not his view."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "Mixed: he rejects the transcendent 'Creator of heaven and earth' and praises the Greeks, who never thought of 'God' as a Person, yet calls the crucified Christ 'the quintessence of all pitying Love' and 'divine', and the beyond 'superhuman' and 'far above Nature' (S2, pp. 215–217). Named readings: 2–3 (a Schopenhauerian divine without a creator-person) and 1 (Christ as a personal divine). Not enough for a value."}
     B_cause:

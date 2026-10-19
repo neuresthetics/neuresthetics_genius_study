@@ -571,6 +571,14 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
   - Machiavelli (note): the Esortazione details and quotation marked as the batch V audit's reading. Davis (note): Tingen (S3) kind 'scholarly book' -> other.
   - Not applied, on instruction: RQ U1 (King) and TF7 (Kant B 3) still wait on Jason. Chart images not regenerated.
 
+- **2026-10-19, stage 3 batch Y** (order P32, F 4; drafts, not reviewed; awaiting blind audit; the last batch of this run): Steve Jobs, Sun Tzu, Terence Tao, Toni Morrison (ranks 132–134, 136; Thomas Aquinas, rank 135, already coded). None plotted: plotted stays 57; not scorable rises from 82 to 86 (P34).
+  - Jobs: not a scientist (P33). Span 1977–2007 at 0.7 (Apple II to iPhone; age 22). Own voice read in the prepared text of the 2005 Stanford commencement address; his words on God only as the Washington Post's quotations of Isaacson (2011; secondary quotation, after the span): 'I'm about fifty-fifty on believing in God'. primary_system BELOW_THRESHOLD (AGNOS and BUDDH leads; RQ-Y1); A, D BELOW_THRESHOLD; B, C, E UNKNOWN; mid_basin UNKNOWN.
+  - Sun Tzu: Britannica calls him the 'reputed author'; Lorge (Cambridge, 2022) reads The Art of War as the work of many hands under a 'fictional Master Sun'. Context only (P42; Homer and Confucius precedents). Giles's 1910 translation read for leads (omens, ch. XI; spirits, ch. XIII). primary_system, A, C, E UNKNOWN; B, D BELOW_THRESHOLD as leads; mid_basin UNKNOWN. Life dates and span UNKNOWN; era '-500 to 499' at 0.5 (P39).
+  - Tao: pure mathematician, not a scientist (RQ-Y3). Span 2004 at 0.5 (Green–Tao theorem, arXiv submission; age 29). No statement on religion or nature in a reliable source; unsourced web 'quotes' not used. primary_system and all axes UNKNOWN; mid_basin UNKNOWN.
+  - Morrison: not a scientist. Span 1970–1987 at 0.7 (The Bluest Eye to Beloved; age 39; 1992 noted as an alternative end). Own voice read in the NPR Fresh Air transcript (2015, after the span): her mother's AME church, Catholic from 12, 'took it seriously for years and years and years', now 'Not a structured one'. Self-labels ('I'm a Catholic', 2004) only as secondary quotations (Ripatrazone, Lit Hub 2020). primary_system BELOW_THRESHOLD (CHRIST lead; RQ-Y2); A, B, D BELOW_THRESHOLD with readings named; C, E UNKNOWN; mid_basin BELOW_THRESHOLD.
+  - Batch W notes tidied (no score change): Copernicus (the brackets in 'Opt[imi]. Max[imi].' are the Wikisource editor's; why the I.10 'Trimegistus visibilem Deum' line is not used); Wagner (inner quotation marks in the ATHE reason).
+  - Chart images restored, not regenerated, as instructed for this run (the progress note had planned a refresh after batch Y). King U1 and Kant B 3 still held for Jason.
+
 ## v7.1 (2026-09-14 data freeze)
 
 - Published in [neuresthetics_v7](https://github.com/neuresthetics/neuresthetics_v7).

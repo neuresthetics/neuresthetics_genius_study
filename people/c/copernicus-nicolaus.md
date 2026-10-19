@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit notes tidied (no score change): primary_system how_known now marks the brackets in 'Opt[imi]. Max[imi].' as the Wikisource editor's; A_locus how_known records why the I.10 'Trimegistus visibilem Deum' line is not used (it reports what others call the Sun, not his own profession)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (CO4) dedication locator djvu p. 7 -> p. 8 in all five cites (statement, nominal_affiliations, self_described relation, D and its alternative), and the inflected form 'Reipublicæ ecclesiasticæ conducere' quoted in place of 'Respublica ecclesiastica'. Ruling W1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, CHRIST the lead. (Notes) S1 credits Westman and Britannica Editors; Britannica and SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 123). Basics from Britannica (Robert S. Westman) and SEP (Sheila Rabin). Own voice read in Latin in the 1543 De revolutionibus on Latin Wikisource (dedication to Paul III, proofread; I.9 proofread; I.10 not yet proofread). Scientist (P30). primary_system BELOW_THRESHOLD (CHRIST lead; generic creator language plus a canon's office, by analogy with ruling U2); A 1 (0.7, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D 2 (0.5, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Span 1514–1543 (0.5). Plotted (faded). Draft, not reviewed."}
 
@@ -90,7 +91,7 @@ worldview:
     - {value: "Canon of the Frombork (Warmia) cathedral chapter from 1495/1497 to his death; not a priest", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "§1"}], how_known: "Both sources. Office at membership level, not a code."}
     - {value: "Dedicated De revolutionibus to Pope Paul III, offering his work as useful to the Church's calendar reform ('Reipublicæ ecclesiasticæ conducere')", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}, {source: S2, locator: "§2.5 ('probably for political reasons')"}], how_known: "His dedication; SEP reads the dedication as probably political. Context."}
   self_described_science_religion_relation: {value: "Mathematics is for mathematicians: critics 'ignorant of mathematics' who twist 'some passage of Scripture' against astronomy are to be disregarded, as Lactantius spoke 'childishly' of the Earth's shape (1542)", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}, {source: S1, locator: "'Early life and education' (last paragraph)"}, {source: S2, locator: "§2.5"}], how_known: "His dedication, published 1543; Britannica dates its composition to 1542; SEP glosses it as 'theologians should not meddle with it'."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Coder's call, by analogy with ruling U2 (Cervantes). His own words read name a creator but nothing specifically Christian: the world machine was founded 'propter nos, ab optimo & regularissimo omnium opifice' (dedication), gravity is implanted 'à divina providentia opificis universorum' (I.9), and the cosmos is 'divina haec Opt. Max. fabrica' (I.10). His church office is membership (CHRIST do_not_use_when), and the dedication to the Pope is 'probably for political reasons' (S2 §2.5). CHRIST is the named lead; a profession of doctrine (Christ, the Church's teaching) in his own words would restore it. Ruling W1 (v8's call on the auditor's advice, batch W audit): stays BELOW_THRESHOLD, CHRIST the lead."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Coder's call, by analogy with ruling U2 (Cervantes). His own words read name a creator but nothing specifically Christian: the world machine was founded 'propter nos, ab optimo & regularissimo omnium opifice' (dedication), gravity is implanted 'à divina providentia opificis universorum' (I.9), and the cosmos is 'divina haec Opt[imi]. Max[imi]. fabrica' (I.10; brackets are the Wikisource editor's). His church office is membership (CHRIST do_not_use_when), and the dedication to the Pope is 'probably for political reasons' (S2 §2.5). CHRIST is the named lead; a profession of doctrine (Christ, the Church's teaching) in his own words would restore it. Ruling W1 (v8's call on the auditor's advice, batch W audit): stays BELOW_THRESHOLD, CHRIST the lead."}
   secondary_system: {value: UNKNOWN, how_known: "None (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Named lead: Catholic canon; creator language in his dedication to the Pope. Not chosen: no own-voice doctrinal profession read (ruling U2 by analogy)."}
@@ -103,7 +104,7 @@ worldview:
       certainty: 0.7
       cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 6); Liber I cap. 9 (fol. 7a); cap. 10 (fol. 10a)"}]
       rationale: "Leans to the transcendent pole: the world machine was 'founded for us by the best and most orderly maker of all' ('qui propter nos, ab optimo & regularissimo omnium opifice, conditus esset'); gravity is 'a natural appetency implanted in the parts by the divine providence of the maker of all things'; the cosmos is 'this divine work of the Best and Greatest'. The maker is distinct from the world he made. Not 0: no intervention, miracle, petition or revelation is mentioned; providence acts by an implanted natural tendency. Named alternative 0: a maker who made the world 'propter nos' is the personal creator of the CHRIST pole (Galileo precedent)."
-      how_known: "Published book, his own Latin; capped at 0.7 because 0 is named (Galileo precedent). The dedication's political purpose (S2 §2.5) does not touch I.9 and I.10, which are in the body."
+      how_known: "Published book, his own Latin; capped at 0.7 because 0 is named (Galileo precedent). The dedication's political purpose (S2 §2.5) does not touch I.9 and I.10, which are in the body. Not used: the I.10 line on the Sun, 'quidam lucernam mundi, alii mentem, alii rectorem vocant. Trimegistus visibilem Deum' (djvu p. 32, not proofread), reports what others call the Sun, not his own profession (batch W audit, RQ-W1 answer)."
       alternatives:
         - {value: 0, note: "Personal creator who made the world for us.", cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 6)"}]}
     B_cause:
