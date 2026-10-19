@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): ruling W3 (v8's call on the auditor's advice): ATHE at 0.5, alternative AGNOS, kept. (Note) the undated tilings cite P12 and P17 instead of P39. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 127). Basics from the Nobel Prize site (facts page and biographical) and MacTutor (O'Connor and Robertson). Worldview from one recorded interview (New Scientist, 14 November 2022, Michael Brooks), long after the working years (P1 cap 0.5). Scientist (P30). primary_system ATHE (0.5, alt AGNOS); A BELOW_THRESHOLD (named reading 4); B 3 (0.5, alt 4); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1965–1967 (0.7). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -50,7 +51,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Singularity theorem: under the condition of a trapped surface, gravitational collapse must produce a space-time singularity; black hole formation is a robust prediction of general relativity", year: 1965, kind: "law or principle", lasting: "Nobel Prize in Physics 2020 'for the discovery that black hole formation is a robust prediction of the general theory of relativity' (S1); 'Roger's 1965 paper on this, earned his share of the 2020 Physics Nobel Prize' (S2)", certainty: 1.0, cites: [{source: S1, locator: "facts page (Prize motivation; Work)"}, {source: S2, locator: "singularity paragraphs"}, {source: S3, locator: "'In 1965, using topological methods'"}], how_known: "All three sources. A theorem about physical systems, so he is a scientist (P30)."}
     - {value: "Twistor theory", year: 1967, kind: theory, lasting: "De Morgan Medal citation (2004): 'His development of Twistor Theory has produced a beautiful and productive approach to the classical equations of mathematical physics' (quoted in S3); 'One of Penrose's major breakthroughs' (S3)", certainty: 0.7, cites: [{source: S2, locator: "spinor paragraph ('the theory of twistors, that Roger had introduced in 1967')"}, {source: S3, locator: "twistor paragraph; De Morgan citation"}], how_known: "Date from the Nobel biography; lasting from MacTutor's quotation of the LMS citation."}
-    - {value: "Non-periodic tilings of the plane with two tiles (Penrose tilings)", kind: discovery, lasting: "De Morgan citation: 'His tilings of the plane underlie the newly discovered quasi-crystals' (quoted in S3)", certainty: 0.7, cites: [{source: S3, locator: "tilings paragraph; De Morgan citation"}], how_known: "MacTutor; undated in the sources read ('Further work over many years'), so it does not set the span (P39)."}
+    - {value: "Non-periodic tilings of the plane with two tiles (Penrose tilings)", kind: discovery, lasting: "De Morgan citation: 'His tilings of the plane underlie the newly discovered quasi-crystals' (quoted in S3)", certainty: 0.7, cites: [{source: S3, locator: "tilings paragraph; De Morgan citation"}], how_known: "MacTutor; undated in the sources read ('Further work over many years'), so it does not set the span: the item year is written as the sources give it and an undated item sets no first-lasting year (P12); the span runs from the earliest to the latest dated items (P17, P30 addendum)."}
   evidence_of_impact:
     - {value: "Nobel Prize in Physics 2020 (half share)", kind: "honours in lifetime", certainty: 1.0, cites: [{source: S1, locator: "facts page"}, {source: S3, locator: "honours list"}], how_known: "Nobel site."}
     - {value: "Wolf Prize in Physics (jointly with Stephen Hawking)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S3, locator: "honours paragraph"}], how_known: "MacTutor; year not given there."}
@@ -154,7 +155,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1965–1967", certainty: 0.7, cites: [{source: S2, locator: "singularity and spinor paragraphs"}, {source: S3, locator: "1965 paragraph; twistor paragraph"}], how_known: "From the singularity theorem (1965) to twistor theory (1967) (P12, P30). The tilings are undated in the sources read (P39); alternative start 1964 (Nobel facts page)."}
+  major_work_period: {value: "1965–1967", certainty: 0.7, cites: [{source: S2, locator: "singularity and spinor paragraphs"}, {source: S3, locator: "1965 paragraph; twistor paragraph"}], how_known: "From the singularity theorem (1965) to twistor theory (1967) (P12, P30). The tilings are undated in the sources read, so they set neither end (P12, P17); alternative start 1964 (Nobel facts page)."}
   age_at_first_lasting_contribution: {value: 34, certainty: 0.7, cites: [{source: S1, locator: "facts page"}], how_known: "1965 − 1931; 33 or 34 by month of publication (P30)."}
   first_evidence_of_lio_type_views: {value: "2022 (interview): no religion, consciousness within a future physics", year: 2022, certainty: 0.5, cites: [{source: S4, locator: "question on inherent meaning"}], how_known: "(interview) Earliest source read; his books not read (P30 #7)."}
   lio_views_relative_to_major_work: {value: "after major work", certainty: 0.5, cites: [{source: S4, locator: "question on inherent meaning"}], how_known: "(interview) First evidence read is 55 years after the span."}
@@ -188,7 +189,7 @@ review:
     - "All worldview evidence is one 2022 interview."
     - "Return to England dated 1945 (MacTutor) vs 1949 (Nobel biography)."
   open_questions:
-    - "RQ-W3: ATHE vs AGNOS."
+    - "Settled (ruling W3, v8's call on the auditor's advice, batch W audit): ATHE at 0.5 with AGNOS the alternative, consistent with Hawking and Turing; the hedges keep it at 0.5."
     - "Read The Road to Reality (2004) and The Emperor's New Mind (1989) for written statements on God and nature."
 
 sources:

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (PY4) era_bucket 'before -500' 0.7 -> 0.5, how_known based on the candidate years (Croton, ca. 530–510 BCE) under P39, at the certainty of the life dates. (Note) 'forged' wording corrected: SEP says books were forged in his name; the Golden Verses circulated in his name and were later compiled; the Sacred Discourse attribution rests on a misreading. SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 125). All facts from SEP (Carl Huffman). Pythagoras wrote nothing; everything about his views is later report (doxography), which is reported speech and cannot score alone (P42, CODING_GUIDE §7). Not a scientist (P30): SEP doubts he did mathematics or rational cosmology. primary_system BELOW_THRESHOLD; A, B, C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin BELOW_THRESHOLD. First lasting contribution and span UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -35,7 +36,7 @@ basics:
     date: {value: "-490", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 490'); §3"}], how_known: "SEP: 'around 490 BCE'."}
     place: {value: "Metapontum", modern_name: "Metaponto, Basilicata, Italy", polity_then: "Metapontum (Greek city in southern Italy)", certainty: 0.5, cites: [{source: S1, locator: "§3"}], how_known: "SEP: 'There are a variety of stories about his death', the most reliable putting it at Metapontum; 0.5."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "He wrote nothing and his teaching is undated (P39)."}
-  era_bucket: {value: "before -500", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "Active at Croton from c. 530 BCE (S1 §3); his teaching before 500 BCE (P2). Coder's reading, 0.7."}
+  era_bucket: {value: "before -500", certainty: 0.5, cites: [{source: S1, locator: "§3"}], how_known: "First-lasting year UNKNOWN (P39). The candidate years for his lasting teaching, his activity at Croton from ca. 530 BCE until the violence against his followers there ca. 510 BCE (S1 §3), all fall before -500, so the bucket is filled at the certainty of the life dates (0.5; P39, as in the Archimedes and Hippocrates records). His adult life (born ca. 570, died ca. 490) crosses the edge, so the bucket rests on the Croton years only (batch W audit, PY4)."}
   region_of_birth: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "Samos, Greece (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening; §3"}], how_known: "Croton in southern Italy, where 'most of his philosophical activity occurred' (S1)."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "As recorded."}
@@ -74,7 +75,7 @@ worldview:
   working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN, P39)."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "He wrote nothing."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "He wrote nothing; texts later circulated in his name (the Golden Verses, the 'Sacred Discourse') were forged (S1 §3), so they are not his words (P42). What is known comes from reports: Xenophanes's joke about the puppy (Fr. 7) and Dicaearchus show he taught reincarnation; Aristotle's acusmata show interest in ritual and a moralized cosmos (S1 §4.1, §4.3, §5). Reports cannot score alone (P42, CODING_GUIDE §7; Hippocrates and Confucius precedents). SEP adds that 'Pythagoreanism was not a religion' (S1 §4.3). Leads: HELLEN (Greek ritual and gods), with a reincarnation doctrine no listed code fits."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "He wrote nothing; a large collection of books was later forged in his name and other early Pythagoreans' (S1, opening and §2); the Golden Verses are hexameter lines that circulated in his name by the third century BCE and were later compiled, and the idea that he wrote a Sacred Discourse 'seems to arise from a misreading of the early evidence' (S1 §3). Either way they are not his words (P42). What is known comes from reports: Xenophanes's joke about the puppy (Fr. 7) and Dicaearchus show he taught reincarnation; Aristotle's acusmata show interest in ritual and a moralized cosmos (S1 §4.1, §4.3, §5). Reports cannot score alone (P42, CODING_GUIDE §7; Hippocrates and Confucius precedents). SEP adds that 'Pythagoreanism was not a religion' (S1 §4.3). Leads: HELLEN (Greek ritual and gods), with a reincarnation doctrine no listed code fits."}
   secondary_system: {value: UNKNOWN, how_known: "None (P29)."}
   candidate_codes_considered:
     - {code: HELLEN, reason: "Lead: acusmata on libations and sacrifice to the gods (S1 §4.3); reported only."}
@@ -142,7 +143,7 @@ review:
 
 sources:
   - id: S1
-    type: secondary
+    type: tertiary
     kind: encyclopedia
     author: "Carl Huffman"
     citation: "Huffman, Carl. \"Pythagoras.\" Stanford Encyclopedia of Philosophy (first published 23 February 2005; substantive revision 5 February 2024). https://plato.stanford.edu/entries/pythagoras/"

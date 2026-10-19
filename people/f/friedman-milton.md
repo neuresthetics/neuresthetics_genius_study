@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): 'not reconciled' replaced by the auditor's explanation of the Hammond pages (1183–1217; '1107-1140' is the PDF's file label, where Michaud's article starts). No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): FR4, family_religion how_known the right way round (the child pushed his parents to be more observant, S3), with the tension against Hammond's 'Orthodox Jewish beliefs' noted; note, Hammond's page range 1183–1217 added to S4. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 120). Basics from Britannica (Bruce J. Caldwell; Britannica Editors) and his Nobel autobiography; religion from the 1986 Los Angeles Times profile (his own words, interview) and J. Daniel Hammond's 2021 essay (reporting Two Lucky People). Not a scientist (P30; economics, as for Keynes). primary_system AGNOS at 0.5 (interview); A BELOW_THRESHOLD (P20); B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Span 1956–1967 (0.5). Not plotted. Draft, not reviewed."}
 
@@ -204,7 +205,7 @@ sources:
     citation: "Hammond, J. Daniel. \"God and Man at the University of Chicago: Religious Commitments of Three Economists.\" Studia Gilsoniana 10, no. 5 (2021): 1183–1217. DOI 10.26385/SG.100446. PDF: http://gilsonsociety.com/files/1107-1140-Hammond-46.pdf"
     url: "http://gilsonsociety.com/files/1107-1140-Hammond-46.pdf"
     accessed: 2026-10-19
-    reliability_note: "Scholarly article by an economic historian (Wake Forest) summarising and quoting Two Lucky People; read in the search index extract of the PDF's opening section. Page range 1183–1217 from PhilPapers (batch V audit note); the PDF's file name reads '1107-1140', not reconciled."
+    reliability_note: "Scholarly article by an economic historian (Wake Forest) summarising and quoting Two Lucky People; read in the search index extract of the PDF's opening section. Pages 1183–1217: the journal's own table of contents for the issue (Studia Gilsoniana 10, no. 5, special issue, 2021) lists Hammond at 1183, the article's first-page header reads 1183–1217, and Hammond's Wake Forest page and PhilPapers agree; in the same table of contents 1107 is where Michaud's article starts, so '1107-1140' in the PDF's file name is the site's file label, not a page range (batch W audit note)."
     used_for: [worldview, childhood, heritage]
   - id: S5
     type: secondary

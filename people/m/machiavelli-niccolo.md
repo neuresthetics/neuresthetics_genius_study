@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): the Esortazione alla penitenza details and quotation marked as coming from the batch V audit's reading, not the coder's. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): MC4, Prince ch. 26 locator p. 99 -> p. 100 (scan p. 110); MC8, the three Discorsi statements relabelled from scholarly edition to the web-copy label (primary transcription, unscanned); ruling V2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with the Esortazione alla penitenza as a lead; note, SEP dates added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 122). Basics from Britannica (Harvey Mansfield) and SEP (Cary Nederman); own-voice passages read in Italian on Wikisource: Il Principe chs. 25–26 (1814 edition, proofread against scans) and Discorsi I.12, I.56, II.5 (Martelli text). Not a scientist (P30). primary_system BELOW_THRESHOLD (scholars divide: anti-Christian, conventional piety, Christian); A, B, D, E BELOW_THRESHOLD; C UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1513–1519 (0.5). Not plotted. Draft, not reviewed."}
 
@@ -83,7 +84,7 @@ worldview:
   nominal_affiliations:
     - {value: "Catholic Florence; listened to Savonarola's sermons (1498)", certainty: 0.5, cites: [{source: S1, locator: "'Early life and political career'"}], how_known: "Britannica. Context only."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Scholars divide (S2 §4): many read him as 'profoundly anti-Christian, preferring the pagan civil religions'; Parel finds an 'essentially pagan' astral cosmos; others 'a man of conventional, if unenthusiastic, piety'; Grazia, Viroli and Nederman find a Christian, divinely ordered cosmos. Britannica: The Prince 'brought him a reputation as an atheist' (S1). His own texts read are mixed (statements): God 'does not want to do everything' so as not to take away free will (Prince 26), beside a debunking account of miracles 'even in false religions' (Discorsi I.12). Contested readings with no decisive own-voice profession, so below threshold; CHRIST is the named lead. Ruling V2 (v8's call on the auditor's advice, batch V audit): the Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147, 25% transcribed, undated) does not lift CHRIST: it was a confraternity address given on assignment ('per ubbidire a' miei maggiori'), it is undated (P39), and scholars divide on his sincerity (S2 §4). Cited as a lead only (not read in full)."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Scholars divide (S2 §4): many read him as 'profoundly anti-Christian, preferring the pagan civil religions'; Parel finds an 'essentially pagan' astral cosmos; others 'a man of conventional, if unenthusiastic, piety'; Grazia, Viroli and Nederman find a Christian, divinely ordered cosmos. Britannica: The Prince 'brought him a reputation as an atheist' (S1). His own texts read are mixed (statements): God 'does not want to do everything' so as not to take away free will (Prince 26), beside a debunking account of miracles 'even in false religions' (Discorsi I.12). Contested readings with no decisive own-voice profession, so below threshold; CHRIST is the named lead. Ruling V2 (v8's call on the auditor's advice, batch V audit): the Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147, 25% transcribed, undated) does not lift CHRIST: it was a confraternity address given on assignment ('per ubbidire a' miei maggiori'), it is undated (P39), and scholars divide on his sincerity (S2 §4). Cited as a lead only; its details and quotation come from the batch V audit's reading, not the coder's."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Lead: Grazia, Viroli, Nederman (S2 §4); Prince 26 on God and free will; the Esortazione alla penitenza (‘ogni cosa è creata per onore e per bene dell’uomo’, per the batch V audit; ruling V2: lead only)."}
@@ -188,7 +189,7 @@ review:
     - "Discorsi quotations are from a Wikisource text of the Martelli edition without scans (web copy)."
     - "Span end is a coder's call (1519 vs 1525)."
   open_questions:
-    - "Discorsi I.11–15, II.2; letter to Guicciardini, 17 May 1521; Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147; a lead under ruling V2, not read)."
+    - "Discorsi I.11–15, II.2; letter to Guicciardini, 17 May 1521; Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147; a lead under ruling V2, not read by the coder; the quotation in candidate_codes comes from the batch V audit's reading)."
 
 sources:
   - id: S1

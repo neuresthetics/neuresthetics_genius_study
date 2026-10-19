@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): S3 (Tingen, a music journalist's book) kind 'scholarly book' -> other. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): DV4, Tingen's Miles Beyond ch. 1 recorded as S3, an openable secondary quotation of Miles p. 411 (book still unread); ruling V3 (v8's call on the auditor's advice): primary_system stays UNKNOWN. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 119). Basics from Britannica (Britannica Editors, 18 October 2026). No statement of his on God, religion or nature read: the autobiography Miles (1989) was not available, and the one article quoting its religion passage could not be opened. Not a scientist (P30). primary_system, A–E and mid_basin UNKNOWN. Span 1949–1970 (0.5). Not plotted. Draft, not reviewed."}
 
@@ -155,7 +156,7 @@ sources:
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review]
   - id: S3
     type: secondary
-    kind: "scholarly book"
+    kind: other
     author: "Paul Tingen"
     citation: "Tingen, Paul. Miles Beyond: The Electric Explorations of Miles Davis, 1967–1991 (New York: Billboard Books, 2001), ch. 1. Author's web copy: https://tingen.org/miles-beyond-chapter-1/"
     url: "https://tingen.org/miles-beyond-chapter-1/"

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (CO4) dedication locator djvu p. 7 -> p. 8 in all five cites (statement, nominal_affiliations, self_described relation, D and its alternative), and the inflected form 'Reipublicæ ecclesiasticæ conducere' quoted in place of 'Respublica ecclesiastica'. Ruling W1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, CHRIST the lead. (Notes) S1 credits Westman and Britannica Editors; Britannica and SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 123). Basics from Britannica (Robert S. Westman) and SEP (Sheila Rabin). Own voice read in Latin in the 1543 De revolutionibus on Latin Wikisource (dedication to Paul III, proofread; I.9 proofread; I.10 not yet proofread). Scientist (P30). primary_system BELOW_THRESHOLD (CHRIST lead; generic creator language plus a canon's office, by analogy with ruling U2); A 1 (0.7, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D 2 (0.5, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Span 1514–1543 (0.5). Plotted (faded). Draft, not reviewed."}
 
 identity:
@@ -87,9 +88,9 @@ worldview:
   working_years: {value: "1514–1543", certainty: 0.5, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Canon of the Frombork (Warmia) cathedral chapter from 1495/1497 to his death; not a priest", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "§1"}], how_known: "Both sources. Office at membership level, not a code."}
-    - {value: "Dedicated De revolutionibus to Pope Paul III, offering his work to the 'Respublica ecclesiastica' (calendar reform)", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 7)"}, {source: S2, locator: "§2.5 ('probably for political reasons')"}], how_known: "His dedication; SEP reads the dedication as probably political. Context."}
-  self_described_science_religion_relation: {value: "Mathematics is for mathematicians: critics 'ignorant of mathematics' who twist 'some passage of Scripture' against astronomy are to be disregarded, as Lactantius spoke 'childishly' of the Earth's shape (1542)", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 7)"}, {source: S1, locator: "'Early life and education' (last paragraph)"}, {source: S2, locator: "§2.5"}], how_known: "His dedication, published 1543; Britannica dates its composition to 1542; SEP glosses it as 'theologians should not meddle with it'."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Coder's call, by analogy with ruling U2 (Cervantes). His own words read name a creator but nothing specifically Christian: the world machine was founded 'propter nos, ab optimo & regularissimo omnium opifice' (dedication), gravity is implanted 'à divina providentia opificis universorum' (I.9), and the cosmos is 'divina haec Opt. Max. fabrica' (I.10). His church office is membership (CHRIST do_not_use_when), and the dedication to the Pope is 'probably for political reasons' (S2 §2.5). CHRIST is the named lead; a profession of doctrine (Christ, the Church's teaching) in his own words would restore it. Flagged for the auditor (RQ-W1)."}
+    - {value: "Dedicated De revolutionibus to Pope Paul III, offering his work as useful to the Church's calendar reform ('Reipublicæ ecclesiasticæ conducere')", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}, {source: S2, locator: "§2.5 ('probably for political reasons')"}], how_known: "His dedication; SEP reads the dedication as probably political. Context."}
+  self_described_science_religion_relation: {value: "Mathematics is for mathematicians: critics 'ignorant of mathematics' who twist 'some passage of Scripture' against astronomy are to be disregarded, as Lactantius spoke 'childishly' of the Earth's shape (1542)", certainty: 0.7, cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}, {source: S1, locator: "'Early life and education' (last paragraph)"}, {source: S2, locator: "§2.5"}], how_known: "His dedication, published 1543; Britannica dates its composition to 1542; SEP glosses it as 'theologians should not meddle with it'."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Coder's call, by analogy with ruling U2 (Cervantes). His own words read name a creator but nothing specifically Christian: the world machine was founded 'propter nos, ab optimo & regularissimo omnium opifice' (dedication), gravity is implanted 'à divina providentia opificis universorum' (I.9), and the cosmos is 'divina haec Opt. Max. fabrica' (I.10). His church office is membership (CHRIST do_not_use_when), and the dedication to the Pope is 'probably for political reasons' (S2 §2.5). CHRIST is the named lead; a profession of doctrine (Christ, the Church's teaching) in his own words would restore it. Ruling W1 (v8's call on the auditor's advice, batch W audit): stays BELOW_THRESHOLD, CHRIST the lead."}
   secondary_system: {value: UNKNOWN, how_known: "None (P29)."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Named lead: Catholic canon; creator language in his dedication to the Pope. Not chosen: no own-voice doctrinal profession read (ruling U2 by analogy)."}
@@ -119,11 +120,11 @@ worldview:
       value: 2
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 7)"}, {source: S2, locator: "§2.5"}]
+      cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}, {source: S2, locator: "§2.5"}]
       rationale: "Two domains: in astronomy, mathematics decides, and critics who reach a verdict 'propter aliquem locum scripturae, male ad suum propositum detortum' are to be scorned ('tanquam temerarium contemnam'); 'Mathemata mathematicis scribuntur'. He says the passage is misread, not that Scripture is overruled, and offers the work to the Church's calendar reform, so revelation keeps its own domain (D 2 anchor, P27). Named alternative 3: he states no religious domain beyond leaving theology to theologians."
       how_known: "His dedication (written 1542, printed 1543). 0.5: the other domain is the coder's inference, and SEP reads the dedication as 'probably for political reasons'."
       alternatives:
-        - {value: 3, note: "Religion's say not stated at all in the passage.", cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 7)"}]}
+        - {value: 3, note: "Religion's say not stated at all in the passage.", cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}]}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Lead toward 3–4: gravity, a natural appetency in Earth's parts, is 'credibile' also in the Sun, Moon and planets (I.9), one rule for Earth and heavens. But it is one property, stated as credible, and says nothing of living beings or humans; working science alone does not score E (P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "P4 test: A 1 at 0.7 passes, but B 3 is only at 0.5, under the test's 0.7 bar (Kepler precedent)."}
   statements:
@@ -137,9 +138,9 @@ worldview:
       verified_on: 2026-10-19
       note: "Latin Wikisource transcription of the 1543 Nuremberg edition, page proofread (level 4). Composed 1542 (S1), printed 1543."
     - text: "Si fortasse erunt ματαιόλογοι, qui cum omnium Mathematum ignari sint, tamen de illis indicium sibi sumunt, propter aliquem locum scripturæ, male ad suum propositum detortum, ausi fuerint meum hoc institutum reprehendere ас insectari: illos nihil moror, adeo ut etiam illorum iudicium tanquam temerarium contemnam. Non enim obscurum est Lactantium, celebrem alioqui scriptorem, sed Mathematicum parum, admodum pueriliter de forma terræ loqui [...] Mathemata mathematicis scribuntur"
-      cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 7)"}]
+      cites: [{source: S3, locator: "Praefatio Authoris (djvu p. 8)"}]
       date: "1542"
-      context: "Same dedication, on critics who might cite Scripture against him; he then offers the work to the calendar reform of the 'Respublica ecclesiastica'."
+      context: "Same dedication, on critics who might cite Scripture against him; he then offers the work as useful to the Church's calendar reform ('Reipublicæ ecclesiasticæ conducere', same page)."
       axes: [D_authority]
       kind: "written profession (public)"
       verified_against: "primary transcription"
@@ -207,21 +208,21 @@ review:
     - "Commentariolus date differs by source (1508–1514 vs 1510–1514); span start is the coder's pick."
     - "I.10 page not yet proofread on Wikisource; supporting only."
   open_questions:
-    - "RQ-W1: primary_system BELOW_THRESHOLD (CHRIST lead) vs CHRIST 0.5 from creator language plus the dedication to the Pope."
+    - "Settled (ruling W1, v8's call on the auditor's advice, batch W audit): primary_system stays BELOW_THRESHOLD with CHRIST as the lead; an own-voice profession of doctrine would restore CHRIST."
     - "Read the Commentariolus and the Letter against Werner for statements on God or nature."
 
 sources:
   - id: S1
-    type: secondary
+    type: tertiary
     kind: encyclopedia
-    author: "Robert S. Westman (Britannica)"
-    citation: "Westman, Robert S. \"Nicolaus Copernicus.\" Encyclopaedia Britannica (updated 15 October 2026). https://www.britannica.com/biography/Nicolaus-Copernicus. Read live 2026-10-19."
+    author: "Robert S. Westman and Britannica Editors"
+    citation: "Westman, Robert S., and Britannica Editors. \"Nicolaus Copernicus.\" Encyclopaedia Britannica (updated 15 October 2026). https://www.britannica.com/biography/Nicolaus-Copernicus. Read live 2026-10-19."
     url: "https://www.britannica.com/biography/Nicolaus-Copernicus"
     accessed: 2026-10-19
     reliability_note: "Signed body read through 'Early life and education'; question boxes used only where the body repeats them."
     used_for: [identity, basics, contribution, childhood, worldview, timing, institutions, collaborators]
   - id: S2
-    type: secondary
+    type: tertiary
     kind: encyclopedia
     author: "Sheila Rabin"
     citation: "Rabin, Sheila. \"Nicolaus Copernicus.\" Stanford Encyclopedia of Philosophy (first published 30 November 2004; substantive revision 29 September 2023). https://plato.stanford.edu/entries/copernicus/"
