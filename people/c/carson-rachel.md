@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 213). Source: Britannica scholars edition (The Editors, unsigned, read in full). Lasting work: Silent Spring (1962); she 'left behind some of the most influential environmental writing ever published' (S1). The sea books (1941, 1951, 1955) are praised and best-selling, but S1 gives no lasting claim for them (P13). Span 1962, age 55. Scientist (aquatic biologist, U.S. Bureau of Fisheries / Fish and Wildlife Service, 1936–1952): B 3 at 0.5, alt 4 (P35). Worldview: no own words read; primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: not a scientist for B under RQ-AA9-1 (B UNKNOWN, alternative B 3 at 0.5); National Book Award 1952 at 0.7 (National Book Foundation, S3)."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 213). Source: Britannica scholars edition (The Editors, unsigned, read in full). Lasting work: Silent Spring (1962); she 'left behind some of the most influential environmental writing ever published' (S1). The sea books (1941, 1951, 1955) are praised and best-selling, but S1 gives no lasting claim for them (P13). Span 1962, age 55. Not a scientist for B under RQ-AA9-1 (v8's call on the auditor's advice; work, not job): her only lasting item, Silent Spring, is a synthesis and public argument, not a result of her own; B UNKNOWN, alternative B 3 at 0.5 (P35) if her biology counted. Worldview: no own words read; primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: carson-rachel
@@ -53,7 +54,7 @@ contribution:
     - {value: "The Sea Around Us", year: 1951, kind: "book", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica."}
     - {value: "The Edge of the Sea", year: 1955, kind: "book", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica."}
   honours:
-    - {value: "National Book Award (The Sea Around Us)", year: 1952, certainty: 0.5, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica gives the award but not its year; 1952 is the coder's inference from the 1951 book (alternative UNKNOWN)."}
+    - {value: "National Book Award for Nonfiction (The Sea Around Us)", year: 1952, certainty: 0.7, cites: [{source: S1, locator: "para. 3"}, {source: S3, locator: "book page"}], how_known: "National Book Foundation: 'Winner, National Book Awards 1952 for Nonfiction' (S3)."}
   definition_fit: {value: "clearly meets", rationale: "Most influential environmental writing (S1).", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "Britannica."}
 
 childhood:
@@ -81,22 +82,14 @@ worldview:
   candidate_codes_considered: []
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Nothing first-hand read (P19)."}
-    B_cause: 
-      value: 3
-      basis: inference_from_work
-      certainty: 0.5
-      cites: [{source: S1, locator: "para. 2–4"}]
-      how_known: "Scientist (P30). B from working science with no statement of their own on law and exception, so 3 at 0.5, alternative 4, never 4 (P35)."
-      rationale: "Aquatic biologist (1936–1952) whose books combine 'scientific accuracy and thoroughness' (S1); Silent Spring argues from pesticide effects in ecosystems: lawful nature in her science. Alternative 4."
-      alternatives:
-        - {value: 4, note: "Working science cannot tell lawful-with-exceptions from exceptionless (P35).", cites: [{source: S1, locator: "para. 2–4"}]}
+    B_cause: {value: UNKNOWN, how_known: "RQ-AA9-1 (v8's call on the auditor's advice): P30 rule 11 asks whether a listed lasting contribution is a result about natural systems, not what the person's job was (P33 logic; Johnson, Bell, Hinton). Silent Spring is lasting for 'creating worldwide awareness' (S1), a synthesis for the public, so she is not a scientist for B. Alternative: B 3 at 0.5, alt 4 (P35), from her work as an aquatic biologist (1936–1952)."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Scientist call: she held a research biologist post and Silent Spring makes testable empirical claims about organisms; but her lasting work is a book for the public, so an auditor may read her under P33's spirit as a science writer. Leads for worldview: Lear, Witness for Nature (1997); Always, Rachel (1995) letters."
+  coder_notes: "Scientist call settled by RQ-AA9-1: not a scientist for B (lasting work is a public synthesis). Leads for worldview: Lear, Witness for Nature (1997); Always, Rachel (1995) letters."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -131,10 +124,9 @@ review:
   controversies: []
   data_quality_flags:
     - "Worldview: no source."
-    - "Scientist call (biologist vs science writer) for the auditor."
+    - "Not a scientist for B (RQ-AA9-1)."
   open_questions:
     - "Own words on belief (Lear 1997; Always, Rachel)."
-    - "Is she a scientist for B (P30, P33)?"
 
 sources:
   - id: S1
@@ -155,6 +147,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "institutional page"
+    author: "National Book Foundation"
+    citation: "National Book Foundation. 'The Sea Around Us.' https://www.nationalbook.org/books/the-sea-around-us/"
+    url: "https://www.nationalbook.org/books/the-sea-around-us/"
+    accessed: 2026-10-19
+    reliability_note: "Award page, read in full."
+    used_for: [contribution]
 ---
 
 ## Summary
@@ -191,8 +192,9 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Own words; scientist call.
+- Own words.
 
 ## Research log
 
+- 2026-10-20: AA9 audit fixes: not a scientist for B under RQ-AA9-1 (B UNKNOWN, alternative B 3 at 0.5); National Book Award 1952 at 0.7 (National Book Foundation, S3).
 - 2026-10-20: Read Britannica (scholars edition).

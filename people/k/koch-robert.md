@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 215). Source: Britannica scholars edition, signed by Lloyd Grenfell Stevenson (read in full); Britannica students edition (S3) for the death-day conflict. Lasting: the anthrax life cycle (announced at Breslau, 1876), which 'afforded for the first time convincing proof of the definite causal relation of a particular microorganism to a particular disease' (S1); Koch's postulates (named after him; S1 gives no year). Tuberculosis (1882) and cholera (1883) discoveries carry prize-time praise only in S1 (Nobel 1905), so not listed as lasting (P13). Span 1876 at 0.5 (the postulates are undated in S1, so the end may be later), age 33. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: postulates candidate year 1884 (S4), span alternative 1876–1884; death 27 May 1910 at 0.7 (NobelPrize.org, S5); region of work Eastern Europe (Wollstein), alternative Western Europe."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 215). Source: Britannica scholars edition, signed by Lloyd Grenfell Stevenson (read in full); Britannica students edition (S3) for the death-day conflict. Lasting: the anthrax life cycle (announced at Breslau, 1876), which 'afforded for the first time convincing proof of the definite causal relation of a particular microorganism to a particular disease' (S1); Koch's postulates (named after him; S1 gives no year; candidate 1884, Die Aetiologie der Tuberkulose, Mitt. Kaiserl. Gesundheitsamte II, S4). Tuberculosis (1882) and cholera (1883) discoveries carry prize-time praise only in S1 (Nobel 1905), so not listed as lasting (P13). Span 1876 at 0.5, alternative 1876–1884 (postulates candidate year), age 33. Death 27 May 1910 at 0.7 (NobelPrize.org, S5). Region of work Eastern Europe (Wollstein, now Wolsztyn, Poland, where the span took place: AA6 rule, P3 modern country), alternative Western Europe. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: koch-robert
@@ -32,12 +33,12 @@ basics:
     date: {value: "1843-12-11", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Clausthal, Hannover", modern_name: "Clausthal-Zellerfeld, Germany", polity_then: "Kingdom of Hanover", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   death:
-    date: {value: "1910-05-27", certainty: 0.5, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "para. 6"}], how_known: "Scholars edition: May 27; the students edition (S3) gives May 28. 0.5; alternative 1910-05-28."}
+    date: {value: "1910-05-27", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S5, locator: "Died"}, {source: S3, locator: "para. 6"}], how_known: "Britannica scholars edition and NobelPrize.org (S5): 27 May. The students edition (S3, para. 6) says 28 May; not a real dispute."}
     place: {value: "Baden-Baden", modern_name: "Baden-Baden, Germany", polity_then: "German Empire", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   first_lasting_contribution_year: {value: 1876, certainty: 0.7, cites: [{source: S1, locator: "Anthrax research"}], how_known: "The anthrax life cycle 'was announced and illustrated at Breslau in 1876' (S1); P30 first public statement."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Anthrax research"}], how_known: "1876 (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Germany (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Early training; Contributions"}], how_known: "Wollstein (Prussian Posen, now Poland) for the 1876 work, then Berlin; coder's call: Prussia counts as Western Europe; alternative Eastern Europe (Wollstein, now Wolsztyn, Poland, where the span took place: AA6 rule)."}
+  region_of_work: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "Early training; Anthrax research"}], how_known: "The 1876 span work was done at Wollstein, now Wolsztyn, Poland (AA6 rule; P3 modern country; regions.csv puts Poland in Eastern Europe). Alternative Western Europe (Berlin, home region)."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
   languages_of_work: {value: ["German"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Coder's reading: German papers and Berlin societies."}
   occupations: {value: ["physician", "bacteriologist"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -46,7 +47,7 @@ contribution:
   fields: {value: ["medicine", "bacteriology"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica: 'one of the founders of bacteriology'."}
   lasting_original_contributions:
     - {value: "Life cycle of the anthrax bacillus (spore formation), the first proof that a specific microorganism causes a specific disease", year: 1876, kind: "discovery", lasting: "'The anthrax work afforded for the first time convincing proof of the definite causal relation of a particular microorganism to a particular disease' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Anthrax research"}], how_known: "Announced at Breslau, 1876 (S1)."}
-    - {value: "Koch's postulates (four criteria for proving that a disease is caused by a specific organism)", year: UNKNOWN, kind: "method", lasting: "'called Koch's postulates' (S1): named after him", certainty: 0.5, cites: [{source: S1, locator: "Contributions to general bacteriology and pathology"}], how_known: "S1 places them after his move to the Imperial Health Office in Berlin (after 1878) but gives no year."}
+    - {value: "Koch's postulates (four criteria for proving that a disease is caused by a specific organism)", year: UNKNOWN, kind: "method", lasting: "'called Koch's postulates' (S1): named after him", certainty: 0.5, cites: [{source: S1, locator: "Contributions to general bacteriology and pathology"}, {source: S4, locator: "bibliographic record"}], how_known: "S1 places them after his move to the Imperial Health Office in Berlin but gives no year. Candidate year 1884: Die Aetiologie der Tuberkulose, Mittheilungen aus dem Kaiserlichen Gesundheitsamte II, pp. 1–88 (S4; the paper that presents them, after Loeffler's 1883 formulation per the AA9 audit; text not read here)."}
   evidence_of_impact:
     - {value: "Koch's postulates", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "Contributions to general bacteriology and pathology"}], how_known: "Britannica."}
     - {value: "Nobel Prize for Physiology or Medicine (1905), for tuberculosis", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -76,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1876", certainty: 0.5, cites: [{source: S1, locator: "Anthrax research"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1876", certainty: 0.5, cites: [{source: S1, locator: "Anthrax research"}], how_known: "Equals timing.major_work_period; alternative 1876–1884."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own words on belief read in S1."}
@@ -110,7 +111,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1876", certainty: 0.5, cites: [{source: S1, locator: "Anthrax research"}], how_known: "The one dated lasting item (P29, P30); 0.5 because the postulates are undated in S1 and could extend the span (to a year after 1878)."}
+  major_work_period: {value: "1876", certainty: 0.5, cites: [{source: S1, locator: "Anthrax research"}], how_known: "The one dated lasting item (P29, P30); 0.5 under the weakest-work rule. Alternative 1876–1884 (postulates candidate year, S4)."}
   age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "Introduction; Anthrax research"}], how_known: "1876 − 1843 = 33 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -135,10 +136,9 @@ review:
   controversies: []
   data_quality_flags:
     - "Worldview: no source."
-    - "Postulates undated in S1; span end may be later."
-    - "Death day 27 vs 28 May 1910."
+    - "Postulates candidate year 1884; span alternative 1876–1884."
   open_questions:
-    - "Year of the postulates (a source giving it would set the span end)."
+    - "Read the 1884 paper to confirm the postulates and fix the span end."
     - "Own words on belief (Brock 1988)."
 
 sources:
@@ -167,7 +167,25 @@ sources:
     citation: "'Robert Koch.' Britannica (students edition). https://kids.britannica.com/students/article/Robert-Koch/275309"
     url: "https://kids.britannica.com/students/article/Robert-Koch/275309"
     accessed: 2026-10-19
-    reliability_note: "Read in full; used only for the death-day conflict."
+    reliability_note: "Read in full; used only for the death-day note."
+    used_for: [basics]
+  - id: S4
+    type: secondary
+    kind: "database"
+    author: "WorldCat"
+    citation: "WorldCat record: Koch, Robert. 'Die Aetiologie der Tuberkulose.' Mittheilungen aus dem Kaiserlichen Gesundheitsamte 2 (Berlin: Hirschwald, 1884), pp. 1–88. OCLC 880639195. https://search.worldcat.org/title/880639195"
+    url: "https://search.worldcat.org/title/880639195"
+    accessed: 2026-10-19
+    reliability_note: "Bibliographic record read; the paper itself not read."
+    used_for: [contribution]
+  - id: S5
+    type: secondary
+    kind: "institutional page"
+    author: "NobelPrize.org"
+    citation: "'Robert Koch – Facts.' NobelPrize.org. https://www.nobelprize.org/prizes/medicine/1905/koch/facts/"
+    url: "https://www.nobelprize.org/prizes/medicine/1905/koch/facts/"
+    accessed: 2026-10-19
+    reliability_note: "Facts page, read in full."
     used_for: [basics]
 ---
 
@@ -209,4 +227,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA9 audit fixes: postulates candidate year 1884 (S4), span alternative 1876–1884; death 27 May 1910 at 0.7 (NobelPrize.org, S5); region of work Eastern Europe (Wollstein), alternative Western Europe.
 - 2026-10-20: Read Britannica (Stevenson, scholars edition) and the students edition.

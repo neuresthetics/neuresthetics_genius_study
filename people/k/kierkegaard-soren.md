@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 218). Source: SEP 'Søren Kierkegaard' (John Lippitt and C. Stephen Evans, 2023, read in full). Lasting: the authorship, 'almost all of which was written in the 1840s', from Either/Or (1843), which 'he considered properly to begin his authorship'; 'often dubbed the \"father of existentialism\"', it influenced Heidegger, Sartre, Jaspers, Wittgenstein and others (S1). Span 1843–1850 at 0.5 (Either/Or to Practice in Christianity), alternative 1843–1855 (The Moment), age 30. Worldview: CHRIST at 0.5 (scholarly_reconstruction; S1: 'known as a defender of Christian faith'; in The Point of View, in his own voice, he 'claims that he was from first to last a religious author'; S1 paraphrase, not quoted). A UNKNOWN: the one quoted line on God (Sickness Unto Death) is pseudonymous (Anti-Climacus), so not his own voice (P42). Not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: span certainty 0.7 (weakest-work rule); note that the P42 pseudonym treatment rests on analogy."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 218). Source: SEP 'Søren Kierkegaard' (John Lippitt and C. Stephen Evans, 2023, read in full). Lasting: the authorship, 'almost all of which was written in the 1840s', from Either/Or (1843), which 'he considered properly to begin his authorship'; 'often dubbed the \"father of existentialism\"', it influenced Heidegger, Sartre, Jaspers, Wittgenstein and others (S1). Span 1843–1850 at 0.7 (Either/Or to Practice in Christianity), alternative 1843–1855 (The Moment), age 30. Worldview: CHRIST at 0.5 (scholarly_reconstruction; S1: 'known as a defender of Christian faith'; in The Point of View, in his own voice, he 'claims that he was from first to last a religious author'; S1 paraphrase, not quoted). A UNKNOWN: the one quoted line on God (Sickness Unto Death) is pseudonymous (Anti-Climacus), so not his own voice (P42, applied by analogy: P42 has no explicit pseudonym clause; this follows its character-voice addendum). Not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: kierkegaard-soren
@@ -76,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1843–1850", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1843–1850", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: 
@@ -90,7 +91,7 @@ worldview:
   candidate_codes_considered:
     - {code: CHRIST, reason: "Coded at 0.5 (S1)."}
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "The one quoted line on God in S1 ('releasing it from his hand, as it were', The Sickness Unto Death) is by the pseudonym Anti-Climacus, not his own voice (P42). Lead A 0 from his signed discourses."}
+    A_locus: {value: UNKNOWN, how_known: "The one quoted line on God in S1 ('releasing it from his hand, as it were', The Sickness Unto Death) is by the pseudonym Anti-Climacus, not his own voice (P42 by analogy with its character-voice addendum; P42 has no explicit pseudonym clause; he signed the book only as editor). Lead A 0 from his signed discourses."}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement on nature read."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
@@ -109,7 +110,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1843–1850", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "The body of work runs from Either/Or (1843) to Practice in Christianity (1850) (P29, P30); 0.5, since S1 dates the influential work only as 'almost all ... written in the 1840s'. Alternative 1843–1855 (the 1854–55 attack on the church, The Moment)."}
+  major_work_period: {value: "1843–1850", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "The body of work runs from Either/Or (1843) to Practice in Christianity (1850) (P29, P30); 0.7, following the one lasting item (AA4 weakest-work rule); both ends are dated in S1. Alternative 1843–1855 (the 1854–55 attack on the church, The Moment)."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "1843 − 1813 = 30 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -198,4 +199,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA9 audit fixes: span certainty 0.7 (weakest-work rule); note that the P42 pseudonym treatment rests on analogy.
 - 2026-10-20: Read SEP (Lippitt and Evans, 2023).
