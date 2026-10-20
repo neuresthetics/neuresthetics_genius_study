@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 210). Source: Britannica, signed by Carl B. Boyer (scholars edition, read in full). Lasting work: his method for tangents and maxima and minima, defended in the 1638 controversy with Descartes through Mersenne and 'fully justified some 30 years later in the calculus of Sir Isaac Newton' (he is 'regarded as the inventor of the differential calculus'); 'Fermat's lesser theorem', announced in letters (1640; 'A more important result'); and the principle of least time for refraction, 'twenty years' after Descartes's 1637 Dioptrique (so about 1657), later 'verified experimentally' by Fizeau (S1). Span 1638–1657 at 0.5 (1657 is inferred from 'twenty years later'), age 37. Scientist (P30): the principle of least time is a law about light; B 3 at 0.5, alternative 4 (P35). Worldview: no own words read; primary education in a Franciscan school (S1). primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: least-time item and span end take 1662 as alternative (1638–1662); lesser theorem 0.7 on the 18 October 1640 letter to Frenicle (Pengelley, S3)."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 210). Source: Britannica, signed by Carl B. Boyer (scholars edition, read in full). Lasting work: his method for tangents and maxima and minima, defended in the 1638 controversy with Descartes through Mersenne and 'fully justified some 30 years later in the calculus of Sir Isaac Newton' (he is 'regarded as the inventor of the differential calculus'); 'Fermat's lesser theorem', announced in letters (1640; 'A more important result'); and the principle of least time for refraction, 'twenty years' after Descartes's 1637 Dioptrique (so about 1657), later 'verified experimentally' by Fizeau (S1). Span 1638–1657 at 0.5 (1657 is inferred from 'twenty years later'; alternative end 1662, the 'Analysis ad refractiones' of 1 January 1662, where the least-time minimisation itself is first worked out; the August 1657 letter states only the qualitative shortest-path principle), age 37. AA8 audit: lesser theorem now 0.7 on the letter to Frenicle of 18 October 1640 (Œuvres de Fermat II, pp. 206–212, as quoted by Pengelley, S3). Scientist (P30): the principle of least time is a law about light; B 3 at 0.5, alternative 4 (P35). Worldview: no own words read; primary education in a Franciscan school (S1). primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: de-fermat-pierre
@@ -47,8 +48,8 @@ contribution:
   fields: {value: ["mathematics", "number theory", "optics"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Method of tangents and of maxima and minima (equivalent to differentiation)", year: 1638, kind: "method", lasting: "'led him to be regarded as the inventor of the differential calculus'; 'Fermat's views were fully justified some 30 years later in the calculus of Sir Isaac Newton' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Introduction; Disagreement with other Cartesian views"}], how_known: "Developed in the mid-1630s; first documented public statement the 1638 controversy (S1)."}
-    - {value: "Fermat's lesser (little) theorem", year: 1640, kind: "discovery", lasting: "'now known as Fermat's lesser theorem'; he is 'often called the founder of the modern theory of numbers' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Work on theory of numbers"}], how_known: "S1 dates his 1640 letters (on Fermat numbers, to Pascal and others); the lesser theorem's own letter is not dated in S1, so 0.5."}
-    - {value: "Principle of least time (law of refraction)", year: 1657, kind: "law or principle", lasting: "'His argument concerning the speed of light was found later to be in agreement with the wave theory of ... Huygens, and in 1849 it was verified experimentally by A.-H.-L. Fizeau' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "'Twenty years later' than Descartes's Dioptrique (1637), so about 1657; inferred, 0.5."}
+    - {value: "Fermat's lesser (little) theorem", year: 1640, kind: "discovery", lasting: "'now known as Fermat's lesser theorem'; he is 'often called the founder of the modern theory of numbers' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Work on theory of numbers"}, {source: S3, locator: "§1 (letter of 18 October 1640)"}], how_known: "Letter to Frenicle, 18 October 1640: 'Without fail, every prime number measures one of the powers −1 of any progression whatever, and the exponent of the said power is a submultiple of the given prime number −1' (S3, citing Œuvres de Fermat II, pp. 206–212). A June 1640 letter already gives the case a = 2 (S3)."}
+    - {value: "Principle of least time (law of refraction)", year: 1657, kind: "law or principle", lasting: "'His argument concerning the speed of light was found later to be in agreement with the wave theory of ... Huygens, and in 1849 it was verified experimentally by A.-H.-L. Fizeau' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "'Twenty years later' than Descartes's Dioptrique (1637), so about 1657 (the August 1657 letter to Cureau de la Chambre, qualitative principle); inferred, 0.5. Alternative 1662: the least-time minimisation itself, 'Analysis ad refractiones' (1 January 1662) and 'Synthesis ad refractiones' (1662) (AA8 audit; not read here)."}
   evidence_of_impact:
     - {value: "'often called the founder of the modern theory of numbers'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     - {value: "Fermat's last theorem, proved by Wiles (1995)", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "Work on theory of numbers"}], how_known: "Britannica."}
@@ -76,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1638–1657", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1638–1657", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "Equals timing.major_work_period; alternative 1638–1662."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own words on belief read. Franciscan schooling (S1) is context."}
@@ -111,7 +112,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1638–1657", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "Tangent-method controversy (1638) to the least-time principle (about 1657), the first and last lasting items (P29, P30); 0.5, following the weakest lasting item."}
+  major_work_period: {value: "1638–1657", certainty: 0.5, cites: [{source: S1, locator: "Disagreement with other Cartesian views"}], how_known: "Tangent-method controversy (1638) to the least-time principle (about 1657), the first and last lasting items (P29, P30); 0.5, following the weakest lasting item. Alternative 1638–1662 (least-time minimisation dated 1662)."}
   age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "Introduction; Disagreement with other Cartesian views"}], how_known: "1638 − 1601 = 37 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -137,7 +138,7 @@ review:
   controversies: []
   data_quality_flags:
     - "Worldview: no source."
-    - "Least-time date inferred (about 1657)."
+    - "Least-time date inferred (about 1657; alternative 1662)."
   open_questions:
     - "Scientist status via the least-time principle; religion (Mahoney)."
 
@@ -160,6 +161,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "journal article"
+    author: "David Pengelley"
+    citation: "Pengelley, David. 'How did Fermat discover his theorem?' arXiv:2502.11165 (2025). https://arxiv.org/abs/2502.11165"
+    url: "https://arxiv.org/abs/2502.11165"
+    accessed: 2026-10-19
+    reliability_note: "Preprint quoting the 18 October 1640 letter from Tannery and Henry, Œuvres de Fermat II, pp. 206–212; the letter section read."
+    used_for: [contribution]
 ---
 
 ## Summary
@@ -172,7 +182,7 @@ Beaumont-de-Lomagne; Toulouse [S1].
 
 ## Contribution and impact
 
-Tangents 1638; lesser theorem 1640; least time c. 1657 [S1].
+Tangents 1638; lesser theorem 1640 [S3]; least time c. 1657 (alt 1662) [S1].
 
 ## Childhood and education
 
@@ -200,4 +210,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA8 audit fixes: least-time item and span end take 1662 as alternative (1638–1662); lesser theorem 0.7 on the 18 October 1640 letter to Frenicle (Pengelley, S3).
 - 2026-10-19: Read Britannica (Boyer, scholars edition).

@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 212). Source: Britannica, signed by Alexander Poznansky (scholars edition, read in full). Lasting work: Romeo and Juliet (completed 1869; first performed 1870), 'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire'; his ballets, beginning with Swan Lake (premiere 20 February 1877), with which 'he revolutionized the genre'; and the Symphony No. 6 (Pathétique; premiere 16 October 1893), 'his most celebrated masterpiece' (S1). Dated by first performance (RQ-Z7-N1 analogue). Span 1870–1893, age 30. Worldview: S1 says the von Meck correspondence discussed 'religious faith', but no own words on belief are quoted. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: premiere days labelled Old Style (4 March 1877 and 28 October 1893 New Style); 1880 revision of Romeo and Juliet noted."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 212). Source: Britannica, signed by Alexander Poznansky (scholars edition, read in full). Lasting work: Romeo and Juliet (completed 1869; first performed 1870), 'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire'; his ballets, beginning with Swan Lake (premiere 20 February 1877 Old Style, 4 March New Style), with which 'he revolutionized the genre'; and the Symphony No. 6 (Pathétique; premiere 16 October 1893 Old Style, 28 October New Style), 'his most celebrated masterpiece' (S1). Dated by first performance (RQ-Z7-N1 analogue); S1's day dates are Old Style (Russian calendar); years are unaffected (P12). Romeo and Juliet's repertoire version is the 1880 revision; the 1870 premiere is still the first public statement of the work. Span 1870–1893, age 30. Worldview: S1 says the von Meck correspondence discussed 'religious faith', but no own words on belief are quoted. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: tchaikovsky-pyotr-ilyich
@@ -47,9 +48,9 @@ basics:
 contribution:
   fields: {value: ["music"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Romeo and Juliet (fantasy overture)", year: 1870, kind: "work", lasting: "'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Middle years"}], how_known: "Completed 1869; first performed 1870 (S1)."}
-    - {value: "Ballets (Swan Lake, The Sleeping Beauty, The Nutcracker)", year: 1877, kind: "body of work", lasting: "'he revolutionized the genre'; 'The influence of his experimentation is evident in the ballets of Sergey Prokofiev and Aram Khachaturian' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Years of fame; Legacy"}], how_known: "Swan Lake premiere 20 February 1877 (S1)."}
-    - {value: "Symphony No. 6 in B Minor (Pathétique)", year: 1893, kind: "work", lasting: "'his most celebrated masterpiece'; his last three symphonies 'would influence Gustav Mahler, Sergey Rachmaninoff, and Dmitry Shostakovich' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Final years; Legacy"}], how_known: "Premiere 16 October 1893 (S1)."}
+    - {value: "Romeo and Juliet (fantasy overture)", year: 1870, kind: "work", lasting: "'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Middle years"}], how_known: "Completed 1869; first performed 1870 (S1; 4/16 March 1870, Old/New Style). The version in the repertoire is the 1880 revision."}
+    - {value: "Ballets (Swan Lake, The Sleeping Beauty, The Nutcracker)", year: 1877, kind: "body of work", lasting: "'he revolutionized the genre'; 'The influence of his experimentation is evident in the ballets of Sergey Prokofiev and Aram Khachaturian' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Years of fame; Legacy"}], how_known: "Swan Lake premiere 20 February 1877 Old Style = 4 March 1877 New Style (S1)."}
+    - {value: "Symphony No. 6 in B Minor (Pathétique)", year: 1893, kind: "work", lasting: "'his most celebrated masterpiece'; his last three symphonies 'would influence Gustav Mahler, Sergey Rachmaninoff, and Dmitry Shostakovich' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Final years; Legacy"}], how_known: "Premiere 16 October 1893 Old Style = 28 October 1893 New Style (S1)."}
   evidence_of_impact:
     - {value: "Honorary doctorate, University of Cambridge (1893)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "Final years"}], how_known: "Britannica."}
     - {value: "Stravinsky: 'Tchaikovsky drew unconsciously from the true, popular sources of our race'", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "Legacy"}], how_known: "Britannica."}
@@ -192,4 +193,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA8 audit fixes: premiere days labelled Old Style (4 March 1877 and 28 October 1893 New Style); 1880 revision of Romeo and Juliet noted.
 - 2026-10-19: Read Britannica (Poznansky, scholars edition).

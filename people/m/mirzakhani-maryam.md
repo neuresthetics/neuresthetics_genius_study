@@ -7,8 +7,9 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA7)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fix: ICM 2022 survey locator §2.2."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 206, provisional). Sources: the IMU's 2014 Fields Medal statement 'The Work of Maryam Mirzakhani' (read in full) and the Simons Foundation obituary (Sumner, 2017, read in full). Lasting work (after the AA7 audit, v8's call on the auditor's advice): the Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems (arXiv preprints 2013); the ICM 2022 survey by Jon Chaika and Barak Weiss (S4, EMS Press, read in full; authors and wording verified) says 'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry'. The 2004 thesis results are dropped as lasting (P13, Lamarr/Johnson precedent: 'decisive step forward' and 'new and unexpected proof' are prize-time praise) and kept as a major work. Span 2013, age 36, at 0.5. Mathematician, not a scientist. Worldview: no own words read. primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -35,7 +36,7 @@ basics:
   death:
     date: {value: "2017-07-14", certainty: 0.7, cites: [{source: S2, locator: "para. 2"}], how_known: "Simons Foundation."}
     place: {value: UNKNOWN, how_known: "Place of death not stated in the sources read."}
-  first_lasting_contribution_year: {value: 2013, certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2"}], how_known: "Eskin–Mirzakhani preprint arXiv:1302.3320 (2013), the first public statement (P30); lasting per S4 ('has revolutionized the study of dynamics on translation surfaces'). 0.5: one lasting source."}
+  first_lasting_contribution_year: {value: 2013, certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2.2"}], how_known: "Eskin–Mirzakhani preprint arXiv:1302.3320 (2013), the first public statement (P30); lasting per S4 ('has revolutionized the study of dynamics on translation surfaces'). 0.5: one lasting source."}
   era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "Biography"}], how_known: "2013 (P2)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Iran (P3 exception: MENA)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Harvard, Princeton, Stanford; home-region alternative MENA (AA6 rule)."}
@@ -46,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["mathematics", "geometry", "dynamical systems"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "IMU."}
   lasting_original_contributions:
-    - {value: "Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems: rigidity of the SL2(R) action on moduli space (with Alex Eskin and Amir Mohammadi)", year: 2013, kind: "discovery", lasting: "'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry' (S4, Chaika and Weiss, ICM 2022); 'a major breakthrough' (S1)", certainty: 0.5, cites: [{source: S1, locator: "p. 3; References"}, {source: S4, locator: "§2"}], how_known: "arXiv preprints 1302.3320 and 1305.3015 (2013), the first public statements (P30). 0.5: one lasting source."}
+    - {value: "Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems: rigidity of the SL2(R) action on moduli space (with Alex Eskin and Amir Mohammadi)", year: 2013, kind: "discovery", lasting: "'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry' (S4, Chaika and Weiss, ICM 2022); 'a major breakthrough' (S1)", certainty: 0.5, cites: [{source: S1, locator: "p. 3; References"}, {source: S4, locator: "§2.2"}], how_known: "arXiv preprints 1302.3320 and 1305.3015 (2013), the first public statements (P30). 0.5: one lasting source."}
   evidence_of_impact:
     - {value: "Fields Medal 2014, the first woman to receive it", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S2, locator: "para. 1"}], how_known: "Simons Foundation."}
   major_works:
@@ -102,7 +103,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "2013", certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2"}], how_known: "The one listed lasting item (P29, P30); 0.5."}
+  major_work_period: {value: "2013", certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2.2"}], how_known: "The one listed lasting item (P29, P30); 0.5."}
   age_at_first_lasting_contribution: {value: 36, certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "2013 − 1977 = 36 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -209,4 +210,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA8 audit fix: ICM 2022 survey locator §2.2.
 - 2026-10-19: Read IMU Fields statement; Simons obituary.

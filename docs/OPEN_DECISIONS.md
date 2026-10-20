@@ -884,6 +884,11 @@ Process:
   - **P39 strict applied to Parmenides:** era UNKNOWN with -500 to 499 as the candidate, because Diogenes Laertius 9.23 (floruit in the 69th Olympiad, 504–501 BCE; birth about 540 BCE) competes with Plato's chronology (born about 515 BCE).
   - **P12 applied to Gandhi:** a statement whose year is agreed but whose day is disputed is dated at year level ('1921'), with the dispute in context.
   - Shelley change_log age corrected to 21 ('only 20' kept as a note). Cézanne's lasting Bathers identified as National Gallery NG6359, finished 1905.
+- **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AA8 audit at 40b9885):**
+  - **P21 label for encyclopedia entries:** an SEP or other encyclopedia article is a scholar's article, not a 'scholarly edition' (an edited text of the person's own work). Plotinus's SEP summary sentence is therefore not listed as a statement; PLATO 0.5 rests on the scholarly_reconstruction basis as before.
+  - **Least-time dating (Fermat):** the first statement (August 1657, qualitative) dates the item at 0.5 under P30; the 1662 'Analysis ad refractiones' is recorded as the alternative for the item and the span end (1638–1662). Lesser theorem 0.7 on the letter to Frenicle of 18 October 1640 (Œuvres II, pp. 206–212, quoted by Pengelley 2025).
+  - **P12 calendar labels:** Russian day dates before 1918 are labelled Old Style with the New Style equivalent (Tchaikovsky); years unchanged.
+  - **RQ-AA8-1 (OPEN, held for Jason; method change):** does a scholar's reconstruction of a non-scientist philosopher's account of nature (Plotinus, SEP §2: laws 'constant and immutable'; same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play') score B? Auditor recommends B 3 at 0.5 (scholarly_reconstruction), alternative 2. Plotinus's B stays UNKNOWN until Jason rules. Not chart-changing (A is BELOW_THRESHOLD); it would move him from 'neither' to 'no A' in the caption (37/22/85).
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

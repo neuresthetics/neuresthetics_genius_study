@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 211). Source: SEP 'Plotinus' (Paul Kalligas, 2024, read in full). Born 204 CE (inferred from Porphyry, S1); settled in Rome late 244; his treatises 'began to be composed ten years after his arrival in Rome' (about 254) and continued until his death in 270 (S1). Lasting work: the treatises collected by Porphyry as the Enneads; he 'is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism' (S1). Span 254–270 at 0.5 (composition range, RQ-Z9-N1; start inferred), age 50. Worldview: PLATO at 0.5 (scholarly_reconstruction): 'Plato's figure dominates Plotinus' thought' (S1). A BELOW_THRESHOLD: the One is 'beyond being' and transcendent (A 1 lead), but everything proceeds from it by emanation (A 2 lead); no source read settles the reading. Not a scientist; B UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 211). Source: SEP 'Plotinus' (Paul Kalligas, 2024, read in full). Born 204 CE (inferred from Porphyry, S1); settled in Rome late 244; his treatises 'began to be composed ten years after his arrival in Rome' (about 254) and continued until his death in 270 (S1). Lasting work: the treatises collected by Porphyry as the Enneads; he 'is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism' (S1). Span 254–270 at 0.5 (composition range, RQ-Z9-N1; start inferred), age 50. Worldview: PLATO at 0.5 (scholarly_reconstruction): 'Plato's figure dominates Plotinus' thought' (S1). A BELOW_THRESHOLD: the One is 'beyond being' and transcendent (A 1 lead), but everything proceeds from it by emanation (A 2 lead); no source read settles the reading. Not a scientist; B UNKNOWN pending RQ-AA8-1 (held for Jason): S1 §2 does reconstruct his account of nature (laws 'constant and immutable'; the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
 identity:
   id: plotinus
@@ -34,7 +35,7 @@ basics:
   death:
     date: {value: "270", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "SEP."}
     place: {value: UNKNOWN, how_known: "Place of death not stated in S1 (he taught in Rome until his death)."}
-  first_lasting_contribution_year: {value: 254, certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Treatises 'began to be composed ten years after his arrival in Rome' (late 244), so about 254 (S1); composition range (RQ-Z9-N1); inferred, 0.5."}
+  first_lasting_contribution_year: {value: 254, certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Treatises 'began to be composed ten years after his arrival in Rome' (late 244), so about 254; 'Plotinus began composing his works approximately in the last sixteen years of his life, which means he started when he was already at the mature age of fifty' (S1); composition range (RQ-Z9-N1); 0.5."}
   era_bucket: {value: "-500 to 499", certainty: 1.0, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "254, and every year of his life, falls in -500 to 499 (P2)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Egypt (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Rome, where the span took place (AA6 rule); home-region alternative MENA."}
@@ -84,22 +85,14 @@ worldview:
     - {code: PLATO, reason: "Coded at 0.5 (S1)."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "The One is the 'supreme ontological principle', 'beyond being' (S1): transcendent (A 1 lead); but all other principles come to be by 'emanation' from it (S1) (A 2 lead). No reading reaches 0.5 over the other."}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement on nature read."}
+    B_cause: {value: UNKNOWN, how_known: "Held UNKNOWN pending RQ-AA8-1 (open, for Jason): not a scientist (P30), but S1 §2 (read in full) reconstructs his account of nature: the laws of Nature 'remain constant and immutable' (III 1.10) and the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'. Whether a scholar's reconstruction gives a non-scientist philosopher a B is a method question; the auditor's suggestion is B 3 at 0.5, alternative 2."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied (Pavlov pattern)."}
-  statements:
-    - text: "Plato's figure dominates Plotinus' thought, constituting the key source of inspiration for the worldview of the founder of what in modern times has come to be called “Neoplatonism”."
-      cites: [{source: S1, locator: "opening"}]
-      context: "Kalligas's summary of Plotinus's worldview."
-      axes: [A_locus]
-      kind: "other"
-      verified_against: "scholarly edition"
-      verified_on: 2026-10-19
-      note: "Scholar's statement; basis for PLATO."
+  statements: []
   changes_over_life: []
-  coder_notes: "He opposed the Gnostics' malevolent creator and upheld the goodness of the sensible world (S1). PLATO system file: check its axes against the One."
+  coder_notes: "The SEP sentence behind PLATO ('Plato's figure dominates Plotinus' thought ...') is a scholar's summary, not his words, so it is not listed as a statement (AA8 audit: an encyclopedia entry is not a scholarly edition under P21). He opposed the Gnostics' malevolent creator and upheld the goodness of the sensible world (S1). PLATO system file: check its axes against the One."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -111,7 +104,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "254–270", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Composition range of the treatises, about 254 to his death in 270 (RQ-Z9-N1); start inferred, 0.5."}
-  age_at_first_lasting_contribution: {value: 50, certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "254 − 204 = 50 (P30 year difference); both years inferred."}
+  age_at_first_lasting_contribution: {value: 50, certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "254 − 204 = 50 (P30 year difference); S1: 'he started when he was already at the mature age of fifty'."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -136,6 +129,7 @@ review:
     - "Span and age inferred (0.5)."
   open_questions:
     - "A_locus reading of the One (transcendent vs emanationist)."
+    - "RQ-AA8-1: does SEP §2's reconstruction of his account of nature give B (suggested 3 at 0.5, alternative 2)?"
 
 sources:
   - id: S1
@@ -196,4 +190,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited.
 - 2026-10-19: Read SEP (Kalligas).
