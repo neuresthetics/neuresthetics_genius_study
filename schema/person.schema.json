@@ -2438,9 +2438,10 @@
             "scholarly edition",
             "secondary quotation",
             "unofficial web copy",
-            "archive scan (OCR only)"
+            "archive scan (OCR only)",
+            "newspaper interview"
           ],
-          "description": "What the quotation was checked against (decision P21). primary facsimile: page images of the document itself (manuscript, letter, or a printing of the work as issued), with no editor in between. primary transcription: a keyed transcription of the original (TCP, Newton Project, Darwin Online). scholarly edition: a text an editor prepared (collected works such as Riemann's Werke, edited letters, a Life-and-letters, a posthumous collection), even when read as a library scan. secondary quotation: quoted in a secondary or tertiary source (SEP, a biography); must be checked against the primary text before it is cited as the person's words (P26). unofficial web copy: an unofficial web copy of the person's own published text, not checked against an authoritative edition; capped at 0.7 (CODING_GUIDE §7; Z10 audit, v8's call). archive scan (OCR only): the person's own text read only in the OCR of a library or archive scan, page images not viewed (AA1 audit, Simon)."
+          "description": "What the quotation was checked against (decision P21). primary facsimile: page images of the document itself (manuscript, letter, or a printing of the work as issued), with no editor in between. primary transcription: a keyed transcription of the original (TCP, Newton Project, Darwin Online). scholarly edition: a text an editor prepared (collected works such as Riemann's Werke, edited letters, a Life-and-letters, a posthumous collection), even when read as a library scan. secondary quotation: quoted in a secondary or tertiary source (SEP, a biography); must be checked against the primary text before it is cited as the person's words (P26). unofficial web copy: an unofficial web copy of the person's own published text, not checked against an authoritative edition; capped at 0.7 (CODING_GUIDE §7; Z10 audit, v8's call). archive scan (OCR only): the person's own text read only in the OCR of a library or archive scan, page images not viewed (AA1 audit, Simon). newspaper interview: the person's words as quoted by the journalist who interviewed them, read in the newspaper's own text (first-hand interview evidence, P8; AA4 audit, Borges)."
         },
         "verified_on": {
           "$ref": "#/$defs/isoDate",

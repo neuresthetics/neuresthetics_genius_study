@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 192). Sources: Britannica (scholars edition, read in full) and his Nobel autobiography (Les Prix Nobel 1994, read in full). Lasting work: the Nash bargaining solution ('The Bargaining Problem', Econometrica, April 1950) and the Nash equilibrium (thesis 'Non-Cooperative Games', Annals of Mathematics, September 1951), 'Nash thus established the mathematical principles of game theory'; dated by publication (P30 #1). Span 1950–1951, age 22. The 1950 PNAS note on equilibrium points is not in the sources read. Mathematician: game theory makes no testable claim about natural systems (P30), so not a scientist; B UNKNOWN. No profession read: the autobiography's Zarathustra passage is about rationality and madness, not belief. Worldview all UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): Real Algebraic Manifolds (1952, 'seminal', S1) added as lasting; span 1950–1952; the January 1950 PNAS note mentioned (start year unchanged)."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 192). Sources: Britannica (scholars edition, read in full) and his Nobel autobiography (Les Prix Nobel 1994, read in full). Lasting work: the Nash bargaining solution ('The Bargaining Problem', Econometrica, April 1950) and the Nash equilibrium (thesis 'Non-Cooperative Games', Annals of Mathematics, September 1951), 'Nash thus established the mathematical principles of game theory'; dated by publication (P30 #1). Span 1950–1952 (Real Algebraic Manifolds, November 1952, added as lasting on the AA4 audit), age 22. The 1950 PNAS note on equilibrium points is not in the sources read. Mathematician: game theory makes no testable claim about natural systems (P30), so not a scientist; B UNKNOWN. No profession read: the autobiography's Zarathustra passage is about rationality and madness, not belief. Worldview all UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: nash-john
@@ -47,11 +48,12 @@ contribution:
   fields: {value: ["game theory", "geometry", "partial differential equations"], certainty: 0.7, cites: [{source: S1, locator: "para. 3–4"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Nash bargaining solution ('The Bargaining Problem')", year: 1950, kind: "theory", lasting: "his 'mathematical model for bargaining', expanded in his 'influential' thesis; part of establishing 'the mathematical principles of game theory' (S1)", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica; Econometrica, April 1950."}
-    - {value: "Nash equilibrium ('Non-Cooperative Games')", year: 1951, kind: "theory", lasting: "'Nash thus established the mathematical principles of game theory'; 'the Nash equilibrium was widely applied' (S1); Nobel Prize 1994", certainty: 0.7, cites: [{source: S1, locator: "para. 1, 3"}], how_known: "Britannica; Annals of Mathematics, September 1951 (an earlier 1950 note is not in the sources read)."}
+    - {value: "Nash equilibrium ('Non-Cooperative Games')", year: 1951, kind: "theory", lasting: "'Nash thus established the mathematical principles of game theory'; 'the Nash equilibrium was widely applied' (S1); Nobel Prize 1994", certainty: 0.7, cites: [{source: S1, locator: "para. 1, 3"}], how_known: "Britannica; Annals of Mathematics, September 1951 (an earlier PNAS note, January 1950, is not in the sources read; the start year is unchanged)."}
+    - {value: "Real Algebraic Manifolds (Nash's theorem on real algebraic varieties)", year: 1952, kind: "theory", lasting: "'his seminal paper' (S1)", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "Britannica; Annals of Mathematics, November 1952. Added as lasting on the AA4 audit (v8's call on the auditor's advice)."}
   evidence_of_impact:
     - {value: "Nobel Prize in Economics (1994); Abel Prize (2015)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "Britannica."}
   major_works:
-    - {value: "Real Algebraic Manifolds", year: 1952, kind: "paper or paper series", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "Britannica: 'seminal'; embedding theorems undated in the sources read."}
+    - {value: "Nash embedding theorems", kind: "paper or paper series", certainty: 0.5, cites: [{source: S1, locator: "para. 4"}, {source: S2, locator: "paragraph on the embedding problem"}], how_known: "Britannica: 'among the most original results in geometric analysis of the twentieth century' (Norwegian Academy); undated in the sources read."}
   honours: []
   definition_fit: {value: "clearly meets", rationale: "Founded the mathematics of non-cooperative games; embedding theorems (S1).", certainty: 0.7, cites: [{source: S1, locator: "para. 3–4"}], how_known: "Britannica."}
 
@@ -73,7 +75,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1950–1951", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1950–1952", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No profession read. His Nobel autobiography (1995, after the span) says 'rationality of thought imposes a limit on a person's concept of his relation to the cosmos' and discusses Zarathustra's 'madness' (S2): about rationality, not a stated belief."}
@@ -99,7 +101,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1950–1951", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "From 'The Bargaining Problem' (1950) to 'Non-Cooperative Games' (1951), the listed lasting works (P29, P30 #1)."}
+  major_work_period: {value: "1950–1952", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "From 'The Bargaining Problem' (1950) to 'Real Algebraic Manifolds' (1952), the listed lasting works (P29, P30 #1)."}
   age_at_first_lasting_contribution: {value: 22, certainty: 0.7, cites: [{source: S1, locator: "para. 1, 3"}], how_known: "1950 − 1928 = 22 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -168,7 +170,7 @@ Bluefield; Pittsburgh; Princeton; MIT [S1, S2].
 
 ## Contribution and impact
 
-Bargaining (1950); equilibrium (1951) [S1].
+Bargaining (1950); equilibrium (1951); real algebraic manifolds (1952) [S1].
 
 ## Childhood and education
 
@@ -184,7 +186,7 @@ Not stated.
 
 ## Timing
 
-1950–1951, age 22 [S1].
+1950–1952, age 22 [S1].
 
 ## Lane B notes (labeled belief model)
 
@@ -196,4 +198,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA4 audit fix (v8's call on the auditor's advice): Real Algebraic Manifolds (1952, 'seminal', S1) added as lasting; span 1950–1952; the January 1950 PNAS note mentioned (start year unchanged).
 - 2026-10-19: Read Britannica (scholars); Nobel autobiography.

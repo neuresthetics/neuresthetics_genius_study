@@ -863,6 +863,11 @@ Process:
   - **RQ-Z8-1 not applicable to Brahms:** the 1868 Bremen premiere gave all six movements then existing, so it dates the Requiem at 0.7; alternative 1869 (first complete seven-movement performance, Leipzig), cited to Swafford's BSO programme note.
   - Gutenberg: alternative birth about 1400 (age about 55); signed Britannica (Lehmann-Haupt) added, but the part read did not confirm the Bible date, so the span stays 0.5.
   - Turner: Tate (Wilton) and National Gallery (Egerton) entries read in full and relabelled.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA4 audit at d8ece39):**
+  - **P21:** a new `verified_against` value, `newspaper interview`, for a person's words as quoted by the journalist who interviewed them, read in the newspaper's own text (first-hand interview evidence under P8, not a second-hand quotation). Applied to Borges (Shenker, NYT 1971).
+  - **Span certainty follows its weakest listed lasting work:** Mill's 1843–1859 span drops to 0.5 because On Liberty is lasting only at 0.5; alternative 1843 alone.
+  - Nash: Real Algebraic Manifolds (1952) added as lasting; span 1950–1952. Borges: 1941 alternative (age 42). Mill: 1858 retirement cited to the Autobiography.
+  - Region correction (Turner, Milton to Northern Europe) confirmed.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

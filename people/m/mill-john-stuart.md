@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 193). Sources: Britannica, signed by Richard Paul Anschutz (main article; the fetched copy covers the summary and 'Early life and career' only), Britannica students edition (read in full) for publication years, and his Autobiography (1873; Project Gutenberg transcription, chapter 2 read). Lasting work: A System of Logic (1843) and On Liberty (1859); Anschutz: 'remains of lasting interest as a logician and an ethical theorist'; span 1843–1859, age 37. Own words: Autobiography ch. 2, 'one who has not thrown off religious belief, but never had it: I grew up in a negative state with regard to it', with his father's teaching that 'Who made me?' 'cannot be answered'. Published 1873, after the span and describing his upbringing, so P20 caps it at 0.5. primary_system AGNOS 0.5 (written_profession), alt BELOW_THRESHOLD (the passage reports absence of belief, not a settled stance; his posthumous Theism, not read, is a lead the other way). A BELOW_THRESHOLD (no locus stated); philosopher, not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (Pavlov pattern). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): span certainty lowered to 0.5 (On Liberty lasting only at 0.5), alternative 1843 alone; the 1858 end of his India House post is now cited to the Autobiography (ch. III, ch. VII) and the 'Company's dissolution' wording is dropped."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 193). Sources: Britannica, signed by Richard Paul Anschutz (main article; the fetched copy covers the summary and 'Early life and career' only), Britannica students edition (read in full) for publication years, and his Autobiography (1873; Project Gutenberg transcription, chapter 2 read). Lasting work: A System of Logic (1843) and On Liberty (1859); Anschutz: 'remains of lasting interest as a logician and an ethical theorist'; span 1843–1859, age 37 (span 0.5 after the AA4 audit, as On Liberty is lasting only at 0.5). Own words: Autobiography ch. 2, 'one who has not thrown off religious belief, but never had it: I grew up in a negative state with regard to it', with his father's teaching that 'Who made me?' 'cannot be answered'. Published 1873, after the span and describing his upbringing, so P20 caps it at 0.5. primary_system AGNOS 0.5 (written_profession), alt BELOW_THRESHOLD (the passage reports absence of belief, not a settled stance; his posthumous Theism, not read, is a lead the other way). A BELOW_THRESHOLD (no locus stated); philosopher, not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (Pavlov pattern). Not plotted. Draft, not reviewed."}
 
 identity:
   id: mill-john-stuart
@@ -74,7 +75,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1843–1859", certainty: 0.7, cites: [{source: S3, locator: "para. 4"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1843–1859", certainty: 0.5, cites: [{source: S3, locator: "para. 4"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: 
@@ -126,7 +127,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1843–1859", certainty: 0.7, cites: [{source: S3, locator: "para. 4"}], how_known: "From A System of Logic (1843) to On Liberty (1859), the listed lasting works (P29, P30 #1)."}
+  major_work_period: {value: "1843–1859", certainty: 0.5, cites: [{source: S3, locator: "para. 4"}], how_known: "From A System of Logic (1843) to On Liberty (1859), the listed lasting works (P29, P30 #1). 0.5 because On Liberty is lasting only at 0.5; alternative 1843 alone (v8's call on the auditor's advice, AA4)."}
   age_at_first_lasting_contribution: {value: 37, certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "para. 4"}], how_known: "1843 − 1806 = 37 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -141,7 +142,7 @@ lane_b:
   notes: ""
 
 institutions:
-  - {value: "East India Company (India House)", role: "examiner", years: "1823–1858", kind: "employer", certainty: 0.5, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica; chief examiner from 1856; end year the Company's dissolution (coder's knowledge)."}
+  - {value: "East India Company (India House)", role: "clerk; Examiner of India Correspondence from 1856", years: "1823–1858", kind: "employer", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}, {source: S2, locator: "ch. III; ch. VII"}], how_known: "Britannica (entered 1823; chief of the examiner's office 1856). Autobiography: he held the examinership 'a little more than two years' until Parliament ended the Company's government of India, which 'determined my retirement'; the winter of '1858-9' was 'the first after my retirement' (S2)."}
 collaborators:
   - {value: "James Mill", relation: "family", note: "father and teacher", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}
   - {value: "Jeremy Bentham", relation: "influenced by", note: "utilitarianism", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}
@@ -232,4 +233,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA4 audit fix (v8's call on the auditor's advice): span certainty lowered to 0.5 (On Liberty lasting only at 0.5), alternative 1843 alone; the 1858 end of his India House post is now cited to the Autobiography (ch. III, ch. VII) and the 'Company's dissolution' wording is dropped.
 - 2026-10-19: Read Britannica (Anschutz, partly; students); Autobiography ch. 2.
