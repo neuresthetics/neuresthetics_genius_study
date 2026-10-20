@@ -443,8 +443,8 @@ def _draw_cells(ax, items):
     for (b, a), its in cells.items():
         syss = sorted([i for i in its if i["kind"] == "system"], key=lambda i: i["label"])
         ppl = sorted([i for i in its if i["kind"] != "system"], key=lambda i: i["label"])
-        ncols, fs = fit_cell([i["label"] for i in ppl], cell_w, cell_h, fs_max=10, fs_min=7,
-                             dot_gap=0.045, head=[i["label"] for i in syss], max_cols=3, line=1.4)
+        ncols, fs = fit_cell([i["label"] for i in ppl], cell_w, cell_h, fs_max=10, fs_min=5,
+                             dot_gap=0.045, head=[i["label"] for i in syss], max_cols=4, line=1.3)
         prow = math.ceil(len(ppl) / ncols) if ppl else 0
         nrows = len(syss) + prow
         rowh = min(0.2, 0.8 / max(nrows - 1, 1))

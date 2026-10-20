@@ -237,7 +237,7 @@ def firm(p):
     return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
 
 
-SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo"}
+SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo", "Augustine of Hippo": "Augustine"}  # display-name overrides: people known by a common name
 _SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv"}
 
 
@@ -247,6 +247,8 @@ def short_label(name):
     if name in SHORT_LABELS:
         return SHORT_LABELS[name]
     base = re.sub(r"\s*\([^)]*\)", "", name).strip()
+    if " of " in base:  # 'Augustine of Hippo', 'Hildegard of Bingen': the common name precedes the place
+        base = base.split(" of ")[0].strip()
     toks = base.replace(",", " ").split()
     while len(toks) > 1 and toks[-1].lower() in _SUFFIXES:
         toks.pop()
