@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): the 1941 alternative is now cited to the Borges Center chronology (S4), not the auditor's note."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): verified_against relabelled 'newspaper interview' (new P21 value); 1941 (El jardín de senderos que se bifurcan) added as an alternative first-lasting year, age 42."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 194). Sources: Britannica, signed by Emir Rodriguez Monegal (read in full), and Israel Shenker's New York Times interview-profile (6 April 1971, read in full). Lasting work: the fantastic stories collected in Ficciones (1944), 'his best fantastic stories'; his works 'now considered classics of 20th-century literature'; span 1944, age 45. Own words, quoted by Shenker: 'Being an agnostic means all things are possible, even God, even the Holy Trinity'; he says the Lord's Prayer nightly for his mother, 'I don't know whether there's anybody at the other end of the line'. 1971, after the span (P20 cap 0.5). primary_system AGNOS 0.5 (recorded_interview), alt BELOW_THRESHOLD; A BELOW_THRESHOLD ('all things are possible, even God'); not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
@@ -38,7 +39,7 @@ basics:
   death:
     date: {value: "1986-06-14", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Geneva", modern_name: "Geneva, Switzerland", polity_then: "Switzerland", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1944, certainty: 0.7, cites: [{source: S1, locator: "Life"}], how_known: "'his best fantastic stories, those later collected in Ficciones (1944, revised 1956)' (S1); dated by the collection's publication (P30 #1). Alternative 1941, El jardín de senderos que se bifurcan, the first collection of these stories (auditor's note, AA4; not dated in S1), age 42."}
+  first_lasting_contribution_year: {value: 1944, certainty: 0.7, cites: [{source: S1, locator: "Life"}, {source: S4, locator: "1941, Books"}], how_known: "'his best fantastic stories, those later collected in Ficciones (1944, revised 1956)' (S1); dated by the collection's publication (P30 #1). Alternative 1941: El jardín de senderos que se bifurcan (Buenos Aires: Sur, 1941), 'Published at the end of December 1941, actually distributed in 1942. Later became the first half of Ficciones' (S4), age 42."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Life"}], how_known: "1944 (P2)."}
   region_of_birth: {value: "Latin America and Caribbean", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Argentina (P3)."}
   region_of_work: {value: "Latin America and Caribbean", certainty: 0.7, cites: [{source: S1, locator: "Life"}], how_known: "Buenos Aires."}
@@ -173,6 +174,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: secondary
+    kind: "database"
+    author: "Borges Center, University of Pittsburgh"
+    citation: "Borges Center. '1941.' Bibliography and chronology, University of Pittsburgh. https://www.borges.pitt.edu/bibliography/1941-1"
+    url: "https://www.borges.pitt.edu/bibliography/1941-1"
+    accessed: 2026-10-19
+    reliability_note: "Scholarly bibliographic chronology, page read in full."
+    used_for: [basics]
 ---
 
 ## Summary
@@ -214,4 +224,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Research log
 
 - 2026-10-19: AA4 audit fix (v8's call on the auditor's advice): verified_against relabelled 'newspaper interview' (new P21 value); 1941 (El jardín de senderos que se bifurcan) added as an alternative first-lasting year, age 42.
+- 2026-10-19: AA5 audit fix (v8's call on the auditor's advice): the 1941 alternative is now cited to the Borges Center chronology (S4), not the auditor's note.
 - 2026-10-19: Read Britannica (Rodriguez Monegal); NYT 1971.

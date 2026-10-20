@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): the 'newspaper interview' label is kept with a note that these are her own emailed answers to an online magazine; Haaretz 2010 interview (Aloni) read in full and added as S3; heritage raised to 0.7."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 196). Sources: Britannica, signed by Brian Duignan (read in full), and Butler's emailed answers to AVIVA-Berlin (2010, read in full). Lasting work: Gender Trouble (1990), 'one of the foundational texts of queer theory', whose performative theory 'greatly influenced the development of cultural theory, gender studies' (S1); span 1990, age 34. Own words (S2): 'I am very sceptical of efforts to define or portray any notion of the divine. I am probably an agnostic on religious matters, but I do sometimes still attend the synagogue'. 2010, after the span (P20 cap 0.5); written answers to an online magazine, labelled 'newspaper interview' as the nearest P21 value (auditor to confirm). primary_system AGNOS 0.5 (recorded_interview), alt BELOW_THRESHOLD ('probably'); A BELOW_THRESHOLD; not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. Heritage: practising Reform/Conservative Jewish family (S2). Britannica uses they/them; sex_as_recorded left UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -104,14 +105,14 @@ worldview:
       kind: "recorded interview"
       verified_against: "newspaper interview"
       verified_on: 2026-10-19
-      note: "Written answers published by the online magazine; 'newspaper interview' is the nearest P21 value (online magazine, not a newspaper)."
+      note: "Stretch of the P21 value, noted on the AA5 audit: these are Butler's own emailed written answers, published by an online magazine, not a journalist's quotation in a newspaper; no further schema value added."
   changes_over_life: []
-  coder_notes: "Haaretz 2010 interview ('As a Jew, I was taught it was ethically imperative to speak up', seen only as a search excerpt) and Parting Ways (2012) for Jewish ethics; neither professes doctrine."
+  coder_notes: "Haaretz 2010 (S3): 'because there is no after world, because we don't have any hopes in a final redemption, we have to take especially good care of life in the here and now' (a lead for C or A, after the span, not scored). Parting Ways (2012) for Jewish ethics."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: UNKNOWN, how_known: "Not stated."}
-  religious_heritage_by_birth: {value: "Jewish (Reform; mother raised Orthodox)", certainty: 0.5, cites: [{source: S2, locator: "Jewish Life/Roots"}], how_known: "AVIVA (practising family, synagogue courses); Reform/Orthodox detail from the Haaretz interview seen as a search excerpt."}
+  religious_heritage_by_birth: {value: "Jewish (Reform; mother raised Orthodox)", certainty: 0.7, cites: [{source: S2, locator: "Jewish Life/Roots"}, {source: S3, locator: "parents' relation to Judaism"}], how_known: "'My parents were practicing Jews. My mother grew up in an orthodox synagogue and after my grandfather died, she went to a conservative synagogue and a little later ended up in a reform synagogue. My father was in reform synagogues from the beginning' (S3, read in full); AVIVA (S2)."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not stated."}
 
@@ -136,7 +137,7 @@ institutions:
 collaborators: []
 
 review:
-  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 196"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 196"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
     - "Profession after the span; online-magazine interview."
@@ -163,6 +164,15 @@ sources:
     reliability_note: "Her emailed answers as published by the online magazine, read in full."
     used_for: [childhood, worldview, heritage]
   - id: S3
+    type: primary
+    kind: "other"
+    author: "Judith Butler, interviewed by Udi Aloni"
+    citation: "Aloni, Udi. 'Judith Butler: As a Jew, I was taught it was ethically imperative to speak up.' Haaretz, 24 February 2010. Internet Archive copy. https://web.archive.org/web/20100227081749/http://www.haaretz.com/hasen/spages/1152017.html"
+    url: "https://web.archive.org/web/20100227081749/http://www.haaretz.com/hasen/spages/1152017.html"
+    accessed: 2026-10-19
+    reliability_note: "Newspaper interview, archived copy read in full."
+    used_for: [heritage, worldview]
+  - id: S4
     type: secondary
     kind: "database"
     author: "Neuresthetics Genius Study"
@@ -211,4 +221,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA5 audit fix (v8's call on the auditor's advice): the 'newspaper interview' label is kept with a note that these are her own emailed answers to an online magazine; Haaretz 2010 interview (Aloni) read in full and added as S3; heritage raised to 0.7.
 - 2026-10-19: Read Britannica (Duignan); AVIVA interview.

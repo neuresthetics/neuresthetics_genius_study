@@ -868,6 +868,12 @@ Process:
   - **Span certainty follows its weakest listed lasting work:** Mill's 1843–1859 span drops to 0.5 because On Liberty is lasting only at 0.5; alternative 1843 alone.
   - Nash: Real Algebraic Manifolds (1952) added as lasting; span 1950–1952. Borges: 1941 alternative (age 42). Mill: 1858 retirement cited to the Autobiography.
   - Region correction (Turner, Milton to Northern Europe) confirmed.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA5 audit at 54c08f4):**
+  - **RQ-AA5-1:** Katherine Johnson is not a scientist: trajectory computation applies established orbital mechanics (P33 analogy; as RQ-Y3, RQ-Z9-1, RQ-AA3-1). B stays UNKNOWN.
+  - **RQ-AA5-2:** Johnson's primary_system stays BELOW_THRESHOLD with CHRIST as the lead: church leadership and her pastor's account, but no profession of her own (as RQ-Y2, Morrison).
+  - **P13 (Lamarr precedent) applied to Johnson:** no source calls a result lasting, so first-lasting year, span, working years, age and era are UNKNOWN, with 1960 and 1962 as candidates.
+  - **P21 stretch noted, not widened:** Butler's emailed answers to an online magazine keep the `newspaper interview` label with a record note.
+  - Butler heritage 0.7 (Haaretz 2010 read in full). Laozi native name UNKNOWN. Le Corbusier span 1923–1948 (books, full Choay text). Borges 1941 alternative cited to the Borges Center chronology.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

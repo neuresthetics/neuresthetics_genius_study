@@ -58,18 +58,18 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 
 | section | claims | filled | TODO | UNKNOWN | BELOW_THRESHOLD | filled % |
 |---|---|---|---|---|---|---|
-| identity | 406 | 348 | 8 | 50 | 0 | 85.7% |
-| basics | 2233 | 2138 | 0 | 95 | 0 | 95.7% |
-| contribution | 1593 | 1592 | 0 | 1 | 0 | 99.9% |
+| identity | 406 | 347 | 8 | 51 | 0 | 85.5% |
+| basics | 2233 | 2136 | 0 | 97 | 0 | 95.7% |
+| contribution | 1595 | 1594 | 0 | 1 | 0 | 99.9% |
 | childhood | 2043 | 1250 | 418 | 374 | 1 | 61.2% |
-| worldview | 2171 | 823 | 7 | 1009 | 332 | 37.9% |
+| worldview | 2171 | 822 | 7 | 1010 | 332 | 37.9% |
 | heritage | 812 | 303 | 273 | 235 | 1 | 37.3% |
-| timing | 1015 | 672 | 43 | 294 | 6 | 66.2% |
+| timing | 1015 | 670 | 43 | 296 | 6 | 66.0% |
 | lane_b | 609 | 554 | 3 | 52 | 0 | 91.0% |
 | institutions | 384 | 384 | 0 | 0 | 0 | 100.0% |
 | collaborators | 505 | 505 | 0 | 0 | 0 | 100.0% |
 | review | 272 | 272 | 0 | 0 | 0 | 100.0% |
-| **all** | 12043 | 8841 | 752 | 2110 | 340 | 73.4% |
+| **all** | 12045 | 8837 | 752 | 2116 | 340 | 73.4% |
 
 ### Worldview coding status
 

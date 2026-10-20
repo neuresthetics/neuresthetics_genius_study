@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 199). Source: Britannica, signed by Françoise Choay (the fetched copy covers the summary and 'Education and early years'). Lasting work: Vers une architecture (Toward a New Architecture, 1923); his books 'constituted a bible for succeeding generations of architects' (S1); span 1923 by publication (P30 #1), age 36. His buildings (Villa Savoye, Ronchamp, Chandigarh) are named but undated in the part read, so not listed. Worldview: no own words read; raised in 'the puritanism of a Protestant environment' (S1). primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): full Choay text read (Britannica scholars edition); lasting work is the books 1923–1948 ('a bible for succeeding generations of architects'); span 1923–1948; Villa Savoye and Ronchamp added as major works."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 199). Source: Britannica, signed by Françoise Choay (scholars edition, read in full after the AA5 audit). Lasting work: Vers une architecture (Toward a New Architecture, 1923); his books 'constituted a bible for succeeding generations of architects' (S1); the books from Vers une architecture (1923) to Le Modulor (1948) are the body of work S1 calls 'a bible', so the span is 1923–1948 by publication (P30 #1), age 36. Buildings (Villa Savoye 1929–31, Ronchamp 1950–55) are major works, not listed as lasting, since S1's lasting phrase covers the books. Worldview: no own words read; raised in 'the puritanism of a Protestant environment' (S1). primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: corbusier-le
@@ -47,10 +48,12 @@ basics:
 contribution:
   fields: {value: ["architecture", "urban planning"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Vers une architecture (Toward a New Architecture)", year: 1923, kind: "work", lasting: "his books, 'whose essential lines of thought ... hardly changed at all in 45 years, constituted a bible for succeeding generations of architects' (S1); 'A house is a machine for living in'", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Britannica."}
+    - {value: "Books from Vers une architecture (1923) to Le Modulor (1948)", year: 1923, kind: "body of work", lasting: "his books, 'whose essential lines of thought ... hardly changed at all in 45 years, constituted a bible for succeeding generations of architects' (S1); 'A house is a machine for living in'", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Britannica; the named books run from 1923 to Le Modulor (1948)."}
   evidence_of_impact:
     - {value: "17 architectural works named UNESCO World Heritage sites (2016)", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   major_works:
+    - {value: "Villa Savoye, Poissy", year: 1931, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "The first period"}], how_known: "Britannica: 1929–31."}
+    - {value: "Notre-Dame-du-Haut, Ronchamp", year: 1955, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "The second period"}], how_known: "Britannica: 1950–55; commissioned through Fr. Couturier."}
     - {value: "Après le cubisme (with Amédée Ozenfant)", year: 1918, kind: "book", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Britannica: the Purist manifesto."}
     - {value: "Urbanisme", year: 1925, kind: "book", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Britannica."}
   honours: []
@@ -74,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1923", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1923–1948", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own words on belief read. Raised in 'the puritanism of a Protestant environment' (S1), a heritage fact. No lead strong enough to name."}
@@ -90,7 +93,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Read the later sections of Choay's article (Ronchamp chapel) and a scholar's account of his religious views (e.g. Flora Samuel, Le Corbusier: Architect and Feminist, or her work on his spirituality)."
+  coder_notes: "Ronchamp and La Tourette were commissions through the Dominican Fr. Couturier (S1), not a profession. Read a scholar's account of his religious views (e.g. Flora Samuel, Le Corbusier: Architect and Feminist, or her work on his spirituality)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -101,7 +104,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1923", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "The one listed lasting work (P29, P30 #1)."}
+  major_work_period: {value: "1923–1948", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Body of work from Vers une architecture (1923) to Le Modulor (1948), the books S1 calls 'a bible for succeeding generations of architects' (P29, P30 #1)."}
   age_at_first_lasting_contribution: {value: 36, certainty: 0.7, cites: [{source: S1, locator: "Introduction; Education and early years"}], how_known: "1923 − 1887 = 36 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -124,7 +127,7 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S2, locator: "roster.csv, rank 199"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Buildings undated in the part read."
+    - "Worldview: no source."
   open_questions:
     - "Religious views (Ronchamp; scholar's account)."
 
@@ -133,10 +136,10 @@ sources:
     type: tertiary
     kind: "encyclopedia"
     author: "Françoise Choay"
-    citation: "Choay, Françoise. 'Le Corbusier.' Encyclopaedia Britannica. https://www.britannica.com/biography/Le-Corbusier"
-    url: "https://www.britannica.com/biography/Le-Corbusier"
+    citation: "Choay, Françoise. 'Le Corbusier.' Encyclopaedia Britannica (scholars edition). https://kids.britannica.com/scholars/article/Le-Corbusier/26247"
+    url: "https://kids.britannica.com/scholars/article/Le-Corbusier/26247"
     accessed: 2026-10-19
-    reliability_note: "Signed article; the fetched copy covers the summary and 'Education and early years' only."
+    reliability_note: "Signed article, scholars edition, read in full."
     used_for: [identity, basics, contribution, childhood, heritage, timing, collaborators]
   - id: S2
     type: secondary
@@ -159,7 +162,7 @@ La Chaux-de-Fonds; Paris [S1].
 
 ## Contribution and impact
 
-Vers une architecture (1923) [S1].
+Books 1923–1948 [S1].
 
 ## Childhood and education
 
@@ -175,7 +178,7 @@ Protestant [S1].
 
 ## Timing
 
-1923, age 36 [S1].
+1923–1948, age 36 [S1].
 
 ## Lane B notes (labeled belief model)
 
@@ -187,4 +190,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
-- 2026-10-19: Read Britannica (Choay), partly.
+- 2026-10-19: AA5 audit fix (v8's call on the auditor's advice): full Choay text read (Britannica scholars edition); lasting work is the books 1923–1948 ('a bible for succeeding generations of architects'); span 1923–1948; Villa Savoye and Ronchamp added as major works.
+- 2026-10-19: Read Britannica (Choay, scholars edition).

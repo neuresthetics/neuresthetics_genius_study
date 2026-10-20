@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): native_name set to UNKNOWN (not printed in S1 or SEP 'Laozi')."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 198). Source: Britannica, signed by Max Kaltenmark (revised by Roger T. Ames; read in full). Lasting work: the Daodejing, 'a primary Daoist writing', traditionally his; but 'The Daodejing, as we have it, cannot be the work of a single author', a Guodian version dates 'to before 300 bce', and 'The name Laozi seems to represent a certain type of sage rather than an individual' (S1). The text is therefore context only (P42, Sun Tzu precedent): primary_system UNKNOWN (lead TAO); A, B UNKNOWN; mid_basin UNKNOWN. Life dates UNKNOWN ('flourished 6th century bce' is traditional; some place Lao Dan at the end of the 4th century bce), so first-lasting year, era (P39), span and age are UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -24,7 +25,7 @@ identity:
     field: "philosophy"
     field_bucket: "philosophy"
   full_name: {value: "Laozi", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica; Sima Qian gives family name Li, proper name Er, appellation Dan."}
-  native_name: {value: "老子", certainty: 0.5, cites: [{source: S1, locator: "Introduction"}], how_known: "Standard Chinese form (coder's knowledge); not printed in S1."}
+  native_name: {value: UNKNOWN, how_known: "Not printed in the sources read (S1; SEP 'Laozi' checked, AA5 audit); the Chinese form is not cited."}
   aliases:
     - {name: "Lao Tzu", kind: "roster alias"}
     - {name: "Li Er", kind: "birth name"}
@@ -184,4 +185,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA5 audit fix (v8's call on the auditor's advice): native_name set to UNKNOWN (not printed in S1 or SEP 'Laozi').
 - 2026-10-19: Read Britannica (Kaltenmark, Ames).

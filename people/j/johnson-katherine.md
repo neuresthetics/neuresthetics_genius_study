@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 197). Sources: NASA biography by Margot Lee Shetterly (2016, read in full) and Presbyterian Church (U.S.A.) news (2017, read in full); Blount's statement (Union Presbyterian Seminary, 2020) seen as a search excerpt only. Lasting work: the orbital-flight equations of 'Determination of Azimuth Angle at Burnout for Placing a Satellite Over a Selected Earth Position' (1960, with Ted Skopinski), and the 1962 hand verification of John Glenn's orbital trajectory, 'the work that she would become most known for' (S1). Lasting status is arguable (no source calls a result lasting; 'pioneering legacy', S1), so 0.5; span 1960–1962 at 0.5, age 42. Not a scientist: trajectory computation applies known laws rather than stating a new result about nature (P30, by analogy with P33); ruling question RQ-AA5-1. Worldview: decades of church office (finance chair, choir, church officer; PC(USA) calls her a ruling elder) and her pastor's report of 'deep' Christian faith, but no profession of her own read, so BELOW_THRESHOLD with lead CHRIST (Toni Morrison precedent, RQ-Y2); ruling question RQ-AA5-2. A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): first-lasting year, span, working years, age and era set to UNKNOWN (P13, Lamarr precedent), with 1960 and 1962 as candidates; church roles not in S2 (choir, church officer, ruling elder) dropped. RQ-AA5-1 and RQ-AA5-2 recorded as coded."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 197). Sources: NASA biography by Margot Lee Shetterly (2016, read in full) and Presbyterian Church (U.S.A.) news (2017, read in full); Blount's statement (Union Presbyterian Seminary, 2020) seen as a search excerpt only. Lasting work: the orbital-flight equations of 'Determination of Azimuth Angle at Burnout for Placing a Satellite Over a Selected Earth Position' (1960, with Ted Skopinski), and the 1962 hand verification of John Glenn's orbital trajectory, 'the work that she would become most known for' (S1). No source calls a result lasting ('pioneering legacy', S1), so first-lasting year, span, age and era are UNKNOWN (P13, Lamarr precedent; AA5 audit), with 1960 and 1962 as candidates. Not a scientist: trajectory computation applies known laws rather than stating a new result about nature (P30, by analogy with P33); ruling question RQ-AA5-1. Worldview: decades of church leadership ('several leadership roles including ... its finance chair', S2) and her pastor's report of 'deep' Christian faith, but no profession of her own read, so BELOW_THRESHOLD with lead CHRIST (Toni Morrison precedent, RQ-Y2); ruling question RQ-AA5-2. A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: johnson-katherine
@@ -35,8 +36,8 @@ basics:
   death:
     date: {value: "2020-02-24", certainty: 0.7, cites: [{source: S1, locator: "final paragraph"}], how_known: "NASA."}
     place: {value: UNKNOWN, how_known: "Not stated in the sources read."}
-  first_lasting_contribution_year: {value: 1960, certainty: 0.5, cites: [{source: S1, locator: "para. 4"}], how_known: "'In 1960, she and engineer Ted Skopinski coauthored' the report 'laying out the equations describing an orbital spaceflight in which the landing position of the spacecraft is specified' (S1); a NASA report (P30 #1). 0.5: no source calls it lasting; alternatives 1961 (Shepard trajectory) and 1962 (Glenn verification)."}
-  era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "para. 4–5"}], how_known: "1960–1962 (P2)."}
+  first_lasting_contribution_year: {value: UNKNOWN, how_known: "No source read calls any of her results lasting (P13; Lamarr precedent, Z10). Candidates: 1960, the report with Ted Skopinski 'laying out the equations describing an orbital spaceflight in which the landing position of the spacecraft is specified' (S1); 1962, the Glenn verification (S1). v8's call on the auditor's advice (AA5)."}
+  era_bucket: {value: UNKNOWN, how_known: "No dated lasting contribution; her adult life (1936 on) crosses the 1950 edge (P39)."}
   region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "USA (P3)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "para. 2"}], how_known: "Langley, Virginia."}
   sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -72,10 +73,10 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1960–1962", certainty: 0.5, cites: [{source: S1, locator: "para. 4–5"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN, P13)."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "No profession of her own read. Practice: member of Carver Memorial Presbyterian Church 'for more than 50 years', serving 'in several leadership roles including ... its finance chair' (S2); her former pastor Brian Blount called her Christian faith 'deep' (S3, search excerpt). Practice and a pastor's account without her words: lead CHRIST (Toni Morrison precedent, RQ-Y2)."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "No profession of her own read. Practice: member of Carver Memorial Presbyterian Church 'for more than 50 years', serving 'in several leadership roles including ... its finance chair' (S2); her former pastor Brian Blount: 'She's been a wonderful Presbyterian' (S2) and called her Christian faith 'deep' (S3, search excerpt). Practice and a pastor's account without her words: lead CHRIST (Toni Morrison precedent, RQ-Y2)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Lead: Presbyterian church office and practice (S2, S3)."}
@@ -99,8 +100,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1960–1962", certainty: 0.5, cites: [{source: S1, locator: "para. 4–5"}], how_known: "From the 1960 report to the 1962 Glenn verification, the listed lasting works (P29, P30 #1); 0.5 as both are lasting only at 0.5."}
-  age_at_first_lasting_contribution: {value: 42, certainty: 0.5, cites: [{source: S1, locator: "facts box; para. 4"}], how_known: "1960 − 1918 = 42 (P30 year difference)."}
+  major_work_period: {value: UNKNOWN, how_known: "No contribution sourced as lasting (P13, Lamarr precedent); candidates 1960–1962 (S1)."}
+  age_at_first_lasting_contribution: {value: UNKNOWN, how_known: "No dated lasting contribution (P13); 42 on the 1960 candidate."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -194,7 +195,7 @@ Not stated.
 
 ## Timing
 
-1960–1962, age 42 (0.5) [S1].
+UNKNOWN (P13); candidates 1960–1962 [S1].
 
 ## Lane B notes (labeled belief model)
 
@@ -206,4 +207,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA5 audit fix (v8's call on the auditor's advice): first-lasting year, span, working years, age and era set to UNKNOWN (P13, Lamarr precedent), with 1960 and 1962 as candidates; church roles not in S2 (choir, church officer, ruling elder) dropped. RQ-AA5-1 and RQ-AA5-2 recorded as coded.
 - 2026-10-19: Read NASA (Shetterly); PC(USA) 2017; Blount excerpt.
