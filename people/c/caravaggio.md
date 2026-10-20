@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fix (Z5-30, P26/P13): question-box and caption 'lasting' cites removed. Read the signed body section 'Rome: 1599–1606': contract of 23 July 1599 for the Contarelli Chapel side canvases (The Calling and The Martyrdom of St. Matthew); 'The paintings for the Contarelli Chapel instantly established Caravaggio as the most dynamic and original painter working in Rome.' Lasting list is now the Contarelli canvases alone (1599–1600; caption date, range start under P12). Conversion of St. Paul and Entombment dropped from the lasting list (no body text calls them lasting). Span 1601–1604 -> 1599–1600; age 30 -> 28; era '1600 to 1749' -> '1400 to 1599'. Worldview unchanged (all UNKNOWN); not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 153). Source: Britannica (Andrew Graham-Dixon, signed; opening, 'Becoming Caravaggio', 'Tragic childhood' read). No own words on religion read; religious commissions are work, not profession (P16). Not a scientist. Span 1601–1604 at 0.5 (Conversion of St. Paul 1601; Entombment 1602–04, latest year P30 #4), from captions. primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -35,8 +36,8 @@ basics:
   death:
     date: {value: "1610-07-18", calendar: gregorian, certainty: 0.5, cites: [{source: S1, locator: "Died"}], how_known: "Britannica: July 18/19, 1610."}
     place: {value: "Porto Ercole, Tuscany", modern_name: "Porto Ercole, Italy", polity_then: "State of the Presidi", certainty: 0.7, cites: [{source: S1, locator: "Died"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1601, certainty: 0.5, cites: [{source: S1, locator: "caption, The Conversion of St. Paul"}], how_known: "Earliest dated work named in what was read; earlier works named but undated (P12)."}
-  era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "caption"}], how_known: "1601 (P2)."}
+  first_lasting_contribution_year: {value: 1599, certainty: 0.5, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}], how_known: "Contarelli side canvases: contract 23 July 1599 (body); caption dates 1599–1600, range start (P12 addendum d). 0.5: the end date is from a caption."}
+  era_bucket: {value: "1400 to 1599", certainty: 1.0, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}], how_known: "1599 (P2)."}
   region_of_birth: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "Born"}], how_known: "Italy (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Rome; later Naples and Malta."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -46,11 +47,11 @@ basics:
 contribution:
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "The Conversion of St. Paul (second version), Santa Maria del Popolo", year: 1601, kind: work, lasting: "listed among his best-known works (S1)", certainty: 0.5, cites: [{source: S1, locator: "caption; 'What is Caravaggio best known for?'"}], how_known: "Question box (P26), so 0.5."}
-    - {value: "The Entombment of Christ", year: 1604, kind: work, lasting: "listed among his best-known works (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Becoming Caravaggio' caption (1602–04)"}], how_known: "Range; latest year (P30 #4)."}
+    - {value: "The Calling of St. Matthew and The Martyrdom of St. Matthew, Contarelli Chapel, San Luigi dei Francesi", year: 1599, kind: work, lasting: "'instantly established Caravaggio as the most dynamic and original painter working in Rome' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}], how_known: "Signed body text (P13); dated 1599–1600 (contract in body; caption date), range start (P12)."}
   evidence_of_impact:
     - {value: "Shaped Rembrandt, Velázquez, Géricault and filmmakers", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "'Becoming Caravaggio'"}], how_known: "Britannica."}
-  major_works: []
+  major_works:
+    - {value: "The Conversion of St. Paul (second version), Santa Maria del Popolo", year: 1601, kind: artwork, certainty: 0.7, cites: [{source: S1, locator: "'Rome: 1599–1606' (body: commissioned autumn 1600); caption 1601"}], how_known: "Named in the body; not called lasting there, so not on the lasting list."}
   honours: []
   definition_fit: {value: "clearly meets", rationale: "'His influence on the course of Western art has been immense' (S1).", certainty: 0.7, cites: [{source: S1, locator: "'Becoming Caravaggio'"}], how_known: "Coder's reading."}
 
@@ -73,7 +74,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1601–1604", certainty: 0.5, cites: [{source: S1, locator: "captions"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1599–1600", certainty: 0.5, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
   primary_system: {value: UNKNOWN, how_known: "No own words read. Lead CHRIST (Catholic): large-scale religious commissions (S1); religious subjects are work, not profession (P16)."}
@@ -100,8 +101,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1601–1604", certainty: 0.5, cites: [{source: S1, locator: "captions"}], how_known: "Dated lasting works named in what was read (P29, P30); later works (e.g. Beheading of St. John) undated there."}
-  age_at_first_lasting_contribution: {value: 30, certainty: 0.5, cites: [{source: S1, locator: "Born; caption"}], how_known: "1601 − 1571 = 30 (P30 year difference)."}
+  major_work_period: {value: "1599–1600", certainty: 0.5, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}], how_known: "The one lasting work named in the body read, the Contarelli canvases, 1599–1600 (P29, P30; P12 range start; latest year for the end, P30 #4). The end is from a caption, so 0.5."}
+  age_at_first_lasting_contribution: {value: 28, certainty: 0.5, cites: [{source: S1, locator: "Born; 'Rome: 1599–1606'"}], how_known: "1599 − 1571 = 28 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -173,7 +174,7 @@ Lombard [S1].
 
 ## Timing
 
-1601–1604, age 30 [S1].
+1599–1600, age 28 [S1].
 
 ## Lane B notes (labeled belief model)
 
@@ -186,3 +187,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Research log
 
 - 2026-10-19: Read Britannica (Graham-Dixon), first sections.
+- 2026-10-19 (Z5 audit fix): read the body section 'Rome: 1599–1606' (https://www.britannica.com/biography/Caravaggio/The-Contarelli-Chapel-and-other-church-commissions); question-box and caption lasting cites removed.

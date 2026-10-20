@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-20, Z5-21, Z5-22, Z5-24; RQ-Z5-2 answered): 'Vis illud Naturam vocare' re-cited to the printed editions (S8: 1758 facsimile, p. 5; S7: 1766) and dated 1758, with footnote (b) to Seneca, Quaest. Nat. II.45; the 1735 Latin corrected to the folio (S9); 'Deum sempiternum' re-cited to S7/S8 with the 1758 variant noted; 'aeternae legis imperio' added as a B lead; B basis scholarly_reconstruction -> inference_from_work (P24). Values unchanged (A 0 @0.5 alt 2; B 3 @0.5 alt 4). RQ-Z5-N1 logged in OPEN_DECISIONS, not applied."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 154). Basics from Britannica (Staffan Müller-Wille, signed) and Britannica Scholars 'Species Plantarum'. Own words via Wikiquote (Latin with translations): Systema Naturae 1735, 'Genus omne est naturale, in primordio tale creatum'; 12th ed. (1766), Imperium Naturae, 'Deum sempiternum, immensum, omniscium, omnipotentem ... vidi et obstupui!'; the fuller Latin (a creyentesintelectuales blog transcription) continues 'Vis illud Naturam vocare, non errabis'. Secondary quotations, primary check pending; 1766 is after the span (P20). A scientist (P30: taxonomy from specimens). Span 1735–1753. primary_system CHRIST (0.5); A 0 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
 
 identity:
@@ -94,17 +95,17 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S4, locator: "Systema Naturae, Imperium Naturae"}, {source: S5, locator: "note 9"}]
-      how_known: "Secondary quotations; 1766, after the span (P20); 0.5."
+      cites: [{source: S8, locator: "Imperium Naturae, p. 5"}, {source: S7, locator: "Imperium Naturae, opening paragraph"}]
+      how_known: "Printed editions read (1758 facsimile; 1766); after the 1735–1753 span (P20), and a named alternative, so 0.5. See RQ-Z5-N1."
       rationale: "An 'eternal, immeasurable, all-knowing, all-powerful God', 'Lord and Artificer' of the world's work, First Mover and Cause of causes. Alternative 2: 'If you call it Nature, you will not err; it is that from which all things are born.'"
       alternatives:
-        - {value: 2, note: "'Vis illud Naturam vocare, non errabis'.", cites: [{source: S5, locator: "note 9"}]}
+        - {value: 2, note: "'Vis illud Naturam vocare, non errabis' (after Seneca, Quaest. Nat. II.45, note b).", cites: [{source: S8, locator: "Imperium Naturae, p. 5, note (b)"}, {source: S7, locator: "Imperium Naturae, note (b)"}]}
     B_cause:
       value: 3
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
-      cites: [{source: S1, locator: "'The sexual system of classification'"}, {source: S4, locator: "Systema Naturae (1735)"}]
-      how_known: "A scientist with working science (P30: classification from specimens), so B 3 at 0.5, alternative 4 (P35). Genera 'created as such in the beginning' (1735) fits a creation followed by lawful order."
+      cites: [{source: S1, locator: "'The sexual system of classification'"}, {source: S9, locator: "Observationes in Regnum Vegetabile"}]
+      how_known: "A scientist with working science (P30: classification from specimens), so B 3 at 0.5, alternative 4 (P35, P24: basis inference_from_work). Genera 'created as such in the beginning' (1735) fits a creation followed by lawful order. Lead (not scored, after the span): the 1758 Imperium Naturae MUNDUS paragraph says the heavens move 'aeternae legis imperio, nec esse temere errantis hunc ordinem' (after Seneca; S8 p. 5, S7)."
       rationale: "P35."
       alternatives:
         - {value: 4, note: "P35 alternative.", cites: [{source: S1, locator: "text"}]}
@@ -113,35 +114,35 @@ worldview:
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 at 0.5 is under the 0.7 bar (§6, P10)."}
   statements:
-    - text: "Genus omne est naturale, in primordio tale creatum, hinc pro libitu & secundem cujuscimque theoriam non proterve discindendum aut conglutinandum."
-      cites: [{source: S4, locator: "Systema Naturae (1735)"}]
+    - text: "Genus omne est naturale, in ipso primordio tale creatum: hinc pro lubitu & secundum cujuscunque theoriam non proterve discindendum, vel conglutinandum est."
+      cites: [{source: S9, locator: "Observationes in Regnum Vegetabile, folio sheet"}]
       date: "1735"
-      context: "Systema Naturae; quoted via Ramsbottom 1938 on Wikiquote."
+      context: "Systema Naturae, 1st ed. (Leiden 1735), botanical observations."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-19
-      note: "Primary check pending; spelling as quoted."
+      note: "Read in the 1735 folio scan (archive.org mobot31753002972252); long s normalized. Corrects the Wikiquote wording ('in primordio', 'libitu', 'secundem cujuscimque', 'aut', no closing 'est')."
     - text: "Deum sempiternum, immensum, omniscium, omnipotentem expergefactus a tergo transeuntem vidi et obstupui! legi aliquot Ejus vestigia per creata rerum, in quibus omnibus, etiam in minimis, ut fere nullis, quæ Vis! quanta Sapientia! quam inextricabilis Perfectio!"
-      cites: [{source: S4, locator: "Systema Naturae, Imperium Naturae, 12th ed."}]
+      cites: [{source: S7, locator: "Imperium Naturae, opening paragraph"}, {source: S8, locator: "Imperium Naturae, p. 5"}]
       date: "1766"
-      context: "Imperium Naturae, 12th edition; after the span."
+      context: "Imperium Naturae, 12th edition (1766); first printed in the 10th edition (1758). After the span."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-19
-      note: "Primary check pending."
+      note: "Wording as in the 1766 scan, long s normalized. The 1758 text lacks 'immensum' and 'expergefactus' ('DEUM sempiternum, omniscium, omnipotentem a tergo transeuntem vidi & obstupui!')."
     - text: "Vis illud Fatum vocare, non errabis, est ex quo suspensa sunt omnia. Vis illud Naturam vocare, non errabis, est ex quo nata sunt omnia. Vis illud Providentiam vocare, recte dices"
-      cites: [{source: S5, locator: "note 9"}]
-      date: "1766"
-      context: "Same passage, after 'mundani hujus operis Domino & Artifice'; footnotes cite Aristotle, Seneca, Exodus, Pliny."
+      cites: [{source: S8, locator: "Imperium Naturae, p. 5, and note (b)"}, {source: S7, locator: "Imperium Naturae, opening paragraph, and note (b)"}]
+      date: "1758"
+      context: "Imperium Naturae, 10th edition (1758), repeated in the 12th (1766), after 'mundani hujus operis Domino & Artifice'. Footnote (b) cites Seneca, Quaest. Nat. II.45: Linnaeus adopts Seneca's three names (Fatum, Natura, Providentia) for the Lord and Artificer. After the span."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "primary facsimile"
       verified_on: 2026-10-19
-      note: "Blog transcription; primary check pending."
+      note: "Read in both scans (archive.org carolilinnaeisy01gesegoog, the 1894 facsimile of 1758; bub_gb_siAOAAAAQAAJ, 1766); long s normalized. The blog transcription (S5) matches."
   changes_over_life: []
-  coder_notes: "Check the Imperium Naturae passage in a facsimile (10th ed. 1758 or 12th ed. 1766); read Nemesis Divina for C."
+  coder_notes: "Imperium Naturae checked in the 1758 facsimile and the 1766 edition (RQ-Z5-2 answered: the passage is in print, so the alternative 2 stands). RQ-Z5-N1 (open): ICZN Article 3 and Opinion 3 treat the 10th edition (1758) as the starting point of zoological nomenclature ('the work which inaugurated the consistent general application of binary nomenclature in zoology'); if it is listed as lasting, the span ends 1758 and the Imperium Naturae falls inside it. Not applied. Read Nemesis Divina for C."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -154,7 +155,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1735–1753", certainty: 0.5, cites: [{source: S1, locator: "text"}, {source: S3, locator: "text"}], how_known: "Systema Naturae (1735) to Species Plantarum (1753) (P29, P30); the 10th edition of Systema Naturae (1758, zoological starting point) is a later candidate, so 0.5."}
   age_at_first_lasting_contribution: {value: 28, certainty: 0.7, cites: [{source: S1, locator: "Born; text"}], how_known: "1735 − 1707 = 28 (P30 year difference)."}
-  first_evidence_of_lio_type_views: {value: "1735", certainty: 0.5, cites: [{source: S4, locator: "Systema Naturae (1735)"}], how_known: "Created genera."}
+  first_evidence_of_lio_type_views: {value: "1735", certainty: 0.5, cites: [{source: S9, locator: "Observationes in Regnum Vegetabile"}], how_known: "Created genera ('in ipso primordio tale creatum')."}
   lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S4, locator: "Systema Naturae"}], how_known: "Same work."}
   worldview_during_major_work: {value: "CHRIST", certainty: 0.5, cites: [{source: S4, locator: "Systema Naturae"}], how_known: "Secondary quotations."}
 
@@ -176,7 +177,7 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 154"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Own words only as secondary quotations (Wikiquote; a blog transcription)."
+    - "Own words now read in printed editions (1735 folio; 1758 facsimile; 1766); Wikiquote and the blog kept as finding aids only."
   open_questions:
     - "Facsimile of the Imperium Naturae; Nemesis Divina."
 
@@ -235,6 +236,33 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Carl Linnaeus"
+    citation: "Linnaeus, Carl. Systema naturae per regna tria naturae. 12th ed. Holmiae: L. Salvius, 1766. Scan: https://archive.org/details/bub_gb_siAOAAAAQAAJ"
+    url: "https://archive.org/details/bub_gb_siAOAAAAQAAJ"
+    accessed: 2026-10-19
+    reliability_note: "Printed edition, Google Books scan with OCR; Imperium Naturae read."
+    used_for: [worldview]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Carl Linnaeus"
+    citation: "Linnaeus, Carl. Systema naturae. Regnum animale. Editio decima, 1758. Facsimile ed. Societas zoologica germanica. Lipsiae: W. Engelmann, 1894. Scan: https://archive.org/details/carolilinnaeisy01gesegoog"
+    url: "https://archive.org/details/carolilinnaeisy01gesegoog"
+    accessed: 2026-10-19
+    reliability_note: "Page-for-page reprint of the 10th edition; Imperium Naturae, p. 5, read."
+    used_for: [worldview]
+  - id: S9
+    type: primary
+    kind: "published work by the subject"
+    author: "Carl Linnaeus"
+    citation: "Linnaeus, Carl. Systema naturae, sive regna tria naturae systematice proposita. Lugduni Batavorum: Theodor Haak, 1735. Scan: https://archive.org/details/mobot31753002972252"
+    url: "https://archive.org/details/mobot31753002972252"
+    accessed: 2026-10-19
+    reliability_note: "First edition folio, Missouri Botanical Garden scan."
+    used_for: [worldview]
 ---
 
 ## Summary

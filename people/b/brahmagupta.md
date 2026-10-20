@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-10, Z5-11; RQ-Z5-1 answered: B 2 and D 1 stand at 0.5): al-Biruni's sincerity doubt named as an alternative (BELOW_THRESHOLD) under B and D, quoting Sachau vol. 2 p. 110 ('simply in order to mock them, or under the compulsion of some mental derangement') and p. 112 ('a calamitous fate, like that of Socrates'); S2 cites now give pp. 110–112 (the margin 'Page 256/257' is the Arabic page). Values unchanged; not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 152). Basics from MacTutor (O'Connor and Robertson). Own words: Brahmasphutasiddhanta ch. 1 as quoted by al-Biruni (India, c. 1030, ch. LIX) in Sachau's English (1888, vol. 2, archive.org scan): the Head (Rahu) eclipses; 'The Veda, which is the word of God from the mouth of Brahman, says that the Head eclipses'; Aryabhata and others oppose this 'from enmity against the just-mentioned dogma'; 'everything which is in the Veda, Smriti, and Samhita is true'. A translation of an Arabic rendering, and al-Biruni suggests he may have spoken under compulsion or to mock, so 0.5. A scientist (P30: astronomy), but his own words override the P35 default. Span 628 (first ten chapters' version; Khandakhadyaka 665 not called lasting). primary_system HINDU (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B 2 (0.5, alt 3); C, E UNKNOWN; D 1 (0.5, alt 0); mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
 identity:
@@ -72,12 +73,12 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "628", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: "Astronomers must 'cease to oppose the generality, for everything which is in the Veda, Smriti, and Samhita is true'", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Via al-Biruni, in Sachau's English."}
+  self_described_science_religion_relation: {value: "Astronomers must 'cease to oppose the generality, for everything which is in the Veda, Smriti, and Samhita is true'", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Via al-Biruni, in Sachau's English."}
   primary_system:
     value: HINDU
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S2, locator: "vol. 2, ch. LIX"}]
+    cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
     how_known: "Brahmasphutasiddhanta ch. 1 as quoted by al-Biruni: the Veda is 'the word of God from the mouth of Brahman'; Brahmanical eclipse rites defended. English of an Arabic rendering; al-Biruni doubts his sincerity; 0.5."
     rationale: "HINDU (Brahmanical). Alternative BELOW_THRESHOLD: al-Biruni suggests he spoke under compulsion or in mockery."
   secondary_system: {value: UNKNOWN, how_known: "None."}
@@ -89,26 +90,28 @@ worldview:
       value: 2
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "vol. 2, ch. LIX"}]
+      cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
       how_known: "Own words via al-Biruni (translation of a translation), contested by al-Biruni's report that he computes eclipses from shadows; 0.5."
-      rationale: "Account of nature (P6): eclipses are caused by the Head (Rahu), a personal agent, against the shadow theory; yet he computes eclipses by the shadow method (al-Biruni). An agent behind a recurring natural event, not limited: B 2. Alternative 3: P35 default for a working astronomer, with Rahu as a stated exception."
+      rationale: "Account of nature (P6): eclipses are caused by the Head (Rahu), a personal agent, against the shadow theory; yet he computes eclipses by the shadow method (al-Biruni). An agent behind a recurring natural event, not limited: B 2. Alternative 3: P35 default for a working astronomer, with Rahu as a stated exception. Named alternative on sincerity: al-Biruni's sincerity doubt (pp. 110, 112): he may have spoken 'simply in order to mock them, or under the compulsion of some mental derangement', and al-Biruni settles on 'something of a calamitous fate, like that of Socrates' at age thirty; if the words are insincere, B is BELOW_THRESHOLD (0.5 either way)."
       alternatives:
         - {value: 3, note: "P35 default; Rahu as one stated exception.", cites: [{source: S1, locator: "Biography"}]}
+        - {value: BELOW_THRESHOLD, note: "al-Biruni's sincerity doubt (mockery, compulsion, 'calamitous fate').", cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110, 112"}]}
     C_ledger: {value: UNKNOWN, how_known: "Eclipse rites 'rewarded by heavenly bliss' not scored (coder's call)."}
     D_authority:
       value: 1
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "vol. 2, ch. LIX"}]
+      cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
       how_known: "Via al-Biruni; 0.5."
-      rationale: "Revelation outranks the astronomers on a question of natural fact ('everything which is in the Veda, Smriti, and Samhita is true'; dissenters 'must cease to oppose'), while his own computations use observation. Alternative 0."
+      rationale: "Revelation outranks the astronomers on a question of natural fact ('everything which is in the Veda, Smriti, and Samhita is true'; dissenters 'must cease to oppose'), while his own computations use observation. Alternative 0. Named alternative on sincerity: al-Biruni's sincerity doubt (pp. 110, 112): he may have spoken 'simply in order to mock them, or under the compulsion of some mental derangement', and al-Biruni settles on 'something of a calamitous fate, like that of Socrates' at age thirty; if the words are insincere, D is BELOW_THRESHOLD."
       alternatives:
-        - {value: 0, note: "Scripture decides the eclipse question outright.", cites: [{source: S2, locator: "vol. 2, ch. LIX"}]}
+        - {value: 0, note: "Scripture decides the eclipse question outright.", cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]}
+        - {value: BELOW_THRESHOLD, note: "al-Biruni's sincerity doubt (mockery, compulsion, 'calamitous fate').", cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110, 112"}]}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
   statements:
     - text: "The Veda, which is the word of God from the mouth of Brahman, says that the Head eclipses, likewise the book Smriti, composed by Manu, and the Samhita, composed by Garga the son of Brahman."
-      cites: [{source: S2, locator: "vol. 2, ch. LIX"}]
+      cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
       date: "628"
       context: "Brahmasphutasiddhanta ch. 1, as quoted by al-Biruni (c. 1030), Sachau's English."
       axes: [A_locus, B_cause]
@@ -117,7 +120,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Diacritics dropped from the scan."
     - text: "Therefore people practise the well-known works of piety, and therefore those authors must cease to oppose the generality, for everything which is in the Veda, Smriti, and Samhita is true."
-      cites: [{source: S2, locator: "vol. 2, ch. LIX"}]
+      cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
       date: "628"
       context: "Same passage."
       axes: [D_authority]
@@ -130,7 +133,7 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: UNKNOWN, how_known: "Not stated."}
-  religious_heritage_by_birth: {value: "Brahman (per al-Biruni)", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Al-Biruni: 'he was one of the Brahmans'."}
+  religious_heritage_by_birth: {value: "Brahman (per al-Biruni)", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Al-Biruni: 'he was one of the Brahmans'."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not stated."}
 
@@ -138,9 +141,9 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "628", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Brahmasphutasiddhanta, the lasting work (P29, P30)."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "628 − 598 = 30 (P30 year difference); al-Biruni also says 'only thirty'."}
-  first_evidence_of_lio_type_views: {value: "628", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Same work."}
-  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Same work."}
-  worldview_during_major_work: {value: "HINDU", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Via al-Biruni."}
+  first_evidence_of_lio_type_views: {value: "628", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Same work."}
+  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Same work."}
+  worldview_during_major_work: {value: "HINDU", certainty: 0.5, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Via al-Biruni."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -153,12 +156,12 @@ lane_b:
 institutions:
   - {value: "Astronomical observatory at Ujjain", role: head, years: UNKNOWN, kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
 collaborators:
-  - {value: "Aryabhata", roster_id: aryabhata, relation: "rival or critic", note: "attacked his eclipse view", certainty: 0.7, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Via al-Biruni."}
+  - {value: "Aryabhata", roster_id: aryabhata, relation: "rival or critic", note: "attacked his eclipse view", certainty: 0.7, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Via al-Biruni."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 152"}], how_known: "Study roster."}
   controversies:
-    - {value: "Sincerity of his defence of Rahu (al-Biruni)", certainty: 0.7, cites: [{source: S2, locator: "vol. 2, ch. LIX"}], how_known: "Al-Biruni."}
+    - {value: "Sincerity of his defence of Rahu (al-Biruni)", certainty: 0.7, cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}], how_known: "Al-Biruni."}
   data_quality_flags:
     - "Own words only through al-Biruni's Arabic, in Sachau's English."
   open_questions:
