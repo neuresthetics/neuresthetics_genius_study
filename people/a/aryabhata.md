@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): B basis now inference_from_work (P24; ceiling unchanged); statements verified_against 'scholarly edition' (Clark's translation read directly, not a secondary quotation); coder_notes add the Gola 49–50 condition. RQ-Z4-1: invocation carries primary and A at 0.5. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 149). Basics from MacTutor (O'Connor and Robertson). Own words from the Aryabhatiya in W. E. Clark's translation (1930) via Wikisource: Dasagitika opening invocation ('Having paid reverence to Brahman, who is one ... many ..., the true deity, the Supreme Spirit'; Clark's parenthetical glosses not counted), Gola 47 (natural account of a solar eclipse), Gola 49 ('By the grace of God'), Gola 50 (astronomy 'formerly was revealed by Svayambhu'). Van der Waerden doubts the Dasagitika's authenticity (MacTutor), so the invocation is flagged. A scientist (P30: astronomy). Span 499. Age 23 from his own statement. primary_system HINDU (0.5); A 1 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
 
 identity:
@@ -94,7 +95,7 @@ worldview:
         - {value: 2, note: "One and many as panentheism.", cites: [{source: S2, locator: "Dasagitika 1"}]}
     B_cause:
       value: 3
-      basis: scholarly_reconstruction
+      basis: inference_from_work
       certainty: 0.5
       cites: [{source: S1, locator: "text"}, {source: S2, locator: "Gola 47"}]
       how_known: "A scientist with working science (P30: astronomy; natural eclipse theory against Rahu, S1; Gola 47 explains a partial eclipse by the Sun's brightness and the Moon's transparency), so B 3 at 0.5, alternative 4 (P35)."
@@ -112,7 +113,7 @@ worldview:
       context: "Opening invocation; parentheses are Clark's gloss after Paramesvara. Authenticity of the Dasagitika doubted by van der Waerden (S1)."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-19
     - text: "By the grace of God the precious sunken jewel of true knowledge has been rescued by me, by means of the boat of my own knowledge, from the ocean which consists of true and false knowledge."
       cites: [{source: S2, locator: "Gola 49"}]
@@ -120,7 +121,7 @@ worldview:
       context: "Closing verses, Clark translation."
       axes: [A_locus, D_authority]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-19
     - text: "When the Moon eclipses the Sun even though an eighth part of the Sun is covered this is not preceptible because of the brightness of the Sun and the transparency of the Moon."
       cites: [{source: S2, locator: "Gola 47"}]
@@ -128,10 +129,10 @@ worldview:
       context: "Eclipse theory (spelling as in the Wikisource text)."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-19
   changes_over_life: []
-  coder_notes: "Dasagitika authenticity (van der Waerden) bears on primary and A."
+  coder_notes: "Dasagitika authenticity (van der Waerden) bears on primary and A; RQ-Z4-1 holds them at 0.5. He would leave the plot only if Gola 49–50 were also among the verses van der Waerden takes as added; MacTutor does not say which verses those are."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

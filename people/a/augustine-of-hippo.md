@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): Z4-33 (FAIL): span start is the range's start year (P12, addendum d), so 396–426 at 0.5 and age 42 (was 400, 46). RQ-Z4-2: B 2 upheld; B rationale now cites the XXI.8 'laws so sure and inflexible' sentence. Still plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 150). Basics from SEP (Christian Tornau, 2019, rev. 2024). Own words from City of God in Marcus Dods' translation (NPNF 1st ser. vol. 2) as reproduced on New Advent: XXI.8 (a portent 'happens not contrary to nature, but contrary to what we know as nature'; 'the will of so mighty a Creator is certainly the nature of each created thing') and XXII.8 ('even now miracles are wrought in the name of Christ'). Web copy of a translation, secondary quotation (Ibn Khaldun precedent). Not a scientist. Span 400–426 (Confessions ca. 396–400, latest year per P30 #4; City of God 412–426). primary_system CHRIST (0.7); A 0 (0.7, alt 1); B 2 (0.5, alt 1); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded), left of B 3. Draft, not reviewed."}
 
 identity:
@@ -35,8 +36,8 @@ basics:
   death:
     date: {value: "0430-08-28", calendar: julian, certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP."}
     place: {value: "Hippo Regius", modern_name: "Annaba, Algeria", polity_then: "Roman Empire", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP (bishop of Hippo; died during the Vandal siege)."}
-  first_lasting_contribution_year: {value: 400, certainty: 0.5, cites: [{source: S1, locator: "§2 Works ('Confessiones (ca. 396–400)')"}], how_known: "Confessions dated ca. 396–400; latest year the source allows (P30 #4); range, so 0.5."}
-  era_bucket: {value: "-500 to 499", certainty: 1.0, cites: [{source: S1, locator: "§2 Works"}], how_known: "400 (P2)."}
+  first_lasting_contribution_year: {value: 396, certainty: 0.5, cites: [{source: S1, locator: "§2 Works ('Confessiones (ca. 396–400)')"}], how_known: "Confessions dated ca. 396–400; a range's start year starts the span (P12, addendum d); range, so 0.5."}
+  era_bucket: {value: "-500 to 499", certainty: 1.0, cites: [{source: S1, locator: "§2 Works"}], how_known: "396 (P2)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "Algeria (P3; regions.csv)."}
   region_of_work: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "Hippo, bishop c. 396–430, covers the span."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -46,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["philosophy", "theology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
-    - {value: "Confessiones", year: 400, kind: work, lasting: "'probably his most original work'; 'greatly influenced the modern tradition of autobiography' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; §2 Works"}], how_known: "SEP; dated ca. 396–400."}
+    - {value: "Confessiones", year: 396, kind: work, lasting: "'probably his most original work'; 'greatly influenced the modern tradition of autobiography' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; §2 Works"}], how_known: "SEP; dated ca. 396–400."}
     - {value: "De civitate dei", year: 426, kind: work, lasting: "one of the 'five long treatises' of wide scope (S1)", certainty: 0.7, cites: [{source: S1, locator: "§2 Works"}], how_known: "SEP: 412–426."}
   evidence_of_impact:
     - {value: "Often listed as the first medieval philosopher", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
@@ -73,7 +74,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "400–426", certainty: 0.5, cites: [{source: S1, locator: "§2 Works"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "396–426", certainty: 0.5, cites: [{source: S1, locator: "§2 Works"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations:
     - {value: "Catholic Church (bishop of Hippo)", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not scored."}
@@ -104,7 +105,7 @@ worldview:
       certainty: 0.5
       cites: [{source: S2, locator: "XXI.8; XXII.8"}]
       how_known: "Translation web copy; contested reading, 0.5."
-      rationale: "Account of nature (P6): a portent 'happens not contrary to nature, but contrary to what we know as nature' (XXI.8), yet miracles are live and recurring: 'even now miracles are wrought in the name of Christ, whether by His sacraments or by the prayers or relics of His saints' (XXII.8). Exceptions not limited, so B 2 (P27 anchor; Ibn Khaldun precedent). Alternative 1: nature is itself the Creator's will, every event His act."
+      rationale: "Account of nature (P6): a portent 'happens not contrary to nature, but contrary to what we know as nature' (XXI.8), yet miracles are live and recurring: 'even now miracles are wrought in the name of Christ, whether by His sacraments or by the prayers or relics of His saints' (XXII.8). Lawfulness is stated too: 'the exactly ordered course of the stars ... laws so sure and inflexible? And yet, when it pleased Him' (XXI.8), which rules out 1. Exceptions not limited, so B 2 (P27 anchor; Ibn Khaldun precedent; RQ-Z4-2 upheld). Alternative 1: nature is itself the Creator's will, every event His act."
       alternatives:
         - {value: 1, note: "Nature as the Creator's will.", cites: [{source: S2, locator: "XXI.8"}]}
     C_ledger: {value: UNKNOWN, how_known: "Eternal punishment (City of God XXI) not scored at this reading (coder's call)."}
@@ -142,8 +143,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "400–426", certainty: 0.5, cites: [{source: S1, locator: "§2 Works"}], how_known: "Confessions (ca. 396–400, P30 #4 latest year) to City of God (412–426) (P29, P30)."}
-  age_at_first_lasting_contribution: {value: 46, certainty: 0.5, cites: [{source: S1, locator: "§1 Life; §2 Works"}], how_known: "400 − 354 = 46 (P30 year difference)."}
+  major_work_period: {value: "396–426", certainty: 0.5, cites: [{source: S1, locator: "§2 Works"}], how_known: "Confessions (ca. 396–400, start year per P12 addendum d) to City of God (412–426) (P29, P30)."}
+  age_at_first_lasting_contribution: {value: 42, certainty: 0.5, cites: [{source: S1, locator: "§1 Life; §2 Works"}], how_known: "396 − 354 = 42 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "Only City of God read."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "Not assessed."}
   worldview_during_major_work: {value: "CHRIST", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "Bishop throughout."}
@@ -225,7 +226,7 @@ Roman North African [S1].
 
 ## Timing
 
-400–426, age 46 [S1].
+396–426, age 42 [S1].
 
 ## Lane B notes (labeled belief model)
 

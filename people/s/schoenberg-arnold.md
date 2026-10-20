@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): Z4-11: Dehmel letter kind now 'private letter' (printed posthumously). S4 (DeVoto) note: full lecture read. coder_notes add the 1923 Kandinsky and 1890 Goldschmied leads. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 148). Basics from Britannica (Dika Newlin, signed). Religion facts: Lutheran baptism 1898 (DeVoto, Tufts); readmitted to Judaism at the Liberal synagogue, Paris, July 1933 (JTA, 25 July 1933). Own words: letter to Richard Dehmel, 13 December 1912 (Arnold Schoenberg Letters, ed. Erwin Stein, scan): oratorio plan on 'modern man ... despite having been an atheist ... wrestles with God ... and finally succeeds in finding God and becoming religious. Learning to pray!' A plan for a work, not a profession; libretto characters not counted (P42). Not a scientist (P30), so B UNKNOWN. Span 1899–1932. primary_system BELOW_THRESHOLD (leads JUDA from 1933, CHRIST nominal 1898–1933); A BELOW_THRESHOLD; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted (no B). Draft, not reviewed."}
 
 identity:
@@ -99,14 +100,14 @@ worldview:
       date: "1912-12-13"
       context: "Letter to Richard Dehmel from Berlin-Zehlendorf, in English translation (Stein ed.)."
       axes: [A_locus]
-      kind: "published letter"
+      kind: "private letter"
       verified_against: "secondary quotation"
       verified_on: 2026-10-19
-      note: "Scan of the printed edition on a document-sharing site; plan for a work, read by many as autobiographical."
+      note: "Private letter printed after his death (Stein ed.); scan on a document-sharing site; plan for a work, read by many as autobiographical."
   changes_over_life:
     - {value: "Baptized Lutheran", year: 1898, certainty: 0.7, cites: [{source: S4, locator: "p. 2"}], how_known: "DeVoto."}
     - {value: "Readmitted to Judaism, Liberal synagogue, Paris (witnesses Marianoff and Chagall)", year: 1933, certainty: 0.7, cites: [{source: S3, locator: "full report"}], how_known: "JTA report of 25 July 1933."}
-  coder_notes: "Read his own prose (e.g. 1923 letters to Kandinsky; later essays) for A."
+  coder_notes: "Unused own-voice leads in DeVoto (S4): the 1923 letters to Kandinsky, inside the span ('but I am a Jew'; the Jews' 'task that their God has imposed on them'), about identity rather than profession; and the 1890 letter to Malvina Goldschmied, before the span ('as an unbeliever myself'). Read these and later essays for A."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -179,7 +180,7 @@ sources:
     citation: "DeVoto, Mark. \"Arnold Schoenberg and Judaism: The Harder Road\" (lecture, 1990). Tufts University. https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/6/2974/files/2015/10/Schoenberg.pdf"
     url: "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/6/2974/files/2015/10/Schoenberg.pdf"
     accessed: 2026-10-19
-    reliability_note: "Signed lecture by a Schoenberg scholar; read via search excerpt."
+    reliability_note: "Signed lecture by a Schoenberg scholar; full lecture read (PDF)."
     used_for: [childhood, worldview, heritage]
   - id: S5
     type: tertiary

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/), v8's call on the auditor's advice: Z4-05 (FAIL, RQ-Z4-N1): La Clef des songes is a single unpublished document, so under CODING_GUIDE §3 0.5 needs a scholar's backing. Scharlau (Who Is Alexander Grothendieck? Part 3, ch. 24 and ch. 26 note 3) backs the creative-intelligence reading ('Before the eighties, he spoke more of a creative intelligence or creative power than of a personal God'); added as S4, basis of primary_system, A and B now scholarly_reconstruction; values and 0.5 kept. Still plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit fixes (blind audit /workspace/genius_study_audit/gs_0b45e66_Z3/run1/): Z3-13: labels made to agree with an unpublished typescript: statements stay 'unpublished manuscript', basis of primary_system, A and B now consistent_private_letters (private ceiling 0.7; certainty 0.5 unchanged), S2 kind now other. Esquisse d'un programme dated 1984, not 1983. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 144). Basics from MacTutor (O'Connor and Robertson). Own voice: La Clef des songes (1987; typescript transcribed by Mateo Carmona), his retrospective of his relation to God: atheist parents; in March 1944, aged nearly 16, he accepted 'cette Intelligence souveraine, infinie, créatrice de la Vie et ... de l'Univers tout entier, et des lois qui le régissent' and called himself 'déiste' (§§30–31), a view held 'ma vie durant' without doubt; he saw 'aucun signe d'une intervention de Dieu dans le présent' but an Intelligence that 'intervient' at each great evolutionary leap (§30). Span 1953–1970 (end at 0.5), age 25. primary_system DEISM (0.5, alt BELOW_THRESHOLD); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
@@ -88,10 +89,10 @@ worldview:
   self_described_science_religion_relation: {value: "Mathematical laws are 'part of the very nature of God', accessible to reason alone (1987)", certainty: 0.5, cites: [{source: S2, locator: "§31, note 72"}], how_known: "His own words, after the span."}
   primary_system:
     value: DEISM
-    basis: consistent_private_letters
+    basis: scholarly_reconstruction
     certainty: 0.5
-    cites: [{source: S2, locator: "§§30–31"}]
-    how_known: "'Alors que je me disais “athée” jusque-là, me voilà donc soudain changé de catégorie - dorénavant, je me dirai “déiste” !' (1944, as told in 1987); a Creator known by reason from the evolution of life, 'très loin du Dieu de la Promesse et de la Rétribution dont parle l'Ancien Testament'; the knowledge held 'ma vie durant'. Retrospective written 17 years after the span (P20), so 0.5."
+    cites: [{source: S2, locator: "§§30–31"}, {source: S4, locator: "ch. 24; ch. 26 note 3"}]
+    how_known: "Single unpublished document (CODING_GUIDE §3), backed by Scharlau, who reads La Clef des songes as describing 'a creative intelligence (God) which has created all things, the universe and also the laws which regulate the universe' and notes that 'Before the eighties, he spoke more of a creative intelligence or creative power than of a personal God' (S4); so 0.5 (RQ-Z4-N1). 'Alors que je me disais “athée” jusque-là, me voilà donc soudain changé de catégorie - dorénavant, je me dirai “déiste” !' (1944, as told in 1987); a Creator known by reason from the evolution of life, 'très loin du Dieu de la Promesse et de la Rétribution dont parle l'Ancien Testament'; the knowledge held 'ma vie durant'. Retrospective written 17 years after the span (P20), so 0.5."
     rationale: "DEISM use_when: a creator known by reason (design), with no ongoing involvement seen. P27: he set the Creator apart from the God of the Testaments but did not discuss revelation; alternative BELOW_THRESHOLD. Not coded on his post-1976 mystical theism (outside the span)."
   secondary_system: {value: UNKNOWN, how_known: "None for the span."}
   candidate_codes_considered:
@@ -101,19 +102,19 @@ worldview:
   lio_axes:
     A_locus:
       value: 1
-      basis: consistent_private_letters
+      basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S2, locator: "§31"}]
-      how_known: "'cette Intelligence souveraine, infinie, créatrice de la Vie et (cela allait alors de soi) créatrice aussi de l'Univers tout entier, et des lois qui le régissent' (§31). Retrospective (P20), 0.5."
+      cites: [{source: S2, locator: "§31"}, {source: S4, locator: "ch. 24; ch. 26 note 3"}]
+      how_known: "Scholar-backed single document (S4; RQ-Z4-N1). 'cette Intelligence souveraine, infinie, créatrice de la Vie et (cela allait alors de soi) créatrice aussi de l'Univers tout entier, et des lois qui le régissent' (§31). Retrospective (P20), 0.5."
       rationale: "A transcendent creator who stays apart from daily life: 1 (as DEISM). Alternative 0: an 'Intelligence' with an 'Intention'."
       alternatives:
         - {value: 0, note: "A personal creator with a Design.", cites: [{source: S2, locator: "§30"}]}
     B_cause:
       value: 3
-      basis: consistent_private_letters
+      basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S2, locator: "§§30–31"}]
-      how_known: "The Creator made the laws (§31) and he saw 'aucun signe d'une intervention de Dieu dans le présent' (§31); but the same Intelligence 'intervient de façon irrécusable, pour le moins, lors de chacun des grands “sauts” qualitatifs' of evolution (§30). Retrospective, 0.5."
+      cites: [{source: S2, locator: "§§30–31"}, {source: S4, locator: "ch. 24"}]
+      how_known: "Scholar-backed single document (S4; RQ-Z4-N1). The Creator made the laws (§31) and he saw 'aucun signe d'une intervention de Dieu dans le présent' (§31); but the same Intelligence 'intervient de façon irrécusable, pour le moins, lors de chacun des grands “sauts” qualitatifs' of evolution (§30). Retrospective, 0.5."
       rationale: "Lawful nature with stated exceptions (evolutionary leaps): 3. Alternative 4: no intervention in the present."
       alternatives:
         - {value: 4, note: "'aucun signe d'une intervention de Dieu dans le présent'.", cites: [{source: S2, locator: "§31"}]}
@@ -211,6 +212,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: secondary
+    kind: "scholarly book"
+    author: "Winfried Scharlau, tr. Melissa Schneps"
+    citation: "Scharlau, Winfried. Who Is Alexander Grothendieck? Anarchy, Mathematics, Spirituality, Solitude. Part 3: Spirituality, tr. Melissa Schneps (German: Wer ist Alexander Grothendieck? Teil 3: Spiritualität). Chapters 24 ('La Clef des Songes') and 26 ('Les Mutants'), via the Grothendieck Circle. https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/Spirituality/Spirituality24.pdf"
+    url: "https://webusers.imj-prg.fr/~leila.schneps/grothendieckcircle/Spirituality/Spirituality24.pdf"
+    accessed: 2026-10-19
+    reliability_note: "Published biography by a mathematician-biographer (emeritus, Münster); chapter PDFs of the English translation read."
+    used_for: [worldview]
 ---
 
 # Alexander Grothendieck
