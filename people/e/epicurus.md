@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 165; Edwin Hubble, rank 164, already coded). Own words from his three letters preserved in Diogenes Laertius X (Hicks translation, Wikisource transcription) and SEP 'Epicurus' (Konstan). primary_system EPICUR (0.7; founder, written profession; Wikisource copy not yet checked against a printing). A 3 (0.5, alt 4): 'verily there are gods ... but they are not such as the multitude believe'; gods material and within the cosmos, as the EPICUR system. B 3 (0.5, alt 4): heavenly motions 'without the ministration or command ... of any being who ... enjoys perfect bliss'; invariable recurrence from 'the original ... conglomeration of atoms'; no stated no-exception claim, and the swerve (later sources) is chance (P40). C 4 (0.7): 'death is nothing to us'. D, E UNKNOWN. mid_basin false (0.5; A ≥ 3). Works undated: span UNKNOWN, era '-500 to 499' (as Aristotle). Plotted (A 3, B 3). Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fixes: mid_basin false 0.5 -> BELOW_THRESHOLD (P10). Wikisource Hicks checked against the printed Loeb vol. 2 (1925; archive.org livesofeminentph02diog): X.76–77 on p. 607 and X.123 on p. 649 (the auditor's check, re-read), X.124–125 on p. 651 (coder's check); edition cited as S4. The web-copy cap (CODING_GUIDE §7) no longer applies, so primary_system EPICUR 0.7 -> 1.0 and C 4 0.7 -> 1.0 (written_profession ceiling 1.0, no named alternative)."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 165; Edwin Hubble, rank 164, already coded). Own words from his three letters preserved in Diogenes Laertius X (Hicks translation, Wikisource transcription) and SEP 'Epicurus' (Konstan). primary_system EPICUR (0.7, Z7 draft; founder, written profession; Wikisource copy not yet checked against a printing). A 3 (0.5, alt 4): 'verily there are gods ... but they are not such as the multitude believe'; gods material and within the cosmos, as the EPICUR system. B 3 (0.5, alt 4): heavenly motions 'without the ministration or command ... of any being who ... enjoys perfect bliss'; invariable recurrence from 'the original ... conglomeration of atoms'; no stated no-exception claim, and the swerve (later sources) is chance (P40). C 4 (0.7): 'death is nothing to us'. D, E UNKNOWN. mid_basin false (0.5; A ≥ 3). Works undated: span UNKNOWN, era '-500 to 499' (as Aristotle). Plotted (A 3, B 3). Draft, not reviewed."}
 
 identity:
   id: epicurus
@@ -77,9 +78,9 @@ worldview:
   primary_system: 
     value: EPICUR
     basis: written_profession
-    certainty: 0.7
-    cites: [{source: S1, locator: "X.123; X.76–77"}, {source: S2, locator: "opening"}]
-    how_known: "Founder; his letters. The Wikisource transcription of Hicks (Loeb 1925) is not yet checked against a printing (CODING_GUIDE §7), so 0.7."
+    certainty: 1.0
+    cites: [{source: S1, locator: "X.123; X.76–77"}, {source: S4, locator: "pp. 607, 649"}, {source: S2, locator: "opening"}]
+    how_known: "Founder; his letters. The Wikisource Hicks text was checked against the printed Loeb vol. 2 (1925) scan (S4: X.76–77 p. 607, X.123 p. 649), so the web-copy cap (CODING_GUIDE §7) no longer applies."
     rationale: "He founded the system the EPICUR code names."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
@@ -103,10 +104,10 @@ worldview:
       rationale: "Heavenly motions occur 'without the ministration or command, either now or in the future, of any being who ... enjoys perfect bliss'; 'where we find phenomena invariably recurring, the invariableness ... must be ascribed to the original interception and conglomeration of atoms' (X.77). 3, not 4 (P16 addendum; P40); as the EPICUR system."
       alternatives:
         - {value: 4, note: "If the swerve is read as natural indeterminacy compatible with 4.", cites: [{source: S2, locator: "§4"}]}
-    C_ledger: {value: 4, basis: written_profession, certainty: 0.7, cites: [{source: S1, locator: "X.124–125"}], how_known: "Written profession: 'death is nothing to us ... death is the privation of all sentience'; no afterlife reward or punishment (S2 §4)."}
+    C_ledger: {value: 4, basis: written_profession, certainty: 1.0, cites: [{source: S1, locator: "X.124–125"}, {source: S4, locator: "p. 651"}], how_known: "Written profession: 'death is nothing to us ... death is the privation of all sentience'; no afterlife reward or punishment (S2 §4)."}
     D_authority: {value: UNKNOWN, how_known: "Not scored."}
     E_scope: {value: UNKNOWN, how_known: "Not scored."}
-  mid_basin: {value: false, certainty: 0.5, cites: [{source: S1, locator: "X.123"}], how_known: "A_locus 3 (≥ 3) at 0.5; this branch reads A only (P10)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is at least 3 only at 0.5; P10 caps mid_basin by the certainty of the tested condition, below the 0.7 bar, so BELOW_THRESHOLD (Chomsky, Sen, Russell, Franklin precedents; Z7 audit)."}
   statements:
     - text: "For verily there are gods, and the knowledge of them is manifest; but they are not such as the multitude believe, seeing that men do not steadfastly maintain the notions they form respecting them."
       cites: [{source: S1, locator: "X.123"}]
@@ -115,7 +116,7 @@ worldview:
       kind: "published letter"
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
-      note: "Hicks translation (Loeb 1925) via Wikisource; not yet checked against a scan."
+      note: "Hicks translation via Wikisource; checked against the Loeb vol. 2 scan, p. 649 (S4)."
     - text: "Nay more: we are bound to believe that in the sky revolutions, solstices, eclipses, risings and settings, and the like, take place without the ministration or command, either now or in the future, of any being who at the same time enjoys perfect bliss along with immortality."
       cites: [{source: S1, locator: "X.76"}]
       context: "Letter to Herodotus."
@@ -123,9 +124,9 @@ worldview:
       kind: "published letter"
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
-      note: "Hicks translation via Wikisource."
+      note: "Hicks translation via Wikisource; checked against the Loeb vol. 2 scan, p. 607 (S4)."
   changes_over_life: []
-  coder_notes: "Check the Hicks wording against a Loeb scan (archive.org) to lift primary to 1.0."
+  coder_notes: "Hicks wording checked against the Loeb vol. 2 scan (S4; Z7 audit and coder)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -161,9 +162,9 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 165"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Wikisource copy of Hicks not yet checked against a printing (CODING_GUIDE §7)."
+    - "Letters read in Hicks's translation (checked against the Loeb scan), not the Greek."
   open_questions:
-    - "Hicks Loeb scan check."
+    - "Dating of the letters and On Nature."
 
 sources:
   - id: S1
@@ -193,6 +194,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: primary
+    kind: "scholarly edition"
+    author: "Diogenes Laertius (tr. R. D. Hicks)"
+    citation: "Diogenes Laertius. Lives of Eminent Philosophers, vol. 2. Tr. R. D. Hicks. Loeb Classical Library (London: Heinemann; New York: Putnam, 1925). Archive.org scan. https://archive.org/details/livesofeminentph02diog"
+    url: "https://archive.org/details/livesofeminentph02diog"
+    accessed: 2026-10-19
+    reliability_note: "Library scan of the printed Loeb edition; used to check the Wikisource text (CODING_GUIDE §7)."
+    used_for: [worldview]
 ---
 
 ## Summary
@@ -229,7 +239,7 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Hicks scan check.
+- Dating of the letters.
 
 ## Research log
 

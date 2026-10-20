@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (WEAKEN): 'begun in 1930' is a composition start, not a P30 #1 dating event. Moses und Aron was neither staged nor published in his lifetime (unfinished; he died 1951), so no in-life premiere or publication year exists to use; item year and span end set to UNKNOWN (Al-Ghazali precedent). Span 1899–1930 -> UNKNOWN (starts 1899)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fix (Z5-08, P26): question-box cite for Moses und Aron and the 1932 span end removed. Re-sourced to the Britannica body ('Evolution from tonality': 'his greatest work, the opera Moses und Aron (begun in 1930)', as excerpted by search, like S5's 1921 passage). Span 1899–1932 -> 1899–1930 (0.5). Worldview unchanged; readmission to Judaism (July 1933) still just after the span. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): Z4-11: Dehmel letter kind now 'private letter' (printed posthumously). S4 (DeVoto) note: full lecture read. coder_notes add the 1923 Kandinsky and 1890 Goldschmied leads. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 148). Basics from Britannica (Dika Newlin, signed). Religion facts: Lutheran baptism 1898 (DeVoto, Tufts); readmitted to Judaism at the Liberal synagogue, Paris, July 1933 (JTA, 25 July 1933). Own words: letter to Richard Dehmel, 13 December 1912 (Arnold Schoenberg Letters, ed. Erwin Stein, scan): oratorio plan on 'modern man ... despite having been an atheist ... wrestles with God ... and finally succeeds in finding God and becoming religious. Learning to pray!' A plan for a work, not a profession; libretto characters not counted (P42). Not a scientist (P30), so B UNKNOWN. Span 1899–1932. primary_system BELOW_THRESHOLD (leads JUDA from 1933, CHRIST nominal 1898–1933); A BELOW_THRESHOLD; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted (no B). Draft, not reviewed."}
@@ -51,7 +52,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Verklärte Nacht", year: 1899, kind: work, lasting: "'one of Schoenberg's most-popular compositions' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'First major works'"}], how_known: "Britannica."}
     - {value: "Method of composition with twelve tones", year: 1921, kind: method, lasting: "serialism and the 12-tone row (S1)", certainty: 0.7, cites: [{source: S5, locator: "1921 passage"}], how_known: "Britannica (July 1921, Piano Suite op. 25)."}
-    - {value: "Moses und Aron", year: 1930, kind: work, lasting: "'his greatest work, the opera Moses und Aron (begun in 1930)' (S5, body)", certainty: 0.5, cites: [{source: S5, locator: "'Evolution from tonality' (body)"}], how_known: "Britannica body sentence, seen as excerpted by search (as S5's 1921 passage); the body dates only the start, 1930. 0.5."}
+    - {value: "Moses und Aron", year: UNKNOWN, kind: work, lasting: "'his greatest work, the opera Moses und Aron (begun in 1930)' (S5, body)", certainty: 0.5, cites: [{source: S5, locator: "'Evolution from tonality' (body)"}], how_known: "Britannica body sentence, seen as excerpted by search (as S5's 1921 passage). 'Begun in 1930' is a composition start, not a P30 #1 dating event; unfinished and not staged or published in his lifetime, so the year is UNKNOWN (Z7 audit). 0.5."}
   evidence_of_impact:
     - {value: "Teacher of Berg and Webern; central figure of the Second Viennese School", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -79,7 +80,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1899–1930", certainty: 0.5, cites: [{source: S1, locator: "'First major works'"}, {source: S5, locator: "'Evolution from tonality'"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (end UNKNOWN)."}
   nominal_affiliations:
     - {value: "Lutheran (baptized 1898)", certainty: 0.7, cites: [{source: S4, locator: "p. 2"}], how_known: "DeVoto."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
@@ -108,7 +109,7 @@ worldview:
   changes_over_life:
     - {value: "Baptized Lutheran", year: 1898, certainty: 0.7, cites: [{source: S4, locator: "p. 2"}], how_known: "DeVoto."}
     - {value: "Readmitted to Judaism, Liberal synagogue, Paris (witnesses Marianoff and Chagall)", year: 1933, certainty: 0.7, cites: [{source: S3, locator: "full report"}], how_known: "JTA report of 25 July 1933."}
-  coder_notes: "Unused own-voice leads in DeVoto (S4): the 1923 letters to Kandinsky, inside the span ('but I am a Jew'; the Jews' 'task that their God has imposed on them'), about identity rather than profession; and the 1890 letter to Malvina Goldschmied, before the span ('as an unbeliever myself'). Read these and later essays for A."
+  coder_notes: "Span end now UNKNOWN (Z7 audit): the worldview values were coded against a span ending 1930 (earlier 1932); if a dating event for Moses und Aron or another lasting work after July 1933 were found, the JUDA readmission would fall inside the span and primary_system could change. Unused own-voice leads in DeVoto (S4): the 1923 letters to Kandinsky, inside the span ('but I am a Jew'; the Jews' 'task that their God has imposed on them'), about identity rather than profession; and the 1890 letter to Malvina Goldschmied, before the span ('as an unbeliever myself'). Read these and later essays for A."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -119,7 +120,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1899–1930", certainty: 0.5, cites: [{source: S1, locator: "'First major works'"}, {source: S5, locator: "'Evolution from tonality' (body)"}], how_known: "Verklärte Nacht (1899) to Moses und Aron (P29, P30). The body gives only 'begun in 1930'; the 1930–1932 dating was in a question box (P26), which is no longer cited, so the end is 1930 at 0.5."}
+  major_work_period: {value: UNKNOWN, how_known: "Starts with Verklärte Nacht (1899); the latest lasting work, Moses und Aron, has no dating event in his lifetime (begun 1930, unfinished; P30 #1), so the end is UNKNOWN (P29; Al-Ghazali precedent; Z7 audit)."}
   age_at_first_lasting_contribution: {value: 25, certainty: 0.7, cites: [{source: S1, locator: "Born; 'First major works'"}], how_known: "1899 − 1874 = 25 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -229,7 +230,7 @@ Viennese Jewish [S1].
 
 ## Timing
 
-1899–1930, age 25 [S1, S5].
+From 1899 (end UNKNOWN), age 25 [S1, S5].
 
 ## Lane B notes (labeled belief model)
 

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (P10): mid_basin false 0.5 -> BELOW_THRESHOLD; RQ-Z7-1 answered: A 3 at 0.5 holds (Franklin precedent)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 163). Basics from Britannica (Michael Ruse, signed). Own words: Psychology Today interview (1998) and Salon interview (2006), both after the span: 'a provisional deist is someone like myself who leaves it open'; 'I do feel confident that there is no intervention of a deity in the origin of life and humanity'; raised 'a devout Southern Baptist'. Scientist (P30). Span 1971–1975. primary_system DEISM (0.5, alt AGNOS); A 3 (0.5; alts 1 and BELOW_THRESHOLD): explicit denial of a personal, intervening God (P20), with at most an impersonal 'creative force'; B 3 (0.5, alt 4; P35, P16 addendum); C, D, E UNKNOWN; mid_basin false (0.5; A ≥ 3 branch). Plotted (A 3, B 3). Draft, not reviewed."}
 
 identity:
@@ -114,7 +115,7 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "Not scored."}
     D_authority: {value: UNKNOWN, how_known: "Not scored."}
     E_scope: {value: UNKNOWN, how_known: "Not scored."}
-  mid_basin: {value: false, certainty: 0.5, cites: [{source: S2, locator: "'You call yourself a deist'"}], how_known: "A_locus 3 (≥ 3) at 0.5; this branch reads A only (P10)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is at least 3 only at 0.5; P10 caps mid_basin by the certainty of the tested condition, below the 0.7 bar, so BELOW_THRESHOLD (Chomsky, Sen, Russell, Franklin precedents; Z7 audit)."}
   statements:
     - text: "I've been doing a kind of Pascalian waffling as a deist. I think being an atheist is to claim knowledge you cannot have. And to say you're agnostic is to arrogantly dismiss the whole thing by saying that it's unknowable. But a provisional deist is someone like myself who leaves it open. You see, evolutionary biology leaves very little room for a theistic God."
       cites: [{source: S2, locator: "'You call yourself a deist'"}]
@@ -134,7 +135,7 @@ worldview:
       verified_on: 2026-10-19
   changes_over_life:
     - {value: "Devout Southern Baptist in youth; converted by evolutionary biology at the University of Alabama", year: 1946, certainty: 0.5, cites: [{source: S3, locator: "'By the time you got to college'"}], how_known: "(interview); year from college entry, approximate."}
-  coder_notes: "A 3 versus 1 for a 'provisional deist' who denies a personal God is a ruling question (RQ-Z7-1)."
+  coder_notes: "RQ-Z7-1 answered by the Z7 audit: A 3 at 0.5 holds (he leaves a remote creator open and refuses the atheist label; Franklin precedent; P38 does not apply), alternative 1 fair."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
