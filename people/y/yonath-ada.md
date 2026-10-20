@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-21: context line rewritten; 'Desconozco' is the interviewer's, not hers. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 138). Basics from Britannica (Kara Rogers, signed; death 31 August 2026, also in the Nobel Foundation's addendum) and her Nobel autobiography (Les Prix Nobel 2009). Own voice on religion: SINC interview (Enrique Sacristán, 5 Oct 2010, Spanish): asked whether science and religious faith are compatible, 'La respuesta no es nada que pueda saber. Pienso que la definición de Dios es algo tan… (silencio) por encima de mí. Así que no puedo responder.' A scientist (P30: ribosome structures). Span 1980–2001 at 0.7. primary_system BELOW_THRESHOLD (leads AGNOS, JUDA); A BELOW_THRESHOLD; B 3 at 0.5, alt 4 (P35); C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
 identity:
@@ -109,7 +110,7 @@ worldview:
     - text: "Esta pregunta me la he hecho yo misma muchas veces. La respuesta no es nada que pueda saber. Pienso que la definición de Dios es algo tan… (silencio) por encima de mí. Así que no puedo responder."
       cites: [{source: S3, locator: "question on science and faith"}]
       date: "2010-10-05"
-      context: "SINC interview at the Passion for Knowledge festival, San Sebastián; asked 'whether you are Jewish and believe in God' she was not sure, but whether being a scientist and having religious faith are compatible."
+      context: "SINC interview at the Passion for Knowledge festival, San Sebastián; the interviewer, saying he does not know ('Desconozco si usted es judía y cree en Dios'), asks instead whether being a scientist and having religious faith are compatible."
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "primary transcription"

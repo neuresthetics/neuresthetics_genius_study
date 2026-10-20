@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): statement kind relabelled from 'written profession (public)' to 'other' (poem's narrator; not scored). RQ-Z1-1 ruled (v8's call on the auditor's advice): the Georgics Jupiter lines are poetic myth, so A stays BELOW_THRESHOLD. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 4, rank 137). Basics from Britannica (Robert Deryck Williams, signed). Own voice read in the Georgics (Latin, The Latin Library web copy): the didactic narrator names Jupiter as the 'father' who made farming hard and set the weather signs (I.121–124, I.351–353), and praises the one who knew 'the causes of things' and trampled fear of fate and Acheron (II.490–492) beside the one who knows the country gods (II.493–494). Not a scientist. Span 42–19 BCE at 0.7 (Eclogues to the unfinished Aeneid). primary_system BELOW_THRESHOLD (leads EPICUR, STOIC); A, B BELOW_THRESHOLD with readings named; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -99,28 +100,28 @@ worldview:
       date: "-37"
       context: "Georgics I, the didactic narrator on why farming is hard: Jupiter ended the Golden Age."
       axes: [A_locus]
-      kind: "written profession (public)"
+      kind: "other"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Georgics composed 37–30 BCE (S1); date is the start year. The Latin Library web copy (P26 web-copy cap 0.7); the Father here is Jupiter. Poem's voice, not a profession of belief (coder's call)."
+      note: "Poem's narrator; not scored. Georgics composed 37–30 BCE (S1); date is the start year. The Latin Library web copy (P26 web-copy cap 0.7); the Father here is Jupiter. Poem's voice, not a profession of belief (coder's call)."
     - text: "Atque haec ut certis possemus discere signis, / aestusque pluuiasque et agentis frigora uentos, / ipse pater statuit quid menstrua luna moneret"
       cites: [{source: S2, locator: "Georgics I.351–353"}]
       date: "-37"
       context: "Georgics I, on weather signs."
       axes: [A_locus, B_cause]
-      kind: "written profession (public)"
+      kind: "other"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "As above."
+      note: "Poem's narrator; not scored. As above."
     - text: "felix qui potuit rerum cognoscere causas / atque metus omnis et inexorabile fatum / subiecit pedibus strepitumque Acherontis auari: / fortunatus et ille deos qui nouit agrestis"
       cites: [{source: S2, locator: "Georgics II.490–493"}]
       date: "-37"
       context: "Georgics II, praise of country life; generally read as about Lucretius (coder's note, not from a source read)."
       axes: [A_locus, B_cause]
-      kind: "written profession (public)"
+      kind: "other"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "As above."
+      note: "Poem's narrator; not scored. As above."
   changes_over_life:
     - {value: "Epicurean attitudes in the early poetry 'gradually give way to attitudes more akin to Stoicism'", certainty: 0.5, cites: [{source: S1, locator: "opening paragraphs"}], how_known: "Britannica's reading of the poems (a scholar's summary), not a dated statement of his."}
   coder_notes: "Coder's calls: (1) the Georgics' didactic narrator is read as his own voice, but its mythic idiom keeps A and B BELOW_THRESHOLD, not scored; (2) the Aeneid's gods and speeches (Jupiter I.257 ff., Anchises VI) are characters' and score nothing (P42 by analogy; as for Homer); (3) the Appendix Vergiliana (including the Siro poem) is of doubtful authorship (S1) and not used (P42); (4) span 42–19 BCE: Eclogues start to the unfinished Aeneid at death."

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-11: the Great Bear 'laws of nature' sentence is on Sachau vol. I p. 352 (was 353) everywhere. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 140). Basics from Britannica (George Saliba, signed) and Encyclopaedia Iranica (Bosworth, 'Life'; de Blois, 'History of Religions'). Own voice read in Sachau's translation of the India (1910, archive.org scan): 'We Muslims ... considering all men as equal, except in piety' (I, p. 100); the Koran's sentences 'perfectly clear' and revealed (I, pp. 263–264); a Hindu theory rejected because the Great Bear would 'form an exception to the laws of nature' (I, p. 353); the rare thing becomes 'something like a miracle, which is no longer in accordance with the ordinary laws of nature' (I, p. 179). A scientist (P30: Masʿudic Canon, coordinates of places); his astrology is taught but personally discounted (S1), so it does not cut the inference (contrast al-Khwarizmi). Span 1000–1030 (first year at 0.5). primary_system ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
 identity:
@@ -109,14 +110,14 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S4, locator: "vol. I, p. 353"}, {source: S4, locator: "vol. I, ch. XVI, p. 179"}, {source: S1, locator: "'Works'"}]
-      rationale: "Scored on his account of nature (P6). A scientist (P30: the Canon's apogee and precession results; the coordinates of places). In his own words he rejects a Hindu theory because the Great Bear would then 'form an exception to the laws of nature' (p. 353), and he treats a very rare thing as 'something like a miracle, which is no longer in accordance with the ordinary laws of nature' (p. 179): a general lawfulness with miracles as the departure from the ordinary, but no stated exceptionless order. So B 3 at 0.5, alternative 4 (P35, P41 by analogy). His astrology does not cut the inference as it did for al-Khwarizmi: he taught it while holding his own opinion of it 'as weak as that of its least adherents' (S1)."
+      cites: [{source: S4, locator: "vol. I, p. 352"}, {source: S4, locator: "vol. I, ch. XVI, p. 179"}, {source: S1, locator: "'Works'"}]
+      rationale: "Scored on his account of nature (P6). A scientist (P30: the Canon's apogee and precession results; the coordinates of places). In his own words he rejects a Hindu theory because the Great Bear would then 'form an exception to the laws of nature' (p. 352), and he treats a very rare thing as 'something like a miracle, which is no longer in accordance with the ordinary laws of nature' (p. 179): a general lawfulness with miracles as the departure from the ordinary, but no stated exceptionless order. So B 3 at 0.5, alternative 4 (P35, P41 by analogy). His astrology does not cut the inference as it did for al-Khwarizmi: he taught it while holding his own opinion of it 'as weak as that of its least adherents' (S1)."
       how_known: "His own published work in translation, plus working science (P35)."
       alternatives:
-        - {value: 4, note: "No stated exceptionless law (P35).", cites: [{source: S4, locator: "vol. I, p. 353"}]}
+        - {value: 4, note: "No stated exceptionless law (P35).", cites: [{source: S4, locator: "vol. I, p. 352"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward and punishment; 'all men as equal, except in piety' (p. 100) is the moral community, which goes to C only as context (P7), and states no ledger."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Reading 2: the Koran is clear and certain on what man needs to know (p. 263), while he defended the mathematical sciences against religious scholars who could not see their use (S1, Taḥdīd). No statement of how the two rank when they conflict (P19, coder's call)."}
-    E_scope: {value: BELOW_THRESHOLD, how_known: "Not scored from working science alone (P19). 'All fixed stars revolve at the same distance from the earth and in the same time' (p. 353) is Sachau's bracketed gloss on 'the laws of nature', and concerns the stars only (P7)."}
+    E_scope: {value: BELOW_THRESHOLD, how_known: "Not scored from working science alone (P19). 'All fixed stars revolve at the same distance from the earth and in the same time' (p. 352) is Sachau's bracketed gloss on 'the laws of nature', and concerns the stars only (P7)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 and B 3 are both only at 0.5, under the test's 0.7 bar (§6, P19)."}
   statements:
     - text: "We Muslims, of course, stand entirely on the other side of the question, considering all men as equal, except in piety; and this is the greatest obstacle which prevents any approach or understanding between Hindus and Muslims."
@@ -138,7 +139,7 @@ worldview:
       verified_on: 2026-10-19
       note: "As above."
     - text: "we do not see why it should revolve so much more rapidly than the other fixed stars (for, in that case, the diameter of its course would be much larger than that of the others), nor why it should form an exception to the laws of nature (according to which all fixed stars revolve at the same distance from the earth and in the same time)"
-      cites: [{source: S4, locator: "vol. I, p. 353"}]
+      cites: [{source: S4, locator: "vol. I, p. 352"}]
       date: "1030"
       context: "India, against a theory of a 'year of the Great Bear'; he concludes its author was 'entirely devoid of scientific education'."
       axes: [B_cause, E_scope]
@@ -170,15 +171,15 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1000–1030", certainty: 0.5, cites: [{source: S2, locator: "'i. Life'"}], how_known: "The Chronology (c. 1000, 0.5) to the India and Canon (1030) (P29, P30)."}
   age_at_first_lasting_contribution: {value: 27, certainty: 0.5, cites: [{source: S2, locator: "'i. Life'"}], how_known: "1000 − 973 = 27 (P30); the first year is at 0.5."}
-  first_evidence_of_lio_type_views: {value: "1030 (India), age 57", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 353"}], how_known: "B 3 from his own words; earlier works not read (§8)."}
-  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 353"}], how_known: "The India (1030) is at the end of the span; earlier works not read."}
+  first_evidence_of_lio_type_views: {value: "1030 (India), age 57", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 352"}], how_known: "B 3 from his own words; earlier works not read (§8)."}
+  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 352"}], how_known: "The India (1030) is at the end of the span; earlier works not read."}
   worldview_during_major_work: {value: "Muslim throughout; Shiʿite sympathy early, less apparent after 1017 (S3)", certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Iranica."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "unclear", rationale: "Not assessed.", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Not assessed."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Not assessed."}
-  circle_present: {value: "unclear", rationale: "Not assessed.", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 353"}], how_known: "Not assessed."}
+  circle_present: {value: "unclear", rationale: "Not assessed.", certainty: 0.5, cites: [{source: S4, locator: "vol. I, p. 352"}], how_known: "Not assessed."}
   reading: "Not assessed."
   notes: ""
 
@@ -269,7 +270,7 @@ Did not know his father; taught by Abū Naṣr Manṣūr ibn ʿIrāq [S1; S2].
 
 ## Adult working worldview
 
-Writes as a Muslim ("We Muslims") and treats the Koran as clear revelation [S4, I, pp. 100, 263–264]; rejects a theory that would make an exception to "the laws of nature" [S4, I, p. 353].
+Writes as a Muslim ("We Muslims") and treats the Koran as clear revelation [S4, I, pp. 100, 263–264]; rejects a theory that would make an exception to "the laws of nature" [S4, I, p. 352].
 
 ## Heritage (context only)
 

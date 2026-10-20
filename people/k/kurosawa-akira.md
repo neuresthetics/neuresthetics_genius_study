@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-41 (FAIL): primary_system, A_locus and B_cause BELOW_THRESHOLD -> UNKNOWN, with AGNOS and BUDDH kept as leads (V3: second-hand quotations alone do not move a value off UNKNOWN); mid_basin -> UNKNOWN. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 139). Basics from Britannica (Tadao Sato and Britannica Editors, signed). Own voice on religion only in interviews about Ran, both as secondary quotations: to Michael Sragow (1986, reprinted in Sight & Sound, 2010), 'the gods or God or whoever it is observing human events is feeling sadness ... and powerlessness to affect human beings' behaviour'; to Cineaste (quoted in a Dallas Baptist University study guide), 'how God and Buddha, if they actually exist, perceive this human life'. Not a scientist. Span 1950–1985 at 0.7 (Rashomon to Ran). primary_system BELOW_THRESHOLD (leads AGNOS, BUDDH); A, B BELOW_THRESHOLD with readings named; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -82,18 +83,18 @@ worldview:
   working_years: {value: "1950–1985", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Films of the 1950s'"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "(interview) Leads AGNOS and BUDDH. On Ran he spoke of 'wondering how God and Buddha, if they actually exist, perceive this human life' (S3, Cineaste, secondary quotation): a conditional, not a stated suspension of belief (AGNOS) or a profession (BUDDH). The Sragow remark (S2) describes what the film tries 'to get at'. Both are secondary quotations, so below 0.5 (§7)."}
+  primary_system: {value: UNKNOWN, how_known: "(interview) Leads AGNOS and BUDDH. On Ran he spoke of 'wondering how God and Buddha, if they actually exist, perceive this human life' (S3, Cineaste, secondary quotation): a conditional, not a stated suspension of belief (AGNOS) or a profession (BUDDH). The Sragow remark (S2) describes what the film tries 'to get at'. Both are secondary quotations (§7). Under V3 (Miles Davis), second-hand quotations alone do not move a value off UNKNOWN (Z1 audit, Z1-41); revisit once Sragow 1986 or the Cineaste interview is read."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "'if they actually exist' (S3). Against: secondary quotation; conditional, not a stated suspension."}
     - {code: BUDDH, reason: "'God and Buddha' as the imagined observers (S3); Japanese setting. Against: no profession."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) 'if they actually exist' (S3): no locus stated; secondary quotation (P20, §7)."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "(interview) Not a scientist. The observing divinity feels 'powerlessness to affect human beings' behaviour' (S2): a reading toward no intervention (3–4), but it concerns human conduct in a film's viewpoint, not nature (P6, P16), and is a secondary quotation."}
+    A_locus: {value: UNKNOWN, how_known: "(interview) Leads AGNOS and BUDDH: 'if they actually exist' (S3): no locus stated; secondary quotation (P20, §7). Under V3 (Miles Davis), second-hand quotations alone do not move a value off UNKNOWN (Z1 audit, Z1-41); revisit once Sragow 1986 or the Cineaste interview is read."}
+    B_cause: {value: UNKNOWN, how_known: "(interview) Leads AGNOS and BUDDH. Not a scientist. The observing divinity feels 'powerlessness to affect human beings' behaviour' (S2): a reading toward no intervention (3–4), but it concerns human conduct in a film's viewpoint, not nature (P6, P16), and is a secondary quotation. Under V3 (Miles Davis), second-hand quotations alone do not move a value off UNKNOWN (Z1 audit, Z1-41); revisit once Sragow 1986 or the Cineaste interview is read."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read (P19); characters' words in Ran are not his (P42)."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read (P19)."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read on the world's order (P7, P19)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B both BELOW_THRESHOLD (P19)."}
+  mid_basin: {value: UNKNOWN, how_known: "A and B both UNKNOWN (P19)."}
   statements:
     - text: "What I was trying to get at in Ran – and this was there from the script stage – was that the gods or God or whoever it is observing human events is feeling sadness about how human beings destroy each other, and powerlessness to affect human beings' behaviour."
       cites: [{source: S2, locator: "section 13, Ran"}]
@@ -199,7 +200,7 @@ sources:
 
 ## Summary
 
-Kurosawa Akira (1910–1998), Japanese film director [S1]. Draft: primary_system BELOW_THRESHOLD (leads AGNOS, BUDDH; interview); A, B BELOW_THRESHOLD (interview); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted.
+Kurosawa Akira (1910–1998), Japanese film director [S1]. Draft: primary_system UNKNOWN (leads AGNOS, BUDDH; interview); A, B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 

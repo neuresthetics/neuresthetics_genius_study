@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 1661 | 1605 | 0 | 56 | 0 | 96.6% |
 | contribution | 1281 | 1280 | 0 | 1 | 0 | 99.9% |
 | childhood | 1636 | 1110 | 418 | 107 | 1 | 67.8% |
-| worldview | 1642 | 703 | 7 | 648 | 284 | 42.8% |
+| worldview | 1642 | 703 | 7 | 652 | 280 | 42.8% |
 | heritage | 604 | 257 | 273 | 73 | 1 | 42.5% |
 | timing | 755 | 552 | 43 | 154 | 6 | 73.1% |
 | lane_b | 453 | 447 | 3 | 3 | 0 | 98.7% |
 | institutions | 333 | 333 | 0 | 0 | 0 | 100.0% |
 | collaborators | 430 | 430 | 0 | 0 | 0 | 100.0% |
 | review | 218 | 218 | 0 | 0 | 0 | 100.0% |
-| **all** | 9315 | 7179 | 752 | 1092 | 292 | 77.1% |
+| **all** | 9315 | 7179 | 752 | 1096 | 288 | 77.1% |
 
 ### Worldview coding status
 
@@ -156,7 +156,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | khayyam-omar | UNKNOWN | draft — unreviewed |
 | king-martin-luther-jr | CHRIST | draft — unreviewed |
 | knuth-donald | CHRIST (interview) | draft — unreviewed |
-| kurosawa-akira | BELOW_THRESHOLD (interview) | draft — unreviewed |
+| kurosawa-akira | UNKNOWN (interview) | draft — unreviewed |
 | lavoisier-antoine | BELOW_THRESHOLD | draft — unreviewed |
 | leavitt-henrietta-swan | BELOW_THRESHOLD | draft — unreviewed |
 | leibniz-gottfried-wilhelm | CLASS_THEISM | draft — unreviewed |
