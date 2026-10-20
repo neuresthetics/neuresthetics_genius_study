@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fix (WEAKEN, P21): the Models of My Life statement was read only in OCR of the CMU archive scan, so verified_against 'primary facsimile' -> new value 'archive scan (OCR only)'. Unscored; no effect."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 181). Basics from NobelPrize.org (facts; autobiography 1978) and Britannica (archived 2020, body: 'his influential book Administrative Behavior (1947)'). Own words: Models of My Life (draft, Carnegie Mellon University Libraries, Simon papers), after the span: as a schoolboy in Christian Endeavor 'while insisting on his agnosticism' (before the span); at Chicago, 'neither of us being swept up by the theologies we encountered'; 'a logical positivism that I have never relinquished (I would prefer to call it empiricism now)'. A secondary account (Velupillai and Venkatachalam) says he 'described himself as an atheist' (no locator). No adult statement on God read, so primary_system BELOW_THRESHOLD (leads AGNOS, ATHE); A BELOW_THRESHOLD. Scientist: his decision theory makes testable claims about decision behaviour in organizations (P35 addendum), so B 3 at 0.5 from working science, alt 4. C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1947, age 31. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -101,9 +102,9 @@ worldview:
       context: "Models of My Life (draft in the Simon papers); about his Chicago years, after the span in writing."
       axes: [D_authority]
       kind: "autobiography"
-      verified_against: "primary facsimile"
+      verified_against: "archive scan (OCR only)"
       verified_on: 2026-10-19
-      note: "Read from the OCR of the CMU Libraries scan of his typescript; page images not viewed. Not scored (no axis view on God or nature)."
+      note: "Read only in the OCR text of the CMU Libraries scan of his typescript; page images not viewed, so not a primary facsimile (P21; AA1 audit). Not scored (no axis view on God or nature)."
   changes_over_life: []
   coder_notes: "Read the published Models of My Life (1991) for any adult statement on religion; check Velupillai's 'described himself as an atheist' at its source."
 
@@ -221,4 +222,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA1 audit fix (WEAKEN, P21): the Models of My Life statement was read only in OCR of the CMU archive scan, so verified_against 'primary facsimile' -> new value 'archive scan (OCR only)'. Unscored; no effect.
 - 2026-10-19: Read NobelPrize.org; Britannica (archived); Models of My Life typescript.

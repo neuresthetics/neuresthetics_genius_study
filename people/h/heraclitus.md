@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fix (FAIL, P39 strict reading): era_bucket '-500 to 499' @0.5 -> UNKNOWN; life dates UNKNOWN and the c. 500 BCE floruit sits on the bucket edge. Plot unchanged (A 4 / B 3, faded)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 180). Source: SEP 'Heraclitus' (Daniel W. Graham, rev. 2023), a scholar's account with DK fragment numbers; the fragments are quoted in SEP's translation and attributed to him by scholarly agreement (P42), transmitted by later authors. Worldview by scholarly_reconstruction (0.5 cap): 'God is day night, winter summer, war peace ...' (B67) and 'This world-order ... no god nor man did create, but it ever was and is and will be: everliving fire, kindling in measures' (B30); 'all human laws are nourished by the one divine law' (B114). PANT 0.5 (two-part test: the divine identified with the whole of opposites, part 1; one eternal measured order, part 2), alt BELOW_THRESHOLD ('would and would not be called by the name of Zeus', B32). A 4 at 0.5 (alt 3); B 3 at 0.5 (alt 4): lawful measures, no exceptionless claim (P41-style); not counted a scientist (no listed theory about physical systems; the doctrines are metaphysical). C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span UNKNOWN ('active around 500 BCE' is a floruit, not a composition range; P39). Plotted, faded, at A 4 / B 3. Draft, not reviewed."}
 
 identity:
@@ -36,7 +37,7 @@ basics:
     date: {value: UNKNOWN, how_known: "Not stated in the source read."}
     place: {value: UNKNOWN, how_known: "Not stated."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "Undated: 'active around 500 BCE' (S1) is a floruit, not a composition range or dating event (P39; RQ-Z9-N1 needs a composition range)."}
-  era_bucket: {value: "-500 to 499", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Active around 500 BCE (P2); the floruit sits on the -500 boundary, so 0.5 (alternative 'before -500')."}
+  era_bucket: {value: UNKNOWN, how_known: "P39 (strict reading, XW3): life dates UNKNOWN and the floruit 'around 500 BCE' (S1) sits on the -500 bucket edge, so no single bucket holds every adult year (AA1 audit)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Ephesus, modern Turkey (P3)."}
   region_of_work: {value: "Middle East and North Africa", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Work"}], how_known: "Ephesus."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -212,4 +213,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA1 audit fix (FAIL, P39 strict reading): era_bucket '-500 to 499' @0.5 -> UNKNOWN; life dates UNKNOWN and the c. 500 BCE floruit sits on the bucket edge. Plot unchanged (A 4 / B 3, faded).
 - 2026-10-19: Read SEP (Graham).

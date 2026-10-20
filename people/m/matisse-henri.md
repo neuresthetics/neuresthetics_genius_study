@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit note: added the Met 'Fauvism' essay (Sabine Rewald, 2004) as S4, corroborating the 1905 Salon d'Automne dating; search-excerpt labels kept. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 178). Basics from Britannica (Roy Donald McMullen, signed; body). Lasting work and dating from the Met's Heilbrunn essay 'Henri Matisse (1869–1954)' (body, seen as a search excerpt): Woman with a Hat, 'when exhibited at the 1905 Salon d'Automne', gave rise to Fauvism; public exhibition is the P30 #1 dating event (RQ-Z7-N1). Own words: Jazz (published 30 September 1947), after the span, in Jack Flam's translation (web copy of Matisse on Art): 'Do I believe in God? Yes, when I work ... I feel no gratitude toward Him'. Conditional, work-bound belief with refused acknowledgement, so primary_system BELOW_THRESHOLD (leads CHRIST: Vence chapel, not read; PANT not supported); A BELOW_THRESHOLD; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1905, age 36 (1905 − 1869). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -46,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Fauvism (Woman with a Hat)", year: 1905, kind: "work", lasting: "'leader of the Fauvist movement' (S1, body); Woman with a Hat 'gave rise to the first of the avant-garde movements' (S2, body)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Fauvist period"}], how_known: "Britannica and the Met essay; dated by the 1905 Salon d'Automne showing (S2)."}
+    - {value: "Fauvism (Woman with a Hat)", year: 1905, kind: "work", lasting: "'leader of the Fauvist movement' (S1, body); Woman with a Hat 'gave rise to the first of the avant-garde movements' (S2, body)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Fauvist period"}, {source: S4, locator: "para. 2"}], how_known: "Britannica and the Met essays; dated by the 1905 Salon d'Automne showing (S2; S4: 'When their pictures were exhibited later that year at the Salon d'Automne')."}
   evidence_of_impact:
     - {value: "Often regarded as the most important French painter of the 20th century", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -127,7 +128,7 @@ collaborators:
   - {value: "Gustave Moreau", relation: "teacher", note: "atelier, École des Beaux-Arts", certainty: 0.7, cites: [{source: S1, locator: "Formative years"}], how_known: "Britannica."}
 
 review:
-  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 178"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S5, locator: "roster.csv, rank 178"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
     - "Only one religious text read, after the span, in a web copy."
@@ -164,6 +165,15 @@ sources:
     used_for: [worldview]
   - id: S4
     type: secondary
+    kind: "institutional page"
+    author: "Sabine Rewald"
+    citation: "Rewald, Sabine. 'Fauvism.' Heilbrunn Timeline of Art History, The Metropolitan Museum of Art (October 2004). https://www.metmuseum.org/en/essays/fauvism"
+    url: "https://www.metmuseum.org/en/essays/fauvism"
+    accessed: 2026-10-19
+    reliability_note: "Signed museum reference essay, seen as a search excerpt (page behind a bot check); corroborates S2."
+    used_for: [contribution, timing]
+  - id: S5
+    type: secondary
     kind: "database"
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
@@ -183,7 +193,7 @@ Paris; Nice [S1].
 
 ## Contribution and impact
 
-Fauvism, 1905 [S1, S2].
+Fauvism, 1905 [S1, S2, S4].
 
 ## Childhood and education
 
@@ -211,4 +221,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA1 audit note: added the Met 'Fauvism' essay (Sabine Rewald, 2004) as S4, corroborating the 1905 Salon d'Automne dating; search-excerpt labels kept. No value changes.
 - 2026-10-19: Read Britannica (McMullen); Met essay excerpt; Jazz text (Flam).

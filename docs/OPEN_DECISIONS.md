@@ -847,6 +847,11 @@ Process:
   - **P13:** 'famous' (Marconi's patent No. 7777) and 'achieved recognition as a noted inventor' (Lamarr) are not lasting claims. Marconi: span 1896, age 22. Lamarr: no supported lasting work, span UNKNOWN.
   - **P21:** a new `verified_against` value, `unofficial web copy`, for a person's own published text read in an unofficial web copy (0.7 cap, §7); `primary transcription` stays reserved for keyed transcriptions such as TCP. Applied to Orwell.
   - Marconi S2 note: the archived Vatican Radio page was read. Wright: the Fallingwater how_known now says it is dated by completion, 1937.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA1 audit at a6e2a3f):**
+  - **RQ-Z9-N1 applied to Ibn al-Haytham:** the specialist composition range for Kitāb al-manāẓir, 'Sometime between 1028 and 1038' (A. Mark Smith's critical edition, 2001, preface; El-Bizri and the Peterhouse manuscript note give the same per the audit), dates the work: start 1028 (P12), span 1028–1038, age about 63 (birth c. 965), certainty 0.5. The 1011–1021 date in a physicians' overview (Tbakhi and Amr 2007) conflicts with it and is not used. Not result-changing (A UNKNOWN, not plotted).
+  - **P39 strict reading:** Heraclitus's era is UNKNOWN (floruit c. 500 BCE on the bucket edge, life dates unknown), as for Pythagoras and Sun Tzu. Ibn al-Haytham's era certainty follows his c. life dates (0.5).
+  - **P21:** a new `verified_against` value, `archive scan (OCR only)`, for a person's own text read only in the OCR of a library or archive scan with page images not viewed. Applied to Simon's Models of My Life typescript.
+  - Matisse: the Met 'Fauvism' essay (Rewald 2004) added as a corroborating source; search-excerpt labels kept.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**
