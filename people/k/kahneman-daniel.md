@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-21, Z6-22 FAIL; v8's call on the auditor's advice): 'I remember very precisely the moment at which I stopped believing in God' is stated non-belief, not suspension (P38 reasoning; CODING_GUIDE §1), so primary_system AGNOS -> ATHE 0.5, alt AGNOS; A BELOW_THRESHOLD -> 4 at 0.5, alts BELOW_THRESHOLD and 3 (P20 explicit denial of a God that cares; Chomsky, Penrose, Sen precedents); mid_basin BELOW_THRESHOLD -> false at 0.5 (A 4 >= 3). Raskin page dated 2022-03-01 (page metadata datePublished), as Chomsky's in Z2. Now plotted, faded, at A 4 / B 3."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 158). Basics from his Nobel autobiography (2002). Own voice: interview with Max Raskin (undated web page; after the span): never religious as an adult; lost his faith at about 15: 'maybe I could believe in God, but I could not believe in a God that cared whether or not I masturbate ... if I can't imagine God caring about me, then we were irrelevant to each other, and it really didn't matter whether he existed or not'; no afterlife; 'There's nothing mystical'. A scientist (P30, P35 addendum: experimental claims about human judgment, as Skinner). Span 1974–1979. primary_system AGNOS (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B 3 (0.5, alt 4; P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
 identity:
@@ -79,18 +80,29 @@ worldview:
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: 
-    value: AGNOS
+    value: ATHE
     basis: recorded_interview
     certainty: 0.5
     cites: [{source: S2, locator: "Rabbi Kahaneman"}]
-    how_known: "(interview) After the span (P20). God's existence set aside as irrelevant: 'it really didn't matter whether he existed or not'; 'There's nothing mystical'. 0.5."
-    rationale: "AGNOS: existence left open and set aside, no stated disbelief. Alternative BELOW_THRESHOLD: indifference rather than a stance."
+    how_known: "(interview) 2022; After the span, so capped at 0.5 (P20). Stated non-belief: 'I remember very precisely the moment at which I stopped believing in God'; never religious as an adult; no afterlife; 'There's nothing mystical'."
+    rationale: "ATHE: stated non-belief is more than suspension (P38 reasoning; AGNOS is explicit suspension, CODING_GUIDE §1). v8's call on the auditor's advice (Z6 audit, Z6-21). Alternative AGNOS: 'maybe I could believe in God'; 'it really didn't matter whether he existed or not'."
+    alternatives:
+      - {value: AGNOS, note: "'maybe I could believe in God ... it really didn't matter whether he existed or not' read as suspension.", cites: [{source: S2, locator: "Rabbi Kahaneman"}]}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: AGNOS, reason: "Coded at 0.5."}
-    - {code: ATHE, reason: "Rejected: no stated disbelief ('maybe I could believe in God')."}
+    - {code: ATHE, reason: "Coded at 0.5: 'stopped believing in God' (Z6 audit)."}
+    - {code: AGNOS, reason: "Alternative: 'maybe I could believe in God'; existence 'didn't matter'."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "(interview) Rejects a God who cares about him; no locus view (P20; not the stated-disbelief precedent)."}
+    A_locus:
+      value: 4
+      basis: recorded_interview
+      certainty: 0.5
+      cites: [{source: S2, locator: "Rabbi Kahaneman"}]
+      how_known: "(interview) 2022; Explicit denial of a personal, intervening God is scored (CODING_GUIDE §6, P20): 'I could not believe in a God that cared'; 'I stopped believing in God'. The retrospective covers his whole adult life, span included; after the span, so 0.5."
+      rationale: "By analogy with P38 and the Sen, Chomsky and Penrose precedents. v8's call on the auditor's advice (Z6 audit, Z6-22)."
+      alternatives:
+        - {value: BELOW_THRESHOLD, note: "Indifference ('irrelevant to each other') rather than a locus view.", cites: [{source: S2, locator: "Rabbi Kahaneman"}]}
+        - {value: 3, note: "Denies only a caring God ('maybe I could believe in God').", cites: [{source: S2, locator: "Rabbi Kahaneman"}]}
     B_cause: 
       value: 3
       basis: inference_from_work
@@ -103,7 +115,7 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "'Do you believe in an afterlife? No.' (interview) not scored (coder's call)."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
+  mid_basin: {value: false, certainty: 0.5, cites: [{source: S2, locator: "Rabbi Kahaneman"}], how_known: "A_locus 4 (>= 3) at 0.5, so the P4 test gives false at 0.5."}
   statements:
     - text: "I was walking home, and I had the insight that maybe I could believe in God, but I could not believe in a God that cared whether or not I masturbate. That was a very sudden insight. That if I can't imagine God caring about me, then we were irrelevant to each other, and it really didn't matter whether he existed or not. And that was the end of the religion for me."
       cites: [{source: S2, locator: "Rabbi Kahaneman"}]
@@ -112,7 +124,7 @@ worldview:
       kind: "recorded interview"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "Page undated."
+      note: "Page dated 2022-03-01 (page metadata)."
   changes_over_life: []
   coder_notes: "Psychology counts as science here under the P35 addendum (Skinner); flag if the auditor reads him as social science."
 
@@ -148,9 +160,9 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 158"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Only own words on religion are an undated interview after the span."
+    - "Only own words on religion are a 2022 interview after the span."
   open_questions:
-    - "Death date from a tertiary source; dated interview."
+    - "Death date from a tertiary source."
 
 sources:
   - id: S1
@@ -166,10 +178,10 @@ sources:
     type: primary
     kind: "other"
     author: "Daniel Kahneman, interviewed by Max Raskin"
-    citation: "Raskin, Max. 'Interview with Daniel Kahneman.' maxraskin.com (undated). https://www.maxraskin.com/interviews/daniel-kahneman"
+    citation: "Raskin, Max. 'Interview with Daniel Kahneman.' maxraskin.com (2022-03-01). https://www.maxraskin.com/interviews/daniel-kahneman"
     url: "https://www.maxraskin.com/interviews/daniel-kahneman"
     accessed: 2026-10-19
-    reliability_note: "Published interview transcript (recorded_interview, P8); undated on the page."
+    reliability_note: "Published interview transcript (recorded_interview, P8); dated 2022-03-01 in the page metadata (datePublished)."
     used_for: [childhood, worldview, timing]
   - id: S3
     type: secondary
@@ -184,7 +196,7 @@ sources:
 
 ## Summary
 
-Daniel Kahneman (b. 1934), psychologist [S1]. Draft: AGNOS (0.5); A BELOW_THRESHOLD; B 3 (0.5, alt 4). Not plotted.
+Daniel Kahneman (b. 1934), psychologist [S1]. Draft: ATHE (0.5, alt AGNOS); A 4 (0.5); B 3 (0.5, alt 4). Plotted, faded.
 
 ## Life and work
 
@@ -200,7 +212,7 @@ Religious schooling; faith lost at 15 [S2].
 
 ## Adult working worldview
 
-God irrelevant to him [S2].
+Stopped believing in God at about 15 [S2].
 
 ## Heritage (context only)
 
@@ -216,8 +228,9 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Dated interview.
+- Death date.
 
 ## Research log
 
 - 2026-10-19: Read Nobel autobiography; Raskin interview.
+- 2026-10-19: Z6 audit fixes: ATHE, A 4; Raskin page date from metadata.

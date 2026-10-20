@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 1837 | 1766 | 0 | 71 | 0 | 96.1% |
 | contribution | 1381 | 1380 | 0 | 1 | 0 | 99.9% |
 | childhood | 1778 | 1196 | 418 | 163 | 1 | 67.3% |
-| worldview | 1810 | 753 | 7 | 749 | 301 | 41.6% |
+| worldview | 1810 | 755 | 7 | 749 | 299 | 41.7% |
 | heritage | 668 | 283 | 273 | 111 | 1 | 42.4% |
 | timing | 835 | 604 | 43 | 182 | 6 | 72.3% |
 | lane_b | 501 | 482 | 3 | 16 | 0 | 96.2% |
 | institutions | 352 | 352 | 0 | 0 | 0 | 100.0% |
 | collaborators | 450 | 450 | 0 | 0 | 0 | 100.0% |
 | review | 236 | 236 | 0 | 0 | 0 | 100.0% |
-| **all** | 10182 | 7778 | 752 | 1343 | 309 | 76.4% |
+| **all** | 10182 | 7780 | 752 | 1343 | 307 | 76.4% |
 
 ### Worldview coding status
 
@@ -159,7 +159,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | jung-carl | BELOW_THRESHOLD | draft — unreviewed |
 | kafka-franz | BELOW_THRESHOLD | draft — unreviewed |
 | kahlo-frida | UNKNOWN | draft — unreviewed |
-| kahneman-daniel | AGNOS (interview) | draft — unreviewed |
+| kahneman-daniel | ATHE (interview) | draft — unreviewed |
 | kant-immanuel | KANT | draft — unreviewed |
 | kepler-johannes | CHRIST | draft — unreviewed |
 | keynes-john-maynard | BELOW_THRESHOLD | draft — unreviewed |

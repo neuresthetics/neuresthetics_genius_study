@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-10, Z6-11 HOLD with notes): says where 'my religion, kind of' was seen (Kirkus review S4; Media and the Machine transcript S5; not on Keen On S2); B how_known now gives the auditor's answer on scientist status (AlphaFold2 listed as a method, P33; Knuth, Tao) instead of 'pending a ruling'. No value changed; still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 159). Basics from NobelPrize.org facts (Chemistry 2024). His words on religion seen only as quoted from Sebastian Mallaby's biography The Infinity Machine (2026) in reviews and an interview with Mallaby: 'doing science is, sort of, like reading the mind of God. Understanding the deep mystery of the universe is my religion, kind of'; Mallaby calls him a Spinozan. Second-hand quotations alone (V3), so UNKNOWN with leads. Scientist status not decided: AlphaFold2 is an AI method for a natural system (protein structure); Knuth/Tao precedent says not, the Chemistry Nobel says yes; B UNKNOWN pending a ruling. Span 2020. primary_system UNKNOWN (leads PANT, DEISM); A UNKNOWN; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -73,21 +74,21 @@ worldview:
   working_years: {value: "2020", certainty: 0.5, cites: [{source: S1, locator: "Work"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: {value: UNKNOWN, how_known: "His words seen only second-hand (V3): as quoted from Mallaby's The Infinity Machine (2026), 'doing science is, sort of, like reading the mind of God ... my religion, kind of'; Mallaby calls him a Spinozan, with 'some sort of intelligent design behind it, or at least there might be' (Mallaby's paraphrase). Leads PANT (Spinoza) and DEISM (design)."}
+  primary_system: {value: UNKNOWN, how_known: "His words seen only second-hand (V3): as quoted from Mallaby's The Infinity Machine (2026), 'doing science is, sort of, like reading the mind of God ... my religion, kind of'; Mallaby calls him a Spinozan, with 'some sort of intelligent design behind it, or at least there might be' (Mallaby's paraphrase). Leads PANT (Spinoza) and DEISM (design). Where the 'my religion, kind of' wording was seen: Kirkus Reviews' review of The Infinity Machine (S4) and the Media and the Machine episode transcript reading the passage aloud (S5), both quoting the book; it is not on the Keen On page (S2), which gives 'reading the mind of God' as 'quoted in The Infinity Machine' and Mallaby's report of the design remark.", cites: [{source: S2, locator: "text"}, {source: S4, locator: "review text"}, {source: S5, locator: "02:41–02:58"}]}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: PANT, reason: "Lead: Spinozan, per Mallaby."}
     - {code: DEISM, reason: "Lead: design, per Mallaby's paraphrase."}
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Second-hand only (V3)."}
-    B_cause: {value: UNKNOWN, how_known: "Scientist status unruled: AlphaFold2 is an AI method applied to a natural system; Knuth/Tao say not a scientist, the Chemistry Nobel suggests science. Nothing first-hand on nature."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist as his work is listed (Z6 audit, Z6-11): AlphaFold2 is listed as a method, a tool used on a natural system, not a theory or result about it (P33; Knuth and Tao precedents; the Nobel citation reads 'for protein structure prediction'). So B needs his own statement about nature (P16); none first-hand. He would count as a scientist only if a lasting result about natural systems were listed with a source calling it lasting."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Read The Infinity Machine itself (or a first-hand interview) for his words; scientist status under P30 #11 is a ruling question (RQ-Z6-1)."
+  coder_notes: "Read The Infinity Machine itself (or a first-hand interview) for his words; scientist status (RQ-Z6-1) answered by the Z6 audit: not a scientist as listed (P33)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -144,6 +145,24 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Interview with his biographer; Hassabis's words second-hand (V3)."
     used_for: [worldview]
+  - id: S4
+    type: secondary
+    kind: "other"
+    author: "Kirkus Reviews"
+    citation: "'The Infinity Machine' (review of Sebastian Mallaby). Kirkus Reviews (2026). https://www.kirkusreviews.com/book-reviews/sebastian-mallaby/the-infinity-machine/"
+    url: "https://www.kirkusreviews.com/book-reviews/sebastian-mallaby/the-infinity-machine/"
+    accessed: 2026-10-19
+    reliability_note: "Book review quoting the book; Hassabis's words second-hand (V3)."
+    used_for: [worldview]
+  - id: S5
+    type: secondary
+    kind: "other"
+    author: "Rob Kelly"
+    citation: "Kelly, Rob. 'Demis Hassabis: How the Google DeepMind CEO Thinks' (transcript). Media and the Machine. https://mediaandthemachine.transistor.fm/episodes/demis-hassabis-how-the-google-deepmind-ceo-thinks/transcript"
+    url: "https://mediaandthemachine.transistor.fm/episodes/demis-hassabis-how-the-google-deepmind-ceo-thinks/transcript"
+    accessed: 2026-10-19
+    reliability_note: "Podcast host reading a passage of the book; second-hand (V3)."
+    used_for: [worldview]
   - id: S3
     type: secondary
     kind: "database"
@@ -173,7 +192,7 @@ Not read.
 
 ## Adult working worldview
 
-Spinozan by his biographer's account; second-hand only [S2].
+Spinozan by his biographer's account; second-hand only [S2]. 'My religion, kind of' seen as quoted from the book [S4, S5].
 
 ## Heritage (context only)
 
@@ -194,3 +213,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Research log
 
 - 2026-10-19: Read NobelPrize.org facts; Mallaby coverage.
+- 2026-10-19: Z6 audit fixes: where the wording was seen; scientist status answered.
