@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-42 (FAIL): primary_system and A_locus BELOW_THRESHOLD -> UNKNOWN (V3, as Kurosawa), keeping CHRIST and the Oklahoma story as leads; mid_basin -> UNKNOWN. Z2-44: span re-dated by first publications (P30 #1): 1922 (lysozyme, Proc. R. Soc. B) to 1929 (penicillin, Br. J. Exp. Pathol.), age 41; S4 and S5 added. Maurois citation gives the 1963 Penguin edition scanned. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 143). Basics from Britannica (Kevin Brown, signed). Religion from Maurois's Life (trans. Hopkins, 1959; Penguin scan on archive.org): 'the young Scot, who never spoke about religion' (ch. 4); the remark 'I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming' is a story 'current in Oklahoma' that 'he is said to have' made, and Maurois only infers it is 'probably true' (ch. 16): reported speech at second hand, below threshold. The ch. 9 epigraph 'God took care to hide that country ...' is Maurois's epigraph (coder's identification: Kipling's 'The Explorer'), not Fleming's words; the 'finger of God' line is from Pannett's funeral oration (Epilogue). A scientist (P30). Span 1921–1928. primary_system BELOW_THRESHOLD (lead: Presbyterian upbringing); A BELOW_THRESHOLD; B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
 identity:
@@ -35,7 +36,7 @@ basics:
   death:
     date: {value: "1955-03-11", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "London", modern_name: "London, United Kingdom", polity_then: "United Kingdom", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1921, certainty: 0.7, cites: [{source: S1, locator: "text (lysozyme, November 1921)"}], how_known: "Discovery of lysozyme, November 1921 (S1); the year of its first public statement was not checked (P30), flagged."}
+  first_lasting_contribution_year: {value: 1922, certainty: 0.7, cites: [{source: S4, locator: "Proc. R. Soc. B 93: 306–317 (1922)"}], how_known: "First public statement of lysozyme (discovered November 1921, S1): 'On a remarkable bacteriolytic element found in tissues and secretions', 1922 (P30 #1)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "text"}], how_known: "1921 (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "United Kingdom (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "St Mary's Hospital, London."}
@@ -46,8 +47,8 @@ basics:
 contribution:
   fields: {value: ["bacteriology", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Lysozyme", year: 1921, kind: discovery, lasting: "an antibacterial enzyme in body fluids (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
-    - {value: "Penicillin", year: 1928, kind: discovery, lasting: "the first antibiotic; Nobel Prize 1945 (S1)", certainty: 0.7, cites: [{source: S1, locator: "text (3 September 1928)"}], how_known: "Britannica."}
+    - {value: "Lysozyme", year: 1922, kind: discovery, lasting: "an antibacterial enzyme in body fluids (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S4, locator: "Proc. R. Soc. B 93 (1922)"}], how_known: "Discovered November 1921 (S1); first published 1922 (P30 #1)."}
+    - {value: "Penicillin", year: 1929, kind: discovery, lasting: "the first antibiotic; Nobel Prize 1945 (S1)", certainty: 0.7, cites: [{source: S1, locator: "text (3 September 1928)"}, {source: S5, locator: "Br. J. Exp. Pathol. 10: 226–236 (1929)"}], how_known: "Observed 3 September 1928 (S1); first published 1929 (P30 #1)."}
   evidence_of_impact:
     - {value: "Nobel Prize for Physiology or Medicine 1945, with Howard Florey and Ernst Chain", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works: []
@@ -74,15 +75,15 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1921–1928", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1922–1929", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing in his own words read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "He 'never spoke about religion' (S2, ch. 4); the only remark on God is second-hand and hedged by Maurois (S2, ch. 16). Lead: Scottish Presbyterian background (S2, ch. 1)."}
+  primary_system: {value: UNKNOWN, how_known: "No own words read (V3; Z2-42, as Kurosawa Z1-41). Leads: He 'never spoke about religion' (S2, ch. 4); the only remark on God is second-hand and hedged by Maurois (S2, ch. 16). CHRIST from the Scottish Presbyterian background (S2, ch. 1)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Lead only: upbringing; no adult profession read."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Only a second-hand anecdote: 'There is a story current in Oklahoma ... He is said to have replied: \"I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming.\"' Maurois judges it 'probably true' because Fleming did not put it in his 'Fleming Myth' dossier (S2, ch. 16, pp. 258–259). Reported speech at second hand and possibly a joke: below threshold (§7, P8)."}
+    A_locus: {value: UNKNOWN, how_known: "No own words read (V3; Z2-42). Lead only, a second-hand anecdote: 'There is a story current in Oklahoma ... He is said to have replied: \"I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming.\"' Maurois judges it 'probably true' because Fleming did not put it in his 'Fleming Myth' dossier (S2, ch. 16, pp. 258–259). Reported speech at second hand and possibly a joke (§7, P8)."}
     B_cause:
       value: 3
       basis: scholarly_reconstruction
@@ -95,7 +96,7 @@ worldview:
     C_ledger: {value: UNKNOWN, how_known: "Nothing read (P19)."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Nothing in his words."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Not scored from science alone (P19)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A not scored."}
+  mid_basin: {value: UNKNOWN, how_known: "A UNKNOWN."}
   statements:
     - text: "I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming."
       cites: [{source: S2, locator: "ch. 16, pp. 258–259"}]
@@ -107,7 +108,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Second-hand; 'He is said to have replied'. After the span. Not used for a score."
   changes_over_life: []
-  coder_notes: "Do not credit Fleming with two lines often quoted from Maurois: 'God took care to hide that country till He judged His people ready' is the epigraph of ch. 9 (Kipling's 'The Explorer', coder's identification), and 'We can almost see the finger of God' is from Professor Pannett's funeral oration (Epilogue, p. 306). Span start 1921 is the discovery year; P30 asks for the first public statement (likely 1922 for lysozyme, 1929 for penicillin; not checked in sources read)."
+  coder_notes: "Do not credit Fleming with two lines often quoted from Maurois: 'God took care to hide that country till He judged His people ready' is the epigraph of ch. 9 (Kipling's 'The Explorer', coder's identification), and 'We can almost see the finger of God' is from Professor Pannett's funeral oration (Epilogue, p. 306). The span is dated by the first publications (1922, 1929), P30 #1; the bibliographic details are confirmed by citations in the history-of-medicine literature (Garrison-Morton; Mayo Clin Proc), not read in facsimile."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -118,8 +119,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1921–1928", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Lysozyme (1921) to penicillin (1928) (P29, P30; see coder_notes)."}
-  age_at_first_lasting_contribution: {value: 40, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1921 − 1881 = 40 (P30)."}
+  major_work_period: {value: "1922–1929", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Lysozyme paper (1922) to penicillin paper (1929) (P29, P30 #1)."}
+  age_at_first_lasting_contribution: {value: 41, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1922 − 1881 = 41 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None in his own words."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "He 'never spoke about religion' (S2, ch. 4)."}
@@ -161,7 +162,7 @@ sources:
     type: secondary
     kind: "scholarly book"
     author: "André Maurois (trans. Gerard Hopkins)"
-    citation: "Maurois, André. The Life of Sir Alexander Fleming, Discoverer of Penicillin. Trans. Gerard Hopkins. London: Jonathan Cape, 1959; Penguin reprint (archive.org scan)."
+    citation: "Maurois, André. The Life of Sir Alexander Fleming, Discoverer of Penicillin. Trans. Gerard Hopkins. London: Jonathan Cape, 1959; Harmondsworth: Penguin, 1963 (the edition scanned on archive.org; page numbers are this edition's)."
     url: "https://archive.org/details/B-001-014-322"
     accessed: 2026-10-19
     reliability_note: "Authorised biography written with the widow's access to his papers; page numbers from the Penguin scan's running heads."
@@ -175,6 +176,24 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: primary
+    kind: "journal article"
+    author: "Alexander Fleming"
+    citation: "Fleming, Alexander. \"On a remarkable bacteriolytic element found in tissues and secretions.\" Proceedings of the Royal Society of London, Series B 93 (1922): 306–317. doi:10.1098/rspb.1922.0023"
+    url: "https://doi.org/10.1098/rspb.1922.0023"
+    accessed: 2026-10-19
+    reliability_note: "Bibliographic details only (year of first publication); not read."
+    used_for: [basics, contribution, timing]
+  - id: S5
+    type: primary
+    kind: "journal article"
+    author: "Alexander Fleming"
+    citation: "Fleming, Alexander. \"On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae.\" British Journal of Experimental Pathology 10 (1929): 226–236."
+    url: "https://pubmed.ncbi.nlm.nih.gov/?term=Fleming+1929+antibacterial+action+penicillium"
+    accessed: 2026-10-19
+    reliability_note: "Bibliographic details only (year of first publication); not read."
+    used_for: [contribution, timing]
 ---
 
 # Alexander Fleming
@@ -183,7 +202,7 @@ sources:
 
 ## Summary
 
-Sir Alexander Fleming (1881–1955), Scottish bacteriologist, discoverer of lysozyme and penicillin [S1]. Draft: primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 3 (0.5, alt 4); mid_basin BELOW_THRESHOLD. Not plotted.
+Sir Alexander Fleming (1881–1955), Scottish bacteriologist, discoverer of lysozyme and penicillin [S1]. Draft: primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B 3 (0.5, alt 4); mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -191,7 +210,7 @@ Ayrshire, Kilmarnock, St Mary's [S1].
 
 ## Contribution and impact
 
-Lysozyme (1921), penicillin (1928), Nobel 1945 [S1].
+Lysozyme (published 1922), penicillin (published 1929), Nobel 1945 [S1; S4; S5].
 
 ## Childhood and education
 
@@ -207,7 +226,7 @@ Scottish [S1].
 
 ## Timing
 
-1921–1928, from age 40 [S1].
+1922–1929, from age 41 [S4; S5].
 
 ## Lane B notes (labeled belief model)
 

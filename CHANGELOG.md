@@ -602,6 +602,13 @@ Sourced drafts of the systems the first-pool people are most likely to be coded 
 
 - **2026-10-19, chart label fix and refresh** (Jason: 'fix them'). scripts/make_figures.py: each grid cell's columns and font size are now fitted from measured label widths (fit_cell), so no label runs into the next column or row (Chandrasekhar and Russell; the crowded 'mostly a person outside the world' cell); markers shrink with the font in crowded cells; the overlay figure is larger (22 x 15.5 in) and the people chart slightly larger (18 x 13 in); a check (report_overlaps) prints any overlapping label boxes when the figures are drawn (0 on all three grids). scripts/lib/records.py: short_label() drops parentheticals and suffixes ('Martin Luther King Jr.' -> King; 'Ibn Rushd (Averroes)' -> Ibn Rushd; two-word Ibn names keep both words, so Ibn Khaldun and Ibn Sina; Leonardo da Vinci -> Leonardo), used by both charts and the README caption. All figures regenerated after Jason's rulings: 57 plotted, 86 not scorable; King now solid (A 1, B 3), Kant moves to B 3. No data changes in this commit.
 
+- **2026-10-19, audit fixes for f70a593** (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/: 28 claims, 24 hold, 3 weaken, 1 fail). Plotted stays 61, not scorable 90.
+  - Chomsky (RQ-Z2-1 answered: A 4 at 0.5 holds; plotted faded): Raskin interview dated 2022 (page metadata); 'Remarks on Religion' now undated (no statement date; '1990' was the URL slug); ATHE rationale names his refusal of the label as the reason for 0.5.
+  - Al-Ghazali (Z2-21, Z2-23; RQ-Z2-2, v8's call on the auditor's advice): ISLAM 0.7 -> 0.5, basis scholarly_reconstruction; the Revival's year and the span end are UNKNOWN (P12); A and B say 0.5 is the pending-check cap.
+  - Al-Razi (note): the 0.5 ceiling cites the scholarly-reconstruction ceiling (CODING_GUIDE §3), not P36.
+  - Fleming (Z2-42, FAIL; Z2-44): primary_system, A_locus and mid_basin -> UNKNOWN, leads kept (V3); span re-dated by first publications, 1922–1929 (P30 #1), age 41; Maurois cited as the 1963 Penguin edition scanned.
+  - OPEN_DECISIONS: RQ-Z1-1 (Virgil) logged under P42.
+
 - **2026-10-19, audit fixes for 8813a47** (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/: 24 claims, 21 hold, 2 weaken, 1 fail). Plotted stays 61, not scorable 90 (with Z2).
   - Kurosawa (Z1-41, FAIL): primary_system, A_locus, B_cause and mid_basin BELOW_THRESHOLD -> UNKNOWN; AGNOS and BUDDH kept as leads (V3: second-hand quotations alone do not move a value off UNKNOWN). Still not plotted.
   - Yonath (Z1-21): statement context rewritten; 'Desconozco ...' is the interviewer's.

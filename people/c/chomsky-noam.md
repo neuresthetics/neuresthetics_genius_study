@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 5, rank 62; the gap found in batch Z1, filled on Jason's call that P32 governs). Basics from Britannica (James A. McGilvray, signed). Own voice: Max Raskin interview (c. 2021–2023): 'Do you believe in God?' 'For about a year.' 'But now you don't?' 'No.'; and his undated reply on chomsky.info: 'Do I believe in God? Can't answer, I'm afraid ... I don't understand the question.' A scientist (P30, P35 addendum; coder's call): generative grammar and principles and parameters make empirical claims about a biological faculty (S1; his own 'part of human biology', S2). Span 1955–1986 at 0.7. primary_system ATHE (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alt BELOW_THRESHOLD; interview; P38 by analogy; RQ-Z2-1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Raskin interview dated 2022 (page metadata, 15 January 2022); 'Remarks on Religion' statement date UNKNOWN (the page says no date; '1990' is the URL slug); the ATHE rationale says the refusal of the 'atheist' label is why it is 0.5. RQ-Z2-1 answered: A 4 at 0.5 holds; plotted faded. No score changed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 5, rank 62; the gap found in batch Z1, filled on Jason's call that P32 governs). Basics from Britannica (James A. McGilvray, signed). Own voice: Max Raskin interview (2022): 'Do you believe in God?' 'For about a year.' 'But now you don't?' 'No.'; and his undated reply on chomsky.info: 'Do I believe in God? Can't answer, I'm afraid ... I don't understand the question.' A scientist (P30, P35 addendum; coder's call): generative grammar and principles and parameters make empirical claims about a biological faculty (S1; his own 'part of human biology', S2). Span 1955–1986 at 0.7. primary_system ATHE (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alt BELOW_THRESHOLD; interview; P38 by analogy; RQ-Z2-1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
 identity:
   id: chomsky-noam
@@ -89,7 +90,7 @@ worldview:
     certainty: 0.5
     cites: [{source: S2, locator: "Kibbutznik"}, {source: S3, locator: "reply on belief in God"}]
     how_known: "(interview) 'Do you believe in God?' 'For about a year.' 'But now you don't?' 'No.' No afterlife; not thought about it 'since I was a teenager' (S2, after the span). He rejects both labels when the term is undefined: 'I don't even know what an atheist is' and 'I don't see how one can be an agnostic' (S4); of something that 'stands above' the universe, 'I've never heard of any reason for believing that' (S3). Named alternative BELOW_THRESHOLD, so 0.5."
-    rationale: "ATHE: no God and no religious belief, with no stated suspension (AGNOS needs explicit suspension; he rejects agnosticism, S4). The alternative is BELOW_THRESHOLD, since his main public answer is that the question is unclear (S3). Consistent with Penrose (P38 ruling W3): a hedged first-person position gives 0.5."
+    rationale: "ATHE: no God and no religious belief, with no stated suspension (AGNOS needs explicit suspension; he rejects agnosticism, S4). The alternative is BELOW_THRESHOLD, since his main public answer is that the question is unclear (S3). Consistent with Penrose (P38 ruling W3): a hedged first-person position gives 0.5; his refusal of the 'atheist' label (S4) is why it is 0.5 and not 0.7."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: ATHE, reason: "Coded at 0.5 (S2, S3)."}
@@ -122,7 +123,7 @@ worldview:
     - text: "MR: Do you believe in God? NC: For about a year. MR: But now you don't? NC: No. MR: Do you believe in an afterlife? NC: No."
       cites: [{source: S2, locator: "Kibbutznik"}]
       date: "2022"
-      context: "Max Raskin's interview; the page is dated 'Jan 15' with no year; Trump's four years in office are past and the 2023 stroke is not mentioned, so c. 2021–2023 (coder's estimate)."
+      context: "Max Raskin's interview, published 15 January 2022 (the page's datePublished metadata)."
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "primary transcription"
@@ -130,8 +131,7 @@ worldview:
       note: "Interviewer's published transcript. After the span (P20)."
     - text: "Do I believe in God? Can’t answer, I’m afraid. I’m not being flippant, but I don’t understand the question. What is it that I am supposed to believe or not believe in? Are you asking whether I believe there is something not in the universe (or the universes, if there are (maybe infinitely) many of them), and that somehow stands above them? I’ve never heard of any reason for believing that."
       cites: [{source: S3, locator: "reply on belief in God"}]
-      date: "1990"
-      context: "Reply to a forum query, collected on chomsky.info as 'Remarks on Religion'; the site gives no date (filed under 1990)."
+      context: "Reply to a forum query, collected on chomsky.info as 'Remarks on Religion'; the page says '[No date available]' (the URL's 1990 is only the site's filing slug)."
       axes: [A_locus]
       kind: "other"
       verified_against: "primary transcription"
@@ -186,7 +186,7 @@ review:
   controversies: []
   data_quality_flags:
     - "The record was missing until batch Z2 although P32 put him first among the uncoded; filled on Jason's call (2026-10-19)."
-    - "Raskin interview undated beyond 'Jan 15'; the chomsky.info reply undated."
+    - "The chomsky.info reply is undated."
   open_questions:
     - "RQ-Z2-1: A 4 at 0.5 (P38 by analogy) or BELOW_THRESHOLD?"
     - "Read Britannica's later sections (minimalism, political works) and a dated primary on religion."
@@ -205,7 +205,7 @@ sources:
     type: primary
     kind: other
     author: "Noam Chomsky, interviewed by Max Raskin"
-    citation: "Raskin, Max. \"Interview with Noam Chomsky.\" maxraskin.com, 15 January (year not given; c. 2021–2023). https://www.maxraskin.com/interviews/noam-chomsky"
+    citation: "Raskin, Max. \"Interview with Noam Chomsky.\" maxraskin.com, 15 January 2022. https://www.maxraskin.com/interviews/noam-chomsky"
     url: "https://www.maxraskin.com/interviews/noam-chomsky"
     accessed: 2026-10-19
     reliability_note: "Interviewer's published transcript (recorded_interview, P8)."
@@ -214,7 +214,7 @@ sources:
     type: primary
     kind: other
     author: "Noam Chomsky"
-    citation: "Chomsky, Noam. \"Remarks on Religion\" (reply to a forum query, undated). chomsky.info. https://chomsky.info/1990____/"
+    citation: "Chomsky, Noam. \"Remarks on Religion\" (reply to a forum query; no date available). chomsky.info. https://chomsky.info/1990____/"
     url: "https://chomsky.info/1990____/"
     accessed: 2026-10-19
     reliability_note: "His own written reply, on the archive site; date unknown; web copy."

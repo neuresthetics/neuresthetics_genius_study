@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 1661 | 1605 | 0 | 56 | 0 | 96.6% |
 | contribution | 1281 | 1280 | 0 | 1 | 0 | 99.9% |
 | childhood | 1636 | 1110 | 418 | 107 | 1 | 67.8% |
-| worldview | 1642 | 703 | 7 | 652 | 280 | 42.8% |
+| worldview | 1642 | 702 | 7 | 656 | 277 | 42.8% |
 | heritage | 604 | 257 | 273 | 73 | 1 | 42.5% |
-| timing | 755 | 552 | 43 | 154 | 6 | 73.1% |
+| timing | 755 | 551 | 43 | 155 | 6 | 73.0% |
 | lane_b | 453 | 447 | 3 | 3 | 0 | 98.7% |
 | institutions | 333 | 333 | 0 | 0 | 0 | 100.0% |
 | collaborators | 430 | 430 | 0 | 0 | 0 | 100.0% |
 | review | 218 | 218 | 0 | 0 | 0 | 100.0% |
-| **all** | 9315 | 7179 | 752 | 1096 | 288 | 77.1% |
+| **all** | 9315 | 7177 | 752 | 1101 | 285 | 77.0% |
 
 ### Worldview coding status
 
@@ -116,7 +116,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | faraday-michael | CHRIST | example — unreviewed |
 | fermi-enrico | UNKNOWN | draft — unreviewed |
 | feynman-richard | AGNOS | draft — unreviewed |
-| fleming-alexander | BELOW_THRESHOLD | draft — unreviewed |
+| fleming-alexander | UNKNOWN | draft — unreviewed |
 | ford-henry | BELOW_THRESHOLD (interview) | draft — unreviewed |
 | foucault-michel | BELOW_THRESHOLD | draft — unreviewed |
 | franklin-rosalind | AGNOS | draft — unreviewed |

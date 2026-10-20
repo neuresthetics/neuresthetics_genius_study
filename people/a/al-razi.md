@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): the 0.5 ceiling now cites the scholarly-reconstruction ceiling (CODING_GUIDE §3), not P36. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 142). Source: SEP 'Abu Bakr al-Razi' (Peter Adamson, rev. 2025). Scholarly reconstruction only: five eternal principles; God's existence 'demonstrated on the basis of the good design of the universe'; 'God intervenes to make the world as good as it can be'; creation ex nihilo impossible. His religion is disputed: the hostile Abū Ḥātim has him reject prophecy and miracles, but Doubts about Galen acknowledges 'books sent by God'. A scientist (P30: medicine; alchemy is described as chemical procedure, so it does not cut the inference). Span UNKNOWN (P12, P39: no lasting work dated in the source); era '500 to 1399'. primary_system BELOW_THRESHOLD (leads PLATO, DEISM, ISLAM); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
 identity:
@@ -74,7 +75,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN)."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: "A revealed text's truth must accord with the truth found by reason (Adamson: 'At a minimum')", certainty: 0.5, cites: [{source: S1, locator: "§5"}], how_known: "Scholarly reconstruction (P36)."}
+  self_described_science_religion_relation: {value: "A revealed text's truth must accord with the truth found by reason (Adamson: 'At a minimum')", certainty: 0.5, cites: [{source: S1, locator: "§5"}], how_known: "Scholarly reconstruction (CODING_GUIDE §3 ceiling)."}
   primary_system:
     value: BELOW_THRESHOLD
     how_known: "Disputed in S1 §5: Abū Ḥātim (hostile) reports a rejection of prophecy and miracles; Fakhr al-Dīn reports Qurʾān interpretations in agreement with his philosophy; Doubts about Galen acknowledges 'books sent by God'. Leads: PLATO (five eternal principles, God and Soul), DEISM (God known by design, revelation possibly rejected; P27 fails if he accepted revelation), ISLAM."
@@ -89,7 +90,7 @@ worldview:
       basis: scholarly_reconstruction
       certainty: 0.5
       cites: [{source: S1, locator: "§2"}]
-      how_known: "Adamson: God is one of five eternal principles; God's existence is 'demonstrated on the basis of the good design of the universe'; the world was not created directly by God but begun by the Soul's desire, and 'God intervenes to make the world as good as it can be'; creation ex nihilo is impossible. Scholarly reconstruction, so at most 0.5 (P36)."
+      how_known: "Adamson: God is one of five eternal principles; God's existence is 'demonstrated on the basis of the good design of the universe'; the world was not created directly by God but begun by the Soul's desire, and 'God intervenes to make the world as good as it can be'; creation ex nihilo is impossible. Scholarly reconstruction, so at most 0.5 (CODING_GUIDE §3, scholarly-reconstruction ceiling)."
       rationale: "A separate, wise God who orders a world he did not create from nothing (co-eternal matter, time, place): 1. Alternative 0: a separate personal God who intervenes."
       alternatives:
         - {value: 0, note: "Personal intervening God.", cites: [{source: S1, locator: "§2"}]}
@@ -108,7 +109,7 @@ worldview:
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A 1 and B 3 at 0.5: both need 0.7 (P10)."}
   statements: []
   changes_over_life: []
-  coder_notes: "No own-voice text read; everything rests on Adamson (P36). Span UNKNOWN; era filled from life dates (P39)."
+  coder_notes: "No own-voice text read; everything rests on Adamson (scholarly-reconstruction ceiling, CODING_GUIDE §3). Span UNKNOWN; era filled from life dates (P39)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

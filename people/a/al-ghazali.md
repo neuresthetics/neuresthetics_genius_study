@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-21: ISLAM 0.7 -> 0.5, basis scholarly_reconstruction (SEP's summary, no quotation of his own). Z2-23 / RQ-Z2-2 (v8's call on the auditor's advice): the Revival's year is UNKNOWN and the span end is UNKNOWN (P12). A and B how_known now say 0.5 is the pending-check cap. Plot unchanged (A 0 / B 3, faded)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 141). Source: SEP 'al-Ghazali' (Frank Griffel, rev. 2026), with his own words as secondary quotations of Marmura's translation of the Incoherence (2nd ed. 2000; primary check pending, §7): the connection between cause and effect 'is not necessary ... according to us' and is due to 'the prior decision (taqdīr) of God' (p. 166); 'within divine power to create satiety without eating' (p. 166); for prophets God 'suspends His habit' (Griffel on p. 171). Span 1095–1106 at 0.5. primary_system ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 2); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
 identity:
@@ -46,7 +47,7 @@ contribution:
   fields: {value: ["theology (kalām)", "philosophy", "law", "Sufism"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "The Incoherence of the Philosophers (Tahāfut al-falāsifa)", year: 1095, kind: work, lasting: "his critique of falsafa and its account of causality, discussed in S1 §7", certainty: 0.5, cites: [{source: S1, locator: "§2; §7"}], how_known: "SEP; 'around 1095'."}
-    - {value: "The Revival of the Religious Sciences (Iḥyāʾ ʿulūm al-dīn)", year: 1106, kind: work, lasting: "'his most widely read work' (S1)", certainty: 0.5, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP. Undated in the source; written before the Nishapur controversy that followed his return in 1106, so 1106 is a latest date (coder's call)."}
+    - {value: "The Revival of the Religious Sciences (Iḥyāʾ ʿulūm al-dīn)", year: UNKNOWN, kind: work, lasting: "'his most widely read work' (S1)", certainty: 0.5, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP; undated in the source (before the Nishapur controversy that followed his 1106 return, itself undated), so it does not set a year (P12)."}
   evidence_of_impact:
     - {value: "The Revival is his 'most widely read work'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP."}
   major_works:
@@ -73,20 +74,20 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1095–1106", certainty: 0.5, cites: [{source: S1, locator: "§1; §2"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (end UNKNOWN)."}
   nominal_affiliations:
     - {value: "Sunni Islam (Ashʿarite kalām)", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "Student of the Ashʿarite al-Juwaynī; defends Ashʿarite positions (S1)."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read states one in his words."}
   primary_system:
     value: ISLAM
-    basis: written_profession
-    certainty: 0.7
+    basis: scholarly_reconstruction
+    certainty: 0.5
     cites: [{source: S1, locator: "§1; §3; §4"}]
     how_known: "His own writing (via S1) defines Islam's boundaries by three fundamental doctrines (monotheism, Muhammad's prophecy, the Qurʾānic teachings on the afterlife) and condemns as unbelief teachings that cross them; he regarded himself as a renewer (muḥyī) of religion."
-    rationale: "ISLAM use_when: Muslim belief in his own writing. CLASS_THEISM rejected: he attacks falsafa, the Aristotelian-Neoplatonic natural theology. Read through SEP's account and secondary quotations, so 0.7."
+    rationale: "ISLAM use_when: Muslim belief in his own writing. CLASS_THEISM rejected: he attacks falsafa, the Aristotelian-Neoplatonic natural theology. Rests on SEP's summary of his doctrine with no quotation of his own, so a scholarly reconstruction at 0.5 (Z2-21)."
   secondary_system: {value: UNKNOWN, how_known: "Sufism is practice within ISLAM here."}
   candidate_codes_considered:
-    - {code: ISLAM, reason: "Coded at 0.7 (S1)."}
+    - {code: ISLAM, reason: "Coded at 0.5 (S1, scholarly reconstruction)."}
     - {code: CLASS_THEISM, reason: "Rejected: he is its critic (S1 §2–§4)."}
   lio_axes:
     A_locus:
@@ -94,7 +95,7 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S1, locator: "§7 (Marmura 2000a, pp. 166–167)"}]
-      how_known: "Secondary quotation: the connection of cause and effect is 'due to the prior decision (taqdīr) of God, who creates them side by side' (2000a, p. 166, in S1); the efficient cause of burning 'is God—either through the mediation of the angels or without mediation' (p. 167). Primary check pending (§7), so 0.5."
+      how_known: "Secondary quotation: the connection of cause and effect is 'due to the prior decision (taqdīr) of God, who creates them side by side' (2000a, p. 166, in S1); the efficient cause of burning 'is God—either through the mediation of the angels or without mediation' (p. 167). Primary check pending (§7): 0.5 is the pending-check cap."
       rationale: "A separate personal God who decides and creates: 0. Alternative 1, since the reading rests on one text via S1."
       alternatives:
         - {value: 1, note: "Not verified against the primary text.", cites: [{source: S1, locator: "§7"}]}
@@ -103,7 +104,7 @@ worldview:
       basis: written_profession
       certainty: 0.5
       cites: [{source: S1, locator: "§7 (Marmura 2000a, pp. 166, 171, 222)"}]
-      how_known: "Secondary quotations: 'it is within divine power to create satiety without eating, to create death without a deep cut ... in the neck' (p. 166); for a prophet's miracle God 'suspends His habit and omits to create the effect' (S1 on p. 171); he chides those who 'deny magic, sorcery, the talismanic arts, [prophetic] miracles, and the wondrous deeds [done by saints]' (p. 222). Griffel: he assumes the habitual order otherwise holds. Primary check pending."
+      how_known: "Secondary quotations: 'it is within divine power to create satiety without eating, to create death without a deep cut ... in the neck' (p. 166); for a prophet's miracle God 'suspends His habit and omits to create the effect' (S1 on p. 171); he chides those who 'deny magic, sorcery, the talismanic arts, [prophetic] miracles, and the wondrous deeds [done by saints]' (p. 222). Griffel: he assumes the habitual order otherwise holds. Primary check pending: 0.5 is the pending-check cap."
       rationale: "A habitual order with God's stated exceptions (miracles): B 3. Alternative 2: the exceptions include saints' wonders and magic, and every event is God's creation, so intervention may count as frequent."
       alternatives:
         - {value: 2, note: "Occasionalist reading with wider exceptions.", cites: [{source: S1, locator: "§7 (p. 222)"}]}
@@ -132,7 +133,7 @@ worldview:
       note: "Primary check pending."
   changes_over_life:
     - {value: "Left Baghdad in 1095 for an ascetic Sufi life, vowing never to serve the authorities; returned to state teaching in Nishapur in 1106", certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP."}
-  coder_notes: "Span end 1106 is the coder's latest date for the undated Revival (P39 caveat: if v8 reads the Revival as undated, the span is UNKNOWN; era unchanged). The Marmura quotations should be checked in the printed translation."
+  coder_notes: "Span end UNKNOWN: the Revival is undated (P12). ISLAM rests on SEP's summary of his doctrine, so 0.5 until a primary text (the Munqidh, or the fatwā closing the Incoherence) is read in print. The Marmura quotations should be checked in the printed translation; A and B carry the pending-check cap (0.5)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -143,7 +144,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1095–1106", certainty: 0.5, cites: [{source: S1, locator: "§1; §2"}], how_known: "The Incoherence (c. 1095) to the Revival (before the post-1106 controversy) (P29, P30, coder's call)."}
+  major_work_period: {value: UNKNOWN, how_known: "Starts with the Incoherence (c. 1095); the latest lasting work, the Revival, is undated, so the end is UNKNOWN (P12, P29; v8's call on the auditor's advice, Z2-23)."}
   age_at_first_lasting_contribution: {value: 39, certainty: 0.5, cites: [{source: S1, locator: "§1 Life"}], how_known: "1095 − 1056 = 39 (P30); 37 under the 1058 birth."}
   first_evidence_of_lio_type_views: {value: "c. 1095 (Incoherence)", certainty: 0.5, cites: [{source: S1, locator: "§7"}], how_known: "Secondary quotation."}
   lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S1, locator: "§7"}], how_known: "In the Incoherence itself."}
@@ -200,7 +201,7 @@ sources:
 
 ## Summary
 
-Abū Ḥāmid al-Ghazālī (c. 1056–1111), Ashʿarite theologian, jurist and Sufi [S1]. Draft: ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 2); C UNKNOWN; D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh.
+Abū Ḥāmid al-Ghazālī (c. 1056–1111), Ashʿarite theologian, jurist and Sufi [S1]. Draft: ISLAM (0.5); A 0 (0.5, alt 1); B 3 (0.5, alt 2); C UNKNOWN; D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh.
 
 ## Life and work
 
@@ -224,7 +225,7 @@ Muslim, Khorasan [S1].
 
 ## Timing
 
-1095–1106, from about 39 [S1].
+From 1095 (end UNKNOWN), age about 39 [S1].
 
 ## Lane B notes (labeled belief model)
 
