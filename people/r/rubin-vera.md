@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 221). Sources: Britannica scholars edition, signed by Kelly Gisonna (read in full); ADS record of Rubin and Ford 1970 (S3). Lasting: galaxy rotation evidence for dark matter; 'The existence of dark matter was previously only a conjecture but was confirmed through Rubin's work' (S1); the Andromeda rotation paper appeared in ApJ 159 (February 1970) (S3). The 1951 supergalactic-plane result ('now known to be evidence of the supergalactic plane') is listed as a major work, not lasting (P13 borderline; for the auditor). Span 1970, age 42. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN; heritage Jewish 0.7. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: if the thesis result ever counts, span alternative 1950–1970 (December 1950 AAS talk), age 22."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 221). Sources: Britannica scholars edition, signed by Kelly Gisonna (read in full); ADS record of Rubin and Ford 1970 (S3). Lasting: galaxy rotation evidence for dark matter; 'The existence of dark matter was previously only a conjecture but was confirmed through Rubin's work' (S1); the Andromeda rotation paper appeared in ApJ 159 (February 1970) (S3). The 1951 supergalactic-plane result ('now known to be evidence of the supergalactic plane') is listed as a major work, not lasting (AA10 audit: it says the result was right, not that it lasted; Mirzakhani line). If it ever counts, P30 dates it to her December 1950 AAS talk: span alternative 1950–1970, age 22. Span 1970, age 42. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN; heritage Jewish 0.7. Not plotted. Draft, not reviewed."}
 
 identity:
   id: rubin-vera
@@ -110,7 +111,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1970", certainty: 0.7, cites: [{source: S1, locator: "The supergalactic plane, dark matter, and legacy"}], how_known: "The one lasting item (P29, P30)."}
+  major_work_period: {value: "1970", certainty: 0.7, cites: [{source: S1, locator: "The supergalactic plane, dark matter, and legacy"}], how_known: "The one lasting item (P29, P30). Alternative 1950–1970 only if the thesis result were counted as lasting (December 1950 AAS talk)."}
   age_at_first_lasting_contribution: {value: 42, certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "abstract record"}], how_known: "1970 − 1928 = 42 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -138,7 +139,7 @@ review:
     - "1951 supergalactic result not listed as lasting (P13 borderline)."
   open_questions:
     - "Own words on belief (interviews)."
-    - "Is 'now known to be evidence of the supergalactic plane' lasting wording (would make the span 1951–1970)?"
+    - "If the thesis result ever counts as lasting: dated by her talk at the 84th AAS meeting, Haverford, 27–29 December 1950 (P30), so span alternative 1950–1970, age 22 (AA10 audit; AAS history page not read here)."
 
 sources:
   - id: S1
@@ -208,4 +209,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA10 audit fix: if the thesis result ever counts, span alternative 1950–1970 (December 1950 AAS talk), age 22.
 - 2026-10-20: Read Britannica (Gisonna, scholars edition); ADS record.

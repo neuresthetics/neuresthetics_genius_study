@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-20
   change_log:
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: birth date 1601 lowered to 0.5 (1601 vs 1607 is a real dispute)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fix: birth year 1607 (Pengelley, S3) recorded as the alternative; age 37 lowered to 0.5 with 31 as the alternative."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: least-time item and span end take 1662 as alternative (1638–1662); lesser theorem 0.7 on the 18 October 1640 letter to Frenicle (Pengelley, S3)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 210). Source: Britannica, signed by Carl B. Boyer (scholars edition, read in full). Lasting work: his method for tangents and maxima and minima, defended in the 1638 controversy with Descartes through Mersenne and 'fully justified some 30 years later in the calculus of Sir Isaac Newton' (he is 'regarded as the inventor of the differential calculus'); 'Fermat's lesser theorem', announced in letters (1640; 'A more important result'); and the principle of least time for refraction, 'twenty years' after Descartes's 1637 Dioptrique (so about 1657), later 'verified experimentally' by Fizeau (S1). Span 1638–1657 at 0.5 (1657 is inferred from 'twenty years later'; alternative end 1662, the 'Analysis ad refractiones' of 1 January 1662, where the least-time minimisation itself is first worked out; the August 1657 letter states only the qualitative shortest-path principle), age 37. AA8 audit: lesser theorem now 0.7 on the letter to Frenicle of 18 October 1640 (Œuvres de Fermat II, pp. 206–212, as quoted by Pengelley, S3). Scientist (P30): the principle of least time is a law about light; B 3 at 0.5, alternative 4 (P35). Worldview: no own words read; primary education in a Franciscan school (S1). primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -32,7 +33,7 @@ identity:
 
 basics:
   birth:
-    date: {value: "1601-08-17", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "§1 heading"}], how_known: "Britannica. Alternative 1607: Pengelley (S3) dates him 1607–1665 (the later birth-year dating); a real dispute (AA9 audit)."}
+    date: {value: "1601-08-17", certainty: 0.5, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "§1 heading"}], how_known: "Britannica. Alternative 1607: Pengelley (S3) dates him 1607–1665 (the later birth-year dating); a real dispute (AA9 audit)."}
     place: {value: "Beaumont-de-Lomagne", modern_name: "Beaumont-de-Lomagne, France", polity_then: "Kingdom of France", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   death:
     date: {value: "1665-01-12", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -213,4 +214,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 - 2026-10-20: AA8 audit fixes: least-time item and span end take 1662 as alternative (1638–1662); lesser theorem 0.7 on the 18 October 1640 letter to Frenicle (Pengelley, S3).
 - 2026-10-20: AA9 audit fix: birth year 1607 (Pengelley, S3) recorded as the alternative; age 37 lowered to 0.5 with 31 as the alternative.
+- 2026-10-20: AA10 audit fix: birth date 1601 lowered to 0.5 (1601 vs 1607 is a real dispute).
 - 2026-10-19: Read Britannica (Boyer, scholars edition).

@@ -893,6 +893,11 @@ Process:
   - **RQ-AA9-1:** Rachel Carson is not a scientist for B. P30 rule 11 looks at the listed lasting contribution, not the job (P33 logic; the Johnson, Bell and Hinton calls): Silent Spring is a synthesis and public argument. B UNKNOWN, alternative B 3 at 0.5 (P35). Not chart-changing (A UNKNOWN); caption moves her from 'no A' to 'neither' (37/22/89).
   - **P42 pseudonyms (by analogy):** a pseudonymous author's words (Kierkegaard's Anti-Climacus) are not the person's own voice, following P42's character-voice addendum by analogy; P42 has no explicit pseudonym clause.
   - Koch region of work Eastern Europe (AA6 rule with P3's modern-country rule: Wollstein, now Poland), alternative Western Europe; postulates candidate 1884, span alternative 1876–1884; death 27 May 1910 at 0.7. Rumi's Mas̄navī c.1258 at 0.5 (RQ-Z9-N1 start of range), alternative 1262. Kierkegaard span 0.7 (AA4 weakest-work rule). Fermat birth-year alternative 1607, age 37 at 0.5 (alternative 31).
+- **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AA10 audit at af47ee0):**
+  - **P30 earliest public statement (Cerf):** a working-group note presented at a meeting (INWG Note 39, Sussex, September 1973) dates the item ahead of the journal paper (May 1974, alternative). Span 1973, age 30.
+  - **RQ-Z9-N1 start of range needs a source that dates the start:** Rumi's Mas̄navī is c.1262 at 0.5 (Mojaddedi), with 1258 (Ṣalāḥ al-Dīn's death) as the earliest possible year; the AA9 c.1258 call is superseded. A catalogue record alone does not set an item year (Koch's postulates stay UNKNOWN, 1884 candidate).
+  - **Source labels:** an archive.org copy of an in-copyright book is an 'unofficial web copy'.
+  - Rubin's thesis alternative, if ever counted, is dated by the December 1950 AAS talk (1950–1970, age 22). Fermat's 1601 birth date is at 0.5 (real dispute with 1607).
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

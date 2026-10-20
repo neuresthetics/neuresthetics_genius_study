@@ -9,8 +9,9 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: Mas̄navī c.1262 at 0.5 (Mojaddedi: 'started probably around 1262'), earliest possible 1258; S4 labelled unofficial web copy."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fix: Mas̄navī dated c.1258 at 0.5 by the start of its composition range (Iranica S3; Mojaddedi S4), alternative 1262."}
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 217). Source: Britannica scholars edition, signed by Annemarie Schimmel (read in full). Lasting: his lyric poetry (Dīvān-e Shams), begun after Shams disappeared in 1247 ('This experience of love, longing, and loss turned Rūmī into a poet'), and the Mas̄navī, which 'widely influenced mystical thought and literature throughout the Muslim world' (S1); 'By the end of the 20th century, his popularity had become a global phenomenon' (S1). Composition range (RQ-Z9-N1): lyrics from 1247; the Mas̄navī begun c.1258 at 0.5 (after Ṣalāḥ al-Dīn's death in 1258, S4; Book I finished about 660/1262, S3), alternative 1262, and worked on until his death in 1273; span 1247–1273 at 0.5, age 40. Worldview: ISLAM at 0.5 (scholarly_reconstruction: 'the greatest Sufi mystic'; S1); no own words quoted, so A UNKNOWN (P19); not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 217). Source: Britannica scholars edition, signed by Annemarie Schimmel (read in full). Lasting: his lyric poetry (Dīvān-e Shams), begun after Shams disappeared in 1247 ('This experience of love, longing, and loss turned Rūmī into a poet'), and the Mas̄navī, which 'widely influenced mystical thought and literature throughout the Muslim world' (S1); 'By the end of the 20th century, his popularity had become a global phenomenon' (S1). Composition range (RQ-Z9-N1): lyrics from 1247; the Mas̄navī begun c.1262 at 0.5 (S4; Book I finished about 660/1262, S3), earliest possible 1258 (Ṣalāḥ al-Dīn's death), and worked on until his death in 1273; span 1247–1273 at 0.5, age 40. Worldview: ISLAM at 0.5 (scholarly_reconstruction: 'the greatest Sufi mystic'; S1); no own words quoted, so A UNKNOWN (P19); not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: rumi
@@ -49,7 +50,7 @@ contribution:
   fields: {value: ["poetry", "Sufism"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Lyric poetry: the Dīvān-e Shams (ghazals, about 30,000 verses) and robāʿīyāt", year: 1247, kind: "body of work", lasting: "'famous for his lyrics'; 'By the end of the 20th century, his popularity had become a global phenomenon, with his poetry achieving a wide circulation in western Europe and the United States' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; The influence of Shams al-Dīn"}], how_known: "Begun after Shams's disappearance in 1247 (S1); composition range start (RQ-Z9-N1); inferred."}
-    - {value: "Mas̄navī-yi Maʿnavī ('Spiritual Couplets', nearly 26,000 couplets)", year: 1258, kind: "work", lasting: "'which widely influenced mystical thought and literature throughout the Muslim world' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; The influence of Shams al-Dīn; Death and legacy"}, {source: S3, locator: "para. 3"}, {source: S4, locator: "Introduction"}], how_known: "Dated by the start of its composition range (RQ-Z9-N1): begun under Ḥusām al-Dīn after Ṣalāḥ al-Dīn's death (S1), which Mojaddedi dates to 1258 (S4), so c.1258 at 0.5. Alternative 1262: Book I was 'completed, in around 660/1262' (S3, citing Lewis pp. 221–3), and S4 says he began it 'some fifteen years after Shams had disappeared'. Worked on until shortly before his death in 1273 (S1)."}
+    - {value: "Mas̄navī-yi Maʿnavī ('Spiritual Couplets', nearly 26,000 couplets)", year: 1262, kind: "work", lasting: "'which widely influenced mystical thought and literature throughout the Muslim world' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; The influence of Shams al-Dīn; Death and legacy"}, {source: S3, locator: "para. 3"}, {source: S4, locator: "Introduction"}], how_known: "Dated by the start of its composition range (RQ-Z9-N1): 'The process of producing the Masnavi was started probably around 1262' (S4, Introduction p. xx; chronology 'c.1262 The Masnavi is started'), consistent with Book I 'completed, in around 660/1262' (S3, citing Lewis pp. 221–3); c.1262 at 0.5. Earliest possible year 1258: begun under Ḥusām al-Dīn after Ṣalāḥ al-Dīn's death in 1258 (S1, S4). Worked on until shortly before his death in 1273 (S1)."}
   evidence_of_impact:
     - {value: "Mawlawiyyah order (Whirling Dervishes) organized by his disciples", kind: "institutional or technological lineage", certainty: 0.7, cites: [{source: S1, locator: "Death and legacy"}], how_known: "Britannica."}
     - {value: "Claimed by both Turkish and Persian literature; substantial influence in the Indian subcontinent", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -110,7 +111,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1247–1273", certainty: 0.5, cites: [{source: S1, locator: "The influence of Shams al-Dīn; Death and legacy"}], how_known: "Lyric poetry from 1247 to the end of work on the Mas̄navī at his death in 1273 (begun c.1258) (P29, P30, RQ-Z9-N1); both ends inferred."}
+  major_work_period: {value: "1247–1273", certainty: 0.5, cites: [{source: S1, locator: "The influence of Shams al-Dīn; Death and legacy"}], how_known: "Lyric poetry from 1247 to the end of work on the Mas̄navī at his death in 1273 (begun c.1262; earliest possible 1258) (P29, P30, RQ-Z9-N1); both ends inferred."}
   age_at_first_lasting_contribution: {value: 40, certainty: 0.5, cites: [{source: S1, locator: "Introduction; The influence of Shams al-Dīn"}], how_known: "1247 − 1207 = 40 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -138,7 +139,7 @@ review:
     - "Worldview from scholar's reconstruction only."
   open_questions:
     - "A_locus from his own verses (Mas̄navī, Nicholson)."
-    - "Mas̄navī start: c.1258 vs 1262."
+    - "Mas̄navī start: c.1262 (earliest possible 1258)."
 
 sources:
   - id: S1
@@ -175,7 +176,7 @@ sources:
     citation: "Mojaddedi, Jawid (tr.). Rumi, The Masnavi, Book One. Oxford World's Classics (Oxford University Press, 2004), Introduction."
     url: "https://archive.org/details/92ab-848bb-546f-0680916811d-74c-136"
     accessed: 2026-10-19
-    reliability_note: "Translator's introduction read (online copy)."
+    reliability_note: "Unofficial web copy (archive.org PDF of the in-copyright OUP edition); translator's introduction read."
     used_for: [contribution]
 ---
 
@@ -189,7 +190,7 @@ Balkh; Konya [S1].
 
 ## Contribution and impact
 
-Dīvān-e Shams from 1247; Mas̄navī from c.1258 [S1, S3, S4].
+Dīvān-e Shams from 1247; Mas̄navī from c.1262 [S1, S3, S4].
 
 ## Childhood and education
 
@@ -218,4 +219,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Research log
 
 - 2026-10-20: AA9 audit fix: Mas̄navī dated c.1258 at 0.5 by the start of its composition range (Iranica S3; Mojaddedi S4), alternative 1262.
+- 2026-10-20: AA10 audit fix: Mas̄navī c.1262 at 0.5 (Mojaddedi: 'started probably around 1262'), earliest possible 1258; S4 labelled unofficial web copy.
 - 2026-10-20: Read Britannica (Schimmel, scholars edition).

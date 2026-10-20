@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 222). Source: Britannica scholars edition, signed by Michael Aaron Dennis (read in full). Lasting: the ARPA Internet design and TCP/IP with Robert Kahn; he 'is considered one of the founders, along with Robert Kahn, of the Internet' (S1). Dated by the joint paper of 1974 (P30), alternative 1973 (design begun). Span 1974, age 31. Not a scientist (McCarthy precedent, RQ-AA3-1; P33: protocol design is engineering). Worldview UNKNOWN. Living. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: span 1973 (INWG Note 39, Sussex, September 1973; S3, S4), age 30; 1974 as the alternative."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 222). Source: Britannica scholars edition, signed by Michael Aaron Dennis (read in full). Lasting: the ARPA Internet design and TCP/IP with Robert Kahn; he 'is considered one of the founders, along with Robert Kahn, of the Internet' (S1). Dated by the earliest public statement (P30): 'HOST and PROCESS Level Protocols for Internetwork Communication', INWG Note 39 (NIC 18764), September 1973, presented at the INWG meeting at the University of Sussex (S3, S4); alternative 1974 (IEEE Transactions on Communications, May 1974). Span 1973, age 30. Not a scientist (McCarthy precedent, RQ-AA3-1; P33: protocol design is engineering). Worldview UNKNOWN. Living. Not plotted. Draft, not reviewed."}
 
 identity:
   id: cerf-vint
@@ -35,8 +36,8 @@ basics:
   death:
     date: {value: UNKNOWN, how_known: "Living."}
     place: {value: UNKNOWN, how_known: "Living."}
-  first_lasting_contribution_year: {value: 1974, certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "'the details of which they published as a joint paper in 1974' (S1); P30 publication. Alternative 1973 (Kahn approached him)."}
-  era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "para. 4"}], how_known: "1974 (P2)."}
+  first_lasting_contribution_year: {value: 1973, certainty: 0.7, cites: [{source: S1, locator: "para. 4"}, {source: S3, locator: "title page"}, {source: S4, locator: "references, note 8"}], how_known: "INWG Note 39, September 1973 (S3; cited as such in S4), presented at the INWG meeting at Sussex: earliest public statement (P30). Alternative 1974, the joint paper (S1)."}
+  era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "para. 4"}], how_known: "1973 (P2); the 1974 alternative is in the same bucket."}
   region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "United States (P3)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "para. 3–4"}], how_known: "Stanford; DARPA."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -46,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["computer science", "networking"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Internet architecture and the TCP/IP protocols (with Robert Kahn)", year: 1974, kind: "invention", lasting: "'considered one of the founders, along with Robert Kahn, of the Internet' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; para. 4"}], how_known: "Joint paper 1974; TCP/IP produced later at DARPA IPTO (from 1976) (S1)."}
+    - {value: "Internet architecture and the TCP/IP protocols (with Robert Kahn)", year: 1973, kind: "invention", lasting: "'considered one of the founders, along with Robert Kahn, of the Internet' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; para. 4"}, {source: S3, locator: "title page"}], how_known: "INWG Note 39, September 1973 (S3); joint paper 1974 (S1, alternative); TCP/IP produced later at DARPA IPTO (from 1976) (S1)."}
   evidence_of_impact:
     - {value: "A.M. Turing Award (2004, with Kahn) 'for pioneering work on internetworking ... TCP/IP'", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -75,7 +76,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1974", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1973", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}, {source: S3, locator: "title page"}], how_known: "Equals timing.major_work_period; alternative 1974."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own words on belief read in S1."}
@@ -101,8 +102,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1974", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "The one lasting item (P29, P30); alternative 1973."}
-  age_at_first_lasting_contribution: {value: 31, certainty: 0.7, cites: [{source: S1, locator: "opening; para. 4"}], how_known: "1974 − 1943 = 31 (P30 year difference)."}
+  major_work_period: {value: "1973", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}, {source: S3, locator: "title page"}], how_known: "The one lasting item, dated by INWG Note 39 (P29, P30); alternative 1974."}
+  age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "title page"}], how_known: "1973 − 1943 = 30 (P30 year difference); alternative 31 (1974)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -151,6 +152,24 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: primary
+    kind: "archive record"
+    author: "Vinton Cerf; Robert Kahn"
+    citation: "Cerf, V., and R. Kahn. 'HOST and PROCESS Level Protocols for Internetwork Communication.' INWG Note 39, NIC 18764, September 1973. Scan at Internet Archive: https://archive.org/details/HostAndProcessLevelProtocolsForInternetworkCommunication"
+    url: "https://archive.org/details/HostAndProcessLevelProtocolsForInternetworkCommunication"
+    accessed: 2026-10-19
+    reliability_note: "Archive item record (title, authors, 1973) read; scan not read in full. The Sussex venue is from the AA10 audit (INWG records), not verified here."
+    used_for: [contribution, timing]
+  - id: S4
+    type: secondary
+    kind: "journal article"
+    author: "UNKNOWN"
+    citation: "'Some computer network interconnection issues.' AFIPS National Computer Conference proceedings (1974). doi:10.1145/1500175.1500335"
+    url: "https://doi.org/10.1145/1500175.1500335"
+    accessed: 2026-10-19
+    reliability_note: "Reference list read: cites Cerf and Kahn, INWG Note #39, NIC #18764, September 1973."
+    used_for: [timing]
 ---
 
 ## Summary
@@ -163,7 +182,7 @@ New Haven; Stanford; UCLA; DARPA [S1].
 
 ## Contribution and impact
 
-TCP/IP, 1974 [S1].
+INWG Note 39, 1973; TCP/IP [S1, S3].
 
 ## Childhood and education
 
@@ -179,7 +198,7 @@ Not stated.
 
 ## Timing
 
-1974, age 31 [S1].
+1973, age 30 [S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -191,4 +210,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AA10 audit fix: span 1973 (INWG Note 39, Sussex, September 1973; S3, S4), age 30; 1974 as the alternative.
 - 2026-10-20: Read Britannica (Dennis, scholars edition).
