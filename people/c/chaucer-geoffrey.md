@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fix (FAIL, P26; RQ-Z9-N1, v8's call on the auditor's advice): the 1387 start was cited to the biography opening, but the only '1387–1400' there is in the Top Questions box. Re-sourced to the Britannica topic article 'The Canterbury Tales' (S3, body read: 'written in Middle English in 1387–1400'). Under RQ-Z9-N1 a scholar's composition range dates a manuscript-era work (P12 start), so the span stays 1387–1400 and age 45. Retraction summary (S3) added as a lead. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 170). Source: Britannica (R. M. Lumiansky, signed; opening, 'Forebears and early years'). No own-voice religious statement read: the Retraction at the end of The Canterbury Tales is a lead, not read here, and his first-person narrator 'both is and is not the poet himself' (S1). Religious themes in the poems are work, not profession (P16). Not a scientist. primary_system UNKNOWN (lead CHRIST); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1387–1400, age 45. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -35,8 +36,8 @@ basics:
   death:
     date: {value: "1400-10-25", calendar: julian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "London", modern_name: "London, United Kingdom", polity_then: "Kingdom of England", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1387, certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "The Canterbury Tales, written 1387–1400 (range start, P12); earlier poems not called lasting in the body read."}
-  era_bucket: {value: "500 to 1399", certainty: 1.0, cites: [{source: S1, locator: "opening"}], how_known: "1387 (P2)."}
+  first_lasting_contribution_year: {value: 1387, certainty: 0.5, cites: [{source: S3, locator: "Introduction (body)"}], how_known: "The Canterbury Tales, 'written in Middle English in 1387–1400' (Britannica topic article body, S3); a pre-print work circulated in manuscript, so the scholar's composition range is the dating event and 1387 is its start (RQ-Z9-N1, P12); earlier poems not called lasting in the body read."}
+  era_bucket: {value: "500 to 1399", certainty: 1.0, cites: [{source: S3, locator: "Introduction (body)"}], how_known: "1387 (P2)."}
   region_of_birth: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "England, UK (P3)."}
   region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "Forebears and early years"}], how_known: "London and the court; missions abroad."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -46,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["poetry", "English literature"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "The Canterbury Tales", year: 1387, kind: "work", lasting: "'ranks as one of the greatest poetic works in the English language' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body; written 1387–1400, unfinished at his death (range; P12 start, P30 end)."}
+    - {value: "The Canterbury Tales", year: 1387, kind: "work", lasting: "'ranks as one of the greatest poetic works in the English language' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "Introduction (body)"}], how_known: "Lasting from the Lumiansky body (S1); dated by the topic article body, 'written in Middle English in 1387–1400', unfinished at his death (S3; RQ-Z9-N1: manuscript-era composition range; P12 start, P30 end). The 1387–1400 in the biography's Top Questions box is not cited (P26)."}
   evidence_of_impact:
     - {value: "The outstanding English poet before Shakespeare; 'the first finder of our language'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -72,7 +73,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1387–1400", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1387–1400", certainty: 0.5, cites: [{source: S3, locator: "Introduction (body)"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own-voice statement read. Lead CHRIST: the Retraction closing The Canterbury Tales (not read here); poems range to 'spiritual union with God' (S1), which is work (P16), and his narrator 'both is and is not the poet himself' (S1)."}
@@ -88,7 +89,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Read the Retraction (Riverside Chaucer) and decide whether its first person is the author's own voice; the Treatise on the Astrolabe (1391) may hold statements on nature."
+  coder_notes: "The topic article (S3, body) summarizes the Retraction: 'Chaucer as poet and pilgrim states his conclusion that the concern for this world fades into insignificance before the prospect for the next' and asks forgiveness for writings of 'worldly vanities'; a scholar's summary of a lead, not his words read, and the speaker is poet and pilgrim (P42). Read the Retraction (Riverside Chaucer) and decide whether its first person is the author's own voice; the Treatise on the Astrolabe (1391) may hold statements on nature."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -99,8 +100,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1387–1400", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "The Canterbury Tales, 1387–1400 (P29; P12 start, range end; never past death, P30)."}
-  age_at_first_lasting_contribution: {value: 45, certainty: 0.5, cites: [{source: S1, locator: "opening; Forebears and early years"}], how_known: "1387 − 1342 = 45 (P30 year difference); birth 1342 or 1343."}
+  major_work_period: {value: "1387–1400", certainty: 0.5, cites: [{source: S3, locator: "Introduction (body)"}], how_known: "The Canterbury Tales, 1387–1400 from the topic article body (S3); composition range accepted for a manuscript-era work (RQ-Z9-N1); P29; P12 start, range end; never past death, P30."}
+  age_at_first_lasting_contribution: {value: 45, certainty: 0.5, cites: [{source: S1, locator: "Forebears and early years"}, {source: S3, locator: "Introduction (body)"}], how_known: "1387 − 1342 = 45 (P30 year difference); birth 1342 or 1343."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -144,6 +145,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: tertiary
+    kind: "encyclopedia"
+    author: "The Editors of Encyclopaedia Britannica"
+    citation: "'The Canterbury Tales.' Encyclopaedia Britannica (Scholars edition). https://kids.britannica.com/scholars/article/The-Canterbury-Tales/484183"
+    url: "https://kids.britannica.com/scholars/article/The-Canterbury-Tales/484183"
+    accessed: 2026-10-19
+    reliability_note: "Topic article; body read in full (introduction: 'written in Middle English in 1387–1400'); not a question box."
+    used_for: [basics, contribution, worldview, timing]
 ---
 
 ## Summary
@@ -172,7 +182,7 @@ English [S1].
 
 ## Timing
 
-1387–1400, age 45 [S1].
+1387–1400, age 45 [S3].
 
 ## Lane B notes (labeled belief model)
 

@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit (RQ-Z9-1, v8's call on the auditor's advice): not a scientist as listed; B stays UNKNOWN, not plotted. Leads added: prize motivation 'discoveries and inventions'; interview 'theory' and 'for discovering how the brain worked'."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 171). Basics from NobelPrize.org facts (Physics 2024). Own words: Nobel Prize interview, 6 December 2024 (NobelPrize.org transcript), after the span: parents 'both atheists'; at his Christian school belief in God 'seemed to me it was just obvious nonsense, and it turns out I was right'; 'other people also don't believe in God'. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alts BELOW_THRESHOLD and 3; P20, Chomsky and Kahneman precedents). Not a scientist as listed: the Boltzmann machine is called an 'invention' (S1; P33; Hassabis precedent), so B UNKNOWN pending RQ-Z9-1. C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span 1983–1985, age 36. Not plotted (no B). Draft, not reviewed."}
 
 identity:
@@ -96,7 +97,7 @@ worldview:
       alternatives:
         - {value: BELOW_THRESHOLD, note: "Disbelief without a locus view.", cites: [{source: S2, locator: "'What personal qualities are important'"}]}
         - {value: 3, note: "Denies only the schoolroom God.", cites: [{source: S2, locator: "'What personal qualities are important'"}]}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist as listed: the Boltzmann machine is called an 'invention' (S1); P33 and the Hassabis precedent. No own statement on nature read (P16). RQ-Z9-1: if his neural-network learning work is counted as a theory of mind or of physical systems (P30), B would be 3 at 0.5 (P35) and he would plot, faded, at A 4 / B 3."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist as listed: the Boltzmann machine is called an 'invention' (S1); P33 and the Hassabis precedent. No own statement on nature read (P16). RQ-Z9-1 answered (v8's call on the auditor's advice): not a scientist as listed, so B stays UNKNOWN and he does not plot. Leads only: the prize motivation names 'discoveries and inventions' (S1), and in the interview he calls the Boltzmann machine a 'theory' built as a machine 'for discovering how the brain worked' (S2); neither puts a theory on the lasting list (P35 addendum). Were one listed, B would be 3 at 0.5 (P35) and he would plot, faded, at A 4 / B 3."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
@@ -111,7 +112,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
   changes_over_life: []
-  coder_notes: "RQ-Z9-1 (result-changing): is the Boltzmann machine (statistical-physics model of learning, 'invention' in the Nobel facts) a theory or result about natural systems or of mind under P30, or a method or invention under P33? Backpropagation (1986) was not in the source read."
+  coder_notes: "RQ-Z9-1 answered no (Z9 audit; Hassabis, Knuth, Tao precedents): the Boltzmann machine is an invention (P33), and Nobel's 'inspired by the structure of the brain' is not a testable claim about organisms. Leads: 'discoveries and inventions' (prize motivation, S1); 'theory' and 'for discovering how the brain worked' (interview, S2). A listed theory (e.g. backpropagation, 1986, if a source called it a lasting theory of learning in brains) would change this. Backpropagation (1986) was not in the source read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -181,7 +182,7 @@ sources:
 
 ## Summary
 
-Geoffrey Hinton (b. 1947), computer scientist [S1]. Draft: ATHE (0.5); A 4 (0.5); B UNKNOWN (RQ-Z9-1). Not plotted.
+Geoffrey Hinton (b. 1947), computer scientist [S1]. Draft: ATHE (0.5); A 4 (0.5); B UNKNOWN (not a scientist, RQ-Z9-1). Not plotted.
 
 ## Life and work
 

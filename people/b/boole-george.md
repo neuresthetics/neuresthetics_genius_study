@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). WEAKEN on CHRIST: p. 424 ('profess an intellectual allegiance to the Father of Lights') is others' profession, not his; his own p. 159 'Author of Nature' fits CHRIST and DEISM equally, so primary_system CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM). A 1 at 0.5 now rests on p. 159 alone. Notes say only the OCR was read. RQ-Z9-2: no (algebra of logic is not a theory of mind). Still plotted at A 1 / B 3."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 172). Basics from MacTutor (O'Connor and Robertson). Own words in An Investigation of the Laws of Thought (1854; archive.org library scan, OCR read), within the span: 'all that we know of the uniformity of Nature, and all that we believe of the immutable constancy of the Author of Nature' (ch. XI, p. 159); the closing page contrasts those who acknowledge 'nothing higher than ... collective humanity' with those who 'profess an intellectual allegiance to the Father of Lights' (ch. XXII, p. 424). Not a scientist (logic and algebra; P30). primary_system CHRIST (0.5, alt DEISM); A 1 (0.5, alt 0); B 3 (0.5, alt 4) from his own statement on nature (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A and B at 0.5). Span 1854, age 39. Plotted (A 1, B 3). Draft, not reviewed."}
 
 identity:
@@ -72,27 +73,21 @@ worldview:
   working_years: {value: "1854", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: 
-    value: CHRIST
-    basis: written_profession
-    certainty: 0.5
-    cites: [{source: S2, locator: "ch. XI, p. 159; ch. XXII, p. 424"}]
-    how_known: "Laws of Thought (1854), within the span; brief passing statements, so 0.5 (the evidence speaks to the system only indirectly; CODING_GUIDE §3)."
-    rationale: "Theist in his own words ('the Author of Nature'; 'the Father of Lights', James 1:17). Alternative DEISM: nothing on revelation or Christ read; the 'immutable constancy' of the Author of Nature fits a non-intervening creator."
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Laws of Thought (1854), within the span: his own words show belief in an 'Author of Nature' of 'immutable constancy' (ch. XI, p. 159), which fits CHRIST and DEISM equally. The p. 424 'profess an intellectual allegiance to the Father of Lights' describes others' profession, not his own (Z9 audit), so nothing specific favours CHRIST over DEISM. A creator is professed but no code is supported, so BELOW_THRESHOLD. Leads: CHRIST (he once meant to enter the Church, S1; the Father of Lights passage reads sympathetically) and DEISM (immutable, non-intervening Author)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Coded at 0.5: biblical 'Father of Lights'."}
-    - {code: DEISM, reason: "Alternative: immutable, non-intervening Author of Nature."}
+    - {code: CHRIST, reason: "Lead: early plan to enter the Church (S1); p. 424 is others' profession, not his."}
+    - {code: DEISM, reason: "Lead: immutable Author of Nature; nothing on revelation read."}
   lio_axes:
     A_locus: 
       value: 1
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S2, locator: "ch. XI, p. 159; ch. XXII, p. 424"}]
-      how_known: "Laws of Thought, within the span; indirect, so 0.5."
-      rationale: "An Author of Nature distinct from nature, whose 'immutable constancy' is a matter of belief, and 'the Father of Lights': a person outside the world, 1 (constancy rather than intervention). Alternative 0."
+      cites: [{source: S2, locator: "ch. XI, p. 159"}]
+      how_known: "Laws of Thought, within the span; indirect, so 0.5. Rests on p. 159 ('all that we believe'); p. 424 is others' profession and is not used."
+      rationale: "An Author of Nature distinct from nature, whose 'immutable constancy' is a matter of his belief: a creator outside the world, 1 (constancy rather than intervention). Alternative 0."
       alternatives:
-        - {value: 0, note: "Personal Father and Author, fully transcendent.", cites: [{source: S2, locator: "ch. XXII, p. 424"}]}
+        - {value: 0, note: "Author of Nature read as fully transcendent.", cites: [{source: S2, locator: "ch. XI, p. 159"}]}
     B_cause: 
       value: 3
       basis: written_profession
@@ -115,9 +110,9 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary facsimile"
       verified_on: 2026-10-19
-      note: "Read from the archive.org OCR of the 1854 Walton and Maberly printing (Google scan); OCR slips silently corrected ('surroumling', 'lees')."
+      note: "Only the archive.org OCR of the 1854 Walton and Maberly printing (Google scan) was read, not the page images; OCR slips silently corrected ('surroumling', 'lees')."
   changes_over_life: []
-  coder_notes: "Laws of Thought sets out a theory of the laws of the mind; whether that counts as a theory of mind under P30 (scientist status) is RQ-Z9-2, not result-changing (B is already scored from his own words). Ch. XIII's treatment of Clarke and Spinoza and his letters (MacHale) would firm up the system."
+  coder_notes: "RQ-Z9-2 answered no (Z9 audit): his lasting item is an algebra of logic, not testable claims about organisms, so he is not a scientist; B rests on his own words. Only the archive.org OCR was read; the page images were not viewed. Ch. XIII's treatment of Clarke and Spinoza and his letters (MacHale) would firm up the system."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -172,7 +167,7 @@ sources:
     citation: "Boole, George. An Investigation of the Laws of Thought, on Which Are Founded the Mathematical Theories of Logic and Probabilities (London: Walton and Maberly, 1854). Archive.org scan. https://archive.org/details/aninvestigation00boolgoog"
     url: "https://archive.org/details/aninvestigation00boolgoog"
     accessed: 2026-10-19
-    reliability_note: "Library scan of the first edition; read in the OCR text."
+    reliability_note: "Library scan of the first edition (page images of the work as issued, so primary facsimile); only the OCR text was read, the page images were not viewed."
     used_for: [basics, worldview, lane_b]
   - id: S3
     type: secondary
@@ -187,7 +182,7 @@ sources:
 
 ## Summary
 
-George Boole (1815–1864), logician and mathematician [S1]. Draft: CHRIST (0.5); A 1, B 3 at 0.5. Plotted.
+George Boole (1815–1864), logician and mathematician [S1]. Draft: BELOW_THRESHOLD (leads CHRIST, DEISM); A 1, B 3 at 0.5. Plotted.
 
 ## Life and work
 

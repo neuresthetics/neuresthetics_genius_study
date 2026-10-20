@@ -836,6 +836,12 @@ Process:
   - **Schubert (§3, P13, P30 #1):** a single private letter with no backing scholar cannot score: CHRIST 0.5 -> BELOW_THRESHOLD (lead CHRIST). Deutsch 1914 is labelled 'scholarly edition'. Symphony No. 9 (1828) has no dating event or lasting source, so the span ends at the latest supported lasting work: 1814.
   - **Caravaggio S3:** the Met essay was read; author Keith Christiansen (October 2003). **Galois:** the 25 May 1832 letter to Chevalier is a non-scoring lead.
   - Open, not result-changing: for private buildings with no unveiling, completion/occupancy or first publication as the dating event (Fallingwater coded at completion, 1937).
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch Z9 audit at 8590213):**
+  - **RQ-Z9-N1 (P30 #1, P12):** for works from before printing that circulated in manuscript, a composition range given in a scholar's article text (not a Top Questions box, P26) is an acceptable dating event, with the range start as the year (P12), as in the Augustine and Virgil records. Works from the printing era still need a premiere or publication (Z7 Schoenberg, RQ-Z8-1). Chaucer: re-sourced to the Britannica topic article 'The Canterbury Tales' (body: 'written in Middle English in 1387–1400'); span 1387–1400 and age 45 stand.
+  - **RQ-Z9-1 (P30, P33):** Hinton is not a scientist as listed (the Boltzmann machine is an invention); B UNKNOWN, not plotted. Leads recorded ('discoveries and inventions'; 'theory' ... 'for discovering how the brain worked').
+  - **RQ-Z9-2:** no. Boole's algebra of logic is not a theory of mind with testable claims about organisms; B rests on his own words.
+  - **Boole primary_system:** p. 424 is others' profession; his own 'Author of Nature' fits CHRIST and DEISM equally, so CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM); A 1 at 0.5 rests on p. 159. Only the OCR was read. Still plotted at A 1 / B 3.
+  - **Orwell:** S2 is an unofficial web copy of his own text (0.7 cap, §7), not a secondary quotation; As I Please (3 March 1944) added as a C lead.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

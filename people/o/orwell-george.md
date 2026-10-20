@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). Statement label: 'secondary quotation' -> 'primary transcription' with the note that S2 is an unofficial web copy of his own text, capped at 0.7 (§7). C lead added: As I Please, 3 March 1944 (CEJL vol. 3 p. 127, web copy), 'I do not want the belief in life after death to return'. Values unchanged: BELOW_THRESHOLD."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 173). Basics from Britannica (George Woodcock, signed). Own words: 'Notes on the Way' (Time and Tide, 1940; orwell.ru transcription of CEJL, unofficial web copy), before the span: religious belief 'had to be abandoned', 'in essence a lie'; hope for 'human brotherhood without the need for a \"next world\"'. Collective, not first-person, so primary_system BELOW_THRESHOLD (leads ATHE, SECHUM); A BELOW_THRESHOLD; B UNKNOWN (not a scientist); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1945–1949, age 42. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -85,7 +86,7 @@ worldview:
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "No first-person locus view read; the 1940 essay speaks of society (P20)."}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement on nature's order."}
-    C_ledger: {value: UNKNOWN, how_known: "'men know that they are mortal' and brotherhood without a 'next world' (S2) point to C 4, but collective and from a web copy; not scored."}
+    C_ledger: {value: UNKNOWN, how_known: "'men know that they are mortal' and brotherhood without a 'next world' (S2) point to C 4, but collective and from a web copy; not scored. Lead (first person, before the span): As I Please, Tribune, 3 March 1944 (CEJL vol. 3, pp. 126–127, per a web copy): 'I do not want the belief in life after death to return, and in any case it is not likely to return'; 'If one looks at the Christian religion from the outside, this belief appears far more important than the belief in God'. Read in a web copy only; a lead for C 4."}
     D_authority: {value: UNKNOWN, how_known: "Not scored."}
     E_scope: {value: UNKNOWN, how_known: "Not scored."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
@@ -96,11 +97,11 @@ worldview:
       context: "'Notes on the Way', Time and Tide; before the span."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
+      verified_against: "primary transcription"
       verified_on: 2026-10-19
-      note: "orwell.ru transcription of the CEJL text; not checked against a printing."
+      note: "Unofficial web copy of his own published text (orwell.ru, from CEJL), not a secondary quotation; capped at 0.7 (CODING_GUIDE §7). Not checked against a printing (the archive.org CEJL is borrow-only)."
   changes_over_life: []
-  coder_notes: "As I Please (1944) on personal immortality and Such, Such Were the Joys on his loss of faith; check the CEJL printing to lift the web-copy cap."
+  coder_notes: "C lead added (Z9 audit): As I Please, 3 March 1944, first person, before the span (web copies: telelib.com and ebbemunk.dk, which gives CEJL vol. 3 pp. 124–127); check the printing. As I Please (1944) on personal immortality and Such, Such Were the Joys on his loss of faith; check the CEJL printing to lift the web-copy cap."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
