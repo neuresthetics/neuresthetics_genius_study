@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 191). Source: Britannica, signed by Albert C. Labriola (scholars edition, read in full). Lasting work: 'Lycidas' (published 1638; 'often considered the most outstanding example of the genre') and Paradise Lost ('widely regarded as the greatest epic poem in English', first published 1667); span 1638–1667 by publication (P30 #1), age 30. Own words: the opening invocation of Paradise Lost, Book 1, in the poet's own voice (not a character's, P42 addendum), read in the Dartmouth John Milton Reading Room (ed. Thomas H. Luxon): 'I may assert Eternal Providence, / And justifie the wayes of God to men'; within the span (1667). primary_system CHRIST 0.7 (written_profession), alt none at 0.7 (his anti-trinitarian leanings, per Labriola, stay within Christianity); A 1 at 0.5 (a creator Spirit who 'from the first / Wast present' and brooded on the Abyss, and an 'Eternal Providence': God beyond and acting on the world; poetic and indirect), alt 0; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN (A 1 at 0.5 and B UNKNOWN). Not plotted (B UNKNOWN). Draft, not reviewed."}
 
 identity:
@@ -37,8 +38,8 @@ basics:
     place: {value: "London", modern_name: "London, United Kingdom", polity_then: "Kingdom of England", certainty: 0.5, cites: [{source: S1, locator: "later years"}], how_known: "Britannica: 'London?'."}
   first_lasting_contribution_year: {value: 1638, certainty: 0.7, cites: [{source: S1, locator: "Comus and Lycidas"}], how_known: "'Lycidas', 'Published in 1638 in Justa Edouardo King Naufrago' (S1); publication (P30 #1)."}
   era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "Comus and Lycidas; Paradise Lost"}], how_known: "1638–1667 (P2)."}
-  region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "England (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "London."}
+  region_of_birth: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "United Kingdom (P3)."}
+  region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "London."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
   languages_of_work: {value: ["English", "Latin"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   occupations: {value: ["poet", "pamphleteer", "historian", "civil servant"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -220,4 +221,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv).
 - 2026-10-19: Read Britannica (Labriola); Paradise Lost Book 1 (Dartmouth).

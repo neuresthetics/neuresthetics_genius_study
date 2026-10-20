@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix: the Tate (Wilton) and National Gallery (Egerton) entries were fetched and read in full on 2026-10-19 and are relabelled 'read in full'."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 186). Source: Britannica, signed by Martin R. F. Butlin (scholars edition, read in full). Lasting claim: 'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere' (Legacy), a body of work. Span: from The Shipwreck and the Thames sketches of 1805, when he 'was developing his original approach to landscape', to Rain, Steam, and Speed (1844), the last dated work Britannica names among the 'outstanding examples of his late work'; dates as Britannica gives them. No religious statement read: worldview all UNKNOWN; not a scientist. Span 1805–1844, age 30. Not plotted. Draft, not reviewed."}
@@ -40,8 +41,8 @@ basics:
     place: {value: "Chelsea, London", modern_name: "London, United Kingdom", polity_then: "United Kingdom", certainty: 0.7, cites: [{source: S1, locator: "Later life and works"}], how_known: "Britannica."}
   first_lasting_contribution_year: {value: 1805, certainty: 0.7, cites: [{source: S1, locator: "Early life and works"}, {source: S2, locator: "Study for 'The Shipwreck'"}], how_known: "'The Shipwreck (1805) suggests that at this time Turner was developing his original approach to landscape' (S1); Tate: 'The painting The Shipwreck was exhibited in Turner's own gallery in 1805' (S2); exhibition is the P30 #1 dating event."}
   era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "1805–1844, one bucket (P2)."}
-  region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "England (P3)."}
-  region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "London; tours of Britain and the Continent."}
+  region_of_birth: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "United Kingdom (P3)."}
+  region_of_work: {value: "Northern Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "London; tours of Britain and the Continent."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
   languages_of_work: {value: ["English"], certainty: 0.7, cites: [{source: S1, locator: "Middle years"}], how_known: "Titles and appended verse in English."}
   occupations: {value: ["painter", "printmaker"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Liber Studiorum"}], how_known: "Britannica."}
@@ -209,4 +210,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 - 2026-10-19: AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted.
 - 2026-10-19: AA3 audit fix: the Tate (Wilton) and National Gallery (Egerton) entries were fetched and read in full on 2026-10-19 and are relabelled 'read in full'.
+- 2026-10-19: Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv).
 - 2026-10-19: Read Britannica (Butlin).
