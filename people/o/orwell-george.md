@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (WEAKEN, P21; v8's call on the auditor's advice): statement label 'primary transcription' (reserved for keyed transcriptions such as TCP) -> 'unofficial web copy' (new verified_against value)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). Statement label: 'secondary quotation' -> 'primary transcription' with the note that S2 is an unofficial web copy of his own text, capped at 0.7 (§7). C lead added: As I Please, 3 March 1944 (CEJL vol. 3 p. 127, web copy), 'I do not want the belief in life after death to return'. Values unchanged: BELOW_THRESHOLD."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 173). Basics from Britannica (George Woodcock, signed). Own words: 'Notes on the Way' (Time and Tide, 1940; orwell.ru transcription of CEJL, unofficial web copy), before the span: religious belief 'had to be abandoned', 'in essence a lie'; hope for 'human brotherhood without the need for a \"next world\"'. Collective, not first-person, so primary_system BELOW_THRESHOLD (leads ATHE, SECHUM); A BELOW_THRESHOLD; B UNKNOWN (not a scientist); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1945–1949, age 42. Not plotted. Draft, not reviewed."}
 
@@ -97,7 +98,7 @@ worldview:
       context: "'Notes on the Way', Time and Tide; before the span."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
+      verified_against: "unofficial web copy"
       verified_on: 2026-10-19
       note: "Unofficial web copy of his own published text (orwell.ru, from CEJL), not a secondary quotation; capped at 0.7 (CODING_GUIDE §7). Not checked against a printing (the archive.org CEJL is borrow-only)."
   changes_over_life: []

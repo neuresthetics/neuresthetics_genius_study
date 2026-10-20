@@ -842,6 +842,11 @@ Process:
   - **RQ-Z9-2:** no. Boole's algebra of logic is not a theory of mind with testable claims about organisms; B rests on his own words.
   - **Boole primary_system:** p. 424 is others' profession; his own 'Author of Nature' fits CHRIST and DEISM equally, so CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM); A 1 at 0.5 rests on p. 159. Only the OCR was read. Still plotted at A 1 / B 3.
   - **Orwell:** S2 is an unofficial web copy of his own text (0.7 cap, §7), not a secondary quotation; As I Please (3 March 1944) added as a C lead.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch Z10 audit at f8cb138):**
+  - **P30 #1, public reading and formal submission:** a public reading of a paper (Mendel, 8 February and 8 March 1865) dates the work before its printing; for patents, the filing (formal submission) is the dating event (Lamarr 1941; Marconi's 1896 is the application year). Mendel: span 1865, age 43.
+  - **P13:** 'famous' (Marconi's patent No. 7777) and 'achieved recognition as a noted inventor' (Lamarr) are not lasting claims. Marconi: span 1896, age 22. Lamarr: no supported lasting work, span UNKNOWN.
+  - **P21:** a new `verified_against` value, `unofficial web copy`, for a person's own published text read in an unofficial web copy (0.7 cap, §7); `primary transcription` stays reserved for keyed transcriptions such as TCP. Applied to Orwell.
+  - Marconi S2 note: the archived Vatican Radio page was read. Wright: the Fallingwater how_known now says it is dated by completion, 1937.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

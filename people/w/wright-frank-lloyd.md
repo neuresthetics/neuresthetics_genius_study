@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (WEAKEN; v8's call on the auditor's advice): Fallingwater how_known no longer says 'P12 start 1935'; dated by completion, 1937. Span unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). RQ-Z8-2: a third party's web copy of a transcript is a secondary quotation (V3) unless checked; the lines were checked word for word against the Harry Ransom Center's own transcript in CONTENTdm (HRC_WAL0115), now S2, so PANT 0.5 and A 4 at 0.5 hold (P8, P20 cap). Quote cuts now [...]. Fallingwater item year 1935 -> 1937 (completion), S3 author Alicja Zelazko. Unity Temple 1906 is a start date: item year UNKNOWN. Span 1902–1937 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 168). Basics from Britannica (Edgar Kaufmann, signed) and Britannica 'Fallingwater'. Own words: The Mike Wallace Interview (1957, two parts; Harry Ransom Center video, read in a published transcription), after the span: 'I've always considered myself deeply religious'; 'my church I put a capital N on Nature and go there ... You spell God with a G ... I spell Nature with an N, capital'; 'I put a capital N on Nature, and call it my Church'. Not a scientist. primary_system PANT (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alts 3 and BELOW_THRESHOLD); B UNKNOWN (no statement on nature's order); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10; A ≥ 3 only at 0.5). Span 1902–1937, age 35. Not plotted (no B). Draft, not reviewed."}
 
@@ -50,7 +51,7 @@ contribution:
   lasting_original_contributions:
     - {value: "Prairie style (W.W. Willits House, first masterwork)", year: 1902, kind: "method", lasting: "'His “Prairie style” became the basis of 20th-century residential design in the United States' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; The early Chicago years"}], how_known: "Britannica."}
     - {value: "Unity Temple, Oak Park", year: UNKNOWN, kind: "work", lasting: "'achieved timeless monumentality' (S1)", certainty: 0.5, cites: [{source: S1, locator: "The early Chicago years"}], how_known: "Britannica: 'under way' 1906, a start date, not a P30 #1 dating event (RQ-Z7-N1); no completion or dedication year read, so UNKNOWN. Span unaffected (starts 1902, ends 1937)."}
-    - {value: "Fallingwater", year: 1937, kind: "work", lasting: "'became one of the most famous 20th-century buildings' (S3)", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "Britannica 'Fallingwater': designed 1935, completed 1937 (range; P12 start 1935, span end 1937 under P30 rule 4)."}
+    - {value: "Fallingwater", year: 1937, kind: "work", lasting: "'became one of the most famous 20th-century buildings' (S3)", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "Britannica 'Fallingwater': designed 1935, completed 1937; dated by completion, 1937 (RQ-Z7-N1; private building with no unveiling), which is also the span end."}
   evidence_of_impact:
     - {value: "An abundantly creative master of American architecture", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:

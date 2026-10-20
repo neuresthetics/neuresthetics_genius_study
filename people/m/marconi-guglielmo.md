@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fixes (v8's calls on the auditor's advice). Patent No. 7777 was lasting on the coder's call alone (P13): moved to major_works; span 1896–1900 -> 1896 (age 22). S2 note: the archived Vatican Radio page was read. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 176). Basics from NobelPrize.org (biographical, Les Prix Nobel 1909). Own words: his public address opening Vatican Radio, 12 February 1931 (Vatican Radio's own history page, archived; English translation of the Italian), after the span: 'With the help of Almighty God, who allows the many mysterious forces of nature to be used by man'. Not a scientist: wireless telegraphy is an invention (P33). primary_system CHRIST (0.5, alt BELOW_THRESHOLD: ceremonial words); A 1 (0.5, alts 0 and BELOW_THRESHOLD); B UNKNOWN (no statement on law or exception, P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≤ 1 only at 0.5, B UNKNOWN). Span 1896–1900, age 22. Not plotted (no B). Draft, not reviewed."}
 
 identity:
@@ -47,10 +48,10 @@ contribution:
   fields: {value: ["wireless telegraphy", "radio"], certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org."}
   lasting_original_contributions:
     - {value: "System of wireless telegraphy", year: 1896, kind: "invention", lasting: "Nobel Prize in Physics 1909 for it (S1); 'the world's first patent for a system of wireless telegraphy'", certainty: 0.7, cites: [{source: S1, locator: "para. 1; honours"}], how_known: "NobelPrize.org; patent 1896."}
-    - {value: "Tuned (syntonic) telegraphy, patent No. 7777", year: 1900, kind: "invention", lasting: "'his famous patent No. 7777' (S1)", certainty: 0.5, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org; 'famous' read as lasting, the coder's call."}
   evidence_of_impact:
     - {value: "Nobel Prize in Physics 1909 (with Braun)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "honours"}], how_known: "NobelPrize.org."}
   major_works:
+    - {value: "Tuned (syntonic) telegraphy, patent No. 7777", year: 1900, kind: "device", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org: 'his famous patent No. 7777'; 'famous' is not a lasting claim (P13; Z10 audit), so not a lasting contribution."}
     - {value: "First transatlantic wireless signals, Poldhu to St John's", year: 1901, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org."}
   honours: []
   definition_fit: {value: "clearly meets", rationale: "Pioneer of wireless telegraphy (S1).", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org."}
@@ -73,7 +74,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1896–1900", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1896", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: 
@@ -124,7 +125,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1896–1900", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "First wireless patent (1896) to patent No. 7777 (1900) (P29, P30)."}
+  major_work_period: {value: "1896", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "The 1896 wireless telegraphy patent (application year; formal submission, P30 #1), the one supported lasting work (P29, P13)."}
   age_at_first_lasting_contribution: {value: 22, certainty: 0.7, cites: [{source: S1, locator: "opening; para. 1"}], how_known: "1896 − 1874 = 22 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -168,7 +169,7 @@ sources:
     citation: "Vatican Radio. 'Our history' (with Marconi's address of 12 February 1931). Archived 2013-04-30. https://web.archive.org/web/20130430073929/http://en.radiovaticana.va/chisiamo_9.asp"
     url: "https://web.archive.org/web/20130430073929/http://en.radiovaticana.va/chisiamo_9.asp"
     accessed: 2026-10-19
-    reliability_note: "The broadcasting institution's own text of the address, in English translation; seen in search excerpt of the archived page."
+    reliability_note: "The broadcasting institution's own text of the address, in English translation; the archived page was read in full (Z10 audit confirmed the quote verbatim); Italian original not checked."
     used_for: [worldview]
   - id: S3
     type: secondary
@@ -207,7 +208,7 @@ Not stated.
 
 ## Timing
 
-1896–1900, age 22 [S1].
+1896, age 22 [S1].
 
 ## Lane B notes (labeled belief model)
 

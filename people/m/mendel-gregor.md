@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (FAIL; v8's call on the auditor's advice, P30 #1): dated by the public readings of 8 February and 8 March 1865 (Sitzungs-Berichte of the same volume), not the 1866 printing. Span 1866 -> 1865, age 44 -> 43. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 174). Basics from Britannica (Robert Olby, signed; body, not the Top Questions box); the paper from its printing (Verhandlungen des naturforschenden Vereines in Brünn IV, für das Jahr 1865, Brünn 1866, pp. 3–47; Deutsches Textarchiv). Worldview: Augustinian friar, priest (ordained 1846) and abbot (1868); Richter (2015, journal article) says he 'was deeply rooted in his Christian faith' and cites surviving sermon outlines from his later years. The sermon text itself was seen only as a secondary quotation (Graney, Vatican Observatory, from Der Imkerfreund 1972), V3, so it is a lead, not a scoring statement. primary_system CHRIST (0.5, scholarly_reconstruction; alt BELOW_THRESHOLD); A UNKNOWN (lead 1); scientist (laws of heredity: testable claims about organisms), so B 3 at 0.5 from working science, alt 4 (P24, P35); C, D, E UNKNOWN; mid_basin UNKNOWN (A UNKNOWN). Span 1866, age 44. Not plotted (no A). Draft, not reviewed."}
 
 identity:
@@ -37,8 +38,8 @@ basics:
   death:
     date: {value: "1884-01-06", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "Brünn", modern_name: "Brno, Czech Republic", polity_then: "Austria-Hungary", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1866, certainty: 0.7, cites: [{source: S2, locator: "title page; p. 3"}], how_known: "Versuche über Pflanzen-Hybriden, read February and March 1865, printed in vol. IV (Brünn, 1866); publication is the P30 #1 dating event."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "title page"}], how_known: "1866 (P2)."}
+  first_lasting_contribution_year: {value: 1865, certainty: 0.7, cites: [{source: S2, locator: "Inhalts-Verzeichniss (Sitzungs-Berichte, 8 February and 8 March 1865); p. 3"}], how_known: "Versuche über Pflanzen-Hybriden was read in public at the society's sessions of 8 February and 8 March 1865 (listed in the volume's Sitzungs-Berichte; 'Vorgelegt in den Sitzungen vom 8. Februar und 8. März 1865', p. 3); a public reading is the P30 #1 dating event, earlier than the 1866 printing (Z10 audit)."}
+  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "p. 3"}], how_known: "1865 (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Czech Republic (P3)."}
   region_of_work: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "Education and early career"}], how_known: "Brünn (Brno), Moravia."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -48,7 +49,7 @@ basics:
 contribution:
   fields: {value: ["genetics", "botany"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Laws of heredity from pea hybrids (Mendelism)", year: 1866, kind: "law or principle", lasting: "'the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "opening; Experimental period"}], how_known: "Britannica body; dated by the 1866 printing (S2)."}
+    - {value: "Laws of heredity from pea hybrids (Mendelism)", year: 1865, kind: "law or principle", lasting: "'the first person to lay the mathematical foundation of the science of genetics, in what came to be called Mendelism' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "opening; Experimental period"}], how_known: "Britannica body; dated by the 1865 public readings (S2, p. 3; P30 #1)."}
   evidence_of_impact:
     - {value: "Mendelism; the law of independent assortment named by his successors", kind: "named after them", certainty: 0.7, cites: [{source: S1, locator: "opening; Experimental period"}], how_known: "Britannica."}
   major_works:
@@ -73,7 +74,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1866", certainty: 0.7, cites: [{source: S2, locator: "title page"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1865", certainty: 0.7, cites: [{source: S2, locator: "p. 3"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: 
@@ -114,8 +115,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1866", certainty: 0.7, cites: [{source: S2, locator: "title page"}], how_known: "Versuche über Pflanzen-Hybriden (1866), the one listed lasting work (P29, P30)."}
-  age_at_first_lasting_contribution: {value: 44, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1866 − 1822 = 44 (P30 year difference)."}
+  major_work_period: {value: "1865", certainty: 0.7, cites: [{source: S2, locator: "p. 3"}], how_known: "Versuche über Pflanzen-Hybriden, read 1865 (printed 1866), the one listed lasting work (P29, P30 #1)."}
+  age_at_first_lasting_contribution: {value: 43, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "p. 3"}], how_known: "1865 − 1822 = 43 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -201,7 +202,7 @@ Brünn monastery and Realschule [S1].
 
 ## Contribution and impact
 
-Laws of heredity, 1866 [S1, S2].
+Laws of heredity, read 1865, printed 1866 [S1, S2].
 
 ## Childhood and education
 
@@ -217,7 +218,7 @@ Catholic [S3].
 
 ## Timing
 
-1866, age 44 [S2].
+1865, age 43 [S2].
 
 ## Lane B notes (labeled belief model)
 

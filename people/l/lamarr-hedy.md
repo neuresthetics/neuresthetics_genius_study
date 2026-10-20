@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fixes (FAIL, P13; v8's calls on the auditor's advice): 'achieved recognition as a noted inventor' is not a lasting claim about the device, and its later use is only in the Top Questions box (P26), so no lasting work is supported; the patent moves to major_works, dated by its 10 June 1941 filing (formal submission, P30 #1). Span 1942 -> UNKNOWN; age and era UNKNOWN. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 177). Basics from Britannica (Britannica Editors; body only, the Top Questions box not cited, P26); the patent from Google Patents (US 2,292,387, 'Secret communication system', filed 1941-06-10, granted 1942-08-11, inventors Hedy Kiesler Markey and George Antheil). No own-voice statement on religion or nature read. Not a scientist (invention, P33). All worldview fields UNKNOWN. Span 1942 (patent grant), age 29 (birth 1913/14; earlier year used, as for Chaucer). Not plotted. Draft, not reviewed."}
 
 identity:
@@ -38,8 +39,8 @@ basics:
   death:
     date: {value: "2000-01-19", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     place: {value: "near Orlando, Florida", modern_name: "Orlando, Florida, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1942, certainty: 0.5, cites: [{source: S2, locator: "front page"}], how_known: "US patent 2,292,387 granted 1942-08-11 (publication; P30 #1)."}
-  era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "front page"}], how_known: "1942 (P2)."}
+  first_lasting_contribution_year: {value: UNKNOWN, how_known: "No lasting work supported (P13): Britannica's body says only that she 'achieved recognition as a noted inventor'; the device's later use is in the Top Questions box (P26). Z10 audit."}
+  era_bucket: {value: UNKNOWN, how_known: "No first lasting year (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Austria (P3)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Hollywood from 1937."}
   sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -48,11 +49,11 @@ basics:
 
 contribution:
   fields: {value: ["radio communications"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  lasting_original_contributions:
-    - {value: "Frequency-hopping 'secret communication system' (with George Antheil)", year: 1942, kind: "invention", lasting: "'achieved recognition as a noted inventor of a radio communications device' (S1, body); lastingness the coder's call", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body; patent granted 1942 (S2). The body does not name the device's later use; that is in the Top Questions box, which is not citable (P26)."}
+  lasting_original_contributions: []
   evidence_of_impact:
     - {value: "Recognized as a noted inventor years after her screen career", kind: "other", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
+    - {value: "Frequency-hopping 'secret communication system' (with George Antheil), US patent 2,292,387", year: 1941, kind: "device", certainty: 0.7, cites: [{source: S2, locator: "front page"}], how_known: "Filed 10 June 1941 (formal submission, the P30 #1 dating event), granted 11 August 1942. Not a supported lasting contribution (P13, P26)."}
     - {value: "Algiers", year: 1938, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
     - {value: "Samson and Delilah", year: 1949, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   honours: []
@@ -75,7 +76,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1942", certainty: 0.5, cites: [{source: S2, locator: "front page"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No statement on religion read."}
@@ -101,8 +102,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1942", certainty: 0.5, cites: [{source: S2, locator: "front page"}], how_known: "The patent (1942), the one listed lasting work (P29, P30)."}
-  age_at_first_lasting_contribution: {value: 29, certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "1942 − 1913 = 29 (P30 year difference); 28 if born 1914."}
+  major_work_period: {value: UNKNOWN, how_known: "No supported lasting work (P13; Z10 audit). The patent would date to its 1941 filing (P30 #1) if a source called it lasting."}
+  age_at_first_lasting_contribution: {value: UNKNOWN, how_known: "No first lasting year."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -168,7 +169,7 @@ Vienna; Hollywood [S1].
 
 ## Contribution and impact
 
-Frequency-hopping patent 1942 [S1, S2].
+Frequency-hopping patent, filed 1941 [S2].
 
 ## Childhood and education
 
@@ -184,7 +185,7 @@ Not stated.
 
 ## Timing
 
-1942, age 29 [S2].
+UNKNOWN (no supported lasting work).
 
 ## Lane B notes (labeled belief model)
 
