@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 202). Sources: Britannica, signed by B.R. Nanda (scholars edition, read in full), and the Introduction to Gandhi's Autobiography (1927–29, tr. Mahadev Desai), read in full on mkgandhi.org (unofficial web copy). Lasting work: satyagraha, 'born' at the Johannesburg mass meeting of September 1906 (S1); Nanda calls him the 'catalyst' of 'three of the major revolutions of the 20th century'. Span 1906, age 37. Own words: 'to see God face to face, to attain Moksha' and 'He alone is real and all else is unreal' (S2, 1927); Young India 1924, 'to attain moksha in this very existence' (quoted in S1). All after the span: P20 cap 0.5. primary_system HINDU 0.5 (written_profession), alternative BELOW_THRESHOLD (he held all religions 'true' yet 'imperfect', S1). A BELOW_THRESHOLD: 'God as Truth', 'He alone is real' (acosmic, A 4 lead) against 'see God face to face' (personal, A 2 or lower lead); not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. region_of_work Sub-Saharan Africa for the span (South Africa), South Asia afterwards. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 202). Sources: Britannica, signed by B.R. Nanda (scholars edition, read in full), and the Introduction to Gandhi's Autobiography (1927–29, tr. Mahadev Desai), read in full on mkgandhi.org (unofficial web copy). Lasting work: satyagraha, 'born' at the Johannesburg mass meeting of September 1906 (S1); Nanda calls him the 'catalyst' of 'three of the major revolutions of the 20th century'. Span 1906, age 37. Own words: 'to see God face to face, to attain Moksha' and 'He alone is real and all else is unreal' (S2, Introduction signed 26 November 1925); 'I call myself a Sanatani Hindu' (Young India, dated 6 October 1921 in the Truth Is God anthology, S4; date not verified in CWMG); Young India 1924, 'to attain moksha in this very existence' (quoted in S1). All after the span: P20 cap 0.5. primary_system HINDU 0.5 (written_profession, on the explicit 'Sanatani Hindu' self-identification, RQ-AA6-1), alternative BELOW_THRESHOLD (he held all religions 'true' yet 'imperfect', S1). A BELOW_THRESHOLD: 'God as Truth', 'He alone is real' (acosmic, A 4 lead) against 'see God face to face' (personal, A 2 or lower lead); not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. region_of_work Sub-Saharan Africa for the span (South Africa), South Asia afterwards. Not plotted. Draft, not reviewed."}
 
 identity:
   id: gandhi-mahatma
@@ -40,7 +40,7 @@ basics:
   first_lasting_contribution_year: {value: 1906, certainty: 0.7, cites: [{source: S1, locator: "Emergence as a political and social activist"}], how_known: "Satyagraha 'born' at the Johannesburg mass meeting, September 1906 (S1): a documented public statement (P30)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "text"}], how_known: "1906 (P2)."}
   region_of_birth: {value: "South Asia", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "India (P3)."}
-  region_of_work: {value: "Sub-Saharan Africa", certainty: 0.5, cites: [{source: S1, locator: "Emergence as a political and social activist"}], how_known: "Johannesburg during the 1906 span; alternative South Asia, where his campaigns from 1915 took place."}
+  region_of_work: {value: "Sub-Saharan Africa", certainty: 0.5, cites: [{source: S1, locator: "Emergence as a political and social activist"}], how_known: "Johannesburg during the 1906 span (region of work follows where the span took place, v8's call on the AA6 audit); alternative South Asia, the home region, where his campaigns from 1915 took place."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
   languages_of_work: {value: ["Gujarati", "English"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Hind Swaraj and the autobiography in Gujarati; Young India in English (S1)."}
   occupations: {value: ["lawyer", "political leader", "writer"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
@@ -83,12 +83,12 @@ worldview:
     value: HINDU
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S2, locator: "Introduction"}, {source: S1, locator: "Religious quest"}]
-    how_known: "Autobiography (1927) and Young India (1924), both after the 1906 span (P20 cap 0.5)."
-    rationale: "Aim 'to see God face to face, to attain Moksha' (S2); moksha is Hindu soteriology; the Gita was his 'spiritual dictionary' (S1). Alternative BELOW_THRESHOLD: he held all religions 'true' yet 'imperfect' (S1) and names no tradition in S2."
+    cites: [{source: S4, locator: "Why I Am A Hindu"}, {source: S2, locator: "Introduction"}, {source: S1, locator: "Religious quest"}]
+    how_known: "Young India, 1921 (S4; date as the anthology gives it, not verified in CWMG; other copies give 10 June 1921), and the Autobiography Introduction (1925); all after the 1906 span (P20 cap 0.5)."
+    rationale: "Explicit self-identification: 'I call myself a Sanatani Hindu, because ... I believe in the Vedas, the Upanishads, the Puranas' (S4). Supporting: aim 'to see God face to face, to attain Moksha' (S2); the Gita his 'spiritual dictionary' (S1). RQ-AA6-1 (v8's call on the auditor's advice). Alternative BELOW_THRESHOLD: he held all religions 'true' yet 'imperfect' (S1) and names no tradition in S2."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: HINDU, reason: "Coded at 0.5 (S2, S1)."}
+    - {code: HINDU, reason: "Coded at 0.5 (S4, S2, S1)."}
     - {code: JAIN, reason: "Lead: Jain tinge of the Vaishnava home; mentor Shrimad Rajchandra (S1); heritage, not profession."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "Mixed: 'He alone is real and all else is unreal' and 'I worship God as Truth only' (S2) lean to A 4; 'to see God face to face' leans personal (A 2 or lower). No reading reaches 0.5 over the other."}
@@ -100,8 +100,8 @@ worldview:
   statements:
     - text: "What I want to achieve - what I have been striving and pining to achieve these thirty years - is self-realization, to see God face to face, to attain Moksha. I live and move and have my being in pursuit of this goal."
       cites: [{source: S2, locator: "Introduction"}]
-      date: "1927"
-      context: "Introduction to the Autobiography (Gujarati 1927–29; tr. Desai); after the span."
+      date: "1925-11-26"
+      context: "Introduction to the Autobiography, signed 26 November 1925 (tr. Desai); after the span."
       axes: [A_locus]
       kind: "autobiography"
       verified_against: "unofficial web copy"
@@ -109,13 +109,21 @@ worldview:
       note: "mkgandhi.org transcription of the Desai translation."
     - text: "Often in my progress I have had faint glimpses of the Absolute Truth, God, and daily the conviction is growing upon me that He alone is real and all else is unreal."
       cites: [{source: S2, locator: "Introduction"}]
-      date: "1927"
+      date: "1925-11-26"
       context: "Same Introduction."
       axes: [A_locus]
       kind: "autobiography"
       verified_against: "unofficial web copy"
       verified_on: 2026-10-19
       note: "Acosmic reading: the A 4 lead."
+    - text: "I call myself a Sanatani Hindu, because, 1. I believe in the Vedas, the Upanishads, the Puranas and all that goes by the name of Hindu scriptures, and therefore in Avataras and rebirth;"
+      cites: [{source: S4, locator: "Why I Am A Hindu"}]
+      context: "Young India; the Truth Is God anthology dates it 6 October 1921 (other copies give 10 June 1921); date not verified in CWMG, so left undated here; after the span."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "unofficial web copy"
+      verified_on: 2026-10-19
+      note: "mkgandhi.org transcription of the anthology (comp. R.K. Prabhu)."
     - text: "I am impatient to realize myself, to attain moksha in this very existence."
       cites: [{source: S1, locator: "Religious quest"}]
       date: "1924"
@@ -163,7 +171,7 @@ review:
   data_quality_flags:
     - "Profession after the span (P20)."
   open_questions:
-    - "Within-span own words (Hind Swaraj 1909); region_of_work for a 1906 span."
+    - "Within-span own words (Hind Swaraj 1909); CWMG date of the Sanatani Hindu passage."
 
 sources:
   - id: S1
@@ -193,6 +201,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: primary
+    kind: "published work by the subject"
+    author: "M.K. Gandhi, comp. R.K. Prabhu"
+    citation: "Gandhi, M.K. Truth Is God, comp. R.K. Prabhu, ch. 22 'Why I Am A Hindu' (from Young India). mkgandhi.org. https://www.mkgandhi.org/truthisgod/22hindu.php"
+    url: "https://www.mkgandhi.org/truthisgod/22hindu.php"
+    accessed: 2026-10-19
+    reliability_note: "Unofficial web copy of an anthology of his writings; chapter read in full."
+    used_for: [worldview]
 ---
 
 ## Summary
@@ -213,7 +230,7 @@ Rajkot; Inner Temple [S1].
 
 ## Adult working worldview
 
-'to see God face to face, to attain Moksha' (1927) [S2].
+'I call myself a Sanatani Hindu' (Young India, 1921) [S4]; 'to see God face to face' (1925) [S2].
 
 ## Heritage (context only)
 

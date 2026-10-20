@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 204). Sources: MIT News obituary (2016, read in full) and Patrick Winston's CSAIL obituary (read in full). Lasting work: co-founding the MIT AI Laboratory (1959, S1), which with his early papers 'firmly established Minsky as one of the founders of Artificial Intelligence' (S2); the Theory of Frames (mid-1970s), with 'high impact on Artificial Intelligence as an emerging engineering discipline' (S2), dated 1974 at 0.5 (S2 says 'mid 1970s'); The Society of Mind (1985), 'considered a seminal exploration of intellectual structure and function' (S1). Span 1959–1985, age 32. Not a scientist as listed, following McCarthy (RQ-AA3-1): an institution, a knowledge-representation scheme and a theory of mind's architecture make no testable claim about nature as listed. Worldview: no own words read; lead ATHE (secondary web summaries of a Closer To Truth interview, not read). primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 204). Sources: MIT News obituary (2016, read in full) and Patrick Winston's CSAIL obituary (read in full). Lasting work: co-founding the MIT AI Laboratory (1959, S1), which with his early papers 'firmly established Minsky as one of the founders of Artificial Intelligence' (S2); the Theory of Frames (mid-1970s), with 'high impact on Artificial Intelligence as an emerging engineering discipline' (S2), dated 1 June 1974 by MIT AI Memo 306 (S4), 0.7; The Society of Mind (1985), 'considered a seminal exploration of intellectual structure and function' (S1). Span 1959–1985, age 32. Not a scientist as listed, following McCarthy (RQ-AA3-1; confirmed for Minsky on the AA6 audit, v8's call): an institution, a knowledge-representation scheme and a theory of mind's architecture make no testable claim about nature as listed. Worldview: no own words read; lead ATHE (secondary web summaries of a Closer To Truth interview, not read). primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: minsky-marvin
@@ -47,7 +47,7 @@ contribution:
   fields: {value: ["artificial intelligence", "computer science", "cognitive science"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "MIT News."}
   lasting_original_contributions:
     - {value: "MIT Artificial Intelligence Laboratory (co-founded with John McCarthy)", year: 1959, kind: "institution", lasting: "with his early work, 'firmly established Minsky as one of the founders of Artificial Intelligence' (S2); now CSAIL (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S2, locator: "text"}], how_known: "MIT News: 1959; Winston: 'late 1950s', as the AI Group."}
-    - {value: "Theory of Frames ('A Framework for Representing Knowledge')", year: 1974, kind: "theory", lasting: "'had high impact on Artificial Intelligence as an emerging engineering discipline: the popular expert-system shells ... all offered tools for ... frames' (S2)", certainty: 0.5, cites: [{source: S2, locator: "text"}], how_known: "Winston: 'mid 1970s'; 1974 not printed in the sources read."}
+    - {value: "Theory of Frames ('A Framework for Representing Knowledge')", year: 1974, kind: "theory", lasting: "'had high impact on Artificial Intelligence as an emerging engineering discipline: the popular expert-system shells ... all offered tools for ... frames' (S2)", certainty: 0.7, cites: [{source: S2, locator: "text"}, {source: S4, locator: "title page; abstract"}], how_known: "MIT AI Memo 306, issued 1 June 1974 (S4); the memo calls it 'a partial theory of thinking'."}
     - {value: "The Society of Mind", year: 1985, kind: "work", lasting: "'considered a seminal exploration of intellectual structure and function' (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S2, locator: "text"}], how_known: "MIT News and Winston: 1985."}
   evidence_of_impact:
     - {value: "A.M. Turing Award (1969)", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "MIT News."}
@@ -159,6 +159,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: primary
+    kind: "published work by the subject"
+    author: "Marvin Minsky"
+    citation: "Minsky, Marvin. 'A Framework for Representing Knowledge.' MIT AI Laboratory Memo 306, 1 June 1974. DSpace@MIT. http://hdl.handle.net/1721.1/6089"
+    url: "http://hdl.handle.net/1721.1/6089"
+    accessed: 2026-10-19
+    reliability_note: "Repository record and abstract read; memo title page checked (bitsavers scan)."
+    used_for: [contribution]
 ---
 
 ## Summary

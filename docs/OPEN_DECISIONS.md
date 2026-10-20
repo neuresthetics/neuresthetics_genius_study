@@ -874,6 +874,11 @@ Process:
   - **P13 (Lamarr precedent) applied to Johnson:** no source calls a result lasting, so first-lasting year, span, working years, age and era are UNKNOWN, with 1960 and 1962 as candidates.
   - **P21 stretch noted, not widened:** Butler's emailed answers to an online magazine keep the `newspaper interview` label with a record note.
   - Butler heritage 0.7 (Haaretz 2010 read in full). Laozi native name UNKNOWN. Le Corbusier span 1923–1948 (books, full Choay text). Borges 1941 alternative cited to the Borges Center chronology.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA6 audit at c0af7f0):**
+  - **RQ-AA6-1:** Gandhi's primary_system is HINDU at 0.5 (written_profession, P20 cap: all statements post-date the 1906 span), on 'I call myself a Sanatani Hindu' (Young India; 6 October 1921 in the Truth Is God anthology, not verified in CWMG); BELOW_THRESHOLD is the alternative, since he held all religions 'true' yet 'imperfect'. A stays BELOW_THRESHOLD; not plotted either way.
+  - **Minsky is not a scientist** (McCarthy precedent, RQ-AA3-1): frames and the Society of Mind make no testable empirical claim about organisms. B stays UNKNOWN; a source showing such tests would reopen this.
+  - **Region of work follows where the span took place**, with the home region as the alternative (Gandhi: Sub-Saharan Africa at 0.5 for the 1906 Johannesburg span, alternative South Asia).
+  - Mies first-lasting year 1921 at 0.5 (MoMA; alternatives 1919, Britannica, and 1922, competition deadline), age 35, span 1921–1929 at 0.5. Gandhi Introduction dated 26 November 1925. Minsky Frames cited to MIT AI Memo 306 (1 June 1974) at 0.7; span 1959–1985 stays 0.7.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**
