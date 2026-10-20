@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix: the Tate (Wilton) and National Gallery (Egerton) entries were fetched and read in full on 2026-10-19 and are relabelled 'read in full'."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 186). Source: Britannica, signed by Martin R. F. Butlin (scholars edition, read in full). Lasting claim: 'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere' (Legacy), a body of work. Span: from The Shipwreck and the Thames sketches of 1805, when he 'was developing his original approach to landscape', to Rain, Steam, and Speed (1844), the last dated work Britannica names among the 'outstanding examples of his late work'; dates as Britannica gives them. No religious statement read: worldview all UNKNOWN; not a scientist. Span 1805–1844, age 30. Not plotted. Draft, not reviewed."}
 
@@ -146,7 +147,7 @@ sources:
     citation: "'Study for The Shipwreck', c.1799–1805, in J.M.W. Turner: Sketchbooks, Drawings and Watercolours, Tate Research Publication. https://www.tate.org.uk/art/research-publications/jmw-turner/joseph-mallord-william-turner-study-for-the-shipwreck-r1178107"
     url: "https://www.tate.org.uk/art/research-publications/jmw-turner/joseph-mallord-william-turner-study-for-the-shipwreck-r1178107"
     accessed: 2026-10-19
-    reliability_note: "Museum catalogue entry, seen as a search excerpt; Tate's artwork page also titles the picture 'exhibited 1805'."
+    reliability_note: "Signed museum catalogue entry (Andrew Wilton, May 2013), read in full: 'The painting The Shipwreck was exhibited in Turner's own gallery in 1805'."
     used_for: [basics, timing]
   - id: S3
     type: secondary
@@ -155,7 +156,7 @@ sources:
     citation: "Egerton, Judy. 'Rain, Steam, and Speed – The Great Western Railway.' The British Paintings (National Gallery, 2000), online catalogue. https://www.nationalgallery.org.uk/paintings/catalogues/egerton-2000/rain-steam-and-speed-the-great-western-railway"
     url: "https://www.nationalgallery.org.uk/paintings/catalogues/egerton-2000/rain-steam-and-speed-the-great-western-railway"
     accessed: 2026-10-19
-    reliability_note: "Signed museum catalogue entry, seen as a search excerpt: 'Exhibited RA 1844 (62)'."
+    reliability_note: "Signed museum catalogue entry, read in full: 'Exhibited RA 1844 (62)'."
     used_for: [contribution, timing]
   - id: S4
     type: secondary
@@ -207,4 +208,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Research log
 
 - 2026-10-19: AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted.
+- 2026-10-19: AA3 audit fix: the Tate (Wilton) and National Gallery (Egerton) entries were fetched and read in full on 2026-10-19 and are relabelled 'read in full'.
 - 2026-10-19: Read Britannica (Butlin).

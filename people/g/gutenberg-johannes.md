@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 189). Source: Britannica (students edition, read in full). Lasting work: printing with movable metal type, 'one of the world's greatest inventions' whose method 'endured almost unchanged for five centuries'; dated by the Gutenberg Bible, 'completed before or in 1455' (publication, P30 #1), at 0.5 with 1454 (the Türkenkalender, 'printed in 1454') as the alternative. Birth '1395?' and death 'probably ... February 3, 1468', so age about 60 at 0.5. An invention, not a theory (P33): not a scientist, B UNKNOWN. No own words: worldview all UNKNOWN (lead CHRIST: printed the Bible; pension from the archbishop of Mainz). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): alternative birth about 1400, age about 55. Signed Britannica article (Lehmann-Haupt) added as S3; only part of it was read and it did not confirm the Bible date in the body, so the span stays 0.5."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 189). Source: Britannica (students edition, read in full). Lasting work: printing with movable metal type, 'one of the world's greatest inventions' whose method 'endured almost unchanged for five centuries'; dated by the Gutenberg Bible, 'completed before or in 1455' (publication, P30 #1), at 0.5 with 1454 (the Türkenkalender, 'printed in 1454') as the alternative. Birth '1395?' and death 'probably ... February 3, 1468', so age about 60 at 0.5; alternative birth about 1400, age about 55 (AA3 audit advice). The signed Britannica article (Lehmann-Haupt, S3) gives 'born 14th century, Mainz' and the Fust judgment of 6 November 1455. An invention, not a theory (P33): not a scientist, B UNKNOWN. No own words: worldview all UNKNOWN (lead CHRIST: printed the Bible; pension from the archbishop of Mainz). Not plotted. Draft, not reviewed."}
 
 identity:
   id: gutenberg-johannes
@@ -32,7 +33,7 @@ identity:
 
 basics:
   birth:
-    date: {value: "1395", certainty: 0.5, cites: [{source: S1, locator: "heading"}], how_known: "Britannica: '1395?'; 'born ... in the late 14th century'."}
+    date: {value: "1395", certainty: 0.5, cites: [{source: S1, locator: "heading"}, {source: S3, locator: "Introduction"}], how_known: "Britannica students: '1395?'; 'born ... in the late 14th century' (S1); signed article: 'born 14th century' (S3). Alternative: about 1400 (v8's call on the auditor's advice, AA3), within the late-14th-century range."}
     place: {value: "Mainz", modern_name: "Mainz, Germany", polity_then: "Electorate of Mainz (Holy Roman Empire)", certainty: 0.7, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica."}
   death:
     date: {value: "1468-02-03", certainty: 0.5, cites: [{source: S1, locator: "para. 5"}], how_known: "Britannica: 'probably died in Mainz on February 3, 1468'."}
@@ -102,7 +103,7 @@ heritage:
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1455", certainty: 0.5, cites: [{source: S1, locator: "para. 5"}], how_known: "The one listed lasting work, dated by the Bible's completion (P29, P30 #1); alternative 1454."}
-  age_at_first_lasting_contribution: {value: 60, certainty: 0.5, cites: [{source: S1, locator: "heading; para. 5"}], how_known: "1455 − 1395 = 60 (P30 year difference); birth year uncertain ('1395?')."}
+  age_at_first_lasting_contribution: {value: 60, certainty: 0.5, cites: [{source: S1, locator: "heading; para. 5"}], how_known: "1455 − 1395 = 60 (P30 year difference); birth year uncertain ('1395?'); alternative about 55 on a birth about 1400."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -146,6 +147,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: tertiary
+    kind: "encyclopedia"
+    author: "Hellmut E. Lehmann-Haupt"
+    citation: "Lehmann-Haupt, Hellmut E. 'Johannes Gutenberg.' Encyclopaedia Britannica. https://www.britannica.com/biography/Johannes-Gutenberg"
+    url: "https://www.britannica.com/biography/Johannes-Gutenberg"
+    accessed: 2026-10-19
+    reliability_note: "Signed article; the fetched copy covers the introduction, Life and the start of the Invention section (to the 1455 Fust judgment); the Bible's completion date was not in the part read, so the span stays 0.5."
+    used_for: [identity, basics]
 ---
 
 ## Summary
@@ -174,7 +184,7 @@ Not stated.
 
 ## Timing
 
-1455, age about 60 (0.5) [S1].
+1455, age about 60, or about 55 (0.5) [S1, S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -186,4 +196,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
-- 2026-10-19: Read Britannica (students).
+- 2026-10-19: AA3 audit fix (v8's call on the auditor's advice): alternative birth about 1400, age about 55. Signed Britannica article (Lehmann-Haupt) added as S3; only part of it was read and it did not confirm the Bible date in the body, so the span stays 0.5.
+- 2026-10-19: Read Britannica (students); signed Britannica (Lehmann-Haupt), partly.

@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 188). Source: Britannica, signed by Robert Simpson and Karl Geiringer (scholars edition, read in full). Lasting work: Ein deutsches Requiem, 'still considered one of the most significant works of 19th-century choral music'; dated by its 'first performance at Bremen on Good Friday, 1868' (premiere, P30 #1). That Bremen performance is commonly said to have lacked the fifth movement, added for the complete Leipzig performance of 1869 (coder's knowledge, not in the source read); under RQ-Z8-1 an incomplete premiere dates only what was played, so 0.5 with 1869 as the alternative. Worldview: no own words read. Britannica calls the Requiem 'a large, objective, nonreligious humane vision' and his 'essential quality is perhaps stoicism', describing the music, not a profession. primary_system UNKNOWN (leads SECHUM, CHRIST: biblical texts 'selected by the composer'); A UNKNOWN; not a scientist; C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1868, age 35. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): Bremen 1868 gave all six movements then existing, so RQ-Z8-1 does not apply and the movement-5 reasoning is removed; span 1868 now 0.7; the 1869 Leipzig alternative is cited to Swafford's BSO programme note (S3, read in full). Swafford's 'skeptic and agnostic' added as a worldview lead only."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 188). Source: Britannica, signed by Robert Simpson and Karl Geiringer (scholars edition, read in full). Lasting work: Ein deutsches Requiem, 'still considered one of the most significant works of 19th-century choral music'; dated by its 'first performance at Bremen on Good Friday, 1868' (premiere, P30 #1). Bremen gave 'the six then-existing movements' (BSO note, S3), so the premiere dates the work at 0.7; alternative 1869, 'the first performance of the complete seven-movement work' in Leipzig (S3). Worldview: no own words read. Britannica calls the Requiem 'a large, objective, nonreligious humane vision' and his 'essential quality is perhaps stoicism', describing the music, not a profession. primary_system UNKNOWN (leads SECHUM, CHRIST: biblical texts 'selected by the composer'); A UNKNOWN; not a scientist; C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1868 at 0.7, age 35. Not plotted. Draft, not reviewed."}
 
 identity:
   id: brahms-johannes
@@ -34,7 +35,7 @@ basics:
   death:
     date: {value: "1897-04-03", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Vienna", modern_name: "Vienna, Austria", polity_then: "Austria-Hungary", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1868, certainty: 0.5, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "'first performance at Bremen on Good Friday, 1868' (S1); premiere (P30 #1). 0.5 because the Bremen performance is reported to have lacked the fifth movement (RQ-Z8-1: an incomplete premiere dates only the part played); alternative 1869, the complete performance (not in the source read)."}
+  first_lasting_contribution_year: {value: 1868, certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}, {source: S3, locator: "Composition and premiere"}], how_known: "'first performance at Bremen on Good Friday, 1868' (S1); 'The first performance of the six then-existing movements' (S3); premiere (P30 #1). Alternative 1869: the fifth movement was added in May 1868 and 'The first performance of the complete seven-movement work took place in Leipzig on February 18, 1869' (S3)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "1868 or 1869, one bucket (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Germany (P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "Vienna from 1863."}
@@ -45,7 +46,7 @@ basics:
 contribution:
   fields: {value: ["music"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Ein deutsches Requiem (A German Requiem)", year: 1868, kind: "work", lasting: "'still considered one of the most significant works of 19th-century choral music' (S1)", certainty: 0.5, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "Britannica; premiere Bremen, Good Friday 1868 (0.5, see first-lasting year)."}
+    - {value: "Ein deutsches Requiem (A German Requiem)", year: 1868, kind: "work", lasting: "'still considered one of the most significant works of 19th-century choral music' (S1)", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}, {source: S3, locator: "Composition and premiere"}], how_known: "Britannica; premiere of the six then-existing movements, Bremen, Good Friday 1868 (S3); complete seven-movement work Leipzig 1869 (S3)."}
   evidence_of_impact:
     - {value: "'The great master of symphonic and sonata style in the second half of the 19th century'; the 'three great Bs'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "Introduction; Maturity and fame"}], how_known: "Britannica."}
   major_works:
@@ -72,13 +73,13 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1868", certainty: 0.5, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1868", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: {value: UNKNOWN, how_known: "No own words read. Britannica: the Requiem, 'based on biblical texts selected by the composer', expresses 'a large, objective, nonreligious humane vision'; 'his essential quality is perhaps stoicism' (S1). These describe the music, not a profession. Leads SECHUM and CHRIST."}
+  primary_system: {value: UNKNOWN, how_known: "No own words read. Britannica: the Requiem, 'based on biblical texts selected by the composer', expresses 'a large, objective, nonreligious humane vision'; 'his essential quality is perhaps stoicism' (S1). These describe the music, not a profession. Leads SECHUM and CHRIST. Swafford's programme note (S3): 'a skeptic and agnostic—in the terms of our day, a \"secular humanist\"'; a scholar's characterization without his words, kept as a lead."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: SECHUM, reason: "Lead: 'nonreligious humane vision' (S1, of the Requiem)."}
+    - {code: SECHUM, reason: "Lead: 'nonreligious humane vision' (S1, of the Requiem); 'skeptic and agnostic' (S3)."}
     - {code: CHRIST, reason: "Lead: biblical texts chosen by him; Four Serious Songs (1896) (S1)."}
   lio_axes:
     A_locus: {value: UNKNOWN, how_known: "Nothing first-hand read (P19)."}
@@ -89,7 +90,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Read his letters on the Requiem texts (to Carl Reinthaler, 1867) and Musgrave's A Brahms Reader; check the 1868 Bremen programme (fifth movement) against a source."
+  coder_notes: "Read his letters on the Requiem texts (to Carl Reinthaler, 1867) and Musgrave's A Brahms Reader; check Swafford's Johannes Brahms: A Biography for his own words on belief."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -100,8 +101,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1868", certainty: 0.5, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "The one listed lasting work, dated by its premiere (P29, P30 #1); alternative 1869."}
-  age_at_first_lasting_contribution: {value: 35, certainty: 0.5, cites: [{source: S1, locator: "Introduction; The young pianist and music director"}], how_known: "1868 − 1833 = 35 (P30 year difference); 36 on the 1869 alternative."}
+  major_work_period: {value: "1868", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}], how_known: "The one listed lasting work, dated by its premiere (P29, P30 #1); alternative 1869."}
+  age_at_first_lasting_contribution: {value: 35, certainty: 0.7, cites: [{source: S1, locator: "Introduction; The young pianist and music director"}], how_known: "1868 − 1833 = 35 (P30 year difference); 36 on the 1869 alternative."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -125,9 +126,9 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S2, locator: "roster.csv, rank 188"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Premiere may have been incomplete (RQ-Z8-1)."
+    - "Worldview leads only."
   open_questions:
-    - "Requiem letters; Bremen programme."
+    - "Requiem letters; Swafford biography."
 
 sources:
   - id: S1
@@ -148,6 +149,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "other"
+    author: "Jan Swafford"
+    citation: "Swafford, Jan. 'A German Requiem' (programme note). Boston Symphony Orchestra. https://www.bso.org/works/a-german-requiem"
+    url: "https://www.bso.org/works/a-german-requiem"
+    accessed: 2026-10-19
+    reliability_note: "Signed orchestra programme note by Brahms's biographer, read in full."
+    used_for: [basics, contribution, worldview, timing]
 ---
 
 ## Summary
@@ -176,7 +186,7 @@ Not stated.
 
 ## Timing
 
-1868, age 35 (0.5) [S1].
+1868, age 35 [S1, S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -188,4 +198,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
-- 2026-10-19: Read Britannica (Simpson, Geiringer).
+- 2026-10-19: AA3 audit fix (v8's call on the auditor's advice): Bremen 1868 gave all six movements then existing, so RQ-Z8-1 does not apply and the movement-5 reasoning is removed; span 1868 now 0.7; the 1869 Leipzig alternative is cited to Swafford's BSO programme note (S3, read in full). Swafford's 'skeptic and agnostic' added as a worldview lead only.
+- 2026-10-19: Read Britannica (Simpson, Geiringer); BSO programme note (Swafford).

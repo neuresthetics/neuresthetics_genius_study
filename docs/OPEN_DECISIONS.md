@@ -856,6 +856,13 @@ Process:
   - **RQ-Z9-N1, dated completion over an encyclopedia year:** where a manuscript-era work carries its own dated colophon, the colophon date stands over a conflicting encyclopedia year. Ibn Battuta: span 1355 (dictation finished 9 December 1355) at 0.5, alternative 1354 (range start, P12); age 51. Britannica's 1353 is set aside (he was in Mali until February 1353).
   - **P12, undated statements:** an undated paraphrase gets no date (the date field is left out), not the person's death year. Applied to Gantt's line on Pavlov.
   - Turner: exhibition dates confirmed (Tate 1805; National Gallery RA 1844), span 1805–1844 at 0.7.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA3 audit at b9d18d2):**
+  - **RQ-AA3-1:** John McCarthy is not a scientist for B_cause (naming a field, a programming language and logic-based AI are not testable claims about nature; P30, P33), so B stays UNKNOWN. Not result-changing: he stays unplotted.
+  - **RQ-AA3-2:** the opening invocation of Paradise Lost (I.1–26) is Milton's own voice, not a character's (P42 addendum), so CHRIST 0.7 written_profession and A 1 @0.5 stand.
+  - **P39, death-year default:** the death-year default for an undated item covers only the person's own undated works, not a scholar's paraphrase (which takes no date, P12).
+  - **RQ-Z8-1 not applicable to Brahms:** the 1868 Bremen premiere gave all six movements then existing, so it dates the Requiem at 0.7; alternative 1869 (first complete seven-movement performance, Leipzig), cited to Swafford's BSO programme note.
+  - Gutenberg: alternative birth about 1400 (age about 55); signed Britannica (Lehmann-Haupt) added, but the part read did not confirm the Bible date, so the span stays 0.5.
+  - Turner: Tate (Wilton) and National Gallery (Egerton) entries read in full and relabelled.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**
