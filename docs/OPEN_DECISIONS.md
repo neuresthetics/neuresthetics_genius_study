@@ -852,6 +852,10 @@ Process:
   - **P39 strict reading:** Heraclitus's era is UNKNOWN (floruit c. 500 BCE on the bucket edge, life dates unknown), as for Pythagoras and Sun Tzu. Ibn al-Haytham's era certainty follows his c. life dates (0.5).
   - **P21:** a new `verified_against` value, `archive scan (OCR only)`, for a person's own text read only in the OCR of a library or archive scan with page images not viewed. Applied to Simon's Models of My Life typescript.
   - Matisse: the Met 'Fauvism' essay (Rewald 2004) added as a corroborating source; search-excerpt labels kept.
+- **Applied (v8's calls on the auditor's advice, 2026-10-19, batch AA2 audit at 8afccb9):**
+  - **RQ-Z9-N1, dated completion over an encyclopedia year:** where a manuscript-era work carries its own dated colophon, the colophon date stands over a conflicting encyclopedia year. Ibn Battuta: span 1355 (dictation finished 9 December 1355) at 0.5, alternative 1354 (range start, P12); age 51. Britannica's 1353 is set aside (he was in Mali until February 1353).
+  - **P12, undated statements:** an undated paraphrase gets no date (the date field is left out), not the person's death year. Applied to Gantt's line on Pavlov.
+  - Turner: exhibition dates confirmed (Tate 1805; National Gallery RA 1844), span 1805–1844 at 0.7.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

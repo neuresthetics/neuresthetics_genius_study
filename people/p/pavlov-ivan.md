@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fixes: the Gantt paraphrase is undated, so its date is removed rather than set to his death year (P12; the schema's date field takes no UNKNOWN). Added S3, his Selected Works (Moscow 1955), whose editors date the Madrid paper to April 1903. No score change."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 184). Source: Britannica, signed by W. Horsley Gantt (his former collaborator; scholars edition, read in full). Lasting work: the conditioned reflex ('known chiefly for his development of the concept'); dated by its first public exposition at the XIV International Medical Congress, Madrid, 1903 (Campos-Bueno, journal article), the public reading as dating event (P30 #1). Worldview from Gantt's account: 'Although Pavlov held to scientific agnosticism, he considered true religion beneficial; he said that he envied no one anything except his wife her devout religious faith' (undated; a scholar's account, so scholarly_reconstruction, 0.5). primary_system AGNOS 0.5, alt BELOW_THRESHOLD; A BELOW_THRESHOLD (agnosticism states no locus); scientist (laws of the conditioned reflex: testable claims about organisms), so B 3 at 0.5 from working science, alt 4 (P24, P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1903, age 54. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -35,7 +36,7 @@ basics:
   death:
     date: {value: "1936-02-27", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Leningrad", modern_name: "Saint Petersburg, Russia", polity_then: "Soviet Union", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1903, certainty: 0.7, cites: [{source: S2, locator: "text"}], how_known: "First public exposition of his theory of conditional reflexes at the XIV International Medical Congress, Madrid, 1903 (S2); public reading of a paper is the P30 #1 dating event (Z10 ruling)."}
+  first_lasting_contribution_year: {value: 1903, certainty: 0.7, cites: [{source: S2, locator: "text"}, {source: S3, locator: "pp. 25, 151–152"}], how_known: "First public exposition of his theory of conditional reflexes at the XIV International Medical Congress, Madrid, April 1903 (S2; S3: 'the paper read by Pavlov at the International Medical Congress in Madrid in April 1903'); public reading of a paper is the P30 #1 dating event (Z10 ruling)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S2, locator: "text"}], how_known: "1903 (P2)."}
   region_of_birth: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Russia (P3)."}
   region_of_work: {value: "Eastern Europe", certainty: 0.7, cites: [{source: S1, locator: "Life"}], how_known: "St Petersburg."}
@@ -103,8 +104,7 @@ worldview:
   statements:
     - text: "Although Pavlov held to scientific agnosticism, he considered true religion beneficial; he said that he envied no one anything except his wife her devout religious faith."
       cites: [{source: S1, locator: "Opposition to communism, last para."}]
-      date: "1936"
-      context: "Gantt's summary of his views in the Britannica article; undated; date is his death year (latest possible)."
+      context: "Gantt's summary of his views in the Britannica article; undated, so no date is recorded (P12; AA2 audit)."
       axes: [A_locus]
       kind: "reported speech"
       verified_against: "secondary quotation"
@@ -144,7 +144,7 @@ collaborators:
   - {value: "Rudolf Heidenhain", relation: "teacher", note: "Breslau", certainty: 0.7, cites: [{source: S1, locator: "Life"}], how_known: "Britannica."}
 
 review:
-  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 184"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 184"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
     - "Worldview rests on one scholar's undated account."
@@ -171,6 +171,15 @@ sources:
     reliability_note: "Scholarly article, seen as a search excerpt: 'the first public exposition in French of his theory on conditional and unconditional reflexes'."
     used_for: [basics, timing]
   - id: S3
+    type: primary
+    kind: "published work by the subject"
+    author: "I. P. Pavlov (ed. Kh. S. Koshtoyants)"
+    citation: "Pavlov, I. P. Selected Works, ed. Kh. S. Koshtoyants, trans. S. Belsky (Moscow: Foreign Languages Publishing House, 1955), including 'Experimental Psychology and Psychopathology in Animals' with the editors' note on the Madrid speech. Internet Archive. https://archive.org/details/in.ernet.dli.2015.63960"
+    url: "https://archive.org/details/in.ernet.dli.2015.63960"
+    accessed: 2026-10-19
+    reliability_note: "Edited collection; the OCR text was read for the introduction, the editors' note and the opening of the lecture (not the whole volume)."
+    used_for: [basics, timing]
+  - id: S4
     type: secondary
     kind: "database"
     author: "Neuresthetics Genius Study"
@@ -219,4 +228,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA2 audit fixes: the Gantt paraphrase is undated, so its date is removed rather than set to his death year (P12; the schema's date field takes no UNKNOWN). Added S3, his Selected Works (Moscow 1955), whose editors date the Madrid paper to April 1903. No score change.
 - 2026-10-19: Read Britannica (Gantt); Campos-Bueno excerpt.

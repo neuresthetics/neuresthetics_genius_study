@@ -9,7 +9,8 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 186). Source: Britannica, signed by Martin R. F. Butlin (scholars edition, read in full). Lasting claim: 'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere' (Legacy), a body of work. Span: from The Shipwreck and the Thames sketches of 1805, when he 'was developing his original approach to landscape', to Rain, Steam, and Speed (1844), the last dated work Britannica names among the 'outstanding examples of his late work'; dates as Britannica gives them (exhibition years not confirmed in a citable source, so 0.5; P30 #1). No religious statement read: worldview all UNKNOWN; not a scientist. Span 1805–1844, age 30. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 186). Source: Britannica, signed by Martin R. F. Butlin (scholars edition, read in full). Lasting claim: 'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere' (Legacy), a body of work. Span: from The Shipwreck and the Thames sketches of 1805, when he 'was developing his original approach to landscape', to Rain, Steam, and Speed (1844), the last dated work Britannica names among the 'outstanding examples of his late work'; dates as Britannica gives them. No religious statement read: worldview all UNKNOWN; not a scientist. Span 1805–1844, age 30. Not plotted. Draft, not reviewed."}
 
 identity:
   id: turner-j-m-w
@@ -36,7 +37,7 @@ basics:
   death:
     date: {value: "1851-12-19", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Chelsea, London", modern_name: "London, United Kingdom", polity_then: "United Kingdom", certainty: 0.7, cites: [{source: S1, locator: "Later life and works"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1805, certainty: 0.5, cites: [{source: S1, locator: "Early life and works"}], how_known: "'the treatment of landscape in the Thames oil sketches of about 1805 and in The Shipwreck (1805) suggests that at this time Turner was developing his original approach to landscape' (S1); the painting date, not a confirmed exhibition date (P30 #1), so 0.5."}
+  first_lasting_contribution_year: {value: 1805, certainty: 0.7, cites: [{source: S1, locator: "Early life and works"}, {source: S2, locator: "Study for 'The Shipwreck'"}], how_known: "'The Shipwreck (1805) suggests that at this time Turner was developing his original approach to landscape' (S1); Tate: 'The painting The Shipwreck was exhibited in Turner's own gallery in 1805' (S2); exhibition is the P30 #1 dating event."}
   era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "1805–1844, one bucket (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "England (P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "London; tours of Britain and the Continent."}
@@ -47,12 +48,12 @@ basics:
 contribution:
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "Landscape painting as the study of light, colour and atmosphere (body of work, 1805–1844)", year: 1805, kind: "body of work", lasting: "'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere'; 'one of the most innovative and technically gifted painters of his century' (S1, Legacy)", certainty: 0.5, cites: [{source: S1, locator: "Legacy; Early life and works; Later life and works"}], how_known: "Britannica (Butlin); span from The Shipwreck (1805) to Rain, Steam, and Speed (1844), painting dates as given (0.5)."}
+    - {value: "Landscape painting as the study of light, colour and atmosphere (body of work, 1805–1844)", year: 1805, kind: "body of work", lasting: "'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere'; 'one of the most innovative and technically gifted painters of his century' (S1, Legacy)", certainty: 0.7, cites: [{source: S1, locator: "Legacy; Early life and works; Later life and works"}], how_known: "Britannica (Butlin); span from The Shipwreck (exhibited 1805, S2) to Rain, Steam, and Speed (exhibited 1844, S3)."}
   evidence_of_impact:
     - {value: "Ruskin's Modern Painters (1843) written to prove his superiority; the Turner Bequest", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "Legacy; Later life and works"}], how_known: "Britannica."}
   major_works:
     - {value: "The Fighting Temeraire", year: 1839, kind: "artwork", certainty: 0.7, cites: [{source: S1, locator: "Later life and works"}], how_known: "Britannica: dated (1839)."}
-    - {value: "Rain, Steam, and Speed—the Great Western Railway", year: 1844, kind: "artwork", certainty: 0.5, cites: [{source: S1, locator: "Later life and works"}], how_known: "Britannica: dated (1844); end of the body-of-work span."}
+    - {value: "Rain, Steam, and Speed—the Great Western Railway", year: 1844, kind: "artwork", certainty: 0.7, cites: [{source: S1, locator: "Later life and works"}, {source: S3, locator: "Exhibited"}], how_known: "Exhibited RA 1844 (62) (S3); end of the body-of-work span."}
     - {value: "Liber Studiorum", year: 1807, kind: "artwork", certainty: 0.7, cites: [{source: S1, locator: "Early life and works"}], how_known: "Britannica: first part June 1807, abandoned 1819 after 71 plates."}
   honours:
     - {value: "Full member of the Royal Academy", year: 1802, kind: "membership", certainty: 0.7, cites: [{source: S1, locator: "Early life and works"}], how_known: "Britannica."}
@@ -76,7 +77,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1805–1844", certainty: 0.5, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1805–1844", certainty: 0.7, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No religious statement read. Britannica notes his narrative themes, including 'the power of nature as manifested in the terror of the storm or the beneficence of the sun' (S1), a subject, not a profession."}
@@ -102,8 +103,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1805–1844", certainty: 0.5, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "Body of work from The Shipwreck (1805) to Rain, Steam, and Speed (1844); painting dates as Britannica gives them (P29, P31)."}
-  age_at_first_lasting_contribution: {value: 30, certainty: 0.5, cites: [{source: S1, locator: "Introduction; Early life and works"}], how_known: "1805 − 1775 = 30 (P30 year difference)."}
+  major_work_period: {value: "1805–1844", certainty: 0.7, cites: [{source: S1, locator: "Early life and works; Later life and works"}], how_known: "Body of work from The Shipwreck (exhibited 1805, S2) to Rain, Steam, and Speed (exhibited RA 1844, S3) (P29, P31, P30 #1)."}
+  age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "Introduction; Early life and works"}], how_known: "1805 − 1775 = 30 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -121,12 +122,12 @@ institutions:
 collaborators: []
 
 review:
-  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S2, locator: "roster.csv, rank 186"}], how_known: "Study roster."}
+  roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 186"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Span dates are painting dates, exhibition not confirmed."
+    - "No religious statement read."
   open_questions:
-    - "Exhibition years; any religious statement."
+    - "Any religious statement."
 
 sources:
   - id: S1
@@ -139,6 +140,24 @@ sources:
     reliability_note: "Signed article, read in full."
     used_for: [identity, basics, contribution, childhood, worldview, lane_b, institutions]
   - id: S2
+    type: secondary
+    kind: "institutional page"
+    author: "Tate"
+    citation: "'Study for The Shipwreck', c.1799–1805, in J.M.W. Turner: Sketchbooks, Drawings and Watercolours, Tate Research Publication. https://www.tate.org.uk/art/research-publications/jmw-turner/joseph-mallord-william-turner-study-for-the-shipwreck-r1178107"
+    url: "https://www.tate.org.uk/art/research-publications/jmw-turner/joseph-mallord-william-turner-study-for-the-shipwreck-r1178107"
+    accessed: 2026-10-19
+    reliability_note: "Museum catalogue entry, seen as a search excerpt; Tate's artwork page also titles the picture 'exhibited 1805'."
+    used_for: [basics, timing]
+  - id: S3
+    type: secondary
+    kind: "institutional page"
+    author: "Judy Egerton"
+    citation: "Egerton, Judy. 'Rain, Steam, and Speed – The Great Western Railway.' The British Paintings (National Gallery, 2000), online catalogue. https://www.nationalgallery.org.uk/paintings/catalogues/egerton-2000/rain-steam-and-speed-the-great-western-railway"
+    url: "https://www.nationalgallery.org.uk/paintings/catalogues/egerton-2000/rain-steam-and-speed-the-great-western-railway"
+    accessed: 2026-10-19
+    reliability_note: "Signed museum catalogue entry, seen as a search excerpt: 'Exhibited RA 1844 (62)'."
+    used_for: [contribution, timing]
+  - id: S4
     type: secondary
     kind: "database"
     author: "Neuresthetics Genius Study"
@@ -175,7 +194,7 @@ Not stated.
 
 ## Timing
 
-1805–1844, age 30 (0.5) [S1].
+1805–1844, age 30 [S1, S2, S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -187,4 +206,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-19: AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted.
 - 2026-10-19: Read Britannica (Butlin).
