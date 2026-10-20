@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): S3 page was read; author Keith Christiansen (October 2003). Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (RQ-Z7-N1, v8's call on the auditor's advice: artworks are dated by public unveiling or installation, P30 #1, as publication is for texts). The Contarelli canvases were unveiled in 1600 (Met Heilbrunn essay, S3: 'were unveiled in 1600, and established his reputation'), so the item year, first-lasting year and span are 1600; age 28 -> 29; era '1400 to 1599' -> '1600 to 1749' (edge year goes to the later bucket)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fix (Z5-30, P26/P13): question-box and caption 'lasting' cites removed. Read the signed body section 'Rome: 1599–1606': contract of 23 July 1599 for the Contarelli Chapel side canvases (The Calling and The Martyrdom of St. Matthew); 'The paintings for the Contarelli Chapel instantly established Caravaggio as the most dynamic and original painter working in Rome.' Lasting list is now the Contarelli canvases alone (1599–1600; caption date, range start under P12). Conversion of St. Paul and Entombment dropped from the lasting list (no body text calls them lasting). Span 1601–1604 -> 1599–1600; age 30 -> 28; era '1600 to 1749' -> '1400 to 1599'. Worldview unchanged (all UNKNOWN); not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 153). Source: Britannica (Andrew Graham-Dixon, signed; opening, 'Becoming Caravaggio', 'Tragic childhood' read). No own words on religion read; religious commissions are work, not profession (P16). Not a scientist. Span 1601–1604 at 0.5 (Conversion of St. Paul 1601; Entombment 1602–04, latest year P30 #4), from captions. primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -150,11 +151,11 @@ sources:
   - id: S3
     type: secondary
     kind: "other"
-    author: "Metropolitan Museum of Art (Heilbrunn Timeline of Art History)"
-    citation: "'Caravaggio (Michelangelo Merisi) (1571–1610) and His Followers.' Heilbrunn Timeline of Art History, The Metropolitan Museum of Art. Archived 2017-12-19: https://web.archive.org/web/20171219134404/http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm"
+    author: "Keith Christiansen"
+    citation: "Christiansen, Keith. 'Caravaggio (Michelangelo Merisi) (1571–1610) and His Followers.' October 2003. Heilbrunn Timeline of Art History, The Metropolitan Museum of Art. Archived 2017-12-19: https://web.archive.org/web/20171219134404/http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm"
     url: "https://web.archive.org/web/20171219134404/http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm"
     accessed: 2026-10-19
-    reliability_note: "Museum reference essay body (seen as a search excerpt of the archived page); dates the unveiling."
+    reliability_note: "Signed museum reference essay (Keith Christiansen, October 2003); the archived page was read (Z8 audit) and says the canvases 'were unveiled in 1600, and established his reputation'."
     used_for: [basics, contribution, worldview, timing]
 ---
 

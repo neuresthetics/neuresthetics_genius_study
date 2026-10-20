@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). RQ-Z8-2: a third party's web copy of a transcript is a secondary quotation (V3) unless checked; the lines were checked word for word against the Harry Ransom Center's own transcript in CONTENTdm (HRC_WAL0115), now S2, so PANT 0.5 and A 4 at 0.5 hold (P8, P20 cap). Quote cuts now [...]. Fallingwater item year 1935 -> 1937 (completion), S3 author Alicja Zelazko. Unity Temple 1906 is a start date: item year UNKNOWN. Span 1902–1937 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 168). Basics from Britannica (Edgar Kaufmann, signed) and Britannica 'Fallingwater'. Own words: The Mike Wallace Interview (1957, two parts; Harry Ransom Center video, read in a published transcription), after the span: 'I've always considered myself deeply religious'; 'my church I put a capital N on Nature and go there ... You spell God with a G ... I spell Nature with an N, capital'; 'I put a capital N on Nature, and call it my Church'. Not a scientist. primary_system PANT (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alts 3 and BELOW_THRESHOLD); B UNKNOWN (no statement on nature's order); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10; A ≥ 3 only at 0.5). Span 1902–1937, age 35. Not plotted (no B). Draft, not reviewed."}
 
 identity:
@@ -48,8 +49,8 @@ contribution:
   fields: {value: ["architecture"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Prairie style (W.W. Willits House, first masterwork)", year: 1902, kind: "method", lasting: "'His “Prairie style” became the basis of 20th-century residential design in the United States' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; The early Chicago years"}], how_known: "Britannica."}
-    - {value: "Unity Temple, Oak Park", year: 1906, kind: "work", lasting: "'achieved timeless monumentality' (S1)", certainty: 0.5, cites: [{source: S1, locator: "The early Chicago years"}], how_known: "Britannica: 'under way' 1906."}
-    - {value: "Fallingwater", year: 1935, kind: "work", lasting: "'became one of the most famous 20th-century buildings' (S3)", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "Britannica 'Fallingwater': designed 1935, completed 1937 (range; P12 start 1935, span end 1937 under P30 rule 4)."}
+    - {value: "Unity Temple, Oak Park", year: UNKNOWN, kind: "work", lasting: "'achieved timeless monumentality' (S1)", certainty: 0.5, cites: [{source: S1, locator: "The early Chicago years"}], how_known: "Britannica: 'under way' 1906, a start date, not a P30 #1 dating event (RQ-Z7-N1); no completion or dedication year read, so UNKNOWN. Span unaffected (starts 1902, ends 1937)."}
+    - {value: "Fallingwater", year: 1937, kind: "work", lasting: "'became one of the most famous 20th-century buildings' (S3)", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "Britannica 'Fallingwater': designed 1935, completed 1937 (range; P12 start 1935, span end 1937 under P30 rule 4)."}
   evidence_of_impact:
     - {value: "An abundantly creative master of American architecture", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
@@ -84,8 +85,8 @@ worldview:
     basis: recorded_interview
     certainty: 0.5
     cites: [{source: S2, locator: "Part 1, opening questions; Part 2"}]
-    how_known: "(interview) 1957, after the span (P20), so 0.5. Read in a blog transcription of the Ransom Center transcript (S2), not against the video."
-    rationale: "God named as Nature: 'You spell God with a G, don't you? ... I spell Nature with an N, capital'; 'I put a capital N on Nature, and call it my Church'; 'I've always considered myself deeply religious'. Alternative BELOW_THRESHOLD: a rhetorical line about churches and architecture rather than a doctrine."
+    how_known: "(interview) 1957, after the span (P20), so 0.5. Wording checked against the Harry Ransom Center's own transcript in its CONTENTdm digital collection (S2; RQ-Z8-2), so it is a primary recorded interview (P8, up to 0.7), capped at 0.5 after the span (P20)."
+    rationale: "God named as Nature: 'You spell God with a G, don't you? [...] I spell Nature with an N, capital'; 'I put a capital N on Nature, and call it my Church'; 'I've always considered myself deeply religious'. Alternative BELOW_THRESHOLD: a rhetorical line about churches and architecture rather than a doctrine."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: PANT, reason: "Coded: God spelled as Nature."}
@@ -102,12 +103,12 @@ worldview:
         - {value: 3, note: "'The Kingdom of God is within you' keeps a God beyond nature.", cites: [{source: S2, locator: "Part 2"}]}
         - {value: BELOW_THRESHOLD, note: "Rhetorical, not a locus view.", cites: [{source: S2, locator: "Part 1"}]}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30). 'Nature' in his words is a church and a design standard, not a claim about how events happen (P16, P19)."}
-    C_ledger: {value: UNKNOWN, how_known: "'Do you believe ... in your personal immortality? Yes ... when they put you into the box that's your immortality' (S2) is ambiguous between survival and legacy; not scored."}
+    C_ledger: {value: UNKNOWN, how_known: "'Do you believe [...] in your personal immortality? Yes [...] when they put you into the box that's your immortality' (S2) is ambiguous between survival and legacy; not scored."}
     D_authority: {value: UNKNOWN, how_known: "Not scored."}
     E_scope: {value: UNKNOWN, how_known: "Not scored."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is at least 3 only at 0.5; P10 caps mid_basin by the certainty of the tested condition, below the 0.7 bar, so BELOW_THRESHOLD (Z7 audit precedent)."}
   statements:
-    - text: "WALLACE: Are you a religious man yourself? WRIGHT: I've always considered myself deeply... religious. WALLACE: Do you go to any specific church? WRIGHT: Yes, I go occasionally to this one, and then sometimes to that one, but my church I put a capital N on Nature and go there. ... You spell God with a G, don't you? WALLACE: I spell God with a G, you will spell it with...? WRIGHT: I spell Nature with an N, capital."
+    - text: "WALLACE: Are you a religious man yourself? WRIGHT: I've always considered myself deeply... [...] ...religious. WALLACE: Do you go to any specific church? WRIGHT: Yes, I go occasionally to this one, and then sometimes to that one, but my church I put a capital N on Nature and go there. [...] You spell God with a G, don't you? WALLACE: I spell God with a G, you will spell it with...? WRIGHT: I spell Nature with an N, capital."
       cites: [{source: S2, locator: "Part 1, opening questions"}]
       date: "1957-09"
       context: "The Mike Wallace Interview; after the span."
@@ -152,7 +153,7 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 168"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Own words from a 1957 TV interview after the span, read in a blog transcription."
+    - "Own words from a 1957 TV interview after the span, checked against the Ransom Center transcript."
   open_questions:
     - "Ransom Center video check; A Testament; An Autobiography."
 
@@ -170,16 +171,16 @@ sources:
     type: primary
     kind: "other"
     author: "Frank Lloyd Wright, interviewed by Mike Wallace"
-    citation: "The Mike Wallace Interview: Frank Lloyd Wright (1 and 28 September 1957), Harry Ransom Center; transcript posted by Usamah Husseini. https://husseini.posthaven.com/radical-frank-lloyd-wright-interviewed-by-mike-wallace"
-    url: "https://husseini.posthaven.com/radical-frank-lloyd-wright-interviewed-by-mike-wallace"
+    citation: "Interview with Frank Lloyd Wright. The Mike Wallace Interview (1 and 28 September 1957), Harry Ransom Center, University of Texas at Austin, HRC_WAL0115, transcript in the CONTENTdm digital collection. https://hrc.contentdm.oclc.org/digital/collection/p15878coll90/id/81 (earlier read in Usamah Husseini's web copy, https://husseini.posthaven.com/radical-frank-lloyd-wright-interviewed-by-mike-wallace)"
+    url: "https://hrc.contentdm.oclc.org/digital/collection/p15878coll90/id/81"
     accessed: 2026-10-19
-    reliability_note: "Recorded TV interview (recorded_interview, P8); transcription by a third party from the Ransom Center transcript, with his corrections."
+    reliability_note: "Recorded TV interview (recorded_interview, P8). The quoted lines were checked word for word against the institution's own transcript (HRC CONTENTdm item 81, fetched 2026-10-19), not only the third-party web copy (RQ-Z8-2). Video not viewed."
     used_for: [worldview]
   - id: S3
     type: tertiary
     kind: "encyclopedia"
-    author: "Britannica Editors"
-    citation: "'Fallingwater.' Encyclopaedia Britannica (Scholars edition). https://kids.britannica.com/scholars/article/Fallingwater/629390"
+    author: "Alicja Zelazko"
+    citation: "Zelazko, Alicja. 'Fallingwater.' Encyclopaedia Britannica (Scholars edition). https://kids.britannica.com/scholars/article/Fallingwater/629390"
     url: "https://kids.britannica.com/scholars/article/Fallingwater/629390"
     accessed: 2026-10-19
     reliability_note: "Topic article body (seen as a search excerpt); not a question box."
@@ -233,4 +234,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
-- 2026-10-19: Read Britannica (Kaufmann), Britannica 'Fallingwater', Wallace interview transcription.
+- 2026-10-19: Read Britannica (Kaufmann), Britannica 'Fallingwater', Wallace interview transcription; 2026-10-19 (Z8 fixes): checked against the HRC CONTENTdm transcript.

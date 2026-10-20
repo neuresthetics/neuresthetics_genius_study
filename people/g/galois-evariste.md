@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): 1832 Chevalier letter added as a non-scoring lead in coder_notes. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 166). Source: MacTutor biography (O'Connor and Robertson, signed). No own words on religion found; MacTutor says his mother taught him religion and 'imparted her own scepticism to her son' (the biographers' words, not his). Not a scientist (pure algebra; Knuth, Tao, Noether-algebra precedents; P30). primary_system UNKNOWN (lead AGNOS from the mother's scepticism); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1829–1832, age 18. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -89,7 +90,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Dupuy (1896) and the Bourgne–Azra Écrits et mémoires may report deathbed words or letters on religion; not read."
+  coder_notes: "Non-scoring lead (Z8 audit): his letter to Auguste Chevalier of 25 May 1832 (printed in Dupuy 1896) rejects Chevalier's efforts 'to convert' him to Saint-Simonism; not a statement about God, so not scored. His refusal of a priest at his death is reported speech. Dupuy (1896) and the Bourgne–Azra Écrits et mémoires may report deathbed words or letters on religion; not read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

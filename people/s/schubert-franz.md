@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). CHRIST 0.5 -> BELOW_THRESHOLD, lead CHRIST: one private letter, no backing scholar found (§3). S2 verified_against 'primary facsimile' -> 'scholarly edition' (Deutsch 1914 edited text). Symphony No. 9 (1828) had no in-life premiere or publication and no lasting source, so it moves to major_works (year UNKNOWN); span 1814–1828 -> 1814 (latest supported lasting work, Gretchen am Spinnrade). Age 17 unchanged. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 169). Basics from Britannica (Maurice J. E. Brown, signed). Own words: letter to his father and stepmother, Steyr, 25 July 1825 (Deutsch, Die Dokumente seines Lebens und Schaffens II/1, 1914, no. 593, pp. 264–265; archive.org OCR of the Fraktur), within the span: wonder at 'meine Frömmigkeit' in the hymn to the Virgin (Ave Maria); he never 'forces' devotion, and composes such hymns only when 'unwillkürlich übermannt', 'dann aber ist sie auch gewöhnlich die rechte und wahre Andacht'; 'der Allmächtige sei gepriesen'. One private letter. Not a scientist. primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD (set phrase, no locus view); B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1814–1828, age 17. Not plotted. Draft, not reviewed."}
 
 identity:
@@ -47,10 +48,10 @@ contribution:
   fields: {value: ["music", "lied", "chamber music"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The German lied ('Gretchen am Spinnrade')", year: 1814, kind: "work", lasting: "'in this masterpiece he created at one stroke the German lied (art song)' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}
-    - {value: "Symphony No. 9 in C Major (The Great)", year: 1828, kind: "work", lasting: "named among his works in the opening (S1); lastingness the coder's call", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica: 1828 (begun 1825); span end 0.5."}
   evidence_of_impact:
     - {value: "Bridged the worlds of Classical and Romantic music", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   major_works:
+    - {value: "Symphony No. 9 in C Major (The Great)", year: UNKNOWN, kind: "composition", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica: 1828 (begun 1825), a completion date; no premiere or publication in his lifetime (P30 #1) and no source calling it lasting (P13), so not a lasting contribution and not the span end (Z8 audit)."}
     - {value: "Symphony in B Minor (Unfinished)", year: 1822, kind: "composition", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
     - {value: "Mass in C major", year: 1816, kind: "composition", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}
   honours: []
@@ -75,19 +76,13 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1814–1828", certainty: 0.5, cites: [{source: S1, locator: "Early life and career; opening"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1814", certainty: 0.5, cites: [{source: S1, locator: "Early life and career; opening"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: 
-    value: CHRIST
-    basis: consistent_private_letters
-    certainty: 0.5
-    cites: [{source: S2, locator: "no. 593, pp. 264–265"}]
-    how_known: "One private letter (25 July 1825), within the span; a single letter, so 0.5 (below the 0.7 ceiling for consistent letters)."
-    rationale: "Speaks of 'meine Frömmigkeit' and 'die rechte und wahre Andacht' in his hymn to the Virgin, and praises 'der Allmächtige'. Catholic setting (court chapel choir; masses). Alternative BELOW_THRESHOLD: conventional piety in a family letter, no stated doctrine."
+  primary_system: {value: BELOW_THRESHOLD, how_known: "One private letter (25 July 1825; S2, no. 593, pp. 264–265) speaks of 'meine Frömmigkeit', 'die rechte und wahre Andacht' and 'der Allmächtige'. A single private letter with no scholar's backing cannot score (§3; Z8 audit, v8's call), so BELOW_THRESHOLD. Lead CHRIST (Catholic setting: court chapel choir, masses)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Coded at 0.5: devotion in his own words."}
+    - {code: CHRIST, reason: "Lead: devotion in one private letter; no backing scholar found (§3)."}
     - {code: DEISM, reason: "Not supported: no statement against revelation read."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "'der Allmächtige sei gepriesen' (S2) is a set phrase of thanks; no locus view stated (P20)."}
@@ -103,7 +98,7 @@ worldview:
       context: "Letter to his father and stepmother from Steyr; within the span."
       axes: [A_locus]
       kind: "private letter"
-      verified_against: "primary facsimile"
+      verified_against: "scholarly edition"
       verified_on: 2026-10-19
       note: "Reconstructed from the archive.org OCR of the 1914 Fraktur printing; the page image was not viewed."
   changes_over_life: []
@@ -118,7 +113,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1814–1828", certainty: 0.5, cites: [{source: S1, locator: "Early life and career; opening"}], how_known: "Gretchen am Spinnrade (1814) to Symphony No. 9 (1828); end the coder's call (P29, P30)."}
+  major_work_period: {value: "1814", certainty: 0.5, cites: [{source: S1, locator: "Early life and career; opening"}], how_known: "Gretchen am Spinnrade (1814) is the only supported lasting work; the 1828 end had no dating event or lasting source (Z8 audit; P13, P30 #1), so the span is the latest supported lasting work, 1814 (P29)."}
   age_at_first_lasting_contribution: {value: 17, certainty: 0.7, cites: [{source: S1, locator: "opening; Early life and career"}], how_known: "1814 − 1797 = 17 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
@@ -177,7 +172,7 @@ sources:
 
 ## Summary
 
-Franz Schubert (1797–1828), composer [S1]. Draft: CHRIST (0.5); A BELOW_THRESHOLD; B UNKNOWN. Not plotted.
+Franz Schubert (1797–1828), composer [S1]. Primary BELOW_THRESHOLD (lead CHRIST); A BELOW_THRESHOLD; B UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -201,7 +196,7 @@ Not stated.
 
 ## Timing
 
-1814–1828, age 17 [S1].
+1814, age 17 [S1].
 
 ## Lane B notes (labeled belief model)
 
