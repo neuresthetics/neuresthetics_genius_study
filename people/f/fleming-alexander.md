@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit note: S5 now cites the PMC record (PMCID PMC2048009; the 1929 article has no PMID or DOI in PubMed Central; the 2001 WHO Bulletin reprint is PMID 11545337) instead of a search link. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-42 (FAIL): primary_system and A_locus BELOW_THRESHOLD -> UNKNOWN (V3, as Kurosawa), keeping CHRIST and the Oklahoma story as leads; mid_basin -> UNKNOWN. Z2-44: span re-dated by first publications (P30 #1): 1922 (lysozyme, Proc. R. Soc. B) to 1929 (penicillin, Br. J. Exp. Pathol.), age 41; S4 and S5 added. Maurois citation gives the 1963 Penguin edition scanned. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 143). Basics from Britannica (Kevin Brown, signed). Religion from Maurois's Life (trans. Hopkins, 1959; Penguin scan on archive.org): 'the young Scot, who never spoke about religion' (ch. 4); the remark 'I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming' is a story 'current in Oklahoma' that 'he is said to have' made, and Maurois only infers it is 'probably true' (ch. 16): reported speech at second hand, below threshold. The ch. 9 epigraph 'God took care to hide that country ...' is Maurois's epigraph (coder's identification: Kipling's 'The Explorer'), not Fleming's words; the 'finger of God' line is from Pannett's funeral oration (Epilogue). A scientist (P30). Span 1921–1928. primary_system BELOW_THRESHOLD (lead: Presbyterian upbringing); A BELOW_THRESHOLD; B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
@@ -189,8 +190,8 @@ sources:
     type: primary
     kind: "journal article"
     author: "Alexander Fleming"
-    citation: "Fleming, Alexander. \"On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae.\" British Journal of Experimental Pathology 10 (1929): 226–236."
-    url: "https://pubmed.ncbi.nlm.nih.gov/?term=Fleming+1929+antibacterial+action+penicillium"
+    citation: "Fleming, Alexander. \"On the antibacterial action of cultures of a Penicillium, with special reference to their use in the isolation of B. influenzae.\" British Journal of Experimental Pathology 10 (1929): 226–236. PMCID: PMC2048009."
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2048009/"
     accessed: 2026-10-19
     reliability_note: "Bibliographic details only (year of first publication); not read."
     used_for: [contribution, timing]

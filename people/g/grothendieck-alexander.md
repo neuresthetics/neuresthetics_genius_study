@@ -9,6 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit fixes (blind audit /workspace/genius_study_audit/gs_0b45e66_Z3/run1/): Z3-13: labels made to agree with an unpublished typescript: statements stay 'unpublished manuscript', basis of primary_system, A and B now consistent_private_letters (private ceiling 0.7; certainty 0.5 unchanged), S2 kind now other. Esquisse d'un programme dated 1984, not 1983. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 144). Basics from MacTutor (O'Connor and Robertson). Own voice: La Clef des songes (1987; typescript transcribed by Mateo Carmona), his retrospective of his relation to God: atheist parents; in March 1944, aged nearly 16, he accepted 'cette Intelligence souveraine, infinie, créatrice de la Vie et ... de l'Univers tout entier, et des lois qui le régissent' and called himself 'déiste' (§§30–31), a view held 'ma vie durant' without doubt; he saw 'aucun signe d'une intervention de Dieu dans le présent' but an Intelligence that 'intervient' at each great evolutionary leap (§30). Span 1953–1970 (end at 0.5), age 25. primary_system DEISM (0.5, alt BELOW_THRESHOLD); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
 identity:
@@ -87,7 +88,7 @@ worldview:
   self_described_science_religion_relation: {value: "Mathematical laws are 'part of the very nature of God', accessible to reason alone (1987)", certainty: 0.5, cites: [{source: S2, locator: "§31, note 72"}], how_known: "His own words, after the span."}
   primary_system:
     value: DEISM
-    basis: written_profession
+    basis: consistent_private_letters
     certainty: 0.5
     cites: [{source: S2, locator: "§§30–31"}]
     how_known: "'Alors que je me disais “athée” jusque-là, me voilà donc soudain changé de catégorie - dorénavant, je me dirai “déiste” !' (1944, as told in 1987); a Creator known by reason from the evolution of life, 'très loin du Dieu de la Promesse et de la Rétribution dont parle l'Ancien Testament'; the knowledge held 'ma vie durant'. Retrospective written 17 years after the span (P20), so 0.5."
@@ -100,7 +101,7 @@ worldview:
   lio_axes:
     A_locus:
       value: 1
-      basis: written_profession
+      basis: consistent_private_letters
       certainty: 0.5
       cites: [{source: S2, locator: "§31"}]
       how_known: "'cette Intelligence souveraine, infinie, créatrice de la Vie et (cela allait alors de soi) créatrice aussi de l'Univers tout entier, et des lois qui le régissent' (§31). Retrospective (P20), 0.5."
@@ -109,7 +110,7 @@ worldview:
         - {value: 0, note: "A personal creator with a Design.", cites: [{source: S2, locator: "§30"}]}
     B_cause:
       value: 3
-      basis: written_profession
+      basis: consistent_private_letters
       certainty: 0.5
       cites: [{source: S2, locator: "§§30–31"}]
       how_known: "The Creator made the laws (§31) and he saw 'aucun signe d'une intervention de Dieu dans le présent' (§31); but the same Intelligence 'intervient de façon irrécusable, pour le moins, lors de chacun des grands “sauts” qualitatifs' of evolution (§30). Retrospective, 0.5."
@@ -141,7 +142,7 @@ worldview:
       note: "As above."
   changes_over_life:
     - {value: "Atheist upbringing; deist from 1944; mystical theism from 1976 (meditation, dreams: 'Dieu est le Rêveur')", certainty: 0.5, cites: [{source: S2, locator: "§§17, 27, 31"}], how_known: "His own retrospective."}
-  coder_notes: "Span end 1970 (IHES body of work) at 0.5; Esquisse d'un programme (1983) is a later candidate (MacTutor lists it as a manuscript), which would put the post-1976 theism inside the span; flagged, not applied."
+  coder_notes: "Span end 1970 (IHES body of work) at 0.5; Esquisse d'un programme (1984) is a later candidate (MacTutor lists it as a manuscript), which would put the post-1976 theism inside the span; flagged, not applied."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -180,7 +181,7 @@ review:
   data_quality_flags:
     - "Worldview for the span known only from a 1987 retrospective."
   open_questions:
-    - "Span end (1970 or 1983)."
+    - "Span end (1970 or 1984)."
 
 sources:
   - id: S1
@@ -194,12 +195,12 @@ sources:
     used_for: [identity, basics, contribution, childhood, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: primary
-    kind: "published work by the subject"
+    kind: other
     author: "Alexandre Grothendieck"
     citation: "Grothendieck, Alexandre. La Clef des songes, ou Dialogue avec le bon Dieu (typescript, 1987). Provisional transcription ed. Mateo Carmona. https://geotoppos.org/divers/clef.pdf"
     url: "https://geotoppos.org/divers/clef.pdf"
     accessed: 2026-10-19
-    reliability_note: "His own text, circulated in typescript; cited by section number."
+    reliability_note: "His own unpublished typescript (a private text; private ceiling, CODING_GUIDE P18/P28), in a provisional transcription; cited by section number."
     used_for: [childhood, worldview, heritage, timing, lane_b]
   - id: S3
     type: secondary

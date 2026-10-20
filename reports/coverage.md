@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 1705 | 1647 | 0 | 58 | 0 | 96.6% |
 | contribution | 1311 | 1310 | 0 | 1 | 0 | 99.9% |
 | childhood | 1680 | 1145 | 418 | 116 | 1 | 68.2% |
-| worldview | 1685 | 721 | 7 | 672 | 285 | 42.8% |
+| worldview | 1685 | 718 | 7 | 676 | 284 | 42.6% |
 | heritage | 620 | 264 | 273 | 82 | 1 | 42.6% |
 | timing | 775 | 568 | 43 | 158 | 6 | 73.3% |
 | lane_b | 465 | 458 | 3 | 4 | 0 | 98.5% |
 | institutions | 343 | 343 | 0 | 0 | 0 | 100.0% |
 | collaborators | 435 | 435 | 0 | 0 | 0 | 100.0% |
 | review | 222 | 222 | 0 | 0 | 0 | 100.0% |
-| **all** | 9551 | 7365 | 752 | 1141 | 293 | 77.1% |
+| **all** | 9551 | 7362 | 752 | 1145 | 292 | 77.1% |
 
 ### Worldview coding status
 
@@ -224,7 +224,7 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | von-neumann-john | BELOW_THRESHOLD | draft — unreviewed |
 | wagner-richard | BELOW_THRESHOLD | draft — unreviewed |
 | watson-james | ATHE | draft — unreviewed |
-| whitehead-alfred-north | PANENT | draft — unreviewed |
+| whitehead-alfred-north | BELOW_THRESHOLD | draft — unreviewed |
 | wiles-andrew | UNKNOWN (interview) | draft — unreviewed |
 | wittgenstein-ludwig | BELOW_THRESHOLD | draft — unreviewed |
 | woolf-virginia | ATHE | draft — unreviewed |
