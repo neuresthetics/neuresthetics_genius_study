@@ -118,7 +118,8 @@ worldview:
       note: "Acosmic reading: the A 4 lead."
     - text: "I call myself a Sanatani Hindu, because, 1. I believe in the Vedas, the Upanishads, the Puranas and all that goes by the name of Hindu scriptures, and therefore in Avataras and rebirth;"
       cites: [{source: S4, locator: "Why I Am A Hindu"}]
-      context: "Young India; the Truth Is God anthology dates it 6 October 1921 (other copies give 10 June 1921); date not verified in CWMG, so left undated here; after the span."
+      date: "1921"
+      context: "Young India, 1921 (both copies agree on the year). Day disputed: the Truth Is God anthology gives 6 October 1921, other copies 10 June 1921; not verified in CWMG (P12, AA7 audit). After the span."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "unofficial web copy"

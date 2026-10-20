@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 206, provisional). Sources: the IMU's 2014 Fields Medal statement 'The Work of Maryam Mirzakhani' (read in full) and the Simons Foundation obituary (Sumner, 2017, read in full). Lasting work: her thesis results on simple closed geodesics and Weil–Petersson volumes (PhD Harvard 2004), whose papers 'marked a decisive step forward for the field' (S2) and gave 'a new and unexpected proof' of Witten's conjecture (S1); and the Eskin–Mirzakhani rigidity theorem (arXiv preprint 2013), 'a major breakthrough' (S1). Neither source uses lasting language as strong as 'classic' or 'foundational'; both items at 0.5 (P13 question for the auditor). Span 2004–2013 at 0.5, age 27. Mathematician, not a scientist. Worldview: no own words read. primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 206, provisional). Sources: the IMU's 2014 Fields Medal statement 'The Work of Maryam Mirzakhani' (read in full) and the Simons Foundation obituary (Sumner, 2017, read in full). Lasting work (after the AA7 audit, v8's call on the auditor's advice): the Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems (arXiv preprints 2013); the ICM 2022 survey by Jon Chaika and Barak Weiss (S4, EMS Press, read in full; authors and wording verified) says 'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry'. The 2004 thesis results are dropped as lasting (P13, Lamarr/Johnson precedent: 'decisive step forward' and 'new and unexpected proof' are prize-time praise) and kept as a major work. Span 2013, age 36, at 0.5. Mathematician, not a scientist. Worldview: no own words read. primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: mirzakhani-maryam
@@ -35,8 +35,8 @@ basics:
   death:
     date: {value: "2017-07-14", certainty: 0.7, cites: [{source: S2, locator: "para. 2"}], how_known: "Simons Foundation."}
     place: {value: UNKNOWN, how_known: "Place of death not stated in the sources read."}
-  first_lasting_contribution_year: {value: 2004, certainty: 0.5, cites: [{source: S1, locator: "Biography"}, {source: S2, locator: "para. 3"}], how_known: "Harvard PhD thesis, 2004 (S1), a formal submission (P30); its three papers (2007–08, S1 references) 'marked a decisive step forward' (S2). 0.5: no source calls the results lasting in so many words (P13)."}
-  era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "Biography"}], how_known: "2004 (P2); every candidate year is after 1950."}
+  first_lasting_contribution_year: {value: 2013, certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2"}], how_known: "Eskin–Mirzakhani preprint arXiv:1302.3320 (2013), the first public statement (P30); lasting per S4 ('has revolutionized the study of dynamics on translation surfaces'). 0.5: one lasting source."}
+  era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "Biography"}], how_known: "2013 (P2)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Iran (P3 exception: MENA)."}
   region_of_work: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "Harvard, Princeton, Stanford; home-region alternative MENA (AA6 rule)."}
   sex_as_recorded: {value: "female", certainty: 0.7, cites: [{source: S2, locator: "text"}], how_known: "As recorded."}
@@ -46,11 +46,11 @@ basics:
 contribution:
   fields: {value: ["mathematics", "geometry", "dynamical systems"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "IMU."}
   lasting_original_contributions:
-    - {value: "Simple closed geodesics and Weil–Petersson volumes of moduli spaces (counting theorem; new proof of Witten's conjecture)", year: 2004, kind: "discovery", lasting: "thesis papers 'marked a decisive step forward for the field' (S2); 'a new and unexpected proof' of Witten's conjecture (S1)", certainty: 0.5, cites: [{source: S1, locator: "pp. 2–3; Biography"}, {source: S2, locator: "para. 3"}], how_known: "PhD 2004 (S1); papers in Inventiones and JAMS 2007, Annals 2008 (S1 references). 0.5 under P13: strong praise, not lasting language."}
-    - {value: "Eskin–Mirzakhani rigidity theorem for the SL2(R) action on moduli space (with Alex Eskin)", year: 2013, kind: "discovery", lasting: "'a major breakthrough'; 'This work has garnered accolades among researchers in the area, who are working to extend and build on the new result' (S1)", certainty: 0.5, cites: [{source: S1, locator: "p. 3; References"}], how_known: "arXiv preprint 1302.3320 (2013), the first public statement (P30). 0.5 under P13."}
+    - {value: "Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems: rigidity of the SL2(R) action on moduli space (with Alex Eskin and Amir Mohammadi)", year: 2013, kind: "discovery", lasting: "'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry' (S4, Chaika and Weiss, ICM 2022); 'a major breakthrough' (S1)", certainty: 0.5, cites: [{source: S1, locator: "p. 3; References"}, {source: S4, locator: "§2"}], how_known: "arXiv preprints 1302.3320 and 1305.3015 (2013), the first public statements (P30). 0.5: one lasting source."}
   evidence_of_impact:
     - {value: "Fields Medal 2014, the first woman to receive it", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S2, locator: "para. 1"}], how_known: "Simons Foundation."}
   major_works:
+    - {value: "PhD thesis, Harvard (simple closed geodesics; Weil–Petersson volumes; new proof of Witten's conjecture)", year: 2004, kind: "other", certainty: 0.7, cites: [{source: S1, locator: "pp. 2–3; Biography"}], how_known: "IMU; not lasting under P13 (AA7 audit)."}
     - {value: "'Growth of the number of simple closed geodesics on hyperbolic surfaces', Annals of Mathematics", year: 2008, kind: "paper or paper series", certainty: 0.7, cites: [{source: S1, locator: "References"}], how_known: "IMU."}
     - {value: "'Ergodic theory of the earthquake flow'", year: 2008, kind: "paper or paper series", certainty: 0.7, cites: [{source: S1, locator: "References"}], how_known: "IMU."}
   honours:
@@ -76,7 +76,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "2004–2013", certainty: 0.5, cites: [{source: S1, locator: "Biography; References"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "2013", certainty: 0.5, cites: [{source: S1, locator: "Biography; References"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
   primary_system: {value: UNKNOWN, how_known: "No own words on belief read."}
@@ -102,8 +102,8 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "2004–2013", certainty: 0.5, cites: [{source: S1, locator: "Biography; References"}], how_known: "Thesis (2004) to the Eskin–Mirzakhani preprint (2013), the two listed lasting items (P29, P30); 0.5, following the weakest lasting item."}
-  age_at_first_lasting_contribution: {value: 27, certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "2004 − 1977 = 27 (P30 year difference)."}
+  major_work_period: {value: "2013", certainty: 0.5, cites: [{source: S1, locator: "References"}, {source: S4, locator: "§2"}], how_known: "The one listed lasting item (P29, P30); 0.5."}
+  age_at_first_lasting_contribution: {value: 36, certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "2013 − 1977 = 36 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "None."}
   lio_views_relative_to_major_work: {value: UNKNOWN, how_known: "None."}
   worldview_during_major_work: {value: UNKNOWN, how_known: "None."}
@@ -128,9 +128,9 @@ review:
   controversies: []
   data_quality_flags:
     - "Worldview: no source."
-    - "Lasting language weak (P13); span at 0.5."
+    - "One lasting source (S4); span at 0.5."
   open_questions:
-    - "Is 'decisive step forward' / 'major breakthrough' lasting enough (P13)?"
+    - "A lasting source for the 2004 thesis results would restore 2004 (age 27) as an alternative."
 
 sources:
   - id: S1
@@ -160,6 +160,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: secondary
+    kind: "book chapter"
+    author: "Jon Chaika; Barak Weiss"
+    citation: "Chaika, Jon, and Barak Weiss. 'The horocycle flow on the moduli space of translation surfaces.' Proceedings of the International Congress of Mathematicians 2022, vol. 5, pp. 3412–3430. EMS Press. doi:10.4171/ICM2022/89"
+    url: "https://ems.press/books/standalone/277/5520"
+    accessed: 2026-10-19
+    reliability_note: "Open-access survey, read in full; authors and wording verified."
+    used_for: [basics, contribution, timing]
 ---
 
 ## Summary
@@ -172,7 +181,7 @@ Tehran; Harvard; Princeton; Stanford [S1, S2].
 
 ## Contribution and impact
 
-Moduli-space geometry 2004; Eskin–Mirzakhani 2013 [S1].
+Eskin–Mirzakhani 2013 [S1, S4].
 
 ## Childhood and education
 
@@ -188,7 +197,7 @@ Not stated.
 
 ## Timing
 
-2004–2013 (0.5), age 27 [S1].
+2013 (0.5), age 36 [S1, S4].
 
 ## Lane B notes (labeled belief model)
 
@@ -196,7 +205,7 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- P13 lasting language.
+- Lasting source for the thesis.
 
 ## Research log
 

@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 208). Source: Britannica, signed by René Huyghe (scholars edition, read in full). Lasting work: the last Bathers (1900–05), 'groundbreaking', which clearly inspired Picasso's Les Demoiselles d'Avignon (1907); his approach 'laid the foundation for Picasso and other artists' subsequent explorations with Cubism' (S1). Not exhibited in his life (the 1907 retrospective was posthumous), so dated by the last documented act, completion 1905 (posthumous rule), at 0.5; alternatives 1906 (death) and 1907 (first showing). Span 1905, age 66. 'Most significant precursor of 20th-century formal abstraction' is body-of-work praise, undated, not used to extend the span. Worldview: no own words on belief read. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 208). Source: Britannica, signed by René Huyghe (scholars edition, read in full). Lasting work: the last Bathers (1900–05), 'groundbreaking'; identified as Bathers (Les Grandes Baigneuses), National Gallery, London, NG6359, which the Gallery says 'was finished in 1905' and calls 'hugely influential on early twentieth-century modern art, particularly Cubism' (S3; the Barnes and Philadelphia versions run to 1906), which clearly inspired Picasso's Les Demoiselles d'Avignon (1907); his approach 'laid the foundation for Picasso and other artists' subsequent explorations with Cubism' (S1). Not exhibited in his life (the 1907 retrospective was posthumous), so dated by the last documented act, completion 1905 (posthumous rule), at 0.5; alternatives 1906 (death) and 1907 (first showing). Span 1905, age 66. 'Most significant precursor of 20th-century formal abstraction' is body-of-work praise, undated, not used to extend the span. Worldview: no own words on belief read. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: cezanne-paul
@@ -36,7 +36,7 @@ basics:
   death:
     date: {value: "1906-10-22", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
     place: {value: "Aix-en-Provence", modern_name: "Aix-en-Provence, France", polity_then: "France", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
-  first_lasting_contribution_year: {value: 1905, certainty: 0.5, cites: [{source: S1, locator: "Final years; Legacy"}], how_known: "Last Bathers (1900–05), not shown in his life; dated by completion, 1905 (posthumous rule). Alternatives 1906 (death year) and 1907 (Salon d'Automne retrospective)."}
+  first_lasting_contribution_year: {value: 1905, certainty: 0.5, cites: [{source: S1, locator: "Final years; Legacy"}, {source: S3, locator: "Overview"}], how_known: "Bathers NG6359, 'finished in 1905' (S3), not shown in his life; dated by completion (posthumous rule). Alternatives 1906 (death year) and 1907 (Salon d'Automne retrospective)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Final years"}], how_known: "1905 and each alternative (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "France (P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Final years"}], how_known: "Aix-en-Provence."}
@@ -47,7 +47,7 @@ basics:
 contribution:
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
-    - {value: "The last Bathers series (1900–05)", year: 1905, kind: "work", lasting: "'Picasso created his seminal Les Demoiselles d'Avignon ... clearly inspired by Cézanne's groundbreaking Bathers of 1900–05'; his approach 'laid the foundation for ... Cubism' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Final years; Legacy"}], how_known: "Britannica; dated by completion (posthumous rule), alternatives 1906 and 1907."}
+    - {value: "Bathers (Les Grandes Baigneuses), National Gallery, London, NG6359", year: 1905, kind: "work", lasting: "'Picasso created his seminal Les Demoiselles d'Avignon ... clearly inspired by Cézanne's groundbreaking Bathers of 1900–05'; his approach 'laid the foundation for ... Cubism' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Final years; Legacy"}, {source: S3, locator: "Overview"}], how_known: "Britannica; National Gallery: 'may date from 1898–9 and was finished in 1905'; 'had a lasting impact on Picasso and Matisse' (S3). Dated by completion (posthumous rule), alternatives 1906 and 1907."}
   evidence_of_impact:
     - {value: "Picasso: 'the father of us all'", kind: "assessment by a later major figure", certainty: 0.7, cites: [{source: S1, locator: "Legacy"}], how_known: "Britannica."}
     - {value: "'the most significant precursor of 20th-century formal abstraction in painting'", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S1, locator: "Legacy"}], how_known: "Britannica."}
@@ -149,6 +149,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "institutional page"
+    author: "The National Gallery, London"
+    citation: "'Paul Cezanne, Bathers (Les Grandes Baigneuses), about 1894–1905.' National Gallery, London, NG6359. https://www.nationalgallery.org.uk/paintings/paul-cezanne-bathers-les-grandes-baigneuses"
+    url: "https://www.nationalgallery.org.uk/paintings/paul-cezanne-bathers-les-grandes-baigneuses"
+    accessed: 2026-10-19
+    reliability_note: "Holder of the painting; collection page read."
+    used_for: [basics, contribution, timing]
 ---
 
 ## Summary

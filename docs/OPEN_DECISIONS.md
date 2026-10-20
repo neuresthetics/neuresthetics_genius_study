@@ -879,6 +879,11 @@ Process:
   - **Minsky is not a scientist** (McCarthy precedent, RQ-AA3-1): frames and the Society of Mind make no testable empirical claim about organisms. B stays UNKNOWN; a source showing such tests would reopen this.
   - **Region of work follows where the span took place**, with the home region as the alternative (Gandhi: Sub-Saharan Africa at 0.5 for the 1906 Johannesburg span, alternative South Asia).
   - Mies first-lasting year 1921 at 0.5 (MoMA; alternatives 1919, Britannica, and 1922, competition deadline), age 35, span 1921–1929 at 0.5. Gandhi Introduction dated 26 November 1925. Minsky Frames cited to MIT AI Memo 306 (1 June 1974) at 0.7; span 1959–1985 stays 0.7.
+- **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AA7 audit at 2e50682):**
+  - **P13 (Lamarr/Johnson precedent) applied to Mirzakhani:** prize-time praise ('decisive step forward', 'new and unexpected proof') is not a lasting claim, so the 2004 thesis results are not a lasting item. The 2013 Eskin–Mirzakhani(–Mohammadi) work is lasting on the ICM 2022 survey by Chaika and Weiss ('has revolutionized the study of dynamics on translation surfaces'; authors and wording verified): span 2013, age 36, at 0.5.
+  - **P39 strict applied to Parmenides:** era UNKNOWN with -500 to 499 as the candidate, because Diogenes Laertius 9.23 (floruit in the 69th Olympiad, 504–501 BCE; birth about 540 BCE) competes with Plato's chronology (born about 515 BCE).
+  - **P12 applied to Gandhi:** a statement whose year is agreed but whose day is disputed is dated at year level ('1921'), with the dispute in context.
+  - Shelley change_log age corrected to 21 ('only 20' kept as a note). Cézanne's lasting Bathers identified as National Gallery NG6359, finished 1905.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**

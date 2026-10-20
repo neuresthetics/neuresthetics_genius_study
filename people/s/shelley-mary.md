@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 205). Source: Britannica, signed by René Ostberg and Kathleen Kuiper (scholars edition, read in full). Lasting work: Frankenstein; or, The Modern Prometheus (January 1818), 'a seminal work of Romanticism and a Gothic horror classic that is also considered to be one of the first science-fiction novels'; its 'subsequent influence on literature and popular culture cannot be overstated' (S1). Span 1818, age 20. Worldview: no own words on belief read; daughter of the radical philosopher William Godwin and Mary Wollstonecraft (S1); her husband was expelled from Oxford over a pamphlet 'endorsing atheism' (S1), a fact about him, not her. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 205). Source: Britannica, signed by René Ostberg and Kathleen Kuiper (scholars edition, read in full). Lasting work: Frankenstein; or, The Modern Prometheus (January 1818), 'a seminal work of Romanticism and a Gothic horror classic that is also considered to be one of the first science-fiction novels'; its 'subsequent influence on literature and popular culture cannot be overstated' (S1). Span 1818, age 21 (P30 year difference; S1's 'Only 20 years old' at publication is her exact age, kept as a note). Worldview: no own words on belief read; daughter of the radical philosopher William Godwin and Mary Wollstonecraft (S1); her husband was expelled from Oxford over a pamphlet 'endorsing atheism' (S1), a fact about him, not her. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: shelley-mary
@@ -91,7 +91,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Read The Journals of Mary Shelley (Feldman and Scott-Kilvert, 1987) or Selected Letters (Bennett, 1995) for own words."
+  coder_notes: "Age: 21 by P30 year difference (1818 − 1797); S1 says she was 'Only 20 years old' at publication in January 1818, her exact age before her August birthday (AA7 audit). Read The Journals of Mary Shelley (Feldman and Scott-Kilvert, 1987) or Selected Letters (Bennett, 1995) for own words."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"

@@ -9,7 +9,7 @@ record:
   collected_on: 2026-10-19
   last_updated: 2026-10-19
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 207). Sources: SEP 'Parmenides' (John Palmer, read in full) and Britannica 'Eleaticism' (signed by Starkey and Calogero, scholars edition, read in part). Born about 515 BCE, inferred from Plato's Parmenides (S1); 'active during the early to mid-fifth century BCE' (S1). Lasting work: the poem On Nature, 'founder of metaphysics or ontology' (S1); undated, so first-lasting year, span and age UNKNOWN (P39). Era: every adult year (from about 495 BCE) falls in -500 to 499, so era -500 to 499 at 0.5 (P39 applied: the floruit does not sit on a bucket edge; auditor to confirm). Worldview: the goddess of the proem is the poem's narrator-device; SEP: 'Parmenides himself never in the extant fragments calls What Is divine or otherwise suggests that it is a god'. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 207). Sources: SEP 'Parmenides' (John Palmer, read in full) and Britannica 'Eleaticism' (signed by Starkey and Calogero, scholars edition, read in part). Born about 515 BCE, inferred from Plato's Parmenides (S1); 'active during the early to mid-fifth century BCE' (S1). Lasting work: the poem On Nature, 'founder of metaphysics or ontology' (S1); undated, so first-lasting year, span and age UNKNOWN (P39). Era UNKNOWN, candidate -500 to 499 (AA7 audit, v8's call on the auditor's advice): Diogenes Laertius 9.23 (S4) says 'He flourished in the 69th Olympiad' (504–501 BCE), which implies birth about 540 BCE and an adult life across the -500 edge (P39 strict; Pythagoras and Heraclitus precedent). Worldview: the goddess of the proem is the poem's narrator-device; SEP: 'Parmenides himself never in the extant fragments calls What Is divine or otherwise suggests that it is a god'. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: parmenides
@@ -29,13 +29,13 @@ identity:
 
 basics:
   birth:
-    date: {value: "-515", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "SEP: 'born about 515 BCE', inferred from the dramatic date of Plato's Parmenides."}
+    date: {value: "-515", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}, {source: S4, locator: "IX.23"}], how_known: "SEP: 'born about 515 BCE', inferred from the dramatic date of Plato's Parmenides. Competing date: about 540 BCE, implied by Apollodorus's floruit in the 69th Olympiad (504–501 BCE) as reported by Diogenes Laertius 9.23 (S4)."}
     place: {value: "Elea", modern_name: "Velia, Campania, Italy", polity_then: "Elea (Greek colony)", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}, {source: S2, locator: "Introduction"}], how_known: "SEP; Britannica."}
   death:
     date: {value: UNKNOWN, how_known: "Death date not given."}
     place: {value: UNKNOWN, how_known: "Death place not given."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "On Nature is undated; 'active during the early to mid-fifth century BCE' (S1) is a floruit, not a composition range (P39; RQ-Z9-N1)."}
-  era_bucket: {value: "-500 to 499", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Born about 515 BCE; adult from about 495 BCE; active early to mid fifth century BCE (S1): every adult year falls in -500 to 499, so the floruit is not on a bucket edge (P39). 0.5: birth year inferred."}
+  era_bucket: {value: UNKNOWN, how_known: "P39 strict (AA7 audit): on Plato's chronology (born about 515 BCE, S1) every adult year falls in -500 to 499, but Diogenes Laertius's floruit in the 69th Olympiad, 504–501 BCE (S4), puts his adult life across the -500 edge. Candidate: -500 to 499."}
   region_of_birth: {value: "Southern Europe", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}], how_known: "Elea, southern Italy (P3)."}
   region_of_work: {value: "Southern Europe", certainty: 0.7, cites: [{source: S2, locator: "Introduction"}], how_known: "Elea."}
   sex_as_recorded: {value: "male", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "As recorded."}
@@ -125,9 +125,9 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 207"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Era -500 to 499 at 0.5 from an inferred birth year (P39)."
+    - "Era UNKNOWN: 515 vs 540 BCE birth (P39)."
   open_questions:
-    - "Era under P39 for an inferred birth and a non-edge floruit."
+    - "Poem date (Wheelwright's 470–460 BCE is a lead only)."
 
 sources:
   - id: S1
@@ -157,6 +157,15 @@ sources:
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
     used_for: [review]
+  - id: S4
+    type: primary
+    kind: "other"
+    author: "Diogenes Laertius, tr. R.D. Hicks"
+    citation: "Diogenes Laertius. Lives of the Eminent Philosophers, Book IX, tr. R.D. Hicks (1925). Wikisource. https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_IX"
+    url: "https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_IX"
+    accessed: 2026-10-19
+    reliability_note: "Ancient biography in translation; the Parmenides chapter (IX.21–23) read."
+    used_for: [identity, basics]
 ---
 
 ## Summary
@@ -185,7 +194,7 @@ Not stated.
 
 ## Timing
 
-Undated (P39).
+Undated (P39); era UNKNOWN.
 
 ## Lane B notes (labeled belief model)
 
@@ -193,8 +202,8 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Era rule.
+- Poem date.
 
 ## Research log
 
-- 2026-10-19: Read SEP (Palmer); Britannica Eleaticism.
+- 2026-10-19: Read SEP (Palmer); Britannica Eleaticism; D.L. IX.23.
