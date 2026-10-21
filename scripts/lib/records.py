@@ -237,7 +237,7 @@ def firm(p):
     return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
 
 
-SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo", "Augustine of Hippo": "Augustine"}  # display-name overrides: people known by a common name
+SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo", "Augustine of Hippo": "Augustine", "Zhang Heng": "Zhang"}  # display-name overrides: people known by a common name; Chinese names put the family name first
 _SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv"}
 
 
