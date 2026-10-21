@@ -113,6 +113,11 @@ Rules for the table (decisions P15, P24, P25, v8's picks, 2026-10-02):
 
 Certainty is about the claim, not the source. A primary letter can support only 0.7 for a worldview, because it is private.
 
+- **Single sources count** (P48, decided by Jason, 2026-10-21). A score backed by one audited, passing source is legitimate; do not set it back to UNKNOWN or BELOW_THRESHOLD for want of a second source. Its certainty still follows P15 and the basis ceilings. Each scored LIO axis carries a support level: `solid` (two or more agreeing independent sources, certainty ≥ 0.7), `faded` (certainty 0.5, or sources that disagree), `single` (one passing source, certainty ≥ 0.7). It is computed by `support_level()` in `scripts/lib/records.py`; the chart draws single as a third, lightest dot level.
+- **Source quality** (P47, decided by Jason, 2026-10-21). Label every source with `source_quality`: primary / own words, scholarly edition or monograph, scholarly reconstruction, reference entry, unofficial web copy, archive scan (OCR only), newspaper interview, study roster, or other.
+- **Scholars' reconstructions** (P49, decided by Jason, 2026-10-21; RQ-AA8-1). A scholar's reconstruction of a person's view, including a non-scientist's account of nature for B, scores at most 0.5 with basis `scholarly_reconstruction`.
+- **Roster frozen** (P50, decided by Jason, 2026-10-21). No new people; deepen the 215 coded records.
+
 ## 4. Sentinels and empty values
 
 - Never leave a value blank and never write "n/a". Use one of:

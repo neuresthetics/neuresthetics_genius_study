@@ -72,6 +72,10 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P44 | System records: (a) a system with no God gets A_locus 4 (extends P38); (b) score a system axis only where the stance itself fixes a value; UNKNOWN where the source is silent, BELOW_THRESHOLD where members differ; (c) naturalism fixes C and E at 4 (0.5 implied, 0.7 stated); (d) an impersonal (karma-type) ledger is C 3 @0.5, alt 4, only where a source states a karma-type law; (e) a Wayback copy of a Britannica article counts as the full article (no P45 cap); stance value 'separate first cause, not creator (eternal world)' added | medium | decided 2026-10-15, v8's pick (S1 and S2 systems audits) |
 | P45 | Lower source tier for system records: the movement's own published statement, or (b) peer-reviewed scholarship, or a signed, editor-commissioned scholarly reference entry, defining the term (amended 2026-10-15, S12 audit), when no encyclopedia entry exists; capped at 0.5 and flagged in reliability_note; no Wikipedia or unsigned pages; keep the stub if neither exists | medium | decided 2026-10-15, v8's pick (S4 systems audit, RQ1) |
 | P46 | System records: (a) a system counts as sourced only with at least one value or a quote-backed BELOW_THRESHOLD; all-UNKNOWN records count as stubs in the headline and are reported separately as 'sourced, unscored'; (b) one organization's statement stands only for that organization: name it in how_known and reliability_note, keep the 0.5 cap, note plurality, BELOW_THRESHOLD where organizations disagree, and a peer-reviewed source on the whole movement takes precedence | medium | decided 2026-10-15, v8's pick (S9 systems audit) |
+| P47 | Every source gets a plain `source_quality` label: primary / own words, scholarly edition or monograph, scholarly reconstruction, reference entry, unofficial web copy, archive scan (OCR only), newspaper interview, study roster, other; existing `type`, `kind` and `verified_against` labels stay | decided 2026-10-21 by Jason |
+| P48 | Single sources count: a score backed by one audited, passing source is legitimate and is not held at UNKNOWN for want of a second source; each scored axis gets a support level (solid / faded / single) and the chart a third, lightest dot level for single | decided 2026-10-21 by Jason |
+| P49 | RQ-AA8-1 resolved yes: a scholar's reconstruction of a person's account of nature scores B (and other axes), basis `scholarly_reconstruction`, capped at 0.5; applied to Plotinus, William of Ockham; Duns Scotus confirmed | decided 2026-10-21 by Jason |
+| P50 | Roster frozen at the 215 coded core people: no new people are coded; work moves to deepening existing records | decided 2026-10-21 by Jason |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
 
 **Decided 2026-10-01:** R1, R2, R3, R4, R5 and S2 were approved together as recommended. The other 13 were decided later the same day (10:55 PM PT): R6 with all 9 names core, Vint Cerf included; R7 with the six fixes; the rest as recommended. For P4, deists pass the test, and this is recorded as a stated consequence with no exclusion. Each item is under "Decided" with what changed.
@@ -888,7 +892,7 @@ Process:
   - **P21 label for encyclopedia entries:** an SEP or other encyclopedia article is a scholar's article, not a 'scholarly edition' (an edited text of the person's own work). Plotinus's SEP summary sentence is therefore not listed as a statement; PLATO 0.5 rests on the scholarly_reconstruction basis as before.
   - **Least-time dating (Fermat):** the first statement (August 1657, qualitative) dates the item at 0.5 under P30; the 1662 'Analysis ad refractiones' is recorded as the alternative for the item and the span end (1638–1662). Lesser theorem 0.7 on the letter to Frenicle of 18 October 1640 (Œuvres II, pp. 206–212, quoted by Pengelley 2025).
   - **P12 calendar labels:** Russian day dates before 1918 are labelled Old Style with the New Style equivalent (Tchaikovsky); years unchanged.
-  - **RQ-AA8-1 (OPEN, held for Jason; method change):** does a scholar's reconstruction of a non-scientist philosopher's account of nature (Plotinus, SEP §2: laws 'constant and immutable'; same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play') score B? Auditor recommends B 3 at 0.5 (scholarly_reconstruction), alternative 2. Plotinus's B stays UNKNOWN until Jason rules. Not chart-changing (A is BELOW_THRESHOLD); it would move him from 'neither' to 'no A' in the caption (37/22/85).
+  - **RQ-AA8-1 (RESOLVED yes by Jason, 2026-10-21, P49):** does a scholar's reconstruction of a non-scientist philosopher's account of nature (Plotinus, SEP §2: laws 'constant and immutable'; same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play') score B? Auditor recommends B 3 at 0.5 (scholarly_reconstruction), alternative 2. Plotinus's B stays UNKNOWN until Jason rules. Not chart-changing (A is BELOW_THRESHOLD); it would move him from 'neither' to 'no A' in the caption (37/22/85).
 - **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AA9 audit at 9c977e1):**
   - **RQ-AA9-1:** Rachel Carson is not a scientist for B. P30 rule 11 looks at the listed lasting contribution, not the job (P33 logic; the Johnson, Bell and Hinton calls): Silent Spring is a synthesis and public argument. B UNKNOWN, alternative B 3 at 0.5 (P35). Not chart-changing (A UNKNOWN); caption moves her from 'no A' to 'neither' (37/22/89).
   - **P42 pseudonyms (by analogy):** a pseudonymous author's words (Kierkegaard's Anti-Climacus) are not the person's own voice, following P42's character-voice addendum by analogy; P42 has no explicit pseudonym clause.
@@ -901,7 +905,7 @@ Process:
 - **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AB1 audit at b874564):**
   - **RQ-AB1-1:** William James is a scientist for B under the P35 theories-of-mind addendum: trained in physiology and medicine, set up the first American psychology laboratory (1874–75), and The Principles of Psychology (1890) makes testable claims about organisms. Unlike Freud (X3). B 3 at 0.5, alternative 4. The 0.5 follows SEP's 'as much philosophical as scientific'. His 'piecemeal supernaturalism' (Varieties postscript, 1902) is a lead for B 2, not yet read first-hand. Changes B but not plotting: A stays BELOW_THRESHOLD, so he moves from 'neither axis' to 'no A' and stays unplotted.
   - James's 'ultimate opacity' quote is dated 1881 ('Reflex Action and Theism', reprinted 1897), so it falls before the span; no score change. Voltaire: S1 dates the Philosophical Letters to 1734 (wording fix). Ockham's A 1 rests on SEP §6.2/§7.2. Harvey's 'later Renaissance' framing (Gregory) is noted as a lead. AB1 change_log dates corrected to 2026-10-20.
-  - **RQ-AA8-1 (still OPEN, held for Jason):** William of Ockham's B stays UNKNOWN; a reconstruction-based B would be 3 at 0.5 and would newly plot him (faded). The Duns Scotus record's existing reconstruction-based B 3 at 0.5 is left unchanged and is held for Jason along with Plotinus and Ockham.
+  - **RQ-AA8-1 (RESOLVED yes by Jason, 2026-10-21, P49; applied):** William of Ockham's B stays UNKNOWN; a reconstruction-based B would be 3 at 0.5 and would newly plot him (faded). The Duns Scotus record's existing reconstruction-based B 3 at 0.5 is left unchanged and is held for Jason along with Plotinus and Ockham.
 - **Applied (v8's calls on the auditor's advice, 2026-10-21, Zhang Heng audit at eece863: 25 HOLD, 3 WEAKEN, 0 FAIL):**
   - **RQ-ABZ-1:** the Lingxian's portent lines (歷示吉凶 ... 用告禍福; stars 其見無期，其行無度) are omen-reading from regular motion and signs from irregular objects, not a stated exception to law. B stays 3 at 0.5, alternative 4 (P35); note only.
   - **Coder's gloss carries A at 0.5:** a gloss of verbatim cited text is not background knowledge (P25). A stays 3 at 0.5; the preface line 聖人無心，因茲以生心 is added as support for alternative A 4. 0.7 needs a published translation or authoritative edition (that would make mid_basin false).
@@ -944,6 +948,35 @@ Process:
 - **Rule (b).** A statement by one organization stands only for that organization. Name the organization in `how_known` and `reliability_note`, keep the P45 0.5 cap, and note when the movement is plural. Where organizations disagree, use BELOW_THRESHOLD. A peer-reviewed source on the whole movement takes precedence.
 - **Applied to:** (a) BON, CYNIC, EFFALT, HEDON, HELLEN, PHENOM, RODNOV, SOLIP (sourced, unscored, 2026-10-15); (b) KEMET (House of Netjer) and HELLEN (YSEE).
 - **Result-changing.** No for people. The headline systems count drops by 8.
+
+### P47. Plain source-quality labels
+**Decided 2026-10-21 by Jason (method change, step 1 of the deepening plan).**
+- **Rule.** Every entry in `sources` gets `source_quality`, one of: `primary / own words`, `scholarly edition or monograph`, `scholarly reconstruction`, `reference entry`, `unofficial web copy`, `archive scan (OCR only)`, `newspaper interview`, `study roster`, `other`. The existing `type`, `kind`, `reliability_note` and `verified_against` labels stay unchanged.
+- **Schema.** Optional field in `schema/person.schema.json` until the relabel step; it becomes required, with a `schema_version` bump in every file, when the records are relabelled (step 2, not yet done).
+- **Result-changing.** No.
+
+### P48. Single sources count; support levels
+**Decided 2026-10-21 by Jason.**
+- **Rule.** A score backed by one audited source that passes (the person's own words, a scholarly work, or a solid reference entry) is legitimate. It is not set back to UNKNOWN or BELOW_THRESHOLD because no second source agrees. The certainty ceilings of P15 and the `basis` ceilings stay as they are.
+- **Support level** (`support` on each scored LIO axis, computed by `support_level()` in `scripts/lib/records.py`):
+  - `solid`: two or more agreeing independent sources, certainty ≥ 0.7;
+  - `faded`: certainty 0.5, or sources that disagree (an alternative cited to a source the value does not cite);
+  - `single`: one passing source at certainty ≥ 0.7.
+  Distinct source ids stand in for independence; the reviewer confirms it.
+- **Chart.** Three dot levels: solid (dark), faded, single (third, lightest). A plotted person takes the lighter of the A and B levels. Charts are not regenerated until the relabel step.
+- **Validator.** When `support` is present it must equal the computed value.
+- **Result-changing.** Dot levels change (see reports/support_dryrun.md); no score changes from this rule alone.
+
+### P49. Scholars' reconstructions score (RQ-AA8-1 resolved)
+**Decided 2026-10-21 by Jason; resolves RQ-AA8-1 (yes).**
+- **Rule.** A scholar's reconstruction of a person's view, including a non-scientist's account of nature for B, is honoured and labelled `scholarly_reconstruction` (basis ceiling 0.5; source_quality `scholarly reconstruction` where the source is that kind of account).
+- **Applied to:** Plotinus B 3 at 0.5, alternative 2 (SEP §2; still not plotted, A BELOW_THRESHOLD); William of Ockham B 3 at 0.5, alternative 2 (SEP §4.4, §6.2; newly plotted, faded); Duns Scotus confirmed: B 3 at 0.5 with basis `scholarly_reconstruction` already (no change).
+- **Result-changing.** Yes: Ockham newly plotted (73 at the next chart refresh).
+
+### P50. Roster frozen
+**Decided 2026-10-21 by Jason.**
+- **Rule.** No new people are coded. The study is the 215 coded core people. The uncoded core people stay on the roster unchanged. Work moves to deepening existing records (reports/deepening_queue.md). The paused AB2 drafts (Bengio, LeCun) stay on the local branch `ab2-paused` and are not merged.
+- **Result-changing.** Coverage stops at 215 / 441.
 
 ### S1. CLTHEI display label
 **Decided 2026-10-01 by Jason (approved as recommended):** CLTHEI `display_label` is "Interventionist personal theism", `label_status` `approved`. The code and `v7_1_label` are unchanged.

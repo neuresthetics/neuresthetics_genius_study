@@ -1262,6 +1262,20 @@
             "type": "string"
           },
           "description": "Which sections rely on this source."
+        },
+        "source_quality": {
+          "enum": [
+            "primary / own words",
+            "scholarly edition or monograph",
+            "scholarly reconstruction",
+            "reference entry",
+            "unofficial web copy",
+            "archive scan (OCR only)",
+            "newspaper interview",
+            "study roster",
+            "other"
+          ],
+          "description": "Plain label for what the source is (P47, decided by Jason 2026-10-21). primary / own words: the person's own text or a transcription of it. scholarly edition or monograph: an edited text, critical edition or academic book or article. scholarly reconstruction: a scholar's account of the person's view from indirect evidence. reference entry: a signed encyclopedia or reference page (SEP, MacTutor, Britannica). unofficial web copy, archive scan (OCR only), newspaper interview: as for verified_against (P21). study roster: the study's own roster files. Optional until the relabel step; type and kind stay as they are."
         }
       }
     },
@@ -2364,6 +2378,14 @@
         "rationale": {
           "type": "string",
           "description": "why this score, in terms of the axis poles"
+        },
+        "support": {
+          "enum": [
+            "solid",
+            "faded",
+            "single"
+          ],
+          "description": "Support level of a scored axis (P48, decided by Jason 2026-10-21). solid: two or more agreeing independent sources and certainty >= 0.7. faded: certainty 0.5, or sources that disagree. single: one passing source at certainty >= 0.7. Computed by scripts/lib/records.py support_level(); optional until the relabel step, and checked against the computed value when present."
         }
       },
       "allOf": [

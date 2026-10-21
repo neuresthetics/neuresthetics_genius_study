@@ -31,7 +31,7 @@ Exit status 0 = all files pass.
 import argparse, os, re, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import (REPO, read_record, load_schema, schema_errors, common_checks, read_csv, system_codes,
+from lib.records import (support_level, REPO, read_record, load_schema, schema_errors, common_checks, read_csv, system_codes,
                          person_files, fill_counts, walk, claims)
 
 REQUIRED_SECTIONS = ["Summary", "Contribution and impact", "Childhood and education", "Adult working worldview",
@@ -54,6 +54,11 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
     errors += schema_errors(schema, data)
     e2, w2 = common_checks(data, body, REQUIRED_SECTIONS)
     errors += e2; warnings += w2
+    for k, v in (((data.get("worldview") or {}).get("lio_axes")) or {}).items():  # P48: stored support must match
+        if isinstance(v, dict) and "support" in v:
+            want = support_level(v)
+            if v["support"] != want:
+                errors.append(f"worldview/lio_axes/{k}/support: file has {v['support']!r}, computed {want!r} (P48)")
     ident = data.get("identity") or {}
     pid = ident.get("id")
     if not is_template:

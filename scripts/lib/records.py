@@ -291,3 +291,32 @@ def people_chart_caption():
             f"chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. "
             f"A faded dot is a less certain score "
             f"(below 0.7 on at least one axis).*")
+
+
+# Support levels (P48, decided by Jason 2026-10-21). Chart dot levels, darkest first: solid, faded, single
+# (single is the third, lightest level). A plotted person takes the lighter of the A and B levels.
+SUPPORT_ORDER = ("solid", "faded", "single")
+
+
+def support_level(claim):
+    """Support level of one scored axis claim, or None if the value is not a score.
+    faded: certainty below 0.7, or an alternative cited to a source the value itself does not cite (sources
+    that disagree). solid: two or more distinct cited sources at certainty >= 0.7. single: one cited source at
+    certainty >= 0.7. Distinct source ids stand in for independence; a reviewer confirms independence."""
+    if not isinstance((claim or {}).get("value"), int) or isinstance(claim.get("value"), bool):
+        return None
+    main = {c.get("source") for c in claim.get("cites") or [] if isinstance(c, dict)}
+    if (claim.get("certainty") or 0) < 0.7:
+        return "faded"
+    for alt in claim.get("alternatives") or []:
+        if {c.get("source") for c in alt.get("cites") or [] if isinstance(c, dict)} - main:
+            return "faded"
+    return "solid" if len(main) >= 2 else "single"
+
+
+def point_level(a_claim, b_claim):
+    """Dot level of a plotted person: the lighter of the two axis levels (SUPPORT_ORDER)."""
+    la, lb = support_level(a_claim), support_level(b_claim)
+    if la is None or lb is None:
+        return None
+    return max(la, lb, key=SUPPORT_ORDER.index)

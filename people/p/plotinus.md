@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-20
+  last_updated: 2026-10-21
   change_log:
+    - {date: 2026-10-21, by: "Grok Bot", summary: "RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Still not plotted (A BELOW_THRESHOLD)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 211). Source: SEP 'Plotinus' (Paul Kalligas, 2024, read in full). Born 204 CE (inferred from Porphyry, S1); settled in Rome late 244; his treatises 'began to be composed ten years after his arrival in Rome' (about 254) and continued until his death in 270 (S1). Lasting work: the treatises collected by Porphyry as the Enneads; he 'is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism' (S1). Span 254–270 at 0.5 (composition range, RQ-Z9-N1; start inferred), age 50. Worldview: PLATO at 0.5 (scholarly_reconstruction): 'Plato's figure dominates Plotinus' thought' (S1). A BELOW_THRESHOLD: the One is 'beyond being' and transcendent (A 1 lead), but everything proceeds from it by emanation (A 2 lead); no source read settles the reading. Not a scientist; B UNKNOWN pending RQ-AA8-1 (held for Jason): S1 §2 does reconstruct his account of nature (laws 'constant and immutable'; the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
@@ -85,7 +86,15 @@ worldview:
     - {code: PLATO, reason: "Coded at 0.5 (S1)."}
   lio_axes:
     A_locus: {value: BELOW_THRESHOLD, how_known: "The One is the 'supreme ontological principle', 'beyond being' (S1): transcendent (A 1 lead); but all other principles come to be by 'emanation' from it (S1) (A 2 lead). No reading reaches 0.5 over the other."}
-    B_cause: {value: UNKNOWN, how_known: "Held UNKNOWN pending RQ-AA8-1 (open, for Jason): not a scientist (P30), but S1 §2 (read in full) reconstructs his account of nature: the laws of Nature 'remain constant and immutable' (III 1.10) and the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'. Whether a scholar's reconstruction gives a non-scientist philosopher a B is a method question; the auditor's suggestion is B 3 at 0.5, alternative 2."}
+    B_cause:
+      value: 3
+      basis: scholarly_reconstruction
+      certainty: 0.5
+      cites: [{source: S1, locator: "§2"}]
+      how_known: "Scholarly reconstruction (P49, RQ-AA8-1 resolved yes by Jason, 2026-10-21). Not a scientist (P30). SEP §2 (read in full) reconstructs his account of nature: the laws of Nature 'remain constant and immutable' (III 1.10) and the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'. 0.5 is the scholarly_reconstruction ceiling."
+      rationale: "Account of nature (P6): constant laws and fixed causation, with the stated proviso of an 'exogenous factor' as the limited exception, so B 3. Alternative 2 if the proviso is read as an open door for the soul's and higher principles' action in nature."
+      alternatives:
+        - {value: 2, note: "Proviso read as an unlimited exception.", cites: [{source: S1, locator: "§2"}]}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
@@ -129,7 +138,7 @@ review:
     - "Span and age inferred (0.5)."
   open_questions:
     - "A_locus reading of the One (transcendent vs emanationist)."
-    - "RQ-AA8-1: does SEP §2's reconstruction of his account of nature give B (suggested 3 at 0.5, alternative 2)?"
+    - "B rests on a scholarly reconstruction (P49); a primary passage (Enneads III 1.10) would lift it."
 
 sources:
   - id: S1
@@ -192,3 +201,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 - 2026-10-20: AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited.
 - 2026-10-19: Read SEP (Kalligas).
+- 2026-10-21: RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Still not plotted (A BELOW_THRESHOLD).

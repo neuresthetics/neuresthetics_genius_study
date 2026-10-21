@@ -82,7 +82,7 @@ worldview:                                # the ADULT WORKING worldview (docs/CO
   candidate_codes_considered: []          # - {code: CLTHEI, reason: "..."}
   lio_axes:                               # 0–4 scale (P1): 0 interventionist pole, 1 leans interventionist, 2 mixed, 3 leans LIO, 4 LIO pole
     A_locus: {value: TODO}
-    B_cause: {value: TODO}
+    B_cause: {value: TODO}                # scored axes may carry support: solid | faded | single (P48; computed, see CODING_GUIDE §6)
     C_ledger: {value: TODO}
     D_authority: {value: TODO}
     E_scope: {value: TODO}                # the world's order (P7): same rules for all kinds; no in-group exceptions in events. Salvation and moral community go on C
@@ -127,6 +127,7 @@ sources: []
 # - id: S1
 #   type: primary | secondary | tertiary
 #   kind: letter | scholarly book | encyclopedia | ...
+#   source_quality: primary / own words | scholarly edition or monograph | scholarly reconstruction | reference entry | unofficial web copy | archive scan (OCR only) | newspaper interview | study roster | other   (P47)
 #   citation: "Full citation."
 #   url: "https://..."
 #   accessed: 2026-01-01
