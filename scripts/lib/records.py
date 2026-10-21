@@ -206,7 +206,7 @@ def people_axis_points():
         mb = d["worldview"].get("mid_basin") or {}
         pts.append({"name": d["identity"]["display_name"], "A": a["value"], "B": b["value"],
                     "cA": a.get("certainty"), "cB": b.get("certainty"),
-                    "iA": is_interview(a), "iB": is_interview(b),
+                    "iA": is_interview(a), "iB": is_interview(b), "hollow": point_cues(a, b)[1] == "hollow",
                     "mid_basin": mb.get("value") if isinstance(mb, dict) else mb})
     return pts, out
 
@@ -237,7 +237,7 @@ def firm(p):
     return all(isinstance(c, (int, float)) and c >= CHART_CERT for c in (p["cA"], p["cB"]))
 
 
-SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo", "Augustine of Hippo": "Augustine", "Zhang Heng": "Zhang"}  # display-name overrides: people known by a common name; Chinese names put the family name first
+SHORT_LABELS = {"Galileo Galilei": "Galileo", "Leonardo da Vinci": "Leonardo", "Augustine of Hippo": "Augustine", "Zhang Heng": "Zhang", "William of Ockham": "Ockham"}  # display-name overrides: people known by a common name; Chinese names put the family name first
 _SUFFIXES = {"jr", "jr.", "sr", "sr.", "ii", "iii", "iv"}
 
 
@@ -293,30 +293,41 @@ def people_chart_caption():
             f"(below 0.7 on at least one axis).*")
 
 
-# Support levels (P48, decided by Jason 2026-10-21). Chart dot levels, darkest first: solid, faded, single
-# (single is the third, lightest level). A plotted person takes the lighter of the A and B levels.
-SUPPORT_ORDER = ("solid", "faded", "single")
+# Chart cues (P48 as amended by Jason, 2026-10-21, 11:52: "Both sounds better"). Two separate cues:
+#   darkness = certainty, exactly as before P48: dark when certainty >= 0.7, faded when below;
+#   fill = corroboration: filled when 2+ independent agreeing sources, hollow ring when a single source.
+# A plotted person is faded if either A or B is below 0.7 (the lower certainty), hollow if either rests on one source.
+
+
+def _scored(claim):
+    v = (claim or {}).get("value")
+    return isinstance(v, int) and not isinstance(v, bool)
+
+
+def certainty_cue(claim):
+    """'dark' (certainty >= 0.7) or 'faded' (below 0.7); None if the axis is not scored."""
+    if not _scored(claim):
+        return None
+    return "dark" if (claim.get("certainty") or 0) >= 0.7 else "faded"
 
 
 def support_level(claim):
-    """Support level of one scored axis claim, or None if the value is not a score.
-    faded: certainty below 0.7, or an alternative cited to a source the value itself does not cite (sources
-    that disagree). solid: two or more distinct cited sources at certainty >= 0.7. single: one cited source at
-    certainty >= 0.7. Distinct source ids stand in for independence; a reviewer confirms independence."""
-    if not isinstance((claim or {}).get("value"), int) or isinstance(claim.get("value"), bool):
+    """Corroboration of one scored axis (the `support` field, P48): 'corroborated' when the value cites two or more
+    distinct sources and no alternative is cited to a source the value does not cite (sources that disagree);
+    'single' otherwise. None if not scored. Distinct source ids stand in for independence; a reviewer confirms it."""
+    if not _scored(claim):
         return None
     main = {c.get("source") for c in claim.get("cites") or [] if isinstance(c, dict)}
-    if (claim.get("certainty") or 0) < 0.7:
-        return "faded"
     for alt in claim.get("alternatives") or []:
         if {c.get("source") for c in alt.get("cites") or [] if isinstance(c, dict)} - main:
-            return "faded"
-    return "solid" if len(main) >= 2 else "single"
+            return "single"
+    return "corroborated" if len(main) >= 2 else "single"
 
 
-def point_level(a_claim, b_claim):
-    """Dot level of a plotted person: the lighter of the two axis levels (SUPPORT_ORDER)."""
-    la, lb = support_level(a_claim), support_level(b_claim)
-    if la is None or lb is None:
+def point_cues(a_claim, b_claim):
+    """(darkness, fill) for a plotted person: ('dark'|'faded', 'filled'|'hollow'), or None if not plottable."""
+    if not (_scored(a_claim) and _scored(b_claim)):
         return None
-    return max(la, lb, key=SUPPORT_ORDER.index)
+    dark = "dark" if min(a_claim.get("certainty") or 0, b_claim.get("certainty") or 0) >= 0.7 else "faded"
+    fill = "filled" if support_level(a_claim) == support_level(b_claim) == "corroborated" else "hollow"
+    return dark, fill

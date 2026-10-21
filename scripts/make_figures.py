@@ -272,8 +272,10 @@ def fig_people_cause_locus(out):
             y = a + (nrows - 1) / 2 * rowh - r * rowh
             cert = min(p["cA"], p["cB"])
             faded = cert < 0.7
-            ax.scatter(x, y, s=120, color=dot, alpha=0.28 if faded else 0.95,
-                       edgecolor="#999999" if faded else "black", lw=0.8, zorder=3)
+            hollow = p["hollow"]  # P48: fill = corroboration (hollow ring = one source); darkness = certainty
+            ax.scatter(x, y, s=120, marker="o", facecolors="white" if hollow else dot,
+                       edgecolors=dot if hollow else ("#999999" if faded else "black"),
+                       lw=2.0 if hollow else 0.8, alpha=0.35 if faded else 0.95, zorder=3)
             ax.text(x + 0.05, y, labs[i], ha="left", va="center", fontsize=fs,
                     color="#777777" if faded else "#111111", zorder=4)
 
@@ -295,9 +297,7 @@ def fig_people_cause_locus(out):
              + (f"\n{len(not_scorable)} more coded people are not scorable yet (an axis is UNKNOWN or below threshold) "
                 "and are not shown or counted." if not_scorable else ""),
              ha="center", va="top", fontsize=13.5, color="#444444")
-    leg = [Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="black", alpha=0.95),
-           Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=dot, markeredgecolor="#999999", alpha=0.28)]
-    names = ["score as drafted", "faded = less certain score"]
+    leg, names = cue_legend(dot, ms=10)
     if any(p["name"] in P43_PEOPLE for p in pts):
         leg.append(Line2D([0], [0], ls="", marker=""))
         names.append("* = disputed interview wording\n   (Craft books), capped at 0.5 (P43)")
@@ -424,8 +424,10 @@ def _mark(ax, x, y, it, fs):
     sysm, f, col, tcol = _style(it)
     # Shrink markers with the font in crowded cells so that stacked diamonds and dots do not touch.
     size = min(110 if sysm else 95, (fs * (0.95 if sysm else 1.1)) ** 2)
-    ax.scatter(x, y, s=size, marker="D" if sysm else "o", color=col, alpha=0.30 if f else 0.95,
-               edgecolor="#999999" if f else "black", lw=0.8, zorder=3, clip_on=False)
+    hollow = it.get("hollow") and not sysm  # P48 fill cue, people only
+    ax.scatter(x, y, s=size, marker="D" if sysm else "o", facecolors="white" if hollow else col,
+               edgecolors=col if hollow else ("#999999" if f else "black"), lw=1.8 if hollow else 0.8,
+               alpha=(0.35 if hollow else 0.30) if f else 0.95, zorder=3, clip_on=False)
     ax.text(x + 0.045, y, it["label"], ha="left", va="center", fontsize=fs, fontweight="bold" if sysm else "normal",
             color=tcol, zorder=4, clip_on=False)
 
@@ -541,13 +543,27 @@ def _draw_box(box, neither, unscored, stubs):
                  transform=box.transAxes)
 
 
+def cue_legend(col, ms=9):
+    """Legend entries for the two person cues (P48 as amended by Jason, 2026-10-21): darkness and fill."""
+    def m(face, edge, alpha, lw=0.8):
+        return Line2D([0], [0], marker="o", ls="", markersize=ms, markerfacecolor=face, markeredgecolor=edge,
+                      markeredgewidth=lw, alpha=alpha)
+    leg = [m(col, "black", 0.95), m(col, "#999999", 0.35), m("white", col, 0.95, 2.0), m("white", col, 0.35, 2.0)]
+    names = ["dark, filled: more certain, backed by 2+ sources",
+             "faded: less certain (at least one of\n   the two scores is tentative)",
+             "hollow ring: a score rests on one source",
+             "faded hollow ring: both of the above"]
+    return leg, names
+
+
 def _legend(ax, people=False):
     leg = [Line2D([0], [0], marker="D", ls="", markersize=9, markerfacecolor=SYS_COLOR, markeredgecolor="black", alpha=0.95),
            Line2D([0], [0], marker="D", ls="", markersize=9, markerfacecolor=SYS_COLOR, markeredgecolor="#999999", alpha=0.30)]
     names = ["belief system", "faded = capped at 0.5"]
     if people:
-        leg.insert(0, Line2D([0], [0], marker="o", ls="", markersize=9, markerfacecolor=PEOPLE_COLOR, markeredgecolor="black"))
-        names = ["person", "belief system", "faded = less certain (people < 0.7;\nsystems capped at 0.5)"]
+        pl, pn = cue_legend(PEOPLE_COLOR)
+        leg = pl + leg
+        names = ["person: " + pn[0]] + pn[1:] + ["belief system", "faded system: capped at 0.5"]
     return leg, names
 
 
@@ -574,7 +590,7 @@ def fig_systems_cause_locus(out):
 def fig_people_systems_overlay(out):
     grid, a_only, b_only, neither, unscored, stubs = system_axis_points()
     pts, not_scorable = people_axis_points()
-    items = [{"B": p["B"], "A": p["A"], "kind": "person", "faded": min(p["cA"], p["cB"]) < 0.7,
+    items = [{"B": p["B"], "A": p["A"], "kind": "person", "faded": min(p["cA"], p["cB"]) < 0.7, "hollow": p["hollow"],
               "label": short_label(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")}
              for p in pts]
     fig = plt.figure(figsize=(22, 15.5))

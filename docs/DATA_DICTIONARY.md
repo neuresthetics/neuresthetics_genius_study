@@ -475,7 +475,7 @@ Object types referenced above. Claim types share the claim keys (`value`, `certa
 | | `value` | integer 0–4 | yes | The value, or a sentinel (TODO, UNKNOWN, BELOW_THRESHOLD). |
 | | `basis` | one of: `written_profession`, `consistent_private_letters`, `recorded_interview`, `scholarly_reconstruction`, `inference_from_work` |  | Evidence basis; certainty may not exceed its ceiling. |
 | | `rationale` | string |  | why this score, in terms of the axis poles |
-| | `support` | one of: `solid`, `faded`, `single` |  | Support level of a scored axis (P48, decided by Jason 2026-10-21). solid: two or more agreeing independent sources and certainty >= 0.7. faded: certainty 0.5, or sources that disagree. single: one passing source at certainty >= 0.7. Computed by scripts/lib/records.py support_level(); optional until the relabel step, and checked against the computed value when present. |
+| | `support` | one of: `corroborated`, `single` |  | Corroboration of a scored axis (P48, decided by Jason 2026-10-21, amended 11:52 the same day). corroborated: two or more independent agreeing sources; single: one source (or sources that disagree). Drawn as fill: filled dot vs hollow ring. Certainty is drawn separately as darkness (dark >= 0.7, faded below). Computed by scripts/lib/records.py support_level(); optional until the relabel step, checked against the computed value when present. |
 | `quote` | | object | |  |
 | | `text` | string | yes | verbatim, with original spelling; mark cuts with [...] |
 | | `cites` | list of `citation` | yes | Citations: source id plus locator. |

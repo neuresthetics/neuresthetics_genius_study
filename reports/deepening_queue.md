@@ -5,193 +5,193 @@ The 215-person frozen core, ordered by F descending, then roster rank (P32 order
 | # | rank | F | person | sources | A | B | needs |
 |---|---|---|---|---|---|---|---|
 | 1 | 1 | 5 | Ada Lovelace | 4 | 0 @0.5 | 4 @0.5 | A faded; B faded |
-| 2 | 2 | 5 | Adam Smith | 3 | 0 @0.5 | 3 @0.5 | A faded; B faded |
-| 3 | 3 | 5 | Al-Farabi | 3 | 1 @0.5 | 3 @0.5 | A faded; B faded |
-| 4 | 4 | 5 | Al-Khwarizmi | 3 | 0 @0.5 | BELOW_THRESHOLD | A faded; B BELOW_THRESHOLD |
-| 5 | 5 | 5 | Alan Turing | 8 | BELOW_THRESHOLD | 3 @0.7 | A BELOW_THRESHOLD; B single |
-| 6 | 6 | 5 | Albert Einstein | 6 | 4 @0.7 | 4 @0.7 | B single |
+| 2 | 2 | 5 | Adam Smith | 3 | 0 @0.5 | 3 @0.5 | A faded; B single source; B faded |
+| 3 | 3 | 5 | Al-Farabi | 3 | 1 @0.5 | 3 @0.5 | A faded; B single source; B faded |
+| 4 | 4 | 5 | Al-Khwarizmi | 3 | 0 @0.5 | BELOW_THRESHOLD | A single source; A faded; B BELOW_THRESHOLD |
+| 5 | 5 | 5 | Alan Turing | 8 | BELOW_THRESHOLD | 3 @0.7 | A BELOW_THRESHOLD; B single source |
+| 6 | 6 | 5 | Albert Einstein | 6 | 4 @0.7 | 4 @0.7 | B single source |
 | 7 | 7 | 5 | Alexander Graham Bell | 4 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 8 | 8 | 5 | Archimedes | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
-| 9 | 9 | 5 | Aristotle | 4 | 1 @0.7 | 3 @0.7 | A single |
+| 8 | 8 | 5 | Archimedes | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
+| 9 | 9 | 5 | Aristotle | 4 | 1 @0.7 | 3 @0.7 | A single source |
 | 10 | 10 | 5 | Barbara McClintock | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 11 | 11 | 5 | Baruch Spinoza | 7 | 4 @0.7 | 4 @0.7 | A single |
-| 12 | 12 | 5 | Bernhard Riemann | 2 | 1 @0.5 | 4 @0.5 | A faded; B faded |
-| 13 | 13 | 5 | Bertrand Russell | 3 | 4 @0.5 | 3 @0.5 | A faded; B faded |
-| 14 | 14 | 5 | Blaise Pascal | 4 | 0 @0.7 | 2 @0.7 | A single |
+| 11 | 11 | 5 | Baruch Spinoza | 7 | 4 @0.7 | 4 @0.7 | A single source |
+| 12 | 12 | 5 | Bernhard Riemann | 2 | 1 @0.5 | 4 @0.5 | A single source; A faded; B single source; B faded |
+| 13 | 13 | 5 | Bertrand Russell | 3 | 4 @0.5 | 3 @0.5 | A faded; B single source; B faded |
+| 14 | 14 | 5 | Blaise Pascal | 4 | 0 @0.7 | 2 @0.7 | A single source |
 | 15 | 15 | 5 | Carl Friedrich Gauss | 3 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 16 | 16 | 5 | Charles Darwin | 11 | 1 @0.5 | 3 @0.7 | A faded |
 | 17 | 17 | 5 | Chien-Shiung Wu | 6 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
 | 18 | 18 | 5 | Claude Debussy | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 19 | 19 | 5 | Claude Monet | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 20 | 20 | 5 | Dante Alighieri | 2 | 0 @0.7 | BELOW_THRESHOLD | A single; B BELOW_THRESHOLD |
+| 20 | 20 | 5 | Dante Alighieri | 2 | 0 @0.7 | BELOW_THRESHOLD | A single source; B BELOW_THRESHOLD |
 | 21 | 21 | 5 | David Hume | 8 | 3 @0.5 | 4 @0.7 | A faded |
 | 22 | 22 | 5 | Emmy Noether | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 23 | 23 | 5 | Enrico Fermi | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 24 | 24 | 5 | Erwin Schrödinger | 5 | 4 @0.7 | 4 @0.7 | B single |
+| 24 | 24 | 5 | Erwin Schrödinger | 5 | 4 @0.7 | 4 @0.7 | B single source |
 | 25 | 25 | 5 | Euclid | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 26 | 26 | 5 | Francis Bacon | 3 | 0 @0.7 | 3 @0.7 | A single |
+| 26 | 26 | 5 | Francis Bacon | 3 | 0 @0.7 | 3 @0.7 | A single source |
 | 27 | 27 | 5 | Frida Kahlo | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 28 | 28 | 5 | Friedrich Nietzsche | 3 | 4 @0.7 | 4 @0.7 | B single |
+| 28 | 28 | 5 | Friedrich Nietzsche | 3 | 4 @0.7 | 4 @0.7 | B single source |
 | 29 | 29 | 5 | Fyodor Dostoevsky | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 30 | 30 | 5 | Gabriel García Márquez | 4 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 31 | 31 | 5 | Galileo Galilei | 5 | 1 @0.7 | 3 @0.7 | solid on A and B |
-| 32 | 32 | 5 | Gottfried Wilhelm Leibniz | 6 | 1 @0.7 | 3 @0.7 | A single |
+| 31 | 31 | 5 | Galileo Galilei | 5 | 1 @0.7 | 3 @0.7 | dark and corroborated on A and B |
+| 32 | 32 | 5 | Gottfried Wilhelm Leibniz | 6 | 1 @0.7 | 3 @0.7 | A single source |
 | 33 | 33 | 5 | Grace Hopper | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 34 | 34 | 5 | Hannah Arendt | 5 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 35 | 35 | 5 | Henri Poincaré | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
 | 36 | 36 | 5 | Hippocrates | 2 | UNKNOWN | BELOW_THRESHOLD | A UNKNOWN; B BELOW_THRESHOLD |
 | 37 | 37 | 5 | Homer | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 38 | 38 | 5 | Hypatia | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 39 | 39 | 5 | Ibn Sina (Avicenna) | 10 | 1 @1.0 | 3 @0.7 | solid on A and B |
-| 40 | 40 | 5 | Igor Stravinsky | 2 | 0 @0.5 | 2 @0.5 | A faded; B faded |
-| 41 | 41 | 5 | Immanuel Kant | 6 | 1 @0.7 | 3 @0.7 | solid on A and B |
-| 42 | 42 | 5 | Isaac Newton | 13 | 1 @1.0 | 3 @0.7 | solid on A and B |
-| 43 | 43 | 5 | James Clerk Maxwell | 12 | 0 @1.0 | 3 @0.7 | solid on A and B |
+| 39 | 39 | 5 | Ibn Sina (Avicenna) | 10 | 1 @1.0 | 3 @0.7 | dark and corroborated on A and B |
+| 40 | 40 | 5 | Igor Stravinsky | 2 | 0 @0.5 | 2 @0.5 | A single source; A faded; B single source; B faded |
+| 41 | 41 | 5 | Immanuel Kant | 6 | 1 @0.7 | 3 @0.7 | dark and corroborated on A and B |
+| 42 | 42 | 5 | Isaac Newton | 13 | 1 @1.0 | 3 @0.7 | dark and corroborated on A and B |
+| 43 | 43 | 5 | James Clerk Maxwell | 12 | 0 @1.0 | 3 @0.7 | dark and corroborated on A and B |
 | 44 | 44 | 5 | Johann Sebastian Bach | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 45 | 45 | 5 | Johannes Kepler | 5 | 1 @0.5 | 3 @0.5 | A faded; B faded |
-| 46 | 46 | 5 | John Locke | 3 | 0 @0.7 | 3 @0.7 | A single; B single |
+| 46 | 46 | 5 | John Locke | 3 | 0 @0.7 | 3 @0.7 | A single source; B single source |
 | 47 | 47 | 5 | John von Neumann | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
-| 48 | 48 | 5 | Karl Marx | 3 | 4 @0.7 | UNKNOWN | A single; B UNKNOWN |
-| 49 | 49 | 5 | Kurt Gödel | 8 | 1 @0.7 | 3 @0.7 | solid on A and B |
-| 50 | 50 | 5 | Leo Tolstoy | 2 | 2 @0.7 | 3 @0.5 | A single; B faded |
-| 51 | 51 | 5 | Leonardo da Vinci | 2 | 0 @0.5 | 3 @0.5 | A faded; B faded |
+| 48 | 48 | 5 | Karl Marx | 3 | 4 @0.7 | UNKNOWN | A single source; B UNKNOWN |
+| 49 | 49 | 5 | Kurt Gödel | 8 | 1 @0.7 | 3 @0.7 | dark and corroborated on A and B |
+| 50 | 50 | 5 | Leo Tolstoy | 2 | 2 @0.7 | 3 @0.5 | A single source; B single source; B faded |
+| 51 | 51 | 5 | Leonardo da Vinci | 2 | 0 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 52 | 52 | 5 | Lise Meitner | 4 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 53 | 53 | 5 | Ludwig van Beethoven | 2 | 0 @0.7 | BELOW_THRESHOLD | A single; B BELOW_THRESHOLD |
-| 54 | 54 | 5 | Ludwig Wittgenstein | 2 | 0 @0.5 | 3 @0.5 | A faded; B faded |
-| 55 | 55 | 5 | Maimonides | 2 | 0 @0.7 | 3 @0.7 | A single; B single |
+| 53 | 53 | 5 | Ludwig van Beethoven | 2 | 0 @0.7 | BELOW_THRESHOLD | A single source; B BELOW_THRESHOLD |
+| 54 | 54 | 5 | Ludwig Wittgenstein | 2 | 0 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
+| 55 | 55 | 5 | Maimonides | 2 | 0 @0.7 | 3 @0.7 | A single source; B single source |
 | 56 | 56 | 5 | Marie Curie | 6 | BELOW_THRESHOLD | 4 @0.7 | A BELOW_THRESHOLD |
-| 57 | 57 | 5 | Max Planck | 8 | 2 @0.7 | 4 @0.7 | solid on A and B |
-| 58 | 58 | 5 | Michael Faraday | 10 | 0 @0.7 | 3 @0.7 | solid on A and B |
-| 59 | 59 | 5 | Michelangelo | 2 | 0 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 57 | 57 | 5 | Max Planck | 8 | 2 @0.7 | 4 @0.7 | dark and corroborated on A and B |
+| 58 | 58 | 5 | Michael Faraday | 10 | 0 @0.7 | 3 @0.7 | dark and corroborated on A and B |
+| 59 | 59 | 5 | Michelangelo | 2 | 0 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 60 | 60 | 5 | Niels Bohr | 6 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 61 | 61 | 5 | Nikola Tesla | 2 | BELOW_THRESHOLD | 4 @0.5 | A BELOW_THRESHOLD; B faded |
-| 62 | 63 | 5 | Omar Khayyam | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
+| 61 | 61 | 5 | Nikola Tesla | 2 | BELOW_THRESHOLD | 4 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
+| 62 | 63 | 5 | Omar Khayyam | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
 | 63 | 64 | 5 | Pablo Picasso | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 64 | 65 | 5 | Plato | 4 | 1 @0.5 | 3 @0.5 | A faded; B faded |
 | 65 | 66 | 5 | Raphael | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 66 | 67 | 5 | Rembrandt | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 67 | 68 | 5 | René Descartes | 6 | 1 @0.7 | 3 @0.7 | solid on A and B |
+| 67 | 68 | 5 | René Descartes | 6 | 1 @0.7 | 3 @0.7 | dark and corroborated on A and B |
 | 68 | 69 | 5 | Richard Feynman | 4 | BELOW_THRESHOLD | 4 @0.7 | A BELOW_THRESHOLD |
-| 69 | 70 | 5 | Rosalind Franklin | 3 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 69 | 70 | 5 | Rosalind Franklin | 3 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 70 | 71 | 5 | Salvador Dalí | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 71 | 72 | 5 | Simone de Beauvoir | 3 | 4 @0.5 | UNKNOWN | A faded; B UNKNOWN |
 | 72 | 73 | 5 | Socrates | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 73 | 74 | 5 | Stephen Hawking | 3 | 4 @0.5 | 4 @0.5 | A faded; B faded |
-| 74 | 75 | 5 | Subrahmanyan Chandrasekhar | 5 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 74 | 75 | 5 | Subrahmanyan Chandrasekhar | 5 | 4 @0.5 | 3 @0.5 | A single source; A faded; B faded |
 | 75 | 76 | 5 | Thomas Edison | 4 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 76 | 77 | 5 | Tim Berners-Lee | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 77 | 78 | 5 | Vincent van Gogh | 2 | 0 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 77 | 78 | 5 | Vincent van Gogh | 2 | 0 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 78 | 79 | 5 | Virginia Woolf | 3 | 4 @0.7 | UNKNOWN | B UNKNOWN |
-| 79 | 80 | 5 | Werner Heisenberg | 4 | 2 @0.7 | 4 @0.7 | A single |
+| 79 | 80 | 5 | Werner Heisenberg | 4 | 2 @0.7 | 4 @0.7 | A single source |
 | 80 | 81 | 5 | William Shakespeare | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 81 | 82 | 5 | Wolfgang Amadeus Mozart | 2 | 0 @0.5 | BELOW_THRESHOLD | A faded; B BELOW_THRESHOLD |
+| 81 | 82 | 5 | Wolfgang Amadeus Mozart | 2 | 0 @0.5 | BELOW_THRESHOLD | A single source; A faded; B BELOW_THRESHOLD |
 | 82 | 83 | 4 | Andrew Wiles | 3 | UNKNOWN | BELOW_THRESHOLD | A UNKNOWN; B BELOW_THRESHOLD |
 | 83 | 84 | 4 | Antoine Lavoisier | 5 | BELOW_THRESHOLD | 4 @0.7 | A BELOW_THRESHOLD |
-| 84 | 85 | 4 | Arthur Schopenhauer | 3 | 4 @0.7 | 3 @0.5 | B faded |
-| 85 | 86 | 4 | B.F. Skinner | 3 | 4 @0.5 | 4 @0.5 | A faded; B faded |
+| 84 | 85 | 4 | Arthur Schopenhauer | 3 | 4 @0.7 | 3 @0.5 | B single source; B faded |
+| 85 | 86 | 4 | B.F. Skinner | 3 | 4 @0.5 | 4 @0.5 | A single source; A faded; B faded |
 | 86 | 87 | 4 | Carl Jung | 4 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 87 | 88 | 4 | Carl Sagan | 2 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 88 | 89 | 4 | Claude Shannon | 2 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 87 | 88 | 4 | Carl Sagan | 2 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
+| 88 | 89 | 4 | Claude Shannon | 2 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 89 | 90 | 4 | Confucius | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 90 | 91 | 4 | David Hilbert | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
+| 90 | 91 | 4 | David Hilbert | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
 | 91 | 92 | 4 | Dmitri Mendeleev | 4 | BELOW_THRESHOLD | 4 @0.7 | A BELOW_THRESHOLD |
-| 92 | 93 | 4 | Donald Knuth | 4 | 0 @0.7 | UNKNOWN | A single; B UNKNOWN |
-| 93 | 94 | 4 | Dorothy Hodgkin | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 94 | 95 | 4 | Francis Crick | 5 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 92 | 93 | 4 | Donald Knuth | 4 | 0 @0.7 | UNKNOWN | A single source; B UNKNOWN |
+| 93 | 94 | 4 | Dorothy Hodgkin | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
+| 94 | 95 | 4 | Francis Crick | 5 | 4 @0.5 | 3 @0.5 | A faded; B single source; B faded |
 | 95 | 96 | 4 | Franz Kafka | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 96 | 97 | 4 | Galen | 3 | 1 @0.5 | 3 @0.5 | A faded; B faded |
 | 97 | 98 | 4 | Georg Wilhelm Friedrich Hegel | 6 | 3 @0.5 | 2 @0.5 | A faded; B faded |
 | 98 | 99 | 4 | Georgia O'Keeffe | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 99 | 100 | 4 | Henry Ford | 3 | 1 @0.5 | UNKNOWN | A faded; B UNKNOWN |
-| 100 | 101 | 4 | Ibn Khaldun | 3 | 0 @0.7 | 2 @0.5 | A single; B faded |
-| 101 | 102 | 4 | Ibn Rushd (Averroes) | 3 | 1 @0.7 | 3 @0.7 | A single |
+| 99 | 100 | 4 | Henry Ford | 3 | 1 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
+| 100 | 101 | 4 | Ibn Khaldun | 3 | 0 @0.7 | 2 @0.5 | A single source; B single source; B faded |
+| 101 | 102 | 4 | Ibn Rushd (Averroes) | 3 | 1 @0.7 | 3 @0.7 | A single source |
 | 102 | 103 | 4 | Jacques Derrida | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 103 | 104 | 4 | James Joyce | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 104 | 105 | 4 | James Watson | 3 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 104 | 105 | 4 | James Watson | 3 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 105 | 106 | 4 | Jane Austen | 4 | 0 @0.5 | BELOW_THRESHOLD | A faded; B BELOW_THRESHOLD |
-| 106 | 107 | 4 | Jane Goodall | 4 | 2 @0.5 | 3 @0.5 | A faded; B faded |
-| 107 | 108 | 4 | Jean Piaget | 2 | 4 @0.7 | 3 @0.7 | A single; B single |
-| 108 | 109 | 4 | Jean-Jacques Rousseau | 5 | 1 @0.7 | 3 @0.7 | solid on A and B |
+| 106 | 107 | 4 | Jane Goodall | 4 | 2 @0.5 | 3 @0.5 | A single source; A faded; B faded |
+| 107 | 108 | 4 | Jean Piaget | 2 | 4 @0.7 | 3 @0.7 | A single source; B single source |
+| 108 | 109 | 4 | Jean-Jacques Rousseau | 5 | 1 @0.7 | 3 @0.7 | dark and corroborated on A and B |
 | 109 | 110 | 4 | Johann Wolfgang von Goethe | 3 | 4 @0.7 | 3 @0.5 | B faded |
 | 110 | 111 | 4 | John Maynard Keynes | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 111 | 112 | 4 | Jonas Salk | 4 | 4 @0.5 | 3 @0.5 | A faded; B faded |
-| 112 | 113 | 4 | Leonhard Euler | 3 | 0 @0.7 | 3 @0.7 | A single; B single |
+| 111 | 112 | 4 | Jonas Salk | 4 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
+| 112 | 113 | 4 | Leonhard Euler | 3 | 0 @0.7 | 3 @0.7 | A single source; B single source |
 | 113 | 114 | 4 | Louis Pasteur | 6 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
 | 114 | 115 | 4 | Martin Heidegger | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 115 | 116 | 4 | Martin Luther King Jr. | 6 | 1 @0.7 | 3 @0.7 | A single; B faded |
+| 115 | 116 | 4 | Martin Luther King Jr. | 6 | 1 @0.7 | 3 @0.7 | A single source; B single source |
 | 116 | 117 | 4 | Michel Foucault | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 117 | 118 | 4 | Miguel de Cervantes | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 118 | 119 | 4 | Miles Davis | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 119 | 120 | 4 | Milton Friedman | 4 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 120 | 121 | 4 | Nelson Mandela | 5 | 1 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 120 | 121 | 4 | Nelson Mandela | 5 | 1 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 121 | 122 | 4 | Niccolò Machiavelli | 4 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
-| 122 | 123 | 4 | Nicolaus Copernicus | 3 | 1 @0.7 | 3 @0.5 | A single; B faded |
+| 122 | 123 | 4 | Nicolaus Copernicus | 3 | 1 @0.7 | 3 @0.5 | A single source; B faded |
 | 123 | 124 | 4 | Paul Dirac | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
 | 124 | 125 | 4 | Pythagoras | 1 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD; 1 source |
-| 125 | 126 | 4 | Richard Wagner | 2 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
+| 125 | 126 | 4 | Richard Wagner | 2 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
 | 126 | 127 | 4 | Roger Penrose | 4 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 127 | 128 | 4 | Samuel Morse | 3 | 0 @0.7 | BELOW_THRESHOLD | A single; B BELOW_THRESHOLD |
+| 127 | 128 | 4 | Samuel Morse | 3 | 0 @0.7 | BELOW_THRESHOLD | A single source; B BELOW_THRESHOLD |
 | 128 | 129 | 4 | Siddhartha Gautama | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
-| 129 | 130 | 4 | Sigmund Freud | 6 | 4 @0.7 | 3 @0.5 | A faded; B faded |
+| 129 | 130 | 4 | Sigmund Freud | 6 | 4 @0.7 | 3 @0.5 | A single source; B single source; B faded |
 | 130 | 131 | 4 | Srinivasa Ramanujan | 4 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 131 | 133 | 4 | Sun Tzu | 3 | UNKNOWN | BELOW_THRESHOLD | A UNKNOWN; B BELOW_THRESHOLD |
-| 132 | 135 | 4 | Thomas Aquinas | 6 | 1 @1.0 | 3 @0.7 | solid on A and B |
+| 132 | 135 | 4 | Thomas Aquinas | 6 | 1 @1.0 | 3 @0.7 | dark and corroborated on A and B |
 | 133 | 136 | 4 | Toni Morrison | 3 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 134 | 137 | 4 | Virgil | 2 | BELOW_THRESHOLD | BELOW_THRESHOLD | A BELOW_THRESHOLD; B BELOW_THRESHOLD |
 | 135 | 139 | 3 | Akira Kurosawa | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 136 | 140 | 3 | Al-Biruni | 4 | 0 @0.5 | 3 @0.5 | A faded; B faded |
-| 137 | 141 | 3 | Al-Ghazali | 1 | 0 @0.5 | 3 @0.5 | A faded; B faded; 1 source |
-| 138 | 142 | 3 | Al-Razi | 1 | 1 @0.5 | 3 @0.5 | A faded; B faded; 1 source |
-| 139 | 143 | 3 | Alexander Fleming | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
+| 136 | 140 | 3 | Al-Biruni | 4 | 0 @0.5 | 3 @0.5 | A single source; A faded; B faded |
+| 137 | 141 | 3 | Al-Ghazali | 1 | 0 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded; 1 source |
+| 138 | 142 | 3 | Al-Razi | 1 | 1 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded; 1 source |
+| 139 | 143 | 3 | Alexander Fleming | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
 | 140 | 144 | 3 | Alexander Grothendieck | 3 | 1 @0.5 | 3 @0.5 | A faded; B faded |
 | 141 | 145 | 3 | Alfred North Whitehead | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 142 | 147 | 3 | Andreas Vesalius | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
+| 142 | 147 | 3 | Andreas Vesalius | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
 | 143 | 148 | 3 | Arnold Schoenberg | 5 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 144 | 149 | 3 | Aryabhata | 2 | 1 @0.5 | 3 @0.5 | A faded; B faded |
-| 145 | 150 | 3 | Augustine of Hippo | 2 | 0 @0.7 | 2 @0.5 | B faded |
-| 146 | 152 | 3 | Brahmagupta | 2 | BELOW_THRESHOLD | 2 @0.5 | A BELOW_THRESHOLD; B faded |
+| 144 | 149 | 3 | Aryabhata | 2 | 1 @0.5 | 3 @0.5 | A single source; A faded; B faded |
+| 145 | 150 | 3 | Augustine of Hippo | 2 | 0 @0.7 | 2 @0.5 | B single source; B faded |
+| 146 | 152 | 3 | Brahmagupta | 2 | BELOW_THRESHOLD | 2 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
 | 147 | 153 | 3 | Caravaggio | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 148 | 154 | 3 | Carl Linnaeus | 8 | 0 @0.5 | 3 @0.5 | A faded; B faded |
-| 149 | 155 | 3 | Caroline Herschel | 3 | 0 @0.5 | BELOW_THRESHOLD | A faded; B BELOW_THRESHOLD |
+| 149 | 155 | 3 | Caroline Herschel | 3 | 0 @0.5 | BELOW_THRESHOLD | A single source; A faded; B BELOW_THRESHOLD |
 | 150 | 156 | 3 | Chinua Achebe | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 151 | 157 | 3 | Claude Lévi-Strauss | 1 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN; 1 source |
-| 152 | 158 | 3 | Daniel Kahneman | 2 | 4 @0.5 | 3 @0.5 | A faded; B faded |
+| 152 | 158 | 3 | Daniel Kahneman | 2 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 153 | 160 | 3 | Donatello | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 154 | 162 | 3 | John Duns Scotus | 1 | 1 @0.5 | 3 @0.5 | A faded; B faded; 1 source |
+| 154 | 162 | 3 | John Duns Scotus | 1 | 1 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded; 1 source |
 | 155 | 163 | 3 | E. O. Wilson | 3 | 3 @0.5 | 3 @0.5 | A faded; B faded |
 | 156 | 164 | 3 | Edwin Hubble | 3 | BELOW_THRESHOLD | 4 @0.7 | A BELOW_THRESHOLD |
 | 157 | 165 | 3 | Epicurus | 3 | 3 @0.5 | 3 @0.5 | A faded; B faded |
 | 158 | 166 | 3 | Évariste Galois | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 159 | 167 | 3 | Ferdinand de Saussure | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 160 | 168 | 3 | Frank Lloyd Wright | 3 | 4 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 160 | 168 | 3 | Frank Lloyd Wright | 3 | 4 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 161 | 169 | 3 | Franz Schubert | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 162 | 170 | 3 | Geoffrey Chaucer | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 163 | 172 | 3 | George Boole | 2 | 1 @0.5 | 3 @0.5 | A faded; B faded |
+| 163 | 172 | 3 | George Boole | 2 | 1 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded |
 | 164 | 173 | 3 | George Orwell | 2 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 165 | 174 | 3 | Gregor Mendel | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 166 | 176 | 3 | Guglielmo Marconi | 2 | 1 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 165 | 174 | 3 | Gregor Mendel | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
+| 166 | 176 | 3 | Guglielmo Marconi | 2 | 1 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 167 | 177 | 3 | Hedy Lamarr | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 168 | 178 | 3 | Henri Matisse | 4 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 169 | 179 | 3 | Henrietta Swan Leavitt | 2 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 170 | 180 | 3 | Heraclitus | 1 | 4 @0.5 | 3 @0.5 | A faded; B faded; 1 source |
+| 170 | 180 | 3 | Heraclitus | 1 | 4 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded; 1 source |
 | 171 | 181 | 3 | Herbert Simon | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
-| 172 | 182 | 3 | Ibn al-Haytham (Alhazen) | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 173 | 184 | 3 | Ivan Pavlov | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded |
+| 172 | 182 | 3 | Ibn al-Haytham (Alhazen) | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
+| 173 | 184 | 3 | Ivan Pavlov | 3 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded |
 | 174 | 185 | 3 | J. Robert Oppenheimer | 6 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
 | 175 | 186 | 3 | J.M.W. Turner | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 176 | 187 | 3 | Jean-Paul Sartre | 3 | 4 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 176 | 187 | 3 | Jean-Paul Sartre | 3 | 4 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 177 | 188 | 3 | Johannes Brahms | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 178 | 189 | 3 | Johannes Gutenberg | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 179 | 190 | 3 | John McCarthy | 3 | 4 @0.5 | UNKNOWN | A faded; B UNKNOWN |
-| 180 | 191 | 3 | John Milton | 2 | 1 @0.5 | UNKNOWN | A faded; B UNKNOWN |
+| 179 | 190 | 3 | John McCarthy | 3 | 4 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
+| 180 | 191 | 3 | John Milton | 2 | 1 @0.5 | UNKNOWN | A single source; A faded; B UNKNOWN |
 | 181 | 192 | 3 | John Nash | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 182 | 193 | 3 | John Stuart Mill | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 183 | 194 | 3 | Jorge Luis Borges | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
-| 184 | 195 | 3 | Joseph-Louis Lagrange | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
+| 184 | 195 | 3 | Joseph-Louis Lagrange | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
 | 185 | 197 | 3 | Katherine Johnson | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 186 | 198 | 3 | Laozi | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 187 | 199 | 3 | Le Corbusier | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 188 | 200 | 3 | Linus Pauling | 5 | 4 @0.7 | 4 @0.7 | B single |
+| 188 | 200 | 3 | Linus Pauling | 5 | 4 @0.7 | 4 @0.7 | B single source |
 | 189 | 201 | 3 | Ludwig Mies van der Rohe | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 190 | 202 | 3 | Mahatma Gandhi | 3 | BELOW_THRESHOLD | UNKNOWN | A BELOW_THRESHOLD; B UNKNOWN |
 | 191 | 203 | 3 | Marcel Proust | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
@@ -200,22 +200,22 @@ The 215-person frozen core, ordered by F descending, then roster rank (P32 order
 | 194 | 207 | 3 | Parmenides | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 195 | 208 | 3 | Paul Cézanne | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 196 | 209 | 3 | Paul Samuelson | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 197 | 210 | 3 | Pierre de Fermat | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 198 | 211 | 3 | Plotinus | 1 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded; 1 source |
+| 197 | 210 | 3 | Pierre de Fermat | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
+| 198 | 211 | 3 | Plotinus | 1 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded; 1 source |
 | 199 | 212 | 3 | Pyotr Ilyich Tchaikovsky | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 200 | 213 | 3 | Rachel Carson | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 201 | 214 | 3 | Robert Boyle | 4 | 0 @0.7 | 3 @0.7 | A single |
-| 202 | 215 | 3 | Robert Koch | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
+| 201 | 214 | 3 | Robert Boyle | 4 | 0 @0.7 | 3 @0.7 | A single source |
+| 202 | 215 | 3 | Robert Koch | 4 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
 | 203 | 216 | 3 | Rudolf Clausius | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
 | 204 | 217 | 3 | Rumi | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 205 | 218 | 3 | Søren Kierkegaard | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
 | 206 | 219 | 3 | Sushruta | 1 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN; 1 source |
-| 207 | 220 | 3 | Tycho Brahe | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
-| 208 | 221 | 3 | Vera Rubin | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
+| 207 | 220 | 3 | Tycho Brahe | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
+| 208 | 221 | 3 | Vera Rubin | 2 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
 | 209 | 222 | 3 | Vint Cerf | 3 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
 | 210 | 223 | 3 | Voltaire | 2 | UNKNOWN | UNKNOWN | A UNKNOWN; B UNKNOWN |
-| 211 | 224 | 3 | Willard Libby | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded |
-| 212 | 225 | 3 | William Harvey | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B faded; 1 source |
-| 213 | 226 | 3 | William James | 1 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B faded; 1 source |
-| 214 | 227 | 3 | William of Ockham | 1 | 1 @0.5 | 3 @0.5 | A faded; B faded; 1 source |
+| 211 | 224 | 3 | Willard Libby | 3 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded |
+| 212 | 225 | 3 | William Harvey | 1 | UNKNOWN | 3 @0.5 | A UNKNOWN; B single source; B faded; 1 source |
+| 213 | 226 | 3 | William James | 1 | BELOW_THRESHOLD | 3 @0.5 | A BELOW_THRESHOLD; B single source; B faded; 1 source |
+| 214 | 227 | 3 | William of Ockham | 1 | 1 @0.5 | 3 @0.5 | A single source; A faded; B single source; B faded; 1 source |
 | 215 | 230 | 3 | Zhang Heng | 4 | 3 @0.5 | 3 @0.5 | A faded; B faded |

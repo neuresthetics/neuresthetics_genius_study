@@ -250,4 +250,4 @@ The v7.1 data book scored 77 belief systems on a five-axis coherence rubric (L, 
 
 ## Method change of 2026-10-21 (decided by Jason)
 
-P47 plain source-quality labels; P48 single sources count, with support levels solid / faded / single and a third chart dot level; P49 scholars' reconstructions score (RQ-AA8-1 resolved yes); P50 roster frozen at the 215 coded core people. See OPEN_DECISIONS.md.
+P47 plain source-quality labels; P48 single sources count, drawn with two chart cues (darkness = certainty, fill = corroboration: hollow ring for a single source; amended by Jason at 11:52 the same day, replacing a three-level scale); P49 scholars' reconstructions score (RQ-AA8-1 resolved yes); P50 roster frozen at the 215 coded core people. See OPEN_DECISIONS.md.

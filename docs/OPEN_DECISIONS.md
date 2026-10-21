@@ -73,7 +73,7 @@ The 19 recommendations below were decided on 2026-10-01; P6 and P7, added later,
 | P45 | Lower source tier for system records: the movement's own published statement, or (b) peer-reviewed scholarship, or a signed, editor-commissioned scholarly reference entry, defining the term (amended 2026-10-15, S12 audit), when no encyclopedia entry exists; capped at 0.5 and flagged in reliability_note; no Wikipedia or unsigned pages; keep the stub if neither exists | medium | decided 2026-10-15, v8's pick (S4 systems audit, RQ1) |
 | P46 | System records: (a) a system counts as sourced only with at least one value or a quote-backed BELOW_THRESHOLD; all-UNKNOWN records count as stubs in the headline and are reported separately as 'sourced, unscored'; (b) one organization's statement stands only for that organization: name it in how_known and reliability_note, keep the 0.5 cap, note plurality, BELOW_THRESHOLD where organizations disagree, and a peer-reviewed source on the whole movement takes precedence | medium | decided 2026-10-15, v8's pick (S9 systems audit) |
 | P47 | Every source gets a plain `source_quality` label: primary / own words, scholarly edition or monograph, scholarly reconstruction, reference entry, unofficial web copy, archive scan (OCR only), newspaper interview, study roster, other; existing `type`, `kind` and `verified_against` labels stay | decided 2026-10-21 by Jason |
-| P48 | Single sources count: a score backed by one audited, passing source is legitimate and is not held at UNKNOWN for want of a second source; each scored axis gets a support level (solid / faded / single) and the chart a third, lightest dot level for single | decided 2026-10-21 by Jason |
+| P48 | Single sources count: a score backed by one audited, passing source is legitimate and is not held at UNKNOWN for want of a second source. Chart uses two separate cues (amended 2026-10-21 11:52 by Jason, 'Both sounds better'): darkness = certainty (dark ≥ 0.7, faded below, as before); fill = corroboration (filled = 2+ independent agreeing sources, hollow ring = one source); a person takes the lower certainty of A and B and is hollow if either rests on one source | decided 2026-10-21 by Jason; amended 11:52 by Jason |
 | P49 | RQ-AA8-1 resolved yes: a scholar's reconstruction of a person's account of nature scores B (and other axes), basis `scholarly_reconstruction`, capped at 0.5; applied to Plotinus, William of Ockham; Duns Scotus confirmed | decided 2026-10-21 by Jason |
 | P50 | Roster frozen at the 215 coded core people: no new people are coded; work moves to deepening existing records | decided 2026-10-21 by Jason |
 | S7 | System backlog: ATHE, AGNOS, IDEAL first; French spiritualism listed as a system to consider, no file | medium-high | decided 2026-10-02, v8's pick (added by the people run, batch 3) |
@@ -955,17 +955,15 @@ Process:
 - **Schema.** Optional field in `schema/person.schema.json` until the relabel step; it becomes required, with a `schema_version` bump in every file, when the records are relabelled (step 2, not yet done).
 - **Result-changing.** No.
 
-### P48. Single sources count; support levels
-**Decided 2026-10-21 by Jason.**
+### P48. Single sources count; two chart cues
+**Decided 2026-10-21 by Jason. Amended the same day at 11:52 AM by Jason ("Both sounds better"): two separate cues instead of one three-level scale.**
 - **Rule.** A score backed by one audited source that passes (the person's own words, a scholarly work, or a solid reference entry) is legitimate. It is not set back to UNKNOWN or BELOW_THRESHOLD because no second source agrees. The certainty ceilings of P15 and the `basis` ceilings stay as they are.
-- **Support level** (`support` on each scored LIO axis, computed by `support_level()` in `scripts/lib/records.py`):
-  - `solid`: two or more agreeing independent sources, certainty ≥ 0.7;
-  - `faded`: certainty 0.5, or sources that disagree (an alternative cited to a source the value does not cite);
-  - `single`: one passing source at certainty ≥ 0.7.
-  Distinct source ids stand in for independence; the reviewer confirms it.
-- **Chart.** Three dot levels: solid (dark), faded, single (third, lightest). A plotted person takes the lighter of the A and B levels. Charts are not regenerated until the relabel step.
+- **Darkness = certainty**, exactly as before: dark when certainty is ≥ 0.7, faded when below (0.5, which includes real disputes under P25). A person's certainty is the lower of A and B.
+- **Fill = corroboration** (`support` on each scored LIO axis, computed by `support_level()` in `scripts/lib/records.py`): `corroborated` (filled dot) when the value cites two or more independent agreeing sources; `single` (hollow ring) when it rests on one source, or when an alternative is cited to a source the value does not cite. A person is hollow if either A or B is `single`. Distinct source ids stand in for independence; the reviewer confirms it.
+- **Four combinations:** dark filled, dark hollow, faded filled, faded hollow. The legend of people_cause_locus and people_systems_overlay explains both cues in plain words.
+- **Superseded:** the morning's three-level scale (solid / faded / single on one scale, single lightest).
 - **Validator.** When `support` is present it must equal the computed value.
-- **Result-changing.** Dot levels change (see reports/support_dryrun.md); no score changes from this rule alone.
+- **Result-changing.** Dot fill changes (see reports/support_dryrun.md); darkness and scores do not change from this rule.
 
 ### P49. Scholars' reconstructions score (RQ-AA8-1 resolved)
 **Decided 2026-10-21 by Jason; resolves RQ-AA8-1 (yes).**
