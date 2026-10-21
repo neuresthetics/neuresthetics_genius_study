@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 225). Source: Britannica scholars edition, signed by Andrew Gregory (read in full). Lasting: the circulation of the blood, De Motu Cordis (1628); he 'was the first to recognize the full circulation of the blood in the human body'; the theory 'was well established by the time of his death' (S1). Discovery probably 1618–19 but published 1628 (P30 publication). The generation work (1651) has no lasting wording. Span 1628, age 50. Scientist: B 3 at 0.5, alt 4 (P35); S1 notes his vitalism (blood with 'an irreducible life force of its own') and opposition to mechanism, which does not bear on law and exception. Worldview: no own words on God (the 'household-god' line is a metaphor for the heart); UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: 'later Renaissance' framing (S1) added as a lead (no score change)."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 225). Source: Britannica scholars edition, signed by Andrew Gregory (read in full). Lasting: the circulation of the blood, De Motu Cordis (1628); he 'was the first to recognize the full circulation of the blood in the human body'; the theory 'was well established by the time of his death' (S1). Discovery probably 1618–19 but published 1628 (P30 publication). The generation work (1651) has no lasting wording. Span 1628, age 50. Scientist: B 3 at 0.5, alt 4 (P35); S1 notes his vitalism (blood with 'an irreducible life force of its own') and opposition to mechanism, which does not bear on law and exception. Worldview: no own words on God (the 'household-god' line is a metaphor for the heart); UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: harvey-william
@@ -95,7 +96,7 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Lead: McMullen, William Harvey and the Use of Purpose (1998), on design. Witchcraft case of 1634: S1 says he 'was willing to consider scientific explanations'."
+  coder_notes: "Leads: McMullen, William Harvey and the Use of Purpose (1998), on design; S1 frames him as 'a man of the later Renaissance', Aristotelian and drawing on natural magic, which bears on any first-hand B reading. Witchcraft case of 1634: S1 says he 'was willing to consider scientific explanations'."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -194,4 +195,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AB1 audit note: 'later Renaissance' framing (S1) added as a lead (no score change).
 - 2026-10-20: Read Britannica (Gregory, scholars edition).

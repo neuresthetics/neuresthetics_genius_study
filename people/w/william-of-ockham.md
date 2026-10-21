@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 227). Source: SEP 'William of Ockham' (Spade, Panaccio and Pelletier, 2024, read in full). Lasting: metaphysical nominalism, for which he is 'probably best known today', and 'Ockham's Razor', 'named after him' (S1). Dated by the academic writings, begun with the Sentences commentary (1317–18) and largely finished by about 1325 (S1): composition range 1317–1325 at 0.5 (RQ-Z9-N1), age 30 (born c. 1287). Worldview: Franciscan friar and theologian; CLASS_THEISM at 0.5 (scholarly_reconstruction; Duns Scotus precedent); A 1 at 0.5 (God's power can override natural causes; divine command ethics; S1). B: S1 §5–6 sets out his natural philosophy (natural causes act 'in the natural order and in the absence of divine intervention'; God 'can always' neutralize a natural effect), but that is a scholar's reconstruction for a non-scientist, so B stays UNKNOWN pending RQ-AA8-1 (Jason undecided). Note for Jason: the Duns Scotus record already carries a reconstruction-based B 3 (0.5). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: A 1 now rests on §6.2/§7.2; B stays UNKNOWN, held with Plotinus and Duns Scotus under RQ-AA8-1 pending Jason."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 227). Source: SEP 'William of Ockham' (Spade, Panaccio and Pelletier, 2024, read in full). Lasting: metaphysical nominalism, for which he is 'probably best known today', and 'Ockham's Razor', 'named after him' (S1). Dated by the academic writings, begun with the Sentences commentary (1317–18) and largely finished by about 1325 (S1): composition range 1317–1325 at 0.5 (RQ-Z9-N1), age 30 (born c. 1287). Worldview: Franciscan friar and theologian; CLASS_THEISM at 0.5 (scholarly_reconstruction; Duns Scotus precedent); A 1 at 0.5 (God's power can override natural causes; divine command ethics; S1). B: S1 §5–6 sets out his natural philosophy (natural causes act 'in the natural order and in the absence of divine intervention'; God 'can always' neutralize a natural effect), but that is a scholar's reconstruction for a non-scientist, so B stays UNKNOWN pending RQ-AA8-1 (Jason undecided). Note for Jason: the Duns Scotus record already carries a reconstruction-based B 3 (0.5). Not plotted. Draft, not reviewed."}
 
 identity:
   id: william-of-ockham
@@ -93,9 +94,9 @@ worldview:
       value: 1
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S1, locator: "4.4; 6.2; 7.2"}]
+      cites: [{source: S1, locator: "6.2; 7.2"}]
       how_known: "SEP's reconstruction; no primary text read; 0.5 (Duns Scotus precedent)."
-      rationale: "God stands outside the created order and can act within it: natural parts unite 'in the natural order and in the absence of divine intervention' (§4.4); God can 'neutralize the natural causal effect' of a cognition, 'something He can always do, according to Ockham' (§6.2); moral obligation follows God's decree (§7.2). A personal God outside the world who acts in it: A 1."
+      rationale: "Main basis §6.2 and §7.2: God can 'neutralize the natural causal effect' of a cognition, 'something He can always do, according to Ockham' (§6.2); moral obligation follows God's decree (§7.2). (§4.4's 'in the absence of divine intervention' concerns parts uniting into a whole and is weak support.) A personal God outside the world who acts in it: A 1."
       alternatives:
         - {value: 0, note: "A personal God wholly outside the world, if the decree-based ethics is read as strict voluntarism.", cites: [{source: S1, locator: "7.2"}]}
     B_cause: {value: UNKNOWN, how_known: "Held UNKNOWN: Jason has not ruled on RQ-AA8-1 (whether a scholar's reconstruction of a non-scientist's account of nature gives B), so no reconstruction-based B is applied. S1 §4.4 and §6.2 reconstruct an account of nature (natural causes act in the absence of divine intervention; God can always override); the B 3 reading is held, as for Plotinus. Not a scientist (natural philosophy of a broadly Aristotelian sort, S1 §5)."}
@@ -205,4 +206,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AB1 audit note: A 1 now rests on §6.2/§7.2; B stays UNKNOWN, held with Plotinus and Duns Scotus under RQ-AA8-1 pending Jason.
 - 2026-10-20: Read SEP (Spade, Panaccio, Pelletier, 2024).

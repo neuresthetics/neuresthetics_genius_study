@@ -62,14 +62,14 @@ A claim is any field that takes the claim shape (value + certainty + cites). TOD
 | basics | 2497 | 2385 | 0 | 112 | 0 | 95.5% |
 | contribution | 1779 | 1778 | 0 | 1 | 0 | 99.9% |
 | childhood | 2225 | 1288 | 418 | 518 | 1 | 57.9% |
-| worldview | 2411 | 855 | 7 | 1209 | 340 | 35.5% |
+| worldview | 2411 | 856 | 7 | 1208 | 340 | 35.5% |
 | heritage | 908 | 310 | 273 | 324 | 1 | 34.1% |
 | timing | 1135 | 714 | 43 | 372 | 6 | 62.9% |
 | lane_b | 681 | 602 | 3 | 76 | 0 | 88.4% |
 | institutions | 411 | 411 | 0 | 0 | 0 | 100.0% |
 | collaborators | 540 | 540 | 0 | 0 | 0 | 100.0% |
 | review | 296 | 296 | 0 | 0 | 0 | 100.0% |
-| **all** | 13337 | 9566 | 752 | 2671 | 348 | 71.7% |
+| **all** | 13337 | 9567 | 752 | 2670 | 348 | 71.7% |
 
 ### Worldview coding status
 

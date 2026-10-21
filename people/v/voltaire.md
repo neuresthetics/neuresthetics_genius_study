@@ -7,9 +7,10 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-20
   change_log:
-    - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 223). Sources: SEP 'Voltaire' (J.B. Shank, 2024, read in full); Britannica students edition (S3) for full birth and death dates. Lasting: the philosophe authorship from Lettres philosophiques (1734), 'the key turning point', with which he 'pointed modern philosophy down several paths that it subsequently followed' and 'remains today an iconic hero' (S1); Candide (1759), 'Voltaire's most widely known text' (S1). Span 1734–1759 at 0.5 (alternative end 1778, his death, since the campaign for philosophie ran to the end), age 40. Worldview: S1 says 'it would be wrong to call Voltaire an atheist, or even an anti-Christian', that his 'personal religious views were subtle', and places him among debates of 'the so-called deists' while distancing him 'from more radical deists like Toland'; no own words on God quoted. primary_system BELOW_THRESHOLD (DEISM lead); A UNKNOWN (P19). Not a scientist (defender and popularizer of Newtonian science, not a contributor; P33 logic); B UNKNOWN. Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit fix: S1's bibliography dates the Philosophical Letters to 1734; wording corrected (no score change)."}
+    - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 223). Sources: SEP 'Voltaire' (J.B. Shank, 2024, read in full); Britannica students edition (S3) for full birth and death dates. Lasting: the philosophe authorship from Lettres philosophiques (1734), 'the key turning point', with which he 'pointed modern philosophy down several paths that it subsequently followed' and 'remains today an iconic hero' (S1); Candide (1759), 'Voltaire's most widely known text' (S1). Span 1734–1759 at 0.5 (alternative end 1778, his death, since the campaign for philosophie ran to the end), age 40. Worldview: S1 says 'it would be wrong to call Voltaire an atheist, or even an anti-Christian', that his 'personal religious views were subtle', and places him among debates of 'the so-called deists' while distancing him 'from more radical deists like Toland'; no own words on God quoted. primary_system BELOW_THRESHOLD (DEISM lead); A UNKNOWN (P19). Not a scientist (defender and popularizer of Newtonian science, not a contributor; P33 logic); B UNKNOWN. Not plotted. Draft, not reviewed."}
 
 identity:
   id: voltaire
@@ -35,7 +36,7 @@ basics:
   death:
     date: {value: "1778-05-30", certainty: 0.7, cites: [{source: S3, locator: "para. 4"}, {source: S1, locator: "1.6"}], how_known: "Britannica students edition; SEP gives 1778."}
     place: {value: "Paris", modern_name: "Paris, France", polity_then: "Kingdom of France", certainty: 0.5, cites: [{source: S3, locator: "para. 4"}], how_known: "Britannica: returned to Paris in February 1778 and died on May 30; place implied, not stated."}
-  first_lasting_contribution_year: {value: 1734, certainty: 0.7, cites: [{source: S1, locator: "1. Voltaire's Life; 1.3"}], how_known: "Lettres philosophiques, 'published in 1734 ... the key turning point' (S1); P30 publication. The English version (Letters Concerning the English Nation) is not dated in S1."}
+  first_lasting_contribution_year: {value: 1734, certainty: 0.7, cites: [{source: S1, locator: "1. Voltaire's Life; 1.3"}], how_known: "Lettres philosophiques, 'published in 1734 ... the key turning point' (S1); P30 publication. S1's bibliography also dates the Philosophical Letters (Letters on the English Nation) to 1734."}
   era_bucket: {value: "1600 to 1749", certainty: 1.0, cites: [{source: S1, locator: "1.3"}], how_known: "1734 (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "1.1"}], how_known: "France (P3)."}
   region_of_work: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "1.3–1.6"}], how_known: "Cirey, Paris, Berlin, Geneva and Ferney: France, Prussia and Switzerland all fall in Western Europe."}
@@ -199,4 +200,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-20: AB1 audit fix: S1's bibliography dates the Philosophical Letters to 1734; wording corrected (no score change).
 - 2026-10-20: Read SEP (Shank, 2024) and Britannica students edition.

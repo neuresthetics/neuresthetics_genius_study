@@ -898,6 +898,10 @@ Process:
   - **RQ-Z9-N1 start of range needs a source that dates the start:** Rumi's Mas̄navī is c.1262 at 0.5 (Mojaddedi), with 1258 (Ṣalāḥ al-Dīn's death) as the earliest possible year; the AA9 c.1258 call is superseded. A catalogue record alone does not set an item year (Koch's postulates stay UNKNOWN, 1884 candidate).
   - **Source labels:** an archive.org copy of an in-copyright book is an 'unofficial web copy'.
   - Rubin's thesis alternative, if ever counted, is dated by the December 1950 AAS talk (1950–1970, age 22). Fermat's 1601 birth date is at 0.5 (real dispute with 1607).
+- **Applied (v8's calls on the auditor's advice, 2026-10-20, batch AB1 audit at b874564):**
+  - **RQ-AB1-1:** William James is a scientist for B under the P35 theories-of-mind addendum: trained in physiology and medicine, set up the first American psychology laboratory (1874–75), and The Principles of Psychology (1890) makes testable claims about organisms. Unlike Freud (X3). B 3 at 0.5, alternative 4. The 0.5 follows SEP's 'as much philosophical as scientific'. His 'piecemeal supernaturalism' (Varieties postscript, 1902) is a lead for B 2, not yet read first-hand. Changes B but not plotting: A stays BELOW_THRESHOLD, so he moves from 'neither axis' to 'no A' and stays unplotted.
+  - James's 'ultimate opacity' quote is dated 1881 ('Reflex Action and Theism', reprinted 1897), so it falls before the span; no score change. Voltaire: S1 dates the Philosophical Letters to 1734 (wording fix). Ockham's A 1 rests on SEP §6.2/§7.2. Harvey's 'later Renaissance' framing (Gregory) is noted as a lead. AB1 change_log dates corrected to 2026-10-20.
+  - **RQ-AA8-1 (still OPEN, held for Jason):** William of Ockham's B stays UNKNOWN; a reconstruction-based B would be 3 at 0.5 and would newly plot him (faded). The Duns Scotus record's existing reconstruction-based B 3 at 0.5 is left unchanged and is held for Jason along with Plotinus and Ockham.
 
 ### P43. Interview books of disputed wording (Craft books)
 **Decided 2026-10-15 by Jason (RQ1 of stage 3 batch G; fallacy_catalog's blind audit of 5ff29b4 recommended the same).**
