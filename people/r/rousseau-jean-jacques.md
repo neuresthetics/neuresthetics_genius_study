@@ -7,10 +7,12 @@ record:
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 109). Basics from Britannica (Maurice Cranston, signed; opening and 'Formative years', read live) and SEP (Christopher Bertram, 'Life'). Worldview from his own published French texts in the Geneva Collection complète (1782), read in Wikisource's page-linked transcription: the Profession de foi du vicaire savoyard (Émile IV, 1762), the Lettre à Christophe de Beaumont (dated 18 November 1762) and the third Lettre écrite de la montagne (1764). primary_system CHRIST (0.5; alternatives DEISM, which P27 blocks, and CLASS_THEISM); A 1 (0.7, alt 0); B 3 (0.7, alt 4; P27 free-will anchor); D 3 (0.5, alt 4); mid_basin true (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: RO6 WEAKEN; rulings S1 and S2, v8's calls on the auditor's advice). Scoring the Vicar's speech now cites P42 and its v8 addendum (ruling S2: a character's words count as the author's view when a text in the author's own voice adopts them, at that text's certainty), with the own-voice texts and the counter-evidence: Émile t. 5, p. 112 ('non comme une regle'); Beaumont t. 6, pp. 36 and 52; Lettres écrites de la montagne II, t. 6, p. 171 ('mes articles fondamentaux') and III, pp. 182–183 with its note. Ruling S1: P27's 'declines to contest it' covers the Vicar's suspension, so CHRIST stays (ruling question closed). The 1764 cap cites P1 (under P20). Rameau dispute dated 1752. No value changes."}
+
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #108 / F4 rank 109). Goals: strengthen labels/sources; chart-moving unlikely (already dark filled). Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on every source. Spot-checked key Profession / Beaumont / Montagne quotes against Internet Archive OCR of Collection complète t. 5 and t. 6 (S8, S9; collectioncomple05rous / collectioncomple06rous, Fisher Toronto). S3–S5 reliability notes updated; wording firm. support labels added: A and B corroborated (already; P48 S3+S4 / S3+S5); D single. C_ledger UNKNOWN→1 @0.7 alt 2 (Profession soul/Providence t. 5 pp. 42–50, owned under P42 via Beaumont; félicité des bons / tourment des méchans by conscience-memory; 'Je ne dis point que les bons seront récompensés' but happy/compensated). Baptism 1712-07-04 from Wikipedia (Damrosch). CHRIST stays @0.5 (P27/S1 settled). A 1 @0.7 alt 0; B 3 @0.7 alt 4; mid true @0.7. Chart-moving NO (already dark filled; C fill does not move plot cues). No fallacy_catalog. No figures/. Draft, not reviewed."}
 
 identity:
   id: rousseau-jean-jacques
@@ -24,19 +26,19 @@ identity:
     status: core
     field: philosophy
     field_bucket: philosophy
-  full_name: {value: "Jean-Jacques Rousseau", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  native_name: {value: "Jean-Jacques Rousseau", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "French; same as the display name."}
+  full_name: {value: "Jean-Jacques Rousseau", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "lead / infobox"}], how_known: "Britannica and Wikipedia agree (P15, P50)."}
+  native_name: {value: "Jean-Jacques Rousseau", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "lead"}], how_known: "French; same as the display name; both bios agree."}
   aliases:
     - {name: "Jean-Jacques-Rousseau", kind: "roster alias"}
     - {name: "Rousseau-Jean-Jacques", kind: "roster alias"}
 
 basics:
   birth:
-    date: {value: "1712-06-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body."}
-    place: {value: "Geneva", modern_name: "Geneva, Switzerland", polity_then: "Republic of Geneva", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 ('the independent Calvinist city-state of Geneva')"}], how_known: "Britannica; polity from SEP."}
+    date: {value: "1712-06-28", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "infobox / Early life"}], how_known: "Britannica and Wikipedia agree."}
+    place: {value: "Geneva", modern_name: "Geneva, Switzerland", polity_then: "Republic of Geneva", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 ('the independent Calvinist city-state of Geneva')"}, {source: S7, locator: "infobox"}], how_known: "Britannica, SEP, and Wikipedia agree; polity from SEP."}
   death:
-    date: {value: "1778-07-02", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body."}
-    place: {value: "Ermenonville, France", modern_name: "Ermenonville, France", polity_then: "Kingdom of France", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "1778-07-02", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "infobox / Death"}], how_known: "Britannica and Wikipedia agree."}
+    place: {value: "Ermenonville, France", modern_name: "Ermenonville, France", polity_then: "Kingdom of France", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "Death (Île des Peupliers burial)"}], how_known: "Britannica and Wikipedia agree."}
   first_lasting_contribution_year: {value: 1750, certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}], how_known: "Discours sur les sciences et les arts, dated 1750 by Britannica (the Dijon prize essay); SEP gives its publication as 1751 (S2, §1). The prize award is the earliest public statement (P30), so 1750; noted in data_quality_flags."}
   era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}], how_known: "1750 (P2: an edge year goes to the later bucket); 1751 gives the same bucket."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Switzerland (P3)."}
@@ -102,25 +104,37 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "t. 5, pp. 33–34"}, {source: S4, locator: "t. 6, p. 52"}]
       rationale: "Transcendent person, limited: God is 'Cet Être qui veut et qui peut, cet Être actif par lui-même', with 'intelligence', 'puissance', 'volonté' and 'bonté'; he 'existe par lui-même' and 'mon existence est subordonnée à la sienne'. The limit: God is perceived 'par-tout dans ses œuvres, je le sens en moi', and his nature 'm’échappe'; no petition or particular intervention is described. Named alternative 0 (a willing, intelligent creator outside the world), on the same side of the mid_basin test."
-      how_known: "P42: the Vicar's words are a character's, so they count as Rousseau's only because texts in his own voice adopt them, at the certainty of the adopting text (P42 addendum, v8's call, ruling S2). Inside the working years, the 1762 letter owns the Profession (S4, t. 6, p. 52: 'je la tiendrai toujours pour l’Ecrit le meilleur & le plus utile'); after them, Lettres écrites de la montagne II names its first part, which carries A and B, as his own: 'toute la premiere partie de celle du Vicaire est affirmative ... Voilà, Messieurs, mes articles fondamentaux' (S5, t. 6, p. 171; P1). Counter-evidence weighed: the narrator's 'J’ai transcrit cet écrit, non comme une regle des sentimens qu’on doit suivre en matiere de religion, mais comme un exemple de la maniere dont on peut raisonner avec son Éleve' (S3, t. 5, p. 112) concerns teaching method, not belief; and he keeps the voices apart ('c’est moi-même, & non le Vicaire', S4, t. 6, p. 36, of a passage in the body of the book). Web transcription, cap 0.7."
+      how_known: "P42: the Vicar's words are a character's, so they count as Rousseau's only because texts in his own voice adopt them, at the certainty of the adopting text (P42 addendum, v8's call, ruling S2). Inside the working years, the 1762 letter owns the Profession (S4, t. 6, p. 52: 'je la tiendrai toujours pour l’Ecrit le meilleur & le plus utile'); after them, Lettres écrites de la montagne II names its first part, which carries A and B, as his own: 'toute la premiere partie de celle du Vicaire est affirmative ... Voilà, Messieurs, mes articles fondamentaux' (S5, t. 6, p. 171; P1). Counter-evidence weighed: the narrator's 'J’ai transcrit cet écrit, non comme une regle des sentimens qu’on doit suivre en matiere de religion, mais comme un exemple de la maniere dont on peut raisonner avec son Éleve' (S3, t. 5, p. 112) concerns teaching method, not belief; and he keeps the voices apart ('c’est moi-même, & non le Vicaire', S4, t. 6, p. 36, of a passage in the body of the book). Wikisource wording spot-checked against IA OCR of the 1782 Collection complète t. 5 (S8) and Beaumont ownership in t. 6 (S9), 2026-10-24; still capped 0.7 (named alt)."
       alternatives:
         - {value: 0, note: "A willing, intelligent creator distinct from the world.", cites: [{source: S3, locator: "t. 5, pp. 33–34"}]}
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "t. 5, pp. 25–29; p. 41"}, {source: S5, locator: "t. 6, pp. 192–195"}]
       rationale: "Scored on his account of nature (P6). Lawful nature: matter moves 'selon de certaines loix', and 'L’expérience & l’observation nous ont fait connoître les loix du mouvement'; the stated exception is a free will not bound by mechanism: 'L’homme est donc libre dans ses actions, &, comme tel animé d’une substance immatérielle ; c’est mon troisieme article de foi' (P27 anchor: a free will gives B 3 as the value, as for Descartes and Kant). Miracles are not admitted as part of how events go: in 1764 he defines one as 'une exception réelle & visible à ses Loix', grants that God can work them, says the highest ideas of divine wisdom 'seroient pour la négative', and that no one can know a fact to be a miracle ('Ils seroient mille, que je ne les en croirois pas'). Named alternative 4: no miracle is accepted, and the free will may be read as outside nature."
-      how_known: "The 1762 Profession (inside the working years, owned in the 1762 letter) carries the score; the 1764 letter is after the working years and counts at 0.5 for its own point (P1, under P20). The Vicar's words count as his under P42 and its addendum (ruling S2), as set out under A_locus. Web transcription, cap 0.7."
+      how_known: "The 1762 Profession (inside the working years, owned in the 1762 letter) carries the score; the 1764 letter is after the working years and counts at 0.5 for its own point (P1, under P20). The Vicar's words count as his under P42 and its addendum (ruling S2), as set out under A_locus. Key B phrases spot-checked against IA OCR t. 5 / t. 6 (S8, S9), 2026-10-24; capped 0.7 (named alt; 1764 miracle letter after span at 0.5 for its own point)."
       alternatives:
         - {value: 4, note: "No miracle admitted; strict lawfulness with the will placed outside nature.", cites: [{source: S5, locator: "t. 6, p. 193"}]}
-    C_ledger: {value: UNKNOWN, how_known: "The Profession's pages on the soul's survival and Providence's justice (t. 5, pp. 42–50) were not coded (coder's call; lead)."}
+    C_ledger:
+      value: 1
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S3, locator: "t. 5, pp. 42–50"}, {source: S4, locator: "t. 6, p. 52"}]
+      rationale: "Personal afterlife lean: if the soul is immaterial it can survive the body, and if it survives 'la Providence est justifiée'; 'tout ne finit pas pour nous avec la vie, tout rentre dans l’ordre à la mort'. Memory after death will make 'la félicité des bons & le tourment des méchans'; conscience then distinguishes 'le sort que chacun se sera préparé'. Limit: he refuses the word reward ('Je ne dis point que les bons seront récompensés; car quel autre bien peut attendre un être excellent, que d’exister selon sa nature? Mais je dis qu’ils seront heureux') and hedges whether survival lasts forever. Named alternative 2: next-world happiness/torment without a classical external reward schedule (DEISM-split territory)."
+      how_known: "Profession pages owned under P42 via Beaumont (S4, t. 6, p. 52: Profession 'l’Ecrit le meilleur & le plus utile'); OCR of the soul passage spot-checked in S8 (2026-10-24). Named alt → 0.7."
+      alternatives:
+        - {value: 2, note: "If the refusal of 'récompensés' and the conscience-memory mechanism are read as a thin next-world ledger without personal judgment.", cites: [{source: S3, locator: "t. 5, pp. 42–50"}]}
     D_authority:
       value: 3
       basis: written_profession
       certainty: 0.5
+      support: single
       cites: [{source: S3, locator: "t. 5, pp. 76; 97–100"}]
       rationale: "Reason and conscience lead: 'Que d’hommes entre Dieu & moi !'; he rejects 'l’obligation de la reconnoître' (revelation) as incompatible with God's justice, and 'quant aux dogmes qui n’influent ni sur les actions, ni sur la morale ... je ne m’en mets nullement en peine'. Religion keeps one limited say: the Gospel is to be respected 'en silence' where it can be neither rejected nor understood. Named alternative 4: no domain where revelation decides."
       how_known: "The Profession, owned in the 1762 letter (P42 addendum, ruling S2); contested reading, 0.5."
@@ -136,8 +150,8 @@ worldview:
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
       verified_against: "primary transcription"
-      verified_on: 2026-10-18
-      note: "Wikisource transcription linked to page images of the Geneva 1782 Collection complète; treated as a web copy (cap 0.7)."
+      verified_on: 2026-10-24
+      note: "Wikisource transcription of Geneva 1782 Collection complète; key wording spot-checked against IA OCR t. 5 (S8), 2026-10-24."
     - text: "Si la matiere mue me montre une volonté, la matiere mue selon de certaines loix me montre une intelligence : c’est mon second article de foi."
       cites: [{source: S3, locator: "t. 5, p. 29"}]
       date: "1762"
@@ -165,6 +179,15 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-18
       note: ""
+    - text: "Si l’âme est immatérielle, elle peut survivre au corps; & si elle lui survit, la Providence est justifiée. … Je me dirois : tout ne finit pas pour nous avec la vie, tout rentre dans l’ordre à la mort. … je ne doute point que ce souvenir ne fasse un jour la félicité des bons & le tourment des méchans. … Je ne dis point que les bons seront récompensés; car quel autre bien peut attendre un être excellent, que d’exister selon sa nature? Mais je dis qu’ils seront heureux"
+      cites: [{source: S3, locator: "t. 5, pp. 42–50"}, {source: S8, locator: "OCR of Profession soul/Providence block"}]
+      date: "1762"
+      context: "Profession de foi, after the third article of faith (free will / immaterial soul). Spoken by the Vicar; Rousseau owns the Profession in S4. Spelling normalized from the 1782 print (OCR long-s and broken letters in S8)."
+      axes: [C_ledger]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Wikisource page text aligned with IA OCR of Collection complète t. 5 (S8); ellipses mark omitted intervening sentences."
     - text: "Il y a tant de raisons solides pour & contre, que ne sachant à quoi me déterminer, je ne l’admets ni ne la rejette ; je rejette seulement l’obligation de la reconnoître, parce que cette obligation prétendue est incompatible avec la justice de Dieu"
       cites: [{source: S3, locator: "t. 5, p. 97"}]
       date: "1762"
@@ -175,32 +198,32 @@ worldview:
       verified_on: 2026-10-18
       note: "Sentence continues in the source."
     - text: "Monseigneur, je suis Chrétien, & sincérement Chrétien, selon la doctrine de l’Evangile. Je suis Chrétien, non comme un disciple des Prêtres, mais comme un disciple de Jésus-Christ."
-      cites: [{source: S4, locator: "t. 6, p. 52"}]
+      cites: [{source: S4, locator: "t. 6, p. 52"}, {source: S9, locator: "OCR Beaumont Chrétien passage"}]
       date: "1762-11-18"
       context: "Jean-Jacques Rousseau, citoyen de Genève, à Christophe de Beaumont, Archevêque de Paris, answering the archbishop's pastoral letter condemning Émile; dated 18 November 1762, published 1763. Just before, he says he will always hold the Profession 'pour l’Ecrit le meilleur & le plus utile dans le siecle où je l’ai publié'."
       axes: [A_locus, D_authority]
       kind: "published letter"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-18
-      note: "As above."
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Wikisource aligned with IA OCR t. 6 (S9): 'je fuis Chrétien , & fincérement Chrétien'."
     - text: "Un miracle est, dans un fait particulier, un acte immédiat de la puissance divine, un changement sensible dans l’ordre de la nature, une exception réelle & visible à ses Loix."
-      cites: [{source: S5, locator: "t. 6, p. 192 (Lettre III)"}]
+      cites: [{source: S5, locator: "t. 6, p. 192 (Lettre III)"}, {source: S9, locator: "OCR Montagne miracle definition"}]
       date: "1764"
       context: "Lettres écrites de la montagne, third letter, answering the Genevan condemnation; he grants 'quel homme a jamais nié que Dieu pût faire des miracles ?', says the highest ideas of divine wisdom 'seroient pour la négative', and of witnesses 'Ils seroient mille, que je ne les en croirois pas' (p. 193). After the working years (P1, under P20)."
       axes: [B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-18
-      note: "As above."
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Wikisource aligned with IA OCR t. 6 (S9): 'exception réelle & vifible à fes Loix'."
     - text: "Presque toute la profession de foi de la Julie est affirmative ; toute la premiere partie de celle du Vicaire est affirmative, la moitié de la seconde partie est encore affirmative ; une partie du chapitre de la Religion civile est affirmative ; la Lettre à M. l’Archevêque de Paris est affirmative. Voilà, Messieurs, mes articles fondamentaux : voyons les vôtres."
       cites: [{source: S5, locator: "t. 6, p. 171 (Lettre II)"}]
       date: "1764"
       context: "Lettres écrites de la montagne, second letter, answering the Genevan ministers' charge that he left the fundamentals of his Christianity unstated. After the working years (P1, under P20)."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-19
-      note: "Own-voice adoption of the Profession's first part (P42 addendum, ruling S2)."
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Own-voice adoption of the Profession's first part (P42 addendum, ruling S2); OCR t. 6 confirms 'mes articles fondamentaux' (S9)."
     - text: "J’Ai transcrit cet écrit, non comme une regle des sentimens qu’on doit suivre en matiere de religion, mais comme un exemple de la maniere dont on peut raisonner avec son Éleve, pour ne point s’écarter de la méthode que j’ai tâché d’établir."
       cites: [{source: S3, locator: "t. 5, p. 112"}]
       date: "1762"
@@ -212,13 +235,13 @@ worldview:
       note: "Counter-evidence to the adoption, weighed under P42: it concerns teaching method, not belief (ruling S2)."
   changes_over_life:
     - {value: "Converted to Roman Catholicism in Turin (April 1728); readmitted to the Genevan Reformed church in 1754, regaining his citizenship", year: 1754, certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP. The 1754 return precedes four of the five listed works; the affiliation change does not bear on the axes read (coder's call)."}
-  coder_notes: "Coder's call. The Profession is the Vicar's speech (P42), but Rousseau owns it in his own voice in the letter to Beaumont (dated 18 November 1762, inside the working years) and names its first part as 'mes articles fondamentaux' in 1764 (LEM II, t. 6, p. 171), so it is scored as his written profession under the P42 addendum (ruling S2, v8's call). Span ends with Émile and The Social Contract (1762); the Confessions (finished in later life, published 1782–89) would extend it to about 1770 without changing a value, and the 1764 Lettres would then fall inside it. Ruling S1 (v8's call): P27's 'declines to contest it' covers the Vicar's 'je ne l’admets ni ne la rejette', so CHRIST stays. Leads: the Lettre à Voltaire sur la Providence (1756); the Rêveries, third walk."
+  coder_notes: "Coder's call. The Profession is the Vicar's speech (P42), but Rousseau owns it in his own voice in the letter to Beaumont (dated 18 November 1762, inside the working years) and names its first part as 'mes articles fondamentaux' in 1764 (LEM II, t. 6, p. 171), so it is scored as his written profession under the P42 addendum (ruling S2, v8's call). Span ends with Émile and The Social Contract (1762); the Confessions (finished in later life, published 1782–89) would extend it to about 1770 without changing a value, and the 1764 Lettres would then fall inside it. Ruling S1 (v8's call): P27's 'declines to contest it' covers the Vicar's 'je ne l’admets ni ne la rejette', so CHRIST stays. Deepen D1 (2026-10-24): IA OCR of Collection complète t. 5–6 spot-checked against Wikisource; C coded 1 @0.7; A/B support labeled corroborated (already computed); no A/B score change; chart still dark filled. Leads: the Lettre à Voltaire sur la Providence (1756); the Rêveries, third walk."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Genevan citizen family", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP."}
-  religious_heritage_by_birth: {value: "Calvinist (Geneva)", certainty: 0.5, cites: [{source: S2, locator: "§1"}], how_known: "SEP (Calvinist city-state; he later reconverted to Calvinism)."}
-  baptism_or_initiation: {value: TODO}
+  religious_heritage_by_birth: {value: "Calvinist (Geneva)", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S7, locator: "Early life (baptized in the cathedral)"}], how_known: "SEP (Calvinist city-state; he later reconverted to Calvinism); Wikipedia baptism in Geneva cathedral."}
+  baptism_or_initiation: {value: "Baptized 4 July 1712 in Geneva's cathedral (St. Pierre)", certainty: 0.7, cites: [{source: S7, locator: "Early life (Damrosch 2005, p. 7)"}], how_known: "Wikipedia, citing Damrosch; Britannica/SEP silent on the date."}
   childhood_catechism: {value: TODO}
 
 timing:
@@ -253,9 +276,11 @@ review:
   data_quality_flags:
     - "First Discourse: Britannica 1750, SEP publication 1751; 1750 kept (prize, P30)."
     - "Mother's death: Britannica 'in childbirth', SEP 'nine days after his birth'."
-    - "Primary texts read in Wikisource's transcription of the 1782 Collection complète (page images linked); treated as a web copy (cap 0.7); page numbers are the printed ones."
+    - "Primary texts read in Wikisource's transcription of the 1782 Collection complète; key quotes spot-checked against IA OCR of t. 5 and t. 6 (S8, S9), 2026-10-24; page numbers are the printed ones."
+    - "Baptism date from Wikipedia citing Damrosch; not in Britannica/SEP body used."
   open_questions:
-    - "Code C from the Profession's pages on the soul and Providence (t. 5, pp. 42–50)."
+    - "Lettre à Voltaire sur la Providence (1756) unread — may firm first_evidence of LIO-type views."
+    - "Rêveries, third walk, unread."
 
 sources:
   - id: S1
@@ -266,6 +291,7 @@ sources:
     url: "https://www.britannica.com/biography/Jean-Jacques-Rousseau"
     accessed: 2026-10-18
     reliability_note: "Signed article. Body only; the AI-generated Top Questions and At a Glance are not cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, institutions, collaborators, lane_b]
   - id: S2
     type: tertiary
@@ -275,6 +301,7 @@ sources:
     url: "https://plato.stanford.edu/entries/rousseau/"
     accessed: 2026-10-18
     reliability_note: "Signed scholarly encyclopedia; §1 'Life' used."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators, review]
   - id: S3
     type: primary
@@ -283,7 +310,8 @@ sources:
     citation: "Rousseau, J.-J. Émile, ou De l'éducation, Livre IV (Profession de foi du vicaire savoyard), in Collection complète des œuvres de J. J. Rousseau, t. 5 (Genève, 1782). Wikisource transcription: https://fr.wikisource.org/wiki/Émile,_ou_De_l’éducation/Édition_1782/Livre_IV"
     url: "https://fr.wikisource.org/wiki/%C3%89mile,_ou_De_l%E2%80%99%C3%A9ducation/%C3%89dition_1782/Livre_IV"
     accessed: 2026-10-18
-    reliability_note: "Proofread transcription keyed to page images of the 1782 edition; printed page numbers from the page links; web copy, cap 0.7."
+    reliability_note: "Proofread transcription keyed to page images of the 1782 edition; printed page numbers from the page links. Key Profession phrases (volonté meut; matière mue selon; Être qui veut; libre dans ses actions; soul/Providence; ne l’admets ni) spot-checked against IA OCR t. 5 (S8), 2026-10-24."
+    source_quality: "primary / own words"
     used_for: [worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -292,7 +320,8 @@ sources:
     citation: "Rousseau, J.-J. Jean-Jacques Rousseau, citoyen de Genève, à Christophe de Beaumont, archevêque de Paris (dated 18 November 1762), in Collection complète des œuvres de J. J. Rousseau, t. 6 (Genève, 1782), pp. 3–118. Wikisource transcription: https://fr.wikisource.org/wiki/À_Christophe_de_Beaumont"
     url: "https://fr.wikisource.org/wiki/%C3%80_Christophe_de_Beaumont"
     accessed: 2026-10-18
-    reliability_note: "As S3."
+    reliability_note: "As S3. 'je suis Chrétien, & sincérement Chrétien' and Profession-ownership lines spot-checked against IA OCR t. 6 (S9), 2026-10-24."
+    source_quality: "primary / own words"
     used_for: [worldview, timing]
   - id: S5
     type: primary
@@ -301,7 +330,8 @@ sources:
     citation: "Rousseau, J.-J. Lettres écrites de la montagne (1764), Lettre II (p. 171) and Lettre III (pp. 179–216), in Collection complète des œuvres de J. J. Rousseau, t. 6 (Genève, 1782). Wikisource transcription: https://fr.wikisource.org/wiki/Lettres_écrites_de_la_montagne/Texte_entier"
     url: "https://fr.wikisource.org/wiki/Lettres_%C3%A9crites_de_la_montagne/Texte_entier"
     accessed: 2026-10-18
-    reliability_note: "As S3. After the working years (P1 cap 0.5, under P20)."
+    reliability_note: "As S3. After the working years (P1 cap 0.5, under P20). 'mes articles fondamentaux' and miracle definition spot-checked against IA OCR t. 6 (S9), 2026-10-24."
+    source_quality: "primary / own words"
     used_for: [worldview]
   - id: S6
     type: secondary
@@ -311,7 +341,38 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-18
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S7
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Jean-Jacques Rousseau.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Jean-Jacques_Rousseau"
+    accessed: 2026-10-24
+    reliability_note: "Dual-bio check against Britannica (P50). Used for identity/basics consensus and baptism (Early life, citing Damrosch 2005, p. 7); not for axis scores."
+    source_quality: "reference entry"
+    used_for: [identity, basics, heritage]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Jean-Jacques Rousseau"
+    citation: "Rousseau, J.-J. Collection complète des œuvres de J. J. Rousseau, Tome cinquième (Genève, 1782). Internet Archive OCR: https://archive.org/details/collectioncomple05rous (Fisher Toronto / University of Ottawa copy; _djvu.txt consulted 2026-10-24)."
+    url: "https://archive.org/details/collectioncomple05rous"
+    accessed: 2026-10-24
+    reliability_note: "Archive scan OCR only (long-s and broken letters). Used to spot-check Wikisource Profession wording in S3; page images not viewed page-by-page."
+    source_quality: "archive scan (OCR only)"
+    used_for: [worldview]
+  - id: S9
+    type: primary
+    kind: "published work by the subject"
+    author: "Jean-Jacques Rousseau"
+    citation: "Rousseau, J.-J. Collection complète des œuvres de J. J. Rousseau, Tome sixième (Genève, 1782). Internet Archive OCR: https://archive.org/details/collectioncomple06rous (Fisher Toronto / University of Ottawa copy; _djvu.txt consulted 2026-10-24)."
+    url: "https://archive.org/details/collectioncomple06rous"
+    accessed: 2026-10-24
+    reliability_note: "Archive scan OCR only. Used to spot-check Beaumont Chrétien self-label, Montagne 'articles fondamentaux', and miracle definition in S4/S5."
+    source_quality: "archive scan (OCR only)"
+    used_for: [worldview]
 ---
 
 # Jean-Jacques Rousseau
@@ -320,7 +381,7 @@ sources:
 
 ## Summary
 
-Jean-Jacques Rousseau (1712–1778), Genevan-born philosopher and writer [S1]. Draft: primary_system CHRIST (0.5; DEISM blocked by P27, CLASS_THEISM rejected); A 1 at 0.7 (alt 0); B 3 at 0.7 (alt 4); D 3 at 0.5 (alt 4); mid_basin true (0.7). Plotted.
+Jean-Jacques Rousseau (1712–1778), Genevan-born philosopher and writer [S1; S7]. Draft: primary_system CHRIST (0.5; DEISM blocked by P27, CLASS_THEISM rejected); A 1 at 0.7 (alt 0; corroborated); B 3 at 0.7 (alt 4; corroborated); C 1 at 0.7 (alt 2; corroborated); D 3 at 0.5 (alt 4; single); mid_basin true (0.7). Plotted dark filled.
 
 ## Life and work
 
@@ -340,7 +401,7 @@ Calvinist Geneva; Catholic convert at sixteen; self-taught [S1; S2].
 
 ## Heritage (context only)
 
-Genevan Calvinist [S2].
+Genevan Calvinist; baptized 4 July 1712 [S2; S7].
 
 ## Timing
 
@@ -352,9 +413,11 @@ Everything in this section is Lane B: labeled belief, not a finding. A willing G
 
 ## Open questions
 
-- Ruling question R-S1 (DEISM and P27).
-- C from the Profession (t. 5, pp. 42–50).
+- Lettre à Voltaire sur la Providence (1756) unread.
+- Rêveries, third walk, unread.
 
 ## Research log
 
 - 2026-10-18: Read Britannica (live, first sections), SEP §1, and the three French texts in Wikisource (page-linked 1782 edition).
+- 2026-10-19: Audit fixes batch S (rulings S1, S2).
+- 2026-10-24: Deepen D1 — Wikipedia EN dual bio; IA OCR Collection complète t. 5–6 spot-check (collectioncomple05rous / 06rous); P47 on all sources; A/B/D support labels; C coded 1 @0.7; baptism filled. No fallacy_catalog. No figures/.
