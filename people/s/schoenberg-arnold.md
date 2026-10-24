@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #143): opened DeVoto full PDF (S4) for in-span Kandinsky letters (Stein Letters pp. 88–93 via DeVoto quotation); Style and Idea 'Composition with Twelve Tones' ch.1 web transcription (S7, 1941 UCLA lecture); ASC reconversion draft 12 Aug 1933 (S8, German). Added statements: Kandinsky 20 Apr 1923 ('I am a Jew' — ethnic identity under antisemitism, not JUDA locus profession); Kandinsky 4 May 1923 ('task that their God has imposed on them' — third-person about Jewry, not first-person profession); Composition with Twelve Tones Divine Model / 'Lord said Let there be Light' (post-span artistic metaphor, after 1933 JUDA return); Aug 1933 reconversion note (Religionswechsel only for religious and national cause — clear own-voice but after coded span). Goldschmied 1890 'unbeliever' remains pre-span. P42: Moses und Aron / Jakobsleiter libretti still do not code the person. primary stays BELOW_THRESHOLD (leads JUDA from 1933 after span; CHRIST nominal); A stays BELOW_THRESHOLD; B UNKNOWN (P30 not scientist); mid UNKNOWN; not plotted. P47 source_quality on all sources. Style and Idea full Stein volume IA borrow-restricted this pass. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (RQ-Z8-1, v8's call on the auditor's advice): premise corrected. The Dance around the Golden Calf from Moses und Aron premiered in Darmstadt on 2 July 1951 (Scherchen; Schott, Universal Edition), but an excerpt premiere dates only the excerpt, so the work's year and the span end stay UNKNOWN. coder_note added: dated 1951, the span would include the 1933 return to Judaism. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (WEAKEN): 'begun in 1930' is a composition start, not a P30 #1 dating event. Moses und Aron was neither staged nor published in his lifetime (unfinished; he died 1951) [premise corrected at Z8: an excerpt premiered in 1951]; item year and span end set to UNKNOWN (Al-Ghazali precedent). Span 1899–1930 -> UNKNOWN (starts 1899)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fix (Z5-08, P26): question-box cite for Moses und Aron and the 1932 span end removed. Re-sourced to the Britannica body ('Evolution from tonality': 'his greatest work, the opera Moses und Aron (begun in 1930)', as excerpted by search, like S5's 1921 passage). Span 1899–1932 -> 1899–1930 (0.5). Worldview unchanged; readmission to Judaism (July 1933) still just after the span. Not plotted."}
@@ -85,13 +86,13 @@ worldview:
   nominal_affiliations:
     - {value: "Lutheran (baptized 1898)", certainty: 0.7, cites: [{source: S4, locator: "p. 2"}], how_known: "DeVoto."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Nominal Lutheran over most of the span (1898–1933), readmitted to Judaism July 1933, just after it (S3). The 1912 Dehmel letter is a plan for an oratorio, not a profession. Leads JUDA (late span, Moses und Aron) and CHRIST (nominal)."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Nominal Lutheran over most of the coded span; readmitted to Judaism July 1933, just after it (S3). In-span own voice: Dehmel 1912 is an oratorio plan (P42-adjacent); Kandinsky 1923 affirms Jewish identity under antisemitism, not a JUDA locus/cause profession; May 1923 'their God' is third-person about Jewry. Clear religious own-voice for the return (S8, Aug 1933) and Style and Idea Divine Model (S7, 1941) fall after the coded span. Leads JUDA (1933+) and CHRIST (nominal)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: JUDA, reason: "Lead: readmission 1933 (S3), after the span's end."}
+    - {code: JUDA, reason: "Lead: readmission July 1933 (S3) and Aug 1933 own-voice that a Religionswechsel may have only religious and national cause (S8) — both after the coded span end; in-span Kandinsky identity talk does not by itself code JUDA."}
     - {code: CHRIST, reason: "Lead: Lutheran baptism 1898; DeVoto suggests his theology did not match Christian concepts."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Own words read (Dehmel letter 1912) concern an oratorio's hero 'finding God'; no locus stated. Libretti (Jakobsleiter, Moses und Aron) are characters' words (P42)."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "No clear own-voice locus profession inside the coded span. Dehmel 1912 is an oratorio plan; Kandinsky 1923 is ethnic identity / collective 'their God', not 'my God' or a locus doctrine; Moses und Aron / Jakobsleiter are characters' words (P42). Post-span S7 Divine Model and S8 reconversion note do not lift the coded A."}
     B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); nothing read on nature."}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Not read."}
@@ -99,18 +100,54 @@ worldview:
   mid_basin: {value: UNKNOWN, how_known: "B_cause is UNKNOWN, which takes precedence (§6, P19)."}
   statements:
     - text: "For a long time I have been wanting to write an oratorio on the following subject: modern man, having passed through materialism, socialism, and anarchy and, despite having been an atheist, still having in him some residue of ancient faith (in the form of superstition), wrestles with God (see also Strindberg's 'Jacob Wrestling') and finally succeeds in finding God and becoming religious. Learning to pray!"
-      cites: [{source: S2, locator: "letter 11, p. 35"}]
+      cites: [{source: S2, locator: "letter 11, p. 35"}, {source: S4, locator: "p. 2–3 (quotes Stein)"}]
       date: "1912-12-13"
       context: "Letter to Richard Dehmel from Berlin-Zehlendorf, in English translation (Stein ed.)."
       axes: [A_locus]
       kind: "private letter"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-19
-      note: "Private letter printed after his death (Stein ed.); scan on a document-sharing site; plan for a work, read by many as autobiographical."
+      verified_on: 2026-10-24
+      note: "Private letter printed after his death (Stein ed.); plan for a work's hero, not a first-person profession. Deepen: wording matched in DeVoto (S4)."
+    - text: "For I have at last learned the lesson that has been forced upon me during this year, and I shall not ever forget it. It is that I am not a German, not a European, indeed perhaps scarcely even a human being (at least, the Europeans prefer the worst of their race to me), but I am a Jew. I am content that it should be so!"
+      cites: [{source: S2, locator: "pp. 88–89 (Stein ed., per DeVoto n.3)"}, {source: S4, locator: "p. 4"}]
+      date: "1923-04-20"
+      context: "Letter to Wassily Kandinsky declining Bauhaus involvement after reports of antisemitism there; inside the coded span."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "Ethnic/peoplehood identity under antisemitism, not a religious locus profession (does not by itself code JUDA). Stein Letters not opened this pass (IA borrow-restricted); quotation from DeVoto citing Stein."
+    - text: "...they will not be able to exterminate those much tougher elements thanks to whose endurance Jewry has maintained itself unaided against the whole of mankind for 20 centuries. For these are evidently so constituted that they can accomplish the task that their God has imposed on them: to survive in exile, uncorrupted and unbroken, until the hour of salvation comes!"
+      cites: [{source: S2, locator: "pp. 89–93 (Stein ed., per DeVoto n.4)"}, {source: S4, locator: "p. 5"}]
+      date: "1923-05-04"
+      context: "Second letter to Kandinsky; inside the coded span."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "Third-person about Jewry ('their God'), not 'my God' / first-person profession. Identity and peoplehood under threat; does not lift A. Same verification path as the April letter."
+    - text: "To understand the very nature of creation one must acknowledge that there was no light before the Lord said: 'Let there be Light.' And since there was not yet light, the Lord's omniscience embraced a vision of it which only His omnipotence could call forth. [...] In fact, the concept of creator and creation should be formed in harmony with the Divine Model; inspiration and perfection, wish and fulfillment, will and accomplishment coincide spontaneously and simultaneously."
+      cites: [{source: S7, locator: "Composition with Twelve Tones, ch. 1 (opening)"}]
+      date: "1941"
+      context: "Style and Idea essay / UCLA lecture 'Composition with Twelve Tones' (1); after the coded span and after the July 1933 return to Judaism."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "unofficial web copy"
+      verified_on: 2026-10-24
+      note: "Artistic creation metaphor (Divine Model vs human composer), not a clear CHRIST or JUDA locus profession for the coded span. Post-span; does not lift coded A."
+    - text: "Ein Religionswechsel darf nur religiösen und nationalen Anlass haben. Es wäre schmählich, mit diesem Schritt eine Nebenabsicht zu verbinden."
+      cites: [{source: S8, locator: "T56.02 / Rekonversion, 12.VIII.1933"}]
+      date: "1933-08-12"
+      context: "Draft reply rejecting the claim that his Paris readmission to Judaism was only a protest gesture against Nazi persecution; after the coded span."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "unofficial web copy"
+      verified_on: 2026-10-24
+      note: "Own-voice: a change of religion may have only a religious and national cause. Clear for the 1933 return, but after the coded span end (RQ-Z8-1). English sense from ASC transcription page."
   changes_over_life:
     - {value: "Baptized Lutheran", year: 1898, certainty: 0.7, cites: [{source: S4, locator: "p. 2"}], how_known: "DeVoto."}
-    - {value: "Readmitted to Judaism, Liberal synagogue, Paris (witnesses Marianoff and Chagall)", year: 1933, certainty: 0.7, cites: [{source: S3, locator: "full report"}], how_known: "JTA report of 25 July 1933."}
-  coder_notes: "RQ-Z8-1: if the work were dated by the 1951 Darmstadt excerpt premiere, the span would end in 1951 and the July 1933 readmission to Judaism would fall inside it, so primary_system (and the JUDA lead) would need recoding. Span end now UNKNOWN (Z7 audit): the worldview values were coded against a span ending 1930 (earlier 1932); if a dating event for Moses und Aron or another lasting work after July 1933 were found, the JUDA readmission would fall inside the span and primary_system could change. Unused own-voice leads in DeVoto (S4): the 1923 letters to Kandinsky, inside the span ('but I am a Jew'; the Jews' 'task that their God has imposed on them'), about identity rather than profession; and the 1890 letter to Malvina Goldschmied, before the span ('as an unbeliever myself'). Read these and later essays for A."
+    - {value: "Readmitted to Judaism, Liberal synagogue, Paris (witnesses Marianoff and Chagall); own-voice draft 12 Aug 1933: Religionswechsel only for religious and national cause (S8)", year: 1933, certainty: 0.7, cites: [{source: S3, locator: "full report"}, {source: S8, locator: "T56.02"}], how_known: "JTA 25 July 1933; ASC reconversion draft."}
+  coder_notes: "RQ-Z8-1 stands: if Moses und Aron or another lasting work were dated after July 1933 (e.g. by the 1951 Darmstadt excerpt premiere — rejected at Z8 for dating only the excerpt), the JUDA readmission and S8 own-voice would fall inside the span and primary_system could change. Deepen D1 read the unused DeVoto leads: Kandinsky 1923 = identity, not profession; Goldschmied 1890 'unbeliever' is pre-span. Style and Idea full Stein/UC Press volume was IA borrow-restricted; opened the 1941 Composition with Twelve Tones opening via ASC/Belmont web (S7) — post-span Divine Model metaphor. Post-span also: Two Speeches on the Jewish Situation (1934–35), Israel Academy letter (DeVoto n.8 / Stein pp. 286–287) with Mosaic monotheism language. P42 unchanged for libretti. Not a scientist (P30) → B UNKNOWN."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -139,14 +176,18 @@ institutions: []
 collaborators:
   - {value: "Alexander von Zemlinsky", relation: teacher, note: "harmony, counterpoint, composition", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
   - {value: "Richard Dehmel", relation: correspondent, note: "poet of Verklärte Nacht", certainty: 0.7, cites: [{source: S2, locator: "letter 11"}], how_known: "Letters."}
+  - {value: "Wassily Kandinsky", relation: correspondent, note: "1923 letters on Jewish identity and Bauhaus antisemitism", certainty: 0.7, cites: [{source: S4, locator: "p. 4–5"}], how_known: "DeVoto quoting Stein Letters."}
 
 review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 148"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Only own words read are an oratorio plan; the Britannica body was read only through 'First major works' plus a search excerpt on 1921."
+    - "Stein Letters and Style and Idea full volumes were IA borrow-restricted this pass; Kandinsky quotes rest on DeVoto's secondary quotation of Stein (P21)."
+    - "Span end UNKNOWN (Moses und Aron); coded worldview still rests on a span ending before July 1933 (RQ-Z8-1)."
   open_questions:
-    - "Own prose on God (Kandinsky letters 1922–23; 'Composition with Twelve Tones')."
+    - "Primary check of Stein Letters pp. 88–93 against an open scan."
+    - "In-span Style and Idea essays (e.g. Relationship to the Text 1912; Mahler 1912) if a full volume opens."
+    - "Dating event for Moses und Aron that would pull July 1933 inside the span (RQ-Z8-1)."
 
 sources:
   - id: S1
@@ -157,6 +198,7 @@ sources:
     url: "https://www.britannica.com/biography/Arnold-Schoenberg"
     accessed: 2026-10-19
     reliability_note: "Signed article; body cited, question boxes flagged (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, lane_b, collaborators]
   - id: S2
     type: primary
@@ -165,7 +207,8 @@ sources:
     citation: "Schoenberg, Arnold. Letters, ed. Erwin Stein, tr. Eithne Wilkins and Ernst Kaiser (London: Faber, 1964), letter 11, p. 35; scan at https://www.yumpu.com/en/document/view/8232991/arn-ld-schoenberg-letters"
     url: "https://www.yumpu.com/en/document/view/8232991/arn-ld-schoenberg-letters"
     accessed: 2026-10-19
-    reliability_note: "Printed edition via an unofficial scan; quoted identically by the Berlin Philharmonic and DeVoto."
+    reliability_note: "Printed edition via an unofficial scan; quoted identically by the Berlin Philharmonic and DeVoto. Full Stein volume not re-opened this pass (IA borrow-restricted)."
+    source_quality: "unofficial web copy"
     used_for: [worldview, collaborators]
   - id: S3
     type: secondary
@@ -175,6 +218,7 @@ sources:
     url: "https://www.jta.org/archive/arnold-schoenberg-composer-is-reconverted-to-judaism"
     accessed: 2026-10-19
     reliability_note: "Contemporary news report (it gives 1921 for his leaving Judaism, against 1898 elsewhere)."
+    source_quality: "other"
     used_for: [worldview]
   - id: S4
     type: secondary
@@ -182,9 +226,10 @@ sources:
     author: "Mark DeVoto"
     citation: "DeVoto, Mark. \"Arnold Schoenberg and Judaism: The Harder Road\" (lecture, 1990). Tufts University. https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/6/2974/files/2015/10/Schoenberg.pdf"
     url: "https://bpb-us-e1.wpmucdn.com/sites.tufts.edu/dist/6/2974/files/2015/10/Schoenberg.pdf"
-    accessed: 2026-10-19
-    reliability_note: "Signed lecture by a Schoenberg scholar; full lecture read (PDF)."
-    used_for: [childhood, worldview, heritage]
+    accessed: 2026-10-24
+    reliability_note: "Signed lecture by a Schoenberg scholar; full lecture PDF read this deepen (quotes Stein Letters for Kandinsky 1923)."
+    source_quality: "scholarly edition or monograph"
+    used_for: [childhood, worldview, heritage, collaborators]
   - id: S5
     type: tertiary
     kind: encyclopedia
@@ -193,6 +238,7 @@ sources:
     url: "https://www.britannica.com/biography/Arnold-Schoenberg"
     accessed: 2026-10-19
     reliability_note: "Same article as S1; the 1921 passage was seen only in a search excerpt."
+    source_quality: "reference entry"
     used_for: [contribution]
   - id: S6
     type: secondary
@@ -202,12 +248,33 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Arnold Schoenberg"
+    citation: 'Schoenberg, Arnold. "Composition with Twelve Tones" (1) (1941 UCLA lecture), in Style and Idea; web transcription ch. 1 at https://eas.schoenbergmusic.com/composition-with-twelve-tones/schoenberg-12-tone-lecture/chapter-1/ (Arnold Schönberg Center & Belmont Music Publishers).'
+    url: "https://eas.schoenbergmusic.com/composition-with-twelve-tones/schoenberg-12-tone-lecture/chapter-1/"
+    accessed: 2026-10-24
+    reliability_note: "Estate/center web transcription of a Style and Idea essay; full Stein volume IA borrow-restricted this pass."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Arnold Schoenberg"
+    citation: "Schoenberg, Arnold. Rekonversion draft (T56.02), 12 August 1933. Arnold Schönberg Center writings transcription https://archive.schoenberg.at/writings/transcription.php?action=view&id_transcription=2193 (URN at-asc-T021935)."
+    url: "https://archive.schoenberg.at/writings/transcription.php?action=view&id_transcription=2193"
+    accessed: 2026-10-24
+    reliability_note: "ASC transcription of Schoenberg's German draft reply; live page timed out this pass — German text taken from ASC search/catalog excerpt and matched to the published first line."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
 ---
 
 ## Summary
 
-Arnold Schoenberg (1874–1951), composer [S1]. Draft: primary BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN. Not plotted.
+Arnold Schoenberg (1874–1951), composer [S1]. Deepen D1: primary BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -223,7 +290,7 @@ Shopkeeper's son; self-taught with Zemlinsky [S1].
 
 ## Adult working worldview
 
-Lutheran 1898, Jewish again 1933 [S3, S4]; oratorio plan of 1912 [S2].
+Lutheran 1898, Jewish again 1933 [S3, S4, S8]. In-span own voice: Dehmel oratorio plan 1912 [S2]; Kandinsky identity letters 1923 [S2/S4] — not locus professions. Post-span: Style and Idea Divine Model 1941 [S7]; reconversion note Aug 1933 [S8]. Libretti under P42.
 
 ## Heritage (context only)
 
@@ -239,8 +306,11 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Own prose on God.
+- Primary Stein Letters check for Kandinsky 1923.
+- In-span Style and Idea essays if a full volume opens.
+- RQ-Z8-1 dating that would bring July 1933 inside the span.
 
 ## Research log
 
 - 2026-10-19: Read Britannica (Newlin), JTA 1933, DeVoto excerpt, Dehmel letter.
+- 2026-10-24: Deepen D1 — full DeVoto PDF; Kandinsky 1923 via DeVoto/Stein; Composition with Twelve Tones ch.1 (ASC/Belmont web); ASC reconversion draft 12 Aug 1933; Style and Idea IA borrow-restricted. Codes unchanged.
