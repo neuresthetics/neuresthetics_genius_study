@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 10
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #43). P47 source_quality on S1–S14. P48 support: corroborated written on A–E (already computed). Re-verified Molecules (1873) A/B quotes against Victorian Web Nature transcription (S14). Baptism 1831-07-29 at St Andrew's (now St Andrew's & St George's), Edinburgh (Clerk Maxwell Foundation walking tour S14). Schooling run_by added. A 0 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. E still 3 @0.5 (Theerman paywalled). No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: C_ledger certainty 0.7 -> 0.5 (prayers have no judgement or reward language). Consistency pass (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the coder notes name B = 4 as plausible; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
@@ -109,11 +110,11 @@ childhood:
     - {value: "An only child", role: "sibling position", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S11, locator: "section 2"}], how_known: "Two sources."}
   household_circumstances: {value: "Comfortable: a landed family. The family lived at Glenlair, the house on the Middlebie estate in Kirkcudbrightshire, and stayed with his father's sister in Edinburgh during his school years.", certainty: 1.0, cites: [{source: S1, locator: "Early life ('a comfortable middle-class background')"}, {source: S2, locator: "Biography (Glenlair; 31 Heriot Row)"}], how_known: "Two sources agree."}
   schooling:
-    - {value: "Taught at home by his mother until her last illness in 1839", stage: home, years: "to 1839", ages: "to 8", certainty: 0.7, cites: [{source: S3, locator: "p. 32"}], how_known: "One contemporary biography."}
-    - {value: "A private tutor at Glenlair; the arrangement failed", stage: tutor, years: "c. 1839–1841", certainty: 1.0, cites: [{source: S1, locator: "Early life ('a dull and uninspired tutor')"}, {source: S2, locator: "Biography ('A 16 year old boy was hired to act as tutor')"}], how_known: "Two sources agree that a tutor was tried and did not work."}
-    - {value: "Edinburgh Academy", stage: "grammar or secondary school", institution: "Edinburgh Academy", years: "1841–1847", ages: "10–16", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography (arrived 18 November 1841)"}], how_known: "Two sources agree on the start; the end is his entry to the university in November 1847 (S2)."}
-    - {value: "University of Edinburgh: mathematics (Kelland), natural philosophy (J. D. Forbes) and logic (William Hamilton)", stage: university, institution: "University of Edinburgh", years: "1847–1850", ages: "16–19", certainty: 1.0, cites: [{source: S2, locator: "Biography (November 1847)"}, {source: S1, locator: "Early life (entered at 16)"}], how_known: "Two sources agree."}
-    - {value: "University of Cambridge: Peterhouse for one term, then Trinity College; Second Wrangler in 1854", stage: university, institution: "Peterhouse and Trinity College, Cambridge", years: "1850–1854", ages: "19–23", certainty: 1.0, cites: [{source: S2, locator: "Biography (October 1850)"}, {source: S3, locator: "pp. 134, 176"}], how_known: "Two sources agree."}
+    - {value: "Taught at home by his mother until her last illness in 1839", stage: home, run_by: family, years: "to 1839", ages: "to 8", certainty: 0.7, cites: [{source: S3, locator: "p. 32"}], how_known: "One contemporary biography."}
+    - {value: "A private tutor at Glenlair; the arrangement failed", stage: tutor, run_by: family, years: "c. 1839–1841", certainty: 1.0, cites: [{source: S1, locator: "Early life ('a dull and uninspired tutor')"}, {source: S2, locator: "Biography ('A 16 year old boy was hired to act as tutor')"}], how_known: "Two sources agree that a tutor was tried and did not work."}
+    - {value: "Edinburgh Academy", stage: "grammar or secondary school", run_by: private, institution: "Edinburgh Academy", years: "1841–1847", ages: "10–16", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography (arrived 18 November 1841)"}], how_known: "Two sources agree on the start; the end is his entry to the university in November 1847 (S2). Schema 1.3 run_by: independent fee-paying school."}
+    - {value: "University of Edinburgh: mathematics (Kelland), natural philosophy (J. D. Forbes) and logic (William Hamilton)", stage: university, run_by: "state or municipal", institution: "University of Edinburgh", years: "1847–1850", ages: "16–19", certainty: 1.0, cites: [{source: S2, locator: "Biography (November 1847)"}, {source: S1, locator: "Early life (entered at 16)"}], how_known: "Two sources agree."}
+    - {value: "University of Cambridge: Peterhouse for one term, then Trinity College; Second Wrangler in 1854", stage: university, run_by: "religious body", institution: "Peterhouse and Trinity College, Cambridge", years: "1850–1854", ages: "19–23", certainty: 1.0, cites: [{source: S2, locator: "Biography (October 1850)"}, {source: S3, locator: "pp. 134, 176"}], how_known: "Two sources agree. Schema 1.3 run_by: Anglican colleges of Cambridge."}
   early_mathematics: {value: "advanced mathematics", ages: "by 14 to 18", description: "By the time of his 1846 ovals paper (age 14) he had had 'no instruction in mathematics beyond a few books of Euclid and the merest elements of Algebra' (Tait, quoted in S3 p. 87). From 16 he studied university mathematics under Kelland at Edinburgh (S2).", certainty: 1.0, cites: [{source: S3, locator: "p. 87"}, {source: S2, locator: "Biography (ovals paper at 14; Kelland's class from November 1847)"}, {source: S1, locator: "Early life (first paper at 14)"}], how_known: "Three sources agree on the ovals paper at 14 and university mathematics from 16."}
   early_geometric_style_reasoning: {value: "Yes, documented. Euclid at the Edinburgh Academy before age 14. His school manuscripts of 1846–47 (on ovals, meloids and trifocal curves) were, in his schoolfellow Tait's words, 'drawn up in strict geometrical form, and divided into consecutive propositions'. At 16 he took William Hamilton's logic class.", certainty: 1.0, cites: [{source: S3, locator: "p. 87 (Tait's recollection)"}, {source: S2, locator: "Biography (logic class taught by William Hamilton)"}], how_known: "Tait saw and kept the manuscripts; S2 confirms the logic class. Facts only; Lane B reading is in lane_b."}
   early_science_exposure:
@@ -162,6 +163,7 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S8, locator: "pp. 376–377"}, {source: S4, locator: "p. 179"}, {source: S13, locator: "p. 179"}]
       how_known: "Public lecture text (1873), consistent with his 1852 letter; written profession, so 1.0."
       rationale: "Transcendent person outside the world. In a public lecture (1873) he argues that molecules cannot be eternal and self-existent and 'must have been created', and closes on 'Him who in the beginning created, not only the heaven and the earth, but the materials of which heaven and earth consist'. The creator is distinct from what he made. In 1852 he rejects the pantheist's God of Nature. No immanence or world-soul language was found in the texts read."
@@ -169,6 +171,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S8, locator: "p. 376"}, {source: S9, locator: "pp. 443–444"}]
       how_known: "Public lecture text (1873) for the law and the stated limit; the Eranus essay agrees. Written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the coder notes say the creation limit could be read as the edge of science, scoring 4. Lowered from 1.0 in the consistency pass after the lens audit (2026-10-02)."
       rationale: "Scored for his physics. Laws hold without exception everywhere: a hydrogen molecule in Sirius or Arcturus 'executes its vibrations in precisely the same time' (S8). One stated, limited exception: the existence and identical properties of molecules cannot be ascribed to 'any of the causes which we call natural', so science stops at their creation (S8, p. 376). In his 1873 Eranus essay, free will acts at 'singular points' inside physical law, not as an exemption from it (S9). Outside his science his prayers include petition (S7); that is not scored here."
@@ -176,6 +179,7 @@ worldview:
       value: 1
       basis: consistent_private_letters
       certainty: 0.5
+      support: corroborated
       cites: [{source: S7, locator: "p. 323 n. 1"}, {source: S4, locator: "p. 179"}]
       how_known: "Two prayers and a letter, all private, that agree. They speak to the axis only indirectly: liturgical, psalm-like phrasing, with no judgement or reward after death. So 0.5, the coder's inference (lens audit, 2026-10-02; CODING_GUIDE §3)."
       rationale: "Leans to personal reward and punishment: two prayers among his papers ask for 'the remission of our sins' and that 'the wicked be no more', and the 1852 letter names God 'the Author of Salvation'. Private writings that agree, but the reading is an inference from liturgical phrasing, so 0.5. No text read on punishment after death, so not scored 0."
@@ -183,6 +187,7 @@ worldview:
       value: 2
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "p. 394"}, {source: S6, locator: "pp. 404–405"}, {source: S4, locator: "p. 178"}]
       how_known: "Two private letters and a draft reply (1852, 1875, 1876) that agree; so 0.7."
       rationale: "Holds both, in different domains. In science, observation and hypothesis rule, and he refuses to fix scripture to scientific theories (S5) or to give harmonising efforts a society's stamp (S6). In faith, scripture is the authority, and he regards Christianity as the one belief that can be examined without limit (S4). Neither ranks over the other in the texts read. Private letters and a draft that agree, so 0.7."
@@ -190,6 +195,7 @@ worldview:
       value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
+      support: corroborated
       cites: [{source: S8, locator: "pp. 376–377"}, {source: S9, locator: "p. 443"}, {source: S7, locator: "p. 323 n. 1"}]
       how_known: "Coder's reading of his public lecture (S8), an essay for a private club (S9) and private prayers (S7). They show one order for stars, earth and humans, but none addresses favour for a group in events directly, so 0.5. Scored under decision P7 (2026-10-02); it was TODO before. Gap: Theerman 1986 and the 1884 edition of the Life, on providence and prayer, were not read and could raise or lower this."
       rationale: "Scored on the world's order (decision P7). Leans LIO. The same laws hold for stars and earth: a hydrogen molecule 'whether in Sirius or in Arcturus, executes its vibrations in precisely the same time' (S8, p. 376), and molecules 'continue this day as they were created' (S8, p. 377). Humans are inside the same order. 'Every existence above a certain rank has its singular points', where small influences such as the will can produce large results (S9, p. 443). That is a ranking of beings within physical law, not an exemption from it, and it is why the score is 3 rather than 4. His private prayers petition God to 'teach us to study the works of Thy hands' and to 'strengthen our reason' (S7). They ask for understanding and service, not for favour in events. No text read says God favours believers in what happens. The creation of molecules (S8) is a limit on B, not a favour to a group. Named alternative 4, if the singular points are read as plain physics. The 'knowledge of salvation' in the same prayer (S7) is scored on C, not here."
@@ -301,13 +307,13 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "A deepening of religious conviction after an illness in 1853 while staying with the Rev. C. B. Tayler's family in Suffolk; he later said it gave him a new perception of the love of God", year: 1853, age: 22, certainty: 0.7, cites: [{source: S3, locator: "pp. 169–170"}, {source: S11, locator: "section 3"}], how_known: "Campbell's account, repeated by Hutchinson from it, so one line of evidence."}
-  coder_notes: "Code and four axes rest on his own words. The two weakest points: (1) CHRIST is 0.7 because the specifically Christian statements are private; (2) B = 3 rather than 4 because of the stated limit at the creation of molecules. A reviewer who reads that limit as the edge of science rather than an exception could score B = 4; mid_basin is true either way. E_scope is 3 at 0.5 on the world's order (decision P7); no text read addresses favour for a group in events directly."
+  coder_notes: "Code and four axes rest on his own words. The two weakest points: (1) CHRIST is 0.7 because the specifically Christian statements are private; (2) B = 3 rather than 4 because of the stated limit at the creation of molecules. A reviewer who reads that limit as the edge of science rather than an exception could score B = 4; mid_basin is true either way. E_scope is 3 at 0.5 on the world's order (decision P7); no text read addresses favour for a group in events directly. Deepen D1 2026-10-24: P47/P48 applied; Molecules re-verified vs Nature transcription; baptism filled; scores unchanged; already dark filled."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Scottish; the Clerk family of Penicuik on his father's side, the Cay family on his mother's", certainty: 1.0, cites: [{source: S3, locator: "p. 2"}, {source: S1, locator: "opening sentence"}], how_known: "Two sources."}
   religious_heritage_by_birth: {value: "Church of Scotland (father) and Scottish Episcopal (mother)", certainty: 1.0, cites: [{source: S3, locator: "pp. 12, 26"}, {source: S11, locator: "section 3"}], how_known: "Two sources agree."}
-  baptism_or_initiation: {value: TODO}
+  baptism_or_initiation: {value: "Baptized 1831-07-29 at St Andrew's Church (now St Andrew's & St George's West), George Street, Edinburgh — his father's regular Church of Scotland congregation when in Edinburgh", certainty: 0.7, cites: [{source: S14, locator: "stop 9 (St Andrew's & St George's; baptised 29 July 1831)"}], how_known: "James Clerk Maxwell Foundation walking tour (JW Arthur / JCMF). ScotlandsPeople OPR Edinburgh 685/1 560/296 reported elsewhere but image not fetched."}
   childhood_catechism: {value: "Learned 'his questions' (the Presbyterian catechism) as a child, and the Episcopal catechism in Dean Ramsay's class, so he 'became equally acquainted with the catechisms both of the Scotch and of the English Church'", certainty: 0.7, cites: [{source: S3, locator: "pp. 55–56"}], how_known: "One contemporary source."}
 
 timing:
@@ -360,7 +366,7 @@ review:
     - "E_scope (3 at 0.5, decision P7): does he anywhere expect God to favour believers in events (providence, answered petition)? Read Theerman 1986 (Am. J. Phys. 54: 312–317), the 1884 edition of the Life and Stanley, Huxley's Church and Maxwell's Demon (2015) to raise or revise it."
     - "Find and read the Tayler letter on the London Baptist chapel (1884 edition of the Life) and quote it from the primary text."
     - "When did he become an elder at Parton? S3 gives no start year."
-    - "Baptism: no record found in S3; check parish records or Harman's Scientific Letters and Papers."
+    - "Baptism day/church filled from Clerk Maxwell Foundation (S14); ScotlandsPeople OPR image not fetched."
     - "Year of Theory of Heat (first edition) not checked."
     - "CLTHEI check: any statement on providence, answered prayer or miracle in nature would bear on the code and on B outside his science."
 
@@ -372,6 +378,7 @@ sources:
     citation: "Domb, Cyril. \"James Clerk Maxwell.\" Encyclopaedia Britannica. Last updated August 13, 2026. https://www.britannica.com/biography/James-Clerk-Maxwell (pages: main page with Early life; Later life; additional info with Researcher's Note)."
     url: "https://www.britannica.com/biography/James-Clerk-Maxwell"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Signed article by a physicist who edited Clerk Maxwell and Modern Science; fact-checked by Britannica editors."
     used_for: [identity, basics, contribution, childhood, institutions, collaborators, review]
   - id: S2
@@ -382,6 +389,7 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. \"James Clerk Maxwell.\" MacTutor History of Mathematics Archive, University of St Andrews, last update November 1997. https://mathshistory.st-andrews.ac.uk/Biographies/Maxwell/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Maxwell/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "University reference archive; signed; draws on Campbell and Garnett and on Tait's obituary, which it quotes."
     used_for: [basics, contribution, childhood, institutions, collaborators]
   - id: S3
@@ -392,6 +400,7 @@ sources:
     citation: "Campbell, Lewis, and William Garnett. The Life of James Clerk Maxwell, with a Selection from His Correspondence and Occasional Writings and a Sketch of His Contributions to Science. London: Macmillan, 1882. Project Gutenberg eBook 79044 (2026), https://www.gutenberg.org/ebooks/79044, transcribed from the Internet Archive scan https://archive.org/details/lifeofjamesclerk00camprich."
     url: "https://www.gutenberg.org/ebooks/79044"
     accessed: 2026-10-02
+    source_quality: "unofficial web copy"
     reliability_note: "Biography by his school friend Campbell (Part I) and his Cavendish demonstrator Garnett (Part II), published three years after his death; prints letters and essays in full. Page numbers are the 1882 edition's, from the page markers in the Gutenberg text. Project Gutenberg is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. The quoted texts were checked against the library scan S13, so fields that rest on S4–S7 or S9 at 1.0 also cite S13. Gutenberg moves footnotes to the end of the chapter, so its page markers do not give a footnote's printed page. Friendly to its subject; treat interpretation as the authors'."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S4
@@ -402,6 +411,7 @@ sources:
     citation: "Maxwell, James Clerk. Letter to Lewis Campbell, 8 King's Parade, Cambridge, 7 March 1852. Printed in Campbell and Garnett 1882 (S3), pp. 178–180."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Printed by the addressee himself. Not checked against the manuscript."
     used_for: [worldview, lane_b, collaborators]
   - id: S5
@@ -412,6 +422,7 @@ sources:
     citation: "Maxwell, James Clerk. Letter to C. J. Ellicott, Bishop of Gloucester and Bristol, 11 Scroope Terrace, Cambridge, November 1876, replying to Ellicott's letter of 21 November 1876. Both printed in Campbell and Garnett 1882 (S3), pp. 392–395."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Printed in full with the bishop's letters. Not checked against the manuscript."
     used_for: [worldview, timing, collaborators]
   - id: S6
@@ -422,6 +433,7 @@ sources:
     citation: "Maxwell, James Clerk. Rough draft of a reply to the Secretary of the Victoria Institute, declining the invitation of March 1875. Printed in Campbell and Garnett 1882 (S3), pp. 404–405 ('all that has been found of a rough draft')."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Incomplete draft; whether a reply was sent is not stated. Printed by his biographers."
     used_for: [worldview]
   - id: S7
@@ -431,6 +443,7 @@ sources:
     citation: "Maxwell, James Clerk. Two undated prayers 'found amongst his papers'. Printed in Campbell and Garnett 1882 (S3), p. 323, footnote 1."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Private papers; undated; printed by his biographers without a date or occasion."
     used_for: [worldview]
   - id: S8
@@ -441,7 +454,8 @@ sources:
     citation: "Maxwell, James Clerk. \"Molecules.\" Lecture delivered before the British Association at Bradford, 1873. Printed in Nature, vol. 8 (1873). Reprinted in The Scientific Papers of James Clerk Maxwell, ed. W. D. Niven, vol. 2, pp. 361–378. Cambridge: Cambridge University Press, 1890. Scan and OCR: https://archive.org/details/scientificpapers02maxwuoft."
     url: "https://archive.org/details/scientificpapers02maxwuoft"
     accessed: 2026-10-02
-    reliability_note: "Public lecture, printed in his lifetime. Read in the OCR text of the 1890 edition; quotations limited to passages where the OCR is clean. The Nature volume is from the edition's source note; Nature page numbers and the exact date of the lecture were not checked."
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Public lecture, printed in his lifetime (Nature 1873; Niven Scientific Papers 1890). Read in OCR of 1890 edition; A/B closing passages re-verified 2026-10-24 against Victorian Web Nature transcription (S14), which agrees word for word on the Sirius/Arcturus, manufactured-article, Science-is-arrested, and 'continue this day as they were created' sentences."
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S9
     type: primary
@@ -451,6 +465,7 @@ sources:
     citation: "Maxwell, James Clerk. \"Does the Progress of Physical Science Tend to Give Any Advantage to the Opinion of Necessity (or Determinism) over That of the Contingency of Events and the Freedom of the Will?\" Essay dated 11 February 1873, read to the Eranus club, Cambridge. Printed in Campbell and Garnett 1882 (S3), pp. 434–444."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Written for a private club of senior colleagues; published only after his death. Dated by Maxwell himself (S3, p. 434)."
     used_for: [worldview]
   - id: S10
@@ -461,6 +476,7 @@ sources:
     citation: "Maxwell, James Clerk. \"Are There Real Analogies in Nature?\" Essay, February 1856. Printed in Campbell and Garnett 1882 (S3), pp. 235–244."
     url: "https://www.gutenberg.org/cache/epub/79044/pg79044-images.html"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Essay read to a Cambridge discussion society; printed entire by his biographers, who call it 'a serious exposition of Maxwell's deliberate views on philosophical questions'."
     used_for: [timing]
   - id: S11
@@ -471,6 +487,7 @@ sources:
     citation: "Hutchinson, Ian. \"James Clerk Maxwell and the Christian Proposition.\" MIT IAP Seminar 'The Faith of Great Scientists', January 1998, revised 2006. http://silas.psfc.mit.edu/Maxwell/."
     url: "http://silas.psfc.mit.edu/Maxwell/"
     accessed: 2026-10-02
+    source_quality: "other"
     reliability_note: "Seminar paper by an MIT professor of nuclear science, written for a Christian faculty seminar; argues that faith and science were joined in Maxwell. Draws mostly on Campbell and Garnett. Used for facts only."
     used_for: [childhood, worldview, heritage]
   - id: S12
@@ -478,6 +495,7 @@ sources:
     kind: database
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
+    source_quality: "study roster"
     used_for: [review]
   - id: S13
     type: secondary
@@ -487,13 +505,26 @@ sources:
     citation: "Campbell, Lewis, and William Garnett. The Life of James Clerk Maxwell, with a Selection from His Correspondence and Occasional Writings and a Sketch of His Contributions to Science. London: Macmillan, 1882. University of Toronto (Gerstein) library copy, Internet Archive scan, https://archive.org/details/lifeofjamesclerk00campuoft."
     url: "https://archive.org/details/lifeofjamesclerk00campuoft"
     accessed: 2026-10-02
+    source_quality: "scholarly edition or monograph"
     reliability_note: "Library scan of the 1882 edition that S3 transcribes; a different copy from the one Gutenberg used. Used to check the wording of the letters, essays and prayers printed there (S4–S7, S9) wherever a quotation or a certainty-1.0 field rests on them. All seven quotations were found word for word in the scan's OCR text, except one word checked on the page image (p. 394: the print reads 'a most conjectural', where S3 has 'almost'). The prayers are in a footnote on p. 323; S3's p. 347 was the page where Gutenberg placed the chapter's footnotes."
     used_for: [worldview, collaborators]
+  - id: S14
+    type: secondary
+    kind: "other"
+    author: "J. W. Arthur / James Clerk Maxwell Foundation"
+    year: 2021
+    citation: 'Arthur, J. W. "James Clerk Maxwell Walking Tour of Edinburgh." James Clerk Maxwell Foundation (rev. 2021). https://www.clerkmaxwellfoundation.org/html/walking_tour_details.html. Molecules Nature transcription cross-check: Victorian Web, https://www.victorianweb.org/science/maxwell/molecules.html (van Wyhe digitation of Nature Sept. 1873).'
+    url: "https://www.clerkmaxwellfoundation.org/html/walking_tour_details.html"
+    accessed: 2026-10-24
+    source_quality: "other"
+    reliability_note: "Specialist foundation walking tour used for baptism 29 July 1831 at St Andrew's (father's Edinburgh kirk). Not a parish-register image. Victorian Web Nature transcription of Molecules used only to re-verify published lecture wording already cited via S8."
+    used_for: [heritage, worldview]
 ---
+
 
 # James Clerk Maxwell
 
-> Status: draft — unreviewed. Worldview coded CHRIST at 0.7; all five LIO axes scored (E_scope at 0.5); mid_basin true under the P4 test. A few facts are TODO.
+> Status: draft — unreviewed. Worldview coded CHRIST at 0.7; all five LIO axes scored with support corroborated (E_scope still at 0.5); mid_basin true under the P4 test. Chart: dark filled on A and B.
 
 ## Summary
 
@@ -518,7 +549,7 @@ Einstein in 1931 called the change in physics brought by Maxwell's work the most
 
 ## Childhood and education
 
-His father was a lawyer and landowner and an elder of the Church of Scotland at Parton. His mother was an Episcopalian [S3, pp. 12, 26; S11]. She taught him at home until 1839 and encouraged him to "look up through Nature to Nature's God" [S3, p. 32]. He is said to have known Psalm 119 by heart at eight [S3, p. 32]. In Edinburgh he went to a Presbyterian church in the morning and an Episcopal chapel in the afternoon, and learned both catechisms [S3, pp. 55–56].
+His father was a lawyer and landowner and an elder of the Church of Scotland at Parton. His mother was an Episcopalian [S3, pp. 12, 26; S11]. He was baptized at St Andrew's, Edinburgh, on 29 July 1831 [S14]. She taught him at home until 1839 and encouraged him to "look up through Nature to Nature's God" [S3, p. 32]. He is said to have known Psalm 119 by heart at eight [S3, p. 32]. In Edinburgh he went to a Presbyterian church in the morning and an Episcopal chapel in the afternoon, and learned both catechisms [S3, pp. 55–56].
 
 At the Edinburgh Academy he learned Euclid. At 14 he wrote his first paper, on oval curves, which Forbes communicated to the Royal Society of Edinburgh. Tait, his schoolfellow, kept his school manuscripts and said they were "drawn up in strict geometrical form, and divided into consecutive propositions" [S3, p. 87]. At 16 he studied mathematics, natural philosophy and logic at Edinburgh [S2].
 
@@ -528,7 +559,7 @@ His own letters show a Bible-centred Christian faith from his student years. In 
 
 On science and faith he kept two things apart. He would not let scripture be tied to a scientific hypothesis, since hypotheses change faster than interpretations [S5, p. 394]. He declined to join the Victoria Institute, saying that each man's attempts to harmonise science with Christianity matter only to himself, and only for a time [S6, pp. 404–405]. In public, though, he drew a theistic conclusion from physics: molecules are identical everywhere, so they have "the essential character of a manufactured article" and must have been created [S8, p. 376].
 
-Coding: CHRIST at 0.7. A_locus 0 at 1.0 and B_cause 3 (for his physics) at 0.7, from the 1873 lecture, so mid_basin is true at 0.7 under P4. D_authority 2 at 0.7; C_ledger 1 at 0.5. E_scope 3 at 0.5, scored on the world's order (decision P7): the same molecular laws in Sirius and on earth [S8, p. 376], and human will acting within law [S9, p. 443]. No text read addresses favour for a group in events.
+Coding: CHRIST at 0.7. A_locus 0 at 1.0 (support corroborated) and B_cause 3 (for his physics) at 0.7 (support corroborated), from the 1873 lecture, so mid_basin is true at 0.7 under P4. Chart: dark filled. D_authority 2 at 0.7; C_ledger 1 at 0.5. E_scope 3 at 0.5, scored on the world's order (decision P7): the same molecular laws in Sirius and on earth [S8, p. 376], and human will acting within law [S9, p. 443]. No text read addresses favour for a group in events.
 
 ## Heritage (context only)
 
@@ -546,10 +577,12 @@ Everything in this section is Lane B: labeled belief, not a finding. Maxwell sho
 
 - E_scope (3 at 0.5): read Theerman 1986, the 1884 Life and Stanley 2015 for any expectation of favour for believers in events.
 - Find the Tayler letter on the London Baptist chapel in the 1884 edition and quote it from the source.
-- Start year of his eldership at Parton; baptism record.
+- Start year of his eldership at Parton.
+- Baptism: Foundation date/church filled; ScotlandsPeople OPR image not fetched.
 - Any text on providence, answered prayer or miracle in nature (bears on CLTHEI).
 
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main, Later life, Researcher's Note), MacTutor (S2), and the Gutenberg text of Campbell and Garnett 1882 (S3), including the letters, essays and prayers printed there (S4–S7, S9, S10). Read the 1873 "Molecules" lecture in the OCR of the 1890 Scientific Papers (S8) and Hutchinson's seminar paper (S11). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Theerman 1986, the Oxford DNB and Harman's edition of the Scientific Letters and Papers were not read (paywalled or not online). E_scope and baptism left TODO.
 - 2026-10-02 (P7): E_scope scored on the world's order (3 at 0.5) from the texts already cited (S7, S8, S9); no new sources or quotations.
+- 2026-10-24 (deepen D1, queue #43): P47 on S1–S14; support corroborated on A–E; Molecules closing passages re-verified vs Victorian Web Nature text; baptism from Clerk Maxwell Foundation; schooling run_by; A/B unchanged; not chart-moving. Theerman still paywalled. No fallacy_catalog.
