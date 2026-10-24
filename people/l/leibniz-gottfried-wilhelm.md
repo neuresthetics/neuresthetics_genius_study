@@ -1,16 +1,17 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 2
+  schema_version: "1.3"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Gottfried Wilhelm Leibniz' (Look) and Britannica (Belaval, first page); physics from SEP 'Leibniz's Philosophy of Physics' (McDonough). Worldview from the Theodicy (Huggard, Gutenberg) and the Monadology (Latta, Wikisource), both capped at 0.7 (§7), and Leibniz's First Paper to Clarke, read in page images of the 1717 first edition. DRAFT SCORES for v8's review: primary_system CLASS_THEISM 0.7; A 1, B 3, C 2, D 3, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #287: German removed from languages_of_work (no German work in the sources read). #348: Mainz service 1667–1673 (Britannica: Boyneburg died Dec 1672, the Elector Feb 1673; he stayed in Paris until 1676). #291: how_known now says the 'ancestor' wording is in lasting. Britannica byline now Belaval and Look. #282 (with #341, #372) left: first-lasting year awaits v8 (P13 now in CODING_GUIDE §8). Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #32, next-50 batch). Needs: A single source (hollow). Opened Rutherford Latta-revised Monadology (UCSD PDF, Gerhardt VI); Theodicy Part I §7 (Huggard/Gutenberg) for independent A corroboration — God as first reason / necessary eternal substance outside the assemblage of contingent things; Bennett earlymoderntexts Discourse §1 and Principles of Nature and Grace as cross-checks; Wikipedia EN dual-source bio. P47 source_quality on every source. A_locus support single → corroborated (S5+S4; S8 Rutherford re-verify). B stays 3 @0.7 corroborated. Scores: A 1 @0.7, B 3 @0.7; CLASS_THEISM @0.7; mid_basin true @0.7. Chart-moving YES (dark hollow → dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: leibniz-gottfried-wilhelm
@@ -24,7 +25,7 @@ identity:
     status: core
     field: polymath
     field_bucket: polymath
-  full_name: {value: "Gottfried Wilhelm Leibniz", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
+  full_name: {value: "Gottfried Wilhelm Leibniz", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}, {source: S9, locator: "lead"}], how_known: "SEP + Britannica + Wikipedia EN."}
   native_name: {value: "Gottfried Wilhelm Leibniz", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "German form as given; the 1717 edition spells it 'Leibnitz' (S6, title page)."}
   aliases:
     - {name: "Gottfried Leibniz", kind: "roster alias"}
@@ -117,13 +118,15 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S5, locator: "§§38, 47, 85"}]
-      how_known: "His own text in an unofficial copy (§7); a named alternative (0)."
-      rationale: "DRAFT. Leans to the transcendent-person pole: God is a necessary substance outside the series of contingent things (Monadology §38), with power, knowledge and will (§48), 'the most perfect of Monarchs' of the City of God (§85). The immanence feature: all created monads 'have their birth, so to speak, through continual fulgurations of the Divinity from moment to moment' (§47). Same pattern as Aquinas and Newton (1). Named alternative: 0."
+      support: corroborated
+      cites: [{source: S5, locator: "§§38, 47, 85 (Latta)"}, {source: S4, locator: "Theodicy Part I §7"}, {source: S8, locator: "Monadology §§38, 47, 85 (Rutherford rev.)"}]
+      how_known: "Independent works: Monadology (S5/S8) and Theodicy Part I §7 (S4). Named alternative 0; English translations → 0.7 (§7)."
+      rationale: "Leans to the transcendent-person pole: God is a necessary substance outside the series of contingent things (Monadology §38; Rutherford re-verify), with power, knowledge and will (§48), 'the most perfect of Monarchs' of the City of God (§85). Theodicy I §7 independently: God is 'the first reason of things'; contingent bounded things have 'nothing in them to render their existence necessary'; seek the reason of the world 'in the substance which carries with it the reason for its existence, and which in consequence is necessary and eternal' — intelligent, infinite in power/wisdom/goodness. Immanence feature: continual fulgurations (§47). Same pattern as Aquinas and Newton (1). Named alternative: 0. Distinct source ids → corroborated (P48)."
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S6, locator: "First Paper §4, pp. 5–7"}, {source: S4, locator: "Preliminary Dissertation §§2–3"}, {source: S5, locator: "§§79–81"}, {source: S1, locator: "§4.5"}]
       how_known: "His own texts: the 1717 edition read in page images, the Theodicy and Monadology in unofficial copies (§7); a named alternative (4)."
       rationale: "DRAFT. Scored on his account of nature (P6). Leans LIO: 'the same Force and Vigour remains always in the World, and only passes from one part of Matter to another, agreeably to the Laws of Nature, and the beautiful pre-established Order' (First Paper §4), and he mocks the view that God must 'wind up his Watch from Time to Time'; bodies act by efficient causes 'as if there were no souls' (Monadology §§79–81; SEP §4.5: 'all corporeal phenomena can be derived from efficient and mechanical causes'). The stated, limited exception: God 'can exempt creatures from the laws he has prescribed for them [...] by performing a miracle' (PD §3), but only for grace, not nature (First Paper §4). Same pattern as Aquinas (B 3). Named alternative: 4, since miracles never serve nature's needs."
@@ -145,10 +148,11 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "§§79, 87–88"}, {source: S6, locator: "First Paper §4, p. 7"}]
       how_known: "His own texts (§7 cap on the Monadology; page images for the 1717 edition); a named alternative (4)."
       rationale: "DRAFT. Scored on the world's order (P7). Leans LIO: one pre-established harmony covers every body and soul (Monadology §§79–81), and the realm of grace runs 'by the very ways of nature' (§88). The stated, limited exception: miracles worked for 'the Wants [...] of Grace' (First Paper §4), i.e. events for the sake of spirits. The City of God as a moral community is a C matter (P7). Named alternative: 4."
-  mid_basin: {value: true, certainty: 0.7, cites: [{source: S5, locator: "§§38, 47"}, {source: S6, locator: "First Paper §4"}], how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7, so true. Certainty is the lower of the two (0.7). DRAFT: A 0 or B 4 (the named alternatives) would not change the result."}
+  mid_basin: {value: true, certainty: 0.7, cites: [{source: S5, locator: "§§38, 47"}, {source: S4, locator: "Part I §7"}, {source: S6, locator: "First Paper §4"}], how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7 and both corroborated (P48), so true. Certainty is the lower of the two (0.7). Chart-moving this pass: hollow → filled."}
   statements:
     - text: "According to their Doctrine, God Almighty wants to wind up his Watch from Time to Time : Otherwise it would cease to move."
       cites: [{source: S6, locator: "First Paper §4, p. 5"}]
@@ -190,14 +194,33 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
-    - text: "Thus God alone is the primary unity or original simple substance, of which all created or derivative Monads are products and have their birth, so to speak, through continual fulgurations of the Divinity from moment to moment, limited by the receptivity of the created being, of whose essence it is to have limits."
-      cites: [{source: S5, locator: "§47"}]
-      date: "1714"
-      context: "Monadology, Latta's 1898 translation. Written 1714, published after his death; the date is of writing (S1 §1.1)."
+    - text: "God is the first reason of things: for such things as are bounded, as all that which we see and experience, are contingent and have nothing in them to render their existence necessary, it being plain that time, space and matter, united and uniform in themselves and indifferent to everything, might have received entirely other motions and shapes, and in another order. Therefore one must seek the reason for the existence of the world, which is the whole assemblage of contingent things, and seek it in the substance which carries with it the reason for its existence, and which in consequence is necessary and eternal. Moreover, this cause must be intelligent: for this existing world being contingent and an infinity of other worlds being equally possible, and holding, so to say, equal claim to existence with it, the cause of the world must needs have had regard or reference to all these possible worlds in order to fix upon one of them."
+      cites: [{source: S4, locator: "Theodicy Part I §7"}]
+      date: "1710"
+      context: "Theodicy, Essays Part I; cosmological / sufficient-reason argument for God as necessary intelligent cause."
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-24
+      note: "Huggard from Gerhardt; Gutenberg eBook 17147. Independent of Monadology for A corroboration (P48)."
+    - text: "Thus God alone is the primary unity or original simple substance, of which all created or derivative Monads are products and have their birth, so to speak, through continual fulgurations of the Divinity from moment to moment, limited by the receptivity of the created being, of whose essence it is to have limits."
+      cites: [{source: S5, locator: "§47"}, {source: S8, locator: "§47 (Rutherford: 'primitive unity or original simple substance')"}]
+      date: "1714"
+      context: "Monadology. Written 1714, published after his death; the date is of writing (S1 §1.1)."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Latta (S5) wording; Rutherford revision (S8) agrees on sense ('primitive unity')."
+    - text: "Thus the final reason of things must be in a necessary substance, in which the diversity of changes exists only eminently, as in its source; and this substance we call God."
+      cites: [{source: S8, locator: "§38"}, {source: S5, locator: "§38"}]
+      date: "1714"
+      context: "Monadology; end of sufficient-reason ascent from contingent series."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Rutherford Latta-revised (S8) quoted; Latta Wikisource (S5) agrees."
     - text: "It may also be said that God as Architect satisfies in all respects God as Lawgiver, and thus that sins must bear their penalty with them, through the order of nature, and even in virtue of the mechanical structure of things"
       cites: [{source: S5, locator: "§89"}]
       date: "1714"
@@ -215,7 +238,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "DRAFT SCORES for v8's review. The Theodicy (Huggard) and the Monadology (Latta) were read in unofficial web copies, so §7 caps them at 0.7. Leibniz's First Paper to Clarke was read in page images of the 1717 first edition (Internet Archive, Wellcome Library copy b30520022), in Clarke's English with the French facing; that is a primary facsimile, but the axes it supports also rest on the capped texts. The Monadology was not published in his lifetime; kind 'written profession (public)' is used because it was a finished treatise written for others (flag). The Gutenberg Theodicy carries page markers from the Open Court edition; they are not used as locators."
+  coder_notes: "Deepen 2026-10-24: A hollow→filled via Theodicy I §7 (S4) + Monadology (S5/S8). Rutherford Latta-revised Monadology (S8) is the scholarly English check against Gerhardt VI; Latta Wikisource (S5) retained. Theodicy still Huggard/Gutenberg (§7 cap). First Paper to Clarke remains primary facsimile (IA b30520022). Monadology unpublished in his lifetime; kind written profession (public) because finished for others (flag). Chart-moving YES."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -228,7 +251,7 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1666–1716", certainty: 1.0, cites: [{source: S1, locator: "§1; §1.1"}], how_known: "SEP chronology."}
   age_at_first_lasting_contribution: {value: 29, certainty: 0.7, cites: [{source: S3, locator: "'Early life and education'"}], how_known: "Born July 1646; calculus late 1675. If De arte combinatoria (1666) is used, 19 or 20."}
-  first_evidence_of_lio_type_views: {value: "Principle of sufficient reason ('nothing exists or occurs without a reason') developed while working on the Demonstrationes Catholicae at Mainz", year: 1668, age: 22, certainty: 0.5, cites: [{source: S3, locator: "'Early life and education'"}], how_known: "Britannica dates the Mainz work to before the 1671 Hypothesis physica nova; the year 1668 is the coder's estimate from the start of his Mainz service (flag)."}
+  first_evidence_of_lio_type_views: {value: "Discourse on Metaphysics: God absolutely perfect; orderly world; miracles under general order (Bennett earlymoderntexts)", year: 1686, age: 39, certainty: 0.7, cites: [{source: S10, locator: "§§1, 6–7"}, {source: S1, locator: "§1.1"}], how_known: "Discourse dated 1686 (SEP chronology); opened this deepen. Mainz PSR remains an earlier alternative at 0.5 (S3).", alternatives: [{value: 1668, cites: [{source: S3, locator: "'Early life and education'"}], note: "Demonstrationes Catholicae / Mainz PSR; year approximate."}]}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "The principle of sufficient reason appears at Mainz (late 1660s); the lawful order is fully stated in 1686–1714.", certainty: 0.5, cites: [{source: S3, locator: "'Early life and education'"}, {source: S1, locator: "§1.1"}], how_known: "Dates of what was read."}
   worldview_during_major_work: {value: "CLASS_THEISM throughout (draft code)", certainty: 0.5, cites: [{source: S4, locator: "Preliminary Dissertation"}, {source: S5, locator: "§§38–47"}], how_known: "Theodicy (1710) and Monadology (1714) agree; earlier works not read."}
 
@@ -238,7 +261,7 @@ lane_b:
   form_acquired: {value: "adulthood, before major work", certainty: 0.5, cites: [{source: S1, locator: "§1"}], how_known: "Scholastic logic at university and De arte combinatoria at twenty; no source on childhood mathematics."}
   circle_present: {value: "partly", rationale: "One harmonious order with nature and grace in step (Monadology §§87–88), but God is a monarch outside the series of things (§38), not identified with Nature.", certainty: 0.5, cites: [{source: S5, locator: "§§38, 87–88"}], how_known: "Coder's reading."}
   reading: "As belief, not finding: form present, circle partial (one order, transcendent author). He met Spinoza in 1676 and discussed the Ethics, then built a system that keeps God outside nature."
-  notes: ""
+  notes: "Lane B separate from Lane A axis scores. Form from PD geometry/eternal truths and De arte combinatoria; circle partial (harmony without God=Nature)."
 
 institutions:
   - {value: "Court of the Elector of Mainz", role: "legal and political adviser; diplomat to Paris", years: "1667–1673", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Early life and education'"}], how_known: "Start: SEP (Boineburg secured the post in 1667). End: Britannica says he was 'left without protectors by the deaths of Freiherr von Boyneburg in December 1672 and of the prince elector in February 1673'; SEP says only that his employer died while he was in Paris. He stayed in Paris, looking for another post, until 1676, when he went to Hanover (S1 §1). Lens audit #348: was 1667–1676."}
@@ -259,11 +282,13 @@ review:
   data_quality_flags:
     - "Birth date: 21 June Old Style / 1 July New Style 1646 (Britannica); SEP gives July 1."
     - "Altdorf doctorate: 1667 (SEP) vs 1666 (Britannica)."
-    - "Theodicy and Monadology read only in Gutenberg and Wikisource copies."
+    - "Deepen 2026-10-24: Monadology re-verified against Rutherford Latta-revised (S8); Theodicy still Huggard/Gutenberg; Gerhardt page numbers not added."
     - "Britannica read as its first page only."
+    - "Bennett earlymoderntexts Discourse/PNG are modernized English with editorial dots — cross-check only, not A score base."
   open_questions:
-    - "Check the Theodicy and Monadology quotations against Gerhardt (G VI) and give page numbers; that would lift the §7 cap."
+    - "Gerhardt (G VI) page numbers for Theodicy I §7 and Monadology §§38–47."
     - "Settle whether CLASS_THEISM covers a best-possible-world rational theism (the CLASS_THEISM file's own open item)."
+    - "Ariew/Garber Philosophical Essays page-check of Discourse and Principles of Nature and Grace."
 
 sources:
   - id: S1
@@ -275,6 +300,7 @@ sources:
     url: "https://plato.stanford.edu/entries/leibniz/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; §1, §4.5 and §7.1 read closely. Cited by section."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S2
     type: secondary
@@ -285,6 +311,7 @@ sources:
     url: "https://plato.stanford.edu/entries/leibniz-physics/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; §3 read. Cited by section."
+    source_quality: "reference entry"
     used_for: [contribution]
   - id: S3
     type: tertiary
@@ -294,6 +321,7 @@ sources:
     url: "https://www.britannica.com/biography/Gottfried-Wilhelm-Leibniz"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, timing, institutions, collaborators]
   - id: S4
     type: primary
@@ -304,6 +332,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/17147"
     accessed: 2026-10-02
     reliability_note: "Unofficial web copy of a modern translation; capped at 0.7 under CODING_GUIDE §7. Cited by section of the Preliminary Dissertation."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing, lane_b]
   - id: S5
     type: primary
@@ -314,6 +343,7 @@ sources:
     url: "https://en.wikisource.org/wiki/Monadology_(Leibniz,_tr._Latta)"
     accessed: 2026-10-02
     reliability_note: "Wikisource transcription without page scans; capped at 0.7 under §7. Cited by section number."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing, lane_b]
   - id: S6
     type: primary
@@ -324,6 +354,7 @@ sources:
     url: "https://archive.org/details/b30520022"
     accessed: 2026-10-02
     reliability_note: "First edition, French with Clarke's English facing; quotations read in the page images of pp. 5–7 (leaves n24–n26). Cited by paper, section and printed page."
+    source_quality: "primary / own words"
     used_for: [identity, basics, worldview, collaborators]
   - id: S7
     type: secondary
@@ -333,7 +364,41 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Gottfried Wilhelm Leibniz; trans. Robert Latta, rev. Donald Rutherford"
+    year: 1714
+    citation: "Leibniz, G. W. The Principles of Philosophy, or the Monadology (1714). Translated by Robert Latta; revised by Donald Rutherford. https://philosophyfaculty.ucsd.edu/faculty/rutherford/Leibniz/translations/Monadology.pdf (also dss-sites.ucsd.edu). French text: Gerhardt, Philosophischen Schriften, vol. 6, pp. 607–23."
+    url: "https://philosophyfaculty.ucsd.edu/faculty/rutherford/Leibniz/translations/Monadology.pdf"
+    accessed: 2026-10-24
+    reliability_note: "Scholarly revision of Latta against Gerhardt VI; Rutherford notes Robinet critical edition. Used to re-verify §§38, 47, 85 for A."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview]
+  - id: S9
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. Gottfried Wilhelm Leibniz. https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz."
+    url: "https://en.wikipedia.org/wiki/Gottfried_Wilhelm_Leibniz"
+    accessed: 2026-10-24
+    reliability_note: "Dual-source for bio (full name lead). Worldview not taken from Wikipedia."
+    source_quality: "other"
+    used_for: [identity, basics]
+  - id: S10
+    type: primary
+    kind: "published work by the subject"
+    author: "Gottfried Wilhelm Leibniz; modernized English Jonathan Bennett"
+    year: 1686
+    citation: "Leibniz, G. W. Discourse on Metaphysics (1686). Early Modern Texts, Jonathan Bennett (2004/2007). https://www.earlymoderntexts.com/assets/pdfs/leibniz1686d.pdf."
+    url: "https://www.earlymoderntexts.com/assets/pdfs/leibniz1686d.pdf"
+    accessed: 2026-10-24
+    reliability_note: "Modernized English with editorial dots; used for timing (first_evidence 1686) and cross-check of God-as-perfect / order / miracles §§1, 6–7. Not used as A score base (prefer S4/S5/S8)."
+    source_quality: "unofficial web copy"
+    used_for: [timing, worldview]
+
 ---
 
 # Gottfried Wilhelm Leibniz
@@ -342,7 +407,7 @@ sources:
 
 ## Summary
 
-Gottfried Wilhelm Leibniz (1646–1716), German philosopher, mathematician and court adviser, invented the calculus independently of Newton and built one of the main rationalist systems [S1; S3]. His God is a necessary, simple substance reached by reason, who chose a lawful order and works miracles only for grace [S5, §§38, 47; S6, First Paper §4]. Draft code CLASS_THEISM at 0.7. Axes A 1, B 3, C 2, D 3, E 3, all at 0.7; mid_basin true at 0.7 (draft).
+Gottfried Wilhelm Leibniz (1646–1716), German philosopher, mathematician and court adviser; calculus independently of Newton; major rationalist system [S1; S3; S9]. God is a necessary, simple substance reached by reason (Monadology §§38, 47; Theodicy I §7), who chose a lawful order and works miracles only for grace [S5/S8; S4; S6]. CLASS_THEISM at 0.7. A 1 / B 3 at 0.7 both corroborated; mid_basin true. Deepen filled A (was single-source hollow); chart-moving yes.
 
 ## Life and work
 
@@ -358,7 +423,7 @@ His father died when he was six; he taught himself in his father's library, then
 
 ## Adult working worldview
 
-Faith and reason cannot conflict; the laws of nature are chosen by God and dispensable by miracle, but the eternal truths are not [S4, PD §§1–3, 23]. He rejected the view that God must "wind up his Watch from Time to Time" [S6, p. 5].
+Faith and reason cannot conflict; the laws of nature are chosen by God and dispensable by miracle, but the eternal truths are not [S4, PD §§1–3, 23]. Theodicy I §7: God is "the first reason of things," the necessary eternal substance [S4]. Monadology: final reason in a necessary substance we call God; continual fulgurations [S5/S8]. Rejected that God must "wind up his Watch from Time to Time" [S6, p. 5]. Scores: A 1 (0.7, corroborated), B 3 (0.7, corroborated), C 2 (0.7), D 3 (0.7), E 3 (0.7); mid_basin true.
 
 ## Heritage (context only)
 
@@ -366,7 +431,7 @@ Pious Lutheran academic family in Leipzig [S1; S3]. Context only.
 
 ## Timing
 
-First lasting contribution taken as the calculus of 1675 [S3].
+First lasting contribution taken as the calculus of 1675 [S3]. First evidence of LIO-type views taken as Discourse on Metaphysics 1686 [S10; S1].
 
 ## Lane B notes (labeled belief model)
 
@@ -374,9 +439,10 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 
 ## Open questions
 
-- Check Theodicy and Monadology against Gerhardt.
+- Gerhardt page numbers; Ariew/Garber page-check of Discourse and PNG.
 
 ## Research log
 
 - 2026-10-02: Read SEP "Gottfried Wilhelm Leibniz" (Look, §§1, 4.5, 7.1), SEP "Leibniz's Philosophy of Physics" (McDonough, §3), Britannica (Belaval, first page), the Theodicy (Gutenberg 17147, Preface and Preliminary Dissertation), the Monadology (Latta, Wikisource), and the 1717 Clarke edition (IA b30520022, page images of pp. 5–7). Wikipedia not used.
 - 2026-10-02 (lens audit fixes): Re-read Britannica "Early life and education" for the end of the Mainz service (#348).
+- 2026-10-24: Deepen D1 — Rutherford Monadology (S8); Theodicy Part I §7 for A corroboration; Bennett Discourse (S10) and PNG cross-check; Wikipedia EN (S9); P47 on all sources. No fallacy_catalog.
