@@ -2,15 +2,17 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-08
+  last_updated: 2026-10-23
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from the Author's Preface of the Algebra in Rosen's 1831 translation (archive.org scan, pp. 1–4), with Rosen's own doubt about the preface noted. Works dated only 'after 813', so first-lasting year, span and age UNKNOWN (P12). primary_system ISLAM 0.7 (written_profession; alternative BELOW_THRESHOLD as a conventional formula); A_locus 0 (0.7); C_ledger 1 (0.5); B BELOW_THRESHOLD (coder's call); D BELOW_THRESHOLD; E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #11 A_locus 0 certainty 0.7 → 0.5 (the p. 4 line follows Q 9:129). #12 C_ledger 1 at 0.5 re-anchored on pp. 3–4 (mercy through others' prayers), with p. 1 marked contested (Notes, pp. 175–176); p. 3–4 statement added. Statements: verified_against 'primary facsimile' → 'scholarly edition'; copyist's frame and the 1342 manuscript date added to the p. 1 context. mid_basin unchanged (BELOW_THRESHOLD)."}
+
+    - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #4). P47 source_quality on every source. Re-read MacTutor; added S5 Biographical Encyclopedia of Astronomers (Brentjes 2007) and S6 Rashed French Algebra preface (hist-math.fr). A_locus 0: support single → corroborated (S3+S1 Toomer+S6 cross-check); certainty stays 0.5 (Q 9:129 formula). B_cause BELOW_THRESHOLD → 3 @ 0.5 inference_from_work corroborated (S1+S5; P30/P35; Kepler precedent that astrological tables do not block B from mathematical astronomy). C_ledger 1 @ 0.5 → BELOW_THRESHOLD (Rosen mercy-through-prayers reading not supported by modern French preface). E UNKNOWN → BELOW_THRESHOLD (scientist, no statement; P19). mid_basin still BELOW_THRESHOLD (A and B at 0.5). Chart: unplotted → faded filled. Native name filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: al-khwarizmi
@@ -25,7 +27,7 @@ identity:
     field: mathematics
     field_bucket: mathematics
   full_name: {value: "Abu Jaʿfar Muḥammad ibn Mūsā al-Khwārizmī", certainty: 0.7, cites: [{source: S1, locator: "heading ('Abu Ja'far Muhammad ibn Musa Al-Khwarizmi')"}, {source: S2, locator: "In full ('Muḥammad ibn Mūsā al-Khwārizmī')"}], how_known: "Two sources; the kunya Abu Jaʿfar is MacTutor's alone."}
-  native_name: {value: TODO}
+  native_name: {value: "Abū Jaʿfar Muḥammad ibn Mūsā al-Khwārizmī", certainty: 0.7, cites: [{source: S1, locator: "heading"}, {source: S2, locator: "In full"}], how_known: "Transliterated Arabic matching the scored full_name (MacTutor + Britannica); same pattern as al-Ghazali / al-Razi."}
   aliases:
     - {name: "Muhammad ibn Musa al-Khwarizmi", kind: "roster alias"}
     - {name: "Algoritmi", kind: latinized}
@@ -117,20 +119,24 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "Author's Preface, pp. 1–2, 4"}]
-      how_known: "His own preface, but the p. 4 line is the stock Qur'anic closing of Q 9:129 ('in Him I put my trust, and He is the Lord of the mighty Throne'), so the formula, not his own account of locus, carries the score (§6: a code does not set the axes); held at 0.5 (lens audit of batch C, #11; coder's call, certainty only)."
-      rationale: "Draft judgment (one line): God is the transcendent Lord who sends prophets and grants mercy: 'My confidence rests with God, in this as in every thing, and in Him I put my trust. He is the Lord of the Sublime Throne' (p. 4). Named alternative: 1, since a short devotional formula need not express a full doctrine of transcendence."
-    B_cause: {value: BELOW_THRESHOLD, note: "He counts as a scientist under P30 (the zij is a listed lasting result on the motions of sun, moon and planets), so B could come from working science at 0.5. But MacTutor lists 'astrological tables' among the zij's topics and a political history 'containing horoscopes', so his working science covers only part of what B scores (P19). Draft judgment (one line): coder's call, not scored; the alternative is B 3 at 0.5 from working science.", how_known: "BELOW_THRESHOLD under P19 (coder's call, CODING_GUIDE §8)."}
-    C_ledger:
-      value: 1
-      basis: written_profession
+      support: corroborated
+      cites: [{source: S3, locator: "Author's Preface, pp. 1–2, 4"}, {source: S6, locator: "French preface close ('Seigneur du Trône Sublime')"}, {source: S1, locator: "Biography, paragraph 1 (Toomer: 'orthodox Muslim' from the pious preface)"}]
+      how_known: "His own Algebra preface (Rosen 1831, re-checked; Rashed French critical text agrees on the Throne closing). The p. 4 line follows the stock Qur'anic closing of Q 9:129, so the formula, not a developed locus doctrine, carries the score; held at 0.5 (lens audit of batch C, #11). Toomer (via S1) independently treats the preface as showing an orthodox Muslim, corroborating that the devotion is not empty boilerplate for scoring purposes (P48)."
+      rationale: "Draft judgment (one line): God is the transcendent Lord who sends prophets: 'My confidence rests with God, in this as in every thing, and in Him I put my trust. He is the Lord of the Sublime Throne' (S3 p. 4; S6 French: 'Lui le Seigneur du Trône Sublime'). Named alternative: 1, since a short dedicatory formula need not express a full doctrine of transcendence."
+    B_cause:
+      value: 3
+      basis: inference_from_work
       certainty: 0.5
-      cites: [{source: S3, locator: "Author's Preface, pp. 3–4"}, {source: S3, locator: "Author's Preface, p. 1 (contested); Notes, pp. 175–176"}]
-      how_known: "Re-anchored on p. 4 (lens audit of batch C, #12): the hope that the learned will obtain for him 'through their prayers the excellence of the Divine mercy' (pp. 3–4), which Rosen's Notes do not single out. The p. 1 line on 'those who deserve it by their virtuous acts' is contested: Rosen is 'very doubtful' of his reading there (Notes, p. 175) and prints Shakespear's rendering, in which the praiseworthy deeds are God's and no one's merit is named, as 'evidently easier than that adopted by myself' (p. 176). One formulaic line, so 0.5."
-      rationale: "Draft judgment (one line): divine mercy is granted to a person, and others' prayers can obtain it for him (pp. 3–4): a personal dispensation of mercy with intercession, the ledger's interventionist features, limited to mercy rather than judgment, so 1 (coder's call: p. 4 carries C at 0.5). Named alternatives: 0; BELOW_THRESHOLD if the p. 4 line is read as a dedicatory formula only."
+      support: corroborated
+      cites: [{source: S1, locator: "Biography (Sindhind zij: true positions of sun, moon and planets; calendars; eclipses)"}, {source: S5, locator: "throughout (Zīj al-Sindhind; mean motions, equations, ecliptic)"}]
+      how_known: "Scientist under P30: the Sindhind zij is a listed lasting result on celestial motions (S1; S5 Brentjes). No statement of his own on law and exception, so B 3 at 0.5 with alternative 4, never 4 (P24, P35). Earlier BELOW_THRESHOLD coder's call (astrology/horoscopes in MacTutor) reversed on deepen: Kepler's record scores B from mathematical astronomy while listing astrology as an occupation; MacTutor's 'astrological tables' sit beside eclipse and planetary-position tables as applications of the same zij, and do not by themselves show that working science covers only part of B (P19)."
+      rationale: "Draft judgment (one line): working mathematical astronomy — calculating true positions of sun, moon and planets, calendars, parallax and eclipses (S1; S5) — implies a lawful celestial order with no stated exception in what was read, so B 3 at 0.5. Named alternative: 4 (P35: working science cannot tell lawful-with-exceptions from exceptionless); also BELOW_THRESHOLD if a later primary read of the zij or the political-history horoscopes shows special causal channels that displace natural regularity."
+      alternatives:
+        - {value: 4, note: "P35 default alternative for inference_from_work.", cites: [{source: S1, locator: "Sindhind zij"}, {source: S5, locator: "Zīj al-Sindhind"}]}
+    C_ledger: {value: BELOW_THRESHOLD, note: "Lens audit had scored C 1 at 0.5 on Rosen's 'through their prayers the excellence of the Divine mercy' (pp. 3–4). The modern French critical preface (S6) has a different sense at the same place: hoping men of letters grant the book its place 'grâce aux bienfaits de Dieu très haut' (by God's benefits), with no prayer-intercession clause. Rosen himself already doubted p. 1 (Notes, pp. 175–176). Draft judgment (one line): translation-dependent and contested; not scored.", how_known: "BELOW_THRESHOLD under P19 (contested translation; deepen 2026-10-23)."}
     D_authority: {value: BELOW_THRESHOLD, note: "The preface affirms prophecy ('He sent Mohammed ... with the mission of a prophet ... when the true way of life was sought for in vain', p. 1) but says nothing on revelation against reason or observation. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
-    E_scope: {value: UNKNOWN, how_known: "Nothing in the preface or the sources read on the world's order (P7, P19)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "B_cause is BELOW_THRESHOLD, so the P4 test cannot be applied (§6, P19). A_locus 0 alone would not meet it."}
+    E_scope: {value: BELOW_THRESHOLD, note: "Scientist under P30; working science bears on E's first question but E is not scored from working science alone (P19). No statement of his own on one world / one order.", how_known: "BELOW_THRESHOLD under P19 (scientist, no statement; deepen 2026-10-23). Was UNKNOWN."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 0 ≤ 1 and B_cause 3 ≥ 3 would pass P4, but both are only at 0.5, under the test's 0.7 bar (§6, P19)."}
   statements:
     - text: "Praised be God for his bounty towards those who deserve it by their virtuous acts: in performing which, as by him prescribed to his adoring creatures, we express our thanks, and render ourselves worthy of the continuance (of his mercy), and preserve ourselves from change: acknowledging his might, bending before his power, and revering his greatness ! He sent Mohammed (on whom may the blessing of God repose !) with the mission of a prophet, long after any messenger from above had appeared, when justice had fallen into neglect, and when the true way of life was sought for in vain."
       cites: [{source: S3, locator: "Author's Preface, p. 1"}]
@@ -146,8 +152,8 @@ worldview:
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "scholarly edition"
-      verified_on: 2026-10-08
-      note: "Rosen's translation. The wording follows the stock closing of Q 9:129."
+      verified_on: 2026-10-23
+      note: "Rosen's translation; re-checked on archive.org OCR 2026-10-23. Wording follows Q 9:129. French critical text (S6) agrees on sense."
     - text: "relying on the goodness of my intention therein, and hoping that the learned will reward it, by obtaining (for me) through their prayers the excellence of the Divine mercy: in requital of which, may the choicest blessings and the abundant bounty of God be theirs !"
       cites: [{source: S3, locator: "Author's Preface, pp. 3–4"}]
       context: "End of the dedication, just before the closing line of the preface; the page turns inside 'good-ness'."
@@ -155,9 +161,17 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-08
-      note: "Rosen's translation (1831), checked on the archive.org OCR text; not singled out in the Notes."
+      note: "Rosen 1831. Deepen 2026-10-23: modern French critical preface (S6) does not support this prayer-intercession sense; C demoted to BELOW_THRESHOLD. Kept as a contested Rosen reading."
+    - text: "C'est de Dieu que me vient le succès en cela et en toutes autres choses. C'est à Lui que je m'en remets, Lui le Seigneur du Trône Sublime."
+      cites: [{source: S6, locator: "French Algebra preface close (hist-math.fr text)"}]
+      context: "Close of the author's preface in the modern French critical text of the Algebra."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-23
+      note: "Rashed-tradition French text; agrees with Rosen p. 4 on the Throne closing (A). Undated (after 813)."
   changes_over_life: []
-  coder_notes: "All worldview evidence is one formulaic preface in an 1831 English translation from a manuscript that Rosen says lacks most diacritical points; he is 'very doubtful' about several passages (Notes, p. 175). Coder's calls (CODING_GUIDE §8): B_cause BELOW_THRESHOLD although he counts as a scientist under P30, because his astronomy includes astrological tables and horoscopes (S1), so the working science covers only part of the axis; the conservative option is taken. Lawful-nature evidence for a mathematician is not taken from the Algebra itself (its subject is calculation, not the physical world). No LIO-type views found."
+  coder_notes: "Deepen 2026-10-23: B now scored from the zij as working science (P30/P35), corroborated by MacTutor and Brentjes BEA; Algebra still not used for B (calculation, not nature). A stays 0.5 (Q 9:129 formula) but support is now corroborated (Rosen + Toomer + French Throne line). C dropped: Rosen's mercy-through-prayers line fails against the modern French preface. E set to BELOW_THRESHOLD for a scientist with no statement (P19). mid_basin still blocked by the 0.7 bar. Childhood still empty (sources: little known)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -182,8 +196,8 @@ lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "partly", rationale: "The Algebra gives rules 'together with demonstrations' from 'intuitive geometric arguments' (S2), not axiomatic proof.", certainty: 0.5, cites: [{source: S2, locator: "paragraph 2"}], how_known: "Coder's reading of Britannica."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "Biography, paragraph 1"}], how_known: "Nothing known of his education."}
-  circle_present: {value: "no", rationale: "The preface places God as transcendent Lord; nothing ties God to nature's order.", certainty: 0.5, cites: [{source: S3, locator: "pp. 1–4"}], how_known: "Coder's reading."}
-  reading: "As belief, not finding: form partly, circle absent; no LIO-type views found."
+  circle_present: {value: "no", rationale: "The preface places God as transcendent Lord; B from working astronomy is not a stated God–nature link.", certainty: 0.5, cites: [{source: S3, locator: "pp. 1–4"}, {source: S1, locator: "Sindhind zij"}], how_known: "Coder's reading."}
+  reading: "As belief, not finding: form partly, circle absent; A 0 and B 3 both only at 0.5, so no mid-basin / LIO-type pass."
   notes: ""
 
 institutions:
@@ -199,9 +213,14 @@ review:
     - {value: "Whether al-Tabari's epithet 'al-Majusi' (Zoroastrian) belongs to him (Toomer) or to a second person (Rashed)", certainty: 0.7, cites: [{source: S1, locator: "Biography, paragraph 1"}], how_known: "MacTutor reports both."}
   data_quality_flags:
     - "MacTutor's page title gives 790–850 while its Quick Info gives about 780; Britannica gives c. 780."
-    - "Rosen (1831) doubts his own translation of the preface (Notes, p. 175)."
+    - "Rosen (1831) doubts his own translation of the preface (Notes, p. 175); modern French preface (S6) diverges on the C-critical dedication clause."
+    - "Chart-moving this pass: newly plotted; point_cues None → ('faded','filled'); B BELOW→3 @0.5; A support single→corroborated."
+    - "Britannica re-fetch blocked/timed out 2026-10-23; prior S2 facts retained."
   open_questions:
-    - "Check the preface against a modern edition (Rashed 2007) for the C passage."
+    - "Rashed 2009 English (Saqi) full preface for a published English critical text of C/A."
+    - "Primary Latin/Hebrew zij (Neugebauer / Adelard tradition) for any B statement beyond inference_from_work."
+    - "Any dating firmer than 'after 813' for Algebra / zij (P12)."
+
 
 sources:
   - id: S1
@@ -210,8 +229,9 @@ sources:
     author: "J. J. O'Connor and E. F. Robertson"
     citation: "O'Connor, J. J., and E. F. Robertson. \"Abu Ja'far Muhammad ibn Musa Al-Khwarizmi.\" MacTutor History of Mathematics, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Al-Khwarizmi/"
-    accessed: 2026-10-08
-    reliability_note: "Standard reference biography; quotes Toomer (DSB) and Rashed."
+    accessed: 2026-10-23
+    source_quality: "reference entry"
+    reliability_note: "Standard reference biography; quotes Toomer (DSB) and Rashed. Re-read 2026-10-23 for deepen (zij topics; orthodox-Muslim preface note)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -220,7 +240,8 @@ sources:
     citation: "Britannica Editors. \"al-Khwārizmī.\" Encyclopaedia Britannica. https://www.britannica.com/biography/al-Khwarizmi."
     url: "https://www.britannica.com/biography/al-Khwarizmi"
     accessed: 2026-10-08
-    reliability_note: "Unsigned editors' article; whole article read."
+    source_quality: "reference entry"
+    reliability_note: "Unsigned editors' article; whole article read 2026-10-08. Re-fetch timed out / blocked 2026-10-23; prior facts retained."
     used_for: [identity, basics, contribution, lane_b, institutions]
   - id: S3
     type: primary
@@ -229,8 +250,9 @@ sources:
     year: 1831
     citation: "Mohammed ben Musa. The Algebra of Mohammed ben Musa. Edited and translated by Frederic Rosen. London: Oriental Translation Fund, 1831. Scan: archive.org, algebraofmohamme00khuwuoft."
     url: "https://archive.org/details/algebraofmohamme00khuwuoft"
-    accessed: 2026-10-08
-    reliability_note: "Arabic text with English translation; the Author's Preface (pp. 1–4) and Rosen's Notes (p. 175) read on the OCR of the scan. Translator's doubt about the preface noted."
+    accessed: 2026-10-23
+    source_quality: "primary / own words"
+    reliability_note: "Arabic text with English translation; Author's Preface (pp. 1–4) and Notes (pp. 175–176) re-checked on archive.org OCR 2026-10-23. Translator's doubt about parts of the preface noted; C-critical clause contested by S6."
     used_for: [identity, contribution, worldview, timing, lane_b, institutions]
   - id: S4
     type: secondary
@@ -239,8 +261,32 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-08
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S5
+    type: secondary
+    kind: encyclopedia
+    author: "Sonja Brentjes"
+    year: 2007
+    citation: "Brentjes, Sonja. \"al-Khwārizmī (Muḥammad ibn Mūsā).\" In Biographical Encyclopedia of Astronomers, edited by Thomas Hockey et al. Springer, 2007. PDF via MacTutor: https://mathshistory.st-andrews.ac.uk/BEA/al_khwarizmi_bea.pdf."
+    url: "https://mathshistory.st-andrews.ac.uk/BEA/al_khwarizmi_bea.pdf"
+    accessed: 2026-10-23
+    source_quality: "reference entry"
+    reliability_note: "Peer-reviewed encyclopedia article on his astronomy (Zīj al-Sindhind contents, transmission, Indian/Sasanian/Ptolemaic mix). Used for B corroboration."
+    used_for: [contribution, worldview, basics]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Muhammad ibn Musa al-Khwarizmi; French critical text (Rashed tradition)"
+    year: 2009
+    citation: "al-Khwārizmī. Livre d'algèbre et d'al-muqābala (French critical text of the Algebra preface and body). Posted as hist-math.fr/textes/alKhwarizmi830_Algebre.pdf (file metadata 2009; page headers 'AL-KHWĀRIZMĪ : LIVRE D'ALGÈBRE'; manuscript sigla). Same project family as Roshdi Rashed, Al-Khwārizmī: The Beginnings of Algebra (London: Saqi, 2009)."
+    url: "https://www.hist-math.fr/textes/alKhwarizmi830_Algebre.pdf"
+    accessed: 2026-10-23
+    source_quality: "primary / own words"
+    reliability_note: "Modern French critical text of the Algebra. Preface checked 2026-10-23: Throne closing agrees with Rosen (A); dedication clause does not support Rosen's prayer-intercession reading (C). Full English Rashed 2009 Saqi volume not obtained this pass."
+    used_for: [worldview]
+
 ---
 
 # Al-Khwarizmi
@@ -249,7 +295,7 @@ sources:
 
 ## Summary
 
-Al-Khwarizmi (c. 780–c. 850), scholar at the House of Wisdom in Baghdad under al-Ma'mun, wrote the first systematic algebra, a treatise that carried Hindu-Arabic numerals to Europe, and astronomical tables [S1; S2]. The only worldview text is the pious preface of the Algebra [S3, pp. 1–4]. Draft: ISLAM 0.7; A 0 (0.5); C 1 (0.5); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD.
+Al-Khwarizmi (c. 780–c. 850), scholar at the House of Wisdom in Baghdad under al-Ma'mun, wrote the first systematic algebra, a treatise that carried Hindu-Arabic numerals to Europe, and the Sindhind zij [S1; S2; S5]. Worldview text: Algebra preface [S3; S6]. Draft: ISLAM 0.7; A 0 (0.5, corroborated); B 3 (0.5, corroborated, inference_from_work); C BELOW_THRESHOLD; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Chart person-dot: faded filled (was unplotted).
 
 ## Life and work
 
@@ -265,7 +311,7 @@ Not known; Zoroastrian forebears disputed [S1].
 
 ## Adult working worldview
 
-Muslim devotional preface [S3]; possibly formulaic.
+Muslim dedicatory preface [S3; S6]; A 0 at 0.5. B 3 at 0.5 from zij working science [S1; S5], not from the Algebra. C dropped on modern preface check.
 
 ## Heritage (context only)
 
@@ -281,8 +327,11 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- Modern edition of the preface.
+- Rashed 2009 English (Saqi) full preface.
+- Primary zij text for any B statement beyond inference_from_work.
+- Firmer dating than after 813.
 
 ## Research log
 
 - 2026-10-08: Read MacTutor, Britannica (editors) and Rosen 1831 (preface and notes, archive.org OCR).
+- 2026-10-23: Deepen D1 (queue #4). Re-read MacTutor; Brentjes BEA 2007; Rashed-tradition French Algebra preface (hist-math.fr); Rosen OCR re-check. Britannica re-fetch failed. P47 labels. No fallacy_catalog (Jason 2026-10-23).
