@@ -2,17 +2,18 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from Britannica (Desmond, first page). Worldview from the Autobiography (Barlow ed. 1958, Darwin Online; pp. 87 and 94 checked on the page scans), three letters in the Darwin Correspondence Project (Gray 1860, Fordyce 1879, McDermott 1880), the DCP essay 'What did Darwin believe?', the Origin (1859, p. 488 checked on the scan) and the Descent (1871). primary_system BELOW_THRESHOLD (AGNOS candidate, stub). A 2 (0.7), B 4 (0.7), C 4 (0.7), D 4 (0.7), E 4 (0.7); mid_basin TODO (A = 2). All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #14, #15: geologist and geology now cite Britannica's later sections ('The London years, 1836–42'; 'The squire naturalist in Downe'), not the opening. #32: Paley taken out of early_geometric_style_reasoning (read for the B.A. of January 1831, at about 21; S1 p. 59 and footnote), and key_early_reading dated. #65: Beagle role is 'self-financed gentleman companion' to Fitzroy, not surgeon-naturalist (Britannica). #39: value unchanged; the reason now names its actual basis (v8's batch instructions, not a written rule) and says it awaits v8's ruling. #50: the mid_basin TODO now cites CODING_GUIDE §6 (P4) instead of an unwritten rule. Left for v8 as method questions: #7/#9 (whether Coral Reefs, 1842, must be listed; it would move the era) and #39 (stub systems). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. primary_system BELOW_THRESHOLD → DEISM 0.5 for the Origin years (alternative CLASS_THEISM; RATN considered and rejected under P22; revelation test met, P27; AGNOS moved to changes_over_life) (P20); secondary UNKNOWN → BELOW_THRESHOLD (1860 agnostic strand) (P19); A_locus 2 → 1 (0.7), scored for 1859 (P20); B_cause 4 → 3 (0.7): the 1859 book states one limited exception, the creation of the first forms (B 3 anchor, P27); mid_basin TODO → true (0.7), unchanged by B 3, flagged as a sensitive result for lens; Coral Reefs (1842) listed, first_lasting_contribution_year 1859 → 1842 and the 1859 alternative dropped (P17, P23), era 1850 to 1949 → 1750 to 1849 (CODING_GUIDE §8, P2), age 50 → 33; first_evidence_of_lio_type_views late 1830s → 1859, the earliest dated statement of his own scored at 3 or 4 (P27); Autobiography quotes kind notebook or diary → autobiography (P18) and checked against a scholarly edition (P21); Origin p. 489 and Descent quotes → primary transcription (P21); new statement Origin p. 490; single-source 1.0 fields rechecked (P15) (region_of_work, definition_fit → 0.7; region_of_birth, sex keep 1.0 with a second cite). New source S10 (Coral Reefs). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens run 1 on rulings packet 6155174, sources reopened. A_locus 1 certainty 0.7 → 0.5: without the hedged four-line addendum (S1, p. 93 footnote) the 1876 theist passage is present tense, leaving one hedged private letter (S3) and creation wording he later disowned (S12), with Desmond's backing (S8) (CODING_GUIDE §3); mid_basin true (0.7) → BELOW_THRESHOLD (§6, P19), SENSITIVE flag records the outcome; primary_system DEISM stays 0.5; B_cause stays 3 (0.7), alternative 4 now also cites S12 (new source, Hooker 1863); secondary_system BELOW_THRESHOLD → UNKNOWN (§1: only if he published in two systems), Gray strand kept as a note; coder_notes footnote locator corrected (the p. 92 footnote belongs to the immortality paragraph); 1839 Journal (S11, new source, p. 557) added as a named alternative date for the coral-reef theory, primary year left at 1842 pending v8. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #16, F5 rank 16). P47 source_quality on every source. New contemporaneous letters: S13 Gray 3 July [1860] (DCP-LETT-2855) — 'simple muddle about designed laws & undesigned consequences' and cannot persuade himself that electricity / tree / loftiest conceptions are 'all from blind, brute force'; S14 Lyell [1 August 1861] (DCP-LETT-3223) — rejects Gray's guided variation / Higher power, allows that God may have foreseen everything (free-will embroglio). A_locus stays 1 @ 0.5 consistent_private_letters, support corroborated (now multiple hedged Origin-era letters + Autobiography + Origin + Desmond); named alts 0 and 2 made explicit. Cannot lift to 0.7: new letters deepen the hedge rather than clear it (lens run 1 hold stands). B_cause stays 3 @ 0.7 written_profession, support corroborated; named alt 4 explicit. C/D/E support corroborated. mid_basin still BELOW_THRESHOLD (A only at 0.5). Chart: stays faded filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: darwin-charles
@@ -94,7 +95,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1831–1882", certainty: 0.7, cites: [{source: S8, locator: "opening"}], how_known: "From the Beagle voyage to his death."}
+  working_years: {value: "1837–1871", certainty: 0.7, cites: [{source: S8, locator: "opening"}, {source: S7, locator: "vol. 2"}], how_known: "Aligned with major_work_period (P30 addendum): from the private formulation of the species theory to the Descent. Was 1831–1882 (Beagle to death); tightened on deepen 2026-10-24."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Laws of nature leave no room for design in variation or for miracles ('Everything in nature is the result of fixed laws'; 'the more we know of the fixed laws of nature the more incredible do miracles become'), while the first cause stays an open question: 'The mystery of the beginning of all things is insoluble by us'. He held his theory compatible with theism ('absurd to doubt that a man may be an ardent Theist & an evolutionist')."
@@ -108,7 +109,7 @@ worldview:
     cites: [{source: S1, locator: "pp. 92–93 (checked on the page scan)"}, {source: S1, locator: "pp. 85–87"}, {source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}]
     how_known: "Coded for the working years of the major work, the Origin (1859), the same period as A_locus (CODING_GUIDE §5, 'Changes over life'; P20). His own retrospective words: 'When thus reflecting I feel compelled to look to a First Cause having an intelligent mind in some degree analogous to that of man; and I deserve to be called a Theist. This conclusion was strong in my mind about the time, as far as I can remember, when I wrote the Origin of Species; and it is since that time that it has very gradually with many fluctuations become weaker' (S1, pp. 92–93). He reached it by reason, from 'the extreme difficulty or rather impossibility of conceiving this immense and wonderful universe [...] as the result of blind chance or necessity' (p. 92), and had already given up revelation and miracles in 1836–39 (S1, pp. 85–87). The Origin's 'laws impressed on matter by the Creator' and 'secondary causes' (S6, p. 488) and the 1860 'designed laws' (S3) agree."
     rationale: "Draft judgment (one line): DEISM, because his own writing affirms a creator known by reason and rejects revelation and miracles (systems/DEISM.md use_when); he called himself a 'Theist', not a deist, so the code is the coder's mapping. Certainty 0.5, not 0.7: the passage is a retrospective self-report (main text 1876) and it hedges. The dating sentence is a later addendum (S1, p. 93, footnote: 'Addendum of four lines added later'), it says 'as far as I can remember', the next sentence asks whether 'the mind of man [...] be trusted when it draws such grand conclusions', and the 1860 letter adds 'Not that this notion at all satisfies me' (S3). 'with many fluctuations' describes the weakening after the Origin, not 1859 itself. Revelation test (P27): met; he rejects revelation as a source of truth ('I do not believe in the Bible as a divine revelation', S4; disbelief 'at last complete', S1, p. 87). His route to the First Cause argues from the world, the universe being inconceivable 'as the result of blind chance or necessity' (S1, p. 92), so RATN, which P22 keeps for arguments from the idea of God, does not apply. Named alternative: CLASS_THEISM, which also argues from the world to a first cause (P22) and treats nature as an order of secondary causes, but nothing read holds God simple or immutable. AGNOS, his later self-description, is in changes_over_life."
-  secondary_system: {value: UNKNOWN, note: "Not a second system, kept as evidence: an agnostic strand in the Origin years, in a private letter of 1860, 'designed laws' followed by 'Not that this notion at all satisfies me. I feel most deeply that the whole subject is too profound for the human intellect' (S3). The full agnosticism is later (changes_over_life).", how_known: "No second system: CODING_GUIDE §1 uses secondary_system only if the person published in two systems, and the Gray letter is private. Was BELOW_THRESHOLD under P19; reverted after lens run 1 (the §1 vs P19 question is flagged for v8)."}
+  secondary_system: {value: UNKNOWN, note: "Not a second system, kept as evidence: an agnostic / muddle strand in the Origin years — May 1860 'designed laws' followed by 'Not that this notion at all satisfies me' (S3); July 1860 'simple muddle about designed laws & undesigned consequences' (S13). The full agnosticism is later (changes_over_life).", how_known: "No second system: CODING_GUIDE §1 uses secondary_system only if the person published in two systems, and the Gray letters are private. Was BELOW_THRESHOLD under P19; reverted after lens run 1 (the §1 vs P19 question is flagged for v8)."}
   candidate_codes_considered:
     - {code: AGNOS, reason: "Not coded as primary: his own later self-description, 'content to remain an Agnostic' (S1, p. 94, 1876) and 'an agnostic would be the most correct description of my state of mind' (S2, 1879), which is after the major work; recorded in changes_over_life. The DCP editors add: 'Is he then an agnostic? Yes, but not all of the time' (S5). AGNOS is a stub system file (flag, sourcing backlog).", cites: [{source: S1, locator: "p. 94"}, {source: S2, locator: "letter text"}, {source: S5, locator: "section on the Fordyce letter"}]}
     - {code: DEISM, reason: "Coded at 0.5 (primary_system) for the Origin years: a First Cause 'having an intelligent mind' reached by reason (S1, pp. 92–93), revelation and miracles given up in 1836–39 (S1, pp. 85–87), species by 'secondary causes' under 'laws impressed on matter by the Creator' (S6, p. 488), and 'designed laws' (S3). He called himself a 'Theist', not a deist. Meets the revelation test (P27): 'I do not believe in the Bible as a divine revelation' (S4). DEISM is a draft system file.", cites: [{source: S1, locator: "pp. 85–87, 92–93"}, {source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}]}
@@ -121,20 +122,28 @@ worldview:
       value: 1
       basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S1, locator: "pp. 92–93, with p. 93 footnote 1"}, {source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}, {source: S8, locator: "'Evolution by natural selection: the London years, 1836–42' ('Darwin still believed that God was the ultimate lawgiver of the universe')"}, {source: S12, locator: "letter text"}]
-      how_known: "Scored for his worldview during the major work, the Origin of 1859, under the major-work-period rule (P20), the same period as primary_system. Held at 0.5 (lens run 1, sources reopened). The Autobiography's theist passage is in the present tense of 1876 ('When thus reflecting I feel compelled to look to a First Cause', S1, pp. 92–93); only the four-line addendum dates it to the Origin (S1, p. 93, footnote 1: 'Addendum of four lines added later. In Charles's MS. copy the interleaved addition is in his eldest son's hand. In Francis's copy it is in Charles's own hand'), and that addendum hedges ('as far as I can remember'). Without it, A rests on the Origin's 'laws impressed on matter by the Creator' (S6, p. 488), public creation wording he later said he used because he 'truckled to public opinion' (S12, 1863), and one hedged private letter (S3, 1860). One private letter with a scholar backing the reading gives 0.5 (CODING_GUIDE §3), and Desmond does back it: 'Darwin still believed that God was the ultimate lawgiver of the universe' (S8). This matches primary_system DEISM at 0.5 on the same evidence. Changed from 2 (which averaged the Origin-era theism with the later agnosticism, P20). It would be 0.7 only if v8 accepts the hedged addendum as dating evidence."
-      rationale: "Draft judgment (one line): leans to the transcendent-person pole with limits. Around the Origin he felt 'compelled to look to a First Cause having an intelligent mind in some degree analogous to that of man; and I deserve to be called a Theist. This conclusion was strong in my mind about the time, as far as I can remember, when I wrote the Origin of Species' (S1, pp. 92–93); the Origin speaks of 'the laws impressed on matter by the Creator' (S6, p. 488); in 1860 he leaned to 'designed laws' (S3). A mind only 'in some degree analogous' to ours, acting through laws, is the pole's feature present but limited, so 1. Named alternatives: 0, if the Creator is read as a full personal God; 2, the earlier whole-life reading. Later he became agnostic (changes_over_life), which this axis does not score."
+      support: corroborated
+      cites: [{source: S1, locator: "pp. 92–93, with p. 93 footnote 1"}, {source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}, {source: S13, locator: "letter text ('simple muddle'; 'blind, brute force')"}, {source: S14, locator: "letter text (rejects guided variation; allows foresight)"}, {source: S8, locator: "'Evolution by natural selection: the London years, 1836–42' ('Darwin still believed that God was the ultimate lawgiver of the universe')"}, {source: S12, locator: "letter text"}]
+      how_known: "Scored for his worldview during the major work, the Origin of 1859, under the major-work-period rule (P20), the same period as primary_system. Held at 0.5 (lens run 1; deepen 2026-10-24 confirms the hold). The Autobiography's theist passage is in the present tense of 1876 ('When thus reflecting I feel compelled to look to a First Cause', S1, pp. 92–93); only the four-line addendum dates it to the Origin (S1, p. 93, footnote 1), and that addendum hedges ('as far as I can remember'). Contemporaneous private letters deepen rather than clear the hedge: May 1860 'designed laws' with 'Not that this notion at all satisfies me' (S3); July 1860 'my mind is in simple muddle about designed laws & undesigned consequences' yet 'I cannot persuade myself that electricity acts, that the tree grows, that man aspires to loftiest conceptions all from blind, brute force' (S13); August 1861 rejects Gray's guided variation / Higher power but allows that God may have foreseen everything (S14). Public Origin creation wording he later said he 'truckled' (S6; S12). Multiple private letters → consistent_private_letters ceiling 0.7, but contested and heavily hedged → held at 0.5 (CODING_GUIDE §3). Desmond backs the lawgiver reading (S8). Matches primary_system DEISM at 0.5. Support corroborated (S3+S13+S1+S6). It would be 0.7 only if v8 accepts the hedged addendum plus the muddled letters as dating evidence at the ceiling."
+      rationale: "Draft judgment (one line): leans to the transcendent-person pole with limits. Around the Origin he felt 'compelled to look to a First Cause having an intelligent mind in some degree analogous to that of man; and I deserve to be called a Theist' (S1, pp. 92–93); the Origin speaks of 'the laws impressed on matter by the Creator' (S6, p. 488); in 1860 he leaned to 'designed laws' (S3) and could not persuade himself that loftiest conceptions come 'all from blind, brute force' (S13), while rejecting guided variation of each detail (S14). A mind only 'in some degree analogous' to ours, acting through laws, is the pole's feature present but limited, so 1. Named alternatives: 0, if the Creator is read as a full personal God; 2, if the Origin-era muddle is scored as mixed/averaging with later agnosticism. Later he became agnostic (changes_over_life), which this axis does not score."
+      alternatives:
+        - {value: 0, note: "If the Creator / First Cause with an intelligent mind is read as a full personal God (pole feature fully present).", cites: [{source: S1, locator: "pp. 92–93"}, {source: S3, locator: "letter text"}]}
+        - {value: 2, note: "Earlier whole-life reading that averaged Origin-era theism with later agnosticism (superseded by P20); or Origin-era muddle scored as mixed.", cites: [{source: S13, locator: "letter text ('simple muddle')"}, {source: S1, locator: "pp. 92–94"}]}
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S6, locator: "pp. 484, 488–490"}, {source: S1, locator: "pp. 86–87"}, {source: S3, locator: "letter text"}, {source: S12, locator: "letter text"}]
       how_known: "His own published book (p. 488 checked on the scan; pp. 484 and 490 read on the Darwin Online transcription), matched by his private writing. A named alternative, so 0.7, not 1.0 (CODING_GUIDE §3). Was 4; 3 under the B 3 anchor (P27)."
       rationale: "Scored on his account of nature (P6). Species arise by 'secondary causes, like those determining the birth and death of the individual' (S6, p. 488) and 'have all been produced by laws acting around us' (S6, p. 489); privately, 'Everything in nature is the result of fixed laws' (S1, p. 87). No miracle, petition or exemption in his account of living things after their beginning. But the same book leaves the beginning outside the laws: 'the first creature [...] was created' (S6, p. 488), life 'was first breathed' into 'some one primordial form' (S6, p. 484) and was 'originally breathed into a few forms or into one' (S6, p. 490). A stated general lawfulness with one stated, limited exception, a creation act, is 3 under the B 3 anchor (P27). Named alternative: 4, if the creation wording is read as a concession of the 1859 book rather than his own view: in 1863 he wrote that he had 'truckled to public opinion & used Pentateuchal term of creation, by which I really meant “appeared” by some wholly unknown process' (S12; the DCP note ties it to p. 484), and privately 'Everything in nature is the result of fixed laws' (S1, p. 87)."
+      alternatives:
+        - {value: 4, note: "If the 1859 creation / 'first breathed' wording is read as a public concession he later disowned (S12), leaving exceptionless fixed laws (S1, p. 87).", cites: [{source: S12, locator: "letter text"}, {source: S1, locator: "pp. 86–87"}]}
     C_ledger:
       value: 4
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S1, locator: "pp. 87, 94"}, {source: S3, locator: "letter text"}]
       how_known: "His own private writing; a named alternative, so 0.7 in any case."
       rationale: "Draft judgment (one line): no moral reckoning in events or after death. 'The lightning kills a man, whether a good one or bad one, owing to the excessively complex action of natural laws' (S3); everlasting punishment is 'a damnable doctrine' (S1, p. 87). Named alternative: 3, since he did not deny a future life outright; he only lacked an 'assured and ever present belief in [...] a future existence with retribution and reward' (S1, p. 94)."
@@ -142,6 +151,7 @@ worldview:
       value: 4
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S1, locator: "pp. 85–86"}, {source: S4, locator: "letter text"}]
       how_known: "His own private writing (Autobiography and a private letter), ceiling 0.7."
       rationale: "Draft judgment (one line): revelation has no authority for him. The Old Testament 'was no more to be trusted than the sacred books of the Hindoos' (S1, p. 85); miracles become more incredible as we know 'the fixed laws of nature' (S1, p. 86); 'I do not believe in the Bible as a divine revelation' (S4)."
@@ -149,10 +159,11 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S6, locator: "pp. 488–489"}, {source: S7, locator: "vol. 2, p. 385"}, {source: S3, locator: "letter text"}]
       how_known: "His published books for humans under the same laws as other organisms; the 'no favour in events' part comes from a private letter, and there is a named alternative, so 0.7 (not 1.0)."
       rationale: "Scored on the world's order (P7). The same laws for all kinds, humans included: 'Light will be thrown on the origin of man and his history' (S6, p. 488); 'man is descended from some less highly organised form' (S7, p. 385); and events fall on the good and the bad alike (S3). Named alternative: 3, because in 1860 he still allowed that all these laws 'may have been expressly designed by an omniscient Creator' (S3); design of the whole is not favour for a group, so it is not preferred."
-  mid_basin: {value: BELOW_THRESHOLD, cites: [{source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}, {source: S1, locator: "pp. 92–93, with p. 93 footnote 1"}, {source: S6, locator: "pp. 484, 488–490"}, {source: S12, locator: "letter text"}], how_known: "P4/P6 test (CODING_GUIDE §6): A_locus 1 is ≤ 1 but only at 0.5; B_cause 3 (0.7) is ≥ 3. §6 and P19 give BELOW_THRESHOLD when an axis is only at 0.5. Was true (0.7) while A was at 0.7; changed after lens run 1.", note: "SENSITIVE RESULT, outcome after lens run 1 (sources reopened 2026-10-02): mid_basin true at 0.7 did not survive. A is 1 but at 0.5: the Autobiography dates its theism to the Origin only in a hedged four-line addendum (S1, p. 93 footnote 1), the Origin's creation wording was later disowned to Hooker (S12), and the Gray letter hedges (S3). B is 3 at 0.7 (alternative 4). mid_basin would be true (0.7) only if v8 explicitly accepts the hedged addendum and the Gray letter at 0.7; primary_system DEISM would then rise to 0.7 as well, since it rests on the same evidence."}
+  mid_basin: {value: BELOW_THRESHOLD, cites: [{source: S6, locator: "p. 488"}, {source: S3, locator: "letter text"}, {source: S13, locator: "letter text"}, {source: S14, locator: "letter text"}, {source: S1, locator: "pp. 92–93, with p. 93 footnote 1"}, {source: S6, locator: "pp. 484, 488–490"}, {source: S12, locator: "letter text"}], how_known: "P4/P6 test (CODING_GUIDE §6): A_locus 1 is ≤ 1 but only at 0.5; B_cause 3 (0.7) is ≥ 3. §6 and P19 give BELOW_THRESHOLD when an axis is only at 0.5. Was true (0.7) while A was at 0.7; changed after lens run 1; deepen 2026-10-24 (S13, S14) did not lift A.", note: "SENSITIVE RESULT: mid_basin true at 0.7 did not survive lens run 1, and deepen did not restore it. A is 1 but at 0.5: hedged Autobiography addendum (S1), truckled creation wording (S12), and multiple hedged Origin-era letters (S3, S13, S14 — muddle / rejects guided variation). B is 3 at 0.7 (alternative 4). mid_basin would be true (0.7) only if v8 explicitly accepts that evidence at 0.7; primary_system DEISM would then rise to 0.7 as well."}
   statements:
     - text: "Whilst on board the Beagle I was quite orthodox"
       cites: [{source: S1, locator: "p. 85"}]
@@ -290,6 +301,38 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
+    - text: "I am myself quite conscious that my mind is in simple muddle about “designed laws” & “undesigned consequences”."
+      cites: [{source: S13, locator: "letter text"}]
+      date: "1860-07-03"
+      context: "To Asa Gray, 3 July [1860], during the major-work period; continues the May 1860 designed-laws exchange."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+    - text: "I cannot persuade myself that electricity acts, that the tree grows, that man aspires to loftiest conceptions all from blind, brute force."
+      cites: [{source: S13, locator: "letter text"}]
+      date: "1860-07-03"
+      context: "Same letter; after arguing that neither a man killed by lightning nor a gnat snapped by a swallow is designedly killed, yet still rejecting a wholly blind account."
+      axes: [A_locus, B_cause]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+    - text: "The view that each variation has been providentially arranged seems to me to make natural selection entirely superfluous, & indeed takes whole case of appearance of new species out of the range of science."
+      cites: [{source: S14, locator: "letter text"}]
+      date: "1861-08-01"
+      context: "To Charles Lyell, [1 August 1861]; rejects Asa Gray's view that the stream of variation was guided by a Higher power."
+      axes: [A_locus, B_cause]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+    - text: "I do not wish to say that God did not foresee everything which would ensue; but here comes very nearly the same sort of wretched embroglio as between free-will & preordained necessity."
+      cites: [{source: S14, locator: "letter text"}]
+      date: "1861-08-01"
+      context: "Same letter; allows foresight while rejecting providential arrangement of each variation."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
   changes_over_life:
     - {value: "Orthodox Christian on the Beagle; disbelief in Christianity came slowly over the following years 'but was at last complete'", year: "1836–1839 onward", certainty: 0.7, cites: [{source: S1, locator: "pp. 85–87"}], how_known: "His own retrospective account (private writing)."}
     - {value: "Theist (a First Cause with an intelligent mind) around the writing of the Origin; this 'very gradually with many fluctuations' became weaker afterwards", year: "c. 1859 onward", certainty: 0.7, cites: [{source: S1, locator: "pp. 92–93"}], how_known: "His own retrospective account."}
@@ -333,10 +376,11 @@ review:
     - "Britannica read as its first page, plus the section pages 'Evolution by natural selection: the London years, 1836–42' (which also carries 'The squire naturalist in Downe') and 'The Beagle voyage', reopened 2026-10-02."
     - "The Autobiography is private writing for his family (S5); it is treated as consistent_private_letters, not as a public profession."
     - "Era follows the first lasting year (CODING_GUIDE §8; P2): Coral Reefs, 1842 by publication year, so 1750 to 1849; alternatives 1837 and 1836 kept."
-    - "SENSITIVE RESULT, outcome after lens run 1: mid_basin is BELOW_THRESHOLD, not true. A_locus is 1 at 0.5, because the dating of his theism to the Origin rests on a hedged four-line addendum (S1, p. 93 footnote 1), creation wording he later disowned (S12) and one hedged letter (S3); B_cause is 3 at 0.7. mid_basin would be true (0.7) only if v8 explicitly accepts that evidence at 0.7, in which case DEISM rises to 0.7 too."
+    - "SENSITIVE RESULT: mid_basin stays BELOW_THRESHOLD after deepen 2026-10-24. A_locus is 1 at 0.5 (hedged Autobiography addendum S1; truckled creation wording S12; multiple hedged Origin-era letters S3, S13, S14). B_cause is 3 at 0.7. mid_basin / DEISM would rise to 0.7 only if v8 accepts that evidence at the ceiling."
   open_questions:
     - "AGNOS (his later self-description) is a stub system file; it is recorded in changes_over_life, not coded (sourcing backlog)."
     - "Which religion passages of the Autobiography are 1876 text and which are later addenda (Barlow, p. 5; footnotes pp. 92, 93)."
+    - "Deepen 2026-10-24: can A leave 0.5? S13 and S14 deepen the Origin-era muddle (designed laws vs undesigned consequences; rejects guided variation) rather than clearing the hedge. Lift to 0.7 would need v8 to accept the hedged addendum plus these letters at the consistent_private_letters ceiling."
     - "For v8: the coral-reef theory was first published in the 1839 Journal (S11, p. 557). Dating the item by first publication would move first_lasting_contribution_year to 1839 (era unchanged, 1750 to 1849); v8 asked for the 1842 book, so 1842 is kept and 1839 is a named alternative."
     - "For v8: does secondary_system follow CODING_GUIDE §1 (only if he published in two systems) or P19 (BELOW_THRESHOLD for weak evidence)? Coded UNKNOWN under §1."
 
@@ -344,6 +388,7 @@ sources:
   - id: S1
     type: primary
     kind: "scholarly edition"
+    source_quality: "scholarly edition or monograph"
     author: "Charles Darwin; ed. Nora Barlow"
     year: 1958
     citation: "Darwin, Charles. The Autobiography of Charles Darwin 1809–1882. With the original omissions restored. Edited by Nora Barlow. London: Collins, 1958. Darwin Online, item F1497. http://darwin-online.org.uk/content/frameset?itemID=F1497&viewtype=text&pageseq=1."
@@ -354,6 +399,7 @@ sources:
   - id: S2
     type: primary
     kind: letter
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1879
     citation: "Darwin, Charles. Letter to John Fordyce, 7 May 1879. Darwin Correspondence Project, letter no. DCP-LETT-12041 (source of text: Linnean Society of London, Quentin Keynes Collection). https://www.darwinproject.ac.uk/letter/DCP-LETT-12041.xml."
@@ -364,6 +410,7 @@ sources:
   - id: S3
     type: primary
     kind: letter
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1860
     citation: "Darwin, Charles. Letter to Asa Gray, 22 May [1860]. Darwin Correspondence Project, letter no. DCP-LETT-2814. https://www.darwinproject.ac.uk/letter/DCP-LETT-2814.xml."
@@ -374,6 +421,7 @@ sources:
   - id: S4
     type: primary
     kind: letter
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1880
     citation: "Darwin, Charles. Letter to Frederick McDermott, 24 November 1880. Darwin Correspondence Project, letter no. DCP-LETT-12851 (source of text: Bonhams, New York, 2015). https://www.darwinproject.ac.uk/letter/DCP-LETT-12851.xml."
@@ -384,6 +432,7 @@ sources:
   - id: S5
     type: secondary
     kind: "institutional page"
+    source_quality: "scholarly reconstruction"
     author: "Darwin Correspondence Project (editors)"
     citation: "Darwin Correspondence Project. \"What did Darwin believe?\" University of Cambridge. https://www.darwinproject.ac.uk/commentary/religion/what-did-darwin-believe."
     url: "https://www.darwinproject.ac.uk/commentary/religion/what-did-darwin-believe"
@@ -393,6 +442,7 @@ sources:
   - id: S6
     type: primary
     kind: "published work by the subject"
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1859
     citation: "Darwin, Charles. On the Origin of Species by Means of Natural Selection. London: John Murray, 1859 (first edition). Darwin Online, item F373. http://darwin-online.org.uk/content/frameset?itemID=F373&viewtype=text&pageseq=1."
@@ -403,6 +453,7 @@ sources:
   - id: S7
     type: primary
     kind: "published work by the subject"
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1871
     citation: "Darwin, Charles. The Descent of Man, and Selection in Relation to Sex. Vol. 2. London: John Murray, 1871. Darwin Online, item F937.2. http://darwin-online.org.uk/content/frameset?itemID=F937.2&viewtype=text&pageseq=1."
@@ -413,6 +464,7 @@ sources:
   - id: S8
     type: tertiary
     kind: encyclopedia
+    source_quality: "reference entry"
     author: "Adrian J. Desmond"
     citation: "Desmond, Adrian J. \"Charles Darwin.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Charles-Darwin."
     url: "https://www.britannica.com/biography/Charles-Darwin"
@@ -422,6 +474,7 @@ sources:
   - id: S9
     type: secondary
     kind: database
+    source_quality: "study roster"
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
@@ -431,6 +484,7 @@ sources:
   - id: S10
     type: primary
     kind: "published work by the subject"
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1842
     citation: "Darwin, Charles. The Structure and Distribution of Coral Reefs. Being the first part of the geology of the voyage of the Beagle. London: Smith, Elder and Co., 1842. Darwin Online, item F271. https://darwin-online.org.uk/content/frameset?itemID=F271&viewtype=text&pageseq=1."
@@ -441,6 +495,7 @@ sources:
   - id: S11
     type: primary
     kind: "published work by the subject"
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1839
     citation: "Darwin, Charles. Journal and Remarks, 1832–1836. Vol. 3 of Narrative of the Surveying Voyages of His Majesty's Ships Adventure and Beagle. London: Henry Colburn, 1839. Darwin Online, item F10.3. https://darwin-online.org.uk/content/frameset?itemID=F10.3&viewtype=text&pageseq=1."
@@ -451,12 +506,35 @@ sources:
   - id: S12
     type: primary
     kind: letter
+    source_quality: "primary / own words"
     author: "Charles Darwin"
     year: 1863
     citation: "Darwin, Charles. Letter to J. D. Hooker, [29 March 1863]. Darwin Correspondence Project, letter no. DCP-LETT-4065. https://www.darwinproject.ac.uk/letter/DCP-LETT-4065.xml."
     url: "https://www.darwinproject.ac.uk/letter/DCP-LETT-4065.xml"
     accessed: 2026-10-02
     reliability_note: "Scholarly edition."
+    used_for: [worldview]
+  - id: S13
+    type: primary
+    kind: letter
+    source_quality: "primary / own words"
+    author: "Charles Darwin"
+    year: 1860
+    citation: "Darwin, Charles. Letter to Asa Gray, 3 July [1860]. Darwin Correspondence Project, letter no. DCP-LETT-2855. https://www.darwinproject.ac.uk/letter/DCP-LETT-2855.xml."
+    url: "https://www.darwinproject.ac.uk/letter/DCP-LETT-2855.xml"
+    accessed: 2026-10-24
+    reliability_note: "Scholarly edition (Archives of the Gray Herbarium, Harvard University). Read 2026-10-24 for the designed-laws / muddle and 'blind, brute force' passages."
+    used_for: [worldview]
+  - id: S14
+    type: primary
+    kind: letter
+    source_quality: "primary / own words"
+    author: "Charles Darwin"
+    year: 1861
+    citation: "Darwin, Charles. Letter to Charles Lyell, [1 August 1861]. Darwin Correspondence Project, letter no. DCP-LETT-3223. https://www.darwinproject.ac.uk/letter/DCP-LETT-3223.xml."
+    url: "https://www.darwinproject.ac.uk/letter/DCP-LETT-3223.xml"
+    accessed: 2026-10-24
+    reliability_note: "Scholarly edition (American Philosophical Society). Read 2026-10-24 for the rejection of Gray's guided variation / Higher power and the foresight / free-will embroglio."
     used_for: [worldview]
 ---
 
@@ -466,7 +544,7 @@ sources:
 
 ## Summary
 
-Charles Robert Darwin (1809–1882), English naturalist, set out the theory of evolution by natural selection in the Origin of Species (1859) [S6; S8]. In private writing he said that disbelief in Christianity "crept over me at a very slow rate, but was at last complete" [S1, p. 87], that he was a theist about the time of the Origin and later "content to remain an Agnostic" [S1, pp. 93–94], and that he had "never been an atheist in the sense of denying the existence of a God" [S2]. Draft under v8's stage 3 rulings (P14–P28), scored for the Origin years (P20): primary_system DEISM (0.5; alternative CLASS_THEISM), from his own hedged retrospective account [S1, pp. 92–93]; later AGNOS [S1, p. 94; S2]. Draft scores: A 1 (0.5) [S6, p. 488; S3; S8]; B 3 (0.7; P27 anchor), C 4 (0.7), D 4 (0.7), E 4 (0.7); mid_basin below threshold, because A is only at 0.5 (the sensitive result did not survive lens run 1; see the record's mid_basin note).
+Charles Robert Darwin (1809–1882), English naturalist, set out the theory of evolution by natural selection in the Origin of Species (1859) [S6; S8]. In private writing he said that disbelief in Christianity "crept over me at a very slow rate, but was at last complete" [S1, p. 87], that he was a theist about the time of the Origin and later "content to remain an Agnostic" [S1, pp. 93–94], and that he had "never been an atheist in the sense of denying the existence of a God" [S2]. Draft under v8's stage 3 rulings (P14–P28), scored for the Origin years (P20): primary_system DEISM (0.5; alternative CLASS_THEISM), from his own hedged retrospective account [S1, pp. 92–93]; later AGNOS [S1, p. 94; S2]. Deepen 2026-10-24 (queue #16): A 1 (0.5, support corroborated) — Origin-era letters S3, S13, S14 deepen the designed-laws muddle rather than lifting certainty [S13; S14]; B 3 (0.7, support corroborated; P27 anchor); C 4 (0.7), D 4 (0.7), E 4 (0.7); mid_basin below threshold (A only at 0.5). Chart stays faded filled.
 
 ## Life and work
 
@@ -482,7 +560,7 @@ His mother, a Wedgwood, was a Unitarian and died in 1817; the boys were christen
 
 ## Adult working worldview
 
-His account of nature is lawful throughout: species arise by "secondary causes" under "laws impressed on matter by the Creator" [S6, p. 488], and "Everything in nature is the result of fixed laws" [S1, p. 87]. He rejected revelation [S1, p. 85; S4] and eternal punishment [S1, p. 87]. Around the Origin he held a First Cause "having an intelligent mind" [S1, pp. 92–93], coded DEISM at 0.5 for that period; it weakened afterwards into agnosticism [S1, p. 94; S2]. The Autobiography was written for his family and should not be read as a neutral account [S5].
+His account of nature is lawful throughout: species arise by "secondary causes" under "laws impressed on matter by the Creator" [S6, p. 488], and "Everything in nature is the result of fixed laws" [S1, p. 87]. He rejected revelation [S1, p. 85; S4] and eternal punishment [S1, p. 87]. Around the Origin he held a First Cause "having an intelligent mind" [S1, pp. 92–93], coded DEISM at 0.5 for that period; it weakened afterwards into agnosticism [S1, p. 94; S2]. Contemporaneous letters show the same lean with heavy hedges: "designed laws" that "do not at all satisf[y]" him [S3]; "simple muddle about designed laws & undesigned consequences," yet he "cannot persuade [him]self" that loftiest conceptions come "all from blind, brute force" [S13]; rejection of Gray's guided variation while allowing that God may have foreseen everything [S14]. The Autobiography was written for his family and should not be read as a neutral account [S5].
 
 ## Heritage (context only)
 
@@ -498,7 +576,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- mid_basin: the sensitive result (true at 0.7) did not survive lens run 1; it is below threshold because A is 1 at only 0.5. It would be true only if v8 accepts the hedged addendum [S1, p. 93] and the Gray letter [S3] at 0.7.
+- mid_basin / A certainty: stays below threshold after deepen 2026-10-24. A is 1 at only 0.5. S13 and S14 deepen the Origin-era muddle rather than clearing the hedge. Would rise only if v8 accepts the hedged Autobiography addendum [S1, p. 93] plus the Gray/Lyell letters [S3; S13; S14] at 0.7.
 - The coral-reef theory was first published in 1839 [S11, p. 557]; dating by first publication is a question for v8.
 - secondary_system: CODING_GUIDE §1 (published in two systems) vs P19; coded UNKNOWN under §1.
 - AGNOS (later life) is a stub system file; recorded in changes_over_life only (sourcing backlog).
@@ -511,3 +589,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 - 2026-10-02 (v8 method rulings): Reopened the Autobiography pp. 92–94 on Darwin Online; Britannica's 'The Beagle voyage' and 'The squire naturalist in Downe'; read The Structure and Distribution of Coral Reefs (1842) on Darwin Online (title page, preface p. vi, p. 4, contents).
 - 2026-10-02 (stage 3 rulings P14–P28): Reopened the Origin (1859) on Darwin Online, pp. 484, 488–490, for the B 3 anchor (P27) and the revelation and argument tests (P22, P27).
 - 2026-10-02 (lens run 1): Reopened the Autobiography pp. 92–94 with both footnotes (Darwin Online F1497), DCP letters 2814 and 4065 (Hooker, [29 March 1863]), Britannica's 'The London years, 1836–42', Coral Reefs p. 4, and the 1839 Journal and Remarks (F10.3), coral-formations chapter, pp. 554–569.
+- 2026-10-24 (deepen D1, queue #16): Read DCP-LETT-2855 (Gray, 3 July [1860]) and DCP-LETT-3223 (Lyell, [1 August 1861]) in full; P47 source_quality on S1–S14; A stays 1 @ 0.5 with support corroborated and named alts 0/2; B stays 3 @ 0.7 with support corroborated and named alt 4; mid_basin still BELOW_THRESHOLD; chart stays faded filled. No fallacy_catalog.
