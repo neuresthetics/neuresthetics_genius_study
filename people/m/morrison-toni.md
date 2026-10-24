@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #133, F4 rank 136). Opened primary self-labels: Nation Institute abridged transcript (The Nation, 6 May 2004) — 'Now, you know, I'm a Catholic, right' (S5); VIBE May 1998 (S6) — 'I'm a Catholic' / 'ended up nowhere' / 'deeply religious person'; Antonio Monda Do You Believe? (2007, S7) — 'intelligence interested in what exists' / order-and-harmony (quotes checked via Ron Slate 2008 and SF Bay Guardian 2007 excerpts). Y2 path met: primary_system BELOW_THRESHOLD → CHRIST @0.5 (interview; after span P1/P20; alt BELOW — U2 membership concern, VIBE 'ended up nowhere', Monda religions-reduce-God). A_locus BELOW → 1 @0.5 (Monda transcendent intelligence; support single). B stays BELOW (order/harmony leans 3 but P16 no exception). C/E UNKNOWN; D BELOW; mid BELOW. Still not plotted. P47 on S1–S8; P50 Wikipedia EN (S8) dual bio; parents Ramah/George named. Prefer Nation/VIBE/Monda over Ripatrazone. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Ruling Y2 (v8's call on the auditor's advice, batch Y audit gs_7b46f24_Y run 1): primary_system stays BELOW_THRESHOLD, CHRIST the lead (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 136; Thomas Aquinas, rank 135, already coded). Basics from Britannica (Britannica Editors, 12 Oct 2026). Own voice read in the NPR Fresh Air transcript (20 April 2015, after the span): raised in her mother's AME church, Catholic from 12, 'took it seriously for years and years and years', now 'Not a structured one'. Other statements only as Nick Ripatrazone's secondary quotations (Lit Hub, 2020). Not a scientist. Span 1970–1987 at 0.7 (The Bluest Eye to Beloved). primary_system BELOW_THRESHOLD (CHRIST lead; RQ-Y2); A, B, D BELOW_THRESHOLD with readings named; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
@@ -34,11 +35,11 @@ identity:
 
 basics:
   birth:
-    date: {value: "1931-02-18", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}], how_known: "Britannica."}
-    place: {value: "Lorain, Ohio", modern_name: "Lorain, Ohio, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
+    date: {value: "1931-02-18", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}, {source: S8, locator: "infobox (18 February 1931)"}], how_known: "Britannica; Wikipedia EN agrees (P50)."}
+    place: {value: "Lorain, Ohio", modern_name: "Lorain, Ohio, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}, {source: S8, locator: "infobox / Early years"}], how_known: "Britannica; Wikipedia EN agrees (P50)."}
   death:
-    date: {value: "2019-08-05", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}], how_known: "Britannica."}
-    place: {value: "Bronx, New York", modern_name: "Bronx, New York City, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}], how_known: "Britannica."}
+    date: {value: "2019-08-05", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Quick Facts; opening"}, {source: S8, locator: "infobox (5 August 2019)"}], how_known: "Britannica; Wikipedia EN agrees (P50)."}
+    place: {value: "Bronx, New York", modern_name: "Bronx, New York City, United States", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Quick Facts"}, {source: S8, locator: "Death (Montefiore Medical Center, The Bronx)"}], how_known: "Britannica; Wikipedia EN agrees (P50)."}
   first_lasting_contribution_year: {value: 1970, certainty: 0.7, cites: [{source: S1, locator: "'The Bluest Eye'"}], how_known: "The Bluest Eye (1970), her first book, praised for 'a prose so precise ... that the novel becomes poetry' (S1)."}
   era_bucket: {value: "1950 on", certainty: 1.0, cites: [{source: S1, locator: "'The Bluest Eye'"}], how_known: "From 1970 (P2)."}
   region_of_birth: {value: "North America", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts"}], how_known: "United States (P3)."}
@@ -70,7 +71,8 @@ childhood:
   family_religion: {value: "African Methodist Episcopal (her mother's church)", certainty: 0.7, cites: [{source: S2, locator: "Bible question ('African Methodist Episcopal, the AME church she belonged to')"}, {source: S3, locator: "conversion paragraph"}], how_known: "Her own words (2015) and Ripatrazone ('a devout member of the African Methodist Episcopal Church')."}
   family_religious_practice: {value: "Mother devout and a church singer; 'everybody read the Bible'; the lessons 'were like fairytales to me'", certainty: 0.7, cites: [{source: S2, locator: "Bible question"}], how_known: "Her own words (2015)."}
   parents_and_household:
-    - {value: "Mother Ramah Wofford, a devout AME member with 'the most beautiful voice'", role: mother, certainty: 0.7, cites: [{source: S2, locator: "Bible question"}, {source: S3, locator: "conversion paragraph"}], how_known: "Her own words and Ripatrazone."}
+    - {value: "Mother Ramah (née Willis) Wofford — homemaker; devout member of the African Methodist Episcopal Church; 'the most beautiful voice'", role: mother, certainty: 0.7, cites: [{source: S2, locator: "Bible question"}, {source: S8, locator: "Early years (Ramah née Willis)"}, {source: S3, locator: "conversion paragraph"}], how_known: "Her own words (2015); Wikipedia EN names Ramah Willis; Ripatrazone secondary."}
+    - {value: "Father George Wofford — welder (U.S. Steel); grew up in Cartersville, Georgia; traumatized by a lynching he witnessed as a youth", role: father, certainty: 0.7, cites: [{source: S8, locator: "Early years (George Wofford)"}], how_known: "Wikipedia EN (P50 dual bio with Britannica household sketch)."}
     - {value: "A wing of the family Catholic, including a cousin she was very close to", role: family, certainty: 0.7, cites: [{source: S2, locator: "name question"}], how_known: "Her own words."}
   household_circumstances: {value: "A family with 'an intense love of and appreciation for Black culture'; storytelling, songs and folktales", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   schooling:
@@ -92,17 +94,31 @@ worldview:
   nominal_affiliations:
     - {value: "Roman Catholic from 1943 (baptism); by 2015 'Not a structured' religion, though 'easily seduced' back to church by Pope Francis", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "Bible question"}], how_known: "Britannica and her own words (2015). Membership, not a code."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read on science and religion."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Lead CHRIST (Catholic). Her own words read are a 2015 retrospective (recorded interview, after the span, P1 cap 0.5): content at first with Catholicism's 'aesthetics' until 'I grew up a little older and began to take it seriously and then - took it seriously for years and years and years' (S2). That reports seriousness, undated, but states no Christian belief (Christ, scripture, creed) of her own; CHRIST needs belief in her own writing, not membership (do_not_use_when; ruling U2 for Cervantes, by analogy). Her self-labels ('Now, you know, I'm a Catholic', 2004; 'disaffected Catholic', 2003) are known only through Ripatrazone's secondary quotations (S3). Ruling Y2 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. Path to CHRIST at 0.5: a first-person self-label read in the primary (the 2004 Nation Institute recording or transcript, or the likely 2007 source of the 'intellectual experience' and Vatican II lines)."}
-  secondary_system: {value: UNKNOWN, how_known: "None."}
+  primary_system:
+    value: CHRIST
+    basis: recorded_interview
+    certainty: 0.5
+    rationale: "Y2 path met. First-person self-labels in primary transcripts: 'Now, you know, I'm a Catholic, right' (Nation Institute conversation with Cornel West, abridged in The Nation, 2004, S5); 'I'm a Catholic, and I have been very much involved in my mother's church, which is AME' (VIBE, May 1998, S6). NPR 2015 adds childhood conversion aesthetics then 'took it seriously for years and years and years' (S2). Branch: Roman Catholic (baptism 1943). Named alternative BELOW_THRESHOLD: CHRIST do_not_use_when / U2 — membership/self-label without Christ/scripture/creed profession; VIBE also 'ended up nowhere' between Catholicism and Protestantism; Monda 2007 (S7) affirms an 'intelligence' God while saying every religion 'reduces' him — idiosyncratic, not creedal CHRIST. All scored own-voice after the 1970–1987 span (P1/P20 → 0.5)."
+    how_known: "(interview) Primary Nation (S5) + VIBE (S6) self-labels; NPR seriousness retrospective (S2). After span → 0.5. Ripatrazone (S3) demoted to corroborating secondary only."
+    cites: [{source: S5, locator: "Passion of the Christ exchange ('I'm a Catholic, right')"}, {source: S6, locator: "'Are you religious?' answer"}, {source: S2, locator: "Bible question ('took it seriously for years')"}]
+  secondary_system: {value: UNKNOWN, how_known: "None scored. Monda's intelligence-without-creed language is a CHRIST alternative reading, not a second code."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Lead: Catholic from 12, 'took it seriously for years' (S2); self-labels in secondary quotation (S3)."}
+    - {code: CHRIST, reason: "Scored @0.5: primary Catholic self-labels (S5, S6); Y2 path met. Named alt BELOW_THRESHOLD (not a system code): U2 membership vs belief; VIBE 'ended up nowhere'; Monda reducing-religion God."}
+    - {code: DEISM, reason: "Rejected for primary: Monda order/intelligence language lacks P27 rejection of revelation (Bible 'necessarily inspirational', S2; 'marvelous book', S7)."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Secondary quotation only (S3, undated): when she thinks of 'the infiniteness of time ... I sense the order and harmony that suggest an intelligence'; belief in God as 'an intellectual experience that intensifies our perceptions'. Reading 1–2 (an intelligence behind an ordered cosmos), but not her own text as read (§7)."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist. The same secondary quotation ('order and harmony', S3) leans to a lawful order (reading 3), but it is not a statement read in her own text, and it names no exception or its absence (P16, §7)."}
+    A_locus:
+      value: 1
+      basis: recorded_interview
+      certainty: 0.5
+      support: single
+      rationale: "Monda (2007, S7): 'I believe in an intelligence interested in what exists and respectful of what is created'; when she thinks of 'the infiniteness of time' she senses 'the order and harmony that suggest an intelligence'. Transcendent intelligence distinct from the world (A toward 0), not clearly a personal intervenor — leans 1. Named alternative BELOW_THRESHOLD if the intelligence language is read as too thin for a locus score. After span → 0.5 (P1/P20)."
+      cites: [{source: S7, locator: "Monda interview: intelligence / order and harmony (via Ron Slate 2008 and SF Bay Guardian 28 Nov 2007 excerpts of Do You Believe?)"}]
+      how_known: "(interview) Primary interview book words, excerpt-checked; single source id → support single (P48). Ripatrazone (S3) secondary only."
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist. Monda 'order and harmony that suggest an intelligence' (S7) leans to a lawful order (reading 3) but names no exception or its absence (P16). Stay BELOW; do not overclaim B 3."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward and punishment of persons in her own view (P19); her novels' ghosts and preachers are characters (P42)."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "Lead from her own words (2015, after the span): she approaches the Bible 'as a scholar' because 'it's gone through so many hands, so many translations. Even the people who were writing it ... the scribes, were changing things' (S2): scripture as a human-transmitted text, a reading toward 3. But she calls it 'necessarily inspirational' in the same breath, and says nothing on revelation against observation."}
+    D_authority: {value: BELOW_THRESHOLD, how_known: "Lead from her own words (2015, after the span): she approaches the Bible 'as a scholar' because 'it's gone through so many hands, so many translations. Even the people who were writing it ... the scribes, were changing things' (S2): scripture as a human-transmitted text, a reading toward 3. But she calls it 'necessarily inspirational' in the same breath, and says nothing on revelation against observation. Monda (S7) calls the Bible 'marvelous' yet 'small and reductive' — still not a scored D."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7, P19)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B both BELOW_THRESHOLD (P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A scored only at 0.5; B BELOW_THRESHOLD — mid-basin needs both at ≥0.7 (P4). Still not plotted."}
   statements:
     - text: "So at an early age I moved into this other religion and was perfectly content with its aesthetics. That's shallow, I understand (laughter). But that's what it was, until I grew up a little older and began to take it seriously and then - took it seriously for years and years and years."
       cites: [{source: S2, locator: "Bible question"}]
@@ -122,18 +138,45 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
-    - text: "Now, you know, I'm a Catholic"
-      cites: [{source: S3, locator: "Nation Institute paragraph"}]
-      date: "2004"
-      context: "Conversation with Cornel West at The Nation Institute, on The Passion of the Christ."
+    - text: "Now, you know, I'm a Catholic, right, so we're used to images of blood and gore."
+      cites: [{source: S5, locator: "Passion of the Christ exchange"}]
+      date: "2004-03-24"
+      context: "Nation Institute conversation with Cornel West (NY Society for Ethical Culture); abridged in The Nation, 6 May 2004. On Mel Gibson's The Passion of the Christ."
+      axes: [A_locus]
+      kind: "recorded interview"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Y2 path source. After the span (P1). Ripatrazone's longer Protestant-cross paraphrase not used — Nation text preferred."
+    - text: "I'm a Catholic, and I have been very much involved in my mother's church, which is AME. And so I have always gone back and forth between Catholicism and Protestantism. And, I guess. ended up nowhere—except I feel nevertheless as though I am a deeply religious person."
+      cites: [{source: S6, locator: "'Are you religious?'"}]
+      date: "1998"
+      context: "VIBE magazine interview by Robert Morales (May 1998 issue)."
+      axes: [A_locus]
+      kind: "recorded interview"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "After the span (P1). Self-label plus 'ended up nowhere' — named in CHRIST alt BELOW."
+    - text: "I believe in an intelligence interested in what exists and respectful of what is created."
+      cites: [{source: S7, locator: "Monda: attitude toward God"}]
+      date: "2007"
+      context: "Antonio Monda, Do You Believe? Conversations on God and Religion (Vintage, 2007)."
       axes: [A_locus]
       kind: "recorded interview"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-19
-      note: "Ripatrazone's quotation; the recording not heard. After the span (P1)."
+      verified_on: 2026-10-24
+      note: "Book unread this pass; sentence checked in Ron Slate's 6 Jan 2008 review excerpt of the same interview. After the span (P1)."
+    - text: "I sense the order and harmony that suggest an intelligence, and I discover, with a slight shiver, that my own language becomes evangelical."
+      cites: [{source: S7, locator: "Monda: infiniteness of time / order and harmony"}]
+      date: "2007"
+      context: "Same Monda interview; pressed about belief in an intelligent entity."
+      axes: [A_locus, B_cause]
+      kind: "recorded interview"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "Checked in SF Bay Guardian 28 Nov 2007 review excerpt. Used for A; B stays BELOW (P16). After the span."
   changes_over_life:
-    - {value: "From content with Catholicism's aesthetics, to taking it 'seriously for years and years and years', to 'Not a structured' religion by 2015", certainty: 0.5, cites: [{source: S2, locator: "Bible question"}], how_known: "Her own retrospective; the years of each stage are not given."}
-  coder_notes: "Coder's call on the span: The Bluest Eye (1970) to Beloved (1987), the items Britannica's body calls lasting; Jazz and Playing in the Dark (1992) are listed as major works, and taking 1992 as the end would not change any score. Characters' words and events in the novels are not her view (P42). Ruling Y2 (v8's call on the auditor's advice): stays BELOW_THRESHOLD. Path to CHRIST at 0.5: a first-person self-label read in the primary (the 2004 Nation Institute recording or transcript, or the likely 2007 source of the 'intellectual experience' and Vatican II lines)."
+    - {value: "From content with Catholicism's aesthetics, to taking it 'seriously for years and years and years', to Catholic self-labels still used in 1998–2004, to 'Not a structured' religion by 2015 (though 'easily seduced' by Pope Francis)", certainty: 0.5, cites: [{source: S2, locator: "Bible question"}, {source: S5, locator: "I'm a Catholic"}, {source: S6, locator: "I'm a Catholic / ended up nowhere"}], how_known: "Her own words across interviews; stage years undated."}
+  coder_notes: "Deepen D1 2026-10-24: Y2 path met via Nation primary (S5) + VIBE (S6). CHRIST @0.5 after-span; A 1 @0.5 from Monda (S7); B/C/D/E/mid unchanged in plot status (B still BELOW). Characters unused (P42). Prefer Nation/VIBE/Monda over Ripatrazone. Span still 1970–1987. No fallacy_catalog; figures not refreshed."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -169,10 +212,13 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 136"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Her only own words read on religion are from 2015, after the span; other statements are secondary quotations."
+    - "All scored religion own-voice (Nation 2004, VIBE 1998, Monda 2007, NPR 2015) is after the 1970–1987 span (P1/P20 → 0.5)."
+    - "Monda Do You Believe? book unread as a physical/ebook this pass; key sentences checked in contemporaneous review excerpts (Ron Slate; SF Bay Guardian)."
+    - "Washington Post 2003 'disaffected Catholic' still not opened in primary."
   open_questions:
-    - "Ruling Y2: BELOW_THRESHOLD. Open lead: the 2004 Nation Institute recording and the 2007 interview in the primary."
-    - "Read the Nobel lecture (1993), the Paris Review interview (1993) and The Source of Self-Regard (2019)."
+    - "Optional: open Monda book itself (not only excerpts) and Washington Post 2003 for 'disaffected Catholic'."
+    - "Optional: in-span (1970–1987) religion self-label — none found this pass; would be needed to lift past P20 0.5."
+    - "Optional: Nobel lecture (1993), Paris Review (1993), The Source of Self-Regard (2019) — unlikely to move B without a P16 exception claim."
 
 sources:
   - id: S1
@@ -183,6 +229,7 @@ sources:
     url: "https://www.britannica.com/biography/Toni-Morrison"
     accessed: 2026-10-19
     reliability_note: "Editors' article; body cited, question boxes not cited (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S2
     type: primary
@@ -192,6 +239,7 @@ sources:
     url: "https://www.npr.org/transcripts/400394947"
     accessed: 2026-10-19
     reliability_note: "Broadcaster's transcript of a recorded interview (her own words; recorded_interview, P8); web copy."
+    source_quality: "newspaper interview"
     used_for: [childhood, worldview, heritage, timing]
   - id: S3
     type: secondary
@@ -200,7 +248,8 @@ sources:
     citation: "Ripatrazone, Nick. \"On the Paradoxes of Toni Morrison's Catholicism.\" Literary Hub, 2 March 2020. https://lithub.com/on-the-paradoxes-of-toni-morrisons-catholicism/"
     url: "https://lithub.com/on-the-paradoxes-of-toni-morrisons-catholicism/"
     accessed: 2026-10-19
-    reliability_note: "Essay by a critic and author; quotes her interviews, often without dates or sources (secondary quotation)."
+    reliability_note: "Essay by a critic and author; quotes her interviews, often without dates or sources (secondary quotation). Deepen D1: demoted — Nation/VIBE/Monda preferred for the same lines."
+    source_quality: "other"
     used_for: [childhood, worldview, heritage, lane_b]
   - id: S4
     type: secondary
@@ -210,16 +259,57 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: other
+    author: "Toni Morrison and Cornel West; The Nation (abridged transcript)"
+    citation: "Morrison, Toni, and Cornel West. \"'We Better Do Something': Toni Morrison and Cornel West in Conversation.\" The Nation, 6 May 2004 (conversation 24 March 2004, Nation Institute / NY Society for Ethical Culture). https://www.thenation.com/article/archive/toni-morrison-cornel-west-politics/. Read live 2026-10-24."
+    url: "https://www.thenation.com/article/archive/toni-morrison-cornel-west-politics/"
+    accessed: 2026-10-24
+    reliability_note: "Publisher's abridged/adapted transcript of a recorded public conversation — her own words (P8). Y2 path source for 'I'm a Catholic'."
+    source_quality: "newspaper interview"
+    used_for: [worldview]
+  - id: S6
+    type: primary
+    kind: other
+    author: "Toni Morrison, interviewed by Robert Morales"
+    citation: "Morales, Robert. \"The VIBE Q: Toni Morrison.\" Vibe, May 1998; republished vibe.com 6 August 2019. https://www.vibe.com/features/editorial/toni-morrison-interview-may-1998-659803/. Read live 2026-10-24."
+    url: "https://www.vibe.com/features/editorial/toni-morrison-interview-may-1998-659803/"
+    accessed: 2026-10-24
+    reliability_note: "Magazine interview (her own words). After the span."
+    source_quality: "newspaper interview"
+    used_for: [worldview]
+  - id: S7
+    type: primary
+    kind: other
+    author: "Toni Morrison, interviewed by Antonio Monda"
+    citation: "Monda, Antonio. Do You Believe? Conversations on God and Religion. Vintage, 2007 (Morrison interview). Key sentences verified 2026-10-24 against Ron Slate, On the Seawall, 6 Jan 2008 (intelligence / intellectual experience) and Ari Messer, SF Bay Guardian, 28 Nov 2007 (order and harmony)."
+    url: "https://www.ronslate.com/on-do-you-believe-conversations-on-god-and-religion-by-antonio-monda-vintage/"
+    accessed: 2026-10-24
+    reliability_note: "Published interview book — her words. Book itself unread this pass; quoted sentences checked in two contemporaneous review excerpts of the same interview. After the span. Used for A; not for overclaiming B (P16)."
+    source_quality: "newspaper interview"
+    used_for: [worldview]
+  - id: S8
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Toni Morrison.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Toni_Morrison. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Toni_Morrison"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with Britannica (S1): birth Lorain 1931-02-18 and death Bronx 2019-08-05 agree. Parents Ramah (Willis) and George Wofford. Worldview scores do not rest on Wikipedia."
+    source_quality: "reference entry"
+    used_for: [basics, childhood, heritage, review]
 ---
 
 # Toni Morrison
 
-> Status: draft — unreviewed. Cite every factual sentence with a source id from the front matter, like `[S1, p. 12]`.
+> Status: draft — unreviewed. Cite every factual sentence with a source id from the front matter, like `[S1, p. 12]`. Deepen D1: CHRIST @0.5; A 1 @0.5; B/D BELOW; C/E UNKNOWN; mid BELOW. Not plotted.
 
 ## Summary
 
-Toni Morrison (1931–2019), American novelist, Nobel Prize 1993 [S1]. Draft: primary_system BELOW_THRESHOLD (CHRIST lead, ruling Y2); A, B, D BELOW_THRESHOLD; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted.
+Toni Morrison (1931–2019), American novelist, Nobel Prize 1993 [S1; S8]. Deepen D1 (queue #133): primary_system CHRIST @0.5 (Nation 2004 + VIBE 1998 Catholic self-labels; Y2 path met; after span); A 1 @0.5 (Monda intelligence / order-and-harmony); B BELOW (P16); mid BELOW. Still not plotted.
 
 ## Life and work
 
@@ -235,7 +325,7 @@ AME mother; Catholic at 12 [S1; S2].
 
 ## Adult working worldview
 
-Serious Catholic for years, by her 2015 account; little else in her own words [S2; S3].
+Catholic self-labels in primary (1998, 2004) [S5; S6]; NPR retrospective seriousness then unstructured religion [S2]; Monda 2007 affirms a transcendent intelligence [S7]. CHRIST @0.5; A 1 @0.5; B BELOW. Characters unused [P42].
 
 ## Heritage (context only)
 
@@ -251,8 +341,10 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- RQ-Y2, settled by ruling Y2 (BELOW_THRESHOLD).
+- Optional in-span religion self-label to lift past P20 0.5.
+- Optional full Monda book + Washington Post 2003.
 
 ## Research log
 
 - 2026-10-19: Read Britannica, the 2015 Fresh Air transcript and Ripatrazone's Lit Hub essay.
+- 2026-10-24 (D1): Nation 2004 transcript (S5); VIBE 1998 (S6); Monda 2007 via Ron Slate + SF Bay Guardian excerpts (S7); Wikipedia EN dual bio (S8). Y2 path met → CHRIST @0.5; A 1 @0.5; B stays BELOW. Chart-moving NO. No fallacy_catalog; no figures/.
