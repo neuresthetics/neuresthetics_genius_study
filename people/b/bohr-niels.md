@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1913–1939 unchanged; worldview.working_years 1906–1962 → 1913–1939, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on Heilbron's reconstruction of his working science only. No other value changes; mid_basin unchanged."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #60, F5 rank 60). Needs: A BELOW_THRESHOLD; B faded. Primary Causality and Complementarity (Phil. Sci. 1937, S9) and Atomic Physics and Human Knowledge Discussion with Einstein (1958, S10) raise B 3@0.5 scholarly_reconstruction → B 4@0.7 written_profession, support corroborated (P48); alt 3. Aaserud & Heilbron 2013 Kierkegaard notes (S8, secondary quotation via Wikipedia S11) plus Witham 2006 fiancée-letter quotation (S12) score A 4@0.5 consistent_private_letters, support corroborated; alt BELOW (P38-style / Aaserud ajar-door). primary_system stays BELOW (ATHE leading; no positive naturalism in own words; Ingeniøren S13). P47 source_quality on S1–S13. mid_basin BELOW (A≥3 branch needs 0.7). Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: bohr-niels
@@ -105,28 +106,41 @@ worldview:
     how_known: "Letters known only as quoted in English by Heilbron (secondary quotation), so 0.5."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S4, locator: "pp. 20, 24"}, {source: S7, locator: "Session I (religion)"}]
-    how_known: "Positive evidence of rejection of religion, but not of which non-theist position. Heilbron: he realised 'Christian theology was nonsense' (p. 20), and, citing Margrethe Bohr's 1963 interview (n. 30), that for a time he wanted to write a book on religion 'to warn people that it was not true' (p. 24). In that interview (S7, paraphrased because AIP restricts quotation) his widow said that he regretted the role religion played and held throughout the years she knew him that people should not build their lives on what is untrue; asked by Kuhn whether he thought of himself as a Jew, she said he did not, nor as anything else, which is about Jewish identity, not a religious self-description. ATHE needs positive naturalism and AGNOS explicit suspension (v7.1); the sources reject Christianity and religion in general but give no statement on God's existence or on naturalism as such."
-    note: "Candidates: ATHE (leading) or AGNOS. Aaserud & Heilbron, Love, Literature and the Quantum Atom (2013), pp. 73–80 and 110, reportedly describe 'well-fortified atheism'; not read (seen only via a secondary summary), so not used. Same treatment as Curie (lens audit, batch 2, finding #108)."
-  secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S7."}
+    cites: [{source: S4, locator: "pp. 20, 24"}, {source: S8, locator: "p. 110 (via S11)"}, {source: S7, locator: "Session I (religion)"}, {source: S13, locator: "Aaserud interview"}]
+    how_known: "Positive evidence of rejection of religion and of a personal God-bond, but not of which non-theist position at ≥0.5. Heilbron: he realised 'Christian theology was nonsense' (S4, p. 20) and, citing Margrethe Bohr (n. 30), wanted for a time to warn that religion 'was not true' (p. 24). Aaserud & Heilbron 2013 (S8, p. 110, quoted via Wikipedia S11): 'well-fortified atheism' and 'Bohr ended with no religious belief and a dislike of all religions that claimed to base their teachings on revelations' — scholarly characterisation, not his self-label. Finn Aaserud (S13): he was an atheist though he never used the word, and held a door ajar for 'something greater' outside understanding. ATHE needs positive naturalism (v7.1); AGNOS needs explicit suspension. Own words deny union with God (S8 pp. 159–160) but do not affirm naturalism or name suspension. Same treatment as Curie (batch 2, #108)."
+    note: "Candidates: ATHE (leading, via S8 p. 110 and S13) or AGNOS (ajar-door / never self-labelled atheist). Stub system files (flag)."
+  secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S13."}
   candidate_codes_considered:
-    - {code: ATHE, reason: "Leading candidate, not coded (BELOW_THRESHOLD): theology judged 'nonsense' (S4, p. 20) and religion 'not true' (Heilbron's wording, S4, p. 24, reporting Margrethe Bohr's 1963 account), but no statement of positive naturalism read. ATHE is a stub system file (flag).", cites: [{source: S4, locator: "pp. 20, 24"}]}
-    - {code: AGNOS, reason: "Candidate, not coded: his stress on what human beings cannot understand (S4, p. 32) could suggest suspension, but it is about knowledge in general, and he called religion untrue rather than unknowable. AGNOS is a stub system file (flag).", cites: [{source: S4, locator: "p. 32"}]}
+    - {code: ATHE, reason: "Leading candidate, not coded (BELOW_THRESHOLD): S8 p. 110 'well-fortified atheism' / 'no religious belief'; S13 Aaserud 'ateist' though Bohr never used the word; theology 'nonsense' (S4, p. 20). Not coded: no positive naturalism in his own words (v7.1). Stub system file (flag).", cites: [{source: S8, locator: "p. 110 (via S11)"}, {source: S13, locator: "Aaserud interview"}, {source: S4, locator: "pp. 20, 24"}]}
+    - {code: AGNOS, reason: "Candidate, not coded: S13 Aaserud says a possible God would be beyond reach, so Bohr 'holds a door ajar for something greater'; he never self-labelled atheist. Not coded: no explicit suspension statement of his own. Stub system file (flag).", cites: [{source: S13, locator: "Aaserud interview ('dør på klem')"}, {source: S4, locator: "p. 32"}]}
     - {code: CHRIST, reason: "Rejected: christening and nominal Lutheran upbringing only; he left the church in 1912 on his own convictions. Church membership is never a code.", cites: [{source: S4, locator: "p. 20"}, {source: S5, locator: "1912"}]}
     - {code: JUDA, reason: "Rejected: Jewish maternal heritage only; the family did not attend synagogue and he did not think of himself as a Jew (S7). Heritage is never a code.", cites: [{source: S7, locator: "Session I (Jewish background)"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement placing or denying God was found; the evidence is about Christian theology and religion, not about a divine locus.", note: "Gap: Aaserud & Heilbron (2013) and Bohr's essays (Atomic Physics and Human Knowledge) were not read (lending-only scans)."}
-    B_cause:
-      value: 3
-      basis: scholarly_reconstruction
+    A_locus:
+      value: 4
+      basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}, {source: S4, locator: "pp. 30, 49"}]
-      how_known: "Scored on his working science (P6), as reconstructed by Heilbron; his own essays on causality were not read, so 0.5."
-      rationale: "Scored on his account of nature (P6). His atom runs on stated rules (stationary states fixed by the quantum of action; radiation only in jumps between them), and on Heilbron's account he placed radioactivity where particles originate 'spontaneously, by chance' (S4, p. 49). No miracle, petition or reserved exemption appears; the quantum jump that 'not even a Newton could follow' (S4, p. 49) is read as a limit of description inside a law-governed theory, not an exemption from law. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
+      support: corroborated
+      cites: [{source: S8, locator: "pp. 159–160 (via S11)"}, {source: S12, locator: "pp. 138–139"}, {source: S4, locator: "p. 20"}, {source: S13, locator: "Aaserud interview (ajar-door alt)"}]
+      how_known: "Two independent private documents (Kierkegaard loose notes; fiancée letter), known only as secondary quotations (P26); primary check of Aaserud & Heilbron 2013 pending (lending). 0.5 also for the ajar-door alternative (S13). S13 is cited on the value so the BELOW alternative does not alone introduce a source (P48)."
+      rationale: "No personal God-bond (P20/P38 logic): in loose notes on Kierkegaard, 'I, who do not feel in any way united with, and even less, bound to a God' (S8, pp. 159–160, via S11); to his fiancée he ruled out that a person 'must beg from and bargain with fancied powers infinitely stronger than himself' (S12, pp. 138–139). Theology rejection (S4, p. 20) alone would not score A (Turing/Curie pattern); these are locus denials. Named alternative: BELOW_THRESHOLD — notes unpublished and undated in what was read; Aaserud (S13) holds a door ajar for something greater; secondary quotation only (P26)."
+      alternatives:
+        - {value: BELOW_THRESHOLD, note: "P38-style caution: ajar door (S13); unpublished notes; secondary quotation.", cites: [{source: S13, locator: "Aaserud interview"}, {source: S8, locator: "pp. 159–160 (via S11)"}]}
+    B_cause:
+      value: 4
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S9, locator: "pp. 293–297"}, {source: S10, locator: "p. 41"}, {source: S4, locator: "pp. 30, 49"}]
+      how_known: "Two independent published essays of his own (S9 1937; S10 Discussion with Einstein in APHK 1958). Named alternative keeps certainty at 0.7. Independent source ids → corroborated (P48). Was B 3@0.5 under P35 until this pass."
+      rationale: "Scored on his account of nature (P6), his working physics and his philosophy of it. Complementarity is 'a rational generalization of the very ideal of causality' (S10, p. 41); the 1937 essay speaks of 'deeper lying laws of nature' and a 'new type of laws' (S9, pp. 294–295), renounces classical causal description for atomic phenomena while rejecting mysticism and holding that 'any violation of physico-chemical laws in organic life … would be excluded' (S9, p. 297). Statistical / complementary lawfulness, not miracle or exemption — same pattern as Heisenberg B 4. Named alternative: 3, if the forced 'renunciation of the ideal of causality' (S9, p. 293) is read as a standing exception rather than a generalization of lawfulness."
+      alternatives:
+        - {value: 3, note: "If renunciation of classical causality is read as a limited exception inside nature.", cites: [{source: S9, locator: "p. 293"}]}
     C_ledger:
       value: 4
       basis: scholarly_reconstruction
       certainty: 0.5
+      support: corroborated
       cites: [{source: S4, locator: "p. 20"}, {source: S7, locator: "Session I (religion)"}]
       how_known: "Heilbron's reconstruction from family letters and interviews; no statement in Bohr's own published words. Rechecked under decision P8 (2026-10-02): the score rests on Heilbron (S4); the AIP interview (S7) is his widow's reported speech and can only be paraphrased, so it only supports the score, which P8 allows. Unchanged."
       rationale: "Impersonal consequence or none. Heilbron reports that he questioned 'not only the doctrine but also the concept' of salvation ('what could it mean to have a saved soul?') and concluded that 'Christian theology was nonsense' (S4, p. 20); Margrethe Bohr said he held religion untrue all the years she knew him (S7). No judgement, afterlife or personal reckoning is affirmed anywhere read."
@@ -134,11 +148,12 @@ worldview:
       value: 4
       basis: scholarly_reconstruction
       certainty: 0.5
+      support: single
       cites: [{source: S4, locator: "pp. 20, 24 (n. 30)"}]
       how_known: "Heilbron's reconstruction (scholarly_reconstruction, 0.5): one letter phrase of Bohr's quoted by him (secondary quotation, p. 20) and one item of reported speech, Margrethe Bohr's 1963 account as Heilbron gives it (p. 24, n. 30). Lens audit batch 3 (#5): p. 34 dropped as support, since it is about truth in literature and science, not about which authority decides. 0.5 is already the lowest scored level."
       rationale: "Observation and reason outrank revelation. On Heilbron's account he reached his rejection of theology by his own reasoning, and he took his father's smile to show 'that I too could think' (S4, p. 20, his letter of 1911). By his widow's 1963 account, as Heilbron reports it, he wanted for a time to write a book on religion to warn people 'that it was not true' (S4, p. 24, n. 30; reported speech, not his words). No authority above reason is acknowledged in anything read."
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie). The rejection of salvation is scored on C."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied (B_cause is also only at 0.5)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus ≥ 3 (value 4) but only at 0.5: the A ≥ 3 branch reads A only (P10) and needs 0.7, as for Crick, Skinner and Shannon. B is 4 at 0.7 and does not lift the branch."}
   statements:
     - text: "That smile. . . showed me that I too could think."
       cites: [{source: S4, locator: "p. 20 (n. 2: Niels to Margrethe, 21 Dec 1911, in Aaserud & Heilbron, p. 161)"}]
@@ -166,7 +181,7 @@ worldview:
   changes_over_life:
     - {value: "A period of taking religion seriously in early adolescence, then complete rejection of Christian theology", year: "c. 1899–1900", certainty: 0.7, cites: [{source: S4, locator: "p. 20"}, {source: S7, locator: "Session I (religious training)"}], how_known: "Two accounts agree; dates approximate."}
     - {value: "Left the Danish State Church before his civil wedding", year: "1912", certainty: 1.0, cites: [{source: S4, locator: "p. 20"}, {source: S5, locator: "1912, 'Apr 16'"}], how_known: "Two sources."}
-  coder_notes: "ATHE and AGNOS are stub system files (flag). All quotations of Bohr are from his Danish letters in the English translation used by Heilbron (from Aaserud & Heilbron 2013), so they are secondary quotations. The AIP transcript (S7) is reported speech (his widow and, in one passage, apparently Rosenfeld) and carries an AIP no-quotation notice, so it is paraphrased, not quoted at length, and it is never used as a written profession. Rechecked under decision P8 (2026-10-02): P8's recorded_interview basis covers only the person's own first-person words, so it does not apply to S7 (other people's words about Bohr); and as a paraphrase-only source S7 scores nothing on its own. It supports C_ledger, which rests on Heilbron, and appears in primary_system (BELOW_THRESHOLD), nominal_affiliations and changes_over_life as a fact source. No score changed."
+  coder_notes: "ATHE and AGNOS are stub system files (flag). 1911–12 letter quotations remain secondary (Heilbron / Witham). Kierkegaard notes (S8) and the fiancée 'fancied powers' letter (S12) are secondary quotations; Aaserud & Heilbron 2013 not opened this pass (lending). S9 and S10 are Bohr's own published English essays (primary facsimile). S7 AIP remains paraphrase-only under P8 and does not score axes alone. S13 (Ingeniøren / Aaserud) is a newspaper interview used for primary_system candidates and the A alternative, not as written_profession."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -212,11 +227,13 @@ review:
     - "School name: Gammelholm (Nobel biography) vs 'Grammelholms' (MacTutor)."
     - "Christening age: Margrethe Bohr recalled about 13 or 14 (S7); Heilbron does not give an age."
     - "Britannica was read as its first page only."
+    - "Aaserud & Heilbron 2013 (S8) not opened; pp. 110 and 159–160 quoted via Wikipedia (S11)."
     - "S7 is the AIP transcript as archived by the Wayback Machine (the live AIP page now redirects to a repository that refused the fetch); AIP's notice restricts quotation, so it is paraphrased."
   open_questions:
-    - "Read Aaserud & Heilbron, Love, Literature and the Quantum Atom (2013), pp. 72–80, 110, 161, for the full letters and the 'atheism' characterisation."
-    - "Read Bohr's essays (Atomic Physics and Human Knowledge, 1958; Essays 1958–1962) for any published statement on religion or causality."
-    - "Heisenberg's Der Teil und das Ganze reports Bohr's 1927 remarks on religion; reported speech, reconstructed decades later, not used."
+    - "Primary check of Aaserud & Heilbron, Love, Literature and the Quantum Atom (2013), pp. 110, 159–160 (and surrounding letters) — IA lending-only this pass; now cited via Wikipedia quotation."
+    - "Primary text of the fiancée 'fancied powers' letter (Witham 2006 quotes it; likely in Aaserud & Heilbron)."
+    - "Heisenberg's Der Teil und das Ganze reports Bohr's 1927 remarks on religion; reported speech, reconstructed decades later, not used for A."
+    - "Published religion essay Witham mentions (psychological experience, not deities) — identify and read for A/primary_system."
 
 sources:
   - id: S1
@@ -226,6 +243,7 @@ sources:
     citation: "Aaserud, Finn. \"Niels Bohr.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Niels-Bohr."
     url: "https://www.britannica.com/biography/Niels-Bohr"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Signed article by the former director of the Niels Bohr Archive; first page only. Sections cited by heading."
     used_for: [identity, basics, contribution, institutions, timing, lane_b]
   - id: S2
@@ -235,6 +253,7 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. \"Niels Henrik David Bohr.\" MacTutor History of Mathematics, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Bohr_Niels/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Bohr_Niels/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Biography drawing on Pais and Kennedy; no paragraph numbers, so located by topic."
     used_for: [basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S3
@@ -245,6 +264,7 @@ sources:
     citation: "\"Niels Bohr – Biographical.\" From Nobel Lectures, Physics 1922–1941. Amsterdam: Elsevier, 1965. NobelPrize.org. https://www.nobelprize.org/prizes/physics/1922/bohr/biographical/."
     url: "https://www.nobelprize.org/prizes/physics/1922/bohr/biographical/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Official biography; paragraphs counted from 'Niels Henrik David Bohr was born'."
     used_for: [identity, basics, contribution, childhood, worldview, timing, institutions, collaborators]
   - id: S4
@@ -255,6 +275,7 @@ sources:
     citation: "Heilbron, J. L. \"The Mind that Created the Bohr Atom.\" Séminaire Poincaré XVII (2013): 19–58. https://seminaire-poincare.pages.math.cnrs.fr/heilbron.pdf."
     url: "https://seminaire-poincare.pages.math.cnrs.fr/heilbron.pdf"
     accessed: 2026-10-02
+    source_quality: "scholarly edition or monograph"
     reliability_note: "Scholarly essay by a leading Bohr historian, quoting Bohr's 1911–12 letters in English from Aaserud & Heilbron (2013) and Margrethe Bohr's 1963 interview. Page numbers are the journal's printed pages (running heads)."
     used_for: [basics, childhood, worldview, heritage, timing, lane_b, collaborators]
   - id: S5
@@ -264,6 +285,7 @@ sources:
     citation: "Halvorson, Hans. \"Niels Bohr chronology.\" https://hanshalvorson.dk/bohr/chronology.html."
     url: "https://hanshalvorson.dk/bohr/chronology.html"
     accessed: 2026-10-02
+    source_quality: "unofficial web copy"
     reliability_note: "Chronology by a philosopher of physics; used only for the date of leaving the church (1912, 'Apr 16'), which agrees with Heilbron's undated account."
     used_for: [worldview, timing]
   - id: S6
@@ -273,6 +295,7 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
   - id: S7
@@ -283,8 +306,74 @@ sources:
     citation: "Interview with Margrethe Bohr by Thomas S. Kuhn, Aage Bohr, and Leon Rosenfeld, Copenhagen, 23 January 1963, Session I. Niels Bohr Library & Archives, American Institute of Physics. Archived copy of the AIP page: https://web.archive.org/web/20140911200150/http://www.aip.org/history/ohilist/4514_1.html."
     url: "https://web.archive.org/web/20140911200150/http://www.aip.org/history/ohilist/4514_1.html"
     accessed: 2026-10-02
+    source_quality: "archive scan (OCR only)"
     reliability_note: "Official AIP transcript (as archived in 2014); reported speech by his widow, son and a colleague. Some speaker labels are missing in the scanned typescript. AIP restricts quotation without permission, so the record paraphrases. Located by topic within Session I."
     used_for: [childhood, worldview, heritage, timing]
+  - id: S8
+    type: secondary
+    kind: "scholarly book"
+    author: "Finn Aaserud and J. L. Heilbron"
+    year: 2013
+    citation: "Aaserud, Finn, and J. L. Heilbron. Love, Literature and the Quantum Atom: Niels Bohr's 1913 Trilogy Revisited. Oxford: Oxford University Press, 2013."
+    url: "https://global.oup.com/academic/product/love-literature-and-the-quantum-atom-9780199680283"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Scholarly edition of Bohr's 1911–12 letters and notes. Book not opened this pass (IA lending-only); Kierkegaard-note quotation (pp. 159–160) and 'well-fortified atheism' (p. 110) taken from Wikipedia EN (S11) and Celebrity Atheist List, which cite those pages. Secondary quotation (P26)."
+    used_for: [worldview]
+  - id: S9
+    type: primary
+    kind: "journal article"
+    author: "Niels Bohr"
+    year: 1937
+    citation: 'Bohr, Niels. "Causality and Complementarity." Philosophy of Science 4, no. 3 (July 1937): 289–298. https://www.jstor.org/stable/184445 (PDF via informationphilosopher.com).'
+    url: "https://www.informationphilosopher.com/solutions/scientists/bohr/Causality_and_Complementarity.pdf"
+    accessed: 2026-10-24
+    source_quality: "primary / own words"
+    reliability_note: "Bohr's own English essay; PDF checked page-for-page (running heads 289–298). Used for B_cause."
+    used_for: [worldview]
+  - id: S10
+    type: primary
+    kind: "published work by the subject"
+    author: "Niels Bohr"
+    year: 1958
+    citation: 'Bohr, Niels. Atomic Physics and Human Knowledge. New York: John Wiley & Sons, 1958. Essay "Discussion with Einstein on Epistemological Problems in Atomic Physics" (pp. 32–66).'
+    url: "https://digitalcommons.bard.edu/cgi/viewcontent.cgi?article=1219&context=community_of_scholars_archive"
+    accessed: 2026-10-24
+    source_quality: "primary / own words"
+    reliability_note: "1958 Wiley collection PDF (Bard digitalcommons). Complementarity-as-generalization sentence on printed p. 41. Used for B_cause."
+    used_for: [worldview, contribution]
+  - id: S11
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: '"Niels Bohr." Wikipedia. https://en.wikipedia.org/wiki/Niels_Bohr.'
+    url: "https://en.wikipedia.org/wiki/Niels_Bohr"
+    accessed: 2026-10-24
+    source_quality: "reference entry"
+    reliability_note: "Used for dual-source biography and as the quotation vehicle for S8 pp. 159–160 and p. 110 (footnotes cite Aaserud & Heilbron 2013). Not used alone for axis scores (P50)."
+    used_for: [worldview, basics]
+  - id: S12
+    type: secondary
+    kind: "scholarly book"
+    author: "Larry Witham"
+    year: 2006
+    citation: "Witham, Larry. The Measure of God: History's Greatest Minds Wrestle with Reconciling Science and Religion. New York: HarperCollins, 2006, pp. 138–139."
+    accessed: 2026-10-24
+    source_quality: "other"
+    reliability_note: "Popular secondary; quotes Bohr's letter to his fiancée on 'fancied powers'. Used only as a second private-document quotation for A_locus corroboration; primary letter not checked."
+    used_for: [worldview]
+  - id: S13
+    type: secondary
+    kind: other
+    author: "Thomas Djursing, interviewing Finn Aaserud"
+    year: 2015
+    citation: 'Djursing, Thomas. "Ny minister spreder usandheder om Niels Bohr: Han var ateist." Ingeniøren, 9 July 2015. https://ing.dk/artikel/ny-minister-spreder-usandheder-om-niels-bohr-han-var-ateist.'
+    url: "https://ing.dk/artikel/ny-minister-spreder-usandheder-om-niels-bohr-han-var-ateist"
+    accessed: 2026-10-24
+    source_quality: "newspaper interview"
+    reliability_note: "Interview with the then director of the Niels Bohr Archive. Used for primary_system candidates and the A_locus BELOW alternative ('dør på klem' / door ajar); not as written_profession."
+    used_for: [worldview]
+
 ---
 
 # Niels Bohr
@@ -293,7 +382,7 @@ sources:
 
 ## Summary
 
-Niels Bohr (1885–1962), Danish physicist, built the quantum model of the atom in 1913, proposed complementarity in 1927 and won the 1922 Nobel Prize in Physics [S1, opening; S2, Como 1927 paragraph; S3, paragraph 6]. Christened Lutheran in a non-religious home, he rejected Christian theology in adolescence and left the Danish State Church in 1912 [S4, p. 20; S5, 1912]. System below threshold (ATHE leading, AGNOS named); B 3 (alternative 4, P35), C 4, D 4, all at 0.5; A and E below threshold; mid_basin below threshold.
+Niels Bohr (1885–1962), Danish physicist, built the quantum model of the atom in 1913, proposed complementarity in 1927 and won the 1922 Nobel Prize in Physics [S1, opening; S2, Como 1927 paragraph; S3, paragraph 6]. Christened Lutheran in a non-religious home, he rejected Christian theology in adolescence and left the Danish State Church in 1912 [S4, p. 20; S5, 1912]. System below threshold (ATHE leading, AGNOS named); A 4 at 0.5 (alt BELOW); B 4 at 0.7 written_profession (alt 3); C 4 and D 4 at 0.5; E below threshold; mid_basin below threshold (A≥3 needs 0.7).
 
 ## Life and work
 
@@ -309,7 +398,7 @@ His father was an atheist who "exposed his son to the state religion so that he 
 
 ## Adult working worldview
 
-To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. Heilbron, citing Margrethe Bohr's 1963 interview, writes that for a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24, n. 30]; in that interview his widow said he still spoke of such a book in his last autumn [S7, Session I]. In 1912 he wrote that he could "almost call it my religion, that I think that everything that is of any value is true" [S4, p. 34]. Scores: B 3 (alternative 4, P35), C 4, D 4 (all 0.5); A, E below threshold.
+To make sure the wedding could not be religious, he and Margrethe "formally resigned from the Danish State Church" [S4, p. 20], on 16 April 1912 by Halvorson's chronology [S5, 1912]. Heilbron, citing Margrethe Bohr's 1963 interview, writes that for a time he wanted to write a book on religion "to warn people that it was not true" [S4, p. 24, n. 30]; in that interview his widow said he still spoke of such a book in his last autumn [S7, Session I]. Loose notes on Kierkegaard: "I, who do not feel in any way united with, and even less, bound to a God" [S8, pp. 159–160, via S11]. To his fiancée he ruled out begging from "fancied powers infinitely stronger than himself" [S12, pp. 138–139]. On nature: complementarity is "a rational generalization of the very ideal of causality" [S10, p. 41]; "any violation of physico-chemical laws in organic life … would be excluded" [S9, p. 297]. Scores: A 4 at 0.5 (alt BELOW); B 4 at 0.7 (alt 3); C 4 and D 4 at 0.5; E below threshold; mid_basin below threshold.
 
 ## Heritage (context only)
 
@@ -325,8 +414,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- Aaserud & Heilbron (2013) for the letters in full; Bohr's own essays for any published statement on religion.
+- Primary check of Aaserud & Heilbron (2013) pp. 110, 159–160; primary fiancée "fancied powers" letter; Witham's unnamed published religion essay.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Aaserud, first page), MacTutor, the Nobel biography, Heilbron (2013, PDF), the Halvorson chronology and the AIP interview with Margrethe Bohr (Session I, Wayback copy). Bohr's Collected Works and essays, Pais and Aaserud & Heilbron are lending-only on archive.org and were not read. Quotations checked against the downloaded texts.
+- 2026-10-24 (D1 deepen, queue #60): Read Bohr, Causality and Complementarity (Phil. Sci. 1937 PDF, S9); Atomic Physics and Human Knowledge Discussion with Einstein (Wiley 1958 PDF, S10, p. 41); Wikipedia EN religion notes quoting Aaserud & Heilbron 2013 pp. 159–160 and p. 110 (S8 via S11); Witham 2006 pp. 138–139 via Celebrity Atheist List (S12); Ingeniøren 2015 Aaserud interview (S13). Aaserud & Heilbron 2013 book still IA lending-only — not opened. A 4@0.5 corroborated; B 4@0.7 written_profession corroborated. Chart-moving NO.
