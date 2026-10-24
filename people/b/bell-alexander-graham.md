@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-08
+  last_updated: 2026-10-23
   change_log:
+    - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #7). P47 source_quality on every source. Primary upgrade: 17 January 1876 letter found as LOC magbell.03500103 (S4 retargeted); page images (service/mss/magbell/035/03500103/0001–0005.jpg) read and match the Brantford Expositor transcription (Maker; Immortality/Salvation suspension; practical religion). New S6 Discovery and Invention (Nat. Geographic June 1914 / LOC magbell.37500401 pamphlet) checked for B: observation method and specific physical regularities (sound in water), no statement of lawful order or exception → B stays UNKNOWN (P16, P33 inventor). A stays BELOW_THRESHOLD (P38/P20): Maker named, no place/deny of personal intervening God; 1901 Unitarian Agnostic + suspension. C/D statements verified_against primary facsimile. worldview_during_major_work certainty 0.5 → 0.7 after primary check. Chart: still unplotted (A BELOW, B UNKNOWN). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from Britannica (Hochfelder) and the Dictionary of Canadian Biography (Surtees); worldview from his letter to Mabel Bell of 12 March 1901 (Library of Congress TEI transcription) and his letter to Mabel Hubbard of 17 January 1876 (as transcribed by the Bell Homestead curator in the Brantford Expositor; secondary quotation). Not a scientist under P33 (inventions are not theories or results about natural systems). primary_system AGNOS 0.7 (consistent_private_letters; alternative CHRIST, nominal Unitarian); A, C, D BELOW_THRESHOLD; B, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
 
 identity:
@@ -94,9 +95,12 @@ worldview:
     - {code: AGNOS, reason: "Coded at 0.7: own self-description, two letters (S3; S4). AGNOS is a stub system file.", cites: [{source: S3, locator: "item 5"}, {source: S4, locator: "religion paragraph"}]}
     - {code: CHRIST, reason: "Named alternative: 'a Unitarian Agnostic' (1901). Against: he joins the Unitarians only because 'I don't have any beliefs' (S3); no membership is recorded in the sources read.", cites: [{source: S3, locator: "item 5"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, note: "He speaks of beliefs that 'belong between himself & his Maker' (1876, S4) and quotes Pope, 'Say first, of God above, or man below What can we reason, but from what we KNOW' (1901, S3): God is named but nothing is affirmed of where God is. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist under P33 (his lasting contributions are inventions), so B needs a statement of his about nature (P16); none was found in the sources read."}
-    C_ledger: {value: BELOW_THRESHOLD, note: "'Concerning Death – & Immortality – Salvation ... I know absolutely nothing' and 'I cannot believe in the inherent wickedness of man' (S4, 1876): suspension of judgment on reward and afterlife, with a rejection of innate sin. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19; the letter is a secondary transcription."}
+    A_locus: {value: BELOW_THRESHOLD, note: "He speaks of beliefs that 'belong between himself & his Maker' (1876, S4, primary facsimile) and quotes Pope, 'Say first, of God above, or man below What can we reason, but from what we KNOW' (1901, S3): God is named but nothing is affirmed of where God is, and nothing denies a personal intervening God. Deepen D1: P38/P20 — agnostic with suspension and no first-person denial keeps A BELOW_THRESHOLD (named example pattern for Bell). Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19 and P38."}
+    B_cause:
+      value: UNKNOWN
+      cites: [{source: S6, locator: "throughout (sound-in-water opening; 'one observation leads to another')"}]
+      how_known: "Not a scientist under P33 (his lasting contributions are inventions), so B needs a statement of his about nature (P16). Deepen D1 checked Discovery and Invention (1914 address; S6 LOC pamphlet): observation-leads-to-generalization method and specific regularities (e.g. sound travels faster in water than air) — not a stated lawful order of nature or a no-exception claim (P16 Hilbert addendum). Wikiquote and DCB/Britannica worldview passages yield nothing on law/miracle/exception. Sources read say nothing on the point (P19)."
+    C_ledger: {value: BELOW_THRESHOLD, note: "'Concerning Death – & Immortality – Salvation ... I know absolutely nothing' and 'I cannot believe in the inherent wickedness of man' (S4, 1876, primary facsimile): suspension of judgment on reward and afterlife, with a rejection of innate sin. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
     D_authority: {value: BELOW_THRESHOLD, note: "He would rather be said to have lived 'a pure and upright life – than that I had attended church three times on Sunday – or that I believed everything that the church teaches' (S4): church teaching has no hold on him, but nothing is said of revelation against reason. Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19."}
     E_scope: {value: UNKNOWN, how_known: "Nothing on the world's order in the sources read (P7, P19). The 1876 remark that a good man 'whether he be Christian, Pagan or Mahomedan' is to be admired concerns the moral community (C under P7), not the world's order."}
   mid_basin: {value: UNKNOWN, how_known: "B_cause is UNKNOWN, which takes precedence (§6, P19)."}
@@ -115,30 +119,30 @@ worldview:
       context: "Letter from 5 Exeter Place, Boston, to his fiancée Mabel Hubbard."
       axes: [C_ledger]
       kind: "private letter"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-08
-      note: "Primary check pending (P26): transcription by Brian Wood, curator, Bell Homestead National Historic Site, in the Brantford Expositor; the manuscript was not found among the digitised LOC items."
+      verified_against: "primary facsimile"
+      verified_on: 2026-10-23
+      note: "LOC magbell.03500103 page images match the Brantford Expositor (Wood) transcription (P26 closed)."
     - text: "Concerning Death – & Immortality – Salvation – Faith and all the other points of theoretical religion, – I know absolutely nothing – & can frame no beliefs whatever. I can only see what is before me – my life – & my duty here."
       cites: [{source: S4, locator: "letter text, religion paragraph"}]
       date: "1876-01-17"
       context: "Same letter."
       axes: [C_ledger]
       kind: "private letter"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-08
-      note: "Primary check pending (P26)."
+      verified_against: "primary facsimile"
+      verified_on: 2026-10-23
+      note: "LOC magbell.03500103 page images (P26 closed)."
     - text: "It seems to me that a man’s beliefs are too sacred to be talked much about – they are things that belong between himself & his Maker – and not between man & fellow-man."
       cites: [{source: S4, locator: "letter text, following paragraph"}]
       date: "1876-01-17"
       context: "Same letter."
       axes: [A_locus, D_authority]
       kind: "private letter"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-08
-      note: "Primary check pending (P26)."
+      verified_against: "primary facsimile"
+      verified_on: 2026-10-23
+      note: "LOC magbell.03500103 page 4 image (P26 closed)."
   changes_over_life:
-    - {value: "Raised in his mother's 'deep piety', which influenced him 'at least until I reached years of discretion'; by 1876 he described 'breaking out of the prejudices of my childhood' and held 'no theories nor beliefs whatever'", certainty: 0.5, cites: [{source: S2, locator: "childhood paragraph"}, {source: S4, locator: "religion paragraph"}], how_known: "DCB's secondary quotation of Bell and the 1876 letter (secondary transcription); no year is given for the change, so it is not dated (P12)."}
-  coder_notes: "Not a scientist under P33 (decided 2026-10-08, v8's pick): his listed lasting contributions are inventions (telephone, photophone, graphophone), not theories or results about physical or natural systems; DCB's 'scientist' is a job description, not the P30 test. So B needs a statement about nature (P16), and none was found: B UNKNOWN. The 1876 letter is a secondary transcription; the LOC Bell papers were searched by folder id for it without success (loc.gov pages blocked by Cloudflare; tile.loc.gov TEI used for the 1901 letter). AGNOS is a stub system file. No LIO-type views found: nothing of his is scored 3 or 4."
+    - {value: "Raised in his mother's 'deep piety', which influenced him 'at least until I reached years of discretion'; by 1876 he described 'breaking out of the prejudices of my childhood' and held 'no theories nor beliefs whatever'", certainty: 0.5, cites: [{source: S2, locator: "childhood paragraph"}, {source: S4, locator: "religion paragraphs"}], how_known: "DCB's secondary quotation of Bell and the 1876 letter (now primary facsimile); no year is given for the change, so it is not dated (P12); 0.5 for the undated mix of sources."}
+  coder_notes: "Not a scientist under P33 (decided 2026-10-08, v8's pick): his listed lasting contributions are inventions (telephone, photophone, graphophone), not theories or results about physical or natural systems; DCB's 'scientist' is a job description, not the P30 test. So B needs a statement about nature (P16); Discovery and Invention (S6) was checked and is off-point → B UNKNOWN (P19). Deepen D1 closed P26 on the 1876 letter (LOC magbell.03500103 page images). A stays BELOW under P38. AGNOS is a stub system file. No LIO-type views found: nothing of his is scored 3 or 4."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -153,7 +157,7 @@ timing:
   age_at_first_lasting_contribution: {value: 29, certainty: 1.0, cites: [{source: S1, locator: "Born line; telephone section"}, {source: S2, locator: "header; telephone paragraphs"}], how_known: "1876 − 1847 = 29 (P30)."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No statement of his scored at 3 or 4 (P27)."}
   lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "His letters suspend judgment; nothing on nature's order was read.", certainty: 0.5, cites: [{source: S3, locator: "item 5"}, {source: S4, locator: "religion paragraph"}], how_known: "Absence in what was read."}
-  worldview_during_major_work: {value: "Practical religion without beliefs; agnostic on death, immortality and salvation (1876)", certainty: 0.5, cites: [{source: S4, locator: "religion paragraph"}], how_known: "One letter inside the working years, secondary transcription."}
+  worldview_during_major_work: {value: "Practical religion without beliefs; agnostic on death, immortality and salvation (1876)", certainty: 0.7, cites: [{source: S4, locator: "religion paragraphs (pages 2–4)"}], how_known: "One private letter inside the working years; primary facsimile (LOC); private-letter ceiling 0.7."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -182,10 +186,10 @@ review:
   data_quality_flags:
     - "Graphophone: developed 1882 (DCB) vs patents 1886 (Britannica); 1886 used under P30."
     - "National Geographic Society: DCB says he was named its first president in 1888 and held the post until 1903; Britannica gives president 1898–1903. Not used for any field."
-    - "The 1876 letter is a secondary transcription (curator, newspaper); primary check pending."
+    - "1876 letter primary check closed (LOC magbell.03500103); Expositor transcription retained only as cross-check in S4 reliability_note."
   open_questions:
-    - "Find the 17 January 1876 letter in the LOC Bell family papers."
-    - "Any statement of his on nature's order (e.g. in his speeches on discovery) that would let B be scored."
+    - "Any statement of his own on nature's lawful order or exception (beyond Discovery and Invention 1914 method talk) that would let B be scored under P16."
+    - "Denomination of family religion (mother's 'deep piety'); Melville's church change noted in DCB but not named for Aleck's childhood."
 
 sources:
   - id: S1
@@ -196,6 +200,7 @@ sources:
     url: "https://www.britannica.com/biography/Alexander-Graham-Bell"
     accessed: 2026-10-08
     reliability_note: "Signed encyclopedia article; locators are section topics."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators]
   - id: S2
     type: secondary
@@ -205,6 +210,7 @@ sources:
     url: "https://www.biographi.ca/en/bio/bell_alexander_graham_15E.html"
     accessed: 2026-10-08
     reliability_note: "Signed scholarly biography with archival bibliography; locators are paragraph topics."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S3
     type: primary
@@ -215,16 +221,18 @@ sources:
     url: "https://tile.loc.gov/storage-services/service/mss/magbell/041/04100410/04100410.xml"
     accessed: 2026-10-08
     reliability_note: "Library of Congress TEI transcription of the manuscript; the loc.gov viewer page was blocked, the XML was read."
+    source_quality: "primary / own words"
     used_for: [basics, worldview, timing, lane_b]
   - id: S4
     type: primary
     kind: letter
     author: "Alexander Graham Bell"
     year: 1876
-    citation: "Bell, Alexander Graham, to Mabel Hubbard, 17 January 1876, as transcribed in \"Bell shares with Mabel thoughts on religion,\" Brantford Expositor, 21 January 2021 (Bell Letters annotated by Brian Wood, curator, Bell Homestead National Historic Site)."
-    url: "https://www.brantfordexpositor.ca/opinion/bell-shares-with-mabel-thoughts-on-religion"
-    accessed: 2026-10-08
-    reliability_note: "Secondary quotation (newspaper transcription by a museum curator); primary check pending (P26)."
+    citation: "Bell, Alexander Graham, to Mabel Hubbard, 17 January 1876. Alexander Graham Bell Family Papers, Library of Congress, item magbell.03500103 (manuscript page images)."
+    url: "https://www.loc.gov/item/magbell.03500103/"
+    accessed: 2026-10-23
+    reliability_note: "Primary facsimile: LOC service/mss/magbell/035/03500103/0001.jpg–0005.jpg read 2026-10-23. Wording matches the Brantford Expositor transcription by Brian Wood, Bell Homestead curator (https://www.brantfordexpositor.ca/opinion/bell-shares-with-mabel-thoughts-on-religion, accessed 2026-10-08). P26 closed."
+    source_quality: "primary / own words"
     used_for: [worldview, timing]
   - id: S5
     type: secondary
@@ -234,7 +242,19 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-08
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Alexander Graham Bell"
+    year: 1914
+    citation: "Bell, Alexander Graham. Discovery and Invention. Address to the graduating class of the Friends' School, Washington, D.C., 22 May 1914. Reprinted from the National Geographic Magazine, June 1914. Washington, D.C.: Judd & Detweiler, 1914. Library of Congress, Alexander Graham Bell Family Papers, item magbell.37500401."
+    url: "https://www.loc.gov/item/magbell.37500401/"
+    accessed: 2026-10-23
+    reliability_note: "LOC pamphlet PDF (primary). Checked for B_cause; no scoreable lawful-order/exception statement (P16)."
+    source_quality: "primary / own words"
+    used_for: [worldview]
 ---
 
 # Alexander Graham Bell
@@ -243,7 +263,7 @@ sources:
 
 ## Summary
 
-Alexander Graham Bell (1847–1922), Scottish-born teacher of the deaf and inventor, patented the telephone in 1876 and went on to the photophone and the graphophone [S1; S2]. In private letters he wrote that on 'Death – & Immortality – Salvation' he knew 'absolutely nothing' (1876) and that he had 'always considered myself as an Agnostic', now 'a Unitarian Agnostic' (1901) [S3; S4]. Draft: AGNOS 0.7; A, C, D BELOW_THRESHOLD; B, E UNKNOWN; mid_basin UNKNOWN.
+Alexander Graham Bell (1847–1922), Scottish-born teacher of the deaf and inventor, patented the telephone in 1876 and went on to the photophone and the graphophone [S1; S2]. In private letters he wrote that on 'Death – & Immortality – Salvation' he knew 'absolutely nothing' (1876) and that he had 'always considered myself as an Agnostic', now 'a Unitarian Agnostic' (1901) [S3; S4]. Draft under deepen D1 (P47–P50): AGNOS 0.7 (consistent_private_letters; both letters now primary facsimile/TEI); A, C, D BELOW_THRESHOLD; B, E UNKNOWN; mid_basin UNKNOWN. Still unplotted (A BELOW, B UNKNOWN).
 
 ## Life and work
 
@@ -275,8 +295,10 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
-- Primary check of the 1876 letter.
+- Any own-words statement on nature's lawful order / exception beyond Discovery and Invention 1914.
+- Family religion denomination (mother's piety).
 
 ## Research log
 
 - 2026-10-08: Read Britannica (Hochfelder), DCB (Surtees), the LOC TEI transcription of the 12 March 1901 letter, and the Brantford Expositor transcription of the 17 January 1876 letter. loc.gov viewer pages were blocked or timed out.
+- 2026-10-23: Deepen D1 (queue #7). Found 1876 letter as LOC magbell.03500103; read page images; closed P26. Read Discovery and Invention 1914 (S6) for B — negative. P47 labels. A stays BELOW (P38); B stays UNKNOWN. No fallacy_catalog (Jason 2026-10-23).
