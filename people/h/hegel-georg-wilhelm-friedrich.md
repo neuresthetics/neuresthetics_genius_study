@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-18
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 98). Basics from Britannica (T. Malcolm Knox, signed; body through 'Early life', read live) and SEP 'Hegel' (Paul Redding, revision of 19 September 2025). Worldview from the Encyclopaedia (3rd ed. 1830) in Wallace's translations (Philosophy of Mind §§564–565, §573 Remark; Logic §16 Remark), Project Gutenberg web copies; the Lectures on the History of Philosophy (Michelet's compiled edition, Haldane trans.) as context. Not a scientist (P30). primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 (0.5, alt 2); B BELOW_THRESHOLD (alt 3); D 3 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1: 43 hold, 4 weaken, 1 fail). D quote now 'a cognition of the necessity' (H8); SEP locators §3 and §3.1.2 for the Science of Logic (H9). Notes: A gains a BELOW_THRESHOLD alternative for SEP's §2.3 non-metaphysical reading; the Michelet miracle passage cites the P42 addendum (reported speech); 'Göschel' flagged as the coder's identification of Wallace's 'C. F. G—l'. Jason's ruling (2026-10-18, RQ Q1): B BELOW_THRESHOLD → 2 at 0.5, alternative 3, from Encyclopaedia (1830) §248 with its Remark and §250, read in zeno.org's web copy of Werke vol. 9 (new S7, cap 0.7). Now plotted, faded, at A3/B2; mid_basin stays BELOW_THRESHOLD."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #97 / F4 rank 98). Re-read zeno.org German Encyclopaedia Nature §§248–250 (S7) and Mind §§564–565, §573 Remark (new S8); Wallace Mind/Logic retained. Dual bio Wikipedia (S9, P50). P47 source_quality on all sources. A stays 3 @0.5 corroborated (alt 2; alt BELOW for SEP §2.3 non-metaphysical); B stays 2 @0.5 corroborated (alt 3; Jason RQ Q1). Contested readings + post-span Enc. 1830 keep certainty at 0.5 (P20/P25); cannot lift to ≥0.7. mid_basin stays BELOW_THRESHOLD. Chart already faded filled — chart-moving NO. Draft deepen report in drafts/ (untracked)."}
 
 identity:
   id: hegel-georg-wilhelm-friedrich
@@ -31,10 +32,10 @@ identity:
 
 basics:
   birth:
-    date: {value: "1770-08-27", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 (year)"}], how_known: "Britannica gives the day; SEP agrees on 1770 and Stuttgart."}
+    date: {value: "1770-08-27", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 (year)"}, {source: S9, locator: "lead (27 August 1770)"}], how_known: "Britannica gives the day; SEP agrees on 1770 and Stuttgart; Wikipedia dual bio (P50)."}
     place: {value: "Stuttgart, Württemberg", modern_name: "Stuttgart, Germany", polity_then: "Duchy of Württemberg (Holy Roman Empire)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1"}], how_known: "Britannica and SEP."}
   death:
-    date: {value: "1831-11-14", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 (year)"}], how_known: "Britannica; SEP gives 1831."}
+    date: {value: "1831-11-14", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 (year)"}, {source: S9, locator: "lead (14 November 1831)"}], how_known: "Britannica; SEP gives 1831; Wikipedia dual bio (P50)."}
     place: {value: "Berlin", modern_name: "Berlin, Germany", polity_then: "Kingdom of Prussia", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   first_lasting_contribution_year: {value: 1807, certainty: 0.7, cites: [{source: S2, locator: "§1; §2 (corpus)"}, {source: S4, locator: "Bibliographical Notice"}], how_known: "Phenomenology of Spirit, published 1807 (SEP; Wallace's notice)."}
   era_bucket: {value: "1750 to 1849", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "First lasting year 1807 (P2)."}
@@ -85,9 +86,9 @@ worldview:
     value: IDEAL
     basis: written_profession
     certainty: 0.5
-    cites: [{source: S1, locator: "opening ('absolute idealist inspired by Christian insights')"}, {source: S3, locator: "§§564–565, §573 Remark"}, {source: S2, locator: "§2.2–2.4"}]
+    cites: [{source: S1, locator: "opening ('absolute idealist inspired by Christian insights')"}, {source: S3, locator: "§§564–565, §573 Remark"}, {source: S8, locator: "§564 Remark; §565; §573 Remark"}, {source: S2, locator: "§2.2–2.4"}]
     rationale: "Absolute idealism: God as 'absolute spirit', 'the essential and actual spirit of nature and spirit' (§565), whose self-knowledge is 'his self-consciousness in man' (§564); the being of external things is 'untruth' beside God's 'absolute universality' (§573 Remark). Named alternatives: PANENT (a divine spirit that includes the world and exceeds it; he denies that 'each and every secular thing is God') and CHRIST (he treats Christianity as the absolute, revealed religion and calls himself Lutheran in the compiled lectures). SEP sets out traditional-metaphysical and post-Kantian (non-metaphysical) readings, so the code is contested."
-    how_known: "Published work in Wallace's translation via a web copy (secondary quotation, P26); contested reading, 0.5."
+    how_known: "Wallace English (S3) plus zeno.org German Werke (S8) for §§564–565, §573; SEP traditional vs non-metaphysical readings (S2). Contested reading, 0.5 (P25)."
   secondary_system: {value: UNKNOWN, how_known: "One published system only (P29)."}
   candidate_codes_considered:
     - {code: IDEAL, reason: "Absolute idealism (S1, S3)."}
@@ -99,19 +100,21 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "§§564–565, §573 Remark"}, {source: S2, locator: "§2.2"}]
-      rationale: "Leans to the immanent pole: 'God is God only so far as he knows himself: his self-knowledge is, further, his self-consciousness in man' (§564, adopting the propositions of the Aphorisms by 'C. F. G—l', whom the coder identifies as Göschel; Wallace prints only the abbreviation); God is 'the essential and actual spirit of nature and spirit' (§565). The stated limit: God is not identical with the world; he mocks the charge that his philosophy holds 'each and every secular thing is God' (§573 Remark). Named alternative 2: the revealed, triune God of §§564–571 can be read as a personal God beyond the world (mixed). SEP: on the traditional reading 'the mind of God becomes actual only via its particularization in the minds of \"his\" finite material creatures'; post-Kantian readers deny the metaphysics."
-      how_known: "Encyclopaedia (1830) in Wallace's translation, web copy; contested reading, 0.5."
+      support: corroborated
+      cites: [{source: S3, locator: "§§564–565, §573 Remark"}, {source: S8, locator: "§564 Remark; §565; §573 Remark (German)"}, {source: S2, locator: "§2.2"}]
+      rationale: "Leans to the immanent pole: German 'Gott ist nur Gott, insofern er sich selber weiß; sein Sichwissen ist ferner sein Selbstbewußtsein im Menschen' (§564 Remark, adopting Aphorisms of 'C. F. G—l' / Göschel per coder); God is 'der an und für sich seiende Geist der Natur und des Geistes' (§565). Stated limit: he rejects the pantheism charge that 'Alles, d.h. die empirischen Dinge ohne Unterschied… sei Gott' (§573 Remark). Named alternative 2: the revealed, triune God of §§564–571 can be read as a personal God beyond the world (mixed). SEP: traditional reading has the mind of God becoming actual only via its particularization in the minds of his finite material creatures; post-Kantian readers deny the metaphysics."
+      how_known: "Wallace English (S3) corroborated by zeno.org German Werke (S8) and SEP §2.2 (S2); distinct source ids → corroborated (P48). Contested reading (named alts) keeps certainty at 0.5 (P25); web copies cap 0.7 anyway (P26)."
       alternatives:
-        - {value: 2, note: "Revealed triune God as a person beyond the world (§§564–571).", cites: [{source: S3, locator: "§§564–565"}]}
+        - {value: 2, note: "Revealed triune God as a person beyond the world (§§564–571).", cites: [{source: S3, locator: "§§564–565"}, {source: S8, locator: "§564 Remark; §565"}]}
         - {value: BELOW_THRESHOLD, note: "SEP §2.3, the post-Kantian non-metaphysical reading: Hegel's 'God' is not a claim about a being at all, so the text bears on A only indirectly (P19).", cites: [{source: S2, locator: "§2.3"}]}
     B_cause:
       value: 2
       basis: written_profession
       certainty: 0.5
+      support: corroborated
       cites: [{source: S7, locator: "§248 and Remark; §250"}, {source: S4, locator: "§16 Remark"}]
       rationale: "Account of nature in his own published text (P16): nature 'zeigt daher in ihrem Dasein keine Freiheit, sondern Notwendigkeit und Zufälligkeit' (§248: shows in its existence no freedom, but necessity and contingency); against those who praise nature for staying 'bei aller Zufälligkeit ihrer Existenzen ewigen Gesetzen getreu' he sets spirit's Willkür above 'das gesetzmäßige Wandeln der Gestirne' (§248 Remark); and the 'gleichgültigen Zufälligkeit und unbestimmbaren Regellosigkeit' of nature's forms is granted its place: 'Die Zufälligkeit und Bestimmbarkeit von außen hat in der Sphäre der Natur ihr Recht', 'die Ohnmacht der Natur' (§250). Conceptual necessity governs nature's stages, but contingency and indeterminable irregularity hold of the concrete detail: lawfulness covering only part of nature (P27 B 2 anchor). The Logic §16 Remark agrees ('the Idea of Nature, when parcelled out in detail, is dissipated into contingencies'). Named alternative 3: if that contingency is read as nature's shortfall from the concept rather than a gap in its order, with spirit's Willkür as the one free-will exception (P30 #14), B is 3. Jason's ruling (2026-10-18, RQ Q1 of the batch Q audit, on the auditor's recommendation)."
-      how_known: "Encyclopaedia, 3rd ed. (1830), main text and Remarks only (no Zusätze), read in zeno.org's web copy of Werke vol. 9 (cap 0.7, P26); 1830 is after the span (1807–1821), and the reading of §250 is contested, so 0.5 (P20). The miracle passage in the Lectures on the History of Philosophy is compiled by Michelet from manuscripts and students' notes, so it is reported speech under the P42 addendum (disciples' records) and stays context only."
+      how_known: "zeno.org German Werke Nature §§248–250 (S7) re-read word for word 2026-10-24, corroborated by Wallace Logic §16 Remark (S4); distinct ids → corroborated (P48). 1830 after the span (1807–1821) and §250 reading contested → certainty stays 0.5 (P20/P25; Jason RQ Q1). Michelet miracle passage stays context only (P42)."
       alternatives:
         - {value: 3, note: "Contingency read as nature's impotence to realise the concept, not an exception; Willkür as the one free-will exception (P30 #14).", cites: [{source: S7, locator: "§248 Remark; §250"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing scored at this reading."}
@@ -125,7 +128,7 @@ worldview:
       alternatives:
         - {value: 2, note: "Religion as 'the truth for all men' in its own form.", cites: [{source: S3, locator: "§573 Remark"}]}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 3 is at 0.5, under the 0.7 the A ≥ 3 branch needs (P10); B 2 at 0.5 does not settle it either (P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 3 @0.5 (contested) is under the 0.7 the A ≥ 3 branch needs (P10); B 2 @0.5 likewise (P19). Deepen D1 did not lift either certainty."}
   statements:
     - text: "God is God only so far as he knows himself: his self-knowledge is, further, his self-consciousness in man, and man’s knowledge of God, which proceeds to man’s self-knowledge in God."
       cites: [{source: S3, locator: "§564 Remark (Gutenberg)"}]
@@ -134,8 +137,17 @@ worldview:
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-18
-      note: "Web copy of Wallace (1894); check against the German (GW 20) pending."
+      verified_on: 2026-10-24
+      note: "Wallace web copy; German parallel added (S8) 2026-10-24."
+    - text: "Gott ist nur Gott, insofern er sich selber weiß; sein Sichwissen ist ferner sein Selbstbewußtsein im Menschen und das Wissen des Menschen von Gott, das fortgeht zum Sichwissen des Menschen in Gott."
+      cites: [{source: S8, locator: "§564 Remark"}]
+      date: "1830"
+      context: "Encyclopaedia (1830) Philosophy of Mind §564 Remark (German Werke). Same propositions as Wallace's English; Aphorisms of C. F. G—l / Göschel."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "zeno.org web copy of Werke; checked word for word against the page 2026-10-24."
     - text: "and so—thus he understands philosophy—each and every secular thing is God. It is only his own stupidity, and the falsifications due to such misconception, which generate the imagination and the allegation of such pantheism."
       cites: [{source: S3, locator: "§573 Remark (Gutenberg)"}]
       date: "1830"
@@ -143,8 +155,17 @@ worldview:
       axes: [A_locus]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-18
-      note: "As above."
+      verified_on: 2026-10-24
+      note: "Wallace web copy; German parallel added (S8)."
+    - text: "So machen sie jene Allgemeinheit zu der, welche sie die pantheistische nennen, – daß Alles, d.h. die empirischen Dinge ohne Unterschied, die höher geachteten wie die gemeinen, sei, Substantialität besitze, und dies Sein der weltlichen Dinge sei Gott. – Es ist nur die eigene Gedankenlosigkeit und eine daraus hervorgehende Verfälschung der Begriffe, welche die Vorstellung und Versicherung von dem Pantheismus erzeugt."
+      cites: [{source: S8, locator: "§573 Remark"}]
+      date: "1830"
+      context: "§573 Remark (German): he attributes the pantheism charge — that every empirical thing is God — to thoughtlessness and falsification of concepts."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "zeno.org web copy; checked word for word 2026-10-24."
     - text: "Similarly the Idea of Nature, when parcelled out in detail, is dissipated into contingencies. Natural history, geography, and medicine stumble upon descriptions of existence, upon kinds and distinctions, which are not determined by reason, but by sport and adventitious incidents."
       cites: [{source: S4, locator: "§16 Remark (Gutenberg)"}]
       date: "1830"
@@ -153,7 +174,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
-      note: "Web copy; German check pending."
+      note: "Wallace web copy; Nature German parallel in S7 (deepen D1)."
     - text: "Die Natur zeigt daher in ihrem Dasein keine Freiheit, sondern Notwendigkeit und Zufälligkeit."
       cites: [{source: S7, locator: "§248"}]
       date: "1830"
@@ -161,8 +182,8 @@ worldview:
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-18
-      note: "zeno.org web copy of Werke vol. 9; checked word for word against the page."
+      verified_on: 2026-10-24
+      note: "zeno.org web copy of Werke vol. 9; re-checked word for word 2026-10-24."
     - text: "Die Natur bleibe, gibt man ferner als ihren Vorzug an, bei aller Zufälligkeit ihrer Existenzen ewigen Gesetzen getreu; aber doch wohl auch das Reich des Selbstbewußtseins! [...] Wenn aber die geistige Zufälligkeit, die Willkür, bis zum Bösen fortgeht, so ist dies selbst noch ein unendlich Höheres als das gesetzmäßige Wandeln der Gestirne oder als die Unschuld der Pflanze; denn was sich so verirrt, ist noch Geist."
       cites: [{source: S7, locator: "§248 Remark"}]
       date: "1830"
@@ -171,7 +192,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
-      note: "zeno.org web copy; checked word for word."
+      note: "zeno.org web copy; re-checked word for word 2026-10-24."
     - text: "Der Widerspruch der Idee, indem sie als Natur sich selbst äußerlich ist, ist näher der Widerspruch einerseits der durch den Begriff gezeugten Notwendigkeit ihrer Gebilde und deren in der organischen Totalität vernünftigen Bestimmung, – andererseits deren gleichgültigen Zufälligkeit und unbestimmbaren Regellosigkeit. Die Zufälligkeit und Bestimmbarkeit von außen hat in der Sphäre der Natur ihr Recht."
       cites: [{source: S7, locator: "§250"}]
       date: "1830"
@@ -180,7 +201,7 @@ worldview:
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-18
-      note: "zeno.org web copy; checked word for word."
+      note: "zeno.org web copy; re-checked word for word 2026-10-24."
     - text: "Christ reproved the Pharisees for wishing to see miracles; the Spirit alone comprehends Spirit, the miracle is only a presentiment of that Spirit; and if the miracle be the suspension of natural laws, Spirit itself is the real miracle in the operations of nature."
       cites: [{source: S5, locator: "Introduction, B.2 (Gutenberg vol. 1)"}]
       context: "Lectures on the History of Philosophy, Introduction, as compiled by Michelet (2nd ed. 1840) from Hegel's manuscripts and students' notes from courses of 1805–1830; Haldane's translation. No single year, so the date is left out."
@@ -191,7 +212,7 @@ worldview:
       note: "Compiled lecture text (Michelet, from manuscripts and students' notes): reported speech under the P42 addendum on disciples' records; context only."
   changes_over_life:
     - {value: "Early Kantian reading of Christianity as rational morality (Bern, 1790s), later freed from Kant's influence (Frankfurt)", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Britannica; before the span, does not split it (P31)."}
-  coder_notes: "B 2 at 0.5, alternative 3, is Jason's ruling (2026-10-18, RQ Q1 of the batch Q audit) from Encyclopaedia (1830) §248 with its Remark and §250; it replaces the draft's BELOW_THRESHOLD. The miracle passage stays context (compiled lecture text, P42 addendum). The Encyclopaedia cites quote the 1830 text; earlier editions (1817) not checked (P30 #7), so first_evidence is capped at 0.5. Britannica's Top Questions and Quick Facts not cited (P26)."
+  coder_notes: "B 2 at 0.5, alternative 3, is Jason's ruling (2026-10-18, RQ Q1). Deepen D1 (2026-10-24): German Mind §§564–573 (S8) and re-read Nature §§248–250 (S7); A/B stay 0.5 under contested-reading caps (P25) despite corroboration (P48). Enc. 1830 after span; 1817/1807 unread (P30 #7). Miracle passage context only (P42). Britannica Top Questions / Quick Facts not cited (P26)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -232,10 +253,11 @@ review:
     - {value: "Traditional metaphysical versus post-Kantian (non-metaphysical) readings of Hegel's God", certainty: 0.7, cites: [{source: S2, locator: "§2.2–2.4"}], how_known: "SEP; bears on A and primary_system."}
   data_quality_flags:
     - "Philosophy of Right dated 1821 (SEP) against 1820 (Wallace)."
-    - "Encyclopaedia quotations are Wallace's translations via Project Gutenberg; German check pending."
-    - "Only Britannica's 'Early life' section was returned by the fetch."
+    - "Encyclopaedia Nature §§248–250 and Mind §§564–573 re-checked in zeno.org German Werke (web copy, not GW critical edition)."
+    - "Only Britannica's 'Early life' section was returned by the create-pass fetch."
+    - "Contested A (SEP §2.3) and B (§250) keep certainty at 0.5; chart stays faded."
   open_questions:
-    - "Check §564 and §573 in GW 20; read the 1807 Phenomenology (ch. VII) and the Lectures on the Philosophy of Religion (Jaeschke ed.) for A, B and the miracle question."
+    - "GW critical edition (GW 19/20) print check for Enc. Nature and Mind; Phenomenology ch. VII and Lectures on the Philosophy of Religion (Jaeschke) for in-span A/B; Miller/Petry Nature English as a second translation."
 
 sources:
   - id: S1
@@ -246,6 +268,7 @@ sources:
     url: "https://www.britannica.com/biography/Georg-Wilhelm-Friedrich-Hegel"
     accessed: 2026-10-18
     reliability_note: "Signed article. Body only; the AI-generated Top Questions and Quick Facts are not cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, collaborators]
   - id: S2
     type: tertiary
@@ -255,6 +278,7 @@ sources:
     url: "https://plato.stanford.edu/entries/hegel/"
     accessed: 2026-10-18
     reliability_note: "Signed SEP entry, read directly."
+    source_quality: "reference entry"
     used_for: [basics, contribution, worldview, timing, institutions, collaborators, review]
   - id: S3
     type: primary
@@ -264,6 +288,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/39064"
     accessed: 2026-10-18
     reliability_note: "Web copy of a translation of the 1830 text (Wallace's preface); Hegel's paragraphs only, editors' Zusätze omitted. Secondary quotation, cap 0.7."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -273,6 +298,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/55108"
     accessed: 2026-10-18
     reliability_note: "Web copy; includes Wallace's 'Bibliographical Notice' and the editors' Zusätze (not cited as Hegel's words). Secondary quotation."
+    source_quality: "unofficial web copy"
     used_for: [basics, contribution, worldview]
   - id: S5
     type: secondary
@@ -281,7 +307,8 @@ sources:
     citation: "Hegel, G. W. F. Lectures on the History of Philosophy, vol. 1, trans. E. S. Haldane (London: Kegan Paul, 1892), from Michelet's 2nd ed. (1840). Project Gutenberg eBook #51635. https://www.gutenberg.org/ebooks/51635"
     url: "https://www.gutenberg.org/ebooks/51635"
     accessed: 2026-10-18
-    reliability_note: "Posthumous edition compiled from Hegel's manuscripts and students' notes (translator's preface); wording not certainly Hegel's. Context only."
+    reliability_note: "Posthumous edition compiled from Hegel's manuscripts and students' notes (translator's preface); wording not certainly Hegel's. Context only (P42)."
+    source_quality: "scholarly reconstruction"
     used_for: [worldview]
   - id: S7
     type: primary
@@ -291,7 +318,28 @@ sources:
     url: "http://www.zeno.org/Philosophie/M/Hegel,+Georg+Wilhelm+Friedrich/Enzyklop%C3%A4die+der+philosophischen+Wissenschaften+im+Grundrisse/Zweiter+Teil%3A+Die+Naturphilosophie/Einleitung/Begriff+der+Natur"
     accessed: 2026-10-18
     reliability_note: "Web copy of the Werke text (main paragraphs and Remarks; no Zusätze quoted); cap 0.7; print check pending."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "G. W. F. Hegel"
+    citation: "Hegel, G. W. F. Enzyklopädie der philosophischen Wissenschaften im Grundrisse (1830), Dritter Teil: Die Philosophie des Geistes, 3. Abteilung: Der absolute Geist — B. Die geoffenbarte Religion (§§564–571) and C. Die Philosophie (§§572–577). Werke web copy at zeno.org."
+    url: "http://www.zeno.org/Philosophie/M/Hegel,+Georg+Wilhelm+Friedrich/Enzyklop%C3%A4die+der+philosophischen+Wissenschaften+im+Grundrisse/Dritter+Teil%3A+Die+Philosophie+des+Geistes/3.+Abteilung%3A+Der+absolute+Geist/B.+Die+geoffenbarte+Religion"
+    accessed: 2026-10-24
+    reliability_note: "Web copy of the Werke text (main paragraphs and Remarks; no Zusätze quoted as Hegel's words); cap 0.7; GW critical print check pending."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
+  - id: S9
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. 'Georg Wilhelm Friedrich Hegel.' https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel (lead: 27 August 1770 – 14 November 1831). Read 2026-10-24 for dual bio only (P50)."
+    url: "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel"
+    accessed: 2026-10-24
+    reliability_note: "Dual biography check against Britannica/SEP (P50); worldview not taken from Wikipedia."
+    source_quality: "reference entry"
+    used_for: [basics]
   - id: S6
     type: secondary
     kind: database
@@ -300,6 +348,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-18
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
 ---
 
@@ -309,7 +358,7 @@ sources:
 
 ## Summary
 
-Georg Wilhelm Friedrich Hegel (1770–1831), German absolute idealist [S1; S2]. Draft: primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 at 0.5 (alt 2); B 2 at 0.5 (alt 3; Jason's ruling); D 3 at 0.5 (alt 2); mid_basin BELOW_THRESHOLD. Plotted, faded, at A3/B2.
+Georg Wilhelm Friedrich Hegel (1770–1831), German absolute idealist [S1; S2; S9]. Draft: primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 at 0.5 corroborated (alt 2; alt BELOW); B 2 at 0.5 corroborated (alt 3; Jason's ruling); D 3 at 0.5 (alt 2); mid_basin BELOW_THRESHOLD. Plotted, faded filled, at A3/B2.
 
 ## Life and work
 
@@ -341,8 +390,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Self-knowin
 
 ## Open questions
 
-- German checks; Phenomenology ch. VII; Lectures on the Philosophy of Religion.
+- GW critical edition; Phenomenology ch. VII; Jaeschke Lectures on the Philosophy of Religion; Miller/Petry Nature English.
 
 ## Research log
 
 - 2026-10-18: Read Britannica (live, opening and Early life), SEP, and Wallace's and Haldane's translations on Project Gutenberg.
+- 2026-10-24: Deepen D1 — re-read zeno.org German Nature §§248–250 and Mind §§564–573; Wikipedia dual bio; A/B stay 0.5 contested/corroborated; chart-moving NO.
