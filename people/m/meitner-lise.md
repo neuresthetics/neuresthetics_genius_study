@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica, the Jewish Women's Archive encyclopedia (Rife) and a 2024 Society of Catholic Scientists article (Moritz), which quotes her letters through Schweighofer (2013) and Sime (1997). Baptized Protestant (Lutheran) in 1908; no own statement of Christian doctrine found. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 and D 3 at 0.5; A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1918–1939 unchanged; worldview.working_years 1906–1960 → 1918–1939, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #52, F5 rank 52). Needs: A BELOW_THRESHOLD; B faded. P47 source_quality on S1–S7. New: S6 O. R. Frisch, Biographical Memoirs FRS 16 (1970) — father freethinker; children baptized / grew up Protestant; 'would not accept complete atheism' (nephew memoir; JSTOR preview; full PDF blocked). S7 Wikipedia EN dual-source bio + 1945 Frida letter 'I am not Jewish by belief…' (Sime via wiki). Nature 1939 paywalled this pass (HTML shell only). Sime 1996 print/IA lend unread; Schweighofer 2013 unread. A stays BELOW_THRESHOLD (Frisch rejects complete atheism but is not her God-locus statement). B stays 3 @ 0.5 inference_from_work, alt 4 (P35); support labelled corroborated (S1+S3; P48). primary_system stays BELOW_THRESHOLD (CHRIST candidate strengthened by Frisch, still no doctrine of her own). Chart-moving NO (A BELOW; B faded @ 0.5). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: meitner-lise
@@ -67,7 +68,7 @@ contribution:
 
 childhood:
   family_religion: {value: "Jewish by registration; assimilated parents who did not practise Judaism", certainty: 1.0, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section ('enrolled all their children in the Jewish Community')"}], how_known: "Two sources."}
-  family_religious_practice: {value: "No Jewish practice; a liberal, largely secular education in a culturally Christian setting", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources (S3 not peer reviewed)."}
+  family_religious_practice: {value: "No Jewish practice; father a freethinker; a liberal, largely secular education in a culturally Christian setting", certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}, {source: S3, locator: "Meitner section"}, {source: S6, locator: "p. 405 (father freethinker; Jewish religion played no role)"}], how_known: "JWA/Moritz plus Frisch memoir (S6). Frisch also says the children were baptized and she grew up Protestant; JWA/Wikipedia date the Lutheran baptism to 1908 as an adult — affiliation timing differs by source; adult baptism stands from S2/S3/S7."}
   parents_and_household:
     - {value: "Father, Philipp Meitner, a lawyer from a Moravian family", name: "Philipp Meitner", role: father, certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "JWA."}
     - {value: "Mother, Hedwig Skovran", name: "Hedwig Meitner (née Skovran)", role: mother, certainty: 0.7, cites: [{source: S2, locator: "paragraph 3"}], how_known: "JWA."}
@@ -95,26 +96,28 @@ worldview:
     how_known: "A 1955 letter and a 1953 lecture, both in English translation: the letter quoted by a non-peer-reviewed article (through Schweighofer 2013), the lecture in Sime's translation (1996, p. 375) as reproduced by S5 and S3, so 0.5."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S3, locator: "Sweden section"}, {source: S2, locator: "paragraph 7"}]
-    how_known: "Church membership is recorded, but membership is not ideology. The only words of hers read speak of awe and respect for life as religious, without doctrine; S3 says she 'always felt uncomfortable when confronted with dogmatic concepts'. Nothing reaches a code at 0.5."
-    note: "Candidate: CHRIST (Lutheran member; S3 reports that 'some bible verses accompanied her throughout her life', and a friend called her 'thoroughly Lutheran'). Needs her own words on Christ, scripture or creed (Schweighofer 2013; Sime 1997)."
-  secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S3."}
+    cites: [{source: S3, locator: "Sweden section"}, {source: S2, locator: "paragraph 7"}, {source: S6, locator: "p. 405 (would not accept complete atheism)"}]
+    how_known: "Church membership is recorded, but membership is not ideology. The only words of hers read speak of awe and respect for life as religious, without doctrine; S3 says she 'always felt uncomfortable when confronted with dogmatic concepts'. Frisch (S6) adds that she would not accept complete atheism — still not a doctrinal profession. Nothing reaches a code at 0.5."
+    note: "Candidate: CHRIST (Lutheran member; S3 'thoroughly Lutheran' / bible verses paraphrase; Frisch rejects complete atheism). Needs her own words on Christ, scripture or creed (Schweighofer 2013; Sime 1996). Not coded ATHE (Frisch explicitly denies complete atheism)."
+  secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S7."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Leading candidate, not coded: baptism and membership only, plus a friend's description. CHRIST is a sourced system file.", cites: [{source: S3, locator: "Sweden section"}]}
-    - {code: JUDA, reason: "Rejected: she formally left the Jewish community in 1908. Heritage is never a code.", cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}]}
+    - {code: CHRIST, reason: "Leading candidate, not coded: baptism and Lutheran membership (S2, S3), friend's 'thoroughly Lutheran' (S3), and Frisch's 'would not accept complete atheism' (S6). Still no doctrine of her own on Christ or creed. CHRIST is a sourced system file.", cites: [{source: S3, locator: "Sweden section"}, {source: S6, locator: "p. 405"}]}
+    - {code: JUDA, reason: "Rejected: she formally left the Jewish community in 1908; 1945 letter to Frida: 'I am not Jewish by belief…' (S7). Heritage is never a code.", cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S7, locator: "Hiroshima / Frida letter paragraph"}]}
+    - {code: ATHE, reason: "Rejected: Frisch states she would not accept complete atheism (S6); no positive-naturalism statement read.", cites: [{source: S6, locator: "p. 405"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement about God read.", note: "Gap: Sime 1997; Schweighofer 2013."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "No statement of her own placing or denying God was read. Frisch (nephew memoir, S6) says that in later years 'her views were very tolerant though she would not accept complete atheism' — a secondary characterization, not a locus value. Church membership and baptism are heritage/affiliation, not A.", note: "Gap: Sime 1996/1997 and Schweighofer 2013 for first-person God wording. Frisch full PDF unread (RS 403 / AIP 404 this pass; JSTOR preview used)."}
     B_cause:
       value: 3
       basis: inference_from_work
       certainty: 0.5
-      cites: [{source: S1, locator: "paragraphs 2–3"}, {source: S3, locator: "note 31 (1953 lecture)"}]
-      how_known: "Coder's reading of her working science (P6), with one translated lecture passage on 'the natural order of things', so 0.5."
-      rationale: "Scored on her account of nature (P6). Her working physics (radioactive decay, beta spectra, fission from E = mc² and nuclear forces) admits no special cases, and her 1953 lecture speaks of 'the natural order of things'. Her phrase 'the miracle of life' (1942 letter) is wonder, not an exemption from law. No miracle or petition appears. Coder's call (CODING_GUIDE §8): her phrase 'the natural order of things' (1953) speaks of order but says nothing on exceptions, so B still rests on her working science and P35 applies. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
+      support: corroborated
+      cites: [{source: S1, locator: "paragraphs 2–3"}, {source: S3, locator: "note 31 (1953 lecture)"}, {source: S6, locator: "pp. 405–420 (radioactivity and fission career overview)"}]
+      how_known: "Coder's reading of her working science (P6/P24/P30), with one translated lecture passage on 'the natural order of things', so 0.5. Three independent source ids (Britannica + Moritz/Sime lecture + Frisch memoir) describe the same lawful nuclear program → corroborated (P48). Named alternative 4, so 0.5 (P35)."
+      rationale: "Scored on her account of nature (P6). Her working physics (radioactive decay, beta spectra, fission from E = mc² and nuclear forces) admits no special cases, and her 1953 lecture speaks of 'the natural order of things'. Her phrase 'the miracle of life' (1942 letter) is wonder, not an exemption from law. No miracle or petition appears. Coder's call (CODING_GUIDE §8): her phrase 'the natural order of things' (1953) speaks of order but says nothing on exceptions, so B still rests on her working science and P35 applies. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception. Nature 1939 (Meitner & Frisch) paywalled this pass — not used as a primary text."
     C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement or afterlife read."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Her own words read (1953 lecture, 1955 letter) praise science's 'truth and objectivity' and call awe at life religious, but say nothing about revelation, scripture or church authority. The only evidence on the revelation side is S3's paraphrase that she 'acknowledged that some bible verses accompanied her throughout her life', and S3's own reading that she 'always felt uncomfortable when confronted with dogmatic concepts'. Axes are scored from the person's own words (§6), so below 0.5.", note: "Was 3 at 0.5 (lens audit, batch 2, finding #95). Same treatment as Fermi and Curie. Gap: Sime 1996; Schweighofer 2013, for her own words on the Bible."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Her physics is universal, but nothing read addresses favour for a group in events.", note: "Same treatment as Fermi: not scored from working science alone."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar (§6, P19). P48: B support corroborated, but A has no plottable value → still unplotted (darkness needs min(A,B) with both scored ≥ 0.7)."}
   statements:
     - text: "cannot tell us what 'life' means, and I am referring not only to the complexity of human life but the simplest living organism. In front of this, we can only stand in awe and respect, in the same way as when seeing a wonderful landscape or when listening to a beautiful piece of music — is this not also a part of being religious?"
       cites: [{source: S3, locator: "Sweden section, note 20"}]
@@ -141,9 +144,17 @@ worldview:
       kind: "written profession (public)"
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
+    - text: "I am of Jewish descent, I am not Jewish by belief, know nothing of the history of Judaism, and do not feel closer to Jews than to other people."
+      cites: [{source: S7, locator: "Hiroshima / Frida letter paragraph (citing Sime)"}]
+      date: "1945-09"
+      context: "To her sister Frida after Hiroshima, as quoted via Wikipedia from Sime. Heritage / JUDA rejection only — not an A_locus God statement."
+      axes: []
+      kind: "private letter"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
   changes_over_life:
     - {value: "Left the Jewish community and was baptized Protestant", year: "1908", certainty: 1.0, cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}, {source: S3, locator: "Meitner section"}], how_known: "Two sources."}
-  coder_notes: "The English quotations are S3's renderings of German letters via Schweighofer; S3 is a Catholic scientists' society article by a biochemist, not peer reviewed. CHRIST is a sourced system file. Washington Post's online excerpt of Sime's chapter 1 (on the 1908 baptisms) did not download."
+  coder_notes: "Deepen D1: A stays BELOW_THRESHOLD — Frisch (S6) 'would not accept complete atheism' is nephew characterization, not her God-locus statement; no first-person God wording found. B stays 3 @ 0.5 inference_from_work with support corroborated (P48); Nature 1939 paywalled. primary_system BELOW_THRESHOLD (CHRIST candidate). English worldview quotations remain S3 via Schweighofer / Sime via S5; Sime 1996 print and Schweighofer 2013 unread. Wikipedia (S7) used for dual-source bio and the Frida 'not Jewish by belief' sentence. Chart still unplotted (A BELOW; B faded)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -183,10 +194,14 @@ review:
   controversies:
     - {value: "Left out of the 1944 Nobel Prize for fission, awarded to Hahn alone", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   data_quality_flags:
-    - "Worldview quotations are English translations reached through a non-peer-reviewed article (S3) citing Schweighofer (2013) and Sime (1997)."
+    - "Worldview quotations are English translations reached through a non-peer-reviewed article (S3) citing Schweighofer (2013) and Sime (1996/1997)."
+    - "Frisch 'would not accept complete atheism' read only in JSTOR/search preview of the 1970 memoir, not the full PDF."
     - "Region of work splits between Berlin and Sweden."
   open_questions:
-    - "Read Sime, Lise Meitner: A Life in Physics (1997), and Schweighofer (2013) on her conversion and faith, for her own words on God."
+    - "Read Sime, Lise Meitner: A Life in Physics (1996), and Schweighofer (2013) for her own words on God / creed (print or full OCR)."
+    - "Frisch Biographical Memoirs FRS 16 (1970) full PDF beyond the JSTOR preview used as S6."
+    - "Meitner & Frisch, Nature 143 (1939) full letter text (paywalled this pass) as primary working-science stream for B."
+    - "Own no-exception or God-locus statement to lift A or B above BELOW / 0.5."
 
 sources:
   - id: S1
@@ -197,6 +212,7 @@ sources:
     url: "https://www.britannica.com/biography/Lise-Meitner"
     accessed: 2026-10-02
     reliability_note: "Unsigned editorial article."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, worldview, timing, collaborators, review]
   - id: S2
     type: tertiary
@@ -206,6 +222,7 @@ sources:
     url: "https://jwa.org/encyclopedia/article/meitner-lise"
     accessed: 2026-10-02
     reliability_note: "Signed encyclopedia article by a Meitner biographer. Paragraphs counted from the start of the article text, with the 'In Brief' summary as paragraph 1 (so the baptism, 'In 1908 on a visit to Vienna…', is paragraph 7, the sixth paragraph after In Brief)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, lane_b, institutions, collaborators]
   - id: S3
     type: secondary
@@ -216,6 +233,7 @@ sources:
     url: "https://catholicscientists.org/articles/three-pioneering-women-in-science-a-story-of-science-faith-and-the-power-of-friendship/"
     accessed: 2026-10-02
     reliability_note: "Society article with full notes, by a biochemist; not peer reviewed and written from a faith perspective. Used for her congregations and translated quotations, each with its note."
+    source_quality: "other"
     used_for: [basics, contribution, childhood, worldview, heritage, timing, institutions]
   - id: S4
     type: secondary
@@ -225,6 +243,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
   - id: S5
     type: tertiary
@@ -234,7 +253,29 @@ sources:
     url: "https://todayinsci.com/M/Meitner_Lise/MeitnerLise-Quotations.htm"
     accessed: 2026-10-02
     reliability_note: "Quotation site that gives full references; used only to check the wording of Sime's translation, which was not read in the book."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
+  - id: S6
+    type: secondary
+    kind: "journal article"
+    author: "O. R. Frisch"
+    year: 1970
+    citation: "Frisch, O. R. 'Lise Meitner. 1878–1968.' Biographical Memoirs of Fellows of the Royal Society 16 (November 1970): 405–420. https://doi.org/10.1098/rsbm.1970.0016 ; JSTOR https://www.jstor.org/stable/769597."
+    url: "https://www.jstor.org/stable/769597"
+    accessed: 2026-10-24
+    reliability_note: "Signed Royal Society biographical memoir by her nephew and fission co-author. Opening page: father freethinker; children baptized; grew up Protestant; 'would not accept complete atheism'. Read this pass only via JSTOR/search preview (full RS PDF 403; AIP mirror 404); worldview sentence is scholarly reconstruction, not her own words."
+    source_quality: "scholarly edition or monograph"
+    used_for: [childhood, worldview, heritage, contribution]
+  - id: S7
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "'Lise Meitner.' Wikipedia. https://en.wikipedia.org/wiki/Lise_Meitner."
+    url: "https://en.wikipedia.org/wiki/Lise_Meitner"
+    accessed: 2026-10-24
+    reliability_note: "Used for dual-source biography (adult Lutheran baptism 1908; death/burial) and the 1945 Frida letter quotation attributed to Sime. Not used alone for any axis score."
+    source_quality: "other"
+    used_for: [basics, childhood, heritage, worldview]
 ---
 
 # Lise Meitner
@@ -243,7 +284,7 @@ sources:
 
 ## Summary
 
-Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraphs 3, 7]. Her recorded words speak of awe at life and the natural order but not of doctrine, so her system is below threshold; B 3 at 0.5 (alternative 4, P35); C UNKNOWN, the other axes below threshold.
+Lise Meitner (1878–1968), Austrian-born physicist, co-discovered protactinium-231 with Otto Hahn and, with Otto Frisch, gave the physical explanation of nuclear fission (1939) [S1, paragraphs 2–3; S6]. Born to assimilated Jewish parents, she was baptized Protestant in 1908 [S2, paragraphs 3, 7; S7]. Deepen D1 (P47–P50): primary_system BELOW_THRESHOLD (CHRIST candidate; Frisch: would not accept complete atheism [S6]); A_locus BELOW_THRESHOLD (no God-locus statement of her own); B_cause 3 at 0.5, inference_from_work, support corroborated (S1+S3+S6; P35 alt 4); C UNKNOWN; D and E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Still unplotted (A BELOW; B faded).
 
 ## Life and work
 
@@ -259,7 +300,7 @@ Her parents "were assimilated Viennese Jews, who did not practice Judaism" [S2, 
 
 ## Adult working worldview
 
-A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she spoke of "the deep awe and joy that the natural order of things brings to the true scientist" [S5; S3, note 31]. Scores: B 3 (0.5, alternative 4, P35); A, D, E below threshold, C UNKNOWN; mid_basin below threshold.
+A Lutheran church member in Berlin and Stockholm [S3, Sweden section]. Frisch records that she would not accept complete atheism [S6, p. 405]. In a 1955 letter she asked whether awe at life "is this not also a part of being religious?" [S3, note 20]. In 1953 she spoke of "the deep awe and joy that the natural order of things brings to the true scientist" [S5; S3, note 31]. After Hiroshima she told her sister she was "not Jewish by belief" [S7]. Scores: B 3 (0.5, alternative 4, P35, support corroborated); A, D, E below threshold, C UNKNOWN; mid_basin below threshold; still unplotted.
 
 ## Heritage (context only)
 
@@ -275,8 +316,11 @@ Everything in this section is Lane B: labeled belief, not a finding. Form unclea
 
 ## Open questions
 
-- Sime 1997 and Schweighofer 2013 for her own words on God.
+- Sime 1996 and Schweighofer 2013 for her own words on God / creed.
+- Frisch 1970 memoir full PDF; Nature 1939 full letter text.
+- Own no-exception or God-locus statement to lift A or B.
 
 ## Research log
 
 - 2026-10-02: Read Britannica, the JWA article (Rife) and the 2024 Society of Catholic Scientists article (Moritz). MacTutor has no full Meitner biography (short page). The Washington Post excerpt of Sime's first chapter did not download. Quotations checked against S3's text.
+- 2026-10-24 (deepen D1, queue #52): Re-read Moritz (S3) and todayinsci (S5). Added Frisch Biographical Memoirs FRS 16 (1970) via JSTOR preview (S6): freethinker father; baptized / grew up Protestant; would not accept complete atheism. Dual-sourced bio via Wikipedia EN (S7), including 1945 Frida "not Jewish by belief" (Sime). Nature 1939 paywalled; Sime 1996 IA lend unread; Frisch full PDF blocked. P47 source_quality on S1–S7; B support corroborated; A stays BELOW_THRESHOLD. Chart-moving NO. No fallacy_catalog (Jason).
