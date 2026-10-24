@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and page images"
   collected_on: 2026-10-18
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #112 / F4 rank 113). Goals: corroborate A and B (hollow→filled); resolve B alt if stronger evidence. Read Rettung der Göttlichen Offenbahrung (1747) in French 1805 Défense de la révélation (IA dfensedelarv00eule; S5) with English E092trans (Euler Archive via Wayback) for navigation — independent of the Lettres. Dual bio: Britannica (S1) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S6. A stays 0 @0.7 support single→corroborated (S3 Lettres + S5 Rettung: monde ouvrage de sa toute-puissance; opération immédiate de Dieu; résurrection miracle de Dieu seul). B stays 3 @0.7 alt 2 support single→corroborated (S3 + S5: lois du mouvement; miracle as exceptional change to the world-state; P27 T1 free-will / conceded present-tense miracles keep value 3 and alt 2 — Rettung does not force flip to 2). D 1 @0.7 alt 2 support single→corroborated (S3 + S5 revelation over freethinker objections). E stays 2 @0.7 alt 3 support single. primary CHRIST @0.7 unchanged (Rettung defends Christian revelation / résurrection). first_evidence_of_lio_type_views 1768→1747 (Rettung). mid_basin true @0.7 unchanged. Chart-moving YES: hollow→filled; already dark. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 113). Basics from Britannica (Boyer) and MacTutor (O'Connor and Robertson). Worldview from Lettres à une princesse d'Allemagne (St Petersburg 1768–72), vol. 2, Lettres LXXXVII, LXXXVIII and XC, read in the page images of the 1775 reprint (vol. 2, Internet Archive) and compared with Hunter's English translation (1795). Scientist (P30: Mechanica, fluid equations). primary_system CHRIST (0.7, alt CLTHEI); A 0 (0.7); B 3 (0.7, alt 2; P27 free-spirits anchor, miracles conceded); C BELOW_THRESHOLD; D 1 (0.7, alt 2); E 2 (0.7, alt 3); mid_basin true (0.7). Plotted. Draft, not reviewed."}
 
 identity:
@@ -89,12 +90,12 @@ worldview:
     value: CHRIST
     basis: written_profession
     certainty: 0.7
-    cites: [{source: S3, locator: "vol. 2, Lettres XC (pp. 42–44) and XCI (title in the table)"}]
-    rationale: "The confessed religion as his working view: a merciful Father ('ce pére miséricordieux') who has heard every worthy prayer 'depuis toute l'éternité' and arranged the world in its favour; 'les vérités divines devroient bien l'emporter sur les rèveries humaines'; Lettre XCI argues that the liberty of intelligent beings agrees with the dogmas of the Christian religion (its title in the table). Named alternative CLTHEI: God answers petition and 'fasse encore quelquefois de vrais miracles'. Rejected as primary because prayer is answered through the course of nature fixed from the start, 'sans faire de miracles', not by God responding at the time (CLTHEI use_when (1))."
-    how_known: "His published Lettres (1768–72), inside the working years; an alternative is named, so 0.7."
+    cites: [{source: S3, locator: "vol. 2, Lettres XC (pp. 42–44) and XCI (title in the table)"}, {source: S5, locator: "§§ XIX–XXXVI (French 1805 pp. 19–25); esp. XXXVI on the résurrection"}]
+    rationale: "(Lettres + Rettung) The confessed religion as his working view: a merciful Father ('ce pére miséricordieux') who has heard every worthy prayer 'depuis toute l'éternité' and arranged the world in its favour; 'les vérités divines devroient bien l'emporter sur les rèveries humaines'; Lettre XCI argues that the liberty of intelligent beings agrees with the dogmas of the Christian religion (its title in the table). Named alternative CLTHEI: God answers petition and 'fasse encore quelquefois de vrais miracles'. Rejected as primary because prayer is answered through the course of nature fixed from the start, 'sans faire de miracles', not by God responding at the time (CLTHEI use_when (1))."
+    how_known: "(Lettres + Rettung) Both published inside the working years (1747; 1768–72); alternative named, so 0.7. Independent source ids agree on Christian revelation."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Prayer, providence and revelation as the confessed Reformed faith; chosen."}
+    - {code: CHRIST, reason: "Prayer, providence and revelation as the confessed Reformed faith (Lettres); Rettung defends divine revelation and the résurrection of Christ; chosen."}
     - {code: CLTHEI, reason: "Petition is heard and present-day miracles are allowed; rejected as primary: the answer is built into the course of nature, not a response at the time."}
     - {code: CLASS_THEISM, reason: "Prayer does not change God's eternal plan; rejected: no a posteriori argument to God read (P22)."}
     - {code: DEISM, reason: "Rejected: revelation is accepted and outranks philosophy (P27)."}
@@ -103,38 +104,42 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII (p. 29), LXXXVIII (p. 36), XC (pp. 43–44)"}]
-      rationale: "Interventionist pole: a transcendent person outside the world, 'maître du monde', 'ce pére miséricordieux', 'le throne du Tout-puissant', who governs spirits 'par des commandemens ou des défenses' and arranged the world as its Creator. No limiting feature is stated."
-      how_known: "Published Lettres inside the working years. Below the 1.0 ceiling: read in a 1775 reprint with a false imprint, not in the 1768 St Petersburg edition (see S3), so 0.7 (coder's call)."
+      support: corroborated
+      cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII (p. 29), LXXXVIII (p. 36), XC (pp. 43–44)"}, {source: S5, locator: "§ II (French 1805 p. 2); §§ L–LII (pp. 36–38)"}]
+      rationale: "(Lettres + Rettung) Interventionist pole: a transcendent person outside the world. Lettres: 'maître du monde', 'ce pére miséricordieux', 'le throne du Tout-puissant', who governs spirits 'par des commandemens ou des défenses' and arranged the world as its Creator. Rettung: 'Dieu est la vérité ; et le monde est l'ouvrage de sa toute-puissance et de son infinie sagesse'; the present world-structure 'produite dans un temps déterminé par l'opération immédiate de Dieu'; humans 'l'ouvrage de Dieu, par lequel ils ont été créés dans un temps déterminé'. No limiting feature is stated."
+      how_known: "(Lettres + Rettung) Both published inside the working years. Lettres read in a 1775 reprint (false imprint), so 0.7; Rettung read in the 1805 French reprint / English translation of the 1747 German, not the German original, so 0.7. Independent source ids → corroborated (P48)."
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII (p. 29), LXXXVIII (p. 36), XC (pp. 43–44)"}]
-      rationale: "Scored on his account of nature (P6). Bodies follow fixed laws: 'Dieu a établi pour les corps les loix du repos & du mouvement, conformément auxquelles tous les changemens arrivent nécessairement'; God answers prayer 'sans faire de miracles', since the answer is 'une suite du cours naturel des évènemens'. The stated exception is the freedom of spirits: 'les esprits ne sont susceptibles d'aucune force ou contrainte'. Under the P27 anchor a free will not bound by natural law gives B 3 as the value (Descartes, Kant). Named alternative 2: he adds 'quoiqu'il n'y ait aucune raison de nier que Dieu ait fait & fasse encore quelquefois de vrais miracles' (present tense), a second exception, which could read as miracles still a live part of how events go (B 2 anchor)."
-      how_known: "Published Lettres inside the working years; alternative named, so 0.7."
+      support: corroborated
+      cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII (p. 29), LXXXVIII (p. 36), XC (pp. 43–44)"}, {source: S5, locator: "§§ XLIX–L (French 1805 pp. 36–37); § XXXVI (p. 25)"}]
+      rationale: "(Lettres + Rettung) Scored on his account of nature (P6). Lettres: bodies follow fixed laws ('Dieu a établi pour les corps les loix du repos & du mouvement, conformément auxquelles tous les changemens arrivent nécessairement'); God answers prayer 'sans faire de miracles', since the answer is 'une suite du cours naturel des évènemens'. The stated exception is the freedom of spirits ('les esprits ne sont susceptibles d'aucune force ou contrainte'). Under the P27 anchor a free will not bound by natural law gives B 3 (Descartes, Kant). Rettung agrees on lawful planetary motion ('conforme aux lois du mouvement') with miracle as an exceptional change to the world-state ('À moins donc que quelque miracle n'opère un changement dans l'état actuel du monde') and accepts biblical miracles (résurrection 'un fait incontestable'). Named alternative 2: Lettres add 'quoiqu'il n'y ait aucune raison de nier que Dieu ait fait & fasse encore quelquefois de vrais miracles' (present tense) — P27 T1: a conceded but unasserted possibility of rare miracles beside an explicit denial that miracles are part of the ordinary course keeps B 3, with B 2 as the named alternative. Rettung's biblical miracles and future-exception language do not force a flip to 2."
+      how_known: "(Lettres + Rettung) Both inside the working years; alternative named, so 0.7. Independent source ids → corroborated (P48)."
       alternatives:
-        - {value: 2, note: "'fasse encore quelquefois de vrais miracles'.", cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 44"}]}
+        - {value: 2, note: "P27 T1: present-tense 'fasse encore quelquefois de vrais miracles' (Lettres); Rettung accepts biblical miracles and names miracle as a possible change to the world-state.", cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 44"}, {source: S5, locator: "§ XXXVI (French 1805 p. 25); § L (p. 36)"}]}
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Lead only: the Lettres on liberty say bodies cannot be rewarded or punished while free spirits are responsible (vol. 2, Lettres LXXXV–LXXXVI; read only in OCR and in Hunter's translation, 'no reward, no punishment can possibly take place'), and Lettre XCI treats the conversion of sinners. No statement of divine reward and punishment of persons was verified in the page images."}
     D_authority:
       value: 1
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 42"}]
-      rationale: "Leans to the interventionist pole: where philosophical systems contradict religion, 'les vérités divines devroient bien l'emporter sur les rèveries humaines'. Limited: a true philosophy only seems contrary ('cette contradiction n'est qu'apparente'), and his physics in the same Lettres is argued from observation. Named alternative 2: the passage sets revelation against speculative systems ('rèveries'), not against observation, so it may describe two domains, each with its own authority."
-      how_known: "Published Lettres; alternative named, so 0.7."
+      support: corroborated
+      cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 42"}, {source: S5, locator: "§§ XIX–XXXVI (French 1805 pp. 19–25); title and bookseller's note"}]
+      rationale: "(Lettres + Rettung) Leans to the interventionist pole. Lettres: where philosophical systems contradict religion, 'les vérités divines devroient bien l'emporter sur les rèveries humaines'; limited: a true philosophy only seems contrary ('cette contradiction n'est qu'apparente'), and his physics in the same Lettres is argued from observation. Rettung: whole pamphlet defends divine revelation and the divinity of Scripture against freethinkers; résurrection grounds the Christian religion as 'un ouvrage de Dieu'. Named alternative 2: the Lettres passage sets revelation against speculative systems ('rèveries'), not against observation, so it may describe two domains, each with its own authority."
+      how_known: "(Lettres + Rettung) Both inside the working years; alternative named, so 0.7. Independent source ids → corroborated (P48)."
       alternatives:
-        - {value: 2, note: "Revelation against speculative systems only.", cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 42"}]}
+        - {value: 2, note: "Revelation against speculative systems only (Lettres); Rettung is apologetic, not a physics-vs-revelation split.", cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 42"}, {source: S5, locator: "§§ XIX–XXXVI (French 1805 pp. 19–25)"}]}
     E_scope:
       value: 2
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "vol. 2, Lettres LXXXVIII (p. 36) and XC (pp. 43–44)"}]
       rationale: "Scored on the world's order (P7). The same laws of rest and motion govern all bodies, but providence arranged the course of events 'en faveur de cette priére' for 'les fidèles': answered petition for the faithful, built into the plan. Mixed: 2. Named alternative 3: the favour works only through the natural course, a stated, limited exception. Salvation and conversion are not scored here (C)."
       how_known: "Published Lettres; alternative named, so 0.7."
       alternatives:
         - {value: 3, note: "Favour only through the natural course.", cites: [{source: S3, locator: "vol. 2, Lettre XC, p. 43"}]}
-  mid_basin: {value: true, certainty: 0.7, cites: [{source: S3, locator: "vol. 2, Lettres LXXXVIII and XC"}], how_known: "P4 test: A 0 (0.7) ≤ 1 and B 3 (0.7) ≥ 3, both at ≥ 0.7, so true; certainty the lower of the two (0.7). B's named alternative 2 would leave the test without a branch (TODO)."}
+  mid_basin: {value: true, certainty: 0.7, cites: [{source: S3, locator: "vol. 2, Lettres LXXXVIII and XC"}, {source: S5, locator: "§§ II, L–LII"}], how_known: "P4 test: A 0 (0.7) ≤ 1 and B 3 (0.7) ≥ 3, both at ≥ 0.7, so true; certainty the lower of the two (0.7). Both A and B now corroborated (P48) — filled, still dark. B's named alternative 2 would leave the test without a branch (TODO); P27 T1 keeps value at 3."}
   statements:
     - text: "Et si Dieu, comme maître du monde, changeoit immédiatement quelque chose dans le cours des évènemens successifs, ce changement n'appartiendroit plus à la machine: ce seroit alors un miracle."
       cites: [{source: S3, locator: "vol. 2, Lettre LXXXVII, p. 29"}]
@@ -172,8 +177,45 @@ worldview:
       verified_against: "primary facsimile"
       verified_on: 2026-10-19
       note: "Same reprint, vol. 2, pp. 43–44; the cut is a doubled '&' at the line break on p. 43."
+
+    - text: "Dieu est la vérité ; et le monde est l'ouvrage de sa toute-puissance et de son infinie sagesse."
+      cites: [{source: S5, locator: "§ II, French 1805 p. 2"}]
+      date: "1747"
+      context: "Rettung der Göttlichen Offenbahrung (1747), opening argument that perfection of the understanding has God and His works as its principal object; read in the 1805 French Défense."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "IA OCR of the 1805 Paris printing (dfensedelarv00eule), printed page (2); long s / spacing normalised. English E092trans used for navigation only."
+    - text: "La résurrection de J. C. est encore un fait incontestable ; et un pareil miracle ne pouvant être l'ouvrage que de Dieu seul, il est impossible après cela de révoquer en doute la divinité de la mission du Sauveur."
+      cites: [{source: S5, locator: "§ XXXVI, French 1805 p. 25"}]
+      date: "1747"
+      context: "Same work, on the resurrection as proof of the divinity of Christ's mission and of Scripture."
+      axes: [A_locus, B_cause, D_authority]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Same 1805 printing, printed page (25); OCR 'J'ouvrage' read as 'l'ouvrage'."
+    - text: "C'est de là que procède la diminution des orbites des planètes, qui arrive d'une manière conforme aux lois du mouvement, et qui s'accorde en même temps avec les observations. [...] À moins donc que quelque miracle n'opère un changement dans l'état actuel du monde, il faut qu'à la fin la terre se trouve si près du soleil, que ni hommes ni animaux ne pourront plus y subsister."
+      cites: [{source: S5, locator: "§§ XLIX–L, French 1805 pp. 36–37"}]
+      date: "1747"
+      context: "Same work, arguing from ether-resistance and the laws of motion that the present world-state cannot be eternal; miracle named as the only exceptional change."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Same 1805 printing, printed pages (36)–(37); cut joins the end of § XLIX to the opening of § L."
+    - text: "Cela fournit une preuve incontestable, que la structure présente du monde ne sauroit être éternelle, mais qu'il faut qu'elle ait été produite dans un temps déterminé par l'opération immédiate de Dieu."
+      cites: [{source: S5, locator: "§ LI, French 1805 p. 37"}]
+      date: "1747"
+      context: "Same work, creation of the present world-structure in finite time by God's immediate operation."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Same 1805 printing, printed page (37)."
   changes_over_life: []
-  coder_notes: "Coder's call. The religious letters were left out of the Condorcet edition (a lead from the title of the 1805 Défense de la révélation ... suivie des pensées de l'auteur sur la religion, supprimées dans la dernière édition de ses Lettres, not read), so the record uses the 1775 reprint, which keeps them. Long s normalised silently. The Rettung der göttlichen Offenbahrung gegen die Einwürfe der Freygeister (1747) is an unread lead for D. Ruling question for the auditor: does a conceded, present-tense 'fasse encore quelquefois de vrais miracles', beside a free-will anchor, keep B at 3 or make it 2? If 2, mid_basin becomes TODO (no branch); the plotted point would move from A0/B3 to A0/B2."
+  coder_notes: "Coder's call. Deepen D1 reads the Rettung (1747) in the 1805 French Défense (IA) and English E092trans; A and B move single→corroborated (hollow→filled). P27 T1 already settled B 3 alt 2 for the present-tense miracles concession; Rettung's biblical miracles and 'à moins que quelque miracle' language do not force a flip. The religious letters were left out of the Condorcet edition (the 1805 Défense reprints some; the record still uses the 1775 Lettres reprint for those letters). Long s normalised silently. German 1747 original (SLUB) and 1768 St Petersburg Lettres not opened this pass."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -186,16 +228,16 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1735–1783", certainty: 0.5, cites: [{source: S2, locator: "Basel problem paragraph"}, {source: S1, locator: "Later years"}], how_known: "Basel problem (1735) to quadratic reciprocity (1783, Britannica's date), first to last listed lasting contribution (P29, P30). The end is contested: alternative 1772 if the 1783 date is not kept. The Lettres (1768–72) fall inside either way."}
   age_at_first_lasting_contribution: {value: 28, certainty: 0.7, cites: [{source: S2, locator: "Quick Info; Basel problem paragraph"}], how_known: "1735 − 1707 = 28 (P30)."}
-  first_evidence_of_lio_type_views: {value: "1768: bodies follow the laws of motion necessarily; prayer answered through the natural course", year: 1768, certainty: 0.5, cites: [{source: S3, locator: "vol. 2, Lettres LXXXVIII, XC"}], how_known: "Earlier writings (Rettung, 1747) not read."}
+  first_evidence_of_lio_type_views: {value: "1747: world as God's work by immediate operation; planetary motion under the laws of motion; biblical miracles defended", year: 1747, certainty: 0.7, cites: [{source: S5, locator: "§§ II, XXXVI, XLIX–LII"}], how_known: "Rettung (1747) now read (S5); inside the working years. Lettres (1768) remain the fuller B/E account."}
   lio_views_relative_to_major_work: {value: "during major work", certainty: 0.7, cites: [{source: S3, locator: "vol. 2"}], how_known: "Lettres published 1768–72, inside 1735–1783."}
-  worldview_during_major_work: {value: "Reformed Christian: lawful mechanics for bodies, free spirits, prayer answered through a pre-arranged course, miracles conceded", certainty: 0.7, cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII–XC"}], how_known: "His Lettres."}
+  worldview_during_major_work: {value: "Reformed Christian: lawful mechanics for bodies, free spirits, prayer answered through a pre-arranged course, miracles conceded; divine revelation and the résurrection defended", certainty: 0.7, cites: [{source: S3, locator: "vol. 2, Lettres LXXXVII–XC"}, {source: S5, locator: "§§ II, XIX–XXXVI, XLIX–LII"}], how_known: "Lettres + Rettung."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "yes", rationale: "Mechanics recast as analysis; a world of bodies alone compared to a clock 'une fois montée'.", certainty: 0.5, cites: [{source: S3, locator: "vol. 2, p. 29"}, {source: S2, locator: "mechanics paragraph"}], how_known: "Coder's reading."}
   form_acquired: {value: "adulthood, before major work", certainty: 0.5, cites: [{source: S2, locator: "university paragraph"}], how_known: "Coder's reading (Bernoulli's guidance, 1720s)."}
   circle_present: {value: "no", rationale: "God is the transcendent Creator.", certainty: 0.7, cites: [{source: S3, locator: "vol. 2, Lettre XC"}], how_known: "Coder's reading."}
-  reading: "A mid-basin theist on the P4 test: a lawful mechanics of bodies, free spirits, and a providence that works through the fixed course."
+  reading: "A mid-basin theist on the P4 test: a lawful mechanics of bodies, free spirits, and a providence that works through the fixed course; A and B now corroborated (filled)."
   notes: ""
 
 institutions:
@@ -211,11 +253,12 @@ review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 113"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Worldview read in a 1775 reprint (false imprint) of the Lettres, not the 1768 first edition."
+    - "Worldview Lettres read in a 1775 reprint (false imprint), not the 1768 first edition."
+    - "Rettung read in 1805 French reprint / English translation, not the 1747 German original (SLUB)."
     - "Span end rests on Britannica's 1783 date for quadratic reciprocity (contested)."
   open_questions:
     - "Check the Lettres passages against the 1768 St Petersburg edition or Opera Omnia III.11–12."
-    - "Read the Rettung der göttlichen Offenbahrung (1747) for D."
+    - "Check Rettung against the 1747 German (SLUB id424129752) or Opera Omnia III.12."
     - "Date quadratic reciprocity (1783 vs earlier statements)."
 
 sources:
@@ -227,6 +270,7 @@ sources:
     url: "https://www.britannica.com/biography/Leonhard-Euler"
     accessed: 2026-10-18
     reliability_note: "Signed article. Body only; the AI-generated Top Questions are not cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, institutions, collaborators, heritage]
   - id: S2
     type: secondary
@@ -236,6 +280,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Euler/"
     accessed: 2026-10-18
     reliability_note: "Signed biography, with references (Youschkevitch's DSB article, Calinger)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators, lane_b]
   - id: S3
     type: primary
@@ -245,6 +290,7 @@ sources:
     url: "https://archive.org/details/bim_eighteenth-century_lettres-a-une-princesse-_euler-leonhard_1775_2"
     accessed: 2026-10-18
     reliability_note: "Microfilm scan of a 1775 printing; the catalogue notes 'The imprint is false; probably printed in The Hague.' Text and letter numbers agree with Hunter's 1795 translation of the original edition for the passages used. Not checked against the 1768 edition or the Opera Omnia."
+    source_quality: "primary / own words"
     used_for: [worldview, timing, lane_b]
   - id: S4
     type: secondary
@@ -254,7 +300,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-18
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: "published work by the subject"
+    author: "Leonhard Euler"
+    citation: "Euler, Leonhard. Rettung der Göttlichen Offenbahrung gegen die Einwürfe der Freygeister (Berlin: Haude and Spener, 1747). Read in: Défense de la révélation contre les objections des esprits-forts, par M. Euler, suivie des pensées de cet auteur sur la religion… (Paris: A. Le Clère, 1805), Internet Archive dfensedelarv00eule (French reprint of the 1755 Bibliothèque impartiale translation). English navigation: A Defense of the Revelation against the Objections of Freethinkers, Euler Archive E092trans.pdf (via Wayback Machine)."
+    url: "https://archive.org/details/dfensedelarv00eule"
+    accessed: 2026-10-24
+    reliability_note: "Posthumous French reprint (1805) of a mid-century journal translation of the 1747 German original; not checked against the German (SLUB) or Opera Omnia III.12. French quotes taken from IA PDF OCR (archive scan). English E092trans used for section navigation only, not as the quoted text."
+    source_quality: "primary / own words"
+    used_for: [worldview, timing, lane_b]
+  - id: S6
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Leonhard Euler.\" English Wikipedia. https://en.wikipedia.org/wiki/Leonhard_Euler. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Leonhard_Euler"
+    accessed: 2026-10-24
+    reliability_note: "Crowdsourced; used for dual bio (P50) and the Personal philosophy section's pointer to Lettres + Rettung. Body facts cross-checked against S1/S2 where cited."
+    source_quality: "reference entry"
+    used_for: [identity, basics, childhood, heritage, worldview]
 ---
 
 # Leonhard Euler
@@ -263,11 +330,11 @@ sources:
 
 ## Summary
 
-Leonhard Euler (1707–1783), Swiss mathematician and physicist [S1, S2]. Draft: primary_system CHRIST (0.7, alt CLTHEI); A 0 at 0.7; B 3 at 0.7 (alt 2); C BELOW_THRESHOLD; D 1 at 0.7 (alt 2); E 2 at 0.7 (alt 3); mid_basin true (0.7). Plotted.
+Leonhard Euler (1707–1783), Swiss mathematician and physicist [S1, S2, S6]. Deepen D1: primary_system CHRIST (0.7, alt CLTHEI); A 0 at 0.7 (corroborated S3+S5); B 3 at 0.7 (alt 2; corroborated S3+S5; P27 T1); C BELOW_THRESHOLD; D 1 at 0.7 (alt 2; corroborated S3+S5); E 2 at 0.7 (alt 3; single); mid_basin true (0.7). Plotted (dark, now filled).
 
 ## Life and work
 
-Basel, St Petersburg (1727–41, 1766–83), Berlin (1741–66) [S1, S2].
+Basel, St Petersburg (1727–41, 1766–83), Berlin (1741–66) [S1, S2, S6].
 
 ## Contribution and impact
 
@@ -275,28 +342,29 @@ Basel problem (1735), Mechanica (1736), Introductio (1748), fluid equations, qua
 
 ## Childhood and education
 
-Pastor's son; Basel, under Johann Bernoulli [S2].
+Pastor's son (Reformed Church); Basel, under Johann Bernoulli [S2, S6].
 
 ## Adult working worldview
 
-'C'est ainsi que Dieu éxauce les priéres des fidèles sans faire de miracles' [S3, vol. 2, p. 44].
+'C'est ainsi que Dieu éxauce les priéres des fidèles sans faire de miracles' [S3, vol. 2, p. 44]. Rettung: 'Dieu est la vérité ; et le monde est l'ouvrage de sa toute-puissance et de son infinie sagesse' [S5, § II].
 
 ## Heritage (context only)
 
-Swiss Reformed [S2].
+Swiss Reformed [S2, S6].
 
 ## Timing
 
-1735–1783, from age 28 [S1, S2].
+1735–1783, from age 28 [S1, S2]. First LIO-type evidence 1747 (Rettung) [S5].
 
 ## Lane B notes (labeled belief model)
 
-Everything in this section is Lane B: labeled belief, not a finding. A clockwork of bodies with free spirits [S3].
+Everything in this section is Lane B: labeled belief, not a finding. A clockwork of bodies with free spirits [S3]; A and B corroborated by Rettung [S5].
 
 ## Open questions
 
-- Check against the 1768 edition; read the Rettung (1747).
+- Check Lettres against the 1768 edition or Opera Omnia III.11–12; check Rettung against the 1747 German (SLUB).
 
 ## Research log
 
 - 2026-10-18/19: Read Britannica (live), MacTutor, and the page images of vol. 2 of the 1775 reprint of the Lettres (pp. 29, 36, 42–44), with Hunter's 1795 translation for comparison.
+- 2026-10-24: Deepen D1. Read Rettung (1747) via 1805 French Défense IA OCR + E092trans English; Wikipedia EN dual bio; P47 source_quality; A/B/D corroborated (hollow→filled); B alt 2 kept (P27 T1).
