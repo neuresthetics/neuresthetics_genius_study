@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 8
+  record_version: 9
   review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
+  collected_by: "Grok Bot (overnight agent run for Jason, first pool; deepen D1 2026-10-24)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period c. 1012–1037 → 1016–1027; worldview.working_years c. 998–1037 → 1016–1027, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #39). P47 source_quality on S1–S13. Primary: Gohlman Life of Ibn Sina 1974 bilingual Autobiography (new S12) for exact childhood quotes; Marmura Encyclopaedia Iranica metaphysics article (new S13) for English providence definition (Šefāʾ Met. p. 415). Re-read Gutas/Lizzini/McGinnis SEP. A_locus 1 @ 1.0 and B_cause 3 @ 0.7 unchanged (written_profession); support: corroborated added on A–E (P48). Mid_basin stays true @ 0.7. Chart person-dot already dark filled — not chart-moving. Marmura 2005 full English still borrow-restricted (open). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: ibn-sina
@@ -55,8 +56,8 @@ basics:
       modern_name: "Afshana, near Bukhara, Uzbekistan"
       polity_then: "Samanid realm (Transoxania)"
       certainty: 1.0
-      cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}, {source: S7, locator: "Autobiography, p. 9"}]
-      how_known: "Three sources, including his own account. MacTutor names Kharmaithen, the district his father governed (S5); Afshana lies next to it (S7)."
+      cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}, {source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 16–19)"}]
+      how_known: "Three sources, including his own account (Gohlman). MacTutor names Kharmaithen, the district his father governed (S5); Afshana lies next to it (S12)."
   death:
     date: {value: "1037", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts; Life and education (in Ramadan)"}, {source: S2, locator: "§1.1"}, {source: S5, locator: "Quick Info (June 1037)"}], how_known: "All sources agree on 1037; MacTutor gives June, Britannica the month of Ramadan."}
     place:
@@ -100,30 +101,30 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "The Canon was a standard medical text for six centuries; The Cure shaped both Islamic and Latin philosophy; SEP ranks his influence second only to Aristotle's.", certainty: 1.0, cites: [{source: S2, locator: "opening paragraph"}, {source: S1, locator: "Influence in medicine"}], how_known: "Lane A definition applied to the contributions above."}
 
 childhood:
-  family_religion: {value: "Muslim. His father, and his brother too, had listened to the Ismaʿili missionaries of the Egyptian (Fatimid) movement and discussed their teaching at home; Ibn Sina says he listened but did not assent.", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 9"}, {source: S4, locator: "§1 ('His father, who may have been Ismaili')"}], how_known: "His own account (Arberry's translation, read in a poor OCR scan, so paraphrased) and one reference source, which hedges. The family's wider practice is not described."}
-  family_religious_practice: {value: "Put under teachers of the Qurʾān and of letters at Bukhara; had mastered the Qurʾān by about age 10. The father and brother discussed Ismaʿili teaching on the soul and the intellect at home.", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 9"}, {source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}], how_known: "His own account plus two reference sources on the Qurʾān by age 10. Paraphrase only."}
+  family_religion: {value: "Muslim. His father was 'one of those who responded to the propagandist of the Egyptians and was reckoned among the Ismaʿiliyya'; from them the father and brother heard the account of the soul and the intellect; Ibn Sina listened and understood but 'my soul would not accept it'.", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 18–19)"}, {source: S4, locator: "§1 ('His father, who may have been Ismaili')"}], how_known: "His own Autobiography in Gohlman's scholarly bilingual edition (primary / own words). IEP hedges on the father's Ismaʿili affiliation."}
+  family_religious_practice: {value: "When he 'reached the age of ten [he] had finished the Qurʾān and many works of literature'. Father and brother discussed Ismaʿili soul-and-intellect teaching at home; he listened.", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 18–19)"}, {source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}], how_known: "Exact Gohlman wording plus two reference sources."}
   parents_and_household:
-    - {value: "Father from Balkh who moved to Bukhara and served the Samanids as governor of the village district of Kharmaythan; he married Ibn Sina's mother at Afshana nearby. The father died before Ibn Sina left Bukhara.", role: parents, certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S7, locator: "Autobiography, p. 9"}, {source: S4, locator: "§1"}], how_known: "Three sources agree. The mother's name is not given in the sources read."}
-    - {value: "One younger brother, born after him at Afshana", role: sibling, certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 9"}], how_known: "His own account only."}
+    - {value: "Father from Balkh who moved to Bukhara and served Amir Nūḥ ibn Manṣūr as governor of Kharmaythan; mother Sitāra (per Gohlman note), married at Afshana nearby. Father died before Ibn Sina left Bukhara.", role: parents, certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 16–19; note on Sitāra)"}, {source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Gohlman bilingual Autobiography plus SEP and IEP. Mother's name Sitāra is from Gohlman's annotation, not the Autobiography body."}
+    - {value: "One younger brother, born five years later at Afshana", role: sibling, certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing p. 19)"}], how_known: "His own Autobiography (Gohlman)."}
   household_circumstances: {value: "Family of a provincial state official in the Samanid administration; his father's house in Bukhara was a meeting place for learned men", certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S5, locator: "Biography"}], how_known: "SEP on the father's post; MacTutor on the house as a meeting place."}
   schooling:
-    - {value: "Teachers of the Qurʾān and of letters at Bukhara; the Qurʾān mastered by about age 10", stage: "elementary school", institution: "teachers at Bukhara", years: "to c. 990", ages: "to c. 10", certainty: 1.0, cites: [{source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Three sources.", run_by: "religious body"}
-    - {value: "Hanafi jurisprudence (fiqh) with Ismaʿil the Ascetic (Ismaʿil Zahid)", stage: tutor, institution: "Bukhara", ages: "c. 10–16", certainty: 0.7, cites: [{source: S4, locator: "§1"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Two sources; ages approximate."}
-    - {value: "Logic (Porphyry's Isagoge), the first figures of Euclid and the start of the Almagest with Abu ʿAbd Allah al-Natili, a philosopher who stayed in his father's house", stage: tutor, institution: "family house, Bukhara", ages: "c. 10–14", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–10"}, {source: S1, locator: "Life and education"}], how_known: "His own account (paraphrased) and Britannica on al-Natili teaching logic. Ages approximate."}
-    - {value: "Studied the rest of logic, natural science, mathematics, metaphysics and medicine on his own, and says he had mastered the sciences by 18", stage: "self-directed", years: "to c. 998", ages: "c. 14–18", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S7, locator: "Autobiography, pp. 10–11"}, {source: S1, locator: "Life and education"}], how_known: "Three sources. Gutas reads the Autobiography as making a philosophical point about self-study, so the account is shaped (S2, S4)."}
-  early_mathematics: {value: "geometry (Euclid-style proof)", ages: "c. 10–16", description: "Learned Indian arithmetic from a vegetable seller; read the first five or six figures of Euclid with al-Natili and solved the rest of the book on his own; then worked through the geometrical figures of Ptolemy's Almagest.", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–10"}, {source: S2, locator: "§1.1 (quadrivium studied by himself)"}], how_known: "His own account (Arberry's translation, paraphrased because the OCR is poor) and SEP. Ages are not given exactly."}
-  early_geometric_style_reasoning: {value: "Euclid and logic as a boy; during the next eighteen months he set out the premises of each proof he examined in files and worked out what followed from them.", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 11"}], how_known: "His own account, paraphrased. Facts only; the Lane B reading is in lane_b."}
+    - {value: "Teachers of the Qurʾān and of letters at Bukhara; the Qurʾān finished by age 10", stage: "elementary school", institution: "teachers at Bukhara", years: "to c. 990", ages: "to c. 10", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing p. 19)"}, {source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}], how_known: "Gohlman exact wording plus two reference sources.", run_by: "religious body"}
+    - {value: "Hanafi jurisprudence (fiqh) with Ismaʿīl the Ascetic; before al-Natīlī he was 'a skillful questioner'", stage: tutor, institution: "Bukhara", ages: "c. 10–16", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–21)"}, {source: S4, locator: "§1"}], how_known: "Gohlman plus IEP; ages approximate."}
+    - {value: "Logic (Porphyry's Isagoge), the first five or six figures of Euclid and the start of the Almagest with Abū ʿAbd Allāh al-Natīlī, who stayed in his father's house", stage: tutor, institution: "family house, Bukhara", ages: "c. 10–14", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–25)"}, {source: S1, locator: "Life and education"}], how_known: "Gohlman exact wording; Britannica on al-Natīlī. Ages approximate."}
+    - {value: "Studied the rest of logic, natural science, mathematics, metaphysics and medicine on his own; 'when I had reached the age of eighteen I was finished with all of these sciences'", stage: "self-directed", years: "to c. 998", ages: "c. 14–18", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 36–37)"}, {source: S2, locator: "§1.1"}, {source: S1, locator: "Life and education"}], how_known: "Gohlman exact wording plus SEP and Britannica. Gutas reads the Autobiography as making a philosophical point about self-study, so the account is shaped (S2, S4)."}
+  early_mathematics: {value: "geometry (Euclid-style proof)", ages: "c. 10–16", description: "Father 'sent me to a vegetable seller who used Indian calculation'; with al-Natīlī he 'read the first five or six figures' of Euclid, then 'undertook the solution of the rest of the book in its entirety by myself'; then Almagest geometrical figures.", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–25)"}, {source: S2, locator: "§1.1 (quadrivium studied by himself)"}], how_known: "Gohlman exact wording plus SEP. Ages approximate."}
+  early_geometric_style_reasoning: {value: "Euclid and logic as a boy; from about sixteen, for a year and a half, he 'compiled a set of files' for each proof and worked out what followed from the premises.", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 28–31)"}], how_known: "Gohlman exact wording. Facts only; the Lane B reading is in lane_b."}
   early_science_exposure:
     - {value: "Studied medicine from about 13 and treated patients by 16; cured the Samanid ruler Nuh ibn Mansur and was given the royal library", year: "c. 993–997", age: "c. 13–17", certainty: 1.0, cites: [{source: S5, locator: "Biography"}, {source: S1, locator: "Life and education"}, {source: S2, locator: "§1.1"}], how_known: "Three sources."}
   key_early_reading:
-    - {value: "Aristotle's Metaphysics, which he says he read forty times without understanding it until he bought al-Farabi's short book on its aims", age: "c. 17–18", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 12"}, {source: S4, locator: "§1"}, {source: S1, locator: "opening paragraph"}], how_known: "His own account (paraphrased) and two reference sources."}
+    - {value: "Aristotle's Metaphysics, which he 'read … forty times' and had memorized without understanding until he bought Abū Naṣr al-Fārābī's book on the objects of the Metaphysics", age: "c. 17–18", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 32–35)"}, {source: S4, locator: "§1"}, {source: S1, locator: "opening paragraph"}], how_known: "Gohlman exact wording plus two reference sources."}
   childhood_mentors:
-    - {value: "Abu ʿAbd Allah al-Natili, who taught him logic, Euclid and the start of the Almagest", name: "al-Natili", years: "c. 990s", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–10"}, {source: S1, locator: "Life and education"}], how_known: "Two sources."}
-    - {value: "Ismaʿil the Ascetic, his teacher in jurisprudence", name: "Ismaʿil Zahid", certainty: 0.7, cites: [{source: S4, locator: "§1"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Two sources."}
+    - {value: "Abū ʿAbd Allāh al-Natīlī, who taught him logic, Euclid and the start of the Almagest", name: "al-Natīlī", years: "c. 990s", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–25)"}, {source: S1, locator: "Life and education"}], how_known: "Gohlman plus Britannica."}
+    - {value: "Ismaʿīl the Ascetic, his teacher in jurisprudence", name: "Ismaʿīl Zahid", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–21)"}, {source: S4, locator: "§1"}], how_known: "Gohlman plus IEP."}
   languages_in_childhood: {value: [Persian, Arabic], certainty: 0.5, cites: [{source: S2, locator: "§1.1 (Samanid Persian revival with Arabic-Islamic culture)"}], how_known: "Arabic from Qurʾānic schooling; Persian from the Samanid setting. The sources do not state his home language, so 0.5."}
   notable_events:
     - {value: "Given use of the Samanid royal library after curing the ruler", age: "c. 17–18", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}], how_known: "Three sources."}
-    - {value: "The Qarakhanids took Bukhara in 999; after his father's death he left, saying 'necessity' led him away", year: "999–c. 1000", age: "c. 19–20", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Two sources."}
+    - {value: "The Qarakhanids took Bukhara in 999; after his father's death, 'Necessity then led me to forsake Bukhara and move to Gurganj'", year: "999–c. 1000", age: "c. 19–20", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 40–41)"}, {source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Gohlman exact wording plus SEP and IEP."}
 
 worldview:
   unit: "adult working worldview"
@@ -154,36 +155,41 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
-      cites: [{source: S6, locator: "X ch. 2, p. 664"}, {source: S3, locator: "§4; §6.1"}, {source: S4, locator: "§6"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation; written profession, so 1.0."
-      rationale: "Leans to the transcendent pole. God is neither outside nor inside the world and is not like any earthly thing (S6, X ch. 2); it is the Necessary Existent, distinct from all things that exist through it (S3, §4). It knows itself, wills and loves, but its will is identical with its act of thinking and has no deliberation or time (S3, §6.1), and it knows individual things only in a universal way (S4, §6). That is a transcendent source, less personal than the 0 pole, so 1. Same score as the CLASS_THEISM system record."
+      support: corroborated
+      cites: [{source: S6, locator: "X ch. 2, p. 664"}, {source: S13, locator: "providence definition (Šefāʾ Metaphysics p. 415)"}, {source: S3, locator: "§4; §6.1"}, {source: S4, locator: "§6"}]
+      how_known: "Metaphysics of The Cure in Horten's scholarly German (S6) plus Marmura's own English of the providence passage via Encyclopaedia Iranica (S13) and two reference reconstructions (S3, S4). Independent agreeing sources → corroborated (P48). Written profession, so 1.0."
+      rationale: "Leans to the transcendent pole. God is neither outside nor inside the world and is not like any earthly thing (S6, X ch. 2); it is the Necessary Existent, distinct from all things that exist through it (S3, §4). Providence is the First's knowing the good order and being its cause (S13, Šefāʾ Met. p. 415). It knows itself, wills and loves, but its will is identical with its act of thinking and has no deliberation or time (S3, §6.1), and it knows individual things only in a universal way (S4, §6). That is a transcendent source, less personal than the 0 pole, so 1. Same score as the CLASS_THEISM system record."
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, pp. 656–657; X ch. 2, p. 664"}, {source: S8, locator: "§1 (natures and the kalam critique)"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation, so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the rationale notes that SEP's reading would point to 4. Lowered from 1.0 in the consistency pass after the lens audit (2026-10-02)."
-      rationale: "Leans to law. The causes of the heavens cannot act for our sake (S6, p. 617). Providence is God knowing the order of the good, from which things flow in a fixed order (p. 618). Everything comes to be through other causes, and answered prayer is explained inside that order, not by God changing course (pp. 656–657). The stated exception: a prophet must be marked out by things other people do not see, so he must work miracles (p. 664). Al-Ghazali's attack on causal necessity was aimed at this kind of view (S8). So 3. SEP describes religious and 'paranormal' phenomena as functions of the rational soul (S2, §4), which would point to 4; the record keeps 3 because he states the miracles as an exception."
+      support: corroborated
+      cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, pp. 656–657; X ch. 2, p. 664"}, {source: S13, locator: "providence definition (Šefāʾ Metaphysics p. 415); evil as accidental to greater good"}, {source: S8, locator: "§1 (natures and the kalam critique)"}, {source: S2, locator: "§4 (prophecy as rational-soul function — named alt 4)"}]
+      how_known: "Metaphysics of The Cure in Horten (S6) plus Marmura's English providence definition (S13) and McGinnis on natures vs kalām (S8). Independent agreeing sources → corroborated (P48). Written profession; certainty capped at 0.7 because the record names a plausible alternative score 4 (CODING_GUIDE §3; Gutas S2 §4). Value unchanged this deepen."
+      rationale: "Leans to law. The causes of the heavens cannot act for our sake (S6, p. 617). Providence is the First's knowing the good order and being its cause, so that what He conceives 'would emanate from Him in the manner … most completely conducive to order' (S13, Šefāʾ Met. p. 415; Horten parallel S6 p. 618). Everything comes to be through other causes, and answered prayer is explained inside that order (S6, pp. 656–657). The stated exception: a prophet must work miracles (p. 664). Al-Ghazali's attack on causal necessity was aimed at this kind of view (S8). So 3. Named alternative 4: Gutas reads prophecy and 'paranormal' phenomena as natural functions of the rational soul (S2, §4); if miracles are not a real exception, B would be 4."
     C_ledger:
       value: 3
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S6, locator: "IX ch. 9, pp. 633–643; X ch. 2, pp. 664–665"}, {source: S2, locator: "§4; §5"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation; written profession, so 1.0."
+      how_known: "Metaphysics of The Cure (S6) plus SEP Gutas (S2); independent agreeing sources → corroborated (P48). Written profession, so 1.0."
       rationale: "Leans to consequence. The soul's bliss after death follows from its own state: the more it contemplates, the more it is disposed to bliss (S6, p. 643), and real happiness is the perfection of the rational soul through knowledge (S2, §4). The stated exception: bodily reward and punishment at the resurrection, which he accepts on the authority of the religious law (S6, p. 633). The prophet's teaching that God rewards obedience and punishes disobedience is framed as instruction for the many in parables (S6, pp. 664–665). So 3. Under decision P7 (2026-10-02), access to bliss (open to all who work for it, with no free gift for the idle, S2, §4) is recorded here, not on E. It fits a score of 3 and does not change it."
     D_authority:
       value: 3
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S6, locator: "IX ch. 9, p. 633; X ch. 2, pp. 664–666"}, {source: S2, locator: "§4"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation, and his De anima as quoted by SEP; written profession, so 1.0."
+      how_known: "Metaphysics of The Cure (S6) plus De anima as quoted by SEP Gutas (S2); independent agreeing sources → corroborated (P48). Written profession, so 1.0."
       rationale: "Leans to reason. Demonstration decides; even the prophet knows by middle terms, since beliefs taken on authority about things known through their causes 'possess no intellectual certainty' (S2, §4). Religion gives the many images and parables, and those fit for philosophy are invited to find the truth by demonstration (S6, pp. 665–666). The stated exception: truths about the afterlife of the body, which cannot be proved and which he accepts on revelation (S6, p. 633). So 3."
     E_scope:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S6, locator: "IX ch. 8, pp. 617–618; X ch. 1, pp. 651, 657; X ch. 2, p. 664"}, {source: S10, locator: "Avicenna section"}, {source: S2, locator: "§4"}]
-      how_known: "Metaphysics of The Cure, in a scholarly translation, so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 4 (CODING_GUIDE §3), the same cap as B. Rescored under decision P7 (2026-10-02): before P7 this was 3 at 0.5, scored on the natural order and on access to knowledge and bliss, and called indirect. On the world's order his own text speaks to the axis, so the basis is now written profession."
+      how_known: "Metaphysics of The Cure (S6) plus Horten 1913 (S10) and Gutas (S2); independent agreeing sources → corroborated (P48). Written profession (ceiling 1.0). Certainty 0.7 for named alternative 4 (CODING_GUIDE §3), same cap as B. Rescored under P7 (2026-10-02): on the world's order his own text speaks to the axis."
       rationale: "Scored on the world's order (decision P7). Leans LIO with a stated, limited exception. One graded order runs from the intellects through the spheres to matter, plants, animals and humans (S6, p. 651). Providence is God knowing the order of the good, from which things flow 'in einer bestimmten Ordnung' (in a fixed order; S6, p. 618). The causes of the heavens 'nicht etwa unseretwegen ihre Wirkungen ausüben können' (cannot exert their effects for our sake; S6, p. 617), so nothing that happens is arranged for a favoured group. Answered prayer is explained inside the order of intermediate causes (S6, p. 657). The limited exception is the prophet, who must work miracles so that people see in him what they do not otherwise see (S6, p. 664). He is a rare soul whose matter suits a perfection that few human mixtures can receive (S6, X ch. 3 opening, via S10). So 3. Named alternative 4: Gutas reads prophecy and 'paranormal' phenomena as natural functions of the rational soul (S2, §4), while Horten reads the prophet as raised above nature (S10). Bliss open to all who work for it (S2, §4; S6, p. 643) used to be part of this score. Under P7 it is scored on C (see C_ledger)."
   mid_basin:
     value: true
@@ -271,16 +277,48 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Known here only through SEP's quotation of Gutas's English translation. Supports D only together with the Horten passages."
+    - text: "Providence consists in the First's knowing in Himself [the mode] of the good order, in His being in Himself a cause of goodness and perfection in terms of what is possible, and in His being satisfied with [its having the order] in the manner that has been mentioned. He would then conceive the good order in the best possible manner. Consequently, what He conceives in the best possible manner would emanate from Him in the manner—in terms of what is possible—that is most completely conducive to order."
+      cites: [{source: S13, locator: "Šefāʾ, Metaphysics, p. 415 (Marmura's English in Encyclopaedia Iranica)"}]
+      context: "Definition of providence in the Metaphysics of The Cure (Cairo IX.6). English from Marmura's own Iranica article; Arabic page matches the Cairo edition Marmura 2005 parallels. Cross-check: Horten German at S6 p. 618."
+      axes: [B_cause, A_locus, E_scope]
+      kind: "written profession (public)"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+      note: "Marmura 2005 full book borrow-restricted this pass; wording is Marmura's English of the Arabic as published in his Iranica article (S13). Supports B/A/E together with Horten S6."
+    - text: "My father was one of those who responded to the propagandist of the Egyptians and was reckoned among the Ismaʿiliyya. From them, he, as well as my brother, heard the account of the soul and the intellect in the special manner in which they speak about it and know it. Sometimes they used to discuss this among themselves while I was listening to them and understanding what they were saying, but my soul would not accept it."
+      cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 18–19)"}]
+      context: "Childhood religion in the Autobiography dictated to al-Jūzjānī."
+      axes: []
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Gohlman bilingual edition; OCR of archive.org stream cleaned against facing English. Childhood/heritage only (no LIO axis)."
+    - text: "When I reached the age of ten I had finished the Qurʾān and many works of literature, so that people were greatly amazed at me."
+      cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing p. 19)"}]
+      context: "Early schooling."
+      axes: []
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Gohlman. Childhood only."
+    - text: "I came back and read it forty times and had got to the point where I had memorized it. In spite of this I could not understand it nor its object…. [Then] I bought … Abū Naṣr al-Fārābī's book on the objects of the Metaphysics. I returned home and was quick to read it, and in no time the objects of that book became clear to me because I had got to the point of having memorized it by heart."
+      cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 32–35)"}]
+      context: "On Aristotle's Metaphysics and al-Fārābī's short book."
+      axes: []
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Gohlman. Ellipsis skips bookseller anecdote; sense unchanged. Childhood/contribution only."
   changes_over_life:
     - {value: BELOW_THRESHOLD, how_known: "No change of system is reported in S2–S5. IEP notes debate over a later 'Eastern' philosophy and mystical leanings in some late works (S4, §8); not treated as a change of system here.", note: "Evidence bears on the point but is too weak to code a change (P19)."}
-  coder_notes: "Code and axes rest mainly on Horten's 1907 German translation of the Metaphysics of The Cure, which is public domain but loose in places and adds words in parentheses; Marmura's English translation (2005) was not read. Horten's notes (not his translation) and Gutas disagree on whether prophecy is natural or supernatural; the record uses the text, not Horten's notes. Al-Ghazali says Ibn Sina taught that souls never return to bodies (S9), while the Metaphysics of The Cure accepts bodily resurrection on religious authority (S6, p. 633). Both are recorded; C and D were scored from The Cure."
+  coder_notes: "Deepen D1 2026-10-24 (queue #39): P47 on all sources; support corroborated on A–E (P48). Childhood now exact Gohlman 1974 (S12); providence English from Marmura's Iranica article quoting Šefāʾ Met. p. 415 (S13). A 1 @ 1.0 / B 3 @ 0.7 unchanged; mid_basin true @ 0.7; already dark filled — not chart-moving. Axes still rest mainly on Horten 1907 German (S6; loose in places); Marmura 2005 full English still borrow-restricted. Horten's notes vs Gutas on prophecy: record uses the text, not Horten's notes. Bodily-resurrection conflict (al-Ghazali S9 vs Cure S6 p. 633) left open. No fallacy_catalog (Jason)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Persian; his father came from Balkh", certainty: 0.7, cites: [{source: S1, locator: "heading ('Persian philosopher and scientist')"}, {source: S2, locator: "§1.1"}], how_known: "Britannica's label and SEP on the father's origin."}
-  religious_heritage_by_birth: {value: "Muslim, in a household touched by Ismaʿili preaching", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, p. 9"}, {source: S4, locator: "§1"}], how_known: "His own account and IEP, which hedges."}
+  religious_heritage_by_birth: {value: "Muslim, in a household touched by Ismaʿili preaching", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 18–19)"}, {source: S4, locator: "§1"}], how_known: "Gohlman exact wording; IEP hedges on the father's affiliation."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not applicable as an initiation rite in his setting, and no event recorded in S1–S7."}
-  childhood_catechism: {value: "Qurʾān mastered by about age 10 under teachers of the Qurʾān and letters", certainty: 1.0, cites: [{source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}, {source: S7, locator: "Autobiography, p. 9"}], how_known: "Three sources."}
+  childhood_catechism: {value: "Qurʾān finished by age 10 under teachers of the Qurʾān and letters", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing p. 19)"}, {source: S1, locator: "Life and education"}, {source: S5, locator: "Biography"}], how_known: "Gohlman plus two reference sources."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -293,7 +331,7 @@ timing:
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "yes", rationale: "His philosophy is built as demonstrative science from premises and middle terms, and even the prophet's knowledge is ordered by middle terms (S2, §3–§4). Inside nature, the stated exceptions are few (prophetic miracles, bodily resurrection on faith).", certainty: 0.5, cites: [{source: S2, locator: "§3; §4"}, {source: S5, locator: "Biography (geometry in The Cure)"}], how_known: "Coder's reading."}
-  form_acquired: {value: "childhood or adolescence", rationale: "Euclid and logic with al-Natili as a boy, and his own account of setting out premises and deductions in files before 18 (S7).", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–11"}, {source: S2, locator: "§1.1"}], how_known: "His own account and SEP."}
+  form_acquired: {value: "childhood or adolescence", rationale: "Euclid and logic with al-Natīlī as a boy, and his own account of compiling proof-files before 18 (S12).", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–31)"}, {source: S2, locator: "§1.1"}], how_known: "Gohlman plus SEP."}
   circle_present: {value: "no", rationale: "God is neither in nor outside the world and is not like any created thing (S6, X ch. 2). Emanation from God and the soul's return to God form a procession and return, not an identity of God and Nature.", certainty: 0.5, cites: [{source: S6, locator: "X ch. 2, p. 664; contents, IX"}, {source: S3, locator: "§5.4"}], how_known: "Coder's reading; a reviewer could argue 'partly' because of emanation."}
   reading: "As belief, not finding: the form is present and was acquired in adolescence, without the identity circle. Emanation is the nearest thing to a circle. The record does not test H1."
   notes: ""
@@ -305,7 +343,7 @@ institutions:
   - {value: "Kakuyid court of ʿAlāʾ al-Dawla, Isfahan", role: "physician, counsellor and scholar", years: "c. 1022–1037", kind: "patron or funder", certainty: 1.0, cites: [{source: S1, locator: "Life and education"}, {source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Three sources."}
 
 collaborators:
-  - {value: "Abu ʿAbd Allah al-Natili", relation: teacher, note: "logic, Euclid, Almagest", certainty: 0.7, cites: [{source: S7, locator: "Autobiography, pp. 9–10"}, {source: S1, locator: "Life and education"}], how_known: "Two sources."}
+  - {value: "Abū ʿAbd Allāh al-Natīlī", relation: teacher, note: "logic, Euclid, Almagest", certainty: 1.0, cites: [{source: S12, locator: "Autobiography (Gohlman 1974, English facing pp. 20–25)"}, {source: S1, locator: "Life and education"}], how_known: "Gohlman plus Britannica."}
   - {value: "Abu ʿUbayd al-Juzjani", relation: "student or assistant", note: "student, companion and scribe from about 1012; wrote the Biography continuing the Autobiography", years: "c. 1012–1037", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Two sources."}
   - {value: "al-Biruni", roster_id: al-biruni, relation: correspondent, note: "answered his questions on Aristotelian physics and cosmology", certainty: 1.0, cites: [{source: S2, locator: "§1.2"}, {source: S5, locator: "Biography"}], how_known: "Two sources."}
   - {value: "al-Farabi", roster_id: al-farabi, relation: "influenced by", note: "his short book on the aims of Aristotle's Metaphysics; his early works were written under al-Farabi's influence", certainty: 1.0, cites: [{source: S4, locator: "§1; §2"}, {source: S1, locator: "opening paragraph"}], how_known: "Two sources."}
@@ -327,13 +365,13 @@ review:
     - "God's knowledge of particulars: IEP says 'God only knows kinds of existents and not individuals'; Horten's chapter title says God knows all individual things in their causes, and the text says he knows them insofar as they are universal (S6, VIII ch. 6, pp. 523–524)."
     - "Prophecy: Gutas (S2) says the divine 'flow' of knowledge 'has nothing mystical about it'; Horten (S10) reads the prophet's soul as supernatural."
     - "S6 chapter numbers are Horten's; they differ from the Cairo edition used by SEP (Horten IX ch. 8 = Cairo IX.6). The afterlife chapter is headed 'Zehntes Kapitel' in the text but listed as '9. Kapitel' in Horten's contents."
-    - "S7 (Arberry) was read in a poor OCR scan; all S7 material is paraphrased and page numbers are approximate."
+    - "S7 (Arberry) was read in a poor OCR scan; childhood quotes this pass use Gohlman 1974 (S12) instead. S7 kept for provenance."
     - "Britannica's 'Top Questions' box (S1) is AI-generated and is not cited (decision P26)."
+    - "Marmura 2005 The Metaphysics of The Healing (BYU) full English still borrow-restricted on Internet Archive this pass; providence English taken from Marmura's own Encyclopaedia Iranica article (S13) quoting Šefāʾ Met. p. 415."
   open_questions:
-    - "Read Marmura's English translation of the Metaphysics of The Cure (2005) to check the Horten passages and get Cairo chapter numbers."
-    - "Read Gohlman's edition of the Autobiography (1974) for exact quotations on his schooling and religion."
-    - "B_cause 3 or 4: decide whether prophetic miracles, explained as powers of the soul, count as a stated exception."
-    - "Resolve the bodily-resurrection conflict between The Cure and his other works (al-Ghazali's charge)."
+    - "Page-check Marmura 2005 full English (BYU) against Horten passages for Cairo chapter numbers and wording (providence IX.6; afterlife; prophecy X.2)."
+    - "B_cause 3 or 4: decide whether prophetic miracles, explained as powers of the soul (Gutas S2 §4), count as a stated exception — still open; deepen kept 3 @ 0.7."
+    - "Resolve the bodily-resurrection conflict between The Cure (accepts on sharīʿa, S6 p. 633) and al-Ghazali's charge (S9)."
 
 sources:
   - id: S1
@@ -344,6 +382,7 @@ sources:
     url: "https://www.britannica.com/biography/Avicenna"
     accessed: 2026-10-02
     reliability_note: "Signed article by a historian of medicine; fact-checked by Britannica editors. Its AI-generated Top Questions box is not cited (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -352,8 +391,9 @@ sources:
     year: 2025
     citation: "Gutas, Dimitri. \"Ibn Sina [Avicenna].\" Stanford Encyclopedia of Philosophy, first published 15 September 2016, substantive revision 31 October 2025. https://plato.stanford.edu/entries/ibn-sina/."
     url: "https://plato.stanford.edu/entries/ibn-sina/"
-    accessed: 2026-10-02
-    reliability_note: "Peer-reviewed entry by a leading Avicenna scholar. Quotes his own translations of Ibn Sina."
+    accessed: 2026-10-24
+    reliability_note: "Peer-reviewed entry by a leading Avicenna scholar. Quotes his own translations of Ibn Sina. Re-read this deepen."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S3
     type: tertiary
@@ -362,8 +402,9 @@ sources:
     year: 2026
     citation: "Lizzini, Olga. \"Ibn Sina's Metaphysics.\" Stanford Encyclopedia of Philosophy, first published 2 December 2015, substantive revision 9 June 2026. https://plato.stanford.edu/entries/ibn-sina-metaphysics/."
     url: "https://plato.stanford.edu/entries/ibn-sina-metaphysics/"
-    accessed: 2026-10-02
-    reliability_note: "Peer-reviewed reference entry."
+    accessed: 2026-10-24
+    reliability_note: "Peer-reviewed reference entry. Re-read this deepen."
+    source_quality: "reference entry"
     used_for: [contribution, worldview, lane_b, collaborators]
   - id: S4
     type: tertiary
@@ -373,6 +414,7 @@ sources:
     url: "https://iep.utm.edu/avicenna-ibn-sina/"
     accessed: 2026-10-02
     reliability_note: "Peer-reviewed reference entry."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S5
     type: tertiary
@@ -383,6 +425,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Avicenna/"
     accessed: 2026-10-02
     reliability_note: "University reference archive; strongest on his mathematics and astronomy."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S6
     type: primary
@@ -393,6 +436,7 @@ sources:
     url: "https://archive.org/details/diemetaphysikavi00avicuoft"
     accessed: 2026-10-02
     reliability_note: "Complete German translation of the Metaphysics (Ilāhiyyāt) of The Cure, his own published work; public domain. Horten's translation is loose in places and his parentheses and notes are his own. Page numbers from the printed page markers in the OCR."
+    source_quality: "primary / own words"
     used_for: [worldview, timing, lane_b]
   - id: S7
     type: primary
@@ -402,7 +446,8 @@ sources:
     citation: "Avicenna on Theology. Trans. A. J. Arberry. London: John Murray, 1951 (Wisdom of the East). Autobiography of Avicenna, pp. 9–13. Scan: Indira Gandhi National Centre for the Arts, https://archive.org/details/in.gov.ignca.7274."
     url: "https://archive.org/details/in.gov.ignca.7274"
     accessed: 2026-10-02
-    reliability_note: "His own account of his early life, dictated to al-Juzjani. Read in a poor OCR text, so only paraphrased; Gutas warns the Autobiography is shaped to make a philosophical point (S2, S4)."
+    reliability_note: "His own account of his early life, dictated to al-Juzjani. Read in a poor OCR text (Arberry). Childhood exact quotes this pass use Gohlman 1974 (S12) instead. Gutas warns the Autobiography is shaped to make a philosophical point (S2, S4)."
+    source_quality: "archive scan (OCR only)"
     used_for: [basics, childhood, heritage, lane_b, collaborators]
   - id: S8
     type: tertiary
@@ -411,8 +456,9 @@ sources:
     year: 2025
     citation: "McGinnis, Jon. \"Ibn Sina's Natural Philosophy.\" Stanford Encyclopedia of Philosophy, first published 29 July 2016, substantive revision 20 March 2025. https://plato.stanford.edu/entries/ibn-sina-natural/."
     url: "https://plato.stanford.edu/entries/ibn-sina-natural/"
-    accessed: 2026-10-02
-    reliability_note: "Peer-reviewed reference entry."
+    accessed: 2026-10-24
+    reliability_note: "Peer-reviewed reference entry. Re-read this deepen."
+    source_quality: "reference entry"
     used_for: [basics, worldview]
   - id: S9
     type: tertiary
@@ -423,6 +469,7 @@ sources:
     url: "https://plato.stanford.edu/entries/al-ghazali/"
     accessed: 2026-10-02
     reliability_note: "Peer-reviewed reference entry."
+    source_quality: "reference entry"
     used_for: [worldview, collaborators, review]
   - id: S10
     type: secondary
@@ -433,6 +480,7 @@ sources:
     url: "https://archive.org/details/textezudemstreit00hortuoft"
     accessed: 2026-10-02
     reliability_note: "Older scholarly reading that treats the prophet as supernatural; used only to show the disagreement with Gutas."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview, review]
   - id: S11
     type: secondary
@@ -442,12 +490,36 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S12
+    type: primary
+    kind: "scholarly edition"
+    author: "Ibn Sina / William E. Gohlman"
+    year: 1974
+    citation: "Gohlman, William E. The Life of Ibn Sina: A Critical Edition and Annotated Translation. Albany: State University of New York Press, 1974. Arabic–English facing Autobiography (dictated to al-Jūzjānī) and Biography. Internet Archive: https://archive.org/details/lifeofibnsinacri0000avic."
+    url: "https://archive.org/details/lifeofibnsinacri0000avic"
+    accessed: 2026-10-24
+    reliability_note: "Scholarly bilingual critical edition of his Autobiography. Preferred over Arberry (S7) for exact childhood quotations this pass. Gutas warns the Autobiography is shaped to make a philosophical point (S2, S4)."
+    source_quality: "primary / own words"
+    used_for: [basics, childhood, heritage, lane_b, collaborators, worldview]
+  - id: S13
+    type: tertiary
+    kind: encyclopedia
+    author: "Michael E. Marmura"
+    year: 1987
+    citation: "Marmura, Michael E. 'AVICENNA iv. Metaphysics.' Encyclopaedia Iranica, published 15 December 1987, last updated 27 October 2017. https://www.iranicaonline.org/articles/avicenna-iv/."
+    url: "https://www.iranicaonline.org/articles/avicenna-iv/"
+    accessed: 2026-10-24
+    reliability_note: "Signed reference article by the translator of the Metaphysics of The Healing (2005). Quotes the providence definition from Šefāʾ Metaphysics p. 415 in Marmura's own English; used because the 2005 BYU volume was borrow-restricted this pass."
+    source_quality: "reference entry"
+    used_for: [worldview]
+
 ---
 
 # Ibn Sina (Avicenna)
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored; mid_basin true under the P4 test.
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; all five LIO axes scored with support corroborated (P48); mid_basin true under the P4 test. Deepen D1 2026-10-24.
 
 ## Summary
 
@@ -466,17 +538,17 @@ He grew up in Bukhara, where his father served the Samanids [S2, §1.1]. He stud
 
 ## Childhood and education
 
-He learned the Qurʾān by about 10 [S1; S5]. His own account says his father and brother listened to Ismaʿili missionaries, and that he listened but did not agree [S7, p. 9]. He learned Indian arithmetic from a vegetable seller, and logic and the first figures of Euclid from al-Natili, then went on alone [S7, pp. 9–10]. He began medicine at about 13 [S5].
+He finished the Qurʾān by age 10 [S12]. His own Autobiography (Gohlman) says his father was reckoned among the Ismaʿiliyya and discussed soul-and-intellect teaching with his brother; Ibn Sina listened but his soul would not accept it [S12]. He learned Indian calculation from a vegetable seller, and logic and the first figures of Euclid from al-Natīlī, then went on alone [S12]. He began medicine in his teens [S5; S12].
 
 ## Adult working worldview
 
 God is the Necessary Existent, not in the world or outside it, and not like any earthly thing [S3, §4; S6, p. 664]. Providence is the order of the good that flows from God's thinking [S6, p. 618]. Everything comes to be through other causes [S6, p. 657]. A prophet must work miracles [S6, p. 664]. Bliss after death follows the soul's state of knowledge; bodily resurrection is accepted on the religious law [S6, pp. 633, 643]. The prophet teaches the many in parables [S6, p. 665]. Al-Ghazali judged three of his teachings to be unbelief [S9, §3].
 
-Coding: CLASS_THEISM at 1.0. A 1, C 3, D 3 at 1.0; B 3 at 0.7; E 3 at 0.7, scored on the world's order (decision P7): the heavens do not act "for our sake" [S6, p. 617], and the prophet is the limited exception [S6, p. 664]. mid_basin true at 0.7.
+Coding: CLASS_THEISM at 1.0. A 1 @ 1.0, B 3 @ 0.7, C 3 @ 1.0, D 3 @ 1.0, E 3 @ 0.7 — all support corroborated (P48). Providence English: the First knows the good order and is its cause [S13, Šefāʾ Met. p. 415]. Heavens do not act "for our sake" [S6, p. 617]; prophet is the limited miracle exception [S6, p. 664]. mid_basin true at 0.7.
 
 ## Heritage (context only)
 
-Persian, with a father from Balkh; a Muslim household touched by Ismaʿili preaching [S1; S2; S7]. Heritage is recorded for context only. It is not a worldview code.
+Persian, with a father from Balkh; a Muslim household touched by Ismaʿili preaching [S1; S2; S12]. Heritage is recorded for context only. It is not a worldview code.
 
 ## Timing
 
@@ -488,12 +560,12 @@ Everything in this section is Lane B: labeled belief, not a finding. The form (d
 
 ## Open questions
 
-- Check the Horten passages against Marmura's English translation.
-- Read Gohlman's Autobiography edition for exact quotations.
-- B_cause 3 or 4.
-- The bodily-resurrection conflict between The Cure and al-Ghazali's charge.
+- Page-check Marmura 2005 full English (BYU) against Horten (providence IX.6; afterlife; prophecy X.2).
+- B_cause 3 or 4 (Gutas naturalizes miracles).
+- Bodily-resurrection conflict (Cure vs al-Ghazali).
 
 ## Research log
 
 - 2026-10-02: Read Britannica (S1), SEP entries by Gutas (S2), Lizzini (S3), McGinnis (S8) and Griffel (S9), IEP (S4) and MacTutor (S5). Read the providence, prayer, afterlife and prophecy chapters of the Metaphysics of The Cure in Horten's 1907 German translation (S6), and the Autobiography in Arberry's 1951 translation through a poor OCR scan (S7, paraphrased only). Horten 1913 (S10) for an older reading. Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Marmura's and Gohlman's translations were not read.
 - 2026-10-02 (P7): E_scope rechecked on the world's order from the texts already cited (S2, S6, S10); no new sources or quotations. The score stays 3; the basis moves to written profession at 0.7.
+- 2026-10-24 (deepen D1, queue #39): P47 source_quality on S1–S13. Read Gohlman 1974 Autobiography (S12) for exact childhood quotes; Marmura Encyclopaedia Iranica metaphysics (S13) for English providence (Šefāʾ Met. p. 415). Re-read Gutas, Lizzini, McGinnis SEP. A/B scores unchanged; support corroborated on A–E. Marmura 2005 full volume still borrow-restricted. No fallacy_catalog.
