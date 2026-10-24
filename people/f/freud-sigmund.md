@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #129, F 4, rank 130). P47 source_quality on S1–S9. P50: Wikipedia EN (S9) dual bio agrees birth 1856-05-06 Freiberg / death 1939-09-23 London with Britannica. P48: A_locus support single→corroborated (main cites now S3+S4+S5+S6+S8 so alt BELOW's S5+S4 no longer spoil; Pfister 9 Oct 1918 in-span letter 'completely godless Jew' as S8 scholarly Basic Books 1963 via IA OCR). B_cause support single→corroborated at honest 3 @0.5 (S3 Psychopathology + S4 Future of Illusion ch. III nature pitiless / inward necessity / gods withdraw; no P16 lift — still no exceptionless order; X3/P35 unchanged: not scientist for B). primary ATHE @0.7 held (S8 strengthens). mid false (A≥3); plotted faded→filled (hollow→filled). Prefer SE/print: Pfister letters print edition used; Gutenberg web copies of Brill/Robson-Scott/Riviere kept (SE not reachable this pass). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (FR12) the seven statements relabelled scholarly edition -> primary transcription (Gutenberg web copies of the Brill, Robson-Scott and Riviere translations; not the Strachey Standard Edition); 0.7 cap unchanged. (FR13) S4 imprint corrected from the title page: Horace Liveright and the Institute of Psycho-Analysis, 1928 (International Psycho-Analytical Library No. 15; printed by R. & R. Clark, Edinburgh), not the Gutenberg header's 'Edinburgh: Horace Liverwright'. (Note) 1900 named as the alternative start (title page; IEP). Ruling X3 (v8's call on the auditor's advice): not a scientist for B (recorded under P35). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 130). Basics from Britannica (Martin Evan Jay; Britannica Editors) and IEP (Stephen P. Thornton). Worldview from his own published works in authorized English translations (Project Gutenberg web copies, 0.7 cap): The Psychopathology of Everyday Life (Brill, 1914) and Totem and Taboo (Brill) inside the span; The Future of an Illusion (Robson-Scott, 1928) and Civilization and Its Discontents (Riviere, 1930) after it (P1 cap 0.5). Not a scientist for B (psychoanalysis an interpretive theory of the psyche, P35 addendum, Jung precedent; RQ-X3). primary_system ATHE (0.7); A 4 (0.7, alt BELOW_THRESHOLD); B 3 (0.5, alt 4; P41 extension); C 4 (0.5); D 4 (0.5); E 4 (0.5, alt 3); mid_basin false (A ≥ 3, P10). Span 1899–1923 (0.7). Plotted (faded). Draft, not reviewed."}
 
@@ -32,11 +33,11 @@ identity:
 
 basics:
   birth:
-    date: {value: "1856-05-06", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Born)"}, {source: S2, locator: "§1 Life (year only)"}], how_known: "Britannica gives the day; IEP agrees on 1856."}
-    place: {value: "Freiberg, Moravia", modern_name: "Příbor, Czech Republic", polity_then: "Austrian Empire", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Born)"}, {source: S2, locator: "§1 Life ('Frieberg, Moravia')"}], how_known: "Both sources."}
+    date: {value: "1856-05-06", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Born)"}, {source: S2, locator: "§1 Life (year only)"}, {source: S9, locator: "infobox birth_date"}], how_known: "Britannica gives the day; IEP agrees on 1856; Wikipedia EN agrees (P50 dual bio)."}
+    place: {value: "Freiberg, Moravia", modern_name: "Příbor, Czech Republic", polity_then: "Austrian Empire", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Born)"}, {source: S2, locator: "§1 Life ('Frieberg, Moravia')"}, {source: S9, locator: "infobox birth_place (Freiberg in Mähren)"}], how_known: "Britannica, IEP, and Wikipedia EN (P50)."}
   death:
-    date: {value: "1939-09-23", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life (year only)"}], how_known: "Britannica gives the day; IEP agrees on 1939."}
-    place: {value: "London", modern_name: "London, England, United Kingdom", polity_then: "United Kingdom", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life ('exiled in England')"}], how_known: "Both sources."}
+    date: {value: "1939-09-23", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life (year only)"}, {source: S9, locator: "infobox death_date"}], how_known: "Britannica gives the day; IEP agrees on 1939; Wikipedia EN agrees (P50 dual bio)."}
+    place: {value: "London", modern_name: "London, England, United Kingdom", polity_then: "United Kingdom", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts (Died)"}, {source: S2, locator: "§1 Life ('exiled in England')"}, {source: S9, locator: "infobox death_place (Hampstead, London)"}], how_known: "Britannica, IEP, and Wikipedia EN (P50)."}
   first_lasting_contribution_year: {value: 1899, certainty: 0.7, cites: [{source: S1, locator: "Top Questions ('The Interpretation of Dreams (1899/1900)')"}, {source: S2, locator: "§1 Life ('In 1900 ... generally regarded as his greatest work')"}], how_known: "The Interpretation of Dreams, published late 1899 with 1900 on the title page; Britannica writes 1899/1900, IEP 1900 (P30 dating rule: first publication). Alternative start 1900 (the title-page year, and IEP's date; age 44). Alternative 1895 (Studies on Hysteria with Breuer, IEP: the technique's 'classical expression'), not listed because it is joint and its cathartic method was later given up (S2 §1)."}
   era_bucket: {value: "1850 to 1949", certainty: 1.0, cites: [{source: S1, locator: "Top Questions"}, {source: S2, locator: "§1 Life"}], how_known: "1899 (P2); 1895 or 1900 give the same bucket."}
   region_of_birth: {value: "Eastern Europe", certainty: 1.0, cites: [{source: S1, locator: "Quick Facts ('now Příbor, Czech Republic')"}], how_known: "Czechia is Eastern Europe (P3; Gödel precedent)."}
@@ -93,9 +94,9 @@ worldview:
     value: ATHE
     basis: written_profession
     certainty: 0.7
-    cites: [{source: S5, locator: "ch. IV"}, {source: S3, locator: "ch. XII (superstition section)"}, {source: S6, locator: "ch. II"}, {source: S4, locator: "ch. VI"}]
-    rationale: "Inside the span, his published works explain God as a projection: 'god at bottom is nothing but an exalted father' (Totem and Taboo, 1913) and 'a large portion of the mythological conception of the world which reaches far into the most modern religions is nothing but psychology projected into the outer world', so that the myths 'of God, of good and evil, of immortality' become meta-psychology (Psychopathology, 1914 trans.). After the span the denial is explicit: the Providence of 'the ordinary man' is 'so patently infantile, so incongruous with reality' and 'this religion is not tenable' (Civilization, 1930). ATHE's naturalism fits; no other code named. Capped at 0.7 because every text is read in a web copy of an English translation (§7)."
-    how_known: "Own published works; in-span texts imply the denial, post-span texts state it (P1 cap 0.5 for those alone)."
+    cites: [{source: S5, locator: "ch. IV"}, {source: S3, locator: "ch. XII (superstition section)"}, {source: S8, locator: "letter to Pfister, 9 Oct 1918, p. 63"}, {source: S6, locator: "ch. II"}, {source: S4, locator: "ch. VI"}]
+    rationale: "Inside the span, his published works explain God as a projection: 'god at bottom is nothing but an exalted father' (Totem and Taboo, 1913) and 'a large portion of the mythological conception of the world which reaches far into the most modern religions is nothing but psychology projected into the outer world', so that the myths 'of God, of good and evil, of immortality' become meta-psychology (Psychopathology, 1914 trans.). In-span private letter to Oskar Pfister, 9 Oct 1918, self-labels: psychoanalysis 'had to wait for a completely godless Jew' (S8). After the span the denial is explicit: the Providence of 'the ordinary man' is 'so patently infantile, so incongruous with reality' and 'this religion is not tenable' (Civilization, 1930). ATHE's naturalism fits; no other code named. Capped at 0.7 because the scored public texts are read in web copies of English translations (§7); the Pfister letter is a scholarly English edition via OCR."
+    how_known: "Own published works plus in-span letter; in-span texts imply the denial and self-label godless; post-span texts state it (P1 cap 0.5 for those alone)."
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
     - {code: ATHE, reason: "Chosen: God as a projected father; religion 'not tenable'."}
@@ -106,20 +107,22 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S5, locator: "ch. IV"}, {source: S6, locator: "ch. II"}]
-      rationale: "No separate God: 'god at bottom is nothing but an exalted father' (1913, in span); the answering Providence is 'so incongruous with reality' that 'this religion is not tenable' (1930, after span). Named alternative BELOW_THRESHOLD: the 1913 passage allows 'other origins and meanings of god upon which psychoanalysis can throw no light', and in 1927 he says of religious doctrines 'neither can they be refuted'. Web copy, so 0.7 at most."
-      how_known: "Own published works (translations, web copies)."
+      support: corroborated
+      cites: [{source: S3, locator: "ch. XII, superstition section (index: p. 306)"}, {source: S5, locator: "ch. IV"}, {source: S8, locator: "letter to Pfister, 9 Oct 1918, p. 63"}, {source: S4, locator: "ch. VI"}, {source: S6, locator: "ch. II"}]
+      rationale: "No separate God: myths of God are 'psychology projected into the outer world' (Psychopathology, in span); 'god at bottom is nothing but an exalted father' (Totem and Taboo, 1913, in span); in-span letter to Pfister self-labels 'a completely godless Jew' (9 Oct 1918). Post-span: Providence 'so incongruous with reality' that 'this religion is not tenable' (Civilization, 1930); Future of an Illusion treats doctrines as illusions (1927). Named alternative BELOW_THRESHOLD: the 1913 passage allows 'other origins and meanings of god upon which psychoanalysis can throw no light', and in 1927 he says of religious doctrines 'neither can they be refuted'. Public texts web copies → 0.7 at most; Pfister is scholarly edition OCR."
+      how_known: "Own published works (translations) plus in-span letter (Basic Books 1963 via IA OCR)."
       alternatives:
         - {value: BELOW_THRESHOLD, note: "Hedges in 1913 ('other origins') and 1927 ('neither can they be refuted').", cites: [{source: S5, locator: "ch. IV"}, {source: S4, locator: "ch. VI"}]}
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S3, locator: "ch. XII, p. 278; superstition section (index: p. 306)"}]
-      rationale: "Scored on his account of nature (P6); not a scientist for B (P35 addendum: interpretive theory of the psyche, Jung precedent; ruling X3). He holds that 'determinism reaches farther than we suppose' and treats the supernatural as projection ('psychology projected into the outer world'), rejecting omens; but he states no exceptionless order, and says he believes 'in outer (real) chance', meaning coincidence. Rejecting intervention without a stated exceptionless order is B 3 at 0.5, alternative 4 (P41 extension, Tolstoy precedent)."
-      how_known: "One in-span book (translation, web copy)."
+      support: corroborated
+      cites: [{source: S3, locator: "ch. XII, p. 278; superstition section (index: p. 306)"}, {source: S4, locator: "ch. III (nature pitiless; inward necessity; gods withdraw)"}]
+      rationale: "Scored on his account of nature (P6); not a scientist for B (P35 addendum: interpretive theory of the psyche, Jung precedent; ruling X3 — psyche working-theory must not inflate B). In span (Psychopathology): 'determinism reaches farther than we suppose'; supernatural as projection; rejects omens; believes 'in outer (real) chance'. Post-span (Future of an Illusion ch. III, P1): nature 'sublime, pitiless, inexorable'; 'natural phenomena develop of themselves from inward necessity' and 'the gods withdraw'; Providence / miracle-intervention framed as wish-illusion, not accepted as fact. Two distinct works agree on rejecting supernatural intervention without stating exceptionless natural law → B 3 corroborated at honest 0.5 (no P16 lift to 4; alt 4 under P41 extension for the 'determinism farther' line alone)."
+      how_known: "In-span Psychopathology (web copy) plus post-span Future of an Illusion (web copy, P1)."
       alternatives:
-        - {value: 4, note: "P41 extension; 'determinism reaches farther than we suppose'.", cites: [{source: S3, locator: "ch. XII, p. 278"}]}
+        - {value: 4, note: "P41 extension; 'determinism reaches farther than we suppose' (S3) if read as near-exceptionless order.", cites: [{source: S3, locator: "ch. XII, p. 278"}]}
     C_ledger:
       value: 4
       basis: written_profession
@@ -183,6 +186,15 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Brill's authorized translation (Kegan Paul, London), Project Gutenberg #41214 from Google scans; web copy (0.7 cap). Dated by the German book (S1: 1913)."
+    - text: "Incidentally, why was it that none of all the pious ever discovered psycho-analysis? Why did it have to wait for a completely godless Jew?"
+      cites: [{source: S8, locator: "letter to Oskar Pfister, Vienna, 9 Oct 1918 (p. 63 in Basic Books 1963)"}]
+      date: "1918-10-09"
+      context: "Letter to the Swiss pastor and psychoanalyst Oskar Pfister, after reading Pfister's education booklet; Freud contrasts Pfister's religious sublimation with his own position. Pfister's 29 Oct 1918 reply disputes 'godless'."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "Psychoanalysis and Faith (Meng & E. L. Freud eds.; Mosbacher trans.), Basic Books 1963, via Internet Archive djvu OCR (psychoanalysisfa00freu). In span (1899–1923). Self-label strengthens ATHE / A 4; Lane A public-record axis also rests on published books."
     - text: "Of the reality value of most of them we cannot judge; just as they cannot be proved, neither can they be refuted. We still know too little to approach them critically. The riddles of the universe only reveal themselves slowly to our enquiry, to many questions science can as yet give no answer; but scientific work is our only way to the knowledge of external reality. Again, it is merely illusion to expect anything from intuition or trance"
       cites: [{source: S4, locator: "ch. VI"}]
       date: "1927"
@@ -201,6 +213,15 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "As above."
+    - text: "It is observed that natural phenomena develop of themselves from inward necessity; without doubt the gods are the lords of nature: they have arranged it thus and now they can leave it to itself. Only occasionally, in the so-called miracles, do they intervene in its course, as if to protest that they have surrendered nothing of their original sphere of power. ... And the more autonomous nature becomes and the more the gods withdraw from her, the more earnestly are all expectations concentrated on the third task assigned to them"
+      cites: [{source: S4, locator: "ch. III"}]
+      date: "1927"
+      context: "The Future of an Illusion, ch. III, on the historical shifting of religion as culture observes law in nature; earlier in the chapter nature rises 'sublime, pitiless, inexorable'. Freud frames miracle-intervention and Providence as the religious response he goes on to call illusion (ch. VI)."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Robson-Scott 1928, Gutenberg #76774; web copy. After the span (P1). Used to corroborate B 3 (reject intervention / gods withdraw), not to lift certainty."
     - text: "The whole thing is so patently infantile, so incongruous with reality, that to one whose attitude to humanity is friendly it is painful to think that the great majority of mortals will never be able to rise above this view of life. It is even more humiliating to discover what a large number of those alive to-day, who must see that this religion is not tenable, yet try to defend it inch by inch"
       cites: [{source: S6, locator: "ch. II"}]
       date: "1930"
@@ -211,7 +232,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Riviere's translation (1930), Project Gutenberg #78221; web copy. After the span (P1 cap 0.5)."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: 1899 (The Interpretation of Dreams; Britannica 1899/1900, IEP 1900) to 1923 (The Ego and the Id, IEP's 'famous tripartite model'). Alternative start 1895 (Studies on Hysteria, joint with Breuer); alternative end 1930 if Civilization and Its Discontents is counted lasting (Britannica lists it among his writings without calling it lasting); either way the values stand. Not a scientist for B: IEP reports the critics' case that the theory is not falsifiable and calls it a 'theoretical model' (§5, §7a), so it falls under the P35 addendum's interpretive theories (Jung), though Freud called it a science (ruling X3, v8's call on the auditor's advice: Freud is not a scientist; not result-changing, as a scientist he would also get B 3 at 0.5, alt 4). Alternative start 1900 (title page; IEP). Everything is read in English translations on Project Gutenberg (web copies, 0.7 cap); German originals not read. Lead: the 1918 letter to Pfister ('a completely godless Jew'), not read. Plotted (faded)."
+  coder_notes: "Coder's call on the span: 1899 (The Interpretation of Dreams; Britannica 1899/1900, IEP 1900) to 1923 (The Ego and the Id, IEP's 'famous tripartite model'). Alternative start 1895 (Studies on Hysteria, joint with Breuer); alternative end 1930 if Civilization and Its Discontents is counted lasting (Britannica lists it among his writings without calling it lasting); either way the values stand. Not a scientist for B: IEP reports the critics' case that the theory is not falsifiable and calls it a 'theoretical model' (§5, §7a), so it falls under the P35 addendum's interpretive theories (Jung), though Freud called it a science (ruling X3, v8's call on the auditor's advice: Freud is not a scientist; not result-changing, as a scientist he would also get B 3 at 0.5, alt 4). Alternative start 1900 (title page; IEP). Public texts read in English translations on Project Gutenberg (web copies, 0.7 cap); German originals and Strachey Standard Edition not reached this pass. Pfister 9 Oct 1918 letter read in Basic Books 1963 scholarly English edition via IA OCR (S8). Deepen D1: A and B both corroborated (P48) → hollow→filled; B certainty held at 0.5 (honest; no P16 lift). Plotted (faded, filled)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -254,11 +275,12 @@ review:
     - {value: "Scientific status of psychoanalysis disputed (Popper's falsifiability criterion; coherence of its causal claims; efficacy of therapy)", certainty: 0.7, cites: [{source: S2, locator: "§7a–d"}], how_known: "IEP."}
     - {value: "Cocaine advocacy in the 1880s led to a friend's addiction and 'tarnished his medical reputation for a time'", certainty: 0.7, cites: [{source: S1, locator: "'Early life and training'"}], how_known: "Britannica."}
   data_quality_flags:
-    - "All of his texts read in English translations on Project Gutenberg (web copies, 0.7 cap)."
+    - "Public texts read in English translations on Project Gutenberg (web copies, 0.7 cap); Strachey Standard Edition / German originals not reached this pass."
     - "The Psychopathology is dated 1901 (IEP) or 1904 (Britannica); read in the 1914 translation of a later edition."
+    - "Pfister letters read via Internet Archive djvu OCR of Basic Books 1963 (scholarly edition; OCR artifacts possible)."
   open_questions:
     - "Settled by ruling X3: not a scientist for B (interpretive, like Jung)."
-    - "Read the German originals and the 1918 Pfister letter."
+    - "German originals / Strachey Standard Edition still unread (prefer SE/print when reachable)."
 
 sources:
   - id: S1
@@ -268,6 +290,7 @@ sources:
     citation: "Jay, Martin Evan, and Britannica Editors. \"Sigmund Freud.\" Encyclopaedia Britannica (updated 1 October 2026). https://www.britannica.com/biography/Sigmund-Freud. Read live 2026-10-19."
     url: "https://www.britannica.com/biography/Sigmund-Freud"
     accessed: 2026-10-19
+    source_quality: "reference entry"
     reliability_note: "Signed article; the fetched text stopped inside 'Early life and training'. Quick Facts and body cited; the Top Questions answers on education and works are cited only where IEP or the body agrees."
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review]
   - id: S2
@@ -277,6 +300,7 @@ sources:
     citation: "Thornton, Stephen P. \"Sigmund Freud (1856—1939).\" Internet Encyclopedia of Philosophy. https://iep.utm.edu/freud/"
     url: "https://iep.utm.edu/freud/"
     accessed: 2026-10-19
+    source_quality: "reference entry"
     reliability_note: "Signed peer-reviewed encyclopedia article (University of Limerick); no revision date shown."
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review, lane_b]
   - id: S3
@@ -286,7 +310,8 @@ sources:
     citation: "Freud, Sigmund. Psychopathology of Everyday Life. Trans. A. A. Brill. New York: Macmillan, 1914. Project Gutenberg eBook #67332. https://www.gutenberg.org/ebooks/67332"
     url: "https://www.gutenberg.org/ebooks/67332"
     accessed: 2026-10-19
-    reliability_note: "Authorized translation; Gutenberg transcription without page images (web copy, 0.7 cap); page numbers from the book's index."
+    source_quality: "unofficial web copy"
+    reliability_note: "Authorized translation; Gutenberg transcription without page images (web copy, 0.7 cap); page numbers from the book's index. Prefer Strachey SE when reachable."
     used_for: [worldview, timing]
   - id: S4
     type: primary
@@ -295,6 +320,7 @@ sources:
     citation: "Freud, Sigmund. The Future of an Illusion. Trans. W. D. Robson-Scott. The International Psycho-Analytical Library, No. 15. Horace Liveright and the Institute of Psycho-Analysis, 1928 (title page: MCMXXVIII; printed by R. & R. Clark, Edinburgh). Project Gutenberg eBook #76774. https://www.gutenberg.org/ebooks/76774"
     url: "https://www.gutenberg.org/ebooks/76774"
     accessed: 2026-10-19
+    source_quality: "unofficial web copy"
     reliability_note: "Translation read by Strachey (translator's note); Gutenberg transcription (web copy). Imprint from the transcribed title page (the Gutenberg header's 'Edinburgh: Horace Liverwright' is wrong; batch X audit, FR13). Not the Strachey Standard Edition. Cited by chapter."
     used_for: [worldview, contribution]
   - id: S5
@@ -304,6 +330,7 @@ sources:
     citation: "Freud, Sigmund. Totem and Taboo: Resemblances between the Psychic Lives of Savages and Neurotics. Authorized English translation by A. A. Brill. London: Kegan Paul, Trench, Trubner. Project Gutenberg eBook #41214. https://www.gutenberg.org/ebooks/41214"
     url: "https://www.gutenberg.org/ebooks/41214"
     accessed: 2026-10-19
+    source_quality: "unofficial web copy"
     reliability_note: "Proofread transcription (Distributed Proofreaders) from Google scans; no page numbers kept; cited by chapter (web copy)."
     used_for: [worldview, timing]
   - id: S6
@@ -313,6 +340,7 @@ sources:
     citation: "Freud, Sigmund. Civilization and Its Discontents. Trans. Joan Riviere. New York: Jonathan Cape & Harrison Smith, 1930. Project Gutenberg eBook #78221. https://www.gutenberg.org/ebooks/78221"
     url: "https://www.gutenberg.org/ebooks/78221"
     accessed: 2026-10-19
+    source_quality: "unofficial web copy"
     reliability_note: "Authorized translation; Gutenberg transcription (web copy). Cited by chapter."
     used_for: [worldview, contribution]
   - id: S7
@@ -322,8 +350,29 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
+    source_quality: "study roster"
     reliability_note: "Study's own roster."
     used_for: [identity, review]
+  - id: S8
+    type: primary
+    kind: letter
+    author: "Sigmund Freud; Oskar Pfister; eds. Heinrich Meng and Ernst L. Freud; trans. Eric Mosbacher"
+    citation: "Freud, Sigmund, and Oskar Pfister. Psychoanalysis and Faith: The Letters of Sigmund Freud and Oskar Pfister. Edited by Heinrich Meng and Ernst L. Freud. Translated by Eric Mosbacher. New York: Basic Books, 1963. Internet Archive item psychoanalysisfa00freu (djvu OCR). Letter Freud to Pfister, Berggasse 19, Vienna, 9 Oct 1918 (p. 63)."
+    url: "https://archive.org/details/psychoanalysisfa00freu"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Scholarly English edition of the correspondence; read via Internet Archive djvu OCR (OCR spacing artifacts; wording of the 'completely godless Jew' sentence clear). Prefer page-image check against a library copy when available. In span."
+    used_for: [worldview]
+  - id: S9
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: 'Wikipedia contributors. "Sigmund Freud." Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Sigmund_Freud. Read live 2026-10-24 (infobox birth_date / death_date / birth_place / death_place).'
+    url: "https://en.wikipedia.org/wiki/Sigmund_Freud"
+    accessed: 2026-10-24
+    source_quality: "reference entry"
+    reliability_note: "Used for dual bio P50 (birth/death agree with Britannica); worldview scores do not rest on Wikipedia alone."
+    used_for: [basics, identity]
 ---
 
 # Sigmund Freud
@@ -332,7 +381,7 @@ sources:
 
 ## Summary
 
-Sigmund Freud (1856–1939), Austrian neurologist and founder of psychoanalysis [S1, S2]. Draft: primary_system ATHE (0.7); A 4 (0.7); B 3 (0.5, alt 4); mid_basin false. Plotted (faded).
+Sigmund Freud (1856–1939), Austrian neurologist and founder of psychoanalysis [S1, S2, S9]. Draft: primary_system ATHE (0.7); A 4 (0.7, corroborated); B 3 (0.5, alt 4, corroborated); mid_basin false. Plotted (faded, filled).
 
 ## Life and work
 
@@ -348,7 +397,7 @@ Jewish family; Sperl Gymnasium; medicine at Vienna under Brücke [S1, S2].
 
 ## Adult working worldview
 
-God as 'an exalted father' (1913) [S5]; religion as 'psychology projected into the outer world' [S3]; later, religion 'not tenable' (1930) [S6].
+God as 'an exalted father' (1913) [S5]; religion as 'psychology projected into the outer world' [S3]; in-span letter: 'completely godless Jew' (1918) [S8]; later, religion 'not tenable' (1930) [S6]. Nature 'pitiless, inexorable'; gods withdraw as phenomena develop from 'inward necessity' (1927) [S4] — B 3, not a P16 lift.
 
 ## Heritage (context only)
 
@@ -365,7 +414,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 ## Open questions
 
 - RQ-X3, settled by ruling X3 (not a scientist).
+- German originals / Strachey Standard Edition still unread.
 
 ## Research log
 
+- 2026-10-24: Deepen D1. Pfister letters Basic Books 1963 via IA OCR (S8); Wikipedia EN dual bio (S9, P50); P47 source_quality; P48 A and B corroborated (hollow→filled); B held 3 @0.5 (X3/P35; no P16 lift). No fallacy_catalog; no figures/.
 - 2026-10-19: Read Britannica (Jay), IEP (Thornton), and Gutenberg texts of the Psychopathology, Totem and Taboo, The Future of an Illusion and Civilization and Its Discontents.
