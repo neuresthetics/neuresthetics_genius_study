@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #120 / F4 rank 121). Goals: raise A if corroborating own-voice locus; keep B UNKNOWN unless true P16; open Long Walk / letters / Methodist speeches. Opened Long Walk to Freedom ebook PDF (S7; ACT Rwanda repository of Little, Brown 1994/95): 'Though I am a Methodist, I would attend each different religious service' (Robben Island); 'I told them that I was a Christian and had always been a Christian' + Christ/moneylenders (Pollsmoor, Washington Times editors visit, mid-1980s event). Methodist Conference Umtata 18 Sep 1994 (S8, Wayback ANC): 'personal home-coming, both in the physical and spiritual sense'; spiritual association with Methodist Church. Methodist Triennial Durban 17 Jul 1998 (S9): 'my church'; 'God who did not tolerate oppression' framed as what religious organisations taught (after span). Villa-Vicencio, The Spirit of Freedom (S10; interviews 1992/early 1993, in-span): 'person and his or her God'; 'humankind made in the image of God. This is a God who, if I understand the Bible correctly, requires us…'. CHRIST 0.5→0.7 (written_profession; support corroborated). A 1 0.5→0.7 (support corroborated; Moria S5 + Villa-Vicencio S10 locus; LWTF Christ-as-agent). B stays UNKNOWN (ruling V1; Scheffler science-bolsters-religion appeal ≠ P16; struggle 'not a miracle' remains political lead). Mid UNKNOWN. Chart-moving NO. P47 on S1–S10. Wikipedia EN (S11, P50). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): ruling V1 (v8's call on the auditor's advice; RQ-AU1 does not extend to prayers for peace): MA5, B BELOW_THRESHOLD -> UNKNOWN, readings 1 and 3 kept as leads; MA6, mid_basin BELOW_THRESHOLD -> UNKNOWN. Notes: Forster's 'just an ordinary person' labelled a secondary quotation; primary_system how_known gives the P42 reason the speech counts. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 121). Basics from Britannica (Britannica Editors), the Nobel Foundation biography and facts page; religion from Dion Forster's 2014 faith biography and his own Easter address at Moria (3 April 1994, SAHO transcript). Not a scientist (P30). primary_system CHRIST at 0.5 (alt BELOW_THRESHOLD); A 1 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (readings 1 and 3 named); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1964–1994 (0.5). Not plotted. Draft, not reviewed."}
 
@@ -36,7 +37,7 @@ basics:
     date: {value: "1918-07-18", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "facts box (Born)"}, {source: S3, locator: "facts (Born)"}], how_known: "Britannica and the Nobel facts page agree."}
     place: {value: "Mvezo", modern_name: "Mvezo, Eastern Cape, South Africa", polity_then: "Union of South Africa", certainty: 1.0, cites: [{source: S1, locator: "facts box (Born)"}, {source: S3, locator: "facts (Born)"}], how_known: "Britannica and the Nobel facts page; S2 says Transkei."}
   death:
-    date: {value: "2013-12-05", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "facts box (Died)"}, {source: S3, locator: "facts (Died)"}], how_known: "Britannica and the Nobel facts page."}
+    date: {value: "2013-12-05", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "facts box (Died)"}, {source: S3, locator: "facts (Died)"}, {source: S11, locator: "Death"}], how_known: "Britannica, Nobel facts, and Wikipedia EN agree (P50)."}
     place: {value: "Johannesburg", modern_name: "Johannesburg, South Africa", polity_then: "South Africa", certainty: 1.0, cites: [{source: S1, locator: "facts box (Died)"}, {source: S3, locator: "facts (Died)"}], how_known: "Britannica and the Nobel facts page."}
   first_lasting_contribution_year: {value: 1964, certainty: 0.5, cites: [{source: S1, locator: "'Underground activity and the Rivonia Trial'"}], how_known: "The speech from the dock at the Rivonia Trial, published as I Am Prepared to Die (1964): 'a classic defense of liberty and defiance of tyranny' (S1). The Freedom Charter (1955) is excluded: a collective document he was 'involved in drafting' (S1); 1955 is the named alternative start."}
   era_bucket: {value: "1950 on", certainty: 0.5, cites: [{source: S1, locator: "'Underground activity and the Rivonia Trial'"}], how_known: "1964 (P2); 1955 gives the same bucket."}
@@ -95,32 +96,33 @@ worldview:
   primary_system:
     value: CHRIST
     basis: written_profession
-    certainty: 0.5
-    cites: [{source: S5, locator: "Easter section ('Each easter marks...'); opening"}, {source: S4, locator: "'Why the claims...'; 'African Christian humanism'"}]
-    how_known: "His own public Easter address (1994, inside the span). Under P42 a speech he gave in person, attributed to him by SAHO and the Nelson Mandela Foundation archive, counts as his own words; no source read names a speechwriter. 'Each easter marks the rebirth of our faith. It marks the victory of our risen saviour over the torture of the cross and the grave.' Forster: 'Mr Mandela regarded himself as a member of that denomination throughout his life' (S4)."
-    rationale: "CHRIST at 0.5 with BELOW_THRESHOLD as the named alternative. For: first-person-plural confession of the resurrection in his own address; lifelong self-identification as a Methodist (S4). Against: the address was a campaign speech three weeks before the 1994 election, given on behalf of the ANC to a church audience; Forster finds him 'much more strongly influenced by a form of African humanism than Christian theology' and quotes him as 'just an ordinary person trying to make sense of the mysteries of life' (S4; a secondary quotation: Forster quoting Cracknell and White quoting Mandela, so context only). Contested, so at most 0.7; occasion-bound, so 0.5."
+    certainty: 0.7
+    cites: [{source: S7, locator: "Pollsmoor visitors / Washington Times editors"}, {source: S7, locator: "Robben Island Sunday services"}, {source: S5, locator: "Easter section ('Each easter marks...'); opening"}, {source: S8, locator: "opening / spiritual home-coming"}, {source: S4, locator: "'Why the claims...'; 'African Christian humanism'"}]
+    how_known: "Deepen D1: Long Walk to Freedom (S7, written profession, published 1994 at end of span) — 'I told them that I was a Christian and had always been a Christian' (recounting mid-1980s Pollsmoor interview, in-span event); 'Though I am a Methodist, I would attend each different religious service' (Robben Island). Corroborated by Moria Easter 1994 resurrection confession (S5, P42 speech); Methodist Conference Umtata 18 Sep 1994 'personal home-coming, both in the physical and spiritual sense' (S8, in-span). Forster: lifelong Methodist self-regard (S4). Distinct source ids → corroborated (P48)."
+    rationale: "CHRIST at 0.7 with BELOW_THRESHOLD as named alternative. For: explicit own-voice Christian and Methodist self-IDs in the autobiography covering in-span years, plus in-span Methodist homecoming and Easter confession. Against: Forster's African-Christian-humanism reading and secondary 'ordinary person… mysteries of life' quotation (S4); collaborative autobiography (Stengel) and public/political speech occasions. Contested enough to stop at 0.7, not 1.0."
     alternatives:
-      - {value: BELOW_THRESHOLD, note: "Occasion-bound public piety; humanism over theology (S4).", cites: [{source: S4, locator: "'African Christian humanism'"}]}
+      - {value: BELOW_THRESHOLD, note: "Humanism over theology (S4); public piety / collaborative memoir caveats.", cites: [{source: S4, locator: "'African Christian humanism'"}]}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29). Forster's 'African Christian humanism' is a scholar's label, not a code."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Coded at 0.5: own Easter address; Methodist self-identification (S4, S5)."}
+    - {code: CHRIST, reason: "Coded at 0.7: LWTF Christian/Methodist self-IDs (S7); Moria Easter (S5); Methodist 1994 homecoming (S8); Forster membership (S4)."}
     - {code: SECHUM, reason: "Rejected: Forster's 'humanism' is Christian humanism, not the secular movement (S4)."}
     - {code: ISLAM, reason: "Rejected: studied Islam on Robben Island (S4, citing Sampson); no adherence."}
   lio_axes:
     A_locus:
       value: 1
       basis: written_profession
-      certainty: 0.5
-      cites: [{source: S5, locator: "opening; Easter section; closing"}]
-      rationale: "Transcendent personal God: 'give thanks to the Almighty for the bounty he has bestowed upon us'; 'May the Lord Almighty grant Your Grace the wisdom'; a Messiah who 'came to us in the form of a mortal man'. Leans to the interventionist pole without a stated doctrine of God, so 1. Named alternative BELOW_THRESHOLD: liturgical and campaign language (as for primary_system)."
-      how_known: "One public address, occasion-bound; 0.5."
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S5, locator: "opening; Easter section; closing"}, {source: S10, locator: "Religion section (image of God / God who requires)"}, {source: S7, locator: "Pollsmoor / Washington Times: Christ and the moneylenders"}, {source: S4, locator: "'African Christian humanism'"}]
+      rationale: "Transcendent personal God (pole 1). Moria 1994 (S5): 'the Almighty'; risen Christ / Messiah 'came to us in the form of a mortal man'. Villa-Vicencio interview 1992/early 1993 (S10, in-span): 'the relationship between a person and his or her God'; 'humankind made in the image of God. This is a God who, if I understand the Bible correctly, requires us to be engaged in the actual fight against evil…'. LWTF (S7): affirms Christ as real agent who 'used force to expel the moneylenders'. Leans interventionist without a full doctrine of God → 1. Named alternative BELOW_THRESHOLD (liturgical / political God-talk)."
+      how_known: "Deepen D1: two independent in-span own-voice locus sources (S5 written profession; S10 recorded interview) plus LWTF Christ-as-agent. Distinct source ids → corroborated (P48). Contested (campaign speech + interview-book framing), so 0.7 not 1.0."
       alternatives:
-        - {value: BELOW_THRESHOLD, note: "Liturgical language at a campaign event.", cites: [{source: S4, locator: "'African Christian humanism'"}]}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement on nature (P16). Ruling V1 (v8's call on the auditor's advice, batch V audit at 982cb8e): the RQ-AU1 addendum covers only a person's own prayer for physical protection or healing; a public petition for peace ('We pray with you so that the blessings of peace may descend upon South Africa like a torrent!') is neither and says nothing about nature, so B is UNKNOWN. Leads kept: reading 1 (the communal petitions) and reading 3 ('The coming of the democratic elections to this country is not a miracle. It is the outcome of decades of consistent and unrelenting struggle', a human-causation remark about politics, not a statement about nature)."}
+        - {value: BELOW_THRESHOLD, note: "Liturgical / campaign God-talk; humanism reading (S4).", cites: [{source: S4, locator: "'African Christian humanism'"}]}
+    B_cause: {value: UNKNOWN, how_known: "Deepen D1: not a scientist (P30); no own-voice P16 nature-order claim found. Ruling V1 stands: peace prayers ≠ B. Checked and off-point: (1) Moria 'not a miracle' / struggle outcome (S5) — politics, not nature; (2) LWTF Scheffler 'enlisted science to bolster his beliefs' — Mandela found the approach appealing, not a profession that nature is lawful; (3) Villa-Vicencio peace/religion remarks (S10) — morals and struggle, not physical order. Leads unchanged. Coder's call: UNKNOWN."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing on reward and punishment of persons in his own view read (P19); 'attained immortality' is said of the Messiah."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation against observation read (P19)."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Lead only: prayers for blessings on South Africa; 'the Good News ... who chose all of humankind' is about salvation's scope (C, not E)."}
-  mid_basin: {value: UNKNOWN, how_known: "P4/P19: B is UNKNOWN, which takes precedence (batch V audit fix MA6, after ruling V1). A 1 at 0.5."}
+  mid_basin: {value: UNKNOWN, how_known: "P4/P19: B is UNKNOWN, which takes precedence (ruling V1). A 1 at 0.7 after deepen; still not plotted."}
   statements:
     - text: "We bow our heads in worship on this day and give thanks to the Almighty for the bounty he has bestowed upon us over the past year. We raise our voices in holy gladness to celebrate the victory of the risen Christ over the terrible forces of death."
       cites: [{source: S5, locator: "opening, after the greetings"}]
@@ -147,9 +149,45 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-19
+    - text: "Though I am a Methodist, I would attend each different religious service."
+      cites: [{source: S7, locator: "Robben Island Sunday services"}]
+      date: "1994"
+      context: "Long Walk to Freedom, recounting Robben Island years (in-span). Ebook PDF pagination (calibre) ~p.472 of this file; print Little Brown page not marked in the ebook."
+      axes: [A_locus]
+      kind: "autobiography"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Adult working-years self-identification as Methodist; not itself a locus claim, but anchors CHRIST."
+    - text: "I told them that I was a Christian and had always been a Christian. Even Christ, I said, when he was left with no alternative, used force to expel the moneylenders from the temple. He was not a man of violence, but had no choice but to use force against evil."
+      cites: [{source: S7, locator: "Pollsmoor visitors / Washington Times editors"}]
+      date: "1994"
+      context: "Long Walk to Freedom, recounting a mid-1980s Pollsmoor visit by Washington Times editors (in-span event). Ebook ~p.545 of this file."
+      axes: [A_locus]
+      kind: "autobiography"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Explicit CHRIST self-ID; treats Christ as real historical/agent figure (supports A1). Collaborative autobiography (Stengel) flagged in data_quality_flags."
+    - text: "My joy at being in this conference is multiplied many-fold by the fact that this is for me also a personal home-coming, both in the physical and spiritual sense. The environs of Umtata are not only my humble origins. It is here that my spiritual association with this great Church started. And I cannot over-emphasise the role that the Methodist Church has played in my own life."
+      cites: [{source: S8, locator: "opening after greetings"}]
+      date: "1994-09-18"
+      context: "Address to Annual Conference of the Methodist Church, Umtata; inside the span (end)."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Membership/formation claim; little locus content. P42 speech."
+    - text: "The relationship between a person and his or her God is a deeply intimate and private matter. … Yes, I certainly recognise the importance of the religious dimension of my own life. … Religion is about mutual love and respect for one another and for life itself. It is about the dignity and equality of humankind made in the image of God. This is a God who, if I understand the Bible correctly, requires us to be engaged in the actual fight against evil, poverty, disease, illiteracy, the lack of housing and other social ills in society."
+      cites: [{source: S10, locator: "Religion section"}]
+      date: "1992"
+      context: "Interview with Charles Villa-Vicencio for The Spirit of Freedom (book 1996). Book preface: interviewees spoken with in 1992 or early 1993 — inside the span. Ellipses mark interviewer turns / bridging narration dropped; wording inside continuous answers as printed."
+      axes: [A_locus]
+      kind: "recorded interview"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Strongest A locus corroboration this pass: personal God; image of God; God who requires engagement. Interview-book format (quoted speech woven with narration)."
   changes_over_life:
     - {value: "Regular churchgoer and Sunday school teacher to about 1958; little church practice while underground (1958–1963, none found by Forster); communion in prison; formal Methodist ties again from 1994", certainty: 0.5, cites: [{source: S4, locator: "'Young adulthood...'; 'Imprisonment'; 'Release and president'"}], how_known: "Forster."}
-  coder_notes: "Coder's call on the span: 1964 (Rivonia speech) to 1994 (end of the 1990–1994 transition). Alternative start 1955 (Freedom Charter, excluded as collective). The religion code rests on one campaign address plus a scholar's faith biography; Long Walk to Freedom was read only through Forster's quotations. Not a scientist (P30). Leads: his 1994 and 1998 addresses to the Methodist Conference (SAHO); Long Walk to Freedom chs. on Robben Island. Not plotted."
+  coder_notes: "Deepen D1 2026-10-24: CHRIST @0.7 (LWTF + Methodist 1994 + Moria); A 1 @0.7 corroborated (Moria + Villa-Vicencio + LWTF Christ); B UNKNOWN (ruling V1; no P16). Long Walk ebook opened; Methodist 1994/1998 opened; Villa-Vicencio 1992/93 interview opened. Chart-moving NO. Not plotted. Span unchanged 1964–1994."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -162,8 +200,8 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1964–1994", certainty: 0.5, cites: [{source: S1, locator: "opening; 'Underground activity and the Rivonia Trial'"}, {source: S3, locator: "prize motivation"}], how_known: "From the Rivonia speech (1964) to the end of the transition (1994) (P12, P30). Coder's call; alternative start 1955."}
   age_at_first_lasting_contribution: {value: 46, certainty: 0.5, cites: [{source: S1, locator: "facts box; 'Underground activity and the Rivonia Trial'"}], how_known: "1964 − 1918 = 46 (P30); 37 under the 1955 alternative."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No statement scored at 3 or 4."}
-  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S5, locator: "whole"}], how_known: "None scored."}
+  first_evidence_of_lio_type_views: {value: "1992", certainty: 0.5, cites: [{source: S10, locator: "Religion section"}, {source: S5, locator: "opening"}], how_known: "Earliest in-span scored A locus in own voice this pass: Villa-Vicencio interview (1992/early 1993). Moria Easter 3 Apr 1994 also in-span. Certainty 0.5 (interview-book date band)."}
+  lio_views_relative_to_major_work: {value: "during major work", certainty: 0.5, cites: [{source: S5, locator: "whole"}, {source: S10, locator: "Religion section"}, {source: S7, locator: "Pollsmoor / Washington Times"}], how_known: "A 1 @0.7 from in-span own voice (Moria 1994; Villa-Vicencio 1992/93; LWTF recounting 1980s). B UNKNOWN → not plotted."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -189,11 +227,14 @@ review:
   controversies:
     - {value: "Abandoned nonviolence after Sharpeville and co-founded the ANC's armed wing", certainty: 0.7, cites: [{source: S1, locator: "'Underground activity and the Rivonia Trial'"}], how_known: "Britannica."}
   data_quality_flags:
-    - "primary_system and A rest on one campaign address to a church audience plus Forster's faith biography."
+    - "Long Walk to Freedom is a collaborative autobiography (Richard Stengel); Mandela attributed as author; P42/P43 noted."
+    - "Villa-Vicencio interview book weaves quoted speech with narration; date band 1992/early 1993 from book preface."
     - "Definition fit 'arguable' (leader of a collective movement)."
-    - "Span is a coder's call with a named alternative start."
+    - "Span is a coder's call with a named alternative start (1955)."
   open_questions:
-    - "1994 and 1998 addresses to the Methodist Conference; Long Walk to Freedom on faith in prison."
+    - "Print Little, Brown page numbers for the Robben Island / Pollsmoor faith passages (ebook lacks print pagination)."
+    - "Archival prison letters with theological locus (Prison Letters volume skimmed in search only)."
+    - "Any explicit P16 nature-order remark (low prior; not a scientist)."
 
 sources:
   - id: S1
@@ -204,6 +245,7 @@ sources:
     url: "https://www.britannica.com/biography/Nelson-Mandela"
     accessed: 2026-10-19
     reliability_note: "Unsigned editors' article; facts box and body cited; 'Top Questions' boxes not cited (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review]
   - id: S2
     type: tertiary
@@ -213,6 +255,7 @@ sources:
     url: "https://www.nobelprize.org/prizes/peace/1993/mandela/biographical/"
     accessed: 2026-10-19
     reliability_note: "Biography written at the time of the award; paragraphs cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, institutions, collaborators]
   - id: S3
     type: tertiary
@@ -222,6 +265,7 @@ sources:
     url: "https://www.nobelprize.org/prizes/peace/1993/mandela/facts/"
     accessed: 2026-10-19
     reliability_note: "Official facts page with the prize motivation."
+    source_quality: "reference entry"
     used_for: [basics, contribution, timing, collaborators]
   - id: S4
     type: secondary
@@ -231,6 +275,7 @@ sources:
     url: "https://www.scielo.org.za/scielo.php?pid=S1017-04992014000200007&script=sci_arttext"
     accessed: 2026-10-19
     reliability_note: "Peer-reviewed faith biography (Stellenbosch), from documents and interviews; cites Long Walk to Freedom by page. Locators by section heading."
+    source_quality: "other"
     used_for: [identity, childhood, heritage, worldview]
   - id: S5
     type: primary
@@ -240,6 +285,7 @@ sources:
     url: "https://www.sahistory.org.za/archive/speech-nelson-mandela-zionist-christian-church-easter-conference-moria-3-april-1994"
     accessed: 2026-10-19
     reliability_note: "Transcript of the delivered address; the same text is on the South African government's Mandela speeches site and in the Nelson Mandela Foundation archive. Locators by section."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
   - id: S6
     type: secondary
@@ -249,7 +295,59 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Nelson Mandela"
+    citation: "Mandela, Nelson. Long Walk to Freedom: The Autobiography of Nelson Mandela. Boston: Little, Brown, 1994/1995. Ebook PDF (calibre) read 2026-10-24 via African Centre of Excellence in Data Science repository, https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content. Locators by episode (ebook lacks Little Brown print page numbers)."
+    url: "https://repository.act.ac.rw/server/api/core/bitstreams/1781d4c1-64c6-4fa2-87e7-b693e01b24d4/content"
+    accessed: 2026-10-24
+    reliability_note: "Autobiography attributed to Mandela; collaborative with Richard Stengel (P42/P43 noted). Primary for self-IDs and recounted in-span speech. Print pagination not available in this ebook."
+    source_quality: "primary / own words"
+    used_for: [worldview, childhood, review]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Nelson Mandela"
+    citation: "Mandela, Nelson. \"Address to the Annual Conference of the Methodist Church,\" Umtata, 18 September 1994. ANC historical documents (Wayback): https://web.archive.org/web/20060519000000/http://www.anc.org.za/ancdocs/history/mandela/1994/sp940918.html. Also NMF ZA COM MR-S-201. Read 2026-10-24."
+    url: "https://web.archive.org/web/20060519000000/http://www.anc.org.za/ancdocs/history/mandela/1994/sp940918.html"
+    accessed: 2026-10-24
+    reliability_note: "Official ANC transcript of delivered presidential address; inside the span (end). P42 speech."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
+  - id: S9
+    type: primary
+    kind: "published work by the subject"
+    author: "Nelson Mandela"
+    citation: "Mandela, Nelson. \"Address at the first Triennial Conference of the Methodist Church of South Africa,\" Durban, 17 July 1998. South African History Online. https://sahistory.org.za/archive/address-president-nelson-mandela-first-triennial-conference-methodist-church-south-africa. Also NMF ZA COM MR-S-603. Read 2026-10-24."
+    url: "https://sahistory.org.za/archive/address-president-nelson-mandela-first-triennial-conference-methodist-church-south-africa"
+    accessed: 2026-10-24
+    reliability_note: "After the span (1998; P1 if scored for certainty). Used for 'my church' membership corroboration and the reported 'God who… stood with the oppressed' line (framed as what churches taught)."
+    source_quality: "unofficial web copy"
+    used_for: [worldview, review]
+  - id: S10
+    type: primary
+    kind: "published work by the subject"
+    author: "Nelson Mandela; interviewed by Charles Villa-Vicencio"
+    citation: "Villa-Vicencio, Charles. The Spirit of Freedom: South African Leaders on Religion and Politics. Berkeley: University of California Press, 1996. Mandela chapter, Religion section. UC Press E-Books: https://publishing.cdlib.org/ucpressebooks/view?chunk.id=d0e3720&doc.view=print&docId=ft4p3006kc. Interviews dated by the book to 1992 or early 1993. Read 2026-10-24."
+    url: "https://publishing.cdlib.org/ucpressebooks/view?chunk.id=d0e3720&doc.view=print&docId=ft4p3006kc"
+    accessed: 2026-10-24
+    reliability_note: "Published interview book; Mandela's answers appear in quotation. In-span (1992/early 1993). Kind = published work by the subject; source_quality nearest newspaper interview for Q&A."
+    source_quality: "newspaper interview"
+    used_for: [worldview]
+  - id: S11
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Nelson Mandela.\" English Wikipedia. https://en.wikipedia.org/wiki/Nelson_Mandela. Birth/death and Methodist categories read 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Nelson_Mandela"
+    accessed: 2026-10-24
+    reliability_note: "Crowdsourced; dual bio (P50) against Britannica/Nobel for birth and death. Religious affiliation categories cite Forster."
+    source_quality: "reference entry"
+    used_for: [basics, heritage, review]
+
 ---
 
 # Nelson Mandela
@@ -258,7 +356,7 @@ sources:
 
 ## Summary
 
-Nelson Mandela (1918–2013), anti-apartheid leader and first Black president of South Africa [S1]. Draft: primary_system CHRIST at 0.5; A 1 at 0.5; B UNKNOWN (ruling V1); mid_basin UNKNOWN. Not plotted.
+Nelson Mandela (1918–2013), anti-apartheid leader and first Black president of South Africa [S1; S11]. Deepen D1: primary_system CHRIST at 0.7; A 1 at 0.7 (corroborated); B UNKNOWN (ruling V1); mid_basin UNKNOWN. Chart-moving NO. Not plotted.
 
 ## Life and work
 
@@ -274,7 +372,7 @@ Tembu chiefly family; baptised Methodist; Clarkebury, Healdtown, Fort Hare [S1, 
 
 ## Adult working worldview
 
-"Each easter marks the rebirth of our faith" (1994) [S5]; a lifelong self-described Methodist [S4].
+"I was a Christian and had always been a Christian" / "Though I am a Methodist" (LWTF) [S7]; Moria Easter 1994 [S5]; Methodist homecoming 1994 [S8]; Villa-Vicencio personal God / image of God [S10]. CHRIST @0.7; A 1 @0.7.
 
 ## Heritage (context only)
 
@@ -290,8 +388,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- Methodist Conference addresses (1994, 1998).
+- Print LWTF page numbers; archival prison letters with locus; any P16 (low prior).
 
 ## Research log
 
 - 2026-10-19: Read Britannica, the Nobel biography and facts, Forster (2014) and the Moria address.
+- 2026-10-24: Deepen D1. Long Walk ebook [S7]; Methodist 1994 [S8] and 1998 [S9]; Villa-Vicencio Spirit of Freedom [S10]; Wikipedia EN [S11]. CHRIST 0.5→0.7; A 1 0.5→0.7; B UNKNOWN. Chart-moving NO.
