@@ -2,16 +2,17 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (agent run for Jason, stage 3 batch R)"
+  collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 103). Basics from Britannica (Britannica Editors, unsigned; body read live). Worldview from 'Circumfession' (1991; English in Bennington and Derrida, Jacques Derrida, 1993) as quoted by Elisabeth Loevlie, Religions 4 (2013), with the 2002 exchange with John Caputo as she reports it; secondary quotations. Not a scientist (P30). primary_system and A BELOW_THRESHOLD ('I quite rightly pass for an atheist', with God 'called by other names'); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Alternative span end is now 1967, not 1974: Glas is listed under major_works, not as a lasting contribution, so it cannot set the end (P13, P30 addendum b; DE5). Specters of Marx now cites Loevlie §1 for its lasting status ('hauntology, first coined in his Spectres of Marx in 1993 [...] a fruitful critical topos'), so the item rises from 0.5 to 0.7 (one source); the span stays 1967–1993 at 0.5."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note for batch S (blind audit of c5d448a, run 1): major_work_period now states why the span stays at 0.5 although both end items are at 0.7. No value changes."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #102 / F4 rank 103). Goals: Circumfession / Caputo primary if reachable; keep hedged A honest (P19/P38); P16 B only on own-voice nature claims. Dual bio Wikipedia EN Jacques Derrida (S6, P50). Caputo 2002 exchange reached as long extract of Sherwood and Hart, Derrida and Religion (Routledge, 2005), pp. 46–47 (S5 course reprint; own-voice: refuses both 'I am an atheist' and 'I am a believer' as 'absolutely ridiculous'; Caputo's question cites Circonfession 146, 155). Circumfession Chicago 1993 pp. 154–55 still secondary quotation only (S2+S4 agree on the pass-for sentence; IA Bennington volume not open this pass). No P16 nature/physical-world claim found. primary_system and A stay BELOW_THRESHOLD; B stays UNKNOWN (P16, not a scientist P30); mid_basin UNKNOWN. Not plotted. Chart-moving NO. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
 identity:
   id: derrida-jacques
@@ -34,10 +35,10 @@ identity:
 basics:
   birth:
     date: {value: "1930-07-15", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body."}
-    place: {value: "El Biar, Algeria", modern_name: "El Biar, Algeria", polity_then: "French Algeria", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica ('French-governed Algeria')."}
+    place: {value: "El Biar, Algeria", modern_name: "El Biar, Algeria", polity_then: "French Algeria", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}, {source: S6, locator: "infobox / Early life"}], how_known: "Britannica ('French-governed Algeria'); Wikipedia agrees (El Biar, Algiers)."}
   death:
-    date: {value: "2004-10-08", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica body."}
-    place: {value: "Paris, France", modern_name: "Paris, France", polity_then: "France", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "2004-10-08", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "Personal life and death (early hours of 9 October 2004)"}], how_known: "Britannica opening gives 8 October 2004; Wikipedia says he died in the early hours of 9 October 2004 (P25 conflict noted; value keeps Britannica's calendar day)."}
+    place: {value: "Paris, France", modern_name: "Paris, France", polity_then: "France", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "Personal life and death"}], how_known: "Britannica and Wikipedia."}
   first_lasting_contribution_year: {value: 1967, certainty: 0.7, cites: [{source: S1, locator: "'Life and work' (three books published in 1967)"}], how_known: "Writing and Difference, Of Grammatology and Speech and Phenomena, all 1967 (S1), the earliest works the body names (P17)."}
   era_bucket: {value: "1950 on", certainty: 0.7, cites: [{source: S1, locator: "'Life and work'"}], how_known: "1967 (P2)."}
   region_of_birth: {value: "Middle East and North Africa", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Algeria (P3)."}
@@ -81,40 +82,41 @@ worldview:
   working_years: {value: "1967–1993", certainty: 0.5, cites: [{source: S1, locator: "'Life and work'"}, {source: S2, locator: "§1 (Introduction)"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read on science and religion."}
-  primary_system: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "§2 (quoting 'Circumfession', p. 155)"}], how_known: "His published self-description is hedged: 'the constancy of God in my life is called by other names so that I quite rightly pass for an atheist' ('Circumfession', 1991, inside the working years). He says he 'passes for' an atheist while keeping 'God' under other names, and in 2002 (as Loevlie reports the exchange with Caputo) he called the bold claims 'I am a believer' and 'I am an atheist' ridiculous. No code fits clearly; candidates ATHE and AGNOS; JUDA is heritage only. Secondary quotation (P26)."}
+  primary_system: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "§2 (quoting 'Circumfession', p. 155)"}, {source: S5, locator: "pp. 46–47 extract (Caputo exchange)"}], how_known: "His published self-description is hedged: 'the constancy of God in my life is called by other names so that I quite rightly pass for an atheist' ('Circumfession', 1991, inside the working years; secondary quotation, S2+S4). He says he 'passes for' an atheist while keeping 'God' under other names. In the 2002 Caputo exchange (S5 extract of Sherwood/Hart 2005) he refuses both 'I am an atheist' and 'I am a believer' as 'absolutely ridiculous'. No code fits clearly; candidates ATHE and AGNOS; JUDA is heritage only. Hedged self-label → BELOW_THRESHOLD (P19/P38), not ATHE."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: ATHE, reason: "'I quite rightly pass for an atheist' (1991), hedged by 'pass for' and by God 'called by other names'."}
-    - {code: AGNOS, reason: "Lead: he rejects both 'I am a believer' and 'I am an atheist' (2002, as reported)."}
+    - {code: AGNOS, reason: "Lead: he refuses both 'I am a believer' and 'I am an atheist' as 'absolutely ridiculous' (2002 Caputo exchange, S5)."}
     - {code: JUDA, reason: "Heritage (S1); 'the question of Jewishness and the Jewish tradition' in Shibboleth and 'Circumfession' (S1) is a topic, not a stated belief."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "§2"}], how_known: "The one self-statement read places God nowhere: God's 'constancy' in his life is 'called by other names', and he 'quite rightly' passes for an atheist. That is neither a stated disbelief (A 4, P38) nor a locus; the 2002 remarks as reported (God 'has no essence, no presence, no substance', in Loevlie's paraphrase) are a reading of the word 'God', not a placing. Too hedged to score (P19, P38 by analogy)."}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); no statement of his on nature or the physical world was read, so B is not scored (P16)."}
+    A_locus: {value: BELOW_THRESHOLD, cites: [{source: S2, locator: "§2"}, {source: S5, locator: "pp. 46–47 extract"}], how_known: "The Circumfession self-statement places God nowhere under a public name: God's 'constancy' is 'called by other names', and he 'quite rightly' passes for an atheist (secondary quotation). That is neither a stated disbelief (A 4, P38) nor a locus. The 2002 Caputo exchange (S5) confirms he will not say 'I am an atheist' or 'I am a believer'. Too hedged to score (P19, P38 by analogy)."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); deepen D1 found no own-voice statement about nature or the physical world's lawfulness/exceptions, so B is not scored (P16). Philosopher of language/deconstruction, not a P16 nature-order account."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read."}
     D_authority: {value: UNKNOWN, how_known: "Nothing read."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7)."}
   mid_basin: {value: UNKNOWN, how_known: "B is UNKNOWN, which takes precedence (P19); A is BELOW_THRESHOLD."}
   statements:
     - text: "she must have known that the constancy of God in my life is called by other names so that I quite rightly pass for an atheist"
-      cites: [{source: S2, locator: "§2, quoting 'Circumfession', p. 155"}, {source: S4, locator: "note 1, quoting 'Circumfession', pp. 154–55"}]
+      cites: [{source: S2, locator: "§2, quoting 'Circumfession', p. 155"}, {source: S4, locator: "note 1, quoting 'Circumfession', pp. 154–55"}, {source: S5, locator: "Caputo question cites Circonfession 146, 155"}]
       date: "1991"
-      context: "'Circumfession: Fifty-nine Periods and Periphrases', published in French in 1991 and in English in Geoffrey Bennington and Jacques Derrida, Jacques Derrida (Chicago, 1993), p. 155, as quoted by Loevlie (S2). Referring to his mother. Stanley (S4), quoting pp. 154–55, has a comma after 'names' and a longer context ('My religion about which nobody knows anything ... the omnipresence to me of what I call God in my absolved absolutely private language'); Loevlie, and Stanley's own body text, give the first phrase as 'my religion about which nobody understands anything' (p. 154). The wording of the quoted sentence is the same in both apart from the comma."
+      context: "'Circumfession: Fifty-nine Periods and Periphrases', French 1991 / English in Bennington and Derrida, Jacques Derrida (Chicago, 1993), p. 155. Referring to his mother. S2 and S4 both quote the pass-for sentence with Chicago page numbers; S4 note 1 gives a longer stretch (pp. 154–55). Caputo's 2002 question (S5) cites Circonfession 146, 155 for the same phrase. Print of Chicago 1993 still not reached this deepen (IA Bennington volume not open)."
       axes: [A_locus]
       kind: autobiography
       verified_against: "secondary quotation"
-      verified_on: 2026-10-18
-      note: "Published autobiographical text (written profession, P28). Print check pending (Chicago 1993, pp. 154–55)."
-    - text: "True believers know they run the risk of being radical atheists"
-      cites: [{source: S2, locator: "§2, quoting Sherwood and Hart, eds., Derrida and Religion (2005), p. 46"}]
+      verified_on: 2026-10-24
+      note: "Published autobiographical text (written profession, P28). Primary print check still pending (Chicago 1993, pp. 154–55)."
+    - text: "I wouldn't say, 'I am an atheist' and I wouldn't say, 'I am a believer' either. I find the statement absolutely ridiculous."
+      cites: [{source: S5, locator: "pp. 46–47 extract"}, {source: S2, locator: "§2 (shorter report of same exchange)"}]
       date: "2002"
-      context: "Derrida's answer to John Caputo's question 'Why do you say that you rightly pass for an atheist ...?' at a 2002 conference in Canada, printed in Yvonne Sherwood and Kevin Hart, eds., Derrida and Religion: Other Testaments (Routledge, 2005), pp. 46–47, as quoted by Loevlie (S2); she reports that he called the claims 'I am a believer' and 'I am an atheist' 'absolutely ridiculous' (p. 47). After the working years (P20), and recorded speech in an edited volume."
+      context: >-
+        Derrida's answer to John Caputo at a 2002 conference in Canada, printed in Yvonne Sherwood and Kevin Hart, eds., Derrida and Religion: Other Testaments (Routledge, 2005), pp. 46–47. Caputo asked why he says he 'rightly pass[es]' for an atheist instead of 'I am' an atheist. Also: 'True believers know they run the risk of being radical atheists'; and he says that although he confirms it is right to say that he is an atheist, he cannot say himself 'I am an atheist.' After the working years (P20); recorded speech in an edited volume. Used to confirm the hedge, not to move A off BELOW_THRESHOLD.
       axes: [A_locus]
       kind: "recorded interview"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-18
-      note: "Context only; Loevlie mostly paraphrases the answer. Print check pending."
+      verified_against: "unofficial web copy"
+      verified_on: 2026-10-24
+      note: "S5 is a long extract, not the Routledge print itself; wording treated as own-voice for the refusal of both poles."
   changes_over_life: []
-  coder_notes: "Coder's call. The 'Circumfession' sentence is his own published wording, but the self-label is hedged twice ('pass for'; God under 'other names'), so primary_system and A stay BELOW_THRESHOLD rather than ATHE and A 4. Leads: 'Circumfession' in print; 'Faith and Knowledge' (1996) and The Gift of Death (1992) for religion; Caputo, The Prayers and Tears of Jacques Derrida (1997)."
+  coder_notes: "Coder's call (D1). Circumfession hedges twice ('pass for'; God under 'other names'); Caputo exchange (S5) refuses both poles as 'absolutely ridiculous'. primary_system and A stay BELOW_THRESHOLD, not ATHE/A 4 (P19/P38). B stays UNKNOWN: no P16 nature/physical-world claim in what was read (not a scientist, P30). Leads still open: Chicago 1993 Circumfession print; Faith and Knowledge (1996); The Gift of Death (1992); Caputo Prayers and Tears (1997) for secondary commentary only."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -152,19 +154,24 @@ review:
   controversies: []
   data_quality_flags:
     - "Britannica article is unsigned (Britannica Editors)."
-    - "The 'Circumfession' sentence is read only as a secondary quotation; two web quotations differ by a comma and in the wording of the preceding phrase."
+    - "The 'Circumfession' pass-for sentence is still secondary quotation only (S2+S4); Chicago 1993 print not reached (IA Bennington volume borrow-restricted / not found open)."
+    - "Caputo exchange reached via course-site extract of Sherwood/Hart 2005 (S5), not the Routledge print itself."
+    - "Death day: Britannica 8 Oct 2004 vs Wikipedia early hours of 9 Oct 2004 (P25); value keeps Britannica."
   open_questions:
-    - "Read 'Circumfession' in print (Chicago 1993, pp. 154–55) and Derrida and Religion (2005), pp. 46–47."
+    - "Read Circumfession in print (Chicago 1993, pp. 154–55)."
+    - "Routledge print of Derrida and Religion (2005), pp. 46–47, if the S5 extract needs page-image check."
+    - "Any own-voice nature/physical-world claim that could score B under P16 (unlikely; not a scientist)."
 
 sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
     author: "Britannica Editors"
-    citation: "Britannica Editors. \"Jacques Derrida.\" Encyclopaedia Britannica (revised 4 October 2026). https://www.britannica.com/biography/Jacques-Derrida. Read live 2026-10-18."
+    citation: "Britannica Editors. \"Jacques Derrida.\" Encyclopaedia Britannica (revised 4 October 2026). https://www.britannica.com/biography/Jacques-Derrida. Re-read live 2026-10-24."
     url: "https://www.britannica.com/biography/Jacques-Derrida"
-    accessed: 2026-10-18
+    accessed: 2026-10-24
     reliability_note: "Unsigned article. Body and header only; the AI-generated Top Questions are not cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: secondary
@@ -172,8 +179,9 @@ sources:
     author: "Elisabeth M. Loevlie"
     citation: "Loevlie, Elisabeth M. \"Faith in the Ghosts of Literature. Poetic Hauntology in Derrida, Blanchot and Morrison’s Beloved.\" Religions 4, no. 3 (2013): 336–350. https://www.mdpi.com/2077-1444/4/3/336"
     url: "https://www.mdpi.com/2077-1444/4/3/336"
-    accessed: 2026-10-18
+    accessed: 2026-10-24
     reliability_note: "Peer-reviewed open-access article, read directly; quotes 'Circumfession' with page numbers (Chicago 1993) and reports the 2002 exchange from Sherwood and Hart (2005)."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview, timing, lane_b, collaborators]
   - id: S4
     type: secondary
@@ -181,8 +189,9 @@ sources:
     author: "Jon Stanley"
     citation: "Stanley, Jon. \"Why Every Christian Should ‘Quite Rightly Pass for an Atheist’.\" The Other Journal (April 2008). https://theotherjournal.com/2008/04/why-every-christian-should-quite-rightly-pass-for-an-atheist/"
     url: "https://theotherjournal.com/2008/04/why-every-christian-should-quite-rightly-pass-for-an-atheist/"
-    accessed: 2026-10-18
-    reliability_note: "Essay in an online theology journal, read directly; note 1 quotes the 'Circumfession' passage at length with pages (Chicago 1993). Used only to check the wording."
+    accessed: 2026-10-24
+    reliability_note: "Essay in an online theology journal, read directly; note 1 quotes the 'Circumfession' passage at length with pages (Chicago 1993). Used to check Circumfession wording against Loevlie."
+    source_quality: "other"
     used_for: [worldview]
   - id: S3
     type: secondary
@@ -192,7 +201,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-18
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: secondary
+    kind: "book chapter"
+    author: "Jacques Derrida (answer); John D. Caputo (question); eds. Yvonne Sherwood and Kevin Hart"
+    citation: "Sherwood, Yvonne, and Kevin Hart, eds. Derrida and Religion: Other Testaments. New York: Routledge, 2005, pp. 46–47. Long extract of Caputo's question and Derrida's answer reprinted at engage.universityresources.org/course_section/198 (Resources for Engaging the University). Read live 2026-10-24."
+    url: "https://engage.universityresources.org/course_section/198"
+    accessed: 2026-10-24
+    reliability_note: "Course-site reprint of the Routledge pages, not the print volume. Gives Caputo's question (citing Circonfession 146, 155) and Derrida's answer at length, including the 'absolutely ridiculous' refusal of both poles. Cross-checked against Loevlie's shorter report (S2)."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
+  - id: S6
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Jacques Derrida.\" Wikipedia. https://en.wikipedia.org/wiki/Jacques_Derrida. Read live 2026-10-24 (P50 dual bio)."
+    url: "https://en.wikipedia.org/wiki/Jacques_Derrida"
+    accessed: 2026-10-24
+    reliability_note: "Dual-bio check against Britannica (P50). Agrees on birth El Biar 15 July 1930, Paris career, Circumfession as autobiographical text in Bennington volume; death day differs (early hours 9 Oct vs Britannica 8 Oct)."
+    source_quality: "reference entry"
+    used_for: [basics, review]
 ---
 
 # Jacques Derrida
@@ -201,7 +231,7 @@ sources:
 
 ## Summary
 
-Jacques Derrida (1930–2004), French philosopher of deconstruction [S1]. Draft: primary_system and A BELOW_THRESHOLD; B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted.
+Jacques Derrida (1930–2004), French philosopher of deconstruction [S1]. Deepen D1: primary_system and A stay BELOW_THRESHOLD (hedged Circumfession + Caputo refusal of both poles) [S2, S5]; B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted.
 
 ## Life and work
 
@@ -217,7 +247,7 @@ Sephardic Jewish family in French Algeria; ENS from 1949 [S1].
 
 ## Adult working worldview
 
-'I quite rightly pass for an atheist' (1991) [S2, §2].
+'I quite rightly pass for an atheist' (1991) [S2, §2; S4]; Caputo exchange refuses both 'I am an atheist' and 'I am a believer' (2002) [S5].
 
 ## Heritage (context only)
 
@@ -233,8 +263,10 @@ Everything in this section is Lane B: labeled belief, not a finding. 'God' kept 
 
 ## Open questions
 
-- 'Circumfession' in print.
+- Circumfession Chicago 1993 print still pending.
+- Any P16 nature claim (unlikely).
 
 ## Research log
 
 - 2026-10-18: Read Britannica (live), Loevlie (MDPI) and Stanley (The Other Journal) directly.
+- 2026-10-24 (D1): Re-read Britannica; Wikipedia dual bio; Caputo exchange via engage.universityresources.org extract of Sherwood/Hart 2005; Circumfession Chicago 1993 print not reached (IA restricted). Axes unchanged.
