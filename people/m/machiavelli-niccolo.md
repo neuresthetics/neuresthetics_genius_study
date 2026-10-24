@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #121 / F4 rank 122). Goals: further in-span letters/discourses that settle A or B; else strengthen documentation and keep honest BELOW. Opened Discorsi I.11 (Numa nymph simulation; Savonarola 'Io non voglio giudicare s'egli era vero o no'); Discorsi II.2 ('la nostra religione' / 'abbi renduto il mondo debole' — political critique of Christian education, not a personal creed; also allows patria defence under virtù reading). Coder-read Esortazione / Discorso morale on Wikisource (S7): 'ogni cosa è creata per onore e per bene dell’uomo'; confraternity address 'per ubbidire a' miei maggiori'; undated — ruling V2 stands, lead only. Guicciardini letter Carpi 17 May 1521 (S8, after span): 'io non dico mai quello che io credo, né credo mai quel che io dico' — sincerity caveat, not scored. Wikipedia EN (S6, P50). primary / A / B / mid stay BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S8. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): the Esortazione alla penitenza details and quotation marked as coming from the batch V audit's reading, not the coder's. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): MC4, Prince ch. 26 locator p. 99 -> p. 100 (scan p. 110); MC8, the three Discorsi statements relabelled from scholarly edition to the web-copy label (primary transcription, unscanned); ruling V2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with the Esortazione alla penitenza as a lead; note, SEP dates added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 122). Basics from Britannica (Harvey Mansfield) and SEP (Cary Nederman); own-voice passages read in Italian on Wikisource: Il Principe chs. 25–26 (1814 edition, proofread against scans) and Discorsi I.12, I.56, II.5 (Martelli text). Not a scientist (P30). primary_system BELOW_THRESHOLD (scholars divide: anti-Christian, conventional piety, Christian); A, B, D, E BELOW_THRESHOLD; C UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1513–1519 (0.5). Not plotted. Draft, not reviewed."}
@@ -84,19 +85,19 @@ worldview:
   nominal_affiliations:
     - {value: "Catholic Florence; listened to Savonarola's sermons (1498)", certainty: 0.5, cites: [{source: S1, locator: "'Early life and political career'"}], how_known: "Britannica. Context only."}
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "Scholars divide (S2 §4): many read him as 'profoundly anti-Christian, preferring the pagan civil religions'; Parel finds an 'essentially pagan' astral cosmos; others 'a man of conventional, if unenthusiastic, piety'; Grazia, Viroli and Nederman find a Christian, divinely ordered cosmos. Britannica: The Prince 'brought him a reputation as an atheist' (S1). His own texts read are mixed (statements): God 'does not want to do everything' so as not to take away free will (Prince 26), beside a debunking account of miracles 'even in false religions' (Discorsi I.12). Contested readings with no decisive own-voice profession, so below threshold; CHRIST is the named lead. Ruling V2 (v8's call on the auditor's advice, batch V audit): the Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147, 25% transcribed, undated) does not lift CHRIST: it was a confraternity address given on assignment ('per ubbidire a' miei maggiori'), it is undated (P39), and scholars divide on his sincerity (S2 §4). Cited as a lead only; its details and quotation come from the batch V audit's reading, not the coder's."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Deepen D1: scholars still divide (S2 §4; S6 Wikipedia Religion). Own-voice in-span remains mixed: Prince 26 God/free will; Discorsi I.11 Numa simulates a nymph and Savonarola left unjudged ('Io non voglio giudicare s'egli era vero o no'); I.12 miracles even in false religions; II.2 'la nostra religione' as cultural Christianity that (under idle interpretation) 'abbi renduto il mondo debole', while also allowing patria defence. Contested sincerity, no decisive creed profession → BELOW; CHRIST remains the named lead. Ruling V2 stands: Esortazione / Discorso morale (S7, now coder-read) is a confraternity address 'per ubbidire a' miei maggiori', undated (P39), conventional penance rhetoric ('ogni cosa è creata per onore e per bene dell’uomo') — lead only. Guicciardini letter 17 May 1521 (S8) is after the 1513–1519 span and jokes that he never says what he believes — sincerity caveat, not a scored profession."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Lead: Grazia, Viroli, Nederman (S2 §4); Prince 26 on God and free will; the Esortazione alla penitenza (‘ogni cosa è creata per onore e per bene dell’uomo’, per the batch V audit; ruling V2: lead only)."}
+    - {code: CHRIST, reason: "Lead: Grazia, Viroli, Nederman (S2 §4); Prince 26 God and free will; Esortazione (S7, coder-read D1; ruling V2: lead only). Discorsi II.2 'nostra religione' is cultural/political, not a creed profession."}
     - {code: ATHE, reason: "Rejected: a reputation (S1), no stated denial."}
     - {code: HELLEN, reason: "Rejected as a code: his preference for Roman civil religion (S2 §4) is a political judgement about religions, not a stated personal adherence."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Prince 26 speaks of a God who wills and withholds action ('Dio non vuole far ogni cosa'), a lead toward 1; but it is an exhortation to the Medici wrapped in Exodus figures (the sea opened, manna), and scholars contest his sincerity (S2 §4). Named readings: 1 (Grazia, Nederman) or BELOW_THRESHOLD."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Mixed own-voice evidence, none a general statement of lawfulness. Toward the LIO pole: nature purges the human race by flood, plague and famine 'come ne’ corpi semplici' (Discorsi II.5), and the prudent spread belief in miracles 'eziandio false' (I.12). Toward the other pole: portents always precede great events, perhaps sent by intelligences in the air 'avendo compassione agli uomini' (I.56), and Prince 26's 'straordinari senza esempio, condutti da Dio'. Prince 25 leaves fortune 'arbitra della metà delle azioni nostre'. Named readings 2 and 3; not a scientist (P30), so no working-science score."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "Deepen D1: Prince 26 God who wills/withholds ('Dio non vuole far ogni cosa') remains a lead toward 1, but Medici exhortation + Exodus figures + contested sincerity (S2 §4). Discorsi II.2 treats 'la nostra religione' as civic education, not personal locus. Esortazione (S7) conventional Altissimo/creatio — V2 lead only. Named readings: 1 (Grazia, Nederman) or BELOW_THRESHOLD. No decisive own-voice A profession → stay BELOW."}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Deepen D1: still mixed; no clear P16 law/exception. Toward LIO: nature purges 'come ne’ corpi semplici' (II.5); miracles spread 'eziandio false' by the prudent (I.12); Numa invents nymph counsel (I.11). Toward exception/portents: I.56 celestial signs / air intelligences; Prince 26 'straordinari… condutti da Dio'; Prince 25 fortune half of actions. Not a scientist (P30). Named readings 2 and 3. Stay BELOW."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on reward and punishment of persons in his own view (P19)."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "Lead only: rulers should favour things that support religion 'come che le giudicassono false', the more so 'quanto più conoscitori delle cose naturali' (Discorsi I.12). Religion judged by political use, not a stated rule on revelation against observation."}
+    D_authority: {value: BELOW_THRESHOLD, how_known: "Deepen D1 lead strengthened: I.12 favour even what one judges false; I.11 Numa simulates nymph intimacy and lawgivers 'ricorrono a Dio' when reasons lack evidence — political use of religion, not a revelation-vs-observation rule. Stay BELOW."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Lead: Discorsi II.5 puts 'questo corpo misto della umana generazione' under the same purging as simple bodies; but I.56's warning signs out of compassion for men point the other way. Not enough for a score."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B are BELOW_THRESHOLD; no branch of the P4 test is met."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "Deepen D1: A and B still BELOW_THRESHOLD; no branch of the P4 test is met. Not plotted."}
   statements:
     - text: "Nondimanco, perchè il nostro libero arbitrio non sia spento, giudico potere esser vero, che la fortuna sia arbitra della metà delle azioni nostre, ma che ancora ella ne lasci governare l’altra metà, o poco meno, a noi."
       cites: [{source: S3, locator: "cap. XXV, p. 95"}]
@@ -143,8 +144,43 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-19
       note: "Martelli text on Wikisource; web copy as above. Dated by the start of composition (1514 or 1515 to 1518 or 1519, S2)."
+    - text: "Io non voglio giudicare s’egli era vero o no, perché d’uno tanto uomo se ne debbe parlare con riverenza: ma io dico bene, che infiniti lo credevono sanza avere visto cosa nessuna straordinaria, da farlo loro credere"
+      cites: [{source: S4, locator: "Libro I, cap. 11"}]
+      date: "1514"
+      context: "Discorsi I.11, on Numa and Roman religion; Savonarola as example that Florentines believed he spoke with God. Preceded by Numa simulating intimacy with a nymph to introduce new orders."
+      axes: [A_locus, D_authority]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Deepen D1. Political epistemology of prophetic claims; deliberately suspends judgment on truth. Web copy (Martelli/Wikisource) as S4."
+    - text: "Questo modo di vivere, adunque, pare che abbi renduto il mondo debole, e datolo in preda agli uomini scelerati… E benché paia che si sia effeminato il mondo, e disarmato il Cielo, nasce più sanza dubbio dalla viltà degli uomini, che hanno interpretato la nostra religione secondo l’ozio, e non secondo la virtù."
+      cites: [{source: S4, locator: "Libro II, cap. 2"}]
+      date: "1514"
+      context: "Discorsi II.2, comparing ancient and Christian education on love of liberty. Earlier in the chapter: 'avendoci la nostra religione mostro la verità e la vera via'."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Deepen D1. Cultural 'nostra religione' + political critique; also says Christianity permits patria defence if read according to virtù. Used by scholars for anti-Christian and for reformist-Christian readings — does not settle CHRIST or A."
+    - text: "da un tempo in qua, io non dico mai quello che io credo, né credo mai quel che io dico, et se pure e’ mi vien detto qualche volta il vero, io lo nascondo fra tante bugie, che è difficile a ritrovarlo."
+      cites: [{source: S8, locator: "letter body, Carpi"}]
+      date: "1521-05-17"
+      context: "Letter to Francesco Guicciardini from Carpi, joking about friars and reputation. After the 1513–1519 major-work span."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Deepen D1. After-span sincerity caveat (P1); not used to score. Documents why contested readings stay BELOW."
+    - text: "Adunque ogni cosa è creata per onore e per bene dell’uomo, e l’uomo è solo creato per bene e onore di Dio"
+      cites: [{source: S7, locator: "Opere VI pp. 143–144 (Wikisource Discorso morale)"}]
+      context: "Esortazione alla penitenza / Discorso morale; confraternity address beginning 'per ubbidire a’ miei maggiori'. Undated (P39) — date field omitted."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+      note: "Deepen D1: coder-read. Ruling V2 — lead only; assignment speech, undated, conventional penance rhetoric; scholars divide on sincerity (S2 §4)."
   changes_over_life: []
-  coder_notes: "Coder's call on the span: 1513 (The Prince) to 1519 (completion of the Discourses, SEP 'completed in 1518 or 1519'; P30 end of range). Florentine Histories (1525) and The Art of War (1521) are major works but not listed as lasting from the sources read; listing the Histories would end the span in 1525. Not a scientist (P30). The religion fields are below threshold because scholars divide (S2 §4) and his own passages pull both ways; the axes name readings rather than score them. Leads: Discorsi I.11–15 and II.2 (Christianity 'ha renduto il mondo debole', not read here); the letter to Guicciardini of 17 May 1521; the 'Esortazione alla penitenza'. Italian quotations kept verbatim; no translation inside quotation marks. Not plotted."
+  coder_notes: "Deepen D1 2026-10-24: opened Discorsi I.11 and II.2; coder-read Esortazione (S7); Guicciardini 17 May 1521 (S8, after span). primary/A/B/mid stay BELOW. Ruling V2 stands. Span unchanged 1513–1519 (coder's call; alt end 1525). Not a scientist (P30). Italian quotations kept verbatim. Chart-moving NO. Not plotted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -187,9 +223,12 @@ review:
   data_quality_flags:
     - "Religion fields rest on contested readings; the own-voice passages read pull both ways."
     - "Discorsi quotations are from a Wikisource text of the Martelli edition without scans (web copy)."
+    - "Esortazione undated (P39); Guicciardini letter after span (P1)."
     - "Span end is a coder's call (1519 vs 1525)."
   open_questions:
-    - "Discorsi I.11–15, II.2; letter to Guicciardini, 17 May 1521; Esortazione alla penitenza (it.wikisource 'Discorso morale', Opere VI pp. 142–147; a lead under ruling V2, not read by the coder; the quotation in candidate_codes comes from the batch V audit's reading)."
+    - "Discorsi I.13–15 (augury chapters) if any clearer P16 than I.12/I.56/II.5."
+    - "In-span private letters (Vettori circle 1513–1515) with non-formula locus — none scored this pass."
+    - "L'Asino d'oro / Mandragola theology asides (low prior; drama/poetry P42 care)."
 
 sources:
   - id: S1
@@ -200,6 +239,7 @@ sources:
     url: "https://www.britannica.com/biography/Niccolo-Machiavelli"
     accessed: 2026-10-19
     reliability_note: "Signed article (Mansfield, Harvard); facts box, 'Early life and political career' and 'Writings' cited; question boxes not cited."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, institutions, collaborators, review, worldview]
   - id: S2
     type: tertiary
@@ -209,6 +249,7 @@ sources:
     url: "https://plato.stanford.edu/entries/machiavelli/"
     accessed: 2026-10-19
     reliability_note: "Signed scholarly encyclopedia (first published 13 Sep 2005; substantive revision 6 Dec 2023); §1, §2, §4, §6 and §9 used."
+    source_quality: "reference entry"
     used_for: [basics, contribution, worldview, timing]
   - id: S3
     type: primary
@@ -218,6 +259,7 @@ sources:
     url: "https://it.wikisource.org/wiki/Il_Principe"
     accessed: 2026-10-19
     reliability_note: "Proofread (level 4) transcription tied to page scans of a named printed edition; printed page numbers cited."
+    source_quality: "primary / own words"
     used_for: [worldview]
   - id: S4
     type: primary
@@ -226,7 +268,8 @@ sources:
     citation: "Machiavelli, Niccolò. Discorsi sopra la prima Deca di Tito Livio. In Tutte le opere, ed. Mario Martelli (Firenze: Sansoni, 1971). Wikisource text. https://it.wikisource.org/wiki/Discorsi_sopra_la_prima_Deca_di_Tito_Livio"
     url: "https://it.wikisource.org/wiki/Discorsi_sopra_la_prima_Deca_di_Tito_Livio"
     accessed: 2026-10-19
-    reliability_note: "Web copy of the Martelli text (via LiberLiber/Einaudi), marked 75% and re-read against the book per the talk page; no scans. Cited by book and chapter."
+    reliability_note: "Web copy of the Martelli text (via LiberLiber/Einaudi), marked 75% and re-read against the book per the talk page; no scans. Cited by book and chapter. Deepen D1 also used I.11 and II.2 from the same Wikisource tree."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing]
   - id: S5
     type: secondary
@@ -236,7 +279,38 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S6
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: 'Wikipedia contributors. "Niccolò Machiavelli." Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli. Read 2026-10-24 (P50 frozen-roster dual bio / Religion section cross-check).'
+    url: "https://en.wikipedia.org/wiki/Niccol%C3%B2_Machiavelli"
+    accessed: 2026-10-24
+    reliability_note: "P50: dual bio dates; Religion section summarises scholarly divide (Black, de Grazia, Viroli, Strauss) already in S2. Not used to raise scores."
+    source_quality: "reference entry"
+    used_for: [basics, worldview, review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Niccolò Machiavelli"
+    citation: "Machiavelli, Niccolò. Discorso morale (Esortazione alla penitenza). In Opere di Niccolò Machiavelli, vol. VI. Wikisource transcription (Indice:Opere di Niccolò Machiavelli VI.djvu). https://it.wikisource.org/wiki/Discorso_morale. Read 2026-10-24."
+    url: "https://it.wikisource.org/wiki/Discorso_morale"
+    accessed: 2026-10-24
+    reliability_note: "Partial Wikisource transcription (some pages image-only); confraternity address; undated. Ruling V2: lead only."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Niccolò Machiavelli"
+    citation: "Machiavelli, Niccolò. Lettera a Francesco Guicciardini, Carpi, 17 maggio 1521. Wikisource: Lettere (Machiavelli)/Lettera I a Francesco Guicciardini. https://it.wikisource.org/wiki/Lettere_(Machiavelli)/Lettera_I_a_Francesco_Guicciardini. Read 2026-10-24."
+    url: "https://it.wikisource.org/wiki/Lettere_(Machiavelli)/Lettera_I_a_Francesco_Guicciardini"
+    accessed: 2026-10-24
+    reliability_note: "After major-work span (P1). Jocular; sincerity caveat documented, not scored."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
 ---
 
 # Niccolò Machiavelli
@@ -245,7 +319,7 @@ sources:
 
 ## Summary
 
-Niccolò Machiavelli (1469–1527), Florentine secretary and political philosopher [S1]. Draft: primary_system BELOW_THRESHOLD (CHRIST lead); A, B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
+Niccolò Machiavelli (1469–1527), Florentine secretary and political philosopher [S1]. Deepen D1: primary_system BELOW_THRESHOLD (CHRIST lead; ruling V2); A, B, mid BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 
@@ -261,7 +335,7 @@ Son of Bernardo, a doctor of laws; humanist education [S1].
 
 ## Adult working worldview
 
-Scholars divide on his religion [S2]. His own passages: God leaves room for free will (Prince 26) [S3]; miracles spread by the prudent even in false religions (Discorsi I.12); portents precede great events (I.56); nature purges the human race (II.5) [S4].
+Scholars divide on his religion [S2, S6]. Own-voice: Prince 26 God/free will [S3]; Discorsi I.11 Numa/Savonarola; I.12 miracles even in false religions; I.56 portents; II.2 Christian education and liberty; II.5 nature’s purge [S4]. Esortazione lead only (V2) [S7]. Guicciardini 1521 after-span sincerity caveat [S8].
 
 ## Heritage (context only)
 
@@ -277,8 +351,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- Discorsi I.11–15 and II.2; letters.
+- Discorsi I.13–15; in-span Vettori letters; L'Asino / Mandragola (P42 care).
 
 ## Research log
 
 - 2026-10-19: Read Britannica, SEP, Il Principe chs. 25–26 and Discorsi I.12, I.56, II.5 on Wikisource.
+- 2026-10-24: Deepen D1 — Discorsi I.11, II.2; Esortazione (coder-read); Guicciardini 17 May 1521; Wikipedia EN. Scores unchanged BELOW. Chart-moving NO.
