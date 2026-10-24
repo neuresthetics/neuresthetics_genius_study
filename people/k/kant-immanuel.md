@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 6
+  schema_version: "1.3"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #41). Schema 1.2→1.3. P47 source_quality on S1–S8. P48 support: corroborated added on A–E (already computed from multi-source cites). Re-verified AA V 125 and AA III 363 on Bonner Kant-Korpus. Parents named (Johann Georg Kant; Anna Regina Reuter); baptism 1724-04-23 Kneiphof cathedral as Emanuel (Naragon chronology S8; NDB agrees). Schooling stages migrated (grammar/secondary + run_by religious body; university + run_by). Freedom quote (A533/B561) added as statement. Summary body synced (KANT @0.7, not stub). A 1 @0.7 / B 3 @0.7 unchanged; mid_basin true @0.7. Chart already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK12): B 3 now also cites his own text on freedom, KrV A533/B561 (AA III 363: 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht'). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling (2026-10-19, 'fix them'; TF7 of the batch T audit, held until now): B_cause 4 -> 3 at 0.7, alternative 4, per P30 #14 (noumenal freedom is B 3's one exception; Kant is B 3 as the value). mid_basin stays true at 0.7 (A 1, B 3, both at 0.7). Plotted point moves one column left; dot stays solid."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Immanuel Kant' (Rohlf) and Britannica (Bird, first page); religion from SEP 'Kant's Philosophy of Religion' (Pasternack). Worldview quotations read in the Akademie-Ausgabe text of the Bonner Kant-Korpus (AA III, V, VI), a scholarly edition. DRAFT SCORES for v8's review: primary_system BELOW_THRESHOLD (best fit KANT is a stub file); A 1, B 4, C 1, D 4, E 4, all at 0.7; mid_basin true (0.7). Not reviewed."}
@@ -70,12 +71,12 @@ childhood:
   family_religion: {value: "Lutheran Pietist", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources: both parents were Pietists (devoted followers of the Pietist branch of the Lutheran church)."}
   family_religious_practice: {value: "Devout Pietist parents; his mother's 'genuine religiosity' he described as 'not at all enthusiastic'", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
   parents_and_household:
-    - {value: "Father, a master harness maker (saddler); died 1746", role: father, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; his name is not given in the pages read."}
-    - {value: "Mother, daughter of a harness maker, better educated than most women of her class", role: mother, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "SEP; Britannica praises her character and intelligence."}
+    - {value: "Father Johann Georg Kant (1683–1746), master harness maker (Riemermeister); died 1746", role: father, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}, {source: S8, locator: "1715; 1724; 1746"}], how_known: "SEP/Britannica on trade and death; Naragon chronology names Johann Georg with dates."}
+    - {value: "Mother Anna Regina Reuter (1697–1737), daughter of harness maker Caspar Reuter; died 1737", role: mother, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}, {source: S8, locator: "1715; 1724; 1737"}], how_known: "SEP/Britannica on character and trade family; Naragon names Anna Regina Reuter with dates."}
   household_circumstances: {value: "Artisan family of modest means, the fourth of nine children and eldest surviving; never destitute but at times dependent on extended family", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
   schooling:
-    - {value: "Collegium Fridericianum, a Pietist Latin school (gymnasium) directed by Franz Albert Schultz, the family's pastor", stage: "religious school", years: "1732–1740", certainty: 0.7, cites: [{source: S1, locator: "§1 (ages eight through fifteen)"}, {source: S3, locator: "'Background and early years' (from age eight, eight and a half years; directed by his pastor)"}, {source: S2, locator: "§2.1.1 (directed by Schultz)"}], how_known: "Three sources; the length differs (ages 8–15 vs eight and a half years); years are the coder's arithmetic. That Schultz was the pastor Britannica mentions is the coder's link of S2 and S3 (flag)."}
-    - {value: "University of Königsberg (the Albertina): philosophy, mathematics and physics; enrolled as a theological student per Britannica", stage: university, years: "1740–c. 1746", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; the end year is approximate (father's death in 1746 forced him to withdraw, S3)."}
+    - {value: "Collegium Fridericianum, a Pietist Latin school (gymnasium) directed by Franz Albert Schultz, the family's pastor", stage: "grammar or secondary school", run_by: "religious body", years: "1732–1740", certainty: 0.7, cites: [{source: S1, locator: "§1 (ages eight through fifteen)"}, {source: S3, locator: "'Background and early years' (from age eight, eight and a half years; directed by his pastor)"}, {source: S2, locator: "§2.1.1 (directed by Schultz)"}, {source: S8, locator: "1732"}], how_known: "Three+ sources; the length differs (ages 8–15 vs eight and a half years); years are the coder's arithmetic. That Schultz was the pastor Britannica mentions is the coder's link of S2 and S3 (flag). Schema 1.3: stage = level; run_by = Pietist religious body."}
+    - {value: "University of Königsberg (the Albertina): philosophy, mathematics and physics; enrolled as a theological student per Britannica", stage: university, run_by: "state or municipal", years: "1740–c. 1746", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}, {source: S8, locator: "1740"}], how_known: "Two+ sources; the end year is approximate (father's death in 1746 forced him to withdraw, S3)."}
   early_mathematics: {value: "other", note: "Mathematics and physics in first-year philosophy at the Albertina, from 1740 (age 16): philosophy 'encompassed mathematics and physics' (SEP), and he was 'principally attracted to mathematics and physics' (Britannica). The level he reached is not stated.", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources; neither gives a level, so the value is 'other' with a description, as in the Bohr record, not 'advanced mathematics' (lens audit #405). This is at university (age 16+), inside the before-18 window."}
   early_geometric_style_reasoning: {value: "Latin classics at school; Wolffian rationalist philosophy and Newton at university (Knutzen)", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
   early_science_exposure:
@@ -90,7 +91,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1746–1798", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "First book to the Conflict of the Faculties."}
+  working_years: {value: "1755–1798", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Equals timing.major_work_period (P30): Universal Natural History to the Conflict of the Faculties. Living Forces (1746/47) is not a listed lasting contribution."}
   nominal_affiliations:
     - {value: "Lutheran by upbringing (Pietist)", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "§2.1.1"}], how_known: "Upbringing from both SEP entries; his adult church practice is not stated in what was read."}
   self_described_science_religion_relation:
@@ -117,6 +118,7 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "AA V 124–125"}, {source: S2, locator: "§3.3.1; §3.5.1"}]
       how_known: "His own published text in a scholarly edition; capped at 0.7 because SEP names competing readings (S2 §3.3.1)."
       rationale: "DRAFT. Leans to the transcendent-person pole: the postulate is 'das Dasein einer von der Natur unterschiedenen Ursache der gesammten Natur', and that cause is 'ein Wesen, das durch Verstand und Willen die Ursache (folglich der Urheber) der Natur ist, d. i. Gott' (KpV, AA V 125): distinct from nature, with understanding and will. Not 0, because God is held only as a postulate, 'subjectiv, d. i. Bedürfniß' (AA V 125), and is not known. Named alternatives: 0 (personal author and judge), and 2 or BELOW_THRESHOLD on the reading that God is held 'Only as a mere symbol' (S2 §3.3.1.2, heading)."
@@ -124,6 +126,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "AA III 166"}, {source: S4, locator: "AA III 363 (A533/B561)"}, {source: S6, locator: "AA VI 87–88"}, {source: S1, locator: "§5.2"}]
       how_known: "His own published texts in a scholarly edition; a named alternative (4), so 0.7. Jason's ruling (2026-10-19, 'fix them'), applying P30 #14."
       rationale: "Scored on his account of nature (P6). Lawful nature: 'Alle Veränderungen geschehen nach dem Gesetze der Verknüpfung der Ursache und Wirkung' (KrV, Second Analogy, AA III 166); the natural scientist's business is to seek the causes of events 'in dieser ihren Naturgesetzen' (Religion, AA VI 87), and experiences 'sind [...] nichts anders als Naturwirkungen und sollen auch nie anders beurtheilt werden' (AA VI 88). B 3 as the value, not 4, under P30 #14: B 3's one exception (P27) includes a free will not bound by natural law, and Kant's noumenal freedom is the named case: in his own words freedom in the cosmological sense is 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht' (KrV A533/B561, AA III 363); SEP: the free self is 'not part of nature' (S1 §5.2) ('Kant is B 3 as the value, not as an alternative'). He also does not deny miracles: he does not take them into his maxims 'ohne doch ihre Möglichkeit oder Wirklichkeit anzufechten' (AA VI 88 n.). Named alternative 4: reason must either admit miracles daily or never, and only 'never' is compatible with reason (AA VI 88)."
@@ -131,6 +134,7 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "AA V 124–125"}, {source: S1, locator: "§6"}]
       how_known: "His own published text in a scholarly edition; a named alternative (2)."
       rationale: "DRAFT, judgment call. Leans to personal reward: the highest good is happiness in 'der genauen Übereinstimmung der Glückseligkeit mit der Sittlichkeit', and a supreme cause of nature is postulated to secure it (AA V 125), with the immortality postulate (AA V 124; S1 §6.2). Limited: the moral law must be followed without regard to reward, and happiness follows worthiness by the author of nature rather than by a ledger of rites; the postulate is a need of reason, not knowledge. Named alternative: 2."
@@ -138,6 +142,7 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S6, locator: "AA VI 153–155"}, {source: S4, locator: "AA III 19"}]
       how_known: "His own published texts in a scholarly edition; a named alternative (3)."
       rationale: "DRAFT. At the reason pole: religion is 'das Erkenntniß aller unserer Pflichten als göttlicher Gebote' (AA VI 153); in natural religion one must first know that something is a duty before recognising it as a divine command (AA VI 154); a statutory church is the true one only in so far as it approaches 'dem reinen Vernunftglauben' and can in time do without church faith (AA VI 153). Named alternative: 3, because he does not contest the possibility of revelation or its use as a vehicle (AA VI 155), and SEP reads his religion as more affirmative of Christian doctrine (S2 §3.6)."
@@ -145,6 +150,7 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "AA III 166"}, {source: S6, locator: "AA VI 87–88; 194"}]
       how_known: "His own published texts in a scholarly edition; a named alternative (3)."
       rationale: "DRAFT. Scored on the world's order (P7). At the LIO pole: one law of cause and effect for all changes (AA III 166); 'In Geschäften kann man also unmöglich auf Wunder rechnen' (AA VI 87); and petition as a means of grace is 'ein abergläubischer Wahn (ein Fetischmachen)' (AA VI 194). No favour for a group in events. The ethical community and the highest good are C matters (P7). Named alternative: 3 (miracles not denied, AA VI 88 n.)."
@@ -166,6 +172,14 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
+    - text: "Dagegen verstehe ich unter Freiheit im kosmologischen Verstande das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht, welche sie der Zeit nach bestimmte."
+      cites: [{source: S4, locator: "AA III 363 (A533/B561)"}]
+      date: "1787"
+      context: "Critique of Pure Reason, Third Antinomy resolution: cosmological freedom as the named B 3 exception (P30 #14; Jason 2026-10-19)."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
     - text: "Also wird auch das Dasein einer von der Natur unterschiedenen Ursache der gesammten Natur, welche den Grund dieses Zusammenhanges, nämlich der genauen Übereinstimmung der Glückseligkeit mit der Sittlichkeit, enthalte, postulirt."
       cites: [{source: S5, locator: "AA V 125"}]
       date: "1788"
@@ -232,19 +246,19 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Pre-critical natural theology (his own argument for God's existence in The Only Possible Argument, 1763) gave way in the critical period to the denial of theoretical proofs and a moral faith", year: "1763; 1781", certainty: 0.7, cites: [{source: S2, locator: "§2.2.1; §2.2.3; §3.1.2"}], how_known: "SEP Pasternack."}
-  coder_notes: "DRAFT SCORES for v8's review. All own-word quotations were read in the Bonner Kant-Korpus (korpora.org), the electronic text of the Akademie-Ausgabe, and are cited by AA volume and page; the §7 cap for unofficial copies does not apply, but every axis names an alternative, so all sit at 0.7. German quoted as printed in AA (e.g. 'Erkenntniß', 'nothwendig'). The Gutenberg English texts (Abbott, Meiklejohn) were downloaded but not used for quotations. primary_system is KANT @0.7 under the founders rule (S5 audit follow-up, 2026-10-15; formerly BELOW_THRESHOLD by the stub rule). Region coded by modern country (Russia), which puts a Prussian in Eastern Europe (flag)."
+  coder_notes: "DRAFT SCORES for v8's review. All own-word quotations were read in the Bonner Kant-Korpus (korpora.org), the electronic text of the Akademie-Ausgabe, and are cited by AA volume and page; the §7 cap for unofficial copies does not apply, but every axis names an alternative, so all sit at 0.7. German quoted as printed in AA (e.g. 'Erkenntniß', 'nothwendig'). The Gutenberg English texts (Abbott, Meiklejohn) were downloaded but not used for quotations. primary_system is KANT @0.7 under the founders rule (S5 audit follow-up, 2026-10-15; formerly BELOW_THRESHOLD by the stub rule). Region coded by modern country (Russia), which puts a Prussian in Eastern Europe (flag). Deepen D1 2026-10-24: P47/P48 applied; AA V 125 and III 363 re-verified; baptism and parent names from Naragon (S8); scores unchanged; already dark filled."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German-speaking artisan family of Königsberg; Kant claimed a Scottish descent for his father, for which scholars found no basis", certainty: 0.7, cites: [{source: S3, locator: "'Background and early years'"}, {source: S1, locator: "§1"}], how_known: "Britannica on the claim; SEP on the family."}
   religious_heritage_by_birth: {value: "Lutheran Pietist", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
-  baptism_or_initiation: {value: TODO}
+  baptism_or_initiation: {value: "Baptized 1724-04-23 in the Kneiphof cathedral, Königsberg, with the baptismal name Emanuel (later spelled Immanuel)", certainty: 0.7, cites: [{source: S8, locator: "1724 (April 23)"}], how_known: "Naragon scholarly chronology (baptism record noted); NDB agrees on next-day baptism as Emanuel."}
   childhood_catechism: {value: "Pietist schooling at the Collegium Fridericianum", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "'Background and early years'"}], how_known: "Two sources."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1755–1798", certainty: 1.0, cites: [{source: S1, locator: "§1"}], how_known: "Universal Natural History to the Conflict of the Faculties."}
-  age_at_first_lasting_contribution: {value: 31, certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "Born April 1724; Universal Natural History 1755."}
+  age_at_first_lasting_contribution: {value: 31, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Born April 1724 (dual-sourced); Universal Natural History 1755; 1755 − 1724 = 31 (P30)."}
   first_evidence_of_lio_type_views: {value: "Lawful mechanical formation of the solar system (nebular hypothesis) in Universal Natural History", year: 1755, age: 31, certainty: 0.5, cites: [{source: S1, locator: "§1"}], how_known: "SEP names the hypothesis; reading it as an LIO-type view of nature is the coder's, and the book itself was not read."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "Lawful nature from 1755; the full exclusion of miracles from the maxims of reason in 1793.", certainty: 0.5, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "AA VI 87–88"}], how_known: "Dates of what was read."}
   worldview_during_major_work: {value: "Moral faith of the critical period (coded KANT, founders rule)", certainty: 0.7, cites: [{source: S5, locator: "AA V 125"}, {source: S6, locator: "AA VI 153"}], how_known: "His own texts of 1788 and 1793."}
@@ -276,8 +290,9 @@ review:
     - "Region by modern country puts Königsberg (now Kaliningrad) in Eastern Europe."
     - "Britannica read as its first page only."
   open_questions:
-    - "Fill the KANT system file; then recode primary_system (founders rule)."
-    - "Decide how far the 'symbol only' reading of his God (S2 §3.3.1.2) should move A."
+    - "Symbol-only reading of God (S2 §3.3.1.2) remains a named A alternative; not chosen — A stays 1 @ 0.7."
+    - "KANT system file exists as sourced draft (systems/KANT.md); person primary_system already KANT @ 0.7 under founders rule."
+    - "Britannica full article beyond first page still unread (Cloudflare on 2026-10-24 re-fetch)."
 
 sources:
   - id: S1
@@ -288,6 +303,7 @@ sources:
     citation: "Rohlf, Michael. \"Immanuel Kant.\" Stanford Encyclopedia of Philosophy (substantive revision 31 Jul 2024). https://plato.stanford.edu/entries/kant/."
     url: "https://plato.stanford.edu/entries/kant/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Scholarly reference work; §1, §2.2, §5–6 read. Cited by section."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S2
@@ -298,6 +314,7 @@ sources:
     citation: "Pasternack, Lawrence, and Courtney Fugate. \"Kant's Philosophy of Religion.\" Stanford Encyclopedia of Philosophy (substantive revision 13 Oct 2025). https://plato.stanford.edu/entries/kant-religion/."
     url: "https://plato.stanford.edu/entries/kant-religion/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Scholarly reference work; §1, §2.1.1, §3.2, §3.3.1 (with §3.3.1.2, 'Only as a mere symbol'), §3.5.1, §3.6 read (revision of 13 Oct 2025; the §3.3.1.2 heading was rechecked in the live entry on 2026-10-02). Cited by section."
     used_for: [contribution, worldview, review]
   - id: S3
@@ -307,7 +324,8 @@ sources:
     citation: "Bird, Otto Allen, and Brian Duignan. \"Immanuel Kant.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Immanuel-Kant."
     url: "https://www.britannica.com/biography/Immanuel-Kant"
     accessed: 2026-10-02
-    reliability_note: "Signed article; first page only. Cited by section heading."
+    source_quality: "reference entry"
+    reliability_note: "Signed article; first page only. Cited by section heading. Re-fetch 2026-10-24 hit Cloudflare; prior read retained."
     used_for: [identity, basics, contribution, childhood, heritage, institutions, collaborators]
   - id: S4
     type: primary
@@ -317,7 +335,8 @@ sources:
     citation: "Kant, Immanuel. Kritik der reinen Vernunft, 2. Auflage 1787. In Kant's gesammelte Schriften, ed. Königlich Preußische Akademie der Wissenschaften, vol. III. Electronic edition: Bonner Kant-Korpus, https://korpora.org/kant/aa03/."
     url: "https://korpora.org/kant/aa03/"
     accessed: 2026-10-02
-    reliability_note: "Akademie-Ausgabe text of the second edition (1787), cited by AA volume and page (pages 19 and 166 read)."
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Akademie-Ausgabe text of the second edition (1787), cited by AA volume and page. AA III 19, 166, 363 re-verified on korpora.org 2026-10-24."
     used_for: [worldview]
   - id: S5
     type: primary
@@ -327,7 +346,8 @@ sources:
     citation: "Kant, Immanuel. Kritik der praktischen Vernunft (1788). Akademie-Ausgabe vol. V. Electronic edition: Bonner Kant-Korpus, https://korpora.org/kant/aa05/."
     url: "https://korpora.org/kant/aa05/"
     accessed: 2026-10-02
-    reliability_note: "Akademie-Ausgabe text, cited by AA page (124–125 read)."
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Akademie-Ausgabe text, cited by AA page. AA V 124–125 re-verified on korpora.org 2026-10-24."
     used_for: [worldview, lane_b]
   - id: S6
     type: primary
@@ -337,6 +357,7 @@ sources:
     citation: "Kant, Immanuel. Die Religion innerhalb der Grenzen der bloßen Vernunft (1793). Akademie-Ausgabe vol. VI. Electronic edition: Bonner Kant-Korpus, https://korpora.org/kant/aa06/."
     url: "https://korpora.org/kant/aa06/"
     accessed: 2026-10-02
+    source_quality: "scholarly edition or monograph"
     reliability_note: "Akademie-Ausgabe text, cited by AA page (84–89, 153–155, 194–196 read)."
     used_for: [worldview, timing]
   - id: S7
@@ -346,8 +367,20 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S8
+    type: secondary
+    kind: "other"
+    author: "Steve Naragon"
+    year: 2025
+    citation: 'Naragon, Steve. "Kant''s Life: Chronology." Manchester University Kant site. https://users.manchester.edu/facstaff/ssnaragon/kant/helps/KantsLife.htm.'
+    url: "https://users.manchester.edu/facstaff/ssnaragon/kant/helps/KantsLife.htm"
+    accessed: 2026-10-24
+    source_quality: "other"
+    reliability_note: "Scholarly chronology by a Kant specialist (draws on Haupt genealogy, early bios, NDB). Used for parent names/dates and baptism 23 Apr 1724 Kneiphof. Not a peer-reviewed monograph."
+    used_for: [childhood, heritage]
 ---
 
 # Immanuel Kant
@@ -356,7 +389,7 @@ sources:
 
 ## Summary
 
-Immanuel Kant (1724–1804), German philosopher of Königsberg, founded the critical philosophy [S1; S3]. He limited knowledge to appearances to make room for faith [S4, AA III 19], postulated a God distinct from nature on moral grounds [S5, AA V 125], and excluded miracles and petition from the maxims of reason [S6, AA VI 87–88, 194]. primary_system BELOW_THRESHOLD (KANT is a stub). Axes A 1, B 3 (alt 4), C 1, D 4, E 4, all at 0.7; mid_basin true at 0.7 (draft).
+Immanuel Kant (1724–1804), German philosopher of Königsberg, founded the critical philosophy [S1; S3]. He limited knowledge to appearances to make room for faith [S4, AA III 19], postulated a God distinct from nature on moral grounds [S5, AA V 125], and excluded miracles and petition from the maxims of reason [S6, AA VI 87–88, 194]. primary_system KANT @ 0.7 (founders rule). Axes A 1, B 3 (alt 4), C 1, D 4, E 4, all at 0.7, support corroborated; mid_basin true at 0.7. Chart: dark filled.
 
 ## Life and work
 
@@ -368,7 +401,7 @@ Transcendental idealism, the categorical imperative and the nebular hypothesis [
 
 ## Childhood and education
 
-Artisan Pietist family; Collegium Fridericianum from age eight; Newton through Knutzen [S1, §1; S3].
+Artisan Pietist family (Johann Georg Kant; Anna Regina Reuter); baptized Kneiphof 23 Apr 1724 as Emanuel [S8]; Collegium Fridericianum from age eight; Newton through Knutzen [S1, §1; S3].
 
 ## Adult working worldview
 
@@ -388,9 +421,11 @@ Everything in this section is Lane B: labeled belief, not a finding. Circle abse
 
 ## Open questions
 
-- Fill KANT; settle the founders-rule conflict.
+- Symbol-only God reading (S2 §3.3.1.2) remains A alternative; A stays 1.
+- Britannica beyond first page unread (Cloudflare 2026-10-24).
 
 ## Research log
 
 - 2026-10-02: Read SEP "Immanuel Kant" (Rohlf), SEP "Kant's Philosophy of Religion" (Pasternack), Britannica (Bird, first page), and the Bonner Kant-Korpus pages AA III 19, 166; V 124–125; VI 84–89, 153–155, 194–196. Wikipedia not used.
 - 2026-10-02 (lens audit fixes): Re-fetched the live SEP "Kant's Philosophy of Religion" (rev. 13 Oct 2025) to check §3.3.1.2, and re-read Britannica "Background and early years" and Religion AA VI 88 n. and VI 155.
+- 2026-10-24 (deepen D1, queue #41): Schema 1.3; P47 on S1–S8; support corroborated on A–E; re-verified AA V 125 and III 363; Naragon chronology (S8) for parents and baptism; freedom statement added; scores unchanged; not chart-moving. No fallacy_catalog.
