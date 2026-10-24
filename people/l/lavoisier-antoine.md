@@ -2,18 +2,19 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #64 (both runs): the King letter's date is Grimaux p. 53 n. 1, not n. 2; n. 2 (lay patron of the chapel of his château of Fréchines, chaplain named by deed of 7 Aug 1781 and paid 290 livres a year) added as a nominal affiliation and in the CHRIST candidate, cited to p. 53 n. 2. #51: single-letter rule cited as CODING_GUIDE §3 (secondary quotation §7). #61: first_lasting_contribution_year 1774 → 1772 (0.5): 1774 is Priestley's visit; his own combustion experiments date from 1772 (sealed note of 1 Nov 1772, Grimaux p. 103 and n. 1), with the Easter 1775 memoir (p. 108) as the alternative; age 31 → 29; era bucket unchanged. #65: trailing cut of the 1791 quotation marked [...]. No worldview score changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); first lasting year per P13/P23, no coder's-choice wording; Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1772–1789 unchanged; worldview.working_years 1764–1794 → 1772–1789, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #83, F4 rank 84). Needs: A BELOW_THRESHOLD; B 4 @0.7 (strengthen corroboration). Re-checked Traité élémentaire 1789 conservation (S4 IA + Gutenberg #52487 French text); Kerr 1790 English translation (S7, Gutenberg #30775) 'nothing is created… equal quantity of matter'; Britannica Donovan 'Conservation of mass' (S1) fully re-read; SHI (S2) silent on religion; Grimaux p. 53 King letter + 'il en avait gardé les croyances' re-checked on IA OCR; Catholic Encyclopedia 1913 (Wikisource) reprints Grimaux King letter (finding aid, not a new locus); Wikipedia EN (S8, P50 dual-bio) — category 'French Roman Catholics' is heritage tagging only. Correspondance vol. V (1787–1788, Académie des Sciences 1993) not freely available this pass; Scheler & Smeaton 1958 Annals of Science still unread (Taylor & Francis paywall). P47 source_quality on S1–S8. B 4 @0.7 labelled support corroborated (P48; cites S4+S1). A stays BELOW_THRESHOLD (King letter + Grimaux claim + chapel patronage + Almanach hearsay still do not place or deny God; no own-voice locus). primary_system stays BELOW_THRESHOLD (CHRIST considered, not coded). mid_basin BELOW_THRESHOLD. Chart-moving NO (A still blocks). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: lavoisier-antoine
@@ -51,7 +52,7 @@ contribution:
   fields: {value: [chemistry, "physiology of respiration"], certainty: 1.0, cites: [{source: S1, locator: "opening; Quick Facts"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Oxygen theory of combustion and respiration, overturning phlogiston", year: "1770s–1780s", kind: theory, lasting: "foundation of modern chemistry", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Two sources."}
-    - {value: "Conservation of mass made a working law of chemistry", year: "1789", kind: "law or principle", lasting: "taught in France as 'Lavoisier's law'", certainty: 1.0, cites: [{source: S1, locator: "'Conservation of mass'"}, {source: S4, locator: "pp. 140–141"}], how_known: "Britannica and his own statement of the principle."}
+    - {value: "Conservation of mass made a working law of chemistry", year: "1789", kind: "law or principle", lasting: "taught in France as 'Lavoisier's law'", certainty: 1.0, cites: [{source: S1, locator: "'Conservation of mass'"}, {source: S4, locator: "pp. 140–141"}, {source: S8, locator: "'Contribution to chemistry' (conservation paraphrase)"}], how_known: "Britannica, his own statement, and Wikipedia EN (P50 dual-bio)."}
     - {value: "Composition of water from hydrogen and oxygen (with Laplace)", year: "1780s", kind: discovery, lasting: "standard chemistry", certainty: 0.7, cites: [{source: S2, locator: "'The New Chemistry'"}], how_known: "SHI."}
     - {value: "Modern chemical nomenclature (co-author) and the operational definition of an element", year: "1787–1789", kind: method, lasting: "names still in use", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'The New Chemistry'"}], how_known: "Two sources."}
   evidence_of_impact:
@@ -95,21 +96,22 @@ worldview:
   primary_system:
     value: BELOW_THRESHOLD
     cites: [{source: S3, locator: "p. 53"}, {source: S5, locator: "pp. 363–364"}]
-    how_known: "The only direct evidence is one private letter (to Edward King, 20 Aug 1788) praising King's defence of revelation, known only as quoted by Grimaux, against which stands his 1791 manuscript treating sixteen centuries of clerical education as lost to reason. One letter in a secondary quotation cannot carry a system (single-letter rule, CODING_GUIDE §3; secondary quotation, §7), and the two items pull in different directions. His lay patronage of the Fréchines chapel from 1781 (S3, p. 53 n. 2) is practice, not belief."
-    note: "Candidate: CHRIST (draft system file). Would need the King letter in the Correspondance (Fric/Beretta edition) plus independent evidence of belief."
+    how_known: "The only direct evidence is one private letter (to Edward King, 20 Aug 1788) praising King's defence of revelation, known only as quoted by Grimaux (and reprinted from Grimaux in the 1913 Catholic Encyclopedia), against which stands his 1791 manuscript treating sixteen centuries of clerical education as lost to reason [S5]. One letter in a secondary quotation cannot carry a system (single-letter rule, CODING_GUIDE §3; secondary quotation, §7), and the two items pull in different directions. His lay patronage of the Fréchines chapel from 1781 (S3, p. 53 n. 2) is practice, not belief. Correspondance vol. V (1787–1788) not freely available this pass."
+    note: "Candidate: CHRIST (draft system file) — considered, not coded. Would need the King letter in the Correspondance (Fric/Goupil/Beretta/Bret edition) plus independent evidence of belief that places God."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence beyond the two items above."}
   candidate_codes_considered:
     - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): Catholic baptism and upbringing and his lay patronage of the Fréchines chapel, with a chaplain he named and paid from 1781 (p. 53 n. 2) (never a code by themselves), and one polite letter calling the defence of revelation 'une belle cause'. Grimaux's 'il en avait gardé les croyances' is the biographer's claim, and the 1795 Almanach story of a prison reconciliation is hearsay about him, not his statement. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 2, 53"}]}
     - {code: DEISM, reason: "Considered: an Enlightenment reformer hostile to clerical control of learning (S5). Not coded: nothing read states a creator who does not intervene or rejects revelation; anticlericalism is not deism.", cites: [{source: S5, locator: "pp. 363–364"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God; the King letter praises a defence of revelation but says nothing about where or what God is."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God. The King letter (20 Aug 1788) praises King's defence of revelation but does not say where or what God is [S3, p. 53]; Grimaux's 'il en avait gardé les croyances' is the biographer's claim [S3, p. 53]; Catholic Encyclopedia 1913 reprints that same Grimaux passage (finding aid, not an independent locus); SHI is silent on religion [S2]; Wikipedia's 'French Roman Catholics' category is heritage tagging only [S8]. Correspondance vol. V not freely available this pass; Scheler & Smeaton 1958 unread. Evidence exists but stays under 0.5 (P19 BELOW, not UNKNOWN)."}
     B_cause:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "pp. 140–141"}, {source: S1, locator: "'Conservation of mass'"}]
-      how_known: "His own published account of nature (P6), checked on the 1789 first-edition scan. Below 1.0 because the passage states a law of nature and does not speak to miracle or providence directly."
-      rationale: "Scored on his account of nature (P6). In the Traité he lays down that 'rien ne se crée, ni dans les opérations de l'art, ni dans celles de la nature', that matter is equal before and after every operation, and that chemical experiment rests on this 'véritable égalité ou équation' (pp. 140–141): one law for the laboratory and for nature, with no exceptions allowed. Britannica describes his programme of raising chemistry to the 'causal explanation found in contemporary experimental physics'. No miracle, providence or exemption appears in anything read."
+      how_known: "His own published account of nature (P6), re-checked on the 1789 first-edition scan and on Gutenberg #52487; Kerr's 1790 English (S7) matches. Below 1.0 because the passage states a law of nature and does not speak to miracle or providence directly. Independent source ids S4+S1 → corroborated (P48)."
+      rationale: "Scored on his account of nature (P6). In the Traité he lays down that 'rien ne se crée, ni dans les opérations de l'art, ni dans celles de la nature', that matter is equal before and after every operation, and that chemical experiment rests on this 'véritable égalité ou équation' (pp. 140–141): one law for the laboratory and for nature, with no exceptions allowed [S4]. Kerr's authorized English renders the same axiom as 'in all the operations of art and nature, nothing is created; an equal quantity of matter exists both before and after the experiment' [S7]. Britannica describes his programme of raising chemistry to the 'causal explanation found in contemporary experimental physics' and notes French students still learn conservation as 'Lavoisier's law' [S1]. No miracle, providence or exemption appears in anything read."
     C_ledger: {value: BELOW_THRESHOLD, how_known: "Nothing read on judgement or reward and punishment. His prison letter to his wife, 'nous ne sommes pas sans espérance de nous rejoindre' (S3, p. 275), most plainly refers to hoped-for release (he goes on to her visits in the meantime), not to an afterlife, so it is not used."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Two items, in tension: the King letter (single letter, secondary quotation) calls the defence of revelation and the authenticity of Scripture 'une belle cause' (S3, p. 53); the 1791 manuscript says clerical education put 'tout ce qui pouvait tendre à détruire les erreurs et les préjugés' in the hands of those with an interest in propagating them (S5, p. 364). The second is about who controls instruction, not about revelation as an authority, so neither settles D.", note: "Gap: the Correspondance de Lavoisier (ed. Fric and Beretta) for the full King letter and any other religious statements."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events; not scored from working science alone (same treatment as Fermi and Curie)."}
@@ -118,11 +120,19 @@ worldview:
     - text: "car rien ne se crée, ni dans les opérations de l'art, ni dans celles de la nature, & l'on peut poser en principes que dans toute opération, il y a une égale quantité de matière avant & après l'opération; que la qualité & la quantité des principes est la même, & qu'il n'y a que des changemens, des modifications."
       cites: [{source: S4, locator: "pp. 140–141 (ch. XIII, 'De la décomposition des oxides végétaux par la fermentation vineuse')"}]
       date: "1789"
-      context: "On the analysis of wine fermentation. Long s is printed as 's'; spelling and punctuation otherwise as printed (checked on the page images)."
+      context: "On the analysis of wine fermentation. Long s is printed as 's'; spelling and punctuation otherwise as printed (checked on the IA page images and against Gutenberg #52487)."
       axes: [B_cause]
       kind: "written profession (public)"
       verified_against: "primary facsimile"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-24
+    - text: "We may lay it down as an incontestible axiom, that, in all the operations of art and nature, nothing is created; an equal quantity of matter exists both before and after the experiment; the quality and quantity of the elements remain precisely the same; and nothing takes place beyond changes and modifications in the combination of these elements."
+      cites: [{source: S7, locator: "ch. XIII (vinous fermentation; Project Gutenberg #30775)"}]
+      date: "1790"
+      context: "Robert Kerr's English translation of the Traité (Elements of Chemistry, Edinburgh 1790). Same conservation axiom as S4; used as a cross-check, not as an independent B source for P48."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
     - text: "C'est une belle cause que vous entreprenés de deffendre que celle de la révélation et de l'authenticité des Saintes Écritures, et ce qui est remarquable, c'est que vous employés dans ce moment pour les deffendre précisément les mêmes armes qu'on a employées bien des fois pour les attaquer."
       cites: [{source: S3, locator: "p. 53 and n. 1 ('Lettre du 20 août 1788')"}]
       date: "1788-08-20"
@@ -140,7 +150,7 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "CHRIST is a draft system file. Three often-repeated items are not used as his views: Grimaux's claim that he kept his family's beliefs (biographer's claim); the anonymous Almanach des gens de bien (1795) story that he was reconciled to the Church in prison (hearsay at two removes, via a letter of Delahante; see Scheler and Smeaton, Annals of Science 14, 1958, not read); and the prison letter's 'espérance de nous rejoindre' (most naturally hope of release). changes_over_life is empty: the possible prison reconciliation is unverified. The 1791 manuscript is a private draft, kind 'other'; Guillaume printed it in full in 1907 and part of it in 1894."
+  coder_notes: "CHRIST is a draft system file — considered, not coded. Three often-repeated items are not used as his views: Grimaux's claim that he kept his family's beliefs (biographer's claim); the anonymous Almanach des gens de bien (1795) story that he was reconciled to the Church in prison (hearsay at two removes, via a letter of Delahante; see Scheler and Smeaton, Annals of Science 14, 1958, still unread this pass — abstract/paywall only); and the prison letter's 'espérance de nous rejoindre' (most naturally hope of release). Catholic Encyclopedia 1913 follows Grimaux on the King letter and is not an independent A locus. Deepen D1 (2026-10-24): B labelled support corroborated (S4+S1); Kerr English added as S7 cross-check; Wikipedia S8 P50 dual-bio; A and primary_system stay BELOW_THRESHOLD. changes_over_life is empty: the possible prison reconciliation is unverified. The 1791 manuscript is a private draft; Guillaume printed it in full in 1907 and part of it in 1894."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -188,10 +198,12 @@ review:
     - "The King letter is known here only through Grimaux's quotation (S3), a biographer dependent on the descendants' goodwill; it is a single private letter (single-letter rule) and a secondary quotation (§7)."
     - "first_lasting_contribution_year 1772 is the source-dated start of the earliest listed lasting item, the oxygen theory (combustion experiments, sealed note of 1 Nov 1772; Grimaux p. 103). 0.5 because the sources read do not settle whether the item starts in 1772 or with the Easter 1775 memoir (named alternative); was 1774, Priestley's visit, until the lens audit batch 3 (#61). Britannica's later sections were not read."
     - "Co-authors of the 1787 Nomenclature and the 1793 end of the Académie are from general knowledge, flagged."
-    - "Britannica read as its first page only."
+    - "Britannica Donovan article re-read through 'Conservation of mass' this pass (S1); later sections (phlogiston, marriage, Revolution) skimmed for religion — none found."
+    - "Correspondance de Lavoisier vol. V (1787–1788) not freely available this pass; King letter still known only via Grimaux quotation."
   open_questions:
-    - "Read the King letter and any religious remarks in the Correspondance de Lavoisier (Fric; Beretta), and Scheler and Smeaton (1958) on the prison reconciliation story."
-    - "Read Britannica's later sections and a modern biography (Poirier 1993; Donovan 1993) for dates of the first combustion work."
+    - "Correspondance de Lavoisier vol. V (1787–1788, Académie des Sciences / Goupil) for the full King letter text and any other religious remarks; still not freely available this pass."
+    - "Scheler and Smeaton, Annals of Science 14 (1958), on the Almanach / prison-communion story (paywalled this pass)."
+    - "Modern biography (Poirier 1993; Donovan 1993 book) if it quotes an own-voice place/deny of God beyond the King letter."
 
 sources:
   - id: S1
@@ -200,8 +212,9 @@ sources:
     author: "Arthur L. Donovan"
     citation: "Donovan, Arthur L. \"Antoine Lavoisier.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Antoine-Lavoisier."
     url: "https://www.britannica.com/biography/Antoine-Lavoisier"
-    accessed: 2026-10-02
-    reliability_note: "Signed article; first page only (to 'Conservation of mass'). Sections cited by heading."
+    accessed: 2026-10-24
+    reliability_note: "Signed article. Deepen D1 re-read through 'Conservation of mass' (causal-explanation programme; 'Lavoisier's law'); later sections skimmed for religion (none). Sections cited by heading. Top Questions not used for worldview (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, institutions, collaborators, review]
   - id: S2
     type: secondary
@@ -209,8 +222,9 @@ sources:
     author: "Science History Institute (updated by Samantha Wesner)"
     citation: "Science History Institute. \"Antoine-Laurent Lavoisier.\" Scientific Biographies, updated 6 July 2026. https://www.sciencehistory.org/education/scientific-biographies/antoine-laurent-lavoisier/."
     url: "https://www.sciencehistory.org/education/scientific-biographies/antoine-laurent-lavoisier/"
-    accessed: 2026-10-02
-    reliability_note: "Museum and library biography; cited by section heading."
+    accessed: 2026-10-24
+    reliability_note: "Museum and library biography; cited by section heading. Silent on personal religion this pass."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, timing, institutions, collaborators]
   - id: S3
     type: secondary
@@ -219,18 +233,20 @@ sources:
     year: 1888
     citation: "Grimaux, Édouard. Lavoisier, 1743–1794, d'après sa correspondance, ses manuscrits, ses papiers de famille et d'autres documents inédits. Paris: Félix Alcan, 1888. Internet Archive scan (University of Toronto copy): https://archive.org/details/lavoisier174317900grimuoft."
     url: "https://archive.org/details/lavoisier174317900grimuoft"
-    accessed: 2026-10-02
-    reliability_note: "Library scan. Biography built on the family archive, which prints letters; quotations from letters are secondary quotations. Written with the cooperation of Lavoisier's pious descendants (see Guillaume, S5, pp. 357–359). Page 53 checked on the image."
+    accessed: 2026-10-24
+    reliability_note: "Library scan / OCR. Biography built on the family archive; quotations from letters are secondary quotations. Written with the cooperation of Lavoisier's pious descendants (see Guillaume, S5, pp. 357–359). Page 53 (King letter + 'il en avait gardé les croyances' + Fréchines n. 2) re-checked this pass."
+    source_quality: "scholarly edition or monograph"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S4
     type: primary
     kind: "published work by the subject"
     author: "Antoine-Laurent Lavoisier"
     year: 1789
-    citation: "Lavoisier, Antoine-Laurent. Traité élémentaire de chimie, présenté dans un ordre nouveau et d'après les découvertes modernes. Vol. 1. Paris: Cuchet, 1789. Internet Archive scan (Countway Library of Medicine copy): https://archive.org/details/traitlmentairede01lavo."
+    citation: "Lavoisier, Antoine-Laurent. Traité élémentaire de chimie, présenté dans un ordre nouveau et d'après les découvertes modernes. Vol. 1. Paris: Cuchet, 1789. Internet Archive scan (Countway Library of Medicine): https://archive.org/details/traitlmentairede01lavo. Cross-checked against Project Gutenberg eBook #52487 (French text)."
     url: "https://archive.org/details/traitlmentairede01lavo"
-    accessed: 2026-10-02
-    reliability_note: "Library scan of the first edition. Pages 140–141 checked on the page images."
+    accessed: 2026-10-24
+    reliability_note: "Library scan of the first edition; pages 140–141 checked on the page images and against Gutenberg #52487."
+    source_quality: "primary / own words"
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S5
     type: secondary
@@ -241,6 +257,7 @@ sources:
     url: "https://archive.org/details/etudesrvolutio01guil"
     accessed: 2026-10-02
     reliability_note: "Library scan. Prints the surviving text of Lavoisier's 1791 manuscript from the original, which Guillaume had photographed (facsimile of the key paragraph facing pp. 372–373, not examined). Page 364 checked on the image."
+    source_quality: "scholarly edition or monograph"
     used_for: [identity, worldview, institutions, review]
   - id: S6
     type: secondary
@@ -250,7 +267,29 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Antoine-Laurent Lavoisier (Robert Kerr, translator)"
+    year: 1790
+    citation: "Lavoisier, Antoine-Laurent. Elements of Chemistry, in a New Systematic Order, Containing All the Modern Discoveries. Translated by Robert Kerr. Edinburgh: William Creech, 1790. Project Gutenberg eBook #30775. https://www.gutenberg.org/ebooks/30775."
+    url: "https://www.gutenberg.org/ebooks/30775"
+    accessed: 2026-10-24
+    reliability_note: "Contemporary English translation of the Traité. Conservation axiom in ch. XIII checked against the French (S4). Used as a cross-check of the B statement, not as a second independent B source for P48 (same work)."
+    source_quality: "primary / own words"
+    used_for: [worldview]
+  - id: S8
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Antoine Lavoisier.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Antoine_Lavoisier. Dual biography with S1 Britannica under P50 (frozen roster)."
+    url: "https://en.wikipedia.org/wiki/Antoine_Lavoisier"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual-bio companion to Britannica. Conservation-of-mass paraphrase and 'French Roman Catholics' category noted; category is heritage tagging, not an A locus. Not used alone for worldview scores."
+    source_quality: "reference entry"
+    used_for: [basics, contribution, review]
 ---
 
 # Antoine Lavoisier
@@ -259,7 +298,7 @@ sources:
 
 ## Summary
 
-Antoine-Laurent Lavoisier (1743–1794), French chemist and tax farmer, led the chemical revolution with the oxygen theory, the new nomenclature and the Traité élémentaire de chimie (1789), and was guillotined in the Terror [S1, opening; S2]. In the Traité he lays down that "rien ne se crée, ni dans les opérations de l'art, ni dans celles de la nature" [S4, pp. 140–141]. His religious position is unclear: one letter praises a defence of revelation [S3, p. 53], and a 1791 manuscript is sharply anticlerical [S5, p. 364]. primary_system BELOW_THRESHOLD; B 4 (0.7); A, C, D, E below threshold; mid_basin below threshold.
+Antoine-Laurent Lavoisier (1743–1794), French chemist and tax farmer, led the chemical revolution with the oxygen theory, the new nomenclature and the Traité élémentaire de chimie (1789), and was guillotined in the Terror [S1, opening; S2]. In the Traité he lays down that "rien ne se crée, ni dans les opérations de l'art, ni dans celles de la nature" [S4, pp. 140–141; S7]. His religious position stays below threshold: one letter praises a defence of revelation [S3, p. 53], and a 1791 manuscript is sharply anticlerical [S5, p. 364]; neither places or denies God. Deepen D1: primary_system BELOW_THRESHOLD (CHRIST considered); B 4 @0.7 corroborated; A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
 
 ## Life and work
 
@@ -275,7 +314,7 @@ Baptised Catholic at Saint-Merry, with a priest as godfather; his mother died in
 
 ## Adult working worldview
 
-B is scored on the Traité's law of conservation "dans les opérations de l'art" and "dans celles de la nature" [S4, pp. 140–141]. To Edward King he wrote "C'est une belle cause que vous entreprenés de deffendre que celle de la révélation" [S3, p. 53], but this single letter, known only through Grimaux, cannot carry a system. In 1791 he wrote of "seize siècles presque entièrement perdus pour la raison et la philosophie" under clerical education [S5, p. 364]. Scores: B 4 (0.7); A, C, D, E below threshold.
+B is scored on the Traité's law of conservation "dans les opérations de l'art" and "dans celles de la nature" [S4, pp. 140–141], matched in Kerr's English [S7] and backed by Britannica's account of his causal-explanation programme [S1] — support corroborated (P48). To Edward King he wrote "C'est une belle cause que vous entreprenés de deffendre que celle de la révélation" [S3, p. 53], but this single letter, known only through Grimaux (and reprinted from him in the 1913 Catholic Encyclopedia), cannot carry a system or lift A. In 1791 he wrote of "seize siècles presque entièrement perdus pour la raison et la philosophie" under clerical education [S5, p. 364]. Scores: B 4 @0.7 corroborated; A, C, D, E BELOW_THRESHOLD.
 
 ## Heritage (context only)
 
@@ -291,8 +330,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- The Correspondance de Lavoisier for the King letter; Scheler and Smeaton (1958) on the prison story.
+- Correspondance de Lavoisier vol. V (1787–1788) for the full King letter; Scheler and Smeaton (1958) on the Almanach / prison story; modern biography if it adds an own-voice God locus.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Donovan, first page), the Science History Institute biography, Grimaux (1888; p. 53 checked on the image), the Traité (1789, vol. 1, pp. 140–141 checked on the images) and Guillaume (1908, p. 364 checked on the image). MacTutor has no Lavoisier page (404). Gallica blocked the fetch with a security check, so the Guillaume 1894 Procès-verbaux printing was not read.
+- 2026-10-24 (D1): Re-checked Traité conservation (IA + Gutenberg #52487); Kerr 1790 English (Gutenberg #30775) added as S7; Britannica Donovan through 'Conservation of mass'; SHI silent on religion; Grimaux p. 53 re-checked; Catholic Encyclopedia 1913 (Wikisource) = Grimaux reprint (finding aid); Wikipedia EN (S8, P50). Correspondance vol. V and Scheler & Smeaton 1958 still inaccessible. P47 on S1–S8; B support corroborated; A / primary_system stay BELOW_THRESHOLD. Chart-moving NO.
