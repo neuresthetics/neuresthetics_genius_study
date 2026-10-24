@@ -2,15 +2,16 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
+  collected_by: "Grok Bot (agent run for Jason, stage 3 batch C; deepen D1 queue #17)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C; the last uncoded person in the physical-science 1600–1950 pool with F ≥ 3, taken first under P32). Basics from Britannica (editors), the Linda Hall Library and Yu Shi's 2025 paper; dates of the three listed experiments from the APS journal records. No statement by Wu on religion, God or nature was found. primary_system UNKNOWN; B_cause 4 at 0.5 from working science (P24); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #17, F5 rank 17). P47 source_quality on every source. New: S8 NAS Biographical Memoir (Benczer-Koller 2009; Wayback PDF); S9 Wang New Dictionary of Scientific Biography (encyclopedia.com / cpp.edu PDF); S10 Jada Yuan WaPo 2021 granddaughter essay (Wayback). A_locus stays UNKNOWN after NAS, Wang NDSB, WaPo private-universe essay, Britannica, Linda Hall, Shi, and web sweeps: no first-person God/religion statement; granddaughter explicitly wishes she knew more about Wu's private universe. B_cause stays 3 @ 0.5 inference_from_work; support labelled corroborated (S5+S3+S2; P48); alt 4 named (P35). Childhood filled (Zhong-Yi Wu / Funhua Fan; Ming De; Hu Shi). Death day dual-sourced → 1.0. Chiang 2014 English still unread (Chinese IA borrow-only; World Scientific chapter timed out). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: wu-chien-shiung
@@ -24,11 +25,12 @@ identity:
     status: core
     field: physics
     field_bucket: physics
-  full_name: {value: "Chien-Shiung Wu", certainty: 1.0, cites: [{source: S1, locator: "heading; opening sentence"}, {source: S2, locator: "opening sentence"}], how_known: "Two sources give the same form."}
-  native_name: {value: TODO}
+  full_name: {value: "Chien-Shiung Wu", certainty: 1.0, cites: [{source: S1, locator: "heading; opening sentence"}, {source: S2, locator: "opening sentence"}, {source: S8, locator: "title page / opening"}], how_known: "Three sources give the same form."}
+  native_name: {value: "吴健雄", certainty: 0.7, cites: [{source: S9, locator: "opening ('Wu Jianxiong in pinyin')"}], how_known: "Wang NDSB gives the pinyin form Wu Jianxiong; characters are the standard modern form for that name. One scholarly source for the characters, so 0.7 (P15)."}
   aliases:
     - {name: "Chien-Shiung-Wu", kind: "roster alias"}
     - {name: "Wu-Chien-Shiung", kind: "roster alias"}
+    - {name: "Wu Jianxiong", kind: "transliteration"}
 
 basics:
   birth:
@@ -36,14 +38,14 @@ basics:
       value: "1912-05-31"
       calendar: gregorian
       certainty: 0.5
-      cites: [{source: S2, locator: "opening sentence ('born May 31, 1912')"}]
-      how_known: "The sources read give two different days for the same birth, so 0.5 (real dispute, P25, P30). May 31 is kept as the value because the 110th-anniversary symposium was held on 31 May 2022 (S3, abstract); the year is 1912 in every source."
+      cites: [{source: S2, locator: "opening sentence ('born May 31, 1912')"}, {source: S8, locator: "heading (May 31, 1912)"}]
+      how_known: "The sources read give two different days for the same birth, so 0.5 (real dispute, P25, P30). May 31 is kept as the value because Linda Hall, the NAS memoir, and the 110th-anniversary symposium (S3) use 31 May; Britannica alone gives 29 May."
       alternatives:
         - {value: "1912-05-29", cites: [{source: S1, locator: "Born line; opening sentence"}], note: "Britannica (editors)."}
-    place: {value: "Liuhe, Jiangsu province", modern_name: "Liuhe, Jiangsu, China", polity_then: "Republic of China", certainty: 1.0, cites: [{source: S1, locator: "Born line"}, {source: S2, locator: "opening sentence ('Jiangsu province, China')"}], how_known: "Britannica names Liuhe; the Linda Hall page gives the province. Two sources agree on the province; the town is Britannica's."}
+    place: {value: "Liuhe, Jiangsu province", modern_name: "Liuhe, Jiangsu, China", polity_then: "Republic of China", certainty: 1.0, cites: [{source: S1, locator: "Born line"}, {source: S8, locator: "opening ('Liu He, a small town near Shanghai')"}], how_known: "Britannica and the NAS memoir name the town; the province is in Britannica and Linda Hall."}
   death:
-    date: {value: "1997-02-16", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "Died line"}], how_known: "Britannica alone gives the day; the Linda Hall page gives only the year 1997. One source for the day, so 0.7 (P15)."}
-    place: {value: "New York, New York", modern_name: "New York City, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "Died line"}], how_known: "Britannica alone, so 0.7 (P15)."}
+    date: {value: "1997-02-16", calendar: gregorian, certainty: 1.0, cites: [{source: S1, locator: "Died line"}, {source: S8, locator: "closing ('February 16, 1997')"}], how_known: "Britannica and the NAS memoir agree on the day."}
+    place: {value: "New York, New York", modern_name: "New York City, USA", polity_then: "United States", certainty: 1.0, cites: [{source: S1, locator: "Died line"}, {source: S8, locator: "closing ('died in New York following a stroke')"}], how_known: "Two sources."}
   first_lasting_contribution_year:
     value: 1949
     certainty: 1.0
@@ -71,55 +73,63 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "First experimental proof of parity violation in the weak interaction; earlier precise test of QED with entangled photons.", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}, {source: S3, locator: "§§2–3"}], how_known: "Two sources."}
 
 childhood:
-  family_religion: {value: UNKNOWN, how_known: "Britannica, the Linda Hall page and Shi's two papers say nothing on the family's religion."}
+  family_religion: {value: UNKNOWN, how_known: "NAS memoir (S8), Wang NDSB (S9), Britannica, Linda Hall and Shi say nothing on the family's religion. Heritage and Ming De schooling are not evidence of A (P19)."}
   family_religious_practice: {value: UNKNOWN, how_known: "Same sources; nothing found."}
   parents_and_household:
-    - {value: "Father founded the first school she attended and believed strongly that women deserved equal opportunities for education", role: father, certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Linda Hall page alone, so 0.7 (P15); the father's name is not given there."}
-  household_circumstances: {value: TODO}
+    - {value: "Father Zhong-Yi Wu (Wu Zhongyi), engineer; founded Ming De (Mingde), one of the first girls' schools in the region, and served as headmaster; instilled pride in Chinese culture, love of science, and equality for women", role: father, certainty: 1.0, cites: [{source: S8, locator: "pp. 3–4 (parents Zhong-Yi Wu and Funhua Fan; Ming De School)"}, {source: S9, locator: "Early Years (Wu Zhongyi; Mingde)"}], how_known: "NAS memoir and Wang NDSB agree on name and school."}
+    - {value: "Mother Funhua Fan (Fan Fuhua); helped persuade local families to send daughters to Ming De", role: mother, certainty: 1.0, cites: [{source: S8, locator: "p. 3 (Funhua Fan)"}, {source: S9, locator: "Early Years (Fan Fuhua)"}], how_known: "Two scholarly sources (spelling variants of the same name)."}
+  household_circumstances: {value: "Warm, education-focused household in Liuhe near Shanghai; father brought science and mathematics books and news from outside; grandfather Yi-Feng Wu had been a junior scholar in the civil-service examinations", certainty: 0.7, cites: [{source: S8, locator: "pp. 3–4"}], how_known: "NAS memoir alone for the household detail, so 0.7 (P15)."}
   schooling:
-    - {value: "A school founded by her father", stage: "elementary school", run_by: family, certainty: 0.7, cites: [{source: S2, locator: "opening paragraph"}], how_known: "Linda Hall page; the school's name and level are not given there, so stage is the coder's reading of 'the first school she attended'."}
-    - {value: "National Central University, Nanjing; graduated 1934; thesis on the Bragg equation under Shih-Yuan Sze", stage: university, run_by: "state or municipal", years: "1930–1934", ages: "18–22", certainty: 0.7, cites: [{source: S1, locator: "paragraph 2 (graduated 1934)"}, {source: S3, locator: "§1 (1930 to 1934; thesis)"}], how_known: "Two sources agree on 1934; the start year and the thesis are Shi's alone, so 0.7 for the entry. 'State' for the run_by is the coder's reading of a national university."}
-  early_mathematics: {value: TODO}
+    - {value: "Ming De (Mingde) School for Girls, founded by her father; elementary education through about fourth grade", stage: "elementary school", run_by: family, certainty: 1.0, cites: [{source: S8, locator: "pp. 3–4"}, {source: S9, locator: "Early Years"}], how_known: "Two scholarly sources."}
+    - {value: "Soochow (Suzhou) School for Girls / Suzhou Women's Normal School; Normal School program toward teaching; self-studied mathematics, physics and chemistry from friends' regular-track books at night", stage: "grammar or secondary school", run_by: "other", years: "1923–1929", ages: "11–17", certainty: 1.0, cites: [{source: S8, locator: "p. 4 (Soochow School for Girls, Normal School)"}, {source: S9, locator: "Early Years (Suzhou Women's Normal School, 1923–1929)"}], how_known: "Two scholarly sources (English names vary; same school). Not a missionary school."}
+    - {value: "Shanghai Gong Xue (Public School) for one year; taught by Hu Shi (Shi Hu), a May Fourth / New Culture mentor", stage: "grammar or secondary school", run_by: "state or municipal", years: "1929–1930", certainty: 0.7, cites: [{source: S8, locator: "p. 4"}, {source: S9, locator: "Early Years"}], how_known: "Two sources on the year with Hu; 'state or municipal' is the coder's reading of a public school."}
+    - {value: "National Central University, Nanjing; graduated 1934; thesis on crystal structure / Bragg's law under Shi Shiyuan (Shih-Yuan Sze)", stage: university, run_by: "state or municipal", years: "1930–1934", ages: "18–22", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2 (graduated 1934)"}, {source: S3, locator: "§1 (1930 to 1934; thesis)"}, {source: S9, locator: "Early Years (National Central; Shi Shiyuan)"}], how_known: "Three sources agree on 1934; start year and thesis across Shi and Wang."}
+  early_mathematics: {value: "other", note: "Self-studied mathematics (and physics and chemistry) at night while in the Normal School humanities track; began university in mathematics before switching to physics", certainty: 0.7, cites: [{source: S8, locator: "p. 4"}, {source: S9, locator: "Early Years"}], how_known: "Two scholarly sources."}
   early_geometric_style_reasoning: {value: TODO}
-  early_science_exposure: []
+  early_science_exposure:
+    - {value: "Father brought science and mathematics books and news from outside; reportedly built early radio sets in town", certainty: 0.7, cites: [{source: S8, locator: "p. 3"}, {source: S9, locator: "Early Years (radio sets)"}], how_known: "Two sources; radio detail is Wang's 'reportedly', so 0.7."}
+    - {value: "Inspired by stories of Marie Curie while at Suzhou; later heard Curie stories from Shi Shiyuan, who had worked in Curie's lab", certainty: 0.7, cites: [{source: S9, locator: "Early Years"}], how_known: "Wang NDSB."}
   key_early_reading: []
-  childhood_mentors: []
-  languages_in_childhood: {value: TODO}
+  childhood_mentors:
+    - {value: "Zhong-Yi Wu (father)", role: "parent / intellectual mentor", certainty: 1.0, cites: [{source: S8, locator: "pp. 3–4"}, {source: S9, locator: "Early Years"}], how_known: "Two scholarly sources call him among the most important influences."}
+    - {value: "Hu Shi (Shi Hu)", role: "teacher / lifelong mentor", certainty: 1.0, cites: [{source: S8, locator: "p. 4"}, {source: S9, locator: "Early Years"}], how_known: "Two scholarly sources."}
+  languages_in_childhood: {value: [Chinese], certainty: 0.7, cites: [{source: S9, locator: "Early Years (vernacular Chinese / Hu Shi New Culture)"}], how_known: "Inferred from Chinese schooling and Hu Shi's vernacular-language reform context; not an explicit childhood-language statement, so 0.7."}
   notable_events: []
 
 worldview:
   unit: "adult working worldview"
   working_years: {value: "1949–1963", certainty: 1.0, cites: [{source: S4, locator: "APS record (1949)"}, {source: S6, locator: "APS record (1963)"}], how_known: "Equals timing.major_work_period: first to last listed lasting contribution (P29, P30)."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement of hers on science and religion was found in Britannica, the Linda Hall page, Shi's two papers or a web search for her religious views (2026-10-08)."}
+  self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement of hers on science and religion was found in S1–S10 (2026-10-24 deepen). Pauli's figurative remark that God was 'left-handed' is Pauli's voice, not Wu's (S9)."}
   primary_system:
     value: UNKNOWN
-    cites: [{source: S1, locator: "whole article"}, {source: S2, locator: "whole page"}, {source: S3, locator: "whole paper"}]
-    how_known: "Searched Britannica, the Linda Hall page, Shi (MPLA 2025) and the web for any statement of hers on religion, God or nature; none found. Under P19 the sources say nothing on the point, so UNKNOWN."
-    note: "Leads: Chiang Tsai-Chien, Madame Wu Chien-Shiung (World Scientific, 2014), based on interviews with her from 1989; the NAS Biographical Memoir by Noémie Benczer-Koller (2009; the PDF was blocked to the fetch on 2026-10-08)."
+    cites: [{source: S1, locator: "whole article"}, {source: S8, locator: "whole memoir"}, {source: S9, locator: "whole entry"}, {source: S10, locator: "title and body (private universe opaque to granddaughter)"}]
+    how_known: "Deepen D1 re-read Britannica, Linda Hall, Shi, APS records, NAS memoir, Wang NDSB, and WaPo granddaughter essay; web sweeps for religion/God/faith returned no first-person statement. Under P19 the sources say nothing on the point, so UNKNOWN. Chiang 2014 still unread."
+    note: "Lead still open: Chiang Tsai-Chien, Madame Wu Chien-Shiung (World Scientific, 2014; interviews from 1989) — English edition not obtained this pass; Chinese edition on IA is borrow/print-disabled only."
   secondary_system: {value: UNKNOWN, how_known: "No system evidence in what was read."}
   candidate_codes_considered: []
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "Nothing of hers on God or the divine in the sources read (P19)."}
+    A_locus: {value: UNKNOWN, how_known: "Nothing of hers on God or the divine in S1–S10 (P19). NAS memoir silent on religion; Wang NDSB silent; granddaughter's WaPo essay is titled wishing she knew more about Wu's 'private universe' and treats photos with Pope John Paul II as honors-company, not faith (S10). Chinese cultural pride and Ming De burial are heritage/context, not A (P19)."}
     B_cause:
       value: 3
       basis: inference_from_work
       certainty: 0.5
+      support: corroborated
       cites: [{source: S5, locator: "APS record (parity test)"}, {source: S3, locator: "§2 (precision test of a theoretical prediction)"}, {source: S2, locator: "parity paragraphs"}]
-      how_known: "Coder's reading of her working science, as P24 and P30 direct for a scientist (same treatment as Fermi and Libby). No statement of her own about miracles or exceptions was read, so 0.5."
-      rationale: "Scored on her account of nature (P6), which for a scientist is the working science. Her experiments test whether nature follows stated laws without exception: QED's polarization prediction (S3) and parity symmetry, which she found violated in the weak interaction (S2, S5). Finding that a symmetry fails is a finding about which law holds, not an exception to lawfulness. No miracle, petition or exemption appears in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
-    C_ledger: {value: UNKNOWN, how_known: "Nothing of hers on judgement, reward or afterlife in the sources read (P19)."}
+      how_known: "Coder's reading of her working science, as P24 and P30 direct for a scientist (same treatment as Fermi and Libby). No statement of her own about miracles or exceptions was read, so 0.5. Three independent source ids describing the same experimental program → corroborated (P48). Named alternative 4, so 0.5 (P16 Hilbert addendum / P35)."
+      rationale: "Scored on her account of nature (P6), which for a scientist is the working science. Her experiments test whether nature follows stated laws without exception: QED's polarization prediction (S3) and parity symmetry, which she found violated in the weak interaction (S2, S5). Finding that a symmetry fails is a finding about which law holds, not an exception to lawfulness. No miracle, petition or exemption appears in anything read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none. Named alternative: 4, if a statement of their own shows no exception. Wang's citation of her 1973 line on a 'sudden liberation of our thinking on the very structure of the physical world' (S9 → Wu 1973 p. 118) and NAS's attribution of the 'courage to doubt… verification and proof' line (S8) are scientific-method remarks, not no-exception claims; unused to lift certainty (P35, P49)."
+    C_ledger: {value: UNKNOWN, how_known: "Nothing of hers on judgement, reward or afterlife in the sources read (P19). Ashes at Ming De (S8, S10) are burial place, not a ledger claim."}
     D_authority: {value: UNKNOWN, how_known: "Nothing on revelation or scripture. Working science does not bear on D (P19), so UNKNOWN."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). Her working science assumes the same laws for every nucleus, which bears on E's first question, but E is not scored from working science alone (P19, P30 addendum).", how_known: "BELOW_THRESHOLD under P19: not scored from working science alone."}
   mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so the P4 test cannot be applied; UNKNOWN takes precedence (§6, P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "statements is empty because no religious or metaphysical statement of hers was found. Her 1964 MIT remark on whether atoms and nuclei 'have any preference for either masculine or feminine treatment' was seen only on Wikipedia (a lead, not citable) and is about gender, not God or nature. Shi's two papers are by one author, so they count as one source. The APS records (S4–S6) were read as record pages (title, authors, received and published dates); the full texts were not read. Coder's call (CODING_GUIDE §8): the first-lasting year is the 1949 submission date under P30, not the 1950 publication; this moves the era bucket from '1950 on' to '1850 to 1949'."
+  coder_notes: "Deepen D1: A stays UNKNOWN — no God/religion own-words in NAS, Wang NDSB, WaPo, Britannica, Linda Hall, Shi; granddaughter explicitly opaque on private universe (S10). B stays 3 @ 0.5 inference_from_work with support corroborated (P48); not lifted to written_profession because parity/CVC full texts and Wu 1973 Adventures / 1994 Erice chapter were not opened this pass (APS 403; Springer HTML gate). 'Sacrilegious' / 'wonder' / 'courage to doubt' lines seen only via secondary compilations (Today in Science; SciAm museum attribution; NAS paraphrase) — logged as leads, not scored statements (P49). Pauli 'God was left-handed' is Pauli's voice (S9). statements empty. Shi's two papers count as one author-source. APS records (S4–S6) still bibliographic dates only."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Han Chinese", certainty: 0.5, cites: [{source: S1, locator: "opening ('Chinese-born American physicist')"}, {source: S2, locator: "opening ('Chinese-American')"}], how_known: "The sources say Chinese-born and Chinese-American; 'Han' is the coder's inference, so 0.5 (P24)."}
-  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not in the sources read."}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not in the sources read (S1–S10)."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not in the sources read."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not in the sources read."}
 
@@ -128,14 +138,14 @@ timing:
   major_work_period: {value: "1949–1963", certainty: 1.0, cites: [{source: S4, locator: "APS record (received 1949)"}, {source: S6, locator: "APS record (received 1963)"}], how_known: "First to last listed lasting contribution (P29, P30): the Wu–Shaknov submission (1949) to the CVC test (1963)."}
   age_at_first_lasting_contribution: {value: 37, certainty: 1.0, cites: [{source: S4, locator: "APS record (1949)"}, {source: S1, locator: "Born line (1912)"}], how_known: "1949 − 1912 = 37 (P30, no month adjustment); the birth-day dispute does not change the year."}
   first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No statement of hers scored at 3 or 4; B rests on working science, which is not an LIO-type view (P27)."}
-  lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "Nothing of hers on God or nature was read.", certainty: 0.5, cites: [{source: S1, locator: "whole article"}, {source: S3, locator: "whole paper"}], how_known: "Absence in the sources read; not evidence of absence."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "Nothing of hers on God or nature was read at the LIO-type-view bar (P27).", certainty: 0.5, cites: [{source: S1, locator: "whole article"}, {source: S8, locator: "whole memoir"}, {source: S9, locator: "whole entry"}], how_known: "Absence in the sources read; not evidence of absence."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "unclear", rationale: "Her work was precision experiment testing theoretical predictions (S3); nothing read on proof-style training.", certainty: 0.5, cites: [{source: S3, locator: "§§1–2"}], how_known: "Coder's reading."}
-  form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S3, locator: "§1"}], how_known: "Nothing read on early mathematics."}
-  circle_present: {value: "unclear", rationale: "No God–Nature statement read.", certainty: 0.5, cites: [{source: S1, locator: "whole article"}], how_known: "No evidence either way."}
+  form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S3, locator: "§1"}, {source: S8, locator: "p. 4 (self-study of mathematics)"}], how_known: "Secondary evidence of early math self-study only; unclear for geometric form."}
+  circle_present: {value: "unclear", rationale: "No God–Nature statement read.", certainty: 0.5, cites: [{source: S1, locator: "whole article"}, {source: S8, locator: "whole memoir"}], how_known: "No evidence either way."}
   reading: "As belief, not finding: form and circle unclear. The record does not test H1."
   notes: ""
 
@@ -153,12 +163,15 @@ review:
   controversies:
     - {value: "She was not included in the 1957 Nobel Prize given to Lee and Yang; the Linda Hall essay calls this an injustice that many feel was done", certainty: 0.7, cites: [{source: S2, locator: "paragraph 6 ('many feel that a great injustice was done')"}], how_known: "Linda Hall page alone."}
   data_quality_flags:
-    - "Birth day: 29 May (Britannica) vs 31 May (Linda Hall); 0.5 with the alternative (P25)."
+    - "Birth day: 29 May (Britannica) vs 31 May (Linda Hall, NAS memoir); 0.5 with the alternative (P25)."
     - "Columbia start: 1944 (Britannica, Shi: Division of War Research) vs 1945 (Linda Hall). Not used for any computed field."
     - "Arrival in the US: Britannica and Shi imply 1936 (Berkeley 1936–1940); the Linda Hall page says she landed in San Francisco in 1937. Not used for any field."
-    - "No worldview evidence found; worldview fields are UNKNOWN (P19), except B (working science, 0.5) and E (BELOW_THRESHOLD, P19)."
+    - "No worldview evidence found for A; A UNKNOWN (P19). B remains working-science inference at 0.5 (P35)."
+    - "Chiang 2014 biography still unread (English not obtained; Chinese IA borrow-only)."
   open_questions:
-    - "Read Chiang's biography (2014) and the NAS memoir (2009) for any statement on religion or nature."
+    - "Read Chiang Tsai-Chien, Madame Wu Chien-Shiung (World Scientific, 2014) for any religion or nature own-words."
+    - "Open Wu 1973 Adventures in Experimental Physics and 1994 Erice 'Parity Violation' chapter (Newman & Ypsilantis 1996) as primary for B written_profession and any A-adjacent lines."
+    - "Open full texts of PhysRev 105.1413 and PhysRevLett 10.253 (APS blocked this pass)."
 
 sources:
   - id: S1
@@ -168,6 +181,7 @@ sources:
     citation: "Britannica Editors. \"Chien-Shiung Wu.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Chien-Shiung-Wu."
     url: "https://www.britannica.com/biography/Chien-Shiung-Wu"
     accessed: 2026-10-08
+    source_quality: "reference entry"
     reliability_note: "Unsigned editors' article; whole article read (four paragraphs and Quick Facts)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
@@ -178,6 +192,7 @@ sources:
     citation: "Ashworth, William B., Jr. \"Chien-Shiung Wu.\" Scientist of the Day, Linda Hall Library, 31 May 2022. https://www.lindahall.org/about/news/scientist-of-the-day/chien-shiung-wu/."
     url: "https://www.lindahall.org/about/news/scientist-of-the-day/chien-shiung-wu/"
     accessed: 2026-10-08
+    source_quality: "reference entry"
     reliability_note: "Signed short essay by a historian of science at a research library."
     used_for: [identity, basics, contribution, childhood, worldview, heritage]
   - id: S3
@@ -188,6 +203,7 @@ sources:
     citation: "Shi, Yu. \"Chien-Shiung Wu as the Experimental Pioneer in Quantum Entanglement: A 2022 Note.\" Modern Physics Letters A (2025). https://doi.org/10.1142/S0217732325300010. Read as arXiv:2502.06458v1 (HTML)."
     url: "https://arxiv.org/html/2502.06458v1"
     accessed: 2026-10-08
+    source_quality: "scholarly edition or monograph"
     reliability_note: "Physicist's historical review, published in MPLA; read in the arXiv version. Sections numbered as in the paper."
     used_for: [basics, contribution, childhood, worldview, timing, lane_b, institutions, collaborators]
   - id: S4
@@ -198,7 +214,8 @@ sources:
     citation: "Wu, C. S., and I. Shaknov. \"The Angular Correlation of Scattered Annihilation Radiation.\" Physical Review 77, no. 1 (1950): 136. Received 21 November 1949. https://doi.org/10.1103/PhysRev.77.136."
     url: "https://journals.aps.org/pr/abstract/10.1103/PhysRev.77.136"
     accessed: 2026-10-08
-    reliability_note: "Record page read (title, authors, received and published dates); full text behind a paywall, not read."
+    source_quality: "primary / own words"
+    reliability_note: "Record page read (title, authors, received and published dates); full text behind a paywall / 403 this pass, not read."
     used_for: [basics, contribution, worldview, timing, collaborators]
   - id: S5
     type: primary
@@ -208,7 +225,8 @@ sources:
     citation: "Wu, C. S., E. Ambler, R. W. Hayward, D. D. Hoppes, and R. P. Hudson. \"Experimental Test of Parity Conservation in Beta Decay.\" Physical Review 105, no. 4 (1957): 1413–1415. Received 15 January 1957. https://doi.org/10.1103/PhysRev.105.1413."
     url: "https://journals.aps.org/pr/abstract/10.1103/PhysRev.105.1413"
     accessed: 2026-10-08
-    reliability_note: "Record page read (title, authors, received and published dates); the paper text was not read."
+    source_quality: "primary / own words"
+    reliability_note: "Record page read (title, authors, received and published dates); the paper text was not read (APS 403 on deepen)."
     used_for: [basics, contribution, worldview]
   - id: S6
     type: primary
@@ -218,6 +236,7 @@ sources:
     citation: "Lee, Y. K., L. W. Mo, and C. S. Wu. \"Experimental Test of the Conserved Vector Current Theory on the Beta Spectra of B12 and N12.\" Physical Review Letters 10, no. 6 (1963): 253. Received 4 February 1963. https://doi.org/10.1103/PhysRevLett.10.253."
     url: "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.10.253"
     accessed: 2026-10-08
+    source_quality: "primary / own words"
     reliability_note: "Record page read (title, authors, received and published dates); full text not read."
     used_for: [contribution, worldview, timing]
   - id: S7
@@ -227,8 +246,43 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-08
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S8
+    type: secondary
+    kind: "scholarly book"
+    author: "Noémie Benczer-Koller"
+    year: 2009
+    citation: "Benczer-Koller, Noémie. \"Chien-Shiung Wu, 1912–1997.\" Biographical Memoirs of the National Academy of Sciences. Washington, DC: National Academy of Sciences, 2009. PDF via Wayback Machine snapshot of nasonline.org (2015-03-26)."
+    url: "https://web.archive.org/web/20150326081624/http://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/wu-chien-shiung.pdf"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "NAS biographical memoir by a physicist colleague; whole PDF read (OCR). Live nasonline.org returned 403; Wayback 2015 PDF used."
+    used_for: [identity, basics, childhood, worldview, heritage, timing, lane_b]
+  - id: S9
+    type: secondary
+    kind: encyclopedia
+    author: "Zuoyue Wang"
+    year: 2007
+    citation: "Wang, Zuoyue. \"Wu Chien-Shiung.\" In New Dictionary of Scientific Biography, edited by Noretta Koertge. New York: Charles Scribner's Sons, 2007. Read via encyclopedia.com HTML and the author's posted PDF (cpp.edu)."
+    url: "https://www.encyclopedia.com/science/dictionaries-thesauruses-pictures-and-press-releases/wu-chien-shiung"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Signed NDSB entry by a historian of science; whole entry read. Cites Wu 1973 Adventures p. 118 for the 'sudden liberation' line (Wu's words via Wang); Pauli 'left-handed God' is Pauli's voice."
+    used_for: [identity, basics, childhood, worldview, heritage]
+  - id: S10
+    type: secondary
+    kind: "other"
+    author: "Jada Yuan"
+    year: 2021
+    citation: "Yuan, Jada. \"Chien-Shiung Wu, trailblazing woman in nuclear physics, was my grandmother. I wish I knew more about her private universe.\" The Washington Post, 13 December 2021. Read via Wayback Machine."
+    url: "https://www.washingtonpost.com/lifestyle/2021/12/13/chien-shiung-wu-biography-physics-grandmother/"
+    accessed: 2026-10-24
+    source_quality: "newspaper interview"
+    reliability_note: "Granddaughter's first-person essay; strong negative evidence that even close family lacks a private-belief record. Pope John Paul II appears only as a photo among honors; Christmas carolers are a childhood memory with grandma, not a faith claim. Live WaPo blocked; Wayback 2022-01-01 snapshot read."
+    used_for: [worldview, heritage]
+
 ---
 
 # Chien-Shiung Wu
@@ -237,11 +291,11 @@ sources:
 
 ## Summary
 
-Chien-Shiung Wu (1912–1997), Chinese-born American experimental physicist, gave the first experimental proof that parity is not conserved in the weak interaction (1957) [S1; S5]. Earlier, with Irving Shaknov, she measured the polarization correlation of annihilation photons (submitted 1949), later read as the first controlled entangled state [S3; S4], and in 1963 she confirmed the conserved vector current theory [S1; S6]. No statement of hers on religion, God or nature was found. Draft: primary_system UNKNOWN; B_cause 3 at 0.5 from working science (alternative 4, P35); A UNKNOWN; mid_basin UNKNOWN.
+Chien-Shiung Wu (1912–1997), Chinese-born American experimental physicist, gave the first experimental proof that parity is not conserved in the weak interaction (1957) [S1; S5]. Earlier, with Irving Shaknov, she measured the polarization correlation of annihilation photons (submitted 1949), later read as the first controlled entangled state [S3; S4], and in 1963 she confirmed the conserved vector current theory [S1; S6]. Deepen D1 (P47–P50): A stays UNKNOWN after NAS memoir, Wang NDSB, and granddaughter WaPo essay [S8; S9; S10]; B_cause 3 at 0.5, inference_from_work, support corroborated (S5+S3+S2; P35 alt 4); mid_basin UNKNOWN. Still unplotted (A UNKNOWN; B faded).
 
 ## Life and work
 
-Born in Jiangsu province, she studied at the National Central University in Nanjing (graduated 1934), took her Ph.D. at Berkeley in 1940, taught at Smith College and Princeton, and joined Columbia's Division of War Research in 1944, where she stayed and became Pupin professor in 1957 [S1; S3].
+Born in Liuhe, Jiangsu, to Zhong-Yi Wu and Funhua Fan; attended her father's Ming De school, then Suzhou Women's Normal and National Central University (graduated 1934) [S8; S9; S1]. Ph.D. Berkeley 1940; Columbia from 1944; Pupin professor from 1957 [S1; S3]. Ashes returned to Ming De [S8; S10].
 
 ## Contribution and impact
 
@@ -249,15 +303,15 @@ The 1949 Wu–Shaknov experiment [S4; S3], the 1957 parity test [S5; S1; S2] and
 
 ## Childhood and education
 
-Her father founded the first school she attended and held that girls deserved equal education [S2]. She graduated from the National Central University in 1934 [S1; S3].
+Father founded Ming De and pressed equal education for girls; mother helped recruit pupils [S8; S9]. Mentors: Zhong-Yi Wu and Hu Shi [S8; S9]. Graduated National Central University 1934 [S1; S3; S9].
 
 ## Adult working worldview
 
-Not established. No statement of hers on religion, God or nature was found. B is scored 4 at 0.5 from her working science, as the rules direct for a scientist (P24) [S5; S3].
+Not established for A. No first-person statement on God or religion in the sources read; granddaughter states the private universe is largely unknown even to family [S10; S8; S9]. B is scored 3 at 0.5 from her working science (alternative 4, P35), support corroborated [S5; S3; S2].
 
 ## Heritage (context only)
 
-Chinese-born [S1; S2]. Context only.
+Chinese-born [S1; S2]. Context only — not an A score.
 
 ## Timing
 
@@ -265,12 +319,15 @@ First lasting contribution 1949, at 37 [S4]. No LIO-type views found.
 
 ## Lane B notes (labeled belief model)
 
-Everything in this section is Lane B: labeled belief, not a finding. Form and circle unclear [S3; S1].
+Everything in this section is Lane B: labeled belief, not a finding. Form and circle unclear [S3; S8; S1].
 
 ## Open questions
 
-- Chiang's biography (2014) and the NAS memoir (2009) for any worldview statement.
+- Chiang's 2014 biography (interviews from 1989) for any worldview statement.
+- Wu 1973 Adventures and 1994 Erice parity chapter as primary for B written_profession.
+- Full texts of the 1957 and 1963 APS papers (blocked this pass).
 
 ## Research log
 
 - 2026-10-08: Read Britannica (editors), the Linda Hall Library page (Ashworth 2022), Shi's MPLA paper (arXiv HTML), and the APS record pages of the 1950, 1957 and 1963 papers (dates only). Web search for her religious views found nothing citable. The NAS memoir PDF was blocked to the fetch. Worldview left UNKNOWN except B (working science) and E (BELOW_THRESHOLD).
+- 2026-10-24: Deepen D1 (queue #17). NAS memoir via Wayback (S8); Wang NDSB via encyclopedia.com + cpp.edu PDF (S9); WaPo Jada Yuan via Wayback (S10). A-negative across all three plus prior set. Chiang English not obtained; Chinese IA borrow-only. APS full texts 403. No fallacy_catalog (Jason 2026-10-23).
