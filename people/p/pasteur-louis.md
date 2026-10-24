@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1848–1885 unchanged; worldview.working_years 1847–1895 → 1848–1885, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on his working science (Britannica's account); his own speech leans to 3 anyway. No other value changes; mid_basin unchanged."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #113 / F4 rank 114). Goals: score A if clear locus; lift B to 0.7 if own-voice P16. Read Œuvres de Pasteur vol. 7 Mélanges (IA oeuvresp07pastuoft / uvresdepasteur0007past OCR; S8) and Life of Pasteur (Gutenberg #60956) for leads only. Dual bio: Britannica (S1) + Wikipedia EN (S9) (P50). P47 source_quality on S1–S9. A BELOW→0 @0.5 support single (S8): Favé letter 22 Mar 1863 'Dieu a placé dans les êtres les plus infimes de la création' (p. 8–9, inédite) + Minister note Apr 1862 'propriétés admirables que Dieu leur a départies' (p. 6) + Sur la Vie MS 'Dieu comme auteur de la vie' stake vs spontaneous generation (p. 29); named alt 2 from 1882 Infinite-as-idea / dieu intérieur (S3). B 3 @0.5 scholarly_reconstruction→3 @0.7 written_profession support corroborated (S8+S3): own-voice lawful nature — Bernard eulogy 'harmonie inconnue des lois de l'univers' (p. 285), Sur la Vie 'lois de son développement' (p. 29), Minister 'lois de la permanence de la vie' (pp. 5–6), speech lean (S3); alt 4 kept (no stated no-exception; P35/P16). C UNKNOWN→BELOW (Arbois 1874 affirms immortal soul vs néant, pp. 294–295, but no reward/punishment ledger). D 2 @0.7 support single (S3). E BELOW; mid_basin BELOW (A at 0.5 fails P4 0.7 bar). primary BELOW unchanged (spiritualisme still no system file). first_evidence_of_lio_type_views 1882→1862. Chart-moving NO: A 0.5 < 0.7. Correspondance (Gallica) and Geison 1995 unread. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
 identity:
   id: pasteur-louis
@@ -68,7 +69,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of medical microbiology.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: TODO, note: "Catholic by general report; not stated in the sources read."}
+  family_religion: {value: "Catholic", certainty: 0.7, cites: [{source: S9, locator: "'Early life and education'"}], how_known: "Wikipedia EN; practice detail not in sources read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father, Jean-Joseph Pasteur, tanner and decorated sergeant major of the Napoleonic Wars", name: "Jean-Joseph Pasteur", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica."}
@@ -99,32 +100,80 @@ worldview:
     value: BELOW_THRESHOLD
     cites: [{source: S3, locator: "pp. 3–4, 20, 23–26"}]
     how_known: "The speech defends 'la doctrine spiritualiste' and the reality of the infinite against positivism, treats the idea of God as 'une forme de l'idée de l'infini' whatever its name ('Brahma, Allah, Jéhova ou Jésus'), and counts the 'vertus de l'Évangile' as one ideal among four. It affirms the supernatural infinite but no particular doctrine of God, so no system file fits at 0.5."
-    note: "Candidates: CHRIST (draft) and IDEAL (stub). Named candidate without a code: French spiritualism (spiritualisme, Victor Cousin's school: God, the soul, freedom), which the 1882 speech defends by name ('la doctrine spiritualiste', S3, pp. 3–4). It has no system file; under decision S4 it cannot be coded in v8, and decision P9 (2026-10-02) lists it in systems/README.md under 'Systems to consider'. Would need his letters or a scholarly study of his religion (e.g. Geison 1995) to reach 0.5."
+    note: "Candidates: CHRIST (draft) and IDEAL (stub). Named candidate without a code: French spiritualism (spiritualisme, Victor Cousin's school: God, the soul, freedom), which the 1882 speech defends by name ('la doctrine spiritualiste', S3, pp. 3–4). It has no system file; under decision S4 it cannot be coded in v8, and decision P9 (2026-10-02) lists it in systems/README.md under 'Systems to consider'. Œuvres VII adds creator-agent language and immortal-soul affirmation but still no particular doctrine of God at 0.5. Correspondance (Gallica) and Geison 1995 remain open."
   secondary_system: {value: UNKNOWN, how_known: "No second system in what was read."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): 'idéal des vertus de l'Évangile' (p. 26) and his admiration for the 'fervente catholique' Mme Littré (p. 26), but the speech's God is any name for the infinite (p. 24). The Notre-Dame funeral (S1) is not his act, and Catholic upbringing is not in a source read. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 24, 26"}]}
+    - {code: CHRIST, reason: "Leading candidate, not coded (BELOW_THRESHOLD): 'idéal des vertus de l'Évangile' (S3, p. 26), admiration for the 'fervente catholique' Mme Littré (S3, p. 26), Catholic birth family (S9), and creator-agent language in Œuvres VII (S8). The speech's God is still any name for the infinite (S3, p. 24). Notre-Dame funeral (S1) is not his act. CHRIST is a draft system file.", cites: [{source: S3, locator: "pp. 24, 26"}, {source: S8, locator: "pp. 6, 8–9"}, {source: S9, locator: "'Early life and education'; 'Faith and spirituality'"}]}
     - {code: IDEAL, reason: "Considered: the 'conception de l'idéal' as a 'reflet de l'infini' and the ideals as a 'dieu intérieur' (pp. 24, 26). Not coded: the speech is not a philosophical idealism about mind and world. IDEAL is a stub system file (flag).", cites: [{source: S3, locator: "pp. 24, 26"}]}
-    - {code: DEISM, reason: "Rejected: no creator argued from design and no rejection of revelation; DEISM is a draft.", cites: [{source: S3, locator: "pp. 23–24"}]}
+    - {code: DEISM, reason: "Rejected: Œuvres VII has creator-agent language but no design argument from the world and no rejection of revelation; DEISM is a draft.", cites: [{source: S3, locator: "pp. 23–24"}, {source: S8, locator: "pp. 6, 8–9, 29"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "The speech speaks of the notion and idea of the infinite and of God in the human mind ('le surnaturel est au fond de tous les cœurs', 'Un Dieu intérieur' as the meaning of enthousiasme, S3, pp. 24, 26), not of where God is or whether God is a person. A mixed reading (2) is possible but would be scored from implication.", note: "Gap: letters and the Œuvres (vol. 7, Mélanges) for direct statements on God."}
+    A_locus:
+      value: 0
+      basis: consistent_private_letters
+      certainty: 0.5
+      support: single
+      cites: [{source: S8, locator: "pp. 6, 8–9, 29"}]
+      how_known: "Two private/official texts in Œuvres VII (Favé letter 1863; Minister note 1862) plus an unpublished Sur la Vie MS name God as agent who places or bestows properties in creation and as 'auteur de la vie'. Named alternative from the 1882 speech (Infinite-as-idea, S3), so 0.5. Independent source ids for the preferred value are only S8 → single (P48)."
+      rationale: "Leans to the transcendent-person / creator pole. Own voice: 'Dieu a placé dans les êtres les plus infimes de la création des propriétés extraordinaires' (Favé, 22 Mar 1863, S8 pp. 8–9; letter inédite printed in the Œuvres); microbes act 'grâce aux propriétés admirables que Dieu leur a départies' (Minister note, Apr 1862, S8 p. 6); if spontaneous generation succeeded, 'Dieu comme auteur de la vie devient inutile' (Sur la Vie, undated MS, S8 p. 29). God is an agent outside the organisms who authors life and confers properties — not identified with Nature. Named alternative: 2, because the 1882 reception speech treats 'L'idée de Dieu' as 'une forme de l'idée de l'infini' and enthousiasme as 'un dieu intérieur' (S3, pp. 24, 26), which undercuts a clear personal-transcendent locus and could support a mixed reading. Not 4: no God=Nature circle (S6 two-part test fails). Certainty 0.5: private documents (Favé and Sur la Vie inédits; Minister note published only posthumously) plus the contested Infinite reading."
     B_cause:
       value: 3
-      basis: scholarly_reconstruction
-      certainty: 0.5
-      cites: [{source: S3, locator: "pp. 3–4, 20"}, {source: S1, locator: "'Spontaneous generation'"}]
-      how_known: "Britannica's account of his working science (P6), with his speech in support. His own words about nature (pp. 3–4) lean to 3, and the p. 4 passage that supports 4 is about method (how to know), not how nature works, so the speech speaks to the score only indirectly. Scored at 0.5 with basis scholarly_reconstruction, as B from working science is for Bohr, Chandrasekhar and Dirac (§3 same pattern; lens audit batch 3, #84; was written_profession 0.7)."
-      rationale: "Scored on his account of nature (P6). His science ran on strict experimental control: the method 'qui a pour guide et pour contrôle incessant l'observation et l'expérience, dégagées [...] de tout préjugé métaphysique' (p. 4), with no spontaneous generation and a specific organism for each fermentation and disease (S1). No miracle, petition or exemption in his account of nature. Scored 3 under P35, not on his speech: B rests on his working science. His own words lean the same way: he says that by showing that life 'ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière' he served 'la doctrine spiritualiste' (pp. 3–4), which may hold life apart from the forces governing matter; the claim is hedged ('jusqu'à ce jour') and names no exception to law. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
-    C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or reward and punishment; the soul's 'hautes préoccupations' (p. 20) are named but not described."}
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S8, locator: "pp. 5–6, 29, 285"}, {source: S3, locator: "pp. 3–4, 20"}]
+      how_known: "Own published and manuscript statements on lawful nature (P16) in Œuvres VII, corroborated by the 1882 speech lean. Named alternative 4 keeps certainty at 0.7. Independent source ids S8+S3 → corroborated (P48)."
+      rationale: "Scored on his account of nature (P6). Own-voice P16 beyond working science: the matter of living beings returns to its sources 'sans autre terme que celui qui peut être dans les desseins de la création et dans l'harmonie inconnue des lois de l'univers' (Claude Bernard eulogy, Moniteur 1867, S8 p. 285); the germ 'obéir aux lois de son développement' and vital acts are 'phénomènes physiques et chimiques' whose succession is a law (Sur la Vie, S8 p. 29); destruction and return of organic matter is 'dans les lois de la permanence de la vie à la surface de la terre' (Minister note, Apr 1862, S8 pp. 5–6). The 1882 speech leans the same way (life never shown as a product of the forces that govern matter; experimental method free of metaphysical prejudice, S3 pp. 3–4, 20). No miracle, petition or exemption in his account of nature. So 3. Named alternative: 4, if a statement of his own shows no exception (P35 still bars scoring 4 from working science alone; the new statements affirm lawful order without a no-exception claim). 'Desseins de la création' is creation-edge language like Faraday's creation-of-force limit, not a stated in-nature miracle exemption."
+    C_ledger: {value: BELOW_THRESHOLD, how_known: "Arbois prize speech (8 Aug 1874) affirms 'l'âme est immortelle' against the materialist 'La mort, c'est le néant!' (S8, pp. 294–295), and the 1882 speech names the soul's 'hautes préoccupations' (S3, p. 20), but nothing read states reward or punishment of persons (C's scale). Evidence bears on personal afterlife only indirectly for the ledger → BELOW (P19), not UNKNOWN."}
     D_authority:
       value: 2
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "pp. 4, 20, 23–24"}]
-      how_known: "His own public speech; a named alternative, so 0.7."
-      rationale: "Two domains, each with its own authority, so D 2 (same-pattern rule). Experimental science 'n'aurait rien à apprendre d'aucune spéculation métaphysique' and never considers the essence of things or the origin and destiny of the world (p. 20); but no discovery 'philosophique ou scientifique' can remove the questions of God and the soul (p. 20), and before the infinite 'il faut demander grâce à sa raison' (p. 24). Named alternative: 3, because the second domain is reached by reason's own question ('Qu'y a-t-il au delà ?', p. 23), not by revelation, which the speech never invokes."
+      how_known: "His own public speech; a named alternative, so 0.7. Single source id → single (P48)."
+      rationale: "Two domains, each with its own authority, so D 2 (same-pattern rule). Experimental science 'n'aurait rien à apprendre d'aucune spéculation métaphysique' and never considers the essence of things or the origin and destiny of the world (p. 20); but no discovery 'philosophique ou scientifique' can remove the questions of God and the soul (p. 20), and before the infinite 'il faut demander grâce à sa raison' (p. 24). Named alternative: 3, because the second domain is reached by reason's own question ('Qu'y a-t-il au delà ?', p. 23), not by revelation, which the speech never invokes. Arbois 1874 likewise separates free scientific inquiry from faith's supernatural word (S8, pp. 293–295) but does not change the two-domain reading."
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses favour for a group in events. That 'tous les hommes sont égaux' before the infinite (p. 25) concerns human dignity and the moral community, which belongs on C, not E."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is 0 at 0.5 and B_cause is 3 at 0.7; the P4 mid-basin test needs both at certainty ≥ 0.7, so A fails the bar → BELOW_THRESHOLD."}
   statements:
+    - text: "Je serai peu à peu en mesure de démontrer ce que j'ai pressenti [...], que Dieu a placé dans les êtres les plus infimes de la création des propriétés extraordinaires qui en font les agents de la destruction de tout ce qui a cessé de vivre."
+      cites: [{source: S8, locator: "pp. 8–9"}]
+      date: "1863-03-22"
+      context: "Letter to Colonel Favé from the École Normale; editor marks the letter inédite."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+    - text: "De petits êtres microscopiques sont les agents cachés de ce phénomène naturel, grâce aux propriétés admirables que Dieu leur a départies."
+      cites: [{source: S8, locator: "p. 6"}]
+      date: "1862-04"
+      context: "Note to the Minister on the physiological role of the infinitely small."
+      axes: [A_locus, B_cause]
+      kind: "document in own hand"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+    - text: "Dieu comme auteur de la vie devient inutile. La matière le remplace. Dieu ne serait plus invoqué que comme auteur des mouvements des mondes dans l'univers."
+      cites: [{source: S8, locator: "p. 29"}]
+      context: "Undated manuscript note [Sur la Vie] on what spontaneous generation would imply for God as author of life."
+      axes: [A_locus]
+      kind: "unpublished manuscript"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+    - text: "toute cette matière, après avoir satisfait aux mystérieux phénomènes de la vie et de la pensée, retourne, sous les formes les plus simples, à ses sources premières, d'où elle sort de nouveau pour rentrer dans un cercle pareil, et toujours ainsi, sans autre terme que celui qui peut être dans les desseins de la création et dans l'harmonie inconnue des lois de l'univers."
+      cites: [{source: S8, locator: "p. 285"}]
+      date: "1867-11-07"
+      context: "Notice on Claude Bernard (Moniteur universel); Pasteur describing the chemical statics of living beings."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+    - text: "Est-ce qu'au chevet de l'être aimé que la mort vient de frapper vous ne sentez pas au dedans de vous quelque chose qui vous crie que l'âme est immortelle? C'est insulter au cœur de l'homme que de dire avec le matérialiste : «La mort, c'est le néant!»"
+      cites: [{source: S8, locator: "pp. 294–295"}]
+      date: "1874-08-08"
+      context: "Prize-day speech at the collège d'Arbois; against free-thought materialism."
+      axes: [C_ledger]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
     - text: "En prouvant que, jusqu'à ce jour, la vie ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière, j'ai pu servir la doctrine spiritualiste fort délaissée ailleurs, mais assurée du moins de trouver dans vos rangs un glorieux refuge."
       cites: [{source: S3, locator: "pp. 3–4"}]
       date: "1882-04-27"
@@ -174,12 +223,12 @@ worldview:
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "CHRIST and DEISM are drafts; IDEAL is a stub system file (flag). The Faraday anecdote in the speech (p. 20) reports Faraday's words and is not scored as Pasteur's view. Not used: 'Plus je sais, plus ma foi est celle du paysan breton' and similar sayings, which were not traced to a primary text; reports of his last sacraments (not in a source read). The speech is a public profession before the Académie, partly a eulogy of the positivist Littré; Renan's reply in the same printing is not Pasteur's view. changes_over_life is empty: no dated change in what was read."
+  coder_notes: "CHRIST and DEISM are drafts; IDEAL is a stub system file (flag). The Faraday anecdote in the speech (S3, p. 20) reports Faraday's words and is not scored as Pasteur's view. Not used: 'Plus je sais, plus ma foi est celle du paysan breton' and 'The more I study nature, the more I stand amazed at the work of the Creator' — Wikipedia and Pasteur Vallery-Radot treat the Breton line as apocryphal (S9 'Faith and spirituality'); Literary Digest attributions not traced to a primary. Vallery-Radot's 'absolute faith in God and in Eternity' (Life of Pasteur) is biographer narration of the last weeks, not scored for A. Renan's reply is not Pasteur's view. changes_over_life is empty: no dated change in what was read."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "French (Jura artisan family)", certainty: 0.7, cites: [{source: S1, locator: "'Early education'"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO, note: "Catholic by general report; not in a source read."}
+  religious_heritage_by_birth: {value: "Catholic family", certainty: 0.7, cites: [{source: S9, locator: "'Early life and education': 'born ... to a Catholic family'"}], how_known: "Wikipedia EN (dual bio, P50); practice not stated."}
   baptism_or_initiation: {value: TODO}
   childhood_catechism: {value: TODO}
 
@@ -187,8 +236,8 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1848–1885", certainty: 0.7, cites: [{source: S1, locator: "'Research career' to 'Vaccine development'"}], how_known: "Molecular asymmetry to the rabies vaccine."}
   age_at_first_lasting_contribution: {value: 26, certainty: 0.5, cites: [{source: S1, locator: "'Research career'"}], how_known: "Computed from the coder's 1848. P30 (rule 5): 1848 − 1822 = 26, with no month adjustment; was 25 until the P30 age sweep (2026-10-02)."}
-  first_evidence_of_lio_type_views: {value: "Académie française reception speech", year: 1882, certainty: 1.0, cites: [{source: S3, locator: "pp. 3–4, 20"}], how_known: "Earliest dated statement read."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The speech (1882) comes late in the major work; nothing earlier was read.", certainty: 0.5, cites: [{source: S3, locator: "p. 3"}], how_known: "Dates of what was read."}
+  first_evidence_of_lio_type_views: {value: "Note to the Minister on the role of the infinitely small (lois de la permanence de la vie)", year: 1862, certainty: 0.7, cites: [{source: S8, locator: "pp. 5–6"}], how_known: "Earliest dated own-voice statement now used for a scored LIO axis at 3 or 4 (B_cause). Favé letter is 1863; Arbois speech 1874; Académie speech 1882."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "1862–1882 statements fall inside the 1848–1885 major-work span.", certainty: 0.7, cites: [{source: S8, locator: "pp. 5–6"}, {source: S3, locator: "p. 3"}], how_known: "Dates of the statements used for B and A."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -222,8 +271,10 @@ review:
     - "The ENS page says pasteurization came from a request of 'Napoléon Bonaparte'; Britannica says Napoleon III. The ENS slip is not used."
     - "Small differences between the 1882 printing and the Académie française web text ('Jéhova'/'Jehova'; in the Faraday quotation 'joies'/'voies'); quotations follow the 1882 printing."
   open_questions:
-    - "Read his letters (Correspondance, ed. Pasteur Vallery-Radot) and Geison, The Private Science of Louis Pasteur (1995), for private statements on religion."
-    - "Check family religion and practice in Vallery-Radot's Vie de Pasteur (archive.org scans exist), keeping reported speech apart."
+    - "Read Correspondance de Pasteur (ed. Pasteur Vallery-Radot; Gallica vols I–IV) for further private God-locus letters that could raise A above 0.5 or corroborate A (P48)."
+    - "Geison, The Private Science of Louis Pasteur (1995; IA privatescienceof0000geis), unread this pass."
+    - "Trace the Académie de Médecine 'two men in each of us' / immortal-force passage (quoted in Life of Pasteur) to a primary printing for C or A."
+    - "Family religious practice beyond Wikipedia's Catholic birth family (S9)."
 
 sources:
   - id: S1
@@ -234,6 +285,7 @@ sources:
     url: "https://www.britannica.com/biography/Louis-Pasteur"
     accessed: 2026-10-02
     reliability_note: "Signed article by an Institut Pasteur scientist; all four section pages read. Cited by section heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S2
     type: secondary
@@ -243,6 +295,7 @@ sources:
     url: "https://www.ens.psl.eu/portraits-de-normaliens/louis-pasteur-1822-1895"
     accessed: 2026-10-02
     reliability_note: "Institutional portrait; paragraphs counted from 'Louis Pasteur est né'. Contains at least one slip (see flags)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, institutions]
   - id: S3
     type: primary
@@ -253,6 +306,7 @@ sources:
     url: "https://archive.org/details/b30478145"
     accessed: 2026-10-02
     reliability_note: "Library scan of the 1882 printing. Pages 3–4, 20–21, 23–26 checked on the page images (leaf = page + 7)."
+    source_quality: "primary / own words"
     used_for: [identity, contribution, worldview, timing, lane_b, collaborators]
   - id: S4
     type: primary
@@ -262,6 +316,7 @@ sources:
     url: "https://www.academie-francaise.fr/discours-de-reception-de-louis-pasteur"
     accessed: 2026-10-02
     reliability_note: "Official site of the institution; the text matches S3 except for small variants noted in the flags."
+    source_quality: "primary / own words"
     used_for: [contribution, institutions]
   - id: S5
     type: secondary
@@ -271,6 +326,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
   - id: S6
     type: secondary
@@ -280,6 +336,7 @@ sources:
     url: "https://prosopo.ephe.psl.eu/louis-pasteur"
     accessed: 2026-10-02
     reliability_note: "Signed notice in an institutional prosopographical dictionary; used only for the place of death. It lists the ENS portrait (S2) among its 'Sites internet référents', so it is not independent of S2."
+    source_quality: "reference entry"
     used_for: [basics]
   - id: S7
     type: secondary
@@ -290,7 +347,30 @@ sources:
     url: "https://inventaire.iledefrance.fr/dossier/IA00051396"
     accessed: 2026-10-02
     reliability_note: "Official regional heritage inventory record; read on the web page ('Historique'). Used only for the estate's history and its link to the Saint-Cloud national domain."
+    source_quality: "reference entry"
     used_for: [basics]
+  - id: S8
+    type: primary
+    kind: "published work by the subject"
+    author: "Louis Pasteur"
+    year: 1922
+    citation: "Pasteur, Louis. Œuvres de Pasteur, tome VII: Mélanges scientifiques et littéraires. Réunies par Pasteur Vallery-Radot. Paris: Masson, 1922. Internet Archive OCR: oeuvresp07pastuoft / uvresdepasteur0007past. Key loci: Note to the Minister (Apr 1862), pp. 3–7; Letter to Colonel Favé (22 Mar 1863), pp. 8–9; [Sur la Vie] (undated MS), p. 29; Discours, collège d'Arbois (8 Aug 1874), pp. 292–295; Claude Bernard notice (Moniteur universel, 7 Nov 1867), pp. 284–285; Littré reception speech reprint, pp. 335–339."
+    url: "https://archive.org/details/oeuvresp07pastuoft"
+    accessed: 2026-10-24
+    reliability_note: "Posthumous collected edition; Favé letter and Sur la Vie are marked inédits by the editor; Minister note was an Archives Nationales MS published at the 1923 centenary (editor's note). OCR from IA djvu.txt; French quotes checked against the OCR pages cited. Page numbers are the Mélanges running heads."
+    source_quality: "primary / own words"
+    used_for: [worldview, timing, lane_b, review]
+  - id: S9
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Louis Pasteur.\" English Wikipedia. https://en.wikipedia.org/wiki/Louis_Pasteur. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Louis_Pasteur"
+    accessed: 2026-10-24
+    reliability_note: "Crowdsourced; used for dual bio (P50), Catholic birth family, death at Marnes-la-Coquette, and the Faith and spirituality section's pointer that the Breton-peasant quote is treated as apocryphal. Body facts cross-checked against S1 where cited. Contested faith claims (last sacraments, crucifix) not scored."
+    source_quality: "reference entry"
+    used_for: [identity, basics, childhood, heritage, worldview, review]
+
 ---
 
 # Louis Pasteur
@@ -299,7 +379,7 @@ sources:
 
 ## Summary
 
-Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1]. In his 1882 Académie française speech he kept experimental science free of metaphysics yet held that the notion of the infinite puts "le surnaturel [...] au fond de tous les cœurs" and that "L'idée de Dieu est une forme de l'idée de l'infini" [S3, pp. 20, 24]. primary_system BELOW_THRESHOLD; B 3 (0.5, alternative 4, P35), D 2 (0.7); A and E below threshold, C UNKNOWN; mid_basin below threshold.
+Louis Pasteur (1822–1895), French chemist and microbiologist, discovered molecular asymmetry, founded the germ theory of fermentation, refuted spontaneous generation and developed the anthrax and rabies vaccines [S1; S9]. In Œuvres VII he names God as the agent who placed properties in the humblest creatures and as "auteur de la vie" [S8, pp. 6, 8–9, 29]; the 1882 Académie speech still treats the idea of God as a form of the idea of the infinite [S3, p. 24]. primary_system BELOW_THRESHOLD; A 0 (0.5, alternative 2), B 3 (0.7, alternative 4), D 2 (0.7); C and E below threshold; mid_basin below threshold.
 
 ## Life and work
 
@@ -315,15 +395,15 @@ Son of a tanner who had been a decorated sergeant major; an average pupil gifted
 
 ## Adult working worldview
 
-By showing that life "ne s'est jamais montrée à l'homme comme un produit des forces qui régissent la matière" he served "la doctrine spiritualiste" [S3, pp. 3–4]. Experimental science "n'aurait rien à apprendre d'aucune spéculation métaphysique" [S3, p. 20], but the infinite carries "plus de surnaturel qu'il n'y en a dans tous les miracles de toutes les religions" [S3, p. 24]. Scores: B 3 (0.5, alternative 4, P35), D 2 (0.7); A and E below threshold, C UNKNOWN.
+Creator-agent language in private/official texts ("Dieu a placé...", "Dieu leur a départies"; "Dieu comme auteur de la vie") [S8, pp. 6, 8–9, 29] beside the 1882 Infinite-as-idea profession [S3, p. 24]. Own-voice lawful nature: "harmonie inconnue des lois de l'univers" [S8, p. 285]; "lois de la permanence de la vie" [S8, pp. 5–6]. Scores: A 0 (0.5, alt 2), B 3 (0.7, alt 4), D 2 (0.7); C and E below threshold.
 
 ## Heritage (context only)
 
-French, from a Jura artisan family [S1]. Religious heritage not stated in the sources read. Context only.
+French, from a Jura artisan family [S1]. Catholic birth family [S9]. Context only.
 
 ## Timing
 
-First lasting contribution about 1848 (coder's dating, 0.5) [S1]. The worldview evidence read is from 1882.
+First lasting contribution about 1848 (coder's dating, 0.5) [S1]. First LIO-type evidence now 1862 (Minister note) [S8]; 1882 speech remains the fullest public profession [S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -331,8 +411,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
-- His correspondence and Geison (1995); family religion.
+- Correspondance (Gallica) and Geison (1995); Académie de Médecine "two men" primary; family practice beyond Catholic birth.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Ullmann, all four section pages), the ENS portrait, the 1882 printing of the reception speech (Wellcome scan; pp. 3–4, 20–21, 23–26 checked on the images) and the Académie française's online text. MacTutor has no Pasteur page (404); the Institut Pasteur history page did not return article text.
+- 2026-10-24: Deepen D1. Read Œuvres VII Mélanges (IA OCR) for Favé/Minister/Sur la Vie/Arbois/Bernard loci; Life of Pasteur (Gutenberg) for leads only; Wikipedia EN dual bio. A 0 @0.5; B lift to 0.7; C UNKNOWN→BELOW. Chart-moving NO.
