@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 14
+  record_version: 15
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example created to show the record structure. Only well-sourced fields filled; everything else TODO. Not reviewed."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "1844 exclusion: reason, length and restoration added from Cantor 2020 (S8), Brooke 1991 (S9) and Gladstone 1872/1873 (S10, S11); second eldership after 1860 added. Exact readmission date still a gap."}
@@ -23,6 +23,8 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1821–c. 1855 → 1821–1850; worldview.working_years 1813–1865 → 1821–1850, equal to the span (P30 addendum f); 5 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 5 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. lio_views_relative_to_major_work during → after major work: the first dated LIO-type statement (1854) is after the corrected span 1821–1850. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #58, F5 rank 58). Needs: dark and corroborated on A and B (already computed dark filled). Primary ERCP 1859 (IA OCR, experimentalrese00fararich) added as S12: Conservation of Force pp. 443–448 ('only within the power of Him who has created', p. 447) and Observations on Mental Education pp. 463–465 re-checked against the 1855 Lectures on Education printing (Darwin Online A4128; 'bear the reproach'). Self-described science–religion relation 0.7 → 1.0 (§7 secondary cap lifted). P47 source_quality on S1–S13. A 0 @0.7 and B 3 @0.7 labelled support corroborated (P48); D 2 and E 3 likewise. B and D basis corrected to written_profession. Watts/Marcet early reading dual-sourced (Gladstone S10 p. 2 + Wikipedia S13). Cantor 1989/1991 still unread (paywall / IA borrow). mid_basin true unchanged. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: faraday-michael
@@ -117,13 +119,15 @@ childhood:
     - {value: "Apprenticed to the bookbinder and bookseller George Riebau", stage: apprenticeship, institution: "George Riebau, bookbinder", years: "1805–1812", ages: "14–21", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Early life: 'at the age of 14'"}], how_known: "Two sources agree."}
     - {value: "Educated himself during the apprenticeship by reading books brought in for rebinding", stage: self-directed, years: "1805–1812", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S5, locator: "p. 1: 'attempts at self-education'"}], how_known: "Two sources agree."}
   early_mathematics: {value: "arithmetic only", description: "'ciphering' at Sunday school; no consulted source reports geometry or algebra teaching in childhood", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Inferred from the only description of his schooling. Later limits on his mathematics are reported elsewhere but not checked here."}
-  early_geometric_style_reasoning: {value: TODO, note: "Wikipedia says he read Isaac Watts's The Improvement of the Mind during his apprenticeship. Check that in Cantor 1991 or James 2010 before entering it, and say whether it involved definition-to-consequence practice."}
+  early_geometric_style_reasoning: {value: TODO, note: "He read Isaac Watts's The Improvement of the Mind in apprenticeship (S10 p. 2; S13). Whether that reading practised definition-to-consequence reasoning is not settled here; Cantor 1991 or James 2010 still unread on that point."}
   early_science_exposure:
     - {value: "Read the article on electricity in the third edition of the Encyclopaedia Britannica", year: "1805–1812", age: "14–21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
     - {value: "Built a crude electrostatic generator from old bottles and lumber, and a weak voltaic pile for electrochemistry experiments", year: "1805–1812", age: "14–21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
     - {value: "Attended Humphry Davy's chemistry lectures at the Royal Institution, took notes, and sent Davy a bound copy with a request for work", year: 1812, age: "about 21", certainty: 0.7, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography (apprenticeship ended 1812)"}], how_known: "S1 describes the lectures as happening during the apprenticeship, which S2 dates as ending in 1812; the year is therefore inferred."}
   key_early_reading:
-    - {value: "Encyclopaedia Britannica, 3rd edition, article 'Electricity'", certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "One source."}
+    - {value: "Encyclopaedia Britannica, 3rd edition, article 'Electricity'", certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S10, locator: "p. 2"}], how_known: "Britannica and Gladstone (who knew him) both name the Britannica electricity article among his apprenticeship reading."}
+    - {value: "Isaac Watts, The Improvement of the Mind", certainty: 1.0, cites: [{source: S10, locator: "p. 2"}, {source: S13, locator: "Early life (apprenticeship reading)"}], how_known: "Gladstone names Watts among his apprenticeship reading; Wikipedia EN agrees (dual-source, P50)."}
+    - {value: "Jane Marcet, Conversations on Chemistry", certainty: 1.0, cites: [{source: S10, locator: "p. 2"}, {source: S13, locator: "Early life (apprenticeship reading)"}], how_known: "Gladstone names Marcet and says Faraday tested her statements experimentally; Wikipedia EN agrees (dual-source, P50)."}
   childhood_mentors:
     - {value: "George Riebau, the master bookbinder he was apprenticed to, and who first employed him to deliver newspapers", name: "George Riebau", years: "1805–1812", certainty: 0.7, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Early life"}], how_known: "S2 names Riebau; S1 says he first delivered newspapers for the book dealer he was later apprenticed to. That this is the same man is read across the two sources."}
   languages_in_childhood: {value: TODO}
@@ -144,18 +148,18 @@ worldview:
     - {value: "Resigned his eldership", year: 1864, certainty: 0.7, cites: [{source: S5, locator: "p. 4"}], how_known: "One source."}
   self_described_science_religion_relation:
     value: "In a private letter and in a public lecture he kept religion and natural philosophy apart ('two distinct things'; 'an absolute distinction between religious and ordinary belief'), while holding that the works of God cannot contradict the higher things of faith."
-    certainty: 0.7
-    cites: [{source: S3, locator: "final paragraph"}, {source: S10, locator: "pp. 99–100 ('Observations on Mental Education', 1854)"}]
-    how_known: "Two consistent documents in his own words: the 1844 letter to Lovelace (S3) and the 1854 Royal Institution discourse, which claims 'an absolute distinction between religious and ordinary belief' and says he has 'never seen anything incompatible' between the two (quoted by Gladstone, S10). A quotation in a secondary source cannot support 1.0, so 0.7. How far the separation went in his scientific thinking is disputed by historians (see alternatives)."
+    certainty: 1.0
+    cites: [{source: S3, locator: "final paragraph"}, {source: S12, locator: "pp. 464–465 ('Observations on Mental Education')"}, {source: S10, locator: "pp. 99–100 (Gladstone quotation, cross-check)"}]
+    how_known: "Two consistent documents in his own words: the 1844 letter to Lovelace (S3, scholarly transcription) and the 1854 Royal Institution discourse in the 1859 ERCP printing (S12, pp. 464–465; wording also checked against the 1855 Lectures on Education printing). Claims 'an absolute distinction between religious and ordinary belief' and that he has 'never seen anything incompatible' between the two. §7 secondary-quotation cap lifted after the primary check (P47). How far the separation went in his scientific thinking is disputed by historians (see alternatives)."
     alternatives:
       - {value: "Convergent reading: his science and faith interacted (vocation, unity of forces, point-centre atoms and fields).", cites: [{source: S5, locator: "pp. 2–3"}], note: "Russell's argument against taking the 'two distinct things' sentence as the whole story."}
   primary_system:
     value: CHRIST
     basis: consistent_private_letters
     certainty: 0.7
-    cites: [{source: S3, locator: "final paragraph"}, {source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 36, 58, 99–100"}, {source: S5, locator: "pp. 1–2"}, {source: S9, locator: "para. on natural theology"}]
-    how_known: "His Christian belief is in his own words in private letters (S3, 1844; S4, 1861; the Comte de Paris letter through Gladstone, S10, p. 58), consistent with his public 1854 lecture as quoted by Gladstone (S10, pp. 99–100) and with his profession of faith in 1821 and his offices (S10, p. 91; S5, p. 2). The published lecture was read only as a secondary quotation, which cannot support 1.0, so 0.7."
-    rationale: "CHRIST fits 'the religion as practised and confessed' (CODING_GUIDE): his hope is 'founded on the faith that is in Christ' (S3), peace is 'alone in the gift of God', whose 'unspeakable gift in his beloved son' grounds hope (S4), and the truths of the future life are 'received through simple belief of the testimony given' (S10, pp. 99–100). Neither theism split fits better. Not CLASS_THEISM: 'There is no philosophy in my religion' (S3), and he rejected natural theology as 'superfluous and misguided' (S9); no argued simple, immutable God appears. Not CLTHEI: the writing read shows submission, not petition ('perfect trust and submission to God's will', S10, p. 36), and no expected acts of God against the course of nature; in nature God 'governs his material works by definite laws' (S8). CLTHEI's own guidance sends such a case to the host religion. Membership and eldership alone would not code him (CODING_GUIDE); his own writings do. The Sandemanian form is recorded in nominal_affiliations, not as a code."
+    cites: [{source: S3, locator: "final paragraph"}, {source: S4, locator: "first paragraph"}, {source: S12, locator: "pp. 464–465"}, {source: S10, locator: "pp. 36, 58, 99–100"}, {source: S5, locator: "pp. 1–2"}, {source: S9, locator: "para. on natural theology"}]
+    how_known: "His Christian belief is in his own words in private letters (S3, 1844; S4, 1861; the Comte de Paris letter through Gladstone, S10, p. 58), consistent with his public 1854 lecture in primary print (S12, pp. 464–465) and with his profession of faith in 1821 and his offices (S10, p. 91; S5, p. 2). Certainty stays 0.7 because CLTHEI remains a named alternative (CODING_GUIDE §3)."
+    rationale: "CHRIST fits 'the religion as practised and confessed' (CODING_GUIDE): his hope is 'founded on the faith that is in Christ' (S3), peace is 'alone in the gift of God', whose 'unspeakable gift in his beloved son' grounds hope (S4), and the truths of the future life are 'received through simple belief of the testimony given' (S12, pp. 464–465). Neither theism split fits better. Not CLASS_THEISM: 'There is no philosophy in my religion' (S3), and he rejected natural theology as 'superfluous and misguided' (S9); no argued simple, immutable God appears. Not CLTHEI: the writing read shows submission, not petition ('perfect trust and submission to God's will', S10, p. 36), and no expected acts of God against the course of nature; in nature God 'governs his material works by definite laws' (S8). CLTHEI's own guidance sends such a case to the host religion. Membership and eldership alone would not code him (CODING_GUIDE); his own writings do. The Sandemanian form is recorded in nominal_affiliations, not as a code."
     alternatives:
       - {value: CLTHEI, cites: [{source: S5, locator: "pp. 1–2"}], note: "Closest alternative. Russell calls the church evangelical and strongly Calvinist, and quotes J. M. Thomas that he accepted 'the literal truth of the Bible' (S5, p. 2), miracles included. Preferred only if his own writing showed petition answered by God or God acting in particular events beyond nature's course; none was found."}
   secondary_system: {value: UNKNOWN, how_known: "No second system; he published in no other system, and he kept religion and natural philosophy as 'two distinct things' (S3) rather than as two systems."}
@@ -168,42 +172,47 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 36, 58"}, {source: S5, locator: "p. 2, 'Romantic idealism'"}]
-      how_known: "His own letters (S4 in a scholarly transcription; the Comte de Paris letter through Gladstone's quotation) and two accounts of his worship and beliefs. Consistent private writing, so 0.7."
+      how_known: "His own letters (S4 in a scholarly transcription; the Comte de Paris letter through Gladstone's quotation) and two accounts of his worship and beliefs. Consistent private writing, so 0.7. Independent source ids → corroborated (P48)."
       rationale: "At the interventionist pole: a transcendent, fully personal God. Peace 'is alone in the gift of God' and his 'unspeakable gift in his beloved son' grounds hope (S4, 1861). He bows 'before Him who is Lord of all' and waits for 'His time and mode of releasing me' (S10, p. 58). His extempore prayers expressed 'perfect trust and submission to God's will' (S10, p. 36). Where unity was applied 'to God and the universe', his faith 'rose up in disbelief' (S5, p. 2), so God is not the world."
     B_cause:
       value: 3
-      basis: consistent_private_letters
+      basis: written_profession
       certainty: 0.7
-      cites: [{source: S8, locator: "section 'Electric discoveries'"}, {source: S9, locator: "paras. on laws of nature and forces"}, {source: S10, locator: "pp. 103, 118"}, {source: S5, locator: "pp. 2–3"}]
-      how_known: "His own words through two historians' quotations (S8, S9) and a contemporary biographer (S10), consistent with each other. No direct primary text on the axis was read, so 0.7, not 1.0."
-      rationale: "Scored for his physics, as P4 asks. Leans to law. 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8). The beauty of electricity is that it is 'under law' (S9). He spoke of 'the unchangeability of the laws of nature' (S10, p. 103), and as a lecturer did not 'look beyond the natural laws he was describing' (S10, p. 118). He explained table-turning by 'a quasi involuntary muscular action', not a spirit (S8). The stated limited exception: creating or destroying force is 'only within the power of Him', which is why force is conserved (S8, 1857 discourse). So 3, the same as Maxwell's limit at the creation of molecules. Under decision P6 (2026-10-02) B is scored on his account of nature, which for Faraday is his physics, so the score is unchanged. Theology-wide reading: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles, which would score lower."
+      support: corroborated
+      cites: [{source: S12, locator: "pp. 443, 447 ('On the Conservation of Force')"}, {source: S8, locator: "section 'Electric discoveries'"}, {source: S9, locator: "paras. on laws of nature and forces"}, {source: S10, locator: "pp. 103, 118"}, {source: S5, locator: "pp. 2–3"}]
+      how_known: "Primary 1857 discourse in ERCP 1859 (S12): force 'can neither be created nor destroyed' (p. 443) and annihilation of force would be 'only within the power of Him who has created' (p. 447), plus historians' and Gladstone's consistent quotations. Named alternative 4 keeps certainty at 0.7. Independent source ids → corroborated (P48)."
+      rationale: "Scored for his physics, as P4 asks. Leans to law. Primary: in 'On the Conservation of Force' he holds that 'force can neither be created nor destroyed' (S12, p. 443) and that an annihilation of force would be 'an effect equal in its infinity and its consequences with creation, and only within the power of Him who has created' (S12, p. 447). Secondary corroboration: 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8; those exact words not found in S12). The beauty of electricity is that it is 'under law' (S9). He spoke of 'the unchangeability of the laws of nature' (S10, p. 103), and as a lecturer did not 'look beyond the natural laws he was describing' (S10, p. 118). He explained table-turning by 'a quasi involuntary muscular action', not a spirit (S8). So 3, the same as Maxwell's limit at the creation of molecules. Under decision P6 (2026-10-02) B is scored on his account of nature. Theology-wide reading: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles, which would score lower. Plausible alternative: 4, if the creation-of-force limit is read as the edge of science rather than an exception inside it."
     C_ledger:
       value: 1
       basis: scholarly_reconstruction
       certainty: 0.5
+      support: corroborated
       cites: [{source: S4, locator: "first paragraph"}, {source: S10, locator: "p. 58"}, {source: S9, locator: "para. on Sandeman's doctrine"}]
-      how_known: "Coder's reading of his letters and of Brooke's account of Sandemanian teaching. His own words speak of hope and gift, not judgement, so 0.5."
+      how_known: "Coder's reading of his letters and of Brooke's account of Sandemanian teaching. His own words speak of hope and gift, not judgement, so 0.5. Independent source ids → corroborated (P48)."
       rationale: "Leans interventionist. The future life is a personal gift and promise of God, not a natural consequence: 'the ground of no doubtful hope' is God's gift in his Son (S4), and he looks to 'the great and precious promises whereby His people are made partakers of the Divine nature' (S10, p. 58). Sandemanian salvation was 'freely available through Christ’s ransom', with 'the imitation of Christ and obedience to his commands' required in return (S9), and the church disciplined its members, as it did him in 1844 (S8). Not 0, because no punishment language appears in his own words read here. Under decision P7 (2026-10-02), the scope of salvation and church membership is recorded here, not on E: he belonged to 'a very small & despised sect of christians' (S3), whose members kept apart from other denominations (S8). This fits a score of 1 and does not change it."
     D_authority:
       value: 2
-      basis: consistent_private_letters
+      basis: written_profession
       certainty: 0.7
-      cites: [{source: S10, locator: "pp. 99–100 ('Observations on Mental Education')"}, {source: S3, locator: "final paragraph"}, {source: S9, locator: "para. on natural theology"}, {source: S5, locator: "p. 2"}]
-      how_known: "His own public lecture through Gladstone's quotation, his private letter to Lovelace (scholarly transcription) and two historians, consistent with each other, so 0.7."
-      rationale: "Mixed, by domain, as the scale defines 2. Two domains, each with its own authority. For God and the future life, revelation alone: that truth 'cannot be brought to his knowledge by any exertion of his mental powers' and is 'received through simple belief of the testimony given' (S10, pp. 99–100); he refuses to apply his methods 'to the very highest' (S10, p. 100), and knowledge of God came from 'the plain teaching of Scripture', with natural theology 'superfluous and misguided' (S9). For nature, observation and experiment rule, and 'that which is religious & that which is philosophical have ever been two distinct things' (S3); matters like the age of the earth and the Flood are 'studiously avoided' (S5, p. 2). Scripture is never used as evidence in his science, and revelation is not set over observation inside nature, so this is the same two-domain pattern as Maxwell and Newton (both 2). Changed from 1 after the lens audit (2026-10-02). Plausible alternative: 1, if his refusal to apply reason to the highest things is read as revelation outranking reason; so certainty stays at most 0.7 (CODING_GUIDE §3)."
+      support: corroborated
+      cites: [{source: S12, locator: "pp. 464–465 ('Observations on Mental Education')"}, {source: S3, locator: "final paragraph"}, {source: S9, locator: "para. on natural theology"}, {source: S5, locator: "p. 2"}, {source: S10, locator: "pp. 99–100 (Gladstone cross-check)"}]
+      how_known: "Primary 1854 lecture in ERCP 1859 (S12) plus the Lovelace letter (S3) and two historians, consistent with each other. Named alternative 1 keeps certainty at 0.7. Independent source ids → corroborated (P48)."
+      rationale: "Mixed, by domain, as the scale defines 2. Two domains, each with its own authority. For God and the future life, revelation alone: that truth 'cannot be brought to his knowledge by any exertion of his mental powers' and is 'received through simple belief of the testimony given' (S12, pp. 464–465); he refuses to apply his methods 'to the very highest' and is 'content to bear the reproach' (S12, p. 465), and knowledge of God came from 'the plain teaching of Scripture', with natural theology 'superfluous and misguided' (S9). For nature, observation and experiment rule, and 'that which is religious & that which is philosophical have ever been two distinct things' (S3); matters like the age of the earth and the Flood are 'studiously avoided' (S5, p. 2). Scripture is never used as evidence in his science, and revelation is not set over observation inside nature, so this is the same two-domain pattern as Maxwell and Newton (both 2). Plausible alternative: 1, if his refusal to apply reason to the highest things is read as revelation outranking reason; so certainty stays at most 0.7 (CODING_GUIDE §3)."
     E_scope:
       value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S8, locator: "section 'Electric discoveries'"}, {source: S10, locator: "pp. 36, 103"}, {source: S5, locator: "p. 2"}]
-      how_known: "Coder's reading of his words as quoted by two historians and a contemporary biographer (S8, S10) and of Russell's account (S5). No source addresses the axis directly, so 0.5. Rescored under decision P7 (2026-10-02): before P7 this was 1, scored on the scope of salvation and church membership."
+      support: corroborated
+      cites: [{source: S12, locator: "p. 447"}, {source: S8, locator: "section 'Electric discoveries'"}, {source: S10, locator: "pp. 36, 103"}, {source: S5, locator: "p. 2"}]
+      how_known: "Coder's reading of his words as quoted by two historians and a contemporary biographer (S8, S10) and of Russell's account (S5), with the conservation limit now in primary (S12, p. 447). No source addresses the axis directly as a whole, so 0.5. Rescored under decision P7 (2026-10-02). Independent source ids → corroborated (P48)."
       rationale: "Scored on the world's order (decision P7). Leans LIO. One set of laws for all matter: 'the Creator governs his material works by definite laws resulting from the forces impressed on matter' (S8), and he spoke of 'the unchangeability of the laws of nature' (S10, p. 103). Claimed spirit action among people (table-turning) he put down to 'a quasi involuntary muscular action' (S8), so human events fall under the same rules. No petition for favour and no special acts of God for believers appear in his own words read: his prayers expressed 'perfect trust and submission to God's will' (S10, p. 36). The limited exception: he accepted 'the literal truth of the Bible' (S5, p. 2, quoting J. M. Thomas), with its miracles, some of them done for God's people, though none enters his account of nature. So 3. A reviewer who sets the biblical miracles aside could score 4. The sect ('a very small & despised sect', S3) and the promises to 'His people' (S10, p. 58) used to give 1 here. Under P7 they belong to C (see C_ledger)."
   mid_basin:
     value: true
     certainty: 0.7
     cites: [{source: S4, locator: "first paragraph"}, {source: S10, locator: "pp. 58, 103"}, {source: S8, locator: "section 'Electric discoveries'"}]
-    how_known: "P4 test applied to the scores above: A_locus = 0 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7, B scored on his account of nature, his physics and chemistry (P4 as amended by P6, 2026-10-02; the result is the same under the old wording). Both certainties are at least 0.7, so true. F = 5, so first-rank is met. This confirms the v7.1 starting label under the study's own test. Certainty 0.7 because the key B evidence is his words quoted by historians, not a primary text read here."
+    how_known: "P4 test applied to the scores above: A_locus = 0 (≤ 1) at 0.7 corroborated and B_cause = 3 (≥ 3) at 0.7 corroborated, B scored on his account of nature, his physics and chemistry (P4 as amended by P6, 2026-10-02). Both certainties are at least 0.7, so true. F = 5, so first-rank is met. Certainty 0.7 because B still has a named alternative (4)."
   statements:
     - text: "There is no philosophy in my religion[.] I am of a very small & despised sect of christians known, if known at all, as Sandemanians and our hope is founded on the faith that is in Christ. But though the natural works of God can never by any possibility come in contradiction with the higher things that belong to our future existence, and must with every thing concerning Him ever glorify him still I do not think it at all necessary to tie the study of the natural sciences & religion together and in my intercourse with my fellow creatures that which is religious & that which is philosophical have ever been two distinct things[.]"
       cites: [{source: S3, locator: "final paragraph (from Faraday's own copy, IEE MS SC 3, per the edition's note 4)"}]
@@ -229,22 +238,31 @@ worldview:
       verified_against: "secondary quotation"
       verified_on: 2026-10-02
       note: "Short magazine article without notes, by Faraday's main religious biographer. Supports B only together with S9 and S10."
+    - text: "it would be an annihilation of force; an effect equal in its infinity and its consequences with creation, and only within the power of Him who has created."
+      cites: [{source: S12, locator: "p. 447"}]
+      date: "1857-02-27"
+      context: "Friday Evening Discourse 'On the Conservation of Force' at the Royal Institution; arguing that the received inverse-square definition of gravity would imply creation and annihilation of force when distance changes."
+      axes: [B_cause, E_scope]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "ERCP 1859 reprint of the 1857 discourse; page header in the scan reads '1857.] On the gravitating Force. 447'."
     - text: "I believe that the truth of that future cannot be brought to his knowledge by any exertion of his mental powers, however exalted they may be; that it is made known to him by other teaching than his own, and is received through simple belief of the testimony given."
-      cites: [{source: S10, locator: "pp. 99–100"}]
-      context: "Opening of his Royal Institution discourse 'Observations on Mental Education', where he limits the range of his remarks to the things of this life."
+      cites: [{source: S12, locator: "pp. 464–465"}, {source: S10, locator: "pp. 99–100 (Gladstone cross-check)"}]
+      context: "Opening of his Royal Institution discourse 'Observations on Mental Education' (6 May 1854), where he limits the range of his remarks to the things of this life."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "Quoted by Gladstone; checked against the Gutenberg text of the 3rd edition and the OCR of the 2nd. The lecture itself (published 1854; reprinted 1859) was not read."
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "ERCP 1859 IA OCR (S12); wording also checked against the 1855 Lectures on Education printing (Darwin Online A4128, pp. 39–40) and Gladstone (S10)."
     - text: "I shall be reproached with the weakness of refusing to apply those mental operations which I think good in respect of high things to the very highest. I am content to bear the reproach."
-      cites: [{source: S10, locator: "p. 100"}]
+      cites: [{source: S12, locator: "p. 465"}, {source: S10, locator: "p. 100 (Gladstone cross-check)"}]
       context: "Same discourse, after claiming 'an absolute distinction between religious and ordinary belief'."
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "As above."
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-24
+      note: "ERCP 1859 and 1855 Lectures printing both read 'bear'; Wikisource has a typo 'hear'."
     - text: "I bow before Him who is Lord of all, and hope to be kept waiting patiently for His time and mode of releasing me according to His Divine Word, and the great and precious promises whereby His people are made partakers of the Divine nature."
       cites: [{source: S10, locator: "p. 58"}]
       context: "Letter to the Comte de Paris in his last years, when 'the dark shadow was creeping over him'."
@@ -262,7 +280,7 @@ worldview:
       verified_on: 2026-10-02
       note: "Quoted by Gladstone."
   changes_over_life: [{value: UNKNOWN, how_known: "No change of worldview is reported in S1–S11. He attended the Sandemanian chapel as a child and made his profession of faith in 1821, about a month after his marriage (S10, p. 91; S5, p. 2); the brief exclusion of 1844 was over church discipline, not belief (S8)."}]
-  coder_notes: "Example record. Axes, mid_basin and the primary system (CHRIST at 0.7) coded on 2026-10-02 from the sources already cited. The quotes from S3 and S4 are transcriptions from the edited correspondence (Epsilon), not checked against the manuscripts; the new statements are secondary quotations (Gladstone, Cantor). The weak points: B = 3 rests on his words as quoted by historians, and a reviewer could read the creation-of-force limit as the edge of science and score 4; C and E are coder's readings at 0.5; E is scored on the world's order (decision P7), and the sect and salvation reading is on C. B is scored on his account of nature (decision P6); his acceptance of the literal truth of the Bible would pull a whole-religion score lower. The primary code's weak point is CHRIST versus CLTHEI: no petition or intervention language was found in his own words, but only a few letters were read."
+  coder_notes: "Example record. Deepen D1 (2026-10-24): primary ERCP 1859 (S12) now holds the 1857 conservation discourse and the 1854 Mental Education lecture; A/B/D/E labelled support corroborated; self_described → 1.0. S3 and S4 remain Epsilon transcriptions, not manuscript checks. Weak points: B = 3 still has alt 4 (creation-of-force as edge of science); C and E stay at 0.5; CHRIST vs CLTHEI still open (few letters read for petition language). Cantor's 'Creator governs…definite laws' words (S8) not found in S12."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -314,12 +332,12 @@ review:
     - "Second term as elder: Gladstone gives 'after 1860' (S10, p. 36). The often-cited start year 1860 is not confirmed to the year, and the 1864 resignation is from S5 only."
     - "Gladstone changed his account of the 1844 exclusion between editions: the Queen story is in the 1872 first edition (S11, p. 35) and gone from the 1873 second edition (S10, p. 36). Later writers who repeat the Queen story are following the first edition."
   open_questions:
-    - "Primary code: CHRIST, CLTHEI, or something else? Needs a reviewed coding pass (docs/CODING_GUIDE.md)."
-    - "B_cause 3 or 4: is the creation-of-force limit (S8) an exception or the edge of science? mid_basin is true either way."
-    - "Read a primary text on B (the 1857 discourse on the conservation of force, or the 1854 lecture in Experimental Researches in Chemistry and Physics) to raise B above 0.7."
-    - "Early reading (Watts, The Improvement of the Mind; Marcet, Conversations on Chemistry) is widely reported; confirm in Cantor 1991 or James 2010."
+    - "Primary code: CHRIST, CLTHEI, or something else? Needs a reviewed coding pass (docs/CODING_GUIDE.md). Read more letters/prayers for petition language."
+    - "B_cause 3 or 4: is the creation-of-force limit (S12, p. 447) an exception or the edge of science? mid_basin is true either way. Primary text now read; certainty stays 0.7 for the named alternative."
+    - "Source of Cantor's 'Creator governs his material works by definite laws…' wording (S8): not found in ERCP 1859 (S12); needs Cantor 1991 with notes."
+    - "Early geometric-style reasoning: Watts's Improvement of the Mind is confirmed (S10, S13); whether it practised definition-to-consequence is still TODO (Cantor 1991 / James 2010)."
     - "Exact dates of the 1844 exclusion and readmission. Not in any source read. A search-engine summary of a WikiTree membership page gives 31 March and 5 May 1844, but WikiTree is user-edited and the page could not be opened (bot check), so the dates are not used. Cantor 1989 (S6) or Cantor 1991 (reviewed in S9) should settle it."
-    - "What the 1844 discipline dispute was about. Cantor 1989 (S6) is the source; not read (paywalled)."
+    - "What the 1844 discipline dispute was about. Cantor 1989 (S6) is the source; not read (paywalled). Cantor 1991 at IA (michaelfaradaysa0000cant) is borrow-restricted."
 
 sources:
   - id: S1
@@ -330,6 +348,7 @@ sources:
     url: "https://www.britannica.com/biography/Michael-Faraday"
     accessed: 2026-10-01
     reliability_note: "Signed article by a Faraday biographer (author of Michael Faraday, 1965), fact-checked by Britannica editors."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, collaborators, review]
   - id: S2
     type: tertiary
@@ -339,6 +358,7 @@ sources:
     url: "https://www.rigb.org/explore-science/explore/person/michael-faraday-1791-1867"
     accessed: 2026-10-01
     reliability_note: "Faraday's own institution, which holds his papers. The page names the Oxford Dictionary of National Biography as its source."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, institutions, review]
   - id: S3
     type: primary
@@ -349,6 +369,7 @@ sources:
     url: "https://epsilon.ac.uk/view/faraday/letters/Faraday1631"
     accessed: 2026-10-01
     reliability_note: "Scholarly transcription from the edited correspondence (Faraday Project). Note 4 of the edition says the closing part of the letter, which holds the religion passage, is taken from Faraday's copy."
+    source_quality: "primary / own words"
     used_for: [worldview, collaborators]
   - id: S4
     type: primary
@@ -359,6 +380,7 @@ sources:
     url: "https://epsilon.ac.uk/view/faraday/letters/Faraday4061"
     accessed: 2026-10-01
     reliability_note: "Scholarly transcription from the edited correspondence."
+    source_quality: "primary / own words"
     used_for: [basics, worldview, collaborators]
   - id: S5
     type: secondary
@@ -369,6 +391,7 @@ sources:
     url: "https://www.faraday.cam.ac.uk/wp-content/uploads/resources/Faraday%20Papers/Faraday%20Paper%2013%20Russell_EN.pdf"
     accessed: 2026-10-01
     reliability_note: "Short paper by a historian of science (Emeritus Professor, Open University; author of Michael Faraday: Physics and Faith, 2000), drawing on Cantor 1991. Published by a science-and-religion institute; the author argues a 'convergent' reading, so treat interpretation as his."
+    source_quality: "scholarly edition or monograph"
     used_for: [basics, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S6
     type: secondary
@@ -379,12 +402,14 @@ sources:
     url: "https://doi.org/10.1017/S0007087400026388"
     accessed: 2026-10-01
     reliability_note: "Peer-reviewed. Only the title and bibliographic record were consulted (paywalled); used only for the fact of the 1844 exclusion. Its findings are summarised by the same author in S8."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview]
   - id: S7
     type: tertiary
     kind: database
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
+    source_quality: "study roster"
     used_for: [review]
   - id: S8
     type: secondary
@@ -395,6 +420,7 @@ sources:
     url: "https://christianhistoryinstitute.org/magazine/article/drinking-from-a-fount-on-sundays"
     accessed: 2026-10-01
     reliability_note: "Short magazine article, no footnotes, by the author of S6 and of the book-length study Michael Faraday: Sandemanian and Scientist (1991). Read as his own summary of his research."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview, institutions]
   - id: S9
     type: secondary
@@ -405,6 +431,7 @@ sources:
     url: "https://www.lrb.co.uk/the-paper/v13/n14/john-hedley-brooke/among-the-sandemanians"
     accessed: 2026-10-01
     reliability_note: "Book review by a historian of science and religion. Reports Cantor's findings, so it is not independent of S8."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview]
   - id: S10
     type: secondary
@@ -415,6 +442,7 @@ sources:
     url: "https://archive.org/details/michaelfaraday03gladgoog"
     accessed: 2026-10-01
     reliability_note: "Biography by a chemist who knew Faraday; the preface calls it 'my own reminiscences of the great philosopher'. Published within six years of his death. The preface to the second edition does not mention the changed passage. Quotes checked against the proofread Gutenberg text of the 3rd edition and the OCR of the 2nd-edition scan, which agree."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview, review]
   - id: S11
     type: secondary
@@ -425,12 +453,37 @@ sources:
     url: "https://archive.org/details/michaelfaraday02gladgoog"
     accessed: 2026-10-01
     reliability_note: "First edition of S10. Used only to record the Queen story that the second edition withdrew. Quote checked against the OCR text of the scan; the 1872 New York (Harper) printing, pp. 52–53, has the same passage."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview, review]
+
+  - id: S12
+    type: primary
+    kind: "published work by the subject"
+    author: "Michael Faraday"
+    year: 1859
+    citation: "Faraday, Michael. Experimental Researches in Chemistry and Physics. London: Taylor and Francis, 1859. Includes 'On the Conservation of Force' (pp. 443–463; Friday Evening Discourse, Royal Institution, 27 February 1857; also Philosophical Magazine 13 (1857): 225–239) and 'Observations on Mental Education' (pp. 463–491; delivered 6 May 1854 before Prince Albert; first collected in Lectures on Education, London: J. W. Parker and Son, 1855). Internet Archive OCR scan: https://archive.org/details/experimentalrese00fararich (download experimentalrese00fararich_djvu.txt). Mental Education wording also checked against the 1855 Lectures on Education printing, Darwin Online A4128, https://darwin-online.org.uk/converted/pdf/1854_Faraday_Lectures_A4128.pdf."
+    url: "https://archive.org/details/experimentalrese00fararich"
+    accessed: 2026-10-24
+    reliability_note: "Authoritative collected edition of his own papers. Read in IA OCR only (page images not viewed); page numbers taken from OCR running headers (Conservation p. 443 / gravitating-force continuation p. 447; Mental Education pp. 464–465). 1855 Lectures printing confirms 'bear the reproach'. Statement verified_against uses archive scan (OCR only)."
+    source_quality: "primary / own words"
+    used_for: [worldview, timing]
+
+  - id: S13
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Michael Faraday. Wikipedia. https://en.wikipedia.org/wiki/Michael_Faraday (Early life: Watts and Marcet; Sandemanian membership)."
+    url: "https://en.wikipedia.org/wiki/Michael_Faraday"
+    accessed: 2026-10-24
+    reliability_note: "Used only as dual-source (P50) for apprenticeship reading already in Gladstone (S10 p. 2) and for Sandemanian membership already in S5/S10. Not used alone for any LIO axis."
+    source_quality: "reference entry"
+    used_for: [childhood]
+
 ---
 
 # Michael Faraday
 
-> Status: example — unreviewed. This file shows the record structure. Primary system CHRIST at 0.7. LIO axes scored (A 0, B 3, D 2 at 0.7; C 1, E 3 at 0.5) and mid_basin true at 0.7 under the P4 test as amended by P6.
+> Status: example — unreviewed. Deepen D1 (2026-10-24). Primary system CHRIST at 0.7. LIO axes: A 0, B 3, D 2 at 0.7 corroborated; C 1, E 3 at 0.5 corroborated; mid_basin true at 0.7. Self-described science–religion relation at 1.0 after primary Mental Education check.
 
 ## Summary
 
@@ -457,15 +510,15 @@ He founded the Friday Evening Discourses and the Christmas Lectures [S2]. His na
 
 The household was poor. His father was often ill, and the four children went hungry [S1, Early life]. The family was Sandemanian [S1, Early life; S2], a dissenting tradition that went back at least to his grandfather [S5, p. 1]. As a child he went to the Sandemanian chapel in Paul's Alley [S5, p. 1]. His schooling was reading, writing and ciphering at a church Sunday school [S1, Early life]. No consulted source mentions geometry or algebra in childhood, so early mathematics is entered as "arithmetic only" at certainty 0.7. Whether he had any early practice in definition-to-consequence reasoning is still TODO.
 
-From age 14 he was apprenticed to a bookbinder. He read what came in for binding, including the electricity article in the third edition of the Encyclopaedia Britannica, and built a simple electrostatic machine and a voltaic pile [S1, Early life].
+From age 14 he was apprenticed to a bookbinder. He read what came in for binding, including Isaac Watts's *The Improvement of the Mind*, Jane Marcet's *Conversations on Chemistry*, and the electricity article in the third edition of the Encyclopaedia Britannica, and built a simple electrostatic machine and a voltaic pile [S10, p. 2; S13; S1, Early life].
 
 ## Adult working worldview
 
 He married Sarah Barnard on 12 June 1821 and sought membership of the Sandemanian church within days [S5, p. 2]. Gladstone says "he did not make any formal profession of his faith till a month after his marriage" [S10, p. 91]. He became a deacon in 1832 and an elder in 1840 [S5, p. 2]. In 1844 he was excluded from the church, which also ended his eldership [S10, p. 36; S6]. Cantor says this lasted "a few weeks in the spring of 1844" and was "owing to an internal dispute over church discipline" [S8]. The older story, that he was put out for being the Queen's guest on a Sunday, comes from the first edition of Gladstone's biography [S11, p. 35]. Gladstone dropped it in the second edition, which says the reason "is unknown except to the parties immediately concerned" [S10, p. 36]. He was restored to membership [S8; S10, p. 36], became an elder again after 1860 [S10, p. 36], and resigned his eldership in 1864 [S5, p. 4].
 
-In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces, and that a private memorandum on atoms and fields invokes God [S5, pp. 2–3]. In his science he looked for laws: Cantor quotes his belief that "the Creator governs his material works by definite laws resulting from the forces impressed on matter" [S8]. He held that force is conserved because creating or destroying it is "only within the power of Him" [S8]. For the future life he relied on revelation alone: its truth "is received through simple belief of the testimony given" [S10, pp. 99–100].
+In his own words to Ada Lovelace in 1844: "There is no philosophy in my religion", the works of God "can never by any possibility come in contradiction" with the things of faith, and "that which is religious & that which is philosophical have ever been two distinct things" [S3]. In 1861 he wrote to De La Rive of the "good hope" that made death "a comfort - not a fear" [S4]. The same separation appears in his 1854 public lecture *Observations on Mental Education*: an "absolute distinction between religious and ordinary belief", with the truths of the future life "received through simple belief of the testimony given" [S12, pp. 464–465]. Russell argues that despite that separation, his faith shaped his sense of vocation and his search for a unity of forces [S5, pp. 2–3]. In his science he looked for laws: Cantor quotes his belief that "the Creator governs his material works by definite laws resulting from the forces impressed on matter" [S8]. In the 1857 discourse *On the Conservation of Force* he held that force "can neither be created nor destroyed" and that an annihilation of force would be "only within the power of Him who has created" [S12, pp. 443, 447].
 
-Coding (2026-10-02): CHRIST at 0.7, from his own letters. Not CLASS_THEISM, since he held "no philosophy in my religion" [S3]; not CLTHEI, since no petition or intervention in nature appears in his own words [S10, p. 36; S8]. A 0, B 3 (his account of nature, P6) and D 2 at 0.7; C 1 and E 3 at 0.5. E is scored on the world's order (decision P7): God governs matter "by definite laws" [S8], and no favour in events appears in his own words. The sect and salvation reading is on C. mid_basin true at 0.7.
+Coding: CHRIST at 0.7, from his own letters and the primary 1854 lecture. Not CLASS_THEISM ("no philosophy in my religion" [S3]); not CLTHEI (no petition or intervention in nature in his own words [S10, p. 36; S12]). A 0, B 3 (his account of nature, P6) and D 2 at 0.7 corroborated; C 1 and E 3 at 0.5 corroborated. E is scored on the world's order (decision P7). mid_basin true at 0.7. Self-described science–religion relation at 1.0 after the primary Mental Education check.
 
 ## Heritage (context only)
 
@@ -473,7 +526,7 @@ English, from a Sandemanian family with a long history of dissent from the Churc
 
 ## Timing
 
-His first lasting contribution came in 1821, at about age 30 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2; S10, p. 91]. Throughout his major work (1821 to about 1855) he was a practising Sandemanian [S5, p. 2; S1, Later life]. The dated statements on the axes (1844, 1854, 1857) fall during the major work [S3; S10; S8].
+His first lasting contribution came in 1821, at about age 30 [S1, Early life]. That same year he joined the Sandemanian church [S5, p. 2; S10, p. 91]. Throughout his major-work span (1821–1850) he was a practising Sandemanian [S5, p. 2]. The earliest dated LIO-type statement is the 1854 Mental Education lecture, after that span; the 1857 conservation discourse is later still [S12; S3].
 
 ## Lane B notes (labeled belief model)
 
@@ -482,11 +535,11 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 ## Open questions
 
 - Primary code CHRIST versus CLTHEI: read more of his letters and prayers for petition or expected divine action in events. Would raise or overturn the 0.7.
-- B_cause 3 or 4: is the creation-of-force limit an exception or the edge of science? mid_basin is true either way.
-- Read a primary text for B (e.g. the 1857 conservation-of-force discourse) to raise its certainty.
+- B_cause 3 or 4: is the creation-of-force limit [S12, p. 447] an exception or the edge of science? mid_basin is true either way; primary text now read.
+- Source of Cantor's "Creator governs…definite laws" wording [S8]: not found in ERCP 1859; needs Cantor 1991 with notes.
+- Early geometric-style reasoning from Watts: reading confirmed [S10, S13]; definition-to-consequence practice still TODO.
 - Was a knighthood ever offered? Sources disagree [S1, Later life; S2; S5, p. 4].
-- Confirm his early reading (Watts, Marcet) in a full biography.
-- Exact dates of the 1844 exclusion and readmission, and what the discipline dispute was about. Needs Cantor 1989 [S6] or Cantor 1991.
+- Exact dates of the 1844 exclusion and readmission, and what the discipline dispute was about. Needs Cantor 1989 [S6] or Cantor 1991 (IA borrow-restricted).
 
 ## Research log
 
@@ -496,3 +549,4 @@ Everything in this section is Lane B: labeled belief, not a finding. The v7.1 pa
 - 2026-10-02 (fourth pass): Scored A–E and mid_basin from the sources already cited, re-reading S3, S4, S5, S8, S9 and S10 (Gutenberg 3rd edition and the archive.org 2nd-edition OCR). No new sources. Every new quotation was checked word for word with verify_quotes.py. Primary system left TODO.
 - 2026-10-02 (fifth pass): Decision P6 approved. Coded the primary system CHRIST at 0.7 from the sources already cited (S3, S4, S5, S8, S9, S10); no new sources. Rechecked B and mid_basin under P6: unchanged.
 - 2026-10-02 (sixth pass): Decision P7 approved. Rescored E_scope on the world's order from the sources and quotations already in the record (S3, S5, S8, S10); no new sources or quotations. The sect and salvation reading moved to the C_ledger rationale.
+- 2026-10-24 (deepen D1, queue #58): Primary ERCP 1859 IA OCR (S12, experimentalrese00fararich) — Conservation of Force pp. 443–448 and Mental Education pp. 464–465; Mental Education also checked against 1855 Lectures on Education (Darwin Online A4128). Re-checked Epsilon S3/S4; Russell PDF; Gladstone Gutenberg/OCR (Watts/Marcet p. 2); CHI Cantor 2020; Wikipedia EN (S13). Cantor 1989 paywalled; Cantor 1991 IA borrow-restricted (michaelfaradaysa0000cant). Britannica blocked (Cloudflare). P47 on S1–S13; A&B support corroborated (already dark filled); self_described → 1.0. No fallacy_catalog (Jason).
