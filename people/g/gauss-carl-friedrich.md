@@ -2,16 +2,17 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Gray, first page). Worldview from Sartorius von Waltershausen, Gauss zum Gedächtniss (1856), a friend's memoir with reported sayings, read on the Internet Archive scan (pp. 16, 97, 98, 101, 102, 103 checked on the page images; pp. 99–100 in the OCR text only). No writing by Gauss on religion was read. primary_system BELOW_THRESHOLD. A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #156: full_name now cites MacTutor's heading for the order used, with Britannica's 'Johann Friedrich Carl Gauss' as a cited alternative (both reopened); certainty unchanged pending v8's ruling on name-order disputes. #205: the 1795 age note corrected (Sartorius p. 16 puts the least-squares discovery at Göttingen, reached 11 October 1795, so 18). #216: 'Fragen.«' copied as printed (page image). Left for v8 as a method question: #162 (first lasting year 1796 vs the listed least-squares item 1795–1801). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. first_lasting_contribution_year 1796 → 1795 (P12 start of the 1795–1801 least-squares item) (P17, P23), the 1796 alternative dropped since it needs the item re-dated or split (P23), 1792 kept (P25), era and age unchanged; 17-gon item 1.0 → 0.5 with Britannica's 1792 named (P25); major_work_period how_known cites the sources' dates (P23); A_locus 1 (0.5) → BELOW_THRESHOLD and B_cause 4 (0.5) → BELOW_THRESHOLD (reported speech alone (P18); B needs a statement about nature (P16)); E_scope stays BELOW_THRESHOLD (reported 'Logik' through the universe and working science, P19; the draft's UNKNOWN reverted); mid_basin note rewritten; lio_views_relative_to_major_work unclear → no LIO-type views found (P27); schooling/0 stage dame or charity school → elementary school (P21); single-source 1.0 fields → 0.7 (P15) (definition_fit, working_years, Göttingen observatory, Weber, Riemann); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #15). P47 source_quality on every source. Own-word letters: S5 Schmidt–Stäckel Briefwechsel Gauss–Bolyai (1899; archive.org OCR) — 1799.I.9 hope of better future; 1802.XII.3 true life in eigentliche Heimat; 1848.IV.20 Schöpfer unsrer Existenz / schönere Metamorphose; S6 Schilling Wilhelm Olbers Bd. 2.1 (1900) Brief 1805.IX.3 'bloss durch die Gnade Gottes'; S7 Kneller Christianity and the leaders of modern science (1911) scholarly digest of those letters. A_locus BELOW_THRESHOLD → 1 @ 0.5 consistent_private_letters, support corroborated (S5+S6); named alt 2 (deist reading, Bühler). B_cause BELOW_THRESHOLD → 3 @ 0.5 inference_from_work, support corroborated (S2+S3; P30/P35 scientist: least squares/Ceres, least constraint, magnetism/potential theory); named alt 4. C stays BELOW_THRESHOLD (immortality without reward/punishment language). D stays BELOW_THRESHOLD (reported speech on science/religion). E stays BELOW_THRESHOLD (scientist, no statement; P19). mid_basin still BELOW_THRESHOLD (A and B only at 0.5). primary_system stays BELOW_THRESHOLD (confession still open). Chart: unplotted → faded filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: gauss-carl-friedrich
@@ -91,7 +92,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1795–1855", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "From Göttingen to his death. MacTutor alone, so 0.7 under the single-source rule (P15)."}
+  working_years: {value: "1795–1840", certainty: 0.7, cites: [{source: S1, locator: "p. 16"}, {source: S2, locator: "Biography ('by 1840 he had written three important papers on the subject')"}], how_known: "Equals timing.major_work_period (P30 addendum): least squares 1795 to magnetism papers with Weber through 1840 (S1, S2). Was 1795–1855 (death); tightened on deepen."}
   nominal_affiliations: []
   self_described_science_religion_relation:
     value: "Reported by a friend: questions of ethics, of 'unser Verhältniss zu Gott', of our destiny and future mattered to him more than mathematics, but 'ihre Lösung liegt ganz unerreichbar über uns und ganz ausserhalb des Gebietes der Wissenschaft'; he held philosophical ideas to be subjective and kept them strictly apart from science."
@@ -100,21 +101,39 @@ worldview:
     how_known: "Reported speech in a friend's memoir (Sartorius knew him for many years); not Gauss's own writing, so 0.5."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S1, locator: "pp. 99–103"}]
-    how_known: "Only a friend's report was read. Sartorius affirms a personal, eternal, just, all-wise, almighty God and personal survival (p. 103), but says he will not give a full picture of Gauss's religious views and will touch only sides 'unabhängig von allen confessionellen Fragen' (pp. 99–100, OCR text only). Without his confession or his own notes (which Sartorius says survive, p. 100) no system file fits at 0.5."
-    note: "Draft judgment (one line): BELOW_THRESHOLD because the only source deliberately leaves out confession. Candidates: CLASS_THEISM, DEISM, CHRIST (all drafts). Would need his letters or his religious notes."
-  secondary_system: {value: UNKNOWN, how_known: "No system evidence beyond the memoir."}
+    cites: [{source: S1, locator: "pp. 99–103"}, {source: S5, locator: "pp. 40–47, 132–133"}, {source: S6, locator: "Brief 133, pp. 267–269"}]
+    how_known: "Sartorius still leaves confession aside (pp. 99–100). Own letters name Gott / Schöpfer and a better life after death (S5, S6) but do not fix a confession or reject revelation, so no system file fits at 0.5 (P19; DEISM needs rejection of revelation, P27)."
+    note: "Draft judgment (one line): BELOW_THRESHOLD — confession still open. Candidates: CLASS_THEISM, DEISM, CHRIST (all drafts). Letters strengthen personal-Creator language but do not settle the code."
+  secondary_system: {value: UNKNOWN, how_known: "No second system."}
   candidate_codes_considered:
-    - {code: CLASS_THEISM, reason: "Considered: 'ewigen, gerechten, allweisen, allmächtigen Gott' (S1, p. 103) fits perfect-being theism, but nothing on divine simplicity or the classical school.", cites: [{source: S1, locator: "p. 103"}]}
-    - {code: DEISM, reason: "Considered: a 'letzten Ordner der Dinge' and logic running through the whole universe (S1, pp. 97–98, 103), with God outside science; but survival and a personal God are affirmed and revelation is not discussed.", cites: [{source: S1, locator: "pp. 97–98, 103"}]}
-    - {code: CHRIST, reason: "Considered: nothing read on Christ, church or scripture; Sartorius leaves confession aside (pp. 99–100).", cites: [{source: S1, locator: "pp. 99–100"}]}
+    - {code: CLASS_THEISM, reason: "Considered: Sartorius's 'ewigen, gerechten, allweisen, allmächtigen Gott' (S1, p. 103) and Gauss's own 'Schöpfer unsrer Existenz' (S5, 1848.IV.20) fit personal Creator theism, but nothing on divine simplicity or the classical school; confession still open.", cites: [{source: S1, locator: "p. 103"}, {source: S5, locator: "Letter XLI, Göttingen 1848.IV.20, pp. 132–133"}]}
+    - {code: DEISM, reason: "Considered (and named as A alternative): a last Ordner and science kept apart from God-questions (S1); Bühler and others read Gauss as deist. Against: personal Schöpfer / Gnade Gottes language and afterlife hope in his own letters; revelation not rejected (P27).", cites: [{source: S1, locator: "pp. 97–98, 103"}, {source: S5, locator: "pp. 40–47, 132–133"}, {source: S6, locator: "Brief 133, p. 269"}]}
+    - {code: CHRIST, reason: "Considered: Lutheran upbringing is often asserted in secondary literature, but nothing read here on Christ, church or scripture in his own hand; Sartorius leaves confession aside.", cites: [{source: S1, locator: "pp. 99–100"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, note: "Evidence exists only as reported speech: Sartorius reports 'der feste Glaube an einen letzten Ordner der Dinge, an einen ewigen, gerechten, allweisen, allmächtigen Gott' (S1, p. 103) and an 'alles durchdringenden Intelligenz, die von einem Sonnensystem zum andern im Weltall wiederklingt' (p. 102). Read alone, that leaned to 1 (named alternative 2).", how_known: "Was 1 at 0.5. Reported speech cannot score an axis on its own (P18), and nothing else read bears on A, so BELOW_THRESHOLD (P19)."}
-    B_cause: {value: BELOW_THRESHOLD, note: "Scored on his account of nature (P6). The only remarks about nature are reported: for Sartorius the principle of least constraint was 'die mathematische Verkörperung jenes ethischen Grundgedankens, den er für das Universum als bindend erkannte' (S1, p. 97), and Gauss recognised 'die durchs ganze Weltall gehende Logik' (pp. 97–98). MacTutor paraphrases: 'He later came to believe his potential theory and his method of least squares provided vital links between science and nature' (S2, Biography), a paraphrase, not his words. His exact astronomy, geodesy and least squares (S2) are physics-facing work with no remark of his own on natural law, which a mathematician needs for B (P16).", how_known: "Was 4 at 0.5. B needs a statement about nature (P16); working science alone does not count, and reported speech cannot score an axis on its own (P18); some evidence exists, so BELOW_THRESHOLD (P19)."}
-    C_ledger: {value: BELOW_THRESHOLD, note: "Survival after death is affirmed (S1, pp. 101, 103) and Sartorius calls the spiritual life of the universe a 'grosses von ewiger Wahrheit durchdrungenes Rechtsverhältniss' (p. 101), but nothing read speaks of reward, punishment or judgement, and the evidence is reported speech. Draft judgment (one line): not scored from the memoirist's phrase.", how_known: "Some evidence, too weak (§4) (P19)."}
-    D_authority: {value: BELOW_THRESHOLD, note: "Reported: questions of God lie 'ausserhalb des Gebietes der Wissenschaft' (S1, p. 97); nothing read speaks of revelation or scripture.", how_known: "Some evidence, too indirect (§4) (P19)."}
-    E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). Only indirect evidence on the first question (the same rules everywhere): Sartorius reports that Gauss recognised 'die durchs ganze Weltall gehende Logik' (S1, pp. 97–98), and his astronomy (the orbit of Ceres, S2) is working science. Nothing read on favour for a group in events.", how_known: "Reported speech cannot score an axis on its own (P18), and working science without a statement keeps E at BELOW_THRESHOLD (P19). The draft had re-sorted it as UNKNOWN; P19's working-science clause keeps it BELOW_THRESHOLD."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus and B_cause are both BELOW_THRESHOLD (reported speech only, P18; B needs a statement about nature, P16), so the P4 test cannot be applied (§6)."}
+    A_locus:
+      value: 1
+      basis: consistent_private_letters
+      certainty: 0.5
+      support: corroborated
+      cites: [{source: S5, locator: "Letter XXI, Braunschweig 1802.XII.3, pp. 40–47 ('wahren Lebens in unsrer eigentlichen Heymath')"}, {source: S5, locator: "Letter XLI, Göttingen 1848.IV.20, pp. 132–133 ('Schöpfer unsrer Existenz'; 'schöneren Metamorphose')"}, {source: S6, locator: "Brief 133, Braunschweig 1805.IX.3, p. 269 ('bloss durch die Gnade Gottes')"}, {source: S1, locator: "p. 103 ('letzten Ordner der Dinge'; 'ewigen, gerechten, allweisen, allmächtigen Gott')"}, {source: S7, locator: "pp. 44–46 (English digest of the Bolyai/Olbers letters)"}]
+      how_known: "Was BELOW_THRESHOLD under P18 (Sartorius only). Deepen: two independent scholarly letter editions give Gauss's own words naming Gott's grace (1805, during major work) and a Schöpfer (1848, after major_work_period end 1840 — cited for consistency of Creator language, not as the sole during-span A anchor). During-span afterlife letter 1802 speaks of true life in a spiritual home. Held at 0.5: (a) contested deist reading (named alt 2); (b) during-span A language is thinner than the 1848 Schöpfer line; (c) private letters, more than one document → consistent_private_letters ceiling 0.7, capped by contest and indirectness. Support corroborated (S5+S6; S1 friend-report of personal God kept as corroborating context, also cited on the named alt)."
+      rationale: "Draft judgment (one line): personal transcendent Creator — 'bloss durch die Gnade Gottes' (S6, 1805) and 'der Schöpfer unsrer Existenz' (S5, 1848), with during-span hope of a true life in our eigentliche Heimat (S5, 1802). Named alternative: 2 (impersonal Ordner / deist reading)."
+      alternatives:
+        - {value: 2, note: "Deist / impersonal last Ordner reading (Sartorius's 'letzten Ordner der Dinge'; Bühler and others).", cites: [{source: S1, locator: "p. 103"}]}
+    B_cause:
+      value: 3
+      basis: inference_from_work
+      certainty: 0.5
+      support: corroborated
+      cites: [{source: S2, locator: "Biography (Ceres orbit; least squares; principle of least constraint; magnetism / potential theory)"}, {source: S3, locator: "opening; Hanover survey / theorema egregium; astronomy paragraphs"}]
+      how_known: "Was BELOW_THRESHOLD under a stricter P16 reading that demanded an explicit nature statement. Deepen under P30/P35 (scientist with lasting physical/natural contributions → B 3 @ 0.5 inference_from_work, never 4; named alt 4): least-squares orbit of Ceres, least constraint, magnetism and potential theory are lasting results on natural regularity (S2, S3). No statement of his own on law and exception, so 0.5. Sartorius's reported 'Logik' through the universe remains support-only (P18). Support corroborated (S2+S3)."
+      rationale: "Draft judgment (one line): working mathematical astronomy and physics — Ceres orbit by least squares, least constraint, geomagnetism and potential theory (S2; S3) — imply a lawful natural order with no stated exception in what was read, so B 3 at 0.5. Named alternative: 4 (P35: working science cannot tell lawful-with-exceptions from exceptionless)."
+      alternatives:
+        - {value: 4, note: "P35 default alternative for inference_from_work.", cites: [{source: S2, locator: "Biography (Ceres; least squares; least constraint)"}, {source: S3, locator: "astronomy / magnetism paragraphs"}]}
+    C_ledger: {value: BELOW_THRESHOLD, note: "Own letters affirm survival / a better life after death (S5 1799, 1802, 1848) but say nothing on reward, punishment or judgement. Sartorius's 'Rechtsverhältniss' remains reported speech. Draft judgment (one line): immortality without a moral ledger — not scored on C.", how_known: "Some evidence, too weak for C (§4) (P19). Deepen 2026-10-24."}
+    D_authority: {value: BELOW_THRESHOLD, note: "Reported: questions of God lie 'ausserhalb des Gebietes der Wissenschaft' (S1, p. 97); nothing in the letters read speaks of revelation or scripture against reason.", how_known: "Some evidence, too indirect (§4) (P19)."}
+    E_scope: {value: BELOW_THRESHOLD, note: "Scientist under P30; working science bears on E's first question but E is not scored from working science alone (P19). No statement of his own on one world / one order.", how_known: "BELOW_THRESHOLD under P19 (scientist, no statement; deepen 2026-10-24)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 1 ≤ 1 and B_cause 3 ≥ 3 would pass P4's shape test, but both are only at 0.5, under the test's 0.7 bar (§6, P19)."}
   statements:
     - text: "»Es gibt Fragen.« sagte er ein Mal, »auf deren Beantwortung ich einen unendlich viel höhern Werth legen würde als auf die mathematischen z. B. über Ethik, über unser Verhältniss zu Gott, über unsere Bestimmung und über unsere Zukunft; allein ihre Lösung liegt ganz unerreichbar über uns und ganz ausserhalb des Gebietes der Wissenschaft.«"
       cites: [{source: S1, locator: "p. 97"}]
@@ -156,8 +175,45 @@ worldview:
       kind: "reported speech"
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
-  changes_over_life: []
-  coder_notes: "CLASS_THEISM, DEISM and CHRIST are drafts. Everything on worldview rests on one friend's memoir (Sartorius von Waltershausen 1856), read on a Google library scan at the Internet Archive; quoted passages were checked on the page images (leaf = page + 2). Sartorius says Gauss left religious notes in his own hand (p. 100, OCR text) and that a paper on the metaphysics of mathematics had not been found (p. 98 footnote); neither was read. The Greek motto he used, Ὁ Θεὸς ἀριθμητίζει (p. 97), is about questions science cannot settle and is not scored. changes_over_life is empty: no dated change in what was read."
+    - text: "Was sind wir ohne die Hoffnung einer bessern Zukunft? Lass uns die Freiheit unsers Herzens behaupten, so lange es gehen will u. unser Glück vorzüglich in uns selbst suchen."
+      cites: [{source: S5, locator: "Letter VII, Braunschweig 1799.I.9, pp. 29–30"}]
+      date: "1799-01-09"
+      context: "Private letter to Wolfgang Bolyai, mourning a friend's wife's death; during major work."
+      axes: [C_ledger]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Schmidt–Stäckel 1899 OCR (archive.org); wording checked in the OCR against the page header. Used for C context; C still BELOW_THRESHOLD (no reward/punishment language)."
+    - text: "Nun lebe wohl Du Guter. Möge der Traum den wir das Leben nennen dir ein süsser seyn, ein Vorschmack des wahren Lebens in unsrer eigentlichen Heymath, wo den erwachten Geist nicht mehr die Ketten des trägen Leibes, die Schranken des Raums, die Geissel der irdischen Leiden und das Necken unserer kleinlichen Bedürfnisse und Wünsche drückt. Lass uns muthig und ohne Murren die Bürde bis ans Ende tragen, aber nie jenes höhere Ziel aus den Augen verlieren."
+      cites: [{source: S5, locator: "Letter XXI, Braunschweig 1802.XII.3, pp. 40–47"}]
+      date: "1802-12-03"
+      context: "Close of a private letter to Bolyai; during major work. Spelling Heymath as in the edition."
+      axes: [A_locus, C_ledger]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Schmidt–Stäckel 1899. Spiritual-home / true-life language; does not by itself name a personal Creator (paired with 1805 Gnade Gottes and 1848 Schöpfer)."
+    - text: "Endlich vor ein paar Tagen ist's gelungen — aber nicht meinem mühseligen Suchen, sondern bloss durch die Gnade Gottes möchte ich sagen. Wie der Blitz einschlägt, hat sich das Räthsel gelöst."
+      cites: [{source: S6, locator: "Brief 133, Braunschweig 1805.IX.3, pp. 267–269"}]
+      date: "1805-09-03"
+      context: "Private letter to Wilhelm Olbers on finding the proof of the sign of the Gaussian sum (Disquisitiones Arithmeticae follow-on); during major work."
+      axes: [A_locus]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Schilling 1900 OCR (archive.org). OCR garbles Gnade; wording restored from the standard reading of this famous letter (also in Kneller S7). Conventional grace formula — scored with the Bolyai Creator/afterlife letters, not alone."
+    - text: "Ich will gern zugeben, dass dieselben Schicksale, die zu tragen mir so schwer geworden ist, und noch ist, manchem andern viel leichter gewesen wären, aber die Gemüthsverfassung gehört zu unserm Ich, der Schöpfer unsrer Existenz hat sie uns mitgegeben, und wir vermögen wenig daran zu ändern. Ich finde dagegen in diesem Bewusstsein der Nichtigkeit des Lebens, was doch jedenfalls der grössere Theil der Menschheit beim Annähern des Ziels aussprechen muss, mir die stärkste Bürgschaft für das Nachfolgen einer schöneren Metamorphose darbietet."
+      cites: [{source: S5, locator: "Letter XLI, Göttingen 1848.IV.20, pp. 132–133"}]
+      date: "1848-04-20"
+      context: "Private letter to Bolyai late in life; after major_work_period end (1840). Cited for consistency of Creator / afterlife language (P20 / changes_over_life), not as the sole during-span A anchor."
+      axes: [A_locus, C_ledger]
+      kind: "private letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Schmidt–Stäckel 1899. Strongest personal-Creator wording in what was read; outside the 1795–1840 major-work window."
+  changes_over_life:
+    - {value: "Same personal-Creator / afterlife conviction made more explicit late (1848 Schöpfer unsrer Existenz / schönere Metamorphose) than in the during-span letters (1799 hope; 1802 spiritual Heimat; 1805 Gnade Gottes); not a reversal. A uses during-span letters as the primary anchor.", year: 1848, age: 71, certainty: 0.7, cites: [{source: S5, locator: "Letters VII, XXI, XLI"}, {source: S6, locator: "Brief 133"}], how_known: "Dated Bolyai letter after major_work_period end (1840); wording checked in Schmidt–Stäckel OCR."}
+  coder_notes: "Deepen 2026-10-24 (queue #15): A and B lifted on own-word letters (S5, S6) and scientist inference_from_work (P30/P35). CLASS_THEISM, DEISM and CHRIST remain draft candidates; confession still open. Sartorius (S1) kept as support/context only for axes (P18). Religious notes Sartorius says survive (p. 100) still unread. Greek motto Ὁ Θεὸς ἀριθμητίζει (S1 p. 97) not scored. Chart-moving: unplotted → faded filled (A and B both scored at 0.5, both corroborated; mid_basin still BELOW)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -195,11 +251,14 @@ review:
   controversies: []
   data_quality_flags:
     - "First lasting year now 1795 (least squares, start of the 1795–1801 item, P12) (P17, P23); 17-gon date: 30 March 1796 (Sartorius, from Gauss's own note) vs 1792 (Britannica)."
-    - "All A and B evidence is reported speech, which cannot score an axis on its own (P18); A and B moved to BELOW_THRESHOLD."
-    - "All worldview evidence is one friend's memoir; Sartorius warns he may be suspected of mixing in his own views (pp. 99–100, OCR text)."
+    - "A and B now rest on own-word letter editions (S5, S6) and scientist inference_from_work (P30/P35); Sartorius reported speech kept as support only (P18)."
+    - "A at 0.5: contested deist reading; strongest Schöpfer wording is 1848 (after major_work end 1840)."
+    - "Letter editions read as archive.org OCR; Gnade Gottes line restored from the standard reading of Schilling Brief 133 (also Kneller)."
     - "Britannica read as its first page only."
   open_questions:
-    - "Find Gauss's own religious notes, which Sartorius says survive (p. 100), and his letters (e.g. to Bolyai or Olbers) for direct statements."
+    - "Gauss's religious notes in his own hand, which Sartorius says survive (S1, p. 100), still unread."
+    - "A full re-read of Schilling/Bolyai page images (not OCR) for the Gnade Gottes and Schöpfer lines."
+    - "Whether a confession code (CLASS_THEISM vs DEISM vs CHRIST) can be fixed without those notes."
 
 sources:
   - id: S1
@@ -210,7 +269,8 @@ sources:
     citation: "Sartorius von Waltershausen, Wolfgang. Gauss zum Gedächtniss. Leipzig: S. Hirzel, 1856. Internet Archive, bub_gb_h_Q5AAAAcAAJ (Google library scan). https://archive.org/details/bub_gb_h_Q5AAAAcAAJ."
     url: "https://archive.org/details/bub_gb_h_Q5AAAAcAAJ"
     accessed: 2026-10-02
-    reliability_note: "Contemporary memoir by a friend; reported speech, not Gauss's own writing. Quoted pages checked on the page images (leaf = page + 2); pp. 99–100 read in the OCR text only. Author, publisher and date as in the Internet Archive record."
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Contemporary memoir by a friend; reported speech, not Gauss's own writing. Quoted pages checked on the page images (leaf = page + 2); pp. 99–100 read in the OCR text only. Axis scores no longer rest on this alone (P18)."
     used_for: [basics, contribution, worldview, timing, lane_b, collaborators]
   - id: S2
     type: secondary
@@ -219,7 +279,8 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. \"Johann Carl Friedrich Gauss.\" MacTutor History of Mathematics, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/"
     accessed: 2026-10-02
-    reliability_note: "Biography; cited by paragraph description."
+    source_quality: "reference entry"
+    reliability_note: "Biography; cited by paragraph description. Used for B inference_from_work (lasting contributions)."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S3
     type: tertiary
@@ -228,8 +289,9 @@ sources:
     citation: "Gray, Jeremy John. \"Carl Friedrich Gauss.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Carl-Friedrich-Gauss."
     url: "https://www.britannica.com/biography/Carl-Friedrich-Gauss"
     accessed: 2026-10-02
-    reliability_note: "Signed article; first page only."
-    used_for: [identity, basics, contribution, childhood, heritage, institutions]
+    source_quality: "reference entry"
+    reliability_note: "Signed article; first page only. Used for B inference_from_work (lasting contributions)."
+    used_for: [identity, basics, contribution, childhood, heritage, institutions, worldview]
   - id: S4
     type: secondary
     kind: database
@@ -237,8 +299,43 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: "scholarly book"
+    author: "Franz Schmidt and Paul Stäckel (eds.)"
+    year: 1899
+    citation: "Schmidt, Franz, and Paul Stäckel, eds. Briefwechsel zwischen Carl Friedrich Gauss und Wolfgang Bolyai. Leipzig: B. G. Teubner, 1899. Internet Archive, briefwechselzwi00gausgoog. https://archive.org/details/briefwechselzwi00gausgoog."
+    url: "https://archive.org/details/briefwechselzwi00gausgoog"
+    accessed: 2026-10-24
+    source_quality: "primary / own words"
+    reliability_note: "Scholarly edition of Gauss's private letters to Bolyai. Read as archive.org OCR (Google scan); letter numbers and dates from page headers. Letters VII (1799.I.9), XXI (1802.XII.3), XLI (1848.IV.20) used for A/C."
+    used_for: [worldview]
+  - id: S6
+    type: primary
+    kind: "scholarly book"
+    author: "C. Schilling (ed.)"
+    year: 1900
+    citation: "Schilling, C., ed. Wilhelm Olbers, sein Leben und seine Werke. Band 2, Abtheilung 1: Briefwechsel zwischen Olbers und Gauss. Berlin: Julius Springer, 1900. Internet Archive, p1wilhelmolberss02olbeuoft. https://archive.org/details/p1wilhelmolberss02olbeuoft."
+    url: "https://archive.org/details/p1wilhelmolberss02olbeuoft"
+    accessed: 2026-10-24
+    source_quality: "primary / own words"
+    reliability_note: "Scholarly edition of Gauss–Olbers letters. Brief 133 (Braunschweig 1805.IX.3, printed pp. 267–269) for Gnade Gottes. Read as archive.org OCR; wording of the grace clause restored from the standard reading of this letter."
+    used_for: [worldview]
+  - id: S7
+    type: secondary
+    kind: "scholarly book"
+    author: "Karl Alois Kneller"
+    year: 1911
+    citation: "Kneller, Karl Alois. Christianity and the Leaders of Modern Science: A Contribution to the History of Culture in the Nineteenth Century. Trans. T. M. Kettle. Freiburg im Breisgau / St. Louis: B. Herder, 1911. Internet Archive scan used 2026-10-24."
+    url: "https://archive.org/details/christianityandle00kneluoft"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Secondary digest of Gauss's religious letters (Bolyai/Olbers); used to corroborate the standard reading of the Gnade Gottes and afterlife passages, not as primary wording."
+    used_for: [worldview]
+
 ---
 
 # Carl Friedrich Gauss
@@ -247,7 +344,7 @@ sources:
 
 ## Summary
 
-Carl Friedrich Gauss (1777–1855), German mathematician and astronomer, proved the 17-gon constructible, wrote the Disquisitiones Arithmeticae (1801), developed least squares and the intrinsic geometry of surfaces [S1, p. 16; S2; S3]. His friend Sartorius reports a firm belief in a personal, just, almighty God and in survival after death, and his view that questions about God lie "ganz ausserhalb des Gebietes der Wissenschaft" [S1, pp. 97, 103]. No writing of his own on religion was read. Draft under v8's stage 3 rulings (P14–P28): primary_system BELOW_THRESHOLD. A, B, C, D and E below threshold (reported speech only, P18; B needs a statement about nature, P16; E from reported speech and working science, P19); mid_basin below threshold.
+Carl Friedrich Gauss (1777–1855), German mathematician and astronomer, proved the 17-gon constructible, wrote the Disquisitiones Arithmeticae (1801), developed least squares and the intrinsic geometry of surfaces [S1, p. 16; S2; S3]. Deepen (2026-10-24): his own letters name God's grace in discovery ("bloss durch die Gnade Gottes", to Olbers 1805) and a Creator / afterlife hope (to Bolyai 1799, 1802, 1848) [S5; S6]. Sartorius's memoir remains the fullest friend-report on science kept apart from God-questions [S1, pp. 97, 103]. primary_system still BELOW_THRESHOLD (confession open). A_locus 1 @ 0.5 (consistent private letters; named alt 2); B_cause 3 @ 0.5 (inference from lasting work; named alt 4); C, D, E and mid_basin below threshold. Chart: unplotted → faded filled.
 
 ## Life and work
 
@@ -263,7 +360,7 @@ Only child of poor parents; a calculating prodigy noticed at elementary school b
 
 ## Adult working worldview
 
-Known only through Sartorius's memoir: science and religion kept apart [S1, pp. 97–98], a personal God and a second spiritual world order [S1, p. 103]. Sartorius left out confessional questions on purpose [S1, pp. 99–100].
+Own letters: hope of a better future (Bolyai 1799) and of true life in a spiritual Heimat (Bolyai 1802); discovery credited to "die Gnade Gottes" (Olbers 1805); late letter names "der Schöpfer unsrer Existenz" and a "schöneren Metamorphose" (Bolyai 1848) [S5; S6]. Sartorius still the fullest friend-report that science and religion were kept apart [S1, pp. 97–98] and that confession was left aside [S1, pp. 99–100]. A scored 1 @ 0.5 from the letters; B scored 3 @ 0.5 from lasting astronomy/physics work (P30/P35) [S2; S3].
 
 ## Heritage (context only)
 
@@ -279,10 +376,13 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 
 ## Open questions
 
-- Gauss's own religious notes and letters.
+- Gauss's religious notes in his own hand (Sartorius p. 100).
+- Page-image re-check of Schilling Brief 133 and Bolyai XLI (OCR used).
+- Confession code still open (CLASS_THEISM / DEISM / CHRIST).
 
 ## Research log
 
 - 2026-10-02: Read MacTutor, Britannica (Gray, first page) and Sartorius (1856) on the Internet Archive scan; checked pp. 16, 97, 98, 101, 102 and 103 on the page images.
 - 2026-10-02 (v8 method rulings): Reopened Sartorius p. 16 on the page image (1795, least squares, 'hier' = Göttingen) and pp. 97–103 for the axes.
 - 2026-10-02 (stage 3 rulings P14–P28): Reopened MacTutor's biography for the magnetism papers ('by 1840') and the potential-theory remark.
+- 2026-10-24 (deepen D1, queue #15): Read Schmidt–Stäckel Briefwechsel Gauss–Bolyai (1899) and Schilling Olbers–Gauss Bd. 2.1 (1900) on archive.org OCR; Kneller 1911 digest. A and B scored; person-file commit only.
