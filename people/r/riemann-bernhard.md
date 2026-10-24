@@ -2,18 +2,19 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-23
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Dedekind's 'Bernhard Riemann's Lebenslauf'. Worldview from Riemann's own unpublished philosophical fragments and Dedekind's Lebenslauf, both in the Gesammelte mathematische Werke (2nd ed., 1892; University of Toronto scan on the Internet Archive; pp. 518, 519, 521, 541, 557 and 558 checked on the page images). primary_system BELOW_THRESHOLD (CHRIST and CLTHEI candidates). A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #232: languages_of_work German → German, Latin, Italian (Werke contents XXII, XVI, XXIII and preface). #263: PANPSY reason rewritten: he argues the Erdseele in his own voice (pp. 511–512, 517) but frames it as a hypothesis of exact science (p. 517); still not coded. #260: secondary_system how_known points to that candidate (value unchanged). #259 note: cites CHRIST's use_when instead of a loose batch 3 precedent. pp. 507, 511 and 517 checked on the page images. Left for v8 as a method question: #265 (basis label for B_cause). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. B_cause 4 certainty 0.5 → 0.7 (two unpublished fragments of his own, scholarly edition; private ceiling) (P18); fragment statements kind notebook or diary → unpublished manuscript (P18, P28; the draft had document in own hand, which CODING_GUIDE §7 keeps for forms, prayers and notes that are not manuscript works); Lebenslauf statement checked against 'scholarly edition' (was primary facsimile) (P21); A stays 1 at 0.5 (v8's answer, 2026-10-02); secondary UNKNOWN → BELOW_THRESHOLD (Erdseele), PANPSY stays a candidate (P14); D BELOW_THRESHOLD → UNKNOWN, C and E notes rewritten (P19); first_evidence_of_lio_type_views stays UNKNOWN, the fragments being undated (P27); mid_basin note rewritten; single-source 1.0 fields → 0.7 (P15) (region_of_work, occupations, definition_fit, working_years, Gauss; Lebenslauf-only family_religious_practice, languages_in_childhood, baptism_or_initiation); region_of_birth, sex, childhood_mentors/0 keep 1.0 with a second cite. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens run 1 on rulings packet 6155174, sources reopened. B_cause 4 certainty 0.7 → 0.5: the p. 519 antinomy Thesis is now discounted for B as it is for A, and p. 521 alone is one document (CODING_GUIDE §3, P18); secondary_system BELOW_THRESHOLD → UNKNOWN (§1: only if he published in two systems), the Erdseele fragments kept as a note and PANPSY as a candidate. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #12). P47 source_quality on every source. A_locus and B_cause were each single on S1 @ 0.5: added Baker/Christenson/Orde Collected Papers (Kendrick 2004) English of Dedekind Lebenslauf (S4, piety/self-examination ~p.532) and Cherry English Philosophical Fragments (21st Century Winter 1995–96, S5) verifying the antinomy Thesis (freedom/strict lawfulness; time-acting God) and the Naturwissenschaft / concept-revision passages (pp.54–55). Laugwitz Birkhäuser monograph (S6) as scholarly secondary on piety and fragments. A support single → corroborated (S1+S4+S5); B support single → corroborated (S1+S5). Values/certainties stay A 1 @ 0.5 and B 4 @ 0.5 (v8 antinomy discount; private ceiling). Chart: faded hollow → faded filled (fill cue). Neuenschwander family letters mined: little first-person religion. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: riemann-bernhard
@@ -101,7 +102,7 @@ worldview:
     note: "Draft judgment (one line): BELOW_THRESHOLD because no own writing shows specifically Christian belief, which CHRIST's use_when asks for (systems/CHRIST.md: 'use CHRIST when the person's own writing shows Christian belief (Christ, scripture, creeds, church)'). Leading candidate CHRIST (Dedekind's testimony); CLTHEI second (the fragment). Riemann's letters to his family would decide it."
   secondary_system: {value: UNKNOWN, note: "Not a second system, kept as evidence: his Erdseele hypothesis, argued in his own voice in unpublished fragments (S1, p. 511: 'müssen wir annehmen, dass diese Geistesmassen in eine grössere compacte Geistesmasse, die Erdseele, eintreten'; p. 517) but framed as 'eine Hypothese' (p. 517); see PANPSY in candidate_codes_considered (P14).", how_known: "No second system: CODING_GUIDE §1 uses secondary_system only if the person published in two systems, and the fragments are unpublished. Was BELOW_THRESHOLD under P19; reverted after lens run 1 (the §1 vs P19 question is flagged for v8)."}
   candidate_codes_considered:
-    - {code: CHRIST, reason: "Leading candidate, not coded: Dedekind's testimony of lifelong piety and the Lord's Prayer at his death (S1, pp. 557–558), but no writing of his own read names Christ, scripture or creed, and Dedekind says his service of God was not in the same form as his father's. CHRIST is a draft system file.", cites: [{source: S1, locator: "pp. 557–558"}]}
+    - {code: CHRIST, reason: "Leading candidate, not coded: Dedekind's testimony of lifelong piety and the Lord's Prayer at his death (S1, pp. 557–558; S4, pp. 532–533), but no writing of his own read names Christ, scripture or creed, and Dedekind says his service of God was not in the same form as his father's. Laugwitz (S6) treats the piety report as central. CHRIST is a draft system file.", cites: [{source: S1, locator: "pp. 557–558"}, {source: S4, locator: "pp. 532–533"}, {source: S6, locator: "daily self-test / Hauptsache in der Religion (W. 557/558)"}]}
     - {code: CLTHEI, reason: "Considered: a time-acting God, 'Lenker der Herzen und Geschicke der Menschen', in place of a timeless providence (S1, p. 519); not coded because the fragment is an antinomy table (the Thesis column may not be his settled view). CLTHEI is a draft system file.", cites: [{source: S1, locator: "pp. 518–519"}]}
     - {code: PANPSY, reason: "Considered, not coded. In his own voice he argues that, on his principles of explanation, 'müssen wir annehmen, dass diese Geistesmassen in eine grössere compacte Geistesmasse, die Erdseele, eintreten' (S1, p. 511), and that the purposiveness of organisms must be sought 'in einem einheitlichen Denkprocesse in der Erde' (p. 517); only the sentence after his Fechner quotation uses 'sollen' (p. 518). But he frames it as a hypothesis: 'Vom Standpunkt der exacten Naturwissenschaft [...] ist also die Annahme einer Erdseele eine Hypothese zur Erklärung des Daseins und der geschichtlichen Entwicklung der organischen Welt' (p. 517), in unpublished fragments, so it is not shown to be his working worldview. PANPSY is also a stub system file (flag); the stub-systems rule (P14) keeps it a candidate because he framed it as a hypothesis.", cites: [{source: S1, locator: "pp. 511–512"}, {source: S1, locator: "p. 517"}, {source: S1, locator: "p. 518"}]}
   lio_axes:
@@ -109,55 +110,57 @@ worldview:
       value: 1
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S1, locator: "pp. 518–519"}, {source: S1, locator: "pp. 557–558"}]
-      how_known: "One fragment of his own (an unpublished manuscript, printed in the scholarly edition) plus a friend's report, so 0.5; the antinomy layout keeps it at 0.5 (v8's answer, 2026-10-02). Dedekind's reported speech does not score A on its own (P18)."
-      rationale: "Draft judgment (one line): leans interventionist because the God of the fragment acts in time and steers 'Herzen und Geschicke der Menschen' (p. 519), and Dedekind reports prayer and daily self-examination before God (pp. 557–558). Named alternative: BELOW_THRESHOLD, because the passage stands in the Thesis column of an antinomy table and may not state his own view."
+      support: corroborated
+      cites: [{source: S1, locator: "pp. 518–519"}, {source: S1, locator: "pp. 557–558"}, {source: S4, locator: "pp. 532–533 (Dedekind, 'The life of Bernhard Riemann')"}, {source: S5, locator: "pp. 54–55 (Antinomies III–IV, Thesis: time-acting God; freedom and strict lawfulness)"}, {source: S6, locator: "piety / daily self-test before God (citing W. 557/558); philosophy chapter on fragments and Christian faith vs natural science"}]
+      how_known: "One fragment of his own (unpublished manuscript in the 1892 Werke) plus Dedekind's report, so 0.5; the antinomy layout keeps it at 0.5 (v8's answer, 2026-10-02). Dedekind's reported speech does not score A on its own (P18). Deepen D1: S4 Baker English Lebenslauf and S5 Cherry English of the Thesis agree with S1 → support corroborated (P48); value/certainty unchanged."
+      rationale: "Draft judgment (one line): leans interventionist because the God of the fragment acts in time and steers 'Herzen und Geschicke der Menschen' (p. 519; S5 English), and Dedekind reports prayer and daily self-examination before God (S1, pp. 557–558; S4, pp. 532–533). Named alternative: BELOW_THRESHOLD, because the passage stands in the Thesis column of an antinomy table and may not state his own view."
     B_cause:
       value: 4
       basis: consistent_private_letters
       certainty: 0.5
-      cites: [{source: S1, locator: "p. 521"}, {source: S1, locator: "p. 519 (Antinomien, IV, Thesis column)"}]
-      how_known: "Unpublished manuscripts of his own (P18, P28), printed in the 1892 scholarly edition: two separate fragments, section I 'Zur Psychologie und Metaphysik' (p. 519) and section II 'Erkenntnisstheoretisches' (p. 521). Held at 0.5 (lens run 1). The p. 519 passage stands in the Thesis column of an antinomy table, and A is kept at 0.5 because that layout may not state his own view; it is discounted the same way here. Without it, p. 521 is a single private document, and §3 and P18 need more than one for 0.7. The two fragments together, one of them discounted, support B 4 only at 0.5. Was 0.7 in the rulings draft, 0.5 before."
-      rationale: "Scored on his account of nature (P6). 'Naturwissenschaft ist der Versuch, die Natur durch genaue Begriffe aufzufassen'; when something happens that the concepts did not expect, the task is to complete or rework them until the observation 'aufhört, unmöglich oder unwahrscheinlich zu sein' (p. 521). Anomalies are met by better concepts, never by exceptions; freedom 'ist sehr wohl vereinbar mit strenger Gesetzmässigkeit des Naturlaufs' (p. 519). Named alternative: 3, since the same Thesis passage asks for 'eines zeitlich wirkenden Gottes, eines Lenkers der Herzen und Geschicke der Menschen' (p. 519), which could allow guidance in events."
+      support: corroborated
+      cites: [{source: S1, locator: "p. 521"}, {source: S1, locator: "p. 519 (Antinomien, IV, Thesis column)"}, {source: S5, locator: "pp. 54–55 (freedom and strict lawfulness; 'Natural science is the attempt to understand nature by means of exact concepts'; concept revision on the unexpected)"}]
+      how_known: "Unpublished manuscripts of his own (P18, P28), printed in the 1892 scholarly edition: two separate fragments, section I 'Zur Psychologie und Metaphysik' (p. 519) and section II 'Erkenntnisstheoretisches' (p. 521). Held at 0.5 (lens run 1). The p. 519 passage stands in the Thesis column of an antinomy table, and A is kept at 0.5 because that layout may not state his own view; it is discounted the same way here. Without it, p. 521 is a single private document, and §3 and P18 need more than one for 0.7. The two fragments together, one of them discounted, support B 4 only at 0.5. Deepen D1: S5 Cherry English agrees with S1 on both passages → support corroborated (P48); value/certainty unchanged."
+      rationale: "Scored on his account of nature (P6). 'Naturwissenschaft ist der Versuch, die Natur durch genaue Begriffe aufzufassen'; when something happens that the concepts did not expect, the task is to complete or rework them until the observation 'aufhört, unmöglich oder unwahrscheinlich zu sein' (p. 521; S5 English). Anomalies are met by better concepts, never by exceptions; freedom 'ist sehr wohl vereinbar mit strenger Gesetzmässigkeit des Naturlaufs' (p. 519; S5). Named alternative: 3, since the same Thesis passage asks for 'eines zeitlich wirkenden Gottes, eines Lenkers der Herzen und Geschicke der Menschen' (p. 519), which could allow guidance in events."
     C_ledger: {value: BELOW_THRESHOLD, note: "Some indirect evidence: daily self-examination before God (S1, p. 558, reported) is a practice, not a doctrine of reckoning; the fourth antinomy names 'Unsterblichkeit' (p. 519) without saying what follows. Nothing read on judgement, reward or punishment.", how_known: "Kept BELOW_THRESHOLD under P19: some evidence, too indirect."}
     D_authority: {value: UNKNOWN, how_known: "Searched the OCR text of the philosophical fragments and Dedekind's Lebenslauf (S1, from p. 509 to p. 558) for Offenbarung, Bibel, Schrift, Christ, Kirche and Glaube, and read MacTutor: none says anything on revelation or scripture as a source of knowledge. The one hit in the fragments, Fechner's Zend-Avesta as 'neues Leben schaffend unserem Geiste im Wissen wie im Glauben' (p. 514, OCR text only), praises a book and does not rank revelation against observation. Was BELOW_THRESHOLD; re-sorted under P19."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). Only indirect evidence: the fragments hold that freedom is compatible with 'strenger Gesetzmässigkeit des Naturlaufs' and that unexpected events call for better concepts (S1, pp. 519, 521), which bears on the same rules for everything; but the same Thesis passage asks for a God who steers 'Herzen und Geschicke der Menschen' (p. 519). Nothing read addresses favour for a group in events.", how_known: "Kept BELOW_THRESHOLD under P19: some evidence, too indirect and pulling both ways."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus = 1 and B_cause = 4, but both only at 0.5 (A kept at 0.5 by v8's answer, 2026-10-02; B discounted the same way after lens run 1), so the P4 test's 0.7 bar is not met (§6, P19)."}
   statements:
     - text: "Freiheit ist sehr wohl vereinbar mit strenger Gesetzmässigkeit des Naturlaufs. Aber der Begriff eines zeitlosen Gottes ist daneben nicht haltbar. Es muss vielmehr die Beschränkung, welche Allmacht und Allwissenheit durch die Freiheit der Geschöpfe in der oben festgestellten Bedeutung erleiden, aufgehoben werden durch die Annahme eines zeitlich wirkenden Gottes, eines Lenkers der Herzen und Geschicke der Menschen, der Begriff der Vorsehung muss ergänzt und zum Theil ersetzt werden durch den Begriff der Weltregierung."
-      cites: [{source: S1, locator: "p. 519 (Antinomien, IV, Thesis column)"}]
+      cites: [{source: S1, locator: "p. 519 (Antinomien, IV, Thesis column)"}, {source: S5, locator: "pp. 54–55 (English: 'Freedom is entirely compatible with the strict lawfulness of the course of nature'; time-acting God / providence)"}]
       date: "1892"
-      context: "Unpublished fragment 'Zur Psychologie und Metaphysik', table of 'Antinomien'; under IV, Thesis 'Unsterblichkeit'. Undated; the date given is the edition's. Row III reads Thesis 'Ein zeitlich wirkender Gott (Weltregierung)', Antithesis 'Ein zeitloser, persönlicher, allwissender, allmächtiger, allgütiger Gott (Vorsehung)' (p. 518)."
+      context: "Unpublished fragment 'Zur Psychologie und Metaphysik', table of 'Antinomien'; under IV, Thesis 'Unsterblichkeit'. Undated; the date given is the edition's. Row III reads Thesis 'Ein zeitlich wirkender Gott (Weltregierung)', Antithesis 'Ein zeitloser, persönlicher, allwissender, allmächtiger, allgütiger Gott (Vorsehung)' (p. 518). Cherry English (S5) checked 2026-10-23."
       axes: [A_locus, B_cause]
       kind: "unpublished manuscript"
       verified_against: "scholarly edition"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-23
     - text: "Naturwissenschaft ist der Versuch, die Natur durch genaue Begriffe aufzufassen."
-      cites: [{source: S1, locator: "p. 521"}]
+      cites: [{source: S1, locator: "p. 521"}, {source: S5, locator: "p. 54 (English: 'Natural science is the attempt to understand nature by means of exact concepts')"}]
       date: "1892"
-      context: "Opening of the fragment 'Versuch einer Lehre von den Grundbegriffen der Mathematik und Physik als Grundlage für die Naturerklärung' (section II, 'Erkenntnisstheoretisches'). Undated; edition date given."
+      context: "Opening of the fragment 'Versuch einer Lehre von den Grundbegriffen der Mathematik und Physik als Grundlage für die Naturerklärung' (section II, 'Erkenntnisstheoretisches'). Undated; edition date given. Cherry English (S5) checked 2026-10-23."
       axes: [B_cause]
       kind: "unpublished manuscript"
       verified_against: "scholarly edition"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-23
     - text: "Geschieht aber Etwas, was nach ihnen nicht erwartet wird, also nach ihnen unmöglich oder unwahrscheinlich ist, so entsteht die Aufgabe, sie so zu ergänzen oder, wenn nöthig, umzuarbeiten, dass nach dem vervollständigten oder verbesserten Begriffssystem das Wahrgenommene aufhört, unmöglich oder unwahrscheinlich zu sein."
-      cites: [{source: S1, locator: "p. 521"}]
+      cites: [{source: S1, locator: "p. 521"}, {source: S5, locator: "pp. 54–55 (English: unexpected perception → complete or rework the axioms/concepts)"}]
       date: "1892"
-      context: "Same fragment; 'ihnen' are the concepts through which we grasp nature."
+      context: "Same fragment; 'ihnen' are the concepts through which we grasp nature. Cherry English (S5) checked 2026-10-23."
       axes: [B_cause]
       kind: "unpublished manuscript"
       verified_against: "scholarly edition"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-23
     - text: "Der fromme Sinn, der im Vaterhaus gepflanzt war, blieb ihm durch das ganze Leben, und er diente, wenn auch nicht in derselben Form, treu seinem Gott; mit der grössten Pietät vermied er, Andere in ihrem Glauben zu stören; die tägliche Selbstprüfung vor dem Angesichte Gottes war, nach seinem eigenen Ausspruche, für ihn eine Hauptsache in der Religion."
-      cites: [{source: S1, locator: "pp. 557–558 (Lebenslauf)"}]
+      cites: [{source: S1, locator: "pp. 557–558 (Lebenslauf)"}, {source: S4, locator: "pp. 532–533 (English: 'a daily self-examination in the sight of God was, in his expressed opinion, an important religious principle')"}]
       date: "1892"
-      context: "Dedekind's account of Riemann's death and character, closing the Lebenslauf; Dedekind reports a saying of Riemann's in the last clause. The Lebenslauf first appeared in the 1876 first edition (not checked)."
+      context: "Dedekind's account of Riemann's death and character, closing the Lebenslauf; Dedekind reports a saying of Riemann's in the last clause. The Lebenslauf first appeared in the 1876 first edition (not checked). Baker English (S4) checked 2026-10-23."
       axes: [A_locus]
       kind: "reported speech"
       verified_against: "scholarly edition"
-      verified_on: 2026-10-02
+      verified_on: 2026-10-23
   changes_over_life: []
-  coder_notes: "CHRIST and CLTHEI are drafts; PANPSY is a stub system file (flag). The 1892 Werke is a scholarly edition (Weber with Dedekind) of his published works and Nachlass, read on the University of Toronto scan (archive.org page n-index = printed page + 15). The philosophical fragments are undated, so statement dates are the edition's. The antinomy layout (Thesis and Antithesis columns) was checked on the page images: the long passage is in the Thesis column under IV. Fechner material on p. 518 is reported with 'sollen' and is not scored. The grave inscription (Romans 8:28, p. 558) was chosen by his Italian friends (footnote), so it is not his act. changes_over_life is empty: Dedekind's 'not in the same form' suggests a change from his father's church form but gives no date."
+  coder_notes: "CHRIST and CLTHEI are drafts; PANPSY is a stub system file (flag). The 1892 Werke is a scholarly edition (Weber with Dedekind) of his published works and Nachlass, read on the University of Toronto scan (archive.org page n-index = printed page + 15). The philosophical fragments are undated, so statement dates are the edition's. The antinomy layout (Thesis and Antithesis columns) was checked on the page images: the long passage is in the Thesis column under IV. Fechner material on p. 518 is reported with 'sollen' and is not scored. The grave inscription (Romans 8:28, p. 558) was chosen by his Italian friends (footnote), so it is not his act. changes_over_life is empty: Dedekind's 'not in the same form' suggests a change from his father's church form but gives no date. Deepen D1 (queue #12): A now S1+S4+S5 support corroborated; B S1+S5 support corroborated; both stay @ 0.5 (v8 antinomy / private ceiling). Cherry (S5) is the only English of the fragments (21st Century / Rising Tide reprint; LaRouche-linked publisher) — used as English check of S1 wording, not alone for lift. Baker (S4) omits the philosophical fragments (translators' note) but includes Dedekind's Lebenslauf. Neuenschwander 1981 family-letter selection mined: little first-person religion beyond school Kirchengeschichte and idiomatic gottlob; purely private letters excluded from that edition. No fallacy_catalog (Jason 2026-10-23)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -195,12 +198,14 @@ review:
   roster_status_reason: {value: "Core in v8 (F 5: Claude, DeepSeek, Gemini, GPT, Grok).", certainty: 0.7, cites: [{source: S3, locator: "roster.csv, rank 12"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Worldview rests on undated unpublished fragments of his own (one laid out as an antinomy) and on Dedekind's memoir."
-    - "Fields resting on Dedekind's Lebenslauf alone are at 0.7 (P15): the Lebenslauf is a friend's memoir, not a primary document, and v8 confirmed 0.7 (2026-10-02)."
+    - "Worldview rests on undated unpublished fragments of his own (one laid out as an antinomy) and on Dedekind's memoir; A/B English now also checked in Cherry (S5) and Dedekind Lebenslauf in Baker (S4)."
+    - "Fields resting on Dedekind's Lebenslauf alone are at 0.7 (P15): the Lebenslauf is a friend's memoir, not a primary document, and v8 confirmed 0.7 (2026-10-02). Baker S4 is the same memoir in English, not a second independent witness."
     - "Britannica was not read for Riemann; basics are MacTutor and Dedekind."
+    - "Cherry Philosophical Fragments (S5) appeared in 21st Century Science & Technology (LaRouche-linked); used only as English corroboration of S1 wording, not as a critical edition."
   open_questions:
-    - "Read the first edition (1876) of the Werke and Riemann's letters (e.g. to his family) for direct religious statements."
-    - "Is the Thesis column of the antinomy table Riemann's own view? A scholarly study of the fragments would settle A."
+    - "Neuenschwander (CSHM 1981) family-letter selection mined 2026-10-23: little first-person religion; purely private letters were excluded from that edition — a fuller family edition could still decide CHRIST vs CLTHEI."
+    - "Is the Thesis column of the antinomy table Riemann's own view? Laugwitz (S6) discusses the fragments and Christian faith vs natural science but does not settle the Thesis/Antithesis ownership question for A."
+    - "Optional: Clifford English of the 1854 Hypothesen lecture for a published written_profession B on physical space (not opened this pass)."
 
 sources:
   - id: S1
@@ -212,6 +217,7 @@ sources:
     url: "https://archive.org/details/gesammeltemathem00riemuoft"
     accessed: 2026-10-02
     reliability_note: "Scholarly edition; library scan. pp. 518, 519, 521, 541, 557 and 558 checked on the page images. Section start pages (509, 521, 539) are from the table of contents in the OCR text; only 521 and 541 were seen on images."
+    source_quality: "scholarly edition or monograph"
     used_for: [identity, basics, childhood, worldview, heritage, timing, lane_b, collaborators]
   - id: S2
     type: secondary
@@ -221,6 +227,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/"
     accessed: 2026-10-02
     reliability_note: "Biography; cited by paragraph description."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators]
   - id: S3
     type: secondary
@@ -230,7 +237,41 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S4
+    type: secondary
+    kind: "scholarly edition"
+    author: "Richard Dedekind; trans. Roger Baker, Charles Christenson and Henry Orde"
+    year: 2004
+    citation: "Dedekind, Richard. \"The life of Bernhard Riemann.\" In Bernhard Riemann, Collected Papers, translated by Roger Baker, Charles Christenson and Henry Orde from Weber's 1892 Gesammelte mathematische Werke, 2nd ed. Heber City, UT: Kendrick Press, 2004. Internet Archive OCR: bernhard-riemann-collected-papers-volume-translated-by-roger-baker-2004-kendrick-press. Piety / daily self-examination closing the Lebenslauf at pp. 532–533 (Baker pagination)."
+    url: "https://archive.org/details/bernhard-riemann-collected-papers-volume-translated-by-roger-baker-2004-kendrick-press"
+    accessed: 2026-10-23
+    reliability_note: "Scholarly English of Dedekind's Lebenslauf from the 1892 Werke. Translators omit the philosophical fragments (preface note: XVIII 'mechanism of the ear' and two philosophy fragments not translated). Used to corroborate the Dedekind piety / self-examination report for A, not as Riemann's own words."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview]
+  - id: S5
+    type: primary
+    kind: other
+    author: "Bernhard Riemann; trans. David Cherry"
+    year: 1995
+    citation: "Riemann, Bernhard. \"Philosophical Fragments.\" Translated by David Cherry. 21st Century Science & Technology, Winter 1995–96, pp. 50–ff. PDF: http://21sci-tech.com/articles/Winter_1995/Philosophical_Fragments.pdf (also Rising Tide Foundation reprint). First English of Fragmente philosophischen Inhalts from Weber/Dedekind Werke; antinomy Thesis and Naturwissenschaft passages at pp. 54–55."
+    url: "http://21sci-tech.com/articles/Winter_1995/Philosophical_Fragments.pdf"
+    accessed: 2026-10-23
+    reliability_note: "Human English translation of the Nachlass fragments; only English found. Published in 21st Century Science & Technology (LaRouche-linked). Used as English check of S1 German wording for A Thesis and B Naturwissenschaft / concept-revision lines, not alone for lift or as a critical edition."
+    source_quality: "other"
+    used_for: [worldview]
+  - id: S6
+    type: secondary
+    kind: "scholarly book"
+    author: "Detlef Laugwitz; trans. Abe Shenitzer"
+    year: 1999
+    citation: "Laugwitz, Detlef. Bernhard Riemann 1826–1866: Turning Points in the Conception of Mathematics. Translated by Abe Shenitzer with the editorial assistance of the author. Basel: Birkhäuser, 1999. Discusses Dedekind piety / daily self-test (citing W. 557/558), the philosophical fragments, Herbart, and the relation of Christian faith to natural science."
+    url: "https://link.springer.com/book/10.1007/978-0-8176-4777-3"
+    accessed: 2026-10-23
+    reliability_note: "Standard scholarly monograph. Read in PDF/OCR for the piety report and philosophy chapter; does not by itself settle whether the antinomy Thesis column is Riemann's settled view."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, review]
 ---
 
 # Bernhard Riemann
@@ -239,7 +280,7 @@ sources:
 
 ## Summary
 
-Georg Friedrich Bernhard Riemann (1826–1866), German mathematician, founded the theory of Riemann surfaces and Riemannian geometry and posed the Riemann hypothesis [S2]. The son of a Lutheran pastor, he kept a pious outlook all his life, serving his God "wenn auch nicht in derselben Form" (Dedekind) [S1, pp. 557–558]; in an unpublished fragment he argued for a time-acting God who steers "Herzen und Geschicke der Menschen" alongside strict natural law [S1, p. 519]. Draft under v8's stage 3 rulings (P14–P28). Draft codes: primary_system BELOW_THRESHOLD (candidates CHRIST, CLTHEI; PANPSY stays a candidate); A 1 (0.5), B 4 (0.5, unpublished fragments of his own, one in an antinomy table, P18); C, E below threshold; D UNKNOWN; mid_basin below threshold.
+Georg Friedrich Bernhard Riemann (1826–1866), German mathematician, founded the theory of Riemann surfaces and Riemannian geometry and posed the Riemann hypothesis [S2]. The son of a Lutheran pastor, he kept a pious outlook all his life, serving his God "wenn auch nicht in derselben Form" (Dedekind) [S1, pp. 557–558; S4, pp. 532–533]; in an unpublished fragment he argued for a time-acting God who steers "Herzen und Geschicke der Menschen" alongside strict natural law [S1, p. 519; S5, pp. 54–55]. Deepen D1 (P47–P50): A 1 @ 0.5, scholarly_reconstruction, support single → corroborated (S1+S4+S5); B 4 @ 0.5, consistent_private_letters, support single → corroborated (S1+S5); primary_system BELOW_THRESHOLD (candidates CHRIST, CLTHEI; PANPSY stays a candidate); C, E below threshold; D UNKNOWN; mid_basin below threshold. Chart: faded hollow → faded filled (fill cue; darkness stays faded at 0.5).
 
 ## Life and work
 
@@ -255,7 +296,7 @@ Second of six children in a parsonage; his father taught him almost alone and co
 
 ## Adult working worldview
 
-His notes treat natural science as grasping nature "durch genaue Begriffe", reworked whenever something unexpected occurs [S1, p. 521]. A table of antinomies sets a time-acting God against a timeless providence [S1, pp. 518–519]. Dedekind reports lifelong piety and daily self-examination before God [S1, pp. 557–558].
+His notes treat natural science as grasping nature "durch genaue Begriffe", reworked whenever something unexpected occurs [S1, p. 521; S5, pp. 54–55]. A table of antinomies sets a time-acting God against a timeless providence [S1, pp. 518–519; S5, pp. 54–55]. Dedekind reports lifelong piety and daily self-examination before God [S1, pp. 557–558; S4, pp. 532–533].
 
 ## Heritage (context only)
 
@@ -271,10 +312,13 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 
 ## Open questions
 
-- Whether the Thesis column states his own view; Riemann's letters.
+- Whether the Thesis column states his own view (Laugwitz S6 discusses but does not settle).
+- Fuller family letters beyond Neuenschwander 1981 for CHRIST vs CLTHEI.
+- Optional: Clifford Hypothesen English for published B on physical space.
 
 ## Research log
 
 - 2026-10-02: Read MacTutor and the 1892 Werke on the Internet Archive (Toronto scan); checked pp. 518, 519, 521, 541, 557 and 558 on the page images (n-index = page + 15).
 - 2026-10-02 (v8 method rulings): Reopened the fragments (pp. 507, 511, 517–519, 521) and the Lebenslauf p. 541 on the Werke scan to recheck B, the Erdseele passage and the single-source fields; searched the OCR text from p. 509 to p. 558 for revelation and scripture terms (D).
 - 2026-10-02 (lens run 1): Reopened the 1892 Werke text (Internet Archive gesammeltemathem00riemuoft) at pp. 511, 517, 518–519 (antinomy table) and 521.
+- 2026-10-23: Deepen D1 (queue #12). Baker Collected Papers 2004 archive OCR (S4): Dedekind Lebenslauf piety/self-examination pp. 532–533. Cherry Philosophical Fragments English (S5) pp. 54–55 for Thesis and Naturwissenschaft. Laugwitz Birkhäuser (S6) philosophy/piety. Neuenschwander CSHM 1981 letters mined (little religion). A/B support single → corroborated; chart fill hollow → filled. P47 labels. No fallacy_catalog (Jason 2026-10-23).
