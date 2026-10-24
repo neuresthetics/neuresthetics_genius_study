@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #149, F 3, rank 155). Re-searched full 1876 Memoir (IA OCR + Gutenberg #52923 clean text); Hoskin Autobiographies excerpt (German History Intersections, S6); Phil. Trans. comet letters (IA, S7 — observational only); Wikipedia EN dual bio (S5; P50). Extra conventional God-bless / thank-God closings found; no Creator / nature-cause / why-heavens-move own-voice. Aubert 1786 'Being who has ordered all these things to move' is TO her, not hers. CHRIST stays 0.5; A 0 stays 0.5 (named alt 1 formula); B stays BELOW_THRESHOLD (P6; not reconstructed from comet-sweeping); C/D/E BELOW; mid BELOW. support single on A (P48; only S3). P47 source_quality S1–S7. Chart-moving NO (not plotted). No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica and MacTutor; her own words from Memoir and Correspondence of Caroline Herschel (John Murray, 1876), page images checked for pp. 17–18, 235–236, 275, 347 and 351. Primary CHRIST at 0.5 (consistent_private_letters, below the ceiling because the evidence is brief devotional phrases: a Nunc dimittis citation, thanksgiving and prayer to 'the Almighty', 'as long as God pleases'); A 0 at 0.5; B, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3, #121 (run 1): 'later buried in the garrison church' overstated p. 347. Only the funeral service ('the holy words spoken over it') was held in the garrison church; she asked to be laid beside her father and mother (p. 347), and her epitaph says her father lies 'hierneben begraben' (p. 351). family_religion, the CHRIST rationale and the body now say so. The christening and confirmation in the garrison church are now attributed to the editor (p. 347); her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. No score changed. Not reviewed."}
@@ -71,7 +72,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Independent discoveries (comets, nebulae) and major catalogues; her largest work reduced her brother's observations.", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "1822 paragraph"}], how_known: "Coder's reading of the two sources."}
 
 childhood:
-  family_religion: {value: "Christian; christened and confirmed in the garrison church of Hanover, where her funeral service was also held; she was buried beside her parents (confession not named in the sources read)", certainty: 1.0, cites: [{source: S3, locator: "pp. 17–18, 347, 351"}], how_known: "The editor's account (p. 347) says the funeral words were spoken in the garrison church in which she had been christened and confirmed, and that she asked to be laid beside her father and mother; the epitaph says her father lies 'hierneben begraben' (p. 351). Her own recollection records the confirmation and first communion (pp. 17–18) without naming the church. Checked on the page images."}
+  family_religion: {value: "Christian / Protestant family line; christened and confirmed in the garrison church of Hanover, where her funeral service was also held; she was buried beside her parents", certainty: 1.0, cites: [{source: S3, locator: "pp. 1–2 (Isaac memorandum: brothers left Moravia as Protestants), 17–18, 347, 351"}, {source: S5, locator: "Early life"}], how_known: "Memoir: Isaac's memo (transcribed by her) traces Herschels leaving Moravia as Protestants (S3 pp. 1–2). Editor (p. 347): funeral in garrison church of her christening/confirmation; buried beside parents; epitaph 'hierneben begraben' (p. 351). Own recollection of confirmation/first communion (pp. 17–18) without naming the church. Wikipedia agrees Hanover birth and family outline (S5)."}
   family_religious_practice: {value: "Church attendance and confirmation instruction as a girl", certainty: 1.0, cites: [{source: S3, locator: "pp. 16–17"}], how_known: "Her own recollection: 'my constant attendance at church and school' (p. 17); her mother released her from housework for the 'necessary preparation for her daughter's confirmation' (p. 16)."}
   parents_and_household:
     - {value: "Father, Isaac Herschel, oboist and later bandmaster in the Hanoverian Foot Guards, with interests in music, philosophy and astronomy", name: "Isaac Herschel", role: father, certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "MacTutor."}
@@ -96,14 +97,14 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1783–1828", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–4"}, {source: S2, locator: "1786–1828 paragraphs"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1772–1848: From Bath to her death."}
   nominal_affiliations: []
-  self_described_science_religion_relation: {value: UNKNOWN, how_known: "Searched the 1876 Memoir's full text (God, Providence, church, prayer, Creator, soul, heaven); no statement relating astronomy and religion was found. 'Minding the heavens' is her phrase for observing."}
+  self_described_science_religion_relation: {value: UNKNOWN, how_known: "Deepen D1 re-search of Memoir full text (IA + Gutenberg) and Hoskin Autobiographies excerpt (S6): no statement relating astronomy and religion. 'Minding the heavens' = observing. Aubert's 1786 'Being who has ordered all these things to move as we find them' is addressed TO her (S3), not her voice."}
   primary_system:
     value: CHRIST
     basis: consistent_private_letters
     certainty: 0.5
     cites: [{source: S3, locator: "pp. 235, 236, 275"}]
-    how_known: "Three private letters in her own words (two of 3 March 1829, one of 23 April 1835), checked on the page images of the 1876 edition. Below the 0.7 ceiling because each is a brief devotional phrase of the kind common in letters of the time, not a statement of belief, and the edition is a family selection with marked cuts."
-    rationale: "CHRIST guidance: use when the person's own writing shows Christian belief (Christ, scripture, creeds, church). She quotes Simeon's canticle from scripture to express her joy ('See St. Luke, cap. ii., v. 29', p. 236), puts letters by 'under thanksgiving to the Almighty, with a prayer for future protection' (p. 275), and signs off 'as long as God pleases I shall remain' (p. 235). Her upbringing, and a funeral service in the garrison church where she had been christened and confirmed (pp. 17–18, 347), do not code her by themselves."
+    how_known: "Deepen D1: same three private letters (2× 3 Mar 1829; 23 Apr 1835) re-checked in Gutenberg #52923 against prior page-image notes; plus recurring conventional closings ('God bless you', 'thank God', 'God grant') across later letters — still brief devotion, not a creed. Below 0.7: conventional letter piety + family edition with cuts. Protestant Moravia heritage (S3 pp. 1–2) is context only."
+    rationale: "CHRIST: scripture (Luke 2:29 / Simeon), thanksgiving and prayer to 'the Almighty', lifespan 'as long as God pleases'. Upbringing and garrison-church rites do not code by themselves. Named alternative CLTHEI only if petition showed God acting against nature's course — none found (deepen confirmed)."
     alternatives:
       - {value: CLTHEI, cites: [{source: S3, locator: "p. 275"}], note: "A prayer for future protection is petition; preferred only if her writing showed God acting in particular events beyond nature's course. None found."}
   secondary_system: {value: UNKNOWN, how_known: "No second system in the sources read."}
@@ -116,14 +117,17 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.5
+      support: single
       cites: [{source: S3, locator: "pp. 235, 275"}]
-      how_known: "Two private letters (1829, 1835). Below the 0.7 ceiling because the phrases are brief and conventional and speak to the axis only indirectly."
-      rationale: "Interventionist pole features: a personal God addressed as 'the Almighty' in thanksgiving and in 'a prayer for future protection' (p. 275), whose pleasure sets how long she lives ('as long as God pleases I shall remain', p. 235). Nothing read places God in the world. Alternative: 1, if the phrases are read as formula rather than belief."
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Scored on her account of nature (P6). Nothing read gives her account of why the heavens move as they do: her work was sweeping for comets and nebulae, reducing observations and cataloguing (S1; S2), and her providential phrases concern her own life, not nature. Not reconstructed from observational work alone."}
+      how_known: "Deepen D1: same two private letters (1829, 1835) re-checked; additional 'God bless' / 'thank God' closings corroborate conventional piety but do not lift past brief-phrase ceiling. Support single (P48): only S3. Named alt 1 (formula) keeps contested reading ≤0.7."
+      rationale: "Personal God ('the Almighty') addressed in thanksgiving and petition; lifespan under God's pleasure — A 0. Nothing places God in the world. Alternative 1: formulaic letter closings without settled locus belief."
+      alternatives:
+        - {value: 1, note: "Read the Almighty / God-pleases phrases as conventional letter formula rather than a personal-locus profession.", cites: [{source: S3, locator: "pp. 235, 275"}]}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Scored on her account of nature (P6). Deepen D1: Memoir + Hoskin Autobiographies excerpt (S6) + Phil. Trans. comet letters (S7) give sweeping, reducing, cataloguing — no own-voice on why the heavens move. Providential phrases concern her life, not nature. Aubert 1786 'Being who has ordered all these things to move as we find them' is TO her (S3), not hers. Not reconstructed from comet-sweeping alone (standing deepen rule)."}
     C_ledger: {value: BELOW_THRESHOLD, how_known: "No statement on reward, punishment or judgement in her own words read.", note: "Her epitaph, said by the editor to be 'of her own composition' (S3, p. 347), speaks of her father gone before 'zu einem besseren Leben' (p. 351); it was completed after her death (it gives her age at death), so the wording cannot be assigned to her with confidence, and it states hope of an afterlife, not a ledger."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Nothing read on revelation against observation. Quoting Luke to express joy (p. 236) shows use of scripture, not its authority over natural knowledge."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). 'A prayer for future protection' (p. 275, a single letter) asks for protection but says nothing about God answering petition with particular events; not enough to score."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is only 0.5 and B_cause is BELOW_THRESHOLD, under the P4 test's 0.7 bar."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus only 0.5 and B_cause BELOW_THRESHOLD, under the P4 test's 0.7 bar. Chart-moving NO (deepen 2026-10-24)."}
   statements:
     - text: "But as long as God pleases I shall remain"
       cites: [{source: S3, locator: "p. 235"}]
@@ -150,12 +154,12 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
   changes_over_life: []
-  coder_notes: "The 1876 Memoir (ed. Mrs John Herschel) prints her recollections and letters with cuts marked by asterisks and dots; the cuts are the editor's, and quotations here keep them as printed. Devotional phrases in letters ('God bless you', 'thank God') recur across the volume (full-text search), which supports a settled conventional piety, but they were not coded as evidence. Her epitaph (p. 351) is treated as uncertain authorship (see C_ledger). The diary pages from the years after William's marriage were destroyed by her (S2), so a gap in the record there is expected."
+  coder_notes: "Deepen D1 2026-10-24: full Memoir re-search (IA OCR + Gutenberg #52923); Hoskin Autobiographies pp. 71–77 excerpt (S6) — assistant-astronomer narrative, no locus/cause; Phil. Trans. comet discovery letters (S7) observational only. Aubert Aug 1786 letter TO her has the only 'Being who has ordered … move' line in the volume — not scored. Devotional closings ('God bless you', 'thank God', 'God grant') recur; not lifted past CHRIST/A @0.5. Epitaph authorship still uncertain (C). Destroyed 1788–1798 diaries (S2/S5) leave a known gap. Chart stays unplotted / not chart-moving."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Hanoverian German; a musicians' family", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 1"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: "Christian (Hanover garrison church congregation)", certainty: 1.0, cites: [{source: S3, locator: "p. 347"}], how_known: "Editor's account, checked on the page image."}
+  religious_heritage_by_birth: {value: "Christian / Protestant (Hanover garrison church; family left Moravia as Protestants)", certainty: 1.0, cites: [{source: S3, locator: "pp. 1–2, 347"}, {source: S5, locator: "Early life"}], how_known: "Isaac memorandum via Memoir; editor on garrison church; Wikipedia family outline."}
   baptism_or_initiation: {value: "Christened in the garrison church, Hanover", certainty: 1.0, cites: [{source: S3, locator: "p. 347"}], how_known: "Editor's account, checked on the page image."}
   childhood_catechism: {value: "Confirmation instruction, then confirmation and first communion in 1764 (in the garrison church, per the editor)", certainty: 1.0, cites: [{source: S3, locator: "pp. 16–18, 347"}], how_known: "Her recollection (pp. 17–18, which do not name the church) and the editor's narrative (pp. 16, 347)."}
 
@@ -163,9 +167,9 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1783–1828", certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–4"}, {source: S2, locator: "1786–1828 paragraphs"}], how_known: "From the three nebulae of 1783 to the nebula catalogue (1822–1828), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1786–1828, which started with the first comet rather than the earliest listed item."}
   age_at_first_lasting_contribution: {value: 33, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Born 16 March 1750; three nebulae in 1783 (month not given), so 33 for most of the year. Was 36 (first comet, August 1786) until the batch 4 lens audit."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type statement found in the Memoir's full text."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "No LIO-type statement found; not scored from absence.", certainty: 0.5, cites: [{source: S3, locator: "full text searched"}], how_known: "Nothing to date."}
-  worldview_during_major_work: {value: TODO}
+  first_evidence_of_lio_type_views: {value: "1829", certainty: 0.5, cites: [{source: S3, locator: "pp. 235–236"}], how_known: "Earliest dated A-bearing letters (3 Mar 1829); after the 1783–1828 span; continuity assumed under P31 (no change_of_view documented). Brief conventional phrases → 0.5."}
+  lio_views_relative_to_major_work: {value: "after major work", rationale: "A-bearing letters 1829/1835 post-date the nebula-catalogue span end 1828; no in-span LIO statement found.", certainty: 0.5, cites: [{source: S3, locator: "pp. 235–236, 275"}], how_known: "Deepen D1 dating."}
+  worldview_during_major_work: {value: UNKNOWN, how_known: "No in-span LIO statement; CHRIST/A evidence is post-span private letters (P31 continuity for the coded values)."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -193,9 +197,11 @@ review:
     - "Britannica article is signed only 'The Editors'."
     - "The 1876 Memoir is a family edition with editorial cuts; letters were read as printed, not against manuscripts."
     - "Printed title of the 1798 Flamsteed index not checked."
+    - "Hoskin Autobiographies (2003) full book not obtained; only pp. 71–77 public excerpt (S6)."
   open_questions:
-    - "Read Hoskin's biographies (Caroline Herschel's Autobiographies, 2003; Discoverers of the Universe, 2011) for her religious life in Hanover and any statement on astronomy and God."
-    - "Check whether the epitaph text she composed survives in her own hand (Herschel papers, Royal Astronomical Society)."
+    - "Full Hoskin Autobiographies (2003) and Discoverers of the Universe (2011) for any religion / nature-cause lines beyond the public excerpt."
+    - "Epitaph manuscript in her hand (RAS Herschel papers)."
+    - "Any in-span (1783–1828) public or private statement on God / nature's order stronger than letter closings."
 
 sources:
   - id: S1
@@ -206,6 +212,7 @@ sources:
     url: "https://www.britannica.com/biography/Caroline-Lucretia-Herschel"
     accessed: 2026-10-02
     reliability_note: "Unsigned editors' article, four paragraphs; cited by paragraph."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S2
     type: secondary
@@ -215,6 +222,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Herschel_Caroline/"
     accessed: 2026-10-02
     reliability_note: "Biography drawing on Hoskin and the Memoir; cited by paragraph subject."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S3
     type: primary
@@ -224,7 +232,8 @@ sources:
     citation: "Herschel, Mrs. John (ed.). Memoir and Correspondence of Caroline Herschel. London: John Murray, 1876. Internet Archive memoircorrespond00hersiala (University of California Libraries)."
     url: "https://archive.org/details/memoircorrespond00hersiala"
     accessed: 2026-10-02
-    reliability_note: "Her recollections and letters as printed by the family, with editorial cuts. Page images checked for pp. 17, 18, 235, 236, 275, 276, 347 and 351 (image n = page + 23 from p. 235 on; p. 18 is n37)."
+    reliability_note: "Her recollections and letters as printed by the family, with editorial cuts. Page images checked for pp. 17, 18, 235, 236, 275, 276, 347 and 351; deepen D1 also used IA full OCR and Gutenberg #52923 clean text for volume-wide search."
+    source_quality: "primary / own words"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S4
     type: secondary
@@ -233,8 +242,38 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
-    reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Caroline Herschel. Wikipedia. https://en.wikipedia.org/wiki/Caroline_Herschel"
+    url: "https://en.wikipedia.org/wiki/Caroline_Herschel"
+    accessed: 2026-10-24
+    reliability_note: "Unsigned tertiary; dual-source bio (P50) against Britannica/MacTutor — birth/death Hanover 1750–1848, parents Isaac/Anna Ilse Moritzen, typhus, Bath 1772, comets, Flamsteed index, RAS gold 1828, destroyed diaries after William's marriage."
+    source_quality: "reference entry"
+    used_for: [basics, childhood, contribution, heritage, review]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Caroline Herschel; ed. Michael Hoskin"
+    citation: "Herschel, Caroline. Caroline Herschel's Autobiographies. Ed. Michael Hoskin. Cambridge: Science History Publications, 2003, pp. 71–77. Excerpt: German History Intersections."
+    url: "https://germanhistory-intersections.org/en/knowledge-and-education/ghis:document-154"
+    accessed: 2026-10-24
+    reliability_note: "Public excerpt of Hoskin edition (assistant-astronomer years, sweeper, injury). No religion or nature-cause language in the excerpt; full book not obtained."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, contribution]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Caroline Herschel"
+    citation: "Herschel, Caroline. Account of the Discovery of a New Comet. Philosophical Transactions of the Royal Society. Internet Archive philtrans00577081 (and related Phil. Trans. comet letters)."
+    url: "https://archive.org/details/philtrans00577081"
+    accessed: 2026-10-24
+    reliability_note: "Public scientific letters on comet discovery; checked for locus/cause language — observational positions and announcements only; none found."
+    source_quality: "primary / own words"
+    used_for: [worldview, contribution]
 ---
 
 # Caroline Herschel
@@ -243,31 +282,31 @@ sources:
 
 ## Summary
 
-Caroline Lucretia Herschel (1750–1848), Hanover-born astronomer in England, discovered eight comets (1786–1797), indexed Flamsteed's observations (1798) and catalogued about 2,500 nebulae for her nephew John; she won the Astronomical Society's gold medal in 1828 [S1; S2]. Her letters show brief Christian devotion: Simeon's canticle, thanksgiving and prayer to "the Almighty", "as long as God pleases" [S3, pp. 235–236, 275]. Primary CHRIST at 0.5; A 0 at 0.5; B to E below threshold; mid_basin below threshold.
+Caroline Lucretia Herschel (1750–1848), Hanover-born astronomer in England, discovered eight comets (1786–1797), indexed Flamsteed's observations (1798) and catalogued about 2,500 nebulae for her nephew John; she won the Astronomical Society's gold medal in 1828 [S1; S2; S5]. Letters show brief Christian devotion: Simeon's canticle, thanksgiving and prayer to "the Almighty", "as long as God pleases" [S3, pp. 235–236, 275]. Primary CHRIST at 0.5; A 0 at 0.5 (alt 1); B–E below threshold; mid_basin below threshold. Chart-moving NO.
 
 ## Life and work
 
-Kept from schooling by her mother, she joined William in Bath in 1772, trained as a singer, and moved with him into astronomy, sweeping for comets and reducing his observations; after his death in 1822 she returned to Hanover [S1; S2].
+Kept from schooling by her mother, she joined William in Bath in 1772, trained as a singer, and moved with him into astronomy, sweeping for comets and reducing his observations; after his death in 1822 she returned to Hanover [S1; S2; S5].
 
 ## Contribution and impact
 
-Comets, the Flamsteed index and the nebula catalogue; a royal pension from 1787 [S1; S2].
+Comets, the Flamsteed index and the nebula catalogue; a royal pension from 1787 [S1; S2; S5]. Phil. Trans. comet letters are observational announcements only [S7].
 
 ## Childhood and education
 
-Christened and confirmed in the Hanover garrison church, according to the editor [S3, p. 347]; she recalls the confirmation herself [S3, p. 17]; household drudgery; William taught her English and mathematics in Bath [S2]. Her funeral service was held in the same church, and she was buried beside her parents [S3, pp. 347, 351].
+Protestant family line (Moravia → Saxony per Isaac's memo) [S3, pp. 1–2]; christened and confirmed in the Hanover garrison church per the editor [S3, p. 347]; she recalls the confirmation herself [S3, p. 17]; household drudgery; William taught her English and mathematics in Bath [S2; S5]. Funeral in the same church; buried beside her parents [S3, pp. 347, 351].
 
 ## Adult working worldview
 
-Brief devotional phrases in her letters [S3, pp. 235–236, 275]; no statement on astronomy and religion found.
+Brief post-span private-letter devotion [S3, pp. 235–236, 275]; deepen found no astronomy–religion statement and no own-voice account of why the heavens move [S3; S6; S7].
 
 ## Heritage (context only)
 
-Hanoverian musicians' family; christened and confirmed in the garrison church [S3, p. 347]. Context only.
+Hanoverian musicians' family; Protestant Moravia ancestry; garrison-church rites [S3; S5]. Context only.
 
 ## Timing
 
-First lasting contribution 1783, three nebulae, at 33 [S1]; first comet 1786, at 36 [S1].
+First lasting contribution 1783, three nebulae, at 33 [S1]; first comet 1786, at 36 [S1]. A-bearing letters 1829/1835 after the span.
 
 ## Lane B notes (labeled belief model)
 
@@ -275,8 +314,9 @@ Everything in this section is Lane B: labeled belief, not a finding. No geometri
 
 ## Open questions
 
-- Hoskin's editions and biographies; the epitaph manuscript.
+- Full Hoskin Autobiographies / Discoverers; epitaph manuscript; in-span LIO stronger than letter closings.
 
 ## Research log
 
 - 2026-10-02: Read Britannica and MacTutor; searched the full text of the 1876 Memoir (Internet Archive) and checked the cited pages on the page images.
+- 2026-10-24: Deepen D1 — Memoir re-search (IA + Gutenberg #52923); Hoskin excerpt S6; Phil. Trans. S7; Wikipedia S5. Scores unchanged; chart NO.
