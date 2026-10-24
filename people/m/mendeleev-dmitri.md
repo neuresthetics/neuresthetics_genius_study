@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1868–1871 → 1869–1871; worldview.working_years 1855–1907 → 1869–1871, equal to the span (P30 addendum f); 1 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 1 value the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #91, F4 rank 92). Needs: A BELOW (blocks plot); B 4 @0.7; primary BELOW (DEISM/CHRIST). Dual bio: Britannica Bensaude-Vincent (S1, Wayback 2024) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S8. A stays BELOW_THRESHOLD: checked withheld appendix «Мировоззрение» (written 1905 for Zavetnye mysli, refused print; posthumous Sochineniya XXIV 1954 / Wikisource Ch.11, S7) — affirms abstract unity traditionally «выражено в признании единого Бога» as necessary, rejects realizing that unity as «воображаемом и вечном старике» / matter / energy / church formalism; separates «начало всех начал» (faith/heart) from scientific generalization; does not place or deny a personal intervening God as locus (Pasteur pattern; unpublished MS private ceiling P18). Gordin 2004 pp. 229–230 via Wikipedia cite (S8): son Ivan — practically split from Church from earliest years; Gordin labels «romanticized deism» (not atheism/materialism). primary stays BELOW with DEISM lead strengthened (P27: no clear rejection of revelation as knowledge source in own words; Ivan/Gordin are reported speech + scholarly reconstruction). CHRIST further weakened (left Church per Ivan). B stays 4 @0.7 written_profession; added support corroborated (S4 lectures + S1 periodic-law practice). mid_basin stays BELOW (A blocks). Filled family_religion / heritage Orthodox @0.5; changes_over_life church split. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
 
 identity:
   id: mendeleev-dmitri
@@ -63,8 +64,8 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Discovered the periodic law.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: TODO, note: "Russian Orthodox by general report; not stated in the sources read."}
-  family_religious_practice: {value: TODO}
+  family_religion: {value: "Russian Orthodox", certainty: 0.5, cites: [{source: S6, locator: "raised as an Orthodox Christian"}, {source: S8, locator: "pp. 229–230 (mother exceptionally devout)"}], how_known: "Wikipedia; Gordin via Wikipedia cite. Heritage, not adult confession (0.5)."}
+  family_religious_practice: {value: "Mother exceptionally devout; sister briefly in a fanatical religious sect (Gordin); adult Mendeleev practically split from the Church (Ivan via Gordin)", certainty: 0.5, cites: [{source: S8, locator: "pp. 229–230"}], how_known: "Gordin quotation via Wikipedia; son's reported speech."}
   parents_and_household:
     - {value: "Father, Ivan Pavlovich Mendeleev, teacher at the Tobolsk gymnasium (Russian literature); blind from 1834, died 1847", name: "Ivan Pavlovich Mendeleev", role: father, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources."}
     - {value: "Mother, Mariya Dmitriyevna Kornileva, who ran the family glassworks; died soon after taking him to St. Petersburg", name: "Mariya Dmitriyevna Mendeleeva (née Kornileva)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources."}
@@ -93,22 +94,27 @@ worldview:
     how_known: "His own published book, checked on the library scan. Below 1.0 because the statement is a single terse sentence and he says he withheld his fuller worldview chapter as incomplete and as revealing 'то, что лучше оставлять про себя'."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S3, locator: "pp. 136, 426"}]
-    how_known: "His published statements read do not speak of God. He calls himself a 'realist', not a materialist, holding that the unity of spirit, force and matter will long remain an 'incomprehensible mystery' (p. 136 note), and names religion with art and science as expressions of the highest consciousness (p. 426); neither places or describes a divine being."
-    note: "Candidates: DEISM and CHRIST (drafts). Would need the withheld worldview chapter, his letters, or the family memoirs (son Ivan; niece N. Ya. Kapustina-Gubkina) read in an edition."
-  secondary_system: {value: UNKNOWN, how_known: "No system evidence beyond the passages above."}
+    cites: [{source: S3, locator: "pp. 136, 426"}, {source: S7, locator: "единого Бога / вечном старике passages"}, {source: S8, locator: "pp. 229–230 romanticized deism"}]
+    how_known: "Published Zavetnye mysli: realist not materialist; religion–art–science triad (S3). Withheld «Мировоззрение» (S7): affirms abstract unity expressed as recognition of one God, rejects anthropomorphic / material realizations; not a coded system confession. Gordin (S8) labels romanticized deism from Ivan's report he left the Church — scholarly reconstruction + reported speech, not his own system label. P27: DEISM needs rejection of revelation; S7 keeps «начало всех начал» for faith/heart apart from science, without rejecting revelation as a knowledge source. Kept BELOW with DEISM lead."
+    note: "Candidates: DEISM (lead) and CHRIST (weakened). Letters and Kapustina-Gubkina memoirs still unread beyond Gordin's Ivan extract."
+  secondary_system: {value: UNKNOWN, how_known: "No second system beyond the DEISM lead."}
   candidate_codes_considered:
-    - {code: DEISM, reason: "Considered: later scholarship (not read) describes a 'romantic deism'. Not coded: no statement of a creator in what was read. DEISM is a draft system file."}
-    - {code: CHRIST, reason: "Considered: Orthodox upbringing by general report (not in a source read) and religion kept among the three highest expressions of consciousness (p. 426). Not coded: nothing specifically Christian is affirmed. CHRIST is a draft system file.", cites: [{source: S3, locator: "p. 426"}]}
-    - {code: ATHE, reason: "Rejected: he rejects 'materialism' by name in favour of 'realism' (p. 136 note) and keeps religion in his triad (p. 426). ATHE is a stub system file.", cites: [{source: S3, locator: "pp. 136, 426"}]}
+    - {code: DEISM, reason: "Lead: Gordin «romanticized deism» (S8); S7 rejects «вечном старике» / church formalism as realizations of unity. Not coded: P27 needs rejection of revelation — not clear in own words; Gordin/Ivan are not his system label. DEISM is a draft system file.", cites: [{source: S8, locator: "pp. 229–230"}, {source: S7, locator: "вечном старике / formalism"}]}
+    - {code: CHRIST, reason: "Orthodox upbringing (S6/S8); religion in triad (S3 p. 426). Rejected for scoring: Ivan via Gordin — practically split from the Church from earliest years; nothing specifically Christian affirmed as adult confession.", cites: [{source: S3, locator: "p. 426"}, {source: S8, locator: "Ivan quotation"}]}
+    - {code: ATHE, reason: "Rejected: rejects materialism for realism (S3 p. 136); keeps religion in triad; Gordin says opposition to Orthodoxy was not atheism (S8).", cites: [{source: S3, locator: "pp. 136, 426"}, {source: S8, locator: "not atheism"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God. The 'unity of the world' as a lasting mystery (S3, p. 136 note) is about the world's basic concepts, not about a divine locus."}
+    A_locus:
+      value: BELOW_THRESHOLD
+      cites: [{source: S3, locator: "p. 136 note (unity mystery)"}, {source: S7, locator: "единого Бога / вечном старике / начало всех начал"}, {source: S8, locator: "pp. 229–230 (few theological commitments; left Church)"}]
+      note: "Named alternatives if later own-voice place/deny is found: A 2 (abstract unity) or A 4 (reject anthropomorphic God / deism-adjacent) at ≤0.5 with BELOW as alt. Unpublished MS private ceiling (P18) would cap A at 0.5 from S7 alone even if clearer."
+      how_known: "Checked: S3 p. 136 unity of spirit/force/matter as mystery (not locus); S7 «Мировоззрение» (withheld 1905; Sochineniya XXIV / Wikisource) — «признании единого Бога» as correct expression of unity, but rejects realizing that unity as «воображаемом и вечном старике», matter, energy, or religious formalism; «начало всех начал» left to faith/heart, not science. Does not place or deny a personal intervening God (Pasteur pattern). S8: Ivan — left Church; Gordin — romanticized deism / few theological commitments. No published «I do not believe in God» / place-deny of intervening God."
     B_cause:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "pp. 376–377"}, {source: S1, locator: "'Formulation of the periodic law'"}]
-      how_known: "His own published lectures (P6), checked on the library scan. Below 1.0 because the passages concern spiritualist phenomena and superstition, not miracle or providence directly."
+      how_known: "His own published lectures (P6), checked on the library scan; corroborated by Britannica's account of predictive periodic law (S1). Below 1.0 because the lecture passages concern spiritualist phenomena and superstition, not miracle or providence directly. Deepen D1: support made explicit (P48); no lift needed."
       rationale: "Scored on his account of nature (P6). Against the spiritualists he holds that nervous physiology 'разрушитъ суевѣрія' and that people will one day speak of these matters as calmly as of eclipses and comets (p. 376); 'Наука борется съ суевѣріями, какъ свѣтъ съ потемками' (p. 377). Alleged mediumistic forces are referred to physiology or fraud, not admitted as exceptions to natural law. His working science is lawful in the strong sense: he trusted the periodic law enough to correct atomic weights and predict unknown elements (S1)."
     C_ledger: {value: UNKNOWN, how_known: "Nothing read on judgement, afterlife or reward and punishment. 'Долгъ' (duty) to family, homeland and humanity (S3, p. 426) is ethics, not a ledger."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "No statement on revelation or scripture in what was read. 'Суевѣріе есть увѣренность, на знаніи неоснованная' (S4, p. 377) is aimed at spiritualism, not revealed religion, and the triad of religion, art and science (S3, p. 426) does not say which decides.", note: "Not scored by the same-pattern rule: p. 426 names three expressions of one consciousness, not two domains under two authorities."}
@@ -147,14 +153,33 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
-  changes_over_life: []
-  coder_notes: "DEISM and CHRIST are drafts; ATHE is a stub system file (flag). Quotations keep the pre-1918 orthography of the scans; English glosses in context are the coder's. Not used: claims about his religion from his son Ivan's and others' memoirs (reported by later writers, not read), and online quotations attributed to him on God (not traced to a scan). The commission's verdict that spiritualism 'is superstition' is a collective conclusion signed by twelve members (S4, first section, commission report; located in the OCR only, page not checked), so his own lecture sentences are used instead. changes_over_life is empty: no dated change in what was read."
+    - text: "Современный научно-философский скептицизм берет свое начало из вековечно существовавшего и долженствующего вечно существовать стремления людей признать единство всего внутреннего и внешнего мира, что и выражено в признании единого Бога и в стремлении это исходное понятие об «едином» по возможности реализовать или узнать ближе. Первое признавать правильным, по мне, совершенно необходимо, а второе во всех отношениях неправильно, недостижимо и к скептицизму-то и приводит. Одни видели это единство в солнце, другие — в самодержавии, воображаемом и вечном старике, третьи — в единоличном людском разуме [...]"
+      cites: [{source: S7, locator: "единого Бога / вечном старике paragraph"}]
+      date: "1905-09"
+      context: "«Мировоззрение», written as intended appendix to Zavetnye mysli; he refused to publish it (Afterword S3; Wikisource note). Dated 27 September 1905 at close. Coder's gloss: recognizing unity of inner and outer world, expressed in recognition of one God, is necessary/correct; trying to realize that «единое» more closely (as sun, autocracy/imagined eternal old man, matter, energy, etc.) is wrong and leads to skepticism."
+      axes: [A_locus]
+      kind: "unpublished manuscript"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Posthumous print in Sochineniya XXIV (1954) / Wikisource; not in 1905 Zavetnye mysli IA scan (verified OCR). Private ceiling (P18). Documents A lead; A stays BELOW_THRESHOLD."
+    - text: "Дело идет о данном времени и лишь о том, до чего может ныне достигать разумное обобщение, на чем должно или может соглашаться, хоть временно успокоиться лично, вовсе помимо «начала всех начал», для которого почва создается не изучением, а тем, что называется верою и определяется инстинктом, волею, чувством и сердцем."
+      cites: [{source: S7, locator: "начало всех начал paragraph"}]
+      date: "1905-09"
+      context: "Same withheld «Мировоззрение». Coder's gloss: rational generalization for the present is apart from the «beginning of all beginnings», whose soil is faith (instinct, will, feeling, heart), not study."
+      axes: [A_locus, D_authority]
+      kind: "unpublished manuscript"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Keeps a faith domain without placing personal intervening God; not used to score DEISM under P27."
+  changes_over_life:
+    - {value: "Practically split from the Orthodox Church from earliest years; tolerated simple rites only as national tradition (Ivan via Gordin); wrote then withheld «Мировоззрение» (1905)", year: "c. 1840s–1905", certainty: 0.5, cites: [{source: S8, locator: "Ivan quotation pp. 229–230"}, {source: S7, locator: "withheld chapter note"}], how_known: "Son's reported speech via Gordin; Afterword + Wikisource note on withheld MS."}
+  coder_notes: "Coder's call D1. Did not score A 2/4 or DEISM from S7+S8 (overclaim; Pasteur/P27). Ivan quotation used only as reported speech under Gordin. «Мировоззрение» is unpublished MS (private ceiling). DEISM/CHRIST drafts; ATHE stub. Pre-1918 orthography in S3/S4 quotes; S7 modern orthography from Wikisource. Commission spiritualism verdict not used (collective). No fallacy_catalog (Jason). Figures not refreshed."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Russian (Siberian provincial family)", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO, note: "Russian Orthodox by general report; not in a source read."}
-  baptism_or_initiation: {value: TODO}
+  religious_heritage_by_birth: {value: "Russian Orthodox", certainty: 0.5, cites: [{source: S6, locator: "raised as an Orthodox Christian"}, {source: S8, locator: "heavily religious upbringing"}], how_known: "Wikipedia; Gordin via Wikipedia. Context only."}
+  baptism_or_initiation: {value: "Baptized (sibling baptism count in family reports)", certainty: 0.5, cites: [{source: S6, locator: "only 14 stayed alive to be baptized"}], how_known: "Wikipedia citing brother Pavel; implies Orthodox baptism practice. Context only."}
   childhood_catechism: {value: TODO}
 
 timing:
@@ -163,15 +188,15 @@ timing:
   age_at_first_lasting_contribution: {value: 35, certainty: 0.7, cites: [{source: S1, locator: "opening; 'Formulation of the periodic law'"}], how_known: "Born February 1834; law announced March 1869."}
   first_evidence_of_lio_type_views: {value: "Lectures against spiritualism (lawful nature, superstition)", year: 1876, certainty: 1.0, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Earliest dated statement read."}
   lio_views_relative_to_major_work: {value: "unclear", rationale: "The earliest statement read (1876) postdates the periodic law (1869), but nothing earlier was read, so the order cannot be fixed from absence.", certainty: 0.5, cites: [{source: S4, locator: "pp. 376–377"}], how_known: "Dates of what was read only."}
-  worldview_during_major_work: {value: TODO}
+  worldview_during_major_work: {value: UNKNOWN, how_known: "primary_system BELOW; A BELOW; earliest LIO statements read are 1876 (after 1869–71). P31: no documented change of view between span and later evidence used for B."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "partly", rationale: "The periodic law, once stated, was used deductively to correct atomic weights and predict elements (S1); not a definitional method.", certainty: 0.5, cites: [{source: S1, locator: "'Formulation of the periodic law'"}], how_known: "Coder's reading."}
   form_acquired: {value: "unclear", certainty: 0.5, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Nothing on method in what was read."}
-  circle_present: {value: "unclear", rationale: "A 'unity of the world' of spirit, force and matter (S3, p. 136 note), but no identification of God with Nature.", certainty: 0.5, cites: [{source: S3, locator: "p. 136"}], how_known: "Coder's reading."}
-  reading: "As belief, not finding: form partly present (predictive law), circle unclear. The record does not test H1."
-  notes: ""
+  circle_present: {value: "unclear", rationale: "Unity of spirit, force and matter (S3/S7), but S7 rejects realizing «единое» as Nature/matter/energy; no God=Nature identity.", certainty: 0.5, cites: [{source: S3, locator: "p. 136"}, {source: S7, locator: "единое realizations"}], how_known: "Coder's reading."}
+  reading: "As belief, not finding: form partly present (predictive law); A BELOW; B 4 @0.7 corroborated; unplotted (A blocks)."
+  notes: "Lane B only. Chart-moving NO."
 
 institutions:
   - {value: "St. Petersburg Technological Institute", role: professor, years: "1864–1866", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Who Got There First?'"}], how_known: "Two sources; end year is the coder's estimate."}
@@ -188,23 +213,26 @@ review:
   controversies:
     - {value: "Priority dispute with Lothar Meyer over the periodic system", certainty: 0.7, cites: [{source: S2, locator: "'Who Got There First?'"}], how_known: "SHI."}
   data_quality_flags:
-    - "Quotations are from library scans in the pre-1918 orthography; the OCR is poor, so every quoted passage was transcribed from the page images."
-    - "His religious heritage (Orthodox) and the family's clerical background are general report, not in the sources read; left TODO."
-    - "Region of birth is coded Eastern Europe by the country rule although Tobolsk is in Siberia."
-    - "Britannica read as its first page only."
+    - "S3/S4 quotations from library scans in pre-1918 orthography; transcribed from page images (OCR poor)."
+    - "«Мировоззрение» (S7) is a withheld 1905 MS published posthumously (Sochineniya XXIV 1954); private ceiling P18."
+    - "Gordin 2004 IA borrow-restricted; Ivan/deism quotations taken from Wikipedia's cited extract (S8)."
+    - "Region of birth coded Eastern Europe by country rule although Tobolsk is in Siberia."
+    - "Britannica live fetch Cloudflare-blocked 2026-10-24; Wayback 2024 body used for S1 refresh."
   open_questions:
-    - "Read the family memoirs (Ivan Mendeleev; Kapustina-Gubkina) and Gordin, A Well-Ordered Thing (2004), keeping reported speech apart from his own words."
-    - "Look for the withheld worldview chapter mentioned in the Afterword of Zavetnye mysli (S3, p. 426) in the Sochineniya."
+    - "Optional: Gordin 2004 print pp. 229–230 beyond Wikipedia extract; Kapustina-Gubkina / Ivan memoirs in full."
+    - "Optional: Sochineniya XXIV facsimile page images of «Мировоззрение» (currently Wikisource scholarly web)."
+    - "Settled this pass: withheld worldview chapter located (S7); does not clear A ≥ 0.7."
 
 sources:
   - id: S1
     type: tertiary
     kind: encyclopedia
     author: "Bernadette Bensaude-Vincent"
-    citation: "Bensaude-Vincent, Bernadette. \"Dmitri Mendeleev.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Dmitri-Mendeleev."
+    citation: "Bensaude-Vincent, Bernadette. \"Dmitri Mendeleev.\" Encyclopaedia Britannica. https://www.britannica.com/biography/Dmitri-Mendeleev. Deepen refresh via Wayback 2024 snapshot (live Cloudflare-blocked 2026-10-24)."
     url: "https://www.britannica.com/biography/Dmitri-Mendeleev"
-    accessed: 2026-10-02
-    reliability_note: "Signed article; first page only (to 'Formulation of the periodic law'). Sections cited by heading."
+    accessed: 2026-10-24
+    reliability_note: "Signed article; create-pass used first page to 'Formulation of the periodic law'. Sections cited by heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: secondary
@@ -212,8 +240,9 @@ sources:
     author: "Science History Institute"
     citation: "Science History Institute. \"Julius Lothar Meyer and Dmitri Ivanovich Mendeleev.\" Scientific Biographies. https://www.sciencehistory.org/education/scientific-biographies/julius-lothar-meyer-and-dmitri-ivanovich-mendeleev/."
     url: "https://www.sciencehistory.org/education/scientific-biographies/julius-lothar-meyer-and-dmitri-ivanovich-mendeleev/"
-    accessed: 2026-10-02
-    reliability_note: "Museum and library biography; paragraphs counted from the opening, sections by heading."
+    accessed: 2026-10-24
+    reliability_note: "Museum and library biography; paragraphs counted from the opening, sections by heading. Silent on religion (checked deepen D1)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, institutions, collaborators, review]
   - id: S3
     type: primary
@@ -222,8 +251,9 @@ sources:
     year: 1905
     citation: "Mendeleev, D. I. Zavetnye mysli D. Mendeleeva [Заветные мысли Д. Менделеева]. St. Petersburg: Tipo-litografiya M. P. Frolovoi, 1903–[1905]. Presidential Library scan on the Internet Archive: https://archive.org/details/zavetnyemyslidmendeleeva4."
     url: "https://archive.org/details/zavetnyemyslidmendeleeva4"
-    accessed: 2026-10-02
-    reliability_note: "Library scan (Presidential Library collection). Issued in four parts; title page 1903–1904; printing finished 19 Oct 1905. Pages 136 and 426 checked on the page images (leaf = page + 3)."
+    accessed: 2026-10-24
+    reliability_note: "Library scan (Presidential Library collection). Issued in four parts; title page 1903–1904; printing finished 19 Oct 1905. Pages 136 and 426 checked on the page images (leaf = page + 3). Deepen D1: OCR of full volume confirms Afterword withholds worldview chapter; «Мировоззрение» not in this 1905 print."
+    source_quality: "primary / own words"
     used_for: [identity, contribution, worldview, lane_b]
   - id: S4
     type: primary
@@ -232,8 +262,9 @@ sources:
     year: 1876
     citation: "Mendeleev, D. I., ed. Materialy dlya suzhdeniya o spiritizme [Материалы для суждения о спиритизме]. St. Petersburg: Obshchestvennaya pol'za, 1876. Presidential Library scan on the Internet Archive: https://archive.org/details/materialydljasuzhdenijaospiritizme54."
     url: "https://archive.org/details/materialydljasuzhdenijaospiritizme54"
-    accessed: 2026-10-02
+    accessed: 2026-10-24
     reliability_note: "Library scan. Contains the commission's papers and his own lectures of 15 Dec 1875 and 24–25 Apr 1876; only his own lectures and preface are used for his views. Pages 376–377 checked on the page images."
+    source_quality: "primary / own words"
     used_for: [identity, worldview, timing, institutions]
   - id: S5
     type: secondary
@@ -243,7 +274,39 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S6
+    type: secondary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Dmitri Mendeleev.\" https://en.wikipedia.org/wiki/Dmitri_Mendeleev. Read 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Dmitri_Mendeleev"
+    accessed: 2026-10-24
+    reliability_note: "Dual-bio second source (P50) for dates/places; Early life on Orthodox upbringing and Gordin/Ivan deism note."
+    source_quality: "reference entry"
+    used_for: [identity, basics, childhood, worldview, heritage, review]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "Dmitri Ivanovich Mendeleev"
+    year: 1905
+    citation: "Mendeleev, D. I. Mirovozzrenie (written 1905 as intended appendix to Zavetnye mysli; withheld from the 1905 print). Posthumous: Sochineniya, vol. XXIV (Moscow/Leningrad: AN SSSR, 1954), pp. 455-461; Wikisource Zavetnye mysli / Glava 11 (Prilozhenie)."
+    url: "https://ru.wikisource.org/wiki/%D0%97%D0%B0%D0%B2%D0%B5%D1%82%D0%BD%D1%8B%D0%B5_%D0%BC%D1%8B%D1%81%D0%BB%D0%B8_(%D0%94._%D0%98._%D0%9C%D0%B5%D0%BD%D0%B4%D0%B5%D0%BB%D0%B5%D0%B5%D0%B2)/%D0%93%D0%BB%D0%B0%D0%B2%D0%B0_11"
+    accessed: 2026-10-24
+    reliability_note: "Own words, unpublished in his lifetime (Afterword S3; Wikisource note 1). Scholarly web of posthumous edition; private ceiling P18. Not a second print-check of the 1905 book."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, review]
+  - id: S8
+    type: secondary
+    kind: "scholarly book"
+    author: "Michael D. Gordin"
+    citation: "Gordin, Michael D. A Well-Ordered Thing: Dmitrii Mendeleev and the Shadow of the Periodic Table. Basic Books, 2004, pp. 229–230. Quotation as cited on Wikipedia (S6) including Ivan Mendeleev on leaving the Church and Gordin's «romanticized deism» label. IA item wellorderedthing00gord borrow-restricted 2026-10-24."
+    url: "https://archive.org/details/wellorderedthing00gord/page/229"
+    accessed: 2026-10-24
+    reliability_note: "Scholarly monograph. Pages not opened this pass; extract taken from Wikipedia's cited quotation of pp. 229–230 (Ivan reported speech + Gordin reconstruction)."
+    source_quality: "scholarly reconstruction"
+    used_for: [worldview, childhood, heritage, review]
 ---
 
 # Dmitri Mendeleev
@@ -252,7 +315,7 @@ sources:
 
 ## Summary
 
-Dmitri Ivanovich Mendeleev (1834–1907), Russian chemist, discovered the periodic law in 1869 and predicted unknown elements [S1, opening]. Against the spiritualists in 1876 he wrote "Наука борется съ суевѣріями, какъ свѣтъ съ потемками" [S4, p. 377]; in 1905 he named religion, art and science together as the expression of the highest consciousness [S3, p. 426]. He calls his view "реализмъ", not materialism [S3, p. 136]. primary_system BELOW_THRESHOLD; B 4 (0.7); A, D, E below threshold, C UNKNOWN; mid_basin below threshold.
+Dmitri Ivanovich Mendeleev (1834–1907), Russian chemist, discovered the periodic law in 1869 and predicted unknown elements [S1; S6]. Deepen D1: primary_system BELOW_THRESHOLD (DEISM lead); A BELOW_THRESHOLD; B 4 @0.7 corroborated; mid_basin BELOW_THRESHOLD. Not plotted (A blocks). Chart-moving NO.
 
 ## Life and work
 
@@ -268,11 +331,11 @@ His father, a gymnasium teacher, went blind the year he was born; his mother ran
 
 ## Adult working worldview
 
-Nervous physiology "разрушитъ суевѣрія" [S4, p. 376]. He is a realist: the unity of spirit, force and matter will long remain an "непостижимою тайною" [S3, p. 136]. Religion, art and science together express the highest consciousness [S3, p. 426]. Scores: B 4 (0.7); A, D, E below threshold, C UNKNOWN.
+Nervous physiology "разрушитъ суевѣрія" [S4, p. 376]. Realist triad [S3, p. 136]; religion–art–science [S3, p. 426]. Withheld «Мировоззрение»: abstract «единый Бог» / reject «вечный старик» [S7]. Ivan/Gordin: left Church; romanticized deism label [S8]. Scores: A BELOW; B 4 @0.7 corroborated.
 
 ## Heritage (context only)
 
-Russian; religious heritage not stated in the sources read. Context only.
+Russian; Orthodox heritage [S6; S8]. Context only.
 
 ## Timing
 
@@ -280,12 +343,13 @@ First lasting contribution 1869, at 35 [S1]. The worldview evidence read dates f
 
 ## Lane B notes (labeled belief model)
 
-Everything in this section is Lane B: labeled belief, not a finding. Form partly present (predictive law); circle unclear.
+Everything in this section is Lane B: labeled belief, not a finding. Form partly present; A BELOW; B 4 @0.7; unplotted.
 
 ## Open questions
 
-- Family memoirs and Gordin (2004); the withheld worldview chapter.
+- Gordin print; Kapustina-Gubkina; Sochineniya XXIV facsimile of «Мировоззрение».
 
 ## Research log
 
-- 2026-10-02: Read Britannica (Bensaude-Vincent, first page), the Science History Institute biography, and two Presidential Library scans on the Internet Archive (Materialy dlya suzhdeniya o spiritizme, 1876, pp. 376–377; Zavetnye mysli, 1903–1905, pp. 136, 426), transcribing from the page images because the OCR is poor. MacTutor has no Mendeleev page (404).
+- 2026-10-02: Britannica (first page), SHI, Materialy (pp. 376–377), Zavetnye mysli (pp. 136, 426).
+- 2026-10-24: Deepen D1. Wikipedia dual bio; Wikisource/Sochineniya «Мировоззрение» (withheld MS); Gordin via Wikipedia cite; IA Zavetnye OCR confirms chapter absent from 1905 print; Britannica live blocked (Wayback used); SHI silent on religion. Wrote drafts/deepen_mendeleev-dmitri.md (untracked). No figures refresh. No fallacy_catalog.
