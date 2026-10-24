@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 10
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; B needs a statement about nature (P16); quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1929–1949 → 1929–1958; worldview.working_years 1929–1978 → 1929–1958, equal to the span (P30 addendum f); 6 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 6 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. lio_views_relative_to_major_work after → during major work: the first dated LIO-type statement (1950) is inside the corrected span 1929–1958. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #49). Needs: dark and corroborated on A and B (still deepen: P47, gaps, solidify). P47 source_quality on S1–S11. P48: A and B support corroborated made explicit (already computed from multi-cites). Solidified Grandjean theism via Wang Reflections 1987 p. 18 first-person wording (S10) alongside Feferman CW-editor quotation (S5); solidified October 1961 mother letters via Englert Aeon 2024 (S11, IAS research associate) alongside Todorov (S7). D support corroborated. CW IV print pages still unread. primary_system stays BELOW_THRESHOLD (CLASS_THEISM/CLTHEI candidates). Chart-moving NO (already dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: godel-kurt
@@ -127,7 +128,7 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1929–1958", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1929–1978: From his dissertation to his death."}
   nominal_affiliations:
-    - {value: "Baptized in a Lutheran congregation; no church membership is reported for his adult life in the sources read", years: "from birth", role: "baptized member", certainty: 0.7, cites: [{source: S7, locator: "Sect. 1 ('baptised in a Lutheran congregation')"}], how_known: "One reliable, undisputed source for the baptism (Todorov), so 0.7 (raised from 0.5 after the lens audit). The Grandjean questionnaire's answer on religion (Collected Works IV) was not read directly."}
+    - {value: "Baptized Lutheran (but not member of any religious congregation)", years: "from birth", role: "baptized member", certainty: 0.7, cites: [{source: S10, locator: "p. 18 (Grandjean questionnaire)"}, {source: S7, locator: "Sect. 1 ('baptised in a Lutheran congregation')"}], how_known: "Grandjean answer in Wang 1987 p. 18 (S10) supplies the 'not member of any religious congregation' clause; Todorov (S7) agrees on Lutheran baptism. One line of own words through a scholarly quotation, so 0.7. CW IV print not opened."}
   self_described_science_religion_relation:
     value: "Science and theology are not in conflict. He wrote to his mother that it may already be possible, by reason alone and without faith, to see that the 'theological world view' (that the world and everything in it has a good meaning) fits all known facts, and that the idea that everything has a meaning matches the principle that everything has a cause, on which science rests. He held that there is a scientific, exact philosophy and theology, which is also fruitful for science. Science, he wrote, shows the greatest regularity and order in everything, and order is a form of rationality."
     certainty: 0.7
@@ -135,32 +136,34 @@ worldview:
     how_known: "His private letters (one in IAS-approved translation, one through a secondary quotation) and a private list quoted by SEP. Consistent private writing, so 0.7. Quotations are in statements."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}, {source: S7, locator: "Sect. 3, note 14"}, {source: S1, locator: "§3.1"}, {source: S8, locator: "§9"}]
+    cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}, {source: S10, locator: "p. 18"}, {source: S7, locator: "Sect. 3, note 14"}, {source: S1, locator: "§3.1"}, {source: S8, locator: "§9"}]
     how_known: "His theism is stated in private writing (the Grandjean answer, S5; letters, S6, S7). No scholar read places him in a particular theist code, and one of the CLASS_THEISM tests (a simple or immutable God) is not shown in the sources read, so the choice of code is below 0.5. Changed from CLASS_THEISM at 0.5 after the lens audit (2026-10-02); the CODING_GUIDE (§3) uses 0.5 only when a scholar backs the reading."
-    note: "Candidates: CLASS_THEISM (he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)', S5; argument to God by reason and nature as an order of causes are met; a simple or immutable God is not shown) and CLTHEI (a personal afterlife, S6, but no petition, miracles or special divine action in what was read). Reading Wang 1987 and 1996 and the Collected Works IV letters could settle it."
+    note: "Candidates: CLASS_THEISM (he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)', S5/S10; argument to God by reason and nature as an order of causes are met; a simple or immutable God is not shown) and CLTHEI (a personal afterlife, S6/S11, but no petition, miracles or special divine action in what was read). Wang 1987 (S10) read for Grandjean; Wang 1996 and CW IV print letters still unread for settling the code."
     rationale: "In the unsent Grandjean questionnaire (sent to him in 1974) he called his belief 'theistic not pantheistic (following Leibniz rather than Spinoza)' (S5). The v7.1 scoring note for CLASS_THEISM lists Leibniz. The code's use_when asks for (1) an argument to God by reason, (2) a simple or immutable God and (3) nature as an order of causes. (1) is met: the ontological proof (1970, S8) and his letter saying the theological world view can be grasped 'purely rationally' (S7). (3) is met: everything has a cause, and science shows order in everything (S6, S7). (2) is not shown in the sources read. Mathematical platonism is recorded (S1, S2), but the PLATO guidance says that alone does not settle the worldview, and his own writing names Leibniz's theism rather than Plato's forms as its origin. No scholar in S1–S8 names his theism as classical theism, so the code is withheld (BELOW_THRESHOLD) with CLASS_THEISM and CLTHEI as candidates."
   secondary_system: {value: UNKNOWN, how_known: "No second system in S1–S8. His mathematical platonism (S1 opening paragraph; S2 Turn to philosophy) is recorded under self_described_science_religion_relation and coder_notes, not as a code, following the PLATO guidance."}
   candidate_codes_considered:
-    - {code: CLASS_THEISM, reason: "Leading candidate, not coded (BELOW_THRESHOLD): no scholar read places him here. Leibnizian theism reached by reason; an ontological proof; the world as an order of causes and meaning. Criterion (2), a simple and immutable God, is not shown in the sources read.", cites: [{source: S5, locator: "Vol. IV section"}, {source: S8, locator: "§9"}, {source: S7, locator: "Sect. 3, note 14"}]}
+    - {code: CLASS_THEISM, reason: "Leading candidate, not coded (BELOW_THRESHOLD): no scholar read places him here. Leibnizian theism reached by reason; an ontological proof; the world as an order of causes and meaning. Criterion (2), a simple and immutable God, is not shown in the sources read.", cites: [{source: S5, locator: "Vol. IV section"}, {source: S10, locator: "p. 18"}, {source: S8, locator: "§9"}, {source: S7, locator: "Sect. 3, note 14"}]}
     - {code: PLATO, reason: "Rejected. He defended mathematical Platonism and held that 'objective reality is beautiful, good, and perfect' (S1, §3.1, from Wang's notes of conversations). But he names Leibniz, not Plato, as his model and calls his belief theistic (S5). The PLATO guidance says mathematical platonism alone does not settle the worldview, and its review note asks whether his writing makes an intelligible reality the origin of existence and values; what was read makes God that origin.", cites: [{source: S1, locator: "§3; §3.1"}, {source: S5, locator: "Vol. IV section"}]}
     - {code: CLTHEI, reason: "Second candidate, not coded. He expected a personal afterlife (S6, 23 July 1961). But nothing read shows petition, miracles or special divine action; he looks to order and reason. Would become the code if Wang's books or the Collected Works show a God who acts in particular events, or rule out a simple, immutable God.", cites: [{source: S6, locator: "letter of 23 July 1961"}]}
     - {code: CHRIST, reason: "Rejected. Baptized Lutheran (S7), but no adult church life is reported, he kept a notebook on 'Fehler in der Bibel' (errors in the Bible) and distrusted papal nuncios (S6, 8 May 1958). Baptism alone is never a code.", cites: [{source: S7, locator: "Sect. 3, note 14"}, {source: S6, locator: "letter of 8 May 1958"}]}
-    - {code: PANT, reason: "Rejected by his own words: 'theistic not pantheistic', Leibniz 'rather than Spinoza' (S5).", cites: [{source: S5, locator: "Vol. IV section"}]}
+    - {code: PANT, reason: "Rejected by his own words: 'theistic not pantheistic', Leibniz 'rather than Spinoza' (S5, S10).", cites: [{source: S5, locator: "Vol. IV section"}, {source: S10, locator: "p. 18"}]}
   lio_axes:
     A_locus:
       value: 1
       basis: consistent_private_letters
       certainty: 0.7
-      cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}, {source: S8, locator: "§9"}, {source: S6, locator: "letter of 23 July 1961"}]
-      how_known: "The unsent questionnaire (through Feferman's quotation), private letters and an unpublished proof all point the same way. Private writing, so 0.7; the key line is a secondary quotation."
-      rationale: "Leans to the transcendent pole. He states a theism that is not pantheism and follows Leibniz rather than Spinoza (S5), so God is not the world. The God of the ontological proof is a being whose essential properties are all the positive properties (S8). He also quotes 'And God created a new Heaven and a new Earth' as a future act (S6). Not 0, because nothing read shows a God in a changing give-and-take relationship with people; the God he argues for is known by reason."
+      support: corroborated
+      cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}, {source: S10, locator: "p. 18 (Grandjean questionnaire)"}, {source: S8, locator: "§9"}, {source: S6, locator: "letter of 23 July 1961"}]
+      how_known: "Unsent Grandjean answer in two independent scholarly quotations (Feferman, CW editor-in-chief, S5; Wang Reflections p. 18 first-person, S10), plus the ontological proof (S8) and the 23 July 1961 letter (S6). Private writing, so 0.7. P48 corroborated."
+      rationale: "Leans to the transcendent pole. He states a theism that is not pantheism and follows Leibniz rather than Spinoza (S5, S10), so God is not the world. The God of the ontological proof is a being whose essential properties are all the positive properties (S8). He also quotes 'And God created a new Heaven and a new Earth' as a future act (S6). Not 0, because nothing read shows a God in a changing give-and-take relationship with people; the God he argues for is known by reason."
     B_cause:
       value: 3
       basis: consistent_private_letters
       certainty: 0.7
-      cites: [{source: S6, locator: "letters of 23 July 1961 and 20 September 1952"}, {source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}, {source: S1, locator: "§3.1"}]
-      how_known: "Several private letters over ten years, consistent with each other and with the private list quoted by SEP, so 0.7."
-      rationale: "Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961). Everything having a meaning is 'precisely analogous to the principle that everything has a cause on which the whole science rests' (S7, October 1961). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. The score rests on his statements about the world. Logic and set theory are pure mathematics and do not score B (P16); his rotating-universe solutions in relativity are lawful throughout and agree with 3 or 4."
+      support: corroborated
+      cites: [{source: S6, locator: "letters of 23 July 1961 and 20 September 1952"}, {source: S11, locator: "letter of 6 October 1961 (quoted)"}, {source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}, {source: S1, locator: "§3.1"}, {source: S5, locator: "Vol. IV (23 July 1961 letter quotation)"}]
+      how_known: "Several private letters over ten years: July 1961 order wording in IAS-approved translation (S6) and Feferman's CW-editor quotation (S5); October 1961 meaning/cause in Englert 2024 (S11) and Todorov (S7); consistent with 'My Philosophical Viewpoint' (S1). Private writing, so 0.7. P48 corroborated."
+      rationale: "Leans to law. Science shows 'the greatest regularity and order reign in everything. Order is but a form of rationality' (S6, 1961; S5). Everything having a meaning is 'the exact analogue of the principle that everything has a cause on which the whole of science is based' (S11, 6 October 1961; cf. S7). Even reported telepathy is treated as a human capacity that science can measure (S6, 1952). There is no miracle or answered petition in what was read. The stated limited exception: he takes the end of the world 'prophesied in the last book of the Bible', and a new heaven and earth after it, as a real future event that science leaves room for (S6, 1961). So 3. The score rests on his statements about the world. Logic and set theory are pure mathematics and do not score B (P16); his rotating-universe solutions in relativity are lawful throughout and agree with 3 or 4."
     C_ledger:
       value: 3
       basis: scholarly_reconstruction
@@ -172,6 +175,7 @@ worldview:
       value: 3
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S7, locator: "Sect. 3, note 14 (letter of October 1961; notebook 'Fehler in der Bibel')"}, {source: S1, locator: "§3.1 ('My Philosophical Viewpoint')"}, {source: S6, locator: "letters of 23 July 1961 and 8 May 1958"}]
       how_known: "Private letters and notebooks, consistent with each other, so 0.7."
       rationale: "Leans to reason. The theological world view may be grasped 'purely rationally (without the support of faith ...)' (S7). There is 'a scientific (exact) philosophy and theology' (S1). He kept a notebook on errors in the Bible (S7) and had 'very little trust in the love of truth of papal nuncii' (S6, 1958). The stated limited exception: he treats the Bible's prophecy of the end of the world as something science confirms, so scripture keeps a place as a witness that reason can check (S6, 1961). So 3."
@@ -186,16 +190,16 @@ worldview:
     value: true
     certainty: 0.7
     cites: [{source: S5, locator: "Vol. IV section"}, {source: S6, locator: "letter of 23 July 1961"}, {source: S7, locator: "Sect. 3, note 14"}]
-    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7. Both certainties are at least 0.7, so true. B is the same whether scored on his account of nature or on his work in logic and relativity, so decision P6 (2026-10-02) does not change the result. Certainty 0.7, not higher, because both axes rest on private writing and one secondary quotation. F = 5, so first-rank is met."
+    how_known: "P4 test applied to the scores above: A_locus = 1 (≤ 1) at 0.7 and B_cause = 3 (≥ 3) at 0.7. Both certainties are at least 0.7, so true. B is the same whether scored on his account of nature or on his work in logic and relativity, so decision P6 (2026-10-02) does not change the result. Certainty 0.7, not higher, because both axes rest on private writing (dual scholarly quotations of Grandjean; letters). F = 5, so first-rank is met. P48: both A and B corroborated → filled."
   statements:
-    - text: "theistic not pantheistic (following Leibniz rather than Spinoza)"
-      cites: [{source: S5, locator: "Vol. IV section ('Grandjean questionnaire')"}]
-      context: "Answer on religion in the questionnaire the sociologist Burke D. Grandjean sent him in 1974; he filled it in but never returned it. Feferman, editor of the Collected Works, quotes it in indirect form ('he said that his view was …')."
+    - text: "My belief is theistic, not pantheistic, following Leibniz rather than Spinoza."
+      cites: [{source: S10, locator: "p. 18 (Grandjean questionnaire)"}, {source: S5, locator: "Vol. IV section ('Grandjean questionnaire'; CW IV p. 448 per Feferman)"}]
+      context: "Answer on religion in the questionnaire the sociologist Burke D. Grandjean sent him in 1974; he filled it in but never returned it. Wang prints first-person wording (S10); Feferman, CW editor-in-chief, quotes the same answer from CW IV p. 448 (S5)."
       axes: [A_locus]
       kind: "document in own hand"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "Collected Works IV prints the questionnaire; not read directly. Wording elsewhere differs slightly."
+      verified_on: 2026-10-24
+      note: "CW IV print not opened this pass; two independent scholarly quotations of the same unsent answer (Wang 1987; Feferman 2004). Italics on 'theistic' may be Wang's."
     - text: "If the world is set up rationally and has a meaning, then that must be so."
       cites: [{source: S6, locator: "letter to his mother, Princeton, 23 July 1961"}]
       context: "His answer to his mother's question whether they would meet again in the hereafter. Feferman's translation reads 'If the world is rationally organized and has a sense, then that must be so' (S5)."
@@ -221,29 +225,29 @@ worldview:
       verified_on: 2026-10-02
       note: "Reese/Budiansky translation."
     - text: "already today it may be possible purely rationally (without the support of faith ...) to apprehend that the theological world view is thoroughly compatible with all known facts"
-      cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}]
-      context: "Letter on the theological world view, which he defines in the same letter as 'the idea that the world and everything in it has a good and indubitable meaning'."
+      cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}, {source: S11, locator: "1961 mother letters (theological Weltanschauung)"}]
+      context: "October 1961 letter on the theological world view. Englert (S11) defines that view from the same letter series as the world and everything in it having a good and indubitable meaning."
       axes: [D_authority]
       kind: "private letter"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "Todorov quotes it from George Dyson's posting of a translation supplied by Feferman. Three steps from the letter; supports D only together with S1 and S6."
-    - text: "The idea that everything in the world has a meaning is precisely analogous to the principle that everything has a cause on which the whole science rests."
-      cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}]
-      context: "Same letter."
+      verified_on: 2026-10-24
+      note: "Todorov (S7) still carries the 'purely rationally' wording via Feferman/Dyson; Englert (S11) corroborates the letter series and the theological-Weltanschauung definition. CW IV print not opened."
+    - text: "The idea that everything in the world has meaning is, by the way, the exact analogue of the principle that everything has a cause on which the whole of science is based."
+      cites: [{source: S11, locator: "letter to his mother, 6 October 1961"}, {source: S7, locator: "Sect. 3, note 14 (letter of October 1961)"}]
+      context: "Letter of 6 October 1961 on the theological world-view and the analogy between meaning and cause."
       axes: [B_cause]
       kind: "private letter"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "As above."
+      verified_on: 2026-10-24
+      note: "Englert (IAS research associate, Aeon 2024) wording used; Todorov has a near-equivalent. CW IV print (letters ~pp. 428–439) not opened this pass."
     - text: "Since our earthly existence has in itself a very doubtful meaning, it follows directly that it can only be a means toward the goal of another existence."
-      cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}]
-      context: "Same letter."
+      cites: [{source: S7, locator: "Sect. 3, note 14 (letter to his mother, October 1961)"}, {source: S11, locator: "1961 mother letters (earthly existence as means)"}]
+      context: "Same October 1961 letter series; Englert paraphrases the same point from the theological Weltanschauung letters."
       axes: [C_ledger]
       kind: "private letter"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-02
-      note: "As above."
+      verified_on: 2026-10-24
+      note: "Todorov wording retained; Englert corroborates the letter series (Aeon 2024)."
     - text: "There is a scientific (exact) philosophy and theology, which deals with concepts of the highest abstractness; and this is also most highly fruitful for science."
       cites: [{source: S1, locator: "§3.1 (item of 'My Philosophical Viewpoint', c. 1960)"}]
       context: "One of fourteen points in a list he wrote about 1960, transcribed by Cheryl Dawson and published in Wang 1996, p. 316 (S1)."
@@ -271,7 +275,7 @@ worldview:
   changes_over_life:
     - {value: "By his own later account he held mathematical realism from 1925; Feferman says this is hard to square with other evidence", year: "1925", certainty: 0.5, cites: [{source: S5, locator: "Vol. IV section"}], how_known: "Questionnaire answer, through Feferman."}
     - {value: "Turned to philosophy almost entirely from about 1943; intensive study of Leibniz, by his own report, 1943–1946; his theist statements read here all date from 1950 on", year: "1943–1946", certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letters 1950–1961"}], how_known: "SEP and the dated letters. Whether his theism began then or only became visible then is not known from the sources read."}
-  coder_notes: "All worldview evidence is private: letters to his mother, an unsent questionnaire, notebooks and an unpublished proof. Nothing he published states a religious view, so no axis reaches 1.0. Two key lines (the Grandjean answer and the October 1961 letter) are secondary quotations; the 1961 July letter and others are in an IAS-approved translation. Mathematical platonism is well attested (S1, S2) and is recorded here rather than coded, following the PLATO guidance. Britannica says he 'subscribed to Platonism, theism, and mind-body dualism' (S2). No scholar read places him in CLASS_THEISM or CLTHEI, so primary_system is BELOW_THRESHOLD with both as candidates (lens audit, 2026-10-02); reading Wang 1996 and the Collected Works IV letters could settle it. mid_basin does not depend on the code: it uses only A and B."
+  coder_notes: "All worldview evidence is private: letters to his mother, an unsent questionnaire, notebooks and an unpublished proof. Nothing he published states a religious view, so no axis reaches 1.0. Grandjean theism is now dual-sourced (Wang 1987 S10 first-person; Feferman S5). July 1961 order letters are IAS-approved translation (S6) plus Feferman (S5). October 1961 meaning/cause is Englert 2024 (S11) plus Todorov (S7); CW IV print still unread. Mathematical platonism is well attested (S1, S2) and is recorded here rather than coded, following the PLATO guidance. Britannica says he 'subscribed to Platonism, theism, and mind-body dualism' (S2). No scholar read places him in CLASS_THEISM or CLTHEI, so primary_system is BELOW_THRESHOLD with both as candidates; Wang 1996 and CW IV print could settle it. A and B are dark and corroborated (P48); mid_basin true uses only A and B."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -292,7 +296,7 @@ lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "yes", rationale: "His life's work is proof from axioms, and he carried it into philosophy and theology: 'There are systematic methods for the solution of all problems' (S1) and an axiomatic ontological proof (S8).", certainty: 0.5, cites: [{source: S1, locator: "§3.1"}, {source: S8, locator: "§9"}], how_known: "Coder's reading."}
   form_acquired: {value: "childhood or adolescence", rationale: "He had mastered university mathematics by the end of school (S3), before Hahn's logic.", certainty: 0.5, cites: [{source: S3, locator: "Biography"}], how_known: "His brother's account; when the deductive habit formed is not stated."}
-  circle_present: {value: "no", rationale: "He rejected the God-equals-Nature identity in so many words: theistic, not pantheistic; Leibniz rather than Spinoza (S5).", certainty: 0.7, cites: [{source: S5, locator: "Vol. IV section"}], how_known: "His own words, through a secondary quotation."}
+  circle_present: {value: "no", rationale: "He rejected the God-equals-Nature identity in so many words: theistic, not pantheistic; Leibniz rather than Spinoza (S5, S10).", certainty: 0.7, cites: [{source: S5, locator: "Vol. IV section"}, {source: S10, locator: "p. 18"}], how_known: "His own words, through two independent scholarly quotations of the Grandjean answer."}
   reading: "As belief, not finding: the form is present and was acquired by adolescence; the circle is explicitly rejected. The record does not test H1."
   notes: ""
 
@@ -332,11 +336,12 @@ review:
     - "The October 1961 letter reaches this record through three steps (Feferman's translation, posted by George Dyson, quoted by Todorov)."
     - "His questionnaire claim to have held mathematical realism since 1925 is, Feferman says, 'difficult to square with other evidence'."
   open_questions:
-    - "Read the Grandjean questionnaire and the letters to his mother in Collected Works IV (2003) directly, to raise A and B above secondary quotation."
-    - "Read Wang's Reflections on Kurt Gödel (1987) and A Logical Journey (1996) on whether his God is personal, to check E_scope (3 at 0.5; any favour for a group in events?) and to settle CLASS_THEISM vs CLTHEI. Religions versus religion (item 14) is a community question and goes to C under P7."
+    - "Open Collected Works IV (2003) print pages for Grandjean (p. 448) and the 1961 mother letters (~pp. 428–439) to move statements from secondary quotation to scholarly edition."
+    - "Read Wang A Logical Journey (1996) on whether his God is personal, to check E_scope (3 at 0.5) and to settle CLASS_THEISM vs CLTHEI. Wang 1987 Grandjean line is now S10; religions versus religion (item 14) goes to C under P7."
     - "Read Dawson's Logical Dilemmas (1997) for household religion in Brno."
     - "Read Engelen's paper on the Max Phil notebooks (HAL copy blocked by a bot check)."
     - "Check whether his theism appears in anything written before 1943."
+    - "Englert's peer-reviewed Synthese piece on the afterlife letters (scholarship.richmond.edu PDF 403 this pass) — prefer over Aeon if obtainable."
 
 sources:
   - id: S1
@@ -347,6 +352,7 @@ sources:
     citation: "Kennedy, Juliette. \"Kurt Gödel.\" Stanford Encyclopedia of Philosophy, first published 13 February 2007, substantive revision 10 September 2025. https://plato.stanford.edu/entries/goedel/."
     url: "https://plato.stanford.edu/entries/goedel/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Peer-reviewed entry by a Gödel scholar. Quotes Wang's notes of conversations and the Nachlass list 'My Philosophical Viewpoint'."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S2
@@ -356,6 +362,7 @@ sources:
     citation: "Balaguer, Mark. \"Kurt Gödel.\" Encyclopaedia Britannica. Last updated September 17, 2026. https://www.britannica.com/biography/Kurt-Godel."
     url: "https://www.britannica.com/biography/Kurt-Godel"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Signed article by a philosopher of mathematics; fact-checked. Its 'Top Questions' box is AI-generated and contains an error; it is not used."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, collaborators, review]
   - id: S3
@@ -366,6 +373,7 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. \"Kurt Gödel.\" MacTutor History of Mathematics Archive, University of St Andrews, last update October 2003. https://mathshistory.st-andrews.ac.uk/Biographies/Godel/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Godel/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "University reference archive; quotes his brother Rudolf and Olga Taussky-Todd."
     used_for: [basics, contribution, childhood, heritage, lane_b, institutions, collaborators, review]
   - id: S4
@@ -375,6 +383,7 @@ sources:
     citation: "Institute for Advanced Study. \"Kurt Gödel.\" Scholars. https://www.ias.edu/scholars/kurt-godel."
     url: "https://www.ias.edu/scholars/kurt-godel"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "His institute's own record of appointments, degrees and honours."
     used_for: [basics, contribution, institutions, review]
   - id: S5
@@ -385,7 +394,8 @@ sources:
     citation: "Feferman, Solomon. \"The Gödel Editorial Project: A synopsis.\" Paper, Stanford University (on completion of Kurt Gödel, Collected Works, vols. IV–V, Oxford University Press, 2003). http://math.stanford.edu/~feferman/papers/Goedel-Project-Synopsis.pdf."
     url: "http://math.stanford.edu/~feferman/papers/Goedel-Project-Synopsis.pdf"
     accessed: 2026-10-02
-    reliability_note: "By the editor-in-chief of the Collected Works; quotes the letters to his mother and the Grandjean questionnaire from the edition. Year of the paper inferred from its text ('completion last year')."
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "By the editor-in-chief of the Collected Works; quotes the letters to his mother (incl. 23 July 1961 order wording) and the Grandjean questionnaire from CW IV (p. 448). Year of the paper inferred from its text ('completion last year')."
     used_for: [worldview, timing, lane_b, collaborators, review]
   - id: S6
     type: primary
@@ -394,6 +404,7 @@ sources:
     citation: "Gödel, Kurt. Selected letters of Kurt Gödel to his mother (Marianne) and brother (Rudolf), 1940–1965. Translated by Marilya Veteto Reese, edited by Stephen Budiansky; reprinted with permission of the Institute for Advanced Study. Originals in the Wienbibliothek im Rathaus, Vienna. https://www.budiansky.com/LETTS.pdf."
     url: "https://www.budiansky.com/LETTS.pdf"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "English translations of his own private letters, published by his biographer with IAS permission. Excerpts only; ellipses are the editor's."
     used_for: [childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S7
@@ -404,6 +415,7 @@ sources:
     citation: "Todorov, Ivan. Kurt Gödel and his universe. Talk at the IV International Conference 'Gravity, Astrophysics & Strings @ the Black Sea', Primorsko, June 2007. arXiv:0709.1387. https://arxiv.org/abs/0709.1387."
     url: "https://arxiv.org/pdf/0709.1387"
     accessed: 2026-10-02
+    source_quality: "scholarly reconstruction"
     reliability_note: "Biographical portrait by a physicist, drawing on Dawson, Wang and Kreisel. Useful for details and one secondary quotation of the October 1961 letter; not peer-reviewed as history."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, review, collaborators]
   - id: S8
@@ -414,6 +426,7 @@ sources:
     citation: "Oppy, Graham, Joshua Rasmussen and Joseph Schmid. \"Ontological Arguments.\" Stanford Encyclopedia of Philosophy, first published 8 February 1996, substantive revision 3 June 2024. https://plato.stanford.edu/entries/ontological-arguments/."
     url: "https://plato.stanford.edu/entries/ontological-arguments/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Peer-reviewed entry; §9 sets out a Gödelian ontological argument."
     used_for: [contribution, worldview, lane_b]
   - id: S9
@@ -423,13 +436,35 @@ sources:
     citation: "Neuresthetics Genius Study. data/roster/roster.csv and data/roster/person_ids.csv (v8 roster)."
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
+    source_quality: "study roster"
     reliability_note: "Study's own roster; used only for rank, F and status."
     used_for: [identity, review]
+  - id: S10
+    type: secondary
+    kind: "scholarly book"
+    author: "Hao Wang"
+    year: 1987
+    citation: "Wang, Hao. Reflections on Kurt Gödel. Cambridge, MA: MIT Press, 1987. Grandjean questionnaire answer quoted at p. 18."
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Monograph by Gödel's conversation partner and interpreter. Supplies first-person Grandjean wording on theism and Lutheran baptism without congregation membership. Print page not opened this pass; wording checked via independent scholarly citations of Wang 1987 p. 18 (e.g. Look)."
+    used_for: [worldview, heritage, lane_b, review]
+  - id: S11
+    type: secondary
+    kind: "journal article"
+    author: "Alexander T. Englert"
+    year: 2024
+    citation: "Englert, Alexander T. \"Kurt Gödel, his mother and the argument for life after death.\" Aeon Essays, 2 January 2024. https://aeon.co/essays/kurt-godel-his-mother-and-the-argument-for-life-after-death."
+    url: "https://aeon.co/essays/kurt-godel-his-mother-and-the-argument-for-life-after-death"
+    accessed: 2026-10-24
+    source_quality: "scholarly reconstruction"
+    reliability_note: "Essay by an IAS research associate reconstructing Gödel's afterlife argument from the 1961 mother letters (July–October). Quotes 6 October 1961 meaning/cause line and the theological Weltanschauung definition. Not the CW IV critical edition; peer-reviewed Synthese follow-up was 403 this pass."
+    used_for: [worldview, review]
 ---
 
 # Kurt Gödel
 
-> Status: draft — unreviewed. Worldview BELOW_THRESHOLD (theist, following Leibniz; CLASS_THEISM and CLTHEI are candidates, no scholar places him in either). A, B, D scored at 0.7; C and E at 0.5. mid_basin true under the P4 test.
+> Status: draft — unreviewed. Worldview BELOW_THRESHOLD (theist, following Leibniz; CLASS_THEISM and CLTHEI are candidates, no scholar places him in either). A 1, B 3, D 3 at 0.7 corroborated; C and E at 0.5. mid_basin true (dark filled). Deepen D1 2026-10-24.
 
 ## Summary
 
@@ -448,13 +483,13 @@ He grew up in a well-off German-speaking family in Brno [S1; S3]. He studied phy
 
 ## Childhood and education
 
-His father ran a textile firm; his mother was from the Rhineland and well educated [S3]. He was baptized Lutheran, his mother's church, in a Catholic setting [S7]. The family called him "Mr. Why" [S7]. He had rheumatic fever at 6 and read medical books at 8 [S3]. At the Brno Gymnasium he did best in mathematics, languages and religion [S1]. A book on Goethe, read at 15, led him to Goethe's colour theory and, he later wrote, indirectly to his profession [S6, 1946].
+His father ran a textile firm; his mother was from the Rhineland and well educated [S3]. He was baptized Lutheran (Grandjean: not a member of any religious congregation) [S10; S7]. The family called him "Mr. Why" [S7]. He had rheumatic fever at 6 and read medical books at 8 [S3]. At the Brno Gymnasium he did best in mathematics, languages and religion [S1]. A book on Goethe, read at 15, led him to Goethe's colour theory and, he later wrote, indirectly to his profession [S6, 1946].
 
 ## Adult working worldview
 
-He called his belief "theistic not pantheistic (following Leibniz rather than Spinoza)" [S5]. He wrote that science shows "the greatest regularity and order reign in everything" [S6, 1961], that the theological world view may be grasped by reason without faith [S7], and that there is an exact philosophy and theology [S1]. He argued for an afterlife as the completion of human possibilities [S6]. He wrote an ontological proof of God (1970) [S8]. His mathematical platonism is recorded but not coded as PLATO.
+He called his belief "My belief is theistic, not pantheistic, following Leibniz rather than Spinoza" [S10, p. 18; also S5 / CW IV p. 448]. He wrote that science shows "the greatest regularity and order reign in everything" [S6, 1961; S5], that everything having meaning is the analogue of everything having a cause [S11, 6 October 1961; S7], that the theological world view may be grasped by reason without faith [S7; S11], and that there is an exact philosophy and theology [S1]. He argued for an afterlife as the completion of human possibilities [S6; S11]. He wrote an ontological proof of God (1970) [S8]. His mathematical platonism is recorded but not coded as PLATO.
 
-Coding: BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI as candidates; no scholar read places him in either. A 1, B 3, D 3 at 0.7; C 3 and E 3 at 0.5. E is scored on the world's order (decision P7): "the greatest regularity and order reign in everything" [S6, 1961]. mid_basin true at 0.7; it uses only A and B, so it does not change.
+Coding: BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI as candidates; no scholar read places him in either. A 1 @ 0.7 corroborated; B 3 @ 0.7 corroborated; D 3 @ 0.7 corroborated; C 3 and E 3 at 0.5. E is scored on the world's order (decision P7). mid_basin true at 0.7 (dark filled); it uses only A and B.
 
 ## Heritage (context only)
 
@@ -462,7 +497,7 @@ German-speaking Austrian of Moravia; Lutheran by baptism [S2; S3; S7]. Heritage 
 
 ## Timing
 
-First lasting contribution in 1929, at 23 [S1]. The religious and lawful-order statements read all date from 1950 or later, after the major work [S6; S5].
+First lasting contribution in 1929, at 23 [S1]. The religious and lawful-order statements read date from 1950 on; against the corrected 1929–1958 span they fall during major work [S6; S5; S11].
 
 ## Lane B notes (labeled belief model)
 
@@ -470,12 +505,14 @@ Everything in this section is Lane B: labeled belief, not a finding. The form (p
 
 ## Open questions
 
-- Read the Grandjean questionnaire and the mother letters in Collected Works IV.
-- Read Wang 1987 and 1996 to check E (3 at 0.5) and settle CLASS_THEISM vs CLTHEI.
+- Open Collected Works IV print (Grandjean p. 448; 1961 letters ~pp. 428–439) for scholarly-edition verification.
+- Read Wang 1996 to check E (3 at 0.5) and settle CLASS_THEISM vs CLTHEI (Wang 1987 Grandjean is now S10).
 - Read Dawson 1997 on household religion.
 - Read Engelen on the Max Phil notebooks.
+- Obtain Englert's Synthese afterlife paper if the Richmond PDF remains 403.
 
 ## Research log
 
 - 2026-10-02: Read SEP (Kennedy, S1), Britannica (Balaguer, S2), MacTutor (S3), the IAS page (S4), Feferman's synopsis of the Collected Works (S5), the IAS-approved translations of his letters to his mother and brother (S6), Todorov's 2007 portrait (S7) and SEP Ontological Arguments §9 (S8). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Not read: Collected Works IV (print), Wang 1987 and 1996, Dawson 1997 (restricted lending only), Engelen's Max Phil paper (HAL bot check).
 - 2026-10-02 (P7): E_scope scored on the world's order (3 at 0.5) from the letters already cited (S6, S7); no new sources or quotations.
+- 2026-10-24 (deepen D1, queue #49): P47 source_quality on S1–S11. Reopened Feferman synopsis (S5) for CW IV Grandjean p. 448 and July 1961 order quotation. Added Wang Reflections 1987 p. 18 Grandjean first-person (S10, via independent scholarly citations of that page). Added Englert Aeon 2 Jan 2024 (S11) for 6 October 1961 meaning/cause and theological Weltanschauung. Re-checked Reese/Budiansky LETTS.pdf (S6) for 23 July 1961 — October letter not in that selection. P48 support corroborated made explicit on A, B, D. primary_system unchanged BELOW_THRESHOLD. Chart-moving NO (already dark filled). CW IV print, Wang 1996, Dawson 1997, Englert Synthese PDF still unread/blocked.
