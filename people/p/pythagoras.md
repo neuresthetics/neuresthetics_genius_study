@@ -2,16 +2,17 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (XW3) era_bucket 'before -500' (0.5) -> UNKNOWN: under a strict P39 his adult life (ca. 570–490 BCE) crosses the -500 edge, and P39 has no candidate-year clause (corrects the batch W PY4 advice; Gautama treated alike). Not plotted either way."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (PY4) era_bucket 'before -500' 0.7 -> 0.5, how_known based on the candidate years (Croton, ca. 530–510 BCE) under P39, at the certainty of the life dates. (Note) 'forged' wording corrected: SEP says books were forged in his name; the Golden Verses circulated in his name and were later compiled; the Sacred Discourse attribution rests on a misreading. SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 125). All facts from SEP (Carl Huffman). Pythagoras wrote nothing; everything about his views is later report (doxography), which is reported speech and cannot score alone (P42, CODING_GUIDE §7). Not a scientist (P30): SEP doubts he did mathematics or rational cosmology. primary_system BELOW_THRESHOLD; A, B, C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin BELOW_THRESHOLD. First lasting contribution and span UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #124 / F4 rank 125). Goals: check SEP/Huffman updates and fragment attribution debates; document leads; keep honest BELOW (Confucius/Hippocrates P42 precedent; no authentic own words expected). Re-read SEP Pythagoras (Huffman; first pub. 2005, substantive revision still 5 Feb 2024 — Fall 2026 archive confirms same revision date, no newer update) and SEP Pythagoreanism (Huffman; substantive revision 5 Mar 2024). Wikipedia EN dual bio (S3, P50): birth ca. 570 Samos agrees; death ca. 495 Wikipedia vs ca. 490 SEP (both approximate). Consensus unchanged: he wrote nothing; Riedweg 2005 attempt to argue books rejected by Huffman 2008a (S1 §3); Golden Verses / Sacred Discourse / pseudo-Pythagorean corpus are forgeries or later compilations, not his words. All worldview evidence remains doxography / reported speech (P42) — Xenophanes Fr. 7, Aristotle acusmata, Dicaearchus VP 19, etc. Did not stretch P49 to lift A/B (standing rule: keep BELOW unless authentic own words). primary_system / A / B / C / mid stay BELOW_THRESHOLD; D/E UNKNOWN; span UNKNOWN (P39); not a scientist (P30). Chart-moving NO. P47 source_quality on S1–S4. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
 identity:
   id: pythagoras
@@ -31,10 +32,10 @@ identity:
 
 basics:
   birth:
-    date: {value: "-570", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 570'); §3"}], how_known: "SEP: 'ca. 570', inferred from Aristoxenus's report that he left Samos at forty under Polycrates (c. 535). Proleptic Julian."}
+    date: {value: "-570", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 570'); §3"}, {source: S3, locator: "infobox (c. 570 BC)"}], how_known: "SEP 'ca. 570' (Aristoxenus / Polycrates); Wikipedia c. 570 agrees (P50). Proleptic Julian."}
     place: {value: "Samos", modern_name: "Samos, Greece", polity_then: "Samos", certainty: 0.7, cites: [{source: S1, locator: "§3 ('there is agreement that he grew up on the island of Samos')"}], how_known: "SEP gives where he grew up; his origin is controversial (S1 §3), so 0.7."}
   death:
-    date: {value: "-490", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 490'); §3"}], how_known: "SEP: 'around 490 BCE'."}
+    date: {value: "-490", calendar: julian, certainty: 0.5, cites: [{source: S1, locator: "opening ('ca. 490'); §3"}, {source: S3, locator: "infobox (c. 495 BC)"}], how_known: "SEP 'around 490 BCE'; Wikipedia c. 495. Both approximate (0.5); kept SEP's figure."}
     place: {value: "Metapontum", modern_name: "Metaponto, Basilicata, Italy", polity_then: "Metapontum (Greek city in southern Italy)", certainty: 0.5, cites: [{source: S1, locator: "§3"}], how_known: "SEP: 'There are a variety of stories about his death', the most reliable putting it at Metapontum; 0.5."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "He wrote nothing and his teaching is undated (P39)."}
   era_bucket: {value: UNKNOWN, how_known: "First-lasting year UNKNOWN (P39). P39 fills era only when every year of the adult life falls in one bucket; his adult life (born ca. 570, died ca. 490 BCE; S1) crosses the -500 edge, so the bucket is UNKNOWN (batch X audit, XW3, correcting the batch W PY4 advice; the Gautama record treats the same case alike). The Croton years (ca. 530–510 BCE, S1 §3) would all fall in 'before -500', but P39 has no candidate-year clause."}
@@ -76,19 +77,19 @@ worldview:
   working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN, P39)."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "He wrote nothing."}
-  primary_system: {value: BELOW_THRESHOLD, how_known: "He wrote nothing; a large collection of books was later forged in his name and other early Pythagoreans' (S1, opening and §2); the Golden Verses are hexameter lines that circulated in his name by the third century BCE and were later compiled, and the idea that he wrote a Sacred Discourse 'seems to arise from a misreading of the early evidence' (S1 §3). Either way they are not his words (P42). What is known comes from reports: Xenophanes's joke about the puppy (Fr. 7) and Dicaearchus show he taught reincarnation; Aristotle's acusmata show interest in ritual and a moralized cosmos (S1 §4.1, §4.3, §5). Reports cannot score alone (P42, CODING_GUIDE §7; Hippocrates and Confucius precedents). SEP adds that 'Pythagoreanism was not a religion' (S1 §4.3). Leads: HELLEN (Greek ritual and gods), with a reincarnation doctrine no listed code fits."}
+  primary_system: {value: BELOW_THRESHOLD, how_known: "Deepen D1 reconfirmed: he wrote nothing (S1 §3; S3; S4 §1). Pseudo-Pythagorean books, Golden Verses, and Sacred Discourse attribution are forgeries or later compilations / misreadings — not his words (P42). Riedweg 2005 argued he wrote books; Huffman 2008a rejects (S1 §3). What is known is reports: Xenophanes Fr. 7 and Dicaearchus on metempsychosis; Aristotle's acusmata on ritual and a moralized cosmos (S1 §4–5). Reports cannot score alone (P42; Confucius / Hippocrates deepen precedents). SEP: 'Pythagoreanism was not a religion' (S1 §4.3). Leads: HELLEN (ritual/gods in acusmata), plus reincarnation with no listed code fit. Honest BELOW_THRESHOLD."}
   secondary_system: {value: UNKNOWN, how_known: "None (P29)."}
   candidate_codes_considered:
-    - {code: HELLEN, reason: "Lead: acusmata on libations and sacrifice to the gods (S1 §4.3); reported only."}
-    - {code: PLATO, reason: "Rejected: Platonism comes after him; the later tradition made him the source of Plato's ideas, which SEP calls unhistorical (S1 opening)."}
+    - {code: HELLEN, reason: "Lead: acusmata on libations and sacrifice to the gods (S1 §4.3); reported only — cannot score alone (P42).", cites: [{source: S1, locator: "§4.3"}]}
+    - {code: PLATO, reason: "Rejected: Platonism comes after him; later tradition made him the source of Plato's ideas — unhistorical (S1 opening; S4 §4 Neopythagoreanism).", cites: [{source: S1, locator: "opening"}, {source: S4, locator: "§4"}]}
     - {code: HINDU, reason: "Rejected: reincarnation alone is not a code; no source links him to Indian teaching."}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Reported only: in the acusmata 'the planets are the hounds of Persephone', agents of vengeance (Aristotle in Porphyry, S1 §5), a lead toward 0–1 (gods acting in the cosmos). Doxography cannot score alone (P42)."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P30): SEP doubts he engaged in rational cosmology or proved the theorem (S1 opening, §5). Reported account of nature: thunder 'is a threat to those in Tartarus' and 'an earthquake is nothing other than a meeting of the dead' (acusmata, S1 §5), a lead toward 1; beside it, heavenly motions perhaps in musical ratios. Reported, so below threshold (P42; Hippocrates precedent)."}
-    C_ledger: {value: BELOW_THRESHOLD, how_known: "Reported only: the soul is immortal and reborn, and the sun and moon are 'the Isles of the Blest' where we may go 'if we lived a good life' (S1 §4.1; §5), a lead toward a personal ledger (0–1). Reported speech (P42)."}
-    D_authority: {value: UNKNOWN, how_known: "Nothing read (P19)."}
-    E_scope: {value: UNKNOWN, how_known: "Nothing read on the world's order (P7, P19)."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B are BELOW_THRESHOLD; no branch of the P4 test is met."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "Deepen D1: still reported only. Acusmata 'the planets are the hounds of Persephone' (Aristotle in Porphyry, S1 §5) is a lead toward 0–1 (gods acting in the cosmos). No authentic own words; doxography cannot score alone (P42). Did not stretch P49 scholarly_reconstruction to lift A (standing rule for this deepen: keep BELOW unless authentic own words — Confucius/Hippocrates path when nothing attributable).", note: "Lead 0–1 remains; Zhmud challenges some cosmological acusmata but that debate is still report-vs-report, not own voice."}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Not a scientist (P30): SEP still doubts he engaged in rational cosmology or proved the theorem (S1 opening, §5; S4). Reported nature: thunder 'is a threat to those in Tartarus'; earthquake 'a meeting of the dead' (acusmata, S1 §5) — lead toward 1; musical ratios of heavenly motions reported beside it. All reported → BELOW_THRESHOLD (P42; Hippocrates deepen precedent). Named alt: still nothing attributable that would open P35 working-science scoring."}
+    C_ledger: {value: BELOW_THRESHOLD, how_known: "Reported only: immortal/reborn soul; sun and moon as 'Isles of the Blest' for a good life (S1 §4.1; §5) — lead toward personal ledger 0–1. Reported speech (P42)."}
+    D_authority: {value: UNKNOWN, how_known: "Nothing attributable on revelation vs observation (P19)."}
+    E_scope: {value: UNKNOWN, how_known: "Nothing attributable on the world's order for groups (P7, P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A and B are BELOW_THRESHOLD; no branch of the P4 test is met. Deepen D1 did not darken."}
   statements:
     - text: "once when he [Pythagoras] was present at the beating of a puppy, he pitied it and said 'stop, don't keep hitting him, since it is the soul of a man who is dear to me, which I recognized, when I heard it yelping'"
       cites: [{source: S1, locator: "§4.1 (Xenophanes Fr. 7)"}]
@@ -100,7 +101,7 @@ worldview:
       verified_on: 2026-10-19
       note: "SEP's translation. A hostile contemporary's anecdote; scores nothing (P42). Date is the coder's rough placing of Xenophanes (ca. 570–475 BCE, S1 §3)."
   changes_over_life: []
-  coder_notes: "Coder's call, following the Socrates, Hippocrates and Confucius precedents: no text of his own exists (S1 §3), so all worldview fields rest on reports and stay below threshold or UNKNOWN. SEP notes 'recent scholarship' has challenged the consensus view (opening, §5); the record follows the consensus SEP sets out."
+  coder_notes: "Deepen D1 (2026-10-24). P42 path (Confucius / Hippocrates): no authentic own words → keep A/B/C/primary BELOW. SEP Pythagoras revision date unchanged (5 Feb 2024). Attribution debate documented: Riedweg 2005 (books) rejected by Huffman 2008a; Zhmud challenges Burkert consensus on math/cosmos but still supplies no own text. Pseudo-Pythagorean corpus and Golden Verses are not his. Did not use P49 to lift A from acusmata reconstructions (unlike Confucius Tian D1) — brief required honest BELOW. Chart unplotted. No fallacy_catalog."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -135,12 +136,16 @@ collaborators:
 review:
   roster_status_reason: {value: "Core in v8 (F 4); v7 kept him core despite debated historicity (OPEN_DECISIONS R6 note).", certainty: 0.7, cites: [{source: S2, locator: "roster.csv, rank 125"}], how_known: "Study roster."}
   controversies:
-    - {value: "Whether he was a mathematician or cosmologist at all; recent scholarship challenges the consensus", certainty: 0.7, cites: [{source: S1, locator: "opening; §5"}], how_known: "SEP."}
-    - {value: "Forged treatises in his name and the later 'semi-divine' image", certainty: 0.7, cites: [{source: S1, locator: "opening; §3"}], how_known: "SEP."}
+    - {value: "Whether he was a mathematician or cosmologist at all; Zhmud and others challenge the Burkert/Huffman consensus that he was mainly a religious/way-of-life figure", certainty: 0.7, cites: [{source: S1, locator: "opening; §5"}, {source: S4, locator: "§2–3"}], how_known: "SEP Pythagoras and Pythagoreanism."}
+    - {value: "Forged treatises in his name, Golden Verses compilation, and the later 'semi-divine' Neopythagorean image", certainty: 0.7, cites: [{source: S1, locator: "opening; §3"}, {source: S4, locator: "§4.2"}], how_known: "SEP."}
+    - {value: "Riedweg (2005) argued he wrote books; Huffman (2008a) rejects — consensus remains that he wrote nothing", certainty: 0.7, cites: [{source: S1, locator: "§3"}, {source: S3, locator: "Life ('No authentic writings… have survived')"}], how_known: "SEP; Wikipedia."}
   data_quality_flags:
-    - "Single source (SEP); every worldview item is doxography."
+    - "Every worldview item is doxography / reported speech (P42); no authentic text."
+    - "Death year approximate: SEP ca. 490 vs Wikipedia c. 495."
   open_questions:
-    - "Read Burkert (1972) or Huffman's Pythagoreanism entry for any view securely attributable to Pythagoras himself."
+    - "Settled for scoring: he wrote nothing; Riedweg writing claim rejected (Huffman 2008a). Keep BELOW unless a securely attributed own text appears (none expected)."
+    - "Optional deeper secondary: Burkert Lore and Science (1972) page-check; Zhmud Pythagoras and the Early Pythagoreans (2012) for the challenge to Burkert — still will not yield own words."
+    - "Philolaus / Archytas are separate roster candidates if/when collected; do not back-score Pythagoras from their fragments."
 
 sources:
   - id: S1
@@ -149,8 +154,9 @@ sources:
     author: "Carl Huffman"
     citation: "Huffman, Carl. \"Pythagoras.\" Stanford Encyclopedia of Philosophy (first published 23 February 2005; substantive revision 5 February 2024). https://plato.stanford.edu/entries/pythagoras/"
     url: "https://plato.stanford.edu/entries/pythagoras/"
-    accessed: 2026-10-19
-    reliability_note: "Signed scholarly encyclopedia entry; quotes the ancient reports in translation."
+    accessed: 2026-10-24
+    reliability_note: "Signed scholarly encyclopedia entry; quotes ancient reports in translation. Deepen D1: Fall 2026 archive confirms substantive revision still 5 Feb 2024 (no newer update)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, collaborators, review]
   - id: S2
     type: secondary
@@ -160,7 +166,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S3
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "\"Pythagoras.\" Wikipedia. https://en.wikipedia.org/wiki/Pythagoras."
+    url: "https://en.wikipedia.org/wiki/Pythagoras"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio: birth c. 570 Samos agrees with SEP; death c. 495 vs SEP ca. 490 (both approximate). States 'No authentic writings of Pythagoras have survived.' Not used alone to score worldview (P42)."
+    source_quality: "reference entry"
+    used_for: [basics, review]
+  - id: S4
+    type: tertiary
+    kind: encyclopedia
+    author: "Carl Huffman"
+    citation: "Huffman, Carl. \"Pythagoreanism.\" Stanford Encyclopedia of Philosophy (first published 29 March 2006; substantive revision 5 March 2024). https://plato.stanford.edu/entries/pythagoreanism/"
+    url: "https://plato.stanford.edu/entries/pythagoreanism/"
+    accessed: 2026-10-24
+    reliability_note: "Companion SEP entry: Pythagoras vs so-called Pythagoreans (Philolaus, Archytas); Neopythagorean forgeries; who counts as Pythagorean. Confirms no authentic Pythagoras text; mathematical cosmology belongs mainly to later Pythagoreans."
+    source_quality: "reference entry"
+    used_for: [worldview, review, collaborators]
 ---
 
 # Pythagoras
@@ -169,15 +196,15 @@ sources:
 
 ## Summary
 
-Pythagoras of Samos (ca. 570–ca. 490 BCE), Greek teacher of the soul's immortality and of a way of life at Croton [S1]. Draft: everything is reported; primary_system and A–C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted.
+Pythagoras of Samos (ca. 570–ca. 490 BCE), Greek teacher of the soul's immortality and of a way of life at Croton [S1; S3]. Deepen D1: he wrote nothing; all evidence is doxography (P42). primary_system and A–C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD; span UNKNOWN (P39); not a scientist (P30). Not plotted. Chart-moving NO.
 
 ## Life and work
 
-Samos, then Croton (c. 530 BCE), then Metapontum [S1].
+Samos, then Croton (c. 530 BCE), then Metapontum [S1; S3].
 
 ## Contribution and impact
 
-Reincarnation doctrine and the Pythagorean way of life [S1].
+Reincarnation doctrine and the Pythagorean way of life [S1]. Mathematical/scientific image is later glorification; Philolaus and Archytas developed the mathematical side [S1; S4].
 
 ## Childhood and education
 
@@ -185,24 +212,26 @@ Not known [S1].
 
 ## Adult working worldview
 
-Known only from reports (Xenophanes, Aristotle's acusmata) [S1].
+Known only from reports (Xenophanes Fr. 7; Aristotle's acusmata; Dicaearchus) [S1]. Pseudo-Pythagorean books and Golden Verses are not his [S1; S4]. Honest BELOW on A/B/C/primary (P42).
 
 ## Heritage (context only)
 
-Greek of Samos [S1].
+Greek of Samos [S1]. Context only.
 
 ## Timing
 
-Undated [S1].
+Undated; first lasting contribution and major_work_period UNKNOWN (P39) [S1].
 
 ## Lane B notes (labeled belief model)
 
-Everything in this section is Lane B: labeled belief, not a finding. A moralized cosmos of numbers [S1].
+Everything in this section is Lane B: labeled belief, not a finding. A moralized cosmos of numbers, known only from reports [S1].
 
 ## Open questions
 
-- Securely attributable views.
+- Optional Burkert / Zhmud page-checks (will not yield own words).
+- Philolaus / Archytas as separate persons if collected.
 
 ## Research log
 
-- 2026-10-19: Read SEP (Huffman).
+- 2026-10-19: Read SEP Pythagoras (Huffman).
+- 2026-10-24: Deepen D1. Re-read SEP Pythagoras (revision still 5 Feb 2024) and SEP Pythagoreanism (5 Mar 2024); Wikipedia EN dual bio. Attribution: Riedweg writing claim rejected; consensus wrote nothing. Kept honest BELOW. Wrote drafts/deepen_pythagoras.md (untracked).
