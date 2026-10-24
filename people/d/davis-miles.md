@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #118 / F4 rank 119). Goals: open Miles (1989) p.411 or in-span interviews on God/spirits; keep UNKNOWN if still secondary-only (ruling V3). Tried Internet Archive borrow copies (milesautobiograp0000davi et al.): access-restricted, download 401; Rosen The Spiritual Muses still HTTP 500. Read in-span: Alex Haley Playboy interview Sept 1962 (S5) — race, music, public persona; no God/religion/spirits. Don DeMicheal Rolling Stone interview 13 Dec 1969 (S6) — music direction, race, rock; no God/religion/spirits. Wikipedia EN (S4, P50): birth/death align Britannica; brief Catholic elementary; gospel as early taste; funeral St. Peter's Lutheran 1991 (after span, practice). Secondary leads unchanged (Tingen S3; Rosen search-snippet p.411; Hollowverse cites autobiography Islam/per se — still unread book). P47 on S1–S6. primary/A–E/mid stay UNKNOWN under V3. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): S3 (Tingen, a music journalist's book) kind 'scholarly book' -> other. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): DV4, Tingen's Miles Beyond ch. 1 recorded as S3, an openable secondary quotation of Miles p. 411 (book still unread); ruling V3 (v8's call on the auditor's advice): primary_system stays UNKNOWN. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 119). Basics from Britannica (Britannica Editors, 18 October 2026). No statement of his on God, religion or nature read: the autobiography Miles (1989) was not available, and the one article quoting its religion passage could not be opened. Not a scientist (P30). primary_system, A–E and mid_basin UNKNOWN. Span 1949–1970 (0.5). Not plotted. Draft, not reviewed."}
@@ -32,10 +33,10 @@ identity:
 
 basics:
   birth:
-    date: {value: "1926-05-26", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Born)"}], how_known: "Britannica."}
+    date: {value: "1926-05-26", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Born)"}, {source: S4, locator: "Infobox / Early life"}], how_known: "Britannica and Wikipedia EN agree (P50)."}
     place: {value: "Alton, Illinois", modern_name: "Alton, Illinois, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Born)"}], how_known: "Britannica."}
   death:
-    date: {value: "1991-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Died)"}], how_known: "Britannica."}
+    date: {value: "1991-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Died)"}, {source: S4, locator: "Infobox / Death"}], how_known: "Britannica and Wikipedia EN agree (P50); pneumonia, respiratory failure and stroke."}
     place: {value: "Santa Monica, California", modern_name: "Santa Monica, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance' (Died)"}], how_known: "Britannica; pneumonia, respiratory failure and stroke (S1, 'Personal Life')."}
   first_lasting_contribution_year: {value: 1949, certainty: 0.7, cites: [{source: S1, locator: "'Cool jazz and modal jazz' ¶1"}], how_known: "The nonet recordings 'originally released as singles (1949–50)', later Birth of the Cool (1957); dated by first release, range start (P12, P30)."}
   era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "'Cool jazz and modal jazz' ¶1"}], how_known: "1949 (P2); one year before the edge."}
@@ -71,8 +72,9 @@ childhood:
     - {value: "Mother: Cleota Henry Davis, an accomplished musician", certainty: 0.7, cites: [{source: S1, locator: "'Starting out' ¶1"}], how_known: "Britannica."}
   household_circumstances: {value: "Comfortable, prosperous professional family in East St. Louis, Illinois", certainty: 0.7, cites: [{source: S1, locator: "'Starting out' ¶1"}], how_known: "Britannica: 'his comfortable upbringing'."}
   schooling:
+    - {value: "Brief Catholic elementary school before John Robinson Elementary (all-black), East St. Louis", stage: "elementary school", run_by: "religious body", certainty: 0.5, cites: [{source: S4, locator: "Early life"}], how_known: "Wikipedia EN; duration not stated. Context only — not a worldview code."}
     - {value: "Violin lessons from age 10 (encouraged by his mother); trumpet from his early teens", stage: tutor, run_by: family, certainty: 0.5, cites: [{source: S1, locator: "'Starting out' ¶1"}], how_known: "Britannica; teacher not named, operator the coder's reading."}
-    - {value: "Institute of Musical Art (now the Juilliard School), New York; dropped out", stage: university, run_by: private, years: "1944–1945", certainty: 0.7, cites: [{source: S1, locator: "'Starting out' ¶2"}], how_known: "Britannica."}
+    - {value: "Institute of Musical Art (now the Juilliard School), New York; dropped out", stage: university, run_by: private, years: "1944–1945", certainty: 0.7, cites: [{source: S1, locator: "'Starting out' ¶2"}, {source: S4, locator: "1944–1948: New York City"}], how_known: "Britannica; Wikipedia EN concurs."}
   early_mathematics: {value: TODO}
   early_geometric_style_reasoning: {value: TODO}
   early_science_exposure: []
@@ -87,21 +89,22 @@ worldview:
   working_years: {value: "1949–1970", certainty: 0.5, cites: [{source: S1, locator: "'Cool jazz and modal jazz'; 'Free jazz and fusion'"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing read."}
-  primary_system: {value: UNKNOWN, how_known: "No statement of his on God or religion read in his own text. Lead: Miles (1989, with Quincy Troupe), p. 411: 'But I do believe in being spiritual and do believe in spirits. I always have. I believe my mother and father come to visit me…' Known from two secondary quotations: Lauren Coyle Rosen's article in The Spiritual Muses (search extract, gives p. 411; the page returns HTTP 500) and Paul Tingen, Miles Beyond ch. 1 (S3, opens; same words, no page), which also reports 'mystery and the supernatural' from the autobiography and Jo Gelbard's 'He was not one for God'. The book itself is unread; the words are after the span (1989, P1 cap 0.5) and from an interview-built autobiography (P42, P43). Ruling V3 (v8's call on the auditor's advice, batch V audit): secondary quotations alone do not move the value, so UNKNOWN stands until p. 411 is read in the book."}
+  primary_system: {value: UNKNOWN, how_known: "Deepen D1: still no own-voice text of Miles (1989) p. 411 (Internet Archive copies access-restricted, download 401; Rosen Spiritual Muses still HTTP 500). In-span interviews read — Playboy Sept 1962 (S5) and Rolling Stone 13 Dec 1969 (S6) — contain no statement on God, religion, or spirits (race, music, public persona). Secondary lead unchanged: p. 411 'I do believe in being spiritual and do believe in spirits…' (Rosen search-snippet with page; Tingen S3 without page); also Hollowverse citing the autobiography on not practicing a religion 'per se' / Islam affinity — book unread. After the span (1989, P1 cap 0.5); interview-built with Troupe (P42, P43). Ruling V3 stands: secondary quotations alone do not move the value → UNKNOWN until the book page is read."}
   secondary_system: {value: UNKNOWN, how_known: "One system (P29)."}
   candidate_codes_considered:
-    - {code: ANIM, reason: "Not assessed: the 'spirits' lead (Miles p. 411) is known only from secondary quotations (Rosen; Tingen, S3); ruling V3."}
-    - {code: AGNOS, reason: "Not assessed: no statement read."}
+    - {code: ANIM, reason: "Named lead only: 'spirits' / deceased musicians visiting (Miles p. 411) still secondary-only (Rosen snippet; Tingen S3); V3 — not assessed until book read. After span (P1)."}
+    - {code: AGNOS, reason: "Named lead only: Hollowverse quotes autobiography 'I don't really practice a religion, per se' — secondary, book unread; V3."}
+    - {code: ATHE, reason: "Rejected: in-span interviews (S5, S6) are silent on God; silence ≠ atheism (P20)."}
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "Nothing read (P19)."}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30); nothing read (P16, P19)."}
-    C_ledger: {value: UNKNOWN, how_known: "Nothing read (P19)."}
-    D_authority: {value: UNKNOWN, how_known: "Nothing read (P19)."}
-    E_scope: {value: UNKNOWN, how_known: "Nothing read (P7, P19)."}
+    A_locus: {value: UNKNOWN, how_known: "In-span Playboy 1962 (S5) and Rolling Stone 1969 (S6) have no God/locus claim. Autobiography p. 411 spirits / non-practice of religion remain secondary-only under V3 (P19). After span if ever scored (P1)."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30). No P16 nature-order profession in sources read; musician (P19)."}
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on reward/punishment or afterlife deserts in own text read (P19). Spirits lead is secondary-only (V3)."}
+    D_authority: {value: UNKNOWN, how_known: "Nothing on revelation against observation in own voice read (P19)."}
+    E_scope: {value: UNKNOWN, how_known: "Nothing on favour for a group in the world's order read (P7, P19)."}
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN, which takes precedence (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Span 1949 (nonet singles, later Birth of the Cool) to 1970 (Bitches Brew); dated by first release. Davis's later work (1980s) is not listed as lasting by S1 ('critics dismissed much of the music Davis released after Bitches Brew'). Lead for the worldview: Miles: The Autobiography (1989, with Quincy Troupe), pp. 148–149 and 411, on spirituality and 'spirits'; written with Troupe from interviews, so if read it may fall under P43's disputed-wording cap and P1 (after the span). Not plotted."
+  coder_notes: "Deepen D1 2026-10-24: Miles (1989) p.411 still unread (IA 401; Rosen 500). In-span Haley Playboy 1962 and DeMicheal Rolling Stone 1969 read — silent on God/spirits. V3 → primary/A–E/mid UNKNOWN. Not a scientist (P30). Chart-moving NO. Not plotted."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -114,8 +117,8 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1949–1970", certainty: 0.5, cites: [{source: S1, locator: "'Cool jazz and modal jazz' ¶1; 'Free jazz and fusion' ¶3"}], how_known: "From the nonet singles (1949) to Bitches Brew (1970) (P12, P30). Coder's call on which late album ends the span."}
   age_at_first_lasting_contribution: {value: 23, certainty: 0.7, cites: [{source: S1, locator: "'Miles Davis at a Glance'; 'Cool jazz and modal jazz' ¶1"}], how_known: "1949 − 1926 = 23 (P30)."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "Nothing read."}
-  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S1, locator: "whole"}], how_known: "None in the source read."}
+  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type own-voice text read. Autobiography leads are after the span (1989) and secondary-only under V3."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", certainty: 0.5, cites: [{source: S5, locator: "whole"}, {source: S6, locator: "whole"}], how_known: "In-span interviews silent on God/spirits; autobiography unread (V3)."}
   worldview_during_major_work: {value: TODO}
 
 lane_b:
@@ -140,9 +143,12 @@ review:
   controversies:
     - {value: "Heroin addiction in the early 1950s ('a four-year horror show')", certainty: 0.7, cites: [{source: S1, locator: "'Cool jazz and modal jazz' ¶2"}], how_known: "Britannica."}
   data_quality_flags:
-    - "Single tertiary source; no worldview evidence read."
+    - "Ruling V3: Miles (1989) p.411 still unread in primary; secondary quotations (Rosen, Tingen) do not move values."
+    - "Internet Archive borrow copies access-restricted (download 401) this pass; Rosen Spiritual Muses still HTTP 500."
+    - "In-span interviews (Playboy 1962; Rolling Stone 1969) silent on God/spirits — absence ≠ ATHE/NONE (P20)."
   open_questions:
-    - "Miles: The Autobiography (1989), pp. 148–149 and 411, on religion and spirits."
+    - "Read Miles: The Autobiography (1989) p.411 (and pp.148–149 if present) in a primary copy; then reassess ANIM/AGNOS under P1/P42/P43."
+    - "Any other in-span interview (DownBeat, radio) with explicit God/spirits talk (low prior after S5/S6)."
 
 sources:
   - id: S1
@@ -153,6 +159,7 @@ sources:
     url: "https://www.britannica.com/biography/Miles-Davis"
     accessed: 2026-10-19
     reliability_note: "Editors' article; 'at a Glance' box and body sections cited; question boxes not cited (P26)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, timing, institutions, collaborators, review]
   - id: S3
     type: secondary
@@ -161,7 +168,8 @@ sources:
     citation: "Tingen, Paul. Miles Beyond: The Electric Explorations of Miles Davis, 1967–1991 (New York: Billboard Books, 2001), ch. 1. Author's web copy: https://tingen.org/miles-beyond-chapter-1/"
     url: "https://tingen.org/miles-beyond-chapter-1/"
     accessed: 2026-10-19
-    reliability_note: "Music journalist's book chapter on the author's site (© 2001); quotes the autobiography without page numbers (secondary quotation). Used only for the worldview lead; nothing scored on it."
+    reliability_note: "Music journalist's book chapter on the author's site (© 2001); quotes the autobiography without page numbers (secondary quotation). Used only for the worldview lead; nothing scored on it (ruling V3)."
+    source_quality: "other"
     used_for: [worldview]
   - id: S2
     type: secondary
@@ -171,7 +179,39 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S4
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Miles Davis.\" English Wikipedia. https://en.wikipedia.org/wiki/Miles_Davis. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Miles_Davis"
+    accessed: 2026-10-24
+    reliability_note: "Crowdsourced; dual bio (P50) against Britannica. Used for birth/death alignment, brief Catholic elementary, funeral location (after span)."
+    source_quality: "reference entry"
+    used_for: [identity, basics, childhood, heritage, review]
+  - id: S5
+    type: primary
+    kind: "published work by the subject"
+    author: "Miles Davis; interviewed by Alex Haley"
+    citation: "Haley, Alex. \"Miles Davis: a candid conversation with the jazz world's premier iconoclast.\" Playboy (September 1962). Full text read via plosin.com / erenkrantz mirrors, 2026-10-24."
+    url: "https://www.plosin.com/beatbegins/archive/miles.htm"
+    accessed: 2026-10-24
+    reliability_note: "Contemporaneous in-span interview (1962 within 1949–1970). Own spoken words as printed; mirrors of the published Playboy text. No God/religion/spirits content. Kind = published work by the subject; source_quality newspaper interview (P47)."
+    source_quality: "newspaper interview"
+    used_for: [worldview, review]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "Miles Davis; interviewed by Don DeMicheal"
+    citation: "DeMicheal, Don. \"Miles Davis: The Rolling Stone Interview.\" Rolling Stone (13 December 1969). Full text read via beatpatrol.wordpress.com republication, 2026-10-24."
+    url: "https://beatpatrol.wordpress.com/2008/09/23/don-demicheal-miles-davis-the-rolling-stone-interview-1969/"
+    accessed: 2026-10-24
+    reliability_note: "Contemporaneous in-span interview (1969 within span). Own spoken words as printed; fan-site republication of the RS text. Music, race, rock; no God/religion/spirits content. Kind = published work by the subject; source_quality newspaper interview (P47)."
+    source_quality: "newspaper interview"
+    used_for: [worldview, review]
+
 ---
 
 # Miles Davis
@@ -180,7 +220,7 @@ sources:
 
 ## Summary
 
-Miles Davis (1926–1991), American jazz trumpeter, bandleader and composer [S1]. Draft: primary_system and every axis UNKNOWN; mid_basin UNKNOWN. Not plotted.
+Miles Davis (1926–1991), American jazz trumpeter, bandleader and composer [S1; S4]. Deepen D1: primary_system and every axis UNKNOWN (ruling V3; Miles 1989 unread); mid_basin UNKNOWN. Chart-moving NO. Not plotted.
 
 ## Life and work
 
@@ -196,7 +236,7 @@ Son of a dental surgeon and a musician mother; Juilliard 1944–45 [S1].
 
 ## Adult working worldview
 
-Nothing read; lead in Miles (1989) [S1].
+In-span Playboy 1962 [S5] and Rolling Stone 1969 [S6] silent on God/spirits. Miles (1989) p.411 still unread (V3); secondary lead only [S3].
 
 ## Heritage (context only)
 
@@ -212,9 +252,10 @@ Everything in this section is Lane B: labeled belief, not a finding. Not assesse
 
 ## Open questions
 
-- Miles (1989), pp. 148–149, 411 (p. 411 quoted by Rosen and Tingen [S3]; book unread).
+- Miles (1989) p.411 in a primary copy (V3 blocker); other in-span interviews if any.
 
 ## Research log
 
 - 2026-10-19: Read Britannica; The Spiritual Muses article (Rosen) failed to open (HTTP 500 and curl).
 - 2026-10-19 (batch V audit fixes): read Tingen, Miles Beyond ch. 1 (tingen.org) for the p. 411 wording [S3].
+- 2026-10-24: Deepen D1. IA Miles autobiography download 401; Rosen still 500. Read Playboy 1962 [S5], Rolling Stone 1969 [S6], Wikipedia EN [S4]. Values stay UNKNOWN under V3. Chart-moving NO.
