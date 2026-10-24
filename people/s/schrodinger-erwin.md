@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 9
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Bernstein), MacTutor and the Nobel biography. Worldview from the epilogue of What is Life? (1944) and Mind and Matter (1958), read in two web transcriptions of the Cambridge edition, plus Britannica on My View of the World. Coded HINDU at 0.5 (stub system; PANT, IDEAL and PANENT named). A 4 (0.7), B 4 (1.0), C 4 (0.5), D 3 (0.5), E 4 (0.7). mid_basin false. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #47: MacTutor's 'Although he was a Catholic' is about the adult in 1933, so family_religion and religious_heritage_by_birth are now TODO (were 'Catholic, per MacTutor' at 0.5); the adult nominal affiliation keeps the MacTutor statement at 0.7 (one reliable source, no dispute). Finding #45: region_of_work certainty 1.0 → 0.7, value unchanged (Western Europe, where wave mechanics was done); the 1935 cat paper (Oxford) and What is Life? (Dublin) were Northern Europe, now an alternative. region_of_birth stays 1.0 (Vienna, documented). Leading cut marked with [...] in one statement. Worldview scores unchanged. Not reviewed."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1926 → 1926–1944; worldview.working_years 1910–1961 → 1926–1944, equal to the span (P30 addendum f); lio_views_relative_to_major_work set to 'during major work'; 1 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 1 value the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #24, F5 rank 24). P47 source_quality on every source. Need was B single source (hollow ring). New: S7 Cambridge Canto 1992 CUP PDF (What is Life? + Mind and Matter + Autobiographical Sketches; epilogue wording verified against scholarly edition); S8 Walter Moore Schrödinger: Life and Thought (1989) preview pages (Evangelical baptism; Catholic father / Lutheran mother; nominally Protestant; 'learned many things, but not religion'); S9 Dronamraju Genetics 153:1071 (1999) Perspectives article restating the epilogue's two premises and law-pole conclusion. B_cause: support single → corroborated (S7+S9); certainty 0.7 → 1.0 (CODING_GUIDE §7 unofficial-copy cap lifted by CUP verification; written_profession). A_locus stays 4 @ 0.7 (alt 3), support corroborated (S4+S5+S7). Family religion / baptism / heritage TODOs filled from Moore. Nominal affiliation: Evangelical baptism / nominally Protestant (Moore); MacTutor 'Catholic' 1933 flagged as disputed. Chart-moving YES: hollow → filled (A and B both corroborated; darkness still dark @ min 0.7). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: schrodinger-erwin
@@ -70,8 +71,8 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of wave mechanics.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: TODO, note: "Not settled from the sources read. MacTutor's 'Although he was a Catholic' (S2, Biography) is about the adult in 1933, not his family. A Catholic father and a Lutheran mother are commonly reported but were not found in S1–S5; needs the Autobiographical Sketches in full or Moore's biography."}
-  family_religious_practice: {value: TODO}
+  family_religion: {value: "Father Catholic (not practising); mother Lutheran / Evangelical AB (convert at marriage); household not devout", certainty: 0.7, cites: [{source: S8, locator: "pp. 11–12 (Lutheran Stadtkirche marriage registry; Rudolf not a practising Catholic)"}, {source: S7, locator: "Autobiographical Sketches ('turning against religion… learned… from his father' via Moore paraphrase; own 'turning against religion')"}], how_known: "Moore 1989 from marriage registry and reconstruction; mother mildly religious per Moore. Named alternative: MacTutor adult-Catholic line does not speak to family."}
+  family_religious_practice: {value: "Formal Lutheran instruction at Gymnasium; indifferent to organized religion from youth", certainty: 0.7, cites: [{source: S8, locator: "p. ~13 ('From this I learned many things, but not religion')"}, {source: S7, locator: "Autobiographical Sketches (turning against religion)"}], how_known: "Moore quotes his own remark on Lutheran afternoon instruction; Auto Sketches state turning against religion."}
   parents_and_household:
     - {value: "Father, Rudolf Schrödinger, ran a small linoleum factory and studied botany and Italian painting", name: "Rudolf Schrödinger", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraphs 1–2"}], how_known: "Two sources."}
     - {value: "Mother, Emily Bauer, half English, daughter of the chemist Alexander Bauer", name: "Emily Bauer", role: mother, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "first paragraph"}], how_known: "Two sources."}
@@ -92,12 +93,13 @@ worldview:
   unit: "adult working worldview"
   working_years: {value: "1926–1944", certainty: 0.7, cites: [{source: S1, locator: "Zürich paragraph (1926); opening paragraph and later life (What is Life?, 1944)"}, {source: S3, locator: "paragraph 5"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1910–1961: Doctorate to death."}
   nominal_affiliations:
-    - {value: "Catholic as an adult, per MacTutor ('Although he was a Catholic', 1933); no church practice reported", role: other, certainty: 0.7, cites: [{source: S2, locator: "Biography (1933)"}], how_known: "One reliable source on the adult, so 0.7. It says nothing about his family's church (see childhood.family_religion)."}
+    - {value: "Baptized Evangelical (Protestant); Moore: nominally a Protestant despite Catholic paternal background; no adult church practice reported", role: other, certainty: 0.7, cites: [{source: S8, locator: "pp. 11–12 (home Evangelical baptism 17 Oct 1887; 'nominally a Protestant')"}], how_known: "Moore from baptism/registry evidence."}
+    - {value: "MacTutor calls him a Catholic in the 1933 Oxford narrative ('Although he was a Catholic'); disputed against Moore's Protestant baptism and Wikipedia/Moore burial note (not Catholic)", role: other, certainty: 0.5, cites: [{source: S2, locator: "Biography (1933)"}], how_known: "One tertiary line; conflicts with Moore baptism. Contested (P25).", alternatives: [{value: "not Catholic as adult", cites: [{source: S8, locator: "pp. 11–12"}], note: "Moore Evangelical baptism / nominally Protestant."}]}
   self_described_science_religion_relation:
     value: "His metaphysics of one mind is 'religion, not a science -- a religion, however, not opposed to science, but supported by what disinterested scientific research has brought to the fore' (Mind and Matter, 1958). In What is Life? he presents the conclusion that 'I' control the atoms 'according to the Laws of Nature' as the closest a biologist can get to proving God and immortality."
     certainty: 0.7
     cites: [{source: S5, locator: "Mind and Matter ch. 4, p. 135"}, {source: S4, locator: "Epilogue, pp. 86–87"}]
-    how_known: "His published books, read in unofficial web transcriptions, so 0.7."
+    how_known: "His published books; wording checked against Cambridge Canto 1992 (S7). Certainty 0.7 (synthesis spans two works)."
   primary_system:
     value: HINDU
     basis: written_profession
@@ -116,36 +118,41 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "Epilogue, p. 87"}, {source: S5, locator: "Mind and Matter ch. 4, p. 129"}]
-      how_known: "Published book; capped at 0.7 because 3 is named below."
+      support: corroborated
+      cites: [{source: S7, locator: "What is Life? Epilogue, p. 87 (ATHMAN = BRAHMAN; 'Hence I am God Almighty')"}, {source: S5, locator: "Mind and Matter ch. 4, p. 129"}, {source: S4, locator: "Epilogue, p. 87"}]
+      how_known: "Published books; CUP Canto 1992 verifies epilogue wording (S7). Capped at 0.7 because 3 is named below."
       rationale: "At the immanent pole: the divine is the one self that every conscious mind is, 'the personal self equals the omnipresent, all-comprehending eternal self'; in Christian terms 'Hence I am God Almighty'. No transcendent person. Named alternative 3: the one mind is timeless and 'indestructible' (S5, p. 135), which on a panentheist reading exceeds the world."
     B_cause:
       value: 4
       basis: written_profession
-      certainty: 0.7
-      cites: [{source: S4, locator: "Epilogue, p. 86"}]
-      how_known: "Published book, his own words, explicit. Certainty 0.7 under CODING_GUIDE §7: the epilogue was read only in an unofficial web copy (rapeutation.com, S4), and no authoritative edition could be reached to check the wording (the only unrestricted Internet Archive copies are re-uploaded PDFs, not library scans)."
+      certainty: 1.0
+      support: corroborated
+      cites: [{source: S7, locator: "What is Life? Epilogue 'On Determinism and Free Will', p. 86 (Canto 1992)"}, {source: S9, locator: "Epilogue section (restates premises (a)/(b) and law-pole conclusion)"}, {source: S4, locator: "Epilogue, p. 86 (unofficial copy; wording matches S7)"}]
+      how_known: "Published book, his own words, explicit. Wording verified against Cambridge University Press Canto 1992 (S7); CODING_GUIDE §7 unofficial-copy cap no longer applies. Dronamraju 1999 (S9) independently restates the same two premises and conclusion → corroborated (P48)."
       rationale: "Scored on his account of nature (P6). At the law pole: 'My body functions as a pure mechanism according to the Laws of Nature'; bodily events are 'if not strictly deterministic at any rate statistico-deterministic', and 'quantum indeterminacy plays no biologically relevant role in them'. Even the self's agency controls the atoms 'according to the Laws of Nature'. No exception."
     C_ledger:
       value: 4
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S4, locator: "Epilogue, pp. 88–90"}]
-      how_known: "Published book, but it speaks to the ledger only indirectly (no statement on reward or punishment), so 0.5."
+      support: single
+      cites: [{source: S7, locator: "What is Life? Epilogue, pp. 88–90"}]
+      how_known: "Published book (CUP-verified), but it speaks to the ledger only indirectly (no statement on reward or punishment), so 0.5."
       rationale: "Impersonal or none: there is no judged individual soul; separate souls are an 'invention' and 'gross superstitions'; 'In no case is there a loss of personal existence to deplore. Nor will there ever be.' Mocking whether 'women, or only men, have souls' is a moral-community point and is scored here, not on E (P7)."
     D_authority:
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S5, locator: "Mind and Matter ch. 4, p. 135"}, {source: S1, locator: "later life"}]
-      how_known: "Published book through one transcription only, and the D reading is indirect, so 0.5."
+      support: corroborated
+      cites: [{source: S5, locator: "Mind and Matter ch. 4, p. 135"}, {source: S7, locator: "Mind and Matter ch. 4 / Science and Religion"}, {source: S1, locator: "later life"}]
+      how_known: "Published book; CUP verifies Mind and Matter passages (S7). D reading still somewhat indirect, so 0.5."
       rationale: "Leans to reason. No revelation outranks observation; his religion is 'supported by what disinterested scientific research has brought to the fore'. The stated limited exception: 'incontrovertible direct experience' and the mystics' testimony carry weight beside science, and Britannica reports 'a skepticism toward the relevance of science as a unique tool' for ultimate questions."
     E_scope:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "Epilogue, pp. 86–87"}]
-      how_known: "Published book; it addresses one order for all minds and bodies, but not group favour in events directly, so 0.7."
+      support: single
+      cites: [{source: S7, locator: "What is Life? Epilogue, pp. 86–87"}]
+      how_known: "Published book (CUP-verified); addresses one order for all minds and bodies, but not group favour in events directly, so 0.7."
       rationale: "Scored on the world's order (P7). Same rules for all: every body is a mechanism under the Laws of Nature, and the self is 'every conscious mind that has ever said or felt 'I''. No favour or exception for a group in events."
   mid_basin:
     value: false
@@ -158,64 +165,64 @@ worldview:
       date: "1944"
       axes: [B_cause, E_scope]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
-      note: "Unofficial web transcription of the Cambridge edition; page from the edition's pagination as cited in S5."
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Wording matches Cambridge Canto 1992 (S7, p. 86); earlier read in unofficial transcription (S4)."
     - text: "[...] am the person, if any, who controls the 'motion of the atoms' according to the Laws of Nature."
       cites: [{source: S4, locator: "Epilogue, p. 86–87"}]
       date: "1944"
       context: "The subject is 'I – I in the widest meaning of the word, that is to say, every conscious mind that has ever said or felt 'I''."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
     - text: "In Christian terminology to say: 'Hence I am God Almighty' sounds both blasphemous and lunatic."
       cites: [{source: S4, locator: "Epilogue, p. 87"}]
       date: "1944"
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
     - text: "From the early great Upanishads the recognition ATHMAN = BRAHMAN (the personal self equals the omnipresent, all-comprehending eternal self) was in Indian thought considered, far from being blasphemous, to represent the quintessence of deepest insight into the happenings of the world."
       cites: [{source: S5, locator: "What is Life?, Epilogue, p. 87, paragraph 4"}, {source: S4, locator: "Epilogue"}]
       date: "1944"
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
       note: "S4 has an OCR insertion ('upheld in') before the parenthesis; S5 matches the wording given here."
     - text: "In no case is there a loss of personal existence to deplore. Nor will there ever be."
       cites: [{source: S4, locator: "Epilogue, p. 90"}]
       date: "1944"
       axes: [C_ledger]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
       note: "Page inferred from the epilogue's span (pp. 86–90); not checked against the book."
     - text: "Their multiplicity is only apparent, in truth there is only one mind."
       cites: [{source: S5, locator: "Mind and Matter ch. 4, p. 129, paragraph 2"}]
       date: "1958"
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
     - text: "I am now talking religion, not a science -- a religion, however, not opposed to science, but supported by what disinterested scientific research has brought to the fore."
       cites: [{source: S5, locator: "Mind and Matter ch. 4, p. 135, paragraph 1"}]
       date: "1958"
       axes: [D_authority]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
       note: "The transcription writes the dash as '--'."
   changes_over_life: []
-  coder_notes: "HINDU (primary) and the alternatives IDEAL, PANENT are stub system files: flagged, not sourced in this run. PANT is sourced. Both transcriptions (S4, S5) are unofficial websites; the passages used agree between them where both have them. The strangebeautiful.com scan of the Cambridge edition timed out twice. My View of the World (1961) was not read."
+  coder_notes: "Deepen D1: B corroborated and certainty restored to 1.0 after CUP Canto 1992 verification (S7) + Dronamraju restatement (S9). HINDU (primary) and alternatives IDEAL, PANENT remain stub system files (flag). PANT still named alternative. Moore (S8): Evangelical baptism, nominally Protestant; private 'atheist' claim in diaries (Moore intro) not used to flip primary_system — published Vedanta profession stands; ATHE not coded. Auto Sketches: 'turning against religion'. My View of the World (1961) still unread beyond secondary report. Sexual-abuse historiography (Moore; Gronau & Gronau 2026) logged only as open, not coded."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Viennese; father's family Bavarian in origin, mother half English", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraph 2"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: TODO, note: "MacTutor's 'a Catholic' (1933) describes the adult, not his birth family; see childhood.family_religion."}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Catholic father (non-practising); Lutheran / Evangelical mother; baptized Evangelical", certainty: 0.7, cites: [{source: S8, locator: "pp. 11–12"}], how_known: "Moore. Heritage only — never a worldview code."}
+  baptism_or_initiation: {value: "Baptized Evangelical (Protestant) at grandfather Alexander Bauer's home, 17 October 1887; Evangelical minister; godfather Bauer; no godmother", certainty: 0.7, cites: [{source: S8, locator: "p. 12"}], how_known: "Moore from baptism circumstances. Heritage/initiation only."}
+  childhood_catechism: {value: "Lutheran afternoon instruction at Gymnasium; tutor bible stories; own attitude skeptical ('do you really believe that?')", certainty: 0.7, cites: [{source: S8, locator: "p. ~13"}], how_known: "Moore."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -223,7 +230,7 @@ timing:
   age_at_first_lasting_contribution: {value: 39, certainty: 0.7, cites: [{source: S3, locator: "paragraph 5 ('during the first half of 1926')"}], how_known: "Born August 1887; the wave equation in the first half of 1926, so 38. Britannica says 'at the age of 39' (flag). P30 (rule 5): 1926 − 1887 = 39, with no month adjustment; was 38 until the P30 age sweep (2026-10-02)."}
   first_evidence_of_lio_type_views: {value: "What is Life? epilogue: the body as a mechanism under the Laws of Nature, and ATHMAN = BRAHMAN", year: 1944, certainty: 0.7, cites: [{source: S4, locator: "Epilogue, pp. 86–87"}], how_known: "Earliest verified statement in the sources read. An earlier date (the first essay of My View of the World is often dated 1925) was not checked; see open questions."}
   lio_views_relative_to_major_work: {value: "during major work", rationale: "Verified statements are from 1944 (the What is Life? epilogue, the last listed item) and 1958; 1944 is inside the 1926–1944 span (span check 2026-10-02; it was 'unclear' against the old span of 1926 only). If an earlier essay (often dated 1925, not checked) holds the same view, the answer would be 'before major work'.", certainty: 0.5, cites: [{source: S4, locator: "Epilogue"}, {source: S1, locator: "later life"}], how_known: "Coder's reading of dates."}
-  worldview_during_major_work: {value: TODO}
+  worldview_during_major_work: {value: "Vedanta / one-mind (ATHMAN = BRAHMAN); body as mechanism under Laws of Nature (B 4); A 4", certainty: 0.7, cites: [{source: S7, locator: "Epilogue, pp. 86–87"}], how_known: "What is Life? 1944 is inside the 1926–1944 span; Auto Sketches date Schopenhauer/Upanishads interest to ~1918."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -246,12 +253,15 @@ review:
   roster_status_reason: {value: "Core in v7.1 (F 4) and v8 (F 5, all five models).", certainty: 0.7, cites: [{source: S6, locator: "roster.csv, rank 24"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "Family religion: MacTutor's 'Although he was a Catholic' is about the adult in 1933, not his family (lens audit, batch 2). A Catholic father and Lutheran mother are commonly reported but not found in the sources read, so family_religion and religious_heritage_by_birth are TODO."
-    - "Age at the wave equation: Britannica says 39; birth date and 'first half of 1926' give 38."
-    - "S4 and S5 are unofficial transcriptions; S4 has OCR errors (e.g. 'upheld in', a garbled line in the maya passage). Only clean passages are quoted."
+    - "MacTutor 'Although he was a Catholic' (1933) conflicts with Moore Evangelical baptism / nominally Protestant; MacTutor line kept as contested nominal affiliation only."
+    - "Age at the wave equation: Britannica says 39; birth date and 'first half of 1926' give 38; P30 uses 39."
+    - "S4/S5 unofficial transcriptions retained; key passages re-verified against CUP Canto 1992 (S7). S4 OCR quirks noted earlier."
+    - "HINDU / IDEAL / PANENT stub system files (flag)."
+    - "Moore diary 'atheist' claim vs published Vedanta: primary_system stays HINDU from published profession; ATHE not coded."
   open_questions:
-    - "Read My View of the World (1961) and the Autobiographical Sketches, for the 1925 essay and his upbringing."
+    - "Read My View of the World (1961) in full (1925 essay often dated earlier than What is Life?)."
     - "Source the HINDU system file, then retest HINDU against PANT and IDEAL."
+    - "Moore diary pages for the 'atheist' / 'non-believing' remarks in full context (preview only this pass)."
 
 sources:
   - id: S1
@@ -262,6 +272,7 @@ sources:
     url: "https://www.britannica.com/biography/Erwin-Schrodinger"
     accessed: 2026-10-02
     reliability_note: "Signed encyclopedia article by a physicist-writer."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, worldview, timing, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -271,6 +282,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Schrodinger/"
     accessed: 2026-10-02
     reliability_note: "Standard biographical archive; draws on Moore's biography."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, lane_b, collaborators]
   - id: S3
     type: tertiary
@@ -280,6 +292,7 @@ sources:
     url: "https://www.nobelprize.org/prizes/physics/1933/schrodinger/biographical/"
     accessed: 2026-10-02
     reliability_note: "Official biography; paragraphs counted from the top."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, timing, institutions, collaborators]
   - id: S4
     type: primary
@@ -289,7 +302,8 @@ sources:
     citation: "Schrödinger, Erwin. What is Life? The Physical Aspect of the Living Cell. Cambridge University Press, 1944; ch. 7 and Epilogue 'On Determinism and Free Will' (pp. 86–90 in the 1992 Canto edition with Mind and Matter and Autobiographical Sketches). Web transcription at rapeutation.com."
     url: "https://rapeutation.com/cult.whatislife.7.htm"
     accessed: 2026-10-02
-    reliability_note: "Unofficial transcription with some OCR errors; used only for clean passages."
+    reliability_note: "Unofficial transcription with some OCR errors; key passages re-verified against CUP Canto 1992 (S7) on 2026-10-24."
+    source_quality: "unofficial web copy"
     used_for: [worldview, lane_b, collaborators]
   - id: S5
     type: primary
@@ -299,7 +313,8 @@ sources:
     citation: "Schrödinger, Erwin. What is Life? (1944) with Mind and Matter (1958) and Autobiographical Sketches. Cambridge University Press (Canto), 16th printing 2006. Excerpts with page and paragraph locators at advaitism.com ('Latter Day Buddhism')."
     url: "https://www.advaitism.com/latterdaybuddhists/life.html"
     accessed: 2026-10-02
-    reliability_note: "Unofficial excerpt page; gives page and paragraph of the Cambridge edition for each passage."
+    reliability_note: "Unofficial excerpt page; Mind and Matter passages checked against CUP Canto 1992 (S7) where overlapping."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
   - id: S6
     type: secondary
@@ -309,7 +324,41 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S7
+    type: primary
+    kind: "scholarly edition"
+    author: "Erwin Schrödinger"
+    year: 1992
+    citation: "Schrödinger, Erwin. What is Life? The Physical Aspect of the Living Cell, with Mind and Matter and Autobiographical Sketches. Canto ed. Cambridge University Press, 1992 (combined reprint lineage from CUP 1967/1992). PDF read this pass (stafforini mirror of CUP text)."
+    url: "https://pdf.stafforini.com/schrodinger-1992-what-life-mind.pdf"
+    accessed: 2026-10-24
+    reliability_note: "Cambridge University Press Canto edition text; used to verify Epilogue pp. 86–90, Mind and Matter, and Autobiographical Sketches against earlier unofficial copies."
+    source_quality: "primary / own words"
+    used_for: [worldview, childhood, heritage, lane_b]
+  - id: S8
+    type: secondary
+    kind: "scholarly book"
+    author: "Walter Moore"
+    year: 1989
+    citation: "Moore, Walter. Schrödinger: Life and Thought. Cambridge University Press, 1989. Preview pages read this pass (family history, baptism, childhood religion)."
+    url: "https://doi.org/10.1017/cbo9780511600012"
+    accessed: 2026-10-24
+    reliability_note: "Standard scholarly biography; preview only (not full book). Family/baptism from pp. 11–13; intro notes 'claimed to be an atheist' alongside Vedanta symbolism."
+    source_quality: "scholarly edition or monograph"
+    used_for: [childhood, heritage, worldview]
+  - id: S9
+    type: secondary
+    kind: "journal article"
+    author: "Krishna R. Dronamraju"
+    year: 1999
+    citation: "Dronamraju, Krishna R. \"Erwin Schrödinger and the Origins of Molecular Biology.\" Genetics 153 (3): 1071–1076 (1999). https://doi.org/10.1093/genetics/153.3.1071 (Wayback full text)."
+    url: "https://web.archive.org/web/20081012092932/http://www.genetics.org/cgi/content/full/153/3/1071"
+    accessed: 2026-10-24
+    reliability_note: "Genetics Perspectives article; Epilogue section restates Schrödinger's two premises (body as mechanism under laws of nature; directing motions) and law-pole conclusion. Secondary restatement, not a new primary text."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, contribution]
 ---
 
 # Erwin Schrödinger
@@ -318,7 +367,7 @@ sources:
 
 ## Summary
 
-Erwin Schrödinger (1887–1961), Austrian physicist, created wave mechanics in 1926 and shared the 1933 Nobel Prize with Dirac [S1, opening paragraph; S3, paragraph 5]. In What is Life? (1944) and Mind and Matter (1958) he held that the body runs by the laws of nature and that all minds are one eternal self, citing the Upanishads [S4, Epilogue; S5, p. 129]. Coded HINDU at 0.5 (stub system), with PANT, IDEAL and PANENT named; not mid-basin.
+Erwin Schrödinger (1887–1961), Austrian physicist, created wave mechanics in 1926 and shared the 1933 Nobel Prize with Dirac [S1, opening paragraph; S3, paragraph 5]. In What is Life? (1944) and Mind and Matter (1958) he held that the body runs by the laws of nature and that all minds are one eternal self, citing the Upanishads [S7, Epilogue; S5, p. 129]. Deepen D1: A 4 @ 0.7 corroborated; B 4 @ 1.0 corroborated (CUP-verified + Dronamraju); HINDU at 0.5 (stub), PANT/IDEAL/PANENT named; mid_basin false. Chart: dark filled (was hollow).
 
 ## Life and work
 
@@ -330,11 +379,11 @@ The Schrödinger equation (1926), the cat thought experiment (1935) and What is 
 
 ## Childhood and education
 
-Only child of Rudolf Schrödinger and Emily Bauer; English and German were spoken at home [S2, Biography]. He loved mathematics, physics and "the strict logic of the ancient grammars" [S2, Biography]. MacTutor calls the adult a Catholic (1933); his family's church is not settled from the sources read [S2, Biography].
+Only child of Rudolf Schrödinger and Emily Bauer; English and German were spoken at home [S2, Biography]. He loved mathematics, physics and "the strict logic of the ancient grammars" [S2, Biography]. Father Catholic (non-practising), mother Lutheran/Evangelical; baptized Evangelical 17 Oct 1887; nominally Protestant [S8, pp. 11–12]. Lutheran Gymnasium instruction: "From this I learned many things, but not religion" [S8]. MacTutor's adult-Catholic 1933 line is contested [S2].
 
 ## Adult working worldview
 
-"My body functions as a pure mechanism according to the Laws of Nature" [S4, Epilogue, p. 86]. From this and direct experience he concludes that every conscious "I" controls the atoms according to those laws, which in Christian terms reads "Hence I am God Almighty", and he links it to "ATHMAN = BRAHMAN" [S4, p. 87; S5, p. 87]. "In truth there is only one mind" [S5, p. 129]. Britannica: his outlook "closely paralleled the mysticism of the Vedanta" [S1, later life]. Scores: A 4 (0.7), B 4 (1.0), C 4 (0.5), D 3 (0.5), E 4 (0.7); mid_basin false.
+"My body functions as a pure mechanism according to the Laws of Nature" [S7, Epilogue, p. 86; wording matches S4]. From this and direct experience he concludes that every conscious "I" controls the atoms according to those laws, which in Christian terms reads "Hence I am God Almighty", and he links it to "ATHMAN = BRAHMAN" [S7, p. 87; S5]. "In truth there is only one mind" [S5, p. 129; S7]. Britannica: his outlook "closely paralleled the mysticism of the Vedanta" [S1, later life]. Auto Sketches: "turning against religion" [S7]. Scores: A 4 (0.7, corroborated), B 4 (1.0, corroborated), C 4 (0.5), D 3 (0.5), E 4 (0.7); mid_basin false.
 
 ## Heritage (context only)
 
@@ -350,8 +399,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Partial ded
 
 ## Open questions
 
-- My View of the World and the Autobiographical Sketches; the HINDU system file.
+- My View of the World (1961) in full; HINDU system file; Moore diary atheist remarks in full context.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Bernstein), MacTutor, Nobel biography; the What is Life? epilogue in a web transcription (rapeutation.com) and Cambridge-edition excerpts with page numbers (advaitism.com). The scanned Cambridge edition (strangebeautiful.com) timed out twice. All quotations checked against S1–S5 text.
+- 2026-10-24 (D1): Verified Epilogue against CUP Canto 1992 PDF (S7). Moore 1989 preview (S8) for baptism/family. Dronamraju Genetics 1999 (S9) for B corroboration. B → corroborated @ 1.0; chart hollow → filled. No fallacy_catalog.
