@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 3
+  schema_version: "1.3"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Blaise Pascal' (Clarke) and Britannica (Jerphagnon, first page). Worldview from the Pensées (Gutenberg copy of the Dutton 1958 English edition, §7 cap 0.7) and the Préface sur le Traité du vide (Brunschvicg–Boutroux 1923 edition, Wikisource transcription checked against the Internet Archive scan of pp. 131–132). DRAFT SCORES for v8's review: primary_system CHRIST 0.7; A 0, B 2, C 1, D 2, E 1, all at 0.7; mid_basin TODO (A ≤ 1 with B = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #246: 'noblesse de robe' removed (not in the sources read). #236: D cites now fragments 269 and 278 only (273 was not used in the rationale). #250: value kept; the rationale now applies the written LIO definition and the open threshold is a method question for v8. Bylines: SEP now Clarke and Wood; Britannica now Jerphagnon and Orcibal. Pensées numbering note no longer says it follows Brunschvicg. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #14). Schema 1.2 → 1.3. P47 source_quality on every source. A_locus was single on S3 (Pensées Gutenberg frag. 555): added S6 Brunschvicg Pensées et Opuscules (Hachette 1919, 6e éd. revue; archive.org OCR) verifying the Mémorial (23–24 Nov 1654; printed pp.142–143) — 'Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob! non des philosophes et des savants' — independent of the Pensées fragment. A support single → corroborated (S3+S6); value/certainty stay 0 @ 0.7 (named alt 1). B_cause already multi-cited (S3+S1): labelled support corroborated; value/certainty stay 2 @ 0.7. C and D labelled corroborated; E labelled single. Chart: dark hollow → dark filled (fill cue). Lafuma/Sellier concordance and Provincial Letters direct read still open. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: pascal-blaise
@@ -114,36 +115,41 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.7
-      cites: [{source: S3, locator: "fragment 555"}]
-      how_known: "His own notebook in an unofficial copy (§7); a named alternative (1)."
-      rationale: "DRAFT. At the transcendent-person pole: the God of Christians is 'the God of Abraham, the God of Isaac, the God of Jacob [...] a God of love and of comfort, a God who fills the soul and heart of those whom He possesses' (Pensées 555), explicitly not 'simply the author of mathematical truths, or of the order of the elements'. No immanence-in-nature feature like the one that gave Aquinas and Newton 1 in what was read. Named alternative: 1 (God present in the soul of those he possesses)."
+      support: corroborated
+      cites: [{source: S3, locator: "fragment 555"}, {source: S6, locator: "Mémorial (Écrit trouvé dans l'habit…), pp.142–143"}]
+      how_known: "Pensées notebook in unofficial English copy (S3, §7) plus the Mémorial in Brunschvicg's scholarly edition (S6, pp.142–143). Named alternative (1). Independent source ids → corroboration (P48); value/certainty unchanged."
+      rationale: "DRAFT. At the transcendent-person pole: the God of Christians is 'the God of Abraham, the God of Isaac, the God of Jacob [...] a God of love and of comfort, a God who fills the soul and heart of those whom He possesses' (Pensées 555 / S3), explicitly not 'simply the author of mathematical truths, or of the order of the elements'. The Mémorial (night of 23–24 November 1654), sewn into his coat, states the same pole in his own hand as printed by Brunschvicg: 'Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob! non des philosophes et des savants' (S6, pp.142–143). No immanence-in-nature feature like the one that gave Aquinas and Newton 1 in what was read. Named alternative: 1 (God present in the soul of those he possesses). Independent sources → corroborated (P48)."
     B_cause:
       value: 2
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "fragments 803, 804, 838"}, {source: S1, locator: "§1; §4"}]
-      how_known: "His own notebook (§7) and SEP; two named alternatives (1 and 3)."
-      rationale: "DRAFT, judgment call. Scored on his account of nature (P6). His physics is lawful and experimental: in matters of sense and reasoning authority is useless (S4, p. 132), and observations would settle whether the earth moves whatever Rome decreed (Provincial Letters, quoted S1 §4). But present-day miracles in nature are real and central: a miracle is 'an effect, which exceeds the natural power of the means which are employed for it' (803); 'grace and miracles; both supernatural' (804); and at Port-Royal 'God Himself chooses this house in order to display conspiciously therein His power' (838; the Holy Thorn cure of his niece, 1656, translator's note). SEP: he 'believed uncritically that God performs miracles' (S1 §1). Lawful nature with live, frequent exceptions, so 2. Named alternatives: 3 (Aquinas pattern, lawful nature with accepted miracles) and 1 (the CHRIST system score)."
+      how_known: "His own notebook (§7) and SEP; two named alternatives (1 and 3). Independent source ids → corroborated (P48); labelled on deepen D1."
+      rationale: "DRAFT, judgment call. Scored on his account of nature (P6). His physics is lawful and experimental: in matters of sense and reasoning authority is useless (S4, p. 132), and observations would settle whether the earth moves whatever Rome decreed (Provincial Letters, quoted S1 §4). But present-day miracles in nature are real and central: a miracle is 'an effect, which exceeds the natural power of the means which are employed for it' (803); 'grace and miracles; both supernatural' (804); and at Port-Royal 'God Himself chooses this house in order to display conspiciously therein His power' (838; the Holy Thorn cure of his niece, 1656, translator's note). SEP: he 'believed uncritically that God performs miracles' (S1 §1). Lawful nature with live, frequent exceptions, so 2. Named alternatives: 3 (Aquinas pattern, lawful nature with accepted miracles) and 1 (the CHRIST system score). Independent sources → corroborated (P48)."
     C_ledger:
       value: 1
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S1, locator: "§2; §6"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}]
-      how_known: "His own words as quoted by SEP (Provincial Letters) and SEP's account of his Jansenism; a named alternative (0)."
+      how_known: "His own words as quoted by SEP (Provincial Letters) and SEP's/Britannica account of his Jansenism; a named alternative (0). Independent source ids → corroborated (P48)."
       rationale: "DRAFT. Leans to the personal pole: salvation or its absence is personal and eternal, and there is 'no salvation' outside the Roman Church (Provincial Letters, quoted S1 §2). Limited by its form: in his Jansenism grace, not good works, is the key to salvation (S2), and faith is given 'without any merit on the part of the recipient' (S1 §6), so it is not a ledger of deeds. Same reading as the CHRIST system file (1). Named alternative: 0."
     D_authority:
       value: 2
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "pp. 131–132"}, {source: S3, locator: "fragments 269, 278"}, {source: S1, locator: "§4"}]
-      how_known: "Préface checked against a scan of the 1923 edition; it is a draft published after his death, read with the Pensées (§7) and SEP; a named alternative (1)."
+      how_known: "Préface checked against a scan of the 1923 edition; it is a draft published after his death, read with the Pensées (§7) and SEP; a named alternative (1). Independent source ids → corroborated (P48)."
       rationale: "DRAFT. Two domains, each with its own authority, so D 2 (same-pattern rule). In theology authority 'a la principale force [...] parce qu’elle y est inseparable de la verité'; in subjects of sense and reasoning 'l’authorité y est inutile ; la raison seule a lieu d’en connoistre. Elles ont leurs droits separés' (Préface, pp. 131–132). Named alternative: 1, because in religion reason must submit ('Submission is the use of reason in which consists true Christianity', Pensées 269) and the heart, not reason, knows God (278)."
     E_scope:
       value: 1
       basis: consistent_private_letters
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "fragments 838, 839"}]
-      how_known: "His own notebook in an unofficial copy (§7); a named alternative (2)."
+      how_known: "His own notebook in an unofficial copy (§7); a named alternative (2). Single source id → support single (P48)."
       rationale: "DRAFT. Scored on the world's order (P7). Leans exception: God acts in particular events for a particular community. God 'chooses this house' (Port-Royal) for 'miraculous alleviations' (838), and 'the Church has always had miracles against' its enemies (839). Same reading as the CHRIST system file (E 1). Salvation only in the Church is a C matter (P7). Named alternative: 2, since his physical treatises treat nature as uniform."
   mid_basin: {value: TODO, how_known: "A_locus = 0 at 0.7 and B_cause = 2 at 0.7. A ≤ 1 but B = 2 falls between the branches of the P4 test (CODING_GUIDE §6).", note: "Needs a decision on B (2, or the named alternatives 3 and 1), not more evidence. B 3 would make it true; B 1 would make it false."}
   statements:
@@ -163,6 +169,15 @@ worldview:
       kind: "notebook or diary"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
+    - text: "Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob! non des philosophes et des savants."
+      cites: [{source: S6, locator: "Mémorial, pp.142–143"}]
+      date: "1654-11-23"
+      context: "Mémorial (Écrit trouvé dans l'habit de Pascal après sa mort): note of the night of fire, 23–24 November 1654 (calendrical Monday 23 Nov in the text; often cited as the night of the 23rd), sewn into his coat until death. Brunschvicg prints the paper copy in Pascal's hand (parchment lost)."
+      axes: [A_locus]
+      kind: "document in own hand"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "OCR of Brunschvicg Hachette 1919 (S6): 'Dicu'/'fsaac'/'nou' for Dieu/Isaac/non. Standard reading confirmed against the edition's sense and SEP's account of the Memorial (S1 §1)."
     - text: "It is the heart which experiences God, and not the reason. This, then, is faith: God felt by the heart, not by the reason."
       cites: [{source: S3, locator: "fragment 278"}]
       date: "1670"
@@ -204,7 +219,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Turn to Jansenist piety in 1646 (via the Deschamps brothers) and the conversion of the night of 23 November 1654 (the Memorial); after 1654 he left mathematics and the vacuum booklet aside for religious writing", year: "1646; 1654", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "'Pascal’s life to the Port-Royal years'"}], how_known: "Two sources."}
-  coder_notes: "DRAFT SCORES for v8's review. The Pensées are posthumous notes (S1 §1: 'reliably attributed to Pascal only when he expressed similar views elsewhere'), so the basis used is consistent_private_letters (notebooks), not written_profession; see report method question. The Gutenberg Pensées uses its own numbering (not checked against Brunschvicg's order; lens audit run 2); the numbers given are those printed in that copy, not Lafuma or Sellier numbers. The Provincial Letters were not opened; their words are SEP quotations. The Préface quotation is the only one checked against page images (Internet Archive scan of the 1923 Brunschvicg–Boutroux edition)."
+  coder_notes: "DRAFT SCORES for v8's review. The Pensées are posthumous notes (S1 §1: 'reliably attributed to Pascal only when he expressed similar views elsewhere'), so the basis used is consistent_private_letters (notebooks), not written_profession; see report method question. The Gutenberg Pensées uses its own numbering (not checked against Brunschvicg's order; lens audit run 2); the numbers given are those printed in that copy, not Lafuma or Sellier numbers. The Provincial Letters were not opened; their words are SEP quotations. The Préface quotation was checked against page images (Internet Archive scan of the 1923 Brunschvicg–Boutroux edition). Deepen D1 (queue #14): A now S3+S6 (Mémorial in Brunschvicg Pensées et Opuscules 1919) support corroborated; B labelled corroborated (S3+S1); chart fill hollow → filled. Mémorial statement kind 'document in own hand' (schema 1.3). Lafuma/Sellier still not opened. No fallacy_catalog (Jason 2026-10-23)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -225,7 +240,7 @@ lane_b:
   label: "Lane B — labeled belief model, not a finding"
   geometric_form_present: {value: "partly", rationale: "A geometer by training and in method for physics (S4), but he holds that the heart, not geometrical reasoning, knows God (Pensées 277–278).", certainty: 0.5, cites: [{source: S3, locator: "fragments 277, 278"}, {source: S1, locator: "§1; §4"}], how_known: "Coder's reading."}
   form_acquired: {value: "childhood or adolescence", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "Mathematics at home from his father; the Essai at sixteen."}
-  circle_present: {value: "no", rationale: "God is the God of Abraham, not the author of the order of the elements (Pensées 555).", certainty: 0.7, cites: [{source: S3, locator: "fragment 555"}], how_known: "His own words in an unofficial copy."}
+  circle_present: {value: "no", rationale: "God is the God of Abraham, not the author of the order of the elements (Pensées 555); Mémorial: God of Abraham, not of the philosophers and scholars (S6).", certainty: 0.7, cites: [{source: S3, locator: "fragment 555"}, {source: S6, locator: "Mémorial, pp.142–143"}], how_known: "His own words (Pensées web copy; Mémorial in Brunschvicg 1919)."}
   reading: "As belief, not finding: early mathematical form present, circle absent, and he explicitly separates geometric reason from knowledge of God. A case against reading form as sufficient for the circle."
   notes: ""
 
@@ -243,10 +258,10 @@ review:
   controversies: []
   data_quality_flags:
     - "Calculating machine: 1642–1644 (Britannica) vs prototype 1645 (SEP)."
-    - "Pensées read only in a Gutenberg copy of an English translation with its own numbering; no Lafuma or Sellier concordance checked."
+    - "Pensées English still Gutenberg/Dutton numbering (S3); French Mémorial checked in Brunschvicg Pensées et Opuscules 1919 (S6). No Lafuma or Sellier concordance for the numbered Pensées fragments."
     - "Britannica read as its first page only."
   open_questions:
-    - "Check the Pensées quotations against Lafuma or Sellier and give those numbers; that would lift the §7 cap."
+    - "Check the Pensées quotations against Lafuma or Sellier and give those numbers; that would lift the §7 cap on S3."
     - "Read the Provincial Letters directly (I, 781 and I, 813 in Le Guern's edition, per SEP)."
     - "Decide B (2 vs 3 vs 1), which decides mid_basin."
 
@@ -260,6 +275,7 @@ sources:
     url: "https://plato.stanford.edu/entries/pascal/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; read in full. Cited by section. Its quotations of the Provincial Letters are secondary quotations (Le Guern's edition, volume and page)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, timing, lane_b, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -269,6 +285,7 @@ sources:
     url: "https://www.britannica.com/biography/Blaise-Pascal"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Cited by section heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, institutions, collaborators]
   - id: S3
     type: primary
@@ -279,6 +296,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/18269"
     accessed: 2026-10-02
     reliability_note: "Unofficial web copy of an English translation (translator not named in the eBook text); capped at 0.7 under CODING_GUIDE §7. Cited by the fragment numbers printed in this copy (the eBook says only that its notes are 'mainly based on those of M. Brunschvicg'; whether its numbering follows Brunschvicg's order was not checked); no page numbers except one taken from the translator's notes."
+    source_quality: "unofficial web copy"
     used_for: [contribution, worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -289,6 +307,7 @@ sources:
     url: "https://fr.wikisource.org/wiki/%C5%92uvres_de_Blaise_Pascal/Fragment_de_pr%C3%A9face_sur_le_Trait%C3%A9_du_vide"
     accessed: 2026-10-02
     reliability_note: "Wikisource transcription; the quoted passage was checked against the page images of pp. 131–132 (Commons file 'Œuvres de Blaise Pascal, II.djvu', from the Internet Archive scan), so the page numbers are the printed ones."
+    source_quality: "scholarly edition or monograph"
     used_for: [worldview]
   - id: S5
     type: secondary
@@ -298,7 +317,19 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S6
+    type: primary
+    kind: "scholarly edition"
+    author: "Blaise Pascal"
+    year: 1919
+    citation: "Pascal, Blaise. Pensées et Opuscules. Publiés avec une introduction, des notices, des notes et deux fac-similés du manuscrit des Pensées, par Léon Brunschvicg. 6e édition revue. Paris: Librairie Hachette, 1919. Internet Archive identifier pensees-et-opuscules (OCR)."
+    url: "https://archive.org/details/pensees-et-opuscules"
+    accessed: 2026-10-24
+    reliability_note: "Standard scholarly school edition (Brunschvicg). Used for the Mémorial (Écrit trouvé dans l'habit…), printed pp.142–143 (running header '142 BLAISE PASCAL'; continues onto the next leaf). OCR garbles a few letters (Dicu/fsaac/nou); sense unambiguous."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, timing, lane_b]
 ---
 
 # Blaise Pascal
@@ -307,11 +338,11 @@ sources:
 
 ## Summary
 
-Blaise Pascal (1623–1662), French mathematician, physicist and religious writer, laid the foundations of probability theory with Fermat, formulated Pascal's principle of pressure and built a calculating machine [S1, §1; S2]. A Catholic of unqualified Jansenist commitment, he wrote that the God of Christians is "the God of Abraham", not "simply the author of mathematical truths" [S3, 555]. Draft code CHRIST at 0.7. Axes A 0, B 2, C 1, D 2, E 1, all at 0.7; mid_basin TODO (B = 2).
+Blaise Pascal (1623–1662), French mathematician, physicist and religious writer, laid the foundations of probability theory with Fermat, formulated Pascal's principle of pressure and built a calculating machine [S1, §1; S2]. A Catholic of unqualified Jansenist commitment, he wrote that the God of Christians is "the God of Abraham", not "simply the author of mathematical truths" [S3, 555]; the Mémorial of 23–24 November 1654 states "Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob! non des philosophes et des savants" [S6, pp.142–143]. Deepen D1 (P47–P50): primary_system CHRIST 0.7; A 0 @ 0.7, consistent_private_letters, support single → corroborated (S3+S6); B 2 @ 0.7, support corroborated (S3+S1); C 1, D 2, E 1 all @ 0.7; mid_basin TODO (B = 2). Chart: dark hollow → dark filled (fill cue).
 
 ## Life and work
 
-Educated only by his father, he wrote the Essai pour les coniques in 1640, built the calculating machine, ran the vacuum experiments of 1647–1648, turned to Jansenism in 1646, had the conversion of 23 November 1654, wrote the Provincial Letters (1656–1657) and left the notes published as the Pensées [S1, §1; S2].
+Educated only by his father, he wrote the Essai pour les coniques in 1640, built the calculating machine, ran the vacuum experiments of 1647–1648, turned to Jansenism in 1646, had the conversion of 23 November 1654 (Mémorial [S6]), wrote the Provincial Letters (1656–1657) and left the notes published as the Pensées [S1, §1; S2].
 
 ## Contribution and impact
 
@@ -323,7 +354,7 @@ His mother died when he was three; his father, a tax judge and mathematician, ed
 
 ## Adult working worldview
 
-Theology rests on authority and sense-and-reason subjects on reason alone: "Elles ont leurs droits separés" [S4, p. 132]. God is known by the heart [S3, 278]; miracles continue, as at Port-Royal [S3, 838].
+Theology rests on authority and sense-and-reason subjects on reason alone: "Elles ont leurs droits separés" [S4, p. 132]. God is the God of Abraham, not of the philosophers [S3, 555; S6, Mémorial]; known by the heart [S3, 278]; miracles continue, as at Port-Royal [S3, 838].
 
 ## Heritage (context only)
 
@@ -335,7 +366,7 @@ First lasting contribution taken as the Essai of 1640, at 17 [S1; S2]. No LIO-ty
 
 ## Lane B notes (labeled belief model)
 
-Everything in this section is Lane B: labeled belief, not a finding. Form present early; circle absent [S3, 555].
+Everything in this section is Lane B: labeled belief, not a finding. Form present early; circle absent [S3, 555; S6].
 
 ## Open questions
 
@@ -346,3 +377,4 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 
 - 2026-10-02: Read SEP "Blaise Pascal" (Clarke, full), Britannica (Jerphagnon, first page), the Pensées (Gutenberg 18269) and the Wikisource Préface (Brunschvicg–Boutroux 1923), and viewed the scan of pp. 131–132. Wikipedia not used.
 - 2026-10-02 (lens audit fixes): Re-checked the SEP and Britannica bylines and the Gutenberg Pensées note on Brunschvicg; no new sources.
+- 2026-10-24: Deepen D1 (queue #14). Brunschvicg Pensées et Opuscules 1919 archive OCR (S6): Mémorial pp.142–143. A support single → corroborated; chart fill hollow → filled. P47 labels; schema 1.3. No fallacy_catalog (Jason 2026-10-23).
