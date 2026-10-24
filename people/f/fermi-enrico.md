@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1926–1942 unchanged; worldview.working_years 1921–1954 → 1926–1942, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #23, F5 rank 23). P47 source_quality on every source. New: S5 Nobel Lecture 1938 (primary / own words; neutron-induced radioactivity); S6 Emilio Segrè DSB / encyclopedia.com PDF via MacTutor ('Fermi was fundamentally an agnostic, although he had been baptized a Catholic'). primary_system UNKNOWN → AGNOS @ 0.5 scholarly_reconstruction (Segrè; AGNOS stub flagged); A_locus UNKNOWN → BELOW_THRESHOLD (P20: agnostic with no stated locus). B_cause stays 3 @ 0.5 inference_from_work; support labelled corroborated (S5+S3+S2; P48); alt 4 named (P35). Baptism filled from Segrè. Laura Fermi Atoms in the Family p. 52 still unread (lending-only; Wikipedia cites it for adult agnostic). Chart: still unplotted (A BELOW; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: fermi-enrico
@@ -66,7 +67,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Several lasting original contributions in theory and experiment.", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: "Nominally Catholic family background, but his own household was not religious; his father's relatives were devout Catholics", certainty: 0.7, cites: [{source: S2, locator: "Biography ('the family were not religious')"}], how_known: "MacTutor (one source). The baptism usually reported (in accordance with his grandparents' wishes) was not confirmed in a source read; see open questions."}
+  family_religion: {value: "Nominally Catholic family background, but his own household was not religious; his father's relatives were devout Catholics", certainty: 1.0, cites: [{source: S2, locator: "Biography ('the family were not religious')"}, {source: S6, locator: "opening paragraph (baptized Catholic; fundamentally an agnostic)"}], how_known: "MacTutor and Segrè DSB agree on non-religious household / Catholic baptism as heritage only."}
   family_religious_practice: {value: "Not religious; his elementary school was chosen because it was secular", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
   parents_and_household:
     - {value: "Father, Alberto Fermi, a railway official (chief inspector)", name: "Alberto Fermi", role: father, certainty: 1.0, cites: [{source: S1, locator: "early life"}, {source: S2, locator: "Biography"}, {source: S3, locator: "first paragraph"}], how_known: "Three sources (S3 says Ministry of Communications)."}
@@ -92,47 +93,52 @@ worldview:
   working_years: {value: "1926–1942", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–7"}], how_known: "Equal to timing.major_work_period (P30 addendum f; span check 2026-10-02). Was 1921–1954: First paper 1921 to death."}
   nominal_affiliations:
     - {value: "No church membership reported for his adult life in the sources read; his two children were Roman Catholics", role: other, certainty: 0.7, cites: [{source: S2, locator: "Biography (1938)"}], how_known: "MacTutor (one source)."}
-  self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Fermi on science and religion in S1–S3."}
+  self_described_science_religion_relation: {value: UNKNOWN, how_known: "No statement by Fermi on science and religion in S1–S6."}
   primary_system:
-    value: UNKNOWN
-    cites: [{source: S2, locator: "Biography"}]
-    how_known: "No writing or reported speech of Fermi on religion was found in the sources read. The usual claim that he was an agnostic throughout adult life cites Laura Fermi, Atoms in the Family (1954), p. 52, which could not be read (lending-only scan)."
-    note: "Candidate: AGNOS (stub system file, flagged). Would need Laura Fermi p. 52 or Segrè's biography to reach 0.5."
-  secondary_system: {value: UNKNOWN, how_known: "No system evidence at all in S1–S3."}
+    value: AGNOS
+    basis: scholarly_reconstruction
+    certainty: 0.5
+    cites: [{source: S6, locator: "opening paragraph ('Fermi was fundamentally an agnostic, although he had been baptized a Catholic')"}]
+    how_known: "Emilio Segrè's Dictionary of Scientific Biography article (close collaborator; later author of Enrico Fermi, Physicist, 1970) states he was fundamentally an agnostic. No first-person suspension statement by Fermi was read. Laura Fermi, Atoms in the Family (1954), p. 52 — the usual spouse-memoir locus for the adult-agnostic claim — remains unread (lending-only). AGNOS stub system file flagged. Named alternative: BELOW_THRESHOLD / UNKNOWN if v8 wants own-words only for an AGNOS code."
+    rationale: "AGNOS = explicit suspension of judgement about God (CODING_GUIDE; systems/AGNOS.md). Segrè's scholarly label supplies the suspension stance at the P49 0.5 ceiling; baptism is heritage only (never a code)."
+    note: "AGNOS is a stub system file (flag). Reading Laura Fermi p. 52 or Segrè 1970 full text could corroborate or quote own words; until then certainty stays 0.5."
+  secondary_system: {value: UNKNOWN, how_known: "No second-system evidence in S1–S6."}
   candidate_codes_considered:
-    - {code: AGNOS, reason: "Leading candidate, not coded (UNKNOWN: nothing in the sources read): the agnostic description comes through a source not read. AGNOS is a stub system file (flag)."}
-    - {code: CHRIST, reason: "Rejected: a non-religious household (S2) and no adult practice reported. Heritage is never a code.", cites: [{source: S2, locator: "Biography"}]}
+    - {code: AGNOS, reason: "Coded at 0.5 scholarly_reconstruction from Segrè DSB (S6). AGNOS stub flagged. Laura Fermi p. 52 unread.", cites: [{source: S6, locator: "opening paragraph"}]}
+    - {code: CHRIST, reason: "Rejected: baptized Catholic (S6) and Catholic family background (S2) are heritage/membership; non-religious household and no adult practice (S2). Heritage is never a code.", cites: [{source: S2, locator: "Biography"}, {source: S6, locator: "opening paragraph"}]}
+    - {code: ATHE, reason: "Rejected: Segrè labels him agnostic, not atheist; no positive-naturalism statement read. ATHE is also a stub system file (flag).", cites: [{source: S6, locator: "opening paragraph"}]}
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "No statement about God or the divine in the sources read.", note: "Gap: Laura Fermi 1954; Segrè 1970."}
+    A_locus: {value: BELOW_THRESHOLD, how_known: "P20: an agnostic with no stated locus view is A BELOW_THRESHOLD. Segrè supplies the AGNOS label (S6) but no statement of Fermi's own placing or denying God was read. systems/AGNOS.md also sets A BELOW_THRESHOLD for explicit suspension. Named alternative: UNKNOWN if v8 withholds the AGNOS code pending Laura Fermi / own words.", note: "Gap: Laura Fermi 1954 p. 52 (lending-only); Segrè 1970 book (unread this pass; DSB used)."}
     B_cause:
       value: 3
       basis: inference_from_work
       certainty: 0.5
-      cites: [{source: S3, locator: "paragraphs 3–7"}, {source: S2, locator: "Biography"}]
-      how_known: "Coder's reading of his working science, as P6 directs for a scientist. No statement of his own about miracles or exceptions, so 0.5."
-      rationale: "Scored on his account of nature (P6), which for a scientist is the working science. Statistical laws for fermions, beta decay, neutron reactions and the chain reaction all treat nature as governed by law with no special cases. No miracle, petition or exemption appears anywhere in the sources read. P35 (v8's pick, 2026-10-08, lens audit of batch C ruling R1): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4, because working science cannot tell a lawful nature with one stated exception from one with none (Faraday, Maxwell and Newton did the same kind of science and are B 3 from their own statements). Named alternative: 4, if a statement of their own shows no exception."
-    C_ledger: {value: UNKNOWN, how_known: "Nothing on reward, punishment or afterlife in the sources read."}
-    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in the sources read.", note: "His practice is wholly empirical, but D asks about revelation versus observation, which needs a statement."}
+      support: corroborated
+      cites: [{source: S5, locator: "whole (neutron bombardment; artificial radioactivity as lawful nuclear processes)"}, {source: S3, locator: "paragraphs 3–7"}, {source: S2, locator: "Biography"}]
+      how_known: "Coder's reading of his working science, as P6/P24/P30 direct for a scientist. No statement of his own about miracles or exceptions, so 0.5. Three independent source ids describing the same experimental/theoretical program (Nobel lecture own words + Nobel biography + MacTutor) → corroborated (P48). Named alternative 4, so 0.5 (P35)."
+      rationale: "Scored on his account of nature (P6), which for a scientist is the working science. Statistical laws for fermions, beta decay, neutron-induced radioactivity and the chain reaction all treat nature as governed by law with no special cases. His 1938 Nobel lecture describes artificial radioactivity and neutron bombardment as repeatable nuclear processes without miracle, petition or exemption (S5). P35 (v8's pick, 2026-10-08): B inferred only from a scientist's working science, with no statement of their own on law and exception, is B 3 at 0.5 with 4 as the named alternative, never 4. Named alternative: 4, if a statement of their own shows no exception."
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on reward, punishment or afterlife in S1–S6."}
+    D_authority: {value: UNKNOWN, how_known: "No statement on revelation in S1–S6.", note: "His practice is wholly empirical, but D asks about revelation versus observation, which needs a statement."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). His physics applies the same laws everywhere, but whether his account of events keeps any exception for a group is not addressed in any source read, so below 0.5.", note: "Not scored from the working science alone, unlike B, because P7 asks a second question (in-group exceptions) that needs a statement."}
-  mid_basin: {value: UNKNOWN, how_known: "A_locus is UNKNOWN, so mid_basin is UNKNOWN (§6 precedence, decision P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD and B_cause is only 0.5, under the P4 test's 0.7 bar (§6)."}
   statements: []
   changes_over_life: []
-  coder_notes: "No verifiable quotation on religion was found; nothing is quoted in statements. Two Fermi religion anecdotes often repeated online (an agnostic self-description; a remark about the stars) were not traced to an accessible source and are not used."
+  coder_notes: "Deepen D1: primary_system AGNOS @ 0.5 from Segrè DSB scholarly reconstruction (S6); A BELOW_THRESHOLD (P20). No first-person religion quotation by Fermi found; statements empty. Laura Fermi Atoms in the Family p. 52 still unread (lending-only on IA; Wikipedia cites it for adult agnostic + grandparents' baptism wish) — logged as blocker, not scored as own words. Lutheran graveside (Hucke & Bielski via Wikipedia) is burial rite, not belief. B stays 3 @ 0.5 inference_from_work with support corroborated (P48); Nobel lecture (S5) is primary science text but not a no-exception claim, so not written_profession. Online anecdotes (stars remark) unused."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Italian", certainty: 0.7, cites: [{source: S1, locator: "opening paragraph"}], how_known: "Sources agree."}
   religious_heritage_by_birth: {value: "Catholic family background (his father's relatives devout Catholics)", certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor."}
-  baptism_or_initiation: {value: TODO, note: "Commonly reported as Catholic baptism at his grandparents' wish; not confirmed in a source read."}
+  baptism_or_initiation: {value: "Baptized Catholic", certainty: 0.7, cites: [{source: S6, locator: "opening paragraph"}], how_known: "Segrè DSB. Wikipedia's further detail (grandparents' wishes; Laura Fermi p. 52) not verified in a page read this pass.", note: "Heritage/initiation only — never a worldview code."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not mentioned in S1–S3; his elementary school was secular (S2)."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1926–1942", certainty: 0.7, cites: [{source: S3, locator: "paragraphs 3–7"}], how_known: "From Fermi statistics to the chain reaction."}
   age_at_first_lasting_contribution: {value: 25, certainty: 0.7, cites: [{source: S3, locator: "paragraph 3"}], how_known: "Born September 1901; the 1926 statistics paper. 24 or 25 depending on the month of the paper, which S3 does not give. P30 (rule 5): 1926 − 1901 = 25, with no month adjustment; was 24 until the P30 age sweep (2026-10-02)."}
-  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No worldview statement in S1–S3."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "No worldview statement found.", certainty: 0.5, cites: [{source: S2, locator: "Biography"}], how_known: "Absence in the sources read."}
-  worldview_during_major_work: {value: TODO}
+  first_evidence_of_lio_type_views: {value: UNKNOWN, how_known: "No LIO-type view (P27) of his own was read; AGNOS/A BELOW rest on Segrè's reconstruction, not an LIO-type statement by Fermi."}
+  lio_views_relative_to_major_work: {value: "no LIO-type views found", rationale: "Nothing of his on God or nature at the P27 bar; B is inference_from_work only; AGNOS is scholarly reconstruction.", certainty: 0.5, cites: [{source: S6, locator: "opening paragraph"}, {source: S5, locator: "whole"}], how_known: "Absence at the P27 bar in sources read."}
+  worldview_during_major_work: {value: "AGNOS (scholarly reconstruction, Segrè); A BELOW_THRESHOLD; B 3 @ 0.5 from working science", certainty: 0.5, cites: [{source: S6, locator: "opening paragraph"}, {source: S5, locator: "whole"}], how_known: "Synthesis of D1 sources; not a stronger code."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -157,9 +163,12 @@ review:
   data_quality_flags:
     - "Academy of 1929: MacTutor says Mussolini appointed him to the Accademia dei Lincei; Britannica says the new Accademia d'Italia. Britannica's version is probably right; not settled from the sources read."
     - "Chicago professorship: MacTutor says the offer came in 1945; the Nobel biography and Britannica say 1946."
+    - "AGNOS @ 0.5 rests on Segrè DSB scholarly reconstruction only; Laura Fermi p. 52 unread; no Fermi own-words on religion."
+    - "AGNOS is a stub system file (flag)."
   open_questions:
-    - "Read Laura Fermi, Atoms in the Family (1954), p. 52, and Segrè, Enrico Fermi, Physicist (1970), for any statement on religion; until then A, C, D, E and primary_system stay below threshold."
-    - "Confirm the Catholic baptism."
+    - "Read Laura Fermi, Atoms in the Family (1954), p. 52 (spouse memoir; Wikipedia cites for adult agnostic and grandparents' baptism wish) — lending-only on archive.org this pass."
+    - "Read Emilio Segrè, Enrico Fermi, Physicist (1970) full text for any further religion discussion beyond the DSB sentence used as S6."
+    - "Own-words locus or no-exception claim (letters, AIP interviews, Collected Papers commentary) to lift A or B."
 
 sources:
   - id: S1
@@ -170,6 +179,7 @@ sources:
     url: "https://www.britannica.com/biography/Enrico-Fermi"
     accessed: 2026-10-02
     reliability_note: "Signed article by a historian of science."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, heritage, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -179,6 +189,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Fermi/"
     accessed: 2026-10-02
     reliability_note: "Standard biographical archive; quotes Persico, Segrè and Laura Fermi."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions]
   - id: S3
     type: tertiary
@@ -188,7 +199,8 @@ sources:
     url: "https://www.nobelprize.org/prizes/physics/1938/fermi/biographical/"
     accessed: 2026-10-02
     reliability_note: "Official biography; paragraphs counted from the top of the text."
-    used_for: [basics, contribution, childhood, timing, institutions, collaborators]
+    source_quality: "reference entry"
+    used_for: [basics, contribution, childhood, timing, institutions, collaborators, worldview]
   - id: S4
     type: secondary
     kind: database
@@ -197,7 +209,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: primary
+    kind: "published work by the subject"
+    author: "Enrico Fermi"
+    citation: "Fermi, Enrico. \"Artificial Radioactivity Produced by Neutron Bombardment.\" Nobel Lecture, 12 December 1938. NobelPrize.org (from Nobel Lectures, Physics 1922–1941, Elsevier, 1965). https://www.nobelprize.org/prizes/physics/1938/fermi/lecture/."
+    url: "https://www.nobelprize.org/prizes/physics/1938/fermi/lecture/"
+    accessed: 2026-10-24
+    reliability_note: "Fermi's own Nobel lecture; PDF text extracted this pass (pdftotext). Describes neutron-induced artificial radioactivity as lawful nuclear processes; no religion language."
+    source_quality: "primary / own words"
+    used_for: [contribution, worldview]
+  - id: S6
+    type: secondary
+    kind: "encyclopedia"
+    author: "Emilio Segrè"
+    citation: "Segrè, Emilio. \"Fermi, Enrico.\" Complete Dictionary of Scientific Biography. Charles Scribner's Sons, 2008 (orig. DSB). Encyclopedia.com reprint; PDF mirror at MacTutor: https://mathshistory.st-andrews.ac.uk/DSB/Fermi.pdf."
+    url: "https://mathshistory.st-andrews.ac.uk/DSB/Fermi.pdf"
+    accessed: 2026-10-24
+    reliability_note: "Signed DSB article by Fermi's close collaborator and later biographer; opening paragraph states baptism and 'fundamentally an agnostic'. Worldview sentence is scholarly reconstruction (basis), not Fermi's own words."
+    source_quality: "reference entry"
+    used_for: [worldview, childhood, heritage]
 ---
 
 # Enrico Fermi
@@ -206,7 +239,7 @@ sources:
 
 ## Summary
 
-Enrico Fermi (1901–1954), Italian-born physicist, developed Fermi statistics (1926), the theory of beta decay and neutron-induced radioactivity (1934), and directed the first controlled chain reaction (1942) [S1, opening paragraph; S3, paragraphs 3–7]. Nobel Prize 1938 [S2, Biography]. No statement of his on religion was found in accessible sources, so his system and the A, C and D axes are UNKNOWN; B_cause is 3 at 0.5 from his working science (alternative 4, P35).
+Enrico Fermi (1901–1954), Italian-born physicist, developed Fermi statistics (1926), the theory of beta decay and neutron-induced radioactivity (1934), and directed the first controlled chain reaction (1942) [S1, opening paragraph; S3, paragraphs 3–7; S5]. Nobel Prize 1938 [S2, Biography]. Deepen D1 (P47–P50): primary_system AGNOS at 0.5 (scholarly reconstruction, Segrè DSB) [S6]; A_locus BELOW_THRESHOLD (P20); B_cause 3 at 0.5, inference_from_work, support corroborated (S5+S3+S2; P35 alt 4); C and D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Still unplotted (A BELOW; B faded).
 
 ## Life and work
 
@@ -222,7 +255,7 @@ His household was not religious, which upset his father's devout Catholic relati
 
 ## Adult working worldview
 
-No writing or reported speech on religion was found in the sources read [S1; S2; S3]. The common report that he was agnostic traces to Laura Fermi's 1954 memoir, which could not be read. primary_system UNKNOWN (AGNOS candidate, stub). B 3 at 0.5 from the working science (alternative 4, P35); A, C, D UNKNOWN; E below threshold; mid_basin UNKNOWN.
+Segrè's DSB article states that Fermi "was fundamentally an agnostic, although he had been baptized a Catholic" [S6, opening paragraph]. No first-person religion statement by Fermi was found; Laura Fermi's *Atoms in the Family* (1954), p. 52, remains unread. primary_system AGNOS at 0.5 (scholarly reconstruction; AGNOS stub flagged). A BELOW_THRESHOLD (P20); B 3 at 0.5 from the working science with support corroborated (S5+S3+S2; alternative 4, P35); C and D UNKNOWN; E below threshold; mid_basin BELOW_THRESHOLD.
 
 ## Heritage (context only)
 
@@ -238,8 +271,11 @@ Everything in this section is Lane B: labeled belief, not a finding. A practical
 
 ## Open questions
 
-- Laura Fermi p. 52 and Segrè 1970 on religion.
+- Laura Fermi, *Atoms in the Family* (1954), p. 52 (lending-only).
+- Segrè, *Enrico Fermi, Physicist* (1970) full text beyond the DSB sentence.
+- Own-words locus or no-exception claim to lift A or B.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Badash), MacTutor and the Nobel biography. Searched for Fermi on religion; the agnostic claim traces (via Wikipedia's footnote) to Laura Fermi, Atoms in the Family, p. 52; archive.org copies are lending-only. Nothing quoted on religion.
+- 2026-10-24 (D1): Read Segrè DSB PDF (MacTutor mirror) and Fermi's 1938 Nobel lecture PDF. Segrè supplies baptism + "fundamentally an agnostic". Laura Fermi still lending-only (401 on IA OCR). P47 labels; B support corroborated; AGNOS @ 0.5; A BELOW_THRESHOLD (P20). No fallacy_catalog.
