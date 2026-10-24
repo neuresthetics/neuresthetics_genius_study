@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-23
   change_log:
+    - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #5). P47 source_quality on every source. Primary: The Chemical Basis of Morphogenesis (Phil. Trans. B 1952; new S10) — 'certain well-known physical laws are sufficient' — second independent written_profession for B_cause; support single → corroborated (S1+S10); certainty stays 0.7 (named alt 4). A_locus stays BELOW_THRESHOLD (P19/P38): no first-person God denial found in Mind 1950, Nature of Spirit, Hodges short bio/IWM/SEP, Humanists UK, or searchable Enigma excerpts; named alt A 4 @ 0.5 scholarly_reconstruction on Hodges. Childhood/heritage: Sara Turing memoir (Cambridge 2012 excerpt; new S11) fills baptism (St Saviour's, 7 July 1912) and Church of England heritage; Natural Wonders added to early reading. Morphogenesis contribution/major_work cites raised with S10. D_authority support: single. Chart: still unplotted (A BELOW). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Copeland, first page). Worldview from 'Computing Machinery and Intelligence' (Mind, 1950), read on the offprint scan in the Turing Digital Archive (King's College Cambridge, AMT/B/19; pp. 443, 444 and 453 checked on the page images), and from the 1932 manuscript 'Nature of Spirit' (AMT/C/29, facsimile), with Hodges' SEP entry and Scrapbook page for context. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 (0.7), D 4 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #122: primary_system unchanged (BELOW_THRESHOLD); its reason now rests on the evidence (CODING_GUIDE §3, §4) and no longer cites an unwritten rule; the stub-system question awaits v8's ruling. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. primary_system BELOW_THRESHOLD → ATHE 0.5, scholarly_reconstruction, on Hodges (new sources S8, S9) (P14); Mind p. 443 statement axes [A_locus, E_scope] → [A_locus, C_ledger] (P7); C and E notes rewritten (still BELOW_THRESHOLD), A note gives the evidence (P19); Nature of Spirit kind notebook or diary → unpublished manuscript (P18); single-source 1.0 fields → 0.7 (P15) (native_name, first_lasting_contribution_year, era_bucket, imitation game item, major_works/0, schooling/2, working_years, major_work_period, age_at_first_lasting_contribution, King's and Princeton, Church and Newman); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite; Hazlehurst stage grammar or secondary school → elementary school (P21); Morcom quotation marked primary check pending (P26); first_evidence_of_lio_type_views checked against the LIO-type view anchor (P27), unchanged. Not reviewed."}
@@ -53,20 +54,21 @@ contribution:
     - {value: "The Turing machine and the unsolvability of the Entscheidungsproblem (On Computable Numbers)", year: "1936", kind: theory, lasting: "foundation of computability theory and computer science", certainty: 1.0, cites: [{source: S3, locator: "Biography (1936)"}, {source: S4, locator: "opening"}], how_known: "Two sources."}
     - {value: "Methods for breaking German Enigma and Tunny messages at Bletchley Park", year: "1939–1945", kind: method, lasting: "wartime codebreaking", certainty: 1.0, cites: [{source: S3, locator: "Biography (Bletchley Park)"}, {source: S4, locator: "codebreaking section"}], how_known: "Two sources."}
     - {value: "The imitation game (Turing test) as a criterion for machine intelligence", year: "1950", kind: "concept or term", lasting: "standard reference in AI", certainty: 0.7, cites: [{source: S1, locator: "pp. 433–434"}], how_known: "His own paper gives the contribution; no second source is cited for its lasting status, so 0.7 under the single-source rule (P15)."}
-    - {value: "Mathematical theory of morphogenesis", year: "1952", kind: theory, lasting: "reaction–diffusion patterns in biology", certainty: 0.7, cites: [{source: S3, locator: "Biography (1952)"}], how_known: "MacTutor."}
+    - {value: "Mathematical theory of morphogenesis", year: "1952", kind: theory, lasting: "reaction–diffusion patterns in biology", certainty: 1.0, cites: [{source: S3, locator: "Biography (1952)"}, {source: S10, locator: "pp. 37–38 (abstract / opening)"}], how_known: "His own 1952 paper plus MacTutor."}
   evidence_of_impact:
     - {value: "Fellow of the Royal Society, 1951, mainly for the 1936 work", kind: "honours in lifetime", certainty: 0.7, cites: [{source: S3, locator: "Biography (1951)"}], how_known: "MacTutor."}
   major_works:
     - {value: "On Computable Numbers, with an Application to the Entscheidungsproblem", year: 1936, kind: "paper or paper series", certainty: 0.7, cites: [{source: S3, locator: "Biography (1936)"}], how_known: "MacTutor alone, so 0.7 under the single-source rule (P15)."}
     - {value: "Computing Machinery and Intelligence", year: 1950, kind: "paper or paper series", certainty: 1.0, cites: [{source: S1, locator: "p. 433"}], how_known: "Read on the scan."}
+    - {value: "The Chemical Basis of Morphogenesis", year: 1952, kind: "paper or paper series", certainty: 1.0, cites: [{source: S10, locator: "pp. 37–38"}], how_known: "Read on the Phil. Trans. / teaching PDF."}
   honours:
     - {value: "Officer of the Order of the British Empire (OBE), for codebreaking", year: "1945–1946", certainty: 0.7, cites: [{source: S4, locator: "codebreaking section ('At the end of the war')"}], how_known: "Britannica gives 'at the end of the war', not a year."}
     - {value: "Fellow of the Royal Society", year: 1951, certainty: 0.7, cites: [{source: S3, locator: "Biography (1951)"}], how_known: "MacTutor."}
   definition_fit: {value: "clearly meets", rationale: "Founder of computability theory and of the theory of the universal computing machine.", certainty: 1.0, cites: [{source: S3, locator: "Biography (1936)"}, {source: S4, locator: "opening"}], how_known: "Sources agree."}
 
 childhood:
-  family_religion: {value: TODO, note: "Not stated in the sources read."}
-  family_religious_practice: {value: TODO}
+  family_religion: {value: "Church of England (Anglican)", certainty: 0.7, cites: [{source: S11, locator: "p. 10 (christening at St. Saviour's Church)"}, {source: S8, locator: "§1 Origins ('class, church and Empire')"}], how_known: "Mother's memoir records Anglican christening; Hodges notes the family's subordination to class, church and Empire."}
+  family_religious_practice: {value: "Nominal Church of England: infant baptism; public-school chapel culture (Sherborne)", certainty: 0.5, cites: [{source: S11, locator: "p. 10"}, {source: S8, locator: "§1 Origins (Sherborne)"}], how_known: "Baptism documented; practice intensity not described in the sources read, so 0.5."}
   parents_and_household:
     - {value: "Father, Julius Mathison Turing, of the Indian Civil Service, often abroad", name: "Julius Mathison Turing", role: father, certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
     - {value: "Mother, Ethel Sara Stoney, daughter of the chief engineer of the Madras railways", name: "Ethel Sara Turing (née Stoney)", role: mother, certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
@@ -80,6 +82,7 @@ childhood:
   early_science_exposure:
     - {value: "Chemistry experiments of his own at school; Einstein's relativity papers and Eddington's The Nature of the Physical World", certainty: 0.7, cites: [{source: S3, locator: "Biography, Sherborne paragraph"}], how_known: "MacTutor."}
   key_early_reading:
+    - {value: "Natural Wonders Every Child Should Know (gift from his mother; seminal early influence)", certainty: 0.7, cites: [{source: S8, locator: "§1 Origins"}, {source: S3, locator: "Biography, paragraph 1 (MacTutor does not name the title; Hodges does)"}], how_known: "Hodges short biography; MacTutor notes early science reading without the title."}
     - {value: "Eddington, The Nature of the Physical World", certainty: 0.7, cites: [{source: S3, locator: "Biography, Sherborne paragraph"}], how_known: "MacTutor."}
   childhood_mentors: []
   languages_in_childhood: {value: [English], certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}], how_known: "English family."}
@@ -107,21 +110,23 @@ worldview:
     - {code: ATHE, reason: "Coded at 0.5 (primary_system): Hodges calls his later thought 'atheistic' (S8; S9) and 'always committed to materialist explanation' (S5); the 1950 paper rejects theological arguments (S1). ATHE is a stub system file (flag, sourcing backlog).", cites: [{source: S8, locator: "§ on the computer after the war"}, {source: S9, locator: "paragraph on Manchester"}, {source: S5, locator: "§ on the 1950 paper"}, {source: S1, locator: "pp. 443–444"}]}
     - {code: AGNOS, reason: "Named alternative: none of his own words read denies God; his reply 'in theological terms' (S1, p. 443) is an argument he does not accept, not suspended judgment. AGNOS is a stub system file (flag).", cites: [{source: S1, locator: "p. 443"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, note: "Evidence exists but is indirect: Hodges speaks of his 'God-denying 'heretic'' status (S9) and 'atheistic' later thought (S8), but none of his own words read places or denies God; his 1950 reply 'in theological terms' is offered as an argument he does not accept ('this is mere speculation', S1, p. 443). Draft judgment (one line): not scored, because axes are scored from the person's own words (§6); the alternative v8 may prefer is A 4 at 0.5 on Hodges' reconstruction.", how_known: "Kept BELOW_THRESHOLD under the UNKNOWN/BELOW_THRESHOLD rule (P19): some evidence, too indirect to score."}
+    A_locus: {value: BELOW_THRESHOLD, note: "Evidence exists but is indirect: Hodges speaks of his 'God-denying 'heretic'' status (S9) and 'atheistic' later thought (S8), but none of his own words read places or denies God; his 1950 reply 'in theological terms' is offered as an argument he does not accept ('this is mere speculation', S1, p. 443). Deepen D1 re-checked Mind 1950, Nature of Spirit, Hodges short bio/IWM/SEP, Humanists UK, and searchable Enigma excerpts: still no first-person 'I do not believe in God' (P38). Draft judgment (one line): not scored, because axes are scored from the person's own words (§6); the alternative v8 may prefer is A 4 at 0.5 on Hodges' reconstruction (P49).", how_known: "Kept BELOW_THRESHOLD under the UNKNOWN/BELOW_THRESHOLD rule (P19): some evidence, too indirect to score. Consistent with P29 (ATHE at 0.5 with A BELOW)."}
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S1, locator: "pp. 443–444, 453"}]
-      how_known: "His own published paper (archive scan); a named alternative, so 0.7."
-      rationale: "Draft judgment (one line): leans LIO, not the pole, because the paper treats nature as lawful but grants that telepathy, if accepted, would overturn 'all our usual scientific ideas'. Scored on his account of nature (P6). He wrote that the statistical evidence 'at least for telepathy, is overwhelming' and that the idea that our bodies move 'simply according to the known laws of physics, together with some others not yet discovered but somewhat similar, would be one of the first to go' (S1, p. 453). Named alternative: 4, since he speaks of laws 'not yet discovered' rather than of miracle, and the 1950 paper never admits petition or exemption."
+      support: corroborated
+      cites: [{source: S1, locator: "pp. 443–444, 453"}, {source: S10, locator: "pp. 37–38 (opening; 'well-known physical laws')"}]
+      how_known: "Two of his own published papers (Mind 1950 archive scan; Morphogenesis 1952 Phil. Trans.); a named alternative, so 0.7. Independent primaries → corroborated (P48)."
+      rationale: "Draft judgment (one line): leans LIO, not the pole, because Mind treats nature as lawful but grants that telepathy, if accepted, would overturn 'all our usual scientific ideas'. Scored on his account of nature (P6). He wrote that the statistical evidence 'at least for telepathy, is overwhelming' and that the idea that our bodies move 'simply according to the known laws of physics, together with some others not yet discovered but somewhat similar, would be one of the first to go' (S1, p. 453). Morphogenesis independently professes the lawful pole: 'The theory does not make any new hypotheses; it merely suggests that certain well-known physical laws are sufficient to account for many of the facts' (S10, p. 37), with diffusion and mass-action as the governing laws (S10, p. 39). Named alternative: 4, since he speaks of laws 'not yet discovered' rather than of miracle, and neither paper admits petition or exemption; Morphogenesis alone would lean toward 4."
     C_ledger: {value: BELOW_THRESHOLD, note: "Some indirect evidence: in 1950, against the objection that 'God has given an immortal soul to every man and woman, but not to any other animal or to machines', he wrote 'I am unable to accept any part of this' and that he would find it more convincing 'if animals were classed with men' (S1, p. 443). That concerns the scope of the moral community, which P7 places on C, but it says nothing on reward or punishment of persons. The 1932 survival of the spirit (S2) is before the working years and has no ledger. Draft judgment (one line): too indirect to score; the alternative is C 4 at 0.5.", how_known: "The p. 443 passage moved here from E under rule P7; BELOW_THRESHOLD under P19."}
     D_authority:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S1, locator: "pp. 443–444"}]
-      how_known: "His own published paper (archive scan); a named alternative, so 0.7."
+      how_known: "His own published paper (archive scan); a named alternative, so 0.7. Single source (P48)."
       rationale: "Draft judgment (one line): scripture and theology have no authority over questions of fact for him. 'I am not very impressed with theological arguments whatever they may be used to support. Such arguments have often been found unsatisfactory in the past' (p. 443); the Joshua and Psalm texts against Copernicus 'With our present knowledge such an argument appears futile' (p. 444). Named alternative: 3, because he still offers a reply 'in theological terms' (p. 443), though as 'mere speculation'."
     E_scope: {value: BELOW_THRESHOLD, note: "Scored on the world's order (P7). Only indirect evidence: in 1950 he set out, as an objection, 'We like to believe that Man is in some subtle way superior to the rest of creation' and answered that 'Consolation would be more appropriate: perhaps this should be sought in the transmigration of souls' (S1, p. 444), which mocks the in-group view without stating his own account of the world's order. The p. 443 'animals classed with men' passage is scored on C (P7). Draft judgment (one line): too indirect to score.", how_known: "BELOW_THRESHOLD under P19: some evidence, too weak. The earlier alternative (E 4 from p. 443) is dropped because that passage now goes to C (P7)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD, so the P4 test cannot be applied."}
@@ -166,6 +171,14 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary facsimile"
       verified_on: 2026-10-02
+    - text: "The theory does not make any new hypotheses; it merely suggests that certain well-known physical laws are sufficient to account for many of the facts."
+      cites: [{source: S10, locator: "p. 37"}]
+      date: "1952-08-14"
+      context: "Opening of The Chemical Basis of Morphogenesis; reaction–diffusion model of embryonic pattern formation."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary facsimile"
+      verified_on: 2026-10-23
     - text: "Personally I think that spirit is really eternally connected with matter but certainly not always by the same kind of body."
       cites: [{source: S2, locator: "sheet 4"}]
       date: "1932"
@@ -177,14 +190,14 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "As a 19-year-old student he wrote out a belief in the survival of the spirit after death ('Nature of Spirit'); by 1950 he rejected theological arguments and, as Hodges puts it, enjoyed calling the computability of mind 'heresy' to the believers in souls beyond material description", year: "1932 to late 1940s", certainty: 0.7, cites: [{source: S2, locator: "sheets 4–5"}, {source: S6, locator: "'Nature of Spirit' paragraph"}, {source: S5, locator: "§ on mechanising mind ('heresy')"}, {source: S1, locator: "p. 443"}], how_known: "His own manuscript for the start; Hodges for the later view; the change itself is Hodges' reading."}
-  coder_notes: "ATHE and AGNOS are stub system files (flag; ATHE coded under P14, sourcing backlog). Hodges' short biography (S8) and IWM talk (S9) are on his own website; together with S5 and S6 they are one author. Mind 1950 was read on the King's College archive offprint scan (AMT/B/19; PDF page = journal page − 432) because the OUP page was blocked; the scan is the original printing, so this is not an unofficial web copy. The 1932 'Nature of Spirit' sheet 5 also says that when the body dies 'the spirit finds a new body sooner or later perhaps immediately' (handwriting read by eye, not quoted as a statement). The Morcom quotation is MacTutor's secondary quotation. No recorded interview of Turing on religion was found."
+  coder_notes: "ATHE and AGNOS are stub system files (flag; ATHE coded under P14, sourcing backlog). Hodges' short biography (S8) and IWM talk (S9) are on his own website; together with S5 and S6 they are one author (one reconstruction for ATHE). Mind 1950 was read on the King's College archive offprint scan (AMT/B/19; PDF page = journal page − 432) because the OUP page was blocked; the scan is the original printing, so this is not an unofficial web copy. Morphogenesis (S10) read on the DAMTP teaching PDF of Phil. Trans. B 237 (1952). Sara Turing memoir (S11) read on the Cambridge University Press 2012 excerpt PDF. The 1932 'Nature of Spirit' sheet 5 also says that when the body dies 'the spirit finds a new body sooner or later perhaps immediately' (handwriting read by eye, not quoted as a statement). The Morcom quotation is MacTutor's secondary quotation. No recorded interview of Turing on religion was found; no first-person God denial located this deepen."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
-  ethnic_or_communal_heritage: {value: "English; father in the Indian Civil Service", certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}], how_known: "MacTutor."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  ethnic_or_communal_heritage: {value: "English; father in the Indian Civil Service", certainty: 0.7, cites: [{source: S3, locator: "Biography, paragraph 1"}, {source: S8, locator: "§1 Origins"}], how_known: "MacTutor and Hodges."}
+  religious_heritage_by_birth: {value: "Church of England (Anglican)", certainty: 0.7, cites: [{source: S11, locator: "p. 10 (christening)"}, {source: S8, locator: "§1 Origins ('class, church and Empire')"}], how_known: "Infant Anglican baptism; family of the English gentry/ICS class that Hodges ties to church and Empire. Context only."}
+  baptism_or_initiation: {value: "Christened 7 July 1912 at St. Saviour's Church, Warrington Avenue, London (fifteen days after birth)", certainty: 0.7, cites: [{source: S11, locator: "p. 10"}], how_known: "Mother's memoir (Sara Turing). Context only."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No catechism or Sunday-school detail read (P19)."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -218,8 +231,11 @@ review:
   data_quality_flags:
     - "Britannica read as its first page only."
     - "p. 453 of Mind 1950 read on the 110 dpi image only (not zoomed)."
+    - "Morphogenesis read on DAMTP teaching PDF (OCR of Phil. Trans.), not a publisher HTML."
+    - "Sara Turing christening from CUP 2012 excerpt PDF pagination (p. 10)."
   open_questions:
-    - "Hodges, Alan Turing: The Enigma (1983), for later statements on religion; Turing's letters in the King's archive."
+    - "Full text of Hodges, Alan Turing: The Enigma (1983/2014), and Turing's letters in the King's archive, for any first-person denial of God that would score A under P38."
+    - "Sherborne confirmation (reported 7 November 1927 by Old Shirburnian Society): page blocked this pass; corroborate baptism/confirmation practice."
     - "ATHE is a stub system file; coded under P14 and noted for the sourcing backlog."
 
 sources:
@@ -232,6 +248,7 @@ sources:
     url: "https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-19"
     accessed: 2026-10-02
     reliability_note: "Archive scan of the original printing; pp. 443, 444 and 453 checked on the page images (PDF page = journal page − 432)."
+    source_quality: "primary / own words"
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S2
     type: primary
@@ -242,6 +259,7 @@ sources:
     url: "https://turingarchive.kings.cam.ac.uk/unpublished-manuscripts-and-drafts-amtc/amt-c-29"
     accessed: 2026-10-02
     reliability_note: "Facsimile of the handwriting; read by eye. Date from the archive catalogue."
+    source_quality: "primary / own words"
     used_for: [worldview, timing]
   - id: S3
     type: secondary
@@ -251,6 +269,7 @@ sources:
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Turing/"
     accessed: 2026-10-02
     reliability_note: "Biography; cited by paragraph description."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators, review]
   - id: S4
     type: tertiary
@@ -260,6 +279,7 @@ sources:
     url: "https://www.britannica.com/biography/Alan-Turing"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, institutions]
   - id: S5
     type: secondary
@@ -270,6 +290,7 @@ sources:
     url: "https://plato.stanford.edu/entries/turing/"
     accessed: 2026-10-02
     reliability_note: "Scholarly encyclopedia entry by his biographer."
+    source_quality: "reference entry"
     used_for: [worldview, timing]
   - id: S6
     type: secondary
@@ -279,6 +300,7 @@ sources:
     url: "https://www.turing.org.uk/scrapbook/spirit.html"
     accessed: 2026-10-02
     reliability_note: "Biographer's website; used for the context of the 1932 manuscript only."
+    source_quality: "other"
     used_for: [worldview]
   - id: S7
     type: secondary
@@ -288,6 +310,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
   - id: S8
     type: secondary
@@ -298,6 +321,7 @@ sources:
     url: "https://www.turing.org.uk/publications/dnb.html"
     accessed: 2026-10-02
     reliability_note: "His biographer's own summary of Alan Turing: The Enigma, on his website (© Andrew Hodges, 1995)."
+    source_quality: "scholarly reconstruction"
     used_for: [worldview, timing]
   - id: S9
     type: secondary
@@ -308,7 +332,30 @@ sources:
     url: "https://www.turing.org.uk/publications/iwm.html"
     accessed: 2026-10-02
     reliability_note: "Published talk by his biographer on his website; same author as S5, S6 and S8."
+    source_quality: "scholarly reconstruction"
     used_for: [worldview]
+  - id: S10
+    type: primary
+    kind: "published work by the subject"
+    author: "A. M. Turing"
+    year: 1952
+    citation: 'Turing, A. M. "The Chemical Basis of Morphogenesis." Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences 237, no. 641 (14 August 1952): 37–72. Teaching PDF, DAMTP Cambridge. https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/old_literature/Turing1952.pdf.'
+    url: "https://www.damtp.cam.ac.uk/user/gold/pdfs/teaching/old_literature/Turing1952.pdf"
+    accessed: 2026-10-23
+    source_quality: "primary / own words"
+    reliability_note: "Scan/OCR of the Phil. Trans. printing; opening (pp. 37–38) and diffusion/mass-action laws (p. 39) checked in the text layer."
+    used_for: [contribution, worldview]
+  - id: S11
+    type: secondary
+    kind: "scholarly edition"
+    author: "Sara Turing"
+    year: 2012
+    citation: 'Turing, Sara. Alan M. Turing. Centenary edition. Cambridge: Cambridge University Press, 2012. Excerpt PDF ("Mainly Biographical" / Childhood chapter), Cambridge University Press assets. https://assets.cambridge.org/97811070/20580/excerpt/9781107020580_excerpt.pdf.'
+    url: "https://assets.cambridge.org/97811070/20580/excerpt/9781107020580_excerpt.pdf"
+    accessed: 2026-10-23
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Mother's memoir (first published 1959); CUP 2012 excerpt PDF; christening sentence checked on p. 10 of the excerpt pagination."
+    used_for: [childhood, heritage]
 ---
 
 # Alan Turing
@@ -317,7 +364,7 @@ sources:
 
 ## Summary
 
-Alan Mathison Turing (1912–1954), English mathematician, defined the Turing machine and proved the Entscheidungsproblem unsolvable (1936), broke German ciphers at Bletchley Park, and proposed the imitation game for machine intelligence [S3; S4; S1]. In 1950 he wrote "I am not very impressed with theological arguments whatever they may be used to support" [S1, p. 443]; his biographer calls his later thought "strongly determinist and atheistic in character" [S8]. Draft under v8's stage 3 rulings (P14–P28): primary_system ATHE (0.5, scholarly reconstruction) (P14). Draft scores: B 3 (0.7), D 4 (0.7); A, C, E below threshold; mid_basin below threshold.
+Alan Mathison Turing (1912–1954), English mathematician, defined the Turing machine and proved the Entscheidungsproblem unsolvable (1936), broke German ciphers at Bletchley Park, proposed the imitation game for machine intelligence, and founded the mathematical theory of morphogenesis [S3; S4; S1; S10]. In 1950 he wrote "I am not very impressed with theological arguments whatever they may be used to support" [S1, p. 443]; his biographer calls his later thought "strongly determinist and atheistic in character" [S8]. Draft under v8's stage 3 rulings (P14–P28) and deepen D1 (P47–P50): primary_system ATHE (0.5, scholarly reconstruction) (P14). Draft scores: B 3 (0.7, corroborated S1+S10), D 4 (0.7, single); A, C, E below threshold; mid_basin below threshold. Still unplotted (A BELOW).
 
 ## Life and work
 
@@ -325,19 +372,19 @@ Sherborne School, King's College Cambridge (1931), Princeton under Church (1936�
 
 ## Contribution and impact
 
-Computability (1936), codebreaking, the imitation game (1950) and morphogenesis (1952) [S3; S1].
+Computability (1936), codebreaking, the imitation game (1950) and morphogenesis (1952) [S3; S1; S10].
 
 ## Childhood and education
 
-His parents were often in India and he was left with family friends in England [S3]. At Sherborne he read Einstein and Eddington; the death of his friend Christopher Morcom in 1930 shook him [S3].
+His parents were often in India and he was left with family friends in England [S3]. He was christened at St. Saviour's Church, London, on 7 July 1912 [S11]. At Sherborne he read Einstein and Eddington; early reading included Natural Wonders Every Child Should Know [S3; S8]; the death of his friend Christopher Morcom in 1930 shook him [S3].
 
 ## Adult working worldview
 
-He rejected the theological objection to thinking machines and the scriptural case against Copernicus [S1, pp. 443–444], but granted that the evidence for telepathy was "overwhelming" [S1, p. 453]. Hodges calls him "always committed to materialist explanation" [S5] and his later thought "strongly determinist and atheistic in character" [S8]. In 1932, before his working years, he had written that the spirit survives the body [S2, sheet 4; S6].
+He rejected the theological objection to thinking machines and the scriptural case against Copernicus [S1, pp. 443–444], but granted that the evidence for telepathy was "overwhelming" [S1, p. 453]. Independently, his morphogenesis paper holds that "certain well-known physical laws are sufficient" for the facts of pattern formation [S10, p. 37]. Hodges calls him "always committed to materialist explanation" [S5] and his later thought "strongly determinist and atheistic in character" [S8]. In 1932, before his working years, he had written that the spirit survives the body [S2, sheet 4; S6]. No first-person denial of God was found this deepen; A stays below threshold.
 
 ## Heritage (context only)
 
-English family; father in the Indian Civil Service [S3]. Context only.
+English family; father in the Indian Civil Service [S3; S8]. Church of England by infant baptism (St. Saviour's, 1912) [S11]. Context only.
 
 ## Timing
 
@@ -349,10 +396,12 @@ Everything in this section is Lane B: labeled belief, not a finding. Form presen
 
 ## Open questions
 
-- Hodges' biography and the King's archive letters for later statements on religion.
+- Full Hodges Enigma and King's archive letters for any first-person God denial (A under P38).
+- Sherborne confirmation report (Old Shirburnian; page blocked this pass).
 - ATHE is a stub system file; coded under P14 (sourcing backlog).
 
 ## Research log
 
 - 2026-10-02: Read MacTutor, Britannica (Copeland, first page), Hodges' SEP entry and Scrapbook page; read Mind 1950 on the King's College archive scan (OUP page blocked) and the 'Nature of Spirit' facsimile.
 - 2026-10-02 (v8 method rulings): Reopened Hodges' SEP entry; read Hodges' short biography (1995) and IWM talk (2003) on turing.org.uk; reopened Mind 1950 pp. 443–444 on the scan.
+- 2026-10-23: Deepen D1 (queue #5). Re-read Mind 1950 scored pages; Morphogenesis 1952 (S10); Sara Turing CUP excerpt (S11); Hodges DNB/IWM/SEP; Humanists UK; searchable Enigma excerpts. P47 labels. B support single → corroborated. A stays BELOW. No fallacy_catalog (Jason 2026-10-23).
