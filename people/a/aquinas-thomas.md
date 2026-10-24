@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 9
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #132, F4 rank 135). Polish only: P47 source_quality on S1–S8; P48 support corroborated written on A–E (E cites gained S6 Benziger print already used for I q. 22 / q. 105 statements — no score change); P50 Wikipedia EN (S8) dual bio agrees birth Roccasecca c. 1225 / death Fossanova 1274-03-07 with Britannica. Parents named Landulf of Aquino and Theodora (Galluccio / of Teano) from S8 at 0.7. family_religious_practice filled from S1–S3 (Latin Catholic noble household; Benedictine oblation plan). baptism_or_initiation and childhood_catechism: UNKNOWN (no dated baptism or named catechism in sources). CLASS_THEISM @1.0; A 1 @1.0; B 3 @0.7; mid true @0.7 unchanged — already dark filled; not chart-moving. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from the Summa theologiae (English Dominican translation) and three reference sources. mid_basin UNKNOWN: B_cause scored 2, which the P4 test does not cover. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin changed from UNKNOWN to TODO with a note: the evidence is in, but P4 does not say whether B is scored on his theology or his account of nature (new open item P6). key_early_reading changed from an empty list to UNKNOWN, as the coding guide asks."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P6 decided by Jason (2026-10-02): B_cause is scored on the account of nature. B_cause changed from 2 to 3 at 1.0, with the theology-wide reading (2) kept in the rationale; added the I q. 105 a. 5 statement. mid_basin changed from TODO to true at 1.0. Not reviewed."}
@@ -44,8 +45,8 @@ basics:
       approx: true
       calendar: julian
       certainty: 0.7
-      cites: [{source: S2, locator: "§1.1 ('around the year 1225')"}, {source: S1, locator: "opening sentence ('1224/25')"}, {source: S3, locator: "§1.a ('between 1224 and 1226')"}]
-      how_known: "Three sources agree on about 1225 but none gives a day; so 0.7."
+      cites: [{source: S2, locator: "§1.1 ('around the year 1225')"}, {source: S1, locator: "opening sentence ('1224/25')"}, {source: S3, locator: "§1.a ('between 1224 and 1226')"}, {source: S8, locator: "infobox (c. 1225)"}]
+      how_known: "Three reference sources agree on about 1225 but none gives a day; Wikipedia EN agrees (P50); so 0.7."
       alternatives:
         - {value: "1224", cites: [{source: S1, locator: "opening sentence"}, {source: S3, locator: "§1.a"}], note: "Britannica gives 1224/25; IEP gives a range 1224–1226."}
     place:
@@ -53,17 +54,17 @@ basics:
       modern_name: "Roccasecca, Lazio, Italy"
       polity_then: "Kingdom of Sicily"
       certainty: 1.0
-      cites: [{source: S1, locator: "opening sentence"}, {source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1 (family castle at Roccasecca)"}]
-      how_known: "Three sources agree."
+      cites: [{source: S1, locator: "opening sentence"}, {source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1 (family castle at Roccasecca)"}, {source: S8, locator: "infobox / Early life (Roccasecca)"}]
+      how_known: "Three reference sources agree; Wikipedia EN agrees (P50)."
   death:
-    date: {value: "1274-03-07", calendar: julian, certainty: 1.0, cites: [{source: S1, locator: "opening sentence; Last years at Naples"}, {source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Three sources agree."}
+    date: {value: "1274-03-07", calendar: julian, certainty: 1.0, cites: [{source: S1, locator: "opening sentence; Last years at Naples"}, {source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}, {source: S8, locator: "infobox (7 March 1274)"}], how_known: "Three reference sources agree; Wikipedia EN agrees (P50)."}
     place:
       value: "Cistercian abbey of Fossanova, near Terracina"
       modern_name: "Fossanova, Priverno, Lazio, Italy"
       polity_then: "Papal States"
       certainty: 1.0
-      cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "§1.1"}]
-      how_known: "Two sources agree; he fell ill on his way to the Second Council of Lyon (S1, S3)."
+      cites: [{source: S1, locator: "opening sentence"}, {source: S2, locator: "§1.1"}, {source: S8, locator: "infobox / death (Fossanova)"}]
+      how_known: "Two reference sources agree; Wikipedia EN agrees (P50); he fell ill on his way to the Second Council of Lyon (S1, S3)."
   first_lasting_contribution_year: {value: 1252, approx: true, certainty: 0.7, cites: [{source: S3, locator: "References: Thomas' Works (De ente et essentia, 1252–1253)"}, {source: S2, locator: "§1.2; §4 (essence and existence)"}], how_known: "Year On Being and Essence was begun, per IEP's work list. Its account of essence and existence is listed as a lasting contribution below. Dated only to a range, so 0.7."}
   era_bucket: {value: "500 to 1399", certainty: 0.7, cites: [{source: S3, locator: "References: Thomas' Works"}], how_known: "Derived from first_lasting_contribution_year (1252) under the era buckets (decision P2). Any date in his career gives the same bucket."}
   region_of_birth: {value: "Southern Europe", certainty: 1.0, cites: [{source: S1, locator: "opening sentence"}], how_known: "Born in what is now Italy; Italy is Southern Europe in data/reference/regions.csv (UN M49 sub-region, decision P3)."}
@@ -100,10 +101,11 @@ contribution:
 
 childhood:
   family_religion: {value: "Latin (Roman) Catholic. His family gave him as a boy to the Benedictine abbey of Monte Cassino as an oblate, hoping he would one day become its abbot.", certainty: 1.0, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Three sources agree on the oblation and the family's hopes. 'Catholic' is implied by the oblation rather than stated."}
-  family_religious_practice: {value: TODO, note: "No account of the household's worship in the sources read. Torrell's biography (S2's main reference) may have it."}
+  family_religious_practice: {value: "Latin (Roman) Catholic noble household. Parents placed him as a Benedictine oblate at Monte Cassino (c. 1230), hoping he would become its abbot — monastic formation was the family's plan for a younger son.", certainty: 0.7, cites: [{source: S1, locator: "Early years"}, {source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Three sources agree on the oblation and the family's abbacy hopes. No day-to-day household liturgy described; Torrell unread this pass."}
   parents_and_household:
-    - {value: "Father of Lombard origin, mother of Norman descent; the family held a modest feudal domain on the disputed border between the emperor and the pope and served Emperor Frederick II", role: parents, certainty: 0.7, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source; consistent with S2 and S3 on the family castle. The parents' names are not given in the sources read."}
-    - {value: "Youngest of at least nine children; the youngest of four boys", role: "sibling position", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Two sources."}
+    - {value: "Landulf (Landulf VI) of Aquino, Lord of Roccasecca — father; Lombard origin; miles in the service of Emperor Frederick II", role: father, certainty: 0.7, cites: [{source: S8, locator: "Early life (Landulf VI of Aquino)"}, {source: S1, locator: "Early years (Lombard origin; served Frederick II)"}], how_known: "Wikipedia EN names Landulf VI (citing Torrell / Geisler tradition); Britannica gives Lombard origin and Frederick II service without the personal name."}
+    - {value: "Theodora (Galluccio / of Teano), Countess of Teano — mother; Norman descent (Rossi / Caracciolo branch per Wikipedia)", role: mother, certainty: 0.7, cites: [{source: S8, locator: "Early life (Theodora Galluccio, Countess of Teano)"}, {source: S1, locator: "Early years (Norman heritage)"}], how_known: "Wikipedia EN names Theodora; Britannica gives Norman heritage without the personal name."}
+    - {value: "Youngest of at least nine children; the youngest of four boys", role: "sibling position", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}, {source: S8, locator: "Early life (youngest of nine)"}], how_known: "Two reference sources; Wikipedia EN agrees."}
   household_circumstances: {value: "A wealthy family that presided over a prominent castle at Roccasecca, held by the Aquino family for over a century", certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S3, locator: "§1.a"}], how_known: "Two sources agree."}
   schooling:
     - {value: "Oblate at the Benedictine abbey of Monte Cassino, where he received his early education; he left in 1239 when the emperor expelled the monks", stage: "elementary school", institution: "Abbey of Monte Cassino", years: "c. 1230–1239", ages: "c. 5–14", certainty: 1.0, cites: [{source: S1, locator: "Early years ('after nine years')"}, {source: S3, locator: "§1.a ('from approximately 5 to 15 years of age')"}, {source: S2, locator: "§1.1"}], how_known: "Three sources agree on the abbey; S1's nine years ending 1239 and S3's ages 5 to 15 agree roughly.", run_by: "religious body"}
@@ -150,36 +152,41 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S4, locator: "I q. 3 a. 8; q. 8 a. 1"}, {source: S6, locator: "I q. 3 a. 8; q. 8 a. 1"}, {source: S2, locator: "§2"}]
-      how_known: "Summa theologiae; written profession, so 1.0."
+      how_known: "Summa theologiae; written profession, so 1.0. P48: corroborated (S4+S6+S2)."
       rationale: "Leans to the transcendent-person pole. God is the first efficient cause, not the world-soul and not the form or matter of anything (I q. 3 a. 8), and has intellect and will. But he is in all things, 'as an agent is present to that upon which it works' (I q. 8 a. 1), and his personhood is spoken of by analogy. So 1, not 0. This matches the CLASS_THEISM system record (A 1)."
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "I q. 22 a. 3; q. 105 a. 5–7; II-II q. 83 a. 2"}, {source: S1, locator: "Years at the papal Curia"}, {source: S3, locator: "§2 (SCG I.6 on miracles)"}]
-      how_known: "Summa theologiae, so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): God acting outside the order of nature (ST I q. 105 a. 6–8) is part of his own account of how God governs nature, and the theology-wide reading scores 2. Lowered from 1.0 after the lens audit (2026-10-02)."
+      support: corroborated
+      cites: [{source: S4, locator: "I q. 22 a. 3; q. 105 a. 5–7; II-II q. 83 a. 2"}, {source: S6, locator: "I q. 22 a. 3; q. 105 a. 5–7"}, {source: S1, locator: "Years at the papal Curia"}, {source: S3, locator: "§2 (SCG I.6 on miracles)"}]
+      how_known: "Summa theologiae, so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): God acting outside the order of nature (ST I q. 105 a. 6–8) is part of his own account of how God governs nature, and the theology-wide reading scores 2. Lowered from 1.0 after the lens audit (2026-10-02). P48: corroborated (S4+S6+S1+S3); deepen D1 added S6 print cite already checked for the I-part quotations."
       rationale: "Scored on his account of nature, as decision P6 asks. Leans LIO with a stated, limited exception. Nature runs by created causes with real powers of their own: he rejects the view that 'it is not fire that gives heat, but God in the fire', and holds that 'God works in things in such a manner that things have their proper operation' (I q. 105 a. 5). God governs lower things through higher ones so that 'the dignity of causality is imparted even to creatures' (I q. 22 a. 3), and petition does not change God (II-II q. 83 a. 2). Britannica says he held that nature 'has necessary laws' and avoided 'a naive recourse to the miraculous' (S1). The exception is the miracle: God 'can do something outside this order created by Him, when He chooses' (I q. 105 a. 6), and such works are miracles (a. 7). So 3, the score the CLASS_THEISM system record gives Thomism. Theology-wide reading (recorded as P6 asks): in his theology the biblical miracles are a working part of the case for the faith (S3, SCG I.6), which would score 2; that was this record's score before P6."
     C_ledger:
       value: 1
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S4, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}, {source: S6, locator: "I-II q. 87 a. 1, 3; q. 114 a. 3; I q. 23 a. 3"}]
-      how_known: "Summa theologiae; written profession, so 1.0."
+      how_known: "Summa theologiae; written profession, so 1.0. P48: corroborated (S4+S6)."
       rationale: "Leans to personal reward and punishment: sins that destroy charity 'incur a debt of eternal punishment' (I-II q. 87 a. 3), and work done in grace merits eternal life 'condignly' (I-II q. 114 a. 3). The account is limited by its form: punishment follows because sin disturbs an order and 'the effect remains so long as the cause remains' (q. 87 a. 3), which is close to consequence. So 1, not 0. Under decision P7 (2026-10-02), the scope of salvation is recorded here, not on E: 'God does reprobate some' (I q. 23 a. 3), and salvation needs revealed truths (I q. 1 a. 1). Both fit a score of 1 and do not change it."
     D_authority:
       value: 1
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S4, locator: "I q. 1 a. 1, 6, 8"}, {source: S6, locator: "I q. 1 a. 1, 6, 8"}, {source: S2, locator: "§2"}, {source: S1, locator: "Years at the papal Curia"}]
-      how_known: "Summa theologiae; written profession, so 1.0."
+      how_known: "Summa theologiae; written profession, so 1.0. P48: corroborated (S4+S6+S2+S1)."
       rationale: "Revelation outranks reason, with a large domain left to reason. Natural reason proves that God exists and much of what God is (S2), and 'grace does not destroy nature, but perfects it' (I q. 1 a. 8). But some truths needed for salvation exceed reason and come only by revelation (I q. 1 a. 1), and 'Whatsoever is found in other sciences contrary to any truth of this science, must be condemned as false' (I q. 1 a. 6). When they conflict revelation wins, so 1. The CLASS_THEISM system record scores the code 2; for Aquinas himself the stated ranking points to 1."
     E_scope:
       value: 3
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S4, locator: "I q. 22 a. 2 and ad 4, ad 5; q. 105 a. 5–7; II-II q. 83 a. 2"}]
-      how_known: "Summa theologiae, so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 2 (CODING_GUIDE §3; see the rationale). Rescored under decision P7 (2026-10-02): before P7 this was 2, scored on the natural order and the scope of salvation together."
+      support: corroborated
+      cites: [{source: S4, locator: "I q. 22 a. 2 and ad 4, ad 5; q. 105 a. 5–7; II-II q. 83 a. 2"}, {source: S6, locator: "I q. 22 a. 2 and ad 4, ad 5; q. 105 a. 5–7"}]
+      how_known: "Summa theologiae, so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 2 (CODING_GUIDE §3; see the rationale). Rescored under decision P7 (2026-10-02): before P7 this was 2, scored on the natural order and the scope of salvation together. P48: corroborated — deepen D1 added S6 Benziger print cite (same I-part passages already statement-checked); score unchanged."
       rationale: "Scored on the world's order (decision P7). Leans LIO with a stated, limited exception. One providence covers every kind of thing: 'all things are subject to divine providence, not only in general, but even in their own individual selves' (I q. 22 a. 2), and individual irrational creatures do not 'escape the care of divine providence' (ad 5). Created causes keep 'their proper operation' (I q. 105 a. 5), and prayer does not change God's disposition (II-II q. 83 a. 2). The limited exception is the miracle: God 'can do something outside this order created by Him, when He chooses' (I q. 105 a. 6–7). So 3, the score CLASS_THEISM gives the code. Named alternative 2: providence covers the just 'in a certain more excellent way than over the wicked', since God 'prevents anything happening which would impede their final salvation' (I q. 22 a. 2 ad 4). That is a favour in this-world providence for a group, though it is aimed at salvation. Reprobation ('God does reprobate some', I q. 23 a. 3) and salvation needing revealed truths (I q. 1 a. 1) used to pull this score to 2. Under P7 they are scored on C (see C_ledger)."
   mid_basin:
     value: true
@@ -319,14 +326,14 @@ worldview:
       note: "Reported speech: never a written profession. Not used for any score."
   changes_over_life:
     - {value: "Stopped writing, leaving the Summa theologiae unfinished, after a powerful religious experience while writing on the sacraments", year: 1273, age: "c. 48", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Two sources agree. It ends his writing; it is not a change of system."}
-  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B, D and E. B is 3 on his account of nature (decision P6, 2026-10-02), matching the CLASS_THEISM system record; on his whole theology it would be 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). D = 1, where the system record has 2 for the code as a whole (between Thomism and falsafa); that 2 is not a reading of Aquinas, whose stated ranking (I q. 1 a. 6) is explicit, so D stays at 1.0. mid_basin is true under the P4 test as amended by P6. E = 3 on the world's order (decision P7); the salvation reading that gave 2 is now on C, and the ad 4 favour to the just keeps E at 0.7. Translation: all quotations are from the 1920 English Dominican translation, not the Latin."
+  coder_notes: "Code and axes rest on his own published teaching, so certainties are high. The judgement calls are B, D and E. B is 3 on his account of nature (decision P6, 2026-10-02), matching the CLASS_THEISM system record; on his whole theology it would be 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). D = 1, where the system record has 2 for the code as a whole (between Thomism and falsafa); that 2 is not a reading of Aquinas, whose stated ranking (I q. 1 a. 6) is explicit, so D stays at 1.0. mid_basin is true under the P4 test as amended by P6. E = 3 on the world's order (decision P7); the salvation reading that gave 2 is now on C, and the ad 4 favour to the just keeps E at 0.7. Translation: all quotations are from the 1920 English Dominican translation, not the Latin. Deepen D1 2026-10-24: P47/P48/P50 polish; A–E support corroborated; scores unchanged; already dark filled; not chart-moving. No fallacy_catalog; figures not refreshed."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Southern Italian minor nobility; father of Lombard origin, mother of Norman heritage", certainty: 0.7, cites: [{source: S1, locator: "Early years"}], how_known: "One signed reference source."}
   religious_heritage_by_birth: {value: "Latin (Roman) Catholic", certainty: 0.7, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}], how_known: "Implied by his oblation at Monte Cassino; not stated in those words."}
-  baptism_or_initiation: {value: TODO, note: "No baptism record in the sources read. Oblation at Monte Cassino (c. 1230) is recorded under childhood.schooling."}
-  childhood_catechism: {value: TODO, note: "Not described in the sources read; Torrell's Saint Thomas Aquinas, vol. 1, ch. 1 is the place to look."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No dated baptism record in S1–S3 or S8. Childhood religious initiation is the Benedictine oblation at Monte Cassino c. 1230 (recorded under childhood.schooling). Torrell unread this pass."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No named catechism or household instruction text in sources read. Monte Cassino monastic schooling implies liturgical formation; Torrell unread this pass."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -374,12 +381,13 @@ review:
     - "Monte Cassino: IEP gives ages about 5 to 15; Britannica 'nine years' ending 1239 (about ages 5–14)."
     - "Siblings: SEP 'youngest of at least nine children'; IEP 'one of nine children' and 'youngest of four boys'."
     - "IEP gives Ibn Sina's dates as 'c. 980-1087'; he died in 1037. Likely a typo in IEP."
-    - "Parents' names are not given in the sources read."
+    - "Parents' personal names filled from Wikipedia EN (S8) at 0.7; Britannica (S1) gives Lombard/Norman origin without names."
     - "All quotations are from the 1920 English Dominican translation (New Advent), not the Latin; SEP §1.1's 'straw' remark is reported speech and is not scored."
     - "Section numbers for S2 and S3 are the coder's reading of the fetched page headings."
+    - "P48 support corroborated on A–E (deepen D1); chart already dark filled from A/B."
   open_questions:
-    - "Read the Summa contra gentiles III (providence, miracles) and the Sentences commentary to date his views earlier and to check B_cause."
-    - "Torrell's biography for household practice, baptism and childhood instruction."
+    - "Optional: Summa contra gentiles III (providence, miracles) and Sentences commentary for earlier dating of B views — scores unlikely to move."
+    - "Optional: Torrell Saint Thomas Aquinas vol. 1 for dated baptism / household liturgy detail."
 
 sources:
   - id: S1
@@ -390,6 +398,7 @@ sources:
     url: "https://www.britannica.com/biography/Saint-Thomas-Aquinas"
     accessed: 2026-10-02
     reliability_note: "Signed article by a leading 20th-century Thomist historian; fact-checked by Britannica editors."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, lane_b, institutions, collaborators, review]
   - id: S2
     type: tertiary
@@ -400,6 +409,7 @@ sources:
     url: "https://plato.stanford.edu/entries/aquinas/"
     accessed: 2026-10-02
     reliability_note: "Peer-reviewed reference entry by a specialist in medieval philosophy."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, timing, institutions, collaborators, review]
   - id: S3
     type: tertiary
@@ -409,6 +419,7 @@ sources:
     url: "https://iep.utm.edu/thomas-aquinas/"
     accessed: 2026-10-02
     reliability_note: "Peer-reviewed reference entry. Its list of works with dates is used for the dating of the Summa parts. It has at least one date error (Ibn Sina)."
+    source_quality: "reference entry"
     used_for: [basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S4
     type: primary
@@ -419,6 +430,7 @@ sources:
     url: "https://www.newadvent.org/summa/"
     accessed: 2026-10-02
     reliability_note: "His own teaching work, in a standard English translation. Written c. 1265–1273 in Latin. Quotations are the translators' English. New Advent is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. Its wording was checked against the publisher's printings S6 and S7, so every field that cites S4 at 1.0 also cites S6 or S7."
+    source_quality: "unofficial web copy"
     used_for: [basics, contribution, worldview, timing, lane_b, collaborators]
   - id: S6
     type: primary
@@ -429,6 +441,7 @@ sources:
     url: "https://archive.org/details/summatheologica0001stth"
     accessed: 2026-10-02
     reliability_note: "Publisher's printing of the translation that S4 reproduces, scanned by the Internet Archive. Used to check S4's wording: every First Part and First Part of the Second Part passage that is quoted, or that a certainty-1.0 field cites, was found word for word in the scan's OCR text. Punctuation was checked on the page images for I q. 1 a. 1, a. 6 ad 2, a. 8 ad 2 and q. 8 a. 1 (pp. 1, 4, 6, 34). The quotations follow the printed punctuation."
+    source_quality: "archive scan (OCR only)"
     used_for: [basics, worldview, collaborators]
   - id: S7
     type: primary
@@ -439,6 +452,7 @@ sources:
     url: "https://archive.org/details/summatheologicao0000stth"
     accessed: 2026-10-02
     reliability_note: "Publisher's edition of the translation that S4 reproduces, in a library scan. Used to check the II-II q. 83 a. 2 quotation, which is on p. 34 (checked on the page image)."
+    source_quality: "archive scan (OCR only)"
     used_for: [worldview]
   - id: S5
     type: secondary
@@ -448,12 +462,23 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S8
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Thomas Aquinas.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Thomas_Aquinas. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Thomas_Aquinas"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with Britannica (S1): birth Roccasecca c. 1225 and death Fossanova 7 March 1274 agree. Also used for parent names (Landulf VI; Theodora Galluccio) not given in S1–S3. Worldview scores do not rest on Wikipedia."
+    source_quality: "reference entry"
+    used_for: [basics, childhood, heritage, review]
 ---
 
 # Thomas Aquinas
 
-> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A 1, C 1, D 1 at 1.0, and B 3 and E 3 at 0.7; mid_basin true at 0.7, a result that turns on decision P6 (B_cause scored on his account of nature).
+> Status: draft — unreviewed. Worldview coded CLASS_THEISM at 1.0; LIO axes A 1, C 1, D 1 at 1.0, and B 3 and E 3 at 0.7 (all support corroborated, P48); mid_basin true at 0.7 under P6. Chart: dark filled.
 
 ## Summary
 
@@ -480,11 +505,11 @@ The family held a modest feudal domain and served Emperor Frederick II. His fath
 
 Reason can prove that God exists and much of what God is: simple, unchanging, eternal [S4, I q. 2–9; S2, §2]. God is not the world-soul or any part of things. He is in all things "as an agent is present to that upon which it works" [S4, I q. 3 a. 8; q. 8 a. 1]. God governs lower things through higher ones, so that "the dignity of causality is imparted even to creatures" [S4, I q. 22 a. 3]. Prayer does not change God's plan [S4, II-II q. 83 a. 2]. But Created things have "their proper operation" [S4, I q. 105 a. 5]. But God "can do something outside this order created by Him, when He chooses", and such works are miracles [S4, I q. 105 a. 6–7]. Revealed theology judges the other sciences [S4, I q. 1 a. 6]. Grave sin incurs eternal punishment, and grace merits eternal life [S4, I-II q. 87 a. 3; q. 114 a. 3]. Natural law is the same for all [S4, I-II q. 94 a. 4], but "God does reprobate some" [S4, I q. 23 a. 3].
 
-Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1 at 1.0 from written profession. E 3 at 0.7: scored on the world's order (decision P7). All things, individual creatures included, are under one providence, with the miracle as the limited exception [S4, I q. 22 a. 2; q. 105 a. 6]. The named alternative is 2, because providence favours the just [S4, I q. 22 a. 2 ad 4]. Reprobation is scored on C. B 3 at 0.7: it is scored on his account of nature (decision P6), and on his whole theology it would be 2, so certainty is capped. mid_basin true at 0.7; the result turns on P6.
+Coding: CLASS_THEISM at 1.0. A 1, C 1, D 1 at 1.0 from written profession (support corroborated). E 3 at 0.7: scored on the world's order (decision P7); support corroborated (S4+S6). All things, individual creatures included, are under one providence, with the miracle as the limited exception [S4, I q. 22 a. 2; q. 105 a. 6]. The named alternative is 2, because providence favours the just [S4, I q. 22 a. 2 ad 4]. Reprobation is scored on C. B 3 at 0.7: scored on his account of nature (decision P6); on his whole theology it would be 2, so certainty is capped; support corroborated. mid_basin true at 0.7; the result turns on P6. Chart: dark filled.
 
 ## Heritage (context only)
 
-Southern Italian minor nobility, Lombard and Norman by descent; Catholic by birth [S1, Early years]. Heritage is recorded for context only. It is not a worldview code.
+Southern Italian minor nobility; father Landulf of Aquino (Lombard), mother Theodora of Teano (Norman) [S8; S1]. Catholic by birth [S1]. Heritage is recorded for context only. It is not a worldview code.
 
 ## Timing
 
@@ -496,10 +521,11 @@ Everything in this section is Lane B: labeled belief, not a finding. The form is
 
 ## Open questions
 
-- Read the Summa contra gentiles III and the Sentences commentary for earlier dates and a check on B.
-- Torrell's biography for household practice, baptism and early instruction.
+- Optional: Summa contra gentiles III and Sentences commentary for earlier B dating — scores unlikely to move.
+- Optional: Torrell for dated baptism / household liturgy.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main page and three subpages), SEP "Thomas Aquinas" (S2) and IEP "Thomas Aquinas" (S3). Read thirteen questions of the Summa theologiae in the New Advent transcription of the 1920 English Dominican translation (S4). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Torrell, the Leonine edition and the Latin text were not read.
 - 2026-10-02 (P7): E_scope rescored on the world's order. Re-fetched I q. 22 (New Advent, S4) and checked the two new I q. 22 a. 2 quotations word for word against the page text. No new sources.
+- 2026-10-24: Deepen D1 (queue #132). P47 on S1–S8; P48 support corroborated on A–E (E gained S6 print cite); P50 Wikipedia EN dual bio (S8); parents named; family_religious_practice filled; baptism/catechism UNKNOWN. Scores unchanged; already dark filled; not chart-moving. No fallacy_catalog; no figures/.
