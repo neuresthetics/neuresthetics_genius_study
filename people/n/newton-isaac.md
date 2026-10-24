@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 13
+  record_version: 14
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #42). P47 source_quality on S1–S16. P48 support: corroborated written on A–E (already computed). Re-verified General Scholium A/B quotes on Newton Project NATP00056. Baptism 1642/3-01-01 (OS) at St John the Baptist, Colsterworth (S15 parish; S16 College of Arms pedigree via Research Well). family_religious_practice filled from Iliffe Newton Project essay (S17): Colsterworth parish worship; CoE clergy stepfather/uncle; Puritan contacts. Schooling run_by added (schema 1.3). A 1 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -112,7 +113,7 @@ contribution:
 
 childhood:
   family_religion: {value: "Protestant. SEP says he was born into a Puritan family; his stepfather Barnabas Smith was the minister of the church at North Witham.", certainty: 0.7, cites: [{source: S3, locator: "§1.1 ('born into a Puritan family')"}, {source: S2, locator: "Biography (Smith 'the minister of the church at North Witham')"}, {source: S1, locator: "Formative influences ('the well-to-do minister Barnabas Smith')"}], how_known: "Only one source (SEP) names the family's religious leaning; the stepfather's office is in two."}
-  family_religious_practice: {value: TODO, note: "No account of the household's worship was found in the sources read. Westfall's Never at Rest or the Newton Project biography may have it."}
+  family_religious_practice: {value: "Parish worship at St John the Baptist, Colsterworth (family buried there). Mother's second household was a Church of England rectory (Barnabas Smith, North Witham); maternal uncle William Ayscough was rector of Burton Coggles. Local Colsterworth also had a Puritan minister intruded in the late 1640s; at Grantham he lodged with parliamentarian William Clarke — Puritan contacts alongside CoE clergy mentors (Iliffe).", certainty: 0.7, cites: [{source: S17, locator: "opening section (Colsterworth; Smith; Ayscough; Clarke)"}, {source: S15, locator: "Newton family worshipped at St John's; parents buried in vestry"}, {source: S3, locator: "§1.1 (Puritan family)"}], how_known: "Iliffe Newton Project essay (scholarly); Colsterworth parish page; SEP Puritan label already on file."}
   parents_and_household:
     - {value: "Father, Isaac Newton, a yeoman farmer who owned property and animals but could not sign his name; he died in October 1642, before his son was born", name: "Isaac Newton (senior)", role: father, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences"}], how_known: "Two sources agree that he died before the birth (they differ on two or three months; see data_quality_flags)."}
     - {value: "Mother, Hannah Ayscough. She remarried Barnabas Smith and moved to his village, leaving Isaac with her parents; she returned to Woolsthorpe after Smith died in 1653", name: "Hannah Ayscough (later Smith)", role: mother, certainty: 1.0, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}, {source: S3, locator: "§1.1"}], how_known: "Three sources agree on the facts; they differ on when she remarried (see data_quality_flags)."}
@@ -120,9 +121,9 @@ childhood:
     - {value: "Stepfather Barnabas Smith (d. 1653); three half-siblings from that marriage (one half-brother, two half-sisters)", name: "Barnabas Smith", role: stepfather, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences ('a son and two daughters')"}], how_known: "Two sources."}
   household_circumstances: {value: "Landed yeoman family; his mother became 'a lady of reasonable wealth and property' after her second marriage. He was the only son of the first marriage.", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences ('her now considerable property')"}], how_known: "Two sources agree."}
   schooling:
-    - {value: "Learned to read and write from his grandmother and mother", stage: home, certainty: 0.7, cites: [{source: S3, locator: "§1.1"}], how_known: "One source."}
-    - {value: "Free Grammar School, Grantham, lodging with the Clark family; taken out about 1659 to run the farm, then sent back in 1660 to prepare for the university, lodging with the headmaster, Stokes", stage: "grammar or secondary school", institution: "Free Grammar School, Grantham", years: "c. 1655–1661 (interrupted c. 1659–1660)", ages: "c. 13–19", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1 (boarding school from 1655; farm 1659)"}, {source: S1, locator: "Formative influences"}], how_known: "Three sources agree on the school and the interruption. Start year from S3; S2 says 'shortly after' 1653."}
-    - {value: "Trinity College, Cambridge: entered as a sizar on 5 June 1661; scholar 1664; BA April 1665", stage: university, institution: "Trinity College, Cambridge", years: "1661–1665", ages: "19–23", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences (matriculated June 1661)"}], how_known: "Two sources agree."}
+    - {value: "Learned to read and write from his grandmother and mother", stage: home, run_by: family, certainty: 0.7, cites: [{source: S3, locator: "§1.1"}], how_known: "One source."}
+    - {value: "Free Grammar School, Grantham, lodging with the Clark family; taken out about 1659 to run the farm, then sent back in 1660 to prepare for the university, lodging with the headmaster, Stokes", stage: "grammar or secondary school", run_by: "state or municipal", institution: "Free Grammar School, Grantham", years: "c. 1655–1661 (interrupted c. 1659–1660)", ages: "c. 13–19", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "§1.1 (boarding school from 1655; farm 1659)"}, {source: S1, locator: "Formative influences"}], how_known: "Three sources agree on the school and the interruption. Start year from S3; S2 says 'shortly after' 1653. Schema 1.3 run_by: municipal free grammar school."}
+    - {value: "Trinity College, Cambridge: entered as a sizar on 5 June 1661; scholar 1664; BA April 1665", stage: university, run_by: "religious body", institution: "Trinity College, Cambridge", years: "1661–1665", ages: "19–23", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences (matriculated June 1661)"}], how_known: "Two sources agree. Schema 1.3 run_by: Anglican college of the University of Cambridge."}
   early_mathematics: {value: "arithmetic only", ages: "to 18", description: "At Grantham he 'probably received no more than a smattering of arithmetic' (S1). MacTutor: 'There is no evidence that he learnt any mathematics' before university, and he did not read Euclid before 1663 (S2).", certainty: 0.7, cites: [{source: S1, locator: "Formative influences"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree that there is little or no evidence of school mathematics; both hedge ('probably'), so 0.7."}
   early_geometric_style_reasoning: {value: "None documented before 18. He first read Euclid's Elements (Barrow's edition) in autumn 1663, at 20, after failing to follow the mathematics in an astrology book; he then read the whole book.", certainty: 0.7, cites: [{source: S2, locator: "Biography (de Moivre's account)"}], how_known: "MacTutor reports de Moivre's account. One line of evidence."}
   early_science_exposure:
@@ -168,6 +169,7 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 1.0
+      support: corroborated
       cites: [{source: S5, locator: "pp. 389–390"}, {source: S6, locator: "p. 403"}, {source: S14, locator: "p. 379"}, {source: S4, locator: "§3"}]
       how_known: "Published texts (General Scholium 1713, Opticks Query 31); written profession, so 1.0."
       rationale: "Leans to the transcendent-person pole. God governs 'not as the soul of the world, but as Lord over all', and the world is not 'the Body of God' (S5, S6): a person who rules his creatures. But some immanence features are present: God is omnipresent 'not virtually only, but also substantially', and moves bodies 'within his boundless uniform Sensorium' (S5, S6). SEP notes he held that even the divine being has spatial location (S4). So 1, not 0."
@@ -175,6 +177,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S8, locator: "pp. 384–385"}, {source: S6, locator: "pp. 402–404"}, {source: S5, locator: "pp. 388, 392"}]
       how_known: "Published texts (Principia Rules, General Scholium, Opticks Query 31), so written profession; certainty capped at 0.7 because the record names a plausible alternative score (CODING_GUIDE §3): the Opticks 'Reformation' passage has God repairing the system from time to time inside his physics, which could score 2. Lowered from 1.0 after the lens audit (2026-10-02)."
       rationale: "Scored for his natural philosophy. Law and induction rule: the same effects get the same causes, and qualities found in all bodies within reach of experiment are taken as universal (S8); gravity acts according to the laws he has explained (S5). He states limited exceptions. (1) The origin: the system 'could only proceed from the counsel and dominion of an intelligent and powerful being', and it is 'unphilosophical' to derive the world from chaos 'by the mere Laws of Nature' (S5, S6; also the letters to Bentley, S7). (2) Upkeep: small irregularities 'will be apt to increase, till this System wants a Reformation', and God can 'form and reform the Parts of the Universe' (S6). Once formed, the world 'may continue by those Laws for many Ages' (S6). These are stated and limited, so 3. A reviewer who reads the reformation as ongoing intervention inside his physics could score 2, which would leave mid_basin TODO under P4 (the test has no branch for A = 1 with B = 2). Outside his science his private articles direct petition to God (S9); that is not scored here."
@@ -182,6 +185,7 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S10, locator: "MS p. 36"}, {source: S11, locator: "f. 2r"}, {source: S9, locator: "f. 1r, article 12"}]
       how_known: "Three private theological manuscripts that agree; so 0.7."
       rationale: "At the personal reward-and-punishment pole: God 'will at length raise all men from the dead to be judged by him & rewarded according to their deeds' (S10); the gentiles are to be judged 'in the last day' by the law written in their hearts (S11); Christ 'hath redeemed us with his blood' (S9). Private manuscripts, so 0.7."
@@ -189,6 +193,7 @@ worldview:
       value: 2
       basis: consistent_private_letters
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "p. 392"}, {source: S6, locator: "pp. 404–405"}, {source: S9, locator: "f. 1r"}, {source: S10, locator: "MS pp. 2–3"}, {source: S1, locator: "Interest in religion and theology"}]
       how_known: "The observation side is in published texts; the scripture side is in private manuscripts and the reference sources' account of his biblical work. The weaker basis sets the certainty: 0.7."
       rationale: "Holds both, in different domains. In natural philosophy observation and induction outrank hypothesis ('I frame no hypothesis'), and he says natural philosophy can show our duty to God 'by the Light of Nature' (S5, S6). In religion scripture is the authority: his creeds are built from biblical texts, and he treated the Trinity as a later corruption of scripture, found by textual study (S9, S10; S1; S12). Neither ranks over the other in the texts read."
@@ -196,6 +201,7 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S8, locator: "p. 384"}, {source: S5, locator: "p. 389"}, {source: S6, locator: "pp. 403–404"}, {source: S9, locator: "f. 1r, article 8"}]
       how_known: "Published texts (Principia Rules, General Scholium, Opticks Query 31), so written profession (ceiling 1.0). Certainty 0.7 because the record names a plausible alternative score, 2, from a private manuscript (CODING_GUIDE §3; see the rationale). Rechecked under decision P7 (2026-10-02). The score was already on the world's order and is unchanged; the interim P7 cap no longer applies."
       rationale: "Scored on the world's order (decision P7). Near the LIO pole. The same rules hold for every kind of thing: 'to the same natural effects we must, as far as possible, assign the same causes', for 'respiration in a man and in a beast', for stones 'in Europe and in America' and for 'our culinary fire and of the sun' (S8, Rule II). Qualities found in all bodies within reach of experiment are 'the universal qualities of all bodies whatsoever' (S8, Rule III). The light of the fixed stars is 'of the same nature with the light of the Sun' (S5). One stated, limited exception: God could 'vary the Laws of Nature, and make Worlds of several sorts in several Parts of the Universe' (S6), offered as a possibility, not a finding. So 3. Named alternative 2: his private 'Twelve articles' thank the Father for 'other blessings of this life' and say that whatever we 'desire that he would do for us we ask of him' (S9, article 8). That is petition for this-world favour, which P7 counts against E if it is answered. The text does not say that petition changes events in nature, and it is private, so 3 is kept. His judgement and reward of all the dead (S10, S11) are scored on C, not here."
@@ -387,13 +393,13 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Became an Arian (rejected the Trinity) around 1672, after studying the Bible in its original languages; he kept the view largely secret", year: 1672, age: 30, certainty: 0.7, cites: [{source: S12, locator: "first paragraph"}, {source: S4, locator: "§7 ('a committed anti-Trinitarian')"}, {source: S1, locator: "Interest in religion and theology"}], how_known: "The year is from one source (MacTutor, 'around 1672'); the anti-Trinitarian view itself is in three sources."}
-  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2). P31 (Newton ruling, v8's pick, 2026-10-02): the Arian turn of about 1672 is a change in a doctrine that no coded field depends on (CHRIST and every axis are the same either way), so it is logged in changes_over_life and does not split the span; the axis evidence (1687 on) counts at its normal certainty and the values stand. Under P29's original strict period clause 6 values would change (reports/period_rule_sensitivity.md)."
+  coder_notes: "The code is the hardest call. CHRIST (0.7) rests on private manuscripts; the published texts are theistic only. CLTHEI is a close second. The axes rest on his own words. B = 3 is the weak point for mid_basin: the 'Reformation' passage could be read as B = 2, so B and mid_basin are held at 0.7 (CODING_GUIDE §3). A = 1 rather than 0 because of the substantial omnipresence and the sensorium. C rests on private manuscripts, all post-1710 and so after the major work. E (3) is scored on the world's order (decision P7). It is held at 0.7 because the petition in his private articles (S9) is a named alternative (2). P31 (Newton ruling, v8's pick, 2026-10-02): the Arian turn of about 1672 is a change in a doctrine that no coded field depends on (CHRIST and every axis are the same either way), so it is logged in changes_over_life and does not split the span; the axis evidence (1687 on) counts at its normal certainty and the values stand. Under P29's original strict period clause 6 values would change (reports/period_rule_sensitivity.md). Deepen D1 2026-10-24: P47/P48 applied; Scholium re-verified; baptism and household practice filled; scores unchanged; already dark filled."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "English; a family of Lincolnshire yeoman farmers on his father's side, the Ayscoughs on his mother's", certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Formative influences"}], how_known: "Two sources."}
   religious_heritage_by_birth: {value: "English Protestant; SEP calls the family Puritan", certainty: 0.7, cites: [{source: S3, locator: "§1.1"}], how_known: "One source names the leaning."}
-  baptism_or_initiation: {value: TODO}
+  baptism_or_initiation: {value: "Baptized 1642/3-01-01 (Old Style; 11 January 1643 New Style) at St John the Baptist, Colsterworth (parish of Woolsthorpe). Birth and baptism entered in the parish register; Newton later gave the same baptism date in his College of Arms pedigree (1705).", certainty: 0.7, cites: [{source: S15, locator: "baptised at St John's Colsterworth in the January following birth; parish register"}, {source: S16, locator: "College of Arms pedigree: baptism 1 January 1642/3 at Colsterworth"}], how_known: "Parish council cites the register; Research Well reports Newton's own pedigree date. Day not in Iliffe essay; month confirmed by both."}
   childhood_catechism: {value: TODO}
 
 timing:
@@ -448,11 +454,11 @@ review:
     - "The General Scholium transcription (S5) splits some words across lines; quotations avoid those spots."
   open_questions:
     - "Read the Quaestiones quaedam philosophicae (1664) and De gravitatione for an earlier dated lawful-order statement (timing)."
-    - "Find the household's religious practice and Newton's baptism record."
     - "Key early reading: none documented before university in the sources read; Westfall's Never at Rest may list his Grantham reading."
     - "Date the Twelve Articles, Irenicum and Short Schem more closely (the Newton Project says only post-1710)."
     - "Check whether the Query 31 sentences on 'Reformation' first appeared in the 1706 Latin Queries, and which edition first had Rule III."
     - "CHRIST vs CLTHEI: a reviewer should decide whether the petition articles and the reforming God make CLTHEI the better fit."
+    - "Baptism day rests on College of Arms pedigree as reported by a secondary blog (S16); parish register image not fetched."
 
 sources:
   - id: S1
@@ -462,6 +468,7 @@ sources:
     citation: "Westfall, Richard S. \"Isaac Newton.\" Encyclopaedia Britannica. Last updated September 26, 2026. https://www.britannica.com/biography/Isaac-Newton (pages: main page with Formative influences and Influence of the Scientific Revolution; Career; The Principia; International prominence, with Warden of the mint, Interest in religion and theology and Leader of English science; Final years)."
     url: "https://www.britannica.com/biography/Isaac-Newton"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Signed article by the author of the standard biography (Never at Rest); fact-checked by Britannica editors."
     used_for: [identity, basics, contribution, childhood, worldview, institutions, collaborators, review]
   - id: S2
@@ -472,6 +479,7 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. \"Isaac Newton.\" MacTutor History of Mathematics Archive, University of St Andrews, last update January 2000. https://mathshistory.st-andrews.ac.uk/Biographies/Newton/."
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Newton/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "University reference archive; signed; draws on Westfall and reports de Moivre's account."
     used_for: [identity, basics, contribution, childhood, institutions, collaborators, timing, lane_b, heritage]
   - id: S3
@@ -482,6 +490,7 @@ sources:
     citation: "Smith, George. \"Isaac Newton.\" Stanford Encyclopedia of Philosophy, first published 19 December 2007. https://plato.stanford.edu/entries/newton/."
     url: "https://plato.stanford.edu/entries/newton/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Peer-reviewed reference entry by a Newton scholar."
     used_for: [basics, contribution, childhood, worldview, heritage]
   - id: S4
@@ -492,6 +501,7 @@ sources:
     citation: "Janiak, Andrew. \"Newton's Philosophy.\" Stanford Encyclopedia of Philosophy, first published 13 October 2006, substantive revision 14 July 2021. https://plato.stanford.edu/entries/newton-philosophy/."
     url: "https://plato.stanford.edu/entries/newton-philosophy/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Peer-reviewed reference entry by the editor of Newton's Philosophical Writings (2004). Section numbers are the coder's reading (§3 space and the divine; §4 rules of reasoning; §7 Locke, Leibniz and Clarke); check against the live entry."
     used_for: [contribution, worldview, collaborators]
   - id: S5
@@ -502,7 +512,8 @@ sources:
     citation: "Newton, Isaac. \"General Scholium.\" In The Mathematical Principles of Natural Philosophy, trans. Andrew Motte, vol. 2, pp. 387–393. London: Benjamin Motte, 1729. Latin original added to the 2nd edition of the Principia (1713). Transcription: The Newton Project, NATP00056, https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00056."
     url: "https://www.newtonproject.ox.ac.uk/view/texts/normalized/NATP00056"
     accessed: 2026-10-02
-    reliability_note: "Public text, published in Latin in his lifetime. The English is Motte's translation, two years after Newton's death. Page numbers from the transcription's page markers."
+    source_quality: "primary / own words"
+    reliability_note: "Public text, published in Latin in his lifetime. The English is Motte's translation, two years after Newton's death. Page numbers from the transcription's page markers. A/B quotes re-verified on Newton Project NATP00056 2026-10-24."
     used_for: [worldview, timing, lane_b]
   - id: S6
     type: primary
@@ -512,6 +523,7 @@ sources:
     citation: "Newton, Isaac. Opticks: or, a Treatise of the Reflections, Refractions, Inflections and Colours of Light. 4th ed., corrected. London, 1730. Project Gutenberg eBook 33504, https://www.gutenberg.org/ebooks/33504. Query 31 near the end of Book III."
     url: "https://www.gutenberg.org/ebooks/33504"
     accessed: 2026-10-02
+    source_quality: "unofficial web copy"
     reliability_note: "Public text; the Queries were expanded in the Latin (1706) and English (1717–18) editions in his lifetime (S1). Page numbers from the transcription's [Pg] markers, which do not match the 1730 printing (see S14). Project Gutenberg is an unofficial web copy, so under CODING_GUIDE §7 it cannot by itself support certainty 1.0. Its wording was checked against the library scan S14, so every field that cites S6 at 1.0 also cites S14 with the 1730 page."
     used_for: [basics, contribution, worldview, lane_b]
   - id: S7
@@ -522,6 +534,7 @@ sources:
     citation: "Newton, Isaac. Letters to Richard Bentley, 10 December 1692 (Trinity College Library, Cambridge, 189.R.4.47, ff. 4A–5; Newton Project THEM00254) and 25 February 1692/3 (same volume, ff. 7–8; Newton Project THEM00258). https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00254 and https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00258."
     url: "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00254"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Original letters, transcribed and tagged by the Newton Project. Private when written."
     used_for: [worldview, timing, collaborators]
   - id: S8
@@ -532,6 +545,7 @@ sources:
     citation: "Newton, Isaac. The Mathematical Principles of Natural Philosophy, trans. Andrew Motte. First American edition, carefully revised and corrected, with a life of the author by N. W. Chittenden. New York: Daniel Adee, 1846. Book III, 'Rules of Reasoning in Philosophy', pp. 384–385. Scan and OCR: https://archive.org/details/newtonspmathema00newtrich."
     url: "https://archive.org/details/newtonspmathema00newtrich"
     accessed: 2026-10-02
+    source_quality: "archive scan (OCR only)"
     reliability_note: "Motte's 1729 translation as revised in 1846. Read in OCR; quotations limited to clean passages."
     used_for: [worldview, timing, lane_b]
   - id: S9
@@ -541,6 +555,7 @@ sources:
     citation: "Newton, Isaac. 'Twelve articles on religion'. Keynes MS 8, King's College, Cambridge, post-1710, 1 p. Newton Project THEM00008 (transcribed by Stephen Snobelen; checked against the original by John Young), https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00008."
     url: "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00008"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Private manuscript, unpublished in his lifetime (printed by Brewster in 1855, per the Newton Project catalogue). Dated only as post-1710."
     used_for: [worldview]
   - id: S10
@@ -550,6 +565,7 @@ sources:
     citation: "Newton, Isaac. 'Irenicum, or Ecclesiastical Polyty tending to Peace'. Keynes MS 3, King's College, Cambridge, post-1710, 40 pp. Newton Project THEM00003, https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00003."
     url: "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00003"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Private manuscript with several drafts; page numbers are the manuscript pages marked in the transcription. Read by keyword search, not in full."
     used_for: [worldview]
   - id: S11
@@ -559,6 +575,7 @@ sources:
     citation: "Newton, Isaac. 'A short Schem of the true Religion'. Keynes MS 7, King's College, Cambridge, post-1710, 4 pp. Newton Project THEM00007, https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00007."
     url: "https://www.newtonproject.ox.ac.uk/view/texts/normalized/THEM00007"
     accessed: 2026-10-02
+    source_quality: "primary / own words"
     reliability_note: "Private manuscript (extracts printed by Brewster in 1855, per the Newton Project catalogue)."
     used_for: [worldview]
   - id: S12
@@ -569,6 +586,7 @@ sources:
     citation: "MacTutor History of Mathematics Archive. \"Newton's Arian beliefs.\" University of St Andrews, last updated March 2006. https://mathshistory.st-andrews.ac.uk/Extras/Newton_Arian/."
     url: "https://mathshistory.st-andrews.ac.uk/Extras/Newton_Arian/"
     accessed: 2026-10-02
+    source_quality: "reference entry"
     reliability_note: "Short reference page; prints Newton's twelve points on why he was an Arian, without a manuscript reference."
     used_for: [worldview, timing]
   - id: S13
@@ -576,6 +594,7 @@ sources:
     kind: database
     author: "Neuresthetics Genius Study"
     citation: "Neuresthetics Genius Study. v8 roster, data/roster/roster.csv, built by scripts/rebuild_roster.py from the five model lists."
+    source_quality: "study roster"
     used_for: [review]
   - id: S14
     type: primary
@@ -585,13 +604,47 @@ sources:
     citation: "Newton, Isaac. Opticks: or, a Treatise of the Reflections, Refractions, Inflections and Colours of Light. The Fourth Edition, corrected. London: Printed for William Innys, 1730. University of California Libraries copy, Internet Archive scan, https://archive.org/details/opticksortreatis1730newt."
     url: "https://archive.org/details/opticksortreatis1730newt"
     accessed: 2026-10-02
+    source_quality: "archive scan (OCR only)"
     reliability_note: "Library scan of the edition that S6 transcribes. Used to check S6 wherever a quotation or a certainty-1.0 field rests on it. The five Query 31 quotations and the Query 28 passage on the 'very first Cause' agree word for word, apart from long-s and other OCR noise; a second scan (Oxford copy, https://archive.org/details/opticksoratreat00newtgoog) has its OCR noise in different places, and the two together leave no word in doubt. Page numbers are the printed 1730 ones: Query 28 is on p. 344 and the cited Query 31 passages on pp. 378–381. S6's [Pg] markers are about 24 pages higher, so they do not follow the 1730 pagination."
     used_for: [basics, contribution, worldview]
+  - id: S15
+    type: secondary
+    kind: "other"
+    author: "Colsterworth and District Parish Council"
+    year: 2024
+    citation: 'Colsterworth and District Parish Council. "The Newton Connection." https://colsterworth.parish.lincolnshire.gov.uk/parish-information/newton-connection.'
+    url: "https://colsterworth.parish.lincolnshire.gov.uk/parish-information/newton-connection"
+    accessed: 2026-10-24
+    source_quality: "other"
+    reliability_note: "Local parish page stating that birth and baptism are in the Colsterworth parish register and that the Newton family worshipped at St John's. Not a scholarly edition; used for location and register existence."
+    used_for: [heritage, childhood]
+  - id: S16
+    type: secondary
+    kind: "other"
+    author: "Research Well Lincolnshire"
+    year: 2018
+    citation: 'Research Well Lincolnshire. "The matter of dates before 1752 as illustrated by Isaac Newton''s birthday on Christmas Day." 5 December 2018. https://researchwelllincolnshire.wordpress.com/2018/12/05/the-matter-of-dates-before-1752-as-illustrated-by-isaac-newtons-birthday-on-christmas-day/.'
+    url: "https://researchwelllincolnshire.wordpress.com/2018/12/05/the-matter-of-dates-before-1752-as-illustrated-by-isaac-newtons-birthday-on-christmas-day/"
+    accessed: 2026-10-24
+    source_quality: "other"
+    reliability_note: "Local history blog reporting that Newton's 1705 College of Arms pedigree gives baptism 1 January 1642/3 at Colsterworth. Pedigree itself not fetched; day certainty capped at 0.7."
+    used_for: [heritage]
+  - id: S17
+    type: secondary
+    kind: "other"
+    author: "Robert Iliffe"
+    year: 2013
+    citation: 'Iliffe, Robert. "Newton''s Religious Life and Work." The Newton Project, 2013. https://www.newtonproject.ox.ac.uk/view/contexts/CNTX00001.'
+    url: "https://www.newtonproject.ox.ac.uk/view/contexts/CNTX00001"
+    accessed: 2026-10-24
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Signed scholarly essay by the Newton Project director; used for childhood religious setting (Colsterworth Puritan intrusion; CoE clergy stepfather and uncle; Clarke lodging)."
+    used_for: [childhood, heritage]
 ---
 
 # Isaac Newton
 
-> Status: draft — unreviewed. Worldview coded CHRIST at 0.7 (CLTHEI a close second); all five LIO axes scored; mid_basin true under the P4 test. A few childhood facts are TODO.
+> Status: draft — unreviewed. Worldview coded CHRIST at 0.7 (CLTHEI a close second); all five LIO axes scored with support corroborated; mid_basin true under the P4 test. Chart: dark filled.
 
 ## Summary
 
@@ -614,7 +667,7 @@ Britannica calls the laws of motion "the basic principles of modern physics" [S1
 
 ## Childhood and education
 
-His father was a yeoman farmer who could not sign his name [S2]. SEP calls the family Puritan; his stepfather was a minister [S3; S2]. He learned to read and write from his grandmother and mother [S3]. At Grantham he gained Latin but "probably received no more than a smattering of arithmetic" [S1, Formative influences]. MacTutor finds no evidence of school mathematics; he first read Euclid in 1663, at 20 [S2]. At 19 he wrote a list of his sins that included threatening his mother and stepfather [S1; S2].
+His father was a yeoman farmer who could not sign his name [S2]. Baptized at Colsterworth St John's on 1 January 1642/3 (OS) [S15; S16]. SEP calls the family Puritan; household practice mixed CoE rectory (stepfather Smith; uncle Ayscough) with Puritan contacts [S3; S17; S2]. He learned to read and write from his grandmother and mother [S3]. At Grantham he gained Latin but "probably received no more than a smattering of arithmetic" [S1, Formative influences]. MacTutor finds no evidence of school mathematics; he first read Euclid in 1663, at 20 [S2]. At 19 he wrote a list of his sins that included threatening his mother and stepfather [S1; S2].
 
 ## Adult working worldview
 
@@ -624,7 +677,7 @@ His science runs on law. The same effects get the same causes [S8, p. 384]. But 
 
 His private manuscripts show a scriptural, anti-Trinitarian Christianity: one God the Father and one mediator, Christ; prayer to the Father in the name of Christ; and a final judgement of all people [S9; S10]. MacTutor dates his Arian view to about 1672 [S12].
 
-Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 at 1.0; B_cause 3 (natural philosophy), C_ledger 0, D_authority 2 and E_scope 3 at 0.7. E is scored on the world's order (decision P7): the same causes for man and beast, Europe and America [S8, p. 384]. The petition in his private articles is the named alternative (2) [S9]. mid_basin is true at 0.7 under P4.
+Coding: CHRIST at 0.7, with CLTHEI as a close second. A_locus 1 at 1.0 (support corroborated); B_cause 3 (natural philosophy), C_ledger 0, D_authority 2 and E_scope 3 at 0.7 (all support corroborated). E is scored on the world's order (decision P7): the same causes for man and beast, Europe and America [S8, p. 384]. The petition in his private articles is the named alternative (2) [S9]. mid_basin is true at 0.7 under P4. Chart: dark filled.
 
 ## Heritage (context only)
 
@@ -642,12 +695,13 @@ Everything in this section is Lane B: labeled belief, not a finding. Newton show
 
 - Period rule sensitivity (2026-10-02): under P31 and its Newton ruling the values stand (the 1672 Arian turn does not split the span). Under P29's original strict clause, primary_system, A, C, D, E and mid_basin would change; see reports/period_rule_sensitivity.md.
 - Earlier dated lawful-order statements (Quaestiones 1664, De gravitatione).
-- Household religious practice and baptism record.
 - Closer dates for the theological manuscripts.
 - Whether the "Reformation" sentence first appeared in the 1706 Latin Queries.
 - CHRIST vs CLTHEI: reviewer's call.
+- Baptism day: College of Arms pedigree not fetched directly (S16 secondary report).
 
 ## Research log
 
 - 2026-10-02: Read Britannica (S1: main page and four subpages), MacTutor (S2 and the Arian page S12), SEP "Isaac Newton" (S3) and "Newton's Philosophy" (S4). Read the General Scholium (S5) and two Bentley letters (S7) in Newton Project transcriptions, Query 31 of the Opticks (S6, Gutenberg), the Rules of Reasoning (S8, archive.org OCR), and three private theological manuscripts (S9–S11, Newton Project). Wikipedia not used. Every quotation was checked word for word against the fetched text with a script (verify_quotes.py) before commit. Westfall's Never at Rest, the Oxford DNB and the Newton Project's own biography were not read. Baptism, household practice and key early reading left TODO.
 - 2026-10-02 (P7): E_scope rechecked on the world's order from the texts already cited (S5, S6, S8, S9); no new sources or quotations. The score stays 3 at 0.7.
+- 2026-10-24 (deepen D1, queue #42): P47 on S1–S17; support corroborated on A–E; re-verified General Scholium on Newton Project; baptism (S15/S16) and family_religious_practice (S17 Iliffe); schooling run_by; scores unchanged; not chart-moving. No fallacy_catalog. Key early reading still UNKNOWN.
