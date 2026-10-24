@@ -2,16 +2,17 @@
 record:
   record_type: person
   schema_version: "1.2"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-08
+  last_updated: 2026-10-23
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from Britannica (Popkin, first page) and SEP 'Baruch Spinoza' (Nadler). Worldview from the Ethics and the Theological-Political Treatise in Elwes's translation, read in the Project Gutenberg texts (unofficial web copies, so every field resting on them is capped at 0.7 under CODING_GUIDE §7). The Cambridge edition (ed. Kisner) was not opened. DRAFT SCORES for v8's review: primary_system PANT 0.7; A 4, B 4, C 4, D 3, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #12: Dutch removed from languages_of_work (only the posthumous Dutch edition). #13: lens grinding now cited to SEP 'Spinoza's Physical Theory' §6.2 (new S8) as well as Britannica; how_known no longer says 'two sources' for both occupations; 1.0 left pending v8 (single-source / mixed sourcing). #16, #81: Ethics title cited for the geometric form; SEP §2.1 named. #22, #58: how_known says the detail is Britannica-only; 1.0 left pending v8. #27: SEP 17 vs Britannica 18–19 noted and flagged; 1.0 left pending v8 (conflict rule). #64, #91: timing of the immanent God now rests on SEP §1 (Short Treatise at Rijnsburg; Ethics under way by 1663) and §2.1, not §1 alone. #80: S8 added. TTP locators labelled as Gutenberg sentence numbers; Kisner wording marked TODO. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
+    - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #11). P47 source_quality on every source. A_locus was single (S3 Ethics Gutenberg only): added Elwes Chief Works vol. II 1891 archive.org scan (S9 scholarly edition) verifying E1P15 p.55, E1P18 pp.59–62, E4 Preface p.188, and Letter XXI (LXXIII) to Oldenburg p.298 ('God is of all things the cause immanent… not transient'; 'all things are in God'). A support single → corroborated (S3+S9); value/certainty stay 4 @ 0.7 (named alt ATHE; §7 lifted for Ethics A quotes via S9 but ATHE still caps). B_cause already multi-cited (S3+S4); labelled support corroborated. C support single; D and E labelled corroborated. A statements verified_against → scholarly edition. Chart: dark hollow → dark filled (fill cue). Kisner Cambridge and Short Treatise still not opened. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
 identity:
   id: spinoza-baruch
@@ -95,8 +96,8 @@ worldview:
     value: PANT
     basis: written_profession
     certainty: 0.7
-    cites: [{source: S3, locator: "E1P15; E1P18; E1P29; E4 Preface"}, {source: S2, locator: "§2.1"}]
-    how_known: "His own published Ethics. Capped at 0.7 twice over: the text was read in an unofficial web copy (CODING_GUIDE §7), and the record names a plausible alternative code (ATHE; contested-readings rule, §3)."
+    cites: [{source: S3, locator: "E1P15; E1P18; E1P29; E4 Preface"}, {source: S9, locator: "E1P15 p.55; E1P18 pp.59–62; E4 Preface p.188; Letter XXI (LXXIII) p.298"}, {source: S2, locator: "§2.1"}]
+    how_known: "His own published Ethics, now checked against Elwes Chief Works vol. II archive scan (S9), plus Letter 73's immanent-cause profession (S9). Certainty still 0.7 for the named alternative ATHE (contested-readings rule, §3); the §7 unofficial-copy cap is lifted for the Ethics passages cited to S9."
     rationale: "DRAFT for v8's review. Passes the S6 two-part test in his own words: (1) God is identified with Nature as a claim about what exists ('the eternal and infinite Being, which we call God or Nature', E4 Preface; 'Whatsoever is, is in God', E1P15; God 'the indwelling and not the transient cause of all things', E1P18); (2) the whole has marks beyond feeling: one substance (E1P14–15), necessity (E1P29, E1P33) and eternity (E1P19). PANT's v7.1 rule is defined by his phrase 'Deus sive Natura', and the founders rule points the same way. Named alternative: ATHE, because SEP (Nadler) argues that he is not a pantheist in the religious sense, since 'even the atheist can, without too much difficulty, admit that God is nothing but Nature' and worshipful awe is foreign to his philosophy (S2, §2.1)."
   secondary_system: {value: UNKNOWN, how_known: "He published in one system; the TTP's account of Scripture is a reading of JUDA/CHRIST texts, not a second system."}
   candidate_codes_considered:
@@ -109,55 +110,60 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "E1P15; E1P18; E4 Preface"}]
-      how_known: "His own published text in an unofficial web copy; capped at 0.7 (§7)."
-      rationale: "DRAFT. At the LIO pole: God is immanent in or identical with the world. 'Whatsoever is, is in God, and without God nothing can be, or be conceived' (E1P15); God is 'the indwelling and not the transient cause of all things' (E1P18); 'God or Nature' (E4 Preface). The scholarly dispute over whether God is all of Nature or only natura naturans (S2, §2.1) does not move the score: both readings are immanent."
+      support: corroborated
+      cites: [{source: S3, locator: "E1P15; E1P18; E4 Preface"}, {source: S9, locator: "E1P15 p.55; E1P18 pp.59–62; E4 Preface p.188; Letter XXI (LXXIII) p.298"}]
+      how_known: "Ethics in Gutenberg (S3) checked against Elwes Chief Works vol. II archive scan (S9), plus the independent Letter 73 immanent-cause profession in the same volume. §7 unofficial-copy cap lifted for the Ethics A quotes via S9; certainty stays 0.7 for the named ATHE alternative (primary_system). Independent works/editions → corroborated (P48)."
+      rationale: "DRAFT. At the LIO pole: God is immanent in or identical with the world. 'Whatsoever is, is in God, and without God nothing can be, or be conceived' (E1P15); God is 'the indwelling and not the transient cause of all things' (E1P18); 'God or Nature' (E4 Preface). Letter 73 to Oldenburg: 'God is of all things the cause immanent, as the phrase is, not transient'; 'all things are in God' (S9, p.298). The scholarly dispute over whether God is all of Nature or only natura naturans (S2, §2.1) does not move the score: both readings are immanent. Independent sources → corroborated (P48)."
     B_cause:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "E1P29; E1 Appendix"}, {source: S4, locator: "TTP ch. 6, Gutenberg sentences (17), (19)"}]
-      how_known: "His own published texts in unofficial web copies; capped at 0.7 (§7)."
-      rationale: "DRAFT. Scored on his account of nature (P6); at the LIO pole. 'Nothing in the universe is contingent' (E1P29); an event against nature's universal laws would mean 'that God acted against His own nature - an evident absurdity' (TTP ch. 6, (17)); appeal to God's will for an event is 'the sanctuary of ignorance' (E1 Appendix). No miracle, petition or exemption anywhere in nature."
+      support: corroborated
+      cites: [{source: S3, locator: "E1P29; E1 Appendix"}, {source: S4, locator: "TTP ch. 6, Gutenberg sentences (17), (19)"}, {source: S9, locator: "E1P29 (Ethics Part I; Elwes vol. II)"}]
+      how_known: "Ethics (S3) and TTP ch. 6 (S4) in unofficial web copies; E1P29 wording also in Elwes vol. II archive scan (S9). Capped at 0.7 (§7 for TTP still unofficial). Two primary works → corroborated (P48)."
+      rationale: "DRAFT. Scored on his account of nature (P6); at the LIO pole. 'Nothing in the universe is contingent' (E1P29); an event against nature's universal laws would mean 'that God acted against His own nature - an evident absurdity' (TTP ch. 6, (17)); appeal to God's will for an event is 'the sanctuary of ignorance' (E1 Appendix). No miracle, petition or exemption anywhere in nature. Independent sources → corroborated (P48)."
     C_ledger:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "E5P17 and Corollary; E5P19; E5P42"}]
-      how_known: "His own published text in an unofficial web copy; capped at 0.7 (§7). Also a named alternative (the eternity of the mind)."
+      how_known: "His own published text in an unofficial web copy; capped at 0.7 (§7). Also a named alternative (the eternity of the mind). Single source id → support single (P48); Elwes vol. II check this pass covered A passages, not E5."
       rationale: "DRAFT. At the impersonal-consequence pole: 'Strictly speaking, God does not love or hate anyone' (E5P17 Corollary); 'He, who loves God, cannot endeavour that God should love him in return' (E5P19); 'Blessedness is not the reward of virtue, but virtue itself' (E5P42). E1 Appendix traces 'praise and blame, sin and merit' to the false belief that we are free agents. Named alternative: 3, because 'there remains of it something which is eternal' (E5P23) is read by some as a form of survival; SEP and Britannica differ on how far he discusses immortality (see flags)."
     D_authority:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S5, locator: "TTP ch. 15, Gutenberg sentences (52)–(55), (64), (94)"}, {source: S2, locator: "§3.1"}]
-      how_known: "His own published treatise in an unofficial web copy; capped at 0.7 (§7) and a named alternative."
+      how_known: "His own published treatise in an unofficial web copy; capped at 0.7 (§7) and a named alternative. TTP + SEP → corroborated (P48)."
       rationale: "DRAFT. Leans LIO with one stated, limited exception. Prophecy 'does not provide privileged knowledge of natural or spiritual phenomena' (SEP §3.1), and theology 'has neither the will nor the power to oppose reason' and 'leaves reason to determine their precise truth' (TTP ch. 15, (55)). The exception: the one dogma that 'simple obedience is the path of salvation' cannot be reached 'by the natural light of reason', so 'revelation was necessary' (ch. 15, (64), (94)). Named alternative: 2, since he says theology and reason each have 'her own domain' (ch. 15, (52)), which under the same-pattern rule can read as two domains each with its own authority; not taken because revelation never outranks reason on any question of truth."
     E_scope:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "E1 Appendix; E3 Preface"}, {source: S6, locator: "TTP ch. 3, Gutenberg sentences (10), (13)–(14)"}]
-      how_known: "His own published texts in unofficial web copies; capped at 0.7 (§7)."
+      how_known: "His own published texts in unofficial web copies; capped at 0.7 (§7). Ethics + TTP → corroborated (P48)."
       rationale: "DRAFT. Scored on the world's order (P7); at the LIO pole. Human actions are to be treated 'as though I were concerned with lines, planes, and solids' (E3 Preface); the belief 'that everything which is created is created for their sake' is the root error he attacks (E1 Appendix); 'the help of God' means 'the fixed and unchangeable order of nature' (TTP ch. 3, (13)), and 'the Hebrews did not surpass other nations in knowledge, or in piety' (ch. 3, (10)). No favour for any group in events. Election and salvation readings are not scored here (P7); his denial of a personal reward is on C."
   mid_basin: {value: false, certainty: 0.7, cites: [{source: S3, locator: "E1P15; E4 Preface"}], how_known: "P4 test: A_locus is 4 (at 0.7), so A ≥ 3 gives false. Certainty is capped by A_locus alone, the only axis this branch reads (decision P10): 0.7."}
   statements:
     - text: "Whatsoever is, is in God, and without God nothing can be, or be conceived."
-      cites: [{source: S3, locator: "E1P15"}]
+      cites: [{source: S3, locator: "E1P15"}, {source: S9, locator: "p. 55 (E1P15)"}]
       date: "1677"
       context: "Ethics, Part I, Proposition 15, following the proof that God is the only substance (E1P14)."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-23
     - text: "God is the indwelling and not the transient cause of all things."
-      cites: [{source: S3, locator: "E1P18"}]
+      cites: [{source: S3, locator: "E1P18"}, {source: S9, locator: "pp. 59–62 (E1P18)"}]
       date: "1677"
       context: "Ethics, Part I, Proposition 18."
       axes: [A_locus]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-23
     - text: "Nothing in the universe is contingent, but all things are conditioned to exist and operate in a particular manner by the necessity of the divine nature."
       cites: [{source: S3, locator: "E1P29"}]
       date: "1677"
@@ -175,13 +181,21 @@ worldview:
       verified_against: "primary transcription"
       verified_on: 2026-10-02
     - text: "For the eternal and infinite Being, which we call God or Nature, acts by the same necessity as that whereby it exists."
-      cites: [{source: S3, locator: "E4 Preface"}, {source: S2, locator: "§2.1 (Latin 'Deus, sive Natura')"}]
+      cites: [{source: S3, locator: "E4 Preface"}, {source: S9, locator: "p. 188 (E4 Preface)"}, {source: S2, locator: "§2.1 (Latin 'Deus, sive Natura')"}]
       date: "1677"
       context: "Ethics, Part IV, Preface, on final causes. SEP notes the 'or Nature' clause is in the Latin but not the Dutch edition."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
-      verified_against: "primary transcription"
-      verified_on: 2026-10-02
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-23
+    - text: "I hold that God is of all things the cause immanent, as the phrase is, not transient. I say that all things are in God and move in God."
+      cites: [{source: S9, locator: "Letter XXI (LXXIII) to Oldenburg, p. 298"}]
+      date: "1675"
+      context: "Letter to Henry Oldenburg answering objections to the TTP; Elwes numbers it Letter XXI (Gebhardt / standard Letter 73). Own words on immanence, independent of the Ethics."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-23
     - text: "I shall consider human actions and desires in exactly the same manner, as though I were concerned with lines, planes, and solids."
       cites: [{source: S3, locator: "E3 Preface"}]
       date: "1677"
@@ -248,7 +262,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Left Judaism: excommunicated from the Amsterdam congregation in 1656; SEP judges that his faith and religious commitment were 'by this point, gone'", year: "1656", certainty: 0.7, cites: [{source: S2, locator: "§1, paragraphs 2–3"}], how_known: "SEP's reading; the herem itself is documented."}
-  coder_notes: "DRAFT SCORES for v8's review. All worldview fields rest on Project Gutenberg texts of Elwes's 1883 translation (S3–S6), unofficial web copies, so nothing worldview-related exceeds 0.7 (CODING_GUIDE §7). The Cambridge Texts edition (ed. Kisner), which v8 asked for, was not opened in this run; locators are by part and proposition (E1P15 etc.) and, for the TTP, by chapter and the Gutenberg volunteer's sentence numbers, which are not in any printed edition. No page numbers are given. Copy error noted: the Gutenberg TTP ch. 6, Gutenberg sentence (19), reads 'a fixed and mutable order', which is probably a dropped 'im-'; that sentence is not quoted. ATHE and DETERM are stub system files (flag). The 1650s report that he held that God exists, but only 'philosophically' (Britannica, an Augustinian friar's account) is reported speech and not used."
+  coder_notes: "Deepen D1 (queue #11): A now rests on Ethics (S3 Gutenberg + S9 Elwes Chief Works vol. II 1891 archive scan with pages) and Letter 73 / XXI (S9 p.298) — support corroborated; value/certainty stay 4 @ 0.7 for named alt ATHE. B stays 4 @ 0.7 with support corroborated (S3+S4+S9). §7 unofficial-copy cap lifted for Ethics A quotes checked in S9; TTP chs. still Gutenberg-only. Kisner Cambridge not opened. Short Treatise not read. Gutenberg TTP ch. 6 (19) copy error ('fixed and mutable') still noted, not quoted. ATHE and DETERM remain stub system files (flag). No fallacy_catalog (Jason 2026-10-23)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -262,7 +276,7 @@ timing:
   major_work_period: {value: "1661–1677", certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "From the Rijnsburg writings (correspondence begins 1661) to the posthumous works."}
   age_at_first_lasting_contribution: {value: 38, certainty: 0.7, cites: [{source: S1, locator: "opening (birth 1632)"}, {source: S2, locator: "§1 (TTP 1670)"}], how_known: "Born November 1632; TTP 1670. Follows the coder's choice of year. P30 (rule 5): 1670 − 1632 = 38, with no month adjustment; was 37 until the P30 age sweep (2026-10-08)."}
   first_evidence_of_lio_type_views: {value: "Herem of 1656, which SEP links to the ideas of his later treatises (denial of a transcendent, providential God)", year: 1656, age: 24, certainty: 0.5, cites: [{source: S2, locator: "§1, paragraph 2"}], how_known: "SEP calls this 'an educated guess'; the content of the 'abominable heresies' is not recorded. His own first dated texts on the question are the 1660s writings."}
-  lio_views_relative_to_major_work: {value: "before major work", rationale: "SEP dates the Short Treatise, 'an initial but aborted effort to lay out his metaphysical, epistemological and moral views', to his Rijnsburg years (from 1661), and says he was working on the Ethics by 1663 (S2, §1); the Ethics' natura naturans uses 'the same terms he used in the Short Treatise' (S2, §2.1). So his metaphysics of God was under way in the early 1660s, before the TTP (1670) and the Ethics (1677). SEP does not itself say the immanent God is present in those writings, and the Short Treatise was not read (lens audit #64).", certainty: 0.5, cites: [{source: S2, locator: "§1; §2.1"}], how_known: "SEP dating of the works and its note on shared terms; the Short Treatise was not read."}
+  lio_views_relative_to_major_work: {value: "before major work", rationale: "SEP dates the Short Treatise to Rijnsburg (from 1661) and the Ethics under way by 1663 (S2, §1); natura naturans terms shared with the Short Treatise (S2, §2.1). Letter 73 (1675) states the immanent cause in his own words before the 1677 Ethics (S9, p.298). Short Treatise itself still not read (lens audit #64).", certainty: 0.5, cites: [{source: S2, locator: "§1; §2.1"}, {source: S9, locator: "Letter XXI (LXXIII), p. 298"}], how_known: "SEP dating plus Letter 73 in Elwes vol. II; Short Treatise not read."}
   worldview_during_major_work: {value: "PANT throughout (draft code)", certainty: 0.5, cites: [{source: S3, locator: "E1P15"}, {source: S4, locator: "TTP ch. 6"}], how_known: "The TTP and the Ethics, written in the major-work period, agree."}
 
 lane_b:
@@ -283,13 +297,14 @@ review:
     - {value: "Whether he is a pantheist or, in effect, an atheist: SEP (Nadler) argues against the pantheist label", certainty: 1.0, cites: [{source: S2, locator: "§2.1"}], how_known: "SEP sets out both sides."}
   data_quality_flags:
     - "Immortality: SEP says his treatises deny the immortality of the soul (§1); Britannica says he 'did not directly discuss the issue' and that his disbelief in individual immortality is clear only by implication. E5P23 ('something which is eternal') is the text both readings argue over."
-    - "Worldview text read only in Project Gutenberg copies (unofficial); the Gutenberg TTP has at least one copy error (ch. 6, (19), 'fixed and mutable order')."
+    - "Ethics A passages and Letter 73 checked against Elwes Chief Works vol. II 1891 archive scan (S9); TTP still Project Gutenberg only. Gutenberg TTP has at least one copy error (ch. 6, (19), 'fixed and mutable order')."
     - "Britannica read as its first page only."
     - "Leaving school: SEP says his studies were cut short 'At the age of seventeen' to help run the family's importing business; Britannica says he and his brother went into the fruit business 'When he was 18 or 19 years old' (lens audit #27)."
     - "Lens grinding is not in SEP 'Baruch Spinoza' or the signed Britannica first page; it is cited to SEP 'Spinoza's Physical Theory' §6.2 (S8) and Britannica's AI-generated Top Questions box (lens audit #13, #80)."
   open_questions:
-    - "TODO: the Kisner (Cambridge) wording of the Ethics was not opened. Check the quoted Ethics and TTP passages against the Cambridge edition (Kisner) or a library scan of Elwes 1883 (Bohn's Chief Works) to lift the §7 cap on A, B, E; give printed page numbers."
-    - "Read the Short Treatise and Letter 73 (to Oldenburg) for the date of his immanent God."
+    - "TODO: Kisner (Cambridge Texts) wording of the Ethics/TTP still not opened; Elwes Chief Works vol. II 1891 archive scan (S9) now covers Ethics A pages and Letter 73. TTP still Gutenberg-only (§7)."
+    - "Read the Short Treatise for the date of his immanent God (Letter 73 / 1675 now read: immanent cause in his own words before the 1677 Ethics)."
+    - "Optional: verify E5 C_ledger passages in S9 to move C support single → corroborated."
 
 sources:
   - id: S1
@@ -300,6 +315,7 @@ sources:
     url: "https://www.britannica.com/biography/Benedict-de-Spinoza"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only (to 'Excommunication'). Cited by section heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing]
   - id: S2
     type: secondary
@@ -310,6 +326,7 @@ sources:
     url: "https://plato.stanford.edu/entries/spinoza/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work by a leading Spinoza biographer; whole entry read. Cited by section."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, collaborators, review]
   - id: S3
     type: primary
@@ -320,6 +337,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/3800"
     accessed: 2026-10-02
     reliability_note: "Public-domain translation in an unofficial web copy; under CODING_GUIDE §7 no field resting on it exceeds 0.7 until checked against the Cambridge edition (Kisner) or a library scan. Cited by part and proposition (E1P15 = Part I, Proposition 15); no page numbers."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -330,6 +348,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/990"
     accessed: 2026-10-02
     reliability_note: "Unofficial web copy (§7 cap 0.7). Sentence numbers in parentheses were 'added by volunteer' (the file's own note) and are not in printed editions; locators give them as 'Gutenberg sentence (n)'. Two sentences in ch. 6 are numbered (40); the one quoted is the second. Contains at least one copy error (ch. 6, (19))."
+    source_quality: "unofficial web copy"
     used_for: [worldview, timing]
   - id: S5
     type: primary
@@ -340,6 +359,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/991"
     accessed: 2026-10-02
     reliability_note: "Unofficial web copy (§7 cap 0.7); volunteer sentence numbers."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
   - id: S6
     type: primary
@@ -350,6 +370,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/989"
     accessed: 2026-10-02
     reliability_note: "Unofficial web copy (§7 cap 0.7); volunteer sentence numbers."
+    source_quality: "unofficial web copy"
     used_for: [worldview]
   - id: S7
     type: secondary
@@ -359,6 +380,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
   - id: S8
     type: secondary
@@ -369,7 +391,19 @@ sources:
     url: "https://plato.stanford.edu/entries/spinoza-physics/"
     accessed: 2026-10-02
     reliability_note: "Scholarly reference work; read for §6.2 (Experimentation) only, as a signed source for his lens grinding (lens audit #13). Cited by section."
+    source_quality: "reference entry"
     used_for: [basics, review]
+  - id: S9
+    type: primary
+    kind: "scholarly edition"
+    author: "Baruch Spinoza"
+    year: 1891
+    citation: "Spinoza, Benedict de. The Chief Works of Benedict de Spinoza, vol. II (On the Improvement of the Understanding; The Ethics; Select Letters). Translated by R. H. M. Elwes. Revised edition. London: George Bell and Sons (Bohn's Philosophical Library), 1891. Internet Archive scan: https://archive.org/details/chiefworksofbene02spin (PDF chiefworksofbene02spin.pdf)."
+    url: "https://archive.org/details/chiefworksofbene02spin"
+    accessed: 2026-10-23
+    reliability_note: "Published Elwes translation (Bohn / Bell), read in the Internet Archive page-image scan. Used to verify Ethics E1P15 (p.55), E1P18 (pp.59–62), E4 Preface 'God or Nature' (p.188), and Letter XXI (LXXIII) to Oldenburg (p.298). Page numbers are the printed Bell 1891 pagination. Scholarly edition for §7 / verified_against; OCR consulted alongside page images."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, timing]
 ---
 
 # Baruch Spinoza
@@ -378,7 +412,7 @@ sources:
 
 ## Summary
 
-Bento (Baruch, Benedictus) Spinoza (1632–1677), Dutch philosopher of the Amsterdam Portuguese-Jewish community, wrote the Theological-Political Treatise (1670) and the Ethics (1677) [S1; S2]. In the Ethics God is the one substance, "God or Nature", in which everything is [S3, E1P15; E4 Preface]. Draft code PANT at 0.7, with ATHE as the named alternative [S2, §2.1]; all five axes are scored at or near the LIO pole, each at 0.7 because the texts were read in unofficial web copies. mid_basin false.
+Bento (Baruch, Benedictus) Spinoza (1632–1677), Dutch philosopher of the Amsterdam Portuguese-Jewish community, wrote the Theological-Political Treatise (1670) and the Ethics (1677) [S1; S2]. In the Ethics God is the one substance, "God or Nature", in which everything is [S3; S9, E1P15 p.55; E4 Preface p.188]; Letter 73 affirms God as "the cause immanent… not transient" [S9, p.298]. Deepen D1 (P47–P50): A 4 @ 0.7, written_profession, support single → corroborated (S3+S9); B 4 @ 0.7, support corroborated (S3+S4+S9); PANT 0.7 with ATHE named alternative [S2, §2.1]; mid_basin false. Chart: dark hollow → dark filled.
 
 ## Life and work
 
@@ -394,7 +428,7 @@ His parents had been forcibly converted in Portugal and practised Judaism in sec
 
 ## Adult working worldview
 
-God is the only substance and "the indwelling and not the transient cause of all things" [S3, E1P14–E1P18]. Nothing is contingent [S3, E1P29], and a miracle against nature's laws would make God act against his own nature [S4, ch. 6]. God loves and hates no one, and blessedness is virtue itself, not its reward [S3, E5P17 Cor., E5P42]. Reason has the domain of truth; theology only that of obedience, with the one dogma that obedience saves learned from revelation [S5, ch. 15]. Nadler argues that this is naturalism rather than religious pantheism [S2, §2.1]; the record codes PANT on the S6 test and names ATHE as the alternative.
+God is the only substance and "the indwelling and not the transient cause of all things" [S3; S9, E1P18 pp.59–62]. Letter 73: "God is of all things the cause immanent… not transient"; "all things are in God" [S9, p.298]. Nothing is contingent [S3, E1P29], and a miracle against nature's laws would make God act against his own nature [S4, ch. 6]. God loves and hates no one, and blessedness is virtue itself, not its reward [S3, E5P17 Cor., E5P42]. Reason has the domain of truth; theology only that of obedience, with the one dogma that obedience saves learned from revelation [S5, ch. 15]. Nadler argues that this is naturalism rather than religious pantheism [S2, §2.1]; the record codes PANT on the S6 test and names ATHE as the alternative.
 
 ## Heritage (context only)
 
@@ -410,10 +444,12 @@ Everything in this section is Lane B: labeled belief, not a finding. Geometric f
 
 ## Open questions
 
-- Check the quotations against the Cambridge edition (Kisner) or a library scan of Elwes 1883 and add pages.
-- Short Treatise and Letter 73 for the dating of his views.
+- Kisner (Cambridge) still not opened; Elwes Chief Works vol. II 1891 (S9) now supplies Ethics A pages and Letter 73. TTP still Gutenberg-only.
+- Short Treatise still unread for earliest dating of the immanent God (Letter 73 / 1675 now in hand).
+- Optional: E5 C passages in S9 for C support single → corroborated.
 
 ## Research log
 
 - 2026-10-02: Read SEP "Baruch Spinoza" (Nadler, whole entry) and Britannica (Popkin, first page). Read the Ethics (Gutenberg 3800) and the Theological-Political Treatise (Gutenberg 989, 990, 991) and copied quotations from those files. The Cambridge edition (Kisner) was not opened; no page numbers are given. Wikipedia not used.
 - 2026-10-02 (lens audit fixes): Read SEP "Spinoza's Physical Theory" (Manning, §6.2) for the lens grinding, and re-read SEP "Baruch Spinoza" §§1, 2.1 and the Britannica first page for items #12–#91. The Kisner (Cambridge) wording of the Ethics is still not opened (TODO).
+- 2026-10-23: Deepen D1 (queue #11). Elwes Chief Works vol. II 1891 archive.org scan (S9): Ethics E1P15 p.55, E1P18 pp.59–62, E4 Preface p.188; Letter XXI (LXXIII) p.298. A support single → corroborated; chart fill hollow → filled. P47 labels. Forage "Ethics" PDF rejected (AI-edited, not scholarly). Kisner and Short Treatise still not opened. No fallacy_catalog (Jason 2026-10-23).
