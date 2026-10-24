@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #131, F4 rank 133). Hunt for own-voice attribution: Lorge 2022 conclusion reaffirmed (many hands; fictional Master Sun); Boorman 2024 (Cambridge) adopts accretionist model — text developed over an extended period with no single author (S6 abstract); Wikipedia EN Sun Tzu (S5) + Art of War authorship section cite Mair (Shiji biography 'essentially fictional'), Song-era doubts, Yinqueshan slips as Han witness not Spring-and-Autumn authorship proof. No SEP/IEP entry reconstructing a personal LIO for historical Sun Wu. P42 stands: Art of War remains context only. P49 considered and not stretched (no dual scholarly reconstruction of personal A/B). P47 source_quality on S1–S6. P50 dual bio: Britannica (S1) + Wikipedia EN (S5) — traditional 544–496 BCE / Qi / Gusu left UNKNOWN (P39; contested). primary/A UNKNOWN; B/D BELOW leads held; mid UNKNOWN; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (ST7) era_bucket '-500 to 499' (0.5) -> UNKNOWN under a strict P39 (life dates UNKNOWN; the Wu service, 512–506 B.C. in the Shiji passage Giles quotes, falls before -500; the Warring States date belongs to the text). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 133). Basics from Britannica (Britannica Editors, 14 Sep 2026): the 'reputed author' of The Art of War, which is 'more likely to have been written early in the Warring States period'. Lorge (Cambridge, 2022) holds that many hands wrote it under the name of a 'fictional Master Sun'. No source read attributes the text to him, so it is context only (P42): it scores no code or axis. Giles's 1910 translation read for leads (ch. XI §26 against omens; ch. XIII §5 foreknowledge not from spirits). primary_system, A, C, E UNKNOWN; B, D BELOW_THRESHOLD as leads; mid_basin UNKNOWN. Life dates and span UNKNOWN (P39); era '-500 to 499' at 0.5. Not plotted. Draft, not reviewed."}
 
@@ -32,11 +33,11 @@ identity:
 
 basics:
   birth:
-    date: {value: UNKNOWN, how_known: "Britannica gives only 'flourished 5th century bce'."}
-    place: {value: UNKNOWN, how_known: "Not given in the body read."}
+    date: {value: UNKNOWN, how_known: "Britannica gives only 'flourished 5th century bce' (S1). Wikipedia EN reports traditional 544 BC (S5) via Sima Qian tradition; modern scholarship treats the Shiji biography as essentially fictional (Mair via S5) and life dates stay UNKNOWN (P39)."}
+    place: {value: UNKNOWN, how_known: "Britannica body gives none (S1). Wikipedia EN traditional birth in Qi (S5) — contested biography; not filled (P39/P50)."}
   death:
-    date: {value: UNKNOWN, how_known: "Not given."}
-    place: {value: UNKNOWN, how_known: "Not given."}
+    date: {value: UNKNOWN, how_known: "Britannica silent (S1). Wikipedia EN traditional 496 BC (S5); contested; UNKNOWN (P39)."}
+    place: {value: UNKNOWN, how_known: "Wikipedia EN traditional Gusu, Wu (S5); contested Shiji tradition; not filled."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "The Art of War is undated; Britannica places its writing more likely early in the Warring States period (475–221 BCE) (P39)."}
   era_bucket: {value: UNKNOWN, how_known: "No dated lasting work (P39). P39 fills era only when every year of the adult life falls in one bucket, at the certainty of the life dates; his life dates are UNKNOWN, Britannica places his service in Wu 'near the end of the Spring and Autumn period (770–476 bce)', and Giles's introduction (S2, quoting the Shiji) has the general Sun Wu advising Ho Lu on the Ch'u campaign of 512 B.C. and the entry into Ying in 506 B.C., before -500, while Britannica's 'flourished 5th century bce' falls after it. The Warring States date belongs to the unattributed text (P42), not his life. So UNKNOWN (batch Y audit, ST7; Pythagoras, Confucius and Gautama alike)."}
   region_of_birth: {value: "East Asia", certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "China (P3); Britannica gives no birthplace."}
@@ -74,15 +75,15 @@ worldview:
   working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN, P39)."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Nothing attributable."}
-  primary_system: {value: UNKNOWN, how_known: "Nothing attributable to him. The Art of War is context only (P42): no source read attributes it to him (S1 'reputed author'; S3 'many hands'). Even read as context it names no god or doctrine; its 'Heaven' is 'night and day, cold and heat, times and seasons' (S2 ch. I §7). Candidate considered: CHNFOLK (rejected: no evidence)."}
+  primary_system: {value: UNKNOWN, how_known: "Nothing attributable to him. The Art of War is context only (P42): no source read attributes it to a historical Sun Wu as sole author (S1 'reputed author'; S3 Lorge 'many hands' / 'fictional Master Sun'; S6 Boorman accretionist 'no single author'; S5 Mair via Wikipedia: Shiji biography essentially fictional). Even read as context it names no god or doctrine; its 'Heaven' is 'night and day, cold and heat, times and seasons' (S2 ch. I §7). Candidate considered: CHNFOLK (rejected: no evidence). Deepen D1: P49 not stretched — no dual scholarly reconstruction of a personal system for historical Sun Wu (no SEP/IEP Sunzi entry)."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
     - {code: CHNFOLK, reason: "Rejected: no evidence; the text forbids omens (S2 ch. XI §26), context only."}
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "Nothing attributable; the text's 'Heaven' is weather and seasons (S2 ch. I §7), context only (P42)."}
-    B_cause: {value: BELOW_THRESHOLD, how_known: "Context only (P42), a lead: 'Prohibit the taking of omens, and do away with superstitious doubts' (S2 ch. XI §26) and 'foreknowledge cannot be elicited from spirits' (ch. XIII §5) treat events as known from men, not portents; a reading toward 3. Not his words by any source read."}
+    A_locus: {value: UNKNOWN, how_known: "Nothing attributable; the text's 'Heaven' is weather and seasons (S2 ch. I §7), context only (P42). Deepen D1: modern scholarship (S3, S6, S5) reaffirms multi-hand / accretionist / fictional-Master-Sun models — no own-voice locus. P49 considered and not stretched (no Confucius-style dual reconstruction of personal A)."}
+    B_cause: {value: BELOW_THRESHOLD, how_known: "Context only (P42), a lead: 'Prohibit the taking of omens, and do away with superstitious doubts' (S2 ch. XI §26) and 'foreknowledge cannot be elicited from spirits' (ch. XIII §5) treat events as known from men, not portents; a reading toward 3. Not his words by any source read. Deepen D1: authorship hunt did not convert the lead into a scored value."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing read (P19)."}
-    D_authority: {value: BELOW_THRESHOLD, how_known: "Context only (P42), a lead toward 4: 'this foreknowledge cannot be elicited from spirits; it cannot be obtained inductively from experience, nor by any deductive calculation. Knowledge of the enemy's dispositions can only be obtained from other men' (S2 ch. XIII §§5–6): spies, not divination. Scope is military intelligence only."}
+    D_authority: {value: BELOW_THRESHOLD, how_known: "Context only (P42), a lead toward 4: 'this foreknowledge cannot be elicited from spirits; it cannot be obtained inductively from experience, nor by any deductive calculation. Knowledge of the enemy's dispositions can only be obtained from other men' (S2 ch. XIII §§5–6): spies, not divination. Scope is military intelligence only. Deepen D1: still context only."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7, P19)."}
   mid_basin: {value: UNKNOWN, how_known: "A is UNKNOWN (P19)."}
   statements:
@@ -103,7 +104,7 @@ worldview:
       verified_on: 2026-10-19
       note: "Context only (P42); as above."
   changes_over_life: []
-  coder_notes: "Coder's call. Treated like Homer and Confucius: the text is handed down under his name but not attributed to him by a source read, so it scores nothing (P42). Unlike Homer's poems the treatise is expository, so its passages on omens and spirits are recorded as leads (B, D BELOW_THRESHOLD) rather than left UNKNOWN; A has nothing even as context. Not result-changing: A is UNKNOWN, so he is unplotted either way."
+  coder_notes: "Coder's call. Treated like Homer (P42 multi-hand / tradition attribution): the text is handed down under his name but modern sources read do not attribute it to a historical Sun Wu as sole author, so it scores nothing (P42). Unlike Homer's poems the treatise is expository, so its passages on omens and spirits are recorded as leads (B, D BELOW_THRESHOLD) rather than left UNKNOWN; A has nothing even as context. Deepen D1: Lorge + Boorman + Wikipedia/Mair reaffirm accretionist / fictional Master Sun; P49 not stretched (no SEP/IEP personal-LIO reconstruction). Chart-moving NO: A UNKNOWN, unplotted either way. No fallacy_catalog; figures not refreshed."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -135,12 +136,13 @@ collaborators: []
 review:
   roster_status_reason: {value: "Core in v8 (F 4).", certainty: 0.7, cites: [{source: S4, locator: "roster.csv, rank 133"}], how_known: "Study roster."}
   controversies:
-    - {value: "Authorship and historicity: 'reputed author' (S1); 'many hands' and a 'fictional Master Sun' (S3)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "abstract"}], how_known: "Both sources."}
+    - {value: "Authorship and historicity: 'reputed author' (S1); 'many hands' and a 'fictional Master Sun' (S3); accretionist 'no single author' (S6); Shiji biography 'essentially fictional' (Mair via S5)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "abstract"}, {source: S6, locator: "chapter abstract"}, {source: S5, locator: "Life (Mair)"}], how_known: "S1, S3, S5, S6."}
   data_quality_flags:
-    - "S3 read as the chapter abstract only."
+    - "S3 and S6 read as Cambridge chapter abstracts only (full monographs not page-checked)."
     - "Britannica's Quick Facts give two 'Flourished' values (5th century BCE; 400–301 BCE); the body's 'flourished 5th century bce' is used."
+    - "P49 considered and not stretched: no dual scholarly reconstruction of personal A/B for historical Sun Wu."
   open_questions:
-    - "Read a signed scholarly account of the text's date and authorship (Lorge's book; the Yinqueshan slips)."
+    - "Optional unread: full Lorge 2022 monograph body; Mair Columbia 2007 introduction page-check; Gawlikowski & Loewe 1993 ECT bibliographical guide — unlikely to unlock own-voice scoring under P42."
 
 sources:
   - id: S1
@@ -151,6 +153,7 @@ sources:
     url: "https://www.britannica.com/biography/Sunzi"
     accessed: 2026-10-19
     reliability_note: "Editors' article, most recently revised by Ethan Teekah."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, worldview, timing, institutions, review]
   - id: S2
     type: primary
@@ -160,6 +163,7 @@ sources:
     url: "https://www.gutenberg.org/ebooks/132"
     accessed: 2026-10-19
     reliability_note: "Scholarly translation (web copy, not scan-checked). Attributed text, context only for his worldview (P42). The Gutenberg front matter gives the year (1910) but no publisher."
+    source_quality: "unofficial web copy"
     used_for: [basics, worldview, lane_b]
   - id: S3
     type: secondary
@@ -168,7 +172,8 @@ sources:
     citation: "Lorge, Peter. Sun Tzu in the West: The Anglo-American Art of War. Cambridge: Cambridge University Press, 2022. Conclusion (doi:10.1017/9781108902687.011)."
     url: "https://doi.org/10.1017/9781108902687.011"
     accessed: 2026-10-19
-    reliability_note: "Signed scholarly monograph; only the chapter abstract was read (via the DOI record), so used for the authorship question only."
+    reliability_note: "Signed scholarly monograph; only the chapter abstract was read (via the DOI record), so used for the authorship question only. Deepen D1: abstract reaffirmed."
+    source_quality: "scholarly edition or monograph"
     used_for: [identity, contribution, worldview, review]
   - id: S4
     type: secondary
@@ -178,7 +183,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Sun Tzu.\" Wikipedia, The Free Encyclopedia. https://en.wikipedia.org/wiki/Sun_Tzu. Read live 2026-10-24."
+    url: "https://en.wikipedia.org/wiki/Sun_Tzu"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with Britannica (S1). Traditional dates/places (544–496 BCE; Qi; Gusu) and authorship section (Mair on Shiji fiction; Song doubts; Yinqueshan) used as leads; life years/places stay UNKNOWN under P39. Not used to score A/B (P42)."
+    source_quality: "reference entry"
+    used_for: [basics, contribution, worldview, review]
+  - id: S6
+    type: secondary
+    kind: "book chapter"
+    author: "Scott Boorman"
+    citation: "Boorman, Scott. \"Background: Historical and Textual.\" In Three Faces of Sun Tzu: Analyzing Sun Tzu's Art of War, A Manual on Strategy, 23–46. Cambridge: Cambridge University Press, 2024. doi:10.1017/9781108686877.003. Chapter abstract / summary only."
+    url: "https://doi.org/10.1017/9781108686877.003"
+    accessed: 2026-10-24
+    reliability_note: "Signed Cambridge monograph chapter; abstract/summary only this pass. Explicitly accretionist: text developed over an extended period with no single author — strengthens P42 block."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, review]
 ---
 
 # Sun Tzu
@@ -187,7 +213,7 @@ sources:
 
 ## Summary
 
-Sun Tzu (fl. 5th century BCE), reputed author of The Art of War [S1]. Draft: the text is not attributed to him by a source read (P42), so nothing scores; primary_system and A UNKNOWN; B and D leads only; mid_basin UNKNOWN. Not plotted.
+Sun Tzu (fl. 5th century BCE), reputed author of The Art of War [S1]. Deepen D1: modern scholarship treats the text as multi-hand / accretionist and Master Sun as fictional or unrecoverable as sole author [S3; S6; S5]; Art of War stays context only (P42). primary_system and A UNKNOWN; B and D BELOW_THRESHOLD leads only; mid_basin UNKNOWN. Not plotted. Chart-moving NO.
 
 ## Life and work
 
@@ -203,7 +229,7 @@ Nothing known.
 
 ## Adult working worldview
 
-Nothing attributable; the text forbids omens and seeks knowledge from men, not spirits [S2].
+Nothing attributable as own voice (P42). Art of War passages forbidding omens and seeking knowledge from men, not spirits, remain context-only leads for B and D [S2]. Deepen D1: Lorge, Boorman, and Mair (via Wikipedia) reaffirm no single-author attribution; P49 not stretched [S3; S6; S5].
 
 ## Heritage (context only)
 
@@ -219,8 +245,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Not read [S
 
 ## Open questions
 
-- Date and authorship of the text.
+- Optional full-monograph page-check (Lorge 2022; Mair 2007; Gawlikowski & Loewe 1993) — unlikely to unlock own-voice scoring under P42.
 
 ## Research log
 
 - 2026-10-19: Read Britannica, the Lorge chapter abstract and Giles's translation (chs. I, XI, XIII).
+- 2026-10-24: Deepen D1 — reaffirmed Lorge 2022 abstract (fictional Master Sun; many hands); added Boorman 2024 Cambridge chapter abstract (accretionist, no single author); Wikipedia EN Sun Tzu for P50 dual bio and Mair/Yinqueshan authorship leads; no SEP Sunzi entry; kept primary/A UNKNOWN and B/D BELOW leads; P47/P49/P50. No figures/. No fallacy_catalog.
