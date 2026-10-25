@@ -230,9 +230,14 @@ def fig_core_composition(out):
 
 
 # 3 ------------------------------------------------------------------------
-def fig_people_cause_locus(out):
+def fig_people_cause_locus(out, fullweight=False):
     """Surnames sit next to their dots on a 5x5 grid. No region is shaded or labeled (Jason, 2026-10-08).
-    Full 0-4 range on both axes. People come from people_axis_points(), not a hardcoded list."""
+    Full 0-4 range on both axes. People come from people_axis_points(), not a hardcoded list.
+
+    fullweight=True: same plotted set, but do not fade when cert < 0.7 (0.5 reads like full weight).
+    Hollow-ring (single-source) cue stays. Writes people_cause_locus_fullweight.png; production
+    people_cause_locus.png is unchanged. Sensitivity/view only — not the default P47–P50 chart.
+    """
     # Plain words for the 0-4 scale (CODING_GUIDE §6: 0 pole, 1 leans, 2 mixed, 3 leans other pole with a stated exception, 4 pole)
     y_labels = ["A person outside\nthe world", "Mostly a person\noutside the world", "Mixed",
                 "Mostly the order\nof nature", "The order of nature\nitself (or no\nseparate God)"]
@@ -271,7 +276,8 @@ def fig_people_cause_locus(out):
             x = b - 0.44 + c * colw
             y = a + (nrows - 1) / 2 * rowh - r * rowh
             cert = min(p["cA"], p["cB"])
-            faded = cert < 0.7
+            # Main chart: fade when cert < 0.7. fullweight view: never fade (hollow still marks single-source).
+            faded = (False if fullweight else (cert < 0.7))
             hollow = p["hollow"]  # P48: fill = corroboration (hollow ring = one source); darkness = certainty
             ax.scatter(x, y, s=120, marker="o", facecolors="white" if hollow else dot,
                        edgecolors=dot if hollow else ("#999999" if faded else "black"),
@@ -291,23 +297,41 @@ def fig_people_cause_locus(out):
     ax.set_xlabel("How do things happen?", fontsize=15, labelpad=12)
     ax.set_ylabel("Where is God?", fontsize=15, labelpad=12)
 
-    fig.text(0.5, 0.955, "Where coded people fall: where God is vs. how things happen",
-             ha="center", fontsize=20, fontweight="bold")
-    fig.text(0.5, 0.925, f"Draft scores for the {len(pts)} hand-picked people with both axes scored; not a sample, not a result."
-             + (f"\n{len(not_scorable)} more coded people are not scorable yet (an axis is UNKNOWN or below threshold) "
-                "and are not shown or counted." if not_scorable else ""),
-             ha="center", va="top", fontsize=13.5, color="#444444")
-    leg, names = cue_legend(dot, ms=10)
+    n_weak = sum(1 for p in pts if min(p["cA"], p["cB"]) < 0.7)
+    if fullweight:
+        title = "Where coded people fall (full-weight view): where God is vs. how things happen"
+        sub = (f"Same {len(pts)} people with both axes scored as the main chart; certainty fade removed "
+               f"so scores at 0.5 draw at full weight ({n_weak} would be faded on the main chart). "
+               "Hollow ring still marks a single source. Sensitivity view only — not a result.")
+    else:
+        title = "Where coded people fall: where God is vs. how things happen"
+        sub = (f"Draft scores for the {len(pts)} hand-picked people with both axes scored; not a sample, not a result."
+               + (f"\n{len(not_scorable)} more coded people are not scorable yet (an axis is UNKNOWN or below threshold) "
+                  "and are not shown or counted." if not_scorable else ""))
+    fig.text(0.5, 0.955, title, ha="center", fontsize=20, fontweight="bold")
+    fig.text(0.5, 0.925, sub, ha="center", va="top", fontsize=13.5, color="#444444")
+    if fullweight:
+        def _m(face, edge, alpha, lw=0.8):
+            return Line2D([0], [0], marker="o", ls="", markersize=10, markerfacecolor=face,
+                          markeredgecolor=edge, markeredgewidth=lw, alpha=alpha)
+        leg = [_m(dot, "black", 0.95), _m("white", dot, 0.95, 2.0)]
+        names = ["filled: backed by 2+ sources (full weight; fade off)",
+                 "hollow ring: a score rests on one source"]
+    else:
+        leg, names = cue_legend(dot, ms=10)
     if any(p["name"] in P43_PEOPLE for p in pts):
         leg.append(Line2D([0], [0], ls="", marker=""))
         names.append("* = disputed interview wording\n   (Craft books), capped at 0.5 (P43)")
     ax.legend(leg, names, loc="upper left", fontsize=11,
               frameon=True, framealpha=0.95, edgecolor="#DDDDDD")
-    fig.text(0.01, 0.012, "Source: draft person records in neuresthetics/neuresthetics_genius_study (people/), "
-             "unreviewed. Genius Study v8.0-alpha, descriptive only, no results.",
-             ha="left", va="bottom", fontsize=8.5, color="#888888")
-    report_overlaps(fig, "people_cause_locus.png")
-    save(fig, out, "people_cause_locus.png")
+    src = ("Source: draft person records in neuresthetics/neuresthetics_genius_study (people/), "
+           "unreviewed. Genius Study v8.0-alpha, descriptive only, no results.")
+    if fullweight:
+        src += " Full-weight sensitivity view (fade off)."
+    fig.text(0.01, 0.012, src, ha="left", va="bottom", fontsize=8.5, color="#888888")
+    out_name = "people_cause_locus_fullweight.png" if fullweight else "people_cause_locus.png"
+    report_overlaps(fig, out_name)
+    save(fig, out, out_name)
 
 
 # 4 ------------------------------------------------------------------------
@@ -617,10 +641,19 @@ def fig_people_systems_overlay(out):
 
 
 def main():
+    # Default: rewrite all production figures (people_cause_locus.png keeps P47–P50 fade).
+    # --fullweight: write only people_cause_locus_fullweight.png (same plotted set, no cert fade;
+    #   hollow still marks single-source). Does not touch production figures.
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(REPO, "figures"))
+    ap.add_argument("--fullweight", action="store_true",
+                    help="Write people_cause_locus_fullweight.png only (no fade; hollow kept). "
+                         "Leaves production figures untouched.")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
+    if a.fullweight:
+        fig_people_cause_locus(a.out, fullweight=True)
+        return
     fig_list_overlap(a.out)
     fig_core_composition(a.out)
     fig_people_cause_locus(a.out)
