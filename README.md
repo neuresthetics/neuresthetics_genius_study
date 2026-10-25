@@ -61,149 +61,149 @@ That view is not a claim that weak evidence equals strong evidence. It is an ill
 
 ### People not yet on the chart
 
-The 140 coded people below lack an integer score on at least one axis (the recorded value is `UNKNOWN` or `BELOW_THRESHOLD`), so they are not plotted and are left out of every chart count. One line each; regenerate with `python3 scripts/progress_status.py`. Drafts only — no results yet.
+The 140 coded people below are not on the chart because at least one axis has no settled score yet — either no public own-voice claim was found, or the best evidence never clears the bar. They are left out of every chart count. One line each; regenerate with `python3 scripts/progress_status.py`. Drafts only — no results yet.
 
 <!-- BEGIN GENERATED: not_scorable -->
-- **Ada Yonath** — A_locus BELOW_THRESHOLD; B scored.
-- **Akira Kurosawa** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Alan Turing** — A_locus BELOW_THRESHOLD; B scored.
-- **Alexander Fleming** — A_locus UNKNOWN; B scored.
-- **Alexander Graham Bell** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Alfred North Whitehead** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Amartya Sen** — No public B_cause score (UNKNOWN).
-- **Andreas Vesalius** — A_locus UNKNOWN; B scored.
-- **Andrew Wiles** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
-- **Antoine Lavoisier** — A_locus BELOW_THRESHOLD; B scored.
-- **Archimedes** — A_locus UNKNOWN; B scored.
-- **Arnold Schoenberg** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Barbara McClintock** — A_locus UNKNOWN; B scored.
-- **Bill Gates** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Brahmagupta** — A_locus BELOW_THRESHOLD; B scored.
-- **Caravaggio** — A_locus and B_cause both UNKNOWN.
-- **Carl Jung** — A_locus BELOW_THRESHOLD; B scored.
-- **Carl Sagan** — A_locus BELOW_THRESHOLD; B scored.
-- **Caroline Herschel** — B_cause BELOW_THRESHOLD; A scored.
-- **Chien-Shiung Wu** — A_locus UNKNOWN; B scored.
-- **Chinua Achebe** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Claude Debussy** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Claude Lévi-Strauss** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Claude Monet** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Confucius** — No public B_cause score (UNKNOWN).
-- **Dante Alighieri** — B_cause BELOW_THRESHOLD; A scored.
-- **David Hilbert** — A_locus BELOW_THRESHOLD; B scored.
-- **Demis Hassabis** — A_locus BELOW_THRESHOLD; B scored.
-- **Dmitri Mendeleev** — A_locus BELOW_THRESHOLD; B scored.
-- **Donald Knuth** — No public B_cause score (UNKNOWN).
-- **Donatello** — A_locus and B_cause both UNKNOWN.
-- **Dorothy Hodgkin** — A_locus BELOW_THRESHOLD; B scored.
-- **Duke Ellington** — B_cause BELOW_THRESHOLD; A scored.
-- **Edwin Hubble** — A_locus BELOW_THRESHOLD; B scored.
-- **Emmy Noether** — A_locus UNKNOWN; B scored.
-- **Enrico Fermi** — A_locus BELOW_THRESHOLD; B scored.
-- **Euclid** — A_locus UNKNOWN; B scored.
-- **Ferdinand de Saussure** — A_locus and B_cause both UNKNOWN.
-- **Frank Lloyd Wright** — No public B_cause score (UNKNOWN).
-- **Franz Kafka** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Franz Schubert** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Frida Kahlo** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Fyodor Dostoevsky** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Gabriel García Márquez** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Geoffrey Chaucer** — A_locus and B_cause both UNKNOWN.
-- **Geoffrey Hinton** — No public B_cause score (UNKNOWN).
-- **George Orwell** — No public B_cause score (UNKNOWN).
-- **Georgia O'Keeffe** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Grace Hopper** — A_locus and B_cause both UNKNOWN.
-- **Gregor Mendel** — A_locus UNKNOWN; B scored.
-- **Grigori Perelman** — A_locus and B_cause both UNKNOWN.
-- **Guglielmo Marconi** — No public B_cause score (UNKNOWN).
-- **Hannah Arendt** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Hedy Lamarr** — A_locus and B_cause both UNKNOWN.
-- **Henri Matisse** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Henri Poincaré** — A_locus UNKNOWN; B scored.
-- **Henrietta Swan Leavitt** — A_locus BELOW_THRESHOLD; B scored.
-- **Henry Ford** — No public B_cause score (UNKNOWN).
-- **Herbert Simon** — A_locus BELOW_THRESHOLD; B scored.
-- **Hippocrates** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
-- **Homer** — A_locus and B_cause both UNKNOWN.
-- **Hypatia** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Ibn al-Haytham (Alhazen)** — A_locus UNKNOWN; B scored.
-- **Ibn Battuta** — No public B_cause score (UNKNOWN).
-- **Ivan Pavlov** — A_locus BELOW_THRESHOLD; B scored.
-- **J. Robert Oppenheimer** — A_locus BELOW_THRESHOLD; B scored.
-- **J.M.W. Turner** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Jacques Derrida** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **James Joyce** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Jane Austen** — B_cause BELOW_THRESHOLD; A scored.
-- **Jean-Paul Sartre** — No public B_cause score (UNKNOWN).
-- **Johann Sebastian Bach** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Johannes Brahms** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Johannes Gutenberg** — A_locus and B_cause both UNKNOWN.
-- **John Maynard Keynes** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **John McCarthy** — No public B_cause score (UNKNOWN).
-- **John Milton** — No public B_cause score (UNKNOWN).
-- **John Nash** — A_locus and B_cause both UNKNOWN.
-- **John Stuart Mill** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **John von Neumann** — A_locus BELOW_THRESHOLD; B scored.
-- **Jorge Luis Borges** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Joseph-Louis Lagrange** — A_locus UNKNOWN; B scored.
-- **Judith Butler** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Katherine Johnson** — No public B_cause score (UNKNOWN).
-- **Le Corbusier** — A_locus and B_cause both UNKNOWN.
-- **Lise Meitner** — A_locus BELOW_THRESHOLD; B scored.
-- **Ludwig Mies van der Rohe** — A_locus and B_cause both UNKNOWN.
-- **Ludwig van Beethoven** — B_cause BELOW_THRESHOLD; A scored.
-- **Mahatma Gandhi** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Marcel Proust** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Marie Curie** — A_locus BELOW_THRESHOLD; B scored.
-- **Martin Heidegger** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Marvin Minsky** — No public B_cause score (UNKNOWN).
-- **Mary Shelley** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Maryam Mirzakhani** — A_locus and B_cause both UNKNOWN.
-- **Michel Foucault** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Michelangelo** — No public B_cause score (UNKNOWN).
-- **Miguel de Cervantes** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Miles Davis** — A_locus and B_cause both UNKNOWN.
-- **Milton Friedman** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Nelson Mandela** — No public B_cause score (UNKNOWN).
-- **Niccolò Machiavelli** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Pablo Picasso** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Parmenides** — A_locus and B_cause both UNKNOWN.
-- **Paul Cézanne** — No public B_cause score (UNKNOWN).
-- **Paul Dirac** — A_locus BELOW_THRESHOLD; B scored.
-- **Paul Samuelson** — A_locus and B_cause both UNKNOWN.
-- **Plotinus** — A_locus BELOW_THRESHOLD; B scored.
-- **Pyotr Ilyich Tchaikovsky** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Pythagoras** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Rachel Carson** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Raphael** — A_locus and B_cause both UNKNOWN.
-- **Rembrandt** — A_locus and B_cause both UNKNOWN.
-- **Richard Wagner** — A_locus BELOW_THRESHOLD; B scored.
-- **Robert Koch** — A_locus UNKNOWN; B scored.
-- **Roger Penrose** — A_locus BELOW_THRESHOLD; B scored.
-- **Rudolf Clausius** — A_locus UNKNOWN; B scored.
-- **Rumi** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Salvador Dalí** — A_locus and B_cause both UNKNOWN.
-- **Samuel Morse** — B_cause BELOW_THRESHOLD; A scored.
-- **Siddhartha Gautama** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Simone de Beauvoir** — No public B_cause score (UNKNOWN).
-- **Socrates** — No public B_cause score (UNKNOWN).
-- **Srinivasa Ramanujan** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Steve Jobs** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
-- **Sun Tzu** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
-- **Sushruta** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
-- **Søren Kierkegaard** — B_cause BELOW_THRESHOLD; A scored.
-- **Terence Tao** — A_locus UNKNOWN; B scored.
-- **Tim Berners-Lee** — No public B_cause score (UNKNOWN).
-- **Toni Morrison** — B_cause BELOW_THRESHOLD; A scored.
-- **Vera Rubin** — A_locus UNKNOWN; B scored.
-- **Vincent van Gogh** — No public B_cause score (UNKNOWN).
-- **Vint Cerf** — A_locus UNKNOWN; B scored.
-- **Virgil** — A_locus and B_cause both BELOW_THRESHOLD.
-- **Virginia Woolf** — No public B_cause score (UNKNOWN).
-- **Willard Libby** — A_locus UNKNOWN; B scored.
-- **William Shakespeare** — A_locus and B_cause both UNKNOWN.
-- **Wolfgang Amadeus Mozart** — B_cause BELOW_THRESHOLD; A scored.
-- **Évariste Galois** — A_locus and B_cause both UNKNOWN.
+- **Ada Yonath** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Akira Kurosawa** — Where God sits and how nature runs both never clear the evidence bar.
+- **Alan Turing** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Alexander Fleming** — No settled score for where God is; nature-side score is in place.
+- **Alexander Graham Bell** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Alfred North Whitehead** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Amartya Sen** — No settled score for how nature runs; where-God score is in place.
+- **Andreas Vesalius** — No settled score for where God is; nature-side score is in place.
+- **Andrew Wiles** — No settled score for where God is; how nature runs never clears the evidence bar.
+- **Antoine Lavoisier** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Archimedes** — No settled score for where God is; nature-side score is in place.
+- **Arnold Schoenberg** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Barbara McClintock** — No settled score for where God is; nature-side score is in place.
+- **Bill Gates** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Brahmagupta** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Caravaggio** — No settled score for where God is or how nature runs.
+- **Carl Jung** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Carl Sagan** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Caroline Herschel** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Chien-Shiung Wu** — No settled score for where God is; nature-side score is in place.
+- **Chinua Achebe** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Claude Debussy** — Where God sits and how nature runs both never clear the evidence bar.
+- **Claude Lévi-Strauss** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Claude Monet** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Confucius** — No settled score for how nature runs; where-God score is in place.
+- **Dante Alighieri** — How nature runs never clears the evidence bar; where-God score is in place.
+- **David Hilbert** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Demis Hassabis** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Dmitri Mendeleev** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Donald Knuth** — No settled score for how nature runs; where-God score is in place.
+- **Donatello** — No settled score for where God is or how nature runs.
+- **Dorothy Hodgkin** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Duke Ellington** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Edwin Hubble** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Emmy Noether** — No settled score for where God is; nature-side score is in place.
+- **Enrico Fermi** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Euclid** — No settled score for where God is; nature-side score is in place.
+- **Ferdinand de Saussure** — No settled score for where God is or how nature runs.
+- **Frank Lloyd Wright** — No settled score for how nature runs; where-God score is in place.
+- **Franz Kafka** — Where God sits and how nature runs both never clear the evidence bar.
+- **Franz Schubert** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Frida Kahlo** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Fyodor Dostoevsky** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Gabriel García Márquez** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Geoffrey Chaucer** — No settled score for where God is or how nature runs.
+- **Geoffrey Hinton** — No settled score for how nature runs; where-God score is in place.
+- **George Orwell** — No settled score for how nature runs; where-God score is in place.
+- **Georgia O'Keeffe** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Grace Hopper** — No settled score for where God is or how nature runs.
+- **Gregor Mendel** — No settled score for where God is; nature-side score is in place.
+- **Grigori Perelman** — No settled score for where God is or how nature runs.
+- **Guglielmo Marconi** — No settled score for how nature runs; where-God score is in place.
+- **Hannah Arendt** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Hedy Lamarr** — No settled score for where God is or how nature runs.
+- **Henri Matisse** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Henri Poincaré** — No settled score for where God is; nature-side score is in place.
+- **Henrietta Swan Leavitt** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Henry Ford** — No settled score for how nature runs; where-God score is in place.
+- **Herbert Simon** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Hippocrates** — No settled score for where God is; how nature runs never clears the evidence bar.
+- **Homer** — No settled score for where God is or how nature runs.
+- **Hypatia** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Ibn al-Haytham (Alhazen)** — No settled score for where God is; nature-side score is in place.
+- **Ibn Battuta** — No settled score for how nature runs; where-God score is in place.
+- **Ivan Pavlov** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **J. Robert Oppenheimer** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **J.M.W. Turner** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Jacques Derrida** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **James Joyce** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Jane Austen** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Jean-Paul Sartre** — No settled score for how nature runs; where-God score is in place.
+- **Johann Sebastian Bach** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Johannes Brahms** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Johannes Gutenberg** — No settled score for where God is or how nature runs.
+- **John Maynard Keynes** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **John McCarthy** — No settled score for how nature runs; where-God score is in place.
+- **John Milton** — No settled score for how nature runs; where-God score is in place.
+- **John Nash** — No settled score for where God is or how nature runs.
+- **John Stuart Mill** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **John von Neumann** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Jorge Luis Borges** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Joseph-Louis Lagrange** — No settled score for where God is; nature-side score is in place.
+- **Judith Butler** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Katherine Johnson** — No settled score for how nature runs; where-God score is in place.
+- **Le Corbusier** — No settled score for where God is or how nature runs.
+- **Lise Meitner** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Ludwig Mies van der Rohe** — No settled score for where God is or how nature runs.
+- **Ludwig van Beethoven** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Mahatma Gandhi** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Marcel Proust** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Marie Curie** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Martin Heidegger** — Where God sits and how nature runs both never clear the evidence bar.
+- **Marvin Minsky** — No settled score for how nature runs; where-God score is in place.
+- **Mary Shelley** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Maryam Mirzakhani** — No settled score for where God is or how nature runs.
+- **Michel Foucault** — Where God sits and how nature runs both never clear the evidence bar.
+- **Michelangelo** — No settled score for how nature runs; where-God score is in place.
+- **Miguel de Cervantes** — Where God sits and how nature runs both never clear the evidence bar.
+- **Miles Davis** — No settled score for where God is or how nature runs.
+- **Milton Friedman** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Nelson Mandela** — No settled score for how nature runs; where-God score is in place.
+- **Niccolò Machiavelli** — Where God sits and how nature runs both never clear the evidence bar.
+- **Pablo Picasso** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Parmenides** — No settled score for where God is or how nature runs.
+- **Paul Cézanne** — No settled score for how nature runs; where-God score is in place.
+- **Paul Dirac** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Paul Samuelson** — No settled score for where God is or how nature runs.
+- **Plotinus** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Pyotr Ilyich Tchaikovsky** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Pythagoras** — Where God sits and how nature runs both never clear the evidence bar.
+- **Rachel Carson** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Raphael** — No settled score for where God is or how nature runs.
+- **Rembrandt** — No settled score for where God is or how nature runs.
+- **Richard Wagner** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Robert Koch** — No settled score for where God is; nature-side score is in place.
+- **Roger Penrose** — Where God sits never clears the evidence bar; nature-side score is in place.
+- **Rudolf Clausius** — No settled score for where God is; nature-side score is in place.
+- **Rumi** — Where God sits and how nature runs both never clear the evidence bar.
+- **Salvador Dalí** — No settled score for where God is or how nature runs.
+- **Samuel Morse** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Siddhartha Gautama** — Where God sits and how nature runs both never clear the evidence bar.
+- **Simone de Beauvoir** — No settled score for how nature runs; where-God score is in place.
+- **Socrates** — No settled score for how nature runs; where-God score is in place.
+- **Srinivasa Ramanujan** — Where God sits and how nature runs both never clear the evidence bar.
+- **Steve Jobs** — Where God sits never clears the evidence bar; no settled score for how nature runs.
+- **Sun Tzu** — No settled score for where God is; how nature runs never clears the evidence bar.
+- **Sushruta** — No settled score for where God is; how nature runs never clears the evidence bar.
+- **Søren Kierkegaard** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Terence Tao** — No settled score for where God is; nature-side score is in place.
+- **Tim Berners-Lee** — No settled score for how nature runs; where-God score is in place.
+- **Toni Morrison** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Vera Rubin** — No settled score for where God is; nature-side score is in place.
+- **Vincent van Gogh** — No settled score for how nature runs; where-God score is in place.
+- **Vint Cerf** — No settled score for where God is; nature-side score is in place.
+- **Virgil** — Where God sits and how nature runs both never clear the evidence bar.
+- **Virginia Woolf** — No settled score for how nature runs; where-God score is in place.
+- **Willard Libby** — No settled score for where God is; nature-side score is in place.
+- **William Shakespeare** — No settled score for where God is or how nature runs.
+- **Wolfgang Amadeus Mozart** — How nature runs never clears the evidence bar; where-God score is in place.
+- **Évariste Galois** — No settled score for where God is or how nature runs.
 <!-- END GENERATED: not_scorable -->
 
 

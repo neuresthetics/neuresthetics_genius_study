@@ -226,21 +226,44 @@ def not_scorable_summary(out):
 
 
 def not_scorable_reason(row):
-    """One plain sentence for why a people_axis_points() not_scorable row cannot plot.
+    """One plain-English sentence for why a not_scorable row cannot plot.
 
-    Uses only the recorded A/B values (integer score vs UNKNOWN vs BELOW_THRESHOLD).
+    Uses only the recorded A/B values (integer vs UNKNOWN vs BELOW_THRESHOLD).
+    Speaks in chart language (where God is / how nature runs); no axis codes.
     Lane A: descriptive; no invented source story."""
     a, b = row["A"], row["B"]
     okA, okB = isinstance(a, int), isinstance(b, int)
+
+    def a_phrase(v):
+        if v == "UNKNOWN":
+            return "No settled score for where God is"
+        if v == "BELOW_THRESHOLD":
+            return "Where God sits never clears the evidence bar"
+        return f"Where God sits is unsettled ({v})"
+
+    def b_phrase(v, *, capitalize=False):
+        if v == "UNKNOWN":
+            s = "no settled score for how nature runs"
+        elif v == "BELOW_THRESHOLD":
+            s = "how nature runs never clears the evidence bar"
+        else:
+            s = f"how nature runs is unsettled ({v})"
+        return s[:1].upper() + s[1:] if capitalize else s
+
     if not okA and not okB:
-        if a == b:
-            return f"A_locus and B_cause both {a}."
-        return f"A_locus {a}; B_cause {b}."
+        if a == "UNKNOWN" and b == "UNKNOWN":
+            return "No settled score for where God is or how nature runs."
+        if a == "BELOW_THRESHOLD" and b == "BELOW_THRESHOLD":
+            return "Where God sits and how nature runs both never clear the evidence bar."
+        return f"{a_phrase(a)}; {b_phrase(b)}."
     if not okA:
-        return f"A_locus {a}; B scored."
+        return f"{a_phrase(a)}; nature-side score is in place."
+    # A scored, B not
     if b == "UNKNOWN":
-        return "No public B_cause score (UNKNOWN)."
-    return f"B_cause {b}; A scored."
+        return "No settled score for how nature runs; where-God score is in place."
+    if b == "BELOW_THRESHOLD":
+        return "How nature runs never clears the evidence bar; where-God score is in place."
+    return f"{b_phrase(b, capitalize=True)}; where-God score is in place."
 
 
 def not_scorable_readme_list():
