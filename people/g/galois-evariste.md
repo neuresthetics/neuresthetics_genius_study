@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8)"
+  collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #158, F 3, rank 166). Needs: hunt own-voice; keep UNKNOWN if silent; do not force plot. Read Dupuy 1896 (Wikisource full text / NUMDAM ASENS; S3): mother Adélaïde-Marie remained a lifelong professing Christian who reduced religion to a moral envelope — MacTutor's 'imparted her own scepticism' is a tertiary paraphrase that contradicts Dupuy, so the AGNOS lead is weakened, not confirmed. Own letter to Chevalier of 25 May 1832 rejects Saint-Simonian 'conversion' efforts ('la vanité de tes efforts'); not a statement about God (Z8 lead kept, now with Dupuy quote). Deathbed refusal of a priest is Dupuy/Wikipedia reported account, not own words — cannot score (CODING_GUIDE §1 / reported speech). 'Je prends le ciel à témoin' in the 29 May farewell is a figurative oath, not theology. No own-voice locus, nature-order, or afterlife statement found. Not a scientist (P30 pure algebra). primary/A/B/C/D/E/mid stay UNKNOWN; not plotted. P50 Wikipedia dual bio (S4). P47 source_quality on S1–S4. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): 1832 Chevalier letter added as a non-scoring lead in coder_notes. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 166). Source: MacTutor biography (O'Connor and Robertson, signed). No own words on religion found; MacTutor says his mother taught him religion and 'imparted her own scepticism to her son' (the biographers' words, not his). Not a scientist (pure algebra; Knuth, Tao, Noether-algebra precedents; P30). primary_system UNKNOWN (lead AGNOS from the mother's scepticism); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1829–1832, age 18. Not plotted. Draft, not reviewed."}
 
@@ -24,18 +25,18 @@ identity:
     status: "core"
     field: "mathematics"
     field_bucket: "mathematics"
-  full_name: {value: "Évariste Galois", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
-  native_name: {value: "Évariste Galois", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
+  full_name: {value: "Évariste Galois", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}, {source: S4, locator: "lead / infobox"}], how_known: "MacTutor and Wikipedia agree (P50)."}
+  native_name: {value: "Évariste Galois", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}, {source: S4, locator: "lead"}], how_known: "MacTutor and Wikipedia agree (P50)."}
   aliases:
     - {name: "Galois-Évariste", kind: "roster alias"}
 
 basics:
   birth:
-    date: {value: "1811-10-25", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
-    place: {value: "Bourg-la-Reine", modern_name: "Bourg-la-Reine, France", polity_then: "Kingdom of France", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
+    date: {value: "1811-10-25", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}, {source: S4, locator: "infobox"}], how_known: "MacTutor and Wikipedia agree (P50)."}
+    place: {value: "Bourg-la-Reine", modern_name: "Bourg-la-Reine, France", polity_then: "First French Empire / Kingdom of France", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}, {source: S4, locator: "infobox"}], how_known: "MacTutor and Wikipedia agree (P50)."}
   death:
-    date: {value: "1832-05-31", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
-    place: {value: "Paris", modern_name: "Paris, France", polity_then: "Kingdom of France", certainty: 0.7, cites: [{source: S1, locator: "Quick Info; Biography"}], how_known: "Cochin hospital, after a duel."}
+    date: {value: "1832-05-31", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}, {source: S4, locator: "infobox"}], how_known: "MacTutor and Wikipedia agree (P50)."}
+    place: {value: "Paris", modern_name: "Paris, France", polity_then: "July Monarchy (France)", certainty: 0.7, cites: [{source: S1, locator: "Quick Info; Biography"}, {source: S4, locator: "Death"}], how_known: "Hôpital Cochin after the duel; MacTutor and Wikipedia agree (P50)."}
   first_lasting_contribution_year: {value: 1829, certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "Articles on the algebraic solution of equations submitted to the Académie on 25 May and 1 June 1829; those versions are lost, later versions 1830 and 1831, so 0.5."}
   era_bucket: {value: "1750 to 1849", certainty: 1.0, cites: [{source: S1, locator: "Biography"}], how_known: "1829 (P2)."}
   region_of_birth: {value: "Western Europe", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "France (P3)."}
@@ -56,7 +57,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of Galois theory and early group theory (S1).", certainty: 0.7, cites: [{source: S1, locator: "Summary"}], how_known: "MacTutor."}
 
 childhood:
-  family_religion: {value: UNKNOWN, how_known: "Not stated; parents 'well educated in philosophy, classical literature and religion' (S1)."}
+  family_religion: {value: UNKNOWN, how_known: "Parents well educated in philosophy, classical literature and religion (S1). Mother lifelong professing Christian who reduced religion to moral principles (S3 Dupuy); not used as his profession."}
   family_religious_practice: {value: UNKNOWN, how_known: "Not stated."}
   parents_and_household: []
   household_circumstances: {value: UNKNOWN, how_known: "Not stated."}
@@ -67,7 +68,7 @@ childhood:
   early_science_exposure: []
   key_early_reading: []
   childhood_mentors:
-    - {value: "Adelaide Marie Demante, mother, his sole teacher to age 12", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor: taught him Greek, Latin and religion, 'where she imparted her own scepticism to her son'."}
+    - {value: "Adélaïde-Marie Demante, mother, his sole teacher to age 12", certainty: 0.7, cites: [{source: S1, locator: "Biography"}, {source: S3, locator: "Enfance (mother)"}, {source: S4, locator: "Early life"}], how_known: "MacTutor, Dupuy, and Wikipedia agree she taught him to 12. MacTutor's 'imparted her own scepticism' is not in Dupuy: Dupuy says she remained a lifelong professing Christian without feminine devotion (S3)."}
   languages_in_childhood: {value: UNKNOWN, how_known: "Not stated."}
   notable_events:
     - {value: "Father's suicide after a forged-epigram scandal involving the village priest", year: 1829, certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
@@ -77,25 +78,35 @@ worldview:
   working_years: {value: "1829–1832", certainty: 0.5, cites: [{source: S1, locator: "Biography"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: {value: UNKNOWN, how_known: "No own words on religion found. Lead AGNOS: his mother 'imparted her own scepticism to her son' (S1, the biographers' words). Ardent republican; anticlerical context (the priest's forgeries) is not a stance."}
+  primary_system: {value: UNKNOWN, how_known: "No own words on God or a belief system found (P19). Former AGNOS lead from MacTutor's 'mother's scepticism' is weakened: Dupuy (S3) has the mother as a lifelong professing Christian. Saint-Simon refusal (25 May 1832 letter) and priest-refusal report are not professions of AGNOS/ATHE. Ardent republicanism and the village-priest scandal around his father are political context, not a scored stance."}
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: AGNOS, reason: "Lead: inherited scepticism (S1), second-hand."}
+    - {code: AGNOS, reason: "Former lead from MacTutor mother-scepticism paraphrase; contradicted by Dupuy (S3); kept only as a weak lead, not opened."}
   lio_axes:
-    A_locus: {value: UNKNOWN, how_known: "Nothing found (P19)."}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (pure algebra; P30, Noether and Tao precedents), and no statement on nature found (P16, P19)."}
+    A_locus: {value: UNKNOWN, how_known: "No own-voice locus statement (P19). Deathbed priest refusal is reported speech (S3/S4); Chevalier letter targets Saint-Simonism, not God."}
+    B_cause: {value: UNKNOWN, how_known: "Not a scientist (pure algebra; P30, Knuth/Tao/Noether precedents), and no statement on nature found (P16, P19). Deepen D1 found none in Dupuy letters."}
     C_ledger: {value: UNKNOWN, how_known: "Nothing found."}
     D_authority: {value: UNKNOWN, how_known: "Nothing found."}
     E_scope: {value: UNKNOWN, how_known: "Nothing found."}
   mid_basin: {value: UNKNOWN, how_known: "A and B are UNKNOWN (P19)."}
   statements: []
   changes_over_life: []
-  coder_notes: "Non-scoring lead (Z8 audit): his letter to Auguste Chevalier of 25 May 1832 (printed in Dupuy 1896) rejects Chevalier's efforts 'to convert' him to Saint-Simonism; not a statement about God, so not scored. His refusal of a priest at his death is reported speech. Dupuy (1896) and the Bourgne–Azra Écrits et mémoires may report deathbed words or letters on religion; not read."
+  coder_notes: >-
+    Deepen D1 non-scoring leads (Dupuy S3 read): (1) Letter to Auguste Chevalier,
+    25 May 1832: "Cela veut dire, de ta part, que tu te crois, quant à toi, obligé
+    à faire de ton mieux pour me convertir. Mais il est de mon devoir de te prévenir,
+    comme je l'ai fait cent fois, de la vanité de tes efforts" — Saint-Simonian
+    conversion, not a God-locus claim (Z8). (2) Dupuy: "En pleine connaissance, il
+    refusa l'assistance d'un prêtre" (also Wikipedia); reported account, cannot score
+    alone. (3) 29 May farewell: "Je prends le ciel à témoin" is a figurative oath.
+    (4) Mother: Dupuy has lifelong Christian profession, not MacTutor scepticism.
+    Bourgne–Azra Écrits et mémoires (mathematical MSS) not re-read for theology;
+    mathematical testament of 29 May is equations only.
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "French", certainty: 0.7, cites: [{source: S1, locator: "Quick Info"}], how_known: "MacTutor."}
-  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not stated."}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Mother lifelong professing Christian (S3); not recorded as his affiliation."}
   baptism_or_initiation: {value: UNKNOWN, how_known: "Not stated."}
   childhood_catechism: {value: UNKNOWN, how_known: "Not stated."}
 
@@ -125,9 +136,11 @@ review:
   roster_status_reason: {value: "Core in v8 (F 3).", certainty: 0.7, cites: [{source: S2, locator: "roster.csv, rank 166"}], how_known: "Study roster."}
   controversies: []
   data_quality_flags:
-    - "No own words on religion found."
+    - "No own words on religion found after Dupuy letter hunt."
+    - "MacTutor mother-scepticism line is a tertiary paraphrase contradicted by Dupuy."
   open_questions:
-    - "Dupuy 1896; Écrits et mémoires."
+    - "Bourgne–Azra Écrits et mémoires (non-mathematical marginalia) if any touch religion."
+    - "Chevalier 1832 Revue encyclopédique notice for any further reported speech."
 
 sources:
   - id: S1
@@ -137,7 +150,8 @@ sources:
     citation: "O'Connor, J. J., and E. F. Robertson. 'Évariste Galois.' MacTutor History of Mathematics, University of St Andrews. https://mathshistory.st-andrews.ac.uk/Biographies/Galois/"
     url: "https://mathshistory.st-andrews.ac.uk/Biographies/Galois/"
     accessed: 2026-10-19
-    reliability_note: "Signed reference biography with references."
+    reliability_note: "Signed reference biography with references. Mother-'scepticism' line treated as unreliable paraphrase after Dupuy (S3)."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: secondary
@@ -147,12 +161,33 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "scholarly book"
+    author: "Paul Dupuy"
+    citation: "Dupuy, Paul. 'La vie d'Évariste Galois.' Annales scientifiques de l'École normale supérieure, 3e série, 13 (1896): 197–266. Wikisource full text; NUMDAM. https://fr.wikisource.org/wiki/La_vie_d%E2%80%99%C3%89variste_Galois/Texte_entier"
+    url: "https://fr.wikisource.org/wiki/La_vie_d%E2%80%99%C3%89variste_Galois/Texte_entier"
+    accessed: 2026-10-24
+    reliability_note: "Standard scholarly biography; prints the 25 May 1832 Chevalier letter and reports the deathbed priest refusal. Family testimony on the mother via Gabriel Demante."
+    source_quality: "scholarly edition or monograph"
+    used_for: [childhood, worldview, heritage]
+  - id: S4
+    type: tertiary
+    kind: "encyclopedia"
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Évariste Galois.\" Wikipedia, English. https://en.wikipedia.org/wiki/%C3%89variste_Galois (rev. 1381816610, 2026-10-25)."
+    url: "https://en.wikipedia.org/wiki/%C3%89variste_Galois"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with MacTutor. Confirms death after refusing a priest (reported); silent on personal creed. Category labels ignored for coding."
+    source_quality: "reference entry"
+    used_for: [identity, basics, worldview]
 ---
 
 ## Summary
 
-Évariste Galois (1811–1832), mathematician [S1]. Draft: all worldview fields UNKNOWN (lead AGNOS). Not plotted.
+Évariste Galois (1811–1832), mathematician [S1, S4]. Deepen D1: all worldview fields UNKNOWN (AGNOS lead weakened by Dupuy). Not plotted.
 
 ## Life and work
 
@@ -164,11 +199,11 @@ Galois theory; early group theory [S1].
 
 ## Childhood and education
 
-Taught by his mother to 12; Louis-le-Grand [S1].
+Taught by his mother to 12 (Dupuy: she remained Christian); Louis-le-Grand [S1, S3].
 
 ## Adult working worldview
 
-Not known from his words.
+No own-voice creed found. 25 May 1832 letter rejects Saint-Simonian conversion (S3); priest refusal at death is reported speech (S3, S4).
 
 ## Heritage (context only)
 
@@ -184,8 +219,9 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- Dupuy 1896 and his collected writings.
+- Bourgne–Azra non-mathematical marginalia; Chevalier 1832 notice.
 
 ## Research log
 
+- 2026-10-24 (deepen D1, queue #158): Dupuy 1896 Wikisource (mother Christian; 25 May Chevalier convert letter; priest refusal report); Wikipedia EN (P50, rev 1381816610); MacTutor re-checked; encyclopedia.com/DSB-style silent on creed; Britannica 403. Kept all worldview UNKNOWN. P47 on S1–S4. No fallacy_catalog. No figures/.
 - 2026-10-19: Read MacTutor.
