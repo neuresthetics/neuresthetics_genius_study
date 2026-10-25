@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #188/228, F 3, rank 200): corroborate B. New S7 — Talk at Memorial Services for Elizabeth Swingle (27 Sep 1943; OSU Day-by-Day / Speeches 1943s.4): 'laws of nature… cannot be broken, but must pursue their inexorable course' (in-span). B_cause support single → corroborated (S3+S7); value/certainty stay 4 @0.7. A already corroborated (S3+S4); support labels written (P48). P47 source_quality on S1–S7. first_evidence_of_lio_type_views → 1943 Swingle (was 1961 speech). Chart: dark hollow → dark filled when figures next refresh. primary SECHUM unchanged (P20/P31 post-span humanism). No fallacy_catalog; figures not refreshed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #93/#94 (run 1) and the same error in claims 71, 73–75, 78, 80–84 and 90: every S4 'letter, paragraph 1' locator replaced with the right paragraph of the four-paragraph letter (2 heritage, Sunday schools and the break; 3 'I do not believe in God'; 4 Humanist and Unitarian); S4 reliability note corrected. #82 (run 2 note): AHA membership years '–1963' → 'by 1963' (the letter shows membership then, not an end date). #89 / decisions P12, P13: new source S6 (the 1931 JACS paper 'The Nature of the Chemical Bond', bibliographic record via Crossref); chemical-bond item dated '1930s' → '1931–1939'; first_lasting_contribution_year 1925 (0.5) → 1931 (0.7), age 24 (0.5) → 30 (0.7); the unlisted PhD crystal papers no longer set the year. Era unchanged. Not reviewed."}
@@ -116,36 +117,41 @@ worldview:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S4, locator: "letter, paragraph 3"}, {source: S3, locator: "speech, paragraph on humanism"}]
-      how_known: "His own letter and speech; the denial of God is in a letter signed for him by his secretary (S4), so 0.7."
+      how_known: "His own letter and speech; the denial of God is in a letter signed for him by his secretary (S4), so 0.7. Two independent primaries → corroborated (P48)."
       rationale: "No God beyond the world, so at the LIO pole as for other atheist and humanist records (Chandrasekhar): 'I do not believe in God' (S4); humanism rejects 'a belief in an omniscient, omnipotent, and omnipresent god who watches over and cares for human beings' (S3)."
     B_cause:
       value: 4
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "speech, paragraph on humanism"}]
-      how_known: "His own speech, phrased as what humanism holds; 0.7 (indirect)."
-      rationale: "Scored on his account of nature (P6). He rejects a god 'interfering, sometimes in response to prayer, with the ordered regularity of events as determined by natural laws'. Law and regularity, no miracle or petition; his working chemistry is lawful structural science (S1)."
+      support: corroborated
+      cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S7, locator: "memorial talk, laws-of-nature paragraph"}]
+      how_known: "Two independent written professions: 1961 AHA speech (S3) and in-span 1943 Swingle memorial (S7). Certainty stays 0.7 (S3 is movement-framed; S4 secretary signature still colors the adjacent package)."
+      rationale: "Scored on his account of nature (P6). S7 (in-span): 'Our faith in the future rests upon our faith in these laws of nature. And so we can understand that these laws cannot be broken, but must pursue their inexorable course…' — order of natural laws, no exemption. S3: rejects a god 'interfering, sometimes in response to prayer, with the ordered regularity of events as determined by natural laws'. Law and regularity, no miracle or petition; his working chemistry is lawful structural science (S1)."
     C_ledger:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "speech, paragraph on humanism"}]
-      how_known: "His own speech, phrased as what humanism holds; 0.7."
+      how_known: "His own speech, phrased as what humanism holds; 0.7. Support single (P48)."
       rationale: "No ledger: humanism 'rejects life after death and the idea that suffering in this world may, for the righteous, be compensated for by the bliss of an after-life'. The moral community is 'all humanity' (scored here, not on E)."
     D_authority:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "speech, paragraph on humanism"}, {source: S4, locator: "letter, paragraph 2"}]
-      how_known: "His own speech and letter; 0.7."
+      how_known: "His own speech and letter; 0.7. Two independent primaries → corroborated (P48)."
       rationale: "Observation and reason outrank revelation: humanism 'is a rational philosophy' that 'rejects the mysticism and supernaturalism of the revealed religions' (S3); he left the church when he became 'skeptical about dogmatic statements' (S4)."
     E_scope:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S3, locator: "speech, paragraph on humanism"}]
-      how_known: "His own speech; 0.7."
+      how_known: "His own speech; 0.7. Support single (P48)."
       rationale: "Scored on the world's order (P7). No hidden exceptions: he rejects a god who intervenes in events 'in response to prayer'; events follow 'the ordered regularity [...] determined by natural laws' for all. The scope of the moral community ('all humanity') is scored on C."
   mid_basin:
     value: false
@@ -169,6 +175,14 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
+    - text: "Our faith in the future rests upon our faith in these laws of nature. And so we can understand that these laws cannot be broken, but must pursue their inexorable course even when, because of an accidental, unavoidable concatenation of circumstances, this course is such as to take from us our friend Elizabeth early in her life…"
+      cites: [{source: S7, locator: "memorial talk, laws-of-nature paragraph"}]
+      date: "1943-09-27"
+      context: "Talk at Memorial Services for Elizabeth Swingle, Pasadena; also describes 'the wonderful order which underlies all natural phenomena' and 'the beautiful order of the laws which determine its course'."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
     - text: "My paternal grandparents were Lutherans. I believe that I was baptized in the Congregational Church—I attended various Sunday schools when X was a boy, but I broke away from church affiliation when I began to think for myself and to become skeptical about dogmatic statements. I do not believe in God."
       cites: [{source: S4, locator: "letter, paragraphs 2–3"}]
       date: "1963-01-23"
@@ -187,7 +201,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Sunday schools as a boy; broke away from church affiliation as he became skeptical of dogma; humanist by 1961; joined the First Unitarian Church of Los Angeles in summer 1962", year: "1910s–1962", certainty: 0.7, cites: [{source: S4, locator: "letter, paragraphs 2, 4"}, {source: S3, locator: "speech"}], how_known: "His own letter; the date of the break is not given."}
-  coder_notes: "SECHUM and ATHE are stub system files (flag). S3 and S4 are read in Oregon State University Special Collections' own transcriptions of documents in the Ava Helen and Linus Pauling Papers (the archive that holds them), so they are treated as authoritative copies under §7, not unofficial web copies; the printed version of the speech (The Humanist, 1961) was not compared. S4 is signed for him by his secretary Linda Hopkins ('Linus Pauling:lh'), so it is his letter in his name but possibly not typed or signed by him; fields resting mainly on it are at 0.7. The essay 'Why I am a Unitarian' on the Pauling Blog is by Ava Helen Pauling and is not used. No interview is used in this record."
+  coder_notes: "Deepen D1 2026-10-24: B corroborated via S7 Swingle 1943 (in-span). SECHUM and ATHE are stub system files (flag). S3 and S4 are read in Oregon State University Special Collections' own transcriptions of documents in the Ava Helen and Linus Pauling Papers (the archive that holds them), so they are treated as authoritative copies under §7, not unofficial web copies; the printed version of the speech (The Humanist, 1961) was not compared. S4 is signed for him by his secretary Linda Hopkins ('Linus Pauling:lh'), so it is his letter in his name but possibly not typed or signed by him; fields resting mainly on it are at 0.7. The essay 'Why I am a Unitarian' on the Pauling Blog is by Ava Helen Pauling and is not used. No interview is used in this record."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -200,9 +214,9 @@ timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
   major_work_period: {value: "1931–1951", certainty: 0.7, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraphs 3–4"}], how_known: "From the 1931 chemical-bond paper (1931–1939; a range gives its start year, P12) to the alpha helix (1948–1951, so 1951; P30 #4), the first and last listed lasting contributions (P29). Span check 2026-10-02 (P29, P30 and its addendum): was 1927–1954 (his return to Caltech to the chemistry Nobel Prize), neither a listed contribution."}
   age_at_first_lasting_contribution: {value: 30, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "date (April 1931)"}], how_known: "Born 28 February 1901; the 1931 paper appeared in April 1931, so 30. Was 24 (from the 1925 PhD) until the batch 4 lens audit."}
-  first_evidence_of_lio_type_views: {value: "'Humanism and Peace' speech", year: 1961, certainty: 1.0, cites: [{source: S3, locator: "speech heading"}], how_known: "Earliest dated statement read (Rationalist of the Year 1960 suggests earlier views, not read)."}
-  lio_views_relative_to_major_work: {value: "unclear", rationale: "The statements read are from 1961 and 1963, after the main work; the letter says he broke with the church when he began to think for himself, without a date.", certainty: 0.5, cites: [{source: S4, locator: "letter, paragraph 2"}], how_known: "Dates of the sources."}
-  worldview_during_major_work: {value: TODO}
+  first_evidence_of_lio_type_views: {value: "Talk at Memorial Services for Elizabeth Swingle (laws of nature inexorable)", year: 1943, certainty: 1.0, cites: [{source: S7, locator: "memorial talk, laws-of-nature paragraph"}], how_known: "Earliest dated LIO-type statement read; in-span. The fuller humanist/atheist package is 1961–1963 (S3; S4)."}
+  lio_views_relative_to_major_work: {value: "during major work", rationale: "S7 (1943) falls inside major_work_period 1931–1951 and states inexorable natural laws (B). The 1961–1963 humanist/God-denial package is after the span; P31 continuity already applied (no change_of_view documented).", certainty: 0.7, cites: [{source: S7, locator: "memorial talk"}, {source: S3, locator: "speech"}, {source: S4, locator: "letter, paragraph 2"}], how_known: "Dates of the sources vs span."}
+  worldview_during_major_work: {value: "Natural laws ordered and unbreakable (B 4); God denial and public SECHUM identity attested after the span with P31 continuity", certainty: 0.7, cites: [{source: S7, locator: "memorial talk"}, {source: S3, locator: "speech"}, {source: S4, locator: "letter"}], how_known: "In-span S7 for B; post-span S3/S4 for A and primary under P31."}
 
 lane_b:
   label: "Lane B — labeled belief model, not a finding"
@@ -230,9 +244,11 @@ review:
     - "S4 is signed for him by his secretary."
     - "S3 read in the archive's transcription of the speech typescript; the printed version in The Humanist was not compared."
     - "Britannica read as its first page only."
+    - "B now corroborated (S3+S7); A corroborated (S3+S4). Chart fill dark hollow → dark filled pending figure refresh."
   open_questions:
     - "Read the printed 'Humanism and Peace' (The Humanist, 1961) and any statement behind the 1960 Rationalist of the Year award."
     - "Decision question: SECHUM or ATHE for a self-described Humanist who also says 'I do not believe in God' (see CHANGELOG, batch 4)."
+    - "Optional: Caltech Class Day 'The Scientific Outlook on Life' (11 Jun 1953; OSU Day-by-Day) for further D/method language — not needed for B fill."
 
 sources:
   - id: S1
@@ -243,6 +259,7 @@ sources:
     url: "https://www.britannica.com/biography/Linus-Pauling"
     accessed: 2026-10-02
     reliability_note: "Signed article; first page only. Sections cited by heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, timing, lane_b, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -253,6 +270,7 @@ sources:
     url: "https://www.nobelprize.org/prizes/chemistry/1954/pauling/biographical/"
     accessed: 2026-10-02
     reliability_note: "Official biography; paragraphs counted from 'Linus Carl Pauling was born'."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S3
     type: primary
@@ -261,8 +279,9 @@ sources:
     year: 1961
     citation: "Pauling, Linus. \"Humanism and Peace.\" Speech to the American Humanist Association, Cleveland, Ohio, 17 March 1961. Ava Helen and Linus Pauling Papers, Speeches 1961s.9; transcription in Linus Pauling Day-by-Day, Oregon State University Special Collections, https://scarc.library.oregonstate.edu/coll/pauling/calendar/1961/03/17.html."
     url: "https://scarc.library.oregonstate.edu/coll/pauling/calendar/1961/03/17.html"
-    accessed: 2026-10-02
-    reliability_note: "His own speech, transcribed by the archive that holds the typescript. No page numbers; the humanism paragraph begins 'I believe that there is great value in the philosophy of humanism'."
+    accessed: 2026-10-24
+    reliability_note: "His own speech, transcribed by the archive that holds the typescript. No page numbers; the humanism paragraph begins 'I believe that there is great value in the philosophy of humanism'. Re-checked 2026-10-24."
+    source_quality: "primary / own words"
     used_for: [contribution, worldview, timing]
   - id: S4
     type: primary
@@ -273,6 +292,7 @@ sources:
     url: "https://scarc.library.oregonstate.edu/coll/pauling/calendar/1963/01/23.html"
     accessed: 2026-10-02
     reliability_note: "His letter, transcribed by the archive that holds it; one page. Paragraph locators count the four body paragraphs from 'I was happy to receive your letter' (1) to the Humanist and Unitarian paragraph (4); the closing 'With best wishes' line is not counted."
+    source_quality: "primary / own words"
     used_for: [childhood, worldview, heritage, timing, lane_b, institutions]
   - id: S5
     type: secondary
@@ -282,6 +302,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
   - id: S6
     type: primary
@@ -292,7 +313,19 @@ sources:
     url: "https://doi.org/10.1021/ja01355a027"
     accessed: 2026-10-02
     reliability_note: "Bibliographic record checked through the Crossref DOI record; the paper's text was not read. Cited only for its title and date, which date the start of the chemical-bond theory."
+    source_quality: "primary / own words"
     used_for: [contribution, timing]
+  - id: S7
+    type: primary
+    kind: "archive record"
+    author: "Linus Pauling"
+    year: 1943
+    citation: "Pauling, Linus. \"Talk at Memorial Services for Elizabeth Swingle.\" 27 September 1943, Pasadena. Ava Helen and Linus Pauling Papers, Speeches 1943s.4; transcription in Linus Pauling Day-by-Day, Oregon State University Special Collections, https://scarc.library.oregonstate.edu/coll/pauling/calendar/1943/09/27.html. Quote also at http://scarc.library.oregonstate.edu/coll/pauling/war/quotes/elizabeth_swingle.html."
+    url: "https://scarc.library.oregonstate.edu/coll/pauling/calendar/1943/09/27.html"
+    accessed: 2026-10-24
+    reliability_note: "His own memorial talk, transcribed by the archive that holds the typescript (2 pp.). In-span (1931–1951). Laws-of-nature paragraph is the B corroborator."
+    source_quality: "primary / own words"
+    used_for: [worldview, timing]
 ---
 
 # Linus Pauling
@@ -301,7 +334,7 @@ sources:
 
 ## Summary
 
-Linus Pauling (1901–1994), American chemist, explained the chemical bond in quantum terms, found the first molecular disease and the alpha helix, and won two unshared Nobel Prizes (Chemistry 1954, Peace 1962) [S1]. He called himself "a Humanist—a member of the American Humanist Association" and wrote "I do not believe in God" [S4]; his 1961 speech to the AHA rejects the supernatural, the afterlife and a god who answers prayer [S3]. primary_system SECHUM at 0.7 (stub; ATHE named). A, B, C, D and E all 4 at 0.7; mid_basin false (0.7).
+Linus Pauling (1901–1994), American chemist, explained the chemical bond in quantum terms, found the first molecular disease and the alpha helix, and won two unshared Nobel Prizes (Chemistry 1954, Peace 1962) [S1]. He called himself "a Humanist—a member of the American Humanist Association" and wrote "I do not believe in God" [S4]; his 1961 speech to the AHA rejects the supernatural, the afterlife and a god who answers prayer [S3]. In 1943 he said natural laws "cannot be broken" [S7]. primary_system SECHUM at 0.7 (stub; ATHE named). A and B both 4 @0.7 corroborated; mid_basin false (0.7).
 
 ## Life and work
 
@@ -317,7 +350,7 @@ A druggist's son in Oregon; Sunday schools as a boy; probably baptized Congregat
 
 ## Adult working worldview
 
-A humanist who rejects the supernatural and revealed religion [S3]; he joined the First Unitarian Church of Los Angeles in 1962 because it supports morality and ethics and "accepts atheists as members" [S4].
+A humanist who rejects the supernatural and revealed religion [S3]; he joined the First Unitarian Church of Los Angeles in 1962 because it supports morality and ethics and "accepts atheists as members" [S4]. In-span (1943): natural laws cannot be broken [S7].
 
 ## Heritage (context only)
 
@@ -325,7 +358,7 @@ German and English-Scottish American [S2]. Context only.
 
 ## Timing
 
-First lasting contribution 1931, the chemical-bond paper, at 30 [S1; S6]. The worldview statements read are from 1961 and 1963.
+First lasting contribution 1931, the chemical-bond paper, at 30 [S1; S6]. Earliest LIO-type statement read is the 1943 Swingle memorial (in-span); the fuller humanist package is 1961–1963 [S7; S3; S4].
 
 ## Lane B notes (labeled belief model)
 
@@ -334,7 +367,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Form partly
 ## Open questions
 
 - The printed speech in The Humanist; SECHUM or ATHE.
+- Optional 1953 Caltech Class Day scientific-outlook talk (not needed for B fill).
 
 ## Research log
 
+- 2026-10-24: Deepen D1. Re-read S3 AHA speech; added S7 Swingle memorial 1943 (OSU Day-by-Day). B support single → corroborated. Wrote drafts/deepen_pauling-linus.md (untracked). Person-file-only commit. No figures/.
 - 2026-10-02: Read Britannica (Paradowski, first page), the Nobel biography, and OSU's Day-by-Day transcriptions for 17 March 1961 and 23 January 1963. The Pauling Blog post on Unitarianism was read for context only; its 'Why I am a Unitarian' is Ava Helen Pauling's. No interview used.
