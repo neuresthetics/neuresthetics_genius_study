@@ -301,3 +301,12 @@ Past versions stay in their own repos so their history doesn't change. Tags and 
 ## Site
 
 [neuresthetic.net](https://neuresthetic.net) · [Study page](https://neuresthetics.github.io/study/)
+
+---
+
+<p align="center"><img src="figures/brain_mountain.jpg" alt="Brain mountain" width="720"></p>
+<p align="center"><em>Brain mountain</em></p>
+
+> “The order and connection of ideas is the same as the order and connection of things.”
+>
+> — Baruch Spinoza, *Ethics*, Part II, Proposition 7
