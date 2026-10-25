@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #170, F 3, rank 180). Goals: corroborate or firm PANT/A/B; note darkness/fill on next chart refresh. Hunt: re-read SEP Graham (S1) Theology/Cosmology (B30, B32, B64, B67, B114); Kahn 1979 Art and Thought (S3) — B30/XXXVII, B67, B32, B64 translations + commentary (world = everliving fire; god = day/night…; wise one would/would not be called Zeus; thunderbolt steers). IEP Graham same author as S1 — unused for P48 independence. Neels PhilArchive blocked (Cloudflare). Graham Texts of Early Greek Philosophy not obtained. PANT kept @0.5 scholarly_reconstruction (two-part: B67 whole-of-opposites + B30 eternal measured kosmos/fire); alt BELOW (B32/B64 wise-one / steer tension; Kahn himself reads steering toward cosmic intelligence). A 4 @0.5 alt 3 kept; B 3 @0.5 alt 4 kept (lawful measures, not scientist; no exceptionless claim). support: corroborated on A and B (P48) S1+S3 — independent scholars. Certainty stays 0.5 (P49; do not invent 0.7). mid BELOW; PLOTTED faded. Chart-moving YES for fill (hollow→filled on next refresh); darkness unchanged (still faded). P47 source_quality. Statements add B67/B32/B64 (Kahn scholarly edition). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fix (FAIL, P39 strict reading): era_bucket '-500 to 499' @0.5 -> UNKNOWN; life dates UNKNOWN and the c. 500 BCE floruit sits on the bucket edge. Plot unchanged (A 4 / B 3, faded)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 180). Source: SEP 'Heraclitus' (Daniel W. Graham, rev. 2023), a scholar's account with DK fragment numbers; the fragments are quoted in SEP's translation and attributed to him by scholarly agreement (P42), transmitted by later authors. Worldview by scholarly_reconstruction (0.5 cap): 'God is day night, winter summer, war peace ...' (B67) and 'This world-order ... no god nor man did create, but it ever was and is and will be: everliving fire, kindling in measures' (B30); 'all human laws are nourished by the one divine law' (B114). PANT 0.5 (two-part test: the divine identified with the whole of opposites, part 1; one eternal measured order, part 2), alt BELOW_THRESHOLD ('would and would not be called by the name of Zeus', B32). A 4 at 0.5 (alt 3); B 3 at 0.5 (alt 4): lawful measures, no exceptionless claim (P41-style); not counted a scientist (no listed theory about physical systems; the doctrines are metaphysical). C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span UNKNOWN ('active around 500 BCE' is a floruit, not a composition range; P39). Plotted, faded, at A 4 / B 3. Draft, not reviewed."}
 
@@ -73,52 +74,81 @@ worldview:
   working_years: {value: UNKNOWN, how_known: "Equals timing.major_work_period (UNKNOWN, P39)."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: UNKNOWN, how_known: "Not read."}
-  primary_system: 
+  primary_system:
     value: PANT
     basis: scholarly_reconstruction
     certainty: 0.5
-    cites: [{source: S1, locator: "4. Cosmology; 5. Theology"}]
-    how_known: "SEP's reconstruction with fragment numbers (P42: fragments attributed by scholarly agreement); scholar's account, so 0.5."
-    rationale: "Part 1: the divine is identified with the whole of opposites ('God is day night, winter summer, war peace, satiety hunger', B67; 'Divine power is manifest in all phenomena', S1). Part 2: one eternal, measured order ('ever was and is and will be: everliving fire, kindling in measures', B30) and 'the one divine law' (B114). Alternative BELOW_THRESHOLD: the 'only wise one, would and would not be called by the name of Zeus' (B32) keeps a ruling mind the reconstruction does not settle (S1)."
+    cites: [{source: S1, locator: "4. Cosmology; 5. Theology"}, {source: S3, locator: "XXXVII (D.30); CXXIII (D.67); intro §3"}]
+    how_known: "SEP + Kahn 1979 (P42 fragments attributed by scholarly agreement; P49 reconstruction ceiling 0.5)."
+    rationale: "Part 1: the divine identified with the whole of opposites — SEP B67 'God is day night, winter summer, war peace, satiety hunger'; Kahn CXXIII same pair-list as 'The god' that 'alters' like fire named by incense. Part 2: one eternal measured order — B30/Kahn XXXVII kosmos 'ever was and is and will be: fire everliving, kindled in measures and in measures going out'; Kahn commentary identifies world-order with that eternal fire (immanent source, not a craftsman outside). Alternative BELOW_THRESHOLD kept: B32 (Kahn: wise one alone 'unwilling and willing to be spoken of by the name of Zeus') and B64 ('Thunderbolt steers all things') leave a ruling-mind / cosmic-intelligence reading open; Kahn himself reads 'steering' toward cognition and intention. Tension not settled → stay 0.5; do not invent 0.7."
   secondary_system: {value: UNKNOWN, how_known: "None."}
   candidate_codes_considered:
-    - {code: PANT, reason: "Coded at 0.5: god is the whole of opposites; eternal measured fire."}
+    - {code: PANT, reason: "Coded at 0.5: god as whole of opposites + eternal measured fire/kosmos (S1; S3)."}
     - {code: STOIC, reason: "Not used: Stoicism is later; the Stoics drew on him (S1)."}
   lio_axes:
-    A_locus: 
+    A_locus:
       value: 4
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S1, locator: "4. Cosmology; 5. Theology"}]
-      how_known: "SEP reconstruction; 0.5 cap."
-      rationale: "The divine is the world-order itself ('God is day night ...', B67), and 'no god nor man did create' the kosmos (B30): God as the order of nature, 4. Alternative 3: a governing 'wise one' (B32) and the thunderbolt that 'steers all things' read as a mind over the order."
+      cites: [{source: S1, locator: "4. Cosmology; 5. Theology"}, {source: S3, locator: "XXXVII (D.30); CXXIII (D.67)"}]
+      how_known: "SEP + Kahn; P49 0.5 cap."
+      support: corroborated
+      rationale: "Divine = world-order / unity of opposites (B67; B30 'no god nor man did create' the kosmos that is everliving fire): God as the order of nature, 4. Alternative 3: governing 'wise one' (B32) and thunderbolt that 'steers' (B64) read as a mind over the order — kept; Kahn commentary leans that way on steering."
       alternatives:
-        - {value: 3, note: "Governing wise one (B32, B64).", cites: [{source: S1, locator: "4. Cosmology"}]}
-    B_cause: 
+        - {value: 3, note: "Governing wise one / cosmic intelligence (B32, B64); Kahn on steering.", cites: [{source: S1, locator: "4. Cosmology"}, {source: S3, locator: "commentary on LIV (D.41); CXIX (D.64)"}]}
+    B_cause:
       value: 3
       basis: scholarly_reconstruction
       certainty: 0.5
-      cites: [{source: S1, locator: "4. Cosmology; 6"}]
-      how_known: "SEP reconstruction; 0.5 cap. Not a scientist, so B rests on his statements about nature (P16)."
-      rationale: "Everliving fire 'kindling in measures and being quenched in measures' (B30); human laws 'nourished by the one divine law' (B114): lawful order, with no explicit no-exception claim, so 3 (P41-style). Alternative 4: an uncreated world under fixed measures read as exceptionless."
+      cites: [{source: S1, locator: "4. Cosmology; 6"}, {source: S3, locator: "XXXVII (D.30); XXXIX (D.31B)"}]
+      how_known: "SEP + Kahn; P49 0.5 cap. Not a scientist, so B rests on statements about nature (P16)."
+      support: corroborated
+      rationale: "Everliving fire 'kindled in measures and in measures going out' (B30 / Kahn XXXVII); sea 'measures up to the same amount' (B31B / Kahn XXXIX); human laws 'nourished by the one divine law' (B114, S1): lawful order, with no explicit no-exception claim, so 3 (P41-style). Alternative 4: uncreated world under fixed measures read as exceptionless."
       alternatives:
-        - {value: 4, note: "Fixed measures read as exceptionless.", cites: [{source: S1, locator: "4. Cosmology"}]}
+        - {value: 4, note: "Fixed measures read as exceptionless.", cites: [{source: S1, locator: "4. Cosmology"}, {source: S3, locator: "XXXVII (D.30)"}]}
     C_ledger: {value: UNKNOWN, how_known: "Soul fragments (B36) concern transformation, not reward; not scored."}
     D_authority: {value: UNKNOWN, how_known: "Not scored: 'Having harkened not to me but to the Word (Logos)' (B50) is a lead for reason over authority."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is at least 3 only at 0.5; P10 caps mid_basin below the 0.7 bar."}
   statements:
-    - text: "This world-order [kosmos], the same of all, no god nor man did create, but it ever was and is and will be: everliving fire, kindling in measures and being quenched in measures."
-      cites: [{source: S1, locator: "4. Cosmology (B30)"}]
+    - text: "The ordering, the same for all, no god nor man has made, but it ever was and is and will be: fire everliving, kindled in measures and in measures going out."
+      cites: [{source: S3, locator: "XXXVII (D.30)"}, {source: S1, locator: "4. Cosmology (B30)"}]
       date: "-500"
-      context: "Fragment B30 (DK), from his book; transmitted by Clement of Alexandria; date is the floruit."
+      context: "Fragment B30 (DK); Kahn XXXVII; transmitted by Clement; date is the floruit."
       axes: [A_locus, B_cause]
       kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Kahn 1979 translation; SEP has a close variant. Attributed by scholarly agreement (P42). Scores rest on scholarly_reconstruction, not on the quotation alone."
+    - text: "The god: day and night, winter and summer, war and peace, satiety and hunger. It alters, as when mingled with perfumes, it gets named according to the pleasure of each one."
+      cites: [{source: S3, locator: "CXXIII (D.67)"}, {source: S1, locator: "5. Theology (B67)"}]
+      date: "-500"
+      context: "Fragment B67 (DK); Kahn CXXIII."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Kahn 1979 translation. P42 attribution."
+    - text: "The wise is one alone, unwilling and willing to be spoken of by the name of Zeus."
+      cites: [{source: S3, locator: "CXVIII (D.32)"}, {source: S1, locator: "5. Theology (B32)"}]
+      date: "-500"
+      context: "Fragment B32 (DK); supports named alt A 3 / primary BELOW lead."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Kahn wording via scholarly edition / concordant SEP paraphrase. P42."
+    - text: "Thunderbolt steers all things."
+      cites: [{source: S1, locator: "4. Cosmology (B64)"}, {source: S3, locator: "CXIX (D.64)"}]
+      date: "-500"
+      context: "Fragment B64 (DK); named alt A 3 (steering / cosmic intelligence)."
+      axes: [A_locus]
+      kind: "written profession (public)"
       verified_against: "secondary quotation"
-      verified_on: 2026-10-19
-      note: "SEP's translation of the fragment; attributed by scholarly agreement (P42). Scores rest on SEP's reconstruction (scholarly_reconstruction), not on the quotation alone."
+      verified_on: 2026-10-24
+      note: "SEP translation; Kahn edition has the same short fragment (pilots/steers). P42."
   changes_over_life: []
-  coder_notes: "Kahn (1979) and Graham's Texts of Early Greek Philosophy would firm up B32, B64 and B67 and test the PANT reading against a cosmic-mind (Logos) reading."
+  coder_notes: "Deepen D1 2026-10-24: Kahn 1979 (S3) corroborates SEP on B30/B67 PANT path; B32/B64 keep cosmic-mind tension (Kahn on steering). Graham Texts of Early Greek Philosophy still wanted for critical apparatus. IEP is same Graham as SEP — not a second independent source for P48. Chart fill would go hollow→filled on next refresh; darkness stays faded at 0.5."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -152,7 +182,8 @@ review:
   data_quality_flags:
     - "Fragments known only through later authors."
   open_questions:
-    - "Kahn 1979; B32/B64."
+    - "Graham Texts of Early Greek Philosophy critical apparatus for B32/B64/B67."
+    - "Whether a fuller consensus edition would warrant lifting certainty above 0.5 (P49 — do not invent 0.7 this pass)."
 
 sources:
   - id: S1
@@ -161,8 +192,9 @@ sources:
     author: "Daniel W. Graham"
     citation: "Graham, Daniel W. 'Heraclitus.' Stanford Encyclopedia of Philosophy (rev. 8 December 2023). https://plato.stanford.edu/entries/heraclitus/"
     url: "https://plato.stanford.edu/entries/heraclitus/"
-    accessed: 2026-10-19
-    reliability_note: "Signed scholarly reference article, read in full; fragment numbers (DK) and translations."
+    accessed: 2026-10-24
+    reliability_note: "Signed scholarly reference article, re-read in full on deepen; DK fragment numbers and translations."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, worldview, heritage, lane_b]
   - id: S2
     type: secondary
@@ -172,12 +204,24 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [review]
+  - id: S3
+    type: secondary
+    kind: "scholarly edition"
+    author: "Charles H. Kahn"
+    year: 1979
+    citation: "Kahn, Charles H. The Art and Thought of Heraclitus: An Edition of the Fragments with Translation and Commentary. Cambridge: Cambridge University Press, 1979. Fragments XXXVII (D.30), CXXIII (D.67), CXVIII (D.32), CXIX (D.64); General introduction §3; commentary on XXXVII."
+    url: "https://topologicalmedialab.net/xinwei/classes/readings/Heraclitus/Heraclitus_readings_flux.pdf"
+    accessed: 2026-10-24
+    reliability_note: "Standard scholarly edition with Greek, translation, and commentary. Read in a course PDF excerpt that includes the full general introduction, the B30/B67/B31 cluster with translation, and extended commentary on XXXVII–XL. Independent of Graham SEP (different author). Used for P48 corroboration."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview]
 ---
 
 ## Summary
 
-Heraclitus of Ephesus (fl. c. 500 BCE), philosopher [S1]. Draft: PANT (0.5); A 4, B 3 at 0.5. Plotted (faded).
+Heraclitus of Ephesus (fl. c. 500 BCE), philosopher [S1; S3]. Deepen D1: PANT (0.5); A 4 / B 3 at 0.5 with support corroborated (S1+S3). Plotted (faded; fill would be filled on next chart refresh).
 
 ## Life and work
 
@@ -193,7 +237,7 @@ Self-taught (B101) [S1].
 
 ## Adult working worldview
 
-'God is day night ...' (B67); everliving fire in measures (B30) [S1].
+God as day/night and the other opposites (B67); kosmos as everliving fire in measures (B30) — PANT path [S1; S3]. Wise one would/would not be called Zeus (B32); thunderbolt steers (B64) — named alt toward cosmic mind [S1; S3].
 
 ## Heritage (context only)
 
@@ -209,9 +253,11 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- B32 reading.
+- Graham Texts apparatus for B32/B64/B67.
+- Consensus bar for certainty >0.5 (P49).
 
 ## Research log
 
+- 2026-10-24: Deepen D1. SEP re-read; Kahn 1979 edition (S3) corroborates A/B/PANT at 0.5; support corroborated; chart fill hollow→filled next refresh; darkness stays faded. IEP same Graham — unused for independence. No figures/.
 - 2026-10-19: AA1 audit fix (FAIL, P39 strict reading): era_bucket '-500 to 499' @0.5 -> UNKNOWN; life dates UNKNOWN and the c. 500 BCE floruit sits on the bucket edge. Plot unchanged (A 4 / B 3, faded).
 - 2026-10-19: Read SEP (Graham).
