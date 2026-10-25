@@ -10,6 +10,9 @@ The table sits between the markers <!-- BEGIN GENERATED: progress --> and
 <!-- END GENERATED: progress --> in README.md. The caption of the person chart sits between
 <!-- BEGIN GENERATED: people_chart_caption --> and <!-- END GENERATED: people_chart_caption -->;
 it is computed by lib.records.people_chart_caption() from the same records the chart plots.
+The not-scorable person list sits between
+<!-- BEGIN GENERATED: not_scorable --> and <!-- END GENERATED: not_scorable -->;
+it is computed by lib.records.not_scorable_readme_list().
 Everything outside the markers is hand-written.
 
 Where each row comes from:
@@ -23,11 +26,12 @@ Where each row comes from:
 import argparse, collections, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib.records import REPO, read_record, read_csv, person_files, system_files, people_chart_caption  # noqa: E402
+from lib.records import REPO, read_record, read_csv, person_files, system_files, people_chart_caption, not_scorable_readme_list  # noqa: E402
 
 README = os.path.join(REPO, "README.md")
 BEGIN, END = "<!-- BEGIN GENERATED: progress -->", "<!-- END GENERATED: progress -->"
 CAP_BEGIN, CAP_END = "<!-- BEGIN GENERATED: people_chart_caption -->", "<!-- END GENERATED: people_chart_caption -->"
+NS_BEGIN, NS_END = "<!-- BEGIN GENERATED: not_scorable -->", "<!-- END GENERATED: not_scorable -->"
 
 # MANUAL rows. No file in the repo records these as data, so they are kept here by hand.
 AUDITS = ("9 blind lens runs on four batches: 3 on a 115-claim packet (eff4700), 2 on a 147-claim packet (e648145), 2 on a "
@@ -115,9 +119,13 @@ def main():
         sys.exit(f"README.md has no {CAP_BEGIN} ... {CAP_END} block")
     i, j = updated.index(CAP_BEGIN), updated.index(CAP_END) + len(CAP_END)
     updated = updated[:i] + CAP_BEGIN + "\n" + people_chart_caption() + "\n" + CAP_END + updated[j:]
+    if NS_BEGIN not in updated or NS_END not in updated:
+        sys.exit(f"README.md has no {NS_BEGIN} ... {NS_END} block")
+    i, j = updated.index(NS_BEGIN), updated.index(NS_END) + len(NS_END)
+    updated = updated[:i] + NS_BEGIN + "\n" + not_scorable_readme_list() + "\n" + NS_END + updated[j:]
     if a.check:
         if updated != text:
-            print("README.md progress table or person-chart caption is out of date; run scripts/progress_status.py")
+            print("README.md progress table, person-chart caption, or not-scorable list is out of date; run scripts/progress_status.py")
             sys.exit(1)
         print("README.md progress table up to date")
         return

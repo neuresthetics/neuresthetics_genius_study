@@ -59,6 +59,154 @@ That view is not a claim that weak evidence equals strong evidence. It is an ill
 
 *Full-weight sensitivity view of the same 88 plotted people (42 would be faded on the main chart). Fade off; hollow = single source. Not a result. Regenerate with `python3 scripts/make_figures.py --fullweight`.*
 
+### People not yet on the chart
+
+The 140 coded people below lack an integer score on at least one axis (the recorded value is `UNKNOWN` or `BELOW_THRESHOLD`), so they are not plotted and are left out of every chart count. One line each; regenerate with `python3 scripts/progress_status.py`. Drafts only — no results yet.
+
+<!-- BEGIN GENERATED: not_scorable -->
+- **Ada Yonath** — A_locus BELOW_THRESHOLD; B scored.
+- **Akira Kurosawa** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Alan Turing** — A_locus BELOW_THRESHOLD; B scored.
+- **Alexander Fleming** — A_locus UNKNOWN; B scored.
+- **Alexander Graham Bell** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Alfred North Whitehead** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Amartya Sen** — No public B_cause score (UNKNOWN).
+- **Andreas Vesalius** — A_locus UNKNOWN; B scored.
+- **Andrew Wiles** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
+- **Antoine Lavoisier** — A_locus BELOW_THRESHOLD; B scored.
+- **Archimedes** — A_locus UNKNOWN; B scored.
+- **Arnold Schoenberg** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Barbara McClintock** — A_locus UNKNOWN; B scored.
+- **Bill Gates** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Brahmagupta** — A_locus BELOW_THRESHOLD; B scored.
+- **Caravaggio** — A_locus and B_cause both UNKNOWN.
+- **Carl Jung** — A_locus BELOW_THRESHOLD; B scored.
+- **Carl Sagan** — A_locus BELOW_THRESHOLD; B scored.
+- **Caroline Herschel** — B_cause BELOW_THRESHOLD; A scored.
+- **Chien-Shiung Wu** — A_locus UNKNOWN; B scored.
+- **Chinua Achebe** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Claude Debussy** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Claude Lévi-Strauss** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Claude Monet** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Confucius** — No public B_cause score (UNKNOWN).
+- **Dante Alighieri** — B_cause BELOW_THRESHOLD; A scored.
+- **David Hilbert** — A_locus BELOW_THRESHOLD; B scored.
+- **Demis Hassabis** — A_locus BELOW_THRESHOLD; B scored.
+- **Dmitri Mendeleev** — A_locus BELOW_THRESHOLD; B scored.
+- **Donald Knuth** — No public B_cause score (UNKNOWN).
+- **Donatello** — A_locus and B_cause both UNKNOWN.
+- **Dorothy Hodgkin** — A_locus BELOW_THRESHOLD; B scored.
+- **Duke Ellington** — B_cause BELOW_THRESHOLD; A scored.
+- **Edwin Hubble** — A_locus BELOW_THRESHOLD; B scored.
+- **Emmy Noether** — A_locus UNKNOWN; B scored.
+- **Enrico Fermi** — A_locus BELOW_THRESHOLD; B scored.
+- **Euclid** — A_locus UNKNOWN; B scored.
+- **Ferdinand de Saussure** — A_locus and B_cause both UNKNOWN.
+- **Frank Lloyd Wright** — No public B_cause score (UNKNOWN).
+- **Franz Kafka** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Franz Schubert** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Frida Kahlo** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Fyodor Dostoevsky** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Gabriel García Márquez** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Geoffrey Chaucer** — A_locus and B_cause both UNKNOWN.
+- **Geoffrey Hinton** — No public B_cause score (UNKNOWN).
+- **George Orwell** — No public B_cause score (UNKNOWN).
+- **Georgia O'Keeffe** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Grace Hopper** — A_locus and B_cause both UNKNOWN.
+- **Gregor Mendel** — A_locus UNKNOWN; B scored.
+- **Grigori Perelman** — A_locus and B_cause both UNKNOWN.
+- **Guglielmo Marconi** — No public B_cause score (UNKNOWN).
+- **Hannah Arendt** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Hedy Lamarr** — A_locus and B_cause both UNKNOWN.
+- **Henri Matisse** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Henri Poincaré** — A_locus UNKNOWN; B scored.
+- **Henrietta Swan Leavitt** — A_locus BELOW_THRESHOLD; B scored.
+- **Henry Ford** — No public B_cause score (UNKNOWN).
+- **Herbert Simon** — A_locus BELOW_THRESHOLD; B scored.
+- **Hippocrates** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
+- **Homer** — A_locus and B_cause both UNKNOWN.
+- **Hypatia** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Ibn al-Haytham (Alhazen)** — A_locus UNKNOWN; B scored.
+- **Ibn Battuta** — No public B_cause score (UNKNOWN).
+- **Ivan Pavlov** — A_locus BELOW_THRESHOLD; B scored.
+- **J. Robert Oppenheimer** — A_locus BELOW_THRESHOLD; B scored.
+- **J.M.W. Turner** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Jacques Derrida** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **James Joyce** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Jane Austen** — B_cause BELOW_THRESHOLD; A scored.
+- **Jean-Paul Sartre** — No public B_cause score (UNKNOWN).
+- **Johann Sebastian Bach** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Johannes Brahms** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Johannes Gutenberg** — A_locus and B_cause both UNKNOWN.
+- **John Maynard Keynes** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **John McCarthy** — No public B_cause score (UNKNOWN).
+- **John Milton** — No public B_cause score (UNKNOWN).
+- **John Nash** — A_locus and B_cause both UNKNOWN.
+- **John Stuart Mill** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **John von Neumann** — A_locus BELOW_THRESHOLD; B scored.
+- **Jorge Luis Borges** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Joseph-Louis Lagrange** — A_locus UNKNOWN; B scored.
+- **Judith Butler** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Katherine Johnson** — No public B_cause score (UNKNOWN).
+- **Le Corbusier** — A_locus and B_cause both UNKNOWN.
+- **Lise Meitner** — A_locus BELOW_THRESHOLD; B scored.
+- **Ludwig Mies van der Rohe** — A_locus and B_cause both UNKNOWN.
+- **Ludwig van Beethoven** — B_cause BELOW_THRESHOLD; A scored.
+- **Mahatma Gandhi** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Marcel Proust** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Marie Curie** — A_locus BELOW_THRESHOLD; B scored.
+- **Martin Heidegger** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Marvin Minsky** — No public B_cause score (UNKNOWN).
+- **Mary Shelley** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Maryam Mirzakhani** — A_locus and B_cause both UNKNOWN.
+- **Michel Foucault** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Michelangelo** — No public B_cause score (UNKNOWN).
+- **Miguel de Cervantes** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Miles Davis** — A_locus and B_cause both UNKNOWN.
+- **Milton Friedman** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Nelson Mandela** — No public B_cause score (UNKNOWN).
+- **Niccolò Machiavelli** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Pablo Picasso** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Parmenides** — A_locus and B_cause both UNKNOWN.
+- **Paul Cézanne** — No public B_cause score (UNKNOWN).
+- **Paul Dirac** — A_locus BELOW_THRESHOLD; B scored.
+- **Paul Samuelson** — A_locus and B_cause both UNKNOWN.
+- **Plotinus** — A_locus BELOW_THRESHOLD; B scored.
+- **Pyotr Ilyich Tchaikovsky** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Pythagoras** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Rachel Carson** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Raphael** — A_locus and B_cause both UNKNOWN.
+- **Rembrandt** — A_locus and B_cause both UNKNOWN.
+- **Richard Wagner** — A_locus BELOW_THRESHOLD; B scored.
+- **Robert Koch** — A_locus UNKNOWN; B scored.
+- **Roger Penrose** — A_locus BELOW_THRESHOLD; B scored.
+- **Rudolf Clausius** — A_locus UNKNOWN; B scored.
+- **Rumi** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Salvador Dalí** — A_locus and B_cause both UNKNOWN.
+- **Samuel Morse** — B_cause BELOW_THRESHOLD; A scored.
+- **Siddhartha Gautama** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Simone de Beauvoir** — No public B_cause score (UNKNOWN).
+- **Socrates** — No public B_cause score (UNKNOWN).
+- **Srinivasa Ramanujan** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Steve Jobs** — A_locus BELOW_THRESHOLD; B_cause UNKNOWN.
+- **Sun Tzu** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
+- **Sushruta** — A_locus UNKNOWN; B_cause BELOW_THRESHOLD.
+- **Søren Kierkegaard** — B_cause BELOW_THRESHOLD; A scored.
+- **Terence Tao** — A_locus UNKNOWN; B scored.
+- **Tim Berners-Lee** — No public B_cause score (UNKNOWN).
+- **Toni Morrison** — B_cause BELOW_THRESHOLD; A scored.
+- **Vera Rubin** — A_locus UNKNOWN; B scored.
+- **Vincent van Gogh** — No public B_cause score (UNKNOWN).
+- **Vint Cerf** — A_locus UNKNOWN; B scored.
+- **Virgil** — A_locus and B_cause both BELOW_THRESHOLD.
+- **Virginia Woolf** — No public B_cause score (UNKNOWN).
+- **Willard Libby** — A_locus UNKNOWN; B scored.
+- **William Shakespeare** — A_locus and B_cause both UNKNOWN.
+- **Wolfgang Amadeus Mozart** — B_cause BELOW_THRESHOLD; A scored.
+- **Évariste Galois** — A_locus and B_cause both UNKNOWN.
+<!-- END GENERATED: not_scorable -->
+
+
 
 ![Draft belief-system scores on where God is against how things happen, with margin strips for systems where an axis is not settled](figures/systems_cause_locus.png)
 
