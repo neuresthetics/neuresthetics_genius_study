@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 5
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #201/228, F 3, rank 214). Goal: corroborate A (was dark hollow — A 0@0.7 single S3 only; B already corroborated). Re-read Free Enquiry S3 p.158 A warrant; added Christian Virtuoso S4 corroboration: World 'framed by an Author supremely Powerful, Wise, and Good' (p. 14); 'Supreme Lord and Governor of the World' / 'supremely perfect Author' (p. 33); 'Formation of the World out of the Universal Matter' by 'an Incorporeal Substance' giving Motion to a Body (p. 28). SEP §3.4/§5.2 (S2) also notes God as Author distinct from created machine. A cites S3+S4 → support single→corroborated; value/certainty hold A 0 @0.7 (alt 1 named, cites only S3 subset). B 3 @0.7 corroborated unchanged; mid_basin true @0.7 (P4) unchanged; primary CHRIST @0.7 unchanged. Chart-moving YES for fill cue only: dark hollow → dark filled when figures next refresh (values unchanged). P47 source_quality on S1–S5. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P11: TCP transcriptions are authoritative copies under CODING_GUIDE §7, so the open question on S3/S4 is closed (coder notes, the self-described relation's how_known and both reliability notes cite P11; no value change). Decision P12: first_lasting_contribution_year 1660 → 1659 (start of the listed 1659–1660 air-pump item; Britannica), age 33 → 32; era unchanged. Small fixes on claims that hold: #22 comma restored in 'divers times, (and perhaps oftner' (TCP A28982, p. 160); #34 Church of England affiliation 1.0 → 0.7 (only Britannica names the church). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs. Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
@@ -113,13 +114,17 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.7
-      cites: [{source: S3, locator: "p. 158"}]
-      how_known: "His own book; a named alternative, so 0.7."
-      rationale: "Transcendent person outside the world: God is 'the Supream and Absolute Lord, and, if I may so speak, the Proprietor of the whole Creation', who 'established the Laws of Motion' and 'gave them to Matter, not to Himself' (p. 158); the world is his artefact, not his body. Named alternative: 1, since God continues his 'ordinary and general concourse' in the world (p. 10)."
+      support: corroborated
+      cites: [{source: S3, locator: "p. 158"}, {source: S4, locator: "pp. 14, 28, 33"}]
+      how_known: "Two of his own published books (Free Enquiry + Christian Virtuoso); named alternative, so 0.7. Deepen D1: support single→corroborated (P48)."
+      rationale: "Transcendent person outside the world: Free Enquiry — God is 'the Supream and Absolute Lord, and, if I may so speak, the Proprietor of the whole Creation', who 'established the Laws of Motion' and 'gave them to Matter, not to Himself' (S3, p. 158); the world is his artefact, not his body. Christian Virtuoso corroborates: the World was 'framed by an Author supremely Powerful, Wise, and Good' (S4, p. 14); God is 'the Supreme Lord and Governor of the World' and 'supremely perfect Author' of the works of Nature (S4, p. 33); 'Formation of the World out of the Universal Matter' required that 'an Incorporeal Substance gave Motion to a Body' (S4, p. 28). Named alternative: 1, since God continues his 'ordinary and general concourse' in the world (S3, p. 10)."
+      alternatives:
+        - {value: 1, note: "Ordinary and general concourse read as immanent presence rather than mere conservation of a distinct creation.", cites: [{source: S3, locator: "p. 10"}]}
     B_cause:
       value: 3
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S3, locator: "pp. 8, 10–11, 160, 239–240"}, {source: S1, locator: "'Scientific career', paragraph 2"}]
       how_known: "His own book; a named alternative, so 0.7."
       rationale: "Scored on his account of nature (P6). Law and regularity with a stated, limited exception. Brute matter 'managed by certain Laws of Local Motion, and upheld by his ordinary and general concourse' does what was designed (p. 8); the world was so contrived that 'there will be no necessity of extraordinary interpositions' (p. 10); his working science is mechanical and experimental (S1). The exception is stated: God 'sometimes (as in Divine Miracles)' recedes 'from what Men call the Laws of Nature' (p. 160). Named alternative: 2, since he also says God acts by miracles and, 'perhaps oftner than mere Philosophers imagine', through rational minds 'where Men [...] are nearly and highly concern'd' (pp. 239–240)."
@@ -174,6 +179,31 @@ worldview:
       kind: "written profession (public)"
       verified_against: "primary transcription"
       verified_on: 2026-10-02
+
+    - text: "That this vast, beautiful, orderly, and (in a word) many ways admirable System of things, that we call the World, was fram'd by an Author supremely Powerful, Wise, and Good, can scarce be deny'd by an intelligent and unprejudic'd Considerer."
+      cites: [{source: S4, locator: "p. 14"}]
+      date: "1690"
+      context: "Christian Virtuoso: natural religion from the frame of the world."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+    - text: "God hath planted Notions and Principles in the Mind of Man, fit to make him sensible, that he ought to Adore God, as the most Perfect of Beings, the Supreme Lord and Governor of the World, the Author of his own Nature, and all his Enjoyments."
+      cites: [{source: S4, locator: "p. 33"}]
+      date: "1690"
+      context: "Christian Virtuoso: natural religion; God as Author distinct from the world he governs."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
+    - text: "the Formation of the World out of the Universal Matter, though this Action required, that an Incorporeal Substance gave Motion to a Body"
+      cites: [{source: S4, locator: "p. 28"}]
+      date: "1690"
+      context: "Christian Virtuoso: articles of natural theology that exceed easy modus explanations; Incorporeal Substance as world-former."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "primary transcription"
+      verified_on: 2026-10-24
     - text: "in sometimes (as in Divine Miracles) receding from what Men call the Laws of Nature, as He did at first in establishing them"
       cites: [{source: S3, locator: "p. 160"}]
       date: "1686"
@@ -200,7 +230,7 @@ worldview:
       verified_on: 2026-10-02
   changes_over_life:
     - {value: "Christian conversion experience in Geneva in his teens; devotional writing first, then mature works on reason, nature and revelation", year: "1639–1690", certainty: 1.0, cites: [{source: S2, locator: "§1 Life"}, {source: S1, locator: "'Theological activities'"}], how_known: "Two sources."}
-  coder_notes: "S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). Under decision P11 (2026-10-02) TCP transcriptions are authoritative copies under CODING_GUIDE §7 (scholarly keyed transcriptions of the named 1686 and 1690 editions, tied to their page images), so they are marked primary transcription and the 0.7 web-copy cap does not apply; the question the batch 4 coding run left open is settled; the long s (s) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft. Long s (ſ) in the TCP quotations is normalised to s (CODING_GUIDE §7); otherwise TCP spelling is kept."
+  coder_notes: "Deepen D1 (2026-10-24): A support filled via S4 Christian Virtuoso (pp. 14, 28, 33) alongside Free Enquiry S3 p. 158; scores unchanged. Chart fill cue dark hollow→dark filled pending figures refresh. S3 and S4 are read in the Text Creation Partnership's keyboarded transcriptions of the EEBO page images (released CC0 on the TCP GitHub). Under decision P11 (2026-10-02) TCP transcriptions are authoritative copies under CODING_GUIDE §7 (scholarly keyed transcriptions of the named 1686 and 1690 editions, tied to their page images), so they are marked primary transcription and the 0.7 web-copy cap does not apply; the question the batch 4 coding run left open is settled; the long s (s) and spelling of S4 are kept as transcribed. Page numbers are the printed page numbers that TCP records. Every axis names an alternative score, so all are at 0.7 even though the basis would allow 1.0. CLTHEI and CLASS_THEISM are draft system files; CHRIST is a draft. Long s (ſ) in the TCP quotations is normalised to s (CODING_GUIDE §7); otherwise TCP spelling is kept."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -241,9 +271,11 @@ review:
   data_quality_flags:
     - "Birth and death dates as printed by Britannica, which does not say whether they are Old Style; Old Style is assumed in the calendar field."
     - "S3 and S4 read in TCP transcriptions, not in the page images; gaps marked 〈gap〉 by TCP (Hebrew in S3, p. 158) are not quoted."
+    - "A support corroborated this deepen (S3+S4); chart fill dark hollow→dark filled deferred until figures refresh."
   open_questions:
     - "Read the Hunter and Davis Works of Robert Boyle (BW) text of the Free Enquiry and Christian Virtuoso for the modern edition's pages."
     - "Read Boyle's Account of Philaretus (autobiography) for the Geneva conversion in his own words."
+    - "Settled this deepen: A support single→corroborated (S3+S4); hollow→filled when figures next refresh; values unchanged."
 
 sources:
   - id: S1
@@ -254,6 +286,7 @@ sources:
     url: "https://www.britannica.com/biography/Robert-Boyle"
     accessed: 2026-10-02
     reliability_note: "Signed article by a leading Boyle scholar (one page). Sections cited by heading."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: secondary
@@ -263,6 +296,7 @@ sources:
     url: "https://plato.stanford.edu/entries/boyle/"
     accessed: 2026-10-02
     reliability_note: "Peer-reviewed reference article. Cited by section number."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing]
   - id: S3
     type: primary
@@ -273,6 +307,7 @@ sources:
     url: "https://github.com/textcreationpartnership/A28982"
     accessed: 2026-10-02
     reliability_note: "His own book in the TCP keyboarded transcription (CC0), an authoritative copy under CODING_GUIDE §7 (decision P11). Page numbers are the printed numbers recorded by TCP."
+    source_quality: "scholarly edition or monograph"
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S4
     type: primary
@@ -281,8 +316,9 @@ sources:
     year: 1690
     citation: "Boyle, Robert. The Christian Virtuoso. London: printed by Edw. Jones for John Taylor, 1690; published as 'by T.H.R.B., Fellow of the Royal Society'. Text Creation Partnership transcription of the EEBO page images, TCP A28945, https://raw.githubusercontent.com/textcreationpartnership/A28945/master/A28945.xml."
     url: "https://github.com/textcreationpartnership/A28945"
-    accessed: 2026-10-02
-    reliability_note: "His own book in the TCP keyboarded transcription (CC0), with long s as printed; an authoritative copy under CODING_GUIDE §7 (decision P11). Page numbers are the printed numbers recorded by TCP."
+    accessed: 2026-10-24
+    reliability_note: "His own book in the TCP keyboarded transcription (CC0), with long s as printed; an authoritative copy under CODING_GUIDE §7 (decision P11). Page numbers are the printed numbers recorded by TCP. Deepen D1: A-locus corroboration from pp. 14, 28, 33."
+    source_quality: "scholarly edition or monograph"
     used_for: [contribution, worldview]
   - id: S5
     type: secondary
@@ -292,6 +328,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
 ---
 
@@ -301,7 +338,7 @@ sources:
 
 ## Summary
 
-Robert Boyle (1627–1691), Anglo-Irish natural philosopher, built the air pump with Hooke, gave his name to the gas law and attacked the Aristotelian and Paracelsian theories of matter in The Sceptical Chymist [S1]. A devout Anglican and Christian apologist [S1; S2], he held that God made the world a lawful machine upheld by his "ordinary and general concourse" and sometimes recedes from its laws in miracles [S3, pp. 10, 160]. primary_system CHRIST at 0.7 (CLTHEI named). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7).
+Robert Boyle (1627–1691), Anglo-Irish natural philosopher, built the air pump with Hooke, gave his name to the gas law and attacked the Aristotelian and Paracelsian theories of matter in The Sceptical Chymist [S1]. A devout Anglican and Christian apologist [S1; S2], he held that God made the world a lawful machine upheld by his "ordinary and general concourse" and sometimes recedes from its laws in miracles [S3, pp. 10, 160]. primary_system CHRIST at 0.7 (CLTHEI named). A 0 @0.7 support corroborated (S3+S4), B 3 @0.7 corroborated, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Deepen D1: A hollow→filled pending figures refresh.
 
 ## Life and work
 
@@ -317,7 +354,7 @@ Fourteenth child of the 1st Earl of Cork; a Christian conversion in Geneva in hi
 
 ## Adult working worldview
 
-Laws of motion given by God "to Matter, not to Himself" [S3, p. 158]; miracles as the stated exception [S3, p. 160]; revealed law with rewards and penalties [S4, p. 42]; reason judges whether a testimony is divine, then believes what it clearly teaches [S4, p. 118].
+Laws of motion given by God "to Matter, not to Himself" [S3, p. 158]; Christian Virtuoso: World framed by a supreme Author / Incorporeal Substance [S4, pp. 14, 28, 33]; miracles as the stated exception [S3, p. 160]; revealed law with rewards and penalties [S4, p. 42]; reason judges whether a testimony is divine, then believes what it clearly teaches [S4, pp. 117–118].
 
 ## Heritage (context only)
 
@@ -334,7 +371,9 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 ## Open questions
 
 - The Hunter and Davis edition; the Account of Philaretus.
+- Settled D1: A support corroborated (S3+S4); dark hollow→dark filled when figures next refresh.
 
 ## Research log
 
+- 2026-10-24: Deepen D1. Corroborated A 0 via Christian Virtuoso TCP (pp. 14, 28, 33) beside Free Enquiry p. 158. B/mid/primary unchanged. Chart-moving YES (fill only). P47 on S1–S5. No fallacy_catalog; figures not refreshed.
 - 2026-10-02: Read Britannica (Principe), SEP (MacIntosh and Anstey), and the TCP transcriptions of the Free Enquiry (A28982) and The Christian Virtuoso (A28945).
