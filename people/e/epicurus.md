@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 2
   review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7)"
+  collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-19
+  last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #157, F 3, rank 165). Needs: corroborate A/B to ≥0.7 if justified. A 3 0.5→0.7 written_profession (Menoeceus X.123 + Principal Doctrine I / Sovran Maxims X.139 dual own-voice; Loeb S4 pp. 649, 663). Named alt 4 kept (Obbink atheism / gods-as-images residual; CODING_GUIDE §3 named-alt ceiling 0.7). B stays 3 @0.5 alt 4 (P16 addendum / P40 / P41: lawful atomic order without stated no-exception; swerve later sources = chance). Support corroborated on A (S1+S2+S4) and B (S1+S2+S4). mid_basin BELOW→false @0.7 (A≥3 branch, P10; A and alt 4 both ≥3 so P30 uses condition evidence). P50 Wikipedia dual bio (S5). P47 source_quality on S1–S5. primary EPICUR @1.0; C 4 @1.0; D/E UNKNOWN; span UNKNOWN. Plotted faded (min(A,B)=0.5). Chart-moving NO (B still 0.5). No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fixes: mid_basin false 0.5 -> BELOW_THRESHOLD (P10). Wikisource Hicks checked against the printed Loeb vol. 2 (1925; archive.org livesofeminentph02diog): X.76–77 on p. 607 and X.123 on p. 649 (the auditor's check, re-read), X.124–125 on p. 651 (coder's check); edition cited as S4. The web-copy cap (CODING_GUIDE §7) no longer applies, so primary_system EPICUR 0.7 -> 1.0 and C 4 0.7 -> 1.0 (written_profession ceiling 1.0, no named alternative)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 165; Edwin Hubble, rank 164, already coded). Own words from his three letters preserved in Diogenes Laertius X (Hicks translation, Wikisource transcription) and SEP 'Epicurus' (Konstan). primary_system EPICUR (0.7, Z7 draft; founder, written profession; Wikisource copy not yet checked against a printing). A 3 (0.5, alt 4): 'verily there are gods ... but they are not such as the multitude believe'; gods material and within the cosmos, as the EPICUR system. B 3 (0.5, alt 4): heavenly motions 'without the ministration or command ... of any being who ... enjoys perfect bliss'; invariable recurrence from 'the original ... conglomeration of atoms'; no stated no-exception claim, and the swerve (later sources) is chance (P40). C 4 (0.7): 'death is nothing to us'. D, E UNKNOWN. mid_basin false (0.5; A ≥ 3). Works undated: span UNKNOWN, era '-500 to 499' (as Aristotle). Plotted (A 3, B 3). Draft, not reviewed."}
 
@@ -24,17 +25,17 @@ identity:
     status: "core"
     field: "philosophy"
     field_bucket: "philosophy"
-  full_name: {value: "Epicurus, son of Neocles, of Gargettus", certainty: 0.7, cites: [{source: S1, locator: "X.1"}], how_known: "Diogenes Laertius."}
-  native_name: {value: "Ἐπίκουρος", certainty: 0.5, cites: [{source: S2, locator: "§2"}], how_known: "Greek form the coder's."}
+  full_name: {value: "Epicurus, son of Neocles, of Gargettus", certainty: 0.7, cites: [{source: S1, locator: "X.1"}, {source: S5, locator: "lead"}], how_known: "Diogenes Laertius and Wikipedia agree (P50)."}
+  native_name: {value: "Ἐπίκουρος", certainty: 0.7, cites: [{source: S2, locator: "§2"}, {source: S5, locator: "lead"}], how_known: "SEP and Wikipedia agree (P50)."}
   aliases: []
 
 basics:
   birth:
-    date: {value: "-341", certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "SEP: 341 BCE (DL X.14)."}
-    place: {value: "Samos", modern_name: "Samos, Greece", polity_then: "Athenian cleruchy on Samos", certainty: 0.5, cites: [{source: S1, locator: "X.1"}, {source: S2, locator: "§2"}], how_known: "Raised on Samos; an Athenian citizen; birthplace not stated outright."}
+    date: {value: "-341", certainty: 0.7, cites: [{source: S2, locator: "§2"}, {source: S5, locator: "lead / infobox"}], how_known: "SEP and Wikipedia agree (P50); SEP cites DL X.14."}
+    place: {value: "Samos", modern_name: "Samos, Greece", polity_then: "Athenian cleruchy on Samos", certainty: 0.7, cites: [{source: S2, locator: "§2"}, {source: S5, locator: "Early life"}], how_known: "SEP and Wikipedia: born on Samos (Athenian settlement); DL X.1 names him of Gargettus (P50)."}
   death:
-    date: {value: "-270", certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "SEP."}
-    place: {value: "Athens", modern_name: "Athens, Greece", polity_then: "Athens", certainty: 0.7, cites: [{source: S1, locator: "X.15"}, {source: S2, locator: "§2"}], how_known: "DL; SEP."}
+    date: {value: "-270", certainty: 0.7, cites: [{source: S2, locator: "§2"}, {source: S5, locator: "lead / infobox"}], how_known: "SEP and Wikipedia agree (P50)."}
+    place: {value: "Athens", modern_name: "Athens, Greece", polity_then: "Athens", certainty: 0.7, cites: [{source: S1, locator: "X.15"}, {source: S2, locator: "§2"}, {source: S5, locator: "Death"}], how_known: "DL, SEP, and Wikipedia agree (P50)."}
   first_lasting_contribution_year: {value: UNKNOWN, how_known: "Letters and On Nature undated; he founded his school at 32 (DL X.15, c. 310/309 BCE) and the Garden in Athens in 307/306 (S2 §2). As Aristotle, left UNKNOWN."}
   era_bucket: {value: "-500 to 499", certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "Every candidate year (c. 310–270 BCE) is in '-500 to 499' (P2)."}
   region_of_birth: {value: "Southern Europe", certainty: 0.5, cites: [{source: S2, locator: "§2"}], how_known: "Samos, Greece (P3)."}
@@ -89,25 +90,27 @@ worldview:
     A_locus: 
       value: 3
       basis: written_profession
-      certainty: 0.5
-      cites: [{source: S1, locator: "X.123"}, {source: S2, locator: "§4–5"}]
-      how_known: "Letter to Menoeceus; contested reading of material gods (as the EPICUR system), so 0.5."
-      rationale: "'Verily there are gods ... but they are not such as the multitude believe' (X.123); gods are 'immortal and blessed' living beings, material (S2), not concerned with human affairs. Divine beings within nature, no transcendent person: 3. Alternative 4 (Obbink's 'atheism' reading named in S2's bibliography; gods as images)."
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S1, locator: "X.123; X.139"}, {source: S4, locator: "pp. 649, 663"}, {source: S2, locator: "§4–5"}]
+      how_known: "Dual own-voice: Letter to Menoeceus (X.123) plus Principal Doctrine I / Sovran Maxims (X.139), both Loeb-checked (S4). Named alternative, so 0.7 not 1.0 (CODING_GUIDE §3). Independent source ids → corroborated (P48)."
+      rationale: "'Verily there are gods ... but they are not such as the multitude believe' (X.123); PD I: 'A blessed and eternal being has no trouble himself and brings no trouble upon any other being' (X.139). Gods are immortal and blessed living beings, material (S2), not concerned with human affairs. Divine beings within nature, no transcendent person: 3. Alternative 4 kept honest (Obbink 1989 atheism / gods-as-images residual in S2 bibliography; mainstream SEP and Wikipedia affirm the gods exist)."
       alternatives:
-        - {value: 4, note: "Gods read as within nature's order only.", cites: [{source: S2, locator: "§5"}]}
+        - {value: 4, note: "Obbink atheism / gods read as images or within nature's order only (residual).", cites: [{source: S2, locator: "§5 / bibliography"}]}
     B_cause: 
       value: 3
       basis: written_profession
       certainty: 0.5
-      cites: [{source: S1, locator: "X.76–77; X.97"}, {source: S2, locator: "§3; §4"}]
-      how_known: "Letter to Herodotus; account of nature (P6). Lawful order stated, no no-exception claim; the swerve (later sources) is chance (P40), so 0.5."
-      rationale: "Heavenly motions occur 'without the ministration or command, either now or in the future, of any being who ... enjoys perfect bliss'; 'where we find phenomena invariably recurring, the invariableness ... must be ascribed to the original interception and conglomeration of atoms' (X.77). 3, not 4 (P16 addendum; P40); as the EPICUR system."
+      support: corroborated
+      cites: [{source: S1, locator: "X.76–77; X.97"}, {source: S4, locator: "pp. 606–607, 623–624"}, {source: S2, locator: "§3; §4"}]
+      how_known: "Letters to Herodotus and Pythocles (own voice, Loeb-checked). Lawful atomic order without a stated no-exception claim (P16 addendum / P41); swerve only in later sources and is chance (P40) → 0.5, never 4. Support corroborated (P48)."
+      rationale: "Heavenly motions occur 'without the ministration or command, either now or in the future, of any being who ... enjoys perfect bliss' (X.76); 'where we find phenomena invariably recurring, the invariableness ... must be ascribed to the original interception and conglomeration of atoms' (X.77); 'the divine nature must not on any account be adduced to explain' celestial regularity (X.97). 3, not 4 (P16 addendum; P40; P41); as the EPICUR system."
       alternatives:
-        - {value: 4, note: "If the swerve is read as natural indeterminacy compatible with 4.", cites: [{source: S2, locator: "§4"}]}
+        - {value: 4, note: "If the swerve is read as natural indeterminacy compatible with 4, or if invariable recurrence is stretched to exceptionless.", cites: [{source: S2, locator: "§4"}]}
     C_ledger: {value: 4, basis: written_profession, certainty: 1.0, cites: [{source: S1, locator: "X.124–125"}, {source: S4, locator: "p. 651"}], how_known: "Written profession: 'death is nothing to us ... death is the privation of all sentience'; no afterlife reward or punishment (S2 §4)."}
     D_authority: {value: UNKNOWN, how_known: "Not scored."}
     E_scope: {value: UNKNOWN, how_known: "Not scored."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is at least 3 only at 0.5; P10 caps mid_basin by the certainty of the tested condition, below the 0.7 bar, so BELOW_THRESHOLD (Chomsky, Sen, Russell, Franklin precedents; Z7 audit)."}
+  mid_basin: {value: false, certainty: 0.7, cites: [{source: S1, locator: "X.123; X.139"}, {source: S4, locator: "pp. 649, 663"}], how_known: "A_locus 3 at 0.7 with named alt 4; both ≥ 3, so P30 uses the certainty of the A≥3 condition (Menoeceus + Principal Doctrine I), not the exact-value contest. A≥3 branch reads A only (P10). Deepen D1 lifted A past the Z7 0.5 BELOW_THRESHOLD."}
   statements:
     - text: "For verily there are gods, and the knowledge of them is manifest; but they are not such as the multitude believe, seeing that men do not steadfastly maintain the notions they form respecting them."
       cites: [{source: S1, locator: "X.123"}]
@@ -125,8 +128,24 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-19
       note: "Hicks translation via Wikisource; checked against the Loeb vol. 2 scan, p. 607 (S4)."
+    - text: "A blessed and eternal being has no trouble himself and brings no trouble upon any other being; hence he is exempt from movements of anger and partiality, for every such movement implies weakness."
+      cites: [{source: S1, locator: "X.139"}, {source: S4, locator: "p. 663"}]
+      context: "Principal Doctrines / Sovran Maxims I (Kuriai Doxai), preserved in Diogenes Laertius X."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Hicks translation via Wikisource; checked against the Loeb vol. 2 scan, p. 663 (S4). Own-voice catechism; not a P49 reconstruction."
+    - text: "And further, let the regularity of their orbits be explained in the same way as certain ordinary incidents within our own experience; the divine nature must not on any account be adduced to explain this, but must be kept free from the task and in perfect bliss."
+      cites: [{source: S1, locator: "X.97"}, {source: S4, locator: "pp. 623–624"}]
+      context: "Letter to Pythocles, on celestial phenomena."
+      axes: [B_cause, A_locus]
+      kind: "published letter"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-24
+      note: "Hicks translation via Wikisource; checked against the Loeb vol. 2 scan, pp. 623–624 (S4)."
   changes_over_life: []
-  coder_notes: "Hicks wording checked against the Loeb vol. 2 scan (S4; Z7 audit and coder)."
+  coder_notes: "Hicks wording checked against the Loeb vol. 2 scan (S4; Z7 audit and deepen D1). A lifted on Menoeceus + PD I; B held at 0.5 under P16/P40/P41 (swerve not in the three letters). Obbink 1989 kept as residual alt 4, not a real dispute against own-voice 'verily there are gods'."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -174,7 +193,8 @@ sources:
     citation: "Diogenes Laertius. Lives of Eminent Philosophers, Book X. Tr. R. D. Hicks (Loeb, 1925). Wikisource transcription. https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_X"
     url: "https://en.wikisource.org/wiki/Lives_of_the_Eminent_Philosophers/Book_X"
     accessed: 2026-10-19
-    reliability_note: "Preserves Epicurus's three letters and Principal Doctrines; unofficial web copy of a published translation."
+    reliability_note: "Preserves Epicurus's three letters and Principal Doctrines; unofficial web copy of a published translation; wording checked against S4."
+    source_quality: "unofficial web copy"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, institutions, collaborators]
   - id: S2
     type: tertiary
@@ -184,6 +204,7 @@ sources:
     url: "https://plato.stanford.edu/entries/epicurus/"
     accessed: 2026-10-19
     reliability_note: "Peer-reviewed reference entry."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, worldview, lane_b, institutions, collaborators]
   - id: S3
     type: secondary
@@ -193,6 +214,7 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-19
     reliability_note: "Study's own roster."
+    source_quality: "study roster"
     used_for: [review]
   - id: S4
     type: primary
@@ -201,13 +223,24 @@ sources:
     citation: "Diogenes Laertius. Lives of Eminent Philosophers, vol. 2. Tr. R. D. Hicks. Loeb Classical Library (London: Heinemann; New York: Putnam, 1925). Archive.org scan. https://archive.org/details/livesofeminentph02diog"
     url: "https://archive.org/details/livesofeminentph02diog"
     accessed: 2026-10-19
-    reliability_note: "Library scan of the printed Loeb edition; used to check the Wikisource text (CODING_GUIDE §7)."
+    reliability_note: "Library scan of the printed Loeb edition; used to check the Wikisource text (CODING_GUIDE §7). OCR txt used this pass for X.97 and X.139 page locators."
+    source_quality: "archive scan (OCR only)"
     used_for: [worldview]
+  - id: S5
+    type: tertiary
+    kind: "encyclopedia"
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Epicurus.\" Wikipedia, English. https://en.wikipedia.org/wiki/Epicurus (rev. 1379475008, 2026-10-10)."
+    url: "https://en.wikipedia.org/wiki/Epicurus"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with SEP. Lead affirms gods exist with no involvement in human affairs; notes swerve from the Epicurean tradition. Category labels ignored for coding."
+    source_quality: "reference entry"
+    used_for: [identity, basics]
 ---
 
 ## Summary
 
-Epicurus (341–270 BCE), founder of the Garden [S1, S2]. Draft: EPICUR (0.7); A 3, B 3 at 0.5; C 4. Plotted.
+Epicurus (341–270 BCE), founder of the Garden [S1, S2, S5]. Deepen D1: EPICUR @1.0; A 3 @0.7 (alt 4); B 3 @0.5 (alt 4); C 4 @1.0; mid false @0.7; plotted faded.
 
 ## Life and work
 
@@ -223,7 +256,7 @@ Schoolmaster's son; philosophy from 14 [S1].
 
 ## Adult working worldview
 
-Gods exist but do not govern the world; nature runs by atoms [S1].
+Gods exist but do not govern the world (Menoeceus; PD I); nature runs by atoms without divine ministration (Herodotus; Pythocles) [S1, S4].
 
 ## Heritage (context only)
 
@@ -243,4 +276,5 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Research log
 
+- 2026-10-24 (deepen D1, queue #157): Loeb OCR (IA livesofeminentph02diog_djvu.txt) for PD I p. 663 and Pythocles X.97 pp. 623–624; Wikisource Hicks for PD I wording; SEP Konstan + Wikipedia EN (P50). A 0.5→0.7; B stays 0.5 under P16/P40/P41; mid BELOW→false @0.7. P47 on S1–S5; P48 A/B corroborated. No fallacy_catalog. No figures/.
 - 2026-10-19: Read DL X (Hicks) and SEP.
