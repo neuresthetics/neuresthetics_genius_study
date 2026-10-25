@@ -2,12 +2,12 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-02
+  last_updated: 2026-10-24
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1923–1936 unchanged; worldview.working_years 1914–1953 → 1923–1936, equal to the span (P30 addendum f); lasting item added: The Realm of the Nebulae (1936); 2 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 2 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
+    - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #156, F 3, rank 164). Needs: A BELOW_THRESHOLD; primary BELOW (AGNOS candidate). Recovered Christianson p.183 adult-religion passage via Wikipedia EN verbatim quotation (S5 ref 47) and TodayInSci (S6: Grace Burke Hubble Huntington MS locator for 'We do not know why we are born…'). Emerson (1939) belief/Creator reply and Whitehead-Creator cocktail talk are Grace-reported speech — cannot score A or primary alone (CODING_GUIDE §1 / P18). Reply neither places nor denies a personal God (P19/P20: AGNOS with no locus → A BELOW). S2 Nature of Science two-domains already on file; still silent on locus. P50 Wikipedia dual bio (S5). P47 source_quality on S1–S6. P48 support on B (corroborated S2+S1) and D (single S2). primary_system stays BELOW_THRESHOLD (AGNOS lead strengthened, not opened); A stays BELOW; B 4 @0.7; D 2 @0.7; mid BELOW; not plotted. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
 identity:
   id: hubble-edwin
@@ -28,18 +29,18 @@ identity:
     status: core
     field: astronomy
     field_bucket: astronomy
-  full_name: {value: "Edwin Powell Hubble", certainty: 1.0, cites: [{source: S1, locator: "'Also known as: Edwin Powell Hubble'"}, {source: S3, locator: "p. 13 ('Edwin Powell, who arrived by kerosene lamp')"}], how_known: "Two sources."}
+  full_name: {value: "Edwin Powell Hubble", certainty: 1.0, cites: [{source: S1, locator: "'Also known as: Edwin Powell Hubble'"}, {source: S3, locator: "p. 13 ('Edwin Powell, who arrived by kerosene lamp')"}, {source: S5, locator: "lead / infobox"}], how_known: "Britannica, Christianson preview, and Wikipedia agree (P50)."}
   native_name: {value: "Edwin Hubble (English)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "English name."}
   aliases:
     - {name: "Hubble-Edwin", kind: "roster alias"}
 
 basics:
   birth:
-    date: {value: "1889-11-20", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-    place: {value: "Marshfield, Missouri", modern_name: "Marshfield, Missouri, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "1889-11-20", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "infobox"}], how_known: "Britannica and Wikipedia agree (P50)."}
+    place: {value: "Marshfield, Missouri", modern_name: "Marshfield, Missouri, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "infobox / Early life"}], how_known: "Britannica and Wikipedia agree (P50)."}
   death:
-    date: {value: "1953-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-    place: {value: "San Marino, California", modern_name: "San Marino, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
+    date: {value: "1953-09-28", calendar: gregorian, certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "infobox"}], how_known: "Britannica and Wikipedia agree (P50)."}
+    place: {value: "San Marino, California", modern_name: "San Marino, California, USA", polity_then: "United States", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "infobox / Personal life"}], how_known: "Britannica and Wikipedia agree (P50)."}
   first_lasting_contribution_year: {value: 1923, certainty: 0.7, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars in the Andromeda Nebula'"}], how_known: "Cepheids in the Andromeda Nebula, which settled that spirals are galaxies outside the Milky Way: the earliest listed contribution, dated 1923–1924, taken at its start year (decisions P12, P13). The galaxy classification is dated only '1920s' in S1, so it does not set the year (P12); a source dating it before 1923 would move the year."}
   era_bucket: {value: "1850 to 1949", certainty: 0.7, cites: [{source: S1, locator: "1923 paragraph"}], how_known: "From first_lasting_contribution_year (P2)."}
   region_of_birth: {value: "North America", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "USA is North America in data/reference/regions.csv (P3)."}
@@ -95,30 +96,38 @@ worldview:
     how_known: "His own Caltech commencement address, printed in S2 and checked on the page images. Capped at 0.7 under CODING_GUIDE §7: the access copy is a user upload to the Internet Archive and its provenance cannot be confirmed from the copy itself."
   primary_system:
     value: BELOW_THRESHOLD
-    cites: [{source: S2, locator: "pp. 38–39"}, {source: S3, locator: "pp. 14–29"}]
-    how_known: "His lectures place religion with values and say nothing about God, so no code can be read from them. The Baptist upbringing (S3) is childhood religion and is never a code."
-    note: "Candidate: AGNOS (stub system file, flagged). Christianson's account of his adult religion is not in the publisher's preview, which covers pp. 13–29; the 'p. 183' locator given here before was never seen and is withdrawn (lens audit, batch 4, #12). Reading the later chapters could settle the code."
-  secondary_system: {value: UNKNOWN, how_known: "No system evidence in the sources read."}
+    cites: [{source: S2, locator: "pp. 38–39"}, {source: S5, locator: "Personal life / ref 47 (Christianson p. 183)"}, {source: S6, locator: "Creator / born-into-the-world quotations"}]
+    how_known: "S2 places religion with private values and never names God. Christianson p. 183 (via S5/S6) gives Grace-reported adult remarks that neither affirm nor deny a Creator — reported speech cannot open a code alone (§1 / P18). Baptist upbringing (S3) is childhood and never a code."
+    note: "Candidate: AGNOS (explicit suspension). Deepen D1 recovered the withdrawn p. 183 passage: early Whitehead 'Creator' talk, then less certain ('We do not know why we are born… physical aspects'); to depressed friend John Emerson about belief/Creator: 'I can't understand it, so I just trust myself to it, and forget about it' (Grace journals / Christianson). Fits AGNOS suspension tone but is reported speech and does not state suspension in his own published words — keep BELOW (P19). AGNOS system file filled (no longer create-pass stub)."
+  secondary_system: {value: UNKNOWN, how_known: "No second system evidenced in the sources read."}
   candidate_codes_considered:
-    - {code: AGNOS, reason: "Leading candidate, not coded (BELOW_THRESHOLD): his lectures treat religious premises as private convictions outside knowledge, which fits suspension, but he states no view on God in what was read. AGNOS is a stub system file (flag).", cites: [{source: S2, locator: "pp. 38–39"}]}
-    - {code: CHRIST, reason: "Considered: Baptist upbringing and church choir (S3). Rejected for the adult working years: membership and upbringing are never a code, and nothing read shows adult Christian belief.", cites: [{source: S3, locator: "pp. 14, 23, 26"}]}
+    - {code: AGNOS, reason: "Leading candidate, not coded: S2 two-domains + Grace-reported Emerson reply (S5/S6) read as suspension, but no own-voice 'I am agnostic' / explicit suspension on God's existence; reported speech cannot open the code alone.", cites: [{source: S2, locator: "pp. 38–39"}, {source: S5, locator: "ref 47"}, {source: S6, locator: "Creator reply"}]}
+    - {code: CHRIST, reason: "Considered: Baptist upbringing and choir (S3). Rejected for adult working years: upbringing never a code; no adult Christian profession in sources read; Wikipedia notes later uncertainty (S5).", cites: [{source: S3, locator: "pp. 14, 23, 26"}, {source: S5, locator: "Personal life"}]}
+    - {code: ATHE, reason: "Rejected: no positive naturalism or denial of God in own words; Emerson reply trusts 'the whole thing' without denying a Creator.", cites: [{source: S5, locator: "ref 47"}, {source: S6, locator: "Creator reply"}]}
   lio_axes:
-    A_locus: {value: BELOW_THRESHOLD, how_known: "Nothing read places or denies God.", note: "Stays BELOW_THRESHOLD (P19/P20): his lectures treat religious premises as private convictions outside knowledge, which bears on the point, but he neither places nor explicitly denies a personal God in what was read."}
+    A_locus:
+      value: BELOW_THRESHOLD
+      how_known: "S2 silent on God. Christianson p. 183 / Emerson reply (S5, S6) is Grace-reported speech and neither places nor denies a personal God (P19/P20)."
+      note: "Deepen D1: recovered adult-religion passage does not open A. Early Whitehead Creator speculation then 'less certain'; Emerson asked about belief in a Creator — reply 'trust myself to it, and forget about it' suspends without a locus. P20: an agnostic with no stated locus view gets A BELOW_THRESHOLD. Reported speech cannot score A alone (§1)."
     B_cause:
       value: 4
       basis: written_profession
       certainty: 0.7
+      support: corroborated
       cites: [{source: S2, locator: "p. 10 ('The Nature of Science', 1948)"}, {source: S1, locator: "1923 and 1929 paragraphs"}]
-      how_known: "His own lecture, capped at 0.7 under §7 (unofficial scan)."
-      rationale: "Scored on his account of nature (P6). Laws are general statements of invariable association, and 'invariable' is the working assumption that an association seen in many cases will hold in the next one (p. 10); his own work extended measured regularities (the Cepheid period–luminosity relation, the redshift–distance relation) to the galaxies (S1). No miracle, petition or exemption appears in anything read."
-    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read."}
+      how_known: "His own lecture, capped at 0.7 under §7 (unofficial scan). Two source ids → corroborated (P48)."
+      rationale: "Scored on his account of nature (P6). Laws are general statements of invariable association, and 'invariable' is the working assumption that an association seen in many cases will hold in the next one (p. 10); his own work extended measured regularities (the Cepheid period–luminosity relation, the redshift–distance relation) to the galaxies (S1). No miracle, petition or exemption appears in anything read. Deepen D1: no change to value/certainty."
+    C_ledger: {value: UNKNOWN, how_known: "Nothing on judgement, afterlife or reward and punishment in the sources read (S2, S5 Personal life, S6)."}
     D_authority:
       value: 2
       basis: written_profession
       certainty: 0.7
+      support: single
       cites: [{source: S2, locator: "pp. 38–39"}]
-      how_known: "His own address, capped at 0.7 under §7; a named alternative, so 0.7 in any case."
+      how_known: "His own address, capped at 0.7 under §7; a named alternative, so 0.7 in any case. One source id → single (P48)."
       rationale: "Two domains, each with its own authority, so D 2 (same-pattern rule, as for Einstein, Planck and Heisenberg). Knowledge comes from observation and experiment in 'the public domain'; the premises of values come 'from authority, or from revelation, or from the inner conscience' and are tested by personal experience in 'the private domain' (pp. 38–39). Named alternative: 3, if revelation is read as reduced to private conviction that never governs questions of fact."
+      alternatives:
+        - {value: 3, note: "If revelation is read as reduced to private conviction that never governs questions of fact.", cites: [{source: S2, locator: "pp. 38–39"}]}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Scored on the world's order (P7). Nothing read addresses whether any group is favoured in events. Working science bears on the first question (same laws everywhere) but not on favour for a group in events, so E stays BELOW_THRESHOLD; not scored from working science alone (P19)."}
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus is BELOW_THRESHOLD (the P4 test needs A at certainty ≥ 0.7)."}
   statements:
@@ -146,9 +155,24 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-02
+    - text: "The whole thing is so much bigger than I am, and I can't understand it, so I just trust myself to it, and forget about it."
+      cites: [{source: S5, locator: "Personal life / ref 47 (Christianson p. 183)"}, {source: S6, locator: "Creator reply quotation"}]
+      date: "1939"
+      context: "Grace-reported reply to depressed friend John Emerson (actor/playwright) asking about his belief / belief in a Creator; year from secondary narrative (Nautilus citing Christianson). Reported speech — does not score A or primary alone."
+      axes: []
+      kind: "reported speech"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
+    - text: "We do not know why we are born into the world, but we can try to find out what sort of a world it is — at least in its physical aspects."
+      cites: [{source: S5, locator: "ref 47"}, {source: S6, locator: "born-into-the-world quotation (Grace Burke Hubble, Huntington MS Characteristics 2:82(9) Box 7)"}]
+      context: "Undated adult remark; Christianson p. 183 sequences it after the 1923 Whitehead Creator talk as Hubble growing 'even less certain'. TodayInSci cites Grace Burke Hubble's Huntington writings. Reported speech / Grace mediation — context only, not scored."
+      axes: []
+      kind: "reported speech"
+      verified_against: "secondary quotation"
+      verified_on: 2026-10-24
   changes_over_life:
-    - {value: "Baptist upbringing (family church, choir) to an adult view that sets religious premises in a private world of values; no dated change or statement on God was read", year: "1901–1938", certainty: 0.5, cites: [{source: S3, locator: "pp. 23, 26"}, {source: S2, locator: "pp. 38–39"}], how_known: "Coder's comparison of two sources; no dated break is documented in what was read."}
-  coder_notes: "AGNOS is a stub system file (flag). S2 is a posthumous collection of his unpublished lectures (Huntington Library, 1954); the access copy is a user-uploaded Internet Archive scan with page images, so every field resting on it is capped at 0.7 under CODING_GUIDE §7 until checked against a library copy. The Pope couplet he quotes (S2, p. 44) is a quotation of another author and is not scored. S3 was read only in the publisher's preview (pp. 1–36 of the 1995 IOP edition); its chapter on his adult religion is not in the preview."
+    - {value: "Baptist upbringing (family church, choir) to an adult view that sets religious premises in a private world of values; Grace-reported Emerson reply (c.1939) shows continued suspension without a dated conversion statement", year: "1901–1939", certainty: 0.5, cites: [{source: S3, locator: "pp. 23, 26"}, {source: S2, locator: "pp. 38–39"}, {source: S5, locator: "ref 47"}], how_known: "Coder's comparison; no dated break documented in own words; Emerson year from secondary narrative."}
+  coder_notes: "Deepen D1: AGNOS remains candidate only — system file is filled, but own-voice still silent on God. S2 §7 0.7 cap unchanged (IA user-upload scan). Christianson p. 183 recovered via Wikipedia/TodayInSci quotation of the monograph and Grace Huntington MS path; physical book / full Grace journals still unread. Pope couplet (S2 p. 44) is another's words, not scored. Mayall NAS memoir PDF blocked this pass (403); Wikipedia Personal life covers funeral/burial silence."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -189,11 +213,13 @@ review:
   controversies: []
   data_quality_flags:
     - "S2's access copy is a user upload to the Internet Archive (FineReader PDF with page images); fields resting on it are capped at 0.7 under CODING_GUIDE §7 until checked against a library copy of the 1954 Huntington Library edition."
-    - "S3 read in the publisher's preview only (pp. 1–36)."
-    - "Birth and death facts from one source (Britannica); the NAS memoir by Mayall (1970) was seen only in a partial web copy and is not cited."
+    - "S3 childhood chapters read in publisher's preview (pp. 1–36); adult-religion p. 183 recovered only via Wikipedia/TodayInSci quotation of Christianson and Grace Huntington MS — not a physical-book read."
+    - "Mayall NAS memoir PDF blocked (403) this pass; Wikipedia Personal life used for funeral/burial silence (P50)."
+    - "Emerson Creator reply and born-into-the-world line are Grace-reported speech; cannot open A or primary alone."
   open_questions:
-    - "Read Christianson, Edwin Hubble: Mariner of the Nebulae (1995), the passage on his adult religion in the chapters after the preview (pp. 13–29; no page verified), for a first-hand statement on God."
+    - "Physical Christianson (or Grace Burke Hubble Huntington journals Box 7) for own-hand / first-person wording beyond Grace mediation — only that could open AGNOS or A honestly."
     - "Check S2 against a library copy (Huntington Library, 1954) to lift the §7 cap."
+    - "Mayall NAS memoir (1970) full PDF if accessible — prior partial web copy had no religion score."
 
 sources:
   - id: S1
@@ -204,6 +230,7 @@ sources:
     url: "https://www.britannica.com/biography/Edwin-Hubble"
     accessed: 2026-10-02
     reliability_note: "Signed article (one page). Paragraphs counted from the opening '(born November 20, 1889'; the summary box is cited as such."
+    source_quality: "reference entry"
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
   - id: S2
     type: primary
@@ -214,6 +241,7 @@ sources:
     url: "https://archive.org/details/hubble-nature-of-science-and-other-lectures"
     accessed: 2026-10-02
     reliability_note: "His own lectures, published posthumously by the Huntington Library. Access copy is a user upload to the Internet Archive (page images with OCR); quoted passages were checked on the page images. Page numbers are the book's printed numbers. Unofficial copy, so §7 cap of 0.7."
+    source_quality: "archive scan (OCR only)"
     used_for: [basics, contribution, worldview, timing, lane_b]
   - id: S3
     type: secondary
@@ -223,7 +251,8 @@ sources:
     citation: "Christianson, Gale E. Edwin Hubble: Mariner of the Nebulae. Bristol and Philadelphia: Institute of Physics Publishing, 1995 (ISBN 0750304235). Publisher's preview PDF https://api.pageplace.de/preview/DT0400.9781351453868_A36688568/preview-9781351453868_A36688568.pdf."
     url: "https://api.pageplace.de/preview/DT0400.9781351453868_A36688568/preview-9781351453868_A36688568.pdf"
     accessed: 2026-10-02
-    reliability_note: "Full-length biography; read in the publisher's preview (early chapters only). Page numbers are the printed numbers."
+    reliability_note: "Full-length biography; childhood chapters read in publisher's preview (pp. 1–36). Adult-religion p. 183 not read in the physical book this pass — recovered via S5/S6 quotation of the Chicago 1996 reprint."
+    source_quality: "scholarly edition or monograph"
     used_for: [identity, childhood, worldview, heritage]
   - id: S4
     type: secondary
@@ -233,7 +262,28 @@ sources:
     url: "https://github.com/neuresthetics/neuresthetics_genius_study/blob/main/data/roster/roster.csv"
     accessed: 2026-10-02
     reliability_note: "Study's own roster; used only for rank, F and status."
+    source_quality: "study roster"
     used_for: [identity, review]
+  - id: S5
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia contributors. \"Edwin Hubble.\" Wikipedia, English. https://en.wikipedia.org/wiki/Edwin_Hubble."
+    url: "https://en.wikipedia.org/wiki/Edwin_Hubble"
+    accessed: 2026-10-24
+    reliability_note: "P50 dual bio with Britannica. Personal life quotes Christianson p. 183 (ref 47) and Bezzi Hubble Time p. 93 (ref 48) at length on adult religion; used for those quotations and basic facts. Agnostics category ignored for coding."
+    source_quality: "reference entry"
+    used_for: [identity, basics, worldview, review]
+  - id: S6
+    type: secondary
+    kind: "other"
+    author: "Today in Science History (quoting Christianson / Grace Burke Hubble Huntington MS)"
+    citation: "\"Edwin Powell Hubble Quotes.\" Today in Science History. https://todayinsci.com/H/Hubble_Edwin/HubbleEdwin-Quotations.htm."
+    url: "https://todayinsci.com/H/Hubble_Edwin/HubbleEdwin-Quotations.htm"
+    accessed: 2026-10-24
+    reliability_note: "Secondary quotation site. Creator-reply cited to Christianson 1996 p. 183; born-into-the-world line cited to Edwin P. Hubble Manuscript Collection, Huntington Library, writings of Grace Burke Hubble on E.P.H. Characteristics, 2:82(9) Box 7. Used to document Grace mediation path; not own-hand Hubble."
+    source_quality: "other"
+    used_for: [worldview]
 ---
 
 # Edwin Hubble
@@ -242,11 +292,11 @@ sources:
 
 ## Summary
 
-Edwin Hubble (1889–1953), American astronomer, showed from Cepheid variables that the Andromeda Nebula is a galaxy far outside the Milky Way and found the linear redshift–distance relation for galaxies [S1]. Raised in a Baptist family [S3, pp. 14–15, 23], as an adult he set the public realm of science beside a private world of values whose premises are "in the nature of religious convictions" [S2, pp. 38–39]. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 and D 2, both at 0.7 (capped: unofficial scan); A and E below threshold, C UNKNOWN; mid_basin below threshold.
+Edwin Hubble (1889–1953), American astronomer, showed from Cepheid variables that the Andromeda Nebula is a galaxy far outside the Milky Way and found the linear redshift–distance relation for galaxies [S1, S5]. Raised Baptist [S3, pp. 14–15, 23]; as an adult he set public science beside private religious convictions [S2, pp. 38–39]. Deepen D1: Christianson p. 183 recovered (Grace-reported Emerson Creator reply; Whitehead talk then less certain) [S5, S6] — still no own-voice place/deny of God. primary_system **BELOW_THRESHOLD** (AGNOS candidate); **A BELOW**; **B 4 @0.7** support corroborated; **D 2 @0.7** support single; mid BELOW; **not plotted**. Chart-moving **NO**.
 
 ## Life and work
 
-Chicago (BS 1910), Oxford as a Rhodes Scholar in jurisprudence, a year of school teaching, then graduate astronomy at Yerkes (PhD 1917), army service in France, and Mount Wilson from 1919 until his death [S1].
+Chicago (BS 1910), Oxford as a Rhodes Scholar in jurisprudence, a year of school teaching, then graduate astronomy at Yerkes (PhD 1917), army service in France, and Mount Wilson from 1919 until his death [S1, S5]. No funeral; burial site undisclosed by Grace [S5].
 
 ## Contribution and impact
 
@@ -258,7 +308,7 @@ Both parents were devout Baptists; the family joined First Baptist Church, Wheat
 
 ## Adult working worldview
 
-In his 1938 Caltech address he described "two aspects" of the universe: the public realm of science, known by observation and experiment, and the private world of values, whose premises come "from authority, or from revelation, or from the inner conscience" [S2, pp. 38–39]. In 1948 he described laws as invariable associations, "invariable" being an assumption [S2, p. 10]. Nothing read states a view on God. D 2 follows the same-pattern rule (two domains, each with its own authority).
+In his 1938 Caltech address he described "two aspects" of the universe: the public realm of science, known by observation and experiment, and the private world of values, whose premises come "from authority, or from revelation, or from the inner conscience" [S2, pp. 38–39]. In 1948 he described laws as invariable associations, "invariable" being an assumption [S2, p. 10]. Grace-reported Emerson reply (c.1939) on belief/Creator: "trust myself to it, and forget about it" [S5, S6] — reported speech, no locus. D 2 follows the same-pattern rule (two domains).
 
 ## Heritage (context only)
 
@@ -266,7 +316,7 @@ American Baptist family [S1; S3]. Context only.
 
 ## Timing
 
-First lasting contribution 1923, at about 34 [S1]. The worldview statements read are from 1938 and 1948.
+First lasting contribution 1923, at about 34 [S1]. Own-voice worldview statements read are from 1938 and 1948 (S2); Emerson reply ~1939 is Grace-reported.
 
 ## Lane B notes (labeled belief model)
 
@@ -274,8 +324,11 @@ Everything in this section is Lane B: labeled belief, not a finding. Form absent
 
 ## Open questions
 
-- Christianson's chapter on his adult religion; a library copy of S2.
+- Physical Christianson / Grace Huntington journals for own-hand wording beyond Grace mediation.
+- Library copy of S2 to lift §7 cap.
+- Mayall NAS memoir PDF if accessible.
 
 ## Research log
 
 - 2026-10-02: Read Britannica (Smith); The Nature of Science and Other Lectures in a user-uploaded Internet Archive scan (pp. 3–44, page images checked for pp. 10, 38, 39); Christianson's publisher preview (pp. 1–36). The NAS memoir (Mayall) was seen only as a partial web copy and not used.
+- 2026-10-24 (deepen D1, queue #156): Wikipedia EN dual bio (P50) with full Christianson p.183 quotation; TodayInSci Grace Huntington MS path; Wikiquote/Nautilus Emerson context; FFRF tertiary label ignored for coding; Mayall PDF 403; IA full Christianson borrow blocked. Kept A/primary BELOW (P19/P20). P47 on S1–S6; P48 B corroborated / D single. No fallacy_catalog. No figures/.
