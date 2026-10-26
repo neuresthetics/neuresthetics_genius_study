@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, B=1@0.5, E=1@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Scientology. No LIO moves.
 identity:
   id: SCIENT
   v7_1_number: 77
@@ -187,13 +190,15 @@ metaphysics:
       locator: organization
     how_known: Britannica — D could be 1 but kept UNKNOWN per prior (P44 no move without clear prior intent).
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
+    value: 'Bridge / OT levels and Clear status are graded spiritual attainments under Church structure
+      — a strong reserved hierarchy of knowledge and ability claims, not an ethnic exemption. Contested
+      externally.'
+    stance: some
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Scientology.'
   teleology_in_nature:
     value: Original Cause purpose was creation of effect; thetans created MEST.
     stance: immanent ends
@@ -390,6 +395,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Signed article; beliefs section read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260926214658/https://www.britannica.com/topic/Scientology);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Scientology." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Scientology'
+  accessed: '2026-10-25'
 ---
 # Scientology (SCIENT)
 
@@ -435,3 +446,4 @@ Scientology identity.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D_authority scored 0 (0.7).
 - 2026-10-25: implied axis fill: C=4@0.5, B=1@0.5, E=1@0.5.
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Scientology.
