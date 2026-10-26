@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen metaphysics (Hayyi Rabbi/uthras), ethics (Ginza), practice (masbuta/masiqta), schools
+      from Wikipedia Mandaeism. Keep prior S1. No LIO moves.'
 identity:
   id: MANDAE
   v7_1_number: 65
@@ -136,14 +140,15 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: "Dualistic: supreme deity beyond heavenly spheres; evil Archons obstruct the soul's ascent\
-      \ to reunion with the supreme deity."
+    value: 'Monotheistic Gnostic: Hayyi Rabbi (Great Life / King of Light) as supreme formless Entity;
+      material world mixed light/dark via Ptahil with Ruha. Uthras (Manda d-Hayyi, Hibil Ziwa, Abatur,
+      Yushamin) mediate. Dualism of Light and Darkness.'
     stance: creator distinct from creation
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: dualism paragraph
-    how_known: "Supreme deity vs cosmos/Archons; 'creator' framing is coder gloss at 0.5."
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Beliefs; Worship and rituals
+    how_known: '0.8 — Wikipedia Mandaeism summarizing Drower/Buckley.'
   deity_personal:
     value: Supreme deity (personhood not fully stated); heavenly saviour Hibil Ziwa; Archons as rulers.
       John the Baptist as revered miracle-worker.
@@ -179,14 +184,13 @@ metaphysics:
       locator: baptism paragraph
     how_known: Ritual clear; petition framing thin.
   afterlife:
-    value: Salvation of the soul via gnosis; ascent through heavenly spheres past Archons to reunion with
-      supreme deity; baptism gives immortality.
+    value: Immortal soul ascends through purgatories toward World of Light; Abatur weighs souls; no eternal
+      punishment (God merciful). Masiqta aids the ascent. Planets/stars as detention places after death
+      in classical cosmology.
     stance: personal afterlife
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: dualism; baptism
-    how_known: "Coder's reading of ascent/immortality language."
+    cites: *id001
+    how_known: '0.8 — Wikipedia.'
   moral_ledger:
     value: Not a clear reward/punishment ledger in Britannica; salvation via gnosis. Strong support for
       marriage and forbids sexual license.
@@ -197,14 +201,14 @@ metaphysics:
       locator: dualism paragraph
     how_known: "Silence on karma/hell ledger; 'none' = not stated."
   authority:
-    value: Esoteric gnosis of divine origin; sacred books (Ginza etc.); priestly Nasoreans. Revelation/gnosis
-      over public observation.
+    value: 'Ginza Rabba, Qulasta, Mandaean Book of John, and priestly scrolls; Nasoraean secret doctrine
+      reserved for initiates; rishama and ganzibria hierarchy.'
     stance: revelation
     certainty: 0.7
     cites:
-    - source: S1
-      locator: opening; dualism; texts
-    how_known: "Coder's reading."
+    - source: S2
+      locator: Scriptures and literature; Priests
+    how_known: '0.8 — Wikipedia.'
   reserved_exemptions:
     value: Not addressed as physics exemptions.
     stance: none
@@ -303,61 +307,77 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: "Salvation through esoteric knowledge (gnosis) of the soul's divine origin; sacred cosmological\
-    \ and ritual texts; priestly Nasoreans vs laity."
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: opening; dualism
-  how_known: Britannica.
+  value: "Salvation through manda (gnosis) of the soul's divine origin; Nāṣerutā (Nasoraean wisdom) for\
+    \ initiates vs mandāyutā for laity. Large scriptural corpus in Classical Mandaic."
+  certainty: 0.7
+  cites: *id001
+  how_known: '0.8 — Wikipedia.'
 ethics:
-  value: Strongly supports marriage and forbids sexual license (unlike many Gnostic systems); Jewish-ethic
-    parallels noted; cultic purity.
-  certainty: 1.0
+  value: 'Marriage and procreation valued; sexual license forbidden; pacifism and no weapons; almsgiving
+    (zidqa); circumcision forbidden as mutilation; abstain from strong drink and most red meat (ritual
+    slaughter). Ginza: feed the hungry, do not kill.'
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: opening; dualism
-  how_known: Britannica.
+  - source: S2
+    locator: Worship and rituals; Scriptures
+  how_known: '0.8 — Wikipedia citing Right Ginza.'
 practice:
   ritual_and_practice:
-    value: Elaborate baptismal cult; John the Baptist revered; Jesus as false messiah; cultic purity;
-      marriage strongly supported
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: baptism; ethics
-    how_known: Britannica.
+    value: Weekly Sunday masbuta (full immersion baptism in flowing yardena) with oil and sacramental
+      bread/water; masiqta for the dead; rishama/tamasha purifications; thrice-daily brakha facing north;
+      drabsha banner. Mandī built by a river.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.8 — Wikipedia.'
   community_form:
-    value: Surviving communities in Iraq and Khuzistan; Nasoreans (priests) vs Mandaiia (laity).
-    certainty: 1.0
+    value: 'Ethnic religion; tarmidia / ganzibria / rishama priesthood vs mandaiia laity; ~60–70k worldwide
+      after Iraq War diaspora (Australia, Sweden, US). Conversion generally not allowed.'
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: opening
-    how_known: Britannica.
+    - source: S2
+      locator: Priests; Demographics
+    how_known: '0.8 — Wikipedia.'
 science:
   historical_stance:
-    value: Magical and astrological texts (Book of the Zodiac); not a natural-science programme.
-    certainty: 1.0
+    value: Astrological Book of the Zodiac and magical bowls; not a natural-science programme. Planets
+      influence fate in classical cosmology.
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: texts
-    how_known: Britannica.
+    - source: S2
+      locator: Scriptures and literature
+    how_known: '0.7 — Wikipedia.'
   current_stance:
-    value: Not addressed.
-    certainty: 1.0
+    value: Diaspora communities engage secular life; sources read do not state an official science policy.
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Demographics
+    how_known: '0.5 — thin.'
 schools_and_variants:
-- name: Nasoreans (priests) vs Mandaiia (laity)
-  form: other
-  how_it_differs: Priestly caste vs laity; same religion.
-  lio_difference: Axes for the religion as a whole.
-  certainty: 1.0
+- name: Iraqi Mandaean community
+  form: popular
+  how_it_differs: Historical heartland along Euphrates/Tigris/Shatt al-Arab; rishama in Iraq.
+  lio_difference: Axes as scored.
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: opening
+  - source: S2
+    locator: Demographics
+- name: Iranian (Khuzestan) Mandaeans
+  form: regional
+  how_it_differs: Karun river communities; Neo-Mandaic speakers; parallel priestly lines.
+  lio_difference: Little axis change.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Demographics
+- name: Diaspora (Australia/Sweden/US)
+  form: modern
+  how_it_differs: Post-2003 refugee communities; temple-building (e.g. Worcester); endogamy pressure debated.
+  lio_difference: Little axis change.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: Demographics
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -424,6 +444,12 @@ sources:
   reliability_note: 'Unsigned editors’ article; full short article read. P44(e): read in the Wayback copy
     (https://web.archive.org/web/20260919053651/https://www.britannica.com/topic/Mandaeanism); live page
     not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Mandaeism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Mandaeism'
+  accessed: '2026-10-25'
 ---
 # Mandaeanism (MANDAE)
 
@@ -474,3 +500,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored; ritual_and_practice filled from Britannica.
 - 2026-10-25: E_scope scored 1 (0.5).
+- 2026-10-25: Deepened from Wikipedia Mandaeism (tertiary).
