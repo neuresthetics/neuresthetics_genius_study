@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Deepen varieties (metaphysical vs epistemological); clarify thin metaphysics from Wikipedia
+      Solipsism. No LIO moves.
 identity:
   id: SOLIP
   v7_1_number: 38
@@ -131,23 +135,22 @@ origins:
     how_known: IEP.
 metaphysics:
   god_nature_relation:
-    value: "Not addressed; Descartes escapes solipsism 'by the desperate expedient of appealing to the\
-      \ benevolence of God'."
+    value: 'Not addressed as a positive theology. Descartes escapes solipsistic isolation by appeal to
+      a non-deceiving God; that is an exit from solipsism, not a solipsist doctrine. Metaphysical solipsism
+      holds only the self is real.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §1
-    how_known: IEP.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Varieties
+    how_known: '0.7 — Wikipedia + prior IEP notes.'
   deity_personal:
-    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
-      \ the thesis itself is about minds, not theology."
+    value: Not part of the solipsist thesis. A God would be another mind (or the self); classical solipsism
+      does not develop theism.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §2
-    how_known: IEP.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia varieties are about mind/world, not God.'
   intervention:
     value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
       \ the thesis itself is about minds, not theology."
@@ -176,22 +179,17 @@ metaphysics:
       locator: §2
     how_known: IEP.
   afterlife:
-    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
-      \ the thesis itself is about minds, not theology."
+    value: 'Not addressed. Survival of "other" persons is already problematic if other minds are uncertain.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §2
-    how_known: IEP.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia.'
   moral_ledger:
-    value: 'Not addressed. If only one mind is intelligible, a interpersonal divine judge is not in view.'
+    value: 'Not addressed. If only one mind is certain, interpersonal divine judgment is not in view.'
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: "Coder's reading; ethics largely absent from IEP entry."
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope.'
   authority:
     value: "Privileged access to one's own mental states is the epistemic starting point that makes solipsism\
       \ seem threatening; Wittgensteinian critique rejects that picture. Not revelation."
@@ -203,21 +201,18 @@ metaphysics:
     how_known: "Borderline: 'observation' here is inner experience on the Cartesian picture. Certainty\
       \ 0.5."
   reserved_exemptions:
-    value: Not addressed as cosmology.
+    value: None. Not a religion with in-group exemptions; a philosophical problem/position.
     stance: none
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'IEP is about other minds, not exemptions from natural law.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
-    value: Not addressed.
+    value: "Not addressed. External nature's purpose is exactly what epistemological solipsism withholds\
+      \ certainty about."
     stance: none
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: IEP.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   necessity_and_freedom:
     value: Not a free-will doctrine. Concern is intelligibility of other minds and privacy of experience.
     certainty: 1.0
@@ -352,23 +347,18 @@ science:
       locator: §7
     how_known: IEP.
 schools_and_variants:
-- name: Metaphysical solipsism (only my mind exists)
+- name: Metaphysical solipsism
   form: scholastic or philosophical
-  how_it_differs: Ontological claim; rarely if ever sincerely held.
-  lio_difference: Does not fix God axes; all UNKNOWN.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: introduction
-- name: Methodological / implicit solipsism in egocentric epistemologies
+  how_it_differs: Only the self exists; others are representations without independent existence.
+  lio_difference: Strongest A/B pressure; label stays as scored.
+  certainty: 0.7
+  cites: *id001
+- name: Epistemological solipsism
   form: scholastic or philosophical
-  how_it_differs: "IEP: many post-Cartesian theories of knowledge are 'inherently solipsistic' in starting\
-    \ from own case without affirming the doctrine."
-  lio_difference: "Code the person's actual system (e.g. SCEPT), not SOLIP, unless they affirm the doctrine."
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §1
+  how_it_differs: "Only one's own mental contents are known; external world unresolvable."
+  lio_difference: Epistemic not ontological; little LIO change.
+  certainty: 0.7
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -431,6 +421,12 @@ sources:
   url: 'https://iep.utm.edu/solipsis/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; undated page.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Solipsism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Solipsism'
+  accessed: '2026-10-25'
 ---
 # Solipsism (SOLIP)
 
@@ -479,3 +475,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=4 and D=4 scored from IEP.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
+- 2026-10-25: Deepened varieties and thin metaphysics from Wikipedia Solipsism.
