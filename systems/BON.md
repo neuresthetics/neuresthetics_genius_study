@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -46,6 +46,9 @@ record:
     by: Grok Bot
     summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics claims from Wikipedia
       Bon (tertiary). Keep Britannica S1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill exemptions, teleology, necessity from Wikipedia Bon. No LIO moves.'
 identity:
   id: BON
   v7_1_number: 54
@@ -190,28 +193,27 @@ metaphysics:
     cites: *id001
     how_known: '0.7 — Wikipedia Bon.'
   reserved_exemptions:
-    value: Not addressed as cosmology of exemptions from natural law.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Britannica silence.
+    value: Clerical/ritual specialists (Bonpo) mediate rites; laypeople still under karmic and ritual
+      order. No blanket ethnic exemption from moral causation in sources read.
+    stance: some
+    certainty: 0.5
+    cites: &id002
+    - source: S2
+      locator: Beliefs; Practices
+    how_known: '0.5 — Wikipedia Bon practice structure.'
   teleology_in_nature:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Britannica silence.
+    value: Cosmic and ritual order toward liberation / enlightenment paths in Yungdrung Bon; not designer-watchmaker
+      language. Overlaps Tibetan Buddhist soteriological teleology in later forms.
+    stance: immanent ends
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia Bon.'
   necessity_and_freedom:
-    value: Not addressed in the source read.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Britannica silence.
+    value: Karma and ritual efficacy frame outcomes; practitioners cultivate paths. Not a Western free-will
+      treatise in sources read.
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 1
@@ -485,3 +487,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: D_authority scored 1 (0.7).
 - 2026-10-25: A/B/C/E scored at 0.5.
 - 2026-10-25: Deepened qualities from Wikipedia Bon (tertiary).
+- 2026-10-25: Filled exemptions/teleology/necessity from Wikipedia Bon.
