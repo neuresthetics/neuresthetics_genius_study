@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 1
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: B_cause support single→corroborated. Alt 4 cites trimmed to S11 only (Nova creatio nulla) — drop exclusive Britannica S1 which added no independent alt content (P48). A stays single (after-span Imperium alt S7/S8 exclusive by design; RQ-Z5-N1). Still faded hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #148, F 3, rank 154). Opened Species Plantarum 1753 Lectorem / Swedish dedication (Gutenberg #20771, S10); Philosophia Botanica 1751 OCR (IA philosophiabota00linn, S11); Systema 1744 Paris 4th (IA carolilinaeimedi00linn, S12); Nemesis Divina Barr 1923 (S14, after-span private MS). Wikipedia EN dual bio (S13; P50). A_locus 0: 0.5→0.7 written_profession in-span (SP Lectorem Dominus/Creator/summum Ens + PB Creator/legem Naturae); after-span Imperium Naturam-vocare kept as named alt 2 (P20; contested ≤0.7); support single (P48: alt 2 cites S7/S8 exclusive). B_cause stays 3 @0.5 alt 4 (P16/P35: Nova creatio nulla / legem Naturae / primordio creatum are creation-then-lawful-generation, not a no-exception lift); basis inference_from_work→written_profession; support single (alt 4 cites S1 exclusive). primary CHRIST stays 0.5 (Lutheran + in-span Creator/Lord; Psalms/Imperium still after-span). C stays UNKNOWN (Nemesis read: just Gud / Heliga Skrift; private after-span). E UNKNOWN→BELOW_THRESHOLD (P19 scientist). mid BELOW; plotted faded. Span 1735–1753 unchanged; RQ-Z5-N1 OPEN not applied. P47 source_quality on S1–S14. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-20, Z5-21, Z5-22, Z5-24; RQ-Z5-2 answered): 'Vis illud Naturam vocare' re-cited to the printed editions (S8: 1758 facsimile, p. 5; S7: 1766) and dated 1758, with footnote (b) to Seneca, Quaest. Nat. II.45; the 1735 Latin corrected to the folio (S9); 'Deum sempiternum' re-cited to S7/S8 with the 1758 variant noted; 'aeternae legis imperio' added as a B lead; B basis scholarly_reconstruction -> inference_from_work (P24). Values unchanged (A 0 @0.5 alt 2; B 3 @0.5 alt 4). RQ-Z5-N1 logged in OPEN_DECISIONS, not applied."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 154). Basics from Britannica (Staffan Müller-Wille, signed) and Britannica Scholars 'Species Plantarum'. Own words via Wikiquote (Latin with translations): Systema Naturae 1735, 'Genus omne est naturale, in primordio tale creatum'; 12th ed. (1766), Imperium Naturae, 'Deum sempiternum, immensum, omniscium, omnipotentem ... vidi et obstupui!'; the fuller Latin (a creyentesintelectuales blog transcription) continues 'Vis illud Naturam vocare, non errabis'. Secondary quotations, primary check pending; 1766 is after the span (P20). A scientist (P30: taxonomy from specimens). Span 1735–1753. primary_system CHRIST (0.5); A 0 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
@@ -109,12 +110,12 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.5
-      support: single
+      support: corroborated
       cites: [{source: S9, locator: "Observationes in Regnum Vegetabile (primordio tale creatum)"}, {source: S11, locator: "Nova creatio nulla; legem Naturae ... Creator; Genus ... primordio tale creatum"}, {source: S10, locator: "LECTORI ÆQUO (Creatoris opera; Naturae regna)"}]
-      how_known: "Deepen D1: in-span own voice states creation of genera/species at the beginning then continued generation under Nature's law that the Creator entrusted (S9; S11), with no new creation (Nova creatio nulla). Scientist under P30. Certainty stays 0.5: P16 addendum / P35 — an explicit lawful-order / creation-then-generation remark without a stated no-exception claim across nature cannot lift B past 0.5; alternative 4 kept. Support single (P48): alt 4 cites S1 exclusive of the value. Lead (after span, not scored): 1758 'aeternae legis imperio' (S8; S7; RQ-Z5-N1)."
+      how_known: "Deepen D1: in-span own voice states creation of genera/species at the beginning then continued generation under Nature's law that the Creator entrusted (S9; S11), with no new creation (Nova creatio nulla). Scientist under P30. Certainty stays 0.5: P16 addendum / P35 — an explicit lawful-order / creation-then-generation remark without a stated no-exception claim across nature cannot lift B past 0.5; alternative 4 kept. D2: support corroborated (P48) — alt 4 cites now only S11 (subset of value cites); exclusive Britannica S1 dropped from alt as non-independent. A still single via Imperium alt (RQ-Z5-N1). Lead (after span, not scored): 1758 aeternae legis imperio (S8; S7)."
       rationale: "Creation act then lawful generation of species (B 3). Named alternative 4 (P16/P35: no exceptionless claim for all of nature)."
       alternatives:
-        - {value: 4, note: "P16/P35 default alternative; Nova creatio nulla covers species generation, not a universal no-miracle claim.", cites: [{source: S11, locator: "Nova creatio nulla"}, {source: S1, locator: "text"}]}
+        - {value: 4, note: "P16/P35 default alternative; Nova creatio nulla covers species generation, not a universal no-miracle claim.", cites: [{source: S11, locator: "Nova creatio nulla"}]}
     C_ledger: {value: UNKNOWN, cites: [{source: S14, locator: "rättvis Gud / Gud ser dig / Heliga Skrift"}], how_known: "Nemesis Divina (Barr 1923 ed., S14) read: private MS for his son — 'här bor en rättvis Gud' / 'Gud ser dig' / Heliga Skrift; after the 1735–1753 span and unpublished in his lifetime (P20) → not scored. Would be a C 0 lead if ever in-span public."}
     D_authority: {value: UNKNOWN, how_known: "No in-span statement on revelation vs observation scored this pass."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scientist under P30; working science bears on E's first question but E is not scored from working science alone (P19).", how_known: "BELOW_THRESHOLD under P19 (scientist, no statement; deepen 2026-10-24). Was UNKNOWN."}
