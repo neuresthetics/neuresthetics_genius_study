@@ -2,25 +2,33 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S7): filled from Britannica "Hylozoism" (editors). A, B BELOW_THRESHOLD; C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S7): filled from Britannica "Hylozoism" (editors). A, B BELOW_THRESHOLD;
+      C, D, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S7 audit fix: Wayback snapshot URL and timestamp cited under P44(e).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities: family, parent traditions, related codes, origins era/region, remaining
+      metaphysics (not addressed / nature), epistemology, ethics, practice, science, schools, neighbors.
+      A/B stay BELOW_THRESHOLD; C/D/E UNKNOWN. Re-read Britannica Hylozoism.'
 identity:
   id: HYLO
   v7_1_number: 43
@@ -37,15 +45,43 @@ classification:
       locator: introduction
     how_known: Britannica.
   family:
-    value: TODO
+    value: Ancient and modern metaphysical theses that treat matter as living (distinct from animism and
+      panpsychism)
+    certainty: 1.0
+    cites: &id001
+    - source: S1
+      locator: introduction
+    how_known: 'Britannica: logically distinct from early animism and from panpsychism.'
   parent_traditions:
-    value: TODO
-  related_codes: []
+    value:
+    - Presocratic natural philosophy
+    - Cambridge Platonism (term)
+    - '18th–19th c. materialist hylozoism'
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica survey from Thales through Cudworth to Haeckel.
+  related_codes:
+  - code: ANIM
+    relation: neighbor (easily confused)
+    note: Animism personifies nature; hylozoism does not require personified spirits
+  - code: PANPSY
+    relation: neighbor (easily confused)
+    note: Panpsychism attributes consciousness/sensation to matter; hylozoism attributes life
+  - code: PANENT
+    relation: neighbor (easily confused)
+    note: Some hylozoists invoke a world soul; not all do
 origins:
   founding_era:
-    value: TODO
+    value: 'Label coined 17th c. by Ralph Cudworth; the pattern is traced to Presocratics and recurs in
+      Renaissance, Enlightenment, and 19th-c. evolutionism'
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   founding_region:
-    value: TODO
+    value: Greek Mediterranean (early instances); English Cambridge (term); European philosophy thereafter
+    certainty: 0.7
+    cites: *id001
+    how_known: "Coder's geographic reading of Britannica's figures. 0.7."
   founders_or_key_figures:
     value:
     - Thales
@@ -59,80 +95,164 @@ origins:
     - source: S1
       locator: introduction
     how_known: Britannica.
-  key_texts: []
+  key_texts:
+  - value: 'No single canon; Britannica cites Cudworth (term), Cambridge Platonist “plastic nature,” and
+      Haeckel’s evolutionary hylozoism among later forms'
+    certainty: 0.7
+    cites: *id001
+    how_known: 'Britannica names figures and doctrines, not a closed textual canon. 0.7.'
 metaphysics:
   god_nature_relation:
-    value: '''any system that views all matter as alive, either in itself or by participation in the operation of a world soul or some similar principle''.'
+    value: "Any system that views all matter as alive, either in itself or by participation in a world\
+      \ soul or similar principle. Members differ: Thales' things 'full of gods'; Cudworth's plastic nature\
+      \ as divine instrument; Straton/Haeckel materialist vitalization."
+    stance: varies by school
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica definition plus member variation.
+  deity_personal:
+    value: Not fixed. Some early forms treat elements as divine; materialist hylozoism does not require
+      a personal deity.
+    stance: varies by school
+    certainty: 0.7
+    cites: *id001
+    how_known: "Coder's reading of Britannica's range from Thales to Haeckel. 0.7."
+  intervention:
+    value: Not a shared doctrine. Plastic nature organizes matter as a divine instrument in Cambridge
+      Platonism; materialist forms have no intervenor.
+    stance: varies by school
+    certainty: 0.7
+    cites: *id001
+    how_known: Britannica on plastic nature vs materialist forms. 0.7.
+  miracles:
+    value: Not addressed as a shared thesis.
     stance: not addressed
     certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
+    cites: *id001
     how_known: Britannica.
-  deity_personal:
-    value: TODO
-    stance: TODO
-  intervention:
-    value: TODO
-    stance: TODO
-  miracles:
-    value: TODO
-    stance: TODO
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: 'Not addressed; hylozoism is a cosmology about living matter, not a cult.'
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Not addressed in the sources read.
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: 'Not addressed; the thesis is about the vitality of matter, not judgment.'
+    stance: none
+    certainty: 1.0
+    cites: *id001
+    how_known: 'Britannica article is cosmology, not ethics of judgment.'
   authority:
-    value: TODO
-    stance: TODO
+    value: 'Philosophical thesis, not a church. Authority is argument and observation among philosophers
+      who hold the view.'
+    stance: observation and reason
+    certainty: 0.7
+    cites: *id001
+    how_known: "Coder's reading; Britannica presents a thesis history. 0.7."
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: 'Often yes in Cambridge Platonist form: plastic nature controls and organizes matter. Materialist
+      forms may deny purpose while still calling matter alive.'
+    stance: varies by school
+    certainty: 0.7
+    cites: *id001
+    how_known: Britannica on Cudworth/More vs Straton/Haeckel. 0.7.
   necessity_and_freedom:
-    value: TODO
+    value: Not fixed across the label.
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica does not state a shared free-will doctrine.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ (P44(b)): Thales saw all things as ''full of gods''; Cudworth''s ''plastic nature'' acts ''as a divine instrument of change''; Straton and Haeckel are materialists (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ (P44(b)): Thales saw all things as 'full of gods'; Cudworth's 'plastic\
+      \ nature' acts 'as a divine instrument of change'; Straton and Haeckel are materialists (S1)."
   B_cause:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ: a world soul or plastic nature that ''controls and organizes matter'' versus a ''dynamic, materialistic view of nature'' (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ: a world soul or plastic nature that 'controls and organizes matter' versus\
+      \ a 'dynamic, materialistic view of nature' (S1)."
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: TODO
+  value: 'Historical hylozoists argue from cosmology and natural philosophy (Presocratic archē, plastic
+    nature, evolutionary materialism). No single method; the thesis is metaphysical rather than a school
+    of method.'
+  certainty: 0.7
+  cites: *id001
+  how_known: "Coder's reading of Britannica's historical survey. 0.7."
 ethics:
-  value: TODO
+  value: Not a shared ethical program in the sources read; the label is cosmological.
+  certainty: 1.0
+  cites: *id001
+  how_known: 'Britannica article is cosmology history, not ethics.'
 practice:
   ritual_and_practice:
-    value: TODO
+    value: Not a ritual religion; a philosophical thesis about living matter.
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   community_form:
-    value: TODO
+    value: No church; recurring philosophical position across eras.
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
 science:
   historical_stance:
-    value: TODO
+    value: Presocratic natural philosophy; Renaissance/Enlightenment dynamic materialism; Haeckel linked
+      life and matter in evolutionary terms — later challenged by emergent evolutionism.
+    certainty: 1.0
+    cites: *id001
+    how_known: Britannica.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Historical label in philosophy of mind/nature; overlaps with debates on panpsychism and vitalism;
+      not a contemporary scientific research programme as such.
+    certainty: 0.7
+    cites: *id001
+    how_known: "Coder's reading of Britannica's closing note on emergent evolutionism. 0.7."
+schools_and_variants:
+- name: Presocratic elemental hylozoism
+  form: scholastic or philosophical
+  how_it_differs: 'Thales (water), Anaximenes (air), Heracleitus (fire) treat the archē as living/divine'
+  lio_difference: May move A/B — not rescored for the label as a whole
+  certainty: 1.0
+  cites: *id001
+- name: Cambridge Platonist plastic nature
+  form: scholastic or philosophical
+  how_it_differs: Cudworth coins hylozoism; plastic nature organizes matter as divine instrument
+  lio_difference: Would push A/B toward world-soul readings — still BELOW_THRESHOLD for the label
+  certainty: 1.0
+  cites: *id001
+- name: Materialist / evolutionary hylozoism
+  form: modern
+  how_it_differs: Straton; Diderot et al.; Haeckel — matter vitalized without world-soul theology
+  lio_difference: Materialist A/B readings — still BELOW_THRESHOLD for the label
+  certainty: 1.0
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Not a census religion; historical and contemporary philosophical position
+    certainty: 1.0
+    cites: *id001
+    how_known: 'Britannica presents a thesis history, not membership numbers.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -141,86 +261,96 @@ v7_1_rubric:
   V: 7
   X: 4
   total: 32
-  scoring_note: Hylozoism scores moderately as a philosophical view animating all matter, providing conceptual unity but constrained by speculative nature and modest empirical alignment.
-  source: v7.1 data book, section 6 table (tables[4]) row 43 and section 7 scoring notes
+  scoring_note: 'Hylozoism scores moderately as a philosophical view animating all matter, providing conceptual
+    unity but constrained by speculative nature and modest empirical alignment.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 43 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person's own writing holds that all matter is alive.
+  use_when: "The person's own writing holds that all matter is alive."
   do_not_use_when: Consciousness in all matter is PANPSY; personified spirits are ANIM.
-  neighbors: []
+  neighbors:
+  - code: ANIM
+    relation: neighbor (easily confused)
+    note: Personified spirits → ANIM
+  - code: PANPSY
+    relation: neighbor (easily confused)
+    note: Consciousness/sensation in all matter → PANPSY
 review:
   data_quality_flags: []
   open_questions:
-  - Adherents are TODO.
+  - 'Can any LIO axis be scored for the label as a whole, or only for named schools (Cudworth vs Haeckel)?'
+  - 'Adherents are TODO (philosophical thesis, not a census religion).'
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Britannica Editors
-  citation: 'The Editors of Encyclopaedia Britannica. "Hylozoism." Encyclopaedia Britannica. https://www.britannica.com/topic/hylozoism. Wayback Machine snapshot 2026-09-24 14:41:01 UTC: https://web.archive.org/web/20260924144101/https://www.britannica.com/topic/hylozoism.'
-  url: https://www.britannica.com/topic/hylozoism
-  accessed: '2026-10-15'
-  reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260924144101/https://www.britannica.com/topic/hylozoism), counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison; byline in the copy: Britannica Editors.'
+  citation: 'The Editors of Encyclopaedia Britannica. "Hylozoism." Encyclopaedia Britannica. https://www.britannica.com/topic/hylozoism.
+    Wayback Machine snapshot 2026-09-24 14:41:01 UTC: https://web.archive.org/web/20260924144101/https://www.britannica.com/topic/hylozoism.'
+  url: 'https://www.britannica.com/topic/hylozoism'
+  accessed: '2026-10-25'
+  reliability_note: Short unsigned editors’ article. Live Britannica page read 2026-10-25; matches prior
+    Wayback content used 2026-10-15.
 ---
-
 # Hylozoism (HYLO)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-Hylozoism is 'any system that views all matter as alive' [S1], distinct from animism and panpsychism.
+Hylozoism (Greek *hylē* “matter”; *zōē* “life”) is any system that views all matter as alive, either in itself or by participation in a world soul or similar principle [S1]. Britannica marks it as logically distinct from early animism (which personifies nature) and from panpsychism (which attributes consciousness or sensation to all matter) [S1]. The word was coined in the 17th century by Ralph Cudworth; the pattern is traced from Presocratics through Cambridge Platonist “plastic nature” to Enlightenment and Haeckelian forms [S1].
 
 ## Core metaphysics
 
-Living matter [S1].
+Living matter is the shared claim [S1]. Members differ sharply: Thales saw all things as “full of gods”; Cudworth and More spoke of plastic nature as an unconscious divine instrument organizing matter; Straton, Diderot’s circle, and Haeckel vitalize matter in a materialist or evolutionary key [S1]. The label does not fix a personal deity, afterlife, or moral ledger.
 
 ## Position on the LIO axes
 
-- A, B BELOW_THRESHOLD.
-- C, D, E UNKNOWN.
+- **A_locus, B_cause:** BELOW_THRESHOLD — members differ (world soul / plastic nature vs dynamic materialism) [S1] (P44(b)).
+- **C_ledger, D_authority, E_scope:** UNKNOWN — not addressed as shared doctrines in the sources read.
 
 ## Schools and variants
 
-TODO
+Presocratic elemental hylozoism; Cambridge Platonist plastic nature; materialist/evolutionary hylozoism (Straton, Encyclopaedists, Haeckel) [S1].
 
 ## Science
 
-TODO
+Historical natural philosophy and evolutionary materialism; Britannica notes emergent evolutionism later challenged Haeckel’s “all matter must contain life if life derives from matter” [S1].
 
 ## Coding guidance
 
-All-matter-alive only.
+Use when the person’s own writing holds that all matter is alive. Consciousness-in-all-matter is PANPSY; personified spirits are ANIM.
 
 ## v7.1 scoring note
 
 Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
-> HYLO (32/50) — Hylozoism. Hylozoism scores moderately as a philosophical view animating all matter, providing conceptual unity but constrained by speculative nature and modest empirical alignment.
+> Hylozoism scores moderately as a philosophical view animating all matter, providing conceptual unity but constrained by speculative nature and modest empirical alignment.
 
 ## Open questions
 
-- Adherents are TODO.
+- Can any LIO axis be scored for the label as a whole, or only for named schools (Cudworth vs Haeckel)?
+- Adherents are TODO (philosophical thesis, not a census religion).
 
 ## Research log
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S7): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in their full Wayback Machine copies (curl and WebFetch time out on the live site); Britannica AI Top Questions not used.
-- 2026-10-15 (S7 audit fix): P44(e) Wayback citation.
+- 2026-10-02: E_scope note added for decision P7.
+- 2026-10-15 (systems batch S7): filled from Britannica; A/B BELOW_THRESHOLD; C/D/E UNKNOWN.
+- 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read Britannica Hylozoism live.
