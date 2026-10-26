@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated. Laffont/Le Pestipon (S8, Académie Toulouse 2022 PDF) independently quotes Cede Deo locus lines — 'Coelicolum : Deus ecce'; 'Summe Deus, quid me moribundum deseris?'; 'Hanc tibi, summe parens, animam commendo' — so S8 is a second locus publication, not only CHRIST practice/frame. B already corroborated. Cues faded hollow→faded filled. Certainty stays 0.7 (named alt 1). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #197, F3 rank 210). P47–P50. Dual bio Wikipedia EN (S4) + Britannica (S1). Own-voice B: 1 Jan 1662 letter to Cureau de la Chambre (DBNL / Huygens Oeuvres IV No. 990; S5) — 'la nature agit tousjours par les voyes les plus courtes' / 'par les moyens les plus aysez'. Own-voice A/CHRIST: Latin poem 'Cede Deo, seu Christus moriens' (Œuvres I, Tannery; S6) — incarnation and Passion. Secondary Catholic frame: Society of Catholic Scientists (S7); Laffont/Académie Toulouse (S8); Augustins epitaph nesciri ama from Imitation of Christ (S9). B support single→corroborated (S1+S5); value stays 3 @0.5 alt 4 (P16 addendum: lawful-order remark, no stated no-exception claim). A UNKNOWN→0 @0.7 support single (poem; Laffont/SCS are CHRIST practice/frame, not a second A locus source). primary_system UNKNOWN→CHRIST @0.5 (poem is literary devotion; working-years creed thinner than Euler/Pascal). mid_basin BELOW_THRESHOLD (B at 0.5). Chart-moving YES: A scored so now plottable (faded hollow). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: birth date 1601 lowered to 0.5 (1601 vs 1607 is a real dispute)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fix: birth year 1607 (Pengelley, S3) recorded as the alternative; age 37 lowered to 0.5 with 31 as the alternative."}
@@ -103,12 +104,12 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S6, locator: "Cede Deo — Deus ecce Deus; Assumpsit veros morituræ carnis amictus"}]
-      how_known: "Own poem (Tannery Œuvres I / Wikisource). Named alternative 1 (nature-parent wording could be read as lean rather than pole). Support single: Laffont/SCS corroborate Catholic practice/frame, not a second independent locus statement."
-      rationale: "At the interventionist (transcendent-person) pole: 'Deus ecce Deus, quem prona parentem / Agnoscit natura suum' — God whom nature acknowledges as its parent, distinct from the world; the eternal Son 'Assumpsit veros morituræ carnis amictus' (took true garments of mortal flesh). Not PANT (parent of nature ≠ identical with nature). Named alternative: 1, if the parent-of-nature line is judged lean rather than pole."
+      support: corroborated
+      cites: [{source: S6, locator: "Cede Deo — Deus ecce Deus; Assumpsit veros morituræ carnis amictus"}, {source: S8, locator: "Deus ecce; Summe Deus; summe parens (Le Pestipon quotes)"}]
+      how_known: "Own poem in Tannery Œuvres I / Wikisource (S6). Independent scholarly chapter (S8 Laffont/Le Pestipon, Académie Toulouse 2022) quotes the same carmen's locus lines ('Deus ecce'; 'Summe Deus…'; 'summe parens…'). Named alternative 1 (nature-parent wording lean rather than pole). Two independent publication ids → corroborated (P48). Was single until this pass (prior note treated S8 as practice/frame only; re-read shows poem excerpts)."
+      rationale: "At the interventionist (transcendent-person) pole: 'Deus ecce Deus, quem prona parentem / Agnoscit natura suum' — God whom nature acknowledges as its parent, distinct from the world; the eternal Son 'Assumpsit veros morituræ carnis amictus' (took true garments of mortal flesh). S8's 'Summe Deus' / 'summe parens' / Christ-dying frame agrees. Not PANT (parent of nature ≠ identical with nature). Named alternative: 1, if the parent-of-nature line is judged lean rather than pole."
       alternatives:
-        - {value: 1, note: "Lean reading of creator-parent language without full pole features.", cites: [{source: S6, locator: "prona parentem Agnoscit natura"}]}
+        - {value: 1, note: "Lean reading of creator-parent language without full pole features.", cites: [{source: S6, locator: "prona parentem Agnoscit natura"}, {source: S8, locator: "summe parens"}]}
     B_cause:
       value: 3
       basis: consistent_private_letters
