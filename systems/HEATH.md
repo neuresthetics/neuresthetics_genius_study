@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -44,6 +44,9 @@ record:
     by: Grok Bot
     summary: 'Score B1 C1 E1 (0.5) from sources on file (Heathenry/Ásatrú: gods/ritual; this-world honor;
       in-group folk). A/D already scored.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill miracles, exemptions, necessity from Wikipedia Heathenry. No LIO moves.'
 identity:
   id: HEATH
   v7_1_number: 48
@@ -151,13 +154,14 @@ metaphysics:
       locator: beliefs
     how_known: Thin on intervention mechanics.
   miracles:
-    value: Not addressed.
-    stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: beliefs
-    how_known: Silence.
+    value: Gods and spirits honored in blót and symbel; some engage altered-state or magical rites. Not
+      a single miracle doctrine — presence and reciprocity vary by kindred.
+    stance: varies by school
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening
+    how_known: '0.5 — Wikipedia ritual summary.'
   petition_and_prayer:
     value: Worship implied; mechanics not detailed in this article.
     stance: not addressed
@@ -192,13 +196,12 @@ metaphysics:
       locator: beliefs; origins
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Varies: some folkish currents claim ancestral in-group bounds; universalist Heathens reject
+      racial gates. File notes the split without endorsing either.'
+    stance: varies by school
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia / known Heathen politics; stance varies.'
   teleology_in_nature:
     value: Lesser spirits of the natural world; not designer teleology.
     stance: immanent ends
@@ -208,12 +211,11 @@ metaphysics:
       locator: beliefs
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: beliefs
-    how_known: Silence.
+    value: 'Not a shared free-will metaphysics. Reconstruction draws on saga ethics (honour, luck/fate
+      motifs) without one scholastic answer.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia: no unified theology.'
 lio_axes:
   A_locus:
     value: 0
@@ -423,6 +425,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of modern Paganism). P44(e): read in the Wayback copy (https://web.archive.org/web/20260304080502/https://www.britannica.com/topic/Heathenry);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Heathenry (new religious movement)." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Heathenry_(new_religious_movement)'
+  accessed: '2026-10-25'
 ---
 # Heathenry (Ásatrú/Norse-Germanic Paganism) (HEATH)
 
@@ -471,3 +479,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored.
 - 2026-10-25: B/C/E scored (Heathenry/Ásatrú).
+- 2026-10-25: Filled miracles/exemptions/necessity from Wikipedia Heathenry.
