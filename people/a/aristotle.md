@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: '2026-10-25'
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score C_ledger 4 (0.5), D_authority 4 (0.7), E_scope 4 (0.7) from EN X (Ross MIT, new S9) and Met. XII tradition/myth (S2/S6/S7). C impersonal eudaimonia with named alt 1 (EN X.8 gods-reward philosopher). D reason over mythic tradition (Met Λ). E same natural order (Phys II.8 + Met Λ divine encloses nature); P7 sends EN X.8 reward to C. Mid_basin unchanged true. Chart-moving: no (A/B already plotted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 9). Basics from SEP (Shields 2020). Worldview from Metaphysics XII (Ross trans.), Physics II (Hardie and Gaye trans.) and Nicomachean Ethics III (Ross trans.), read in the MIT Internet Classics Archive web copies. primary_system ARIST (0.7, founder rule); A_locus 1 (0.7, alternative 2); B_cause 3 (0.7, alternative 4); mid_basin true (0.7). C, D, E TODO. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 3 kept (0.7, alternative 4) but reframed: free will placed in nature (§6 B 3 anchor), not an exception to lawful cause; added EN 1113b17-19, Met. Θ.2 1046b4-7, Θ.5 1048a5-11 and the compatibilist alternative EN 1114a13-21; chance noted as incidental cause. Bekker numbers verified, approximate caveats removed. mid_basin true (0.7) unchanged."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #9). P47 source_quality on every source. A_locus was single (S2 MIT unofficial Ross only): added Tredennick Loeb Metaphysics XII via Perseus (S6 scholarly edition) and Ross Oxford Works VIII Metaphysica 1908 (S7 scholarly edition, archive.org OCR) confirming the same Λ.7/Λ.10 passages; support single → corroborated (S6+S7); value/certainty stay 1 @ 0.7 (named alt 2). B_cause already multi-cited (S3+S4+S2); labelled support corroborated. Basics dual-sourced SEP+MacTutor (S8): birth/death dates and places → 1.0. A statements verified_against → scholarly edition. Chart: dark hollow → dark filled (fill cue). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
@@ -114,9 +115,36 @@ worldview:
       cites: [{source: S3, locator: "Phys. II ch. 8 (Hardie and Gaye trans., Bekker 199b24–26)"}, {source: S4, locator: "EN III ch. 5 (Ross trans., Bekker 1113b6–8, 1113b17–19; alternative reading 1114a13–21)"}, {source: S2, locator: "Met. IX (Θ) ch. 2, Bekker 1046b4–7; ch. 5, Bekker 1048a5–11"}]
       how_known: "His Physics II, EN III and Met. Θ in the MIT Ross/Hardie–Gaye web copies (S3, S4, S2); three distinct source ids → corroborated (P48). Named alternative 4 caps certainty at 0.7."
       rationale: "Scored on his account of nature (P6). Nature is regular: 'In natural products the sequence is invariable, if there is no impediment', and what happens 'always or for the most part' is not by chance (Phys. II.8). No miracle, petition or divine exemption appears: the first mover acts only as final cause. Chance in 'always or for the most part' is an incidental cause (Phys. II.5), not an exemption from nature's order. B 3 comes from free will placed in nature (CODING_GUIDE §6 B 3 anchor, P30 #14), not from an exception to lawful cause: 'virtue also is in our own power, and so too vice. For where it is in our power to act it is also in our power not to act' (EN III.5, 1113b6–8), with the agent as the 'originator and begetter' of his actions (1113b17–19); rational powers, unlike natural ones, are 'of contraries' (Met. Θ.2 1046b4–7; Θ.5 1048a5–11). On his own framing this is a different kind of principle from nature, not a suspension of it. Named alternative 4: on a compatibilist reading (EN III.5, 1114a13–21: character, once formed, makes action necessary in its turn), the impediment clause is the only qualifier and nothing is exempt. Framing corrected after the fallacy_catalog audit of 3f4817e."
-    C_ledger: {value: TODO}
-    D_authority: {value: TODO}
-    E_scope: {value: TODO}
+    C_ledger:
+      value: 4
+      basis: written_profession
+      certainty: 0.5
+      support: corroborated
+      cites: [{source: S10, locator: "EN I.7–9 (happiness as virtuous activity; not primarily god-sent)"}, {source: S9, locator: "EN X.6–8 (happiness as contemplative activity; gods' life is contemplation)"}]
+      how_known: "Own Nicomachean Ethics I (S10) and X (S9, Ross MIT). Independent book-ids → corroborated (P48). Certainty 0.5: named alternative 1 (CODING_GUIDE §3)."
+      rationale: "At the LIO pole: reward and punishment of persons is not the ledger. Happiness is an activity of soul in accordance with perfect virtue and, at its peak, contemplation (EN I; EN X.7–8) — a consequence of the agent's activity and character, not a personal divine judgment. EN I.9 treats happiness as coming by virtue/learning rather than primarily as a gift of the gods. Named alternative 1: EN X.8's conditional 'if the gods have any care for human affairs… they should reward those who love and honour this most' (the philosopher 'dearest to the gods') can be read as a personal divine ledger; kept as alt, not the value (same pattern as ARIST system C 4 @0.5)."
+      alternatives:
+        - {value: 1, note: "EN X.8 gods-reward the philosopher (conditional care).", cites: [{source: S9, locator: "EN X.8"}]}
+    D_authority:
+      value: 4
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S2, locator: "Met. XII (tradition in myth; anthropomorphic additions for persuasion of the multitude)"}, {source: S6, locator: "Met. XII ch. 8 (Tredennick; same tradition/myth passage)"}, {source: S7, locator: "Met. XII (Ross Oxford; same)"}]
+      how_known: "Own Metaphysics XII in three independent scholarly editions (MIT Ross S2; Tredennick S6; Ross Oxford S7). Written profession. Certainty 0.7 for named alternative 3."
+      rationale: "At the LIO pole: observation and reason outrank revelation. Forefathers handed down 'in the form of a myth' that the heavenly bodies are gods and 'the divine encloses the whole of nature'; 'the rest of the tradition has been added later in mythical form with a view to the persuasion of the multitude and to its legal and utilitarian expediency' (anthropomorphic gods) — and that rest is to be stripped away, keeping only the first point (Met. XII). Philosophy seeks causes and first principles (Met. I); no revealed corpus outranks demonstration. Named alternative 3: traditional cult kept for civic/legal expediency as a limited domain of its own would lean D 3 (two domains)."
+      alternatives:
+        - {value: 3, note: "If civic cult/tradition is read as a domain with its own authority alongside philosophy.", cites: [{source: S2, locator: "Met. XII (legal and utilitarian expediency)"}]}
+    E_scope:
+      value: 4
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S3, locator: "Phys. II.8 (natural products invariable if no impediment; always or for the most part)"}, {source: S2, locator: "Met. XII (divine encloses the whole of nature)"}, {source: S6, locator: "Met. XII ch. 8 (Tredennick; same)"}]
+      how_known: "Own Physics II (S3) and Metaphysics XII (S2/S6). Written profession. Certainty 0.7 for named alternative 3. Scored on the world's order (P7), not from working science alone (P19)."
+      rationale: "Scored on the world's order (decision P7). At the LIO pole: same rules for the kinds of being in nature. 'In natural products the sequence is invariable, if there is no impediment' and what happens 'always or for the most part' is not by chance (Phys. II.8) — a general account of natural regularity, not an in-group exemption. Met. XII keeps the inherited point that 'the divine encloses the whole of nature' while rejecting anthropomorphic favour-myths. Named alternative 3: if EN X.8's gods-care/reward for philosophers is read as this-world favour for an in-group; under P7 that reward language is scored on C (see C_ledger alt 1), not here."
+      alternatives:
+        - {value: 3, note: "EN X.8 gods-care/reward read as this-world in-group favour (P7: prefer C; S9). No exclusive alt cite — disagreement is a reading rule, not a second primary contesting Phys II / Met Λ.", cites: []}
   mid_basin:
     value: true
     certainty: 0.7
@@ -297,6 +325,26 @@ sources:
     reliability_note: "Signed reference biography; used for basics dual-source (Britannica blocked)."
     source_quality: "reference entry"
     used_for: [identity, basics, childhood, heritage, institutions, collaborators]
+  - id: S9
+    type: primary
+    kind: "published work by the subject"
+    author: "Aristotle"
+    citation: "Aristotle. Nicomachean Ethics, Book X. Translated by W. D. Ross. Internet Classics Archive (MIT)."
+    url: "https://classics.mit.edu/Aristotle/nicomachaen.10.x.html"
+    accessed: 2026-10-25
+    source_quality: "unofficial web copy"
+    reliability_note: "Ross MIT web copy of EN X; used for C (contemplation / gods-reward alt) and cross-check E."
+    used_for: [worldview]
+  - id: S10
+    type: primary
+    kind: "published work by the subject"
+    author: "Aristotle"
+    citation: "Aristotle. Nicomachean Ethics, Book I. Translated by W. D. Ross. Internet Classics Archive (MIT)."
+    url: "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html"
+    accessed: 2026-10-25
+    source_quality: "unofficial web copy"
+    reliability_note: "Ross MIT web copy of EN I; used for C (eudaimonia as virtuous activity)."
+    used_for: [worldview]
 ---
 
 # Aristotle
