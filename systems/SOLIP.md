@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -42,6 +42,9 @@ record:
     by: Grok Bot
     summary: Deepen varieties (metaphysical vs epistemological); clarify thin metaphysics from Wikipedia
       Solipsism. No LIO moves.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill moral_ledger from Wikipedia Solipsism. No LIO moves.
 identity:
   id: SOLIP
   v7_1_number: 38
@@ -185,11 +188,14 @@ metaphysics:
     cites: *id001
     how_known: '0.5 — Wikipedia.'
   moral_ledger:
-    value: 'Not addressed. If only one mind is certain, interpersonal divine judgment is not in view.'
+    value: 'Not addressed. If only one mind is certain, an interpersonal divine judge is not in view;
+      no solipsist moral-ledger doctrine in sources read.'
     stance: none
-    certainty: 0.7
-    cites: *id001
-    how_known: '0.7 — Wikipedia scope.'
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.5–0.7 — Wikipedia Solipsism.'
   authority:
     value: "Privileged access to one's own mental states is the epistemic starting point that makes solipsism\
       \ seem threatening; Wittgensteinian critique rejects that picture. Not revelation."
@@ -476,3 +482,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: A=4 and D=4 scored from IEP.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
 - 2026-10-25: Deepened varieties and thin metaphysics from Wikipedia Solipsism.
+- 2026-10-25: Filled moral_ledger from Wikipedia Solipsism.
