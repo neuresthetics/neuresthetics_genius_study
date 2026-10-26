@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Claims of Science 1851 full text in Studies in Logic and Probability (IA dli.scoerat.5189… djvu.txt) as S6. Physical universe under 'fixed and invariable laws'; 'chance and accident have no place'; 'All its successions are uniform; from its settled order, no deviation is either actual or possible'; 'uniformity and universality of the laws of nature'. Add S6 to B value + alt 4. B support single→corroborated. A already corroborated → dark hollow→filled. B stays 3@0.7 (Claims strengthens alt 4). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated via Claims of Science 1851 (S5). Wikiquote-verified own-voice 'moral Governor of the world' / 'Supreme Intelligent Cause' agree with Laws of Thought ch. XIII Governor/intelligent-cause (S2). B stays single (Claims uniformity language not recovered as page text; IA Studies borrow-only). Cues stay dark hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #163, F3 rank 172). Page-image corroboration of Laws of Thought 1854 (IA Google scan aninvestigation00boolgoog): print pp. 159, 217–218, 423–424 rendered and OCR-checked against the prior OCR quotes. Ch. XIII read: natural religion / intelligent cause / moral Governor; 'Revelation being set apart' as solid foundations that the world is not abandoned to chance (pp. 217–218). primary_system BELOW → DEISM 0.5 (alt CHRIST; P27 partly met by setting revelation apart for the foundation, not a full rejection elsewhere). A 1 0.5→0.7; B 3 0.5→0.7; support single both (P48); mid_basin BELOW → true (P4). Chart-moving: darkness lifts (faded→dark), hollow (single). P47 source_quality on S1–S4. Wikipedia dual-bio heritage only (baptized CoE). Claims of Science 1851 / MacHale letters not recovered as page text. No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). WEAKEN on CHRIST: p. 424 ('profess an intellectual allegiance to the Father of Lights') is others' profession, not his; his own p. 159 'Author of Nature' fits CHRIST and DEISM equally, so primary_system CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM). A 1 at 0.5 now rests on p. 159 alone. Notes say only the OCR was read. RQ-Z9-2: no (algebra of logic is not a theory of mind). Still plotted at A 1 / B 3."}
@@ -105,12 +106,12 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S2, locator: "ch. XI, p. 159; ch. XXII, p. 423"}]
-      how_known: "His own statement about nature (P16), within the span; page images of pp. 159 and 423 viewed (D1). Not a scientist (P30); rests on words, not working science. Contested alt 4 caps at 0.7."
-      rationale: "'the uniformity of Nature' (p. 159); 'the material universe in its boundless magnitude, and pervading order, and constancy of law' (p. 423): lawful order stated, no explicit no-exception claim (P16 addendum), so 3. Alternative 4: 'immutable constancy of the Author of Nature' / 'not abandoned to chance' (p. 218) read as excluding exceptions."
+      support: corroborated
+      cites: [{source: S2, locator: "ch. XI, p. 159; ch. XXII, p. 423"}, {source: S6, locator: "Claims of Science 1851 (Studies reprint pp. 191–193): fixed/invariable laws; uniform successions; constancy of nature"}]
+      how_known: "Two independent own works within/near the span: Laws of Thought (S2, page images pp. 159/423) and Claims of Science 1851 (S6, IA Studies djvu.txt). Not a scientist (P30); rests on words. Contested alt 4 caps at 0.7. Independent source ids → corroborated (P48)."
+      rationale: "Laws of Thought: 'uniformity of Nature' / 'pervading order, and constancy of law' (S2). Claims of Science: material universe 'subject, in all respects, to the dominion of fixed and invariable laws'; 'chance and accident have no place'; 'All its successions are uniform; from its settled order, no deviation is either actual or possible'; 'uniformity and universality of the laws of nature' (S6). Lawful order stated; value stays 3 (P16: Claims' no-deviation language is the named alt 4, not forced as the sole reading when he also contrasts mind's freer relation). Alternative 4: Claims no-deviation / Laws 'immutable constancy' / 'not abandoned to chance' as excluding exceptions."
       alternatives:
-        - {value: 4, note: "Immutable constancy / not abandoned to chance read as no exceptions.", cites: [{source: S2, locator: "ch. XI, p. 159; ch. XIII, p. 218"}]}
+        - {value: 4, note: "Claims 'no deviation… actual or possible' / Laws immutable-constancy read as no exceptions.", cites: [{source: S2, locator: "ch. XI, p. 159; ch. XIII, p. 218"}, {source: S6, locator: "Claims of Science (Studies pp. 192–193)"}]}
     C_ledger: {value: UNKNOWN, how_known: "Not read."}
     D_authority: {value: UNKNOWN, how_known: "Ch. XIII prefers natural religion / probable induction to a priori proofs and sets revelation apart for the foundation, but no scored D this pass (do not force)."}
     E_scope: {value: UNKNOWN, how_known: "Not read."}
@@ -118,7 +119,7 @@ worldview:
     value: true
     certainty: 0.7
     cites: [{source: S2, locator: "ch. XI, p. 159; ch. XIII, pp. 217–218; ch. XXII, p. 423"}]
-    how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7, so true. Certainty is the lower of the two (0.7). Support single on both (P48) → hollow; darkness dark. Named alternatives (A 0, B 4) stay on the same side of the test for the A≤1 and B≥3 conditions."
+    how_known: "P4/P6 test: A_locus 1 (0.7) ≤ 1 and B_cause 3 (0.7) ≥ 3, both at ≥ 0.7, so true. Certainty is the lower of the two (0.7). A and B both corroborated (P48) → dark filled. Named alternatives (A 0, B 4) stay on the same side of the test for the A≤1 and B≥3 conditions."
   statements:
     - text: "It consists with all that we know of the uniformity of Nature, and all that we believe of the immutable constancy of the Author of Nature, to suppose, that in the mind, which has been endowed with such high capabilities, not only for converse with surrounding scenes, but for the knowledge of itself, and for reflection upon the laws of its own constitution, there should exist a harmony and uniformity not less real than that which the study of the physical sciences makes known to us."
       cites: [{source: S2, locator: "ch. XI, p. 159"}]
@@ -129,6 +130,23 @@ worldview:
       verified_against: "primary facsimile"
       verified_on: 2026-10-24
       note: "D1: page image of print p. 159 viewed (IA Google scan PDF leaf = print+12); OCR quote confirmed (surrounding / less)."
+    - text: "Science exhibits to us the material or physical universe as a system of being subject, in all respects, to the dominion of fixed and invariable laws. In that system, to the utmost extent to which either the observations of sense, or the deductions of reason permit us to judge, chance and accident have no place. The condition of its existence is a rigid, unchangeable, necessity. All its successions are uniform; from its settled order, no deviation is either actual or possible."
+      cites: [{source: S6, locator: "Claims of Science 1851; Studies in Logic and Probability pp. 191–192"}]
+      date: "1851"
+      context: "The Claims of Science, especially as founded in its Relations to Human Nature (lecture); general conclusions of science about the constitution of the universe."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-25
+      note: "IA dli.scoerat.5189… djvu.txt; page numbers from Studies reprint running heads."
+    - text: "Upon each and all of these, once that they are determined, we depend with the conviction of perfect certainty. … the uniformity and universality of the laws of nature is, so far as the range of its just application extends, the most solid foundation of human certainty to which we have yet attained."
+      cites: [{source: S6, locator: "Claims of Science 1851; Studies pp. 192–193"}]
+      date: "1851"
+      context: "Claims of Science; after comet/necessity illustration and chemistry/heat analogies."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-25
     - text: "To infer the existence of an intelligent cause from the teeming evidences of surrounding design, to rise to the conception of a moral Governor of the world, from the study of the constitution and the moral provisions of our own nature;—these, though but the feeble steps of an understanding limited in its faculties and its materials of knowledge, are of more avail than the ambitious attempt to arrive at a certainty unattainable on the ground of natural religion. And as these were the most ancient, so are they still the most solid foundations, Revelation being set apart, of the belief that the course of this world is not abandoned to chance and inexorable fate."
       cites: [{source: S2, locator: "ch. XIII, pp. 217–218"}]
       date: "1854"
@@ -148,7 +166,7 @@ worldview:
       verified_on: 2026-10-24
       note: "D1: page image of print p. 423 viewed. 'revelation' here = disclosure of the material universe, not scriptural revelation."
   changes_over_life: []
-  coder_notes: "D1: page images lift A/B to 0.7; mid true; primary DEISM 0.5 (alt CHRIST). RQ-Z9-2 stands: not a scientist; B on own words. Claims of Science 1851 and MacHale letters still unread as page text — would firm primary / possibly corroborate A/B (P48). p. 424 Father of Lights remains others' profession."
+  coder_notes: "D1: page images lift A/B to 0.7; mid true; primary DEISM 0.5 (alt CHRIST). RQ-Z9-2 stands: not a scientist; B on own words. Claims of Science 1851 and MacHale letters still unread as page text — would firm primary / possibly corroborate A/B (P48). p. 424 Father of Lights remains others' profession. 2026-10-25: Claims of Science (S6) corroborates B → dark filled."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -217,6 +235,16 @@ sources:
     accessed: 2026-10-25
     source_quality: "primary / own words"
     reliability_note: "Own lecture; access this pass via Wikiquote transcription + bibliographic pointer to Studies reprint / Google Books BAlcAAAAQAAJ. Not a page-image read of the 1851 printing."
+    used_for: [worldview]
+  - id: S6
+    type: primary
+    kind: "published work by the subject"
+    author: "George Boole"
+    citation: "Boole, George. The Claims of Science, especially as founded in its Relations to Human Nature (1851). In Studies in Logic and Probability, ed. R. Rhees. Internet Archive dli.scoerat.5189studiesinlogicandprobability (djvu.txt); Claims section ~pp. 187– of the Studies reprint."
+    url: "https://archive.org/details/dli.scoerat.5189studiesinlogicandprobability"
+    accessed: 2026-10-25
+    source_quality: "primary / own words"
+    reliability_note: "Own 1851 lecture in collected Studies; IA djvu OCR read this pass for fixed/invariable laws, uniform successions, constancy of nature (B). Distinct from Wikiquote S5 access path for Governor/Cause (A)."
     used_for: [worldview]
   - id: S3
     type: secondary
