@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify thin metaphysics (miracles/afterlife/exemptions) from Wikipedia Cynicism; deepen
+      practice note. No invented cosmology; no LIO moves.
 identity:
   id: CYNIC
   v7_1_number: 15
@@ -118,14 +122,15 @@ origins:
     how_known: "IEP: 'none of the many Cynic texts have survived'; tenets via lives."
 metaphysics:
   god_nature_relation:
-    value: "Not addressed: the Cynics 'neglect, and very often ridicule, speculative philosophy' and 'metaphysical\
-      \ essences'."
+    value: 'Not a constructive theology. Cynics neglect and often ridicule speculative metaphysics; "living
+      in accord with nature" is ethical, not a theistic cosmos model. Some later Cynic-Stoic overlap imports
+      more cosmology, but classic Cynicism stays practice-first.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §1
-    how_known: IEP.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: opening
+    how_known: '0.7 — Wikipedia + prior IEP/SEP-style notes in file.'
   deity_personal:
     value: "Not a stated doctrine. Diogenes rebukes prayers for wealth and fame as mistaking what is 'truly\
       \ good'; religion as convention is mocked rather than theologized."
@@ -145,13 +150,12 @@ metaphysics:
       locator: §3
     how_known: IEP ethics section; no miracle doctrine.
   miracles:
-    value: Not addressed.
+    value: Not addressed. Cynic sources ridicule speculative metaphysics and conventional religion; no
+      miracle doctrine is part of the school.
     stance: not addressed
-    certainty: 1.0
-    cites: &id001
-    - source: S1
-      locator: §1
-    how_known: 'IEP: Cynics neglect and ridicule speculative philosophy and metaphysical essences.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia: reject convention including religious prestige; no miracle catechism.'
   petition_and_prayer:
     value: "Diogenes 'would rebuke men in general with regard to their prayers, declaring that they asked\
       \ for things which seemed to them to be good, not for such as are truly good' (via Diogenes Laertius\
@@ -163,11 +167,12 @@ metaphysics:
       locator: §3.a
     how_known: IEP quotation.
   afterlife:
-    value: Not addressed in the sources read.
+    value: Not addressed as doctrine in sources read. Focus is virtue and self-sufficiency in this life;
+      Diogenes exemplars do not teach a heaven/hell path.
     stance: not addressed
-    certainty: 1.0
+    certainty: 0.5
     cites: *id001
-    how_known: 'IEP: Cynics neglect and ridicule speculative philosophy and metaphysical essences.'
+    how_known: '0.5 — Wikipedia overview is ethics/askēsis-centred.'
   moral_ledger:
     value: 'No divine judge. Virtue is living in accord with nature; shame attaches to failing to live
       well, not to a personal afterlife ledger.'
@@ -187,14 +192,12 @@ metaphysics:
       locator: §3; §3.a.i
     how_known: IEP on nature vs convention and parrhēsia.
   reserved_exemptions:
-    value: 'Not addressed as cosmology. Ethically, no privileged exemption from living in accord with
-      nature for the powerful (Alexander anecdotes).'
+    value: None. No clerical or civic rank exempts one from living in accord with nature; kings and beggars
+      alike are under the Cynic demand (Diogenes before Alexander motif).
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: §3.a.i
-    how_known: "Coder's reading; metaphysics neglected."
+    cites: *id001
+    how_known: '0.7 — Wikipedia ethical egalitarianism of shameless virtue.'
   teleology_in_nature:
     value: "Nature is the ethical standard for the good life (reason, self-sufficiency, freedom), not\
       \ a designer's purposes in the scholastic sense. Stoics later develop physis more systematically."
@@ -306,21 +309,17 @@ ethics:
   how_known: IEP.
 practice:
   ritual_and_practice:
-    value: 'Askēsis: poverty, hardship, public shamelessness that redefines shame; training of body for
-      the sake of the soul (barefoot in snow, pithos, giving away wealth).'
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §3.a.ii
-    how_known: IEP.
+    value: 'Askēsis: voluntary poverty, public shamelessness, frank speech (parrhēsia), living outdoors/simple.
+      Not temple ritual. Exemplars over treatises.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   community_form:
-    value: No fixed school space (not Garden/Lyceum/Academy); streets of Athens as setting. Lineage of
-      teacher–pupil figures rather than an institution. Cosmopolitan claim (kosmopolitēs) over polis membership.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §1; §4
-    how_known: IEP.
+    value: 'Loose school of exemplary teachers (Antisthenes, Diogenes, Crates) rather than a church; later
+      Roman Imperial Cynic preachers.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
     value: No positive natural science programme. Speculative physics and metaphysics are mocked; nature
@@ -421,6 +420,12 @@ sources:
   url: 'https://iep.utm.edu/cynics/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; undated page.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Cynicism (philosophy)." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Cynicism_(philosophy)'
+  accessed: '2026-10-25'
 ---
 # Cynicism (CYNIC)
 
@@ -471,3 +476,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/C scored; D raised to 4.
 - 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.
+- 2026-10-25: Clarified miracles/afterlife/exemptions; practice from Wikipedia Cynicism.
