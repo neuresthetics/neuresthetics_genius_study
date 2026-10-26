@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: 'Score B_cause 1 (0.5), C_ledger 1 (0.5), E_scope 1 (0.5) from Britannica Aboriginal religion
       (Dreaming power; Law; in-group country). A/D already scored.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Australian Aboriginal religion
+      and mythology. No LIO moves.
 identity:
   id: ABORIG
   v7_1_number: 53
@@ -174,13 +178,14 @@ metaphysics:
       locator: opening
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: "Sacred law and restricted men's/women's knowledge vary by people; initiation structures access.\
+      \ Not a single pan-Aboriginal exemption rule — many distinct traditions under the umbrella."
+    stance: some
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Australian Aboriginal religion and mythology.'
   teleology_in_nature:
     value: Land shaped and humanized by mythic action; places of metamorphosis become sacred.
     stance: immanent ends
@@ -190,26 +195,25 @@ metaphysics:
       locator: opening
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: Dreaming/Law frames how world and people are; agency within Law. Not a Western free-will treatise;
+      avoid homogenizing hundreds of peoples.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Australian Aboriginal religion and mythology.'
 lio_axes:
   A_locus:
     value: 3
     rationale: 'Eternal mythic beings shaped the land and live on in it; humans, beings and species share
       a common life force.'
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: introduction
     how_known: '0.5: some beings created the first people, so 2 is the alternative.'
     alternatives:
     - value: 2
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 1
     certainty: 0.5
@@ -380,6 +384,13 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20261007143910/https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Australian Aboriginal religion and mythology." Wikipedia. Accessed
+    2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Australian_Aboriginal_religion_and_mythology'
+  accessed: '2026-10-25'
 ---
 # Aboriginal Traditions (Australian Aboriginal Dreamtime) (ABORIG)
 
@@ -428,3 +439,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: B/C/E scored.
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Australian Aboriginal religion and mythology.
