@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -31,6 +31,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Buddha (Siderits): family/parents/origins, metaphysics TODOs,
       epistemology/ethics/practice/science/schools. Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) from sources on file (sutras/sangha tradition). E_scope 4 (0.5)
+      dharma as general law. A/B stay BELOW; C already 3.
 identity:
   id: BUDDH
   v7_1_number: 35
@@ -237,11 +241,40 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — sutras, sangha, vinaya; tradition/revelation mix leaning tradition for many schools.'
+    rationale: 'D=1: canonical tradition. Not 0: not single closed prophet-revelation for all Buddhism;
+      not 4: not reason-first.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding Buddha’s awakening as revelation-outranks.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 2
+      note: Named alternative if coding some Madhyamaka reason streams as mixed.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — dependent origination / dharma as general order; no favored in-group miracles as
+      family default.'
+    rationale: E=4 at 0.5. Alternative BELOW for Pure Land / miracle variance.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: Pure Land / relic miracle streams.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Insight via meditation-enhanced observation plus philosophical rationality; hostility to unobservable
     entities (Pohapāda, Tevijja); two truths in later tradition; omniscience claims debated'
@@ -424,3 +457,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior afterlife/karma fills and T1 audit.
 - 2026-10-25: deepened from SEP Buddha; axes unchanged.
+- 2026-10-25: D/E scored.

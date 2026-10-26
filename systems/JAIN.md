@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from IEP Jain Philosophy (Webb) + Britannica Jainism: family/parents, metaphysics
       TODOs, epistemology/ethics/practice/science/schools (Śvetāmbara/Digambara). Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) from sources on file (Tirthankara teaching / Agamas). A/B/C/E already
+      scored.
 identity:
   id: JAIN
   v7_1_number: 37
@@ -263,8 +267,19 @@ lio_axes:
       note: Named alternative.
       cites: *id003
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — Tirthankara teaching and Agamas; tradition.'
+    rationale: 'D=1: canonical tradition. Not 4: not observation-first empiricism.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding kevala jnana as revelation-outranks.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 4
     rationale: "On the world's order (P7): gods 'are all just as subject to karma and rebirth as human\
@@ -458,3 +473,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior axis work and T1 audit.
 - 2026-10-25: deepened TODOs from IEP + Britannica; axes unchanged.
+- 2026-10-25: D_authority scored 1.

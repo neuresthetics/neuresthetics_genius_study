@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 2 (0.5) from Britannica Falun Gong (other-dimension wheel; Master Li; not classical
+      theism). C_ledger UNKNOWN kept thin.
 identity:
   id: FALUNG
   v7_1_number: 75
@@ -194,8 +198,24 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — purifying wheel in another dimension; Master relationship; deity doctrine thin.'
+    rationale: 'A=2 at 0.5: spiritual dimensions / not atheism / not clear transcendent personal God alone.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: 'Named alternative: Britannica thin on God-locus.'
+      cites:
+      - source: S1
+        locator: opening
+    - value: 1
+      note: Named alternative if coding Master Li / apocalyptic themes as personal theism.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 1
     rationale: "Falun Gong is named for 'the revolving wheel that Li promised to install in his followers,\
@@ -405,3 +425,4 @@ Falun Gong identity. Not generic qigong.
 - Prior batch: Britannica Falun Gong; B D scored.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A_locus scored 2 (0.5).

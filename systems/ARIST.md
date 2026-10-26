@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Aristotle + natphil + ethics: family/parents, metaphysics TODOs,
       epistemology/practice/science/schools. Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score D_authority 4 (0.7), C_ledger 4 (0.5), E_scope 4 (0.5) from SEP Aristotle (observation
+      and reason; virtue ethics; natural order). B stays BELOW.'
 identity:
   id: ARIST
   v7_1_number: 11
@@ -238,14 +242,47 @@ lio_axes:
       sources read do not address exceptions or miracles.'
     note: 'Alternative: 3. Evidence: S2 §1, §4.'
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: 'Not addressed in the sources read (S3 treats eudaimonia, not a divine ledger).'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.5 — eudaimonia/virtue; no personal divine afterlife ledger as core.'
+    rationale: C=4 at 0.5. Alternative 1 for some afterlife readings.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Nicomachean afterlife hints as personal ledger.
+      cites:
+      - source: S1
+        locator: ethics
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Revelation not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — observation and reason stance already on record.'
+    rationale: 'D=4: philosophy over revelation.'
+    alternatives:
+    - value: 3
+      note: Named alternative if weighting Lyceum tradition.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — natural teleology as general order.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Phainomena and endoxic method; demonstration (apodeixis); nous of first principles; dialectic
     toward principles
@@ -437,3 +474,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior god/teleology/ethics fills.
 - 2026-10-25: deepened TODOs from SEP; axes unchanged.
+- 2026-10-25: D/C/E scored.

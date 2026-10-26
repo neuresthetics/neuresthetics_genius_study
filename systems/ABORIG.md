@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score B_cause 1 (0.5), C_ledger 1 (0.5), E_scope 1 (0.5) from Britannica Aboriginal religion
+      (Dreaming power; Law; in-group country). A/D already scored.'
 identity:
   id: ABORIG
   v7_1_number: 53
@@ -207,11 +211,33 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: Dreaming
+    how_known: '0.5 — Dreaming powers and ritual efficacy; not framed vs natural law.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: Law
+    how_known: '0.5 — ancestral Law and consequences; not a simple heaven/hell ledger.'
+    rationale: C=1 at 0.5.
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Law as impersonal.
+      cites:
+      - source: S1
+        locator: Law
   D_authority:
     value: 1
     rationale: "The mythic beings 'were credited with having established the local social order and its\
@@ -222,8 +248,19 @@ lio_axes:
       locator: introduction
     how_known: '0.5: law from the Dreaming, not reason.'
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: country
+    how_known: '0.5 — country/kin specific Law; restricted knowledge.'
+    rationale: 'E=1 at 0.5: in-group/country exceptions.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: many nations differ.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Song/narrative and ritual knowledge of sacred places; totem as agent placing person within the
     Dreaming.
@@ -390,3 +427,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica the Dreaming; A and D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: B/C/E scored.

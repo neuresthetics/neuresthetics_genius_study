@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 4 (0.5) from SEP Daoism (normative naturalism; not afterlife ledger). A/B/D
       stay BELOW (phil vs religious schools).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.5) from SEP Daoism (natural dào as general order). A/B/D stay BELOW.
 identity:
   id: TAO
   v7_1_number: 46
@@ -250,8 +253,19 @@ lio_axes:
     how_known: "'naturalist philosophical project' (S1) versus mediums who 'claimed to receive revelations\
       \ from immortals' (S2)."
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — natural dào as general cosmic order.'
+    rationale: E=4 at 0.5. Alternative BELOW for religious Daoism immortality exceptions.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: religious Daoism.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "Know-how / learning paths; mild skepticism — overlooked possibilities; science best current\
     \ social dào for understanding nature's structure; open-minded."
@@ -442,3 +456,4 @@ Philosophical Daoism. Flag religious Daoism separately.
 - 2026-10-25: deepened from SEP Daoism (first published 2025-04-19). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4 (0.5).
+- 2026-10-25: E_scope scored 4 (0.5).

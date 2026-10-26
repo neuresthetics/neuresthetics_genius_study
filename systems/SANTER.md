@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 0 (0.7) and C_ledger 1 (0.5) from sources on file (orishas personal; ritual
+      reciprocity). B/D/E already scored.
 identity:
   id: SANTER
   v7_1_number: 56
@@ -199,9 +203,19 @@ metaphysics:
     how_known: Thin; 0.5.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: The orishas are described as deities who act in the world; their relation to nature and
-      any supreme god is not stated (S1).
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — orishas as personal deities; Olodumare high God frame in related Yoruba streams.'
+    rationale: 'A=0: personal gods. Not 2: not pantheism.'
+    alternatives:
+    - value: 1
+      note: Named alternative if weighting high God distantism.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 1
     rationale: "'Through the bodies of their mediums the orishas are believed to interact with the congregation\
@@ -216,8 +230,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — ritual reciprocity with orishas; not fully mapped ledger in source.'
+    rationale: 'C=1 at 0.5: personal spiritual reciprocity. Alternative UNKNOWN.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if evidence too thin.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: "In the Ifá oracle a priest 'interprets the fall of consecrated palm nuts to reveal the\
@@ -412,3 +437,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica Santería; B D E scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A/C scored.

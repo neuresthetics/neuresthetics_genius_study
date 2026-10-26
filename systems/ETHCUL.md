@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities from Britannica + Encyclopedia.com Ethical Culture: metaphysics TODOs,
       epistemology/practice/science/schools; set A=4 (0.7) from Adler’s rejection of theism. Other axes
       unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B4 C4 E4 (0.7/0.7/0.5) from Britannica Ethical Culture (this-world ethics; Adler theism
+      rejection). A/D already scored.
 identity:
   id: ETHCUL
   v7_1_number: 5
@@ -229,11 +233,33 @@ lio_axes:
       - source: S2
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — no miracle doctrine; ethical culture this-world.'
+    rationale: B=4.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.7 — this-world ethics; no divine ledger.'
+    rationale: C=4.
+    alternatives:
+    - value: 3
+      note: Named alternative if reading deed consequences as impersonal law.
+      cites:
+      - source: S1
+        locator: ethics
   D_authority:
     value: 3
     rationale: 'Moral reason, not religious dogma, grounds ethics (Adler; Kant). 3 not 4: the source speaks
@@ -244,8 +270,19 @@ lio_axes:
       locator: opening
     how_known: '0–4 scale (P1). Inferred from the ethics claim, 0.5.'
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — implied same natural/moral community order.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Ethics independent of religious dogma; Kantian every person as end; deed over creed
   certainty: 1.0
@@ -440,3 +477,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior family/authority/ethics fills.
 - 2026-10-25: deepened TODOs; A scored; axes otherwise unchanged.
+- 2026-10-25: B/C/E scored.

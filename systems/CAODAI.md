@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -35,6 +35,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 2 (0.5) from sources on file (syncretic; spiritism hierarchy). Other axes already
+      scored.
 identity:
   id: CAODAI
   v7_1_number: 41
@@ -248,8 +252,25 @@ lio_axes:
       locator: introduction; history
     how_known: '0.5.'
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — spiritist hierarchy and syncretic revelation; not fully universal same-rules nor
+      closed in-group only.'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding spiritist mediumship as stronger in-group exceptions.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 4
+      note: Named alternative if reading unity-of-religions as same rules.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Séance communication from supreme deity; syncretic drawing on multiple traditions.
   certainty: 1.0
@@ -410,3 +431,4 @@ Cao Dai identity only.
 - Prior batch: thin fill.
 - 2026-10-25: deepened from Britannica Cao Dai. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: E_scope scored 2 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: "Deepen qualities from SEP Kant's Philosophy of Religion + SEP Kant: family/parents, metaphysics\
       \ TODOs, epistemology/ethics/practice/science. Axes unchanged."
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.5) from SEP Kant (Newtonian natural order / universalizability of reason).
+      C stays BELOW.
 identity:
   id: KANT
   v7_1_number: 22
@@ -267,8 +271,20 @@ lio_axes:
       locator: overview
     how_known: 'Stance label both, reason first; 0.5.'
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — nature as law-governed; practical reason universal for rational beings (world-order
+      reading).'
+    rationale: E=4 at 0.5. Not scoring moral-community scope here (P7).
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing world-order read.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Limits of theoretical knowledge of supersensible; practical cognition and moral faith (Glaube);
     hope; analogy for religious concepts
@@ -450,3 +466,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior partial fills (god, miracles, authority).
 - 2026-10-25: deepened TODOs from SEP; axes unchanged.
+- 2026-10-25: E_scope scored 4 (0.5).
