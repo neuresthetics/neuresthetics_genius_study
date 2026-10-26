@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 4 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Confucianism. No LIO moves.
 identity:
   id: CONFUC
   v7_1_number: 44
@@ -198,13 +201,14 @@ metaphysics:
       locator: §1; §4
     how_known: '0.5 — alternative founder/sage emphasis.'
   reserved_exemptions:
-    value: Not addressed.
+    value: 'None cosmic. Ritual specialists and scholar-officials have roles; ren/li bind rulers and commoners
+      alike — hierarchy of role, not exemption from virtue.'
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Confucianism.'
   teleology_in_nature:
     value: Mandate/Heaven political teleology historically; naturalized readings reduce designer talk.
     stance: varies by school
@@ -420,6 +424,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry on Confucius and the Analects; later Confucianism not
     covered.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Confucianism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Confucianism'
+  accessed: '2026-10-25'
 ---
 # Confucianism / Confucius (CONFUC)
 
@@ -466,3 +476,4 @@ Confucian/Ru identity; not CHNFOLK dump.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4 (0.5).
 - 2026-10-25: E_scope scored 4 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Confucianism.
