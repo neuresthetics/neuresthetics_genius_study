@@ -2,25 +2,33 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S5): filled from SEP "Panpsychism" (Goff, Seager and Allen-Hermanson). A BELOW_THRESHOLD; others UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S5): filled from SEP "Panpsychism" (Goff, Seager and Allen-Hermanson).
+      A BELOW_THRESHOLD; others UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S10 audit fix: A BELOW_THRESHOLD now quote-backed (Spinoza line; cosmopsychism is not pantheism).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs (varies/not addressed),
+      epistemology, ethics, practice, science, schools (constitutive/emergentist; micro vs cosmo; Russellian).
+      A stays BELOW_THRESHOLD; B–E UNKNOWN. Re-read SEP Panpsychism (Goff et al.).'
 identity:
   id: PANPSY
   v7_1_number: 33
@@ -35,23 +43,75 @@ classification:
     cites:
     - source: S1
       locator: introduction
-    how_known: '''the view that mentality is fundamental and ubiquitous in the natural world''.'
+    how_known: "'the view that mentality is fundamental and ubiquitous in the natural world'."
   family:
-    value: TODO
+    value: Metaphysical theses that mentality (esp. experience) is fundamental and ubiquitous in nature
+    certainty: 1.0
+    cites: &id001
+    - source: S1
+      locator: introduction
+    how_known: SEP definition.
   parent_traditions:
-    value: TODO
-  related_codes: []
+    value:
+    - Presocratic mind-in-nature debates
+    - Spinoza/Leibniz dual-aspect and monad readings
+    - '19th-c. panpsychism'
+    - Contemporary analytic philosophy of mind
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP history section.
+  related_codes:
+  - code: HYLO
+    relation: neighbor (easily confused)
+    note: Hylozoism attributes life; panpsychism attributes mentality/experience
+  - code: IDEAL
+    relation: neighbor (easily confused)
+    note: Some idealist panpsychisms; SEP focuses naturalistic panexperientialism
+  - code: PANENT
+    relation: neighbor (easily confused)
+    note: Cosmopsychism ≠ pantheism (SEP)
+  - code: ANIM
+    relation: neighbor (easily confused)
+    note: 'Personified spirits are ANIM, not micro-experience'
 origins:
   founding_era:
-    value: TODO
+    value: Ancient precursors; 19th-c. heyday; contemporary analytic revival
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP.
   founding_region:
-    value: TODO
+    value: Western philosophy (SEP focus); East and West historically noted
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP introduction.
   founders_or_key_figures:
-    value: TODO
-  key_texts: []
+    value:
+    - Thales / Anaxagoras (precursors)
+    - Spinoza
+    - Leibniz
+    - William James
+    - A. N. Whitehead
+    - 'Contemporary: Chalmers, Strawson, Goff, et al. (as surveyed)'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP history.
+  key_texts:
+  - value: SEP surveys James Principles; Whitehead; Nagel 1979; Strawson; Chalmers; recent collections
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP. 0.7.
 metaphysics:
   god_nature_relation:
-    value: 'Varies: Spinoza''s substance identified with God; William James''s panpsychism grew from neutral monism.'
+    value: "Varies: Spinoza's substance identified with God; William James's panpsychism grew from neutral\
+      \ monism."
     stance: varies by school
     certainty: 0.7
     cites:
@@ -59,70 +119,176 @@ metaphysics:
       locator: §2
     how_known: SEP.
   deity_personal:
-    value: TODO
-    stance: TODO
+    value: 'Varies: Spinoza God-substance readings; cosmopsychism not pantheism; many analytic forms are
+      non-theistic.'
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1; §2.4
+    how_known: SEP. 0.7.
   intervention:
-    value: TODO
-    stance: TODO
+    value: Not a miracle religion; a metaphysics of mind in nature.
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   miracles:
-    value: TODO
-    stance: TODO
+    value: Not addressed as shared doctrine.
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Not a cult practice of the thesis.
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Not fixed by panpsychism as such.
+    stance: not addressed
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: Not a shared moral-judgment theology.
+    stance: none
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP is philosophy of mind.
   authority:
-    value: TODO
-    stance: TODO
+    value: 'Philosophical argument (anti-emergence, intrinsic natures, etc.).'
+    stance: observation and reason
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §3
+    how_known: SEP arguments section. 0.7.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Not required; some cosmopsychist variants (e.g. Goff fine-tuning discussion in SEP) add agency
+      — not the default.
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2.4
+    how_known: '0.7.'
   necessity_and_freedom:
-    value: TODO
+    value: Not a shared free-will doctrine; mental causation is a motivation for some Russellian forms.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2.5
+    how_known: SEP Russellian monism. 0.7.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Panpsychists differ on God (P44(b)). Spinoza ''regarded both mind and matter as simply aspects (or attributes) of the eternal, infinite and unique substance he identified with God Himself'' (S1 §1); for contemporary forms, ''Cosmopsychism is not to be confused with pantheism: the view that the universe is God'' (S1 §2.4), and panpsychism ''has recently enjoyed a revival in analytic philosophy'' (S1, introduction).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Panpsychists differ on God (P44(b)). Spinoza 'regarded both mind and matter as simply\
+      \ aspects (or attributes) of the eternal, infinite and unique substance he identified with God Himself'\
+      \ (S1 §1); for contemporary forms, 'Cosmopsychism is not to be confused with pantheism: the view\
+      \ that the universe is God' (S1 §2.4), and panpsychism 'has recently enjoyed a revival in analytic\
+      \ philosophy' (S1, introduction)."
     note: 'Evidence: S1 §2.'
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: TODO
+  value: 'Arguments from hard problem / anti-emergence, intrinsic natures of matter, and related; combination
+    problem is the chief internal challenge.'
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §3–4
+  how_known: SEP.
 ethics:
-  value: TODO
+  value: Not a shared ethical program; metaphysical thesis about mind.
+  certainty: 1.0
+  cites: *id001
+  how_known: SEP.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: 'Philosophical thesis, not a ritual religion.'
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
   community_form:
-    value: TODO
+    value: Academic debate in philosophy of mind.
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
 science:
   historical_stance:
-    value: TODO
+    value: Engages physics’ silence on intrinsic natures (Russell/Eddington line) and neuroscience’s hard
+      problem.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §3.2
+    how_known: SEP.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Live analytic research programme; combination problem unsolved by consensus; some link to IIT
+      (Mørch) noted in SEP.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2.2; §4.2
+    how_known: SEP.
+schools_and_variants:
+- name: Constitutive micropsychism
+  form: scholastic or philosophical
+  how_it_differs: Macro consciousness grounded in micro experience
+  lio_difference: A still BELOW_THRESHOLD for family
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §2.2
+- name: Emergentist / fusionist panpsychism
+  form: scholastic or philosophical
+  how_it_differs: Macro minds fundamental products of micro subjects
+  lio_difference: May move axes — not rescored
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §2.2
+- name: Cosmopsychism
+  form: scholastic or philosophical
+  how_it_differs: Cosmic-level consciousness grounds or coexists with parts; ≠ pantheism
+  lio_difference: May move A — still BELOW_THRESHOLD for family
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §2.4
+- name: Russellian monism (panpsychist form)
+  form: scholastic or philosophical
+  how_it_differs: Intrinsic natures of physics are phenomenal; aims to fix causal closure + hard problem
+  lio_difference: Not rescored
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §2.5
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Not a census religion; philosophical position
+    certainty: 1.0
+    cites: *id001
+    how_known: SEP.
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -131,87 +297,94 @@ v7_1_rubric:
   V: 9
   X: 7
   total: 39
-  scoring_note: Panpsychism scores moderately high as an innovative philosophy bridging consciousness and matter, with strong logical appeal but tempered by speculative elements and incomplete empirical support.
-  source: v7.1 data book, section 6 table (tables[4]) row 33 and section 7 scoring notes
+  scoring_note: 'Panpsychism scores moderately high as an innovative philosophy bridging consciousness
+    and matter, with strong logical appeal but tempered by speculative elements and incomplete empirical
+    support.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 33 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person's own writing holds that mentality is fundamental and ubiquitous in nature (considered for Riemann, stage 3).
+  use_when: "The person's own writing holds that mentality is fundamental and ubiquitous in nature (considered\
+    \ for Riemann, stage 3)."
   do_not_use_when: Spinoza is PANT. PANPSY sets no God-view.
-  neighbors: []
+  neighbors:
+  - code: HYLO
+    relation: neighbor (easily confused)
+    note: Life ≠ mentality
+  - code: ANIM
+    relation: neighbor (easily confused)
+    note: Personified spirits → ANIM
 review:
   data_quality_flags: []
   open_questions:
-  - Adherents are TODO.
+  - Can A be scored for Spinoza-leaning vs atheistic analytic forms without P44(b) collapse?
+  - 'Panprotopsychism: same code or separate?'
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Philip Goff; William Seager; Sean Allen-Hermanson
   year: 2022
-  citation: Philip Goff and William Seager and Sean Allen-Hermanson. "Panpsychism." Stanford Encyclopedia of Philosophy. First published May 23, 2001; substantive revision May 13, 2022. https://plato.stanford.edu/entries/panpsychism/.
-  url: https://plato.stanford.edu/entries/panpsychism/
-  accessed: '2026-10-15'
+  citation: 'Philip Goff and William Seager and Sean Allen-Hermanson. "Panpsychism." Stanford Encyclopedia
+    of Philosophy. First published May 23, 2001; substantive revision May 13, 2022. https://plato.stanford.edu/entries/panpsychism/.'
+  url: 'https://plato.stanford.edu/entries/panpsychism/'
+  accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
 ---
-
 # Panpsychism (consciousness inherent in matter) (PANPSY)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-'Panpsychism is the view that mentality is fundamental and ubiquitous in the natural world'; proponents see it as 'an attractive middle way between physicalism on the one hand and dualism on the other' [S1].
+Panpsychism is the view that mentality is fundamental and ubiquitous in the natural world [S1]. Contemporary analytic forms are mostly panexperientialist (experience all the way down), not pancognitivist (thought in electrons) [S1]. SEP surveys history from Presocratics through James and Whitehead to the present revival [S1].
 
 ## Core metaphysics
 
-Mind fundamental; God-view varies [S1].
+Mentality (experience) in nature’s base [S1]. Schools: constitutive vs emergentist; micropsychism vs cosmopsychism; Russellian monism [S1]. Cosmopsychism is not pantheism [S1]. Not a cult religion: petition, miracles, and afterlife are not shared doctrines.
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD.
-- B to E UNKNOWN.
+- **A_locus:** BELOW_THRESHOLD — panpsychists differ on God (Spinoza vs others; cosmopsychism ≠ pantheism) [S1] (P44(b)).
+- **B–E:** UNKNOWN.
 
 ## Schools and variants
 
-Cosmopsychism and micropsychism [S1].
+Constitutive micropsychism; emergentist/fusionist forms; cosmopsychism; Russellian panpsychism [S1].
 
 ## Science
 
-TODO
+Intrinsic-natures argument from physics’ mathematical/nomic vocabulary; hard-problem motivation; combination problem as chief objection [S1].
 
 ## Coding guidance
 
-Score axes from the person.
+Consciousness/mentality in matter → PANPSY. Living matter without mentality claim → HYLO. Personified spirits → ANIM.
 
 ## v7.1 scoring note
 
-Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
-
-> PANPSY (39/50) — Panpsychism (consciousness inherent in matter). Panpsychism scores moderately high as an innovative philosophy bridging consciousness and matter, with strong logical appeal but tempered by speculative elements and incomplete empirical support.
+Authorial v7.1 note unchanged (see front matter).
 
 ## Open questions
 
-- Adherents are TODO.
+- Can A be scored for Spinoza-leaning vs atheistic analytic forms without P44(b) collapse?
+- Panprotopsychism: same code or separate?
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S5): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions (AI-generated) not used. Axes under P44.
-- 2026-10-15 (S10 audit fix): A BELOW_THRESHOLD now quote-backed (Spinoza line; cosmopsychism is not pantheism).
+- 2026-10-15 batch: A BELOW_THRESHOLD from SEP.
+- 2026-10-25: deepened TODOs; re-read SEP Panpsychism.
