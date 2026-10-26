@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -42,6 +42,10 @@ record:
     by: Grok Bot
     summary: Score A1 B1 C3 E1 (0.5) from Britannica Bon (spirits/ritual; Yungdrung Bon; karma-adjacent
       Tibetan context). D already 1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics claims from Wikipedia
+      Bon (tertiary). Keep Britannica S1.
 identity:
   id: BON
   v7_1_number: 54
@@ -118,14 +122,15 @@ origins:
     how_known: Britannica mentions sacred literature without naming titles.
 metaphysics:
   god_nature_relation:
-    value: 'Cult of gods of the atmosphere, the earth, and subterranean regions; sky divinity linked to
-      divine kingship; demonic forces propitiated.'
+    value: Ultimate principle with male Kuntuzangpo and female Kuntuzangmo; bon sku / bon nyid as true
+      nature of phenomena (parallel to dharmakaya). Tonpa Shenrab as present teacher-Buddha; worldly spirits
+      retained in lower Ways.
     stance: many gods within nature
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: paragraph 2
-    how_known: Britannica early features; later Bon doctrine not detailed here.
+    cites: &id001
+    - source: S2
+      locator: Teachings; Types
+    how_known: '0.7 — Wikipedia Bon summarizing Powers/Samuel/Kvaerne.'
   deity_personal:
     value: Personal gods and demonic forces addressed in cult and propitiation; sky divinity manifested
       in kings.
@@ -162,14 +167,12 @@ metaphysics:
       locator: paragraph 2
     how_known: Britannica.
   afterlife:
-    value: Not described in the Britannica article read. Divine kingship and sky-divinity manifestations
-      are noted without a general afterlife doctrine.
+    value: Karma and rebirth across six realms; funerary guidance; liberation and rainbow-body themes
+      in Dzogchen streams of the higher Ways.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Britannica silence.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia Bon (Nine Ways / Teachings).'
   moral_ledger:
     value: Not described in the source read.
     stance: none
@@ -180,14 +183,12 @@ metaphysics:
     how_known: "Silence; stance 'none' as placeholder for no ledger doctrine stated (not a positive claim\
       \ of no karma)."
   authority:
-    value: Oracular priests; later sacred literature; tradition continuous with pre-Buddhist practice.
-      Not observation-and-reason natural science.
+    value: 'Terma rediscoveries, Zhangzhung aural lineage, Menri monastic curriculum, and Dzogchen oral
+      instructions; Bon Kanjur/Tenjur rather than Indian Buddhist canon as primary.'
     stance: tradition or ancestors
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: paragraphs 2–3
-    how_known: "Coder's reading of Britannica."
+    cites: *id001
+    how_known: '0.7 — Wikipedia Bon.'
   reserved_exemptions:
     value: Not addressed as cosmology of exemptions from natural law.
     stance: none
@@ -289,72 +290,74 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: Oracular priests and later sacred literature. Britannica does not state a formal epistemology.
+  value: 'Canonical Bon Kanjur/Tenjur, terma revelations, Gelug-style monastic debate, and Dzogchen direct
+    introduction to the natural state.'
   certainty: 0.7
-  cites:
-  - source: S1
-    locator: paragraphs 2–3
-  how_known: "Coder's reading."
+  cites: *id001
+  how_known: '0.7 — Wikipedia Bon.'
 ethics:
-  value: Not described in the Britannica article (ritual and political struggle dominate the summary).
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: full article
-  how_known: Britannica silence.
+  value: 'Liberation from suffering under karma; lay ten wholesome activities (Way of a Lay Follower);
+    monastic vinaya-like discipline in higher Ways; pragmatic worldly rites (divination, ransom) alongside
+    path ethics.'
+  certainty: 0.7
+  cites: *id001
+  how_known: '0.7 — Wikipedia Bon (Nine Ways).'
 practice:
   ritual_and_practice:
-    value: 'Early: magic, propitiation of demonic forces, blood sacrifices; oracular priests; cult of
-      atmospheric, earth, and subterranean gods; divine kingship. Later: systematized religion with sacred
-      literature.'
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: paragraphs 2–3
-    how_known: Britannica.
+    value: 'Nine Ways: divination, local gods, magic/exorcism, funerary rites, lay morality, ascetic/monastic
+      path, tantra/mantra, Anuyoga-like methods, Dzogchen. Offerings often use symbolic substitutes for
+      animal sacrifice; ransom rituals common.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia Bon.'
   community_form:
-    value: "Living religion on Tibet's northern and eastern frontiers; historically tied to noble families\
-      \ vs Buddhist ruling house; features absorbed into Tibetan Buddhism."
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: paragraphs 2–3
-    how_known: Britannica.
-science:
-  historical_stance:
-    value: 'Magic and oracular practice, not a natural-science programme. Systematization borrowed Buddhist
-      written-culture habits.'
+    value: 'Monasteries (Menri lineage; diaspora India/Nepal), lay yogis, and village ritual specialists.
+      Recognized among Tibetan exile institutions since 1979.'
     certainty: 0.7
     cites:
-    - source: S1
-      locator: paragraphs 2–3
-    how_known: "Coder's reading."
+    - source: S2
+      locator: Present situation
+    how_known: '0.7 — Wikipedia Bon.'
+science:
+  historical_stance:
+    value: 'Not a modern natural-science tradition; medicine and astrology appear among lower Ways; cosmology
+      of elements, eggs, and light/dark dualism.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — inferred from Nine Ways classification on Wikipedia.'
   current_stance:
-    value: Continues as a living religion; Britannica does not state a modern science stance.
-    certainty: 1.0
+    value: 'Contemporary Bon centers teach philosophy, Dzogchen, and ritual; engagement with Western scholarship
+      since Snellgrove. Sources read do not state an official science policy.'
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: closing
-    how_known: Britannica.
+    - source: S2
+      locator: Present situation
+    how_known: '0.5 — thin on science policy.'
 schools_and_variants:
-- name: Early / pre-systematized Bon
+- name: Yungdrung Bon (Eternal Bon)
+  form: scholastic or philosophical
+  how_it_differs: Classical organized Bon from 10th–11th c.; Tonpa Shenrab; Nine Ways; Menri orthodoxy.
+  lio_difference: Axes as scored; A/B/C/E at 0.5.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Types
+- name: New Bon (Bon Sar)
+  form: mystical
+  how_it_differs: Syncretic with Nyingma/Padmasambhava streams from 14th c. eastern Tibet.
+  lio_difference: Little axis change; more Buddhist overlap.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Types
+- name: Prehistoric / folk Bon streams
   form: popular
-  how_it_differs: 'Magic, propitiation, blood sacrifice, oracular priests, divine kingship, three-realm
-    gods.'
-  lio_difference: Axes UNKNOWN on thin source.
-  certainty: 0.7
+  how_it_differs: 'Earlier court/village ritual, divination, ransom; relationship to Yungdrung Bon debated.'
+  lio_difference: May push B/E toward stronger spirit-efficacy / local in-group.
+  certainty: 0.5
   cites:
-  - source: S1
-    locator: paragraph 2
-- name: Later systematized Bon (8th–9th c. onward)
-  form: other
-  how_it_differs: Doctrine and sacred literature under Buddhist literary influence; survived persecution;
-    living frontier communities.
-  lio_difference: Still UNKNOWN pending fuller doctrine sources.
-  certainty: 0.7
-  cites:
-  - source: S1
-    locator: paragraph 3
+  - source: S2
+    locator: Types
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -428,6 +431,12 @@ sources:
   reliability_note: 'Short unsigned editors’ article (one paragraph). P44(e): read in the Wayback copy
     (https://web.archive.org/web/20260911195727/https://www.britannica.com/topic/Bon-Tibetan-religion);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Bon." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Bon'
+  accessed: '2026-10-25'
 ---
 # Bön (Tibetan indigenous religion) (BON)
 
@@ -475,3 +484,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D_authority scored 1 (0.7).
 - 2026-10-25: A/B/C/E scored at 0.5.
+- 2026-10-25: Deepened qualities from Wikipedia Bon (tertiary).
