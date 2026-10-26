@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,10 @@ record:
     by: Grok Bot
     summary: Score E_scope 2 (0.5) from sources on file (syncretic; spiritism hierarchy). Other axes already
       scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill miracles, reserved_exemptions, teleology, necessity; deepen god-relation (panentheist
+      note), schools (Chiếu Minh vs Tây Ninh) from Wikipedia Caodaism. Keep Britannica S1. No LIO moves.'
 identity:
   id: CAODAI
   v7_1_number: 41
@@ -120,13 +124,15 @@ origins:
     how_known: Thin on text list.
 metaphysics:
   god_nature_relation:
-    value: Supreme deity (Cao Dai); God represented as an eye in a triangle on temples.
-    stance: creator distinct from creation
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: opening
-    how_known: '0.5 — epithet/symbol; full cosmology thin in S1.'
+    value: 'Cao Đài (God the Father / Ngọc Hoàng) as Supreme Being; full title unites Confucian, Taoist,
+      and Mahayana ranks. God permeates living and inanimate things (sources compare to panentheism);
+      Divine Eye symbol. Third Universal Redemption era.'
+    stance: God in Nature and beyond it
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Theology and theosophy; History
+    how_known: '0.7 — Wikipedia Caodaism (Theology).'
   deity_personal:
     value: 'Supreme deity communicates (séance); pantheon of saints includes Buddha, Confucius, Jesus,
       Muhammad, Joan of Arc, Victor Hugo, Sun Yat-sen.'
@@ -145,13 +151,14 @@ metaphysics:
       locator: opening
     how_known: Britannica.
   miracles:
-    value: Not addressed in depth.
-    stance: not addressed
+    value: 'Founding and guidance via séance / spiritist mediumship (ouija, Kardecist influence). Ongoing
+      spirit messages historically claimed; not framed as one-off biblical miracle set.'
+    stance: affirmed
     certainty: 0.7
     cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    - source: S2
+      locator: History (séance founding)
+    how_known: '0.7 — Wikipedia.'
   petition_and_prayer:
     value: Elaborate rituals and festivals; séance origin.
     stance: petition answered
@@ -186,41 +193,38 @@ metaphysics:
       locator: opening
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: 'Hierarchical clergy (pope, cardinals) mediate; no claim that laity are exempt from karma/saṃsāra.
+      Goal is union with God and freedom from saṃsāra for adherents generally.'
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia practice goals.'
   teleology_in_nature:
-    value: Not addressed.
-    stance: none
+    value: 'Third Universal Redemption (Đại Đạo Tam Kỳ Phổ Độ) frames a cosmic-historical purpose: unifying
+      religions and redeeming beings. God permeates the universe.'
+    stance: "designer's purposes"
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Karma/rebirth framework implies moral consequence of action; vegetarianism, nonviolence, prayer
+      as chosen practices toward liberation. Not a scholastic free-will treatise in sources read.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 1
     rationale: A supreme god who communicates with humans.
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: introduction; history
     how_known: '0.5: the article does not describe the god’s nature further. Alternative 0.'
     alternatives:
     - value: 0
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 1
     rationale: "Chieu 'received a communication from the supreme deity during a table-moving séance'."
@@ -234,7 +238,7 @@ lio_axes:
     value: 3
     rationale: Karma and rebirth taken from Buddhism.
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S1
       locator: introduction
     how_known: 'Karma rule (P44(d)): an impersonal moral ledger is C 3 @0.5, alternative 4. Karma and
@@ -242,7 +246,7 @@ lio_axes:
     alternatives:
     - value: 4
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   D_authority:
     value: 1
     rationale: Founded on séance revelation; a Catholic-style hierarchy with a pope.
@@ -310,21 +314,38 @@ science:
       locator: opening
     how_known: Coder reading.
   current_stance:
-    value: Not addressed.
-    certainty: 0.7
+    value: Not a natural-science programme. Spiritist origins sit outside mainstream science; sources
+      read state no official science policy.
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    - source: S2
+      locator: Overview
+    how_known: '0.5 — thin.'
 schools_and_variants:
-- name: Cao Dai (Tay Ninh mainstream)
+- name: Cao Đài Tây Ninh Holy See
   form: modern
-  how_it_differs: HQ Tay Ninh; diaspora after 1975.
-  lio_difference: Axes kept from prior coding.
-  certainty: 1.0
+  how_it_differs: Mainstream mass organization; Catholic-pattern hierarchy; diaspora after 1975.
+  lio_difference: Axes as scored.
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: opening
+  - source: S2
+    locator: History
+- name: Chiếu Minh (Ngô Văn Chiêu esoteric branch)
+  form: mystical
+  how_it_differs: Chiêu declined mass pope role; limited committed adepts; Vĩnh Long HQ.
+  lio_difference: D may sit more esoteric/less hierarchical mass form.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: History
+- name: Dissident / Taoist-model branches
+  form: regional
+  how_it_differs: '1930s liturgy closer to Taoist models; varied politics under colonialism.'
+  lio_difference: Little axis change.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: History
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -389,6 +410,12 @@ sources:
   reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260504193758/https://www.britannica.com/topic/Cao-Dai),
     counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison;
     byline in the copy: Britannica Editors.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Caodaism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Caodaism'
+  accessed: '2026-10-25'
 ---
 # Cao Dai (CAODAI)
 
@@ -432,3 +459,4 @@ Cao Dai identity only.
 - 2026-10-25: deepened from Britannica Cao Dai. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: E_scope scored 2 (0.5).
+- 2026-10-25: Deepened metaphysics gaps and schools from Wikipedia Caodaism.
