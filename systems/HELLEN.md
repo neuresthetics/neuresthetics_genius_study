@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -48,6 +48,10 @@ record:
     by: Grok Bot
     summary: 'Score B1 C1 E1 (0.5) from sources on file (Hellenism: gods/ritual; this-world honor; in-group
       folk). A/D already scored.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics from Wikipedia Hellenism
+      (modern religion). Keep prior S1.
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -130,15 +134,15 @@ origins:
     how_known: YSEE.
 metaphysics:
   god_nature_relation:
-    value: Polytheistic Hellenic Tradition; honour of ancestral gods. Detailed cosmogony not on this YSEE
-      about page.
+    value: 'Worship of the Greek gods (Olympians, chthonic gods, nymphs, heroes); pluralistic polytheism
+      with room for animism, monism, Neoplatonism, Stoicism. Myths usually treated as sacred stories,
+      not literal history.'
     stance: many gods within nature
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: "opening; First Press Release closing ('Ancestral Gods')"
-    how_known: "Polytheism named; 'within nature' is coder gloss at 0.5 from ethnic/nature-religion framing\
-      \ — doctrine thin."
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Theology and values; Beliefs
+    how_known: '0.7 — Wikipedia Hellenism (modern religion).'
   deity_personal:
     value: Ancestral gods honoured; personal deities of the Hellenic pantheon implied by polytheism.
     stance: personal
@@ -173,13 +177,12 @@ metaphysics:
       locator: About YSEE
     how_known: Ceremonies implied; doctrine thin.
   afterlife:
-    value: Not addressed on this page.
+    value: Sources emphasize this-world piety and festivals more than a single afterlife doctrine; ancient
+      underworld themes may be retained variously by groups.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full page
-    how_known: YSEE silence.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — thin explicit afterlife doctrine in the Wikipedia summary.'
   moral_ledger:
     value: Not addressed.
     stance: none
@@ -189,14 +192,14 @@ metaphysics:
       locator: full page
     how_known: Silence.
   authority:
-    value: 'Ancestral Hellenic Tradition (rites, beliefs, monuments, mythology, customs). Ethnic/traditional
-      authority, not Abrahamic revelation and not laboratory science.'
+    value: 'Reconstruction from ancient sources, philosophy, and community tradition (YSEE, Labrys, Hellenion);
+      no single holy book or dogma.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
-    - source: S1
-      locator: First Press Release
-    how_known: YSEE aims statement.
+    - source: S2
+      locator: Theology and values
+    how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -295,72 +298,75 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: 'Restoration via ancestral tradition, mythology, monuments, and public educational events. Not
-    a revealed scripture religion on this page.'
+  value: Piety and practice primary; academic reconstruction of ancient cult; optional engagement with
+    Neoplatonism/Stoicism. Explicit rejection of a single dogma.
   certainty: 0.7
-  cites:
-  - source: S1
-    locator: About YSEE; First Press Release
-  how_known: "Coder's reading."
+  cites: *id001
+  how_known: '0.7 — Wikipedia.'
 ethics:
-  value: "Not a developed ethical treatise on this page. Political/cultural resistance to 'theocracy'\
-    \ and defense of pre-Christian heritage are stated aims."
+  value: 'Eusebeia (piety), Arete (excellence/virtue), Xenia (hospitality); Labrys also names Organikotis
+    and Dikaiosyne. Guidance drawn from Delphic maxims, Solon, and Pythagorean/Stoic/Aristotelian ethics
+    streams.'
   certainty: 0.7
-  cites:
-  - source: S1
-    locator: opening; First Press Release
-  how_known: "Coder's reading."
+  cites: *id001
+  how_known: '0.7 — Wikipedia.'
 practice:
   ritual_and_practice:
-    value: Public religious ceremonies; commemorations of ancient national historical events; official
-      place of worship in Athens (licensed 2017); lectures and educational events.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: About YSEE
-    how_known: YSEE.
-  community_form:
-    value: YSEE as legal non-profit / seeking Religious Organization status; member dues; ECER founding
-      member; chapters in US and Cyprus.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: About YSEE
-    how_known: YSEE.
-science:
-  historical_stance:
-    value: Not a science programme. Appeals to historical continuity of Hellenic ethnic religion against
-      Abrahamic dominance.
+    value: 'Prayer, offerings/libations, household and public altars, Attic-calendar festivals (Anthesteria,
+      Panathenaia, etc.). Animal sacrifice debated; many use symbolic substitutes.'
     certainty: 0.7
     cites:
-    - source: S1
-      locator: First Press Release
-    how_known: "Coder's reading."
-  current_stance:
-    value: Not addressed as science policy on this page.
-    certainty: 1.0
+    - source: S2
+      locator: Offerings and rituals; Festivals
+    how_known: '0.7 — Wikipedia.'
+  community_form:
+    value: 'Organizations such as YSEE (Greece), Labrys, Hellenion (US); legally recognized as a known
+      religion in Greece (2017). Household worship emphasized.'
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full page
-    how_known: YSEE silence.
+    - source: S2
+      locator: Organizations in Greece
+    how_known: '0.7 — Wikipedia.'
+science:
+  historical_stance:
+    value: Ancient Hellenic religion coexisted with natural philosophy; modern reconstruction is not itself
+      a science tradition.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — general historical note.'
+  current_stance:
+    value: Modern groups do not present an official science policy in the sources read; emphasis is cultic
+      and ethical reconstruction.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — thin.'
 schools_and_variants:
-- name: YSEE / Hellenic Ethnic Religion (Greece)
-  form: modern
-  how_it_differs: "Institutional Greek reconstruction; 'known religion' status 2017; ethnic framing."
-  lio_difference: Axes UNKNOWN.
-  certainty: 1.0
+- name: YSEE / Ethnic Hellenism
+  form: popular
+  how_it_differs: Supreme Council of Ethnikoi Hellenes; ethnic-religion framing; anti-syncretic stance
+    vs Neopagan labels.
+  lio_difference: E may sit more firmly at 1 (in-group ethnic).
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: About YSEE
-- name: Other Hellenic reconstructionist groups (unnamed on page)
+  - source: S2
+    locator: Organizations in Greece
+- name: Labrys / household-focused Hellenism
   form: modern
-  how_it_differs: YSEE arose from older Ethnikoi Hellenes groups; other groups may differ in politics
-    or ritual.
-  lio_difference: Person-level coding.
+  how_it_differs: 'Weekly public rituals; household worship emphasis; stated community values (eusebeia,
+    arete, xenia).'
+  lio_difference: Little axis change.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Organizations in Greece
+- name: Hellenion / reconstructionist streams (US)
+  form: scholastic or philosophical
+  how_it_differs: Historical-accuracy reconstructionism; clergy training.
+  lio_difference: Little axis change.
   certainty: 0.5
   cites:
-  - source: S1
-    locator: About YSEE
+  - source: S2
+    locator: Other organizations
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -433,6 +439,12 @@ sources:
     Undated page. P46(b): stands for YSEE (Supreme Council of Ethnikoi Hellenes) only. Hellenic polytheism
     is plural: YSEE is one organization among several (and many unaffiliated practitioners). A peer-reviewed
     source on the whole movement would take precedence.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Hellenism (modern religion)." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Hellenism_(modern_religion)'
+  accessed: '2026-10-25'
 ---
 # Hellenismos (Greek Reconstructionist Paganism) (HELLEN)
 
@@ -480,3 +492,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored from YSEE.
 - 2026-10-25: B/C/E scored (Hellenism).
+- 2026-10-25: Deepened qualities from Wikipedia Hellenism (tertiary).
