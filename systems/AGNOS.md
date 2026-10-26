@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Atheism and Agnosticism (Draper) + Britannica atheism: family/parents,
       metaphysics TODOs as not addressed/none, epistemology/ethics/practice. Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Review B/C/E: keep UNKNOWN (agnosticism does not affirm naturalism, ledger, or world-scope).
+      Do not invent P44(c) fills.'
 identity:
   id: AGNOS
   v7_1_number: 2
@@ -205,10 +209,36 @@ lio_axes:
     note: 'Evidence: the definition of agnosticism (S1 §2; S2 opening).'
   B_cause:
     value: 'UNKNOWN'
-    how_known: 'The sources read say nothing on law, miracle or exception as part of agnosticism.'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — agnosticism withholds commitment; does not fix miracle doctrine, afterlife ledger,
+      or world-scope.'
+    rationale: Keep UNKNOWN. Not inventing naturalistic B4/C4/E4 from silence. Alternative BELOW if treating
+      agnosticism as a family with theist/atheist members.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: agnostic theists vs agnostic atheists disagree on B/C/E.'
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — agnosticism withholds commitment; does not fix miracle doctrine, afterlife ledger,
+      or world-scope.'
+    rationale: Keep UNKNOWN. Not inventing naturalistic B4/C4/E4 from silence. Alternative BELOW if treating
+      agnosticism as a family with theist/atheist members.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: agnostic theists vs agnostic atheists disagree on B/C/E.'
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     rationale: "Huxley's principle makes logically satisfactory evidence the condition for knowing or\
@@ -220,7 +250,20 @@ lio_axes:
     how_known: '0–4 scale (P1). SEP does not mention revelation; inferred, so 0.5.'
   E_scope:
     value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — agnosticism withholds commitment; does not fix miracle doctrine, afterlife ledger,
+      or world-scope.'
+    rationale: Keep UNKNOWN. Not inventing naturalistic B4/C4/E4 from silence. Alternative BELOW if treating
+      agnosticism as a family with theist/atheist members.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: agnostic theists vs agnostic atheists disagree on B/C/E.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Neither theism nor atheism known (modest); or neither has positive epistemic status (ambitious);
     psychological sense = suspend judgment; global vs local scopes
@@ -412,3 +455,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior partial fills.
 - 2026-10-25: deepened from SEP Atheism and Agnosticism; axes unchanged.
+- B_cause / C_ledger / E_scope intentionally UNKNOWN (2026-10-25): do not invent naturalism from silence.
