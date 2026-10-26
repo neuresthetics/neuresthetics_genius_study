@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 1 (0.5) from Britannica Yazīdī (created separately; endogamy; purity taboos).
+      Deepen B_cause UNKNOWN→1 (0.5) for sanjaq/peacock worship ritual power. A/C/D unchanged.
 identity:
   id: YAZID
   v7_1_number: 66
@@ -234,8 +238,21 @@ lio_axes:
         locator: cosmogony paragraph
       note: If withdrawn creator still counts as stronger transcendence pole.
   B_cause:
-    value: 'UNKNOWN'
-    how_known: "Creator withdrawal vs divine beings' control does not fix miracle/law pole clearly (P44)."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: sanjaqs; Sheikh Adi
+    how_known: '0.5 — peacock sanjaqs circulated; Sheikh ʿAdī divinity via metempsychosis; not a full
+      miracle catalog.'
+    rationale: 'B=1: ritual/power special cases present. Not 0: Britannica does not center petitionary
+      miracle doctrine.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if evidence too thin for B.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 2
     rationale: "'The breaking of divine laws is expiated by way of metempsychosis'; 'Heaven and hell are\
@@ -268,9 +285,25 @@ lio_axes:
         locator: closing
       note: If 19th-c. book caveat blocks scoring.
   E_scope:
-    value: 'UNKNOWN'
-    how_known: 'Endogamy and separate-creation myth structure community, but E scores this-world order
-      exceptions, not salvation membership (P7). Not scored.'
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: mythology; purity
+    how_known: '0.5 — created separately from rest of humankind; endogamy; purity taboos vs outsiders.'
+    rationale: 'E=1: in-group exceptional status in cosmogony and practice. Not 0: not only hidden miracle-exceptions;
+      stated separate creation.'
+    alternatives:
+    - value: 0
+      note: Named alternative if reading separate creation as stronger in-group exception.
+      cites:
+      - source: S1
+        locator: mythology
+    - value: 'UNKNOWN'
+      note: Named alternative if scoring only this-world event exceptions (P7).
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Oral tradition and sacred books (with authenticity caveats); hymns; authority of chief sheikh.
     Esoteric community knowledge; contact with outsiders discouraged.
@@ -443,3 +476,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S11): Britannica Yazidi; A and C scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice; D_authority 1 (0.5). Re-read Britannica.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: E_scope and B_cause scored at 0.5.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,10 @@ record:
     summary: 'Deepen qualities from Britannica Hinduism (Narayanan) + IEP Hindu Philosophy (Ranganathan):
       family/parents, metaphysics TODOs as varies, epistemology/ethics/practice/science/schools (darśanas).
       Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 3 (0.5) karma rule P44(d) from Britannica/IEP (impersonal moral-causal law).
+      Was BELOW_THRESHOLD. A/D stay BELOW.
 identity:
   id: HINDU
   v7_1_number: 47
@@ -223,17 +227,27 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
   C_ledger:
-    value: 'BELOW_THRESHOLD'
-    how_known: "IEP: 'Karma is not a sufficient criterion of Hinduism, and it likely is not a necessary\
-      \ condition either'; 'the doctrine of karma seems to be absent from much of the Vedas' (S2). Members\
-      \ differ (P44(b))."
-    note: 'Alternative: 3 (P44(d) for schools that state karma).'
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: karma
+    - source: S2
+      locator: karma
+    how_known: '0.5 — karma as impersonal moral-causal law (P44d); schools differ on deity-judgment overlay.'
+    rationale: 'C=3: impersonal ledger (karma), not personal divine judge as family default. Alternative
+      4 if reading some streams as no ledger.'
     alternatives:
-    - value: 3
-      note: Named alternative.
+    - value: 4
+      note: Named alternative if coding streams that deny karmic moral law.
       cites:
       - source: S2
-        locator: §1.a.i
+        locator: opening
+    - value: 1
+      note: Named alternative if coding bhakti personal-judge streams as primary.
+      cites:
+      - source: S1
+        locator: bhakti
   D_authority:
     value: 'BELOW_THRESHOLD'
     how_known: "Hindu philosophy shares 'a textual connection to certain core Hindu religious texts (the\
@@ -454,3 +468,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior partial fills (karma ledger; T1 audit).
 - 2026-10-25: deepened from Britannica + IEP; axes unchanged.
+- 2026-10-25: C_ledger scored 3 (0.5) karma rule.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 (0.5) from SEP Daoism (normative naturalism; not afterlife ledger). A/B/D
+      stay BELOW (phil vs religious schools).
 identity:
   id: TAO
   v7_1_number: 46
@@ -225,8 +229,22 @@ lio_axes:
     how_known: Naturalist classical reading (S1) versus revelations from immortals and deities in Shangqing
       Daoism (S2).
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    - source: S2
+      locator: opening
+    how_known: '0.5 — normative naturalism / path-following; not afterlife ledger (P44c-style for philosophical
+      Daoism).'
+    rationale: 'C=4: none. Certainty 0.5: religious Daoism may differ.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding religious Daoism immortality/judgment streams as co-equal.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 'BELOW_THRESHOLD'
     how_known: "'naturalist philosophical project' (S1) versus mediums who 'claimed to receive revelations\
@@ -423,3 +441,4 @@ Philosophical Daoism. Flag religious Daoism separately.
 - Prior: SEP daoism; BELOW_THRESHOLD axes.
 - 2026-10-25: deepened from SEP Daoism (first published 2025-04-19). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored 4 (0.5).

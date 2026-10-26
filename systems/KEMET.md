@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) and A_locus 0 (0.7) from kemet.org FAQ (polytheist Netjeru; ancient
+      texts + Saq oracular). C stays UNKNOWN.
 identity:
   id: KEMET
   v7_1_number: 50
@@ -214,9 +218,19 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: Polytheism clear but locus on 0–4 (transcendent person vs immanent world) not fixed for
-      many Netjeru (P44).
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: polytheists; Netjeru
+    how_known: '0.7 — many personal gods and goddesses; Saq oracular possession.'
+    rationale: 'A=0: personal Netjeru. Not 2: not pantheism in this source.'
+    alternatives:
+    - value: 1
+      note: Named alternative if weighting Maat-as-order over personal gods.
+      cites:
+      - source: S1
+        locator: Maat
   B_cause:
     value: 1
     rationale: Saq oracular possessions and divination; gods interact in ritual (leans interventionist).
@@ -229,9 +243,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: "Ma'at noted without a clear personal ledger doctrine (P44)."
   D_authority:
-    value: 'UNKNOWN'
-    how_known: 'Mix of ancient texts, divine guidance, and academic Egyptology — schools/members may weight
-      differently (P44).'
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ancient source texts; Saq
+    how_known: '0.7 — ancient liturgies/texts; Nisut translations; Saq oracular revelation.'
+    rationale: 'D=1: tradition + oracular. Not 0: not a single closed new revelation ranking alone.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding Saq as revelation-outranks.
+      cites:
+      - source: S1
+        locator: Saq
   E_scope:
     value: 'UNKNOWN'
     how_known: Not fixed in FAQ (P44).
@@ -417,3 +441,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S8): kemet.org FAQ; B scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read FAQ. B kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A=0 and D=1 scored from kemet.org.

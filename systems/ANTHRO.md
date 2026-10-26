@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,11 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen ethics (Lucifer/Ahriman balance; Christ Representative), afterlife/karma, practice
+      (Waldorf/biodynamic). Score C_ledger 3 (0.5) karma; A_locus 1 (0.5) Christ-centered spiritual worlds.
+      S2 Wikipedia.'
 identity:
   id: ANTHRO
   v7_1_number: 58
@@ -118,13 +123,13 @@ metaphysics:
       locator: full article
     how_known: Britannica blurb; no God doctrine.
   deity_personal:
-    value: Not addressed as personal God doctrine; spiritual worlds and spiritual perception.
-    stance: not addressed
-    certainty: 1.0
+    value: Christ being / Representative of Humanity as central spiritual entity; Lucifer and Ahriman
+      as polar spiritual adversaries; not conventional personal theism alone
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Ethics; Christ as the center
+    how_known: '0.7 — Wikipedia Christology/ethics sections.'
   intervention:
     value: Not addressed.
     stance: not addressed
@@ -150,21 +155,19 @@ metaphysics:
       locator: full article
     how_known: Silence.
   afterlife:
-    value: Not addressed in this article.
-    stance: not addressed
-    certainty: 1.0
+    value: Reincarnation of the human spirit; life review after death; karmic preparation for next incarnation
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Nature of the human being; reincarnation
+    how_known: '0.7 — Wikipedia on Steiner’s reincarnation/karma teaching.'
   moral_ledger:
-    value: Not addressed.
-    stance: none
-    certainty: 0.5
+    value: Karma linking lives; moral development required before spiritual faculties unfold
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: reincarnation; karma
+    how_known: '0.7 — Wikipedia.'
   authority:
     value: "Enhanced spiritual perception / faculties of knowledge latent in all humans; spiritual world\
       \ 'comprehensible to pure thought' but 'fully accessible only' to those faculties. Founder Steiner.\
@@ -200,14 +203,49 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: No God-locus doctrine in short Britannica (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: Christ as the center
+    - source: S1
+      locator: spiritual worlds
+    how_known: '0.5 — spiritual worlds + Christ being; not mid-basin deism; not atheism.'
+    rationale: 'A=1: transcendent spiritual persons/worlds with Christ center. Certainty 0.5: complex
+      Christology.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding stronger transcendence-only reading.
+      cites:
+      - source: S2
+        locator: Christ
+    - value: 2
+      note: Named alternative if coding Goethean nature-spirit immanence more heavily.
+      cites:
+      - source: S2
+        locator: Union of science and spirit
   B_cause:
     value: 'UNKNOWN'
     how_known: Silent (P44).
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Silent (P44).
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: karma
+    how_known: '0.5 — karma across lives as impersonal moral-causal law (P44d).'
+    rationale: 'C=3: karmic impersonal ledger. Alternative 1 if coding Christ-judgment streams.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Christ as personal judge of lives.
+      cites:
+      - source: S2
+        locator: Christ
+    - value: 4
+      note: Named alternative if reading ethical individualism as no ledger.
+      cites:
+      - source: S2
+        locator: Philosophy of Freedom
   D_authority:
     value: 1
     rationale: Spiritual perception beyond the senses; founder-developed faculty. Leans revelation/esoteric
@@ -230,28 +268,34 @@ epistemology:
     locator: full article
   how_known: Britannica.
 ethics:
-  value: Not described in this short article.
-  certainty: 1.0
+  value: Good as balance between Lucifer (pride/creativity) and Ahriman (materialism/intellect); Christ
+    / Representative of Humanity mediates; moral development prerequisite to spiritual perception
+  certainty: 0.7
   cites:
+  - source: S2
+    locator: Ethics
   - source: S1
-    locator: full article
-  how_known: Silence.
+    locator: opening
+  how_known: '0.7 — Wikipedia Ethics section; Britannica confirms spiritual-perception path.'
 practice:
-  ritual_and_practice:
-    value: Not described in this article (Waldorf education and applied fields are widely associated but
-      not in this Britannica blurb).
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence — do not invent Waldorf from memory without cite.
   community_form:
-    value: 'Anthroposophical Society (1912), based in Dornach, Switzerland, with branches around the world.'
-    certainty: 1.0
+    value: 'Anthroposophical Society (Goetheanum, Dornach); Waldorf schools; Camphill; biodynamic farms;
+      applied cultural movements'
+    certainty: 0.7
     cites:
+    - source: S2
+      locator: Claimed applications
     - source: S1
-      locator: full article
-    how_known: Britannica.
+      locator: opening
+    how_known: '0.7 — Wikipedia applications; Britannica society context.'
+  ritual_and_practice:
+    value: Meditation and moral self-discipline (How to Know Higher Worlds); eurythmy; artistic work;
+      applied education/agriculture/medicine streams
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: Paths of spiritual development; Eurythmy
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
     value: 'Steiner described as philosopher, scientist, and artist; claims spiritual perception beyond
@@ -340,6 +384,13 @@ sources:
   reliability_note: 'Short unsigned editors’ article (one paragraph). P44(e): read in the Wayback copy
     (https://web.archive.org/web/20261009135413/https://www.britannica.com/topic/anthroposophy); live
     page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors, "Anthroposophy," Wikipedia (accessed 2026-10-25). Cross-check with
+    Britannica S1.'
+  url: 'https://en.wikipedia.org/wiki/Anthroposophy'
+  accessed: '2026-10-25'
 ---
 # Anthroposophy (ANTHRO)
 
@@ -386,3 +437,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S10): Britannica anthroposophy; D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, community from re-read. D kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: ethics/afterlife/practice deepened from Wikipedia S2; A/C scored.

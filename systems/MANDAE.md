@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 1 (0.5) from Britannica Mandaeanism (soul salvation via gnosis; ascent past
+      Archons). Deepen ethics/practice notes. E UNKNOWN.
 identity:
   id: MANDAE
   v7_1_number: 65
@@ -247,8 +251,25 @@ lio_axes:
       locator: baptism paragraph
     how_known: '0.5.'
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Gnosis-salvation without a stated personal reward/punishment ledger (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: salvation; ascent
+    how_known: '0.5 — salvation of soul via gnosis and ascent; not a simple earthly reward ledger.'
+    rationale: 'C=1: personal/eschatological salvation frame with supreme deity reunion. Not 0: Britannica
+      does not detail earthly reward/punishment judge.'
+    alternatives:
+    - value: 2
+      note: Named alternative if weighting cultic purity rules as mixed ledger.
+      cites:
+      - source: S1
+        locator: cultic
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing score from thin ledger evidence.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: Esoteric gnosis and sacred books; priestly caste. Leans revelation; not scored 0 because
@@ -285,12 +306,12 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: 'Elaborate cultic ritual especially baptism (magical: immortality, purification, health); not
-      characteristic of other known Gnostic sects.'
+    value: Elaborate baptismal cult; John the Baptist revered; Jesus as false messiah; cultic purity;
+      marriage strongly supported
     certainty: 1.0
     cites:
     - source: S1
-      locator: baptism paragraph
+      locator: baptism; ethics
     how_known: Britannica.
   community_form:
     value: Surviving communities in Iraq and Khuzistan; Nasoreans (priests) vs Mandaiia (laity).
@@ -437,3 +458,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S11): Britannica Mandaeanism; A and B scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, texts; D_authority 1 (0.5). Re-read Britannica.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored; ritual_and_practice filled from Britannica.

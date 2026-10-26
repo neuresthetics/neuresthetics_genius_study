@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 1 (0.5) from Britannica Hermetic writings (deification/rebirth via gnosis).
+      Ethics note left thin. A/D already scored.
 identity:
   id: HERMET
   v7_1_number: 61
@@ -229,8 +233,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Magic/astrology vs law not fixed as single B score across popular/learned Hermetism (P44).
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Silent (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: deification; gnosis
+    how_known: '0.5 — deification or rebirth through gnosis; not a simple earthly reward ledger.'
+    rationale: 'C=1: personal eschatological transformation toward the transcendent God. Not 0: no detailed
+      judge catalog in summary.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if ledger evidence too thin.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: Divine revelation when ordinary scientific methods cannot discover occult affinities; Hermes
@@ -418,3 +434,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S10): Britannica Hermetic writings; A and D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools. A and D kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored 1 (0.5).
