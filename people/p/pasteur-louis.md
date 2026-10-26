@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 7
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus support single→corroborated (P48) via René Dubos 1950 Free Lance of Science (S10) quoting Sur la Vie 'God as author of life' agreeing with Œuvres VII S8. B already corroborated. Certainty stays 0.5 (named Infinite alt in rationale). Chart cue: faded hollow→faded filled. No fallacy_catalog; no figures/."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3. #84 (run 2): B_cause 4 at 0.7 (written_profession) → 4 at 0.5 (scholarly_reconstruction): his own words on nature (pp. 3–4) support the named alternative 3, and the 4 rests on a passage about method (p. 4) and Britannica's account of his working science, the evidence Bohr, Chandrasekhar and Dirac score at 0.5 (§3 same pattern); 3 stays named. mid_basin unchanged (BELOW_THRESHOLD, A not scored). Death place (both runs: holds at 0.5): the uncited phrases 'the form most sources use' and 'the estate adjoins the Saint-Cloud park' were removed; a cited line now gives the Saint-Cloud link (new S7, Inventaire général du patrimoine culturel, Île-de-France: part of the Villeneuve-l'Étang park was incorporated into the national domain of Saint-Cloud in 1895); S6 (EPHE) noted as not independent of S2 (it lists the ENS portrait among its sources). Value and certainty unchanged (v8's pick, P9). Not reviewed."}
@@ -111,9 +112,9 @@ worldview:
       value: 0
       basis: consistent_private_letters
       certainty: 0.5
-      support: single
-      cites: [{source: S8, locator: "pp. 6, 8–9, 29"}]
-      how_known: "Two private/official texts in Œuvres VII (Favé letter 1863; Minister note 1862) plus an unpublished Sur la Vie MS name God as agent who places or bestows properties in creation and as 'auteur de la vie'. Named alternative from the 1882 speech (Infinite-as-idea, S3), so 0.5. Independent source ids for the preferred value are only S8 → single (P48)."
+      support: corroborated
+      cites: [{source: S8, locator: "pp. 6, 8–9, 29"}, {source: S10, locator: "pp. 395–396 (English of Sur la Vie: 'God as author of life would then no longer be needed')"}]
+      how_known: "Two private/official texts in Œuvres VII (Favé letter 1863; Minister note 1862) plus an unpublished Sur la Vie MS name God as agent who places or bestows properties in creation and as 'auteur de la vie'. Perpetual deepen 2026-10-25: René Dubos 1950 (S10) independently quotes the same Sur la Vie Author-of-life line in English — scholarly secondary agreeing with primary → corroborated (P48). Named alternative from the 1882 speech (Infinite-as-idea, S3) keeps certainty at 0.5."
       rationale: "Leans to the transcendent-person / creator pole. Own voice: 'Dieu a placé dans les êtres les plus infimes de la création des propriétés extraordinaires' (Favé, 22 Mar 1863, S8 pp. 8–9; letter inédite printed in the Œuvres); microbes act 'grâce aux propriétés admirables que Dieu leur a départies' (Minister note, Apr 1862, S8 p. 6); if spontaneous generation succeeded, 'Dieu comme auteur de la vie devient inutile' (Sur la Vie, undated MS, S8 p. 29). God is an agent outside the organisms who authors life and confers properties — not identified with Nature. Named alternative: 2, because the 1882 reception speech treats 'L'idée de Dieu' as 'une forme de l'idée de l'infini' and enthousiasme as 'un dieu intérieur' (S3, pp. 24, 26), which undercuts a clear personal-transcendent locus and could support a mixed reading. Not 4: no God=Nature circle (S6 two-part test fails). Certainty 0.5: private documents (Favé and Sur la Vie inédits; Minister note published only posthumously) plus the contested Infinite reading."
     B_cause:
       value: 3
@@ -370,6 +371,17 @@ sources:
     reliability_note: "Crowdsourced; used for dual bio (P50), Catholic birth family, death at Marnes-la-Coquette, and the Faith and spirituality section's pointer that the Breton-peasant quote is treated as apocryphal. Body facts cross-checked against S1 where cited. Contested faith claims (last sacraments, crucifix) not scored."
     source_quality: "reference entry"
     used_for: [identity, basics, childhood, heritage, worldview, review]
+  - id: S10
+    type: secondary
+    kind: scholarly book
+    author: "René Dubos"
+    year: 1950
+    citation: "Dubos, René. Louis Pasteur: Free Lance of Science. Boston: Little, Brown, 1950. Internet Archive OCR: louispasteurfree009068mbp. Key locus: pp. 395–396 (Sur la Vie translation)."
+    url: "https://archive.org/details/louispasteurfree009068mbp"
+    accessed: 2026-10-25
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Standard mid-century scientific biography; English of Sur la Vie checked against Œuvres VII (S8). Used to corroborate A (P48), not to set values. Not used for the Literary Digest 'work of the Creator' line (provenance disputed on Wikipedia)."
+    used_for: [worldview]
 
 ---
 
