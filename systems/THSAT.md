@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -31,6 +31,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 0 (0.7) from Britannica Satanism (literal Satan/Lucifer/Set as personal being).
+      D stays UNKNOWN (varies by school). B/C/E UNKNOWN.
 identity:
   id: THSAT
   v7_1_number: 73
@@ -207,9 +211,19 @@ metaphysics:
     how_known: "Coder's reading of Britannica on Romantic reassessment."
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
-      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening; theistic forms
+    how_known: '0.7 — Satan/Lucifer (or Set) literally exists as a personal being.'
+    rationale: 'A=0: transcendent personal being. Not 1: theistic Satanism is not mid-basin deism.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding some Luciferian streams as more immanent.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
@@ -415,3 +429,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S12): Britannica Satanism; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A_locus scored 0 (0.7).

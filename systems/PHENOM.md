@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Raise D_authority 3→4 (0.7) from SEP Phenomenology (first-person description/reflection).
+      A/B/C/E UNKNOWN.
 identity:
   id: PHENOM
   v7_1_number: 23
@@ -246,21 +250,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Method brackets existence questions; does not fix cosmology (P44).
   D_authority:
-    value: 3
-    rationale: 'First-person description and analysis of experience over revelation; not laboratory natural
-      science, so not 4. Alt UNKNOWN if reflective method is judged not to fix D.'
-    certainty: 0.5
+    value: 4
+    certainty: 0.7
     cites:
     - source: S1
-      locator: §2
-    how_known: 'Borderline: method is epistemic, not a cosmology of authority. Certainty 0.5; alternative
-      UNKNOWN.'
+      locator: opening
+    how_known: '0.7 — first-person description, reflection, analysis; stance observation and reason.'
+    rationale: 'D=4: method over revelation. Raised from 3.'
     alternatives:
-    - value: 'UNKNOWN'
+    - value: 3
+      note: Named alternative if coding Husserlian schools with theological overlays.
       cites:
       - source: S1
-        locator: §1
-      note: If bracketing means the method sets no authority stance for LIO.
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Method brackets existence questions; does not fix cosmology (P44).
@@ -454,3 +456,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S4): SEP Smith; axes under P44.
 - 2026-10-25: deepened classification, metaphysics, epistemology, practice, science, schools; D_authority 3 (0.5). Re-read SEP.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D raised to 4.

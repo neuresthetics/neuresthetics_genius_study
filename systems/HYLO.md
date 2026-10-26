@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family, parent traditions, related codes, origins era/region, remaining
       metaphysics (not addressed / nature), epistemology, ethics, practice, science, schools, neighbors.
       A/B stay BELOW_THRESHOLD; C/D/E UNKNOWN. Re-read Britannica Hylozoism.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) and C_ledger/E_scope 4 (0.5) from sources on file (philosophical
+      thesis; material vitality). A/B stay BELOW.
 identity:
   id: HYLO
   v7_1_number: 43
@@ -183,14 +187,47 @@ lio_axes:
     how_known: "Members differ: a world soul or plastic nature that 'controls and organizes matter' versus\
       \ a 'dynamic, materialistic view of nature' (S1)."
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — not addressed; materialist hylozoism implies no divine ledger (P44c implied).'
+    rationale: C=4 implied. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — philosophical thesis; stance observation and reason.'
+    rationale: 'D=4: argument over revelation.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding early element-as-divine forms as tradition.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — all matter alive implies same order for kinds; implied (P44c).'
+    rationale: E=4 implied. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Historical hylozoists argue from cosmology and natural philosophy (Presocratic archē, plastic
     nature, evolutionary materialism). No single method; the thesis is metaphysical rather than a school
@@ -354,3 +391,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7.
 - 2026-10-15 (systems batch S7): filled from Britannica; A/B BELOW_THRESHOLD; C/D/E UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read Britannica Hylozoism live.
+- 2026-10-25: D/C/E scored.

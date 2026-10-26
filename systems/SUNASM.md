@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from sundayassembly.org/about: family/parents, metaphysics TODOs, epistemology/ethics/science.
       Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A4 D4 C4 E4 (0.7/0.7/0.7/0.5) from sundayassembly.org (secular; no creed; this-world
+      ethics). B UNKNOWN.
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -199,22 +203,65 @@ metaphysics:
     how_known: '0.5.'
 lio_axes:
   A_locus:
-    value: 'BELOW_THRESHOLD'
-    how_known: "Secular but inclusive of all beliefs (S1), so members differ (P44b). Quote (S1, opening):\
-      \ Not addressed: secular, and 'inclusive of all—no matter what they believed'."
-    note: 'Evidence: S1 opening.'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: About / Live Better
+    how_known: '0.7 — secular, no required deity; P44a.'
+    rationale: 'A=4: nature/this-world focus; no God required. Not BELOW: creed-inclusivity does not invent
+      a deity locus.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding creed-inclusivity as refusing any A score.
+      cites:
+      - source: S1
+        locator: About
   B_cause:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: 'Live Better, Help Often'
+    how_known: '0.7 — no divine ledger; community ethics slogans.'
+    rationale: 'C=4: none. Not 3: not karma law.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Help Often as impersonal moral law.
+      cites:
+      - source: S1
+        locator: Live Better
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: About
+    how_known: '0.7 — no religious creed authority; inspiring talks; stance observation and reason.'
+    rationale: 'D=4: reason/experience over revelation.'
+    alternatives:
+    - value: 3
+      note: Named alternative if weighting communal ritual form as tradition-like.
+      cites:
+      - source: S1
+        locator: About
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: About
+    how_known: '0.5 — implied same natural world for all; not stated as cosmology (P44c implied).'
+    rationale: 'E=4 implied naturalism. Certainty 0.5: only implied.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied naturalism.
+      cites:
+      - source: S1
+        locator: About
 epistemology:
   value: Thought-provoking ideas and talks; no revealed creed; wonder and practical help
   certainty: 0.7
@@ -375,3 +422,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior practice fills.
 - 2026-10-25: deepened TODOs from about page; axes unchanged.
+- 2026-10-25: A/D/C/E scored from Assembly materials.

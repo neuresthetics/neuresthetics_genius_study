@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 4 and C_ledger 4 (0.7); raise D_authority 3→4 (0.7) from SEP Hedonism (value
+      theory; no deity/ledger; experience).
 identity:
   id: HEDON
   v7_1_number: 32
@@ -213,30 +217,51 @@ metaphysics:
     how_known: SEP §1.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — value/ethics theory; no cosmology of God; P44a.'
+    rationale: 'A=4: no God in the thesis. Not UNKNOWN: silence on deity plus value-only scope fixes absence
+      for the system-as-such.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if coding only as silent on God.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
-  D_authority:
-    value: 3
-    rationale: "Observation and reason (experience of pleasure/pain, reasoned comparison) rather than\
-      \ revelation; not a full natural-science empiricism programme, so not 4. Alt 4 if Bentham's naturalism\
-      \ is read as the LIO pole."
+    value: 4
     certainty: 0.7
     cites:
     - source: S1
-      locator: introduction; §2.1
-    how_known: Scored from sourced authority stance; other axes stay UNKNOWN (P44).
+      locator: Ethical hedonism
+    how_known: '0.7 — value is pleasure/pain; no personal afterlife ledger.'
+    rationale: 'C=4: none. Not 3: not karma.'
     alternatives:
-    - value: 4
+    - value: 3
+      note: Named alternative if reading pleasure/pain as impersonal moral law.
       cites:
       - source: S1
-        locator: introduction
-      note: "If Bentham's natural masters claim is read as full observation/reason pole."
+        locator: Ethical hedonism
+  D_authority:
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — experience of pleasure/pain; Bentham/Mill; stance observation and reason.'
+    rationale: 'D=4: experience over revelation. Raised from 3.'
+    alternatives:
+    - value: 3
+      note: Named alternative if weighting Aristippus/Epicurus school variance.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
@@ -417,3 +442,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S5): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions (AI-generated) not used. Axes under P44.
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read SEP Moore.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A/C scored; D raised to 4.

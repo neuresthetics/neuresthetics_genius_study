@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 0 (0.7) from Britannica/RTC materials on file (Hubbard scriptures; RTC
+      ecclesiastical authority). A stays BELOW.
 identity:
   id: SCIENT
   v7_1_number: 77
@@ -214,8 +218,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — Hubbard scriptures; RTC ultimate ecclesiastical authority; stance founder.'
+    rationale: 'D=0: founder revelation/scripture outranks observation. Not 1: closed scripture hierarchy,
+      not open ancestral custom.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding auditing tech as empirical-adjacent.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -380,3 +396,4 @@ Scientology identity.
 - Prior batch: Britannica Scientology; A BELOW_THRESHOLD.
 - 2026-10-25: deepened. Axes kept; note D question.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D_authority scored 0 (0.7).

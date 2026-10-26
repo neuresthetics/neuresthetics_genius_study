@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 (0.7); raise D_authority 3→4 (0.7) from EA materials on file (evidence/reason;
+      this-world benefits). A stays UNKNOWN (movement silent on God).
 identity:
   id: EFFALT
   v7_1_number: 12
@@ -240,24 +244,33 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Movement states no cosmology; members differ (P44).
-  D_authority:
-    value: 3
-    rationale: "Evidence and reason to maximize benefits; strong empiricism about interventions, but not\
-      \ a full natural-science cosmology, so not 4. Alt 4 if 'evidence and reason' is read as the LIO\
-      \ pole."
+    value: 4
     certainty: 0.7
     cites:
-    - source: S2
-      locator: §3.2
-    how_known: Scored from sourced authority stance (P44).
+    - source: S1
+      locator: opening
+    how_known: '0.7 — moral weight on benefits to others; not a personal afterlife ledger.'
+    rationale: 'C=4: none. Not 3: welfarism is human metric, not karma.'
     alternatives:
-    - value: 4
+    - value: 3
+      note: Named alternative if reading impartial welfarism as impersonal moral law.
       cites:
-      - source: S2
-        locator: §3.2
-      note: If evidence-and-reason definition counts as full observation/reason pole.
+      - source: S1
+        locator: opening
+  D_authority:
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — evidence and reason to identify high-impact interventions.'
+    rationale: 'D=4: evidence over revelation. Raised from 3.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding community norms as tradition-like.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
@@ -466,3 +479,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S2): read Britannica; axes under P44.
 - 2026-10-25: deepened from Britannica plus SEP Philanthropy §3.2; D_authority 3 (0.7); schools and practice filled.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C scored; D raised to 4.

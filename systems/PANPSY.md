@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs (varies/not addressed),
       epistemology, ethics, practice, science, schools (constitutive/emergentist; micro vs cosmo; Russellian).
       A stays BELOW_THRESHOLD; B–E UNKNOWN. Re-read SEP Panpsychism (Goff et al.).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP/IEP panpsychism materials on file (philosophical argument).
+      A stays BELOW.
 identity:
   id: PANPSY
   v7_1_number: 33
@@ -203,8 +207,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — philosophical argument (anti-emergence, intrinsic natures); stance observation and
+      reason.'
+    rationale: 'D=4: argument over revelation. Not 3: Spinoza-theistic readings are schools.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding cosmopsychism-with-God as primary.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -388,3 +404,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - 2026-10-15 batch: A BELOW_THRESHOLD from SEP.
 - 2026-10-25: deepened TODOs; re-read SEP Panpsychism.
+- 2026-10-25: D_authority scored 4 (0.7).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A4 D4 C4 (0.7) from Britannica/Chaos Magick materials on file (no objective gods; practitioner-designed
+      ritual). B stays BELOW.
 identity:
   id: CHAOSM
   v7_1_number: 59
@@ -210,11 +214,20 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'BELOW_THRESHOLD'
-    how_known: "Meletiadis finds 'a relativasation of the existence of gods' in Carroll: 'a pantheon of\
-      \ gods is a map of the mind' and 'all gods are relative and all mythologies embody a psychology';\
-      \ the current rests on 'the idea that belief is but a tool in the hands of its wielder' (S1)."
-    note: P45 cap. No fixed stance on whether gods exist.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — no objective gods/demons; images as ritual drama; P44a.'
+    rationale: 'A=4: no transcendent personal God with objective existence. Was BELOW; stance itself fixes
+      absence.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding practitioners who treat chaos as deity-like.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'BELOW_THRESHOLD'
     how_known: "Carroll's definitions conflict: 'Magic may be defined as the science and art of willed\
@@ -222,11 +235,33 @@ lio_axes:
       \ natural environment' (Meletiadis's reading, S1)."
     note: Alternatives 1 and 3. P45 cap.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — not addressed; implied none (P44c-style for no-spiritual-judge forms).'
+    rationale: C=4 implied none. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — practitioner’s subconscious / own designed ritual; stance observation and reason.'
+    rationale: 'D=4: self-designed method over revelation. Not 3: no church scripture as primary.'
+    alternatives:
+    - value: 2
+      note: Named alternative if weighting Spare/Carroll lineage texts as tradition.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -404,3 +439,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - Prior: DOI/source batch; A/B BELOW_THRESHOLD.
 - 2026-10-25: deepened from Encyclopedia.com Chaos Magick (S2). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A/D/C scored.

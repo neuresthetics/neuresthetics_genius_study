@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, founding region, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (extropian, WTA/Humanity+, singularity). LIO axes unchanged.
       Re-read Britannica Transhumanism (Ostberg).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) and C_ledger 4 (0.7) from sources on file (sci/tech argument; this-world
+      ethics). A stays BELOW.
 identity:
   id: TRNSHM
   v7_1_number: 13
@@ -206,11 +210,34 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — this-world equity/enhancement debates; not a divine ledger.'
+    rationale: 'C=4: none. Not 3: cryonics/upload are tech hopes, not karma.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding Omega Point / God-as-computation streams as ledger.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — scientific/technological argument; stance observation and reason.'
+    rationale: 'D=4: science/tech over revelation as family method. Not 3: New Age/religious adaptations
+      are schools, not default.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding Tipler/religious transhumanism as primary.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
@@ -374,3 +401,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from Britannica.
 - 2026-10-25: deepened TODOs; re-read Britannica Transhumanism (Ostberg).
+- 2026-10-25: D/C scored.

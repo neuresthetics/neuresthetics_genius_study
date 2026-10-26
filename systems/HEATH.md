@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 0 (0.7) and D_authority 1 (0.7) from Britannica Heathenry (personal divinities
+      for most; historical/archaeological fidelity). Was A BELOW.
 identity:
   id: HEATH
   v7_1_number: 48
@@ -208,18 +212,20 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'BELOW_THRESHOLD'
-    how_known: "Most hold the gods exist independently, some see them only as symbols (S1). Members differ\
-      \ (P44(b)). Quote (S1, Beliefs and practices): 'Heathens are usually polytheistic ... Most Heathens\
-      \ regard these divinities as having an independent existence, but some practitioners perceive them\
-      \ only as symbolic figures.'"
-    note: 'Alternative: 3.'
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — most regard divinities as independently existing persons.'
+    rationale: 'A=0: personal gods. Not BELOW: “most” is the official/scholarly reconstructionist form;
+      symbolic-only is named alternative.'
     alternatives:
-    - value: 3
-      note: Named alternative.
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding symbolic-only Heathens as equal share.
       cites:
       - source: S1
-        locator: Beliefs and practices
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -227,9 +233,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: "'There has never been a single authority in charge of Heathenry' (S1); no positive source\
-      \ of authority stated beyond historical sources."
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — historical/archaeological fidelity; no single authority; stance varies but tradition/ancestors
+      primary for reconstructionists.'
+    rationale: 'D=1: ancestral/historical sources. Not 0: no single closed revelation.'
+    alternatives:
+    - value: 2
+      note: Named alternative if coding lore + UPG (unverified personal gnosis) as mixed.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -415,3 +432,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - Prior batches: Britannica Heathenry; A BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, schools. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A=0 and D=1 scored.

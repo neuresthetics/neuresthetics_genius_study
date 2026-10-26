@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 (0.7); A_locus 4 (0.5); raise D_authority 3→4 (0.7) from IEP Cynics (nature/reason;
+      neglect of gods; no divine ledger).
 identity:
   id: CYNIC
   v7_1_number: 15
@@ -212,33 +216,51 @@ metaphysics:
     how_known: IEP.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
-      rebuke is ethical, not a cosmology of miracles.'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — Cynics neglect/mock religious convention; not a stated atheism (P44a at low certainty).'
+    rationale: 'A=4 at 0.5: no personal God doctrine; mockery of prayer for wealth. Alternative UNKNOWN.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: 'Named alternative: sources do not state a positive atheism.'
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
       rebuke is ethical, not a cosmology of miracles.'
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
-      rebuke is ethical, not a cosmology of miracles.'
-  D_authority:
-    value: 3
-    rationale: "Nature and reason outrank convention and religious/political authority; not a full natural-science\
-      \ empiricism (no speculative physics), so not 4. Alternative 4 if 'observation and reason' is read\
-      \ as LIO pole."
+    value: 4
     certainty: 0.7
     cites:
     - source: S1
-      locator: §3
-    how_known: Scored from sourced authority stance; certainty 0.7 with named alternative.
+      locator: ethics
+    how_known: '0.7 — virtue with nature; shame for failing to live well; no personal afterlife ledger.'
+    rationale: 'C=4: none. Not 3: not karma.'
     alternatives:
-    - value: 4
+    - value: 3
+      note: Named alternative if reading living-with-nature as impersonal law.
       cites:
       - source: S1
-        locator: §3
-      note: If rejecting petitionary religion and convention counts as full observation/reason pole.
+        locator: ethics
+  D_authority:
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — nature and reason over nomos including religion.'
+    rationale: 'D=4: reason/nature over revelation. Raised from 3.'
+    alternatives:
+    - value: 3
+      note: Named alternative if weighting askēsis lineage as tradition.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
@@ -423,3 +445,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S3): read the listed sources; quotations checked word for word against the fetched page text with a script. Axes under P44.
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read IEP Piering.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A/C scored; D raised to 4.
