@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 11
+  record_version: 12
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -52,6 +52,10 @@ record:
     by: Grok Bot
     summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics from Wikipedia Hellenism
       (modern religion). Keep prior S1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill miracles, moral_ledger, exemptions, teleology, necessity from Wikipedia Hellenism (modern
+      religion). No LIO moves.'
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -160,13 +164,15 @@ metaphysics:
       locator: full page
     how_known: YSEE silence.
   miracles:
-    value: Not addressed.
-    stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full page
-    how_known: YSEE silence.
+    value: 'Not a shared miracle catechism. Gods are engaged through prayer and offerings; some practitioners
+      report signs or presence, but modern Hellenism emphasizes eusebeia and ritual relationship more
+      than wonder-working proofs.'
+    stance: varies by school
+    certainty: 0.5
+    cites: &id002
+    - source: S2
+      locator: opening
+    how_known: '0.5 — Wikipedia practice summary.'
   petition_and_prayer:
     value: Public religious ceremonies and an official place of worship in Athens; petition theology not
       detailed.
@@ -184,13 +190,12 @@ metaphysics:
     cites: *id001
     how_known: '0.5 — thin explicit afterlife doctrine in the Wikipedia summary.'
   moral_ledger:
-    value: Not addressed.
-    stance: none
+    value: 'Virtue ethics frame (arete, eusebeia, xenia) rather than a single heaven/hell scorecard. Afterlife
+      views vary with ancient philosophical schools practitioners adopt.'
+    stance: impersonal consequence
     certainty: 0.5
-    cites:
-    - source: S1
-      locator: full page
-    how_known: Silence.
+    cites: *id002
+    how_known: '0.5 — Wikipedia values list.'
   authority:
     value: 'Reconstruction from ancient sources, philosophy, and community tradition (YSEE, Labrys, Hellenion);
       no single holy book or dogma.'
@@ -201,28 +206,25 @@ metaphysics:
       locator: Theology and values
     how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
-    value: Not addressed.
+    value: None as shared cosmology. Reconstructionist communities do not claim ethnic exemption from
+      piety toward the gods; hospitality (xenia) cuts against in-group moral insulation.
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full page
-    how_known: Silence.
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia values.'
   teleology_in_nature:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full page
-    how_known: Silence.
+    value: Gods associated with domains of nature and human life; not a single designer-watchmaker thesis.
+      Philosophical Hellenists may import Stoic/Platonic teleology — varies by school.
+    stance: varies by school
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia diversity note.'
   necessity_and_freedom:
-    value: Not addressed on this page.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full page
-    how_known: YSEE silence.
+    value: 'Not a shared free-will treatise. Ancient options (Stoic fate, Epicurean chance, tragic moira)
+      remain available to modern practitioners; file does not pick one.'
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia: diverse theology/philosophy.'
 lio_axes:
   A_locus:
     value: 0
@@ -493,3 +495,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: A=0 and D=1 scored from YSEE.
 - 2026-10-25: B/C/E scored (Hellenism).
 - 2026-10-25: Deepened qualities from Wikipedia Hellenism (tertiary).
+- 2026-10-25: Filled remaining metaphysics gaps from Wikipedia Hellenism (modern religion).
