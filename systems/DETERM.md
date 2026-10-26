@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) and C_ledger 4 (0.5) from sources on file (philosophical thesis;
       not divine ledger). A stays BELOW; B/E already 4.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify petition/afterlife silence for determinism label from Wikipedia Determinism. No LIO
+      moves.
 identity:
   id: DETERM
   v7_1_number: 28
@@ -152,21 +156,21 @@ metaphysics:
       locator: introduction
     how_known: Implied by law-necessitation. 0.7.
   petition_and_prayer:
-    value: Not addressed; petition that changes law-governed outcomes conflicts with the thesis
+    value: Not addressed as cult practice. Determinism is a thesis about causation/necessity of events;
+      it does not prescribe prayer. Theological determinists may still pray; the label itself is silent.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: Not a religious practice thesis.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: opening
+    how_known: '0.7 — Wikipedia scope.'
   afterlife:
-    value: Not addressed
+    value: Not entailed. Determinism concerns whether events are fixed by prior states/laws; afterlife
+      is orthogonal and varies by surrounding worldview.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: SEP.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   moral_ledger:
     value: Not a moral-ledger doctrine; free-will debate concerns moral responsibility under determination
     stance: none
@@ -401,6 +405,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/determinism-causal/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Determinism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Determinism'
+  accessed: '2026-10-25'
 ---
 # Causal determinism (DETERM)
 
@@ -444,3 +454,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-15: draft from SEP Causal Determinism.
 - 2026-10-25: deepened TODOs, schools, science/ethics; axes unchanged.
 - 2026-10-25: D/C scored.
+- 2026-10-25: Clarified petition/afterlife silence from Wikipedia Determinism.
