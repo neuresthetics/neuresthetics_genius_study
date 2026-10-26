@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,9 @@ record:
     by: Grok Bot
     summary: 'Deepen practice/festivals, epistemology (qewls), cosmogony detail, schools from Wikipedia
       Yazidism. Keep Britannica S1. No LIO moves.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill teleology and necessity from Wikipedia Yazidism. No LIO moves.
 identity:
   id: YAZID
   v7_1_number: 66
@@ -137,7 +140,7 @@ metaphysics:
       Xudans of natural elements. Peacock Angel is not Satan in Yazidi belief.'
     stance: creator distinct from creation
     certainty: 0.7
-    cites: &id001
+    cites: &id002
     - source: S2
       locator: Principal beliefs; Festivals
     how_known: '0.8 — Wikipedia Yazidism summarizing Asatrian/Arakelova/Allison.'
@@ -203,30 +206,27 @@ metaphysics:
       locator: Yazidi sacred texts
     how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
-    value: Not addressed as physics exemptions. Myth of separate creation (Adam not Eve) and purity taboos
-      structure community boundaries.
-    stance: none
+    value: 'Endogamous closed community; hereditary castes (Sheikh, Pir, Murid). Spiritual roles are birth-ascribed
+      — a strong social reserved structure, not a license to violate purity rules.'
+    stance: some
     certainty: 0.5
-    cites:
-    - source: S1
-      locator: mythology; purity
-    how_known: Community segregation is not the same as reserved natural-law exemptions — leave none at
-      0.5.
+    cites: &id001
+    - source: S2
+      locator: Beliefs
+    how_known: '0.5 — Wikipedia social structure.'
   teleology_in_nature:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: "Creation and care through Tawûsî Melek and heptad; world sustained under God's permission.\
+      \ Not a scientific teleology thesis."
+    stance: immanent ends
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Yazidism beliefs.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: Caste and endogamy structure community life; moral/ritual duties bind. Scholastic free-will
+      debate not central in sources read.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 2
@@ -323,7 +323,7 @@ ethics:
   value: 'Religious purity (food and clothing taboos vary by community); endogamy and caste marriage rules;
     divine-law breaking expiated via metempsychosis. Elements (fire, water, air, earth) not to be polluted.'
   certainty: 0.7
-  cites: *id001
+  cites: *id002
   how_known: '0.7 — Wikipedia + prior Britannica.'
 practice:
   ritual_and_practice:
@@ -499,3 +499,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: E_scope and B_cause scored at 0.5.
 - 2026-10-25: Deepened from Wikipedia Yazidism (tertiary).
+- 2026-10-25: Filled teleology/necessity/exemptions from Wikipedia Yazidism.
