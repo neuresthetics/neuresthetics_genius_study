@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -50,6 +50,9 @@ record:
     by: Grok Bot
     summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics from Wikipedia Slavic
       Native Faith (tertiary). Keep prior S1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill exemptions and necessity from Wikipedia Slavic Native Faith. No LIO moves.
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -197,13 +200,14 @@ metaphysics:
       locator: Overview
     how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: 'Varies: some Rodnover groups are ethnocentric (Slavic ancestry emphasis); others more open.
+      Ancestors and folk custom privileged — stance varies by organization.'
+    stance: varies by school
+    certainty: 0.5
+    cites: &id002
+    - source: S2
+      locator: Beliefs; Community
+    how_known: '0.5 — Wikipedia Rodnovery diversity.'
   teleology_in_nature:
     value: Modern Pagans often view traditions as nature/Earth religions; not a scholastic teleology doctrine.
     stance: immanent ends
@@ -213,12 +217,11 @@ metaphysics:
       locator: Beliefs and practices
     how_known: Umbrella gloss at 0.5.
   necessity_and_freedom:
-    value: Not addressed for Rodnovery.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: 'Not a shared free-will metaphysics. Fate/fortune motifs from folklore coexist with ritual
+      agency (offerings, festivals).'
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 0
@@ -492,3 +495,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: A=0 and D=1 scored from Britannica Neo-Paganism.
 - 2026-10-25: B/C/E scored (Rodnoverie).
 - 2026-10-25: Deepened qualities from Wikipedia Slavic Native Faith (tertiary).
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Slavic Native Faith.
