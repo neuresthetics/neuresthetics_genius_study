@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: B_cause support single→corroborated (P48) by adding independent SEP Griffel §7.2 / §7.4 cites (S1) agreeing with Marmura Discussion 17/20 habit-miracle reading already primary-checked in S3. A already corroborated. Chart cue: dark hollow→dark filled. Axes values/certainty unchanged (A 0@0.7, B 3@0.7, mid_basin true@0.7). No fallacy_catalog; no figures/."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #137): primary-checked Marmura Incoherence 2nd ed. (Discussion 17 pp. 166–172; Discussion 20 p. 222; Conclusion pp. 226–227) and Watt Munqidh. ISLAM scholarly_reconstruction 0.5 → written_profession 0.7. A 0 and B 3 pending-check 0.5 → 0.7 (written_profession; alt 1 / alt 2 kept). mid_basin BELOW → true @0.7. P47 source_quality; P48 support (A corroborated via Incoherence+Munqidh; B single). P50 Wikipedia EN dual bio (birth still disputed; death Dec 1111 agrees). Statements re-verified against Marmura OCR. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-21: ISLAM 0.7 -> 0.5, basis scholarly_reconstruction (SEP's summary, no quotation of his own). Z2-23 / RQ-Z2-2 (v8's call on the auditor's advice): the Revival's year is UNKNOWN and the span end is UNKNOWN (P12). A and B how_known now say 0.5 is the pending-check cap. Plot unchanged (A 0 / B 3, faded)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 141). Source: SEP 'al-Ghazali' (Frank Griffel, rev. 2026), with his own words as secondary quotations of Marmura's translation of the Incoherence (2nd ed. 2000; primary check pending, §7): the connection between cause and effect 'is not necessary ... according to us' and is due to 'the prior decision (taqdīr) of God' (p. 166); 'within divine power to create satiety without eating' (p. 166); for prophets God 'suspends His habit' (Griffel on p. 171). Span 1095–1106 at 0.5. primary_system ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 2); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
@@ -106,9 +107,9 @@ worldview:
       value: 3
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S3, locator: "Discussion 17, pp. 166, 171–172; Discussion 20, p. 222"}]
-      how_known: "Deepen D1 primary check (pending-check lift): Marmura p. 166 — 'within [divine] power to create satiety without eating' etc.; p. 171 — 'If, then, God disrupts the habitual [course of nature] by making [the miracle] occur...'; p. 222 — 'habitual [patterns] can be disrupted' and he chides those who 'deny magic, sorcery, the talismanic arts, [prophetic] miracles, and the miracles [of saints].' Habitual order with stated exceptions: B 3. Support single (P48): the nature-order claim is from one primary book (Incoherence). Named alternative 2 keeps the ceiling at 0.7."
+      support: corroborated
+      cites: [{source: S3, locator: "Discussion 17, pp. 166, 171–172; Discussion 20, p. 222"}, {source: S1, locator: "§7.2 (Discussion 17 opening; habit / taqdīr); §7.4 (habit disruption; miracles programmed into lawful habit)"}]
+      how_known: "Deepen D1 primary check: Marmura p. 166 — 'within [divine] power to create satiety without eating' etc.; p. 171 — 'If, then, God disrupts the habitual [course of nature] by making [the miracle] occur...'; p. 222 — 'habitual [patterns] can be disrupted'. Perpetual deepen 2026-10-25: SEP Griffel §7.2 independently quotes the same opening and frames habitual course with possible miracle disruption; §7.4 notes miracles as extraordinary within God's habit, not suspension of law as chaos. Two independent source ids (S3 primary + S1 scholarly secondary) agreeing on B 3 → corroborated (P48). Named alternative 2 keeps the ceiling at 0.7."
       rationale: "Scored on his account of nature (P6). Ashʿarite occasionalism / divine habit (ʿāda): a habitual course God can disrupt for miracles — B 3, not B 4. Alternative 2 (honest): every event is God's creation, and the named exceptions include saints' wonders and magic as well as prophetic miracles, so intervention may count as frequent/wide (occasionalist reading)."
       alternatives:
         - {value: 2, note: "Occasionalist reading with wider exceptions (saints' wonders, magic; every event God's creation).", cites: [{source: S3, locator: "Discussion 20, p. 222; Discussion 17, pp. 166–171"}]}
