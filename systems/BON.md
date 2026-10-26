@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9, thin): filled from Britannica "Bon" (editors, one paragraph). A
@@ -30,6 +30,10 @@ record:
     summary: 'Deepen qualities from Britannica: family, parents, related codes, origins, metaphysics (many
       gods / propitiation / oracular priests), practice, science, schools (early magic Bon vs later systematized).
       Axes stay UNKNOWN (thin Britannica; P46(a)).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: BON
   v7_1_number: 54
@@ -55,13 +59,13 @@ classification:
     how_known: Britannica.
   parent_traditions:
     value:
-    - Pre-Buddhist Tibetan cults (magic, divine kingship, atmospheric/earth/subterranean gods)
+    - 'Pre-Buddhist Tibetan cults (magic, divine kingship, atmospheric/earth/subterranean gods)'
     - Buddhist literary and doctrinal models (from the 8th century systematization)
     certainty: 0.7
     cites:
     - source: S1
       locator: paragraphs 1–3
-    how_known: Coder's reading of Britannica's early features and 8th-c. systematization.
+    how_known: "Coder's reading of Britannica's early features and 8th-c. systematization."
   related_codes:
   - code: BUDDH
     relation: overlaps
@@ -90,7 +94,7 @@ origins:
     how_known: Britannica.
   founders_or_key_figures:
     value:
-    - King Khrisong Detsen (persecutor of Bon claims to supremacy, late 8th century)
+    - 'King Khrisong Detsen (persecutor of Bon claims to supremacy, late 8th century)'
     certainty: 0.7
     cites:
     - source: S1
@@ -106,8 +110,8 @@ origins:
     how_known: Britannica mentions sacred literature without naming titles.
 metaphysics:
   god_nature_relation:
-    value: Cult of gods of the atmosphere, the earth, and subterranean regions; sky divinity linked to
-      divine kingship; demonic forces propitiated.
+    value: 'Cult of gods of the atmosphere, the earth, and subterranean regions; sky divinity linked to
+      divine kingship; demonic forces propitiated.'
     stance: many gods within nature
     certainty: 0.7
     cites:
@@ -124,14 +128,14 @@ metaphysics:
       locator: paragraph 2
     how_known: Britannica.
   intervention:
-    value: Magic-related practice and propitiation of demonic forces; oracular priests. Intervention assumed
-      in cult, not denied.
+    value: 'Magic-related practice and propitiation of demonic forces; oracular priests. Intervention
+      assumed in cult, not denied.'
     stance: regular
     certainty: 0.5
     cites:
     - source: S1
       locator: paragraph 2
-    how_known: Coder's reading of early Bon features; thin source; certainty 0.5.
+    how_known: "Coder's reading of early Bon features; thin source; certainty 0.5."
   miracles:
     value: Magic and oracular practice imply supernatural efficacy; Britannica does not state a miracle
       doctrine in Christian terms.
@@ -140,7 +144,7 @@ metaphysics:
     cites:
     - source: S1
       locator: paragraph 2
-    how_known: Thin; alternative 'not addressed' if magic ≠ miracles.
+    how_known: "Thin; alternative 'not addressed' if magic ≠ miracles."
   petition_and_prayer:
     value: Propitiation of demonic forces; blood sacrifices in early Bon; oracular priesthood.
     stance: petition answered
@@ -165,8 +169,8 @@ metaphysics:
     cites:
     - source: S1
       locator: full article
-    how_known: Silence; stance 'none' as placeholder for no ledger doctrine stated (not a positive claim
-      of no karma).
+    how_known: "Silence; stance 'none' as placeholder for no ledger doctrine stated (not a positive claim\
+      \ of no karma)."
   authority:
     value: Oracular priests; later sacred literature; tradition continuous with pre-Buddhist practice.
       Not observation-and-reason natural science.
@@ -175,7 +179,7 @@ metaphysics:
     cites:
     - source: S1
       locator: paragraphs 2–3
-    how_known: Coder's reading of Britannica.
+    how_known: "Coder's reading of Britannica."
   reserved_exemptions:
     value: Not addressed as cosmology of exemptions from natural law.
     stance: none
@@ -201,23 +205,23 @@ metaphysics:
     how_known: Britannica silence.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
 epistemology:
@@ -226,7 +230,7 @@ epistemology:
   cites:
   - source: S1
     locator: paragraphs 2–3
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 ethics:
   value: Not described in the Britannica article (ritual and political struggle dominate the summary).
   certainty: 1.0
@@ -245,8 +249,8 @@ practice:
       locator: paragraphs 2–3
     how_known: Britannica.
   community_form:
-    value: Living religion on Tibet's northern and eastern frontiers; historically tied to noble families
-      vs Buddhist ruling house; features absorbed into Tibetan Buddhism.
+    value: "Living religion on Tibet's northern and eastern frontiers; historically tied to noble families\
+      \ vs Buddhist ruling house; features absorbed into Tibetan Buddhism."
     certainty: 1.0
     cites:
     - source: S1
@@ -254,13 +258,13 @@ practice:
     how_known: Britannica.
 science:
   historical_stance:
-    value: Magic and oracular practice, not a natural-science programme. Systematization borrowed Buddhist
-      written-culture habits.
+    value: 'Magic and oracular practice, not a natural-science programme. Systematization borrowed Buddhist
+      written-culture habits.'
     certainty: 0.7
     cites:
     - source: S1
       locator: paragraphs 2–3
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Continues as a living religion; Britannica does not state a modern science stance.
     certainty: 1.0
@@ -271,8 +275,8 @@ science:
 schools_and_variants:
 - name: Early / pre-systematized Bon
   form: popular
-  how_it_differs: Magic, propitiation, blood sacrifice, oracular priests, divine kingship, three-realm
-    gods.
+  how_it_differs: 'Magic, propitiation, blood sacrifice, oracular priests, divine kingship, three-realm
+    gods.'
   lio_difference: Axes UNKNOWN on thin source.
   certainty: 0.7
   cites:
@@ -290,7 +294,13 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Living Tibetan Bon communities and Bon features inside Tibetan Buddhism; no single global census
+      in Britannica
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -299,32 +309,32 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 26
-  scoring_note: Bön scores moderately due to its ancient shamanistic roots and focus on natural harmony,
+  scoring_note: 'Bön scores moderately due to its ancient shamanistic roots and focus on natural harmony,
     offering cultural and spiritual coherence but limited by revelatory elements and lack of empirical
-    rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 54 and section 7 scoring notes
+    rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 54 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Person practices or identifies with Bon as a living Tibetan religion, or historical Bon priesthood/nobility
-    context.
-  do_not_use_when: Tibetan Buddhist practice that merely inherits Bon-derived features — use BUDDH. Generic
-    'shamanism' without Bon identity — not BON.
+  use_when: 'Person practices or identifies with Bon as a living Tibetan religion, or historical Bon priesthood/nobility
+    context.'
+  do_not_use_when: "Tibetan Buddhist practice that merely inherits Bon-derived features — use BUDDH. Generic\
+    \ 'shamanism' without Bon identity — not BON."
   neighbors:
   - code: BUDDH
     relation: neighbor (easily confused)
@@ -349,7 +359,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Bon." Encyclopaedia Britannica. https://www.britannica.com/topic/Bon-Tibetan-religion.
     Wayback Machine snapshot 2026-09-11 19:57:27 UTC: https://web.archive.org/web/20260911195727/https://www.britannica.com/topic/Bon-Tibetan-religion.'
-  url: https://www.britannica.com/topic/Bon-Tibetan-religion
+  url: 'https://www.britannica.com/topic/Bon-Tibetan-religion'
   accessed: '2026-10-25'
   reliability_note: 'Short unsigned editors’ article (one paragraph). P44(e): read in the Wayback copy
     (https://web.archive.org/web/20260911195727/https://www.britannica.com/topic/Bon-Tibetan-religion);
@@ -398,3 +408,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica Bon; axes UNKNOWN under P46(a).
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science, schools from re-read Britannica. Axes still UNKNOWN.
+- 2026-10-25: adherents/estimate filled (qualitative).

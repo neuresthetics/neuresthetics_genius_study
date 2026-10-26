@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S12, P45 lower tier): filled from Flaherty, "International Raëlian
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Encyclopedia.com Raëlians (Palmer): Vorilhon/Raël 1973, Elohim DNA
       creation, atheistic UFO religion, cloning/embassy aims. Keep A=4 D=1; B C E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: RAEL
   v7_1_number: 76
@@ -55,7 +59,7 @@ classification:
     how_known: Encyclopedia.com.
   parent_traditions:
     value:
-    - 1970s French UFO milieu
+    - '1970s French UFO milieu'
     - Claims continuity with biblical prophets reinterpreted scientifically
     certainty: 1.0
     cites:
@@ -74,7 +78,7 @@ classification:
     note: Smith listed among prophets in Raëlian teaching
 origins:
   founding_era:
-    value: 1973 encounter; Madech 1974; Raëlian Movement 1976; Raëlian Religion name 1998 (US)
+    value: '1973 encounter; Madech 1974; Raëlian Movement 1976; Raëlian Religion name 1998 (US)'
     certainty: 1.0
     cites:
     - source: S2
@@ -103,7 +107,7 @@ origins:
     - source: S2
       locator: opening
     how_known: Encyclopedia.com.
-  - value: Les extra-terrestres m'ont amené sur leur planète (1975)
+  - value: "Les extra-terrestres m'ont amené sur leur planète (1975)"
     certainty: 1.0
     cites:
     - source: S2
@@ -132,7 +136,7 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5 — personal ETs, not deity in theistic sense.
+    how_known: '0.5 — personal ETs, not deity in theistic sense.'
   intervention:
     value: Past creation and prophetic contacts; expected return by ~2035 if humanity peaceful/scientific.
     stance: rare
@@ -140,15 +144,15 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   miracles:
-    value: Founding UFO encounters framed as physical events, not supernatural miracles.
+    value: 'Founding UFO encounters framed as physical events, not supernatural miracles.'
     stance: denied
     certainty: 0.5
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   petition_and_prayer:
     value: Rituals link humans to creators/infinity; not classical petitionary theism.
     stance: no petition
@@ -156,7 +160,7 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Deny human soul; aspire to physical immortality via cloning; bone sample bank for re-creation
       hope.
@@ -192,12 +196,12 @@ metaphysics:
     how_known: Silence.
   teleology_in_nature:
     value: Scientific creation by Elohim; Age of Apocalypse since Hiroshima; embassy for return.
-    stance: designer's purposes
+    stance: "designer's purposes"
     certainty: 0.5
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5 — designers are ETs.
+    how_known: '0.5 — designers are ETs.'
   necessity_and_freedom:
     value: Free choice emphasized in sexual ethics; geniocracy abandoned as political project.
     certainty: 0.5
@@ -208,23 +212,23 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 4
-    rationale: '''There is no ‘God’, Raël teaches''; the Elohim are ''an ET race of space-faring bioengineers''
-      who ''are not gods, but human beings''.'
+    rationale: "'There is no ‘God’, Raël teaches'; the Elohim are 'an ET race of space-faring bioengineers'\
+      \ who 'are not gods, but human beings'."
     certainty: 0.5
     cites:
     - source: S1
       locator: article
     how_known: 'P44(a): no God gives A 4. Capped at 0.5 (P45).'
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: Raël 'has been chosen by the Elohim as the Prophet of the Age of Apocalypse'; the message
-      rests on his reported encounters with the Elohim.
+    rationale: "Raël 'has been chosen by the Elohim as the Prophet of the Age of Apocalypse'; the message\
+      \ rests on his reported encounters with the Elohim."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -236,19 +240,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: Raël's claimed contacts and books as scientific reinterpretation of Bible; embrace science/tech;
-    sensual meditation.
+  value: "Raël's claimed contacts and books as scientific reinterpretation of Bible; embrace science/tech;\
+    \ sensual meditation."
   certainty: 1.0
   cites:
   - source: S2
     locator: opening; Practices
   how_known: Encyclopedia.com.
 ethics:
-  value: Respect for life, pacifism, tolerance, democracy, birth control, sharing resources; Structure
-    drug/alcohol abstinence; libertine reputation with enforced Structure ethics.
+  value: 'Respect for life, pacifism, tolerance, democracy, birth control, sharing resources; Structure
+    drug/alcohol abstinence; libertine reputation with enforced Structure ethics.'
   certainty: 1.0
   cites:
   - source: S2
@@ -297,7 +301,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Raëlian movement; small UFO religion; self-reported figures unreliable
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 6
@@ -306,25 +315,25 @@ v7_1_rubric:
   V: 3
   X: 1
   total: 17
-  scoring_note: Raëlism scores low due to its reliance on unverified extraterrestrial claims and revelation
-    over evidence, positioning it as a modern UFO-based movement with limited empirical grounding.
-  source: v7.1 data book, section 6 table (tables[4]) row 76 and section 7 scoring notes
+  scoring_note: 'Raëlism scores low due to its reliance on unverified extraterrestrial claims and revelation
+    over evidence, positioning it as a modern UFO-based movement with limited empirical grounding.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 76 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Raëlian / International Raëlian Movement identity.
@@ -354,7 +363,7 @@ sources:
     Lockhart (eds.), Critical Dictionary of Apocalyptic and Millenarian Movements (CDAMM), Centre for
     the Critical Study of Apocalyptic and Millenarian Movements, University of Cambridge, 15 January 2021.
     https://doi.org/10.17863/CAM.121515. Read in Wayback snapshot 2026-03-07 18:06:21 UTC: https://web.archive.org/web/20260307180621/https://www.cdamm.org/articles/international-raelian-movement.'
-  url: https://www.cdamm.org/articles/international-raelian-movement
+  url: 'https://www.cdamm.org/articles/international-raelian-movement'
   accessed: '2026-10-25'
   reliability_note: 'P45 lower tier (b), as amended 2026-10-15: a signed, editor-commissioned scholarly
     reference entry (commissioned and edited by CenSAMM, Cambridge; editors James Crossley and Alastair
@@ -363,8 +372,8 @@ sources:
 - id: S2
   type: secondary
   kind: encyclopedia
-  citation: Susan J. Palmer, "Raëlians," Encyclopedia of Religion (Encyclopedia.com).
-  url: https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/raelians
+  citation: 'Susan J. Palmer, "Raëlians," Encyclopedia of Religion (Encyclopedia.com).'
+  url: 'https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/raelians'
   accessed: '2026-10-25'
 ---
 # Raëlian Movement (RAEL)
@@ -408,3 +417,4 @@ Raëlian identity only.
 
 - Prior: A=4 D=1; P45.
 - 2026-10-25: deepened from Encyclopedia.com Raëlians (Palmer 2005). Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

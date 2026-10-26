@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11, thin): filled from Britannica "Yazīdī" (editors). A 2 (0.5, alt
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities from Britannica: family, kind, origins (Sheikh Adi; Lalish), full metaphysics
       (creator withdraws; Peacock Angel; metempsychosis; heaven/hell), practice, scriptures. Keep A=2,
       C=2; score D_authority 1 (0.5) from scripture/tradition; E stays UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: YAZID
   v7_1_number: 66
@@ -42,8 +46,8 @@ classification:
       locator: opening
     how_known: 'Britannica: Kurdish religious minority.'
   family:
-    value: Kurdish religious minority with syncretic roots (ancient Iranian, Jewish, Nestorian Christian,
-      Islamic elements); distinct endogamous community
+    value: 'Kurdish religious minority with syncretic roots (ancient Iranian, Jewish, Nestorian Christian,
+      Islamic elements); distinct endogamous community'
     certainty: 1.0
     cites:
     - source: S1
@@ -71,7 +75,7 @@ classification:
     note: both closed Middle Eastern minorities
   - code: THSAT
     relation: contrast case
-    note: Peacock Angel is not Satan worship; outsiders' mislabel
+    note: "Peacock Angel is not Satan worship; outsiders' mislabel"
 origins:
   founding_era:
     value: Distinct community by mid-12th century around Mosul after Sheikh ʿAdī (early 12th c.); beliefs
@@ -82,8 +86,8 @@ origins:
       locator: history paragraphs
     how_known: Britannica.
   founding_region:
-    value: Kurdish mountains of northern Iraq (Lālish north of Mosul); now also SE Turkey, N Syria, Caucasus,
-      Iran; diaspora in Germany
+    value: 'Kurdish mountains of northern Iraq (Lālish north of Mosul); now also SE Turkey, N Syria, Caucasus,
+      Iran; diaspora in Germany'
     certainty: 1.0
     cites:
     - source: S1
@@ -145,7 +149,7 @@ metaphysics:
     cites:
     - source: S1
       locator: cosmogony
-    how_known: Coder's reading; certainty 0.5; alternative 'rare' if control ≠ regular miracles.
+    how_known: "Coder's reading; certainty 0.5; alternative 'rare' if control ≠ regular miracles."
   miracles:
     value: Not stated as a miracle doctrine; sanjaq peacock effigies and saint cult imply sacred efficacy.
     stance: not addressed
@@ -153,9 +157,9 @@ metaphysics:
     cites:
     - source: S1
       locator: cosmogony
-    how_known: Britannica silence on 'miracles' term.
+    how_known: "Britannica silence on 'miracles' term."
   petition_and_prayer:
-    value: Worship of Malak Ṭāʾūs; annual pilgrimage to Sheikh ʿAdī's tomb at Lālish; sanjaqs circulated.
+    value: "Worship of Malak Ṭāʾūs; annual pilgrimage to Sheikh ʿAdī's tomb at Lālish; sanjaqs circulated."
     stance: petition answered
     certainty: 0.5
     cites:
@@ -178,16 +182,16 @@ metaphysics:
     cites:
     - source: S1
       locator: metempsychosis paragraph
-    how_known: Coder's reading; not karma-type law per prior P44(d) note on file.
+    how_known: "Coder's reading; not karma-type law per prior P44(d) note on file."
   authority:
-    value: Sacred scriptures (with oral-tradition caveat), Kurdish hymns, chief sheikh as supreme religious
-      head; tradition and revelation over public science.
+    value: 'Sacred scriptures (with oral-tradition caveat), Kurdish hymns, chief sheikh as supreme religious
+      head; tradition and revelation over public science.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
     - source: S1
       locator: opening; closing
-    how_known: Coder's reading of Britannica.
+    how_known: "Coder's reading of Britannica."
   reserved_exemptions:
     value: Not addressed as physics exemptions. Myth of separate creation (Adam not Eve) and purity taboos
       structure community boundaries.
@@ -216,8 +220,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 2
-    rationale: '''a supreme creator god made the world and then ended his involvement with it, leaving
-      it in the control of seven divine beings''; the chief is Malak Ṭāʾūs.'
+    rationale: "'a supreme creator god made the world and then ended his involvement with it, leaving\
+      \ it in the control of seven divine beings'; the chief is Malak Ṭāʾūs."
     certainty: 0.5
     cites:
     - source: S1
@@ -230,12 +234,12 @@ lio_axes:
         locator: cosmogony paragraph
       note: If withdrawn creator still counts as stronger transcendence pole.
   B_cause:
-    value: UNKNOWN
-    how_known: Creator withdrawal vs divine beings' control does not fix miracle/law pole clearly (P44).
+    value: 'UNKNOWN'
+    how_known: "Creator withdrawal vs divine beings' control does not fix miracle/law pole clearly (P44)."
   C_ledger:
     value: 2
-    rationale: '''The breaking of divine laws is expiated by way of metempsychosis''; ''Heaven and hell
-      are also included in Yazīdī mythology''.'
+    rationale: "'The breaking of divine laws is expiated by way of metempsychosis'; 'Heaven and hell are\
+      \ also included in Yazīdī mythology'."
     certainty: 0.5
     cites:
     - source: S1
@@ -249,8 +253,8 @@ lio_axes:
       note: If heaven/hell personal judgment is weighted more.
   D_authority:
     value: 1
-    rationale: Scriptures, hymns, and chief sheikh as supreme religious head; tradition/revelation over
-      observation. Not pure revelation pole (oral + contested book dating).
+    rationale: 'Scriptures, hymns, and chief sheikh as supreme religious head; tradition/revelation over
+      observation. Not pure revelation pole (oral + contested book dating).'
     certainty: 0.5
     cites:
     - source: S1
@@ -258,15 +262,15 @@ lio_axes:
     how_known: New from authority stance; 0.5 with UNKNOWN alternative if tradition alone is judged not
       to fix D.
     alternatives:
-    - value: UNKNOWN
+    - value: 'UNKNOWN'
       cites:
       - source: S1
         locator: closing
       note: If 19th-c. book caveat blocks scoring.
   E_scope:
-    value: UNKNOWN
-    how_known: Endogamy and separate-creation myth structure community, but E scores this-world order
-      exceptions, not salvation membership (P7). Not scored.
+    value: 'UNKNOWN'
+    how_known: 'Endogamy and separate-creation myth structure community, but E scores this-world order
+      exceptions, not salvation membership (P7). Not scored.'
 epistemology:
   value: Oral tradition and sacred books (with authenticity caveats); hymns; authority of chief sheikh.
     Esoteric community knowledge; contact with outsiders discouraged.
@@ -274,7 +278,7 @@ epistemology:
   cites:
   - source: S1
     locator: closing; purity
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 ethics:
   value: 'Religious purity: food taboos, blue clothing taboo, avoid pronouncing Shayṭān; endogamy; caste
     system. Divine-law breaking expiated via metempsychosis.'
@@ -285,16 +289,16 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Worship of Peacock Angel (peacock form; sanjaqs); annual pilgrimage to Sheikh ʿAdī's tomb at
-      Lālish; purity taboos.
+    value: "Worship of Peacock Angel (peacock form; sanjaqs); annual pilgrimage to Sheikh ʿAdī's tomb\
+      \ at Lālish; purity taboos."
     certainty: 1.0
     cites:
     - source: S1
       locator: cosmogony; closing
     how_known: Britannica.
   community_form:
-    value: Endogamous; strict caste; chief sheikh (religious) and emir (secular); 200,000–1,000,000; diaspora
-      after persecution.
+    value: 'Endogamous; strict caste; chief sheikh (religious) and emir (secular); 200,000–1,000,000;
+      diaspora after persecution.'
     certainty: 1.0
     cites:
     - source: S1
@@ -308,7 +312,7 @@ science:
     cites:
     - source: S1
       locator: purity
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Not addressed as modern science policy.
     certainty: 1.0
@@ -328,7 +332,13 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Yazidi ethno-religious community; Britannica discusses persecution/diaspora more than a fixed
+      headcount
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -337,25 +347,25 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 23
-  scoring_note: Yazidism scores moderately low due to its esoteric and oral-based nature, emphasizing
-    spiritual liberation through reincarnation and angelic veneration within a monotheistic frame.
-  source: v7.1 data book, section 6 table (tables[4]) row 66 and section 7 scoring notes
+  scoring_note: 'Yazidism scores moderately low due to its esoteric and oral-based nature, emphasizing
+    spiritual liberation through reincarnation and angelic veneration within a monotheistic frame.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 66 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Yazidi by community identity or affirmed Yazidi faith.
@@ -380,7 +390,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Yazīdī." Encyclopaedia Britannica. https://www.britannica.com/topic/Yazidi.
     Wayback Machine snapshot 2026-09-15 02:30:31 UTC: https://web.archive.org/web/20260915023031/https://www.britannica.com/topic/Yazidi.'
-  url: https://www.britannica.com/topic/Yazidi
+  url: 'https://www.britannica.com/topic/Yazidi'
   accessed: '2026-10-25'
   reliability_note: 'Unsigned editors’ article (revised by Noah Tesch); full article read. P44(e): read
     in the Wayback copy (https://web.archive.org/web/20260915023031/https://www.britannica.com/topic/Yazidi);
@@ -432,3 +442,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S11): Britannica Yazidi; A and C scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice; D_authority 1 (0.5). Re-read Britannica.
+- 2026-10-25: adherents/estimate filled (qualitative).

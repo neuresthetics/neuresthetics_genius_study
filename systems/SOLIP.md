@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S6): filled from IEP "Solipsism and the Problem of Other Minds" (Thornton).
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities: family, parents, related codes, founders, remaining metaphysics (not addressed
       / none), epistemology, ethics, practice, science, schools. Axes stay UNKNOWN (mind thesis, not God
       cosmology; P44). Source: IEP Thornton.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: SOLIP
   v7_1_number: 38
@@ -42,8 +46,8 @@ classification:
       locator: introduction
     how_known: IEP.
   family:
-    value: Metaphysical and epistemic thesis that existence, for the subject, is exhausted by their own
-      mental states; typically treated as a problem to refute rather than a school with adherents
+    value: 'Metaphysical and epistemic thesis that existence, for the subject, is exhausted by their own
+      mental states; typically treated as a problem to refute rather than a school with adherents'
     certainty: 1.0
     cites:
     - source: S1
@@ -53,7 +57,7 @@ classification:
   parent_traditions:
     value:
     - Cartesian egocentric epistemology
-    - British empiricism (Locke) on acquiring psychological concepts from one's own case
+    - "British empiricism (Locke) on acquiring psychological concepts from one's own case"
     certainty: 1.0
     cites:
     - source: S1
@@ -65,7 +69,7 @@ classification:
     note: idealism about mind/matter is not the claim that only one mind exists
   - code: PHENOM
     relation: contrast case
-    note: phenomenological bracketing is methodological, not solipsism
+    note: 'phenomenological bracketing is methodological, not solipsism'
   - code: SCEPT
     relation: overlaps
     note: methodic doubt can raise the specter; Descartes escapes via God
@@ -74,20 +78,20 @@ classification:
     note: existential first-person themes are not SOLIP
 origins:
   founding_era:
-    value: Problem crystallizes after Descartes' methodic doubt; discussed through modern empiricism and
-      Wittgenstein
+    value: "Problem crystallizes after Descartes' methodic doubt; discussed through modern empiricism\
+      \ and Wittgenstein"
     certainty: 1.0
     cites:
     - source: S1
       locator: §2
     how_known: IEP.
   founding_region:
-    value: Early modern European philosophy (France, Britain); later analytic critique (Wittgenstein)
+    value: 'Early modern European philosophy (France, Britain); later analytic critique (Wittgenstein)'
     certainty: 0.7
     cites:
     - source: S1
       locator: §2; §7
-    how_known: Coder's geographic gloss on IEP cast.
+    how_known: "Coder's geographic gloss on IEP cast."
   founders_or_key_figures:
     value:
     - René Descartes (backdrop; escapes via God)
@@ -119,8 +123,8 @@ origins:
     how_known: IEP.
 metaphysics:
   god_nature_relation:
-    value: Not addressed; Descartes escapes solipsism 'by the desperate expedient of appealing to the
-      benevolence of God'.
+    value: "Not addressed; Descartes escapes solipsism 'by the desperate expedient of appealing to the\
+      \ benevolence of God'."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -128,8 +132,8 @@ metaphysics:
       locator: §1
     how_known: IEP.
   deity_personal:
-    value: Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism; the
-      thesis itself is about minds, not theology.
+    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
+      \ the thesis itself is about minds, not theology."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -137,8 +141,8 @@ metaphysics:
       locator: §2
     how_known: IEP.
   intervention:
-    value: Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism; the
-      thesis itself is about minds, not theology.
+    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
+      \ the thesis itself is about minds, not theology."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -146,8 +150,8 @@ metaphysics:
       locator: §2
     how_known: IEP.
   miracles:
-    value: Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism; the
-      thesis itself is about minds, not theology.
+    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
+      \ the thesis itself is about minds, not theology."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -155,8 +159,8 @@ metaphysics:
       locator: §2
     how_known: IEP.
   petition_and_prayer:
-    value: Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism; the
-      thesis itself is about minds, not theology.
+    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
+      \ the thesis itself is about minds, not theology."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -164,8 +168,8 @@ metaphysics:
       locator: §2
     how_known: IEP.
   afterlife:
-    value: Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism; the
-      thesis itself is about minds, not theology.
+    value: "Not part of the solipsist doctrine. Descartes uses God's benevolence to escape solipsism;\
+      \ the thesis itself is about minds, not theology."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -173,23 +177,23 @@ metaphysics:
       locator: §2
     how_known: IEP.
   moral_ledger:
-    value: Not addressed. If only one mind is intelligible, a interpersonal divine judge is not in view.
+    value: 'Not addressed. If only one mind is intelligible, a interpersonal divine judge is not in view.'
     stance: none
     certainty: 0.7
     cites:
     - source: S1
       locator: introduction
-    how_known: Coder's reading; ethics largely absent from IEP entry.
+    how_known: "Coder's reading; ethics largely absent from IEP entry."
   authority:
-    value: Privileged access to one's own mental states is the epistemic starting point that makes solipsism
-      seem threatening; Wittgensteinian critique rejects that picture. Not revelation.
+    value: "Privileged access to one's own mental states is the epistemic starting point that makes solipsism\
+      \ seem threatening; Wittgensteinian critique rejects that picture. Not revelation."
     stance: observation and reason
     certainty: 0.5
     cites:
     - source: S1
       locator: §1; §7
-    how_known: 'Borderline: ''observation'' here is inner experience on the Cartesian picture. Certainty
-      0.5.'
+    how_known: "Borderline: 'observation' here is inner experience on the Cartesian picture. Certainty\
+      \ 0.5."
   reserved_exemptions:
     value: Not addressed as cosmology.
     stance: none
@@ -197,7 +201,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: IEP is about other minds, not exemptions from natural law.
+    how_known: 'IEP is about other minds, not exemptions from natural law.'
   teleology_in_nature:
     value: Not addressed.
     stance: none
@@ -215,30 +219,30 @@ metaphysics:
     how_known: IEP.
 lio_axes:
   A_locus:
-    value: UNKNOWN
-    how_known: Thesis about minds/existence-for-me, not a God cosmology or a public science of authority
-      (P44). Descartes' God escape is not part of SOLIP.
+    value: 'UNKNOWN'
+    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
+      \ (P44). Descartes' God escape is not part of SOLIP."
   B_cause:
-    value: UNKNOWN
-    how_known: Thesis about minds/existence-for-me, not a God cosmology or a public science of authority
-      (P44). Descartes' God escape is not part of SOLIP.
+    value: 'UNKNOWN'
+    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
+      \ (P44). Descartes' God escape is not part of SOLIP."
   C_ledger:
-    value: UNKNOWN
-    how_known: Thesis about minds/existence-for-me, not a God cosmology or a public science of authority
-      (P44). Descartes' God escape is not part of SOLIP.
+    value: 'UNKNOWN'
+    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
+      \ (P44). Descartes' God escape is not part of SOLIP."
   D_authority:
-    value: UNKNOWN
-    how_known: Thesis about minds/existence-for-me, not a God cosmology or a public science of authority
-      (P44). Descartes' God escape is not part of SOLIP.
+    value: 'UNKNOWN'
+    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
+      \ (P44). Descartes' God escape is not part of SOLIP."
   E_scope:
-    value: UNKNOWN
-    how_known: Thesis about minds/existence-for-me, not a God cosmology or a public science of authority
-      (P44). Descartes' God escape is not part of SOLIP.
+    value: 'UNKNOWN'
+    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
+      \ (P44). Descartes' God escape is not part of SOLIP."
 epistemology:
-  value: 'On the Cartesian picture: what is known most certainly are the contents of one''s own mind;
-    other minds only by analogy (then argued to fail). Wittgensteinian critique: psychological concepts
-    are learned in public language-games; private-language and privacy-of-experience theses are rejected;
-    solipsism is incoherent because it requires public language.'
+  value: "On the Cartesian picture: what is known most certainly are the contents of one's own mind; other\
+    \ minds only by analogy (then argued to fail). Wittgensteinian critique: psychological concepts are\
+    \ learned in public language-games; private-language and privacy-of-experience theses are rejected;\
+    \ solipsism is incoherent because it requires public language."
   certainty: 1.0
   cites:
   - source: S1
@@ -254,7 +258,7 @@ ethics:
   how_known: IEP silence.
 practice:
   ritual_and_practice:
-    value: None as a lived school. 'No great philosopher has espoused solipsism' [S1].
+    value: "None as a lived school. 'No great philosopher has espoused solipsism' [S1]."
     certainty: 1.0
     cites:
     - source: S1
@@ -270,8 +274,8 @@ practice:
     how_known: IEP.
 science:
   historical_stance:
-    value: Threat arises inside modern epistemology, not as a scientific research programme. Empiricist
-      psychology-from-own-case feeds the problem.
+    value: 'Threat arises inside modern epistemology, not as a scientific research programme. Empiricist
+      psychology-from-own-case feeds the problem.'
     certainty: 1.0
     cites:
     - source: S1
@@ -296,9 +300,9 @@ schools_and_variants:
     locator: introduction
 - name: Methodological / implicit solipsism in egocentric epistemologies
   form: scholastic or philosophical
-  how_it_differs: 'IEP: many post-Cartesian theories of knowledge are ''inherently solipsistic'' in starting
-    from own case without affirming the doctrine.'
-  lio_difference: Code the person's actual system (e.g. SCEPT), not SOLIP, unless they affirm the doctrine.
+  how_it_differs: "IEP: many post-Cartesian theories of knowledge are 'inherently solipsistic' in starting\
+    \ from own case without affirming the doctrine."
+  lio_difference: "Code the person's actual system (e.g. SCEPT), not SOLIP, unless they affirm the doctrine."
   certainty: 1.0
   cites:
   - source: S1
@@ -306,7 +310,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Philosophical problem/thesis; essentially no organized adherent body
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 9
@@ -315,28 +324,28 @@ v7_1_rubric:
   V: 8
   X: 4
   total: 35
-  scoring_note: Solipsism scores moderately high for its radical logical purity and focus on personal
-    certainty, but is limited by its dismissal of empirical intersubjectivity and practical applicability.
-  source: v7.1 data book, section 6 table (tables[4]) row 38 and section 7 scoring notes
+  scoring_note: 'Solipsism scores moderately high for its radical logical purity and focus on personal
+    certainty, but is limited by its dismissal of empirical intersubjectivity and practical applicability.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 38 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person's own writing affirms that only their own mind exists (rare).
+  use_when: "The person's own writing affirms that only their own mind exists (rare)."
   do_not_use_when: Methodological doubt (Descartes) is not SOLIP. Phenomenological bracketing is not SOLIP.
     Idealism is not SOLIP.
   neighbors:
@@ -355,9 +364,9 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Stephen P. Thornton
-  citation: Thornton, Stephen P. "Solipsism and the Problem of Other Minds." Internet Encyclopedia of
-    Philosophy. https://iep.utm.edu/solipsis/.
-  url: https://iep.utm.edu/solipsis/
+  citation: 'Thornton, Stephen P. "Solipsism and the Problem of Other Minds." Internet Encyclopedia of
+    Philosophy. https://iep.utm.edu/solipsis/.'
+  url: 'https://iep.utm.edu/solipsis/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; undated page.
 ---
@@ -405,3 +414,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7.
 - 2026-10-15 (systems batch S6): IEP Thornton; axes under P44.
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, practice, science, schools. Re-read IEP.
+- 2026-10-25: adherents/estimate filled (qualitative).

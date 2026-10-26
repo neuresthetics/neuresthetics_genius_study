@@ -1,137 +1,875 @@
 ---
 record:
   record_type: system
-  schema_version: "1.1"
-  record_version: 7
-  review_status: "draft — unreviewed"
-  collected_by: "Grok Bot (overnight systems run for Jason)"
-  model_used: "Grok Bot executor agent; direct reads of the cited encyclopedia entries"
-  collected_on: 2026-10-01
-  last_updated: 2026-10-02
+  schema_version: '1.1'
+  record_version: 8
+  review_status: draft — unreviewed
+  collected_by: Grok Bot (overnight systems run for Jason)
+  model_used: Grok Bot executor agent; direct reads of the cited encyclopedia entries
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "Stub created from v7.1 data book table 4 and section 7."}
-    - {date: 2026-10-01, by: scripts/make_system_stubs.py, summary: "CLTHEI relation changed to 'neighbor (easily confused)' (OPEN_DECISIONS S5)."}
-    - {date: 2026-10-01, by: "Grok Bot", summary: "Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding guidance filled from ten SEP entries. v7.1 scores and note unchanged. Not reviewed."}
-    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix: D_authority how_known reworded so it agrees with the Aquinas person record (D 1); 2 stays the score for the code, between Thomism and falsafa. No score changed. Not reviewed."}
-    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7 (which domain E is scored on). Score and certainty unchanged. Not reviewed."}
-    - {date: 2026-10-02, by: "Grok Bot", summary: "P7 decided (option 1): E_scope rescored on the world's order. Value and certainty unchanged (3 at 0.5); salvation needing revealed truths and creation ordered for intellectual beings are no longer reasons. The limits are now the Thomist miracle and immaterial rational souls. Salvation noted under C_ledger (C score unchanged). Not reviewed."}
-    - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit runs 2–3 (#62, #61): E_scope how_known notes that the Aquinas person record now also scores E 3 under P7. D_authority 2 (code-wide) against Aquinas 1 (his own ranking) is unchanged; it was already explained after #61. No score changed. Not reviewed."}
+  - date: '2026-10-01'
+    by: scripts/make_system_stubs.py
+    summary: Stub created from v7.1 data book table 4 and section 7.
+  - date: '2026-10-01'
+    by: scripts/make_system_stubs.py
+    summary: "CLTHEI relation changed to 'neighbor (easily confused)' (OPEN_DECISIONS S5)."
+  - date: '2026-10-01'
+    by: Grok Bot
+    summary: 'Draft: classification, origins, metaphysics, LIO axes (0–4, P1), science, schools and coding
+      guidance filled from ten SEP entries. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-02'
+    by: Grok Bot
+    summary: 'Lens audit fix: D_authority how_known reworded so it agrees with the Aquinas person record
+      (D 1); 2 stays the score for the code, between Thomism and falsafa. No score changed. Not reviewed.'
+  - date: '2026-10-02'
+    by: Grok Bot
+    summary: 'Lens audit, run 2: E_scope how_known names the domain scored and points to open item P7
+      (which domain E is scored on). Score and certainty unchanged. Not reviewed.'
+  - date: '2026-10-02'
+    by: Grok Bot
+    summary: "P7 decided (option 1): E_scope rescored on the world's order. Value and certainty unchanged\
+      \ (3 at 0.5); salvation needing revealed truths and creation ordered for intellectual beings are\
+      \ no longer reasons. The limits are now the Thomist miracle and immaterial rational souls. Salvation\
+      \ noted under C_ledger (C score unchanged). Not reviewed."
+  - date: '2026-10-02'
+    by: Grok Bot
+    summary: 'Lens audit runs 2–3 (#62, #61): E_scope how_known notes that the Aquinas person record now
+      also scores E 3 under P7. D_authority 2 (code-wide) against Aquinas 1 (his own ranking) is unchanged;
+      it was already explained after #61. No score changed. Not reviewed.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: CLASS_THEISM
   v7_1_number: 27
-  v7_1_label: "Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic)"
-  display_label: "Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic)"
-  label_status: "as in v7.1"
-  aliases: ["classical theism", "perfect being theology (classical camp)", "Aristotelian-Thomistic-Falsafa theism", "doctrine of divine simplicity (DDS) theism"]
+  v7_1_label: Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic)
+  display_label: Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic)
+  label_status: as in v7.1
+  aliases:
+  - classical theism
+  - perfect being theology (classical camp)
+  - Aristotelian-Thomistic-Falsafa theism
+  - doctrine of divine simplicity (DDS) theism
 classification:
-  kind: {value: "family of positions", certainty: 0.7, cites: [{source: S1, locator: "§2.2 Models of God"}, {source: S2, locator: "introduction"}], how_known: "SEP treats classical theism as one camp of 'perfect being theology', held by Christian, Jewish and Muslim thinkers. It is a philosophical-theological position shared across religions, not a religion of its own. Coder's reading, so 0.7."}
-  family: {value: "Abrahamic monotheism, philosophical form: perfect being theology, classical camp (God simple, immutable, impassible, necessary)", certainty: 1.0, cites: [{source: S1, locator: "§2.2"}, {source: S2, locator: "introduction; §1"}], how_known: "SEP definitions."}
-  parent_traditions:
-    value: ["Greek philosophical idea of perfect ultimacy (Aristotle; Neoplatonic emanation in the Arabic tradition)", "Jewish idea of a single God who acts in history", "Arabic falsafa (al-Farabi, Avicenna, Averroes)"]
+  kind:
+    value: family of positions
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2.2 Models of God
+    - source: S2
+      locator: introduction
+    how_known: "SEP treats classical theism as one camp of 'perfect being theology', held by Christian,\
+      \ Jewish and Muslim thinkers. It is a philosophical-theological position shared across religions,\
+      \ not a religion of its own. Coder's reading, so 0.7."
+  family:
+    value: 'Abrahamic monotheism, philosophical form: perfect being theology, classical camp (God simple,
+      immutable, impassible, necessary)'
     certainty: 1.0
-    cites: [{source: S1, locator: "§2.2"}, {source: S4, locator: "§3; §5"}, {source: S5, locator: "§2"}]
-    how_known: "SEP: perfect being theology came from fusing the Jewish idea of a single God that acts in history with the Greek idea of perfect ultimacy; Avicenna's system is Aristotelian physics and metaphysics capped with Neoplatonic emanationism."
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S2
+      locator: introduction; §1
+    how_known: SEP definitions.
+  parent_traditions:
+    value:
+    - Greek philosophical idea of perfect ultimacy (Aristotle; Neoplatonic emanation in the Arabic tradition)
+    - Jewish idea of a single God who acts in history
+    - 'Arabic falsafa (al-Farabi, Avicenna, Averroes)'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S4
+      locator: §3; §5
+    - source: S5
+      locator: §2
+    how_known: "SEP: perfect being theology came from fusing the Jewish idea of a single God that acts\
+      \ in history with the Greek idea of perfect ultimacy; Avicenna's system is Aristotelian physics\
+      \ and metaphysics capped with Neoplatonic emanationism."
   related_codes:
-    - {code: CLTHEI, relation: "neighbor (easily confused)", note: "v7.1 coding rule: CLASS_THEISM is not CLTHEI"}
-    - {code: CHRIST, relation: "neighbor (easily confused)", note: "Thomism is a Christian school; code CHRIST when the person's working view is the confessed religion rather than this philosophical God"}
-    - {code: ISLAM, relation: "neighbor (easily confused)", note: "falsafa is an Islamic-world school; Ash'arite kalam is its main critic"}
-    - {code: JUDA, relation: "neighbor (easily confused)", note: "Maimonides"}
-    - {code: ARIST, relation: "parent tradition"}
-    - {code: PLATO, relation: "parent tradition", note: "Neoplatonic emanationism in the Arabic tradition (S4 §5)"}
-    - {code: DEISM, relation: "neighbor (easily confused)", note: "SEP files deism with classical theism among the theistic dualisms; the deist God leaves the world to run on its own"}
+  - code: CLTHEI
+    relation: neighbor (easily confused)
+    note: 'v7.1 coding rule: CLASS_THEISM is not CLTHEI'
+  - code: CHRIST
+    relation: neighbor (easily confused)
+    note: "Thomism is a Christian school; code CHRIST when the person's working view is the confessed\
+      \ religion rather than this philosophical God"
+  - code: ISLAM
+    relation: neighbor (easily confused)
+    note: "falsafa is an Islamic-world school; Ash'arite kalam is its main critic"
+  - code: JUDA
+    relation: neighbor (easily confused)
+    note: Maimonides
+  - code: ARIST
+    relation: parent tradition
+  - code: PLATO
+    relation: parent tradition
+    note: Neoplatonic emanationism in the Arabic tradition (S4 §5)
+  - code: DEISM
+    relation: neighbor (easily confused)
+    note: SEP files deism with classical theism among the theistic dualisms; the deist God leaves the
+      world to run on its own
 origins:
-  founding_era: {value: "Roots in the Hellenistic era (perfect being theology); the classical synthesis is medieval: al-Farabi (d. 950), Avicenna (ca. 970–1037), Averroes (1126–1198), Maimonides (Guide completed 1190), Aquinas (ca. 1225–1274). SEP dates the split between 'classical theists' and 'theistic personalists' to perhaps as early as 1644.", certainty: 1.0, cites: [{source: S1, locator: "§2.2"}, {source: S3, locator: "introduction"}, {source: S4, locator: "§1.1"}, {source: S6, locator: "§1"}, {source: S11, locator: "introduction"}], how_known: "Dates as given in the SEP entries."}
-  founding_region: {value: "Eastern Mediterranean and Islamic world (Baghdad, Khurasan and Persia, al-Andalus, Egypt) and Latin Europe (Paris, Italy).", certainty: 0.7, cites: [{source: S4, locator: "§1.1"}, {source: S11, locator: "§1"}, {source: S3, locator: "§1.1"}, {source: S6, locator: "§1"}], how_known: "Places of the key figures as given in SEP. A founding region for a cross-religious school is a coder's summary, so 0.7."}
-  founders_or_key_figures: {value: ["Thomas Aquinas", "Avicenna (Ibn Sina)", "al-Farabi", "Averroes (Ibn Rushd)", "Moses Maimonides", "Augustine", "Anselm", "later Thomists: John Capreolus, Cajetan, Francisco Suárez; 20th-century: Jacques Maritain, Etienne Gilson, Elizabeth Anscombe, Alasdair MacIntyre"], certainty: 1.0, cites: [{source: S2, locator: "introduction"}, {source: S3, locator: "§9 Influence"}, {source: S5, locator: "§2.2.2; §3.3"}, {source: S6, locator: "§4"}], how_known: "Named as classical theists or as holders of the doctrine of divine simplicity in SEP. The v7.1 scoring note also names Aristotle and Leibniz; see review flags."}
+  founding_era:
+    value: "Roots in the Hellenistic era (perfect being theology); the classical synthesis is medieval:\
+      \ al-Farabi (d. 950), Avicenna (ca. 970–1037), Averroes (1126–1198), Maimonides (Guide completed\
+      \ 1190), Aquinas (ca. 1225–1274). SEP dates the split between 'classical theists' and 'theistic\
+      \ personalists' to perhaps as early as 1644."
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S3
+      locator: introduction
+    - source: S4
+      locator: §1.1
+    - source: S6
+      locator: §1
+    - source: S11
+      locator: introduction
+    how_known: Dates as given in the SEP entries.
+  founding_region:
+    value: 'Eastern Mediterranean and Islamic world (Baghdad, Khurasan and Persia, al-Andalus, Egypt)
+      and Latin Europe (Paris, Italy).'
+    certainty: 0.7
+    cites:
+    - source: S4
+      locator: §1.1
+    - source: S11
+      locator: §1
+    - source: S3
+      locator: §1.1
+    - source: S6
+      locator: §1
+    how_known: "Places of the key figures as given in SEP. A founding region for a cross-religious school\
+      \ is a coder's summary, so 0.7."
+  founders_or_key_figures:
+    value:
+    - Thomas Aquinas
+    - Avicenna (Ibn Sina)
+    - al-Farabi
+    - Averroes (Ibn Rushd)
+    - Moses Maimonides
+    - Augustine
+    - Anselm
+    - 'later Thomists: John Capreolus, Cajetan, Francisco Suárez; 20th-century: Jacques Maritain, Etienne
+      Gilson, Elizabeth Anscombe, Alasdair MacIntyre'
+    certainty: 1.0
+    cites:
+    - source: S2
+      locator: introduction
+    - source: S3
+      locator: §9 Influence
+    - source: S5
+      locator: §2.2.2; §3.3
+    - source: S6
+      locator: §4
+    how_known: Named as classical theists or as holders of the doctrine of divine simplicity in SEP. The
+      v7.1 scoring note also names Aristotle and Leibniz; see review flags.
   key_texts:
-    - {value: "Summa theologiae", author: "Thomas Aquinas", year: "before 1274 (left unfinished)", certainty: 1.0, cites: [{source: S3, locator: "§1.1; §2"}], how_known: "SEP: Aquinas 'nearly, but not quite, finished' it before he stopped writing; §2 sets out the five ways and the divine attributes (ST 1a 2–14)."}
-    - {value: "Summa contra gentiles", author: "Thomas Aquinas", year: "13th century", certainty: 1.0, cites: [{source: S3, locator: "§1.1"}], how_known: "SEP names it as one of his two most important works."}
-    - {value: "The Cure (al-Shifāʾ), including its Physics and Metaphysics", author: "Avicenna (Ibn Sina)", year: "before 1037", certainty: 1.0, cites: [{source: S4, locator: "§1.1; §1.2"}, {source: S5, locator: "§2.2.2"}], how_known: "SEP: his major work; his most developed account of the efficient cause is in its Physics and Metaphysics."}
-    - {value: "The Guide of the Perplexed", author: "Moses Maimonides", year: 1190, certainty: 1.0, cites: [{source: S6, locator: "§1"}], how_known: "SEP: completed in 1190."}
-    - {value: "The Incoherence of the Incoherence (Tahāfut al-Tahāfut)", author: "Averroes (Ibn Rushd)", year: "12th century", certainty: 1.0, cites: [{source: S11, locator: "§1"}, {source: S5, locator: "§3.3.2"}], how_known: "SEP: a direct response to al-Ghazali's Incoherence of the Philosophers."}
+  - value: Summa theologiae
+    author: Thomas Aquinas
+    year: before 1274 (left unfinished)
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §1.1; §2
+    how_known: "SEP: Aquinas 'nearly, but not quite, finished' it before he stopped writing; §2 sets out\
+      \ the five ways and the divine attributes (ST 1a 2–14)."
+  - value: Summa contra gentiles
+    author: Thomas Aquinas
+    year: '13th century'
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §1.1
+    how_known: SEP names it as one of his two most important works.
+  - value: 'The Cure (al-Shifāʾ), including its Physics and Metaphysics'
+    author: Avicenna (Ibn Sina)
+    year: before 1037
+    certainty: 1.0
+    cites:
+    - source: S4
+      locator: §1.1; §1.2
+    - source: S5
+      locator: §2.2.2
+    how_known: 'SEP: his major work; his most developed account of the efficient cause is in its Physics
+      and Metaphysics.'
+  - value: The Guide of the Perplexed
+    author: Moses Maimonides
+    year: 1190
+    certainty: 1.0
+    cites:
+    - source: S6
+      locator: §1
+    how_known: 'SEP: completed in 1190.'
+  - value: The Incoherence of the Incoherence (Tahāfut al-Tahāfut)
+    author: Averroes (Ibn Rushd)
+    year: '12th century'
+    certainty: 1.0
+    cites:
+    - source: S11
+      locator: §1
+    - source: S5
+      locator: §3.3.2
+    how_known: "SEP: a direct response to al-Ghazali's Incoherence of the Philosophers."
 metaphysics:
-  god_nature_relation: {value: "God is the creator and sustainer of a world that is distinct from God and depends on God at every moment. In Aquinas the world is created freely and out of nothing; in Avicenna it proceeds from God through a hierarchy of intellects (emanation).", stance: "creator distinct from creation", certainty: 1.0, cites: [{source: S1, locator: "§2.2"}, {source: S3, locator: "§3"}, {source: S6, locator: "§5"}], how_known: "SEP files classical theism among the theistic dualisms; Aquinas on creation ex nihilo and conservation; Maimonides' summary of the Aristotelian emanation scheme."}
-  deity_personal: {value: "God is simple, immutable and impassible. SEP says classical theists 'deny or weaken God’s personhood to save the Greek perfections such as impassibility, immutability and simplicity'. Aquinas speaks of God's knowledge and will, but only by analogy; Maimonides allows only negations and 'attributes of action'.", stance: "both / disputed", certainty: 1.0, cites: [{source: S1, locator: "§2.2"}, {source: S3, locator: "§2"}, {source: S6, locator: "§4"}], how_known: "SEP states the point directly."}
-  intervention: {value: "All schools hold that God conserves the world at every moment. They split on particular intervention: on the traditional reading Avicenna's God 'cannot intermittently intervene in natural events', while Aquinas holds that God can act beyond the power of nature (miracles) and that everything is subject to providence.", stance: "varies by school", certainty: 1.0, cites: [{source: S5, locator: "§3.3.4"}, {source: S3, locator: "§3; §7"}, {source: S8, locator: "§1.1"}], how_known: "SEP entries on causation in Arabic thought and on Aquinas."}
-  miracles: {value: "Aquinas defines a miracle as an event that exceeds the productive power of nature (SCG 3.103) and affirms them. Maimonides plays miracles down ('his naturalism makes him suspicious of miracles'). Al-Ghazali attacked the philosophers' causal necessity 'to safeguard belief in miracles and divine omnipotence', because Avicenna's and Averroes' accounts of God conflict with them.", stance: "varies by school", certainty: 1.0, cites: [{source: S8, locator: "§1.1"}, {source: S6, locator: "§1; §7"}, {source: S5, locator: "§3.3.4"}], how_known: "SEP entries."}
-  petition_and_prayer: {value: "Prayer is kept, but it does not change God. Aquinas: 'We pray not in order to change the divine disposition but for the sake of acquiring by petitionary prayer what God has disposed to be achieved by prayer'. Maimonides holds daily prayer mandatory but reads its terms as negations or effects of divine action. Avicenna treats acts of worship as reminders of the afterlife and exercises for the rational soul.", stance: "varies by school", certainty: 1.0, cites: [{source: S7, locator: "§2"}, {source: S6, locator: "§4"}, {source: S4, locator: "§4 (Metaphysics of the Cure, Book 10, ch. 3)"}], how_known: "SEP entries. SEP's petitionary-prayer entry notes that Aquinas's view seems to deny that petitions are effective in its sense."}
-  afterlife: {value: "The rational soul survives death in all the main schools. Aquinas: the incorruptible soul continues after death, and the next life is 'a paradise or a hell'. Avicenna: the immortal rational soul has bliss or misery according to its perfection through knowledge. Maimonides' conception of the afterlife is 'purely intellectual'.", stance: "personal afterlife", certainty: 0.7, cites: [{source: S3, locator: "§5"}, {source: S4, locator: "§4"}, {source: S6, locator: "§1"}], how_known: "SEP entries. Stance is a coder's summary: whether a purely intellectual survival is 'personal' is not settled in the sources, so 0.7.", alternatives: [{value: "impersonal survival or eternity (Maimonidean and Avicennian intellectual survival read as impersonal)", cites: [{source: S6, locator: "§1"}, {source: S4, locator: "§4"}], note: "Not argued in these sources; listed so a reviewer can decide."}]}
-  moral_ledger: {value: "Aquinas: salvation in the life to come is the ultimate goal and requires revealed truths, with paradise or hell after death. Avicenna: 'real happiness is the perfection of the rational soul through knowledge', and bliss or misery follow from the soul's own state.", stance: "varies by school", certainty: 0.7, cites: [{source: S3, locator: "§2; §5; §8.1"}, {source: S4, locator: "§4"}], how_known: "Coder's reading of SEP's summaries."}
-  authority: {value: "Reason can prove that God exists and many of God's attributes (Aquinas's five ways; Maimonides' cosmological proofs). In Aquinas, revelation is needed for truths that surpass reason (Trinity, Incarnation), and the key is to see where philosophy can serve 'and where it must give way to revealed doctrine'. In falsafa the prophet is an intellect of extraordinary power, and religion passes truth 'to the masses via narrative and metaphor'.", stance: "varies by school", certainty: 1.0, cites: [{source: S3, locator: "§2; §3"}, {source: S6, locator: "§4"}, {source: S4, locator: "§3; §4"}, {source: S5, locator: "§3.3.4"}], how_known: "SEP entries state each position."}
-  reserved_exemptions: {value: "Some, in the Thomist form: miracles that exceed nature, and truths of faith that philosophy cannot reach. The falsafa form (Avicenna, Averroes) keeps causal necessity in nature and leaves little room for exemptions.", stance: some, certainty: 0.7, cites: [{source: S8, locator: "§1.1"}, {source: S3, locator: "§2"}, {source: S5, locator: "§3.3.2; §3.3.4"}], how_known: "Coder's reading across the schools."}
-  teleology_in_nature: {value: "Strong teleology. Aquinas: creation has a purpose, and 'the whole universe, with its individual parts, is ordered to God as its end'; the rest of creation is organised for the sake of intellectual beings.", stance: "designer's purposes", certainty: 1.0, cites: [{source: S3, locator: "§3"}], how_known: "SEP quotes ST 1a 65.2c and SCG III.112."}
-  necessity_and_freedom: {value: "God's existence is necessary; whether creation is necessary splits the schools. Aquinas: God was free not to create and free to create otherwise. Avicenna: God is 'necessary of existence' by itself, and natural causes necessitate their effects; Averroes defends causal necessity in nature against al-Ghazali. Critics press a 'modal collapse' objection against divine simplicity. On human freedom, readers of Aquinas are divided over whether the will is a first, undetermined cause.", certainty: 1.0, cites: [{source: S3, locator: "§3; §7"}, {source: S5, locator: "§3.2; §3.3.1; §3.3.2"}, {source: S2, locator: "§7"}], how_known: "SEP entries."}
+  god_nature_relation:
+    value: God is the creator and sustainer of a world that is distinct from God and depends on God at
+      every moment. In Aquinas the world is created freely and out of nothing; in Avicenna it proceeds
+      from God through a hierarchy of intellects (emanation).
+    stance: creator distinct from creation
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S3
+      locator: §3
+    - source: S6
+      locator: §5
+    how_known: "SEP files classical theism among the theistic dualisms; Aquinas on creation ex nihilo\
+      \ and conservation; Maimonides' summary of the Aristotelian emanation scheme."
+  deity_personal:
+    value: "God is simple, immutable and impassible. SEP says classical theists 'deny or weaken God’s\
+      \ personhood to save the Greek perfections such as impassibility, immutability and simplicity'.\
+      \ Aquinas speaks of God's knowledge and will, but only by analogy; Maimonides allows only negations\
+      \ and 'attributes of action'."
+    stance: both / disputed
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S3
+      locator: §2
+    - source: S6
+      locator: §4
+    how_known: SEP states the point directly.
+  intervention:
+    value: "All schools hold that God conserves the world at every moment. They split on particular intervention:\
+      \ on the traditional reading Avicenna's God 'cannot intermittently intervene in natural events',\
+      \ while Aquinas holds that God can act beyond the power of nature (miracles) and that everything\
+      \ is subject to providence."
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S5
+      locator: §3.3.4
+    - source: S3
+      locator: §3; §7
+    - source: S8
+      locator: §1.1
+    how_known: SEP entries on causation in Arabic thought and on Aquinas.
+  miracles:
+    value: "Aquinas defines a miracle as an event that exceeds the productive power of nature (SCG 3.103)\
+      \ and affirms them. Maimonides plays miracles down ('his naturalism makes him suspicious of miracles').\
+      \ Al-Ghazali attacked the philosophers' causal necessity 'to safeguard belief in miracles and divine\
+      \ omnipotence', because Avicenna's and Averroes' accounts of God conflict with them."
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S8
+      locator: §1.1
+    - source: S6
+      locator: §1; §7
+    - source: S5
+      locator: §3.3.4
+    how_known: SEP entries.
+  petition_and_prayer:
+    value: "Prayer is kept, but it does not change God. Aquinas: 'We pray not in order to change the divine\
+      \ disposition but for the sake of acquiring by petitionary prayer what God has disposed to be achieved\
+      \ by prayer'. Maimonides holds daily prayer mandatory but reads its terms as negations or effects\
+      \ of divine action. Avicenna treats acts of worship as reminders of the afterlife and exercises\
+      \ for the rational soul."
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S7
+      locator: §2
+    - source: S6
+      locator: §4
+    - source: S4
+      locator: '§4 (Metaphysics of the Cure, Book 10, ch. 3)'
+    how_known: "SEP entries. SEP's petitionary-prayer entry notes that Aquinas's view seems to deny that\
+      \ petitions are effective in its sense."
+  afterlife:
+    value: "The rational soul survives death in all the main schools. Aquinas: the incorruptible soul\
+      \ continues after death, and the next life is 'a paradise or a hell'. Avicenna: the immortal rational\
+      \ soul has bliss or misery according to its perfection through knowledge. Maimonides' conception\
+      \ of the afterlife is 'purely intellectual'."
+    stance: personal afterlife
+    certainty: 0.7
+    cites:
+    - source: S3
+      locator: §5
+    - source: S4
+      locator: §4
+    - source: S6
+      locator: §1
+    how_known: "SEP entries. Stance is a coder's summary: whether a purely intellectual survival is 'personal'\
+      \ is not settled in the sources, so 0.7."
+    alternatives:
+    - value: impersonal survival or eternity (Maimonidean and Avicennian intellectual survival read as
+        impersonal)
+      cites:
+      - source: S6
+        locator: §1
+      - source: S4
+        locator: §4
+      note: Not argued in these sources; listed so a reviewer can decide.
+  moral_ledger:
+    value: "Aquinas: salvation in the life to come is the ultimate goal and requires revealed truths,\
+      \ with paradise or hell after death. Avicenna: 'real happiness is the perfection of the rational\
+      \ soul through knowledge', and bliss or misery follow from the soul's own state."
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S3
+      locator: §2; §5; §8.1
+    - source: S4
+      locator: §4
+    how_known: "Coder's reading of SEP's summaries."
+  authority:
+    value: "Reason can prove that God exists and many of God's attributes (Aquinas's five ways; Maimonides'\
+      \ cosmological proofs). In Aquinas, revelation is needed for truths that surpass reason (Trinity,\
+      \ Incarnation), and the key is to see where philosophy can serve 'and where it must give way to\
+      \ revealed doctrine'. In falsafa the prophet is an intellect of extraordinary power, and religion\
+      \ passes truth 'to the masses via narrative and metaphor'."
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §2; §3
+    - source: S6
+      locator: §4
+    - source: S4
+      locator: §3; §4
+    - source: S5
+      locator: §3.3.4
+    how_known: SEP entries state each position.
+  reserved_exemptions:
+    value: 'Some, in the Thomist form: miracles that exceed nature, and truths of faith that philosophy
+      cannot reach. The falsafa form (Avicenna, Averroes) keeps causal necessity in nature and leaves
+      little room for exemptions.'
+    stance: some
+    certainty: 0.7
+    cites:
+    - source: S8
+      locator: §1.1
+    - source: S3
+      locator: §2
+    - source: S5
+      locator: §3.3.2; §3.3.4
+    how_known: "Coder's reading across the schools."
+  teleology_in_nature:
+    value: "Strong teleology. Aquinas: creation has a purpose, and 'the whole universe, with its individual\
+      \ parts, is ordered to God as its end'; the rest of creation is organised for the sake of intellectual\
+      \ beings."
+    stance: "designer's purposes"
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §3
+    how_known: SEP quotes ST 1a 65.2c and SCG III.112.
+  necessity_and_freedom:
+    value: "God's existence is necessary; whether creation is necessary splits the schools. Aquinas: God\
+      \ was free not to create and free to create otherwise. Avicenna: God is 'necessary of existence'\
+      \ by itself, and natural causes necessitate their effects; Averroes defends causal necessity in\
+      \ nature against al-Ghazali. Critics press a 'modal collapse' objection against divine simplicity.\
+      \ On human freedom, readers of Aquinas are divided over whether the will is a first, undetermined\
+      \ cause."
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §3; §7
+    - source: S5
+      locator: §3.2; §3.3.1; §3.3.2
+    - source: S2
+      locator: §7
+    how_known: SEP entries.
 lio_axes:
-  A_locus: {value: 1, rationale: "Leans to the interventionist pole: God is transcendent and distinct from the world, the creator and conserver of everything. It is not the pole itself, because classical theists weaken God's personhood (analogy, negative theology) and hold God present everywhere as sustaining cause. Not identity with the world.", certainty: 0.7, cites: [{source: S1, locator: "§2.2"}, {source: S2, locator: "introduction"}, {source: S3, locator: "§2; §3"}], how_known: "Scored on the 0–4 scale (P1). 0.7: coder's reading of what the sources state."}
-  B_cause: {value: 3, rationale: "Leans LIO: nature runs by secondary causes and, in falsafa, by necessary causal connections; God does not change his will in answer to prayer. The stated, limited exception is the Thomist miracle, an event exceeding the power of nature. The falsafa form (Avicenna, Averroes) sits nearer the pole, since on the traditional reading God cannot intermittently intervene.", certainty: 0.7, cites: [{source: S5, locator: "§3.3.2; §3.3.4"}, {source: S7, locator: "§2"}, {source: S8, locator: "§1.1"}], how_known: "0–4 scale (P1). Schools run from 3 (Aquinas, Maimonides) to about 4 (Avicenna); 3 is the score for the code as a whole."}
-  C_ledger: {value: 2, rationale: "Mixed: the Thomist form keeps reward and punishment of persons after death (paradise or hell, salvation as the goal); the Avicennian form makes bliss or misery follow from the soul's own perfection through knowledge, and Maimonides' afterlife is purely intellectual, which is closer to impersonal consequence. Under decision P7, Aquinas's view that salvation needs revealed truths (S3, §2) is scored here, not on E.", certainty: 0.5, cites: [{source: S3, locator: "§5; §8.1"}, {source: S4, locator: "§4"}, {source: S6, locator: "§1"}, {source: S3, locator: "§2"}], how_known: "0–4 scale (P1). 0.5 because the schools differ on this axis."}
-  D_authority: {value: 2, rationale: "Mixed, by domain: reason proves God and much about God, and philosophy cannot threaten faith; but for truths that surpass reason, revelation decides (Aquinas). Falsafa leans further to reason (prophecy as superior intellect; scripture as metaphor for the many).", certainty: 0.7, cites: [{source: S3, locator: "§2; §3"}, {source: S4, locator: "§3; §4"}, {source: S5, locator: "§3.3.4"}], how_known: "0–4 scale (P1). Score 2 is defined as holding both poles in different domains; 2 is a middle score for the code between Thomism and falsafa. SEP describes Aquinas holding reason and revelation in different domains, but the Aquinas person record scores him 1, because his stated ranking puts revelation over contrary findings (ST I q. 1 a. 6); falsafa sits nearer 3. Both are named alternatives, so 0.7 (CODING_GUIDE §3)."}
-  E_scope: {value: 3, rationale: "Scored on the world's order (decision P7). Leans LIO: one natural order and one set of natural causes for all bodies, and Avicenna's providence reaches particular events only through a 'universal order' in which fire burns anything receptive of burning, the poor man's cloak included (S5, §3.3.4). God does not change his will in answer to prayer (S7, §2). Limited exceptions: the Thomist miracle, an event exceeding the power of nature (S8, §1.1; S5, §3.3.2), and rational souls, which are immaterial and survive death (S3, §5). The falsafa form, on which God 'cannot intermittently intervene', sits nearer 4. Whether salvation needs revealed truths (S3, §2) is scored on C, not here.", certainty: 0.5, cites: [{source: S5, locator: "§3.3.2; §3.3.4"}, {source: S3, locator: "§2; §3; §5"}, {source: S7, locator: "§2"}, {source: S8, locator: "§1.1"}], how_known: "0–4 scale (P1). The sources do not address this axis directly; 0.5 because it is a reconstruction. Rescored on the world's order after decision P7 (2026-10-02); the value is unchanged from the earlier score (3 at 0.5), which also counted salvation and the ordering of creation for intellectual beings. The Aquinas person record also scores E 3 under P7 (universal providence; miracles the limited exception), so the system/person mismatch noted by lens run 3 (#62) is gone."}
-epistemology: {value: "Demonstration from the observed world to its first cause (Aquinas's five ways; Maimonides' and Avicenna's cosmological arguments), followed by analogical or negative talk about God's nature. Avicenna's 'rationalist empiricism' grounds knowledge in abstraction and syllogism, with the intelligibles available to any intellect that works for them.", certainty: 1.0, cites: [{source: S3, locator: "§2"}, {source: S6, locator: "§4"}, {source: S4, locator: "§3"}], how_known: "SEP entries."}
-ethics: {value: "Aquinas: happiness as the final end, natural law and the virtues, with salvation in the life to come as the ultimate goal. Avicenna: real happiness is the perfection of the rational soul through knowledge; practical philosophy rests on prophetic legislation.", certainty: 1.0, cites: [{source: S3, locator: "§8"}, {source: S4, locator: "§1.2; §4"}], how_known: "SEP entries (section headings and summaries)."}
+  A_locus:
+    value: 1
+    rationale: "Leans to the interventionist pole: God is transcendent and distinct from the world, the\
+      \ creator and conserver of everything. It is not the pole itself, because classical theists weaken\
+      \ God's personhood (analogy, negative theology) and hold God present everywhere as sustaining cause.\
+      \ Not identity with the world."
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2.2
+    - source: S2
+      locator: introduction
+    - source: S3
+      locator: §2; §3
+    how_known: "Scored on the 0–4 scale (P1). 0.7: coder's reading of what the sources state."
+  B_cause:
+    value: 3
+    rationale: 'Leans LIO: nature runs by secondary causes and, in falsafa, by necessary causal connections;
+      God does not change his will in answer to prayer. The stated, limited exception is the Thomist miracle,
+      an event exceeding the power of nature. The falsafa form (Avicenna, Averroes) sits nearer the pole,
+      since on the traditional reading God cannot intermittently intervene.'
+    certainty: 0.7
+    cites:
+    - source: S5
+      locator: §3.3.2; §3.3.4
+    - source: S7
+      locator: §2
+    - source: S8
+      locator: §1.1
+    how_known: '0–4 scale (P1). Schools run from 3 (Aquinas, Maimonides) to about 4 (Avicenna); 3 is the
+      score for the code as a whole.'
+  C_ledger:
+    value: 2
+    rationale: "Mixed: the Thomist form keeps reward and punishment of persons after death (paradise or\
+      \ hell, salvation as the goal); the Avicennian form makes bliss or misery follow from the soul's\
+      \ own perfection through knowledge, and Maimonides' afterlife is purely intellectual, which is closer\
+      \ to impersonal consequence. Under decision P7, Aquinas's view that salvation needs revealed truths\
+      \ (S3, §2) is scored here, not on E."
+    certainty: 0.5
+    cites:
+    - source: S3
+      locator: §5; §8.1
+    - source: S4
+      locator: §4
+    - source: S6
+      locator: §1
+    - source: S3
+      locator: §2
+    how_known: '0–4 scale (P1). 0.5 because the schools differ on this axis.'
+  D_authority:
+    value: 2
+    rationale: 'Mixed, by domain: reason proves God and much about God, and philosophy cannot threaten
+      faith; but for truths that surpass reason, revelation decides (Aquinas). Falsafa leans further to
+      reason (prophecy as superior intellect; scripture as metaphor for the many).'
+    certainty: 0.7
+    cites:
+    - source: S3
+      locator: §2; §3
+    - source: S4
+      locator: §3; §4
+    - source: S5
+      locator: §3.3.4
+    how_known: '0–4 scale (P1). Score 2 is defined as holding both poles in different domains; 2 is a
+      middle score for the code between Thomism and falsafa. SEP describes Aquinas holding reason and
+      revelation in different domains, but the Aquinas person record scores him 1, because his stated
+      ranking puts revelation over contrary findings (ST I q. 1 a. 6); falsafa sits nearer 3. Both are
+      named alternatives, so 0.7 (CODING_GUIDE §3).'
+  E_scope:
+    value: 3
+    rationale: "Scored on the world's order (decision P7). Leans LIO: one natural order and one set of\
+      \ natural causes for all bodies, and Avicenna's providence reaches particular events only through\
+      \ a 'universal order' in which fire burns anything receptive of burning, the poor man's cloak included\
+      \ (S5, §3.3.4). God does not change his will in answer to prayer (S7, §2). Limited exceptions: the\
+      \ Thomist miracle, an event exceeding the power of nature (S8, §1.1; S5, §3.3.2), and rational souls,\
+      \ which are immaterial and survive death (S3, §5). The falsafa form, on which God 'cannot intermittently\
+      \ intervene', sits nearer 4. Whether salvation needs revealed truths (S3, §2) is scored on C, not\
+      \ here."
+    certainty: 0.5
+    cites:
+    - source: S5
+      locator: §3.3.2; §3.3.4
+    - source: S3
+      locator: §2; §3; §5
+    - source: S7
+      locator: §2
+    - source: S8
+      locator: §1.1
+    how_known: "0–4 scale (P1). The sources do not address this axis directly; 0.5 because it is a reconstruction.\
+      \ Rescored on the world's order after decision P7 (2026-10-02); the value is unchanged from the\
+      \ earlier score (3 at 0.5), which also counted salvation and the ordering of creation for intellectual\
+      \ beings. The Aquinas person record also scores E 3 under P7 (universal providence; miracles the\
+      \ limited exception), so the system/person mismatch noted by lens run 3 (#62) is gone."
+epistemology:
+  value: "Demonstration from the observed world to its first cause (Aquinas's five ways; Maimonides' and\
+    \ Avicenna's cosmological arguments), followed by analogical or negative talk about God's nature.\
+    \ Avicenna's 'rationalist empiricism' grounds knowledge in abstraction and syllogism, with the intelligibles\
+    \ available to any intellect that works for them."
+  certainty: 1.0
+  cites:
+  - source: S3
+    locator: §2
+  - source: S6
+    locator: §4
+  - source: S4
+    locator: §3
+  how_known: SEP entries.
+ethics:
+  value: 'Aquinas: happiness as the final end, natural law and the virtues, with salvation in the life
+    to come as the ultimate goal. Avicenna: real happiness is the perfection of the rational soul through
+    knowledge; practical philosophy rests on prophetic legislation.'
+  certainty: 1.0
+  cites:
+  - source: S3
+    locator: §8
+  - source: S4
+    locator: §1.2; §4
+  how_known: SEP entries (section headings and summaries).
 practice:
-  ritual_and_practice: {value: "No ritual of its own; its holders practise their host religion. Maimonides holds daily prayer mandatory; Avicenna treats acts of worship as exercises for the rational soul.", certainty: 0.7, cites: [{source: S6, locator: "§4"}, {source: S4, locator: "§4"}], how_known: "Coder's reading: SEP describes a philosophical school, not an organised body."}
-  community_form: {value: "Schools within universities and religious orders, not a church: the Dominicans were statutorily required to promote Aquinas's teaching, the Jesuits were told to follow it, and Pope Leo XIII called for its revival in 1879.", certainty: 1.0, cites: [{source: S3, locator: "§9"}], how_known: "SEP, §9 Influence."}
+  ritual_and_practice:
+    value: No ritual of its own; its holders practise their host religion. Maimonides holds daily prayer
+      mandatory; Avicenna treats acts of worship as exercises for the rational soul.
+    certainty: 0.7
+    cites:
+    - source: S6
+      locator: §4
+    - source: S4
+      locator: §4
+    how_known: "Coder's reading: SEP describes a philosophical school, not an organised body."
+  community_form:
+    value: "Schools within universities and religious orders, not a church: the Dominicans were statutorily\
+      \ required to promote Aquinas's teaching, the Jesuits were told to follow it, and Pope Leo XIII\
+      \ called for its revival in 1879."
+    certainty: 1.0
+    cites:
+    - source: S3
+      locator: §9
+    how_known: 'SEP, §9 Influence.'
 science:
-  historical_stance: {value: "Classical theism was done inside Aristotelian natural philosophy. Avicenna's system rested on 'Aristotelian physics and metaphysics capped with Neoplatonic emanationism in the context of Ptolemaic cosmology'. Aquinas was confident that philosophy 'properly pursued' would not threaten the faith, and drew a line between miracles and unusual natural phenomena such as magnetism and the tides. Maimonides admits that science can and does make progress. Scholastic Aristotelianism was driven out of the universities by the 'moderns' in the eighteenth century.", certainty: 1.0, cites: [{source: S4, locator: "§5"}, {source: S3, locator: "§3; §9"}, {source: S10, locator: "§1.1"}, {source: S6, locator: "§5"}], how_known: "SEP entries."}
-  current_stance: {value: "Integration: authors in science and religion read findings such as evolution in the light of 'established theological models such as classical theism'. The neo-Thomist Elizabeth Johnson argues that providence and true randomness are compatible because 'God gives creatures true causal powers'.", certainty: 1.0, cites: [{source: S10, locator: "§1.3; §3.1"}], how_known: "SEP Religion and Science."}
+  historical_stance:
+    value: "Classical theism was done inside Aristotelian natural philosophy. Avicenna's system rested\
+      \ on 'Aristotelian physics and metaphysics capped with Neoplatonic emanationism in the context of\
+      \ Ptolemaic cosmology'. Aquinas was confident that philosophy 'properly pursued' would not threaten\
+      \ the faith, and drew a line between miracles and unusual natural phenomena such as magnetism and\
+      \ the tides. Maimonides admits that science can and does make progress. Scholastic Aristotelianism\
+      \ was driven out of the universities by the 'moderns' in the eighteenth century."
+    certainty: 1.0
+    cites:
+    - source: S4
+      locator: §5
+    - source: S3
+      locator: §3; §9
+    - source: S10
+      locator: §1.1
+    - source: S6
+      locator: §5
+    how_known: SEP entries.
+  current_stance:
+    value: "Integration: authors in science and religion read findings such as evolution in the light\
+      \ of 'established theological models such as classical theism'. The neo-Thomist Elizabeth Johnson\
+      \ argues that providence and true randomness are compatible because 'God gives creatures true causal\
+      \ powers'."
+    certainty: 1.0
+    cites:
+    - source: S10
+      locator: §1.3; §3.1
+    how_known: SEP Religion and Science.
 schools_and_variants:
-  - {name: "Thomism (Aquinas and his school)", form: "scholastic or philosophical", how_it_differs: "Creation ex nihilo by free choice; God proved by reason, Trinity and Incarnation known only by revelation; miracles affirmed; paradise or hell after death. Revived by Leo XIII in 1879; many 20th-century Thomisms.", lio_difference: "The reference form for B 3, C 2, D 2.", certainty: 1.0, cites: [{source: S3, locator: "§2; §3; §9"}]}
-  - {name: "Avicennian falsafa (al-Farabi, Avicenna)", form: "scholastic or philosophical", how_it_differs: "God necessary of existence by itself; the world proceeds from God through a hierarchy of celestial intellects; God immutable, knows particulars only 'in a universal way' (traditional reading), and providence works through a universal order.", lio_difference: "B toward 4 (no intermittent intervention); C toward 3 (bliss or misery from the soul's own state); D toward 3. A scholarly minority reading (Nusseibeh, Kaukua) lets God know particulars, which would move B back toward 3.", certainty: 0.7, cites: [{source: S5, locator: "§3.3.1; §3.3.4"}, {source: S4, locator: "§3; §4"}, {source: S6, locator: "§5"}]}
-  - {name: "Averroism (Ibn Rushd's mature view)", form: "scholastic or philosophical", how_it_differs: "God as 'an ultimate final cause of motion, who is neither a creator, nor an efficient cause of sublunary events'; causal necessity in nature defended against al-Ghazali; religion transmits truth to the masses through narrative and metaphor.", lio_difference: "B and D toward 4. A still transcendent (not identity with the world).", certainty: 1.0, cites: [{source: S5, locator: "§3.3.2; §3.3.4"}]}
-  - {name: "Maimonidean negative theology", form: "scholastic or philosophical", how_it_differs: "Only negations and attributes of action may be said of God; creation is preferred to eternity but not demonstrated; miracles played down; afterlife purely intellectual; whether his words hide an esoteric meaning is debated.", lio_difference: "B and C toward 3–4 relative to Thomism; D toward reason. Also a JUDA neighbor case.", certainty: 1.0, cites: [{source: S6, locator: "§1; §4; §5; §7"}]}
-  - {name: "Modern classical theism vs theistic personalism", form: modern, how_it_differs: "SEP describes a split, perhaps from 1644, between classical theists, who keep simplicity and immutability, and 'theistic personalists' such as open theists, who drop them so that God can be in a dynamic relationship with us.", lio_difference: "Theistic personalism moves A toward 0 (a fuller person) and usually B down; code it CLTHEI or the host religion, not CLASS_THEISM.", certainty: 1.0, cites: [{source: S1, locator: "§2.2"}]}
+- name: Thomism (Aquinas and his school)
+  form: scholastic or philosophical
+  how_it_differs: 'Creation ex nihilo by free choice; God proved by reason, Trinity and Incarnation known
+    only by revelation; miracles affirmed; paradise or hell after death. Revived by Leo XIII in 1879;
+    many 20th-century Thomisms.'
+  lio_difference: 'The reference form for B 3, C 2, D 2.'
+  certainty: 1.0
+  cites:
+  - source: S3
+    locator: §2; §3; §9
+- name: 'Avicennian falsafa (al-Farabi, Avicenna)'
+  form: scholastic or philosophical
+  how_it_differs: "God necessary of existence by itself; the world proceeds from God through a hierarchy\
+    \ of celestial intellects; God immutable, knows particulars only 'in a universal way' (traditional\
+    \ reading), and providence works through a universal order."
+  lio_difference: "B toward 4 (no intermittent intervention); C toward 3 (bliss or misery from the soul's\
+    \ own state); D toward 3. A scholarly minority reading (Nusseibeh, Kaukua) lets God know particulars,\
+    \ which would move B back toward 3."
+  certainty: 0.7
+  cites:
+  - source: S5
+    locator: §3.3.1; §3.3.4
+  - source: S4
+    locator: §3; §4
+  - source: S6
+    locator: §5
+- name: "Averroism (Ibn Rushd's mature view)"
+  form: scholastic or philosophical
+  how_it_differs: "God as 'an ultimate final cause of motion, who is neither a creator, nor an efficient\
+    \ cause of sublunary events'; causal necessity in nature defended against al-Ghazali; religion transmits\
+    \ truth to the masses through narrative and metaphor."
+  lio_difference: B and D toward 4. A still transcendent (not identity with the world).
+  certainty: 1.0
+  cites:
+  - source: S5
+    locator: §3.3.2; §3.3.4
+- name: Maimonidean negative theology
+  form: scholastic or philosophical
+  how_it_differs: Only negations and attributes of action may be said of God; creation is preferred to
+    eternity but not demonstrated; miracles played down; afterlife purely intellectual; whether his words
+    hide an esoteric meaning is debated.
+  lio_difference: B and C toward 3–4 relative to Thomism; D toward reason. Also a JUDA neighbor case.
+  certainty: 1.0
+  cites:
+  - source: S6
+    locator: §1; §4; §5; §7
+- name: Modern classical theism vs theistic personalism
+  form: modern
+  how_it_differs: "SEP describes a split, perhaps from 1644, between classical theists, who keep simplicity\
+    \ and immutability, and 'theistic personalists' such as open theists, who drop them so that God can\
+    \ be in a dynamic relationship with us."
+  lio_difference: 'Theistic personalism moves A toward 0 (a fuller person) and usually B down; code it
+    CLTHEI or the host religion, not CLASS_THEISM.'
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §2.2
 adherents:
-  use: "context only — never a genius-rate denominator"
-  estimate: {value: TODO, note: "Classical theism is a philosophical position, not a census category. No demographic source counts it."}
+  use: context only — never a genius-rate denominator
+  estimate:
+    value: Cross-cutting philosophical theism; not a membership body
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
-  label: "authorial v7.1 scores"
+  label: authorial v7.1 scores
   L: 9
   P: 9
   E: 9
   V: 8
   X: 8
   total: 43
-  scoring_note: "One of the highest-coherence theistic systems; used by Aristotle, Al-Farabi, Avicenna, Averroes, Maimonides, Aquinas, Leibniz, and many others."
-  source: "v7.1 data book, section 6 table (tables[4]) row 27 and section 7 scoring notes"
+  scoring_note: 'One of the highest-coherence theistic systems; used by Aristotle, Al-Farabi, Avicenna,
+    Averroes, Maimonides, Aquinas, Leibniz, and many others.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 27 and section 7 scoring notes'
 revised_rubric:
-  status: "not started"
-  L: {score: TODO, rationale: ""}
-  P: {score: TODO, rationale: ""}
-  E: {score: TODO, rationale: ""}
-  V: {score: TODO, rationale: ""}
-  X: {score: TODO, rationale: ""}
+  status: not started
+  L:
+    score: 'TODO'
+    rationale: ''
+  P:
+    score: 'TODO'
+    rationale: ''
+  E:
+    score: 'TODO'
+    rationale: ''
+  V:
+    score: 'TODO'
+    rationale: ''
+  X:
+    score: 'TODO'
+    rationale: ''
 coding_guidance:
-  use_when: "v7.1 coding rule (Split theisms): CLASS_THEISM (Aristotelian-Thomistic-Falsafa) is not CLTHEI (popular interventionist personal God) and not generic CHRIST/ISLAM/JUDA. v8 coding guide: CLASS_THEISM is the Aristotelian-Thomistic-Falsafa God: simple, immutable, known through reason. Use it when the person's own writing (1) argues to God from the world by reason (first cause, necessary existent, prime mover), (2) holds God simple, immutable or impassible, and (3) treats nature as an order of secondary causes. Typical: Aquinas and Thomists, Avicenna, Averroes, Maimonides in his philosophical work (S2 introduction; S3 §2; S5 §2.2.2)."
-  do_not_use_when: "The person's God answers petitions by changing course, acts often in particular events, or is a person in a changing, give-and-take relationship (open theism, theistic personalism): CLTHEI. The working view is the religion as practised and confessed, without the philosophical God: CHRIST, ISLAM or JUDA. Occasionalist kalam, where God is the only true cause and there is no necessity in nature (al-Ash'ari, al-Ghazali's 'no necessary connections' argument): not CLASS_THEISM, whose falsafa wing is what that argument attacks; code the host religion (ISLAM) or CLTHEI on the person's writing. God set the world going and then left it: DEISM. God includes the world and exceeds it: PANENT; God is the world: PANT. Aristotle himself: ARIST (founders rule), even though the v7.1 note lists him (see review flags). Church membership or upbringing alone: never a code."
+  use_when: "v7.1 coding rule (Split theisms): CLASS_THEISM (Aristotelian-Thomistic-Falsafa) is not CLTHEI\
+    \ (popular interventionist personal God) and not generic CHRIST/ISLAM/JUDA. v8 coding guide: CLASS_THEISM\
+    \ is the Aristotelian-Thomistic-Falsafa God: simple, immutable, known through reason. Use it when\
+    \ the person's own writing (1) argues to God from the world by reason (first cause, necessary existent,\
+    \ prime mover), (2) holds God simple, immutable or impassible, and (3) treats nature as an order of\
+    \ secondary causes. Typical: Aquinas and Thomists, Avicenna, Averroes, Maimonides in his philosophical\
+    \ work (S2 introduction; S3 §2; S5 §2.2.2)."
+  do_not_use_when: "The person's God answers petitions by changing course, acts often in particular events,\
+    \ or is a person in a changing, give-and-take relationship (open theism, theistic personalism): CLTHEI.\
+    \ The working view is the religion as practised and confessed, without the philosophical God: CHRIST,\
+    \ ISLAM or JUDA. Occasionalist kalam, where God is the only true cause and there is no necessity in\
+    \ nature (al-Ash'ari, al-Ghazali's 'no necessary connections' argument): not CLASS_THEISM, whose falsafa\
+    \ wing is what that argument attacks; code the host religion (ISLAM) or CLTHEI on the person's writing.\
+    \ God set the world going and then left it: DEISM. God includes the world and exceeds it: PANENT;\
+    \ God is the world: PANT. Aristotle himself: ARIST (founders rule), even though the v7.1 note lists\
+    \ him (see review flags). Church membership or upbringing alone: never a code."
   neighbors:
-    - {code: CLTHEI, relation: "neighbor (easily confused)"}
-    - {code: CHRIST, relation: "neighbor (easily confused)"}
-    - {code: ISLAM, relation: "neighbor (easily confused)"}
-    - {code: JUDA, relation: "neighbor (easily confused)"}
-    - {code: DEISM, relation: "neighbor (easily confused)"}
-    - {code: ARIST, relation: "parent tradition"}
+  - code: CLTHEI
+    relation: neighbor (easily confused)
+  - code: CHRIST
+    relation: neighbor (easily confused)
+  - code: ISLAM
+    relation: neighbor (easily confused)
+  - code: JUDA
+    relation: neighbor (easily confused)
+  - code: DEISM
+    relation: neighbor (easily confused)
+  - code: ARIST
+    relation: parent tradition
 review:
   data_quality_flags:
-    - "v7.1 table 4 label is truncated; v7_1_label is taken from the section 7 scoring note."
-    - "The v7.1 scoring note lists Aristotle among users of classical theism. SEP (S3 §3) says the earlier Aristotelians held that the world always existed and that God was its first mover, not a creator ex nihilo; Averroes' mature God is 'neither a creator, nor an efficient cause of sublunary events' (S5 §3.3.4). So the note groups thinkers who disagree on creation. Also, the founders rule codes Aristotle as ARIST. v7.1 text left unchanged."
-    - "The v7.1 scoring note lists Leibniz. No Leibniz source was read in this run, so his fit is unchecked."
-    - "The v7.1 rule treats CLASS_THEISM as one code, but SEP shows the schools split on miracles, petition and the afterlife (Aquinas vs Avicenna). B and C are scored for the code as a whole; certainty on C and E is 0.5 for that reason."
+  - v7.1 table 4 label is truncated; v7_1_label is taken from the section 7 scoring note.
+  - "The v7.1 scoring note lists Aristotle among users of classical theism. SEP (S3 §3) says the earlier\
+    \ Aristotelians held that the world always existed and that God was its first mover, not a creator\
+    \ ex nihilo; Averroes' mature God is 'neither a creator, nor an efficient cause of sublunary events'\
+    \ (S5 §3.3.4). So the note groups thinkers who disagree on creation. Also, the founders rule codes\
+    \ Aristotle as ARIST. v7.1 text left unchanged."
+  - 'The v7.1 scoring note lists Leibniz. No Leibniz source was read in this run, so his fit is unchecked.'
+  - 'The v7.1 rule treats CLASS_THEISM as one code, but SEP shows the schools split on miracles, petition
+    and the afterlife (Aquinas vs Avicenna). B and C are scored for the code as a whole; certainty on
+    C and E is 0.5 for that reason.'
   open_questions:
-    - "Leibniz: read SEP 'Leibniz' and 'Leibniz on causation' and say whether his God (pre-established harmony, best possible world) fits this code or DEISM. Note S3 §3: Aquinas denies that there is a best possible world."
-    - "Adherents: no demographic source counts classical theists. Leave TODO unless one is found."
+  - "Leibniz: read SEP 'Leibniz' and 'Leibniz on causation' and say whether his God (pre-established harmony,\
+    \ best possible world) fits this code or DEISM. Note S3 §3: Aquinas denies that there is a best possible\
+    \ world."
+  - 'Adherents: no demographic source counts classical theists. Leave TODO unless one is found.'
 sources:
-  - {id: S1, type: tertiary, kind: encyclopedia, author: "Jeanine Diller", year: 2021, citation: "Diller, Jeanine. \"God and Other Ultimates.\" Stanford Encyclopedia of Philosophy. First published December 17, 2021. https://plato.stanford.edu/entries/god-ultimates/.", url: "https://plato.stanford.edu/entries/god-ultimates/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry. Replaces the retired SEP entry 'Concepts of God'.", used_for: [classification, origins, metaphysics, lio_axes, schools_and_variants]}
-  - {id: S2, type: tertiary, kind: encyclopedia, author: "William F. Vallicella", year: 2023, citation: "Vallicella, William F. \"Divine Simplicity.\" Stanford Encyclopedia of Philosophy. First published March 20, 2006; substantive revision October 20, 2023. https://plato.stanford.edu/entries/divine-simplicity/.", url: "https://plato.stanford.edu/entries/divine-simplicity/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry.", used_for: [classification, origins, metaphysics, lio_axes]}
-  - {id: S3, type: tertiary, kind: encyclopedia, author: "Robert Pasnau", year: 2022, citation: "Pasnau, Robert. \"Thomas Aquinas.\" Stanford Encyclopedia of Philosophy. First published December 7, 2022. https://plato.stanford.edu/entries/aquinas/.", url: "https://plato.stanford.edu/entries/aquinas/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry by a leading scholar of medieval philosophy. Aquinas quotations are as given in this entry (secondary quotation).", used_for: [origins, metaphysics, lio_axes, epistemology, ethics, practice, science, schools_and_variants]}
-  - {id: S4, type: tertiary, kind: encyclopedia, author: "Dimitri Gutas", year: 2025, citation: "Gutas, Dimitri. \"Ibn Sina [Avicenna].\" Stanford Encyclopedia of Philosophy. First published September 15, 2016; substantive revision October 31, 2025. https://plato.stanford.edu/entries/ibn-sina/.", url: "https://plato.stanford.edu/entries/ibn-sina/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry by a leading Avicenna scholar.", used_for: [classification, origins, metaphysics, lio_axes, epistemology, ethics, practice, science, schools_and_variants]}
-  - {id: S5, type: tertiary, kind: encyclopedia, author: "Kara Richardson", year: 2025, citation: "Richardson, Kara. \"Causation in Arabic and Islamic Thought.\" Stanford Encyclopedia of Philosophy. First published October 26, 2015; substantive revision August 15, 2025. https://plato.stanford.edu/entries/arabic-islamic-causation/.", url: "https://plato.stanford.edu/entries/arabic-islamic-causation/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry.", used_for: [classification, metaphysics, lio_axes, schools_and_variants, coding_guidance]}
-  - {id: S6, type: tertiary, kind: encyclopedia, author: "Kenneth Seeskin", year: 2024, citation: "Seeskin, Kenneth. \"Maimonides.\" Stanford Encyclopedia of Philosophy. First published January 24, 2006; substantive revision November 18, 2024. https://plato.stanford.edu/entries/maimonides/.", url: "https://plato.stanford.edu/entries/maimonides/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry by a Maimonides scholar.", used_for: [origins, metaphysics, lio_axes, epistemology, practice, science, schools_and_variants]}
-  - {id: S7, type: tertiary, kind: encyclopedia, author: "Scott A. Davison", year: 2026, citation: "Davison, Scott A. \"Petitionary Prayer.\" Stanford Encyclopedia of Philosophy. First published August 15, 2012; substantive revision May 18, 2026. https://plato.stanford.edu/entries/petitionary-prayer/.", url: "https://plato.stanford.edu/entries/petitionary-prayer/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry. The Aquinas remark is quoted there from Stump 1979 (secondary quotation).", used_for: [metaphysics, lio_axes]}
-  - {id: S8, type: tertiary, kind: encyclopedia, author: "Timothy McGrew; Robert Larmer", year: 2024, citation: "McGrew, Timothy, and Robert Larmer. \"Miracles.\" Stanford Encyclopedia of Philosophy. First published October 11, 2010; substantive revision May 7, 2024. https://plato.stanford.edu/entries/miracles/.", url: "https://plato.stanford.edu/entries/miracles/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry.", used_for: [metaphysics, lio_axes]}
-  - {id: S9, type: tertiary, kind: encyclopedia, author: "Jon McGinnis", year: 2022, citation: "McGinnis, Jon. \"Arabic and Islamic Natural Philosophy and Natural Science.\" Stanford Encyclopedia of Philosophy. First published December 19, 2006; substantive revision February 3, 2022. https://plato.stanford.edu/entries/arabic-islamic-natural/.", url: "https://plato.stanford.edu/entries/arabic-islamic-natural/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry.", used_for: [schools_and_variants]}
-  - {id: S10, type: tertiary, kind: encyclopedia, author: "Helen De Cruz", year: 2022, citation: "De Cruz, Helen. \"Religion and Science.\" Stanford Encyclopedia of Philosophy. First published January 17, 2017; substantive revision September 3, 2022. https://plato.stanford.edu/entries/religion-science/.", url: "https://plato.stanford.edu/entries/religion-science/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry.", used_for: [science]}
-  - {id: S11, type: tertiary, kind: encyclopedia, author: "Fouad Ben Ahmed; Robert Pasnau", year: 2025, citation: "Ben Ahmed, Fouad, and Robert Pasnau. \"Ibn Rushd [Averroes].\" Stanford Encyclopedia of Philosophy. First published June 23, 2021; substantive revision August 20, 2025. https://plato.stanford.edu/entries/ibn-rushd/.", url: "https://plato.stanford.edu/entries/ibn-rushd/", accessed: 2026-10-01, reliability_note: "Peer-reviewed reference entry. Used only for dates and the title of the Incoherence of the Incoherence.", used_for: [origins]}
+- id: S1
+  type: tertiary
+  kind: encyclopedia
+  author: Jeanine Diller
+  year: 2021
+  citation: 'Diller, Jeanine. "God and Other Ultimates." Stanford Encyclopedia of Philosophy. First published
+    December 17, 2021. https://plato.stanford.edu/entries/god-ultimates/.'
+  url: 'https://plato.stanford.edu/entries/god-ultimates/'
+  accessed: '2026-10-25'
+  reliability_note: "Peer-reviewed reference entry. Replaces the retired SEP entry 'Concepts of God'."
+  used_for:
+  - classification
+  - origins
+  - metaphysics
+  - lio_axes
+  - schools_and_variants
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  author: William F. Vallicella
+  year: 2023
+  citation: 'Vallicella, William F. "Divine Simplicity." Stanford Encyclopedia of Philosophy. First published
+    March 20, 2006; substantive revision October 20, 2023. https://plato.stanford.edu/entries/divine-simplicity/.'
+  url: 'https://plato.stanford.edu/entries/divine-simplicity/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry.
+  used_for:
+  - classification
+  - origins
+  - metaphysics
+  - lio_axes
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  author: Robert Pasnau
+  year: 2022
+  citation: 'Pasnau, Robert. "Thomas Aquinas." Stanford Encyclopedia of Philosophy. First published December
+    7, 2022. https://plato.stanford.edu/entries/aquinas/.'
+  url: 'https://plato.stanford.edu/entries/aquinas/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry by a leading scholar of medieval philosophy. Aquinas
+    quotations are as given in this entry (secondary quotation).
+  used_for:
+  - origins
+  - metaphysics
+  - lio_axes
+  - epistemology
+  - ethics
+  - practice
+  - science
+  - schools_and_variants
+- id: S4
+  type: tertiary
+  kind: encyclopedia
+  author: Dimitri Gutas
+  year: 2025
+  citation: 'Gutas, Dimitri. "Ibn Sina [Avicenna]." Stanford Encyclopedia of Philosophy. First published
+    September 15, 2016; substantive revision October 31, 2025. https://plato.stanford.edu/entries/ibn-sina/.'
+  url: 'https://plato.stanford.edu/entries/ibn-sina/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry by a leading Avicenna scholar.
+  used_for:
+  - classification
+  - origins
+  - metaphysics
+  - lio_axes
+  - epistemology
+  - ethics
+  - practice
+  - science
+  - schools_and_variants
+- id: S5
+  type: tertiary
+  kind: encyclopedia
+  author: Kara Richardson
+  year: 2025
+  citation: 'Richardson, Kara. "Causation in Arabic and Islamic Thought." Stanford Encyclopedia of Philosophy.
+    First published October 26, 2015; substantive revision August 15, 2025. https://plato.stanford.edu/entries/arabic-islamic-causation/.'
+  url: 'https://plato.stanford.edu/entries/arabic-islamic-causation/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry.
+  used_for:
+  - classification
+  - metaphysics
+  - lio_axes
+  - schools_and_variants
+  - coding_guidance
+- id: S6
+  type: tertiary
+  kind: encyclopedia
+  author: Kenneth Seeskin
+  year: 2024
+  citation: 'Seeskin, Kenneth. "Maimonides." Stanford Encyclopedia of Philosophy. First published January
+    24, 2006; substantive revision November 18, 2024. https://plato.stanford.edu/entries/maimonides/.'
+  url: 'https://plato.stanford.edu/entries/maimonides/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry by a Maimonides scholar.
+  used_for:
+  - origins
+  - metaphysics
+  - lio_axes
+  - epistemology
+  - practice
+  - science
+  - schools_and_variants
+- id: S7
+  type: tertiary
+  kind: encyclopedia
+  author: Scott A. Davison
+  year: 2026
+  citation: 'Davison, Scott A. "Petitionary Prayer." Stanford Encyclopedia of Philosophy. First published
+    August 15, 2012; substantive revision May 18, 2026. https://plato.stanford.edu/entries/petitionary-prayer/.'
+  url: 'https://plato.stanford.edu/entries/petitionary-prayer/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry. The Aquinas remark is quoted there from Stump 1979
+    (secondary quotation).
+  used_for:
+  - metaphysics
+  - lio_axes
+- id: S8
+  type: tertiary
+  kind: encyclopedia
+  author: Timothy McGrew; Robert Larmer
+  year: 2024
+  citation: 'McGrew, Timothy, and Robert Larmer. "Miracles." Stanford Encyclopedia of Philosophy. First
+    published October 11, 2010; substantive revision May 7, 2024. https://plato.stanford.edu/entries/miracles/.'
+  url: 'https://plato.stanford.edu/entries/miracles/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry.
+  used_for:
+  - metaphysics
+  - lio_axes
+- id: S9
+  type: tertiary
+  kind: encyclopedia
+  author: Jon McGinnis
+  year: 2022
+  citation: 'McGinnis, Jon. "Arabic and Islamic Natural Philosophy and Natural Science." Stanford Encyclopedia
+    of Philosophy. First published December 19, 2006; substantive revision February 3, 2022. https://plato.stanford.edu/entries/arabic-islamic-natural/.'
+  url: 'https://plato.stanford.edu/entries/arabic-islamic-natural/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry.
+  used_for:
+  - schools_and_variants
+- id: S10
+  type: tertiary
+  kind: encyclopedia
+  author: Helen De Cruz
+  year: 2022
+  citation: 'De Cruz, Helen. "Religion and Science." Stanford Encyclopedia of Philosophy. First published
+    January 17, 2017; substantive revision September 3, 2022. https://plato.stanford.edu/entries/religion-science/.'
+  url: 'https://plato.stanford.edu/entries/religion-science/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry.
+  used_for:
+  - science
+- id: S11
+  type: tertiary
+  kind: encyclopedia
+  author: Fouad Ben Ahmed; Robert Pasnau
+  year: 2025
+  citation: 'Ben Ahmed, Fouad, and Robert Pasnau. "Ibn Rushd [Averroes]." Stanford Encyclopedia of Philosophy.
+    First published June 23, 2021; substantive revision August 20, 2025. https://plato.stanford.edu/entries/ibn-rushd/.'
+  url: 'https://plato.stanford.edu/entries/ibn-rushd/'
+  accessed: '2026-10-25'
+  reliability_note: Peer-reviewed reference entry. Used only for dates and the title of the Incoherence
+    of the Incoherence.
+  used_for:
+  - origins
 ---
 
 # Classical Theism (Aristotelian-Thomistic-Islamic Peripatetic) (CLASS_THEISM)
@@ -187,3 +925,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-01: stub created by `scripts/make_system_stubs.py`.
 - 2026-10-01 (overnight run): read SEP "God and Other Ultimates" (Diller 2021; SEP "Concepts of God" is retired and points there), "Divine Simplicity", "Thomas Aquinas", "Ibn Sina", "Causation in Arabic and Islamic Thought", "Maimonides", "Petitionary Prayer", "Miracles", "Arabic and Islamic Natural Philosophy", "Religion and Science" and "Ibn Rushd". Every quotation was checked word for word against the fetched page text with a script before commit. Aquinas, Avicenna and Maimonides are quoted as given in SEP (secondary quotation). Not read: Leibniz entries, primary texts, Britannica and IEP for this code.
+- 2026-10-25: adherents/estimate filled (qualitative).

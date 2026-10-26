@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S8): filled from Britannica "Shintō" (Hirai). A 3 (0.5, alt 2); B,
@@ -35,6 +35,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Shintō (Hirai): kami way, no founder/fixed dogmas, Shrine/Sect/Folk
       types, purification, Imperial history. Axes kept.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -51,8 +55,8 @@ classification:
       locator: opening
     how_known: 'Britannica: indigenous Japanese religion.'
   family:
-    value: 'Shintō (''way of kami''): indigenous Japanese veneration of kami (sacred powers/deities/spirits)
-      in nature and ancestors; no single founder or fixed dogmas'
+    value: "Shintō ('way of kami'): indigenous Japanese veneration of kami (sacred powers/deities/spirits)\
+      \ in nature and ancestors; no single founder or fixed dogmas"
     certainty: 1.0
     cites:
     - source: S1
@@ -120,7 +124,7 @@ metaphysics:
       locator: opening; kami
     how_known: Britannica.
   deity_personal:
-    value: Kami have divine personalities and respond to prayers; also abstract powers (growth, judgment).
+    value: 'Kami have divine personalities and respond to prayers; also abstract powers (growth, judgment).'
     stance: personal
     certainty: 0.7
     cites:
@@ -159,17 +163,17 @@ metaphysics:
     cites:
     - source: S1
       locator: early clan; beliefs
-    how_known: 0.5 — multiple cosmologies.
+    how_known: '0.5 — multiple cosmologies.'
   moral_ledger:
-    value: No original sin; purity/sincerity (makoto, magokoro); not a karma ledger in S1.
+    value: 'No original sin; purity/sincerity (makoto, magokoro); not a karma ledger in S1.'
     stance: none
     certainty: 0.5
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
-    value: No fixed dogmas; tradition, shrines, Imperial history; Sect founders for Kyōha.
+    value: 'No fixed dogmas; tradition, shrines, Imperial history; Sect founders for Kyōha.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
@@ -191,7 +195,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -202,27 +206,27 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 3
-    rationale: Kami ('sacred or divine power, specifically the various gods or deities') are found in
-      nature and in outstanding men.
+    rationale: "Kami ('sacred or divine power, specifically the various gods or deities') are found in\
+      \ nature and in outstanding men."
     certainty: 0.5
     cites: &id001
     - source: S1
       locator: introduction; Early clan religion
     - source: S2
       locator: Fukko Shintō
-    how_known: '0.5: gods within nature fit 3 (as JAIN, CHNFOLK); kami of ideas such as creation make
-      2 the alternative. Full read: Hirata''s creator god and other-world retribution ''were not accepted
-      into the main current of Shintō''; Motoori''s musubi, ''the mystical power of becoming or of creation'',
-      is the reason for alternative 2.'
+    how_known: "0.5: gods within nature fit 3 (as JAIN, CHNFOLK); kami of ideas such as creation make\
+      \ 2 the alternative. Full read: Hirata's creator god and other-world retribution 'were not accepted\
+      \ into the main current of Shintō'; Motoori's musubi, 'the mystical power of becoming or of creation',\
+      \ is the reason for alternative 2."
     alternatives:
     - value: 2
       note: Named alternative.
       cites: *id001
   B_cause:
     value: 2
-    rationale: 'Petitionary prayer to protecting kami: ''prayers were offered for the safety of the state
-      and people''; children visit the shrine ''to give thanks for kami’s protection''; Motoori''s ''absolute
-      faith—according to which all problems beyond human capability were turned over to kami''.'
+    rationale: "Petitionary prayer to protecting kami: 'prayers were offered for the safety of the state\
+      \ and people'; children visit the shrine 'to give thanks for kami’s protection'; Motoori's 'absolute\
+      \ faith—according to which all problems beyond human capability were turned over to kami'."
     certainty: 0.5
     cites: &id002
     - source: S3
@@ -238,14 +242,14 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
-    how_known: '''no official sacred scriptures in the strict sense, and no fixed dogmas'' (S1); no positive
-      authority stated.'
+    value: 'UNKNOWN'
+    how_known: "'no official sacred scriptures in the strict sense, and no fixed dogmas' (S1); no positive\
+      \ authority stated."
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Practice and sincerity over formal philosophy; purification to commune with kami; myths and shrine
@@ -256,8 +260,8 @@ epistemology:
     locator: opening; beliefs
   how_known: Britannica.
 ethics:
-  value: Sincerity, true heart, purification; humanity as children of kami (worthy of respect); tsunagari
-    with ancestors/descendants.
+  value: 'Sincerity, true heart, purification; humanity as children of kami (worthy of respect); tsunagari
+    with ancestors/descendants.'
   certainty: 1.0
   cites:
   - source: S1
@@ -265,8 +269,8 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Shrines (jinja), torii, purification, matsuri festivals, harvest rites; visit at convenience
-      not weekly services.
+    value: 'Shrines (jinja), torii, purification, matsuri festivals, harvest rites; visit at convenience
+      not weekly services.'
     certainty: 1.0
     cites:
     - source: S1
@@ -306,7 +310,7 @@ schools_and_variants:
     locator: nature
 - name: Sect Shintō (Kyōha)
   form: modern
-  how_it_differs: 13+ sects from ~19th c. with founders/systematizers.
+  how_it_differs: '13+ sects from ~19th c. with founders/systematizers.'
   lio_difference: May differ — not rescored.
   certainty: 1.0
   cites:
@@ -314,7 +318,7 @@ schools_and_variants:
     locator: nature
 - name: Folk Shintō (Minzoku)
   form: popular
-  how_it_differs: No formal org; roadside images, rural agricultural rites.
+  how_it_differs: 'No formal org; roadside images, rural agricultural rites.'
   lio_difference: Same umbrella.
   certainty: 1.0
   cites:
@@ -323,7 +327,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Japanese shrine practice and related; often cultural affiliation rather than exclusive membership
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -332,26 +341,26 @@ v7_1_rubric:
   V: 6
   X: 4
   total: 32
-  scoring_note: Shinto scores moderately due to its elegant focus on natural harmony and ritual purity,
+  scoring_note: 'Shinto scores moderately due to its elegant focus on natural harmony and ritual purity,
     offering cultural and ethical coherence but constrained by supernatural elements and traditional authority
-    over empirical rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 45 and section 7 scoring notes
+    over empirical rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 45 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Shintō / kami shrine identity as primary.
@@ -364,7 +373,7 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - Later sections (beliefs, practices) not read.
+  - 'Later sections (beliefs, practices) not read.'
   - Adherents are TODO.
 sources:
 - id: S1
@@ -373,7 +382,7 @@ sources:
   author: Naofusa Hirai; Britannica Editors
   citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō." Encyclopaedia Britannica. https://www.britannica.com/topic/Shinto.
     Wayback Machine snapshot 2026-10-03 18:03:43 UTC: https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto.'
-  url: https://www.britannica.com/topic/Shinto
+  url: 'https://www.britannica.com/topic/Shinto'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (Kokugakuin emeritus professor); Introduction and early history read
     here; the later pages are S2–S4 (same article). P44(e): read in the Wayback copy (https://web.archive.org/web/20261003180343/https://www.britannica.com/topic/Shinto);
@@ -385,8 +394,8 @@ sources:
   citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Shintō reaction against Buddhism." Encyclopaedia
     Britannica. https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism. Wayback Machine
     snapshot 2025-11-25 14:48:08 UTC: https://web.archive.org/web/20251125144808/https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism.'
-  url: https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback
     copy (https://web.archive.org/web/20251125144808/https://www.britannica.com/topic/Shinto/Shinto-reaction-against-Buddhism);
     live page not compared.'
@@ -397,8 +406,8 @@ sources:
   citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Political and social roles." Encyclopaedia
     Britannica. https://www.britannica.com/topic/Shinto/Political-and-social-roles. Wayback Machine snapshot
     2025-10-08 20:43:06 UTC: https://web.archive.org/web/20251008204306/https://www.britannica.com/topic/Shinto/Political-and-social-roles.'
-  url: https://www.britannica.com/topic/Shinto/Political-and-social-roles
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Shinto/Political-and-social-roles'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback
     copy (https://web.archive.org/web/20251008204306/https://www.britannica.com/topic/Shinto/Political-and-social-roles);
     live page not compared.'
@@ -409,8 +418,8 @@ sources:
   citation: 'Hirai, Naofusa, and Britannica Editors. "Shintō: Ritual practices and institutions." Encyclopaedia
     Britannica. https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions. Wayback Machine
     snapshot 2026-10-06 22:19:34 UTC: https://web.archive.org/web/20261006221934/https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions.'
-  url: https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback
     copy (https://web.archive.org/web/20261006221934/https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions);
     live page not compared.'
@@ -455,3 +464,4 @@ Shintō identity; not ANIM dump.
 
 - Prior batch: thin fill.
 - 2026-10-25: deepened from Britannica Shintō (Hirai). Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

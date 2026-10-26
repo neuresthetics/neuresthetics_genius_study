@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from the Britannica article body ("Bahāʾī Faith", editors,
@@ -33,6 +33,10 @@ record:
     summary: 'Deepen qualities from Britannica Bahāʾī Faith: Báb/Bahā�Deepen qualities from Britannica
       Bahāʾī Faith: Báb/Bahāʾu’llāh, progressive revelation, unity of religions/humanity, no clergy, Universal
       House of Justice. Keep A=0; B C D E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: BAHAI
   v7_1_number: 39
@@ -104,7 +108,7 @@ origins:
       locator: history
     how_known: Britannica.
   key_texts:
-  - value: Writings and spoken words of the Báb, Bahāʾu’llāh, and ʿAbd al-Bahāʾ (sacred literature)
+  - value: 'Writings and spoken words of the Báb, Bahāʾu’llāh, and ʿAbd al-Bahāʾ (sacred literature)'
     certainty: 1.0
     cites:
     - source: S1
@@ -118,15 +122,16 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 — transcendence clear; 'beyond nature' wording not used.
+    how_known: "0.5 — transcendence clear; 'beyond nature' wording not used."
   deity_personal:
-    value: Manifestations of God (Báb, Bahāʾu’llāh, founders of prior religions) as agents of divine plan.
+    value: 'Manifestations of God (Báb, Bahāʾu’llāh, founders of prior religions) as agents of divine
+      plan.'
     stance: personal
     certainty: 0.5
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 — manifestations personal; essence unknowable.
+    how_known: '0.5 — manifestations personal; essence unknowable.'
   intervention:
     value: Progressive revelation through successive manifestations.
     stance: rare
@@ -134,7 +139,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   miracles:
     value: Not a focus of Britannica article.
     stance: not addressed
@@ -150,7 +155,7 @@ metaphysics:
     cites:
     - source: S1
       locator: practices
-    how_known: 0.5 — prayer required; answeredness not fixed.
+    how_known: '0.5 — prayer required; answeredness not fixed.'
   afterlife:
     value: Not detailed in S1.
     stance: not addressed
@@ -166,7 +171,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
     value: Sacred writings of Báb/Bahāʾu’llāh/ʿAbd al-Bahāʾ; Universal House of Justice applies laws and
       legislates gaps; no priesthood.
@@ -186,12 +191,12 @@ metaphysics:
     how_known: Silence.
   teleology_in_nature:
     value: Progressive divine plan for education of humanity — teleology of history more than nature design.
-    stance: designer's purposes
+    stance: "designer's purposes"
     certainty: 0.5
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -202,8 +207,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 0
-    rationale: God 'in his essence is unknowable' and acts through manifestations, 'agents of a progressive
-      divine plan'.
+    rationale: "God 'in his essence is unknowable' and acts through manifestations, 'agents of a progressive\
+      \ divine plan'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -215,10 +220,10 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
+    value: 'UNKNOWN'
+    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
@@ -234,7 +239,7 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Progressive revelation; identical truth taught by religions; scripture of all religions recited
@@ -245,8 +250,8 @@ epistemology:
     locator: opening; practices
   how_known: Britannica.
 ethics:
-  value: Unity of humanity; abolish racial, class, religious prejudice; social ethics bulk of teachings;
-    monogamy, parental consent, substance abstinence.
+  value: 'Unity of humanity; abolish racial, class, religious prejudice; social ethics bulk of teachings;
+    monogamy, parental consent, substance abstinence.'
   certainty: 1.0
   cites:
   - source: S1
@@ -295,7 +300,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: 'Baháʼí Faith: millions claimed globally (order-of-magnitude; verify when coding)'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -304,29 +314,29 @@ v7_1_rubric:
   V: 6
   X: 5
   total: 34
-  scoring_note: Bahá’í Faith scores moderately high due to its innovative emphasis on global unity and
+  scoring_note: 'Bahá’í Faith scores moderately high due to its innovative emphasis on global unity and
     progressive revelation, fostering ethical and social coherence, but constrained by revelatory authority
-    over full empirical alignment.
-  source: v7.1 data book, section 6 table (tables[4]) row 39 and section 7 scoring notes
+    over full empirical alignment.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 39 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Bahāʾī / Baha'i Faith identity.
+  use_when: "Bahāʾī / Baha'i Faith identity."
   do_not_use_when: Generic progressive Islam or Unitarian-leaning Christianity without Bahāʾī membership.
   neighbors:
   - code: ISLAM
@@ -336,7 +346,7 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - A source on reason, science and miracles in Bahāʾī teaching (B, D).
+  - 'A source on reason, science and miracles in Bahāʾī teaching (B, D).'
   - Adherents are TODO.
   - 'T1 (2026-10-15): B_cause search logged in the research log; still UNKNOWN.'
 sources:
@@ -347,7 +357,7 @@ sources:
   citation: 'The Editors of Encyclopaedia Britannica. "Bahāʾī Faith." Encyclopaedia Britannica (most recently
     revised and updated by Charles Preston). https://www.britannica.com/topic/Bahai-Faith. Wayback Machine
     snapshot 2026-10-11 10:55:53 UTC: https://web.archive.org/web/20261011105553/https://www.britannica.com/topic/Bahai-Faith.'
-  url: https://www.britannica.com/topic/Bahai-Faith
+  url: 'https://www.britannica.com/topic/Bahai-Faith'
   accessed: '2026-10-25'
   reliability_note: 'Unsigned editors’ article; article body only (AI Top Questions ignored). P44(e):
     read in the Wayback copy (https://web.archive.org/web/20261011105553/https://www.britannica.com/topic/Bahai-Faith),
@@ -395,3 +405,4 @@ Bahāʾī identity.
 
 - Prior: A=0 from Britannica.
 - 2026-10-25: deepened practices/organization/history. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

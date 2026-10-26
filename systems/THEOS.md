@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Theosophy" (Melton). A 2 (0.5, alt 3);
@@ -28,6 +28,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Kids theosophy: Blavatsky/Olcott 1875, Secret Doctrine
       principles, reincarnation, Adyar. Keep prior axis scores.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: THEOS
   v7_1_number: 63
@@ -44,8 +48,8 @@ classification:
       locator: opening
     how_known: Religious philosophy with mysticism; Society as NRM — 0.7 esoteric.
   family:
-    value: 'Theosophy (''divine wisdom''): modern form identified with the Theosophical Society (Blavatsky/Olcott,
-      1875); eternal unknown principle, cycles, over-soul, reincarnation'
+    value: "Theosophy ('divine wisdom'): modern form identified with the Theosophical Society (Blavatsky/Olcott,\
+      \ 1875); eternal unknown principle, cycles, over-soul, reincarnation"
     certainty: 1.0
     cites:
     - source: S1
@@ -53,9 +57,9 @@ classification:
     how_known: Britannica Kids.
   parent_traditions:
     value:
-    - Ancient mystical/philosophical theosophy (Pythagoras, Plato, Plotinus Enneads)
-    - 19th-c. spiritualism milieu
-    - Blavatsky's synthesis with Eastern thought
+    - 'Ancient mystical/philosophical theosophy (Pythagoras, Plato, Plotinus Enneads)'
+    - '19th-c. spiritualism milieu'
+    - "Blavatsky's synthesis with Eastern thought"
     certainty: 1.0
     cites:
     - source: S1
@@ -83,7 +87,7 @@ origins:
       locator: opening
     how_known: Britannica Kids.
   founding_region:
-    value: New York City founding; international HQ Adyar, India
+    value: 'New York City founding; international HQ Adyar, India'
     certainty: 1.0
     cites:
     - source: S1
@@ -100,13 +104,13 @@ origins:
       locator: opening
     how_known: Britannica Kids.
   key_texts:
-  - value: The Secret Doctrine (Blavatsky, 1888)
+  - value: 'The Secret Doctrine (Blavatsky, 1888)'
     certainty: 1.0
     cites:
     - source: S1
       locator: Secret Doctrine
     how_known: Britannica Kids.
-  - value: Plotinus, Enneads (ancient antecedent cited)
+  - value: 'Plotinus, Enneads (ancient antecedent cited)'
     certainty: 1.0
     cites:
     - source: S1
@@ -114,9 +118,9 @@ origins:
     how_known: Britannica Kids.
 metaphysics:
   god_nature_relation:
-    value: Eternal unchangeable principle about which no knowledge/speculation is possible; universe eternal
-      with appearing/disappearing smaller universes; souls identified with over-soul, an aspect of the
-      unknown principle.
+    value: 'Eternal unchangeable principle about which no knowledge/speculation is possible; universe
+      eternal with appearing/disappearing smaller universes; souls identified with over-soul, an aspect
+      of the unknown principle.'
     stance: God in Nature and beyond it
     certainty: 0.5
     cites:
@@ -131,7 +135,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening; Secret Doctrine
-    how_known: 0.5.
+    how_known: '0.5.'
   intervention:
     value: Not a personal intervention doctrine in this short article; mystical experience of spiritual
       reality.
@@ -149,15 +153,15 @@ metaphysics:
     cites:
     - source: S1
       locator: goals
-    how_known: 0.5.
+    how_known: '0.5.'
   petition_and_prayer:
-    value: Meditation, revelation, intuition beyond normal consciousness — contemplative more than petition.
+    value: 'Meditation, revelation, intuition beyond normal consciousness — contemplative more than petition.'
     stance: contemplative only
     certainty: 0.5
     cites:
     - source: S1
       locator: mysticism
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Series of rebirths/reincarnations; soul continues quest for spiritual growth.
     stance: rebirth
@@ -173,16 +177,16 @@ metaphysics:
     cites:
     - source: S1
       locator: Secret Doctrine
-    how_known: 0.5 without explicit karma word.
+    how_known: '0.5 without explicit karma word.'
   authority:
-    value: Founder Blavatsky's Secret Doctrine; Society leadership (Olcott, Besant); mystical experience
-      beyond normal consciousness.
-    stance: both, revelation first
+    value: "Founder Blavatsky's Secret Doctrine; Society leadership (Olcott, Besant); mystical experience\
+      \ beyond normal consciousness."
+    stance: 'both, revelation first'
     certainty: 0.5
     cites:
     - source: S1
       locator: opening; Secret Doctrine
-    how_known: 0.5 founder + mysticism.
+    how_known: '0.5 founder + mysticism.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -198,7 +202,7 @@ metaphysics:
     cites:
     - source: S1
       locator: Secret Doctrine
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Soul obliged to go through series of rebirths — necessity language; free will not developed.
     certainty: 0.5
@@ -209,9 +213,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 2
-    rationale: 'Monism: ''an overarching, all-encompassing unity that subsumes all differentiation'',
-      with ''God is utterly transcendent and impersonal'' and creation as ''spiritual emanations from
-      God''.'
+    rationale: "Monism: 'an overarching, all-encompassing unity that subsumes all differentiation', with\
+      \ 'God is utterly transcendent and impersonal' and creation as 'spiritual emanations from God'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -223,9 +226,9 @@ lio_axes:
       cites: *id001
   B_cause:
     value: 3
-    rationale: The 'higher psychic and spiritual powers' are studied under the Third Object, 'to investigate
-      unexplained laws of Nature and the powers latent in human beings'; the 'fascination with supernatural
-      or other extraordinary occurrences' is framed as unexplained law, not exemption.
+    rationale: "The 'higher psychic and spiritual powers' are studied under the Third Object, 'to investigate\
+      \ unexplained laws of Nature and the powers latent in human beings'; the 'fascination with supernatural\
+      \ or other extraordinary occurrences' is framed as unexplained law, not exemption."
     certainty: 0.5
     cites: &id002
     - source: S1
@@ -239,13 +242,13 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: Contact with spiritual reality 'through intuition, meditation, revelation, or some other
-      state transcending normal human consciousness'; Blavatsky claimed 'regular contact with a brotherhood
-      of Great Masters'.
+    rationale: "Contact with spiritual reality 'through intuition, meditation, revelation, or some other\
+      \ state transcending normal human consciousness'; Blavatsky claimed 'regular contact with a brotherhood\
+      \ of Great Masters'."
     certainty: 0.5
     cites: &id003
     - source: S1
@@ -258,11 +261,11 @@ lio_axes:
       note: Named alternative.
       cites: *id003
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: Mystical experience of spiritual reality via meditation, revelation, intuition; study of comparative
-    religion, philosophy, science; investigate mysterious laws and unknown powers.
+  value: 'Mystical experience of spiritual reality via meditation, revelation, intuition; study of comparative
+    religion, philosophy, science; investigate mysterious laws and unknown powers.'
   certainty: 1.0
   cites:
   - source: S1
@@ -318,7 +321,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Theosophical Society historical membership; modern remnant societies; not a mass religion
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -327,29 +335,29 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 25
-  scoring_note: Theosophy scores moderately due to its ambitious syncretic approach to spiritual unity,
-    balanced by unverified esoteric claims and reliance on revelation over empirical methods.
-  source: v7.1 data book, section 6 table (tables[4]) row 63 and section 7 scoring notes
+  scoring_note: 'Theosophy scores moderately due to its ambitious syncretic approach to spiritual unity,
+    balanced by unverified esoteric claims and reliance on revelation over empirical methods.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 63 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Theosophical Society / Blavatsky theosophy identity.
-  do_not_use_when: Anthroposophy (ANTHRO). Generic 'divine wisdom' mysticism without Society link.
+  do_not_use_when: "Anthroposophy (ANTHRO). Generic 'divine wisdom' mysticism without Society link."
   neighbors:
   - code: ANTHRO
     relation: neighbor (easily confused)
@@ -366,7 +374,7 @@ sources:
   author: J. Gordon Melton
   citation: 'Melton, J. Gordon. "Theosophy." Encyclopaedia Britannica. https://www.britannica.com/topic/theosophy.
     Wayback Machine snapshot 2026-07-05 14:56:39 UTC: https://web.archive.org/web/20260705145639/https://www.britannica.com/topic/theosophy.'
-  url: https://www.britannica.com/topic/theosophy
+  url: 'https://www.britannica.com/topic/theosophy'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of American religion); introduction, Beliefs and History
     read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260705145639/https://www.britannica.com/topic/theosophy);
@@ -414,3 +422,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S11): Britannica theosophy; axes set.
 - 2026-10-25: deepened from Britannica Kids theosophy article. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from Britannica "Cao Dai" (editors). A 1 (0.5, alt 0);
@@ -31,6 +31,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Cao Dai: Ngo Van Chieu 1919/1926, syncretism Confucian-Taoist-Buddhist-Catholic,
       Divine Eye, Tay Ninh. Axes kept.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: CAODAI
   v7_1_number: 41
@@ -81,7 +85,7 @@ classification:
     note: pope/cardinals pattern ≠ Catholic identity
 origins:
   founding_era:
-    value: 1919 revelation to Ngo Van Chieu; formally established 1926
+    value: '1919 revelation to Ngo Van Chieu; formally established 1926'
     certainty: 1.0
     cites:
     - source: S1
@@ -118,10 +122,10 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 — epithet/symbol; full cosmology thin in S1.
+    how_known: '0.5 — epithet/symbol; full cosmology thin in S1.'
   deity_personal:
-    value: Supreme deity communicates (séance); pantheon of saints includes Buddha, Confucius, Jesus,
-      Muhammad, Joan of Arc, Victor Hugo, Sun Yat-sen.
+    value: 'Supreme deity communicates (séance); pantheon of saints includes Buddha, Confucius, Jesus,
+      Muhammad, Joan of Arc, Victor Hugo, Sun Yat-sen.'
     stance: personal
     certainty: 1.0
     cites:
@@ -151,7 +155,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Buddhist theories of karma and rebirth drawn upon.
     stance: rebirth
@@ -167,10 +171,10 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
-    value: Hierarchical organization patterned after Catholicism (pope, cardinals, archbishops); revealed
-      communications.
+    value: 'Hierarchical organization patterned after Catholicism (pope, cardinals, archbishops); revealed
+      communications.'
     stance: revelation
     certainty: 0.7
     cites:
@@ -215,7 +219,7 @@ lio_axes:
       cites: *id001
   B_cause:
     value: 1
-    rationale: Chieu 'received a communication from the supreme deity during a table-moving séance'.
+    rationale: "Chieu 'received a communication from the supreme deity during a table-moving séance'."
     certainty: 0.5
     cites:
     - source: S1
@@ -242,9 +246,9 @@ lio_axes:
     cites:
     - source: S1
       locator: introduction; history
-    how_known: 0.5.
+    how_known: '0.5.'
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Séance communication from supreme deity; syncretic drawing on multiple traditions.
@@ -303,7 +307,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Cao Đài organized religion in Vietnam/diaspora; hundreds of thousands historically claimed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -312,29 +321,29 @@ v7_1_rubric:
   V: 6
   X: 4
   total: 32
-  scoring_note: Caodaism scores moderately due to its innovative syncretism promoting religious unity,
-    offering ethical and spiritual coherence but limited by revelatory elements and modest empirical alignment.
-  source: v7.1 data book, section 6 table (tables[4]) row 41 and section 7 scoring notes
+  scoring_note: 'Caodaism scores moderately due to its innovative syncretism promoting religious unity,
+    offering ethical and spiritual coherence but limited by revelatory elements and modest empirical alignment.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 41 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Cao Dai / Caodaist identity.
-  do_not_use_when: Generic Vietnamese Buddhism, Catholicism, or Taoism without Cao Dai identity.
+  do_not_use_when: 'Generic Vietnamese Buddhism, Catholicism, or Taoism without Cao Dai identity.'
   neighbors:
   - code: BUDDH
     relation: neighbor (easily confused)
@@ -354,7 +363,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Cao Dai." Encyclopaedia Britannica. https://www.britannica.com/topic/Cao-Dai.
     Wayback Machine snapshot 2026-05-04 19:37:58 UTC: https://web.archive.org/web/20260504193758/https://www.britannica.com/topic/Cao-Dai.'
-  url: https://www.britannica.com/topic/Cao-Dai
+  url: 'https://www.britannica.com/topic/Cao-Dai'
   accessed: '2026-10-25'
   reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260504193758/https://www.britannica.com/topic/Cao-Dai),
     counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison;
@@ -400,3 +409,4 @@ Cao Dai identity only.
 
 - Prior batch: thin fill.
 - 2026-10-25: deepened from Britannica Cao Dai. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

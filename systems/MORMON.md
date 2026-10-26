@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Church of Jesus Christ of Latter-day
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica LDS (Melton): Smith 1830, Book of Mormon, Godhead, continuing
       revelation, temple/missionary practice, Community of Christ neighbor. Keep A=1 C=1 D=1; B E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: MORMON
   v7_1_number: 71
@@ -57,7 +61,7 @@ classification:
     how_known: Britannica.
   parent_traditions:
     value:
-    - 19th-century American Christian revivalism
+    - '19th-century American Christian revivalism'
     - Claimed restoration of primitive Christian church
     - Israelite-in-America narrative (Book of Mormon)
     certainty: 1.0
@@ -74,7 +78,7 @@ classification:
     note: both cite Smith among prophets — different cosmologies
 origins:
   founding_era:
-    value: 1830 (church founded; Book of Mormon published), western New York
+    value: '1830 (church founded; Book of Mormon published), western New York'
     certainty: 1.0
     cites:
     - source: S1
@@ -119,14 +123,14 @@ origins:
     how_known: Named related.
 metaphysics:
   god_nature_relation:
-    value: Godhead of distinct beings (God, Jesus Christ, Holy Spirit); not classical Trinity. Faithful
-      may attain God's fullness and become gods.
+    value: "Godhead of distinct beings (God, Jesus Christ, Holy Spirit); not classical Trinity. Faithful\
+      \ may attain God's fullness and become gods."
     stance: creator distinct from creation
     certainty: 0.5
     cites:
     - source: S1
       locator: beliefs FAQ; opening
-    how_known: 0.5 — distinct beings; exaltation complicates classical creator/creature.
+    how_known: '0.5 — distinct beings; exaltation complicates classical creator/creature.'
   deity_personal:
     value: Personal Godhead; continuing revelation; Christ for salvation and resurrection.
     stance: personal
@@ -151,9 +155,9 @@ metaphysics:
     cites:
     - source: S1
       locator: history
-    how_known: 0.5 — stance enum may need check.
+    how_known: '0.5 — stance enum may need check.'
   petition_and_prayer:
-    value: Prayer and ordinances (baptism, Holy Spirit); proxy baptism for dead.
+    value: 'Prayer and ordinances (baptism, Holy Spirit); proxy baptism for dead.'
     stance: petition answered
     certainty: 0.7
     cites:
@@ -196,12 +200,12 @@ metaphysics:
     how_known: Silence.
   teleology_in_nature:
     value: Millennial/teleological history toward Zion and Second Coming more than nature design.
-    stance: designer's purposes
+    stance: "designer's purposes"
     certainty: 0.5
     cites:
     - source: S1
       locator: history
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Actions and grace determine futures — agency emphasized in popular teaching; not fixed in S1
       as free-will theory.
@@ -213,9 +217,9 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 1
-    rationale: Father, Son and Holy Spirit, 'These three beings—the Godhead—are considered to be distinct
-      entities (a doctrine known as tritheism)'; 'faithful members of the church may receive God’s fullness
-      and thus become gods themselves'.
+    rationale: "Father, Son and Holy Spirit, 'These three beings—the Godhead—are considered to be distinct\
+      \ entities (a doctrine known as tritheism)'; 'faithful members of the church may receive God’s fullness\
+      \ and thus become gods themselves'."
     certainty: 0.5
     cites: &id001
     - source: S2
@@ -226,13 +230,13 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
+    value: 'UNKNOWN'
+    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
   C_ledger:
     value: 1
-    rationale: '''people’s futures are determined by their own actions as well as by the grace of God'';
-      afterlife kingdoms (celestial, terrestrial, ''telestial'') and ''some degree of glory'' for nearly
-      all.'
+    rationale: "'people’s futures are determined by their own actions as well as by the grace of God';\
+      \ afterlife kingdoms (celestial, terrestrial, 'telestial') and 'some degree of glory' for nearly\
+      \ all."
     certainty: 0.5
     cites: &id002
     - source: S2
@@ -244,8 +248,8 @@ lio_axes:
       cites: *id002
   D_authority:
     value: 1
-    rationale: '''belief in continuing revelation''; church presidents are ''regarded as prophets'', and
-      their revelations are added to the Doctrine and Covenants.'
+    rationale: "'belief in continuing revelation'; church presidents are 'regarded as prophets', and their\
+      \ revelations are added to the Doctrine and Covenants."
     certainty: 0.5
     cites: &id003
     - source: S1
@@ -258,7 +262,7 @@ lio_axes:
       note: Named alternative.
       cites: *id003
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Continuing revelation through prophets; restored church; scripture (Bible + Book of Mormon +
@@ -269,8 +273,8 @@ epistemology:
     locator: opening
   how_known: Britannica.
 ethics:
-  value: Family emphasis; Word of Wisdom prohibitions (alcohol, tobacco, coffee, tea); education; work
-    ethic; faith, repentance, ordinances.
+  value: 'Family emphasis; Word of Wisdom prohibitions (alcohol, tobacco, coffee, tea); education; work
+    ethic; faith, repentance, ordinances.'
   certainty: 1.0
   cites:
   - source: S1
@@ -278,16 +282,16 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Baptism (age 8+), priesthood offices, missionary service, temple work including proxy baptism;
-      Word of Wisdom.
+    value: 'Baptism (age 8+), priesthood offices, missionary service, temple work including proxy baptism;
+      Word of Wisdom.'
     certainty: 1.0
     cites:
     - source: S1
       locator: practices FAQ
     how_known: Britannica.
   community_form:
-    value: Hierarchical church HQ Salt Lake City; wards/stakes; Community of Christ separate denomination
-      (Independence, MO).
+    value: 'Hierarchical church HQ Salt Lake City; wards/stakes; Community of Christ separate denomination
+      (Independence, MO).'
     certainty: 1.0
     cites:
     - source: S1
@@ -301,7 +305,7 @@ science:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 coder.
+    how_known: '0.5 coder.'
   current_stance:
     value: Not fixed in S1.
     certainty: 0.7
@@ -337,7 +341,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Church of Jesus Christ of Latter-day Saints reports tens of millions of members (order-of-magnitude)
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -346,25 +355,25 @@ v7_1_rubric:
   V: 3
   X: 2
   total: 21
-  scoring_note: Mormonism scores moderately low due to its heavy reliance on unique revelations and scriptures
-    over empirical evidence, though it provides strong community and family-oriented coherence.
-  source: v7.1 data book, section 6 table (tables[4]) row 71 and section 7 scoring notes
+  scoring_note: 'Mormonism scores moderately low due to its heavy reliance on unique revelations and scriptures
+    over empirical evidence, though it provides strong community and family-oriented coherence.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 71 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: LDS / Mormon / Community of Christ identity (note denomination).
@@ -389,7 +398,7 @@ sources:
   citation: 'Melton, J. Gordon. "Church of Jesus Christ of Latter-day Saints." Encyclopaedia Britannica.
     https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints. Wayback Machine snapshot
     2026-10-09 23:47:53 UTC: https://web.archive.org/web/20261009234753/https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints.'
-  url: https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints
+  url: 'https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints'
   accessed: '2026-10-25'
   reliability_note: 'Signed article; introduction and history read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261009234753/https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints);
     live page not compared (live Britannica times out from the box).'
@@ -400,8 +409,8 @@ sources:
   citation: 'Melton, J. Gordon. "Church of Jesus Christ of Latter-day Saints: Scriptures." Encyclopaedia
     Britannica. https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures.
     Wayback Machine snapshot 2026-10-09 23:47:52 UTC: https://web.archive.org/web/20261009234752/https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures.'
-  url: https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article (scriptures and doctrines). P44(e): read in
     the Wayback copy (https://web.archive.org/web/20261009234752/https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures);
     live page not compared (live Britannica times out from the box).'
@@ -447,3 +456,4 @@ LDS/Mormon identity; note denomination.
 
 - Prior: A C D scored.
 - 2026-10-25: deepened from Britannica LDS (Melton). Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

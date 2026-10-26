@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11): filled from Britannica "Zoroastrianism" (Duchesne-Guillemin),
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Zoroastrianism (Duchesne-Guillemin): Ahura Mazdā vs Angra
       Mainyu, free choice, Avesta, Parsis. Keep prior axis scores.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: ZORO
   v7_1_number: 67
@@ -55,7 +59,7 @@ classification:
   parent_traditions:
     value:
     - Pre-Zoroastrian Iranian / Indo-Iranian polytheism
-    - Zarathushtra's reformation elevating Ahura Mazdā
+    - "Zarathushtra's reformation elevating Ahura Mazdā"
     certainty: 1.0
     cites:
     - source: S1
@@ -67,10 +71,10 @@ classification:
     note: supreme creator with dualistic twist
   - code: JUDA
     relation: neighbor (easily confused)
-    note: possible influence, not identity
+    note: 'possible influence, not identity'
   - code: CHRIST
     relation: neighbor (easily confused)
-    note: influence thesis, not identity
+    note: 'influence thesis, not identity'
 origins:
   founding_era:
     value: Zarathushtra flourished before the 6th century BCE (traditional); eastern Iran before Cyrus
@@ -146,7 +150,7 @@ metaphysics:
       locator: nature
     how_known: Thin.
   afterlife:
-    value: Evil's followers suffer then all humanity eternal bliss after Ahura Mazdā's victory.
+    value: "Evil's followers suffer then all humanity eternal bliss after Ahura Mazdā's victory."
     stance: personal afterlife
     certainty: 0.7
     cites:
@@ -154,7 +158,7 @@ metaphysics:
       locator: beliefs FAQ
     how_known: Britannica.
   moral_ledger:
-    value: Free choice enlistment; eventual suffering for evil's followers.
+    value: "Free choice enlistment; eventual suffering for evil's followers."
     stance: personal reward and punishment
     certainty: 0.7
     cites:
@@ -162,7 +166,7 @@ metaphysics:
       locator: nature; beliefs FAQ
     how_known: Britannica.
   authority:
-    value: Prophet Zarathushtra's Gāthās / Avesta; Magi historically.
+    value: "Prophet Zarathushtra's Gāthās / Avesta; Magi historically."
     stance: revelation
     certainty: 0.7
     cites:
@@ -179,12 +183,12 @@ metaphysics:
     how_known: Silence.
   teleology_in_nature:
     value: Cosmic struggle toward triumph of good; purity vs defilement.
-    stance: designer's purposes
+    stance: "designer's purposes"
     certainty: 0.5
     cites:
     - source: S1
       locator: nature
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Humans enlist by capacity for free choice; soul and body.
     certainty: 1.0
@@ -195,8 +199,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 1
-    rationale: '''unifying under the worship of one supreme god''; in the Vidēvdāt ''Ahura Mazdā and the
-      Destructive Spirit opposed each other by creating, respectively, the good and the bad things''.'
+    rationale: "'unifying under the worship of one supreme god'; in the Vidēvdāt 'Ahura Mazdā and the\
+      \ Destructive Spirit opposed each other by creating, respectively, the good and the bad things'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -210,13 +214,13 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
+    value: 'UNKNOWN'
+    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
   C_ledger:
     value: 0
-    rationale: The soul crosses 'the Bridge of the Requiter. It leads the good souls to paradise, but
-      the bad ones fall into hell'; 'The soul has also to undergo a judgment; it appears before Mithra
-      and his two companions'.
+    rationale: "The soul crosses 'the Bridge of the Requiter. It leads the good souls to paradise, but\
+      \ the bad ones fall into hell'; 'The soul has also to undergo a judgment; it appears before Mithra\
+      \ and his two companions'."
     certainty: 0.7
     cites: &id002
     - source: S3
@@ -227,10 +231,10 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Prophetic revelation (Gāthās); Avesta; Magi interpretation.
@@ -288,7 +292,7 @@ schools_and_variants:
     locator: opening
 - name: Parsis (India)
   form: regional
-  how_it_differs: 10th-c. immigrant descendants.
+  how_it_differs: '10th-c. immigrant descendants.'
   lio_difference: Same.
   certainty: 1.0
   cites:
@@ -297,7 +301,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Parsi/Zoroastrian communities (India/Iran/diaspora); tens to hundreds of thousands (order-of-magnitude)
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -306,25 +315,25 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 23
-  scoring_note: Zoroastrianism scores moderately low due to its revelatory dualism and limited empirical
-    alignment, though it pioneered ethical monotheism influencing later religions.
-  source: v7.1 data book, section 6 table (tables[4]) row 67 and section 7 scoring notes
+  scoring_note: 'Zoroastrianism scores moderately low due to its revelatory dualism and limited empirical
+    alignment, though it pioneered ethical monotheism influencing later religions.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 67 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Zoroastrian / Parsi / Zarathushtrian identity.
@@ -346,7 +355,7 @@ sources:
   author: Jacques Duchesne-Guillemin
   citation: 'Duchesne-Guillemin, Jacques. "Zoroastrianism." Encyclopaedia Britannica. https://www.britannica.com/topic/Zoroastrianism.
     Wayback Machine snapshot 2026-01-01 12:47:08 UTC: https://web.archive.org/web/20260101124708/https://www.britannica.com/topic/Zoroastrianism.'
-  url: https://www.britannica.com/topic/Zoroastrianism
+  url: 'https://www.britannica.com/topic/Zoroastrianism'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (Indo-Iranian studies); introduction and Nature and significance read.
     Newest 2026 snapshot (20261001082722) was a bot-check page. P44(e): read in the Wayback copy (https://web.archive.org/web/20260101124708/https://www.britannica.com/topic/Zoroastrianism);
@@ -358,8 +367,8 @@ sources:
   citation: 'Duchesne-Guillemin, Jacques. "Zoroastrianism: Beliefs and mythology." Encyclopaedia Britannica.
     https://www.britannica.com/topic/Zoroastrianism/Beliefs-and-mythology. Wayback Machine snapshot 2026-07-21
     18:53:41 UTC: https://web.archive.org/web/20260721185341/https://www.britannica.com/topic/Zoroastrianism/Beliefs-and-mythology.'
-  url: https://www.britannica.com/topic/Zoroastrianism/Beliefs-and-mythology
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Zoroastrianism/Beliefs-and-mythology'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260721185341/https://www.britannica.com/topic/Zoroastrianism/Beliefs-and-mythology);
     live page not compared (live Britannica times out from the box).'
 - id: S3
@@ -368,8 +377,8 @@ sources:
   author: Jacques Duchesne-Guillemin
   citation: 'Duchesne-Guillemin, Jacques. "Zoroastrianism: Cosmology." Encyclopaedia Britannica. https://www.britannica.com/topic/Zoroastrianism/Cosmology.
     Wayback Machine snapshot 2026-01-30 12:14:29 UTC: https://web.archive.org/web/20260130121429/https://www.britannica.com/topic/Zoroastrianism/Cosmology.'
-  url: https://www.britannica.com/topic/Zoroastrianism/Cosmology
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Zoroastrianism/Cosmology'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260130121429/https://www.britannica.com/topic/Zoroastrianism/Cosmology);
     live page not compared (live Britannica times out from the box).'
 ---
@@ -415,3 +424,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S11): Britannica Zoroastrianism; axes set.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

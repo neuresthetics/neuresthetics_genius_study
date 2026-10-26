@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10, thin): filled from Britannica "Anthroposophy" (editors, one paragraph).
@@ -28,6 +28,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from short Britannica: family, Steiner, spiritual worlds via enhanced consciousness,
       Anthroposophical Society 1912 Dornach. Keep D=1; other axes UNKNOWN (article very short).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: ANTHRO
   v7_1_number: 58
@@ -45,8 +49,8 @@ classification:
     how_known: 'Britannica: philosophy of contacting spiritual worlds; Society. 0.7 between philosophy
       and esoteric.'
   family:
-    value: 'Rudolf Steiner''s anthroposophy: human intellect can contact spiritual worlds; enhanced consciousness
-      perceives spiritual worlds independent of the senses'
+    value: "Rudolf Steiner's anthroposophy: human intellect can contact spiritual worlds; enhanced consciousness\
+      \ perceives spiritual worlds independent of the senses"
     certainty: 1.0
     cites:
     - source: S1
@@ -54,7 +58,7 @@ classification:
     how_known: Britannica.
   parent_traditions:
     value:
-    - Rudolf Steiner's synthesis (Austrian philosopher, scientist, artist)
+    - "Rudolf Steiner's synthesis (Austrian philosopher, scientist, artist)"
     - Earlier Theosophical milieu (historical context; not detailed in this short article)
     certainty: 0.5
     cites:
@@ -64,7 +68,7 @@ classification:
   related_codes:
   - code: THEOS
     relation: neighbor (easily confused)
-    note: Steiner's path diverged from Theosophy; use ANTHRO for anthroposophy
+    note: "Steiner's path diverged from Theosophy; use ANTHRO for anthroposophy"
   - code: HERMET
     relation: neighbor (easily confused)
     note: different corpus
@@ -80,7 +84,7 @@ origins:
       locator: full article
     how_known: Britannica.
   founding_region:
-    value: Europe; Society now based in Dornach, Switzerland, with branches worldwide
+    value: 'Europe; Society now based in Dornach, Switzerland, with branches worldwide'
     certainty: 1.0
     cites:
     - source: S1
@@ -96,7 +100,7 @@ origins:
       locator: full article; key people
     how_known: Britannica.
   key_texts:
-  - value: Not named in this short Britannica article (Steiner's corpus implied)
+  - value: "Not named in this short Britannica article (Steiner's corpus implied)"
     certainty: 1.0
     cites:
     - source: S1
@@ -162,15 +166,15 @@ metaphysics:
       locator: full article
     how_known: Silence.
   authority:
-    value: Enhanced spiritual perception / faculties of knowledge latent in all humans; spiritual world
-      'comprehensible to pure thought' but 'fully accessible only' to those faculties. Founder Steiner.
-      Mix of reason and spiritual revelation — leans revelation/esoteric.
-    stance: both, revelation first
+    value: "Enhanced spiritual perception / faculties of knowledge latent in all humans; spiritual world\
+      \ 'comprehensible to pure thought' but 'fully accessible only' to those faculties. Founder Steiner.\
+      \ Mix of reason and spiritual revelation — leans revelation/esoteric."
+    stance: 'both, revelation first'
     certainty: 0.5
     cites:
     - source: S1
       locator: full article
-    how_known: Coder's reading of short blurb; 0.5.
+    how_known: "Coder's reading of short blurb; 0.5."
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -196,13 +200,13 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: No God-locus doctrine in short Britannica (P44).
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Silent (P44).
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Silent (P44).
   D_authority:
     value: 1
@@ -214,7 +218,7 @@ lio_axes:
       locator: full article
     how_known: Prior score kept; short article.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Silent (P44).
 epistemology:
   value: Human intellect can contact spiritual worlds; pure thought comprehends them; full access via
@@ -242,7 +246,7 @@ practice:
       locator: full article
     how_known: Silence — do not invent Waldorf from memory without cite.
   community_form:
-    value: Anthroposophical Society (1912), based in Dornach, Switzerland, with branches around the world.
+    value: 'Anthroposophical Society (1912), based in Dornach, Switzerland, with branches around the world.'
     certainty: 1.0
     cites:
     - source: S1
@@ -250,13 +254,13 @@ practice:
     how_known: Britannica.
 science:
   historical_stance:
-    value: Steiner described as philosopher, scientist, and artist; claims spiritual perception beyond
-      sensory science. Article too short for a full science stance.
+    value: 'Steiner described as philosopher, scientist, and artist; claims spiritual perception beyond
+      sensory science. Article too short for a full science stance.'
     certainty: 0.5
     cites:
     - source: S1
       locator: full article
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Not addressed.
     certainty: 1.0
@@ -267,7 +271,7 @@ science:
 schools_and_variants:
 - name: Anthroposophical Society (Dornach)
   form: modern
-  how_it_differs: Institutional home of Steiner's anthroposophy.
+  how_it_differs: "Institutional home of Steiner's anthroposophy."
   lio_difference: D=1; other axes UNKNOWN.
   certainty: 1.0
   cites:
@@ -276,7 +280,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Anthroposophical Society and Waldorf network; Britannica no global census here
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -285,25 +294,25 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 25
-  scoring_note: Anthroposophy scores moderately due to its ambitious integration of spirit and science,
-    offering innovative applications but limited by revelatory and unempirical elements.
-  source: v7.1 data book, section 6 table (tables[4]) row 58 and section 7 scoring notes
+  scoring_note: 'Anthroposophy scores moderately due to its ambitious integration of spirit and science,
+    offering innovative applications but limited by revelatory and unempirical elements.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 58 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Anthroposophy / Steiner / Anthroposophical Society identity.
@@ -326,7 +335,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Anthroposophy." Encyclopaedia Britannica. https://www.britannica.com/topic/anthroposophy.
     Wayback Machine snapshot 2026-10-09 13:54:13 UTC: https://web.archive.org/web/20261009135413/https://www.britannica.com/topic/anthroposophy.'
-  url: https://www.britannica.com/topic/anthroposophy
+  url: 'https://www.britannica.com/topic/anthroposophy'
   accessed: '2026-10-25'
   reliability_note: 'Short unsigned editors’ article (one paragraph). P44(e): read in the Wayback copy
     (https://web.archive.org/web/20261009135413/https://www.britannica.com/topic/anthroposophy); live
@@ -376,3 +385,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S10): Britannica anthroposophy; D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, community from re-read. D kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

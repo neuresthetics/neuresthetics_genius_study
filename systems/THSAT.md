@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S12, thin): Britannica "Satanism" (Doyle White) describes theistic
@@ -27,6 +27,10 @@ record:
     summary: 'Deepen qualities from Britannica Satanism: family, kind, contrast with atheistic LaVeyan/TST,
       Temple of Set and solitary theistic practitioners, metaphysics (literal Satan/Lucifer/Set), practice.
       Axes stay UNKNOWN — no shared cosmology across theistic groups (P46(a)).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: THSAT
   v7_1_number: 73
@@ -54,12 +58,12 @@ classification:
     value:
     - Christian Devil mythology (inverted)
     - Romantic reassessment of Satan as rebel
-    - 20th-c. occult milieu; Temple of Set from Church of Satan split
+    - '20th-c. occult milieu; Temple of Set from Church of Satan split'
     certainty: 0.7
     cites:
     - source: S1
       locator: Satan as a character; Modern religious Satanism
-    how_known: Coder's reading of Britannica history.
+    how_known: "Coder's reading of Britannica history."
   related_codes:
   - code: THELEM
     relation: neighbor (easily confused)
@@ -92,16 +96,16 @@ origins:
     how_known: Britannica.
   founders_or_key_figures:
     value:
-    - Michael Aquino (Temple of Set, 1975)
-    - Anton LaVey (Church of Satan founder — atheistic contrast, not THSAT)
+    - 'Michael Aquino (Temple of Set, 1975)'
+    - 'Anton LaVey (Church of Satan founder — atheistic contrast, not THSAT)'
     certainty: 1.0
     cites:
     - source: S1
       locator: Modern religious Satanism
     how_known: Britannica. Joy of Satan named in v7.1 label but not in this Britannica article.
   key_texts:
-  - value: No single canon for theistic Satanism as a whole; LaVey's Satanic Bible (1969) is atheistic
-      and not THSAT doctrine
+  - value: "No single canon for theistic Satanism as a whole; LaVey's Satanic Bible (1969) is atheistic\
+      \ and not THSAT doctrine"
     certainty: 0.7
     cites:
     - source: S1
@@ -141,7 +145,7 @@ metaphysics:
     certainty: 0.7
     cites:
     - source: S1
-      locator: Modern religious Satanism; occult Q&A material
+      locator: 'Modern religious Satanism; occult Q&A material'
     how_known: Britannica notes magic in some groups.
   petition_and_prayer:
     value: Worship of a literal Satan/Lucifer/Set; forms vary. Not described as a single petition theology.
@@ -167,7 +171,7 @@ metaphysics:
     cites:
     - source: S1
       locator: Modern religious Satanism
-    how_known: Coder's reading; 'none' = no shared ledger, not ethical nihilism claim.
+    how_known: "Coder's reading; 'none' = no shared ledger, not ethical nihilism claim."
   authority:
     value: 'Varies: founder teachings (Aquino), personal gnosis, occult texts. Not public science. Revelation/founder
       mix; score as varies.'
@@ -200,28 +204,28 @@ metaphysics:
     cites:
     - source: S1
       locator: Modern religious Satanism
-    how_known: Coder's reading of Britannica on Romantic reassessment.
+    how_known: "Coder's reading of Britannica on Romantic reassessment."
 lio_axes:
   A_locus:
-    value: UNKNOWN
-    how_known: 'Theistic Satanism is a camp, not one cosmology. Britannica: beliefs ''vary considerably''.
-      P44/P46(a): leave UNKNOWN; score the person''s specific group if evidence allows.'
+    value: 'UNKNOWN'
+    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
+      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
   B_cause:
-    value: UNKNOWN
-    how_known: 'Theistic Satanism is a camp, not one cosmology. Britannica: beliefs ''vary considerably''.
-      P44/P46(a): leave UNKNOWN; score the person''s specific group if evidence allows.'
+    value: 'UNKNOWN'
+    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
+      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
   C_ledger:
-    value: UNKNOWN
-    how_known: 'Theistic Satanism is a camp, not one cosmology. Britannica: beliefs ''vary considerably''.
-      P44/P46(a): leave UNKNOWN; score the person''s specific group if evidence allows.'
+    value: 'UNKNOWN'
+    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
+      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
   D_authority:
-    value: UNKNOWN
-    how_known: 'Theistic Satanism is a camp, not one cosmology. Britannica: beliefs ''vary considerably''.
-      P44/P46(a): leave UNKNOWN; score the person''s specific group if evidence allows.'
+    value: 'UNKNOWN'
+    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
+      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
   E_scope:
-    value: UNKNOWN
-    how_known: 'Theistic Satanism is a camp, not one cosmology. Britannica: beliefs ''vary considerably''.
-      P44/P46(a): leave UNKNOWN; score the person''s specific group if evidence allows.'
+    value: 'UNKNOWN'
+    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
+      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
 epistemology:
   value: 'Varies by group: occult teaching, personal experience of a literal Satan/Set, founder revelations
     (e.g. Aquino). No shared public method.'
@@ -229,11 +233,11 @@ epistemology:
   cites:
   - source: S1
     locator: Modern religious Satanism
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 ethics:
-  value: No shared ethics. Church of Satan / TST (atheistic) are out of scope. Order of Nine Angles endorses
+  value: 'No shared ethics. Church of Satan / TST (atheistic) are out of scope. Order of Nine Angles endorses
     violence including human sacrifice — extreme fringe, not representative of all theistic Satanists
-    [S1].
+    [S1].'
   certainty: 1.0
   cites:
   - source: S1
@@ -264,7 +268,7 @@ science:
     cites:
     - source: S1
       locator: Modern religious Satanism
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Not a science stance; supernaturalist self-identification.
     certainty: 1.0
@@ -275,7 +279,7 @@ science:
 schools_and_variants:
 - name: Temple of Set
   form: modern
-  how_it_differs: Aquino 1975; Satan's real identity is Set; shifts toward modern Paganism.
+  how_it_differs: "Aquino 1975; Satan's real identity is Set; shifts toward modern Paganism."
   lio_difference: Person-level; axes UNKNOWN for THSAT umbrella.
   certainty: 1.0
   cites:
@@ -291,8 +295,8 @@ schools_and_variants:
     locator: Modern religious Satanism
 - name: Order of Nine Angles (fringe)
   form: other
-  how_it_differs: Self-described 'traditional Satanism'; little emphasis on Satan; endorses human sacrifice
-    and extreme politics.
+  how_it_differs: "Self-described 'traditional Satanism'; little emphasis on Satan; endorses human sacrifice\
+    \ and extreme politics."
   lio_difference: Do not treat as typical THSAT ethics.
   certainty: 1.0
   cites:
@@ -301,7 +305,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Small theistic Satanist / Temple of Set / solitary practitioners; Britannica no census
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: Modern religious Satanism
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 6
@@ -310,31 +319,31 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 20
-  scoring_note: Theistic Satanism scores low due to its supernatural focus and reliance on revelation,
-    though it provides a rebellious framework for some adherents.
-  source: v7.1 data book, section 6 table (tables[4]) row 73 and section 7 scoring notes
+  scoring_note: 'Theistic Satanism scores low due to its supernatural focus and reliance on revelation,
+    though it provides a rebellious framework for some adherents.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 73 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Person affirms Satan/Lucifer (or Set-as-Satan) as a literal being they worship.
-  do_not_use_when: Church of Satan, The Satanic Temple, or other atheistic/symbolic Satanism — not THSAT
+  do_not_use_when: 'Church of Satan, The Satanic Temple, or other atheistic/symbolic Satanism — not THSAT
     (contrast ATHE / ethical movements). Accusations of Devil worship without self-identification — not
-    THSAT.
+    THSAT.'
   neighbors:
   - code: THELEM
     relation: neighbor (easily confused)
@@ -356,7 +365,7 @@ sources:
   author: Ethan Doyle White
   citation: 'Doyle White, Ethan. "Satanism." Encyclopaedia Britannica. https://www.britannica.com/topic/Satanism.
     Wayback Machine snapshot 2026-10-12 04:17:08 UTC: https://web.archive.org/web/20261012041708/https://www.britannica.com/topic/Satanism.'
-  url: https://www.britannica.com/topic/Satanism
+  url: 'https://www.britannica.com/topic/Satanism'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of modern Paganism and Satanism); the modern religious
     Satanism section read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012041708/https://www.britannica.com/topic/Satanism);
@@ -405,3 +414,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S12): Britannica Satanism; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read Britannica. Axes still UNKNOWN.
+- 2026-10-25: adherents/estimate filled (qualitative).

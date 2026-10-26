@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10, P45 lower tier): filled from Meletiadis, Aries 2025 (peer-reviewed).
@@ -25,6 +25,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Encyclopedia.com Chaos Magick: Spare/Sherwin/Carroll, belief-as-tool,
       sigils, IOT 1977, no objective gods. Keep A/B BELOW_THRESHOLD; C D E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: CHAOSM
   v7_1_number: 59
@@ -50,9 +54,9 @@ classification:
     how_known: Encyclopedia.com.
   parent_traditions:
     value:
-    - Austin Osman Spare's sigil magic / critique of ceremonial magic
+    - "Austin Osman Spare's sigil magic / critique of ceremonial magic"
     - Thelemic milieu as the dominance being reacted against
-    - Eastern notions (Brahman, Tao, Atman=Brahman) as analogies
+    - 'Eastern notions (Brahman, Tao, Atman=Brahman) as analogies'
     certainty: 1.0
     cites:
     - source: S2
@@ -88,7 +92,7 @@ origins:
     value:
     - Austin Osman Spare (forerunner)
     - Ray Sherwin (originator of chaos magical theory per entry)
-    - Peter J. Carroll (Liber Null, Psychonaut, IOT rituals)
+    - 'Peter J. Carroll (Liber Null, Psychonaut, IOT rituals)'
     certainty: 1.0
     cites:
     - source: S2
@@ -101,7 +105,7 @@ origins:
     - source: S2
       locator: IOT
     how_known: Encyclopedia.com.
-  - value: Liber Null & Psychonaut (Carroll, 1987)
+  - value: 'Liber Null & Psychonaut (Carroll, 1987)'
     certainty: 1.0
     cites:
     - source: S2
@@ -139,7 +143,7 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5 — magical efficacy without gods.
+    how_known: '0.5 — magical efficacy without gods.'
   miracles:
     value: Magical results via sigils/will; not theistic miracles.
     stance: reinterpreted as natural
@@ -147,7 +151,7 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5 subconscious-natural reading.
+    how_known: '0.5 subconscious-natural reading.'
   petition_and_prayer:
     value: Not petition to gods; inner-self exercises and self-designed ritual.
     stance: no petition
@@ -173,8 +177,8 @@ metaphysics:
       locator: opening
     how_known: Silence.
   authority:
-    value: Practitioner's subconscious / own designed ritual; Spare/Sherwin/Carroll texts; IOT as optional
-      org.
+    value: "Practitioner's subconscious / own designed ritual; Spare/Sherwin/Carroll texts; IOT as optional\
+      \ org."
     stance: observation and reason
     certainty: 0.5
     cites:
@@ -196,7 +200,7 @@ metaphysics:
     cites:
     - source: S2
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed as free-will thesis.
     certainty: 1.0
@@ -206,25 +210,25 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Meletiadis finds ''a relativasation of the existence of gods'' in Carroll: ''a pantheon
-      of gods is a map of the mind'' and ''all gods are relative and all mythologies embody a psychology'';
-      the current rests on ''the idea that belief is but a tool in the hands of its wielder'' (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Meletiadis finds 'a relativasation of the existence of gods' in Carroll: 'a pantheon of\
+      \ gods is a map of the mind' and 'all gods are relative and all mythologies embody a psychology';\
+      \ the current rests on 'the idea that belief is but a tool in the hands of its wielder' (S1)."
     note: P45 cap. No fixed stance on whether gods exist.
   B_cause:
-    value: BELOW_THRESHOLD
-    how_known: 'Carroll''s definitions conflict: ''Magic may be defined as the science and art of willed
-      change in perception'', yet elsewhere ''magic is change, any change, which includes effects on the
-      natural environment'' (Meletiadis''s reading, S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Carroll's definitions conflict: 'Magic may be defined as the science and art of willed\
+      \ change in perception', yet elsewhere 'magic is change, any change, which includes effects on the\
+      \ natural environment' (Meletiadis's reading, S1)."
     note: Alternatives 1 and 3. P45 cap.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Universe intuited not defined; belief as tool; direct experience/knowledge of Atman=Brahman analogy;
@@ -288,7 +292,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Chaos magic practitioners; occult subculture; no census
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -297,25 +306,25 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 25
-  scoring_note: Chaos Magick scores moderately due to its innovative, flexible approach to personal empowerment
-    and magick, balanced by subjective elements that reduce empirical and predictive strength.
-  source: v7.1 data book, section 6 table (tables[4]) row 59 and section 7 scoring notes
+  scoring_note: 'Chaos Magick scores moderately due to its innovative, flexible approach to personal empowerment
+    and magick, balanced by subjective elements that reduce empirical and predictive strength.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 59 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Chaos Magick / IOT / Carroll-Sherwin-Spare chaos magical identity.
@@ -339,17 +348,17 @@ sources:
   author: Vasileios M. Meletiadis
   citation: 'Meletiadis, Vasileios M. "“Book Zero” through the Years." Aries 25, no. 1 (2025): 25–55.
     https://doi.org/10.1163/15700593-tat00004. Read in Wayback snapshot 2026-10-12 03:44:54 UTC: https://web.archive.org/web/20261012034454/https://brill.com/view/journals/arie/25/1/article-p25_2.xml.'
-  url: https://doi.org/10.1163/15700593-tat00004
-  accessed: '2026-10-15'
+  url: 'https://doi.org/10.1163/15700593-tat00004'
+  accessed: '2026-10-25'
   reliability_note: 'P45 lower tier (b): peer-reviewed scholarship defining the current; claims capped
     at 0.5. No encyclopedia entry found. The study centres on the 1978 and 1981 editions of Carroll’s
     Liber Null. Crossref gives online publication 2023-08-17.'
 - id: S2
   type: secondary
   kind: encyclopedia
-  url: https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick
+  url: 'https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick'
   accessed: '2026-10-25'
-  citation: Encyclopedia.com. "Chaos Magick." Accessed 2026-10-25. https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick.
+  citation: 'Encyclopedia.com. "Chaos Magick." Accessed 2026-10-25. https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick.'
 ---
 # Chaos Magick (CHAOSM)
 
@@ -394,3 +403,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - Prior: DOI/source batch; A/B BELOW_THRESHOLD.
 - 2026-10-25: deepened from Encyclopedia.com Chaos Magick (S2). Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

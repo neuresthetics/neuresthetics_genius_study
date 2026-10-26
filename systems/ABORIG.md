@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9): filled from Britannica "The Dreaming" (editors). A 3 (0.5, alt
@@ -25,6 +25,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica the Dreaming: mythic beings shape land and law, eternal
       presence, totemism, common life force. Keep A=3 D=1; B C E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: ABORIG
   v7_1_number: 53
@@ -50,7 +54,7 @@ classification:
     how_known: Britannica.
   parent_traditions:
     value:
-    - Australian Aboriginal peoples' localized traditions (many language groups)
+    - "Australian Aboriginal peoples' localized traditions (many language groups)"
     certainty: 1.0
     cites:
     - source: S1
@@ -81,8 +85,8 @@ origins:
     how_known: Britannica.
   founders_or_key_figures:
     value:
-    - Mythic beings of the Dreaming (human, animal/totemic, fertility mothers, male genitors) — not historical
-      founders
+    - 'Mythic beings of the Dreaming (human, animal/totemic, fertility mothers, male genitors) — not historical
+      founders'
     certainty: 1.0
     cites:
     - source: S1
@@ -97,8 +101,8 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Mythic beings shaped and humanized the natural environment; metamorphosed as landforms; spiritually
-      alive today. Man part of nature, sharing common life force with mythic beings and animal species.
+    value: 'Mythic beings shaped and humanized the natural environment; metamorphosed as landforms; spiritually
+      alive today. Man part of nature, sharing common life force with mythic beings and animal species.'
     stance: many gods within nature
     certainty: 0.7
     cites:
@@ -122,7 +126,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 ongoing spiritual presence.
+    how_known: '0.5 ongoing spiritual presence.'
   miracles:
     value: Not framed as miracles vs natural law.
     stance: not addressed
@@ -147,7 +151,7 @@ metaphysics:
     cites:
     - source: S1
       locator: totemism
-    how_known: 0.5 mapping of continuous identity.
+    how_known: '0.5 mapping of continuous identity.'
   moral_ledger:
     value: Mythic beings established local social order and its laws; not an afterlife scorekeeping ledger
       in this article.
@@ -180,7 +184,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -191,8 +195,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 3
-    rationale: Eternal mythic beings shaped the land and live on in it; humans, beings and species share
-      a common life force.
+    rationale: 'Eternal mythic beings shaped the land and live on in it; humans, beings and species share
+      a common life force.'
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -203,22 +207,22 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: The mythic beings 'were credited with having established the local social order and its
-      “laws”'.
+    rationale: "The mythic beings 'were credited with having established the local social order and its\
+      \ “laws”'."
     certainty: 0.5
     cites:
     - source: S1
       locator: introduction
     how_known: '0.5: law from the Dreaming, not reason.'
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Song/narrative and ritual knowledge of sacred places; totem as agent placing person within the
@@ -252,7 +256,7 @@ practice:
     how_known: Britannica.
 science:
   historical_stance:
-    value: Man regarded as part of nature, not fundamentally dissimilar to mythic beings or animal species.
+    value: 'Man regarded as part of nature, not fundamentally dissimilar to mythic beings or animal species.'
     certainty: 1.0
     cites:
     - source: S1
@@ -277,7 +281,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Australian Aboriginal traditions; diverse peoples; not one membership church
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -286,26 +295,26 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 26
-  scoring_note: Aboriginal Traditions score moderately due to their deep connection to land and ancestors
+  scoring_note: 'Aboriginal Traditions score moderately due to their deep connection to land and ancestors
     through Dreamtime narratives, offering rich cultural coherence but limited by oral revelation and
-    lack of empirical grounding.
-  source: v7.1 data book, section 6 table (tables[4]) row 53 and section 7 scoring notes
+    lack of empirical grounding.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 53 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Australian Aboriginal Dreaming / Dreamtime identity.
@@ -330,7 +339,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "The Dreaming." Encyclopaedia Britannica. https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology.
     Wayback Machine snapshot 2026-10-07 14:39:10 UTC: https://web.archive.org/web/20261007143910/https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology.'
-  url: https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology
+  url: 'https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology'
   accessed: '2026-10-25'
   reliability_note: 'Short unsigned editors’ article. P44(e): read in the Wayback copy (https://web.archive.org/web/20261007143910/https://www.britannica.com/topic/the-Dreaming-Australian-Aboriginal-mythology);
     live page timed out on 2026-10-15, so no live comparison.'
@@ -380,3 +389,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica the Dreaming; A and D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

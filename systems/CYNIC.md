@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S3): filled from IEP "Cynics" (Piering). All axes UNKNOWN: an ethics
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities: family, parent traditions, related codes, remaining metaphysics (not addressed
       / nature), epistemology, practice, science, schools, neighbors; D_authority 3 (0.7). Still unscored
       on A/B/C/E (ethics school, no metaphysics). Sources unchanged (IEP Piering).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: CYNIC
   v7_1_number: 15
@@ -40,7 +44,7 @@ classification:
     cites:
     - source: S1
       locator: introduction
-    how_known: 'IEP: calling the Cynics a ''school'' ''immediately raises a difficulty''. 0.7.'
+    how_known: "IEP: calling the Cynics a 'school' 'immediately raises a difficulty'. 0.7."
   family:
     value: Hellenistic Socratic ethics; precursor tradition to Stoicism
     certainty: 1.0
@@ -70,11 +74,11 @@ classification:
     note: shared suspicion of dogmatic metaphysics
   - code: HELLEN
     relation: neighbor (easily confused)
-    note: modern Hellenismos is reconstructionist religion, not the ancient Cynic school
+    note: 'modern Hellenismos is reconstructionist religion, not the ancient Cynic school'
 origins:
   founding_era:
-    value: Classical Greece; a lineage from Antisthenes to Diogenes, Crates and Zeno; as a school it ends
-      in the sixth century CE
+    value: 'Classical Greece; a lineage from Antisthenes to Diogenes, Crates and Zeno; as a school it
+      ends in the sixth century CE'
     certainty: 1.0
     cites:
     - source: S1
@@ -86,7 +90,7 @@ origins:
     cites:
     - source: S1
       locator: §1
-    how_known: 'IEP: ''the streets of Athens'' as setting. 0.7.'
+    how_known: "IEP: 'the streets of Athens' as setting. 0.7."
   founders_or_key_figures:
     value:
     - Antisthenes
@@ -98,16 +102,16 @@ origins:
       locator: §1–2
     how_known: IEP (Antisthenes as original Cynic is controversial).
   key_texts:
-  - value: No Cynic treatises survive; tradition via Diogenes Laertius, Book 6, and later literary portraits
+  - value: 'No Cynic treatises survive; tradition via Diogenes Laertius, Book 6, and later literary portraits'
     certainty: 1.0
     cites:
     - source: S1
       locator: introduction
-    how_known: 'IEP: ''none of the many Cynic texts have survived''; tenets via lives.'
+    how_known: "IEP: 'none of the many Cynic texts have survived'; tenets via lives."
 metaphysics:
   god_nature_relation:
-    value: 'Not addressed: the Cynics ''neglect, and very often ridicule, speculative philosophy'' and
-      ''metaphysical essences''.'
+    value: "Not addressed: the Cynics 'neglect, and very often ridicule, speculative philosophy' and 'metaphysical\
+      \ essences'."
     stance: not addressed
     certainty: 1.0
     cites:
@@ -115,17 +119,17 @@ metaphysics:
       locator: §1
     how_known: IEP.
   deity_personal:
-    value: Not a stated doctrine. Diogenes rebukes prayers for wealth and fame as mistaking what is 'truly
-      good'; religion as convention is mocked rather than theologized.
+    value: "Not a stated doctrine. Diogenes rebukes prayers for wealth and fame as mistaking what is 'truly\
+      \ good'; religion as convention is mocked rather than theologized."
     stance: not addressed
     certainty: 0.7
     cites:
     - source: S1
       locator: §3.a
-    how_known: Coder's reading of IEP anecdotes on prayer and convention; no positive theology.
+    how_known: "Coder's reading of IEP anecdotes on prayer and convention; no positive theology."
   intervention:
-    value: Not addressed as cosmology. Living 'in accord with nature' replaces petitionary religion as
-      the ethical standard.
+    value: "Not addressed as cosmology. Living 'in accord with nature' replaces petitionary religion as\
+      \ the ethical standard."
     stance: not addressed
     certainty: 0.7
     cites:
@@ -141,9 +145,9 @@ metaphysics:
       locator: §1
     how_known: 'IEP: Cynics neglect and ridicule speculative philosophy and metaphysical essences.'
   petition_and_prayer:
-    value: Diogenes 'would rebuke men in general with regard to their prayers, declaring that they asked
-      for things which seemed to them to be good, not for such as are truly good' (via Diogenes Laertius
-      in IEP).
+    value: "Diogenes 'would rebuke men in general with regard to their prayers, declaring that they asked\
+      \ for things which seemed to them to be good, not for such as are truly good' (via Diogenes Laertius\
+      \ in IEP)."
     stance: no petition
     certainty: 1.0
     cites:
@@ -157,17 +161,17 @@ metaphysics:
     cites: *id001
     how_known: 'IEP: Cynics neglect and ridicule speculative philosophy and metaphysical essences.'
   moral_ledger:
-    value: No divine judge. Virtue is living in accord with nature; shame attaches to failing to live
-      well, not to a personal afterlife ledger.
+    value: 'No divine judge. Virtue is living in accord with nature; shame attaches to failing to live
+      well, not to a personal afterlife ledger.'
     stance: none
     certainty: 0.7
     cites:
     - source: S1
       locator: §3
-    how_known: Coder's reading of Cynic ethics in IEP; no reward/punishment theology stated.
+    how_known: "Coder's reading of Cynic ethics in IEP; no reward/punishment theology stated."
   authority:
-    value: Nature and reason over nomos (convention), including religious and political authority. Parrhēsia
-      (frank speech) against rulers and temples.
+    value: 'Nature and reason over nomos (convention), including religious and political authority. Parrhēsia
+      (frank speech) against rulers and temples.'
     stance: observation and reason
     certainty: 1.0
     cites:
@@ -175,32 +179,32 @@ metaphysics:
       locator: §3; §3.a.i
     how_known: IEP on nature vs convention and parrhēsia.
   reserved_exemptions:
-    value: Not addressed as cosmology. Ethically, no privileged exemption from living in accord with nature
-      for the powerful (Alexander anecdotes).
+    value: 'Not addressed as cosmology. Ethically, no privileged exemption from living in accord with
+      nature for the powerful (Alexander anecdotes).'
     stance: none
     certainty: 0.7
     cites:
     - source: S1
       locator: §3.a.i
-    how_known: Coder's reading; metaphysics neglected.
+    how_known: "Coder's reading; metaphysics neglected."
   teleology_in_nature:
-    value: Nature is the ethical standard for the good life (reason, self-sufficiency, freedom), not a
-      designer's purposes in the scholastic sense. Stoics later develop physis more systematically.
+    value: "Nature is the ethical standard for the good life (reason, self-sufficiency, freedom), not\
+      \ a designer's purposes in the scholastic sense. Stoics later develop physis more systematically."
     stance: immanent ends
     certainty: 0.5
     cites:
     - source: S1
       locator: §3; §4
-    how_known: 'IEP: virtue as life in accord with nature; teleology wording is a coder''s label. Alt:
-      not addressed.'
+    how_known: "IEP: virtue as life in accord with nature; teleology wording is a coder's label. Alt:\
+      \ not addressed."
     alternatives:
     - value: not addressed as natural teleology; ethical naturalism only
       cites:
       - source: S1
         locator: §1
   necessity_and_freedom:
-    value: Freedom (eleutheria), self-sufficiency (autarkeia), and frank speech (parrhēsia) are central
-      goods; askēsis trains the self for that freedom against convention.
+    value: 'Freedom (eleutheria), self-sufficiency (autarkeia), and frank speech (parrhēsia) are central
+      goods; askēsis trains the self for that freedom against convention.'
     certainty: 1.0
     cites:
     - source: S1
@@ -208,22 +212,22 @@ metaphysics:
     how_known: IEP.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
       rebuke is ethical, not a cosmology of miracles.'
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
       rebuke is ethical, not a cosmology of miracles.'
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
       rebuke is ethical, not a cosmology of miracles.'
   D_authority:
     value: 3
-    rationale: Nature and reason outrank convention and religious/political authority; not a full natural-science
-      empiricism (no speculative physics), so not 4. Alternative 4 if 'observation and reason' is read
-      as LIO pole.
+    rationale: "Nature and reason outrank convention and religious/political authority; not a full natural-science\
+      \ empiricism (no speculative physics), so not 4. Alternative 4 if 'observation and reason' is read\
+      \ as LIO pole."
     certainty: 0.7
     cites:
     - source: S1
@@ -236,7 +240,7 @@ lio_axes:
         locator: §3
       note: If rejecting petitionary religion and convention counts as full observation/reason pole.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
       rebuke is ethical, not a cosmology of miracles.'
 epistemology:
@@ -248,12 +252,11 @@ epistemology:
     locator: introduction; §1
   how_known: IEP.
 ethics:
-  value: '''virtue is a life lived in accord with nature''; a ''shortcut to virtue''; rejection of nomos
-    (convention).'
+  value: "'virtue is a life lived in accord with nature'; a 'shortcut to virtue'; rejection of nomos (convention)."
   certainty: 1.0
   cites:
   - source: S1
-    locator: §1, §3
+    locator: '§1, §3'
   how_known: IEP.
 practice:
   ritual_and_practice:
@@ -280,10 +283,10 @@ science:
     cites:
     - source: S1
       locator: §1; §5
-    how_known: Coder's reading of IEP on neglect of speculative philosophy and Stoic legacy.
+    how_known: "Coder's reading of IEP on neglect of speculative philosophy and Stoic legacy."
   current_stance:
-    value: Ancient school ended by the sixth century CE; modern 'cynicism' as distrust is not the school.
-      Legacy in philosophy and literature, not a scientific stance.
+    value: "Ancient school ended by the sixth century CE; modern 'cynicism' as distrust is not the school.\
+      \ Legacy in philosophy and literature, not a scientific stance."
     certainty: 1.0
     cites:
     - source: S1
@@ -301,9 +304,9 @@ schools_and_variants:
 - name: Stoic inheritance
   code: STOIC
   form: scholastic or philosophical
-  how_it_differs: Takes over primacy of ethics, virtue sufficiency, living in accord with nature, askēsis;
-    adds systematic physics and a providential logos.
-  lio_difference: Stoic God is argued personal/providential; use STOIC, not CYNIC.
+  how_it_differs: 'Takes over primacy of ethics, virtue sufficiency, living in accord with nature, askēsis;
+    adds systematic physics and a providential logos.'
+  lio_difference: 'Stoic God is argued personal/providential; use STOIC, not CYNIC.'
   certainty: 1.0
   cites:
   - source: S1
@@ -311,7 +314,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Historical school (Antiquity); no modern mass membership; philosophical legacy via Stoicism
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening; Cynic Legacy
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 9
@@ -320,30 +328,30 @@ v7_1_rubric:
   V: 10
   X: 8
   total: 46
-  scoring_note: Cynicism scores high for its empirical naturalism and practical virtue ethics, promoting
+  scoring_note: 'Cynicism scores high for its empirical naturalism and practical virtue ethics, promoting
     self-sufficiency and critiquing conventions, making it a robust philosophy for personal coherence
-    despite its ancient origins.
-  source: v7.1 data book, section 6 table (tables[4]) row 15 and section 7 scoring notes
+    despite its ancient origins.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 15 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: 'The person''s own writing or life adopts the Cynic programme: virtue as life in accord with
-    nature, against convention.'
+  use_when: "The person's own writing or life adopts the Cynic programme: virtue as life in accord with\
+    \ nature, against convention."
   do_not_use_when: Modern cynicism (distrust) is not CYNIC. Stoics who followed the Cynics are STOIC.
   neighbors:
   - code: STOIC
@@ -355,16 +363,16 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - Whether any LIO A/B/C/E score can be fixed without reading Diogenes Laertius Book 6 or Branham & Goulet-Cazé
-    1996 in full.
+  - 'Whether any LIO A/B/C/E score can be fixed without reading Diogenes Laertius Book 6 or Branham &
+    Goulet-Cazé 1996 in full.'
   - Adherents are TODO (ancient school; not a census category).
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Julie Piering
-  citation: Julie Piering. "Cynics." Internet Encyclopedia of Philosophy. https://iep.utm.edu/cynics/.
-  url: https://iep.utm.edu/cynics/
+  citation: 'Julie Piering. "Cynics." Internet Encyclopedia of Philosophy. https://iep.utm.edu/cynics/.'
+  url: 'https://iep.utm.edu/cynics/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; undated page.
 ---
@@ -414,3 +422,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S3): read the listed sources; quotations checked word for word against the fetched page text with a script. Axes under P44.
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read IEP Piering.
+- 2026-10-25: adherents/estimate filled (qualitative).

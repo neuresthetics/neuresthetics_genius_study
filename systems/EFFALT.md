@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S2): filled from Britannica "Effective altruism" (Brodsky). Every axis
@@ -28,6 +28,10 @@ record:
       science, schools (earning to give; longtermism). Add SEP Philanthropy (S2). Score D_authority 3
       (0.7) from evidence-and-reason framing. A/B/C/E stay UNKNOWN. Sources: Britannica Brodsky; SEP Philanthropy
       §3.2.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: EFFALT
   v7_1_number: 12
@@ -42,7 +46,7 @@ classification:
     cites:
     - source: S1
       locator: opening
-    how_known: '''in ethics, a theory of conduct and a movement''.'
+    how_known: "'in ethics, a theory of conduct and a movement'."
   family:
     value: Consequentialist-leaning ethics of giving and a social movement that uses evidence to maximize
       benefits to others
@@ -52,11 +56,11 @@ classification:
       locator: §3.2
     - source: S1
       locator: opening
-    how_known: 'SEP: EA ''use[s] evidence and reason to determine how to benefit others as much as possible'';
-      Britannica: theory of conduct and movement.'
+    how_known: "SEP: EA 'use[s] evidence and reason to determine how to benefit others as much as possible';\
+      \ Britannica: theory of conduct and movement."
   parent_traditions:
     value:
-    - Peter Singer's arguments on famine and obligation
+    - "Peter Singer's arguments on famine and obligation"
     - Utilitarian / consequentialist ethics
     - Evidence-based charity evaluation
     certainty: 1.0
@@ -65,7 +69,7 @@ classification:
       locator: §3.2
     - source: S1
       locator: Historical developments
-    how_known: SEP traces roots to Singer 1972; Britannica names Singer, MacAskill, Ord.
+    how_known: 'SEP traces roots to Singer 1972; Britannica names Singer, MacAskill, Ord.'
   related_codes:
   - code: UTIL
     relation: neighbor (easily confused)
@@ -78,7 +82,7 @@ classification:
     note: welfarist pleasure/pain metrics sometimes used; not required
 origins:
   founding_era:
-    value: 1972 roots (Singer); Giving What We Can 2009
+    value: '1972 roots (Singer); Giving What We Can 2009'
     certainty: 1.0
     cites:
     - source: S1
@@ -90,7 +94,7 @@ origins:
     cites:
     - source: S1
       locator: Historical developments
-    how_known: Coder's geographic gloss on Britannica's founding figures and orgs.
+    how_known: "Coder's geographic gloss on Britannica's founding figures and orgs."
   founders_or_key_figures:
     value:
     - Peter Singer
@@ -193,7 +197,7 @@ metaphysics:
     cites:
     - source: S2
       locator: §3.2
-    how_known: Coder's reading of SEP EA section.
+    how_known: "Coder's reading of SEP EA section."
   authority:
     value: 'Evidence and reason: identify interventions that help most, then mobilize resources. Charity
       evaluators and expected-value reasoning over tradition or revelation.'
@@ -204,14 +208,14 @@ metaphysics:
       locator: §3.2
     how_known: SEP quotation of MacAskill definition.
   reserved_exemptions:
-    value: Not addressed as cosmology. Ethically, impartial concern (distance and nationality not morally
-      relevant in the Singer/EA line) pushes against in-group exemptions.
+    value: 'Not addressed as cosmology. Ethically, impartial concern (distance and nationality not morally
+      relevant in the Singer/EA line) pushes against in-group exemptions.'
     stance: none
     certainty: 0.7
     cites:
     - source: S2
       locator: §3.2
-    how_known: Coder's reading of SEP on equal moral worth / distance.
+    how_known: "Coder's reading of SEP on equal moral worth / distance."
   teleology_in_nature:
     value: Not addressed.
     stance: none
@@ -221,8 +225,8 @@ metaphysics:
       locator: opening
     how_known: Britannica and SEP describe an ethics and movement; no theology.
   necessity_and_freedom:
-    value: Not a free-will doctrine. Stresses individual agency to give, earn-to-give, and choose careers;
-      critics note the individualist framing versus institutional change.
+    value: 'Not a free-will doctrine. Stresses individual agency to give, earn-to-give, and choose careers;
+      critics note the individualist framing versus institutional change.'
     certainty: 0.7
     cites:
     - source: S2
@@ -230,18 +234,19 @@ metaphysics:
     how_known: SEP on earning to give and institutional critique.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
   D_authority:
     value: 3
-    rationale: Evidence and reason to maximize benefits; strong empiricism about interventions, but not
-      a full natural-science cosmology, so not 4. Alt 4 if 'evidence and reason' is read as the LIO pole.
+    rationale: "Evidence and reason to maximize benefits; strong empiricism about interventions, but not\
+      \ a full natural-science cosmology, so not 4. Alt 4 if 'evidence and reason' is read as the LIO\
+      \ pole."
     certainty: 0.7
     cites:
     - source: S2
@@ -254,11 +259,11 @@ lio_axes:
         locator: §3.2
       note: If evidence-and-reason definition counts as full observation/reason pole.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
 epistemology:
-  value: Use evidence and reason; charity evaluators (e.g. GiveWell), randomized trials and cost-effectiveness
-    where available; expected-value reasoning under uncertainty (including longtermist risk).
+  value: 'Use evidence and reason; charity evaluators (e.g. GiveWell), randomized trials and cost-effectiveness
+    where available; expected-value reasoning under uncertainty (including longtermist risk).'
   certainty: 1.0
   cites:
   - source: S2
@@ -277,8 +282,8 @@ ethics:
   how_known: Britannica and SEP.
 practice:
   ritual_and_practice:
-    value: Pledging (e.g. 10% of income), career choice including earning-to-give, donating to highly
-      rated charities, cause prioritization. No religious ritual.
+    value: 'Pledging (e.g. 10% of income), career choice including earning-to-give, donating to highly
+      rated charities, cause prioritization. No religious ritual.'
     certainty: 1.0
     cites:
     - source: S1
@@ -287,8 +292,8 @@ practice:
       locator: §3.2
     how_known: Britannica and SEP.
   community_form:
-    value: Movement with organizations (Giving What We Can, 80,000 Hours, Centre for Effective Altruism,
-      GiveWell, Open Philanthropy) rather than a church. Academic and philanthropic networks.
+    value: 'Movement with organizations (Giving What We Can, 80,000 Hours, Centre for Effective Altruism,
+      GiveWell, Open Philanthropy) rather than a church. Academic and philanthropic networks.'
     certainty: 1.0
     cites:
     - source: S2
@@ -296,16 +301,16 @@ practice:
     how_known: SEP.
 science:
   historical_stance:
-    value: From the start, appeals to evidence about which interventions save or improve lives most; allied
-      with development economics and charity evaluation.
+    value: 'From the start, appeals to evidence about which interventions save or improve lives most;
+      allied with development economics and charity evaluation.'
     certainty: 1.0
     cites:
     - source: S2
       locator: §3.2
     how_known: SEP.
   current_stance:
-    value: Continues evidence-based evaluation; longtermism shifts some attention to existential risk
-      and future generations, with contested prediction problems. Not a natural-science research school.
+    value: 'Continues evidence-based evaluation; longtermism shifts some attention to existential risk
+      and future generations, with contested prediction problems. Not a natural-science research school.'
     certainty: 0.7
     cites:
     - source: S2
@@ -342,7 +347,13 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Growing social movement and online community; not a census religion; GiveWell-adjacent donor
+      networks
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 10
@@ -351,28 +362,28 @@ v7_1_rubric:
   V: 10
   X: 8
   total: 47
-  scoring_note: Effective Altruism is highly coherent, focusing on rational benevolence with strong empirical
-    backing.
-  source: v7.1 data book, section 6 table (tables[4]) row 12 and section 7 scoring notes
+  scoring_note: 'Effective Altruism is highly coherent, focusing on rational benevolence with strong empirical
+    backing.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 12 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person was a founder, leader or committed member of the effective altruism movement.
+  use_when: 'The person was a founder, leader or committed member of the effective altruism movement.'
   do_not_use_when: Charitable giving or utilitarian ethics alone is not EFFALT (Britannica separates it
     from utilitarianism); EFFALT sets no axes.
   neighbors:
@@ -383,16 +394,16 @@ coding_guidance:
 review:
   data_quality_flags: []
   open_questions:
-  - Members' personal metaphysics still vary; axes stay UNKNOWN for the movement.
+  - "Members' personal metaphysics still vary; axes stay UNKNOWN for the movement."
   - Adherents are TODO.
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Isabel Brodsky; Britannica Editors
-  citation: Brodsky, Isabel, and the Editors of Encyclopaedia Britannica. "Effective altruism." Encyclopaedia
-    Britannica. https://www.britannica.com/topic/effective-altruism.
-  url: https://www.britannica.com/topic/effective-altruism
+  citation: 'Brodsky, Isabel, and the Editors of Encyclopaedia Britannica. "Effective altruism." Encyclopaedia
+    Britannica. https://www.britannica.com/topic/effective-altruism.'
+  url: 'https://www.britannica.com/topic/effective-altruism'
   accessed: '2026-10-25'
   reliability_note: Signed short article (author is a journalist). Article text only; AI-generated Top
     Questions ignored. SEP has no entry (404).
@@ -401,9 +412,9 @@ sources:
   kind: encyclopedia
   author: Theodore Lechterman; Emma Saunders-Hastings; Rob Reich
   year: 2024
-  citation: Lechterman, Theodore, Emma Saunders-Hastings, and Rob Reich. "Philanthropy." Stanford Encyclopedia
-    of Philosophy. First published November 12, 2024. https://plato.stanford.edu/entries/philanthropy/.
-  url: https://plato.stanford.edu/entries/philanthropy/
+  citation: 'Lechterman, Theodore, Emma Saunders-Hastings, and Rob Reich. "Philanthropy." Stanford Encyclopedia
+    of Philosophy. First published November 12, 2024. https://plato.stanford.edu/entries/philanthropy/.'
+  url: 'https://plato.stanford.edu/entries/philanthropy/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; EA treated in §3.2 Effective Altruism and Other Consequentialist
     Views.
@@ -454,3 +465,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S2): read Britannica; axes under P44.
 - 2026-10-25: deepened from Britannica plus SEP Philanthropy §3.2; D_authority 3 (0.7); schools and practice filled.
+- 2026-10-25: adherents/estimate filled (qualitative).

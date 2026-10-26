@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from SEP "Confucius" (Csikszentmihalyi). A BELOW_THRESHOLD
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Confucius (Csikszentmihalyi): ritual psychology, five virtues,
       family/state, Mandate of Heaven naturalized. Keep A BELOW_THRESHOLD; B=3 D=2.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: CONFUC
   v7_1_number: 44
@@ -43,7 +47,7 @@ classification:
     cites:
     - source: S1
       locator: §1
-    how_known: 0.5 — also Ru ritual specialists and temple cult; SEP focuses on philosophical Confucius.
+    how_known: '0.5 — also Ru ritual specialists and temple cult; SEP focuses on philosophical Confucius.'
   family:
     value: 'Confucius / Ru tradition: ritual psychology, virtue cultivation (ren, yi, li, zhi, xin), family–state
       ethics; Analects-centered philosophical reading'
@@ -56,7 +60,7 @@ classification:
     value:
     - Zhou ritual and classical culture
     - Ru specialists in ritual and music
-    - Later Mencius/Xunzi and Neo-Confucian developments (beyond this entry's focus)
+    - "Later Mencius/Xunzi and Neo-Confucian developments (beyond this entry's focus)"
     certainty: 1.0
     cites:
     - source: S1
@@ -81,7 +85,7 @@ origins:
       locator: §2
     how_known: SEP.
   founding_region:
-    value: China (Lu / Zou, modern Shandong)
+    value: 'China (Lu / Zou, modern Shandong)'
     certainty: 1.0
     cites:
     - source: S1
@@ -90,7 +94,7 @@ origins:
   founders_or_key_figures:
     value:
     - Confucius (Kongzi)
-    - Disciples (Yan Yuan, Zi Lu, Zengzi, etc.)
+    - 'Disciples (Yan Yuan, Zi Lu, Zengzi, etc.)'
     - Mencius / Xunzi as major developers
     - Zhu Xi (Neo-Confucian Four Books curriculum)
     certainty: 1.0
@@ -111,7 +115,7 @@ origins:
     - source: S1
       locator: §2–3
     how_known: SEP.
-  - value: Classics (Odes, Documents, etc.) as curriculum
+  - value: 'Classics (Odes, Documents, etc.) as curriculum'
     certainty: 1.0
     cites:
     - source: S1
@@ -135,10 +139,10 @@ metaphysics:
     cites:
     - source: S1
       locator: §5
-    how_known: 0.5.
+    how_known: '0.5.'
   intervention:
-    value: 'Classical Mandate: Heaven replaces bad rulers; Confucius as uncrowned king counters simple
-      reward; Analects: Heaven''s support via virtue/culture more than direct miracles.'
+    value: "Classical Mandate: Heaven replaces bad rulers; Confucius as uncrowned king counters simple\
+      \ reward; Analects: Heaven's support via virtue/culture more than direct miracles."
     stance: rare
     certainty: 0.5
     cites:
@@ -161,7 +165,7 @@ metaphysics:
     cites:
     - source: S1
       locator: §3; §4
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Ancestral rites and mourning; not a detailed personal afterlife doctrine in SEP focus.
     stance: not addressed
@@ -179,13 +183,13 @@ metaphysics:
       locator: prior audit note
     how_known: Prior S7; entry no karma.
   authority:
-    value: Tradition, classics, sages, ritual mastery — not prophetic revelation. D=2 kept.
+    value: 'Tradition, classics, sages, ritual mastery — not prophetic revelation. D=2 kept.'
     stance: tradition or ancestors
     certainty: 0.5
     cites:
     - source: S1
       locator: §1; §4
-    how_known: 0.5 — alternative founder/sage emphasis.
+    how_known: '0.5 — alternative founder/sage emphasis.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -201,7 +205,7 @@ metaphysics:
     cites:
     - source: S1
       locator: §5
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Habituation and nurture emphasized (Analects 17.2); cultivation program; not Western free-will
       theory.
@@ -212,9 +216,9 @@ metaphysics:
     how_known: SEP.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: Heaven moves from an 'anthropomorphized cosmic power' (Zhou) toward a 'naturalized' concept
-      in the Analects (S1). Not fixed for the system.
+    value: 'BELOW_THRESHOLD'
+    how_known: "Heaven moves from an 'anthropomorphized cosmic power' (Zhou) toward a 'naturalized' concept\
+      \ in the Analects (S1). Not fixed for the system."
     note: 'Alternative: 2.'
     alternatives:
     - value: 2
@@ -224,22 +228,22 @@ lio_axes:
         locator: §5
   B_cause:
     value: 3
-    rationale: '''Even when Heaven’s support is cited in the Analects, it is not a matter of direct intercession,
-      but expressed through personal virtue or cultural patterns.'''
+    rationale: "'Even when Heaven’s support is cited in the Analects, it is not a matter of direct intercession,\
+      \ but expressed through personal virtue or cultural patterns.'"
     certainty: 0.5
     cites:
     - source: S1
       locator: §5
     how_known: '0.5: the Analects only; the inherited Zhou view had supernatural intercession.'
   C_ledger:
-    value: UNKNOWN
-    how_known: The entry states no karma-type law, so P44(d) does not apply (S7 audit). 'personal virtue
-      did not always guarantee success' and ritual benefits beyond 'rewards from the ancestors' (S1) are
-      a lead toward 4, not a score.
+    value: 'UNKNOWN'
+    how_known: "The entry states no karma-type law, so P44(d) does not apply (S7 audit). 'personal virtue\
+      \ did not always guarantee success' and ritual benefits beyond 'rewards from the ancestors' (S1)\
+      \ are a lead toward 4, not a score."
     note: 'Lead: 4.'
   D_authority:
     value: 2
-    rationale: Benevolence 'is grounded in tradition'; Confucius sought to preserve the Zhou ritual system.
+    rationale: "Benevolence 'is grounded in tradition'; Confucius sought to preserve the Zhou ritual system."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -250,11 +254,11 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: Study of Odes, ritual, music; model emulation; situational dialogue; wisdom as knowing others/situations;
-    underdetermined textual tradition.
+  value: 'Study of Odes, ritual, music; model emulation; situational dialogue; wisdom as knowing others/situations;
+    underdetermined textual tradition.'
   certainty: 1.0
   cites:
   - source: S1
@@ -327,7 +331,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Philosophical/civil tradition across East Asia; not a single membership church
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -336,31 +345,31 @@ v7_1_rubric:
   V: 6
   X: 4
   total: 32
-  scoring_note: Confucianism scores moderately due to its profound ethical system for societal harmony,
+  scoring_note: 'Confucianism scores moderately due to its profound ethical system for societal harmony,
     grounded in human relationships, but limited by traditional authority and modest empirical scope beyond
-    social sciences.
-  source: v7.1 data book, section 6 table (tables[4]) row 44 and section 7 scoring notes
+    social sciences.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 44 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Confucian / Ru / Analects-centered identity as primary philosophical or cultural frame.
-  do_not_use_when: Philosophical Daoism alone. Generic 'Chinese tradition' without Confucian frame — consider
-    CHNFOLK.
+  do_not_use_when: "Philosophical Daoism alone. Generic 'Chinese tradition' without Confucian frame —\
+    \ consider CHNFOLK."
   neighbors:
   - code: TAO
     relation: contrast case
@@ -379,9 +388,9 @@ sources:
   kind: encyclopedia
   author: Mark Csikszentmihalyi
   year: 2024
-  citation: Csikszentmihalyi, Mark. "Confucius." Stanford Encyclopedia of Philosophy. First published
-    March 31, 2020; substantive revision May 2, 2024. https://plato.stanford.edu/entries/confucius/.
-  url: https://plato.stanford.edu/entries/confucius/
+  citation: 'Csikszentmihalyi, Mark. "Confucius." Stanford Encyclopedia of Philosophy. First published
+    March 31, 2020; substantive revision May 2, 2024. https://plato.stanford.edu/entries/confucius/.'
+  url: 'https://plato.stanford.edu/entries/confucius/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry on Confucius and the Analects; later Confucianism not
     covered.
@@ -428,3 +437,4 @@ Confucian/Ru identity; not CHNFOLK dump.
 
 - Prior: SEP Confucius; B=3 D=2.
 - 2026-10-25: deepened ritual/virtues/politics from same SEP. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

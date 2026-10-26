@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S12): filled from Britannica "Scientology" (Melton). A BELOW_THRESHOLD;
@@ -25,6 +25,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Scientology (Melton): Hubbard, Dianetics to Scientology,
       thetan/engrams/auditing, eight dynamics, CSI/RTC. Keep A BELOW_THRESHOLD; B C D E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: SCIENT
   v7_1_number: 77
@@ -50,7 +54,7 @@ classification:
     how_known: Britannica.
   parent_traditions:
     value:
-    - Hubbard's Dianetics mental therapy
+    - "Hubbard's Dianetics mental therapy"
     - Resemblance to Eastern reincarnation and Western Gnostic tradition (per Britannica)
     - Brief prior Hubbard involvement in Californian Thelemic group (noted under Thelema article; not
       detailed here)
@@ -100,7 +104,7 @@ origins:
     - source: S1
       locator: opening
     how_known: Britannica.
-  - value: Hubbard's Scientology writings (published and unpublished considered scriptures)
+  - value: "Hubbard's Scientology writings (published and unpublished considered scriptures)"
     certainty: 1.0
     cites:
     - source: S1
@@ -108,8 +112,9 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Thetans originated with original Cause; trapped in MEST; eight dynamics culminate in infinity
-      or God. Church does not prescribe specific teachings about God; members free to conclude God's nature.
+    value: "Thetans originated with original Cause; trapped in MEST; eight dynamics culminate in infinity\
+      \ or God. Church does not prescribe specific teachings about God; members free to conclude God's\
+      \ nature."
     stance: varies by school
     certainty: 0.7
     cites:
@@ -123,7 +128,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5 — Hubbard affirms but church does not prescribe.
+    how_known: '0.5 — Hubbard affirms but church does not prescribe.'
   intervention:
     value: Not classical deity intervention; auditing/tech as path to free thetan.
     stance: not addressed
@@ -139,7 +144,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs; controversy
-    how_known: 0.5.
+    how_known: '0.5.'
   petition_and_prayer:
     value: Auditing counseling central; not petitionary prayer doctrine.
     stance: not addressed
@@ -164,7 +169,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
     value: Hubbard scriptures; RTC ultimate ecclesiastical authority for teachings/trademarks; CSI coordinates.
     stance: founder
@@ -188,7 +193,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Goal to free thetan to function freely; not classical free-will thesis.
     certainty: 0.7
@@ -198,21 +203,21 @@ metaphysics:
     how_known: Britannica.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: Members 'are free to reach their own conclusions as to God’s nature'; 'the church does
-      not prescribe specific teachings about God' (S1).
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members 'are free to reach their own conclusions as to God’s nature'; 'the church does\
+      \ not prescribe specific teachings about God' (S1)."
     note: Members differ by design (P44(b)).
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Auditing with E-meter to bring engrams to consciousness; OT levels as restricted sacred training;
@@ -274,7 +279,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Church of Scientology membership disputed; Britannica/critics disagree on counts
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 6
@@ -283,25 +293,25 @@ v7_1_rubric:
   V: 3
   X: 1
   total: 17
-  scoring_note: Scientology scores low due to its pseudoscientific claims and reliance on founder authority
-    over empirical evidence, despite structured self-improvement appeals.
-  source: v7.1 data book, section 6 table (tables[4]) row 77 and section 7 scoring notes
+  scoring_note: 'Scientology scores low due to its pseudoscientific claims and reliance on founder authority
+    over empirical evidence, despite structured self-improvement appeals.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 77 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Church of Scientology / Dianetics–Scientology identity.
@@ -323,7 +333,7 @@ sources:
   author: J. Gordon Melton
   citation: 'Melton, J. Gordon. "Scientology." Encyclopaedia Britannica. https://www.britannica.com/topic/Scientology.
     Wayback Machine snapshot 2026-09-26 21:46:58 UTC: https://web.archive.org/web/20260926214658/https://www.britannica.com/topic/Scientology.'
-  url: https://www.britannica.com/topic/Scientology
+  url: 'https://www.britannica.com/topic/Scientology'
   accessed: '2026-10-25'
   reliability_note: 'Signed article; beliefs section read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260926214658/https://www.britannica.com/topic/Scientology);
     live page not compared (live Britannica times out from the box).'
@@ -369,3 +379,4 @@ Scientology identity.
 
 - Prior batch: Britannica Scientology; A BELOW_THRESHOLD.
 - 2026-10-25: deepened. Axes kept; note D question.
+- 2026-10-25: adherents/estimate filled (qualitative).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9): filled from Britannica "Wicca" (Doyle White). A BELOW_THRESHOLD;
@@ -25,6 +25,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Wicca (Doyle White): Gardner 1950s, Rede, Wheel of the
       Year, coven/solitary, varied theology. Keep B=1; A BELOW_THRESHOLD; C D E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: WICCA
   v7_1_number: 52
@@ -101,13 +105,13 @@ origins:
       locator: origins
     how_known: Britannica.
   key_texts:
-  - value: Witchcraft Today (Gardner, 1954)
+  - value: 'Witchcraft Today (Gardner, 1954)'
     certainty: 1.0
     cites:
     - source: S1
       locator: origins
     how_known: Britannica.
-  - value: The Spiral Dance (Starhawk, 1979)
+  - value: 'The Spiral Dance (Starhawk, 1979)'
     certainty: 1.0
     cites:
     - source: S1
@@ -121,8 +125,8 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: 'Varies: Gardner''s mother goddess + horned god under an unknowable deistic divinity; also
-      goddess monotheism, pantheism, polytheism from many mythologies; deities may be literal or archetypal.'
+    value: "Varies: Gardner's mother goddess + horned god under an unknowable deistic divinity; also goddess\
+      \ monotheism, pantheism, polytheism from many mythologies; deities may be literal or archetypal."
     stance: varies by school
     certainty: 1.0
     cites:
@@ -138,8 +142,8 @@ metaphysics:
       locator: beliefs
     how_known: Britannica.
   intervention:
-    value: Rituals described as magical — focusing will to bring change (healing, assistance); drawing
-      down the moon (deity possession).
+    value: 'Rituals described as magical — focusing will to bring change (healing, assistance); drawing
+      down the moon (deity possession).'
     stance: regular
     certainty: 0.7
     cites:
@@ -153,7 +157,7 @@ metaphysics:
     cites:
     - source: S1
       locator: rituals
-    how_known: 0.5 mapping.
+    how_known: '0.5 mapping.'
   petition_and_prayer:
     value: Invocation and magical working; deity possession in circle.
     stance: petition answered
@@ -161,7 +165,7 @@ metaphysics:
     cites:
     - source: S1
       locator: rituals
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Varies; many believe in reincarnation or Summerland.
     stance: varies by school
@@ -178,7 +182,7 @@ metaphysics:
     cites:
     - source: S1
       locator: Rede
-    how_known: Ethical maxim, not afterlife ledger.
+    how_known: 'Ethical maxim, not afterlife ledger.'
   authority:
     value: No central authority; coven initiation/lineage in older traditions; solitary self-initiation
       books from 1970s; shared ritual more than shared belief.
@@ -203,7 +207,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs; Wheel
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed as determinism thesis; Rede emphasizes will within harm-none limit.
     certainty: 0.7
@@ -213,16 +217,15 @@ metaphysics:
     how_known: Thin.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ (P44(b)): Gardner''s goddess and horned god ''created by an unknowable
-      deistic divinity''; others ''goddess monotheism, pantheism, or polytheistic perspectives''; and
-      divergence ''as to whether the deities literally exist or are instead symbolic or archetypal figures''
-      (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ (P44(b)): Gardner's goddess and horned god 'created by an unknowable deistic\
+      \ divinity'; others 'goddess monotheism, pantheism, or polytheistic perspectives'; and divergence\
+      \ 'as to whether the deities literally exist or are instead symbolic or archetypal figures' (S1)."
   B_cause:
     value: 1
-    rationale: Rituals are 'designed to focus the willpower of the assembled Wiccans in the belief that
-      doing so will bring about a desired change in the physical universe'; rites invoke 'a deity to enter
-      and possess a coven member'.
+    rationale: "Rituals are 'designed to focus the willpower of the assembled Wiccans in the belief that\
+      \ doing so will bring about a desired change in the physical universe'; rites invoke 'a deity to\
+      \ enter and possess a coven member'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -234,13 +237,13 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Ritual practice and initiatory/lineage knowledge prioritized over uniform doctrine; magical will;
@@ -251,7 +254,7 @@ epistemology:
     locator: beliefs; origins
   how_known: Britannica.
 ethics:
-  value: Wiccan Rede — If it harm none, do what you will; reject cursing as unethical.
+  value: 'Wiccan Rede — If it harm none, do what you will; reject cursing as unethical.'
   certainty: 1.0
   cites:
   - source: S1
@@ -259,16 +262,16 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Circle, altar, athame/wand/chalice/pentacle/censer; skyclad or robed; eight sabbats (Wheel
-      of the Year); coven initiation degrees; solitary practice majority today.
+    value: 'Circle, altar, athame/wand/chalice/pentacle/censer; skyclad or robed; eight sabbats (Wheel
+      of the Year); coven initiation degrees; solitary practice majority today.'
     certainty: 1.0
     cites:
     - source: S1
       locator: beliefs and practices
     how_known: Britannica.
   community_form:
-    value: Covens (often high priest/priestess; ideal 13) and, today, mostly solitary practitioners; low
-      hundreds of thousands estimated.
+    value: 'Covens (often high priest/priestess; ideal 13) and, today, mostly solitary practitioners;
+      low hundreds of thousands estimated.'
     certainty: 1.0
     cites:
     - source: S1
@@ -308,7 +311,7 @@ schools_and_variants:
     locator: origins
 - name: Dianic Wicca
   form: modern
-  how_it_differs: Women's tradition; goddess focus (Budapest, 1971).
+  how_it_differs: "Women's tradition; goddess focus (Budapest, 1971)."
   lio_difference: A may differ by goddess monotheism — not rescored here.
   certainty: 1.0
   cites:
@@ -325,7 +328,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Modern Pagan religion with self-identified practitioners; survey-based estimates vary widely
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -334,26 +342,26 @@ v7_1_rubric:
   V: 6
   X: 3
   total: 27
-  scoring_note: Wicca scores moderately due to its nature-centered and magical framework, offering ethical
+  scoring_note: 'Wicca scores moderately due to its nature-centered and magical framework, offering ethical
     and communal coherence but limited by supernatural elements and subjective authority over empirical
-    rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 52 and section 7 scoring notes
+    rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 52 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Self-identified Wicca / Gardnerian / Alexandrian / Dianic Wiccan practice.
@@ -376,7 +384,7 @@ sources:
   author: Ethan Doyle White
   citation: 'Doyle White, Ethan. "Wicca." Encyclopaedia Britannica. https://www.britannica.com/topic/Wicca.
     Wayback Machine snapshot 2026-09-07 13:28:17 UTC: https://web.archive.org/web/20260907132817/https://www.britannica.com/topic/Wicca.'
-  url: https://www.britannica.com/topic/Wicca
+  url: 'https://www.britannica.com/topic/Wicca'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of modern Paganism). P44(e): read in the Wayback copy (https://web.archive.org/web/20260907132817/https://www.britannica.com/topic/Wicca);
     live page timed out on 2026-10-15, so no live comparison.'
@@ -425,3 +433,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica Wicca; B scored.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

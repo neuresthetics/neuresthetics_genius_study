@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S7): filled from Britannica "Animism" (Park). A BELOW_THRESHOLD (alt
@@ -28,6 +28,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica animism (Park/Tylor survey): innumerable spiritual beings,
       particularism, practical communication, not a single creed. Keep A BELOW_THRESHOLD; B=1; C D E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: ANIM
   v7_1_number: 40
@@ -54,7 +58,7 @@ classification:
   parent_traditions:
     value:
     - Ethnographic tribal religions worldwide
-    - Tylor's Primitive Culture (1871) theoretical framing (historical scholarship)
+    - "Tylor's Primitive Culture (1871) theoretical framing (historical scholarship)"
     certainty: 1.0
     cites:
     - source: S1
@@ -111,7 +115,7 @@ metaphysics:
       locator: opening; importance
     how_known: Britannica.
   deity_personal:
-    value: Spirits as personal beings who help or harm; nature spirits, ghosts, ancestor gods.
+    value: 'Spirits as personal beings who help or harm; nature spirits, ghosts, ancestor gods.'
     stance: personal
     certainty: 0.7
     cites:
@@ -119,7 +123,7 @@ metaphysics:
       locator: opening; objects
     how_known: Britannica.
   intervention:
-    value: Spirits regularly involved in food, illness, danger; divination and propitiation.
+    value: 'Spirits regularly involved in food, illness, danger; divination and propitiation.'
     stance: regular
     certainty: 1.0
     cites:
@@ -144,7 +148,7 @@ metaphysics:
       locator: daily lives; vs other religions
     how_known: Britannica.
   afterlife:
-    value: Ghosts and ancestor spirits; doctrine of souls in Tylor's series; varies by people.
+    value: "Ghosts and ancestor spirits; doctrine of souls in Tylor's series; varies by people."
     stance: varies by school
     certainty: 0.7
     cites:
@@ -159,15 +163,15 @@ metaphysics:
     cites:
     - source: S1
       locator: daily lives
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
-    value: Grassroots, not doctrinaire from above; diviners identify responsible spirits; no single revelation.
+    value: 'Grassroots, not doctrinaire from above; diviners identify responsible spirits; no single revelation.'
     stance: tradition or ancestors
     certainty: 0.5
     cites:
     - source: S1
       locator: daily lives
-    how_known: 0.5.
+    how_known: '0.5.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -183,7 +187,7 @@ metaphysics:
     cites:
     - source: S1
       locator: nature FAQ
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -193,10 +197,10 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Spirits indwell nature (Tylor: ''sun and stars, trees and rivers, winds and clouds, become
-      personal animate creatures''), but ''no ground for supposing that polytheistic and monotheistic
-      ideas were excluded'' (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Spirits indwell nature (Tylor: 'sun and stars, trees and rivers, winds and clouds, become\
+      \ personal animate creatures'), but 'no ground for supposing that polytheistic and monotheistic\
+      \ ideas were excluded' (S1)."
     note: 'Members differ (P44(b)). Alternative: 3.'
     alternatives:
     - value: 3
@@ -206,25 +210,25 @@ lio_axes:
         locator: Importance; Tylor’s theory
   B_cause:
     value: 1
-    rationale: Spirits are 'capable of helping or harming human interests'; rites aim 'to influence powerful
-      spirits and so control important natural events'.
+    rationale: "Spirits are 'capable of helping or harming human interests'; rites aim 'to influence powerful\
+      \ spirits and so control important natural events'."
     certainty: 0.5
     cites: &id001
     - source: S1
       locator: introduction; Tylor’s theory
-    how_known: 0.5; the second quote is Tylor’s account. Alternative 0.
+    how_known: '0.5; the second quote is Tylor’s account. Alternative 0.'
     alternatives:
     - value: 0
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Communication with spirits; divination when trouble occurs; open/eclectic rather than closed
@@ -244,8 +248,8 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Propitiation, taboos, divination, ritual cleansing, cures; particularistic handling of local
-      spirits.
+    value: 'Propitiation, taboos, divination, ritual cleansing, cures; particularistic handling of local
+      spirits.'
     certainty: 1.0
     cites:
     - source: S1
@@ -260,8 +264,8 @@ practice:
     how_known: Britannica.
 science:
   historical_stance:
-    value: Tylor framed as early natural philosophy; modern anthropology rejects evolutionary 'primitive
-      mind' premise.
+    value: "Tylor framed as early natural philosophy; modern anthropology rejects evolutionary 'primitive\
+      \ mind' premise."
     certainty: 1.0
     cites:
     - source: S1
@@ -277,7 +281,7 @@ science:
 schools_and_variants:
 - name: Local animistic traditions (umbrella)
   form: regional
-  how_it_differs: Particularistic; examples Sami, Ojibwa, Buryat, Australian totems.
+  how_it_differs: 'Particularistic; examples Sami, Ojibwa, Buryat, Australian totems.'
   lio_difference: A BELOW_THRESHOLD; B=1.
   certainty: 1.0
   cites:
@@ -286,7 +290,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Umbrella ethnographic category; not a membership body
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -295,31 +304,31 @@ v7_1_rubric:
   V: 7
   X: 4
   total: 32
-  scoring_note: Animism scores moderately as a spiritual philosophy emphasizing universal life and harmony,
-    providing cultural depth but constrained by supernatural assumptions and modest empirical alignment.
-  source: v7.1 data book, section 6 table (tables[4]) row 40 and section 7 scoring notes
+  scoring_note: 'Animism scores moderately as a spiritual philosophy emphasizing universal life and harmony,
+    providing cultural depth but constrained by supernatural assumptions and modest empirical alignment.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 40 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Person's primary frame is animistic spirit-in-nature / innumerable spirits without a more
-    specific code fitting better.
-  do_not_use_when: Prefer NATAM, ABORIG, SHINTO, VODUN, SANTER when those identities fit. Not a dump for
-    all indigenous religion.
+  use_when: "Person's primary frame is animistic spirit-in-nature / innumerable spirits without a more\
+    \ specific code fitting better."
+  do_not_use_when: 'Prefer NATAM, ABORIG, SHINTO, VODUN, SANTER when those identities fit. Not a dump
+    for all indigenous religion.'
   neighbors:
   - code: NATAM
     relation: neighbor (easily confused)
@@ -336,8 +345,8 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: George Kerlin Park
-  citation: Park, George Kerlin. "Animism." Encyclopaedia Britannica. https://www.britannica.com/topic/animism.
-  url: https://www.britannica.com/topic/animism
+  citation: 'Park, George Kerlin. "Animism." Encyclopaedia Britannica. https://www.britannica.com/topic/animism.'
+  url: 'https://www.britannica.com/topic/animism'
   accessed: '2026-10-25'
   reliability_note: Signed article by an anthropologist; read through the Tylor section. AI Top Questions
     ignored.
@@ -384,3 +393,4 @@ Umbrella — prefer specific codes when available.
 
 - Prior batch: Britannica animism; B scored.
 - 2026-10-25: deepened. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

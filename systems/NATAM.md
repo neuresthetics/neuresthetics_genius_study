@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9): filled from Britannica "Native American Religions" (Jocks). A,
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities from Britannica Native American religions (Sullivan): diversity/no generic
       religion, place, spirit-in-all, participation over doctrine, oral narrative, death as transition.
       Keep A/B BELOW_THRESHOLD; C/E UNKNOWN; D BELOW_THRESHOLD (P45 umbrella).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: NATAM
   v7_1_number: 55
@@ -60,7 +64,7 @@ classification:
   related_codes:
   - code: ANIM
     relation: overlaps
-    note: spirit/power in plants, animals, landforms
+    note: 'spirit/power in plants, animals, landforms'
   - code: ABORIG
     relation: neighbor (easily confused)
     note: Australian Dreaming is a different continent tradition
@@ -84,16 +88,16 @@ origins:
     how_known: Britannica.
   founders_or_key_figures:
     value:
-    - No single founder; local elders and ceremonial specialists; later movements e.g. Ghost Dance, Native
-      American Church
+    - 'No single founder; local elders and ceremonial specialists; later movements e.g. Ghost Dance, Native
+      American Church'
     certainty: 1.0
     cites:
     - source: S1
       locator: adaptation; ceremonies
     how_known: Britannica.
   key_texts:
-  - value: Oral narratives (creation, migration, moral stories); not sacred texts in the Western fixed-doctrine
-      sense
+  - value: 'Oral narratives (creation, migration, moral stories); not sacred texts in the Western fixed-doctrine
+      sense'
     certainty: 1.0
     cites:
     - source: S1
@@ -101,9 +105,9 @@ origins:
     how_known: 'Britannica: lacked sacred texts and fixed doctrines.'
 metaphysics:
   god_nature_relation:
-    value: No sacred/profane dualism; spirit or power moves in all things (plants, animals, mountains,
+    value: 'No sacred/profane dualism; spirit or power moves in all things (plants, animals, mountains,
       clouds). Some traditions speak of a Creator/Great Spirit (e.g. Iroquois); others are decentralized
-      (e.g. Koyukon Raven).
+      (e.g. Koyukon Raven).'
     stance: varies by school
     certainty: 1.0
     cites:
@@ -120,8 +124,8 @@ metaphysics:
       locator: diversity; common beliefs
     how_known: Britannica.
   intervention:
-    value: Other-than-human persons and powers interact with living humans; vision quests, Sacred Pipe,
-      ceremonial contact. Boundaries between worlds are permeable.
+    value: 'Other-than-human persons and powers interact with living humans; vision quests, Sacred Pipe,
+      ceremonial contact. Boundaries between worlds are permeable.'
     stance: regular
     certainty: 0.7
     cites:
@@ -129,7 +133,7 @@ metaphysics:
       locator: North America; ceremonies
     how_known: Britannica.
   miracles:
-    value: Not framed as 'miracles' vs natural law; spirit-power in ordinary and ceremonial life.
+    value: "Not framed as 'miracles' vs natural law; spirit-power in ordinary and ceremonial life."
     stance: not addressed
     certainty: 0.7
     cites:
@@ -146,8 +150,8 @@ metaphysics:
       locator: ceremonies
     how_known: Britannica ceremonies section.
   afterlife:
-    value: Death understood as a transition, not an ending; heterogeneous beliefs; humans as complex entities
-      with diverging essences after death.
+    value: 'Death understood as a transition, not an ending; heterogeneous beliefs; humans as complex
+      entities with diverging essences after death.'
     stance: varies by school
     certainty: 1.0
     cites:
@@ -164,8 +168,8 @@ metaphysics:
       locator: participation; oral
     how_known: No ledger doctrine; 0.5.
   authority:
-    value: Oral tradition, restricted knowledge with initiation, local place-memory, ceremonial participation.
-      Not a single written revelation.
+    value: 'Oral tradition, restricted knowledge with initiation, local place-memory, ceremonial participation.
+      Not a single written revelation.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
@@ -187,7 +191,7 @@ metaphysics:
     cites:
     - source: S1
       locator: nature and animals
-    how_known: 0.5 coder reading.
+    how_known: '0.5 coder reading.'
   necessity_and_freedom:
     value: Not addressed as a free-will/determinism thesis.
     certainty: 1.0
@@ -197,36 +201,36 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ: Iroquois elders speak of ''the Creator’s “Original Instructions”'', whereas
-      ''the Koyukon universe is notably decentralized'' (S1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ: Iroquois elders speak of 'the Creator’s “Original Instructions”', whereas\
+      \ 'the Koyukon universe is notably decentralized' (S1)."
     note: P44(b).
   B_cause:
-    value: BELOW_THRESHOLD
-    how_known: Mythic beings 'inhabit and affect either this world or some other world'; 'Actions, words,
-      and thoughts are understood in many traditions to have power in the world' (S1). Many, not all.
+    value: 'BELOW_THRESHOLD'
+    how_known: "Mythic beings 'inhabit and affect either this world or some other world'; 'Actions, words,\
+      \ and thoughts are understood in many traditions to have power in the world' (S1). Many, not all."
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: BELOW_THRESHOLD
-    how_known: '''In most indigenous worldviews there is no such antithesis'' between supernatural and
-      natural; ''Plants and animals, clouds and mountains carry and embody revelation'' (S1). Not fixed
-      across traditions.'
+    value: 'BELOW_THRESHOLD'
+    how_known: "'In most indigenous worldviews there is no such antithesis' between supernatural and natural;\
+      \ 'Plants and animals, clouds and mountains carry and embody revelation' (S1). Not fixed across\
+      \ traditions."
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: Oral narrative, place-based knowledge, restricted/initiated knowledge; participation valued over
-    doctrinal belief; actions, words, and thoughts have power.
+  value: 'Oral narrative, place-based knowledge, restricted/initiated knowledge; participation valued
+    over doctrinal belief; actions, words, and thoughts have power.'
   certainty: 1.0
   cites:
   - source: S1
     locator: diversity; participation
   how_known: Britannica.
 ethics:
-  value: Cooperation and devotion to kin; generosity as religious act (giveaway, potlatch); treat other-than-human
-    relatives as kin; good-hearted ceremonial participation.
+  value: 'Cooperation and devotion to kin; generosity as religious act (giveaway, potlatch); treat other-than-human
+    relatives as kin; good-hearted ceremonial participation.'
   certainty: 1.0
   cites:
   - source: S1
@@ -292,7 +296,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Umbrella for many Indigenous North American traditions; not one membership body
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -301,30 +310,30 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 26
-  scoring_note: Native American Traditions score moderately due to their profound connection to nature
+  scoring_note: 'Native American Traditions score moderately due to their profound connection to nature
     and ancestors, offering rich cultural and ethical coherence but limited by reliance on oral revelation
-    and lack of empirical rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 55 and section 7 scoring notes
+    and lack of empirical rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 55 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Person's primary engagement is with indigenous North American ceremonial/religious traditions
-    under this umbrella.
+  use_when: "Person's primary engagement is with indigenous North American ceremonial/religious traditions\
+    \ under this umbrella."
   do_not_use_when: Australian Aboriginal Dreaming (ABORIG). Generic animism without Native American identity
     (ANIM). Single-nation deep coding when a nation-specific source exists — prefer that over NATAM umbrella.
   neighbors:
@@ -344,7 +353,7 @@ sources:
   author: Christopher Jocks
   citation: 'Jocks, Christopher. "Native American Religions." Encyclopaedia Britannica. https://www.britannica.com/topic/Native-American-religion.
     Wayback Machine snapshot 2026-10-02 22:43:50 UTC: https://web.archive.org/web/20261002224350/https://www.britannica.com/topic/Native-American-religion.'
-  url: https://www.britannica.com/topic/Native-American-religion
+  url: 'https://www.britannica.com/topic/Native-American-religion'
   accessed: '2026-10-25'
   reliability_note: 'Signed article; introduction and North America overview read. P44(e): read in the
     Wayback copy (https://web.archive.org/web/20261002224350/https://www.britannica.com/topic/Native-American-religion);
@@ -393,3 +402,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica Native American religion; umbrella BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes unchanged.
+- 2026-10-25: adherents/estimate filled (qualitative).

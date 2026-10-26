@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10): filled from Britannica "Vodou" (McAlister). A 1 (0.5, alt 2);
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Vodou (McAlister): Bondye + lwa, serve the spirits, possession,
       manbo/oungan, Rada/Petwo etc. Keep prior axis scores.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: VODUN
   v7_1_number: 57
@@ -55,7 +59,7 @@ classification:
   parent_traditions:
     value:
     - West African Vodun (Fon/Dahomey and related)
-    - Kongo, Yoruba and other enslaved ethnic traditions
+    - 'Kongo, Yoruba and other enslaved ethnic traditions'
     - Roman Catholic missionary Christianity in Saint-Domingue
     certainty: 1.0
     cites:
@@ -105,8 +109,8 @@ origins:
     how_known: Oral tradition stated.
 metaphysics:
   god_nature_relation:
-    value: Biblical God (Bondye) created universe and spirits; lwa help govern humanity and nature. Everything
-      is spirit; unseen world of lwa, mysteries, ancestors in Ginen.
+    value: 'Biblical God (Bondye) created universe and spirits; lwa help govern humanity and nature. Everything
+      is spirit; unseen world of lwa, mysteries, ancestors in Ginen.'
     stance: God in Nature and beyond it
     certainty: 0.7
     cites:
@@ -138,7 +142,7 @@ metaphysics:
       locator: possession
     how_known: Britannica.
   petition_and_prayer:
-    value: Prayers and devotional rites to God and particular spirits for health, protection, favour.
+    value: 'Prayers and devotional rites to God and particular spirits for health, protection, favour.'
     stance: petition answered
     certainty: 1.0
     cites:
@@ -162,7 +166,7 @@ metaphysics:
     cites:
     - source: S1
       locator: worldview; Bizango
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
     value: Oral/familial inheritance; initiation (kanzo); manbo/oungan; no centralized hierarchy or single
       leader.
@@ -187,7 +191,7 @@ metaphysics:
     cites:
     - source: S1
       locator: worldview; ritual
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -198,8 +202,8 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 1
-    rationale: A creator God with spirits 'made by God to help him govern humanity and the natural world';
-      yet 'Its fundamental principle is that everything is spirit'.
+    rationale: "A creator God with spirits 'made by God to help him govern humanity and the natural world';\
+      \ yet 'Its fundamental principle is that everything is spirit'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -212,8 +216,8 @@ lio_axes:
       cites: *id001
   B_cause:
     value: 1
-    rationale: Prayers and rites 'in return for health, protection, and favour'; possessed devotees 'give
-      supernaturally inspired advice to people, or perform medical cures or special physical feats'.
+    rationale: "Prayers and rites 'in return for health, protection, and favour'; possessed devotees 'give\
+      \ supernaturally inspired advice to people, or perform medical cures or special physical feats'."
     certainty: 0.5
     cites: &id002
     - source: S1
@@ -224,15 +228,15 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   E_scope:
     value: 1
-    rationale: 'On the world''s order (P7): the spirits are served ''in return for health, protection,
-      and favour'', and families ''inherit familial spirits''.'
+    rationale: "On the world's order (P7): the spirits are served 'in return for health, protection, and\
+      \ favour', and families 'inherit familial spirits'."
     certainty: 0.5
     cites:
     - source: S1
@@ -257,16 +261,16 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Prayer, song, dance, gesture, possession; kanzo initiation; feast calendar syncretized with
-      Catholic saints’ days; funerary rites; Bizango/Sanpwèl secret societies.
+    value: 'Prayer, song, dance, gesture, possession; kanzo initiation; feast calendar syncretized with
+      Catholic saints’ days; funerary rites; Bizango/Sanpwèl secret societies.'
     certainty: 1.0
     cites:
     - source: S1
       locator: practice; calendar
     how_known: Britannica.
   community_form:
-    value: Extended families inheriting spirits; urban sosyete under manbo/oungan; branches Rada, Petwo,
-      Kongo, etc.; no single leader.
+    value: 'Extended families inheriting spirits; urban sosyete under manbo/oungan; branches Rada, Petwo,
+      Kongo, etc.; no single leader.'
     certainty: 1.0
     cites:
     - source: S1
@@ -308,7 +312,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: West African and diaspora traditions; practitioners not captured as one global census category
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -317,29 +326,29 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 26
-  scoring_note: Vodun scores moderately due to its emphasis on spiritual balance and communal practices,
-    offering rich cultural coherence but limited by supernatural elements and lack of empirical rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 57 and section 7 scoring notes
+  scoring_note: 'Vodun scores moderately due to its emphasis on spiritual balance and communal practices,
+    offering rich cultural coherence but limited by supernatural elements and lack of empirical rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 57 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Haitian Vodou / Vodun / Voodoo as Afro-Haitian religion.
-  do_not_use_when: Santería/Lucumí (SANTER). Pop-culture 'voodoo' caricature without Vodou identity.
+  do_not_use_when: "Santería/Lucumí (SANTER). Pop-culture 'voodoo' caricature without Vodou identity."
   neighbors:
   - code: SANTER
     relation: neighbor (easily confused)
@@ -347,8 +356,8 @@ coding_guidance:
     relation: neighbor (easily confused)
 review:
   data_quality_flags:
-  - Source covers Haitian Vodou; the Britannica "Vodun" page is an unsigned index stub, so West African
-    Vodun has no separate source.
+  - 'Source covers Haitian Vodou; the Britannica "Vodun" page is an unsigned index stub, so West African
+    Vodun has no separate source.'
   open_questions:
   - 'Lead: a signed or peer-reviewed source on West African Vodun (Fon/Ewe, Benin and Togo), to check
     whether these values hold for it.'
@@ -362,7 +371,7 @@ sources:
   citation: 'McAlister, Elizabeth A., and The Editors of Encyclopaedia Britannica. "Vodou." Encyclopaedia
     Britannica. https://www.britannica.com/topic/Vodou. Wayback Machine snapshot 2026-10-06 07:22:58 UTC:
     https://web.archive.org/web/20261006072258/https://www.britannica.com/topic/Vodou.'
-  url: https://www.britannica.com/topic/Vodou
+  url: 'https://www.britannica.com/topic/Vodou'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (scholar of Haitian Vodou), full short article read. It covers Haitian
     Vodou; West African Vodun appears only as its source. P44(e): read in the Wayback copy (https://web.archive.org/web/20261006072258/https://www.britannica.com/topic/Vodou);
@@ -410,3 +419,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S10): Britannica Vodou; axes set.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

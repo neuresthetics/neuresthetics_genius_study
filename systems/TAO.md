@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S8): filled from SEP "Daoism" (Hansen) and IEP "Daoist Philosophy"
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities from SEP Daoism (2025 entry): dào as natural possibility paths, Laozi/Zhuangzi,
       Ru-Mo foil, science-friendly naturalism; religious Daoism separate. Keep A/B/D BELOW_THRESHOLD;
       C E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: TAO
   v7_1_number: 46
@@ -127,9 +131,9 @@ metaphysics:
     cites:
     - source: S1
       locator: opening; history
-    how_known: 0.5 philosophical focus.
+    how_known: '0.5 philosophical focus.'
   intervention:
-    value: Not theistic intervention; dào as structure of possibility, not force/cause.
+    value: 'Not theistic intervention; dào as structure of possibility, not force/cause.'
     stance: none
     certainty: 0.7
     cites:
@@ -143,7 +147,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5.
+    how_known: '0.5.'
   petition_and_prayer:
     value: Not petitionary theism in philosophical Daoism.
     stance: no petition
@@ -176,7 +180,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening; cosmology
-    how_known: 0.5 — axes keep D BELOW_THRESHOLD for school variance.
+    how_known: '0.5 — axes keep D BELOW_THRESHOLD for school variance.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -192,7 +196,7 @@ metaphysics:
     cites:
     - source: S1
       locator: opening
-    how_known: 0.5 — or immanent ends; left none.
+    how_known: '0.5 — or immanent ends; left none.'
   necessity_and_freedom:
     value: Rejects Shen Dao fatalism; non-committal on determinism; no Western free-will theory; choice
       among possible paths.
@@ -203,10 +207,10 @@ metaphysics:
     how_known: SEP.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ (P44(b)): SEP reads classical Daoism as naturalist, assigning normative
-      guidance ''to something outside the ego, but not to a supernatural ego'' (S1); religious Daoism
-      began with ''revelations from the deified Laozi'' (S2).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ (P44(b)): SEP reads classical Daoism as naturalist, assigning normative\
+      \ guidance 'to something outside the ego, but not to a supernatural ego' (S1); religious Daoism\
+      \ began with 'revelations from the deified Laozi' (S2)."
     note: 'Alternative: 3.'
     alternatives:
     - value: 3
@@ -217,22 +221,22 @@ lio_axes:
       - source: S2
         locator: §1
   B_cause:
-    value: BELOW_THRESHOLD
+    value: 'BELOW_THRESHOLD'
     how_known: Naturalist classical reading (S1) versus revelations from immortals and deities in Shangqing
       Daoism (S2).
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: BELOW_THRESHOLD
-    how_known: '''naturalist philosophical project'' (S1) versus mediums who ''claimed to receive revelations
-      from immortals'' (S2).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "'naturalist philosophical project' (S1) versus mediums who 'claimed to receive revelations\
+      \ from immortals' (S2)."
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
-  value: Know-how / learning paths; mild skepticism — overlooked possibilities; science best current social
-    dào for understanding nature's structure; open-minded.
+  value: "Know-how / learning paths; mild skepticism — overlooked possibilities; science best current\
+    \ social dào for understanding nature's structure; open-minded."
   certainty: 1.0
   cites:
   - source: S1
@@ -272,7 +276,7 @@ science:
       locator: history; cosmology
     how_known: SEP.
   current_stance:
-    value: Naturalism not scientism; science good-at telling about dào, does not choose dào s.
+    value: 'Naturalism not scientism; science good-at telling about dào, does not choose dào s.'
     certainty: 1.0
     cites:
     - source: S1
@@ -306,7 +310,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Philosophical Daoism + religious Daoist institutions in China/diaspora; vast historical influence
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -315,26 +324,26 @@ v7_1_rubric:
   V: 6
   X: 4
   total: 32
-  scoring_note: Taoism scores moderately due to its profound emphasis on natural harmony and practical
+  scoring_note: 'Taoism scores moderately due to its profound emphasis on natural harmony and practical
     wisdom, blending philosophy and religion effectively, but constrained by mystical elements and traditional
-    authority over rigorous empirical methods.
-  source: v7.1 data book, section 6 table (tables[4]) row 46 and section 7 scoring notes
+    authority over rigorous empirical methods.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 46 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Philosophical Daoism / Lao-Zhuang naturalism identity.
@@ -358,18 +367,18 @@ sources:
   kind: encyclopedia
   author: Chad Hansen
   year: 2025
-  citation: Hansen, Chad. "Daoism." Stanford Encyclopedia of Philosophy. First published April 19, 2025.
-    https://plato.stanford.edu/entries/daoism/.
-  url: https://plato.stanford.edu/entries/daoism/
+  citation: 'Hansen, Chad. "Daoism." Stanford Encyclopedia of Philosophy. First published April 19, 2025.
+    https://plato.stanford.edu/entries/daoism/.'
+  url: 'https://plato.stanford.edu/entries/daoism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed; a naturalist reading of classical philosophical Daoism.
 - id: S2
   type: tertiary
   kind: encyclopedia
   author: Ronnie Littlejohn
-  citation: Littlejohn, Ronnie. "Daoist Philosophy." Internet Encyclopedia of Philosophy. https://iep.utm.edu/daoism/.
-  url: https://iep.utm.edu/daoism/
-  accessed: '2026-10-15'
+  citation: 'Littlejohn, Ronnie. "Daoist Philosophy." Internet Encyclopedia of Philosophy. https://iep.utm.edu/daoism/.'
+  url: 'https://iep.utm.edu/daoism/'
+  accessed: '2026-10-25'
   reliability_note: Peer-reviewed; covers classical and religious Daoism. Undated page.
 ---
 # Daoism / Taoism (TAO)
@@ -413,3 +422,4 @@ Philosophical Daoism. Flag religious Daoism separately.
 
 - Prior: SEP daoism; BELOW_THRESHOLD axes.
 - 2026-10-25: deepened from SEP Daoism (first published 2025-04-19). Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

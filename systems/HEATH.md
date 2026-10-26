@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S8): filled from Britannica "Heathenry" (Doyle White). A BELOW_THRESHOLD
@@ -32,6 +32,10 @@ record:
     summary: 'Deepen qualities from Britannica Heathenry (Doyle White): Germanic Neo-Pagan reconstruction,
       kindreds, polytheism, folkish vs universalist, Nine Noble Virtues. Keep A BELOW_THRESHOLD; B C D
       E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: HEATH
   v7_1_number: 48
@@ -58,8 +62,8 @@ classification:
   parent_traditions:
     value:
     - Pre-Christian Germanic polytheisms (esp. Old Norse/Icelandic textual record)
-    - 19th–20th c. Romantic/völkisch receptions
-    - 1970s Neo-Pagan revival
+    - '19th–20th c. Romantic/völkisch receptions'
+    - '1970s Neo-Pagan revival'
     certainty: 1.0
     cites:
     - source: S1
@@ -85,7 +89,7 @@ origins:
       locator: origins
     how_known: Britannica.
   founding_region:
-    value: Europe and North America (Germany, Austria historically; US, Britain, Iceland, Norway, Sweden)
+    value: 'Europe and North America (Germany, Austria historically; US, Britain, Iceland, Norway, Sweden)'
     certainty: 1.0
     cites:
     - source: S1
@@ -114,8 +118,8 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Usually polytheistic; gods/goddesses (Odin, Thor, Freyja etc.) often regarded as independently
-      existing; some treat as symbolic. Lesser nature spirits; Yggdrasill cosmic tree from Old Norse sources.
+    value: 'Usually polytheistic; gods/goddesses (Odin, Thor, Freyja etc.) often regarded as independently
+      existing; some treat as symbolic. Lesser nature spirits; Yggdrasill cosmic tree from Old Norse sources.'
     stance: many gods within nature
     certainty: 0.7
     cites:
@@ -194,7 +198,7 @@ metaphysics:
     cites:
     - source: S1
       locator: beliefs
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -204,11 +208,11 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Most hold the gods exist independently, some see them only as symbols (S1). Members differ
-      (P44(b)). Quote (S1, Beliefs and practices): ''Heathens are usually polytheistic ... Most Heathens
-      regard these divinities as having an independent existence, but some practitioners perceive them
-      only as symbolic figures.'''
+    value: 'BELOW_THRESHOLD'
+    how_known: "Most hold the gods exist independently, some see them only as symbols (S1). Members differ\
+      \ (P44(b)). Quote (S1, Beliefs and practices): 'Heathens are usually polytheistic ... Most Heathens\
+      \ regard these divinities as having an independent existence, but some practitioners perceive them\
+      \ only as symbolic figures.'"
     note: 'Alternative: 3.'
     alternatives:
     - value: 3
@@ -217,17 +221,17 @@ lio_axes:
       - source: S1
         locator: Beliefs and practices
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: UNKNOWN
-    how_known: '''There has never been a single authority in charge of Heathenry'' (S1); no positive source
-      of authority stated beyond historical sources.'
+    value: 'UNKNOWN'
+    how_known: "'There has never been a single authority in charge of Heathenry' (S1); no positive source\
+      \ of authority stated beyond historical sources."
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Religion assembled from historical and archaeological sources; many seek greater fidelity to
@@ -238,8 +242,8 @@ epistemology:
     locator: opening; origins
   how_known: Britannica.
 ethics:
-  value: Nine Noble Virtues (modern list many follow); wide disagreement on race, gender, sexuality aligned
-    with folkish vs universalist branches.
+  value: 'Nine Noble Virtues (modern list many follow); wide disagreement on race, gender, sexuality aligned
+    with folkish vs universalist branches.'
   certainty: 1.0
   cites:
   - source: S1
@@ -247,15 +251,15 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Kindred meetings; solitary practice common; symbols Mjöllnir, runes, valknut. Specific rite
-      forms not detailed here.
+    value: 'Kindred meetings; solitary practice common; symbols Mjöllnir, runes, valknut. Specific rite
+      forms not detailed here.'
     certainty: 0.7
     cites:
     - source: S1
       locator: beliefs
     how_known: Britannica thin on rite detail.
   community_form:
-    value: Kindreds, sometimes national orgs; many solitaries; low tens of thousands internationally.
+    value: 'Kindreds, sometimes national orgs; many solitaries; low tens of thousands internationally.'
     certainty: 1.0
     cites:
     - source: S1
@@ -304,7 +308,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Modern Heathenry / Ásatrú groups; small organized Pagan presence
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -313,31 +322,31 @@ v7_1_rubric:
   V: 6
   X: 3
   total: 27
-  scoring_note: Heathenry scores moderately due to its cultural revival of Germanic polytheism, emphasizing
+  scoring_note: 'Heathenry scores moderately due to its cultural revival of Germanic polytheism, emphasizing
     honor and nature, but limited by supernatural elements and reconstructionist authority over empirical
-    rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 48 and section 7 scoring notes
+    rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 48 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Heathenry, Ásatrú, Forn Sed, Odinism, Northern Tradition as Germanic Neo-Pagan identity.
-  do_not_use_when: Wicca. Hellenismos. Rodnoverie. Folkish political identity without religious practice
-    — still HEATH if they practice Heathenry, but note the branch.
+  use_when: 'Heathenry, Ásatrú, Forn Sed, Odinism, Northern Tradition as Germanic Neo-Pagan identity.'
+  do_not_use_when: 'Wicca. Hellenismos. Rodnoverie. Folkish political identity without religious practice
+    — still HEATH if they practice Heathenry, but note the branch.'
   neighbors:
   - code: WICCA
     relation: neighbor (easily confused)
@@ -356,7 +365,7 @@ sources:
   author: Ethan Doyle White
   citation: 'Doyle White, Ethan. "Heathenry." Encyclopaedia Britannica. https://www.britannica.com/topic/Heathenry.
     Wayback Machine snapshot 2026-03-04 08:05:02 UTC: https://web.archive.org/web/20260304080502/https://www.britannica.com/topic/Heathenry.'
-  url: https://www.britannica.com/topic/Heathenry
+  url: 'https://www.britannica.com/topic/Heathenry'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of modern Paganism). P44(e): read in the Wayback copy (https://web.archive.org/web/20260304080502/https://www.britannica.com/topic/Heathenry);
     live page timed out on 2026-10-15, so no live comparison.'
@@ -405,3 +414,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - Prior batches: Britannica Heathenry; A BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, schools. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

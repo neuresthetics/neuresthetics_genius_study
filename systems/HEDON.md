@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S5): filled from SEP "Hedonism" (Moore). All axes UNKNOWN: a theory
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities: family, parents, related codes, remaining metaphysics (not addressed),
       epistemology, practice, science, schools (psychological vs ethical; Bentham/Mill). Axes stay UNKNOWN
       (value theory). Source: SEP Moore.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: HEDON
   v7_1_number: 32
@@ -51,7 +55,7 @@ classification:
   parent_traditions:
     value:
     - Ancient Greek ethics (Epicurus)
-    - British moral philosophy (Bentham, Mill, Sidgwick)
+    - 'British moral philosophy (Bentham, Mill, Sidgwick)'
     certainty: 1.0
     cites:
     - source: S1
@@ -83,7 +87,7 @@ origins:
     cites:
     - source: S1
       locator: introduction
-    how_known: Coder's geographic gloss on SEP's cast of contributors.
+    how_known: "Coder's geographic gloss on SEP's cast of contributors."
   founders_or_key_figures:
     value:
     - Epicurus
@@ -103,7 +107,7 @@ origins:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP opens with Bentham's two sentences.
+    how_known: "SEP opens with Bentham's two sentences."
   - value: Utilitarianism
     author: John Stuart Mill
     year: 1863
@@ -128,7 +132,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP treats hedonism as theories of motivation and value, not cosmology.
+    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
   intervention:
     value: Not addressed as cosmology; value/ethics theory only.
     stance: not addressed
@@ -136,7 +140,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP treats hedonism as theories of motivation and value, not cosmology.
+    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
   miracles:
     value: Not addressed as cosmology; value/ethics theory only.
     stance: not addressed
@@ -144,7 +148,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP treats hedonism as theories of motivation and value, not cosmology.
+    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
   petition_and_prayer:
     value: Not addressed as cosmology; value/ethics theory only.
     stance: not addressed
@@ -152,7 +156,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP treats hedonism as theories of motivation and value, not cosmology.
+    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
   afterlife:
     value: Not addressed as cosmology; value/ethics theory only.
     stance: not addressed
@@ -160,7 +164,7 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP treats hedonism as theories of motivation and value, not cosmology.
+    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
   moral_ledger:
     value: No divine judge. Value is pleasure and disvalue is pain; no personal afterlife ledger is part
       of the thesis.
@@ -169,39 +173,39 @@ metaphysics:
     cites:
     - source: S1
       locator: introduction; §2
-    how_known: SEP ethical hedonism is about value, not reward theology.
+    how_known: 'SEP ethical hedonism is about value, not reward theology.'
   authority:
-    value: Not a theory of revelation or tradition. Bentham and Mill argue from nature, experience, and
-      reasoned comparison of pleasures; no sacred text is the authority.
+    value: 'Not a theory of revelation or tradition. Bentham and Mill argue from nature, experience, and
+      reasoned comparison of pleasures; no sacred text is the authority.'
     stance: observation and reason
     certainty: 0.7
     cites:
     - source: S1
       locator: introduction; §2.1
-    how_known: Coder's reading of Bentham/Mill material in SEP; certainty 0.7 because authority is not
-      SEP's topic.
+    how_known: "Coder's reading of Bentham/Mill material in SEP; certainty 0.7 because authority is not\
+      \ SEP's topic."
   reserved_exemptions:
-    value: Not addressed as cosmology. Ethically, qualitative hedonism (Mill) ranks pleasures but does
-      not exempt an in-group from natural law.
+    value: 'Not addressed as cosmology. Ethically, qualitative hedonism (Mill) ranks pleasures but does
+      not exempt an in-group from natural law.'
     stance: none
     certainty: 0.7
     cites:
     - source: S1
       locator: §2.1
-    how_known: Coder's reading; metaphysics neglected.
+    how_known: "Coder's reading; metaphysics neglected."
   teleology_in_nature:
-    value: Not addressed as design. Pleasure and pain are treated as natural governors of human conduct
-      (Bentham), not as a designer's purposes.
+    value: "Not addressed as design. Pleasure and pain are treated as natural governors of human conduct\
+      \ (Bentham), not as a designer's purposes."
     stance: none
     certainty: 0.7
     cites:
     - source: S1
       locator: introduction
-    how_known: Coder's reading of Bentham opening; teleology stance is a label.
+    how_known: "Coder's reading of Bentham opening; teleology stance is a label."
   necessity_and_freedom:
-    value: Not a free-will doctrine. Psychological hedonism is a claim about what motivates; ethical hedonism
-      is about value. Agency weaknesses and the 'paradox of hedonism' are discussed without a metaphysics
-      of freedom.
+    value: "Not a free-will doctrine. Psychological hedonism is a claim about what motivates; ethical\
+      \ hedonism is about value. Agency weaknesses and the 'paradox of hedonism' are discussed without\
+      \ a metaphysics of freedom."
     certainty: 0.7
     cites:
     - source: S1
@@ -209,19 +213,19 @@ metaphysics:
     how_known: SEP §1.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
   D_authority:
     value: 3
-    rationale: Observation and reason (experience of pleasure/pain, reasoned comparison) rather than revelation;
-      not a full natural-science empiricism programme, so not 4. Alt 4 if Bentham's naturalism is read
-      as the LIO pole.
+    rationale: "Observation and reason (experience of pleasure/pain, reasoned comparison) rather than\
+      \ revelation; not a full natural-science empiricism programme, so not 4. Alt 4 if Bentham's naturalism\
+      \ is read as the LIO pole."
     certainty: 0.7
     cites:
     - source: S1
@@ -232,22 +236,22 @@ lio_axes:
       cites:
       - source: S1
         locator: introduction
-      note: If Bentham's natural masters claim is read as full observation/reason pole.
+      note: "If Bentham's natural masters claim is read as full observation/reason pole."
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
 epistemology:
-  value: Pleasure and pain are known in experience; debates turn on whether pleasure is phenomenal, intentional,
+  value: 'Pleasure and pain are known in experience; debates turn on whether pleasure is phenomenal, intentional,
     or both. Empirical psychology is invited for motivational claims; ethical claims use philosophical
-    argument.
+    argument.'
   certainty: 0.7
   cites:
   - source: S1
     locator: §1; §2.1
-  how_known: Coder's reading of SEP on nature of pleasure and appraisal methods.
+  how_known: "Coder's reading of SEP on nature of pleasure and appraisal methods."
 ethics:
-  value: '''Ethical or evaluative hedonism claims that only pleasure has worth or value and only pain
-    or displeasure has disvalue''.'
+  value: "'Ethical or evaluative hedonism claims that only pleasure has worth or value and only pain or\
+    \ displeasure has disvalue'."
   certainty: 1.0
   cites:
   - source: S1
@@ -263,13 +267,13 @@ practice:
       locator: introduction; §2.1
     how_known: SEP.
   community_form:
-    value: Philosophical position and ethical debate, not a membership community. Overlaps with utilitarian
-      and Epicurean communities when those are the vehicle.
+    value: 'Philosophical position and ethical debate, not a membership community. Overlaps with utilitarian
+      and Epicurean communities when those are the vehicle.'
     certainty: 1.0
     cites:
     - source: S1
       locator: introduction
-    how_known: SEP presents a family of theses, not a sect.
+    how_known: 'SEP presents a family of theses, not a sect.'
 science:
   historical_stance:
     value: Motivational hedonism is framed as an empirical psychological thesis that should face meta-analyses
@@ -286,11 +290,11 @@ science:
     cites:
     - source: S1
       locator: §3
-    how_known: Coder's reading of SEP concluding remarks.
+    how_known: "Coder's reading of SEP concluding remarks."
 schools_and_variants:
 - name: Psychological (motivational) hedonism
   form: scholastic or philosophical
-  how_it_differs: Only pleasure or pain motivates (or determines action, in stronger forms).
+  how_it_differs: 'Only pleasure or pain motivates (or determines action, in stronger forms).'
   lio_difference: Does not fix LIO cosmology axes.
   certainty: 1.0
   cites:
@@ -308,7 +312,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: 'Philosophical position, not a membership body; debated across history (Bentham, Mill, etc.)'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -317,29 +326,29 @@ v7_1_rubric:
   V: 9
   X: 7
   total: 41
-  scoring_note: Hedonism scores relatively high for its empirical ties to human psychology and consistent
+  scoring_note: 'Hedonism scores relatively high for its empirical ties to human psychology and consistent
     pleasure-based ethics, offering practical guidance for well-being, but limited by potential oversimplification
-    of complex motivations.
-  source: v7.1 data book, section 6 table (tables[4]) row 32 and section 7 scoring notes
+    of complex motivations.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 32 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person's own writing makes pleasure the only intrinsic value as the main worldview.
+  use_when: "The person's own writing makes pleasure the only intrinsic value as the main worldview."
   do_not_use_when: Ancient Epicureans are EPICUR; utilitarians are UTIL. HEDON sets no axes.
   neighbors:
   - code: EPICUR
@@ -356,9 +365,9 @@ sources:
   kind: encyclopedia
   author: Andrew Moore
   year: 2013
-  citation: Andrew Moore. "Hedonism." Stanford Encyclopedia of Philosophy. First published April 20, 2004;
-    substantive revision October 17, 2013. https://plato.stanford.edu/entries/hedonism/.
-  url: https://plato.stanford.edu/entries/hedonism/
+  citation: 'Andrew Moore. "Hedonism." Stanford Encyclopedia of Philosophy. First published April 20,
+    2004; substantive revision October 17, 2013. https://plato.stanford.edu/entries/hedonism/.'
+  url: 'https://plato.stanford.edu/entries/hedonism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
 ---
@@ -407,3 +416,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
 - 2026-10-15 (systems batch S5): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions (AI-generated) not used. Axes under P44.
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read SEP Moore.
+- 2026-10-25: adherents/estimate filled (qualitative).

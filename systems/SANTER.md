@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9): filled from Britannica "Santería" (Murphy). B 1 (0.5, alt 0);
@@ -25,6 +25,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Santería (Murphy): Yoruba/Cuba, orishas–saints correspondence,
       Ifá, initiation, bembé mediumship. Keep B=1 D=1 E=1; A C UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: SANTER
   v7_1_number: 56
@@ -66,7 +70,7 @@ classification:
     note: saint correspondences; not reducible to Catholicism
   - code: ANIM
     relation: neighbor (easily confused)
-    note: orishas are specific deities, not generic animism
+    note: 'orishas are specific deities, not generic animism'
 origins:
   founding_era:
     value: Developed in Cuba among enslaved Yoruba in the first decades of the 19th century; spread after
@@ -77,7 +81,7 @@ origins:
       locator: opening; diaspora
     how_known: Britannica.
   founding_region:
-    value: Cuba; spread throughout Latin America and the United States (esp. Miami, New York)
+    value: 'Cuba; spread throughout Latin America and the United States (esp. Miami, New York)'
     certainty: 1.0
     cites:
     - source: S1
@@ -112,7 +116,7 @@ metaphysics:
       locator: orishas; opening
     how_known: Britannica orisha description.
   deity_personal:
-    value: Orishas are personal deities who claim devotees as children, heal, and prophesy through mediums.
+    value: 'Orishas are personal deities who claim devotees as children, heal, and prophesy through mediums.'
     stance: personal
     certainty: 1.0
     cites:
@@ -120,8 +124,8 @@ metaphysics:
       locator: opening; bembés
     how_known: Britannica.
   intervention:
-    value: Orishas guide in crisis, protect, heal, prophesy through mediums at bembés; regular ceremonial
-      exchange.
+    value: 'Orishas guide in crisis, protect, heal, prophesy through mediums at bembés; regular ceremonial
+      exchange.'
     stance: regular
     certainty: 1.0
     cites:
@@ -160,10 +164,10 @@ metaphysics:
     cites:
     - source: S1
       locator: Ifá
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
     value: Ifá oracle via babalawo; initiation into orisha mysteries; orisha speech through mediums.
-    stance: both, revelation first
+    stance: 'both, revelation first'
     certainty: 0.7
     cites:
     - source: S1
@@ -184,7 +188,7 @@ metaphysics:
     cites:
     - source: S1
       locator: orishas
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: ori-inu as indwelling spirit determining character and fate (related Britannica orisha material);
       free will not developed here.
@@ -195,29 +199,29 @@ metaphysics:
     how_known: Thin; 0.5.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: The orishas are described as deities who act in the world; their relation to nature and
       any supreme god is not stated (S1).
   B_cause:
     value: 1
-    rationale: '''Through the bodies of their mediums the orishas are believed to interact with the congregation
-      directly and heal and prophesy''.'
+    rationale: "'Through the bodies of their mediums the orishas are believed to interact with the congregation\
+      \ directly and heal and prophesy'."
     certainty: 0.5
     cites: &id001
     - source: S1
       locator: article
-    how_known: 0.5. Alternative 0.
+    how_known: '0.5. Alternative 0.'
     alternatives:
     - value: 0
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: In the Ifá oracle a priest 'interprets the fall of consecrated palm nuts to reveal the
-      orishas’ response'.
+    rationale: "In the Ifá oracle a priest 'interprets the fall of consecrated palm nuts to reveal the\
+      \ orishas’ response'."
     certainty: 0.5
     cites:
     - source: S1
@@ -225,8 +229,8 @@ lio_axes:
     how_known: '0.5: divination as revelation.'
   E_scope:
     value: 1
-    rationale: 'On the world''s order (P7): orishas ''provide their devotees with protection, wisdom,
-      and success''.'
+    rationale: "On the world's order (P7): orishas 'provide their devotees with protection, wisdom, and\
+      \ success'."
     certainty: 0.5
     cites: &id002
     - source: S1
@@ -237,7 +241,7 @@ lio_axes:
       note: Named alternative.
       cites: *id002
 epistemology:
-  value: Access to orishas through divination (Ifá palm nuts), initiation, and mediumship; priestly interpretation.
+  value: 'Access to orishas through divination (Ifá palm nuts), initiation, and mediumship; priestly interpretation.'
   certainty: 1.0
   cites:
   - source: S1
@@ -252,16 +256,16 @@ ethics:
   how_known: Silence on ethics treatise.
 practice:
   ritual_and_practice:
-    value: Divination, sacrifice (including animal sacrifice protected in U.S. Supreme Court case), initiation/crowning,
-      bembé drum dances with possession mediumship, home altars.
+    value: 'Divination, sacrifice (including animal sacrifice protected in U.S. Supreme Court case), initiation/crowning,
+      bembé drum dances with possession mediumship, home altars.'
     certainty: 1.0
     cites:
     - source: S1
       locator: rituals; practice today
     how_known: Britannica.
   community_form:
-    value: House/ile structures under orisha priesthood; tens of thousands initiated, millions who consult;
-      Miami/New York diasporas.
+    value: 'House/ile structures under orisha priesthood; tens of thousands initiated, millions who consult;
+      Miami/New York diasporas.'
     certainty: 0.7
     cites:
     - source: S1
@@ -302,7 +306,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Afro-Caribbean Lucumí/Santería practitioners; hidden/initiatory; no reliable public census
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -311,28 +320,28 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 26
-  scoring_note: Santería scores moderately due to its rich syncretic traditions and emphasis on spiritual
-    balance, offering cultural coherence but limited by supernatural elements and lack of empirical rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 56 and section 7 scoring notes
+  scoring_note: 'Santería scores moderately due to its rich syncretic traditions and emphasis on spiritual
+    balance, offering cultural coherence but limited by supernatural elements and lack of empirical rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 56 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: Santería, Lucumí, Regla de Ocha, orisha religion of Cuban Yoruba lineage.
+  use_when: 'Santería, Lucumí, Regla de Ocha, orisha religion of Cuban Yoruba lineage.'
   do_not_use_when: Haitian Vodou (VODUN). Generic Catholicism despite saint correspondences.
   neighbors:
   - code: VODUN
@@ -350,7 +359,7 @@ sources:
   author: Joseph M. Murphy
   citation: 'Murphy, Joseph M.. "Santería." Encyclopaedia Britannica. https://www.britannica.com/topic/Santeria.
     Wayback Machine snapshot 2026-10-12 06:32:21 UTC: https://web.archive.org/web/20261012063221/https://www.britannica.com/topic/Santeria.'
-  url: https://www.britannica.com/topic/Santeria
+  url: 'https://www.britannica.com/topic/Santeria'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (scholar of Santería); full short article read. P44(e): read in the
     Wayback copy (https://web.archive.org/web/20261012063221/https://www.britannica.com/topic/Santeria);
@@ -402,3 +411,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica Santería; B D E scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

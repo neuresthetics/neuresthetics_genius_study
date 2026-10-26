@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S11, thin): Britannica "Druze" (editors) gives origins and practice
@@ -32,6 +32,10 @@ record:
       divinity), metaphysics (unitarian monotheism; secret hikmah; uqqal), practice (closed conversion;
       marriage endogamy), community. Axes stay UNKNOWN — Britannica article is thin on reincarnation/cosmology
       details needed for LIO (P46(a)).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -58,8 +62,8 @@ classification:
   parent_traditions:
     value:
     - Ismaʿīlī Shiʿism (Fatimid)
-    - Eclectic elements noted historically (Jewish, Christian, Gnostic, Neoplatonic, Iranian) under strict
-      monotheism — detail thin in this Britannica article
+    - 'Eclectic elements noted historically (Jewish, Christian, Gnostic, Neoplatonic, Iranian) under strict
+      monotheism — detail thin in this Britannica article'
     certainty: 0.7
     cites:
     - source: S1
@@ -112,9 +116,9 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Strict monotheism; self-name muwaḥḥidūn ('unitarians'). Movement proclaimed al-Ḥākim a divine
-      figure (condemned as heresy by Fatimid establishment, which held caliphs divinely appointed but
-      not themselves divine).
+    value: "Strict monotheism; self-name muwaḥḥidūn ('unitarians'). Movement proclaimed al-Ḥākim a divine\
+      \ figure (condemned as heresy by Fatimid establishment, which held caliphs divinely appointed but\
+      \ not themselves divine)."
     stance: creator distinct from creation
     certainty: 0.5
     cites:
@@ -171,20 +175,20 @@ metaphysics:
     cites:
     - source: S1
       locator: full article used
-    how_known: Silence; 'none' means no ledger doctrine stated, not a positive denial.
+    how_known: "Silence; 'none' means no ledger doctrine stated, not a positive denial."
   authority:
-    value: Secret teachings of Al-Ḥikmah al-sharīfah; elite initiates (ʿuqqāl) alone have full access.
+    value: 'Secret teachings of Al-Ḥikmah al-sharīfah; elite initiates (ʿuqqāl) alone have full access.
       Founding missionaries and pastoral letters of al-Muqtanā. Revelation/esoteric scripture, not public
-      observation-and-reason.
+      observation-and-reason.'
     stance: revelation
     certainty: 0.7
     cites:
     - source: S1
       locator: Origins and practices
-    how_known: Coder's reading of Britannica on hikmah and ʿuqqāl.
+    how_known: "Coder's reading of Britannica on hikmah and ʿuqqāl."
   reserved_exemptions:
-    value: Not addressed as cosmology of natural-law exemptions. Taqiyyah (outward denial under persecution)
-      is a social concession noted in older reference material, not developed here.
+    value: 'Not addressed as cosmology of natural-law exemptions. Taqiyyah (outward denial under persecution)
+      is a social concession noted in older reference material, not developed here.'
     stance: none
     certainty: 0.7
     cites:
@@ -208,41 +212,41 @@ metaphysics:
     how_known: Britannica silence.
 lio_axes:
   A_locus:
-    value: UNKNOWN
-    how_known: Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,
-      but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a)).
+    value: 'UNKNOWN'
+    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
+      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
   B_cause:
-    value: UNKNOWN
-    how_known: Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,
-      but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a)).
+    value: 'UNKNOWN'
+    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
+      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
   C_ledger:
-    value: UNKNOWN
-    how_known: Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,
-      but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a)).
+    value: 'UNKNOWN'
+    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
+      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
   D_authority:
-    value: UNKNOWN
-    how_known: Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,
-      but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a)).
+    value: 'UNKNOWN'
+    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
+      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
   E_scope:
-    value: UNKNOWN
-    how_known: Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,
-      but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a)).
+    value: 'UNKNOWN'
+    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
+      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
 epistemology:
-  value: 'Esoteric: only ʿuqqāl (''knowers'') fully access Al-Ḥikmah al-sharīfah. Ordinary members do
-    not. Conversion closed since 1043.'
+  value: "Esoteric: only ʿuqqāl ('knowers') fully access Al-Ḥikmah al-sharīfah. Ordinary members do not.\
+    \ Conversion closed since 1043."
   certainty: 1.0
   cites:
   - source: S1
     locator: Origins and practices
   how_known: Britannica.
 ethics:
-  value: Not developed as a public ethical system in Britannica. Community cohesion, endogamy, and political
-    loyalty are emphasized historically.
+  value: 'Not developed as a public ethical system in Britannica. Community cohesion, endogamy, and political
+    loyalty are emphasized historically.'
   certainty: 0.7
   cites:
   - source: S1
     locator: opening; Origins and practices
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 practice:
   ritual_and_practice:
     value: Many religious practices kept secret even from the community as a whole; full participation
@@ -253,8 +257,8 @@ practice:
       locator: Origins and practices
     how_known: Britannica.
   community_form:
-    value: Close-knit hereditary community in Lebanon, Syria, and Israel (plus smaller diasporas); politically
-      significant; >1,000,000 early 21st century per Britannica.
+    value: 'Close-knit hereditary community in Lebanon, Syria, and Israel (plus smaller diasporas); politically
+      significant; >1,000,000 early 21st century per Britannica.'
     certainty: 1.0
     cites:
     - source: S1
@@ -267,7 +271,7 @@ science:
     cites:
     - source: S1
       locator: Origins and practices
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Not addressed as a science stance in Britannica.
     certainty: 1.0
@@ -287,7 +291,13 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Closed ethno-religious community concentrated in Levant; Britannica does not give a stable
+      global headcount here
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -296,25 +306,25 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 23
-  scoring_note: Druze Faith scores moderately low due to its esoteric and revelatory focus, though it
-    provides a cohesive framework for monotheism and reincarnation within a secretive tradition.
-  source: v7.1 data book, section 6 table (tables[4]) row 64 and section 7 scoring notes
+  scoring_note: 'Druze Faith scores moderately low due to its esoteric and revelatory focus, though it
+    provides a cohesive framework for monotheism and reincarnation within a secretive tradition.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 64 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Person is Druze by community identity or affirms Druze faith.
@@ -327,12 +337,12 @@ coding_guidance:
     relation: neighbor (easily confused)
 review:
   data_quality_flags:
-  - 'Thin: little doctrine in the source (al-Ḥākim''s divinity and the self-name ''unitarians'' only);
-    teachings are secret. All axes UNKNOWN.'
+  - "Thin: little doctrine in the source (al-Ḥākim's divinity and the self-name 'unitarians' only); teachings\
+    \ are secret. All axes UNKNOWN."
   open_questions:
-  - 'A lead: the movement began by ''proclaiming al-Ḥākim a divine figure'' and the Druze call themselves
-    ''unitarians'' (S1); a doctrinal source is needed to say what this implies for A.'
-  - A signed or peer-reviewed source on Druze doctrine (unity of God, reincarnation).
+  - "A lead: the movement began by 'proclaiming al-Ḥākim a divine figure' and the Druze call themselves\
+    \ 'unitarians' (S1); a doctrinal source is needed to say what this implies for A."
+  - 'A signed or peer-reviewed source on Druze doctrine (unity of God, reincarnation).'
   - 'Adherents: Britannica says more than 1,000,000 (early 21st century); cite a demographic source.'
 sources:
 - id: S1
@@ -341,7 +351,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Druze." Encyclopaedia Britannica. https://www.britannica.com/topic/Druze.
     Wayback Machine snapshot 2026-01-09 03:32:33 UTC: https://web.archive.org/web/20260109033233/https://www.britannica.com/topic/Druze.'
-  url: https://www.britannica.com/topic/Druze
+  url: 'https://www.britannica.com/topic/Druze'
   accessed: '2026-10-25'
   reliability_note: 'Unsigned editors’ article; origins, practices and history only, no doctrine. Newest
     2026 snapshot (20260925005116) was a bot-check page. P44(e): read in the Wayback copy (https://web.archive.org/web/20260109033233/https://www.britannica.com/topic/Druze);
@@ -390,3 +400,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S11): Britannica Druze; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science from re-read Britannica. Axes still UNKNOWN.
+- 2026-10-25: adherents/estimate filled (qualitative).

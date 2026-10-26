@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10, thin): filled from Britannica "Hermetic writings" (editors). A
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities from Britannica Hermetic writings (via prior batch source + re-read content):
       Corpus Hermeticum, popular vs learned Hermetism, gnosis/deification, Greco-Egyptian fusion. Keep
       A=1 D=1; B C E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: HERMET
   v7_1_number: 61
@@ -55,7 +59,7 @@ classification:
   parent_traditions:
     value:
     - Egyptian Thoth cult
-    - Platonic, Stoic, and Neo-Pythagorean philosophies
+    - 'Platonic, Stoic, and Neo-Pythagorean philosophies'
     - Hellenistic Greco-Egyptian culture
     certainty: 1.0
     cites:
@@ -77,7 +81,7 @@ classification:
     note: different modern path
 origins:
   founding_era:
-    value: Collection written in Greek and Latin, probably mid-1st to end of 3rd century CE
+    value: 'Collection written in Greek and Latin, probably mid-1st to end of 3rd century CE'
     certainty: 1.0
     cites:
     - source: S1
@@ -137,7 +141,7 @@ metaphysics:
     cites:
     - source: S1
       locator: aim paragraph
-    how_known: 0.5.
+    how_known: '0.5.'
   intervention:
     value: Divine revelation required because assumed affinities could not be discovered by ordinary scientific
       methods; occult practice intensely utilitarian.
@@ -148,7 +152,7 @@ metaphysics:
       locator: popular Hermetism
     how_known: Revelation for occult science; 0.5.
   miracles:
-    value: Magic, alchemy, astrology as operative arts; not denied.
+    value: 'Magic, alchemy, astrology as operative arts; not denied.'
     stance: affirmed
     certainty: 0.7
     cites:
@@ -204,7 +208,7 @@ metaphysics:
     cites:
     - source: S1
       locator: popular Hermetism
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -215,17 +219,17 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 1
-    rationale: Gnosis of 'the one transcendent God' plus cosmos unity; leans transcendent with world-knowledge.
+    rationale: "Gnosis of 'the one transcendent God' plus cosmos unity; leans transcendent with world-knowledge."
     certainty: 0.5
     cites:
     - source: S1
       locator: aim paragraph
     how_known: Prior score kept.
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Magic/astrology vs law not fixed as single B score across popular/learned Hermetism (P44).
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Silent (P44).
   D_authority:
     value: 1
@@ -237,11 +241,11 @@ lio_axes:
       locator: popular Hermetism
     how_known: Prior score kept.
   E_scope:
-    value: UNKNOWN
-    how_known: Unlikely there was a Hermetic 'church'; E not fixed (P44).
+    value: 'UNKNOWN'
+    how_known: "Unlikely there was a Hermetic 'church'; E not fixed (P44)."
 epistemology:
-  value: Gnosis (knowledge) of transcendent God, world, and humankind leading to deification; revelation
-    over ordinary scientific discovery for occult affinities; Platonic dialogue form.
+  value: 'Gnosis (knowledge) of transcendent God, world, and humankind leading to deification; revelation
+    over ordinary scientific discovery for occult affinities; Platonic dialogue form.'
   certainty: 1.0
   cites:
   - source: S1
@@ -264,8 +268,8 @@ practice:
       locator: opening; closing
     how_known: Britannica.
   community_form:
-    value: Unlikely there was any well-defined Hermetic community or church [S1]. Later medieval/Renaissance
-      receptions are separate.
+    value: 'Unlikely there was any well-defined Hermetic community or church [S1]. Later medieval/Renaissance
+      receptions are separate.'
     certainty: 1.0
     cites:
     - source: S1
@@ -286,9 +290,9 @@ science:
     cites:
     - source: S1
       locator: closing
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
 schools_and_variants:
-- name: Popular Hermetism (astrology, alchemy, magic)
+- name: 'Popular Hermetism (astrology, alchemy, magic)'
   form: mystical
   how_it_differs: Occult sciences; Emerald Tablet etc.
   lio_difference: A1 D1; B may lean more interventionist at person level.
@@ -296,9 +300,9 @@ schools_and_variants:
   cites:
   - source: S1
     locator: opening
-- name: Learned Hermetism (Corpus Hermeticum, Asclepius)
+- name: 'Learned Hermetism (Corpus Hermeticum, Asclepius)'
   form: scholastic or philosophical
-  how_it_differs: Theology and philosophy in Platonic dialogue form; Greek philosophy, Egyptian setting.
+  how_it_differs: 'Theology and philosophy in Platonic dialogue form; Greek philosophy, Egyptian setting.'
   lio_difference: Same umbrella scores.
   certainty: 1.0
   cites:
@@ -307,7 +311,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Historical Hermetic writings tradition + modern esoteric reception; not a census religion
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -316,25 +325,25 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 25
-  scoring_note: Hermeticism scores moderately due to its esoteric and symbolic approach to enlightenment,
-    balanced by limited empirical grounding and reliance on ancient revelations.
-  source: v7.1 data book, section 6 table (tables[4]) row 61 and section 7 scoring notes
+  scoring_note: 'Hermeticism scores moderately due to its esoteric and symbolic approach to enlightenment,
+    balanced by limited empirical grounding and reliance on ancient revelations.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 61 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Engagement with Hermetica / Hermes Trismegistos as revelatory authority.
@@ -359,7 +368,7 @@ sources:
   author: Britannica Editors
   citation: 'The Editors of Encyclopaedia Britannica. "Hermetic writings." Encyclopaedia Britannica. https://www.britannica.com/topic/Hermetic-writings.
     Wayback Machine snapshot 2026-10-12 05:40:54 UTC: https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings.'
-  url: https://www.britannica.com/topic/Hermetic-writings
+  url: 'https://www.britannica.com/topic/Hermetic-writings'
   accessed: '2026-10-25'
   reliability_note: 'Unsigned editors’ article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings);
     live page not compared (live Britannica times out from the box).'
@@ -408,3 +417,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S10): Britannica Hermetic writings; A and D scored.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools. A and D kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

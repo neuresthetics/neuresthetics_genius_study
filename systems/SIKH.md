@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S10): filled from Britannica "Sikhism" (McLeod), introduction and Guru
@@ -28,6 +28,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Sikhism (McLeod): Nanak, ten Gurus, Guru Granth Sahib,
       nirgun God, Khalsa, langar. Keep prior axis scores.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: SIKH
   v7_1_number: 62
@@ -44,8 +48,8 @@ classification:
       locator: opening
     how_known: 'Britannica: religion and philosophy.'
   family:
-    value: 'Sikhism / Gurmat (''Way of the Guru''): monotheistic Panth founded by Guru Nanak; ten human
-      Gurus then Guru Granth Sahib as eternal Guru'
+    value: "Sikhism / Gurmat ('Way of the Guru'): monotheistic Panth founded by Guru Nanak; ten human\
+      \ Gurus then Guru Granth Sahib as eternal Guru"
     certainty: 1.0
     cites:
     - source: S1
@@ -54,7 +58,7 @@ classification:
   parent_traditions:
     value:
     - Sant tradition of northern India (incl. Kabir milieu)
-    - Vaishnava bhakti (devotional influence, with differences)
+    - 'Vaishnava bhakti (devotional influence, with differences)'
     - Nath meditation concepts (spiritual ascent; rejected physical Hatha Yoga)
     certainty: 1.0
     cites:
@@ -112,13 +116,13 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: One God, nirgun (without form), not incarnated; devotion essential to liberation from rebirth.
+    value: 'One God, nirgun (without form), not incarnated; devotion essential to liberation from rebirth.'
     stance: creator distinct from creation
     certainty: 0.5
     cites:
     - source: S1
       locator: history and doctrine
-    how_known: 0.5 vs God-in-all Sant seeing.
+    how_known: '0.5 vs God-in-all Sant seeing.'
   deity_personal:
     value: One God approached through devotion and Guru; no sagun incarnation.
     stance: personal
@@ -126,7 +130,7 @@ metaphysics:
     cites:
     - source: S1
       locator: history and doctrine
-    how_known: 0.5.
+    how_known: '0.5.'
   intervention:
     value: Single spirit inhabited ten Gurus; eternal Guru in scripture. Ongoing intervention thin in
       extract.
@@ -145,13 +149,13 @@ metaphysics:
       locator: opening
     how_known: Silence.
   petition_and_prayer:
-    value: Bow before Guru Granth Sahib, hymns, ardas prayer.
+    value: 'Bow before Guru Granth Sahib, hymns, ardas prayer.'
     stance: petition answered
     certainty: 0.5
     cites:
     - source: S1
       locator: gurdwara FAQ
-    how_known: 0.5.
+    how_known: '0.5.'
   afterlife:
     value: Liberation from cycle of rebirth.
     stance: rebirth
@@ -167,10 +171,10 @@ metaphysics:
     cites:
     - source: S1
       locator: history and doctrine
-    how_known: 0.5.
+    how_known: '0.5.'
   authority:
     value: Guru (human then scripture); Khalsa discipline.
-    stance: both, revelation first
+    stance: 'both, revelation first'
     certainty: 0.7
     cites:
     - source: S1
@@ -191,7 +195,7 @@ metaphysics:
     cites:
     - source: S1
       locator: history and doctrine
-    how_known: 0.5.
+    how_known: '0.5.'
   necessity_and_freedom:
     value: Not addressed.
     certainty: 1.0
@@ -202,9 +206,9 @@ metaphysics:
 lio_axes:
   A_locus:
     value: 2
-    rationale: The Sants held that God is 'nirgun (“without form”)' and 'can be neither incarnated nor
-      represented', and saw the divine 'in all things'; for Nanak 'the nam encompasses the whole of creation',
-      and grace is 'bestowed by God, or Akal Purakh'.
+    rationale: "The Sants held that God is 'nirgun (“without form”)' and 'can be neither incarnated nor\
+      \ represented', and saw the divine 'in all things'; for Nanak 'the nam encompasses the whole of\
+      \ creation', and grace is 'bestowed by God, or Akal Purakh'."
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -217,15 +221,15 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: UNKNOWN
-    how_known: Not fixed by the sources read (T1 search logged, 2026-10-15).
+    value: 'UNKNOWN'
+    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: The scripture Guru Granth Sahib 'thereafter was regarded as the sole Guru'; the divine
-      word (shabad) is heard 'through a grace bestowed by God'.
+    rationale: "The scripture Guru Granth Sahib 'thereafter was regarded as the sole Guru'; the divine\
+      \ word (shabad) is heard 'through a grace bestowed by God'."
     certainty: 0.5
     cites:
     - source: S1
@@ -234,7 +238,7 @@ lio_axes:
       locator: Guru Nanak
     how_known: '0.5: the source does not discuss observation or reason.'
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
 epistemology:
   value: Guidance of the Guru; hymn/scripture; Sikh as learner.
@@ -252,7 +256,7 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Gurdwara worship, Adi Granth reverence, langar, Five Ks for Khalsa, ardas.
+    value: 'Gurdwara worship, Adi Granth reverence, langar, Five Ks for Khalsa, ardas.'
     certainty: 1.0
     cites:
     - source: S1
@@ -292,7 +296,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: 'Sikhism: tens of millions globally (order-of-magnitude; confirm with census when coding persons)'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 8
@@ -301,26 +310,26 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 25
-  scoring_note: Sikhism scores moderately due to its strong ethical coherence and emphasis on equality
+  scoring_note: 'Sikhism scores moderately due to its strong ethical coherence and emphasis on equality
     and service, which foster social harmony, but its revelatory foundation and supernatural aspects limit
-    empirical and predictive alignment.
-  source: v7.1 data book, section 6 table (tables[4]) row 62 and section 7 scoring notes
+    empirical and predictive alignment.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 62 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Sikh / Gurmat / Khalsa identity.
@@ -343,7 +352,7 @@ sources:
   author: William Hewat McLeod
   citation: 'McLeod, William Hewat. "Sikhism." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism.
     Wayback Machine snapshot 2026-10-06 08:39:15 UTC: https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism.'
-  url: https://www.britannica.com/topic/Sikhism
+  url: 'https://www.britannica.com/topic/Sikhism'
   accessed: '2026-10-25'
   reliability_note: 'Signed article (historian of Sikhism); introduction read. P44(e): read in the Wayback
     copy (https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism); live page
@@ -354,8 +363,8 @@ sources:
   author: William Hewat McLeod
   citation: 'McLeod, William Hewat. "Sikhism: Guru Nanak." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism/Guru-Nanak.
     Wayback Machine snapshot 2026-08-20 15:49:38 UTC: https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak.'
-  url: https://www.britannica.com/topic/Sikhism/Guru-Nanak
-  accessed: '2026-10-15'
+  url: 'https://www.britannica.com/topic/Sikhism/Guru-Nanak'
+  accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak);
     live page not compared (live Britannica times out from the box).'
 ---
@@ -401,3 +410,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S10): Britannica Sikhism; axes set.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
+- 2026-10-25: adherents/estimate filled (qualitative).

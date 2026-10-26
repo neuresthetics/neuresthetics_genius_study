@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S9, thin): Britannica "Modern Paganism" (one sentence) and the abstract
@@ -34,6 +34,10 @@ record:
     summary: 'Deepen qualities from Britannica Neo-Paganism: Rodnovery as Slavic-oriented modern Paganism
       in Poland/Russia/Ukraine; reconstructionist ethnic framing; polytheism varies. Axes stay UNKNOWN
       (umbrella article; P46(a)).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -57,16 +61,16 @@ classification:
     cites:
     - source: S1
       locator: History of modern Paganism
-    how_known: Britannica names Rodnovery in Poland, Russia, Ukraine.
+    how_known: 'Britannica names Rodnovery in Poland, Russia, Ukraine.'
   parent_traditions:
     value:
     - Pre-Christian Slavic religions
-    - 20th-c. modern Paganism / ethnic nationalist reconstruction currents in Eastern Europe
+    - '20th-c. modern Paganism / ethnic nationalist reconstruction currents in Eastern Europe'
     certainty: 0.7
     cites:
     - source: S1
       locator: History of modern Paganism; Beliefs and practices
-    how_known: Coder's reading of Britannica.
+    how_known: "Coder's reading of Britannica."
   related_codes:
   - code: HEATH
     relation: neighbor (easily confused)
@@ -90,7 +94,7 @@ origins:
       locator: History of modern Paganism
     how_known: Britannica.
   founding_region:
-    value: Linguistically Slavic countries such as Poland, Russia, and Ukraine
+    value: 'Linguistically Slavic countries such as Poland, Russia, and Ukraine'
     certainty: 1.0
     cites:
     - source: S1
@@ -120,11 +124,11 @@ metaphysics:
     cites:
     - source: S1
       locator: Beliefs and practices
-    how_known: Britannica on modern Pagan diversity; Rodnovery specifically 'venerating the pre-Christian
-      deities'.
+    how_known: "Britannica on modern Pagan diversity; Rodnovery specifically 'venerating the pre-Christian\
+      \ deities'."
   deity_personal:
-    value: Veneration of pre-Christian Slavic deities; some practitioners take deities as literal, others
-      as symbolic/archetypal (Britannica on modern Pagans generally).
+    value: 'Veneration of pre-Christian Slavic deities; some practitioners take deities as literal, others
+      as symbolic/archetypal (Britannica on modern Pagans generally).'
     stance: varies by school
     certainty: 0.7
     cites:
@@ -132,8 +136,8 @@ metaphysics:
       locator: History; Beliefs and practices
     how_known: Britannica.
   intervention:
-    value: Ritual offerings to deities, spirits, or ancestors imply relational engagement; not a fixed
-      intervention doctrine for Rodnovery alone.
+    value: 'Ritual offerings to deities, spirits, or ancestors imply relational engagement; not a fixed
+      intervention doctrine for Rodnovery alone.'
     stance: varies by school
     certainty: 0.5
     cites:
@@ -149,8 +153,8 @@ metaphysics:
       locator: Beliefs and practices
     how_known: Britannica silence for Rodnovery specifically.
   petition_and_prayer:
-    value: Offerings of food, drink, poetry, or performance to deities, spirits, or ancestors are common
-      in modern Pagan ritual (umbrella).
+    value: 'Offerings of food, drink, poetry, or performance to deities, spirits, or ancestors are common
+      in modern Pagan ritual (umbrella).'
     stance: varies by school
     certainty: 0.5
     cites:
@@ -182,7 +186,7 @@ metaphysics:
     cites:
     - source: S1
       locator: History of modern Paganism; Beliefs
-    how_known: Coder's reading of Britannica on reconstructionists and Eastern ethnic forms.
+    how_known: "Coder's reading of Britannica on reconstructionists and Eastern ethnic forms."
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -208,23 +212,23 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
 epistemology:
@@ -234,7 +238,7 @@ epistemology:
   cites:
   - source: S1
     locator: History; Beliefs and practices
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 ethics:
   value: Eastern European ethnic-nationalist modern Paganisms tend to be more socially conservative; progressive
     forms predominate in North America/Britain. Rodnover ethics not separately stated.
@@ -260,11 +264,11 @@ practice:
     cites:
     - source: S1
       locator: History of modern Paganism
-    how_known: Coder's reading of Britannica.
+    how_known: "Coder's reading of Britannica."
 science:
   historical_stance:
-    value: Appeals to historical/archaeological reconstruction; often skeptical of Christian missions;
-      some modern Pagans oppose science-fostered 'alienation from nature' (umbrella).
+    value: "Appeals to historical/archaeological reconstruction; often skeptical of Christian missions;\
+      \ some modern Pagans oppose science-fostered 'alienation from nature' (umbrella)."
     certainty: 0.5
     cites:
     - source: S1
@@ -276,7 +280,7 @@ science:
     cites:
     - source: S1
       locator: Beliefs and practices
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
 schools_and_variants:
 - name: Rodnovery in Russia / Ukraine / Poland (national variants)
   form: regional
@@ -289,7 +293,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Modern Pagan Rodnovery communities in Slavic countries after 1990s; Britannica gives no headcount
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -298,29 +307,29 @@ v7_1_rubric:
   V: 6
   X: 3
   total: 27
-  scoring_note: Rodnovery scores moderately due to its cultural revival of Slavic traditions, emphasizing
-    nature and ancestry, but limited by mythic elements and lack of empirical rigor.
-  source: v7.1 data book, section 6 table (tables[4]) row 51 and section 7 scoring notes
+  scoring_note: 'Rodnovery scores moderately due to its cultural revival of Slavic traditions, emphasizing
+    nature and ancestry, but limited by mythic elements and lack of empirical rigor.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 51 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Self-identified Rodnover / Slavic Native Faith practitioner.
-  do_not_use_when: Germanic Heathenry (HEATH). Wicca. Generic 'pagan' without Slavic Native Faith identity.
+  do_not_use_when: "Germanic Heathenry (HEATH). Wicca. Generic 'pagan' without Slavic Native Faith identity."
   neighbors:
   - code: HEATH
     relation: neighbor (easily confused)
@@ -333,13 +342,13 @@ review:
   - 'Thin: one sentence in a general Britannica article (S1). The Aitamurto & Simpson Element is a lead
     only (summary read).'
   open_questions:
-  - 'Lead (summary only, not a source, per the S11 convention): Aitamurto, Kaarina, and Scott Simpson.
-    Slavic Native Faith. Cambridge Elements. Cambridge: Cambridge University Press. https://doi.org/10.1017/9781009436953.
-    The publisher summary says the movement ''is comprised of many local and national forms'' sharing
-    ''a primary emphasis on Slavic identity''. Read the full text.'
+  - "Lead (summary only, not a source, per the S11 convention): Aitamurto, Kaarina, and Scott Simpson.\
+    \ Slavic Native Faith. Cambridge Elements. Cambridge: Cambridge University Press. https://doi.org/10.1017/9781009436953.\
+    \ The publisher summary says the movement 'is comprised of many local and national forms' sharing\
+    \ 'a primary emphasis on Slavic identity'. Read the full text."
   - 'Lead for A: Britannica on modern Paganism in general says some take deities as literal and others
     as symbolic (S1); check in Aitamurto & Simpson whether this holds for Rodnovery.'
-  - Read Aitamurto & Simpson in full.
+  - 'Read Aitamurto & Simpson in full.'
   - Adherents are TODO.
 sources:
 - id: S1
@@ -348,7 +357,7 @@ sources:
   author: Ethan Doyle White
   citation: 'Doyle White, Ethan. "Modern Paganism." Encyclopaedia Britannica. https://www.britannica.com/topic/Neo-Paganism.
     Wayback Machine snapshot 2026-10-10 14:10:40 UTC: https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism.'
-  url: https://www.britannica.com/topic/Neo-Paganism
+  url: 'https://www.britannica.com/topic/Neo-Paganism'
   accessed: '2026-10-25'
   reliability_note: 'Signed article on modern Paganism in general; Rodnovery named in one sentence. P44(e):
     read in the Wayback copy (https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism);
@@ -397,3 +406,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S9): Britannica Neo-Paganism; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read Britannica. Axes still UNKNOWN.
+- 2026-10-25: adherents/estimate filled (qualitative).

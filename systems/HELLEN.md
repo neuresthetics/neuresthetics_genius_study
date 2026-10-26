@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -14,9 +14,9 @@ record:
     summary: Stub created from v7.1 data book table 4 and section 7.
   - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
-      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
-      events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'Draft (systems batch S8, thin): one sentence in Britannica "Modern Paganism" (Doyle White).
@@ -36,6 +36,10 @@ record:
     summary: 'Deepen qualities from YSEE institutional page: family, kind (reconstructionist), origins
       (1997 YSEE; 2017 known religion in Greece), metaphysics (polytheism / ancestral gods — thin primary
       page), practice, community. Axes stay UNKNOWN (P45 lower tier; thin doctrine on page).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
+      unchanged.
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -86,8 +90,8 @@ classification:
     note: ancient Cynic school is not HELLEN
 origins:
   founding_era:
-    value: YSEE founded June 1997 after 1995 Panhellenic Gathering and 1995–96 Consensus; Hellenic Ethnic
-      Religion recognized as 'known religion' in Greece February 2017
+    value: "YSEE founded June 1997 after 1995 Panhellenic Gathering and 1995–96 Consensus; Hellenic Ethnic\
+      \ Religion recognized as 'known religion' in Greece February 2017"
     certainty: 1.0
     cites:
     - source: S1
@@ -124,9 +128,9 @@ metaphysics:
     certainty: 0.5
     cites:
     - source: S1
-      locator: opening; First Press Release closing ('Ancestral Gods')
-    how_known: Polytheism named; 'within nature' is coder gloss at 0.5 from ethnic/nature-religion framing
-      — doctrine thin.
+      locator: "opening; First Press Release closing ('Ancestral Gods')"
+    how_known: "Polytheism named; 'within nature' is coder gloss at 0.5 from ethnic/nature-religion framing\
+      \ — doctrine thin."
   deity_personal:
     value: Ancestral gods honoured; personal deities of the Hellenic pantheon implied by polytheism.
     stance: personal
@@ -134,7 +138,7 @@ metaphysics:
     cites:
     - source: S1
       locator: First Press Release
-    how_known: 'YSEE: ''Honour and Glory to our Ancestral Gods''.'
+    how_known: "YSEE: 'Honour and Glory to our Ancestral Gods'."
   intervention:
     value: Not described on the about page.
     stance: not addressed
@@ -177,8 +181,8 @@ metaphysics:
       locator: full page
     how_known: Silence.
   authority:
-    value: Ancestral Hellenic Tradition (rites, beliefs, monuments, mythology, customs). Ethnic/traditional
-      authority, not Abrahamic revelation and not laboratory science.
+    value: 'Ancestral Hellenic Tradition (rites, beliefs, monuments, mythology, customs). Ethnic/traditional
+      authority, not Abrahamic revelation and not laboratory science.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
@@ -210,41 +214,41 @@ metaphysics:
     how_known: YSEE silence.
 lio_axes:
   A_locus:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
       and ancestral authority noted but not scored.
   B_cause:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
       and ancestral authority noted but not scored.
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
       and ancestral authority noted but not scored.
   D_authority:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
       and ancestral authority noted but not scored.
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
       and ancestral authority noted but not scored.
 epistemology:
-  value: Restoration via ancestral tradition, mythology, monuments, and public educational events. Not
-    a revealed scripture religion on this page.
+  value: 'Restoration via ancestral tradition, mythology, monuments, and public educational events. Not
+    a revealed scripture religion on this page.'
   certainty: 0.7
   cites:
   - source: S1
     locator: About YSEE; First Press Release
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 ethics:
-  value: Not a developed ethical treatise on this page. Political/cultural resistance to 'theocracy' and
-    defense of pre-Christian heritage are stated aims.
+  value: "Not a developed ethical treatise on this page. Political/cultural resistance to 'theocracy'\
+    \ and defense of pre-Christian heritage are stated aims."
   certainty: 0.7
   cites:
   - source: S1
     locator: opening; First Press Release
-  how_known: Coder's reading.
+  how_known: "Coder's reading."
 practice:
   ritual_and_practice:
     value: Public religious ceremonies; commemorations of ancient national historical events; official
@@ -270,7 +274,7 @@ science:
     cites:
     - source: S1
       locator: First Press Release
-    how_known: Coder's reading.
+    how_known: "Coder's reading."
   current_stance:
     value: Not addressed as science policy on this page.
     certainty: 1.0
@@ -281,7 +285,7 @@ science:
 schools_and_variants:
 - name: YSEE / Hellenic Ethnic Religion (Greece)
   form: modern
-  how_it_differs: Institutional Greek reconstruction; 'known religion' status 2017; ethnic framing.
+  how_it_differs: "Institutional Greek reconstruction; 'known religion' status 2017; ethnic framing."
   lio_difference: Axes UNKNOWN.
   certainty: 1.0
   cites:
@@ -299,7 +303,12 @@ schools_and_variants:
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: Small reconstructionist groups (e.g. YSEE recognized in Greece 2017); not a mass census category
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — qualitative from listed source; not a genius-rate denominator.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 7
@@ -308,31 +317,31 @@ v7_1_rubric:
   V: 6
   X: 3
   total: 27
-  scoring_note: Hellenismos scores moderately due to its thoughtful reconstruction of Greek polytheism,
-    blending philosophy and ethics, but limited by mythic elements and lack of empirical support.
-  source: v7.1 data book, section 6 table (tables[4]) row 49 and section 7 scoring notes
+  scoring_note: 'Hellenismos scores moderately due to its thoughtful reconstruction of Greek polytheism,
+    blending philosophy and ethics, but limited by mythic elements and lack of empirical support.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 49 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
   use_when: Self-identified Hellenic polytheist / Ethnikos Hellen / Hellenismos practitioner reconstructing
     Greek ethnic religion.
-  do_not_use_when: Ancient Greek philosophers (use PLATO, ARIST, STOIC, CYNIC, etc.). Eclectic Wicca with
-    Greek deity names without Hellenic reconstruction identity — usually WICCA.
+  do_not_use_when: 'Ancient Greek philosophers (use PLATO, ARIST, STOIC, CYNIC, etc.). Eclectic Wicca
+    with Greek deity names without Hellenic reconstruction identity — usually WICCA.'
   neighbors:
   - code: HEATH
     relation: neighbor (easily confused)
@@ -356,8 +365,8 @@ sources:
   type: primary
   kind: institutional page
   author: Supreme Council of Ethnikoi Hellenes (YSEE)
-  citation: Supreme Council of Ethnikoi Hellenes. "About YSEE." https://www.ysee.gr/about-eng.html.
-  url: https://www.ysee.gr/about-eng.html
+  citation: 'Supreme Council of Ethnikoi Hellenes. "About YSEE." https://www.ysee.gr/about-eng.html.'
+  url: 'https://www.ysee.gr/about-eng.html'
   accessed: '2026-10-25'
   reliability_note: 'P45 lower tier (a): the movement’s own published statement; claims capped at 0.5.
     Undated page. P46(b): stands for YSEE (Supreme Council of Ethnikoi Hellenes) only. Hellenic polytheism
@@ -407,3 +416,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 - 2026-10-15 (batch S8): YSEE about page; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read YSEE. Axes still UNKNOWN.
+- 2026-10-25: adherents/estimate filled (qualitative).
