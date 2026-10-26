@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Thelema. No LIO moves.
 identity:
   id: THELEM
   v7_1_number: 74
@@ -196,13 +199,14 @@ metaphysics:
       locator: origins; beliefs
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: "None as shared cosmology. True Will is individual; initiatory orders (OTO, A∴A∴) structure\
+      \ training, not cosmic exemption from one's Will or Liber AL's frame."
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Thelema.'
   teleology_in_nature:
     value: Aeonic history; True Will in harmony with cosmos.
     stance: immanent ends
@@ -415,6 +419,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Signed article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260217112405/https://www.britannica.com/topic/Thelema);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Thelema." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Thelema'
+  accessed: '2026-10-25'
 ---
 # Thelema (THELEM)
 
@@ -462,3 +472,4 @@ Thelemic identity. Not CHAOSM.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4.
 - 2026-10-25: E_scope scored 2 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Thelema.
