@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,9 @@ record:
     by: Grok Bot
     summary: 'Deepen metaphysics (Hayyi Rabbi/uthras), ethics (Ginza), practice (masbuta/masiqta), schools
       from Wikipedia Mandaeism. Keep prior S1. No LIO moves.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill exemptions and necessity from Wikipedia Mandaeism. No LIO moves.
 identity:
   id: MANDAE
   v7_1_number: 65
@@ -210,13 +213,14 @@ metaphysics:
       locator: Scriptures and literature; Priests
     how_known: '0.8 — Wikipedia.'
   reserved_exemptions:
-    value: Not addressed as physics exemptions.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: 'Priestly castes (tarmida, ganzibra) hold ritual authority; community historically endogamous.
+      Baptismal purity rules bind; not an exemption from Lightworld moral order.'
+    stance: some
+    certainty: 0.5
+    cites: &id002
+    - source: S2
+      locator: Beliefs
+    how_known: '0.5 — Wikipedia Mandaeism.'
   teleology_in_nature:
     value: "Astrological Book of the Zodiac; not a designer's-purposes doctrine stated."
     stance: none
@@ -226,12 +230,11 @@ metaphysics:
       locator: texts
     how_known: Thin.
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: "Soul's ascent depends on ritual knowledge and moral purity; agency in keeping masbuta and\
+      \ ethics. Not a Western free-will treatise."
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 1
@@ -501,3 +504,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: C_ledger scored; ritual_and_practice filled from Britannica.
 - 2026-10-25: E_scope scored 1 (0.5).
 - 2026-10-25: Deepened from Wikipedia Mandaeism (tertiary).
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Mandaeism.
