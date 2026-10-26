@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -48,6 +48,9 @@ record:
     by: Grok Bot
     summary: 'Deepen afterlife (reincarnation), ethics (seven precepts), practice/community from Wikipedia
       Druze. Keep prior S1. No LIO moves.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill miracles, exemptions, teleology, necessity from Wikipedia Druze. No LIO moves.'
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -155,13 +158,14 @@ metaphysics:
       locator: Origins and practices
     how_known: Britannica silence beyond return expectation.
   miracles:
-    value: Not addressed in the Britannica sections read.
-    stance: not addressed
-    certainty: 1.0
+    value: Tajalli (theophany) as light in a maqaam is taught; not a catalogue of public miracles for
+      outsiders. Esoteric layers limit what juhhāl are told.
+    stance: varies by school
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: Origins and practices
-    how_known: Britannica silence.
+    - source: S2
+      locator: Beliefs
+    how_known: '0.5 — Wikipedia Druze beliefs summary.'
   petition_and_prayer:
     value: Religious services for ʿuqqāl initiates; practices largely secret. Petition theology not described.
     stance: not addressed
@@ -198,29 +202,29 @@ metaphysics:
       locator: Scriptures; Esotericism
     how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
-    value: 'Not addressed as cosmology of natural-law exemptions. Taqiyyah (outward denial under persecution)
-      is a social concession noted in older reference material, not developed here.'
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: Origins and practices
-    how_known: Britannica silence on physics exemptions.
+    value: Closed ethnic community (conversion sealed since 1043); uqqāl hold secrets juhhāl do not. Moral
+      precepts still bind the community — not a license to violate the seven precepts.
+    stance: some
+    certainty: 0.5
+    cites: &id002
+    - source: S2
+      locator: opening; Reincarnation
+    how_known: '0.5 — Wikipedia ethnic/esoteric structure.'
   teleology_in_nature:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article used
-    how_known: Britannica silence.
+    value: Neoplatonic/Ismaili-influenced hierarchy toward reunion with the Cosmic Mind; not designer-watchmaker
+      language in sources read.
+    stance: immanent ends
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia Cosmic Mind / reincarnation cycle.'
   necessity_and_freedom:
-    value: Not addressed in the source read.
-    certainty: 1.0
+    value: "Seven precepts include acquiescence in God's acts and absolute submission alongside ethical\
+      \ duties. Free-will scholasticism not developed in sources read."
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full article used
-    how_known: Britannica silence.
+    - source: S2
+      locator: Seven Druze precepts
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 0
@@ -483,3 +487,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: A=0 and D=0 scored from Britannica.
 - 2026-10-25: B/C/E scored.
 - 2026-10-25: Deepened from Wikipedia Druze (tertiary).
+- 2026-10-25: Filled miracles/exemptions/teleology/necessity from Wikipedia Druze.
