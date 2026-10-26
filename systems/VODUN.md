@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) and C_ledger 1 (0.5) from sources on file (tradition/ancestors;
       lwa reciprocity). A/B/E already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Vodun. No LIO moves.
 identity:
   id: VODUN
   v7_1_number: 57
@@ -181,13 +184,14 @@ metaphysics:
       locator: practice
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: Priest/priestess (houngan/mambo or equivalent) and initiated lineages hold ritual knowledge;
+      clients and community still under spirit reciprocity — not a moral free pass.
+    stance: some
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Vodun.'
   teleology_in_nature:
     value: Spirits help govern the natural world; restore balance and energy in relationships.
     stance: immanent ends
@@ -197,19 +201,18 @@ metaphysics:
       locator: worldview; ritual
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: Ritual agency and spirit negotiation coexist with destiny/inheritance themes; not a single
+      free-will school.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Vodun.'
 lio_axes:
   A_locus:
     value: 1
     rationale: "A creator God with spirits 'made by God to help him govern humanity and the natural world';\
       \ yet 'Its fundamental principle is that everything is spirit'."
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: article
     how_known: '0.5: the everything-is-spirit principle gives alternative 2. Scope: Haitian Vodou only
@@ -217,20 +220,20 @@ lio_axes:
     alternatives:
     - value: 2
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 1
     rationale: "Prayers and rites 'in return for health, protection, and favour'; possessed devotees 'give\
       \ supernaturally inspired advice to people, or perform medical cures or special physical feats'."
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S1
       locator: article
     how_known: '0.5. Alternative 0. Scope: Haitian Vodou only (S1); West African Vodun is not described.'
     alternatives:
     - value: 0
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   C_ledger:
     value: 1
     certainty: 0.5
@@ -402,6 +405,12 @@ sources:
   reliability_note: 'Signed article (scholar of Haitian Vodou), full short article read. It covers Haitian
     Vodou; West African Vodun appears only as its source. P44(e): read in the Wayback copy (https://web.archive.org/web/20261006072258/https://www.britannica.com/topic/Vodou);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Vodun." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/West_African_Vodun'
+  accessed: '2026-10-25'
 ---
 # Vodou / Vodun (VODUN)
 
@@ -447,3 +456,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Vodun.
