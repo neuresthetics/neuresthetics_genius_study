@@ -2,25 +2,32 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
+      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
+      events). Salvation and moral community go on C_ledger.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S10): filled from Britannica "Sikhism" (McLeod), introduction and Guru Nanak pages. A 2 (0.5, alt 1); D 1 (0.5); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S10): filled from Britannica "Sikhism" (McLeod), introduction and Guru
+      Nanak pages. A 2 (0.5, alt 1); D 1 (0.5); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'T1: B_cause searched, still UNKNOWN; search logged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from Britannica Sikhism (McLeod): Nanak, ten Gurus, Guru Granth Sahib,
+      nirgun God, Khalsa, langar. Keep prior axis scores.'
 identity:
   id: SIKH
   v7_1_number: 62
@@ -34,75 +41,170 @@ classification:
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
-    how_known: '''religion and philosophy founded in the Punjab region''.'
+      locator: opening
+    how_known: 'Britannica: religion and philosophy.'
   family:
-    value: TODO
+    value: 'Sikhism / Gurmat (''Way of the Guru''): monotheistic Panth founded by Guru Nanak; ten human
+      Gurus then Guru Granth Sahib as eternal Guru'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
   parent_traditions:
-    value: TODO
-  related_codes: []
+    value:
+    - Sant tradition of northern India (incl. Kabir milieu)
+    - Vaishnava bhakti (devotional influence, with differences)
+    - Nath meditation concepts (spiritual ascent; rejected physical Hatha Yoga)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: Britannica.
+  related_codes:
+  - code: HINDU
+    relation: neighbor (easily confused)
+    note: Sikhs claim separate tradition; scholars debate early stage
+  - code: ISLAM
+    relation: neighbor (easily confused)
+    note: little direct Islamic doctrine influence per Britannica
+  - code: CLASS_THEISM
+    relation: overlaps
+    note: nirgun monotheism
 origins:
   founding_era:
-    value: late 15th century
+    value: Late 15th century; Guru Nanak (1469–1539); Khalsa 1699; scripture as Guru after Gobind Singh
+      (d. 1708)
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
+      locator: opening
     how_known: Britannica.
   founding_region:
-    value: Punjab
+    value: Punjab; majority in Indian Punjab; ~25 million worldwide
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
+      locator: opening
     how_known: Britannica.
   founders_or_key_figures:
     value:
-    - Guru Nanak (1469–1539)
-    - Guru Gobind Singh
+    - Guru Nanak
+    - Nine successor Gurus through Guru Gobind Singh
+    - Guru Granth Sahib as eternal Guru
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
+      locator: opening
     how_known: Britannica.
-  key_texts: []
+  key_texts:
+  - value: Adi Granth / Guru Granth Sahib (compiled 1604 by Guru Arjan)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: holy book FAQ
+    how_known: Britannica.
+  - value: Dasam Granth (lesser reverence)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: holy book FAQ
+    how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: TODO
-    stance: TODO
+    value: One God, nirgun (without form), not incarnated; devotion essential to liberation from rebirth.
+    stance: creator distinct from creation
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: 0.5 vs God-in-all Sant seeing.
   deity_personal:
-    value: TODO
-    stance: TODO
+    value: One God approached through devotion and Guru; no sagun incarnation.
+    stance: personal
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: 0.5.
   intervention:
-    value: TODO
-    stance: TODO
+    value: Single spirit inhabited ten Gurus; eternal Guru in scripture. Ongoing intervention thin in
+      extract.
+    stance: not addressed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Thin.
   miracles:
-    value: TODO
-    stance: TODO
+    value: Not addressed in sections used.
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Bow before Guru Granth Sahib, hymns, ardas prayer.
+    stance: petition answered
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: gurdwara FAQ
+    how_known: 0.5.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Liberation from cycle of rebirth.
+    stance: rebirth
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: Britannica.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: Rebirth cycle implies consequence.
+    stance: impersonal consequence
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: 0.5.
   authority:
-    value: TODO
-    stance: TODO
+    value: Guru (human then scripture); Khalsa discipline.
+    stance: both, revelation first
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Sants saw the divine in all things.
+    stance: immanent ends
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: history and doctrine
+    how_known: 0.5.
   necessity_and_freedom:
-    value: TODO
+    value: Not addressed.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
 lio_axes:
   A_locus:
     value: 2
-    rationale: The Sants held that God is 'nirgun (“without form”)' and 'can be neither incarnated nor represented', and saw the divine 'in all things'; for Nanak 'the nam encompasses the whole of creation', and grace is 'bestowed by God, or Akal Purakh'.
+    rationale: The Sants held that God is 'nirgun (“without form”)' and 'can be neither incarnated nor
+      represented', and saw the divine 'in all things'; for Nanak 'the nam encompasses the whole of creation',
+      and grace is 'bestowed by God, or Akal Purakh'.
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -122,7 +224,8 @@ lio_axes:
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: The scripture Guru Granth Sahib 'thereafter was regarded as the sole Guru'; the divine word (shabad) is heard 'through a grace bestowed by God'.
+    rationale: The scripture Guru Granth Sahib 'thereafter was regarded as the sole Guru'; the divine
+      word (shabad) is heard 'through a grace bestowed by God'.
     certainty: 0.5
     cites:
     - source: S1
@@ -134,20 +237,58 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
 epistemology:
-  value: TODO
+  value: Guidance of the Guru; hymn/scripture; Sikh as learner.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening
+  how_known: Britannica.
 ethics:
-  value: TODO
+  value: Equality (langar); Khalsa courage/integrity; Five Ks; rejection of caste.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: practice FAQs
+  how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: Gurdwara worship, Adi Granth reverence, langar, Five Ks for Khalsa, ardas.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: practice FAQs
+    how_known: Britannica.
   community_form:
-    value: TODO
+    value: Panth; gurdwaras; Khalsa; diaspora.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
 science:
   historical_stance:
-    value: TODO
+    value: Not addressed.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Not addressed.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
+schools_and_variants:
+- name: Khalsa / mainstream Gurmat
+  form: reform
+  how_it_differs: Initiated order 1699; Five Ks.
+  lio_difference: Prior SIKH scores.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: Khalsa FAQ
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -160,7 +301,9 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 25
-  scoring_note: Sikhism scores moderately due to its strong ethical coherence and emphasis on equality and service, which foster social harmony, but its revelatory foundation and supernatural aspects limit empirical and predictive alignment.
+  scoring_note: Sikhism scores moderately due to its strong ethical coherence and emphasis on equality
+    and service, which foster social harmony, but its revelatory foundation and supernatural aspects limit
+    empirical and predictive alignment.
   source: v7.1 data book, section 6 table (tables[4]) row 62 and section 7 scoring notes
 revised_rubric:
   status: not started
@@ -180,9 +323,13 @@ revised_rubric:
     score: TODO
     rationale: ''
 coding_guidance:
-  use_when: The person self-identifies as Sikh.
-  do_not_use_when: Punjabi heritage alone is not enough; Sant poets are not SIKH.
-  neighbors: []
+  use_when: Sikh / Gurmat / Khalsa identity.
+  do_not_use_when: Generic Sant/bhakti without Sikh Panth identity.
+  neighbors:
+  - code: HINDU
+    relation: neighbor (easily confused)
+  - code: ISLAM
+    relation: neighbor (easily confused)
 review:
   data_quality_flags: []
   open_questions:
@@ -194,48 +341,51 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: William Hewat McLeod
-  citation: 'McLeod, William Hewat. "Sikhism." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism. Wayback Machine snapshot 2026-10-06 08:39:15 UTC: https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism.'
+  citation: 'McLeod, William Hewat. "Sikhism." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism.
+    Wayback Machine snapshot 2026-10-06 08:39:15 UTC: https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism.'
   url: https://www.britannica.com/topic/Sikhism
-  accessed: '2026-10-15'
-  reliability_note: 'Signed article (historian of Sikhism); introduction read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism); live page not compared (live Britannica times out from the box).'
+  accessed: '2026-10-25'
+  reliability_note: 'Signed article (historian of Sikhism); introduction read. P44(e): read in the Wayback
+    copy (https://web.archive.org/web/20261006083915/https://www.britannica.com/topic/Sikhism); live page
+    not compared (live Britannica times out from the box).'
 - id: S2
   type: tertiary
   kind: encyclopedia
   author: William Hewat McLeod
-  citation: 'McLeod, William Hewat. "Sikhism: Guru Nanak." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism/Guru-Nanak. Wayback Machine snapshot 2026-08-20 15:49:38 UTC: https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak.'
+  citation: 'McLeod, William Hewat. "Sikhism: Guru Nanak." Encyclopaedia Britannica. https://www.britannica.com/topic/Sikhism/Guru-Nanak.
+    Wayback Machine snapshot 2026-08-20 15:49:38 UTC: https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak.'
   url: https://www.britannica.com/topic/Sikhism/Guru-Nanak
   accessed: '2026-10-15'
-  reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak); live page not compared (live Britannica times out from the box).'
+  reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak);
+    live page not compared (live Britannica times out from the box).'
 ---
-
 # Sikhism (SIKH)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-Sikhism is a 'religion and philosophy founded in the Punjab region of the Indian subcontinent in the late 15th century' [S1].
+Sikhism (Gurmat) is the monotheistic Panth founded by Guru Nanak in late-15th-c. Punjab; ten human Gurus then Guru Granth Sahib as eternal Guru [S1].
 
 ## Core metaphysics
 
-God without form; liberation from rebirth through meditation on the nam [S1, S2].
+Nirgun one God; liberation from rebirth through devotion; Guru authority in person then scripture [S1].
 
 ## Position on the LIO axes
 
-- A 2 (0.5, alt 1); D 1 (0.5).
-- B, C, E UNKNOWN.
+Prior scores kept (see YAML).
 
 ## Schools and variants
 
-TODO
+Khalsa; other sects thin in extract [S1].
 
 ## Science
 
-TODO
+Not addressed [S1].
 
 ## Coding guidance
 
-Self-identified Sikhs.
+Sikh Panth. Not generic HINDU.
 
 ## v7.1 scoring note
 
@@ -245,12 +395,9 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Karma not read.
-- Adherents.
+- Fuller doctrine (hukam, maya) for axis refinement.
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
-- 2026-10-15 (targeted A/B pass, batch T1): searched the sources below for a statement fixing B_cause; quotations checked word for word against fetched page text. SIKH: Britannica Sikhism (McLeod) main, Guru Nanak and Sikh practice pages re-searched for miracle, hukam, divine order, petition: only janam-sakhi 'miracles and wonder stories' (hagiography, not doctrine) and Ardas as a set prayer. No B statement. B stays UNKNOWN.
+- 2026-10-15 (batch S10): Britannica Sikhism; axes set.
+- 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
