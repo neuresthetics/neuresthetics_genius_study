@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,9 @@ record:
     by: Grok Bot
     summary: Score A_locus 0 (0.7) and C_ledger 1 (0.5) from sources on file (orishas personal; ritual
       reciprocity). B/D/E already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Santería. No LIO moves.
 identity:
   id: SANTER
   v7_1_number: 56
@@ -178,13 +181,14 @@ metaphysics:
       locator: Ifá; initiation
     how_known: Divination/initiation as revelation-like authority.
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
+    value: 'Initiatory priesthood (santeros/santeras, babalawos) holds ritual knowledge; clients still
+      under orisha reciprocity and taboos — not a moral free pass.'
+    stance: some
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Santería.'
   teleology_in_nature:
     value: Orishas as personified natural forces — immanent sacred powers.
     stance: immanent ends
@@ -389,6 +393,12 @@ sources:
   reliability_note: 'Signed article (scholar of Santería); full short article read. P44(e): read in the
     Wayback copy (https://web.archive.org/web/20261012063221/https://www.britannica.com/topic/Santeria);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Santería." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Santer%C3%ADa'
+  accessed: '2026-10-25'
 ---
 # Santería (Lucumí/Regla de Ocha) (SANTER)
 
@@ -438,3 +448,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/C scored.
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Santería.
