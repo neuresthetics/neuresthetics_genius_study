@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Shukla & Sarma 1976 critical edition English (IA Aryabhatiya1976 v1 PDF text layer) as S5 — independent of Clark 1930. Dasagitika 1: 'God Brahma… one and many… the real God, the Supreme Brahman'; Gola 49: 'By the grace of Brahma…'. Add S5 to A value and alt cites → A support single→corroborated (P48). B already corroborated → hollow→filled (still faded @0.5). Certainty stays 0.5 (van der Waerden Dasagitika doubt). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #144, F 3, rank 149). Opened Clark 1930 Chicago University Press PDF/OCR via Internet Archive (S4; TheAryabhatiyaOfAryabhata): confirmed Wikisource readings of Dasagitika A, Gola 47, Gola 49–50; added Ganitapada 1 (Brahman reverence outside the Dasagitika authenticity dispute) and Gola 37 (Moon obscures Sun; Earth's shadow obscures Moon — natural eclipse mechanism). Clark preface defends Dasagitika against Kaye (Brahmagupta quotes stanzas 1, 3, 4, 5); van der Waerden doubt (S1 MacTutor: Introduction later; some verses added) still flagged — which Gola verses he rejects remains unspecified. Shukla/Sarma 1976 English (IA) OCR unusable this pass. primary HINDU stays 0.5; A 1 stays 0.5 alt 2 (support single); B 3 stays 0.5 alt 4 (P35/P16: Gola 37/47 are the natural eclipse account, not a lift past 0.5) but basis inference_from_work → written_profession; support single → corroborated (S4/S2 + S1). mid BELOW_THRESHOLD; plotted faded. P47 source_quality on S1–S4. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): B basis now inference_from_work (P24; ceiling unchanged); statements verified_against 'scholarly edition' (Clark's translation read directly, not a secondary quotation); coder_notes add the Gola 49–50 condition. RQ-Z4-1: invocation carries primary and A at 0.5. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 149). Basics from MacTutor (O'Connor and Robertson). Own words from the Aryabhatiya in W. E. Clark's translation (1930) via Wikisource: Dasagitika opening invocation ('Having paid reverence to Brahman, who is one ... many ..., the true deity, the Supreme Spirit'; Clark's parenthetical glosses not counted), Gola 47 (natural account of a solar eclipse), Gola 49 ('By the grace of God'), Gola 50 (astronomy 'formerly was revealed by Svayambhu'). Van der Waerden doubts the Dasagitika's authenticity (MacTutor), so the invocation is flagged. A scientist (P30: astronomy). Span 499. Age 23 from his own statement. primary_system HINDU (0.5); A 1 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
@@ -89,12 +90,12 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.5
-      support: single
-      cites: [{source: S4, locator: "Dasagitika A; Gola 49"}]
-      how_known: "Clark 1930 Chicago (S4 IA PDF/OCR; matches Wikisource S2, same translation so not a second independent source): Dasagitika A Brahman 'one ... many', 'the Supreme Spirit'; Gola 49 'grace of God'. Clark's parentheses (creator / manifestations, after Paramesvara) not counted. Support single (P48). Dasagitika authenticity doubted by van der Waerden (S1). 0.5."
-      rationale: "Brahman 'one ... many', 'the Supreme Spirit', with 'the grace of God': a supreme deity with some immanence. Alternative 2: one-and-many read as panentheist. Ganitapada 1 Brahman reverence is outside the Dasagitika dispute but too thin alone to lift certainty."
+      support: corroborated
+      cites: [{source: S4, locator: "Dasagitika A; Gola 49"}, {source: S5, locator: "Gitika §1; Gola §49"}]
+      how_known: "Two independent scholarly English editions of the Aryabhatiya: Clark 1930 (S4/S2) — Brahman 'one ... many', 'the Supreme Spirit'; Gola 49 'grace of God' — and Shukla & Sarma 1976 (S5) — 'God Brahma… one and many… the real God, the Supreme Brahman'; Gola 49 'By the grace of Brahma…'. Clark parentheses not counted. Distinct translators/editions → corroborated (P48). Certainty stays 0.5: van der Waerden doubts Dasagitika authenticity (S1)."
+      rationale: "Brahman / God Brahma as 'one and many', 'real God' / 'Supreme Spirit' / 'Supreme Brahman', with grace at close: a supreme deity with some immanence. Alternative 2: one-and-many read as panentheist (same passages). Ganitapada 1 still thin alone."
       alternatives:
-        - {value: 2, note: "One and many as panentheism.", cites: [{source: S4, locator: "Dasagitika A"}]}
+        - {value: 2, note: "One and many as panentheism.", cites: [{source: S4, locator: "Dasagitika A"}, {source: S5, locator: "Gitika §1"}]}
     B_cause:
       value: 3
       basis: written_profession
@@ -118,6 +119,22 @@ worldview:
       kind: "written profession (public)"
       verified_against: "scholarly edition"
       verified_on: 2026-10-24
+    - text: "Having paid obeisance to God Brahma -who is one and many, the real God, the Supreme Brahman - Aryabhata sets forth the three, viz., mathematics (ganita), reckoning of time (kalakriya) and celestial sphere (gola)."
+      cites: [{source: S5, locator: "Gitika Section §1 (Shukla & Sarma 1976 English)"}]
+      date: "499"
+      context: "Same Dasagitika opening in the critical edition English (independent of Clark). Authenticity doubt (van der Waerden via S1) still applies."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-25
+    - text: "By the grace of Brahma, the precious jewel of excellent knowledge (of astronomy) has been brought out by me by means of the boat of my intellect from the sea of true and false knowledge by diving deep into it."
+      cites: [{source: S5, locator: "Gola §49 (Shukla & Sarma 1976 English)"}]
+      date: "499"
+      context: "Gola closing acknowledgement; Shukla renders 'grace of Brahma' where Clark has 'grace of God'."
+      axes: [A_locus]
+      kind: "written profession (public)"
+      verified_against: "scholarly edition"
+      verified_on: 2026-10-25
     - text: "Having paid reverence to Brahman, the Earth, the Moon, Mercury, Venus, the Sun, Mars, Jupiter, Saturn, and the asterisms, Aryabhata sets forth here [in this work] the science which is honored at Kusumapura."
       cites: [{source: S4, locator: "Ganitapada 1 (p. 21 Clark)"}]
       date: "499"
@@ -159,7 +176,7 @@ worldview:
       verified_against: "scholarly edition"
       verified_on: 2026-10-24
   changes_over_life: []
-  coder_notes: "Dasagitika authenticity (van der Waerden via S1) bears on primary and A; RQ-Z4-1 holds them at 0.5. Clark 1930 preface defends Dasagitika against Kaye (Brahmagupta quotes), but van der Waerden's later argument (Introduction written later; some verses added) is a separate doubt — MacTutor does not name which Gola verses. Ganitapada 1 Brahman reverence is outside Dasagitika but thin. Gola 37 strengthens B evidence as written_profession; P35/P16 keep B at 0.5. Chart stays faded / hollow (A single, both axes 0.5)."
+  coder_notes: "Dasagitika authenticity (van der Waerden via S1) bears on primary and A; RQ-Z4-1 holds them at 0.5. 2026-10-25: Shukla/Sarma 1976 (S5) independently confirms Dasagitika 1 and Gola 49 — A corroborated → hollow→filled (still faded). Clark preface defends Dasagitika against Kaye; van der Waerden doubt remains. Ganitapada 1 thin. B stays 3@0.5 (P35/P16)."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -240,11 +257,21 @@ sources:
     reliability_note: "Scholarly translation of the Sanskrit treatise; IA PDF OCR used this pass (Dasagitika A, Ganitapada 1, Gola 37/47/49–50, preface on authenticity vs Kaye)."
     source_quality: "scholarly edition or monograph"
     used_for: [worldview, timing, review]
+  - id: S5
+    type: primary
+    kind: "published work by the subject"
+    author: "Aryabhata, ed./tr. K. S. Shukla and K. V. Sarma"
+    citation: "Aryabhata. Aryabhatiya of Aryabhata, critically edited with introduction, English translation and notes by Kripa Shankar Shukla, in collaboration with K. V. Sarma (Indian National Science Academy, 1976). Internet Archive Aryabhatiya1976, v1 PDF text layer."
+    url: "https://archive.org/details/Aryabhatiya1976"
+    accessed: 2026-10-25
+    reliability_note: "Critical edition English independent of Clark 1930; Gitika §1 and Gola §49 read in IA v1 text layer this pass."
+    source_quality: "scholarly edition or monograph"
+    used_for: [worldview, review]
 ---
 
 ## Summary
 
-Aryabhata (476–c. 550), astronomer and mathematician [S1]. Draft: HINDU (0.5); A 1 (0.5, alt 2); B 3 (0.5, alt 4). Plotted (faded).
+Aryabhata (476–c. 550), astronomer and mathematician [S1]. Draft: HINDU (0.5); A 1 (0.5, alt 2); B 3 (0.5, alt 4). Plotted (faded filled).
 
 ## Life and work
 
@@ -260,7 +287,7 @@ Not known.
 
 ## Adult working worldview
 
-Invocation of Brahman (Dasagitika A; also Ganitapada 1 mangala); astronomy revealed by Svayambhu and rescued by his own knowledge; natural eclipse by the Earth's shadow [S4, S2].
+Invocation of Brahman / God Brahma (Dasagitika A; Clark S4/S2 and Shukla/Sarma S5); Ganitapada 1 mangala; astronomy revealed by Svayambhu and rescued by his own knowledge; natural eclipse by the Earth's shadow [S4, S2, S5].
 
 ## Heritage (context only)
 
@@ -277,7 +304,7 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 ## Open questions
 
 - Which verses van der Waerden takes as later additions (esp. Gola 49–50).
-- Shukla/Sarma 1976 English when clean text is available.
+- Sanskrit text of key verses (Shukla/Sarma 1976 English now used as S5).
 - Sanskrit text of key verses.
 
 ## Research log
