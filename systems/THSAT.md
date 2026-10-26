@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,10 @@ record:
     by: Grok Bot
     summary: 'Score B1 C1 D2 E1 (0.5) from sources on file (theistic Satanism: personal Satan; occult;
       mixed authority). A already scored.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and teleology; deepen practice note from Wikipedia Theistic Satanism.
+      No LIO moves.
 identity:
   id: THSAT
   v7_1_number: 73
@@ -148,13 +152,14 @@ metaphysics:
       locator: Modern religious Satanism
     how_known: Britannica.
   miracles:
-    value: Not fixed across groups. Some occult Satanic currents accept magic; not universal.
-    stance: varies by school
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: 'Modern religious Satanism; occult Q&A material'
-    how_known: Britannica notes magic in some groups.
+    value: Magic and convening with Satan/Set or adversarial deities commonly affirmed in theistic streams;
+      forms vary widely. Distinct from LaVeyan symbolic atheism.
+    stance: affirmed
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening
+    how_known: '0.5 — Wikipedia: magic as prominent characteristic.'
   petition_and_prayer:
     value: Worship of a literal Satan/Lucifer/Set; forms vary. Not described as a single petition theology.
     stance: varies by school
@@ -190,21 +195,19 @@ metaphysics:
       locator: Modern religious Satanism
     how_known: Britannica emphasizes variety and solitude of many practitioners.
   reserved_exemptions:
-    value: Not addressed as shared cosmology.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: Modern religious Satanism
-    how_known: Britannica silence.
+    value: Varies by group. Some currents claim special gnosis or adversarial privilege against Abrahamic
+      norms; others are solitary magicians without a shared exemption doctrine. Not a single church rule.
+    stance: varies by school
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia: fragmented groups.'
   teleology_in_nature:
-    value: Not addressed as shared doctrine.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: Modern religious Satanism
-    how_known: Britannica silence.
+    value: Not a shared designer-teleology doctrine. Some streams borrow pre-Christian adversarial gods;
+      others invert Christian cosmology. No unified natural-purpose thesis in sources read.
+    stance: varies by school
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia umbrella characterization.'
   necessity_and_freedom:
     value: Romantic rebel-Satan theme (challenge to arbitrary authority) informs some currents; not a
       shared free-will metaphysics.
@@ -308,21 +311,17 @@ ethics:
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: Worship of literal Satan/Lucifer/Set; often solitary via Internet. Temple of Set as an organized
-      theistic body. Ritual details vary widely.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: Modern religious Satanism
-    how_known: Britannica.
+    value: 'Varied: ritual magic, personal devotion to Satan or adversarial gods, group cabals. Few large
+      stable institutions; many self-marginalized small groups.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia.'
   community_form:
-    value: Typically solitary practitioners communicating online; Temple of Set is an organized exception.
-      Not one church.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: Modern religious Satanism
-    how_known: Britannica.
+    value: 'Loose affiliations, independent groups, and online networks more than a mass church. Distinct
+      from atheistic Church of Satan / The Satanic Temple.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
     value: Occult / supernaturalist; not a natural-science tradition. Distinct from atheistic Satanisms
@@ -433,6 +432,12 @@ sources:
   reliability_note: 'Signed article (historian of modern Paganism and Satanism); the modern religious
     Satanism section read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012041708/https://www.britannica.com/topic/Satanism);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Theistic Satanism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Theistic_Satanism'
+  accessed: '2026-10-25'
 ---
 # Theistic Satanism (Joy of Satan or similar) (THSAT)
 
@@ -480,3 +485,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A_locus scored 0 (0.7).
 - 2026-10-25: B/C/D/E scored.
+- 2026-10-25: Filled exemptions/teleology/miracles; practice from Wikipedia Theistic Satanism.
