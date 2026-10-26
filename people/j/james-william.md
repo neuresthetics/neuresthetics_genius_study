@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Human Immortality (1898, IA humanimmortalit00jame) as S7 — within span. Own endorsement that some psychical phenomena including 'providential leadings in answer to prayer' and 'instantaneous healings' are facts; transmission theory allows 'exceptional waves' / power from without. Add S7 to B value cites; clear exclusive S1 from P35 alt cites (note retained) → B support single→corroborated (beside Varieties Postscript S3). A already corroborated → faded hollow→filled. Certainty stays 0.5 (named alt 3). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #213/228, F 3, rank 226). Goals: firm A and B from Varieties / Will to Believe / letters; pragmatism/pluralism may keep A mixed; do not force plot; P20/P38 if agnostic. Opened Varieties Postscript (S3 Wikisource/Gutenberg): own piecemeal supernaturalism; transmundane energies / God produce immediate effects in nature; larger power other and continuous; rejects popular Christianity and scholastic theism. Will to Believe (S4): Reflex Action theism (God as mental personality / Thou; ultimate opacity); Will to Believe essay refuses agnostic veto. Pragmatism lecture VIII (S5): hypothesis of God works / not an atheistic system. Wikipedia dual-bio (S6). A BELOW_THRESHOLD → 2 @ 0.5 written_profession, support corroborated (S3+S4), alt 1. B 3 @ 0.5 single → 2 @ 0.5 written_profession (piecemeal miracles/providence as live), support single, alt 3 (P35 working-science). primary_system BELOW_THRESHOLD → PRAG @ 0.5 written_profession (alt PANENT). Not AGNOS (P20/P38): he adopts the God hypothesis and refuses agnostic rules. mid_basin stays BELOW_THRESHOLD (A 2 between branches; both @ 0.5). Chart-moving YES: not plotted → faded hollow at next refresh (A corroborated, B single → hollow; both faded @ 0.5). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit fixes: 'ultimate opacity' quote dated 1881 (reprinted 1897), before the span (no score change). RQ-AB1-1, v8's call on the auditor's advice: scientist under the P35 theories-of-mind addendum, B 3 at 0.5, alt 4; 'piecemeal supernaturalism' (Varieties postscript) noted as a B 2 lead. Still not plotted (A BELOW_THRESHOLD)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 226). Source: SEP 'William James' (Russell Goodman, 2021, read in full). Lasting: The Principles of Psychology (1890), which 'influenced generations of thinkers in Europe and America' (S1), and Pragmatism (1907), 'influential', in the 'pragmatist tradition that he founded (along with Charles Peirce)' (S1). Span 1890–1907, age 48. Worldview: he advocated a 'theism' positing 'an ultimate opacity in things' ('Reflex Action and Theism', 1881, reprinted 1897) and wrote 'if the hypothesis of God works satisfactorily in the widest sense of the word, it is true' (Pragmatism, 1907); S1: he 'oscillated' between a naturalistic 'Science of Religion' and 'an altogether supernatural domain'. primary_system BELOW_THRESHOLD (theistic and pragmatist leads); A BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. B 3 at 0.5, alt 4 (P35; RQ-AB1-1). Not plotted. Draft, not reviewed."}
@@ -110,12 +111,12 @@ worldview:
       value: 2
       basis: written_profession
       certainty: 0.5
-      support: single
-      cites: [{source: S3, locator: "Postscript (piecemeal supernaturalism; miracles and providential leadings; transmundane energies in natural world)"}]
-      how_known: "Own Varieties Postscript (1902, inside span) is a direct statement on law and exception, so P35's working-science-only cap does not bind the value. Support single (P48): only S3 carries the B 2 claim (SEP S1 is background for the named P35 alt, not an agreeing B 2 source). Certainty 0.5: named alt 3; hedged 'God, if you will'; lasting contribution is also lawful psychology (Principles)."
-      rationale: "Scored on his account of nature (P6). Piecemeal / crasser supernaturalism 'admits miracles and providential leadings' and interpolates ideal influences 'among the forces that causally determine the real world's details'; he adopts the hypothesis that 'transmundane energies, God, if you will, produced immediate effects within the natural world' (S3). That is B 2: lawfulness with exceptions that are not limited (P27). Named alternative: 3, if B is taken only from working psychology science under P35 (Principles; RQ-AB1-1 scientist) with no own no-exception claim — the create-pass score, now demoted to alt because the Postscript is an own statement."
+      support: corroborated
+      cites: [{source: S3, locator: "Postscript (piecemeal supernaturalism; miracles and providential leadings; transmundane energies in natural world)"}, {source: S7, locator: "Human Immortality pp. 24–27 (providential leadings; instantaneous healings; exceptional waves)"}]
+      how_known: "Two independent own works inside the span: Varieties Postscript (S3, 1902) and Human Immortality (S7, 1898 Ingersoll lecture). Both are direct statements on exception / influx into the natural world, so P35's working-science-only cap does not bind the value. Independent source ids → corroborated (P48). Certainty 0.5: named alt 3; hedged 'God, if you will'; lasting contribution is also lawful psychology (Principles)."
+      rationale: "Scored on his account of nature (P6). Varieties: piecemeal / crasser supernaturalism 'admits miracles and providential leadings' and interpolates ideal influences among causal forces; transmundane energies 'produced immediate effects within the natural world' (S3). Human Immortality: to his own mind some psychical phenomena — including 'providential leadings in answer to prayer' and 'instantaneous healings' — are facts; transmission theory allows 'exceptional waves occasionally pouring over the dam' and a 'power from without' (S7). That is B 2: lawfulness with exceptions that are not limited (P27). Named alternative: 3, if B is taken only from working psychology science under P35 (Principles; RQ-AB1-1 scientist) with no own no-exception claim."
       alternatives:
-        - {value: 3, note: "P35 working-science reading of Principles (scientist under theories-of-mind addendum); alt would itself name 4 under P35.", cites: [{source: S1, locator: "1. Chronology; 3"}]}
+        - {value: 3, note: "P35 working-science reading of Principles (scientist under theories-of-mind addendum; SEP S1 chronology/background). Alt would itself name 4 under P35. No exclusive alt cite — the disagreement is a reading rule over Principles, not a second primary that contests S3/S7.", cites: []}
     C_ledger: {value: UNKNOWN, how_known: "Immortality left open in Varieties Postscript; no scored reward/punishment ledger in sources read (P19)."}
     D_authority: {value: BELOW_THRESHOLD, how_known: "Will to Believe defends passional decision for religious hypotheses against a scientific evidence-veto (S4), and Pragmatism tests by working consequences (S5), but he does not rank revelation against observation as two domains (P27 D 2). Too indirect for a 0.5 score (P19)."}
     E_scope: {value: BELOW_THRESHOLD, how_known: "Not scored from working science alone (P19). Piecemeal prayerful-communion effects are personal regenerative claims, not a clear same-rules vs in-group-favor reading."}
@@ -175,8 +176,25 @@ worldview:
       verified_against: "unofficial web copy"
       verified_on: 2026-10-24
       note: "Blocks AGNOS / P38 path. TODO printed edition page (P30)."
+    - text: "I refer to those obscure and exceptional phenomena reported at all times throughout human history… such phenomena, namely, as religious conversions, providential leadings in answer to prayer, instantaneous healings, premonitions, apparitions at time of death, clairvoyant visions or impressions, and the whole range of mediumistic capacities… if any of these things are facts, — and to my own mind some of them are facts, — we may not suppose that they can occur without preliminary brain-action."
+      cites: [{source: S7, locator: "Human Immortality (1898) pp. 24–25"}]
+      date: "1898"
+      context: "Ingersoll Lecture, Human Immortality: Two Supposed Objections to the Doctrine; defending the transmission theory of consciousness."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-25
+      note: "IA humanimmortalit00jame PDF/text."
+    - text: "We need only suppose the continuity of our consciousness with a mother sea, to allow for exceptional waves occasionally pouring over the dam."
+      cites: [{source: S7, locator: "Human Immortality (1898) p. 27"}]
+      date: "1898"
+      context: "Same lecture; exceptional influx under the transmission theory."
+      axes: [B_cause]
+      kind: "written profession (public)"
+      verified_against: "archive scan (OCR only)"
+      verified_on: 2026-10-25
   changes_over_life: []
-  coder_notes: "D1 coder's calls: (1) Not AGNOS under P20/P38 — he adopts God hypothesis and refuses agnostic rules. (2) B moves from P35 3@0.5 to written_profession 2@0.5 because Postscript is an own law-and-exception statement; P35 alt kept. (3) A 2 mixed rather than 1 — continuous larger-power + possible polytheism balance Reflex Action otherness. (4) primary PRAG not PANENT — founded lasting tradition; PANENT alt for metaphysics. (5) Chart-moving YES to faded hollow — figures/ not refreshed. Letters unread this pass."
+  coder_notes: "D1 coder's calls: (1) Not AGNOS under P20/P38 — he adopts God hypothesis and refuses agnostic rules. (2) B moves from P35 3@0.5 to written_profession 2@0.5 because Postscript is an own law-and-exception statement; P35 alt kept. (3) A 2 mixed rather than 1 — continuous larger-power + possible polytheism balance Reflex Action otherness. (4) primary PRAG not PANENT — founded lasting tradition; PANENT alt for metaphysics. (5) Chart-moving YES to faded hollow — figures/ not refreshed. Letters unread this pass. 2026-10-25: Human Immortality (S7) corroborates B → faded filled."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
@@ -283,6 +301,16 @@ sources:
     source_quality: "other"
     reliability_note: "P50 dual-bio / heritage dates only; not used for worldview axis scores."
     used_for: [identity, basics, childhood, heritage]
+  - id: S7
+    type: primary
+    kind: "published work by the subject"
+    author: "William James"
+    citation: "James, William. Human Immortality: Two Supposed Objections to the Doctrine (Ingersoll Lecture, 1897/1898). Boston: Houghton, Mifflin, 1898. Internet Archive humanimmortalit00jame."
+    url: "https://archive.org/details/humanimmortalit00jame"
+    accessed: 2026-10-25
+    source_quality: "primary / own words"
+    reliability_note: "Own published lecture within span; IA PDF OCR read this pass for providential leadings / exceptional waves (B)."
+    used_for: [worldview]
 ---
 
 ## Summary
