@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Score E_scope 1 (0.5) from Britannica Yazīdī (created separately; endogamy; purity taboos).
       Deepen B_cause UNKNOWN→1 (0.5) for sanjaq/peacock worship ritual power. A/C/D unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen practice/festivals, epistemology (qewls), cosmogony detail, schools from Wikipedia
+      Yazidism. Keep Britannica S1. No LIO moves.'
 identity:
   id: YAZID
   v7_1_number: 66
@@ -128,14 +132,15 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Supreme creator god made the world then ended involvement; world left to seven divine beings
-      headed by Malak Ṭāʾūs (Peacock Angel).
+    value: 'Monotheism: remote creator (Xwedê) entrusts the world to seven self-emanated angels headed
+      by Tawûsî Melek (Peacock Angel). Divine triad of God / Tawûsî Melek / Sheikh Adi / Sultan Ezid hypostases;
+      Xudans of natural elements. Peacock Angel is not Satan in Yazidi belief.'
     stance: creator distinct from creation
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: cosmogony paragraph
-    how_known: Britannica.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Principal beliefs; Festivals
+    how_known: '0.8 — Wikipedia Yazidism summarizing Asatrian/Arakelova/Allison.'
   deity_personal:
     value: Personal supreme creator (withdrawn); personal Peacock Angel worshipped in peacock form; Sheikh
       ʿAdī divinized via metempsychosis.
@@ -171,14 +176,15 @@ metaphysics:
       locator: cosmogony; closing
     how_known: Worship and pilgrimage; petition-answer theology not explicit — 0.5.
   afterlife:
-    value: Metempsychosis (transmigration) for progressive purification; heaven and hell also in mythology;
-      Sheikh ʿAdī achieved divinity through metempsychosis.
+    value: 'Metempsychosis (kirasgorîn, change of shirt) for progressive purification; cyclic bedîl/dewr
+      alongside linear eschatology; heaven/hell mythology also present. Collective purification floods
+      (tofan) through water, fire, air.'
     stance: rebirth
-    certainty: 1.0
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: metempsychosis paragraph
-    how_known: Britannica. Heaven/hell coexist with rebirth.
+    - source: S2
+      locator: Rebirth and concept of time
+    how_known: '0.7 — Wikipedia.'
   moral_ledger:
     value: Breaking divine laws expiated by metempsychosis; heaven and hell also present.
     stance: personal reward and punishment
@@ -188,14 +194,14 @@ metaphysics:
       locator: metempsychosis paragraph
     how_known: "Coder's reading; not karma-type law per prior P44(d) note on file."
   authority:
-    value: 'Sacred scriptures (with oral-tradition caveat), Kurdish hymns, chief sheikh as supreme religious
-      head; tradition and revelation over public science.'
+    value: Oral qewls (hymns) as highest authority; Baba Sheikh and Mir; caste lineages (sheikh/pir/murid);
+      written Mishurs and debated Black Book / Book of Revelation secondary.
     stance: tradition or ancestors
     certainty: 0.7
     cites:
-    - source: S1
-      locator: opening; closing
-    how_known: "Coder's reading of Britannica."
+    - source: S2
+      locator: Yazidi sacred texts
+    how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
     value: Not addressed as physics exemptions. Myth of separate creation (Adam not Eve) and purity taboos
       structure community boundaries.
@@ -305,38 +311,38 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: Oral tradition and sacred books (with authenticity caveats); hymns; authority of chief sheikh.
-    Esoteric community knowledge; contact with outsiders discouraged.
+  value: Qewls orally transmitted by clergy; esoteric community knowledge; contact with outsiders historically
+    discouraged. Authenticity of published holy books debated; qewls now being collected into a written
+    corpus.
   certainty: 0.7
   cites:
-  - source: S1
-    locator: closing; purity
-  how_known: "Coder's reading."
+  - source: S2
+    locator: Yazidi sacred texts
+  how_known: '0.7 — Wikipedia.'
 ethics:
-  value: 'Religious purity: food taboos, blue clothing taboo, avoid pronouncing Shayṭān; endogamy; caste
-    system. Divine-law breaking expiated via metempsychosis.'
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: purity; metempsychosis
-  how_known: Britannica.
+  value: 'Religious purity (food and clothing taboos vary by community); endogamy and caste marriage rules;
+    divine-law breaking expiated via metempsychosis. Elements (fire, water, air, earth) not to be polluted.'
+  certainty: 0.7
+  cites: *id001
+  how_known: '0.7 — Wikipedia + prior Britannica.'
 practice:
   ritual_and_practice:
-    value: "Worship of Peacock Angel (peacock form; sanjaqs); annual pilgrimage to Sheikh ʿAdī's tomb\
-      \ at Lālish; purity taboos."
-    certainty: 1.0
+    value: Sun-facing prayer; baptism (mor kirin) at White Spring; annual Feast of the Assembly pilgrimage
+      to Lalish (tomb of Sheikh Adi); Çarşema Sor New Year; Îda Êzî; Tawûsgeran (peacock sanjaq tours);
+      village tiwafs. Animal sacrifice and fasting before Îda Êzî.
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: cosmogony; closing
-    how_known: Britannica.
+    - source: S2
+      locator: Festivals; Customs
+    how_known: '0.8 — Wikipedia.'
   community_form:
-    value: 'Endogamous; strict caste; chief sheikh (religious) and emir (secular); 200,000–1,000,000;
-      diaspora after persecution.'
-    certainty: 1.0
+    value: 'Endogamous castes: sheikhs, pirs, murids; Mir (secular) and Baba Sheikh (religious); headquarters
+      Lalish. Diaspora after persecution; Kurmanji language of liturgy.'
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: opening; history
-    how_known: Britannica.
+    - source: S2
+      locator: Religious organisation
+    how_known: '0.8 — Wikipedia.'
 science:
   historical_stance:
     value: Not a natural-science tradition. Avoidance of formal education noted historically as purity/contact
@@ -347,21 +353,30 @@ science:
       locator: purity
     how_known: "Coder's reading."
   current_stance:
-    value: Not addressed as modern science policy.
-    certainty: 1.0
+    value: Not a natural-science programme. Diaspora communities engage secular education; sources read
+      do not state an official science policy.
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Purity and taboos
+    how_known: '0.5 — thin.'
 schools_and_variants:
-- name: Yazidi community (Lālish-centered)
-  form: regional
-  how_it_differs: Single people/religion; caste internal differentiation rather than denominations.
-  lio_difference: A2 C2 D1 as scored; B E UNKNOWN.
-  certainty: 1.0
+- name: Iraqi / Sinjar–Lalish mainstream
+  form: popular
+  how_it_differs: Core community around Lalish and Sinjar; Adawiyya heritage via Sheikh Adi.
+  lio_difference: Axes as scored.
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: opening
+  - source: S2
+    locator: Overview
+- name: Caucasus / Armenia–Georgia diaspora streams
+  form: regional
+  how_it_differs: Long-settled communities; some converts to Christianity not accepted as Yazidi by others.
+  lio_difference: Little axis change; endogamy pressure may ease in diaspora.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: Purity and taboos
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -428,6 +443,12 @@ sources:
   reliability_note: 'Unsigned editors’ article (revised by Noah Tesch); full article read. P44(e): read
     in the Wayback copy (https://web.archive.org/web/20260915023031/https://www.britannica.com/topic/Yazidi);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Yazidism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Yazidism'
+  accessed: '2026-10-25'
 ---
 # Yazidi (YAZID)
 
@@ -477,3 +498,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice; D_authority 1 (0.5). Re-read Britannica.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: E_scope and B_cause scored at 0.5.
+- 2026-10-25: Deepened from Wikipedia Yazidism (tertiary).
