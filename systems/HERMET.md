@@ -2,25 +2,33 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
+      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
+      events). Salvation and moral community go on C_ledger.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S10, thin): filled from Britannica "Hermetic writings" (editors). A 1 (0.5, alt 2); D 1 (0.5, alt 0); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S10, thin): filled from Britannica "Hermetic writings" (editors). A
+      1 (0.5, alt 2); D 1 (0.5, alt 0); B, C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S10 audit fix: ancient-only scope added to A and D.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from Britannica Hermetic writings (via prior batch source + re-read content):
+      Corpus Hermeticum, popular vs learned Hermetism, gnosis/deification, Greco-Egyptian fusion. Keep
+      A=1 D=1; B C E UNKNOWN.'
 identity:
   id: HERMET
   v7_1_number: 61
@@ -31,116 +39,271 @@ identity:
 classification:
   kind:
     value: esoteric or occult tradition
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: article
-    how_known: '''works of revelation on occult, theological, and philosophical subjects''; ''It is unlikely, however, that there was any well-defined Hermetic community''.'
-  family:
-    value: TODO
-  parent_traditions:
-    value: TODO
-  related_codes: []
-origins:
-  founding_era:
-    value: mid-1st to end of 3rd century AD
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: article
-    how_known: '''probably dates from''.'
-  founding_region:
-    value: Greco-Egyptian culture
     certainty: 1.0
     cites:
     - source: S1
-      locator: article
+      locator: opening
+    how_known: 'Britannica: works of revelation on occult, theological, philosophical subjects.'
+  family:
+    value: 'Hermetica: Greco-Egyptian revelatory writings ascribed to Hermes Trismegistos (Thoth); popular
+      occult sciences and learned theology/philosophy'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
+  parent_traditions:
+    value:
+    - Egyptian Thoth cult
+    - Platonic, Stoic, and Neo-Pythagorean philosophies
+    - Hellenistic Greco-Egyptian culture
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; theological writings
+    how_known: Britannica.
+  related_codes:
+  - code: PLATO
+    relation: overlaps
+    note: Platonic dialogue form and philosophy
+  - code: THEOS
+    relation: neighbor (easily confused)
+    note: later reception
+  - code: KEMET
+    relation: neighbor (easily confused)
+    note: Egyptian setting but Greek philosophy; not Kemetic Orthodoxy
+  - code: ANTHRO
+    relation: neighbor (easily confused)
+    note: different modern path
+origins:
+  founding_era:
+    value: Collection written in Greek and Latin, probably mid-1st to end of 3rd century CE
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
+  founding_region:
+    value: Greco-Egyptian culture of Ptolemaic and Roman periods
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
     how_known: Britannica.
   founders_or_key_figures:
-    value: TODO
-  key_texts: []
+    value:
+    - Hermes Trismegistos / Thoth (ascribed author; legendary)
+    - Stobaeus (Anthologion fragments)
+    - Asclepius (Latin translation preserved among Apuleius)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; theological writings
+    how_known: Britannica.
+  key_texts:
+  - value: Corpus Hermeticum (17 treatises)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: theological writings
+    how_known: Britannica.
+  - value: Asclepius (Latin)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: theological writings
+    how_known: Britannica.
+  - value: Tabula Smaragdina (Emerald Tablet) — alchemy
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: popular Hermetism
+    how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: TODO
-    stance: TODO
+    value: 'Aim: deification or rebirth through gnosis of the one transcendent God, the world, and humankind.
+      Cosmos as unity with interdependent parts (sympathy/antipathy).'
+    stance: God in Nature and beyond it
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: popular; aim paragraph
+    how_known: Transcendent God + cosmos unity; stance 0.5 coder reading.
   deity_personal:
-    value: TODO
-    stance: TODO
+    value: One transcendent God; Hermes-Thoth as revealer. Personal vs impersonal absolute varies across
+      treatises.
+    stance: both / disputed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: aim paragraph
+    how_known: 0.5.
   intervention:
-    value: TODO
-    stance: TODO
+    value: Divine revelation required because assumed affinities could not be discovered by ordinary scientific
+      methods; occult practice intensely utilitarian.
+    stance: regular
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: popular Hermetism
+    how_known: Revelation for occult science; 0.5.
   miracles:
-    value: TODO
-    stance: TODO
+    value: Magic, alchemy, astrology as operative arts; not denied.
+    stance: affirmed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: popular Hermetism
+    how_known: Britannica.
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Revelatory dialogues; not a single petition theology.
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Thin.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Deification or rebirth of mortals through gnosis.
+    stance: personal afterlife
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: aim paragraph
+    how_known: Rebirth/deification language; 0.5 between rebirth and personal afterlife.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: Not a clear ledger doctrine in Britannica summary.
+    stance: none
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: full article content used
+    how_known: Silence.
   authority:
-    value: TODO
-    stance: TODO
+    value: Divine revelation ascribed to Hermes Trismegistos; distrust of traditional Greek rationalism
+      in the age; occult knowledge via revelation when ordinary science fails.
+    stance: revelation
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: Hellenistic age; popular Hermetism
+    how_known: Britannica.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: full article content used
+    how_known: Silence.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Cosmos as unity; parts related by sympathy and antipathy — occult teleology/correspondence
+      more than designer purposes.
+    stance: immanent ends
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: popular Hermetism
+    how_known: 0.5.
   necessity_and_freedom:
-    value: TODO
+    value: Not addressed.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: full article content used
+    how_known: Silence.
 lio_axes:
   A_locus:
     value: 1
-    rationale: The aim was 'the deification or rebirth of mortals through the knowledge (gnosis) of the one transcendent God, the world, and humankind'.
+    rationale: Gnosis of 'the one transcendent God' plus cosmos unity; leans transcendent with world-knowledge.
     certainty: 0.5
-    cites: &id001
+    cites:
     - source: S1
-      locator: article
-    how_known: '0.5: the cosmos is also called a unity; alternative 2. Scope: the ancient Hermetic writings only (1st–3rd century); Renaissance and modern Hermeticism not described.'
-    alternatives:
-    - value: 2
-      note: Named alternative.
-      cites: *id001
+      locator: aim paragraph
+    how_known: Prior score kept.
   B_cause:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Magic/astrology vs law not fixed as single B score across popular/learned Hermetism (P44).
   C_ledger:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Silent (P44).
   D_authority:
     value: 1
-    rationale: Because the assumed affinities 'could not be discovered by ordinary scientific methods, recourse had to be made to divine revelation'; people sought 'a divinely revealed wisdom'.
+    rationale: Divine revelation when ordinary scientific methods cannot discover occult affinities; Hermes
+      as revealer.
     certainty: 0.5
-    cites: &id002
+    cites:
     - source: S1
-      locator: article
-    how_known: '0.5. Alternative 0. Scope: the ancient Hermetic writings only (1st–3rd century); Renaissance and modern Hermeticism not described.'
-    alternatives:
-    - value: 0
-      note: Named alternative.
-      cites: *id002
+      locator: popular Hermetism
+    how_known: Prior score kept.
   E_scope:
     value: UNKNOWN
-    how_known: Not addressed in the sources read.
+    how_known: Unlikely there was a Hermetic 'church'; E not fixed (P44).
 epistemology:
-  value: TODO
+  value: Gnosis (knowledge) of transcendent God, world, and humankind leading to deification; revelation
+    over ordinary scientific discovery for occult affinities; Platonic dialogue form.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: aim; popular; theological
+  how_known: Britannica.
 ethics:
-  value: TODO
+  value: Not developed as a single ethics in the Britannica summary.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: full article content used
+  how_known: Silence.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: 'Popular Hermetism: astrology, alchemy, magic. Learned: theological/philosophical dialogues.
+      Unlikely any well-defined Hermetic community or church.'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; closing
+    how_known: Britannica.
   community_form:
-    value: TODO
+    value: Unlikely there was any well-defined Hermetic community or church [S1]. Later medieval/Renaissance
+      receptions are separate.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: closing
+    how_known: Britannica.
 science:
   historical_stance:
-    value: TODO
+    value: Breakdown of distinction between science and religion in Hellenistic age; occult sciences utilitarian
+      but based on revelation when ordinary methods fail.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: Hellenistic age; popular
+    how_known: Britannica.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Historical corpus; modern esoteric receptions vary (not detailed here).
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: closing
+    how_known: Coder's reading.
+schools_and_variants:
+- name: Popular Hermetism (astrology, alchemy, magic)
+  form: mystical
+  how_it_differs: Occult sciences; Emerald Tablet etc.
+  lio_difference: A1 D1; B may lean more interventionist at person level.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening
+- name: Learned Hermetism (Corpus Hermeticum, Asclepius)
+  form: scholastic or philosophical
+  how_it_differs: Theology and philosophy in Platonic dialogue form; Greek philosophy, Egyptian setting.
+  lio_difference: Same umbrella scores.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: theological writings
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -153,7 +316,8 @@ v7_1_rubric:
   V: 5
   X: 3
   total: 25
-  scoring_note: Hermeticism scores moderately due to its esoteric and symbolic approach to enlightenment, balanced by limited empirical grounding and reliance on ancient revelations.
+  scoring_note: Hermeticism scores moderately due to its esoteric and symbolic approach to enlightenment,
+    balanced by limited empirical grounding and reliance on ancient revelations.
   source: v7.1 data book, section 6 table (tables[4]) row 61 and section 7 scoring notes
 revised_rubric:
   status: not started
@@ -173,9 +337,15 @@ revised_rubric:
     score: TODO
     rationale: ''
 coding_guidance:
-  use_when: The person drew a worldview from the Hermetic writings.
-  do_not_use_when: Interest in alchemy or astrology alone is not enough.
-  neighbors: []
+  use_when: Engagement with Hermetica / Hermes Trismegistos as revelatory authority.
+  do_not_use_when: Kemetic Orthodoxy (KEMET). Generic alchemy without Hermetic identity.
+  neighbors:
+  - code: KEMET
+    relation: neighbor (easily confused)
+  - code: THEOS
+    relation: neighbor (easily confused)
+  - code: PLATO
+    relation: neighbor (easily confused)
 review:
   data_quality_flags:
   - 'Thin: unsigned editors’ article; covers the ancient writings, not later Hermeticism.'
@@ -187,40 +357,42 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Britannica Editors
-  citation: 'The Editors of Encyclopaedia Britannica. "Hermetic writings." Encyclopaedia Britannica. https://www.britannica.com/topic/Hermetic-writings. Wayback Machine snapshot 2026-10-12 05:40:54 UTC: https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings.'
+  citation: 'The Editors of Encyclopaedia Britannica. "Hermetic writings." Encyclopaedia Britannica. https://www.britannica.com/topic/Hermetic-writings.
+    Wayback Machine snapshot 2026-10-12 05:40:54 UTC: https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings.'
   url: https://www.britannica.com/topic/Hermetic-writings
-  accessed: '2026-10-15'
-  reliability_note: 'Unsigned editors’ article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings); live page not compared (live Britannica times out from the box).'
+  accessed: '2026-10-25'
+  reliability_note: 'Unsigned editors’ article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings);
+    live page not compared (live Britannica times out from the box).'
 ---
-
 # Hermeticism (HERMET)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-The Hermetic writings are 'works of revelation on occult, theological, and philosophical subjects ascribed to the Egyptian god Thoth' [S1].
+Hermetic writings (Hermetica) are 'works of revelation on occult, theological, and philosophical subjects ascribed to the Egyptian god Thoth (Greek Hermes Trismegistos)', dating probably mid-1st to end of 3rd century CE [S1].
 
 ## Core metaphysics
 
-One transcendent God; a unified, interdependent cosmos [S1].
+Gnosis of the one transcendent God, the world, and humankind aiming at deification/rebirth [S1]. Popular occult sciences (astrology, alchemy, magic) and learned theology [S1]. Unlikely a Hermetic church [S1].
 
 ## Position on the LIO axes
 
-- A 1 (0.5, alt 2); D 1 (0.5, alt 0).
-- B, C, E UNKNOWN.
+- **A_locus: 1** (0.5) — transcendent God + cosmos unity [S1].
+- **B, C, E:** UNKNOWN.
+- **D_authority: 1** (0.5) — revelation when ordinary science fails [S1].
 
 ## Schools and variants
 
-TODO
+Popular vs learned Hermetism [S1].
 
 ## Science
 
-TODO
+Hellenistic fusion of science and religion; occult utilitarianism via revelation [S1].
 
 ## Coding guidance
 
-Hermetic worldview.
+Hermetica engagement. Not KEMET.
 
 ## v7.1 scoring note
 
@@ -230,12 +402,9 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 ## Open questions
 
-- Later Hermeticism.
-- Adherents are TODO.
+- Adherents (historical reception).
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S10): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
-- 2026-10-15 (S10 audit fix): ancient-only scope added to A and D.
+- 2026-10-15 (batch S10): Britannica Hermetic writings; A and D scored.
+- 2026-10-25: deepened classification, origins, metaphysics, practice, schools. A and D kept.
