@@ -52,13 +52,13 @@ python3 scripts/make_figures.py --fullweight # sensitivity view only
 
 #### Including weaker scores (sensitivity view)
 
-The main person chart above fades any dot with certainty below 0.7, so you can see what rests on firmer ground. A second view draws the **same 88 people** at full weight — including the **42** whose best public evidence only clears 0.5 — while hollow rings still mark a single source.
+The main person chart above fades any dot with certainty below 0.7, so you can see what rests on firmer ground. A second view draws the **same 88 people** at full weight — including the **41** whose best public evidence only clears 0.5 — while hollow rings still mark a single source.
 
 That view is not a claim that weak evidence equals strong evidence. It is an illustration: the cloud of placements does not vanish when you stop visually discounting soft scores. It also marks a hard stop. Analysis is "enough" here when further reading would not move someone onto the grid or change a rule — only deepen a footnote. Complete coverage of every remembered genius is impossible; honest gaps are part of the work. Drafts only — no results yet. Lane A stays descriptive.
 
 ![Same 88 people at full weight: certainty fade removed; hollow ring still marks a single source](figures/people_cause_locus_fullweight.png)
 
-*Full-weight sensitivity view of the same 88 plotted people (42 would be faded on the main chart). Fade off; hollow = single source. Not a result. Regenerate with `python3 scripts/make_figures.py --fullweight`.*
+*Full-weight sensitivity view of the same 88 plotted people (41 would be faded on the main chart). Fade off; hollow = single source. Not a result. Regenerate with `python3 scripts/make_figures.py --fullweight`.*
 
 <details>
 <summary><strong>People not yet on the chart</strong> (140 — click to expand)</summary>
