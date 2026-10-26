@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill miracles from Wikipedia Existentialism. No LIO moves.
 identity:
   id: EXIST
   v7_1_number: 17
@@ -144,11 +147,14 @@ metaphysics:
     cites: *id001
     how_known: '0.7.'
   miracles:
-    value: Not addressed as shared doctrine
+    value: 'Not addressed as doctrine. Existentialism concerns existence, freedom, and meaning; it is
+      not a miracle religion. Religious existentialists (Kierkegaard) differ from atheist ones (Sartre).'
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.5–0.7 — Wikipedia Existentialism.'
   petition_and_prayer:
     value: Varies with religious vs secular strands
     stance: varies by school
@@ -395,6 +401,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/existentialism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Existentialism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Existentialism'
+  accessed: '2026-10-25'
 ---
 # Existentialism (EXIST)
 
@@ -440,3 +452,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened TODOs; re-read SEP (Aho).
 - 2026-10-25: D_authority scored 4 (0.7).
 - 2026-10-25: implied axis fill: C=4@0.5, B=4@0.5, E=4@0.5.
+- 2026-10-25: Filled miracles from Wikipedia Existentialism.
