@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) and C_ledger/E_scope 4 (0.5) from sources on file (philosophical
       thesis; material vitality). A/B stay BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify miracles/petition/afterlife/ledger/exemptions as label-not-cult; deepen from Wikipedia
+      Hylozoism alongside Britannica S1. No LIO moves (A/B stay BELOW_THRESHOLD).
 identity:
   id: HYLO
   v7_1_number: 43
@@ -129,29 +133,36 @@ metaphysics:
     cites: *id001
     how_known: Britannica on plastic nature vs materialist forms. 0.7.
   miracles:
-    value: Not addressed as a shared thesis.
+    value: Not a miracle doctrine. Hylozoism claims matter is alive or animated (in itself or via world-soul);
+      it does not posit suspensions of natural order. Stance varies by school if any theistic overlay
+      is added.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: Britannica.
+    certainty: 0.7
+    cites: &id002
+    - source: S2
+      locator: opening; Ancient Greek philosophy
+    how_known: '0.7 — Wikipedia definition.'
   petition_and_prayer:
-    value: 'Not addressed; hylozoism is a cosmology about living matter, not a cult.'
+    value: 'Philosophical cosmology about living matter, not a petitionary cult. No shared prayer practice
+      under the label.'
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: Britannica.
+    certainty: 0.7
+    cites: *id002
+    how_known: '0.7 — Wikipedia.'
   afterlife:
-    value: Not addressed in the sources read.
+    value: Not entailed by the hylozoist thesis. A world-soul reading might suggest cosmic continuity;
+      materialist hylozoism need not. No shared afterlife catechism.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: Britannica.
+    certainty: 0.5
+    cites: *id002
+    how_known: '0.5 — Wikipedia; label is about vitality of matter.'
   moral_ledger:
-    value: 'Not addressed; the thesis is about the vitality of matter, not judgment.'
+    value: Not a judgment theology. The thesis concerns whether matter is living; it does not set reward/punishment
+      rules.
     stance: none
-    certainty: 1.0
-    cites: *id001
-    how_known: 'Britannica article is cosmology, not ethics of judgment.'
+    certainty: 0.7
+    cites: *id002
+    how_known: '0.7 — Wikipedia.'
   authority:
     value: 'Philosophical thesis, not a church. Authority is argument and observation among philosophers
       who hold the view.'
@@ -160,11 +171,11 @@ metaphysics:
     cites: *id001
     how_known: "Coder's reading; Britannica presents a thesis history. 0.7."
   reserved_exemptions:
-    value: Not addressed.
+    value: 'None. A philosophical label, not an in-group religion with exemptions.'
     stance: none
-    certainty: 1.0
-    cites: *id001
-    how_known: Britannica.
+    certainty: 0.7
+    cites: *id002
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
     value: 'Often yes in Cambridge Platonist form: plastic nature controls and organizes matter. Materialist
       forms may deny purpose while still calling matter alive.'
@@ -173,10 +184,13 @@ metaphysics:
     cites: *id001
     how_known: Britannica on Cudworth/More vs Straton/Haeckel. 0.7.
   necessity_and_freedom:
-    value: Not fixed across the label.
-    certainty: 1.0
-    cites: *id001
-    how_known: Britannica does not state a shared free-will doctrine.
+    value: Not fixed across the label. Cambridge plastic nature organizes as divine instrument; materialist
+      forms need not speak of freedom at all.
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.5 — Wikipedia + prior Britannica schools.'
 lio_axes:
   A_locus:
     value: 'BELOW_THRESHOLD'
@@ -344,6 +358,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: Short unsigned editors’ article. Live Britannica page read 2026-10-25; matches prior
     Wayback content used 2026-10-15.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Hylozoism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Hylozoism'
+  accessed: '2026-10-25'
 ---
 # Hylozoism (HYLO)
 
@@ -392,3 +412,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S7): filled from Britannica; A/B BELOW_THRESHOLD; C/D/E UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read Britannica Hylozoism live.
 - 2026-10-25: D/C/E scored.
+- 2026-10-25: Clarified thin metaphysics as label-not-cult from Wikipedia Hylozoism.
