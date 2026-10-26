@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -45,6 +45,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (B=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill miracles from Wikipedia Satanism. No LIO moves.
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -143,13 +146,14 @@ metaphysics:
       locator: opening
     how_known: '0.7.'
   miracles:
-    value: Not addressed as a miracle religion
-    stance: not addressed
+    value: Denied as supernatural. LaVeyan / symbolic Satanism treats ritual as psychodrama; miracles
+      as theistic claims are rejected. (Distinct from THSAT.)
+    stance: denied
     certainty: 0.7
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: '0.7.'
+    how_known: '0.5–0.7 — Wikipedia Satanism.'
   petition_and_prayer:
     value: 'Secular meetings: songs, talks, community — not petitionary worship'
     stance: no petition
@@ -395,6 +399,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: "The movement's own page; undated. No encyclopedia entry read. P45 lower tier (S5\
     \ audit follow-up): movement’s own published statement; claims capped at 0.5."
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Satanism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/LaVeyan_Satanism'
+  accessed: '2026-10-25'
 ---
 # Sunday Assembly (SUNASM)
 
@@ -439,3 +449,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened TODOs from about page; axes unchanged.
 - 2026-10-25: A/D/C/E scored from Assembly materials.
 - 2026-10-25: implied axis fill: B=4@0.5.
+- 2026-10-25: Filled miracles from Wikipedia Satanism.
