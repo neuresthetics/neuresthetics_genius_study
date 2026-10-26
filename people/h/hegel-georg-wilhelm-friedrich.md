@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Württemberg Protestant) @0.7 (S9+S1; Christened; Tübinger Stift; lifelong Lutheran). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 98). Basics from Britannica (T. Malcolm Knox, signed; body through 'Early life', read live) and SEP 'Hegel' (Paul Redding, revision of 19 September 2025). Worldview from the Encyclopaedia (3rd ed. 1830) in Wallace's translations (Philosophy of Mind §§564–565, §573 Remark; Logic §16 Remark), Project Gutenberg web copies; the Lectures on the History of Philosophy (Michelet's compiled edition, Haldane trans.) as context. Not a scientist (P30). primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 (0.5, alt 2); B BELOW_THRESHOLD (alt 3); D 3 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1: 43 hold, 4 weaken, 1 fail). D quote now 'a cognition of the necessity' (H8); SEP locators §3 and §3.1.2 for the Science of Logic (H9). Notes: A gains a BELOW_THRESHOLD alternative for SEP's §2.3 non-metaphysical reading; the Michelet miracle passage cites the P42 addendum (reported speech); 'Göschel' flagged as the coder's identification of Wallace's 'C. F. G—l'. Jason's ruling (2026-10-18, RQ Q1): B BELOW_THRESHOLD → 2 at 0.5, alternative 3, from Encyclopaedia (1830) §248 with its Remark and §250, read in zeno.org's web copy of Werke vol. 9 (new S7, cap 0.7). Now plotted, faded, at A3/B2; mid_basin stays BELOW_THRESHOLD."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #97 / F4 rank 98). Re-read zeno.org German Encyclopaedia Nature §§248–250 (S7) and Mind §§564–565, §573 Remark (new S8); Wallace Mind/Logic retained. Dual bio Wikipedia (S9, P50). P47 source_quality on all sources. A stays 3 @0.5 corroborated (alt 2; alt BELOW for SEP §2.3 non-metaphysical); B stays 2 @0.5 corroborated (alt 3; Jason RQ Q1). Contested readings + post-span Enc. 1830 keep certainty at 0.5 (P20/P25); cannot lift to ≥0.7. mid_basin stays BELOW_THRESHOLD. Chart already faded filled — chart-moving NO. Draft deepen report in drafts/ (untracked)."}
@@ -60,7 +61,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Lutheran (Württemberg Protestant)", certainty: 0.7, cites: [{source: S9, locator: "Early life (Christened; Tübinger Stift Protestant seminary); Religion (identified as a Lutheran his entire life)"}, {source: S1, locator: "Early life (Tübingen theology; parents wished him for orders)"}], how_known: "Wikipedia: christened; entered Protestant seminary; lifelong Lutheran identity. Britannica: Tübingen with view to taking orders. Context only."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Son of a revenue officer; learned the elements of Latin from his mother", role: parents, certainty: 0.7, cites: [{source: S1, locator: "Early life"}], how_known: "Britannica."}
@@ -217,9 +218,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German (Württemberg)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Lutheran (Württemberg Protestant)", certainty: 0.7, cites: [{source: S9, locator: "Early life (Christened Georg Wilhelm Friedrich; Tübinger Stift); Religion (Lutheran his entire life)"}, {source: S1, locator: "Early life"}], how_known: "Dual bio: Wikipedia christening + Protestant seminary + Lutheran self-identity; Britannica Tübingen theology track. Context only — not scored adult primary_system by itself (P19)."}
+  baptism_or_initiation: {value: "Lutheran christening (infant)", certainty: 0.7, cites: [{source: S9, locator: "Early life: Christened Georg Wilhelm Friedrich"}], how_known: "Wikipedia states he was christened; Lutheran infant baptism is the default for that christening in Württemberg. No parish register opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named in S1–S9; seminary training is later (age 18)."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -334,12 +335,12 @@ sources:
     type: tertiary
     kind: encyclopedia
     author: "Wikipedia contributors"
-    citation: "Wikipedia. 'Georg Wilhelm Friedrich Hegel.' https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel (lead: 27 August 1770 – 14 November 1831). Read 2026-10-24 for dual bio only (P50)."
+    citation: "Wikipedia. 'Georg Wilhelm Friedrich Hegel.' https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel. Read 2026-10-24 (dual bio P50) and 2026-10-25 (Early life: Christened; Tübinger Stift; Religion: Lutheran identity)."
     url: "https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel"
-    accessed: 2026-10-24
-    reliability_note: "Dual biography check against Britannica/SEP (P50); worldview not taken from Wikipedia."
+    accessed: 2026-10-25
+    reliability_note: "Dual biography check against Britannica/SEP (P50); heritage context from Early life / Religion; worldview not taken from Wikipedia."
     source_quality: "reference entry"
-    used_for: [basics]
+    used_for: [basics, heritage]
   - id: S6
     type: secondary
     kind: database

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Roman Catholic (Tuscan/Florentine Latin Church) @0.5 (S1+S6 milieu). Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 51). Basics from Britannica (Heydenreich). Worldview from the notebooks (Richter's English edition, 1888, Gutenberg #5000; private manuscript in a web-copy translation, 0.7 cap). Scientist under P30 (anatomy, mechanics; S1). primary_system BELOW_THRESHOLD (candidates CHRIST, DEISM); A 0 at 0.5 (alt 1); B 3 at 0.5 (alt 4) — No. 1134 says no force fails of its necessary results, but No. 1132 prays to a Lord who 'canst shorten or prolong the lives of men' (RQ2 batch H); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): RQ2 resolved, B stays 3 at 0.5 (alternative 4); reasoning recorded in coder_notes. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #51). Needs: A single source; A faded; B single source; B faded. Verified Nos. 1132–1135, 1208, 1210 in Richter 1883 Literary Works vol. 2 (Italian+English+MS sigla; S4) and No. 1208 in MacCurdy Notebooks vol. 2 (independent translation; S5). Dual-sourced bio via Wikipedia EN (S6). P47 source_quality on S1–S6. P48: A support single→corroborated (S2+S4; alt 1); B support single→corroborated (S2+S4+S5; RQ2/P40/P35, alt 4). Values/certainties unchanged (A 0 @0.5; B 3 @0.5). MS sigla recorded. Chart-moving YES: faded hollow → faded filled. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -57,7 +58,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Roman Catholic (Florentine / Tuscan Latin Church milieu)", certainty: 0.5, cites: [{source: S1, locator: "Early life (Vinci / Florence)"}, {source: S6, locator: "Early life (Tuscany)"}], how_known: "Birth in Catholic Tuscany under Latin Church; parents not named as clerics. Contested-reading / milieu inference ceiling 0.5."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father Ser Piero da Vinci, Florentine notary; mother possibly Caterina di Meo Lippi; parents unmarried", role: parents, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
@@ -152,9 +153,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Tuscan (Florentine notary family)", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Roman Catholic (Tuscan / Florentine Latin Church)", certainty: 0.5, cites: [{source: S1, locator: "Early life"}, {source: S6, locator: "Early life (Vinci, Tuscany)"}], how_known: "Born near Vinci in Tuscany; Florentine notary father; Latin Church default for that milieu. No baptism register opened. Context only (P19). Certainty 0.5 (milieu inference, not explicit family confession)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Expected infant baptism in Catholic Tuscany but no baptism record opened in S1–S6."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named in sources read."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"

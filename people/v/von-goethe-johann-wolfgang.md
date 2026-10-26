@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Lutheran (Frankfurt) @0.7 from Wikipedia S7 ('Born into a Lutheran family'). Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 110). Basics from Britannica (Boyle; body read only to 1769, the rest cut off in the fetch) and the IEP (Jensen). Worldview from his letters to F. H. Jacobi of 9 June 1785 and 6 January 1813 and to Knebel of 6 January 1785 (Weimarer Ausgabe IV, read in Zeno.org's transcription). Scientist (P30: intermaxillary bone 1784, Metamorphose der Pflanzen 1790). primary_system PANT (0.7); A 4 (0.7, alt 2); B 3 (0.5, alt 4); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin false (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #109 / F4 rank 110). Goals: lift B to ≥0.7 via Metamorphose / Farbenlehre / WA letters (P16); chart needs B faded→dark if A already dark. Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). Primary Metamorphose der Pflanzen 1790 (S5, Zeno) and Farbenlehre Didaktischer Teil 1810 (S6, Zeno) added. B basis inference_from_work→written_profession; certainty stays 0.5 (P16 Hilbert addendum / P35: lawful order stated, no no-exception / no-miracle claim; Tobler essay 'Ausnahmen selten' endorsed 1828 and Maximen Singularisten note acknowledge exceptions — blocks P40). B support corroborated (P48: S3 Knebel + S5 + S6). A support corroborated labeled (S3+S2). P47 source_quality on every source. Chart-moving NO (B still faded; min(A,B)=0.5). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: GO4, GO6 WEAKEN). IEP §2 now quoted verbatim ('it was Spinoza (1632-77) from whom Goethe adopted the view ...') in primary_system and the Spinoza note; 'left its mark' (which the IEP says of his organic ontology) dropped from the Metamorphose entry, now quoting 'his theory of morphology, that of Linnaeus’ biology'. Zeno/WA page locators: no. 2040 is p. 2 and no. 6471 is p. 226 (Zeno's [n] closes page n), in the statements, primary_system, self-described relation, the A cites and the A alternative. No value changes."}
@@ -61,7 +62,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1, S2).", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Britannica and IEP."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Lutheran", certainty: 0.7, cites: [{source: S7, locator: "Religion and politics: Born into a Lutheran family"}], how_known: "Wikipedia EN explicit. Context only."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father: Johann Caspar Goethe (1710–82), man of leisure on an inherited fortune, who directed his children's education", certainty: 1.0, cites: [{source: S1, locator: "Early years"}, {source: S2, locator: "§1"}], how_known: "Britannica and IEP."}
@@ -186,9 +187,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German (Frankfurt bourgeoisie)", certainty: 0.7, cites: [{source: S1, locator: "Early years"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Lutheran (Frankfurt)", certainty: 0.7, cites: [{source: S7, locator: "Religion and politics: Born into a Lutheran family"}], how_known: "Wikipedia states born into a Lutheran family; early faith later shaken (Lisbon earthquake etc.). Context only — not scored adult primary_system (P19; adult freethinker)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Lutheran birth-heritage implies infant baptism but no baptism record opened in S1–S7."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named; Britannica notes a brief conversion to evangelical Christianity in 1768–69 (pre-span)."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
