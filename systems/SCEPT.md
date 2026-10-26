@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify thin metaphysics as epistemological scope; deepen Pyrrhonian ethics (ataraxia) from
+      Wikipedia Philosophical skepticism alongside SEP S1. No LIO moves.
 identity:
   id: SCEPT
   v7_1_number: 20
@@ -113,13 +117,16 @@ origins:
     how_known: SEP.
 metaphysics:
   god_nature_relation:
-    value: Not addressed in SEP; Pyrrhonian suspension is universal.
+    value: 'Not a constructive theology. Pyrrhonian suspension applies even to theological claims; Cartesian
+      doubt uses God later as an exit strategy, not as skeptic doctrine. The label is about knowledge/justification.'
     stance: not addressed
     certainty: 0.7
     cites:
     - source: S1
-      locator: §2
-    how_known: SEP gives no God-view.
+      locator: §1–2
+    - source: S2
+      locator: opening
+    how_known: '0.7 — SEP + Wikipedia.'
   deity_personal:
     value: Not a shared theology; Descartes uses God later to escape doubt; Pyrrhonian suspension is universal
       including about God
@@ -128,17 +135,24 @@ metaphysics:
     cites: *id001
     how_known: 'SEP: god not the topic; Pyrrhonian universality noted in prior record.'
   intervention:
-    value: Not addressed as doctrine
+    value: Not addressed as doctrine. Skepticism targets knowledge claims; it does not teach a miracle/intervention
+      cosmology.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites: &id002
+    - &id003
+      source: S2
+      locator: opening
+    how_known: '0.7 — Wikipedia / SEP scope.'
   miracles:
-    value: Not addressed as doctrine
+    value: 'Not addressed as doctrine. Humean debates on miracles are philosophy-of-religion applications
+      of inductive skepticism, not a skeptic church position.'
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §3
+    how_known: '0.7 — SEP Humean form.'
   petition_and_prayer:
     value: Not a cult practice
     stance: not addressed
@@ -146,11 +160,12 @@ metaphysics:
     cites: *id001
     how_known: SEP.
   afterlife:
-    value: Not addressed as shared doctrine
+    value: Not a shared afterlife doctrine. Suspension or doubt applies to eschatological claims as to
+      others.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites: *id002
+    how_known: '0.7 — scope of the label.'
   moral_ledger:
     value: Not a moral-judgment theology; epistemological thesis
     stance: none
@@ -258,12 +273,14 @@ epistemology:
   cites: *id001
   how_known: SEP entire entry.
 ethics:
-  value: Not a shared ethical programme; Pyrrhonians sought ataraxia via suspension amid disagreement
+  value: Not a shared modern ethical programme. Ancient Pyrrhonians sought ataraxia (tranquillity) through
+    suspension of judgment amid equipollent disagreement. Contemporary skepticism is mostly analytic epistemology.
   certainty: 0.7
   cites:
   - source: S1
     locator: §6
-  how_known: SEP. 0.7.
+  - *id003
+  how_known: '0.7 — SEP Pyrrhonian + Wikipedia.'
 practice:
   ritual_and_practice:
     value: 'Philosophical method (modes, thought experiments); not a church'
@@ -380,6 +397,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/skepticism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Philosophical skepticism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Philosophical_skepticism'
+  accessed: '2026-10-25'
 ---
 # Skepticism (philosophical) (SCEPT)
 
@@ -424,3 +447,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened TODOs; re-read SEP (Comesaña/Klein; updated 2026).
 - 2026-10-25: D_authority scored 4 (0.7).
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
+- 2026-10-25: Clarified theology silence; Pyrrhonian ataraxia ethics note; Wikipedia Philosophical skepticism added.
