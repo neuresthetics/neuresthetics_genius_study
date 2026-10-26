@@ -23,11 +23,11 @@ Most talk about genius and belief leans on anecdotes or summary labels. Here the
 |---|---|
 | Roster people | 1,380: 441 core, 33 provisional, 17 review, 889 new names still need a status |
 | People coded (of core) | 215 / 441 (draft, unreviewed) |
-| Belief systems sourced | 66 / 77 (P46; plus 10 sourced, unscored; the rest are stubs) |
+| Belief systems sourced | 77 / 77 (P46; plus 0 sourced, unscored; 0 stubs) |
 | Decisions settled | 65 / 65 |
 | Audits | Early work: 9 blind lens runs on four claim packets — see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md). Stage 3 person batches and belief-system batches S1–S12 were each blind-audited with fixes applied. Rulings live in [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md); batch-by-batch history is in [CHANGELOG.md](CHANGELOG.md). |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; charts refreshed (88 plotted, 140 not scorable). Systems pass complete (66 sourced, 10 sourced but unscored, 1 stub). Roster frozen — no new people. Open for Jason (not blocking): Augustine mid_basin under P4; Linnaeus span end 1758 (RQ-Z5-N1). Revised rubric has not started. Details: [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md), [CHANGELOG.md](CHANGELOG.md). |
+| Next steps | Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; charts refreshed (88 plotted, 140 not scorable). Systems pass complete (77 sourced, 0 sourced but unscored, 0 stubs). Roster frozen — no new people. Open for Jason (not blocking): Augustine mid_basin under P4; Linnaeus span end 1758 (RQ-Z5-N1). Revised rubric has not started. Details: [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md), [CHANGELOG.md](CHANGELOG.md). |
 
 <!-- END GENERATED: progress -->
 
@@ -230,9 +230,9 @@ The 140 coded people below are not on the chart because at least one axis has no
 
 *The same chart with the hand-picked people added (circles). These are drafts, not a sample and not a result.*
 
-![The 66 sourced belief-system drafts on the LIO axes](figures/systems_axes.png)
+![The 77 sourced belief-system drafts on the LIO axes](figures/systems_axes.png)
 
-*The 66 sourced belief-system drafts (P46) on the five LIO axes, showing each score with its certainty. These are unreviewed coder drafts, not the v7.1 rubric, and the other 11 systems are a stub (1, 4THWAY) or sourced but unscored (10).*
+*The 77 sourced belief-system drafts (P46) on the five LIO axes, showing each score with its certainty. These are unreviewed coder drafts, not the v7.1 rubric. No system file is left as a stub or sourced but unscored.*
 
 ## Method in short
 
