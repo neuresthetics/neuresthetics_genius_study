@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus P48 fill. SEP §2 (S1) also attests intervening Creator/theodicy (God intervenes to make the world as good as it can be; bestows intellect; wise-father learning) that agrees with A 0 Master/Creator own voice — add S1 to A value cites. Alt 1 five-eternals/design reading kept (S1 still on alt, no longer exclusive of main). A support single→corroborated; B already corroborated → hollow→filled (still faded: B @0.5). mid_basin unchanged (B 0.5). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #138): opened Butterworth Philosophic Life (Interpretation 20.3, 1993) and Arberry Spiritual Physick (1950). A 1 @0.5 scholarly_reconstruction → A 0 @0.7 written_profession (Master/reward/Creator-master; alt 1 = five-eternals design cosmology, P49 SEP). B stays 3 @0.5 (P35/P16: nature-necessity line too thin for cause-order lift; Doubts about Galen unread; alt 4 kept). primary_system stays BELOW_THRESHOLD (religion dispute honest). mid_basin stays BELOW. Chart-moving NO. P47 source_quality; P48 A corroborated / B single; P50 Wikipedia EN dual bio (birth 864/865; death 925/935). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): the 0.5 ceiling now cites the scholarly-reconstruction ceiling (CODING_GUIDE §3), not P36. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 142). Source: SEP 'Abu Bakr al-Razi' (Peter Adamson, rev. 2025). Scholarly reconstruction only: five eternal principles; God's existence 'demonstrated on the basis of the good design of the universe'; 'God intervenes to make the world as good as it can be'; creation ex nihilo impossible. His religion is disputed: the hostile Abū Ḥātim has him reject prophecy and miracles, but Doubts about Galen acknowledges 'books sent by God'. A scientist (P30: medicine; alchemy is described as chemical procedure, so it does not cut the inference). Span UNKNOWN (P12, P39: no lasting work dated in the source); era '500 to 1399'. primary_system BELOW_THRESHOLD (leads PLATO, DEISM, ISLAM); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
@@ -93,12 +94,12 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S3, locator: "§§9.iv, 15, 29 (Kraus pp. 102–108)"}, {source: S4, locator: "Ch. I pp. 20–21"}]
-      how_known: "Deepen D1: Butterworth Philosophic Life — 'Our Master, from whom we hope for reward and fear punishment, looking over us and having compassion for us'; 'this Master punishes'; 'The Creator… is a creator and master to us, whereas we are slaves and vassals to Him.' Arberry Spiritual Physick Ch. I — Creator bestowed Reason; by Reason 'knowledge of the Almighty, our Creator.' Named alternative 1 cites SEP-only five-eternals cosmology (P49) → support single under P48 (alt-exclusive source). Ceiling 0.7 from named alt."
-      rationale: "A separate personal God who rewards, punishes, looks over, and is Master/Creator: 0. Alternative 1: SEP cosmology — God one of five eternals, existence shown from 'good design,' intervenes after Soul mixes with matter, creation ex nihilo impossible (S1 §2) — a more distant ordering God."
+      support: corroborated
+      cites: [{source: S3, locator: "§§9.iv, 15, 29 (Kraus pp. 102–108)"}, {source: S4, locator: "Ch. I pp. 20–21"}, {source: S1, locator: "§2 (God intervenes; bestows intellect; wise-father theodicy)"}]
+      how_known: "Own-voice Master/Creator (S3 Philosophic Life; S4 Spiritual Physick) plus SEP §2 reconstruction that the same God 'intervenes to make the world as good as it can be', bestows intellect on the Soul, and acts as a wise father in theodicy (S1) — personal intervening Creator language that agrees with A 0. Named alt 1 (five-eternals / design-demonstration as more distant) still cites S1, but S1 is now also on the value → no alt-exclusive source (P48). Independent source ids S3/S4/S1 → corroborated. Ceiling 0.7 from named alt."
+      rationale: "A separate personal God who rewards, punishes, looks over, and is Master/Creator (S3/S4), with SEP §2 also reporting intervention and intellect-gift (not mere absentee design): 0. Alternative 1: five-eternals cosmology with design-demonstration and creation-via-Soul (S1 §2) read as a more distant ordering God."
       alternatives:
-        - {value: 1, note: "Five-eternals / design-demonstration God (SEP scholarly reconstruction, P49).", cites: [{source: S1, locator: "§2"}]}
+        - {value: 1, note: "Five-eternals / design-demonstration God (SEP scholarly reconstruction, P49); kept as contested reading of the same SEP §2.", cites: [{source: S1, locator: "§2"}]}
     B_cause:
       value: 3
       basis: scholarly_reconstruction
@@ -147,7 +148,7 @@ worldview:
       verified_on: 2026-10-24
       note: "Arberry 1950; corroborates A."
   changes_over_life: []
-  coder_notes: "Deepen D1: A flipped 1→0 on own voice; B deliberately not lifted (P35/P16). Doubts about Galen and On Divine Science still unread. Religion dispute kept honest — primary_system BELOW. Span UNKNOWN."
+  coder_notes: "Deepen D1: A flipped 1→0 on own voice; B deliberately not lifted (P35/P16). 2026-10-25: A P48 fill via SEP §2 intervention/theodicy agreeing with Master/Creator — hollow→filled (faded). Doubts about Galen and On Divine Science still unread. Religion dispute kept honest — primary_system BELOW. Span UNKNOWN."
 
 heritage:
   use: "context only — never an outcome and never a worldview code"
