@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -48,6 +48,10 @@ record:
     by: Grok Bot
     summary: Score C_ledger 1 (0.5) and E_scope 1 (0.5) from sources on file (Maat judgment; temple/reconstruction
       in-group).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom; deepen schools (reconstructionist / syncretic
+      / Kemetic Orthodoxy) from Wikipedia Kemetism. Keep S1. No LIO moves.
 identity:
   id: KEMET
   v7_1_number: 50
@@ -198,13 +202,15 @@ metaphysics:
       locator: reintroduction; Nisut FAQ
     how_known: Texts + divine guidance + academic Egyptology — 0.5.
   reserved_exemptions:
-    value: Not addressed.
+    value: "No blanket in-group exemption from Ma'at. Pharaoh (ancient) / Nisut (Kemetic Orthodoxy) mediate\
+      \ gods and people; clergy by vocation. Chaos (Isfet) is the opposing force, not a privileged class\
+      \ exemption."
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full FAQ
-    how_known: Silence.
+    - source: S3
+      locator: Overview (pharaoh as intermediary)
+    how_known: '0.5 — Wikipedia Ancient Egyptian religion + Kemetism; modern groups vary.'
   teleology_in_nature:
     value: "Ma'at as order to uphold; not scholastic designer teleology."
     stance: immanent ends
@@ -214,12 +220,13 @@ metaphysics:
       locator: "interreligious work mention of Ma'at"
     how_known: Thin.
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
+    value: "Upholding Ma'at against Isfet frames human duty; gods govern nature but humans choose offerings,\
+      \ ritual, and ethical action. Not a scholastic free-will treatise."
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full FAQ
-    how_known: Silence.
+    - source: S3
+      locator: Overview
+    how_known: "0.5 — Wikipedia summarizing Ma'at/Isfet polarity."
 lio_axes:
   A_locus:
     value: 0
@@ -334,22 +341,32 @@ science:
       locator: reintroduction FAQ
     how_known: "Coder's reading."
 schools_and_variants:
-- name: Kemetic Orthodoxy / House of Netjer
+- name: Kemetic Orthodoxy (House of Netjer)
   form: modern
-  how_it_differs: State vs personal practice; Nisut; Saq; not Neo-Pagan self-class.
-  lio_difference: B=1; other axes UNKNOWN.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: common/differ FAQ
-- name: Other Kemetic / Egyptian Neo-Pagan paths
-  form: modern
-  how_it_differs: FAQ distinguishes KO from New Age/Neo-Pagan Egyptian groups.
-  lio_difference: Do not code as KEMET without KO/reconstruction identity.
+  how_it_differs: More monotheistic/henotheistic framing under Nisut; structured clergy and oracular practice
+    (Saq). Primary file focus.
+  lio_difference: Axes as scored; D may sit more hierarchical than loose reconstructionists.
   certainty: 0.7
   cites:
-  - source: S1
-    locator: common/differ FAQ
+  - source: S2
+    locator: Overview (three types)
+- name: Reconstructionist Kemetism
+  form: reform
+  how_it_differs: Aims closer to historical ancient Egyptian polytheism; less centralized authority than
+    Orthodoxy.
+  lio_difference: D may sit higher (less clerical hierarchy); A firmly many gods.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: Overview
+- name: Syncretic / eclectic Kemetic paganism
+  form: popular
+  how_it_differs: Mixes Netjeru with other neopagan streams; looser canon.
+  lio_difference: Little axis change; E often more universalist/eclectic.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: Overview
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -422,6 +439,18 @@ sources:
     Site copyright 1993–2020; undated page. P46(b): stands for the House of Netjer (Kemetic Orthodoxy)
     only. Kemetism is plural: Kemetic Orthodoxy is one organization among several Kemetic groups and solitary
     practitioners. A peer-reviewed source on the whole movement would take precedence.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Kemetism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Kemetism'
+  accessed: '2026-10-25'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Ancient Egyptian religion." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Ancient_Egyptian_religion'
+  accessed: '2026-10-25'
 ---
 # Kemetic Orthodoxy / Kemetism (KEMET)
 
@@ -469,3 +498,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored from kemet.org.
 - 2026-10-25: C/E scored.
+- 2026-10-25: Filled reserved_exemptions / necessity_and_freedom; schools from Wikipedia Kemetism.
