@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family, parents, related codes, founders/texts, remaining metaphysics
       (varies/not addressed), epistemology, ethics, practice, science, schools (Berkeley, Kant, German/British
       absolute). A stays BELOW_THRESHOLD; B–E UNKNOWN. Re-read SEP Idealism (Guyer/Horstmann).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP Idealism (philosophical argument; observation and reason).
+      A stays BELOW_THRESHOLD; B/C/E UNKNOWN.
 identity:
   id: IDEAL
   v7_1_number: 34
@@ -210,8 +214,22 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: '0.7 — idealism as metaphysical/epistemological *argument* family; SEP frames no shared
+      revelation.'
+    rationale: 'D=4: observation and reason as authority stance already on record; family is philosophical,
+      not revelatory. Not 3: no church or scripture as primary for the family-as-such.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding religious idealisms (e.g. some Absolute Idealism with theistic
+        overlay) as primary.
+      cites:
+      - source: S1
+        locator: introduction
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -406,3 +424,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-01: stub created.
 - 2026-10-15 (systems batch S5): filled from SEP; A BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read SEP Idealism (Guyer/Horstmann, rev. 2026-05-05).
+- 2026-10-25: D_authority scored 4 (0.7) from SEP Idealism.

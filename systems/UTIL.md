@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins era/region, metaphysics TODOs, epistemology,
       practice, science, schools (classical, theological, ideal). LIO axes unchanged. Re-read SEP History
       of Utilitarianism.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 3 (0.7) from SEP History of Utilitarianism (secular classical reason/reform).
+      Enrich related codes (EFFALT). Axes A stays BELOW_THRESHOLD; B/C/E UNKNOWN.
 identity:
   id: UTIL
   v7_1_number: 24
@@ -71,6 +75,12 @@ classification:
   - code: HEDON
     relation: overlaps
     note: Classical utilitarianism is hedonistic about value; not all hedonism is utilitarian
+  - code: EFFALT
+    relation: overlaps
+    note: Effective altruism as evidence-based utilitarian-adjacent movement
+  - code: SECHUM
+    relation: overlaps
+    note: Secular humanist consequentialism neighbor
 origins:
   founding_era:
     value: 'Classical form late 18th–19th c. (Godwin, Bentham, Mill, Sidgwick); precursors earlier (Hutcheson,
@@ -208,8 +218,26 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2; conclusion
+    how_known: '0.7 — classical secular utilitarianism uses reason and consequences for law/policy; theological
+      utilitarians add God’s will.'
+    rationale: 'Observation and reason as moral decision method (Bentham/Mill); not revelation-first.
+      3 not 4: theological utilitarians and internal sanctions complicate a clean 4.'
+    alternatives:
+    - value: 4
+      note: Named alternative if coding only secular classical act-utilitarianism.
+      cites:
+      - source: S1
+        locator: §2.2–2.3
+    - value: 'UNKNOWN'
+      note: Named alternative if coding Paley-style theological utilitarianism as primary.
+      cites:
+      - source: S1
+        locator: §1
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -385,3 +413,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from SEP History of Utilitarianism.
 - 2026-10-25: deepened TODOs; re-read SEP.
+- 2026-10-25: D_authority scored; EFFALT/SECHUM related; authority stance varies by school.
