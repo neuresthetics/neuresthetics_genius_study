@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,10 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score A_locus 4 (0.7) from sources on file (no God-locus; naturalistic/philosophical family).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Clarify god_nature (epoché), exemptions, teleology; deepen schools from Wikipedia Phenomenology.
+      No LIO moves.'
 identity:
   id: PHENOM
   v7_1_number: 23
@@ -150,14 +154,15 @@ origins:
     how_known: SEP.
 metaphysics:
   god_nature_relation:
-    value: "Not addressed: Husserl proposed 'bracketing' the question of the existence of the natural\
-      \ world."
+    value: "Not addressed as constructive theology. Husserlian epoché brackets the natural attitude's\
+      \ existence claims about the world (and typically God) to describe structures of consciousness.\
+      \ Later figures (Scheler, Heidegger, Levinas) reopen ethics/Being questions without a shared theism."
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §1
-    how_known: SEP.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: opening
+    how_known: '0.7 — Wikipedia + prior SEP notes.'
   deity_personal:
     value: Not fixed by the method. Husserlian epoché brackets the existence of the natural world; practitioners
       may hold theism or atheism separately.
@@ -177,14 +182,12 @@ metaphysics:
       locator: §1; §4
     how_known: SEP on bracketing and on ethics/ontology at the horizon.
   miracles:
-    value: Not fixed by the method. Husserlian epoché brackets the existence of the natural world; practitioners
-      may hold theism or atheism separately.
+    value: Not a miracle doctrine. Phenomenology describes experience; it does not affirm supernatural
+      interruptions as method.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: §1; §4
-    how_known: SEP on bracketing and on ethics/ontology at the horizon.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   petition_and_prayer:
     value: Not fixed by the method. Husserlian epoché brackets the existence of the natural world; practitioners
       may hold theism or atheism separately.
@@ -222,22 +225,20 @@ metaphysics:
       locator: §2
     how_known: "Coder's reading of SEP methods; 'observation' here is reflective description of experience."
   reserved_exemptions:
-    value: Not addressed as cosmology. Method claims no in-group exemption from how experience is structured.
+    value: None as cosmology. Method claims no in-group exemption from how experience is structured; description
+      aims at universal features of consciousness.
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: §1
-    how_known: "Coder's reading; method not a cosmology of exemptions."
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
-    value: "Not addressed as designer's purposes. Intentionality is directedness of consciousness, not\
-      \ natural teleology in the scholastic sense."
+    value: 'Not designer teleology. Intentionality is directedness of consciousness toward objects, not
+      natural purposes set by a designer. Some Husserl texts discuss teleology of reason historically
+      — not a shared school dogma here.'
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: introduction; §1
-    how_known: "Coder's reading."
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia scope; stance none for the movement label.'
   necessity_and_freedom:
     value: Varies by school. Sartre stresses radical freedom of choice; Merleau-Ponty binds subjectivity
       to body and world; Husserl focuses on structures of consciousness rather than a free-will doctrine.
@@ -371,31 +372,24 @@ science:
       locator: §2; §6; §7
     how_known: SEP.
 schools_and_variants:
-- name: Husserlian / transcendental phenomenology
+- name: Transcendental phenomenology (Husserl)
   form: scholastic or philosophical
-  how_it_differs: Epoché; science of the essence of consciousness; noema/noesis.
-  lio_difference: Brackets world-existence; axes UNKNOWN for method.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §4
-- name: Heideggerian hermeneutic / existential phenomenology
+  how_it_differs: Epoché and transcendental ego; rigorous science of consciousness.
+  lio_difference: Axes as scored.
+  certainty: 0.7
+  cites: *id001
+- name: 'Existential phenomenology (Heidegger, Sartre, Merleau-Ponty)'
   form: scholastic or philosophical
-  how_it_differs: Being-in-the-world; resists bracketing; practical comportment over representational
-    intentionality.
-  lio_difference: Still not a shared God cosmology; code EXIST when that is primary.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §4
-- name: 'French existential phenomenology (Sartre, Merleau-Ponty)'
-  form: scholastic or philosophical
-  how_it_differs: Freedom and the look (Sartre); lived body (Merleau-Ponty).
-  lio_difference: Person-level coding for God-view.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §4
+  how_it_differs: 'Being-in-the-world, embodiment, freedom; less transcendental idealism.'
+  lio_difference: May pull toward EXIST; keep PHENOM when method is phenomenological.
+  certainty: 0.7
+  cites: *id001
+- name: Applied / qualitative phenomenology (social sciences)
+  form: modern
+  how_it_differs: 'Research method for lived experience in psychology, nursing, HCI, etc.'
+  lio_difference: Little metaphysical axis weight.
+  certainty: 0.7
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -460,6 +454,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/phenomenology/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Phenomenology (philosophy)." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Phenomenology_(philosophy)'
+  accessed: '2026-10-25'
 ---
 # Phenomenology (PHENOM)
 
@@ -510,3 +510,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: D raised to 4.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
 - 2026-10-25: A_locus scored 4.
+- 2026-10-25: Clarified epoché/exemptions/teleology; schools from Wikipedia Phenomenology.
