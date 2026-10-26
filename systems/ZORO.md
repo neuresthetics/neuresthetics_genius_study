@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Zoroastrianism. No LIO moves.
 identity:
   id: ZORO
   v7_1_number: 67
@@ -181,13 +184,14 @@ metaphysics:
       locator: opening; Magi
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: 'None. All souls face judgment by their thoughts, words, and deeds; no ethnic or clerical free
+      pass from asha/druj accountability in sources read.'
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S4
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Zoroastrianism.'
   teleology_in_nature:
     value: Cosmic struggle toward triumph of good; purity vs defilement.
     stance: "designer's purposes"
@@ -422,6 +426,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260130121429/https://www.britannica.com/topic/Zoroastrianism/Cosmology);
     live page not compared (live Britannica times out from the box).'
+- id: S4
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Zoroastrianism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Zoroastrianism'
+  accessed: '2026-10-25'
 ---
 # Zoroastrianism (ZORO)
 
@@ -468,3 +478,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/B scored.
 - 2026-10-25: E_scope scored 3 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Zoroastrianism.
