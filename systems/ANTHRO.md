@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,10 @@ record:
     by: Grok Bot
     summary: Score B_cause 1 (0.5) and E_scope 2 (0.5) from Wikipedia Anthroposophy (spiritual science;
       Steiner hierarchy).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen science stance (spiritual science vs pseudoscience critique), metaphysics gaps, schools
+      from Wikipedia Anthroposophy. Keep S1/S2. No LIO moves.'
 identity:
   id: ANTHRO
   v7_1_number: 58
@@ -135,29 +139,32 @@ metaphysics:
       locator: Ethics; Christ as the center
     how_known: '0.7 — Wikipedia Christology/ethics sections.'
   intervention:
-    value: Not addressed.
+    value: 'Spiritual beings (including Christ as Representative of Humanity, Lucifer, Ahriman) influence
+      human and world evolution; not primarily a petitionary intervention model.'
     stance: not addressed
-    certainty: 1.0
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Ethics; Christ as the center
+    how_known: '0.7 — Wikipedia Anthroposophy.'
   miracles:
-    value: Not addressed.
+    value: Clairvoyant research and supersensory perception claimed; mainstream science treats these claims
+      as unverified. Not framed as classical miracle-working.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: Spiritual knowledge and freedom; Claimed applications
+    how_known: '0.5 — Wikipedia summarizing Steiner claims and scientific critique.'
   petition_and_prayer:
-    value: Not addressed.
+    value: Inner development via meditation and moral exercises (How to Know Higher Worlds) more central
+      than petitionary prayer; Christian Community is a related but separate liturgical stream.
     stance: not addressed
-    certainty: 1.0
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Paths of spiritual development; Christian Community
+    how_known: '0.7 — Wikipedia.'
   afterlife:
     value: Reincarnation of the human spirit; life review after death; karmic preparation for next incarnation
     certainty: 0.7
@@ -183,28 +190,32 @@ metaphysics:
       locator: full article
     how_known: "Coder's reading of short blurb; 0.5."
   reserved_exemptions:
-    value: Not addressed.
+    value: "No in-group exemption from karma or moral development; spiritual perception requires prior\
+      \ moral discipline. Critics note racial-evolution passages in Steiner's oeuvre (anthroposophical\
+      \ societies have issued rejections of racial superiority)."
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Statements on race
+    how_known: '0.5 — Wikipedia summarizing scholarly debate.'
   teleology_in_nature:
-    value: Not addressed.
+    value: World and human evolution guided by spiritual beings through staged cycles; Goethean phenomenological
+      science of living form. Contested as teleological/esoteric by critics.
     stance: none
     certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Evolution
+    how_known: '0.7 — Wikipedia.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
+    value: Ethical individualism and free will grounded in Philosophy of Freedom; Lucifer/Ahriman polarity
+      needed for freedom; Christ mediates the balance.
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    - source: S2
+      locator: Ethics; Spiritual knowledge and freedom
+    how_known: '0.7 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 1
@@ -324,29 +335,45 @@ practice:
     how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
-    value: 'Steiner described as philosopher, scientist, and artist; claims spiritual perception beyond
-      sensory science. Article too short for a full science stance.'
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: full article
-    how_known: "Coder's reading."
+    value: Steiner presented anthroposophy as Geisteswissenschaft extending scientific method to spiritual
+      experience; Goethean phenomenology. Roots in German idealism and Theosophy.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   current_stance:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article
-    how_known: Silence.
+    value: 'Applied in Waldorf education, biodynamic agriculture, anthroposophic medicine. Many scientists
+      and physicians call these applications pseudoscientific; proponents dispute that characterization.
+      Lane A notes the controversy without adjudicating.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia summarizing Hansson/Ernst/Gorski critiques and anthroposophical self-description.'
 schools_and_variants:
-- name: Anthroposophical Society (Dornach)
-  form: modern
-  how_it_differs: "Institutional home of Steiner's anthroposophy."
-  lio_difference: D=1; other axes UNKNOWN.
-  certainty: 1.0
+- name: General Anthroposophical Society / Goetheanum
+  form: scholastic or philosophical
+  how_it_differs: Core Society and School for Spiritual Science at Dornach.
+  lio_difference: Axes as scored.
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: full article
+  - source: S2
+    locator: Early 20th century
+- name: Waldorf / Camphill / biodynamic applied streams
+  form: modern
+  how_it_differs: 'Institutional applications in education, special needs, farming, medicine; often the
+    public face.'
+  lio_difference: Little axis change; practice-forward.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Claimed applications
+- name: Christian Community (related)
+  form: reform
+  how_it_differs: "Movement for Religious Renewal co-founded with Steiner's help; Steiner treated it as\
+    \ independent of anthroposophy proper."
+  lio_difference: More liturgical Christianity; A may sit closer to personal Christ.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: Christian Community
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -465,3 +492,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: ethics/afterlife/practice deepened from Wikipedia S2; A/C scored.
 - 2026-10-25: B/E scored.
+- 2026-10-25: Deepened science stance and metaphysics gaps from Wikipedia Anthroposophy.
