@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B_cause 2 (0.7) progressive revelation rare; C_ledger 4 (0.5) social ethics emphasis.
+      A/D already scored.
 identity:
   id: BAHAI
   v7_1_number: 39
@@ -220,11 +224,38 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
+    value: 2
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: progressive revelation
+    how_known: '0.7 — progressive revelation through successive manifestations; intervention rare.'
+    rationale: 'B=2: rare special revelation events, not constant miracle regime.'
+    alternatives:
+    - value: 1
+      note: Named alternative if weighting manifestation events as stronger special cases.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 3
+      note: Named alternative if reading post-manifestation order as lawlike.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.5 — social ethics emphasized; not a classic afterlife ledger in S1.'
+    rationale: C=4 at 0.5. Alternative 1 if personal judgment detailed elsewhere.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding personal afterlife judgment from other sources.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: Sacred literature from the founders; the Universal House of Justice applies their laws
@@ -406,3 +437,4 @@ Bahāʾī identity.
 - Prior: A=0 from Britannica.
 - 2026-10-25: deepened practices/organization/history. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: B/C scored.

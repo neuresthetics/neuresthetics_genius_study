@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 (0.5) from SEP Confucius (virtue/political consequences; no karma-type law).
+      B/D already scored.
 identity:
   id: CONFUC
   v7_1_number: 44
@@ -236,11 +240,19 @@ lio_axes:
       locator: §5
     how_known: '0.5: the Analects only; the inherited Zhou view had supernatural intercession.'
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: "The entry states no karma-type law, so P44(d) does not apply (S7 audit). 'personal virtue\
-      \ did not always guarantee success' and ritual benefits beyond 'rewards from the ancestors' (S1)\
-      \ are a lead toward 4, not a score."
-    note: 'Lead: 4.'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.5 — virtue and political/moral consequences; no karma-type law in entry.'
+    rationale: 'C=4: none as divine/karmic ledger. Certainty 0.5.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Heaven’s Mandate as impersonal moral law.
+      cites:
+      - source: S1
+        locator: Heaven
   D_authority:
     value: 2
     rationale: "Benevolence 'is grounded in tradition'; Confucius sought to preserve the Zhou ritual system."
@@ -438,3 +450,4 @@ Confucian/Ru identity; not CHNFOLK dump.
 - Prior: SEP Confucius; B=3 D=2.
 - 2026-10-25: deepened ritual/virtues/politics from same SEP. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored 4 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 0 (0.7) and B_cause 1 (0.7) from Britannica Zoroastrianism (Gāthās/Avesta
+      revelation; cosmic dualistic struggle). C already 0.
 identity:
   id: ZORO
   v7_1_number: 67
@@ -214,8 +218,20 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: dualism; cosmic struggle
+    how_known: '0.7 — cosmic dualistic struggle enlisting humans; intervention regular.'
+    rationale: 'B=1: special cosmic struggle / divine enlistment. Not 0: not only petitionary miracle
+      catalog.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding Ahura Mazdā interventions as miracle-class 0.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 0
     rationale: "The soul crosses 'the Bridge of the Requiter. It leads the good souls to paradise, but\
@@ -231,8 +247,19 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: Zarathushtra; Avesta
+    how_known: '0.7 — prophet Zarathushtra’s Gāthās / Avesta; stance revelation.'
+    rationale: 'D=0: revelation outranks. Not 1: prophetic scripture, not open ancestral custom alone.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Magi tradition as co-equal.
+      cites:
+      - source: S1
+        locator: Magi
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -425,3 +452,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S11): Britannica Zoroastrianism; axes set.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D/B scored.

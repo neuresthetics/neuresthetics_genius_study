@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B_cause 0 (0.7) from Britannica LDS (continuing revelation; Moroni; visionary founding).
+      A/C/D already scored.
 identity:
   id: MORMON
   v7_1_number: 71
@@ -230,8 +234,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: revelation; Moroni
+    how_known: '0.7 — continuing revelation; angel Moroni; visionary founding; miracles affirmed.'
+    rationale: 'B=0: miracle/revelation special cases central. Not 1: founding narrative is miracle-class.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding only ongoing guidance as milder special cases.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 1
     rationale: "'people’s futures are determined by their own actions as well as by the grace of God';\
@@ -457,3 +472,4 @@ LDS/Mormon identity; note denomination.
 - Prior: A C D scored.
 - 2026-10-25: deepened from Britannica LDS (Melton). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: B_cause scored 0.

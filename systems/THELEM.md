@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score C_ledger 4 (0.7) from Britannica Thelema (True Will ethics, not cosmic ledger). A
+      stays BELOW.'
 identity:
   id: THELEM
   v7_1_number: 74
@@ -232,8 +236,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ethics; Do what thou wilt
+    how_known: '0.7 — True Will ethics, not cosmic ledger; moral_ledger stance none.'
+    rationale: 'C=4: none. Not 3: Will is not karma law.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Love under will as impersonal law.
+      cites:
+      - source: S1
+        locator: ethics
   D_authority:
     value: 1
     rationale: "'The tradition centers on a text, The Book of the Law, that Crowley claimed to have received\
@@ -431,3 +446,4 @@ Thelemic identity. Not CHAOSM.
 - Prior batch: Britannica Thelema; B D scored.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored 4.

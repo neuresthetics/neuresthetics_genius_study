@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) tradition/ancestors; C_ledger 4 (0.5) no fixed universal ledger
+      text. A/B stay BELOW (community variance).
 identity:
   id: NATAM
   v7_1_number: 55
@@ -210,13 +214,34 @@ lio_axes:
     how_known: "Mythic beings 'inhabit and affect either this world or some other world'; 'Actions, words,\
       \ and thoughts are understood in many traditions to have power in the world' (S1). Many, not all."
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.5 — no fixed universal moral code text; kin/other-than-human etiquette.'
+    rationale: 'C=4 at 0.5: no shared personal divine ledger. Alternative BELOW for variance.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: heterogeneous afterlife/ledger beliefs.'
+      cites:
+      - source: S1
+        locator: afterlife
   D_authority:
-    value: 'BELOW_THRESHOLD'
-    how_known: "'In most indigenous worldviews there is no such antithesis' between supernatural and natural;\
-      \ 'Plants and animals, clouds and mountains carry and embody revelation' (S1). Not fixed across\
-      \ traditions."
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — oral tradition, initiation, place-memory; stance tradition or ancestors.'
+    rationale: 'D=1: ancestral/oral. Was BELOW; reconstructionist/general Britannica form supports 1 with
+      BELOW alternative for variance.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: hundreds of nations differ.'
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -403,3 +428,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica Native American religion; umbrella BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes unchanged.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D/C scored.

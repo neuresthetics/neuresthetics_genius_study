@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) and C_ledger 4 (0.7) from Britannica Shinto (tradition/shrines;
+      purity not karma ledger).
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -242,12 +246,33 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ethics; purity
+    how_known: '0.7 — purity/sincerity; no original sin; not a karma ledger in S1.'
+    rationale: 'C=4: none. Not 3: not karma.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading purity pollution as impersonal moral law.
+      cites:
+      - source: S1
+        locator: purity
   D_authority:
-    value: 'UNKNOWN'
-    how_known: "'no official sacred scriptures in the strict sense, and no fixed dogmas' (S1); no positive\
-      \ authority stated."
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening; authority
+    how_known: '0.7 — no fixed dogmas; tradition, shrines, Imperial history; stance tradition or ancestors.'
+    rationale: 'D=1: tradition. Not 0: not single closed revelation for Shinto as such.'
+    alternatives:
+    - value: 2
+      note: Named alternative if coding Sect Shinto founders as mixed.
+      cites:
+      - source: S1
+        locator: Sect
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -465,3 +490,4 @@ Shintō identity; not ANIM dump.
 - Prior batch: thin fill.
 - 2026-10-25: deepened from Britannica Shintō (Hirai). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D/C scored.

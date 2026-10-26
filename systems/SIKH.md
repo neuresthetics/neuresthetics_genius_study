@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 3 (0.5) rebirth/consequence (P44d-adjacent); B_cause 1 (0.5) Guru spirit /
+      scripture. D already 1.
 identity:
   id: SIKH
   v7_1_number: 62
@@ -221,11 +225,33 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: Guru; scripture
+    how_known: '0.5 — single spirit inhabited ten Gurus; eternal Guru in scripture; intervention thin.'
+    rationale: 'B=1: special revelatory/Guru cases. Not 0: not miracle-centered catalog.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if intervention evidence too thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: rebirth; liberation
+    how_known: '0.5 — rebirth cycle implies impersonal consequence; liberation aim (karma-type).'
+    rationale: 'C=3: impersonal. Alternative 1 if personal God as judge primary.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding personal God judgment as primary.
+      cites:
+      - source: S1
+        locator: God
   D_authority:
     value: 1
     rationale: "The scripture Guru Granth Sahib 'thereafter was regarded as the sole Guru'; the divine\
@@ -411,3 +437,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S10): Britannica Sikhism; axes set.
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C/B scored.
