@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -46,6 +46,10 @@ record:
     by: Grok Bot
     summary: 'Score B1 C1 E1 (0.5) from sources on file (Rodnoverie: gods/ritual; this-world honor; in-group
       folk). A/D already scored.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Deepen ethics/practice/epistemology/science/schools and thin metaphysics from Wikipedia Slavic
+      Native Faith (tertiary). Keep prior S1.
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -125,15 +129,14 @@ origins:
     how_known: Britannica silence.
 metaphysics:
   god_nature_relation:
-    value: Modern Pagan theologies range from pantheism and monotheism to polytheism and atheism; Rodnovery
-      is Slavic deity-veneration. Exact Rodnover consensus not fixed in this umbrella article.
+    value: 'Polytheism/henotheism around Rod as supreme generative principle and multiple Slavic gods
+      (Perun, Veles, etc.); pantheistic/monist readings common. Spirits of nature and ancestors also worshiped.'
     stance: varies by school
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: Beliefs and practices
-    how_known: "Britannica on modern Pagan diversity; Rodnovery specifically 'venerating the pre-Christian\
-      \ deities'."
+    cites: &id001
+    - source: S2
+      locator: 'Theology and cosmology; Afterlife, morality and ethics'
+    how_known: '0.7 — Wikipedia Slavic Native Faith.'
   deity_personal:
     value: 'Veneration of pre-Christian Slavic deities; some practitioners take deities as literal, others
       as symbolic/archetypal (Britannica on modern Pagans generally).'
@@ -170,14 +173,12 @@ metaphysics:
       locator: Beliefs and practices
     how_known: Umbrella; not Rodnover-specific.
   afterlife:
-    value: Some modern Pagans deny a soul; others affirm afterlife or reincarnation. Rodnover consensus
-      not stated.
+    value: This-worldly morality; reincarnation-in-mankind and possible deification in Iriy/Vyriy/Prav
+      in many streams; continuity of spirit–matter.
     stance: varies by school
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: Beliefs and practices
-    how_known: Britannica umbrella.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   moral_ledger:
     value: Not described for Rodnovery.
     stance: none
@@ -187,14 +188,14 @@ metaphysics:
       locator: Beliefs and practices
     how_known: Silence.
   authority:
-    value: Reconstructionist emphasis on historical and archaeological source material; ethnic/national
-      identity framing common in Eastern European forms. Tradition and ancestors over Abrahamic revelation.
+    value: 'Folklore, archaeology, Book of Veles (disputed), and reconstructionist/charismatic leaders;
+      no single accepted authority. Ethnic tradition framing.'
     stance: tradition or ancestors
     certainty: 0.7
     cites:
-    - source: S1
-      locator: History of modern Paganism; Beliefs
-    how_known: "Coder's reading of Britannica on reconstructionists and Eastern ethnic forms."
+    - source: S2
+      locator: Overview
+    how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
     value: Not addressed.
     stance: none
@@ -292,64 +293,79 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: Reconstruction from historical and archaeological sources (as reconstructionists define themselves);
-    ritual practice often prioritized over belief across modern Paganism.
+  value: Reconstruction from historical/archaeological scraps and folk religion; often open-source/invented-tradition
+    character acknowledged by scholars; some streams treat disputed texts as genuine.
   certainty: 0.7
   cites:
-  - source: S1
-    locator: History; Beliefs and practices
-  how_known: "Coder's reading."
+  - source: S2
+    locator: Rodnovery as a new synthesis
+  how_known: '0.7 — Wikipedia summarizing Schnirelmann/Laruelle.'
 ethics:
-  value: Eastern European ethnic-nationalist modern Paganisms tend to be more socially conservative; progressive
-    forms predominate in North America/Britain. Rodnover ethics not separately stated.
-  certainty: 0.5
-  cites:
-  - source: S1
-    locator: Beliefs and practices
-  how_known: Umbrella political contrast; thin for RODNOV.
+  value: Follow Prav (natural law); collective good over individual rights; patriarchal/conservative family
+    ethics in many groups; ecological responsibility; reject Christian deferred judgment as immoral.
+  certainty: 0.7
+  cites: *id001
+  how_known: '0.7 — Wikipedia.'
 practice:
   ritual_and_practice:
-    value: Offerings; seasonal/astronomical festivals; outdoor or home ceremonies typical of modern Paganism.
-      Rodnover-specific calendar not detailed in Britannica.
+    value: 'Invocations, offerings/libations, circle-dances, communal meals; seasonal festivals (Kupala,
+      Koliada, Maslenitsa); name-giving and de-Christianisation rites; outdoor kapishche with poles and
+      fire.'
     certainty: 0.7
     cites:
-    - source: S1
-      locator: Beliefs and practices
-    how_known: Umbrella applied cautiously.
+    - source: S2
+      locator: Practices
+    how_known: '0.7 — Wikipedia.'
   community_form:
-    value: Homegrown groups in Slavic countries emphasizing national identity; some collaboration via
-      bodies like the European Congress of Ethnic Religions; ethnic-nationalist strands often excluded
-      from Western Pagan umbrella orgs.
+    value: 'Local obshchina groups, unions (e.g. Union of Slavic Native Belief Communities), temples/citadels;
+      priesthood of volkhv/zhrets. Highly decentralized.'
     certainty: 0.7
     cites:
-    - source: S1
-      locator: History of modern Paganism
-    how_known: "Coder's reading of Britannica."
+    - source: S2
+      locator: 'Communities, citadels and temples'
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
-    value: "Appeals to historical/archaeological reconstruction; often skeptical of Christian missions;\
-      \ some modern Pagans oppose science-fostered 'alienation from nature' (umbrella)."
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: Beliefs and practices
-    how_known: Umbrella; thin for RODNOV.
-  current_stance:
-    value: Not a science programme.
+    value: Not a natural-science tradition; some streams promote pseudohistorical Aryan/Slavic grandeur
+      narratives rejected by academia.
     certainty: 0.7
     cites:
-    - source: S1
-      locator: Beliefs and practices
-    how_known: "Coder's reading."
+    - source: S2
+      locator: Views on history and eschatology
+    how_known: '0.7 — Wikipedia summarizing Aitamurto/Schnirelmann.'
+  current_stance:
+    value: 'Mixed: some groups seek academic dialogue; others treat scholarly criticism as suppression.
+      No single official science policy.'
+    certainty: 0.5
+    cites:
+    - source: S2
+      locator: Views on history and eschatology
+    how_known: '0.5 — variance across groups.'
 schools_and_variants:
-- name: Rodnovery in Russia / Ukraine / Poland (national variants)
-  form: regional
-  how_it_differs: Homegrown Slavic Native Faith emphasizing national identity; details vary by country.
-  lio_difference: Axes UNKNOWN for umbrella RODNOV.
+- name: Russian Rodnoverie unions
+  form: popular
+  how_it_differs: Post-Soviet organized Native Faith; veche governance rhetoric; often ethnic-nationalist.
+  lio_difference: E firmly 1; political extremes are not coded as the religion itself.
   certainty: 0.7
   cites:
-  - source: S1
-    locator: History of modern Paganism
+  - source: S2
+    locator: Overview
+- name: Ukrainian Ridnovirstvo / Sylenkoism
+  form: reform
+  how_it_differs: Shaian polytheist streams vs Sylenko RUNVira monotheism focused on Dazhbog.
+  lio_difference: A may move toward 0 (personal Dazhbog) in Sylenkoism.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: Theology and cosmology
+- name: Polish Rodzimowierstwo
+  form: regional
+  how_it_differs: Zadruga heritage; Native Polish Church and related groups.
+  lio_difference: Little axis change.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: History
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -422,6 +438,12 @@ sources:
   reliability_note: 'Signed article on modern Paganism in general; Rodnovery named in one sentence. P44(e):
     read in the Wayback copy (https://web.archive.org/web/20261010141040/https://www.britannica.com/topic/Neo-Paganism);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Slavic Native Faith." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Slavic_Native_Faith'
+  accessed: '2026-10-25'
 ---
 # Rodnovery / Slavic Native Faith (RODNOV)
 
@@ -469,3 +491,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored from Britannica Neo-Paganism.
 - 2026-10-25: B/C/E scored (Rodnoverie).
+- 2026-10-25: Deepened qualities from Wikipedia Slavic Native Faith (tertiary).
