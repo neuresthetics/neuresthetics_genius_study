@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill miracles from Wikipedia Utilitarianism. No LIO moves.
 identity:
   id: UTIL
   v7_1_number: 24
@@ -152,11 +155,14 @@ metaphysics:
     cites: *id001
     how_known: SEP.
   miracles:
-    value: Not addressed as shared doctrine.
+    value: Not addressed. Utilitarianism is a consequentialist ethics about welfare; it has no miracle
+      doctrine.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.5–0.7 — Wikipedia Utilitarianism.'
   petition_and_prayer:
     value: 'Not a cult; theological forms may pray, classical secular forms do not require it.'
     stance: not addressed
@@ -408,6 +414,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/utilitarianism-history/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Utilitarianism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Utilitarianism'
+  accessed: '2026-10-25'
 ---
 # Utilitarianism (UTIL)
 
@@ -452,3 +464,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened TODOs; re-read SEP.
 - 2026-10-25: D_authority scored; EFFALT/SECHUM related; authority stance varies by school.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
+- 2026-10-25: Filled miracles from Wikipedia Utilitarianism.
