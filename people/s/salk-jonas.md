@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: '2026-10-25'
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 112). Basics from Britannica (Britannica Editors; revised by Kara Rogers), the Science History Institute and the Salk Institute. Worldview from The John Callaway Interviews (WTTW; broadcast 30 June 1981), AAPB transcript (status 'Correct'). Scientist (P30). All worldview fields rest on one recorded interview after the working years (P1 cap 0.5). primary_system PANT (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A 4 at 0.5). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: SA3, SA7 WEAKEN; ruling T2, v8's call on the auditor's advice). primary_system PANT -> ATHE at 0.5, alternative PANT ('God was invented because of the necessity for having a form of order' withdraws the entity-term). The killed-virus principle is listed as a discovery (Britannica: killed virus of each of the three types 'could induce antibody formation in monkeys'), so the scientist status no longer rests on an invention (P33). S4 locators now carry AAPB transcript timecodes. A 4, B 3 (0.5) unchanged; plot unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #111 / F4 rank 112). Goals: lift A/B to 0.7 if stronger own-voice; chart-moving if both ≥0.7 and/or corroboration. Read The Survival of the Wisest (1973 Harper & Row; unofficial PDF OCR, S6) — post-span under P1, so certainty stays 0.5; no lift to 0.7. Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on S1–S7. A stays 4 @0.5 alt BELOW (ruling T2); support single→corroborated (S4 interview + S6 book: 'without arbitrary reference to a presumed purposeful Being'; order that prevails in the universe). B stays 3 @0.5 alt 4 (P16 addendum / P35); support single→corroborated (S4 + S6: 'order that prevails in the universe'; cannot 'exist free from the operation of the laws of Nature'; cannot 'defy, or [act] counter to, the laws of Nature'). D BELOW→4 @0.5 (S6 naturalistic vs arbitrary moralistic self-regulation; religion founders' systems 'product of imagination, without basis in reality'). primary ATHE @0.5 alt PANT unchanged; SECHUM noted (AHA Humanist of the Year 1976, S7) but rejected for primary. mid BELOW (A 0.5). Chart-moving YES: hollow→filled (both A and B corroborated); still faded (min(A,B)=0.5). Man Unfolding / Anatomy of Reality unread. No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -64,7 +65,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1, S2).", certainty: 0.7, cites: [{source: S1, locator: "body"}], how_known: "Britannica."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Jewish", certainty: 0.5, cites: [{source: S2, locator: "Salk's Education"}, {source: S7, locator: "Early life and education"}], how_known: "Same as religious_heritage_by_birth; immigrant Jewish parents (context only, P19)."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father: Daniel Salk, son of Jewish immigrants (S2); born in New Jersey to Jewish immigrant parents (S7)", certainty: 0.7, cites: [{source: S2, locator: "Salk's Education"}, {source: S7, locator: "Early life and education"}], how_known: "Wikipedia clarifies the father's generation; S3's 'Russian-Jewish immigrant' for the father is superseded at 0.7."}

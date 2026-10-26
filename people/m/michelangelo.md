@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: '2026-10-25'
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 59). Basics from Britannica (Gilbert), signed body through the early works only (the fetch returned only that part). Worldview from Sonnet LXV (dated 19 September 1554, sent to Vasari), Symonds's translation, Gutenberg #10314 (web copy). Not a scientist. primary_system CHRIST 0.5; A 0 at 0.5 (alt 1); B UNKNOWN (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #59, F5 rank 59). Needs: A single source; A faded; B UNKNOWN. Primary Italian of late spiritual sonnets from Guasti 1863 (S4, IA OCR) and Girardi/Wikisource (S5): G 285 Giunto è già, G 288 Le favole del mondo, G 289 Non è più bassa, G 290 Scarco d'un'importuna — personal Christ who opens arms on the cross, faith as gift, blood that washes sins. Eisenbichler 1987 (S6) adds Carteggio letters on sacraments (1516, 1548). A 0 0.5 single → 0 @0.7 corroborated; primary_system CHRIST 0.5 → 0.7; C 1 @0.5 and D 1 @0.5 newly scored; B stays UNKNOWN (P16: not a scientist; no statement on nature's causal order — 'natura' poems are beauty/love, not physics). mid_basin BELOW_THRESHOLD. Wikipedia EN (S7) dual-sources bio dates and Catholic faith. P47 on S1–S7. Chart-moving NO (B UNKNOWN, unplotted). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -60,7 +61,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Roman Catholic (Florentine)", certainty: 0.5, cites: [{source: S7, locator: "Early life"}, {source: S6, locator: "p. 123"}], how_known: "Same as religious_heritage_by_birth; baptism record not read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father held occasional government posts; administrator of Caprese at the birth", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early life and works'"}], how_known: "Britannica."}
