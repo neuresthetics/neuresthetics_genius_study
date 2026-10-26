@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO→Quaker (paternal grandparents) @0.5 synced from heritage; baptism/catechism UNKNOWN. Chart-moving NO."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #126 / F4 rank 127). Goals: earlier own-voice on God/atheism; corroborate or lift B; keep honest BELOW/0.5 if not. Opened Tanner Lectures 1995 / LSAHM (S6); Road to Reality 2004 ch.1 (S7); Spectator Fink 2020 interview (S8); Wikipedia EN dual bio (S9, P50). BBC Radio 4 25 Sep 2010 religion quote still aggregator-only (Today archive page has no religion text; audio not transcribed) — unused for scoring. A stays BELOW_THRESHOLD (P20/P38): no explicit denial of God; Spectator 2020 'doesn't mean I'm an atheist' / agnostic; Brief History 1991 purpose remark secondary via Wikipedia. primary ATHE @0.5 alt AGNOS kept (W3); Spectator strengthens AGNOS alt. B 3 stays @0.5: basis inference_from_work→written_profession (S6 timeless mathematical laws / mathematical structure just there in nature; S7 entire physical world governed according to mathematical laws); P16 Hilbert / P35 keep 0.5 without exception/no-exception claim (alt 4); support corroborated. mid_basin BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S9. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): ruling W3 (v8's call on the auditor's advice): ATHE at 0.5, alternative AGNOS, kept. (Note) the undated tilings cite P12 and P17 instead of P39. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 127). Basics from the Nobel Prize site (facts page and biographical) and MacTutor (O'Connor and Robertson). Worldview from one recorded interview (New Scientist, 14 November 2022, Michael Brooks), long after the working years (P1 cap 0.5). Scientist (P30). primary_system ATHE (0.5, alt AGNOS); A BELOW_THRESHOLD (named reading 4); B 3 (0.5, alt 4); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1965–1967 (0.7). Not plotted. Draft, not reviewed."}
@@ -70,7 +71,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Nobel-recognized theorem and twistor theory (S1, S3).", certainty: 0.7, cites: [{source: S1, locator: "facts page"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Quaker (paternal grandparents)", certainty: 0.5, cites: [{source: S2, locator: "opening"}], how_known: "Same as religious_heritage_by_birth; parents' practice not stated."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father: Lionel Sharples Penrose FRS, medical geneticist (Galton Chair at UCL)", certainty: 1.0, cites: [{source: S2, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "Both sources."}
@@ -181,8 +182,8 @@ heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "English; paternal Quaker family (grandfather James Doyle Penrose, grandmother of a Quaker banking family); maternal grandmother of a Jewish family from St Petersburg", certainty: 0.7, cites: [{source: S2, locator: "opening; Margaret paragraph"}], how_known: "Nobel biography."}
   religious_heritage_by_birth: {value: "Quaker (paternal grandparents)", certainty: 0.5, cites: [{source: S2, locator: "opening"}], how_known: "Grandparents only; his parents' practice is not stated."}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Quaker heritage on grandparents' side; no baptism/initiation record for Roger opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"

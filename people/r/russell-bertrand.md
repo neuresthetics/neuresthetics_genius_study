@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
   last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: native_name TODO→Bertrand Arthur William Russell @0.7 (matches full_name / SEP). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (grandmother upbringing; denomination not named on file). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score E_scope 4 (0.7) from What I Believe / Free Man's Worship in S5 plus WINaC Natural-Law (S2/S5) — man part of nature under same laws as stars and atoms; no in-group miracles. P7 world's order. C/D already 4. Chart-moving: no (A/B plotted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 13). Basics from SEP (Irvine 2024). Worldview from 'Why I Am Not a Christian' (lecture 6 March 1927; Bertrand Russell Society web copy) and 'Am I an Atheist or an Agnostic?' (1947; web copy). Not a scientist (P30): logic and philosophy. primary_system AGNOS (0.5, alternative ATHE); A_locus 4 (0.5, P38); B_cause 4 (0.5, alternative 3); C 4 (0.7); D 4 (0.5); E TODO; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
@@ -28,7 +29,7 @@ identity:
     field: philosophy
     field_bucket: philosophy
   full_name: {value: "Bertrand Arthur William Russell", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP alone."}
-  native_name: {value: TODO}
+  native_name: {value: "Bertrand Arthur William Russell", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Same as full_name (English); SEP."}
   aliases:
     - {name: "Bertrand-Russell", kind: "roster alias"}
     - {name: "Russell-Bertrand", kind: "roster alias"}
