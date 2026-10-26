@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Leipzig) @0.7 from Wikipedia S6 (baptised at St. Thomas Church). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #125 / F4 rank 126). Goals: more prose essays/letters on nature-order and God; raise B or A if honest; else document. Read: Correspondence of Wagner and Liszt vol. 2 (Hueffer; Gutenberg #4234) letter London 7 June 1855 (Schopenhauerian will-of-life / organ of perception / brain; Buddhism/Nirwana; rejects Catholic Creator who converts suffering into fiction); Letters to August Röckel (Sellar 1897) Letter VI London spring/summer 1855 (Kant/Schopenhauer: subjective character of time, space, causality as forms of perception; Will as Ding an sich; negation of Will) and Letter VII Zurich 23 Aug 1856 (renunciation / world's nothingness — A/renunciation lead, not B); On State and Religion (Ellis Prose Works vol. 4; Wahn/King — no clearer A/B locus); Wikipedia EN (P50 dual bio). P47 source_quality on S1–S6. Ruling W2: primary_system stays BELOW_THRESHOLD (CHRIST/BUDDH/IDEAL leads; Liszt letter strengthens BUDDH/IDEAL, does not fit a listed code). A stays BELOW_THRESHOLD (mixed Creator-reject vs divine Christ unchanged; Liszt/Röckel do not settle 2–3 vs 1). B 3 @0.5 single → 3 @0.7 corroborated, alt 4 (S2 Religion and Art + S4 Liszt 7 June 1855; S5 Röckel VI agrees; Schopenhauer/Kant named-alt-4 → 0.7 pattern; P48). mid_basin stays BELOW_THRESHOLD (A blocks). first_evidence_of_lio_type_views 1880 → 1855. Chart-moving NO (still unplotted: A BELOW). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note tidied (no score change): inner quotation marks in the ATHE candidate reason ('the ever louder \"Atheism\" of our day'; the Jewish \"Creator of heaven and earth\") now match the source."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (WA4) statement 2 locator pp. 215–216 -> p. 215. (WA6) the three statements relabelled scholarly edition -> primary transcription, the house label for a web copy (MC8, Keynes precedent). (WA8) B 3 at 0.5 re-grounded on the P27 anchor and P30 #14 (the reversal of the will as 'an abrogation of the laws of Nature', p. 215; Schopenhauer precedent); the P41 extension dropped; alternative 4 kept with a note. Ruling W2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, IDEAL added as a lead. (Notes) S1 credits Cooke and Britannica Editors, typed tertiary. No scored value changes."}
@@ -68,7 +69,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Revolutionary influence on Western music (S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Lutheran (Leipzig)", certainty: 0.7, cites: [{source: S6, locator: "Early life: baptised at St. Thomas Church"}], how_known: "Baptism at Thomaskirche (Lutheran) implies Lutheran household. Context only."}
   family_religious_practice: {value: TODO}
   parents_and_household: []
   household_circumstances: {value: "Artistic and theatrical household: several elder sisters became opera singers or actresses", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
@@ -166,9 +167,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German (Saxon)", certainty: 0.5, cites: [{source: S1, locator: "facts box"}], how_known: "Coder's reading of the birthplace."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Lutheran (Leipzig)", certainty: 0.7, cites: [{source: S6, locator: "Early life: baptised at St. Thomas Church, Leipzig"}], how_known: "Wikipedia: baptised at St. Thomas Church (Thomaskirche), the Lutheran parish church of Leipzig. Context only — not scored adult primary_system (P19)."}
+  baptism_or_initiation: {value: "Lutheran baptism at St. Thomas Church, Leipzig", certainty: 0.7, cites: [{source: S6, locator: "Early life: He was baptised at St. Thomas Church"}], how_known: "Wikipedia explicit baptism place; Thomaskirche is Lutheran."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named; Pastor Wetzel school noted later as schooling, not catechism content."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -215,7 +216,7 @@ sources:
     author: "Deryck V. Cooke and Britannica Editors"
     citation: "Cooke, Deryck V., and Britannica Editors. \"Richard Wagner.\" Encyclopaedia Britannica (updated 8 October 2026). https://www.britannica.com/biography/Richard-Wagner-German-composer. Read live 2026-10-19; birth/death re-checked 2026-10-24."
     url: "https://www.britannica.com/biography/Richard-Wagner-German-composer"
-    accessed: 2026-10-24
+    accessed: 2026-10-25
     source_quality: "reference entry"
     reliability_note: "Signed body read through the 'Early life' section (to Tristan); question boxes not cited."
     used_for: [identity, basics, contribution, childhood, worldview, heritage, timing, lane_b, institutions, collaborators]
@@ -263,9 +264,9 @@ sources:
     type: tertiary
     kind: encyclopedia
     author: "Wikipedia contributors"
-    citation: "Wikipedia. \"Richard Wagner.\" English Wikipedia. https://en.wikipedia.org/wiki/Richard_Wagner. Read live 2026-10-24."
+    citation: "Wikipedia. \"Richard Wagner.\" English Wikipedia. https://en.wikipedia.org/wiki/Richard_Wagner. Read 2026-10-24; re-read 2026-10-25 Early life (baptised at St. Thomas Church)."
     url: "https://en.wikipedia.org/wiki/Richard_Wagner"
-    accessed: 2026-10-24
+    accessed: 2026-10-25
     source_quality: "reference entry"
     reliability_note: "P50 dual bio with Britannica for birth (1813-05-22, Leipzig) and death (1883-02-13, Venice). Not used alone for worldview scores."
     used_for: [basics]

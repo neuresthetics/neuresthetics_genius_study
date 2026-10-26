@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN after Wikipedia Religion section + Early life re-read (no childhood denomination). Chart-moving NO."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 76). Basics from Britannica (Robert E. Conot), signed body through the Newark years; Top Questions not cited. Worldview from Edward Marshall's interview, 'No Immortality of the Soul', New York Times, 2 October 1910 (transcript on sundaymagazine.org; NYT archive abstract; Edison Papers bibliography). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 (0.5, alt 3; interview, partly the interviewer's paraphrase); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). B_cause 4 -> BELOW_THRESHOLD: the strict wording is Marshall's paraphrase (reported speech cannot score alone, §7) and he is an inventor (P33). If the full NYT p. 15 text gives a line in his own voice, B becomes 3 (0.5, alternative 4) under P41. Timing fields updated."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #75, F5 rank 76). Needs: A BELOW_THRESHOLD; B BELOW_THRESHOLD. Primaries/own words: 1885 diary (S7 ariwatch facsimile transcript) 'unchangeable laws' / Almighty who forgot this mote; NYT Marshall 1910 own-voice Nature vs gods of religions (S2/S4/S6); clarifying letter Nature = Supreme Intelligence that rules matter (S6 via Israel); Columbian Magazine Jan 1911 denial of Being throned above directing affairs (S8 secondary quotation). Dual bio Wikipedia EN (S6, P50) + Britannica (S1). P47 on S1–S11. Inventor not scientist (P33). primary_system BELOW→DEISM @0.5 (Israel freethinker/scientific deism; Paine defense; P27 revelation/theology rejected; alt PANT/ATHE). A BELOW→4 @0.5 support corroborated (Nature=God + no Being throned above; alt 1 diary deist Almighty). B BELOW→4 @0.5 support corroborated (diary unchangeable laws P40; 1910/1911 reject intervening personal God; alt 3 P41). C UNKNOWN→3 @0.5 (no personal heaven reward / immortality). D UNKNOWN→3 @0.5 (theologians' theories unprovable). mid_basin stays BELOW (A≥3 branch needs 0.7). Span 1874→1877–1910 (phonograph/lamp/Pearl Street + battery). Chart-moving YES (A&B leave BELOW; faded hollow). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -60,7 +61,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1, S6).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: UNKNOWN, how_known: "Not stated in sources read (mother taught reading/writing; denomination not named)."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father Samuel Edison, Jr., lighthouse keeper and carpenter at Fort Gratiot from 1854; mother Nancy Elliot Edison (former schoolteacher)", role: parents, certainty: 0.7, cites: [{source: S1, locator: "family paragraph; 'Early years'"}, {source: S6, locator: "Early life"}], how_known: "Dual bio."}
@@ -219,9 +220,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "American", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not stated as childhood confession in sources read; adult freethinker / scientific deism is not birth-heritage (P19)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No baptism record opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"

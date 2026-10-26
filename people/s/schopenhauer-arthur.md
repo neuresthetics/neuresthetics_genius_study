@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth denomination; refuse Danzig-Protestant invention). Chart-moving NO."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 85). Basics from Britannica (Arthur Hübscher, signed; body only). Worldview from The World as Will and Idea (Haldane and Kemp translation, Gutenberg #38427 and #40868: vol. 1 §§55, 63, 68; vol. 3 ch. L) and SEP 'Arthur Schopenhauer' (Wicks, 2021). primary_system IDEAL (0.5, alt ATHE); A 4 (0.7); B 4 (0.5, alt 3: his own named exception, freedom appearing in the phenomenon in the denial of the will); C 3 (0.5, alt 4); E 3 (0.5, alt 4); mid_basin false (0.7). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fixes (#7, #8; v8's ruling on RQ1, on the auditor's advice): B 4 → 3 at 0.5, alternative 4. His own named exception, freedom appearing directly in the phenomenon in the denial of the will (§68), is a free will not bound by natural law, so the B 3 rule (CODING_GUIDE §6, P30) gives 3 as the value, as with Kant's noumenal freedom, even though §55 says nature 'admits of no exception'. C 3 now cites the §63 transmigration passage and is labelled the coder's analogy (P44(d) is a systems rule). mid_basin unchanged (false, 0.7)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #84, F4 rank 85). Needs: corroborate B (and C/E if cheap) so faded→dark if certainty ≥0.7 corroborated. Re-verified WWR Haldane–Kemp Gutenberg #38427/#40868 (§§1, 55, 63, 68; vol. 3 ch. L Epiphilosophy); SEP Wicks 2021 (Freedom of the Will essay summary; §5.3 asceticism 'freedom struggles against nature'; atheism §4); Britannica Hübscher via Wayback 20261001181634 / 20260926092729 (will as thing-in-itself; causality/appearance; ascetic negation); Wikipedia EN (S5, P50 dual-bio). P47 source_quality on S1–S5. A 4 @0.7 labelled support corroborated (S2+S3). B 3 @0.5 single → 3 @0.7 corroborated, alt 4 (aligned with Kant / P30 #14: free will appearing in the phenomenon in denial of the will is B 3 as value; SEP corroborates phenomenal necessity + freedom-exception; named alt 4 remains the pure §55 no-exception reading). E 3 @0.5 → 3 @0.7 corroborated, alt 4 (same passages). C 3 @0.5 stays single (SEP silent on eternal justice / transmigration). primary_system IDEAL @0.5 alt ATHE unchanged (CHRIST not a candidate). mid_basin false @0.7 unchanged (A ≥ 3). Chart-moving YES: faded→dark and hollow→filled. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -59,7 +60,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: UNKNOWN, how_known: "Not stated in sources read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father Heinrich Floris Schopenhauer, wealthy merchant (died April 1805)", role: father, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
@@ -188,9 +189,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German of Dutch family origin (Danzig merchant family)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life and education'"}, {source: S3, locator: "§1"}, {source: S5, locator: "Categories / Early life"}], how_known: "SEP: family of Dutch heritage; Wikipedia agrees; Britannica on Danzig merchant family."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not stated as childhood confession in S1–S5 / Wikipedia Early life (Danzig German merchant family; denomination not named). Refuse Lutheran-milieu invention."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No baptism record opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"

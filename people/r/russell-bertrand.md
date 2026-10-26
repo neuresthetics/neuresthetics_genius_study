@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
   last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (grandmother upbringing; denomination not named on file). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score E_scope 4 (0.7) from What I Believe / Free Man's Worship in S5 plus WINaC Natural-Law (S2/S5) — man part of nature under same laws as stars and atoms; no in-group miracles. P7 world's order. C/D already 4. Chart-moving: no (A/B plotted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 13). Basics from SEP (Irvine 2024). Worldview from 'Why I Am Not a Christian' (lecture 6 March 1927; Bertrand Russell Society web copy) and 'Am I an Atheist or an Agnostic?' (1947; web copy). Not a scientist (P30): logic and philosophy. primary_system AGNOS (0.5, alternative ATHE); A_locus 4 (0.5, P38); B_cause 4 (0.5, alternative 3); C 4 (0.7); D 4 (0.5); E TODO; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 4 -> 3 (0.5, alternative 4) under P41. D_authority source titled ('Has Religion Made Useful Contributions to Civilization?', 1930, as quoted in SEP from A1957, p. 23). S3 redated 1947 -> 1949: first printed in The Literary Guide and Rationalist Review 64(7), July 1949, pp. 115-16 (Collected Papers vol. 11, no. 5); no change to age or period fields (earliest evidence is still 1927)."}
@@ -63,7 +64,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Paradox, type theory, descriptions; co-founder of analytic philosophy.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: UNKNOWN, how_known: "Not stated (grandmother Frances raised him; denomination not named in S1–S6)."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Orphaned young (mother 1874, father 1876); grandparents won custody 'rather than have them raised as free-thinkers'; raised by his grandmother at Pembroke Lodge", role: other, certainty: 0.7, cites: [{source: S1, locator: "§1 chronology (1874, 1876, 1878)"}], how_known: "SEP."}
@@ -197,9 +198,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "English aristocratic family; grandson of Prime Minister Lord John Russell", certainty: 0.7, cites: [{source: S1, locator: "§1 chronology"}], how_known: "SEP."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Orphaned and raised by grandmother Frances; Wikipedia/Britannica on file do not name the childhood household denomination. Adult agnostic/atheist is not birth-heritage (P19)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No baptism record opened in sources read."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
