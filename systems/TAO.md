@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 4 (0.5) from SEP Daoism (natural dào as general order). A/B/D stay BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Taoism. No LIO moves.
 identity:
   id: TAO
   v7_1_number: 46
@@ -189,13 +192,14 @@ metaphysics:
       locator: opening; cosmology
     how_known: '0.5 — axes keep D BELOW_THRESHOLD for school variance.'
   reserved_exemptions:
-    value: Not addressed.
+    value: None as shared cosmology. Sages and priests may specialize ritually; the Tao does not grant
+      an in-group moral free pass. Immortalist streams vary.
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S3
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Taoism.'
   teleology_in_nature:
     value: Nature not biased to benefit humans (vs Mohism); dào of opportunities not commands.
     stance: none
@@ -412,6 +416,12 @@ sources:
   url: 'https://iep.utm.edu/daoism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed; covers classical and religious Daoism. Undated page.
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Taoism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Taoism'
+  accessed: '2026-10-25'
 ---
 # Daoism / Taoism (TAO)
 
@@ -457,3 +467,4 @@ Philosophical Daoism. Flag religious Daoism separately.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4 (0.5).
 - 2026-10-25: E_scope scored 4 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Taoism.
