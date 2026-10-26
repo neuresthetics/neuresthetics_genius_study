@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score B_cause 4 (0.5) from sources on file (idealism: mind/idea fundamental; no miracle
+      doctrine as family default).'
 identity:
   id: IDEAL
   v7_1_number: 34
@@ -212,8 +216,19 @@ lio_axes:
       \ postulates'."
     note: 'Evidence: S1 §1.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — philosophical idealism; not miracle-claim family.'
+    rationale: B=4 at 0.5. Alternative UNKNOWN if reading absolute idealism theistically.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if absolute idealism coded as divine action.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.5
@@ -452,3 +467,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read SEP Idealism (Guyer/Horstmann, rev. 2026-05-05).
 - 2026-10-25: D_authority scored 4 (0.7) from SEP Idealism.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.
+- 2026-10-25: B_cause scored 4 (0.5).

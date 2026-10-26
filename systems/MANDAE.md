@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 1 (0.5) from Britannica Mandaeanism (soul salvation via gnosis; ascent past
       Archons). Deepen ethics/practice notes. E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
 identity:
   id: MANDAE
   v7_1_number: 65
@@ -286,8 +289,19 @@ lio_axes:
         locator: opening
       note: "If Gnostic 'knowledge' is judged not to fix D."
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Priest/laity distinction and cultic purity do not clearly fix E under P7.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — baptismal elect / Nasoraean knowledge restricted'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "Salvation through esoteric knowledge (gnosis) of the soul's divine origin; sacred cosmological\
     \ and ritual texts; priestly Nasoreans vs laity."
@@ -459,3 +473,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, texts; D_authority 1 (0.5). Re-read Britannica.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored; ritual_and_practice filled from Britannica.
+- 2026-10-25: E_scope scored 1 (0.5).

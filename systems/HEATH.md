@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 0 (0.7) and D_authority 1 (0.7) from Britannica Heathenry (personal divinities
       for most; historical/archaeological fidelity). Was A BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score B1 C1 E1 (0.5) from sources on file (Heathenry/Ásatrú: gods/ritual; this-world honor;
+      in-group folk). A/D already scored.'
 identity:
   id: HEATH
   v7_1_number: 48
@@ -227,11 +231,33 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — gods and ritual efficacy.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — honor, reputation, afterlife halls/ancestors in streams; personal.'
+    rationale: C=1 at 0.5. Alternative 4 for purely this-world virtue readings.
+    alternatives:
+    - value: 4
+      note: 'Named alternative: this-world honor ethics only.'
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     certainty: 0.7
@@ -248,8 +274,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — folk/ethnic or reconstructionist in-group practice.'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: wide reconstruction variance.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Religion assembled from historical and archaeological sources; many seek greater fidelity to
     pre-Christian evidence than earlier Heathenry.
@@ -433,3 +470,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, schools. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored.
+- 2026-10-25: B/C/E scored (Heathenry/Ásatrú).

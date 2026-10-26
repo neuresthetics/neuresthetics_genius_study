@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 3 (0.5) rebirth/consequence (P44d-adjacent); B_cause 1 (0.5) Guru spirit /
       scripture. D already 1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
 identity:
   id: SIKH
   v7_1_number: 62
@@ -264,8 +267,19 @@ lio_axes:
       locator: Guru Nanak
     how_known: '0.5: the source does not discuss observation or reason.'
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — Ik Onkar / universal God; langar open'
+    rationale: E=3 at 0.5.
+    alternatives:
+    - value: 4
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Guidance of the Guru; hymn/scripture; Sikh as learner.
   certainty: 1.0
@@ -438,3 +452,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C/B scored.
+- 2026-10-25: E_scope scored 3 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,9 @@ record:
     by: Grok Bot
     summary: 'Score C_ledger 4 (0.7) from Britannica Thelema (True Will ethics, not cosmic ledger). A
       stays BELOW.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
 identity:
   id: THELEM
   v7_1_number: 74
@@ -265,8 +268,19 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — True Will individual + Aeonic cosmology'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 4
+      note: Named alternative if reading Liber AL as universal law.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Channeled revelation (Book of the Law); initiatory degrees; discover True Will (Great Work).
   certainty: 1.0
@@ -447,3 +461,4 @@ Thelemic identity. Not CHAOSM.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4.
+- 2026-10-25: E_scope scored 2 (0.5).

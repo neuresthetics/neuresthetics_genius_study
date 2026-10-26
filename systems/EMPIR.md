@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 4 (0.7) from sources on file (no God-locus; naturalistic/philosophical family).
 identity:
   id: EMPIR
   v7_1_number: 4
@@ -211,8 +214,19 @@ metaphysics:
     how_known: '0.7.'
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: The Empiricism Thesis is about knowledge; SEP gives no locus view for empiricism as such.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — no God; philosophical/naturalistic family.'
+    rationale: 'A=4: no God. Not BELOW: family coherent on atheism/naturalism about deity.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if school variance claimed.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'BELOW_THRESHOLD'
     how_known: 'SEP reports Hume on causation (known by habit, not reason), which bears on knowledge of
@@ -446,3 +460,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
 - 2026-10-25: D_authority scored 4 (0.7).
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.
+- 2026-10-25: A_locus scored 4.

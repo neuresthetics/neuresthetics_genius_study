@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 2 (0.5) from Britannica Falun Gong (other-dimension wheel; Master Li; not classical
       theism). C_ledger UNKNOWN kept thin.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 3 (0.5) and E_scope 2 (0.5) from Britannica Falun Gong (karma/de; cultivation
+      hierarchy).
 identity:
   id: FALUNG
   v7_1_number: 75
@@ -232,8 +236,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — karma / virtue (de) accumulation; impersonal law reading.'
+    rationale: C=3 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Master relationship as personal ledger.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: "Zhuan falun 'would henceforth serve as the focus of Falun Gong practice. Followers were\
@@ -248,8 +263,19 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — cultivation levels / apocalyptic themes; not closed ethnicity.'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Higher-level cultivation; reread sacred Zhuan falun; originally presented against fraud/faith-healing
     associations of qigong.
@@ -426,3 +452,4 @@ Falun Gong identity. Not generic qigong.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A_locus scored 2 (0.5).
+- 2026-10-25: C/E scored.

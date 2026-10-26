@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     by: Grok Bot
     summary: Score C_ledger 1 (0.5) from Britannica Hermetic writings (deification/rebirth via gnosis).
       Ethics note left thin. A/D already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B_cause 1 (0.5) and E_scope 2 (0.5) from sources on file (Hermetica; as above so below;
+      initiation).
 identity:
   id: HERMET
   v7_1_number: 61
@@ -230,8 +234,19 @@ lio_axes:
       locator: aim paragraph
     how_known: Prior score kept.
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Magic/astrology vs law not fixed as single B score across popular/learned Hermetism (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — magic / correspondence / theurgy streams.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 1
     certainty: 0.5
@@ -257,8 +272,19 @@ lio_axes:
       locator: popular Hermetism
     how_known: Prior score kept.
   E_scope:
-    value: 'UNKNOWN'
-    how_known: "Unlikely there was a Hermetic 'church'; E not fixed (P44)."
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — esoteric initiation; not ethnic closed.'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Gnosis (knowledge) of transcendent God, world, and humankind leading to deification; revelation
     over ordinary scientific discovery for occult affinities; Platonic dialogue form.'
@@ -435,3 +461,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools. A and D kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 1 (0.5).
+- 2026-10-25: B/E scored.

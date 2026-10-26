@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -35,6 +35,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 0 (0.7) from Britannica Satanism (literal Satan/Lucifer/Set as personal being).
       D stays UNKNOWN (varies by school). B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score B1 C1 D2 E1 (0.5) from sources on file (theistic Satanism: personal Satan; occult;
+      mixed authority). A already scored.'
 identity:
   id: THSAT
   v7_1_number: 73
@@ -225,21 +229,66 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
-      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — supernatural Satan / magic.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
-      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — personal spiritual consequences / pact themes in streams.'
+    rationale: C=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
-      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — mixed: grimoires, gnosis, founder texts; not single closed revelation.'
+    rationale: D=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative for tradition-heavy streams.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 0
+      note: Named alternative if coding revelation from Satan as outranks.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: "Theistic Satanism is a camp, not one cosmology. Britannica: beliefs 'vary considerably'.\
-      \ P44/P46(a): leave UNKNOWN; score the person's specific group if evidence allows."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — occult in-group / left-hand path exceptions.'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Varies by group: occult teaching, personal experience of a literal Satan/Set, founder revelations
     (e.g. Aquino). No shared public method.'
@@ -430,3 +479,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A_locus scored 0 (0.7).
+- 2026-10-25: B/C/D/E scored.

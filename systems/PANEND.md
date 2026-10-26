@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.5) and C_ledger 4 (0.5) from sources on file (philosophical; often
       naturalistic). A already 2; B BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.5) from sources on file. Alternatives named.
 identity:
   id: PANEND
   v7_1_number: 26
@@ -250,8 +253,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — all is God / same divine order'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Allies with scientific method in Lane’s cluster; evidence from cosmology/evolution argued for
     living-God forms
@@ -439,3 +453,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from Lane Zygon 2021.
 - 2026-10-25: deepened TODOs; added SEP Panentheism as contrast source; axes unchanged.
 - 2026-10-25: D/C scored at 0.5.
+- 2026-10-25: E_scope scored 4 (0.5).

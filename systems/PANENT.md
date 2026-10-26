@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,13 @@ record:
     by: Grok Bot
     summary: Score D_authority BELOW_THRESHOLD kept; score C_ledger 4 (0.5) often this-world ecological
       ethics without classical personal afterlife ledger. A already 2.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 3 (0.5) from sources on file (philosophical theology / reason+tradition
+      mix).
 identity:
   id: PANENT
   v7_1_number: 30
@@ -264,11 +271,38 @@ lio_axes:
       - source: S1
         locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — philosophical theology; reason with religious inheritance.'
+    rationale: 'D=3 at 0.5: mixed. Alternative 2 for church-tradition panentheists; 4 for process philosophers.'
+    alternatives:
+    - value: 2
+      note: 'Named alternative: ecclesial panentheism.'
+      cites:
+      - source: S1
+        locator: opening
+    - value: 4
+      note: 'Named alternative: process philosophy.'
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — world in God; same ultimate; not closed in-group'
+    rationale: E=3 at 0.5.
+    alternatives:
+    - value: 4
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Diverse: science–religion dialogue, process metaphysics, German Idealist dialectic, feminist
     metaphor; Clayton frames panentheism as a research program'
@@ -470,3 +504,5 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-15: draft from SEP Panentheism.
 - 2026-10-25: deepened TODOs, schools, practice/science; axes unchanged.
 - 2026-10-25: C_ledger scored 4 (0.5).
+- 2026-10-25: E_scope scored 3 (0.5).
+- 2026-10-25: D_authority scored 3 (0.5).

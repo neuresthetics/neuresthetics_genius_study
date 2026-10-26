@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) tradition/ancestors; C_ledger 4 (0.5) no fixed universal ledger
       text. A/B stay BELOW (community variance).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
 identity:
   id: NATAM
   v7_1_number: 55
@@ -243,8 +246,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — nation/tribe specific ceremony and land'
+    rationale: E=1 at 0.5. Family BELOW also named.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: many nations differ.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Oral narrative, place-based knowledge, restricted/initiated knowledge; participation valued
     over doctrinal belief; actions, words, and thoughts have power.'
@@ -429,3 +443,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes unchanged.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
+- 2026-10-25: E_scope scored 1 (0.5).

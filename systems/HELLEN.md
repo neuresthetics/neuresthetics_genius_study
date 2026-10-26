@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -44,6 +44,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 0 (0.7) and D_authority 1 (0.7) from YSEE About (polytheistic ancestral Hellenic
       Tradition). B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score B1 C1 E1 (0.5) from sources on file (Hellenism: gods/ritual; this-world honor; in-group
+      folk). A/D already scored.'
 identity:
   id: HELLEN
   v7_1_number: 49
@@ -233,13 +237,33 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
-      and ancestral authority noted but not scored.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — gods and ritual efficacy.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
-      and ancestral authority noted but not scored.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — honor, reputation, afterlife halls/ancestors in streams; personal.'
+    rationale: C=1 at 0.5. Alternative 4 for purely this-world virtue readings.
+    alternatives:
+    - value: 4
+      note: 'Named alternative: this-world honor ethics only.'
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     certainty: 0.7
@@ -257,9 +281,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: P45 lower-tier source (institutional page); doctrine too thin to score LIO under P44. Polytheism
-      and ancestral authority noted but not scored.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — folk/ethnic or reconstructionist in-group practice.'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: wide reconstruction variance.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Restoration via ancestral tradition, mythology, monuments, and public educational events. Not
     a revealed scripture religion on this page.'
@@ -445,3 +479,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read YSEE. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored from YSEE.
+- 2026-10-25: B/C/E scored (Hellenism).

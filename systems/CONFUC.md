@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 4 (0.5) from SEP Confucius (virtue/political consequences; no karma-type law).
       B/D already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.5) from sources on file. Alternatives named.
 identity:
   id: CONFUC
   v7_1_number: 44
@@ -266,8 +269,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — same human nature / li and ren as general order'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Study of Odes, ritual, music; model emulation; situational dialogue; wisdom as knowing others/situations;
     underdetermined textual tradition.'
@@ -451,3 +465,4 @@ Confucian/Ru identity; not CHNFOLK dump.
 - 2026-10-25: deepened ritual/virtues/politics from same SEP. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 4 (0.5).
+- 2026-10-25: E_scope scored 4 (0.5).

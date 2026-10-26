@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -43,6 +43,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) and C_ledger 4 (0.7) from Britannica Shinto (tradition/shrines;
       purity not karma ledger).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -274,8 +277,19 @@ lio_axes:
       - source: S1
         locator: Sect
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — kami and shrine locality; purity/ritual in-group'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 2
+      note: Named alternative for State Shinto universalism.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Practice and sincerity over formal philosophy; purification to commune with kami; myths and shrine
     tradition.
@@ -491,3 +505,4 @@ Shintō identity; not ANIM dump.
 - 2026-10-25: deepened from Britannica Shintō (Hirai). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
+- 2026-10-25: E_scope scored 1 (0.5).

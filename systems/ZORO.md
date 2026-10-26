@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 0 (0.7) and B_cause 1 (0.7) from Britannica Zoroastrianism (Gāthās/Avesta
       revelation; cosmic dualistic struggle). C already 0.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
 identity:
   id: ZORO
   v7_1_number: 67
@@ -261,8 +264,19 @@ lio_axes:
       - source: S1
         locator: Magi
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — cosmic dualism / final renovation universal'
+    rationale: E=3 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding fire-temple purity as in-group.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Prophetic revelation (Gāthās); Avesta; Magi interpretation.
   certainty: 1.0
@@ -453,3 +467,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/B scored.
+- 2026-10-25: E_scope scored 3 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) from Britannica Bon (oracular priests; tradition/ancestors). A/B/C/E
       UNKNOWN — article thin on locus/ledger.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A1 B1 C3 E1 (0.5) from Britannica Bon (spirits/ritual; Yungdrung Bon; karma-adjacent
+      Tibetan context). D already 1.
 identity:
   id: BON
   v7_1_number: 54
@@ -209,17 +213,47 @@ metaphysics:
     how_known: Britannica silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
-      fix LIO scores under P44/P46(a). Fuller Bon literature needed.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — deities/spirits; not clear classical monotheism.'
+    rationale: A=1 at 0.5.
+    alternatives:
+    - value: 0
+      note: Named alternative if coding Bon pantheon as personal gods A=0.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
-      fix LIO scores under P44/P46(a). Fuller Bon literature needed.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — ritual efficacy / spirits.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
-      fix LIO scores under P44/P46(a). Fuller Bon literature needed.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — Tibetan Bon/Buddhist karma adjacency; impersonal rebirth law reading.'
+    rationale: C=3 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative for personal spirit ledger.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     certainty: 0.7
@@ -241,9 +275,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
-      fix LIO scores under P44/P46(a). Fuller Bon literature needed.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — ritual and lineage in-group.'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: Yungdrung vs folk Bon variance.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Oracular priests and later sacred literature. Britannica does not state a formal epistemology.
   certainty: 0.7
@@ -430,3 +474,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science, schools from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D_authority scored 1 (0.7).
+- 2026-10-25: A/B/C/E scored at 0.5.

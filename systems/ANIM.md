@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) from Britannica Animism (tradition/ancestors; oral). A stays BELOW;
       B already 1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 1 (0.5) and E_scope 1 (0.5) from sources on file (spirit reciprocity; local
+      peoples).
 identity:
   id: ANIM
   v7_1_number: 40
@@ -226,8 +230,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — reciprocity with spirits; not a single heaven ledger.'
+    rationale: C=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if family too thin.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     certainty: 0.7
@@ -243,8 +258,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — local spirits and peoples; not universal same-rules naturalism.'
+    rationale: E=1 at 0.5. BELOW also named for vast variance.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: animism is a family.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Communication with spirits; divination when trouble occurs; open/eclectic rather than closed
     doctrine.
@@ -410,3 +436,4 @@ Umbrella — prefer specific codes when available.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D_authority scored 1.
+- 2026-10-25: C/E scored.

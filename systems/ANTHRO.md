@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     summary: 'Deepen ethics (Lucifer/Ahriman balance; Christ Representative), afterlife/karma, practice
       (Waldorf/biodynamic). Score C_ledger 3 (0.5) karma; A_locus 1 (0.5) Christ-centered spiritual worlds.
       S2 Wikipedia.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B_cause 1 (0.5) and E_scope 2 (0.5) from Wikipedia Anthroposophy (spiritual science;
+      Steiner hierarchy).
 identity:
   id: ANTHRO
   v7_1_number: 58
@@ -225,8 +229,19 @@ lio_axes:
       - source: S2
         locator: Union of science and spirit
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Silent (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — spiritual hierarchies / supersensible perception claims.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 3
     certainty: 0.5
@@ -256,8 +271,19 @@ lio_axes:
       locator: full article
     how_known: Prior score kept; short article.
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Silent (P44).
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — esoteric grades / initiation; not closed ethnic in-group.'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Human intellect can contact spiritual worlds; pure thought comprehends them; full access via
     latent faculties of spiritual perception independent of the senses; originally dreamlike participation
@@ -438,3 +464,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, community from re-read. D kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: ethics/afterlife/practice deepened from Wikipedia S2; A/C scored.
+- 2026-10-25: B/E scored.

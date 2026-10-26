@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 0 (0.7) and D_authority 0 (0.7) from Britannica Druze (al-Ḥākim divinity; secret
       revelation Al-Ḥikmah). B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score B1 C1 E1 (0.5) from Britannica Druze (esoteric; reincarnation; closed community). A/D
+      already scored.
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -231,13 +235,33 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
-      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — esoteric cosmogony / divine manifestations.'
+    rationale: B=1 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if thin.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
-      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — reincarnation among Druze; personal continuity.'
+    rationale: C=1 at 0.5.
+    alternatives:
+    - value: 3
+      note: Named alternative if reading rebirth as impersonal.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 0
     certainty: 0.7
@@ -254,9 +278,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
-      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — closed community; endogamy; restricted scripture.'
+    rationale: 'E=1: strong in-group.'
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "Esoteric: only ʿuqqāl ('knowers') fully access Al-Ḥikmah al-sharīfah. Ordinary members do not.\
     \ Conversion closed since 1043."
@@ -428,3 +462,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=0 scored from Britannica.
+- 2026-10-25: B/C/E scored.

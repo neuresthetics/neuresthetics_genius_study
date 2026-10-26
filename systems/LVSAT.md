@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) and C_ledger 4 (0.7) from Britannica Satanism / CoS materials on
       file (LaVey texts; this-world individualism). A already 4.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.7) from sources on file. Alternatives named.
 identity:
   id: LVSAT
   v7_1_number: 29
@@ -252,8 +255,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — LaVeyan this-world naturalism; no occult exceptions as family default'
+    rationale: E=4.
+    alternatives:
+    - value: 1
+      note: Named alternative if coding ritual psychodrama as exception claims.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Formally atheistic / rationalist camp; Satan as symbol; magic still practiced with intent
   certainty: 1.0
@@ -433,3 +447,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior god/miracles fills.
 - 2026-10-25: deepened TODOs from Britannica; axes unchanged.
 - 2026-10-25: D/C scored.
+- 2026-10-25: E_scope scored 4 (0.7).

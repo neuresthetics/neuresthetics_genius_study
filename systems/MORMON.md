@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,9 @@ record:
     by: Grok Bot
     summary: Score B_cause 0 (0.7) from Britannica LDS (continuing revelation; Moroni; visionary founding).
       A/C/D already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
 identity:
   id: MORMON
   v7_1_number: 71
@@ -277,8 +280,24 @@ lio_axes:
       note: Named alternative.
       cites: *id003
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — universal plan of salvation + temple ordinances restricted'
+    rationale: 'E=2 at 0.5: mixed universal/in-group.'
+    alternatives:
+    - value: 1
+      note: Named alternative if weighting temple exclusivity.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 3
+      note: Named alternative if weighting universal plan alone.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Continuing revelation through prophets; restored church; scripture (Bible + Book of Mormon +
     other).
@@ -473,3 +492,4 @@ LDS/Mormon identity; note denomination.
 - 2026-10-25: deepened from Britannica LDS (Melton). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: B_cause scored 0.
+- 2026-10-25: E_scope scored 2 (0.5).

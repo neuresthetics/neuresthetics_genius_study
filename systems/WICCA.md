@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,9 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) and C_ledger 4 (0.5) from sources on file (Rede; tradition/Book
       of Shadows varies). A stays BELOW; B already 1.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
 identity:
   id: WICCA
   v7_1_number: 52
@@ -274,8 +277,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — coven practice; seasonal magic; not same-rules naturalism'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Ritual practice and initiatory/lineage knowledge prioritized over uniform doctrine; magical will;
     some historical Murray thesis now widely abandoned by historians and many Wiccans.
@@ -466,3 +480,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
+- 2026-10-25: E_scope scored 1 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 4 (0.7) and B_cause 3 (0.5) from sources on file (Elohim as technologically
       advanced beings; this-world ethics). A/D already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 4 (0.5) from sources on file. Alternatives named.
 identity:
   id: RAEL
   v7_1_number: 76
@@ -273,8 +276,19 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — same physical universe; Elohim as extraterrestrials'
+    rationale: 'E=4 at 0.5: same physical laws; UFO contact as naturalized.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Elohim contact as in-group miracle.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "Raël's claimed contacts and books as scientific reinterpretation of Bible; embrace science/tech;\
     \ sensual meditation."
@@ -452,3 +466,4 @@ Raëlian identity only.
 - 2026-10-25: deepened from Encyclopedia.com Raëlians (Palmer 2005). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C/B scored.
+- 2026-10-25: E_scope scored 4 (0.5).

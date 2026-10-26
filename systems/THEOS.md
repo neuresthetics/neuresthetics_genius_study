@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 3 (0.5) karma/reincarnation from sources on file (P44d). E UNKNOWN; A/B/D
       already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
 identity:
   id: THEOS
   v7_1_number: 63
@@ -276,8 +279,19 @@ lio_axes:
       note: Named alternative.
       cites: *id003
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 2
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — root races / Masters hierarchy; esoteric grades'
+    rationale: E=2 at 0.5.
+    alternatives:
+    - value: 1
+      note: Named alternative for stronger in-group occultism.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Mystical experience of spiritual reality via meditation, revelation, intuition; study of comparative
     religion, philosophy, science; investigate mysterious laws and unknown powers.'
@@ -439,3 +453,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened from Britannica Kids theosophy article. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 3 (0.5).
+- 2026-10-25: E_scope scored 2 (0.5).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -43,6 +43,10 @@ record:
     by: Grok Bot
     summary: Score C_ledger 3 (0.5) karma rule P44(d) from Britannica/IEP (impersonal moral-causal law).
       Was BELOW_THRESHOLD. A/D stay BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Set B_cause and E_scope BELOW_THRESHOLD (0.7) — school variance (Nyaya naturalism vs bhakti
+      miracle; universal dharma vs jati). C already 3 karma.
 identity:
   id: HINDU
   v7_1_number: 47
@@ -224,8 +228,24 @@ lio_axes:
       \ hold one deity is genuinely God (S2), and Sāṅkhya explains the cosmos by Prakṛti and Puruṣa (S2)."
     note: P44(b).
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'Not fixed by the sources read (T1 search logged, 2026-10-15).'
+    value: 'BELOW_THRESHOLD'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — schools disagree on miracle vs natural order.'
+    rationale: 'B=BELOW: Nyaya/Samkhya vs Puranic/bhakti variance. Alternative 1 for popular Puranic.'
+    alternatives:
+    - value: 1
+      note: 'Named alternative: popular Puranic miracle.'
+      cites:
+      - source: S1
+        locator: opening
+    - value: 4
+      note: 'Named alternative: some philosophical schools.'
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 3
     certainty: 0.5
@@ -261,8 +281,24 @@ lio_axes:
       - source: S2
         locator: §1.b; Sāṅkhya
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 'BELOW_THRESHOLD'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — universal moksha streams vs jati/ritual in-group.'
+    rationale: E=BELOW. Alternatives 4 (Advaita universal) and 1 (ritual purity).
+    alternatives:
+    - value: 4
+      note: 'Named alternative: Advaita/universal dharma.'
+      cites:
+      - source: S1
+        locator: opening
+    - value: 1
+      note: 'Named alternative: jati/ritual in-group.'
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: No single epistemology; Nyāya four pramāṇas; Mīmāṃsā/Vedānta foundational Vedas; Yoga/Sāṅkhya
     distinctive; Neo-Hindu universalism
@@ -469,3 +505,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior partial fills (karma ledger; T1 audit).
 - 2026-10-25: deepened from Britannica + IEP; axes unchanged.
 - 2026-10-25: C_ledger scored 3 (0.5) karma rule.
+- 2026-10-25: B/E set BELOW (school variance).

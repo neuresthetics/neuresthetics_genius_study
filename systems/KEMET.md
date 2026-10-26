@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -44,6 +44,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 1 (0.7) and A_locus 0 (0.7) from kemet.org FAQ (polytheist Netjeru; ancient
       texts + Saq oracular). C stays UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 1 (0.5) and E_scope 1 (0.5) from sources on file (Maat judgment; temple/reconstruction
+      in-group).
 identity:
   id: KEMET
   v7_1_number: 50
@@ -240,8 +244,19 @@ lio_axes:
       locator: common/differ FAQ; worship services
     how_known: Prior score kept; reinforced from FAQ.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: "Ma'at noted without a clear personal ledger doctrine (P44)."
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — weighing of the heart / Maat; personal afterlife judgment theme.'
+    rationale: C=1 at 0.5.
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Maat as impersonal cosmic law.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     certainty: 0.7
@@ -257,8 +272,19 @@ lio_axes:
       - source: S1
         locator: Saq
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not fixed in FAQ (P44).
+    value: 1
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — reconstructionist / temple practice; ancient Egyptian in-group frame.'
+    rationale: E=1 at 0.5.
+    alternatives:
+    - value: 2
+      note: Named alternative.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Reconstruction from ancient liturgies and texts; Nisut translations; Saq oracular revelation
     in ritual; academic Egyptology credentials of founder.
@@ -442,3 +468,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read FAQ. B kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=1 scored from kemet.org.
+- 2026-10-25: C/E scored.
