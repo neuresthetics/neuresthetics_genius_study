@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -43,6 +43,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Mormonism. No LIO moves.
 identity:
   id: MORMON
   v7_1_number: 71
@@ -198,13 +201,14 @@ metaphysics:
       locator: opening; history
     how_known: Britannica — D=1 kept.
   reserved_exemptions:
-    value: Not addressed as formal exemptions category.
+    value: No blanket exemption from commandments. Priesthood offices and temple recommends structure
+      access to ordinances; judgment remains individual.
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S3
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Mormonism.'
   teleology_in_nature:
     value: Millennial/teleological history toward Zion and Second Coming more than nature design.
     stance: "designer's purposes"
@@ -448,6 +452,12 @@ sources:
   reliability_note: 'Later page of the same signed article (scriptures and doctrines). P44(e): read in
     the Wayback copy (https://web.archive.org/web/20261009234752/https://www.britannica.com/topic/Church-of-Jesus-Christ-of-Latter-day-Saints/Scriptures);
     live page not compared (live Britannica times out from the box).'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Mormonism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Mormonism'
+  accessed: '2026-10-25'
 ---
 # Church of Jesus Christ of Latter-day Saints / Mormonism (MORMON)
 
@@ -493,3 +503,4 @@ LDS/Mormon identity; note denomination.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: B_cause scored 0.
 - 2026-10-25: E_scope scored 2 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Mormonism.
