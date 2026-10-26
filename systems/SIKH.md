@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill miracles, exemptions, necessity from Wikipedia Sikhism. No LIO moves.'
 identity:
   id: SIKH
   v7_1_number: 62
@@ -148,13 +151,15 @@ metaphysics:
       locator: opening
     how_known: Thin.
   miracles:
-    value: Not addressed in sections used.
-    stance: not addressed
-    certainty: 0.7
-    cites:
-    - source: S1
+    value: 'Emphasis on the Name (Naam) and the Guru Granth Sahib over wonder-working. Sikh tradition
+      includes hagiographic miracle stories of the Gurus; mainstream teaching stresses honest work, service,
+      and remembrance of the One rather than miracle-seeking.'
+    stance: varies by school
+    certainty: 0.5
+    cites: &id001
+    - source: S3
       locator: opening
-    how_known: Silence.
+    how_known: '0.5 — Wikipedia core practices; miracle hagiography not detailed in extract.'
   petition_and_prayer:
     value: 'Bow before Guru Granth Sahib, hymns, ardas prayer.'
     stance: petition answered
@@ -188,13 +193,12 @@ metaphysics:
       locator: opening
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: 'None ethnic or clerical before Ik Onkar. Equality of humankind is core; rejects monopoly of
+      absolute truth by any one tradition. Khalsa discipline is vocation, not cosmic exemption from hukam.'
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    cites: *id001
+    how_known: '0.7 — Wikipedia equality / sarbat da bhala.'
   teleology_in_nature:
     value: Sants saw the divine in all things.
     stance: immanent ends
@@ -204,12 +208,11 @@ metaphysics:
       locator: history and doctrine
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Living under hukam (divine order/will) while choosing honest conduct, seva, and Naam. Not
+      a Western free-will treatise; moral agency is affirmed in daily discipline.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia core beliefs summary.'
 lio_axes:
   A_locus:
     value: 2
@@ -217,7 +220,7 @@ lio_axes:
       \ represented', and saw the divine 'in all things'; for Nanak 'the nam encompasses the whole of\
       \ creation', and grace is 'bestowed by God, or Akal Purakh'."
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: History and doctrine
     - source: S2
@@ -226,7 +229,7 @@ lio_axes:
     alternatives:
     - value: 1
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 1
     certainty: 0.5
@@ -407,6 +410,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Later page of the same signed article. P44(e): read in the Wayback copy (https://web.archive.org/web/20260820154938/https://www.britannica.com/topic/Sikhism/Guru-Nanak);
     live page not compared (live Britannica times out from the box).'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Sikhism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Sikhism'
+  accessed: '2026-10-25'
 ---
 # Sikhism (SIKH)
 
@@ -453,3 +462,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C/B scored.
 - 2026-10-25: E_scope scored 3 (0.5).
+- 2026-10-25: Filled miracles/exemptions/necessity from Wikipedia Sikhism.
