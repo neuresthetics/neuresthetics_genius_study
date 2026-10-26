@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score E_scope 4 (0.7) from What I Believe / Free Man's Worship in S5 plus WINaC Natural-Law (S2/S5) — man part of nature under same laws as stars and atoms; no in-group miracles. P7 world's order. C/D already 4. Chart-moving: no (A/B plotted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 13). Basics from SEP (Irvine 2024). Worldview from 'Why I Am Not a Christian' (lecture 6 March 1927; Bertrand Russell Society web copy) and 'Am I an Atheist or an Agnostic?' (1947; web copy). Not a scientist (P30): logic and philosophy. primary_system AGNOS (0.5, alternative ATHE); A_locus 4 (0.5, P38); B_cause 4 (0.5, alternative 3); C 4 (0.7); D 4 (0.5); E TODO; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 4 -> 3 (0.5, alternative 4) under P41. D_authority source titled ('Has Religion Made Useful Contributions to Civilization?', 1930, as quoted in SEP from A1957, p. 23). S3 redated 1947 -> 1949: first printed in The Literary Guide and Rationalist Review 64(7), July 1949, pp. 115-16 (Collected Papers vol. 11, no. 5); no change to age or period fields (earliest evidence is still 1927)."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #13). P47 source_quality on every source. Added S5 Why I Am Not a Christian and Other Essays (ed. Paul Edwards, Simon & Schuster / Allen & Unwin 1957; archive.org OCR of sixth paperback printing 1965) verifying WIANC p.5 disbelief, Natural-Law Argument pp.7–9, Free Man's Worship p.107 (1903; 'accidental collocations of atoms'; 'nature, omnipotent but blind'; no individual life beyond the grave), What I Believe ~p.48 ('Man is a part of nature'), and Has Religion… Objections ~p.30 ('no reason to suppose any religion true'). Added S6 MacTutor for dual-source basics (birth/death/Nobel). A_locus already multi-cited (S2+S3): labelled support corroborated; cites +S5; value/certainty stay 4 @ 0.5 (P38). B_cause was single on S2: cites +S5 → support single → corroborated; value/certainty stay 3 @ 0.5 (P41, alt 4). C support single → corroborated (S2+S5 Free Man). D primary-checked in S5 → certainty 0.5 → 0.7, support corroborated (S1+S5). first_evidence_of_lio_type_views 1927 → 1903 (Free Man's Worship, age 31); lio_views_relative_to_major_work after → during (at start of 1903–1913 span). Chart: faded hollow → faded filled (fill cue). Collected Papers vols. 10–11 still not opened; S3 web still 404 this pass. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
@@ -126,7 +127,14 @@ worldview:
       cites: [{source: S1, locator: "§6 (quoting A1957: 'there is no reason to suppose any religion true'; essay 'Has Religion Made Useful Contributions to Civilization?', 1930)"}, {source: S5, locator: "Has Religion Made Useful Contributions to Civilization?, The Objections to Religion, ~p.30"}]
       how_known: "SEP quote (S1) checked in the 1957 Edwards collection (S5 ~p.30; TOC places the essay at p.24; this printing's running head shows p.30 near the Objections section). Primary check done; certainty 0.7. Independent source ids → corroborated (P48). SEP's A1957 p.23 may be a different printing's pagination."
       rationale: "Observation and reason outrank revelation, which keeps no domain: 'The intellectual objection is that there is no reason to suppose any religion true' (S5 ~p.30; also via SEP)."
-    E_scope: {value: TODO}
+    E_scope:
+      value: 4
+      basis: written_profession
+      certainty: 0.7
+      support: corroborated
+      cites: [{source: S5, locator: "What I Believe (~p.48; man part of nature; same laws as stars and atoms)"}, {source: S2, locator: "The Natural-Law Argument"}, {source: S5, locator: "Why I Am Not a Christian, Natural-Law Argument, pp.7–9"}]
+      how_known: "Own published essays in the 1957 Edwards collection (S5) plus the 1927 lecture (S2 web, checked in S5). Written profession. Certainty 0.7 (web-copy ceiling on S2; S5 scholarly edition). Independent source ids → corroborated (P48)."
+      rationale: "Scored on the world's order (decision P7). At the LIO pole: same rules for stars, atoms, and humans. What I Believe: 'Man is a part of nature' whose motions 'follow the same laws that describe the motions of stars and atoms' (S5). Natural-Law Argument: laws are descriptions of how things behave, with no lawgiver and no favoured-group exemption (S2/S5 pp.7–9). Free Man's Worship's blind nature (S5 p.107) fits the same pole. No hidden in-group miracles or answered petitions in the account of nature. Under P7, immortality denial is scored on C (already C 4)."
   mid_basin: {value: BELOW_THRESHOLD, how_known: "A_locus 4 is scored only at 0.5, under the 0.7 bar for the A ≥ 3 branch (P10).", note: "If A reached 0.7 the result would be false."}
   statements:
     - text: "first, why I do not believe in God and in immortality; and, secondly, why I do not think that Christ was the best and wisest of men"
