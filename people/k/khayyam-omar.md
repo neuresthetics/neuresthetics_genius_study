@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: '2026-10-25'
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth TODO→Muslim (Seljuq Nishapur) @0.7 from SEP S4 + MacTutor S5; baptism/catechism UNKNOWN; family_religion filled at 0.5. Context only. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 63). Basics from Britannica (Britannica Editors, unsigned). Scientist under P30 (algebra, astronomy). The quatrains are not scored: Britannica says some scholars doubt he wrote poetry and that the verses appeared under his name only two centuries after his death (P42). primary_system UNKNOWN; A UNKNOWN; B 3 at 0.5 (alt 4) from working science only (P35); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19). Note added: a single quatrain needs a specific scholarly attribution; his treatise on existence is the lead for A."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #62, F5 rank 63). Needs: A UNKNOWN; B single source; B faded; 1 source. Primaries: Aminrazavi Wine of Wisdom 2007 Appendix A English of six philosophical treatises (new S3) — Principles of Existence (Necessary Being = God Most High), On Existence §20 (Necessary Being essence), Necessity of Contradiction (causal series to Necessary Being; evil accidental). SEP Mousavian et al. 2023 (new S4) corroborates Avicennan Necessary Existent / treatises as his. MacTutor (new S5) bio/math. Quatrains still unscored (P42). A UNKNOWN→1@0.7 written_profession support corroborated (alt BELOW if poetry corpus counted); B 3@0.5 single→3@0.7 written_profession support corroborated (alt 4); primary_system CLASS_THEISM@0.7 (ISLAM nominal); mid_basin true@0.7. P47 on S1–S5. Chart-moving YES (newly dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -64,7 +65,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1; S5).", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "Summary"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Muslim (inferred from birth milieu)", certainty: 0.5, cites: [{source: S4, locator: "§1"}, {source: S5, locator: "opening"}], how_known: "Same as religious_heritage_by_birth; parents not named as clerics."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father possibly a tentmaker (source of the name Khayyam / al-Khayyāmī)", role: father, certainty: 0.5, cites: [{source: S1, locator: "name paragraph"}, {source: S5, locator: "name paragraph"}], how_known: "Britannica 'may have been derived'; MacTutor: literal 'tent maker' may have been Ibrahim's trade."}
@@ -161,9 +162,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Persian", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "opening"}], how_known: "Britannica and MacTutor."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Muslim (Seljuq Nishapur / Islamic intellectual milieu)", certainty: 0.7, cites: [{source: S4, locator: "§1 Formative Period; Islamic intellectual tradition"}, {source: S5, locator: "opening (Islamic scholar); Seljuq orthodox Muslim state"}], how_known: "SEP places him in the Islamic intellectual tradition of Nishapur; MacTutor calls him an Islamic scholar raised in the Seljuq attempt at an orthodox Muslim state. Context only — not a scored adult primary_system (P19)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Not applicable / not stated for a Muslim birth-heritage coding."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood religious curriculum named in S1–S5."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -280,7 +281,7 @@ Sciences and philosophy at Neyshābūr; father possibly a tentmaker (name) [S1; 
 
 ## Heritage (context only)
 
-Persian [S1; S5]. Religious heritage by birth TODO.
+Persian [S1; S5]. Religious heritage by birth: Muslim / Islamic intellectual milieu of Seljuq Nishapur [S4; S5].
 
 ## Timing
 

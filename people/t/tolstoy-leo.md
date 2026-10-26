@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: '2026-10-25'
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Russian Orthodox @0.7 (S1+S6; excommunication implies prior Orthodox membership). Baptism/catechism remain UNKNOWN without opened record. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 50). Basics from Britannica (Morson). Worldview from The Kingdom of God Is Within You (preface dated 1893), Garnett translation, Gutenberg #4602 (web copy, 0.7 cap). Not a scientist (P30). primary_system CHRIST 0.5 (alt DEISM); A 2 at 0.7 (alt 3); B 3 at 0.5 (alt 4) under P41 by analogy (rejects miracles without stating exceptionless law); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Ruling question RQ1 batch H. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): B 3 at 0.5 (alt 4) now cites the P41 extension for miracle rejection instead of an analogy. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #50). Needs: A single source; B single source; B faded. Read A Confession (Maude via CCEL, S4) and My Religion / What I Believe (Huntington Smith, S5); dual-sourced bio via Wikipedia EN (S6). P47 source_quality on S1–S6. P48: A support single→corroborated (S2+S4; alt 3); B support single→corroborated (S2+S4+S5; P41, alt 4). Values/certainties unchanged. first_evidence_of_lio_type_views → 1882; lio_views_relative → during major work. Native name filled. Chart-moving YES: faded hollow → faded filled. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -61,7 +62,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1).", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: "Russian Orthodox", certainty: 0.7, cites: [{source: S6, locator: "Russian Orthodox Church / aristocratic family"}, {source: S1, locator: "Early years"}], how_known: "Same as religious_heritage_by_birth."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Mother Mariya Nikolayevna, née Princess Volkonskaya (d. before he was two); father Count Nikolay Ilich Tolstoy (d. 1837)", role: parents, certainty: 0.7, cites: [{source: S1, locator: "'Early years'"}], how_known: "Britannica."}
@@ -185,9 +186,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Russian aristocracy", certainty: 0.7, cites: [{source: S1, locator: "'Early years'"}], how_known: "Britannica."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Russian Orthodox", certainty: 0.7, cites: [{source: S6, locator: "excommunication from the Russian Orthodox Church (1901); Eastern Orthodox Christians categories"}, {source: S1, locator: "Early years / aristocratic Russian family"}], how_known: "Russian aristocratic birth + later excommunication from the Russian Orthodox Church imply Orthodox birth-heritage (Wikipedia S6; Britannica S1). Context only — not a scored adult primary_system by itself (P19). Explicit infant baptism record not opened."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Infant baptism expected for Russian Orthodox nobility but no baptism record or own-voice confirmation opened in S1–S6; leave UNKNOWN rather than invent."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named in sources read."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -215,7 +216,7 @@ review:
   open_questions:
     - "Map Kingdom / Confession / My Religion quotes to the Jubilee (Polnoe sobranie sochinenii) Russian edition."
     - "No explicit no-exception / miracle-denial-of-nature wording found for B 4; P41 keeps B at 0.5."
-    - "Family religion / Orthodox baptism details still TODO."
+    - "Baptism record still UNKNOWN (heritage Russian Orthodox filled 2026-10-25)."
 
 sources:
   - id: S1
@@ -323,7 +324,7 @@ Everything in this section is Lane B: labeled belief, not a finding. Unclear geo
 
 - Jubilee Russian edition mapping for Kingdom / Confession / My Religion.
 - No explicit no-exception claim for B 4 (P41 keeps 0.5).
-- Family religion / baptism still TODO.
+- Family religion / religious_heritage_by_birth: Russian Orthodox [S1; S6]. Baptism record still UNKNOWN.
 
 ## Research log
 
