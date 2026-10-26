@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -44,6 +44,10 @@ record:
     by: Grok Bot
     summary: Score B1 C1 E1 (0.5) from Britannica Druze (esoteric; reincarnation; closed community). A/D
       already scored.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen afterlife (reincarnation), ethics (seven precepts), practice/community from Wikipedia
+      Druze. Keep prior S1. No LIO moves.'
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -124,16 +128,15 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: "Strict monotheism; self-name muwaḥḥidūn ('unitarians'). Movement proclaimed al-Ḥākim a divine\
-      \ figure (condemned as heresy by Fatimid establishment, which held caliphs divinely appointed but\
-      \ not themselves divine)."
+    value: 'Strict uncompromising unity (tanzīh): God stripped of distinct attributes; transcendent and
+      immanent. Tajalli (theophany) as light in a maqaam, not incarnation of God as flesh. Influenced
+      by Neoplatonism/Ismailism.'
     stance: creator distinct from creation
-    certainty: 0.5
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: opening; Origins and practices
-    how_known: Unitarian monotheism is clear; classical creator/creation framing is coder gloss at 0.5
-      — fuller hikmah cosmology not in Britannica.
+    - source: S2
+      locator: God
+    how_known: '0.7 — Wikipedia Druze.'
   deity_personal:
     value: Al-Ḥākim treated as a divine figure who disappeared (1021) and will return; monotheistic unitarianism.
       Personal vs impersonal absolute not fully detailed in Britannica.
@@ -168,32 +171,32 @@ metaphysics:
       locator: Origins and practices
     how_known: Britannica.
   afterlife:
-    value: Not described in the Britannica article read (v7.1 note mentions reincarnation; that claim
-      is not sourced here — leave not addressed).
+    value: Immediate reincarnation of the soul into another human Druze body (same sex); finite number
+      of souls; cycle continues until reunion with the Cosmic Mind (al-ʻaql al-kullī). Soul cannot exist
+      without a body.
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article used
-    how_known: Britannica silence on reincarnation in the fetched text; do not invent from v7.1 note.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: Reincarnation; Seven Druze precepts
+    how_known: '0.7 — Wikipedia Druze (Reincarnation).'
   moral_ledger:
-    value: Not described in the source read.
+    value: "Seven precepts (truthfulness, mutual aid, renunciation of false worship, repudiation of evil,\
+      \ confession of unity, acquiescence in God's acts, absolute submission). Not a simple heaven/hell\
+      \ scorecard; progress via successive rebirths."
     stance: none
-    certainty: 0.5
-    cites:
-    - source: S1
-      locator: full article used
-    how_known: "Silence; 'none' means no ledger doctrine stated, not a positive denial."
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   authority:
-    value: 'Secret teachings of Al-Ḥikmah al-sharīfah; elite initiates (ʿuqqāl) alone have full access.
-      Founding missionaries and pastoral letters of al-Muqtanā. Revelation/esoteric scripture, not public
-      observation-and-reason.'
+    value: Epistles of Wisdom (Rasāʾil al-Ḥikma); esoteric layers (zahir/batin/anagoge). Conversion closed
+      since 1043. Uqqāl hold secrets; juhhāl do not.
     stance: revelation
     certainty: 0.7
     cites:
-    - source: S1
-      locator: Origins and practices
-    how_known: "Coder's reading of Britannica on hikmah and ʿuqqāl."
+    - source: S2
+      locator: Scriptures; Esotericism
+    how_known: '0.7 — Wikipedia.'
   reserved_exemptions:
     value: 'Not addressed as cosmology of natural-law exemptions. Taqiyyah (outward denial under persecution)
       is a social concession noted in older reference material, not developed here.'
@@ -292,38 +295,40 @@ lio_axes:
       - source: S1
         locator: opening
 epistemology:
-  value: "Esoteric: only ʿuqqāl ('knowers') fully access Al-Ḥikmah al-sharīfah. Ordinary members do not.\
-    \ Conversion closed since 1043."
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: Origins and practices
-  how_known: Britannica.
-ethics:
-  value: 'Not developed as a public ethical system in Britannica. Community cohesion, endogamy, and political
-    loyalty are emphasized historically.'
+  value: 'Esoteric: zahir for all readers, batin for seekers, anagoge for the few. Most community members
+    are juhhāl without access to holy books; uqqāl initiate into secrets. Taqiyya historically used under
+    persecution.'
   certainty: 0.7
   cites:
-  - source: S1
-    locator: opening; Origins and practices
-  how_known: "Coder's reading."
+  - source: S2
+    locator: Esotericism; Taqiyya
+  how_known: '0.7 — Wikipedia.'
+ethics:
+  value: "Seven precepts: truthfulness; protection of brethren; renunciation of former worship; repudiation\
+    \ of the devil/evil; confession of God's unity; acquiescence in God's acts; absolute submission. Monogamy;\
+    \ endogamy; alcohol/drugs discouraged for uqqāl."
+  certainty: 0.7
+  cites: *id001
+  how_known: '0.7 — Wikipedia.'
 practice:
   ritual_and_practice:
-    value: Many religious practices kept secret even from the community as a whole; full participation
-      reserved for ʿuqqāl. No conversion in or out; intermarriage rare and discouraged.
-    certainty: 1.0
+    value: "Thursday evening majlis at khalwa; juhhāl dismissed before uqqāl read scripture. Pilgrimage\
+      \ to Nabi Shu'ayb and other mazār/maqām. Few obligatory rituals; Eid al-Adha observed differently\
+      \ from mainstream Islam. Circumcision cultural, not required."
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: Origins and practices
-    how_known: Britannica.
+    - source: S2
+      locator: Prayer houses; Initiates
+    how_known: '0.7 — Wikipedia.'
   community_form:
-    value: 'Close-knit hereditary community in Lebanon, Syria, and Israel (plus smaller diasporas); politically
-      significant; >1,000,000 early 21st century per Britannica.'
-    certainty: 1.0
+    value: 'Ethnic closed community (~0.8–2M); uqqāl/juhhāl split; Shaykh al-ʻAql as elected religious
+      council head by country. Levant heartland (Syria, Lebanon, Israel, Jordan) plus diaspora (Venezuela,
+      US).'
+    certainty: 0.7
     cites:
-    - source: S1
-      locator: opening; History sections
-    how_known: Britannica.
+    - source: S2
+      locator: Location; Initiates
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
     value: Not a natural-science tradition. Esoteric scripture and initiate knowledge.
@@ -333,21 +338,29 @@ science:
       locator: Origins and practices
     how_known: "Coder's reading."
   current_stance:
-    value: Not addressed as a science stance in Britannica.
-    certainty: 1.0
+    value: Not a natural-science programme. Sources read do not state an official science policy.
+    certainty: 0.5
     cites:
-    - source: S1
-      locator: full article used
-    how_known: Britannica silence.
+    - source: S2
+      locator: Overview
+    how_known: '0.5 — thin.'
 schools_and_variants:
-- name: ʿuqqāl (initiate knowers) vs ordinary members
-  form: other
-  how_it_differs: Only ʿuqqāl fully access hikmah and services; not separate denominations.
-  lio_difference: Axes UNKNOWN for the community as a whole.
-  certainty: 1.0
+- name: Levantine Druze (Syria/Lebanon/Israel/Jordan)
+  form: popular
+  how_it_differs: Core ethnic communities; national political roles differ by state.
+  lio_difference: Axes as scored; E firmly ethnic in-group.
+  certainty: 0.7
   cites:
-  - source: S1
-    locator: Origins and practices
+  - source: S2
+    locator: Modern history
+- name: Diaspora (Venezuela/US/etc.)
+  form: modern
+  how_it_differs: Endogamy harder; some historical conversion out to Christianity/Protestantism.
+  lio_difference: Little axis change.
+  certainty: 0.5
+  cites:
+  - source: S2
+    locator: In the diaspora
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -416,6 +429,12 @@ sources:
   reliability_note: 'Unsigned editors’ article; origins, practices and history only, no doctrine. Newest
     2026 snapshot (20260925005116) was a bot-check page. P44(e): read in the Wayback copy (https://web.archive.org/web/20260109033233/https://www.britannica.com/topic/Druze);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Druze." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Druze'
+  accessed: '2026-10-25'
 ---
 # Druze Faith (DRUZE)
 
@@ -463,3 +482,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=0 and D=0 scored from Britannica.
 - 2026-10-25: B/C/E scored.
+- 2026-10-25: Deepened from Wikipedia Druze (tertiary).
