@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus support single→corroborated (P48) via D'Arcy Power 1897 (S7) quoting Generation essay 54 Creator-and-Father / Almighty first-cause diction agreeing with Willis S3. B already corroborated. Certainty stays 0.5 (named alt 0). Chart cue: faded hollow→faded filled. No fallacy_catalog; no figures/."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #212/228, F 3, rank 225). Goals: firm B with corroboration; seek any A from De Motu / letters / will; P35 if applicable; do not force plot. Opened Willis 1847 Works via Gutenberg (S3: De Motu fabric-of-nature + De Generatione first-agent / Omnipotent Creator); will text (S4) — P42 formulaic preamble → nominal_affiliations only; Galileo Project Westfall (S5) Anglican; Wikipedia dual-bio (S6). primary_system UNKNOWN → CLASS_THEISM @ 0.5 written_profession (alt CHRIST). A_locus UNKNOWN → 1 @ 0.5 written_profession, support single (alt 0). B_cause stays 3 @ 0.5 inference_from_work (P35); support single → corroborated (S1+S3); alt 4. E UNKNOWN → BELOW_THRESHOLD (P19). mid_basin UNKNOWN → BELOW_THRESHOLD (shape would pass; both axes only 0.5). Will Christ/Maker line not scored (P42). Chart-moving YES: not plotted → faded hollow at next figure refresh (A now scored; B faded; A single → hollow). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: 'later Renaissance' framing (S1) added as a lead (no score change)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 225). Source: Britannica scholars edition, signed by Andrew Gregory (read in full). Lasting: the circulation of the blood, De Motu Cordis (1628); he 'was the first to recognize the full circulation of the blood in the human body'; the theory 'was well established by the time of his death' (S1). Discovery probably 1618–19 but published 1628 (P30 publication). The generation work (1651) has no lasting wording. Span 1628, age 50. Scientist: B 3 at 0.5, alt 4 (P35); S1 notes his vitalism (blood with 'an irreducible life force of its own') and opposition to mechanism, which does not bear on law and exception. Worldview: no own words on God (the 'household-god' line is a metaphor for the heart); UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -98,12 +99,12 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.5
-      support: single
-      cites: [{source: S3, locator: "On Animal Generation, Willis p. 370 (first agent); p. 343 (adore Omnipotent Creator); generation exercises ('We acknowledge God, the supreme and omnipotent creator')"}]
-      how_known: "Own De Generatione (Willis 1847 English of the 1651 Latin; S3). Single source id → support single (P48). Certainty 0.5: named alt 0; naming flexibility (God/Nature/Soul of universe); Westfall free-thought gossip (S5); Generation post-dates the 1628 lasting span (allowed under P31 with no documented change)."
-      rationale: "Transcendent Creator distinct from the world, also omnipresent as sustaining/generating cause — classical-theist lean (A 1), not the bare interventionist pole. 'Eternal and omnipotent Deity, on whose nod the universe itself depends'; 'author or creator'; 'omnipresent, not less in the single and several operations of natural things, than in the infinite universe'; 'We acknowledge God, the supreme and omnipotent creator, to be present in the production of all animals' (S3). Named alternative: 0, if 'Creator and Father' / personal Saviour diction is read as full personal interventionist theism (CHRIST/CLTHEI pole). Household-god / sun-of-microcosm lines in De Motu are metaphors for the heart, not locus evidence (create-pass)."
+      support: corroborated
+      cites: [{source: S3, locator: "On Animal Generation, Willis p. 370 (first agent); p. 343 (adore Omnipotent Creator); generation exercises ('We acknowledge God, the supreme and omnipotent creator')"}, {source: S7, locator: "ch. III / treatise-on-development discussion: quotes Generation essay 54 Creator and Father / Almighty first-cause; omnipotent Creator reflex line"}]
+      how_known: "Own De Generatione (Willis 1847 English of the 1651 Latin; S3). Perpetual deepen 2026-10-25: D'Arcy Power 1897 Masters of Medicine biography (S7, Gutenberg) independently quotes the same Generation Creator-and-Father / Almighty first-cause diction and the 'image or reflex of the omnipotent Creator' line — scholarly secondary agreeing with primary → corroborated (P48). Certainty stays 0.5: named alt 0; naming flexibility (God/Nature/Soul of universe); Westfall free-thought gossip (S5); Generation post-dates the 1628 lasting span (allowed under P31 with no documented change)."
+      rationale: "Transcendent Creator distinct from the world, also omnipresent as sustaining/generating cause — classical-theist lean (A 1), not the bare interventionist pole. 'Eternal and omnipotent Deity, on whose nod the universe itself depends'; 'author or creator'; 'omnipresent, not less in the single and several operations of natural things, than in the infinite universe'; 'We acknowledge God, the supreme and omnipotent creator, to be present in the production of all animals' (S3; Power S7). Named alternative: 0, if 'Creator and Father' / personal Saviour diction is read as full personal interventionist theism (CHRIST/CLTHEI pole). Household-god / sun-of-microcosm lines in De Motu are metaphors for the heart, not locus evidence (create-pass)."
       alternatives:
-        - {value: 0, note: "Personal transcendent Creator at the interventionist pole, if Father/Saviour diction outweighs the God/Nature/Soul naming flexibility.", cites: [{source: S3, locator: "Willis p. 370; Creator and Father passage"}, {source: S4, locator: "will preamble (P42 context only)"}]}
+        - {value: 0, note: "Personal transcendent Creator at the interventionist pole, if Father/Saviour diction outweighs the God/Nature/Soul naming flexibility. Will Saviour diction (S4) is P42 context only — not cited here for score support.", cites: [{source: S3, locator: "Willis p. 370; Creator and Father passage"}, {source: S7, locator: "Creator and Father / Almighty first-cause quote"}]}
     B_cause:
       value: 3
       basis: inference_from_work
@@ -254,11 +255,22 @@ sources:
     source_quality: "other"
     reliability_note: "P50 dual-bio only; not used for worldview scores."
     used_for: [identity]
+  - id: S7
+    type: secondary
+    kind: scholarly book
+    author: "D'Arcy Power"
+    citation: "Power, D'Arcy. William Harvey (Masters of Medicine). London: T. Fisher Unwin, 1897. Project Gutenberg eBook #46664."
+    url: "https://www.gutenberg.org/files/46664/46664-h/46664-h.htm"
+    accessed: 2026-10-25
+    source_quality: "scholarly edition or monograph"
+    reliability_note: "Standard late-Victorian medical biography; quotes Generation Creator diction at length. Used to corroborate A (P48), not to set values."
+    used_for: [worldview]
+
 ---
 
 ## Summary
 
-William Harvey (1578–1657), English physician [S1]. Deepen D1: primary_system CLASS_THEISM @ 0.5; A 1 @ 0.5 (single); B 3 @ 0.5 corroborated (P35); mid_basin BELOW_THRESHOLD. Chart cue at next refresh: faded hollow. Will unused for scores (P42).
+William Harvey (1578–1657), English physician [S1]. Deepen D1 + perpetual 2026-10-25: primary_system CLASS_THEISM @ 0.5; A 1 @ 0.5 corroborated (S3+S7); B 3 @ 0.5 corroborated (P35); mid_basin BELOW_THRESHOLD. Chart cue at next refresh: faded filled. Will unused for scores (P42).
 
 ## Life and work
 
