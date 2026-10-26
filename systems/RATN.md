@@ -2,25 +2,29 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
-  - date: 2026-10-02
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P22 (stage 3 lens audit): one-line use_when against CLASS_THEISM, marked as v8''s pick.'
+    summary: "Decision P22 (stage 3 lens audit): one-line use_when against CLASS_THEISM, marked as v8's\
+      \ pick."
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S1): filled from SEP "Rationalism vs. Empiricism". D 3 at 0.5; A BELOW_THRESHOLD; B, C and E UNKNOWN. The P22 use_when line is kept. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S1): filled from SEP "Rationalism vs. Empiricism". D 3 at 0.5; A BELOW_THRESHOLD;
+      B, C and E UNKNOWN. The P22 use_when line is kept. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S1 audit (WEAKEN): D_authority 3 (0.5) → BELOW_THRESHOLD, alternative 3, under P44(b).'
@@ -29,10 +33,16 @@ record:
     summary: 'S10 audit fix: A BELOW_THRESHOLD now quote-backed.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'T2: B_cause UNKNOWN -> BELOW_THRESHOLD (alt 3), quote-backed; SEP Leibniz on Causation and Occasionalism added.'
+    summary: 'T2: B_cause UNKNOWN -> BELOW_THRESHOLD (alt 3), quote-backed; SEP Leibniz on Causation and
+      Occasionalism added.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'T2 audit fix: B BELOW_THRESHOLD now based on Spinoza (4, SEP Spinoza added as S4) vs Leibniz (3); Malebranche background only; quote marks fixed.'
+    summary: 'T2 audit fix: B BELOW_THRESHOLD now based on Spinoza (4, SEP Spinoza added as S4) vs Leibniz
+      (3); Malebranche background only; quote marks fixed.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from SEP Rationalism vs Empiricism (Markie/Folescu): family/parents, metaphysics
+      TODOs, ethics/practice/science/schools. Axes unchanged.'
 identity:
   id: RATN
   v7_1_number: 7
@@ -42,89 +52,183 @@ identity:
   aliases: []
 classification:
   kind:
-    value: epistemic stance
+    value: philosophical school or method
     certainty: 1.0
     cites:
     - source: S1
-      locator: §1
-    how_known: 'SEP: theses about sources of knowledge.'
+      locator: §1.1
+    how_known: SEP.
   family:
-    value: Epistemology (rationalism versus empiricism)
+    value: Significant concepts/knowledge gained independently of sense experience (innate knowledge and/or
+      innate concepts; intuition/deduction for external-world claims)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1.1
+    how_known: SEP.
+  parent_traditions:
+    value:
+    - 'Continental rationalism textbook cluster (Descartes, Spinoza, Leibniz — labels cautioned)'
+    - Platonic recollection antecedents
+    - Early modern epistemology
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1; §3
+    how_known: SEP. 0.7.
+  related_codes:
+  - code: EMPIR
+    relation: contrast case
+    note: Paired dispute
+  - code: IDEAL
+    relation: overlaps
+    note: Some rationalists develop idealist metaphysics
+  - code: DETERM
+    relation: neighbor (easily confused)
+    note: Spinoza etc.; not identical to RATN
+  - code: SCEPT
+    relation: contrast case
+    note: Rationalism often denies skepticism for some domain
+origins:
+  founding_era:
+    value: Early modern (17th–18th c.) as named dispute; Platonic antecedents
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1; §3
+    how_known: SEP.
+  founding_region:
+    value: Western Europe (textbook “Continental” casting); not a single founding city
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1
+    how_known: '0.7.'
+  founders_or_key_figures:
+    value:
+    - René Descartes
+    - Baruch Spinoza
+    - G. W. Leibniz
+    - Plato (recollection antecedent)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1; §3
+    how_known: SEP.
+  key_texts:
+  - value: 'Descartes, Meditations / Rules; Leibniz, New Essays; Plato, Meno (recollection)'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §2–3
+    how_known: SEP.
+metaphysics:
+  god_nature_relation:
+    value: Often central in classical rationalist metaphysics (Descartes God; Spinoza substance); not
+      required of every rationalist epistemology
+    stance: varies by school
     certainty: 1.0
     cites:
     - source: S1
       locator: §1
     how_known: SEP.
-  parent_traditions:
-    value: TODO
-  related_codes: []
-origins:
-  founding_era:
-    value: TODO
-  founding_region:
-    value: TODO
-  founders_or_key_figures:
-    value:
-    - René Descartes
-    - Baruch Spinoza
-    - Gottfried Wilhelm Leibniz
-    certainty: 0.7
+  deity_personal:
+    value: Varies (Descartes personal God; Spinoza non-personal substance)
+    stance: varies by school
+    certainty: 1.0
     cites:
     - source: S1
       locator: §1
-    how_known: 'SEP: ''the Continental Rationalists'', with its caution on the classification. 0.7.'
-  key_texts: []
-metaphysics:
-  god_nature_relation:
-    value: 'Varies by school: Descartes, Spinoza and Leibniz differ.'
+    how_known: SEP.
+  intervention:
+    value: Varies by school; not the defining RATN thesis
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: SEP.
+  miracles:
+    value: Not the defining thesis
+    stance: not addressed
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: SEP.
+  petition_and_prayer:
+    value: Not a practice system
+    stance: not addressed
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: SEP.
+  afterlife:
+    value: Varies (substance dualism etc.); not required for RATN label
     stance: varies by school
     certainty: 0.7
     cites:
     - source: S1
       locator: §1
-    how_known: SEP names them as rationalists; their God-views are not given there.
-  deity_personal:
-    value: TODO
-    stance: TODO
-  intervention:
-    value: TODO
-    stance: TODO
-  miracles:
-    value: TODO
-    stance: TODO
-  petition_and_prayer:
-    value: TODO
-    stance: TODO
-  afterlife:
-    value: TODO
-    stance: TODO
+    how_known: '0.7.'
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: Some place ethical truths under intuition/deduction; not a shared divine ledger
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1
+    how_known: '0.7.'
   authority:
-    value: 'Reason: by the Intuition/Deduction Thesis some propositions are knowable by intuition alone or deduced from them; some rationalists include ''metaphysical claims, such as that God exists''.'
+    value: Reason / intuition and deduction; often superiority or indispensability of reason theses
     stance: observation and reason
     certainty: 1.0
     cites:
     - source: S1
-      locator: §1
+      locator: §1.1
     how_known: SEP.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: No religious census exemption as shared creed
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: '0.7.'
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Varies (Leibniz etc.); not definitional of RATN
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1
+    how_known: '0.7.'
   necessity_and_freedom:
-    value: TODO
+    value: 'Often claims necessary truths known a priori (math, some metaphysics); free will varies by
+      figure'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2
+    how_known: '0.7.'
 lio_axes:
   A_locus:
-    value: BELOW_THRESHOLD
-    how_known: 'Rationalists differ on God (P44(b)): ''Some include metaphysical claims, such as that God exists''; on innate knowledge, ''According to others, God provided us with it at creation. Still others say it is part of our nature through natural selection'' (S1 §1).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Rationalists differ on God (P44(b)): 'Some include metaphysical claims, such as that God\
+      \ exists'; on innate knowledge, 'According to others, God provided us with it at creation. Still\
+      \ others say it is part of our nature through natural selection' (S1 §1)."
     note: 'Evidence: S1 §1 (Intuition/Deduction and Innate Knowledge theses).'
   B_cause:
-    value: BELOW_THRESHOLD
-    how_known: 'Members differ on B. S1 warns that ''Descartes, Spinoza and Leibniz are mistakenly seen as applying a reason-centered epistemology to a common metaphysical agenda'' (§1). Spinoza gives 4: ''Nor does God perform miracles, since there are no, and cannot be, departures whatsoever from the necessary course of nature'' (S4, §2). Leibniz gives 3: he wants a world that ''unfolds'' naturally ''without the direct intervention of God'' and rejects occasionalism as ''a perpetual miracle'', yet allows events that ''surpass all the force of creatures'', such as the Creation and the Incarnation (S2, §3). Background only: Malebranche''s occasionalism, ''there is only one true cause because there is only one true God'' (S3).'
+    value: 'BELOW_THRESHOLD'
+    how_known: "Members differ on B. S1 warns that 'Descartes, Spinoza and Leibniz are mistakenly seen\
+      \ as applying a reason-centered epistemology to a common metaphysical agenda' (§1). Spinoza gives\
+      \ 4: 'Nor does God perform miracles, since there are no, and cannot be, departures whatsoever from\
+      \ the necessary course of nature' (S4, §2). Leibniz gives 3: he wants a world that 'unfolds' naturally\
+      \ 'without the direct intervention of God' and rejects occasionalism as 'a perpetual miracle', yet\
+      \ allows events that 'surpass all the force of creatures', such as the Creation and the Incarnation\
+      \ (S2, §3). Background only: Malebranche's occasionalism, 'there is only one true cause because\
+      \ there is only one true God' (S3)."
     note: P44(b). Spinoza 4 vs Leibniz 3. Alternative 3.
     cites: &id001
     - source: S1
@@ -138,40 +242,103 @@ lio_axes:
       note: Named alternative (Leibniz).
       cites: *id001
   C_ledger:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in S1.
   D_authority:
-    value: BELOW_THRESHOLD
-    how_known: 'P44(b): the theses are relative to subject area, and SEP does not discuss revelation, so members differ; the sources read do not mention revelation.'
-    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from 3 (0.5) after the S1 audit.'
+    value: 'BELOW_THRESHOLD'
+    how_known: 'P44(b): the theses are relative to subject area, and SEP does not discuss revelation,
+      so members differ; the sources read do not mention revelation.'
+    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from
+      3 (0.5) after the S1 audit.'
     alternatives:
     - value: 3
-      note: Coder's first reading in batch S1.
+      note: "Coder's first reading in batch S1."
       cites:
       - source: S1
         locator: §1
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed in S1.
 epistemology:
-  value: TODO
+  value: Adopt Innate Knowledge and/or Innate Concept theses; Intuition/Deduction for substantive external-world
+    claims distinguishes strong rationalism from empiricist use of I/D for relations of ideas
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §1.1–2
+  how_known: SEP.
 ethics:
-  value: TODO
+  value: Some rationalists/intuitionists place moral truths under a priori intuition; not one school ethics
+  certainty: 0.7
+  cites:
+  - source: S1
+    locator: §1
+  how_known: SEP. 0.7.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: 'Philosophical method (meditation, demonstration); not a church'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: SEP.
   community_form:
-    value: TODO
+    value: Academic tradition; textbook Continental rationalists cluster (labels cautioned)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: §1
+    how_known: SEP.
 science:
   historical_stance:
-    value: TODO
+    value: Often intertwined with early modern natural philosophy; Descartes has empiricist leanings in
+      natural philosophy per SEP caution
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction; §1
+    how_known: '0.7.'
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: 'Live in debates on a priori knowledge, intuition, nativism (e.g. language, folk psychology)'
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §3–4
+    how_known: '0.7.'
+schools_and_variants:
+- name: Classical Continental rationalism (Descartes–Spinoza–Leibniz cluster)
+  form: scholastic or philosophical
+  how_it_differs: Innate ideas / demonstration; diverse metaphysics
+  lio_difference: Not rescored
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §1
+- name: Platonic recollection / Forms antecedent
+  form: scholastic or philosophical
+  how_it_differs: Knowledge as recollection; abstract Forms
+  lio_difference: Not rescored
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: §3
+- name: Contemporary nativism / intuitionism strands
+  form: modern
+  how_it_differs: Chomsky-style capacities vs propositional innate knowledge; moral intuitionism
+  lio_difference: 'Coding caution: capacities ≠ classical RATN'
+  certainty: 0.7
+  cites:
+  - source: S1
+    locator: §3–4
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: 'Philosophical position, not a census religion'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: SEP.
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 10
@@ -180,121 +347,125 @@ v7_1_rubric:
   V: 10
   X: 9
   total: 49
-  scoring_note: Rationalism excels in logical rigor and evidence prioritization, scoring high overall but docked slightly for occasional over-reliance on deduction in non-empirical contexts.
-  source: v7.1 data book, section 6 table (tables[4]) row 7 and section 7 scoring notes
+  scoring_note: 'Rationalism excels in logical rigor and evidence prioritization, scoring high overall
+    but docked slightly for occasional over-reliance on deduction in non-empirical contexts.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 7 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: 'v8''s pick (decision P22, 2026-10-02; one-line clarification against CLASS_THEISM, the rest of the stub is not yet sourced): use RATN when the person''s own writing makes reason working from innate ideas or first principles the main route to God and the world, and argues to God from the idea of God or from reason alone (ontological or idea-based arguments); a person whose main argument for God runs from the world, a posteriori (first cause, contingency, design), to the simple, immutable God of the Aristotelian-Thomistic-Falsafa line is CLASS_THEISM.'
-  do_not_use_when: 'A posteriori arguments to the simple, immutable God (first cause, contingency, design): CLASS_THEISM (P22). God identified with Nature (Spinoza): check PANT.'
-  neighbors: []
+  use_when: Person affirms innate knowledge/concepts or a priori substantive knowledge of the external
+    world via reason/intuition.
+  do_not_use_when: Mere praise of “reason” or STEM competence; subject-relative — can coexist with EMPIR
+    in other domains.
+  neighbors:
+  - code: EMPIR
+    relation: contrast case
+    note: Paired dispute
+  - code: IDEAL
+    relation: overlaps
+    note: Some metaphysical overlap
+  - code: SCEPT
+    relation: contrast case
+    note: Often anti-skeptical for a domain
 review:
   data_quality_flags: []
   open_questions:
-  - How to score A and B for an epistemology (ruling question).
-  - Adherents are TODO.
+  - When to code Chomsky-style nativism as RATN vs leave unscored?
+  - Split Spinoza into separate substance monism later?
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Peter Markie; M. Folescu
   year: 2021
-  citation: Markie, Peter, and M. Folescu. "Rationalism vs. Empiricism." Stanford Encyclopedia of Philosophy. First published August 19, 2004; substantive revision September 2, 2021. https://plato.stanford.edu/entries/rationalism-empiricism/.
-  url: https://plato.stanford.edu/entries/rationalism-empiricism/
-  accessed: '2026-10-15'
+  citation: 'Markie, Peter and M. Folescu, “Rationalism vs. Empiricism,” Stanford Encyclopedia of Philosophy
+    (Fall 2021 Edition), Edward N. Zalta (ed.).'
+  url: 'https://plato.stanford.edu/entries/rationalism-empiricism/'
+  accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
 - id: S2
   type: tertiary
   kind: encyclopedia
-  author: Bobro, Marc, and Tobias Flattery
+  author: 'Bobro, Marc, and Tobias Flattery'
   year: 2026
-  citation: Bobro, Marc, and Tobias Flattery. "Leibniz on Causation." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/leibniz-causation/
-  url: https://plato.stanford.edu/entries/leibniz-causation/
+  citation: 'Bobro, Marc, and Tobias Flattery. "Leibniz on Causation." Stanford Encyclopedia of Philosophy.
+    https://plato.stanford.edu/entries/leibniz-causation/'
+  url: 'https://plato.stanford.edu/entries/leibniz-causation/'
   accessed: '2026-10-15'
-  reliability_note: Signed SEP entry (substantive revision 2026-09-30); §3 on occasionalism and miracles read.
+  reliability_note: Signed SEP entry (substantive revision 2026-09-30); §3 on occasionalism and miracles
+    read.
 - id: S3
   type: tertiary
   kind: encyclopedia
-  author: Lee, Sukjae
+  author: 'Lee, Sukjae'
   year: 2019
-  citation: Lee, Sukjae. "Occasionalism." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/occasionalism/
-  url: https://plato.stanford.edu/entries/occasionalism/
+  citation: 'Lee, Sukjae. "Occasionalism." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/occasionalism/'
+  url: 'https://plato.stanford.edu/entries/occasionalism/'
   accessed: '2026-10-15'
-  reliability_note: Signed SEP entry; introduction and Leibniz comparison read. Malebranche is not named a rationalist in S1; used only as the contrasting case.
+  reliability_note: Signed SEP entry; introduction and Leibniz comparison read. Malebranche is not named
+    a rationalist in S1; used only as the contrasting case.
 - id: S4
   type: tertiary
   kind: encyclopedia
-  author: Nadler, Steven
+  author: 'Nadler, Steven'
   year: 2023
-  citation: Nadler, Steven. "Baruch Spinoza." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/spinoza/
-  url: https://plato.stanford.edu/entries/spinoza/
+  citation: 'Nadler, Steven. "Baruch Spinoza." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/spinoza/'
+  url: 'https://plato.stanford.edu/entries/spinoza/'
   accessed: '2026-10-15'
   reliability_note: Signed SEP entry (2023 revision); §2 (Ethics) read.
 ---
-
 # Rationalism (RATN)
 
-> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1). The v7.1 scores and note are unchanged.
+> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-Rationalism holds, by the Intuition/Deduction Thesis, that some propositions in a subject area are knowable by intuition alone or by deduction from intuited ones [S1, §1]. Some rationalists include 'metaphysical claims, such as that God exists'; some hold innate knowledge that, 'According to others, God provided us with it at creation' [S1, §1]. SEP names Descartes, Spinoza and Leibniz as the Continental Rationalists [S1].
+Rationalism: significant concepts or knowledge independent of sense experience; innate knowledge/concepts and/or intuition-deduction for external-world claims [S1].
 
 ## Core metaphysics
 
-Varies: the named rationalists differ on God [S1].
+Varies widely (Descartes God, Spinoza substance); defining thesis is epistemological [S1].
 
 ## Position on the LIO axes
 
-- D BELOW_THRESHOLD (alt 3): reason independent of experience, but members differ [S1, §1].
-- A BELOW_THRESHOLD: God often known a priori; locus varies.
-- B BELOW_THRESHOLD (alt 3): Spinoza (no miracles, 4) vs Leibniz (3); Malebranche background [S1, S4, S2, S3].
-- C, E UNKNOWN.
+Axes left BELOW_THRESHOLD / prior; this pass fills qualities only.
 
 ## Schools and variants
 
-Subject-relative forms; the Innate Knowledge and Innate Concept theses [S1, §1].
+Classical Continental cluster; Platonic antecedent; contemporary nativism/intuitionism (coding caution) [S1].
 
 ## Science
 
-TODO
+Intertwined with early modern natural philosophy; live in a priori / nativism debates [S1].
 
 ## Coding guidance
 
-P22 rule kept: RATN for reason-first, idea-based routes to God; a posteriori arguments go to CLASS_THEISM.
+Innate knowledge/concepts or a priori substantive external-world knowledge → RATN. “Likes reason” alone ≠ RATN.
 
 ## v7.1 scoring note
 
-Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
-
-> RATN (49/50) — Rationalism. Rationalism excels in logical rigor and evidence prioritization, scoring high overall but docked slightly for occasional over-reliance on deduction in non-empirical contexts.
+Authorial v7.1 note unchanged (see front matter).
 
 ## Open questions
 
-- A and B for a pure epistemology (ruling question).
-- Adherents are TODO.
+- When to code Chomsky-style nativism as RATN vs leave unscored?
+- Split Spinoza into separate substance monism later?
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
-- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): D_authority to BELOW_THRESHOLD (alt 3) under P44(b).
-- 2026-10-15 (S10 audit fix): A BELOW_THRESHOLD now quote-backed.
-- 2026-10-15 (targeted A/B pass, batch T2): searched topic-specific sources (SEP entries on causation, occasionalism, Abhidharma) for a statement fixing the missing axis; quotations checked word for word against fetched page text. RATN: B fixed as BELOW_THRESHOLD from S1, SEP "Leibniz on Causation" and SEP "Occasionalism".
-- 2026-10-15 (T2 audit fixes, /workspace/genius_study_audit/gs_dc95c1a_T2/run1/): RATN B rebased on Spinoza vs Leibniz; SEP "Baruch Spinoza" (Nadler) added, quote checked word for word.
+- 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
