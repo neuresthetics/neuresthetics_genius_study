@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Score C_ledger 4 (0.7); raise D_authority 3→4 (0.7) from EA materials on file (evidence/reason;
       this-world benefits). A stays UNKNOWN (movement silent on God).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: EFFALT
   v7_1_number: 12
@@ -241,8 +245,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Movement states no cosmology; members differ (P44).
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Movement states no cosmology; members differ (P44).
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — evidence-based interventions; no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -272,8 +287,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Movement states no cosmology; members differ (P44).
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — impartial concern; same rules.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Use evidence and reason; charity evaluators (e.g. GiveWell), randomized trials and cost-effectiveness
     where available; expected-value reasoning under uncertainty (including longtermist risk).'
@@ -480,3 +506,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened from Britannica plus SEP Philanthropy §3.2; D_authority 3 (0.7); schools and practice filled.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C scored; D raised to 4.
+- 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.

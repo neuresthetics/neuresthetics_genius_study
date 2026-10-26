@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP Idealism (philosophical argument; observation and reason).
       A stays BELOW_THRESHOLD; B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: IDEAL
   v7_1_number: 34
@@ -211,8 +215,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no shared divine ledger for idealism family.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -231,8 +246,19 @@ lio_axes:
       - source: S1
         locator: introduction
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — philosophical thesis; same order of mind/world debates.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'SEP distinguishes metaphysical vs epistemological *arguments* for idealism as a metaphysical
     thesis that reality is in some way mental. Epistemological route: conditions of knowledge force the
@@ -425,3 +451,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S5): filled from SEP; A BELOW_THRESHOLD.
 - 2026-10-25: deepened classification, origins, metaphysics TODOs, epistemology, ethics, practice, science, schools; re-read SEP Idealism (Guyer/Horstmann, rev. 2026-05-05).
 - 2026-10-25: D_authority scored 4 (0.7) from SEP Idealism.
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.

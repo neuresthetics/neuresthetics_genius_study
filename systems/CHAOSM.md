@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score A4 D4 C4 (0.7) from Britannica/Chaos Magick materials on file (no objective gods; practitioner-designed
       ritual). B stays BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: CHAOSM
   v7_1_number: 59
@@ -263,8 +267,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no objective gods; implied same chaos/order.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Universe intuited not defined; belief as tool; direct experience/knowledge of Atman=Brahman analogy;
     experimental practice.
@@ -440,3 +455,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened from Encyclopedia.com Chaos Magick (S2). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/D/C scored.
+- 2026-10-25: implied axis fill: E=4@0.5.

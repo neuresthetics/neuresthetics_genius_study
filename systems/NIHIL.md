@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: 'Score C_ledger 4 (0.7) from IEP Nihilism (moral nihilism: no absolute values / no divine
       ledger). A/D stay BELOW_THRESHOLD; B/E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: NIHIL
   v7_1_number: 18
@@ -217,8 +221,19 @@ lio_axes:
       - source: S1
         locator: introduction
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no shared miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -242,8 +257,19 @@ lio_axes:
       \ (P44b)."
     note: "Changed from UNKNOWN after the S3 audit (coder's conservative call)."
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no in-group cosmic exceptions as family thesis.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Epistemological nihilism denies possibility of knowledge/truth; linked to extreme skepticism
     and later antifoundationalism
@@ -428,3 +454,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from IEP Nihilism.
 - 2026-10-25: deepened TODOs; re-read IEP (Pratt).
 - 2026-10-25: C_ledger scored 4 (0.7).
+- 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.

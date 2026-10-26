@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP Skepticism (challenge via reason/modes; observation and
       reason). A stays BELOW_THRESHOLD.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: SCEPT
   v7_1_number: 20
@@ -190,11 +194,33 @@ lio_axes:
       P44b).'
     note: 'Evidence: S1 §2.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no miracle doctrine as skeptics.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no shared divine ledger.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -211,8 +237,19 @@ lio_axes:
       - source: S1
         locator: Pyrrhonian
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — modes apply generally.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Core topic: Humean (induction), Cartesian (external world via closure + skeptical hypotheses),
     Pyrrhonian (universal suspension; Agrippa trilemma). Responses: foundationalism, coherentism, infinitism,
@@ -386,3 +423,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from SEP Skepticism.
 - 2026-10-25: deepened TODOs; re-read SEP (Comesaña/Klein; updated 2026).
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,10 @@ record:
     by: Grok Bot
     summary: Score A4 D4 C4 E4 (0.7/0.7/0.7/0.5) from sundayassembly.org (secular; no creed; this-world
       ethics). B UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: SUNASM
   v7_1_number: 9
@@ -218,8 +222,19 @@ lio_axes:
       - source: S1
         locator: About
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — secular; no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -423,3 +438,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior practice fills.
 - 2026-10-25: deepened TODOs from about page; axes unchanged.
 - 2026-10-25: A/D/C/E scored from Assembly materials.
+- 2026-10-25: implied axis fill: B=4@0.5.

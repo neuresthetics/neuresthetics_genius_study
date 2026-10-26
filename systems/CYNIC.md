@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Score C_ledger 4 (0.7); A_locus 4 (0.5); raise D_authority 3→4 (0.7) from IEP Cynics (nature/reason;
       neglect of gods; no divine ledger).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: CYNIC
   v7_1_number: 15
@@ -230,9 +234,19 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
-      rebuke is ethical, not a cosmology of miracles.'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — neglect of gods/prayer; nature/reason.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -262,9 +276,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: 'IEP: Cynics neglect speculative metaphysics; stance does not fix this axis (P44). Petition
-      rebuke is ethical, not a cosmology of miracles.'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — virtue with nature generally.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Practice (askēsis) over theory. Dogmatic and speculative philosophy is ridiculed; living examples
     and parrhēsia carry the teaching. No surviving technical epistemology.
@@ -446,3 +470,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read IEP Piering.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/C scored; D raised to 4.
+- 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.

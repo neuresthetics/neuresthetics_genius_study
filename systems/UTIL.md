@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 3 (0.7) from SEP History of Utilitarianism (secular classical reason/reform).
       Enrich related codes (EFFALT). Axes A stays BELOW_THRESHOLD; B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: UTIL
   v7_1_number: 24
@@ -212,11 +216,33 @@ lio_axes:
       \ classical secular forms."
     note: 'Evidence: S1 §1.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — secular classical: no miracle doctrine.'
+    rationale: B=4 at 0.5; theological util alt.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: theological utilitarianism (Paley).'
+      cites:
+      - source: S1
+        locator: §1
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — secular classical: consequences, not divine ledger.'
+    rationale: C=4 at 0.5; Paley alt.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: theological utilitarianism (Paley).'
+      cites:
+      - source: S1
+        locator: §1
   D_authority:
     value: 3
     certainty: 0.7
@@ -239,8 +265,19 @@ lio_axes:
       - source: S1
         locator: §1
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — impartiality; same rules for moral patients.'
+    rationale: 'E=4 at 0.5 (careful: E is world order).'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Moral evaluation via expected or actual consequences for happiness/utility; Bentham’s felicific
     calculus parameters; experience and rules of thumb for efficiency.
@@ -414,3 +451,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from SEP History of Utilitarianism.
 - 2026-10-25: deepened TODOs; re-read SEP.
 - 2026-10-25: D_authority scored; EFFALT/SECHUM related; authority stance varies by school.
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

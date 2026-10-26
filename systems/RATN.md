@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -47,6 +47,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP Rationalism vs Empiricism (reason/intuition/deduction).
       Was BELOW_THRESHOLD.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: RATN
   v7_1_number: 7
@@ -246,8 +250,19 @@ lio_axes:
       note: Named alternative (Leibniz).
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no shared divine ledger for rationalism family.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -264,8 +279,19 @@ lio_axes:
       - source: S1
         locator: §1
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — reason applies generally.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Adopt Innate Knowledge and/or Innate Concept theses; Intuition/Deduction for substantive external-world
     claims distinguishes strong rationalism from empiricist use of I/D for relations of ideas
@@ -477,3 +503,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.

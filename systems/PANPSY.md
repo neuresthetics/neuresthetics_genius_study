@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP/IEP panpsychism materials on file (philosophical argument).
       A stays BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: PANPSY
   v7_1_number: 33
@@ -201,11 +205,33 @@ lio_axes:
       \ philosophy' (S1, introduction)."
     note: 'Evidence: S1 §2.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no miracle doctrine in analytic panpsychism.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — metaphysical thesis; no shared divine ledger.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -222,8 +248,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — mind/experience widespread; same order (P44c-ish).'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Arguments from hard problem / anti-emergence, intrinsic natures of matter, and related; combination
     problem is the chief internal challenge.'
@@ -405,3 +442,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-15 batch: A BELOW_THRESHOLD from SEP.
 - 2026-10-25: deepened TODOs; re-read SEP Panpsychism.
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

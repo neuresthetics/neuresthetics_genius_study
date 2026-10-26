@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 4 (0.7) and D_authority 4 (0.7) from IEP Solipsism (epistemic thesis; observation
       and reason). B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: SOLIP
   v7_1_number: 38
@@ -239,13 +243,33 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
-      \ (P44). Descartes' God escape is not part of SOLIP."
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
-      \ (P44). Descartes' God escape is not part of SOLIP."
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — not an ethics; no divine ledger.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -263,9 +287,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
-      \ (P44). Descartes' God escape is not part of SOLIP."
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — thesis about mind/world; no in-group miracles.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "On the Cartesian picture: what is known most certainly are the contents of one's own mind; other\
     \ minds only by analogy (then argued to fail). Wittgensteinian critique: psychological concepts are\
@@ -444,3 +478,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, practice, science, schools. Re-read IEP.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A=4 and D=4 scored from IEP.
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

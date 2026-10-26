@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: 'Score D_authority 4 (0.7) from SEP Pragmatism (experience, experiment, community of inquiry).
       Was BELOW_THRESHOLD.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: PRAG
   v7_1_number: 10
@@ -210,11 +214,33 @@ lio_axes:
     how_known: 'Pragmatists differ (P44b): James explored truth in religion; SEP gives no shared God-view.'
     note: 'Evidence: S1 §1–2.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — experiment/fallibilism; no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no divine ledger as family default.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -231,8 +257,19 @@ lio_axes:
       - source: S1
         locator: James
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — inquiry community; same experimental order.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: "The Pragmatic Maxim: 'a rule for clarifying the meaning of hypotheses by tracing their implications\
     \ for experience in specific situations'; 'a fallibilist, anti-Cartesian explication of the norms\
@@ -424,3 +461,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior partial fill (epistemology).
 - 2026-10-25: deepened from SEP Pragmatism; axes unchanged.
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

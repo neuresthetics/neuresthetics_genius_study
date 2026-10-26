@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP Rationalism vs Empiricism (experience as source; observation
       and reason). Was BELOW_THRESHOLD.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: EMPIR
   v7_1_number: 4
@@ -215,8 +219,19 @@ lio_axes:
       laws but not on whether exceptions occur.'
     note: "Evidence: S1 §1 on Hume's causation."
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — empiricism as method; no divine ledger (P44c implied).'
+    rationale: C=4 implied.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -235,8 +250,19 @@ lio_axes:
       - source: S1
         locator: §1
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — same natural world for experience (P44c implied).'
+    rationale: E=4 implied.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Empiricism Thesis: no source of knowledge/concepts in subject S other than experience; reject
     innate knowledge and innate concepts for that S'
@@ -419,3 +445,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.

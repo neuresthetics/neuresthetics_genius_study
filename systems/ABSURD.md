@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: 'Score A_locus 4, D_authority 4, C_ledger 4 (all 0.7) from SEP Camus (no God; lucid reason;
       live without appeal). B/E UNKNOWN.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.7, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: ABSURD
   v7_1_number: 14
@@ -208,8 +212,19 @@ lio_axes:
       - source: S1
         locator: introduction
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — without appeal; no miracle answer.'
+    rationale: B=4.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -241,8 +256,19 @@ lio_axes:
       - source: S1
         locator: §2
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — human condition generally; no in-group exemptions.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Skepticism about total knowledge; absurd as hiatus between longing for unity and unreasonable
     silence of the world; reason noting its limits
@@ -398,3 +424,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from SEP Albert Camus.
 - 2026-10-25: deepened TODOs; re-read SEP (Aronson).
 - 2026-10-25: A/D/C scored 4 (0.7) from SEP Camus.
+- 2026-10-25: implied axis fill: B=4@0.7, E=4@0.5.

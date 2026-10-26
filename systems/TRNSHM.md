@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) and C_ledger 4 (0.7) from sources on file (sci/tech argument; this-world
       ethics). A stays BELOW.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: TRNSHM
   v7_1_number: 13
@@ -207,8 +211,19 @@ lio_axes:
       \ computerized intelligence)."
     note: 'Evidence: S1, Ethics and philosophy. Alternative: 4 for the materialist majority.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — sci/tech; no miracle doctrine as default.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -239,8 +254,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in S1.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — materialist default; same natural order.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Futurism from scientific trends; advocacy for responsible application of emerging tech; internal
     ethical debate as tech becomes actual
@@ -402,3 +428,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from Britannica.
 - 2026-10-25: deepened TODOs; re-read Britannica Transhumanism (Ostberg).
 - 2026-10-25: D/C scored.
+- 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.

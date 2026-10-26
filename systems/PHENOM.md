@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Raise D_authority 3→4 (0.7) from SEP Phenomenology (first-person description/reflection).
       A/B/C/E UNKNOWN.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: PHENOM
   v7_1_number: 23
@@ -244,11 +248,33 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Method brackets existence questions; does not fix cosmology (P44).
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Method brackets existence questions; does not fix cosmology (P44).
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — epoché brackets; no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Method brackets existence questions; does not fix cosmology (P44).
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — method; no divine ledger.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -264,8 +290,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Method brackets existence questions; does not fix cosmology (P44).
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — method applies generally.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Study of structures of consciousness as experienced from the first person; intentionality (directedness
     toward objects via content/meaning). Classical methods: pure description, hermeneutic interpretation,
@@ -457,3 +494,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, metaphysics, epistemology, practice, science, schools; D_authority 3 (0.5). Re-read SEP.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D raised to 4.
+- 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -33,6 +33,10 @@ record:
     by: Grok Bot
     summary: Score D_authority 4 (0.7) from SEP Existentialism (first-person / observation and reason).
       A stays BELOW_THRESHOLD (Kierkegaard vs atheist streams).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (C=4@0.5, B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic.
+      Alternatives named.'
 identity:
   id: EXIST
   v7_1_number: 17
@@ -206,11 +210,33 @@ lio_axes:
       \ Varies: 'one finds secular and religious existentialists'."
     note: 'Evidence: S1 introduction.'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no shared miracle doctrine; this-world freedom.'
+    rationale: B=4 at 0.5 (atheist streams); Kierkegaard alt.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: 'Named alternative: Kierkegaardian religious existentialism.'
+      cites:
+      - source: S1
+        locator: §1
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — no moral absolutes; no divine ledger as family default.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     certainty: 0.7
@@ -228,8 +254,19 @@ lio_axes:
       - source: S1
         locator: §1
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — implied same human condition (P44c-ish).'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Engaged first-person analysis over detached “God’s-eye” systems; Kierkegaard subjective truth;
     Nietzsche perspectivism; Heidegger being-in-the-world
@@ -402,3 +439,4 @@ Authorial v7.1 note unchanged (see front matter).
 - Prior fill from SEP Existentialism.
 - 2026-10-25: deepened TODOs; re-read SEP (Aho).
 - 2026-10-25: D_authority scored 4 (0.7).
+- 2026-10-25: implied axis fill: C=4@0.5, B=4@0.5, E=4@0.5.

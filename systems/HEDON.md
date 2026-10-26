@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Score A_locus 4 and C_ledger 4 (0.7); raise D_authority 3→4 (0.7) from SEP Hedonism (value
       theory; no deity/ledger; experience).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
+      named.'
 identity:
   id: HEDON
   v7_1_number: 32
@@ -232,8 +236,19 @@ lio_axes:
       - source: S1
         locator: opening
   B_cause:
-    value: 'UNKNOWN'
-    how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — value theory; no miracle doctrine.'
+    rationale: B=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
     value: 4
     certainty: 0.7
@@ -263,8 +278,19 @@ lio_axes:
       - source: S1
         locator: opening
   E_scope:
-    value: 'UNKNOWN'
-    how_known: 'SEP: hedonism is a theory of motivation and value, not a cosmology (P44).'
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — pleasure/pain as general value facts.'
+    rationale: E=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing P44(c) implied score.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: 'Pleasure and pain are known in experience; debates turn on whether pleasure is phenomenal, intentional,
     or both. Empirical psychology is invited for motivational claims; ethical claims use philosophical
@@ -443,3 +469,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: deepened classification, metaphysics TODOs, epistemology, practice, science, schools; D_authority 3 (0.7). Re-read SEP Moore.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/C scored; D raised to 4.
+- 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.
