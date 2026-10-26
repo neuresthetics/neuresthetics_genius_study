@@ -2,25 +2,33 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: "Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the\
+      \ world's order (same rules for every kind of being and event, no in-group exceptions in this-world\
+      \ events). Salvation and moral community go on C_ledger."
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S1): filled from Britannica "Ethical Culture". D 3 at 0.5; A, B, C and E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S1): filled from Britannica "Ethical Culture". D 3 at 0.5; A, B, C
+      and E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
   - date: '2026-10-15'
     by: Grok Bot
     summary: 'S1 audit: Britannica credited as Britannica Editors (unsigned); leads for A noted.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from Britannica + Encyclopedia.com Ethical Culture: metaphysics TODOs,
+      epistemology/practice/science/schools; set A=4 (0.7) from Adler’s rejection of theism. Other axes
+      unchanged.'
 identity:
   id: ETHCUL
   v7_1_number: 5
@@ -35,17 +43,42 @@ classification:
     cites:
     - source: S1
       locator: opening
-    how_known: 'Britannica: ''a movement based upon the conviction that moral tenets need not be grounded in religious or philosophical dogma''.'
+    how_known: "Britannica: 'a movement based upon the conviction that moral tenets need not be grounded\
+      \ in religious or philosophical dogma'."
   family:
-    value: Ethical humanism
-    certainty: 0.7
+    value: Ethical humanism / Ethical Culture movement; deed over creed
+    certainty: 1.0
     cites:
     - source: S1
       locator: opening
-    how_known: The v7.1 label; Britannica's account is consistent. 0.7.
+    - source: S2
+      locator: opening
+    how_known: Britannica + Encyclopedia.com.
   parent_traditions:
-    value: TODO
-  related_codes: []
+    value:
+    - Reform Judaism (Adler’s background)
+    - Kantian ethics
+    - Free religious / Independent Church lectures
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: opening
+    how_known: S1/S2.
+  related_codes:
+  - code: SECHUM
+    relation: overlaps
+    note: Secular ethical humanism neighbor
+  - code: KANT
+    relation: overlaps
+    note: Adler’s Kantian every-person-as-end
+  - code: SUNASM
+    relation: overlaps
+    note: Congregational secular practice
+  - code: ATHE
+    relation: neighbor (easily confused)
+    note: Adler rejected theism but movement embraces diverse meaning-quests
 origins:
   founding_era:
     value: '1876'
@@ -55,7 +88,7 @@ origins:
       locator: opening
     how_known: Britannica.
   founding_region:
-    value: New York City, United States
+    value: 'New York City, United States'
     certainty: 1.0
     cites:
     - source: S1
@@ -72,36 +105,82 @@ origins:
     - source: S1
       locator: opening
     how_known: Britannica names Adler as founder and these other leaders.
-  key_texts: []
+  key_texts:
+  - value: 'Felix Adler, Creed and Deed (and founding address 1876)'
+    year: 1877
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: Bibliography; opening
+    how_known: '0.7 — named in literature; texts not fully read.'
 metaphysics:
   god_nature_relation:
-    value: 'Not addressed: ethics is held independent of religious dogma.'
+    value: Adler rejected theism; movement embraces ethical fellowship regardless of diverse approaches
+      to meaning
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.7 — founder vs openness.'
+  deity_personal:
+    value: No required theism; Adler rejected theism and finality of Jewish theology
+    stance: varies by school
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.7.'
+  intervention:
+    value: Ethics not grounded in divine intervention
     stance: not addressed
     certainty: 0.7
     cites:
     - source: S1
       locator: opening
-    how_known: Britannica gives no God-view.
-  deity_personal:
-    value: TODO
-    stance: TODO
-  intervention:
-    value: TODO
-    stance: TODO
+    how_known: '0.7.'
   miracles:
-    value: TODO
-    stance: TODO
+    value: Not a miracle religion; ethics independent of religious dogma
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7.'
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Sunday services with music/address; not petitionary theism required
+    stance: no petition
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: guise of a religious organization
+    how_known: '0.7.'
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Not a required afterlife doctrine; life-cycle rites without supernatural creed
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: guise
+    how_known: '0.7.'
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: No divine ledger; moral law and social ethics in this life
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: opening
+    how_known: '0.7.'
   authority:
-    value: 'Ethics independent of dogma: ''Adler contended that Judaism and Christianity were mistaken in making ethics dependent on religious dogma''; he started from Kant''s principle that every human being is an end in himself.'
+    value: "Ethics independent of dogma: 'Adler contended that Judaism and Christianity were mistaken\
+      \ in making ethics dependent on religious dogma'; he started from Kant's principle that every human\
+      \ being is an end in himself."
     stance: observation and reason
     certainty: 1.0
     cites:
@@ -109,58 +188,155 @@ metaphysics:
       locator: opening
     how_known: Britannica.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Universal intrinsic worth; no in-group supernatural exemption
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: ideals
+    how_known: '0.7.'
   teleology_in_nature:
-    value: TODO
-    stance: TODO
-  necessity_and_freedom:
-    value: TODO
-lio_axes:
-  A_locus:
-    value: UNKNOWN
-    how_known: 'Britannica gives no God-view for the movement. Leads not yet read: Felix Adler, Creed and Deed (1877), and the American Ethical Union''s statements.'
-  B_cause:
-    value: UNKNOWN
-    how_known: Not addressed.
-  C_ledger:
-    value: UNKNOWN
-    how_known: Not addressed.
-  D_authority:
-    value: 3
-    rationale: 'Moral reason, not religious dogma, grounds ethics (Adler; Kant). 3 not 4: the source speaks to ethics only, not to knowledge of the world.'
+    value: Not a designer-teleology doctrine; focus on ethical action
+    stance: none
     certainty: 0.5
     cites:
     - source: S1
       locator: opening
-    how_known: 0–4 scale (P1). Inferred from the ethics claim, 0.5.
+    how_known: '0.5.'
+  necessity_and_freedom:
+    value: Moral agency and duty to apply ethics to society; Kantian end-in-oneself
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: opening
+    how_known: '0.7.'
+lio_axes:
+  A_locus:
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: opening
+    how_known: '0.7 — Encyclopedia.com: Adler rejected theism; movement remains open to diverse meaning-quests.'
+    rationale: 'Founder rejects theism; A 4 for no-God grounding under P44a. Alternatives: leave UNKNOWN
+      if coding persons who keep private theism inside Ethical Culture.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if member retains theism under deed-over-creed openness.
+      cites:
+      - source: S2
+        locator: opening
+  B_cause:
+    value: 'UNKNOWN'
+    how_known: Not addressed.
+  C_ledger:
+    value: 'UNKNOWN'
+    how_known: Not addressed.
+  D_authority:
+    value: 3
+    rationale: 'Moral reason, not religious dogma, grounds ethics (Adler; Kant). 3 not 4: the source speaks
+      to ethics only, not to knowledge of the world.'
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0–4 scale (P1). Inferred from the ethics claim, 0.5.'
   E_scope:
-    value: UNKNOWN
+    value: 'UNKNOWN'
     how_known: Not addressed.
 epistemology:
-  value: TODO
-ethics:
-  value: Moral tenets need not rest on religious or philosophical dogma; Kant's principle that every human being is an end in himself.
+  value: Ethics independent of religious dogma; Kantian every person as end; deed over creed
   certainty: 1.0
   cites:
   - source: S1
     locator: opening
-  how_known: Britannica.
+  - source: S2
+    locator: 'Not the creed, but the deed'
+  how_known: S1/S2.
+ethics:
+  value: Intrinsic worth of each person; seek ethical principles as guide; work for material and spiritual
+    betterment of society; applied social ethics
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening
+  - source: S2
+    locator: ideals
+  how_known: S1/S2.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: 'Sunday services (music, reading, address); marriages and funerals; Adler promoted as a religion
+      with services'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: guise
+    how_known: S1/S2.
   community_form:
-    value: TODO
+    value: 'Societies (NY 1876; Chicago, Philadelphia, St. Louis…); American Ethical Union; international
+      Ethical/Humanist unions'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    - source: S2
+      locator: national; international
+    how_known: S1/S2.
 science:
   historical_stance:
-    value: TODO
+    value: Adler’s German university exposure to 19th-c. science and historical criticism shaped rejection
+      of theism
+    certainty: 1.0
+    cites:
+    - source: S2
+      locator: opening
+    how_known: Encyclopedia.com.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Ongoing Ethical societies; social-reform legacy; liberal social causes
+    certainty: 1.0
+    cites:
+    - source: S2
+      locator: applied social ethics
+    how_known: Encyclopedia.com.
+schools_and_variants:
+- name: New York Society for Ethical Culture / Adler
+  form: modern
+  how_it_differs: Founding society; Adler’s Kantian ethical religion
+  lio_difference: Primary for ETHCUL
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening
+- name: American Ethical Union societies
+  form: modern
+  how_it_differs: Federated US societies
+  lio_difference: Not rescored
+  certainty: 1.0
+  cites:
+  - source: S2
+    locator: national
+- name: International Ethical / Humanist unions
+  form: modern
+  how_it_differs: Broader humanist confederation overlap
+  lio_difference: May overlap SECHUM
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: international
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
-    value: TODO
+    value: 'Historically a few thousand in US societies (mid-1980s ~5,000 per Encyclopedia.com); small
+      movement'
+    certainty: 0.7
+    cites:
+    - source: S2
+      locator: membership figures
+    how_known: '0.7 — dated census.'
 v7_1_rubric:
   label: authorial v7.1 scores
   L: 10
@@ -169,88 +345,98 @@ v7_1_rubric:
   V: 10
   X: 9
   total: 49
-  scoring_note: Ethical Culture scores highly for its rational, action-oriented ethics, serving as a secular moral framework with excellent coherence.
-  source: v7.1 data book, section 6 table (tables[4]) row 5 and section 7 scoring notes
+  scoring_note: 'Ethical Culture scores highly for its rational, action-oriented ethics, serving as a
+    secular moral framework with excellent coherence.'
+  source: 'v7.1 data book, section 6 table (tables[4]) row 5 and section 7 scoring notes'
 revised_rubric:
   status: not started
   L:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   P:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   E:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   V:
-    score: TODO
+    score: 'TODO'
     rationale: ''
   X:
-    score: TODO
+    score: 'TODO'
     rationale: ''
 coding_guidance:
-  use_when: The person was a member or leader of an Ethical Culture society, or their own writing adopts its programme of ethics without religious dogma.
-  do_not_use_when: 'Membership alone does not set axes: the movement takes no stated God-view (S1); score A to E from the person''s own statements.'
-  neighbors: []
+  use_when: Person’s primary identity is Ethical Culture / Ethical Humanism / AEU society.
+  do_not_use_when: Generic secular humanism without Ethical Culture → SECHUM; mere Kantianism → KANT.
+  neighbors:
+  - code: SECHUM
+    relation: overlaps
+    note: Humanist neighbor
+  - code: KANT
+    relation: overlaps
+    note: Kantian ethics root
+  - code: SUNASM
+    relation: overlaps
+    note: Secular congregation
 review:
   data_quality_flags: []
   open_questions:
-  - 'A God-view: leads are Adler''s Creed and Deed (1877) and AEU statements (not yet read).'
-  - Adherents are TODO.
+  - Keep A=4 vs UNKNOWN given openness?
+  - Read Adler Creed and Deed for B/C?
 sources:
 - id: S1
   type: tertiary
   kind: encyclopedia
   author: Britannica Editors
-  citation: Britannica Editors. "Ethical Culture." Encyclopaedia Britannica. https://www.britannica.com/topic/Ethical-Culture.
-  url: https://www.britannica.com/topic/Ethical-Culture
-  accessed: '2026-10-15'
+  citation: 'Britannica Editors. "Ethical Culture." Encyclopaedia Britannica. https://www.britannica.com/topic/Ethical-Culture.'
+  url: 'https://www.britannica.com/topic/Ethical-Culture'
+  accessed: '2026-10-25'
   reliability_note: Unsigned article credited to Britannica Editors; read in full.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Benny Kraut, “Ethical Culture,” Encyclopedia of Religion (via Encyclopedia.com)'
+  url: 'https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/ethical-culture'
+  accessed: '2026-10-25'
 ---
+# Ethical Culture / Ethical Humanism (ETHCUL)
 
-# Ethical Culture (Ethical Humanism) (ETHCUL)
-
-> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1). The v7.1 scores and note are unchanged.
+> Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44.
 
 ## Summary
 
-Ethical Culture is 'a movement based upon the conviction that moral tenets need not be grounded in religious or philosophical dogma', founded by Felix Adler in New York City in 1876 [S1]. It spread to England, France, Germany, Austria, Switzerland, Japan and India [S1].
+Felix Adler’s 1876 New York movement: ethics need not rest on religious dogma; deed over creed; social welfare [S1][S2].
 
 ## Core metaphysics
 
-Not addressed; ethics is held independent of dogma [S1].
+Founder rejected theism; movement open to diverse meaning-quests; no required afterlife or miracle doctrine [S1][S2].
 
 ## Position on the LIO axes
 
-- D 3 (0.5): moral reason over religious dogma [S1].
-- A, B, C, E UNKNOWN.
+A set to 4 (0.7) from Adler’s rejection of theism [S2]; D remains 3; B/C/E UNKNOWN.
 
 ## Schools and variants
 
-TODO
+NY Society; AEU; international Ethical/Humanist unions [S1][S2].
 
 ## Science
 
-TODO
+19th-c. science and criticism in Adler’s formation; reformist practice [S2].
 
 ## Coding guidance
 
-Use for members or leaders; score axes from the person's own statements.
+Ethical Culture identity → ETHCUL. Broader secular humanism → SECHUM.
 
 ## v7.1 scoring note
 
-Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
-
-> ETHCUL (49/50) — Ethical Culture (Ethical Humanism). Ethical Culture scores highly for its rational, action-oriented ethics, serving as a secular moral framework with excellent coherence.
+Authorial v7.1 note unchanged (see front matter).
 
 ## Open questions
 
-- A God-view source: leads are Adler's Creed and Deed (1877) and AEU statements.
-- Adherents are TODO.
+- A=4 vs UNKNOWN under openness?
+- Primary Adler texts for B/C?
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S1): read the listed sources; quotations checked word for word against the fetched page text with a script. Britannica Top Questions boxes (AI-generated) not used.
-- 2026-10-15 (S1 audit fixes, run 1: 5 HOLD, 2 WEAKEN): source credit (Britannica Editors, unsigned); leads for A: Adler's Creed and Deed (1877), AEU statements.
+- Prior family/authority/ethics fills.
+- 2026-10-25: deepened TODOs; A scored; axes otherwise unchanged.
