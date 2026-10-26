@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -40,6 +40,9 @@ record:
     by: Grok Bot
     summary: Score C_ledger 1 (0.5) and E_scope 1 (0.5) from sources on file (spirit reciprocity; local
       peoples).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Animism. No LIO moves.
 identity:
   id: ANIM
   v7_1_number: 40
@@ -181,13 +184,15 @@ metaphysics:
       locator: daily lives
     how_known: '0.5.'
   reserved_exemptions:
-    value: Not addressed.
+    value: Philosophical/anthropological label for personhood of nonhumans; not a church with in-group
+      exemptions. Local indigenous religions that are animist may have their own restricted knowledge
+      — code those under NATAM/ABORIG/etc. when specific.
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Animism.'
   teleology_in_nature:
     value: World alive and interconnected; spirits animate nature — not designer teleology.
     stance: immanent ends
@@ -197,12 +202,11 @@ metaphysics:
       locator: nature FAQ
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Not a free-will metaphysics. Concern is ontology of persons in the world, not libertarian
+      agency theories.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Animism.'
 lio_axes:
   A_locus:
     value: 'BELOW_THRESHOLD'
@@ -221,14 +225,14 @@ lio_axes:
     rationale: "Spirits are 'capable of helping or harming human interests'; rites aim 'to influence powerful\
       \ spirits and so control important natural events'."
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: introduction; Tylor’s theory
     how_known: '0.5; the second quote is Tylor’s account. Alternative 0.'
     alternatives:
     - value: 0
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   C_ledger:
     value: 1
     certainty: 0.5
@@ -391,6 +395,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: Signed article by an anthropologist; read through the Tylor section. AI Top Questions
     ignored.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Animism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Animism'
+  accessed: '2026-10-25'
 ---
 # Animism (ANIM)
 
@@ -437,3 +447,4 @@ Umbrella — prefer specific codes when available.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D_authority scored 1.
 - 2026-10-25: C/E scored.
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Animism.
