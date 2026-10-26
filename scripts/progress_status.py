@@ -45,7 +45,7 @@ AUDITS = (
 NEXT_STEPS = (
     "Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; "
     "charts refreshed (88 plotted, 140 not scorable). "
-    "Systems pass complete (66 sourced, 10 sourced but unscored, 1 stub). "
+    "Systems pass complete (77 sourced, 0 sourced but unscored, 0 stubs). "
     "Roster frozen — no new people. "
     "Open for Jason (not blocking): Augustine mid_basin under P4; Linnaeus span end 1758 (RQ-Z5-N1). "
     "Revised rubric has not started. "
@@ -87,6 +87,7 @@ def table():
     # P46(a): sourced only with at least one value or BELOW_THRESHOLD; all-UNKNOWN = "sourced, unscored"
     unscored = sum(1 for d in past_stub if all((n or {}).get("value") == "UNKNOWN" for n in d["lio_axes"].values()))
     sourced = len(past_stub) - unscored
+    stubs = len(systems) - len(past_stub)
     settled, n_dec = decisions()
     tag = latest_tag()
     other = len(roster) - st["core"] - st["provisional"] - st["review"]
@@ -94,7 +95,7 @@ def table():
         ("Roster people", f"{len(roster):,}: {st['core']} core, {st['provisional']} provisional, {st['review']} review"
                           + (f", {other} new names still need a status" if other else "")),
         ("People coded (of core)", f"{coded} / {st['core']} (draft, unreviewed)"),
-        ("Belief systems sourced", f"{sourced} / {len(systems)} (P46; plus {unscored} sourced, unscored; the rest are stubs)"),
+        ("Belief systems sourced", f"{sourced} / {len(systems)} (P46; plus {unscored} sourced, unscored; {stubs} stubs)"),
         ("Decisions settled", f"{settled} / {n_dec}"),
         ("Audits", AUDITS),
         ("Latest tag", tag + (" (prerelease)" if re.search(r"alpha|beta|rc", tag) else "")),

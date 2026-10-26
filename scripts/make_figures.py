@@ -40,7 +40,7 @@ SOURCED_SYSTEMS = ["CLASS_THEISM", "CLTHEI", "CHRIST", "ISLAM", "JUDA", "DEISM",
                    "BAHAI", "ANIM", "CAODAI", "CHNFOLK", "HYLO", "CONFUC",
                    "SHINTO", "TAO", "HINDU", "HEATH", "HELLEN", "KEMET",
                    "RODNOV", "WICCA", "ABORIG", "BON", "NATAM", "SANTER",
-                   "VODUN", "ANTHRO", "CHAOSM", "HERMET", "SIKH",
+                   "VODUN", "ANTHRO", "CHAOSM", "HERMET", "SIKH", "4THWAY",
                    "THEOS", "DRUZE", "MANDAE", "YAZID", "ZORO", "MORMON",
                    "THSAT", "THELEM", "FALUNG", "RAEL", "SCIENT",
                    "DETERM", "LVSAT", "PANENT", "HEDON", "PANPSY", "IDEAL"]
@@ -376,8 +376,10 @@ def fig_systems_axes(out):
     cb.ax.set_yticklabels(["0 interventionist", "1", "2", "3", "4 LIO pole"])
     ax.set_title(f"The {len(labels)} sourced belief-system drafts on the v8 LIO axes\n"
                  "cell = score (certainty); grey hatched = no score (TODO, UNKNOWN or BELOW_THRESHOLD)", fontsize=11)
-    footer(fig, "Source: systems/*.md, lio_axes (v8 coder drafts, unreviewed; not the v7.1 rubric). "
-             f"The other {sum(1 for f in os.listdir(os.path.join(REPO, 'systems')) if f.endswith('.md') and f != 'README.md') - len(labels)} systems are stubs or sourced but unscored (P46).")
+    n_other = sum(1 for f in os.listdir(os.path.join(REPO, "systems")) if f.endswith(".md") and f != "README.md") - len(labels)
+    other = (f" The other {n_other} systems are stubs or sourced but unscored (P46)." if n_other else
+             " No system file is left as a stub or sourced but unscored (P46).")
+    footer(fig, "Source: systems/*.md, lio_axes (v8 coder drafts, unreviewed; not the v7.1 rubric)." + other)
     fig.tight_layout(rect=(0, 0.06, 1, 1))
     save(fig, out, "systems_axes.png")
 
@@ -617,7 +619,9 @@ def fig_people_systems_overlay(out):
     items = [{"B": p["B"], "A": p["A"], "kind": "person", "faded": min(p["cA"], p["cB"]) < 0.7, "hollow": p["hollow"],
               "label": short_label(p["name"]) + ("*" if p["name"] in P43_PEOPLE else "")}
              for p in pts]
-    fig = plt.figure(figsize=(22, 15.5))
+    # Taller than the systems-only chart: the A4/B4 cell now holds 14 systems plus 13 people,
+    # and the shorter canvas made fit_cell fall through to a size that overlaps (Schrödinger).
+    fig = plt.figure(figsize=(22, 20))
     ax, left, bot, box = _layout(fig)
     _draw_cells(ax, items + grid)
     _draw_strips(left, bot, a_only, b_only)
