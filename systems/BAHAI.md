@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -44,6 +44,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 3 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Baháʼí Faith. No LIO moves.
 identity:
   id: BAHAI
   v7_1_number: 39
@@ -189,13 +192,14 @@ metaphysics:
       locator: organization; practices
     how_known: Britannica — D left UNKNOWN per prior coding.
   reserved_exemptions:
-    value: Not addressed.
+    value: 'No clergy caste exemption. Progressive revelation and independent investigation of truth;
+      all souls accountable. Administrative order is organizational, not a moral free pass.'
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Baháʼí Faith.'
   teleology_in_nature:
     value: Progressive divine plan for education of humanity — teleology of history more than nature design.
     stance: "designer's purposes"
@@ -205,19 +209,18 @@ metaphysics:
       locator: opening
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: Free will affirmed in Baháʼí teaching alongside divine will; humans choose to turn toward God.
+      Not identical to Western libertarian debates.
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Baháʼí Faith.'
 lio_axes:
   A_locus:
     value: 0
     rationale: "God 'in his essence is unknowable' and acts through manifestations, 'agents of a progressive\
       \ divine plan'."
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: introduction
     how_known: '0.5: transcendence is stated; personhood is the coder’s reading of the divine plan. Alternative
@@ -225,7 +228,7 @@ lio_axes:
     alternatives:
     - value: 1
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 2
     certainty: 0.7
@@ -264,14 +267,14 @@ lio_axes:
     rationale: Sacred literature from the founders; the Universal House of Justice applies their laws
       and legislates where the texts are silent.
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S1
       locator: Practices; Organization
     how_known: '0.5: the article does not discuss reason or science. Alternative 2.'
     alternatives:
     - value: 2
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   E_scope:
     value: 3
     certainty: 0.5
@@ -408,6 +411,12 @@ sources:
     read in the Wayback copy (https://web.archive.org/web/20261011105553/https://www.britannica.com/topic/Bahai-Faith),
     counted as the full article, no P45 cap. Live page timed out on 2026-10-15, so no live comparison;
     byline in the copy: Britannica Editors.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Baháʼí Faith." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Bah%C3%A1%CA%BC%C3%AD_Faith'
+  accessed: '2026-10-25'
 ---
 # Bahāʾī Faith (BAHAI)
 
@@ -453,3 +462,4 @@ Bahāʾī identity.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: B/C scored.
 - 2026-10-25: E_scope scored 3 (0.5).
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Baháʼí Faith.
