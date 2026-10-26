@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-25
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated via Claims of Science 1851 (S5). Wikiquote-verified own-voice 'moral Governor of the world' / 'Supreme Intelligent Cause' agree with Laws of Thought ch. XIII Governor/intelligent-cause (S2). B stays single (Claims uniformity language not recovered as page text; IA Studies borrow-only). Cues stay dark hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #163, F3 rank 172). Page-image corroboration of Laws of Thought 1854 (IA Google scan aninvestigation00boolgoog): print pp. 159, 217–218, 423–424 rendered and OCR-checked against the prior OCR quotes. Ch. XIII read: natural religion / intelligent cause / moral Governor; 'Revelation being set apart' as solid foundations that the world is not abandoned to chance (pp. 217–218). primary_system BELOW → DEISM 0.5 (alt CHRIST; P27 partly met by setting revelation apart for the foundation, not a full rejection elsewhere). A 1 0.5→0.7; B 3 0.5→0.7; support single both (P48); mid_basin BELOW → true (P4). Chart-moving: darkness lifts (faded→dark), hollow (single). P47 source_quality on S1–S4. Wikipedia dual-bio heritage only (baptized CoE). Claims of Science 1851 / MacHale letters not recovered as page text. No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). WEAKEN on CHRIST: p. 424 ('profess an intellectual allegiance to the Father of Lights') is others' profession, not his; his own p. 159 'Author of Nature' fits CHRIST and DEISM equally, so primary_system CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM). A 1 at 0.5 now rests on p. 159 alone. Notes say only the OCR was read. RQ-Z9-2: no (algebra of logic is not a theory of mind). Still plotted at A 1 / B 3."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 172). Basics from MacTutor (O'Connor and Robertson). Own words in An Investigation of the Laws of Thought (1854; archive.org library scan, OCR read), within the span: 'all that we know of the uniformity of Nature, and all that we believe of the immutable constancy of the Author of Nature' (ch. XI, p. 159); the closing page contrasts those who acknowledge 'nothing higher than ... collective humanity' with those who 'profess an intellectual allegiance to the Father of Lights' (ch. XXII, p. 424). Not a scientist (logic and algebra; P30). primary_system CHRIST (0.5, alt DEISM); A 1 (0.5, alt 0); B 3 (0.5, alt 4) from his own statement on nature (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A and B at 0.5). Span 1854, age 39. Plotted (A 1, B 3). Draft, not reviewed."}
@@ -94,12 +95,12 @@ worldview:
       value: 1
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S2, locator: "ch. XI, p. 159; ch. XIII, pp. 217–218"}]
-      how_known: "Laws of Thought, within the span; page images of pp. 159 and 217–218 viewed and OCR-checked (D1). Written profession; contested alt 0 caps at 0.7."
-      rationale: "Author of Nature distinct from nature (p. 159); intelligent cause and moral Governor of the world inferred from design and moral nature (pp. 217–218): creator outside the world, 1. Alternative 0: fully transcendent without moral-governance reading."
+      support: corroborated
+      cites: [{source: S2, locator: "ch. XI, p. 159; ch. XIII, pp. 217–218"}, {source: S5, locator: "moral Governor of the world; Supreme Intelligent Cause (Claims of Science 1851)"}]
+      how_known: "Laws of Thought page images (S2, D1) plus independent 1851 lecture Claims of Science (S5) with the same Governor / intelligent-cause profession. Contested alt 0 caps at 0.7. Two works → corroborated (P48)."
+      rationale: "Author of Nature distinct from nature (S2 p. 159); intelligent cause and moral Governor of the world (S2 pp. 217–218; S5 Claims: 'moral Governor of the world' / 'Supreme Intelligent Cause'): creator outside the world, 1. Alternative 0: fully transcendent without moral-governance reading."
       alternatives:
-        - {value: 0, note: "Author of Nature / intelligent cause read as fully transcendent without personal moral governance.", cites: [{source: S2, locator: "ch. XI, p. 159"}]}
+        - {value: 0, note: "Author of Nature / intelligent cause read as fully transcendent without personal moral governance.", cites: [{source: S2, locator: "ch. XI, p. 159"}, {source: S5, locator: "Supreme Intelligent Cause"}]}
     B_cause:
       value: 3
       basis: written_profession
@@ -207,6 +208,16 @@ sources:
     source_quality: "primary / own words"
     reliability_note: "Library scan of the first edition (page images of the work as issued = primary facsimile). D1: print pp. 159, 217–218, 423–424 rendered from the PDF and OCR-checked; earlier create-pass OCR-only note superseded for those pages."
     used_for: [basics, worldview, lane_b, timing]
+  - id: S5
+    type: primary
+    kind: "published work by the subject"
+    author: "George Boole"
+    citation: "Boole, George. The Claims of Science, especially as founded in its Relations to Human Nature (lecture, 1851). Reprinted in Studies in Logic and Probability (ed. R. Rhees; Open Court / Dover reprints). Quotes verified via Wikiquote 'George Boole' (Governor / Supreme Intelligent Cause); Google Books id BAlcAAAAQAAJ notes p. 24 for the Governor passage. Full page images of the 1851 pamphlet not recovered this pass (IA Studies borrow-only)."
+    url: "https://en.wikiquote.org/wiki/George_Boole"
+    accessed: 2026-10-25
+    source_quality: "primary / own words"
+    reliability_note: "Own lecture; access this pass via Wikiquote transcription + bibliographic pointer to Studies reprint / Google Books BAlcAAAAQAAJ. Not a page-image read of the 1851 printing."
+    used_for: [worldview]
   - id: S3
     type: secondary
     kind: "database"
