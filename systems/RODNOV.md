@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 0 (0.7) and D_authority 1 (0.7) from Britannica Neo-Paganism (reconstructionist
+      Slavic gods; historical/archaeological tradition). B/C/E UNKNOWN.
 identity:
   id: RODNOV
   v7_1_number: 51
@@ -212,9 +216,20 @@ metaphysics:
     how_known: Silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
-      P44/P46(a): UNKNOWN.'
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening; Eastern Europe
+    how_known: '0.7 — reconstructionist Slavic polytheism; personal gods.'
+    rationale: 'A=0: personal deities. Not 2: ethnic reconstructionist Rodnoverie is not pantheism in
+      this source.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding wide Neo-Pagan variance under this code.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
@@ -224,9 +239,20 @@ lio_axes:
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
       P44/P46(a): UNKNOWN.'
   D_authority:
-    value: 'UNKNOWN'
-    how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
-      P44/P46(a): UNKNOWN.'
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — reconstruction from historical and archaeological sources; stance tradition or ancestors.'
+    rationale: 'D=1: ancestral/historical reconstruction primary. Not 4: not observation-first science;
+      not 0: no single closed revelation.'
+    alternatives:
+    - value: 2
+      note: Named alternative if coding nationalist ideology as co-equal authority with rite.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: 'Britannica Neo-Paganism umbrella mentions Rodnovery but does not fix a Slavic cosmogony.
@@ -407,3 +433,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica Neo-Paganism; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, schools from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A=0 and D=1 scored from Britannica Neo-Paganism.

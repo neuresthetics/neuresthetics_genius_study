@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Rationalism vs Empiricism (Markie/Folescu): family/parents, metaphysics
       TODOs as not addressed/varies, ethics/practice/science/schools. Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP Rationalism vs Empiricism (experience as source; observation
+      and reason). Was BELOW_THRESHOLD.
 identity:
   id: EMPIR
   v7_1_number: 4
@@ -214,14 +218,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed.
   D_authority:
-    value: 'BELOW_THRESHOLD'
-    how_known: "P44(b): the Empiricism Thesis is relative to subject area and Locke put reason 'on equal\
-      \ footing with experience', so members differ; the sources read do not mention revelation."
-    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from
-      3 (0.5) after the S1 audit.'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1 Empiricism Thesis
+    how_known: '0.7 — Empiricism Thesis: no knowledge/concepts other than from experience; stance observation
+      and reason.'
+    rationale: 'D=4: experience/observation outrank revelation as method. Not BELOW: the thesis itself
+      fixes method, even if Locke/Berkeley/Hume differ on God (A stays UNKNOWN/BELOW).'
     alternatives:
-    - value: 3
-      note: "Coder's first reading in batch S1."
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding religious empiricists (e.g. some Locke readings) as making revelation
+        co-equal.
       cites:
       - source: S1
         locator: §1
@@ -409,3 +418,4 @@ Authorial v7.1 note unchanged (see front matter).
 ## Research log
 
 - 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
+- 2026-10-25: D_authority scored 4 (0.7).

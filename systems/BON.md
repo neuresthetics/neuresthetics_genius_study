@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) from Britannica Bon (oracular priests; tradition/ancestors). A/B/C/E
+      UNKNOWN — article thin on locus/ledger.
 identity:
   id: BON
   v7_1_number: 54
@@ -217,9 +221,25 @@ lio_axes:
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
       fix LIO scores under P44/P46(a). Fuller Bon literature needed.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
-      fix LIO scores under P44/P46(a). Fuller Bon literature needed.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — Britannica: oracular priests and later sacred literature; stance tradition or ancestors.'
+    rationale: 'D=1: tradition/oracular authority over observation-first. Not 0: not a single closed revelation
+      ranking above all observation in the short article.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding later Bon sacred literature as revelation-outranks.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 2
+      note: Named alternative if coding modern Bon–Buddhist synthesis as mixed authority.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Britannica article is short on doctrine; early features suggest gods and magic but do not
@@ -409,3 +429,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica Bon; axes UNKNOWN under P46(a).
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science, schools from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D_authority scored 1 (0.7).

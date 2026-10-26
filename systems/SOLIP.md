@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 4 (0.7) and D_authority 4 (0.7) from IEP Solipsism (epistemic thesis; observation
+      and reason). B/C/E UNKNOWN.
 identity:
   id: SOLIP
   v7_1_number: 38
@@ -219,9 +223,21 @@ metaphysics:
     how_known: IEP.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
-      \ (P44). Descartes' God escape is not part of SOLIP."
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — solipsism as metaphysical/epistemic thesis about minds/world; no God or spiritual
+      being required (P44a).'
+    rationale: 'A=4: no transcendent personal God in the thesis. Not BELOW: the position itself fixes
+      absence of deity.'
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if coding only the problem-statement form without ontological commitment.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
@@ -231,9 +247,21 @@ lio_axes:
     how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
       \ (P44). Descartes' God escape is not part of SOLIP."
   D_authority:
-    value: 'UNKNOWN'
-    how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
-      \ (P44). Descartes' God escape is not part of SOLIP."
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — IEP frames privileged access / Cartesian argument; stance already observation and
+      reason.'
+    rationale: 'D=4: reason and first-person argument outrank revelation. Not 3: no church or scripture
+      as primary.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding common-sense rebuttals as co-equal method.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: "Thesis about minds/existence-for-me, not a God cosmology or a public science of authority\
@@ -415,3 +443,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (systems batch S6): IEP Thornton; axes under P44.
 - 2026-10-25: deepened classification, origins, metaphysics, epistemology, practice, science, schools. Re-read IEP.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A=4 and D=4 scored from IEP.

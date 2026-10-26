@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 4
+  record_version: 5
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S4 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -26,6 +26,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (Humean, Cartesian, Pyrrhonian). Axes unchanged. Re-read SEP
       Skepticism (Comesaña/Klein).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP Skepticism (challenge via reason/modes; observation and
+      reason). A stays BELOW_THRESHOLD.
 identity:
   id: SCEPT
   v7_1_number: 20
@@ -192,8 +196,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction
+    how_known: '0.7 — Agrippa modes / Cartesian / Humean challenges; stance observation and reason.'
+    rationale: 'D=4: argument and suspension outrank revelation. Not BELOW: skepticism as method fixes
+      reason-first even while suspending judgment on content.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if reading Pyrrhonian suspension as refusing any authority ranking.
+      cites:
+      - source: S1
+        locator: Pyrrhonian
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -369,3 +385,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from SEP Skepticism.
 - 2026-10-25: deepened TODOs; re-read SEP (Comesaña/Klein; updated 2026).
+- 2026-10-25: D_authority scored 4 (0.7).

@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -28,6 +28,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Pragmatism (Legg/Hookway): family/parents/region, metaphysics
       TODOs, ethics, practice, science, schools (Peirce, James, Dewey, neopragmatism). Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score D_authority 4 (0.7) from SEP Pragmatism (experience, experiment, community of inquiry).
+      Was BELOW_THRESHOLD.'
 identity:
   id: PRAG
   v7_1_number: 10
@@ -212,16 +216,20 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
   D_authority:
-    value: 'BELOW_THRESHOLD'
-    how_known: "Inquiry tested against experience is the shared method (S1), but James allows that a theological\
-      \ proposition can be made true by 'a value for concrete life' (1907: 40), so members differ (P44b)."
-    note: 'Alternative: 3 (fallibilist inquiry, Peirce).'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction; Pragmatic Maxim
+    how_known: '0.7 — experience, experiment, fallibilism; stance observation and reason.'
+    rationale: 'D=4: inquiry and consequences outrank revelation as family method. Not 3: James’s will-to-believe
+      is a school tension, not the family default.'
     alternatives:
     - value: 3
-      note: Peirce and Dewey line.
+      note: Named alternative if coding James’s will-to-believe as making faith co-equal with inquiry.
       cites:
       - source: S1
-        locator: §2
+        locator: James
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
@@ -415,3 +423,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior partial fill (epistemology).
 - 2026-10-25: deepened from SEP Pragmatism; axes unchanged.
+- 2026-10-25: D_authority scored 4 (0.7).

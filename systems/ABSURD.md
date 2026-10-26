@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (Sisyphus absurd; Rebel limits). Axes unchanged. Re-read SEP
       Albert Camus (Aronson).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score A_locus 4, D_authority 4, C_ledger 4 (all 0.7) from SEP Camus (no God; lucid reason;
+      live without appeal). B/E UNKNOWN.'
 identity:
   id: ABSURD
   v7_1_number: 14
@@ -190,14 +194,16 @@ metaphysics:
     how_known: SEP.
 lio_axes:
   A_locus:
-    value: 'BELOW_THRESHOLD'
-    how_known: "Living without God, but no declaration that God does not exist (S1), so the stance does\
-      \ not fix A (P44b). Quote (S1, introduction; §6): Camus 'centers his work on choosing to live without\
-      \ God', but 'was never assured enough to declare that God does not exist'."
-    note: 'Evidence: S1.'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §3; The Myth of Sisyphus
+    how_known: '0.7 — Camus’s absurd rejects appeal to God; P44a.'
+    rationale: 'A=4: no transcendent personal God. Not BELOW: Camus’s stance itself fixes it.'
     alternatives:
-    - value: 4
-      note: Named alternative.
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding broader absurdism including theistic absurdist readings.
       cites:
       - source: S1
         locator: introduction
@@ -205,11 +211,35 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §3
+    how_known: '0.7 — live without appeal; no transcendent reward/punishment as answer to absurd.'
+    rationale: 'C=4: no personal divine ledger. Not 3: revolt/solidarity are human, not impersonal karma
+      law.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading revolt as a this-world moral law with impersonal force.
+      cites:
+      - source: S1
+        locator: §3
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §2–3
+    how_known: '0.7 — lucid reason noting its limits; lived experience; stance observation and reason.'
+    rationale: 'D=4: reason and experience over revelation or leap. Not 3: “without appeal” rejects religious
+      authority as answer.'
+    alternatives:
+    - value: 3
+      note: Named alternative if weighting Camus’s limits-of-reason more heavily than anti-leap.
+      cites:
+      - source: S1
+        locator: §2
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -367,3 +397,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from SEP Albert Camus.
 - 2026-10-25: deepened TODOs; re-read SEP (Aronson).
+- 2026-10-25: A/D/C scored 4 (0.7) from SEP Camus.

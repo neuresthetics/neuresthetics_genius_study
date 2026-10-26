@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -36,6 +36,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score A_locus 0 (0.7) and D_authority 0 (0.7) from Britannica Druze (al-Ḥākim divinity; secret
+      revelation Al-Ḥikmah). B/C/E UNKNOWN.
 identity:
   id: DRUZE
   v7_1_number: 64
@@ -212,9 +216,20 @@ metaphysics:
     how_known: Britannica silence.
 lio_axes:
   A_locus:
-    value: 'UNKNOWN'
-    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
-      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — Britannica: divinity of al-Ḥākim; transcendent personal God/manifestation frame.'
+    rationale: 'A=0: transcendent personal divine locus. Not 1: article presents Hakim as divine person/manifestation
+      outside ordinary world, not mid-basin deism.'
+    alternatives:
+    - value: 1
+      note: Named alternative if reading Hakim as historical imam with limited transcendence.
+      cites:
+      - source: S1
+        locator: opening
   B_cause:
     value: 'UNKNOWN'
     how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
@@ -224,9 +239,20 @@ lio_axes:
     how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
       \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
   D_authority:
-    value: 'UNKNOWN'
-    how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
-      \ but lacks the reincarnation/cosmology detail needed to score LIO under P44. Stay unscored (P46(a))."
+    value: 0
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — secret teachings Al-Ḥikmah al-sharīfah; ʿuqqāl initiates; stance revelation.'
+    rationale: 'D=0: revelation outranks observation for initiates. Not 1: esoteric scripture, not open
+      ancestral custom alone.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding communal custom for juhhāl as co-equal with Hikmah.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: "Britannica establishes unitarian monotheism, al-Ḥākim's divinity claim, and secret hikmah,\
@@ -401,3 +427,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S11): Britannica Druze; axes UNKNOWN.
 - 2026-10-25: deepened classification, origins, metaphysics, practice, science from re-read Britannica. Axes still UNKNOWN.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: A=0 and D=0 scored from Britannica.

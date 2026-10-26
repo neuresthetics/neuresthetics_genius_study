@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (political, ethical, existential, antifoundational). Axes unchanged.
       Re-read IEP Nihilism (Pratt).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Score C_ledger 4 (0.7) from IEP Nihilism (moral nihilism: no absolute values / no divine
+      ledger). A/D stay BELOW_THRESHOLD; B/E UNKNOWN.'
 identity:
   id: NIHIL
   v7_1_number: 18
@@ -216,8 +220,21 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: Moral Nihilism
+    how_known: '0.7 — IEP: moral nihilism denies absolute values; no personal divine reward/punishment
+      as family stance.'
+    rationale: 'C=4: none / impersonal absence of absolute moral ledger. Not 3: not a karma-type impersonal
+      law.'
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if coding only political nihilism without a moral thesis.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 'BELOW_THRESHOLD'
     how_known: "The source addresses knowledge ('nothing can be known'), so it is not silent; IEP separates\
@@ -410,3 +427,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from IEP Nihilism.
 - 2026-10-25: deepened TODOs; re-read IEP (Pratt).
+- 2026-10-25: C_ledger scored 4 (0.7).

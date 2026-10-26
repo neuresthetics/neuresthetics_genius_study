@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S3 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (religious/secular; Sartre/Beauvoir; Heidegger; Kierkegaard).
       Axes unchanged. Re-read SEP Existentialism (Aho).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP Existentialism (first-person / observation and reason).
+      A stays BELOW_THRESHOLD (Kierkegaard vs atheist streams).
 identity:
   id: EXIST
   v7_1_number: 17
@@ -208,8 +212,21 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: introduction; §1
+    how_known: '0.7 — SEP: engaged first-person analysis; stance observation and reason; no shared revelation
+      for the family.'
+    rationale: 'D=4: authenticity and reason over revealed authority as family stance. Not 3: Kierkegaard’s
+      leap is a school, not the family default.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding Kierkegaardian religious existentialism as primary.
+      cites:
+      - source: S1
+        locator: §1
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -384,3 +401,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from SEP Existentialism.
 - 2026-10-25: deepened TODOs; re-read SEP (Aho).
+- 2026-10-25: D_authority scored 4 (0.7).

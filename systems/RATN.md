@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -43,6 +43,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from SEP Rationalism vs Empiricism (Markie/Folescu): family/parents, metaphysics
       TODOs, ethics/practice/science/schools. Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) from SEP Rationalism vs Empiricism (reason/intuition/deduction).
+      Was BELOW_THRESHOLD.
 identity:
   id: RATN
   v7_1_number: 7
@@ -245,14 +249,17 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in S1.
   D_authority:
-    value: 'BELOW_THRESHOLD'
-    how_known: 'P44(b): the theses are relative to subject area, and SEP does not discuss revelation,
-      so members differ; the sources read do not mention revelation.'
-    note: 'Alternative: 3 (observation and reason over revelation in the covered areas). Changed from
-      3 (0.5) after the S1 audit.'
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: §1 Rationalism
+    how_known: '0.7 — Innate Knowledge / Intuition-Deduction theses; stance observation and reason.'
+    rationale: 'D=4: reason outranks revelation as epistemic method for the family. Not BELOW: Descartes/Spinoza/Leibniz
+      differ on God (A stays BELOW) but not on reason-first method.'
     alternatives:
     - value: 3
-      note: "Coder's first reading in batch S1."
+      note: Named alternative if coding theological rationalists who subordinate reason to revelation.
       cites:
       - source: S1
         locator: §1
@@ -406,7 +413,7 @@ sources:
   citation: 'Bobro, Marc, and Tobias Flattery. "Leibniz on Causation." Stanford Encyclopedia of Philosophy.
     https://plato.stanford.edu/entries/leibniz-causation/'
   url: 'https://plato.stanford.edu/entries/leibniz-causation/'
-  accessed: '2026-10-15'
+  accessed: '2026-10-25'
   reliability_note: Signed SEP entry (substantive revision 2026-09-30); §3 on occasionalism and miracles
     read.
 - id: S3
@@ -416,7 +423,7 @@ sources:
   year: 2019
   citation: 'Lee, Sukjae. "Occasionalism." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/occasionalism/'
   url: 'https://plato.stanford.edu/entries/occasionalism/'
-  accessed: '2026-10-15'
+  accessed: '2026-10-25'
   reliability_note: Signed SEP entry; introduction and Leibniz comparison read. Malebranche is not named
     a rationalist in S1; used only as the contrasting case.
 - id: S4
@@ -426,7 +433,7 @@ sources:
   year: 2023
   citation: 'Nadler, Steven. "Baruch Spinoza." Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/spinoza/'
   url: 'https://plato.stanford.edu/entries/spinoza/'
-  accessed: '2026-10-15'
+  accessed: '2026-10-25'
   reliability_note: Signed SEP entry (2023 revision); §2 (Ethics) read.
 ---
 # Rationalism (RATN)
@@ -469,3 +476,4 @@ Authorial v7.1 note unchanged (see front matter).
 ## Research log
 
 - 2026-10-25: deepened from SEP Rationalism vs Empiricism; axes unchanged.
+- 2026-10-25: D_authority scored 4 (0.7).
