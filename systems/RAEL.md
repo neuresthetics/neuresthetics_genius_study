@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -34,6 +34,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 (0.7) and B_cause 3 (0.5) from sources on file (Elohim as technologically
+      advanced beings; this-world ethics). A/D already scored.
 identity:
   id: RAEL
   v7_1_number: 76
@@ -220,11 +224,40 @@ lio_axes:
       locator: article
     how_known: 'P44(a): no God gives A 4. Capped at 0.5 (P45).'
   B_cause:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — Elohim as advanced scientists; message via founder; framed as tech not classical
+      miracle.'
+    rationale: 'B=3: lawlike advanced tech / regularity-leaning. Not 4: special contact events. Not 0:
+      not supernatural miracle doctrine in self-description.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding UFO contact as miracle-class special case.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 4
+      note: Named alternative if coding full naturalistic reading.
+      cites:
+      - source: S1
+        locator: opening
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.7 — pacifism/tolerance ethics; not a divine afterlife ledger as primary.'
+    rationale: 'C=4: none as divine personal ledger.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Elohim judgment/cloning immortality as personal ledger.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: "Raël 'has been chosen by the Elohim as the Prophet of the Age of Apocalypse'; the message\
@@ -418,3 +451,4 @@ Raëlian identity only.
 - Prior: A=4 D=1; P45.
 - 2026-10-25: deepened from Encyclopedia.com Raëlians (Palmer 2005). Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C/B scored.

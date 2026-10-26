@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities from SEP Causal Determinism (Hoefer): family/parents/region, metaphysics
       TODOs, epistemology, ethics (free will link), practice, science, schools (Laplacean, physical-theory
       status, compatibilist debates). Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.7) and C_ledger 4 (0.5) from sources on file (philosophical thesis;
+      not divine ledger). A stays BELOW; B/E already 4.
 identity:
   id: DETERM
   v7_1_number: 28
@@ -218,11 +222,33 @@ lio_axes:
       locator: introduction
     how_known: "Fixed by the stance; 0.7 because SEP gives the definition 'roughly speaking'."
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — not an ethical school; no divine ledger implied.'
+    rationale: C=4 implied none. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — philosophical argument; stance observation and reason.'
+    rationale: 'D=4: reason over revelation.'
+    alternatives:
+    - value: 3
+      note: Named alternative if coding theological determinism as primary.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 4
     rationale: "On the world's order (P7): every event under the same laws, so no group is exempt."
@@ -417,3 +443,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - 2026-10-15: draft from SEP Causal Determinism.
 - 2026-10-25: deepened TODOs, schools, science/ethics; axes unchanged.
+- 2026-10-25: D/C scored.

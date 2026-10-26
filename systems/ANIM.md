@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S7 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) from Britannica Animism (tradition/ancestors; oral). A stays BELOW;
+      B already 1.
 identity:
   id: ANIM
   v7_1_number: 40
@@ -225,8 +229,19 @@ lio_axes:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — stance tradition or ancestors; oral/place knowledge.'
+    rationale: 'D=1: ancestral/tradition. Not 0: no single closed revelation.'
+    alternatives:
+    - value: 2
+      note: Named alternative if coding spirit-encounter as mixed personal gnosis.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -394,3 +409,4 @@ Umbrella — prefer specific codes when available.
 - Prior batch: Britannica animism; B scored.
 - 2026-10-25: deepened. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D_authority scored 1.

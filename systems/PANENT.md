@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     summary: 'Deepen qualities from SEP Panentheism (Culp): family/parents/region, metaphysics TODOs,
       epistemology, ethics, practice, science, schools (process, German Idealism / Moltmann, science–religion).
       Axes unchanged.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority BELOW_THRESHOLD kept; score C_ledger 4 (0.5) often this-world ecological
+      ethics without classical personal afterlife ledger. A already 2.
 identity:
   id: PANENT
   v7_1_number: 30
@@ -240,8 +244,25 @@ lio_axes:
       - source: S1
         locator: §3
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.5 — ecological/relational ethics common; classical personal divine ledger not required
+      of panentheism as such.'
+    rationale: 'C=4 at 0.5: family-as-such. Alternative 1 for theistic panentheists with judgment.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Moltmann-style eschatological judgment as primary.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if school variance blocks score.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -448,3 +469,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - 2026-10-15: draft from SEP Panentheism.
 - 2026-10-25: deepened TODOs, schools, practice/science; axes unchanged.
+- 2026-10-25: C_ledger scored 4 (0.5).

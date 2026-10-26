@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: 'Deepen qualities from Britannica Satanism: family/parents, metaphysics TODOs, epistemology/ethics/practice/science/schools.
       Axes unchanged (B stays BELOW_THRESHOLD for magic).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) and C_ledger 4 (0.7) from Britannica Satanism / CoS materials on
+      file (LaVey texts; this-world individualism). A already 4.
 identity:
   id: LVSAT
   v7_1_number: 29
@@ -214,11 +218,39 @@ lio_axes:
       - source: S1
         locator: Modern religious Satanism
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: ethics
+    how_known: '0.7 — this-world individualism; no divine reward ledger.'
+    rationale: 'C=4: none.'
+    alternatives:
+    - value: 3
+      note: Named alternative if reading Lex Talionis as impersonal law.
+      cites:
+      - source: S1
+        locator: ethics
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: Church of Satan; LaVey
+    how_known: '0.7 — founder texts (Satanic Bible); stance founder.'
+    rationale: 'D=1: founder writings as primary. Not 0: atheistic Satanism is not revelation-of-Satan;
+      texts are human.'
+    alternatives:
+    - value: 0
+      note: Named alternative if coding Satanic Bible as revelation-like closed canon.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 4
+      note: Named alternative if coding only the atheistic naturalism without founder authority.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -400,3 +432,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior god/miracles fills.
 - 2026-10-25: deepened TODOs from Britannica; axes unchanged.
+- 2026-10-25: D/C scored.

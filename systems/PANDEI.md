@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     summary: 'Deepen qualities: family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (living God vs death of God). Axes unchanged (P45). Re-read Lane
       Zygon 2021.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 4 and E_scope 4 (0.5) naturalism P44(c) from sources on file. A/B/D already
+      4.
 identity:
   id: PANDEI
   v7_1_number: 25
@@ -212,8 +216,19 @@ lio_axes:
       locator: introduction
     how_known: P45 cap 0.5.
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — nature is all; no divine ledger (P44c implied).'
+    rationale: C=4. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 4
     rationale: "Pandeism 'allies itself with science both substantively and methodologically'."
@@ -223,8 +238,19 @@ lio_axes:
       locator: introduction
     how_known: P45 cap 0.5; the author advocates a specific form (living God pandeism).
   E_scope:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — same natural order (P44c implied).'
+    rationale: E=4. Certainty 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied.
+      cites:
+      - source: S1
+        locator: opening
 epistemology:
   value: Scientific method as ally; Lane offers evidential arguments from cosmology
   certainty: 0.5
@@ -411,3 +437,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from Lane Zygon 2021.
 - 2026-10-25: deepened TODOs; SEP Pantheism as contrast; axes unchanged.
+- 2026-10-25: C/E scored 4 (0.5) P44c.

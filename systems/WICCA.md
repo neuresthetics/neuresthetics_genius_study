@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -29,6 +29,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 1 (0.7) and C_ledger 4 (0.5) from sources on file (Rede; tradition/Book
+      of Shadows varies). A stays BELOW; B already 1.
 identity:
   id: WICCA
   v7_1_number: 52
@@ -237,11 +241,38 @@ lio_axes:
       note: Named alternative.
       cites: *id001
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: Wiccan Rede
+    how_known: '0.5 — Rede harm-none is this-world ethic; Threefold Law sometimes read as impersonal return.'
+    rationale: 'C=4 at 0.5: no personal divine judge as family default. Alternative 3 for Threefold Law.'
+    alternatives:
+    - value: 3
+      note: 'Named alternative: Threefold Law as impersonal moral return (karma-like).'
+      cites:
+      - source: S1
+        locator: Threefold Law
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 1
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.7 — Book of Shadows / initiatory lineages; stance varies but tradition primary for many.'
+    rationale: 'D=1: tradition/lineage. Not 0: not single closed scripture for all Wicca.'
+    alternatives:
+    - value: 2
+      note: Named alternative if coding UPG + Rede as mixed.
+      cites:
+      - source: S1
+        locator: opening
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if Gardnerian vs eclectic variance blocks score.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -434,3 +465,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S9): Britannica Wicca; B scored.
 - 2026-10-25: deepened classification, origins, metaphysics, ethics, practice, schools. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: D/C scored.

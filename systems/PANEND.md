@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 5
+  record_version: 6
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S6 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -30,6 +30,10 @@ record:
     summary: 'Deepen qualities: kind/family/parents/related codes, origins, metaphysics TODOs, epistemology,
       ethics, practice, science, schools (deist half vs theist panentheism). Axes unchanged (P45). Re-read
       Lane Zygon 2021.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score D_authority 4 (0.5) and C_ledger 4 (0.5) from sources on file (philosophical; often
+      naturalistic). A already 2; B BELOW.
 identity:
   id: PANEND
   v7_1_number: 26
@@ -218,11 +222,33 @@ lio_axes:
       - source: S1
         locator: introduction
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — not a developed ethical/ledger programme; implied none.'
+    rationale: C=4 at 0.5.
+    alternatives:
+    - value: 'UNKNOWN'
+      note: Named alternative if refusing implied.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 4
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: '0.5 — philosophical argument; stance observation and reason; P45 lower tier.'
+    rationale: D=4 at 0.5. Alternative BELOW if religious panendeism streams.
+    alternatives:
+    - value: 'BELOW_THRESHOLD'
+      note: Named alternative if religious overlays co-equal.
+      cites:
+      - source: S1
+        locator: opening
   E_scope:
     value: 'UNKNOWN'
     how_known: Not addressed in the sources read.
@@ -412,3 +438,4 @@ Authorial v7.1 note unchanged (see front matter).
 
 - Prior fill from Lane Zygon 2021.
 - 2026-10-25: deepened TODOs; added SEP Panentheism as contrast source; axes unchanged.
+- 2026-10-25: D/C scored at 0.5.

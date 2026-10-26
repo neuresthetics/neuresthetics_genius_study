@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 6
+  record_version: 7
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -32,6 +32,10 @@ record:
     by: Grok Bot
     summary: Fill adherents/estimate gloss from existing sources (order-of-magnitude / qualitative). Axes
       unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Score C_ledger 3 (0.5) karma/reincarnation from sources on file (P44d). E UNKNOWN; A/B/D
+      already scored.
 identity:
   id: THEOS
   v7_1_number: 63
@@ -242,8 +246,19 @@ lio_axes:
       note: Named alternative.
       cites: *id002
   C_ledger:
-    value: 'UNKNOWN'
-    how_known: Not addressed in the sources read.
+    value: 3
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: karma; reincarnation
+    how_known: '0.5 — karma/reincarnation as impersonal moral-causal law (P44d).'
+    rationale: 'C=3: impersonal ledger. Alternative 1 if Masters as personal judges.'
+    alternatives:
+    - value: 1
+      note: Named alternative if coding Masters/Hierarchy as personal judges.
+      cites:
+      - source: S1
+        locator: opening
   D_authority:
     value: 1
     rationale: "Contact with spiritual reality 'through intuition, meditation, revelation, or some other\
@@ -423,3 +438,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-15 (batch S11): Britannica theosophy; axes set.
 - 2026-10-25: deepened from Britannica Kids theosophy article. Axes kept.
 - 2026-10-25: adherents/estimate filled (qualitative).
+- 2026-10-25: C_ledger scored 3 (0.5).
