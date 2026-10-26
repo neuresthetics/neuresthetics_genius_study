@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill afterlife, moral_ledger, reserved_exemptions, necessity; deepen schools (IOT, TOPY,
+      solo) from Wikipedia Chaos magic. Keep prior sources. No LIO moves.'
 identity:
   id: CHAOSM
   v7_1_number: 59
@@ -169,21 +173,21 @@ metaphysics:
       locator: opening
     how_known: Encyclopedia.com.
   afterlife:
-    value: Not addressed.
+    value: 'Not a shared afterlife doctrine. Chaos magic is technique-first; belief is a tool, so afterlife
+      models may be adopted provisionally then dropped. No canonical heaven/hell in sources read.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S2
-      locator: opening
-    how_known: Silence.
+    certainty: 0.7
+    cites: &id001
+    - source: S3
+      locator: opening; History
+    how_known: '0.7 — Wikipedia: belief as tool; no fixed theology.'
   moral_ledger:
-    value: Not addressed.
+    value: No single moral-judgment cosmology. Results-oriented magic; ethics left to practitioner. Postmodern
+      skepticism about absolute truth undercuts fixed ledgers.
     stance: none
     certainty: 0.7
-    cites:
-    - source: S2
-      locator: opening
-    how_known: Silence.
+    cites: *id001
+    how_known: '0.7 — Wikipedia (Urban/postmodern characterization).'
   authority:
     value: "Practitioner's subconscious / own designed ritual; Spare/Sherwin/Carroll texts; IOT as optional\
       \ org."
@@ -194,13 +198,12 @@ metaphysics:
       locator: opening
     how_known: Experimental/inner; 0.5 vs founder texts.
   reserved_exemptions:
-    value: Not addressed.
+    value: No clerical in-group exemption from cosmic law — systems are arbitrary symbol-sets made effective
+      by belief. Orders (IOT) are optional technique communities.
     stance: none
     certainty: 0.7
-    cites:
-    - source: S2
-      locator: opening
-    how_known: Silence.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
     value: Order imposed; chaos as Order beyond understanding — not designer teleology.
     stance: none
@@ -210,12 +213,11 @@ metaphysics:
       locator: opening
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed as free-will thesis.
-    certainty: 1.0
-    cites:
-    - source: S2
-      locator: opening
-    how_known: Silence.
+    value: Practitioner deliberately changes beliefs to change conditioned perception — strong practical
+      freedom thesis. Not a metaphysical free-will proof; technique of deconditioning.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 4
@@ -289,12 +291,11 @@ epistemology:
     locator: opening
   how_known: Encyclopedia.com.
 ethics:
-  value: Not a single ethical system in this entry.
-  certainty: 1.0
-  cites:
-  - source: S2
-    locator: opening
-  how_known: Silence.
+  value: 'No single ethical code in encyclopedia sources. Emphasis on results, experimentation, and personal
+    symbol-systems; some authors stress anarchic or Discordian-adjacent ethos. Not a civic moral programme.'
+  certainty: 0.5
+  cites: *id001
+  how_known: '0.5 — Wikipedia summarizes technique, not a shared ethics book.'
 practice:
   ritual_and_practice:
     value: Sigils; self-designed provocative ritual as drama to arouse subconscious; basic inner-self
@@ -331,14 +332,24 @@ science:
       locator: opening
     how_known: Coder reading.
 schools_and_variants:
-- name: IOT (Illuminates/Initiates of Thanateros)
+- name: Illuminates of Thanateros (IOT)
   form: modern
-  how_it_differs: Formal org from 1977; Carroll Liber Null rituals.
-  lio_difference: A/B BELOW_THRESHOLD umbrella.
-  certainty: 1.0
-  cites:
-  - source: S2
-    locator: IOT
+  how_it_differs: Main early order (1976–77 announcement); Carroll/Sherwin lineage; initiatory structure.
+  lio_difference: D may sit slightly lower (order hierarchy) than solo chaos.
+  certainty: 0.7
+  cites: *id001
+- name: Thee Temple ov Psychick Youth (TOPY)
+  form: modern
+  how_it_differs: Related chaos-adjacent network; art/psychick culture emphasis.
+  lio_difference: Little axis change.
+  certainty: 0.5
+  cites: *id001
+- name: Solo / idiosyncratic chaos practice
+  form: popular
+  how_it_differs: Self-designed systems; Phil Hine and others publish outside single order.
+  lio_difference: D higher (personal verification); axes otherwise as scored.
+  certainty: 0.7
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -409,6 +420,12 @@ sources:
   url: 'https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick'
   accessed: '2026-10-25'
   citation: 'Encyclopedia.com. "Chaos Magick." Accessed 2026-10-25. https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/chaos-magick.'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Chaos magic." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Chaos_magic'
+  accessed: '2026-10-25'
 ---
 # Chaos Magick (CHAOSM)
 
@@ -456,3 +473,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/D/C scored.
 - 2026-10-25: implied axis fill: E=4@0.5.
+- 2026-10-25: Filled afterlife/ledger/exemptions/necessity; schools from Wikipedia Chaos magic.
