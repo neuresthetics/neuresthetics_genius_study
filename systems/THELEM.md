@@ -2,22 +2,29 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
+      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
+      events). Salvation and moral community go on C_ledger.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S12): filled from Britannica "Thelema" (Doyle White). A BELOW_THRESHOLD; B 1 (0.5, alt 2); D 1 (0.5, alt 2); C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S12): filled from Britannica "Thelema" (Doyle White). A BELOW_THRESHOLD;
+      B 1 (0.5, alt 2); D 1 (0.5, alt 2); C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from Britannica Thelema (Doyle White): Book of the Law 1904, True Will,
+      magick, OTO/A∴A∴, Nuit/Hadit/Ra-Hoor-Khuit. Keep A BELOW_THRESHOLD; B=1 D=1; C E UNKNOWN.'
 identity:
   id: THELEM
   v7_1_number: 74
@@ -28,76 +35,189 @@ identity:
 classification:
   kind:
     value: esoteric or occult tradition
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Esotericism/occultism; sometimes modern Paganism — 0.7.
+  family:
+    value: 'Thelema: religion of Aleister Crowley centered on The Book of the Law (1904); Do what thou
+      wilt / True Will; magick'
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
-    how_known: '''commonly regarded as a form of both esotericism and occultism''.'
-  family:
-    value: TODO
+      locator: opening; beliefs
+    how_known: Britannica.
   parent_traditions:
-    value: TODO
-  related_codes: []
+    value:
+    - Hermetic Order of the Golden Dawn ceremonial magic
+    - Western esotericism
+    - Asian religions (Hinduism, Buddhism, Yoga) as Crowley interests
+    - Rabelais 'Do what thou wilt' phrase
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: origins; beliefs
+    how_known: Britannica.
+  related_codes:
+  - code: CHAOSM
+    relation: neighbor (easily confused)
+    note: Chaos Magick reacted against Thelemic dominance
+  - code: WICCA
+    relation: neighbor (easily confused)
+    note: Gardner influenced by Crowley
+  - code: SCIENT
+    relation: neighbor (easily confused)
+    note: Hubbard involved in Californian Thelemic group prior to Scientology
+  - code: HERMET
+    relation: overlaps
+    note: Golden Dawn / ceremonial inheritance
 origins:
   founding_era:
-    value: '1904'
+    value: 1904 Cairo revelation; religion developed 1900s; A∴A∴ 1907; Crowley heads British OTO 1912;
+      Abbey of Thelema 1920–23
     certainty: 1.0
     cites:
     - source: S1
-      locator: Origins and history
-    how_known: The Book of the Law, April 1904.
+      locator: origins
+    how_known: Britannica.
   founding_region:
-    value: TODO
+    value: Cairo revelation; England/Europe; OTO in Europe and North America; Abbey at Cefalù, Sicily
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: origins
+    how_known: Britannica.
   founders_or_key_figures:
     value:
     - Aleister Crowley
+    - Aiwass (claimed messenger)
+    - George Cecil Jones
+    - Theodor Reuss (OTO)
+    - Karl Germer
+    - Grady Louis McMurtry
+    - Kenneth Grant (Typhonian)
+    - Jack Parsons
     certainty: 1.0
     cites:
     - source: S1
-      locator: introduction
+      locator: origins
     how_known: Britannica.
-  key_texts: []
+  key_texts:
+  - value: Liber AL vel Legis / The Book of the Law (1904)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Britannica.
+  - value: The Holy Books of Thelema (channeled collection; lesser than Liber AL)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: origins
+    how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: TODO
-    stance: TODO
+    value: Nuit, Hadit, Ra-Hoor-Khuit associated with successive aeons; Babalon; other entities (Pan).
+      Theists vs atheist/symbolic readings among Thelemites.
+    stance: varies by school
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Britannica.
   deity_personal:
-    value: TODO
-    stance: TODO
+    value: Some theists (literal deities); some atheists (symbolic).
+    stance: both / disputed
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Britannica.
   intervention:
-    value: TODO
-    stance: TODO
+    value: Crowley claimed audible delivery by Aiwass; magick causes change in conformity with Will; sex
+      magic; spirit contact via ceremonial magic.
+    stance: regular
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: origins; beliefs
+    how_known: Britannica.
   miracles:
-    value: TODO
-    stance: TODO
+    value: Magick as science/art of change; not biblical miracle category.
+    stance: affirmed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: magick
+    how_known: 0.5.
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Ceremonial contact and True Will pursuit more than petitionary prayer.
+    stance: not addressed
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Thin on petition.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Not a single afterlife doctrine in this article; Great Work / union with existence via Babalon
+      (ego destruction).
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Silence on afterlife.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: True Will ethics, not cosmic ledger; Do what thou wilt / Love under will.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Britannica.
   authority:
-    value: TODO
-    stance: TODO
+    value: Revelation via Aiwass / Book of the Law; Crowley as prophet; OTO/A∴A∴ initiatory degrees.
+    stance: revelation
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: origins; beliefs
+    how_known: Britannica.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Aeonic history; True Will in harmony with cosmos.
+    stance: immanent ends
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: 0.5.
   necessity_and_freedom:
-    value: TODO
+    value: Individualism / True Will discovery; not a determinism thesis.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Britannica.
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: '''Attitudes to this theology nevertheless vary among Thelemites. Some are theists and believe that Thelema’s deities literally exist, whereas others are atheists and regard such entities as symbolic figures'' (S1).'
+    how_known: '''Attitudes to this theology nevertheless vary among Thelemites. Some are theists and
+      believe that Thelema’s deities literally exist, whereas others are atheists and regard such entities
+      as symbolic figures'' (S1).'
     note: P44(b).
   B_cause:
     value: 1
-    rationale: Crowley defined magick as 'the Science and Art of causing Change to occur in conformity with Will'; sex magic is used 'to concentrate the Thelemite’s will to achieve specific aims'.
+    rationale: Crowley defined magick as 'the Science and Art of causing Change to occur in conformity
+      with Will'; sex magic is used 'to concentrate the Thelemite’s will to achieve specific aims'.
     certainty: 0.5
     cites: &id001
     - source: S1
@@ -112,7 +232,8 @@ lio_axes:
     how_known: Not addressed in the sources read.
   D_authority:
     value: 1
-    rationale: '''The tradition centers on a text, The Book of the Law, that Crowley claimed to have received from a supernatural source in 1904'', ''audibly delivered to him by Aiwass''.'
+    rationale: '''The tradition centers on a text, The Book of the Law, that Crowley claimed to have received
+      from a supernatural source in 1904'', ''audibly delivered to him by Aiwass''.'
     certainty: 0.5
     cites: &id002
     - source: S1
@@ -128,25 +249,77 @@ lio_axes:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
 epistemology:
-  value: TODO
-ethics:
-  value: '''Do what thou wilt shall be the whole of the Law''; ''Love is the law, love under will''.'
+  value: Channeled revelation (Book of the Law); initiatory degrees; discover True Will (Great Work).
   certainty: 1.0
   cites:
   - source: S1
-    locator: Beliefs and practices
+    locator: origins; beliefs
+  how_known: Britannica.
+ethics:
+  value: Do what thou wilt shall be the whole of the Law; Love is the law, love under will; discover and
+    pursue True Will — not amoral whim.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: beliefs
   how_known: Britannica.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: Ceremonial magic; sex magic; Yoga; gnostic mass; feasts (Book of the Law delivery, Crowleymas);
+      solo and OTO communal rites.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: beliefs
+    how_known: Britannica.
   community_form:
-    value: TODO
+    value: OTO lodges (~4000 members 2017); A∴A∴; many independent Thelemites; est. 5,000–10,000 total
+      (2020).
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: origins
+    how_known: Britannica.
 science:
   historical_stance:
-    value: TODO
+    value: Magick defined as Science and Art of causing Change; not a science program.
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: magick
+    how_known: Britannica.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Not addressed.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
+schools_and_variants:
+- name: OTO Thelema
+  form: modern
+  how_it_differs: Lodge system; gnostic mass.
+  lio_difference: B1 D1; A BELOW_THRESHOLD.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: origins
+- name: Typhonian Thelema (Grant)
+  form: modern
+  how_it_differs: Tantra, Advaita, Lovecraftian elements.
+  lio_difference: Same umbrella.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: origins
+- name: Independent / Tantric / witchcraft variants
+  form: modern
+  how_it_differs: Internet-era diversity.
+  lio_difference: Same.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: origins
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -159,7 +332,8 @@ v7_1_rubric:
   V: 4
   X: 2
   total: 20
-  scoring_note: Thelema scores low overall due to its heavy reliance on occult revelation and unverified magick, though it fosters individual empowerment and creative spiritual exploration.
+  scoring_note: Thelema scores low overall due to its heavy reliance on occult revelation and unverified
+    magick, though it fosters individual empowerment and creative spiritual exploration.
   source: v7.1 data book, section 6 table (tables[4]) row 74 and section 7 scoring notes
 revised_rubric:
   status: not started
@@ -179,9 +353,15 @@ revised_rubric:
     score: TODO
     rationale: ''
 coding_guidance:
-  use_when: The person self-identifies as a Thelemite or was an OTO / A∴A∴ member.
-  do_not_use_when: Wicca is WICCA; chaos magic is CHAOSM.
-  neighbors: []
+  use_when: Thelema / Book of the Law / Crowleyite Thelemic identity.
+  do_not_use_when: Chaos Magick (CHAOSM). Wicca. Scientology.
+  neighbors:
+  - code: CHAOSM
+    relation: neighbor (easily confused)
+  - code: WICCA
+    relation: neighbor (easily confused)
+  - code: SCIENT
+    relation: neighbor (easily confused)
 review:
   data_quality_flags: []
   open_questions:
@@ -191,53 +371,53 @@ sources:
   type: tertiary
   kind: encyclopedia
   author: Ethan Doyle White
-  citation: 'Doyle White, Ethan. "Thelema." Encyclopaedia Britannica. https://www.britannica.com/topic/Thelema. Wayback Machine snapshot 2026-02-17 11:24:05 UTC: https://web.archive.org/web/20260217112405/https://www.britannica.com/topic/Thelema.'
+  citation: 'Doyle White, Ethan. "Thelema." Encyclopaedia Britannica. https://www.britannica.com/topic/Thelema.
+    Wayback Machine snapshot 2026-02-17 11:24:05 UTC: https://web.archive.org/web/20260217112405/https://www.britannica.com/topic/Thelema.'
   url: https://www.britannica.com/topic/Thelema
-  accessed: '2026-10-15'
-  reliability_note: 'Signed article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260217112405/https://www.britannica.com/topic/Thelema); live page not compared (live Britannica times out from the box).'
+  accessed: '2026-10-25'
+  reliability_note: 'Signed article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260217112405/https://www.britannica.com/topic/Thelema);
+    live page not compared (live Britannica times out from the box).'
 ---
-
-# Thelema (Crowley/Ordo Templi Orientis) (THELEM)
+# Thelema (THELEM)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-Thelema is a 'religion established by the British occultist Aleister Crowley in the 1900s', centred on The Book of the Law [S1].
+Thelema is the religion established by Aleister Crowley around The Book of the Law (1904 Cairo); True Will ethics; magick; OTO/A∴A∴ [S1].
 
 ## Core metaphysics
 
-Nuit, Hadit, Ra-Hoor-Khuit; True Will; magick [S1].
+Nuit/Hadit/Ra-Hoor-Khuit theology varies theist vs symbolic; Aiwass revelation; Great Work [S1].
 
 ## Position on the LIO axes
 
-- A BELOW_THRESHOLD; B 1 (0.5, alt 2); D 1 (0.5, alt 2).
-- C, E UNKNOWN.
+- **A:** BELOW_THRESHOLD — theist/atheist split [S1].
+- **B: 1** — magick / spirit contact [S1].
+- **D: 1** — revelation / founder [S1].
+- **C, E:** UNKNOWN.
 
 ## Schools and variants
 
-TODO
+OTO; Typhonian; independents [S1].
 
 ## Science
 
-TODO
+Magick as Science and Art of Change [S1].
 
 ## Coding guidance
 
-Thelemites.
+Thelemic identity. Not CHAOSM.
 
 ## v7.1 scoring note
-
-Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 > THELEM (20/50) — Thelema (Crowley/Ordo Templi Orientis). Thelema scores low overall due to its heavy reliance on occult revelation and unverified magick, though it fosters individual empowerment and creative spiritual exploration.
 
 ## Open questions
 
-- Adherents.
+- Afterlife doctrine thin in encyclopedia article.
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S12): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in Wayback copies under P44(e); AI Top Questions not used.
+- Prior batch: Britannica Thelema; B D scored.
+- 2026-10-25: deepened. Axes kept.
