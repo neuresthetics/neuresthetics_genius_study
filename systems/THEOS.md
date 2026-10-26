@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -39,6 +39,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 2 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Theosophy. No LIO moves.
 identity:
   id: THEOS
   v7_1_number: 63
@@ -195,13 +198,14 @@ metaphysics:
       locator: opening; Secret Doctrine
     how_known: '0.5 founder + mysticism.'
   reserved_exemptions:
-    value: Not addressed.
+    value: None ethnic. Esoteric knowledge is for students of the path; karma applies universally in Blavatskyite
+      teaching — not a birth exemption from moral law.
     stance: none
-    certainty: 0.7
+    certainty: 0.5
     cites:
-    - source: S1
+    - source: S2
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Theosophy.'
   teleology_in_nature:
     value: Cyclic universes; spiritual growth through rebirth — cosmic process more than designer purposes.
     stance: immanent ends
@@ -408,6 +412,12 @@ sources:
   reliability_note: 'Signed article (historian of American religion); introduction, Beliefs and History
     read. P44(e): read in the Wayback copy (https://web.archive.org/web/20260705145639/https://www.britannica.com/topic/theosophy);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Theosophy." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Theosophy'
+  accessed: '2026-10-25'
 ---
 # Theosophy (THEOS)
 
@@ -454,3 +464,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 3 (0.5).
 - 2026-10-25: E_scope scored 2 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Theosophy.
