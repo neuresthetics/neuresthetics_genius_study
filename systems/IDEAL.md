@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,9 @@ record:
     by: Grok Bot
     summary: 'Score B_cause 4 (0.5) from sources on file (idealism: mind/idea fundamental; no miracle
       doctrine as family default).'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify miracles/exemptions for idealism label from Wikipedia Idealism. No LIO moves.
 identity:
   id: IDEAL
   v7_1_number: 34
@@ -155,11 +158,14 @@ metaphysics:
     cites: *id002
     how_known: Coder reading of SEP range. 0.7.
   miracles:
-    value: Not addressed as a shared thesis across idealism.
-    stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: 'SEP is metaphysics/epistemology history, not miracle doctrine.'
+    value: 'Not a shared miracle doctrine. Idealism is about the primacy of mind/ideas; theistic idealists
+      may affirm miracles, absolute idealists need not.'
+    stance: varies by school
+    certainty: 0.5
+    cites: &id003
+    - source: S2
+      locator: opening
+    how_known: '0.5 — Wikipedia: family of views.'
   petition_and_prayer:
     value: Not a shared cult practice of the philosophical family.
     stance: not addressed
@@ -187,11 +193,11 @@ metaphysics:
     cites: *id001
     how_known: SEP frames idealism as philosophical theories and arguments. 0.7.
   reserved_exemptions:
-    value: Not addressed as a shared doctrine.
+    value: None as a philosophical label. Not a church; no in-group cosmic exemption thesis.
     stance: none
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites: *id003
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
     value: Varies; absolute idealisms often read nature as expression of mind/Absolute; Kant’s theoretical
       philosophy restricts teleology.
@@ -415,6 +421,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/idealism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Idealism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Idealism'
+  accessed: '2026-10-25'
 ---
 # Idealism (IDEAL)
 
@@ -468,3 +480,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: D_authority scored 4 (0.7) from SEP Idealism.
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5.
 - 2026-10-25: B_cause scored 4 (0.5).
+- 2026-10-25: Clarified miracles/exemptions from Wikipedia Idealism.
