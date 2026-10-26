@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -38,6 +38,10 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (B=4@0.5, E=4@0.5) from sources on file / P44(c) where naturalistic. Alternatives
       named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify cosmology silence and teleology/exemptions from Wikipedia Hedonism; note Epicurean
+      cousin ≠ the label. No LIO moves.
 identity:
   id: HEDON
   v7_1_number: 32
@@ -126,53 +130,49 @@ origins:
     how_known: SEP on qualitative hedonism.
 metaphysics:
   god_nature_relation:
-    value: Not addressed.
+    value: 'Not addressed. Hedonism is a family of value/psychology/ethics theses about pleasure and pain,
+      not a theology of God and Nature. (Epicureanism is a related but distinct code with atomist cosmology.)'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: SEP treats hedonism as a theory of value and motivation.
+    certainty: 0.7
+    cites: &id001
+    - source: S2
+      locator: opening; Ethical hedonism
+    how_known: '0.7 — Wikipedia treats hedonism as pleasure theory, not religion.'
   deity_personal:
-    value: Not addressed as cosmology; value/ethics theory only.
+    value: 'Not addressed as cosmology; hedonism is a value/ethics (and sometimes psychology) theory.
+      Distinct from Epicurean physics, which denies afterlife anxiety.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope of hedonism.'
   intervention:
-    value: Not addressed as cosmology; value/ethics theory only.
+    value: 'Not addressed as cosmology; hedonism is a value/ethics (and sometimes psychology) theory.
+      Distinct from Epicurean physics, which denies afterlife anxiety.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope of hedonism.'
   miracles:
-    value: Not addressed as cosmology; value/ethics theory only.
+    value: 'Not addressed as cosmology; hedonism is a value/ethics (and sometimes psychology) theory.
+      Distinct from Epicurean physics, which denies afterlife anxiety.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope of hedonism.'
   petition_and_prayer:
-    value: Not addressed as cosmology; value/ethics theory only.
+    value: 'Not addressed as cosmology; hedonism is a value/ethics (and sometimes psychology) theory.
+      Distinct from Epicurean physics, which denies afterlife anxiety.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope of hedonism.'
   afterlife:
-    value: Not addressed as cosmology; value/ethics theory only.
+    value: 'Not addressed as cosmology; hedonism is a value/ethics (and sometimes psychology) theory.
+      Distinct from Epicurean physics, which denies afterlife anxiety.'
     stance: not addressed
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: 'SEP treats hedonism as theories of motivation and value, not cosmology.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia scope of hedonism.'
   moral_ledger:
     value: No divine judge. Value is pleasure and disvalue is pain; no personal afterlife ledger is part
       of the thesis.
@@ -193,23 +193,19 @@ metaphysics:
     how_known: "Coder's reading of Bentham/Mill material in SEP; certainty 0.7 because authority is not\
       \ SEP's topic."
   reserved_exemptions:
-    value: 'Not addressed as cosmology. Ethically, qualitative hedonism (Mill) ranks pleasures but does
-      not exempt an in-group from natural law.'
+    value: 'None as cosmology. Ethically, qualitative hedonism (Mill) ranks kinds of pleasure but does
+      not exempt an in-group from the pleasure/pain standard.'
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: §2.1
-    how_known: "Coder's reading; metaphysics neglected."
+    cites: *id001
+    how_known: '0.7 — Wikipedia qualitative vs quantitative.'
   teleology_in_nature:
-    value: "Not addressed as design. Pleasure and pain are treated as natural governors of human conduct\
-      \ (Bentham), not as a designer's purposes."
+    value: 'Not designer teleology. Bentham treats pleasure and pain as natural governors of conduct;
+      that is motivational psychology, not cosmic purpose.'
     stance: none
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: introduction
-    how_known: "Coder's reading of Bentham opening; teleology stance is a label."
+    cites: *id001
+    how_known: '0.7 — Wikipedia / Bentham framing in sources.'
   necessity_and_freedom:
     value: "Not a free-will doctrine. Psychological hedonism is a claim about what motivates; ethical\
       \ hedonism is about value. Agency weaknesses and the 'paradox of hedonism' are discussed without\
@@ -343,23 +339,24 @@ science:
       locator: §3
     how_known: "Coder's reading of SEP concluding remarks."
 schools_and_variants:
-- name: Psychological (motivational) hedonism
+- name: Psychological hedonism
   form: scholastic or philosophical
-  how_it_differs: 'Only pleasure or pain motivates (or determines action, in stronger forms).'
-  lio_difference: Does not fix LIO cosmology axes.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §1
-- name: Ethical (evaluative) hedonism
+  how_it_differs: Descriptive claim that motivation is pleasure/pain maximization (egoistic reading common).
+  lio_difference: Axes as scored for the label; not a religion.
+  certainty: 0.7
+  cites: *id001
+- name: Ethical / axiological hedonism (Bentham quantitative; Mill qualitative)
   form: scholastic or philosophical
-  how_it_differs: Only pleasure has non-instrumental worth; only pain has disvalue. Quantitative (Bentham)
-    vs qualitative (Mill) variants.
-  lio_difference: Does not fix LIO cosmology axes.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: §2
+  how_it_differs: 'Normative: only pleasure has intrinsic value; Mill adds quality ranking.'
+  lio_difference: Little axis change.
+  certainty: 0.7
+  cites: *id001
+- name: Utilitarian vs egoistic ethical hedonism
+  form: scholastic or philosophical
+  how_it_differs: 'Whose pleasure counts: everyone (utilitarian) vs agent only (egoistic).'
+  lio_difference: E-scope ethical read may shift; LIO kept for label.
+  certainty: 0.7
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -421,6 +418,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/hedonism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Hedonism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Hedonism'
+  accessed: '2026-10-25'
 ---
 # Hedonism (HEDON)
 
@@ -470,3 +473,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: A/C scored; D raised to 4.
 - 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.
+- 2026-10-25: Clarified cosmology silence; schools from Wikipedia Hedonism.
