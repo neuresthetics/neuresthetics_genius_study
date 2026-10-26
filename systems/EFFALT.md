@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S2 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -43,6 +43,10 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score A_locus 4 (0.7) from sources on file (no God-locus; naturalistic/philosophical family).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify doctrinal silence on God/afterlife; fill teleology_in_nature as none; deepen cause
+      priorities from Wikipedia Effective altruism. No LIO moves.
 identity:
   id: EFFALT
   v7_1_number: 12
@@ -143,63 +147,49 @@ origins:
     how_known: Britannica.
 metaphysics:
   god_nature_relation:
-    value: Not addressed.
+    value: Not addressed. EA is a secular evidence-and-reason movement about doing the most good; members
+      may hold any theology privately.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
+    cites: &id001
+    - source: S3
       locator: opening
-    how_known: Britannica describes an ethics and movement only.
+    how_known: '0.7 — Wikipedia: philosophical and social movement, not a religion.'
   deity_personal:
-    value: Not addressed as doctrine. Members may hold any God-view; the movement itself is silent.
+    value: Not addressed as doctrine. Members may hold any God-view or afterlife view; the movement evaluates
+      charities and causes by evidence of welfare impact.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    - source: S2
-      locator: §3.2
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   intervention:
-    value: Not addressed as doctrine. Members may hold any God-view; the movement itself is silent.
+    value: Not addressed as doctrine. Members may hold any God-view or afterlife view; the movement evaluates
+      charities and causes by evidence of welfare impact.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    - source: S2
-      locator: §3.2
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   miracles:
-    value: Not addressed as doctrine. Members may hold any God-view; the movement itself is silent.
+    value: Not addressed as doctrine. Members may hold any God-view or afterlife view; the movement evaluates
+      charities and causes by evidence of welfare impact.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    - source: S2
-      locator: §3.2
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   petition_and_prayer:
-    value: Not addressed as doctrine. Members may hold any God-view; the movement itself is silent.
+    value: Not addressed as doctrine. Members may hold any God-view or afterlife view; the movement evaluates
+      charities and causes by evidence of welfare impact.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    - source: S2
-      locator: §3.2
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   afterlife:
-    value: Not addressed as doctrine. Members may hold any God-view; the movement itself is silent.
+    value: Not addressed as doctrine. Members may hold any God-view or afterlife view; the movement evaluates
+      charities and causes by evidence of welfare impact.
     stance: not addressed
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    - source: S2
-      locator: §3.2
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   moral_ledger:
     value: No divine judge. Moral weight is on benefits to others (often impartial and welfarist); longtermism
       extends concern to future generations. Not a personal afterlife ledger.
@@ -219,22 +209,19 @@ metaphysics:
       locator: §3.2
     how_known: SEP quotation of MacAskill definition.
   reserved_exemptions:
-    value: 'Not addressed as cosmology. Ethically, impartial concern (distance and nationality not morally
-      relevant in the Singer/EA line) pushes against in-group exemptions.'
+    value: 'None cosmologically. Ethically, impartiality denies distance/nationality exemptions; longtermism
+      extends concern to future persons — still not an in-group privilege thesis.'
     stance: none
     certainty: 0.7
-    cites:
-    - source: S2
-      locator: §3.2
-    how_known: "Coder's reading of SEP on equal moral worth / distance."
+    cites: *id001
+    how_known: '0.7 — Wikipedia impartiality / cause priorities.'
   teleology_in_nature:
-    value: Not addressed.
+    value: 'None. No claim that nature has designer purposes. Value is placed on welfare outcomes humans
+      (and animals, future people) can affect.'
     stance: none
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Britannica and SEP describe an ethics and movement; no theology.
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
   necessity_and_freedom:
     value: 'Not a free-will doctrine. Stresses individual agency to give, earn-to-give, and choose careers;
       critics note the individualist framing versus institutional change.'
@@ -370,33 +357,24 @@ science:
       locator: §3.2
     how_known: SEP on longtermism and critics.
 schools_and_variants:
-- name: Global poverty / near-term EA
+- name: Global health and development focus
   form: modern
-  how_it_differs: Focus on highly effective aid for currently living people (and often animals).
-  lio_difference: Does not fix cosmology axes.
-  certainty: 1.0
-  cites:
-  - source: S2
-    locator: §3.2
-- name: Earning to give
+  how_it_differs: GiveWell-style cost-effective charities; near-term human welfare.
+  lio_difference: Axes as scored.
+  certainty: 0.7
+  cites: *id001
+- name: Animal welfare focus
   form: modern
-  how_it_differs: High-earning careers chosen to donate more to effective charities.
-  lio_difference: Practice variant; axes unchanged.
-  certainty: 1.0
-  cites:
-  - source: S2
-    locator: §3.2
-- name: Longtermism
+  how_it_differs: Factory-farming and animal suffering prioritized.
+  lio_difference: E ethical scope widens to nonhumans; LIO unchanged.
+  certainty: 0.7
+  cites: *id001
+- name: Longtermism / existential risk focus
   form: modern
-  how_it_differs: Priority on influencing the far future and reducing existential risk (MacAskill 2022;
-    Ord).
-  lio_difference: Still no cosmology; shifts cause area.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: Historical developments
-  - source: S2
-    locator: §3.2
+  how_it_differs: Future of humanity and x-risk; contested within and outside EA.
+  lio_difference: Little LIO change; ethics debate is internal.
+  certainty: 0.7
+  cites: *id001
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -471,6 +449,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry; EA treated in §3.2 Effective Altruism and Other Consequentialist
     Views.
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Effective altruism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Effective_altruism'
+  accessed: '2026-10-25'
 ---
 # Effective Altruism (EFFALT)
 
@@ -522,3 +506,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: C scored; D raised to 4.
 - 2026-10-25: implied axis fill: B=4@0.5, E=4@0.5.
 - 2026-10-25: A_locus scored 4.
+- 2026-10-25: Clarified God/afterlife silence; teleology none; cause-priority schools from Wikipedia EA.
