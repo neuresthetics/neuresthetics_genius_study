@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S5 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,9 @@ record:
     by: Grok Bot
     summary: 'Fill implied axes (C=4@0.5, E=4@0.5, B=4@0.5) from sources on file / P44(c) where naturalistic.
       Alternatives named.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Clarify miracles/exemptions as thesis-not-cult from Wikipedia Panpsychism. No LIO moves.
 identity:
   id: PANPSY
   v7_1_number: 33
@@ -142,11 +145,14 @@ metaphysics:
     cites: *id001
     how_known: SEP.
   miracles:
-    value: Not addressed as shared doctrine.
+    value: Not a miracle doctrine. Panpsychism claims mentality is fundamental or ubiquitous in matter;
+      it does not posit suspensions of natural law.
     stance: not addressed
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites: &id002
+    - source: S2
+      locator: opening
+    how_known: '0.7 — Wikipedia definition.'
   petition_and_prayer:
     value: Not a cult practice of the thesis.
     stance: not addressed
@@ -174,11 +180,11 @@ metaphysics:
       locator: §3
     how_known: SEP arguments section. 0.7.
   reserved_exemptions:
-    value: Not addressed.
+    value: 'None. A metaphysical thesis in philosophy of mind, not a religion with in-group exemptions.'
     stance: none
-    certainty: 1.0
-    cites: *id001
-    how_known: SEP.
+    certainty: 0.7
+    cites: *id002
+    how_known: '0.7 — Wikipedia.'
   teleology_in_nature:
     value: Not required; some cosmopsychist variants (e.g. Goff fine-tuning discussion in SEP) add agency
       — not the default.
@@ -398,6 +404,12 @@ sources:
   url: 'https://plato.stanford.edu/entries/panpsychism/'
   accessed: '2026-10-25'
   reliability_note: Peer-reviewed reference entry.
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Panpsychism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Panpsychism'
+  accessed: '2026-10-25'
 ---
 # Panpsychism (consciousness inherent in matter) (PANPSY)
 
@@ -443,3 +455,4 @@ Authorial v7.1 note unchanged (see front matter).
 - 2026-10-25: deepened TODOs; re-read SEP Panpsychism.
 - 2026-10-25: D_authority scored 4 (0.7).
 - 2026-10-25: implied axis fill: C=4@0.5, E=4@0.5, B=4@0.5.
+- 2026-10-25: Clarified miracles/exemptions as thesis-not-cult from Wikipedia Panpsychism.
