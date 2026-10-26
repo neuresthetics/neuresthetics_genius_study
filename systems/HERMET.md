@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 9
+  record_version: 10
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -45,6 +45,9 @@ record:
     by: Grok Bot
     summary: Fill thin ethics and deepen practice/schools from Britannica S1 + Wikipedia Hermeticism tertiary.
       No LIO moves.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill exemptions and necessity from Wikipedia Hermeticism. No LIO moves.
 identity:
   id: HERMET
   v7_1_number: 61
@@ -205,13 +208,14 @@ metaphysics:
       locator: Hellenistic age; popular Hermetism
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: None ethnic. Esoteric knowledge is for those who study/practice; not a birth caste exemption
+      from cosmic correspondence / moral ascent themes in the texts.
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: full article content used
-    how_known: Silence.
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: Philosophy
+    how_known: '0.5 — Wikipedia Hermeticism.'
   teleology_in_nature:
     value: Cosmos as unity; parts related by sympathy and antipathy — occult teleology/correspondence
       more than designer purposes.
@@ -222,12 +226,11 @@ metaphysics:
       locator: popular Hermetism
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: full article content used
-    how_known: Silence.
+    value: 'Ascent of the soul through knowledge (gnosis) and practice implies transformative agency within
+      a structured cosmos (as above, so below). Not a single scholastic free-will school.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia.'
 lio_axes:
   A_locus:
     value: 1
@@ -302,7 +305,7 @@ ethics:
     "as above, so below" sympathy. Not a single systematic ethics; later Renaissance Hermetism mixed Christian
     and Neoplatonic virtue talk.'
   certainty: 0.7
-  cites: &id001
+  cites: &id002
   - source: S2
     locator: Philosophy; History
   how_known: '0.6 — Wikipedia Hermeticism; Britannica summary had no ethics section.'
@@ -312,13 +315,13 @@ practice:
       No ancient church. Later: Renaissance magic, Rosicrucian and occult receptions; modern esoteric
       orders claim Hermetic lineage.'
     certainty: 0.7
-    cites: *id001
+    cites: *id002
     how_known: '0.7 — Wikipedia + prior Britannica.'
   community_form:
     value: 'No well-defined ancient Hermetic church. Medieval/Renaissance learned circles; modern Hermetic
       Order of the Golden Dawn and related esoteric societies are receptions, not the classical cultus.'
     certainty: 0.7
-    cites: *id001
+    cites: *id002
     how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
@@ -333,7 +336,7 @@ science:
     value: Historical corpus; modern Hermetic and occult streams vary widely and are not a science programme.
       Alchemy historically mixed proto-chemistry with spiritual allegory.
     certainty: 0.7
-    cites: *id001
+    cites: *id002
     how_known: '0.6 — Wikipedia.'
 schools_and_variants:
 - name: Philosophical Hermetica (Corpus Hermeticum)
@@ -479,3 +482,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: C_ledger scored 1 (0.5).
 - 2026-10-25: B/E scored.
 - 2026-10-25: Filled ethics; deepened practice/schools from Wikipedia Hermeticism.
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Hermeticism.
