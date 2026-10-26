@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 6
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Protestant (Church of Ireland / Anglo-Irish) @0.7 from new Wikipedia S6 + Britannica. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #201/228, F 3, rank 214). Goal: corroborate A (was dark hollow — A 0@0.7 single S3 only; B already corroborated). Re-read Free Enquiry S3 p.158 A warrant; added Christian Virtuoso S4 corroboration: World 'framed by an Author supremely Powerful, Wise, and Good' (p. 14); 'Supreme Lord and Governor of the World' / 'supremely perfect Author' (p. 33); 'Formation of the World out of the Universal Matter' by 'an Incorporeal Substance' giving Motion to a Body (p. 28). SEP §3.4/§5.2 (S2) also notes God as Author distinct from created machine. A cites S3+S4 → support single→corroborated; value/certainty hold A 0 @0.7 (alt 1 named, cites only S3 subset). B 3 @0.7 corroborated unchanged; mid_basin true @0.7 (P4) unchanged; primary CHRIST @0.7 unchanged. Chart-moving YES for fill cue only: dark hollow → dark filled when figures next refresh (values unchanged). P47 source_quality on S1–S5. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). Decision P11: TCP transcriptions are authoritative copies under CODING_GUIDE §7, so the open question on S3/S4 is closed (coder notes, the self-described relation's how_known and both reliability notes cite P11; no value change). Decision P12: first_lasting_contribution_year 1660 → 1659 (start of the listed 1659–1660 air-pump item; Britannica), age 33 → 32; era unchanged. Small fixes on claims that hold: #22 comma restored in 'divers times, (and perhaps oftner' (TCP A28982, p. 160); #34 Church of England affiliation 1.0 → 0.7 (only Britannica names the church). Not reviewed."}
@@ -67,7 +68,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of experimental pneumatics and of modern chemistry's corpuscular programme; Boyle's law.", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 childhood:
-  family_religion: {value: TODO, note: "The family's Protestant (Church of Ireland) practice is not stated in the sources read."}
+  family_religion: {value: "Protestant (Church of Ireland / Anglo-Irish aristocracy)", certainty: 0.7, cites: [{source: S6, locator: "lead: Anglo-Irish; devout and pious Anglican"}, {source: S1, locator: "Early life and education (Lismore; Earl of Cork)"}], how_known: "Wikipedia: Anglo-Irish Boyle of Cork; adult devout Anglican. Earl of Cork household = Protestant Ascendancy milieu (Church of Ireland). Context only."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father, Richard Boyle, 1st Earl of Cork", name: "Richard Boyle", role: father, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "§1 Life"}], how_known: "Two sources."}
@@ -235,9 +236,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Anglo-Irish aristocracy", certainty: 1.0, cites: [{source: S1, locator: "opening; 'Early life and education'"}, {source: S2, locator: "§1 Life"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Protestant (Church of Ireland / Anglo-Irish)", certainty: 0.7, cites: [{source: S6, locator: "lead / Early years: Anglo-Irish; Lismore Castle; Earl of Cork; devout Anglican"}, {source: S1, locator: "Early life and education"}], how_known: "Born at Lismore to the 1st Earl of Cork (Protestant Anglo-Irish aristocracy); Wikipedia marks him Anglo-Irish and a devout Anglican. Childhood parish practice not narrated in detail; heritage is the Ascendancy Protestant default. Context only (P19)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Protestant infant baptism expected for Cork family; no baptism register opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named in S1–S6."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -330,6 +331,16 @@ sources:
     reliability_note: "Study's own roster; used only for rank, F and status."
     source_quality: "study roster"
     used_for: [identity, review]
+  - id: S6
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Robert Boyle.\" English Wikipedia. https://en.wikipedia.org/wiki/Robert_Boyle. Read 2026-10-25 (lead: Anglo-Irish, devout Anglican; Early years: Lismore Castle, Earl of Cork)."
+    url: "https://en.wikipedia.org/wiki/Robert_Boyle"
+    accessed: 2026-10-25
+    reliability_note: "Used for heritage/context (Anglo-Irish Protestant / Anglican) dual with Britannica; worldview scores rest on primary S3/S4 and SEP/Britannica already on file."
+    source_quality: "reference entry"
+    used_for: [heritage, basics]
 ---
 
 # Robert Boyle

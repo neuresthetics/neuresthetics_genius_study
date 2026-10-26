@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth-religion line; refuse milieu invention). Chart-moving NO."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (XW3) era_bucket 'before -500' (0.5) -> UNKNOWN: under a strict P39 his adult life (ca. 570–490 BCE) crosses the -500 edge, and P39 has no candidate-year clause (corrects the batch W PY4 advice; Gautama treated alike). Not plotted either way."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (PY4) era_bucket 'before -500' 0.7 -> 0.5, how_known based on the candidate years (Croton, ca. 530–510 BCE) under P39, at the certainty of the life dates. (Note) 'forged' wording corrected: SEP says books were forged in his name; the Golden Verses circulated in his name and were later compiled; the Sacred Discourse attribution rests on a misreading. SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 125). All facts from SEP (Carl Huffman). Pythagoras wrote nothing; everything about his views is later report (doxography), which is reported speech and cannot score alone (P42, CODING_GUIDE §7). Not a scientist (P30): SEP doubts he did mathematics or rational cosmology. primary_system BELOW_THRESHOLD; A, B, C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin BELOW_THRESHOLD. First lasting contribution and span UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
@@ -58,7 +59,7 @@ contribution:
   definition_fit: {value: "arguable", rationale: "Famous in his day and after, but for the soul's fate, ritual, wonders and a way of life, not mathematics; the later image of a master mathematician is the 'false glorification' SEP warns against (S1).", certainty: 0.5, cites: [{source: S1, locator: "opening; §5"}], how_known: "Coder's reading of SEP."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: UNKNOWN, how_known: "Not stated in sources read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father: Mnesarchus", certainty: 0.5, cites: [{source: S1, locator: "§3 (Heraclitus Fr. 129)"}], how_known: "Only from Heraclitus's phrase 'the son of Mnesarchus', quoted by SEP."}
@@ -106,9 +107,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Greek of Samos", certainty: 0.7, cites: [{source: S1, locator: "§3"}], how_known: "SEP."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not stated; Samos Archaic Greek cult milieu is not coded as scored heritage without an explicit source line (cf. Aristotle UNKNOWN)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No initiation record opened for birth household (Pythagorean initiation is adult/school, not birth-heritage)."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"

@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 4
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Lutheran (Brunswick) @0.7 from new Wikipedia S8 + Britannica birthplace. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Gray, first page). Worldview from Sartorius von Waltershausen, Gauss zum Gedächtniss (1856), a friend's memoir with reported sayings, read on the Internet Archive scan (pp. 16, 97, 98, 101, 102, 103 checked on the page images; pp. 99–100 in the OCR text only). No writing by Gauss on religion was read. primary_system BELOW_THRESHOLD. A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #156: full_name now cites MacTutor's heading for the order used, with Britannica's 'Johann Friedrich Carl Gauss' as a cited alternative (both reopened); certainty unchanged pending v8's ruling on name-order disputes. #205: the 1795 age note corrected (Sartorius p. 16 puts the least-squares discovery at Göttingen, reached 11 October 1795, so 18). #216: 'Fragen.«' copied as printed (page image). Left for v8 as a method question: #162 (first lasting year 1796 vs the listed least-squares item 1795–1801). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. first_lasting_contribution_year 1796 → 1795 (P12 start of the 1795–1801 least-squares item) (P17, P23), the 1796 alternative dropped since it needs the item re-dated or split (P23), 1792 kept (P25), era and age unchanged; 17-gon item 1.0 → 0.5 with Britannica's 1792 named (P25); major_work_period how_known cites the sources' dates (P23); A_locus 1 (0.5) → BELOW_THRESHOLD and B_cause 4 (0.5) → BELOW_THRESHOLD (reported speech alone (P18); B needs a statement about nature (P16)); E_scope stays BELOW_THRESHOLD (reported 'Logik' through the universe and working science, P19; the draft's UNKNOWN reverted); mid_basin note rewritten; lio_views_relative_to_major_work unclear → no LIO-type views found (P27); schooling/0 stage dame or charity school → elementary school (P21); single-source 1.0 fields → 0.7 (P15) (definition_fit, working_years, Göttingen observatory, Weber, Riemann); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite. Not reviewed."}
@@ -71,7 +72,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "Founder of modern number theory and of differential geometry of surfaces.", certainty: 0.7, cites: [{source: S3, locator: "opening"}], how_known: "One source cited, so 0.7 under the single-source rule (P15)."}
 
 childhood:
-  family_religion: {value: TODO, note: "Not stated in the sources read."}
+  family_religion: {value: "Lutheran", certainty: 0.7, cites: [{source: S8, locator: "Religious views: member of the Lutheran church, like most of the population in northern Germany"}], how_known: "Wikipedia: Lutheran church membership typical of northern German / Brunswick milieu. Context only."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Only child of poor parents; a 'devoted mother' who with his teachers recommended him to the duke", role: "parents", certainty: 0.7, cites: [{source: S3, locator: "childhood paragraph"}], how_known: "Britannica."}
@@ -218,9 +219,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "German (Brunswick)", certainty: 1.0, cites: [{source: S2, locator: "Quick Info"}, {source: S3, locator: "Born line"}], how_known: "Two sources."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: "Lutheran (Brunswick / northern German)", certainty: 0.7, cites: [{source: S8, locator: "Religious views: member of the Lutheran church, like most of the population in northern Germany"}, {source: S1, locator: "opening / Early life (Brunswick)"}], how_known: "Wikipedia states Lutheran church membership as the regional default; birth in Brunswick (Protestant north Germany). Adult belief nuances (not all dogma) do not erase birth-heritage. Context only (P19)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "Lutheran infant baptism expected but no baptism record opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named in sources read."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
@@ -335,6 +336,16 @@ sources:
     source_quality: "scholarly edition or monograph"
     reliability_note: "Secondary digest of Gauss's religious letters (Bolyai/Olbers); used to corroborate the standard reading of the Gnade Gottes and afterlife passages, not as primary wording."
     used_for: [worldview]
+  - id: S8
+    type: tertiary
+    kind: encyclopedia
+    author: "Wikipedia contributors"
+    citation: "Wikipedia. \"Carl Friedrich Gauss.\" English Wikipedia. https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss. Read 2026-10-25 (Religious views: Lutheran church membership)."
+    url: "https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss"
+    accessed: 2026-10-25
+    reliability_note: "Used for heritage/context (Lutheran membership line) and dual bio only; worldview scores not taken from Wikipedia."
+    source_quality: "reference entry"
+    used_for: [heritage, basics]
 
 ---
 

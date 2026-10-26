@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 2
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
   last_updated: 2026-10-24
   change_log:
+    - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth-religion line in S1–S8; refuse Hellenic-milieu invention). Chart-moving NO."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 65). Basics from Britannica (Meinwald). Worldview from the Timaeus and Laws X (Jowett, Gutenberg #1572 and #1750; web copies), attributed to Plato himself by SEP 'Plato's Timaeus' (Zeyl and Sattler), so they count under P42; spoken by characters (Timaeus, the Athenian Stranger), so 0.5. Not a scientist (Britannica: 'not a research mathematician'). primary_system PLATO 0.5; A 1 at 0.5 (alt 0); B 3 at 0.5 (alt 4); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). Laws X dropped from the B rationale and cites: no source read attributes its theology to Plato (P42). SEP's opening sentence ('In the Timaeus Plato presents...') cited explicitly as the P42 attribution for the Timaeus. B stays 3 (0.5, alternative 4)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #64, F5 rank 65). Needs: A faded; B faded. Added Lamb Loeb Timaeus via Perseus (S7 scholarly edition) with Stephanus 28a–30b, 47e–48a, 68e, 92c confirming Jowett A/B passages; support labelled corroborated (S2+S7+S3). Wikipedia EN (S6) + SEP Plato Kraut (S8) dual bio (P50); native_name Πλάτων. P47 source_quality on S1–S8. A/B statements verified_against → scholarly edition (Lamb). Values/certainties stay A 1 @0.5 and B 3 @0.5 (dialogue character speech + scholarly_reconstruction; P42). mid_basin BELOW_THRESHOLD. Chart: already faded filled — chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -60,7 +61,7 @@ contribution:
   definition_fit: {value: "clearly meets", rationale: "(S1; S8).", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S8, locator: "opening"}], how_known: "Coder's reading."}
 
 childhood:
-  family_religion: {value: TODO}
+  family_religion: {value: UNKNOWN, how_known: "Not stated in sources read."}
   family_religious_practice: {value: TODO}
   parents_and_household:
     - {value: "Father Ariston, mother Perictione; aristocratic family related on the mother's side to Solon", role: parents, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}, {source: S6, locator: "Life (Perictione; Solon)"}], how_known: "Britannica; Wikipedia."}
@@ -144,9 +145,9 @@ worldview:
 heritage:
   use: "context only — never an outcome and never a worldview code"
   ethnic_or_communal_heritage: {value: "Athenian aristocracy", certainty: 0.7, cites: [{source: S1, locator: "'Life'"}, {source: S6, locator: "Life"}], how_known: "Britannica; Wikipedia."}
-  religious_heritage_by_birth: {value: TODO}
-  baptism_or_initiation: {value: TODO}
-  childhood_catechism: {value: TODO}
+  religious_heritage_by_birth: {value: UNKNOWN, how_known: "Not stated as a childhood confession in S1–S8; Athenian civic cult milieu is not coded as a scored heritage label without an explicit source line (cf. Aristotle UNKNOWN)."}
+  baptism_or_initiation: {value: UNKNOWN, how_known: "No baptism/initiation record applicable or opened."}
+  childhood_catechism: {value: UNKNOWN, how_known: "No childhood catechism curriculum named."}
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
