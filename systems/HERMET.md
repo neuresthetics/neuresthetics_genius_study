@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,10 @@ record:
     by: Grok Bot
     summary: Score B_cause 1 (0.5) and E_scope 2 (0.5) from sources on file (Hermetica; as above so below;
       initiation).
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill thin ethics and deepen practice/schools from Britannica S1 + Wikipedia Hermeticism tertiary.
+      No LIO moves.
 identity:
   id: HERMET
   v7_1_number: 61
@@ -294,29 +298,28 @@ epistemology:
     locator: aim; popular; theological
   how_known: Britannica.
 ethics:
-  value: Not developed as a single ethics in the Britannica summary.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: full article content used
-  how_known: Silence.
+  value: 'Corpus Hermeticum emphasizes moral purification, piety, and ascent of the soul toward the One;
+    "as above, so below" sympathy. Not a single systematic ethics; later Renaissance Hermetism mixed Christian
+    and Neoplatonic virtue talk.'
+  certainty: 0.7
+  cites: &id001
+  - source: S2
+    locator: Philosophy; History
+  how_known: '0.6 — Wikipedia Hermeticism; Britannica summary had no ethics section.'
 practice:
   ritual_and_practice:
-    value: 'Popular Hermetism: astrology, alchemy, magic. Learned: theological/philosophical dialogues.
-      Unlikely any well-defined Hermetic community or church.'
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening; closing
-    how_known: Britannica.
+    value: 'Ancient: philosophical dialogues (learned Hermetism) and astrology/alchemy/magic (popular).
+      No ancient church. Later: Renaissance magic, Rosicrucian and occult receptions; modern esoteric
+      orders claim Hermetic lineage.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia + prior Britannica.'
   community_form:
-    value: 'Unlikely there was any well-defined Hermetic community or church [S1]. Later medieval/Renaissance
-      receptions are separate.'
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: closing
-    how_known: Britannica.
+    value: 'No well-defined ancient Hermetic church. Medieval/Renaissance learned circles; modern Hermetic
+      Order of the Golden Dawn and related esoteric societies are receptions, not the classical cultus.'
+    certainty: 0.7
+    cites: *id001
+    how_known: '0.7 — Wikipedia.'
 science:
   historical_stance:
     value: Breakdown of distinction between science and religion in Hellenistic age; occult sciences utilitarian
@@ -327,29 +330,36 @@ science:
       locator: Hellenistic age; popular
     how_known: Britannica.
   current_stance:
-    value: Historical corpus; modern esoteric receptions vary (not detailed here).
+    value: Historical corpus; modern Hermetic and occult streams vary widely and are not a science programme.
+      Alchemy historically mixed proto-chemistry with spiritual allegory.
     certainty: 0.7
-    cites:
-    - source: S1
-      locator: closing
-    how_known: "Coder's reading."
+    cites: *id001
+    how_known: '0.6 — Wikipedia.'
 schools_and_variants:
-- name: 'Popular Hermetism (astrology, alchemy, magic)'
-  form: mystical
-  how_it_differs: Occult sciences; Emerald Tablet etc.
-  lio_difference: A1 D1; B may lean more interventionist at person level.
-  certainty: 1.0
-  cites:
-  - source: S1
-    locator: opening
-- name: 'Learned Hermetism (Corpus Hermeticum, Asclepius)'
+- name: Philosophical Hermetica (Corpus Hermeticum)
   form: scholastic or philosophical
-  how_it_differs: 'Theology and philosophy in Platonic dialogue form; Greek philosophy, Egyptian setting.'
-  lio_difference: Same umbrella scores.
-  certainty: 1.0
+  how_it_differs: 'Theological dialogues on God, cosmos, nous; deification via gnosis.'
+  lio_difference: Axes as scored.
+  certainty: 0.7
   cites:
   - source: S1
-    locator: theological writings
+    locator: learned Hermetism
+- name: Technical / popular Hermetism
+  form: popular
+  how_it_differs: 'Astrology, alchemy, magic based on cosmic sympathy.'
+  lio_difference: B may sit higher (ritual efficacy).
+  certainty: 0.7
+  cites:
+  - source: S1
+    locator: popular Hermetism
+- name: Renaissance and modern esoteric receptions
+  form: modern
+  how_it_differs: Ficino/Pico; later Golden Dawn and occult Hermeticism. Separate from ancient cultus.
+  lio_difference: High variance; not coded as the classical system.
+  certainty: 0.7
+  cites:
+  - source: S2
+    locator: History
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -414,6 +424,12 @@ sources:
   accessed: '2026-10-25'
   reliability_note: 'Unsigned editors’ article; full article read. P44(e): read in the Wayback copy (https://web.archive.org/web/20261012054054/https://www.britannica.com/topic/Hermetic-writings);
     live page not compared (live Britannica times out from the box).'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Hermeticism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Hermeticism'
+  accessed: '2026-10-25'
 ---
 # Hermeticism (HERMET)
 
@@ -462,3 +478,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C_ledger scored 1 (0.5).
 - 2026-10-25: B/E scored.
+- 2026-10-25: Filled ethics; deepened practice/schools from Wikipedia Hermeticism.
