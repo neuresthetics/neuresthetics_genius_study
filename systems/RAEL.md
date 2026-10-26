@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 8
+  record_version: 9
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -41,6 +41,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 4 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions from Wikipedia Raëlism. No LIO moves.
 identity:
   id: RAEL
   v7_1_number: 76
@@ -194,13 +197,14 @@ metaphysics:
       locator: Organizational
     how_known: Encyclopedia.com — D=1 kept.
   reserved_exemptions:
-    value: Not addressed.
-    stance: none
-    certainty: 0.7
+    value: "Founder/prophet role (Raël) is unique as messenger; members pursue levels in the structure.\
+      \ Not an ethnic exemption from the teaching's ethics."
+    stance: some
+    certainty: 0.5
     cites:
-    - source: S2
+    - source: S3
       locator: opening
-    how_known: Silence.
+    how_known: '0.5–0.7 — Wikipedia Raëlism.'
   teleology_in_nature:
     value: Scientific creation by Elohim; Age of Apocalypse since Hiroshima; embassy for return.
     stance: "designer's purposes"
@@ -422,6 +426,12 @@ sources:
   citation: 'Susan J. Palmer, "Raëlians," Encyclopedia of Religion (Encyclopedia.com).'
   url: 'https://www.encyclopedia.com/environment/encyclopedias-almanacs-transcripts-and-maps/raelians'
   accessed: '2026-10-25'
+- id: S3
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Raëlism." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Ra%C3%ABlism'
+  accessed: '2026-10-25'
 ---
 # Raëlian Movement (RAEL)
 
@@ -467,3 +477,4 @@ Raëlian identity only.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: C/B scored.
 - 2026-10-25: E_scope scored 4 (0.5).
+- 2026-10-25: Filled reserved_exemptions from Wikipedia Raëlism.
