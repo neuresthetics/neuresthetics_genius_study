@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S9 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -37,6 +37,10 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Native American religion.
+      No LIO moves.
 identity:
   id: NATAM
   v7_1_number: 55
@@ -184,13 +188,14 @@ metaphysics:
       locator: diversity; place
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed as a single doctrine.
-    stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Umbrella label across many nations. Some ceremonial knowledge is restricted by initiation,
+      age, or nation membership; not one shared exemption doctrine. Avoid pan-Indian overclaim.'
+    stance: varies by school
+    certainty: 0.5
+    cites: &id001
+    - source: S2
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Native American religion.'
   teleology_in_nature:
     value: Nature bears revelation; animals as progenitors/teachers; not framed as designer teleology.
     stance: immanent ends
@@ -200,12 +205,11 @@ metaphysics:
       locator: nature and animals
     how_known: '0.5 coder reading.'
   necessity_and_freedom:
-    value: Not addressed as a free-will/determinism thesis.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Varies widely by nation. Vision, ceremony, and kinship agency appear often; scholastic free-will
+      debate is not the frame.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Native American religion.'
 lio_axes:
   A_locus:
     value: 'BELOW_THRESHOLD'
@@ -397,6 +401,12 @@ sources:
   reliability_note: 'Signed article; introduction and North America overview read. P44(e): read in the
     Wayback copy (https://web.archive.org/web/20261002224350/https://www.britannica.com/topic/Native-American-religion);
     live page timed out on 2026-10-15, so no live comparison.'
+- id: S2
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Native American religion." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Native_American_religion'
+  accessed: '2026-10-25'
 ---
 # Native American Traditions (NATAM)
 
@@ -444,3 +454,4 @@ Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
 - 2026-10-25: E_scope scored 1 (0.5).
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Native American religion.
