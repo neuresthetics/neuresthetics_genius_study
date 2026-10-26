@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 10
+  record_version: 11
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -46,6 +46,9 @@ record:
   - date: '2026-10-25'
     by: Grok Bot
     summary: Score E_scope 1 (0.5) from sources on file. Alternatives named.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: Fill reserved_exemptions and necessity_and_freedom from Wikipedia Shinto. No LIO moves.
 identity:
   id: SHINTO
   v7_1_number: 45
@@ -188,13 +191,14 @@ metaphysics:
       locator: opening; nature
     how_known: Britannica.
   reserved_exemptions:
-    value: Not addressed.
+    value: No blanket in-group exemption from purity/impurity (kegare) concerns. Kami relationship and
+      ritual correctness apply across the community; imperial/shrine roles are vocational not cosmic loopholes.
     stance: none
-    certainty: 0.7
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    certainty: 0.5
+    cites: &id001
+    - source: S5
+      locator: opening; Beliefs
+    how_known: '0.5 — Wikipedia Shinto.'
   teleology_in_nature:
     value: Musubi as creative/harmonizing power of kami; not designer teleology.
     stance: immanent ends
@@ -204,19 +208,18 @@ metaphysics:
       locator: beliefs
     how_known: '0.5.'
   necessity_and_freedom:
-    value: Not addressed.
-    certainty: 1.0
-    cites:
-    - source: S1
-      locator: opening
-    how_known: Silence.
+    value: 'Not a Western free-will treatise. Emphasis on sincerity (makoto), purity, and correct ritual
+      within kami-filled world.'
+    certainty: 0.5
+    cites: *id001
+    how_known: '0.5 — Wikipedia Shinto.'
 lio_axes:
   A_locus:
     value: 3
     rationale: "Kami ('sacred or divine power, specifically the various gods or deities') are found in\
       \ nature and in outstanding men."
     certainty: 0.5
-    cites: &id001
+    cites: &id002
     - source: S1
       locator: introduction; Early clan religion
     - source: S2
@@ -228,14 +231,14 @@ lio_axes:
     alternatives:
     - value: 2
       note: Named alternative.
-      cites: *id001
+      cites: *id002
   B_cause:
     value: 2
     rationale: "Petitionary prayer to protecting kami: 'prayers were offered for the safety of the state\
       \ and people'; children visit the shrine 'to give thanks for kami’s protection'; Motoori's 'absolute\
       \ faith—according to which all problems beyond human capability were turned over to kami'."
     certainty: 0.5
-    cites: &id002
+    cites: &id003
     - source: S3
       locator: Political and social roles
     - source: S4
@@ -247,7 +250,7 @@ lio_axes:
     alternatives:
     - value: 1
       note: Named alternative.
-      cites: *id002
+      cites: *id003
   C_ledger:
     value: 4
     certainty: 0.7
@@ -462,6 +465,12 @@ sources:
   reliability_note: 'Later page of the same signed article (S8 audit fix). P44(e): read in the Wayback
     copy (https://web.archive.org/web/20261006221934/https://www.britannica.com/topic/Shinto/Ritual-practices-and-institutions);
     live page not compared.'
+- id: S5
+  type: tertiary
+  kind: encyclopedia
+  citation: 'Wikipedia contributors. "Shinto." Wikipedia. Accessed 2026-10-25.'
+  url: 'https://en.wikipedia.org/wiki/Shinto'
+  accessed: '2026-10-25'
 ---
 # Shintō (SHINTO)
 
@@ -506,3 +515,4 @@ Shintō identity; not ANIM dump.
 - 2026-10-25: adherents/estimate filled (qualitative).
 - 2026-10-25: D/C scored.
 - 2026-10-25: E_scope scored 1 (0.5).
+- 2026-10-25: Filled exemptions/necessity from Wikipedia Shinto.
