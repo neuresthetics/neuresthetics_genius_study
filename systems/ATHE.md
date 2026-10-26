@@ -2,7 +2,7 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 7
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S1 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
@@ -35,6 +35,10 @@ record:
     by: Grok Bot
     summary: Deepen remaining metaphysics TODOs and practice from Britannica + SEP atheism/naturalism.
       Axes and ethics UNKNOWN unchanged.
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Fill ethics from S1/S2: atheism is a metaphysical stance, not one ethics; overlaps with
+      humanist/consequentialist streams noted without inventing a single code.'
 identity:
   id: ATHE
   v7_1_number: 1
@@ -251,14 +255,16 @@ epistemology:
     locator: "'Atheism and theism'"
   how_known: Britannica.
 ethics:
-  value: 'UNKNOWN'
-  certainty: 0.5
+  value: 'Atheism as such is a metaphysical denial of God, not a single ethical system [S1; S2]. Ethical
+    content, when present, usually comes from overlapping humanist, utilitarian, or virtue traditions
+    rather than from atheism alone. No divine-command ethics.'
+  certainty: 0.7
   cites:
   - source: S1
     locator: opening
   - source: S2
     locator: §1
-  how_known: Sources are metaphysical/epistemic; no single atheist ethics. 0.5.
+  how_known: '0.7 — Britannica and SEP frame atheism as critique/denial of God, not a moral code.'
 practice:
   ritual_and_practice:
     value: 'No required ritual; atheism is a stance, not a liturgy (organized atheist/humanist groups
