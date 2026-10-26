@@ -2,22 +2,30 @@
 record:
   record_type: system
   schema_version: '1.1'
-  record_version: 3
+  record_version: 4
   review_status: draft — unreviewed
   collected_by: Grok Bot (systems batch S8 for Jason)
   model_used: Grok Bot executor agent; direct reads of the cited pages
-  collected_on: 2026-10-01
-  last_updated: '2026-10-15'
+  collected_on: '2026-10-01'
+  last_updated: '2026-10-25'
   change_log:
-  - date: 2026-10-01
+  - date: '2026-10-01'
     by: scripts/make_system_stubs.py
     summary: Stub created from v7.1 data book table 4 and section 7.
-  - date: 2026-10-02
+  - date: '2026-10-02'
     by: scripts/make_system_stubs.py
-    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the world''s order (same rules for every kind of being and event, no in-group exceptions in this-world events). Salvation and moral community go on C_ledger.'
+    summary: 'Decision P7: E_scope note added. E is not scored in a stub; when it is, score it on the
+      world''s order (same rules for every kind of being and event, no in-group exceptions in this-world
+      events). Salvation and moral community go on C_ledger.'
   - date: '2026-10-15'
     by: Grok Bot
-    summary: 'Draft (systems batch S8): filled from SEP "Daoism" (Hansen) and IEP "Daoist Philosophy" (Littlejohn). A, B, D BELOW_THRESHOLD; C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+    summary: 'Draft (systems batch S8): filled from SEP "Daoism" (Hansen) and IEP "Daoist Philosophy"
+      (Littlejohn). A, B, D BELOW_THRESHOLD; C, E UNKNOWN. v7.1 scores and note unchanged. Not reviewed.'
+  - date: '2026-10-25'
+    by: Grok Bot
+    summary: 'Deepen qualities from SEP Daoism (2025 entry): dào as natural possibility paths, Laozi/Zhuangzi,
+      Ru-Mo foil, science-friendly naturalism; religious Daoism separate. Keep A/B/D BELOW_THRESHOLD;
+      C E UNKNOWN.'
 identity:
   id: TAO
   v7_1_number: 46
@@ -27,70 +35,178 @@ identity:
   aliases: []
 classification:
   kind:
-    value: religion
+    value: philosophical school or method
     certainty: 0.7
     cites:
-    - source: S2
-      locator: §3
-    how_known: 'IEP: separating philosophy and religion in Daoism reflects a Western frame; SEP treats it as philosophy.'
+    - source: S1
+      locator: opening
+    how_known: SEP treats Chinese philosophical Daoism; religious Daoism separate — 0.7.
   family:
-    value: TODO
-  parent_traditions:
-    value: TODO
-  related_codes: []
-origins:
-  founding_era:
-    value: TODO
-  founding_region:
-    value: TODO
-  founders_or_key_figures:
-    value:
-    - Laozi (Daodejing)
-    - Zhuangzi
-    - Zhang Daoling (Celestial Masters, 142 CE)
+    value: 'Philosophical Daoism: normative naturalism around dào (path/way) as structure of natural possibility;
+      Laozi and Zhuangzi classical texts'
     certainty: 1.0
     cites:
-    - source: S2
-      locator: §§1, 4, 9
-    how_known: IEP.
-  key_texts: []
+    - source: S1
+      locator: opening
+    how_known: SEP.
+  parent_traditions:
+    value:
+    - Classical Chinese philosophy (Warring States)
+    - Critique of Confucian-Mohist (Ru-Mo) human dào debate
+    - Later Han category dàojiā
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; history
+    how_known: SEP.
+  related_codes:
+  - code: CONFUC
+    relation: contrast case
+    note: Ru human dào vs natural dào
+  - code: BUDDH
+    relation: overlaps
+    note: Zen/Chan accommodation historically
+  - code: FALUNG
+    relation: neighbor (easily confused)
+    note: qigong NRM ≠ philosophical Daoism
+origins:
+  founding_era:
+    value: Classical period 5th–3rd c. BCE (Laozi/Zhuangzi texts); Han coinage of Daoist school
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; history
+    how_known: SEP.
+  founding_region:
+    value: China
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP.
+  founders_or_key_figures:
+    value:
+    - Laozi (text tradition)
+    - Zhuangzi
+    - Shen Dao / Hui Shi (early phase mentions)
+    - Wang Bi / Guo Xiang (received texts)
+    - 'Modern: Yan Fu, Jin Yuelin, Chen Guying'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; history
+    how_known: SEP.
+  key_texts:
+  - value: Daode Jing (Laozi)
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP.
+  - value: Zhuangzi
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP.
 metaphysics:
   god_nature_relation:
-    value: TODO
-    stance: TODO
+    value: Natural dào of cosmos; nature neutral toward ways of life; not a commanding God. Holistic/monist
+      tendencies; religious Daoism treated as separate topic.
+    stance: no God
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening; cosmology
+    how_known: Philosophical naturalism; 0.5 — some Absolute-dào readings exist.
   deity_personal:
-    value: TODO
-    stance: TODO
+    value: No supernatural ego as normative authority; Huang-Lao cult historically separate from philosophical
+      project.
+    stance: no deity
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening; history
+    how_known: 0.5 philosophical focus.
   intervention:
-    value: TODO
-    stance: TODO
+    value: Not theistic intervention; dào as structure of possibility, not force/cause.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: cosmology
+    how_known: SEP.
   miracles:
-    value: TODO
-    stance: TODO
+    value: Not a miracle religion in SEP philosophical framing.
+    stance: denied
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: 0.5.
   petition_and_prayer:
-    value: TODO
-    stance: TODO
+    value: Not petitionary theism in philosophical Daoism.
+    stance: no petition
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP focus.
   afterlife:
-    value: TODO
-    stance: TODO
+    value: Not a focus; Zen accommodation treated ordinary life not Nirvana dualism.
+    stance: not addressed
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: history
+    how_known: Thin.
   moral_ledger:
-    value: TODO
-    stance: TODO
+    value: Normative naturalism / path-following; not afterlife ledger.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP.
   authority:
-    value: TODO
-    stance: TODO
+    value: Anti-authoritarian; skeptical of sage/performative authority; science as preferred social dào
+      for knowing nature — observation and reason lean.
+    stance: observation and reason
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening; cosmology
+    how_known: 0.5 — axes keep D BELOW_THRESHOLD for school variance.
   reserved_exemptions:
-    value: TODO
-    stance: TODO
+    value: Not addressed.
+    stance: none
+    certainty: 0.7
+    cites:
+    - source: S1
+      locator: opening
+    how_known: Silence.
   teleology_in_nature:
-    value: TODO
-    stance: TODO
+    value: Nature not biased to benefit humans (vs Mohism); dào of opportunities not commands.
+    stance: none
+    certainty: 0.5
+    cites:
+    - source: S1
+      locator: opening
+    how_known: 0.5 — or immanent ends; left none.
   necessity_and_freedom:
-    value: TODO
+    value: Rejects Shen Dao fatalism; non-committal on determinism; no Western free-will theory; choice
+      among possible paths.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: cosmology; opening
+    how_known: SEP.
 lio_axes:
   A_locus:
     value: BELOW_THRESHOLD
-    how_known: 'Members differ (P44(b)): SEP reads classical Daoism as naturalist, assigning normative guidance ''to something outside the ego, but not to a supernatural ego'' (S1); religious Daoism began with ''revelations from the deified Laozi'' (S2).'
+    how_known: 'Members differ (P44(b)): SEP reads classical Daoism as naturalist, assigning normative
+      guidance ''to something outside the ego, but not to a supernatural ego'' (S1); religious Daoism
+      began with ''revelations from the deified Laozi'' (S2).'
     note: 'Alternative: 3.'
     alternatives:
     - value: 3
@@ -102,31 +218,91 @@ lio_axes:
         locator: §1
   B_cause:
     value: BELOW_THRESHOLD
-    how_known: Naturalist classical reading (S1) versus revelations from immortals and deities in Shangqing Daoism (S2).
+    how_known: Naturalist classical reading (S1) versus revelations from immortals and deities in Shangqing
+      Daoism (S2).
   C_ledger:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
   D_authority:
     value: BELOW_THRESHOLD
-    how_known: '''naturalist philosophical project'' (S1) versus mediums who ''claimed to receive revelations from immortals'' (S2).'
+    how_known: '''naturalist philosophical project'' (S1) versus mediums who ''claimed to receive revelations
+      from immortals'' (S2).'
   E_scope:
     value: UNKNOWN
     how_known: Not addressed in the sources read.
 epistemology:
-  value: TODO
+  value: Know-how / learning paths; mild skepticism — overlooked possibilities; science best current social
+    dào for understanding nature's structure; open-minded.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening; epistemology sections
+  how_known: SEP.
 ethics:
-  value: TODO
+  value: Normative naturalism; curiosity and open-mindedness; environmental ethics affinity; not Ru-Mo
+    imperial utilitarianism; walk two paths / harmony with others as natural.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening; moral theory
+  how_known: SEP.
 practice:
   ritual_and_practice:
-    value: TODO
+    value: 'Philosophical Daoism: skilled ordinary practice (e.g. Zhuangzi butcher); religious Daoism
+      (monasteries, Huang-Lao) is separate per SEP.'
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening; history
+    how_known: SEP.
   community_form:
-    value: TODO
+    value: Philosophical school / text traditions; religious institutions separate topic.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: opening
+    how_known: SEP.
 science:
   historical_stance:
-    value: TODO
+    value: Modern Daoists embraced science; Needham thesis controversial; science as preferred dào for
+      knowing nature.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: history; cosmology
+    how_known: SEP.
   current_stance:
-    value: TODO
-schools_and_variants: []
+    value: Naturalism not scientism; science good-at telling about dào, does not choose dào s.
+    certainty: 1.0
+    cites:
+    - source: S1
+      locator: cosmology
+    how_known: SEP.
+schools_and_variants:
+- name: Laozi / Daode Jing line
+  form: scholastic or philosophical
+  how_it_differs: Earlier phase; rejection of social constructs.
+  lio_difference: Umbrella BELOW_THRESHOLD.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: history
+- name: Zhuangzi mature Daoism
+  form: scholastic or philosophical
+  how_it_differs: Accepts language as natural; pluralist paths.
+  lio_difference: Same.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: history
+- name: Religious Daoism (dàojiào)
+  form: other
+  how_it_differs: SEP treats as separate topic from philosophical project.
+  lio_difference: Do not assume same scores — may need distinct coding.
+  certainty: 1.0
+  cites:
+  - source: S1
+    locator: opening
 adherents:
   use: context only — never a genius-rate denominator
   estimate:
@@ -139,7 +315,9 @@ v7_1_rubric:
   V: 6
   X: 4
   total: 32
-  scoring_note: Taoism scores moderately due to its profound emphasis on natural harmony and practical wisdom, blending philosophy and religion effectively, but constrained by mystical elements and traditional authority over rigorous empirical methods.
+  scoring_note: Taoism scores moderately due to its profound emphasis on natural harmony and practical
+    wisdom, blending philosophy and religion effectively, but constrained by mystical elements and traditional
+    authority over rigorous empirical methods.
   source: v7.1 data book, section 6 table (tables[4]) row 46 and section 7 scoring notes
 revised_rubric:
   status: not started
@@ -159,9 +337,16 @@ revised_rubric:
     score: TODO
     rationale: ''
 coding_guidance:
-  use_when: The person's own writing adopts the Daodejing or Zhuangzi as a framework, or they practised Daoist religion.
-  do_not_use_when: Popular interest in yin-yang alone is not TAO; local temple cults are CHNFOLK.
-  neighbors: []
+  use_when: Philosophical Daoism / Lao-Zhuang naturalism identity.
+  do_not_use_when: Religious Daoist liturgical identity without philosophical frame — flag separately.
+    Falun Gong. Confucianism.
+  neighbors:
+  - code: CONFUC
+    relation: contrast case
+  - code: BUDDH
+    relation: neighbor (easily confused)
+  - code: FALUNG
+    relation: neighbor (easily confused)
 review:
   data_quality_flags: []
   open_questions:
@@ -173,9 +358,10 @@ sources:
   kind: encyclopedia
   author: Chad Hansen
   year: 2025
-  citation: Hansen, Chad. "Daoism." Stanford Encyclopedia of Philosophy. First published April 19, 2025. https://plato.stanford.edu/entries/daoism/.
+  citation: Hansen, Chad. "Daoism." Stanford Encyclopedia of Philosophy. First published April 19, 2025.
+    https://plato.stanford.edu/entries/daoism/.
   url: https://plato.stanford.edu/entries/daoism/
-  accessed: '2026-10-15'
+  accessed: '2026-10-25'
   reliability_note: Peer-reviewed; a naturalist reading of classical philosophical Daoism.
 - id: S2
   type: tertiary
@@ -186,49 +372,44 @@ sources:
   accessed: '2026-10-15'
   reliability_note: Peer-reviewed; covers classical and religious Daoism. Undated page.
 ---
-
-# Taoism (Daoism) (TAO)
+# Daoism / Taoism (TAO)
 
 > Status: draft — unreviewed. Filled from the sources listed; LIO axes use the 0–4 scale (P1) under P44 and P45. The v7.1 scores and note are unchanged.
 
 ## Summary
 
-'Chinese Daoism is a Chinese philosophy of natural practice structured around a normative focus on dào' [S1]; IEP accepts 'contemporary Daoists’ assertion of continuity between classical and post-classical, “philosophical” and “religious”' Daoism [S2].
+Philosophical Daoism (SEP): naturalist project around dào as structure of natural possibility; Laozi and Zhuangzi; foil to Ru-Mo human dào debate; religious Daoism treated separately [S1].
 
 ## Core metaphysics
 
-Dao; naturalist and religious readings [S1; S2].
+Holistic natural dào; nature neutral; not commanding God; science-friendly modern reception [S1].
 
 ## Position on the LIO axes
 
-- A, B, D BELOW_THRESHOLD.
-- C, E UNKNOWN.
+- **A, B, D:** BELOW_THRESHOLD — school/religious vs philosophical variance [S1].
+- **C, E:** UNKNOWN.
 
 ## Schools and variants
 
-TODO
+Laozi; Zhuangzi; religious Daoism separate [S1].
 
 ## Science
 
-TODO
+Modern Daoists embrace science as best social dào for knowing nature [S1].
 
 ## Coding guidance
 
-Adopted Daoist texts or practice.
+Philosophical Daoism. Flag religious Daoism separately.
 
 ## v7.1 scoring note
-
-Verbatim from the v7.1 data book, section 7 (authorial; not a finding):
 
 > TAO (32/50) — Taoism (Daoism). Taoism scores moderately due to its profound emphasis on natural harmony and practical wisdom, blending philosophy and religion effectively, but constrained by mystical elements and traditional authority over rigorous empirical methods.
 
 ## Open questions
 
-- One code or two?
-- Adherents are TODO.
+- Whether religious Daoism needs its own code later.
 
 ## Research log
 
-- 2026-10-01: stub created by `scripts/make_system_stubs.py`.
-- 2026-10-02: E_scope note added for decision P7 (score E on the world's order when the stub is filled).
-- 2026-10-15 (systems batch S8): read the listed sources; quotations checked word for word against the fetched page text. Britannica pages read in full Wayback Machine copies (live site times out); AI Top Questions not used.
+- Prior: SEP daoism; BELOW_THRESHOLD axes.
+- 2026-10-25: deepened from SEP Daoism (first published 2025-04-19). Axes kept.
