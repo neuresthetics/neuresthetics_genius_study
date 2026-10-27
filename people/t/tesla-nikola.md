@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 61). Basics from Britannica (Hunt). Worldview from My Inventions (Electrical Experimenter, 1919), ch. VI, Wikisource transcription (web copy, 0.7 cap). Scientist/engineer under P30. primary_system BELOW_THRESHOLD (candidates DETERM, AGNOS); A BELOW_THRESHOLD (only 'faith in a supreme power of some kind' as a general human trait); B 4 at 0.5 (alt 3): 'We are automata entirely controlled by the forces of the medium' and no foundation for spiritual phenomena (near P40; RQ2 batch I); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of bbb26f8, run 1). B rationale and C_ledger note reworded: the automata line is his mechanical explanation of the cosmic law, not a counter-sign. B stays 4 (0.5, alternative 3)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #61, F5 rank 61). Needs: A BELOW_THRESHOLD; B single source; B faded. Primaries: Human Energy 1900 (S4) corroborates automata B; Liberty 1935 'A Machine to End War' as told to Viereck (S5) scores A 4@0.5 recorded_interview support single (alt BELOW) and extends B to universe-as-machine; EE 1919 IA DjVuTXT OCR (S6) verifies My Inventions ch. VI wording (no 'gift of mental power' / 'Divine Being' — rejected as non-primary). B 4@0.5 single → B 4@0.7 written_profession, support corroborated (P48); alt 3. D 4@0.5 recorded_interview, support single (new). primary_system stays BELOW (DETERM leading; ATHE/AGNOS named). P47 source_quality on S1–S6. mid_basin BELOW (A≥3 branch needs 0.7). Chart-moving NO (faded; A single → hollow). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["inventor", "electrical engineer"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["electrical engineering"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Rotating magnetic field and induction motor (basis of most alternating-current machinery)", year: 1883, kind: discovery, lasting: "'the basis of most alternating-current machinery' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; training paragraph"}], how_known: "Year of the first induction motor."}

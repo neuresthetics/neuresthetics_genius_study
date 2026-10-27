@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #170, F 3, rank 180). Goals: corroborate or firm PANT/A/B; note darkness/fill on next chart refresh. Hunt: re-read SEP Graham (S1) Theology/Cosmology (B30, B32, B64, B67, B114); Kahn 1979 Art and Thought (S3) — B30/XXXVII, B67, B32, B64 translations + commentary (world = everliving fire; god = day/night…; wise one would/would not be called Zeus; thunderbolt steers). IEP Graham same author as S1 — unused for P48 independence. Neels PhilArchive blocked (Cloudflare). Graham Texts of Early Greek Philosophy not obtained. PANT kept @0.5 scholarly_reconstruction (two-part: B67 whole-of-opposites + B30 eternal measured kosmos/fire); alt BELOW (B32/B64 wise-one / steer tension; Kahn himself reads steering toward cosmic intelligence). A 4 @0.5 alt 3 kept; B 3 @0.5 alt 4 kept (lawful measures, not scientist; no exceptionless claim). support: corroborated on A and B (P48) S1+S3 — independent scholars. Certainty stays 0.5 (P49; do not invent 0.7). mid BELOW; PLOTTED faded. Chart-moving YES for fill (hollow→filled on next refresh); darkness unchanged (still faded). P47 source_quality. Statements add B67/B32/B64 (Kahn scholarly edition). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fix (FAIL, P39 strict reading): era_bucket '-500 to 499' @0.5 -> UNKNOWN; life dates UNKNOWN and the c. 500 BCE floruit sits on the bucket edge. Plot unchanged (A 4 / B 3, faded)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 180). Source: SEP 'Heraclitus' (Daniel W. Graham, rev. 2023), a scholar's account with DK fragment numbers; the fragments are quoted in SEP's translation and attributed to him by scholarly agreement (P42), transmitted by later authors. Worldview by scholarly_reconstruction (0.5 cap): 'God is day night, winter summer, war peace ...' (B67) and 'This world-order ... no god nor man did create, but it ever was and is and will be: everliving fire, kindling in measures' (B30); 'all human laws are nourished by the one divine law' (B114). PANT 0.5 (two-part test: the divine identified with the whole of opposites, part 1; one eternal measured order, part 2), alt BELOW_THRESHOLD ('would and would not be called by the name of Zeus', B32). A 4 at 0.5 (alt 3); B 3 at 0.5 (alt 4): lawful measures, no exceptionless claim (P41-style); not counted a scientist (no listed theory about physical systems; the doctrines are metaphysical). C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span UNKNOWN ('active around 500 BCE' is a floruit, not a composition range; P39). Plotted, faded, at A 4 / B 3. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["philosopher"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["philosophy", "cosmology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Doctrines of flux and the unity of opposites; the Logos", year: UNKNOWN, kind: "body of work", lasting: "'Already in antiquity he was famous for advocating the coincidence of opposites, the flux doctrine' (S1); influence section", certainty: 0.7, cites: [{source: S1, locator: "opening; 3; 7. Influence"}], how_known: "SEP; a single book, undated."}

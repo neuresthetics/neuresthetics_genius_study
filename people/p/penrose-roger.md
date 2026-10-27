@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO→Quaker (paternal grandparents) @0.5 synced from heritage; baptism/catechism UNKNOWN. Chart-moving NO."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #126 / F4 rank 127). Goals: earlier own-voice on God/atheism; corroborate or lift B; keep honest BELOW/0.5 if not. Opened Tanner Lectures 1995 / LSAHM (S6); Road to Reality 2004 ch.1 (S7); Spectator Fink 2020 interview (S8); Wikipedia EN dual bio (S9, P50). BBC Radio 4 25 Sep 2010 religion quote still aggregator-only (Today archive page has no religion text; audio not transcribed) — unused for scoring. A stays BELOW_THRESHOLD (P20/P38): no explicit denial of God; Spectator 2020 'doesn't mean I'm an atheist' / agnostic; Brief History 1991 purpose remark secondary via Wikipedia. primary ATHE @0.5 alt AGNOS kept (W3); Spectator strengthens AGNOS alt. B 3 stays @0.5: basis inference_from_work→written_profession (S6 timeless mathematical laws / mathematical structure just there in nature; S7 entire physical world governed according to mathematical laws); P16 Hilbert / P35 keep 0.5 without exception/no-exception claim (alt 4); support corroborated. mid_basin BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S9. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): ruling W3 (v8's call on the auditor's advice): ATHE at 0.5, alternative AGNOS, kept. (Note) the undated tilings cite P12 and P17 instead of P39. No scored value changes."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["mathematician", "mathematical physicist", "Rouse Ball Professor of Mathematics, Oxford (1973–1998)", "author of popular books"], certainty: 0.7, cites: [{source: S3, locator: "Summary; appointments; popular books paragraph"}], how_known: "MacTutor."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["general relativity", "mathematical physics", "cosmology", "geometry (tilings)"], certainty: 0.7, cites: [{source: S3, locator: "body"}, {source: S2, locator: "body"}], how_known: "MacTutor and the Nobel biography."}
   lasting_original_contributions:
     - {value: "Singularity theorem: under the condition of a trapped surface, gravitational collapse must produce a space-time singularity; black hole formation is a robust prediction of general relativity", year: 1965, kind: "law or principle", lasting: "Nobel Prize in Physics 2020 'for the discovery that black hole formation is a robust prediction of the general theory of relativity' (S1); 'Roger's 1965 paper on this, earned his share of the 2020 Physics Nobel Prize' (S2)", certainty: 1.0, cites: [{source: S1, locator: "facts page (Prize motivation; Work)"}, {source: S2, locator: "singularity paragraphs"}, {source: S3, locator: "'In 1965, using topological methods'"}], how_known: "All three sources. A theorem about physical systems, so he is a scientist (P30)."}

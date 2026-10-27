@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.4"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool; deepen D1 2026-10-24)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Consistency pass after the lens audit (CODING_GUIDE §3 cap): B_cause certainty 1.0 -> 0.7, because the rationale names 4 as plausible on SEP's reading; mid_basin certainty 1.0 -> 0.7 (result still true). Not reviewed."}
@@ -80,6 +81,7 @@ basics:
     how_known: "Four sources agree."
 
 contribution:
+  era_bucket: medieval
   fields: {value: [philosophy, metaphysics, logic, medicine, psychology, "natural philosophy", astronomy, mathematics], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Influence in philosophy and science"}, {source: S5, locator: "Biography"}, {source: S2, locator: "§1.2"}], how_known: "Three sources agree."}
   lasting_original_contributions:
     - {value: "The Cure (al-Shifāʾ): an encyclopaedic summa of logic, natural science, mathematics and metaphysics", year: "1016–1027", kind: work, lasting: "translated into Latin in the 12th–13th centuries; shaped scholasticism (S4)", certainty: 1.0, cites: [{source: S4, locator: "§2; §3"}, {source: S1, locator: "Influence in philosophy and science"}, {source: S2, locator: "§1.2"}], how_known: "Three sources."}

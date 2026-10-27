@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #202/228, F 3, rank 215). Goals: firm B; seek any A; do not force plot. Read: Koch 1882 Die Aetiologie der Tuberkulose English (Pinner/Pinner via German History Intersections; S6) — own-words complete proof of parasitic nature / causal connection of tubercle bacilli; Encyclopedia.com DSB Dolman (S8) — parents Lutherans; Deutsche Biographie NDB Kümmel (S9) — Konfession lutherisch; Wikipedia EN Personal life (S7) citing Brock 1988 p. 296 'Religion never entered his life' (secondary biographer characterization, not Koch own-words). Nobel lecture (S10) is prophylaxis/control, not B/A. B stays 3 @ 0.5 inference_from_work; support labelled corroborated (S1+S6; P48); alt 4 named (P35 working-science cap — no own statement on law-and-exception / miracles). A stays UNKNOWN (P19): no first-person God/religion statement; Brock/Wikipedia irreligious is secondary only; Lutheran is heritage. primary_system UNKNOWN. mid UNKNOWN. Chart-moving NO. Childhood parents + Lutheran heritage filled. P47 source_quality on S1–S10. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: postulates item year stays UNKNOWN, with 1884 as the candidate only (catalogue record, paper not read)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: postulates candidate year 1884 (S4), span alternative 1876–1884; death 27 May 1910 at 0.7 (NobelPrize.org, S5); region of work Eastern Europe (Wollstein), alternative Western Europe."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["physician", "bacteriologist"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["medicine", "bacteriology"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica: 'one of the founders of bacteriology'."}
   lasting_original_contributions:
     - {value: "Life cycle of the anthrax bacillus (spore formation), the first proof that a specific microorganism causes a specific disease", year: 1876, kind: "discovery", lasting: "'The anthrax work afforded for the first time convincing proof of the definite causal relation of a particular microorganism to a particular disease' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Anthrax research"}], how_known: "Announced at Breslau, 1876 (S1)."}

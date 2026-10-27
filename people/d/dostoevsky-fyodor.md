@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1 queue #29)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 29). Basics from Britannica (Morson) and the chronology in Mayne's 1914 translation of his letters. Worldview: the March 1854 letter to N. D. Fonvisin (Mayne, Letter XXII, pp. 70–71, archive.org scan). Characters (Zosima, Ivan, Shatov) not used. CHRIST 0.5; A BELOW_THRESHOLD; B UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): primary_system basis scholarly_reconstruction -> consistent_private_letters (his own letter; single letter, so 0.5 kept); locators standardised to Letter 22, begins p. 69, quote pp. 70-71."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #29, next-50 batch). Needs were A BELOW_THRESHOLD and B UNKNOWN. Opened Diary of a Writer (Brasol 1949 via archive.org OCR): Old People (Belinsky / radiant personality of Christ / God-man); Arbitrary Assertions (immortality of the soul as the one sublime idea); 1873 miracles disclaimer (refuses personal declaration on miracles); Pushkin speech (Aug 1880 Diary: Gospel of Christ; Christ traversed / born in a manger; God saw otherwise) and Gradovsky reply (people enlightened by embracing Christ). Osmidov letter Feb 1878 (Mayne Letter LXX: personal immortality and God identical; science's precise laws for organisms). Wikipedia EN dual-sources bio. P47 source_quality on every source. primary_system CHRIST 0.5→0.7 written_profession. C_ledger UNKNOWN→1 @ 0.5 corroborated; D_authority BELOW→1 @ 0.5 corroborated. A stays BELOW_THRESHOLD (personal God / Christ language still no locus where God is; P19). B stays UNKNOWN (not a scientist; Osmidov organism-laws and miracles refusal are not a P16 nature-order statement; P41 does not apply — he refuses to declare on miracles rather than rejecting them). mid_basin UNKNOWN. Chart-moving NO (still unplotted). Characters unused. No fallacy_catalog (Jason 2026-10-23/24). Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["novelist", "short-story writer", "journalist", "essayist"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "infobox occupations / lead"}], how_known: "Britannica + Wikipedia EN (also military engineer early; not lasting vocation)."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["fiction"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lead"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "Poor Folk", year: 1846, kind: work, lasting: "acclaimed debut; Russia's first 'social novel' in Belinsky's reading (S4)", certainty: 1.0, cites: [{source: S2, locator: "chronological table, 1846"}, {source: S4, locator: "Early career"}], how_known: "Mayne chronology + Wikipedia EN."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K; deepen D1 queue #69)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 70). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited) and NIH/NLM Profiles in Science. Worldview from her 1940 letter to her father, quoted by NLM and in Brenda Maddox's New Humanist article (2007), both secondary quotations of a private letter. Scientist under P30 (coal micro-structure, DNA, virus structure). primary_system AGNOS (0.5, alt ATHE); A 4 (0.5, alt 3); B 3 (0.5, alt 4) from working science (P35); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2d75649, run 1). The 'faith is essential' wording is cited to Maddox (S3) only, with a note on NLM's shorter variant; added her line 'faith in this world is perfectly possible without faith in another world' (S3). A stays 4 (0.5, alternative 3)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #69). P47 source_quality on S1–S9. Added Maddox Dark Lady of DNA (2002) S5 (letter pp. 60–61 per todayinsci; IA borrow 401); Wikipedia dual bio S6 (P50); Humanists UK Heritage S7 (fuller letter + this-world faith); Patricia Fara / Rosalind Franklin Institute S8 ('agnostic by inclination'); NLM OCR of Franklin & Gosling Nature draft 17 Mar 1953 S9 (primary / own words). Extended major_work_period / working_years to 1945–1958 (virus TMV lasting work through Birkbeck; Nature 1955 Structure of Tobacco Mosaic Virus bibliographic). A_locus stays 4 @0.5; support single → corroborated (S5+S3+S7 cite the 1940 letter; P18 ceiling still 0.5; P38 AGNOS-compatible 'if such there be' + denial of interested personal God; named alt 3). B_cause stays 3 @0.5; basis inference_from_work → written_profession via S9 least-energy / helical physical structure; support single → corroborated (S9 + S2; P48). primary_system AGNOS @0.5 backed by Fara S8 + letter; secondary_system SECHUM @0.5 from this-world faith. mid_basin BELOW_THRESHOLD (A cert < 0.7). Chart: faded filled (A and B both corroborated at 0.5; darkness = min cert still faded). A corroboration is multi-citation of one letter (S5/S3/S7). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -44,6 +45,7 @@ basics:
   languages_of_work: {value: [English, French], certainty: 0.5, cites: [{source: S2, locator: "paragraph 1; Paris paragraph"}], how_known: "Coder's reading (0.5)."}
   occupations: {value: ["physical chemist", "crystallographer"], certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "NLM."}
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["physical chemistry", "X-ray crystallography", "structural biology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "text"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Micro-structure of coals: pores with molecular-level constrictions acting as 'molecular sieves'", year: 1945, kind: discovery, lasting: "'made it possible to classify coals and predict their performance' (S2)", certainty: 0.5, cites: [{source: S2, locator: "BCURA paragraph"}], how_known: "Dated by the 1945 thesis (0.5)."}

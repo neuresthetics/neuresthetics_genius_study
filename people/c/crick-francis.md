@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 95). Basics from Britannica (Britannica Editors, unsigned; body only) and the two Nature papers' publisher pages (dates). Worldview from his own letters as quoted in Mark Goldie, Storm over a Chapel (Churchill College, 2024) and Chris Beckett, Medical History 48 (2004): to Churchill, 12 October 1961 ('atheists and agnostics such as myself'), to Cockcroft, n.d. [1961] (a university furthering 'superstitions' is 'shameful'), and of 14 December 1965 ('I am an atheist'); secondary quotations, primary check pending. Scientist (P30). primary_system ATHE (0.5); A 4 (0.5, alt BELOW_THRESHOLD, P38); B 3 (0.5, alt 4; P35); D 4 (0.5); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). Cockcroft letter quoted in full as Goldie prints it, restoring the sentences 'this point of view' refers to (C4). Context added: the 1961 Churchill letter's 'atheists and agnostics such as myself' sits inside his satirical 'Hetairae fund' offer (note 1); the 1965 sentence is credited to Beckett in full, with Goldie quoting only from 'I am an atheist' (note 3); P38 noted as applied by analogy to private letters (note 2). Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #94, F4 rank 95). Needs: A 4 @0.5 alt BELOW (P38 atheist/agnostic); B 3 @0.5 alt 4 (P35); primary ATHE @0.5; mid BELOW; plotted faded (B single → hollow). Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on S1–S12. Primary/near-primary: Wellcome Collection catalogue PP/CRI/E/1/14/5 (S8) prints the 1965 Danz-venue paragraph in full ('I am an atheist'); Goldie (S4) prints the 12 Oct 1961 Churchill letter in full (CHUR 2/571). What Mad Pursuit extracts (S9 Positive Atheism reprint of autobiography): 'skeptic, an agnostic with a strong inclination toward atheism' (age ~12 onward) + science making religious beliefs untenable / Argument from Design shattered by Darwin; Wikiquote WMP p. 138 'not designed, but rather evolved' (S10). Of Molecules and Men (1966) anti-vitalism via multi-secondary page agreement (S10 Wikiquote p. 10 physics-and-chemistry aim; p. 99 vitalists/cranks; S11 Wellcome blog OMM p. 16 vitalism definition; S4 Goldie paraphrase 'other than chemistry and mechanics') — full OMM/AH IA borrow-restricted. Astonishing Hypothesis (S12 wiki synopsis): mental activities entirely due to nerve cells etc.; Wellcome blog AH p. 261 disembodied soul as unnecessary as Life Force. Telegraph 2003 Ridley interview (S13): 'The god hypothesis is rather discredited' (late; P8). A stays 4 @0.5 alt BELOW (P38: published disbelief/atheist label together with agnostic self-description in WMP and 1961 pairing; Russell pattern); support corroborated S4+S5+S8+S9. B 3 @0.5 → 4 @0.7 written_profession (OMM physics/chemistry + deny vital-force exception; P35 no longer binds); alt 3 if 'ultimate aim of the modern movement' read as method-only; support corroborated S10+S11+S4 (+ WMP S9/S10 design/evolved). primary ATHE @0.5 (AGNOS alt). D 4 @0.5 → @0.7 (Cockcroft + WMP superstition/vestiges; support corroborated). mid_basin BELOW (A 0.5 blocks P10 0.7 bar). Chart-moving YES: B single→corroborated hollow→filled; still faded (min(A,B)=0.5). Childhood Congregational filled from WMP. No fallacy_catalog. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["biophysicist", "molecular biologist", "neuroscientist"], certainty: 0.7, cites: [{source: S1, locator: "opening; Salk sentence"}, {source: S7, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["molecular biology", "genetics", "neuroscience"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S7, locator: "lead"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Double-helix model of DNA (with James Watson)", year: 1953, kind: discovery, lasting: "'a cornerstone of genetics and ... widely regarded as one of the most important discoveries of 20th-century biology' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; Watson paragraph"}, {source: S2, locator: "citation metadata"}], how_known: "Britannica; year from the Nature paper (S2). A result about natural systems, so he is a scientist (P30)."}

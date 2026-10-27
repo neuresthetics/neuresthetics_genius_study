@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 205). Source: Britannica, signed by René Ostberg and Kathleen Kuiper (scholars edition, read in full). Lasting work: Frankenstein; or, The Modern Prometheus (January 1818), 'a seminal work of Romanticism and a Gothic horror classic that is also considered to be one of the first science-fiction novels'; its 'subsequent influence on literature and popular culture cannot be overstated' (S1). Span 1818, age 21 (P30 year difference; S1's 'Only 20 years old' at publication is her exact age, kept as a note). Worldview: no own words on belief read; daughter of the radical philosopher William Godwin and Mary Wollstonecraft (S1); her husband was expelled from Oxford over a pamphlet 'endorsing atheism' (S1), a fact about him, not her. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #193/228, F3 rank 205). Goals: letters/journals own words if any; keep silence if none; do not force plot from Frankenstein theology. Dual bio Wikipedia EN (S3, P50). Scholarly: Airey Religion Around Mary Shelley via Acosta NCGS review (S4) — never held an atheist position; early works (Frankenstein, Last Man) explore absence/malevolence of God as fiction themes; later Christian domesticity. Hogsette Christianity & Literature 2011 (S5) quotes Jones Journal: Dec 1822 'I trust in a hereafter—I have ever done so'; Oct 1822 Power that rules / Providence; Dante 1822 thank-God / Thy-will musing; 5 Oct 1839 'The God that made this beautiful world… beneficent and gentle Power' (all after 1818 span). 1831 Frankenstein Intro 'Creator of the world' / invention-vs-creation is authorial after-span literary framing — not used to score axes. Novel character/theology unused (P42). Archive.org Jones Journal OCR opened for 1814–early London entries — no in-span (1818) first-person creed found; May 1815–July 1816 journal volume lost (Jones preface). Parents' radicalism and Percy's atheist pamphlet remain context (S1). Children's baptism St Giles-in-the-Fields 9 Mar 1818 and her marriage at St Mildred's 30 Dec 1816 are practice/legal facts, not adult creed (S3; Exploring London S6). primary_system UNKNOWN→BELOW_THRESHOLD (leads CLTHEI from after-span journals; CHRIST/DEISM/ATHE leads only; P19). A UNKNOWN→BELOW_THRESHOLD (personal-God / hereafter leads after-span at most A 0 @0.5 — do not force for 1818 span; Joyce/Proust pattern). B stays UNKNOWN (not a scientist; P16/P30). C/D/E UNKNOWN; mid_basin UNKNOWN. Not plotted. Chart-moving NO. P47 source_quality S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["novelist", "editor", "travel writer"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Later life and other works"}, {source: S3, locator: "lede"}], how_known: "Britannica + Wikipedia."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["literature"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Frankenstein; or, The Modern Prometheus", year: 1818, kind: "work", lasting: "'a seminal work of Romanticism and a Gothic horror classic that is also considered to be one of the first science-fiction novels'; 'Frankenstein's subsequent influence on literature and popular culture cannot be overstated' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Introduction; Death and legacy"}, {source: S3, locator: "lede"}], how_known: "Britannica + Wikipedia."}

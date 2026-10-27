@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-26
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 18c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-26, by: "Grok Bot", summary: "RQ-Z5-N1 settled (Jason t275u unblock, 2026-10-26): Systema Naturae 10th ed. (1758) listed as a lasting contribution on ICZN Art. 3 (S15) per P13/P17; span 1735–1758. Imperium Naturae (1758) now in-span own written profession: A 0 @0.7 adds S7/S8 (DEUM sempiternum ... Domino & Artifice) so alt 2 cites are a subset → A corroborated; B 3 lifted 0.5→0.7 on in-span own-voice aeternae legis imperio (S8) with Nova creatio nulla (P35 does not apply: own statements, not work-only inference); alt 4 kept. mid_basin BELOW_THRESHOLD→true (P4). Chart: faded hollow → dark filled."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: B_cause support single→corroborated. Alt 4 cites trimmed to S11 only (Nova creatio nulla) — drop exclusive Britannica S1 which added no independent alt content (P48). A stays single (after-span Imperium alt S7/S8 exclusive by design; RQ-Z5-N1). Still faded hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #148, F 3, rank 154). Opened Species Plantarum 1753 Lectorem / Swedish dedication (Gutenberg #20771, S10); Philosophia Botanica 1751 OCR (IA philosophiabota00linn, S11); Systema 1744 Paris 4th (IA carolilinaeimedi00linn, S12); Nemesis Divina Barr 1923 (S14, after-span private MS). Wikipedia EN dual bio (S13; P50). A_locus 0: 0.5→0.7 written_profession in-span (SP Lectorem Dominus/Creator/summum Ens + PB Creator/legem Naturae); after-span Imperium Naturam-vocare kept as named alt 2 (P20; contested ≤0.7); support single (P48: alt 2 cites S7/S8 exclusive). B_cause stays 3 @0.5 alt 4 (P16/P35: Nova creatio nulla / legem Naturae / primordio creatum are creation-then-lawful-generation, not a no-exception lift); basis inference_from_work→written_profession; support single (alt 4 cites S1 exclusive). primary CHRIST stays 0.5 (Lutheran + in-span Creator/Lord; Psalms/Imperium still after-span). C stays UNKNOWN (Nemesis read: just Gud / Heliga Skrift; private after-span). E UNKNOWN→BELOW_THRESHOLD (P19 scientist). mid BELOW; plotted faded. Span 1735–1753 unchanged; RQ-Z5-N1 OPEN not applied. P47 source_quality on S1–S14. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["naturalist", "physician", "professor of medicine and botany (Uppsala)"], certainty: 0.7, cites: [{source: S2, locator: "text"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 18c
   fields: {value: ["botany", "zoology", "taxonomy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Systema Naturae: hierarchical classification of the three kingdoms", year: 1735, kind: work, lasting: "'Linnaeus's classification system has survived in biology' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'The sexual system of classification'"}], how_known: "Britannica."}

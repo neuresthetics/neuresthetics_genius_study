@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 73). Basics from Britannica (Richard Kraut), signed body through 'Xenophon'; Top Questions not cited. Socrates wrote nothing; his words survive only as character speech in Plato and Xenophon, and scholars disagree which dialogues convey the historical Socrates (S1), so nothing is scored (P42). primary_system UNKNOWN; A–E UNKNOWN; mid_basin UNKNOWN (P19). First lasting contribution UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #72, F5 rank 73). Needs: A UNKNOWN; B UNKNOWN; 1 source. Dual bio: Britannica Kraut (S1) + Wikipedia EN (S4) + SEP Socrates Nails (S3) (P50). P47 source_quality on S1–S8. Thin-source / no own writings: Plato Apology and Xenophon are reported speech / character speech (P42 Analects-style addendum); scores rest on scholars' reconstructions (P49), not on dialogue wording alone. A_locus UNKNOWN → 0 @0.5 scholarly_reconstruction (alt 1): SEP Religion and Morality (Hare, S5) and IEP Socrates (Ambury, S6) reconstruct historical Socrates as believing in gods, observant, objecting to the atheism charge, guided by the daimonion and Apollo's Delphic oracle; personal intervening divinities → interventionist pole. Named alt 1: reformed theology (gods perfectly good; reject Homeric immoral myths) still personal and intervening. Support corroborated (S5+S6). Illustrative Fowler Loeb Apology via Perseus (S7 scholarly edition): daimonion 31d; oracle 21a; divine sign 40a — kind reported speech. B_cause stays UNKNOWN: not a scientist (P30); Plato's Socrates denies cosmological inquiry (Apology); Xenophon Memorabilia 1.4 design argument is contested as Xenophon's and not used (P42); no scholarly consensus reconstruction of a P16 nature-order account. primary_system stays UNKNOWN (no listed code fits contested historical Socratic piety; HELLEN is modern reconstructionist paganism). mid_basin stays UNKNOWN (B UNKNOWN, P19). Chart-moving NO (still unplotted). Filled parents, family religion, childhood notes from SEP/Wikipedia. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -43,6 +44,7 @@ basics:
   languages_of_work: {value: [Ancient Greek], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "Athenian; SEP and Britannica."}
   occupations: {value: ["philosopher"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 contribution:
+  era_bucket: ancient
   fields: {value: ["philosophy", "ethics"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "Britannica; SEP."}
   lasting_original_contributions:
     - {value: "Socratic conversation (questioning about the human excellences), known through Plato and Xenophon", kind: method, lasting: "'profound influence on Classical antiquity and Western philosophy' (S1); founding figure of Western philosophy (S3, S4)", certainty: 0.5, cites: [{source: S1, locator: "opening; 'Philosophical and literary sources'"}, {source: S3, locator: "opening"}], how_known: "Undated (P39); reconstructed from others' writings (0.5)."}

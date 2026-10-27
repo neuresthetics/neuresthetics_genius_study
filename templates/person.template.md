@@ -9,7 +9,7 @@
 # Competing sources:               fill value with the best-supported one, certainty 0.5, and list the rest under alternatives.
 record:
   record_type: person
-  schema_version: "1.3"
+  schema_version: "1.4"
   record_version: 1
   review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision; only a named human sets reviewed (P5)
   collected_by: TODO                      # person or agent that ran the collection
@@ -51,6 +51,7 @@ basics:
   occupations: {value: TODO}              # list
 
 contribution:
+  era_bucket: TODO                        # coarse band in CODING_GUIDE §8; plain label, not a claim, not basics.era_bucket, not an LIO score
   fields: {value: TODO}                   # list
   lasting_original_contributions: []      # - {value: "...", year: 1831, kind: discovery, lasting: "...", certainty: 1.0, cites: [...], how_known: "..."}
   evidence_of_impact: []                  # - {value: "...", kind: "named after them", ...}

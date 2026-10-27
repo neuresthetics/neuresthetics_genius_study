@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 103). Basics from Britannica (Britannica Editors, unsigned; body read live). Worldview from 'Circumfession' (1991; English in Bennington and Derrida, Jacques Derrida, 1993) as quoted by Elisabeth Loevlie, Religions 4 (2013), with the 2002 exchange with John Caputo as she reports it; secondary quotations. Not a scientist (P30). primary_system and A BELOW_THRESHOLD ('I quite rightly pass for an atheist', with God 'called by other names'); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Alternative span end is now 1967, not 1974: Glas is listed under major_works, not as a lasting contribution, so it cannot set the end (P13, P30 addendum b; DE5). Specters of Marx now cites Loevlie §1 for its lasting status ('hauntology, first coined in his Spectres of Marx in 1993 [...] a fruitful critical topos'), so the item rises from 0.5 to 0.7 (one source); the span stays 1967–1993 at 0.5."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note for batch S (blind audit of c5d448a, run 1): major_work_period now states why the span stays at 0.5 although both end items are at 0.7. No value changes."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["philosopher", "university teacher of philosophy"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["philosophy", "literary theory"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica (critique of Western philosophy; analyses of language, writing and meaning; later work on literature)."}
   lasting_original_contributions:
     - {value: "Deconstruction and différance, set out in Writing and Difference, Of Grammatology and Speech and Phenomena", year: 1967, kind: "concept or term", lasting: "'the principal exponent of deconstruction, a term he coined'; his analyses were 'highly controversial yet immensely influential' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and work'"}], how_known: "Britannica; the three books dated 1967."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and archive.org OCR of Fabrica 1543"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #142): opened Fabrica 1543 preface (English web translation + Latin IA OCR) and Book VI ch. 15 soul passage (Garrison English on vesaliusfabrica.com, Latin verified on IA OCR p. 594). Own voice: 'infinite Creator of things'; immortal soul as body's lodging/instrument (microcosm); 'summus rerum opifex Deus' (Book I); 'nostrae religionis' / abstains from locating types and seats of the soul to avoid faith/immortality censors. Still no clear A locus score — Creator/immortal-soul language is thin and he explicitly refuses soul-location dispute (P19). primary stays UNKNOWN (lead CHRIST, now with own-voice Catholic framing). A stays UNKNOWN. B stays 3 @0.5 alt 4 (P35/P16: preface is dissection/observation narrative, not explicit cause-order talk); support single→corroborated (S1+S3/S4). mid UNKNOWN; still not plotted. P47 source_quality; P50 Wikipedia EN (birth 31 Dec 1514 agrees with CE; death month June Britannica vs 15 Oct Wikipedia — noted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 147). Source: Britannica (Marcel Florkin, signed). No own words on religion read; Catholic setting (Leuven, imperial court) and a pilgrimage to the Holy Sepulchre in 1564 are leads. A scientist (P30: anatomy from his own dissections). Span 1543 (Fabrica). primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B 3 (0.5, alt 4); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted (no A). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["physician", "anatomist", "lecturer in surgery (Padua)", "imperial physician"], certainty: 0.7, cites: [{source: S1, locator: "'Life'"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["anatomy", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "De humani corporis fabrica libri septem", year: 1543, kind: work, lasting: "'the first comprehensive textbook of anatomy'; 'After Vesalius, anatomy became a scientific discipline' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life'"}, {source: S3, locator: "1543 Basel"}], how_known: "Britannica; primary Fabrica."}

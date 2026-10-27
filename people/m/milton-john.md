@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #180, F 3, rank 191). Hunt: corroborate A from in-span treatises / poet-voice; leave B UNKNOWN unless clear P16; De Doctrina Christiana not scored (authorship historically contested — Hunter 1990s; Campbell–Corns–Hale–Tweedie 2007 largely rehabilitated Miltonic provenance but debate not closed — Urban 2020; Clawson–Wilson 2022 Felbinger challenge). New own-voice A corroborators in-span: Areopagitica 1644 'God our deliverer' + 'high providence of God' (S4); PL Book 3 invocation (poet's voice, P42) 'God is light' / light at God's voice investing the rising world (S5; character dialogue after l.55 not scored); Sonnet 19 composed c.1652–55 'serve therewith my Maker' / 'Bear his mild yoke' (S6; published 1673). Dual bio P50 Britannica+Wikipedia. P47 source_quality on S1–S7. A support→corroborated; A stays 1 @0.5 (poetic/indirect); primary CHRIST @0.7 unchanged; B stays UNKNOWN (not a scientist; no clear own-voice P16 nature-order; do not force B from epic cosmology or Fallon monism readings). mid UNKNOWN unchanged; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 191). Source: Britannica, signed by Albert C. Labriola (scholars edition, read in full). Lasting work: 'Lycidas' (published 1638; 'often considered the most outstanding example of the genre') and Paradise Lost ('widely regarded as the greatest epic poem in English', first published 1667); span 1638–1667 by publication (P30 #1), age 30. Own words: the opening invocation of Paradise Lost, Book 1, in the poet's own voice (not a character's, P42 addendum), read in the Dartmouth John Milton Reading Room (ed. Thomas H. Luxon): 'I may assert Eternal Providence, / And justifie the wayes of God to men'; within the span (1667). primary_system CHRIST 0.7 (written_profession), alt none at 0.7 (his anti-trinitarian leanings, per Labriola, stay within Christianity); A 1 at 0.5 (a creator Spirit who 'from the first / Wast present' and brooded on the Abyss, and an 'Eternal Providence': God beyond and acting on the world; poetic and indirect), alt 0; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN (A 1 at 0.5 and B UNKNOWN). Not plotted (B UNKNOWN). Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["poet", "pamphleteer", "historian", "civil servant"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S7, locator: "lead"}], how_known: "Britannica + Wikipedia."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["poetry", "political and religious prose"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S7, locator: "lead"}], how_known: "Britannica + Wikipedia."}
   lasting_original_contributions:
     - {value: "Lycidas", year: 1638, kind: "work", lasting: "'often considered the most outstanding example of the genre'; with Comus, 'major literary achievements' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Comus and Lycidas"}, {source: S7, locator: "Poetry"}], how_known: "Britannica; Wikipedia; published 1638."}

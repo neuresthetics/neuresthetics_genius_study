@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth TODO→Muslim (Seljuq Nishapur) @0.7 from SEP S4 + MacTutor S5; baptism/catechism UNKNOWN; family_religion filled at 0.5. Context only. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 63). Basics from Britannica (Britannica Editors, unsigned). Scientist under P30 (algebra, astronomy). The quatrains are not scored: Britannica says some scholars doubt he wrote poetry and that the verses appeared under his name only two centuries after his death (P42). primary_system UNKNOWN; A UNKNOWN; B 3 at 0.5 (alt 4) from working science only (P35); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19). Note added: a single quatrain needs a specific scholarly attribution; his treatise on existence is the lead for A."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["mathematician", "astronomer", "philosopher"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "§2"}, {source: S5, locator: "Summary"}], how_known: "Britannica mathematician/astronomer; SEP and MacTutor add philosophical treatises and poet label (poetry unscored, P42)."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["algebra", "geometry", "astronomy", "philosophy"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S4, locator: "§2; §4"}, {source: S5, locator: "Summary"}], how_known: "Britannica math/astronomy; SEP and MacTutor philosophy and cubic geometry."}
   lasting_original_contributions:
     - {value: "Treatise on Demonstration of Problems of Algebra (cubic equations by intersecting conics)", year: 1070, kind: work, lasting: "his mathematical reputation 'principally rests' on it (S1); geometric solution of cubics (S5)", certainty: 0.5, cites: [{source: S1, locator: "Samarkand paragraph"}, {source: S5, locator: "Algebra paragraphs"}], how_known: "MacTutor places composition at Samarkand after 1070; undated in Britannica (P39/P13); 0.5."}

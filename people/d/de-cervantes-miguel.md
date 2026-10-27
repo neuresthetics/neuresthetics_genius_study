@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO→Catholic @0.7 synced from heritage/baptism (S1). Chart-moving NO."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #117 / F4 rank 118). Goals: hunt prologues/dedications/letters for A/B; keep honest BELOW if only fiction (P42). Read in-span: Don Quixote I Prólogo 1605 (S5) — 'orden de naturaleza' as literary generation analogy, closing 'Dios te dé salud' formula; Novelas ejemplares Prólogo and Dedicatoria 1613 (S6) — love scenes 'medidos con la razón y discurso cristiano'; 'mi edad no está ya para burlarse con la otra vida'; closing 'Dios te guarde'; Guarde nuestro Señor. Don Quixote II Prólogo and Dedicatoria 1615 (S7) — '¡Válame Dios!', 'tentaciones del demonio', 'Cristo con todos', Lemos's 'cristiandad', 'Deo volente' (P42 formula). Wikipedia EN (S8, P50): birth/death align; Third Order Franciscans ~1613 noted as membership. P47 on S1–S8. A stays BELOW (formulas + Christian literary measure ≠ A1–A4 locus). B stays BELOW (orden de naturaleza / milagro not P16 law-vs-exception; not scientist P30). C stays BELOW (otra vida hope, no deserts). primary BELOW, CHRIST lead strengthened by in-span Novelas but still short of a code under ruling U2. mid BELOW. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Edward C. Riley (CE2). Ruling U2 (v8's call on the auditor's advice): primary_system CHRIST 0.5 -> BELOW_THRESHOLD, CHRIST the named lead; the last rites recorded in nominal_affiliations as practice; the dedication formulas treated as context (P42 will-preamble addendum, by analogy). Still not plotted."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["novelist, playwright and poet", "soldier", "royal messenger, commissary of provisions for the Armada, tax collector"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Soldier and slave'; question box on his living"}], how_known: "Britannica; the later posts from the question box only."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["novel", "short story", "drama", "poetry"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Don Quixote, Part I (El ingenioso hidalgo don Quijote de la Mancha)", year: 1605, kind: work, lasting: "translated into 'more than 60 languages'; critical discussion 'unabated since the 18th century' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}

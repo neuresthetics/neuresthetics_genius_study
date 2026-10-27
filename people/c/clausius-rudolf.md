@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #203/228, F 3, rank 216). Goals: firm B; seek any A; do not force plot. Read: Clausius 1865 ninth memoir English (Magie/Farber via Lemoyne Giunta; S4) — own-words 'The energy of the universe is constant' / 'The entropy of the universe strives toward a maximum'; Deutsche Biographie NDB Laue + ADB Reinganum (S5) — (evangelisch), Pfarrergeschlecht genealogy; Encyclopedia.com DSB (S6) — father Lutheran pastor; Bonn Rektoratsrede 1884 Über den Zusammenhang zwischen den großen Agentien der Natur (S7, OCR of scan) — physics of light/heat/electricity/ether only, no God/religion. B stays 3 @ 0.5 inference_from_work; support labelled corroborated (S1+S4; P48); alt 4 named (P35 — 1865 cosmic summary is working-science law statement, not a P16 law-and-exception / miracles claim). A stays UNKNOWN (P19): no first-person God/religion; evangelisch / Lutheran pastor line is heritage. primary_system UNKNOWN. mid UNKNOWN. Chart-moving NO. Heritage + childhood confession filled. P47 source_quality on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and MacTutor. No writing of his on religion was found; his father was a pastor and school principal (MacTutor). primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #124 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (upbringing by a minister father is never a code, §1; CODING_GUIDE §5.3), and the primary_system note updated. #131–132 (minor): birth date and place and death date and place 0.7 → 1.0, now citing MacTutor's Quick Info as well as Britannica (two independent sources agree). No worldview value changed. Decisions P12/P13 recheck: first_lasting_contribution_year 1850 unchanged. Not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["mathematical physicist", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening; paragraphs 2–3"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["thermodynamics", "kinetic theory of gases", "mathematical physics"], certainty: 1.0, cites: [{source: S1, locator: "opening; paragraph 2"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Second law of thermodynamics ('Heat cannot of itself pass from a colder to a hotter body')", year: "1850", kind: "law or principle", lasting: "foundation of thermodynamics", certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "Biography (1850 paper)"}], how_known: "Two sources."}

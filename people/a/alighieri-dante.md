@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 20). Basics from Britannica (Quinones). Worldview from Monarchia III.xvi in Prue Shaw's edition and English translation (Dante Online, Società Dantesca Italiana). The Commedia's speakers, including the pilgrim, are characters and are not used. Not a scientist. CHRIST 0.7; A 0 (0.7); B 3 (0.5); D 2 (0.7); mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fix (fallacy_catalog audit of 2332880, run 1): B_cause 3 (0.5) -> BELOW_THRESHOLD (alternative 4); Mon. III.xvi.12-13 is political and God acts through the order of the heavens, so no stated exception. mid_basin stays BELOW_THRESHOLD. Drops off the person chart."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #20, F5 rank 20). P47 source_quality on every source. Dual-sourced birth/death/parents (S1 Britannica prior + S4 Wikipedia EN). A_locus 0 @ 0.7: support single → corroborated (S2 Shaw Dante Online + S5 Aurelia Henry 1904 De Monarchia III.xvi — independent English translations of the same chapter: prince of the universe / God alone elects / ruler of all things spiritual and temporal). B_cause stays BELOW_THRESHOLD (alt 4): re-read Mon. I.xii free will (S2) and Convivio IV.4–5 Lansing (S6) — free will is moral/political freedom under monarchy, not a Descartes-style carve-out from natural law; Convivio special providence of Rome is historical election, not an account of physical nature's miracles; Henry corroborates the III.xvi order-without-stated-exception wording. D_authority 2 @ 0.7: support single → corroborated (S2+S5 two-guides passage). mid_basin stays BELOW_THRESHOLD. Chart: still unplotted (B BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["poet", "prose writer", "political thinker"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "infobox occupations"}], how_known: "Britannica + Wikipedia EN."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["poetry", "literary theory", "moral and political philosophy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "Works"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "La vita nuova", year: "c. 1293", kind: work, lasting: "chronicle of his love for Beatrice; canon of Italian literature", certainty: 0.5, cites: [{source: S1, locator: "'Who was Dante's muse?'"}, {source: S4, locator: "Works / Vita Nuova"}], how_known: "Britannica + Wikipedia EN; circa date."}

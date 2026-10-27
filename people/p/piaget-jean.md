@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 108). Basics from Britannica (Britannica Editors, unsigned; body only, read live). Worldview from his published lecture Immanentisme et foi religieuse (Geneva, Libr. H. Robert, 1930; given at Rolle on 16 June 1929), read in full in the University of Geneva's online Piaget edition. Scientist (P30, P35 addendum: testable claims about children's cognition). primary_system IDEAL (0.5; alternatives KANT, CHRIST); A 4 (0.7, alt 3); B 3 (0.7, alt 4; P27 free-mind anchor); C BELOW_THRESHOLD; D 4 (0.7); E 4 (0.7); mid_basin false (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit notes for batch S (blind audit of c5d448a, run 1). first_evidence_of_lio_type_views dated 1929 (the lecture given at Rolle on 16 June 1929; printed 1930). primary_system now also cites part I, where 'le Dieu immanent est un Dieu-valeur' stands (the definitions part). No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #107 / F4 rank 108). Goals: corroborate A and B (hollow→filled); keep scores honest. Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on every source. Read in full: 1928 Deux types d'attitudes religieuses (S4, unige; La Sarraz, Mar 1928; published with de la Harpe 1928) and 1929 Encore «Immanence et transcendance» (S5, Cahiers protestants); Insights and Illusions of Philosophy ch.1 (S6, Meridian 1971; own retrospective on Bergson→immanentism and the 1920s lectures). A stays 4 @0.7 alt 3; support single→corroborated (P48: S2 1930 + S4 1928; S5 agrees). B stays 3 @0.7 alt 4 (P27 free-mind); support single→corroborated (S2 + S4 reject miracle / divine intervention in nature). D and E also support→corroborated. first_evidence→1928. mid false @0.7. Chart-moving YES (fill only: dark hollow→dark filled). No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["psychologist", "professor of child psychology", "zoologist"], certainty: 0.7, cites: [{source: S1, locator: "opening; career paragraph"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["developmental psychology", "genetic epistemology"], certainty: 0.7, cites: [{source: S1, locator: "opening; career paragraph"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Le Langage et la pensée chez l'enfant (The Language and Thought of the Child): the first systematic study of children's understanding", year: 1923, kind: work, lasting: "'the first to make a systematic study of the acquisition of understanding in children' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; major works paragraph"}], how_known: "Britannica. A theory of mind with testable claims about children, so he is a scientist (P30, P35 addendum)."}

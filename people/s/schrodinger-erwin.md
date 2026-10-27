@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 10
+  schema_version: "1.4"
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Bernstein), MacTutor and the Nobel biography. Worldview from the epilogue of What is Life? (1944) and Mind and Matter (1958), read in two web transcriptions of the Cambridge edition, plus Britannica on My View of the World. Coded HINDU at 0.5 (stub system; PANT, IDEAL and PANENT named). A 4 (0.7), B 4 (1.0), C 4 (0.5), D 3 (0.5), E 4 (0.7). mid_basin false. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #47: MacTutor's 'Although he was a Catholic' is about the adult in 1933, so family_religion and religious_heritage_by_birth are now TODO (were 'Catholic, per MacTutor' at 0.5); the adult nominal affiliation keeps the MacTutor statement at 0.7 (one reliable source, no dispute). Finding #45: region_of_work certainty 1.0 → 0.7, value unchanged (Western Europe, where wave mechanics was done); the 1935 cat paper (Oxford) and What is Life? (Dublin) were Northern Europe, now an alternative. region_of_birth stays 1.0 (Vienna, documented). Leading cut marked with [...] in one statement. Worldview scores unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "CODING_GUIDE §7 rule on unofficial web copies (Jason's decision, 2026-10-02): B_cause certainty 1.0 → 0.7. It rests on the rapeutation.com copy of the What is Life? epilogue (S4), and no authoritative edition was reachable to check the wording. mid_basin recomputed: value false (P4 test, A = 4) and certainty 0.7 = min(A 0.7, B 0.7), both unchanged; how_known updated."}
@@ -55,6 +56,7 @@ basics:
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 0.7, cites: [{source: S3, locator: "paragraphs 5–7"}], how_known: "Nobel biography."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["theoretical physics", "quantum mechanics", "statistical mechanics", "colour theory", "theoretical biology", "philosophy"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; later life"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Wave mechanics and the Schrödinger equation", year: "1926", kind: theory, lasting: "the basic equation of non-relativistic quantum mechanics (S1); Nobel Prize 1933, shared with Dirac", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Zürich paragraph"}, {source: S3, locator: "paragraph 5"}], how_known: "Two sources."}

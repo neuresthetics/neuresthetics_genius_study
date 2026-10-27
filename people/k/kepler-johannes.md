@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: '1.3'
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: Grok Bot executor agent; web search plus direct reads of the cited pages
   collected_on: '2026-10-02'
-  last_updated: '2026-10-24'
+  last_updated: 2026-10-27
   change_log:
+  - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
   - date: '2026-10-02'
     by: Grok Bot
     summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Westman), MacTutor (J. V. Field) and\
@@ -211,6 +212,7 @@ basics:
       locator: §1
     how_known: Two sources.
 contribution:
+  era_bucket: early_modern
   fields:
     value:
     - astronomy

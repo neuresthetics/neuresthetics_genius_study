@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus P48 fill. SEP §2 (S1) also attests intervening Creator/theodicy (God intervenes to make the world as good as it can be; bestows intellect; wise-father learning) that agrees with A 0 Master/Creator own voice — add S1 to A value cites. Alt 1 five-eternals/design reading kept (S1 still on alt, no longer exclusive of main). A support single→corroborated; B already corroborated → hollow→filled (still faded: B @0.5). mid_basin unchanged (B 0.5). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #138): opened Butterworth Philosophic Life (Interpretation 20.3, 1993) and Arberry Spiritual Physick (1950). A 1 @0.5 scholarly_reconstruction → A 0 @0.7 written_profession (Master/reward/Creator-master; alt 1 = five-eternals design cosmology, P49 SEP). B stays 3 @0.5 (P35/P16: nature-necessity line too thin for cause-order lift; Doubts about Galen unread; alt 4 kept). primary_system stays BELOW_THRESHOLD (religion dispute honest). mid_basin stays BELOW. Chart-moving NO. P47 source_quality; P48 A corroborated / B single; P50 Wikipedia EN dual bio (birth 864/865; death 925/935). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): the 0.5 ceiling now cites the scholarly-reconstruction ceiling (CODING_GUIDE §3), not P36. No score changed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["physician and hospital director", "philosopher", "alchemist"], certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S5, locator: "lead"}], how_known: "SEP; Wikipedia EN."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["medicine", "philosophy", "alchemy"], certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Doubts about Galen", year: UNKNOWN, kind: work, lasting: "his critique of Galen, 'the most significant surviving work for his philosophy' (S1)", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP; undated; English/French primary unread this pass."}

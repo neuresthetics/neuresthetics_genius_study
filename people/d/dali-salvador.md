@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 71). Basics from Britannica (Britannica Editors, unsigned); Top Questions not cited. No worldview statement read; the 1950–70 religious-themed paintings are subjects, not avowed belief. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #70, F5 rank 71). Needs: A UNKNOWN; B UNKNOWN; 1 source. Dual bio: Britannica Editors via Wayback 2015 body (S1; live Cloudflare-blocked) + Wikipedia EN (S3). Primary: The Secret Life of Salvador Dalí 1942 Dial/Chevalier (S4 IA OCR) — end: 'At this moment I do not yet have faith, and I fear I shall die without heaven'; science 'windows open to heaven'; L'Age d'Or collaboration framed as fanatical sacrilege / 'excess of Catholic fanaticism' not naive anticlericalism. Mystical Manifesto 1951 (S8 OCR) — nuclear-mysticism program (post-span). Secondary: NGV Liquid Desire religion + education PDF (S5) — young Dalí shared father's aversion; 1950 'Catholic without faith'; Ateneu lecture title. Living Church Lima 2021 (S6) and Word on Fire (S7) quote Secret Life and the 1950/1970s 'I believe in God but I have no faith' line. P31: lasting contributions = Surrealist 1929–1937 (Britannica best-known window; Soft Construction 1936; Metamorphosis of Narcissus 1937); later Catholic-without-faith / nuclear mysticism in changes_over_life only — do not score axes on post-span phase. A stays UNKNOWN (anti-clerical art and secondary 'atheist' labels under threshold; own film words complicate ATHE; Picasso thin-source pattern). B stays UNKNOWN (not a scientist; Manifesto spirituality-of-substance ≠ P16 nature-order). primary_system UNKNOWN; mid_basin UNKNOWN. P47 on S1–S8. Chart-moving NO. Thin-source caution — no overclaim. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -44,6 +45,7 @@ basics:
   languages_of_work: {value: [Spanish, French], certainty: 0.5, cites: [{source: S1, locator: "'Early life'"}, {source: S4, locator: "published EN autobiography (translated)"}], how_known: "Catalan at home; Spanish and French for art/film world (0.5)."}
   occupations: {value: ["painter", "printmaker", "filmmaker", "writer"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "lead"}], how_known: "Britannica; Wikipedia; Secret Life (S4)."}
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["painting", "film"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Un Chien andalou (with Luis Buñuel)", year: 1929, kind: work, lasting: "Surrealist film (S1; S3)", certainty: 0.7, cites: [{source: S1, locator: "Surrealism paragraph"}, {source: S3, locator: "Un Chien Andalou"}], how_known: "Dual-sourced; S1 also gives 1928."}
