@@ -13,6 +13,7 @@ record:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). S2 page range corrected to pp. 318–324 (K5) and the text credited as edited by Allyn Jackson; Stanford years 1968– at 0.7 from S2's editor's introduction (K7). TeX dated 1978 (the Gibbs Lecture 'Mathematical Typography', S2 introduction) and the later TAOCP volumes dated from his TAOCP page (S5: Volume 4A 2011, Volume 4B 2023 imprint, Volume 4 Fascicle 7 2025); the series stays one contribution dated by its start (P12), so the span is 1968–1978 and the 2001 lecture stays after it. Ruling P1 (v8's pick on the auditor's advice): post-span evidence is capped at 0.5 (P20), not excluded. The TeX 'revolutionized' quote and the Stanford fact attributed to the editor's introduction; MIT lectures dated fall 1999 (book 2001). Values unchanged; not plotted."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fix K1 (FAIL; gs_0b3023d_Q run 1). P12 sets only the start year; P30 addendum d sets the end from the range's end. TAOCP item 1968–2023 (end at the last full volume, Volume 4B, Jason's call; the 2025 fascicle noted); major_work_period = working_years = 1968–2023. The 2001 lecture now falls during the span, so the P20 cap (ruling P1) lifts: A 0 at 0.7 (P8 interview ceiling); lio_views 'during major work'. primary_system CHRIST stays 0.5 (Christian is the coder's inference; coder's call). Not plotted (B UNKNOWN)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #92, F4 rank 93). Needs: A 0 @0.7 single alt 1; B UNKNOWN (not scientist, P30/P16); primary CHRIST @0.5. Dual bio: Britannica Editors (S1) + Wikipedia EN (S8) (P50). P47 source_quality on S1–S8. A stays 0 @0.7, support single→corroborated (P48): AMS S2 'God knows all my secrets' + Things Lecture 1 CSLI excerpt (S6) 'God is present in the lives of people' / Lutheran faith / prayer + Living Lutheran 2018 (S7) 'I believe God is pleased when people create innovations' / 'I'm a Lutheran'. Alt 1 retained (contested-reading ceiling 0.7). primary_system CHRIST 0.5→0.7 (S7 Lutheran self-label + First Lutheran Church Palo Alto; S6 Lutheran upbringing/tradition). B stays UNKNOWN: Lecture 6 'tree pruner' / QM-miracle account widely quoted secondarily (EnlightenedCrowd, Turing Church) but primary page of Things unread (IA borrow 401; CSLI free PDF is Lecture 1 only) — P26 blocks scoring from secondary quotation alone; lead logged. Mid_basin UNKNOWN (P19). Chart-moving NO. Filled family_religion / heritage Lutheran; nominal_affiliations. No fallacy_catalog. Draft, not reviewed."}
+    - {date: 2026-10-26, by: "Grok Bot", summary: "t275u near-miss pass. Lecture 6 tree-pruner passage verified in Knuth's own voice from the lecture video's auto-captions (S9, new). B UNKNOWN→3 @0.5 single, alt 2 (law intact; occasional law-consistent divine influence; free-will exception, P30). mid_basin UNKNOWN→BELOW_THRESHOLD. Chart-moving YES: new plot, faded, hollow."}
 
 identity:
   id: knuth-donald
@@ -104,11 +105,20 @@ worldview:
       how_known: "Three independent source ids (AMS lecture transcript; CSLI Lecture 1 excerpt; Living Lutheran authored piece) → corroborated (P48). Contested alternative keeps certainty at 0.7. Basis written_profession for S6/S7; S2 is recorded_interview and does not raise the ceiling past 0.7 with the alt named."
       alternatives:
         - {value: 1, note: "Personal God with presence/pleasure but no required intervention claim in the passages scored.", cites: [{source: S2, locator: "p. 323"}, {source: S6, locator: "Lecture 1, p. 7"}, {source: S7, locator: "opening"}]}
-    B_cause: {value: UNKNOWN, how_known: "Not a scientist (P30: algorithms and typesetting are not theories about physical or natural systems), so B needs a statement of his own about nature (P16). Lecture 1 weakens faith in some biblical miracle stories but still allows they 'could have happened' and affirms prayer without explaining how (S6, pp. 15, 17) — not a scored account of law vs exception. Lecture 6 ('God and Computer Science') is widely quoted secondarily as God a 'tree pruner' who can occasionally influence quantum branches / work miracles without violating physical laws (EnlightenedCrowd; Turing Church); primary page of Things unread (IA borrow 401; free CSLI PDF is Lecture 1 only), so P26 blocks scoring from secondary quotation. Lead only."}
+    B_cause:
+      value: 3
+      basis: recorded_interview
+      certainty: 0.5
+      support: single
+      cites: [{source: S9, locator: "Lecture 6, tree-pruner passage (auto-captions)"}]
+      rationale: "His own spoken account of nature: the probabilistic model of quantum theory 'clearly makes room for free will and it allows God to exert dynamic control over the world without violating any laws of physics… we can think of God as a tree pruner occasionally influencing the outcome of various branches while simultaneously adjusting the non-observable information behind the scenes so that all observations remain consistent with quantum mechanics', and we ourselves 'might be little tree pruners also' (S9). Physical law is kept whole; divine influence is occasional and law-consistent; free will is the stated exception (P30: free will gives B 3 as the value). Named alternative 2: 'dynamic control' read as live, recurring special providence (B 2 anchor)."
+      how_known: "(interview) Lecture 6 'God and Computer Science' (MIT, 1999, inside the 1968–2023 span, so no P20 cap), heard in his own voice in the recorded lecture; text from YouTube auto-captions of a third-party upload (S9), so one source id and 0.5. P26 satisfied (own voice, not secondary quotation). Book text (CSLI 2001, ch. 6) still unread; reading it would corroborate."
+      alternatives:
+        - {value: 2, note: "'Dynamic control' / occasional pruning as recurring special providence (B 2: exceptions not limited).", cites: [{source: S9, locator: "Lecture 6, tree-pruner passage"}]}
     C_ledger: {value: UNKNOWN, how_known: "Nothing scored."}
     D_authority: {value: UNKNOWN, how_known: "In the AMS lecture he says of 3:16 'I don’t give answers' and that 'life should be an ongoing search' (S2, p. 322); Things Lecture 1 values scholarship and is more ecumenical — does not settle revelation vs reason (D)."}
     E_scope: {value: UNKNOWN, how_known: "Nothing read (P7). Not a scientist for the working-science default."}
-  mid_basin: {value: UNKNOWN, how_known: "B is UNKNOWN (P19)."}
+  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 @0.7 but B 3 only at 0.5 (alt 2), under the P4 0.7 bar."}
   statements:
     - text: "I’m a religious person, and I think that God knows all my secrets, so I always feel that whatever I’m thinking is public knowledge in some way. I come from this kind of background. I don’t feel I have to encrypt everything I do."
       cites: [{source: S2, locator: "p. 323"}]
@@ -298,6 +308,16 @@ sources:
     reliability_note: "Dual bio with S1 (P50). Used for Early life (Milwaukee Lutheran High School; Midwestern Lutheran German), Lutheran categories, and Personal life pointers to 3:16 / Things. Not used alone for scored A/B."
     source_quality: "reference entry"
     used_for: [identity, basics, childhood, heritage]
+  - id: S9
+    type: primary
+    kind: "other"
+    author: "Donald E. Knuth"
+    citation: "Knuth, Donald E. \"God and Computer Science.\" Things a Computer Scientist Rarely Talks About, Lecture 6, MIT, 1999 (video). YouTube upload by 'arisbe, a guess at the riddle (curation)', 2022-05-08. https://www.youtube.com/watch?v=VoKye2hFcb0. English auto-captions read 2026-10-26."
+    url: "https://www.youtube.com/watch?v=VoKye2hFcb0"
+    accessed: 2026-10-26
+    reliability_note: "Video of the lecture in Knuth's own voice; third-party re-upload; text from machine auto-captions (unpunctuated), so wording is approximate."
+    source_quality: "unofficial web copy"
+    used_for: [worldview]
 ---
 
 # Donald Knuth
@@ -306,7 +326,7 @@ sources:
 
 ## Summary
 
-Donald Knuth (born 1938), American mathematician and computer scientist [S1; S8]. Deepen D1: primary_system CHRIST (0.7); A 0 at 0.7 corroborated (alt 1); B UNKNOWN; mid_basin UNKNOWN. Not plotted. Chart-moving NO.
+Donald Knuth (born 1938), American mathematician and computer scientist [S1; S8]. Deepen D1: primary_system CHRIST (0.7); A 0 at 0.7 corroborated (alt 1); B 3 at 0.5 (alt 2, Lecture 6 video, 2026-10-26); mid_basin BELOW_THRESHOLD. Plots faded at A0/B3 (hollow: B single source).
 
 ## Life and work
 
