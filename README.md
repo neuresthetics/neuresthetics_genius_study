@@ -27,7 +27,7 @@ Most talk about genius and belief leans on anecdotes or summary labels. Here the
 | Decisions settled | 65 / 65 |
 | Audits | Early work: 9 blind lens runs on four claim packets — see [reports/audit_2026-10-02.md](reports/audit_2026-10-02.md). Stage 3 person batches and belief-system batches S1–S12 were each blind-audited with fixes applied. Rulings live in [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md); batch-by-batch history is in [CHANGELOG.md](CHANGELOG.md). |
 | Latest tag | `v8.0-alpha` (prerelease) |
-| Next steps | Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; charts refreshed (88 plotted, 140 not scorable). Systems pass complete (77 sourced, 0 sourced but unscored, 0 stubs). Roster frozen — no new people. Open for Jason (not blocking): Augustine mid_basin under P4; Linnaeus span end 1758 (RQ-Z5-N1). Revised rubric has not started. Details: [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md), [CHANGELOG.md](CHANGELOG.md). |
+| Next steps | Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; charts refreshed (89 plotted, 139 not scorable). Systems pass complete (77 sourced, 0 sourced but unscored, 0 stubs). Roster frozen — no new people. Open for Jason (not blocking): Augustine mid_basin under P4. Revised rubric has not started. Details: [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md), [CHANGELOG.md](CHANGELOG.md). |
 
 <!-- END GENERATED: progress -->
 
@@ -47,23 +47,23 @@ python3 scripts/make_figures.py --fullweight # sensitivity view only
 ![Draft person scores: where coded people fall on where God is against how things happen, with no region marked](figures/people_cause_locus.png)
 
 <!-- BEGIN GENERATED: people_chart_caption -->
-*Draft person scores: where God is (up the chart) against how things happen (across the chart). No region is marked. Plotted: the 88 coded people with both axes scored; every plotted person is B_cause 2, 3 or 4. Nobody plotted scores in the left two columns (miracles or intervention, or mostly intervention). **Interview voice (P43):** Igor Stravinsky (A 0, B 2) rests on interview statements of disputed wording (for Stravinsky, the Craft books), capped at 0.5 and drawn faded; 6 plotted people score left of B 3 (Augustine, Hegel, Ibn Khaldun, James, Pascal, Stravinsky). **Not scorable yet:** 140 coded people lack a score on at least one axis (40 with no A_locus score, 31 with no B_cause score, 69 with neither; the value is UNKNOWN or BELOW_THRESHOLD). They are not plotted and are left out of every count here. These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. A faded dot is a less certain score (below 0.7 on at least one axis).*
+*Draft person scores: where God is (up the chart) against how things happen (across the chart). No region is marked. Plotted: the 89 coded people with both axes scored; every plotted person is B_cause 2, 3 or 4. Nobody plotted scores in the left two columns (miracles or intervention, or mostly intervention). **Interview voice (P43):** Igor Stravinsky (A 0, B 2) rests on interview statements of disputed wording (for Stravinsky, the Craft books), capped at 0.5 and drawn faded; 6 plotted people score left of B 3 (Augustine, Hegel, Ibn Khaldun, James, Pascal, Stravinsky). **Not scorable yet:** 139 coded people lack a score on at least one axis (40 with no A_locus score, 30 with no B_cause score, 69 with neither; the value is UNKNOWN or BELOW_THRESHOLD). They are not plotted and are left out of every count here. These are unreviewed, hand-picked drafts, not a sample, and there is no base rate for any era, so the chart shows only where these people fall, not a pattern or a rate. Each surname sits next to its dot. A faded dot is a less certain score (below 0.7 on at least one axis).*
 <!-- END GENERATED: people_chart_caption -->
 
 #### Including weaker scores (sensitivity view)
 
-The main person chart above fades any dot with certainty below 0.7, so you can see what rests on firmer ground. A second view draws the **same 88 people** at full weight — including the **41** whose best public evidence only clears 0.5 — while hollow rings still mark a single source.
+The main person chart above fades any dot with certainty below 0.7, so you can see what rests on firmer ground. A second view draws the **same 89 people** at full weight — including the **41** whose best public evidence only clears 0.5 — while hollow rings still mark a single source.
 
 That view is not a claim that weak evidence equals strong evidence. It is an illustration: the cloud of placements does not vanish when you stop visually discounting soft scores. It also marks a hard stop. Analysis is "enough" here when further reading would not move someone onto the grid or change a rule — only deepen a footnote. Complete coverage of every remembered genius is impossible; honest gaps are part of the work. Drafts only — no results yet. Lane A stays descriptive.
 
-![Same 88 people at full weight: certainty fade removed; hollow ring still marks a single source](figures/people_cause_locus_fullweight.png)
+![Same 89 people at full weight: certainty fade removed; hollow ring still marks a single source](figures/people_cause_locus_fullweight.png)
 
-*Full-weight sensitivity view of the same 88 plotted people (41 would be faded on the main chart). Fade off; hollow = single source. Not a result. Regenerate with `python3 scripts/make_figures.py --fullweight`.*
+*Full-weight sensitivity view of the same 89 plotted people (41 would be faded on the main chart). Fade off; hollow = single source. Not a result. Regenerate with `python3 scripts/make_figures.py --fullweight`.*
 
 <details>
-<summary><strong>People not yet on the chart</strong> (140 — click to expand)</summary>
+<summary><strong>People not yet on the chart</strong> (139 — click to expand)</summary>
 
-The 140 coded people below are not on the chart because at least one axis has no settled score yet — either no public own-voice claim was found, or the best evidence never clears the bar. They are left out of every chart count. One line each; regenerate with `python3 scripts/progress_status.py`. Drafts only — no results yet.
+The 139 coded people below are not on the chart because at least one axis has no settled score yet — either no public own-voice claim was found, or the best evidence never clears the bar. They are left out of every chart count. One line each; regenerate with `python3 scripts/progress_status.py`. Drafts only — no results yet.
 
 <!-- BEGIN GENERATED: not_scorable -->
 - **Ada Yonath** — Where God sits never clears the evidence bar; nature-side score is in place.
@@ -95,7 +95,6 @@ The 140 coded people below are not on the chart because at least one axis has no
 - **David Hilbert** — Where God sits never clears the evidence bar; nature-side score is in place.
 - **Demis Hassabis** — Where God sits never clears the evidence bar; nature-side score is in place.
 - **Dmitri Mendeleev** — Where God sits never clears the evidence bar; nature-side score is in place.
-- **Donald Knuth** — No settled score for how nature runs; where-God score is in place.
 - **Donatello** — No settled score for where God is or how nature runs.
 - **Dorothy Hodgkin** — Where God sits never clears the evidence bar; nature-side score is in place.
 - **Duke Ellington** — How nature runs never clears the evidence bar; where-God score is in place.
