@@ -44,10 +44,10 @@ AUDITS = (
 )
 NEXT_STEPS = (
     "Deepening of all 228 coded person files is done; P47–P50 darkness/hollow cues are applied; "
-    "charts refreshed (88 plotted, 140 not scorable). "
+    "charts refreshed (89 plotted, 139 not scorable). "
     "Systems pass complete (77 sourced, 0 sourced but unscored, 0 stubs). "
     "Roster frozen — no new people. "
-    "Open for Jason (not blocking): Augustine mid_basin under P4; Linnaeus span end 1758 (RQ-Z5-N1). "
+    "Open for Jason (not blocking): Augustine mid_basin under P4. "
     "Revised rubric has not started. "
     "Details: [docs/OPEN_DECISIONS.md](docs/OPEN_DECISIONS.md), [CHANGELOG.md](CHANGELOG.md)."
 )
