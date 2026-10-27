@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 38). Basics from Britannica (Deakin) and MacTutor (O'Connor and Robertson). All her works are lost (S1, S2); her Neoplatonism is known only from later reports, which are reported speech (§7, P42). Not a scientist under P30: no original result is known (S2). Birth year disputed (c. 355 vs c. 370). Undated works (P39). primary_system BELOW_THRESHOLD (candidate PLATO, as Neoplatonism); A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #38, F5 rank 38). Needs: A BELOW_THRESHOLD; B UNKNOWN; 2 sources. Re-opened Britannica Deakin via Wayback (S1) and MacTutor (S2). New: Socrates Scholasticus HE 7.15 NPNF (S4); Synesius Ep. 15 Fitzgerald via Livius (S5) — his words, not hers; Suda On Line upsilon 166 (S6) for lost-work titles and Damascius/Hesychius testimonia. P47 source_quality on every source. Sparse own words / ancient testimonia: no letter or treatise of hers survives; Synesius's seven letters are to her; Neoplatonism and 'the One' remain reported speech / reference paraphrase (P42). MacTutor's pairing with Iamblichus is not followed: Socrates names Plato and Plotinus only; later scholarship stresses a Plotinian (not Iamblichean) line. Not a scientist under P30; no nature statement in her voice (P16). A stays BELOW_THRESHOLD; B stays UNKNOWN. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -53,6 +54,7 @@ basics:
   occupations: {value: ["mathematician", "astronomer", "philosopher", "teacher"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography"}, {source: S4, locator: "HE 7.15"}, {source: S6, locator: "SOL"}], how_known: "Britannica, MacTutor, Socrates, Suda."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["mathematics", "astronomy", "philosophy"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography"}, {source: S6, locator: "SOL (commentaries; Plato/Aristotle teaching)"}], how_known: "All major sources."}
   lasting_original_contributions:
     - {value: "Commentaries on Apollonius's Conics and Diophantus's Arithmetica, and an Astronomical Canon / table (all lost as independent texts)", kind: work, lasting: "attempts to reconstruct aspects of them (S1); Deakin via MacTutor: excellent compiler, editor and preserver (S2); Suda lists the three titles (S6)", certainty: 0.7, cites: [{source: S1, locator: "text, third paragraph"}, {source: S2, locator: "Biography (Suidas)"}, {source: S6, locator: "SOL upsilon 166 (Diophantos; Astronomical Canon; Conics of Apollonios)"}], how_known: "Britannica and MacTutor report the Suda attribution; Suda text checked this pass. Undated (P39). No evidence of original mathematical research (S2)."}

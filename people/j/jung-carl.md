@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N; deepen D1 queue #86)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to psychology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 87). Basics from Britannica (Michael S.M. and Frieda Fordham, signed; body only). Worldview from the 1959 BBC 'Face to Face' interview (transcript as printed in C.G. Jung Speaking, pp. 424–439, read on a blog) and his letter to The Listener of 21 January 1960 (blog transcription): secondary transcriptions, primary check pending. primary_system BELOW_THRESHOLD (CHRIST leading candidate); A BELOW_THRESHOLD (alt 3); B UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Ruling noted (v8, 2026-10-17): theories of the psyche do not count as science about physical nature for P35, so B stays UNKNOWN; open question closed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit (#23, RQ3): the P35 addendum states the criterion (testable, empirical claims about organisms count; interpretive theories of the psyche do not), which keeps his B UNKNOWN; Synchronicity (1952) named as the lead."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["psychiatrist", "psychologist", "professor"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Character of his psychotherapy'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: psychology
   fields: {value: ["analytical psychology", "psychiatry", "psychology of religion"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Extraverted and introverted attitude types; four functions (Psychological Types)", year: 1921, kind: theory, lasting: "'His first achievement' (S1); named among the concepts he 'proposed and developed' (S1, opening)", certainty: 0.7, cites: [{source: S1, locator: "opening; types paragraph"}], how_known: "Britannica."}

@@ -293,6 +293,40 @@ Notes:
 - List only original contributions that are still used or built on, with `lasting` saying what rests on them.
 - `evidence_of_impact` uses concrete markers: named laws or units, textbook canon, assessments by later major figures, honours.
 - `definition_fit` is `clearly meets`, `arguable` or `does not meet` against the Lane A definition (lasting original impact; not collectives, transient fame, or mastery without originality). It feeds roster status decisions, which are Jason's.
+- **`primary_domain`** (schema 1.4, 2026-10-27). One short label for the person's main craft. Lane A metadata for later slices and queues. It is not a claim: no certainty, no cites, no alternatives. It is not an LIO axis, and it does not change A–E, `mid_basin`, or `primary_system`. It is not `identity.roster.field` or `field_bucket` (those stay a checked copy of the roster row). There is no `secondary_domain`. `worldview.secondary_system` is a required scored claim with a sentinel, not a pattern for an optional second craft.
+  - Fill it from the public record already in the file (`lasting_original_contributions`, `contribution.fields`, occupations). Use a well-known public identity only when that record is thin. Pick the domain of the lasting contribution, not every office the person held. A polymath gets the one domain most central to that contribution.
+  - A coded person file uses an allowlist value. `TODO` is only for the uncoded template. Do not use `UNKNOWN` or `BELOW_THRESHOLD`.
+  - Allowlist (lowercase snake_case). Add a value only when none of these fits, and add it in `schema/person.schema.json` in the same edit:
+
+    | label | use for |
+    |---|---|
+    | `mathematics` | mathematics, including logic and mathematical physics when the lasting work is the mathematics |
+    | `physics` | physics, including theoretical astrophysics when the craft is theoretical physics |
+    | `chemistry` | chemistry, including structural chemistry of biomolecules when that is the craft |
+    | `biology` | biology and the life sciences, including genetics, natural history, and ethology |
+    | `medicine` | medicine, anatomy, surgery, and clinical discovery |
+    | `astronomy` | observational astronomy, celestial mechanics as astronomy, and cosmology when the craft is astronomy |
+    | `philosophy` | philosophy, including political philosophy |
+    | `theology` | theology and religious systems as the main craft |
+    | `literature` | poetry, fiction, and drama |
+    | `music` | composition and musical performance as the lasting work |
+    | `visual_arts` | painting, sculpture, and cinema |
+    | `history` | history and historiography |
+    | `politics_statecraft` | statecraft, political leadership, and military strategy |
+    | `economics` | economics and political economy |
+    | `psychology` | psychology, including psychiatry when the lasting work is a theory of mind |
+    | `computer_science` | computer science and artificial intelligence, including the founding of programmable computing and information theory |
+    | `engineering` | engineering of systems and production, when that rather than a device patent is the lasting work |
+    | `invention` | devices and practical inventions |
+    | `linguistics` | linguistics |
+    | `law` | law as the lasting work |
+    | `education` | education as the lasting work |
+    | `anthropology` | anthropology |
+    | `geology` | geology |
+    | `geography` | geography and travel writing whose lasting work is geographical |
+    | `architecture` | architecture |
+
+    Merges, so the list does not grow by near-duplicates: cinema is `visual_arts`; military strategy is `politics_statecraft`; a chemist who determined a biological structure stays `chemistry` when that is the craft. `law`, `education`, and `geology` are on the list for later records; none of the coded people uses them yet.
 
 **Childhood.**
 - Record facts only. `early_mathematics` is the highest level reached before about 18.

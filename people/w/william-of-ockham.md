@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #214/228, F 3, rank 227). Opened Ordinatio Prologue (Peter L.P. Simpson EN, aristotelophile PDF) nn.11, 60, 70, 77 (mediate→immediate efficient cause; absolute power separability; intuitive knowledge conserved of non-existent; theological truths including 'God is'); Kilcullen PhTh documenting Quodl. 6 q.1 ordinate/absolute and the famous proposition (secondary causes → God can produce immediately); IEP Kaye (divine command; fideism); Wikipedia EN dual bio (P50). Lifted CLASS_THEISM, A 1, B 3 from scholarly_reconstruction @0.5 to written_profession @0.7 (alts kept: A alt 0; B alt 2). P48 support corroborated on A and B. mid_basin BELOW_THRESHOLD → true @0.7. Chart-moving YES (would-be faded hollow → dark filled at next figures refresh; mid newly true). RQ-AA8-1 B 3 value kept; basis lifted off reconstruction by own-voice (Scotus pattern). P47 source_quality; P49 not silently raised. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Newly plottable (A 1 / B 3, both 0.5); mid_basin BELOW_THRESHOLD."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: A 1 now rests on §6.2/§7.2; B stays UNKNOWN, held with Plotinus and Duns Scotus under RQ-AA8-1 pending Jason."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["Franciscan friar", "philosopher", "theologian"], certainty: 0.7, cites: [{source: S1, locator: "opening; §1.1"}, {source: S5, locator: "lead"}], how_known: "SEP and Wikipedia."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy", "logic", "theology", "political philosophy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Metaphysical nominalism and ontological reduction to substance and quality (academic writings, Sentences commentary to Summa of Logic)", year: 1317, kind: "theory", lasting: "'He is probably best known today for his espousal of metaphysical nominalism' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; §2; §4.2–4.3"}], how_known: "Academic writings 1317–c.1325 (S1); composition range start (RQ-Z9-N1)."}

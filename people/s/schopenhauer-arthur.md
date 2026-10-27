@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth denomination; refuse Danzig-Protestant invention). Chart-moving NO."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 85). Basics from Britannica (Arthur Hübscher, signed; body only). Worldview from The World as Will and Idea (Haldane and Kemp translation, Gutenberg #38427 and #40868: vol. 1 §§55, 63, 68; vol. 3 ch. L) and SEP 'Arthur Schopenhauer' (Wicks, 2021). primary_system IDEAL (0.5, alt ATHE); A 4 (0.7); B 4 (0.5, alt 3: his own named exception, freedom appearing in the phenomenon in the denial of the will); C 3 (0.5, alt 4); E 3 (0.5, alt 4); mid_basin false (0.7). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fixes (#7, #8; v8's ruling on RQ1, on the auditor's advice): B 4 → 3 at 0.5, alternative 4. His own named exception, freedom appearing directly in the phenomenon in the denial of the will (§68), is a free will not bound by natural law, so the B 3 rule (CODING_GUIDE §6, P30) gives 3 as the value, as with Kant's noumenal freedom, even though §55 says nature 'admits of no exception'. C 3 now cites the §63 transmigration passage and is labelled the coder's analogy (P44(d) is a systems rule). mid_basin unchanged (false, 0.7)."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["philosopher", "privatdozent (University of Berlin)"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Active maturity'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["metaphysics", "aesthetics", "ethics"], certainty: 0.7, cites: [{source: S1, locator: "'Active maturity'"}], how_known: "Britannica (the four books of the main work)."}
   lasting_original_contributions:
     - {value: "The World as Will and Idea (Die Welt als Wille und Vorstellung): the metaphysics of the will", year: 1819, kind: work, lasting: "'The book marked the summit of Schopenhauer's thought' (S1); influenced existential philosophy and Freudian psychology (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Active maturity'"}], how_known: "Britannica."}

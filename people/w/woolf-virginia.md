@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 79). Basics from Britannica (Panthea Reid, signed; body only). Worldview from 'A Sketch of the Past' (memoir, 1940–41, published 1976) quoted by Ryan (2012, Glasgow PhD) and the 1928 letter to Vanessa Bell quoted by Tóibín (LRB, 2014): secondary quotations, primary check pending. primary_system ATHE (0.5, alt AGNOS); A 4 (0.7); B UNKNOWN (P16); mid_basin false (0.7, A ≥ 3 branch). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): memoir dated 1939–40 (date field 1939), MB p. 85 noted as the Pimlico page (Harcourt pp. 71–72); SECHUM named as the better alternative to AGNOS. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #78, F5 rank 79). Needs: B UNKNOWN. Primaries/secondaries: Ryan thesis re-checked (S2, MB 85 quote); LRB Tóibín re-checked (S3, 1928 Eliot letter); Wayback 2020 UAH Sketch quotations page (S5) as independent web transcription of Harcourt pp. 71–72; LitHub Bellot 2017 (S6) long quote of same Sketch passage + diary/letter leads (Einstein 20 Mar 1926; 'Oh, how I loathe religion' to Ethel Smyth 1934; 'anti-religious bias'); Wikipedia EN dual bio (S7, P50); Humanists UK heritage page (S8). P47 on S1–S8. A 4 @0.7 stays; support field added as corroborated (S2+S5 memoir streams; S3+S6 letter streams). B stays UNKNOWN after P16 check: Sketch 'pattern' / 'world is a work of art' is aesthetic-immanent philosophy, not nature's causal order; diary 20 Mar 1926 Einstein/'foretell our own lives' reports a dinner argument 'passing my limits', not her creed; early 'vast living thing' nature notes and fiction 'little miracles' not scored. D UNKNOWN→4 @0.5 corroborated (loathe religion / anti-religious bias / Eliot letter / no-God Sketch). C stays UNKNOWN (no clear own-words afterlife denial; Clarissa Dalloway 'cease completely' is fiction). primary_system ATHE @0.5 alt SECHUM unchanged (naturalism half still unstated; pattern-mysticism softens ATHE). mid_basin false @0.7 (A≥3 branch). Chart-moving NO (B UNKNOWN; still unplottable for A&B fill). Moments of Being print / Letters III scholarly volumes still unread (IA borrow gated). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["novelist", "essayist", "publisher (Hogarth Press)"], certainty: 0.7, cites: [{source: S1, locator: "opening; Hogarth Press paragraph"}, {source: S7, locator: "infobox occupations"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["fiction", "essays", "literary criticism"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Jacob's Room", year: 1922, kind: work, lasting: "'she achieved such emotion' (S1)", certainty: 0.7, cites: [{source: S1, locator: "major works section"}, {source: S7, locator: "notable works"}], how_known: "Two sources."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to computer_science. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (skip catch-up 9/13): On Point WBUR 2025-01-10 (S4) corroborates atheist-family / school 'nonsense' own-voice; Wikipedia EN (S5) dual bio (P50). primary ATHE and A 4 stay at 0.5 with support corroborated (S2+S4; P48); after span → P20. B UNKNOWN held (RQ-Z9-1 / P33; no new lasting natural-system theory listed; no P16 own-voice). mid BELOW_THRESHOLD; not plotted. Chart-moving NO. P47 source_quality on all sources."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit (RQ-Z9-1, v8's call on the auditor's advice): not a scientist as listed; B stays UNKNOWN, not plotted. Leads added: prize motivation 'discoveries and inventions'; interview 'theory' and 'for discovering how the brain worked'."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 171). Basics from NobelPrize.org facts (Physics 2024). Own words: Nobel Prize interview, 6 December 2024 (NobelPrize.org transcript), after the span: parents 'both atheists'; at his Christian school belief in God 'seemed to me it was just obvious nonsense, and it turns out I was right'; 'other people also don't believe in God'. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alts BELOW_THRESHOLD and 3; P20, Chomsky and Kahneman precedents). Not a scientist as listed: the Boltzmann machine is called an 'invention' (S1; P33; Hassabis precedent), so B UNKNOWN pending RQ-Z9-1. C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span 1983–1985, age 36. Not plotted (no B). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["computer scientist", "cognitive scientist", "professor"], certainty: 0.7, cites: [{source: S1, locator: "Affiliation"}, {source: S5, locator: "lead"}], how_known: "NobelPrize.org; Wikipedia EN."}
 
 contribution:
+  primary_domain: computer_science
   fields: {value: ["machine learning", "artificial neural networks"], certainty: 0.7, cites: [{source: S1, locator: "Prize motivation"}], how_known: "NobelPrize.org."}
   lasting_original_contributions:
     - {value: "Boltzmann machine", year: 1983, kind: "invention", lasting: "'The invention became significant, for example, for classifying and creating images' (S1); Nobel Prize 2024", certainty: 0.7, cites: [{source: S1, locator: "Work"}], how_known: "NobelPrize.org: 'In 1983–1985, Geoffrey Hinton used tools from statistical physics to create the Boltzmann machine'."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to visual_arts. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 19). Basics and works from Britannica (Seitz), first part of the article only. No statement of his on religion, God or nature's order was read. Not a scientist. primary_system UNKNOWN; all axes UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #19, F5 rank 19). P47 source_quality on every source. Dual-sourced birth/death/baptism (S1 Britannica prior read + S3 Wikipedia EN + S4 Wildenstein Tome I OCR). Adult religion: no Monet letter denying God found (ARTIC Wildenstein letter PDFs 403); Blanche Hoschedé posthumous notes via Wildenstein IV n.1327 (S5) — civil burial wish, non-practice, family free to follow their religion (reported speech); Levine 1994 p.66 and Butler 2008 p.202 call him atheist without quoting him (S6, S7 via Wikipedia footnote sentences). Clemenceau «pas de noir pour Monet» is Clemenceau's funeral act, not Monet's creed (S5). primary_system BELOW_THRESHOLD (lead ATHE); A_locus BELOW_THRESHOLD (no own locus/denial; P38 needs published disbelief); B_cause UNKNOWN (not a scientist; nothing on law/exception, P16); C/D/E UNKNOWN; mid_basin UNKNOWN (B UNKNOWN takes precedence, P19). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["painter"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "Britannica + Wikipedia EN."}
 
 contribution:
+  primary_domain: visual_arts
   fields: {value: ["painting"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "Impressionist method: recording on the spot the impression of a momentary view, in broken touches", year: "1865–67", kind: method, lasting: "he was 'the initiator, leader, and unswerving advocate of the Impressionist style' (S1); name of the movement from Impression, Sunrise (1874) (S3)", certainty: 0.5, cites: [{source: S1, locator: "opening; Early work"}, {source: S3, locator: "opening; Impressionism"}], how_known: "Britannica + Wikipedia EN; the start year is the range Britannica gives for the pictures that show the advance (inference, 0.5)."}

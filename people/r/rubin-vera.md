@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to astronomy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: if the thesis result ever counts, span alternative 1950–1970 (December 1950 AAS talk), age 22."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 221). Sources: Britannica scholars edition, signed by Kelly Gisonna (read in full); ADS record of Rubin and Ford 1970 (S3). Lasting: galaxy rotation evidence for dark matter; 'The existence of dark matter was previously only a conjecture but was confirmed through Rubin's work' (S1); the Andromeda rotation paper appeared in ApJ 159 (February 1970) (S3). The 1951 supergalactic-plane result ('now known to be evidence of the supergalactic plane') is listed as a major work, not lasting (AA10 audit: it says the result was right, not that it lasted; Mirzakhani line). If it ever counts, P30 dates it to her December 1950 AAS talk: span alternative 1950–1970, age 22. Span 1970, age 42. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN; heritage Jewish 0.7. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #208/228, F 3, rank 221): firm B; seek any A; do not force plot. Read Physics Today 'A two-way galaxy' (Rubin 2007, S4); Discover 2002 interview Newton-laws quote via Wikiquote + search transcript (S5); Meyer/NC Register 1996 Pontifical Academy interview (S6); Wikipedia EN (S7); Jewish Women's Archive (S8). B 3@0.5 inference_from_work (P35)→3 @0.7 written_profession, support corroborated (S4+S5): Newton's law of gravitation for galaxies; prefers dark matter over modifying Newton; 'Newton's laws hold over a very large domain'; alt 4 kept (P16/P35). A stays UNKNOWN (religion as 'moral code and a kind of history' places no locus; Nature 2003 dinner-with-God is party-game, unused). primary stays UNKNOWN; JUDA rejected (do_not_use_when: no God/Torah/covenant in own words). Mid UNKNOWN. Not plotted. P47 source_quality on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["astronomer"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: astronomy
   fields: {value: ["astronomy"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Flat galaxy rotation curves (Andromeda, with W. Kent Ford, then many galaxies) as evidence for dark matter halos", year: 1970, kind: "discovery", lasting: "'The existence of dark matter was previously only a conjecture but was confirmed through Rubin's work' (S1)", certainty: 0.7, cites: [{source: S1, locator: "The supergalactic plane, dark matter, and legacy"}, {source: S3, locator: "abstract record"}], how_known: "Rubin and Ford, 'Rotation of the Andromeda Nebula from a Spectroscopic Survey of Emission Regions', ApJ 159 (1970) (S3)."}

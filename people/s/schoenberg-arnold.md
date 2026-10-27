@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #143): opened DeVoto full PDF (S4) for in-span Kandinsky letters (Stein Letters pp. 88–93 via DeVoto quotation); Style and Idea 'Composition with Twelve Tones' ch.1 web transcription (S7, 1941 UCLA lecture); ASC reconversion draft 12 Aug 1933 (S8, German). Added statements: Kandinsky 20 Apr 1923 ('I am a Jew' — ethnic identity under antisemitism, not JUDA locus profession); Kandinsky 4 May 1923 ('task that their God has imposed on them' — third-person about Jewry, not first-person profession); Composition with Twelve Tones Divine Model / 'Lord said Let there be Light' (post-span artistic metaphor, after 1933 JUDA return); Aug 1933 reconversion note (Religionswechsel only for religious and national cause — clear own-voice but after coded span). Goldschmied 1890 'unbeliever' remains pre-span. P42: Moses und Aron / Jakobsleiter libretti still do not code the person. primary stays BELOW_THRESHOLD (leads JUDA from 1933 after span; CHRIST nominal); A stays BELOW_THRESHOLD; B UNKNOWN (P30 not scientist); mid UNKNOWN; not plotted. P47 source_quality on all sources. Style and Idea full Stein volume IA borrow-restricted this pass. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (RQ-Z8-1, v8's call on the auditor's advice): premise corrected. The Dance around the Golden Calf from Moses und Aron premiered in Darmstadt on 2 July 1951 (Scherchen; Schott, Universal Edition), but an excerpt premiere dates only the excerpt, so the work's year and the span end stay UNKNOWN. coder_note added: dated 1951, the span would include the 1933 return to Judaism. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (WEAKEN): 'begun in 1930' is a composition start, not a P30 #1 dating event. Moses und Aron was neither staged nor published in his lifetime (unfinished; he died 1951) [premise corrected at Z8: an excerpt premiered in 1951]; item year and span end set to UNKNOWN (Al-Ghazali precedent). Span 1899–1930 -> UNKNOWN (starts 1899)."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["composer", "teacher of composition", "theorist", "painter"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["music composition", "music theory"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Verklärte Nacht", year: 1899, kind: work, lasting: "'one of Schoenberg's most-popular compositions' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'First major works'"}], how_known: "Britannica."}

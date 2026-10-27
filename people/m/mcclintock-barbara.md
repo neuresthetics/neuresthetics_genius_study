@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to biology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: native_name TODO→Barbara McClintock @1.0 (matches full_name). Chart-moving NO."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #10). P47 source_quality on every source. Primary: The Origin and Behavior of Mutable Loci in Maize (PNAS 1950; S4 full text now read) and Nobel lecture The Significance of Responses of the Genome to Challenge (8 Dec 1983; new S6) — own words on chromosome mechanisms, precise control of transposition, genome sensing/programmed responses. B_cause stays 3 @ 0.5 (P16 Hilbert / P35: lawful physical regularities, no no-exception claim) but basis inference_from_work → written_profession; support single → corroborated (S4+S6). A_locus stays UNKNOWN after Nobel biographical note, Nobel lecture, 1950 PNAS, Keller 1983 (S7 interview biography; Tibetan Buddhism / oneness quotes are epistemology, not God), Martienssen oral history and Humanist profile (both secondary paraphrase, unused for A under P19). Creighton & McClintock 1931 (S3) still bibliographic only (PMC/PNAS PDF blocked). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 10). Basics from her Nobel autobiographical note and the NLM Profiles in Science overview; paper dates from Europe PMC records of PNAS. No statement of hers on religion, God or nature was read. primary_system UNKNOWN; B_cause 3 at 0.5 from working science (P35, alternative 4); A, C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin UNKNOWN. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["cytogeneticist", "research scientist"], certainty: 1.0, cites: [{source: S1, locator: "text and positions"}, {source: S2, locator: "paragraphs 1–3"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: biology
   fields: {value: ["cytogenetics", "maize genetics"], certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}, {source: S2, locator: "paragraph 4"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Cytological proof that genetic crossing-over goes with physical exchange between chromosomes (with Harriet Creighton)", year: 1931, kind: discovery, lasting: "physical basis of genetic recombination", certainty: 1.0, cites: [{source: S3, locator: "PNAS 17:492–497 (1931)"}, {source: S2, locator: "paragraph 4"}], how_known: "Primary record and NLM."}

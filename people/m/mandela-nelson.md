@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to politics_statecraft. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #120 / F4 rank 121). Goals: raise A if corroborating own-voice locus; keep B UNKNOWN unless true P16; open Long Walk / letters / Methodist speeches. Opened Long Walk to Freedom ebook PDF (S7; ACT Rwanda repository of Little, Brown 1994/95): 'Though I am a Methodist, I would attend each different religious service' (Robben Island); 'I told them that I was a Christian and had always been a Christian' + Christ/moneylenders (Pollsmoor, Washington Times editors visit, mid-1980s event). Methodist Conference Umtata 18 Sep 1994 (S8, Wayback ANC): 'personal home-coming, both in the physical and spiritual sense'; spiritual association with Methodist Church. Methodist Triennial Durban 17 Jul 1998 (S9): 'my church'; 'God who did not tolerate oppression' framed as what religious organisations taught (after span). Villa-Vicencio, The Spirit of Freedom (S10; interviews 1992/early 1993, in-span): 'person and his or her God'; 'humankind made in the image of God. This is a God who, if I understand the Bible correctly, requires us…'. CHRIST 0.5→0.7 (written_profession; support corroborated). A 1 0.5→0.7 (support corroborated; Moria S5 + Villa-Vicencio S10 locus; LWTF Christ-as-agent). B stays UNKNOWN (ruling V1; Scheffler science-bolsters-religion appeal ≠ P16; struggle 'not a miracle' remains political lead). Mid UNKNOWN. Chart-moving NO. P47 on S1–S10. Wikipedia EN (S11, P50). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): ruling V1 (v8's call on the auditor's advice; RQ-AU1 does not extend to prayers for peace): MA5, B BELOW_THRESHOLD -> UNKNOWN, readings 1 and 3 kept as leads; MA6, mid_basin BELOW_THRESHOLD -> UNKNOWN. Notes: Forster's 'just an ordinary person' labelled a secondary quotation; primary_system how_known gives the P42 reason the speech counts. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 121). Basics from Britannica (Britannica Editors), the Nobel Foundation biography and facts page; religion from Dion Forster's 2014 faith biography and his own Easter address at Moria (3 April 1994, SAHO transcript). Not a scientist (P30). primary_system CHRIST at 0.5 (alt BELOW_THRESHOLD); A 1 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (readings 1 and 3 named); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1964–1994 (0.5). Not plotted. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["lawyer", "ANC leader", "political prisoner", "president of South Africa (1994–1999)"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life and work'"}, {source: S2, locator: "¶1–3"}], how_known: "Britannica and the Nobel biography."}
 
 contribution:
+  primary_domain: politics_statecraft
   fields: {value: ["politics", "law", "anti-apartheid movement"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Speech from the dock at the Rivonia Trial (published as I Am Prepared to Die)", year: 1964, kind: work, lasting: "'a classic defense of liberty and defiance of tyranny'; 'garnered international attention and acclaim' (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Underground activity and the Rivonia Trial'"}, {source: S2, locator: "¶2"}], how_known: "Britannica; the Nobel biography notes its 'considerable international publicity'. Year from S1 ('published later that year', the trial ending June 1964). Whether a speech counts as a lasting original contribution is the coder's call (0.5)."}

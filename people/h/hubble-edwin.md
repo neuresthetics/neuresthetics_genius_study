@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to astronomy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["astronomer", "observatory staff astronomer"], certainty: 0.7, cites: [{source: S1, locator: "opening; Mount Wilson paragraphs"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: astronomy
   fields: {value: ["extragalactic astronomy", "observational cosmology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Distance to the Andromeda Nebula from its Cepheid variables, showing that spiral nebulae are galaxies beyond the Milky Way", year: "1923–1924", kind: discovery, lasting: "convinced most astronomers that the universe contains many galaxies", certainty: 0.7, cites: [{source: S1, locator: "'In 1923 Hubble found Cepheid variable stars' paragraph; summary box ('In 1923-24')"}], how_known: "Britannica article and its summary."}

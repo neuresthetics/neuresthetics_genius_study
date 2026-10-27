@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1 queue #191)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 203). Source: Britannica, signed by George Duncan Painter (scholars edition, read in full). Lasting work: À la recherche du temps perdu (1913–27); 'The entire climate of the 20th-century novel was affected' by it (S1). First volume November 1913; the last three volumes are posthumous, so the span ends at his death, 1922 (posthumous rule; P29 never past death). Span 1913–1922, age 42. Worldview: no own words on belief read; S1 reads the novel as 'set in the context of human religious experience', its subject 'salvation' (a critic's reading of fiction, not a profession). Catholic father, Jewish mother (S1). primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #191/228, F3 rank 203). Goals: letters/essays own words if any; keep silence if none; do not force plot. Dual bio Wikipedia EN (S3, P50): baptized 5 Aug 1871 Saint-Louis-d'Antin, confirmed, never formally practised; White 'mystical atheist' is biographer label only. Opened de Vendeuvre RHLF 2008 (S4) and Mimouni 2024 (S6) quoting Kolb Corr. XIV p. 218 letter to Lionel Hauser, early Sept 1915 (in-span): 'si je n'ai pas la Foi, comme tu dis, en revanche la préoccupation religieuse n'est jamais absente un jour de ma vie' and refusal to affirm beyond what one believes. Opened Topping ch. 'Religion' in Watt (ed.) Marcel Proust in Context (S5): 1908 letter to Mme Straus denying belief in Heaven (Corr. viii, 278; pre-span, P31); 1906 Lauris consolation-in-prayer line addressee-inflected. Montesquiou May 1896 Catholic-like-father line is heritage identity, not adult creed. Guermantes Way 'highest praise of God… atheist' is novel narrator (P42 unused). L'Irréligion d'État 1892 is political anti-fanaticism, not personal creed. Kolb print volumes unread (secondary quotations only). primary_system UNKNOWN→BELOW_THRESHOLD (leads AGNOS/ATHE/SECHUM; P19). A UNKNOWN→BELOW_THRESHOLD (no Faith ≠ God locus/denial; Joyce pattern). B stays UNKNOWN (not a scientist; P16/P30). mid_basin UNKNOWN. Not plotted. Chart-moving NO. P47 on S1–S6. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["novelist", "essayist", "critic", "translator"], certainty: 0.7, cites: [{source: S1, locator: "opening; Works"}, {source: S3, locator: "lead / Occupations"}], how_known: "Britannica + Wikipedia; translated Ruskin."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["literature"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "lead"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "À la recherche du temps perdu (In Search of Lost Time)", year: 1913, kind: "work", lasting: "'The entire climate of the 20th-century novel was affected by À la recherche du temps perdu, which is one of the supreme achievements of modern fiction' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Works; Legacy"}, {source: S3, locator: "Notable work"}], how_known: "Britannica: volumes 1913–27; the last three posthumous."}

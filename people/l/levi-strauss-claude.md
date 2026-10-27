@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to anthropology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 157). Basics and own words from the INA 'Archives du XXe siècle' interview with Jean-José Marchand (filmed 1972; INA biography and bibliography on the same pages), chapter 2 '...et l'indifférence religieuse': 'jamais dans toute mon enfance, aucun problème, aucune inquiétude religieuse, ne s'est posé à moi'; 'jamais, à aucun moment, enfin, il n'y a jamais eu pour moi aucun problème religieux'. The 1988 Eribon lines ('sourd aux réponses religieuses'; 'un rapport avec un Dieu personnel, jamais') were seen only as second-hand quotations (V3), so leads only. Not a scientist (social science; Sen precedent). Span 1949–1971. primary_system BELOW_THRESHOLD (leads AGNOS, ATHE); A BELOW_THRESHOLD; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #151, F 3, rank 157). Re-opened INA Marchand 1972 ch. 2 primary. In-span own-voice: Time 'Theology: Toward a Hidden God' (8 Apr 1966) quoted words via CNN AllPolitics 1996 Notebook reprint (S4) — 'Personally, I've never been confronted with the question of God'; 'perfectly possible to spend my life knowing that we will never explain the universe'; Time's 'politely indifferent atheist' is journalist label, not self-ID. Tristes Tropiques (1955) three-religions / Islam chapters read as attributed excerpts (S7): comparative cultural critique, not a personal creed (P42-analogue for ethnographic essay). Eribon De près et de loin (1988) still no free full text (Cairn paywall; IA absent; Google Books no preview) — p.14 'sourd aux réponses religieuses' / 'sens du mystère' and 'Dieu personnel, jamais' remain V3 second-hand (S5 blog cites Odile Jacob p.14; S6 France Catholique paraphrase with quotation marks); after-span P20 leads only. Wikipedia EN + Académie française + NYT obit dual bio (S3/S8/S9; P50): birth 28 Nov 1908 Brussels; death 30 Oct 2009 Paris. Britannica 403. P47 source_quality on S1–S9. primary/A BELOW_THRESHOLD (leads AGNOS, ATHE); B UNKNOWN (not scientist, Sen/P30); mid UNKNOWN. Chart-moving NO. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["anthropologist", "ethnologist", "professor (EPHE; Collège de France)"], certainty: 1.0, cites: [{source: S1, locator: "Biographie"}, {source: S3, locator: "lead"}], how_known: "INA and Wikipedia."}
 
 contribution:
+  primary_domain: anthropology
   fields: {value: ["social anthropology", "structuralism", "mythology"], certainty: 0.7, cites: [{source: S1, locator: "Biographie"}, {source: S3, locator: "lead"}], how_known: "INA; Wikipedia."}
   lasting_original_contributions:
     - {value: "Les Structures élémentaires de la parenté", year: 1949, kind: work, lasting: "his work 'est au fondement du courant de pensée dit structuraliste' (S1); Wikipedia: key kinship/structural anthropology work", certainty: 0.7, cites: [{source: S1, locator: "Biographie; Bibliographie"}, {source: S3, locator: "Career"}], how_known: "INA and Wikipedia."}
