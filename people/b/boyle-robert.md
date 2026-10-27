@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Protestant (Church of Ireland / Anglo-Irish) @0.7 from new Wikipedia S6 + Britannica. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #201/228, F 3, rank 214). Goal: corroborate A (was dark hollow — A 0@0.7 single S3 only; B already corroborated). Re-read Free Enquiry S3 p.158 A warrant; added Christian Virtuoso S4 corroboration: World 'framed by an Author supremely Powerful, Wise, and Good' (p. 14); 'Supreme Lord and Governor of the World' / 'supremely perfect Author' (p. 33); 'Formation of the World out of the Universal Matter' by 'an Incorporeal Substance' giving Motion to a Body (p. 28). SEP §3.4/§5.2 (S2) also notes God as Author distinct from created machine. A cites S3+S4 → support single→corroborated; value/certainty hold A 0 @0.7 (alt 1 named, cites only S3 subset). B 3 @0.7 corroborated unchanged; mid_basin true @0.7 (P4) unchanged; primary CHRIST @0.7 unchanged. Chart-moving YES for fill cue only: dark hollow → dark filled when figures next refresh (values unchanged). P47 source_quality on S1–S5. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Principe) and the Stanford Encyclopedia of Philosophy (MacIntosh and Anstey). Worldview from his own A Free Enquiry into the Vulgarly Receiv'd Notion of Nature (1686) and The Christian Virtuoso (1690), read in the Text Creation Partnership transcriptions of the EEBO page images. primary_system CHRIST at 0.7 (CLTHEI named alternative; CLASS_THEISM rejected). A 0, B 3, C 0, D 2, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["natural philosopher", "chemist", "theological writer"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1 Life"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["chemistry", "pneumatics", "experimental philosophy", "natural theology"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Air-pump experiments with Robert Hooke on air pressure and the vacuum (air's role in combustion, respiration and sound)", year: "1659–1660", kind: discovery, lasting: "founding work of experimental pneumatics", certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}

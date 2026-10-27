@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #136, F3 rank 140). Opened Chronology of Ancient Nations (Sachau 1879 Eng., S6 archive.org PDF/OCR): Creator 'high above' anthropomorphic essence/qualities (p. 23); 'all-wise and almighty Creator' who created mountains (pp. 252–253); Jesus 'in His earthly life subject to the laws of nature' (p. 290); nature preserves genera/species, irregularities show Creator designed deviations from the 'general tenor of things' (p. 295). A_locus 0 0.5→0.7 (written_profession; support corroborated India+Chronology); B_cause 3 0.5→0.7 (same; alt 4 held — Creator-designed deviations + miracle-as-departure block exceptionless B 4); mid_basin BELOW→true @0.7. Chart-moving YES (faded→dark; hollow→filled). P47 source_quality on S1–S7; P50 Wikipedia EN (S7) dual bio (birth agrees; death still disputed). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-11: the Great Bear 'laws of nature' sentence is on Sachau vol. I p. 352 (was 353) everywhere. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 140). Basics from Britannica (George Saliba, signed) and Encyclopaedia Iranica (Bosworth, 'Life'; de Blois, 'History of Religions'). Own voice read in Sachau's translation of the India (1910, archive.org scan): 'We Muslims ... considering all men as equal, except in piety' (I, p. 100); the Koran's sentences 'perfectly clear' and revealed (I, pp. 263–264); a Hindu theory rejected because the Great Bear would 'form an exception to the laws of nature' (I, p. 353); the rare thing becomes 'something like a miracle, which is no longer in accordance with the ordinary laws of nature' (I, p. 179). A scientist (P30: Masʿudic Canon, coordinates of places); his astrology is taught but personally discounted (S1), so it does not cut the inference (contrast al-Khwarizmi). Span 1000–1030 (first year at 0.5). primary_system ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["astronomer", "mathematician", "geographer", "historian", "court astrologer"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'i. Life' ('famed as court astrologer')"}], how_known: "Britannica and Iranica."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["astronomy", "mathematics", "mathematical geography", "chronology", "ethnography of India", "mineralogy", "pharmacology"], certainty: 0.7, cites: [{source: S1, locator: "'Works'"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Chronology of Ancient Nations (al-Āṯār al-bāqiya)", year: 1000, kind: work, lasting: "with the India, 'the best premodern description of the cultures al-Bīrūnī came to know'; the most elaborate medieval treatment of the Jewish calendar (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Works'"}, {source: S2, locator: "'i. Life'"}], how_known: "Britannica (lasting); Iranica (date, 'probably in about 390/1000')."}

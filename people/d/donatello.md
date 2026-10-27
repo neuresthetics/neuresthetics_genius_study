@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit notes: 1453 kept (installation; RQ-Z7-N1 now codifies unveiling or installation as the P30 #1 event for artworks). S3 note corrected: the Gattamelata article text was read."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-40 FAIL, not result-changing): Gattamelata's lasting status and the span end re-cited from the question box (P26) to Britannica's 'Gattamelata' topic article (S3): 'established a prototype for equestrian monuments in the West'. Year 1453 kept as the public installation (P30 #1), completion 1447–1450 noted. Span 1415–1453, age 29 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 160). Source: Britannica (H. W. Janson, signed; opening and 'Early career' read). No own words on religion read; religious commissions are work, not profession (P16). Not a scientist. Span 1415–1453 (St. Mark and St. George, c. 1415; Gattamelata 1447–53). primary_system UNKNOWN (lead CHRIST); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["sculptor"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["sculpture"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "St. Mark and St. George, Orsanmichele", year: 1415, kind: work, lasting: "'for the first time since Classical antiquity ... the human body is rendered as a self-activating functional organism' (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Early career'"}, {source: S4, locator: "Early career"}], how_known: "Britannica; Wikipedia dual; c. 1415."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.4"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #6). P47 source_quality on every source. Split bundled S3 (sacred-texts Ideas and Opinions transcription) into three independent primaries: S3 Religion and Science (NYT Magazine 1930), S8 Science and Religion II (Symposium 1941), S9 Science and Religion I (Princeton Theological Seminary 1939). Wording verified against Ideas and Opinions (Crown 1954) teaching PDF of book pages (Pitt Norton). B_cause cites S3+S8 → support single → corroborated; A stays corroborated (S4+S8+S5); C S3+S4 corroborated; D S9+S8 corroborated (was single under one id); E S3+S8 corroborated. Axis values/certainties unchanged (third-person / named-alt ceilings). self_described_science_religion_relation §7 unofficial-web cap lifted after scholarly-edition check (certainty 0.7 → 1.0). Chart: dark hollow → dark filled (B corroboration). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Kaku) and MacTutor. Worldview from the 1929 cable to Rabbi Goldstein (JTA print), the 1930 essay 'Religion and Science' and the 1939/1941 'Science and Religion' (Ideas and Opinions transcription), and SEP 'Pantheism' §12. Coded PANT at 0.7 (AGNOS and ATHE named). A 4 (0.7), B 4 (1.0), C 4 (0.7), D 3 (0.7), E 4 (1.0). mid_basin false. Lane B and minor fields partly TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145): D_authority 3 → 2 (both runs, finding #5): the 1939 address puts the highest ends under revelation and tradition and the 1941 paper limits science to what is, which is two domains under two authorities (§3 same pattern, as Planck and Galileo); named alternative 3. B_cause and E_scope certainty 1.0 → 0.7: the key sentences are in the third person, the reason C was already 0.7 (pattern check). Trailing and leading cuts marked with [...] (findings #16, #18; same fix to two more statements). Two statements added (1939 revelation sentence; 1941 'science can only ascertain what is'). mid_basin unchanged (false at 0.7). Not reviewed."}
@@ -65,6 +66,7 @@ basics:
   occupations: {value: [physicist, "patent examiner", "university professor"], certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "opening paragraph"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["theoretical physics", "relativity", "quantum theory", "statistical mechanics"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Light quanta and the explanation of the photoelectric effect", year: "1905", kind: theory, lasting: "Nobel Prize for Physics 1921 (S1)", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}

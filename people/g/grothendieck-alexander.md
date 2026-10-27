@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #140): primary-checked La Clef des songes (Carmona PDF, §§30–31) and Récoltes et Semailles (footnote 302 on creative intelligence / atheist-to-deist). Two own-voice documents → basis consistent_private_letters; DEISM, A 1, B 3 lifted 0.5→0.7 (retrospective self-report cap P20/P29; contested-alt ceiling 0.7). B stays 3 (CODING_GUIDE: lawfulness + stated limited past exceptions = evolutionary sauts; alt 4 kept; sauts-as-B-2 tug logged in coder_notes, not scored as alt). mid_basin BELOW→true @0.7 (A≤1 and B≥3 both @0.7; alt 4 also B≥3, P30 #10). P47 source_quality; P48 support corroborated; P50 Wikipedia EN (birth agrees; death place Saint-Girons vs Saint-Lizier noted). Chart-moving YES (faded→dark eligible). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-03 note, Z5-04 WEAKEN): coder_notes now say Scharlau backs only the lawfulness half of B, and add his 'spiritual desert for decades' line (ch. 24). No value changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/), v8's call on the auditor's advice: Z4-05 (FAIL, RQ-Z4-N1): La Clef des songes is a single unpublished document, so under CODING_GUIDE §3 0.5 needs a scholar's backing. Scharlau (Who Is Alexander Grothendieck? Part 3, ch. 24 and ch. 26 note 3) backs the creative-intelligence reading ('Before the eighties, he spoke more of a creative intelligence or creative power than of a personal God'); added as S4, basis of primary_system, A and B now scholarly_reconstruction; values and 0.5 kept. Still plotted."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: ["mathematician", "researcher (CNRS; IHES)", "professor (Montpellier)"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["algebraic geometry", "functional analysis", "homological algebra", "category theory"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
   lasting_original_contributions:
     - {value: "Topological tensor products and nuclear spaces (thesis)", year: 1953, kind: theory, lasting: "first in the list of his best-known contributions quoted by MacTutor", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}

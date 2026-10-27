@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: span 1973 (INWG Note 39, Sussex, September 1973; S3, S4), age 30; 1974 as the alternative."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 222). Source: Britannica scholars edition, signed by Michael Aaron Dennis (read in full). Lasting: the ARPA Internet design and TCP/IP with Robert Kahn; he 'is considered one of the founders, along with Robert Kahn, of the Internet' (S1). Dated by the earliest public statement (P30): 'HOST and PROCESS Level Protocols for Internetwork Communication', INWG Note 39 (NIC 18764), September 1973, presented at the INWG meeting at the University of Sussex (S3, S4); alternative 1974 (IEEE Transactions on Communications, May 1974). Span 1973, age 30. Not a scientist (McCarthy precedent, RQ-AA3-1; P33: protocol design is engineering). Worldview UNKNOWN. Living. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #209/228, F 3, rank 222): any firm A and B; do not force plot. Read Senate written testimony 17 Jul 2014 / SciAm republication (S5); FCC FIRSTS podcast transcript Apr 2024 (S6); Commonweal Spadaro interview (S7); Wikipedia EN (S8); Gizmodo 2013 interview (context). B UNKNOWN→3 @0.5 written_profession, support single, alt 4 (P16 Hilbert addendum for non-scientist nature-order remark; engineer not P35). A stays UNKNOWN: Moscow 2010 'Do you believe in God?' answered 'I'm geek orthodox' (= technology is our friend; S6) — witty deflection, not ATHE/AGNOS/locus. primary UNKNOWN (Geek Orthodoxy not a code). Mid UNKNOWN. Not plotted. P47 on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["computer scientist", "engineer", "executive"], certainty: 0.7, cites: [{source: S1, locator: "opening; para. 5"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["computer science", "networking"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Internet architecture and the TCP/IP protocols (with Robert Kahn)", year: 1973, kind: "invention", lasting: "'considered one of the founders, along with Robert Kahn, of the Internet' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; para. 4"}, {source: S3, locator: "title page"}], how_known: "INWG Note 39, September 1973 (S3); joint paper 1974 (S1, alternative); TCP/IP produced later at DARPA IPTO (from 1976) (S1)."}

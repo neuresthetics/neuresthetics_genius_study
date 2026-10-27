@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #147, F 3, rank 153). Needs: A UNKNOWN; B UNKNOWN; thin sources; hunt trial/Order docs. Read 1603 Baglione libel deposition (Italian via Sgarbi/Filodiritto S5; Friedländer p.276 via Jasiński 2022 S6; EN Prestel S7) — valent'huomo / 'imitar bene le cose naturali' = pictorial mimesis only, no religion. Prestel: almost no own-voice writings beyond that deposition. Order of St John: Bulla Receptionis / Knight of Obedience 14 July 1608, expelled Dec 1608 as foul and rotten member (S4, S8) — nominal affiliation / status-pardon path, not scored CHRIST profession (P16 commissions ≠ belief; standard Order vows not own creed statement). Dual bio Wikipedia EN (S4) + retained Britannica Graham-Dixon (S1; live Cloudflare-blocked this pass). Baptism Santo Stefano in Brolo, Milan (S4). primary_system UNKNOWN (CHRIST lead only); A UNKNOWN; B UNKNOWN (P16); C–E UNKNOWN; mid_basin UNKNOWN. P47 on S1–S8. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): S3 page was read; author Keith Christiansen (October 2003). Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (RQ-Z7-N1, v8's call on the auditor's advice: artworks are dated by public unveiling or installation, P30 #1, as publication is for texts). The Contarelli canvases were unveiled in 1600 (Met Heilbrunn essay, S3: 'were unveiled in 1600, and established his reputation'), so the item year, first-lasting year and span are 1600; age 28 -> 29; era '1400 to 1599' -> '1600 to 1749' (edge year goes to the later bucket)."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["painter"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Dual-sourced."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Dual-sourced."}
   lasting_original_contributions:
     - {value: "The Calling of St. Matthew and The Martyrdom of St. Matthew, Contarelli Chapel, San Luigi dei Francesi", year: 1600, kind: work, lasting: "'instantly established Caravaggio as the most dynamic and original painter working in Rome' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "'Rome: 1599–1606' (body)"}, {source: S3, locator: "para. 2"}], how_known: "Signed body text (P13). Dated by unveiling, 1600 (S3; RQ-Z7-N1, P30 #1); contract 23 July 1599 (body)."}

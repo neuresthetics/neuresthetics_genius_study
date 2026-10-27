@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA5; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #185, F3 rank 197). Opened own-voice autobiographies: Reaching for the Moon ch.1 via Simon & Schuster publisher excerpt (S5) — 'There was only one God... We let God be the judge of that'; georgia preach sermon quotation of RFTM (S6, secondary) — 'God gives us no guarantees that our road will be easy'; My Remarkable Journey via Bookey quote page (S7, secondary) — 'my foundation—my faith, my family, and my friends'; Oprah Daily / LitHub MRJ excerpts (S8–S9); AARP 2018 interview (S10); Blount funeral eulogy PDF (S3 full text). A_locus UNKNOWN → 0 @0.5 written_profession (support single on S5; S6 secondary corroborates providence language). primary_system stays BELOW_THRESHOLD CHRIST lead (Y2 not met: no 'I am a Christian/Presbyterian' or Christ/creed profession in published own words; Blount Jesus/resurrection report is pastor paraphrase of conversation — reported speech). B stays UNKNOWN (RQ-AA5-1 not a scientist; no nature-law statement). mid stays UNKNOWN. Childhood Methodist (St. James) and parents Joshua/Joylette Coleman filled from S5. major_work_period stays UNKNOWN (P13/Lamarr). Still not plotted. P47 on S1–S10. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): first-lasting year, span, working years, age and era set to UNKNOWN (P13, Lamarr precedent), with 1960 and 1962 as candidates; church roles not in S2 (choir, church officer, ruling elder) dropped. RQ-AA5-1 and RQ-AA5-2 recorded as coded."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 197). Sources: NASA biography by Margot Lee Shetterly (2016, read in full) and Presbyterian Church (U.S.A.) news (2017, read in full); Blount's statement (Union Presbyterian Seminary, 2020) seen as a search excerpt only. Lasting work: the orbital-flight equations of 'Determination of Azimuth Angle at Burnout for Placing a Satellite Over a Selected Earth Position' (1960, with Ted Skopinski), and the 1962 hand verification of John Glenn's orbital trajectory, 'the work that she would become most known for' (S1). No source calls a result lasting ('pioneering legacy', S1), so first-lasting year, span, age and era are UNKNOWN (P13, Lamarr precedent; AA5 audit), with 1960 and 1962 as candidates. Not a scientist: trajectory computation applies known laws rather than stating a new result about nature (P30, by analogy with P33); ruling question RQ-AA5-1. Worldview: decades of church leadership ('several leadership roles including ... its finance chair', S2) and her pastor's report of 'deep' Christian faith, but no profession of her own read, so BELOW_THRESHOLD with lead CHRIST (Toni Morrison precedent, RQ-Y2); ruling question RQ-AA5-2. A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["mathematician", "aerospace technologist"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S2, locator: "text"}], how_known: "NASA; PC(USA)."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["orbital mechanics", "spaceflight trajectory analysis"], certainty: 0.7, cites: [{source: S1, locator: "para. 3–5"}], how_known: "NASA."}
   lasting_original_contributions:
     - {value: "Equations for placing a satellite over a selected Earth position (report with Ted Skopinski)", year: 1960, kind: "method", lasting: "'equations describing an orbital spaceflight in which the landing position of the spacecraft is specified' (S1); no source calls them lasting; her 'pioneering legacy' (S1)", certainty: 0.5, cites: [{source: S1, locator: "para. 4"}], how_known: "NASA biography."}

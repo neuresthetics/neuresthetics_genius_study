@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #179, F 3, rank 190). Hunt: in-span A corroboration; B only if P16 nature-order. No 1955–1960 religion/nature own words found. Post-span own-voice atheist line corroborated across independent pages (all still P20-capped at 0.5): Usenet saying 1992 (S5); Bush-vote essay Dec 2004 'I am an atheist' (S6); commentary Wed Mar 7 2007 'By the way I'm an atheist' + werewolf criterion (S6; Wikipedia's '2003' date is wrong — Henig NYT piece is Mar 2007); personal.html Dawkins 'come out' text present by Jan 2007 Wayback, absent Apr 2003–2006 captures (S3); Scientific Forms of the Religious Hypothesis 6 Apr 2008 'atheist rather than an agnostic' (S7). Memorial Church atheist speech remains undated secondary (S8 Wikipedia). Dual bio P50 Nilsson+Wikipedia. P47 source_quality on S1–S8. A support single→corroborated; A stays 4 @0.5 (P20); primary ATHE @0.5 alt AGNOS unchanged; B stays UNKNOWN (not scientist as listed P30/P33; RQ-AA3-1 open; no in-span P16; post-span 'I'm a Darwinian' / no-evidence-for-intervention is not scored as B). mid BELOW_THRESHOLD unchanged; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 190). Sources: Nils Nilsson's National Academy of Sciences Biographical Memoir (2012, read in full) and Stanford Computer Science's memorial notice. Lasting work: the term and field 'artificial intelligence', named in the Dartmouth proposal 'submitted to the Rockefeller Foundation in August 1955' (formal submission, P30 #1), and LISP, 'the language of choice for AI research', whose 1960 paper 'established the theoretical foundations'; span 1955–1960, age 28. Own words: his Stanford home page, 'I mention that I am indeed an atheist ... the evidence on the god question is in about the same state as the evidence on the werewolf question' (also quoted by Nilsson). Undated; the reference to Dawkins's 'come out' campaign places it decades after the span, so P20 caps it at 0.5. primary_system ATHE 0.5 (written_profession), alt AGNOS (he disclaims proof); A 4 at 0.5, alt BELOW_THRESHOLD; not a scientist as listed (P30, P33: a term, a programming language and logic-based AI are not testable claims about nature), B UNKNOWN, and scientist status is ruling question RQ-AA3-1 (not result-changing unless B is scored); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10). Not plotted. Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["computer scientist", "mathematician"], certainty: 0.7, cites: [{source: S2, locator: "para. 1, 3"}, {source: S8, locator: "lead"}], how_known: "Stanford + Wikipedia."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["artificial intelligence", "computer science"], certainty: 0.7, cites: [{source: S2, locator: "para. 1"}, {source: S8, locator: "lead"}], how_known: "Stanford + Wikipedia."}
   lasting_original_contributions:
     - {value: "The name and research programme 'artificial intelligence' (Dartmouth proposal)", year: 1955, kind: "concept or term", lasting: "'one of the founders of artificial intelligence (AI), coining that name in 1955' (S2); the proposal's definition and the field 'to which McCarthy devoted his scientific career' (S1)", certainty: 0.7, cites: [{source: S1, locator: "p. 5"}, {source: S2, locator: "para. 1"}, {source: S8, locator: "Contributions"}], how_known: "Nilsson; Stanford; Wikipedia; submitted August 1955."}

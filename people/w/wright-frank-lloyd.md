@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #160, F3 rank 168). Hunt: An Autobiography read in Faber & Faber London 1945 OCR (S5; archive scan OCR only; Book Two Fellowship: Wasn't nature in this sense the very nature of God?); US 1932 Longmans not separately collated — sentence sits in the four-book Fellowship narrative shared with the 1932 structure; no changes_over_life documented (P31). Wallace 1957 (S2) kept as corroboration. Taliesin Fellowship talk 1956 body of God (secondary via Hierotopy thesis) named as PANENT lead only, not scored. Grasping the laws of nature / Her equilibrium ... is probably God / book of creation in S5 are organic-architecture / Code talk, not P16 cause-order — B stays UNKNOWN. primary_system PANT 0.5→0.7 (written_profession; alt PANENT); A 4 0.5→0.7 support corroborated (S5+S2; alt 3 only, BELOW dropped); mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Still not plotted (no B). P47 source_quality on S1–S6; Wikipedia EN S6 (P50 dual-bio). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (WEAKEN; v8's call on the auditor's advice): Fallingwater how_known no longer says 'P12 start 1935'; dated by completion, 1937. Span unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). RQ-Z8-2: a third party's web copy of a transcript is a secondary quotation (V3) unless checked; the lines were checked word for word against the Harry Ransom Center's own transcript in CONTENTdm (HRC_WAL0115), now S2, so PANT 0.5 and A 4 at 0.5 hold (P8, P20 cap). Quote cuts now [...]. Fallingwater item year 1935 -> 1937 (completion), S3 author Alicja Zelazko. Unity Temple 1906 is a start date: item year UNKNOWN. Span 1902–1937 unchanged."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["architect", "writer"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["architecture"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Prairie style (W.W. Willits House, first masterwork)", year: 1902, kind: "method", lasting: "'His “Prairie style” became the basis of 20th-century residential design in the United States' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; The early Chicago years"}], how_known: "Britannica."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C; deepen D1 queue #17)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C; the last uncoded person in the physical-science 1600–1950 pool with F ≥ 3, taken first under P32). Basics from Britannica (editors), the Linda Hall Library and Yu Shi's 2025 paper; dates of the three listed experiments from the APS journal records. No statement by Wu on religion, God or nature was found. primary_system UNKNOWN; B_cause 4 at 0.5 from working science (P24); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #17, F5 rank 17). P47 source_quality on every source. New: S8 NAS Biographical Memoir (Benczer-Koller 2009; Wayback PDF); S9 Wang New Dictionary of Scientific Biography (encyclopedia.com / cpp.edu PDF); S10 Jada Yuan WaPo 2021 granddaughter essay (Wayback). A_locus stays UNKNOWN after NAS, Wang NDSB, WaPo private-universe essay, Britannica, Linda Hall, Shi, and web sweeps: no first-person God/religion statement; granddaughter explicitly wishes she knew more about Wu's private universe. B_cause stays 3 @ 0.5 inference_from_work; support labelled corroborated (S5+S3+S2; P48); alt 4 named (P35). Childhood filled (Zhong-Yi Wu / Funhua Fan; Ming De; Hu Shi). Death day dual-sourced → 1.0. Chiang 2014 English still unread (Chinese IA borrow-only; World Scientific chapter timed out). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
@@ -59,6 +60,7 @@ basics:
   occupations: {value: ["experimental physicist", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening; paragraph 2 (Pupin professor 1957)"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["nuclear physics", "beta decay", "weak interaction", "experimental physics"], certainty: 1.0, cites: [{source: S1, locator: "Subjects of study; opening"}, {source: S2, locator: "beta-decay paragraph"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Wu–Shaknov experiment: precise measurement of the angular correlation of scattered annihilation radiation, confirming the QED prediction that the two photons are polarized at right angles; later recognised as the first controlled production of spatially separated entangled photons", year: "1949", kind: discovery, lasting: "standard test of QED; Bohm and Aharonov (1957) used it as the experimental case of entanglement (S3, §4)", certainty: 1.0, cites: [{source: S4, locator: "APS record (title, received 21 November 1949)"}, {source: S3, locator: "§§2–4"}], how_known: "Primary journal record for the date; Shi for the content and the later reading."}

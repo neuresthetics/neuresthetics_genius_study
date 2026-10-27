@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 111). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from 'My Early Beliefs' (read to the Memoir Club 9 September 1938; published 1949; Collected Writings vol. 10, pp. 433–450), read in an excerpt web copy with CW page numbers. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit notes for batch T (blind audit of 754bb24, run 1): S2 kind 'published work by the subject' -> other (read to a private club in 1938, published only in 1949), matching the statements' kind 'unpublished manuscript'; verified_against 'scholarly edition' -> 'primary transcription' (an unofficial excerpt web copy, not the printed volume). No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #110 / F4 rank 111). Goals: keep A/B honest; unlikely to plot without clear A and P16 B. Re-opened My Early Beliefs excerpt web copy (S2; CW 10 pp. 433–450 numbers); Internet Archive 1949 Two Memoirs print-disabled this pass (CW 10 print/OCR not checked). Added Wikipedia EN (S5) dual bio (P50); Economic Possibilities for our Grandchildren 1930 (S6, Economics Network text of Nation & Athenæum essays); Treatise on Probability 1921 Uniformity/atomic-law chapters via djmarsay excerpt of Gutenberg-available text (S7) as negative P16 check. P47 source_quality on every source. A stays BELOW_THRESHOLD: Moore ethics as 'religion' ≠ theistic code; no own-voice locus on God's existence or place; secondary atheist/agnostic labels (Wikipedia / biographers) are leads only. B stays UNKNOWN (P16/P30): not a scientist; Treatise Uniformity of Nature / atomic character of natural law is inductive-logic analysis of scientists' assumptions, not a worldview profession of nature's order; Economic Possibilities 'evolved by nature' / 'bounty of nature' / return to 'principles of religion' is economic-ethical rhetoric, not P16 lawfulness. Childhood/heritage: Congregational household (S5); mother Florence Ada Keynes named. Chart: still unplotted. No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["economist", "journalist", "financier", "civil servant (India Office, Treasury)", "fellow of King's College, Cambridge"], certainty: 0.7, cites: [{source: S1, locator: "opening; Background and early career; Later works"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["economics"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Economic Consequences of the Peace: analysis of the Versailles reparations", year: 1919, kind: work, lasting: "'The permanent importance of this polemical essay lies in its economic analysis of the stringent reparations' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Background and early career"}], how_known: "Britannica."}

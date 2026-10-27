@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #199/228, F 3, rank 212). Goals: letters own words if any; keep silence if none; do not force plot. Music/liturgy subject alone does not score A or religion. Read: Tchaikovsky Research Letter 633 (30 Oct/11 Nov 1877 von Meck — reason rejects Orthodox/Christian dogmas; pantheistic future life; still turns to Christ in prayer); Letter 659 (23 Nov/5 Dec 1877 von Meck — poetic church bonds / Liturgy & Vigil as artistic delight; lost dogmas; pantheistic eternity of nature; convinced no eternal life vs instinct for mother); Letter 5046 (26 Sept/8 Oct 1893 to K.R. — rejects God the Judge/Avenger; still 'creator and source of all blessings'; dreams of Gospel 'Come unto me'). Wikipedia EN bio (P50 dual bio; Cyrillic native name) + Religious views page (secondary; scholars disagree Sizko vs Zakharova — not used to force a code). P47 source_quality on S1–S7. primary_system UNKNOWN → BELOW_THRESHOLD (leads CHRIST, PANT; no listed code fits; Liturgy Op.41 / Vigil Op.52 are works not profession). A UNKNOWN → BELOW_THRESHOLD (mixed A 0–1 Christ-prayer/creator vs A 4 pantheistic nature; neither ≥0.5). B stays UNKNOWN (not a scientist, P30; pantheistic eternity remark is afterlife/locus, not P16 nature-law). C/D BELOW_THRESHOLD leads only; E UNKNOWN; mid BELOW. first_evidence 1877. Chart-moving NO (still unplotted). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: premiere days labelled Old Style (4 March 1877 and 28 October 1893 New Style); 1880 revision of Romeo and Juliet noted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 212). Source: Britannica, signed by Alexander Poznansky (scholars edition, read in full). Lasting work: Romeo and Juliet (completed 1869; first performed 1870), 'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire'; his ballets, beginning with Swan Lake (premiere 20 February 1877 Old Style, 4 March New Style), with which 'he revolutionized the genre'; and the Symphony No. 6 (Pathétique; premiere 16 October 1893 Old Style, 28 October New Style), 'his most celebrated masterpiece' (S1). Dated by first performance (RQ-Z7-N1 analogue); S1's day dates are Old Style (Russian calendar); years are unaffected (P12). Romeo and Juliet's repertoire version is the 1880 revision; the 1870 premiere is still the first public statement of the work. Span 1870–1893, age 30. Worldview: S1 says the von Meck correspondence discussed 'religious faith', but no own words on belief are quoted. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["composer", "conductor", "teacher"], certainty: 0.7, cites: [{source: S1, locator: "Middle years; Final years"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["music"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Romeo and Juliet (fantasy overture)", year: 1870, kind: "work", lasting: "'the first of Tchaikovsky's compositions eventually to enter the standard international classical repertoire' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Middle years"}], how_known: "Completed 1869; first performed 1870 (S1; 4/16 March 1870, Old/New Style). The version in the repertoire is the 1880 revision."}

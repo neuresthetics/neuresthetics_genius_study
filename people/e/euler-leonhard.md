@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and page images"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 18c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #112 / F4 rank 113). Goals: corroborate A and B (hollow→filled); resolve B alt if stronger evidence. Read Rettung der Göttlichen Offenbahrung (1747) in French 1805 Défense de la révélation (IA dfensedelarv00eule; S5) with English E092trans (Euler Archive via Wayback) for navigation — independent of the Lettres. Dual bio: Britannica (S1) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S6. A stays 0 @0.7 support single→corroborated (S3 Lettres + S5 Rettung: monde ouvrage de sa toute-puissance; opération immédiate de Dieu; résurrection miracle de Dieu seul). B stays 3 @0.7 alt 2 support single→corroborated (S3 + S5: lois du mouvement; miracle as exceptional change to the world-state; P27 T1 free-will / conceded present-tense miracles keep value 3 and alt 2 — Rettung does not force flip to 2). D 1 @0.7 alt 2 support single→corroborated (S3 + S5 revelation over freethinker objections). E stays 2 @0.7 alt 3 support single. primary CHRIST @0.7 unchanged (Rettung defends Christian revelation / résurrection). first_evidence_of_lio_type_views 1768→1747 (Rettung). mid_basin true @0.7 unchanged. Chart-moving YES: hollow→filled; already dark. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 113). Basics from Britannica (Boyer) and MacTutor (O'Connor and Robertson). Worldview from Lettres à une princesse d'Allemagne (St Petersburg 1768–72), vol. 2, Lettres LXXXVII, LXXXVIII and XC, read in the page images of the 1775 reprint (vol. 2, Internet Archive) and compared with Hunter's English translation (1795). Scientist (P30: Mechanica, fluid equations). primary_system CHRIST (0.7, alt CLTHEI); A 0 (0.7); B 3 (0.7, alt 2; P27 free-spirits anchor, miracles conceded); C BELOW_THRESHOLD; D 1 (0.7, alt 2); E 2 (0.7, alt 3); mid_basin true (0.7). Plotted. Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["mathematician", "physicist", "academician (St Petersburg and Berlin academies)"], certainty: 1.0, cites: [{source: S1, locator: "opening; St Petersburg to Berlin"}, {source: S2, locator: "career paragraphs"}], how_known: "Britannica and MacTutor."}
 
 contribution:
+  era_bucket: 18c
   fields: {value: ["mathematical analysis", "number theory", "mechanics", "fluid dynamics", "astronomy"], certainty: 1.0, cites: [{source: S1, locator: "opening; Foundational works"}, {source: S2, locator: "mathematical achievements"}], how_known: "Britannica and MacTutor."}
   lasting_original_contributions:
     - {value: "Solution of the Basel problem: ζ(2) = π²/6, with ζ(4) to ζ(12), and the Euler product for ζ(s) (1737)", year: 1735, kind: discovery, lasting: "'the result that brought Euler the most fame in his young days' (S2)", certainty: 0.7, cites: [{source: S2, locator: "Basel problem paragraph"}], how_known: "MacTutor."}

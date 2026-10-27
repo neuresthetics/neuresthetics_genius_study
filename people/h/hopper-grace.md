@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 33). Basics from Britannica and Yale News. No statement of hers on religion or on the order of nature was found. Not a scientist under P30/P33 (her lasting contributions are a manual and compilers, not theories about natural systems). All worldview fields UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #33, next-50 batch). Needs: A UNKNOWN; B UNKNOWN. Opened Smithsonian Computer Oral History July 1968 (Merzbach; S4) and July 1972 (Luebbert/Tropp; checked for religion terms — none); Computer History Museum 1980 oral history (Pantages; S7); Mitchell 1994 UNT dissertation (S6); Wikipedia EN (S5) citing Williams 2004 for West End Collegiate family church; re-read Britannica and Yale News. P47 source_quality on every source. A stays UNKNOWN (P19): no first-person God/religion statement in S1–S7; family Collegiate Reformed church and Presbyterian girls' schools are heritage/childhood, not A. B stays UNKNOWN (P16/P33): not a scientist (lasting contributions are manual/compilers/FLOW-MATIC — devices and software, not theories about natural systems); no explicit remark on the order of nature. Childhood filled (parents; Graham/Schoonmaker/Hartridge; West End Collegiate marriage 1930). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["mathematician", "naval officer", "computer programmer"], certainty: 0.7, cites: [{source: S1, locator: "opening; third paragraph"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["computer programming", "programming languages"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "A Manual of Operation for the Automatic Sequence Controlled Calculator (Harvard Mark I)", year: 1946, kind: work, lasting: "'the first extensive treatment of how to program a computer' (S1)", certainty: 0.7, cites: [{source: S1, locator: "second paragraph"}], how_known: "Britannica alone."}

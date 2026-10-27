@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #178, F 3, rank 189). Hunt: any documentary religion/nature statements. Read: Wikipedia EN dual bio (S4); Lehmann-Haupt Britannica fuller (S3); Deutsche Biographie NDB Ruppel + authority data katholisch / Franziskanerkirche burial (S5); Mainz city Gutenberg timeline baptism tradition St. Christoph / death 1468-02-03 / Franciscan burial (S6). Surviving record is legal/business (Helmasperger 1455 notarial instrument; Strasbourg suits) — no first-person diaries/letters on God or nature. Helmasperger opens with formulaic 'In Gottes Namen Amen' (notary Ulrich Helmasperger), not Gutenberg's theology (P42). Printing Bible / Cypriot indulgences / Psalter groundwork / later Aquinas Summa attributions = craft/client work, not personal profession (standing rule; P47–P50). Kapr Cusanus liturgical-motivation link is explicit hypothesis, not evidence. Catholicon 1460 colophon God-language not securely Gutenberg's own voice (authorship contested). P47 source_quality on S1–S6. P50 dual bio S1+S4. Heritage filled (late-medieval Latin Catholic Mainz; baptism tradition only). primary_system stays UNKNOWN (CHRIST lead only); A–E UNKNOWN; mid UNKNOWN; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): alternative birth about 1400, age about 55. Signed Britannica article (Lehmann-Haupt) added as S3; only part of it was read and it did not confirm the Bible date in the body, so the span stays 0.5."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 189). Source: Britannica (students edition, read in full). Lasting work: printing with movable metal type, 'one of the world's greatest inventions' whose method 'endured almost unchanged for five centuries'; dated by the Gutenberg Bible, 'completed before or in 1455' (publication, P30 #1), at 0.5 with 1454 (the Türkenkalender, 'printed in 1454') as the alternative. Birth '1395?' and death 'probably ... February 3, 1468', so age about 60 at 0.5; alternative birth about 1400, age about 55 (AA3 audit advice). The signed Britannica article (Lehmann-Haupt, S3) gives 'born 14th century, Mainz' and the Fust judgment of 6 November 1455. An invention, not a theory (P33): not a scientist, B UNKNOWN. No own words: worldview all UNKNOWN (lead CHRIST: printed the Bible; pension from the archbishop of Mainz). Not plotted. Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["metalworker", "goldsmith", "printer", "inventor"], certainty: 0.7, cites: [{source: S1, locator: "para. 1, 3"}, {source: S4, locator: "infobox / Education"}], how_known: "Britannica + Wikipedia EN."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["printing"], certainty: 0.7, cites: [{source: S1, locator: "para. 1"}, {source: S4, locator: "lead"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "Printing with movable metal type (the Gutenberg press; the 42-line Bible)", year: 1455, kind: "invention", lasting: "'his method of using movable metal type endured almost unchanged for five centuries'; 'one of the world's greatest inventions' (S1); Time-Life 'most important of the second millennium' (S4)", certainty: 0.5, cites: [{source: S1, locator: "para. 1–2, 5"}, {source: S4, locator: "lead / Printed books"}], how_known: "Britannica + Wikipedia; dated by Bible completion 'before or in 1455' (0.5)."}

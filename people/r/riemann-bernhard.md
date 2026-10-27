@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Dedekind's 'Bernhard Riemann's Lebenslauf'. Worldview from Riemann's own unpublished philosophical fragments and Dedekind's Lebenslauf, both in the Gesammelte mathematische Werke (2nd ed., 1892; University of Toronto scan on the Internet Archive; pp. 518, 519, 521, 541, 557 and 558 checked on the page images). primary_system BELOW_THRESHOLD (CHRIST and CLTHEI candidates). A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #232: languages_of_work German → German, Latin, Italian (Werke contents XXII, XVI, XXIII and preface). #263: PANPSY reason rewritten: he argues the Erdseele in his own voice (pp. 511–512, 517) but frames it as a hypothesis of exact science (p. 517); still not coded. #260: secondary_system how_known points to that candidate (value unchanged). #259 note: cites CHRIST's use_when instead of a loose batch 3 precedent. pp. 507, 511 and 517 checked on the page images. Left for v8 as a method question: #265 (basis label for B_cause). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. B_cause 4 certainty 0.5 → 0.7 (two unpublished fragments of his own, scholarly edition; private ceiling) (P18); fragment statements kind notebook or diary → unpublished manuscript (P18, P28; the draft had document in own hand, which CODING_GUIDE §7 keeps for forms, prayers and notes that are not manuscript works); Lebenslauf statement checked against 'scholarly edition' (was primary facsimile) (P21); A stays 1 at 0.5 (v8's answer, 2026-10-02); secondary UNKNOWN → BELOW_THRESHOLD (Erdseele), PANPSY stays a candidate (P14); D BELOW_THRESHOLD → UNKNOWN, C and E notes rewritten (P19); first_evidence_of_lio_type_views stays UNKNOWN, the fragments being undated (P27); mid_basin note rewritten; single-source 1.0 fields → 0.7 (P15) (region_of_work, occupations, definition_fit, working_years, Gauss; Lebenslauf-only family_religious_practice, languages_in_childhood, baptism_or_initiation); region_of_birth, sex, childhood_mentors/0 keep 1.0 with a second cite. Not reviewed."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["mathematician", "university professor"], certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor alone, so 0.7 under the single-source rule (P15)."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["complex analysis", "differential geometry", "number theory", "real analysis", "mathematical physics"], certainty: 0.7, cites: [{source: S2, locator: "Summary; Biography"}], how_known: "MacTutor."}
   lasting_original_contributions:
     - {value: "Doctoral thesis on complex functions (Riemann surfaces, Dirichlet principle)", year: "1851", kind: theory, lasting: "foundation of geometric function theory", certainty: 0.7, cites: [{source: S2, locator: "Biography (1851)"}], how_known: "MacTutor."}

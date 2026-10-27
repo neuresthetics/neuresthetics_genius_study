@@ -15,9 +15,10 @@ Checks
   8. data/reference/regions.csv (P3 country-to-region table) uses exactly the schema's region values, with no
      duplicate countries.
   9. Schema version gating (schema 1.3, decisions P18, P21, P24, P28): a 1.2 file may not use 1.3-only values,
-     and a 1.3 file may not use the retired school stages 'religious school' / 'dame or charity school'.
+     and a 1.3 or 1.4 file may not use the retired school stages 'religious school' / 'dame or charity school'.
+     Schema 1.4: contribution.era_bucket on a person file must be an allowlist value, not TODO.
  10. Warning (decision P15): a non-worldview fact at certainty 1.0 that cites only one source and no primary
-     source. Derived fields (era_bucket, age_at_first_lasting_contribution, region_of_birth) are exempt.
+     source. Derived fields (basics.era_bucket, age_at_first_lasting_contribution, region_of_birth) are exempt.
  11. Warning (P30 addendum, rule f): worldview.working_years must equal timing.major_work_period, the one
      authoritative span (dashes and spaces normalised; sentinels skipped).
 
@@ -101,6 +102,8 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
             errors.append(f"collaborators/{'/'.join(p)}: roster_id {rid!r} is not in person_ids.csv")
     e3, w3 = version_checks(data)
     errors += e3; warnings += w3
+    if not is_template and (data.get("contribution") or {}).get("era_bucket") == "TODO":
+        errors.append("contribution/era_bucket: a person file needs an allowlist value, not TODO")
     warnings += span_check(data)
     return errors, warnings, data
 
@@ -145,8 +148,8 @@ def version_checks(data):
             used13.append(f"childhood/schooling/{i}/stage {sc['stage']!r}")
         if "run_by" in sc:
             used13.append(f"childhood/schooling/{i}/run_by")
-        if ver == "1.3" and sc.get("stage") in RETIRED_STAGES:
-            errors.append(f"childhood/schooling/{i}/stage: {sc['stage']!r} is retired in schema 1.3; give the level "
+        if ver in {"1.3", "1.4"} and sc.get("stage") in RETIRED_STAGES:
+            errors.append(f"childhood/schooling/{i}/stage: {sc['stage']!r} is retired in schema 1.3 and 1.4; give the level "
                           "(e.g. 'elementary school') and put who ran it in run_by (P21)")
     for p, c in claims(data):
         if c.get("basis") == "inference_from_work":

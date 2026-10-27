@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 18c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 195). Source: Britannica, signed by Dirk Jan Struik (scholars edition, read in full). Lasting work: the equations that bear his name, first used in his prize essay on the libration of the Moon (1764, French Academy prize), and Mécanique analytique (1788), 'the basis for all later work in this field'; span 1764–1788 by the prize award and publication (P30 #1), age 28. His earlier calculus of variations (praised by Euler) is undated in the source; 0.5 on the first year, alternative earlier. Scientist (P30): analytic and celestial mechanics are results about physical systems; no statement of his own, so B 3 at 0.5, alt 4 (P35). No worldview source: primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #184 / 228, F 3 rank 195). Goals: add sources; firm B; leave A silence if none; do not force plot. Read Mécanique analytique 2nd ed. 1811 (IA OCR mcaniqueanalyt01lagr, S4) for own-voice least-action remark (p. 246); Delambre 1816 Notice (FR Wikisource, S5) for reported reserve about culte and deathbed body-rest remark; Wikipedia EN (S3, P50 dual bio) and HSM/Conifold quotation of Boissonnade & Vagliente translators' bio (S6) for heritage/leads. P47 source_quality on S1–S6. A stays UNKNOWN (P19): Kline 'agnostic', Marechal Dictionnaire des Athées, Napoleon-at-Mass, and Mass-regularly claims are secondary or reported; no first-person locus. primary_system UNKNOWN; AGNOS rejected as code (lead only). B 3 @0.5 inference_from_work → 3 @0.5 written_profession support corroborated (S4+S1): 'je regarde non comme un principe métaphysique, mais comme un résultat simple et général des lois de la Mécanique' (MA p. 246); alt 4 (P16/P35/P40: lawful remark, no no-exception). first_evidence_of_lio_type_views UNKNOWN→1788. mid_basin UNKNOWN. Chart-moving NO (A UNKNOWN). No fallacy_catalog. No figures/. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["mathematician", "professor"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; para. 6"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 18c
   fields: {value: ["analytic mechanics", "celestial mechanics", "number theory", "algebra"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Lagrange's equations (libration of the Moon essay)", year: 1764, kind: "law or principle", lasting: "'the equations that now bear his name' (S1)", certainty: 0.5, cites: [{source: S1, locator: "para. 3"}], how_known: "Britannica; French Academy prize 1764 (0.5, see first-lasting year)."}

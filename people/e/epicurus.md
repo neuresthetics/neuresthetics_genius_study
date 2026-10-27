@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #157, F 3, rank 165). Needs: corroborate A/B to ≥0.7 if justified. A 3 0.5→0.7 written_profession (Menoeceus X.123 + Principal Doctrine I / Sovran Maxims X.139 dual own-voice; Loeb S4 pp. 649, 663). Named alt 4 kept (Obbink atheism / gods-as-images residual; CODING_GUIDE §3 named-alt ceiling 0.7). B stays 3 @0.5 alt 4 (P16 addendum / P40 / P41: lawful atomic order without stated no-exception; swerve later sources = chance). Support corroborated on A (S1+S2+S4) and B (S1+S2+S4). mid_basin BELOW→false @0.7 (A≥3 branch, P10; A and alt 4 both ≥3 so P30 uses condition evidence). P50 Wikipedia dual bio (S5). P47 source_quality on S1–S5. primary EPICUR @1.0; C 4 @1.0; D/E UNKNOWN; span UNKNOWN. Plotted faded (min(A,B)=0.5). Chart-moving NO (B still 0.5). No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fixes: mid_basin false 0.5 -> BELOW_THRESHOLD (P10). Wikisource Hicks checked against the printed Loeb vol. 2 (1925; archive.org livesofeminentph02diog): X.76–77 on p. 607 and X.123 on p. 649 (the auditor's check, re-read), X.124–125 on p. 651 (coder's check); edition cited as S4. The web-copy cap (CODING_GUIDE §7) no longer applies, so primary_system EPICUR 0.7 -> 1.0 and C 4 0.7 -> 1.0 (written_profession ceiling 1.0, no named alternative)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 165; Edwin Hubble, rank 164, already coded). Own words from his three letters preserved in Diogenes Laertius X (Hicks translation, Wikisource transcription) and SEP 'Epicurus' (Konstan). primary_system EPICUR (0.7, Z7 draft; founder, written profession; Wikisource copy not yet checked against a printing). A 3 (0.5, alt 4): 'verily there are gods ... but they are not such as the multitude believe'; gods material and within the cosmos, as the EPICUR system. B 3 (0.5, alt 4): heavenly motions 'without the ministration or command ... of any being who ... enjoys perfect bliss'; invariable recurrence from 'the original ... conglomeration of atoms'; no stated no-exception claim, and the swerve (later sources) is chance (P40). C 4 (0.7): 'death is nothing to us'. D, E UNKNOWN. mid_basin false (0.5; A ≥ 3). Works undated: span UNKNOWN, era '-500 to 499' (as Aristotle). Plotted (A 3, B 3). Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["philosopher", "head of the Garden school"], certainty: 0.7, cites: [{source: S2, locator: "§2"}], how_known: "SEP."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["ethics", "physics (atomism)", "epistemology"], certainty: 0.7, cites: [{source: S2, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Epicurean system (atomist physics, empiricist canon, ethics of tranquillity)", year: UNKNOWN, kind: "body of work", lasting: "the school 'continues for ever without interruption' (DL X.9); system intact in SEP", certainty: 0.7, cites: [{source: S1, locator: "X.9"}, {source: S2, locator: "opening"}], how_known: "DL; SEP; undated."}

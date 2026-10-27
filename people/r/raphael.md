@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 66). Basics from Britannica (Britannica Editors, unsigned; body through the Perugia years) and the School of Athens date from Britannica's Plato article (Meinwald). No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #65, F5 rank 66). Needs: A UNKNOWN; B UNKNOWN. Dual bio Wikipedia EN (S4) + retained Britannica Editors (S1; live Cloudflare-blocked, Wayback Top Questions/facts). Primary letters: IRDS/Shearman 1 Jul 1514 to uncle Simone Ciarla (S5) — 'ringratione Dio del continuo' (conventional thanksgiving for not marrying) and St Peter's as 'primo tempio del mondo' (career/architecture); Wikisource Visconti Letter to Leo X c.1519 (S6; co-draft with Castiglione debated) — antiquities survey, 'patria universale di tutti li cristiani' (civic address to the Pope), not a creed. IRDS/Shearman sonnet draft c.1509–10 (S7) — 'arcana Dei' = Paul's ineffability as Petrarchan love metaphor, not theology. Vasari last rites / Pantheon burial via Wikipedia (S4) = practice report, not own-word A. A stays UNKNOWN (checked items off-point for locus; P19); B stays UNKNOWN (P16 — not a scientist; no nature-causal statement). primary_system UNKNOWN (CHRIST = heritage/milieu lead only; religious commissions ≠ avowed belief). mid_basin UNKNOWN. Working years 1504–1520 @0.7. P47 on S1–S7. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["painter", "architect"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["painting", "architecture"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lede"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "The Marriage of the Virgin", year: 1504, kind: work, lasting: "Britannica 'first major work' (S1); early large altarpiece (S4)", certainty: 0.7, cites: [{source: S1, locator: "'Apprenticeship at Perugia'"}, {source: S4, locator: "Early life — Brera Marriage of the Virgin"}], how_known: "Dual-sourced."}

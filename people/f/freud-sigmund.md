@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #129, F 4, rank 130). P47 source_quality on S1–S9. P50: Wikipedia EN (S9) dual bio agrees birth 1856-05-06 Freiberg / death 1939-09-23 London with Britannica. P48: A_locus support single→corroborated (main cites now S3+S4+S5+S6+S8 so alt BELOW's S5+S4 no longer spoil; Pfister 9 Oct 1918 in-span letter 'completely godless Jew' as S8 scholarly Basic Books 1963 via IA OCR). B_cause support single→corroborated at honest 3 @0.5 (S3 Psychopathology + S4 Future of Illusion ch. III nature pitiless / inward necessity / gods withdraw; no P16 lift — still no exceptionless order; X3/P35 unchanged: not scientist for B). primary ATHE @0.7 held (S8 strengthens). mid false (A≥3); plotted faded→filled (hollow→filled). Prefer SE/print: Pfister letters print edition used; Gutenberg web copies of Brill/Robson-Scott/Riviere kept (SE not reachable this pass). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (FR12) the seven statements relabelled scholarly edition -> primary transcription (Gutenberg web copies of the Brill, Robson-Scott and Riviere translations; not the Strachey Standard Edition); 0.7 cap unchanged. (FR13) S4 imprint corrected from the title page: Horace Liveright and the Institute of Psycho-Analysis, 1928 (International Psycho-Analytical Library No. 15; printed by R. & R. Clark, Edinburgh), not the Gutenberg header's 'Edinburgh: Horace Liverwright'. (Note) 1900 named as the alternative start (title page; IEP). Ruling X3 (v8's call on the auditor's advice): not a scientist for B (recorded under P35). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 130). Basics from Britannica (Martin Evan Jay; Britannica Editors) and IEP (Stephen P. Thornton). Worldview from his own published works in authorized English translations (Project Gutenberg web copies, 0.7 cap): The Psychopathology of Everyday Life (Brill, 1914) and Totem and Taboo (Brill) inside the span; The Future of an Illusion (Robson-Scott, 1928) and Civilization and Its Discontents (Riviere, 1930) after it (P1 cap 0.5). Not a scientist for B (psychoanalysis an interpretive theory of the psyche, P35 addendum, Jung precedent; RQ-X3). primary_system ATHE (0.7); A 4 (0.7, alt BELOW_THRESHOLD); B 3 (0.5, alt 4; P41 extension); C 4 (0.5); D 4 (0.5); E 4 (0.5, alt 3); mid_basin false (A ≥ 3, P10). Span 1899–1923 (0.7). Plotted (faded). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["neurologist", "physician", "founder of psychoanalysis", "lecturer in neuropathology, University of Vienna"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life and training'"}, {source: S2, locator: "§1 Life"}], how_known: "Britannica and IEP."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["psychoanalysis", "psychology", "neurology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Both sources."}
   lasting_original_contributions:
     - {value: "The Interpretation of Dreams: dreams as disguised wish-fulfilment, manifest and latent content; the core of psychoanalytic theory", year: 1899, kind: work, lasting: "'generally regarded as his greatest work' (S2 §1); listed first among his writings (S1)", certainty: 0.7, cites: [{source: S1, locator: "Top Questions"}, {source: S2, locator: "§1 Life; §6"}], how_known: "Britannica and IEP. An interpretive theory of the psyche, not a testable theory of natural systems on IEP's account (S2 §7a), so not a scientist for B (P35 addendum; RQ-X3)."}

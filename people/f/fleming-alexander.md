@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #139): opened Nobel Lecture 'Penicillin' (11 Dec 1945) in primary PDF — chance observation / bacteriologist account; no God, church, faith, or providence. A stays UNKNOWN (V3: Oklahoma God-wanted-penicillin still Maurois second-hand; Christian Heritage 'I thank God' / Kipling-whisper lines remain unverified second-hand). primary_system stays UNKNOWN (CHRIST lead only). B stays 3 @0.5 (P35/P16: Nobel is discovery narrative, not explicit cause-order talk; alt 4 kept; support single→corroborated via S1+S6). mid UNKNOWN; still not plotted. P47 source_quality; P50 Wikipedia EN dual bio (birth/death agree with Britannica). 1929 paper PDF blocked this pass (still bibliographic). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit note: S5 now cites the PMC record (PMCID PMC2048009; the 1929 article has no PMID or DOI in PubMed Central; the 2001 WHO Bulletin reprint is PMID 11545337) instead of a search link. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-42 (FAIL): primary_system and A_locus BELOW_THRESHOLD -> UNKNOWN (V3, as Kurosawa), keeping CHRIST and the Oklahoma story as leads; mid_basin -> UNKNOWN. Z2-44: span re-dated by first publications (P30 #1): 1922 (lysozyme, Proc. R. Soc. B) to 1929 (penicillin, Br. J. Exp. Pathol.), age 41; S4 and S5 added. Maurois citation gives the 1963 Penguin edition scanned. Still not plotted."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["bacteriologist", "physician", "professor of bacteriology (University of London, St Mary's)"], certainty: 0.7, cites: [{source: S1, locator: "opening; text"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["bacteriology", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Lysozyme", year: 1922, kind: discovery, lasting: "an antibacterial enzyme in body fluids (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S4, locator: "Proc. R. Soc. B 93 (1922)"}], how_known: "Discovered November 1921 (S1); first published 1922 (P30 #1)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN after Wikipedia Religion section + Early life re-read (no childhood denomination). Chart-moving NO."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 76). Basics from Britannica (Robert E. Conot), signed body through the Newark years; Top Questions not cited. Worldview from Edward Marshall's interview, 'No Immortality of the Soul', New York Times, 2 October 1910 (transcript on sundaymagazine.org; NYT archive abstract; Edison Papers bibliography). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 (0.5, alt 3; interview, partly the interviewer's paraphrase); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). B_cause 4 -> BELOW_THRESHOLD: the strict wording is Marshall's paraphrase (reported speech cannot score alone, §7) and he is an inventor (P33). If the full NYT p. 15 text gives a line in his own voice, B becomes 3 (0.5, alternative 4) under P41. Timing fields updated."}
@@ -46,6 +47,7 @@ basics:
   languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   occupations: {value: ["inventor", "entrepreneur"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "infobox"}], how_known: "Britannica and Wikipedia."}
 contribution:
+  era_bucket: 19c
   fields: {value: ["electrical engineering", "telegraphy", "sound recording", "electric lighting", "motion pictures"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "Known for"}], how_known: "Dual bio."}
   lasting_original_contributions:
     - {value: "Quadruplex telegraph (four messages on one wire)", year: 1874, kind: invention, lasting: "'one of the larger payments for any invention up to that time' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Newark paragraph"}], how_known: "Britannica; dated by the December 1874 sale (0.5)."}

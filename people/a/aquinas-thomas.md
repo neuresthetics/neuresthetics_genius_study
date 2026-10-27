@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 10
+  schema_version: "1.4"
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #132, F4 rank 135). Polish only: P47 source_quality on S1–S8; P48 support corroborated written on A–E (E cites gained S6 Benziger print already used for I q. 22 / q. 105 statements — no score change); P50 Wikipedia EN (S8) dual bio agrees birth Roccasecca c. 1225 / death Fossanova 1274-03-07 with Britannica. Parents named Landulf of Aquino and Theodora (Galluccio / of Teano) from S8 at 0.7. family_religious_practice filled from S1–S3 (Latin Catholic noble household; Benedictine oblation plan). baptism_or_initiation and childhood_catechism: UNKNOWN (no dated baptism or named catechism in sources). CLASS_THEISM @1.0; A 1 @1.0; B 3 @0.7; mid true @0.7 unchanged — already dark filled; not chart-moving. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from the Summa theologiae (English Dominican translation) and three reference sources. mid_basin UNKNOWN: B_cause scored 2, which the P4 test does not cover. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin changed from UNKNOWN to TODO with a note: the evidence is in, but P4 does not say whether B is scored on his theology or his account of nature (new open item P6). key_early_reading changed from an empty list to UNKNOWN, as the coding guide asks."}
@@ -78,6 +79,7 @@ basics:
     how_known: "Three sources agree."
 
 contribution:
+  era_bucket: medieval
   fields: {value: [philosophy, theology, metaphysics, ethics, "natural law", "philosophy of mind"], certainty: 1.0, cites: [{source: S2, locator: "contents; §8"}, {source: S3, locator: "introduction"}], how_known: "Two reference sources agree."}
   lasting_original_contributions:
     - {value: "The distinction between essence and existence in all created things, with God as the one being whose essence is to exist (On Being and Essence; developed in the Summa)", year: 1252, kind: "concept or term", lasting: "a core doctrine of Thomist metaphysics", certainty: 0.7, cites: [{source: S2, locator: "§4 ('God's perfect simplicity precludes even the composition of essence and existence, which is found in all created substances')"}, {source: S3, locator: "References (De ente et essentia, 1252–1253)"}], how_known: "SEP states the doctrine; the year is IEP's date for the treatise. That the doctrine is original to this treatise is the coder's reading, so 0.7."}

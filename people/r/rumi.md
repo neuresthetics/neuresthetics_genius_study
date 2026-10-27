@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to medieval. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #204/228, F 3, rank 217): score A if a clear reading ≥0.5; leave mixed as BELOW; do not force plot. Re-read Schimmel Britannica (S1); Nicholson Mathnawí Books I–II translation + Book V.590–591 via masnavi.net Nicholson English (S5); Arberry Discourses / Fihi as Marman modernization (S6); Mojaddedi Iranica Teachings (S7); Chittick 'Rumi and wahdat al-wujud' (S8); Wikipedia EN dual bio (S9). primary ISLAM scholarly_reconstruction 0.5 → written_profession 0.7 (Book I Arabic prose preface: roots of Mohammedan Religion; expounder of the Qur'an; blessing on Mohammed; Amen O Lord of all created beings). A UNKNOWN→BELOW_THRESHOLD: A 0–1 pole (Lord of created beings; First and the Last; world = prison / finite vs infinite other) against fana / 'except God… all the rest is gone' and Fihi 'I am not, God is all' (A 2–3+ lead); Schimmel S1: ideas contradict / cannot systematize; Chittick: never uses wahdat al-wujud; Nicholson Ibn Arabi parallels scant; not PANT (no Deus sive Natura; world is prison). B UNKNOWN→BELOW_THRESHOLD: Masnavi I.88 moral-cosmic correspondence under poetry/P42 caution; not a scientist (P30). Mid BELOW. Dual bio P50 (Britannica Balkh vs Wikipedia Wakhsh). P47 source_quality on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: Mas̄navī c.1262 at 0.5 (Mojaddedi: 'started probably around 1262'), earliest possible 1258; S4 labelled unofficial web copy."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fix: Mas̄navī dated c.1258 at 0.5 by the start of its composition range (Iranica S3; Mojaddedi S4), alternative 1262."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["poet", "mystic", "teacher"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Early life"}], how_known: "Britannica: succeeded his father at a madrasah in 1231."}
 
 contribution:
+  era_bucket: medieval
   fields: {value: ["poetry", "Sufism"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Lyric poetry: the Dīvān-e Shams (ghazals, about 30,000 verses) and robāʿīyāt", year: 1247, kind: "body of work", lasting: "'famous for his lyrics'; 'By the end of the 20th century, his popularity had become a global phenomenon, with his poetry achieving a wide circulation in western Europe and the United States' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; The influence of Shams al-Dīn"}], how_known: "Begun after Shams's disappearance in 1247 (S1); composition range start (RQ-Z9-N1); inferred."}
