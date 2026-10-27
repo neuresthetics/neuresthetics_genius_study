@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to medicine. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (Asclepeion is later training, not birth confession; cf. Hippocrates). Chart-moving NO."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 97). Basics from Britannica (Vivian Nutton, signed; body only) and SEP 'Galen' (P. N. Singer, 2021). Worldview from De usu partium XI.14 (written 169–176), in R. Walzer's translation (Galen on Jews and Christians, 1949) as reproduced on Roger Pearse's page, with his remarks on the 'undemonstrated laws' of the followers of Moses and Christ; secondary quotations, primary check pending. Scientist (P30). primary_system PLATO (0.5, alt HELLEN); A 1 (0.5, alt 2); B 3 (0.5, alt 4); D 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit notes applied (gs_08be43b_P run 1: 39 hold, 6 weaken; no Galen weakens). Britannica byline now 'Vivian Nutton and Britannica Editors' (note 6); Pearse's inserted '( καὶ )' restored in the De usu partium XI.14 quotation (note 7). Ruling P2 (v8's pick on the auditor's advice): B stays 3 at 0.5, alternative 4. Values unchanged."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["physician", "anatomist", "philosopher", "writer"], certainty: 0.7, cites: [{source: S1, locator: "opening; anatomy section"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: medicine
   fields: {value: ["anatomy", "physiology", "medicine", "logic"], certainty: 0.7, cites: [{source: S1, locator: "anatomy section"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Demonstration that the arteries carry blood, not air", year: UNKNOWN, kind: discovery, lasting: "'One of his most important demonstrations' (S1)", certainty: 0.7, cites: [{source: S1, locator: "anatomy section"}], how_known: "Britannica; undated. A result about natural systems, so he is a scientist (P30)."}

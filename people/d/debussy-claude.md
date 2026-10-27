@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 18). Basics and works from Britannica (Lockspeiser). Worldview: the 1911 Excelsior interview with Henry Malherbe, read only as quoted in English in Vallas (1933), pp. 224–225 (archive.org scan). Not a scientist. primary_system BELOW_THRESHOLD (PANT fails the two-part test); A, B, D BELOW_THRESHOLD; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #18, F5 rank 18). P47 source_quality on every source. Dual-sourced birth/death (S1+S2) → 1.0. French of Malherbe Excelsior interview corroborated via unofficial web reprint (S4; wording matches Vallas English; Gallica Excelsior still blocked). Added Bizet Comœdia 18 May 1911 line via Lesure Monsieur Croche p. 305 as cited secondhand (S5). Baptism 1864-07-31 and parents filled (S2+S6). A_locus stays BELOW_THRESHOLD: French keeps «près de Dieu» separate from Nature → PANT part 1 still fails; Bizet «pas … catholique ou croyant» rejects practice/belief without locating God. B_cause stays BELOW_THRESHOLD (not a scientist; beauty/spectacle language ≠ law/exception, P16). primary_system stays BELOW_THRESHOLD; AGNOS considered from Bizet, not chosen (no suspension; still speaks of God, prayer, Christian faith in the Martyre mix). Chart: still unplotted. Lockspeiser Life and Mind and Lesure full editions unread. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["composer", "pianist"], certainty: 0.7, cites: [{source: S1, locator: "opening; Early period"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["composition"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Prélude à l'après-midi d'un faune", year: 1894, kind: work, lasting: "a 'seminal force' in 20th-century music (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; Middle period"}], how_known: "Britannica."}

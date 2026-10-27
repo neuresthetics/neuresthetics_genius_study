@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to linguistics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (catch-up 1/13; never on the 215-row queue; F 5, rank 62). Own-voice A/B pass. A stays 4 @0.5 recorded_interview alt BELOW_THRESHOLD (P38 / RQ-Z2-1 held; refuses 'atheist' label S4; ignostic S3); support single→corroborated (S2 Raskin + S3 God reply + S6 Barsamian Chronicles 1992: religion 'not' a factor, 'child of the Enlightenment', avoid irrational belief; S9 Spiritual Human: does not use 'spiritual forces' himself). primary_system ATHE @0.5 unchanged (same hedge). B: drop P30/P35 scientist-from-linguistics route (standing rule: linguistics alone ≠ natural scientist for B). Own nature-order: Reddit AMA 2010 (S7) 'laws of nature enter … overwhelmingly' / physical-chemical channel for evolution; New Horizons ch.4 (S8; IJPS 1994 / CUP 2000) methodological naturalism hoping for 'eventual integration with the \"core\" natural sciences' and 'search for laws of nature'. B stays 3 @0.5 alt 4 (P16 Hilbert); basis scholarly_reconstruction→written_profession; support corroborated (S7+S8). McGilvray 'creative principle' (S1) kept as note only. mid_basin stays BELOW_THRESHOLD (A@0.5, P10). P47 source_quality on all sources. P50 dual bio: Britannica (S1) + Wikipedia EN Living people (S10); living after June 2023 stroke. Chart-moving: hollow→filled (both axes corroborated); faded stays (min=B@0.5). Do not force plot. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Raskin interview dated 2022 (page metadata, 15 January 2022); 'Remarks on Religion' statement date UNKNOWN (the page says no date; '1990' is the URL slug); the ATHE rationale says the refusal of the 'atheist' label is why it is 0.5. RQ-Z2-1 answered: A 4 at 0.5 holds; plotted faded. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 5, rank 62; the gap found in batch Z1, filled on Jason's call that P32 governs). Basics from Britannica (James A. McGilvray, signed). Own voice: Max Raskin interview (2022): 'Do you believe in God?' 'For about a year.' 'But now you don't?' 'No.'; and his undated reply on chomsky.info: 'Do I believe in God? Can't answer, I'm afraid ... I don't understand the question.' Span 1955–1986 at 0.7. primary_system ATHE (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alt BELOW_THRESHOLD; interview; P38 by analogy; RQ-Z2-1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["theoretical linguist", "professor (MIT; University of Arizona)", "political writer and activist"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life and basic ideas'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: linguistics
   fields: {value: ["linguistics", "cognitive science", "philosophy of mind and language", "political criticism"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Logical Structure of Linguistic Theory (generative grammar)", year: 1955, kind: theory, lasting: "transformed his teachers' approaches 'into something novel'; the 'fundamental problem' of linguistics it named became 'Plato's problem' (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Life and basic ideas'; 'Plato's problem'"}], how_known: "Britannica; dated by the 1955 dissertation submission (P30); lasting is the coder's call."}

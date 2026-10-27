@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #134, F4 rank 137). Checked Eclogues dedicatory/personal asides (S6: Ecl. 1 Tityrus 'deus' = patron/iuvenis, character speech P42; Ecl. 6.1–12 Varus dedicatory craft aside; Silenus cosmogony 6.31ff character, Lucretian echoes still P42). Ancient Vita Suetonius-Donatus (S4 Wilson-Okamura): §35 planned retirement 'ut reliqua vita tantum philosophiae vacaret' — philosophical interest, not school profession; Siro/Epicurus + Academy/Plato preference sits in interpolated grey block (sigma), carefully labeled not scored as own voice; Horsfall-style bio-allegory caveat noted. Non-poetic association: Philodemus On Vices books address Vergil with Varius, Plotius, Quintilius (SEP Philodemus S7) — circle address ≠ first-person EPICUR profession (membership/association ≠ code). Georgics didactic already read; Aeneid unused (P42). primary/A/B/mid stay BELOW_THRESHOLD. Still not plotted. P47 on S1–S7; P50 Wikipedia EN (S5) dual bio; parents Magia Polla / Magius-employee tradition named from Vita/Wikipedia. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): statement kind relabelled from 'written profession (public)' to 'other' (poem's narrator; not scored). RQ-Z1-1 ruled (v8's call on the auditor's advice): the Georgics Jupiter lines are poetic myth, so A stays BELOW_THRESHOLD. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 4, rank 137). Basics from Britannica (Robert Deryck Williams, signed). Own voice read in the Georgics (Latin, The Latin Library web copy): the didactic narrator names Jupiter as the 'father' who made farming hard and set the weather signs (I.121–124, I.351–353), and praises the one who knew 'the causes of things' and trampled fear of fate and Acheron (II.490–492) beside the one who knows the country gods (II.493–494). Not a scientist. Span 42–19 BCE at 0.7 (Eclogues to the unfinished Aeneid). primary_system BELOW_THRESHOLD (leads EPICUR, STOIC); A, B BELOW_THRESHOLD with readings named; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["poet"], certainty: 0.7, cites: [{source: S1, locator: "'Political background' ('His life was devoted entirely to his poetry')"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["pastoral poetry", "didactic poetry", "epic poetry"], certainty: 0.7, cites: [{source: S1, locator: "'Literary career'"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Eclogues", year: -42, kind: work, lasting: "'gave a new direction to the genre' of pastoral (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Literary career'"}], how_known: "Britannica: composed 42–37 BCE; the start year (P12)."}

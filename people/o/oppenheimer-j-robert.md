@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Rouzé) and the Institute for Advanced Study's page. Worldview: no statement of his on God or religion was read in a checkable source. His Los Alamos farewell speech (2 November 1945, Atomic Heritage Foundation excerpts) states a faith in the value of science; his 1965 televised interview (interview) recalls the Bhagavad Gita line at Trinity. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub; HINDU rejected). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. His AIP oral-history interviews carry quotation limits and were not used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #164/#165 (run 2): '1965 interview' reworded as an interview recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965; new sources S6 (Paley Center catalogue record T79:0489: NBC, 5 January 1965, producer Fred Freed) and S7 (Wikiquote, a second pointer to the programme); statement date '1965' → '1965-01-05' with the recording date given as unknown (c. 1964); S4 citation, HINDU candidate reason, coder notes and body updated. The words of #165 stay as they are: they follow the audio, with no 'he' before 'takes on' (Wikiquote's 'he' is noted). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; kind lists (P21: research institute, school stage and run_by, scholarly edition); basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: ["theoretical physicist", "science administrator", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: physics
   fields: {value: ["quantum theory", "nuclear and particle physics", "astrophysics"], certainty: 1.0, cites: [{source: S1, locator: "'Early life and education', paragraph 3"}, {source: S2, locator: "Berkeley paragraphs"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Born–Oppenheimer treatment of molecular structure, with Max Born", year: "1927", kind: method, lasting: "standard approximation in molecular physics", certainty: 0.7, cites: [{source: S2, locator: "Göttingen paragraph"}], how_known: "IAS page."}

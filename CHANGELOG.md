@@ -1,6 +1,12 @@
 # Changelog
 
 
+## 2026-10-27 — primary_domain on person records (Grok Bot)
+
+- Schema 1.4 adds `contribution.primary_domain`: one Lane A craft label from a fixed allowlist. Not a claim (no certainty, no cites) and not an LIO axis. No `secondary_domain`.
+- The allowlist is in `schema/person.schema.json` and CODING_GUIDE §8. Cinema is `visual_arts`; military strategy is `politics_statecraft`.
+- Every existing person file is labeled. `identity.roster.field` and `field_bucket` are unchanged. A–E scores are unchanged.
+
 ## 2026-10-15 — systems charts (Grok Bot)
 
 - Added figures/systems_cause_locus.png and figures/people_systems_overlay.png, made by scripts/make_figures.py and approved by Jason. Margin strips and a box show systems with an axis not settled, there are no range bars, and readable names are used. Both are in the README under the people chart.

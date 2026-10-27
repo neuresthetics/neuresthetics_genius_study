@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #25, pause-batch close). P47 source_quality on every source. Added MacTutor (S3), Burton Optics JOSA 1945 scholarly English of Optica (S4; OCR of Definitions 1–4 and Props. 1–3), DSB Toomer via encyclopedia.com/MacTutor PDF (S5), Heath Elements CUP 1908 Vol. I (S6; scholarly edition of Elements for contribution and A-negative). Listed Optics as lasting contribution about vision → scientist under P30. B_cause UNKNOWN → 3 @ 0.5 written_profession, support corroborated (S4+S3; alt 4; P16 Hilbert / P35). A_locus stays UNKNOWN: no god/divine statement in Optics (Burton), Elements (no prefaces; MacTutor; Heath corpus), or DSB; Proclus 'Platonist' is late reported speech and DSB judges it not necessarily conclusive (P42, P19). primary_system UNKNOWN; C/D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 25). Britannica (van der Waerden): 'Of Euclid's life nothing is known' beyond Proclus. Undated works (P39). Mathematician with no listed contribution about natural systems; no worldview statement survives in the source read. All worldview fields UNKNOWN. Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["mathematician", "teacher"], certainty: 1.0, cites: [{source: S1, locator: "opening; Life"}, {source: S3, locator: "Summary; Biography"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["geometry", "number theory", "optics", "astronomy"], certainty: 1.0, cites: [{source: S1, locator: "Sources and contents"}, {source: S3, locator: "Elements; Optics; Phaenomena"}, {source: S5, locator: "Optics; Phaenomena sections"}], how_known: "Elements, Optics and Phaenomena survive; three sources."}
   lasting_original_contributions:
     - {value: "The Elements: axiomatic geometry from definitions, postulates and common notions; Euclidean algorithm; infinitude of primes; five regular solids", year: "undated (c. 300 BC)", kind: work, lasting: "'one of the most influential books ever written'; 'the whole design of his work was his own' (S1); Heath: 'the greatest mathematical textbook of all time' (S3 quoting Heath)", certainty: 1.0, cites: [{source: S1, locator: "opening; Sources and contents"}, {source: S3, locator: "Biography (Elements)"}, {source: S6, locator: "Heath ed., Books I–XIII"}], how_known: "Three sources. Pure mathematics alone would not make him a scientist (P30); Optics does (below)."}

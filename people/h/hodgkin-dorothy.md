@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to chemistry. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (main work 1945–69; Jason, 2026-10-02). Basics from Britannica (Ferry), the Nobel biography and Dodson's Royal Society memoir (2002). No writing of hers on religion was found; the memoir reports Quaker-type values from her mother and Margery Fry and quotes Max Perutz's memorial address ('more Christian in word and deed than many believers I have known'), which is another person's view. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #150 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 and §7. #150 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (§5.3). #158 (run 1): death place 'Shipston-on-Stour, Warwickshire' (0.7) → 'Ilmington, Warwickshire (at home, Crab Mill)' (0.5), per Dodson's memoir p. 188, with Britannica's Shipston-on-Stour as the alternative (sources disagree, as for Pasteur). Decision P12: first_lasting_contribution_year 1945 → 1942 (start of the listed 1942–1945 penicillin item; Nobel biography), age 35 → 32; era unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: ["chemist", "X-ray crystallographer", "university teacher"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: chemistry
   fields: {value: ["X-ray crystallography", "structural chemistry", "structural biology"], certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements'"}, {source: S2, locator: "paragraph 7"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Three-dimensional structure of penicillin", year: "1942–1945", kind: discovery, lasting: "largest molecule then solved by X-rays; settled a dispute among organic chemists", certainty: 1.0, cites: [{source: S1, locator: "'Scientific achievements', paragraph 1"}, {source: S2, locator: "paragraph 7 (research from 1942)"}], how_known: "Two sources."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (skip catch-up 12/13; F3 rank 196). Goals: firm A/primary; do not force plot. Re-opened AVIVA 2010 (S2) and Haaretz/Aloni 2010 (S3) in full; Feminism and Religion / Kile Jones 2014 interview (S5); Wikipedia dual bio (S6, P50); CUP blog Aloni excerpt confirms same conversation as S3. primary_system stays AGNOS @0.5 (recorded_interview): S2 'probably an agnostic' + sceptical of any notion of the divine; after-span P20 and 'probably' hedge keep 0.5; S3/S5 corroborate this-world Jewish ethics without theistic profession (P48 support → corroborated; certainty still 0.5). A_locus stays BELOW_THRESHOLD (P20: agnostic with no stated locus view; afterlife/redemption line is C lead, not A denial). B_cause stays UNKNOWN (P30 theorist/philosopher, not scientist; Feminism&Religion science/sex-assignment remarks are construct debate, not P16 nature-order). C_ledger scored 4 @0.5 from S3 own-voice 'no after world' / 'no hopes in a final redemption' (alt BELOW). mid_basin BELOW. Chart-moving NO. Childhood/heritage/schooling enriched; P47 source_quality on S1–S6. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): the 'newspaper interview' label is kept with a note that these are her own emailed answers to an online magazine; Haaretz 2010 interview (Aloni) read in full and added as S3; heritage raised to 0.7."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 196). Sources: Britannica, signed by Brian Duignan (read in full), and Butler's emailed answers to AVIVA-Berlin (2010, read in full). Lasting work: Gender Trouble (1990), 'one of the foundational texts of queer theory', whose performative theory 'greatly influenced the development of cultural theory, gender studies' (S1); span 1990, age 34. Own words (S2): 'I am very sceptical of efforts to define or portray any notion of the divine. I am probably an agnostic on religious matters, but I do sometimes still attend the synagogue'. 2010, after the span (P20 cap 0.5); written answers to an online magazine, labelled 'newspaper interview' as the nearest P21 value (auditor to confirm). primary_system AGNOS 0.5 (recorded_interview), alt BELOW_THRESHOLD ('probably'); A BELOW_THRESHOLD; not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. Heritage: practising Reform/Conservative Jewish family (S2). Britannica uses they/them; sex_as_recorded left UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["philosopher", "cultural theorist", "professor"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy", "gender studies", "queer theory"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Gender Trouble: Feminism and the Subversion of Identity (performative theory of gender)", year: 1990, kind: "work", lasting: "'one of the foundational texts of queer theory'; 'greatly influenced the development of cultural theory, gender studies, and some schools of philosophical feminism' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Introduction; later paragraphs"}], how_known: "Britannica."}

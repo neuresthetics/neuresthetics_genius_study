@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #133, F4 rank 136). Opened primary self-labels: Nation Institute abridged transcript (The Nation, 6 May 2004) — 'Now, you know, I'm a Catholic, right' (S5); VIBE May 1998 (S6) — 'I'm a Catholic' / 'ended up nowhere' / 'deeply religious person'; Antonio Monda Do You Believe? (2007, S7) — 'intelligence interested in what exists' / order-and-harmony (quotes checked via Ron Slate 2008 and SF Bay Guardian 2007 excerpts). Y2 path met: primary_system BELOW_THRESHOLD → CHRIST @0.5 (interview; after span P1/P20; alt BELOW — U2 membership concern, VIBE 'ended up nowhere', Monda religions-reduce-God). A_locus BELOW → 1 @0.5 (Monda transcendent intelligence; support single). B stays BELOW (order/harmony leans 3 but P16 no exception). C/E UNKNOWN; D BELOW; mid BELOW. Still not plotted. P47 on S1–S8; P50 Wikipedia EN (S8) dual bio; parents Ramah/George named. Prefer Nation/VIBE/Monda over Ripatrazone. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Ruling Y2 (v8's call on the auditor's advice, batch Y audit gs_7b46f24_Y run 1): primary_system stays BELOW_THRESHOLD, CHRIST the lead (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 136; Thomas Aquinas, rank 135, already coded). Basics from Britannica (Britannica Editors, 12 Oct 2026). Own voice read in the NPR Fresh Air transcript (20 April 2015, after the span): raised in her mother's AME church, Catholic from 12, 'took it seriously for years and years and years', now 'Not a structured one'. Other statements only as Nick Ripatrazone's secondary quotations (Lit Hub, 2020). Not a scientist. Span 1970–1987 at 0.7 (The Bluest Eye to Beloved). primary_system BELOW_THRESHOLD (CHRIST lead; RQ-Y2); A, B, D BELOW_THRESHOLD with readings named; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["novelist", "editor at Random House", "professor (SUNY Albany; Princeton)"], certainty: 0.7, cites: [{source: S1, locator: "'Editing and teaching career'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["novel", "literary criticism"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Nonfiction works'"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Bluest Eye", year: 1970, kind: work, lasting: "praised by The New York Times as prose that 'becomes poetry' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'The Bluest Eye'"}], how_known: "Britannica."}

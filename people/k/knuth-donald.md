@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to computer_science. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 93). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from his lecture 'All Questions Answered' (Munich, 5 October 2001), printed in Notices of the AMS 49(3), March 2002, pp. 318–324, read in the AMS PDF; book descriptions on his Stanford pages are leads. Not a scientist (P30). primary_system CHRIST (0.5); A 0 (0.5, alt 1; after the working years, P20); B UNKNOWN (no statement on nature, P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). S2 page range corrected to pp. 318–324 (K5) and the text credited as edited by Allyn Jackson; Stanford years 1968– at 0.7 from S2's editor's introduction (K7). TeX dated 1978 (the Gibbs Lecture 'Mathematical Typography', S2 introduction) and the later TAOCP volumes dated from his TAOCP page (S5: Volume 4A 2011, Volume 4B 2023 imprint, Volume 4 Fascicle 7 2025); the series stays one contribution dated by its start (P12), so the span is 1968–1978 and the 2001 lecture stays after it. Ruling P1 (v8's pick on the auditor's advice): post-span evidence is capped at 0.5 (P20), not excluded. The TeX 'revolutionized' quote and the Stanford fact attributed to the editor's introduction; MIT lectures dated fall 1999 (book 2001). Values unchanged; not plotted."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fix K1 (FAIL; gs_0b3023d_Q run 1). P12 sets only the start year; P30 addendum d sets the end from the range's end. TAOCP item 1968–2023 (end at the last full volume, Volume 4B, Jason's call; the 2025 fascicle noted); major_work_period = working_years = 1968–2023. The 2001 lecture now falls during the span, so the P20 cap (ruling P1) lifts: A 0 at 0.7 (P8 interview ceiling); lio_views 'during major work'. primary_system CHRIST stays 0.5 (Christian is the coder's inference; coder's call). Not plotted (B UNKNOWN)."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["mathematician", "computer scientist", "professor"], certainty: 0.7, cites: [{source: S1, locator: "opening; education paragraph"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: computer_science
   fields: {value: ["analysis of algorithms", "computer programming", "digital typesetting"], certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Coder's summary of Britannica's opening."}
   lasting_original_contributions:
     - {value: "The Art of Computer Programming (multivolume)", year: "1968–2023", kind: work, lasting: "'authoritative multivolume series' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; Addison-Wesley paragraph"}, {source: S5, locator: "volume list"}], how_known: "Britannica gives '1968– '; still in progress, so the dated start sets the year (P12). Later volumes, from his TAOCP page (S5): Volume 4A (2011), Volume 4B (Addison-Wesley, 2023 imprint; the page also speaks of 4B 'in 2022'), Volume 4 Fascicle 7 (2025, the start of 4C); Volume 5 in preparation. The start (1968) sets the first lasting year (P12); the end sets the period end (P30 addendum d: 'For the period end, a range gives its end year'). End 2023, the last full volume (Jason's call, Q audit K1); the 2025 fascicle (Volume 4 Fascicle 7, the start of 4C) is noted but not counted as a full volume."}

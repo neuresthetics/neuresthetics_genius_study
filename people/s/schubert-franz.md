@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #161, F3 rank 169). Hunt: Deutsch 1914 page images of no. 593 pp. 264–265 (Allmächtige / Frömmigkeit / Andacht confirmed; S2 verified_against page image); lost diary March 1824 nos. 469–472 (Glaube/Verstand epistemic; Fantasie vs Aufklärung; not locus, not P16 nature); Mein Traum 3 July 1822 no. 330 (allegory); Savile EN Letters 1928 (S4) cross-check; Wikipedia EN S5 baptism (P50 dual-bio with S1 parish/court chapel); Moon 2013 D.M. and Harnoncourt NPR skimmed as contested secondary — no clean §3 scholar backing to lift CHRIST/A from the one private letter. primary_system stays BELOW_THRESHOLD (lead CHRIST); A stays BELOW_THRESHOLD; B stays UNKNOWN (diary faith ≠ cause-order); mid BELOW; not plotted. Span still 1814; 1825 letter after span, counts under P31 (no changes_over_life). Mass 'Et unam sanctam' omission remains P16 work not profession. P47 source_quality on S1–S5. No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). CHRIST 0.5 -> BELOW_THRESHOLD, lead CHRIST: one private letter, no backing scholar found (§3). S2 verified_against 'primary facsimile' -> 'scholarly edition' (Deutsch 1914 edited text). Symphony No. 9 (1828) had no in-life premiere or publication and no lasting source, so it moves to major_works (year UNKNOWN); span 1814–1828 -> 1814 (latest supported lasting work, Gretchen am Spinnrade). Age 17 unchanged. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 169). Basics from Britannica (Maurice J. E. Brown, signed). Own words: letter to his father and stepmother, Steyr, 25 July 1825 (Deutsch, Die Dokumente seines Lebens und Schaffens II/1, 1914, no. 593, pp. 264–265; archive.org OCR of the Fraktur), within the span: wonder at 'meine Frömmigkeit' in the hymn to the Virgin (Ave Maria); he never 'forces' devotion, and composes such hymns only when 'unwillkürlich übermannt', 'dann aber ist sie auch gewöhnlich die rechte und wahre Andacht'; 'der Allmächtige sei gepriesen'. One private letter. Not a scientist. primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD (set phrase, no locus view); B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1814–1828, age 17. Not plotted. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["composer", "schoolmaster"], certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["music", "lied", "chamber music"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The German lied ('Gretchen am Spinnrade')", year: 1814, kind: "work", lasting: "'in this masterpiece he created at one stroke the German lied (art song)' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Early life and career"}], how_known: "Britannica."}

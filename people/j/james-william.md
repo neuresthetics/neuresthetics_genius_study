@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to psychology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Human Immortality (1898, IA humanimmortalit00jame) as S7 — within span. Own endorsement that some psychical phenomena including 'providential leadings in answer to prayer' and 'instantaneous healings' are facts; transmission theory allows 'exceptional waves' / power from without. Add S7 to B value cites; clear exclusive S1 from P35 alt cites (note retained) → B support single→corroborated (beside Varieties Postscript S3). A already corroborated → faded hollow→filled. Certainty stays 0.5 (named alt 3). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #213/228, F 3, rank 226). Goals: firm A and B from Varieties / Will to Believe / letters; pragmatism/pluralism may keep A mixed; do not force plot; P20/P38 if agnostic. Opened Varieties Postscript (S3 Wikisource/Gutenberg): own piecemeal supernaturalism; transmundane energies / God produce immediate effects in nature; larger power other and continuous; rejects popular Christianity and scholastic theism. Will to Believe (S4): Reflex Action theism (God as mental personality / Thou; ultimate opacity); Will to Believe essay refuses agnostic veto. Pragmatism lecture VIII (S5): hypothesis of God works / not an atheistic system. Wikipedia dual-bio (S6). A BELOW_THRESHOLD → 2 @ 0.5 written_profession, support corroborated (S3+S4), alt 1. B 3 @ 0.5 single → 2 @ 0.5 written_profession (piecemeal miracles/providence as live), support single, alt 3 (P35 working-science). primary_system BELOW_THRESHOLD → PRAG @ 0.5 written_profession (alt PANENT). Not AGNOS (P20/P38): he adopts the God hypothesis and refuses agnostic rules. mid_basin stays BELOW_THRESHOLD (A 2 between branches; both @ 0.5). Chart-moving YES: not plotted → faded hollow at next refresh (A corroborated, B single → hollow; both faded @ 0.5). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit fixes: 'ultimate opacity' quote dated 1881 (reprinted 1897), before the span (no score change). RQ-AB1-1, v8's call on the auditor's advice: scientist under the P35 theories-of-mind addendum, B 3 at 0.5, alt 4; 'piecemeal supernaturalism' (Varieties postscript) noted as a B 2 lead. Still not plotted (A BELOW_THRESHOLD)."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["psychologist", "philosopher", "physiologist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
 
 contribution:
+  primary_domain: psychology
   fields: {value: ["psychology", "philosophy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "The Principles of Psychology", year: 1890, kind: "work", lasting: "'has given us such ideas as \"the stream of thought\"'; it 'influenced generations of thinkers in Europe and America, including Edmund Husserl, Bertrand Russell, John Dewey, and Ludwig Wittgenstein' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "1890 (S1)."}

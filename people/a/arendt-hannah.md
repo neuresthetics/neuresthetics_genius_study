@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 34). Basics from SEP (Tömmel and Passerin d'Entrèves) and Britannica. Worldview evidence: one private letter to Jaspers (4 March 1951) stating a 'trust' in God distinct from faith and no interest in traditional religion, read only as a Spanish quotation in Araos (Humanitas). Single private letter, secondary quotation, and no locus or nature statement: primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #34, next-50 batch). Needs: A BELOW_THRESHOLD; B UNKNOWN. Re-opened Araos Humanitas full web text (S3; Spanish 1951 letter + Denktagebuch May 1965); Wikipedia EN (S7); JWA Whitfield (S8); Young-Bruehl Spanish Paidós/elboomeran PDF (S9) for Vogelstein childhood and non-religious parents; Zawisza Cryptotheology MDPI 2018 (S10) scholarly reconstruction (not used to lift A). P47 source_quality on every source. A stays BELOW_THRESHOLD: 1951 private letter states trust in God but nothing on where God is (locus); single private letter below 0.5 unless scholar backs a scored locus reading (§3); Araos backs belief, not locus; cryptotheology/Denktagebuch speculative politics not confession. B stays UNKNOWN (P16/P30): not a scientist; lasting contributions are political philosophy, not theories about natural systems; no explicit nature-order remark in S1–S10 (Human Condition earth/labor anthropological; Zawisza Augustine/tzimtzum are scholarly reconstruction, not her B). Childhood/heritage filled. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["political philosopher", "professor", "editor"], certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "text"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["political philosophy"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "The Origins of Totalitarianism", year: 1951, kind: work, lasting: "'generated a wide-ranging debate on the nature and historical antecedents of the totalitarian phenomenon' (S1)", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Origins paragraph"}], how_known: "Two sources."}

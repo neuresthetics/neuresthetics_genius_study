@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to astronomy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 88). Basics from Britannica (Helge Kragh, signed; body only). Worldview from the 1981 U.S. Catholic interview ('God and Carl Sagan', 1 May 1981), read on the U.S. Catholic site. Scientist (P30: planetary atmospheres, nuclear winter). primary_system AGNOS (0.5, alt SECHUM); A BELOW_THRESHOLD (agnostic, no locus view, P20); B 3 (0.5, alt 4; P35); D 4 (0.5); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit: A BELOW_THRESHOLD now also cites P38 (explicit suspension with no stated disbelief). Value unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #87, F4 rank 88). Needs: keep A honest unless clear place/deny (Pale Blue Dot, Demon-Haunted World, Cosmos, Ted interviews); corroborate/lift B if nature-order statements exist. Re-read U.S. Catholic 1981 (S2) full; Cosmos Ep.3 'Harmony of the Worlds' via Wikiquote transcript (S5); U.S. News 1991 'Scientists & Their Gods' quote via Wikiquote (S6, secondary); DHW IA djvu OCR (S7) — laws of Nature not absolutely certain / may break down in new circumstances, PLUS same electromagnetism laws ten billion light years away / 'different laws in every province, but we do not'; Wikipedia EN Naturalism + Early life (S4, P50 dual-bio: Reform Jewish parents Samuel/Rachel; 1996 self-label agnostic). Varieties (Gifford 1985 / 2006) borrow-locked on IA — Protagoras / full lecture text unread (blocker). A stays BELOW_THRESHOLD (P20/P38): consistent AGNOS across 1981+1996; 'does not exclude' traditional god; no clear place or deny of locus. Named A alt 4 only if 'ludicrous'/'no compelling evidence for anthropomorphic patriarch' is over-read as deny of personal intervening God (rejected: he refuses atheist certainty and keeps exclusion open). B 3 @0.5 alt 4: basis inference_from_work → written_profession; support single → corroborated (P48) via S2+S5+S7 own-voice lawful nature without exceptionless claim (P16 addendum; DHW hedge blocks B 4 / P40). E UNKNOWN → 4 @0.7 corroborated (S5+S7; same rules Earth/skies and across cosmic distance). D unchanged 4 @0.5. primary_system AGNOS @0.5 alt SECHUM unchanged (SECHUM remains definitional/semantic alt from God=laws conditional, not self-membership). mid_basin stays BELOW_THRESHOLD (A BELOW). P47 source_quality on S1–S7. Chart-moving NO (still not plotted: A BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["astronomer", "science writer", "professor"], certainty: 0.7, cites: [{source: S1, locator: "opening; Cornell paragraph"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: astronomy
   fields: {value: ["planetary science", "astrobiology", "science popularization"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Research on planetary atmospheres (Venus, Jupiter) and prebiotic synthesis of amino and nucleic acids", year: UNKNOWN, kind: theory, lasting: "'Sagan did important research on planetary atmospheres, in astrobiology, and on the origin of life on Earth' (S1)", certainty: 0.7, cites: [{source: S1, locator: "early work paragraph; reputation paragraph"}], how_known: "Britannica; undated. A theory or result about natural systems, so he is a scientist (P30)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Gottfried Wilhelm Leibniz' (Look) and Britannica (Belaval, first page); physics from SEP 'Leibniz's Philosophy of Physics' (McDonough). Worldview from the Theodicy (Huggard, Gutenberg) and the Monadology (Latta, Wikisource), both capped at 0.7 (§7), and Leibniz's First Paper to Clarke, read in page images of the 1717 first edition. DRAFT SCORES for v8's review: primary_system CLASS_THEISM 0.7; A 1, B 3, C 2, D 3, E 3, all at 0.7; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #287: German removed from languages_of_work (no German work in the sources read). #348: Mainz service 1667–1673 (Britannica: Boyneburg died Dec 1672, the Elector Feb 1673; he stayed in Paris until 1676). #291: how_known now says the 'ancestor' wording is in lasting. Britannica byline now Belaval and Look. #282 (with #341, #372) left: first-lasting year awaits v8 (P13 now in CODING_GUIDE §8). Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #32, next-50 batch). Needs: A single source (hollow). Opened Rutherford Latta-revised Monadology (UCSD PDF, Gerhardt VI); Theodicy Part I §7 (Huggard/Gutenberg) for independent A corroboration — God as first reason / necessary eternal substance outside the assemblage of contingent things; Bennett earlymoderntexts Discourse §1 and Principles of Nature and Grace as cross-checks; Wikipedia EN dual-source bio. P47 source_quality on every source. A_locus support single → corroborated (S5+S4; S8 Rutherford re-verify). B stays 3 @0.7 corroborated. Scores: A 1 @0.7, B 3 @0.7; CLASS_THEISM @0.7; mid_basin true @0.7. Chart-moving YES (dark hollow → dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: [philosopher, mathematician, "political adviser", librarian, historian, "court councillor"], certainty: 1.0, cites: [{source: S3, locator: "opening"}, {source: S1, locator: "§1"}], how_known: "Britannica: 'German philosopher, mathematician, and political adviser'; SEP: librarian, historian and Privy Councillor at Hanover."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: [mathematics, metaphysics, logic, "natural philosophy", theology, law], certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Differential and integral calculus, invented independently of Newton; first to publish", year: "1675", kind: method, lasting: "standard mathematics and notation", certainty: 1.0, cites: [{source: S3, locator: "opening; 'Early life and education'"}, {source: S1, locator: "§1"}], how_known: "Two sources."}

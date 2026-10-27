@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated. Laffont/Le Pestipon (S8, Académie Toulouse 2022 PDF) independently quotes Cede Deo locus lines — 'Coelicolum : Deus ecce'; 'Summe Deus, quid me moribundum deseris?'; 'Hanc tibi, summe parens, animam commendo' — so S8 is a second locus publication, not only CHRIST practice/frame. B already corroborated. Cues faded hollow→faded filled. Certainty stays 0.7 (named alt 1). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #197, F3 rank 210). P47–P50. Dual bio Wikipedia EN (S4) + Britannica (S1). Own-voice B: 1 Jan 1662 letter to Cureau de la Chambre (DBNL / Huygens Oeuvres IV No. 990; S5) — 'la nature agit tousjours par les voyes les plus courtes' / 'par les moyens les plus aysez'. Own-voice A/CHRIST: Latin poem 'Cede Deo, seu Christus moriens' (Œuvres I, Tannery; S6) — incarnation and Passion. Secondary Catholic frame: Society of Catholic Scientists (S7); Laffont/Académie Toulouse (S8); Augustins epitaph nesciri ama from Imitation of Christ (S9). B support single→corroborated (S1+S5); value stays 3 @0.5 alt 4 (P16 addendum: lawful-order remark, no stated no-exception claim). A UNKNOWN→0 @0.7 support single (poem; Laffont/SCS are CHRIST practice/frame, not a second A locus source). primary_system UNKNOWN→CHRIST @0.5 (poem is literary devotion; working-years creed thinner than Euler/Pascal). mid_basin BELOW_THRESHOLD (B at 0.5). Chart-moving YES: A scored so now plottable (faded hollow). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: birth date 1601 lowered to 0.5 (1601 vs 1607 is a real dispute)."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["lawyer", "magistrate", "mathematician"], certainty: 0.7, cites: [{source: S1, locator: "Life and early work"}, {source: S4, locator: "lead"}], how_known: "Councillor at the Parlement of Toulouse; mathematics as sustained private work."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["mathematics", "number theory", "optics"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S4, locator: "Work"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Method of tangents and of maxima and minima (equivalent to differentiation)", year: 1638, kind: "method", lasting: "'led him to be regarded as the inventor of the differential calculus'; 'Fermat's views were fully justified some 30 years later in the calculus of Sir Isaac Newton' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Introduction; Disagreement with other Cartesian views"}], how_known: "Developed in the mid-1630s; first documented public statement the 1638 controversy (S1)."}

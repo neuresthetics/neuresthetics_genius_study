@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to politics_statecraft. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #115 / F4 rank 116). Goals: corroborate A and B (hollow→filled); prefer Strength to Love print vs drafts; RQ-KK1 stands unless print differs in substance. Read Suffering and Faith (Christian Century 27 Apr 1960; S8): 'More than ever before I am convinced of the reality of a personal God.' Re-read S5/S6/S7 King Papers drafts with editors' published-version notes: Love in Action fixed-laws paragraph unmarked (note 6 concerns next sentence only); Answer thunderbolt/miracle unmarked; free-will and 'exceedingly abundant' altered in print but same substance (S6 notes 25, 27; STL pp. 123+). Dual bio Wikipedia EN (S9, P50). P47 source_quality on S1–S9. A 1 @0.7 support single→corroborated (S2+S8; alt 0). B 3 @0.7 support single→corroborated (S5+S6+S3+S7+S2; alts 4 and 2; S7 moral/physical-law parallel and absolute moral laws folded into preferred reading; S2 loving-purpose). D labelled support corroborated (S2+S3). mid_basin true @0.7 unchanged. Chart: dark hollow → dark filled (fill cue). Scores unchanged. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/), leftovers: KK4 credited to the ca27fcf audit in two places (was 'batch Y audit'); 'sent to the publisher' dropped from three reliability_notes (not stated by the King Papers). No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes (gs_ca27fcf_KK run 1): (KK4) 'every significant change' replaced by 'the notes mark no change here'; the Strength to Love quotes labelled draft wording, with printed variants where known from secondary quotations (ch. IV 'She must honor everlastingly ...', unconfirmed; ch. XV 'to expect God to do everything', unmarked in the notes). (KK11) Summary now B 3 at 0.7. (Note) the P27 exception named: ch. XV 'He has made us persons with freedom, free to choose the good and therefore free to choose what is not good' (P30 #14). Ruling RQ-KK1 (v8's call on the auditor's advice, consistent with Jason's approval): 0.7 stands for the draft reading, to be revisited only if the print differs in substance. No score changes."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: ["Baptist minister", "civil rights leader", "head of the Southern Christian Leadership Conference"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: politics_statecraft
   fields: {value: ["civil rights", "social ethics", "nonviolent resistance"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "part II"}], how_known: "Britannica and his essay."}
   lasting_original_contributions:
     - {value: "Leadership of the US civil rights movement by nonviolent methods, from the Montgomery bus boycott to his death, ending legal segregation in the South", year: 1955, kind: other, lasting: "'His leadership was fundamental to that movement’s success in ending the legal segregation of African Americans in the South and other parts of the United States' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "part II"}], how_known: "Britannica; range 1955–1968 (P12), from the boycott, which began 'about a year' after he came to Montgomery in 1954 (S2), to his death (S1). Not a theory about natural systems, so not a scientist (P30)."}

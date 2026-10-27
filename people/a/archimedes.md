@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #8). P47 source_quality on every source. Added Heath Works of Archimedes (1897; S3 scholarly edition) and Method supplement (1912; S4): own postulates/propositions for statics and hydrostatics (Equilibrium I Posts. 1–7 and Props. 6–7; Floating Bodies I Post. 1 and Prop. 2). B_cause stays 3 @ 0.5 (P16 Hilbert / P35: lawful physical regularities, no no-exception claim) but basis inference_from_work → written_profession; support single → corroborated (S3+S1). A_locus stays UNKNOWN after Heath treatises/prefaces, Method, Sand-Reckoner, MacTutor, and DSB (S5 Clagett via Complete Dictionary of Scientific Biography): no god/divine statement of his. Basics dual-sourced MacTutor+DSB (full_name, birth/death dates and places → 1.0). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 8). Basics and works from MacTutor (O'Connor and Robertson). No statement by Archimedes on gods, religion or the order of nature was found; the surviving works are mathematical and mechanical treatises. primary_system UNKNOWN; B_cause 3 at 0.5 from working science (P24, P35; alternative 4); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
 
@@ -44,6 +45,7 @@ basics:
   occupations: {value: ["mathematician", "engineer"], certainty: 1.0, cites: [{source: S1, locator: "Summary"}, {source: S5, locator: "heading fields ('mathematics, mechanics')"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["geometry", "mechanics", "hydrostatics"], certainty: 1.0, cites: [{source: S1, locator: "Biography (works)"}, {source: S3, locator: "treatise titles; On Floating Bodies; On the Equilibrium of Planes"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Method of exhaustion applied to areas, volumes and surfaces (sphere and cylinder: volume and surface two-thirds of the circumscribed cylinder; quadrature of the parabola)", year: "undated (before 212 BC)", kind: "law or principle", lasting: "Chasles: it 'gave birth to the calculus of the infinite'", certainty: 1.0, cites: [{source: S1, locator: "Biography (On the sphere and cylinder; Quadrature of the parabola; Chasles quotation)"}, {source: S3, locator: "On the Sphere and Cylinder; Quadrature of the Parabola"}], how_known: "Heath edition of the treatises plus MacTutor; works undated."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #172/228, F 3, rank 182). Goals: open A/primary if Optics or settled own words allow; do not force plot. Read Sabra Optics I–III English translation (S5, Monoskop PDF of Warburg 1989): Book I preface basmala 'In the Name of God the Compassionate and Merciful'; 'From God we derive support in all things'; methodological 'seek the truth and not to be swayed by opinion' (D lead). No prophet/Throne/Creator-locus doctrine (contrast al-Khwarizmi Algebra preface). Copyist colophon praise of God/Muhammad is the scribe Ahmad ibn Muhammad ibn Ja'far, not the Optics author. Attribution dispute unsettled (P42): Britannica still 'plausibly argued' two Ibn al-Haythams (optics mathematician vs Muhammad who wrote the autobiography) (S1); Sabra rejects Rashed as 'unfortunate' (S6 Encyclopedia.com DSB); Hogendijk notes Sabra vs Rashed open (S7). Autobiography youth religion claim NOT scored as Optics author's voice. primary UNKNOWN → BELOW_THRESHOLD (ISLAM lead from Optics basmala + Fatimid/Cairo setting; not ISLAM @0.5). A stays UNKNOWN (basmala off-point for locus). B stays 3 @0.5 alt 4 (P35); support labelled corroborated (S1+S5, P48). mid UNKNOWN. Not plotted. P47 on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fixes: era certainty 0.7 -> 0.5 (P39, c. life dates; WEAKEN). Span set from Smith's critical edition, 'Sometime between 1028 and 1038' (S3, added), under RQ-Z9-N1: start 1028 (P12), span 1028–1038, age 63 (1028 − c. 965); v8's call on the auditor's advice. Coder note corrected: the 1011–1021 date (Tbakhi and Amr 2007) is not used. Still not plotted (A UNKNOWN)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 182). Basics from Britannica (Richard Lorch, signed; body) and MacTutor (O'Connor and Robertson). No own-voice religious text read. MacTutor reports that in his autobiography he concluded as a youth that none of the religious movements 'represented the truth'; Britannica notes it 'has recently been plausibly argued' that the autobiography is by a different Ibn al-Haytham (Muhammad ibn al-Hasan), so its attribution is disputed (P42) and it is a lead only. primary_system UNKNOWN (lead ISLAM); A UNKNOWN. Scientist: the Optics gives a theory of vision and the laws of reflection and refraction (P30), so B 3 at 0.5 from working science, alt 4 (P24, P35). C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1028–1038 (Smith's composition range, RQ-Z9-N1; AA1 audit fix), age 63. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["mathematician", "astronomer", "physicist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: physics
   fields: {value: ["optics", "mathematics", "astronomy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Kitāb al-manāẓir (Optics): theory of vision by received light; laws of reflection; refraction", year: 1028, kind: "theory", lasting: "'Ibn al-Haytham's most important work is Kitāb al-manāẓir (\"Optics\") ... it contains the correct model of vision' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "Major works"}, {source: S5, locator: "Book I preface and plan of seven books"}], how_known: "Britannica body; Sabra translation of Optics I–III; dated 1028–1038 by Smith (S3), start 1028 (P12)."}

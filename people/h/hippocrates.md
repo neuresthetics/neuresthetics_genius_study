@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to medicine. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 36). Basics from Britannica (Wesley D. Smith). No text can be shown to be by Hippocrates himself: the Hippocratic Corpus 'cannot be by one person' and most of it 'not written by him' (S1). On the Sacred Disease (natural cause of epilepsy) is quoted for context but not attributed to him. His own disease theory is known only from Meno's report (reported speech). primary_system and A UNKNOWN; B BELOW_THRESHOLD; C, D, E UNKNOWN; mid_basin UNKNOWN. Undated works (P39). Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #36, F5 rank 36). Needs: A UNKNOWN; B BELOW_THRESHOLD. Re-opened Britannica Smith (S1); verified Sacred Disease against W. H. S. Jones Loeb vol. 2 OCR (S2; Adams MIT web copy retained as parallel). New: IEP Boylan (S4); Jouanna 'Hippocrates and the Sacred' Brill ch. (S5) + Exeter historiographical PDF quoting Jouanna Hippocrates JHUP 1999 (S6). P47 source_quality on every source. P42 reaffirmed: Jouanna allows that some Corpus works might reasonably be his 'without having absolute criteria'; scholars agree Sacred Disease and Airs, Waters, Places share one anonymous author, not that that author is the historical Hippocrates — so Sacred Disease stays context only and scores nothing. Meno/Anonymus Londinensis disease theory remains reported speech (§7). A stays UNKNOWN; B stays BELOW_THRESHOLD. Childhood/heritage lightly filled (Asclepiad family). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["physician", "teacher of medicine"], certainty: 0.7, cites: [{source: S1, locator: "'Life and works'"}], how_known: "Britannica (Plato: taught students for fees)."}
 
 contribution:
+  primary_domain: medicine
   fields: {value: ["medicine"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Theory of disease causation: undigested residues from unsuitable diet give off vapours that cause disease (reported by Meno)", year: UNKNOWN, kind: theory, lasting: "Hippocrates as the inspirational source for later medicine (S1); the specific theory is historical", certainty: 0.5, cites: [{source: S1, locator: "'Life and works' (Meno)"}], how_known: "Known only from Meno's history of medicine, as summarised by Britannica; undated. Reported speech under §7 / P42 — listed as contribution history, not used to score B alone."}

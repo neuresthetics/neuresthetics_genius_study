@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E; deepen D1 queue #28)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 28). Basics from Britannica (Magnus). Worldview from The Joyful Wisdom (trans. Thomas Common, Levy ed., 1910; Gutenberg #52881) §§108, 109, 343 and Ecce Homo (trans. Anthony M. Ludovici, Levy ed., 1911; Gutenberg #52190). The madman of §125 and Zarathustra are characters and are not used. ATHE 0.7; A 4 (0.7); B 4 (0.7, P40); C 4 (0.5); D 4 (0.7); mid_basin false (0.7). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): B_cause 4 (0.7) kept; rationale ties P40 to the explicit exclusion of exceptions ('no one who transgresses') and chance; added the 'it also knows no law' statement. Gutenberg statements relabelled verified_against 'secondary quotation' (web copies); certainties already at the 0.7 web-copy cap, unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #28, next-50 batch). Need was B single-source. Added Kaufmann Gay Science (S5 scholarly edition; Stanford course PDF of Vintage Kaufmann/Hollingdale) — GS §§108–109 verified_against scholarly edition; Beyond Good and Evil §22 (S6; Zimmern via Gutenberg) and Twilight of the Idols 'Four Great Errors' close (S7; Ludovici via Gutenberg) as second and third B streams (necessary/calculable course without lawgiver; fatality / no causa prima). Wikipedia EN (S8) dual-sources bio. P47 source_quality on every source. A stays 4 @ 0.7 corroborated (S5+S3+S7); B stays 4 @ 0.7 P40, support single→corroborated (S5+S6+S7; alt BELOW_THRESHOLD). Chart-moving YES: hollow→filled (same dark cell). Major-work span end → 1888. No fallacy_catalog (Jason 2026-10-23/24). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["classical philologist (professor at Basel)", "philosopher", "critic of culture"], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Basel years'"}, {source: S8, locator: "lead; Professor at Basel"}], how_known: "Britannica + Wikipedia."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy", "classical philology", "aesthetics"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S8, locator: "lead; Philosophy"}], how_known: "Britannica + Wikipedia."}
   lasting_original_contributions:
     - {value: "The Birth of Tragedy: the Apollonian and Dionysian account of Greek tragedy", year: 1872, kind: work, lasting: "'remains a classic in the history of aesthetics to this day' (S1)", certainty: 1.0, cites: [{source: S1, locator: "'Basel years'"}, {source: S8, locator: "Works"}], how_known: "Britannica + Wikipedia."}

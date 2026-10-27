@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z10)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (skip catch-up 10/13): New Yorker Manifold Destiny 2006 (S3) — only substantial own-voice interview; ethics/prize quotes, no creed or P16 nature-order. Wikipedia EN dual bio (S4, P50). Rejected Zabrovsky/KP 2011 interview as likely fake (Wikipedia + Gessen/Snob). Gessen Perfect Rigor never interviewed him; reviewer 'talking with God' framing is not his words. primary/A/B stay UNKNOWN (silence; heritage ≠ worldview; topology not physical science under P30). mid UNKNOWN. Chart-moving NO. P47 source_quality on all sources."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 175). Source: MacTutor (O'Connor and Robertson). No own-voice statement on religion or nature read; Jewish parents (heritage only). Not a scientist (topology; P30). primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 2002–2003 (the three arXiv postings, publication; MacTutor's 'April 2002' return before the July instalment is read as 2003 from context), age 36. Not plotted. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["mathematician"], certainty: 0.7, cites: [{source: S1, locator: "Summary"}, {source: S4, locator: "lead"}], how_known: "MacTutor; Wikipedia EN."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["geometry", "topology", "geometric analysis"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}, {source: S4, locator: "lead"}], how_known: "MacTutor; Wikipedia EN."}
   lasting_original_contributions:
     - {value: "Proof of the Poincaré Conjecture (and Thurston geometrization) via Ricci flow", year: 2002, kind: "discovery", lasting: "'proved the Poincaré Conjecture' (S1, Summary); Fields Medal 2006 and Clay Prize 2010 (both refused)", certainty: 0.7, cites: [{source: S1, locator: "Summary; Biography"}, {source: S4, locator: "Perelman's work"}], how_known: "MacTutor / Wikipedia: three papers posted 11 November 2002, March 2003 and July 2003 (range; P12 start). Pure mathematics / topology — not a theory of physical systems (P30)."}

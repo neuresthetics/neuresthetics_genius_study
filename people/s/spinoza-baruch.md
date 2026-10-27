@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.2"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged. Schooling stage religious school retired (P21): stage other, run_by religious body."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from Britannica (Popkin, first page) and SEP 'Baruch Spinoza' (Nadler). Worldview from the Ethics and the Theological-Political Treatise in Elwes's translation, read in the Project Gutenberg texts (unofficial web copies, so every field resting on them is capped at 0.7 under CODING_GUIDE §7). The Cambridge edition (ed. Kisner) was not opened. DRAFT SCORES for v8's review: primary_system PANT 0.7; A 4, B 4, C 4, D 3, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #12: Dutch removed from languages_of_work (only the posthumous Dutch edition). #13: lens grinding now cited to SEP 'Spinoza's Physical Theory' §6.2 (new S8) as well as Britannica; how_known no longer says 'two sources' for both occupations; 1.0 left pending v8 (single-source / mixed sourcing). #16, #81: Ethics title cited for the geometric form; SEP §2.1 named. #22, #58: how_known says the detail is Britannica-only; 1.0 left pending v8. #27: SEP 17 vs Britannica 18–19 noted and flagged; 1.0 left pending v8 (conflict rule). #64, #91: timing of the immanent God now rests on SEP §1 (Short Treatise at Rijnsburg; Ethics under way by 1663) and §2.1, not §1 alone. #80: S8 added. TTP locators labelled as Gutenberg sentence numbers; Kisner wording marked TODO. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: [philosopher, "lens grinder", merchant], certainty: 1.0, cites: [{source: S1, locator: "'Early life and career' (business); Top Questions (lens grinding; a box Britannica labels as AI-generated)"}, {source: S2, locator: "§1, paragraph 1 (family importing business)"}, {source: S8, locator: "§6.2 ('a lens grinder and man of letters')"}], how_known: "Merchant: two sources (SEP §1, the family's importing business; Britannica's signed text, a tropical-fruit business with his brother at 18 or 19). Lens grinder: one signed source, SEP 'Spinoza's Physical Theory' §6.2, plus Britannica's Top Questions box, which Britannica labels as created using AI; neither SEP 'Baruch Spinoza' nor the signed Britannica first page mentions it (lens audit #13). Certainty left at 1.0 pending v8's ruling on single-source details in a two-source field and on citing the AI box."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: [metaphysics, ethics, "political philosophy", "biblical criticism"], certainty: 1.0, cites: [{source: S2, locator: "opening; §§2–3"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Theological-Political Treatise: historical and critical reading of Scripture, the separation of philosophy from theology, and a case for toleration and freedom of thought", year: "1670", kind: work, lasting: "founding text of modern biblical criticism and of the liberal argument for free philosophizing", certainty: 0.7, cites: [{source: S2, locator: "§3, §3.1, §3.2"}], how_known: "SEP; 'lasting' wording is the coder's summary of SEP's account."}
@@ -71,7 +73,7 @@ childhood:
     - {value: "Mother, Hannah, died in 1638, shortly before his sixth birthday", name: "Hannah Spinoza", role: mother, certainty: 0.7, cites: [{source: S1, locator: "'Early life and career', paragraph 1"}], how_known: "Britannica."}
   household_circumstances: {value: "Middle son of a prominent family of moderate means in the Portuguese-Jewish community", certainty: 0.7, cites: [{source: S2, locator: "§1, paragraph 1"}], how_known: "SEP."}
   schooling:
-    - {value: "Talmud Torah school of the Amsterdam congregation; did not reach the upper levels (advanced Talmud); studies cut short at seventeen for the family business", stage: "religious school", years: "–c. 1649", ages: "to 17", certainty: 1.0, cites: [{source: S2, locator: "§1, paragraph 1"}, {source: S1, locator: "'Early life and career', paragraph 3"}], how_known: "The Talmud Torah school: two sources. That he 'never made it into the upper levels of the curriculum' and stopped 'At the age of seventeen' to help run the family's importing business: SEP only. Britannica says that 'When he was 18 or 19 years old, Spinoza and his brother went into business selling tropical fruit', which may be a later step rather than the same event, but the ages differ (flagged in review; lens audit #27). Certainty left at 1.0 pending v8's ruling on single-source details and on whether such a difference forces 0.7."}
+    - {value: "Talmud Torah school of the Amsterdam congregation; did not reach the upper levels (advanced Talmud); studies cut short at seventeen for the family business", stage: other, run_by: "religious body", years: "–c. 1649", ages: "to 17", certainty: 1.0, cites: [{source: S2, locator: "§1, paragraph 1"}, {source: S1, locator: "'Early life and career', paragraph 3"}], how_known: "The Talmud Torah school: two sources. That he 'never made it into the upper levels of the curriculum' and stopped 'At the age of seventeen' to help run the family's importing business: SEP only. Britannica says that 'When he was 18 or 19 years old, Spinoza and his brother went into business selling tropical fruit', which may be a later step rather than the same event, but the ages differ (flagged in review; lens audit #27). Certainty left at 1.0 pending v8's ruling on single-source details and on whether such a difference forces 0.7. Schema 1.4 retires stage religious school (P21): level left as other because the file does not split the Talmud Torah years; run_by religious body."}
   early_mathematics: {value: TODO, note: "Not in the sources read."}
   early_geometric_style_reasoning: {value: TODO, note: "Not in the sources read; his geometrical method is documented only for the adult Ethics."}
   early_science_exposure: []
