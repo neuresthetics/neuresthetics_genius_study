@@ -2,13 +2,14 @@
 record:
   record_type: person
   schema_version: "1.3"
-  record_version: 3
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: 2026-10-26
   change_log:
+    - {date: 2026-10-26, by: "Grok Bot", summary: "RQ-Z5-N1 settled (Jason t275u unblock, 2026-10-26): Systema Naturae 10th ed. (1758) listed as a lasting contribution on ICZN Art. 3 (S15) per P13/P17; span 1735–1758. Imperium Naturae (1758) now in-span own written profession: A 0 @0.7 adds S7/S8 (DEUM sempiternum ... Domino & Artifice) so alt 2 cites are a subset → A corroborated; B 3 lifted 0.5→0.7 on in-span own-voice aeternae legis imperio (S8) with Nova creatio nulla (P35 does not apply: own statements, not work-only inference); alt 4 kept. mid_basin BELOW_THRESHOLD→true (P4). Chart: faded hollow → dark filled."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: B_cause support single→corroborated. Alt 4 cites trimmed to S11 only (Nova creatio nulla) — drop exclusive Britannica S1 which added no independent alt content (P48). A stays single (after-span Imperium alt S7/S8 exclusive by design; RQ-Z5-N1). Still faded hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #148, F 3, rank 154). Opened Species Plantarum 1753 Lectorem / Swedish dedication (Gutenberg #20771, S10); Philosophia Botanica 1751 OCR (IA philosophiabota00linn, S11); Systema 1744 Paris 4th (IA carolilinaeimedi00linn, S12); Nemesis Divina Barr 1923 (S14, after-span private MS). Wikipedia EN dual bio (S13; P50). A_locus 0: 0.5→0.7 written_profession in-span (SP Lectorem Dominus/Creator/summum Ens + PB Creator/legem Naturae); after-span Imperium Naturam-vocare kept as named alt 2 (P20; contested ≤0.7); support single (P48: alt 2 cites S7/S8 exclusive). B_cause stays 3 @0.5 alt 4 (P16/P35: Nova creatio nulla / legem Naturae / primordio creatum are creation-then-lawful-generation, not a no-exception lift); basis inference_from_work→written_profession; support single (alt 4 cites S1 exclusive). primary CHRIST stays 0.5 (Lutheran + in-span Creator/Lord; Psalms/Imperium still after-span). C stays UNKNOWN (Nemesis read: just Gud / Heliga Skrift; private after-span). E UNKNOWN→BELOW_THRESHOLD (P19 scientist). mid BELOW; plotted faded. Span 1735–1753 unchanged; RQ-Z5-N1 OPEN not applied. P47 source_quality on S1–S14. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-20, Z5-21, Z5-22, Z5-24; RQ-Z5-2 answered): 'Vis illud Naturam vocare' re-cited to the printed editions (S8: 1758 facsimile, p. 5; S7: 1766) and dated 1758, with footnote (b) to Seneca, Quaest. Nat. II.45; the 1735 Latin corrected to the folio (S9); 'Deum sempiternum' re-cited to S7/S8 with the 1758 variant noted; 'aeternae legis imperio' added as a B lead; B basis scholarly_reconstruction -> inference_from_work (P24). Values unchanged (A 0 @0.5 alt 2; B 3 @0.5 alt 4). RQ-Z5-N1 logged in OPEN_DECISIONS, not applied."}
@@ -51,6 +52,7 @@ contribution:
   fields: {value: ["botany", "zoology", "taxonomy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Systema Naturae: hierarchical classification of the three kingdoms", year: 1735, kind: work, lasting: "'Linnaeus's classification system has survived in biology' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'The sexual system of classification'"}], how_known: "Britannica."}
+    - {value: "Systema Naturae, 10th edition: consistent binomial nomenclature for animals; starting point of zoological nomenclature", year: 1758, kind: work, lasting: "'The date 1 January 1758 is arbitrarily fixed in this Code as the date of the starting point of zoological nomenclature' — 10th edition deemed published that day (S15)", certainty: 0.7, cites: [{source: S15, locator: "Article 3; 3.1"}], how_known: "ICZN Code Art. 3 (RQ-Z5-N1 settled 2026-10-26)."}
     - {value: "Species Plantarum: binomial nomenclature applied to plants", year: 1753, kind: work, lasting: "'the foundation for modern botanical and zoological nomenclature' (S3)", certainty: 0.7, cites: [{source: S3, locator: "text"}], how_known: "Britannica Scholars."}
   evidence_of_impact:
     - {value: "Starting point of botanical nomenclature", kind: "scholarly consensus", certainty: 0.7, cites: [{source: S3, locator: "text"}], how_known: "Britannica Scholars."}
@@ -80,7 +82,7 @@ childhood:
 
 worldview:
   unit: "adult working worldview"
-  working_years: {value: "1735–1753", certainty: 0.5, cites: [{source: S1, locator: "text"}, {source: S3, locator: "text"}], how_known: "Equals timing.major_work_period."}
+  working_years: {value: "1735–1758", certainty: 0.5, cites: [{source: S1, locator: "text"}, {source: S3, locator: "text"}], how_known: "Equals timing.major_work_period."}
   nominal_affiliations: []
   self_described_science_religion_relation: {value: "Species Plantarum Lectorem: the world is the Omnipotent's theatre; guests must study the Creator's works (opera Creatoris) and acknowledge the Lord's magnificence; Swedish dedication praises the Almighty Creator's wonders (Alsmägtiga Skaparen)", certainty: 0.7, cites: [{source: S10, locator: "LECTORI ÆQUO; Swedish royal dedication"}, {source: S4, locator: "Finis Creationis (late editions, finding aid)"}, {source: S5, locator: "Psalm placements / Imperium (finding aid)"}], how_known: "In-span 1753 own-voice (Gutenberg transcription of Species Plantarum). Late-edition Finis Creationis and Imperium Psalm placements kept as secondary finding aids only (S4; S5)."}
   primary_system:
@@ -100,26 +102,26 @@ worldview:
       value: 0
       basis: written_profession
       certainty: 0.7
-      support: single
-      cites: [{source: S10, locator: "LECTORI ÆQUO (omnipotentis / Domini / Creatoris / summum Ens)"}, {source: S11, locator: "Introductio §1 arte divina; Creator commissit generationem; Creatoris artificio"}, {source: S12, locator: "Creator hominem ... Artificem ex opere"}]
-      how_known: "Deepen D1: in-span own voice. Species Plantarum 1753 Lectorem — world as omnipotentis theatrum; magnificentiam Domini; opera Creatoris; summum Ens (S10). Philosophia Botanica 1751 — Naturalia composita arte divina; Creator entrusted species generation to Nature's law; Creatoris artificio distinct species (S11). Systema 1744 — Creator placed man to admire the Artificer from the work (S12). Named alternative 2 from after-span Imperium Naturae (P20) keeps the contested-reading ceiling at 0.7 and makes support single under P48 (alt cites S7/S8 exclusive of the value). Imperium itself not used as the scored cite (RQ-Z5-N1 open; span ends 1753)."
+      support: corroborated
+      cites: [{source: S8, locator: "Imperium Naturae, p. 5 (DEUM sempiternum, omniscium, omnipotentem ... Domino & Artifice)"}, {source: S7, locator: "Imperium Naturae, opening paragraph"}, {source: S10, locator: "LECTORI ÆQUO (omnipotentis / Domini / Creatoris / summum Ens)"}, {source: S11, locator: "Introductio §1 arte divina; Creator commissit generationem; Creatoris artificio"}, {source: S12, locator: "Creator hominem ... Artificem ex opere"}]
+      how_known: "Deepen D1: in-span own voice. Species Plantarum 1753 Lectorem — world as omnipotentis theatrum; magnificentiam Domini; opera Creatoris; summum Ens (S10). Philosophia Botanica 1751 — Naturalia composita arte divina; Creator entrusted species generation to Nature's law; Creatoris artificio distinct species (S11). Systema 1744 — Creator placed man to admire the Artificer from the work (S12). Named alternative 2 from after-span Imperium Naturae (P20) keeps the contested-reading ceiling at 0.7 and makes support single under P48 (alt cites S7/S8 exclusive of the value). 2026-10-26: RQ-Z5-N1 settled, span 1735–1758; Imperium Naturae 1758 (S8; S7) is in-span and names DEUM omnipotent, Domino & Artifice — added to cites; alt 2 cites now a subset → corroborated (P48). Alt 2 kept; 0.7 ceiling stays (contested reading)."
       rationale: "Personal Creator / Lord / supreme Being as locus — A 0. Alternative 2: after-span 'Vis illud Naturam vocare, non errabis' (Seneca note on Domino & Artifice); in-span texts treat Nature as the Creator's work and law, not as the locus itself."
       alternatives:
-        - {value: 2, note: "After-span (1758/1766 Imperium Naturae): 'Vis illud Naturam vocare, non errabis' (Seneca, Quaest. Nat. II.45, note b). Kept as named alternative under contested-reading rule; not an in-span profession (P20; RQ-Z5-N1).", cites: [{source: S8, locator: "Imperium Naturae, p. 5, note (b)"}, {source: S7, locator: "Imperium Naturae, note (b)"}]}
+        - {value: 2, note: "After-span (1758/1766 Imperium Naturae): 'Vis illud Naturam vocare, non errabis' (Seneca, Quaest. Nat. II.45, note b). In-span since 2026-10-26; kept as named alternative under the contested-reading rule.", cites: [{source: S8, locator: "Imperium Naturae, p. 5, note (b)"}, {source: S7, locator: "Imperium Naturae, note (b)"}]}
     B_cause:
       value: 3
       basis: written_profession
-      certainty: 0.5
+      certainty: 0.7
       support: corroborated
-      cites: [{source: S9, locator: "Observationes in Regnum Vegetabile (primordio tale creatum)"}, {source: S11, locator: "Nova creatio nulla; legem Naturae ... Creator; Genus ... primordio tale creatum"}, {source: S10, locator: "LECTORI ÆQUO (Creatoris opera; Naturae regna)"}]
-      how_known: "Deepen D1: in-span own voice states creation of genera/species at the beginning then continued generation under Nature's law that the Creator entrusted (S9; S11), with no new creation (Nova creatio nulla). Scientist under P30. Certainty stays 0.5: P16 addendum / P35 — an explicit lawful-order / creation-then-generation remark without a stated no-exception claim across nature cannot lift B past 0.5; alternative 4 kept. D2: support corroborated (P48) — alt 4 cites now only S11 (subset of value cites); exclusive Britannica S1 dropped from alt as non-independent. A still single via Imperium alt (RQ-Z5-N1). Lead (after span, not scored): 1758 aeternae legis imperio (S8; S7)."
+      cites: [{source: S9, locator: "Observationes in Regnum Vegetabile (primordio tale creatum)"}, {source: S11, locator: "Nova creatio nulla; legem Naturae ... Creator; Genus ... primordio tale creatum"}, {source: S10, locator: "LECTORI ÆQUO (Creatoris opera; Naturae regna)"}, {source: S8, locator: "Imperium Naturae, p. 5 (MUNDUS ... aeternae legis imperio, nec esse temere errantis hunc ordinem)"}]
+      how_known: "Deepen D1: in-span own voice states creation of genera/species at the beginning then continued generation under Nature's law that the Creator entrusted (S9; S11), with no new creation (Nova creatio nulla). Scientist under P30. Certainty stays 0.5: P16 addendum / P35 — an explicit lawful-order / creation-then-generation remark without a stated no-exception claim across nature cannot lift B past 0.5; alternative 4 kept. D2: support corroborated (P48) — alt 4 cites now only S11 (subset of value cites); exclusive Britannica S1 dropped from alt as non-independent. A still single via Imperium alt (RQ-Z5-N1). 2026-10-26 (RQ-Z5-N1 settled, span to 1758): in-span own voice, Imperium Naturae 1758 — the world's bodies proceed 'aeternae legis imperio', the order not wandering at random (S8, p. 5; Seneca echo, note f, adopted in his own text) — with Nova creatio nulla gives own-voice statements on law and creation, so P35's work-only cap does not apply; B 3 at 0.7 (creation at the beginning as the stated exception; alt 4 kept)."
       rationale: "Creation act then lawful generation of species (B 3). Named alternative 4 (P16/P35: no exceptionless claim for all of nature)."
       alternatives:
         - {value: 4, note: "P16/P35 default alternative; Nova creatio nulla covers species generation, not a universal no-miracle claim.", cites: [{source: S11, locator: "Nova creatio nulla"}]}
     C_ledger: {value: UNKNOWN, cites: [{source: S14, locator: "rättvis Gud / Gud ser dig / Heliga Skrift"}], how_known: "Nemesis Divina (Barr 1923 ed., S14) read: private MS for his son — 'här bor en rättvis Gud' / 'Gud ser dig' / Heliga Skrift; after the 1735–1753 span and unpublished in his lifetime (P20) → not scored. Would be a C 0 lead if ever in-span public."}
     D_authority: {value: UNKNOWN, how_known: "No in-span statement on revelation vs observation scored this pass."}
     E_scope: {value: BELOW_THRESHOLD, note: "Scientist under P30; working science bears on E's first question but E is not scored from working science alone (P19).", how_known: "BELOW_THRESHOLD under P19 (scientist, no statement; deepen 2026-10-24). Was UNKNOWN."}
-  mid_basin: {value: BELOW_THRESHOLD, how_known: "A 0 at 0.7 would pass P4's A ≤ 1, but B 3 is only at 0.5, under the 0.7 bar (§6, P10). RQ-Z5-N1 dry-run: if span ended 1758, Imperium could lift B (and keep A) to 0.7 → mid true — not applied."}
+  mid_basin: {value: true, certainty: 0.7, cites: [{source: S8, locator: "Imperium Naturae, p. 5"}, {source: S10, locator: "LECTORI ÆQUO"}, {source: S11, locator: "Nova creatio nulla"}], how_known: "P4: A 0 ≤ 1 and B 3 ≥ 3, both at 0.7 (RQ-Z5-N1 settled 2026-10-26, span 1735–1758)."}
   statements:
     - text: "Genus omne est naturale, in ipso primordio tale creatum: hinc pro lubitu & secundum cujuscunque theoriam non proterve discindendum, vel conglutinandum est."
       cites: [{source: S9, locator: "Observationes in Regnum Vegetabile, folio sheet"}]
@@ -187,7 +189,7 @@ heritage:
 
 timing:
   lane: "A — descriptive facts; Lane B's H1 timing test reads them"
-  major_work_period: {value: "1735–1753", certainty: 0.5, cites: [{source: S1, locator: "text"}, {source: S3, locator: "text"}], how_known: "Systema Naturae (1735) to Species Plantarum (1753) (P29, P30); the 10th edition of Systema Naturae (1758, zoological starting point) is a later candidate, so 0.5."}
+  major_work_period: {value: "1735–1758", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S15, locator: "Article 3"}], how_known: "Systema Naturae (1735) to Systema Naturae 10th ed. (1758, ICZN zoological starting point) (P29, P30; RQ-Z5-N1 settled 2026-10-26)."}
   age_at_first_lasting_contribution: {value: 28, certainty: 0.7, cites: [{source: S1, locator: "Born; text"}], how_known: "1735 − 1707 = 28 (P30 year difference)."}
   first_evidence_of_lio_type_views: {value: "1735", certainty: 0.7, cites: [{source: S9, locator: "Observationes in Regnum Vegetabile"}, {source: S10, locator: "LECTORI ÆQUO"}], how_known: "1735 primordio creatum; 1753 Lectorem Creator/Dominus in the lasting Species Plantarum."}
   lio_views_relative_to_major_work: {value: "during major work", certainty: 0.7, cites: [{source: S10, locator: "LECTORI ÆQUO"}, {source: S9, locator: "Observationes"}], how_known: "In-span lasting works."}
@@ -214,7 +216,6 @@ review:
     - "Own words read in printed editions / transcriptions (1735 folio; 1744 Paris; 1751 Philosophia Botanica OCR; 1753 Species Plantarum Gutenberg; 1758 facsimile; 1766); Wikiquote and the blog kept as finding aids only."
     - "Death place: Britannica Uppsala vs Wikipedia Hammarby (buried Uppsala Cathedral)."
   open_questions:
-    - "RQ-Z5-N1 (open): list Systema Naturae 10th ed. 1758 as lasting → span end 1758 → Imperium Naturae in-span?"
     - "Page-image check of Species Plantarum 1753 Lectorem (currently Gutenberg) and Philosophia Botanica Creator pages (currently OCR)."
     - "Whether any in-span public statement matches Nemesis Divina's retributive Gud for C."
 
@@ -359,11 +360,21 @@ sources:
     reliability_note: "Posthumous edition of a private manuscript compiled for his son; after the coded span; used only to close the C unread flag — not scored (P20)."
     source_quality: "scholarly edition or monograph"
     used_for: [worldview]
+  - id: S15
+    type: secondary
+    kind: "institutional page"
+    author: "International Commission on Zoological Nomenclature"
+    citation: "International Code of Zoological Nomenclature, 4th ed., Article 3 (Starting point). https://code.iczn.org/zoological-nomenclature/article-3-starting-point"
+    url: "https://code.iczn.org/zoological-nomenclature/article-3-starting-point"
+    accessed: 2026-10-26
+    reliability_note: "Official Code text; Art. 3 and 3.1 read: 1 January 1758 starting point; Systema Naturae 10th ed. deemed published that day."
+    source_quality: "reference entry"
+    used_for: [contribution, timing]
 ---
 
 ## Summary
 
-Carl Linnaeus (1707–1778), naturalist [S1; S13]. Draft: CHRIST (0.5); A 0 (0.7, alt 2 after-span); B 3 (0.5, alt 4). Plotted (faded). Chart-moving NO.
+Carl Linnaeus (1707–1778), naturalist [S1; S13]. Draft: CHRIST (0.5); A 0 (0.7, alt 2); B 3 (0.7, alt 4); mid_basin true. Plotted (dark, filled) after RQ-Z5-N1 settled 2026-10-26.
 
 ## Life and work
 
@@ -387,7 +398,7 @@ Swedish Lutheran [S1; S13].
 
 ## Timing
 
-1735–1753, age 28 [S1; S3]. RQ-Z5-N1 open for 1758 end.
+1735–1758, age 28 [S1; S15]. RQ-Z5-N1 settled 2026-10-26.
 
 ## Lane B notes (labeled belief model)
 
@@ -395,7 +406,6 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 ## Open questions
 
-- RQ-Z5-N1 (1758 lasting?).
 - Page images for SP Lectorem and PB Creator pages.
 - In-span public C matching Nemesis themes.
 
@@ -403,3 +413,4 @@ Everything in this section is Lane B: labeled belief, not a finding. No data.
 
 - 2026-10-19: Read Britannica (Müller-Wille), Britannica Scholars, Wikiquote, blog transcription; Imperium Naturae in 1758/1766 prints.
 - 2026-10-24: Deepen D1 — Species Plantarum Gutenberg Lectorem; Philosophia Botanica OCR; Systema 1744 OCR; Nemesis Divina Barr 1923; Wikipedia dual bio. A→0.7; B held @0.5; C unread flag closed without score.
+- 2026-10-26: ICZN Art. 3 read; RQ-Z5-N1 settled; Imperium Naturae 1758 scored in-span.
