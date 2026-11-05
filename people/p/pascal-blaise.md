@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'Blaise Pascal' (Clarke) and Britannica (Jerphagnon, first page). Worldview from the Pensées (Gutenberg copy of the Dutton 1958 English edition, §7 cap 0.7) and the Préface sur le Traité du vide (Brunschvicg–Boutroux 1923 edition, Wikisource transcription checked against the Internet Archive scan of pp. 131–132). DRAFT SCORES for v8's review: primary_system CHRIST 0.7; A 0, B 2, C 1, D 2, E 1, all at 0.7; mid_basin TODO (A ≤ 1 with B = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #246: 'noblesse de robe' removed (not in the sources read). #236: D cites now fragments 269 and 278 only (273 was not used in the rationale). #250: value kept; the rationale now applies the written LIO definition and the open threshold is a method question for v8. Bylines: SEP now Clarke and Wood; Britannica now Jerphagnon and Orcibal. Pensées numbering note no longer says it follows Brunschvicg. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #14). Schema 1.2 → 1.3. P47 source_quality on every source. A_locus was single on S3 (Pensées Gutenberg frag. 555): added S6 Brunschvicg Pensées et Opuscules (Hachette 1919, 6e éd. revue; archive.org OCR) verifying the Mémorial (23–24 Nov 1654; printed pp.142–143) — 'Dieu d'Abraham, Dieu d'Isaac, Dieu de Jacob! non des philosophes et des savants' — independent of the Pensées fragment. A support single → corroborated (S3+S6); value/certainty stay 0 @ 0.7 (named alt 1). B_cause already multi-cited (S3+S1): labelled support corroborated; value/certainty stay 2 @ 0.7. C and D labelled corroborated; E labelled single. Chart: dark hollow → dark filled (fill cue). Lafuma/Sellier concordance and Provincial Letters direct read still open. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: pascal-blaise
   display_name: "Blaise Pascal"
@@ -244,6 +245,20 @@ lane_b:
   reading: "As belief, not finding: early mathematical form present, circle absent, and he explicitly separates geometric reason from knowledge of God. A case against reading form as sufficient for the circle."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Roman Catholic, Jansenist, associated with Port-Royal from 1655 (S1, S2). Provincial Letters: no salvation outside the Church (S1 §2)."
+    cites: [{source: S1, locator: "§1"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file names the Provincial Letters and does not document censorship, prison, exile, or a prosecution."
+    cites: [{source: S1, locator: "§1"}]
+  practice_gap:
+    gap: aligned
+    evidence: "Port-Royal and the Provincial Letters (S1) match Catholic commitment. Pensées and the Mémorial (S3, S6) agree. No contrary act is in the file."
+    cites: [{source: S1, locator: "§2"}]
 institutions:
   - {value: "Port-Royal (Jansenist convent and community)", role: "associate; entered January 1655 without becoming one of the solitaires", years: "1655–1662", kind: "religious body", certainty: 1.0, cites: [{source: S2, locator: "'Pascal’s life to the Port-Royal years'"}, {source: S1, locator: "§1"}], how_known: "Two sources."}
   - {value: "Mersenne circle (Paris)", role: "young member, introduced by his father", years: "before 1640", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: if the thesis result ever counts, span alternative 1950–1970 (December 1950 AAS talk), age 22."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 221). Sources: Britannica scholars edition, signed by Kelly Gisonna (read in full); ADS record of Rubin and Ford 1970 (S3). Lasting: galaxy rotation evidence for dark matter; 'The existence of dark matter was previously only a conjecture but was confirmed through Rubin's work' (S1); the Andromeda rotation paper appeared in ApJ 159 (February 1970) (S3). The 1951 supergalactic-plane result ('now known to be evidence of the supergalactic plane') is listed as a major work, not lasting (AA10 audit: it says the result was right, not that it lasted; Mirzakhani line). If it ever counts, P30 dates it to her December 1950 AAS talk: span alternative 1950–1970, age 22. Span 1970, age 42. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN; heritage Jewish 0.7. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #208/228, F 3, rank 221): firm B; seek any A; do not force plot. Read Physics Today 'A two-way galaxy' (Rubin 2007, S4); Discover 2002 interview Newton-laws quote via Wikiquote + search transcript (S5); Meyer/NC Register 1996 Pontifical Academy interview (S6); Wikipedia EN (S7); Jewish Women's Archive (S8). B 3@0.5 inference_from_work (P35)→3 @0.7 written_profession, support corroborated (S4+S5): Newton's law of gravitation for galaxies; prefers dark matter over modifying Newton; 'Newton's laws hold over a very large domain'; alt 4 kept (P16/P35). A stays UNKNOWN (religion as 'moral code and a kind of history' places no locus; Nature 2003 dinner-with-God is party-game, unused). primary stays UNKNOWN; JUDA rejected (do_not_use_when: no God/Torah/covenant in own words). Mid UNKNOWN. Not plotted. P47 source_quality on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: rubin-vera
   display_name: "Vera Rubin"
@@ -153,6 +154,19 @@ lane_b:
   reading: "Lane B only: Jewish family background and later moral-code self-description are consistent with cultural Jewish identity; they do not decide mid_basin."
   notes: "Do not treat heritage as an outcome."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: jewish
+    detail: "Own words, 1996: 'I'm Jewish, and so religion to me is a kind of moral code and a kind of history' (S6)."
+    cites: [{source: S6, locator: "Meyer, National Catholic Register / EWTN, Dec 1996"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "S6 states Jewish identity and that definition of religion together. The file has no contrary membership."
+    cites: [{source: S6, locator: "Meyer, National Catholic Register / EWTN, Dec 1996"}]
 institutions:
   - {value: "Carnegie Institution, Department of Terrestrial Magnetism", role: "astronomer", years: "1965–UNKNOWN", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "The supergalactic plane, dark matter, and legacy"}], how_known: "Britannica."}
   - {value: "Pontifical Academy of Sciences", role: "member", years: "1996–2016", kind: "other", certainty: 0.7, cites: [{source: S6, locator: "appointment coverage"}, {source: S7, locator: "Awards (Member, Pontifical Academy)"}], how_known: "Meyer interview; Wikipedia."}

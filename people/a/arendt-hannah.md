@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 34). Basics from SEP (Tömmel and Passerin d'Entrèves) and Britannica. Worldview evidence: one private letter to Jaspers (4 March 1951) stating a 'trust' in God distinct from faith and no interest in traditional religion, read only as a Spanish quotation in Araos (Humanitas). Single private letter, secondary quotation, and no locus or nature statement: primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #34, next-50 batch). Needs: A BELOW_THRESHOLD; B UNKNOWN. Re-opened Araos Humanitas full web text (S3; Spanish 1951 letter + Denktagebuch May 1965); Wikipedia EN (S7); JWA Whitfield (S8); Young-Bruehl Spanish Paidós/elboomeran PDF (S9) for Vogelstein childhood and non-religious parents; Zawisza Cryptotheology MDPI 2018 (S10) scholarly reconstruction (not used to lift A). P47 source_quality on every source. A stays BELOW_THRESHOLD: 1951 private letter states trust in God but nothing on where God is (locus); single private letter below 0.5 unless scholar backs a scored locus reading (§3); Araos backs belief, not locus; cryptotheology/Denktagebuch speculative politics not confession. B stays UNKNOWN (P16/P30): not a scientist; lasting contributions are political philosophy, not theories about natural systems; no explicit nature-order remark in S1–S10 (Human Condition earth/labor anthropological; Zawisza Augustine/tzimtzum are scholarly reconstruction, not her B). Childhood/heritage filled. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: arendt-hannah
   display_name: "Hannah Arendt"
@@ -163,6 +164,17 @@ lane_b:
   reading: "No reading possible while A is BELOW_THRESHOLD and B is UNKNOWN."
   notes: "Lane B is separate from Lane A axis scores (P47–P50 framing)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "A 1951 private letter pairs trust in God with traditional Jewish and Christian religion meaning nothing to her. No adult affiliation is stated."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "University of Chicago", role: professor, years: "1963–1967", kind: university, certainty: 0.7, cites: [{source: S2, locator: "third paragraph"}, {source: S7, locator: "Teaching"}], how_known: "Britannica + Wikipedia."}
   - {value: "New School for Social Research", role: professor, years: "1967–1975", kind: university, certainty: 0.7, cites: [{source: S2, locator: "third paragraph"}, {source: S1, locator: "§1"}, {source: S7, locator: "Teaching"}], how_known: "Britannica + SEP + Wikipedia."}

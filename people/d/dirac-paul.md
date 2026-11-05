@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Kojevnikov, first page), MacTutor and the Nobel biography. No writing by Dirac on religion could be checked: the 1963 Scientific American article is access-restricted on the Internet Archive, the FSU Library scan of his 1976 Lindau lecture notes sits behind a bot challenge, and the 1927 Solvay remarks survive only in Heisenberg's later reconstruction (another person's report). primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #123 / F4 rank 124). Goals: open SciAm 1963 / Lindau / Farm Hall or other own-voice on God; lift A/primary if justified; keep honest BELOW if secondary-only. Opened SciAm May 1963 full text via SciAm guest-blog republish (S5); Lindau 1976 Mediatheque English transcript (S7; no God talk in delivered lecture); Wikipedia EN dual bio (S6, P50). Farm Hall not a Dirac source (Solvay misattribution). A stays BELOW_THRESHOLD: SciAm 'God is a mathematician' is hedged metaphor ('One could perhaps describe'); Solvay 1927 still Heisenberg reconstruction (P49, not own voice); 1971 conditional God/life quote only via Wikipedia citing Kragh (secondary). B 3 stays @0.5: basis inference_from_work→written_profession (S5 'fundamental physical laws' / 'nature is so constructed'; S7 math-beauty as guide to laws); P16 Hilbert / P35 keep 0.5 without exception/no-exception claim (alt 4); support corroborated. primary_system / mid_basin stay BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: dirac-paul
   display_name: "Paul Dirac"
@@ -171,6 +172,17 @@ lane_b:
   reading: "As belief, not finding: form partly present (mathematical beauty as guide), circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The 1963 'God is a mathematician' line is a hedged metaphor. The 1976 lecture has no theology. 'God and the Big Bang' was not opened."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No adult affiliation is stated in the texts that were opened."
 institutions:
   - {value: "University of Cambridge (St John's College)", role: "fellow (1927); Lucasian Professor of Mathematics (1932–1969)", years: "1923–1969", kind: university, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "paragraph 1"}], how_known: "Two sources."}
   - {value: "Florida State University", role: "professor of physics", years: "1971–1984", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Dirac taught at Cambridge' paragraph"}, {source: S2, locator: "Biography (1971)"}], how_known: "Two sources."}

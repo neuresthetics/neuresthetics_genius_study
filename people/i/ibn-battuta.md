@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (skip catch-up 11/13; F3 rank 183). Needs: firm A/primary if attribution allows; P42 Rihlah/Ibn Juzayy; not scientist for B; do not force plot. Dual bio Wikipedia EN (S8, P50). P47 source_quality on S1–S8. Primary check: Fordham Medieval Sourcebook Gibb extracts (S6) — pilgrimage intention to Holy House and Tomb of the Prophet; 'If God decrees my death, it shall be on the road with my face set toward Mecca'; Medina salutation to Muhammad. Dunn UCLA keynote (S7): Juzayy prune/polish of language while reporting travels faithfully; Maliki family education; prison Qurʾān recitation / 'sufficient for us is God' (secondary). ORIAS (S4) re-read: Juzayy kept to his telling + borrowed place-descriptions (Jubayr) for Mecca/Medina/Damascus — creed lines are journey autobiography, not borrowed topography. primary_system ISLAM @0.5 written_profession (P42 Juzayy wording / Craft analogy cap); A 0 @0.5 single; B UNKNOWN (not scientist P30; no P16 nature-order); mid_basin UNKNOWN. Chart-moving NO (need A&B ≥0.7). Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fixes (FAIL; v8's call on the auditor's advice, RQ-Z9-N1, P12): span 1353 -> 1355 at 0.5, alternative 1354; age 49 -> 51 (alt 50). Dated by the colophon, 'Its dictation was finished on 3rd Dhu'l-hijja 756 [December 9, 1355]' (Gibb's translation, new S3); Britannica's 'dictated in 1353' is impossible (he left Mali on 27 February 1353). The unsupported 1356 alternative and its source (Project MUSE excerpt) dropped. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 183; roster status review). Basics from Britannica (students and scholars editions, body; the main site's Top Questions box not used, P26). The Rihlah was dictated to Ibn Juzayy, who 'embellished the simple prose of Ibn Baṭṭūṭah with an ornate style and fragments of poetry' (S2), so its wording is Ibn Juzayy's and its attribution to him as author is shared (P42). Dating: Britannica's Travels article says 'dictated in 1353'; a journal article (Project MUSE, 2024) has Ibn Juzayy completing it in 1356; Berkeley's ORIAS page puts the dictation after his 1354 return to Fez. The encyclopedia year is used at 0.5 (RQ-Z9-N1: a manuscript-era work dated from article text), with 1355/1356 as the alternative. No own-voice religious text read: primary_system UNKNOWN (lead ISLAM: Muslim jurist, pilgrimage, 'the traveler of Islam'); A UNKNOWN; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1353, age 49. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ibn-battuta
   display_name: "Ibn Battuta"
@@ -163,6 +164,19 @@ lane_b:
   reading: "Interventionist Muslim traveler-jurist on mediated evidence at 0.5; not a mid-basin case (B missing). H1 stress test does not apply — not plotted."
   notes: "Lane B only; not a finding."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Sunni Maliki qadi in Delhi, the Maldives, and later Morocco. The Rihlah, as the file uses his dictation, states the hajj and a God who decrees death."
+    cites: [{source: S7, locator: "Maliki; qadi Delhi / Maldives"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Imprisonment under Ibn Tughluq is recorded as detention, not as a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The qadi office matches Islam, and the Rihlah's pilgrimage and Medina salutation to Muhammad do not contradict it. No contrary text is in the file."
+    cites: [{source: S6, locator: "p. 43 opening"}]
 institutions: []
 collaborators:
   - {value: "Ibn Juzayy", relation: "collaborator", note: "wrote up the dictated Rihlah (prune/polish language; P42 shared wording)", certainty: 0.7, cites: [{source: S2, locator: "para. 1"}, {source: S7, locator: "pruning and polishing"}], how_known: "Britannica; Dunn."}

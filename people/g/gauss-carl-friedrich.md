@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Lutheran (Brunswick) @0.7 from new Wikipedia S8 + Britannica birthplace. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Gray, first page). Worldview from Sartorius von Waltershausen, Gauss zum Gedächtniss (1856), a friend's memoir with reported sayings, read on the Internet Archive scan (pp. 16, 97, 98, 101, 102, 103 checked on the page images; pp. 99–100 in the OCR text only). No writing by Gauss on religion was read. primary_system BELOW_THRESHOLD. A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. first_lasting_contribution_year 1796 → 1795 (P12 start of the 1795–1801 least-squares item) (P17, P23), the 1796 alternative dropped since it needs the item re-dated or split (P23), 1792 kept (P25), era and age unchanged; 17-gon item 1.0 → 0.5 with Britannica's 1792 named (P25); major_work_period how_known cites the sources' dates (P23); A_locus 1 (0.5) → BELOW_THRESHOLD and B_cause 4 (0.5) → BELOW_THRESHOLD (reported speech alone (P18); B needs a statement about nature (P16)); E_scope stays BELOW_THRESHOLD (reported 'Logik' through the universe and working science, P19; the draft's UNKNOWN reverted); mid_basin note rewritten; lio_views_relative_to_major_work unclear → no LIO-type views found (P27); schooling/0 stage dame or charity school → elementary school (P21); single-source 1.0 fields → 0.7 (P15) (definition_fit, working_years, Göttingen observatory, Weber, Riemann); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #15). P47 source_quality on every source. Own-word letters: S5 Schmidt–Stäckel Briefwechsel Gauss–Bolyai (1899; archive.org OCR) — 1799.I.9 hope of better future; 1802.XII.3 true life in eigentliche Heimat; 1848.IV.20 Schöpfer unsrer Existenz / schönere Metamorphose; S6 Schilling Wilhelm Olbers Bd. 2.1 (1900) Brief 1805.IX.3 'bloss durch die Gnade Gottes'; S7 Kneller Christianity and the leaders of modern science (1911) scholarly digest of those letters. A_locus BELOW_THRESHOLD → 1 @ 0.5 consistent_private_letters, support corroborated (S5+S6); named alt 2 (deist reading, Bühler). B_cause BELOW_THRESHOLD → 3 @ 0.5 inference_from_work, support corroborated (S2+S3; P30/P35 scientist: least squares/Ceres, least constraint, magnetism/potential theory); named alt 4. C stays BELOW_THRESHOLD (immortality without reward/punishment language). D stays BELOW_THRESHOLD (reported speech on science/religion). E stays BELOW_THRESHOLD (scientist, no statement; P19). mid_basin still BELOW_THRESHOLD (A and B only at 0.5). primary_system stays BELOW_THRESHOLD (confession still open). Chart: unplotted → faded filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: gauss-carl-friedrich
   display_name: "Carl Friedrich Gauss"
@@ -239,6 +240,17 @@ lane_b:
   reading: "As belief, not finding: form present, circle partly present on a friend's report. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Own letters name God's grace and a Creator, but no church or confession. The Lutheran line is regional heritage. Sartorius's summary is a friend's report."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation is stated, so there is nothing to compare."
 institutions:
   - {value: "Göttingen Observatory and University of Göttingen", role: "director of the observatory", years: "1807–1855", kind: university, certainty: 0.7, cites: [{source: S2, locator: "Biography (1807)"}], how_known: "MacTutor alone, so 0.7 under the single-source rule (P15)."}
   - {value: "Survey of the Kingdom of Hanover", role: "in charge of observations", years: "1818–1832", kind: "government or state body", certainty: 0.7, cites: [{source: S3, locator: "Hanover survey paragraph"}], how_known: "Britannica."}

@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 19). Basics and works from Britannica (Seitz), first part of the article only. No statement of his on religion, God or nature's order was read. Not a scientist. primary_system UNKNOWN; all axes UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #19, F5 rank 19). P47 source_quality on every source. Dual-sourced birth/death/baptism (S1 Britannica prior read + S3 Wikipedia EN + S4 Wildenstein Tome I OCR). Adult religion: no Monet letter denying God found (ARTIC Wildenstein letter PDFs 403); Blanche Hoschedé posthumous notes via Wildenstein IV n.1327 (S5) — civil burial wish, non-practice, family free to follow their religion (reported speech); Levine 1994 p.66 and Butler 2008 p.202 call him atheist without quoting him (S6, S7 via Wikipedia footnote sentences). Clemenceau «pas de noir pour Monet» is Clemenceau's funeral act, not Monet's creed (S5). primary_system BELOW_THRESHOLD (lead ATHE); A_locus BELOW_THRESHOLD (no own locus/denial; P38 needs published disbelief); B_cause UNKNOWN (not a scientist; nothing on law/exception, P16); C/D/E UNKNOWN; mid_basin UNKNOWN (B UNKNOWN takes precedence, P19). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: monet-claude
   display_name: "Claude Monet"
@@ -153,6 +154,18 @@ lane_b:
   reading: "As belief, not finding: unclear. Does not test H1."
   notes: "Lane A worldview deepen does not supply Lane B geometric-form evidence."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Infant baptism only. Posthumous notes by Blanche Hoschedé report a wish for a civil burial. No letter of his states an affiliation."
+    cites: [{source: S5, locator: "note 1327 (Notes posthumes de Blanche Hoschedé-Monet, p. 164)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions: []
 collaborators:
   - {value: "Eugène Boudin", relation: teacher, certainty: 0.7, cites: [{source: S1, locator: "Childhood section"}, {source: S3, locator: "Birth and childhood"}], how_known: "Britannica + Wikipedia EN."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 53). Basics from Britannica (Budden), signed body only (work years given only in the Top Questions box are not used). Worldview from letters in Nohl's collection, Lady Wallace's translation, Gutenberg #13065 (web copy, 0.7 cap): Heiligenstadt document 1802, letter to Zmeskall 1813. Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, CLTHEI, DEISM); A 0 at 0.7 (alt 1); B BELOW_THRESHOLD (Providence statements are about his life, not nature, P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. No datable lasting contribution in the signed body read (P39). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold; note on timing): signed Britannica sections re-checked; no dated lasting work is citable, so the timing fields stay UNKNOWN. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #53, F5 rank 53). Needs: A single source; B BELOW_THRESHOLD. P47 source_quality on S1–S7. Corroborated A via German Wikisource Heiligenstädter Testament (S4, Gottheit/Vorsehung) and independent EN Wikisource translation (S5) alongside Wallace Gutenberg S2; A stays 0 @ 0.7, support single→corroborated (P48); alt 1 retained. Gutenberg vol. 2 (S6) letter 300 to Archduke Rudolph 18 July 1821 (Providence / humanity, God, and Nature) added as further A stream — still own-life Providence, not nature's order (P16). B stays BELOW_THRESHOLD under P16 (temple of Nature = joy locus; Humanity/God/Nature letter = duties + rescue from tribulations; forest Holy! quotes and Sturm markings unread as law-vs-exception statements). Dual-source bio via Wikipedia EN (S7): Catholic baptism St Remigius; Op. 1 1795; First Symphony 1800; timing filled. Chart-moving NO (B still BELOW; still unplotted). Anderson Letters / Solomon Tagebuch / Sturm annotations unread. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: van-beethoven-ludwig
   display_name: "Ludwig van Beethoven"
@@ -175,6 +176,19 @@ lane_b:
   reading: "Personal providential theism in letters."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Private Heiligenstadt Testament and letters address a Divine One, Providence, and the Almighty. Catholic baptism is infant. No adult office is in the file."
+    cites: [{source: S4, locator: "main Testament (6 Oct. 1802)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1802 testament, the 1813 letter, and the 1821 letter all address Providence or the Almighty. No denial or other church is in the file."
+    cites: [{source: S6, locator: "No. 300, to Archduke Rudolph, 18 July 1821"}]
 institutions:
   - {value: "Court of the archbishop-elector of Cologne, Bonn", role: "assistant court organist; continuo player; violist", years: "1782–1792", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'The early years'"}], how_known: "Britannica."}
 collaborators:

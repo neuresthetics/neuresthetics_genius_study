@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Human Immortality (1898, IA humanimmortalit00jame) as S7 — within span. Own endorsement that some psychical phenomena including 'providential leadings in answer to prayer' and 'instantaneous healings' are facts; transmission theory allows 'exceptional waves' / power from without. Add S7 to B value cites; clear exclusive S1 from P35 alt cites (note retained) → B support single→corroborated (beside Varieties Postscript S3). A already corroborated → faded hollow→filled. Certainty stays 0.5 (named alt 3). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #213/228, F 3, rank 226). Goals: firm A and B from Varieties / Will to Believe / letters; pragmatism/pluralism may keep A mixed; do not force plot; P20/P38 if agnostic. Opened Varieties Postscript (S3 Wikisource/Gutenberg): own piecemeal supernaturalism; transmundane energies / God produce immediate effects in nature; larger power other and continuous; rejects popular Christianity and scholastic theism. Will to Believe (S4): Reflex Action theism (God as mental personality / Thou; ultimate opacity); Will to Believe essay refuses agnostic veto. Pragmatism lecture VIII (S5): hypothesis of God works / not an atheistic system. Wikipedia dual-bio (S6). A BELOW_THRESHOLD → 2 @ 0.5 written_profession, support corroborated (S3+S4), alt 1. B 3 @ 0.5 single → 2 @ 0.5 written_profession (piecemeal miracles/providence as live), support single, alt 3 (P35 working-science). primary_system BELOW_THRESHOLD → PRAG @ 0.5 written_profession (alt PANENT). Not AGNOS (P20/P38): he adopts the God hypothesis and refuses agnostic rules. mid_basin stays BELOW_THRESHOLD (A 2 between branches; both @ 0.5). Chart-moving YES: not plotted → faded hollow at next refresh (A corroborated, B single → hollow; both faded @ 0.5). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit fixes: 'ultimate opacity' quote dated 1881 (reprinted 1897), before the span (no score change). RQ-AB1-1, v8's call on the auditor's advice: scientist under the P35 theories-of-mind addendum, B 3 at 0.5, alt 4; 'piecemeal supernaturalism' (Varieties postscript) noted as a B 2 lead. Still not plotted (A BELOW_THRESHOLD)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 226). Source: SEP 'William James' (Russell Goodman, 2021, read in full). Lasting: The Principles of Psychology (1890), which 'influenced generations of thinkers in Europe and America' (S1), and Pragmatism (1907), 'influential', in the 'pragmatist tradition that he founded (along with Charles Peirce)' (S1). Span 1890–1907, age 48. Worldview: he advocated a 'theism' positing 'an ultimate opacity in things' ('Reflex Action and Theism', 1881, reprinted 1897) and wrote 'if the hypothesis of God works satisfactorily in the widest sense of the word, it is true' (Pragmatism, 1907); S1: he 'oscillated' between a naturalistic 'Science of Religion' and 'an altogether supernatural domain'. primary_system BELOW_THRESHOLD (theistic and pragmatist leads); A BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. B 3 at 0.5, alt 4 (P35; RQ-AB1-1). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: james-william
   display_name: "William James"
@@ -219,6 +220,19 @@ lane_b:
   reading: "Belief model only. Piecemeal supernaturalism and pragmatist God-hypothesis are Lane A."
   notes: "H1 not tested."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Varieties postscript: he cannot accept popular Christianity or scholastic theism, and he affirms communion with the Ideal and piecemeal supernaturalism. No church is stated."
+    cites: [{source: S3, locator: "Postscript"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "Pragmatism and the postscript both claim that God-hypothesis. Rejecting popular Christianity is part of that stance, not a second affiliation."
+    cites: [{source: S5, locator: "Lecture VIII, Pragmatism and Religion"}]
 institutions:
   - {value: "Harvard University", role: "instructor in physiology and psychology; professor of philosophy", years: "1873–1907", kind: "university", certainty: 0.5, cites: [{source: S1, locator: "1. Chronology"}], how_known: "SEP chronology; end year is the coder's reading."}
 collaborators:

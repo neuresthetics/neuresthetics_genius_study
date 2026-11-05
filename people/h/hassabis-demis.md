@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (skip catch-up 7/13; F3 rank 159). Needs: firm A/B if first-hand allow; prefer interviews over Mallaby; P33 AlphaFold method → not scientist; P16 for B; do not force plot. Opened Economist YouTube interview (S6, ~Apr 2026; Clipto transcript) and Lex Fridman Podcast #475 transcript (S7, published 2025-07-23); Wikipedia EN dual bio (S8, P50). primary_system UNKNOWN → BELOW_THRESHOLD (leads AGNOS from Economist open-minded dual Baptist/atheist inputs; PANT/DEISM remain Mallaby second-hand leads only — V3 / Jobs pattern until Infinity Machine is read). A_locus UNKNOWN → BELOW_THRESHOLD (open-minded; scientist-first; dislikes 'building God'; no place or deny of personal intervening God — P20). B_cause UNKNOWN → 3 @0.5 alt 4 (interview, P16 Hilbert path / Tao precedent): Lex own-voice 'nature's not random'; 'natural systems have structure'; 'how the universe is structured'; universe as 'informational system' — lawful-order remarks without exceptionless claim (P40); not scientist (P33 / Z6-11 HOLD). Support single. After span 2020 (P20). mid_basin UNKNOWN → BELOW_THRESHOLD (A BELOW; B only 0.5). Chart-moving NO. Childhood/heritage filled from S6/S8. P47 source_quality on S1–S8. Mallaby park quote stays lead-only (S2/S4/S5). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-10, Z6-11 HOLD with notes): says where 'my religion, kind of' was seen (Kirkus review S4; Media and the Machine transcript S5; not on Keen On S2); B how_known now gives the auditor's answer on scientist status (AlphaFold2 listed as a method, P33; Knuth, Tao) instead of 'pending a ruling'. No value changed; still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 159). Basics from NobelPrize.org facts (Chemistry 2024). His words on religion seen only as quoted from Sebastian Mallaby's biography The Infinity Machine (2026) in reviews and an interview with Mallaby: 'doing science is, sort of, like reading the mind of God. Understanding the deep mystery of the universe is my religion, kind of'; Mallaby calls him a Spinozan. Second-hand quotations alone (V3), so UNKNOWN with leads. Scientist status not decided: AlphaFold2 is an AI method for a natural system (protein structure); Knuth/Tao precedent says not, the Chemistry Nobel says yes; B UNKNOWN pending a ruling. Span 2020. primary_system UNKNOWN (leads PANT, DEISM); A UNKNOWN; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hassabis-demis
   display_name: "Demis Hassabis"
@@ -197,6 +198,17 @@ lane_b:
   reading: "Not a scientist (P33). B 3 @0.5 from Lex nature-order remarks (P16) only — faded; A BELOW. Not plotted."
   notes: "Lane B labeled belief only."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "He describes a Baptist mother and an atheist father and calls science, philosophy, and religion ways of finding our place. He states no religion of his own."
+  conformity_pressure:
+    level: unknown
+    evidence: "The 2025–26 interviews do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare. The household mix is his parents', not his."
 institutions:
   - {value: "Google DeepMind", role: "co-founder; CEO", years: UNKNOWN, kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "Affiliation"}], how_known: "NobelPrize.org."}
 collaborators:

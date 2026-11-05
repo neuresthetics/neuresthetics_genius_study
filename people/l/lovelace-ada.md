@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from her letter to Faraday of 16 October 1844 (Epsilon transcription of IEE MS SC 2) and her letter to Andrew Crosse of about 16 November 1844 (MacTutor transcription, secondary quotation). Not a scientist under P30/P33 (the Notes describe a machine). primary_system CHRIST 0.5 (consistent_private_letters, held below the ceiling; alternative BELOW_THRESHOLD, eclectic); A_locus 1 (0.5); B_cause 4 (0.5); C UNKNOWN; D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #3 A_locus 1 → 0 at 0.5, alternative 1 (coder's call: the 'ONE' and 'naturally related and interconnected' wording is about the unity of the works, not a limiting feature of God's transcendence). Quote hygiene: stray transcription spaces removed; S3 locators corrected to paragraphs 5 and 6 (were 'paragraph 2'). The 'secondary quotation' reason for CHRIST at 0.5 dropped; the hedge alone holds it at 0.5 (P29). mid_basin unchanged (BELOW_THRESHOLD)."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #1). P47 source_quality on every source. Crosse letter (S4) primary-checked against Kölbing 1894 reprint of Argosy 1869 'Byron's Daughter' (new S6); scored passages match and the fuller text is now cited. B_cause 4 certainty 0.5 → 0.7 (consistent_private_letters ceiling; secondary-quotation hedge dropped). A_locus stays 0 at 0.5 (coder's 0-vs-1 call). support corroborated on A and B (already two cites; now explicit). early_mathematics filled from MacTutor. family_religion / religious_heritage filled at 0.5 from adult self-report plus secondary on Lady Byron's circle. Chart person-dot: still faded filled (min(A,B) certainty still 0.5). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: lovelace-ada
   display_name: "Ada Lovelace"
@@ -206,6 +207,19 @@ lane_b:
   reading: "As belief, not finding: form partly present, circle partly present; the letters come after the work."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: mixed
+    detail: "Private letter, 16 Oct 1844: 'I am myself a Unitarian Christian,' also Swedenborgian, 'slightly Roman Catholic,' and allied with the Rosicrucians."
+    cites: [{source: S3, locator: "letter text, closing paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The same private letter states that combination and also calls her one of God's children. No later text in the file withdraws it."
+    cites: [{source: S3, locator: "letter text, paragraph 5"}]
 institutions: []
 collaborators:
   - {value: "Charles Babbage (babbage-charles)", relation: collaborator, note: "met 5 June 1833; the Notes were written with his suggestions", certainty: 1.0, cites: [{source: S1, locator: "Biography (1833; Babbage's account)"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources."}

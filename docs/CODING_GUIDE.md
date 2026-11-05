@@ -41,9 +41,11 @@ How the rules map onto fields:
 
 ## 2. Lanes
 
-- **Lane A** (descriptive): `basics`, `contribution`, `childhood`, `worldview`, `timing`, `institutions` and `collaborators` hold facts with sources. Write them so that someone who rejects Lane B can still use them.
-- **Lane B** (labeled belief model): only `lane_b.*` and the body section "Lane B notes (labeled belief model)". Lane B language stays out of Lane A fields. Write "geometric form present: yes, because ...". Don't write "this explains the genius".
+- **Lane A** (descriptive): `basics`, `contribution`, `childhood`, `worldview`, `timing`, `religion_conformity`, `institutions` and `collaborators` hold facts with sources. Write them so that someone who rejects Lane B can still use them. `religion_conformity` is public record only (schema 1.5, §8). It does not feed Lane B.
+- **Lane B** (labeled belief model): only `lane_b.*` and the body section "Lane B notes (labeled belief model)". Lane B language stays out of Lane A fields. Write "geometric form present: yes, because ...". Don't write "this explains the genius". The fear-of-conformity hypothesis below is Lane B. It is not a finding, and a Lane A frequency does not confirm it.
 - **Heritage** is context only.
+
+**Lane B hypothesis (religion conformity; can fail).** People stated a public religious affiliation because violence or ostracism made dissent costly, and their documented words or acts diverged from that affiliation where the cost was high. This is a belief model, not a result. Lane A does not test it. What would falsify it: among people with documented `high` or `severe` conformity pressure, `practice_gap` is not more often `mixed` or `divergent` than among people with documented `low` pressure; or the documented gaps sit mainly where dissent was safe; or people under documented severe pressure are `aligned`, with no contrary document in the file. A thin record (`unknown`) does not count for or against the hypothesis. Do not write this hypothesis into `religion_conformity` or into any LIO score.
 
 Glossary (v7.1 data book, section 3 "Dictionary", verbatim):
 
@@ -310,6 +312,40 @@ Notes:
 - `geometric_form_present` and `circle_present` are `yes` / `partly` / `no` / `unclear`. `form_acquired` is `childhood or adolescence` / `adulthood, before major work` / `through the profession` / `unclear`.
 - Each needs cites like any claim.
 - `reading` states what the case means for H1, *as belief*. A case that cuts against H1 should be recorded just as carefully as one that fits.
+- The religion-conformity fear hypothesis is stated in §2. It lives here, not in `religion_conformity`. Do not add a per-person verdict that someone conformed out of fear. A person file's Lane B notes may say the case is compatible with the hypothesis or cuts against it only by pointing at the Lane A fields, and must name the falsifier in §2. Absence of a gap is not evidence of courage, and presence of a gap is not evidence of fear.
+
+**Religion conformity** (schema 1.5, 2026-11-05). Three small Lane A fields under `religion_conformity`. They do not change A–E, `mid_basin`, `primary_system`, `basics.era_bucket`, or the charts. They are not claims with certainty: a controlled value, one line, and a source. `unknown` is the default when the sources read are thin. Do not pad.
+
+Do not label anyone a secret unbeliever, and do not guess inner belief. Record a public statement, a public office, or a documented text or act. Banned in the one-line fields: "unbeliever", "hypocrisy", "really believed", "secretly", and the same idea in other words. The validator rejects those phrases.
+
+`primary_system` is not a stated affiliation. A CHRIST or ATHE code does not set the label. `family_religion`, infant baptism, childhood catechism, and `religious_heritage_by_birth` do not set it. A formulaic will preamble does not (P42). Fiction and a character's words do not (P42). A disciples' compilation is not the person's statement unless the file already treats a sentence as their own voice.
+
+- **`stated_affiliation`**. The adult public affiliation or stance.
+  - `christian_catholic`, `christian_protestant` (Anglican, Lutheran, Reformed, Methodist, Baptist, Congregational, Presbyterian, Quaker), `christian_orthodox`, `christian_other` (publicly Christian and the denomination is not in the file, or a Unitarian or other non-Nicene statement that still says Christian).
+  - `jewish`, `muslim`, `hindu`, `buddhist`, `confucian`, `daoist`.
+  - `other_stated`: a public stance outside that list (a civic cult they stated, a published metaphysical theology they claimed and no church).
+  - `secular`: their own words say atheist, agnostic, freethinker, humanist, no religion, or that they do not practice. A scholar's adjective is not enough. If the words are a private letter or a posthumous memoir, the detail says so.
+  - `mixed`: two public affiliations, or an explicit combination, in the same adult period.
+  - `none_stated`: the adult record was checked and no affiliation was stated. Say what was checked. Use this only when the check is real; otherwise `unknown`.
+  - `unknown`: the file does not settle it.
+  - A non-`unknown` label needs a cite already in the file, or a well-known scholarly or primary source added to `sources`. The detail is one line.
+
+- **`conformity_pressure`**. Documented risk for religious dissent in that place and working years. Do not infer the level from the century or the region alone. One line of evidence and a cite, unless `unknown`.
+  - `severe`: death, torture, or the same kind of destruction was a used sanction against religious dissent (a working capital inquisition, an execution for impiety, blasphemy, or apostasy, a camp or execution for religion).
+  - `high`: prison, exile, legal incapacitation, or a formal heresy or blasphemy prosecution was a used sanction, short of that capital apparatus.
+  - `moderate`: censorship, loss of post, excommunication, a professional bar, or a civic disability (a test act, recusancy fines), without a working capital apparatus in their immediate setting.
+  - `low`: the sources document that religious dissent was legally protected or openly unpunished.
+  - `unknown`: the sources read do not document the setting's risk.
+
+- **`practice_gap`**. Whether documented adult letters, published work, or behavior diverged from the stated affiliation. Observable comparison only.
+  - `aligned`: at least one documented adult act or text matches the stated affiliation, and the file has no documented adult act or text that contradicts a core public claim of it.
+  - `mixed`: both a documented match and a documented contradiction (a public office in one church, and letters or manuscripts that reject a core doctrine of that church).
+  - `divergent`: a documented contradiction, and no remaining documented adult endorsement of the stated affiliation.
+  - `unknown`: stated affiliation is `unknown` or `none_stated` (nothing to compare), or the sources do not contain a comparison.
+  - No contradiction found is not `aligned`. Alignment needs a positive documented match.
+  - The validator requires `unknown` when the label is `unknown` or `none_stated`.
+
+Prefer a source already in the person file. Add a scholarly or primary source only when the file does not already document a point you can actually cite. Do not add a source in order to upgrade `unknown`.
 
 **Institutions and collaborators.** Use `roster_id` when the other person is on the roster (the validator checks it). Use institution kind `research institute` for a body that exists mainly for research outside a university's teaching (IAS, the Kaiser Wilhelm and Max Planck institutes, Dublin IAS, Institut Pasteur, the Royal Institution) (P21).
 

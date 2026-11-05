@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus support single→corroborated (P48) via D'Arcy Power 1897 (S7) quoting Generation essay 54 Creator-and-Father / Almighty first-cause diction agreeing with Willis S3. B already corroborated. Certainty stays 0.5 (named alt 0). Chart cue: faded hollow→faded filled. No fallacy_catalog; no figures/."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #212/228, F 3, rank 225). Goals: firm B with corroboration; seek any A from De Motu / letters / will; P35 if applicable; do not force plot. Opened Willis 1847 Works via Gutenberg (S3: De Motu fabric-of-nature + De Generatione first-agent / Omnipotent Creator); will text (S4) — P42 formulaic preamble → nominal_affiliations only; Galileo Project Westfall (S5) Anglican; Wikipedia dual-bio (S6). primary_system UNKNOWN → CLASS_THEISM @ 0.5 written_profession (alt CHRIST). A_locus UNKNOWN → 1 @ 0.5 written_profession, support single (alt 0). B_cause stays 3 @ 0.5 inference_from_work (P35); support single → corroborated (S1+S3); alt 4. E UNKNOWN → BELOW_THRESHOLD (P19). mid_basin UNKNOWN → BELOW_THRESHOLD (shape would pass; both axes only 0.5). Will Christ/Maker line not scored (P42). Chart-moving YES: not plotted → faded hollow at next figure refresh (A now scored; B faded; A single → hollow). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: 'later Renaissance' framing (S1) added as a lead (no score change)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 225). Source: Britannica scholars edition, signed by Andrew Gregory (read in full). Lasting: the circulation of the blood, De Motu Cordis (1628); he 'was the first to recognize the full circulation of the blood in the human body'; the theory 'was well established by the time of his death' (S1). Discovery probably 1618–19 but published 1628 (P30 publication). The generation work (1651) has no lasting wording. Span 1628, age 50. Scientist: B 3 at 0.5, alt 4 (P35); S1 notes his vitalism (blood with 'an irreducible life force of its own') and opposition to mechanism, which does not bear on law and exception. Worldview: no own words on God (the 'household-god' line is a metaphor for the heart); UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: harvey-william
   display_name: "William Harvey"
@@ -174,6 +175,17 @@ lane_b:
   reading: "Belief model only. Circulation as lawful fabric-of-nature science; Generation first-agent theism is Lane A."
   notes: "H1 not tested."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Westfall's catalogue calls him Anglican and the will names Christ; the file treats the will as a set legal preamble. The Generation Deity sentence is a view of generation, not a church."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent in his England."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Royal College of Physicians of London", role: "fellow; Lumleian lecturer", years: "1607–1657", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "Education"}], how_known: "Britannica."}
   - {value: "St Bartholomew's Hospital", role: "physician", years: "1609–1643", kind: "employer", certainty: 0.7, cites: [{source: S1, locator: "Education"}], how_known: "Britannica."}

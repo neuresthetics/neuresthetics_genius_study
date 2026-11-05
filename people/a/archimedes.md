@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #8). P47 source_quality on every source. Added Heath Works of Archimedes (1897; S3 scholarly edition) and Method supplement (1912; S4): own postulates/propositions for statics and hydrostatics (Equilibrium I Posts. 1–7 and Props. 6–7; Floating Bodies I Post. 1 and Prop. 2). B_cause stays 3 @ 0.5 (P16 Hilbert / P35: lawful physical regularities, no no-exception claim) but basis inference_from_work → written_profession; support single → corroborated (S3+S1). A_locus stays UNKNOWN after Heath treatises/prefaces, Method, Sand-Reckoner, MacTutor, and DSB (S5 Clagett via Complete Dictionary of Scientific Biography): no god/divine statement of his. Basics dual-sourced MacTutor+DSB (full_name, birth/death dates and places → 1.0). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 8). Basics and works from MacTutor (O'Connor and Robertson). No statement by Archimedes on gods, religion or the order of nature was found; the surviving works are mathematical and mechanical treatises. primary_system UNKNOWN; B_cause 3 at 0.5 from working science (P24, P35; alternative 4); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: archimedes
   display_name: "Archimedes"
@@ -157,6 +158,17 @@ lane_b:
   reading: "As belief, not finding: form present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The mathematical works opened state no god or divine claim."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions: []
 collaborators:
   - {value: "Conon of Samos", relation: correspondent, note: "mathematician at Alexandria and close friend", certainty: 0.7, cites: [{source: S1, locator: "Biography paragraph 2"}], how_known: "MacTutor."}

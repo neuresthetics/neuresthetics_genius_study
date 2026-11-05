@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 78). Basics from Britannica (Britannica Editors, unsigned; body only, Q&A boxes not cited). Worldview from letters 155 (1880), 613, 632 and 691 (1888) in the Van Gogh Museum / Huygens ING edition. primary_system BELOW_THRESHOLD; A 0 (0.5, alt 1); B UNKNOWN (P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): letter 632 added to A's cites; the irony in letter 613 marked plainly as the coder's reading. Value unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #77, F5 rank 78). Needs: A single source; A faded; B UNKNOWN. Primaries: Van Gogh Museum / Huygens ING letters re-verified via Wayback 2020 snapshots of translation pages (S2: 574, 613, 632, 673, 691); Complete Letters / webexhibits older EN of CL 490 (=613) and W01 (=574) as independent translation stream (S5); Patrick Grant Reading Vincent van Gogh (AU Press) scholarly monograph quoting Jansen edition (S4); Wikipedia EN dual bio (S6, P50) with Britannica create-pass body retained (S1). P47 on S1–S7. A 0 @0.5 support single→corroborated (S2+S5 on letter 613; alt 1 kept and strengthened by letter 673 'do without the dear Lord' + 691 religion/stars). Cert stays 0.5 (contested: legend/irony framing of 613 + 673 + named alt 1) — faded not cleared. B stays UNKNOWN (P16/P33: not a scientist; letter 574 providence agnosticism is about personal help/consolation, not nature's causal order; 'wrestle with nature' / beauties-of-nature lines are artistic method). C UNKNOWN→1 @0.5 corroborated (632 eternal life as principal certainty + 613 hope of another life; alt UNKNOWN). D UNKNOWN→3 @0.5 single (632 Bible pettiness / Christ-as-kernel; 574 reject sentimental providence tales; 673 do without dear Lord). primary_system stays BELOW (CHRIST/CLTHEI/DEISM still partly fit; churchless; 673 loosens conventional theism). mid_basin UNKNOWN (B UNKNOWN, P19). Span stays 1888–1890. Chart-moving NO (still unplottable; B UNKNOWN). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: van-gogh-vincent
   display_name: "Vincent van Gogh"
@@ -211,6 +212,20 @@ lane_b:
   reading: "Churchless theist in the Arles letters; religion relocated into painting and 'something greater' (creative power)."
   notes: "Lane B separate from Lane A axis scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "After dismissal as an evangelist he writes of God as the world's author and of Christ as the certainty of eternal life, with no church."
+    cites: [{source: S2, locator: "letter 632, to Emile Bernard, Arles, 26 June 1888"}]
+  conformity_pressure:
+    level: moderate
+    evidence: "Dismissed as an evangelist by church authorities in 1879–80."
+    cites: [{source: S1, locator: "'Early life'"}]
+  practice_gap:
+    gap: mixed
+    evidence: "Letters 613 and 632 affirm the Good Lord and Christ. Letter 673 says he can do without the dear Lord. Letter 574 suspends personal providence."
+    cites: [{source: S2, locator: "letter 673, to Theo van Gogh, Arles, 3 September 1888"}]
 institutions:
   - {value: "Goupil and Co. (The Hague, London, Paris)", role: employee, years: "1869–1876", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}, {source: S6, locator: "Early years"}], how_known: "Two sources."}
 collaborators:

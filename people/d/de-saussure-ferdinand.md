@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #159, F 3, rank 167). Needs: hunt own-voice; keep UNKNOWN if silent; do not force plot. Hunted Course in General Linguistics (Baskin / archive.org OCR of student-note compilation, S6): Dieu and religion appear only as linguistic examples (mordieu etymology; 'Dieu est bon' syntagm) or as ethnic/civilizational context — not a personal creed; CLG is editors' reconstruction from student notes, not a book in his hand. Hutton & Joseph 1998 (S7) print his 29 Jul 1907 Journal de Genève review of Oltramare (La théosophie brahmanique): own words distinguishing scholarly Indian 'theosophy' from Blavatsky occultism — clears the create-note theosophy lead as scholarly interest, not a belief code. EPHE prosopo (S5) and Wikipedia (S4, P50 with Britannica): Genevan Protestant aristocracy / Calvinist heritage confirmed as context only. No baptism or parish profession found for him. Joseph OUP 2012 still unread in full (family crisis 'economic and religious reasons' remains a review lead). Not a scientist (P30; Lévi-Strauss). primary/A/B/C/D/E/mid stay UNKNOWN; CHRIST heritage lead only. Not plotted. P47 source_quality on S1–S7. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 167). Source: Britannica (body). No own words on religion read; Calvinist Genevan family per a review of Joseph's biography (S3, context only). Not a scientist (linguistics as social and interpretive theory; Lévi-Strauss precedent, Z6). primary_system UNKNOWN (lead CHRIST, heritage only); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1878–1911, age 21. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: de-saussure-ferdinand
   display_name: "Ferdinand de Saussure"
@@ -129,6 +130,17 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Calvinist family is heritage only. The Course uses 'Dieu' as a linguistic example, not a creed. A personal baptism record was not opened."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No adult affiliation is stated, so there is nothing to compare."
 institutions:
   - {value: "École pratique des Hautes Études, Paris", role: "instructor", years: "1881–1891", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S5, locator: "Carrière"}], how_known: "Britannica; EPHE (grammaire comparée)."}
   - {value: "University of Geneva", role: "professor", years: "1891–1913", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S5, locator: "Carrière"}], how_known: "Britannica and EPHE; general-linguistics lectures 1907–11."}

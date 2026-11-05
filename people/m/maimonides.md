@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 55). Basics from Britannica (Bokser). Worldview from The Guide for the Perplexed, Part II chs. XXV and XXIX (Friedländer, 2nd ed., Gutenberg #73584; web copy, 0.7 cap). Physician, not a natural scientist under P30. primary_system JUDA 0.7; A 0 at 0.7 (alt 1); B 3 at 0.7 (alt 4): the universe keeps its created properties 'except by way of miracle in some individual instances', miracles not permanent (P27 B 3 anchor, rare past miracles); C, D, E UNKNOWN; mid_basin true at 0.7. Plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #55, F5 rank 55). Needs: A single source; B single source. P47 source_quality on S1–S7. Corroborated A via Friedländer Guide II.25/29 (S2) + Ibn Tibbon Hebrew Moreh Nevukhim II.25/29 (S4 Wikisource) + Mishneh Torah Yesodei haTorah 1 (S5 Mechon-mamre: מצוי ראשון ממציא כל הנמצא; שאינו גוף). A stays 0 @ 0.7 written_profession, support single→corroborated (P48); alt 1 retained. Corroborated B via S2 + S4 Hebrew II.29 (לא ישתנה … אלא בפרטיו על צד המופת; עולם כמנהגו הולך; זהו דעתי). B stays 3 @ 0.7 (P27 rare-miracle anchor; alt 4 retained). Dual-source Wikipedia (S7): death Fustat 12 Dec 1204; birth year 1135/1138 contested. Britannica S1 403 this pass — prior Bokser read retained. Pines unread (IA borrow-restricted). Chart-moving YES on fill cue (dark hollow → dark filled); darkness already ≥0.7. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: maimonides
   display_name: "Maimonides"
@@ -185,6 +186,20 @@ lane_b:
   reading: "Creator plus stable created order with rare miracles."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: jewish
+    detail: "Rabbinic Judaism: author of the Mishneh Torah and the Guide, which treats creation and revelation as the foundation of his religion."
+    cites: [{source: S1, locator: "opening; 'Significance'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S1 names persecution after the Almohad capture of Córdoba in 1148 but does not state death, prison, exile, or a civic disability."
+    cites: [{source: S1, locator: "'Life'"}]
+  practice_gap:
+    gap: aligned
+    evidence: "Yesodei haTorah states the duty to know a First Existent, and the Guide calls this the foundation of his religion. No contrary adult text is in the file."
+    cites: [{source: S5, locator: "Yesodei haTorah 1:1"}]
 institutions:
   - {value: "Court of Saladin and al-Afḍal", role: "court physician", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Life'"}], how_known: "Britannica."}
 collaborators:

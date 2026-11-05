@@ -9,7 +9,7 @@
 # Competing sources:               fill value with the best-supported one, certainty 0.5, and list the rest under alternatives.
 record:
   record_type: person
-  schema_version: "1.3"
+  schema_version: "1.5"
   record_version: 1
   review_status: "draft — unreviewed"     # stub | example — unreviewed | draft — unreviewed | in review | reviewed | needs revision; only a named human sets reviewed (P5)
   collected_by: TODO                      # person or agent that ran the collection
@@ -113,6 +113,18 @@ lane_b:
   circle_present: {value: TODO}           # yes | partly | no | unclear
   reading: ""
   notes: ""
+
+religion_conformity:                     # Lane A public record only (CODING_GUIDE §8). Not inner belief. Does not feed Lane B.
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown                        # controlled label; unknown until sourced. A non-unknown label needs cites.
+    detail: "Not researched."
+  conformity_pressure:
+    level: unknown                        # low | moderate | high | severe | unknown
+    evidence: "Not researched."
+  practice_gap:
+    gap: unknown                          # aligned | mixed | divergent | unknown; unknown when affiliation is unknown or none_stated
+    evidence: "Not researched."
 
 institutions: []                          # - {value: "Royal Institution", role: "...", years: "...", kind: "research institute", ...}
 collaborators: []                         # - {value: "Humphry Davy", roster_id: davy-humphry, relation: "mentor or employer", ...}

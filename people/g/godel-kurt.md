@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 11
+  schema_version: "1.5"
+  record_version: 12
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -21,6 +21,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 6 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. lio_views_relative_to_major_work after → during major work: the first dated LIO-type statement (1950) is inside the corrected span 1929–1958. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #49). Needs: dark and corroborated on A and B (still deepen: P47, gaps, solidify). P47 source_quality on S1–S11. P48: A and B support corroborated made explicit (already computed from multi-cites). Solidified Grandjean theism via Wang Reflections 1987 p. 18 first-person wording (S10) alongside Feferman CW-editor quotation (S5); solidified October 1961 mother letters via Englert Aeon 2024 (S11, IAS research associate) alongside Todorov (S7). D support corroborated. CW IV print pages still unread. primary_system stays BELOW_THRESHOLD (CLASS_THEISM/CLTHEI candidates). Chart-moving NO (already dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: godel-kurt
   display_name: "Kurt Gödel"
@@ -300,6 +301,19 @@ lane_b:
   reading: "As belief, not finding: the form is present and was acquired by adolescence; the circle is explicitly rejected. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Unsent Grandjean questionnaire and private letters to his mother: 'My belief is theistic, not pantheistic.' Baptized Lutheran; not a member of any congregation."
+    cites: [{source: S10, locator: "p. 18 (Grandjean questionnaire)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The questionnaire and the 1961 letters keep a rational theism and reject pantheism. No congregational profession is in the file."
+    cites: [{source: S6, locator: "letter to his mother, 23 July 1961"}]
 institutions:
   - {value: "University of Vienna", role: "student; Privatdozent", years: "1924–1939", kind: university, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "Biography"}], how_known: "Two sources. The Privatdozentur (1933) was cancelled under the Nazi regime (S1)."}
   - {value: "Vienna Circle (Schlick's group)", role: "attended meetings", years: "c. 1926–1936", kind: other, certainty: 0.7, cites: [{source: S1, locator: "§1"}, {source: S6, locator: "letter of 15 August 1946"}], how_known: "SEP and his own letter; years approximate."}

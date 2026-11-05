@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (major work 1946–49; Jason, 2026-10-02). Basics from Britannica (Gleick), MacTutor and the Nobel biography. Worldview from his own talk 'The Relation of Science and Religion' (Caltech YMCA Lunch Forum, 2 May 1956), printed in Engineering and Science 19:9 (June 1956), pp. 20–23, read on Caltech's own site and checked on the page images. primary_system AGNOS at 0.7 (stub; ATHE named). B 4, D 2, E 4, all at 0.7; A, C BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #59 (both runs): birth place 'New York City (Manhattan; ...)' at 1.0 → 'New York City' at 1.0; the borough is noted as contested (0.5), Far Rockaway, Queens, per Britannica and MacTutor's Quick Info, with Manhattan (implied by MacTutor's Biography, paragraph 2) as the alternative. MacTutor Biography locators renumbered to the page's visible paragraphs (paragraph 1 is the parents, 2 the Manhattan apartment, 3 the move to Far Rockaway). #63 / decision P13: the 1939 MIT thesis ('an original and enduring approach to calculating forces in molecules', Britannica) is now a listed contribution (0.7), so first_lasting_contribution_year 1939 (0.7) and age 21 rest on a listed item; values unchanged. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1946–1949 → 1939–1968; worldview.working_years 1939–1988 → 1939–1968, equal to the span (P30 addendum f); lio_views_relative_to_major_work set to 'during major work'; evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #68, F5 rank 69). Needs: A BELOW_THRESHOLD. Opened What Do You Care What Other People Think? (Norton 1988; WDYC pp. 25–28 'avowed atheist' / 'gradually came to disbelieve the whole religion'), Denis Brian Voice of Genius (1995/2001 p. 49: 'An atheist. Agnostic for me would be trying to weasel out'), Pleasure of Finding Things Out (BBC Horizon 1981 / Robbins 1999: rejects special God-to-earth stories; lives with doubt), Perfectly Reasonable Deviations (Michelle Feynman ed. 2005: Levitan 1967 pp. 234–236 during span; 1982 'as strong an atheist' pp. 349–351). Wikipedia EN dual bio (P50). P47 source_quality on every source. primary_system AGNOS→ATHE @0.5 (post-span self-labels; AGNOS named from 1956); A BELOW→4 @0.5 (explicit denial; alt BELOW from 1956 suspension; P1 post-span / Watson); B stays 4 @0.7, support corroborated (P48); mid_basin stays BELOW_THRESHOLD. Chart: unplotted → faded filled. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: feynman-richard
   display_name: "Richard Feynman"
@@ -256,6 +257,19 @@ lane_b:
   reading: "As belief, not finding: form absent, circle absent. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Published interview: 'An atheist. Agnostic for me would be trying to weasel out.' The memoir says he was an 'avowed atheist' who came to disbelieve the whole religion."
+    cites: [{source: S7, locator: "p. 49"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The memoir, the interview, and the 1982 letter use atheist. The 1956 talk says science cannot disprove God and does not affirm one."
+    cites: [{source: S6, locator: "pp. 25–28"}]
 institutions:
   - {value: "Manhattan Project (Princeton, then Los Alamos)", role: "group leader in the theoretical division", years: "1941–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "World War II paragraph"}], how_known: "Britannica."}
   - {value: "Cornell University", role: "professor of theoretical physics", years: "1945–1950", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 1"}, {source: S1, locator: "'At war's end'"}], how_known: "Two sources."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #200/228, F 3, rank 213). Goals: letters/essays own words on God/nature; leave B per RQ-AA9-1 unless new warrant; do not force plot. Nature writing alone does not force pantheism/A. Read: 1954 Theta Sigma Phi address 'The Real World Around Us' / Exceeding Beauty (AWPC full text + Lost Woods excerpt via Bron Taylor PDF) — natural beauty as spiritual development; 'part of the whole stream of life'; 'mysterious spark of life was added'; Jefferies lines as 'creed I have lived by'. Always, Rachel letter 1 Feb 1958 (LOE transcript) — 'stream of life' in 'whatever course that God had appointed'; genesis of Silent Spring. Silent Spring closing (1962) — 'control of nature' phrase 'conceived in arrogance'. Always, Rachel (Goodreads quote; day undated this pass) — 'denied formal religion too much' yet reaches for 'God help me'. Wikipedia EN (P50 dual bio). PCUSA Historical Society (heritage: United Presbyterian family; maternal grandfather minister; not known to attend church as adult — secondary). Honor RQ-AA9-1: B stays UNKNOWN (Silent Spring public synthesis; no new P16 warrant). primary_system UNKNOWN → BELOW_THRESHOLD (leads PROT/CHRIST, nature-spirituality; denied formal religion; nature writing ≠ PANT). A UNKNOWN → BELOW_THRESHOLD (A 0–1 spark/God-language vs A 4 stream-of-life/earth-origins; neither ≥0.5). mid UNKNOWN → BELOW. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: not a scientist for B under RQ-AA9-1 (B UNKNOWN, alternative B 3 at 0.5); National Book Award 1952 at 0.7 (National Book Foundation, S3)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 213). Source: Britannica scholars edition (The Editors, unsigned, read in full). Lasting work: Silent Spring (1962); she 'left behind some of the most influential environmental writing ever published' (S1). The sea books (1941, 1951, 1955) are praised and best-selling, but S1 gives no lasting claim for them (P13). Span 1962, age 55. Not a scientist for B under RQ-AA9-1 (v8's call on the auditor's advice; work, not job): her only lasting item, Silent Spring, is a synthesis and public argument, not a result of her own; B UNKNOWN, alternative B 3 at 0.5 (P35) if her biology counted. Worldview: no own words read; primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: carson-rachel
   display_name: "Rachel Carson"
@@ -153,6 +154,17 @@ lane_b:
   reading: "Lane B separate. No H1 test (A BELOW; B UNKNOWN per RQ-AA9-1)."
   notes: "Nature writing and spiritual beauty language are not Lane A scores for pantheism (standing rule)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "A private letter fears she denied formal religion too much and still reaches for God-language. That does not settle a label."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "The God-appointed letter and the formal-religion letter were not compared to a settled affiliation."
 institutions:
   - {value: "U.S. Bureau of Fisheries (from 1940 U.S. Fish and Wildlife Service)", role: "aquatic biologist; editor in chief of publications 1949–1952", years: "1936–1952", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "para. 2"}], how_known: "Britannica."}
   - {value: "University of Maryland", role: "faculty", years: "1931–1936", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "Britannica."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #178, F 3, rank 189). Hunt: any documentary religion/nature statements. Read: Wikipedia EN dual bio (S4); Lehmann-Haupt Britannica fuller (S3); Deutsche Biographie NDB Ruppel + authority data katholisch / Franziskanerkirche burial (S5); Mainz city Gutenberg timeline baptism tradition St. Christoph / death 1468-02-03 / Franciscan burial (S6). Surviving record is legal/business (Helmasperger 1455 notarial instrument; Strasbourg suits) — no first-person diaries/letters on God or nature. Helmasperger opens with formulaic 'In Gottes Namen Amen' (notary Ulrich Helmasperger), not Gutenberg's theology (P42). Printing Bible / Cypriot indulgences / Psalter groundwork / later Aquinas Summa attributions = craft/client work, not personal profession (standing rule; P47–P50). Kapr Cusanus liturgical-motivation link is explicit hypothesis, not evidence. Catholicon 1460 colophon God-language not securely Gutenberg's own voice (authorship contested). P47 source_quality on S1–S6. P50 dual bio S1+S4. Heritage filled (late-medieval Latin Catholic Mainz; baptism tradition only). primary_system stays UNKNOWN (CHRIST lead only); A–E UNKNOWN; mid UNKNOWN; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): alternative birth about 1400, age about 55. Signed Britannica article (Lehmann-Haupt) added as S3; only part of it was read and it did not confirm the Bible date in the body, so the span stays 0.5."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 189). Source: Britannica (students edition, read in full). Lasting work: printing with movable metal type, 'one of the world's greatest inventions' whose method 'endured almost unchanged for five centuries'; dated by the Gutenberg Bible, 'completed before or in 1455' (publication, P30 #1), at 0.5 with 1454 (the Türkenkalender, 'printed in 1454') as the alternative. Birth '1395?' and death 'probably ... February 3, 1468', so age about 60 at 0.5; alternative birth about 1400, age about 55 (AA3 audit advice). The signed Britannica article (Lehmann-Haupt, S3) gives 'born 14th century, Mainz' and the Fust judgment of 6 November 1455. An invention, not a theory (P33): not a scientist, B UNKNOWN. No own words: worldview all UNKNOWN (lead CHRIST: printed the Bible; pension from the archbishop of Mainz). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: gutenberg-johannes
   display_name: "Johannes Gutenberg"
@@ -123,6 +124,18 @@ lane_b:
   reading: "No data for a Lane B belief model of nature. Invention ≠ theory (P33)."
   notes: "Do not invent a geometric reading from type design or press mechanics."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Surviving papers that were checked are lawsuits, loans, tax lists, and the Helmasperger instrument. No first-person religion. Bible printing is not a profession."
+    cites: [{source: S4, locator: "Early life"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The family left Mainz in a patrician–guild conflict. That is not documented as a religious prosecution."
+  practice_gap:
+    gap: unknown
+    evidence: "The checked papers state no religious affiliation."
 institutions: []
 collaborators:
   - {value: "Johann Fust", relation: "mentor or employer", note: "financier and partner from c. 1450; Helmasperger instrument 6 Nov 1455; won control of Bible workshop", certainty: 0.7, cites: [{source: S1, locator: "para. 5"}, {source: S3, locator: "Invention of the press"}, {source: S4, locator: "Court case"}], how_known: "Britannica + Wikipedia."}

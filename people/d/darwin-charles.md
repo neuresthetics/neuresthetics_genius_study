@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from Britannica (Desmond, first page). Worldview from the Autobiography (Barlow ed. 1958, Darwin Online; pp. 87 and 94 checked on the page scans), three letters in the Darwin Correspondence Project (Gray 1860, Fordyce 1879, McDermott 1880), the DCP essay 'What did Darwin believe?', the Origin (1859, p. 488 checked on the scan) and the Descent (1871). primary_system BELOW_THRESHOLD (AGNOS candidate, stub). A 2 (0.7), B 4 (0.7), C 4 (0.7), D 4 (0.7), E 4 (0.7); mid_basin TODO (A = 2). All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #14, #15: geologist and geology now cite Britannica's later sections ('The London years, 1836–42'; 'The squire naturalist in Downe'), not the opening. #32: Paley taken out of early_geometric_style_reasoning (read for the B.A. of January 1831, at about 21; S1 p. 59 and footnote), and key_early_reading dated. #65: Beagle role is 'self-financed gentleman companion' to Fitzroy, not surgeon-naturalist (Britannica). #39: value unchanged; the reason now names its actual basis (v8's batch instructions, not a written rule) and says it awaits v8's ruling. #50: the mid_basin TODO now cites CODING_GUIDE §6 (P4) instead of an unwritten rule. Left for v8 as method questions: #7/#9 (whether Coral Reefs, 1842, must be listed; it would move the era) and #39 (stub systems). Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens run 1 on rulings packet 6155174, sources reopened. A_locus 1 certainty 0.7 → 0.5: without the hedged four-line addendum (S1, p. 93 footnote) the 1876 theist passage is present tense, leaving one hedged private letter (S3) and creation wording he later disowned (S12), with Desmond's backing (S8) (CODING_GUIDE §3); mid_basin true (0.7) → BELOW_THRESHOLD (§6, P19), SENSITIVE flag records the outcome; primary_system DEISM stays 0.5; B_cause stays 3 (0.7), alternative 4 now also cites S12 (new source, Hooker 1863); secondary_system BELOW_THRESHOLD → UNKNOWN (§1: only if he published in two systems), Gray strand kept as a note; coder_notes footnote locator corrected (the p. 92 footnote belongs to the immortality paragraph); 1839 Journal (S11, new source, p. 557) added as a named alternative date for the coral-reef theory, primary year left at 1842 pending v8. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #16, F5 rank 16). P47 source_quality on every source. New contemporaneous letters: S13 Gray 3 July [1860] (DCP-LETT-2855) — 'simple muddle about designed laws & undesigned consequences' and cannot persuade himself that electricity / tree / loftiest conceptions are 'all from blind, brute force'; S14 Lyell [1 August 1861] (DCP-LETT-3223) — rejects Gray's guided variation / Higher power, allows that God may have foreseen everything (free-will embroglio). A_locus stays 1 @ 0.5 consistent_private_letters, support corroborated (now multiple hedged Origin-era letters + Autobiography + Origin + Desmond); named alts 0 and 2 made explicit. Cannot lift to 0.7: new letters deepen the hedge rather than clear it (lens run 1 hold stands). B_cause stays 3 @ 0.7 written_profession, support corroborated; named alt 4 explicit. C/D/E support corroborated. mid_basin still BELOW_THRESHOLD (A only at 0.5). Chart: stays faded filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: darwin-charles
   display_name: "Charles Darwin"
@@ -362,6 +363,19 @@ lane_b:
   reading: "As belief, not finding: form partly present (early Euclid), circle partly present in the Origin years and fading after. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Private Fordyce letter (1879) and the posthumous Autobiography: an agnostic is 'the most correct description,' and he is 'content to remain an Agnostic.'"
+    cites: [{source: S2, locator: "letter text"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: mixed
+    evidence: "The same Autobiography says 'I deserve to be called a Theist' about a First Cause, and the 1879 letter says agnostic generally, but not always."
+    cites: [{source: S1, locator: "pp. 92–94"}]
 institutions:
   - {value: "HMS Beagle survey voyage", role: "self-financed gentleman companion to the captain, Robert Fitzroy (not the ship's surgeon-naturalist)", years: "1831–1836", kind: other, certainty: 0.7, cites: [{source: S8, locator: "map caption 'HMS Beagle in 1831–36'"}, {source: S8, locator: "'Early life and education', the Beagle sentence ('not as a lowly surgeon-naturalist but as a self-financed gentleman companion to the 26-year-old captain')"}], how_known: "Britannica."}
 collaborators:

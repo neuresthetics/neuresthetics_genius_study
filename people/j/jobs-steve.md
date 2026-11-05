@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y; deepen catch-up)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen catch-up 2/13 (F 4, rank 132): firm A/primary if sources allow; do not force plot. Read Isaacson Steve Jobs (2011) primary OCR (S5; IA steve-jobs-walter-isaacson_202601) — RQ-Y1 path. primary BELOW→AGNOS @0.5 recorded_interview, alt BELOW (P8; after-span interviews; Zen/BUDDH lead). A stays BELOW (P20 explicit suspension, no locus). B stays UNKNOWN (not scientist; no nature-order). mid UNKNOWN (B UNKNOWN precedence). Childhood Lutheran + Biafra exit (S5 pp.14–15). Heritage bio/adoptive from S5+S6. Stanford re-verified (S2). Playboy 1985 opened (allaboutstevejobs) — no God/system score. P47 on all. No fallacy_catalog; figures not refreshed. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK17): the iPhone's lasting wording restored to the article body's 'into the telecommunications business'; the added product list dropped. No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (JO12) definition_fit and the iPhone's lasting note now cite Britannica's article body ('a charismatic pioneer of the personal computer era'; 'near-messianic belief in the computer revolution'), not the 'Why is Steve Jobs significant?' question box (P26). Ruling Y1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD (recorded under P43, beside V3). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 132; roster status provisional). Basics from Britannica (Steven Levy, updated 29 Sep 2026). Own voice read in the prepared text of the 2005 Stanford commencement address (in the span). His words on God reach us only as the Washington Post's quotations of Isaacson's 2011 biography (secondary quotation, after the span): 'I'm about fifty-fifty on believing in God'. Not a scientist (P33). Span 1977–2007 at 0.7 (Apple II to iPhone). primary_system BELOW_THRESHOLD (AGNOS lead, BUDDH lead; RQ-Y1); A BELOW_THRESHOLD; B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: jobs-steve
   display_name: "Steve Jobs"
@@ -177,6 +178,19 @@ lane_b:
   reading: "Lane B only: AGNOS suspension (Isaacson) plus Zen practice lead; A BELOW and B UNKNOWN → mid UNKNOWN; not plotted."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Told to Isaacson and printed in the 2011 biography: 'I'm about fifty-fifty on believing in God,' and sometimes he thinks the house exists and sometimes he does not."
+    cites: [{source: S5, locator: "Coda (~p. 570)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The biography does not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The same interviews keep the fifty-fifty suspension. Zen practice in the biography is not a self-identification as Buddhist."
+    cites: [{source: S5, locator: "ch. 1 reflecting on spiritual feelings (~p. 15)"}]
 institutions:
   - {value: "Atari", role: "video game designer", years: "1974", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'"}], how_known: "Britannica."}
   - {value: "Apple Computer, Inc. (Apple Inc.)", role: "cofounder; CEO from 1997", years: "1976–1985; 1997–2011", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'; 'Saving Apple'; 'Health issues'"}], how_known: "Britannica."}

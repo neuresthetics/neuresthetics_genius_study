@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #118 / F4 rank 119). Goals: open Miles (1989) p.411 or in-span interviews on God/spirits; keep UNKNOWN if still secondary-only (ruling V3). Tried Internet Archive borrow copies (milesautobiograp0000davi et al.): access-restricted, download 401; Rosen The Spiritual Muses still HTTP 500. Read in-span: Alex Haley Playboy interview Sept 1962 (S5) — race, music, public persona; no God/religion/spirits. Don DeMicheal Rolling Stone interview 13 Dec 1969 (S6) — music direction, race, rock; no God/religion/spirits. Wikipedia EN (S4, P50): birth/death align Britannica; brief Catholic elementary; gospel as early taste; funeral St. Peter's Lutheran 1991 (after span, practice). Secondary leads unchanged (Tingen S3; Rosen search-snippet p.411; Hollowverse cites autobiography Islam/per se — still unread book). P47 on S1–S6. primary/A–E/mid stay UNKNOWN under V3. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): S3 (Tingen, a music journalist's book) kind 'scholarly book' -> other. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): DV4, Tingen's Miles Beyond ch. 1 recorded as S3, an openable secondary quotation of Miles p. 411 (book still unread); ruling V3 (v8's call on the auditor's advice): primary_system stays UNKNOWN. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 119). Basics from Britannica (Britannica Editors, 18 October 2026). No statement of his on God, religion or nature read: the autobiography Miles (1989) was not available, and the one article quoting its religion passage could not be opened. Not a scientist (P30). primary_system, A–E and mid_basin UNKNOWN. Span 1949–1970 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: davis-miles
   display_name: "Miles Davis"
@@ -129,6 +130,17 @@ lane_b:
   reading: "'Don't play what's there, play what's not there' (image caption, S1)."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The 1962 Playboy and 1969 Rolling Stone interviews were read and are silent on God. Miles (1989), p. 411, is still unread."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No adult affiliation is stated in the interviews that were read, so there is nothing to compare."
 institutions:
   - {value: "Columbia Records", role: "recording artist", kind: commercial, certainty: 0.5, cites: [{source: S1, locator: "'Free jazz and fusion' (memo of 14 November 1969)"}], how_known: "Britannica quotes a Columbia internal memo about the Bitches Brew title; years not stated."}
 collaborators:

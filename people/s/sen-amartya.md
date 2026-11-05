@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1 catch-up 5/13)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 146). Basics from Britannica (Editors) and his Nobel autobiography. Own voice: Calcutta Press Club, December 1998, as reported by Rediff: 'Although this is a personal matter... But the answer to your question is: No. I do not believe in god.'; interview with Roy McCloughry (29 July 2009): his grandfather said he had placed himself 'on the atheistic branch of Hinduism'; 'relying on faith goes against reason'. Not a scientist (economist; Keynes precedent), so B UNKNOWN. Span 1970–1999 at 0.5. primary_system ATHE (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alt BELOW_THRESHOLD); B UNKNOWN; C UNKNOWN; D BELOW_THRESHOLD; E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted (no B). Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (catch-up 5/13; F3 rank 146). Goals: firm A/primary if sources allow; B only with nature-order own words (not economist working science); do not force plot. Opened Forman / Metro Santa Cruz archive at Good Times (S6, 4–11 Oct 2006); NDTV Prannoy Roy full transcript on Home in the World (S7, 2021); Wikipedia EN + bn.wikipedia title (S8, P50). Native name অমর্ত্য সেন; birth name Amartya Kumar Sen confirmed. primary_system stays ATHE @0.5: basis recorded_interview now on S6 own-voice ('I think it's an atheist position') + S4 + S3; alternative BELOW_THRESHOLD → AGNOS (S6 modest-moments hedge). A 4 stays @0.5 under P38 (atheist + would not object to agnostic); support single → corroborated (S6+S4+S3; P48); alt BELOW_THRESHOLD kept (P38). B stays UNKNOWN (P30 economist; Forman objective-truth remarks are social-science epistemology, not P16 nature-order; Newtonian-bullet NDTV anecdote is physics of projectiles, not worldview). C/D/E/mid unchanged. Chart-moving NO. P47 source_quality on S1–S8. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: sen-amartya
   display_name: "Amartya Sen"
@@ -180,6 +181,19 @@ lane_b:
   reading: "Formal method without God-in-nature belief."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "1998: 'No. I do not believe in god.' 2006: 'I think it's an atheist position,' and he would not object to 'agnostic' in modest moments."
+    cites: [{source: S3, locator: "paragraph 2"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1998 answer and the 2006 interview agree on an atheist position. Hindu family practice is heritage, not a later endorsement."
+    cites: [{source: S6, locator: "Would that make you agnostic or atheist?"}]
 institutions:
   - {value: "London School of Economics; University of London", role: professor, years: "1971–1977", kind: university, certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   - {value: "University of Oxford", role: professor, years: "1977–1988", kind: university, certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}

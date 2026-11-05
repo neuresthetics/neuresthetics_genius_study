@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #171/228, F 3, rank 181). Goals: adult ATHE/AGNOS own words; open A if warranted; do not force plot. Re-read CMU Models of My Life typescript OCR in full for religion (S3): schoolboy Christian Endeavor 'while insisting on his agnosticism'; grammar-school Milwaukee Journal letter 'in defense of atheism'; Congregational communion — remained seated at 'Will all Christians please rise?'; Chicago 'neither of us being swept up by the theologies we encountered'; lifelong 'logical positivism … (I would prefer to call it empiricism now)'. No adult first-person 'I am an atheist/agnostic' in the OCR. Read Velupillai & Venkatachalam 2018 Open Access PDF in full (S5): 'He described himself as an atheist' with general debt to Models (1996) but no page locator for that claim. Crowther-Heyck 2005 p.22 (S6): by high school 'certain' he was 'religiously an atheist' — wording from Wikipedia EN cite-book quote attribute; page images unread; 'a conviction that never wavered' is biographer framing outside Simon quotes. Primary stays BELOW_THRESHOLD (leads AGNOS, ATHE; schoolboy before span, P29; secondary ATHE paraphrase insufficient). A stays BELOW_THRESHOLD. B stays 3 @0.5 alt 4 (P35); support labelled corroborated (S1+S2, P48). mid_basin BELOW. Not plotted. P47 on S1–S6. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit fix (WEAKEN, P21): the Models of My Life statement was read only in OCR of the CMU archive scan, so verified_against 'primary facsimile' -> new value 'archive scan (OCR only)'. Unscored; no effect."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 181). Basics from NobelPrize.org (facts; autobiography 1978) and Britannica (archived 2020, body: 'his influential book Administrative Behavior (1947)'). Own words: Models of My Life (draft, Carnegie Mellon University Libraries, Simon papers), after the span: as a schoolboy in Christian Endeavor 'while insisting on his agnosticism' (before the span); at Chicago, 'neither of us being swept up by the theologies we encountered'; 'a logical positivism that I have never relinquished (I would prefer to call it empiricism now)'. A secondary account (Velupillai and Venkatachalam) says he 'described himself as an atheist' (no locator). No adult statement on God read, so primary_system BELOW_THRESHOLD (leads AGNOS, ATHE); A BELOW_THRESHOLD. Scientist: his decision theory makes testable claims about decision behaviour in organizations (P35 addendum), so B 3 at 0.5 from working science, alt 4. C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1947, age 31. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: simon-herbert
   display_name: "Herbert Simon"
@@ -162,6 +163,18 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Models of My Life recalls a schoolboy letter for atheism and insisted agnosticism. No adult first-person affiliation is verified."
+    cites: [{source: S3, locator: "ch. 1, high-school clubs"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Carnegie Institute of Technology (Carnegie Mellon University)", role: "professor", years: "1949–2001", kind: "university", certainty: 0.7, cites: [{source: S2, locator: "para. 2"}], how_known: "Britannica; end year his death."}
 collaborators:

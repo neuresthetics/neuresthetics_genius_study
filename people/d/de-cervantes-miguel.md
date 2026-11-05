@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO→Catholic @0.7 synced from heritage/baptism (S1). Chart-moving NO."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #117 / F4 rank 118). Goals: hunt prologues/dedications/letters for A/B; keep honest BELOW if only fiction (P42). Read in-span: Don Quixote I Prólogo 1605 (S5) — 'orden de naturaleza' as literary generation analogy, closing 'Dios te dé salud' formula; Novelas ejemplares Prólogo and Dedicatoria 1613 (S6) — love scenes 'medidos con la razón y discurso cristiano'; 'mi edad no está ya para burlarse con la otra vida'; closing 'Dios te guarde'; Guarde nuestro Señor. Don Quixote II Prólogo and Dedicatoria 1615 (S7) — '¡Válame Dios!', 'tentaciones del demonio', 'Cristo con todos', Lemos's 'cristiandad', 'Deo volente' (P42 formula). Wikipedia EN (S8, P50): birth/death align; Third Order Franciscans ~1613 noted as membership. P47 on S1–S8. A stays BELOW (formulas + Christian literary measure ≠ A1–A4 locus). B stays BELOW (orden de naturaleza / milagro not P16 law-vs-exception; not scientist P30). C stays BELOW (otra vida hope, no deserts). primary BELOW, CHRIST lead strengthened by in-span Novelas but still short of a code under ruling U2. mid BELOW. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Edward C. Riley (CE2). Ruling U2 (v8's call on the auditor's advice): primary_system CHRIST 0.5 -> BELOW_THRESHOLD, CHRIST the named lead; the last rites recorded in nominal_affiliations as practice; the dedication formulas treated as context (P42 will-preamble addendum, by analogy). Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 118; taken in place of Louis Pasteur, already coded). Basics from Britannica (Edward C. Riley; author corrected in the batch U audit fixes). Worldview from his own dedication (19 April 1616) and prologue to Los trabajos de Persiles y Sigismunda (published 1617), read in the Calpe 1920 edition on Wikisource; after the span (P1 cap 0.5). Characters' words in the novels are not his (P42). Not a scientist (P30). primary_system CHRIST (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B BELOW_THRESHOLD; C BELOW_THRESHOLD; D UNKNOWN; E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: de-cervantes-miguel
   display_name: "Miguel de Cervantes"
@@ -212,6 +213,19 @@ lane_b:
   reading: "Not assessed."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Lay profession in the Franciscan Third Order, about July 1613, professed 2 April 1616. His dedication reports extreme unction on 18 April 1616."
+    cites: [{source: S8, locator: "Later life and death"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Algiers captivity and ransom are in the file. No religious-dissent sanction is documented."
+  practice_gap:
+    gap: aligned
+    evidence: "Third Order membership and his report of last rites match Catholic practice. Prologue formulas do not reject it."
+    cites: [{source: S2, locator: "Dedicatorias, p. 9"}]
 institutions:
   - {value: "Household of Cardinal Giulio Acquaviva, Rome", role: "chamberlain ('It seems')", kind: employer, certainty: 0.5, cites: [{source: S1, locator: "'Soldier and slave'"}], how_known: "Britannica, hedged."}
   - {value: "Spanish infantry regiment, Naples", role: "soldier; wounded at Lepanto (7 October 1571), losing the use of his left hand", years: "1570–1575", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Soldier and slave'"}], how_known: "Britannica."}

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from SEP (Miller, after Machamer), Britannica (Van Helden) and MacTutor. Worldview from the Letter to the Grand Duchess Christina (1615) in Drake's translation, read in two copies (Fordham excerpt; a course selection with the Joshua section). Coded CHRIST (Catholic) at 0.7. A 1 (0.7), B 3 (0.7), C 1 (0.5), D 2 (0.7), E 3 (0.7). mid_basin true. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Findings #69 (and #55, #57, #60): the 'inexorable and immutable' sentence is in the Fordham paragraph beginning 'This being granted…', not 'With regard to this argument…'; locators fixed in the statement, B_cause and E_scope (S5 p. 4 was already right). S4 is no longer described as Drake's translation: its translator and provenance are unknown and its wording differs from S5 in places (finding #70 note). Finding #62: self_described_science_religion_relation certainty 1.0 → 0.7 (secondary quotations cannot by themselves support 1.0, §7). Axis scores, primary_system and mid_basin unchanged. Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1604–1638 → 1609–1638; worldview.working_years 1589–1642 → 1609–1638, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #31, next-50 batch). Needs were already dark and corroborated on A and B; still deepen for P47, gaps, solidify. Opened Finocchiaro The Essential Galileo (Hackett 2008) scholarly edition: Letter to Castelli (1613) §4.1, Letter to Christina (1615) §4.2, Assayer (1623) book-of-nature passage. Re-verified inexorable/immutable Nature, divine Word, senses/intellect, heaven-goes, Joshua miracle against Finocchiaro; Castelli is the earlier independent letter with the same Nature-laws wording. Wikipedia EN dual-sources bio. P47 source_quality on every source. support: corroborated on A/B/D/E (P48). Scores unchanged: A 1 @0.7 (alt 0), B 3 @0.7 (alt 4), C 1 @0.5, D 2 @0.7, E 3 @0.7; CHRIST @0.7; mid_basin true @0.7. Chart-moving NO (already dark filled mid-basin). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: galilei-galileo
   display_name: "Galileo Galilei"
@@ -237,6 +238,20 @@ lane_b:
   reading: "As belief, not finding: form present, acquired at 18–19; no circle. The record does not test H1."
   notes: "Lane B separate from Lane A axis scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "The Castelli and Christina letters derive Scripture from the Holy Spirit and limit it to salvation. The file reads the aim as Catholic."
+    cites: [{source: S7, locator: "§4.2 Letter to Christina"}]
+  conformity_pressure:
+    level: high
+    evidence: "In 1633 he was convicted of vehement suspicion of heresy and kept under house arrest. He abjured before the Inquisition."
+    cites: [{source: S1, locator: "§2; §5"}]
+  practice_gap:
+    gap: mixed
+    evidence: "Christina and Castelli letters state a Catholic aim. The 1632 Dialogue drew the 1633 heresy sentence; the file says the abjuration was coerced and is not used as belief."
+    cites: [{source: S1, locator: "§5"}]
 institutions:
   - {value: "University of Pisa", role: "lecturer in mathematics", years: "1589–1592", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
   - {value: "University of Padua", role: "chair of mathematics", years: "1592–1610", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}

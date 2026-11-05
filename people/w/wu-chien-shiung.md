@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C; deepen D1 queue #17)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C; the last uncoded person in the physical-science 1600–1950 pool with F ≥ 3, taken first under P32). Basics from Britannica (editors), the Linda Hall Library and Yu Shi's 2025 paper; dates of the three listed experiments from the APS journal records. No statement by Wu on religion, God or nature was found. primary_system UNKNOWN; B_cause 4 at 0.5 from working science (P24); A, C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #17, F5 rank 17). P47 source_quality on every source. New: S8 NAS Biographical Memoir (Benczer-Koller 2009; Wayback PDF); S9 Wang New Dictionary of Scientific Biography (encyclopedia.com / cpp.edu PDF); S10 Jada Yuan WaPo 2021 granddaughter essay (Wayback). A_locus stays UNKNOWN after NAS, Wang NDSB, WaPo private-universe essay, Britannica, Linda Hall, Shi, and web sweeps: no first-person God/religion statement; granddaughter explicitly wishes she knew more about Wu's private universe. B_cause stays 3 @ 0.5 inference_from_work; support labelled corroborated (S5+S3+S2; P48); alt 4 named (P35). Childhood filled (Zhong-Yi Wu / Funhua Fan; Ming De; Hu Shi). Death day dual-sourced → 1.0. Chiang 2014 English still unread (Chinese IA borrow-only; World Scientific chapter timed out). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: wu-chien-shiung
   display_name: "Chien-Shiung Wu"
@@ -149,6 +150,18 @@ lane_b:
   reading: "As belief, not finding: form and circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "NAS memoir, Wang, Britannica, and the granddaughter's essay were checked. No first-person religious affiliation is in the file."
+    cites: [{source: S10, locator: "title and body (private universe opaque to granddaughter)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of California, Berkeley", role: "graduate student (Ph.D. 1940) and postdoc", years: "1936–1942", kind: university, certainty: 0.7, cites: [{source: S1, locator: "paragraph 2 (Ph.D. 1940)"}, {source: S3, locator: "§1 (1936 to 1940; postdoc to 1942)"}], how_known: "Two sources agree on the Ph.D.; the years are Shi's, so 0.7."}
   - {value: "Columbia University", role: "Division of War Research from 1944; research scientist; Pupin professor of physics from 1957", years: "1944–", kind: university, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S3, locator: "§1"}], how_known: "Two sources."}

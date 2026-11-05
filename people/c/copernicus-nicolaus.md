@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #122 / F4 rank 123). Goals: raise B if justified; corroborate A (P48); mid if B≥0.7. Re-read De revolutionibus dedication, I.4, I.9, I.10 on Latin Wikisource (S3) against Rosen English (S5, Reed/Octavo PDF of Rosen 1978); Commentariolus uniformity language via Rosen Three Copernican Treatises English on erenow (S6); Wikipedia EN dual bio (S7, P50). A 1 stays @0.7 written_profession; support single→corroborated (S3+S5). B 3 stays @0.5: basis inference_from_work→written_profession (I.4 'certa lege' / constant law; Commentariolus 'rule of absolute motion'); P16 Hilbert / P35 keep 0.5 without a stated no-exception or limited-exception claim (alt 4); support corroborated. mid_basin stays BELOW_THRESHOLD (B under 0.7 bar). primary_system stays BELOW_THRESHOLD, CHRIST lead (ruling W1). Chart-moving NO (still faded). P47 source_quality on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (CO4) dedication locator djvu p. 7 -> p. 8 in all five cites (statement, nominal_affiliations, self_described relation, D and its alternative), and the inflected form 'Reipublicæ ecclesiasticæ conducere' quoted in place of 'Respublica ecclesiastica'. Ruling W1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, CHRIST the lead. (Notes) S1 credits Westman and Britannica Editors; Britannica and SEP typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 123). Basics from Britannica (Robert S. Westman) and SEP (Sheila Rabin). Own voice read in Latin in the 1543 De revolutionibus on Latin Wikisource (dedication to Paul III, proofread; I.9 proofread; I.10 not yet proofread). Scientist (P30). primary_system BELOW_THRESHOLD (CHRIST lead; generic creator language plus a canon's office, by analogy with ruling U2); A 1 (0.7, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D 2 (0.5, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Span 1514–1543 (0.5). Plotted (faded). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: copernicus-nicolaus
   display_name: "Nicolaus Copernicus"
@@ -213,6 +214,19 @@ lane_b:
   reading: "A geometrically ordered cosmos made by a best and most orderly maker; mathematics as the judge in astronomy."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Canon of the Frombork cathedral chapter from 1497 until his death. The file states he was not a priest."
+    cites: [{source: S1, locator: "Early life and education"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "An intention to condemn the book is noted, and no official Catholic ruling by 1600; no used sanction in his working years is stated."
+  practice_gap:
+    gap: aligned
+    evidence: "He held the Frombork canonry until death, and the preface still addresses Pope Paul III. No text in the file leaves the office."
+    cites: [{source: S1, locator: "Early life and education"}]
 institutions:
   - {value: "Cathedral chapter of Warmia (Frombork)", role: "canon: administration of holdings, finances, defence; physician to the bishop and canons", years: "1497–1543", kind: "religious body", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "§1"}], how_known: "Both sources; elected 1495, assumed the post two years later (S2)."}
   - {value: "Fifth Lateran Council (calendar reform)", role: "invited to give an opinion (1514); never attended", years: "1514", kind: "religious body", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education' (last paragraph)"}], how_known: "Britannica."}

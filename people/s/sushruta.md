@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 219). Source: Britannica scholars edition (unsigned, read in full; three paragraphs). He 'flourished c. 6th century bce'; birth and death UNKNOWN. Lasting: the Sushruta-samhita, 'the main source of knowledge about surgery in ancient India', an 'influential treatise' with 'groundbreaking operations' (S1); lasting at 0.5 (thin wording, P13 borderline). No year: first lasting year, span, age UNKNOWN; era UNKNOWN under P39 (no dated work; candidate 'before -500' from the floruit). Attribution: S1 credits the treatise to him without qualification, but only one short source was read; the text's own date and authorship are not tested here (P42, Sun Tzu precedent). Worldview UNKNOWN. B UNKNOWN pending attribution, alternative B 3 at 0.5 (Galen precedent: empirical surgery and dissection). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #206, F 3, rank 219). Needs: primary/A/B/mid UNKNOWN; held B alt 3@0.5 Galen if attribution holds (P42 untested). Authorship hunt: Wujastyk 2026 blog summarizing Meulenbeld HIML (S4) — composite multi-layer text; composition may begin last centuries BCE; Uttaratantra later; known to Dṛḍhabala fl. 300–500 CE; Meulenbeld: historical Suśruta as author 'not based on uncontrovertible evidence and may be illusory'; teachings attributed to Kāśirāja Divodāsa; name Suśruta like Hippocrates covers many hands. Wikipedia EN Sushruta (S3) + Samhita date/authorship (via S4/S3): Hoernle 600 BCE rejected; earliest firm name-link Bower Manuscript (6th c. CE). P50 dual bio Britannica (S1) + Wikipedia (S3). P47 source_quality on S1–S5. P42 reaffirmed: Samhitā context only, scores nothing. P49 not stretched (no dual scholarly reconstruction of personal A/B for a recoverable historical Suśruta). primary/A stay UNKNOWN; B UNKNOWN→BELOW_THRESHOLD (Galen/P35 lead kept as named alt only); mid UNKNOWN. Chart still unplotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: sushruta
   display_name: "Sushruta"
@@ -120,6 +121,18 @@ lane_b:
   reading: "As belief, not finding: form and circle unclear. Worldview unplottable (A UNKNOWN; B BELOW). H1 not tested. Samhitā naturalism/surgery is tradition-context, not his scored view."
   notes: "P42 authorial-tradition case (with Hippocrates, Homer, Sun Tzu)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The compendium is treated as the work of many authors. No adult affiliation of a historical Sushruta is in the file."
+    cites: [{source: S4, locator: "Authorship (Meulenbeld)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions: []
 collaborators: []
 

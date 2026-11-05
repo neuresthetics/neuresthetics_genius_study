@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 48). Basics from Britannica (McLellan) and SEP (Wolff and Leopold). Worldview from the Introduction to A Contribution to the Critique of Hegel's Philosophy of Right (1844), read in the marxists.org English web copy (0.7 cap). Not a scientist under P30. primary_system ATHE 0.7; A 4 at 0.7 (alt BELOW_THRESHOLD); B UNKNOWN (no statement on the order of nature read, P16); C, D, E UNKNOWN; mid_basin false at 0.7 (A ≥ 3 branch). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: weaken #6): S1 author corrected to David T. McLellan, the byline on the live page when re-checked. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #48). Needs: A single source; B UNKNOWN. Verified Critique HPR Introduction religion quotes against MECW vol. 3 scholarly edition (S5: pp. 175–176). Added Economic and Philosophic Manuscripts Estranged Labour (S5 p. 276: 'man is a part of nature') and Capital vol. 1 ch. 7 Fowkes Penguin (S6 p. 290: everlasting nature-imposed condition) for B. P47 source_quality on S1–S6. P48: A support single→corroborated (S3+S5); B newly scored 3 @ 0.5 written_profession support corroborated (S5+S6; P16/P41, alt 4). Dated Das Kapital vol. 1 to 1867 from the 25 July 1867 preface (S6); major_work_period / working_years 1844–1867. Statements verified_against → scholarly edition. Chart-moving YES: unplotted → faded filled (A 4 @ 0.7 corr; B 3 @ 0.5 corr). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: marx-karl
   display_name: "Karl Marx"
@@ -175,6 +176,20 @@ lane_b:
   reading: "Religion as a human product; nature as standing material condition of human life; no lawful-God circle."
   notes: "Belief model only; H1 not tested."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Published 1844: 'The basis of irreligious criticism is: Man makes religion, religion does not make man.' Childhood Evangelical baptism is not adult affiliation."
+    cites: [{source: S3, locator: "paragraph 2"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file records moves among Cologne, Paris, Brussels, and London. It does not state a religious sanction."
+    cites: [{source: S1, locator: "'Early years'"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The 1844 introduction states that irreligious standpoint, including religion as the opium of the people. No adult church endorsement is in the file."
+    cites: [{source: S3, locator: "paragraph 4"}]
 institutions:
   - {value: "Rheinische Zeitung, Cologne", role: editor, years: "1842–1843", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Early years'"}], how_known: "Britannica."}
 collaborators:

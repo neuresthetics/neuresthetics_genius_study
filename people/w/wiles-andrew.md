@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 83). Basics from Britannica (Britannica Editors, unsigned; body only) and MacTutor (O'Connor and Robertson). Worldview: the 2016 Heidelberg Laureate Forum press conference (Plus magazine transcript), where he declines the question 'Who created this landscape?' and calls mathematics 'discovered'. primary_system UNKNOWN; A UNKNOWN; B BELOW_THRESHOLD (a view on mathematical truth alone, P30); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#18): B BELOW_THRESHOLD now cites P16 (a view on mathematical truth alone), not P30; value unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #82, F4 rank 83). Needs: A UNKNOWN; B BELOW_THRESHOLD (math-truth alone, P16). Read Abel laureate interview Raussen/Skau EMS Newsletter 101 (2016) = AMS Notices 64:3 (2017) reprint (S5); Wikipedia EN dual-bio (S6, P50) with S1 Britannica; re-opened Plus HLF (S3), MacTutor (S2), Britannica Wayback (S1); skimmed PBS/NOVA Fermat interview and Hannah Fry / Science Museum accounts (finding aids only). P47 source_quality on S1–S6. Gap fills: Leys School; key_early_reading E.T. Bell / Hardy & Wright / Davenport (own voice S5); Coates PhD; Oxford Regius / return years; marriage Nada Canaan 1988 (S6). A stays UNKNOWN (HLF creator Q declined; Abel interview and Fry/NOVA searches yield no God/faith/church locus of his own; father Anglican theologian remains heritage context only). B stays BELOW_THRESHOLD (P16): 'discovered' math ontology (S3) and Abel remark that classical mathematics has sources in the physical sciences and in number theory are about math's origins/ontology, not a claim about the physical world's causal order; astrophysics interest is qualitative relaxation only (S5); not a P30 scientist (lasting contribution is number-theoretic, not a theory of physical systems). primary_system UNKNOWN; mid_basin UNKNOWN. Chart-moving NO (still unplotted). ODNB 403 this pass. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: wiles-andrew
   display_name: "Andrew Wiles"
@@ -150,6 +151,18 @@ lane_b:
   reading: "Mathematics as a discovered landscape; creator question declined; no theology and no nature-order claim stated."
   notes: "Lane B labeled belief only. Math discovered ≠ physical-world order (P16)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "2016 interviews were checked. He declines a philosophical creator question and states no affiliation. His father's clergy post is heritage."
+    cites: [{source: S3, locator: "answer to 'Who created this landscape?'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Princeton University", role: professor, years: "1982–2010", kind: university, certainty: 0.7, cites: [{source: S1, locator: "career paragraph"}, {source: S6, locator: "Career"}], how_known: "Britannica (emeritus 2012); Wikipedia: at Princeton 1982–2010 except short leaves, Eugene Higgins Professor 1994–2009."}
   - {value: "University of Oxford", role: "Royal Society Research Professor; Regius Professor of Mathematics (from 2018)", years: "2011–", kind: university, certainty: 0.7, cites: [{source: S6, locator: "Career"}, {source: S1, locator: "career paragraph"}], how_known: "Wikipedia EN; Britannica ('subsequently joined the faculty at Oxford'). Earlier Oxford Royal Society Research Professor 1988–1990 (S6)."}

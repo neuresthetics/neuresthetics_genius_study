@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #115 / F4 rank 116). Goals: corroborate A and B (hollow→filled); prefer Strength to Love print vs drafts; RQ-KK1 stands unless print differs in substance. Read Suffering and Faith (Christian Century 27 Apr 1960; S8): 'More than ever before I am convinced of the reality of a personal God.' Re-read S5/S6/S7 King Papers drafts with editors' published-version notes: Love in Action fixed-laws paragraph unmarked (note 6 concerns next sentence only); Answer thunderbolt/miracle unmarked; free-will and 'exceedingly abundant' altered in print but same substance (S6 notes 25, 27; STL pp. 123+). Dual bio Wikipedia EN (S9, P50). P47 source_quality on S1–S9. A 1 @0.7 support single→corroborated (S2+S8; alt 0). B 3 @0.7 support single→corroborated (S5+S6+S3+S7+S2; alts 4 and 2; S7 moral/physical-law parallel and absolute moral laws folded into preferred reading; S2 loving-purpose). D labelled support corroborated (S2+S3). mid_basin true @0.7 unchanged. Chart: dark hollow → dark filled (fill cue). Scores unchanged. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/), leftovers: KK4 credited to the ca27fcf audit in two places (was 'batch Y audit'); 'sent to the publisher' dropped from three reliability_notes (not stated by the King Papers). No score changed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): Britannica byline corrected to Clayborne Carson (KI2); B how_known now says the 1949 essay is one private document, scholar-backed, 0.5 (§3), with the basis label kept pending ruling U1 (KI9, on instruction); 'editors back the reading' narrowed to scriptural literalism (note). B and mid_basin unchanged; U1 (re-basing B on Strength to Love) not applied: waiting on Jason."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 116). Basics from Britannica (Clayborne Carson; author corrected in the batch U audit fixes). Worldview from two texts in the King Papers online edition (Stanford King Institute): 'Pilgrimage to Nonviolence' (Christian Century, 13 April 1960; in span) and a 1949 Crozer seminary essay (unpublished; before the span, P31). Not a scientist (P30). primary_system CHRIST (0.7, alt CLTHEI); A 1 (0.7, alt 0); B 3 (0.5, alts 4 and 2; P41, from the 1949 essay); C UNKNOWN; D 2 (0.7, alt 3); E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (B at 0.5). Plotted (faded). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: king-martin-luther-jr
   display_name: "Martin Luther King Jr."
@@ -267,6 +268,19 @@ lane_b:
   reading: "A personal God and a loving purpose in the universe, with Christian love worked through Gandhian nonviolence."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Baptist minister, including at Ebenezer. Published essays affirm a living personal God and Christ as the spirit of the movement."
+    cites: [{source: S1, locator: "opening"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Civil-rights conflict is recorded. No sanction for religious dissent is documented."
+  practice_gap:
+    gap: mixed
+    evidence: "The ministry and the 1960 essays endorse a personal God and Christ. The 1949 essay says the evidence for the virgin birth is too shallow for an objective thinker."
+    cites: [{source: S3, locator: "virgin-birth paragraph"}]
 institutions:
   - {value: "Pastorate in Montgomery, Alabama", role: "pastor", years: "1954–", kind: "religious body", certainty: 0.7, cites: [{source: S2, locator: "part II"}], how_known: "'When I went to Montgomery, Alabama, as a pastor in 1954' (S2); the church is not named in the sources read."}
   - {value: "Southern Christian Leadership Conference", role: "head", kind: other, certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}

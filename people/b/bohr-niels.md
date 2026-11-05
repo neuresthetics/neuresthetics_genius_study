@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on Heilbron's reconstruction of his working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #60, F5 rank 60). Needs: A BELOW_THRESHOLD; B faded. Primary Causality and Complementarity (Phil. Sci. 1937, S9) and Atomic Physics and Human Knowledge Discussion with Einstein (1958, S10) raise B 3@0.5 scholarly_reconstruction → B 4@0.7 written_profession, support corroborated (P48); alt 3. Aaserud & Heilbron 2013 Kierkegaard notes (S8, secondary quotation via Wikipedia S11) plus Witham 2006 fiancée-letter quotation (S12) score A 4@0.5 consistent_private_letters, support corroborated; alt BELOW (P38-style / Aaserud ajar-door). primary_system stays BELOW (ATHE leading; no positive naturalism in own words; Ingeniøren S13). P47 source_quality on S1–S13. mid_basin BELOW (A≥3 branch needs 0.7). Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: bohr-niels
   display_name: "Niels Bohr"
@@ -206,6 +207,18 @@ lane_b:
   reading: "As belief, not finding: form partly present, no circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "No affiliation is stated in the published work read. He resigned from the Danish State Church in April 1912 so the wedding would be civil."
+    cites: [{source: S4, locator: "p. 20"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "University of Copenhagen", role: "lecturer (1913–1914); professor of theoretical physics (1916–)", years: "1913–1962", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 6"}, {source: S1, locator: "'Bohr's Institute for Theoretical Physics'"}], how_known: "Two sources."}
   - {value: "Institute for Theoretical Physics, Copenhagen", role: director, years: "1921–1962", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "opening in 1921"}, {source: S3, locator: "paragraph 6"}], how_known: "Start date 1920 (Nobel) or 1921 (MacTutor, Britannica)."}

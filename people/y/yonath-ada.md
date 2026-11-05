@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (catch-up 4/13; F3 rank 138). Goals: firm B; any A; do not force plot. Opened WINA Dec 2016 (S5, Pollak); Principia 16 Mar 2016 (S6); Mètode 18 Jun 2018 (S7); Wikipedia EN dual bio (S8, P50). Native name עדה יונת; birth name Ada Esther Lifshitz. A stays BELOW_THRESHOLD (P20): SINC 2010 + WINA 2016 distance science from biblical origin accounts and joke about Vatican/Darwin 'miracles', but no place/deny of a personal God and no explicit AGNOS suspension. primary_system stays BELOW_THRESHOLD (leads AGNOS, JUDA). B 3 stays @0.5 alt 4: basis inference_from_work → recorded_interview (Mètode: 'this is the law in life, in chemistry and in the world: the structure defines the function'; Nobel bio S2 principles of nature / mechanics guiding the process); support single → corroborated (S7+S2; P48). Certainty held at 0.5 under P16 Hilbert / P35 (no exception / no-exception claim). mid_basin BELOW_THRESHOLD. Chart-moving NO (A BELOW; B faded @0.5). Deceased 31 Aug 2026 (not living). P47 source_quality on S1–S8. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-21: context line rewritten; 'Desconozco' is the interviewer's, not hers. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 138). Basics from Britannica (Kara Rogers, signed; death 31 August 2026, also in the Nobel Foundation's addendum) and her Nobel autobiography (Les Prix Nobel 2009). Own voice on religion: SINC interview (Enrique Sacristán, 5 Oct 2010, Spanish): asked whether science and religious faith are compatible, 'La respuesta no es nada que pueda saber. Pienso que la definición de Dios es algo tan… (silencio) por encima de mí. Así que no puedo responder.' A scientist (P30: ribosome structures). Span 1980–2001 at 0.7. primary_system BELOW_THRESHOLD (leads AGNOS, JUDA); A BELOW_THRESHOLD; B 3 at 0.5, alt 4 (P35); C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: yonath-ada
   display_name: "Ada Yonath"
@@ -173,6 +174,18 @@ lane_b:
   reading: "Not assessed."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Asked whether science and faith are compatible, she says the definition of God is above her and she cannot answer. She states no affiliation."
+    cites: [{source: S3, locator: "question on science and faith"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Weizmann Institute of Science", role: "scientist to director of the Mazer and Kimmelman centers", years: "1970–2026", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica; end year the coder's (her death)."}
   - {value: "Max Planck Research Unit for Ribosomal Structure, Hamburg", role: "head", years: "1986–2004", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "paragraph 3"}], how_known: "Britannica."}

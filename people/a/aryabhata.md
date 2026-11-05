@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Shukla & Sarma 1976 critical edition English (IA Aryabhatiya1976 v1 PDF text layer) as S5 — independent of Clark 1930. Dasagitika 1: 'God Brahma… one and many… the real God, the Supreme Brahman'; Gola 49: 'By the grace of Brahma…'. Add S5 to A value and alt cites → A support single→corroborated (P48). B already corroborated → hollow→filled (still faded @0.5). Certainty stays 0.5 (van der Waerden Dasagitika doubt). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #144, F 3, rank 149). Opened Clark 1930 Chicago University Press PDF/OCR via Internet Archive (S4; TheAryabhatiyaOfAryabhata): confirmed Wikisource readings of Dasagitika A, Gola 47, Gola 49–50; added Ganitapada 1 (Brahman reverence outside the Dasagitika authenticity dispute) and Gola 37 (Moon obscures Sun; Earth's shadow obscures Moon — natural eclipse mechanism). Clark preface defends Dasagitika against Kaye (Brahmagupta quotes stanzas 1, 3, 4, 5); van der Waerden doubt (S1 MacTutor: Introduction later; some verses added) still flagged — which Gola verses he rejects remains unspecified. Shukla/Sarma 1976 English (IA) OCR unusable this pass. primary HINDU stays 0.5; A 1 stays 0.5 alt 2 (support single); B 3 stays 0.5 alt 4 (P35/P16: Gola 37/47 are the natural eclipse account, not a lift past 0.5) but basis inference_from_work → written_profession; support single → corroborated (S4/S2 + S1). mid BELOW_THRESHOLD; plotted faded. P47 source_quality on S1–S4. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): B basis now inference_from_work (P24; ceiling unchanged); statements verified_against 'scholarly edition' (Clark's translation read directly, not a secondary quotation); coder_notes add the Gola 49–50 condition. RQ-Z4-1: invocation carries primary and A at 0.5. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 149). Basics from MacTutor (O'Connor and Robertson). Own words from the Aryabhatiya in W. E. Clark's translation (1930) via Wikisource: Dasagitika opening invocation ('Having paid reverence to Brahman, who is one ... many ..., the true deity, the Supreme Spirit'; Clark's parenthetical glosses not counted), Gola 47 (natural account of a solar eclipse), Gola 49 ('By the grace of God'), Gola 50 (astronomy 'formerly was revealed by Svayambhu'). Van der Waerden doubts the Dasagitika's authenticity (MacTutor), so the invocation is flagged. A scientist (P30: astronomy). Span 499. Age 23 from his own statement. primary_system HINDU (0.5); A 1 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: aryabhata
   display_name: "Aryabhata"
@@ -201,6 +202,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: hindu
+    detail: "The Aryabhatiya pays reverence to Brahman, called the true deity and Supreme Spirit. Ganitapada 1 stands outside the doubted Dasagitika."
+    cites: [{source: S4, locator: "Ganitapada 1 (p. 21 Clark)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The invocations name Brahman as supreme deity. A natural eclipse account in the same work does not withdraw that reverence."
+    cites: [{source: S5, locator: "Gitika Section §1"}]
 institutions: []
 collaborators: []
 

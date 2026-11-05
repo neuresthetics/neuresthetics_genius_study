@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #135, F3 rank 139). Opened Sragow primary: Salon 21 Sep 2000 reprint of Michael Sragow's 1986 Ran interview (S5) — gods/God 'powerlessness' quote in the interviewer's own signed recount. Opened Cineaste text: Hirano, Cineaste XIV.4 (1986) pp. 23–25, 'Making Films for All the People' — 'God and Buddha, if they actually exist' verified in DBU study-guide reprint of the Q&A (S3) and eNotes source citation (S6). Read Something Like an Autobiography (1982 Eng., S7): childhood Buddhist funeral laughter ('absurdly funny'; brother 'Idiotic!'); father-ordered daily Hachiman shrine visits. V3 secondary-quotation bar lifted; content still does not score — primary/A/B restored BELOW_THRESHOLD (AGNOS/BUDDH leads; film-viewpoint conditional ≠ explicit AGNOS suspension; no BUDDH profession; B is human-conduct film viewpoint not nature, P16). C/D/E UNKNOWN; mid BELOW. Still not plotted. P47 on S1–S8; P50 Wikipedia EN (S8) dual bio; parents Isamu/Shima named. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-41 (FAIL): primary_system, A_locus and B_cause BELOW_THRESHOLD -> UNKNOWN, with AGNOS and BUDDH kept as leads (V3: second-hand quotations alone do not move a value off UNKNOWN); mid_basin -> UNKNOWN. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 139). Basics from Britannica (Tadao Sato and Britannica Editors, signed). Own voice on religion only in interviews about Ran, both as secondary quotations: to Michael Sragow (1986, reprinted in Sight & Sound, 2010), 'the gods or God or whoever it is observing human events is feeling sadness ... and powerlessness to affect human beings' behaviour'; to Cineaste (quoted in a Dallas Baptist University study guide), 'how God and Buddha, if they actually exist, perceive this human life'. Not a scientist. Span 1950–1985 at 0.7 (Rashomon to Ran). primary_system BELOW_THRESHOLD (leads AGNOS, BUDDH); A, B BELOW_THRESHOLD with readings named; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kurosawa-akira
   display_name: "Akira Kurosawa"
@@ -154,6 +155,17 @@ lane_b:
   reading: "Not assessed."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Ran interviews speak of God or Buddha as a conditional film viewpoint, which the file does not take as a creed. Temple and shrine practice in the autobiography is childhood."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "PCL (Photo Chemical Laboratories) studio", role: "assistant director", years: "1936–1943", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica (the PCL expansion is the coder's)."}
 collaborators:

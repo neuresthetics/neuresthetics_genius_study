@@ -15,7 +15,10 @@ Checks
   8. data/reference/regions.csv (P3 country-to-region table) uses exactly the schema's region values, with no
      duplicate countries.
   9. Schema version gating (schema 1.3, decisions P18, P21, P24, P28): a 1.2 file may not use 1.3-only values,
-     and a 1.3 file may not use the retired school stages 'religious school' / 'dame or charity school'.
+     and a 1.3 or 1.5 file may not use the retired school stages 'religious school' / 'dame or charity school'.
+     Schema 1.5: religion_conformity is Lane A only. A non-unknown label, level, or gap needs a cite.
+     practice_gap is unknown when stated_affiliation is unknown or none_stated. Detail and evidence
+     must not guess inner belief.
  10. Warning (decision P15): a non-worldview fact at certainty 1.0 that cites only one source and no primary
      source. Derived fields (era_bucket, age_at_first_lasting_contribution, region_of_birth) are exempt.
  11. Warning (P30 addendum, rule f): worldview.working_years must equal timing.major_work_period, the one
@@ -101,6 +104,7 @@ def check_person(path, schema, ids, roster, codes, is_template=False):
             errors.append(f"collaborators/{'/'.join(p)}: roster_id {rid!r} is not in person_ids.csv")
     e3, w3 = version_checks(data)
     errors += e3; warnings += w3
+    errors += religion_checks(data)
     warnings += span_check(data)
     return errors, warnings, data
 
@@ -145,8 +149,8 @@ def version_checks(data):
             used13.append(f"childhood/schooling/{i}/stage {sc['stage']!r}")
         if "run_by" in sc:
             used13.append(f"childhood/schooling/{i}/run_by")
-        if ver == "1.3" and sc.get("stage") in RETIRED_STAGES:
-            errors.append(f"childhood/schooling/{i}/stage: {sc['stage']!r} is retired in schema 1.3; give the level "
+        if ver in {"1.3", "1.5"} and sc.get("stage") in RETIRED_STAGES:
+            errors.append(f"childhood/schooling/{i}/stage: {sc['stage']!r} is retired in schema 1.3 and 1.5; give the level "
                           "(e.g. 'elementary school') and put who ran it in run_by (P21)")
     for p, c in claims(data):
         if c.get("basis") == "inference_from_work":
@@ -164,6 +168,32 @@ def version_checks(data):
         if len(ids) < 2 and not any((sources.get(i) or {}).get("type") == "primary" for i in ids):
             warnings.append(f"{'/'.join(p)}: certainty 1.0 on one non-primary source; one reliable source caps a fact at 0.7 (P15)")
     return errors, warnings
+
+
+_BELIEF_GUESS = ("unbeliever", "hypocri", "really believed", "did not really", "inwardly", "feigned", "closet atheist", "secret atheist", "secretly")
+
+
+def religion_checks(data):
+    """Schema 1.5 Lane A block. The schema enforces shape; this rejects inner-belief wording."""
+    errors = []
+    block = data.get("religion_conformity")
+    if not isinstance(block, dict):
+        return errors
+    stated = (block.get("stated_affiliation") or {})
+    gap = (block.get("practice_gap") or {})
+    if stated.get("label") in {"unknown", "none_stated"} and gap.get("gap") not in {None, "unknown"}:
+        errors.append("religion_conformity/practice_gap: gap must be unknown when stated_affiliation is unknown or none_stated")
+    for where, text in (
+        ("stated_affiliation/detail", stated.get("detail")),
+        ("conformity_pressure/evidence", (block.get("conformity_pressure") or {}).get("evidence")),
+        ("practice_gap/evidence", gap.get("evidence")),
+    ):
+        low = str(text or "").lower()
+        for phrase in _BELIEF_GUESS:
+            if phrase in low:
+                errors.append(f"religion_conformity/{where}: {phrase!r} guesses inner belief; Lane A records the public record only")
+                break
+    return errors
 
 
 def check_regions(schema):

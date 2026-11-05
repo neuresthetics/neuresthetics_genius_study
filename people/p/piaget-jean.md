@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 108). Basics from Britannica (Britannica Editors, unsigned; body only, read live). Worldview from his published lecture Immanentisme et foi religieuse (Geneva, Libr. H. Robert, 1930; given at Rolle on 16 June 1929), read in full in the University of Geneva's online Piaget edition. Scientist (P30, P35 addendum: testable claims about children's cognition). primary_system IDEAL (0.5; alternatives KANT, CHRIST); A 4 (0.7, alt 3); B 3 (0.7, alt 4; P27 free-mind anchor); C BELOW_THRESHOLD; D 4 (0.7); E 4 (0.7); mid_basin false (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit notes for batch S (blind audit of c5d448a, run 1). first_evidence_of_lio_type_views dated 1929 (the lecture given at Rolle on 16 June 1929; printed 1930). primary_system now also cites part I, where 'le Dieu immanent est un Dieu-valeur' stands (the definitions part). No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #107 / F4 rank 108). Goals: corroborate A and B (hollow→filled); keep scores honest. Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on every source. Read in full: 1928 Deux types d'attitudes religieuses (S4, unige; La Sarraz, Mar 1928; published with de la Harpe 1928) and 1929 Encore «Immanence et transcendance» (S5, Cahiers protestants); Insights and Illusions of Philosophy ch.1 (S6, Meridian 1971; own retrospective on Bergson→immanentism and the 1920s lectures). A stays 4 @0.7 alt 3; support single→corroborated (P48: S2 1930 + S4 1928; S5 agrees). B stays 3 @0.7 alt 4 (P27 free-mind); support single→corroborated (S2 + S4 reject miracle / divine intervention in nature). D and E also support→corroborated. first_evidence→1928. mid false @0.7. Chart-moving YES (fill only: dark hollow→dark filled). No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: piaget-jean
   display_name: "Jean Piaget"
@@ -262,6 +263,19 @@ lane_b:
   reading: "An immanentist scientist: God as value, nature left wholly to natural causes."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Published lectures choose immanentism: God as value and as norms of thought, not an external cause (S2, 1930; S4, 1928). No adult church roll. Protestant upbringing is heritage."
+    cites: [{source: S2, locator: "part III, opening"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "S2 and S4 state the same immanentism and reject miracle as outside natural causality. The file has no contrary membership."
+    cites: [{source: S2, locator: "part III, opening"}]
 institutions:
   - {value: "Institut J.-J. Rousseau, Geneva", role: director, years: "1921–", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "career paragraph"}], how_known: "Britannica."}
   - {value: "University of Neuchâtel", role: professor, years: "1925–1929", kind: university, certainty: 0.7, cites: [{source: S1, locator: "career paragraph"}], how_known: "Britannica."}

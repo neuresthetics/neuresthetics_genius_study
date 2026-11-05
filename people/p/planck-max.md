@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 10
+  schema_version: "1.5"
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (Stuewer, first page), MacTutor and the Nobel biography. Worldview from the German text of 'Religion und Naturwissenschaft' (1937 lecture; copy of the 1938 second edition), the English Where Is Science Going? (1933, Murphy) and Heilbron (1986) as quoted on the web. Coded DEISM at 0.5 (PANT and CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7), E 3 (0.7); C BELOW_THRESHOLD. mid_basin TODO: the P4 test has no branch for A_locus = 2. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Pages: 'heiligste Symbol' is copy p. 5 and 'wesensgleich' copy p. 12. Framing: 'regiert er die Welt' is a question he poses and the 'almighty hand / Gläubige und Ungläubige' passage is the religious person's answer; A and E rationales no longer treat them as his own views. Glosses that are Gaynor's wording are marked 'cross-checked with Gaynor'. Heilbron: 'deism' unconfirmed in the book; Wikipedia's p. 198 is the 2000 Harvard printing; S6 citation fixed and the label no longer used as support. New S9 (Gladigow 1986) confirms the 1947 letter in German (citing Herneck 1952) and reports a 1945 letter (Bertholet 1948) that seems to show a more personal God; added as counter-evidence on A and on DEISM vs CHRIST (no certainty change: A stays 2 at 0.7 with alternative 1 strengthened; DEISM already at 0.5). Finding #127: DEISM rationale rewritten for 'einzig und allein Sache des Glaubens' and the non-rational direct link with God. Finding #132: E_scope 3 → 4 (0.7). Finding #135: nominal affiliation role 'member' → 'other' (membership unsourced). Two statements added (p. 6 faith-alone sentence; p. 11 world order). mid_basin unchanged (TODO, A = 2). primary_system unchanged (DEISM 0.5). Not reviewed."}
@@ -20,6 +20,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 6 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #57, F5 rank 57). Needs: dark and corroborated on A and B (already computed dark filled). Authoritative ZB MED / Hoffmann scan of Barth 1938 2nd unchanged ed. of Religion und Naturwissenschaft (urn:nbn:de:hbz:38m:1-126198) replaces the unofficial alkastar web copy as S4; all quoted German passages re-checked; locators updated from copy pages to printed Barth pages (identification p. 29, matching Gladigow n. 45). §7 unofficial-web cap lifted on self_described_science_religion_relation (0.7 → 1.0). P47 source_quality on S1–S10. A 2 @0.7 and B 4 @0.7 labelled support corroborated (P48; cites already multi-source). D 2 and E 4 likewise labelled corroborated. Duplicate axes key on the vernünftige-Weltordnung statement fixed (E_scope only). S10 Wikipedia EN dual-source bio (Lutheran membership via Dinkler RGG 1961 still unread in print). Heilbron 1986/2000, Gaynor Scientific Autobiography 1949, Herneck 1952 and Bertholet 1948 still unread (IA borrow / Wiley paywall). mid_basin unchanged TODO (no P4 branch for A=2). Chart-moving NO (already dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: planck-max
   display_name: "Max Planck"
@@ -264,6 +265,20 @@ lane_b:
   reading: "As belief, not finding: form unclear, circle partly present. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1937 lecture identifies the scientific world-order with the God of religion (S4, p. 29). Private 1947 letter: not a personal God and not a Christian God (S9, p. 327). Lutheran membership was not read."
+    cites: [{source: S4, locator: "p. 29"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "He stayed in Germany under the Nazi government (S2, S3). The file does not document a religious sanction."
+    cites: [{source: S2, locator: "Nazi period paragraphs"}]
+  practice_gap:
+    gap: aligned
+    evidence: "S4 and the 1947 letter (S9) agree on a non-Christian God tied to the world order. Family church tradition is heritage. Dinkler membership was not read (S10)."
+    cites: [{source: S4, locator: "p. 29"}]
 institutions:
   - {value: "University of Munich", role: "Privatdozent", years: "1880–1885", kind: employer, certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Nobel biography."}
   - {value: "University of Kiel", role: "associate professor of theoretical physics", years: "1885–1889", kind: employer, certainty: 1.0, cites: [{source: S3, locator: "paragraph 2"}, {source: S1, locator: "university paragraph"}], how_known: "Two sources."}

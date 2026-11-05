@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 46). Basics from SEP (Uzgalis) and Britannica (Rogers). Worldview from his Essay Concerning Human Understanding, Book IV, read in Gutenberg #10616 (web copy, 0.7 cap). Not a scientist under P30 (no lasting theory or result about natural systems listed). primary_system CHRIST 0.7; A 0 at 0.7 (alt 1); B 3 at 0.7 (alt 2) from his own statement on miracles and the course of nature (P16); D 2 at 0.7; C, E UNKNOWN; mid_basin true at 0.7. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #46). Needs: A single source; B single source (both @0.7 written_profession; dark hollow). Verified Essay IV.x.6 / IV.xvi.13 / IV.xviii.10 against Fraser Clarendon 1894 scholarly edition vol. 2 (S5: pp. 309, 382, 425). Added A Discourse of Miracles (S6; Works 1823 via Hanover) as independent primary for B and CHRIST. Reasonableness of Christianity Messiah profession (S7; archive.org OCR) for CHRIST. P47 source_quality on S1–S7. P48 support: A/B/D corroborated (A S3+S5; B S3+S5+S6; D S3+S5). Values/certs unchanged (A 0, B 3, D 2 @0.7; named alts). Statements verified_against → scholarly edition. Chart-moving YES: dark hollow → dark filled. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: locke-john
   display_name: "John Locke"
@@ -186,6 +187,20 @@ lane_b:
   reading: "A demonstrated transcendent God with a lawful ordinary course of nature and attested miracles as the exception."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "The Reasonableness of Christianity takes belief that Jesus is the Messiah as the distinguishing Christian profession. Church membership is marked inferred, not stated."
+    cites: [{source: S7, locator: "pp. 17–19 (Messiah as the great proposition)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S1 records years of exile in the Netherlands. The file does not call that exile a sanction for religious dissent."
+    cites: [{source: S1, locator: "§1"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The Messiah profession matches a public Christian claim. The Essay says whatever God has revealed is certainly true. No contrary text is in the file."
+    cites: [{source: S7, locator: "pp. 17–19 (Messiah as the great proposition)"}]
 institutions:
   - {value: "Christ Church, Oxford", role: "student, then senior censor (1663)", years: "1652–", kind: university, certainty: 0.7, cites: [{source: S2, locator: "'Oxford'"}], how_known: "Britannica."}
   - {value: "Board of Trade", role: member, years: "1696–1700", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1.3"}], how_known: "SEP."}

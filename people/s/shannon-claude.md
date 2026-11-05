@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 89). Basics from Britannica (George Markowsky, signed; body only). Worldview from Anthony Liversidge's interview (Omni, August 1987), read in the version printed in Shannon's Collected Papers (IEEE Press, 1993; PDF on gwern.net). primary_system ATHE (0.7); A 4 (0.7); B 3 (0.5, alt 4; P41); mid_basin false (0.7). Plotted (faded on B). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fixes (#8, #9): the 1987 interview is after the working years (1940–1948), so ATHE and A 4 drop to 0.5 (P20, Hawking precedent); mid_basin false → BELOW_THRESHOLD (A ≥ 3 branch needs 0.7). B cites P35 first (value unchanged). 1938 AIEE paper noted as a working-years lead. Still plotted (faded)."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Carry-over from the batch P audit (gs_08be43b_P run 1, note 9): B_cause basis corrected from recorded_interview to inference_from_work, since B 3 rests on his working science (P35) and the interview only agrees. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #88, F4 rank 89). Needs: working-years/near-period A/ATHE; lift B if nature-order; P20 ceiling check. Re-verified Liversidge Collected Papers scan (S2, gwern PDF) — 'I am an atheist to begin with' / 'I see no God involved' / 'I don't happen to be a religious man'. Added Wikipedia EN (S4, P50 dual-bio): Methodist youth family; 'apolitical and an atheist' via Poundstone. Read Soni/Goodman A Mind at Play (S5): family active in Methodist church (p. 6); Norma Levor (later Barzman) 1939–40 courtship — she said she was a third-generation atheist; he replied 'How can you be anything else?' (p. 63; Norma Barzman interview 21 Dec 2014); biographer 'avowed atheist' vs Weaver (p. 84; index atheism 46, 84). Poundstone Fortune's Formula (S6) p. 18 atheist line footed to Liversidge 1987 and Timothy M. Johnson unpublished 1982 LOC interview paper (Johnson unread). 1938 AIEE PDF image-scan only — no extractable worldview text (technical switching). MTC/Weaver reprint: no Shannon nature-order / God statements. P20 corrected (Hawking D1): adult evidence counts for the working span absent sourced changes_over_life — none here; 1939–40 Norma reply is inside/at the start of the span. primary_system ATHE 0.5→0.7; A 4 0.5→0.7 support single→corroborated (S2+S5); B 3 @0.5 alt 4 stays (no P16 exceptionless order); support single→corroborated (S1+S2; P35/P41); mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). P47 on S1–S6. Chart: faded hollow → faded filled. Chart-moving YES (fill). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: shannon-claude
   display_name: "Claude Shannon"
@@ -173,6 +174,19 @@ lane_b:
   reading: "Atheist; humans as natural machines; no exceptionless nature-order statement scored for B 4."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "1987 interview: 'I am an atheist to begin with' and 'I don't happen to be a religious man.' Methodist family is youth."
+    cites: [{source: S2, locator: "interview, religion exchange"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The same interview refuses information theory as a substitute for belief in God. No church membership is in the file."
+    cites: [{source: S2, locator: "interview, Wiener question"}]
 institutions:
   - {value: "Bell Telephone Laboratories", role: "mathematician (research)", years: "1941–1972", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "Bell Labs sentences"}], how_known: "Britannica."}
   - {value: "Massachusetts Institute of Technology", role: "professor", years: "1956–1978", kind: university, certainty: 0.7, cites: [{source: S1, locator: "MIT sentence"}], how_known: "Britannica (visiting 1956, faculty 1958, emeritus 1978)."}

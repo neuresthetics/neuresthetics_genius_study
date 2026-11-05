@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and archive.org OCR of Fabrica 1543"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #142): opened Fabrica 1543 preface (English web translation + Latin IA OCR) and Book VI ch. 15 soul passage (Garrison English on vesaliusfabrica.com, Latin verified on IA OCR p. 594). Own voice: 'infinite Creator of things'; immortal soul as body's lodging/instrument (microcosm); 'summus rerum opifex Deus' (Book I); 'nostrae religionis' / abstains from locating types and seats of the soul to avoid faith/immortality censors. Still no clear A locus score — Creator/immortal-soul language is thin and he explicitly refuses soul-location dispute (P19). primary stays UNKNOWN (lead CHRIST, now with own-voice Catholic framing). A stays UNKNOWN. B stays 3 @0.5 alt 4 (P35/P16: preface is dissection/observation narrative, not explicit cause-order talk); support single→corroborated (S1+S3/S4). mid UNKNOWN; still not plotted. P47 source_quality; P50 Wikipedia EN (birth 31 Dec 1514 agrees with CE; death month June Britannica vs 15 Oct Wikipedia — noted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 147). Source: Britannica (Marcel Florkin, signed). No own words on religion read; Catholic setting (Leuven, imperial court) and a pilgrimage to the Holy Sepulchre in 1564 are leads. A scientist (P30: anatomy from his own dissections). Span 1543 (Fabrica). primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B 3 (0.5, alt 4); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: vesalius-andreas
   display_name: "Andreas Vesalius"
@@ -179,6 +180,19 @@ lane_b:
   reading: "Hands-on anatomy under stock Creator language; soul location refused."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The Fabrica preface names an infinite Creator and 'our most truthful and sacred religion,' and he refuses to locate the soul. No membership is stated."
+    cites: [{source: S7, locator: "Bk. VI ch. 15 English (Garrison)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "An Inquisition-penance story is in the file as a later rumour that modern biographers dismiss. No used sanction is recorded."
+    cites: [{source: S6, locator: "pilgrimage; Inquisition rumour"}]
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Padua", role: "lecturer in surgery", years: "1537–1543", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}], how_known: "Britannica."}
   - {value: "Household of Emperor Charles V; court of Philip II", role: physician, years: "1543–1564", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}], how_known: "Britannica."}

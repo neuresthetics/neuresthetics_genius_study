@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 74). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited). Worldview from Brief Answers to the Big Questions (2018, posthumous), quoted by Euronews and Big Think (secondary quotations; book not read). Scientist under P30. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alt BELOW_THRESHOLD); B 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change to scores. Noted Euronews' report that colleagues and family finished the book; The Grand Design (2010) and the 2014 El Mundo interview listed as unverified leads."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #73, F5 rank 74). Needs: A faded; B faded. Verified Brief Answers to the Big Questions (Bantam 2018) ch. 'Is there a God?' against Internet Archive OCR of the published book (S5; archive scan OCR); wording matches Marginalian long extracts (S9). Added Grand Design 2010 Times/Guardian extract (S7) and 2014 El Mundo interview via NBC (S6). Wikipedia EN dual bio (S8) (P50). P47 source_quality on S1–S9. P20: adult-life evidence counts for the working span unless a sourced change_of_view; Hawking's own clarifications treat 1988 'mind of God' as impersonal laws (Brief Answers; El Mundo), not a theism→atheism conversion — no changes_over_life split. Dropped A alt BELOW_THRESHOLD and B alt 3. primary_system ATHE 0.5→0.7 (AGNOS named residual); A 4 0.5→0.7 support corroborated (S5+S6+S7); B 4 0.5→0.7 support corroborated (S5+S7); C UNKNOWN→4 @0.5 (afterlife hedged 'probably'); mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Chart: faded hollow → dark filled. Chart-moving YES. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hawking-stephen
   display_name: "Stephen Hawking"
@@ -223,6 +224,19 @@ lane_b:
   reading: "Naturalist / atheist; dark filled after D1."
   notes: "Lane B only. Chart-moving YES (faded hollow → dark filled)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "2014 El Mundo interview: 'I'm an atheist.' Brief Answers (2018), completed after his death from his materials, says the simplest explanation is that there is no God."
+    cites: [{source: S6, locator: "El Mundo interview quotation"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The 2014 interview and Brief Answers both deny a God; 'mind of God' is glossed there as impersonal laws, not a remaining theistic endorsement."
+    cites: [{source: S5, locator: "ch. Is there a God?"}]
 institutions:
   - {value: "University of Cambridge (Lucasian professor, 1979)", role: professor, kind: university, certainty: 0.7, cites: [{source: S1, locator: "honours paragraph"}], how_known: "Britannica."}
 collaborators:

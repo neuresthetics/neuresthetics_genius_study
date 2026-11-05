@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Britannica Editors, first page); Weyl's funeral address (English translation on MacTutor) read for her character. No statement by Noether on religion, God or nature was found in what was read. primary_system BELOW_THRESHOLD; all five axes BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All codings are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). S3: the translator is now credited (Ian Beaumont, in Peter Roquette's article 'Emmy Noether and Hermann Weyl', per the MacTutor page); the earlier note said the page named none. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. full_name 1.0 → 0.7, alternative 'Emmy Amalie Noether' (P15); primary_system BELOW_THRESHOLD → UNKNOWN, A–E BELOW_THRESHOLD → UNKNOWN, mid_basin BELOW_THRESHOLD → UNKNOWN (P19, P16); IAS kind university → research institute (P21); schooling/0 stage dame or charity school → elementary school, schooling/1 run_by state or municipal (P21); first-year 1921 alternative dropped, since only taking the theorem off the list could give it (P23); Dick quotations marked primary check pending (P26); single-source 1.0 fields → 0.7 (P15) (major_works/0, definition_fit, working_years, Gordan); region_of_birth, region_of_work keep 1.0 with a Britannica cite. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "D1 deepen (queue #22; no fallacy_catalog). Read Noether 1918 Invariante Variationsprobleme (Tavel arXiv), Tollmien Lebensläufe (1907/1919 CVs), Tollmien 2000 Dissidentin note, Dick 1981 OCR (Jewish-religion classes primary-check), NDB (israelitisch / seit 1920 evangelisch), JKG Göttingen on 1920 Austritt. A stays UNKNOWN (no locus statement). B UNKNOWN → 3 @ 0.5 inference_from_work, alt 4, support corroborated (P30 scientist; P35). Contested adult affiliation (Dissidentin vs evangelisch) in nominal_affiliations; JUDA/CHRIST rejected. P47 on S1–S10. working_years aligned to major_work_period 1915–1933 (P30). Chart still unplotted. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: noether-emmy
   display_name: "Emmy Noether"
@@ -170,6 +171,19 @@ lane_b:
   reading: "As belief, not finding: form present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "1907 CV states israelitischer Konfession (S6). She left the Jewish community in 1920; Dissidentin (S7) versus evangelisch (S9) is contested."
+    cites: [{source: S6, locator: "1907 handwritten Lebenslauf transcription ('bayerischer Staatsangehörigkeit und israelitischer Konfession')"}]
+  conformity_pressure:
+    level: moderate
+    evidence: "Dismissed from Göttingen in 1933 with other Jewish professors (S1; S2 1933 paragraph): loss of post."
+    cites: [{source: S2, locator: "1933 paragraph ('Noether and many other Jewish professors')"}]
+  practice_gap:
+    gap: unknown
+    evidence: "The adult affiliation after 1920 is contested, so there is no settled label to compare."
 institutions:
   - {value: "University of Göttingen", role: "lectured under Hilbert's name; Privatdozent from 1919", years: "1915–1933", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Biography (1915, 1919)"}, {source: S2, locator: "1915 paragraph"}], how_known: "Two sources."}
   - {value: "Bryn Mawr College", role: "visiting professor", years: "1933–1935", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Biography (1933)"}, {source: S2, locator: "1933 paragraph"}], how_known: "Two sources."}

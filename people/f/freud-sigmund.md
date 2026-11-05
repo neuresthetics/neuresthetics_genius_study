@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #129, F 4, rank 130). P47 source_quality on S1–S9. P50: Wikipedia EN (S9) dual bio agrees birth 1856-05-06 Freiberg / death 1939-09-23 London with Britannica. P48: A_locus support single→corroborated (main cites now S3+S4+S5+S6+S8 so alt BELOW's S5+S4 no longer spoil; Pfister 9 Oct 1918 in-span letter 'completely godless Jew' as S8 scholarly Basic Books 1963 via IA OCR). B_cause support single→corroborated at honest 3 @0.5 (S3 Psychopathology + S4 Future of Illusion ch. III nature pitiless / inward necessity / gods withdraw; no P16 lift — still no exceptionless order; X3/P35 unchanged: not scientist for B). primary ATHE @0.7 held (S8 strengthens). mid false (A≥3); plotted faded→filled (hollow→filled). Prefer SE/print: Pfister letters print edition used; Gutenberg web copies of Brill/Robson-Scott/Riviere kept (SE not reachable this pass). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (FR12) the seven statements relabelled scholarly edition -> primary transcription (Gutenberg web copies of the Brill, Robson-Scott and Riviere translations; not the Strachey Standard Edition); 0.7 cap unchanged. (FR13) S4 imprint corrected from the title page: Horace Liveright and the Institute of Psycho-Analysis, 1928 (International Psycho-Analytical Library No. 15; printed by R. & R. Clark, Edinburgh), not the Gutenberg header's 'Edinburgh: Horace Liverwright'. (Note) 1900 named as the alternative start (title page; IEP). Ruling X3 (v8's call on the auditor's advice): not a scientist for B (recorded under P35). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 130). Basics from Britannica (Martin Evan Jay; Britannica Editors) and IEP (Stephen P. Thornton). Worldview from his own published works in authorized English translations (Project Gutenberg web copies, 0.7 cap): The Psychopathology of Everyday Life (Brill, 1914) and Totem and Taboo (Brill) inside the span; The Future of an Illusion (Robson-Scott, 1928) and Civilization and Its Discontents (Riviere, 1930) after it (P1 cap 0.5). Not a scientist for B (psychoanalysis an interpretive theory of the psyche, P35 addendum, Jung precedent; RQ-X3). primary_system ATHE (0.7); A 4 (0.7, alt BELOW_THRESHOLD); B 3 (0.5, alt 4; P41 extension); C 4 (0.5); D 4 (0.5); E 4 (0.5, alt 3); mid_basin false (A ≥ 3, P10). Span 1899–1923 (0.7). Plotted (faded). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: freud-sigmund
   display_name: "Sigmund Freud"
@@ -257,6 +258,19 @@ lane_b:
   reading: "Psychic determinism; religion as projection."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Private letter to Pfister, 9 Oct 1918: 'a completely godless Jew.' The Future of an Illusion (1927) calls religious doctrines illusions."
+    cites: [{source: S8, locator: "letter to Oskar Pfister, 9 Oct 1918"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The 1938 move to London is called exile. The file does not document it as a sentence for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "Totem and Taboo, the 1918 letter, and The Future of an Illusion agree. No adult return to religious practice is in the file."
+    cites: [{source: S4, locator: "ch. VI"}]
 institutions:
   - {value: "University of Vienna", role: "medical student (physiology laboratory of Ernst Brücke); lecturer in neuropathology from 1885", years: "1873–1938", kind: university, certainty: 0.5, cites: [{source: S1, locator: "'Early life and training'"}, {source: S2, locator: "§1 Life"}], how_known: "Both sources; the end year is the coder's (left Vienna 1938)."}
   - {value: "Vienna General Hospital", role: "clinical assistant", years: "1882–1885", kind: other, certainty: 0.7, cites: [{source: S1, locator: "Top Questions; 'Early life and training'"}], how_known: "Britannica."}

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth-religion line; refuse milieu invention). Chart-moving NO."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (XW3) era_bucket 'before -500' (0.5) -> UNKNOWN: under a strict P39 his adult life (ca. 570–490 BCE) crosses the -500 edge, and P39 has no candidate-year clause (corrects the batch W PY4 advice; Gautama treated alike). Not plotted either way."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 125). All facts from SEP (Carl Huffman). Pythagoras wrote nothing; everything about his views is later report (doxography), which is reported speech and cannot score alone (P42, CODING_GUIDE §7). Not a scientist (P30): SEP doubts he did mathematics or rational cosmology. primary_system BELOW_THRESHOLD; A, B, C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin BELOW_THRESHOLD. First lasting contribution and span UNKNOWN (undated, P39). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #124 / F4 rank 125). Goals: check SEP/Huffman updates and fragment attribution debates; document leads; keep honest BELOW (Confucius/Hippocrates P42 precedent; no authentic own words expected). Re-read SEP Pythagoras (Huffman; first pub. 2005, substantive revision still 5 Feb 2024 — Fall 2026 archive confirms same revision date, no newer update) and SEP Pythagoreanism (Huffman; substantive revision 5 Mar 2024). Wikipedia EN dual bio (S3, P50): birth ca. 570 Samos agrees; death ca. 495 Wikipedia vs ca. 490 SEP (both approximate). Consensus unchanged: he wrote nothing; Riedweg 2005 attempt to argue books rejected by Huffman 2008a (S1 §3); Golden Verses / Sacred Discourse / pseudo-Pythagorean corpus are forgeries or later compilations, not his words. All worldview evidence remains doxography / reported speech (P42) — Xenophanes Fr. 7, Aristotle acusmata, Dicaearchus VP 19, etc. Did not stretch P49 to lift A/B (standing rule: keep BELOW unless authentic own words). primary_system / A / B / C / mid stay BELOW_THRESHOLD; D/E UNKNOWN; span UNKNOWN (P39); not a scientist (P30). Chart-moving NO. P47 source_quality on S1–S4. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: pythagoras
   display_name: "Pythagoras"
@@ -127,6 +128,18 @@ lane_b:
   reading: "A moralized cosmos of numbers, souls and punishment, known only from reports."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "He wrote nothing (S1 §3). Metempsychosis is Xenophanes' report, not his text. SEP: Pythagoreanism was not a religion (S1 §4.3)."
+    cites: [{source: S1, locator: "§3"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions: []
 collaborators:
   - {value: "Philolaus", relation: influenced, note: "later Pythagorean who developed the cosmos mathematically", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}

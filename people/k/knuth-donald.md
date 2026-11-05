@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 93). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from his lecture 'All Questions Answered' (Munich, 5 October 2001), printed in Notices of the AMS 49(3), March 2002, pp. 318–324, read in the AMS PDF; book descriptions on his Stanford pages are leads. Not a scientist (P30). primary_system CHRIST (0.5); A 0 (0.5, alt 1; after the working years, P20); B UNKNOWN (no statement on nature, P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). S2 page range corrected to pp. 318–324 (K5) and the text credited as edited by Allyn Jackson; Stanford years 1968– at 0.7 from S2's editor's introduction (K7). TeX dated 1978 (the Gibbs Lecture 'Mathematical Typography', S2 introduction) and the later TAOCP volumes dated from his TAOCP page (S5: Volume 4A 2011, Volume 4B 2023 imprint, Volume 4 Fascicle 7 2025); the series stays one contribution dated by its start (P12), so the span is 1968–1978 and the 2001 lecture stays after it. Ruling P1 (v8's pick on the auditor's advice): post-span evidence is capped at 0.5 (P20), not excluded. The TeX 'revolutionized' quote and the Stanford fact attributed to the editor's introduction; MIT lectures dated fall 1999 (book 2001). Values unchanged; not plotted."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #92, F4 rank 93). Needs: A 0 @0.7 single alt 1; B UNKNOWN (not scientist, P30/P16); primary CHRIST @0.5. Dual bio: Britannica Editors (S1) + Wikipedia EN (S8) (P50). P47 source_quality on S1–S8. A stays 0 @0.7, support single→corroborated (P48): AMS S2 'God knows all my secrets' + Things Lecture 1 CSLI excerpt (S6) 'God is present in the lives of people' / Lutheran faith / prayer + Living Lutheran 2018 (S7) 'I believe God is pleased when people create innovations' / 'I'm a Lutheran'. Alt 1 retained (contested-reading ceiling 0.7). primary_system CHRIST 0.5→0.7 (S7 Lutheran self-label + First Lutheran Church Palo Alto; S6 Lutheran upbringing/tradition). B stays UNKNOWN: Lecture 6 'tree pruner' / QM-miracle account widely quoted secondarily (EnlightenedCrowd, Turing Church) but primary page of Things unread (IA borrow 401; CSLI free PDF is Lecture 1 only) — P26 blocks scoring from secondary quotation alone; lead logged. Mid_basin UNKNOWN (P19). Chart-moving NO. Filled family_religion / heritage Lutheran; nominal_affiliations. No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-26, by: "Grok Bot", summary: "t275u near-miss pass. Lecture 6 tree-pruner passage verified in Knuth's own voice from the lecture video's auto-captions (S9, new). B UNKNOWN→3 @0.5 single, alt 2 (law intact; occasional law-consistent divine influence; free-will exception, P30). mid_basin UNKNOWN→BELOW_THRESHOLD. Chart-moving YES: new plot, faded, hollow."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: knuth-donald
   display_name: "Donald Knuth"
@@ -210,6 +211,19 @@ lane_b:
   reading: "Personal Lutheran/Christian faith beside algorithmic computer science; possible QM-'tree pruner' account of miracles unread in primary."
   notes: "Lane B only. If Lecture 6 primary confirms God occasionally influences quantum branches / miracles without violating physical laws, a labeled reading would be interventionist personal theism compatible with lawlike physics — still not a chart finding."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Living Lutheran, 2018: 'I'm a Lutheran,' and he names First Lutheran Church, Palo Alto. Lectures also affirm prayer and a God who knows him."
+    cites: [{source: S7, locator: "'I'm a Lutheran because…'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The testimonial and lectures do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The 2018 testimonial and Lecture 1 both keep Lutheran faith, prayer, and God. Doubt that some miracle stories are necessarily true still says they could have happened."
+    cites: [{source: S6, locator: "Lecture 1, p. 15"}]
 institutions:
   - {value: "California Institute of Technology", role: "assistant, then associate professor", years: "1963–1968", kind: university, certainty: 0.7, cites: [{source: S1, locator: "education paragraph"}], how_known: "Britannica."}
   - {value: "Stanford University", role: "professor (now Professor Emeritus of The Art of Computer Programming)", years: "1968–", kind: university, certainty: 0.7, cites: [{source: S2, locator: "p. 318 (editor's introduction)"}], how_known: "Notices editor's introduction (Allyn Jackson): 'Since 1968 Knuth has been on the faculty of Stanford University'; he also speaks of 'every class that I taught at Stanford' (S2)."}

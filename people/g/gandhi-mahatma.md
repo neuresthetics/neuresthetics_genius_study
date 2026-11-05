@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #190/228, F 3, rank 202): firm A if a clear reading reaches ≥0.5 over the mixed lines; leave BELOW if still mixed; do not force B or plot. Re-read Autobiography Introduction (S2); Truth Is God anthology / Mind of Mahatma Gandhi God chapters (S4, S6); Hind Swaraj ch. 8/10 near-span God/Maker lines (S7); Young India 5 Mar 1925 personal-and-impersonal both; YI 11 Oct 1928 pervading Power / 'He alone is'; YI 31 Dec 1931 'Truth is God'. A stays BELOW_THRESHOLD: acosmic/Truth/He-alone-is-real (A 4 lead) against face-to-face / personal God for those who need presence / prayer language (A 0–2 lead); Gandhi himself affirms both registers in one paragraph (YI 5-3-1925). No reading reaches 0.5 over the other (Plotinus pattern). B stays UNKNOWN (not a scientist, P30; no nature-law profession). primary HINDU 0.5 written_profession unchanged — Sanatani Hindu self-identification dated Young India 6 Oct 1921 (CPS secondary corroborates anthology date; P20 post-span cap). Mid BELOW. Dual bio P50 (Britannica + Wikipedia EN); P47 on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 202). Sources: Britannica, signed by B.R. Nanda (scholars edition, read in full), and the Introduction to Gandhi's Autobiography (1927–29, tr. Mahadev Desai), read in full on mkgandhi.org (unofficial web copy). Lasting work: satyagraha, 'born' at the Johannesburg mass meeting of September 1906 (S1); Nanda calls him the 'catalyst' of 'three of the major revolutions of the 20th century'. Span 1906, age 37. Own words: 'to see God face to face, to attain Moksha' and 'He alone is real and all else is unreal' (S2, Introduction signed 26 November 1925); 'I call myself a Sanatani Hindu' (Young India, dated 6 October 1921 in the Truth Is God anthology, S4; date not verified in CWMG); Young India 1924, 'to attain moksha in this very existence' (quoted in S1). All after the span: P20 cap 0.5. primary_system HINDU 0.5 (written_profession, on the explicit 'Sanatani Hindu' self-identification, RQ-AA6-1), alternative BELOW_THRESHOLD (he held all religions 'true' yet 'imperfect', S1). A BELOW_THRESHOLD: 'God as Truth', 'He alone is real' (acosmic, A 4 lead) against 'see God face to face' (personal, A 2 or lower lead); not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. region_of_work Sub-Saharan Africa for the span (South Africa), South Asia afterwards. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: gandhi-mahatma
   display_name: "Mahatma Gandhi"
@@ -194,6 +195,19 @@ lane_b:
   reading: "No data."
   notes: "Lane B unused for Gandhi; B_cause UNKNOWN because he is not a scientist and no nature-law profession was read."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: hindu
+    detail: "Young India, 6 Oct 1921: 'I call myself a Sanatani Hindu' because he believes in the Vedas, the Upanishads, the Puranas, avataras, and rebirth."
+    cites: [{source: S4, locator: "Why I Am A Hindu"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The Autobiography and later Young India pieces keep Moksha, God, and 'Truth is God.' The file has no rejection of that Hindu claim."
+    cites: [{source: S2, locator: "Introduction"}]
 institutions:
   - {value: "Natal Indian Congress", role: "founder", years: "1894", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "Emergence as a political and social activist"}, {source: S5, locator: "Civil rights activist in South Africa"}], how_known: "Britannica and Wikipedia."}
   - {value: "Indian National Congress", role: "leader", years: "1920s–1940s", kind: "other", certainty: 0.5, cites: [{source: S1, locator: "text"}, {source: S5, locator: "Struggle for Indian independence"}], how_known: "Britannica and Wikipedia."}

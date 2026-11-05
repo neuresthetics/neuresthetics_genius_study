@@ -15,6 +15,7 @@
     "heritage",
     "timing",
     "lane_b",
+    "religion_conformity",
     "institutions",
     "collaborators",
     "review",
@@ -43,9 +44,10 @@
         "schema_version": {
           "enum": [
             "1.2",
-            "1.3"
+            "1.3",
+            "1.5"
           ],
-          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 file."
+          "description": "Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.5 (2026-11-05): religion_conformity, a required Lane A block (stated affiliation, documented conformity pressure, documented practice gap). Not an LIO axis and not a Lane B input. 1.4 is left unused on this branch so it stays free for the unmerged primary_domain and era_bucket drafts. 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 or 1.5 file."
         },
         "record_version": {
           "type": "integer",
@@ -979,6 +981,167 @@
         "circle_present"
       ],
       "description": "Lane B: the labeled belief model. Values here are inputs to a model that can fail, not findings."
+    },
+    "religion_conformity": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Lane A public record only (schema 1.5). What affiliation or stance was stated, what dissent risk is documented for that place and time, and whether documented words or acts diverged from the stated affiliation. Not inner belief. Does not feed Lane B, LIO axes, or primary_system. Coding rules: docs/CODING_GUIDE.md §8.",
+      "required": [
+        "lane",
+        "stated_affiliation",
+        "conformity_pressure",
+        "practice_gap"
+      ],
+      "properties": {
+        "lane": {
+          "const": "A — public record only; not inner belief; does not feed Lane B",
+          "description": "Fixed reminder. This block is descriptive. The fear-of-conformity hypothesis stays in Lane B."
+        },
+        "stated_affiliation": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Adult public affiliation or stance. Heritage, infant baptism, and family religion do not count.",
+          "required": ["label", "detail"],
+          "properties": {
+            "label": {
+              "enum": [
+                "christian_catholic",
+                "christian_protestant",
+                "christian_orthodox",
+                "christian_other",
+                "jewish",
+                "muslim",
+                "hindu",
+                "buddhist",
+                "confucian",
+                "daoist",
+                "other_stated",
+                "secular",
+                "mixed",
+                "none_stated",
+                "unknown"
+              ],
+              "description": "Controlled label. none_stated: the adult record was checked and no affiliation was stated. secular: own words of no religion, atheism, agnosticism, or freethought. mixed: more than one public affiliation in the same adult period. unknown: the record is too thin."
+            },
+            "detail": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 320,
+              "description": "One line: denomination or stance as the source gives it, or what was checked when the label is unknown."
+            },
+            "cites": {
+              "$ref": "#/$defs/cites",
+              "description": "Required unless label is unknown."
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "not": {
+                  "properties": {"label": {"const": "unknown"}},
+                  "required": ["label"]
+                }
+              },
+              "then": {
+                "required": ["cites"],
+                "properties": {"cites": {"minItems": 1}}
+              }
+            }
+          ]
+        },
+        "conformity_pressure": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Documented risk for religious dissent in the person's place and working years. Not a guess about fear.",
+          "required": ["level", "evidence"],
+          "properties": {
+            "level": {
+              "enum": ["low", "moderate", "high", "severe", "unknown"],
+              "description": "low: dissent documented as legally safe. moderate: censorship, loss of post, excommunication, or a civic disability. high: prison, exile, or a formal heresy or blasphemy prosecution. severe: death or torture used against religious dissent. unknown: not documented in the sources read."
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 320,
+              "description": "One line of evidence, or what was checked when the level is unknown."
+            },
+            "cites": {
+              "$ref": "#/$defs/cites",
+              "description": "Required unless level is unknown."
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "not": {
+                  "properties": {"level": {"const": "unknown"}},
+                  "required": ["level"]
+                }
+              },
+              "then": {
+                "required": ["cites"],
+                "properties": {"cites": {"minItems": 1}}
+              }
+            }
+          ]
+        },
+        "practice_gap": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Whether documented adult words or acts diverged from the stated affiliation. Observable only.",
+          "required": ["gap", "evidence"],
+          "properties": {
+            "gap": {
+              "enum": ["aligned", "mixed", "divergent", "unknown"],
+              "description": "aligned: a documented match and no documented contradiction. mixed: both. divergent: a documented contradiction and no remaining documented endorsement. unknown: no stated affiliation to compare, or no comparison in the sources. Must be unknown when stated_affiliation is unknown or none_stated."
+            },
+            "evidence": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 320,
+              "description": "One line naming the documents compared, or what was checked."
+            },
+            "cites": {
+              "$ref": "#/$defs/cites",
+              "description": "Required unless gap is unknown."
+            }
+          },
+          "allOf": [
+            {
+              "if": {
+                "not": {
+                  "properties": {"gap": {"const": "unknown"}},
+                  "required": ["gap"]
+                }
+              },
+              "then": {
+                "required": ["cites"],
+                "properties": {"cites": {"minItems": 1}}
+              }
+            }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "stated_affiliation": {
+                "properties": {"label": {"enum": ["unknown", "none_stated"]}},
+                "required": ["label"]
+              }
+            },
+            "required": ["stated_affiliation"]
+          },
+          "then": {
+            "properties": {
+              "practice_gap": {
+                "properties": {"gap": {"const": "unknown"}}
+              }
+            }
+          }
+        }
+      ]
     },
     "institutions": {
       "type": "array",

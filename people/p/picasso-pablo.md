@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 64). Basics from Britannica (McCully), signed body through 1903 (the fetch returned only that part). No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #63, F5 rank 64). Needs: A UNKNOWN; B UNKNOWN; 1 source. Bio/dating: Britannica McCully via Wayback 2015 full body (S1) + Wikipedia EN (S3) — Demoiselles 1907, Analytical Cubism with Braque 1909–12, Guernica 1937; span 1901–1937. Worldview: Gilot Life with Picasso 1964 p.50 God-as-artist (S4; P43 memoir; QI page-check) — style metaphor, not A locus. Zervos 1935 via Chipp/Wikiquote (S5) — 'instrument of nature' / 'cannot go against nature' = art process, not B (P16). Richardson NYRB 1987 (S6): Jacqueline 'Pablo always claims he is not a believer' (reported speech). Wikipedia/Cox Tate secondary 'atheist' label (S3). primary_system BELOW_THRESHOLD (leads ATHE); A BELOW_THRESHOLD (alt 4); B UNKNOWN; C/D/E UNKNOWN; mid_basin BELOW_THRESHOLD. P47 on S1–S6. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: picasso-pablo
   display_name: "Pablo Picasso"
@@ -164,6 +165,18 @@ lane_b:
   reading: "Lane B only: Cubist geometric form in the work; no H1 circle. Lane A worldview stays BELOW_THRESHOLD / B UNKNOWN."
   notes: "Do not treat Cubist geometry as evidence for A/B scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Catholic baptism is heritage. The French Communist Party is politics (S1). No own-hand creed. Reported lines in S6 are not his text."
+    cites: [{source: S1, locator: "World War II and after — joined the Communist Party"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   []
 collaborators:

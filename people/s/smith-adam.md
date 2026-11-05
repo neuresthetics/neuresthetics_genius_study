@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus certainty 0.5→0.7. Re-read TMS 1790 (S3) Conductor / immense-machine / immediate administrator lines as a clear written profession of a transcendent governor (Boyle pattern); SEP S2 caution ('without ever quite saying that there is a God') kept as named contested-reading context but no longer holds the score below the §3 0.7 contested ceiling. Alt 1 retained. Support already corroborated. Chart-moving YES (faded→dark). No figures/; no fallacy_catalog."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from Britannica (Heilbroner) and SEP (Fleischacker); worldview from The Theory of Moral Sentiments, 6th edition (1790), read on the archive.org scan of the 1790 printing (vol. 1 pp. 412–415; vol. 2 pp. 113–118). Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, STOIC, CLASS_THEISM; DEISM rejected under P27); A_locus 1 (0.5); B_cause 4 (0.5); E_scope 4 (0.5); C, D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #6 A_locus 1 → 0 at 0.5, alternative 1 (no limiting feature named; Boyle pattern). #4 B_cause 4 → 3 at 0.5, alternative 4, re-anchored on vol. 1 pp. 412–415 (laws of motion; general rules of reward; 'extraordinary favour' as the stated exception), with vol. 2 pp. 114–115 as context; two vol. 1 statements added. mid_basin unchanged (BELOW_THRESHOLD)."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #2). P47 source_quality on every source. History of Astronomy (EPS, Glasgow ed. III.2; new S5) added as second primary for B_cause: ordinary natural events run 'by the necessity of their own nature' without special divine agency. B_cause 3 certainty 0.5 → 0.7 (written_profession; SEP God-attribution hedge was misapplied to B; named alt 4 remains). support single → corroborated on B; A stays 0 at 0.5 with support corroborated (S3+S2). Childhood/heritage fills from Glasgow University Adam Smith 300 biography (new S6) plus Britannica: Old Kirk baptism, Presbyterian heritage, burgh-school mathematics. Birth year/place raised to 1.0 (two sources). Chart person-dot: faded hollow → faded filled (fill cue moves; darkness still faded while A is 0.5). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: smith-adam
   display_name: "Adam Smith"
@@ -217,6 +218,18 @@ lane_b:
   reading: "As belief, not finding: form absent, circle partly present."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Theory of Moral Sentiments uses Conductor and Author-of-nature language. The file treats that as moral psychology, not a creed. Baptism is infant."
+    cites: [{source: S3, locator: "vol. 2, p. 117"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Glasgow", role: "professor of logic (1751), then of moral philosophy (1752)", years: "1751–", kind: university, certainty: 0.7, cites: [{source: S1, locator: "Glasgow section"}], how_known: "Britannica (P15)."}
 collaborators:

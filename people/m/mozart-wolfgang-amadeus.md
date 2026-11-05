@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 82). Basics from Britannica (Sadie, signed; body text only, Q&A boxes not cited). Worldview from letters 69 (1777), 107, 108 and 110 (1778) in Lady Wallace's translation, Gutenberg #5307. primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (Providence about events in his life, not nature, P16); C 0 (0.5, alt 1); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): A 0 and CHRIST lowered from 0.7 to 0.5 (letters predate the working years, P20; Franklin precedent). Values and mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #81, F5 rank 82). Needs: A single source; A faded; B BELOW_THRESHOLD. New S4: DME / Bauer–Deutsch Nr. 1044 German autograph transcription (Vienna, 4 April 1787) — within-span private letter thanking 'meinem gott' and daily 'meinem Schöpfer' for familiarity with death as key to true blessedness (primary language). S5: DME English of BD 0355 (Augsburg, 23–25 Oct. 1777) corroborates Wallace 'Gott vor Augen' / omnipotence / wrath / mercy wording. S6: DME English BD 0458 (Paris, 3 July 1778) Voltaire 'reward' and God-alone-takes-life Providence. S7 Wikipedia EN dual-bio (P50): baptismal Joannes Chrysostomus…; practicing Catholic; Freemason 14 Dec. 1784 Zur Wohltätigkeit. S8 Morgan Library exhibition English of BD 1044 (Anderson-line). P47 source_quality on S1–S8. Mapped Wallace Gutenberg letter 69 ≈ BD 0355; 107 ≈ BD 0458; 108 ≈ BD 0462; 1787 death letter = BD 1044. Freemasonry join stays in changes_over_life; no documented change of A (still personal Gott/Schöpfer after 1784). Under P31 adult evidence + within-span 1787 → A 0 and CHRIST raised 0.5→0.7; support single→corroborated (S2+S4+S5; P48). B stays BELOW_THRESHOLD (P16): 1778–1787 Providence and 'Nature speaks in me' (1781 marriage letter, context only) are life/sexual nature, not nature's causal order; no Naturegesetze / law-vs-exception statement read. C stays 0 @0.5 (alt 1). mid_basin BELOW_THRESHOLD (B unscored). Chart-moving NO (still unplotted). Anderson print / full Bauer–Deutsch vols unread beyond DME web. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mozart-wolfgang-amadeus
   display_name: "Wolfgang Amadeus Mozart"
@@ -193,6 +194,19 @@ lane_b:
   reading: "Providentialist Catholic in private letters 1777–1787; Freemason after 1784; Lane A A=0, B unscored."
   notes: "Lane B separate from Lane A. H1 not tested (B BELOW_THRESHOLD)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Reported as a practicing Catholic throughout his life. Private letters address God and the Creator. Lodge membership from 1784 is a separate record."
+    cites: [{source: S7, locator: "'raised a Catholic and remained a practicing Catholic throughout his life'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1787 letter thanks his God and his Creator, after he entered the lodge. No text in the file rejects the practicing-Catholic report."
+    cites: [{source: S4, locator: "DME German BD 1044, Vienna, 4 April 1787"}]
 institutions:
   - {value: "Salzburg court (honorary Konzertmeister, 1769; salaried Konzertmeister)", role: musician, years: "1769–1781", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life and works'; 'Vienna: the early years'"}], how_known: "Britannica; discharge granted June 9, 1781."}
   - {value: "Freemason lodge Zur Wohltätigkeit (Beneficence), Vienna", role: member, years: "1784–1791", kind: other, certainty: 0.7, cites: [{source: S7, locator: "14 December 1784"}], how_known: "Wikipedia."}

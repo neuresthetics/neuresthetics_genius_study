@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #119 / F4 rank 120). Goals: corroborate AGNOS; hunt locus (A) or P16 (B); keep honest BELOW/UNKNOWN if not found. Re-read LA Times 1986 (S3). Opened Hammond 2021 full PDF (S4, bibliotekanauki / gilsonsociety) — still secondary paraphrase of Two Lucky People ('completely agnostic'; Rose 'fanatically antireligious'); memoir itself unread (IA twoluckypeopleme00frie access-restricted, download 401; Google Books API 429). New primary: Fox News Your World transcript, David Asman interview 15 May 2004 (S6) — 'I would describe myself as an agnostic'; 'Not an atheist. The proposition that there is a God is not capable of being proved either false or true'; faith in people/freedom, not theological. Corroborates S3 AGNOS and rejects ATHE in own voice; after span (P1 cap 0.5). Lofton handwritten-note exchange remains a lead (Daily Hatch / American View; no archival letter). Wikipedia EN (S7, P50) dual bio; Religious views cites Commentary/Ebenstein + Fox. No own-voice locus (P20 → A stays BELOW_THRESHOLD). No P16 nature-order (B stays UNKNOWN; not a scientist P30; Methodology of Positive Economics / Hume causality discussion in Hammond is economics-method, not worldview lawfulness). P47 on S1–S7. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): 'not reconciled' replaced by the auditor's explanation of the Hammond pages (1183–1217; '1107-1140' is the PDF's file label, where Michaud's article starts). No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): FR4, family_religion how_known the right way round (the child pushed his parents to be more observant, S3), with the tension against Hammond's 'Orthodox Jewish beliefs' noted; note, Hammond's page range 1183–1217 added to S4. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 120). Basics from Britannica (Bruce J. Caldwell; Britannica Editors) and his Nobel autobiography; religion from the 1986 Los Angeles Times profile (his own words, interview) and J. Daniel Hammond's 2021 essay (reporting Two Lucky People). Not a scientist (P30; economics, as for Keynes). primary_system AGNOS at 0.5 (interview); A BELOW_THRESHOLD (P20); B, C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin UNKNOWN. Span 1956–1967 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: friedman-milton
   display_name: "Milton Friedman"
@@ -157,6 +158,19 @@ lane_b:
   reading: "Economics as 'an engine for the discovery of concrete truth' (Marshall, quoted approvingly; S1)."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Interviews: 'I've been an agnostic ever since' (1986) and 'I would describe myself as an agnostic... Not an atheist' (2004)."
+    cites: [{source: S3, locator: "¶ on his upbringing"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "Both interviews state agnosticism after he quit observance. The rabbi-officiated marriage is called pure form, not substance."
+    cites: [{source: S6, locator: "Faith section"}]
 institutions:
   - {value: "National Resources Committee, Washington", role: "consumer budget study", years: "1935–1937", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   - {value: "National Bureau of Economic Research", role: "research staff (with Simon Kuznets)", years: "from 1937", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "NBER paragraph"}], how_known: "Britannica and S2."}

@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #189/228, F 3, rank 201): hunted first-person God/nature statements. Own words via Neumeyer (The Artless Word) as quoted in Colombo 2017: building art as 'spatial execution of spiritual decisions' (1926); unlocked from a 'spiritual centre' / 'life process' (1928); architecture may 'reach up through all degrees of value to the highest realm of spiritual existence' (1938 Armour inaugural). Reported (Farnsworth memoir via Schulze/Windhorst, via Colombo): after Schrödinger What is Life?, 'I want to know what I have to expect after death' — secondhand, not scored. Architectural / spirit-of-epoch / spiritual-centre metaphors do not score pantheism or B (standing rule; Corbusier/Wright P16 path). 'God is in the details' remains architectural axiom (Wikiquote: NY Herald Tribune 28 Jun 1959). Misattributed Wright line 'I believe in God, only I spell it Nature' rejected (not Mies). Heritage: Catholic (Deutsche Biographie 'katholisch'; Domschule Aachen; Michigan Modern Catholic school / Augustine–Aquinas). A UNKNOWN; B UNKNOWN; primary UNKNOWN (CHRIST heritage only — no adult profession). Mid UNKNOWN. Dual bio P50 (Britannica + Wikipedia EN); Deutsche Biographie + Michigan Modern + Colombo/Neumeyer added; P47 on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 201). Source: Britannica, signed by Wolf Von Eckardt (scholars edition, read in full). Lasting work: the unbuilt Friedrichstrasse Office Building (S1 dates it 1919; MoMA, holder of the drawings, dates it 1921, S3) and Glass Skyscraper (1921) projects, which established 'skin and bones construction'; 'Few unbuilt buildings surpassed them ... in their influence on the development of the architecture of the time' (S1); and the Barcelona chair (1929), 'an instant classic of 20th-century furniture design' (S1). AA6 audit: the Friedrichstrasse project was an entry to the Turmhaus competition (brief November 1921, entries due January 1922), so its public statement (P30) is dated 1921 at 0.5, alternatives 1919 (S1) and 1922 (submission deadline). Span 1921–1929 at 0.5 (weakest lasting item), age 35. S1 also calls him 'the only modern architect who formulated a genuinely contemporary and universally applicable architectural canon' (body of work, undated; not used to extend the span). 'God is in the details' is an attributed axiom on architecture, not a profession of belief; not used. Worldview: no own words read. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mies-van-der-rohe-ludwig
   display_name: "Ludwig Mies van der Rohe"
@@ -167,6 +168,18 @@ lane_b:
   reading: "No scored LIO data. Architectural spiritual-centre language is not Lane-B pantheism."
   notes: "Do not treat skin-and-bones / nature-as-setting (Farnsworth) as B."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Architectural lectures and the craft line 'God is in the details' were checked. No adult church or creed is stated. Catholic schooling is heritage."
+    cites: [{source: S8, locator: "On restraint in Design, New York Herald Tribune, 28 June 1959"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Bauhaus", role: "director", years: "1930–1933", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "Work after World War I"}], how_known: "Britannica."}
   - {value: "Armour Institute / Illinois Institute of Technology", role: "director of the School of Architecture", years: "1938–1958", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "Mies in America"}], how_known: "Britannica."}

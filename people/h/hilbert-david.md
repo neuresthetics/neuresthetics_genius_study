@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 91). Basics from Britannica (Irving Kaplansky, signed; body only) and MacTutor (O'Connor and Robertson). Worldview from his Königsberg address 'Naturerkennen und Logik' (1930; Die Naturwissenschaften, pp. 959–963), read in a web transcription. Mathematician, not counted a scientist (P30). primary_system UNKNOWN; A UNKNOWN; B 3 (0.5, alt 4) from an explicit remark on nature ('überall die Einheit der Naturgesetze'); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fix (#23): S2 relabelled an unofficial web copy (cap 0.7; verified_against 'secondary quotation'), print check pending. v8's ruling on RQ O2 (on the auditor's advice): B 3 at 0.5, alternative 4, is allowed under P16 (recorded in OPEN_DECISIONS). Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #90, F4 rank 91). Needs: A UNKNOWN; B 3 @0.5 alt 4 (1930 Einheit der Naturgesetze); mathematician not scientist (P30). Dual bio: Britannica Kaplansky (S1) + Wikipedia EN (S5) (P50). P47 source_quality on S1–S8. A_locus UNKNOWN → BELOW_THRESHOLD: baptized/raised Calvinist Prussian Evangelical / Reformed Protestant; Hilberts left that church c. 1902 (Reid 1970 p. 91 via Shaposhnikov S7 and Wikipedia S5); Shaposhnikov reconstructs him as seeming agnostic; 1927 Hamburg Foundations address (van Heijenoort / Marxists reprint S8) says mathematics is presuppositionless and 'To found it I do not need God, as does Kronecker' — math-foundations claim, not a place/deny of personal intervening God in nature (P20: agnostic with no stated locus → A BELOW; Curie/Meitner pattern). primary_system UNKNOWN → BELOW_THRESHOLD with AGNOS lead (no own-voice 'I am agnostic' / explicit suspension; biographer 'seemed' + church exit ≠ AGNOS at 0.5). B_cause stays 3 @0.5 alt 4 (RQ O2 / P16 addendum; after working years P20): print check completed against Die Naturwissenschaften 18 (1930) 959–963 PDF scan (S2 upgraded; Einheit passage confirmed); support single (same address, not two independent sources). mid_basin UNKNOWN → BELOW_THRESHOLD (A BELOW, P4 cannot apply; Sagan/Jung/Curie pattern). Chart-moving NO (need A≥0.7 and B≥0.7; A has no plottable value; B capped 0.5). Filled family_religion, nominal_affiliations, changes_over_life. Reid monograph pages unread (IA borrow 401). No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hilbert-david
   display_name: "David Hilbert"
@@ -153,6 +154,17 @@ lane_b:
   reading: "Unity of nature's laws (B 3 @0.5); A BELOW; AGNOS lead unscored; unplotted."
   notes: "Lane B only. Chart-moving NO."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Baptized and married in the Reformed church, which Reid says he left about 1902. 'I do not need God' is about founding mathematics. No own sentence says agnostic or names a church he kept."
+  conformity_pressure:
+    level: unknown
+    evidence: "The church exit is his reported act. No sanction for dissent is documented."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Königsberg", role: "Privatdozent, then professor", years: "1886–1895", kind: university, certainty: 0.7, cites: [{source: S1, locator: "career paragraph"}], how_known: "Britannica."}
   - {value: "University of Göttingen", role: "professor of mathematics", years: "1895–1930", kind: university, certainty: 0.7, cites: [{source: S1, locator: "career paragraph; 1930 retirement"}], how_known: "Britannica."}

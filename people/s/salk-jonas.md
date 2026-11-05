@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 112). Basics from Britannica (Britannica Editors; revised by Kara Rogers), the Science History Institute and the Salk Institute. Worldview from The John Callaway Interviews (WTTW; broadcast 30 June 1981), AAPB transcript (status 'Correct'). Scientist (P30). All worldview fields rest on one recorded interview after the working years (P1 cap 0.5). primary_system PANT (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A 4 at 0.5). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: SA3, SA7 WEAKEN; ruling T2, v8's call on the auditor's advice). primary_system PANT -> ATHE at 0.5, alternative PANT ('God was invented because of the necessity for having a form of order' withdraws the entity-term). The killed-virus principle is listed as a discovery (Britannica: killed virus of each of the three types 'could induce antibody formation in monkeys'), so the scientist status no longer rests on an invention (P33). S4 locators now carry AAPB transcript timecodes. A 4, B 3 (0.5) unchanged; plot unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #111 / F4 rank 112). Goals: lift A/B to 0.7 if stronger own-voice; chart-moving if both ≥0.7 and/or corroboration. Read The Survival of the Wisest (1973 Harper & Row; unofficial PDF OCR, S6) — post-span under P1, so certainty stays 0.5; no lift to 0.7. Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on S1–S7. A stays 4 @0.5 alt BELOW (ruling T2); support single→corroborated (S4 interview + S6 book: 'without arbitrary reference to a presumed purposeful Being'; order that prevails in the universe). B stays 3 @0.5 alt 4 (P16 addendum / P35); support single→corroborated (S4 + S6: 'order that prevails in the universe'; cannot 'exist free from the operation of the laws of Nature'; cannot 'defy, or [act] counter to, the laws of Nature'). D BELOW→4 @0.5 (S6 naturalistic vs arbitrary moralistic self-regulation; religion founders' systems 'product of imagination, without basis in reality'). primary ATHE @0.5 alt PANT unchanged; SECHUM noted (AHA Humanist of the Year 1976, S7) but rejected for primary. mid BELOW (A 0.5). Chart-moving YES: hollow→filled (both A and B corroborated); still faded (min(A,B)=0.5). Man Unfolding / Anatomy of Reality unread. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: salk-jonas
   display_name: "Jonas Salk"
@@ -238,6 +239,19 @@ lane_b:
   reading: "Order / laws of Nature as the fundamental reality; God-talk as invented name for order or as reverent language for life; naturalistic self-regulation over arbitrary moralistic formulations; human self-reliance in place of prayer."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1981 interview: order is what some call God; an anthropomorphic God 'was invented' for order; God is in the miracle of life, not a personal overseer."
+    cites: [{source: S4, locator: "transcript, religion exchange (AAPB 00:26:47–00:28:53)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "Survival of the Wisest (1973) likewise refuses a 'presumed purposeful Being' and traces apparent purpose to order."
+    cites: [{source: S6, locator: "p. 2"}]
 institutions:
   - {value: "University of Pittsburgh School of Medicine (Virus Research Laboratory)", role: "associate professor of bacteriology and head of the laboratory, later professor", years: "1947–1963", kind: university, certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S2, locator: "The Virus Research Laboratory"}], how_known: "Britannica and SHI; end year the coder's."}
   - {value: "University of Michigan School of Public Health", role: "research fellow, later assistant professor of epidemiology", years: "1942–1947", kind: university, certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S3, locator: "1942 paragraph"}], how_known: "Britannica and the Salk Institute."}

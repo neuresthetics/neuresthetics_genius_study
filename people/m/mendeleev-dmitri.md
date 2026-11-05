@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 1 value the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #91, F4 rank 92). Needs: A BELOW (blocks plot); B 4 @0.7; primary BELOW (DEISM/CHRIST). Dual bio: Britannica Bensaude-Vincent (S1, Wayback 2024) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S8. A stays BELOW_THRESHOLD: checked withheld appendix «Мировоззрение» (written 1905 for Zavetnye mysli, refused print; posthumous Sochineniya XXIV 1954 / Wikisource Ch.11, S7) — affirms abstract unity traditionally «выражено в признании единого Бога» as necessary, rejects realizing that unity as «воображаемом и вечном старике» / matter / energy / church formalism; separates «начало всех начал» (faith/heart) from scientific generalization; does not place or deny a personal intervening God as locus (Pasteur pattern; unpublished MS private ceiling P18). Gordin 2004 pp. 229–230 via Wikipedia cite (S8): son Ivan — practically split from Church from earliest years; Gordin labels «romanticized deism» (not atheism/materialism). primary stays BELOW with DEISM lead strengthened (P27: no clear rejection of revelation as knowledge source in own words; Ivan/Gordin are reported speech + scholarly reconstruction). CHRIST further weakened (left Church per Ivan). B stays 4 @0.7 written_profession; added support corroborated (S4 lectures + S1 periodic-law practice). mid_basin stays BELOW (A blocks). Filled family_religion / heritage Orthodox @0.5; changes_over_life church split. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mendeleev-dmitri
   display_name: "Dmitri Mendeleev"
@@ -198,6 +199,18 @@ lane_b:
   reading: "As belief, not finding: form partly present (predictive law); A BELOW; B 4 @0.7 corroborated; unplotted (A blocks)."
   notes: "Lane B only. Chart-moving NO."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "A published triad names religion beside art and science but states no church. A son's report that he left the Church is not his own words."
+    cites: [{source: S3, locator: "p. 426"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "St. Petersburg Technological Institute", role: professor, years: "1864–1866", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Who Got There First?'"}], how_known: "Two sources; end year is the coder's estimate."}
   - {value: "University of St. Petersburg", role: "professor of chemical technology, then of general chemistry", years: "1865–1890", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Later Lives'"}], how_known: "Two sources; left in 1890 after an official rebuke."}

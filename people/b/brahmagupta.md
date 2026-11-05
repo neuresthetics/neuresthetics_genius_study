@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #146, F 3, rank 152). Opened Sharma et al. Brahmasphutasiddhanta Sanskrit–Hindi (IA Brahmasphutasiddhanta, S4) Goladhyaya: verses naming Varahamihira, Srishena, Aryabhata, Vishnucandra; lokaviruddham … veda-smriti-samhita-bahyam; Rahu-caused eclipses defended so homa/japa/snana fruits stand; sruti/samhita/smriti agreement; then shadow-diameter reconciliation. Al-Biruni's 'first chapter' is Goladhyaya (ch. 21), not madhyama ch. 1. Sengupta Khandakhadyaka (S5) opened: computational, no Rahu/Veda profession. Sachau LIX re-read (S2). primary HINDU 0.5→0.7; B 2 0.5→0.7 support corroborated (S2+S4; sincerity alt BELOW and P35 alt 3 remain, contested caps ≤0.7); D 1 0.5→0.7; A stays BELOW_THRESHOLD (no locus of the sacred in Sanskrit or Sachau). mid BELOW; not plotted. P47 source_quality on S1–S5. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-10, Z5-11; RQ-Z5-1 answered: B 2 and D 1 stand at 0.5): al-Biruni's sincerity doubt named as an alternative (BELOW_THRESHOLD) under B and D, quoting Sachau vol. 2 p. 110 ('simply in order to mock them, or under the compulsion of some mental derangement') and p. 112 ('a calamitous fate, like that of Socrates'); S2 cites now give pp. 110–112 (the margin 'Page 256/257' is the Arabic page). Values unchanged; not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 152). Basics from MacTutor (O'Connor and Robertson). Own words: Brahmasphutasiddhanta ch. 1 as quoted by al-Biruni (India, c. 1030, ch. LIX) in Sachau's English (1888, vol. 2, archive.org scan): the Head (Rahu) eclipses; 'The Veda, which is the word of God from the mouth of Brahman, says that the Head eclipses'; Aryabhata and others oppose this 'from enmity against the just-mentioned dogma'; 'everything which is in the Veda, Smriti, and Samhita is true'. A translation of an Arabic rendering, and al-Biruni suggests he may have spoken under compulsion or to mock, so 0.5. A scientist (P30: astronomy), but his own words override the P35 default. Span 628 (first ten chapters' version; Khandakhadyaka 665 not called lasting). primary_system HINDU (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B 2 (0.5, alt 3); C, E UNKNOWN; D 1 (0.5, alt 0); mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: brahmagupta
   display_name: "Brahmagupta"
@@ -173,6 +174,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: hindu
+    detail: "Brahmasphutasiddhanta says what is in the Veda, Smriti, and Samhita is true, and calls the Veda the word of God from Brahman."
+    cites: [{source: S4, locator: "Goladhyaya ~v. 39"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The Sanskrit verses state that Veda, Smriti, and Samhita bind. No second text of his withdraws that claim."
+    cites: [{source: S2, locator: "vol. 2, ch. LIX, pp. 110–112"}]
 institutions:
   - {value: "Astronomical observatory at Ujjain", role: head, years: UNKNOWN, kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
 collaborators:

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 20). Basics from Britannica (Quinones). Worldview from Monarchia III.xvi in Prue Shaw's edition and English translation (Dante Online, Società Dantesca Italiana). The Commedia's speakers, including the pilgrim, are characters and are not used. Not a scientist. CHRIST 0.7; A 0 (0.7); B 3 (0.5); D 2 (0.7); mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fix (fallacy_catalog audit of 2332880, run 1): B_cause 3 (0.5) -> BELOW_THRESHOLD (alternative 4); Mon. III.xvi.12-13 is political and God acts through the order of the heavens, so no stated exception. mid_basin stays BELOW_THRESHOLD. Drops off the person chart."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #20, F5 rank 20). P47 source_quality on every source. Dual-sourced birth/death/parents (S1 Britannica prior + S4 Wikipedia EN). A_locus 0 @ 0.7: support single → corroborated (S2 Shaw Dante Online + S5 Aurelia Henry 1904 De Monarchia III.xvi — independent English translations of the same chapter: prince of the universe / God alone elects / ruler of all things spiritual and temporal). B_cause stays BELOW_THRESHOLD (alt 4): re-read Mon. I.xii free will (S2) and Convivio IV.4–5 Lansing (S6) — free will is moral/political freedom under monarchy, not a Descartes-style carve-out from natural law; Convivio special providence of Rome is historical election, not an account of physical nature's miracles; Henry corroborates the III.xvi order-without-stated-exception wording. D_authority 2 @ 0.7: support single → corroborated (S2+S5 two-guides passage). mid_basin stays BELOW_THRESHOLD. Chart: still unplotted (B BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: alighieri-dante
   display_name: "Dante Alighieri"
@@ -180,6 +181,17 @@ lane_b:
   reading: "As belief, not finding: scholastic form with a transcendent God."
   notes: "Lane A and Lane B kept separate (P49). No chart cue from Lane B alone."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Catholic household is an inference, and the baptism record is unopened. Monarchia discusses spiritual teachings; the Commedia is not used as his voice."
+  conformity_pressure:
+    level: unknown
+    evidence: "Exile from Florence in 1302 is recorded as political exile, not as a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions: []
 collaborators:
   - {value: "Brunetto Latini", relation: teacher, certainty: 0.5, cites: [{source: S4, locator: "Education and poetry"}], how_known: "Wikipedia EN."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus P48 fill. SEP §2 (S1) also attests intervening Creator/theodicy (God intervenes to make the world as good as it can be; bestows intellect; wise-father learning) that agrees with A 0 Master/Creator own voice — add S1 to A value cites. Alt 1 five-eternals/design reading kept (S1 still on alt, no longer exclusive of main). A support single→corroborated; B already corroborated → hollow→filled (still faded: B @0.5). mid_basin unchanged (B 0.5). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #138): opened Butterworth Philosophic Life (Interpretation 20.3, 1993) and Arberry Spiritual Physick (1950). A 1 @0.5 scholarly_reconstruction → A 0 @0.7 written_profession (Master/reward/Creator-master; alt 1 = five-eternals design cosmology, P49 SEP). B stays 3 @0.5 (P35/P16: nature-necessity line too thin for cause-order lift; Doubts about Galen unread; alt 4 kept). primary_system stays BELOW_THRESHOLD (religion dispute honest). mid_basin stays BELOW. Chart-moving NO. P47 source_quality; P48 A corroborated / B single; P50 Wikipedia EN dual bio (birth 864/865; death 925/935). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): the 0.5 ceiling now cites the scholarly-reconstruction ceiling (CODING_GUIDE §3), not P36. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 142). Source: SEP 'Abu Bakr al-Razi' (Peter Adamson, rev. 2025). Scholarly reconstruction only: five eternal principles; God's existence 'demonstrated on the basis of the good design of the universe'; 'God intervenes to make the world as good as it can be'; creation ex nihilo impossible. His religion is disputed: the hostile Abū Ḥātim has him reject prophecy and miracles, but Doubts about Galen acknowledges 'books sent by God'. A scientist (P30: medicine; alchemy is described as chemical procedure, so it does not cut the inference). Span UNKNOWN (P12, P39: no lasting work dated in the source); era '500 to 1399'. primary_system BELOW_THRESHOLD (leads PLATO, DEISM, ISLAM); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: al-razi
   display_name: "Al-Razi"
@@ -173,6 +174,19 @@ lane_b:
   reading: "No circle."
   notes: "Lane A and Lane B kept separate (P49)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Spiritual Physick says the Creator gave Reason so that humans could know the Creator. No named tradition is stated; the file leaves that dispute open."
+    cites: [{source: S4, locator: "Ch. I pp. 20–21"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The Philosophic Life and Spiritual Physick both speak of a rewarding Creator. No own text in the file withdraws that."
+    cites: [{source: S3, locator: "§9.iv (Kraus p. 102)"}]
 institutions:
   - {value: "Hospital in Rayy", role: "director (per biographers)", years: UNKNOWN, kind: other, certainty: 0.5, cites: [{source: S1, locator: "§1"}], how_known: "SEP: 'His biographers report'."}
   - {value: "Hospital in Baghdad", role: "director (per biographers)", years: UNKNOWN, kind: other, certainty: 0.5, cites: [{source: S1, locator: "§1"}, {source: S5, locator: "Biography"}], how_known: "SEP; Wikipedia EN."}

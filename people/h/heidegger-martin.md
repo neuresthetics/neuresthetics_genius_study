@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch V audit note (gs_982cb8e_V run 1, UF8 follow-up): S1 now cites all Britannica contributors, Arne D. Naess, Richard Wolin and Britannica Editors. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): HE4, the later essays and lectures listed as one body-of-work contribution (1946–1964; SEP for lasting, IEP for dates), span and working_years 1927 -> 1927–1964; note, the dates of the break with Catholicism (Britannica 1916–17, IEP 9 January 1919) in changes_over_life. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 115). Basics from Britannica (Arne D. Naess), SEP (Mark Wrathall) and IEP (W. J. Korab-Karpowicz). No text of his own on God or nature read: Phänomenologie und Theologie (1927) and the 1919 letter are leads only (P26). Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN; C UNKNOWN; D BELOW_THRESHOLD; E UNKNOWN; mid_basin UNKNOWN. Single-year span 1927 (Being and Time). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #114 / F4 rank 115). Goals: Pathmarks / Phänomenologie und Theologie primary if reachable; keep A/B honest. Read Wegmarken GA 9 (Klostermann; S5 heidegger.ru PDF OCR): Phänomenologie und Theologie (1927) and Brief über den Humanismus (1946). Dual bio Wikipedia EN (S6, P50). P47 source_quality on S1–S6. A stays BELOW (PT characterizes Christian faith's 'gekreuzigte Gott' as theology's positum, not his locus; Humanism: Sein ≠ Gott / Weltgrund; thinking neither theistic nor atheistic — no clear A). B UNKNOWN→BELOW (philosopher, P16/P30: physis essay and Humanism Natur as Seiende in clearing, no own-voice natural-law / exception claim). D BELOW→2 @0.7 written_profession support single (S5): theology 'absolut verschieden' from philosophy; faith Todfeind of free Existenz; no Christian philosophy (GA 9:48–49, 66). C/E UNKNOWN. mid UNKNOWN→BELOW (A and B both BELOW, P19). primary BELOW unchanged. first_evidence LIO 1927 (PT for D). Chart-moving NO. Krebs 1919 letter still secondary-only; Spiegel 1966 after span. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: heidegger-martin
   display_name: "Martin Heidegger"
@@ -174,6 +175,17 @@ lane_b:
   reading: "The question of the meaning of being, approached through temporal human existence."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "A 1915 Catholic self-description and the 1919 break are secondary reports. Adult pages say thinking is neither theistic nor atheistic, not a denomination."
+  conformity_pressure:
+    level: unknown
+    evidence: "The 1946 loss of his chair is recorded as political. No religious sanction is documented."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Freiburg", role: "Privatdozent, then Husserl's assistant (1919)", years: "1915–1923", kind: university, certainty: 0.7, cites: [{source: S2, locator: "§1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "SEP and IEP."}
   - {value: "University of Marburg", role: "associate professor, full professor 1927", years: "1923–1928", kind: university, certainty: 1.0, cites: [{source: S2, locator: "§1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "SEP and IEP."}

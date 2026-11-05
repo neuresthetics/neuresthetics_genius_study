@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 18). Basics and works from Britannica (Lockspeiser). Worldview: the 1911 Excelsior interview with Henry Malherbe, read only as quoted in English in Vallas (1933), pp. 224–225 (archive.org scan). Not a scientist. primary_system BELOW_THRESHOLD (PANT fails the two-part test); A, B, D BELOW_THRESHOLD; C, E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #18, F5 rank 18). P47 source_quality on every source. Dual-sourced birth/death (S1+S2) → 1.0. French of Malherbe Excelsior interview corroborated via unofficial web reprint (S4; wording matches Vallas English; Gallica Excelsior still blocked). Added Bizet Comœdia 18 May 1911 line via Lesure Monsieur Croche p. 305 as cited secondhand (S5). Baptism 1864-07-31 and parents filled (S2+S6). A_locus stays BELOW_THRESHOLD: French keeps «près de Dieu» separate from Nature → PANT part 1 still fails; Bizet «pas … catholique ou croyant» rejects practice/belief without locating God. B_cause stays BELOW_THRESHOLD (not a scientist; beauty/spectacle language ≠ law/exception, P16). primary_system stays BELOW_THRESHOLD; AGNOS considered from Bizet, not chosen (no suspension; still speaks of God, prayer, Christian faith in the Martyre mix). Chart: still unplotted. Lockspeiser Life and Mind and Lesure full editions unread. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: debussy-claude
   display_name: "Claude Debussy"
@@ -148,6 +149,19 @@ lane_b:
   reading: "As belief, not finding: form unclear, circle partly present."
   notes: "Lane A and Lane B kept separate (P49). No chart cue from Lane B alone."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1911 interviews: 'I have made mysterious Nature my religion,' and he is not of Catholic practice or a believer."
+    cites: [{source: S4, locator: "French paragraph (nature-religion)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The Malherbe and Bizet interviews agree: nature is his religion, and he is not a practicing Catholic. Infant baptism is not an adult claim."
+    cites: [{source: S5, locator: "Bizet/Comœdia 1911 via Lesure p. 305"}]
 institutions:
   - {value: "Paris Conservatory", role: student, years: "1873–1884", kind: university, certainty: 0.7, cites: [{source: S1, locator: "Early period"}], how_known: "Britannica."}
 collaborators:

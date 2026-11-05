@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #175, F 3, rank 186). Goals: RA perspective lectures / Fallacies of Hope own words if any; keep silence if none; do not force plot. Hunt: Tate chronology baptism St Paul's Covent Garden 14 May 1775 and burial St Paul's Cathedral 30 Dec 1851 (S5); Tate Imms Colour Studies citing Ruskin Fors Clavigera Letter 45 (1874) for reported 'The Sun is God' a few weeks before death, with Eastlake/Bartlett sun-on-face death reports that do not carry the phrase (S6); MFA Boston Slave Ship entry with RA 1840 Fallacies of Hope catalogue verse (S7); lecture clause 'Light is therefore colour, and shadow the privation of it' (c.1818 lecture material; pedagogy/optics, not creed) via Bank of England / Gage chain (S8); Independent review of Hamilton 1997 and Bailey 1997 on Son/sun ambiguity and Ruskin invention claim (S9). primary BELOW_THRESHOLD (CHRIST lead from Anglican baptism/burial + biblical painting subjects only; PANT rejected — landscape/sun subjects fail S6 two-part test; 'sun is God' reported-speech lead of doubtful provenance). A BELOW_THRESHOLD (no own locus; named reading A 2 if Ruskin phrase authenticated as God=sun). B UNKNOWN (not a scientist; Fallacies storm/sun verse is subject/poetry, not law/exception — P16). C/D/E UNKNOWN; mid UNKNOWN (B UNKNOWN takes precedence, P19). Chart: still unplotted. P47 source_quality on S1–S9. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv)."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fix: the span ends are now dated by exhibition, The Shipwreck at Turner's gallery in 1805 (Tate, S2) and Rain, Steam, and Speed at the RA in 1844 (Egerton, National Gallery, S3), so first-lasting year, span, working_years and age rise from 0.5 to 0.7. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 186). Source: Britannica, signed by Martin R. F. Butlin (scholars edition, read in full). Lasting claim: 'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere' (Legacy), a body of work. Span: from The Shipwreck and the Thames sketches of 1805, when he 'was developing his original approach to landscape', to Rain, Steam, and Speed (1844), the last dated work Britannica names among the 'outstanding examples of his late work'; dates as Britannica gives them. No religious statement read: worldview all UNKNOWN; not a scientist. Span 1805–1844, age 30. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: turner-j-m-w
   display_name: "J.M.W. Turner"
@@ -160,6 +161,18 @@ lane_b:
   reading: "No Lane B data. Do not invent B from light/colour lectures or storm subjects."
   notes: "Lane B is labeled belief, not a finding."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Baptism and cathedral burial were checked. Lectures and the Fallacies verse state no creed. 'The Sun is God' is Ruskin's later report."
+    cites: [{source: S6, locator: "Ruskin, Fors Clavigera Letter 45"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Royal Academy of Arts", role: "member; professor of perspective 1807–1837/38", years: "1799–1851", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "Early life and works; Later life and works"}, {source: S5, locator: "1807 Professor; 1837 resigns"}], how_known: "Britannica; Tate chronology (associate 1799, full 1802; resigns professorship 28 Dec 1837)."}
 collaborators:
