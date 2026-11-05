@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 101). Basics from Britannica (Charles Issawi, signed; body pages opening, 'The Muqaddimah' and 'Later years', read live). Worldview from the Muqaddimah in Franz Rosenthal's translation (1958/1967) as reproduced on muslimphilosophy.com (Ch. I, sixth prefatory discussion; Ch. VI, §14), with Rosenthal's 'Textual History' for dates; web copies, secondary quotation. Not a scientist (P30, coder's call). primary_system ISLAM (Ashʿarite kalām; 0.7); A 0 (0.7); B 2 (0.5, alt 1); D 1 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Plotted (faded), left of B 3. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1). First lasting year 1377 at 0.5, alternative 1382, now cites P30 #1 and the CODING_GUIDE undated-start clause instead of P30 addendum c (I7). D rationale softened: the Lawgiver's ban concerns the regress of causes towards God, not natural inquiry as such. Note added that the Muqaddimah was revised to about 1404 (possible later period end). Britannica body sections 'The Muqaddimah' and 'Journey to Egypt' re-fetched and the locators confirmed (1375 retreat, four years; first draft; best single source on Muslim North Africa; Tunis; 1382; Al-Azhar and the Qamḥiyyah college). Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #100 / F4 rank 101). Needs: corroborate A 0; lift B 2 if Muqaddimah nature-as-custom / occasionalism holds; not a scientist (P30). Dual bio Wikipedia EN (S5, P50). P47 source_quality on S1–S6. Primary check: IA OCR of Rosenthal Bollingen printed vols (IGNCA: vol.1 in.gov.ignca.16173 Ch. I sixth prefatory; vol.3 in.gov.ignca.16175 Ch. VI §14) as S6 — confirms 'realm dominated by custom', 'There is no maker but Him', 'cannot be compared with created beings', intellect-as-correct-scale, miracles / acts of divine grace, dream-visions self-report, Baqillani 'accident does not persist two moments'. A 0 stays @0.7 support corroborated (S2 web + S6 IA OCR; distinct ids P48). B 2 lifted 0.5→0.7 support corroborated (same; contested alt 1 caps ≤0.7 P25; nature-as-custom with live miracles = P27 B 2). primary ISLAM @0.7 kept. mid_basin BELOW (A≤1 with B=2 between branches). Chart-moving YES: faded→dark (min cert 0.7); hollow→filled (both A&B corroborated). Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ibn-khaldun
   display_name: "Ibn Khaldun"
@@ -218,6 +219,19 @@ lane_b:
   reading: "Lane B only: a transcendent God, the only maker, behind a customary natural order with live exceptions (miracles, grace, dream visions)."
   notes: "Ashʿarite occasionalism is the named B alt 1; main score keeps custom+exceptions as B 2."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Chief judge of the Maliki rite in Cairo. The Muqaddimah says there is no maker but God and that intellect must not outweigh prophecy or the divine attributes."
+    cites: [{source: S1, locator: "'Journey to Egypt'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent in his posts."
+  practice_gap:
+    gap: aligned
+    evidence: "The Cairo judgeship and the Muqaddimah's God, prophecy, and Muhammad as Lawgiver agree. No contrary text is in the file."
+    cites: [{source: S6, locator: "vol.3 Ch. VI §14"}]
 institutions:
   - {value: "Court of Fez (Marinid sultan)", role: secretary, years: UNKNOWN, kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Background and early life'"}], how_known: "Britannica."}
   - {value: "Al-Azhar and the Qamḥiyyah college, Cairo", role: "teacher; professor of jurisprudence", years: "1382–", kind: university, certainty: 0.5, cites: [{source: S1, locator: "'Journey to Egypt'"}], how_known: "Britannica; the kind is the coder's."}

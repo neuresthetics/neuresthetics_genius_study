@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 8
+  schema_version: "1.5"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #149, F 3, rank 155). Re-searched full 1876 Memoir (IA OCR + Gutenberg #52923 clean text); Hoskin Autobiographies excerpt (German History Intersections, S6); Phil. Trans. comet letters (IA, S7 — observational only); Wikipedia EN dual bio (S5; P50). Extra conventional God-bless / thank-God closings found; no Creator / nature-cause / why-heavens-move own-voice. Aubert 1786 'Being who has ordered all these things to move' is TO her, not hers. CHRIST stays 0.5; A 0 stays 0.5 (named alt 1 formula); B stays BELOW_THRESHOLD (P6; not reconstructed from comet-sweeping); C/D/E BELOW; mid BELOW. support single on A (P48; only S3). P47 source_quality S1–S7. Chart-moving NO (not plotted). No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica and MacTutor; her own words from Memoir and Correspondence of Caroline Herschel (John Murray, 1876), page images checked for pp. 17–18, 235–236, 275, 347 and 351. Primary CHRIST at 0.5 (consistent_private_letters, below the ceiling because the evidence is brief devotional phrases: a Nunc dimittis citation, thanksgiving and prayer to 'the Almighty', 'as long as God pleases'); A 0 at 0.5; B, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1786–1828 → 1783–1828; worldview.working_years 1772–1848 → 1783–1828, equal to the span (P30 addendum f); 2 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 2 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: herschel-caroline
   display_name: "Caroline Herschel"
@@ -179,6 +180,17 @@ lane_b:
   reading: "As belief, not finding: no geometric form and no circle in what was read. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Memoir checked. Garrison christening and confirmation are youth; the funeral note is the editor's. 1829 and 1835 letters thank God and quote Luke without naming a church."
+  conformity_pressure:
+    level: unknown
+    evidence: "The memoir does not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "King George III (royal pension as William's assistant)", role: "pensioned assistant astronomer", years: "1787–", kind: "patron or funder", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}, {source: S2, locator: "1787 paragraph"}], how_known: "Two sources."}
   - {value: "Royal Astronomical Society", role: "gold medallist (1828); honorary member (1835)", years: "1828–1848", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "paragraph 4"}, {source: S2, locator: "honours paragraph"}], how_known: "Two sources."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #136, F3 rank 140). Opened Chronology of Ancient Nations (Sachau 1879 Eng., S6 archive.org PDF/OCR): Creator 'high above' anthropomorphic essence/qualities (p. 23); 'all-wise and almighty Creator' who created mountains (pp. 252–253); Jesus 'in His earthly life subject to the laws of nature' (p. 290); nature preserves genera/species, irregularities show Creator designed deviations from the 'general tenor of things' (p. 295). A_locus 0 0.5→0.7 (written_profession; support corroborated India+Chronology); B_cause 3 0.5→0.7 (same; alt 4 held — Creator-designed deviations + miracle-as-departure block exceptionless B 4); mid_basin BELOW→true @0.7. Chart-moving YES (faded→dark; hollow→filled). P47 source_quality on S1–S7; P50 Wikipedia EN (S7) dual bio (birth agrees; death still disputed). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z1 audit fixes (blind audit /workspace/genius_study_audit/gs_8813a47_Z1/run1/): Z1-11: the Great Bear 'laws of nature' sentence is on Sachau vol. I p. 352 (was 353) everywhere. No score changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z1, order P32: F 3, rank 140). Basics from Britannica (George Saliba, signed) and Encyclopaedia Iranica (Bosworth, 'Life'; de Blois, 'History of Religions'). Own voice read in Sachau's translation of the India (1910, archive.org scan): 'We Muslims ... considering all men as equal, except in piety' (I, p. 100); the Koran's sentences 'perfectly clear' and revealed (I, pp. 263–264); a Hindu theory rejected because the Great Bear would 'form an exception to the laws of nature' (I, p. 353); the rare thing becomes 'something like a miracle, which is no longer in accordance with the ordinary laws of nature' (I, p. 179). A scientist (P30: Masʿudic Canon, coordinates of places); his astrology is taught but personally discounted (S1), so it does not cut the inference (contrast al-Khwarizmi). Span 1000–1030 (first year at 0.5). primary_system ISLAM (0.7); A 0 (0.5, alt 1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: al-biruni
   display_name: "Al-Biruni"
@@ -217,6 +218,19 @@ lane_b:
   reading: "Not assessed."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "In India he writes 'We Muslims.' Iranica notes early Shiʿite sympathy and later recognition of the first caliphs, still within Islam."
+    cites: [{source: S4, locator: "vol. I, ch. IX, p. 100"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "India's 'We Muslims' and the passage that the Koran's sentences are clear match a Muslim voice; the Shiʿite note stays inside Islam."
+    cites: [{source: S4, locator: "vol. I, ch. XXXVI, p. 263"}]
 institutions:
   - {value: "Court of Qābūs ibn Voshmgīr, Gurgān", role: "scholar; dedicated the Chronology to Qābūs", years: "c. 998–c. 1004", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}, {source: S2, locator: "'i. Life'"}], how_known: "Britannica and Iranica; years from Iranica (388/998) and the coder."}
   - {value: "Ghaznavid court, Ghazna", role: "scholar and court astrologer", years: "1017–c. 1050", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}, {source: S3, locator: "paragraph 2 (removal to Ghazna, 408/1017)"}], how_known: "Britannica and Iranica."}

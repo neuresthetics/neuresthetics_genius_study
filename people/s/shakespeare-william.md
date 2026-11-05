@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 81). Basics from Britannica (John Russell Brown, Terence Spencer and others, signed; Wayback copies; body only). No worldview statement in his own voice was read: the plays and poems are character or persona speech (P42), and the will's religious preamble was not read. All worldview fields UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): will read (Folger, PROB 1/4); by v8's ruling on RQ1 (on the auditor's advice) its formulaic preamble is lawyer drafting, not his statement (P42); 'only merits of Jesus Christ' recorded under nominal_affiliations as context. A stays UNKNOWN."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#4): primary_system how_known no longer says the will was not read; it now says the will is read (S3)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #80, F5 rank 81). Needs: A UNKNOWN; B UNKNOWN. Re-opened Britannica via Wayback (S1). New: Wikipedia EN dual-bio (S4, P50); Wikipedia Religious views (S5); Folger Venus and Adonis and Lucrece dedications — his signed own voice, no LIO content (S6, S7); Steggle Shakespeare Quarterly 2024 / Bristol on Spiritual Testament reattribution to Joan Shakespeare Hart, not John (S8); Modern Philology review of Kastan A Will to Believe — biographically 'impossible to know', plays' 'inclusive… Christianity' is about the dramas not a scored personal A (S9). P47 source_quality on S1–S9. Own-voice checks (dedications, will preamble under P42) and drama/character speech (P42; reconstructions labelled P49) leave A UNKNOWN and B UNKNOWN. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: shakespeare-william
   display_name: "William Shakespeare"
@@ -156,6 +157,17 @@ lane_b:
   reading: "Lane B: no person-level form/circle finding. Religion-in-the-plays scholarship is literary history, not H1."
   notes: "Keep Lane A (unknown personal LIO) separate from Lane B (belief-model labels)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Baptism, burial, and a tithe lease are in the file. The lease is called fiscal, and personal faith is called impossible to fix."
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No adult creed was coded, so there is no stated affiliation to compare."
 institutions:
   - {value: "Lord Chamberlain's Men (King's Men from 1603)", role: member, years: "c. 1594–1613", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Career in the theatre'"}, {source: S4, locator: "infobox"}], how_known: "Britannica and Wikipedia."}
   - {value: "Holy Trinity Church, Stratford-upon-Avon (lay rector via tithe lease)", role: "lay rector / tithe lessee", years: "c. 1605–1616", kind: other, certainty: 0.7, cites: [{source: S4, locator: "Later years"}, {source: S5, locator: "known religious affiliation"}], how_known: "Wikipedia; fiscal parish role."}

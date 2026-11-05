@@ -31,3 +31,5 @@ Rules that matter most:
 - The worldview is the *adult working* worldview. Heritage is context only.
 - Lane B fields are a labeled belief model, not findings.
 - No Wikipedia citations, and no invented facts.
+
+`religion_conformity` (schema 1.5) is Lane A: a public affiliation, a documented dissent risk, and a documented gap. It is not an LIO score and it does not say what anyone inwardly believed. Rules and thresholds are in CODING_GUIDE §8. `unknown` is the honest value when the file is thin.

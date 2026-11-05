@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit notes: 1453 kept (installation; RQ-Z7-N1 now codifies unveiling or installation as the P30 #1 event for artworks). S3 note corrected: the Gattamelata article text was read."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-40 FAIL, not result-changing): Gattamelata's lasting status and the span end re-cited from the question box (P26) to Britannica's 'Gattamelata' topic article (S3): 'established a prototype for equestrian monuments in the West'. Year 1453 kept as the public installation (P30 #1), completion 1447–1450 noted. Span 1415–1453, age 29 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 160). Source: Britannica (H. W. Janson, signed; opening and 'Early career' read). No own words on religion read; religious commissions are work, not profession (P16). Not a scientist. Span 1415–1453 (St. Mark and St. George, c. 1415; Gattamelata 1447–53). primary_system UNKNOWN (lead CHRIST); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #153, F3 rank 160). Needs: enrich sources; do not force plot from commissions. Dual bio Wikipedia EN (S4) + retained Britannica Janson (S1): birth c.1386 from catasto age claim; death 13 Dec 1466 Florence. Herzner Regesti donatelliani 1979 (S6): archival catasto age declarations (reg. 95: age 41 in 1427) and death date note (Bartolomeo Ponzio: 10 Dec 1466 at 76 — dual with Vasari/Britannica 13 Dec). Vasari Life of Donato, de Vere EN Gutenberg (S5): character anecdotes and burial at San Lorenzo near Cosimo 'as he had himself directed' — reported speech / second-hand (~100 years later); aesthetic 'ploughman' Crucifix exchange and 'By the faith that I place in my Zuccone' are art talk, not creed. No own-word religion in catasto summaries or Vasari. primary_system UNKNOWN (lead CHRIST only); A/B/C/D/E UNKNOWN; mid_basin UNKNOWN. P47 on S1–S6. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: donatello
   display_name: "Donatello"
@@ -145,6 +146,18 @@ lane_b:
   reading: "Lane B only: geometric form present in the work; no H1 circle from worldview. Form ≠ A/B score."
   notes: "Do not treat religious subject matter or Vasari piety anecdotes as Lane A creed."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Britannica, Wikipedia, Vasari, and the 1427 catasto were checked. No adult creed. Commissions and the San Lorenzo burial are not a statement."
+    cites: [{source: S5, locator: "Life of Donato"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No affiliation was stated, so there is nothing to compare."
 institutions: []
 collaborators:
   - {value: "Lorenzo Ghiberti", relation: "mentor or employer", note: "workshop member 1404–07", certainty: 0.7, cites: [{source: S1, locator: "'Early career'"}, {source: S4, locator: "Early career"}], how_known: "Britannica and Wikipedia."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Russian Orthodox @0.7 (S1+S6; excommunication implies prior Orthodox membership). Baptism/catechism remain UNKNOWN without opened record. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 50). Basics from Britannica (Morson). Worldview from The Kingdom of God Is Within You (preface dated 1893), Garnett translation, Gutenberg #4602 (web copy, 0.7 cap). Not a scientist (P30). primary_system CHRIST 0.5 (alt DEISM); A 2 at 0.7 (alt 3); B 3 at 0.5 (alt 4) under P41 by analogy (rejects miracles without stating exceptionless law); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Ruling question RQ1 batch H. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): B 3 at 0.5 (alt 4) now cites the P41 extension for miracle rejection instead of an analogy. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #50). Needs: A single source; B single source; B faded. Read A Confession (Maude via CCEL, S4) and My Religion / What I Believe (Huntington Smith, S5); dual-sourced bio via Wikipedia EN (S6). P47 source_quality on S1–S6. P48: A support single→corroborated (S2+S4; alt 3); B support single→corroborated (S2+S4+S5; P41, alt 4). Values/certainties unchanged. first_evidence_of_lio_type_views → 1882; lio_views_relative → during major work. Native name filled. Chart-moving YES: faded hollow → faded filled. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: tolstoy-leo
   display_name: "Leo Tolstoy"
@@ -206,6 +207,20 @@ lane_b:
   reading: "A late, non-dogmatic Christianity: God as the source of life, no miracles."
   notes: "Belief model only. Chart cue after D1: faded filled (A 2 @ 0.7 corr; B 3 @ 0.5 corr)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "Published Christian teaching as a guide for life, with miracles and church dogma set aside. No Orthodox baptism record is in the file."
+    cites: [{source: S2, locator: "Gutenberg ch. IV"}]
+  conformity_pressure:
+    level: moderate
+    evidence: "Excommunicated by the Russian Orthodox Church in 1901."
+    cites: [{source: S6, locator: "excommunication from the Russian Orthodox Church (1901)"}]
+  practice_gap:
+    gap: aligned
+    evidence: "A Confession and The Kingdom of God Is Within You affirm God and Christ's teaching and reject miracle-proofs. No return to the Orthodox church is in the file."
+    cites: [{source: S4, locator: "ch. XI"}]
 institutions: []
 collaborators: []
 

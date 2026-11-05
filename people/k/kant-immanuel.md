@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #41). Schema 1.2→1.3. P47 source_quality on S1–S8. P48 support: corroborated added on A–E (already computed from multi-source cites). Re-verified AA V 125 and AA III 363 on Bonner Kant-Korpus. Parents named (Johann Georg Kant; Anna Regina Reuter); baptism 1724-04-23 Kneiphof cathedral as Emanuel (Naragon chronology S8; NDB agrees). Schooling stages migrated (grammar/secondary + run_by religious body; university + run_by). Freedom quote (A533/B561) added as statement. Summary body synced (KANT @0.7, not stub). A 1 @0.7 / B 3 @0.7 unchanged; mid_basin true @0.7. Chart already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK12): B 3 now also cites his own text on freedom, KrV A533/B561 (AA III 363: 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht'). No score changes."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "S5 audit follow-up: primary_system BELOW_THRESHOLD -> KANT @0.7 under the founders rule, replacing the stub reason. No axis changes. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kant-immanuel
   display_name: "Immanuel Kant"
@@ -271,6 +272,19 @@ lane_b:
   reading: "As belief, not finding: lawful nature at the LIO pole with a transcendent moral author held by faith. Passes mid_basin; circle absent."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "No adult church practice is stated. Published moral faith: he limits knowledge to make room for faith, postulates God, and defines religion as knowing duties as divine commands."
+    cites: [{source: S4, locator: "AA III 19 (B XXX)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent in Königsberg."
+  practice_gap:
+    gap: aligned
+    evidence: "The second Critique and Religion state the same moral faith. Keeping miracles out of natural inquiry is part of that account, not a retraction."
+    cites: [{source: S6, locator: "AA VI 153"}]
 institutions:
   - {value: "University of Königsberg (Albertina)", role: "unsalaried lecturer 1755–1770, then professor of logic and metaphysics until he stopped teaching in 1796", years: "1755–1796", kind: university, certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening ('Privatdozent' 15 years, then the chair)"}], how_known: "Two sources."}
 collaborators:

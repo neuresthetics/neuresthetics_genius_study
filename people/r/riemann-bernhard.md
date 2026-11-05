@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Dedekind's 'Bernhard Riemann's Lebenslauf'. Worldview from Riemann's own unpublished philosophical fragments and Dedekind's Lebenslauf, both in the Gesammelte mathematische Werke (2nd ed., 1892; University of Toronto scan on the Internet Archive; pp. 518, 519, 521, 541, 557 and 558 checked on the page images). primary_system BELOW_THRESHOLD (CHRIST and CLTHEI candidates). A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #232: languages_of_work German → German, Latin, Italian (Werke contents XXII, XVI, XXIII and preface). #263: PANPSY reason rewritten: he argues the Erdseele in his own voice (pp. 511–512, 517) but frames it as a hypothesis of exact science (p. 517); still not coded. #260: secondary_system how_known points to that candidate (value unchanged). #259 note: cites CHRIST's use_when instead of a loose batch 3 precedent. pp. 507, 511 and 517 checked on the page images. Left for v8 as a method question: #265 (basis label for B_cause). Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #12). P47 source_quality on every source. A_locus and B_cause were each single on S1 @ 0.5: added Baker/Christenson/Orde Collected Papers (Kendrick 2004) English of Dedekind Lebenslauf (S4, piety/self-examination ~p.532) and Cherry English Philosophical Fragments (21st Century Winter 1995–96, S5) verifying the antinomy Thesis (freedom/strict lawfulness; time-acting God) and the Naturwissenschaft / concept-revision passages (pp.54–55). Laugwitz Birkhäuser monograph (S6) as scholarly secondary on piety and fragments. A support single → corroborated (S1+S4+S5); B support single → corroborated (S1+S5). Values/certainties stay A 1 @ 0.5 and B 4 @ 0.5 (v8 antinomy discount; private ceiling). Chart: faded hollow → faded filled (fill cue). Neuenschwander family letters mined: little first-person religion. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: riemann-bernhard
   display_name: "Bernhard Riemann"
@@ -185,6 +186,18 @@ lane_b:
   reading: "As belief, not finding: form partly present, circle partly present. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No adult church office. Confirmation at thirteen and a half is not adult (S1, p. 541). The God fragment is an unpublished Nachlass text (S1, p. 519)."
+    cites: [{source: S1, locator: "p. 541"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   - {value: "University of Göttingen", role: "Privatdozent (1854), professor (1857), chair of mathematics (1859)", years: "1849–1866", kind: university, certainty: 0.7, cites: [{source: S2, locator: "Biography (1854, 1857, 1859)"}], how_known: "MacTutor."}
   - {value: "Berlin Academy of Sciences", role: "member", years: "1859–1866", kind: "academy or learned society", certainty: 0.7, cites: [{source: S2, locator: "Biography (1859)"}], how_known: "MacTutor."}

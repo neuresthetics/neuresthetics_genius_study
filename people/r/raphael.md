@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 66). Basics from Britannica (Britannica Editors, unsigned; body through the Perugia years) and the School of Athens date from Britannica's Plato article (Meinwald). No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #65, F5 rank 66). Needs: A UNKNOWN; B UNKNOWN. Dual bio Wikipedia EN (S4) + retained Britannica Editors (S1; live Cloudflare-blocked, Wayback Top Questions/facts). Primary letters: IRDS/Shearman 1 Jul 1514 to uncle Simone Ciarla (S5) — 'ringratione Dio del continuo' (conventional thanksgiving for not marrying) and St Peter's as 'primo tempio del mondo' (career/architecture); Wikisource Visconti Letter to Leo X c.1519 (S6; co-draft with Castiglione debated) — antiquities survey, 'patria universale di tutti li cristiani' (civic address to the Pope), not a creed. IRDS/Shearman sonnet draft c.1509–10 (S7) — 'arcana Dei' = Paul's ineffability as Petrarchan love metaphor, not theology. Vasari last rites / Pantheon burial via Wikipedia (S4) = practice report, not own-word A. A stays UNKNOWN (checked items off-point for locus; P19); B stays UNKNOWN (P16 — not a scientist; no nature-causal statement). primary_system UNKNOWN (CHRIST = heritage/milieu lead only; religious commissions ≠ avowed belief). mid_basin UNKNOWN. Working years 1504–1520 @0.7. P47 on S1–S7. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: raphael
   display_name: "Raphael"
@@ -157,6 +158,17 @@ lane_b:
   reading: "Lane B only: geometric form present in the work; no H1 circle from worldview. Form ≠ A/B score."
   notes: "Do not treat Neoplatonic art description as PLATO worldview."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The nominal Catholic line is called milieu. No baptism record was read."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Pope Julius II / Leo X (Vatican Stanze; St Peter's fabric)", role: painter and architect, kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "Roman period"}, {source: S5, locator: "fabrica de Santo Petro"}], how_known: "Britannica, Wikipedia, Simone letter."}
 collaborators:

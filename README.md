@@ -233,6 +233,84 @@ The 139 coded people below are not on the chart because at least one axis has no
 
 *The 77 sourced belief-system drafts (P46) on the five LIO axes, showing each score with its certainty. These are unreviewed coder drafts, not the v7.1 rubric. No system file is left as a stub or sourced but unscored.*
 
+## Religion conformity
+
+This is a count of the public record for the 228 people who already have files. It does not add anyone. It does not change the LIO scores or the charts above.
+
+The question is narrow. Many people on the chart have a public religious affiliation or stance. Do the words and acts in the file match that affiliation, and does the file document a risk for dissent in their place and time?
+
+Three fields sit on each person, under `religion_conformity`. Rules and thresholds are in [CODING_GUIDE §8](docs/CODING_GUIDE.md).
+
+- **Stated affiliation.** What they publicly said or the adult office they held. Childhood religion and family religion do not count. `none_stated` means the adult record was checked and no affiliation was stated. `unknown` means the file does not settle it.
+- **Conformity pressure.** A documented sanction for religious dissent in that place and those years: death or torture (`severe`), prison, exile, or a heresy prosecution (`high`), censorship, loss of post, excommunication, or a civic bar (`moderate`), or a record that dissent was safe (`low`). The century is not enough. If the file does not document a sanction, the value is `unknown`.
+- **Practice gap.** Whether a documented letter, book, or act lines up with the stated affiliation (`aligned`), both lines up and cuts against it (`mixed`), or cuts against it with no remaining documented endorsement (`divergent`). If there is no affiliation to compare, or no comparison in the file, the value is `unknown`. No contrary document was found in a way that left zero endorsements, so `divergent` is 0. A match and a contrary document together are `mixed`.
+
+**Lane A and Lane B.** The three fields are Lane A. They describe the public record. They do not say what anyone inwardly believed, and they do not call anyone a secret unbeliever.
+
+Lane B holds a separate hypothesis, and it can fail: people stated a public affiliation because violence or ostracism made dissent costly, and documented words or acts diverged from that affiliation where the cost was high. The counts below do not test it. It would fail if, among people with documented high or severe pressure, mixed or divergent gaps were not more common than among people with documented low pressure; or if the gaps sat mainly where dissent was safe; or if people under severe pressure were aligned, with no contrary document. A thin record (`unknown`) counts neither for nor against it. On this pass, low pressure is 0 and severe pressure is one person (Socrates, whose affiliation is unknown), so the comparison cannot be run.
+
+`unknown` on this pass: stated affiliation 72 of 228; conformity pressure 218 of 228; practice gap 99 of 228. A further 27 stated affiliations are `none_stated` (checked, and nothing stated), which is not the same as `unknown`.
+
+### Stated affiliation
+
+| label | n | % |
+|---|---:|---:|
+| christian_catholic | 17 | 7.5 |
+| christian_protestant | 16 | 7.0 |
+| christian_orthodox | 2 | 0.9 |
+| christian_other | 9 | 3.9 |
+| jewish | 3 | 1.3 |
+| muslim | 8 | 3.5 |
+| hindu | 5 | 2.2 |
+| buddhist | 0 | 0 |
+| confucian | 0 | 0 |
+| daoist | 0 | 0 |
+| other_stated | 30 | 13.2 |
+| secular | 31 | 13.6 |
+| mixed | 8 | 3.5 |
+| none_stated | 27 | 11.8 |
+| unknown | 72 | 31.6 |
+| **total** | **228** | **100** |
+
+### Conformity pressure
+
+| level | n | % |
+|---|---:|---:|
+| low | 0 | 0 |
+| moderate | 7 | 3.1 |
+| high | 2 | 0.9 |
+| severe | 1 | 0.4 |
+| unknown | 218 | 95.6 |
+| **total** | **228** | **100** |
+
+The ten documented pressures are Galileo and William of Ockham (high), Socrates (severe), and Hume, Kepler, Noether, Rousseau, Spinoza, Tolstoy, and van Gogh (moderate).
+
+### Practice gap
+
+| gap | n | % |
+|---|---:|---:|
+| aligned | 106 | 46.5 |
+| mixed | 23 | 10.1 |
+| divergent | 0 | 0 |
+| unknown | 99 | 43.4 |
+| **total** | **228** | **100** |
+
+![Stated affiliation by practice gap](figures/religion_conformity_stated_x_gap.png)
+
+*Counts only. Made by `scripts/religion_conformity_figure.py`. The other figures are unchanged.*
+
+### Needs a second reading
+
+These are not settled. The value in the file is the conservative one, and a second pass could move it.
+
+- Shakespeare, Caravaggio, Raphael, al-Khwarizmi, Leibniz, Rosalind Franklin, Geoffrey Hinton, and Rachel Carson were left `unknown` because the file's own wording does not support a label (a fiscal tithe role, formula vows, milieu, a conventional preface, a scholar's adjective, or letters that do not settle).
+- Kepler is `mixed`, and the Eucharist letters behind the excommunication were not read.
+- Kierkegaard's attack is on the state church in the name of Christianity. King's 1949 note on the virgin birth is a seminary paper beside a later Baptist ministry.
+- Ramanujan's "all religions equally true" line is reported speech. Lavoisier's 1791 manuscript is about who controls instruction.
+- Locke's anti-Trinitarian reading of *The Reasonableness of Christianity* was not read. Ockham's trial is in the file, and the charge is not quoted.
+- Hypatia's murder by a mob is in the file. It was not coded as a legal religious sentence, because the file leaves the responsibility disputed.
+- Hegel's "I am a Lutheran" sits in compiled lectures the file does not treat as certain own wording. Chomsky refuses both the atheist and the agnostic label.
+
 ## Method in short
 
 Compared with the earlier complete release ([v7.1](https://github.com/neuresthetics/neuresthetics_v7)):

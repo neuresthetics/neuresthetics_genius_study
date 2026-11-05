@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Leipzig) @0.7 from Wikipedia S6 (baptised at St. Thomas Church). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #125 / F4 rank 126). Goals: more prose essays/letters on nature-order and God; raise B or A if honest; else document. Read: Correspondence of Wagner and Liszt vol. 2 (Hueffer; Gutenberg #4234) letter London 7 June 1855 (Schopenhauerian will-of-life / organ of perception / brain; Buddhism/Nirwana; rejects Catholic Creator who converts suffering into fiction); Letters to August Röckel (Sellar 1897) Letter VI London spring/summer 1855 (Kant/Schopenhauer: subjective character of time, space, causality as forms of perception; Will as Ding an sich; negation of Will) and Letter VII Zurich 23 Aug 1856 (renunciation / world's nothingness — A/renunciation lead, not B); On State and Religion (Ellis Prose Works vol. 4; Wahn/King — no clearer A/B locus); Wikipedia EN (P50 dual bio). P47 source_quality on S1–S6. Ruling W2: primary_system stays BELOW_THRESHOLD (CHRIST/BUDDH/IDEAL leads; Liszt letter strengthens BUDDH/IDEAL, does not fit a listed code). A stays BELOW_THRESHOLD (mixed Creator-reject vs divine Christ unchanged; Liszt/Röckel do not settle 2–3 vs 1). B 3 @0.5 single → 3 @0.7 corroborated, alt 4 (S2 Religion and Art + S4 Liszt 7 June 1855; S5 Röckel VI agrees; Schopenhauer/Kant named-alt-4 → 0.7 pattern; P48). mid_basin stays BELOW_THRESHOLD (A blocks). first_evidence_of_lio_type_views 1880 → 1855. Chart-moving NO (still unplotted: A BELOW). No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): (WA4) statement 2 locator pp. 215–216 -> p. 215. (WA6) the three statements relabelled scholarly edition -> primary transcription, the house label for a web copy (MC8, Keynes precedent). (WA8) B 3 at 0.5 re-grounded on the P27 anchor and P30 #14 (the reversal of the will as 'an abrogation of the laws of Nature', p. 215; Schopenhauer precedent); the P41 extension dropped; alternative 4 kept with a note. Ruling W2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD, IDEAL added as a lead. (Notes) S1 credits Cooke and Britannica Editors, typed tertiary. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 126). Basics from Britannica (Deryck V. Cooke). Own voice read in English in Ellis's translation of Religion and Art (1880; Prose Works vol. 6, 1897; Wagner Library web edition). Not a scientist (P30). primary_system BELOW_THRESHOLD (Schopenhauerian world-denial read into Christianity and Buddhism; no listed code fits; leads CHRIST, BUDDH); A BELOW_THRESHOLD; B 3 (0.5, alt 4; P41 extension); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1843–1882 (0.7). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: wagner-richard
   display_name: "Richard Wagner"
@@ -187,6 +188,18 @@ lane_b:
   reading: "Art rescues the figurative kernel of religion: world-denial, pity and the unity of the living."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Religion and Art (1880) and the 1855 letters discuss religion as art's subject. They state no adult membership. Leipzig baptism is childhood."
+    cites: [{source: S2, locator: "§I, p. 213"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Dresden court opera", role: "conductor", years: "1843–1849", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}
   - {value: "Philharmonic Society of London", role: "conducted its concerts", years: "1855", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}

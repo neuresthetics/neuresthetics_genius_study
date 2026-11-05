@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 36). Basics from Britannica (Wesley D. Smith). No text can be shown to be by Hippocrates himself: the Hippocratic Corpus 'cannot be by one person' and most of it 'not written by him' (S1). On the Sacred Disease (natural cause of epilepsy) is quoted for context but not attributed to him. His own disease theory is known only from Meno's report (reported speech). primary_system and A UNKNOWN; B BELOW_THRESHOLD; C, D, E UNKNOWN; mid_basin UNKNOWN. Undated works (P39). Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #36, F5 rank 36). Needs: A UNKNOWN; B BELOW_THRESHOLD. Re-opened Britannica Smith (S1); verified Sacred Disease against W. H. S. Jones Loeb vol. 2 OCR (S2; Adams MIT web copy retained as parallel). New: IEP Boylan (S4); Jouanna 'Hippocrates and the Sacred' Brill ch. (S5) + Exeter historiographical PDF quoting Jouanna Hippocrates JHUP 1999 (S6). P47 source_quality on every source. P42 reaffirmed: Jouanna allows that some Corpus works might reasonably be his 'without having absolute criteria'; scholars agree Sacred Disease and Airs, Waters, Places share one anonymous author, not that that author is the historical Hippocrates — so Sacred Disease stays context only and scores nothing. Meno/Anonymus Londinensis disease theory remains reported speech (§7). A stays UNKNOWN; B stays BELOW_THRESHOLD. Childhood/heritage lightly filled (Asclepiad family). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hippocrates
   display_name: "Hippocrates"
@@ -137,6 +138,17 @@ lane_b:
   reading: "As belief, not finding: form and circle unclear. Worldview unplottable (A UNKNOWN; B BELOW). H1 not tested. Corpus naturalism is tradition-context, not his scored view."
   notes: "P42 authorial-tradition case (with Homer)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No text is attributed to him. Asclepiad means a physicians' family, not a priesthood, and the Oath is probably not his."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions: []
 collaborators: []
 

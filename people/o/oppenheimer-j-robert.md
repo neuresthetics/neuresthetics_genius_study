@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Rouzé) and the Institute for Advanced Study's page. Worldview: no statement of his on God or religion was read in a checkable source. His Los Alamos farewell speech (2 November 1945, Atomic Heritage Foundation excerpts) states a faith in the value of science; his 1965 televised interview (interview) recalls the Bhagavad Gita line at Trinity. primary_system BELOW_THRESHOLD (ETHCUL candidate, stub; HINDU rejected). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. His AIP oral-history interviews carry quotation limits and were not used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #164/#165 (run 2): '1965 interview' reworded as an interview recorded c. 1964 for NBC's The Decision to Drop the Bomb, broadcast 5 January 1965; new sources S6 (Paley Center catalogue record T79:0489: NBC, 5 January 1965, producer Fred Freed) and S7 (Wikiquote, a second pointer to the programme); statement date '1965' → '1965-01-05' with the recording date given as unknown (c. 1964); S4 citation, HINDU candidate reason, coder notes and body updated. The words of #165 stay as they are: they follow the audio, with no 'he' before 'takes on' (Wikiquote's 'he' is noted). Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #174/228, F 3, rank 185). Goals: own words on God/ethics for primary/A; do not force plot. Opened Bird and Sherwin, American Prometheus (2005) ch.1 extract / NPR excerpt and Harvard/Horgan letter quotation (S8); Joravsky NYRB 1980 review quoting Smith and Weiner Letters and Recollections (S9); widely reprinted 1932 Frank discipline letter from that edition (S10). Family Ethical Culture / no synagogue filled from Bird-Sherwin. 1923 satirical third-person Horgan letter (pre-span): lists science/Freud instead of God — not enough for A or ATHE (P29; third-person satire). 1932 Frank letter (in span): ethics/discipline more fundamental than any metaphysical ground (Gita through Spinoza) — ETHCUL programme lead, not a Society profession. primary stays BELOW_THRESHOLD (ETHCUL lead strengthened; ATHE lead from 1923 pre-span; HINDU rejected, P42/P8). A UNKNOWN → BELOW_THRESHOLD. B stays 3 @0.5 alt 4 (P35); support corroborated S1+S3. mid UNKNOWN → BELOW_THRESHOLD. Not plotted. Smith and Weiner IA unused (unclear provenance). AIP oral history unused (quotation limits). P47 on S1–S10. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: oppenheimer-j-robert
   display_name: "J. Robert Oppenheimer"
@@ -181,6 +182,18 @@ lane_b:
   reading: "As belief, not finding: form unclear, circle unclear. The record does not test H1."
   notes: "Lane B only. Ethical Culture upbringing and literary Gita use are not H1 evidence."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Ethical Culture is his father's Society and his school (S8), not an adult membership of his. No synagogue and no adult creed."
+    cites: [{source: S8, locator: "ch. 1 (Ethical Culture Society; no synagogue)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   - {value: "University of California, Berkeley, and California Institute of Technology", role: "professor of physics", years: "1929–1943", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education', paragraph 2"}], how_known: "Britannica; years are the coder's reading (after 1927 visits to Leiden and Zürich; to Los Alamos 1943)."}
   - {value: "Los Alamos Laboratory (Manhattan Project)", role: director, years: "1943–1945", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "opening; Manhattan Project section"}], how_known: "Britannica."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #198/228, F 3, rank 211): firm A if a clear reading ≥0.5; corroborate B; leave B reconstruction-labeled (RQ-AA8-1); do not force plot. Re-read SEP Kalligas (S1); Wikipedia EN dual bio (S3); IEP Moore (S4); MacKenna MIT Enneads V.2.1 and III.1.10 (S5). A stays BELOW_THRESHOLD: primary V.2.1 'The One is all things and no one of them' + overflow emanation (A 2–4 lead) against SEP/IEP 'beyond being' / not a being / not strict pantheist (A 1 lead); IEP: no creatio ex nihilo; PLATO system file Neoplatonic One toward 2–3. No reading reaches 0.5 over the other (Gandhi/Plotinus pattern). B stays 3 @0.5 scholarly_reconstruction (RQ-AA8-1 leave reconstruction-labeled); support single→corroborated (S1 §2 + S4 + S5 III.1.10 two-kinds causation / exogenous proviso). primary PLATO @0.5 scholarly_reconstruction unchanged. Mid BELOW. Dual bio P50 (SEP + Wikipedia EN; Britannica Cloudflare-blocked). P47 source_quality on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Still not plotted (A BELOW_THRESHOLD)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 211). Source: SEP 'Plotinus' (Paul Kalligas, 2024, read in full). Born 204 CE (inferred from Porphyry, S1); settled in Rome late 244; his treatises 'began to be composed ten years after his arrival in Rome' (about 254) and continued until his death in 270 (S1). Lasting work: the treatises collected by Porphyry as the Enneads; he 'is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism' (S1). Span 254–270 at 0.5 (composition range, RQ-Z9-N1; start inferred), age 50. Worldview: PLATO at 0.5 (scholarly_reconstruction): 'Plato's figure dominates Plotinus' thought' (S1). A BELOW_THRESHOLD: the One is 'beyond being' and transcendent (A 1 lead), but everything proceeds from it by emanation (A 2 lead); no source read settles the reading. Not a scientist; B UNKNOWN pending RQ-AA8-1 (held for Jason): S1 §2 does reconstruct his account of nature (laws 'constant and immutable'; the same causes 'inexorably produce the same effects, provided that no other exogenous factor enters into play'); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: plotinus
   display_name: "Plotinus"
@@ -157,6 +158,19 @@ lane_b:
   reading: "No geometric-form claim scored. Lane B here is the labeled belief model only."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "The treatises Porphyry collected as the Enneads state the One as the source of all things (S5, V.2.1). No church is in the file."
+    cites: [{source: S5, locator: "Fifth Ennead, Second Tractate (V.2) §1"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "S5 states that metaphysics. The file records no contrary affiliation or church."
+    cites: [{source: S5, locator: "Fifth Ennead, Second Tractate (V.2) §1"}]
 institutions: []
 collaborators:
   - {value: "Ammonius Saccas", relation: "teacher", note: "Alexandria", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}, {source: S4, locator: "1. Life and Work"}], how_known: "SEP and IEP."}

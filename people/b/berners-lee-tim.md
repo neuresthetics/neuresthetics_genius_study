@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 77). Basics from Britannica (Michael Aaron Dennis); Top Questions not cited. Worldview from his own essay 'The World Wide Web and the \"Web of Life\"' (1998, w3.org). Not a scientist under P30 (computer science). primary_system BELOW_THRESHOLD (Unitarian Universalist, no study code); A BELOW_THRESHOLD; B UNKNOWN (P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change: primary_system stays BELOW_THRESHOLD (no UU code, not mapped to SECHUM); UU recorded under nominal_affiliations."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #76, F5 rank 77). Needs: A BELOW_THRESHOLD; B UNKNOWN. Primaries/own words: 1998 w3.org UU essay (S2) re-read; Business Insider / Die Welt Döpfner interview 7 May 2017 (S4) 'Not in the sense of most people. I'm atheist and Unitarian Universalist.'; UU World Graff 1999 (S5) interview paraphrase on MIT UU / no dogma; w3.org FAQ physics replies (S6); Wikipedia EN dual bio (S7, P50) with Britannica create-pass body retained (S1; live JS-empty this pass). P47 on S1–S8. Not a scientist (P30/P33: Web/HTML/HTTP/URI are inventions, not theories about natural systems) — B stays UNKNOWN (P16); physics 'microscopic rule → macroscopic' remarks are design analogies, not a scored B account. primary_system BELOW→ATHE @0.5 (interview self-label; alt BELOW / SECHUM). A BELOW→4 @0.5 support single (interview; alt BELOW_THRESHOLD for span vacuum / UU without God term, P38). D UNKNOWN→3 @0.5 (essay reject dogma / One True Churches + quest-for-truth skepticism). C/E UNKNOWN. mid_basin stays UNKNOWN (B UNKNOWN, P19). Span stays 1989–1991. Chart-moving NO (still unplottable; B UNKNOWN). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: berners-lee-tim
   display_name: "Tim Berners-Lee"
@@ -193,6 +194,19 @@ lane_b:
   reading: "Atheist UU; reason-compatible liberal religion; inventing engineer not natural-philosopher for B."
   notes: "Lane B separate from Lane A axis scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: mixed
+    detail: "He joined a Unitarian Universalist congregation after 1994, and in a 2017 interview said, 'I'm atheist and Unitarian Universalist.'"
+    cites: [{source: S4, locator: "closing: Do you believe in God?"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The interview states both atheist and Unitarian Universalist, and S2 records the congregation he joined. Both are the public stance."
+    cites: [{source: S4, locator: "closing: Do you believe in God?"}]
 institutions:
   - {value: "CERN", role: "software engineer", years: "1980; 1984–1994", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "CERN paragraph"}, {source: S7, locator: "workplaces"}], how_known: "Two sources."}
   - {value: "Massachusetts Institute of Technology / W3C", role: "W3C Director; CSAIL", years: "1994–", kind: university, certainty: 0.7, cites: [{source: S7, locator: "workplaces"}, {source: S6, locator: "Roles at MIT"}], how_known: "Wikipedia and own FAQ."}

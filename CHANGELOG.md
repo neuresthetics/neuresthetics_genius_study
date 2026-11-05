@@ -1,6 +1,13 @@
 # Changelog
 
 
+## 2026-11-05 — religion conformity on person records (Grok Bot)
+
+- Schema 1.5 adds `religion_conformity`: three Lane A fields (stated affiliation, documented conformity pressure, documented practice gap). Not LIO axes. Not inner belief. `unknown` when the sources are thin.
+- The fear-of-conformity hypothesis is Lane B only, in CODING_GUIDE §2, with a stated falsifier. Lane A frequencies do not test it.
+- Every existing person file carries the block. A–E scores, `mid_basin`, and `primary_system` are unchanged. No new people. Existing charts are not regenerated.
+- Schema 1.4 is left unused on this branch so open PRs #6 (`primary_domain`) and #7 (`contribution.era_bucket`) can keep that number.
+
 ## 2026-10-15 — systems charts (Grok Bot)
 
 - Added figures/systems_cause_locus.png and figures/people_systems_overlay.png, made by scripts/make_figures.py and approved by Jason. Margin strips and a box show systems with an axis not settled, there are no range bars, and readable names are used. Both are in the README under the people chart.

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #5). P47 source_quality on every source. Primary: The Chemical Basis of Morphogenesis (Phil. Trans. B 1952; new S10) — 'certain well-known physical laws are sufficient' — second independent written_profession for B_cause; support single → corroborated (S1+S10); certainty stays 0.7 (named alt 4). A_locus stays BELOW_THRESHOLD (P19/P38): no first-person God denial found in Mind 1950, Nature of Spirit, Hodges short bio/IWM/SEP, Humanists UK, or searchable Enigma excerpts; named alt A 4 @ 0.5 scholarly_reconstruction on Hodges. Childhood/heritage: Sara Turing memoir (Cambridge 2012 excerpt; new S11) fills baptism (St Saviour's, 7 July 1912) and Church of England heritage; Natural Wonders added to early reading. Morphogenesis contribution/major_work cites raised with S10. D_authority support: single. Chart: still unplotted (A BELOW). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Copeland, first page). Worldview from 'Computing Machinery and Intelligence' (Mind, 1950), read on the offprint scan in the Turing Digital Archive (King's College Cambridge, AMT/B/19; pp. 443, 444 and 453 checked on the page images), and from the 1932 manuscript 'Nature of Spirit' (AMT/C/29, facsimile), with Hodges' SEP entry and Scrapbook page for context. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 (0.7), D 4 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. primary_system BELOW_THRESHOLD → ATHE 0.5, scholarly_reconstruction, on Hodges (new sources S8, S9) (P14); Mind p. 443 statement axes [A_locus, E_scope] → [A_locus, C_ledger] (P7); C and E notes rewritten (still BELOW_THRESHOLD), A note gives the evidence (P19); Nature of Spirit kind notebook or diary → unpublished manuscript (P18); single-source 1.0 fields → 0.7 (P15) (native_name, first_lasting_contribution_year, era_bucket, imitation game item, major_works/0, schooling/2, working_years, major_work_period, age_at_first_lasting_contribution, King's and Princeton, Church and Newman); region_of_birth, region_of_work, sex keep 1.0 with a Britannica cite; Hazlehurst stage grammar or secondary school → elementary school (P21); Morcom quotation marked primary check pending (P26); first_evidence_of_lio_type_views checked against the LIO-type view anchor (P27), unchanged. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: turing-alan
   display_name: "Alan Turing"
@@ -215,6 +216,18 @@ lane_b:
   reading: "As belief, not finding: form present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Mind (1950) rejects a theological objection to machines. He does not say atheist. A biographer's adjective is not used. Christening is infant."
+    cites: [{source: S1, locator: "p. 443"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "King's College, Cambridge", role: "student; fellow from 1935", years: "1931–", kind: university, certainty: 0.7, cites: [{source: S3, locator: "Biography (1931, 1935)"}], how_known: "MacTutor alone, so 0.7 under the single-source rule (P15)."}
   - {value: "Princeton University", role: "graduate student under Church", years: "1936–1938", kind: university, certainty: 0.7, cites: [{source: S3, locator: "Biography (Princeton)"}], how_known: "MacTutor alone, so 0.7 under the single-source rule (P15)."}

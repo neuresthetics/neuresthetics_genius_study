@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #183, F 3, rank 194). Hunt: firm AGNOS from interviews/essays near span; leave B UNKNOWN; fiction/character speech not first-person (P42); do not force plot. Near-span check: Latitud Feb 1945 'Contesta' (S8 reprint path) is literary ambition only (Redentor/Judas as destiny figures — not scored). New: Don Bell Montreal CBC interview 1968 (S5 AGNI/National Post text) — self-described agnostic 'as Spencer was', 'all things are possible', 'nothing should be affirmed, nothing denied'. Re-checked Shenker NYT 1971 (S2). Mundo Argentino 11 July 1956 '¿Cree usted en Dios?' (S6; Textos Recobrados reprint via unofficial web) — denies personal/trinitarian judge-God; affirms moral/mental purpose in the universe (DEISM/process lead, not used to recode primary). primary_system AGNOS 0.5→0.7 recorded_interview, support corroborated (S5+S2); named alts DEISM (1956) and ATHE (1978 Hildebrandt lead via S7). A stays BELOW_THRESHOLD (P20 suspension; 1956 personal-God denial = P38 A 4 @0.5 lead only — do not force plot). B UNKNOWN (not a scientist; 1956 'orden en el universo' not scored as P16). mid BELOW; not plotted. Dual bio P50; P47 source_quality S1–S8; heritage mother Catholic / English Protestant grandmother. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): the 1941 alternative is now cited to the Borges Center chronology (S4), not the auditor's note."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): verified_against relabelled 'newspaper interview' (new P21 value); 1941 (El jardín de senderos que se bifurcan) added as an alternative first-lasting year, age 42."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 194). Sources: Britannica, signed by Emir Rodriguez Monegal (read in full), and Israel Shenker's New York Times interview-profile (6 April 1971, read in full). Lasting work: the fantastic stories collected in Ficciones (1944), 'his best fantastic stories'; his works 'now considered classics of 20th-century literature'; span 1944, age 45. Own words, quoted by Shenker: 'Being an agnostic means all things are possible, even God, even the Holy Trinity'; he says the Lord's Prayer nightly for his mother, 'I don't know whether there's anybody at the other end of the line'. 1971, after the span (P20 cap 0.5). primary_system AGNOS 0.5 (recorded_interview), alt BELOW_THRESHOLD; A BELOW_THRESHOLD ('all things are possible, even God'); not a scientist, B UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: borges-jorge-luis
   display_name: "Jorge Luis Borges"
@@ -169,6 +170,19 @@ lane_b:
   reading: "No chart-moving A/B change. Do not derive B from ficciones cosmology."
   notes: "P42: character speech and metafiction out."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Public interviews: 'I am, as Spencer was, an agnostic' (1968), and 'Being an agnostic means all things are possible' (1971)."
+    cites: [{source: S5, locator: "supernaturalist / agnostic passage"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: mixed
+    evidence: "The 1968 and 1971 interviews say agnostic and that nothing should be affirmed; the 1956 survey affirms a moral purpose he calls God."
+    cites: [{source: S6, locator: "¿Cree usted en Dios?"}]
 institutions:
   - {value: "National Library of Argentina", role: "director", years: "1955", kind: "government or state body", certainty: 0.5, cites: [{source: S1, locator: "Life"}, {source: S7, locator: "career"}], how_known: "Britannica: from 1955; end year not settled this pass."}
 collaborators:

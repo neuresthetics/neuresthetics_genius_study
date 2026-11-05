@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #181, F 3, rank 192). Hunt: in-span first-person God/nature statements; keep silence if none; mental-health/delusion material not worldview unless clear lasting endorsement in public record during working span. Checked: Nobel autobiography re-read (Zarathustra/cosmos = rationality vs madness, not belief; post-span 1995); PBS American Experience interview (delusional 'divine revelation' / messenger of Allah recounted as past madness — not lasting belief; illness from 1959, after span 1950–1952); Wikipedia EN dual bio (baptized Episcopal; Nasar paraphrase 'announced that he was an atheist' / balked at Catholic wedding — reported speech, not own published profession; not scored); MacTutor bio. No first-person in-span God or nature-order line found (P19 silence). primary_system / A / B stay UNKNOWN; mid UNKNOWN; not plotted. Dual bio P50; P47 source_quality; schooling stages; early_mathematics + reading from S2. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): Real Algebraic Manifolds (1952, 'seminal', S1) added as lasting; span 1950–1952; the January 1950 PNAS note mentioned (start year unchanged)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 192). Sources: Britannica (scholars edition, read in full) and his Nobel autobiography (Les Prix Nobel 1994, read in full). Lasting work: the Nash bargaining solution ('The Bargaining Problem', Econometrica, April 1950) and the Nash equilibrium (thesis 'Non-Cooperative Games', Annals of Mathematics, September 1951), 'Nash thus established the mathematical principles of game theory'; dated by publication (P30 #1). Span 1950–1952 (Real Algebraic Manifolds, November 1952, added as lasting on the AA4 audit), age 22. The 1950 PNAS note on equilibrium points is not in the sources read. Mathematician: game theory makes no testable claim about natural systems (P30), so not a scientist; B UNKNOWN. No profession read: the autobiography's Zarathustra passage is about rationality and madness, not belief. Worldview all UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: nash-john
   display_name: "John Nash"
@@ -124,6 +125,18 @@ lane_b:
   reading: "Do not invent A or primary_system from Nasar paraphrase or from delusional content. Lane B only."
   notes: "Illness narratives are not Lane A codes."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Checked Nobel autobiography (S2), PBS interview (S5), and Wikipedia notes (S4): no adult affiliation. Episcopal baptism is childhood only."
+    cites: [{source: S2, locator: "Biographical"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S1, S2, S4, and S5 do not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Massachusetts Institute of Technology", role: "mathematics faculty (C.L.E. Moore Instructor, then faculty)", years: "1951–1959", kind: "university", certainty: 0.7, cites: [{source: S2, locator: "paragraph on M.I.T., 1951–1959"}, {source: S4, locator: "Personal life"}], how_known: "Autobiography; Wikipedia."}
   - {value: "Princeton University", role: "PhD student; later senior research mathematician", years: "1948–1950; 1990s–2015", kind: "university", certainty: 0.5, cites: [{source: S1, locator: "para. 2"}, {source: S2, locator: "Princeton"}, {source: S4, locator: "career"}], how_known: "Britannica; autobiography; Wikipedia — later appointment years less precise in sources read."}

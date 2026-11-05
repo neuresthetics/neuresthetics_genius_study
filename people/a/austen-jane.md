@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 106). Basics from Britannica (Brian C. Southam, signed; body only, read live). Worldview from her letters to Fanny Knight in the Brabourne edition (1884), read in the Republic of Pemberley's web transcription (unofficial web copy, 0.7 cap). Not a scientist. primary_system CHRIST (0.7, consistent private letters); A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. The three prayers attributed to her are context only (attribution not settled, P42). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: AU4 FAIL, AU5 WEAKEN; ruling S3, v8's call on the auditor's advice). The three prayers now count as her words under P42 (S3, Stovel: 'It seems clear that Jane Austen composed the prayers'), at 0.5: undated manuscripts copied by others, attributed by one scholar. A BELOW_THRESHOLD -> 0 at 0.5, alternative 1. 'Thou art every where present' now quoted from a source read (S5, a web transcription of the prayers). Henry Austen's 1818 remark added as context for CHRIST. B stays UNKNOWN (P16), so mid_basin stays UNKNOWN and she stays unplotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (Austen second blind run at 754bb24: prayer treatment holds; AU-P5 WEAKEN; ruling RQ-AU1, v8's call on the auditor's advice). B UNKNOWN -> BELOW_THRESHOLD, named reading 1 at 0.5 (her own petitions for physical protection are not a statement about nature under P16); mid_basin UNKNOWN -> BELOW_THRESHOLD; still not plotted. 'important but not decisive' marked as the coder's translation of S5's Italian summary; 'accepted by most editors; doubted by Todd and Bree'; the disputed hand of the inscription flagged; the A basis label explained (P18 private-document row). New statement: prayer I, fourth paragraph."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #105 / F4 rank 106). Goals: lift A if letters corroborate omnipresence; B unlikely (novelist, P16); keep honest unplotted if no P16 B. Dual bio: Britannica (S1) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S7. Brabourne 1884 IA OCR vols 1–2 (S2 upgraded from Pemberley-only to archive scan OCR of same edition) — added 1808 'May the Almighty sustain you all' / 'God be praised' (Castle Square, 13 Oct), 1809 'I do not like the Evangelicals' + 'Christian with the hero' / 'Thank heaven' (Sir John Moore), 1814 Sherlock sermons preference, 1816 Cooper sermons / Bible Society coolness; none states omnipresence or a P16 nature-order claim. Omnipresence remains prayer-only (alt 1); letters are conventional piety / CHRIST context, not an A lift past P42 0.5. Todd and Bree Later Manuscripts (via S5 headnote + Cambridge abstract S7) keep attribution doubt → prayers stay P42 @0.5. A stays 0 @0.5 alt 1 support corroborated (prayer sources agree; letters do not lift); B stays BELOW_THRESHOLD (RQ-AU1); mid BELOW; not plotted. Chart-moving NO. Le Faye / Chapman and Martha Lloyd 'improving in Religion' unread. No fallacy_catalog. No figures refresh. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: austen-jane
   display_name: "Jane Austen"
@@ -248,6 +249,19 @@ lane_b:
   reading: "An Anglican novelist: CHRIST from letters; A from attributed prayers at P42 0.5; no P16 nature-order statement — off the plotted chart."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "Private letters of 1814 speak of 'our ideas of the Christian religion.' The Church of England post in the file is her father's rectorship."
+    cites: [{source: S2, locator: "letter LXXXI, 30 November 1814"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "Those letters claim a shared Christian religion and praise sermons. Dislike of some Evangelicals stays inside that discussion."
+    cites: [{source: S2, locator: "letter LXXX, 18 November 1814"}]
 institutions: []
 collaborators:
   - {value: "Henry Austen", relation: family, note: "brother; go-between with her publishers, announced her authorship", certainty: 0.7, cites: [{source: S1, locator: "'Move to Chawton'; 'Unfinished works and death'"}], how_known: "Britannica."}

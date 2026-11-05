@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor. Religion from a colleague's recollection, Seeger, 'Von Neumann, Jewish Catholic' (PSCF 40, 1988): nominal Catholic after his first marriage and Catholic instruction in his last illness. No statement of his own on religion was read, and no recorded interview of him on religion was found (the P8 interview route is unavailable). primary_system BELOW_THRESHOLD. B 4 (0.5) from working science; A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). #352: full_name now follows MacTutor ('born János von Neumann'); the earlier 'born János Neumann' is kept only as a marked inference from the 1913 title. Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #47, F5 rank 47). Needs: A BELOW_THRESHOLD; B BELOW_THRESHOLD. P47 source_quality on every source. New: S4 Britannica (Poundstone; dual-source birth/death/basics); S5 Nicholas A. Vonneuman, John von Neumann as Seen by His Brother (OCR §6.3: family converted to Catholicism 1929 'for sake of convenience, not conviction'; deathbed legends 'not quite as simple'); S6 von Neumann, The Mathematician (1947; MacTutor Extras + Works of the Mind; primary / own words on math–natural-science link); S7 Bochner NAS Biographical Memoir 1958 (baptized Roman Catholic 1930; 'died in the faith'). B_cause BELOW_THRESHOLD → 3 @ 0.5 inference_from_work, alt 4 named (P30 scientist + P35; working QM/hydrodynamics); support corroborated (S1+S2+S4; P48). A_locus stays BELOW_THRESHOLD (no adult-working locus of his own; P19; Macrae God/Pascal lines remain secondary/deathbed-adjacent, unread in Macrae). primary_system stays BELOW_THRESHOLD (Nicholas not-conviction + Seeger 'some claim agnostic' + Bochner membership still leave no adult-working code at ≥0.5; AGNOS/CHRIST remain candidates; AGNOS stub flagged). Baptism filled (Bochner 1930; Nicholas 1929 conversion — year alt named P25). working_years synced to major_work_period 1923–1955 (P30 addendum). Chart-moving NO (A BELOW; B faded @0.5). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: von-neumann-john
   display_name: "John von Neumann"
@@ -150,6 +151,19 @@ lane_b:
   reading: "As belief, not finding: form present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Baptized Roman Catholic in 1930 (family conversion dated 1929 or 1930). Catholic burial at his death. No words of his on religion are in the file."
+    cites: [{source: S7, locator: "baptism paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "Catholic burial and reported last-illness instruction match the 1930 baptism. No contrary membership is in the file."
+    cites: [{source: S2, locator: "last paragraph"}]
 institutions:
   - {value: "Institute for Advanced Study, Princeton", role: "one of the original six mathematics professors", years: "1933–1957", kind: "research institute", certainty: 1.0, cites: [{source: S1, locator: "Biography (1933)"}, {source: S2, locator: "paragraph 3"}, {source: S4, locator: "Princeton, 1930–42"}], how_known: "Three sources. Kind 'research institute' (P21)."}
   - {value: "Los Alamos Scientific Laboratory", role: consultant, years: "1943–1955", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "Biography (war work)"}, {source: S4, locator: "World War II"}], how_known: "MacTutor and Britannica."}

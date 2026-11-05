@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 207). Sources: SEP 'Parmenides' (John Palmer, read in full) and Britannica 'Eleaticism' (signed by Starkey and Calogero, scholars edition, read in part). Born about 515 BCE, inferred from Plato's Parmenides (S1); 'active during the early to mid-fifth century BCE' (S1). Lasting work: the poem On Nature, 'founder of metaphysics or ontology' (S1); undated, so first-lasting year, span and age UNKNOWN (P39). Era UNKNOWN, candidate -500 to 499 (AA7 audit, v8's call on the auditor's advice): Diogenes Laertius 9.23 (S4) says 'He flourished in the 69th Olympiad' (504–501 BCE), which implies birth about 540 BCE and an adult life across the -500 edge (P39 strict; Pythagoras and Heraclitus precedent). Worldview: the goddess of the proem is the poem's narrator-device; SEP: 'Parmenides himself never in the extant fragments calls What Is divine or otherwise suggests that it is a god'. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #194/228, F3 rank 207). Goals: scholarly warrant for A/B with reconstruction labels; keep silence if none; do not force plot. Re-read SEP Palmer (S1; substantive revision 4 Mar 2025): What Is never called divine; ontology distinct from theology; goddess = proem device; Way of Opinion cosmology not a scored scientist account. Dual bio Wikipedia EN (S5, P50) + Britannica Parmenides (S6): Elea, ~515 vs ~540 birth, undated poem agree. IEP (S7) corroborates A-D Paradox / goddess literary frame — same interpretive family as Palmer, used for dual overview not P48 independence on divinity. Bryan 2021 'The Non-Divinity of Parmenides' What-is' (S8): scholarly reconstruction arguing poem's gods are anthropomorphic agents of change incompatible with What Is; divinity not a necessary property of What Is — corroborates Palmer against divine-What-Is readings (P49 labeled). Fr. 12 daimōn / Opinion cosmology unused for B (P30; standing rule). Goddess voice careful (P42) — not first-person creed. primary_system UNKNOWN→BELOW_THRESHOLD (HELLEN literary only; IDEAL/PLATO later reception; divine-What-Is reconstructions rejected by S1+S8). A stays UNKNOWN (no locus to score; silence corroborated). B UNKNOWN; mid UNKNOWN. Not plotted. Chart-moving NO. P47 source_quality S1–S8. No fallacy_catalog; no figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: parmenides
   display_name: "Parmenides"
@@ -146,6 +147,18 @@ lane_b:
   reading: "No scored Lane A axes. Do not invent B from Opinion cosmology or from the sphere image."
   notes: "P42: goddess voice careful. Opinion cosmology out of scientist B."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The poem does not call What Is divine (S1). The Velia Apollo Oulios inscription is adult cult context, not a stated membership."
+    cites: [{source: S1, locator: "1. Life and Writings"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions: []
 collaborators:
   - {value: "Zeno of Elea", relation: "student or assistant", note: "younger associate", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}, {source: S2, locator: "Introduction"}, {source: S5, locator: "lede"}], how_known: "SEP; Britannica; Wikipedia."}

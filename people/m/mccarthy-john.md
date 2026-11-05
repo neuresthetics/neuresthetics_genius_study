@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #179, F 3, rank 190). Hunt: in-span A corroboration; B only if P16 nature-order. No 1955–1960 religion/nature own words found. Post-span own-voice atheist line corroborated across independent pages (all still P20-capped at 0.5): Usenet saying 1992 (S5); Bush-vote essay Dec 2004 'I am an atheist' (S6); commentary Wed Mar 7 2007 'By the way I'm an atheist' + werewolf criterion (S6; Wikipedia's '2003' date is wrong — Henig NYT piece is Mar 2007); personal.html Dawkins 'come out' text present by Jan 2007 Wayback, absent Apr 2003–2006 captures (S3); Scientific Forms of the Religious Hypothesis 6 Apr 2008 'atheist rather than an agnostic' (S7). Memorial Church atheist speech remains undated secondary (S8 Wikipedia). Dual bio P50 Nilsson+Wikipedia. P47 source_quality on S1–S8. A support single→corroborated; A stays 4 @0.5 (P20); primary ATHE @0.5 alt AGNOS unchanged; B stays UNKNOWN (not scientist as listed P30/P33; RQ-AA3-1 open; no in-span P16; post-span 'I'm a Darwinian' / no-evidence-for-intervention is not scored as B). mid BELOW_THRESHOLD unchanged; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 190). Sources: Nils Nilsson's National Academy of Sciences Biographical Memoir (2012, read in full) and Stanford Computer Science's memorial notice. Lasting work: the term and field 'artificial intelligence', named in the Dartmouth proposal 'submitted to the Rockefeller Foundation in August 1955' (formal submission, P30 #1), and LISP, 'the language of choice for AI research', whose 1960 paper 'established the theoretical foundations'; span 1955–1960, age 28. Own words: his Stanford home page, 'I mention that I am indeed an atheist ... the evidence on the god question is in about the same state as the evidence on the werewolf question' (also quoted by Nilsson). Undated; the reference to Dawkins's 'come out' campaign places it decades after the span, so P20 caps it at 0.5. primary_system ATHE 0.5 (written_profession), alt AGNOS (he disclaims proof); A 4 at 0.5, alt BELOW_THRESHOLD; not a scientist as listed (P30, P33: a term, a programming language and logic-based AI are not testable claims about nature), B UNKNOWN, and scientist status is ruling question RQ-AA3-1 (not result-changing unless B is scored); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mccarthy-john
   display_name: "John McCarthy"
@@ -192,6 +193,19 @@ lane_b:
   reading: "Logic/AI formalisms are tools for intelligence, not a Lane B cosmology of nature. Do not invent B from LISP or situation calculus."
   notes: "RQ-AA3-1: scientist-as-listed status for P30/B remains open."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Public Stanford pages, not a private letter: 'I am indeed an atheist' and 'I count myself as an atheist rather than an agnostic.'"
+    cites: [{source: S3, locator: "closing paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The same atheist self-description is repeated in public pages from 1992 through 2008. No church membership is in the file."
+    cites: [{source: S7, locator: "closing paragraph"}]
 institutions:
   - {value: "Stanford University", role: "professor; founder of the Stanford AI Laboratory", years: "1962–2011", kind: "university", certainty: 0.7, cites: [{source: S2, locator: "para. 3"}, {source: S8, locator: "Academic career"}], how_known: "Stanford + Wikipedia; end year his death."}
   - {value: "Massachusetts Institute of Technology", role: "faculty; co-founded the MIT AI Project", years: "1958–1962", kind: "university", certainty: 0.7, cites: [{source: S2, locator: "para. 3"}, {source: S8, locator: "Academic career"}], how_known: "Stanford + Wikipedia."}

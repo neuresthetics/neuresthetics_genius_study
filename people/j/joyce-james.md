@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1 2026-10-24)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages; Ellmann 1982 PDF; Letters I IA OCR"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 104). Basics from Britannica (James Stephen Atherton, signed; body pages opening, 'Ulysses' and 'Finnegans Wake', read live). Worldview from his letters to Nora Barnacle (29 August 1904) and to Stanislaus Joyce (March 1907), quoted from Ellmann's editions on the RICORSO site, the 1904 passage also in Britannica's body; private letters, secondary quotations, both before the working years (P20 cap 0.5). Not a scientist (P30). primary_system and A BELOW_THRESHOLD (rejection of Christianity and the Church; no statement on God); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). The pre-span letters now cite P31 (no documented change of view between them and the span; source ceiling 0.7), not P20's post-span cap, with 0.5 kept as the coder's call for indirectness (JO4). The in-span letters on the RICORSO page (to Harriet Shaw Weaver, February 1920, 9 October 1923, January 1925, 21 May 1926) were read and are cited; none states a view of God. No value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #103 / F4 rank 104). Goals: hunt in-span God/existence statements; keep A honest if still no locus; B likely UNKNOWN (P16 novelist). Dual bio Wikipedia EN James Joyce (S4, P50). P47 source_quality on S1–S6. Primary check: Letters of James Joyce vol. I ed. Gilbert (Viking 1957) IA OCR (S6) — Weaver 25 Feb 1920 (purgatory joke), 9 Oct 1923 (metempsychosis/Vico), Jan 1925 (Bruno dualism for Work in Progress), 21 May 1926 ('I would not pay overmuch attention to these theories') — none states a view of God (confirms S2). Ellmann James Joyce (1982 rev.; S5 monoskop PDF): Morris L. Ernst interview 'That's for the Church to say' (secondary via Ernst The Best Is Yet 1945 p. 118); Zurich party reply to cosmological proof ('reciprocal destruction') is reported speech (cannot score alone). No clear God locus; no P16 nature-order own-voice. primary_system and A stay BELOW_THRESHOLD; B stays UNKNOWN; mid_basin UNKNOWN. Not plotted. Chart-moving NO. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: joyce-james
   display_name: "James Joyce"
@@ -167,6 +168,19 @@ lane_b:
   reading: "An apostate from Catholicism with no stated replacement and no scored God locus."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Private letters, 1904 and 1907: he had left the Catholic Church, and he wrote that his mind rejects Christianity and religious doctrines."
+    cites: [{source: S2, locator: "letter to Nora Barnacle, 29 Aug. 1904"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The letters record his exit. They do not document a legal sanction for that exit."
+  practice_gap:
+    gap: aligned
+    evidence: "The letters are the adult stance. The later line 'That's for the Church to say' does not restore membership."
+    cites: [{source: S2, locator: "letter to Stanislaus Joyce, March 1907"}]
 institutions:
   - {value: "Berlitz School, Pola (Austria-Hungary)", role: "English teacher", years: "1904–1905", kind: employer, certainty: 0.5, cites: [{source: S1, locator: "'Early travels and works'"}], how_known: "Britannica; moved to Trieste in 1905 (end year the coder's reading)."}
   - {value: "Bank in Rome", role: clerk, years: "1906–1907", kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "'Early travels and works'"}], how_known: "Britannica ('In 1906–07, for eight months')."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from the Author's Preface of the Algebra in Rosen's 1831 translation (archive.org scan, pp. 1–4), with Rosen's own doubt about the preface noted. Works dated only 'after 813', so first-lasting year, span and age UNKNOWN (P12). primary_system ISLAM 0.7 (written_profession; alternative BELOW_THRESHOLD as a conventional formula); A_locus 0 (0.7); C_ledger 1 (0.5); B BELOW_THRESHOLD (coder's call); D BELOW_THRESHOLD; E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #11 A_locus 0 certainty 0.7 → 0.5 (the p. 4 line follows Q 9:129). #12 C_ledger 1 at 0.5 re-anchored on pp. 3–4 (mercy through others' prayers), with p. 1 marked contested (Notes, pp. 175–176); p. 3–4 statement added. Statements: verified_against 'primary facsimile' → 'scholarly edition'; copyist's frame and the 1342 manuscript date added to the p. 1 context. mid_basin unchanged (BELOW_THRESHOLD)."}
 
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #4). P47 source_quality on every source. Re-read MacTutor; added S5 Biographical Encyclopedia of Astronomers (Brentjes 2007) and S6 Rashed French Algebra preface (hist-math.fr). A_locus 0: support single → corroborated (S3+S1 Toomer+S6 cross-check); certainty stays 0.5 (Q 9:129 formula). B_cause BELOW_THRESHOLD → 3 @ 0.5 inference_from_work corroborated (S1+S5; P30/P35; Kepler precedent that astrological tables do not block B from mathematical astronomy). C_ledger 1 @ 0.5 → BELOW_THRESHOLD (Rosen mercy-through-prayers reading not supported by modern French preface). E UNKNOWN → BELOW_THRESHOLD (scientist, no statement; P19). mid_basin still BELOW_THRESHOLD (A and B at 0.5). Chart: unplotted → faded filled. Native name filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: al-khwarizmi
   display_name: "Al-Khwarizmi"
@@ -200,6 +201,17 @@ lane_b:
   reading: "As belief, not finding: form partly, circle absent; A 0 and B 3 both only at 0.5, so no mid-basin / LIO-type pass."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The preface can be read as a conventional formula. Not coded as an adult Muslim profession."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "House of Wisdom (Bayt al-Ḥikma), Baghdad", role: scholar, kind: "research institute", certainty: 1.0, cites: [{source: S1, locator: "Biography"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "Caliph al-Ma'mun", role: "patron; dedicatee of the Algebra and the astronomy", years: "813–", kind: "patron or funder", certainty: 1.0, cites: [{source: S1, locator: "Biography"}, {source: S3, locator: "Author's Preface, p. 3"}], how_known: "MacTutor and his own preface."}

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Claims of Science 1851 full text in Studies in Logic and Probability (IA dli.scoerat.5189… djvu.txt) as S6. Physical universe under 'fixed and invariable laws'; 'chance and accident have no place'; 'All its successions are uniform; from its settled order, no deviation is either actual or possible'; 'uniformity and universality of the laws of nature'. Add S6 to B value + alt 4. B support single→corroborated. A already corroborated → dark hollow→filled. B stays 3@0.7 (Claims strengthens alt 4). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated via Claims of Science 1851 (S5). Wikiquote-verified own-voice 'moral Governor of the world' / 'Supreme Intelligent Cause' agree with Laws of Thought ch. XIII Governor/intelligent-cause (S2). B stays single (Claims uniformity language not recovered as page text; IA Studies borrow-only). Cues stay dark hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). WEAKEN on CHRIST: p. 424 ('profess an intellectual allegiance to the Father of Lights') is others' profession, not his; his own p. 159 'Author of Nature' fits CHRIST and DEISM equally, so primary_system CHRIST 0.5 -> BELOW_THRESHOLD (leads CHRIST, DEISM). A 1 at 0.5 now rests on p. 159 alone. Notes say only the OCR was read. RQ-Z9-2: no (algebra of logic is not a theory of mind). Still plotted at A 1 / B 3."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 172). Basics from MacTutor (O'Connor and Robertson). Own words in An Investigation of the Laws of Thought (1854; archive.org library scan, OCR read), within the span: 'all that we know of the uniformity of Nature, and all that we believe of the immutable constancy of the Author of Nature' (ch. XI, p. 159); the closing page contrasts those who acknowledge 'nothing higher than ... collective humanity' with those who 'profess an intellectual allegiance to the Father of Lights' (ch. XXII, p. 424). Not a scientist (logic and algebra; P30). primary_system CHRIST (0.5, alt DEISM); A 1 (0.5, alt 0); B 3 (0.5, alt 4) from his own statement on nature (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A and B at 0.5). Span 1854, age 39. Plotted (A 1, B 3). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: boole-george
   display_name: "George Boole"
@@ -191,6 +192,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Laws of Thought argues from natural religion to an intelligent cause and a moral Governor, with revelation set apart. No adult church is stated."
+    cites: [{source: S2, locator: "ch. XIII, pp. 217–218"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "Chapter XIII states that natural-religion claim. No adult text in the file withdraws it."
+    cites: [{source: S2, locator: "ch. XIII, pp. 217–218"}]
 institutions:
   - {value: "Queen's College, Cork", role: "professor of mathematics", years: "1849–1864", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor: took up the post in November (1849) and taught there for the rest of his life."}
 collaborators:

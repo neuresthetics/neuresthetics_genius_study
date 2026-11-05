@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #188/228, F 3, rank 200): corroborate B. New S7 — Talk at Memorial Services for Elizabeth Swingle (27 Sep 1943; OSU Day-by-Day / Speeches 1943s.4): 'laws of nature… cannot be broken, but must pursue their inexorable course' (in-span). B_cause support single → corroborated (S3+S7); value/certainty stay 4 @0.7. A already corroborated (S3+S4); support labels written (P48). P47 source_quality on S1–S7. first_evidence_of_lio_type_views → 1943 Swingle (was 1961 speech). Chart: dark hollow → dark filled when figures next refresh. primary SECHUM unchanged (P20/P31 post-span humanism). No fallacy_catalog; figures not refreshed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1927–1954 → 1931–1951; worldview.working_years 1922–1994 → 1931–1951, equal to the span (P30 addendum f); 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 7 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: pauling-linus
   display_name: "Linus Pauling"
@@ -226,6 +227,19 @@ lane_b:
   reading: "As belief, not finding: form partly present (structural rules), circle absent. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Public 1961 speech: humanism rejects the supernaturalism of revealed religions (S3). Private letter 23 Jan 1963: 'I am a Humanist' and 'I do not believe in God' (S4)."
+    cites: [{source: S3, locator: "speech, paragraph on humanism"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: mixed
+    evidence: "S3 and S4 match the humanist stance. The 1963 letter also records 1962 membership in the First Unitarian Church of Los Angeles, which he says is not Christian (S4)."
+    cites: [{source: S4, locator: "letter, paragraph 4"}]
 institutions:
   - {value: "California Institute of Technology", role: "professor; chairman of the Division of Chemistry and Chemical Engineering and director of the Gates and Crellin laboratories (1936–1958)", years: "1922–1963", kind: university, certainty: 0.7, cites: [{source: S2, locator: "paragraph 4"}, {source: S1, locator: "'Elucidation of molecular structures'"}], how_known: "Two sources; the end year is not on the pages read."}
   - {value: "American Humanist Association", role: "member; Humanist of the Year 1961", years: "1961–", kind: other, certainty: 1.0, cites: [{source: S4, locator: "letter, paragraph 4"}, {source: S2, locator: "paragraph 5"}], how_known: "Two sources."}

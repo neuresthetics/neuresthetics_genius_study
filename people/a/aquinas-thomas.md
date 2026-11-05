@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 10
+  schema_version: "1.5"
+  record_version: 11
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #132, F4 rank 135). Polish only: P47 source_quality on S1–S8; P48 support corroborated written on A–E (E cites gained S6 Benziger print already used for I q. 22 / q. 105 statements — no score change); P50 Wikipedia EN (S8) dual bio agrees birth Roccasecca c. 1225 / death Fossanova 1274-03-07 with Britannica. Parents named Landulf of Aquino and Theodora (Galluccio / of Teano) from S8 at 0.7. family_religious_practice filled from S1–S3 (Latin Catholic noble household; Benedictine oblation plan). baptism_or_initiation and childhood_catechism: UNKNOWN (no dated baptism or named catechism in sources). CLASS_THEISM @1.0; A 1 @1.0; B 3 @0.7; mid true @0.7 unchanged — already dark filled; not chart-moving. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from the Summa theologiae (English Dominican translation) and three reference sources. mid_basin UNKNOWN: B_cause scored 2, which the P4 test does not cover. Not reviewed."}
@@ -20,6 +20,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; kind lists (P21: research institute, school stage and run_by, scholarly edition); Britannica Top Questions cites removed (P26). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: aquinas-thomas
   display_name: "Thomas Aquinas"
@@ -351,6 +352,19 @@ lane_b:
   reading: "As belief, not finding: the form is present in part (a deductive, Aristotelian science of theology) and was learned through the university, with no circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Dominican friar and priest from 1244, and a master of theology. The Summa is his published theology."
+    cites: [{source: S3, locator: "§1.a"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The 1277 Paris condemnation came after his death; no dissent sanction during his working years is stated."
+  practice_gap:
+    gap: aligned
+    evidence: "The Dominican office and the Summa's 'this being we call God' match. No adult text in the file withdraws either."
+    cites: [{source: S4, locator: "I q. 2 a. 3 (fifth way)"}]
 institutions:
   - {value: "Abbey of Monte Cassino (Benedictine)", role: oblate, years: "c. 1230–1239", kind: "religious body", certainty: 1.0, cites: [{source: S1, locator: "Early years"}, {source: S3, locator: "§1.a"}], how_known: "Two sources."}
   - {value: "Order of Preachers (Dominicans)", role: "friar and priest", years: "1244–1274", kind: "religious body", certainty: 1.0, cites: [{source: S3, locator: "§1.a"}, {source: S2, locator: "§1.1"}], how_known: "Three sources."}

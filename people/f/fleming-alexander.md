@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #139): opened Nobel Lecture 'Penicillin' (11 Dec 1945) in primary PDF — chance observation / bacteriologist account; no God, church, faith, or providence. A stays UNKNOWN (V3: Oklahoma God-wanted-penicillin still Maurois second-hand; Christian Heritage 'I thank God' / Kipling-whisper lines remain unverified second-hand). primary_system stays UNKNOWN (CHRIST lead only). B stays 3 @0.5 (P35/P16: Nobel is discovery narrative, not explicit cause-order talk; alt 4 kept; support single→corroborated via S1+S6). mid UNKNOWN; still not plotted. P47 source_quality; P50 Wikipedia EN dual bio (birth/death agree with Britannica). 1929 paper PDF blocked this pass (still bibliographic). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit note: S5 now cites the PMC record (PMCID PMC2048009; the 1929 article has no PMID or DOI in PubMed Central; the 2001 WHO Bulletin reprint is PMID 11545337) instead of a search link. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z2 audit fixes (blind audit /workspace/genius_study_audit/gs_f70a593_Z2/run1/): Z2-42 (FAIL): primary_system and A_locus BELOW_THRESHOLD -> UNKNOWN (V3, as Kurosawa), keeping CHRIST and the Oklahoma story as leads; mid_basin -> UNKNOWN. Z2-44: span re-dated by first publications (P30 #1): 1922 (lysozyme, Proc. R. Soc. B) to 1929 (penicillin, Br. J. Exp. Pathol.), age 41; S4 and S5 added. Maurois citation gives the 1963 Penguin edition scanned. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z2, order P32: F 3, rank 143). Basics from Britannica (Kevin Brown, signed). Religion from Maurois's Life (trans. Hopkins, 1959; Penguin scan on archive.org): 'the young Scot, who never spoke about religion' (ch. 4); the remark 'I can only suppose that God wanted penicillin, and that that was His reason for creating Alexander Fleming' is a story 'current in Oklahoma' that 'he is said to have' made, and Maurois only infers it is 'probably true' (ch. 16): reported speech at second hand, below threshold. The ch. 9 epigraph 'God took care to hide that country ...' is Maurois's epigraph (coder's identification: Kipling's 'The Explorer'), not Fleming's words; the 'finger of God' line is from Pannett's funeral oration (Epilogue). A scientist (P30). Span 1921–1928. primary_system BELOW_THRESHOLD (lead: Presbyterian upbringing); A BELOW_THRESHOLD; B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: fleming-alexander
   display_name: "Alexander Fleming"
@@ -146,6 +147,18 @@ lane_b:
   reading: "No data for a circle score."
   notes: "Lane A and Lane B kept separate (P49)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Maurois writes that he 'never spoke about religion.' The 1945 Nobel lecture was checked and is silent. The penicillin-and-God lines are not his."
+    cites: [{source: S2, locator: "ch. 4"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "The biography and the Nobel lecture state no affiliation."
 institutions:
   - {value: "St Mary's Hospital, London (Inoculation Department; Wright-Fleming Institute)", role: "bacteriologist; professor of bacteriology", years: "1906–1955", kind: other, certainty: 0.5, cites: [{source: S1, locator: "text"}], how_known: "Britannica; years the coder's summary."}
 collaborators:

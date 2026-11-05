@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Württemberg Protestant) @0.7 (S9+S1; Christened; Tübinger Stift; lifelong Lutheran). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 98). Basics from Britannica (T. Malcolm Knox, signed; body through 'Early life', read live) and SEP 'Hegel' (Paul Redding, revision of 19 September 2025). Worldview from the Encyclopaedia (3rd ed. 1830) in Wallace's translations (Philosophy of Mind §§564–565, §573 Remark; Logic §16 Remark), Project Gutenberg web copies; the Lectures on the History of Philosophy (Michelet's compiled edition, Haldane trans.) as context. Not a scientist (P30). primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 (0.5, alt 2); B BELOW_THRESHOLD (alt 3); D 3 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1: 43 hold, 4 weaken, 1 fail). D quote now 'a cognition of the necessity' (H8); SEP locators §3 and §3.1.2 for the Science of Logic (H9). Notes: A gains a BELOW_THRESHOLD alternative for SEP's §2.3 non-metaphysical reading; the Michelet miracle passage cites the P42 addendum (reported speech); 'Göschel' flagged as the coder's identification of Wallace's 'C. F. G—l'. Jason's ruling (2026-10-18, RQ Q1): B BELOW_THRESHOLD → 2 at 0.5, alternative 3, from Encyclopaedia (1830) §248 with its Remark and §250, read in zeno.org's web copy of Werke vol. 9 (new S7, cap 0.7). Now plotted, faded, at A3/B2; mid_basin stays BELOW_THRESHOLD."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #97 / F4 rank 98). Re-read zeno.org German Encyclopaedia Nature §§248–250 (S7) and Mind §§564–565, §573 Remark (new S8); Wallace Mind/Logic retained. Dual bio Wikipedia (S9, P50). P47 source_quality on all sources. A stays 3 @0.5 corroborated (alt 2; alt BELOW for SEP §2.3 non-metaphysical); B stays 2 @0.5 corroborated (alt 3; Jason RQ Q1). Contested readings + post-span Enc. 1830 keep certainty at 0.5 (P20/P25); cannot lift to ≥0.7. mid_basin stays BELOW_THRESHOLD. Chart already faded filled — chart-moving NO. Draft deepen report in drafts/ (untracked)."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hegel-georg-wilhelm-friedrich
   display_name: "Georg Wilhelm Friedrich Hegel"
@@ -238,6 +239,17 @@ lane_b:
   reading: "A self-knowing absolute spirit realised in nature and human mind."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Michelet's compiled lectures have 'I am a Lutheran,' which the file does not treat as certain own wording. Christening and the Tübingen seminary are youth. Encyclopaedia God-language was not coded as a church."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent in his German posts."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Jena", role: "lecturer, then extraordinary professor", years: "1801–1806", kind: university, certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP (moved to Jena 1801; departed after the 1806 occupation)."}
   - {value: "Gymnasium, Nuremberg", role: "headmaster and philosophy teacher", years: "1808–1815", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP."}

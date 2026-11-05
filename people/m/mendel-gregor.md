@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #165, F 3, rank 174). Goals: open A if primary sermon/letters allow; corroborate CHRIST/B; do not force plot without A. Hunt: Orel/Zumkeller Easter Predigtskizze still only as secondary (Der Imkerfreund 1972 / Graney PDF / Wikiquote from 1970 Brno symposium; Folia Mendeliana cited on teaching sites but volumes unread). Undated; Richter/ldysinger place it in abbot/latter years → after 1865 span. Standing rule: do not score A from undated after-span secondary sermon quotes without primary check → A stays UNKNOWN. Lebenslauf 17 Apr 1850 (Mrs Hugo Iltis tr.; ldysinger / Orel quotations): 'His circumstances decided his vocational choice' — own words on economic entry (corroborates BELOW alt; does not reverse CHRIST office+faith reconstruction). Nägeli letters 1866–1873 (Piternick tr., Genetics 1950 / ESP PDF of Correns 1905): 3 July 1870 — Hieracium vs Pisum 'manifestation of a higher, more fundamental, law'; 27 Sept 1870 — Hieracium 'exception' to Gärtner pollen claim 'must find a natural explanation' (anomaly in florets, not a no-miracle / exceptionless-nature claim). B stays 3 @0.5 alt 4 (P35 not lifted to 4); basis → written_profession; support corroborated (Versuche + Nägeli). CHRIST stays @0.5 scholarly_reconstruction (Richter + office; Iltis economic motive now tied to Lebenslauf). E UNKNOWN→BELOW_THRESHOLD (P19 scientist). mid UNKNOWN (no A). Chart-moving NO. P47 source_quality; P48; P49; P50 Wikipedia. No fallacy_catalog; no figures/ (parent refreshes per Jason t223u). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (FAIL; v8's call on the auditor's advice, P30 #1): dated by the public readings of 8 February and 8 March 1865 (Sitzungs-Berichte of the same volume), not the 1866 printing. Span 1866 -> 1865, age 44 -> 43. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 174). Basics from Britannica (Robert Olby, signed; body, not the Top Questions box); the paper from its printing (Verhandlungen des naturforschenden Vereines in Brünn IV, für das Jahr 1865, Brünn 1866, pp. 3–47; Deutsches Textarchiv). Worldview: Augustinian friar, priest (ordained 1846) and abbot (1868); Richter (2015, journal article) says he 'was deeply rooted in his Christian faith' and cites surviving sermon outlines from his later years. The sermon text itself was seen only as a secondary quotation (Graney, Vatican Observatory, from Der Imkerfreund 1972), V3, so it is a lead, not a scoring statement. primary_system CHRIST (0.5, scholarly_reconstruction; alt BELOW_THRESHOLD); A UNKNOWN (lead 1); scientist (laws of heredity: testable claims about organisms), so B 3 at 0.5 from working science, alt 4 (P24, P35); C, D, E UNKNOWN; mid_basin UNKNOWN (A UNKNOWN). Span 1866, age 44. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mendel-gregor
   display_name: "Gregor Mendel"
@@ -170,6 +171,19 @@ lane_b:
   reading: "No data for geometric Lane B model beyond combinatorial ratios."
   notes: "Sermon Natur/Übernatur metaphor is Lane A lead material (unscored), not a geometric claim."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Augustinian priest, ordained in 1846; abbot of St Thomas at Altbrünn from 1868."
+    cites: [{source: S1, locator: "Education and early career"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "Ordination and the abbacy are the Catholic office. No adult text in the file rejects that office."
+    cites: [{source: S1, locator: "Education and early career"}]
 institutions:
   - {value: "Augustinian monastery of St Thomas, Altbrünn", role: "friar, priest; abbot from 1868", years: "1843–1884", kind: "religious body", certainty: 0.7, cites: [{source: S1, locator: "Education and early career"}, {source: S6, locator: "Academic career"}], how_known: "Two sources."}
   - {value: "Brünn Realschule", role: "teacher (physics / natural history)", years: "1854–1868", kind: "employer", certainty: 0.7, cites: [{source: S1, locator: "Education and early career"}, {source: S6, locator: "Academic career"}], how_known: "Two sources."}

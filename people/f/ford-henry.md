@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 100). Basics from Britannica (Carol W. Gelderman, signed; body through the 1914 wage, read live). Worldview from two interviews: William L. Stidger's syndicated interview (Universal Service, printed 4 February 1923; OCR page image text on historyworm.com) and the San Francisco Examiner interview of 26 August 1928 as quoted by The Henry Ford (museum blog). Inventor, not a scientist (P33). primary_system BELOW_THRESHOLD (candidates CHRIST, THEOS); A 1 (0.5, alt 0); B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit notes (gs_0b3023d_Q run 1). Masthead reasoning added: most likely Hearst's Washington Herald (Universal Service was Hearst's wire; 'Washington Radio Herald' items on the page; the Times-Herald dates from 1939); the running head's '1928' is a slip (4 February 1923 was a Sunday). Creation entry's 'reincarnation belief' aligned to the candidate code THEOS. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #99 / F4 rank 100). Needs: corroborate/lift A; hunt P16 B; inventor not scientist (P33). Dual bio Wikipedia EN (S5, P50). P47 source_quality on S1–S8. Primary checks: Stidger 1923 book Henry Ford: The Man and His Motives (IA OCR, S6) Ch. III 'Ford's Religious Views' — same 'I believe in God and in Jesus Christ' and Gardener design-inference (names Burroughs; newspaper OCR said Muir); Pew Preaches (1930, S7) reprints/elaborates same interviewer chain ('I belong to the Church'); Gutenberg My Life and Work (S8) — 'Nature vetoes' is social-economic natural law vs Soviet decree, not P16 physical order; 'God's great open spaces' is advertising rhetoric. A 1 lifted 0.5→0.7 (recorded_interview ceiling P8) support corroborated (distinct ids S2/S6/S7; same interviewer Stidger noted; contested alt 0 also caps ≤0.7). B stays UNKNOWN (no P16 nature-order/exception own-voice; Gardener off-point). primary BELOW (CHRIST vs THEOS/reincarnation); mid UNKNOWN. Chart-moving NO. Episcopal family/church from S5/S6/S7. Dearborn Independent noted in controversies (not axis-coded). Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ford-henry
   display_name: "Henry Ford"
@@ -189,6 +190,19 @@ lane_b:
   reading: "Lane B only: designer-Gardener God (A 1) plus reincarnation 'plan' from interviews; Episcopal heritage and Freemason affiliation are context."
   notes: "Do not treat inventor mastery-of-nature rhetoric as P16 B."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: mixed
+    detail: "1923: 'I believe in God and in Jesus Christ,' and he belongs to the Episcopalian Church in Detroit. 1928: he adopted reincarnation at twenty-six because religion 'offered nothing.'"
+    cites: [{source: S6, locator: "Ch. III pp. 34–35"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: mixed
+    evidence: "The 1923 interviews affirm Christ and the Episcopal church. The 1928 interview says he took up reincarnation because religion offered nothing to the point."
+    cites: [{source: S3, locator: "quoted interview"}]
 institutions:
   - {value: "Detroit Edison Company", role: "chief engineer", years: "1893–", kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}, {source: S5, locator: "Early career"}], how_known: "Britannica and Wikipedia."}
   - {value: "Ford Motor Company", role: founder, years: "1903–", kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}, {source: S5, locator: "Ford Motor Company"}], how_known: "Britannica and Wikipedia."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (skip catch-up 9/13): On Point WBUR 2025-01-10 (S4) corroborates atheist-family / school 'nonsense' own-voice; Wikipedia EN (S5) dual bio (P50). primary ATHE and A 4 stay at 0.5 with support corroborated (S2+S4; P48); after span → P20. B UNKNOWN held (RQ-Z9-1 / P33; no new lasting natural-system theory listed; no P16 own-voice). mid BELOW_THRESHOLD; not plotted. Chart-moving NO. P47 source_quality on all sources."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit (RQ-Z9-1, v8's call on the auditor's advice): not a scientist as listed; B stays UNKNOWN, not plotted. Leads added: prize motivation 'discoveries and inventions'; interview 'theory' and 'for discovering how the brain worked'."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 171). Basics from NobelPrize.org facts (Physics 2024). Own words: Nobel Prize interview, 6 December 2024 (NobelPrize.org transcript), after the span: parents 'both atheists'; at his Christian school belief in God 'seemed to me it was just obvious nonsense, and it turns out I was right'; 'other people also don't believe in God'. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alts BELOW_THRESHOLD and 3; P20, Chomsky and Kahneman precedents). Not a scientist as listed: the Boltzmann machine is called an 'invention' (S1; P33; Hassabis precedent), so B UNKNOWN pending RQ-Z9-1. C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≥ 3 only at 0.5, P10). Span 1983–1985, age 36. Not plotted (no B). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hinton-geoffrey
   display_name: "Geoffrey Hinton"
@@ -152,6 +153,17 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Interviews are read in the file as non-belief, and he does not use the word atheist. Left unknown."
+  conformity_pressure:
+    level: unknown
+    evidence: "The interviews do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Toronto", role: "professor", years: "1987–", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "Affiliation"}, {source: S5, locator: "Career"}], how_known: "NobelPrize.org (affiliation at the award); Wikipedia EN (affiliated since 1987)."}
   - {value: "Carnegie Mellon University", role: "faculty", years: "1980s", kind: "university", certainty: 0.5, cites: [{source: S5, locator: "Career / PDP group"}], how_known: "Wikipedia EN; Boltzmann/PDP era."}

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Protestant (Church of Ireland / Anglo-Irish) @0.7 from new Wikipedia S6 + Britannica. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #201/228, F 3, rank 214). Goal: corroborate A (was dark hollow — A 0@0.7 single S3 only; B already corroborated). Re-read Free Enquiry S3 p.158 A warrant; added Christian Virtuoso S4 corroboration: World 'framed by an Author supremely Powerful, Wise, and Good' (p. 14); 'Supreme Lord and Governor of the World' / 'supremely perfect Author' (p. 33); 'Formation of the World out of the Universal Matter' by 'an Incorporeal Substance' giving Motion to a Body (p. 28). SEP §3.4/§5.2 (S2) also notes God as Author distinct from created machine. A cites S3+S4 → support single→corroborated; value/certainty hold A 0 @0.7 (alt 1 named, cites only S3 subset). B 3 @0.7 corroborated unchanged; mid_basin true @0.7 (P4) unchanged; primary CHRIST @0.7 unchanged. Chart-moving YES for fill cue only: dark hollow → dark filled when figures next refresh (values unchanged). P47 source_quality on S1–S5. No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1659–1668 → 1659–1666; worldview.working_years 1644–1691 → 1659–1666, equal to the span (P30 addendum f); lasting item added: The Origine of Formes and Qualities (1666); 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 7 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: boyle-robert
   display_name: "Robert Boyle"
@@ -256,6 +257,19 @@ lane_b:
   reading: "As belief, not finding: form absent (experimental method); circle absent (creator distinct from creation). The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Britannica calls him a devout Anglican and says he declined a bishopric. The Christian Virtuoso is his published Christian argument."
+    cites: [{source: S1, locator: "Theological activities"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The Christian Virtuoso calls God the supreme Lord who framed the world. No adult text in the file withdraws the Anglican record."
+    cites: [{source: S4, locator: "p. 14"}]
 institutions:
   - {value: "Hartlib Circle", role: "member and correspondent", years: "1647–c.1655", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life and education'"}], how_known: "Britannica."}
   - {value: "University of Oxford (Experimental Philosophy Club)", role: "resident natural philosopher; the club met at times in his lodgings", years: "c.1656–1668", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Scientific career', paragraph 1"}], how_known: "Britannica."}

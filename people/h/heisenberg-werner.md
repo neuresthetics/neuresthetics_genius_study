@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.5"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Beyler, first page), MacTutor and the Nobel biography. Worldview from his own Guardini Prize lecture (Munich 1973), read in the English translation 'Scientific Truth and Religious Truth', CrossCurrents 24:4 (1975), 463–473, as a scan of the JSTOR page images. primary_system PLATO at 0.7 (CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7); C, E BELOW_THRESHOLD; mid_basin TODO (A = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Self-described relation lowered from 1.0 to 0.7 under the CODING_GUIDE §7 unofficial-web-copy cap (S4 read from a user upload of the JSTOR PDF, not JSTOR itself)."}
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 4 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #79, F5 rank 80). Needs: A single source. New S6: Der Teil und das Ganze (Piper 1969; Würzburg WueCampus scan of ISBN 3-492-03080-7, 6. Aufl. 1986) Kap. 17 — own-words rephrase of Pauli's 'persönlichen Gott' as 'zentralen Ordnung der Dinge oder des Geschehens' and 'Aber dieser Text [Pascal Feuer] würde nicht für mich gelten' (scan PDF pp. 116–117); English Physics and Beyond / Wilber reprints omit the Pascal-refusal clause (flag). S7 Wikipedia EN dual-bio (P50) with S1 Britannica. S8 Physics and Philosophy (1958) ost-physics IA open text — Plato/Pythagoras vs Democritus; Descartes 'God is in the world and in the I'. P47 source_quality on S1–S8. A 2 @0.7 support single → corroborated (S4+S6); B 4 @0.7 labelled corroborated (S4+S1); D 2 @0.7 support single → corroborated (S4+S6). primary_system stays BELOW_THRESHOLD (PLATO leading, CHRIST named; Teil und Ganze read, still no use_when for existence-origin). mid_basin unchanged TODO (no P4 branch for A=2). Chart-moving YES: hollow → filled (A and B both corroborated; darkness already dark @ min 0.7). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: heisenberg-werner
   display_name: "Werner Heisenberg"
@@ -228,6 +229,17 @@ lane_b:
   reading: "As belief, not finding: form partly present; circle partly present (order of the world, but behind phenomena). The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Wikipedia says he lived as a Lutheran; the file says the adult baptismal record is unread. Parents' church is heritage. The Guardini lecture does not say he is Lutheran."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent in his working years."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of Copenhagen (Bohr's institute)", role: "Rockefeller fellow (1924–25); lecturer (1926–27)", years: "1924–1927", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraphs 3–4"}, {source: S2, locator: "1924–1926 paragraphs"}], how_known: "Two sources."}
   - {value: "University of Leipzig", role: "professor of theoretical physics", years: "1927–1941", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 4"}, {source: S2, locator: "1927 paragraph"}], how_known: "Two sources."}

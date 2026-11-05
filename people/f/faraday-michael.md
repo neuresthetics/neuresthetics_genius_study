@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 15
+  schema_version: "1.5"
+  record_version: 16
   review_status: "example — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, repo setup)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-01
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-01, by: "Grok Bot", summary: "Worked example created to show the record structure. Only well-sourced fields filled; everything else TODO. Not reviewed."}
     - {date: 2026-10-01, by: "Grok Bot", summary: "1844 exclusion: reason, length and restoration added from Cantor 2020 (S8), Brooke 1991 (S9) and Gladstone 1872/1873 (S10, S11); second eldership after 1860 added. Exact readmission date still a gap."}
@@ -26,6 +26,7 @@ record:
 
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #58, F5 rank 58). Needs: dark and corroborated on A and B (already computed dark filled). Primary ERCP 1859 (IA OCR, experimentalrese00fararich) added as S12: Conservation of Force pp. 443–448 ('only within the power of Him who has created', p. 447) and Observations on Mental Education pp. 463–465 re-checked against the 1855 Lectures on Education printing (Darwin Online A4128; 'bear the reproach'). Self-described science–religion relation 0.7 → 1.0 (§7 secondary cap lifted). P47 source_quality on S1–S13. A 0 @0.7 and B 3 @0.7 labelled support corroborated (P48); D 2 and E 3 likewise. B and D basis corrected to written_profession. Watts/Marcet early reading dual-sourced (Gladstone S10 p. 2 + Wikipedia S13). Cantor 1989/1991 still unread (paywall / IA borrow). mid_basin true unchanged. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: faraday-michael
   display_name: "Michael Faraday"
@@ -305,6 +306,19 @@ lane_b:
   reading: "Not assessed. The v7.1 two-lane paper uses Faraday as the case where the no-exemption form is present without the pantheist metaphysics (Lane B, B3 and V7.1-N B5). This record collects the facts that claim would be tested on; it does not test it."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "His 1844 letter: a 'very small and despised sect of christians' called Sandemanians, whose hope is 'the faith that is in Christ.' Member from 1821; deacon; elder."
+    cites: [{source: S3, locator: "letter to Lovelace, 24 October 1844"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The 1844 exclusion was an internal Sandemanian discipline dispute, then reversed. No civic religious disability is documented."
+  practice_gap:
+    gap: aligned
+    evidence: "Membership, eldership, the 1844 letter, and the later lectures keep the same Christ-centered hope. The 1844 exclusion was discipline, then restored."
+    cites: [{source: S5, locator: "profession of faith, 1821"}]
 institutions:
   - {value: "Royal Institution of Great Britain", role: "Laboratory Assistant (1813, 1815–1826); Director of the Laboratory (1825–1867); Fullerian Professor of Chemistry (1833–1867); Superintendent of the House (1852–1867)", years: "1813–1867", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "Ri positions"}], how_known: "The institution's own record."}
   - {value: "Royal Military Academy, Woolwich", role: "Professor of Chemistry", years: "1830–1851", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "Institution's record."}

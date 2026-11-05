@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 38). Basics from Britannica (Deakin) and MacTutor (O'Connor and Robertson). All her works are lost (S1, S2); her Neoplatonism is known only from later reports, which are reported speech (§7, P42). Not a scientist under P30: no original result is known (S2). Birth year disputed (c. 355 vs c. 370). Undated works (P39). primary_system BELOW_THRESHOLD (candidate PLATO, as Neoplatonism); A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #38, F5 rank 38). Needs: A BELOW_THRESHOLD; B UNKNOWN; 2 sources. Re-opened Britannica Deakin via Wayback (S1) and MacTutor (S2). New: Socrates Scholasticus HE 7.15 NPNF (S4); Synesius Ep. 15 Fitzgerald via Livius (S5) — his words, not hers; Suda On Line upsilon 166 (S6) for lost-work titles and Damascius/Hesychius testimonia. P47 source_quality on every source. Sparse own words / ancient testimonia: no letter or treatise of hers survives; Synesius's seven letters are to her; Neoplatonism and 'the One' remain reported speech / reference paraphrase (P42). MacTutor's pairing with Iamblichus is not followed: Socrates names Plato and Plotinus only; later scholarship stresses a Plotinian (not Iamblichean) line. Not a scientist under P30; no nature statement in her voice (P16). A stays BELOW_THRESHOLD; B stays UNKNOWN. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hypatia
   display_name: "Hypatia"
@@ -135,6 +136,17 @@ lane_b:
   reading: "No reading possible as finding: no text of hers survives. As belief model only: geometry present in attributed work; circle unclear; H1 not tested. Worldview unplottable (A BELOW; B UNKNOWN)."
   notes: "P42 ancient-testimonia case (with Homer / Hippocrates)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No writing of hers survives. Platonist headship is Socrates' and MacTutor's report, not her creed."
+  conformity_pressure:
+    level: unknown
+    evidence: "A March 415 killing by a Christian mob is recorded; Cyril's part is disputed, and no legal religious sentence is documented."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Platonist school at Alexandria", role: head, years: "c. 400–415", kind: "other", certainty: 0.5, cites: [{source: S2, locator: "Biography"}, {source: S4, locator: "HE 7.15"}], how_known: "MacTutor 'in about 400 AD'; Socrates succession wording."}
 collaborators:

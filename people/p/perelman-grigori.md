@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z10)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (skip catch-up 10/13): New Yorker Manifold Destiny 2006 (S3) — only substantial own-voice interview; ethics/prize quotes, no creed or P16 nature-order. Wikipedia EN dual bio (S4, P50). Rejected Zabrovsky/KP 2011 interview as likely fake (Wikipedia + Gessen/Snob). Gessen Perfect Rigor never interviewed him; reviewer 'talking with God' framing is not his words. primary/A/B stay UNKNOWN (silence; heritage ≠ worldview; topology not physical science under P30). mid UNKNOWN. Chart-moving NO. P47 source_quality on all sources."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 175). Source: MacTutor (O'Connor and Robertson). No own-voice statement on religion or nature read; Jewish parents (heritage only). Not a scientist (topology; P30). primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 2002–2003 (the three arXiv postings, publication; MacTutor's 'April 2002' return before the July instalment is read as 2003 from context), age 36. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: perelman-grigori
   display_name: "Grigori Perelman"
@@ -139,6 +140,18 @@ lane_b:
   reading: "No creed or B data for H1; geometric work is Lane A contribution, not a worldview score."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Checked the New Yorker interview (S3) and Wikipedia (S4): no own-voice creed. Jewish parents are heritage only."
+    cites: [{source: S3, locator: "closing interview / ethical standards"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Steklov Mathematical Institute, St Petersburg branch (PDMI)", role: "researcher", years: "1990–2005", certainty: 0.7, cites: [{source: S1, locator: "Biography"}, {source: S4, locator: "Career / resigned 2005"}], how_known: "MacTutor; Wikipedia EN (resigned December 2005)."}
   - {value: "University of California, Berkeley (Miller Research Fellowship)", role: "fellow", years: "1993–1995", certainty: 0.7, cites: [{source: S1, locator: "Biography"}, {source: S4, locator: "Early life / Career"}], how_known: "MacTutor; Wikipedia EN."}

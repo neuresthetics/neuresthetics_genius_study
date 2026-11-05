@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 220). Source: Britannica scholars edition, signed by Olin Jeuck Eggen (read in full). Lasting: his body of accurate naked-eye observations, 'the most accurate possible before the invention of the telescope', which 'paved the way for future discoveries'; 'What Tycho accomplished ... remains an outstanding accomplishment of the Renaissance'; with his data 'Kepler laid the groundwork for the work of Sir Isaac Newton' (S1). Dated from De nova stella (1573), the first published result of the programme, to his leaving Uraniborg (1597), where 'The major portion of Tycho's lifework ... had already been done'. Span 1573–1597 at 0.5 (alternative start 1576, the Ven grant), age 27. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #207/228, F 3, rank 220): firm B; seek any A from De nova stella / letters; do not force plot. Read De nova stella 1573 in McLaughlin English from Dreyer Opera Omnia (S3) cross-checked to tekstnet Latin (S4); Håkansson 2004 quoting same (S5); Wikipedia EN (S6); Encyclopedia.com / Complete Dictionary of Scientific Biography Melanchthonian curriculum (S7). primary UNKNOWN→CHRIST @0.7 written_profession (Savior, Son as sacrifice, Moses, Magi; Lutheran/Philippist affiliation). A UNKNOWN→0 @0.7 written_profession, support corroborated (S3+S4): God author of the universe / artificer of the worldly machine; divine majesty not bound by nature's bonds; fabricates the nova as portent. B 3@0.5 inference_from_work (P35)→3 @0.7 written_profession, support corroborated (S3+S4+S5): ordinary heavens without generation/corruption; stated limited exception — nova praeter omnem naturae ordinem; when God wills He halts rivers and turns stars back. Mid UNKNOWN→true @0.7 (P4). Chart-moving YES: not plotted → dark filled when figures next refresh. C/D/E left UNKNOWN. P47 source_quality on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: brahe-tycho
   display_name: "Tycho Brahe"
@@ -162,6 +163,19 @@ lane_b:
   reading: "Lane B only: childhood Melanchthonian / Lutheran university setting (S7) is consistent with later published Christian natural philosophy in De nova stella (S3/S4), but Lane B does not decide mid_basin."
   notes: "Do not treat Philippist curriculum as an outcome."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "De nova stella (1573) names the Savior and God as author of the universe. S6 records Philippist Lutheran sympathies."
+    cites: [{source: S6, locator: "Life at Uraniborg (Philippists)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1573 Latin names the Savior of the world and the Son as sacrifice, with God as author of the universe. No withdrawal is in the file."
+    cites: [{source: S4, locator: "Saluator mundj; Gnatus / victima"}]
 institutions:
   - {value: "Uraniborg observatory, Ven", role: "founder and director", years: "1576–1597", kind: "research institute", certainty: 0.7, cites: [{source: S1, locator: "Mature career"}], how_known: "Britannica."}
   - {value: "Court of Emperor Rudolf II, Prague", role: "imperial patronage", years: "1599–1601", kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "Mature career"}], how_known: "Britannica."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #160, F3 rank 168). Hunt: An Autobiography read in Faber & Faber London 1945 OCR (S5; archive scan OCR only; Book Two Fellowship: Wasn't nature in this sense the very nature of God?); US 1932 Longmans not separately collated — sentence sits in the four-book Fellowship narrative shared with the 1932 structure; no changes_over_life documented (P31). Wallace 1957 (S2) kept as corroboration. Taliesin Fellowship talk 1956 body of God (secondary via Hierotopy thesis) named as PANENT lead only, not scored. Grasping the laws of nature / Her equilibrium ... is probably God / book of creation in S5 are organic-architecture / Code talk, not P16 cause-order — B stays UNKNOWN. primary_system PANT 0.5→0.7 (written_profession; alt PANENT); A 4 0.5→0.7 support corroborated (S5+S2; alt 3 only, BELOW dropped); mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Still not plotted (no B). P47 source_quality on S1–S6; Wikipedia EN S6 (P50 dual-bio). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (WEAKEN; v8's call on the auditor's advice): Fallingwater how_known no longer says 'P12 start 1935'; dated by completion, 1937. Span unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fixes (v8's calls on the auditor's advice). RQ-Z8-2: a third party's web copy of a transcript is a secondary quotation (V3) unless checked; the lines were checked word for word against the Harry Ransom Center's own transcript in CONTENTdm (HRC_WAL0115), now S2, so PANT 0.5 and A 4 at 0.5 hold (P8, P20 cap). Quote cuts now [...]. Fallingwater item year 1935 -> 1937 (completion), S3 author Alicja Zelazko. Unity Temple 1906 is a start date: item year UNKNOWN. Span 1902–1937 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 168). Basics from Britannica (Edgar Kaufmann, signed) and Britannica 'Fallingwater'. Own words: The Mike Wallace Interview (1957, two parts; Harry Ransom Center video, read in a published transcription), after the span: 'I've always considered myself deeply religious'; 'my church I put a capital N on Nature and go there ... You spell God with a G ... I spell Nature with an N, capital'; 'I put a capital N on Nature, and call it my Church'. Not a scientist. primary_system PANT (0.5, alt BELOW_THRESHOLD); A 4 (0.5, alts 3 and BELOW_THRESHOLD); B UNKNOWN (no statement on nature's order); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10; A ≥ 3 only at 0.5). Span 1902–1937, age 35. Not plotted (no B). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: wright-frank-lloyd
   display_name: "Frank Lloyd Wright"
@@ -157,6 +158,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Autobiography identifies Nature with God. 1957 interview: his church is capital-N Nature. Unitarian family is heritage. He names no one denomination."
+    cites: [{source: S2, locator: "Part 1, opening questions"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The autobiography's Nature-as-God passage and the 1957 interview agree. No contrary church membership is in the file."
+    cites: [{source: S5, locator: "Book Two, Fellowship"}]
 institutions:
   - {value: "Taliesin Fellowship", role: "founder", years: "1932–1959", kind: "other", certainty: 0.7, cites: [{source: S3, locator: "text"}], how_known: "Britannica 'Fallingwater'; end year his death."}
 collaborators:

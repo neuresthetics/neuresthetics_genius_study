@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated. Laffont/Le Pestipon (S8, Académie Toulouse 2022 PDF) independently quotes Cede Deo locus lines — 'Coelicolum : Deus ecce'; 'Summe Deus, quid me moribundum deseris?'; 'Hanc tibi, summe parens, animam commendo' — so S8 is a second locus publication, not only CHRIST practice/frame. B already corroborated. Cues faded hollow→faded filled. Certainty stays 0.7 (named alt 1). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #197, F3 rank 210). P47–P50. Dual bio Wikipedia EN (S4) + Britannica (S1). Own-voice B: 1 Jan 1662 letter to Cureau de la Chambre (DBNL / Huygens Oeuvres IV No. 990; S5) — 'la nature agit tousjours par les voyes les plus courtes' / 'par les moyens les plus aysez'. Own-voice A/CHRIST: Latin poem 'Cede Deo, seu Christus moriens' (Œuvres I, Tannery; S6) — incarnation and Passion. Secondary Catholic frame: Society of Catholic Scientists (S7); Laffont/Académie Toulouse (S8); Augustins epitaph nesciri ama from Imitation of Christ (S9). B support single→corroborated (S1+S5); value stays 3 @0.5 alt 4 (P16 addendum: lawful-order remark, no stated no-exception claim). A UNKNOWN→0 @0.7 support single (poem; Laffont/SCS are CHRIST practice/frame, not a second A locus source). primary_system UNKNOWN→CHRIST @0.5 (poem is literary devotion; working-years creed thinner than Euler/Pascal). mid_basin BELOW_THRESHOLD (B at 0.5). Chart-moving YES: A scored so now plottable (faded hollow). No fallacy_catalog; no figures/. Draft, not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: least-time item and span end take 1662 as alternative (1638–1662); lesser theorem 0.7 on the 18 October 1640 letter to Frenicle (Pengelley, S3)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 210). Source: Britannica, signed by Carl B. Boyer (scholars edition, read in full). Lasting work: his method for tangents and maxima and minima, defended in the 1638 controversy with Descartes through Mersenne and 'fully justified some 30 years later in the calculus of Sir Isaac Newton' (he is 'regarded as the inventor of the differential calculus'); 'Fermat's lesser theorem', announced in letters (1640; 'A more important result'); and the principle of least time for refraction, 'twenty years' after Descartes's 1637 Dioptrique (so about 1657), later 'verified experimentally' by Fizeau (S1). Span 1638–1657 at 0.5 (1657 is inferred from 'twenty years later'; alternative end 1662, the 'Analysis ad refractiones' of 1 January 1662, where the least-time minimisation itself is first worked out; the August 1657 letter states only the qualitative shortest-path principle), age 37. AA8 audit: lesser theorem now 0.7 on the letter to Frenicle of 18 October 1640 (Œuvres de Fermat II, pp. 206–212, as quoted by Pengelley, S3). Scientist (P30): the principle of least time is a law about light; B 3 at 0.5, alternative 4 (P35). Worldview: no own words read; primary education in a Franciscan school (S1). primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: de-fermat-pierre
   display_name: "Pierre de Fermat"
@@ -185,6 +186,19 @@ lane_b:
   reading: "Lane B only: Christian transcendent God (poem) with a lawful least-time economy of nature (1662 letter). Not a chart finding."
   notes: "Do not treat Lane B as evidence for mid_basin beyond the scored axes."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "The poem 'Cede Deo, seu Christus moriens' says the eternal Son took mortal flesh. Catholic family and Franciscan schooling are not an adult roll."
+    cites: [{source: S6, locator: "Œuvres I / Wikisource djvu 439"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The poem is a Christian devotional text. The optics letters do not contradict it, and the file has no rejection."
+    cites: [{source: S6, locator: "Cede Deo, seu Christus moriens"}]
 institutions:
   - {value: "Parlement of Toulouse", role: "councillor; Criminal Court", years: "1631–1665", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "Life and early work"}, {source: S4, locator: "Biography"}], how_known: "Wikipedia: sworn May 1631; Britannica councillor from 1634 / Criminal Court 1638."}
 collaborators:

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 103). Basics from Britannica (Britannica Editors, unsigned; body read live). Worldview from 'Circumfession' (1991; English in Bennington and Derrida, Jacques Derrida, 1993) as quoted by Elisabeth Loevlie, Religions 4 (2013), with the 2002 exchange with John Caputo as she reports it; secondary quotations. Not a scientist (P30). primary_system and A BELOW_THRESHOLD ('I quite rightly pass for an atheist', with God 'called by other names'); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Alternative span end is now 1967, not 1974: Glas is listed under major_works, not as a lasting contribution, so it cannot set the end (P13, P30 addendum b; DE5). Specters of Marx now cites Loevlie §1 for its lasting status ('hauntology, first coined in his Spectres of Marx in 1993 [...] a fruitful critical topos'), so the item rises from 0.5 to 0.7 (one source); the span stays 1967–1993 at 0.5."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note for batch S (blind audit of c5d448a, run 1): major_work_period now states why the span stays at 0.5 although both end items are at 0.7. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #102 / F4 rank 103). Goals: Circumfession / Caputo primary if reachable; keep hedged A honest (P19/P38); P16 B only on own-voice nature claims. Dual bio Wikipedia EN Jacques Derrida (S6, P50). Caputo 2002 exchange reached as long extract of Sherwood and Hart, Derrida and Religion (Routledge, 2005), pp. 46–47 (S5 course reprint; own-voice: refuses both 'I am an atheist' and 'I am a believer' as 'absolutely ridiculous'; Caputo's question cites Circonfession 146, 155). Circumfession Chicago 1993 pp. 154–55 still secondary quotation only (S2+S4 agree on the pass-for sentence; IA Bennington volume not open this pass). No P16 nature/physical-world claim found. primary_system and A stay BELOW_THRESHOLD; B stays UNKNOWN (P16, not a scientist P30); mid_basin UNKNOWN. Not plotted. Chart-moving NO. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: derrida-jacques
   display_name: "Jacques Derrida"
@@ -141,6 +142,17 @@ lane_b:
   reading: "A hedged atheism that keeps the word 'God' in a private sense."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "In 1991 he 'quite rightly pass[es] for an atheist' while God stays under other names. In 2002 he refuses both 'I am an atheist' and 'I am a believer.'"
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "He states no settled affiliation, so there is nothing to compare."
 institutions:
   - {value: "Sorbonne, Paris", role: "teacher of philosophy", years: "1960–1964", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Life and work'"}], how_known: "Britannica."}
   - {value: "École Normale Supérieure, Paris", role: "teacher of philosophy", years: "1964–1984", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Life and work'"}], how_known: "Britannica."}

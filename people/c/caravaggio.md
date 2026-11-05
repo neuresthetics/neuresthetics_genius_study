@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #147, F 3, rank 153). Needs: A UNKNOWN; B UNKNOWN; thin sources; hunt trial/Order docs. Read 1603 Baglione libel deposition (Italian via Sgarbi/Filodiritto S5; Friedländer p.276 via Jasiński 2022 S6; EN Prestel S7) — valent'huomo / 'imitar bene le cose naturali' = pictorial mimesis only, no religion. Prestel: almost no own-voice writings beyond that deposition. Order of St John: Bulla Receptionis / Knight of Obedience 14 July 1608, expelled Dec 1608 as foul and rotten member (S4, S8) — nominal affiliation / status-pardon path, not scored CHRIST profession (P16 commissions ≠ belief; standard Order vows not own creed statement). Dual bio Wikipedia EN (S4) + retained Britannica Graham-Dixon (S1; live Cloudflare-blocked this pass). Baptism Santo Stefano in Brolo, Milan (S4). primary_system UNKNOWN (CHRIST lead only); A UNKNOWN; B UNKNOWN (P16); C–E UNKNOWN; mid_basin UNKNOWN. P47 on S1–S8. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): S3 page was read; author Keith Christiansen (October 2003). Values unchanged."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fix (Z5-30, P26/P13): question-box and caption 'lasting' cites removed. Read the signed body section 'Rome: 1599–1606': contract of 23 July 1599 for the Contarelli Chapel side canvases (The Calling and The Martyrdom of St. Matthew); 'The paintings for the Contarelli Chapel instantly established Caravaggio as the most dynamic and original painter working in Rome.' Lasting list is now the Contarelli canvases alone (1599–1600; caption date, range start under P12). Conversion of St. Paul and Entombment dropped from the lasting list (no body text calls them lasting). Span 1601–1604 -> 1599–1600; age 30 -> 28; era '1600 to 1749' -> '1400 to 1599'. Worldview unchanged (all UNKNOWN); not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 153). Source: Britannica (Andrew Graham-Dixon, signed; opening, 'Becoming Caravaggio', 'Tragic childhood' read). No own words on religion read; religious commissions are work, not profession (P16). Not a scientist. Span 1601–1604 at 0.5 (Conversion of St. Paul 1601; Entombment 1602–04, latest year P30 #4), from captions. primary_system UNKNOWN (lead CHRIST); A UNKNOWN; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: caravaggio
   display_name: "Caravaggio"
@@ -155,6 +156,17 @@ lane_b:
   reading: "Lane B only: pictorial form partly present (chiaroscuro); no H1 circle from worldview. 'Imitar bene le cose naturali' is art technique, not Lane A B_cause. Religious subject matter ≠ CHRIST worldview."
   notes: "Do not treat Contarelli / Maltese altarpieces or Order knighthood as CHRIST primary_system."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The Order of St John knighthood is in the file as a status path. The vows are treated as formula, not his creed."
+  conformity_pressure:
+    level: unknown
+    evidence: "The 1603 proceeding is a libel deposition, not a heresy or blasphemy prosecution."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Order of St John (Knights Hospitaller), Malta — Knight of Obedience 14 July–December 1608", role: member, kind: "other", certainty: 0.7, cites: [{source: S4, locator: "Malta"}, {source: S8, locator: "Bulla Receptionis"}], how_known: "Admitted then expelled; institutional, not creed score."}
   - {value: "Contarelli Chapel / San Luigi dei Francesi (church commission)", role: painter, kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "'Rome: 1599–1606'"}, {source: S3, locator: "para. 2"}], how_known: "Contract 1599; unveiling 1600."}

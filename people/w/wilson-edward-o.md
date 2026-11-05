@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #155, F 3, rank 163). P31 continuity: create-pass P20 0.5 cap on after-span interviews superseded — no documented change of view between 1971–1975 and 1978/1998/2006 (Baptist→secular ~1946 is pre-span). New S5 On Human Nature (1978) Ch.1 written_profession: 'genetic chance and environmental necessity, not God, made the species. Deity can still be sought in the origin of the ultimate units of matter… but not in the origin of species'; species 'lack any immanent purpose or guidance from agents beyond their immediate environment'. Multi-secondary agreement (Miller Finding Darwin's God p.180; Whitman academic citation 1978/2004:1–2; HUP sample search-index). P47 source_quality on every source. P50 Wikipedia S6 dual-bio. primary_system DEISM 0.5→0.7 recorded_interview (S2+S3; OHN content matches); A 3 0.5→0.7 written_profession (OHN + interviews), alts 1 and BELOW; B 3 0.5→0.7 written_profession (OHN + Salon no-intervention; P35 inference-only cap no longer binds), alt 4; support corroborated both axes (P48). mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Chart-moving YES: faded→dark (min A/B cert 0.5→0.7); fill already filled. Span kept 1971–1975 (coder's P29/P30 call; OHN stays major_works, cited under P31). No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (P10): mid_basin false 0.5 -> BELOW_THRESHOLD; RQ-Z7-1 answered: A 3 at 0.5 holds (Franklin precedent)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 163). Basics from Britannica (Michael Ruse, signed). Own words: Psychology Today interview (1998) and Salon interview (2006), both after the span: 'a provisional deist is someone like myself who leaves it open'; 'I do feel confident that there is no intervention of a deity in the origin of life and humanity'; raised 'a devout Southern Baptist'. Scientist (P30). Span 1971–1975. primary_system DEISM (0.5, alt AGNOS); A 3 (0.5; alts 1 and BELOW_THRESHOLD): explicit denial of a personal, intervening God (P20), with at most an impersonal 'creative force'; B 3 (0.5, alt 4; P35, P16 addendum); C, D, E UNKNOWN; mid_basin false (0.5; A ≥ 3 branch). Plotted (A 3, B 3). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: wilson-edward-o
   display_name: "E. O. Wilson"
@@ -182,6 +183,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Own label 'provisional deist' (1998, 2006): not a theist; no deity intervention in the origin of life; a creative force at the start of the universe left open."
+    cites: [{source: S3, locator: "'I've heard you call yourself a deist'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "On Human Nature (1978) says not God but genetic chance and environment made the species, while deity may still be sought in matter's origin."
+    cites: [{source: S5, locator: "Ch. 1 Dilemma, pp. 1–2 (2004 reprint)"}]
 institutions:
   - {value: "Harvard University", role: "professor; curator in entomology", years: "1956–1997", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "body"}], how_known: "Britannica."}
 collaborators:

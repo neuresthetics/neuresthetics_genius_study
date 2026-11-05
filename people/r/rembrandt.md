@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 67). Basics from Britannica (Ernst van de Wetering), signed body through 'Early years' only; Top Questions not cited. No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #66, F5 rank 67). Needs: A UNKNOWN; B UNKNOWN; 1 source. Dual bio Wikipedia EN (S3) + retained Britannica van de Wetering (S1; live Cloudflare-blocked; Wayback TOC/early body). Primary: only surviving letters — to Constantijn Huygens c.1636–39 (S4 Hofstede de Groot / Binstock EN; S5 Wikiquote Dutch of 12 Jan 1639) — conventional closings ('commend… to God', 'blessing of salvation') and art goal 'meeste ende… naetuereelste beweechgelickheijt' (greatest and most natural movement) = pictorial emotion/motion, not nature's causal order (P16). Wheelock Leiden Collection (S6): family Remonstrant lean; 'Rembrandt's own religious views are not known'. Mother Catholic / father Dutch Reformed (S3). Biblical history pieces ≠ avowed belief. A stays UNKNOWN (God closings off-point; P19); B stays UNKNOWN (P16). primary_system UNKNOWN (CHRIST/Reformed heritage lead only). mid_basin UNKNOWN. Working years 1632–1669 @0.7. P47 on S1–S6. Chart-moving NO. Thin-source caution — no overclaim. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: rembrandt
   display_name: "Rembrandt"
@@ -157,6 +158,18 @@ lane_b:
   reading: "Lane B only: pictorial form partly present; no H1 circle from worldview. Form ≠ A/B score. 'Natural movement' is art technique, not Lane A B_cause."
   notes: "Do not treat biblical subject matter as CHRIST worldview."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "A Dutch Reformed father and a marriage-church note are milieu (S3). Wheelock: his own religious views are not known (S6). Letter closings are formulaic (S4)."
+    cites: [{source: S6, locator: "raised as a Protestant; own views not known"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   - {value: "Court of Frederik Hendrik / Constantijn Huygens (Passion series)", role: painter, kind: "patron or funder", certainty: 0.7, cites: [{source: S3, locator: "Career — Huygens"}, {source: S4, locator: "letters"}], how_known: "Wikipedia and Huygens letters."}
   - {value: "Amsterdam Guild of St Luke", role: member, kind: "other", certainty: 0.7, cites: [{source: S3, locator: "Career — guild 1634"}], how_known: "Wikipedia."}

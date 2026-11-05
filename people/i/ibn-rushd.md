@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 102). Basics from Britannica (Erwin I. J. Rosenthal, signed; body pages opening, 'Early life', 'Commentaries on Aristotle', 'Averroës’ defense of philosophy' and 'Contents and significance of works', read live). Worldview from the Faṣl al-Maqāl with its appendix in George F. Hourani's translation (1961/1976) and the Tahāfut al-Tahāfut (natural-science discussions) in Simon van den Bergh's translation (1954), both as reproduced on muslimphilosophy.com; web copies, secondary quotation, cap 0.7. Not a scientist (P30, coder's call). primary_system CLASS_THEISM (0.7, alt ISLAM); A 1 (0.7, alt 0); B 3 (0.7, alt 4); D 3 (0.5, alt 2); mid_basin true (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). D's second locator is now S3 'Natural Sciences, First Discussion', where the 'divine things which surpass human understanding' sentence stands (IR11); the rationale now says that sentence is about religious principles, among them the prophets' miracles. No value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #101 / F4 rank 102). Needs: corroborate A and/or B (hollow→filled if both). Dual bio Wikipedia EN Averroes (S5, P50). P47 source_quality on S1–S7. Primary checks: IA folkscanomy Hourani Decisive Treatise OCR (S6) confirms Faṣl 'Maker, Giver of being', 'truth does not oppose truth', Ashʿarite 'necessary causes' denial; IA open van den Bergh Tahāfut OCR (S7, averroes-incoherence-of-the-incoherence) confirms Natural Sciences efficient-causes / intellect / God's course / miracles passages. A 1 stays @0.7 support corroborated (S2 web + S6 IA Hourani; contested alt 0). B 3 stays @0.7 support corroborated (S3 web + S7 IA Tahāfut + S2 Fasl causes; contested alt 4). primary CLASS_THEISM @0.7 alt ISLAM kept. mid_basin true @0.7 kept. Chart-moving YES: hollow→filled (both A&B corroborated); darkness already dark. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ibn-rushd
   display_name: "Ibn Rushd (Averroes)"
@@ -233,6 +234,19 @@ lane_b:
   reading: "A demonstrative, transcendent cause behind a necessary natural order, with prophecy kept as a principle."
   notes: "Lane B only. B 3 with named alt 4; A 1 with named alt 0."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Chief qadi of Cordoba. The Decisive Treatise says this religion is true and speaks as 'we the Muslim community.'"
+    cites: [{source: S6, locator: "Faṣl ch. 2"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Dismissal and banishment in 1195, later recalled, are recorded without a religious charge."
+  practice_gap:
+    gap: aligned
+    evidence: "The qadi office and the Treatise endorse Scripture, prophecy, and miracles as principles. Criticism of the Ash'arites stays inside that endorsement."
+    cites: [{source: S6, locator: "Faṣl ch. 2"}]
 institutions:
   - {value: "Judiciary of Seville and Córdoba (Almohad state)", role: "judge; chief qāḍī of Córdoba", years: UNKNOWN, kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}, {source: S5, locator: "Career"}], how_known: "Britannica and Wikipedia."}
   - {value: "Almohad court", role: "personal physician to the caliphs", years: "1182–1195", kind: "government or state body", certainty: 0.5, cites: [{source: S1, locator: "'Early life'; 'Averroës’ defense of philosophy'"}, {source: S5, locator: "Career"}], how_known: "Britannica: physician from 1182; dismissed and banished in 1195; end year is the coder's reading."}
