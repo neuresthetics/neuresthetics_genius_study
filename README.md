@@ -14,6 +14,10 @@ Most talk about genius and belief leans on anecdotes or summary labels. Here the
 
 **Contents:** [Progress](#progress-status) · [Figures](#figures) · [Method](#method-in-short) · [Repo layout](#repo-layout) · [How the database grows](#how-the-database-grows)
 
+![Portrait strip of people plotted on the study chart, largest on the left, ordered from the chart's top-right](figures/study_faces_by_chart.jpg)
+
+*Faces of the people closest to the top-right of the people chart, ordered by position (top-right first), as of 26 Oct 2026 / 15afac2. Not a ranking of genius. Portrait credits: https://neuresthetics.github.io/credits/.*
+
 ## Progress status
 
 <!-- BEGIN GENERATED: progress -->
