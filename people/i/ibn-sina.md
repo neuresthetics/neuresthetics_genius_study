@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.5"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool; deepen D1 2026-10-24)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CLASS_THEISM at 1.0) and all five LIO axes filled from Horten's 1907 German translation of the Metaphysics of The Cure, Arberry's translation of the Autobiography (paraphrase only), two SEP entries, IEP, Britannica and MacTutor. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period c. 1012–1037 → 1016–1027; worldview.working_years c. 998–1037 → 1016–1027, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #39). P47 source_quality on S1–S13. Primary: Gohlman Life of Ibn Sina 1974 bilingual Autobiography (new S12) for exact childhood quotes; Marmura Encyclopaedia Iranica metaphysics article (new S13) for English providence definition (Šefāʾ Met. p. 415). Re-read Gutas/Lizzini/McGinnis SEP. A_locus 1 @ 1.0 and B_cause 3 @ 0.7 unchanged (written_profession); support: corroborated added on A–E (P48). Mid_basin stays true @ 0.7. Chart person-dot already dark filled — not chart-moving. Marmura 2005 full English still borrow-restricted (open). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ibn-sina
   display_name: "Ibn Sina (Avicenna)"
@@ -336,6 +337,19 @@ lane_b:
   reading: "As belief, not finding: the form is present and was acquired in adolescence, without the identity circle. Emanation is the nearest thing to a circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Trained in Hanafi jurisprudence and served as a jurist at Gurganj. The autobiography says he finished the Quran and did not accept his father's Ismaili teaching."
+    cites: [{source: S4, locator: "§1"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The jurist role and the Metaphysics, which accepts afterlife truths from religious law, match Islam. Refusing Ismaili teaching does not reject that affiliation."
+    cites: [{source: S6, locator: "IX, afterlife chapter, p. 633"}]
 institutions:
   - {value: "Samanid court, Bukhara", role: "physician to the ruler; post in the financial administration", years: "c. 997–999", kind: employer, certainty: 1.0, cites: [{source: S2, locator: "§1.1"}, {source: S4, locator: "§1"}], how_known: "Two sources."}
   - {value: "Court of Khwarazm, Gurganj", role: "jurist and scholar", years: "c. 999–1012", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "§1.1"}, {source: S5, locator: "Biography"}], how_known: "Two sources; MacTutor gives the jurist role."}

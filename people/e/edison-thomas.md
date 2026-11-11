@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN after Wikipedia Religion section + Early life re-read (no childhood denomination). Chart-moving NO."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 76). Basics from Britannica (Robert E. Conot), signed body through the Newark years; Top Questions not cited. Worldview from Edward Marshall's interview, 'No Immortality of the Soul', New York Times, 2 October 1910 (transcript on sundaymagazine.org; NYT archive abstract; Edison Papers bibliography). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B 4 (0.5, alt 3; interview, partly the interviewer's paraphrase); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). B_cause 4 -> BELOW_THRESHOLD: the strict wording is Marshall's paraphrase (reported speech cannot score alone, §7) and he is an inventor (P33). If the full NYT p. 15 text gives a line in his own voice, B becomes 3 (0.5, alternative 4) under P41. Timing fields updated."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #75, F5 rank 76). Needs: A BELOW_THRESHOLD; B BELOW_THRESHOLD. Primaries/own words: 1885 diary (S7 ariwatch facsimile transcript) 'unchangeable laws' / Almighty who forgot this mote; NYT Marshall 1910 own-voice Nature vs gods of religions (S2/S4/S6); clarifying letter Nature = Supreme Intelligence that rules matter (S6 via Israel); Columbian Magazine Jan 1911 denial of Being throned above directing affairs (S8 secondary quotation). Dual bio Wikipedia EN (S6, P50) + Britannica (S1). P47 on S1–S11. Inventor not scientist (P33). primary_system BELOW→DEISM @0.5 (Israel freethinker/scientific deism; Paine defense; P27 revelation/theology rejected; alt PANT/ATHE). A BELOW→4 @0.5 support corroborated (Nature=God + no Being throned above; alt 1 diary deist Almighty). B BELOW→4 @0.5 support corroborated (diary unchangeable laws P40; 1910/1911 reject intervening personal God; alt 3 P41). C UNKNOWN→3 @0.5 (no personal heaven reward / immortality). D UNKNOWN→3 @0.5 (theologians' theories unprovable). mid_basin stays BELOW (A≥3 branch needs 0.7). Span 1874→1877–1910 (phonograph/lamp/Pearl Street + battery). Chart-moving YES (A&B leave BELOW; faded hollow). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: edison-thomas
   display_name: "Thomas Edison"
@@ -240,6 +241,19 @@ lane_b:
   reading: "Scientific deism / freethinker: Nature or Supreme Intelligence, unchangeable laws, no personal intervening God, no personal immortality."
   notes: "Lane B only — not a finding. Chart darkness from Lane A certainties."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1910–11 public replies: he calls God 'Nature, the Supreme intelligence,' denies a throned personal god and the soul's immortality, and does not deny that intelligence."
+    cites: [{source: S9, locator: "clarifying letter"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1910–11 interviews agree on a supreme intelligence without a personal god. The 1885 diary of fixed laws and a remote Almighty does not contradict that."
+    cites: [{source: S8, locator: "Columbian paraphrase/quote"}]
 institutions:
   - {value: "Western Union Telegraph Company", role: inventor, kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "Newark paragraph"}], how_known: "Britannica."}
   - {value: "Menlo Park laboratory", role: founder, kind: "research institute", certainty: 0.7, cites: [{source: S6, locator: "Research and development facility"}], how_known: "Wikipedia."}

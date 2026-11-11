@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #128). Refresh SEP Siderits (rev. 2023) and Britannica Lopez (1 Oct 2026); both reaffirm nothing in his own hand and discourses written centuries later. P47 source_quality on S1–S4. P50: Wikipedia EN The Buddha (S4) agrees traditional birth Lumbini / death Kushinagar (Kasia) with Britannica; life years still UNKNOWN (P39). P49 considered and not stretched: SEP §1 explicitly declines to reconstruct the historical Gautama apart from later tradition (unlike Confucius D1 SEP+IEP Tian path), so A/B/C/D stay BELOW_THRESHOLD with named readings only; primary stays BELOW with BUDDH lead (Ruling X2 / P42). E UNKNOWN; mid BELOW; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (GA6) the SEP lines 'governed by the causal laws of karma', 'good actions cause pleasant fruit' and gods undergoing rebirth relocated to §1 and labelled as the Upaniṣadic and śramaṇa milieu, not his teaching; the B and C karma readings rest on the §4 line ('What the Buddha teaches is instead the far stricter view that each action has its own specific consequence ...'). Ruling X2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with BUDDH as the lead (recorded under P42). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 129). Basics from Britannica 'Buddha' (Donald S. Lopez with Britannica Editors, 1 Oct 2026; body only) and SEP 'Buddha' (Mark Siderits, rev. 2023). Nothing survives in his own hand; the discourses were not written down until several centuries after his death (both sources), so everything attributed to him is reported speech (P42 addendum, Confucius precedent). primary_system BELOW_THRESHOLD (BUDDH lead; the Founders rule names Buddha → BUDDH, RQ-X2); A, B, C, D BELOW_THRESHOLD with readings named; E UNKNOWN; mid_basin BELOW_THRESHOLD. Life dates, era and span UNKNOWN (P39). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: gautama-siddhartha
   display_name: "Siddhartha Gautama"
@@ -117,6 +118,17 @@ lane_b:
   reading: "Karma as impersonal causal law, in the reconstructed teaching (named lead only; P49 not stretched)."
   notes: "Lane B labeled model. Deepen D1 keeps all scored axes BELOW under X2/P42."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The file treats the teaching as later compilations, not sentences in his own voice, and declines a separate historical creed."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No statement the file treats as his own is available to compare."
 institutions: []
 collaborators: []
 

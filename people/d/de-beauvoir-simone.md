@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 72). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited) and SEP (Bergoffen and Burke, rev. 2023). Worldview from The Ethics of Ambiguity (1947; Frechtman translation 1948, marxists.org web copy), Part I. Not a scientist (P30). primary_system EXIST (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B UNKNOWN (P16); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2d75649, run 1). mid_basin how_known explains BELOW_THRESHOLD: the A ≥ 3 branch reads A only (P10). SEP's 'at age fourteen' line cited explicitly for A 4. EXIST kept (0.5, alternative ATHE), with a note that the EXIST system file does not separate atheist from theist existentialism."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #71, F5 rank 72). Needs: A faded; B UNKNOWN; sources 3. Dual bio: Britannica Editors (S1; live Cloudflare-thin, Top Questions via Wayback) + Wikipedia EN (S5, P50). Primary/own words: Ethics of Ambiguity Part I–III Frechtman (S3 marxists.org web copy, 0.7 cap) — 'far from God's absence authorizing all license'; 'if God does not exist, man's faults are inexpiable'. Memoirs of a Dutiful Daughter (1958) S6 — IA borrow 401; long quotation via W. Scott Haine / A Woman's Paris (secondary quotation): 'One night I summoned God, if He really existed… I was very glad He didn't exist.' Paris Review Art of Fiction No. 35 (S7, recorded interview): acknowledges lost religious faith. All Said and Done 1974 p. 478 (S8, secondary quotation via Wikipedia/Goodreads): atheist vs faith-as-evasion. Force of Circumstance lead 'God had died when I was fourteen' noted in open_questions (IA 401). Added Ethics of Ambiguity 1947 as lasting contribution (Britannica Top Questions + SEP §5). P47 source_quality on S1–S8. A_locus 4 @0.5 → 4 @0.7 (written_profession; drop BELOW_THRESHOLD alt — Memoirs/All Said resolve Ethics conditional; unofficial Ethics + secondary Memoirs keep 0.7 not 1.0); support stays corroborated (S3+S2+S6+S8). B_cause stays UNKNOWN (not a scientist; Ethics 'nature' passages are human-nature/ethics/Hegel, not P16 natural order; P41 not stretched from 'strange power'). primary_system EXIST @0.5 alt ATHE unchanged. mid_basin BELOW_THRESHOLD → false @0.7 (A≥3 branch, P10). Chart-moving NO (still unplotted: B UNKNOWN). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: de-beauvoir-simone
   display_name: "Simone de Beauvoir"
@@ -179,6 +180,19 @@ lane_b:
   reading: "Secular atheist existentialism; mid_basin false via A 4."
   notes: "Lane B only. Not plotted (B_cause UNKNOWN)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Published Memoirs: 'I was very glad He didn't exist.' All Said and Done sets the atheist who 'confronts honestly' against faith; she tells the Paris Review she lost religious faith."
+    cites: [{source: S6, locator: "Jockey / mysticism passage"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "Memoirs, The Ethics of Ambiguity, All Said and Done, and the Paris Review agree on God's absence. No adult return to the church is in the file."
+    cites: [{source: S8, locator: "p. 478"}]
 institutions:
   - {value: "Les Temps modernes (co-founder and editor, 1945)", role: editor, kind: other, certainty: 0.7, cites: [{source: S1, locator: "paragraph 2"}], how_known: "Britannica."}
 collaborators:

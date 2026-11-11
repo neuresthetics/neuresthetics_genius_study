@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #158, F 3, rank 166). Needs: hunt own-voice; keep UNKNOWN if silent; do not force plot. Read Dupuy 1896 (Wikisource full text / NUMDAM ASENS; S3): mother Adélaïde-Marie remained a lifelong professing Christian who reduced religion to a moral envelope — MacTutor's 'imparted her own scepticism' is a tertiary paraphrase that contradicts Dupuy, so the AGNOS lead is weakened, not confirmed. Own letter to Chevalier of 25 May 1832 rejects Saint-Simonian 'conversion' efforts ('la vanité de tes efforts'); not a statement about God (Z8 lead kept, now with Dupuy quote). Deathbed refusal of a priest is Dupuy/Wikipedia reported account, not own words — cannot score (CODING_GUIDE §1 / reported speech). 'Je prends le ciel à témoin' in the 29 May farewell is a figurative oath, not theology. No own-voice locus, nature-order, or afterlife statement found. Not a scientist (P30 pure algebra). primary/A/B/C/D/E/mid stay UNKNOWN; not plotted. P50 Wikipedia dual bio (S4). P47 source_quality on S1–S4. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (v8's call on the auditor's advice): 1832 Chevalier letter added as a non-scoring lead in coder_notes. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 166). Source: MacTutor biography (O'Connor and Robertson, signed). No own words on religion found; MacTutor says his mother taught him religion and 'imparted her own scepticism to her son' (the biographers' words, not his). Not a scientist (pure algebra; Knuth, Tao, Noether-algebra precedents; P30). primary_system UNKNOWN (lead AGNOS from the mother's scepticism); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1829–1832, age 18. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: galois-evariste
   display_name: "Évariste Galois"
@@ -126,6 +127,18 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Dupuy's life was read. The 25 May 1832 letter rejects a Saint-Simonian conversion and states no creed. A deathbed priest refusal is reported speech only."
+    cites: [{source: S3, locator: "La vie d'Évariste Galois"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Prison in 1831–32 is recorded. The file does not call it a religious prosecution."
+  practice_gap:
+    gap: unknown
+    evidence: "The checked letter and biography state no religious affiliation."
 institutions:
   - {value: "École Normale (préparatoire)", role: "student", years: "1829–1830", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor; expelled 1830."}
 collaborators:

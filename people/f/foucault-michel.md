@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #116 / F4 rank 117). Goals: find own texts on God/nature if any; keep honest BELOW/UNKNOWN; prefer interviews/essays in or near span. Read Caruso 1967 Qui êtes-vous / Conversation (Dits et écrits I §50/61; S5): species 'ne fonctionnaient pas … ni pour Dieu'; idea of God as functional myth parallel to humanism; 'you believe in the transcendental and I don't' = Kantian transcendental, not God-locus. Qu'est-ce qu'un philosophe? (1966; S6): death of God as Hegel/Feuerbach/Nietzsche diagnosis, not personal denial. Foucault Responds to Sartre (Foucault Live; S7): man as correlative image of god / death of subject not death of god. Dual bio Wikipedia EN (S8, P50) labels him atheist via secondary cites only. P47 on S1–S8. A stays BELOW (no own A1–A4; cultural God-talk and scholar absence-report do not settle locus; P20: absence ≠ ATHE without denial). B UNKNOWN→BELOW (philosopher, P16/P30: anti-teleology and episteme histories checked; no own-voice natural-law / exception claim). mid UNKNOWN→BELOW (A and B both BELOW). primary BELOW unchanged (ATHE lead only). Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): FO5, The History of Sexuality item now the multivolume work, range 1976–1984 (vols. 2–3 in 1984, SEP); span and working_years 1975–1979 -> 1975–1984; note, SEP revision date (21 April 2026) added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 117). Basics from Britannica (James Faubion, Britannica Editors) and SEP (Gutting and Oksala); Catholic upbringing and the absence of belief from Michael C. Behrent's Commonweal interview (15 October 2026). No text of his own on God or nature read. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1975–1979 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: foucault-michel
   display_name: "Michel Foucault"
@@ -161,6 +162,18 @@ lane_b:
   reading: "Power and knowledge as inseparable; the subject formed by practices."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "The 1966–68 interviews were read. The death of God is a cultural diagnosis. They state no personal affiliation or denial."
+    cites: [{source: S6, locator: "reply on death of God"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "The checked interviews state no affiliation."
 institutions:
   - {value: "University of Lille", role: "teacher", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Education and career'"}], how_known: "Britannica; years not stated (after 1952)."}
   - {value: "French cultural service (Uppsala, Warsaw, Hamburg)", role: "cultural attaché", years: "1955–1960", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Education and career'"}], how_known: "Britannica."}

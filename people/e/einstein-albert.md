@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.5"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and essay transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #6). P47 source_quality on every source. Split bundled S3 (sacred-texts Ideas and Opinions transcription) into three independent primaries: S3 Religion and Science (NYT Magazine 1930), S8 Science and Religion II (Symposium 1941), S9 Science and Religion I (Princeton Theological Seminary 1939). Wording verified against Ideas and Opinions (Crown 1954) teaching PDF of book pages (Pitt Norton). B_cause cites S3+S8 → support single → corroborated; A stays corroborated (S4+S8+S5); C S3+S4 corroborated; D S9+S8 corroborated (was single under one id); E S3+S8 corroborated. Axis values/certainties unchanged (third-person / named-alt ceilings). self_described_science_religion_relation §7 unofficial-web cap lifted after scholarly-edition check (certainty 0.7 → 1.0). Chart: dark hollow → dark filled (B corroboration). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Kaku) and MacTutor. Worldview from the 1929 cable to Rabbi Goldstein (JTA print), the 1930 essay 'Religion and Science' and the 1939/1941 'Science and Religion' (Ideas and Opinions transcription), and SEP 'Pantheism' §12. Coded PANT at 0.7 (AGNOS and ATHE named). A 4 (0.7), B 4 (1.0), C 4 (0.7), D 3 (0.7), E 4 (1.0). mid_basin false. Lane B and minor fields partly TODO. Not reviewed."}
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period 1905–1915 → 1905–1925; worldview.working_years 1905–1955 → 1905–1925, equal to the span (P30 addendum f); lasting item added: Bose–Einstein statistics for atoms and the prediction of Bose–Einstein condensation (1924–1925); source S7 added; 7 headline values rest on evidence outside the span and are left unchanged for a ruling (open questions). Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 7 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: einstein-albert
   display_name: "Albert Einstein"
@@ -276,6 +277,19 @@ lane_b:
   reading: "As belief, not finding: form present and acquired in adolescence; circle partly present. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1929 cable: he believes in Spinoza's God, revealed in the lawful harmony of what exists, not in a God who deals with human fates. No synagogue membership is reported."
+    cites: [{source: S4, locator: "cable text"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1930 and 1941 essays keep the same non-interfering God. The 1939 line on the Jewish-Christian tradition is about moral ends, not a church."
+    cites: [{source: S3, locator: "Religion and Science (1930)"}]
 institutions:
   - {value: "Swiss Patent Office, Bern", role: "technical expert", years: "1902–1909", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "Biography"}], how_known: "MacTutor; Britannica agrees."}
   - {value: "Institute for Advanced Study, Princeton", role: "professor", years: "1933–1955", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "Biography (offer of a post at Princeton after the 1932 visit)"}, {source: S1, locator: "Quick Facts"}], how_known: "MacTutor gives a post at Princeton from 1933 and death there (S1). The Institute is not named in the text read, so 0.7 (gap)."}

@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth TODO→Muslim (Seljuq Nishapur) @0.7 from SEP S4 + MacTutor S5; baptism/catechism UNKNOWN; family_religion filled at 0.5. Context only. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 63). Basics from Britannica (Britannica Editors, unsigned). Scientist under P30 (algebra, astronomy). The quatrains are not scored: Britannica says some scholars doubt he wrote poetry and that the verses appeared under his name only two centuries after his death (P42). primary_system UNKNOWN; A UNKNOWN; B 3 at 0.5 (alt 4) from working science only (P35); C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). mid_basin BELOW_THRESHOLD -> UNKNOWN (P19). Note added: a single quatrain needs a specific scholarly attribution; his treatise on existence is the lead for A."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #62, F5 rank 63). Needs: A UNKNOWN; B single source; B faded; 1 source. Primaries: Aminrazavi Wine of Wisdom 2007 Appendix A English of six philosophical treatises (new S3) — Principles of Existence (Necessary Being = God Most High), On Existence §20 (Necessary Being essence), Necessity of Contradiction (causal series to Necessary Being; evil accidental). SEP Mousavian et al. 2023 (new S4) corroborates Avicennan Necessary Existent / treatises as his. MacTutor (new S5) bio/math. Quatrains still unscored (P42). A UNKNOWN→1@0.7 written_profession support corroborated (alt BELOW if poetry corpus counted); B 3@0.5 single→3@0.7 written_profession support corroborated (alt 4); primary_system CLASS_THEISM@0.7 (ISLAM nominal); mid_basin true@0.7. P47 on S1–S5. Chart-moving YES (newly dark filled). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: khayyam-omar
   display_name: "Omar Khayyam"
@@ -182,6 +183,19 @@ lane_b:
   reading: "Lane B only: geometric form present in the cubic/Euclid work; no H1 claim. Avicennan Necessary Being worldview is Lane A."
   notes: "Do not treat Lane B geometry as evidence for A/B scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Philosophical treatises call the Necessary Being God Most High and, as the file reads them, praise God and the Prophet. A life-long shariah adherence is the biographer's claim. Birth milieu was not used."
+    cites: [{source: S3, locator: "Appendix A, Principles of Existence (6), p. 309"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent under the Seljuqs."
+  practice_gap:
+    gap: aligned
+    evidence: "The treatises identify God Most High as Necessary Being and do not retract it. The Rubaiyat were not used; attribution is barred in the file."
+    cites: [{source: S3, locator: "Appendix A, On Existence §20, p. 317"}]
 institutions:
   - {value: "Court of the Seljuq sultan Malik-Shāh, Eṣfahān (observatory / calendar commission)", role: astronomer, kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "calendar paragraph"}, {source: S5, locator: "Malik-Shah / Esfahan paragraphs"}], how_known: "Britannica and MacTutor."}
   - {value: "Patronage of Abū Ṭāhir, Samarkand (during Algebra composition)", role: mathematician, kind: "patron or funder", certainty: 0.7, cites: [{source: S5, locator: "Samarkand paragraph"}], how_known: "MacTutor."}

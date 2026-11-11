@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #214/228, F 3, rank 227). Opened Ordinatio Prologue (Peter L.P. Simpson EN, aristotelophile PDF) nn.11, 60, 70, 77 (mediate→immediate efficient cause; absolute power separability; intuitive knowledge conserved of non-existent; theological truths including 'God is'); Kilcullen PhTh documenting Quodl. 6 q.1 ordinate/absolute and the famous proposition (secondary causes → God can produce immediately); IEP Kaye (divine command; fideism); Wikipedia EN dual bio (P50). Lifted CLASS_THEISM, A 1, B 3 from scholarly_reconstruction @0.5 to written_profession @0.7 (alts kept: A alt 0; B alt 2). P48 support corroborated on A and B. mid_basin BELOW_THRESHOLD → true @0.7. Chart-moving YES (would-be faded hollow → dark filled at next figures refresh; mid newly true). RQ-AA8-1 B 3 value kept; basis lifted off reconstruction by own-voice (Scotus pattern). P47 source_quality; P49 not silently raised. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Newly plottable (A 1 / B 3, both 0.5); mid_basin BELOW_THRESHOLD."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit note: A 1 now rests on §6.2/§7.2; B stays UNKNOWN, held with Plotinus and Duns Scotus under RQ-AA8-1 pending Jason."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 227). Source: SEP 'William of Ockham' (Spade, Panaccio and Pelletier, 2024, read in full). Lasting: metaphysical nominalism, for which he is 'probably best known today', and 'Ockham's Razor', 'named after him' (S1). Dated by the academic writings, begun with the Sentences commentary (1317–18) and largely finished by about 1325 (S1): composition range 1317–1325 at 0.5 (RQ-Z9-N1), age 30 (born c. 1287). Worldview: Franciscan friar and theologian; CLASS_THEISM at 0.5 (scholarly_reconstruction; Duns Scotus precedent); A 1 at 0.5 (God's power can override natural causes; divine command ethics; S1). B: S1 §5–6 sets out his natural philosophy (natural causes act 'in the natural order and in the absence of divine intervention'; God 'can always' neutralize a natural effect), but that is a scholar's reconstruction for a non-scientist, so B stays UNKNOWN pending RQ-AA8-1 (Jason undecided). Note for Jason: the Duns Scotus record already carries a reconstruction-based B 3 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: william-of-ockham
   display_name: "William of Ockham"
@@ -195,6 +196,20 @@ lane_b:
   reading: "No data beyond the ordered natural-philosophy / absolute-power structure."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Franciscan friar and theologian in the Roman Catholic order through his death."
+    cites: [{source: S1, locator: "§1.1"}]
+  conformity_pressure:
+    level: high
+    evidence: "The file records an Avignon trial, flight from Avignon with Michael of Cesena in 1328, and refuge at Ludwig of Bavaria's court."
+    cites: [{source: S1, locator: "§1.3"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The Ordinatio Prologue states theological truths about God, the Trinity, and the Incarnation. The file does not quote a later denial of that theology."
+    cites: [{source: S3, locator: "Ordinatio Prologue n.11"}]
 institutions:
   - {value: "Franciscan Order", role: "friar; Venerable Inceptor", years: "c.1294/1300–1347", kind: "religious body", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}, {source: S5, locator: "lead"}], how_known: "SEP and Wikipedia."}
   - {value: "University of Oxford", role: "theology student / Sentences commentator", years: "c.1317–1324", kind: "university", certainty: 0.5, cites: [{source: S1, locator: "§1.1"}, {source: S5, locator: "Education"}], how_known: "SEP and Wikipedia; never completed the mastership."}

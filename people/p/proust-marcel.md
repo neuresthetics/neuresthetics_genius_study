@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1 queue #191)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 203). Source: Britannica, signed by George Duncan Painter (scholars edition, read in full). Lasting work: À la recherche du temps perdu (1913–27); 'The entire climate of the 20th-century novel was affected' by it (S1). First volume November 1913; the last three volumes are posthumous, so the span ends at his death, 1922 (posthumous rule; P29 never past death). Span 1913–1922, age 42. Worldview: no own words on belief read; S1 reads the novel as 'set in the context of human religious experience', its subject 'salvation' (a critic's reading of fiction, not a profession). Catholic father, Jewish mother (S1). primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #191/228, F3 rank 203). Goals: letters/essays own words if any; keep silence if none; do not force plot. Dual bio Wikipedia EN (S3, P50): baptized 5 Aug 1871 Saint-Louis-d'Antin, confirmed, never formally practised; White 'mystical atheist' is biographer label only. Opened de Vendeuvre RHLF 2008 (S4) and Mimouni 2024 (S6) quoting Kolb Corr. XIV p. 218 letter to Lionel Hauser, early Sept 1915 (in-span): 'si je n'ai pas la Foi, comme tu dis, en revanche la préoccupation religieuse n'est jamais absente un jour de ma vie' and refusal to affirm beyond what one believes. Opened Topping ch. 'Religion' in Watt (ed.) Marcel Proust in Context (S5): 1908 letter to Mme Straus denying belief in Heaven (Corr. viii, 278; pre-span, P31); 1906 Lauris consolation-in-prayer line addressee-inflected. Montesquiou May 1896 Catholic-like-father line is heritage identity, not adult creed. Guermantes Way 'highest praise of God… atheist' is novel narrator (P42 unused). L'Irréligion d'État 1892 is political anti-fanaticism, not personal creed. Kolb print volumes unread (secondary quotations only). primary_system UNKNOWN→BELOW_THRESHOLD (leads AGNOS/ATHE/SECHUM; P19). A UNKNOWN→BELOW_THRESHOLD (no Faith ≠ God locus/denial; Joyce pattern). B stays UNKNOWN (not a scientist; P16/P30). mid_basin UNKNOWN. Not plotted. Chart-moving NO. P47 on S1–S6. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: proust-marcel
   display_name: "Marcel Proust"
@@ -168,6 +169,19 @@ lane_b:
   reading: "No scored Lane A axes. Biographer 'mystical atheist' and novel religious allegory stay outside Lane A."
   notes: "Lane B separate from Lane A axis scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Private letter to Hauser, Sept 1915: he accepts that he has not the Faith (S4, Kolb XIV p. 218). Private 1919 letter: no mass since first communion (S6)."
+    cites: [{source: S4, locator: "quoting Kolb Corr. XIV p. 218"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: mixed
+    evidence: "The 1915 and 1919 letters match absence of Faith and of mass. A May 1896 letter says he is Catholic like his father (S3)."
+    cites: [{source: S4, locator: "quoting Kolb Corr. XIV p. 218"}]
 institutions: []
 collaborators: []
 

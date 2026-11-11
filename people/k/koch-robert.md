@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #202/228, F 3, rank 215). Goals: firm B; seek any A; do not force plot. Read: Koch 1882 Die Aetiologie der Tuberkulose English (Pinner/Pinner via German History Intersections; S6) — own-words complete proof of parasitic nature / causal connection of tubercle bacilli; Encyclopedia.com DSB Dolman (S8) — parents Lutherans; Deutsche Biographie NDB Kümmel (S9) — Konfession lutherisch; Wikipedia EN Personal life (S7) citing Brock 1988 p. 296 'Religion never entered his life' (secondary biographer characterization, not Koch own-words). Nobel lecture (S10) is prophylaxis/control, not B/A. B stays 3 @ 0.5 inference_from_work; support labelled corroborated (S1+S6; P48); alt 4 named (P35 working-science cap — no own statement on law-and-exception / miracles). A stays UNKNOWN (P19): no first-person God/religion statement; Brock/Wikipedia irreligious is secondary only; Lutheran is heritage. primary_system UNKNOWN. mid UNKNOWN. Chart-moving NO. Childhood parents + Lutheran heritage filled. P47 source_quality on S1–S10. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: postulates item year stays UNKNOWN, with 1884 as the candidate only (catalogue record, paper not read)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: postulates candidate year 1884 (S4), span alternative 1876–1884; death 27 May 1910 at 0.7 (NobelPrize.org, S5); region of work Eastern Europe (Wollstein), alternative Western Europe."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 215). Source: Britannica scholars edition, signed by Lloyd Grenfell Stevenson (read in full); Britannica students edition (S3) for the death-day conflict. Lasting: the anthrax life cycle (announced at Breslau, 1876), which 'afforded for the first time convincing proof of the definite causal relation of a particular microorganism to a particular disease' (S1); Koch's postulates (named after him; S1 gives no year; candidate 1884, Die Aetiologie der Tuberkulose, Mitt. Kaiserl. Gesundheitsamte II, S4). Tuberculosis (1882) and cholera (1883) discoveries carry prize-time praise only in S1 (Nobel 1905), so not listed as lasting (P13). Span 1876 at 0.5, alternative 1876–1884 (postulates candidate year), age 33. Death 27 May 1910 at 0.7 (NobelPrize.org, S5). Region of work Eastern Europe (Wollstein, now Wolsztyn, Poland, where the span took place: AA6 rule, P3 modern country), alternative Western Europe. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: koch-robert
   display_name: "Robert Koch"
@@ -147,6 +148,17 @@ lane_b:
   reading: "As belief, not finding: no geometric form; circle unclear. The record does not test H1 (A UNKNOWN)."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The 1882 paper and the biographies give no religious sentence of his own. Lutheran parents are heritage. A biographer's line that religion never entered his life was not used."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Imperial Health Office, Berlin", role: "head of bacteriology laboratory", years: UNKNOWN, kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "Contributions to general bacteriology and pathology"}], how_known: "Britannica; years not given."}
 collaborators:

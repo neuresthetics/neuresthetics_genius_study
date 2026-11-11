@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (main work 1945–69; Jason, 2026-10-02). Basics from Britannica (Ferry), the Nobel biography and Dodson's Royal Society memoir (2002). No writing of hers on religion was found; the memoir reports Quaker-type values from her mother and Margery Fry and quotes Max Perutz's memorial address ('more Christian in word and deed than many believers I have known'), which is another person's view. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #150 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 and §7. #150 (run 1): candidate_codes_considered was empty; CHRIST is now listed as considered, not coded (§5.3). #158 (run 1): death place 'Shipston-on-Stour, Warwickshire' (0.7) → 'Ilmington, Warwickshire (at home, Crab Mill)' (0.5), per Dodson's memoir p. 188, with Britannica's Shipston-on-Stour as the alternative (sources disagree, as for Pasteur). Decision P12: first_lasting_contribution_year 1945 → 1942 (start of the listed 1942–1945 penicillin item; Nobel biography), age 35 → 32; era unchanged. Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #93, F4 rank 94). Needs: A BELOW (no own-voice; Perutz memorial third-party); B 3 @0.5 alt 4 (P35 working science); primary BELOW; mid_basin BELOW; not plotted. Dual bio: Britannica Ferry (S1) + Wikipedia EN (S5) (P50). P47 source_quality on S1–S10. Read Ferry Dorothy Hodgkin: A Life (Bloomsbury Reader / IA OCR, S6) cover-to-cover search for religion/God/Quaker/atheist/Creator/afterlife — zero hits for religion/atheist/believer/Creator/afterlife as Dorothy's creed; Quaker mentions are husband's family, Kathleen Lonsdale, Hongying Liao, not her membership; church wedding with Communist vicar quoting Marx (ch. 4); biographer: resisted labels / would not have called herself a pacifist (ch. 9). Hektoen/Pearce (S7): Quaker affinities via marriage and pacifism but 'did not formally belong to the Society of Friends'. Nobel lecture PDF (S8) technical crystallography only — no nature-order / miracle / God. Nobel women-story attributed quote 'I believe in perfecting the world…' (S9) is humanitarian/peace, not a place/deny of God; primary interview page unread. NCUACS catalogue (S10): notebook notes on science and religion partly translation exercises / uncertain own theology; Thomas (husband) letter wished 'good old-fashioned Christian burial' — not Dorothy. A stays BELOW_THRESHOLD (Pasteur/Hilbert pattern; third-party eulogies cannot score A alone). B stays 3 @0.5 alt 4 inference_from_work (P35); support corroborated S1+S8 on method (P48); certainty still 0.5 under P35; no P16 explicit nature-order statement found. primary BELOW; mid_basin BELOW (A blocks P4). Chart-moving NO. Filled family_religion @0.5 (mother's strong religious convictions; father less so; not Quaker by birth). No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hodgkin-dorothy
   display_name: "Dorothy Hodgkin"
@@ -154,6 +155,18 @@ lane_b:
   reading: "As belief, not finding: form partly present, circle unclear, A BELOW, B 3 @0.5. The record does not test H1; unplotted."
   notes: "Chart-moving NO this pass (need A≥0.7 and B≥0.7)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Ferry's biography and the Nobel lecture were checked; no own religious affiliation. A Quaker link is by marriage, and she was not formally in the Society of Friends."
+    cites: [{source: S6, locator: "ch. 1"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Those sources do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Somerville College, Oxford", role: "research fellow, then Official Fellow and Tutor in Natural Science", years: "1934–1977", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Education and marriage', paragraph 2"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
   - {value: "University of Oxford (Chemical Crystallography)", role: "lecturer and demonstrator (1946), Reader in X-ray Crystallography (1956)", years: "1946–1977", kind: university, certainty: 0.7, cites: [{source: S2, locator: "paragraph 6"}], how_known: "Nobel biography."}

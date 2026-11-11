@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 11
+  schema_version: "1.5"
+  record_version: 12
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
   collected_on: 2026-10-01
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #43). P47 source_quality on S1–S14. P48 support: corroborated written on A–E (already computed). Re-verified Molecules (1873) A/B quotes against Victorian Web Nature transcription (S14). Baptism 1831-07-29 at St Andrew's (now St Andrew's & St George's), Edinburgh (Clerk Maxwell Foundation walking tour S14). Schooling run_by added. A 0 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. E still 3 @0.5 (Theerman paywalled). No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
@@ -21,6 +21,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; quote kinds relabelled (P18/P28); kind lists (P21: research institute, school stage and run_by, scholarly edition). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P30 rule 5 age sweep: ages recomputed as event year − birth year, with no month adjustment (scripts/recompute_ages.py; every change is in reports/p30_age_changes.csv). No other value changed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: maxwell-james-clerk
   display_name: "James Clerk Maxwell"
@@ -332,6 +333,19 @@ lane_b:
   reading: "As belief, not finding: Maxwell is a case of early geometric form without the circle, in a devout Christian whose physics allows no exemptions inside nature. The v7.1 papers say a devout lawful physicist 'is predicted, not forbidden', and list as damaging 'Faraday/Maxwell look like late professional lawfulness only'. For Maxwell the form is documented from age 14, before any professional training, so this record does not support the 'late professional lawfulness only' reading. It also does not test H1, which is about the circle; here the circle is absent."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Elder of the Church of Scotland kirk at Parton, leaving Cambridge for the midsummer communion. He also attended a Baptist chapel in London."
+    cites: [{source: S3, locator: "p. 371"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "An 1852 letter calls Christianity the religion of the Bible. Eldership and that letter match. No contrary adult text is in the file."
+    cites: [{source: S4, locator: "p. 179"}]
 institutions:
   - {value: "Trinity College, Cambridge", role: "Fellow", years: "1855–1856", kind: university, certainty: 0.7, cites: [{source: S1, locator: "Early life ('elected to a fellowship at Trinity')"}], how_known: "One source; years inferred from his move to Aberdeen in 1856."}
   - {value: "Marischal College, Aberdeen", role: "Professor of Natural Philosophy", years: "1856–1860", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Early life"}, {source: S2, locator: "Biography"}], how_known: "Two sources agree."}

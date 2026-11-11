@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica, MacTutor, his Nobel autobiography (Les Prix Nobel 1983) and Parker's NAS Biographical Memoir (1997). Worldview from his own words in the AIP interview of 6 October 1987 (Krisciunas): 'he knew I was an atheist'. primary_system ATHE at 0.5 (one oral self-description; no basis type fits a recorded interview, so capped by analogy with the single-letter rule; flagged). A 4 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #74, F5 rank 75). Needs: A single source; A faded; B faded. Quotable documents beyond S5 (P8): Wali Chandra (1991) p.304 atheist dialogue (S7; secondary quotation via Wikipedia cite-quote + Swarajya long extract); Wali (ed.) Man Behind the Legend (1997) for the 1987 Chicago Colloquium Gita preface 'I consider myself an atheist' (S8; secondary quotation); Free Inquiry 35.5 Haught Speaks block with Gita 'written by man' and 'definitely as an atheist' (S9). Dual bio Wikipedia EN (S10, P50). P47 source_quality on S1–S11. Truth and Beauty Kerr 'shuddering before the beautiful' via MacTutor Kerr biography (S11; secondary quotation) — aesthetic match of mathematics to Nature, not a law/exception claim (P35). primary_system ATHE 0.5→0.7 (written_profession on 1987 colloquium + recorded_interview Wali 1991; S5 paraphrase in support); A 4 0.5→0.7 support single→corroborated (S8+S7+S9; S5 support); drop A alt BELOW_THRESHOLD. B_cause stays 3 @0.5 inference_from_work (P35 alt 4); support labelled corroborated (S4+S5+S11 aesthetic). D UNKNOWN→4 @0.7 support corroborated (Gita not divine / written by man). mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Chart: faded hollow → faded filled (A corroborated @0.7; B still faded @0.5). Chart-moving YES (fill). Native Tamil name from Wikipedia. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: chandrasekhar-subrahmanyan
   display_name: "Subrahmanyan Chandrasekhar"
@@ -229,6 +230,19 @@ lane_b:
   reading: "As belief, not finding: form present, no circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Public remarks in 1987 and 1991: 'I consider myself an atheist' and 'I am an atheist.' He treats the Gita as literature, not revelation."
+    cites: [{source: S9, locator: "Speaks block (Would you call yourself a religious person?)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1987 and 1991 statements say he is an atheist and refuse the Gita as divine. Hindu upbringing is described as heritage he can live with."
+    cites: [{source: S8, locator: "1987 Chicago Colloquium Gita session"}]
 institutions:
   - {value: "Trinity College, Cambridge", role: "Prize Fellow", years: "1933–1937", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 4"}, {source: S4, locator: "Trinity paragraph"}], how_known: "Two sources (Britannica gives 1933–1936)."}
   - {value: "University of Chicago (Yerkes Observatory to 1964, then the campus)", role: "research associate (1937); Morton D. Hull Distinguished Service Professor (1952)", years: "1937–1995", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 5"}, {source: S1, locator: "paragraph 4"}, {source: S4, locator: "Chicago paragraphs"}], how_known: "Three sources."}

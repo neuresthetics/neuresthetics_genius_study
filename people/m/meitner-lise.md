@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica, the Jewish Women's Archive encyclopedia (Rife) and a 2024 Society of Catholic Scientists article (Moritz), which quotes her letters through Schweighofer (2013) and Sime (1997). Baptized Protestant (Lutheran) in 1908; no own statement of Christian doctrine found. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 and D 3 at 0.5; A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #99/#100: the JWA baptism sentence is paragraph 7 counting the In Brief summary as 1 (the sixth body paragraph after it), not paragraph 3; locators fixed and the counting rule stated in S2. Finding #106: the 1942 quotation joins two fragments around 'she exclaimed', now marked with [...]. Finding #107: Sime's translation reads 'deep awe and joy' (Sime 1996, p. 375), seen as reproduced on todayinsci.com (new S5); S3's 'deep joy and awe' is noted as a variant. Finding #95: D_authority 3 (0.5) → BELOW_THRESHOLD, because the exception rested on S3's paraphrase about Bible verses, not her own words (§6). primary_system (BELOW_THRESHOLD) and mid_basin (BELOW_THRESHOLD) unchanged. Not reviewed."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #52, F5 rank 52). Needs: A BELOW_THRESHOLD; B faded. P47 source_quality on S1–S7. New: S6 O. R. Frisch, Biographical Memoirs FRS 16 (1970) — father freethinker; children baptized / grew up Protestant; 'would not accept complete atheism' (nephew memoir; JSTOR preview; full PDF blocked). S7 Wikipedia EN dual-source bio + 1945 Frida letter 'I am not Jewish by belief…' (Sime via wiki). Nature 1939 paywalled this pass (HTML shell only). Sime 1996 print/IA lend unread; Schweighofer 2013 unread. A stays BELOW_THRESHOLD (Frisch rejects complete atheism but is not her God-locus statement). B stays 3 @ 0.5 inference_from_work, alt 4 (P35); support labelled corroborated (S1+S3; P48). primary_system stays BELOW_THRESHOLD (CHRIST candidate strengthened by Frisch, still no doctrine of her own). Chart-moving NO (A BELOW; B faded @ 0.5). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: meitner-lise
   display_name: "Lise Meitner"
@@ -179,6 +180,20 @@ lane_b:
   reading: "As belief, not finding: form unclear, no circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Baptized Evangelical/Lutheran in 1908, as an adult; member of St.-Annenkirche, Berlin-Dahlem, and later of Engelbrektskyrkan, Stockholm."
+    cites: [{source: S2, locator: "paragraph 7 ('In 1908 on a visit to Vienna…')"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S2 records that she fled to Sweden in 1938. The file does not state a sanction for religious dissent."
+    cites: [{source: S2, locator: "paragraphs 4–12"}]
+  practice_gap:
+    gap: aligned
+    evidence: "Adult Lutheran baptism and congregational membership match. A 1945 letter says she is not Jewish by belief, which does not contradict that membership."
+    cites: [{source: S3, locator: "Sweden section"}]
 institutions:
   - {value: "Kaiser Wilhelm Institute for Chemistry, Berlin", role: "head of the physics section", years: "1918–1938", kind: "research institute", certainty: 1.0, cites: [{source: S2, locator: "paragraph 7"}, {source: S3, locator: "Berlin section"}], how_known: "Two sources."}
   - {value: "Nobel Institute of Physics, Stockholm", role: "researcher", years: "1938–1940s", kind: "research institute", certainty: 0.7, cites: [{source: S2, locator: "Stockholm paragraph"}], how_known: "JWA."}

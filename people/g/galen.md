@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (Asclepeion is later training, not birth confession; cf. Hippocrates). Chart-moving NO."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 97). Basics from Britannica (Vivian Nutton, signed; body only) and SEP 'Galen' (P. N. Singer, 2021). Worldview from De usu partium XI.14 (written 169–176), in R. Walzer's translation (Galen on Jews and Christians, 1949) as reproduced on Roger Pearse's page, with his remarks on the 'undemonstrated laws' of the followers of Moses and Christ; secondary quotations, primary check pending. Scientist (P30). primary_system PLATO (0.5, alt HELLEN); A 1 (0.5, alt 2); B 3 (0.5, alt 4); D 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit notes applied (gs_08be43b_P run 1: 39 hold, 6 weaken; no Galen weakens). Britannica byline now 'Vivian Nutton and Britannica Editors' (note 6); Pearse's inserted '( καὶ )' restored in the De usu partium XI.14 quotation (note 7). Ruling P2 (v8's pick on the auditor's advice): B stays 3 at 0.5, alternative 4. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #96, F4 rank 97). Needs: A 1@0.5 alt 2; B 3@0.5 alt 4; primary PLATO@0.5 alt HELLEN; mid BELOW; plotted faded; scientist (P30). UP XI.14 primary check: Flemming 2017 (S5) quotes Helmreich II 158.19–159.3 Greek (ἀδύνατα φύσει; God chooses τὸ βέλτιστον among δυνατῶν γενέσθαι) with English matching Walzer (S3); SEP Singer §5.2 (S2) independently discusses the Moses contrast and Craftsman + material limitation. May 1968 IA borrow-restricted; Helmreich PDF downloaded but OCR garbled — Greek verified via Flemming's citation of the critical edition. Dual bio: Britannica (S1) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S6. A 1 → 0.7 corroborated (S2+S3+S5); B 3 → 0.7 corroborated (S2+S3+S5), alt 4 kept (Asclepius interventions, Ruling P2 / P40 'certain things' limited scope). primary_system PLATO → 0.7 alt HELLEN. mid_basin BELOW → true @0.7. Chart-moving YES: faded→dark and hollow→filled. No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: galen
   display_name: "Galen"
@@ -185,6 +186,19 @@ lane_b:
   reading: "A craftsman god who chooses the best among nature's possibilities."
   notes: "Deepen D1: A 1 and B 3 both 0.7 corroborated; mid_basin true; chart dark filled."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "On the Usefulness of the Parts: a Platonic craftsman God, limited by matter, against Moses' view that everything is possible for God."
+    cites: [{source: S3, locator: "De usu partium XI.14"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The same treatise and On the Differences of Pulses keep that theology and set it apart from the school of Moses and Christ."
+    cites: [{source: S3, locator: "De differentiis pulsuum ii.4"}]
 institutions:
   - {value: "Gladiators of the high priest of Asia, Pergamum", role: "chief physician", years: "157–", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "Early life paragraph"}], how_known: "Britannica."}
   - {value: "Imperial court, Rome", role: "court physician to Marcus Aurelius and his successors", years: UNKNOWN, kind: "government or state body", certainty: 0.5, cites: [{source: S2, locator: "§1"}], how_known: "SEP ('Adopted as court physician by the emperor Marcus Aurelius')."}

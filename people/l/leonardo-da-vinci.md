@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Roman Catholic (Tuscan/Florentine Latin Church) @0.5 (S1+S6 milieu). Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 51). Basics from Britannica (Heydenreich). Worldview from the notebooks (Richter's English edition, 1888, Gutenberg #5000; private manuscript in a web-copy translation, 0.7 cap). Scientist under P30 (anatomy, mechanics; S1). primary_system BELOW_THRESHOLD (candidates CHRIST, DEISM); A 0 at 0.5 (alt 1); B 3 at 0.5 (alt 4) — No. 1134 says no force fails of its necessary results, but No. 1132 prays to a Lord who 'canst shorten or prolong the lives of men' (RQ2 batch H); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: hold): RQ2 resolved, B stays 3 at 0.5 (alternative 4); reasoning recorded in coder_notes. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #51). Needs: A single source; A faded; B single source; B faded. Verified Nos. 1132–1135, 1208, 1210 in Richter 1883 Literary Works vol. 2 (Italian+English+MS sigla; S4) and No. 1208 in MacCurdy Notebooks vol. 2 (independent translation; S5). Dual-sourced bio via Wikipedia EN (S6). P47 source_quality on S1–S6. P48: A support single→corroborated (S2+S4; alt 1); B support single→corroborated (S2+S4+S5; RQ2/P40/P35, alt 4). Values/certainties unchanged (A 0 @0.5; B 3 @0.5). MS sigla recorded. Chart-moving YES: faded hollow → faded filled. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: leonardo-da-vinci
   display_name: "Leonardo da Vinci"
@@ -173,6 +174,18 @@ lane_b:
   reading: "Necessity as the law of nature under a first Mover, held alongside prayer. Chart: faded filled after D1 (both A and B corroborated; cert still 0.5)."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Notebooks address a Lord and a first Mover, but they name no church. The nominal list is empty. Catholic milieu is heritage only."
+    cites: [{source: S2, locator: "No. 1132"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Court of Ludovico Sforza, Milan", role: "painter and engineer of the duke", years: "1482–1499", kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "'First Milanese period'"}], how_known: "Britannica."}
   - {value: "Francis I of France", role: "First painter, architect and engineer to the King", years: "1516–1519", kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "'Later life in France'"}], how_known: "Britannica."}

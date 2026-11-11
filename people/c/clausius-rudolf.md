@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #203/228, F 3, rank 216). Goals: firm B; seek any A; do not force plot. Read: Clausius 1865 ninth memoir English (Magie/Farber via Lemoyne Giunta; S4) — own-words 'The energy of the universe is constant' / 'The entropy of the universe strives toward a maximum'; Deutsche Biographie NDB Laue + ADB Reinganum (S5) — (evangelisch), Pfarrergeschlecht genealogy; Encyclopedia.com DSB (S6) — father Lutheran pastor; Bonn Rektoratsrede 1884 Über den Zusammenhang zwischen den großen Agentien der Natur (S7, OCR of scan) — physics of light/heat/electricity/ether only, no God/religion. B stays 3 @ 0.5 inference_from_work; support labelled corroborated (S1+S4; P48); alt 4 named (P35 — 1865 cosmic summary is working-science law statement, not a P16 law-and-exception / miracles claim). A stays UNKNOWN (P19): no first-person God/religion; evangelisch / Lutheran pastor line is heritage. primary_system UNKNOWN. mid UNKNOWN. Chart-moving NO. Heritage + childhood confession filled. P47 source_quality on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and MacTutor. No writing of his on religion was found; his father was a pastor and school principal (MacTutor). primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1850–1865 unchanged; worldview.working_years 1844–1888 → 1850–1865, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: clausius-rudolf
   display_name: "Rudolf Clausius"
@@ -157,6 +158,17 @@ lane_b:
   reading: "As belief, not finding: form partly present (principles and consequences), circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The 1865 papers and the 1884 Bonn rectoral address, as read, state no religious profession. A Lutheran pastor family is heritage."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Royal Artillery and Engineering School, Berlin; Docent at the University of Berlin", role: "professor of physics", years: "1850–1855", kind: university, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "Biography (1850)"}], how_known: "Two sources."}
   - {value: "Polytechnikum and University of Zürich", role: "professor of mathematical physics", years: "1855–1867", kind: university, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "Biography (1855)"}], how_known: "Two sources."}

@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch P; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch P, order P32: F 4, rank 96). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from the Zürau aphorisms (notebooks of 1917–18), published by Max Brod and H. J. Schoeps as 'Betrachtungen über Sünde, Leid, Hoffnung und den wahren Weg' in Beim Bau der Chinesischen Mauer (Berlin: Kiepenheuer, 1931), read in the proofread Wikisource transcription. Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD (alt 3); B BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch P audit fixes (gs_08be43b_P run 1: 39 hold, 6 weaken). Page cites corrected from each Wikisource page's own source: no. 50 on p. 234 (KA4), no. 54 on p. 235 (KA5), and the aphorism printed as '70. 71' on pp. 238–239 (KA6, also in the A_locus cites). Ruling P3 (v8's pick on the auditor's advice): A and B stay BELOW_THRESHOLD. Values unchanged; not plotted."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #95, F4 rank 96). Needs: A BELOW alt 3 (Zürau figurative, P3); B BELOW; primary BELOW; mid BELOW; not plotted; not a scientist (P30). Dual bio: Britannica (S1) + Wikipedia EN (S4) (P50). P47 source_quality on S1–S7. Sought Brod diaries/letters on IA (diaries191019230000kafk and peers): OCR download 401 access-restricted — full Brod Diaries not opened. Blue Octavo / Kafka Project quote 'Believing means liberating the indestructible element in oneself…' (S5) is same Zürau-period material and still does not equate God with the indestructible. Wikisource Brief an den Vater (1919, S6): inherited Judaism as 'Nichts' / temple formality — heritage and practice critique, not a place/deny of God (P42/P3). Brod-reported 1920 conversation 'hope enough… only not for us' (Wikiquote via Brod biography, S7) is third-party reported speech — lead only, not Lane A. Aphorisms 69 and 74 re-read (S2): believe in the indestructible in oneself / paradise destructibility — still no God=indestructible equate. A stays BELOW_THRESHOLD alt 3 (P3 reopen condition not met). B stays BELOW (P16: spiritual-world aphorism ≠ lawful nature). primary BELOW; mid BELOW. Chart-moving NO (still not plotted). No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kafka-franz
   display_name: "Franz Kafka"
@@ -183,6 +184,18 @@ lane_b:
   reading: "An indestructible core in each person; the personal God as one of its expressions; sensible world as evil within a spiritual world — figurative, not a nature-order claim."
   notes: "Lane B only. Fiction (Trial, Castle) not used to score A/B (P42 drama/persona)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Zürau aphorisms, the 1914 diary, and the father letter were checked. They give no adult affiliation. The adolescent atheist declaration and bar mitzvah were not used."
+    cites: [{source: S2, locator: "no. 50"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Those texts do not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Assicurazioni Generali (Prague)", role: "insurance clerk", years: "1907–1908", kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "double life paragraph"}, {source: S4, locator: "Employment"}], how_known: "Britannica and Wikipedia."}
   - {value: "Workers' Accident Insurance Institute for the Kingdom of Bohemia", role: "official", years: "1908–1922", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "double life paragraph"}, {source: S4, locator: "Employment"}], how_known: "Britannica and Wikipedia."}

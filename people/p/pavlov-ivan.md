@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #173/228, F 3, rank 184). Goals: own words or better biography for AGNOS/A; do not force plot without A. Read Todes 2014/2015 via author's OUP blog (S5), Roger Smith Somatosphere review of Todes (S6), EUSP seminar summary of Todes on last manuscripts (S7); Windholz 1986 Kreps quotation as cited (S8); Babkin 1949 IA OCR (S9). Todes archival reconstruction: atheism firmly formed in the 1860s (not closet believer). Windholz via Kreps (student, 1920s reported speech): 'I became an unbeliever, an atheist in my school years' / belief-in-God claims 'sheer fantasy'. Babkin corroborates Gantt's envy-of-wife's-faith line (Seraphima letter quoting Pavlov) and 'Belief in Science' (organism as machine; science to answer life's questions / replace religion — milieu, not a locus). Viral 'letter to the students' still unscored (doubtful provenance; no authentic text found). primary AGNOS → ATHE @0.5 scholarly_reconstruction (Todes+Windholz), named alt AGNOS (Gantt). A stays BELOW_THRESHOLD: reported speech cannot score an axis on its own (§1 / P18); no published ontological 'there is no God' (Penrose/ATHE lack-of-belief precedent). B stays 3 @0.5 alt 4 (P35); support corroborated S1+S9. mid BELOW. Not plotted. P47 on S1–S9. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fixes: the Gantt paraphrase is undated, so its date is removed rather than set to his death year (P12; the schema's date field takes no UNKNOWN). Added S3, his Selected Works (Moscow 1955), whose editors date the Madrid paper to April 1903. No score change."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 184). Source: Britannica, signed by W. Horsley Gantt (his former collaborator; scholars edition, read in full). Lasting work: the conditioned reflex ('known chiefly for his development of the concept'); dated by its first public exposition at the XIV International Medical Congress, Madrid, 1903 (Campos-Bueno, journal article), the public reading as dating event (P30 #1). Worldview from Gantt's account: 'Although Pavlov held to scientific agnosticism, he considered true religion beneficial; he said that he envied no one anything except his wife her devout religious faith' (undated; a scholar's account, so scholarly_reconstruction, 0.5). primary_system AGNOS 0.5, alt BELOW_THRESHOLD; A BELOW_THRESHOLD (agnosticism states no locus); scientist (laws of the conditioned reflex: testable claims about organisms), so B 3 at 0.5 from working science, alt 4 (P24, P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1903, age 54. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: pavlov-ivan
   display_name: "Ivan Pavlov"
@@ -166,6 +167,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No published profession. Gantt (S1) says scientific agnosticism. A student report (S8) gives a different self-label. Seminary is upbringing."
+    cites: [{source: S1, locator: "Opposition to communism, last para."}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S5 and S1 say he opposed Bolshevik persecution and defended believers' freedom. The file does not name death, prison, exile, or a censorship statute."
+    cites: [{source: S1, locator: "Opposition to communism, last para."}]
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   - {value: "Imperial Medical Academy, St Petersburg", role: "professor of physiology", years: "1890–1924", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "Life"}], how_known: "Britannica."}
   - {value: "Institute of Experimental Medicine", role: "head of physiology", years: UNKNOWN, kind: "research institute", certainty: 0.5, cites: [{source: S1, locator: "Life"}], how_known: "Britannica."}

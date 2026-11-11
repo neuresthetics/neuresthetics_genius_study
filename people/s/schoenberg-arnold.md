@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #143): opened DeVoto full PDF (S4) for in-span Kandinsky letters (Stein Letters pp. 88–93 via DeVoto quotation); Style and Idea 'Composition with Twelve Tones' ch.1 web transcription (S7, 1941 UCLA lecture); ASC reconversion draft 12 Aug 1933 (S8, German). Added statements: Kandinsky 20 Apr 1923 ('I am a Jew' — ethnic identity under antisemitism, not JUDA locus profession); Kandinsky 4 May 1923 ('task that their God has imposed on them' — third-person about Jewry, not first-person profession); Composition with Twelve Tones Divine Model / 'Lord said Let there be Light' (post-span artistic metaphor, after 1933 JUDA return); Aug 1933 reconversion note (Religionswechsel only for religious and national cause — clear own-voice but after coded span). Goldschmied 1890 'unbeliever' remains pre-span. P42: Moses und Aron / Jakobsleiter libretti still do not code the person. primary stays BELOW_THRESHOLD (leads JUDA from 1933 after span; CHRIST nominal); A stays BELOW_THRESHOLD; B UNKNOWN (P30 not scientist); mid UNKNOWN; not plotted. P47 source_quality on all sources. Style and Idea full Stein volume IA borrow-restricted this pass. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z8 audit fix (RQ-Z8-1, v8's call on the auditor's advice): premise corrected. The Dance around the Golden Calf from Moses und Aron premiered in Darmstadt on 2 July 1951 (Scherchen; Schott, Universal Edition), but an excerpt premiere dates only the excerpt, so the work's year and the span end stay UNKNOWN. coder_note added: dated 1951, the span would include the 1933 return to Judaism. Values unchanged."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): Z4-11: Dehmel letter kind now 'private letter' (printed posthumously). S4 (DeVoto) note: full lecture read. coder_notes add the 1923 Kandinsky and 1890 Goldschmied leads. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 148). Basics from Britannica (Dika Newlin, signed). Religion facts: Lutheran baptism 1898 (DeVoto, Tufts); readmitted to Judaism at the Liberal synagogue, Paris, July 1933 (JTA, 25 July 1933). Own words: letter to Richard Dehmel, 13 December 1912 (Arnold Schoenberg Letters, ed. Erwin Stein, scan): oratorio plan on 'modern man ... despite having been an atheist ... wrestles with God ... and finally succeeds in finding God and becoming religious. Learning to pray!' A plan for a work, not a profession; libretto characters not counted (P42). Not a scientist (P30), so B UNKNOWN. Span 1899–1932. primary_system BELOW_THRESHOLD (leads JUDA from 1933, CHRIST nominal 1898–1933); A BELOW_THRESHOLD; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted (no B). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: schoenberg-arnold
   display_name: "Arnold Schoenberg"
@@ -172,6 +173,20 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: jewish
+    detail: "Readmitted at a Liberal synagogue in Paris, July 1933. 12 Aug 1933 draft: a change of religion may have only a religious and national cause."
+    cites: [{source: S8, locator: "T56.02 / Rekonversion, 12.VIII.1933"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file notes Nazi persecution only as a motive he rejected for the 1933 rite. It records no sentence, exile, or loss of post."
+    cites: [{source: S8, locator: "T56.02 / Rekonversion, 12.VIII.1933"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The July 1933 rite and the August draft match a Jewish return. The file shows no later church."
+    cites: [{source: S3, locator: "full report"}]
 institutions: []
 collaborators:
   - {value: "Alexander von Zemlinsky", relation: teacher, note: "harmony, counterpoint, composition", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}], how_known: "Britannica."}

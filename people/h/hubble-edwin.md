@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Robert W. Smith). Worldview from his own lectures in The Nature of Science and Other Lectures (Huntington Library, 1954), read in a user-uploaded Internet Archive scan (page images), so capped at 0.7 under CODING_GUIDE §7. Childhood religion from Christianson's biography (publisher's preview). Baptist upbringing; as an adult he set science (public knowledge from observation and experiment) beside a private world of values whose premises 'are in the nature of religious convictions'. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #12/#1 (run 1 note): the Christianson 'p. 183' locator for his adult religion could not be verified (outside the publisher's preview, pp. 13–29) and is withdrawn from the primary_system note and the open question. Decisions P12/P13 recheck: first_lasting_contribution_year 1923 is already the start year of the earliest listed item; the undated '1920s' classification does not set it (noted). No value changed. Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the 2 values the span check flagged as resting on evidence outside the span are resolved, since changes_over_life documents no change of view between the span and that evidence; no value or certainty changed; the Open questions pointer line was removed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #156, F 3, rank 164). Needs: A BELOW_THRESHOLD; primary BELOW (AGNOS candidate). Recovered Christianson p.183 adult-religion passage via Wikipedia EN verbatim quotation (S5 ref 47) and TodayInSci (S6: Grace Burke Hubble Huntington MS locator for 'We do not know why we are born…'). Emerson (1939) belief/Creator reply and Whitehead-Creator cocktail talk are Grace-reported speech — cannot score A or primary alone (CODING_GUIDE §1 / P18). Reply neither places nor denies a personal God (P19/P20: AGNOS with no locus → A BELOW). S2 Nature of Science two-domains already on file; still silent on locus. P50 Wikipedia dual bio (S5). P47 source_quality on S1–S6. P48 support on B (corroborated S2+S1) and D (single S2). primary_system stays BELOW_THRESHOLD (AGNOS lead strengthened, not opened); A stays BELOW; B 4 @0.7; D 2 @0.7; mid BELOW; not plotted. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hubble-edwin
   display_name: "Edwin Hubble"
@@ -197,6 +198,17 @@ lane_b:
   reading: "As belief, not finding: form absent (inductive method), circle absent. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Baptist choir and the 1901 family joining are upbringing; adult membership was not checked. Lectures describe value-premises as religious in kind and do not state his church."
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Yerkes Observatory (University of Chicago)", role: "graduate student", years: "1914–1917", kind: university, certainty: 0.7, cites: [{source: S1, locator: "paragraph 4"}], how_known: "Britannica."}
   - {value: "U.S. Army", role: "officer in France (rose to major)", years: "1917–1919", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "paragraph 5"}], how_known: "Britannica."}

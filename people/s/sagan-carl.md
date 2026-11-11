@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 88). Basics from Britannica (Helge Kragh, signed; body only). Worldview from the 1981 U.S. Catholic interview ('God and Carl Sagan', 1 May 1981), read on the U.S. Catholic site. Scientist (P30: planetary atmospheres, nuclear winter). primary_system AGNOS (0.5, alt SECHUM); A BELOW_THRESHOLD (agnostic, no locus view, P20); B 3 (0.5, alt 4; P35); D 4 (0.5); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit: A BELOW_THRESHOLD now also cites P38 (explicit suspension with no stated disbelief). Value unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #87, F4 rank 88). Needs: keep A honest unless clear place/deny (Pale Blue Dot, Demon-Haunted World, Cosmos, Ted interviews); corroborate/lift B if nature-order statements exist. Re-read U.S. Catholic 1981 (S2) full; Cosmos Ep.3 'Harmony of the Worlds' via Wikiquote transcript (S5); U.S. News 1991 'Scientists & Their Gods' quote via Wikiquote (S6, secondary); DHW IA djvu OCR (S7) — laws of Nature not absolutely certain / may break down in new circumstances, PLUS same electromagnetism laws ten billion light years away / 'different laws in every province, but we do not'; Wikipedia EN Naturalism + Early life (S4, P50 dual-bio: Reform Jewish parents Samuel/Rachel; 1996 self-label agnostic). Varieties (Gifford 1985 / 2006) borrow-locked on IA — Protagoras / full lecture text unread (blocker). A stays BELOW_THRESHOLD (P20/P38): consistent AGNOS across 1981+1996; 'does not exclude' traditional god; no clear place or deny of locus. Named A alt 4 only if 'ludicrous'/'no compelling evidence for anthropomorphic patriarch' is over-read as deny of personal intervening God (rejected: he refuses atheist certainty and keeps exclusion open). B 3 @0.5 alt 4: basis inference_from_work → written_profession; support single → corroborated (P48) via S2+S5+S7 own-voice lawful nature without exceptionless claim (P16 addendum; DHW hedge blocks B 4 / P40). E UNKNOWN → 4 @0.7 corroborated (S5+S7; same rules Earth/skies and across cosmic distance). D unchanged 4 @0.5. primary_system AGNOS @0.5 alt SECHUM unchanged (SECHUM remains definitional/semantic alt from God=laws conditional, not self-membership). mid_basin stays BELOW_THRESHOLD (A BELOW). P47 source_quality on S1–S7. Chart-moving NO (still not plotted: A BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: sagan-carl
   display_name: "Carl Sagan"
@@ -218,6 +219,19 @@ lane_b:
   reading: "Agnostic; awe at a lawful cosmos; evidence over authority."
   notes: "Lane B only. SECHUM-style God=laws is a labeled semantic alternative, not a finding that he belonged to a scientifically based religion."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "1981 interview: he knows of no compelling evidence that God does not exist, and the universe neither excludes nor requires a traditional god. No church."
+    cites: [{source: S2, locator: "reply to 'That seems to leave the question up in the air'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1981 interview states that suspension and names no church. The file has no later contrary membership."
+    cites: [{source: S2, locator: "reply to 'Where does God fit into this view?'"}]
 institutions:
   - {value: "Harvard University and Smithsonian Astrophysical Observatory", role: "researcher", years: "1962–1968", kind: university, certainty: 0.7, cites: [{source: S1, locator: "education paragraph"}], how_known: "Britannica."}
   - {value: "Cornell University (Laboratory for Planetary Studies)", role: "director; professor", years: "1968–1996", kind: university, certainty: 0.7, cites: [{source: S1, locator: "Cornell paragraph"}], how_known: "Britannica."}

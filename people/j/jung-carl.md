@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N; deepen D1 queue #86)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 87). Basics from Britannica (Michael S.M. and Frieda Fordham, signed; body only). Worldview from the 1959 BBC 'Face to Face' interview (transcript as printed in C.G. Jung Speaking, pp. 424–439, read on a blog) and his letter to The Listener of 21 January 1960 (blog transcription): secondary transcriptions, primary check pending. primary_system BELOW_THRESHOLD (CHRIST leading candidate); A BELOW_THRESHOLD (alt 3); B UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Ruling noted (v8, 2026-10-17): theories of the psyche do not count as science about physical nature for P35, so B stays UNKNOWN; open question closed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit (#23, RQ3): the P35 addendum states the criterion (testable, empirical claims about organisms count; interpretive theories of the psyche do not), which keeps his B UNKNOWN; Synchronicity (1952) named as the lead."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #86, F4 rank 87). Needs: re-read Face to Face / Goodrich letter / MDR for any A place/deny that clears BELOW; for B, only score if own-voice on physical nature order/exception (Synchronicity 1952). Re-read: Face to Face blog reprint of C.G. Jung Speaking (S2); Listener 21 Jan 1960 letter in two matching unofficial transcriptions (S3 Uncertaintist PDF + S9 Jung Depth Psychology blog); MDR IA djvu OCR (S7) — psyche cannot announce absolute metaphysical truths / declines hypostasis of God-claims; Henriette Goodrich letter 20 May 1940 via jungiancenter quoting Letters I (S10) — 'grace of God' / 'light within', no locus place or deny. A stays BELOW_THRESHOLD (honest: he still declines hypostasis/place; named alt 4 for the conditional immanent image). Synchronicity: An Acausal Connecting Principle (1952/1955 CW8 English, unofficial web PDF S6): natural laws are statistical truths (absolute validity shattered); causality only relatively valid; acausal connecting principle as coequal explanation — own-voice on physical nature (P16). B UNKNOWN → 2 @0.7 corroborated alt 3 (S6+S4; P48). P35 psyche-theories ruling unchanged for working-science default; B scored from own nature statement, not archetypes/types. Added Synchronicity 1952 as lasting contribution; span 1921–1952. mid_basin UNKNOWN → BELOW_THRESHOLD (A BELOW; Pavlov/James pattern). P47 source_quality on S1–S10; Wikipedia EN (S8, P50). Chart-moving NO (still not plotted: A BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: jung-carl
   display_name: "Carl Jung"
@@ -211,6 +212,19 @@ lane_b:
   reading: "God as a known but unplaced psychic factor; nature as statistically lawful with acausal synchronicity (Lane B label only)."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "1960 Listener letter: 'I think of myself as a Christian' because he is based on Christian concepts. No adult denomination. Swiss Reformed is upbringing."
+    cites: [{source: S3, locator: "first paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Sources read do not document a sanction for religious dissent."
+  practice_gap:
+    gap: mixed
+    evidence: "The same letter keeps the Christian self-description and says this is not knowledge of the Trinitarian God but of a factor unknown in itself."
+    cites: [{source: S3, locator: "second paragraph"}]
 institutions:
   - {value: "Burghölzli Asylum, University of Zürich", role: "staff psychiatrist", years: "1900–", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "Burghölzli paragraph"}], how_known: "Britannica."}
   - {value: "Federal Polytechnical University, Zürich (ETH)", role: "professor of psychology", years: "1933–1941", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Character of his psychotherapy'"}], how_known: "Britannica."}

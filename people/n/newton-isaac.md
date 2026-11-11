@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 14
+  schema_version: "1.5"
+  record_version: 15
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #42). P47 source_quality on S1–S16. P48 support: corroborated written on A–E (already computed). Re-verified General Scholium A/B quotes on Newton Project NATP00056. Baptism 1642/3-01-01 (OS) at St John the Baptist, Colsterworth (S15 parish; S16 College of Arms pedigree via Research Well). family_religious_practice filled from Iliffe Newton Project essay (S17): Colsterworth parish worship; CoE clergy stepfather/uncle; Puritan contacts. Schooling run_by added (schema 1.3). A 1 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
@@ -24,6 +24,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 (continuity rule, v8's pick, 2026-10-02): the out-of-span evidence flagged by the span check counts at its normal certainty, since no change of view is documented after the span. P31's in-span rule applies instead: the Arian turn (about 1672) is inside 1665–1704; the phase count depends on item dating, and the values are left unchanged pending a ruling. One-line P31 delta added to coder_notes; Open questions pointer line rewritten. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "P31 Newton ruling (v8's pick): a change of view splits the span only if it bears on primary_system or A–E; the Arian turn (about 1672) does not, so the span is not split and the 7 values left open in the last round stand. coder_notes delta and Open questions line updated; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: newton-isaac
   display_name: "Isaac Newton"
@@ -418,6 +419,20 @@ lane_b:
   reading: "As belief, not finding: Newton has the geometric form, acquired at about 20 rather than in childhood, without the circle. His God is a ruler distinct from the world, though present in space. The record does not test H1, which is about the circle; here the circle is absent. It is a case of form acquired in early adulthood, before the major work."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Public Protestant: Fellow of Trinity College; Samuel Clarke was his London parish priest. Britannica calls him a fervent if unorthodox Protestant (S1)."
+    cites: [{source: S1, locator: "Warden of the mint ('a fervent if unorthodox Protestant')"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file records Cambridge's resistance to James II (S1, S2) and does not name a Test Act, prison, exile, or a heresy prosecution."
+    cites: [{source: S1, locator: "Warden of the mint ('a fervent if unorthodox Protestant')"}]
+  practice_gap:
+    gap: mixed
+    evidence: "Public Trinity fellowship and parish tie (S1, S4) sit beside private anti-Trinitarian manuscripts: Twelve articles, Keynes MS 8 (S9, f. 1r) and S10 MS p. 36."
+    cites: [{source: S9, locator: "f. 1r"}]
 institutions:
   - {value: "Trinity College, Cambridge", role: "scholar (1664), minor fellow (1667), major fellow (1668)", years: "1661–1701", kind: university, certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S1, locator: "Career (fellowship 1667)"}], how_known: "Two sources; he resigned his Cambridge posts in 1701."}
   - {value: "University of Cambridge", role: "Lucasian Professor of Mathematics", years: "1669–1701", kind: university, certainty: 1.0, cites: [{source: S1, locator: "Career"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}

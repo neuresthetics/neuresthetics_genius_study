@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #127). P47 source_quality on S1–S6. P48: A_locus support corroborated (S2 in-span letters + S5 WallBuilders 1836 album poem with God/Christ; Rigi diary 1831 nature-God language added as statement). P50: Wikipedia EN dual bio (S6) agrees birth 1791-04-27 Charlestown / death 1872-04-02 New York with Britannica. B stays BELOW_THRESHOLD under Ruling X1: Rankin 1835 reported speech (God created the great forces of nature) is teleology/providence, not a P16 lawful-order or exception claim; no own-voice laws-of-nature statement found in Letters and Journals or Foreign Conspiracy. primary CHRIST @0.7 and A 0 @0.7 held; mid BELOW; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (MO2) the telegraph dated by its first public statement, the patent caveat sent on 3 October 1837 (S2 vol. II chs. XXIII–XXIV; P30 #1): first lasting year 1832 -> 1837, span 1832–1838 -> 1837–1838, age 41 -> 46; era unchanged; the 1835 pamphlet now falls just before the span. (MO5) CLTHEI rejected under its use_when (2) (no in-span text expects God to act against or beyond nature's course); CLASS_THEISM listed as rejected. Ruling X1 (v8's call on the auditor's advice): B stays BELOW_THRESHOLD, named reading 1; only an answer claimed against or beyond nature's course bears on B (recorded under P16). CHRIST, A 0, E 1 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 128). Basics from Britannica (Carleton Mabee; Britannica Editors). Worldview from his own letters in Samuel F. B. Morse: His Letters and Journals (ed. Edward Lind Morse, 1914; Project Gutenberg) and his pamphlet Foreign Conspiracy (1835; archive.org scan). Not a scientist (P33: inventions). primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (named reading 1, RQ-AU1 analogy; RQ-X1); C, D UNKNOWN; E 1 (0.5, alt BELOW_THRESHOLD); mid_basin BELOW_THRESHOLD. Span 1832–1838 (0.7). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: morse-samuel
   display_name: "Samuel Morse"
@@ -227,6 +228,19 @@ lane_b:
   reading: "Inventor as instrument of providence."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "His own 1835 pamphlet: 'we, Protestant republicans of the United States.' Congregational childhood is not the basis."
+    cites: [{source: S3, locator: "p. 30"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The 1835 public Protestant identification matches. An 1838 letter gives homage to the one who shows the prospect. No contrary text is in the file."
+    cites: [{source: S2, locator: "vol. II ch. XXIV, letter to Alfred Vail, 15 March 1838"}]
 institutions:
   - {value: "National Academy of Design", role: "founder and first president", years: "1826–1845", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "leadership paragraph"}], how_known: "Britannica."}
   - {value: "University of the City of New York (later New York University)", role: "teacher of art", years: UNKNOWN, kind: university, certainty: 0.7, cites: [{source: S1, locator: "telegraph paragraph"}], how_known: "Britannica; years not given."}

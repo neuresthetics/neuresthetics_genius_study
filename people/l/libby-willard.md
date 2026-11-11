@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 6
+  schema_version: "1.5"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (radiocarbon dating 1947–49; Jason, 2026-10-02). Basics from Britannica (Kauffman), the Nobel biography and Leona Marshall Libby's GSA memorial. No writing of his on religion was found. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #148 (run 1) / decisions P12, P13: first_lasting_contribution_year 1947 → 1941, the start year of the earliest listed contribution (the gaseous-diffusion barrier, Manhattan Project 1941–1945; Britannica, and S3 p. 1 for its lasting use); age 38 → 32; era unchanged. The how_known no longer says the 1930s work is lasting per S3 (S3 does not say so); that work is not listed and does not set the year. Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #211/228, F 3, rank 224). Goals: firm B with corroboration if possible; seek any A; do not force plot. Opened Nobel Lecture 12 Dec 1960 (S5, primary / own words); Wikipedia EN dual bio (S6, P50); NNDB 'Agnostic' label checked and rejected as unsupported tertiary (no scholarly reconstruction comparable to Segrè on Fermi). B_cause stays 3 @ 0.5 inference_from_work (P35); support single → corroborated (S1+S2+S5; P48); alt 4 named. A_locus / primary_system stay UNKNOWN (no own-voice or scholarly reconstruction on God). Childhood/heritage TODOs → UNKNOWN after search (P19). P47 source_quality on all sources. Chart-moving NO (A UNKNOWN; B faded @ 0.5). No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: libby-willard
   display_name: "Willard Libby"
@@ -162,6 +163,18 @@ lane_b:
   reading: "As belief, not finding: form partly present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Britannica, the Nobel biography, the GSA memorial, and the Nobel lecture state no affiliation. An unsupported Agnostic label was rejected."
+    cites: [{source: S1, locator: "biography"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "University of California, Berkeley", role: "instructor to associate professor of chemistry", years: "1933–1945", kind: university, certainty: 1.0, cites: [{source: S1, locator: "paragraph 2"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}
   - {value: "Columbia University War Research Division (Manhattan Project)", role: "chemist with Harold Urey", years: "1941–1945", kind: "government or state body", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}

@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 27). Basics from Britannica (Zelazko). No worldview statement of her own was found: the widely quoted 'I am an atheist' (1948) is Diego Rivera's, not hers. All worldview fields UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #27, F5 rank 27). P47 source_quality on every source. Dual-sourced basics (S1 Britannica prior + S3 Wikipedia EN). Own words: diary (Abrams 1995 / Lowe; English via Marginalian S4 and Denver Art Museum S5) — disagreement with 'religions' among imperialism/fascism/capitalism; 'everything exists, and moves, under only one law = life' (political-existential, not B). 1948 letter to President Alemán (Zamora Cartas; Marginalian S6) protests mural censorship — anti-sectarian, no God-denial. Scholarly 'avowed'/'adamant' atheist labels (Barnet-Sanchez LARR S7 summarizing Cooey/Lowe) without a Kahlo 'I do not believe in God'. Rivera's 1948 'I am an atheist' remains Rivera's (S6). Mother 'fanatically religious' (Kahlo characterization via S3). primary_system BELOW_THRESHOLD (lead ATHE); A_locus BELOW_THRESHOLD (P38; Joyce/Monet precedent); B_cause UNKNOWN (not a scientist; one-law = life ≠ nature's causal order, P16); C/D/E UNKNOWN; mid_basin UNKNOWN (B UNKNOWN, P19). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kahlo-frida
   display_name: "Frida Kahlo"
@@ -184,6 +185,17 @@ lane_b:
   reading: "As belief, not finding: unclear. Does not test H1."
   notes: "Lane A worldview deepen does not supply Lane B geometric-form evidence."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The diary lists disagreement with religions among political targets. No sentence of hers denies God. A reported atheist line is Rivera's. Catholic baptism is not adult affiliation."
+  conformity_pressure:
+    level: unknown
+    evidence: "Her 1948 letter protests covering a mural for sectarian reasons. The file does not document a sanction against her for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "La Esmeralda (Ministry of Public Education's School of Painting and Sculpture)", role: teacher, years: "1943–1954", kind: other, certainty: 0.7, cites: [{source: S1, locator: "Key dates 1943–54"}, {source: S3, locator: "La Esmeralda"}], how_known: "Britannica + Wikipedia EN."}
 collaborators:

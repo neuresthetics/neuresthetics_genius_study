@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score C_ledger 4 (0.5), D_authority 4 (0.7), E_scope 4 (0.7) from EN X (Ross MIT, new S9) and Met. XII tradition/myth (S2/S6/S7). C impersonal eudaimonia with named alt 1 (EN X.8 gods-reward philosopher). D reason over mythic tradition (Met Λ). E same natural order (Phys II.8 + Met Λ divine encloses nature); P7 sends EN X.8 reward to C. Mid_basin unchanged true. Chart-moving: no (A/B already plotted). No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 9). Basics from SEP (Shields 2020). Worldview from Metaphysics XII (Ross trans.), Physics II (Hardie and Gaye trans.) and Nicomachean Ethics III (Ross trans.), read in the MIT Internet Classics Archive web copies. primary_system ARIST (0.7, founder rule); A_locus 1 (0.7, alternative 2); B_cause 3 (0.7, alternative 4); mid_basin true (0.7). C, D, E TODO. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 3 kept (0.7, alternative 4) but reframed: free will placed in nature (§6 B 3 anchor), not an exception to lawful cause; added EN 1113b17-19, Met. Θ.2 1046b4-7, Θ.5 1048a5-11 and the compatibilist alternative EN 1114a13-21; chance noted as incidental cause. Bekker numbers verified, approximate caveats removed. mid_basin true (0.7) unchanged."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #9). P47 source_quality on every source. A_locus was single (S2 MIT unofficial Ross only): added Tredennick Loeb Metaphysics XII via Perseus (S6 scholarly edition) and Ross Oxford Works VIII Metaphysica 1908 (S7 scholarly edition, archive.org OCR) confirming the same Λ.7/Λ.10 passages; support single → corroborated (S6+S7); value/certainty stay 1 @ 0.7 (named alt 2). B_cause already multi-cited (S3+S4+S2); labelled support corroborated. Basics dual-sourced SEP+MacTutor (S8): birth/death dates and places → 1.0. A statements verified_against → scholarly edition. Chart: dark hollow → dark filled (fill cue). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: aristotle
   display_name: "Aristotle"
@@ -222,6 +223,19 @@ lane_b:
   reading: "As belief, not finding: form present, circle partly present."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Metaphysics XII says God is a living being, eternal and most good, and that this is God. No civic cult or church membership is stated."
+    cites: [{source: S7, locator: "Met. XII ch. 7 (1072b28–30)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "Metaphysics XII states that God is an eternal living being. No adult text in the file withdraws that claim."
+    cites: [{source: S7, locator: "Met. XII ch. 7 (1072b28–30)"}]
 institutions:
   - {value: "Lyceum, Athens", role: "founder and head", years: "335–323 BC", kind: "other", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S8, locator: "body ('In 335 BC Aristotle founded his own school the Lyceum')"}], how_known: "SEP and MacTutor."}
 collaborators:

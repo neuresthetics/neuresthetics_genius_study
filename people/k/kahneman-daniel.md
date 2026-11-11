@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #152, F 3, rank 158). Re-opened Nobel autobiography (S1) and Raskin 2022 (S2). Nobel teen line: existence of God among questions, but 'more interested in what made people believe in God than … whether God existed' — AGNOS-leaning curiosity, not ATHE profession; childhood Pascal/faith essay before age 11. On Being (S6) Tippett quotes that Nobel line; Kahneman affirms ('I couldn't say it better') — after-span, does not lift A/ATHE past P20. Thinking, Fast and Slow (S5, IA OCR): Bloom origins-of-religion as System-1 psychology (not a personal creed); 'underestimate the role of chance in events' + Nobel flight-instructor 'important truth about the world' / regression — B 3 corroboration of probabilistic regularity, but P16 Hilbert addendum / P35 keep B 3 @ 0.5 alt 4 (no no-exception claim). No second 'stopped believing' stream. Dual bio (P50): birth 5 Mar 1934 (Guardian S7 + Wikipedia S4); death 27 Mar 2024 Nunningen SO (Guardian date; Nau.ch S8 + Wikipedia place; assisted suicide via Pegasos reported 2025). P47 source_quality on S1–S8. primary ATHE @0.5 (alt AGNOS); A 4 @0.5 (alts BELOW, 3); B 3 @0.5 (alt 4); mid BELOW. Chart-moving NO. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (P10): mid_basin false 0.5 -> BELOW_THRESHOLD; A 4 is only at 0.5, under the 0.7 bar."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-21, Z6-22 FAIL; v8's call on the auditor's advice): 'I remember very precisely the moment at which I stopped believing in God' is stated non-belief, not suspension (P38 reasoning; CODING_GUIDE §1), so primary_system AGNOS -> ATHE 0.5, alt AGNOS; A BELOW_THRESHOLD -> 4 at 0.5, alts BELOW_THRESHOLD and 3 (P20 explicit denial of a God that cares; Chomsky, Penrose, Sen precedents); mid_basin BELOW_THRESHOLD -> false at 0.5 (A 4 >= 3). Raskin page dated 2022-03-01 (page metadata datePublished), as Chomsky's in Z2. Now plotted, faded, at A 4 / B 3."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z6, order P32: F 3, rank 158). Basics from his Nobel autobiography (2002). Own voice: interview with Max Raskin (undated web page; after the span): never religious as an adult; lost his faith at about 15: 'maybe I could believe in God, but I could not believe in a God that cared whether or not I masturbate ... if I can't imagine God caring about me, then we were irrelevant to each other, and it really didn't matter whether he existed or not'; no afterlife; 'There's nothing mystical'. A scientist (P30, P35 addendum: experimental claims about human judgment, as Skinner). Span 1974–1979. primary_system AGNOS (0.5, alt BELOW_THRESHOLD); A BELOW_THRESHOLD; B 3 (0.5, alt 4; P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted (no A). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kahneman-daniel
   display_name: "Daniel Kahneman"
@@ -184,6 +185,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "2022 interview, looking back: he could not believe in a God who cared about him, and 'that was the end of the religion for me.'"
+    cites: [{source: S2, locator: "Rabbi Kahaneman"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The interview does not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The interview presents that break as the end of religion for him. The Nobel note on why people believe does not restore a religious affiliation."
+    cites: [{source: S1, locator: "Early years"}]
 institutions:
   - {value: "Hebrew University of Jerusalem", role: professor, years: "1961–1978", kind: university, certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S4, locator: "Career"}], how_known: "Nobel autobiography; Wikipedia."}
   - {value: "Princeton University", role: "professor emeritus of psychology and public affairs", years: "1993–2024", kind: university, certainty: 0.7, cites: [{source: S4, locator: "infobox / Career"}], how_known: "Wikipedia; after the coded span."}

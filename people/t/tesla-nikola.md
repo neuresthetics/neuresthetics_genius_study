@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 61). Basics from Britannica (Hunt). Worldview from My Inventions (Electrical Experimenter, 1919), ch. VI, Wikisource transcription (web copy, 0.7 cap). Scientist/engineer under P30. primary_system BELOW_THRESHOLD (candidates DETERM, AGNOS); A BELOW_THRESHOLD (only 'faith in a supreme power of some kind' as a general human trait); B 4 at 0.5 (alt 3): 'We are automata entirely controlled by the forces of the medium' and no foundation for spiritual phenomena (near P40; RQ2 batch I); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of bbb26f8, run 1). B rationale and C_ledger note reworded: the automata line is his mechanical explanation of the cosmic law, not a counter-sign. B stays 4 (0.5, alternative 3)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #61, F5 rank 61). Needs: A BELOW_THRESHOLD; B single source; B faded. Primaries: Human Energy 1900 (S4) corroborates automata B; Liberty 1935 'A Machine to End War' as told to Viereck (S5) scores A 4@0.5 recorded_interview support single (alt BELOW) and extends B to universe-as-machine; EE 1919 IA DjVuTXT OCR (S6) verifies My Inventions ch. VI wording (no 'gift of mental power' / 'Divine Being' — rejected as non-primary). B 4@0.5 single → B 4@0.7 written_profession, support corroborated (P48); alt 3. D 4@0.5 recorded_interview, support single (new). primary_system stays BELOW (DETERM leading; ATHE/AGNOS named). P47 source_quality on S1–S6. mid_basin BELOW (A≥3 branch needs 0.7). Chart-moving NO (faded; A single → hollow). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: tesla-nikola
   display_name: "Nikola Tesla"
@@ -222,6 +223,19 @@ lane_b:
   reading: "Mechanist automatism; A scored only from the 1935 interview (single, 0.5)."
   notes: "Lane B belief model only; no H1 test this pass."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "1935: 'I am not a believer in the orthodox sense.' The universe is 'a great machine which never came into being.' He still commends religion as an ideal. No church."
+    cites: [{source: S5, locator: "believer paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "My Inventions (1919) already says dogmas are no longer accepted in their orthodox meaning. No later church is in the file."
+    cites: [{source: S2, locator: "ch. VI"}]
 institutions:
   - {value: "Continental Edison Company, Paris", role: engineer, years: "1882–1884", kind: commercial, certainty: 0.5, cites: [{source: S1, locator: "training paragraph"}], how_known: "From 1882; end year inferred from his sailing in 1884 (0.5)."}
 collaborators:

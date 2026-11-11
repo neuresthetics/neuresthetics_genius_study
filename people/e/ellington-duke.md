@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (skip catch-up 8/13; F3 rank 161). Needs: firm A/primary if primary sources allow; prefer memoir/interviews over secondary; Sacred Concerts are work not profession; not scientist for B; do not force plot. Music Is My Mistress still borrow-only on IA (unread). Opened Guideposts Feb 1971 essay by Ellington (S3); 1965 First Sacred Concert program note via Tucker Duke Ellington Reader (S4); Les Tomkins interview 1 Dec 1973 / Crescendo Jan 1974 (S5); Wikipedia EN dual bio (S6, P50). primary_system UNKNOWN → CHRIST @0.5 (written_profession): Guideposts own prayer/Bible/dependence-on-God profession; program note 'God has total understanding' / 'Every man prays…'; interview affirms Lord's Prayer settings and rejects 'God is dead'. No adult denomination stated (parents Methodist/Baptist) — still CHRIST under v8 Christian-belief note, not a church-membership test. A_locus UNKNOWN → 0 @0.5 alt 1 (transcendent personal God who hears prayer; after span). B_cause stays UNKNOWN → BELOW_THRESHOLD (not scientist; petitionary prayer / communication 'miracles' are not P16 nature-order — Austen RQ-AU1; Sacred Concerts work not B). mid_basin UNKNOWN → BELOW_THRESHOLD. Chart-moving NO. Childhood religion from Guideposts. P47 source_quality on S1–S6. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 161). Basics from Britannica (body). His words on God (Music Is My Mistress, 1973, pp. 262, 267–269: 'Every man prays in his own language, and there is no language that God does not understand'; 'Now I can say openly what I have been saying to myself on my knees') were seen only as quoted on secondary pages; the archive.org scans are borrow-only and were not read. Second-hand quotations alone (V3), so primary_system UNKNOWN (lead CHRIST); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not a scientist. Span 1926–1943. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: ellington-duke
   display_name: "Duke Ellington"
@@ -191,6 +192,19 @@ lane_b:
   reading: "CHRIST @0.5; A 0 @0.5; B BELOW (no P16 nature remark). Not plotted."
   notes: "Lane B labeled belief only."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_other
+    detail: "Guideposts (1971): he prays daily and calls the music an expression of God. He does not name an adult denomination. Methodist and Baptist are his parents' churches."
+    cites: [{source: S3, locator: "prayer paragraph"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "The Guideposts essay, the 1965 sacred-concert note, and the 1973 interview agree on prayer and God, and reject 'God is dead.'"
+    cites: [{source: S5, locator: "On sacred music, 1 December 1973"}]
 institutions: []
 collaborators:
   - {value: "Billy Strayhorn", relation: "collaborator", note: "composing-arranging partner 1939–67", certainty: 0.7, cites: [{source: S1, locator: "Legacy"}], how_known: "Britannica."}

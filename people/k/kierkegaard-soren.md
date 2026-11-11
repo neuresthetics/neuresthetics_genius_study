@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #205/228, F 3, rank 218): score A from signed Upbuilding Discourses / journals if clear; leave UNKNOWN/BELOW if still thin; do not force plot. Re-read SEP Lippitt/Evans (S1). Own-voice signed: Two Upbuilding Discourses 1843 via Hong quotations on Wikiquote (S4) — 'Every Good and Every Perfect Gift Is from Above' (James 1:17); expectancy 'not in the world but in God'. The Unchangeableness of God (delivered 1851, published 1855; Lowrie tr., S3) — 'In His omnipotence He created this visible world — and made Himself invisible'; 'father of lights' dwelling above, unchanged. Works of Love 1847 (Hong via Storm commentary quotations, S5) — signed Christian deliberations; 'God in heaven'; God as middle term. primary CHRIST scholarly_reconstruction 0.5 → written_profession 0.7. A UNKNOWN→0 @0.7 written_profession, support corroborated (S3+S4; P48); P42: Anti-Climacus / Sickness Unto Death still unused for A. B UNKNOWN→BELOW_THRESHOLD (not a scientist, P30; omnipotent-intervention language in S3 is theological, not a clear account of nature's lawfulness vs special cases at ≥0.5). Mid BELOW. Not plotted. P47 source_quality on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: span certainty 0.7 (weakest-work rule); note that the P42 pseudonym treatment rests on analogy."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 218). Source: SEP 'Søren Kierkegaard' (John Lippitt and C. Stephen Evans, 2023, read in full). Lasting: the authorship, 'almost all of which was written in the 1840s', from Either/Or (1843), which 'he considered properly to begin his authorship'; 'often dubbed the \"father of existentialism\"', it influenced Heidegger, Sartre, Jaspers, Wittgenstein and others (S1). Span 1843–1850 at 0.7 (Either/Or to Practice in Christianity), alternative 1843–1855 (The Moment), age 30. Worldview: CHRIST at 0.5 (scholarly_reconstruction; S1: 'known as a defender of Christian faith'; in [The Point of View], in his own voice, he 'claims that he was from first to last a religious author'; S1 paraphrase, not quoted). A UNKNOWN: the one quoted line on God (Sickness Unto Death) is pseudonymous (Anti-Climacus), so not his own voice (P42, applied by analogy: P42 has no explicit pseudonym clause; this follows its character-voice addendum). Not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: kierkegaard-soren
   display_name: "Søren Kierkegaard"
@@ -181,6 +182,19 @@ lane_b:
   reading: "Lane B unused: A scored; B/mid BELOW; no H1 timing claim."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Lutheran in the Danish state church, which he attacked in the name of New Testament Christianity. Signed discourses call the reflections Christian and place expectancy in God."
+    cites: [{source: S1, locator: "1. Life and Works"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The attack on the established church is his act. No sanction against him is documented."
+  practice_gap:
+    gap: mixed
+    evidence: "Signed discourses endorse Christian faith, and the file records his attack on the established Danish church."
+    cites: [{source: S5, locator: "Works of Love, foreword"}]
 institutions:
   - {value: "University of Copenhagen", role: "student (theology; Magister in philosophy)", years: UNKNOWN, kind: "university", certainty: 0.7, cites: [{source: S1, locator: "1. Life and Works"}], how_known: "SEP."}
 collaborators:

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
@@ -18,6 +18,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #23, F5 rank 23). P47 source_quality on every source. New: S5 Nobel Lecture 1938 (primary / own words; neutron-induced radioactivity); S6 Emilio Segrè DSB / encyclopedia.com PDF via MacTutor ('Fermi was fundamentally an agnostic, although he had been baptized a Catholic'). primary_system UNKNOWN → AGNOS @ 0.5 scholarly_reconstruction (Segrè; AGNOS stub flagged); A_locus UNKNOWN → BELOW_THRESHOLD (P20: agnostic with no stated locus). B_cause stays 3 @ 0.5 inference_from_work; support labelled corroborated (S5+S3+S2; P48); alt 4 named (P35). Baptism filled from Segrè. Laura Fermi Atoms in the Family p. 52 still unread (lending-only; Wikipedia cites it for adult agnostic). Chart: still unplotted (A BELOW; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: fermi-enrico
   display_name: "Enrico Fermi"
@@ -148,6 +149,17 @@ lane_b:
   reading: "As belief, not finding: form unclear (practical style), circle absent. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No first-person religion quotation was found. Segrè's 'agnostic' is a biographer's word. Laura Fermi's page is unread."
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No own statement of affiliation was found to compare."
 institutions:
   - {value: "University of Rome", role: "professor of theoretical physics", years: "1927–1938", kind: university, certainty: 1.0, cites: [{source: S3, locator: "paragraph 4"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   - {value: "Columbia University", role: "professor of physics", years: "1939–1942", kind: university, certainty: 1.0, cites: [{source: S1, locator: "opening summary"}, {source: S3, locator: "paragraph 6"}], how_known: "Two sources."}

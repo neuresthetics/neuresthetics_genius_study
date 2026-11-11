@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: native_name TODO→Barbara McClintock @1.0 (matches full_name). Chart-moving NO."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #10). P47 source_quality on every source. Primary: The Origin and Behavior of Mutable Loci in Maize (PNAS 1950; S4 full text now read) and Nobel lecture The Significance of Responses of the Genome to Challenge (8 Dec 1983; new S6) — own words on chromosome mechanisms, precise control of transposition, genome sensing/programmed responses. B_cause stays 3 @ 0.5 (P16 Hilbert / P35: lawful physical regularities, no no-exception claim) but basis inference_from_work → written_profession; support single → corroborated (S4+S6). A_locus stays UNKNOWN after Nobel biographical note, Nobel lecture, 1950 PNAS, Keller 1983 (S7 interview biography; Tibetan Buddhism / oneness quotes are epistemology, not God), Martienssen oral history and Humanist profile (both secondary paraphrase, unused for A under P19). Creighton & McClintock 1931 (S3) still bibliographic only (PMC/PNAS PDF blocked). Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch D, order P32: F 5, rank 10). Basics from her Nobel autobiographical note and the NLM Profiles in Science overview; paper dates from Europe PMC records of PNAS. No statement of hers on religion, God or nature was read. primary_system UNKNOWN; B_cause 3 at 0.5 from working science (P35, alternative 4); A, C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin UNKNOWN. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mcclintock-barbara
   display_name: "Barbara McClintock"
@@ -157,6 +158,18 @@ lane_b:
   reading: "As belief, not finding: form and circle unclear. Does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "The Nobel biographical note, the 1950 PNAS paper, and the 1983 Nobel lecture state no affiliation. Interview remarks on method were not used as a creed."
+    cites: [{source: S1, locator: "whole note"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Cornell University", role: "student (B.S. 1923, M.A. 1925, Ph.D. 1927), instructor, research associate", years: "1919–1936", kind: university, certainty: 1.0, cites: [{source: S1, locator: "table"}, {source: S2, locator: "paragraphs 1–3"}], how_known: "Two sources."}
   - {value: "Carnegie Institution of Washington, Department of Genetics, Cold Spring Harbor", role: "staff member", years: "1942–1967", kind: "research institute", certainty: 1.0, cites: [{source: S1, locator: "positions"}, {source: S2, locator: "paragraph 3"}], how_known: "Two sources."}

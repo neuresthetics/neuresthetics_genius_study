@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1 queue #30)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 30). Basics from Britannica (González Echevarría) and the Nobel Prize biographical note. The only statement on God found is 'No creo en Dios, pero le temo', known only as reported speech (biographer Gerald Martin, who calls it possibly a joke; Alfa y Omega). Characters' words in the novels are not his view. primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #30, next-50 batch). Needs were A BELOW_THRESHOLD and B UNKNOWN. Opened El olor de la guayaba (1982 Mendoza interview book; Spanish excerpts via El Tiempo / Revista BOCAS): affirms 'El que no tenga Dios, que tenga supersticiones' as 'muy serio'; superstitions as natural faculties repudiated by Western rationalism; yellow flowers for protection; 'prejuicios de mi formación católica' as inherited double standard, not adult CHRIST. Opened El País 27 Jan 1981 essay (Scandal of the Century / LitHub): literary credo affirming biblical/literary wonders still happen against 'obscurantist rationalism' of bad teachers — aesthetic method, not scored as P16 B. Paris Review 1981 and UNESCO Courier: Caribbean reality / realist self-description; not God-locus. Wikipedia EN dual-sources bio (full name; death place; Zipaquirá). P47 on every source. 'No creo en Dios, pero le temo' still reported speech only (Martin joke; Alfa y Omega; Guardian misattributes Cholera character line). primary_system stays BELOW_THRESHOLD (lead ATHE; P38 unmet). A stays BELOW_THRESHOLD. B stays UNKNOWN (not a scientist; superstition practice and wonder-creed ≠ nature's causal order, P16; P41 does not apply — he affirms wonders/superstitions rather than rejecting miracles). C/D/E UNKNOWN; mid_basin UNKNOWN. Chart-moving NO. Characters unused. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: garcia-marquez-gabriel
   display_name: "Gabriel García Márquez"
@@ -193,6 +194,18 @@ lane_b:
   reading: "No reading possible."
   notes: "Lane B separate from Lane A axis scores."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Guayaba, the 1981 El País essay, the Paris Review, and UNESCO were checked. Catholic formation is a prejudice he names. He states no creed. 'No creo en Dios' is reported speech only."
+    cites: [{source: S7, locator: "sexual-freedom answer"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "The checked interviews and essay state no affiliation."
 institutions:
   - {value: "Liceo Nacional de Varones de Zipaquirá", role: student, years: UNKNOWN, kind: other, certainty: 0.5, cites: [{source: S6, locator: "infobox Alma mater"}], how_known: "Wikipedia EN."}
   - {value: "National University of Colombia", role: student, years: UNKNOWN, kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Life'"}, {source: S6, locator: "infobox"}], how_known: "Britannica + Wikipedia EN."}

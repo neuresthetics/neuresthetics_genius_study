@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #154, F3 rank 162). Opened Ordinatio I (Peter Simpson EN, aristotelophile PDF) d.2 nn.74–88 (first efficient cause has intelligence and will; natural agents act of necessity; contingent causation from first will) and d.42 nn.8–9 (theological omnipotence — immediate without co-agent — believed, not demonstrated); Wolter Nelson 1962 Philosophical Writings §V experimental knowledge (IA OCR). Lifted CLASS_THEISM, A 1, B 3 from scholarly_reconstruction @0.5 to written_profession @0.7 (alts kept: A alt 0; B alt 2). P48 support corroborated on A and B. mid_basin BELOW_THRESHOLD → true @0.7. Chart-moving YES (faded→dark; hollow→filled). P47 source_quality; P50 Wikipedia dual bio (birth-year range differs from SEP). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix: change_log cap label corrected; scholarly_reconstruction caps at 0.5, not 0.7. No value changed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 162). Source: SEP 'John Duns Scotus' (Thomas Williams, rev. 2025), a scholar's account of his works with Ordinatio and Lectura locators. No Latin or translated primary text read, so the worldview rests on scholarly_reconstruction (0.5 cap). Franciscan friar, priest (1291) and master of theology at Paris. primary_system CLASS_THEISM (0.5, scholarly_reconstruction cap). A 1 (0.5, alt 0): first agent with intellect and will, infinite being; univocity makes the God–creature difference 'one of degree'. B 3 (0.5, alt 2): certainty about 'causal judgments derived from experience', but God 'can cause immediately ... whatever he ordinarily causes through a secondary cause' and all contingent truth hangs on his free will. C, D, E UNKNOWN. mid_basin BELOW_THRESHOLD (A and B at 0.5). Plotted (A 1, B 3). Span 1298–1308. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: scotus-duns
   display_name: "John Duns Scotus"
@@ -188,6 +189,19 @@ lane_b:
   reading: "No data beyond the stepwise natural-theology proof."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Franciscan friar and Roman Catholic priest, ordained 1291; master of theology."
+    cites: [{source: S1, locator: "§1.1"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The Ordinatio argues a first efficient cause with intellect and will inside Catholic theology. No contrary text is in the file."
+    cites: [{source: S3, locator: "Ordinatio I d.2 n.74"}]
 institutions:
   - {value: "University of Paris (Franciscan chair)", role: "master of theology", years: "1305–1307", kind: "university", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}], how_known: "SEP."}
   - {value: "Order of Friars Minor (Franciscans)", role: "friar; priest from 1291", years: "–1308", kind: "religious body", certainty: 0.7, cites: [{source: S1, locator: "§1.1"}, {source: S5, locator: "Life"}], how_known: "SEP and Wikipedia."}

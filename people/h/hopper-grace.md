@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 33). Basics from Britannica and Yale News. No statement of hers on religion or on the order of nature was found. Not a scientist under P30/P33 (her lasting contributions are a manual and compilers, not theories about natural systems). All worldview fields UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #33, next-50 batch). Needs: A UNKNOWN; B UNKNOWN. Opened Smithsonian Computer Oral History July 1968 (Merzbach; S4) and July 1972 (Luebbert/Tropp; checked for religion terms — none); Computer History Museum 1980 oral history (Pantages; S7); Mitchell 1994 UNT dissertation (S6); Wikipedia EN (S5) citing Williams 2004 for West End Collegiate family church; re-read Britannica and Yale News. P47 source_quality on every source. A stays UNKNOWN (P19): no first-person God/religion statement in S1–S7; family Collegiate Reformed church and Presbyterian girls' schools are heritage/childhood, not A. B stays UNKNOWN (P16/P33): not a scientist (lasting contributions are manual/compilers/FLOW-MATIC — devices and software, not theories about natural systems); no explicit remark on the order of nature. Childhood filled (parents; Graham/Schoonmaker/Hartridge; West End Collegiate marriage 1930). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: hopper-grace
   display_name: "Grace Hopper"
@@ -128,6 +129,18 @@ lane_b:
   reading: "As belief, not finding: form partly present via mathematics doctorate; circle unclear. The record does not test H1 while A/B UNKNOWN."
   notes: "Lane B separate from Lane A axis scores (A/B UNKNOWN)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Britannica, Yale, Wikipedia, Mitchell, and the Smithsonian and CHM oral histories were checked; no own religious affiliation. Parents' Collegiate Reformed attendance is not hers."
+    cites: [{source: S4, locator: "Computer Oral History Collection interview, July 1968"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Those sources do not document a sanction or a legal protection for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Vassar College", role: "mathematics teacher", years: "to 1943", kind: university, certainty: 0.7, cites: [{source: S1, locator: "second paragraph"}], how_known: "Britannica."}
   - {value: "Harvard University, Bureau of Ordnance Computation Project", role: "naval officer, then civilian research fellow", years: "1944–1949", kind: university, certainty: 0.7, cites: [{source: S1, locator: "second paragraph"}], how_known: "Britannica; end year is when she joined Eckert-Mauchly."}

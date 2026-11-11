@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #140): primary-checked La Clef des songes (Carmona PDF, §§30–31) and Récoltes et Semailles (footnote 302 on creative intelligence / atheist-to-deist). Two own-voice documents → basis consistent_private_letters; DEISM, A 1, B 3 lifted 0.5→0.7 (retrospective self-report cap P20/P29; contested-alt ceiling 0.7). B stays 3 (CODING_GUIDE: lawfulness + stated limited past exceptions = evolutionary sauts; alt 4 kept; sauts-as-B-2 tug logged in coder_notes, not scored as alt). mid_basin BELOW→true @0.7 (A≤1 and B≥3 both @0.7; alt 4 also B≥3, P30 #10). P47 source_quality; P48 support corroborated; P50 Wikipedia EN (birth agrees; death place Saint-Girons vs Saint-Lizier noted). Chart-moving YES (faded→dark eligible). No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-03 note, Z5-04 WEAKEN): coder_notes now say Scharlau backs only the lawfulness half of B, and add his 'spiritual desert for decades' line (ch. 24). No value changed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit fixes (blind audit /workspace/genius_study_audit/gs_0b45e66_Z3/run1/): Z3-13: labels made to agree with an unpublished typescript: statements stay 'unpublished manuscript', basis of primary_system, A and B now consistent_private_letters (private ceiling 0.7; certainty 0.5 unchanged), S2 kind now other. Esquisse d'un programme dated 1984, not 1983. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 144). Basics from MacTutor (O'Connor and Robertson). Own voice: La Clef des songes (1987; typescript transcribed by Mateo Carmona), his retrospective of his relation to God: atheist parents; in March 1944, aged nearly 16, he accepted 'cette Intelligence souveraine, infinie, créatrice de la Vie et ... de l'Univers tout entier, et des lois qui le régissent' and called himself 'déiste' (§§30–31), a view held 'ma vie durant' without doubt; he saw 'aucun signe d'une intervention de Dieu dans le présent' but an Intelligence that 'intervient' at each great evolutionary leap (§30). Span 1953–1970 (end at 0.5), age 25. primary_system DEISM (0.5, alt BELOW_THRESHOLD); A 1 (0.5, alt 0); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: grothendieck-alexander
   display_name: "Alexander Grothendieck"
@@ -205,6 +206,19 @@ lane_b:
   reading: "Deist creator of the laws; mathematics as 'part of the nature of God' only in the 1987 note (time-of-writing)."
   notes: "Lane A and Lane B kept separate (P49)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "In circulated typescripts he says that after an atheist childhood he will call himself 'déiste.' The same memoir records a 1976 turn, 'Dieu est le Rêveur.'"
+    cites: [{source: S2, locator: "§31"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: mixed
+    evidence: "He states deism and no present divine intervention, and the same retrospective states a later mystical theism."
+    cites: [{source: S2, locator: "§§17, 27, 31"}]
 institutions:
   - {value: "Institut des Hautes Études Scientifiques", role: professor, years: "1959–1970", kind: other, certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
   - {value: "University of Montpellier", role: professor, years: "1973–1988", kind: university, certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}

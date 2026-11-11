@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 35). Basics from SEP (Heinzmann and Stump) and MacTutor (O'Connor and Robertson). A scientist under P30 (three-body problem, celestial mechanics). No statement of his own on God or on exceptions in nature was read; the 'free thinker at 18' claim is from an unsigned popular site and is not cited. primary_system and A UNKNOWN; B 3 at 0.5 from working science (P24, P35; alternative 4); C, D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #35, F5 rank 35). Needs: A UNKNOWN; B 3 @0.5 faded. Read Chance / Le hasard (S4, FR Wikisource Science et méthode Livre I §IV; primary); Libre examen 1909 (S5, Wayback of henripoincarepapers HTML); Morale et science (S6, UQAC PDF of Dernières pensées ch.VIII). P47 source_quality on every source. Childhood filled from MacTutor (diphtheria; mother teaching; Lycée). A stays UNKNOWN (P19 researched silent on locus): Libre examen 'sans adhérer à aucune église' is first-person plural about freethinkers' impartiality, not a personal locus; Morale's 'si nous aimons ce Dieu' is hypothetical for religious morale; popular free-thinker@18 and fr.wiki 'cessé d'être croyant à 18' are unsigned / need_ref (RUNBOOK §3.1) — unused for A. B stays 3 @0.5 written_profession (Chance: absolute determinists; every phenomenon has a cause; for an infinitely informed mind 'il n'y aurait pas de hasard'), alt 4 (P16/P35/P40: he rehabilitates chance as sensitive dependence under laws; prayer-for-rain vs eclipse is epistemic; no no-exception / no-miracle claim). support corroborated (S4 + S1 working science). Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: poincare-henri
   display_name: "Henri Poincaré"
@@ -161,6 +162,18 @@ lane_b:
   reading: "As belief, not finding: geometric form present from adolescence; circle unclear. Worldview still unplottable (A UNKNOWN; B faded). The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Libre examen 'sans adhérer à aucune église' is first-person plural about freethinkers, not a personal affiliation (S5). No heritage and no membership in the file."
+    cites: [{source: S5, locator: "Pasteur / catholiques passage; later 'sans adhérer à aucune église'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: unknown
+    evidence: "No settled adult affiliation to compare."
 institutions:
   - {value: "University of Paris, Faculty of Sciences", role: professor, years: "1881–1912", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}
   - {value: "Bureau des Longitudes", role: member, years: "1893–1912", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "§1"}], how_known: "SEP."}

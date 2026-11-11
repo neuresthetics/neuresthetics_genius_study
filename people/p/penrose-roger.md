@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO→Quaker (paternal grandparents) @0.5 synced from heritage; baptism/catechism UNKNOWN. Chart-moving NO."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #126 / F4 rank 127). Goals: earlier own-voice on God/atheism; corroborate or lift B; keep honest BELOW/0.5 if not. Opened Tanner Lectures 1995 / LSAHM (S6); Road to Reality 2004 ch.1 (S7); Spectator Fink 2020 interview (S8); Wikipedia EN dual bio (S9, P50). BBC Radio 4 25 Sep 2010 religion quote still aggregator-only (Today archive page has no religion text; audio not transcribed) — unused for scoring. A stays BELOW_THRESHOLD (P20/P38): no explicit denial of God; Spectator 2020 'doesn't mean I'm an atheist' / agnostic; Brief History 1991 purpose remark secondary via Wikipedia. primary ATHE @0.5 alt AGNOS kept (W3); Spectator strengthens AGNOS alt. B 3 stays @0.5: basis inference_from_work→written_profession (S6 timeless mathematical laws / mathematical structure just there in nature; S7 entire physical world governed according to mathematical laws); P16 Hilbert / P35 keep 0.5 without exception/no-exception claim (alt 4); support corroborated. mid_basin BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S9. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch W (gs_2584730_W run 1): ruling W3 (v8's call on the auditor's advice): ATHE at 0.5, alternative AGNOS, kept. (Note) the undated tilings cite P12 and P17 instead of P39. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch W, order P32: F 4, rank 127). Basics from the Nobel Prize site (facts page and biographical) and MacTutor (O'Connor and Robertson). Worldview from one recorded interview (New Scientist, 14 November 2022, Michael Brooks), long after the working years (P1 cap 0.5). Scientist (P30). primary_system ATHE (0.5, alt AGNOS); A BELOW_THRESHOLD (named reading 4); B 3 (0.5, alt 4); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1965–1967 (0.7). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: penrose-roger
   display_name: "Roger Penrose"
@@ -201,6 +202,19 @@ lane_b:
   reading: "Visual-geometric physics; lawful mathematical nature (written); no established religion, open purpose / agnostic lean."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Own interviews: 2022 'in that sense, I am an atheist' and no religion he has seen (S4); 2020 'I'm an agnostic' and that does not mean he is an atheist (S8). He rejects Christianity."
+    cites: [{source: S4, locator: "question on inherent meaning in the universe"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "S4 and S8 both reject Christianity and any religion he has seen. Quaker grandparents are heritage. No contrary membership is in the file."
+    cites: [{source: S4, locator: "question on inherent meaning in the universe"}]
 institutions:
   - {value: "Birkbeck College, London", role: "Reader (1964), Professor of Applied Mathematics (1966)", years: "1964–1973", kind: university, certainty: 0.7, cites: [{source: S3, locator: "appointments"}], how_known: "MacTutor."}
   - {value: "University of Oxford", role: "Rouse Ball Professor of Mathematics, later emeritus", years: "1973–1998", kind: university, certainty: 0.7, cites: [{source: S3, locator: "appointments"}, {source: S1, locator: "affiliation at the time of the award"}], how_known: "MacTutor; Nobel site."}

@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.5"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: native_name TODO→Bertrand Arthur William Russell @0.7 (matches full_name / SEP). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (grandmother upbringing; denomination not named on file). Chart-moving NO."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 3f4817e, run 1). B_cause 4 -> 3 (0.5, alternative 4) under P41. D_authority source titled ('Has Religion Made Useful Contributions to Civilization?', 1930, as quoted in SEP from A1957, p. 23). S3 redated 1947 -> 1949: first printed in The Literary Guide and Rationalist Review 64(7), July 1949, pp. 115-16 (Collected Papers vol. 11, no. 5); no change to age or period fields (earliest evidence is still 1927)."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #13). P47 source_quality on every source. Added S5 Why I Am Not a Christian and Other Essays (ed. Paul Edwards, Simon & Schuster / Allen & Unwin 1957; archive.org OCR of sixth paperback printing 1965) verifying WIANC p.5 disbelief, Natural-Law Argument pp.7–9, Free Man's Worship p.107 (1903; 'accidental collocations of atoms'; 'nature, omnipotent but blind'; no individual life beyond the grave), What I Believe ~p.48 ('Man is a part of nature'), and Has Religion… Objections ~p.30 ('no reason to suppose any religion true'). Added S6 MacTutor for dual-source basics (birth/death/Nobel). A_locus already multi-cited (S2+S3): labelled support corroborated; cites +S5; value/certainty stay 4 @ 0.5 (P38). B_cause was single on S2: cites +S5 → support single → corroborated; value/certainty stay 3 @ 0.5 (P41, alt 4). C support single → corroborated (S2+S5 Free Man). D primary-checked in S5 → certainty 0.5 → 0.7, support corroborated (S1+S5). first_evidence_of_lio_type_views 1927 → 1903 (Free Man's Worship, age 31); lio_views_relative_to_major_work after → during (at start of 1903–1913 span). Chart: faded hollow → faded filled (fill cue). Collected Papers vols. 10–11 still not opened; S3 web still 404 this pass. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: russell-bertrand
   display_name: "Bertrand Russell"
@@ -219,6 +220,20 @@ lane_b:
   reading: "As belief, not finding: form present, circle absent. A case that does not fit H1's circle."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Published 1949 essay: an Agnostic to philosophers and an Atheist to the ordinary man (S3). 1927 lecture Why I Am Not a Christian (S2). Brixton form: agnostic (S1 §6)."
+    cites: [{source: S3, locator: "paragraph 3"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "Life and work, citing S1 and S6: dismissed in 1916 and imprisoned in 1918 for anti-war writing, not for a religious charge."
+    cites: [{source: S1, locator: "§1 chronology"}]
+  practice_gap:
+    gap: aligned
+    evidence: "S2, S3, and the Brixton form (S1 §6) match. No church membership is in the file."
+    cites: [{source: S3, locator: "paragraph 3"}]
 institutions:
   - {value: "Trinity College, Cambridge", role: "student, lecturer, fellow", years: "1890–1916; 1944–", kind: university, certainty: 0.7, cites: [{source: S1, locator: "§1 chronology"}], how_known: "SEP."}
 collaborators:

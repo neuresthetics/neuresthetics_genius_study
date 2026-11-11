@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 195). Source: Britannica, signed by Dirk Jan Struik (scholars edition, read in full). Lasting work: the equations that bear his name, first used in his prize essay on the libration of the Moon (1764, French Academy prize), and Mécanique analytique (1788), 'the basis for all later work in this field'; span 1764–1788 by the prize award and publication (P30 #1), age 28. His earlier calculus of variations (praised by Euler) is undated in the source; 0.5 on the first year, alternative earlier. Scientist (P30): analytic and celestial mechanics are results about physical systems; no statement of his own, so B 3 at 0.5, alt 4 (P35). No worldview source: primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #184 / 228, F 3 rank 195). Goals: add sources; firm B; leave A silence if none; do not force plot. Read Mécanique analytique 2nd ed. 1811 (IA OCR mcaniqueanalyt01lagr, S4) for own-voice least-action remark (p. 246); Delambre 1816 Notice (FR Wikisource, S5) for reported reserve about culte and deathbed body-rest remark; Wikipedia EN (S3, P50 dual bio) and HSM/Conifold quotation of Boissonnade & Vagliente translators' bio (S6) for heritage/leads. P47 source_quality on S1–S6. A stays UNKNOWN (P19): Kline 'agnostic', Marechal Dictionnaire des Athées, Napoleon-at-Mass, and Mass-regularly claims are secondary or reported; no first-person locus. primary_system UNKNOWN; AGNOS rejected as code (lead only). B 3 @0.5 inference_from_work → 3 @0.5 written_profession support corroborated (S4+S1): 'je regarde non comme un principe métaphysique, mais comme un résultat simple et général des lois de la Mécanique' (MA p. 246); alt 4 (P16/P35/P40: lawful remark, no no-exception). first_evidence_of_lio_type_views UNKNOWN→1788. mid_basin UNKNOWN. Chart-moving NO (A UNKNOWN). No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: lagrange-joseph-louis
   display_name: "Joseph-Louis Lagrange"
@@ -156,6 +157,18 @@ lane_b:
   reading: "As belief, not finding: analytic (not geometric) form; circle unclear. Worldview still unplottable (A UNKNOWN; B faded). The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "Mécanique analytique and Delambre's Notice were checked; no adult church or creed is stated. Catholic baptism is heritage only."
+    cites: [{source: S5, locator: "étranger à toute discussion sur le culte"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Prussian Academy of Sciences, Berlin", role: "director of mathematics (post vacated by Euler)", years: "1766–1787", kind: "academy or learned society", certainty: 0.7, cites: [{source: S1, locator: "para. 3–4"}], how_known: "Britannica."}
   - {value: "École Polytechnique", role: "professor of mathematics", years: "1794", kind: "university", certainty: 0.5, cites: [{source: S1, locator: "para. 6"}], how_known: "Britannica: from its opening in 1794; end year not given."}

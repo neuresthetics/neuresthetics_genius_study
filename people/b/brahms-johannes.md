@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #177, F 3, rank 188). Needs: A UNKNOWN; B UNKNOWN; letters/own words on God/religion if any. Read: Reinthaler letter 9 Oct 1867 English (S5 Richmond faculty reprint; Wikipedia S4 cites Musgrave 1985 p. 80) — gladly omit 'German' for 'human'/'Menschen' and John 3:16, keep biblical lines as musician; Kalbeck Taufzeugnis St. Michaelis baptism 26 May 1833 (S6); Wikipedia EN dual bio (S4: Lutheran baptism/confirmation; Swafford agnostic/humanist; Dvořák 'believes in nothing'); Suk Mar 1896 Schopenhauer recollection via Beller-McKenna secondary trail (S4/S7) — reported speech after span. Do not code pantheism/religion from Requiem musical subject alone (standing rule). P47 source_quality on S1–S7. P50 dual bio S1+S4. primary_system UNKNOWN→BELOW_THRESHOLD (AGNOS/SECHUM candidates; no own-voice 'I am agnostic' / denial); A UNKNOWN→BELOW_THRESHOLD (Reinthaler is text-selection, not locus; Suk reported speech; P20 AGNOS-candidate no locus); B stays UNKNOWN (not a scientist; no nature-order); mid UNKNOWN→BELOW_THRESHOLD; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): Bremen 1868 gave all six movements then existing, so RQ-Z8-1 does not apply and the movement-5 reasoning is removed; span 1868 now 0.7; the 1869 Leipzig alternative is cited to Swafford's BSO programme note (S3, read in full). Swafford's 'skeptic and agnostic' added as a worldview lead only."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 188). Source: Britannica, signed by Robert Simpson and Karl Geiringer (scholars edition, read in full). Lasting work: Ein deutsches Requiem, 'still considered one of the most significant works of 19th-century choral music'; dated by its 'first performance at Bremen on Good Friday, 1868' (premiere, P30 #1). Bremen gave 'the six then-existing movements' (BSO note, S3), so the premiere dates the work at 0.7; alternative 1869, 'the first performance of the complete seven-movement work' in Leipzig (S3). Worldview: no own words read. Britannica calls the Requiem 'a large, objective, nonreligious humane vision' and his 'essential quality is perhaps stoicism', describing the music, not a profession. primary_system UNKNOWN (leads SECHUM, CHRIST: biblical texts 'selected by the composer'); A UNKNOWN; not a scientist; C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1868 at 0.7, age 35. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: brahms-johannes
   display_name: "Johannes Brahms"
@@ -148,6 +149,17 @@ lane_b:
   reading: "As belief, not finding: form absent, circle absent. A and B do not test H1. The record does not place a chart point."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Baptism and confirmation at St. Michaelis are youth records. The file says adult church membership and practice are not evidenced."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Gesellschaft der Musikfreunde, Vienna", role: "principal conductor", years: "1872–1875", kind: "employer", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director; Maturity and fame"}], how_known: "Britannica."}
   - {value: "Wiener Singakademie", role: "conductor", years: "1863–1864", kind: "employer", certainty: 0.7, cites: [{source: S4, locator: "Maturity / Move to Vienna"}], how_known: "Wikipedia."}

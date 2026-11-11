@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #162, F3 rank 170). Hunt: Retraction Middle English read in full (S4 UMSL/standard CT text; present in 28 MSS); scholarship divides on sincerity/authenticity and on whether it is a disavowal vs prayer for intercession (S5 Wikipedia; Herman Chaucer Review 2022 abstract; Harvard Chaucer site) — stays lead, not scored as profession (§3 / P42 / standing deepen rule). Treatise on the Astrolabe prologue + II.4 (S6 Skeat): 'lewd compilatour'; rejects 'observauncez of iudicial matiere and rytes of payens, in which my spirit ne hath no feith' — not locus, not P16 nature-order (Part IV on celestial causes unfinished). Pilgrim speech not coded (P42). primary_system stays UNKNOWN (lead CHRIST); A–E stay UNKNOWN; mid UNKNOWN; not plotted. P47 source_quality on S1–S6. No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fix (FAIL, P26; RQ-Z9-N1, v8's call on the auditor's advice): the 1387 start was cited to the biography opening, but the only '1387–1400' there is in the Top Questions box. Re-sourced to the Britannica topic article 'The Canterbury Tales' (S3, body read: 'written in Middle English in 1387–1400'). Under RQ-Z9-N1 a scholar's composition range dates a manuscript-era work (P12 start), so the span stays 1387–1400 and age 45. Retraction summary (S3) added as a lead. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z9, order P32: F 3, rank 170). Source: Britannica (R. M. Lumiansky, signed; opening, 'Forebears and early years'). No own-voice religious statement read: the Retraction at the end of The Canterbury Tales is a lead, not read here, and his first-person narrator 'both is and is not the poet himself' (S1). Religious themes in the poems are work, not profession (P16). Not a scientist. primary_system UNKNOWN (lead CHRIST); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1387–1400, age 45. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: chaucer-geoffrey
   display_name: "Geoffrey Chaucer"
@@ -134,6 +135,17 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The Retraction asks Christ's mercy in the first person, and the file keeps it as an unscored literary closing. Pilgrim tales are not used."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions: []
 collaborators:
   - {value: "John of Gaunt", relation: "mentor or employer", note: "patron; Book of the Duchess", certainty: 0.7, cites: [{source: S1, locator: "Forebears and early years"}], how_known: "Britannica."}

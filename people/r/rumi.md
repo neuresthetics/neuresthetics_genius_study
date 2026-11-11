@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #204/228, F 3, rank 217): score A if a clear reading ≥0.5; leave mixed as BELOW; do not force plot. Re-read Schimmel Britannica (S1); Nicholson Mathnawí Books I–II translation + Book V.590–591 via masnavi.net Nicholson English (S5); Arberry Discourses / Fihi as Marman modernization (S6); Mojaddedi Iranica Teachings (S7); Chittick 'Rumi and wahdat al-wujud' (S8); Wikipedia EN dual bio (S9). primary ISLAM scholarly_reconstruction 0.5 → written_profession 0.7 (Book I Arabic prose preface: roots of Mohammedan Religion; expounder of the Qur'an; blessing on Mohammed; Amen O Lord of all created beings). A UNKNOWN→BELOW_THRESHOLD: A 0–1 pole (Lord of created beings; First and the Last; world = prison / finite vs infinite other) against fana / 'except God… all the rest is gone' and Fihi 'I am not, God is all' (A 2–3+ lead); Schimmel S1: ideas contradict / cannot systematize; Chittick: never uses wahdat al-wujud; Nicholson Ibn Arabi parallels scant; not PANT (no Deus sive Natura; world is prison). B UNKNOWN→BELOW_THRESHOLD: Masnavi I.88 moral-cosmic correspondence under poetry/P42 caution; not a scientist (P30). Mid BELOW. Dual bio P50 (Britannica Balkh vs Wikipedia Wakhsh). P47 source_quality on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA10 audit fix: Mas̄navī c.1262 at 0.5 (Mojaddedi: 'started probably around 1262'), earliest possible 1258; S4 labelled unofficial web copy."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fix: Mas̄navī dated c.1258 at 0.5 by the start of its composition range (Iranica S3; Mojaddedi S4), alternative 1262."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 217). Source: Britannica scholars edition, signed by Annemarie Schimmel (read in full). Lasting: his lyric poetry (Dīvān-e Shams), begun after Shams disappeared in 1247 ('This experience of love, longing, and loss turned Rūmī into a poet'), and the Mas̄navī, which 'widely influenced mystical thought and literature throughout the Muslim world' (S1); 'By the end of the 20th century, his popularity had become a global phenomenon' (S1). Composition range (RQ-Z9-N1): lyrics from 1247; the Mas̄navī begun c.1262 at 0.5 (S4; Book I finished about 660/1262, S3), earliest possible 1258 (Ṣalāḥ al-Dīn's death), and worked on until his death in 1273; span 1247–1273 at 0.5, age 40. Worldview: ISLAM at 0.5 (scholarly_reconstruction: 'the greatest Sufi mystic'; S1); no own words quoted, so A UNKNOWN (P19); not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: rumi
   display_name: "Rumi"
@@ -174,6 +175,19 @@ lane_b:
   reading: "Lane B unused: A/B mid stay BELOW; no H1 timing claim."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: muslim
+    detail: "Mathnawi Book I prose preface: roots of the Mohammedan Religion and expounder of the Qur'an (S5)."
+    cites: [{source: S5, locator: "Book I Arabic prose preface (Nicholson tr., opening)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "The preface (S5) states that identification. The file keeps the Sufi lines inside that affiliation and records no second public one."
+    cites: [{source: S5, locator: "Book I Arabic prose preface (Nicholson tr., opening)"}]
 institutions:
   - {value: "Madrasah in Konya", role: "teacher (succeeded his father)", years: "1231–UNKNOWN", kind: "religious body", certainty: 0.7, cites: [{source: S1, locator: "Early life and travels"}], how_known: "Britannica."}
 collaborators:

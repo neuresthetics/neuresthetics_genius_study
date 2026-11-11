@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #167, F 3, rank 177). Goals: any own-voice religion/locus/nature; keep silence if none; do not force plot. Hunt: Jewish birth family (father Emil Kiesler Galician-Jewish; mother Gertrud Lichtwitz Hungarian-Jewish, Shearer/Wiki: mother converted to Catholicism and raised Hedy Christian though unbaptized); NDB Konfession jüdisch, seit 1933 römisch-katholisch + Mandl veranlasste Konversion; JWA Barton: converted to Christianity to marry Mandl 1933, remained silent about Jewish identity; Dean/Bombshell letter (via Oregon Jewish Life / JWeekly): mother 1938 Catholic papers, Hedy 'I don’t want to be identified as a Jew in Hollywood' — concealment/identity, not creed; EBSCO Lewis secondary: did not renounce Judaism but did not practice. Ecstasy and Me destiny/afterlife quote left lead only (disowned ≤0.5 P29). No first-hand religion/locus/nature scored. primary/A/B/mid stay UNKNOWN. Heritage + nominal_affiliations + changes_over_life filled (heritage ≠ worldview; membership ≠ ideology). Chart-moving NO. P47 source_quality; P48; P50 Wikipedia. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fixes (FAIL, P13; v8's calls on the auditor's advice): 'achieved recognition as a noted inventor' is not a lasting claim about the device, and its later use is only in the Top Questions box (P26), so no lasting work is supported; the patent moves to major_works, dated by its 10 June 1941 filing (formal submission, P30 #1). Span 1942 -> UNKNOWN; age and era UNKNOWN. Not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 177). Basics from Britannica (Britannica Editors; body only, the Top Questions box not cited, P26); the patent from Google Patents (US 2,292,387, 'Secret communication system', filed 1941-06-10, granted 1942-08-11, inventors Hedy Kiesler Markey and George Antheil). No own-voice statement on religion or nature read. Not a scientist (invention, P33). All worldview fields UNKNOWN. Span 1942 (patent grant), age 29 (birth 1913/14; earlier year used, as for Chaucer). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: lamarr-hedy
   display_name: "Hedy Lamarr"
@@ -125,6 +126,20 @@ lane_b:
   reading: "No Lane B data. Heritage and Hollywood concealment do not supply A or B."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "NDB records Konfession römisch-katholisch from the 1933 conversion for the Mandl marriage and the Karlskirche wedding. Jewish birth is heritage."
+    cites: [{source: S5, locator: "Konfession; Mandl veranlasste Konversion"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "A 1938 letter about not being identified as a Jew in Hollywood is in the file; no legal religious sanction is stated."
+    cites: [{source: S8, locator: "letter quote"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The 1933 Catholic registration and Karlskirche marriage match that affiliation. No adult text in the file withdraws the registration."
+    cites: [{source: S5, locator: "Konfession; Mandl veranlasste Konversion"}]
 institutions:
   - {value: "Metro-Goldwyn-Mayer", role: "contract actress", years: "1938–1945", kind: "employer", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
 collaborators:

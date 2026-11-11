@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 6
+  schema_version: "1.5"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica and Solon I. Bailey's obituary (Popular Astronomy 30, 1922, pp. 197–199), read in the NASA ADS page scan. No writing of hers on religion was found; Bailey, a colleague, describes her as 'deeply conscientious and sincere in her attachment to her religion and church' and names her father as the Rev. George Roswell Leavitt. primary_system BELOW_THRESHOLD (CHRIST candidate). B 4 at 0.5 from her working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #109 (both runs): the no-code note wrongly cited 'decision P9: paraphrase alone cannot score'; it now cites CODING_GUIDE §1 (church attachment is never a code on its own) and §7 (another person's description is not her words). Decision P12 recheck: the variable-star item '1900s–1921' → 'by 1921' (sources give totals only), so it does not set the year; first_lasting_contribution_year stays 1912, with a flag that a dated source could move it earlier. No coded value changed. Not reviewed."}
@@ -17,6 +17,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on working science only. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #169, F 3, rank 179). Goals: find her own words if any; otherwise keep silence; do not force plot. Hunt: MacTutor (S4) — father Congregationalist minister (Pilgrim Congregational Cambridge; later Beloit First Congregational); funeral Chapel of the First Congregational Church 14 Dec 1921; Pickering letters 1902 on eyes/hearing/employment only (no religion). Circular 173 (S5) read in full (UCLA CWP transcription) — pure working science; 'simple relation between the brightness of the variables and their periods'; no God/miracle/exception language. Johnson Miss Leavitt's Stars (via secondary): 'No diary has been found' (PBS SoCal / Johnson). Wikipedia 'remained deeply religious' (P50) cites Lightman Discoveries — secondary paraphrase of Bailey, not own words; unused for A/primary (§7). primary BELOW_THRESHOLD kept (CHRIST lead from Bailey + Congregational heritage only). A BELOW kept. B 3 @0.5 inference_from_work kept (P35); support: corroborated (P48) S1+S2+S5. mid BELOW; not plotted. Chart-moving NO. P47 source_quality on S1–S5. major_works gains 1912 Circular 173. Congregational denomination filled in heritage/family. No fallacy_catalog; no figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: leavitt-henrietta-swan
   display_name: "Henrietta Swan Leavitt"
@@ -138,6 +139,18 @@ lane_b:
   reading: "As belief, not finding: form absent, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Bailey reports attachment to her religion and church; the funeral was Congregational. The denomination is taken from her father's ministry, so no adult label is assigned."
+    cites: [{source: S2, locator: "p. 197"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Harvard College Observatory", role: "volunteer assistant (1895), permanent staff (1902), head of photographic stellar photometry", years: "1895–1921", kind: employer, certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–2"}, {source: S2, locator: "p. 197"}], how_known: "Two sources."}
 collaborators:

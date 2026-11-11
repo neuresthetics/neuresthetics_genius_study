@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.5"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from Britannica (first page), the Nobel biography and the AIP exhibit (Pasachoff). Worldview from her own Pierre Curie with Autobiographical Notes (1923, Kellogg translation, Project Gutenberg) and two 1887 letters quoted in Eve Curie's Madame Curie (1937, Sheean translation, archive.org OCR). Raised Catholic; faith lost after her mother's death; civil wedding. primary_system AGNOS at 0.5 (stub system; ATHE named). B 4 (0.7), D 4 (0.5); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Finding #108: primary_system AGNOS (0.5) → BELOW_THRESHOLD, candidates AGNOS and ATHE; the AGNOS choice rested on the absence of a denial of God, and AIP p. 57 ('liberal freethinkers like Marie and her friends') fits either code. Finding #112: D_authority 4 (0.5) → BELOW_THRESHOLD (scored from absence; same as Fermi). Finding #126: the p. 77 'nothingness' line is about obscurity, not death; C_ledger tag and the reliance in primary_system and C removed. Finding #120: 1898 locator AIP p. 36, not p. 22. Eve Curie page numbers confirmed against the scans; the 'one page either way' caveat is removed and the archive.org image-index offset is noted. mid_basin unchanged (BELOW_THRESHOLD). Not reviewed."}
@@ -20,6 +20,7 @@ record:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #56, F5 rank 56). Needs: A BELOW_THRESHOLD. P47 source_quality on S1–S8. Re-read S3/S7 (Pierre Curie 1923 own words: 'I myself did not practice any'; decay 'laws of probability' / 'mystery to us') and S4 Eve (1887 'God willed it' letter; mourning-journal excerpts pp. 251–255 addressed to Pierre — no God/faith/pray term). S8 Wikipedia EN dual-source bio (death at Sancellemoz, Passy; secondary 'agnostic' via Reid). Reid 1974 IA borrow-restricted this pass; Goldsmith 2005 unread (Live Science paraphrase only: biographer 'never again believe in the benevolence of God'). Gallica mourning-journal MS (btv1b90803276) metadata only. A stays BELOW_THRESHOLD (practice sentence ≠ God-locus; Reid Davis 1971 'I would like to believe, but I cannot' is third-hand personal communication, not her published words; Eve 'revolt' / Goldsmith benevolence are secondary). B stays 4 @ 0.7 written_profession; support labelled corroborated (S3+S4; P48). primary_system stays BELOW_THRESHOLD (AGNOS/ATHE candidates; wiki/Reid 'agnostic' is secondary label). Chart-moving NO (A BELOW). No fallacy_catalog (Jason). Draft, not reviewed."}
 
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: curie-marie
   display_name: "Marie Curie"
@@ -203,6 +204,19 @@ lane_b:
   reading: "As belief, not finding: form unclear, no circle. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "Published autobiographical notes: at her civil wedding, 'I myself did not practice any.' An 1887 private letter says she cannot share believers' faith."
+    cites: [{source: S3, locator: "ch. IV, Marriage and Organization of Family Life"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The autobiographical sentence says she did not practice a religion, and the 1887 letter says she cannot share believers' faith."
+    cites: [{source: S4, locator: "p. 76"}]
 institutions:
   - {value: "École Normale Supérieure for girls, Sèvres", role: "lecturer in physics", years: "1900–", kind: employer, certainty: 0.7, cites: [{source: S1, locator: "'Move to Paris' (last paragraph)"}], how_known: "Britannica."}
   - {value: "Faculty of Sciences, University of Paris (Sorbonne)", role: "professor of general physics (first woman in the post)", years: "1906–1934", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "paragraph 1"}], how_known: "Nobel biography."}

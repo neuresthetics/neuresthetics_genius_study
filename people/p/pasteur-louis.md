@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 8
+  schema_version: "1.5"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-25
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus support single→corroborated (P48) via René Dubos 1950 Free Lance of Science (S10) quoting Sur la Vie 'God as author of life' agreeing with Œuvres VII S8. B already corroborated. Certainty stays 0.5 (named Infinite alt in rationale). Chart cue: faded hollow→faded filled. No fallacy_catalog; no figures/."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
@@ -19,6 +19,7 @@ record:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), ruling R1, logged as P35 (v8's pick): B_cause 4 → 3 at 0.5, alternative 4, because B rests on his working science (Britannica's account); his own speech leans to 3 anyway. No other value changes; mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #113 / F4 rank 114). Goals: score A if clear locus; lift B to 0.7 if own-voice P16. Read Œuvres de Pasteur vol. 7 Mélanges (IA oeuvresp07pastuoft / uvresdepasteur0007past OCR; S8) and Life of Pasteur (Gutenberg #60956) for leads only. Dual bio: Britannica (S1) + Wikipedia EN (S9) (P50). P47 source_quality on S1–S9. A BELOW→0 @0.5 support single (S8): Favé letter 22 Mar 1863 'Dieu a placé dans les êtres les plus infimes de la création' (p. 8–9, inédite) + Minister note Apr 1862 'propriétés admirables que Dieu leur a départies' (p. 6) + Sur la Vie MS 'Dieu comme auteur de la vie' stake vs spontaneous generation (p. 29); named alt 2 from 1882 Infinite-as-idea / dieu intérieur (S3). B 3 @0.5 scholarly_reconstruction→3 @0.7 written_profession support corroborated (S8+S3): own-voice lawful nature — Bernard eulogy 'harmonie inconnue des lois de l'univers' (p. 285), Sur la Vie 'lois de son développement' (p. 29), Minister 'lois de la permanence de la vie' (pp. 5–6), speech lean (S3); alt 4 kept (no stated no-exception; P35/P16). C UNKNOWN→BELOW (Arbois 1874 affirms immortal soul vs néant, pp. 294–295, but no reward/punishment ledger). D 2 @0.7 support single (S3). E BELOW; mid_basin BELOW (A at 0.5 fails P4 0.7 bar). primary BELOW unchanged (spiritualisme still no system file). first_evidence_of_lio_type_views 1882→1862. Chart-moving NO: A 0.5 < 0.7. Correspondance (Gallica) and Geison 1995 unread. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: pasteur-louis
   display_name: "Louis Pasteur"
@@ -249,6 +250,19 @@ lane_b:
   reading: "As belief, not finding: form absent (experimental method), circle absent (a supernatural infinite). The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Public 1882 speech: he served 'la doctrine spiritualiste' (S3, pp. 3–4). 1874 Arbois speech affirms an immortal soul (S8). No adult church roll; Catholic birth is heritage."
+    cites: [{source: S3, locator: "pp. 3–4"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent."
+  practice_gap:
+    gap: aligned
+    evidence: "S3 and the Arbois speech (S8, pp. 294–295) match that stance. S8 p. 29 states what spontaneous generation would imply, not a denial."
+    cites: [{source: S3, locator: "pp. 3–4"}]
 institutions:
   - {value: "University of Strasbourg", role: "professor of chemistry", years: "1849–1854", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Research career', paragraph 1"}], how_known: "Britannica; end year from the 1854 Lille appointment."}
   - {value: "University of Lille", role: "professor of chemistry and dean of the science faculty", years: "1854–1857", kind: university, certainty: 1.0, cites: [{source: S1, locator: "'Research career', paragraph 3"}, {source: S2, locator: "paragraph 2"}], how_known: "Two sources."}

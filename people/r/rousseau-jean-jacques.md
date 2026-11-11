@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 1
+  schema_version: "1.5"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 109). Basics from Britannica (Maurice Cranston, signed; opening and 'Formative years', read live) and SEP (Christopher Bertram, 'Life'). Worldview from his own published French texts in the Geneva Collection complète (1782), read in Wikisource's page-linked transcription: the Profession de foi du vicaire savoyard (Émile IV, 1762), the Lettre à Christophe de Beaumont (dated 18 November 1762) and the third Lettre écrite de la montagne (1764). primary_system CHRIST (0.5; alternatives DEISM, which P27 blocks, and CLASS_THEISM); A 1 (0.7, alt 0); B 3 (0.7, alt 4; P27 free-will anchor); D 3 (0.5, alt 4); mid_basin true (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: RO6 WEAKEN; rulings S1 and S2, v8's calls on the auditor's advice). Scoring the Vicar's speech now cites P42 and its v8 addendum (ruling S2: a character's words count as the author's view when a text in the author's own voice adopts them, at that text's certainty), with the own-voice texts and the counter-evidence: Émile t. 5, p. 112 ('non comme une regle'); Beaumont t. 6, pp. 36 and 52; Lettres écrites de la montagne II, t. 6, p. 171 ('mes articles fondamentaux') and III, pp. 182–183 with its note. Ruling S1: P27's 'declines to contest it' covers the Vicar's suspension, so CHRIST stays (ruling question closed). The 1764 cap cites P1 (under P20). Rameau dispute dated 1752. No value changes."}
 
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #108 / F4 rank 109). Goals: strengthen labels/sources; chart-moving unlikely (already dark filled). Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on every source. Spot-checked key Profession / Beaumont / Montagne quotes against Internet Archive OCR of Collection complète t. 5 and t. 6 (S8, S9; collectioncomple05rous / collectioncomple06rous, Fisher Toronto). S3–S5 reliability notes updated; wording firm. support labels added: A and B corroborated (already; P48 S3+S4 / S3+S5); D single. C_ledger UNKNOWN→1 @0.7 alt 2 (Profession soul/Providence t. 5 pp. 42–50, owned under P42 via Beaumont; félicité des bons / tourment des méchans by conscience-memory; 'Je ne dis point que les bons seront récompensés' but happy/compensated). Baptism 1712-07-04 from Wikipedia (Damrosch). CHRIST stays @0.5 (P27/S1 settled). A 1 @0.7 alt 0; B 3 @0.7 alt 4; mid true @0.7. Chart-moving NO (already dark filled; C fill does not move plot cues). No fallacy_catalog. No figures/. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: rousseau-jean-jacques
   display_name: "Jean-Jacques Rousseau"
@@ -260,6 +261,20 @@ lane_b:
   reading: "A mid-basin natural religion: a willing God behind a lawful nature, with human freedom as the one exception."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Readmitted to the Genevan Reformed church in 1754 (S2 §1). Published letter: 'je suis Chrétien... disciple de Jésus-Christ' (S4). Catholic from 1728 until that return."
+    cites: [{source: S2, locator: "§1"}]
+  conformity_pressure:
+    level: moderate
+    evidence: "Émile condemned in Paris; Émile and The Social Contract condemned in Geneva in 1762 on grounds of religious heterodoxy (S2 §1)."
+    cites: [{source: S2, locator: "§1"}]
+  practice_gap:
+    gap: mixed
+    evidence: "Reformed readmission (S2) and the Christian self-label (S4) match. The Profession, which he owns in S4, neither admits nor rejects revelation (S3, t. 5, p. 97)."
+    cites: [{source: S4, locator: "t. 6, p. 52"}]
 institutions:
   - {value: "French embassy in Venice", role: "secretary to the ambassador", years: "1743–1744", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Controversy with Rameau'"}, {source: S2, locator: "§1"}], how_known: "Britannica."}
   - {value: "Encyclopédie of Diderot and d'Alembert", role: "contributor (music)", years: UNKNOWN, kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}], how_known: "Britannica."}

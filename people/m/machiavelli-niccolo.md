@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #121 / F4 rank 122). Goals: further in-span letters/discourses that settle A or B; else strengthen documentation and keep honest BELOW. Opened Discorsi I.11 (Numa nymph simulation; Savonarola 'Io non voglio giudicare s'egli era vero o no'); Discorsi II.2 ('la nostra religione' / 'abbi renduto il mondo debole' — political critique of Christian education, not a personal creed; also allows patria defence under virtù reading). Coder-read Esortazione / Discorso morale on Wikisource (S7): 'ogni cosa è creata per onore e per bene dell’uomo'; confraternity address 'per ubbidire a' miei maggiori'; undated — ruling V2 stands, lead only. Guicciardini letter Carpi 17 May 1521 (S8, after span): 'io non dico mai quello che io credo, né credo mai quel che io dico' — sincerity caveat, not scored. Wikipedia EN (S6, P50). primary / A / B / mid stay BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S8. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): the Esortazione alla penitenza details and quotation marked as coming from the batch V audit's reading, not the coder's. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): MC4, Prince ch. 26 locator p. 99 -> p. 100 (scan p. 110); MC8, the three Discorsi statements relabelled from scholarly edition to the web-copy label (primary transcription, unscanned); ruling V2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with the Esortazione alla penitenza as a lead; note, SEP dates added to S2. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 122). Basics from Britannica (Harvey Mansfield) and SEP (Cary Nederman); own-voice passages read in Italian on Wikisource: Il Principe chs. 25–26 (1814 edition, proofread against scans) and Discorsi I.12, I.56, II.5 (Martelli text). Not a scientist (P30). primary_system BELOW_THRESHOLD (scholars divide: anti-Christian, conventional piety, Christian); A, B, D, E BELOW_THRESHOLD; C UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1513–1519 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: machiavelli-niccolo
   display_name: "Niccolò Machiavelli"
@@ -205,6 +206,19 @@ lane_b:
   reading: "Virtù against Fortuna; politics read from ancient and modern examples."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "The Prince, the Discorsi, and the Esortazione were checked. No adult creed or church office is stated. Catholic Florence is context only."
+    cites: [{source: S7, locator: "Discorso morale (Esortazione alla penitenza)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file records exile at San Casciano from 1513. It does not call that exile a sanction for religious dissent."
+    cites: [{source: S1, locator: "'Early life and political career'"}]
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "Second chancery of the Florentine republic", role: "head (secretary)", years: "1498–1512", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Early life and political career'"}], how_known: "Britannica."}
   - {value: "Florentine militia", role: "organizer", years: "from 1505", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "'Early life and political career'"}], how_known: "Britannica."}

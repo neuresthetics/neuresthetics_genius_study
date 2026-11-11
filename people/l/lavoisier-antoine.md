@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 6
+  schema_version: "1.5"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -16,6 +16,7 @@ record:
     - {date: 2026-10-02, by: "Grok Bot", summary: "Span alignment (P29, P30 and its addendum): timing.major_work_period checked, 1772–1789 unchanged; worldview.working_years 1764–1794 → 1772–1789, equal to the span (P30 addendum f); evidence for every headline value checked against the span; no value or certainty changed. Listed in reports/p30_span_alignment.csv. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #83, F4 rank 84). Needs: A BELOW_THRESHOLD; B 4 @0.7 (strengthen corroboration). Re-checked Traité élémentaire 1789 conservation (S4 IA + Gutenberg #52487 French text); Kerr 1790 English translation (S7, Gutenberg #30775) 'nothing is created… equal quantity of matter'; Britannica Donovan 'Conservation of mass' (S1) fully re-read; SHI (S2) silent on religion; Grimaux p. 53 King letter + 'il en avait gardé les croyances' re-checked on IA OCR; Catholic Encyclopedia 1913 (Wikisource) reprints Grimaux King letter (finding aid, not a new locus); Wikipedia EN (S8, P50 dual-bio) — category 'French Roman Catholics' is heritage tagging only. Correspondance vol. V (1787–1788, Académie des Sciences 1993) not freely available this pass; Scheler & Smeaton 1958 Annals of Science still unread (Taylor & Francis paywall). P47 source_quality on S1–S8. B 4 @0.7 labelled support corroborated (P48; cites S4+S1). A stays BELOW_THRESHOLD (King letter + Grimaux claim + chapel patronage + Almanach hearsay still do not place or deny God; no own-voice locus). primary_system stays BELOW_THRESHOLD (CHRIST considered, not coded). mid_basin BELOW_THRESHOLD. Chart-moving NO (A still blocks). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: lavoisier-antoine
   display_name: "Antoine Lavoisier"
@@ -175,6 +176,20 @@ lane_b:
   reading: "As belief, not finding: form partly present (principle-based analysis), circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Lay patron of the Fréchines chapel; by deed of 7 August 1781 he named the chaplain and paid him. Infant baptism is not the basis."
+    cites: [{source: S3, locator: "p. 53 n. 2"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S1 records that he was guillotined in Paris. The file does not call the execution a sanction for religious dissent."
+    cites: [{source: S1, locator: "Quick Facts"}]
+  practice_gap:
+    gap: mixed
+    evidence: "The 1781 chapel deed is a Catholic lay office. The 1791 manuscript says sixteen centuries of clerical instruction were almost entirely lost to reason."
+    cites: [{source: S5, locator: "p. 364"}]
 institutions:
   - {value: "Académie royale des sciences, Paris", role: "member (from 1768)", years: "1768–1793", kind: "academy or learned society", certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources; end year is the Academy's suppression (general knowledge, flag)."}
   - {value: "Ferme générale", role: "tax farmer", years: "1768–1793", kind: employer, certainty: 0.7, cites: [{source: S2, locator: "'Early Career'"}], how_known: "SHI."}

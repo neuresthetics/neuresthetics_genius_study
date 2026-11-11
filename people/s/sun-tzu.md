@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #131, F4 rank 133). Hunt for own-voice attribution: Lorge 2022 conclusion reaffirmed (many hands; fictional Master Sun); Boorman 2024 (Cambridge) adopts accretionist model — text developed over an extended period with no single author (S6 abstract); Wikipedia EN Sun Tzu (S5) + Art of War authorship section cite Mair (Shiji biography 'essentially fictional'), Song-era doubts, Yinqueshan slips as Han witness not Spring-and-Autumn authorship proof. No SEP/IEP entry reconstructing a personal LIO for historical Sun Wu. P42 stands: Art of War remains context only. P49 considered and not stretched (no dual scholarly reconstruction of personal A/B). P47 source_quality on S1–S6. P50 dual bio: Britannica (S1) + Wikipedia EN (S5) — traditional 544–496 BCE / Qi / Gusu left UNKNOWN (P39; contested). primary/A UNKNOWN; B/D BELOW leads held; mid UNKNOWN; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (ST7) era_bucket '-500 to 499' (0.5) -> UNKNOWN under a strict P39 (life dates UNKNOWN; the Wu service, 512–506 B.C. in the Shiji passage Giles quotes, falls before -500; the Warring States date belongs to the text). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 133). Basics from Britannica (Britannica Editors, 14 Sep 2026): the 'reputed author' of The Art of War, which is 'more likely to have been written early in the Warring States period'. Lorge (Cambridge, 2022) holds that many hands wrote it under the name of a 'fictional Master Sun'. No source read attributes the text to him, so it is context only (P42): it scores no code or axis. Giles's 1910 translation read for leads (ch. XI §26 against omens; ch. XIII §5 foreknowledge not from spirits). primary_system, A, C, E UNKNOWN; B, D BELOW_THRESHOLD as leads; mid_basin UNKNOWN. Life dates and span UNKNOWN (P39); era '-500 to 499' at 0.5. Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: sun-tzu
   display_name: "Sun Tzu"
@@ -129,6 +130,18 @@ lane_b:
   reading: "Intelligence from men, not spirits, in an unattributed text."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "The Art of War is not treated as his statement. The file does not attribute it to a historical Sun Wu as sole author."
+    cites: [{source: S1, locator: "opening"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated affiliation to compare."
 institutions:
   - {value: "State of Wu", role: "general and strategist (traditional)", years: UNKNOWN, kind: employer, certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica, as tradition."}
 collaborators: []

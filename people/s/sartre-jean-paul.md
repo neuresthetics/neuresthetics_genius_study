@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 187). Basics from Britannica (Wilfrid Desan, signed; scholars edition, read in full) and SEP 'Jean-Paul Sartre' (Reynolds and Renaudie, rev. 2026). Lasting work: Nausea (1938; SEP 'highly influential'; Britannica 'a most original ... piece of work') and Being and Nothingness (1943; Britannica 'a philosopher of remarkable originality and depth'; SEP 'his most famous philosophical book', what 'remains alive'); span 1938–1943 by publication (P30 #1), age 33. Own words: the public lecture Existentialism Is a Humanism (given late 1945, published 1946), two years after the span (P20 cap 0.5), read in an unofficial web copy of Mairet's translation (marxists.org; 0.7 cap, §7): 'Atheistic existentialism, of which I am a representative ...'; 'we only mean to say that God does not exist'. primary_system EXIST 0.5 (written_profession, P20), alt ATHE, as for de Beauvoir (systems/EXIST.md does not split atheist from theist existentialism); A 4 at 0.5, alt BELOW_THRESHOLD; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (P10). Not plotted (B UNKNOWN). Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #176, F3 rank 187). Needs: A faded single-source; B UNKNOWN. Dual bio: Britannica Desan (S1) + Wikipedia EN (S5, P50). Primary: Being and Nothingness Barnes (S6, IA OCR of Philosophical Library / Washington Square Press) — Part Four Ch. 2 III: 'the idea of God is contradictory and we lose ourselves in vain. Man is a useless passion' (in-span 1943); Introduction contingency / de trop of being-in-itself (ontology, not P16). Existentialism Is a Humanism (S3) kept as after-span corroboration. The Words / Les Mots Frechtman Braziller 1964 (S7, IA OCR): baptized Catholic; raised Catholic; 'He never looked at me again'; 'He vegetated in me for a while, then He died' (post-span autobiography, P20). P47 source_quality on S1–S7. A_locus 4 @0.5 → 4 @0.7 (written_profession; drop BELOW_THRESHOLD alt — BN unconditional contradiction of God resolves lecture 'even if God existed'; unofficial BN/lecture + Words retrospective keep 0.7 not 1.0); support: corroborated (S6+S3+S7). B_cause stays UNKNOWN (not a scientist; BN contingency/de trop is ontology of being-in-itself, not a P16 statement of exceptionless physical order; P41 not stretched). primary_system EXIST @0.5 alt ATHE unchanged. mid_basin BELOW_THRESHOLD → false @0.7 (A≥3 branch, P10). Chart-moving NO (still unplotted: B UNKNOWN). Nausea / The Flies character speech not scored for A (P42). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: sartre-jean-paul
   display_name: "Jean-Paul Sartre"
@@ -190,6 +191,19 @@ lane_b:
   reading: "Secular atheist existentialism; mid_basin false via A 4."
   notes: "Lane B only. Not plotted (B_cause UNKNOWN)."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: secular
+    detail: "1945 lecture: 'Atheistic existentialism, of which I am a representative' and 'God does not exist.' Catholic baptism is childhood."
+    cites: [{source: S3, locator: "para. on 'atheistic existentialism'"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "Being and Nothingness (1943) calls the idea of God contradictory, and The Words (1964) says God died in childhood. No later church."
+    cites: [{source: S6, locator: "Part Four, Chapter 2, III"}]
 institutions:
   - {value: "Les Temps modernes (co-founder and editor, 1945)", role: editor, kind: other, certainty: 0.7, cites: [{source: S1, locator: "Post-World War II work"}], how_known: "Britannica."}
 collaborators:

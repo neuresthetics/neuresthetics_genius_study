@@ -1,19 +1,20 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.5"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 59). Basics from Britannica (Gilbert), signed body through the early works only (the fetch returned only that part). Worldview from Sonnet LXV (dated 19 September 1554, sent to Vasari), Symonds's translation, Gutenberg #10314 (web copy). Not a scientist. primary_system CHRIST 0.5; A 0 at 0.5 (alt 1); B UNKNOWN (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #59, F5 rank 59). Needs: A single source; A faded; B UNKNOWN. Primary Italian of late spiritual sonnets from Guasti 1863 (S4, IA OCR) and Girardi/Wikisource (S5): G 285 Giunto è già, G 288 Le favole del mondo, G 289 Non è più bassa, G 290 Scarco d'un'importuna — personal Christ who opens arms on the cross, faith as gift, blood that washes sins. Eisenbichler 1987 (S6) adds Carteggio letters on sacraments (1516, 1548). A 0 0.5 single → 0 @0.7 corroborated; primary_system CHRIST 0.5 → 0.7; C 1 @0.5 and D 1 @0.5 newly scored; B stays UNKNOWN (P16: not a scientist; no statement on nature's causal order — 'natura' poems are beauty/love, not physics). mid_basin BELOW_THRESHOLD. Wikipedia EN (S7) dual-sources bio dates and Catholic faith. P47 on S1–S7. Chart-moving NO (B UNKNOWN, unplotted). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: michelangelo
   display_name: "Michelangelo"
@@ -176,6 +177,20 @@ lane_b:
   reading: "Late Christian devotion (cross, blood, faith-as-gift); earlier Neoplatonic ascent in love poetry noted but not the LIO score."
   notes: "Belief model only; H1 not tested. B UNKNOWN under P16."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_catholic
+    detail: "Practicing Roman Catholic: Mass and sacraments in the letters and biographies. Spiritual sonnets address divine love and Christ's blood."
+    cites: [{source: S6, locator: "pp. 123–124 (Mass, sacraments)"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "S7 says the Last Judgment was later censored. The file does not document a heresy prosecution of him."
+    cites: [{source: S7, locator: "Rome, 1534–1546; Notable work (1536–1541)"}]
+  practice_gap:
+    gap: aligned
+    evidence: "A 1554 sonnet turns the soul to the divine love that opened its arms on the cross. Mass and sacraments match. No contrary text is in the file."
+    cites: [{source: S4, locator: "p. 230"}]
 institutions:
   - {value: "Medici household of Lorenzo de' Medici", role: protégé, kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "'Early life and works'"}], how_known: "Britannica."}
 collaborators:

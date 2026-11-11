@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.5"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-26
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-26, by: "Grok Bot", summary: "RQ-Z5-N1 settled (Jason t275u unblock, 2026-10-26): Systema Naturae 10th ed. (1758) listed as a lasting contribution on ICZN Art. 3 (S15) per P13/P17; span 1735–1758. Imperium Naturae (1758) now in-span own written profession: A 0 @0.7 adds S7/S8 (DEUM sempiternum ... Domino & Artifice) so alt 2 cites are a subset → A corroborated; B 3 lifted 0.5→0.7 on in-span own-voice aeternae legis imperio (S8) with Nova creatio nulla (P35 does not apply: own statements, not work-only inference); alt 4 kept. mid_basin BELOW_THRESHOLD→true (P4). Chart: faded hollow → dark filled."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: B_cause support single→corroborated. Alt 4 cites trimmed to S11 only (Nova creatio nulla) — drop exclusive Britannica S1 which added no independent alt content (P48). A stays single (after-span Imperium alt S7/S8 exclusive by design; RQ-Z5-N1). Still faded hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
@@ -15,6 +15,7 @@ record:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z5 audit fixes (Z5-20, Z5-21, Z5-22, Z5-24; RQ-Z5-2 answered): 'Vis illud Naturam vocare' re-cited to the printed editions (S8: 1758 facsimile, p. 5; S7: 1766) and dated 1758, with footnote (b) to Seneca, Quaest. Nat. II.45; the 1735 Latin corrected to the folio (S9); 'Deum sempiternum' re-cited to S7/S8 with the 1758 variant noted; 'aeternae legis imperio' added as a B lead; B basis scholarly_reconstruction -> inference_from_work (P24). Values unchanged (A 0 @0.5 alt 2; B 3 @0.5 alt 4). RQ-Z5-N1 logged in OPEN_DECISIONS, not applied."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 154). Basics from Britannica (Staffan Müller-Wille, signed) and Britannica Scholars 'Species Plantarum'. Own words via Wikiquote (Latin with translations): Systema Naturae 1735, 'Genus omne est naturale, in primordio tale creatum'; 12th ed. (1766), Imperium Naturae, 'Deum sempiternum, immensum, omniscium, omnipotentem ... vidi et obstupui!'; the fuller Latin (a creyentesintelectuales blog transcription) continues 'Vis illud Naturam vocare, non errabis'. Secondary quotations, primary check pending; 1766 is after the span (P20). A scientist (P30: taxonomy from specimens). Span 1735–1753. primary_system CHRIST (0.5); A 0 (0.5, alt 2); B 3 (0.5, alt 4; P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: linnaeus-carl
   display_name: "Carl Linnaeus"
@@ -203,6 +204,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Species Plantarum tells the reader the world is the Omnipotent's theatre and to acknowledge the Lord's magnificence. No adult church office is in the file."
+    cites: [{source: S10, locator: "LECTORI ÆQUO"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No documented sanction against religious dissent in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The same Lectorem states that claim. No adult text in the file withdraws the Creator or Lord language. Lutheran birth is heritage only."
+    cites: [{source: S10, locator: "LECTORI ÆQUO"}]
 institutions:
   - {value: "Uppsala University", role: "professor of medicine and botany", years: "1742–1778", kind: university, certainty: 0.7, cites: [{source: S2, locator: "text"}], how_known: "Britannica."}
 collaborators:

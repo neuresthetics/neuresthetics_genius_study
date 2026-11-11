@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z5)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z5, order P32: F 3, rank 156; Caroline Herschel at rank 155 already coded). Basics from the Paris Review interview (Jerome Brooks, Art of Fiction No. 139, Winter 1994) and Innes's Cambridge study (chapter 'Origins', via excerpt). Own words: memoir There Was a Country (2012) as excerpted in Guernica (15 October 2012): 'I often had periods of oscillating faith as I grew older, periods of doubt'; struggled with 'the certitude of Christianity'; Igbo proverbs 'far more valuable to me ... than the doctrinaire, self-righteous strain of the Christian faith I was taught'. After the span (P20). Not a scientist. Span 1958 at 0.5. primary_system BELOW_THRESHOLD (lead CHRIST); A BELOW_THRESHOLD; B UNKNOWN; C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #150, F 3, rank 156). Opened Paris Review Art of Fiction No. 139 in full (parents CMS evangelists; Ibadan comparative West African religions — cultural/academic, not profession). PN Review interview with Brenda Lyons (pub. 2014 from earlier conversation): chi as spark from Supreme God; Chukwu appropriated by Christians; crossroads of Christianity and traditional religion — after-span lead only (P20). CBC Writers & Company 1994 (Eleanor Wachtel): writing as 'act of atonement' for father's generation abandoning ancestral faith — cultural/political, not a scored profession. Guernica 2012 memoir re-confirmed (oscillating faith / Igbo proverbs preferred). Wikipedia EN dual bio (S5; P50): death 21 March 2013 Boston; birth Albert Chinụalụmọgụ; parents Isaiah Okafo / Janet Anaenechi Iloegbunam; TFA lastingness corroboration. Named for Victoria (1973) still unread (IA print-disabled; no free full text). Britannica blocked. P42: Okonkwo/Ezeulu not coded as authorial. P47 source_quality on S1–S7. primary_system BELOW_THRESHOLD (lead CHRIST); A BELOW_THRESHOLD; B UNKNOWN (not a scientist, P30; no nature-order own-voice); mid UNKNOWN. Chart-moving NO. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: achebe-chinua
   display_name: "Chinua Achebe"
@@ -176,6 +177,17 @@ lane_b:
   reading: "No Lane B finding. Igbo chi / Chukwu explanations in interviews are cultural exposition, not a coded belief model for him."
   notes: "P42: do not import Okonkwo's or Ezeulu's gods as Achebe's locus."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "Anglican CMS parents are heritage. A 2012 memoir tells of oscillating faith and doubt about Christian certitude, without adult membership or a secular self-label."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Nigerian Broadcasting Corporation", role: "radio producer; Director of External Broadcasting", years: "1954–1960s", kind: "government or state body", certainty: 0.7, cites: [{source: S1, locator: "headnote"}, {source: S5, locator: "Teaching and producing"}], how_known: "Paris Review; Wikipedia."}
   - {value: "Heinemann African Writers Series", role: "founding / general editor", years: "1960s–", kind: "commercial", certainty: 0.7, cites: [{source: S1, locator: "headnote"}, {source: S5, locator: "Voice of Nigeria and African Writers Series"}], how_known: "Paris Review; Wikipedia."}

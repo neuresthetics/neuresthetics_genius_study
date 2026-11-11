@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G; deepen D1 queue #40)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 40). Basics from Britannica (White). Worldview from Per Dahl (Danish Musicology Online 2016), who quotes Conversations with Igor Stravinsky (with Robert Craft, 1959): belief in 'a personal God, a personal Devil and the miracles of the Church'. Britannica calls the Craft books 'factually unreliable', so every worldview field is capped at 0.5. primary_system CHRIST (Russian Orthodox) 0.5; A 0 at 0.5 (alt 1); B 2 at 0.5 (alt 3); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted. Ruling question raised (RQ1 batch G), since ruled as P43. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "fallacy_catalog blind audit of 5ff29b4: all claims HOLD. RQ1 ruled by Jason as P43 (interview cap 0.5; plotted faded). CLTHEI added as a named alternative code. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #40). P47 source_quality on S1–S8. Primary-checked Conversations (Doubleday 1959, IA OCR S4) p. 143: 'Person of the Lord, the Person of the Devil, and the Miracles of the Church' (Dahl's Faber p. 104 paraphrase 'personal God…' corrected). Added Dialogues and a Diary (1963, IA OCR S5): 'I do, of course, believe in a system beyond Nature' plus Venetian finger taken as miracle during 'strictest… Christian Orthodoxy'. Christoforidis 2016 (S6) for 1936 Góngora / La Noche interview ('I am an Orthodox Christian…'; God creates). Wikipedia (S7) native name + baptism; Walsh Catholic Herald (S8) for 6 Apr 1926 communion date vs Dahl's 9 Apr. A_locus 0 @ 0.5 and B_cause 2 @ 0.5 unchanged (P43 Craft cap; no own-hand confirmation). support: corroborated on A and B (P48) via S4+S5 — chart fill hollow→filled; darkness still faded. mid_basin stays BELOW_THRESHOLD. Expositions and Developments primary unread (IA 401). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: stravinsky-igor
   display_name: "Igor Stravinsky"
@@ -179,6 +180,19 @@ lane_b:
   reading: "Confessional Orthodox belief in a personal God and Church miracles; no LIO circle read."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_orthodox
+    detail: "Rejoined the Russian Orthodox Church in 1926 (first Communion reported that April). 1936 interview: 'I am an Orthodox Christian.'"
+    cites: [{source: S2, locator: "p. 61"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "1936 self-description and the Conversations answer on the Person of the Lord and the miracles of the Church match the 1926 return. No contrary membership is in the file."
+    cites: [{source: S6, locator: "p. 64, quoting Luis de Góngora, La Noche, 12 March 1936"}]
 institutions:
   - {value: "Ballets Russes (Serge Diaghilev)", role: "commissioned composer", years: "1910–1928", kind: "patron or funder", certainty: 0.7, cites: [{source: S1, locator: "'Life and career'"}], how_known: "Britannica."}
   - {value: "Harvard University (Charles Eliot Norton Lectures)", role: lecturer, years: "1939–1940", kind: university, certainty: 0.7, cites: [{source: S1, locator: "'Life and career'"}], how_known: "Britannica."}

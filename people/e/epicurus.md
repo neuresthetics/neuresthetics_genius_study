@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #157, F 3, rank 165). Needs: corroborate A/B to ≥0.7 if justified. A 3 0.5→0.7 written_profession (Menoeceus X.123 + Principal Doctrine I / Sovran Maxims X.139 dual own-voice; Loeb S4 pp. 649, 663). Named alt 4 kept (Obbink atheism / gods-as-images residual; CODING_GUIDE §3 named-alt ceiling 0.7). B stays 3 @0.5 alt 4 (P16 addendum / P40 / P41: lawful atomic order without stated no-exception; swerve later sources = chance). Support corroborated on A (S1+S2+S4) and B (S1+S2+S4). mid_basin BELOW→false @0.7 (A≥3 branch, P10; A and alt 4 both ≥3 so P30 uses condition evidence). P50 Wikipedia dual bio (S5). P47 source_quality on S1–S5. primary EPICUR @1.0; C 4 @1.0; D/E UNKNOWN; span UNKNOWN. Plotted faded (min(A,B)=0.5). Chart-moving NO (B still 0.5). No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fixes: mid_basin false 0.5 -> BELOW_THRESHOLD (P10). Wikisource Hicks checked against the printed Loeb vol. 2 (1925; archive.org livesofeminentph02diog): X.76–77 on p. 607 and X.123 on p. 649 (the auditor's check, re-read), X.124–125 on p. 651 (coder's check); edition cited as S4. The web-copy cap (CODING_GUIDE §7) no longer applies, so primary_system EPICUR 0.7 -> 1.0 and C 4 0.7 -> 1.0 (written_profession ceiling 1.0, no named alternative)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z7, order P32: F 3, rank 165; Edwin Hubble, rank 164, already coded). Own words from his three letters preserved in Diogenes Laertius X (Hicks translation, Wikisource transcription) and SEP 'Epicurus' (Konstan). primary_system EPICUR (0.7, Z7 draft; founder, written profession; Wikisource copy not yet checked against a printing). A 3 (0.5, alt 4): 'verily there are gods ... but they are not such as the multitude believe'; gods material and within the cosmos, as the EPICUR system. B 3 (0.5, alt 4): heavenly motions 'without the ministration or command ... of any being who ... enjoys perfect bliss'; invariable recurrence from 'the original ... conglomeration of atoms'; no stated no-exception claim, and the swerve (later sources) is chance (P40). C 4 (0.7): 'death is nothing to us'. D, E UNKNOWN. mid_basin false (0.5; A ≥ 3). Works undated: span UNKNOWN, era '-500 to 499' (as Aristotle). Plotted (A 3, B 3). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: epicurus
   display_name: "Epicurus"
@@ -170,6 +171,19 @@ lane_b:
   reading: "No data."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Letter to Menoeceus, treated as his own: there are gods, but not as the multitude believes, and they do not govern the heavens."
+    cites: [{source: S1, locator: "X.123"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: aligned
+    evidence: "Menoeceus and the Principal Doctrines agree: blessed gods exist and do not trouble the world. No contrary creed is in the file."
+    cites: [{source: S1, locator: "X.139"}]
 institutions:
   - {value: "The Garden (his school, Athens)", role: "founder and head", years: "306 BCE–270 BCE", kind: "other", certainty: 0.7, cites: [{source: S1, locator: "X.10–11"}, {source: S2, locator: "§2"}], how_known: "DL; SEP."}
 collaborators:

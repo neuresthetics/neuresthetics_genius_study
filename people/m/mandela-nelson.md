@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #120 / F4 rank 121). Goals: raise A if corroborating own-voice locus; keep B UNKNOWN unless true P16; open Long Walk / letters / Methodist speeches. Opened Long Walk to Freedom ebook PDF (S7; ACT Rwanda repository of Little, Brown 1994/95): 'Though I am a Methodist, I would attend each different religious service' (Robben Island); 'I told them that I was a Christian and had always been a Christian' + Christ/moneylenders (Pollsmoor, Washington Times editors visit, mid-1980s event). Methodist Conference Umtata 18 Sep 1994 (S8, Wayback ANC): 'personal home-coming, both in the physical and spiritual sense'; spiritual association with Methodist Church. Methodist Triennial Durban 17 Jul 1998 (S9): 'my church'; 'God who did not tolerate oppression' framed as what religious organisations taught (after span). Villa-Vicencio, The Spirit of Freedom (S10; interviews 1992/early 1993, in-span): 'person and his or her God'; 'humankind made in the image of God. This is a God who, if I understand the Bible correctly, requires us…'. CHRIST 0.5→0.7 (written_profession; support corroborated). A 1 0.5→0.7 (support corroborated; Moria S5 + Villa-Vicencio S10 locus; LWTF Christ-as-agent). B stays UNKNOWN (ruling V1; Scheffler science-bolsters-religion appeal ≠ P16; struggle 'not a miracle' remains political lead). Mid UNKNOWN. Chart-moving NO. P47 on S1–S10. Wikipedia EN (S11, P50). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): ruling V1 (v8's call on the auditor's advice; RQ-AU1 does not extend to prayers for peace): MA5, B BELOW_THRESHOLD -> UNKNOWN, readings 1 and 3 kept as leads; MA6, mid_basin BELOW_THRESHOLD -> UNKNOWN. Notes: Forster's 'just an ordinary person' labelled a secondary quotation; primary_system how_known gives the P42 reason the speech counts. Still not plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch V, order P32: F 4, rank 121). Basics from Britannica (Britannica Editors), the Nobel Foundation biography and facts page; religion from Dion Forster's 2014 faith biography and his own Easter address at Moria (3 April 1994, SAHO transcript). Not a scientist (P30). primary_system CHRIST at 0.5 (alt BELOW_THRESHOLD); A 1 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (readings 1 and 3 named); C, D UNKNOWN; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Span 1964–1994 (0.5). Not plotted. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: mandela-nelson
   display_name: "Nelson Mandela"
@@ -212,6 +213,20 @@ lane_b:
   reading: "Law and negotiation in the service of liberation."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Own words: 'Though I am a Methodist' and 'I was a Christian and had always been a Christian.' Methodist conference address, Umtata, 1994."
+    cites: [{source: S7, locator: "Robben Island Sunday services"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file records political imprisonment. It does not call that imprisonment a sanction for religious dissent."
+    cites: [{source: S1, locator: "opening; 'Early life and work'"}]
+  practice_gap:
+    gap: aligned
+    evidence: "The 1994 Easter speech celebrates the risen Christ, and the Methodist self-description matches. Attendance at other services is not a contrary text."
+    cites: [{source: S5, locator: "Easter section"}]
 institutions:
   - {value: "African National Congress", role: "member from 1944; Youth League leader; president from 1991", years: "1944–", kind: other, certainty: 0.7, cites: [{source: S1, locator: "'Early life and work'"}, {source: S2, locator: "¶1; ¶4"}], how_known: "Britannica (1944) and the Nobel biography (1944; president 1991)."}
   - {value: "Mandela and Tambo law practice, Johannesburg", role: "partner (South Africa's first Black law practice)", years: "from 1952", kind: commercial, certainty: 0.7, cites: [{source: S1, locator: "'Early life and work'"}], how_known: "Britannica."}

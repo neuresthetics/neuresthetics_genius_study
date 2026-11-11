@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #25, pause-batch close). P47 source_quality on every source. Added MacTutor (S3), Burton Optics JOSA 1945 scholarly English of Optica (S4; OCR of Definitions 1–4 and Props. 1–3), DSB Toomer via encyclopedia.com/MacTutor PDF (S5), Heath Elements CUP 1908 Vol. I (S6; scholarly edition of Elements for contribution and A-negative). Listed Optics as lasting contribution about vision → scientist under P30. B_cause UNKNOWN → 3 @ 0.5 written_profession, support corroborated (S4+S3; alt 4; P16 Hilbert / P35). A_locus stays UNKNOWN: no god/divine statement in Optics (Burton), Elements (no prefaces; MacTutor; Heath corpus), or DSB; Proclus 'Platonist' is late reported speech and DSB judges it not necessarily conclusive (P42, P19). primary_system UNKNOWN; C/D UNKNOWN; E BELOW_THRESHOLD (P19); mid_basin UNKNOWN. Chart: still unplotted (A UNKNOWN; B faded @ 0.5). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 25). Britannica (van der Waerden): 'Of Euclid's life nothing is known' beyond Proclus. Undated works (P39). Mathematician with no listed contribution about natural systems; no worldview statement survives in the source read. All worldview fields UNKNOWN. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: euclid
   display_name: "Euclid"
@@ -143,6 +144,18 @@ lane_b:
   reading: "As belief, not finding: form present, circle unclear. The record does not test H1."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: none_stated
+    detail: "The Optics and the biographical sources that were read contain no god statement. Proclus's Platonist label is late doxography, not his words."
+    cites: [{source: S4, locator: "Optics Definitions 1–4"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "The file does not document a sanction for religious dissent in this working setting."
+  practice_gap:
+    gap: unknown
+    evidence: "No affiliation was stated in the surviving works that were read."
 institutions: []
 collaborators: []
 

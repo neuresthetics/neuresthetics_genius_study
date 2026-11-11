@@ -1,17 +1,18 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G; deepen D1 queue #44)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 44). Basics from Britannica (Emery). Worldview evidence: one marginal note in his Calov Bible (2 Chronicles 5:13), read only as quoted on the Bach studies site (bach-studies.wursten.be); his lifelong Lutheran church posts (S1). primary_system CHRIST at 0.5 (inferred from work and conduct, P24); A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #44). Need was A BELOW_THRESHOLD; B UNKNOWN. P47 source_quality on S1–S7. Calov 2 Chr 5:13 note verified against Wikimedia Commons facsimile of Concordia Seminary page (S4); wording matches (Bey einer andächtigen Musiq… Gnaden Gegenwart). Baptism 1685-03-23 OS Georgenkirche Eisenach from Bach-Dokumente II Nr. 1 via jsbach.de (S5). Wikipedia (S6) dual-sources birth/death and reports Small Catechism teaching + Calov. Concordia Seminary Bach Bible page (S7) authenticates ownership/ink. A stays BELOW_THRESHOLD (names personal God of grace; does not place God in/above/as Nature — Debussy parallel). B stays UNKNOWN after research (not a scientist, P16; no own-words law/exception statement; cantata nature-Ordnung lines are Franck libretti, P42). mid_basin UNKNOWN. CHRIST @ 0.5 unchanged. Chart-moving NO — still unplotted. Thoroughbass precepts left unused (P42 disputed authorship). No fallacy_catalog (Jason). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: bach-johann-sebastian
   display_name: "Johann Sebastian Bach"
@@ -156,6 +157,19 @@ lane_b:
   reading: "No mid-basin reading possible: A BELOW_THRESHOLD, B UNKNOWN. Lutheran church musician with private notes on God's gracious presence in music; no account of nature's causal order."
   notes: "Lane B only. Do not treat fugue craft as geometric-form evidence for H1."
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Lutheran posts as organist and Thomaskantor; he taught Luther's Small Catechism in Leipzig."
+    cites: [{source: S1, locator: "Years at Leipzig"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: aligned
+    evidence: "The cantorate matches, and his Calov note says God is present with grace in devout music. No contrary text is in the file."
+    cites: [{source: S4, locator: "2 Chr 5:13 margin"}]
 institutions:
   - {value: "Thomaskirche and Thomasschule, Leipzig", role: "cantor and director of church music", years: "1723–1750", kind: "religious body", certainty: 1.0, cites: [{source: S1, locator: "'Years at Leipzig'"}, {source: S6, locator: "Appointment"}], how_known: "Two sources agree."}
   - {value: "Court of Prince Leopold of Anhalt-Köthen", role: "Kapellmeister / musical director", years: "1717–1723", kind: "employer", certainty: 1.0, cites: [{source: S1, locator: "'The Köthen period'"}, {source: S6, locator: "Köthen"}], how_known: "Two sources agree."}

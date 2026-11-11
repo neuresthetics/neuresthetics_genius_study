@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AB1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-20, by: "Grok Bot", summary: "AB1 audit fix: S1's bibliography dates the Philosophical Letters to 1734; wording corrected (no score change)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "Record created (stage 3 batch AB1, order P32: F 3, rank 223). Sources: SEP 'Voltaire' (J.B. Shank, 2024, read in full); Britannica students edition (S3) for full birth and death dates. Lasting: the philosophe authorship from Lettres philosophiques (1734), 'the key turning point', with which he 'pointed modern philosophy down several paths that it subsequently followed' and 'remains today an iconic hero' (S1); Candide (1759), 'Voltaire's most widely known text' (S1). Span 1734–1759 at 0.5 (alternative end 1778, his death, since the campaign for philosophie ran to the end), age 40. Worldview: S1 says 'it would be wrong to call Voltaire an atheist, or even an anti-Christian', that his 'personal religious views were subtle', and places him among debates of 'the so-called deists' while distancing him 'from more radical deists like Toland'; no own words on God quoted. primary_system BELOW_THRESHOLD (DEISM lead); A UNKNOWN (P19). Not a scientist (defender and popularizer of Newtonian science, not a contributor; P33 logic); B UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #210/228, F 3, rank 223): firm A and B if sources allow; do not force plot. Own-voice: Philosophical Dictionary 'Theist' / 'Théisme' / 'Miracles' (1764; S4–S6); Poème sur le désastre de Lisbonne (1756; S7); SEP and Britannica retained. P31: no documented change between span 1734–1759 and 1764 Dictionary — adult written profession counts at normal certainty. primary BELOW→DEISM 0.7 written_profession (alt CLASS_THEISM); A UNKNOWN→1 @0.7 written_profession, support corroborated; B UNKNOWN→4 @0.7 written_profession, support corroborated, alt 3; mid UNKNOWN→true @0.7. Chart-moving YES (would plot dark filled at next figure refresh; figures/ not touched). P47 on all. No fallacy_catalog. Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: voltaire
   display_name: "Voltaire"
@@ -200,6 +201,19 @@ lane_b:
   reading: "Lane B only. No geometric-form claim from this deepen."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: other_stated
+    detail: "Philosophical Dictionary: the theist holds a Supreme Being known by reason, and miracles contradict immutable divine laws. Catholic schooling is context. No church."
+    cites: [{source: S4, locator: "Theist"}]
+  conformity_pressure:
+    level: unknown
+    evidence: "No religious sanction (death, prison, exile, prosecution, censorship, excommunication, or loss of post) is recorded in the file."
+  practice_gap:
+    gap: aligned
+    evidence: "The Miracles article and the Lisbon poem likewise affirm a Creator of general laws and reject miraculous violation. No church endorsement is in the file."
+    cites: [{source: S6, locator: "Miracles, Section I"}]
 institutions:
   - {value: "Court of Frederick II of Prussia", role: "guest and chamberlain", years: "1750–1753", kind: "patron or funder", certainty: 0.5, cites: [{source: S1, locator: "1.5"}, {source: S3, locator: "para. 4"}], how_known: "Britannica students edition gives 1750 and 'three years later'."}
 collaborators:

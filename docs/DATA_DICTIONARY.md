@@ -156,6 +156,7 @@ Front-matter sections, in file order:
 | `heritage` | ethnic and religious heritage by birth: context only | context |
 | `timing` | major work period, ages, when LIO-type views appear relative to the major work | A (read by B) |
 | `lane_b` | geometric form, circle, H1 reading: labeled belief model | B |
+| `religion_conformity` | stated affiliation, documented dissent risk, documented practice gap (schema 1.5) | A |
 | `institutions`, `collaborators` | employers, societies, teachers, collaborators (roster links checked) | A |
 | `review` | status reason, controversies, data-quality flags, open questions | — |
 | `sources` | every source cited, with type, kind, full citation, URL, access date, reliability note | — |
@@ -179,7 +180,7 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `person` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | one of: `1.2`, `1.3` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 file. |
+| `record.schema_version` | one of: `1.2`, `1.3`, `1.5` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.5 (2026-11-05): religion_conformity, a required Lane A block (stated affiliation, documented conformity pressure, documented practice gap). Not an LIO axis and not a Lane B input. 1.4 is left unused on this branch so it stays free for the unmerged primary_domain and era_bucket drafts. 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 or 1.5 file. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
 | `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
@@ -335,6 +336,27 @@ Lane B: the labeled belief model. Values here are inputs to a model that can fai
 | `lane_b.circle_present` | claim; value one of: `yes`, `partly`, `no`, `unclear`; extra keys: `rationale` | yes | the PANT circle (entity in Nature, Nature in entity), as distinct from form alone |
 | `lane_b.reading` | string |  | what this case means for H1, stated as belief |
 | `lane_b.notes` | string |  | Free text. |
+
+#### `religion_conformity`
+
+Lane A public record only (schema 1.5). What affiliation or stance was stated, what dissent risk is documented for that place and time, and whether documented words or acts diverged from the stated affiliation. Not inner belief. Does not feed Lane B, LIO axes, or primary_system. Coding rules: docs/CODING_GUIDE.md §8.
+
+| field | type / allowed values | required | meaning |
+|---|---|---|---|
+| `religion_conformity` | object | yes |  |
+| `religion_conformity.lane` | fixed: `A — public record only; not inner belief; does not feed Lane B` | yes | Fixed reminder. This block is descriptive. The fear-of-conformity hypothesis stays in Lane B. |
+| `religion_conformity.stated_affiliation` | object | yes | Adult public affiliation or stance. Heritage, infant baptism, and family religion do not count. |
+| `religion_conformity.stated_affiliation.label` | one of: `christian_catholic`, `christian_protestant`, `christian_orthodox`, `christian_other`, `jewish`, `muslim`, `hindu`, `buddhist`, `confucian`, `daoist`, `other_stated`, `secular`, `mixed`, `none_stated`, `unknown` | yes | Controlled label. none_stated: the adult record was checked and no affiliation was stated. secular: own words of no religion, atheism, agnosticism, or freethought. mixed: more than one public affiliation in the same adult period. unknown: the record is too thin. |
+| `religion_conformity.stated_affiliation.detail` | string | yes | One line: denomination or stance as the source gives it, or what was checked when the label is unknown. |
+| `religion_conformity.stated_affiliation.cites` | list of `citation` |  | Required unless label is unknown. |
+| `religion_conformity.conformity_pressure` | object | yes | Documented risk for religious dissent in the person's place and working years. Not a guess about fear. |
+| `religion_conformity.conformity_pressure.level` | one of: `low`, `moderate`, `high`, `severe`, `unknown` | yes | low: dissent documented as legally safe. moderate: censorship, loss of post, excommunication, or a civic disability. high: prison, exile, or a formal heresy or blasphemy prosecution. severe: death or torture used against religious dissent. unknown: not documented in the sources read. |
+| `religion_conformity.conformity_pressure.evidence` | string | yes | One line of evidence, or what was checked when the level is unknown. |
+| `religion_conformity.conformity_pressure.cites` | list of `citation` |  | Required unless level is unknown. |
+| `religion_conformity.practice_gap` | object | yes | Whether documented adult words or acts diverged from the stated affiliation. Observable only. |
+| `religion_conformity.practice_gap.gap` | one of: `aligned`, `mixed`, `divergent`, `unknown` | yes | aligned: a documented match and no documented contradiction. mixed: both. divergent: a documented contradiction and no remaining documented endorsement. unknown: no stated affiliation to compare, or no comparison in the sources. Must be unknown when stated_affiliation is unknown or none_stated. |
+| `religion_conformity.practice_gap.evidence` | string | yes | One line naming the documents compared, or what was checked. |
+| `religion_conformity.practice_gap.cites` | list of `citation` |  | Required unless gap is unknown. |
 
 #### `institutions`
 

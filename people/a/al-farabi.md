@@ -1,18 +1,19 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.5"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-23
+  last_updated: "2026-11-05"
   change_log:
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from SEP 'al-Farabi' (Druart 2024) and Britannica (editors); worldview from SEP 'al-Farabi's Philosophy of Society and Religion' (Germann 2021), a scholarly reconstruction; his own words only as SEP quotes them (secondary quotation, primary check pending). Works undated, so first-lasting year, span and age UNKNOWN (P12). primary_system CLASS_THEISM 0.5 (Straussian reading named); A 1, B 4, C 4, D 4, E 4, all 0.5 (scholarly_reconstruction); mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #7 B_cause 4 → 3 at 0.5, alternative 4, citing Germann §3.1 (free will set against acting by nature) under the B 3 anchor and P36 (ruling R2, v8's pick). mid_basin unchanged (BELOW_THRESHOLD)."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #3). P47 source_quality on every source. Primary check: Butterworth Political Regime (2015; new S5) and Selected Aphorisms / Book of Religion (2001; new S6–S7). A_locus 1 and B_cause 3 raised from scholarly_reconstruction 0.5 → written_profession 0.7 (contested Straussian/alt caps; P26 primary check). B support single → corroborated (S2+S5+S6). A support stays corroborated (S1+S2+S5). mid_basin BELOW_THRESHOLD → true (A≤1 and B≥3 both at ≥0.7). Chart person-dot: faded hollow → dark filled. Book of Religion quote verified against Butterworth. Native name filled. No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
 
+    - {date: 2026-11-05, by: "Grok Bot", summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."}
 identity:
   id: al-farabi
   display_name: "Al-Farabi"
@@ -237,6 +238,17 @@ lane_b:
   reading: "As belief, not finding: form present, circle partly; timing unknown."
   notes: ""
 
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: unknown
+    detail: "No church or self-named tradition is stated. Political Regime says the First Cause is what ought to be believed to be the deity."
+  conformity_pressure:
+    level: unknown
+    evidence: "No sanction for religious dissent is documented in the sources read."
+  practice_gap:
+    gap: unknown
+    evidence: "No stated adult affiliation to compare."
 institutions:
   - {value: "Court of Sayf al-Dawla (Hamdanid)", role: "resident philosopher", years: "942–", kind: "patron or funder", certainty: 0.7, cites: [{source: S3, locator: "paragraph 2"}], how_known: "Britannica alone (P15); SEP gives Syria from 943."}
 collaborators:

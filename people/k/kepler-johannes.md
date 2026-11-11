@@ -1,13 +1,13 @@
 ---
 record:
   record_type: person
-  schema_version: '1.3'
-  record_version: 7
+  schema_version: "1.5"
+  record_version: 8
   review_status: draft — unreviewed
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: Grok Bot executor agent; web search plus direct reads of the cited pages
   collected_on: '2026-10-02'
-  last_updated: '2026-10-24'
+  last_updated: "2026-11-05"
   change_log:
   - date: '2026-10-02'
     by: Grok Bot
@@ -51,6 +51,10 @@ record:
       \ as English. P47 source_quality on S1–S10. P48 support: corroborated on A/B/D. A 1 @0.5→0.7 written_profession (alt\
       \ 2); B 3 @0.5→0.7 written_profession (alt 4); D 3 @0.5→0.7; CHRIST @0.5→0.7 written_profession; mid_basin BELOW→true\
       \ @0.7. Chart-moving YES (faded filled → dark filled). No fallacy_catalog (Jason). Draft, not reviewed."
+  - date: '2026-11-05'
+    by: Grok Bot
+    summary: "Schema 1.5: religion_conformity filled from sources already in the file. Lane A public record only. LIO scores unchanged."
+
 identity:
   id: kepler-johannes
   display_name: Johannes Kepler
@@ -721,6 +725,20 @@ lane_b:
     how_known: Own words (Creator) plus SEP.
   reading: "As belief, not finding: form present, acquisition unclear, no circle. The record does not test H1."
   notes: ''
+religion_conformity:
+  lane: "A — public record only; not inner belief; does not feed Lane B"
+  stated_affiliation:
+    label: christian_protestant
+    detail: "Lutheran member, excommunicated in 1612 over the Eucharist and never reinstated. The 1595 letter says he had wanted to be a theologian and that his astronomy celebrates God."
+    cites: [{source: S2, locator: "University education"}]
+  conformity_pressure:
+    level: moderate
+    evidence: "Excommunicated in 1612 over the Eucharist and never reinstated."
+    cites: [{source: S2, locator: "University education"}]
+  practice_gap:
+    gap: mixed
+    evidence: "Harmonices mundi still names God the Creator, and the excommunication records a break on the Eucharist. His Eucharist letters were not read."
+    cites: [{source: S8, locator: "Harmonices mundi IV.1, KGW 6 p. 223"}]
 institutions:
 - value: "Protestant school, Graz"
   role: teacher of mathematics
