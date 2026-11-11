@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch J)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no explicit birth-religion line in S1–S8; refuse Hellenic-milieu invention). Chart-moving NO."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch J, order P32: F 5, rank 65). Basics from Britannica (Meinwald). Worldview from the Timaeus and Laws X (Jowett, Gutenberg #1572 and #1750; web copies), attributed to Plato himself by SEP 'Plato's Timaeus' (Zeyl and Sattler), so they count under P42; spoken by characters (Timaeus, the Athenian Stranger), so 0.5. Not a scientist (Britannica: 'not a research mathematician'). primary_system PLATO 0.5; A 1 at 0.5 (alt 0); B 3 at 0.5 (alt 4); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 81b9098, run 1). Laws X dropped from the B rationale and cites: no source read attributes its theology to Plato (P42). SEP's opening sentence ('In the Timaeus Plato presents...') cited explicitly as the P42 attribution for the Timaeus. B stays 3 (0.5, alternative 4)."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["philosopher", "teacher"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["metaphysics", "ethics", "political philosophy", "cosmology", "epistemology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "Main interests"}], how_known: "Britannica; Wikipedia."}
   lasting_original_contributions:
     - {value: "Theory of forms", kind: theory, lasting: "(S1; S6)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "The Forms"}], how_known: "Britannica; Wikipedia; undated (P39)."}

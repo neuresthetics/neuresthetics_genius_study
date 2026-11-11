@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G; deepen D1 queue #44)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 18c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 44). Basics from Britannica (Emery). Worldview evidence: one marginal note in his Calov Bible (2 Chronicles 5:13), read only as quoted on the Bach studies site (bach-studies.wursten.be); his lifelong Lutheran church posts (S1). primary_system CHRIST at 0.5 (inferred from work and conduct, P24); A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #44). Need was A BELOW_THRESHOLD; B UNKNOWN. P47 source_quality on S1–S7. Calov 2 Chr 5:13 note verified against Wikimedia Commons facsimile of Concordia Seminary page (S4); wording matches (Bey einer andächtigen Musiq… Gnaden Gegenwart). Baptism 1685-03-23 OS Georgenkirche Eisenach from Bach-Dokumente II Nr. 1 via jsbach.de (S5). Wikipedia (S6) dual-sources birth/death and reports Small Catechism teaching + Calov. Concordia Seminary Bach Bible page (S7) authenticates ownership/ink. A stays BELOW_THRESHOLD (names personal God of grace; does not place God in/above/as Nature — Debussy parallel). B stays UNKNOWN after research (not a scientist, P16; no own-words law/exception statement; cantata nature-Ordnung lines are Franck libretti, P42). mid_basin UNKNOWN. CHRIST @ 0.5 unchanged. Chart-moving NO — still unplotted. Thoroughbass precepts left unused (P42 disputed authorship). No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["composer", "organist", "Kapellmeister", "cantor"], certainty: 0.7, cites: [{source: S1, locator: "career sections"}, {source: S6, locator: "infobox"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: 18c
   fields: {value: ["music"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Cantata No. 71, Gott ist mein König, his first published composition", year: 1708, kind: work, lasting: "first of the cantata output (S1)", certainty: 0.7, cites: [{source: S1, locator: "'The Mühlhausen period'"}, {source: S6, locator: "Weimar, Arnstadt, and Mühlhausen"}], how_known: "Two sources."}

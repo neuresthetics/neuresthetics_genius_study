@@ -1,6 +1,12 @@
 # Changelog
 
 
+## 2026-10-27 — era_bucket on person records (Grok Bot)
+
+- Schema 1.4 adds `contribution.era_bucket`: one coarse band for when the main work landed, from a fixed allowlist. Not a claim (no certainty, no cites) and not an LIO axis. Not `basics.era_bucket` (the P2 year-range claim), which is unchanged.
+- The allowlist and the cutoffs are in `schema/person.schema.json` and CODING_GUIDE §8. A year on a cutoff goes to the later band. The label is the band that holds the most years of the dated window.
+- Every existing person file is labeled. A–E scores are unchanged.
+
 ## 2026-10-15 — systems charts (Grok Bot)
 
 - Added figures/systems_cause_locus.png and figures/people_systems_overlay.png, made by scripts/make_figures.py and approved by Jason. Margin strips and a box show systems with an axis not settled, there are no range bars, and readable names are used. Both are in the README under the people chart.

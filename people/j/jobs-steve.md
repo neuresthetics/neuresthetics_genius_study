@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y; deepen catch-up)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen catch-up 2/13 (F 4, rank 132): firm A/primary if sources allow; do not force plot. Read Isaacson Steve Jobs (2011) primary OCR (S5; IA steve-jobs-walter-isaacson_202601) — RQ-Y1 path. primary BELOW→AGNOS @0.5 recorded_interview, alt BELOW (P8; after-span interviews; Zen/BUDDH lead). A stays BELOW (P20 explicit suspension, no locus). B stays UNKNOWN (not scientist; no nature-order). mid UNKNOWN (B UNKNOWN precedence). Childhood Lutheran + Biafra exit (S5 pp.14–15). Heritage bio/adoptive from S5+S6. Stanford re-verified (S2). Playboy 1985 opened (allaboutstevejobs) — no God/system score. P47 on all. No fallacy_catalog; figures not refreshed. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK17): the iPhone's lasting wording restored to the article body's 'into the telecommunications business'; the added product list dropped. No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (JO12) definition_fit and the iPhone's lasting note now cite Britannica's article body ('a charismatic pioneer of the personal computer era'; 'near-messianic belief in the computer revolution'), not the 'Why is Steve Jobs significant?' question box (P26). Ruling Y1 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD (recorded under P43, beside V3). No score changes."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["businessman", "cofounder and CEO of Apple", "founder of NeXT", "owner of Pixar"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'NeXT and Pixar'"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["personal computing", "consumer electronics", "product design"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Reinventing Apple'"}], how_known: "Britannica; labels the coder's."}
   lasting_original_contributions:
     - {value: "Apple II personal computer (with Steve Wozniak)", year: 1977, kind: invention, lasting: "'becoming synonymous with the boom in personal computers' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Founding of Apple'"}], how_known: "Britannica; Wozniak designed it, Jobs pushed the design and case and found financing (S1)."}

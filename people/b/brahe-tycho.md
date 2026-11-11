@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 220). Source: Britannica scholars edition, signed by Olin Jeuck Eggen (read in full). Lasting: his body of accurate naked-eye observations, 'the most accurate possible before the invention of the telescope', which 'paved the way for future discoveries'; 'What Tycho accomplished ... remains an outstanding accomplishment of the Renaissance'; with his data 'Kepler laid the groundwork for the work of Sir Isaac Newton' (S1). Dated from De nova stella (1573), the first published result of the programme, to his leaving Uraniborg (1597), where 'The major portion of Tycho's lifework ... had already been done'. Span 1573–1597 at 0.5 (alternative start 1576, the Ven grant), age 27. Scientist: B 3 at 0.5, alt 4 (P35). Worldview UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #207/228, F 3, rank 220): firm B; seek any A from De nova stella / letters; do not force plot. Read De nova stella 1573 in McLaughlin English from Dreyer Opera Omnia (S3) cross-checked to tekstnet Latin (S4); Håkansson 2004 quoting same (S5); Wikipedia EN (S6); Encyclopedia.com / Complete Dictionary of Scientific Biography Melanchthonian curriculum (S7). primary UNKNOWN→CHRIST @0.7 written_profession (Savior, Son as sacrifice, Moses, Magi; Lutheran/Philippist affiliation). A UNKNOWN→0 @0.7 written_profession, support corroborated (S3+S4): God author of the universe / artificer of the worldly machine; divine majesty not bound by nature's bonds; fabricates the nova as portent. B 3@0.5 inference_from_work (P35)→3 @0.7 written_profession, support corroborated (S3+S4+S5): ordinary heavens without generation/corruption; stated limited exception — nova praeter omnem naturae ordinem; when God wills He halts rivers and turns stars back. Mid UNKNOWN→true @0.7 (P4). Chart-moving YES: not plotted → dark filled when figures next refresh. C/D/E left UNKNOWN. P47 source_quality on all. No fallacy_catalog; figures not refreshed. Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["astronomer", "instrument maker"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Mature career"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["astronomy"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Body of naked-eye astronomical observations (new star of 1572 beyond the Moon; comet of 1577 beyond the Moon; positions of more than 777 fixed stars; planetary observations used by Kepler)", year: 1573, kind: "body of work", lasting: "'paved the way for future discoveries'; 'remains an outstanding accomplishment of the Renaissance'; with those data 'Kepler laid the groundwork for the work of Sir Isaac Newton' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; Youth and education; Mature career"}], how_known: "From De nova stella (1573) through Uraniborg (1576–1597) (S1); 0.5 on the start year."}

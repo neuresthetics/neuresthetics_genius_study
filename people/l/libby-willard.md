@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 6
+  schema_version: "1.4"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Included by owner decision, borderline on the stage-2 date window (radiocarbon dating 1947–49; Jason, 2026-10-02). Basics from Britannica (Kauffman), the Nobel biography and Leona Marshall Libby's GSA memorial. No writing of his on religion was found. primary_system BELOW_THRESHOLD (no candidate supported). B 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. No interview used. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 4 (two blind runs at b21655b). #148 (run 1) / decisions P12, P13: first_lasting_contribution_year 1947 → 1941, the start year of the earliest listed contribution (the gaseous-diffusion barrier, Manhattan Project 1941–1945; Britannica, and S3 p. 1 for its lasting use); age 38 → 32; era unchanged. The how_known no longer says the 1930s work is lasting per S3 (S3 does not say so); that work is not listed and does not set the year. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 lens-audit rulings applied to the batch's other records (OPEN_DECISIONS P14–P28, v8's picks, 2026-10-02). Schema 1.2 → 1.3. One reliable source caps a fact at 0.7; derived fields take the lowest certainty of their inputs; BELOW_THRESHOLD vs UNKNOWN per P19; basis inference_from_work for 0.5 inference from working science (P24). Full before → after list: reports/stage3_rulings_changes.csv. Not reviewed."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: ["physical chemist", "university professor", "Atomic Energy Commissioner"], certainty: 1.0, cites: [{source: S2, locator: "paragraphs 2–5"}, {source: S1, locator: "paragraph 3"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["radiochemistry", "geochemistry", "nuclear chemistry"], certainty: 1.0, cites: [{source: S2, locator: "paragraph 6"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Radiocarbon (carbon-14) dating", year: "1947", kind: method, lasting: "Nobel Prize in Chemistry 1960; more than 140 radiocarbon laboratories", certainty: 1.0, cites: [{source: S1, locator: "radiocarbon paragraphs"}, {source: S3, locator: "p. 1–2"}], how_known: "Two sources; first age determination 4 March 1947 (S1)."}

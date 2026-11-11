@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #164, F 3, rank 173). Goals: first-person atheism/humanism for primary/A; open B only with real cause-order talk; do not force plot. In-span: Lear, Tolstoy and the Fool (Polemic, March 1947; orwell.ru web of CEJL reprint) — 'humanist attitude' vs Christian/next-world; 'one must choose between this world and the next'. Reflections on Gandhi (Partisan Review, Jan 1949; Orwell Foundation estate-permission text) — Man the measure / only earth we have; God-exists assumption incompatible; radicals 'have in effect chosen Man'. Before-span first person: As I Please, Tribune, 3 March 1944 (Tribune magazine archive reprint + telelib/orwell.ru) — 'I do not want the belief in life after death to return'; looks at Christian religion 'from the outside'. Such, Such Were the Joys (~1947 composition; web) — 'Till the age of about fourteen I believed in God'. Letter to Eleanor Jaques / Brenda Salkeld 1932 via Davison/Crick secondary — 'when one doesn't believe'. Notes on the Way 1940 re-checked (collective). P47 source_quality on S1–S8. P50 Wikipedia EN dual bio. CEJL/Davison Complete Works print volumes still unread (IA borrow-gated). B left UNKNOWN (P16: 'indifference to miracles' is about saints, not nature's causal order). primary_system BELOW→ATHE @0.5 (alt SECHUM); A BELOW→4 @0.5 support corroborated; C UNKNOWN→4 @0.5 support corroborated; mid stays BELOW (A only at 0.5, under P10 0.7 bar). Chart-moving NO (B UNKNOWN; still unplottable). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fix (WEAKEN, P21; v8's call on the auditor's advice): statement label 'primary transcription' (reserved for keyed transcriptions such as TCP) -> 'unofficial web copy' (new verified_against value)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z9 audit fixes (v8's calls on the auditor's advice). Statement label: 'secondary quotation' -> 'primary transcription' with the note that S2 is an unofficial web copy of his own text, capped at 0.7 (§7). C lead added: As I Please, 3 March 1944 (CEJL vol. 3 p. 127, web copy), 'I do not want the belief in life after death to return'. Values unchanged: BELOW_THRESHOLD."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["novelist", "essayist", "critic", "journalist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["literature", "political writing"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Animal Farm", year: 1945, kind: "work", lasting: "'profoundly influential novels' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}

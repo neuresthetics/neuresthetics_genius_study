@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor. Religion from a colleague's recollection, Seeger, 'Von Neumann, Jewish Catholic' (PSCF 40, 1988): nominal Catholic after his first marriage and Catholic instruction in his last illness. No statement of his own on religion was read, and no recorded interview of him on religion was found (the P8 interview route is unavailable). primary_system BELOW_THRESHOLD. B 4 (0.5) from working science; A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fix, stage 3 batch B (two blind runs at 3db6511). #352: full_name now follows MacTutor ('born János von Neumann'); the earlier 'born János Neumann' is kept only as a marked inference from the 1913 title. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Stage 3 rulings P14–P28 (v8, main 6aeba87), schema 1.3. B_cause 4 (0.5) → BELOW_THRESHOLD (no remark of his own on natural law) (P16); D_authority BELOW_THRESHOLD → UNKNOWN (the Psalms recitation is practice, off-point) and E_scope stays BELOW_THRESHOLD (working science; the draft's UNKNOWN reverted), A, C notes rewritten (P19); first_lasting_contribution_year how_known and the ordinals item year rewritten without a chosen year, alternative 1924 named (P12, P23, P25); tutor Fekete 0.7 → 0.5 with Fejér named, marriage date alternatives named (P25); Lutheran Gymnasium stage religious school → grammar or secondary school, run_by religious body (P21); major_work_period how_known cites the sources' dates (P23); Seeger's 1947 quotation marked primary check pending (P26); mid_basin note rewritten; IAS kind university → research institute (P21); single-source 1.0 fields → 0.7 (P15) (era_bucket, definition_fit, working_years); region_of_birth, region_of_work, sex keep 1.0 with a Seeger cite. Not reviewed."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: ["mathematician", "physicist", "computer pioneer", "government scientific adviser"], certainty: 1.0, cites: [{source: S1, locator: "Summary; Biography"}, {source: S2, locator: "paragraphs 4–5"}, {source: S4, locator: "opening summary"}], how_known: "Three sources."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["set theory", "operator theory", "quantum mechanics", "game theory", "hydrodynamics", "computer science"], certainty: 1.0, cites: [{source: S1, locator: "Summary; Biography"}, {source: S2, locator: "paragraphs 7–8"}, {source: S4, locator: "opening / European career"}], how_known: "Three sources."}
   lasting_original_contributions:
     - {value: "Definition of the ordinal numbers", year: "1923–1924", kind: "concept or term", lasting: "the definition used today", certainty: 0.7, cites: [{source: S1, locator: "Biography (doctorate paragraph)"}], how_known: "MacTutor gives his age (20), not the year, so the item is dated by the age window (P12, P23). Was '1923'."}

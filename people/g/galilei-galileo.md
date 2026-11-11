@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics from SEP (Miller, after Machamer), Britannica (Van Helden) and MacTutor. Worldview from the Letter to the Grand Duchess Christina (1615) in Drake's translation, read in two copies (Fordham excerpt; a course selection with the Joshua section). Coded CHRIST (Catholic) at 0.7. A 1 (0.7), B 3 (0.7), C 1 (0.5), D 2 (0.7), E 3 (0.7). mid_basin true. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (two blind runs at e648145). Findings #69 (and #55, #57, #60): the 'inexorable and immutable' sentence is in the Fordham paragraph beginning 'This being granted…', not 'With regard to this argument…'; locators fixed in the statement, B_cause and E_scope (S5 p. 4 was already right). S4 is no longer described as Drake's translation: its translator and provenance are unknown and its wording differs from S5 in places (finding #70 note). Finding #62: self_described_science_religion_relation certainty 1.0 → 0.7 (secondary quotations cannot by themselves support 1.0, §7). Axis scores, primary_system and mid_basin unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: [mathematician, "natural philosopher", astronomer, "university lecturer", "court mathematician and philosopher"], certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: [mechanics, astronomy, "natural philosophy", "instrument making"], certainty: 1.0, cites: [{source: S1, locator: "§3"}, {source: S2, locator: "opening summary"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Telescopic discoveries (moons of Jupiter and others) and an improved telescope", year: "1609–1610", kind: discovery, lasting: "Britannica: they 'revolutionized astronomy'", certainty: 1.0, cites: [{source: S1, locator: "§2; §3.2"}, {source: S2, locator: "opening summary"}], how_known: "Two sources."}

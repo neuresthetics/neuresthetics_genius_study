@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 18c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #41). Schema 1.2→1.3. P47 source_quality on S1–S8. P48 support: corroborated added on A–E (already computed from multi-source cites). Re-verified AA V 125 and AA III 363 on Bonner Kant-Korpus. Parents named (Johann Georg Kant; Anna Regina Reuter); baptism 1724-04-23 Kneiphof cathedral as Emanuel (Naragon chronology S8; NDB agrees). Schooling stages migrated (grammar/secondary + run_by religious body; university + run_by). Freedom quote (A533/B561) added as statement. Summary body synced (KANT @0.7, not stub). A 1 @0.7 / B 3 @0.7 unchanged; mid_basin true @0.7. Chart already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit note (gs_ca27fcf_KK run 1, KK12): B 3 now also cites his own text on freedom, KrV A533/B561 (AA III 363: 'das Vermögen, einen Zustand von selbst anzufangen, deren Causalität also nicht nach dem Naturgesetze wiederum unter einer anderen Ursache steht'). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Jason's ruling (2026-10-19, 'fix them'; TF7 of the batch T audit, held until now): B_cause 4 -> 3 at 0.7, alternative 4, per P30 #14 (noumenal freedom is B 3's one exception; Kant is B 3 as the value). mid_basin stays true at 0.7 (A 1, B 3, both at 0.7). Plotted point moves one column left; dot stays solid."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: [philosopher, "university professor", "private tutor"], certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 18c
   fields: {value: [epistemology, metaphysics, ethics, aesthetics, "natural philosophy", "philosophy of religion"], certainty: 1.0, cites: [{source: S3, locator: "opening"}, {source: S1, locator: "§1"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Transcendental idealism and the critical philosophy (the understanding as source of the general laws of nature; knowledge limited to appearances)", year: "1781", kind: theory, lasting: "foundation of later Kantianism and idealism", certainty: 1.0, cites: [{source: S1, locator: "opening; §§2–3"}, {source: S3, locator: "opening"}], how_known: "Two sources."}

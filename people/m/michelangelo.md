@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: '2026-10-25'
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 59). Basics from Britannica (Gilbert), signed body through the early works only (the fetch returned only that part). Worldview from Sonnet LXV (dated 19 September 1554, sent to Vasari), Symonds's translation, Gutenberg #10314 (web copy). Not a scientist. primary_system CHRIST 0.5; A 0 at 0.5 (alt 1); B UNKNOWN (P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
 
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["sculptor", "painter", "architect", "poet"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["sculpture", "painting", "architecture"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Pietà (St. Peter's Basilica)", year: 1499, kind: work, lasting: "Signed masterpiece; among the most famous sculptures in Western art (S1, S7)", certainty: 0.7, cites: [{source: S1, locator: "'Early life and works'"}, {source: S7, locator: "Notable work (1498–1499)"}], how_known: "Commission 1497–98; completion 1499 (Wikipedia EN dual-source with Britannica)."}

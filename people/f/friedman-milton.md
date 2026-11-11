@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #119 / F4 rank 120). Goals: corroborate AGNOS; hunt locus (A) or P16 (B); keep honest BELOW/UNKNOWN if not found. Re-read LA Times 1986 (S3). Opened Hammond 2021 full PDF (S4, bibliotekanauki / gilsonsociety) — still secondary paraphrase of Two Lucky People ('completely agnostic'; Rose 'fanatically antireligious'); memoir itself unread (IA twoluckypeopleme00frie access-restricted, download 401; Google Books API 429). New primary: Fox News Your World transcript, David Asman interview 15 May 2004 (S6) — 'I would describe myself as an agnostic'; 'Not an atheist. The proposition that there is a God is not capable of being proved either false or true'; faith in people/freedom, not theological. Corroborates S3 AGNOS and rejects ATHE in own voice; after span (P1 cap 0.5). Lofton handwritten-note exchange remains a lead (Daily Hatch / American View; no archival letter). Wikipedia EN (S7, P50) dual bio; Religious views cites Commentary/Ebenstein + Fox. No own-voice locus (P20 → A stays BELOW_THRESHOLD). No P16 nature-order (B stays UNKNOWN; not a scientist P30; Methodology of Positive Economics / Hume causality discussion in Hammond is economics-method, not worldview lawfulness). P47 on S1–S7. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): 'not reconciled' replaced by the auditor's explanation of the Hammond pages (1183–1217; '1107-1140' is the PDF's file label, where Michaud's article starts). No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): FR4, family_religion how_known the right way round (the child pushed his parents to be more observant, S3), with the tension against Hammond's 'Orthodox Jewish beliefs' noted; note, Hammond's page range 1183–1217 added to S4. No scored value changes."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["economist", "professor of economics, University of Chicago", "Newsweek columnist (1966–1984)", "Senior Research Fellow, Hoover Institution"], certainty: 0.7, cites: [{source: S1, locator: "'Academic career and key collaborations'; 'From monetary theory to public policy'"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["economics", "monetary economics", "consumption theory"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Academic career and key collaborations'"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Restatement of the quantity theory of money (introduction to Studies in the Quantity of Money): changes in the money supply affect real activity in the short run and prices in the long run; the base of monetarism", year: 1956, kind: theory, lasting: "'regarded as the founder of monetarism' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Challenging Keynesian economics'"}], how_known: "Britannica. A theory of the economy, not of natural systems, so not a scientist (P30; as for Keynes)."}

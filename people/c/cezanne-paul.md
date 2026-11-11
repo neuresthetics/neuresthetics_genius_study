@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA7; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 208). Source: Britannica, signed by René Huyghe (scholars edition, read in full). Lasting work: the last Bathers (1900–05), 'groundbreaking'; identified as Bathers (Les Grandes Baigneuses), National Gallery, London, NG6359, which the Gallery says 'was finished in 1905' and calls 'hugely influential on early twentieth-century modern art, particularly Cubism' (S3; the Barnes and Philadelphia versions run to 1906), which clearly inspired Picasso's Les Demoiselles d'Avignon (1907); his approach 'laid the foundation for Picasso and other artists' subsequent explorations with Cubism' (S1). Not exhibited in his life (the 1907 retrospective was posthumous), so dated by the last documented act, completion 1905 (posthumous rule), at 0.5; alternatives 1906 (death) and 1907 (first showing). Span 1905, age 66. 'Most significant precursor of 20th-century formal abstraction' is body-of-work praise, undated, not used to extend the span. Worldview: no own words on belief read. primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #195/228, F3 rank 208). Goals: letters own words if any (Gasquet careful — contested); keep silence if none; do not force plot. Dual bio Wikipedia EN (S4, P50) + Britannica create-pass (S1): baptism Église de la Madeleine 1839; 1891 turn to Catholicism; Saint-Pierre burial. Own words: Courtauld MS letter to Émile Bernard, 15 Apr 1904 (S5; Danchev Letters no. 233 / Rewald stream) — 'Spectacle que le Pater omnipotens [oeterne Deus] étale devant nos yeux' (Mass/Credo language, in-span). Artforum Reff 1977 (S6) notes regular worship at Aix cathedral in last years and that the phrase may be liturgical habit / deference to devout Bernard. Merleau-Ponty 'Cézanne's Doubt' (S7) and Telegraph Sacred Mysteries (S8) report Alexis fear-of-hell speech ('roasting in aeternum') — reported speech only, not scored alone. Gasquet Cézanne 1921 conversations contested (Doran Conversations preface: imperious editing / unscholarly) — aesthetic 'one with my picture' / pantheist leads unused (P42; standing: painting/nature ≠ PANT or B). primary UNKNOWN→CHRIST @0.5 Roman Catholic (letter + late practice; alt BELOW). A UNKNOWN→0 @0.5 (Pater Omnipotens spreads spectacle = transcendent personal; alt BELOW deference/naming-without-locus Bach parallel). B UNKNOWN (not scientist; P16/P30). C/D/E UNKNOWN. mid UNKNOWN (B UNKNOWN, P19). Chart-moving NO. P47 S1–S8. No fallacy_catalog; no figures/. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["painter"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Bathers (Les Grandes Baigneuses), National Gallery, London, NG6359", year: 1905, kind: "work", lasting: "'Picasso created his seminal Les Demoiselles d'Avignon ... clearly inspired by Cézanne's groundbreaking Bathers of 1900–05'; his approach 'laid the foundation for ... Cubism' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Final years; Legacy"}, {source: S3, locator: "Overview"}], how_known: "Britannica; National Gallery: 'may date from 1898–9 and was finished in 1905'; 'had a lasting impact on Picasso and Matisse' (S3). Dated by completion (posthumous rule), alternatives 1906 and 1907."}

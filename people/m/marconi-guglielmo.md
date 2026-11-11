@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #166, F 3, rank 176). Goals: corroborate CHRIST/A if Italian or earlier own words; open B only with real cause-order talk; do not force plot. Hunt: Italian of 12 Feb 1931 Vatican Radio address seen as secondary quotation (DISF.org: 'Con l'aiuto di Dio, che tante misteriose forze della natura mette a disposizione dell'umanità…'); matches archived EN Vatican Radio text (S2); L'Osservatore Romano 13 Feb 1931 page images unread. Heritage/near-span: baptized Catholic Bologna 27 Apr 1874; raised Protestant (mother Annie Jameson); admitted Chiesa valdese di Livorno 10 Apr 1892; listed member 30 Jun 1897 (Riforma / Archivio storico Tavola valdese via Casorio–Brunero secondary — membership ≠ ideology, CHRIST.md). Mid-1920s return to Catholic practice: Rota nullity of 1905 Anglican marriage to Beatrice O'Brien (Acta Apostolicae Sedis 1927 p. 217 summary via CIN); Catholic remarriage to Maria Cristina Bezzi-Scali 1927; wife memoir My Beloved Marconi reports Christmas Eve 1926 letter 'Angel of my conversion' and Confirmation — secondary, after span. Circulating 'I declare it proudly: I am a believer… as a Catholic, but also as a scientist' (Aleteia/CERC) and 9 Mar 1927 'Supreme Will' letter (LibQuotes via My Beloved Marconi p. 29) left as leads — no independent primary check this pass. B stays UNKNOWN (standing rule: do not invent B from 'mysterious forces'; not a scientist P33; technical papers on electromagnetic propagation are device physics, not P16 cause-order / law-or-exception worldview). CHRIST stays @0.5 written_profession (1931 address; Italian corroborates sense; after-span / ceremonial / BELOW alt still live). A stays 1 @0.5 alts 0 and BELOW; support single (one address). mid BELOW. Chart-moving NO. P47 source_quality; P48; P50 Wikipedia. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z10 audit fixes (v8's calls on the auditor's advice). Patent No. 7777 was lasting on the coder's call alone (P13): moved to major_works; span 1896–1900 -> 1896 (age 22). S2 note: the archived Vatican Radio page was read. Values unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z10, order P32: F 3, rank 176). Basics from NobelPrize.org (biographical, Les Prix Nobel 1909). Own words: his public address opening Vatican Radio, 12 February 1931 (Vatican Radio's own history page, archived; English translation of the Italian), after the span: 'With the help of Almighty God, who allows the many mysterious forces of nature to be used by man'. Not a scientist: wireless telegraphy is an invention (P33). primary_system CHRIST (0.5, alt BELOW_THRESHOLD: ceremonial words); A 1 (0.5, alts 0 and BELOW_THRESHOLD); B UNKNOWN (no statement on law or exception, P16); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (A ≤ 1 only at 0.5, B UNKNOWN). Span 1896–1900, age 22. Not plotted (no B). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["inventor", "electrical engineer", "businessman", "senator"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "NobelPrize.org."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["wireless telegraphy", "radio"], certainty: 0.7, cites: [{source: S1, locator: "para. 1"}], how_known: "NobelPrize.org."}
   lasting_original_contributions:
     - {value: "System of wireless telegraphy", year: 1896, kind: "invention", lasting: "Nobel Prize in Physics 1909 for it (S1); 'the world's first patent for a system of wireless telegraphy'", certainty: 0.7, cites: [{source: S1, locator: "para. 1; honours"}], how_known: "NobelPrize.org; patent 1896. Invention, not a theory/result about natural systems (P33) — not a scientist for B."}

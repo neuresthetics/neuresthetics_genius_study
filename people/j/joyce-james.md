@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1 2026-10-24)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages; Ellmann 1982 PDF; Letters I IA OCR"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 104). Basics from Britannica (James Stephen Atherton, signed; body pages opening, 'Ulysses' and 'Finnegans Wake', read live). Worldview from his letters to Nora Barnacle (29 August 1904) and to Stanislaus Joyce (March 1907), quoted from Ellmann's editions on the RICORSO site, the 1904 passage also in Britannica's body; private letters, secondary quotations, both before the working years (P20 cap 0.5). Not a scientist (P30). primary_system and A BELOW_THRESHOLD (rejection of Christianity and the Church; no statement on God); B UNKNOWN (P16); mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). The pre-span letters now cite P31 (no documented change of view between them and the span; source ceiling 0.7), not P20's post-span cap, with 0.5 kept as the coder's call for indirectness (JO4). The in-span letters on the RICORSO page (to Harriet Shaw Weaver, February 1920, 9 October 1923, January 1925, 21 May 1926) were read and are cited; none states a view of God. No value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #103 / F4 rank 104). Goals: hunt in-span God/existence statements; keep A honest if still no locus; B likely UNKNOWN (P16 novelist). Dual bio Wikipedia EN James Joyce (S4, P50). P47 source_quality on S1–S6. Primary check: Letters of James Joyce vol. I ed. Gilbert (Viking 1957) IA OCR (S6) — Weaver 25 Feb 1920 (purgatory joke), 9 Oct 1923 (metempsychosis/Vico), Jan 1925 (Bruno dualism for Work in Progress), 21 May 1926 ('I would not pay overmuch attention to these theories') — none states a view of God (confirms S2). Ellmann James Joyce (1982 rev.; S5 monoskop PDF): Morris L. Ernst interview 'That's for the Church to say' (secondary via Ernst The Best Is Yet 1945 p. 118); Zurich party reply to cosmological proof ('reciprocal destruction') is reported speech (cannot score alone). No clear God locus; no P16 nature-order own-voice. primary_system and A stay BELOW_THRESHOLD; B stays UNKNOWN; mid_basin UNKNOWN. Not plotted. Chart-moving NO. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["novelist", "short-story writer", "English teacher"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early travels and works'"}], how_known: "Britannica (Berlitz School at Pola; private lessons in Zürich)."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["literature"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Dubliners (short stories)", year: 1914, kind: work, lasting: "named with his major works in the body's opening (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'A Jesuit education and a renounced faith'"}], how_known: "Britannica."}

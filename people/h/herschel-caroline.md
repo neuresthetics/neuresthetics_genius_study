@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 8
+  schema_version: "1.4"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #149, F 3, rank 155). Re-searched full 1876 Memoir (IA OCR + Gutenberg #52923 clean text); Hoskin Autobiographies excerpt (German History Intersections, S6); Phil. Trans. comet letters (IA, S7 — observational only); Wikipedia EN dual bio (S5; P50). Extra conventional God-bless / thank-God closings found; no Creator / nature-cause / why-heavens-move own-voice. Aubert 1786 'Being who has ordered all these things to move' is TO her, not hers. CHRIST stays 0.5; A 0 stays 0.5 (named alt 1 formula); B stays BELOW_THRESHOLD (P6; not reconstructed from comet-sweeping); C/D/E BELOW; mid BELOW. support single on A (P48; only S3). P47 source_quality S1–S7. Chart-moving NO (not plotted). No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica and MacTutor; her own words from Memoir and Correspondence of Caroline Herschel (John Murray, 1876), page images checked for pp. 17–18, 235–236, 275, 347 and 351. Primary CHRIST at 0.5 (consistent_private_letters, below the ceiling because the evidence is brief devotional phrases: a Nunc dimittis citation, thanksgiving and prayer to 'the Almighty', 'as long as God pleases'); A 0 at 0.5; B, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -53,6 +54,7 @@ basics:
   occupations: {value: ["astronomer", "singer", "assistant to William Herschel"], certainty: 1.0, cites: [{source: S1, locator: "paragraphs 1–3"}, {source: S2, locator: "Bath paragraphs"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["observational astronomy", "comets", "star and nebula catalogues"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "summary"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Discovery of eight comets, the first in 1786 (one periodic: 35P/Herschel–Rigollet)", year: "1786–1797", kind: discovery, lasting: "first comets discovered by a woman", certainty: 1.0, cites: [{source: S1, locator: "opening; paragraph 3"}, {source: S2, locator: "1786 and 1797 paragraphs"}], how_known: "Two sources."}

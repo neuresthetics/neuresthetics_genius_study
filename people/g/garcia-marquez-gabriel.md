@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1 queue #30)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 30). Basics from Britannica (González Echevarría) and the Nobel Prize biographical note. The only statement on God found is 'No creo en Dios, pero le temo', known only as reported speech (biographer Gerald Martin, who calls it possibly a joke; Alfa y Omega). Characters' words in the novels are not his view. primary_system and A BELOW_THRESHOLD; B, C, D, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #30, next-50 batch). Needs were A BELOW_THRESHOLD and B UNKNOWN. Opened El olor de la guayaba (1982 Mendoza interview book; Spanish excerpts via El Tiempo / Revista BOCAS): affirms 'El que no tenga Dios, que tenga supersticiones' as 'muy serio'; superstitions as natural faculties repudiated by Western rationalism; yellow flowers for protection; 'prejuicios de mi formación católica' as inherited double standard, not adult CHRIST. Opened El País 27 Jan 1981 essay (Scandal of the Century / LitHub): literary credo affirming biblical/literary wonders still happen against 'obscurantist rationalism' of bad teachers — aesthetic method, not scored as P16 B. Paris Review 1981 and UNESCO Courier: Caribbean reality / realist self-description; not God-locus. Wikipedia EN dual-sources bio (full name; death place; Zipaquirá). P47 on every source. 'No creo en Dios, pero le temo' still reported speech only (Martin joke; Alfa y Omega; Guardian misattributes Cholera character line). primary_system stays BELOW_THRESHOLD (lead ATHE; P38 unmet). A stays BELOW_THRESHOLD. B stays UNKNOWN (not a scientist; superstition practice and wonder-creed ≠ nature's causal order, P16; P41 does not apply — he affirms wonders/superstitions rather than rejecting miracles). C/D/E UNKNOWN; mid_basin UNKNOWN. Chart-moving NO. Characters unused. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["novelist", "short-story writer", "journalist", "screenwriter"], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Life'"}, {source: S2, locator: "first paragraph"}, {source: S6, locator: "lead / occupations"}], how_known: "Britannica, Nobel, Wikipedia EN."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["fiction", "journalism"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "lead"}], how_known: "Britannica + Wikipedia EN."}
   lasting_original_contributions:
     - {value: "La hojarasca (Leaf Storm), first novel; first Macondo fiction", year: 1955, kind: work, lasting: "first of the books that build the Macondo world (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Works'"}, {source: S2, locator: "Bibliography"}], how_known: "Dated by both; lasting is the coder's reading."}

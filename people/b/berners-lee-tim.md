@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 77). Basics from Britannica (Michael Aaron Dennis); Top Questions not cited. Worldview from his own essay 'The World Wide Web and the \"Web of Life\"' (1998, w3.org). Not a scientist under P30 (computer science). primary_system BELOW_THRESHOLD (Unitarian Universalist, no study code); A BELOW_THRESHOLD; B UNKNOWN (P16); mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change: primary_system stays BELOW_THRESHOLD (no UU code, not mapped to SECHUM); UU recorded under nominal_affiliations."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #76, F5 rank 77). Needs: A BELOW_THRESHOLD; B UNKNOWN. Primaries/own words: 1998 w3.org UU essay (S2) re-read; Business Insider / Die Welt Döpfner interview 7 May 2017 (S4) 'Not in the sense of most people. I'm atheist and Unitarian Universalist.'; UU World Graff 1999 (S5) interview paraphrase on MIT UU / no dogma; w3.org FAQ physics replies (S6); Wikipedia EN dual bio (S7, P50) with Britannica create-pass body retained (S1; live JS-empty this pass). P47 on S1–S8. Not a scientist (P30/P33: Web/HTML/HTTP/URI are inventions, not theories about natural systems) — B stays UNKNOWN (P16); physics 'microscopic rule → macroscopic' remarks are design analogies, not a scored B account. primary_system BELOW→ATHE @0.5 (interview self-label; alt BELOW / SECHUM). A BELOW→4 @0.5 support single (interview; alt BELOW_THRESHOLD for span vacuum / UU without God term, P38). D UNKNOWN→3 @0.5 (essay reject dogma / One True Churches + quest-for-truth skepticism). C/E UNKNOWN. mid_basin stays UNKNOWN (B UNKNOWN, P19). Span stays 1989–1991. Chart-moving NO (still unplottable; B UNKNOWN). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S2, locator: "text"}], how_known: "His own essay and FAQ."}
   occupations: {value: ["computer scientist", "software engineer"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "lead"}], how_known: "Two sources."}
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["computer science"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S7, locator: "lead"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Proposal for a global hypertext document system using the Internet (World Wide Web)", year: 1989, kind: invention, lasting: "the World Wide Web (S1, S7)", certainty: 0.7, cites: [{source: S1, locator: "CERN paragraph"}, {source: S7, locator: "proposal 12 March 1989"}], how_known: "Two sources."}

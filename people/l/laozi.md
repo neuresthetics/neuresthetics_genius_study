@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #186/228, F 3, rank 198): SEP Laozi (Alan Chan, rev. 2025) + IEP Daoist Philosophy (Littlejohn) dual P49 reconstructions of Dao/ziran in the Daodejing / 'Laozi of the text' → A 3 @ 0.5 (alt 4), B 3 @ 0.5 (alt 4); support corroborated. Primary stays BELOW_THRESHOLD with TAO lead (Founders; P42 composite / legendary authorship — Gautama/Confucius precedent). Mid BELOW_THRESHOLD (A≥3 only at 0.5). Wikipedia EN added for dual bio (P50) and native_name 老子. Britannica re-checked; P47 source_quality on all. Not plotted (0.5 ceiling). Do not invent biography. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): native_name set to UNKNOWN (not printed in S1 or SEP 'Laozi')."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 198). Source: Britannica, signed by Max Kaltenmark (revised by Roger T. Ames; read in full). Lasting work: the Daodejing, 'a primary Daoist writing', traditionally his; but 'The Daodejing, as we have it, cannot be the work of a single author', a Guodian version dates 'to before 300 bce', and 'The name Laozi seems to represent a certain type of sage rather than an individual' (S1). The text is therefore context only (P42, Sun Tzu precedent): primary_system UNKNOWN (lead TAO); A, B UNKNOWN; mid_basin UNKNOWN. Life dates UNKNOWN ('flourished 6th century bce' is traditional; some place Lao Dan at the end of the 4th century bce), so first-lasting year, era (P39), span and age are UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["philosopher", "archivist (shi) at the Zhou court (tradition)"], certainty: 0.5, cites: [{source: S1, locator: "The life of Laozi"}, {source: S3, locator: "1. The Laozi Story"}], how_known: "Sima Qian's account; historicity contested (S1; S3)."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["philosophy", "Daoism"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "opening"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Daodejing / Laozi (attributed corpus): Dao, de, ziran, wuwei as founding Daoist conceptual cluster", year: UNKNOWN, kind: "work", lasting: "'a primary Daoist writing'; Laozi 'the first philosopher of Chinese Daoism' (S1); pervasive influence (S3 opening)", certainty: 0.5, cites: [{source: S1, locator: "Introduction; The life of Laozi"}, {source: S3, locator: "opening; 2. Date and Authorship"}], how_known: "Traditionally his, but composite anthology (S1; S3 §2 Lau 'anthology'); 0.5 floor for attribution (P42)."}

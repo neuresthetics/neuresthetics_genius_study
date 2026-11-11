@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch F)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch F, order P32: F 5, rank 37). Basics from Britannica (G. S. Kirk). Whether Homer existed is uncertain; nothing is known of him beyond the name attached to the poems (S1). The gods of the Iliad and Odyssey are narrative: characters' and the narrative's words are not the author's view. All worldview fields UNKNOWN; mid_basin UNKNOWN. Undated works (P39). Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #37, F5 rank 37). Needs: A UNKNOWN; B UNKNOWN; 1 source. Re-opened Britannica Kirk via Wayback (S1). New: Herodotus 2.53 Godley Loeb via Perseus (S3); Nagy CHS chapter on oral tradition and authorship (S4); Moran Journal of Classics Teaching summary of composition/transmission (S5); A. T. Murray Loeb Iliad 1.1 via Perseus for Muse-invocation context (S6). P47 source_quality on every source. Homeric Question / P42 reaffirmed: oral epic handed down under the name; Kirk's 'probable' shaping and unitarian vs analyst debate are not scholarly agreement attributing a specific text as the historical Homer's own words for scoring; characters' and narrative events still not the author's view (P42 addendum). Herodotus credits Homer and Hesiod with teaching the Greeks the gods' genealogy, names, offices and forms — influence of the poems, not a profession of belief. A stays UNKNOWN; B stays UNKNOWN. Chart: still unplotted. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["epic poet"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Presumed author / oral poet of the epics (S1)."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["epic poetry"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Iliad (traditional attribution)", year: UNKNOWN, kind: work, lasting: "basis of Greek education and culture; 'the most important poems of the classical European tradition' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening ('probable' primary shaping)"}, {source: S5, locator: "§1 name later; unity vs multiple poets"}], how_known: "Authorship probable but disputed (S1); Homeric Question open (S4, S5). Certainty 0.5. Not used to score worldview under P42."}

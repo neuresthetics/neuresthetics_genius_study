@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #130, F 4, rank 131). Hunt own-voice: Berndt & Rankin, Ramanujan: Letters and Commentary (AMS 1995; S6, IA OCR) — letters to Hardy/friends are mathematics, travel logistics, food/illness; no own-voice God/goddess/religion profession or P16 nature-order claim. Equation quote traced to S. R. Ranganathan reminiscence of a 1913 conversation (S7 p. ~88; still reported speech §7), not a letter or notebook. Kanigel notes confirm Ranganathan as source. Hardy vs Seshu Aiyar/Rao conflict unchanged. Keep primary/A/B/mid BELOW (Ruling X4; RQ-X4); not scientist (P30 pure math); pure math ≠ P16 for B. P47 source_quality on S1–S8; P50 Wikipedia EN (S8) dual bio — birth 1887-12-22 Erode and death 1920-04-26 agree with Britannica/MacTutor; Wikipedia infobox death_place Madras vs Kumbakonam in Britannica/MacTutor/Wikipedia body (conflict noted). No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (RA2) the partition formula dated by its first printed notice, the Comptes rendus note of 2 January 1917 (new S5; P30 #1, the Gauss example): first lasting year 1918 -> 1917, span 1918–1920 -> 1917–1920 (still 0.5), age 31 -> 30 (P30 rule 5, event year − birth year; the audit's 29 is the age in completed years). Ruling X4 (v8's call on the auditor's advice): kept as coded (recorded under P42). No scored worldview value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 131). Basics from Britannica (Britannica Editors) and MacTutor (O'Connor and Robertson). Worldview only from others' reports: G. H. Hardy's Ramanujan (1940), lecture I, which quotes the Seshu Aiyar and Ramachandra Rao memoir and gives his own conflicting memory; Britannica's quotation from Kanigel. All reported speech (§7), so nothing scores. Not a scientist (P30: pure mathematics). primary_system BELOW_THRESHOLD (HINDU and AGNOS leads; RQ-X4); A, B BELOW_THRESHOLD; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1918–1920 (0.5). Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["mathematician", "clerk, Madras Port Trust (1912–1914)", "Fellow of Trinity College, Cambridge (1918)"], certainty: 0.7, cites: [{source: S2, locator: "Port Trust and Royal Society paragraphs"}], how_known: "MacTutor."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["number theory", "infinite series", "continued fractions", "elliptic functions"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Summary"}], how_known: "Both sources."}
   lasting_original_contributions:
     - {value: "Asymptotic formula for the partition function p(n) (with G. H. Hardy), and properties of p(n)", year: 1917, kind: "law or principle", lasting: "'Perhaps his most famous work was on the number p(n)'; the formula 'was later proved by Rademacher' (S2); 'pioneering discoveries of the properties of the partition function' (S1)", certainty: 0.5, cites: [{source: S2, locator: "partition paragraph"}, {source: S1, locator: "Top Questions; 'Further advances'"}, {source: S5, locator: "séance du 2 janvier 1917, pp. 35–38"}], how_known: "Both sources; the year is from the first printed notice, the Comptes rendus note of 2 January 1917 (S5; P30 #1; batch X audit, RA2), not given in either. Pure mathematics, so not a scientist (P30)."}

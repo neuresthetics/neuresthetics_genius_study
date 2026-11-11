@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch T; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: '2026-10-25'
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch T, order P32: F 4, rank 112). Basics from Britannica (Britannica Editors; revised by Kara Rogers), the Science History Institute and the Salk Institute. Worldview from The John Callaway Interviews (WTTW; broadcast 30 June 1981), AAPB transcript (status 'Correct'). Scientist (P30). All worldview fields rest on one recorded interview after the working years (P1 cap 0.5). primary_system PANT (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD (A 4 at 0.5). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (blind audit of 754bb24, run 1: SA3, SA7 WEAKEN; ruling T2, v8's call on the auditor's advice). primary_system PANT -> ATHE at 0.5, alternative PANT ('God was invented because of the necessity for having a form of order' withdraws the entity-term). The killed-virus principle is listed as a discovery (Britannica: killed virus of each of the three types 'could induce antibody formation in monkeys'), so the scientist status no longer rests on an invention (P33). S4 locators now carry AAPB transcript timecodes. A 4, B 3 (0.5) unchanged; plot unchanged."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["physician", "virologist and medical researcher", "professor of bacteriology, preventive and experimental medicine (Pittsburgh)", "founding director of the Salk Institute"], certainty: 0.7, cites: [{source: S1, locator: "body"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["virology", "immunology", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "body"}, {source: S2, locator: "Salk's Education and Work on Influenza"}], how_known: "Britannica and the Science History Institute."}
   lasting_original_contributions:
     - {value: "First safe and effective (inactivated, killed-virus) polio vaccine: killed virus of each of the three types induces antibodies; human testing 1952; national field trial 1954; declared safe and effective 12 April 1955", year: 1952, kind: invention, lasting: "'developed the first safe and effective vaccine for polio' (S1); recommended again for US use in 1999 and 2009 'because it cannot accidentally cause polio' (S2)", certainty: 1.0, cites: [{source: S1, locator: "body"}, {source: S2, locator: "The 'Killed-Virus' Principle; Field Trials; Live-Virus versus Killed-Virus Controversy"}], how_known: "Britannica and the Science History Institute. Range 1952–1955: work and its proof (P12, P29). The vaccine itself is an invention, which alone would not make him a scientist (P33); the result it rests on is listed separately as a discovery."}

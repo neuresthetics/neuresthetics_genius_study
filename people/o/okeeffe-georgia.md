@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 99). Basics from Britannica (Barbara Buhler Lynes, signed; body read live through 'New Mexico'). Worldview: only a late remark reported second-hand ('I don't think much of God', at 96, quoted in a 2005 Merton Seasonal review of Coombs 2003) and a fan blog quoting an unnamed source (lead only, not cited). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1). Abstractions item year 1916 (291, May 1916; P30 #1), matching the field (O7, P13); 1915 composition noted. Notes: basis 'scholarly_reconstruction' removed from the BELOW_THRESHOLD primary_system and A (the remark is reported speech); the 'only partly returned' caveat dropped and the 'New Mexico' section page cited; Betz's year and issue noted as from the URL and index pages; the 1960 aerial abstractions noted as a possible span end; S1 shows no revision date. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #98 / F4 rank 99). Needs: A BELOW; B UNKNOWN; artist not scientist — B needs P16 nature-order own-voice. Dual bio Wikipedia EN (S4, P50). P47 source_quality on S1–S8. Hunt: Access O'Keeffe Museum 'In Her Words' (S7) — aesthetic nature lines, no God place/deny, no P16; Wikiquote (S8) same; Betz/Coombs 'I don't think much of God' still third-hand (Coombs 2003 not on IA); fan blog religion quotes (S5) still unnamed archive; Merrill ASSIST NEWS (S6) Ginsberg 'It's hard to say' via assistant + Pedernal jokey God quip; Perry Miller Adato 1975/1977 transcripts catalogued but museum API 500 / full text not free. A stays BELOW_THRESHOLD (no place/deny ≥0.7). B stays UNKNOWN (aesthetics ≠ nature-order, P16). primary BELOW; mid UNKNOWN. Chart-moving NO. Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["painter", "art teacher"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early years'"}, {source: S4, locator: "lead / Early life"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["painting", "American Modernism"], certainty: 0.7, cites: [{source: S1, locator: "opening sentence"}, {source: S4, locator: "lead (American modernism)"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Charcoal abstractions such as No. 3–Special", year: 1916, kind: work, lasting: "'one of a handful of American and European Modernists' working in abstraction (S1)", certainty: 0.7, cites: [{source: S1, locator: "'An emerging Modernist'"}, {source: S4, locator: "First abstractions"}], how_known: "Britannica. Dated by first public showing: 10 drawings in a group exhibition at 291 in 1916 (P30 #1, P13). Composed 1915 (No. 3–Special, 1915), noted; the composition date is not used because a public showing exists."}

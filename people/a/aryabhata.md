@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Shukla & Sarma 1976 critical edition English (IA Aryabhatiya1976 v1 PDF text layer) as S5 — independent of Clark 1930. Dasagitika 1: 'God Brahma… one and many… the real God, the Supreme Brahman'; Gola 49: 'By the grace of Brahma…'. Add S5 to A value and alt cites → A support single→corroborated (P48). B already corroborated → hollow→filled (still faded @0.5). Certainty stays 0.5 (van der Waerden Dasagitika doubt). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #144, F 3, rank 149). Opened Clark 1930 Chicago University Press PDF/OCR via Internet Archive (S4; TheAryabhatiyaOfAryabhata): confirmed Wikisource readings of Dasagitika A, Gola 47, Gola 49–50; added Ganitapada 1 (Brahman reverence outside the Dasagitika authenticity dispute) and Gola 37 (Moon obscures Sun; Earth's shadow obscures Moon — natural eclipse mechanism). Clark preface defends Dasagitika against Kaye (Brahmagupta quotes stanzas 1, 3, 4, 5); van der Waerden doubt (S1 MacTutor: Introduction later; some verses added) still flagged — which Gola verses he rejects remains unspecified. Shukla/Sarma 1976 English (IA) OCR unusable this pass. primary HINDU stays 0.5; A 1 stays 0.5 alt 2 (support single); B 3 stays 0.5 alt 4 (P35/P16: Gola 37/47 are the natural eclipse account, not a lift past 0.5) but basis inference_from_work → written_profession; support single → corroborated (S4/S2 + S1). mid BELOW_THRESHOLD; plotted faded. P47 source_quality on S1–S4. Chart-moving NO. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): B basis now inference_from_work (P24; ceiling unchanged); statements verified_against 'scholarly edition' (Clark's translation read directly, not a secondary quotation); coder_notes add the Gola 49–50 condition. RQ-Z4-1: invocation carries primary and A at 0.5. Values unchanged."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["astronomer", "mathematician"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "MacTutor."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["astronomy", "mathematics"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "MacTutor."}
   lasting_original_contributions:
     - {value: "Aryabhatiya", year: 499, kind: work, lasting: "place-value arithmetic, sine table, axial rotation of the Earth, natural theory of eclipses (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "MacTutor."}

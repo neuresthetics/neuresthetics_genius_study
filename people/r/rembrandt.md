@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 67). Basics from Britannica (Ernst van de Wetering), signed body through 'Early years' only; Top Questions not cited. No worldview statement read. primary_system UNKNOWN; A, B, C, D, E UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #66, F5 rank 67). Needs: A UNKNOWN; B UNKNOWN; 1 source. Dual bio Wikipedia EN (S3) + retained Britannica van de Wetering (S1; live Cloudflare-blocked; Wayback TOC/early body). Primary: only surviving letters — to Constantijn Huygens c.1636–39 (S4 Hofstede de Groot / Binstock EN; S5 Wikiquote Dutch of 12 Jan 1639) — conventional closings ('commend… to God', 'blessing of salvation') and art goal 'meeste ende… naetuereelste beweechgelickheijt' (greatest and most natural movement) = pictorial emotion/motion, not nature's causal order (P16). Wheelock Leiden Collection (S6): family Remonstrant lean; 'Rembrandt's own religious views are not known'. Mother Catholic / father Dutch Reformed (S3). Biblical history pieces ≠ avowed belief. A stays UNKNOWN (God closings off-point; P19); B stays UNKNOWN (P16). primary_system UNKNOWN (CHRIST/Reformed heritage lead only). mid_basin UNKNOWN. Working years 1632–1669 @0.7. P47 on S1–S6. Chart-moving NO. Thin-source caution — no overclaim. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["painter", "printmaker", "draughtsman"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "lede"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["painting", "printmaking", "drawing"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "lede"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "The Anatomy Lesson of Dr. Nicolaes Tulp", year: 1632, kind: work, lasting: "Early Amsterdam group portrait masterpiece (S3)", certainty: 0.7, cites: [{source: S3, locator: "Notable work (1632)"}], how_known: "Wikipedia; career breakthrough as portraitist."}

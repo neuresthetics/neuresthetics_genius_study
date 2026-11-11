@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA7)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to living_or_recent. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (skip catch-up 13/13 LAST; F3 rank 206). Goals: any firm A/B; do not force plot. Opened Clay CMI 2008 interview PDF (S5, own voice); Quanta Klarreich 2014 (S6, own-voice quotes); Guardian 2014 republication of Clay Q&A (S7); Wikipedia EN dual bio (S8, P50); AMS Notices 2018 memorial excerpt (S9, friends: religious beliefs unknown). No own-voice place/deny of God; no nature-order remark for P16 B. primary_system / A / B stay UNKNOWN. Rejected: Iranian birth or reported Muslim marriage ceremony (PBS documentary, secondary) as ISLAM — heritage ≠ worldview. Pure-math Platonism / 'connections with theoretical physics' (Clay) do not score B (P16; Tao/Hilbert path needs explicit lawful-nature remark). Birth date → 1977-05-12; death place Stanford Hospital; native مریم میرزاخانی. Childhood/schooling enriched. P47 source_quality on S1–S9. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fix: ICM 2022 survey locator §2.2."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA7, order P32: F 3, rank 206, provisional). Sources: the IMU's 2014 Fields Medal statement 'The Work of Maryam Mirzakhani' (read in full) and the Simons Foundation obituary (Sumner, 2017, read in full). Lasting work (after the AA7 audit, v8's call on the auditor's advice): the Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems (arXiv preprints 2013); the ICM 2022 survey by Jon Chaika and Barak Weiss (S4, EMS Press, read in full; authors and wording verified) says 'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry'. The 2004 thesis results are dropped as lasting (P13, Lamarr/Johnson precedent: 'decisive step forward' and 'new and unexpected proof' are prize-time praise) and kept as a major work. Span 2013, age 36, at 0.5. Mathematician, not a scientist. Worldview: no own words read. primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["mathematician", "professor"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "IMU."}
 
 contribution:
+  era_bucket: living_or_recent
   fields: {value: ["mathematics", "geometry", "dynamical systems"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "IMU."}
   lasting_original_contributions:
     - {value: "Eskin–Mirzakhani(–Mohammadi) 'magic wand' theorems: rigidity of the SL2(R) action on moduli space (with Alex Eskin and Amir Mohammadi)", year: 2013, kind: "discovery", lasting: "'This work has revolutionized the study of dynamics on translation surfaces and has already had many applications in geometry' (S4, Chaika and Weiss, ICM 2022); 'a major breakthrough' (S1)", certainty: 0.5, cites: [{source: S1, locator: "p. 3; References"}, {source: S4, locator: "§2.2"}], how_known: "arXiv preprints 1302.3320 and 1305.3015 (2013), the first public statements (P30). 0.5: one lasting source."}

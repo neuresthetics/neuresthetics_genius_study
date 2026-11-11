@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #145, F 3, rank 150). Primary-check beyond New Advent web copy: NPNF 1st ser. vol. 2 Dods City of God via IA OCR (S4) confirms XXI.8 (Creator's will = nature of each created thing; portent not contrary to nature but to what we know as nature; 'laws so sure and inflexible' yet God alters a star's course / Joshua's sun) and XXII.8 ('even now miracles are wrought in the name of Christ'). Latin De civitate Dei XXI.8 / XXII.8 via Wikisource Latin (S5) corroborates independently ('uoluntas tanti … conditoris conditae rei cuiusque natura sit'; 'Portentum ergo fit non contra naturam, sed contra quam est nota natura'; 'Nam etiam nunc fiunt miracula in eius nomine…'). Confessions XII.7 creatio ex nihilo via NPNF vol. 1 IA OCR (S6). B 2 lifted 0.5→0.7 (written_profession; support corroborated S4+S5; contested alt 1 caps ≤0.7); A 0 stays 0.7 support corroborated (S4+S5+S6); primary CHRIST @0.7 kept. mid_basin BELOW→TODO (A≤1 with B=2 both ≥0.7 falls between P4 branches — not true; true needs B≥3). Chart-moving YES: faded→dark (min cert 0.7); hollow→filled (A and B both corroborated). P47 source_quality on S1–S6. Not a scientist. No figures/; no fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z4 audit fixes (blind audit /workspace/genius_study_audit/gs_a19c474_Z4/run1/): Z4-33 (FAIL): span start is the range's start year (P12, addendum d), so 396–426 at 0.5 and age 42 (was 400, 46). RQ-Z4-2: B 2 upheld; B rationale now cites the XXI.8 'laws so sure and inflexible' sentence. Still plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z4, order P32: F 3, rank 150). Basics from SEP (Christian Tornau, 2019, rev. 2024). Own words from City of God in Marcus Dods' translation (NPNF 1st ser. vol. 2) as reproduced on New Advent: XXI.8 (a portent 'happens not contrary to nature, but contrary to what we know as nature'; 'the will of so mighty a Creator is certainly the nature of each created thing') and XXII.8 ('even now miracles are wrought in the name of Christ'). Web copy of a translation, secondary quotation (Ibn Khaldun precedent). Not a scientist. Span 400–426 (Confessions ca. 396–400, latest year per P30 #4; City of God 412–426). primary_system CHRIST (0.7); A 0 (0.7, alt 1); B 2 (0.5, alt 1); C, E UNKNOWN; D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded), left of B 3. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["rhetor", "priest", "bishop of Hippo", "philosopher", "theologian"], certainty: 0.7, cites: [{source: S1, locator: "§1 Life"}], how_known: "SEP."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["philosophy", "theology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Confessiones", year: 396, kind: work, lasting: "'probably his most original work'; 'greatly influenced the modern tradition of autobiography' (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; §2 Works"}], how_known: "SEP; dated ca. 396–400."}

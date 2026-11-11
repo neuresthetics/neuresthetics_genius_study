@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch R; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch R, order P32: F 4, rank 105). Basics from Britannica (Britannica Editors, unsigned; body only, read live) and the 1953 Nature paper's publisher page (date). Worldview from his own signed op-ed in Time, 25 March 2016 ('a lifelong atheist'; 'my God-rejecting views'; 'secular Christianity'), read directly; written profession, after the working years (1953–1965), so capped at 0.5 (P20, Shannon and Hawking precedent). Scientist (P30). primary_system ATHE (0.5); A 4 (0.5); B 3 (0.5, alt 4; P35); mid_basin BELOW_THRESHOLD. Plotted (faded), like Crick. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch R audit fixes (gs_0454445_R run 1). Op-ed locators corrected: the 'I never go to Sunday services' statement is paragraph 7, and primary_system and A cite paragraphs 2, 4 and 7 (WA4). Ruling R1 recorded (v8's call on the auditor's advice): 'lifelong' does not lift the P1 cap, so ATHE and A 4 stay at 0.5. Span 1953–1965 with 1968 as the alternative recorded as v8's call. The 2003 Scientific American interview noted as an unread lead (still post-span if confirmed). No value changed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #104 / F4 rank 105). Needs: A 4 @0.5; B 3 @0.5 alt 4 (P35); primary ATHE @0.5; mid BELOW; plotted faded (like Crick). Dual bio: Britannica (S1) + Wikipedia EN (S7) (P50). P47 source_quality on S1–S8. In-span: Nobel Lecture 11 Dec 1962 (S8, nobelprize.org PDF): replication by 'thoroughly understood conventional chemical forces'; DNA structure reinforced belief that 'long-range forces, or for that matter any form of mysticism, would not be involved in protein synthesis' — B 3 @0.5 → 4 @0.7 written_profession (P35 no longer binds); alt 3 if 'mysticism' read as Jordan long-range forces only. Post-span A corroboration (P20 keeps 0.5): SciAm Apr 2003 (S5) 'never thought there was a spiritual basis for life' / molecular basis; Telegraph 20 Mar 2003 (S6) religious explanations 'myths from the past' / 'Every time you understand something, religion becomes less likely'; Time 2016 (S3); Wikipedia (S7) 'escapee from the Catholic religion' (Genes Girls Gamow p. 118) + Discover 'luckiest thing… father didn't believe in God' (primary Discover unread). No in-span God/atheist self-label; no P38 agnostic pairing. A support corroborated; B support corroborated (S8+S5). primary ATHE @0.5. mid BELOW (A 0.5). Chart-moving YES: hollow→filled (both corroborated); still faded (min(A,B)=0.5). Double Helix / MBG / Avoid Boring People IA borrow-restricted. No fallacy_catalog. No figures refresh. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["geneticist", "biophysicist", "professor of biology", "laboratory director"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Research'"}, {source: S7, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["genetics", "molecular biology"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Research'"}, {source: S7, locator: "lead"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Double-helix model of DNA, with specific base pairing (with Francis Crick)", year: 1953, kind: discovery, lasting: "'Their research answered one of the fundamental questions in genetics'; Nobel Prize 1962 (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Research'"}, {source: S2, locator: "citation metadata"}], how_known: "Britannica; year from the Nature paper (S2). A result about natural systems, so he is a scientist (P30)."}

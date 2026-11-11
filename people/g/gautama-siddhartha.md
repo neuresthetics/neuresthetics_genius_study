@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #128). Refresh SEP Siderits (rev. 2023) and Britannica Lopez (1 Oct 2026); both reaffirm nothing in his own hand and discourses written centuries later. P47 source_quality on S1–S4. P50: Wikipedia EN The Buddha (S4) agrees traditional birth Lumbini / death Kushinagar (Kasia) with Britannica; life years still UNKNOWN (P39). P49 considered and not stretched: SEP §1 explicitly declines to reconstruct the historical Gautama apart from later tradition (unlike Confucius D1 SEP+IEP Tian path), so A/B/C/D stay BELOW_THRESHOLD with named readings only; primary stays BELOW with BUDDH lead (Ruling X2 / P42). E UNKNOWN; mid BELOW; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (GA6) the SEP lines 'governed by the causal laws of karma', 'good actions cause pleasant fruit' and gods undergoing rebirth relocated to §1 and labelled as the Upaniṣadic and śramaṇa milieu, not his teaching; the B and C karma readings rest on the §4 line ('What the Buddha teaches is instead the far stricter view that each action has its own specific consequence ...'). Ruling X2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with BUDDH as the lead (recorded under P42). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 129). Basics from Britannica 'Buddha' (Donald S. Lopez with Britannica Editors, 1 Oct 2026; body only) and SEP 'Buddha' (Mark Siderits, rev. 2023). Nothing survives in his own hand; the discourses were not written down until several centuries after his death (both sources), so everything attributed to him is reported speech (P42 addendum, Confucius precedent). primary_system BELOW_THRESHOLD (BUDDH lead; the Founders rule names Buddha → BUDDH, RQ-X2); A, B, C, D BELOW_THRESHOLD with readings named; E UNKNOWN; mid_basin BELOW_THRESHOLD. Life dates, era and span UNKNOWN (P39). Not plotted. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["wandering teacher", "ascetic (śramana)"], certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP: he left household life and 'took up with a number of different wandering ascetics'."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["ethics", "philosophy of mind", "soteriology"], certainty: 0.5, cites: [{source: S2, locator: "opening; §§2–3"}], how_known: "SEP: claims 'concerning the nature of persons, as well as how we acquire knowledge'; field labels the coder's."}
   lasting_original_contributions:
     - {value: "Teaching of the Four Noble Truths, non-self (anātman) and the middle path, the basis of Buddhism", year: UNKNOWN, kind: "body of work", lasting: "'the individual whose teachings form the basis of the Buddhist tradition' (S2); founder of 'one of the major religions and philosophical systems of southern and eastern Asia and of the world' (S1)", certainty: 0.7, cites: [{source: S2, locator: "opening; §2 ('Four Nobles' Truths'); §3"}, {source: S1, locator: "opening"}], how_known: "Both sources; known only through later texts (S2 §1). Undated (P39)."}

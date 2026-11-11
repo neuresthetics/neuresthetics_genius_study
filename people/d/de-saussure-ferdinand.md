@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #159, F 3, rank 167). Needs: hunt own-voice; keep UNKNOWN if silent; do not force plot. Hunted Course in General Linguistics (Baskin / archive.org OCR of student-note compilation, S6): Dieu and religion appear only as linguistic examples (mordieu etymology; 'Dieu est bon' syntagm) or as ethnic/civilizational context — not a personal creed; CLG is editors' reconstruction from student notes, not a book in his hand. Hutton & Joseph 1998 (S7) print his 29 Jul 1907 Journal de Genève review of Oltramare (La théosophie brahmanique): own words distinguishing scholarly Indian 'theosophy' from Blavatsky occultism — clears the create-note theosophy lead as scholarly interest, not a belief code. EPHE prosopo (S5) and Wikipedia (S4, P50 with Britannica): Genevan Protestant aristocracy / Calvinist heritage confirmed as context only. No baptism or parish profession found for him. Joseph OUP 2012 still unread in full (family crisis 'economic and religious reasons' remains a review lead). Not a scientist (P30; Lévi-Strauss). primary/A/B/C/D/E/mid stay UNKNOWN; CHRIST heritage lead only. Not plotted. P47 source_quality on S1–S7. Chart-moving NO. No fallacy_catalog. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z8, order P32: F 3, rank 167). Source: Britannica (body). No own words on religion read; Calvinist Genevan family per a review of Joseph's biography (S3, context only). Not a scientist (linguistics as social and interpretive theory; Lévi-Strauss precedent, Z6). primary_system UNKNOWN (lead CHRIST, heritage only); A, B, C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1878–1911, age 21. Not plotted. Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["linguist", "professor"], certainty: 0.7, cites: [{source: S1, locator: "opening; body"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["linguistics", "Indo-European studies"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Mémoire sur le système primitif des voyelles dans les langues indo-européennes", year: 1878, kind: "theory", lasting: "'established his reputation with a brilliant contribution to comparative linguistics' (S1)", certainty: 0.7, cites: [{source: S1, locator: "body"}], how_known: "Britannica."}

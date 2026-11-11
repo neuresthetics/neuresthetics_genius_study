@@ -27,6 +27,7 @@ python scripts/validate_people.py people/f/faraday-michael.md
 Rules that matter most:
 
 - Every filled fact has a certainty, a citation with a locator, and a how_known note.
+- `contribution.era_bucket` is the exception: a coarse band for when the main work landed, from the allowlist in CODING_GUIDE §8. No certainty, no cites, and not an LIO score. It is not `basics.era_bucket` (the P2 claim). A person file must use an allowlist value.
 - Unresearched fields say `TODO`.
 - The worldview is the *adult working* worldview. Heritage is context only.
 - Lane B fields are a labeled belief model, not findings.

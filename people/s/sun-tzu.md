@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #131, F4 rank 133). Hunt for own-voice attribution: Lorge 2022 conclusion reaffirmed (many hands; fictional Master Sun); Boorman 2024 (Cambridge) adopts accretionist model — text developed over an extended period with no single author (S6 abstract); Wikipedia EN Sun Tzu (S5) + Art of War authorship section cite Mair (Shiji biography 'essentially fictional'), Song-era doubts, Yinqueshan slips as Han witness not Spring-and-Autumn authorship proof. No SEP/IEP entry reconstructing a personal LIO for historical Sun Wu. P42 stands: Art of War remains context only. P49 considered and not stretched (no dual scholarly reconstruction of personal A/B). P47 source_quality on S1–S6. P50 dual bio: Britannica (S1) + Wikipedia EN (S5) — traditional 544–496 BCE / Qi / Gusu left UNKNOWN (P39; contested). primary/A UNKNOWN; B/D BELOW leads held; mid UNKNOWN; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (ST7) era_bucket '-500 to 499' (0.5) -> UNKNOWN under a strict P39 (life dates UNKNOWN; the Wu service, 512–506 B.C. in the Shiji passage Giles quotes, falls before -500; the Warring States date belongs to the text). No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 133). Basics from Britannica (Britannica Editors, 14 Sep 2026): the 'reputed author' of The Art of War, which is 'more likely to have been written early in the Warring States period'. Lorge (Cambridge, 2022) holds that many hands wrote it under the name of a 'fictional Master Sun'. No source read attributes the text to him, so it is context only (P42): it scores no code or axis. Giles's 1910 translation read for leads (ch. XI §26 against omens; ch. XIII §5 foreknowledge not from spirits). primary_system, A, C, E UNKNOWN; B, D BELOW_THRESHOLD as leads; mid_basin UNKNOWN. Life dates and span UNKNOWN (P39); era '-500 to 499' at 0.5. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["military strategist", "general"], certainty: 0.5, cites: [{source: S1, locator: "opening"}], how_known: "Britannica, as tradition."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["military strategy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Art of War (Bingfa), attributed", year: UNKNOWN, kind: work, lasting: "'the earliest known treatise on war and military science'; its stress on politics and war 'greatly influenced some modern strategists', including Mao Zedong (S1)", certainty: 0.5, cites: [{source: S1, locator: "opening; body"}, {source: S3, locator: "abstract"}], how_known: "He is the 'reputed author' (S1); the work 'is more likely to have been written early in the Warring States period' (S1), and Lorge holds 'Many hands wrote, compiled, and edited the work' (S3). So 0.5, and the text is context only for his worldview (P42)."}

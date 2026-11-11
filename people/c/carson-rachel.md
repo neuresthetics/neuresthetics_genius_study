@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #200/228, F 3, rank 213). Goals: letters/essays own words on God/nature; leave B per RQ-AA9-1 unless new warrant; do not force plot. Nature writing alone does not force pantheism/A. Read: 1954 Theta Sigma Phi address 'The Real World Around Us' / Exceeding Beauty (AWPC full text + Lost Woods excerpt via Bron Taylor PDF) — natural beauty as spiritual development; 'part of the whole stream of life'; 'mysterious spark of life was added'; Jefferies lines as 'creed I have lived by'. Always, Rachel letter 1 Feb 1958 (LOE transcript) — 'stream of life' in 'whatever course that God had appointed'; genesis of Silent Spring. Silent Spring closing (1962) — 'control of nature' phrase 'conceived in arrogance'. Always, Rachel (Goodreads quote; day undated this pass) — 'denied formal religion too much' yet reaches for 'God help me'. Wikipedia EN (P50 dual bio). PCUSA Historical Society (heritage: United Presbyterian family; maternal grandfather minister; not known to attend church as adult — secondary). Honor RQ-AA9-1: B stays UNKNOWN (Silent Spring public synthesis; no new P16 warrant). primary_system UNKNOWN → BELOW_THRESHOLD (leads PROT/CHRIST, nature-spirituality; denied formal religion; nature writing ≠ PANT). A UNKNOWN → BELOW_THRESHOLD (A 0–1 spark/God-language vs A 4 stream-of-life/earth-origins; neither ≥0.5). mid UNKNOWN → BELOW. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA9 audit fixes: not a scientist for B under RQ-AA9-1 (B UNKNOWN, alternative B 3 at 0.5); National Book Award 1952 at 0.7 (National Book Foundation, S3)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA9, order P32: F 3, rank 213). Source: Britannica scholars edition (The Editors, unsigned, read in full). Lasting work: Silent Spring (1962); she 'left behind some of the most influential environmental writing ever published' (S1). The sea books (1941, 1951, 1955) are praised and best-selling, but S1 gives no lasting claim for them (P13). Span 1962, age 55. Not a scientist for B under RQ-AA9-1 (v8's call on the auditor's advice; work, not job): her only lasting item, Silent Spring, is a synthesis and public argument, not a result of her own; B UNKNOWN, alternative B 3 at 0.5 (P35) if her biology counted. Worldview: no own words read; primary_system UNKNOWN; A UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["biologist", "science writer", "editor"], certainty: 0.7, cites: [{source: S1, locator: "opening; para. 3"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["biology", "marine biology", "environmental science"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica: 'environmental pollution and the natural history of the sea'."}
   lasting_original_contributions:
     - {value: "Silent Spring", year: 1962, kind: "work", lasting: "'creating worldwide awareness of the dangers of environmental pollution'; she 'left behind some of the most influential environmental writing ever published' (S1)", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}], how_known: "Published 1962 after serialization in The New Yorker (S1)."}

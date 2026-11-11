@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion TODO→Lutheran (Brunswick) @0.7 from new Wikipedia S8 + Britannica birthplace. Baptism/catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Gray, first page). Worldview from Sartorius von Waltershausen, Gauss zum Gedächtniss (1856), a friend's memoir with reported sayings, read on the Internet Archive scan (pp. 16, 97, 98, 101, 102, 103 checked on the page images; pp. 99–100 in the OCR text only). No writing by Gauss on religion was read. primary_system BELOW_THRESHOLD. A 1 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #156: full_name now cites MacTutor's heading for the order used, with Britannica's 'Johann Friedrich Carl Gauss' as a cited alternative (both reopened); certainty unchanged pending v8's ruling on name-order disputes. #205: the 1795 age note corrected (Sartorius p. 16 puts the least-squares discovery at Göttingen, reached 11 October 1795, so 18). #216: 'Fragen.«' copied as printed (page image). Left for v8 as a method question: #162 (first lasting year 1796 vs the listed least-squares item 1795–1801). Not reviewed."}
@@ -56,6 +57,7 @@ basics:
   occupations: {value: ["mathematician", "astronomer", "physicist", "geodesist", "observatory director"], certainty: 1.0, cites: [{source: S2, locator: "Biography"}, {source: S3, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["number theory", "geometry", "probability theory", "geodesy", "astronomy", "potential theory", "magnetism"], certainty: 1.0, cites: [{source: S3, locator: "opening"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Constructibility of the regular 17-gon (theory of cyclotomy)", year: "1796", kind: discovery, lasting: "opened the way to later Galois theory (Britannica)", certainty: 0.5, cites: [{source: S1, locator: "p. 16"}, {source: S2, locator: "Biography"}, {source: S3, locator: "17-gon paragraph"}], how_known: "Three sources agree on the discovery; they disagree on the year: 30 March 1796 (Sartorius, from Gauss's own note, S1, p. 16) vs 1792 (Britannica), so 0.5 with the alternative named (P25). Was 1.0.", alternatives: [{value: "1792", cites: [{source: S3, locator: "'Gauss's first significant discovery, in 1792'"}], note: "Britannica's year for the 17-gon discovery."}]}

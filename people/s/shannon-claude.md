@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 89). Basics from Britannica (George Markowsky, signed; body only). Worldview from Anthony Liversidge's interview (Omni, August 1987), read in the version printed in Shannon's Collected Papers (IEEE Press, 1993; PDF on gwern.net). primary_system ATHE (0.7); A 4 (0.7); B 3 (0.5, alt 4; P41); mid_basin false (0.7). Plotted (faded on B). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fixes (#8, #9): the 1987 interview is after the working years (1940–1948), so ATHE and A 4 drop to 0.5 (P20, Hawking precedent); mid_basin false → BELOW_THRESHOLD (A ≥ 3 branch needs 0.7). B cites P35 first (value unchanged). 1938 AIEE paper noted as a working-years lead. Still plotted (faded)."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Carry-over from the batch P audit (gs_08be43b_P run 1, note 9): B_cause basis corrected from recorded_interview to inference_from_work, since B 3 rests on his working science (P35) and the interview only agrees. Values unchanged."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["mathematician", "electrical engineer", "professor"], certainty: 0.7, cites: [{source: S1, locator: "opening; MIT sentence"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["information theory", "switching theory", "cryptography"], certainty: 0.7, cites: [{source: S1, locator: "text"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Boolean algebra as the theory of relay and switching circuits (A Symbolic Analysis of Relay and Switching Circuits)", year: 1940, kind: theory, lasting: "'established the theoretical underpinnings of digital circuits' (S1)", certainty: 0.7, cites: [{source: S1, locator: "master's thesis paragraph"}], how_known: "Britannica. A theory about physical circuits, so he is counted a scientist (P30, coder's call)."}

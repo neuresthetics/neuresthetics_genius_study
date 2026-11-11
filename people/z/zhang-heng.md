@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 single run AB-Z)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-21
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to ancient. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #215/228, F 3, rank 230). Opened Needham SCC vol. 3 (1959) DjVuTXT OCR (IA cftri.9621…): Ling Hsien pp.216–217 (自然相生 / tzu-jan hsiang séng EN; Taoist-influence footnote; cosmogony omitted; hun sphere / wu chi); p.414 moonlight and lunar/solar eclipse EN ('about +120'); Hun I Chu egg cosmology p.217. Re-read MacTutor; Wikisource Lingxian Chinese; Hou Han shu placement already on file. Wikipedia EN + New World Encyclopedia dual bio (P50): death Luoyang. Lifted A 3 from written_profession @0.5 (coder gloss of unofficial Chinese) to written_profession @0.7 corroborated (Needham EN of spontaneity/mutual production + Chinese Wikisource; alt 4 kept). B 3: basis inference_from_work → written_profession; certainty stays 0.5 with alt 4 (P16 Hilbert / P35; Archimedes pattern); support corroborated (Needham eclipse EN + Chinese). mid_basin BELOW_THRESHOLD → false @0.7 (A≥3 branch, P10). primary_system stays BELOW_THRESHOLD (TAO/CONFUC/CHNFOLK mix). P42: Lingxian survives as Qing-assembled fragments (Ma Kuo-Han YHSF); Hou Han shu + Needham attribute to Zhang Heng — own words with reliability flag, not doxography. P47 source_quality; P49 not used for A/B (published translation, not reconstruction). Chart-moving: hollow→filled (both axes corroborated); faded stays (min=B@0.5); mid newly false. Do not force plot. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "ABZ audit fixes (blind audit /workspace/genius_study_audit/gs_eece863_ABZ/run1/: 25 HOLD, 3 WEAKEN, 0 FAIL). #13: moonlight/eclipse theory was adopted from Jing Fang and Wang Chong (S2 para 8); lasting contribution and P30 scientist case now rest on his distance-speed theory of the seven luminaries ('innovative', S2). #14: locator para 8. #25: Hou Han shu ch. 59 (S5, read) places the Lingxian after his appointment as Grand Astrologer; span alternative 115–120 at 0.5 (RQ-Z9-N1), age about 37–42; main span 132 kept. RQ-ABZ-1 (v8's call on the auditor's advice): portent lines are omen-reading, B 3 at 0.5 alt 4, note only. Own gloss carries A at 0.5 (v8's call on the auditor's advice); 聖人無心，因茲以生心 added as support for alt A 4. No score change."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "Record created (single run at Jason's request, order P32: last uncoded F 3, rank 230). Basics from MacTutor (O'Connor and Robertson, 2003) and chinaknowledge.de (Theobald, 2025, signed). Own words from the Lingxian (Chinese text, Wikisource web copy of the fragments), coder's English gloss. Lasting: seismoscope (132, a device, P33) and the Lingxian's theory of moonlight and lunar eclipses (undated in the sources read), so span 132 only (dated item), age 54. Scientist (P30) on the Lingxian eclipse theory. A 3 at 0.5, alt 4 (Dao as root, things 'arise of themselves', with Heaven's 'mind' shown in portents). B 3 at 0.5, alt 4 (P35), with a B 2 lead from the portent passage (RQ-ABZ-1). primary_system BELOW_THRESHOLD (TAO / CONFUC / CHNFOLK leads). Plots, faded. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["astronomer", "court official (Grand Astrologer)", "poet", "inventor", "mathematician"], certainty: 1.0, cites: [{source: S1, locator: "Summary; Biography"}, {source: S2, locator: "opening paragraph"}], how_known: "Both sources."}
 
 contribution:
+  era_bucket: ancient
   fields: {value: ["astronomy", "invention", "literature", "mathematics"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
   lasting_original_contributions:
     - {value: "Seismoscope (Hou Feng Di Dong Yi)", year: 132, kind: "invention", lasting: "'In 132 Zhang invented the first seismograph for measuring earthquakes' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Biography, seismograph paragraph"}], how_known: "Device (P33): does not by itself make him a scientist. Mechanism reconstructions (Needham and later) are P49 context only — not used for A/B."}

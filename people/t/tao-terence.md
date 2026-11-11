@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Y)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to living_or_recent. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch Y (gs_7b46f24_Y run 1): (TA7) Solving mathematical problems dated 1992, its first edition (written 1990; MacTutor). Ruling Y3 (v8's call on the auditor's advice): not a scientist; B stays UNKNOWN (recorded under P30). No score changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Y, order P32: F 4, rank 134; roster status provisional). Basics from Britannica (Jeremy John Gray, 18 Oct 2026) and MacTutor (O'Connor and Robertson, December 2023). The Green–Tao theorem dated by its arXiv submission (8 April 2004; Annals of Mathematics 2008). No statement on religion or nature found in a reliable source; web pages offering 'quotes' on his faith are unsourced and not used. Not a scientist (pure mathematics; RQ-Y3). Span 2004 at 0.5. primary_system and all axes UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (catch-up 3/13; F4 rank 134). Needs: firm A/B if sources allow; Hilbert/P16 for B (not P35 — ruling Y3 not scientist). Opened Lex Fridman Podcast #472 transcript (S5, 2025); Quanta / Joy of Why 1 Feb 2024 (S6); blog 'What are the odds?' 3 Oct 2022 (S7); Wikipedia EN dual bio (S8, P50). Rejected: St Augustine 'Quiet Faith' and parallel unsourced faith pages (fabricated/unsourced quotes); Medium 'Terence Tao' Christian blog is a different person. A_locus stays UNKNOWN (no own-voice place/deny of God; blog divine-lottery example is epistemic, not creed). primary_system stays UNKNOWN. B_cause UNKNOWN → 3 @0.5 alt 4 (interview): Lex own-voice that the universe is comprehensible (Einstein endorsement), that simple laws emerge (universality; bell curve 'everywhere in nature'), and that the laws of physics are translation/rotation/time invariant (Noether explanation) — Hilbert P16 addendum lawful-order remark, not math Platonism alone (Quanta S6 Platonism about mathematical objects would be BELOW under P16). Support single. After span (P20). mid_basin UNKNOWN (A UNKNOWN, P19). Chart-moving NO. P47 source_quality on S1–S8. Native name 陶哲轩 from Wikipedia. No fallacy_catalog. No figures/. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["mathematician", "professor at the University of California, Los Angeles"], certainty: 1.0, cites: [{source: S1, locator: "body"}, {source: S2, locator: "career paragraphs"}], how_known: "Both sources."}
 
 contribution:
+  era_bucket: living_or_recent
   fields: {value: ["partial differential equations", "combinatorics", "harmonic analysis", "additive number theory"], certainty: 1.0, cites: [{source: S1, locator: "opening (Fields Medal citation)"}, {source: S2, locator: "Summary"}], how_known: "Fields Medal citation in both sources."}
   lasting_original_contributions:
     - {value: "Green–Tao theorem: the primes contain arbitrarily long arithmetic progressions (with Ben Green)", year: 2004, kind: "law or principle", lasting: "'This fantastic achievement' (S2); cited in the 2006 Fields Medal press release (S2)", certainty: 0.5, cites: [{source: S2, locator: "Fields Medal paragraphs"}, {source: S3, locator: "arXiv math/0404188"}], how_known: "MacTutor for lasting; date from arXiv (P30). Pure mathematics (P30), so not a scientist."}

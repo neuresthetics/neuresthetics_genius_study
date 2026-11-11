@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to early_modern. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 81). Basics from Britannica (John Russell Brown, Terence Spencer and others, signed; Wayback copies; body only). No worldview statement in his own voice was read: the plays and poems are character or persona speech (P42), and the will's religious preamble was not read. All worldview fields UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): will read (Folger, PROB 1/4); by v8's ruling on RQ1 (on the auditor's advice) its formulaic preamble is lawyer drafting, not his statement (P42); 'only merits of Jesus Christ' recorded under nominal_affiliations as context. A stays UNKNOWN."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#4): primary_system how_known no longer says the will was not read; it now says the will is read (S3)."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["dramatist", "poet", "actor"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "infobox"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: early_modern
   fields: {value: ["drama", "poetry"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S4, locator: "lead"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Henry VI, Part 1; Titus Andronicus", year: 1589, kind: work, lasting: "earliest plays in the chronology (1589–92) (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Chronology of Shakespeare's plays'"}], how_known: "Britannica table, 1589–92; start year (P12)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch K)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch K, order P32: F 5, rank 72). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited) and SEP (Bergoffen and Burke, rev. 2023). Worldview from The Ethics of Ambiguity (1947; Frechtman translation 1948, marxists.org web copy), Part I. Not a scientist (P30). primary_system EXIST (0.5, alt ATHE); A 4 (0.5, alt BELOW_THRESHOLD); B UNKNOWN (P16); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2d75649, run 1). mid_basin how_known explains BELOW_THRESHOLD: the A ≥ 3 branch reads A only (P10). SEP's 'at age fourteen' line cited explicitly for A 4. EXIST kept (0.5, alternative ATHE), with a note that the EXIST system file does not separate atheist from theist existentialism."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #71, F5 rank 72). Needs: A faded; B UNKNOWN; sources 3. Dual bio: Britannica Editors (S1; live Cloudflare-thin, Top Questions via Wayback) + Wikipedia EN (S5, P50). Primary/own words: Ethics of Ambiguity Part I–III Frechtman (S3 marxists.org web copy, 0.7 cap) — 'far from God's absence authorizing all license'; 'if God does not exist, man's faults are inexpiable'. Memoirs of a Dutiful Daughter (1958) S6 — IA borrow 401; long quotation via W. Scott Haine / A Woman's Paris (secondary quotation): 'One night I summoned God, if He really existed… I was very glad He didn't exist.' Paris Review Art of Fiction No. 35 (S7, recorded interview): acknowledges lost religious faith. All Said and Done 1974 p. 478 (S8, secondary quotation via Wikipedia/Goodreads): atheist vs faith-as-evasion. Force of Circumstance lead 'God had died when I was fourteen' noted in open_questions (IA 401). Added Ethics of Ambiguity 1947 as lasting contribution (Britannica Top Questions + SEP §5). P47 source_quality on S1–S8. A_locus 4 @0.5 → 4 @0.7 (written_profession; drop BELOW_THRESHOLD alt — Memoirs/All Said resolve Ethics conditional; unofficial Ethics + secondary Memoirs keep 0.7 not 1.0); support stays corroborated (S3+S2+S6+S8). B_cause stays UNKNOWN (not a scientist; Ethics 'nature' passages are human-nature/ethics/Hegel, not P16 natural order; P41 not stretched from 'strange power'). primary_system EXIST @0.5 alt ATHE unchanged. mid_basin BELOW_THRESHOLD → false @0.7 (A≥3 branch, P10). Chart-moving NO (still unplotted: B UNKNOWN). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -44,6 +45,7 @@ basics:
   languages_of_work: {value: [French], certainty: 0.7, cites: [{source: S1, locator: "titles"}], how_known: "Britannica."}
   occupations: {value: ["writer", "philosopher", "teacher"], certainty: 0.7, cites: [{source: S1, locator: "opening; paragraph 2"}], how_known: "Britannica."}
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["philosophy", "literature", "feminist theory"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "L'Invitée (She Came To Stay)", year: 1943, kind: work, lasting: "novel expounding existential themes (S1)", certainty: 0.7, cites: [{source: S1, locator: "novels paragraph"}], how_known: "Britannica."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 54). Basics from Britannica (Monk), signed body only. Worldview from the Tractatus Logico-Philosophicus (1921; Ogden translation, 1922), read in the Gutenberg #5740 PDF (web copy, 0.7 cap). Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, AGNOS); A 0 at 0.5 (alt BELOW_THRESHOLD); B BELOW_THRESHOLD (6.37 and 6.371–6.372 deny natural necessity and that laws of nature explain, which fits no B anchor; RQ1 batch I); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of bbb26f8, run 1). B_cause BELOW_THRESHOLD -> 3 (0.5, alternative BELOW_THRESHOLD) under P41, the laws-only-describe view as for Russell; now plotted (faded) at A 0 / B 3, mid_basin BELOW_THRESHOLD. S2 cited as the Gutenberg #5740 PDF; the plain-text file returns 404."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #54, F5 rank 54). Needs: A single source + faded; B single source + faded. P47 source_quality on S1–S7. Corroborated A via German Tractatus (S4, Wittgenstein Project reproduction of 1922 bilingual: Gott offenbart sich nicht in der Welt / Sinn der Welt ausserhalb) + Ogden EN (S2 / S5 Wikisource) + Lecture on Ethics 1929 (S6: God allegory; Ethics supernatural; wonder at world existence). A stays 0 @ 0.5 written_profession, support single→corroborated (P48); alt BELOW retained (saying vs locus). Corroborated B via German 6.37 / 6.371–6.372 / 5.1361 (S4) + Ogden (S2/S5); B stays 3 @ 0.5 under P41 (alt 4 / BELOW); support single→corroborated. Dual-source bio Wikipedia (S7): Catholic infant baptism; birth/death confirm. Britannica S1 403 this pass — prior Monk read retained. Notebooks 1914–16 scholarly edition unread. Chart-moving YES on fill cue only (faded hollow → faded filled); darkness still faded (both @ 0.5). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["philosopher", "elementary school teacher"], certainty: 0.7, cites: [{source: S1, locator: "opening; post-war years"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["logic", "philosophy of language", "philosophy of mathematics", "philosophy of mind"], certainty: 0.7, cites: [{source: S1, locator: "later-work paragraphs"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Tractatus Logico-Philosophicus (picture theory of meaning)", year: 1921, kind: work, lasting: "'inspired a vast secondary literature' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica, MacTutor, his Nobel autobiography (Les Prix Nobel 1983) and Parker's NAS Biographical Memoir (1997). Worldview from his own words in the AIP interview of 6 October 1987 (Krisciunas): 'he knew I was an atheist'. primary_system ATHE at 0.5 (one oral self-description; no basis type fits a recorded interview, so capped by analogy with the single-letter rule; flagged). A 4 (0.5), B 4 (0.5); C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2). primary_system ATHE: basis scholarly_reconstruction 0.5 → recorded_interview 0.7. A_locus 4: 0.5 → 0.7 (recorded_interview). Self-described relation 0.5 → 0.7. B_cause 4 unchanged at 0.5 (Parker; the interview remark is indirect). mid_basin BELOW_THRESHOLD → false at 0.5 (A ≥ 3 at 0.7; certainty capped by B). Both statements now kind 'recorded interview'. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (both runs, #19, #20, #25). S5 carries AIP's no-quotation notice, so under P8's last sentence only a paraphrase can be published and the interview cannot score an axis or code on its own; the record's earlier reading (quoting verbatim avoids the limit) was circular. Treated like Bohr's S7: S5 is now paraphrased throughout and its two verbatim statements were removed. primary_system ATHE 0.7 → 0.5 and A_locus 4 0.7 → 0.5, both basis recorded_interview → scholarly_reconstruction (as before P8); self-described relation 0.7 → 0.5; B_cause unchanged (4 at 0.5). mid_basin false (0.5) → BELOW_THRESHOLD (A and B both only at 0.5). Stale Wali note reworded. Not reviewed. Interview-based fields (primary_system, A_locus, the self-described relation, lio_views_relative_to_major_work, worldview_during_major_work, circle_present) now start their how_known with '(interview)' (P8 as signed off by Jason, 2026-10-02)."}
@@ -54,6 +55,7 @@ basics:
   occupations: {value: [astrophysicist, "theoretical physicist", "university professor", "journal editor"], certainty: 1.0, cites: [{source: S1, locator: "opening; paragraph 4"}, {source: S4, locator: "editor paragraph"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: [astrophysics, "theoretical physics", "general relativity"], certainty: 1.0, cites: [{source: S3, locator: "the seven periods"}, {source: S1, locator: "opening"}], how_known: "His own list of periods; Britannica agrees."}
   lasting_original_contributions:
     - {value: "Chandrasekhar limit: the maximum mass of a white dwarf (about 1.4 solar masses)", year: "1930–1935", kind: "law or principle", lasting: "named limit; basis of the theory of stellar collapse", certainty: 1.0, cites: [{source: S1, locator: "paragraph 3"}, {source: S4, locator: "shipboard paragraph"}], how_known: "Two sources."}

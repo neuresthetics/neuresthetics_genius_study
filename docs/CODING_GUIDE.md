@@ -107,7 +107,7 @@ Rules for the table (decisions P15, P24, P25, v8's picks, 2026-10-02):
 - When a 1.0 value rests on two sources but a detail in it rests on one, put the detail in its own note at 0.7, or cap the whole field at 0.7.
 - **A real dispute** (P30) is when reliable sources give different values for the same event and both can't be true. That gives 0.5, with the alternative named. If the values may refer to different events (two sources naming different tutors), it is not a dispute: record each as its own entry at its own certainty (0.7 for one source each; P29).
 - A source that draws on another (MacTutor's Riemann biography on Dedekind's Lebenslauf) is not independent of it, so the pair gives 0.7 (P29). A friend's memoir is not a primary document.
-- Derived fields take the lowest certainty of their inputs: `era_bucket` from `first_lasting_contribution_year` (unless every candidate year falls in the same bucket), `timing.age_at_first_lasting_contribution` from the birth date and that year, `region_of_birth` from the birth place.
+- Derived fields take the lowest certainty of their inputs: `basics.era_bucket` from `first_lasting_contribution_year` (unless every candidate year falls in the same bucket), `timing.age_at_first_lasting_contribution` from the birth date and that year, `region_of_birth` from the birth place. `contribution.era_bucket` is not one of these: it is a plain label, with no certainty.
 - **Ages** (P30). Every age field is event year − birth year, with no month adjustment. `python3 scripts/recompute_ages.py --check` lists any age that differs.
 - The validator warns on a non-worldview 1.0 that cites one non-primary source.
 
@@ -266,14 +266,14 @@ Notes:
 - Dates follow the conventions in [DATA_DICTIONARY.md](DATA_DICTIONARY.md#1-conventions). When sources disagree, give the best-supported value, put the others in `alternatives`, and set certainty 0.5 if the dispute is real (the test is in §3, P30).
 - `first_lasting_contribution_year` (decisions P13 and P23, v8's picks, 2026-10-02): P13 is the rule, and no coder-chosen "defining work" is allowed. The year is the year of the earliest listed item in `contribution.lasting_original_contributions` that is itself a lasting contribution. Don't prune the list to move the year. An item can be removed only if it isn't lasting, and the record states the reason. Early work that is not listed (a doctoral thesis, early papers) can set the year only if it is added to the list with a source and is itself lasting (see **Contribution** below).
 - The list need not be complete, but it must include the earliest lasting contribution that the sources read name (decision P17), and the latest one (P30 addendum). A published letter can be such a work (the Leibniz–Clarke correspondence, 1715–16). The period end can't leave out a major late public work just because it wasn't listed.
-- When an item is dated as a range, use the range's **start** year (decision P12, v8's pick, 2026-10-02): penicillin "1942–1945" gives 1942. For the period end, a range gives its end year (P30 addendum): Kant's period ends in 1788. If the sources do not date the start (a decade such as "1920s", or a cumulative "by 1921"), do not guess: write the item's `year` as the sources give it; the item sets the first-lasting year only once a source dates its start, and the how_known says the year might be earlier. Recompute `era_bucket` and `timing.age_at_first_lasting_contribution` whenever the year changes.
+- When an item is dated as a range, use the range's **start** year (decision P12, v8's pick, 2026-10-02): penicillin "1942–1945" gives 1942. For the period end, a range gives its end year (P30 addendum): Kant's period ends in 1788. If the sources do not date the start (a decade such as "1920s", or a cumulative "by 1921"), do not guess: write the item's `year` as the sources give it; the item sets the first-lasting year only once a source dates its start, and the how_known says the year might be earlier. Recompute `basics.era_bucket` and `timing.age_at_first_lasting_contribution` whenever the year changes. Recompute `contribution.era_bucket` from the rules under Contribution, not from the P2 table.
 - **Dating a contribution** (P30, replacing P29's "first publication"). Use the year of the person's earliest documented public statement of the result: in print (the full work, a printed abstract, or a printed notice that states the result, such as Gauss's 17-gon notice of 1796), a documented public lecture or reading, or a formal submission. Darwin's coral-reef theory is 1837 (read to the Geological Society on 31 May 1837).
   - Classified work kept out of print by secrecy (von Neumann's implosion work, Turing at Bletchley) is dated by its documented work years. This is the only exception; other unpublished work is dated by the rule above.
   - Posthumous publication: date the item by its last documented act in life (a submission, a lecture, a dated manuscript), or by the death year if there is none. Riemann's 1854 Habilitation lecture is 1854.
   - No documented public statement in life: date the item by its documented composition date, and say so in the note. The death cap still applies (P30 addendum).
   - The period never runs past death: Pascal's period ends in 1662 at the latest, Hume's in 1776 at the latest (P30 addendum). As evidence for the worldview, a late private writing published after death counts like any other adult evidence (P31, replacing the addendum's restriction).
-- **Undated works** (P39, v8's pick, 2026-10-15). If no listed lasting contribution can be dated, the first-lasting year, the span, working_years and the first-lasting age are UNKNOWN; `era_bucket` is still filled when every adult year falls in one bucket, at the certainty of the life dates.
-- `era_bucket` (decision P2) follows from that year. A year on an edge goes to the later bucket: 1600 is `1600 to 1749`, 1950 is `1950 on`. Birth year stays in `basics.birth.date`, so a birth-year version can be computed for a sensitivity check:
+- **Undated works** (P39, v8's pick, 2026-10-15). If no listed lasting contribution can be dated, the first-lasting year, the span, working_years and the first-lasting age are UNKNOWN; `basics.era_bucket` is still filled when every adult year falls in one bucket, at the certainty of the life dates.
+- `basics.era_bucket` (decision P2) follows from that year. A year on an edge goes to the later bucket: 1600 is `1600 to 1749`, 1950 is `1950 on`. Birth year stays in `basics.birth.date`, so a birth-year version can be computed for a sensitivity check. This claim is not `contribution.era_bucket`.
 
   | bucket | years |
   |---|---|
@@ -293,6 +293,27 @@ Notes:
 - List only original contributions that are still used or built on, with `lasting` saying what rests on them.
 - `evidence_of_impact` uses concrete markers: named laws or units, textbook canon, assessments by later major figures, honours.
 - `definition_fit` is `clearly meets`, `arguable` or `does not meet` against the Lane A definition (lasting original impact; not collectives, transient fame, or mastery without originality). It feeds roster status decisions, which are Jason's.
+- **`era_bucket`** (schema 1.4, 2026-10-27). One coarse band for when the person's main work landed. Lane A metadata for later slices. It is not a claim: no certainty, no cites, no alternatives. It is not an LIO axis, and it does not change A–E, `mid_basin`, or `primary_system`. It is not `basics.era_bucket` (decision P2). That field stays the fine year-range claim derived from `first_lasting_contribution_year`. There is no second coarse band. Do not recode the P2 claim when filling this label.
+  - A coded person file uses an allowlist value. `TODO` is only for the uncoded template. Do not use `UNKNOWN` or `BELOW_THRESHOLD`.
+  - Take the dates already in the file. Do not add a person, and do not look up a new year, to fill it.
+  - **Dated window.** Use `timing.major_work_period` when it has a year or a year span (`42–19 BCE` is −42 through −19). A single year is a window of that year. If the period is `UNKNOWN`, use the earliest through the latest year on `contribution.lasting_original_contributions`. If none of those is dated, use the years on `contribution.major_works`. If those are undated too and both a birth year and a death year are in the file, use adult life: birth year + 20 through the death year (or birth through death if death is earlier). If only a birth year is in the file and the person is not living, use birth year + 40. A death value of `UNKNOWN` whose `how_known` says the person is living is not a death year.
+  - **Band of a window.** Count every year from the start through the end, inclusive. The label is the band with the most years. A tie goes to the later band. A year on a cutoff belongs to the later band, because each lower bound below is inclusive and each upper bound is exclusive.
+  - **`living_or_recent`.** This is the band for a year of 2000 or later. A person who is still living stays in the earlier band when most of the dated window is before 2000. Late-career peak means at least half the window's years are 2000 or later. A span that merely continues past 2000 does not by itself move the label.
+  - **No dated window.** If the file states no year under the rules above, but every candidate year it does state (a floruit, a traditional century, a P2 bucket that sits wholly inside one band) is before 500 CE, use `ancient`.
+  - Allowlist. Add a value only when none of these fits, and add it in `schema/person.schema.json` in the same edit:
+
+    | label | years of the main work |
+    |---|---|
+    | `ancient` | through 499 CE (year < 500), including every BCE year |
+    | `medieval` | 500–1499 |
+    | `early_modern` | 1500–1699 |
+    | `18c` | 1700–1799 |
+    | `19c` | 1800–1899 |
+    | `20c_early` | 1900–1949 |
+    | `20c_late` | 1950–1999 |
+    | `living_or_recent` | 2000 and after |
+
+    Year 500 is `medieval`, not `ancient`. Year 1500 is `early_modern`. Year 1700 is `18c`. Year 1800 is `19c`. Year 1900 is `20c_early`. Year 1950 is `20c_late`. Year 2000 is `living_or_recent`.
 
 **Childhood.**
 - Record facts only. `early_mathematics` is the highest level reached before about 18.

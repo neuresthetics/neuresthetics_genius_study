@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #187/228, F 3, rank 199): hunted first-person God/nature statements. Own words via Purdy (Open Hand / Jean Petit) + McNamara: 'not a churchgoer' / work 'almost religious'; 'not a pagan' / Ronchamp as contact with the unknown; 'not experienced the miracle of faith' but 'miracle of inexpressible space'. Architecture / ineffable-space / nature-as-setting metaphors do not score pantheism or B (standing rule; Wright P16 path). A UNKNOWN; B UNKNOWN; primary UNKNOWN (CHRIST heritage only; Wikipedia 'avowed atheist' is secondary characterization — own words incomplete for ATHE). Mid UNKNOWN. Dual bio P50 (Britannica + Wikipedia); P47 on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): full Choay text read (Britannica scholars edition); lasting work is the books 1923–1948 ('a bible for succeeding generations of architects'); span 1923–1948; Villa Savoye and Ronchamp added as major works."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA5, order P32: F 3, rank 199). Source: Britannica, signed by Françoise Choay (scholars edition, read in full after the AA5 audit). Lasting work: Vers une architecture (Toward a New Architecture, 1923); his books 'constituted a bible for succeeding generations of architects' (S1); the books from Vers une architecture (1923) to Le Modulor (1948) are the body of work S1 calls 'a bible', so the span is 1923–1948 by publication (P30 #1), age 36. Buildings (Villa Savoye 1929–31, Ronchamp 1950–55) are major works, not listed as lasting, since S1's lasting phrase covers the books. Worldview: no own words read; raised in 'the puritanism of a Protestant environment' (S1). primary_system UNKNOWN; A UNKNOWN; not a scientist; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["architect", "city planner", "painter", "writer"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S5, locator: "infobox"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["architecture", "urban planning"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Books from Vers une architecture (1923) to Le Modulor (1948)", year: 1923, kind: "body of work", lasting: "his books, 'whose essential lines of thought ... hardly changed at all in 45 years, constituted a bible for succeeding generations of architects' (S1); 'A house is a machine for living in'", certainty: 0.7, cites: [{source: S1, locator: "Education and early years"}], how_known: "Britannica; the named books run from 1923 to Le Modulor (1948)."}

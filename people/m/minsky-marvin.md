@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_late. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #192, F 3, rank 204). Hunt: primary interview/own words for ATHE/A; B only if P16. Opened: Society of Mind §4.3 Soul (S8; copyright 1985/1986, lasting item year 1985); Kuhn Space.com tribute 4 Mar 2016 (S6) and HuffPost 29 Jan 2016 (S7) printing first-person CTT lines (1999 panel + ~2006–07 MIT one-on-one; Kuhn: all quotes from CTT); videodb CTT ep. 1613 caption transcript cross-check; Wikipedia EN (S5, P50 dual bio with S1); Lederman/Scheppler Portraits 2001 via Wikipedia cite (S9) 'confirmed atheist' + religion contagious-disease quote. No first-person 'I am an atheist' / 'I do not believe in God' found (Celebrity Atheist List, Edge Emotion Universe 2002, searches). Coding: primary UNKNOWN→ATHE @0.5 recorded_interview (P8; alt BELOW — no self-label; after-span CTT + named alt); A UNKNOWN→4 @0.5 (interview; alt BELOW — God-doesn't-explain / soul-creator rejection without clean locus denial; P38-style); B stays UNKNOWN (not scientist as listed P30/P33; RQ-AA3-1 McCarthy; no P16 nature-order — do not force B from AI/mind theory); D UNKNOWN→4 @0.5 (interview: faith vs critical thinking; religion teaches not to ask); C/E UNKNOWN; mid UNKNOWN→BELOW_THRESHOLD (A 4 only at 0.5). Heritage Jewish filled (S5). P47 on S1–S9. Chart-moving NO (still unplottable; B UNKNOWN). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA6, order P32: F 3, rank 204). Sources: MIT News obituary (2016, read in full) and Patrick Winston's CSAIL obituary (read in full). Lasting work: co-founding the MIT AI Laboratory (1959, S1), which with his early papers 'firmly established Minsky as one of the founders of Artificial Intelligence' (S2); the Theory of Frames (mid-1970s), with 'high impact on Artificial Intelligence as an emerging engineering discipline' (S2), dated 1 June 1974 by MIT AI Memo 306 (S4), 0.7; The Society of Mind (1985), 'considered a seminal exploration of intellectual structure and function' (S1). Span 1959–1985, age 32. Not a scientist as listed, following McCarthy (RQ-AA3-1; confirmed for Minsky on the AA6 audit, v8's call): an institution, a knowledge-representation scheme and a theory of mind's architecture make no testable claim about nature as listed. Worldview: no own words read; lead ATHE (secondary web summaries of a Closer To Truth interview, not read). primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
 
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["computer scientist", "mathematician", "professor"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S5, locator: "lead"}], how_known: "MIT News + Wikipedia."}
 
 contribution:
+  era_bucket: 20c_late
   fields: {value: ["artificial intelligence", "computer science", "cognitive science"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S5, locator: "lead"}], how_known: "MIT News + Wikipedia."}
   lasting_original_contributions:
     - {value: "MIT Artificial Intelligence Laboratory (co-founded with John McCarthy)", year: 1959, kind: "institution", lasting: "with his early work, 'firmly established Minsky as one of the founders of Artificial Intelligence' (S2); now CSAIL (S1)", certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S2, locator: "text"}], how_known: "MIT News: 1959; Winston: 'late 1950s', as the AI Group."}

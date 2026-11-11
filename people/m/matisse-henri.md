@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA1; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 20c_early. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #168, F 3, rank 178). Goals: Vence/Jazz primary if available; open A/primary carefully; do not force plot without B. Hunt: Musée Matisse Nice French 1951 letter to Mgr Rémond (Art Sacré juillet–août 1951) — chapel as 'chef-d'œuvre', 'vie consacrée à la recherche de la vérité', 'signification supérieure de ce monument' (commission / masterpiece framing, not creed); bishop-quoted 'Je commence par le profane… j'aboutis au divin' left lead (Rémond via L'Art sacré, not Matisse hand this pass); Flanner New Yorker 1951: once anticlerical, 'known to be not a practicing Catholic' — chapel ≠ doctrine. Jazz re-read Private Print Flam Matisse on Art: French sense via Wikiquote mirror; Répertoire:6 / Schneider 1984 p.710 n.35 'divine pilot' draft variant logged as lead (unpublished notebook, after span). Spurling Unknown Matisse (NYT first chapter): baptized seven days old Le Cateau; confirmed 1881 St-Martin Bohain; raised Republicans and Roman Catholics; later distaste for Catholic upbringing; Hail Marys/Paternosters as nerve-calm (heritage). primary BELOW_THRESHOLD kept (Jazz conditional work-bound belief + refused gratitude; CHRIST/AGNOS leads only; after-span P20). A BELOW kept (helper/agent thin; no locus; after span). B UNKNOWN (not scientist; no nature-order). mid BELOW; not plotted. Chart-moving NO. P47 source_quality; P48; P50 Wikipedia. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA1 audit note: added the Met 'Fauvism' essay (Sabine Rewald, 2004) as S4, corroborating the 1905 Salon d'Automne dating; search-excerpt labels kept. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA1, order P32: F 3, rank 178). Basics from Britannica (Roy Donald McMullen, signed; body). Lasting work and dating from the Met's Heilbrunn essay 'Henri Matisse (1869–1954)' (body, seen as a search excerpt): Woman with a Hat, 'when exhibited at the 1905 Salon d'Automne', gave rise to Fauvism; public exhibition is the P30 #1 dating event (RQ-Z7-N1). Own words: Jazz (published 30 September 1947), after the span, in Jack Flam's translation (web copy of Matisse on Art): 'Do I believe in God? Yes, when I work ... I feel no gratitude toward Him'. Conditional, work-bound belief with refused acknowledgement, so primary_system BELOW_THRESHOLD (leads CHRIST: Vence chapel, not read; PANT not supported); A BELOW_THRESHOLD; not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1905, age 36 (1905 − 1869). Not plotted. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["painter", "sculptor", "printmaker"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  era_bucket: 20c_early
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Fauvism (Woman with a Hat)", year: 1905, kind: "work", lasting: "'leader of the Fauvist movement' (S1, body); Woman with a Hat 'gave rise to the first of the avant-garde movements' (S2, body)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Fauvist period"}, {source: S4, locator: "para. 2"}], how_known: "Britannica and the Met essays; dated by the 1905 Salon d'Automne showing (S2; S4: 'When their pictures were exhibited later that year at the Salon d'Automne')."}

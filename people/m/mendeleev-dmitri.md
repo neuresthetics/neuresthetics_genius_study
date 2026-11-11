@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Bensaude-Vincent, first page) and the Science History Institute. Worldview from two of his own books in Presidential Library scans on the Internet Archive: Materialy dlya suzhdeniya o spiritizme (1876; his April 1876 lectures, pp. 376–377) and Zavetnye mysli (1903–1905; p. 136 note and the Afterword, p. 426), each passage checked on the page images. primary_system BELOW_THRESHOLD (DEISM and CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (run 2, #81; run 1 noted the same): the p. 426 Afterword quotation stops mid-sentence (it continues ', получится неустойчивая и слащавая шаткость'), so the trailing cut is now marked [...]. No score changed. Not reviewed."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: [chemist, "university professor", "government official (weights and measures)"], certainty: 1.0, cites: [{source: S1, locator: "'Early life and education'"}, {source: S2, locator: "'Later Lives'"}], how_known: "Two sources."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: [chemistry, metrology, "industrial and economic policy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'Later Lives'"}], how_known: "Chemistry from both; the rest from SHI."}
   lasting_original_contributions:
     - {value: "Periodic law and periodic table of the elements, with predicted elements (gallium, scandium, germanium) and corrected atomic weights", year: "1869–1871", kind: "law or principle", lasting: "framework of chemistry", certainty: 1.0, cites: [{source: S1, locator: "'Formulation of the periodic law'"}, {source: S2, locator: "'Who Got There First?'"}], how_known: "Two sources."}

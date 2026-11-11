@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z9; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.era_bucket set to 19c. Coarse band for when the main work landed; not a claim. basics.era_bucket and scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: opened Claims of Science 1851 full text in Studies in Logic and Probability (IA dli.scoerat.5189… djvu.txt) as S6. Physical universe under 'fixed and invariable laws'; 'chance and accident have no place'; 'All its successions are uniform; from its settled order, no deviation is either actual or possible'; 'uniformity and universality of the laws of nature'. Add S6 to B value + alt 4. B support single→corroborated. A already corroborated → dark hollow→filled. B stays 3@0.7 (Claims strengthens alt 4). Chart-moving YES (fill). No figures/; no fallacy_catalog."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Deepen D2: A_locus support single→corroborated via Claims of Science 1851 (S5). Wikiquote-verified own-voice 'moral Governor of the world' / 'Supreme Intelligent Cause' agree with Laws of Thought ch. XIII Governor/intelligent-cause (S2). B stays single (Claims uniformity language not recovered as page text; IA Studies borrow-only). Cues stay dark hollow. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #163, F3 rank 172). Page-image corroboration of Laws of Thought 1854 (IA Google scan aninvestigation00boolgoog): print pp. 159, 217–218, 423–424 rendered and OCR-checked against the prior OCR quotes. Ch. XIII read: natural religion / intelligent cause / moral Governor; 'Revelation being set apart' as solid foundations that the world is not abandoned to chance (pp. 217–218). primary_system BELOW → DEISM 0.5 (alt CHRIST; P27 partly met by setting revelation apart for the foundation, not a full rejection elsewhere). A 1 0.5→0.7; B 3 0.5→0.7; support single both (P48); mid_basin BELOW → true (P4). Chart-moving: darkness lifts (faded→dark), hollow (single). P47 source_quality on S1–S4. Wikipedia dual-bio heritage only (baptized CoE). Claims of Science 1851 / MacHale letters not recovered as page text. No fallacy_catalog; figures/ untouched. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["mathematician", "logician", "professor"], certainty: 0.7, cites: [{source: S1, locator: "Biography"}], how_known: "MacTutor."}
 
 contribution:
+  era_bucket: 19c
   fields: {value: ["logic", "mathematics"], certainty: 0.7, cites: [{source: S1, locator: "Summary"}], how_known: "MacTutor."}
   lasting_original_contributions:
     - {value: "Boolean algebra of logic (An Investigation of the Laws of Thought)", year: 1854, kind: "theory", lasting: "'reducing it to a simple algebra, incorporating logic into mathematics' (S1, his 'most important work')", certainty: 0.7, cites: [{source: S1, locator: "Summary; Biography"}], how_known: "MacTutor."}
