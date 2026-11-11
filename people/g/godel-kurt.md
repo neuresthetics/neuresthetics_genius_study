@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 11
+  schema_version: "1.4"
+  record_version: 12
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages, papers and letter translations"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood and worldview filled from SEP (Kennedy; Oppy et al.), Britannica, MacTutor, the IAS page, Feferman's synopsis of the Collected Works, Todorov's 2007 portrait and the IAS-approved English translations of his letters to his mother and brother. Coded CLASS_THEISM at 0.5 (theist, following Leibniz; mathematical platonism recorded but not coded as PLATO). A, B, D at 0.7; C at 0.5; E TODO. mid_basin true under P4. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes: primary_system CLASS_THEISM at 0.5 -> BELOW_THRESHOLD, with CLASS_THEISM and CLTHEI named as candidates in a note (no scholar places him in a theist code; the simple or immutable God test is not shown). mid_basin unchanged (true at 0.7; it uses only A and B). Lutheran baptism (nominal_affiliations) 0.5 -> 0.7, one reliable source; the same Todorov fact in family_religion, religious_heritage_by_birth and baptism_or_initiation also 0.5 -> 0.7. Not reviewed."}
@@ -73,6 +74,7 @@ basics:
     how_known: "Three sources agree."
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["mathematical logic", "set theory", "philosophy of mathematics", "general relativity (cosmology)", philosophy], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; §1; §2"}, {source: S2, locator: "Gödel's theorems; Turn to philosophy"}, {source: S3, locator: "Biography"}], how_known: "Three sources agree."}
   lasting_original_contributions:
     - {value: "Completeness theorem for first-order logic", year: "1929", kind: theory, lasting: "a basic theorem of logic, taught everywhere (S2)", certainty: 1.0, cites: [{source: S1, locator: "§1"}, {source: S2, locator: "Gödel's theorems"}, {source: S3, locator: "Biography"}], how_known: "Three sources."}

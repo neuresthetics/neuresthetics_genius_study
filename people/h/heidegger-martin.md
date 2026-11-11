@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch U)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch V audit note (gs_982cb8e_V run 1, UF8 follow-up): S1 now cites all Britannica contributors, Arne D. Naess, Richard Wolin and Britannica Editors. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch U (gs_59bb9fc_U run 1): HE4, the later essays and lectures listed as one body-of-work contribution (1946–1964; SEP for lasting, IEP for dates), span and working_years 1927 -> 1927–1964; note, the dates of the break with Catholicism (Britannica 1916–17, IEP 9 January 1919) in changes_over_life. No scored value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch U, order P32: F 4, rank 115). Basics from Britannica (Arne D. Naess), SEP (Mark Wrathall) and IEP (W. J. Korab-Karpowicz). No text of his own on God or nature read: Phänomenologie und Theologie (1927) and the 1919 letter are leads only (P26). Not a scientist (P30). primary_system BELOW_THRESHOLD; A BELOW_THRESHOLD; B UNKNOWN; C UNKNOWN; D BELOW_THRESHOLD; E UNKNOWN; mid_basin UNKNOWN. Single-year span 1927 (Being and Time). Not plotted. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["philosopher", "university lecturer and professor (Freiburg, Marburg)", "rector of the University of Freiburg (1933–1934)"], certainty: 0.7, cites: [{source: S2, locator: "§1 Life and Work"}, {source: S3, locator: "§1 Life and Works"}], how_known: "SEP and IEP."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy", "phenomenology", "ontology"], certainty: 0.7, cites: [{source: S2, locator: "opening"}, {source: S3, locator: "opening"}], how_known: "SEP and IEP."}
   lasting_original_contributions:
     - {value: "Being and Time (Sein und Zeit): the question of the meaning of being pursued through a phenomenological analysis of human existence (Dasein) and its temporality", year: 1927, kind: work, lasting: "'his most important work' (S2); 'recognized as a truly epoch-making work of 20th century philosophy' and 'his most influential work' (S3)", certainty: 1.0, cites: [{source: S2, locator: "opening; §1 Life and Work"}, {source: S3, locator: "§1 Life and Works; §3"}], how_known: "SEP and IEP. The first lasting contribution; the later essays and lectures are listed below (HE4). Not a theory about natural systems, so not a scientist (P30)."}

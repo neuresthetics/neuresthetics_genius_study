@@ -51,6 +51,7 @@ basics:
   occupations: {value: TODO}              # list
 
 contribution:
+  primary_domain: TODO                    # allowlist in CODING_GUIDE §8; plain label, not a claim and not an LIO score
   fields: {value: TODO}                   # list
   lasting_original_contributions: []      # - {value: "...", year: 1831, kind: discovery, lasting: "...", certainty: 1.0, cites: [...], how_known: "..."}
   evidence_of_impact: []                  # - {value: "...", kind: "named after them", ...}

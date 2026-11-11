@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to biology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 107). Basics from Britannica (Britannica Editors, unsigned; body only, read live) and Nature's page for her 1964 paper. Worldview from two interviews in her own words, both after the working years (1964–1986): On Being with Krista Tippett (recorded 2020; producer's transcript) and The Guardian (Stephen Moss, 13 January 2010). Scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, DEISM blocked by P27, PANENT, AGNOS); A 2 (0.5, interview; alt BELOW_THRESHOLD); B 3 (0.5, P35; alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD (P19); mid_basin BELOW_THRESHOLD. Plotted (faded) at A2/B3; A 2 sits between the branches of the mid-basin test. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: GO5 WEAKEN; note). The 'just chance' line is marked as reported: it is what 'all of these great brains have said' (after Francis Collins), not her own argument. A 1 named as a second alternative. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #106 / F4 rank 107). Goals: lift A/B to 0.7 if in-span or stronger own-voice; chart-moving if both ≥0.7 and/or corroboration. Dual bio: Britannica (S1) + Wikipedia EN (S6) (P50). P47 source_quality on S1–S8. Reason for Hope (1999) still unread as a book (IA borrow-restricted); long chain of her own words recovered via Orion Magazine republication of the RFH chapter 'In the Forests of Gombe' (S7) and NYT Books first-chapter excerpt (S8), plus Wikipedia secondary quotations of RFH Notre Dame / Reader's Digest / Laszlo foreword (S6 religion section). PANENT use_when now met: 'Great Spirit in Whom we live and move and have our being' (includes) + guiding / extra-cosmic Creator (exceeds). primary BELOW_THRESHOLD → PANENT @0.5 (written_profession; P20/P1 post-span cap; alt CHRIST). A stays 2 @0.5 (hedges on form: 'haven't the faintest idea' / 'don't have any idea of who or what God is'); basis interview → written_profession; support single→corroborated (P48: S2 + S7 + S6 Reader's Digest / RFH Notre Dame). B stays 3 @0.5 alt 4 (P35); RFH anti-chance / guiding power is extra-cosmic purpose, no P16 exception within nature — does not move B. mid BELOW; plotted faded hollow→faded filled. Chart-moving YES (fill only; darkness no). Full RFH book and Africa In My Blood letters unread. No fallacy_catalog. No figures refresh. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["ethologist", "primatologist", "conservationist"], certainty: 0.7, cites: [{source: S1, locator: "opening; books paragraph"}, {source: S6, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  primary_domain: biology
   fields: {value: ["ethology", "primatology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "Scientific career"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Chimpanzees make and use tools: 'Tool-Using and Aimed Throwing in a Community of Free-Living Chimpanzees' (Nature)", year: 1964, kind: discovery, lasting: "Britannica lists tool-making among the misunderstandings she corrected (S1)", certainty: 0.5, cites: [{source: S4, locator: "article page"}, {source: S1, locator: "findings paragraph"}], how_known: "Britannica does not date the finding; the Nature page dates the paper (28 March 1964). Earlier papers not read (see first_lasting_contribution_year). A result about animal behaviour from field observation, so she is a scientist (P30, P35 addendum)."}

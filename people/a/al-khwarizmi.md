@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from MacTutor and Britannica (editors); worldview from the Author's Preface of the Algebra in Rosen's 1831 translation (archive.org scan, pp. 1–4), with Rosen's own doubt about the preface noted. Works dated only 'after 813', so first-lasting year, span and age UNKNOWN (P12). primary_system ISLAM 0.7 (written_profession; alternative BELOW_THRESHOLD as a conventional formula); A_locus 0 (0.7); C_ledger 1 (0.5); B BELOW_THRESHOLD (coder's call); D BELOW_THRESHOLD; E UNKNOWN; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #11 A_locus 0 certainty 0.7 → 0.5 (the p. 4 line follows Q 9:129). #12 C_ledger 1 at 0.5 re-anchored on pp. 3–4 (mercy through others' prayers), with p. 1 marked contested (Notes, pp. 175–176); p. 3–4 statement added. Statements: verified_against 'primary facsimile' → 'scholarly edition'; copyist's frame and the 1342 manuscript date added to the p. 1 context. mid_basin unchanged (BELOW_THRESHOLD)."}
 
@@ -68,6 +69,7 @@ basics:
   occupations: {value: ["mathematician", "astronomer", "geographer", "scholar at the House of Wisdom"], certainty: 1.0, cites: [{source: S1, locator: "Biography"}, {source: S2, locator: "opening; paragraph 2"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["algebra", "arithmetic", "astronomy", "geography"], certainty: 1.0, cites: [{source: S1, locator: "Summary; Biography"}, {source: S2, locator: "Top Questions; paragraphs 2–4"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Al-Kitāb al-mukhtaṣar fī ḥisāb al-jabr waʾl-muqābala: systematic, demonstrative rules for solving linear and quadratic equations", year: "after 813", kind: work, lasting: "the word 'algebra'; Latin translation in the 12th century; 'the first book to be written on algebra' (S1)", certainty: 1.0, cites: [{source: S1, locator: "Biography (algebra paragraphs)"}, {source: S2, locator: "paragraph 2"}, {source: S3, locator: "Author's Preface, pp. 1–4"}], how_known: "Three sources; dated only by the dedication to al-Ma'mun (caliph from 813)."}

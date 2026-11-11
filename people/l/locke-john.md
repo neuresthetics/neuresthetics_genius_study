@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch G)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch G, order P32: F 5, rank 46). Basics from SEP (Uzgalis) and Britannica (Rogers). Worldview from his Essay Concerning Human Understanding, Book IV, read in Gutenberg #10616 (web copy, 0.7 cap). Not a scientist under P30 (no lasting theory or result about natural systems listed). primary_system CHRIST 0.7; A 0 at 0.7 (alt 1); B 3 at 0.7 (alt 2) from his own statement on miracles and the course of nature (P16); D 2 at 0.7; C, E UNKNOWN; mid_basin true at 0.7. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #46). Needs: A single source; B single source (both @0.7 written_profession; dark hollow). Verified Essay IV.x.6 / IV.xvi.13 / IV.xviii.10 against Fraser Clarendon 1894 scholarly edition vol. 2 (S5: pp. 309, 382, 425). Added A Discourse of Miracles (S6; Works 1823 via Hanover) as independent primary for B and CHRIST. Reasonableness of Christianity Messiah profession (S7; archive.org OCR) for CHRIST. P47 source_quality on S1–S7. P48 support: A/B/D corroborated (A S3+S5; B S3+S5+S6; D S3+S5). Values/certs unchanged (A 0, B 3, D 2 @0.7; named alts). Statements verified_against → scholarly edition. Chart-moving YES: dark hollow → dark filled. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["philosopher", "Oxford academic", "physician and medical researcher", "government official"], certainty: 0.7, cites: [{source: S1, locator: "opening; §1.2"}], how_known: "SEP."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["epistemology", "political philosophy", "philosophy of religion", "education"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "SEP and Britannica."}
   lasting_original_contributions:
     - {value: "An Essay Concerning Human Understanding: empiricist account of the origin and limits of knowledge", year: 1689, kind: work, lasting: "'one of the first great defenses of modern empiricism' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP gives the year; Britannica's lead names his empiricism (S2)."}

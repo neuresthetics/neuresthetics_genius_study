@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 9
+  schema_version: "1.4"
+  record_version: 10
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Beyler, first page), MacTutor and the Nobel biography. Worldview from his own Guardini Prize lecture (Munich 1973), read in the English translation 'Scientific Truth and Religious Truth', CrossCurrents 24:4 (1975), 463–473, as a scan of the JSTOR page images. primary_system PLATO at 0.7 (CHRIST named). A 2 (0.7), B 4 (0.7), D 2 (0.7); C, E BELOW_THRESHOLD; mid_basin TODO (A = 2). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Self-described relation lowered from 1.0 to 0.7 under the CODING_GUIDE §7 unofficial-web-copy cap (S4 read from a user upload of the JSTOR PDF, not JSTOR itself)."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "record_version corrected to 3 (the 1f3c4bf fix did not raise it). Decision P9: the §7 cap (0.7) on fields resting on the JSTOR-PDF copy is kept, since its provenance cannot be confirmed from the copy; reading the article on JSTOR would lift it. Notes only; no score changed. Schema 1.1 → 1.2."}
@@ -53,6 +54,7 @@ basics:
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 3–6"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: physics
   fields: {value: ["quantum mechanics", "nuclear physics", "theoretical physics"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Biography"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Matrix mechanics, the first form of quantum mechanics (with Born and Jordan)", year: "1925", kind: theory, lasting: "foundation of quantum mechanics; Nobel Prize for 1932", certainty: 1.0, cites: [{source: S1, locator: "'Founding of quantum mechanics'"}, {source: S2, locator: "1925 paragraph"}], how_known: "Two sources."}

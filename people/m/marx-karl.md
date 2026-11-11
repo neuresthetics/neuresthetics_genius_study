@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch H)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to economics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch H, order P32: F 5, rank 48). Basics from Britannica (McLellan) and SEP (Wolff and Leopold). Worldview from the Introduction to A Contribution to the Critique of Hegel's Philosophy of Right (1844), read in the marxists.org English web copy (0.7 cap). Not a scientist under P30. primary_system ATHE 0.7; A 4 at 0.7 (alt BELOW_THRESHOLD); B UNKNOWN (no statement on the order of nature read, P16); C, D, E UNKNOWN; mid_basin false at 0.7 (A ≥ 3 branch). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Batch H audit (cae9cb2, run 1: weaken #6): S1 author corrected to David T. McLellan, the byline on the live page when re-checked. No value changes."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #48). Needs: A single source; B UNKNOWN. Verified Critique HPR Introduction religion quotes against MECW vol. 3 scholarly edition (S5: pp. 175–176). Added Economic and Philosophic Manuscripts Estranged Labour (S5 p. 276: 'man is a part of nature') and Capital vol. 1 ch. 7 Fowkes Penguin (S6 p. 290: everlasting nature-imposed condition) for B. P47 source_quality on S1–S6. P48: A support single→corroborated (S3+S5); B newly scored 3 @ 0.5 written_profession support corroborated (S5+S6; P16/P41, alt 4). Dated Das Kapital vol. 1 to 1867 from the 25 July 1867 preface (S6); major_work_period / working_years 1844–1867. Statements verified_against → scholarly edition. Chart-moving YES: unplotted → faded filled (A 4 @ 0.7 corr; B 3 @ 0.5 corr). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["philosopher", "economist", "journalist", "revolutionary"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early years'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: economics
   fields: {value: ["political philosophy", "economics", "theory of history"], certainty: 0.7, cites: [{source: S2, locator: "contents (§§1–3)"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Critique of Hegel's Philosophy of Right: Introduction (religion as 'the opium of the people')", year: 1844, kind: work, lasting: "'oft-quoted' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Early years'"}, {source: S3, locator: "header"}, {source: S5, locator: "pp. 175–176"}], how_known: "Britannica; publication date from marxists.org header; wording checked in MECW 3."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, fourth batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to chemistry. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #188/228, F 3, rank 200): corroborate B. New S7 — Talk at Memorial Services for Elizabeth Swingle (27 Sep 1943; OSU Day-by-Day / Speeches 1943s.4): 'laws of nature… cannot be broken, but must pursue their inexorable course' (in-span). B_cause support single → corroborated (S3+S7); value/certainty stay 4 @0.7. A already corroborated (S3+S4); support labels written (P48). P47 source_quality on S1–S7. first_evidence_of_lio_type_views → 1943 Swingle (was 1961 speech). Chart: dark hollow → dark filled when figures next refresh. primary SECHUM unchanged (P20/P31 post-span humanism). No fallacy_catalog; figures not refreshed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (fourth batch, RUNBOOK §1 order). Basics from Britannica (Paradowski, first page) and the Nobel biography. Worldview from his own speech 'Humanism and Peace' (American Humanist Association, 17 March 1961) and his letter of 23 January 1963 to Mrs. Eubert J. Daniel, both in the transcriptions of Oregon State University's Pauling Papers. No interview used. primary_system SECHUM at 0.7 (stub; ATHE named, stub). A 4, B 4, C 4, D 4, E 4, all at 0.7; mid_basin false (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P10 (lens audit batch 3, #25): mid_basin how_known reworded; the A ≥ 3 branch reads A only, so certainty is A's (0.7). Value and certainty unchanged. Not reviewed."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["chemist", "university professor", "peace activist"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "paragraphs 4–5"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: chemistry
   fields: {value: ["structural chemistry", "quantum chemistry", "molecular biology"], certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures'"}, {source: S2, locator: "paragraph 6"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Nature of the chemical bond: valence-bond theory with resonance and hybrid bonds; electronegativity scale", year: "1931–1939", kind: theory, lasting: "Nobel Prize in Chemistry 1954", certainty: 1.0, cites: [{source: S1, locator: "'Elucidation of molecular structures', paragraphs 1–2"}, {source: S2, locator: "paragraphs 3, 6"}, {source: S6, locator: "title and date"}], how_known: "Two sources for the work; the years run from his 1931 paper 'The Nature of the Chemical Bond' (S6) to the 1939 book of the same name (S1). Was dated '1930s' until the batch 4 lens audit."}

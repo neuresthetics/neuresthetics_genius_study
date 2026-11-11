@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 6
+  schema_version: "1.4"
+  record_version: 7
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to chemistry. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Donovan, first page), the Science History Institute biography and Grimaux's 1888 biography (Internet Archive scan of the University of Toronto copy). Worldview from his Traité élémentaire de chimie (1789, vol. 1, pp. 140–141, checked on the scan), one letter to Edward King (1788, quoted by Grimaux, p. 53) and his 1791 manuscript on Talleyrand's education plan (printed by Guillaume, 1908, pp. 363–364). primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #64 (both runs): the King letter's date is Grimaux p. 53 n. 1, not n. 2; n. 2 (lay patron of the chapel of his château of Fréchines, chaplain named by deed of 7 Aug 1781 and paid 290 livres a year) added as a nominal affiliation and in the CHRIST candidate, cited to p. 53 n. 2. #51: single-letter rule cited as CODING_GUIDE §3 (secondary quotation §7). #61: first_lasting_contribution_year 1774 → 1772 (0.5): 1774 is Priestley's visit; his own combustion experiments date from 1772 (sealed note of 1 Nov 1772, Grimaux p. 103 and n. 1), with the Easter 1775 memoir (p. 108) as the alternative; age 31 → 29; era bucket unchanged. #65: trailing cut of the 1791 quotation marked [...]. No worldview score changed. Not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: [chemist, "tax farmer (Ferme générale)", "public administrator", "gunpowder administrator"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'Early Career'"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: chemistry
   fields: {value: [chemistry, "physiology of respiration"], certainty: 1.0, cites: [{source: S1, locator: "opening; Quick Facts"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Oxygen theory of combustion and respiration, overturning phlogiston", year: "1770s–1780s", kind: theory, lasting: "foundation of modern chemistry", certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "'The Oxygen Revolution'"}], how_known: "Two sources."}

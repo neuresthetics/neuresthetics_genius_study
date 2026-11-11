@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #198/228, F 3, rank 211): firm A if a clear reading ≥0.5; corroborate B; leave B reconstruction-labeled (RQ-AA8-1); do not force plot. Re-read SEP Kalligas (S1); Wikipedia EN dual bio (S3); IEP Moore (S4); MacKenna MIT Enneads V.2.1 and III.1.10 (S5). A stays BELOW_THRESHOLD: primary V.2.1 'The One is all things and no one of them' + overflow emanation (A 2–4 lead) against SEP/IEP 'beyond being' / not a being / not strict pantheist (A 1 lead); IEP: no creatio ex nihilo; PLATO system file Neoplatonic One toward 2–3. No reading reaches 0.5 over the other (Gandhi/Plotinus pattern). B stays 3 @0.5 scholarly_reconstruction (RQ-AA8-1 leave reconstruction-labeled); support single→corroborated (S1 §2 + S4 + S5 III.1.10 two-kinds causation / exogenous proviso). primary PLATO @0.5 scholarly_reconstruction unchanged. Mid BELOW. Dual bio P50 (SEP + Wikipedia EN; Britannica Cloudflare-blocked). P47 source_quality on all. Not plotted. Fallacy audit none; figures not refreshed."}
     - {date: 2026-10-21, by: "Grok Bot", summary: "RQ-AA8-1 resolved yes by Jason (2026-10-21, P49): B 3 at 0.5 from SEP's reconstruction (basis scholarly_reconstruction), alternative 2. Still not plotted (A BELOW_THRESHOLD)."}
     - {date: 2026-10-20, by: "Grok Bot", summary: "AA8 audit fixes: B reason corrected (SEP §2 does set out a view of nature); B stays UNKNOWN pending RQ-AA8-1; SEP summary dropped as a statement (not a scholarly edition); 'mature age of fifty' cited."}
@@ -54,6 +55,7 @@ basics:
   occupations: {value: ["philosopher", "teacher"], certainty: 0.7, cites: [{source: S1, locator: "1. Life and Writings"}, {source: S3, locator: "lead"}], how_known: "SEP and Wikipedia EN."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy", "metaphysics"], certainty: 0.7, cites: [{source: S1, locator: "text"}, {source: S4, locator: "opening"}], how_known: "SEP and IEP."}
   lasting_original_contributions:
     - {value: "The treatises collected by Porphyry as the Enneads (the One, Intellect, Soul)", year: 254, kind: "body of work", lasting: "'Plotinus is generally regarded as the founder of Late Antique Platonism, sometimes termed Neoplatonism'; 'one of the supreme intellectual achievements of the period that has come to be called Late Antiquity' (S1)", certainty: 0.5, cites: [{source: S1, locator: "1. Life and Writings; opening"}, {source: S3, locator: "lead"}], how_known: "Composed from about 254 to 270 (S1)."}

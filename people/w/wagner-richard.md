@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Leipzig) @0.7 from Wikipedia S6 (baptised at St. Thomas Church). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #125 / F4 rank 126). Goals: more prose essays/letters on nature-order and God; raise B or A if honest; else document. Read: Correspondence of Wagner and Liszt vol. 2 (Hueffer; Gutenberg #4234) letter London 7 June 1855 (Schopenhauerian will-of-life / organ of perception / brain; Buddhism/Nirwana; rejects Catholic Creator who converts suffering into fiction); Letters to August Röckel (Sellar 1897) Letter VI London spring/summer 1855 (Kant/Schopenhauer: subjective character of time, space, causality as forms of perception; Will as Ding an sich; negation of Will) and Letter VII Zurich 23 Aug 1856 (renunciation / world's nothingness — A/renunciation lead, not B); On State and Religion (Ellis Prose Works vol. 4; Wahn/King — no clearer A/B locus); Wikipedia EN (P50 dual bio). P47 source_quality on S1–S6. Ruling W2: primary_system stays BELOW_THRESHOLD (CHRIST/BUDDH/IDEAL leads; Liszt letter strengthens BUDDH/IDEAL, does not fit a listed code). A stays BELOW_THRESHOLD (mixed Creator-reject vs divine Christ unchanged; Liszt/Röckel do not settle 2–3 vs 1). B 3 @0.5 single → 3 @0.7 corroborated, alt 4 (S2 Religion and Art + S4 Liszt 7 June 1855; S5 Röckel VI agrees; Schopenhauer/Kant named-alt-4 → 0.7 pattern; P48). mid_basin stays BELOW_THRESHOLD (A blocks). first_evidence_of_lio_type_views 1880 → 1855. Chart-moving NO (still unplotted: A BELOW). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note tidied (no score change): inner quotation marks in the ATHE candidate reason ('the ever louder \"Atheism\" of our day'; the Jewish \"Creator of heaven and earth\") now match the source."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["composer", "dramatist and librettist of his own works", "conductor (Dresden court opera 1843–1849)", "writer of prose treatises"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life'"}], how_known: "Britannica: 'dramatic composer and theorist'."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["music", "opera and music drama", "music theory and aesthetics"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Flying Dutchman: an opera that 'integrated the music with the dramatic content' in an innovative way", year: 1843, kind: work, lasting: "among the major works whose 'operas and music had a revolutionary influence on the course of Western music' (S1, opening)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life'"}], how_known: "Britannica. Dated by first performance (2 January 1843)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / family_religion / baptism TODO→Lutheran (Württemberg Protestant) @0.7 (S9+S1; Christened; Tübinger Stift; lifelong Lutheran). Catechism UNKNOWN. Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 98). Basics from Britannica (T. Malcolm Knox, signed; body through 'Early life', read live) and SEP 'Hegel' (Paul Redding, revision of 19 September 2025). Worldview from the Encyclopaedia (3rd ed. 1830) in Wallace's translations (Philosophy of Mind §§564–565, §573 Remark; Logic §16 Remark), Project Gutenberg web copies; the Lectures on the History of Philosophy (Michelet's compiled edition, Haldane trans.) as context. Not a scientist (P30). primary_system IDEAL (0.5, alt PANENT, CHRIST); A 3 (0.5, alt 2); B BELOW_THRESHOLD (alt 3); D 3 (0.5, alt 2); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit fixes (gs_0b3023d_Q run 1: 43 hold, 4 weaken, 1 fail). D quote now 'a cognition of the necessity' (H8); SEP locators §3 and §3.1.2 for the Science of Logic (H9). Notes: A gains a BELOW_THRESHOLD alternative for SEP's §2.3 non-metaphysical reading; the Michelet miracle passage cites the P42 addendum (reported speech); 'Göschel' flagged as the coder's identification of Wallace's 'C. F. G—l'. Jason's ruling (2026-10-18, RQ Q1): B BELOW_THRESHOLD → 2 at 0.5, alternative 3, from Encyclopaedia (1830) §248 with its Remark and §250, read in zeno.org's web copy of Werke vol. 9 (new S7, cap 0.7). Now plotted, faded, at A3/B2; mid_basin stays BELOW_THRESHOLD."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["philosopher", "university professor", "gymnasium headmaster", "newspaper editor"], certainty: 0.7, cites: [{source: S2, locator: "§1"}], how_known: "SEP."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["metaphysics", "logic", "philosophy of history", "political philosophy", "philosophy of religion"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§§2–3"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Phenomenology of Spirit", year: 1807, kind: work, lasting: "his 'first major work' (S2)", certainty: 0.7, cites: [{source: S2, locator: "§1"}, {source: S4, locator: "Bibliographical Notice"}], how_known: "SEP and Wallace agree on 1807."}

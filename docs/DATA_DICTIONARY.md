@@ -150,7 +150,7 @@ Front-matter sections, in file order:
 | `record` | version, review status, who collected it, change log | — |
 | `identity` | id, names, copy of the roster row (checked) | A |
 | `basics` | birth/death, first lasting contribution year, era, regions, sex as recorded, languages, occupations | A |
-| `contribution` | lasting original contributions, impact evidence, works, honours, definition fit | A |
+| `contribution` | primary domain (controlled craft label), lasting original contributions, impact evidence, works, honours, definition fit | A |
 | `childhood` | family religion and practice, household, schooling, early mathematics and geometric reasoning, early science, reading, mentors | A (read by B) |
 | `worldview` | adult working worldview: affiliations, own words, system codes, LIO axes, mid-basin, verbatim statements | A |
 | `heritage` | ethnic and religious heritage by birth: context only | context |
@@ -179,7 +179,7 @@ Bookkeeping for this file: version, review state, who collected it, change histo
 |---|---|---|---|
 | `record` | object | yes |  |
 | `record.record_type` | fixed: `person` | yes | Fixed: tells the validator which schema applies. |
-| `record.schema_version` | one of: `1.2`, `1.3` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.2 files stay valid; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 file. |
+| `record.schema_version` | one of: `1.2`, `1.3`, `1.4` | yes | Version of the schema this file was written against. Bump in the schema and in every file together. 1.1 (2026-10-01): descriptions updated for decisions P1-P5 and S3-S4; no field or enum changes. 1.2 (2026-10-02): decision P8 adds basis recorded_interview (ceiling 0.7) and statement kind 'recorded interview'. 1.3 (2026-10-02, decisions P18, P21, P24 and P28 from the stage 3 lens audit): statement kinds 'autobiography', 'unpublished manuscript', 'document in own hand' and 'published letter'; institution kind 'research institute'; schooling stage 'elementary school' and an optional run_by; basis inference_from_work (ceiling 0.5). 1.4 (2026-10-27): contribution.primary_domain, a required Lane A craft label from a fixed allowlist. Not a claim and not an LIO axis. TODO is allowed only on an uncoded template. 1.2 files stay valid against 1.2 rules; the validator rejects 1.3-only values in a 1.2 file and the retired school stages ('religious school', 'dame or charity school') in a 1.3 or 1.4 file. |
 | `record.record_version` | integer | yes | Integer, starts at 1. Add 1 every time the file's content changes in a commit. |
 | `record.review_status` | one of: `stub`, `example — unreviewed`, `draft — unreviewed`, `in review`, `reviewed`, `needs revision` | yes | Where the file is in review. Only a named human reviewer may set 'reviewed', with reviewed_by and reviewed_on (decision P5). Agents set only 'draft — unreviewed' or 'example — unreviewed' ('stub' for generated stubs). 'example — unreviewed' marks the worked examples. |
 | `record.collected_by` | string | yes | who ran the collection (person or agent) |
@@ -238,11 +238,12 @@ Dates, places, era and region: the descriptive frame for era- and region-matched
 
 #### `contribution`
 
-What the person did that earns a place on the roster (Lane A definition: lasting original impact).
+What the person did that earns a place on the roster (Lane A definition: lasting original impact). primary_domain is the controlled craft label; fields stays in the sources' own words.
 
 | field | type / allowed values | required | meaning |
 |---|---|---|---|
 | `contribution` | object | yes |  |
+| `contribution.primary_domain` | one of: `mathematics`, `physics`, `chemistry`, `biology`, `medicine`, `astronomy`, `philosophy`, `theology`, `literature`, `music`, `visual_arts`, `history`, `politics_statecraft`, `economics`, `psychology`, `computer_science`, `engineering`, `invention`, `linguistics`, `law`, `education`, `anthropology`, `geology`, `geography`, `architecture`, `TODO` | yes | Lane A label for the person's main craft, for later slices. One allowlist value (docs/CODING_GUIDE.md §8). Not a claim: no certainty and no cites. Not an LIO axis, and not a copy of identity.roster.field or field_bucket. TODO is only for an uncoded template; validate_people.py rejects TODO on a person file. |
 | `contribution.fields` | claim; value list | yes | Fields of work, in the sources' terms. |
 | `contribution.lasting_original_contributions` | list of claims (claim; value string; extra keys: `year`, `kind`, `lasting`) | yes | Each original contribution that is still used or built on, with year, kind, and what rests on it now. |
 | `contribution.evidence_of_impact` | list of claims (claim; value string; extra keys: `kind`) | yes | Evidence that the impact is lasting: named laws or units, textbook canon, assessments by later major figures, honours. |

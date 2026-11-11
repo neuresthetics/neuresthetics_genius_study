@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z3; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and archive.org OCR of primary books"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to mathematics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #141): primary-checked Science and the Modern World (1925 Macmillan IA OCR), Religion in the Making (1926 Macmillan IA OCR), and Process and Reality (1929 Macmillan IA OCR). Verified SEP secondary quotes against primaries; added own-voice RITM solitariness / shelter-theology, SMW Principle of Concretion / religion-vision, and PR poet-of-the-world / antitheses / fellow-sufferer (all theist-phase, 1925–1929). Agnostic-phase own-voice hunt: none found (papers destroyed per Lowe/Wikipedia; MacTutor 'He himself stated' untraced beyond MacTutor clones; Russell/Lowe remain second-hand). P31 / RQ-Z3-1 stands: lasting roster still UA 1898, Principia 1910, PR 1929 — SMW and RITM stay major_works, not promoted to lasting. primary BELOW_THRESHOLD (AGNOS lead); A BELOW_THRESHOLD; B UNKNOWN (P30 #11); mid UNKNOWN; not plotted. Theist-phase delta unchanged in coder_notes (PANENT 0.5 / A 2 / B 3). P47 source_quality; P50 Wikipedia EN dual bio. No figures/; no fallacy_catalog."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z3 audit fixes (blind audit /workspace/genius_study_audit/gs_0b45e66_Z3/run1/), v8's call on the auditor's advice: Z3-23 (FAIL, RQ-Z3-1): under P31 the agnostic phase covers 2 of 3 listed lasting works, so primary_system PANENT 0.5 -> BELOW_THRESHOLD (lead AGNOS), A 2 -> BELOW_THRESHOLD, B 3 -> UNKNOWN, D and E -> UNKNOWN, mid_basin -> UNKNOWN; process theism (PANENT 0.5, A 2, B 3) moved to changes_over_life with the delta in coder_notes. Z3-21: the agnostic phase's end is marked as the coder's inference. Z3-22: not a scientist under P30 #11. No longer plotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch Z3, order P32: F 3, rank 145). Sources: SEP 'Alfred North Whitehead' (Desmet and Irvine, rev. 2022) with his own words as secondary quotations (primary check pending, §7); MacTutor (O'Connor and Robertson). Anglican upbringing; agnostic from the mid-1890s (MacTutor); process theism in Science and the Modern World (1925), Religion in the Making (1926) and Process and Reality (1929), all inside the span: 'Apart from the intervention of God, there could be nothing new in the world, and no order in the world' (PR 247); each occasion 'conditioned, though not determined' by God's initial aim (PR 108). A scientist (P30: applied mathematics, an alternative theory of gravitation). Span 1898–1929. primary_system PANENT (0.5, alt BELOW_THRESHOLD); A 2 (0.5, alt 1); B 3 (0.5, alt 4); C UNKNOWN; D BELOW_THRESHOLD; E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Plotted (faded) at the next chart refresh. RQ-Z3-1: which phase of the span governs. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["mathematician", "philosopher", "professor (Trinity College Cambridge; University College London; Imperial College; Harvard)"], certainty: 0.7, cites: [{source: S1, locator: "opening; §1"}], how_known: "SEP."}
 
 contribution:
+  primary_domain: mathematics
   fields: {value: ["mathematics", "logic", "philosophy of science", "metaphysics", "philosophy of education"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "A Treatise on Universal Algebra", year: 1898, kind: work, lasting: "led to his election to the Royal Society (S1)", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}

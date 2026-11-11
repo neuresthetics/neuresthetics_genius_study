@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch I)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to theology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch I, order P32: F 5, rank 55). Basics from Britannica (Bokser). Worldview from The Guide for the Perplexed, Part II chs. XXV and XXIX (Friedländer, 2nd ed., Gutenberg #73584; web copy, 0.7 cap). Physician, not a natural scientist under P30. primary_system JUDA 0.7; A 0 at 0.7 (alt 1); B 3 at 0.7 (alt 4): the universe keeps its created properties 'except by way of miracle in some individual instances', miracles not permanent (P27 B 3 anchor, rare past miracles); C, D, E UNKNOWN; mid_basin true at 0.7. Plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #55, F5 rank 55). Needs: A single source; B single source. P47 source_quality on S1–S7. Corroborated A via Friedländer Guide II.25/29 (S2) + Ibn Tibbon Hebrew Moreh Nevukhim II.25/29 (S4 Wikisource) + Mishneh Torah Yesodei haTorah 1 (S5 Mechon-mamre: מצוי ראשון ממציא כל הנמצא; שאינו גוף). A stays 0 @ 0.7 written_profession, support single→corroborated (P48); alt 1 retained. Corroborated B via S2 + S4 Hebrew II.29 (לא ישתנה … אלא בפרטיו על צד המופת; עולם כמנהגו הולך; זהו דעתי). B stays 3 @ 0.7 (P27 rare-miracle anchor; alt 4 retained). Dual-source Wikipedia (S7): death Fustat 12 Dec 1204; birth year 1135/1138 contested. Britannica S1 403 this pass — prior Bokser read retained. Pines unread (IA borrow-restricted). Chart-moving YES on fill cue (dark hollow → dark filled); darkness already ≥0.7. No fallacy_catalog (Jason). Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["philosopher", "jurist", "physician", "communal leader"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Life'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: theology
   fields: {value: ["Jewish law", "philosophy", "medicine"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Commentary on the Mishna, with the creed of Thirteen Articles of Faith", year: 1168, kind: work, lasting: "creed 'became part of the orthodox liturgy' (S1)", certainty: 0.5, cites: [{source: S1, locator: "'Works'; 'Significance'"}], how_known: "Completed at 33 (derived year)."}

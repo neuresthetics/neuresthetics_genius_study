@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 11
+  schema_version: "1.4"
+  record_version: 12
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and scans"
   collected_on: 2026-10-01
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #43). P47 source_quality on S1–S14. P48 support: corroborated written on A–E (already computed). Re-verified Molecules (1873) A/B quotes against Victorian Web Nature transcription (S14). Baptism 1831-07-29 at St Andrew's (now St Andrew's & St George's), Edinburgh (Clerk Maxwell Foundation walking tour S14). Schooling run_by added. A 0 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. E still 3 @0.5 (Theerman paywalled). No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), A_locus, B_cause, C_ledger, D_authority and mid_basin (true) filled from his own letters, lecture and essays and three reference sources; E_scope left TODO. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "mid_basin rechecked under decision P6 (B_cause scored on the account of nature): B_cause and mid_basin unchanged. Note added to mid_basin how_known. Not reviewed."}
@@ -77,6 +78,7 @@ basics:
     how_known: "Chairs at Aberdeen, London and Cambridge and the Cavendish Laboratory from S1 and S2; the estate from S1 (Early life) and S3."
 
 contribution:
+  primary_domain: physics
   fields: {value: [physics, "electromagnetism", "kinetic theory of gases", "colour vision", mathematics], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Later life"}, {source: S2, locator: "Summary"}], how_known: "Two reference summaries agree."}
   lasting_original_contributions:
     - {value: "'On Faraday's Lines of Force': a mathematical treatment of Faraday's lines of force", year: 1855, kind: theory, lasting: "first step to his field equations", certainty: 1.0, cites: [{source: S3, locator: "p. 517"}, {source: S1, locator: "Later life (preface to the Treatise: to convert Faraday's ideas into mathematical form)"}], how_known: "Read 10 Dec 1855 and 11 Feb 1856 (S3); S1 describes the programme."}

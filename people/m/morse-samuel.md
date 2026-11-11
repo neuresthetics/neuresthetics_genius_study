@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch X)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to invention. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #127). P47 source_quality on S1–S6. P48: A_locus support corroborated (S2 in-span letters + S5 WallBuilders 1836 album poem with God/Christ; Rigi diary 1831 nature-God language added as statement). P50: Wikipedia EN dual bio (S6) agrees birth 1791-04-27 Charlestown / death 1872-04-02 New York with Britannica. B stays BELOW_THRESHOLD under Ruling X1: Rankin 1835 reported speech (God created the great forces of nature) is teleology/providence, not a P16 lawful-order or exception claim; no own-voice laws-of-nature statement found in Letters and Journals or Foreign Conspiracy. primary CHRIST @0.7 and A 0 @0.7 held; mid BELOW; not plotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch X (gs_a1ff932_X run 1): (MO2) the telegraph dated by its first public statement, the patent caveat sent on 3 October 1837 (S2 vol. II chs. XXIII–XXIV; P30 #1): first lasting year 1832 -> 1837, span 1832–1838 -> 1837–1838, age 41 -> 46; era unchanged; the 1835 pamphlet now falls just before the span. (MO5) CLTHEI rejected under its use_when (2) (no in-span text expects God to act against or beyond nature's course); CLASS_THEISM listed as rejected. Ruling X1 (v8's call on the auditor's advice): B stays BELOW_THRESHOLD, named reading 1; only an answer claimed against or beyond nature's course bears on B (recorded under P16). CHRIST, A 0, E 1 unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch X, order P32: F 4, rank 128). Basics from Britannica (Carleton Mabee; Britannica Editors). Worldview from his own letters in Samuel F. B. Morse: His Letters and Journals (ed. Edward Lind Morse, 1914; Project Gutenberg) and his pamphlet Foreign Conspiracy (1835; archive.org scan). Not a scientist (P33: inventions). primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (named reading 1, RQ-AU1 analogy; RQ-X1); C, D UNKNOWN; E 1 (0.5, alt BELOW_THRESHOLD); mid_basin BELOW_THRESHOLD. Span 1832–1838 (0.7). Not plotted. Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["painter", "inventor", "teacher of art, University of the City of New York", "first president of the National Academy of Design (1826–1845)"], certainty: 0.7, cites: [{source: S1, locator: "opening; leadership and telegraph paragraphs"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: invention
   fields: {value: ["telegraphy", "painting"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "An electric telegraph (recording electromagnetic telegraph; first US line, Washington–Baltimore, 1844)", year: 1837, kind: invention, lasting: "'Even during Morse's own lifetime, the world was much changed by the telegraph'; his 1837 instrument is preserved by the Smithsonian (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening; telegraph paragraphs; legacy paragraph"}], how_known: "Britannica dates the development 1832–35; dated by the patent caveat of 3 October 1837, its first public statement (P30 #1; S2 vol. II chs. XXIII–XXIV; batch X audit, MO2). An invention, not a theory or result, so not a scientist (P33)."}

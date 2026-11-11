@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #182, F 3, rank 193). Hunt: firm AGNOS/A from Autobiography + Three Essays on Religion with composition timing (Helen Taylor: Nature and Utility of Religion composed 1850–1858, in span; Theism 1868–1870, after span; all published posthumously 1874). New primary: Nature (S5) and Utility of Religion (S6) via UT Austin Classical Utilitarianism transcription of 1874 Longmans text; Helen Taylor Introductory Notice (S7) for dating; Wikipedia EN Mill + Three Essays (S8, S9) dual bio / composition corroboration (P50). primary_system AGNOS 0.5→0.7 written_profession (in-span Nature/Utility + Autobiography corroboration); named alt SECHUM (Religion of Humanity). A stays BELOW_THRESHOLD (P20/P38: suspension, no 'I do not believe in God'; Nature's limited-power design phrase + Theism limited-creator reading are leads only — do not force A up). B stays UNKNOWN (philosopher not scientist P30; Logic Book III unread; do not force B from method-of-science or Nature's moral critique of imitating nature). mid BELOW_THRESHOLD; not plotted. Chart-moving NO. Dual bio P50; P47 source_quality on S1–S9; death day Britannica 8 May vs Wikipedia 7 May → 0.5 contested (P25). No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): span certainty lowered to 0.5 (On Liberty lasting only at 0.5), alternative 1843 alone; the 1858 end of his India House post is now cited to the Autobiography (ch. III, ch. VII) and the 'Company's dissolution' wording is dropped."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA4, order P32: F 3, rank 193). Sources: Britannica, signed by Richard Paul Anschutz (main article; the fetched copy covers the summary and 'Early life and career' only), Britannica students edition (read in full) for publication years, and his Autobiography (1873; Project Gutenberg transcription, chapter 2 read). Lasting work: A System of Logic (1843) and On Liberty (1859); Anschutz: 'remains of lasting interest as a logician and an ethical theorist'; span 1843–1859, age 37 (span 0.5 after the AA4 audit, as On Liberty is lasting only at 0.5). Own words: Autobiography ch. 2, 'one who has not thrown off religious belief, but never had it: I grew up in a negative state with regard to it', with his father's teaching that 'Who made me?' 'cannot be answered'. Published 1873, after the span and describing his upbringing, so P20 caps it at 0.5. primary_system AGNOS 0.5 (written_profession), alt BELOW_THRESHOLD (the passage reports absence of belief, not a settled stance; his posthumous Theism, not read, is a lead the other way). A BELOW_THRESHOLD (no locus stated); philosopher, not a scientist, B UNKNOWN; C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD (Pavlov pattern). Not plotted. Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["philosopher", "economist", "civil servant", "member of Parliament"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "para. 3–4"}, {source: S8, locator: "lead"}], how_known: "Britannica + Wikipedia."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["logic", "ethics", "political philosophy", "political economy"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "A System of Logic (inductive methods)", year: 1843, kind: "work", lasting: "'remains of lasting interest as a logician' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S3, locator: "para. 4"}], how_known: "Anschutz; published 1843 (S3)."}

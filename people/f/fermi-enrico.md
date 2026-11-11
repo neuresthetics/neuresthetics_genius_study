@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, second batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (second batch, RUNBOOK §1 order). Basics, contribution and childhood from Britannica (Badash), MacTutor and the Nobel biography. No writing by Fermi on religion was found; Laura Fermi's Atoms in the Family (p. 52, the usual source for 'agnostic') is lending-only on archive.org and was not read. primary_system BELOW_THRESHOLD (AGNOS candidate, stub). B_cause 4 at 0.5 from his working science (P6); A, C, D, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 2 (finding #32): region_of_work locator now paragraphs 2–5, since Florence is in Nobel paragraph 2. Value and certainty unchanged. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Schema 1.1 → 1.2 (decision P8 adds basis recorded_interview and statement kind 'recorded interview'); no content change."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: [physicist, "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S3, locator: "paragraphs 4–8"}], how_known: "Sources agree."}
 
 contribution:
+  primary_domain: physics
   fields: {value: ["theoretical physics", "nuclear physics", "statistical mechanics", "particle physics"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph"}, {source: S3, locator: "paragraphs 3–8"}], how_known: "Sources agree."}
   lasting_original_contributions:
     - {value: "Fermi(–Dirac) statistics for particles obeying the exclusion principle (fermions)", year: "1926", kind: theory, lasting: "Britannica: 'a contribution of exceptional importance to atomic and nuclear physics'", certainty: 1.0, cites: [{source: S1, locator: "Fermi-Dirac statistics"}, {source: S3, locator: "paragraph 3"}], how_known: "Two sources; developed independently by Dirac (S1)."}

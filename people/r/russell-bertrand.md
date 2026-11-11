@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch D)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: native_name TODO→Bertrand Arthur William Russell @0.7 (matches full_name / SEP). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (grandmother upbringing; denomination not named on file). Chart-moving NO."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: score E_scope 4 (0.7) from What I Believe / Free Man's Worship in S5 plus WINaC Natural-Law (S2/S5) — man part of nature under same laws as stars and atoms; no in-group miracles. P7 world's order. C/D already 4. Chart-moving: no (A/B plotted). No figures/; no fallacy_catalog."}
@@ -51,6 +52,7 @@ basics:
   occupations: {value: ["philosopher", "logician", "writer"], certainty: 0.7, cites: [{source: S1, locator: "opening; §1 ('Author' on his passport)"}], how_known: "SEP."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["mathematical logic", "philosophy of mathematics", "analytic philosophy"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "SEP."}
   lasting_original_contributions:
     - {value: "Russell's paradox and the logicist programme (The Principles of Mathematics)", year: 1903, kind: discovery, lasting: "prompted 'a large amount of work in logic, set theory, and the philosophy and foundations of mathematics' (S1 §2)", certainty: 0.7, cites: [{source: S1, locator: "§2"}], how_known: "SEP."}

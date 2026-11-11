@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA10; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to medicine. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA10, order P32: F 3, rank 219). Source: Britannica scholars edition (unsigned, read in full; three paragraphs). He 'flourished c. 6th century bce'; birth and death UNKNOWN. Lasting: the Sushruta-samhita, 'the main source of knowledge about surgery in ancient India', an 'influential treatise' with 'groundbreaking operations' (S1); lasting at 0.5 (thin wording, P13 borderline). No year: first lasting year, span, age UNKNOWN; era UNKNOWN under P39 (no dated work; candidate 'before -500' from the floruit). Attribution: S1 credits the treatise to him without qualification, but only one short source was read; the text's own date and authorship are not tested here (P42, Sun Tzu precedent). Worldview UNKNOWN. B UNKNOWN pending attribution, alternative B 3 at 0.5 (Galen precedent: empirical surgery and dissection). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #206, F 3, rank 219). Needs: primary/A/B/mid UNKNOWN; held B alt 3@0.5 Galen if attribution holds (P42 untested). Authorship hunt: Wujastyk 2026 blog summarizing Meulenbeld HIML (S4) — composite multi-layer text; composition may begin last centuries BCE; Uttaratantra later; known to Dṛḍhabala fl. 300–500 CE; Meulenbeld: historical Suśruta as author 'not based on uncontrovertible evidence and may be illusory'; teachings attributed to Kāśirāja Divodāsa; name Suśruta like Hippocrates covers many hands. Wikipedia EN Sushruta (S3) + Samhita date/authorship (via S4/S3): Hoernle 600 BCE rejected; earliest firm name-link Bower Manuscript (6th c. CE). P50 dual bio Britannica (S1) + Wikipedia (S3). P47 source_quality on S1–S5. P42 reaffirmed: Samhitā context only, scores nothing. P49 not stretched (no dual scholarly reconstruction of personal A/B for a recoverable historical Suśruta). primary/A stay UNKNOWN; B UNKNOWN→BELOW_THRESHOLD (Galen/P35 lead kept as named alt only); mid UNKNOWN. Chart still unplotted. No fallacy_catalog; no figures/. Draft, not reviewed."}
 
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["surgeon", "physician"], certainty: 0.5, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "lead"}], how_known: "Traditional attribution (S1, S3); historical person as practicing surgeon not independently documented (S4 Meulenbeld)."}
 
 contribution:
+  primary_domain: medicine
   fields: {value: ["medicine", "surgery"], certainty: 0.7, cites: [{source: S1, locator: "opening; para. 2"}, {source: S3, locator: "lead"}], how_known: "Britannica: shalya tantra; Ayurveda. Wikipedia: plastic/cataract surgery tradition under the name."}
   lasting_original_contributions:
     - {value: "Sushruta-samhita (treatise on surgery and Ayurveda: rhinoplasty, lithotomy, removal of a dead fetus, dissection methods) — attributed", year: UNKNOWN, kind: "work", lasting: "'his influential treatise Sushruta-samhita, the main source of knowledge about surgery in ancient India' (S1); foundational Ayurvedic surgical text in tradition (S3)", certainty: 0.5, cites: [{source: S1, locator: "opening; para. 2"}, {source: S3, locator: "lead; Authorship"}, {source: S4, locator: "Summary of more recent scholarship; Authorship"}], how_known: "Undated single-author work rejected: Meulenbeld/Wujastyk multi-layer composite (S4); 0.5 lasting (P13 borderline) and attribution untested for the historical person (P42). Text is context only for worldview."}

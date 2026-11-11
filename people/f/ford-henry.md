@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Q; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to engineering. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch Q, order P32: F 4, rank 100). Basics from Britannica (Carol W. Gelderman, signed; body through the 1914 wage, read live). Worldview from two interviews: William L. Stidger's syndicated interview (Universal Service, printed 4 February 1923; OCR page image text on historyworm.com) and the San Francisco Examiner interview of 26 August 1928 as quoted by The Henry Ford (museum blog). Inventor, not a scientist (P33). primary_system BELOW_THRESHOLD (candidates CHRIST, THEOS); A 1 (0.5, alt 0); B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Batch Q audit notes (gs_0b3023d_Q run 1). Masthead reasoning added: most likely Hearst's Washington Herald (Universal Service was Hearst's wire; 'Washington Radio Herald' items on the page; the Times-Herald dates from 1939); the running head's '1928' is a slip (4 February 1923 was a Sunday). Creation entry's 'reincarnation belief' aligned to the candidate code THEOS. Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #99 / F4 rank 100). Needs: corroborate/lift A; hunt P16 B; inventor not scientist (P33). Dual bio Wikipedia EN (S5, P50). P47 source_quality on S1–S8. Primary checks: Stidger 1923 book Henry Ford: The Man and His Motives (IA OCR, S6) Ch. III 'Ford's Religious Views' — same 'I believe in God and in Jesus Christ' and Gardener design-inference (names Burroughs; newspaper OCR said Muir); Pew Preaches (1930, S7) reprints/elaborates same interviewer chain ('I belong to the Church'); Gutenberg My Life and Work (S8) — 'Nature vetoes' is social-economic natural law vs Soviet decree, not P16 physical order; 'God's great open spaces' is advertising rhetoric. A 1 lifted 0.5→0.7 (recorded_interview ceiling P8) support corroborated (distinct ids S2/S6/S7; same interviewer Stidger noted; contested alt 0 also caps ≤0.7). B stays UNKNOWN (no P16 nature-order/exception own-voice; Gardener off-point). primary BELOW (CHRIST vs THEOS/reincarnation); mid UNKNOWN. Chart-moving NO. Episcopal family/church from S5/S6/S7. Dearborn Independent noted in controversies (not axis-coded). Draft deepen report in drafts/ (untracked). No fallacy_catalog. No figures refresh."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["industrialist", "engineer", "automobile manufacturer"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Early life'"}, {source: S5, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  primary_domain: engineering
   fields: {value: ["automotive engineering", "mass production"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "lead / Model T"}], how_known: "Britannica and Wikipedia."}
   lasting_original_contributions:
     - {value: "Model T automobile, 'the ordinary man's utility'", year: 1908, kind: invention, lasting: "'the chief instrument of one of the greatest and most rapid changes in the lives of the common people in history' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Early life'"}, {source: S5, locator: "Model T"}], how_known: "Britannica and Wikipedia."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch E)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch E, order P32: F 5, rank 26). Basics from Britannica (Urbach et al.). Worldview from The Advancement of Learning (1605), Morley's 1893 Cassell edition as transcribed by Project Gutenberg (#5500), and 'Of Atheism' (Essays, Gutenberg #575). Not a scientist (P30, P33). CHRIST 0.7; A 0 (0.7); B 3 (0.7); D 2 (0.7); mid_basin true (0.7). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2332880, run 1): Gutenberg statements relabelled verified_against 'secondary quotation' (web copies); certainties already at the 0.7 web-copy cap, so no change and mid_basin true (0.7) stands. II.XXV.(3) confirmed as D_authority evidence only (it was not cited under B_cause)."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #26, next-50 batch). Need was A single-source. Added Confession of Faith (S5; Spedding Works scholarly edition via Wikisource) as second A stream; Advancement quotes checked against Spedding 1884 Works Vol. 1 (S6 scholarly edition; pp. 291–292, 322–323, 367). SEP Peltonen 2025 (S7) for bio/family. P47 source_quality on every source. A_locus support single→corroborated (S6+S5; value 0 @ 0.7 written_profession unchanged; alt 1). B_cause stays 3 @ 0.7 corroborated (S6+S3; alt 4). CHRIST / D / mid_basin unchanged at 0.7 (named alts / P10). Chart-moving YES: A hollow→filled with B already corroborated → filled mid-basin dark. Family_religion filled (Puritan/Protestant household). No fallacy_catalog (Jason 2026-10-23/24). Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["lawyer", "statesman (lord chancellor)", "philosopher", "essayist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["philosophy of science (method)", "essays", "political and legal thought"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Advancement of Learning: survey and classification of knowledge", year: 1605, kind: work, lasting: "expanded as De Augmentis (1623); d'Alembert's classification drew on it (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Career in the service of James I'"}], how_known: "Britannica."}

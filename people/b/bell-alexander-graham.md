@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to invention. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: religious_heritage_by_birth / baptism / catechism / family_religion TODO→UNKNOWN (no household denomination; Baptist minister was a family friend, not family religion). Chart-moving NO."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #7). P47 source_quality on every source. Primary upgrade: 17 January 1876 letter found as LOC magbell.03500103 (S4 retargeted); page images (service/mss/magbell/035/03500103/0001–0005.jpg) read and match the Brantford Expositor transcription (Maker; Immortality/Salvation suspension; practical religion). New S6 Discovery and Invention (Nat. Geographic June 1914 / LOC magbell.37500401 pamphlet) checked for B: observation method and specific physical regularities (sound in water), no statement of lawful order or exception → B stays UNKNOWN (P16, P33 inventor). A stays BELOW_THRESHOLD (P38/P20): Maker named, no place/deny of personal intervening God; 1901 Unitarian Agnostic + suspension. C/D statements verified_against primary facsimile. worldview_during_major_work certainty 0.5 → 0.7 after primary check. Chart: still unplotted (A BELOW, B UNKNOWN). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from Britannica (Hochfelder) and the Dictionary of Canadian Biography (Surtees); worldview from his letter to Mabel Bell of 12 March 1901 (Library of Congress TEI transcription) and his letter to Mabel Hubbard of 17 January 1876 (as transcribed by the Bell Homestead curator in the Brantford Expositor; secondary quotation). Not a scientist under P33 (inventions are not theories or results about natural systems). primary_system AGNOS 0.7 (consistent_private_letters; alternative CHRIST, nominal Unitarian); A, C, D BELOW_THRESHOLD; B, E UNKNOWN; mid_basin UNKNOWN. Draft, not reviewed."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["teacher of the deaf", "inventor", "scientist"], certainty: 1.0, cites: [{source: S2, locator: "header ('teacher of the deaf, inventor, and scientist')"}, {source: S1, locator: "opening"}], how_known: "Two sources; 'scientist' is DCB's word, not the P30 test (see coder_notes)."}
 
 contribution:
+  primary_domain: invention
   fields: {value: ["telecommunications", "acoustics and speech", "education of the deaf", "aeronautics"], certainty: 1.0, cites: [{source: S1, locator: "opening; later sections"}, {source: S2, locator: "throughout"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "The telephone (US patent 174,465, 'Improvements in Telegraphy')", year: "1876", kind: invention, lasting: "the telephone; 'the single most lucrative patent ever awarded' (S2)", certainty: 1.0, cites: [{source: S1, locator: "telephone section"}, {source: S2, locator: "telephone paragraphs"}], how_known: "Two sources; application filed 14 February 1876."}

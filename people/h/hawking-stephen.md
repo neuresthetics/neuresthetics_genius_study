@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch L)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-15
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Record created (stage 3 batch L, order P32: F 5, rank 74). Basics from Britannica (Britannica Editors, unsigned; Top Questions not cited). Worldview from Brief Answers to the Big Questions (2018, posthumous), quoted by Euronews and Big Think (secondary quotations; book not read). Scientist under P30. primary_system ATHE (0.5, alt AGNOS); A 4 (0.5, alt BELOW_THRESHOLD); B 4 (0.5, alt 3); mid_basin BELOW_THRESHOLD. Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-15, by: "Grok Bot", summary: "Audit fixes (fallacy_catalog audit of 2742382, run 1). No change to scores. Noted Euronews' report that colleagues and family finished the book; The Grand Design (2010) and the 2014 El Mundo interview listed as unverified leads."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #73, F5 rank 74). Needs: A faded; B faded. Verified Brief Answers to the Big Questions (Bantam 2018) ch. 'Is there a God?' against Internet Archive OCR of the published book (S5; archive scan OCR); wording matches Marginalian long extracts (S9). Added Grand Design 2010 Times/Guardian extract (S7) and 2014 El Mundo interview via NBC (S6). Wikipedia EN dual bio (S8) (P50). P47 source_quality on S1–S9. P20: adult-life evidence counts for the working span unless a sourced change_of_view; Hawking's own clarifications treat 1988 'mind of God' as impersonal laws (Brief Answers; El Mundo), not a theism→atheism conversion — no changes_over_life split. Dropped A alt BELOW_THRESHOLD and B alt 3. primary_system ATHE 0.5→0.7 (AGNOS named residual); A 4 0.5→0.7 support corroborated (S5+S6+S7); B 4 0.5→0.7 support corroborated (S5+S7); C UNKNOWN→4 @0.5 (afterlife hedged 'probably'); mid_basin BELOW_THRESHOLD→false @0.7 (A≥3 branch, P10). Chart: faded hollow → dark filled. Chart-moving YES. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -44,6 +45,7 @@ basics:
   languages_of_work: {value: [English], certainty: 0.7, cites: [{source: S1, locator: "publications"}], how_known: "Britannica."}
   occupations: {value: ["theoretical physicist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
 contribution:
+  primary_domain: physics
   fields: {value: ["general relativity", "black hole physics", "cosmology"], certainty: 0.7, cites: [{source: S1, locator: "work paragraph"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Mini (primordial) black holes", year: 1971, kind: theory, lasting: "(S1)", certainty: 0.7, cites: [{source: S1, locator: "work paragraph"}], how_known: "Britannica."}

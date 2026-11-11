@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA8; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to economics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA8, order P32: F 3, rank 209). Sources: Britannica (scholars edition, unsigned, read in full) and NobelPrize.org facts page (read in full). Lasting work: the textbook Economics (1948), 'considered a classic' (S1) and 'the world's best selling economic textbook' (S2). Span 1948, age 33. Foundations of Economic Analysis (1947), the multiplier–accelerator model and revealed preference are 'of particular influence' (S1) but undated in the sources read or not called lasting; recorded as major works. Economist, not a scientist (Friedman precedent). Worldview: no own words read; born into a Jewish family that emigrated from Poland (S2). primary_system UNKNOWN; A UNKNOWN; B UNKNOWN; mid_basin UNKNOWN. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #196/228, F3 rank 209). Goals: any first-person religion/nature statements; keep silence if none; do not force plot. Dual bio Wikipedia EN (S4, P50). Opened My Life Philosophy / policy credos (S5, USP reprint of Szenberg Eminent Economists 1992 / American Economist 1983): ethics of underdog / 'easy faith' = liberal Weltanschauung; Machian HOW as only WHY = scientific methodology (thermodynamics), not a theistic creed or P16 nature-order profession. Atlantic 2009 interview (S6): 'cafeteria Keynesian' explained via cafeteria-Catholic metaphor — economics doctrine pick-and-choose, not personal Catholicism. Chicago School conversation (Hammond 1997/2010, S7): Knight 'flaming atheist' is about Knight; 'I can't say my old religion, although I was trained by the Jesuits' = Chicago-economics metaphor. Infinite MIT oral history: Saint Peter / heaven joke about making economics mathematical — joke only. Own words on family as 'upwardly mobile Jewish immigrants from Poland' (S4 quoting him; S2). No adult ATHE/AGNOS/JUDA/CHRIST self-description found. primary/A stay UNKNOWN (researched silence; metaphors and heritage rejected as codes, P19). B UNKNOWN (not a scientist, P30/Friedman; economics ≠ natural science for B unless clear P16 line — none). mid UNKNOWN. Not plotted. Chart-moving NO. P47 on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
 
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["economist", "professor", "columnist"], certainty: 0.7, cites: [{source: S1, locator: "para. 2, 4"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: economics
   fields: {value: ["economics"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Economics: An Introductory Analysis (textbook)", year: 1948, kind: "work", lasting: "'considered a classic' (S1); 'has become the world's best selling economic textbook' (S2)", certainty: 0.7, cites: [{source: S1, locator: "para. 4"}, {source: S2, locator: "Life"}], how_known: "Britannica; Nobel."}

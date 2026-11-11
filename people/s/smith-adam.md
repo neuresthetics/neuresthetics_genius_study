@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 4
+  schema_version: "1.4"
+  record_version: 5
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch C)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-08
-  last_updated: '2026-10-25'
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to economics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus certainty 0.5→0.7. Re-read TMS 1790 (S3) Conductor / immense-machine / immediate administrator lines as a clear written profession of a transcendent governor (Boyle pattern); SEP S2 caution ('without ever quite saying that there is a God') kept as named contested-reading context but no longer holds the score below the §3 0.7 contested ceiling. Alt 1 retained. Support already corroborated. Chart-moving YES (faded→dark). No figures/; no fallacy_catalog."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Record created (stage 3 batch C, order P32). Basics from Britannica (Heilbroner) and SEP (Fleischacker); worldview from The Theory of Moral Sentiments, 6th edition (1790), read on the archive.org scan of the 1790 printing (vol. 1 pp. 412–415; vol. 2 pp. 113–118). Not a scientist (P30). primary_system BELOW_THRESHOLD (candidates CHRIST, STOIC, CLASS_THEISM; DEISM rejected under P27); A_locus 1 (0.5); B_cause 4 (0.5); E_scope 4 (0.5); C, D BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Draft, not reviewed."}
     - {date: 2026-10-08, by: "Grok Bot", summary: "Lens audit of batch C (dd91009), run 1: #6 A_locus 1 → 0 at 0.5, alternative 1 (no limiting feature named; Boyle pattern). #4 B_cause 4 → 3 at 0.5, alternative 4, re-anchored on vol. 1 pp. 412–415 (laws of motion; general rules of reward; 'extraordinary favour' as the stated exception), with vol. 2 pp. 114–115 as context; two vol. 1 statements added. mid_basin unchanged (BELOW_THRESHOLD)."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["moral philosopher", "economist", "university professor"], certainty: 1.0, cites: [{source: S1, locator: "opening; Glasgow section"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: economics
   fields: {value: ["moral philosophy", "political economy"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "The Theory of Moral Sentiments: moral judgement explained through sympathy and the impartial spectator", year: "1759", kind: theory, lasting: "a standard text of moral philosophy, now read alongside WN (S2)", certainty: 1.0, cites: [{source: S1, locator: "Glasgow section"}, {source: S2, locator: "opening; §2"}], how_known: "Two sources."}

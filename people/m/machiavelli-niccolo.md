@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch V)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to politics_statecraft. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #121 / F4 rank 122). Goals: further in-span letters/discourses that settle A or B; else strengthen documentation and keep honest BELOW. Opened Discorsi I.11 (Numa nymph simulation; Savonarola 'Io non voglio giudicare s'egli era vero o no'); Discorsi II.2 ('la nostra religione' / 'abbi renduto il mondo debole' — political critique of Christian education, not a personal creed; also allows patria defence under virtù reading). Coder-read Esortazione / Discorso morale on Wikisource (S7): 'ogni cosa è creata per onore e per bene dell’uomo'; confraternity address 'per ubbidire a' miei maggiori'; undated — ruling V2 stands, lead only. Guicciardini letter Carpi 17 May 1521 (S8, after span): 'io non dico mai quello che io credo, né credo mai quel che io dico' — sincerity caveat, not scored. Wikipedia EN (S6, P50). primary / A / B / mid stay BELOW_THRESHOLD. Chart-moving NO. P47 source_quality on S1–S8. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit note (gs_2584730_W run 1): the Esortazione alla penitenza details and quotation marked as coming from the batch V audit's reading, not the coder's. No value changes."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch V (gs_982cb8e_V run 1): MC4, Prince ch. 26 locator p. 99 -> p. 100 (scan p. 110); MC8, the three Discorsi statements relabelled from scholarly edition to the web-copy label (primary transcription, unscanned); ruling V2 (v8's call on the auditor's advice): primary_system stays BELOW_THRESHOLD with the Esortazione alla penitenza as a lead; note, SEP dates added to S2. No scored value changes."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["secretary (head of the second chancery) of the Florentine republic", "diplomat", "political philosopher and historian", "playwright and poet"], certainty: 0.7, cites: [{source: S1, locator: "'Early life and political career'; 'Writings'"}, {source: S2, locator: "§1"}], how_known: "Britannica and SEP."}
 
 contribution:
+  primary_domain: politics_statecraft
   fields: {value: ["political philosophy", "history"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "The Prince (Il Principe): worldly success in politics apart from conventional morality", year: 1513, kind: work, lasting: "'arguably the most famous book on politics ever written', giving the name Machiavellian (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Writings'"}, {source: S2, locator: "§1; §2"}], how_known: "Britannica and SEP. Not a theory of natural systems, so not a scientist (P30)."}

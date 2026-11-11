@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 1
+  schema_version: "1.4"
+  record_version: 2
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 109). Basics from Britannica (Maurice Cranston, signed; opening and 'Formative years', read live) and SEP (Christopher Bertram, 'Life'). Worldview from his own published French texts in the Geneva Collection complète (1782), read in Wikisource's page-linked transcription: the Profession de foi du vicaire savoyard (Émile IV, 1762), the Lettre à Christophe de Beaumont (dated 18 November 1762) and the third Lettre écrite de la montagne (1764). primary_system CHRIST (0.5; alternatives DEISM, which P27 blocks, and CLASS_THEISM); A 1 (0.7, alt 0); B 3 (0.7, alt 4; P27 free-will anchor); D 3 (0.5, alt 4); mid_basin true (0.7). Plotted. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: RO6 WEAKEN; rulings S1 and S2, v8's calls on the auditor's advice). Scoring the Vicar's speech now cites P42 and its v8 addendum (ruling S2: a character's words count as the author's view when a text in the author's own voice adopts them, at that text's certainty), with the own-voice texts and the counter-evidence: Émile t. 5, p. 112 ('non comme une regle'); Beaumont t. 6, pp. 36 and 52; Lettres écrites de la montagne II, t. 6, p. 171 ('mes articles fondamentaux') and III, pp. 182–183 with its note. Ruling S1: P27's 'declines to contest it' covers the Vicar's suspension, so CHRIST stays (ruling question closed). The 1764 cap cites P1 (under P20). Rameau dispute dated 1752. No value changes."}
 
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["philosopher", "writer", "political theorist", "composer", "music copyist"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'Formative years'"}, {source: S2, locator: "§1"}], how_known: "Britannica and SEP."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["political philosophy", "moral philosophy", "philosophy of education", "literature", "music"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§1"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Discours sur les sciences et les arts (the First Discourse): people good by nature, corrupted by society", year: 1750, kind: work, lasting: "'its central theme was to inform almost everything else he wrote' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'Formative years'"}, {source: S2, locator: "§1"}], how_known: "Britannica dates it 1750; SEP gives publication 1751 and calls it 'mainly important because Rousseau used it to introduce themes that he developed further in later work'."}

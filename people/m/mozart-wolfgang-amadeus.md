@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch M; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch M, order P32: F 5, rank 82). Basics from Britannica (Sadie, signed; body text only, Q&A boxes not cited). Worldview from letters 69 (1777), 107, 108 and 110 (1778) in Lady Wallace's translation, Gutenberg #5307. primary_system CHRIST (0.7); A 0 (0.7); B BELOW_THRESHOLD (Providence about events in his life, not nature, P16); C 0 (0.5, alt 1); mid_basin BELOW_THRESHOLD. Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch M audit fixes (/workspace/genius_study_audit/gs_159d60d_M/run1/, run 1: 16 hold, 3 weaken): A 0 and CHRIST lowered from 0.7 to 0.5 (letters predate the working years, P20; Franklin precedent). Values and mid_basin unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #81, F5 rank 82). Needs: A single source; A faded; B BELOW_THRESHOLD. New S4: DME / Bauer–Deutsch Nr. 1044 German autograph transcription (Vienna, 4 April 1787) — within-span private letter thanking 'meinem gott' and daily 'meinem Schöpfer' for familiarity with death as key to true blessedness (primary language). S5: DME English of BD 0355 (Augsburg, 23–25 Oct. 1777) corroborates Wallace 'Gott vor Augen' / omnipotence / wrath / mercy wording. S6: DME English BD 0458 (Paris, 3 July 1778) Voltaire 'reward' and God-alone-takes-life Providence. S7 Wikipedia EN dual-bio (P50): baptismal Joannes Chrysostomus…; practicing Catholic; Freemason 14 Dec. 1784 Zur Wohltätigkeit. S8 Morgan Library exhibition English of BD 1044 (Anderson-line). P47 source_quality on S1–S8. Mapped Wallace Gutenberg letter 69 ≈ BD 0355; 107 ≈ BD 0458; 108 ≈ BD 0462; 1787 death letter = BD 1044. Freemasonry join stays in changes_over_life; no documented change of A (still personal Gott/Schöpfer after 1784). Under P31 adult evidence + within-span 1787 → A 0 and CHRIST raised 0.5→0.7; support single→corroborated (S2+S4+S5; P48). B stays BELOW_THRESHOLD (P16): 1778–1787 Providence and 'Nature speaks in me' (1781 marriage letter, context only) are life/sexual nature, not nature's causal order; no Naturegesetze / law-vs-exception statement read. C stays 0 @0.5 (alt 1). mid_basin BELOW_THRESHOLD (B unscored). Chart-moving NO (still unplotted). Anderson print / full Bauer–Deutsch vols unread beyond DME web. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["composer", "pianist", "court Konzertmeister (Salzburg)"], certainty: 0.7, cites: [{source: S1, locator: "opening; 'The Italian tours'"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["music composition"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Piano concertos of 1784", year: 1784, kind: work, lasting: "'he established a new level of piano concerto writing' (S1)", certainty: 0.7, cites: [{source: S1, locator: "'The central Viennese period'"}], how_known: "Britannica."}

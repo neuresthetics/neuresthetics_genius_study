@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA3)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to music. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #177, F 3, rank 188). Needs: A UNKNOWN; B UNKNOWN; letters/own words on God/religion if any. Read: Reinthaler letter 9 Oct 1867 English (S5 Richmond faculty reprint; Wikipedia S4 cites Musgrave 1985 p. 80) — gladly omit 'German' for 'human'/'Menschen' and John 3:16, keep biblical lines as musician; Kalbeck Taufzeugnis St. Michaelis baptism 26 May 1833 (S6); Wikipedia EN dual bio (S4: Lutheran baptism/confirmation; Swafford agnostic/humanist; Dvořák 'believes in nothing'); Suk Mar 1896 Schopenhauer recollection via Beller-McKenna secondary trail (S4/S7) — reported speech after span. Do not code pantheism/religion from Requiem musical subject alone (standing rule). P47 source_quality on S1–S7. P50 dual bio S1+S4. primary_system UNKNOWN→BELOW_THRESHOLD (AGNOS/SECHUM candidates; no own-voice 'I am agnostic' / denial); A UNKNOWN→BELOW_THRESHOLD (Reinthaler is text-selection, not locus; Suk reported speech; P20 AGNOS-candidate no locus); B stays UNKNOWN (not a scientist; no nature-order); mid UNKNOWN→BELOW_THRESHOLD; not plotted. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix (v8's call on the auditor's advice): Bremen 1868 gave all six movements then existing, so RQ-Z8-1 does not apply and the movement-5 reasoning is removed; span 1868 now 0.7; the 1869 Leipzig alternative is cited to Swafford's BSO programme note (S3, read in full). Swafford's 'skeptic and agnostic' added as a worldview lead only."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA3, order P32: F 3, rank 188). Source: Britannica, signed by Robert Simpson and Karl Geiringer (scholars edition, read in full). Lasting work: Ein deutsches Requiem, 'still considered one of the most significant works of 19th-century choral music'; dated by its 'first performance at Bremen on Good Friday, 1868' (premiere, P30 #1). Bremen gave 'the six then-existing movements' (BSO note, S3), so the premiere dates the work at 0.7; alternative 1869, 'the first performance of the complete seven-movement work' in Leipzig (S3). Worldview: no own words read. Britannica calls the Requiem 'a large, objective, nonreligious humane vision' and his 'essential quality is perhaps stoicism', describing the music, not a profession. primary_system UNKNOWN (leads SECHUM, CHRIST: biblical texts 'selected by the composer'); A UNKNOWN; not a scientist; C, D, E UNKNOWN; mid_basin UNKNOWN. Span 1868 at 0.7, age 35. Not plotted. Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["composer", "pianist", "conductor"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}, {source: S4, locator: "infobox"}], how_known: "Britannica; Wikipedia agrees."}
 
 contribution:
+  primary_domain: music
   fields: {value: ["music"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Ein deutsches Requiem (A German Requiem)", year: 1868, kind: "work", lasting: "'still considered one of the most significant works of 19th-century choral music' (S1)", certainty: 0.7, cites: [{source: S1, locator: "The young pianist and music director"}, {source: S3, locator: "Composition and premiere"}], how_known: "Britannica; premiere of the six then-existing movements, Bremen, Good Friday 1868 (S3); complete seven-movement work Leipzig 1869 (S3)."}

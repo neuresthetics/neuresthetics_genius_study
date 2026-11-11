@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to psychology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #173/228, F 3, rank 184). Goals: own words or better biography for AGNOS/A; do not force plot without A. Read Todes 2014/2015 via author's OUP blog (S5), Roger Smith Somatosphere review of Todes (S6), EUSP seminar summary of Todes on last manuscripts (S7); Windholz 1986 Kreps quotation as cited (S8); Babkin 1949 IA OCR (S9). Todes archival reconstruction: atheism firmly formed in the 1860s (not closet believer). Windholz via Kreps (student, 1920s reported speech): 'I became an unbeliever, an atheist in my school years' / belief-in-God claims 'sheer fantasy'. Babkin corroborates Gantt's envy-of-wife's-faith line (Seraphima letter quoting Pavlov) and 'Belief in Science' (organism as machine; science to answer life's questions / replace religion — milieu, not a locus). Viral 'letter to the students' still unscored (doubtful provenance; no authentic text found). primary AGNOS → ATHE @0.5 scholarly_reconstruction (Todes+Windholz), named alt AGNOS (Gantt). A stays BELOW_THRESHOLD: reported speech cannot score an axis on its own (§1 / P18); no published ontological 'there is no God' (Penrose/ATHE lack-of-belief precedent). B stays 3 @0.5 alt 4 (P35); support corroborated S1+S9. mid BELOW. Not plotted. P47 on S1–S9. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA2 audit fixes: the Gantt paraphrase is undated, so its date is removed rather than set to his death year (P12; the schema's date field takes no UNKNOWN). Added S3, his Selected Works (Moscow 1955), whose editors date the Madrid paper to April 1903. No score change."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Record created (stage 3 batch AA2, order P32: F 3, rank 184). Source: Britannica, signed by W. Horsley Gantt (his former collaborator; scholars edition, read in full). Lasting work: the conditioned reflex ('known chiefly for his development of the concept'); dated by its first public exposition at the XIV International Medical Congress, Madrid, 1903 (Campos-Bueno, journal article), the public reading as dating event (P30 #1). Worldview from Gantt's account: 'Although Pavlov held to scientific agnosticism, he considered true religion beneficial; he said that he envied no one anything except his wife her devout religious faith' (undated; a scholar's account, so scholarly_reconstruction, 0.5). primary_system AGNOS 0.5, alt BELOW_THRESHOLD; A BELOW_THRESHOLD (agnosticism states no locus); scientist (laws of the conditioned reflex: testable claims about organisms), so B 3 at 0.5 from working science, alt 4 (P24, P35); C, D, E UNKNOWN; mid_basin BELOW_THRESHOLD. Span 1903, age 54. Not plotted. Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["physiologist"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: psychology
   fields: {value: ["physiology", "psychology"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The conditioned (conditional) reflex and its laws", year: 1903, kind: "theory", lasting: "'known chiefly for his development of the concept of the conditioned reflex'; 'Pavlov's work laid the basis for the scientific analysis of behaviour' (S1, body)", certainty: 0.7, cites: [{source: S1, locator: "Introduction; Legacy"}, {source: S2, locator: "text"}], how_known: "Britannica (Gantt); dated by the Madrid lecture, 1903 (S2)."}

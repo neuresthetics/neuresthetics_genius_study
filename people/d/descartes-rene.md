@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (executor agent for v8, RUNBOOK stage 3, batch A: early modern philosophers)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3, batch A). Basics from SEP 'René Descartes' (Hatfield) and Britannica (Watson, first page); physics from SEP 'Descartes' Physics' (Slowik). Worldview from the Discourse (Veitch), the Principles (Veitch's selections) and the Meditations (Molyneux 1680), all read in Project Gutenberg texts, so capped at 0.7 (CODING_GUIDE §7). DRAFT SCORES for v8's review: primary_system CLASS_THEISM 0.5; A 1, B 3, D 1, E 3 at 0.7; C 1 at 0.5; mid_basin true (0.7). Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch A (two blind runs at 59a8371). #94: native_name 'René Descartes' (French), 'Renatus Cartesius' dropped. #123: early_mathematics 'other' (curriculum only; no source says advanced). #132: primary_system rationale now quotes the CLASS_THEISM tests and cites Principles I.14–15 (idea of God) and Discourse IV for the attributes; value unchanged. #138: conservation passage is Principles II.42 (SEP physics §4 prints 'Pr II 62'; §6 has II 42). #141: the named alternative score is now in the E rationale; rational soul quoted from Discourse V. #156: first_evidence wording now the 1629 'foundation of physics' letter (AT 1:144); 'all the principles of my physics' is a later letter about the Meditations (AT 3:233). #157, #161, #168: locators and coder note corrected. S5 note lists the parts in the selection. Not reviewed."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #67, F5 rank 68). Needs already dark and corroborated on A and B; still deepen gaps (P47/P48, scholarly editions, TODOs). Opened Adam–Tannery Oeuvres vol. VI Discours Part V (French: lois établies; continuous creation / same action; mouches & fourmis) and vol. VIII Principia II.36–37 Latin (God primary cause; conservation by ordinary concurrence; immutability; explicit exception for changes known by experience or divine revelation = miracles). Wikipedia EN dual bio (P50). Charles Adam Vie et œuvres: baptism 3 Apr 1596 Saint-George La Haye. P47 source_quality on every source. support: corroborated on A/B/D/E (P48). Scores unchanged: A 1 @0.7 (alt 0), B 3 @0.7 (alt 4; II.36 miracle exception confirms not 4), C 1 @0.5, D 1 @0.7, E 3 @0.7; CLASS_THEISM @0.5; mid_basin true @0.7. Chart-moving NO. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: [philosopher, mathematician, "natural philosopher", "gentleman soldier"], certainty: 1.0, cites: [{source: S1, locator: "opening; §1.1"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: [mathematics, metaphysics, "natural philosophy", epistemology], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Analytic (algebraic) geometry: describing curves by equations relative to coordinate lines ('Cartesian coordinates')", year: "1637", kind: method, lasting: "standard mathematics", certainty: 1.0, cites: [{source: S1, locator: "§1.2"}, {source: S2, locator: "'Early life and education' (1619)"}], how_known: "Two sources; the date of discovery differs (see first_lasting_contribution_year)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 14
+  schema_version: "1.4"
+  record_version: 15
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (overnight agent run for Jason, first pool)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and transcriptions"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #42). P47 source_quality on S1–S16. P48 support: corroborated written on A–E (already computed). Re-verified General Scholium A/B quotes on Newton Project NATP00056. Baptism 1642/3-01-01 (OS) at St John the Baptist, Colsterworth (S15 parish; S16 College of Arms pedigree via Research Well). family_religious_practice filled from Iliffe Newton Project essay (S17): Colsterworth parish worship; CoE clergy stepfather/uncle; Puritan contacts. Schooling run_by added (schema 1.3). A 1 @1.0 / B 3 @0.7 unchanged; already dark filled — not chart-moving. No fallacy_catalog (Jason). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created. Basics, contribution, childhood, worldview (CHRIST at 0.7), all five LIO axes and mid_basin (true) filled from his published works (General Scholium, Opticks Query 31, Rules of Reasoning), letters to Bentley, three private theological manuscripts and four reference sources. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "key_early_reading changed from an empty list to UNKNOWN with a how_known note, as the coding guide asks. No other change."}
@@ -89,6 +90,7 @@ basics:
     how_known: "Posts from S1 and S2. S3 says he put no less effort into theology and biblical studies than into mathematics and physics."
 
 contribution:
+  primary_domain: physics
   fields: {value: [mathematics, physics, optics, astronomy, "chemistry and alchemy", "theology and chronology"], certainty: 1.0, cites: [{source: S1, locator: "opening paragraph; Influence of the Hermetic tradition"}, {source: S3, locator: "opening section"}], how_known: "Two reference sources agree."}
   lasting_original_contributions:
     - {value: "The method of fluxions (the infinitesimal calculus), developed before Leibniz's independent work", year: 1665, kind: method, lasting: "the calculus", certainty: 1.0, cites: [{source: S1, locator: "opening paragraph ('original discoverer of the infinitesimal calculus'); International prominence"}, {source: S2, locator: "Biography (plague years)"}], how_known: "Two sources agree on the discovery and the plague-years date. Published only in 1704 (S1)."}

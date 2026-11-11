@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch S; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-18
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-18, by: "Grok Bot", summary: "Record created (stage 3 batch S, order P32: F 4, rank 106). Basics from Britannica (Brian C. Southam, signed; body only, read live). Worldview from her letters to Fanny Knight in the Brabourne edition (1884), read in the Republic of Pemberley's web transcription (unofficial web copy, 0.7 cap). Not a scientist. primary_system CHRIST (0.7, consistent private letters); A BELOW_THRESHOLD; B UNKNOWN (P16, P19); C BELOW_THRESHOLD; D, E UNKNOWN; mid_basin UNKNOWN. Not plotted. The three prayers attributed to her are context only (attribution not settled, P42). Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch S (blind audit of c5d448a, run 1: AU4 FAIL, AU5 WEAKEN; ruling S3, v8's call on the auditor's advice). The three prayers now count as her words under P42 (S3, Stovel: 'It seems clear that Jane Austen composed the prayers'), at 0.5: undated manuscripts copied by others, attributed by one scholar. A BELOW_THRESHOLD -> 0 at 0.5, alternative 1. 'Thou art every where present' now quoted from a source read (S5, a web transcription of the prayers). Henry Austen's 1818 remark added as context for CHRIST. B stays UNKNOWN (P16), so mid_basin stays UNKNOWN and she stays unplotted."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Audit fixes for batch T (Austen second blind run at 754bb24: prayer treatment holds; AU-P5 WEAKEN; ruling RQ-AU1, v8's call on the auditor's advice). B UNKNOWN -> BELOW_THRESHOLD, named reading 1 at 0.5 (her own petitions for physical protection are not a statement about nature under P16); mid_basin UNKNOWN -> BELOW_THRESHOLD; still not plotted. 'important but not decisive' marked as the coder's translation of S5's Italian summary; 'accepted by most editors; doubted by Todd and Bree'; the disputed hand of the inscription flagged; the A basis label explained (P18 private-document row). New statement: prayer I, fourth paragraph."}
@@ -48,6 +49,7 @@ basics:
   occupations: {value: ["novelist"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S6, locator: "lead"}], how_known: "Britannica and Wikipedia."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["the novel"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Sense and Sensibility", year: 1811, kind: work, lasting: "'timeless classics that remained critical and popular successes for more than two centuries' (S1, of the novels)", certainty: 0.7, cites: [{source: S1, locator: "opening; 'Move to Chawton and publishing success'"}], how_known: "Britannica (November 1811)."}

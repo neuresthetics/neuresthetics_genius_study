@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA2; deepen D1)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to visual_arts. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #175, F 3, rank 186). Goals: RA perspective lectures / Fallacies of Hope own words if any; keep silence if none; do not force plot. Hunt: Tate chronology baptism St Paul's Covent Garden 14 May 1775 and burial St Paul's Cathedral 30 Dec 1851 (S5); Tate Imms Colour Studies citing Ruskin Fors Clavigera Letter 45 (1874) for reported 'The Sun is God' a few weeks before death, with Eastlake/Bartlett sun-on-face death reports that do not carry the phrase (S6); MFA Boston Slave Ship entry with RA 1840 Fallacies of Hope catalogue verse (S7); lecture clause 'Light is therefore colour, and shadow the privation of it' (c.1818 lecture material; pedagogy/optics, not creed) via Bank of England / Gage chain (S8); Independent review of Hamilton 1997 and Bailey 1997 on Son/sun ambiguity and Ruskin invention claim (S9). primary BELOW_THRESHOLD (CHRIST lead from Anglican baptism/burial + biblical painting subjects only; PANT rejected — landscape/sun subjects fail S6 two-part test; 'sun is God' reported-speech lead of doubtful provenance). A BELOW_THRESHOLD (no own locus; named reading A 2 if Ruskin phrase authenticated as God=sun). B UNKNOWN (not a scientist; Fallacies storm/sun verse is subject/poetry, not law/exception — P16). C/D/E UNKNOWN; mid UNKNOWN (B UNKNOWN takes precedence, P19). Chart: still unplotted. P47 source_quality on S1–S9. No fallacy_catalog; no figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Correction found while coding AA4: region_of_birth and region_of_work are Northern Europe, not Western Europe; the United Kingdom is M49 Northern Europe (P3, data/reference/regions.csv)."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA3 audit fix: the Tate (Wilton) and National Gallery (Egerton) entries were fetched and read in full on 2026-10-19 and are relabelled 'read in full'."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["painter", "printmaker"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Liber Studiorum"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: visual_arts
   fields: {value: ["painting"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Landscape painting as the study of light, colour and atmosphere (body of work, 1805–1844)", year: 1805, kind: "body of work", lasting: "'perhaps the greatest landscapist of the 19th century ... a pioneer in the study of light, color, and atmosphere'; 'one of the most innovative and technically gifted painters of his century' (S1, Legacy)", certainty: 0.7, cites: [{source: S1, locator: "Legacy; Early life and works; Later life and works"}], how_known: "Britannica (Butlin); span from The Shipwreck (exhibited 1805, S2) to Rain, Steam, and Speed (exhibited 1844, S3)."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 7
+  schema_version: "1.4"
+  record_version: 8
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to physics. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Aaserud, first page), MacTutor and the Nobel biography. Worldview from J. L. Heilbron, 'The Mind that Created the Bohr Atom' (Séminaire Poincaré 2013), which quotes Bohr's 1911–12 letters from Aaserud & Heilbron (2013), and from the AIP interview with Margrethe Bohr (1963, session I; reported speech). Rejected Christian theology in adolescence; left the Danish State Church in April 1912. primary_system BELOW_THRESHOLD (ATHE leading candidate, AGNOS named; both stub files). B 4, C 4, D 4, all at 0.5 (scholarly reconstruction); A, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Rechecked under decision P8 (recorded interviews; schema 1.2): the AIP interview is Margrethe Bohr's reported speech and paraphrase only, so it scores nothing on its own; it only supports C_ledger, which rests on Heilbron. No score changed. Schema 1.1 → 1.2."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit, batch 3 (two blind runs at d9903b7). #1: primary_system how_known no longer quotes S7 (AIP no-quotation notice); it now paraphrases Margrethe Bohr and says the 'did not think of himself as anything' answer was to Kuhn's question whether he thought of himself as a Jew, not a question about religion; the 'not true' wording is Heilbron's (S4, p. 24). #5: D_authority 4 at 0.5 kept; the 'warn people that it was not true' item is now labelled Margrethe Bohr's 1963 account as reported by Heilbron (S4, p. 24, n. 30), not Bohr's words; p. 34 (truth in literature and science) dropped as D support and its statement untagged from D. D already at the 0.5 floor, so no certainty change; nothing downstream changes (mid_basin BELOW_THRESHOLD, A not scored). Not reviewed."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: [physicist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S3, locator: "paragraphs 6, 12"}, {source: S1, locator: "opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: physics
   fields: {value: ["atomic physics", "quantum theory", "nuclear physics"], certainty: 1.0, cites: [{source: S1, locator: "opening"}, {source: S3, locator: "paragraphs 5–8"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Quantum model of the atom (stationary states; radiation only in transitions between them)", year: "1913", kind: theory, lasting: "the Bohr model; Nobel Prize 1922", certainty: 1.0, cites: [{source: S1, locator: "'Bohr model of the atom' paragraph"}, {source: S2, locator: "1913 papers"}], how_known: "Two sources."}

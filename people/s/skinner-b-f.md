@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch N)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to psychology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch N, order P32: F 4, rank 86). Basics from Britannica (Britannica Editors, unsigned; body only). Worldview from his signature on Humanist Manifesto II (1973), read on the American Humanist Association page (Wayback 20261006044056), whose signers pledge 'general support' 'while not necessarily endorsing every detail'. primary_system SECHUM (0.5, alt ATHE); A 4 (0.5); B 3 (0.5, alt 4; P41 and P35); C 4 (0.5); D 4 (0.5); mid_basin BELOW_THRESHOLD (A at 0.5). Plotted (faded). Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch N audit fix (#15, v8's ruling on RQ2): added his own working-years text, Science and Human Behavior (1953; B.F. Skinner Foundation PDF, read directly): 'we must assume that behavior is lawful and determined' (p. 6) and 'The hypothesis that man is not free is essential to the application of scientific method to the study of human behavior' (p. 447). B 3 → 4 at 0.5, alternative 3. Timing fields now date the first LIO-type evidence to 1953, during the major work."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #85, F4 rank 86). Needs: lift A and/or B to ≥0.7 corroborated if own-voice exists; manifesto as support not sole locus. Reconcile queue 'B 3 @0.5 alt 4' with file: keep audit RQ2 value B 4 @0.5 alt 3. Own-voice: 1967 Boring–Lindzey autobiography ('I no longer believed in God'; S9 web copy of published chapter); Free Inquiry Spring 1987 'What Religion Means to Me' (S6, scientificmindfulness reprint); Beyond Freedom and Dignity 1971 (S5, IA djvu.txt + Foundation quote pages) 'Personal exemption from a complete determinism is revoked' / strip autonomous man to environment; re-checked SHB 1953 Foundation PDF (S4); SEP Behaviorism Graham 2023 (S7) aversions to free will + BFAD p.198 quote; Britannica Wayback 20261005171724 (S1, 'In full: Burrhus Frederic'); Wikipedia EN (S8, P50 dual-bio). P47 source_quality on S1–S9. A 4 @0.5 single (manifesto-only) → 4 @0.7 corroborated (S9+S6; manifesto S2 support only). B 4 @0.5 → 4 @0.7 corroborated alt 3 (S4+S5+S7). C/D 4 @0.5 → 4 @0.7 corroborated (S6+S2). E UNKNOWN. primary_system SECHUM @0.5 alt ATHE unchanged (manifesto general-support clause). mid_basin BELOW_THRESHOLD → false @0.7 (A ≥ 3 at 0.7). Chart-moving YES: faded→dark and hollow→filled. No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -46,6 +47,7 @@ basics:
   occupations: {value: ["psychologist", "professor", "author"], certainty: 0.7, cites: [{source: S1, locator: "opening; Harvard paragraph"}], how_known: "Britannica."}
 
 contribution:
+  primary_domain: psychology
   fields: {value: ["behaviourism", "experimental psychology"], certainty: 0.7, cites: [{source: S1, locator: "opening"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "The Behavior of Organisms: operant behaviour and reinforcement", year: 1938, kind: theory, lasting: "'Central to his approach is the concept of reinforcement'; 'influenced a generation of psychologists' (S1)", certainty: 0.5, cites: [{source: S1, locator: "Minnesota sentence; Harvard paragraph"}], how_known: "Britannica; pairing the 1938 book with reinforcement is the coder's reading."}

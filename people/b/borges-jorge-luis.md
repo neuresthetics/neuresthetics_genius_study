@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch AA4)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to literature. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #183, F 3, rank 194). Hunt: firm AGNOS from interviews/essays near span; leave B UNKNOWN; fiction/character speech not first-person (P42); do not force plot. Near-span check: Latitud Feb 1945 'Contesta' (S8 reprint path) is literary ambition only (Redentor/Judas as destiny figures — not scored). New: Don Bell Montreal CBC interview 1968 (S5 AGNI/National Post text) — self-described agnostic 'as Spencer was', 'all things are possible', 'nothing should be affirmed, nothing denied'. Re-checked Shenker NYT 1971 (S2). Mundo Argentino 11 July 1956 '¿Cree usted en Dios?' (S6; Textos Recobrados reprint via unofficial web) — denies personal/trinitarian judge-God; affirms moral/mental purpose in the universe (DEISM/process lead, not used to recode primary). primary_system AGNOS 0.5→0.7 recorded_interview, support corroborated (S5+S2); named alts DEISM (1956) and ATHE (1978 Hildebrandt lead via S7). A stays BELOW_THRESHOLD (P20 suspension; 1956 personal-God denial = P38 A 4 @0.5 lead only — do not force plot). B UNKNOWN (not a scientist; 1956 'orden en el universo' not scored as P16). mid BELOW; not plotted. Dual bio P50; P47 source_quality S1–S8; heritage mother Catholic / English Protestant grandmother. Chart-moving NO. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA5 audit fix (v8's call on the auditor's advice): the 1941 alternative is now cited to the Borges Center chronology (S4), not the auditor's note."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "AA4 audit fix (v8's call on the auditor's advice): verified_against relabelled 'newspaper interview' (new P21 value); 1941 (El jardín de senderos que se bifurcan) added as an alternative first-lasting year, age 42."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["poet", "essayist", "short-story writer", "librarian"], certainty: 0.7, cites: [{source: S1, locator: "Introduction; Life"}, {source: S7, locator: "infobox"}], how_known: "Britannica + Wikipedia."}
 
 contribution:
+  primary_domain: literature
   fields: {value: ["literature"], certainty: 0.7, cites: [{source: S1, locator: "Introduction"}], how_known: "Britannica."}
   lasting_original_contributions:
     - {value: "Ficciones (fantastic stories)", year: 1944, kind: "work", lasting: "'his collections of poems and stories are now considered classics of 20th-century literature'; his 'best fantastic stories' (S1)", certainty: 0.7, cites: [{source: S1, locator: "Life; Legacy"}], how_known: "Britannica; published 1944."}

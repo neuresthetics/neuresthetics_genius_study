@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch W)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: '2026-10-25'
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to astronomy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: family_religion TODO synced from religious_heritage_by_birth (context only). Chart-moving NO. No figures/; no fallacy_catalog."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #122 / F4 rank 123). Goals: raise B if justified; corroborate A (P48); mid if B≥0.7. Re-read De revolutionibus dedication, I.4, I.9, I.10 on Latin Wikisource (S3) against Rosen English (S5, Reed/Octavo PDF of Rosen 1978); Commentariolus uniformity language via Rosen Three Copernican Treatises English on erenow (S6); Wikipedia EN dual bio (S7, P50). A 1 stays @0.7 written_profession; support single→corroborated (S3+S5). B 3 stays @0.5: basis inference_from_work→written_profession (I.4 'certa lege' / constant law; Commentariolus 'rule of absolute motion'); P16 Hilbert / P35 keep 0.5 without a stated no-exception or limited-exception claim (alt 4); support corroborated. mid_basin stays BELOW_THRESHOLD (B under 0.7 bar). primary_system stays BELOW_THRESHOLD, CHRIST lead (ruling W1). Chart-moving NO (still faded). P47 source_quality on S1–S7. No fallacy_catalog. No figures/. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Batch W audit notes tidied (no score change): primary_system how_known now marks the brackets in 'Opt[imi]. Max[imi].' as the Wikisource editor's; A_locus how_known records why the I.10 'Trimegistus visibilem Deum' line is not used (it reports what others call the Sun, not his own profession)."}
@@ -50,6 +51,7 @@ basics:
   occupations: {value: ["astronomer", "canon of the Warmia cathedral chapter (administrator)", "physician"], certainty: 1.0, cites: [{source: S1, locator: "'What did Nicolaus Copernicus do for a living?'; 'Early life and education'"}, {source: S2, locator: "§1"}], how_known: "Both sources. Britannica: 'Despite serving as a canon, Copernicus did not become a priest.'"}
 
 contribution:
+  primary_domain: astronomy
   fields: {value: ["astronomy", "mathematics"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "§2"}], how_known: "Britannica and SEP."}
   lasting_original_contributions:
     - {value: "Heliocentric theory: the planets' motions referred to the Sun; Earth a planet with a daily rotation and annual orbit; slow change of the axis explains precession (first set out in the Commentariolus)", year: 1514, kind: theory, lasting: "'Copernicus's theory had important consequences for later thinkers of the Scientific Revolution, including such major figures as Galileo, Kepler, Descartes, and Newton' (S1); 'Copernicus came to be seen as the initiator of what is commonly known as the Scientific Revolution' (S2, opening)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "opening; §1; §2.2"}], how_known: "Britannica and SEP. Year: the Commentariolus window (1508–1514 S1, 1510–1514 S2); 1514 taken (see first_lasting_contribution_year)."}

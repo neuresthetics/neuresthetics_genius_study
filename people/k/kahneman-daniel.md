@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 2
+  schema_version: "1.4"
+  record_version: 3
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch Z6)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-19
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to psychology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen D1 (queue #152, F 3, rank 158). Re-opened Nobel autobiography (S1) and Raskin 2022 (S2). Nobel teen line: existence of God among questions, but 'more interested in what made people believe in God than … whether God existed' — AGNOS-leaning curiosity, not ATHE profession; childhood Pascal/faith essay before age 11. On Being (S6) Tippett quotes that Nobel line; Kahneman affirms ('I couldn't say it better') — after-span, does not lift A/ATHE past P20. Thinking, Fast and Slow (S5, IA OCR): Bloom origins-of-religion as System-1 psychology (not a personal creed); 'underestimate the role of chance in events' + Nobel flight-instructor 'important truth about the world' / regression — B 3 corroboration of probabilistic regularity, but P16 Hilbert addendum / P35 keep B 3 @ 0.5 alt 4 (no no-exception claim). No second 'stopped believing' stream. Dual bio (P50): birth 5 Mar 1934 (Guardian S7 + Wikipedia S4); death 27 Mar 2024 Nunningen SO (Guardian date; Nau.ch S8 + Wikipedia place; assisted suicide via Pegasos reported 2025). P47 source_quality on S1–S8. primary ATHE @0.5 (alt AGNOS); A 4 @0.5 (alts BELOW, 3); B 3 @0.5 (alt 4); mid BELOW. Chart-moving NO. Draft, not reviewed."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z7 audit fix (P10): mid_basin false 0.5 -> BELOW_THRESHOLD; A 4 is only at 0.5, under the 0.7 bar."}
     - {date: 2026-10-19, by: "Grok Bot", summary: "Z6 audit fixes (blind audit at 85859f0, run 1; Z6-21, Z6-22 FAIL; v8's call on the auditor's advice): 'I remember very precisely the moment at which I stopped believing in God' is stated non-belief, not suspension (P38 reasoning; CODING_GUIDE §1), so primary_system AGNOS -> ATHE 0.5, alt AGNOS; A BELOW_THRESHOLD -> 4 at 0.5, alts BELOW_THRESHOLD and 3 (P20 explicit denial of a God that cares; Chomsky, Penrose, Sen precedents); mid_basin BELOW_THRESHOLD -> false at 0.5 (A 4 >= 3). Raskin page dated 2022-03-01 (page metadata datePublished), as Chomsky's in Z2. Now plotted, faded, at A 4 / B 3."}
@@ -47,6 +48,7 @@ basics:
   occupations: {value: ["psychologist", "professor"], certainty: 1.0, cites: [{source: S1, locator: "text"}, {source: S4, locator: "lead"}], how_known: "Nobel autobiography and Wikipedia."}
 
 contribution:
+  primary_domain: psychology
   fields: {value: ["psychology of judgment and decision-making", "behavioral economics"], certainty: 1.0, cites: [{source: S1, locator: "text"}, {source: S4, locator: "lead"}], how_known: "Nobel and Wikipedia."}
   lasting_original_contributions:
     - {value: "Heuristics and biases (with Amos Tversky)", year: 1974, kind: theory, lasting: "Nobel Prize 2002 (S1)", certainty: 1.0, cites: [{source: S1, locator: "references; text"}, {source: S4, locator: "Judgment and decision-making"}], how_known: "Nobel autobiography; Wikipedia."}

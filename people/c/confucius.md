@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 3
+  schema_version: "1.4"
+  record_version: 4
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch O)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-17
-  last_updated: 2026-10-24
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to philosophy. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Record created (stage 3 batch O, order P32: F 4, rank 90). Basics from Britannica (Annping Chin, signed; body only) and SEP 'Confucius' (Csikszentmihalyi, 2024). He wrote nothing that survives as his; the Analects was compiled by first- and second-generation disciples (SEP), so its sayings are reported speech (P42, §7) and cannot score alone. primary_system BELOW_THRESHOLD (CONFUC leading candidate); A BELOW_THRESHOLD (Heaven sayings, reported); B UNKNOWN; mid_basin UNKNOWN (P19). Not plotted. Draft, not reviewed."}
     - {date: 2026-10-17, by: "Grok Bot", summary: "Batch O audit fix (#20): statement dated to the span 498–484 BCE in its context, noted as undated; the placeholder -492 removed and the date field left out (the schema's date field takes one year, not a span). v8's ruling on RQ O1 (on the auditor's advice): the Analects stays reported speech under P42 (recorded in OPEN_DECISIONS). Values unchanged."}
     - {date: 2026-10-24, by: "Grok Bot", summary: "Deepen pass D1 (queue #89, F4 rank 90). Needs: A BELOW_THRESHOLD (Analects Heaven = reported speech, P42); B UNKNOWN; primary BELOW (CONFUC candidate). Dual bio: Britannica Chin (S1) + Wikipedia EN (S5) + SEP Csikszentmihalyi (S2) (P50). Added IEP Confucius (Richey, S4). P47 source_quality on S1–S5. Analects stays disciples' reported speech (P42 RQ O1); scores for A rest on scholars' reconstructions (P49), not Analects wording alone — same path as Socrates D1. A_locus BELOW_THRESHOLD → 0 @0.5 scholarly_reconstruction (alt 1): SEP Mandate/Tian section and IEP Theodicy independently reconstruct the Confucius of the Analects as inheriting Zhou theistic Tian / Mandate of Heaven as anthropomorphized or deity-like cosmic power that backs, forsakes, or protects persons (Heaven gave virtue; culture not yet abandoned; 'Heaven has abandoned me'); IEP (via Graham) notes personal protection vs despair and a threefold assumption about Tian (moral alignment; dependence on human agents; variable mortal associations). Named alt 1: Eno naturalization and IEP's fate/nature/deity blend (Tian increasingly naturalized; 'what need does Heaven have to speak?' 17.19) still as moral-cosmic warrant leaning A 1, not atheism. Support corroborated (S2+S4). Illustrative Analects Heaven sayings (S1/S2) and 7.21 silence on spirits (S4) kept as kind reported speech. B_cause stays UNKNOWN: Heaven-as-agent for persons ≠ P16 nature order (CODING_GUIDE / standing rule); 7.21 is silence on prodigies/spirits, not a lawful-nature claim; Analects 17.2 human nature (xing) is about people, not physical law; no scholarly consensus P16 reconstruction for historical Confucius stretched. primary_system stays BELOW_THRESHOLD with CONFUC lead (Founders rule needs own-voice ≥0.5; disciples' record only — Gautama/RQ O1 precedent). mid_basin stays UNKNOWN (B UNKNOWN, P19). Chart-moving NO (still unplotted; A at P49 0.5 cannot darken). Filled family_religion / heritage from Zhou Tian context (IEP). No fallacy_catalog (Jason). Draft, not reviewed."}
@@ -45,6 +46,7 @@ basics:
   occupations: {value: ["teacher", "philosopher", "political theorist", "official in Lu"], certainty: 0.7, cites: [{source: S1, locator: "opening; Jisun paragraph"}, {source: S5, locator: "lead"}], how_known: "Britannica; Wikipedia."}
 
 contribution:
+  primary_domain: philosophy
   fields: {value: ["ethics", "political philosophy", "education"], certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S5, locator: "infobox (Main interests)"}], how_known: "Britannica; Wikipedia."}
   lasting_original_contributions:
     - {value: "Teaching on virtue, ritual and government, transmitted in the Analects", year: UNKNOWN, kind: "body of work", lasting: "'whose ideas have profoundly influenced the civilizations of China and other East Asian countries' (S1)", certainty: 0.7, cites: [{source: S1, locator: "opening"}, {source: S2, locator: "Analects sources section"}], how_known: "Britannica; the text was compiled by disciples (S2)."}

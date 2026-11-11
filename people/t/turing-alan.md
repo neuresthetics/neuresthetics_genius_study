@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 5
+  schema_version: "1.4"
+  record_version: 6
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, stage 3 batch B)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages"
   collected_on: 2026-10-02
-  last_updated: 2026-10-23
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to computer_science. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-23, by: "Grok Bot", summary: "Deepen pass D1 (queue #5). P47 source_quality on every source. Primary: The Chemical Basis of Morphogenesis (Phil. Trans. B 1952; new S10) — 'certain well-known physical laws are sufficient' — second independent written_profession for B_cause; support single → corroborated (S1+S10); certainty stays 0.7 (named alt 4). A_locus stays BELOW_THRESHOLD (P19/P38): no first-person God denial found in Mind 1950, Nature of Spirit, Hodges short bio/IWM/SEP, Humanists UK, or searchable Enigma excerpts; named alt A 4 @ 0.5 scholarly_reconstruction on Hodges. Childhood/heritage: Sara Turing memoir (Cambridge 2012 excerpt; new S11) fills baptism (St Saviour's, 7 July 1912) and Church of England heritage; Natural Wonders added to early reading. Morphogenesis contribution/major_work cites raised with S10. D_authority support: single. Chart: still unplotted (A BELOW). No fallacy_catalog (Jason 2026-10-23). Draft, not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (stage 3 batch B). Basics from MacTutor and Britannica (Copeland, first page). Worldview from 'Computing Machinery and Intelligence' (Mind, 1950), read on the offprint scan in the Turing Digital Archive (King's College Cambridge, AMT/B/19; pp. 443, 444 and 453 checked on the page images), and from the 1932 manuscript 'Nature of Spirit' (AMT/C/29, facsimile), with Hodges' SEP entry and Scrapbook page for context. primary_system BELOW_THRESHOLD (ATHE candidate, stub). B 3 (0.7), D 4 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. All scores are drafts for v8's review. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Lens audit fixes, stage 3 batch B (two blind runs at 3db6511). #122: primary_system unchanged (BELOW_THRESHOLD); its reason now rests on the evidence (CODING_GUIDE §3, §4) and no longer cites an unwritten rule; the stub-system question awaits v8's ruling. Not reviewed."}
@@ -49,6 +50,7 @@ basics:
   occupations: {value: ["mathematician", "logician", "cryptanalyst", "computer scientist"], certainty: 1.0, cites: [{source: S3, locator: "Biography"}, {source: S4, locator: "heading; opening"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: computer_science
   fields: {value: ["mathematical logic", "computability", "cryptanalysis", "computer science", "artificial intelligence", "morphogenesis"], certainty: 1.0, cites: [{source: S3, locator: "Biography"}, {source: S4, locator: "opening"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "The Turing machine and the unsolvability of the Entscheidungsproblem (On Computable Numbers)", year: "1936", kind: theory, lasting: "foundation of computability theory and computer science", certainty: 1.0, cites: [{source: S3, locator: "Biography (1936)"}, {source: S4, locator: "opening"}], how_known: "Two sources."}

@@ -1,14 +1,15 @@
 ---
 record:
   record_type: person
-  schema_version: "1.3"
-  record_version: 8
+  schema_version: "1.4"
+  record_version: 9
   review_status: "draft — unreviewed"
   collected_by: "Grok Bot (agent run for Jason, third batch: physical science 1600–1950)"
   model_used: "Grok Bot executor agent; web search plus direct reads of the cited pages and library scans"
   collected_on: 2026-10-02
-  last_updated: 2026-10-25
+  last_updated: 2026-10-27
   change_log:
+    - {date: 2026-10-27, by: "Grok Bot", summary: "Schema 1.4: contribution.primary_domain set to biology. Lane A craft label only; scores unchanged."}
     - {date: 2026-10-25, by: "Grok Bot", summary: "Perpetual deepen: A_locus support single→corroborated (P48) via René Dubos 1950 Free Lance of Science (S10) quoting Sur la Vie 'God as author of life' agreeing with Œuvres VII S8. B already corroborated. Certainty stays 0.5 (named Infinite alt in rationale). Chart cue: faded hollow→faded filled. No fallacy_catalog; no figures/."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Record created (third batch, RUNBOOK §1 order). Basics from Britannica (Ullmann; opening, 'Research career', 'Spontaneous generation', 'Vaccine development') and the ENS portrait page. Worldview from his Académie française reception speech of 27 April 1882, read in the 1882 Calmann Lévy printing (Wellcome Collection scan; pp. 3–4, 20, 23–24, 26 checked on the page images) and compared with the Académie française's own online text. primary_system BELOW_THRESHOLD (CHRIST considered). B 4 (0.7), D 2 (0.7); A, C, E BELOW_THRESHOLD; mid_basin BELOW_THRESHOLD. Not reviewed."}
     - {date: 2026-10-02, by: "Grok Bot", summary: "Decision P9: death place now Marnes-la-Coquette (the Villeneuve-l'Étang estate) at 0.5, with Saint-Cloud as the alternative (new source S6, EPHE prosopography; certainty 0.7 → 0.5 because the sources name different communes); era 1750 to 1849 applied literally from 1848, boundary noted (unchanged); French spiritualism recorded as a named candidate without a code. No worldview score changed. Schema 1.1 → 1.2."}
@@ -52,6 +53,7 @@ basics:
   occupations: {value: [chemist, microbiologist, "university professor", "institute director"], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Research career'"}, {source: S2, locator: "paragraphs 1–3"}], how_known: "Two sources."}
 
 contribution:
+  primary_domain: biology
   fields: {value: [chemistry, microbiology, immunology], certainty: 1.0, cites: [{source: S1, locator: "opening; 'Vaccine development'"}, {source: S2, locator: "paragraphs 2–5"}], how_known: "Two sources."}
   lasting_original_contributions:
     - {value: "Molecular asymmetry (optical isomerism of tartrates), the foundation of stereochemistry", year: "c. 1848", kind: discovery, lasting: "foundation of stereochemistry", certainty: 0.7, cites: [{source: S1, locator: "'Research career', paragraph 2"}], how_known: "Britannica; year is the coder's dating."}
